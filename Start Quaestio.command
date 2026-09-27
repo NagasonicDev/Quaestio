@@ -42,9 +42,9 @@ echo
 
 ( sleep 1.5
   if command -v open >/dev/null 2>&1; then
-    open http://localhost:8420/quaestio/
+    open http://localhost:8420/Quaestio/
   elif command -v xdg-open >/dev/null 2>&1; then
-    xdg-open http://localhost:8420/quaestio/
+    xdg-open http://localhost:8420/Quaestio/
   fi
 ) &
 

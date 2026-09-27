@@ -85,7 +85,7 @@ Only **Node.js 18+** (with npm) is required.
 
 First run installs the frontend dependencies (one or two minutes, only once).
 Each launch rebuilds the static bundle so code changes are picked up
-automatically, then opens `http://127.0.0.1:8420/quaestio/` in seconds.
+automatically, then opens `http://127.0.0.1:8420/Quaestio/` in seconds.
 Leave the terminal window it opens running while you use the app; closing it
 stops the app. The launcher only serves static files (`vite preview`) — there
 is no backend to start.
@@ -98,7 +98,7 @@ restarting the launcher each time.
 ```bash
 cd frontend
 npm install
-npm run dev      # serves at http://localhost:5173/quaestio/
+npm run dev      # serves at http://localhost:5173/Quaestio/
 ```
 
 Any changes save instantly. Build a production bundle with `npm run build`
@@ -107,7 +107,7 @@ Any changes save instantly. Build a production bundle with `npm run build`
 ### On GitHub Pages
 
 Push to the `main` branch — `.github/workflows/deploy.yml` builds `frontend`
-and deploys `dist` to GitHub Pages under the **`/quaestio/`** base path.
+and deploys `dist` to GitHub Pages under the **`/Quaestio/`** base path.
 Hash routing means no server-side rewrites are needed. Because the app is
 client-only, the deployed site behaves exactly like the local one, but with
 per-browser data (see above) — the `.qb` format is the bridge between them.
@@ -123,7 +123,7 @@ backend/                       - retired: the original FastAPI backend. The
                                  client-side now; kept only as a reference.
 frontend/
   public/
-    sql-wasm.wasm              - SQLite wasm build (served at /quaestio/)
+    sql-wasm.wasm              - SQLite wasm build (served at /Quaestio/)
     favicon.svg, icons.svg
   src/
     main.tsx, App.tsx          - app shell, theme, HashRouter, routes
@@ -159,7 +159,7 @@ frontend/
       docx.ts, pdf.ts          - DOCX (docx lib) and PDF (pdf-lib) builders
       tests.ts                 - generated-test archives in IndexedDB
       assets.ts                - staged image upload -> question assets
-  package.json, vite.config.ts  - base '/quaestio/', assets in app-assets/
+  package.json, vite.config.ts  - base '/Quaestio/', assets in app-assets/
 ```
 
 ## Verified working

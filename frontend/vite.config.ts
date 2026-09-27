@@ -38,7 +38,8 @@ function requestLogging(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/quaestio/',
+  // GitHub Pages serves this repository at the case-sensitive project path.
+  base: '/Quaestio/',
   plugins: [react(), requestLogging()],
   build: {
     // The backend serves this build directly and already uses /assets/ for

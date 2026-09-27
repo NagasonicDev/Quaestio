@@ -62,7 +62,7 @@ echo (Output is being saved to: %SERVER_LOG%)
 echo (Requests are being logged to: %REQUEST_LOG%)
 echo.
 
-start "" cmd /c "timeout /t 2 /nobreak >nul && start "" http://localhost:8420/quaestio/""
+start "" cmd /c "timeout /t 2 /nobreak >nul && start "" http://localhost:8420/Quaestio/""
 
 pushd frontend
 call npx vite preview --host 127.0.0.1 --port 8420 --strictPort >>"%SERVER_LOG%" 2>&1
