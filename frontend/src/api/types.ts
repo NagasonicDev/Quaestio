@@ -181,7 +181,6 @@ export interface GeneratedTestMeta {
   question_count: number;
   created_at: string;
   test_download_url: string;
-  solutions_download_url: string;
   preview_url: string;
   section_results?: TestSectionResult[];
 }

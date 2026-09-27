@@ -10,7 +10,7 @@ import notoSerifRegularUrl from "../assets/NotoSerif-Regular.ttf?url";
 import notoSerifBoldUrl from "../assets/NotoSerif-Bold.ttf?url";
 import notoSerifItalicUrl from "../assets/NotoSerif-Italic.ttf?url";
 import type { ContentBlock, Question } from "../api/types";
-import { contentOf, criteriaRows, formatMarks, formatSourceBracket, marksLabel } from "./criteria";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel } from "./criteria";
 import { inlineMathImageId, resolveEquations, resolveImages, type ResolvedImage } from "./resolvers";
 import type { DocSection } from "./docx";
 import {
@@ -122,6 +122,7 @@ class Writer {
   fonts: Fonts;
   page: { page: ReturnType<PDFDocument["addPage"]>; w: number; h: number };
   y = TOP;
+  private embeddedImages = new WeakMap<Uint8Array<ArrayBuffer>, Map<string, Promise<PDFImage>>>();
 
   constructor(pdf: PDFDocument, fonts: Fonts) {
     this.pdf = pdf;
@@ -130,6 +131,20 @@ class Writer {
     // created here — otherwise `this.pdf` is still undefined when addPage runs.
     this.page = this.newPageRef();
     this.pageHistory.push({ page: this.page.page, number: this.pageNumber });
+  }
+
+  embedImage(data: Uint8Array<ArrayBuffer>, mime = "image/png"): Promise<PDFImage> {
+    let formats = this.embeddedImages.get(data);
+    if (!formats) {
+      formats = new Map();
+      this.embeddedImages.set(data, formats);
+    }
+    let embedded = formats.get(mime);
+    if (!embedded) {
+      embedded = mime === "image/jpeg" ? this.pdf.embedJpg(data) : this.pdf.embedPng(data);
+      formats.set(mime, embedded);
+    }
+    return embedded;
   }
 
   pageNumber = 1;
@@ -305,7 +320,7 @@ class Writer {
         while ((match = re.exec(normalized[i]))) {
           if (match.index > last) parts.push({ text: normalized[i].slice(last, match.index) });
           const resolved = opts.inline.images.get(inlineMathImageId(opts.inline.blockId, opts.inline.index.value++));
-          parts.push(resolved ? { text: "", image: await this.pdf.embedPng(resolved.data) } : { text: match[1] });
+          parts.push(resolved ? { text: "", image: await this.embedImage(resolved.data) } : { text: match[1] });
           last = re.lastIndex;
         }
         if (last < normalized[i].length) parts.push({ text: normalized[i].slice(last) });
@@ -369,7 +384,7 @@ class Writer {
     let lineHasContent = false;
     const newLine = () => { this.y -= LINE_H(size); x = x0; lineHasContent = false; };
     for (const token of tokens) {
-      const embedded = token.image ? await this.pdf.embedPng(token.image.data) : null;
+      const embedded = token.image ? await this.embedImage(token.image.data) : null;
       const width = embedded ? (embedded.width / embedded.height) * size * 1.2 : font.widthOfTextAtSize(token.text, size);
       if (x + width > x0 + maxW && lineHasContent) newLine();
       this.ensure(LINE_H(size));
@@ -397,12 +412,6 @@ class Writer {
   }
 }
 
-function contentBlocks(question: Question, slots: Array<"body" | "answer" | "solution" | "marking_criteria">): ContentBlock[] {
-  const blocks: ContentBlock[] = [];
-  for (const s of slots) for (const b of question[s]) blocks.push(b);
-  return blocks;
-}
-
 /** Port of docx.ts renderBlock → PDF. Renders one block and returns. */
 async function renderBlock(w: Writer, b: ContentBlock, images: Map<string, ResolvedImage>): Promise<boolean> {
   switch (b.block_type) {
@@ -423,7 +432,7 @@ async function renderBlock(w: Writer, b: ContentBlock, images: Map<string, Resol
         if (typeof latex === "string" && latex) w.text(latex.replace(/\\(?:left|right)\b/g, "").replace(/\\(?:,|;|!|quad|qquad)/g, " "), { font: w.fonts.italic, size: 10, color: GRAY, align: contentOf(b, "display", true) !== false ? "center" : "left" });
         return true;
       }
-      const embedded = await w.pdf.embedPng(img.data);
+      const embedded = await w.embedImage(img.data);
       w.fitImage(embedded, { maxW: 3 * PT, maxH: 0.32 * PT });
       return true;
     }
@@ -437,7 +446,7 @@ async function renderBlock(w: Writer, b: ContentBlock, images: Map<string, Resol
         w.y -= LINE_H(11);
         return true;
       }
-      const embedded = img.mime === "image/jpeg" ? await w.pdf.embedJpg(img.data) : await w.pdf.embedPng(img.data);
+      const embedded = await w.embedImage(img.data, img.mime);
       w.fitImage(embedded, { maxW: 4.5 * PT, maxH: 4.5 * PT });
       w.y -= LINE_H(11);
       return true;
@@ -528,15 +537,10 @@ async function renderBlocks(w: Writer, blocks: ContentBlock[], ids: Map<string, 
   for (const b of blocks) await renderBlock(w, b, ids);
 }
 
-async function renderQuestionBlocks(w: Writer, q: Question, ids: Map<string, ResolvedImage>, slots: Array<"body" | "answer" | "solution" | "marking_criteria">) {
-  await renderBlocks(w, contentBlocks(q, slots), ids);
-}
-
 const SOURCE_LINE_PT = 8;
 
-function drawSourceLine(w: Writer, source: Question["source"]) {
-  const text = formatSourceBracket(source);
-  if (!text) return;
+function drawSourceLine(w: Writer, question: Question) {
+  const text = [formatSourceBracket(question.source), `Question ID: ${question.question_id}`].filter(Boolean).join(" · ");
   w.text(text, { font: w.fonts.italic, size: SOURCE_LINE_PT, color: GRAY });
 }
 
@@ -575,7 +579,7 @@ async function renderPaperQuestion(w: Writer, q: Question, sharedImages?: Map<st
       }], ids);
     }
   }
-  drawSourceLine(w, q.source);
+  drawSourceLine(w, q);
 }
 
 export interface PdfOptions {
@@ -717,73 +721,3 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
   return new Blob([bytes as unknown as BlobPart], { type: "application/pdf" });
 }
 
-export async function buildPdfSolutions(options: PdfOptions): Promise<Blob> {
-  const pdf = await PDFDocument.create();
-  const fonts = await embedUnicodeFonts(pdf);
-  const w = new Writer(pdf, fonts);
-  w.spacer(48);
-  w.text(`Marking guidelines — ${options.title}`, { font: w.fonts.bold, size: EXAM.font.coverTitlePt, align: "center" });
-  w.text(options.courseName, { size: EXAM.font.bodyPt, align: "center" });
-  w.spacer(4);
-  w.text("Made with Quaestio", { size: EXAM.font.smallPt, color: GRAY, align: "center" });
-  w.spacer(12);
-  w.rule();
-  w.newPage();
-
-  let qn = 0;
-  for (const section of options.sections) {
-    if (section.label) {
-      w.ensure(30);
-      w.text(section.label, { font: w.fonts.bold, size: 13 });
-      w.rule();
-      w.spacer(6);
-    }
-    for (const q of section.questions) {
-      qn += 1;
-      w.ensure(40);
-      w.rule();
-      w.spacer(2);
-      w.textLine(`Question ${qn}`, { font: w.fonts.bold, size: 12 });
-      w.y -= 2;
-
-      const criteria = criteriaRows(q.marking_criteria);
-      if (criteria.hasRows) {
-        w.text("Marking guide", { font: w.fonts.italic, size: 10, color: GRAY });
-        for (const row of criteria.rows) {
-          await w.gridRow([row.criteria, row.marks], [5 * PT, 1 * PT], { fill: HEADER_BG });
-        }
-        // Leave enough room for the next label's glyphs below the table
-        // border; text baselines sit above their nominal y position.
-        w.spacer(12);
-      }
-      if (criteria.supplementary.length) {
-        const ids = options.resolvedImages ?? new Map<string, ResolvedImage>([
-          ...(await resolveImages(q.marking_criteria)),
-          ...(await resolveEquations(q.marking_criteria)),
-        ]);
-        await renderBlocks(w, criteria.supplementary, ids);
-      }
-
-      if (q.answer.length) {
-        w.text("Answer", { font: w.fonts.italic, size: 10, color: GRAY });
-        const ids = options.resolvedImages ?? new Map<string, ResolvedImage>([
-          ...(await resolveImages(q.answer.concat(q.body))),
-          ...(await resolveEquations(q.answer.concat(q.body))),
-        ]);
-        await renderQuestionBlocks(w, q, ids, ["answer"]);
-      }
-      if (q.solution.length) {
-        w.text("Solution", { font: w.fonts.italic, size: 10, color: GRAY });
-        const ids = options.resolvedImages ?? new Map<string, ResolvedImage>([
-          ...(await resolveImages(q.solution.concat(q.body))),
-          ...(await resolveEquations(q.solution.concat(q.body))),
-        ]);
-        await renderQuestionBlocks(w, q, ids, ["solution"]);
-      }
-      w.spacer(6);
-    }
-  }
-  w.drawPageFooter();
-  const bytes = await pdf.save();
-  return new Blob([bytes as unknown as BlobPart], { type: "application/pdf" });
-}

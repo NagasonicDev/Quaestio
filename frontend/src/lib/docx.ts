@@ -20,7 +20,7 @@ import {
   type ParagraphChild,
 } from "docx";
 import type { ContentBlock, Question } from "../api/types";
-import { contentOf, criteriaRows, formatMarks, formatSourceBracket, marksLabel } from "./criteria";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel } from "./criteria";
 import { inlineMathImageId, resolveEquations, resolveImages, type ResolvedImage } from "./resolvers";
 import {
   EXAM,
@@ -123,15 +123,8 @@ function inlineRuns(blockId: string, text: string, images: Map<string, ResolvedI
 
 // ---------- block rendering ----------
 
-function blocksOfQuestion(
-  question: Question,
-  slots: Array<"body" | "answer" | "solution" | "marking_criteria">
-): ContentBlock[] {
-  const out: ContentBlock[] = [];
-  for (const s of slots) {
-    for (const b of question[s]) out.push(b);
-  }
-  return out;
+function blocksOfQuestion(question: Question): ContentBlock[] {
+  return question.body;
 }
 
 function renderBlock(
@@ -371,36 +364,6 @@ function renderBlocks(
   return out;
 }
 
-function criteriaTable(question: Question): { table: Table | null; hasRows: boolean; supplementary: ContentBlock[] } {
-  const { rows, hasRows, supplementary } = criteriaRows(question.marking_criteria);
-  if (!hasRows) return { table: null, hasRows, supplementary };
-  const nbsp = "\u00A0";
-  const cell = (text: string, header: boolean, center: boolean): TableCell =>
-    new TableCell({
-      children: [
-        new Paragraph({
-          children: [runProps({ text: text || nbsp, bold: header })],
-          alignment: center ? AlignmentType.CENTER : AlignmentType.START,
-        }),
-      ],
-    });
-const table = new Table({
-    alignment: AlignmentType.CENTER,
-    borders: tableGridBorders(),
-    columnWidths: [inches(4.6), inches(0.9)],
-    width: { size: inches(5.5), type: WidthType.DXA },
-    rows: [
-      new TableRow({ children: [cell("Criteria", true, false), cell("Marks", true, true)] }),
-      ...rows.map((r) =>
-        new TableRow({
-          children: [cell(r.criteria, false, false), cell(r.marks, false, true)],
-        })
-      ),
-    ],
-  });
-  return { table, hasRows, supplementary };
-}
-
 function questionHeader(question: Question, counter: { n: number }): Paragraph {
   counter.n += 1;
   const n = counter.n;
@@ -467,13 +430,14 @@ function renderQuestion(
     }
   }
   const src = formatSourceBracket(question.source);
-  if (src) {
-    out.push(
-      new Paragraph({
-        children: [runProps({ text: src, italics: true, sizePt: 8, color: GRAY })],
-      })
-    );
-  }
+  out.push(new Paragraph({
+    children: [runProps({
+      text: [src, `Question ID: ${question.question_id}`].filter(Boolean).join(" · "),
+      italics: true,
+      sizePt: 8,
+      color: GRAY,
+    })],
+  }));
   return out;
 }
 
@@ -679,12 +643,12 @@ export async function collectImages(sections: DocSection[]): Promise<Map<string,
   const blocks: ContentBlock[] = [];
   for (const sec of sections) {
     for (const q of sec.questions) {
-      blocks.push(...blocksOfQuestion(q, ["body", "answer", "solution", "marking_criteria"]));
+      blocks.push(...blocksOfQuestion(q));
       if (q.mcq_options?.length) {
         blocks.push({ block_id: `${q.question_id}-mcq-options`, slot: "body", position: q.body.length, block_type: "list", content: { ordered: false, items: q.mcq_options.map((option, i) => `(${String.fromCharCode(65 + i)}) ${option.content.map((b) => String(b.content.text ?? b.content.latex ?? "")).join(" ")}`) } });
       }
       for (const part of q.parts) {
-        blocks.push(...blocksOfQuestion(part, ["body", "answer", "solution", "marking_criteria"]));
+        blocks.push(...blocksOfQuestion(part));
       }
     }
   }
@@ -735,86 +699,3 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
   return pack(children);
 }
 
-export async function buildDocxSolutions(opts: DocOptions): Promise<Blob> {
-  const dateStr = todayPretty();
-  const images = opts.resolvedImages ?? await collectImages(opts.sections);
-  const children: Array<Paragraph | Table> = [];
-  children.push(
-    new Paragraph({
-      children: [runProps({ text: `Solutions — ${opts.title}`, bold: true, sizePt: 18 })],
-      alignment: AlignmentType.CENTER,
-    }),
-    new Paragraph({
-      children: [runProps({ text: `${opts.courseName}  ·  ${dateStr}`, sizePt: 10, color: GRAY })],
-      alignment: AlignmentType.CENTER,
-    }),
-    new Paragraph({
-      children: [runProps({ text: "Made with Quaestio", sizePt: EXAM.font.smallPt, color: GRAY })],
-      alignment: AlignmentType.CENTER,
-    }),
-    new Paragraph({ children: [runProps({ text: "" })] })
-  );
-  const counter = { n: 0 };
-  for (const sec of opts.sections) {
-    if (sec.label) {
-      children.push(
-        new Paragraph({
-          children: [runProps({ text: sec.label, bold: true, sizePt: 13 })],
-          spacing: { before: 16 * 20 },
-        })
-      );
-    }
-    for (const q of sec.questions) {
-      renderSolutionQuestion(q, counter, images, children);
-    }
-  }
-  return pack(children);
-}
-
-function renderSolutionQuestion(
-  question: Question,
-  counter: { n: number },
-  images: Map<string, ResolvedImage>,
-  out: Array<Paragraph | Table>
-): void {
-  out.push(questionHeader(question, counter));
-  const { table, hasRows, supplementary } = criteriaTable(question);
-  if (hasRows) {
-    out.push(new Paragraph({ children: [runProps({ text: "Marking guide:", italics: true })] }));
-    if (table) out.push(table);
-    if (supplementary.length) {
-      out.push(
-        new Paragraph({ children: [runProps({ text: "Detailed marking notes:", italics: true })] })
-      );
-      out.push(...renderBlocks(supplementary, { indentIn: 0.2, images }));
-    }
-  }
-  if (question.answer.length) {
-    out.push(new Paragraph({ children: [runProps({ text: "Answer:", italics: true })] }));
-    out.push(...renderBlocks(question.answer, { indentIn: 0.2, images }));
-  }
-  if (question.solution.length) {
-    out.push(
-      new Paragraph({ children: [runProps({ text: "Solution / working:", italics: true })] })
-    );
-    out.push(...renderBlocks(question.solution, { indentIn: 0.2, images }));
-  }
-  if (!hasRows && !question.answer.length && !question.solution.length) {
-    out.push(
-      new Paragraph({
-        children: [
-          runProps({ text: "No marking guide recorded for this question.", italics: true }),
-        ],
-      })
-    );
-  }
-}
-
-function todayPretty(): string {
-  const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-  ];
-  const d = new Date();
-  return `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
-}

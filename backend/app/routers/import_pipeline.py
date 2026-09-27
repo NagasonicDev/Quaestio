@@ -84,7 +84,7 @@ class ImportResponse(BaseModel):
 
 
 def _validate_question(q: ImportQuestionIn, *, valid_type_keys: set[str], valid_node_ids: set[str],
-                        valid_difficulties: set[int]) -> tuple[list[str], list[str]]:
+                        valid_difficulties: set[int], valid_tags: set[str]) -> tuple[list[str], list[str]]:
     errors, warnings = [], []
 
     if q.type_key not in valid_type_keys:
@@ -94,6 +94,9 @@ def _validate_question(q: ImportQuestionIn, *, valid_type_keys: set[str], valid_
     bad_nodes = [n for n in q.node_ids if n not in valid_node_ids]
     if bad_nodes:
         errors.append(f"node_ids not found in this course: {bad_nodes}")
+    bad_tags = sorted(set(q.tags) - valid_tags)
+    if bad_tags:
+        errors.append(f"Tags not allowed for this course: {bad_tags}. Valid tags: {sorted(valid_tags)}")
     if not q.body:
         errors.append("Question has no body content blocks")
 
@@ -116,9 +119,7 @@ def _write_blocks(db: Session, question_id: str, slot: str, blocks: list[ImportB
 def _get_or_create_tag(db: Session, course_id: str, name: str) -> models.Tag:
     tag = db.scalar(select(models.Tag).where(models.Tag.course_id == course_id, models.Tag.name == name))
     if not tag:
-        tag = models.Tag(course_id=course_id, name=name)
-        db.add(tag)
-        db.flush()
+        raise HTTPException(400, f"Tag '{name}' is not in this course's allowed tag list.")
     return tag
 
 
@@ -147,6 +148,7 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
     valid_difficulties = {d.level for d in db.scalars(
         select(models.DifficultyLevel).where(models.DifficultyLevel.course_id == course_id)
     ).all()}
+    valid_tags = {t.name for t in db.scalars(select(models.Tag).where(models.Tag.course_id == course_id)).all()}
 
     job = models.ImportJob(course_id=course_id, source_filename="import.json", status="processing")
     db.add(job)
@@ -157,7 +159,8 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
 
     for index, q in enumerate(payload.questions):
         errors, warnings = _validate_question(
-            q, valid_type_keys=valid_type_keys, valid_node_ids=valid_node_ids, valid_difficulties=valid_difficulties
+            q, valid_type_keys=valid_type_keys, valid_node_ids=valid_node_ids,
+            valid_difficulties=valid_difficulties, valid_tags=valid_tags,
         )
         db.add(models.ImportQuestion(
             import_job_id=job.import_job_id,

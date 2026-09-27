@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import { createPortal } from "react-dom";
 import type { ReactNode } from "react";
 import { Check, FolderTree, Gauge, Settings2, Shapes, SlidersHorizontal, X, School, Tags } from "lucide-react";
 import { cn } from "../lib/utils";
@@ -269,7 +270,7 @@ export function FilterMenu({
         )}
       </Button>
 
-      {open && (
+      {open && createPortal((
         <div className="fixed inset-0 z-50 overflow-y-auto">
           <div
             className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px] animate-in fade-in-0"
@@ -487,7 +488,7 @@ export function FilterMenu({
             </div>
           </div>
         </div>
-      )}
+      ), document.body)}
     </>
   );
 }

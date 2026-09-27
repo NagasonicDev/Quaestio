@@ -252,66 +252,32 @@
   }
 }
 
-/* Ink loader — a pen draws a ledger rule while Quaestio's Q rises and ink drops fall. */
-.ink-loader {
-  display: grid;
-  justify-items: center;
-  gap: 0.9rem;
-}
-
-.ink-loader-q {
+/* Shared loader copied from Exam Architect's Quaestio loading screen. */
+.ink-loader { display: grid; justify-items: center; gap: 0.65rem; }
+.ink-loader-mark {
   color: var(--primary);
-  font-size: 1.9rem;
+  font-size: 4.6rem;
   font-weight: 600;
-  line-height: 1;
-  animation: ink-q-rise 1.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  line-height: 0.9;
 }
-
-.ink-rule {
-  position: relative;
-  width: 190px;
-  height: 2px;
-  border-radius: 999px;
-  background: color-mix(in oklab, var(--border) 75%, transparent);
+.ink-stream {
+  position: relative; width: 190px; height: 12px; overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
 }
-
-.ink-rule-line {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: var(--primary);
-  transform-origin: left center;
-  animation: ink-rule-draw 1.6s cubic-bezier(0.65, 0, 0.35, 1) infinite alternate;
+.ink-stream-base, .ink-stream-current {
+  position: absolute; left: -25%; width: 150%; border-radius: 999px;
 }
-
-
-.ink-drops { display: flex; gap: 7px; }
-.ink-drops span {
-  width: 5px;
-  height: 5px;
-  border-radius: 999px;
-  background: var(--primary);
-  animation: ink-drop 1.6s ease-in-out infinite;
+.ink-stream-base {
+  top: 5px; height: 1px;
+  background: color-mix(in oklab, var(--primary) 20%, transparent);
 }
-.ink-drops span:nth-child(2) { animation-delay: 0.22s; }
-.ink-drops span:nth-child(3) { animation-delay: 0.44s; }
-.ink-loader-message { min-height: 1rem; }
-
-@keyframes ink-q-rise {
-  0% { opacity: 0.25; transform: translateY(6px); }
-  40% { opacity: 1; transform: translateY(0); }
-  85% { opacity: 1; }
-  100% { opacity: 0.25; transform: translateY(0); }
+.ink-stream-current {
+  top: 4px; left: -34%; width: 34%; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary) 18%, var(--primary) 82%, transparent);
+  animation: ink-stream-flow 2.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 }
-@keyframes ink-rule-draw {
-  from { transform: scaleX(0); opacity: 1; }
-  to { transform: scaleX(1); opacity: 1; }
-}
-@keyframes ink-drop {
-  0%, 100% { opacity: 0.15; transform: translateY(0); }
-  35% { opacity: 1; transform: translateY(-4px); }
-  70% { opacity: 0.35; transform: translateY(0); }
-}
+.ink-loader-message { min-height: 1rem; margin-top: 0.1rem; }
+@keyframes ink-stream-flow { from { transform: translateX(0); } to { transform: translateX(494%); } }
 
 /* Equation blocks should never overflow their container on narrow screens */
 .katex-display {

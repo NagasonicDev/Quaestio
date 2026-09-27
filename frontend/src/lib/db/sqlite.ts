@@ -20,6 +20,10 @@ async function initDb(): Promise<Database> {
     markDirty();
   }
   db.run("PRAGMA foreign_keys = ON;");
+  // Keep the standard follow-up tag available in every existing course.
+  db.run(`INSERT OR IGNORE INTO tag (tag_id, course_id, name)
+          SELECT 'tag_action_' || course_id, course_id, 'action_required' FROM course`);
+  if (db.getRowsModified() > 0) markDirty();
   return db;
 }
 

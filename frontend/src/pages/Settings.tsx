@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import { BookOpen, Pencil, Trash2 } from "lucide-react";
 import { useTheme } from "../hooks/useTheme";
 import { useActiveCourse } from "../hooks/useActiveCourse";
@@ -14,7 +15,9 @@ import { Input } from "../components/ui/input";
 
 export function Settings() {
   const { theme, toggle } = useTheme();
-  const { courseId } = useActiveCourse();
+  const { courseId, setCourseId } = useActiveCourse();
+  const navigate = useNavigate();
+  const queryClient = useQueryClient();
   const { data: config } = useCourseConfig(courseId);
 
   return (
@@ -114,7 +117,9 @@ export function Settings() {
               onClick={async () => {
                 if (!window.confirm("Delete EVERYTHING stored in this browser? This cannot be undone.")) return;
                 await clearAllData();
-                window.location.reload();
+                setCourseId(null);
+                queryClient.clear();
+                navigate("/");
               }}
             >
               <Trash2 />

@@ -52,8 +52,16 @@ export const api = {
     return data.createCourse(payload);
   },
 
+  deleteCourse(courseId: string): Promise<void> {
+    return data.deleteCourse(courseId);
+  },
+
   getCourse(courseId: string): Promise<CourseFullConfig> {
     return data.getCourseFullConfig(courseId) as Promise<CourseFullConfig>;
+  },
+
+  updateCourseTags(courseId: string, tags: string[]): Promise<void> {
+    return data.updateCourseTags(courseId, tags);
   },
 
   createNode(
@@ -108,11 +116,11 @@ export const api = {
     return import("../lib/exchange").then((m) => m.downloadSkill(courseId));
   },
 
-  exportCourse(courseId: string): Promise<void> {
-    return import("../lib/exchange").then((m) => m.exportCourse(courseId));
+  exportCourse(courseId: string, filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] }): Promise<void> {
+    return import("../lib/exchange").then((m) => m.exportCourse(courseId, filters));
   },
-  exportQuestions(courseId: string): Promise<void> {
-    return import("../lib/exchange").then((m) => m.exportQuestions(courseId));
+  exportQuestions(courseId: string, filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] }): Promise<void> {
+    return import("../lib/exchange").then((m) => m.exportQuestions(courseId, filters));
   },
 
   importCourseFile(file: File): Promise<{ course_id: string; course_name: string }> {
@@ -219,7 +227,7 @@ export const api = {
       shuffle?: boolean;
       sections: TestSectionInput[];
       selectionTimeoutMs?: number;
-      onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "solutions" | "preview" | "saving"; questionCount?: number }) => void;
+      onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number }) => void;
     }
   ): Promise<GeneratedTestMeta> {
     return data.generateTest(courseId, payload);
@@ -235,10 +243,6 @@ export const api = {
 
   testDownloadUrl(meta: Pick<GeneratedTestMeta, "test_download_url">): string {
     return meta.test_download_url;
-  },
-
-  testSolutionsUrl(meta: Pick<GeneratedTestMeta, "solutions_download_url">): string {
-    return meta.solutions_download_url;
   },
 
   testPreviewUrl(meta: Pick<GeneratedTestMeta, "preview_url">): string {

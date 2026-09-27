@@ -189,7 +189,7 @@ export function Browser() {
               <Search className="absolute left-3 top-2.5 size-4 text-muted-foreground" />
               <Input
                 className="pl-9"
-                placeholder="Search question text"
+                placeholder="Search question text, code or source number"
                 value={search}
                 onChange={(e) => {
                   updateState({ page: 1, search: e.target.value });
@@ -231,6 +231,8 @@ export function Browser() {
               className="panel block p-4 transition hover:-translate-y-px hover:bg-surface"
             >
               <div className="mb-2 flex flex-wrap items-center gap-2">
+                <Meta><span className="font-mono">{item.question_id}</span></Meta>
+                <span className="text-border">/</span>
                 <Meta>{formatQuestionType(item.type_key)}</Meta>
                 {item.difficulty != null && (
                   <>

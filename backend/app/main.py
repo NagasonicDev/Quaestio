@@ -5,6 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
+from sqlalchemy import select
 
 from . import models
 from .database import engine, SessionLocal, ASSETS_DIR
@@ -28,6 +29,9 @@ def seed_builtin_question_types():
         for key, label in BUILTIN_QUESTION_TYPES:
             if not db.get(models.QuestionType, key):
                 db.add(models.QuestionType(type_key=key, course_id=None, display_name=label))
+        for course in db.scalars(select(models.Course)).all():
+            if not any(tag.name == "action_required" for tag in course.tags):
+                course.tags.append(models.Tag(name="action_required"))
         db.commit()
     finally:
         db.close()

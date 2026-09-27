@@ -73,29 +73,41 @@ export function Import() {
   const { data: config } = useCourseConfig(courseId);
   const qc = useQueryClient();
 
-  const [fileName, setFileName] = useState<string | null>(null);
+  const [fileNames, setFileNames] = useState<string[]>([]);
   const [importing, setImporting] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [result, setResult] = useState<ImportResponse | null>(null);
+  const [fileErrors, setFileErrors] = useState<Array<{ name: string; error: string }>>([]);
+  const [results, setResults] = useState<Array<{ name: string; result: ImportResponse }>>([]);
 
-  async function handleFile(file: File | null) {
-    if (!file || !courseId) return;
-    setFileName(file.name);
-    setError(null);
-    setResult(null);
+  async function handleFiles(files: FileList | null) {
+    if (!files?.length || !courseId) return;
+    const selected = Array.from(files);
+    setFileNames(selected.map((file) => file.name));
+    setFileErrors([]);
+    setResults([]);
     setImporting(true);
+    const nextResults: Array<{ name: string; result: ImportResponse }> = [];
+    const nextErrors: Array<{ name: string; error: string }> = [];
     try {
-      const parsed = file.name.toLowerCase().endsWith(".qbx")
-        ? await parseQuestionBundle(file)
-        : JSON.parse(await file.text());
-      const res = await api.importJson(courseId, parsed);
-      setResult(res);
-      if (res.imported_count > 0) {
-        qc.invalidateQueries({ queryKey: ["questions", courseId] });
-        qc.invalidateQueries({ queryKey: ["question-counts", courseId] });
+      for (const file of selected) {
+        try {
+          const parsed = file.name.toLowerCase().endsWith(".qbx")
+            ? await parseQuestionBundle(file)
+            : JSON.parse(await file.text());
+          const res = await api.importJson(courseId, parsed);
+          nextResults.push({ name: file.name, result: res });
+          if (res.imported_count > 0) {
+            qc.invalidateQueries({ queryKey: ["questions", courseId] });
+            qc.invalidateQueries({ queryKey: ["question-counts", courseId] });
+          }
+        } catch (e) {
+          nextErrors.push({
+            name: file.name,
+            error: e instanceof Error ? e.message : "Import failed — check the file is valid JSON in the expected format",
+          });
+        }
       }
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Import failed — check the file is valid JSON in the expected format");
+      setResults(nextResults);
+      setFileErrors(nextErrors);
     } finally {
       setImporting(false);
     }
@@ -104,8 +116,6 @@ export function Import() {
   if (!courseId || !config) {
     return <p className="text-sm text-muted-foreground">Select a course to import questions into.</p>;
   }
-
-  const detailItems = result?.results.filter((r) => r.status === "error" || r.warnings.length > 0) ?? [];
 
   return (
     <div className="mx-auto max-w-3xl space-y-5">
@@ -142,21 +152,22 @@ export function Import() {
           <input
             type="file"
             accept=".json,.qbx,application/json,application/zip"
+            multiple
             className="sr-only"
             disabled={importing}
-            onChange={(e) => handleFile(e.target.files?.[0] ?? null)}
+            onChange={(e) => handleFiles(e.target.files)}
           />
           <div>
             <Upload className="mx-auto mb-3 size-7 text-accent-foreground" />
             {importing ? (
               <h2 className="font-display text-xl font-semibold">Importing…</h2>
-            ) : fileName ? (
-              <h2 className="font-display text-xl font-semibold">{fileName}</h2>
+            ) : fileNames.length ? (
+              <h2 className="font-display text-xl font-semibold">{fileNames.length} file(s) selected</h2>
             ) : (
               <h2 className="font-display text-xl font-semibold">Choose a JSON file</h2>
             )}
             <p className="mt-1 text-sm text-muted-foreground">
-              {fileName ? "Click to choose a different file." : "Choose the JSON from Step 01 or a .qbx question bundle."}
+              {fileNames.length ? fileNames.join(", ") : "Choose one or more JSON files or .qbx question bundles."}
             </p>
             <Button className="mt-4" asChild>
               <span>
@@ -168,13 +179,15 @@ export function Import() {
         </label>
       </Panel>
 
-      {error && (
-        <div className="rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">{error}</div>
-      )}
+      {fileErrors.map(({ name, error }) => (
+        <div key={name} className="rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">{name}: {error}</div>
+      ))}
 
-      {result && (
-        <Panel>
-          <PanelHead title="Import summary" note={`Job ${result.import_job_id ?? ""}`} />
+      {results.map(({ name, result }) => {
+        const detailItems = result.results.filter((r) => r.status === "error" || r.warnings.length > 0);
+        return (
+          <Panel key={`${result.import_job_id}-${name}`}>
+            <PanelHead title={`Import summary · ${name}`} note={`Job ${result.import_job_id ?? ""}`} />
           <div className="grid grid-cols-2 border-b border-border text-center">
             <div className="col-span-1 p-5">
               <Meta>Imported</Meta>
@@ -218,8 +231,9 @@ export function Import() {
               ))}
             </div>
           )}
-        </Panel>
-      )}
+          </Panel>
+        );
+      })}
 
       <p className="pt-2 text-xs text-muted-foreground">
         Prefer to add questions one at a time? Use <strong>Course Settings → Questions → Add question</strong>.

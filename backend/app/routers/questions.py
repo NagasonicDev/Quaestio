@@ -18,9 +18,7 @@ def _question_query():
 def _get_or_create_tag(db: Session, course_id: str, name: str) -> models.Tag:
     tag = db.scalar(select(models.Tag).where(models.Tag.course_id == course_id, models.Tag.name == name))
     if not tag:
-        tag = models.Tag(course_id=course_id, name=name)
-        db.add(tag)
-        db.flush()
+        raise HTTPException(400, f"Tag '{name}' is not in this course's allowed tag list. Update Course Settings first.")
     return tag
 
 
@@ -42,6 +40,10 @@ def create_question(payload: schemas.QuestionCreate, db: Session = Depends(get_d
         raise HTTPException(404, "Course not found")
     if not db.get(models.QuestionType, payload.type_key):
         raise HTTPException(400, f"Unknown question type '{payload.type_key}'")
+    allowed_tags = {tag.name for tag in db.scalars(select(models.Tag).where(models.Tag.course_id == payload.course_id))}
+    invalid_tags = sorted(set(payload.tag_names) - allowed_tags)
+    if invalid_tags:
+        raise HTTPException(400, f"Tags not allowed for this course: {invalid_tags}")
 
     source = None
     if payload.source_name:
@@ -114,6 +116,10 @@ def update_question(question_id: str, payload: schemas.QuestionUpdate, db: Sessi
             db.add(models.QuestionClassification(question_id=question_id, node_id=node_id))
 
     if "tag_names" in data:
+        allowed_tags = {tag.name for tag in db.scalars(select(models.Tag).where(models.Tag.course_id == q.course_id))}
+        invalid_tags = sorted(set(data["tag_names"]) - allowed_tags)
+        if invalid_tags:
+            raise HTTPException(400, f"Tags not allowed for this course: {invalid_tags}")
         db.query(models.QuestionTag).filter_by(question_id=question_id).delete()
         for tag_name in data["tag_names"]:
             tag = _get_or_create_tag(db, q.course_id, tag_name)
@@ -183,12 +189,15 @@ def list_questions(
         tag_name=tag,
     )
     if q:
+        body_matches = select(models.ContentBlock.question_id).where(
+            models.ContentBlock.slot == "body", models.ContentBlock.content_json.like(f"%{q}%")
+        )
+        source_number_matches = select(models.Source.source_id).where(
+            models.Source.original_question_no.ilike(f"%{q}%")
+        )
         base = base.where(
-            models.Question.question_id.in_(
-                select(models.ContentBlock.question_id).where(
-                    models.ContentBlock.slot == "body", models.ContentBlock.content_json.like(f"%{q}%")
-                )
-            )
+            (models.Question.question_id.in_(body_matches))
+            | (models.Question.source_id.in_(source_number_matches))
         )
 
     total = db.scalar(select(func.count()).select_from(base.subquery()))

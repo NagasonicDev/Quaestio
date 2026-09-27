@@ -20,6 +20,7 @@ import type {
   TestSectionInput,
   TestSectionResult,
 } from "../api/types";
+import { selectQuestionIndexes } from "./questionSelection";
 
 // ---------- helpers ----------
 
@@ -180,6 +181,7 @@ export async function createCourse(payload: {
       now,
     ]
   );
+  await run("INSERT INTO tag (tag_id, course_id, name) VALUES (?, ?, ?)", [newId("tag"), courseId, "action_required"]);
   const hierarchy = payload.hierarchy ?? [];
   for (const level of hierarchy) {
     await run(
@@ -215,6 +217,52 @@ export async function createCourse(payload: {
   const config = await getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
   return config;
+}
+
+export async function deleteCourse(courseId: string): Promise<void> {
+  const course = await courseRow(courseId);
+  if (!course) throw new Error("Course not found");
+
+  const roots = await all<SqlRow>(
+    "SELECT question_id FROM question WHERE course_id = ? AND parent_question_id IS NULL",
+    [courseId]
+  );
+  for (const row of roots) await deleteAssetBlobsFor(String(row.question_id));
+
+  const tests = await all<SqlRow>("SELECT test_id FROM generated_test WHERE course_id = ?", [courseId]);
+  for (const row of tests) await deleteTestOutputs(String(row.test_id));
+
+  const sources = await all<SqlRow>(
+    "SELECT DISTINCT source_id FROM question WHERE course_id = ? AND source_id IS NOT NULL",
+    [courseId]
+  );
+  await transaction((database) => {
+    database.run(
+      `DELETE FROM practice_attempt
+       WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)
+          OR session_id IN (SELECT session_id FROM practice_session WHERE course_id = ?)`,
+      [courseId, courseId]
+    );
+    database.run(
+      `UPDATE import_question SET final_question_id = NULL
+       WHERE final_question_id IN (SELECT question_id FROM question WHERE course_id = ?)`,
+      [courseId]
+    );
+    database.run("DELETE FROM generated_test WHERE course_id = ?", [courseId]);
+    database.run("DELETE FROM import_job WHERE course_id = ?", [courseId]);
+    database.run("DELETE FROM question WHERE course_id = ?", [courseId]);
+    database.run("DELETE FROM practice_session WHERE course_id = ?", [courseId]);
+    database.run("UPDATE question_type SET course_id = NULL WHERE course_id = ? AND EXISTS (SELECT 1 FROM question WHERE question.type_key = question_type.type_key)", [courseId]);
+    database.run("DELETE FROM question_type WHERE course_id = ?", [courseId]);
+    for (const source of sources) {
+      database.run(
+        "DELETE FROM source WHERE source_id = ? AND NOT EXISTS (SELECT 1 FROM question WHERE question.source_id = source.source_id)",
+        [source.source_id]
+      );
+    }
+    database.run("DELETE FROM course WHERE course_id = ?", [courseId]);
+  });
+  await flush();
 }
 
 // ---------- levels ----------
@@ -460,11 +508,14 @@ function buildFilters(opts: FilterOptions): { where: string[]; params: any[] } {
   }
   if (opts.q) {
     where.push(
-      `q.question_id IN (
-        SELECT question_id FROM content_block WHERE slot = 'body' AND content_json LIKE ?
-      )`
+      `(q.question_id LIKE ?
+        OR q.source_id IN (SELECT source_id FROM source WHERE original_question_no LIKE ?)
+        OR q.question_id IN (
+          SELECT question_id FROM content_block WHERE slot = 'body' AND content_json LIKE ?
+        ))`
     );
-    params.push(`%${opts.q}%`);
+    const search = `%${opts.q}%`;
+    params.push(search, search, search);
   }
   return { where, params };
 }
@@ -807,13 +858,22 @@ async function getOrCreateTag(courseId: string, name: string): Promise<string> {
     name,
   ]);
   if (row) return row.tag_id;
-  const tagId = newId("tag");
-  await run("INSERT INTO tag (tag_id, course_id, name) VALUES (?, ?, ?)", [
-    tagId,
-    courseId,
-    name,
-  ]);
-  return tagId;
+  throw new Error(`Tag '${name}' is not in this course's allowed tag list. Update the list in Course Settings first.`);
+}
+
+export async function updateCourseTags(courseId: string, names: string[]): Promise<void> {
+  const normalized = Array.from(new Set(names.map((name) => name.trim()).filter(Boolean)));
+  if (!normalized.includes("action_required")) normalized.unshift("action_required");
+  const existing = await all<SqlRow>("SELECT name FROM tag WHERE course_id = ?", [courseId]);
+  const oldNames = new Set(existing.map((row) => String(row.name)));
+  await transaction((database) => {
+    for (const name of normalized) {
+      if (!oldNames.has(name)) database.run("INSERT INTO tag (tag_id, course_id, name) VALUES (?, ?, ?)", [newId("tag"), courseId, name]);
+    }
+    for (const name of oldNames) {
+      if (!normalized.includes(name)) database.run("DELETE FROM tag WHERE course_id = ? AND name = ?", [courseId, name]);
+    }
+  });
 }
 
 interface SlotBlockSummary {
@@ -1460,6 +1520,10 @@ export function buildInstructionsMarkdown(config: CourseFullConfig): string {
   lines.push("## QUESTION TYPES");
   lines.push(config.question_types.join(", "));
   lines.push("");
+  lines.push("## VALID TAGS");
+  lines.push(...config.tags.map((tag) => `- ${tag}`));
+  lines.push("Use only these exact tags. Never invent tags; only the user can edit this list.");
+  lines.push("");
   lines.push("## DIFFICULTY");
   lines.push(config.difficulty_levels.map((d) => `"${d.level} = ${d.label}"`).join(", "));
   lines.push("");
@@ -1508,6 +1572,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
   const config = await getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
   const validTypeKeys = new Set(config.question_types);
+  const validTags = new Set(config.tags);
   const validDifficulties = config.difficulty_levels.map((d) => d.level);
   const validNodeIds = new Set<string>();
   const codeToNodeId = new Map<string, string>();
@@ -1557,6 +1622,10 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
       errors.push(
         `Unknown question type '${q.type_key}'. Valid types: ${[...validTypeKeys].sort().join(", ")}`
       );
+    }
+    const invalidTags = [...new Set((q.tags ?? []).map(String).filter((tag: string) => !validTags.has(tag)))];
+    if (invalidTags.length) {
+      errors.push(`Tags not allowed for this course: ${invalidTags.join(", ")}. Valid tags: ${[...validTags].sort().join(", ")}`);
     }
     if (validDifficulties.length && !validDifficulties.includes(q.difficulty)) {
       errors.push(
@@ -1729,7 +1798,7 @@ export interface GenerateTestPayload {
   shuffle?: boolean;
   sections?: TestSectionInput[];
   selectionTimeoutMs?: number;
-  onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "solutions" | "preview" | "saving"; questionCount?: number }) => void;
+  onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number }) => void;
 }
 
 async function matchingQuestionIds(
@@ -1854,78 +1923,12 @@ async function selectForMarks(
   }
   const selectionStart = performance.now();
   if (timingPrefix) performance.mark(`${timingPrefix}:selection:start`);
-  const targetUnits = Math.max(1, Math.round(target * 100));
-  const groups = new Map<number, number[]>();
-  rows.forEach((row, index) => {
-    const units = Math.max(1, Math.round(Number(row.marks) * 100));
-    const indexes = groups.get(units) ?? [];
-    indexes.push(index);
-    groups.set(units, indexes);
-  });
-  const bundles: Array<{ units: number; questionIndexes: number[] }> = [];
-  for (const [units, indexes] of groups) {
-    let offset = 0;
-    let power = 1;
-    while (offset < indexes.length) {
-      const count = Math.min(power, indexes.length - offset);
-      bundles.push({ units: units * count, questionIndexes: indexes.slice(offset, offset + count) });
-      offset += count;
-      power *= 2;
-    }
-  }
-  // A question worth more than the target can only make a combination worse
-  // than choosing that question by itself, so cap the subset-sum range at 2×target.
-  const maxQuestionUnits = [...groups.keys()]
-    .filter((units) => units <= targetUnits)
-    .reduce((max, units) => Math.max(max, units), 0);
-  const limit = targetUnits + maxQuestionUnits;
-  const reachable = [0];
-  const seen = new Set(reachable);
-  const parents = new Map<number, { previous: number; bundleIndex: number }>();
-  let best = 0;
-  let bestDistance = Infinity;
-  let bestPath: number[] = [];
-  let steps = 0;
-  let selectionLimited = false;
-  for (let bundleIndex = 0; bundleIndex < bundles.length; bundleIndex++) {
-    if (bundles[bundleIndex].questionIndexes.length !== 1) continue;
-    const distance = Math.abs(bundles[bundleIndex].units - targetUnits);
-    if (distance < bestDistance || (distance === bestDistance && bundles[bundleIndex].units < best)) {
-      best = bundles[bundleIndex].units;
-      bestDistance = distance;
-      bestPath = [bundleIndex];
-    }
-  }
-  search: for (let bundleIndex = 0; bundleIndex < bundles.length && bestDistance !== 0; bundleIndex++) {
-    const bundle = bundles[bundleIndex];
-    for (const previous of reachable.slice()) {
-      if ((steps++ & 127) === 0 && performance.now() >= selectionDeadline) {
-        selectionLimited = true;
-        break search;
-      }
-      const total = previous + bundle.units;
-      if (total > limit || seen.has(total)) continue;
-      seen.add(total);
-      reachable.push(total);
-      parents.set(total, { previous, bundleIndex });
-      const distance = Math.abs(total - targetUnits);
-      if (distance < bestDistance || (distance === bestDistance && total < best)) {
-        best = total;
-        bestDistance = distance;
-        bestPath = [bundleIndex];
-        for (let cursor = previous; cursor > 0;) {
-          const parent = parents.get(cursor);
-          if (!parent) break;
-          bestPath.push(parent.bundleIndex);
-          cursor = parent.previous;
-        }
-      }
-      if (bestDistance === 0) break search;
-    }
-  }
-  const pickedRows = bestPath.flatMap((bundleIndex) =>
-    bundles[bundleIndex].questionIndexes.map((index) => rows[index])
+  const { indexes, selectionLimited } = selectQuestionIndexes(
+    rows.map((row) => Number(row.marks)),
+    Math.max(1, Math.round(target * 100)),
+    { deadline: selectionDeadline }
   );
+  const pickedRows = indexes.map((index) => rows[index]);
   if (timingPrefix) recordGenerationTiming(`${timingPrefix}:selection`, selectionStart);
   onHydrating?.();
   const hydrateStart = performance.now();
@@ -2071,7 +2074,6 @@ export async function generateTest(
   performance.mark(`${timingPrefix}:saving:start`);
   await storeTestFiles(testId, files);
   const testUrl = (await ensureTestFileUrl(testId, "test")) ?? "";
-  const solutionsUrl = (await ensureTestFileUrl(testId, "solutions")) ?? "";
   const previewUrl = (await ensureTestFileUrl(testId, "preview")) ?? "";
   const extension = format === "pdf" ? "pdf" : "docx";
 
@@ -2090,7 +2092,7 @@ export async function generateTest(
       JSON.stringify(payload),
       JSON.stringify(allQuestions.map((q) => q.question_id)),
       `${testId}-test.${extension}`,
-      `${testId}-solutions.${extension}`,
+      "",
       `${testId}-preview.pdf`,
       nowUtc(),
     ]
@@ -2105,7 +2107,6 @@ export async function generateTest(
     achieved_marks: achieved,
     question_count: allQuestions.length,
     test_download_url: testUrl,
-    solutions_download_url: solutionsUrl,
     preview_url: previewUrl,
     created_at: nowUtc(),
     section_results: sectionResults,
@@ -2120,7 +2121,6 @@ export async function listTests(courseId: string, limit: number = 20): Promise<G
   const out: GeneratedTestMeta[] = [];
   for (const r of rows) {
     const testUrl = (await ensureTestFileUrl(r.test_id, "test")) ?? "";
-    const solutionsUrl = (await ensureTestFileUrl(r.test_id, "solutions")) ?? "";
     const previewUrl = (await ensureTestFileUrl(r.test_id, "preview")) ?? "";
     out.push({
       test_id: r.test_id,
@@ -2131,7 +2131,6 @@ export async function listTests(courseId: string, limit: number = 20): Promise<G
       question_count: r.question_count,
       created_at: r.created_at,
       test_download_url: testUrl,
-      solutions_download_url: solutionsUrl,
       preview_url: previewUrl,
     });
   }

@@ -89,12 +89,17 @@ will not resolve against another course's database.
    original question numbering only as source metadata — never let it drive
    the app's own display order.
 3. For each question, extract in order: question text, equations (as LaTeX),
-   diagrams/images (describe what should be extracted; this skill cannot
-   extract binary image data itself), tables (as structured
-   columns/rows, not flattened text), and lists. Whenever a question needs a
-   diagram/image that can't be extracted, **keep a running note of its
-   original question number** so you can report it in the Image attachment
-   checklist (see below).
+   diagrams/images, tables (as structured columns/rows, not flattened text),
+   and lists. For PDF sources, use PyMuPDF when available to extract embedded
+   raster images and render vector diagrams/crops to PNG. For DOCX sources,
+   use python-docx to read document text and relationships, and extract
+    embedded media from the DOCX package (a ZIP) under \`word/media/\`; map each
+   image to its paragraph/table position using its relationship ID and nearby
+   text. If a DOCX figure is a vector shape rather than embedded media, render
+   the DOCX to PDF and use PyMuPDF to extract or crop it. Inspect all extracted
+   images and map each to its question and part; do not attach decorative
+   marks or unrelated figures. Keep a note of any figure that cannot be
+   confidently matched.
    **Format mathematical notation, scientific notation, symbols, and units
    for rendering.** Use an equation block for standalone equations. For math
    inside prose, choices, table cells, or list items, wrap LaTeX in single
@@ -103,7 +108,9 @@ will not resolve against another course's database.
    If completing a question requires follow-up input or action from the person
    (for example, manually attaching an image that could not be extracted), add
    the exact tag \`action_required\` to that question's \`tags\` array. Do not add
-   it to questions that need no follow-up.
+   it to questions that need no follow-up. Every tag must be selected from the
+   course's VALID TAGS list below. Never invent, rename, or create tags; omit a
+   tag when none of the listed tags applies. Only the user can change this list.
 4. Determine the question type, difficulty, marks, and classification
    (course nodes) using the course-specific section below — never guess a
    category that doesn't appear in "VALID NODES"; if uncertain, use the
@@ -112,23 +119,22 @@ will not resolve against another course's database.
 5. **Every question must end up with a marking guide** (see "Marking guides"
    below) — this is not optional, even when the source material doesn't
    include one.
-6. Produce a single JSON file (see "Output format") containing every
-   extracted question. Do not import anything yourself — the person uploads
-   this file into the app.
+6. If there are no extracted images, produce one JSON file (see "Output
+   format"). If any question uses an extracted image, produce a \`.qbx\` ZIP
+   bundle containing \`questions.json\` and the image files under \`assets/\`,
+   as described in "Image assets and import bundle". Do not import anything
+   yourself — the person uploads the JSON or \`.qbx\` file into the app.
 
 ## Image attachment checklist
 
-Because this skill extracts text, equations, tables, and lists but **cannot
-extract binary image data**, every finished response must end with an
-**Image attachment checklist** that tells the person exactly which questions
-need images attached and where they are in the source. This is not optional
-— it is the only way the person knows what's missing.
+Every finished response must end with an **Image attachment checklist** that
+reports image extraction and any unresolved figure mapping. Successfully
+packaged images do not need manual attachment.
 
-- Track every question needing manual attachment **by its original source
-  question number** (the same number you put in each question's
-  \`source.original_question_no\`), plus its part label if it's a multi-part
-  question — the app's question ids don't exist yet, so question numbers are
-  the only reliable reference.
+- Track every image **by its original source question number** (the same
+  number you put in each question's \`source.original_question_no\`), plus its
+  part label if it's a multi-part question. Distinguish images included in
+  the bundle from any image that still needs manual review or attachment.
 - End the response with a checklist like this:
 
 \`\`\`
@@ -139,11 +145,47 @@ need images attached and where they are in the source. This is not optional
 - Q34: scatter plot of V0/V vs 1/\u03bb with five data points
 \`\`\`
 
-- If no question needs an image, still include the section and write
-  "None — every question is fully text/equations." A missing section reads
-  as an omission, not as "none needed".
-- The person attaches these via the app's block editor upload picker after
-  import.
+- If all required images were extracted and packaged, list their question
+numbers and filenames and say they are included in the \`.qbx\` bundle.
+- If any figure could not be extracted or mapped, list its question/part and
+  explain what needs review. Add \`action_required\` only to questions that
+  actually need follow-up.
+- If no question needs an image, write "None — every question is fully
+  text/equations."
+
+## Image assets and import bundle
+
+The JSON-only import does not upload image bytes. Never put a local filename,
+file path, data URI, or base64 payload in \`asset_path\`; the app would not be
+able to resolve it. For questions with images, build a \`.qbx\` ZIP that the
+question importer understands:
+
+- \`questions.json\` has \`export_schema_version: 1\`, \`course_name\`, and a
+  \`questions\` array. Each question uses the app's question export shape:
+  \`question_id\`, \`course_id\`, \`type_key\`, \`difficulty\`, \`marks\`,
+  \`parent_question_id\`, \`part_label\`, \`notes\`, \`review_status\`,
+  \`classification_confidence\`, \`node_ids\`, \`tags\`, \`body\`, \`mcq_options\`,
+  \`answer\`, \`solution\`, \`marking_criteria\`, \`assets\`, \`source\`, \`parts\`,
+  \`created_at\`, and \`updated_at\`. Keep the question content and
+  course-specific classifications from the JSON schema. Set unused nullable
+  fields to \`null\`, unused arrays to \`[]\`, and use unique stable IDs for each
+  question and asset within the bundle.
+- Put each image at \`assets/<asset_id>.<ext>\` using PNG for rendered PDF
+  figures. For every image, add an entry to the owning question's \`assets\`
+  array with \`asset_id\` equal to the filename stem, \`file_path\` equal to the
+  same ID, \`mime_type\` (\`image/png\` for PNG), pixel \`width\` and \`height\`,
+  \`alt_text\`, and \`caption\` (nullable).
+- The corresponding \`image\`, \`diagram\`, or \`graph\` block must use
+  \`content.asset_path\` equal to that same \`asset_id\`; include a concise
+  \`alt_text\` and optional \`caption\` in the block content. Store assets on the
+  question or part that owns the block. Preserve block order in the question.
+- Keep image blocks in the JSON question structure; do not replace figures
+  with descriptions when their files are included. Include images in MCQ
+  option content only when the image is specifically part of that option.
+- Include the extracted PNGs in the ZIP under \`assets/\` and name the ZIP with
+  the \`.qbx\` extension. The app matches asset IDs to filenames, stores the
+  bytes, and rewrites IDs on import. Without images, use the ordinary
+  \`schema_version: 1\` JSON format instead.
 
 ## Marking guides — required, and never an exemplar
 
@@ -178,6 +220,14 @@ addition to \`answer\`/\`solution\` if the source provides them):
   A trailing parenthesised allocation (\`"... correctly (2 marks)"\`) also
   works. Avoid vague criteria with no allocation — an unmallocated line
   shows an empty marks cell in the table.
+- Apply this recursively: the shared parent and every part/subpart need their
+  own non-empty \`marking_criteria\` list block. If marks are awarded through
+  parts, give the parent a concise allocation note and put mark-by-mark
+  criteria on each leaf part; never leave the parent rubric blank.
+- For every question with parts, the parent \`marks\` must equal the sum of its
+  immediate parts; apply the same check to nested parts. Recheck printed marks
+  against the paper and any mark scheme before resolving a mismatch. Never
+  silently change a printed allocation; flag an unresolved conflict for review.
 
 ## Output format
 
@@ -195,7 +245,7 @@ Produce **one JSON file** (e.g. \`import.json\`) shaped like this:
       "marks": 3,
       "node_ids": ["<a valid node_id from import-schema.json>"],
       "node_codes": ["<the matching code from import-schema.json for the node_id above>"],
-      "tags": ["optional", "free-text", "action_required"],
+      "tags": [],
       "body": [
         {"block_type": "text", "content": {"text": "..."}},
         {"block_type": "equation", "content": {"latex": "x^2 - 5x + 6 = 0", "display": true}}
@@ -223,12 +273,18 @@ stem in \`body\` and put answer choices in a separate \`mcq_options\` array. Do
 not put choices in a body list. Keep stem blocks in the order they appear on
 the page, and keep options in their printed order (A, B, C, D). Each option
 has a \`content\` array of normal content blocks and an \`is_correct\` boolean.
-Use inline LaTeX for math in option text. Mark exactly one option correct
-when the source establishes the answer; also set \`answer\` to its letter (for
-example, \`C\`). If the source does not establish the answer, set every
-\`is_correct\` to \`false\` and leave \`answer\` empty rather than guessing.
-Preserve diagrams, tables, and equations in the stem or option content where
-they occur. Do not create question parts for the choices.
+Use inline LaTeX for math in option text. Determine the answer by checking the
+paper, any answer key/mark scheme, and solving the question yourself. Mark
+exactly one option correct and set \`answer\` to its printed letter (for example,
+\`C\`). A missing key in the paper does not mean the answer is unknown. Only if
+the question is genuinely ambiguous or unsolvable from available material,
+mark no option correct, leave \`answer\` empty, and flag it for review.
+Preserve diagrams, tables, and equations in stem/option content. Emit exactly
+one non-empty option object for each printed choice, in order; never combine
+choices, omit choices missed by OCR, or place choices in the stem. For
+table-based choices, preserve the table and keep each option to its own choice.
+Use sequential labels A, B, C, D, etc.; do not truncate after D. Do not create
+question parts for the choices.
 
 Example:
 
@@ -267,8 +323,8 @@ names, and course name exactly as shown in \`import-schema.json\`.
 
 Content block types available for \`body\`/\`answer\`/\`solution\`/\`marking_criteria\`:
 \`text\`, \`heading\`, \`equation\` (LaTeX in \`latex\`, \`display\`),
-\`image\`/\`diagram\`/\`graph\` (include the image description in the content
-and flag the question in the Image attachment checklist — see step 3),
+\`image\`/\`diagram\`/\`graph\` (for extracted images, use \`asset_path\` and package
+the file as described in Image assets and import bundle),
 \`table\` (\`columns\`, \`rows\`), \`list\` (\`ordered\`, \`items\`), \`code\`
 (\`language\`, \`code\`), \`answer_area\` (\`lines\`), \`page_break\`.
 
@@ -296,6 +352,13 @@ and flag the question in the Image attachment checklist — see step 3),
 - If you cannot confidently classify a question at all, still include it,
   set \`classification_confidence\` to \`"low"\`, and pick the closest available
   node rather than leaving \`node_ids\` empty.
+- Before saving, audit every question and nested part against the source:
+  confirm no empty text, heading, equation, list item, or MCQ choice; confirm
+  all printed choices are present and ordered; confirm each MCQ has exactly
+  one correct option and a matching answer letter unless explicitly flagged
+  unresolved; confirm every parent and part has an allocated marking guide;
+  and confirm parent/part mark totals. Parse the finished JSON and fix all
+  structural errors before delivering it.
 
 ---
 
@@ -312,6 +375,7 @@ export async function buildSkillBlob(
     course_name: config.name,
     schema_version: 1,
     valid_type_keys: config.question_types,
+    valid_tags: config.tags,
     valid_difficulty_levels: config.difficulty_levels.map((d) => ({ level: d.level, label: d.label })),
 allow_multi_classification: config.allow_multi_classification,
     valid_node_ids: flattenNodes(config.nodes),
@@ -391,11 +455,24 @@ function mimeExtension(mime: string): string {
   }
 }
 
-export async function exportCourse(courseId: string): Promise<void> {
+export interface CourseExportFilters {
+  typeKeys?: string[];
+  difficulties?: number[];
+  institutions?: string[];
+  tags?: string[];
+}
+
+export async function exportCourse(courseId: string, filters: CourseExportFilters = {}): Promise<void> {
   const config = await data.getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
   const row = await data.getCourseRow(courseId);
-  const questions = await data.getCourseQuestions(courseId);
+  const allQuestions = await data.getCourseQuestions(courseId);
+  const questions = allQuestions.filter((question) =>
+    (!filters.typeKeys?.length || filters.typeKeys.includes(question.type_key)) &&
+    (!filters.difficulties?.length || (question.difficulty != null && filters.difficulties.includes(question.difficulty))) &&
+    (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
+    (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
+  );
   const zip = new JSZip();
   zip.file(
     "course.json",
@@ -432,10 +509,16 @@ export async function exportCourse(courseId: string): Promise<void> {
 }
 
 /** Export the question records and their binary assets without course configuration. */
-export async function exportQuestions(courseId: string): Promise<void> {
+export async function exportQuestions(courseId: string, filters: CourseExportFilters = {}): Promise<void> {
   const config = await data.getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
-  const questions = await data.getCourseQuestions(courseId);
+  const allQuestions = await data.getCourseQuestions(courseId);
+  const questions = allQuestions.filter((question) =>
+    (!filters.typeKeys?.length || filters.typeKeys.includes(question.type_key)) &&
+    (!filters.difficulties?.length || (question.difficulty != null && filters.difficulties.includes(question.difficulty))) &&
+    (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
+    (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
+  );
   const zip = new JSZip();
   zip.file("questions.json", JSON.stringify({
     export_schema_version: 1,
@@ -502,25 +585,8 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
 }
 
 async function wipeCourseData(courseId: string): Promise<void> {
-  const rows = await all("SELECT question_id FROM question WHERE course_id = ?", [courseId]);
-  const ids = rows.map((r) => r.question_id);
-  if (ids.length) {
-    const marks = ids.map(() => "?").join(", ");
-    await run(`DELETE FROM practice_attempt WHERE question_id IN (${marks})`, ids);
-    await run(
-      `UPDATE import_question SET final_question_id = NULL WHERE final_question_id IN (${marks})`,
-      ids
-    );
-  }
-  await run("DELETE FROM practice_session WHERE course_id = ?", [courseId]);
-  const assetRows = await all(
-    `SELECT asset_id FROM asset
-     WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)`,
-    [courseId]
-  );
-  const { deleteAssetBlob } = await import("./assets");
-  for (const row of assetRows) await deleteAssetBlob(row.asset_id);
-  await run("DELETE FROM course WHERE course_id = ?", [courseId]);
+  const existing = await getFirst("SELECT course_id FROM course WHERE course_id = ?", [courseId]);
+  if (existing) await data.deleteCourse(courseId);
 }
 
 const IMAGE_TYPES = new Set(["image", "diagram", "graph"]);
@@ -541,6 +607,12 @@ async function getOrCreateTag(courseId: string, name: string): Promise<string> {
   const tagId = newId("tag");
   await run("INSERT INTO tag (tag_id, course_id, name) VALUES (?, ?, ?)", [tagId, courseId, name]);
   return tagId;
+}
+
+async function getAllowedTagId(courseId: string, name: string): Promise<string> {
+  const row = await getFirst("SELECT tag_id FROM tag WHERE course_id = ? AND name = ?", [courseId, name]);
+  if (!row) throw new Error(`Tag '${name}' is not in this course's allowed tag list.`);
+  return row.tag_id;
 }
 
 async function insertSourceIfNeeded(question: Question): Promise<string | null> {
@@ -606,7 +678,7 @@ async function insertQuestion(
     );
   });
   for (const tag of question.tags ?? []) {
-    const tagId = await getOrCreateTag(ctx.courseId, tag);
+    const tagId = await getAllowedTagId(ctx.courseId, tag);
     await run("INSERT INTO question_tag (question_id, tag_id) VALUES (?, ?)", [questionId, tagId]);
   }
   const slotLists: Array<[string, Question["body"]]> = [
@@ -629,6 +701,12 @@ async function insertQuestion(
       );
     }
   }
+  for (const [position, option] of (question.mcq_options ?? []).entries()) {
+    await run(
+      "INSERT INTO mcq_option (option_id, question_id, position, content_json, is_correct) VALUES (?, ?, ?, ?, ?)",
+      [newId("opt"), questionId, position, JSON.stringify(option.content ?? []), option.is_correct ? 1 : 0]
+    );
+  }
   for (const a of question.assets ?? []) {
     const mapped = ctx.assetMap.get(a.asset_id) ?? a.asset_id;
     await run(
@@ -645,24 +723,38 @@ async function insertQuestion(
 
 export async function applyCourseBundle(
   bundle: ParsedBundle,
-  mode: "replace" | "new"
+  mode: "replace" | "new",
+  requestedCourseId?: string
 ): Promise<string> {
   const src = bundle.course;
-  const courseId = mode === "new" ? newId("course") : src.course_id;
+  const courseId = mode === "new" ? (requestedCourseId ?? newId("course")) : src.course_id;
   if (mode === "replace") {
     await wipeCourseData(courseId);
   }
   const ctx: ImportCtx = { courseId, nodeMap: new Map(), questionMap: new Map(), assetMap: new Map() };
 
-  // re-key asset ids that would collide with blobs already in the store
-  const existingAssets = new Set(await idb.listAssetIds());
-  if (mode === "new") {
-    for (const assetId of bundle.assetBlobs.keys()) {
-      if (existingAssets.has(assetId)) ctx.assetMap.set(assetId, newId("asset"));
-      else ctx.assetMap.set(assetId, assetId);
+  // Asset IDs are unique in both IndexedDB and the SQL asset table. Include
+  // both stores: old/partial imports can leave a SQL row without a blob.
+  const existingAssets = new Set([
+    ...await idb.listAssetIds(),
+    ...(await all<{ asset_id: string }>("SELECT asset_id FROM asset")).map((asset) => asset.asset_id),
+  ]);
+  const bundleAssetIds = new Set(bundle.assetBlobs.keys());
+  const collectQuestionAssets = (questions: Question[]) => {
+    for (const question of questions) {
+      for (const asset of question.assets ?? []) bundleAssetIds.add(asset.asset_id);
+      for (const slot of [question.body, question.answer, question.solution, question.marking_criteria]) {
+        for (const block of slot ?? []) {
+          const assetPath = block.content?.asset_path;
+          if (typeof assetPath === "string" && assetPath) bundleAssetIds.add(assetPath);
+        }
+      }
+      collectQuestionAssets(question.parts ?? []);
     }
-  } else {
-    for (const assetId of bundle.assetBlobs.keys()) ctx.assetMap.set(assetId, assetId);
+  };
+  collectQuestionAssets(bundle.questions);
+  for (const assetId of bundleAssetIds) {
+    ctx.assetMap.set(assetId, existingAssets.has(assetId) ? newId("asset") : assetId);
   }
 
   const now = nowUtc();
@@ -711,6 +803,9 @@ export async function applyCourseBundle(
   }
   for (const tag of src.tags ?? []) {
     await getOrCreateTag(courseId, tag);
+  }
+  if (!(src.tags ?? []).includes("action_required")) {
+    await run("INSERT INTO tag (tag_id, course_id, name) VALUES (?, ?, ?)", [newId("tag"), courseId, "action_required"]);
   }
   // nodes, parents before children (pre-order walk)
   const fullFlat: CourseNode[] = [];
@@ -765,10 +860,23 @@ export async function importCourseFile(file: File): Promise<{ course_id: string;
     if (replace) {
       courseId = await applyCourseBundle(bundle, "replace");
     } else {
-      courseId = await applyCourseBundle(bundle, "new");
+      courseId = await importAsNewCourse(bundle);
     }
   } else {
-    courseId = await applyCourseBundle(bundle, "new");
+    courseId = await importAsNewCourse(bundle);
   }
   return { course_id: courseId, course_name: bundle.course.name };
+}
+
+async function importAsNewCourse(bundle: ParsedBundle): Promise<string> {
+  const courseId = newId("course");
+  try {
+    return await applyCourseBundle(bundle, "new", courseId);
+  } catch (error) {
+    // Bundle import writes in stages; remove partial rows/blobs if one stage
+    // fails so retrying cannot leave another half-imported course behind.
+    const partial = await getFirst("SELECT course_id FROM course WHERE course_id = ?", [courseId]);
+    if (partial) await data.deleteCourse(courseId);
+    throw error;
+  }
 }

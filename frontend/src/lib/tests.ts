@@ -2,8 +2,8 @@ import type { TestFile } from "./db/indexeddb";
 import * as idb from "./db/indexeddb";
 import type { Question } from "../api/types";
 import type { TestSectionResult } from "../api/types";
-import { buildDocxPaper, buildDocxSolutions, collectImages, type DocSection } from "./docx";
-import { buildPdfPaper, buildPdfSolutions } from "./pdf";
+import { buildDocxPaper, collectImages, type DocSection } from "./docx";
+import { buildPdfPaper } from "./pdf";
 
 const urlCache = new Map<string, string>();
 
@@ -19,19 +19,18 @@ function revokeUrl(testId: string, which: TestFile): void {
   }
 }
 
-/** Store the three generated outputs and register fresh object URLs. */
+/** Store the paper and its in-app preview, then register fresh object URLs. */
 export async function storeTestFiles(
   testId: string,
   files: Record<TestFile, Blob>
 ): Promise<void> {
-  for (const which of ["test", "solutions", "preview"] as const) revokeUrl(testId, which);
+  for (const which of ["test", "preview"] as const) revokeUrl(testId, which);
   await idb.putTestFile(testId, "test", files.test);
-  await idb.putTestFile(testId, "solutions", files.solutions);
   await idb.putTestFile(testId, "preview", files.preview);
   // Register URLs from the blobs we already have. Reading them back from
   // IndexedDB immediately after writing can race the transaction commit and
   // yield empty download/preview links.
-  for (const which of ["test", "solutions", "preview"] as const) {
+  for (const which of ["test", "preview"] as const) {
     urlCache.set(key(testId, which), URL.createObjectURL(files[which]));
   }
 }
@@ -62,10 +61,10 @@ function triggerDownload(blob: Blob, filename: string): void {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-/** Download a stored test paper or solutions file with a sensible filename. */
+/** Download a stored test paper with a sensible filename. */
 export async function downloadTestFile(
   testId: string,
-  which: "test" | "solutions",
+  which: "test",
   format: "docx" | "pdf"
 ): Promise<void> {
   const blob = await idb.getTestFile(testId, which);
@@ -73,13 +72,13 @@ export async function downloadTestFile(
     throw new Error("That file is no longer available in this browser. Generate the test again.");
   }
   const ext = format === "pdf" ? "pdf" : "docx";
-  const filename = which === "test" ? `test-paper.${ext}` : `solutions.${ext}`;
+  const filename = `test-paper.${ext}`;
   triggerDownload(blob, filename);
 }
 
 /** Remove a test's files from IndexedDB and revoke its object URLs. */
 export async function deleteTestOutputs(testId: string): Promise<void> {
-  for (const which of ["test", "solutions", "preview"] as const) revokeUrl(testId, which);
+  for (const which of ["test", "preview"] as const) revokeUrl(testId, which);
   await idb.deleteTestFiles(testId);
 }
 
@@ -92,15 +91,14 @@ export interface BuildOptions {
   sectionResults: TestSectionResult[];
   achievedMarks: number;
   sections: DocSection[];
-  onProgress?: (progress: { phase: "selecting" | "paper" | "solutions" | "preview" | "saving"; questionCount?: number }) => void;
+  onProgress?: (progress: { phase: "selecting" | "paper" | "preview" | "saving"; questionCount?: number }) => void;
 }
 
 /**
- * Builds the paper, solutions, and preview for a generated test. Paper and
- * solutions use the same builder family (docx or pdf per the chosen format)
- * while the preview is always a PDF (the paper itself when format is pdf).
+ * Builds the paper and its PDF preview. The preview is the paper itself when
+ * PDF was selected.
  */
-export async function buildTestOutputs(options: BuildOptions): Promise<Record<TestFile, Blob>> {
+export async function buildTestOutputs(options: BuildOptions): Promise<{ test: Blob; preview: Blob }> {
   const { title, courseName, format, sections, achievedMarks } = options;
   const timed = async <T>(phase: string, run: () => Promise<T>): Promise<T> => {
     const name = `test-generation:${options.testId}:${phase}`;
@@ -118,15 +116,10 @@ export async function buildTestOutputs(options: BuildOptions): Promise<Record<Te
   options.onProgress?.({ phase: "paper", questionCount: options.questions.length });
   const test =
     await timed("export-paper", () => format === "pdf" ? buildPdfPaper(docOptions) : buildDocxPaper(docOptions));
-  options.onProgress?.({ phase: "solutions", questionCount: options.questions.length });
-  const solutions =
-    await timed("export-solutions", () => format === "pdf"
-      ? buildPdfSolutions(docOptions)
-      : buildDocxSolutions(docOptions));
   let preview = test;
   if (format !== "pdf") {
     options.onProgress?.({ phase: "preview", questionCount: options.questions.length });
     preview = await timed("export-preview", () => buildPdfPaper(docOptions));
   }
-  return { test, solutions, preview };
+  return { test, preview };
 }

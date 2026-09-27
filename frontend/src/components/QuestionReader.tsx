@@ -364,7 +364,7 @@ function MarkingGuideTable({ blocks }: { blocks: ContentBlock[] }) {
             {rows.map((r, i) => (
               <tr key={i}>
                 <td className="border border-border px-3 py-1.5 align-top">
-                  {r.criteria || "\u00a0"}
+                  {r.criteria ? <MathText text={r.criteria} /> : "\u00a0"}
                 </td>
                 <td className="border border-border px-3 py-1.5 text-center align-top">
                   {r.marks || "—"}

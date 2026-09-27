@@ -18,17 +18,17 @@ export function PageHeader({
   actions?: ReactNode;
 }) {
   return (
-    <div className="mb-6 grid grid-cols-[minmax(0,1fr)_auto] items-end gap-4">
+    <div className="mb-6 flex flex-col gap-4 rounded-2xl border border-border/80 bg-card/65 p-5 shadow-sm shadow-foreground/[0.025] backdrop-blur sm:p-6 md:flex-row md:items-end md:justify-between">
       <div className="min-w-0">
-        <p className="label mb-1.5">{eyebrow}</p>
-        <h1 className="font-display text-3xl font-semibold leading-tight sm:text-[34px]">
+        <p className="label mb-2 inline-flex items-center gap-2"><span className="size-1.5 rounded-full bg-accent-foreground" />{eyebrow}</p>
+        <h1 className="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-[34px]">
           {title}
         </h1>
         {description && (
           <p className="mt-2 max-w-2xl text-sm text-muted-foreground">{description}</p>
         )}
       </div>
-      {actions && <div className="flex shrink-0 flex-wrap justify-end gap-2">{actions}</div>}
+      {actions && <div className="flex w-full shrink-0 flex-wrap gap-2 md:w-auto md:justify-end">{actions}</div>}
     </div>
   );
 }
@@ -52,7 +52,7 @@ export function LoadingState({
 export function InkLoader({
   messages = ["Quaestio is pondering…"],
   className,
-  intervalMs = 5900,
+  intervalMs = 900,
 }: {
   messages?: string[];
   className?: string;
@@ -69,11 +69,11 @@ export function InkLoader({
 
   return (
     <div className={cn("ink-loader", className)} role="status" aria-live="polite">
-      <span className="ink-loader-q font-display" aria-hidden="true">Q</span>
-      <div className="ink-rule" aria-hidden="true">
-        <span className="ink-rule-line" />
+      <span className="ink-loader-mark font-display" aria-hidden="true">Q</span>
+      <div className="ink-stream" aria-hidden="true">
+        <span className="ink-stream-base" />
+        <span className="ink-stream-current" />
       </div>
-      <div className="ink-drops" aria-hidden="true"><span /><span /><span /></div>
       <p className="label ink-loader-message">{messages[index % messages.length]}</p>
     </div>
   );

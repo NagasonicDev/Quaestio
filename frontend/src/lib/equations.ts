@@ -3,14 +3,23 @@ import katex from "katex";
 import { toBlob } from "html-to-image";
 
 export interface RenderedEquation {
-  data: Uint8Array;
+  data: Uint8Array<ArrayBuffer>;
   width: number;
   height: number;
 }
 
 let fontsReadyPromise: Promise<void> | null = null;
 const renderedEquations = new Map<string, Promise<RenderedEquation | null>>();
-const MAX_EQUATION_CACHE = 256;
+const renderedEquationSizes = new Map<string, number>();
+const MAX_EQUATION_CACHE_ENTRIES = 64;
+const MAX_EQUATION_CACHE_BYTES = 24 * 1024 * 1024;
+let renderedEquationBytes = 0;
+
+function evictEquation(key: string): void {
+  renderedEquations.delete(key);
+  renderedEquationBytes -= renderedEquationSizes.get(key) ?? 0;
+  renderedEquationSizes.delete(key);
+}
 
 function fontsReady(): Promise<void> {
   if (!fontsReadyPromise) {
@@ -35,17 +44,32 @@ export async function renderLatexPng(
 ): Promise<RenderedEquation | null> {
   const cacheKey = `${display ? "display" : "inline"}:${latex}`;
   const cached = renderedEquations.get(cacheKey);
-  if (cached) return cached;
+  if (cached) {
+    // Refresh insertion order so the cache behaves as a small LRU.
+    renderedEquations.delete(cacheKey);
+    renderedEquations.set(cacheKey, cached);
+    return cached;
+  }
 
   const render = renderLatexPngUncached(latex, display);
   renderedEquations.set(cacheKey, render);
-  if (renderedEquations.size > MAX_EQUATION_CACHE) {
-    const oldest = renderedEquations.keys().next().value;
-    if (oldest !== undefined && oldest !== cacheKey) renderedEquations.delete(oldest);
-  }
-  // Failed renders should be retryable rather than cached permanently.
   void render.then((result) => {
-    if (!result && renderedEquations.get(cacheKey) === render) renderedEquations.delete(cacheKey);
+    if (renderedEquations.get(cacheKey) !== render) return;
+    if (!result) {
+      evictEquation(cacheKey);
+      return;
+    }
+    const size = result.data.byteLength;
+    renderedEquationSizes.set(cacheKey, size);
+    renderedEquationBytes += size;
+    while (
+      renderedEquations.size > MAX_EQUATION_CACHE_ENTRIES ||
+      renderedEquationBytes > MAX_EQUATION_CACHE_BYTES
+    ) {
+      const oldest = renderedEquations.keys().next().value;
+      if (oldest === undefined) break;
+      evictEquation(oldest);
+    }
   });
   return render;
 }

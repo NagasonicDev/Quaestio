@@ -85,6 +85,14 @@ def blocks_by_slot(question: models.Question, slot: str) -> list[models.ContentB
     return sorted([b for b in question.content_blocks if b.slot == slot], key=lambda b: b.position)
 
 
+def _source_attribution(source: models.Source) -> str:
+    institution = (source.institution or "").strip()
+    name = (source.name or "").strip()
+    if institution and name.casefold().startswith(institution.casefold()):
+        name = name[len(institution):].lstrip(" \t,:–—-")
+    return ", ".join(part for part in (institution, name, str(source.year) if source.year else "") if part)
+
+
 def _generated_part_answer_lines(question: models.Question, part: models.Question) -> int:
     if question.type_key not in {"extended_response", "short_response", "short_answer"}:
         return 0
@@ -465,8 +473,7 @@ def _docx_render_question(doc: Document, number: int, q: models.Question):
 
     if q.source:
         src_p = doc.add_paragraph()
-        parts_txt = [q.source.name] + ([str(q.source.year)] if q.source.year else [])
-        sr2 = src_p.add_run(f"(Source: {', '.join(parts_txt)})")
+        sr2 = src_p.add_run(f"(Source: {_source_attribution(q.source)})")
         sr2.italic = True
         sr2.font.size = Pt(8)
         sr2.font.color.rgb = GRAY
@@ -774,8 +781,7 @@ def _pdf_render_question(story: list, styles, number: int, q: models.Question):
             block_story.append(answer_line)
 
     if q.source:
-        parts_txt = [q.source.name] + ([str(q.source.year)] if q.source.year else [])
-        block_story.append(Paragraph(f"(Source: {', '.join(parts_txt)})", styles["SourceLine"]))
+        block_story.append(Paragraph(f"(Source: {_source_attribution(q.source)})", styles["SourceLine"]))
 
     story.append(KeepTogether(block_story[:2]) if len(block_story) > 1 else block_story[0])
     story.extend(block_story[2:] if len(block_story) > 2 else [])

@@ -76,7 +76,6 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   const [marks, setMarks] = useState<string>(existing?.marks?.toString() ?? "");
   const [nodeIds, setNodeIds] = useState<Set<string>>(new Set(existing?.node_ids ?? []));
   const [tags, setTags] = useState<string[]>(existing?.tags ?? []);
-  const [tagInput, setTagInput] = useState("");
   const [sourceName, setSourceName] = useState(existing?.source?.name ?? "");
   const [sourceYear, setSourceYear] = useState(existing?.source?.year?.toString() ?? "");
   const [sourceInstitution, setSourceInstitution] = useState(existing?.source?.institution ?? "");
@@ -113,14 +112,6 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   const formRef = useRef<HTMLFormElement>(null);
   const pendingNavigation = useRef<(() => void) | null>(null);
   const [error, setError] = useState<string | null>(null);
-
-  function addTags(value: string) {
-    const additions = value.split(",").map((tag) => tag.trim()).filter(Boolean);
-    if (!additions.length) return;
-    setTags((current) => Array.from(new Set([...current, ...additions])));
-    setTagInput("");
-    setHasUnsavedChanges(true);
-  }
 
   useEffect(() => {
     if (!hasUnsavedChanges) return;
@@ -363,36 +354,16 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
             <Panel>
               <PanelHead title="Tags" />
               <div className="p-5">
-                <Field label="Add a tag">
-                  <div className="rounded-md border border-input bg-background p-2 focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2">
-                    <div className="flex flex-wrap items-center gap-2">
-                      {tags.map((tag) => (
-                        <span key={tag} className="inline-flex items-center gap-1 rounded-md bg-muted px-2 py-1 text-sm">
-                          {tag}
-                          <button type="button" aria-label={`Remove tag ${tag}`} className="rounded-sm text-muted-foreground hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" onClick={() => {
-                            setTags((current) => current.filter((item) => item !== tag));
-                            setHasUnsavedChanges(true);
-                          }}><span aria-hidden="true">×</span></button>
-                        </span>
-                      ))}
-                      <Input
-                        value={tagInput}
-                        onChange={(e) => setTagInput(e.target.value)}
-                        onKeyDown={(e) => {
-                          if (e.key === "Enter" || e.key === ",") {
-                            e.preventDefault();
-                            addTags(tagInput);
-                          } else if (e.key === "Backspace" && !tagInput && tags.length) {
-                            setTags((current) => current.slice(0, -1));
-                            setHasUnsavedChanges(true);
-                          }
-                        }}
-                        onBlur={() => { if (tagInput.trim()) addTags(tagInput); }}
-                        placeholder={tags.length ? "Add another…" : "e.g. conceptual"}
-                        className="h-8 min-w-[8rem] flex-1 border-0 px-1 shadow-none focus-visible:ring-0"
-                        aria-label="Tag name"
-                      />
-                    </div>
+                <Field label="Allowed tags">
+                  <div className="flex flex-wrap gap-2">
+                    {config.tags.map((tag) => {
+                      const enabled = tags.includes(tag);
+                      return <ToggleButton key={tag} enabled={enabled} onClick={() => {
+                        setTags((current) => enabled ? current.filter((item) => item !== tag) : [...current, tag]);
+                        setHasUnsavedChanges(true);
+                      }}>{tag}</ToggleButton>;
+                    })}
+                    {config.tags.length === 0 && <p className="text-sm text-muted-foreground">Add tags in Course Settings first.</p>}
                   </div>
                 </Field>
               </div>

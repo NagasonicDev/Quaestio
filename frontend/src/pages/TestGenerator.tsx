@@ -24,6 +24,19 @@ function formatDurationClock(seconds: number) {
   return mins ? `${mins}m ${String(secs).padStart(2, "0")}s` : `${secs}s`;
 }
 
+function testRuntimeKey(format: "docx" | "pdf") {
+  return `quaestio:test-generation-seconds-per-question:${format}`;
+}
+
+function readTestRuntimeEstimate(format: "docx" | "pdf"): number | null {
+  try {
+    const value = Number(window.localStorage.getItem(testRuntimeKey(format)));
+    return Number.isFinite(value) && value > 0 ? value : null;
+  } catch {
+    return null;
+  }
+}
+
 interface SectionDraft {
   id: number;
   name: string;
@@ -50,7 +63,7 @@ export function TestGenerator() {
   const [generating, setGenerating] = useState(false);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [estimatedSeconds, setEstimatedSeconds] = useState(20);
-  const [generationPhase, setGenerationPhase] = useState<"selecting" | "hydrating" | "paper" | "solutions" | "preview" | "saving">("selecting");
+  const [generationPhase, setGenerationPhase] = useState<"selecting" | "hydrating" | "paper" | "preview" | "saving">("selecting");
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<GeneratedTestMeta | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -144,11 +157,11 @@ export function TestGenerator() {
     };
   }, [result?.test_id]);
 
-  async function handleDownload(test: GeneratedTestMeta, which: "test" | "solutions") {
+  async function handleDownload(test: GeneratedTestMeta) {
     setDownloadError(null);
-    setDownloading(`${test.test_id}:${which}`);
+    setDownloading(`${test.test_id}:test`);
     try {
-      await downloadTestFile(test.test_id, which, test.format as "docx" | "pdf");
+      await downloadTestFile(test.test_id, "test", test.format as "docx" | "pdf");
     } catch (e) {
       setDownloadError(e instanceof Error ? e.message : "Download failed");
     } finally {
@@ -215,7 +228,10 @@ export function TestGenerator() {
       return sum + (averageMarks > 0 ? section.marks / averageMarks : 0);
     }, 0);
     const perQuestion = format === "pdf" ? 5 : 4;
-    const initialEstimate = Math.max(20, Math.round(15 + estimatedQuestionCount * perQuestion));
+    const learnedSecondsPerQuestion = readTestRuntimeEstimate(format);
+    const initialEstimate = Math.max(20, Math.round(learnedSecondsPerQuestion
+      ? estimatedQuestionCount * learnedSecondsPerQuestion
+      : 15 + estimatedQuestionCount * perQuestion));
     setEstimatedSeconds(initialEstimate);
     setError(null);
     setResult(null);
@@ -236,13 +252,27 @@ export function TestGenerator() {
         onProgress: (progress) => {
           setGenerationPhase(progress.phase);
           if (progress.questionCount != null && progress.phase !== "selecting") {
-            // PDF generation lays out the paper and solutions separately; DOCX
-            // also builds a PDF preview. Keep estimates conservative for those passes.
+            // DOCX generation also builds a PDF preview.
             const perQuestion = format === "pdf" ? 5 : 4;
-            setEstimatedSeconds(Math.max(20, Math.round(15 + progress.questionCount * perQuestion)));
+            setEstimatedSeconds(Math.max(20, Math.round(learnedSecondsPerQuestion
+              ? progress.questionCount * learnedSecondsPerQuestion
+              : 15 + progress.questionCount * perQuestion)));
           }
         },
       });
+      // Adapt future estimates to the actual cost of exports on this device.
+      // Selection now has a strict small budget; this mainly learns document
+      // rendering/storage cost for the chosen output format.
+      const observedSecondsPerQuestion = Math.max(1, (Date.now() - start) / 1000 / Math.max(1, meta.question_count));
+      try {
+        const previous = readTestRuntimeEstimate(format);
+        const updated = previous == null
+          ? observedSecondsPerQuestion
+          : previous * 0.5 + observedSecondsPerQuestion * 0.5;
+        window.localStorage.setItem(testRuntimeKey(format), String(updated));
+      } catch {
+        // Private browsing or storage restrictions should not interrupt exports.
+      }
       setResult(meta);
       refetchPastTests();
     } catch (e) {
@@ -428,20 +458,14 @@ export function TestGenerator() {
                     "Formatting headings, marks, and page breaks…",
                     "Rendering the paper pages…",
                   ],
-                  solutions: [
-                    `Building the ${format.toUpperCase()} solutions…`,
-                    "Laying out worked solutions and marking points…",
-                    "Formatting the answer key…",
-                    "Rendering the solutions pages…",
-                  ],
                   preview: [
                     "Preparing the in-app PDF preview…",
                     "Opening the generated paper preview…",
                     "Finishing the preview document…",
                   ],
                   saving: [
-                    "Saving the generated files…",
-                    "Writing the paper and solutions to your question bank…",
+                    "Saving the generated paper…",
+                    "Saving the paper and preview to your question bank…",
                     "Finishing up and saving your test…",
                   ],
                 }[generationPhase]} />
@@ -465,13 +489,9 @@ export function TestGenerator() {
                 note={`${result.question_count} questions · ${result.achieved_marks} marks`}
                 action={
                   <div className="flex gap-1.5">
-                    <Button size="sm" variant="outline" disabled={!!downloading} onClick={() => handleDownload(result, "test")}>
+                    <Button size="sm" variant="outline" disabled={!!downloading} onClick={() => handleDownload(result)}>
                       <Download />
-                      {downloading === `${result.test_id}:test` ? "Downloading…" : "Paper"}
-                    </Button>
-                    <Button size="sm" disabled={!!downloading} onClick={() => handleDownload(result, "solutions")}>
-                      <Download />
-                      {downloading === `${result.test_id}:solutions` ? "Downloading…" : "Solutions"}
+                      {downloading === `${result.test_id}:test` ? "Downloading…" : "Download paper"}
                     </Button>
                   </div>
                 }
@@ -503,9 +523,6 @@ export function TestGenerator() {
                   </div>
                   <div className="mt-4 text-xs leading-5">
                     <p>A preview of the generated test paper appears below.</p>
-                    <p className="text-muted-foreground">
-                      The solutions document isn't previewed here — download it separately.
-                    </p>
                     {previewUrl ? (
                       <iframe
                         src={previewUrl}
@@ -528,7 +545,7 @@ export function TestGenerator() {
           )}
 
           <Panel>
-            <PanelHead title="Past tests" note="Previously generated for this course" />
+              <PanelHead title="Past tests" note="Previously generated papers" />
             {loadingPastTests ? (
               <div className="px-5 py-8"><LoadingState label="Loading past tests…" /></div>
             ) : !pastTests || pastTests.length === 0 ? (
@@ -555,18 +572,9 @@ export function TestGenerator() {
                         variant="ghost"
                         title="Paper"
                         disabled={!!downloading}
-                        onClick={() => handleDownload(t, "test")}
+                        onClick={() => handleDownload(t)}
                       >
                         <FileText />
-                      </Button>
-                      <Button
-                        size="icon"
-                        variant="ghost"
-                        title="Solutions"
-                        disabled={!!downloading}
-                        onClick={() => handleDownload(t, "solutions")}
-                      >
-                        <Download />
                       </Button>
                       <Button
                         size="icon"

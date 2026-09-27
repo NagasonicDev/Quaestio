@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
+    "test:selection": "node --test --test-isolation=none tests/questionSelection.test.mjs",
+    "bench:selection": "node scripts/benchmark-question-selection.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

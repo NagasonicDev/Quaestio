@@ -26,6 +26,7 @@ def create_course(payload: schemas.CourseCreate, db: Session = Depends(get_db)):
     )
     db.add(course)
     db.flush()  # assign course_id
+    db.add(models.Tag(course_id=course.course_id, name="action_required"))
 
     for lv in payload.hierarchy:
         db.add(models.CourseLevelDef(course_id=course.course_id, level_index=lv.level_index,
@@ -63,6 +64,27 @@ def update_course(course_id: str, payload: schemas.CourseUpdate, db: Session = D
     db.commit()
     db.refresh(course)
     return course
+
+
+@router.put("/{course_id}/tags", response_model=schemas.CourseFullConfig)
+def update_course_tags(course_id: str, payload: schemas.CourseTagsUpdate, db: Session = Depends(get_db)):
+    course = _get_course_or_404(db, course_id)
+    names = list(dict.fromkeys(name.strip() for name in payload.tags if name.strip()))
+    if "action_required" not in names:
+        names.insert(0, "action_required")
+    existing = {tag.name: tag for tag in course.tags}
+    for name in names:
+        if name not in existing:
+            db.add(models.Tag(course_id=course_id, name=name))
+    removed = [tag for name, tag in existing.items() if name not in names]
+    if removed:
+        removed_ids = [tag.tag_id for tag in removed]
+        db.query(models.QuestionTag).filter(models.QuestionTag.tag_id.in_(removed_ids)).delete(synchronize_session=False)
+        for tag in removed:
+            db.delete(tag)
+    db.commit()
+    db.refresh(course)
+    return crud.get_course_full_config(db, course)
 
 
 @router.delete("/{course_id}", status_code=204)
@@ -179,6 +201,8 @@ def _build_instructions_markdown(config: schemas.CourseFullConfig) -> str:
 
     walk(config.nodes)
     lines += ["", "## QUESTION TYPES", ", ".join(config.question_types)]
+    lines += ["", "## VALID TAGS", *[f"- {tag}" for tag in config.tags]]
+    lines += ["Use only these exact tags. Never invent tags; only the user can edit this list."]
     lines += ["", "## DIFFICULTY"]
     lines.append(", ".join(f"{d.level} = {d.label}" for d in config.difficulty_levels))
     lines += [

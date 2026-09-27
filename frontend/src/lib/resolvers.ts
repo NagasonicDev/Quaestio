@@ -69,27 +69,31 @@ export async function resolveImages(
   blocks: ContentBlock[]
 ): Promise<Map<string, ResolvedImage>> {
   const map = new Map<string, ResolvedImage>();
-  await Promise.all(blocks.map(async (b) => {
-    if (!IMAGE_TYPES.has(b.block_type)) return;
-    const path = contentOf(b, "asset_path");
-    if (typeof path !== "string" || !path) return;
-    const blob = await idb.getAsset(path);
-    if (!blob) return;
-    let data = new Uint8Array(await blob.arrayBuffer());
-    let mime = blob.type || "image/png";
-    let size = await blobPixelSize(blob);
-    if (mime === "image/svg+xml") {
-      const png = await svgToPng(blob);
-      data = png.data;
-      mime = "image/png";
-      size = { w: png.width, h: png.height };
+  const jobs = blocks.filter((b) => IMAGE_TYPES.has(b.block_type));
+  let next = 0;
+  await Promise.all(Array.from({ length: Math.min(4, jobs.length) }, async () => {
+    while (next < jobs.length) {
+      const b = jobs[next++];
+      const path = contentOf(b, "asset_path");
+      if (typeof path !== "string" || !path) continue;
+      const blob = await idb.getAsset(path);
+      if (!blob) continue;
+      let data = new Uint8Array(await blob.arrayBuffer());
+      let mime = blob.type || "image/png";
+      let size = await blobPixelSize(blob);
+      if (mime === "image/svg+xml") {
+        const png = await svgToPng(blob);
+        data = png.data;
+        mime = "image/png";
+        size = { w: png.width, h: png.height };
+      }
+      map.set(b.block_id, {
+        data,
+        mime,
+        widthPx: size ? size.w : 96,
+        heightPx: size ? size.h : 96,
+      });
     }
-    map.set(b.block_id, {
-      data,
-      mime,
-      widthPx: size ? size.w : 96,
-      heightPx: size ? size.h : 96,
-    });
   }));
   return map;
 }
@@ -124,7 +128,9 @@ export async function resolveEquations(
           if (!png) return;
           const heightPx = 22;
           map.set(inlineMathImageId(b.block_id, i), {
-            data: new Uint8Array(png.data),
+            // The equation cache owns these immutable bytes. Share them across
+            // blocks instead of retaining a second full copy per occurrence.
+            data: png.data,
             mime: "image/png",
             widthPx: Math.max(1, Math.round((png.width / png.height) * heightPx)),
             heightPx,
@@ -142,7 +148,7 @@ export async function resolveEquations(
       const heightPx = 27;
       const widthPx = Math.round((png.width / png.height) * heightPx);
       map.set(b.block_id, {
-        data: new Uint8Array(png.data),
+        data: png.data,
         mime: "image/png",
         widthPx,
         heightPx,

@@ -78,7 +78,9 @@ will not resolve against another course's database.
    If completing a question requires follow-up input or action from the person
    (for example, manually attaching an image that could not be extracted), add
    the exact tag `action_required` to that question's `tags` array. Do not add
-   it to questions that need no follow-up.
+   it to questions that need no follow-up. Every tag must be selected from the
+   course's VALID TAGS list below. Never invent, rename, or create tags; omit a
+   tag when none of the listed tags applies. Only the user can change this list.
 4. Determine the question type, difficulty, marks, and classification
    (course nodes) using the course-specific section below — never guess a
    category that doesn't appear in "Valid categories"; if uncertain, use the
@@ -124,6 +126,14 @@ addition to `answer`/`solution` if the source provides them):
   A trailing parenthesised allocation (`\"... correctly (2 marks)\"`) also
   works. Avoid vague criteria with no allocation — an unmallocated line
   shows an empty marks cell in the table.
+- Apply this recursively: the shared parent and every part/subpart need their
+  own non-empty `marking_criteria` list block. If marks are awarded through
+  parts, give the parent a concise allocation note and put mark-by-mark
+  criteria on each leaf part; never leave the parent rubric blank.
+- For every question with parts, the parent `marks` must equal the sum of its
+  immediate parts; apply the same check to nested parts. Recheck printed marks
+  against the paper and any mark scheme before resolving a mismatch. Never
+  silently change a printed allocation; flag an unresolved conflict for review.
 
 ## Output format
 
@@ -139,7 +149,7 @@ Produce **one JSON file** (e.g. `import.json`) shaped like this:
       "difficulty": 3,
       "marks": 3,
       "node_ids": ["<a valid node_id from import-schema.json>"],
-      "tags": ["optional", "free-text", "action_required"],
+      "tags": [],
       "body": [
         {{"block_type": "text", "content": {{"text": "..."}}}},
         {{"block_type": "equation", "content": {{"latex": "x^2 - 5x + 6 = 0", "display": true}}}}
@@ -167,12 +177,18 @@ stem in `body` and put answer choices in a separate `mcq_options` array. Do
 not put choices in a body list. Keep stem blocks in the order they appear on
 the page, and keep options in their printed order (A, B, C, D). Each option
 has a `content` array of normal content blocks and an `is_correct` boolean.
-Use inline LaTeX for math in option text. Mark exactly one option correct
-when the source establishes the answer; also set `answer` to its letter (for
-example, `C`). If the source does not establish the answer, set every
-`is_correct` to `false` and leave `answer` empty rather than guessing.
-Preserve diagrams, tables, and equations in the stem or option content where
-they occur. Do not create question parts for the choices.
+Use inline LaTeX for math in option text. Determine the answer by checking the
+paper, any answer key/mark scheme, and solving the question yourself. Mark
+exactly one option correct and set `answer` to its printed letter (for example,
+`C`). A missing key in the paper does not mean the answer is unknown. Only if
+the question is genuinely ambiguous or unsolvable from available material,
+mark no option correct, leave `answer` empty, and flag it for review.
+Preserve diagrams, tables, and equations in stem/option content. Emit exactly
+one non-empty option object for each printed choice, in order; never combine
+choices, omit choices missed by OCR, or place choices in the stem. For
+table-based choices, preserve the table and keep each option to its own choice.
+Use sequential labels A, B, C, D, etc.; do not truncate after D. Do not create
+question parts for the choices.
 
 Example:
 
@@ -208,12 +224,25 @@ for upright SI units. Example choice: `"(A) $5.4\\times10^{14}\\,\\mathrm{Hz}$"`
 
 - Multi-part questions: emit one question object for the shared stem, with
   a `parts` array of `{{"part_label": "a", "marks": ..., "body": [...],
-  "marking_criteria": [...]}}` objects in the same order as the source — do
+  "answer": [...], "solution": [...], "marking_criteria": [...]}}` objects in the same order as the source — do
   not split them into unrelated top-level questions. A part may itself contain
   a `parts` array using the same object shape for nested labels (for example,
   question 26 has part `c`, whose parts are `i` and `ii`). Keep each level
   nested under its immediate parent: represent this as 26 → c → i/ii, not as
   flat labels such as `c(i)`.
+- Put each part's answer and worked solution on that part object, not only on
+  the shared parent. This applies at every nesting level: for example, answers
+  and solutions for 26(c)(i) and 26(c)(ii) belong on the `i` and `ii` objects.
+  Keep the shared stem and any genuinely shared context on the parent `body`.
+  When a source answer key or solution document labels work by part, match each
+  item to the corresponding part and split combined text at those labels;
+  never leave a single labelled multi-part solution only in the parent's
+  `solution` field. Use `answer` for the concise result or response and
+  `solution` for the reasoning, working, or explanation. Provide both for each
+  part when the source supplies them or the result can be worked out from the
+  question. Leave a field empty only when its content cannot be established;
+  do not fabricate a result. Keep marking guidance in that part's
+  `marking_criteria`.
 - For multi-part `extended_response`, `short_response`, or `short_answer`
   questions, include an `answer_area` block at the end of each part's `body`
   so answer lines appear immediately after that part. Set `content.lines` to
@@ -228,6 +257,13 @@ for upright SI units. Example choice: `"(A) $5.4\\times10^{14}\\,\\mathrm{Hz}$"`
 - If you cannot confidently classify a question at all, still include it,
   set `classification_confidence` to `"low"`, and pick the closest available
   node rather than leaving `node_ids` empty.
+- Before saving, audit every question and nested part against the source:
+  confirm no empty text, heading, equation, list item, or MCQ choice; confirm
+  all printed choices are present and ordered; confirm each MCQ has exactly
+  one correct option and a matching answer letter unless explicitly flagged
+  unresolved; confirm every parent and part has an allocated marking guide;
+  and confirm parent/part mark totals. Parse the finished JSON and fix all
+  structural errors before delivering it.
 
 ---
 

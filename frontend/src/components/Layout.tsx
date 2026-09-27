@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useIsFetching } from "@tanstack/react-query";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { cn } from "../lib/utils";
@@ -8,6 +8,7 @@ import { CourseSelector } from "./CourseSelector";
 import { RecentQuestionsSidebar } from "./RecentQuestionsSidebar";
 import { Button } from "./ui/button";
 import { useActiveCourse } from "../hooks/useActiveCourse";
+import { CourseOnboarding } from "./CourseOnboarding";
 
 const NAV = [
   { to: "/", label: "Dashboard", end: true },
@@ -25,6 +26,7 @@ const linkActive = "bg-primary text-primary-foreground hover:bg-primary hover:te
 
 export function Layout() {
   const { courseId } = useActiveCourse();
+  const location = useLocation();
   const { theme, toggle } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
   const isFetching = useIsFetching() > 0;
@@ -37,7 +39,7 @@ export function Layout() {
         {isFetching && <div className="global-loading-bar" />}
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-border bg-background/80 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-border bg-background/85 shadow-sm shadow-foreground/[0.02] backdrop-blur-xl">
         <div className="mx-auto grid h-14 max-w-[1500px] grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 sm:flex sm:px-5">
           <Link
             to="/"
@@ -115,7 +117,7 @@ export function Layout() {
       <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "md:grid-cols-[238px_minmax(0,1fr)]")}>
         {courseId && <RecentQuestionsSidebar />}
         <main className="min-w-0">
-          <Outlet />
+          {!courseId && location.pathname !== "/" ? <CourseOnboarding /> : <Outlet />}
         </main>
       </div>
     </div>

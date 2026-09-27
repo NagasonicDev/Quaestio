@@ -53,6 +53,10 @@ class CourseUpdate(BaseModel):
     allow_multi_classification: bool | None = None
 
 
+class CourseTagsUpdate(BaseModel):
+    tags: list[str] = Field(default_factory=list)
+
+
 class CourseNodeIn(BaseModel):
     parent_node_id: str | None = None
     level_index: int

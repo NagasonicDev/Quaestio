@@ -83,7 +83,14 @@ export function marksLabel(marks: number | null | undefined): string {
 /** Source attribution for generated test papers, e.g. "(Trial Examination, 2025)". */
 export function formatSourceBracket(source: Source | null | undefined): string | null {
   if (!source?.name) return null;
-  const inner = [source.name, source.year != null ? String(source.year) : null]
+  const institution = source.institution?.trim();
+  const name = source.name.trim();
+  // Institution is the editable, course-managed label. Avoid repeating it
+  // when older imports already included it in the source name.
+  const conciseName = institution && name.toLocaleLowerCase().startsWith(institution.toLocaleLowerCase())
+    ? name.slice(institution.length).replace(/^[\s,:–—-]+/, "")
+    : name;
+  const inner = [institution, conciseName, source.year != null ? String(source.year) : null]
     .filter(Boolean)
     .join(", ");
   return `(${inner})`;

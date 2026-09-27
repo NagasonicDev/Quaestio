@@ -19,8 +19,8 @@ deploys to a static host like GitHub Pages with no backend at all.
   share a stem with labelled parts. Every question has an independent
   **marking guide** (criteria + mark allocation), plus optional answer and
   solution.
-- **Browse & search** — `#/browse` filters, searches, sorts and paginates the
-  whole bank; `#/` dashboard shows totals, breakdowns, and the hierarchy tree
+- **Browse & search** — `#/browse` filters, searches question text, source
+  numbers or question IDs, sorts and paginates the whole bank; `#/` dashboard shows totals, breakdowns, and the hierarchy tree
   with live question counts.
 - **Practice** — `#/practice`: pick filters, get a random matching question,
   **Submit** to reveal the **Marking Guide first** (rendered as a
@@ -28,9 +28,9 @@ deploys to a static host like GitHub Pages with no backend at all.
   feed the **Recent Questions** sidebar.
 - **Test Generator** — `#/test-generator`: compose a paper from fully
   configurable sections (question counts or marks targets, per question type)
-  and download **two documents**: a clean test **paper** and a standalone
-  **solutions/marking-guide** document, in **DOCX** or **PDF**, with a PDF
-  preview. Equations are typeset with KaTeX and embedded as images; uploaded
+  and download a clean test **paper** in **DOCX** or **PDF**, with a PDF
+  preview. Each question includes its source and question ID for lookup in the
+  bank. Equations are typeset with KaTeX and embedded as images; uploaded
   images are embedded too. Every generated test is kept under **Past Tests**,
   re-downloadable and re-previewable.
 - **Course skill** — Download a per-course `.skill` file (SKILL.md +
@@ -133,7 +133,7 @@ frontend/
       Dashboard.tsx            - totals, breakdowns, topic tree with counts
       Browser.tsx              - search/filter/sort/paginate the bank
       Practice.tsx             - filters -> random question -> reveal flow
-      TestGenerator.tsx        - configure sections -> DOCX/PDF paper+solutions
+      TestGenerator.tsx        - configure sections -> DOCX/PDF paper + preview
       QuestionDetail.tsx
       CourseSettings.tsx       - structure + question management
       Import.tsx               - JSON import + .qb import/export + skill download

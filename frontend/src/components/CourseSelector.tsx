@@ -44,19 +44,30 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
     setOpen(true);
   }
 
-  async function handleImportFile(file: File) {
+  async function handleImportFiles(files: FileList | null) {
+    if (!files?.length) return;
+    const selected = Array.from(files);
     setImportError(null);
     setImportNotice(null);
     setImporting(true);
+    const imported: Array<{ course_id: string; course_name: string }> = [];
+    const failures: string[] = [];
     try {
-      const result = await api.importCourseFile(file);
-      await qc.invalidateQueries({ queryKey: ["courses"] });
-      await qc.invalidateQueries({ queryKey: ["course", result.course_id] });
-      setCourseId(result.course_id);
-      setImportNotice(`Imported '${result.course_name}'.`);
-      setOpen(false);
-    } catch (e) {
-      setImportError(e instanceof Error ? e.message : "Failed to import course");
+      for (const file of selected) {
+        try {
+          imported.push(await api.importCourseFile(file));
+        } catch (e) {
+          failures.push(`${file.name}: ${e instanceof Error ? e.message : "Failed to import course"}`);
+        }
+      }
+      if (imported.length) {
+        await qc.invalidateQueries({ queryKey: ["courses"] });
+        for (const course of imported) await qc.invalidateQueries({ queryKey: ["course", course.course_id] });
+        setCourseId(imported[imported.length - 1].course_id);
+        setImportNotice(`Imported ${imported.length} course(s): ${imported.map((course) => `'${course.course_name}'`).join(", ")}.`);
+        setOpen(false);
+      }
+      if (failures.length) setImportError(failures.join("\n"));
     } finally {
       setImporting(false);
       if (fileInputRef.current) fileInputRef.current.value = "";
@@ -109,15 +120,15 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         ref={fileInputRef}
         type="file"
         accept=".qb"
+        multiple
         className="hidden"
         onChange={(e) => {
-          const file = e.target.files?.[0];
-          if (file) handleImportFile(file);
+          handleImportFiles(e.target.files);
         }}
       />
 
       {importError && (
-        <p className="absolute left-4 top-16 z-50 max-w-72 rounded-lg border border-border bg-popover px-3 py-2 text-sm text-destructive shadow-xl">
+        <p className="absolute left-4 top-16 z-50 max-w-72 whitespace-pre-line rounded-lg border border-border bg-popover px-3 py-2 text-sm text-destructive shadow-xl">
           {importError}
         </p>
       )}
