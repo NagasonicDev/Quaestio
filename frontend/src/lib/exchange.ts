@@ -1,7 +1,7 @@
 import JSZip from "jszip";
 import * as idb from "./db/indexeddb";
 import { all, getFirst, run } from "./db/sqlite";
-import { newId, nowUtc } from "./id";
+import { newId, newQuestionId, nowUtc } from "./id";
 import * as data from "./data";
 import type { CourseFullConfig, CourseNode, Question } from "../api/types";
 
@@ -639,7 +639,7 @@ async function insertQuestion(
   ctx: ImportCtx,
   sourceAlready: Map<string, string | null>
 ): Promise<string> {
-  const questionId = newId("q");
+  const questionId = newQuestionId();
   ctx.questionMap.set(question.question_id, questionId);
   const parentId = question.parent_question_id
     ? (ctx.questionMap.get(question.parent_question_id) ?? null)

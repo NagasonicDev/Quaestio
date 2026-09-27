@@ -13,6 +13,7 @@ Design notes:
   node never orphans a question.
 """
 import uuid
+import secrets
 from datetime import datetime, timezone
 
 from sqlalchemy import (
@@ -26,6 +27,19 @@ from .database import Base
 
 def new_id(prefix: str) -> str:
     return f"{prefix}_{uuid.uuid4().hex[:12]}"
+
+
+def new_question_id() -> str:
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    digits = "0123456789"
+    chars = [
+        secrets.choice(letters),
+        secrets.choice(digits),
+        *(secrets.choice(alphabet) for _ in range(4)),
+    ]
+    secrets.SystemRandom().shuffle(chars)
+    return "".join(chars)
 
 
 def now() -> datetime:
@@ -147,7 +161,7 @@ class Source(Base):
 class Question(Base):
     __tablename__ = "question"
 
-    question_id: Mapped[str] = mapped_column(String, primary_key=True, default=lambda: new_id("q"))
+    question_id: Mapped[str] = mapped_column(String, primary_key=True, default=new_question_id)
     course_id: Mapped[str] = mapped_column(ForeignKey("course.course_id"), nullable=False)
     type_key: Mapped[str] = mapped_column(ForeignKey("question_type.type_key"), nullable=False)
     difficulty: Mapped[int | None] = mapped_column(Integer)

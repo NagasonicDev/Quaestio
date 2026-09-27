@@ -1,5 +1,5 @@
 import { all, flush, getFirst, run, runMany, transaction } from "./db/sqlite";
-import { newId, nowUtc } from "./id";
+import { newId, newQuestionId, nowUtc } from "./id";
 import { deleteAssetBlob, finalizeQuestionAssets } from "./assets";
 import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles } from "./tests";
 import type {
@@ -925,7 +925,7 @@ export async function createQuestion(payload: QuestionCreatePayload): Promise<Qu
     );
   }
 
-  const questionId = newId("q");
+  const questionId = newQuestionId();
   const now = nowUtc();
   await run(
     `INSERT INTO question (question_id, course_id, type_key, difficulty, marks, parent_question_id,
@@ -1728,7 +1728,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
         [sourceId, q.source.name, q.source.year ?? null, q.source.institution ?? null, q.source.original_question_no ?? null]
       );
     }
-    const parentId = newId("q");
+    const parentId = newQuestionId();
     await run(
       `INSERT INTO question (question_id, course_id, type_key, difficulty, marks, review_status, classification_confidence, source_id, created_at, updated_at)
        VALUES (?, ?, ?, ?, ?, 'approved', ?, ?, ?, ?)`,
@@ -1759,7 +1759,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
     await runMany(statements);
     await finalizeAssetsForStatements(parentId, statements);
     for (const part of parts) {
-      const partId = newId("q");
+      const partId = newQuestionId();
       await run(
         `INSERT INTO question (question_id, course_id, type_key, marks, parent_question_id, part_label, review_status, created_at, updated_at)
          VALUES (?, ?, ?, ?, ?, ?, 'approved', ?, ?)`,
