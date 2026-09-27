@@ -110,6 +110,25 @@ def update_question(question_id: str, payload: schemas.QuestionUpdate, db: Sessi
         if field in data:
             setattr(q, field, data[field])
 
+    source_fields = ("source_name", "source_year", "source_institution", "source_original_question_no")
+    if any(field in data for field in source_fields):
+        source_name = (data.get("source_name") if "source_name" in data else q.source.name if q.source else None) or ""
+        source_name = source_name.strip()
+        if source_name:
+            # Give this question its own source row so editing metadata cannot
+            # change other questions that happen to share the original source.
+            source = models.Source(
+                name=source_name,
+                year=data.get("source_year", q.source.year if q.source else None),
+                institution=data.get("source_institution", q.source.institution if q.source else None),
+                original_question_no=data.get("source_original_question_no", q.source.original_question_no if q.source else None),
+            )
+            db.add(source)
+            db.flush()
+            q.source_id = source.source_id
+        else:
+            q.source_id = None
+
     if "node_ids" in data:
         db.query(models.QuestionClassification).filter_by(question_id=question_id).delete()
         for node_id in data["node_ids"]:

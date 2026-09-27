@@ -164,6 +164,10 @@ class QuestionUpdate(BaseModel):
     solution: list[ContentBlockIn] | None = None
     marking_criteria: list[ContentBlockIn] | None = None
     review_status: Literal["pending_review", "approved"] | None = None
+    source_name: str | None = None
+    source_year: int | None = None
+    source_institution: str | None = None
+    source_original_question_no: str | None = None
 
 
 class ContentBlockOut(BaseModel):

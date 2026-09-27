@@ -1007,6 +1007,22 @@ export async function updateQuestion(
       params.push((payload as any)[k] ?? null);
     }
   }
+  const sourceKeys = ["source_name", "source_year", "source_institution", "source_original_question_no"] as const;
+  if (sourceKeys.some((key) => key in payload)) {
+    const sourceName = (payload.source_name ?? "").trim();
+    if (sourceName) {
+      const sourceId = newId("src");
+      await run(
+        "INSERT INTO source (source_id, name, year, institution, original_question_no) VALUES (?, ?, ?, ?, ?)",
+        [sourceId, sourceName, payload.source_year ?? null, payload.source_institution?.trim() || null, payload.source_original_question_no?.trim() || null]
+      );
+      sets.push("source_id = ?");
+      params.push(sourceId);
+    } else {
+      sets.push("source_id = ?");
+      params.push(null);
+    }
+  }
   sets.push("updated_at = ?");
   params.push(nowUtc());
   params.push(questionId);

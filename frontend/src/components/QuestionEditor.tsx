@@ -204,6 +204,10 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
           marking_criteria: blocksToPayload(part.markingCriteria),
         })),
         review_status: reviewStatus,
+        source_name: sourceName.trim() || null,
+        source_year: sourceYear ? Number(sourceYear) : null,
+        source_institution: sourceInstitution.trim() || null,
+        source_original_question_no: sourceOriginalNo.trim() || null,
       };
 
       if (existing) {
@@ -212,10 +216,6 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
         await api.createQuestion({
           ...payload,
           course_id: config.course_id,
-          source_name: sourceName || undefined,
-          source_year: sourceYear ? Number(sourceYear) : undefined,
-          source_institution: sourceInstitution || undefined,
-          source_original_question_no: sourceOriginalNo || undefined,
         });
       }
       const leave = pendingNavigation.current;
@@ -369,7 +369,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
               </div>
             </Panel>
 
-            {!existing && (
+            {
               <Panel>
                 <PanelHead title="Source metadata" />
                 <div className="space-y-4 p-5">
@@ -378,7 +378,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
                   </Field>
                   <div className="grid grid-cols-2 gap-2">
                     <Field label="Year">
-                      <Input value={sourceYear} onChange={(e) => setSourceYear(e.target.value)} />
+                      <Input type="number" value={sourceYear} onChange={(e) => setSourceYear(e.target.value)} />
                     </Field>
                     <Field label="Original Q#">
                       <Input value={sourceOriginalNo} onChange={(e) => setSourceOriginalNo(e.target.value)} />
@@ -389,7 +389,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
                   </Field>
                 </div>
               </Panel>
-            )}
+            }
 
             <Panel>
               <div className="flex items-center justify-between p-5">
