@@ -438,7 +438,7 @@ async function renderBlock(w: Writer, b: ContentBlock, images: Map<string, Resol
         return true;
       }
       const embedded = img.mime === "image/jpeg" ? await w.pdf.embedJpg(img.data) : await w.pdf.embedPng(img.data);
-      w.fitImage(embedded, { maxW: 4.5 * PT });
+      w.fitImage(embedded, { maxW: 4.5 * PT, maxH: 4.5 * PT });
       w.y -= LINE_H(11);
       return true;
     }

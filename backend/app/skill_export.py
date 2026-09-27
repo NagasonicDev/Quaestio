@@ -75,6 +75,10 @@ will not resolve against another course's database.
    inside prose, choices, table cells, or list items, wrap LaTeX in single
    dollar signs, e.g. `$v = 3.0\\times10^{8}\\,\\mathrm{m/s}$`. Never leave
    powers as plain `10^8` or use plain `x` for multiplication.
+   If completing a question requires follow-up input or action from the person
+   (for example, manually attaching an image that could not be extracted), add
+   the exact tag `action_required` to that question's `tags` array. Do not add
+   it to questions that need no follow-up.
 4. Determine the question type, difficulty, marks, and classification
    (course nodes) using the course-specific section below — never guess a
    category that doesn't appear in "Valid categories"; if uncertain, use the
@@ -135,7 +139,7 @@ Produce **one JSON file** (e.g. `import.json`) shaped like this:
       "difficulty": 3,
       "marks": 3,
       "node_ids": ["<a valid node_id from import-schema.json>"],
-      "tags": ["optional", "free-text", "tags"],
+      "tags": ["optional", "free-text", "action_required"],
       "body": [
         {{"block_type": "text", "content": {{"text": "..."}}}},
         {{"block_type": "equation", "content": {{"latex": "x^2 - 5x + 6 = 0", "display": true}}}}
@@ -205,7 +209,11 @@ for upright SI units. Example choice: `"(A) $5.4\\times10^{14}\\,\\mathrm{Hz}$"`
 - Multi-part questions: emit one question object for the shared stem, with
   a `parts` array of `{{"part_label": "a", "marks": ..., "body": [...],
   "marking_criteria": [...]}}` objects in the same order as the source — do
-  not split them into unrelated top-level questions.
+  not split them into unrelated top-level questions. A part may itself contain
+  a `parts` array using the same object shape for nested labels (for example,
+  question 26 has part `c`, whose parts are `i` and `ii`). Keep each level
+  nested under its immediate parent: represent this as 26 → c → i/ii, not as
+  flat labels such as `c(i)`.
 - For multi-part `extended_response`, `short_response`, or `short_answer`
   questions, include an `answer_area` block at the end of each part's `body`
   so answer lines appear immediately after that part. Set `content.lines` to

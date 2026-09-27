@@ -211,8 +211,13 @@ function renderBlock(
         );
       } else {
         const targetIn = Math.min(4.5, 6.5 - indentIn);
-        const widthPx = Math.round(targetIn * 96);
-        const heightPx = Math.round((resolved.heightPx / resolved.widthPx) * widthPx);
+        const maxHeightIn = 4.5;
+        const scale = Math.min(
+          (targetIn * 96) / resolved.widthPx,
+          (maxHeightIn * 96) / resolved.heightPx,
+        );
+        const widthPx = Math.max(1, Math.round(resolved.widthPx * scale));
+        const heightPx = Math.max(1, Math.round(resolved.heightPx * scale));
         const img = { ...resolved, widthPx, heightPx };
         out.push(
           new Paragraph({

@@ -159,16 +159,16 @@ export function QuestionReader({ question, selectedChoice, onSelectChoice, submi
   return (
     <article>
       <BlockList blocks={question.body} interactiveChoices={question.type_key === "multiple_choice" && !!onSelectChoice && !structuredChoices} selectedChoice={selectedChoice} onSelectChoice={onSelectChoice} submitted={submitted} correctChoice={correctChoice} />
-      {structuredChoices && <div className="mt-4 grid gap-2 sm:grid-cols-2" role="group" aria-label="Answer choices">
+      {structuredChoices && <div className="mt-4 grid min-w-0 gap-2 sm:grid-cols-2" role="group" aria-label="Answer choices">
         {structuredChoices.map((option, i) => {
           const label = String.fromCharCode(65 + i);
           const chosen = selectedChoice === label;
           const correct = correctChoice === label;
           const style = submitted && correct ? "border-green-600 bg-green-100 text-green-950" : submitted && chosen ? "border-red-600 bg-red-100 text-red-950" : chosen ? "border-primary bg-primary/10" : "border-border hover:border-primary/60";
           const optionBlocks = option.content.map((block, j) => ({ ...block, block_id: `practice-option-${i}-${j}`, slot: "body" as const, position: j }));
-          return <button key={i} type="button" disabled={submitted} onClick={() => onSelectChoice?.(label)} className={`flex items-start gap-3 rounded-md border-2 p-3 text-left transition-colors ${style}`}>
+          return <button key={i} type="button" disabled={submitted} onClick={() => onSelectChoice?.(label)} className={`flex w-full min-w-0 items-start gap-3 overflow-hidden rounded-md border-2 p-3 text-left transition-colors ${style}`}>
             <span className="grid size-7 shrink-0 place-items-center rounded-full border font-mono text-xs font-semibold">{label}</span>
-            <span className="pt-0.5"><BlockList blocks={optionBlocks} /></span>
+            <span className="mcq-option-content min-w-0 flex-1 pt-0.5"><BlockList blocks={optionBlocks} /></span>
           </button>;
         })}
       </div>}

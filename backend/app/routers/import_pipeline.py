@@ -31,6 +31,7 @@ class ImportPartIn(BaseModel):
     answer: list[ImportBlockIn] = Field(default_factory=list)
     solution: list[ImportBlockIn] = Field(default_factory=list)
     marking_criteria: list[ImportBlockIn] = Field(default_factory=list)
+    parts: list["ImportPartIn"] = Field(default_factory=list)
 
 
 class ImportSourceIn(BaseModel):
@@ -205,18 +206,22 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
         _write_blocks(db, question.question_id, "solution", q.solution)
         _write_blocks(db, question.question_id, "marking_criteria", q.marking_criteria)
 
-        for part in q.parts:
-            part_q = models.Question(
-                course_id=course_id, type_key=q.type_key, marks=part.marks,
-                parent_question_id=question.question_id, part_label=part.part_label,
-                review_status="approved",
-            )
-            db.add(part_q)
-            db.flush()
-            _write_blocks(db, part_q.question_id, "body", part.body)
-            _write_blocks(db, part_q.question_id, "answer", part.answer)
-            _write_blocks(db, part_q.question_id, "solution", part.solution)
-            _write_blocks(db, part_q.question_id, "marking_criteria", part.marking_criteria)
+        def import_parts(parts: list[ImportPartIn], parent: models.Question) -> None:
+            for part in parts:
+                part_q = models.Question(
+                    course_id=course_id, type_key=q.type_key, marks=part.marks,
+                    parent_question_id=parent.question_id, part_label=part.part_label,
+                    review_status="approved",
+                )
+                db.add(part_q)
+                db.flush()
+                _write_blocks(db, part_q.question_id, "body", part.body)
+                _write_blocks(db, part_q.question_id, "answer", part.answer)
+                _write_blocks(db, part_q.question_id, "solution", part.solution)
+                _write_blocks(db, part_q.question_id, "marking_criteria", part.marking_criteria)
+                import_parts(part.parts, part_q)
+
+        import_parts(q.parts, question)
 
         results.append(ImportResultItem(
             index=index, status="imported", question_id=question.question_id, warnings=warnings

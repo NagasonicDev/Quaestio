@@ -320,6 +320,18 @@
   padding: 0.25rem 0;
 }
 
+/* Keep long inline equations inside multiple-choice cards. The equation can
+   still be read by scrolling within the option instead of widening the grid. */
+.mcq-option-content {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.mcq-option-content .katex-display {
+  max-width: 100%;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
