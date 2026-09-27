@@ -40,11 +40,17 @@ def png_size(data):
 
 def walk(blocks, errs, where):
     for b in blocks or []:
+        if not isinstance(b, dict):
+            errs.append(f"{where}: content block is not an object ({type(b).__name__})")
+            continue
         bt = b.get("block_type")
         if bt not in BLOCK_TYPES:
             errs.append(f"{where}: unknown block_type {bt!r}")
             continue
         c = b.get("content")
+        if not isinstance(c, dict):
+            errs.append(f"{where}: {bt} block content is not an object")
+            continue
         if bt in ("text", "heading") and not (c or {}).get("text"):
             errs.append(f"{where}: {bt} block has no text")
         if bt == "equation" and not (c or {}).get("latex"):
@@ -166,6 +172,9 @@ def main():
                 elif n["code"] != code:
                     errs.append(f"{where}: {nid} is {n['code']}, not {code}")
             walk(q.get("body"), errs, where)
+            walk(q.get("answer"), errs, where + "/answer")
+            walk(q.get("solution"), errs, where + "/solution")
+            walk(q.get("marking_criteria"), errs, where + "/marking_criteria")
             check_criteria(q, errs, where)
             for opt in q.get("mcq_options") or []:
                 walk(opt.get("content"), errs, where + "/" + str(opt.get("label")))
@@ -193,8 +202,11 @@ def main():
                     if answer_text not in (correct_label, f"({correct_label})"):
                         errs.append(f"{where}: answer {answer_text!r} does not match correct option {correct_label!r}")
 
-            # every part needs an answer area of 2 x marks
-            if label is not None:
+            # Standalone written-response parts need 2 lines per mark. A nested
+            # wrapper delegates response space to its children; drawing/graphing
+            # parts and source-provided answer spaces use the prompt itself.
+            if (label is not None and not q.get("parts")
+                    and not (set(q.get("tags") or []) & {"graphing", "drawing", "diagram"})):
                 aa = [b for b in q["body"] if b["block_type"] == "answer_area"]
                 if not aa:
                     errs.append(f"{where}: part has no answer_area")

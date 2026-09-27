@@ -97,58 +97,79 @@ export function BlockEditor({ label, blocks, onChange }: BlockEditorProps) {
   function add() {
     onChange([...blocks, emptyBlock(addType)]);
   }
+  function insert(index: number) {
+    onChange([...blocks.slice(0, index), emptyBlock(addType), ...blocks.slice(index)]);
+  }
+
+  function insertionControl(index: number, label: string) {
+    return (
+      <div className="group relative -my-1 flex h-3 items-center justify-center focus-within:h-10 hover:h-10">
+        <div className="absolute z-10 flex items-center gap-1 rounded-md border border-border bg-background p-1 opacity-0 shadow-sm transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
+          <Select value={addType} onValueChange={(v) => setAddType(v as BlockType)}>
+            <SelectTrigger aria-label={`Block type to insert ${label}`} className="h-7 w-32 text-xs">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent>
+              {(Object.keys(BLOCK_TYPE_LABELS) as BlockType[]).map((t) => (
+                <SelectItem key={t} value={t}>{BLOCK_TYPE_LABELS[t]}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          <Button type="button" size="sm" className="h-7 px-2" onClick={() => insert(index)} aria-label={`Insert block ${label}`}>
+            <Plus />
+            Insert
+          </Button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <Panel>
       <PanelHead
         title={label}
-        action={
-          <div className="flex items-center gap-1.5">
-            <Select value={addType} onValueChange={(v) => setAddType(v as BlockType)}>
-              <SelectTrigger className="h-8 w-40">
-                <SelectValue />
-              </SelectTrigger>
-              <SelectContent>
-                {(Object.keys(BLOCK_TYPE_LABELS) as BlockType[]).map((t) => (
-                  <SelectItem key={t} value={t}>
-                    {BLOCK_TYPE_LABELS[t]}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-            <Button type="button" size="sm" onClick={add}>
-              <Plus />
-              Add block
-            </Button>
-          </div>
-        }
       />
-      <div className="space-y-2 p-4">
+      <div className="p-4">
         {blocks.length === 0 && (
           <p className="text-xs italic text-muted-foreground">No content yet.</p>
         )}
+        {blocks.length > 0 && insertionControl(0, "before the first block")}
         {blocks.map((block, i) => (
-          <div key={block.tempId} className="rounded-lg border border-border bg-surface/50 p-3">
-            <div className="mb-2 flex items-center justify-between">
-              <Meta>{block.block_type.replace(/_/g, " ")}</Meta>
-              <div className="flex gap-1">
-                <Button type="button" variant="ghost" size="icon" disabled={i === 0} onClick={() => move(block.tempId, -1)}
-                  className="h-7 w-7" title="Move up">
-                  <ArrowUp />
-                </Button>
-                <Button type="button" variant="ghost" size="icon" disabled={i === blocks.length - 1} onClick={() => move(block.tempId, 1)}
-                  className="h-7 w-7" title="Move down">
-                  <ArrowDown />
-                </Button>
-                <Button type="button" variant="ghost" size="icon" onClick={() => remove(block.tempId)}
-                  className="h-7 w-7 text-destructive hover:bg-destructive/10 hover:text-destructive" title="Remove block">
-                  <Trash2 />
-                </Button>
+          <div key={block.tempId}>
+            <div className="rounded-lg border border-border bg-surface/50 p-3">
+              <div className="mb-2 flex items-center justify-between">
+                <Meta>{block.block_type.replace(/_/g, " ")}</Meta>
+                <div className="flex gap-1">
+                  <Button type="button" variant="ghost" size="icon" disabled={i === 0} onClick={() => move(block.tempId, -1)}
+                    className="h-7 w-7" title="Move up">
+                    <ArrowUp />
+                  </Button>
+                  <Button type="button" variant="ghost" size="icon" disabled={i === blocks.length - 1} onClick={() => move(block.tempId, 1)}
+                    className="h-7 w-7" title="Move down">
+                    <ArrowDown />
+                  </Button>
+                  <Button type="button" variant="ghost" size="icon" onClick={() => remove(block.tempId)}
+                    className="h-7 w-7 text-destructive hover:bg-destructive/10 hover:text-destructive" title="Remove block">
+                    <Trash2 />
+                  </Button>
+                </div>
               </div>
+              <BlockFields block={block} onChange={(c) => update(block.tempId, c)} />
             </div>
-            <BlockFields block={block} onChange={(c) => update(block.tempId, c)} />
+            {insertionControl(i + 1, `after ${block.block_type.replace(/_/g, " ")}`)}
           </div>
         ))}
+        <div className="mt-2 flex items-center justify-end gap-1.5 border-t border-border pt-3">
+          <Select value={addType} onValueChange={(v) => setAddType(v as BlockType)}>
+            <SelectTrigger className="h-8 w-40"><SelectValue /></SelectTrigger>
+            <SelectContent>
+              {(Object.keys(BLOCK_TYPE_LABELS) as BlockType[]).map((t) => (
+                <SelectItem key={t} value={t}>{BLOCK_TYPE_LABELS[t]}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+          <Button type="button" size="sm" onClick={add}><Plus />Add block</Button>
+        </div>
       </div>
     </Panel>
   );

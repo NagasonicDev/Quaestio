@@ -150,11 +150,12 @@ export async function clearAllData(): Promise<void> {
   await Promise.all(
     ["kv", "assets", "tests"].map(
       (store) =>
-        new Promise<void>((resolve) => {
+        new Promise<void>((resolve, reject) => {
           const tx = db.transaction(store, "readwrite");
           tx.objectStore(store).clear();
           tx.oncomplete = () => resolve();
-          tx.onerror = () => resolve();
+          tx.onerror = () => reject(tx.error ?? new Error(`Failed to clear IndexedDB store: ${store}`));
+          tx.onabort = () => reject(tx.error ?? new DOMException(`Failed to clear IndexedDB store: ${store}`, "AbortError"));
         })
     )
   );

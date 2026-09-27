@@ -256,9 +256,17 @@ def main():
                                     if not (b["block_type"] in ("image", "diagram", "graph")
                                             and "asset_path" not in b["content"])]
         for option in out["mcq_options"]:
+            prose = [b["content"].get("description") or b["content"].get("text") or ""
+                     for b in option["content"]
+                     if b["block_type"] in ("image", "diagram", "graph")
+                     and "asset_path" not in b["content"]]
             option["content"][:] = [b for b in option["content"]
                                     if not (b["block_type"] in ("image", "diagram", "graph")
                                             and "asset_path" not in b["content"])]
+            if not option["content"] and any(p.strip() for p in prose):
+                option["content"] = [{"block_type": "text",
+                                      "content": {"text": "\n\n".join(
+                                          p.strip() for p in prose if p.strip())}}]
 
         used += collect(out, used)
         for pop in out["parts"]:

@@ -230,6 +230,21 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     }
   }
 
+  async function handleDelete() {
+    if (!existing || !window.confirm("Delete this question permanently? This can't be undone.")) return;
+    setSaving(true);
+    setError(null);
+    try {
+      await api.deleteQuestion(existing.question_id);
+      setHasUnsavedChanges(false);
+      onSaved();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Failed to delete question");
+    } finally {
+      setSaving(false);
+    }
+  }
+
   return (
     <form ref={formRef} onSubmit={handleSubmit} onChange={() => setHasUnsavedChanges(true)} onClick={(event) => {
       const button = (event.target as HTMLElement).closest("button");
@@ -402,6 +417,13 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
                   onCheckedChange={(v) => setReviewStatus(v ? "approved" : "pending_review")}
                 />
               </div>
+              {existing && (
+                <div className="border-t border-border p-5">
+                  <Button type="button" variant="destructive" disabled={saving} onClick={handleDelete}>
+                    <Trash2 /> Delete question
+                  </Button>
+                </div>
+              )}
             </Panel>
           </div>
         </div>

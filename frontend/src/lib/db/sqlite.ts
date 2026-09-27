@@ -101,6 +101,7 @@ export function getDb(): Promise<Database> {
 
 let dirty = false;
 let persistTimer: ReturnType<typeof setTimeout> | null = null;
+let pendingPersist: Promise<void> | null = null;
 
 export function markDirty(): void {
   dirty = true;
@@ -118,7 +119,27 @@ export async function flush(): Promise<void> {
   if (!dirty || !db) return;
   dirty = false;
   const bytes = db.export();
-  await idb.persistDb(bytes);
+  const persist = idb.persistDb(bytes);
+  pendingPersist = persist;
+  try {
+    await persist;
+  } finally {
+    if (pendingPersist === persist) pendingPersist = null;
+  }
+}
+
+/** Clear persisted data and reset the in-memory database so stale data cannot return. */
+export async function clearAllData(): Promise<void> {
+  if (persistTimer !== null) {
+    clearTimeout(persistTimer);
+    persistTimer = null;
+  }
+  await pendingPersist;
+  await idb.clearAllData();
+  db?.close();
+  db = null;
+  ready = null;
+  dirty = false;
 }
 
 // ---------- Query helpers ----------

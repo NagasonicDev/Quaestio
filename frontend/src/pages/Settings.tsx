@@ -8,7 +8,7 @@ import { useCourseConfig } from "../hooks/useCourseConfig";
 import { PageHeader, Panel } from "../components/system";
 import { Switch } from "../components/ui/switch";
 import { Button } from "../components/ui/button";
-import { clearAllData } from "../lib/db/indexeddb";
+import { clearAllData } from "../lib/db/sqlite";
 import { clearQuestions } from "../lib/data";
 import { api } from "../api/client";
 import { Input } from "../components/ui/input";
@@ -116,10 +116,14 @@ export function Settings() {
               variant="destructive"
               onClick={async () => {
                 if (!window.confirm("Delete EVERYTHING stored in this browser? This cannot be undone.")) return;
-                await clearAllData();
-                setCourseId(null);
-                queryClient.clear();
-                navigate("/");
+                try {
+                  await clearAllData();
+                  setCourseId(null);
+                  queryClient.clear();
+                  navigate("/");
+                } catch (err) {
+                  window.alert(`Couldn't clear everything.\n\n${err instanceof Error ? err.message : String(err)}`);
+                }
               }}
             >
               <Trash2 />

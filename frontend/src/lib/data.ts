@@ -1774,12 +1774,12 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
     });
     await runMany(statements);
     await finalizeAssetsForStatements(parentId, statements);
-    for (const part of parts) {
+    const importPart = async (part: any, partParentId: string, inheritedType: string): Promise<void> => {
       const partId = newQuestionId();
       await run(
         `INSERT INTO question (question_id, course_id, type_key, marks, parent_question_id, part_label, review_status, created_at, updated_at)
          VALUES (?, ?, ?, ?, ?, ?, 'approved', ?, ?)`,
-        [partId, courseId, q.type_key, part.marks ?? null, parentId, part.part_label ?? null, now, now]
+        [partId, courseId, part.type_key ?? inheritedType, part.marks ?? null, partParentId, part.part_label ?? null, now, now]
       );
       const partStatements: Array<[string, any[]]> = [];
       for (const slot of SLOTS) {
@@ -1789,7 +1789,11 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
       }
       await runMany(partStatements);
       await finalizeAssetsForStatements(partId, partStatements);
-    }
+      for (const child of Array.isArray(part.parts) ? part.parts : []) {
+        await importPart(child, partId, part.type_key ?? inheritedType);
+      }
+    };
+    for (const part of parts) await importPart(part, parentId, q.type_key);
     importedCount++;
     results.push({ index: i, status: "imported", question_id: parentId, errors, warnings });
   }
