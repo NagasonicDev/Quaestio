@@ -93,15 +93,6 @@ def _source_attribution(source: models.Source) -> str:
     return ", ".join(part for part in (institution, name, str(source.year) if source.year else "") if part)
 
 
-def _generated_part_answer_lines(question: models.Question, part: models.Question) -> int:
-    if question.type_key not in {"extended_response", "short_response", "short_answer"}:
-        return 0
-    blocks = blocks_by_slot(part, "body")
-    if any(block.block_type == "answer_area" for block in blocks):
-        return 0
-    return max(1, int((part.marks or 0) * 2 + 0.999999))
-
-
 def select_questions_for_marks(
     db, *, course_id: str, node_ids: list[str] | None, type_key: str | None,
     difficulty_min: int | None, difficulty_max: int | None, target_marks: float, shuffle: bool = True,
@@ -452,10 +443,7 @@ def _docx_render_question(doc: Document, number: int, q: models.Question):
         mr.font.color.rgb = GRAY
         header.paragraph_format.tab_stops.add_tab_stop(Inches(6.5), alignment=WD_TAB_ALIGNMENT.RIGHT)
 
-    question_body = blocks_by_slot(q, "body")
-    if q.children:
-        question_body = [block for block in question_body if block.block_type != "answer_area"]
-    _docx_render_blocks(doc, question_body)
+    _docx_render_blocks(doc, blocks_by_slot(q, "body"))
 
     for part in q.children:
         part_p = doc.add_paragraph()
@@ -465,11 +453,6 @@ def _docx_render_question(doc: Document, number: int, q: models.Question):
         if part.marks is not None:
             part_p.add_run(f"  [{part.marks:g} mark{'s' if part.marks != 1 else ''}]").font.size = Pt(9)
         _docx_render_blocks(doc, blocks_by_slot(part, "body"), indent=0.3)
-        for _ in range(_generated_part_answer_lines(q, part)):
-            answer_line = doc.add_paragraph()
-            answer_line.paragraph_format.left_indent = Inches(0.3)
-            answer_line.paragraph_format.space_after = Pt(14)
-            _docx_add_bottom_border(answer_line)
 
     if q.source:
         src_p = doc.add_paragraph()
@@ -766,25 +749,31 @@ def _pdf_render_question(story: list, styles, number: int, q: models.Question):
     header_tbl.setStyle(TableStyle([("VALIGN", (0, 0), (-1, -1), "BOTTOM"), ("ALIGN", (1, 0), (1, 0), "RIGHT")]))
 
     block_story: list = [header_tbl]
-    question_body = blocks_by_slot(q, "body")
-    if q.children:
-        question_body = [block for block in question_body if block.block_type != "answer_area"]
-    _pdf_render_blocks(block_story, styles, question_body)
+    _pdf_render_blocks(block_story, styles, blocks_by_slot(q, "body"))
 
+    part_stories: list[list] = []
     for part in q.children:
+        part_story: list = []
         part_marks = f"  [{part.marks:g} mark{'s' if part.marks != 1 else ''}]" if part.marks is not None else ""
-        block_story.append(Paragraph(f"<b>({part.part_label})</b>{part_marks}", styles["BodyIndent"]))
-        _pdf_render_blocks(block_story, styles, blocks_by_slot(part, "body"), indent=True)
-        for _ in range(_generated_part_answer_lines(q, part)):
-            answer_line = Table([[""]], colWidths=[6.0 * inch], rowHeights=[0.35 * inch])
-            answer_line.setStyle(TableStyle([("LINEBELOW", (0, 0), (-1, -1), 0.75, colors.HexColor("#999999"))]))
-            block_story.append(answer_line)
+        part_story.append(Paragraph(f"<b>({part.part_label})</b>{part_marks}", styles["BodyIndent"]))
+        _pdf_render_blocks(part_story, styles, blocks_by_slot(part, "body"), indent=True)
+        part_stories.append(part_story)
 
+    if not q.children:
+        if q.source:
+            block_story.append(Paragraph(f"(Source: {_source_attribution(q.source)})", styles["SourceLine"]))
+        # Keep a whole standalone question on one page when it fits. ReportLab
+        # splits KeepTogether content when it is taller than a fresh page.
+        story.append(KeepTogether(block_story))
+        return
+
+    # For multipart questions, keep the question heading and shared stem
+    # together where possible, then apply the same rule to each individual
+    # part (including its answer space).
+    story.append(KeepTogether(block_story))
+    story.extend(KeepTogether(part_story) for part_story in part_stories)
     if q.source:
-        block_story.append(Paragraph(f"(Source: {_source_attribution(q.source)})", styles["SourceLine"]))
-
-    story.append(KeepTogether(block_story[:2]) if len(block_story) > 1 else block_story[0])
-    story.extend(block_story[2:] if len(block_story) > 2 else [])
+        story.append(Paragraph(f"(Source: {_source_attribution(q.source)})", styles["SourceLine"]))
 
 
 def _pdf_render_section_heading(story: list, styles, name: str, questions: list[models.Question]):

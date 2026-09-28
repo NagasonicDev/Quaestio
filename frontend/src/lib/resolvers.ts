@@ -1,6 +1,6 @@
 import type { ContentBlock } from "../api/types";
 import * as idb from "./db/indexeddb";
-import { contentOf } from "./criteria";
+import { contentOf, tableCellText, tableRows } from "./criteria";
 import { renderLatexPng } from "./equations";
 
 export const IMAGE_TYPES = new Set(["image", "diagram", "graph"]);
@@ -112,10 +112,8 @@ export async function resolveEquations(
       } else if (b.block_type === "table") {
         const columns = contentOf(b, "columns", []);
         const rows = contentOf(b, "rows", []);
-        if (Array.isArray(columns)) texts.push(...columns.map(String));
-        if (Array.isArray(rows)) {
-          for (const row of rows) if (Array.isArray(row)) texts.push(...row.map(String));
-        }
+        if (Array.isArray(columns)) texts.push(...columns.map(tableCellText));
+        for (const row of tableRows(rows, columns)) texts.push(...row.map(tableCellText));
       } else if (b.block_type === "list") {
         const items = contentOf(b, "items", []);
         if (Array.isArray(items)) texts.push(...items.map(String));

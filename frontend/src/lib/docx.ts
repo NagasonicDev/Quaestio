@@ -20,15 +20,13 @@ import {
   type ParagraphChild,
 } from "docx";
 import type { ContentBlock, Question } from "../api/types";
-import { contentOf, formatMarks, formatSourceBracket, marksLabel } from "./criteria";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel, tableCellText, tableRows } from "./criteria";
 import { inlineMathImageId, resolveEquations, resolveImages, type ResolvedImage } from "./resolvers";
 import {
   EXAM,
   buildExamPaperPlan,
   formatMcOption,
   generalInstructionsLines,
-  isWrittenResponseType,
-  responseLinesForMarks,
   isMcOptionLine,
   sectionOpeningLines,
   sectionOverviewLines,
@@ -56,6 +54,7 @@ export interface DocOptions {
   achievedMarks: number;
   sections: DocSection[];
   resolvedImages?: Map<string, ResolvedImage>;
+  onQuestionProgress?: (completed: number, total: number) => void;
 }
 
 function runProps(opts: {
@@ -233,15 +232,16 @@ function renderBlock(
     }
     case "table": {
       const columns: unknown = contentOf(block, "columns", []);
-      const rows: unknown = contentOf(block, "rows", []);
-      if (Array.isArray(columns) && Array.isArray(rows)) {
+      const rawRows: unknown = contentOf(block, "rows", []);
+      if (Array.isArray(columns)) {
+        const rows = tableRows(rawRows, columns);
         const widthIn = 6.5 - indentIn;
         const colWidthTwips = Math.round(inches(widthIn) / Math.max(1, columns.length));
         const inlineMathIndex = { value: 0 };
         const buildRow = (cells: unknown[], header: boolean): TableRow => {
           const normalized = Array.from({ length: columns.length }, (_, i) => cells[i]);
           const cellChildren = normalized.map((c) => {
-            const val = String(c ?? "");
+            const val = tableCellText(c);
             return new TableCell({
               children: [
                 new Paragraph({
@@ -257,8 +257,8 @@ function renderBlock(
           });
           return new TableRow({ children: cellChildren });
         };
-        const headerCells = columns.map((c) => String(c ?? ""));
-        const bodyRows = rows.map((r) => (Array.isArray(r) ? r : []));
+        const headerCells = columns.map(tableCellText);
+        const bodyRows = rows.map((r) => r.map(tableCellText));
         out.push(
           new Table({
             alignment: AlignmentType.CENTER,
@@ -392,9 +392,7 @@ function renderQuestion(
 ): Array<Paragraph | Table> {
   const out: Array<Paragraph | Table> = [];
   out.push(questionHeader(question, counter));
-  const questionBody = question.parts.length
-    ? question.body.filter((block) => block.block_type !== "answer_area")
-    : question.body;
+  const questionBody = question.body;
   out.push(...renderBlocks(questionBody, { indentIn: 0, images }));
   if (question.mcq_options?.length) {
     const items = question.mcq_options.map((option, i) => {
@@ -419,15 +417,6 @@ function renderQuestion(
       new Paragraph({ children: headChildren, indent: { left: inches(0.3) } })
     );
     out.push(...renderBlocks(part.body, { indentIn: 0.3, images }));
-    if (isWrittenResponseType(question.type_key) && !part.body.some((block) => block.block_type === "answer_area")) {
-      out.push(...renderBlocks([{
-        block_id: `${part.question_id}-generated-answer-area`,
-        slot: "body",
-        position: part.body.length,
-        block_type: "answer_area",
-        content: { lines: responseLinesForMarks(part.marks) },
-      }], { indentIn: 0.3, images }));
-    }
   }
   const src = formatSourceBracket(question.source);
   out.push(new Paragraph({
@@ -674,17 +663,9 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
     appendSectionHeader(children, secPlan);
     for (const q of sec.questions) {
       children.push(...renderQuestion(q, counter, images));
-      const type = (q.type_key ?? "").toLowerCase();
-      if (type !== "multiple_choice" && !(q.parts.length && isWrittenResponseType(type))) {
-        const lineCount = Math.max(0, Math.floor((q.marks ?? 0) * 3 + 2));
-        for (let i = 0; i < lineCount; i++) {
-          children.push(new Paragraph({
-            children: [runProps({ text: " " })],
-            border: { bottom: { style: BorderStyle.SINGLE, size: 4, color: "999999", space: 1 } },
-            spacing: { before: 20, after: 20 },
-            keepNext: i < lineCount - 1,
-          }));
-        }
+      if (opts.onQuestionProgress) {
+        opts.onQuestionProgress(counter.n, opts.sections.reduce((sum, item) => sum + item.questions.length, 0));
+        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       }
     }
     const isFinalSection = planIdx === plan.sections.length;
@@ -695,6 +676,44 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
         spacing: { before: 8 * 20, after: 8 * 20 },
       })
     );
+  }
+  return pack(children);
+}
+
+/** Build a separate answer and marking guide for a previously generated paper. */
+export async function buildDocxSolutions(title: string, sections: DocSection[]): Promise<Blob> {
+  const questions = sections.flatMap((section) => section.questions);
+  const solutionBlocks = questions.flatMap((q) => [
+    ...q.answer, ...q.solution, ...q.marking_criteria,
+    ...q.parts.flatMap((part) => [...part.answer, ...part.solution, ...part.marking_criteria]),
+  ]);
+  const [images, equations] = await Promise.all([resolveImages(solutionBlocks), resolveEquations(solutionBlocks)]);
+  for (const [id, image] of equations) images.set(id, image);
+  const children: Array<Paragraph | Table> = [
+    new Paragraph({ children: [runProps({ text: title, bold: true, sizePt: 20 })], alignment: AlignmentType.CENTER }),
+    new Paragraph({ children: [runProps({ text: "Solutions and marking guide", bold: true, sizePt: 14 })], alignment: AlignmentType.CENTER, spacing: { after: 240 } }),
+  ];
+  const appendSlot = (label: string, blocks: ContentBlock[]) => {
+    if (!blocks.length) return;
+    children.push(new Paragraph({ children: [runProps({ text: label, bold: true })], spacing: { before: 100 } }));
+    children.push(...renderBlocks(blocks, { indentIn: 0, images }));
+  };
+  let number = 0;
+  for (const section of sections) {
+    if (section.label) children.push(new Paragraph({ children: [runProps({ text: section.label, bold: true, sizePt: 15 })], spacing: { before: 260, after: 100 } }));
+    for (const q of section.questions) {
+      number++;
+      children.push(new Paragraph({ children: [runProps({ text: `Question ${number}`, bold: true, sizePt: 13 })], spacing: { before: 220, after: 80 } }));
+      appendSlot("Answer", q.answer);
+      appendSlot("Solution", q.solution);
+      appendSlot("Marking criteria", q.marking_criteria);
+      for (const part of q.parts) {
+        const label = part.part_label ? `(${part.part_label})` : "Part";
+        appendSlot(`${label} — Answer`, part.answer);
+        appendSlot(`${label} — Solution`, part.solution);
+        appendSlot(`${label} — Marking criteria`, part.marking_criteria);
+      }
+    }
   }
   return pack(children);
 }

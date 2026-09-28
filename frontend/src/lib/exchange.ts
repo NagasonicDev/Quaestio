@@ -303,7 +303,15 @@ Example:
 Fill in \`source.original_question_no\` for **every** question (and give each
 multi-part part a \`part_label\`) — the Image attachment checklist references
 questions by these same numbers, so they must match exactly what's printed
-on the source paper.
+on the source paper. When the source format includes \`source.institution\`,
+record only the institution's actual name (for example, \`Sydney Girls\`).
+Do not include a subject, course, exam type, year/grade, or difficulty/level
+descriptor in the institution field. Put those details in \`source.name\`
+instead: for example, interpret “Sydney Girls Physics Trial” as institution
+\`Sydney Girls\` and source name \`Physics Trial\`. Keep genuine words that
+are part of the institution's name, such as “High School”. If the institution
+cannot be identified separately with confidence, leave it null rather than
+guessing from the exam title.
 
 See \`import-schema.json\` (packaged alongside this file) for this course's
 actual valid \`node_ids\`, \`node_codes\`, \`node_names\`, \`type_key\` values,

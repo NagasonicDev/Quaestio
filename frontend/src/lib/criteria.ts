@@ -101,3 +101,47 @@ export function contentOf(block: ContentBlock, key: string, fallback: unknown = 
   const v = c[key];
   return v === undefined || v === null ? fallback : v;
 }
+
+/** Turn both plain and structured table cell values into renderable text. */
+export function tableCellText(value: unknown): string {
+  if (value == null) return "";
+  if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") return String(value);
+  if (Array.isArray(value)) return value.map(tableCellText).join("");
+  if (typeof value !== "object") return "";
+
+  const cell = value as Record<string, unknown>;
+  const content = cell.content;
+  if (cell.block_type === "equation" && content && typeof content === "object") {
+    const latex = (content as Record<string, unknown>).latex;
+    return typeof latex === "string" ? `$${latex}$` : "";
+  }
+  if (typeof cell.text === "string") return cell.text;
+  if (typeof cell.latex === "string") return `$${cell.latex}$`;
+  if (typeof content === "string") return content;
+  if (content && typeof content === "object") {
+    const nested = content as Record<string, unknown>;
+    if (typeof nested.text === "string") return nested.text;
+    if (typeof nested.latex === "string") return `$${nested.latex}$`;
+    if (Array.isArray(nested.blocks)) return tableCellText(nested.blocks);
+  }
+  if (Array.isArray(cell.blocks)) return tableCellText(cell.blocks);
+  return "";
+}
+
+/** Normalize the row encodings used by imported and editor-created tables. */
+export function tableRows(rows: unknown, columns: unknown): unknown[][] {
+  if (!Array.isArray(rows)) return [];
+  const headers = Array.isArray(columns) ? columns : [];
+  return rows.map((row) => {
+    if (Array.isArray(row)) return row;
+    if (!row || typeof row !== "object") return [];
+    const record = row as Record<string, unknown>;
+    for (const key of ["cells", "values", "data"]) {
+      if (Array.isArray(record[key])) return record[key] as unknown[];
+    }
+    return headers.map((header, index) => {
+      const key = tableCellText(header);
+      return record[key] ?? record[String(index)] ?? "";
+    });
+  });
+}

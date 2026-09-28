@@ -10,7 +10,7 @@ import notoSerifRegularUrl from "../assets/NotoSerif-Regular.ttf?url";
 import notoSerifBoldUrl from "../assets/NotoSerif-Bold.ttf?url";
 import notoSerifItalicUrl from "../assets/NotoSerif-Italic.ttf?url";
 import type { ContentBlock, Question } from "../api/types";
-import { contentOf, formatMarks, formatSourceBracket, marksLabel } from "./criteria";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel, tableCellText, tableRows } from "./criteria";
 import { inlineMathImageId, resolveEquations, resolveImages, type ResolvedImage } from "./resolvers";
 import type { DocSection } from "./docx";
 import {
@@ -18,8 +18,6 @@ import {
   buildExamPaperPlan,
   formatMcOption,
   formatPageNumber,
-  isWrittenResponseType,
-  responseLinesForMarks,
   generalInstructionsLines,
   isMcOptionLine,
   sectionOpeningLines,
@@ -453,17 +451,16 @@ async function renderBlock(w: Writer, b: ContentBlock, images: Map<string, Resol
     }
     case "table": {
       const cols = contentOf(b, "columns", []);
-      const rows = contentOf(b, "rows", []);
-      if (!Array.isArray(cols) || !Array.isArray(rows) || cols.length === 0) return true;
+      const rawRows = contentOf(b, "rows", []);
+      if (!Array.isArray(cols) || cols.length === 0) return true;
+      const rows = tableRows(rawRows, cols);
       const width = BODY_W;
       const widths = cols.map(() => width / cols.length);
-      const header = cols.map((cell) => String(cell ?? ""));
+      const header = cols.map(tableCellText);
       const inline = { images, blockId: b.block_id, index: { value: 0 } };
       await w.gridRow(header, widths, { font: w.fonts.bold, fill: HEADER_BG, align: "center", inline });
       for (const row of rows) {
-        const cells = Array.isArray(row)
-          ? (row as unknown[]).map((c) => (c == null ? "" : String(c)))
-          : [];
+        const cells = row.map(tableCellText);
         if (cells.length === 0) continue;
         await w.gridRow(cells.slice(0, cols.length), widths, { align: "center", inline });
       }
@@ -537,6 +534,76 @@ async function renderBlocks(w: Writer, blocks: ContentBlock[], ids: Map<string, 
   for (const b of blocks) await renderBlock(w, b, ids);
 }
 
+function estimateBlockHeight(w: Writer, block: ContentBlock, images: Map<string, ResolvedImage>, indent = 0): number {
+  const bodyWidth = BODY_W - indent;
+  const textHeight = (text: string, size: number, font = w.fonts.reg, width = bodyWidth) =>
+    wrapText(font, text, size, width).length * LINE_H(size);
+  switch (block.block_type) {
+    case "text":
+    case "heading": {
+      const text = contentOf(block, "text", "");
+      if (typeof text !== "string" || !text) return 0;
+      const size = block.block_type === "heading" ? 13 : EXAM.font.bodyPt;
+      return textHeight(text, size, block.block_type === "heading" ? w.fonts.bold : w.fonts.reg);
+    }
+    case "equation":
+      return 0.32 * PT + 4;
+    case "image":
+    case "diagram":
+    case "graph": {
+      const image = images.get(block.block_id);
+      if (!image) return LINE_H(10);
+      const scale = Math.min((4.5 * PT) / image.widthPx, (4.5 * PT) / image.heightPx);
+      return image.heightPx * scale + 4 + LINE_H(11);
+    }
+    case "table": {
+      const columns = contentOf(block, "columns", []);
+      const rawRows = contentOf(block, "rows", []);
+      if (!Array.isArray(columns) || !columns.length) return 0;
+      const rows = tableRows(rawRows, columns).map((row) => row.map(tableCellText));
+      const colWidth = BODY_W / columns.length;
+      const rowHeight = (cells: unknown[], size: number, font: PDFFont) => {
+        const lines = Math.max(1, ...cells.map((cell) => wrapText(font, tableCellText(cell), size, colWidth - 8).length));
+        return Math.max(20, lines * LINE_H(size) + 8);
+      };
+      return rowHeight(columns, 9, w.fonts.bold)
+        + rows.reduce((sum, row) => sum + (row.length ? rowHeight(row.slice(0, columns.length), 9, w.fonts.reg) : 0), 0)
+        + 12;
+    }
+    case "list": {
+      const items = contentOf(block, "items", []);
+      if (!Array.isArray(items)) return 0;
+      const mc = contentOf(block, "ordered", false) !== true && items.length > 0 && items.every((item) => isMcOptionLine(String(item)));
+      return items.reduce((sum, item, index) => {
+        const raw = String(item);
+        const text = mc ? formatMcOption(raw) : `${contentOf(block, "ordered", false) === true ? `${index + 1}.  ` : "•  "}${raw}`;
+        return sum + textHeight(text, EXAM.font.bodyPt, w.fonts.reg, BODY_W - (mc ? 20 : 12));
+      }, 0);
+    }
+    case "code": {
+      const code = contentOf(block, "code", "");
+      return typeof code === "string" ? code.split("\n").reduce((sum, line) => sum + textHeight(line || " ", 9, w.fonts.mono), 0) : 0;
+    }
+    case "answer_area": {
+      const lines = contentOf(block, "lines", 3);
+      return ((typeof lines === "number" ? lines : 3) + 1) * 22;
+    }
+    case "page_break":
+      return TOP - BOTTOM + 1;
+    default:
+      return 0;
+  }
+}
+
+function estimateBlocksHeight(w: Writer, blocks: ContentBlock[], images: Map<string, ResolvedImage>, indent = 0): number {
+  return blocks.reduce((sum, block) => sum + estimateBlockHeight(w, block, images, indent), 0);
+}
+
+function startOnNextPageIfNeeded(w: Writer, height: number) {
+  const pageCapacity = TOP - BOTTOM;
+  if (height <= pageCapacity && height > w.y - BOTTOM) w.newPage();
+}
+
 const SOURCE_LINE_PT = 8;
 
 function drawSourceLine(w: Writer, question: Question) {
@@ -544,10 +611,8 @@ function drawSourceLine(w: Writer, question: Question) {
   w.text(text, { font: w.fonts.italic, size: SOURCE_LINE_PT, color: GRAY });
 }
 
-async function renderPaperQuestion(w: Writer, q: Question, sharedImages?: Map<string, ResolvedImage>) {
-  const questionBody = q.parts.length
-    ? q.body.filter((block) => block.block_type !== "answer_area")
-    : q.body;
+async function renderPaperQuestion(w: Writer, q: Question, sharedImages?: Map<string, ResolvedImage>, beforePart?: (part: Question["parts"][number]) => void) {
+  const questionBody = q.body;
   const blocks: ContentBlock[] = [...questionBody];
   for (const part of q.parts) blocks.push(...part.body);
   const ids = sharedImages ?? new Map<string, ResolvedImage>([
@@ -564,20 +629,12 @@ async function renderPaperQuestion(w: Writer, q: Question, sharedImages?: Map<st
     await renderBlocks(w, [{ block_id: `${q.question_id}-mcq-options`, slot: "body", position: 0, block_type: "list", content: { ordered: false, items } } as ContentBlock], ids);
   }
   for (const part of q.parts) {
+    beforePart?.(part);
     const label = part.part_label ? `(${part.part_label})` : "";
     const marks = marksLabel(part.marks);
     const head = [label, marks ? `[${marks}]` : ""].filter(Boolean).join("  ");
     if (head) w.text(head, { font: w.fonts.bold, indent: 22 });
     await renderBlocks(w, part.body, ids);
-    if (isWrittenResponseType(q.type_key) && !part.body.some((block) => block.block_type === "answer_area")) {
-      await renderBlocks(w, [{
-        block_id: `${part.question_id}-generated-answer-area`,
-        slot: "body",
-        position: part.body.length,
-        block_type: "answer_area",
-        content: { lines: responseLinesForMarks(part.marks) },
-      }], ids);
-    }
   }
   drawSourceLine(w, q);
 }
@@ -588,6 +645,7 @@ export interface PdfOptions {
   achievedMarks: number;
   sections: DocSection[];
   resolvedImages?: Map<string, ResolvedImage>;
+  onQuestionProgress?: (completed: number, total: number) => void;
 }
 
 async function writeHscCover(w: Writer, plan: ExamPaperPlan) {
@@ -680,12 +738,18 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
     writeSectionHeader(w, secPlan);
 
     for (const q of section.questions) {
-      const intro = q.body.find((b) => b.block_type === "text" || b.block_type === "heading");
-      const introText = intro ? contentOf(intro, "text", "") : "";
-      const introLines = typeof introText === "string" && introText
-        ? wrapText(w.fonts.reg, introText, EXAM.font.bodyPt, BODY_W).length
-        : 1;
-      w.ensure((introLines + 1) * LINE_H(EXAM.font.bodyPt) + 8);
+      const questionBody = q.body;
+      const mcqBlock = q.mcq_options?.length ? [{
+        block_id: `${q.question_id}-mcq-options`,
+        slot: "body" as const,
+        position: q.body.length,
+        block_type: "list" as const,
+        content: { ordered: false, items: q.mcq_options.map((option, i) => `(${String.fromCharCode(65 + i)}) ${option.content.map((b) => String(b.content.text ?? b.content.latex ?? "")).join(" ")}`) },
+      } as ContentBlock] : [];
+      const questionStartHeight = 6 + LINE_H(EXAM.font.bodyPt)
+        + estimateBlocksHeight(w, questionBody, sharedImages)
+        + estimateBlocksHeight(w, mcqBlock, sharedImages);
+      startOnNextPageIfNeeded(w, questionStartHeight);
       qn += 1;
       w.spacer(6);
       const markText = formatMarks(q.marks);
@@ -693,19 +757,20 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
       w.textLine(`Question ${qn}`, { font: w.fonts.bold, size: EXAM.font.bodyPt });
       w.drawMarks(markText, headerY);
       const questionStartPage = w.pageNumber;
-      await renderPaperQuestion(w, q, sharedImages);
-      if ((q.type_key ?? "").toLowerCase() !== "multiple_choice" && !(q.parts.length && isWrittenResponseType(q.type_key))) {
-        const lineCount = Math.max(0, Math.floor((q.marks ?? 0) * 3 + 2));
-        for (let i = 0; i < lineCount; i++) {
-          w.ensure(LINE_H(EXAM.font.bodyPt));
-          w.page.page.drawLine({ start: { x: MARGIN_L, y: w.y - 3 }, end: { x: MARGIN_L + BODY_W, y: w.y - 3 }, thickness: 0.45, color: HR });
-          w.y -= LINE_H(EXAM.font.bodyPt);
-        }
-      }
+      const beforePart = (part: Question["parts"][number]) => {
+        const label = part.part_label ? `(${part.part_label})` : "";
+        const marks = marksLabel(part.marks);
+        const partHeader = [label, marks ? `[${marks}]` : ""].filter(Boolean).join("  ");
+        const height = (partHeader ? LINE_H(EXAM.font.bodyPt) : 0)
+          + estimateBlocksHeight(w, part.body, sharedImages, 22);
+        startOnNextPageIfNeeded(w, height);
+      };
+      await renderPaperQuestion(w, q, sharedImages, beforePart);
       if (w.pageNumber > questionStartPage) {
         w.drawQuestionContinuation(qn, questionStartPage, w.pageNumber);
       }
       w.spacer(10);
+      options.onQuestionProgress?.(qn, options.sections.reduce((sum, item) => sum + item.questions.length, 0));
     }
     const isFinalSection = planIdx === plan.sections.length;
     w.ensure(LINE_H(EXAM.font.bodyPt) * 2);
@@ -715,6 +780,59 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
       size: EXAM.font.bodyPt,
       align: "center",
     });
+  }
+  w.drawPageFooter();
+  const bytes = await pdf.save();
+  return new Blob([bytes as unknown as BlobPart], { type: "application/pdf" });
+}
+
+/** Build a separate answer and marking guide for a previously generated paper. */
+export async function buildPdfSolutions(title: string, sections: DocSection[]): Promise<Blob> {
+  const pdf = await PDFDocument.create();
+  const fonts = await embedUnicodeFonts(pdf);
+  const w = new Writer(pdf, fonts);
+  const questions = sections.flatMap((section) => section.questions);
+  const solutionBlocks = questions.flatMap((q) => [
+    ...q.answer, ...q.solution, ...q.marking_criteria,
+    ...q.parts.flatMap((part) => [...part.answer, ...part.solution, ...part.marking_criteria]),
+  ]);
+  const images = new Map<string, ResolvedImage>([
+    ...(await resolveImages(solutionBlocks)),
+    ...(await resolveEquations(solutionBlocks)),
+  ]);
+  w.text(title, { font: w.fonts.bold, size: 20, align: "center" });
+  w.spacer(6);
+  w.text("Solutions and marking guide", { font: w.fonts.bold, size: 13, align: "center" });
+  w.rule();
+  const appendSlot = async (label: string, blocks: ContentBlock[]) => {
+    if (!blocks.length) return;
+    w.ensure(LINE_H(EXAM.font.bodyPt) * 2);
+    w.text(label, { font: w.fonts.bold, size: EXAM.font.bodyPt });
+    await renderBlocks(w, blocks, images);
+    w.spacer(4);
+  };
+  let number = 0;
+  for (const section of sections) {
+    if (section.label) {
+      w.ensure(LINE_H(15) * 2);
+      w.text(section.label, { font: w.fonts.bold, size: 15 });
+      w.rule();
+    }
+    for (const q of section.questions) {
+      number++;
+      w.ensure(LINE_H(13) * 2);
+      w.text(`Question ${number}`, { font: w.fonts.bold, size: 13 });
+      w.spacer(3);
+      await appendSlot("Answer", q.answer);
+      await appendSlot("Solution", q.solution);
+      await appendSlot("Marking criteria", q.marking_criteria);
+      for (const part of q.parts) {
+        const label = part.part_label ? `(${part.part_label})` : "Part";
+        await appendSlot(`${label} — Answer`, part.answer);
+        await appendSlot(`${label} — Solution`, part.solution);
+        await appendSlot(`${label} — Marking criteria`, part.marking_criteria);
+      }
+    }
   }
   w.drawPageFooter();
   const bytes = await pdf.save();
