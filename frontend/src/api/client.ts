@@ -227,10 +227,14 @@ export const api = {
       shuffle?: boolean;
       sections: TestSectionInput[];
       selectionTimeoutMs?: number;
-      onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number }) => void;
+      onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void;
     }
   ): Promise<GeneratedTestMeta> {
     return data.generateTest(courseId, payload);
+  },
+
+  generateTestSolutions(testId: string): Promise<void> {
+    return data.generateTestSolutions(testId);
   },
 
   listTests(courseId: string, limit: number = 20): Promise<GeneratedTestMeta[]> {

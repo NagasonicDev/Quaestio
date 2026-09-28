@@ -1,4 +1,4 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
 import { cn } from "../lib/utils";
 import { Button } from "./ui/button";
 
@@ -53,10 +53,14 @@ export function InkLoader({
   messages = ["Quaestio is pondering…"],
   className,
   intervalMs = 900,
+  progress,
+  markClassName,
 }: {
   messages?: string[];
   className?: string;
   intervalMs?: number;
+  progress?: number;
+  markClassName?: string;
 }) {
   const [index, setIndex] = useState(0);
 
@@ -69,11 +73,14 @@ export function InkLoader({
 
   return (
     <div className={cn("ink-loader", className)} role="status" aria-live="polite">
-      <span className="ink-loader-mark font-display" aria-hidden="true">Q</span>
-      <div className="ink-stream" aria-hidden="true">
+      <span className={cn("ink-loader-mark font-display", markClassName)} aria-hidden="true">Q</span>
+      <div className="ink-stream" aria-hidden="true" style={progress == null ? undefined : { "--ink-progress": `${Math.max(0, Math.min(100, progress))}%` } as CSSProperties}>
         <span className="ink-stream-base" />
-        <span className="ink-stream-current" />
+        {progress == null
+          ? <span className="ink-stream-current" />
+          : <span className="ink-stream-progress" />}
       </div>
+      {progress != null && <span className="ink-loader-progress">About {Math.round(progress)}%</span>}
       <p className="label ink-loader-message">{messages[index % messages.length]}</p>
     </div>
   );

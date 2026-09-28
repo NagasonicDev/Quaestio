@@ -12,16 +12,11 @@ import { downloadTestFile, ensureTestFileUrl } from "../lib/tests";
 import { Input } from "../components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 import { effectiveNodeFilterIds } from "../lib/nodeFilters";
+import { beginTestGeneration, updateTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
 import type { QuestionCountsResponse } from "../api/types";
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
-}
-
-function formatDurationClock(seconds: number) {
-  const mins = Math.floor(seconds / 60);
-  const secs = seconds % 60;
-  return mins ? `${mins}m ${String(secs).padStart(2, "0")}s` : `${secs}s`;
 }
 
 function testRuntimeKey(format: "docx" | "pdf") {
@@ -51,6 +46,8 @@ export function TestGenerator() {
   const { courseId } = useActiveCourse();
   const { data: config } = useCourseConfig(courseId);
   const qc = useQueryClient();
+  const backgroundTask = useTestGenerationTask();
+  const taskRunning = backgroundTask?.status === "running";
   const nextId = useRef(2);
 
   const [sections, setSections] = useState<SectionDraft[]>([
@@ -61,21 +58,67 @@ export function TestGenerator() {
   const [title, setTitle] = useState("");
 
   const [generating, setGenerating] = useState(false);
-  const [elapsedSeconds, setElapsedSeconds] = useState(0);
-  const [estimatedSeconds, setEstimatedSeconds] = useState(20);
+  const blockingGeneration = generating || (taskRunning && backgroundTask?.courseId === courseId);
   const [generationPhase, setGenerationPhase] = useState<"selecting" | "hydrating" | "paper" | "preview" | "saving">("selecting");
+  const [completedQuestions, setCompletedQuestions] = useState(0);
+  const [generationQuestionCount, setGenerationQuestionCount] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<GeneratedTestMeta | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [downloadError, setDownloadError] = useState<string | null>(null);
   const [downloading, setDownloading] = useState<string | null>(null);
-  const [startedAt, setStartedAt] = useState<number | null>(null);
-
+  const [generatingSolutions, setGeneratingSolutions] = useState<string | null>(null);
   useEffect(() => {
-    if (!generating || startedAt == null) return;
-    const timer = window.setInterval(() => setElapsedSeconds(Math.floor((Date.now() - startedAt) / 1000)), 1000);
-    return () => window.clearInterval(timer);
-  }, [generating, startedAt]);
+    if (backgroundTask?.courseId !== courseId) return;
+    if (backgroundTask.status === "complete" && backgroundTask.result) setResult(backgroundTask.result);
+    if (backgroundTask.status === "failed" && backgroundTask.error) setError(backgroundTask.error);
+  }, [backgroundTask, courseId]);
+  const phaseProgress = { selecting: 4, hydrating: 12, paper: 22, preview: 78, saving: 96 }[generationPhase];
+  const generationProgress = generationPhase === "paper"
+    ? 22 + (generationQuestionCount ? completedQuestions / generationQuestionCount : 0) * 56
+    : generationPhase === "preview"
+      ? 78 + (generationQuestionCount ? completedQuestions / generationQuestionCount : 0) * 17
+      : phaseProgress;
+  const activeGenerationPhase = taskRunning && backgroundTask?.courseId === courseId
+    ? backgroundTask.phase
+    : generationPhase;
+  const activeGenerationProgress = taskRunning && backgroundTask?.courseId === courseId
+    ? backgroundTask.phase === "paper"
+      ? 22 + (backgroundTask.questionCount ? backgroundTask.completedQuestions / backgroundTask.questionCount : 0) * 56
+      : backgroundTask.phase === "preview"
+        ? 78 + (backgroundTask.questionCount ? backgroundTask.completedQuestions / backgroundTask.questionCount : 0) * 17
+        : ({ selecting: 4, hydrating: 12, saving: 96 }[backgroundTask.phase] ?? 4)
+    : generationProgress;
+  const activeGenerationMessages = {
+    selecting: [
+      "Finding the closest mark combination…",
+      "Checking question marks against your target…",
+      "Comparing possible question combinations…",
+      "Choosing the best match for your requested marks…",
+    ],
+    hydrating: [
+      "Loading the selected questions…",
+      "Gathering question text and diagrams…",
+      "Collecting answer choices and mark details…",
+      "Preparing the selected questions for your paper…",
+    ],
+    paper: [
+      `Building the ${format.toUpperCase()} paper…`,
+      "Laying out questions and answer spaces…",
+      "Formatting headings, marks, and page breaks…",
+      "Rendering the paper pages…",
+    ],
+    preview: [
+      "Preparing the in-app PDF preview…",
+      "Opening the generated paper preview…",
+      "Finishing the preview document…",
+    ],
+    saving: [
+      "Saving the generated paper…",
+      "Saving the paper and preview to your question bank…",
+      "Finishing up and saving your test…",
+    ],
+  }[activeGenerationPhase];
 
   const { data: counts } = useQuery({
     queryKey: ["question-counts", courseId],
@@ -169,6 +212,25 @@ export function TestGenerator() {
     }
   }
 
+  async function handleSolutions(test: GeneratedTestMeta) {
+    setDownloadError(null);
+    const key = `${test.test_id}:solutions`;
+    setGeneratingSolutions(test.test_id);
+    setDownloading(key);
+    try {
+      if (!test.solutions_available) {
+        await api.generateTestSolutions(test.test_id);
+        qc.invalidateQueries({ queryKey: ["tests", courseId] });
+      }
+      await downloadTestFile(test.test_id, "solutions", test.format);
+    } catch (e) {
+      setDownloadError(e instanceof Error ? e.message : "Could not generate solutions");
+    } finally {
+      setGeneratingSolutions(null);
+      setDownloading(null);
+    }
+  }
+
   const sectionRows = useMemo(() => {
     if (result?.section_results && result.section_results.length > 0) {
       return [
@@ -214,12 +276,12 @@ export function TestGenerator() {
   }
 
   async function handleGenerate() {
-    if (!courseId) return;
+    if (!courseId || taskRunning) return;
     setGenerating(true);
     const start = Date.now();
-    setStartedAt(start);
-    setElapsedSeconds(0);
     setGenerationPhase("selecting");
+    setCompletedQuestions(0);
+    setGenerationQuestionCount(0);
     const estimatedQuestionCount = sections.reduce((sum, section, index) => {
       const available = availability?.[index];
       const averageMarks = available && available.question_count > 0
@@ -232,7 +294,15 @@ export function TestGenerator() {
     const initialEstimate = Math.max(20, Math.round(learnedSecondsPerQuestion
       ? estimatedQuestionCount * learnedSecondsPerQuestion
       : 15 + estimatedQuestionCount * perQuestion));
-    setEstimatedSeconds(initialEstimate);
+    beginTestGeneration({
+      courseId,
+      status: "running",
+      phase: "selecting",
+      startedAt: start,
+      questionCount: 0,
+      completedQuestions: 0,
+      estimatedSeconds: initialEstimate,
+    });
     setError(null);
     setResult(null);
     try {
@@ -250,13 +320,21 @@ export function TestGenerator() {
           marks: s.marks,
         })),
         onProgress: (progress) => {
+          updateTestGeneration({
+            phase: progress.phase,
+            ...(progress.questionCount != null ? { questionCount: progress.questionCount } : {}),
+            ...(progress.completedQuestions != null ? { completedQuestions: progress.completedQuestions } : {}),
+          });
           setGenerationPhase(progress.phase);
+          if (progress.questionCount != null) setGenerationQuestionCount(progress.questionCount);
+          if (progress.completedQuestions != null) setCompletedQuestions(progress.completedQuestions);
           if (progress.questionCount != null && progress.phase !== "selecting") {
             // DOCX generation also builds a PDF preview.
             const perQuestion = format === "pdf" ? 5 : 4;
-            setEstimatedSeconds(Math.max(20, Math.round(learnedSecondsPerQuestion
+            const estimate = Math.max(20, Math.round(learnedSecondsPerQuestion
               ? progress.questionCount * learnedSecondsPerQuestion
-              : 15 + progress.questionCount * perQuestion)));
+              : 15 + progress.questionCount * perQuestion));
+            updateTestGeneration({ estimatedSeconds: estimate });
           }
         },
       });
@@ -274,12 +352,14 @@ export function TestGenerator() {
         // Private browsing or storage restrictions should not interrupt exports.
       }
       setResult(meta);
+      updateTestGeneration({ status: "complete", result: meta });
       refetchPastTests();
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Failed to generate test");
+      const message = e instanceof Error ? e.message : "Failed to generate test";
+      setError(message);
+      updateTestGeneration({ status: "failed", error: message });
     } finally {
       setGenerating(false);
-      setStartedAt(null);
     }
   }
 
@@ -295,7 +375,7 @@ export function TestGenerator() {
   }
 
   return (
-    <div>
+    <div className="relative isolate">
       <PageHeader
         eyebrow="Assessment design"
         title="Test Generator"
@@ -432,48 +512,11 @@ export function TestGenerator() {
                 {sections.length} section{sections.length === 1 ? "" : "s"} ·{" "}
                 {summary.marksRequested} marks requested · {loadingAvailability || !availability ? "Updating availability…" : `${summary.availableQuestions} available questions · ${summary.availableMarks} available marks`}
               </Meta>
-              <Button disabled={generating || !allSectionsValid} onClick={handleGenerate}>
+              <Button disabled={generating || taskRunning || !allSectionsValid} onClick={handleGenerate}>
                 <Printer />
-                {generating ? "Generating…" : "Generate paper"}
+                {generating || taskRunning ? "Generating…" : "Generate paper"}
               </Button>
             </div>
-            {generating && (
-              <div className="border-t border-border px-5 py-3">
-                <InkLoader intervalMs={4000} messages={{
-                  selecting: [
-                    "Finding the closest mark combination…",
-                    "Checking question marks against your target…",
-                    "Comparing possible question combinations…",
-                    "Choosing the best match for your requested marks…",
-                  ],
-                  hydrating: [
-                    "Loading the selected questions…",
-                    "Gathering question text and diagrams…",
-                    "Collecting answer choices and mark details…",
-                    "Preparing the selected questions for your paper…",
-                  ],
-                  paper: [
-                    `Building the ${format.toUpperCase()} paper…`,
-                    "Laying out questions and answer spaces…",
-                    "Formatting headings, marks, and page breaks…",
-                    "Rendering the paper pages…",
-                  ],
-                  preview: [
-                    "Preparing the in-app PDF preview…",
-                    "Opening the generated paper preview…",
-                    "Finishing the preview document…",
-                  ],
-                  saving: [
-                    "Saving the generated paper…",
-                    "Saving the paper and preview to your question bank…",
-                    "Finishing up and saving your test…",
-                  ],
-                }[generationPhase]} />
-                <p className="mt-2 text-center text-xs text-muted-foreground">
-                  Elapsed {formatDurationClock(elapsedSeconds)} · Estimated total about {formatDurationClock(estimatedSeconds)}
-                </p>
-              </div>
-            )}
           </Panel>
 
           {(error || downloadError) && (
@@ -564,6 +607,19 @@ export function TestGenerator() {
                       </Meta>
                     </div>
                     <div className="flex items-center gap-1">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        disabled={!!downloading || generatingSolutions === t.test_id}
+                        onClick={() => handleSolutions(t)}
+                      >
+                        <Download />
+                        {generatingSolutions === t.test_id
+                          ? "Generating…"
+                          : t.solutions_available
+                            ? "Download solutions"
+                            : "Generate solutions"}
+                      </Button>
                       <Button size="icon" variant="ghost" title="Preview" onClick={() => setResult(t)}>
                         <Eye />
                       </Button>
@@ -591,6 +647,21 @@ export function TestGenerator() {
             )}
           </Panel>
         </div>
+        {blockingGeneration && (
+          <div
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 px-5 py-10 backdrop-blur-sm"
+            role="status"
+            aria-live="polite"
+            aria-busy="true"
+          >
+            <InkLoader
+              intervalMs={4000}
+              progress={activeGenerationProgress}
+              markClassName="text-[2.8rem]"
+              messages={activeGenerationMessages}
+            />
+          </div>
+        )}
     </div>
   );
 }

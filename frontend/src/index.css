@@ -276,6 +276,11 @@
   background: linear-gradient(90deg, transparent, var(--primary) 18%, var(--primary) 82%, transparent);
   animation: ink-stream-flow 2.5s cubic-bezier(0.65, 0, 0.35, 1) infinite;
 }
+.ink-stream-progress {
+  position: absolute; top: 4px; left: 0; width: var(--ink-progress, 0%); height: 2px;
+  border-radius: 999px; background: var(--primary); transition: width 500ms ease;
+}
+.ink-loader-progress { color: var(--muted-foreground); font: 10px/1 ui-monospace, SFMono-Regular, Menlo, monospace; }
 .ink-loader-message { min-height: 1rem; margin-top: 0.1rem; }
 @keyframes ink-stream-flow { from { transform: translateX(0); } to { transform: translateX(494%); } }
 

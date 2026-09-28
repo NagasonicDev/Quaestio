@@ -114,7 +114,7 @@ export async function getAllAssets(): Promise<Array<{ key: string; blob: Blob }>
 
 // ---------- Generated test outputs (keyed by `${testId}:${which}`) ----------
 
-export type TestFile = "test" | "preview";
+export type TestFile = "test" | "preview" | "solutions";
 
 export async function putTestFile(testId: string, which: TestFile, blob: Blob): Promise<void> {
   await txn("tests", "readwrite", (s) => s.put(blob, `${testId}:${which}`));

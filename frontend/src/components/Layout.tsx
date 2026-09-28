@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useIsFetching } from "@tanstack/react-query";
-import { Menu, Moon, Sun, X } from "lucide-react";
+import { Check, Menu, Moon, Sun, X } from "lucide-react";
 import { cn } from "../lib/utils";
 import { useTheme } from "../hooks/useTheme";
 import { CourseSelector } from "./CourseSelector";
@@ -9,6 +9,7 @@ import { RecentQuestionsSidebar } from "./RecentQuestionsSidebar";
 import { Button } from "./ui/button";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { CourseOnboarding } from "./CourseOnboarding";
+import { dismissTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
 
 const NAV = [
   { to: "/", label: "Dashboard", end: true },
@@ -30,6 +31,14 @@ export function Layout() {
   const { theme, toggle } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
   const isFetching = useIsFetching() > 0;
+  const generationTask = useTestGenerationTask();
+  const generationProgress = generationTask
+    ? generationTask.phase === "paper"
+      ? 22 + (generationTask.questionCount ? generationTask.completedQuestions / generationTask.questionCount : 0) * 56
+      : generationTask.phase === "preview"
+        ? 78 + (generationTask.questionCount ? generationTask.completedQuestions / generationTask.questionCount : 0) * 17
+        : ({ selecting: 4, hydrating: 12, saving: 96 }[generationTask.phase] ?? 4)
+    : 0;
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans">
@@ -113,6 +122,43 @@ export function Layout() {
           </nav>
         )}
       </header>
+
+      {generationTask && (
+        <div className="sticky top-14 z-30 border-b border-border bg-surface/95 px-4 py-2.5 shadow-sm backdrop-blur sm:px-5" role="status" aria-live="polite">
+          <div className="mx-auto flex max-w-[1500px] items-center gap-3">
+            <div className="min-w-0 flex-1">
+              <Link to="/test-generator" className="flex items-center gap-2 text-sm font-medium hover:underline">
+                {generationTask.status === "running" ? (
+                  <><span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-accent-foreground" />Generating your test…</>
+                ) : generationTask.status === "complete" ? (
+                  <><Check className="h-4 w-4 shrink-0 text-green-600" />Your test is ready</>
+                ) : (
+                  <><span className="h-2 w-2 shrink-0 rounded-full bg-destructive" />Test generation failed</>
+                )}
+              </Link>
+              <p className="truncate text-xs text-muted-foreground">
+                {generationTask.status === "running"
+                  ? `${generationTask.phase === "paper" ? "Building paper" : generationTask.phase === "preview" ? "Preparing preview" : generationTask.phase === "saving" ? "Saving files" : generationTask.phase === "hydrating" ? "Loading questions" : "Selecting questions"}${generationTask.questionCount ? ` · ${generationTask.completedQuestions}/${generationTask.questionCount} questions` : ""}`
+                  : generationTask.status === "complete"
+                    ? `${generationTask.result?.title ?? "Generated test"} · Open Test Generator to download or preview`
+                    : generationTask.error ?? "Open Test Generator for details"}
+              </p>
+            </div>
+            {generationTask.status === "running" && (
+              <div className="hidden w-40 sm:block">
+                <div className="h-1.5 overflow-hidden rounded-full bg-muted">
+                  <div className="h-full rounded-full bg-accent-foreground transition-[width]" style={{ width: `${generationProgress}%` }} />
+                </div>
+              </div>
+            )}
+            {generationTask.status !== "running" && (
+              <Button variant="ghost" size="icon" aria-label="Dismiss test generation notice" onClick={dismissTestGeneration}>
+                <X />
+              </Button>
+            )}
+          </div>
+        </div>
+      )}
 
       <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "md:grid-cols-[238px_minmax(0,1fr)]")}>
         {courseId && <RecentQuestionsSidebar />}

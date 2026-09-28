@@ -1,7 +1,10 @@
 import { all, flush, getFirst, run, runMany, transaction } from "./db/sqlite";
 import { newId, newQuestionId, nowUtc } from "./id";
 import { deleteAssetBlob, finalizeQuestionAssets } from "./assets";
-import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles } from "./tests";
+import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles, storeTestSolutionFile } from "./tests";
+import { getTestFile } from "./db/indexeddb";
+import { buildDocxSolutions } from "./docx";
+import { buildPdfSolutions } from "./pdf";
 import type {
   Course,
   CourseFullConfig,
@@ -1818,7 +1821,7 @@ export interface GenerateTestPayload {
   shuffle?: boolean;
   sections?: TestSectionInput[];
   selectionTimeoutMs?: number;
-  onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number }) => void;
+  onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void;
 }
 
 async function matchingQuestionIds(
@@ -2109,7 +2112,13 @@ export async function generateTest(
       round2(targetMarks),
       achieved,
       allQuestions.length,
-      JSON.stringify(payload),
+      JSON.stringify({
+        ...payload,
+        generated_sections: sectionQuestionsByWork.map((section) => ({
+          label: section.label,
+          question_ids: section.questions.map((question) => question.question_id),
+        })),
+      }),
       JSON.stringify(allQuestions.map((q) => q.question_id)),
       `${testId}-test.${extension}`,
       "",
@@ -2152,9 +2161,32 @@ export async function listTests(courseId: string, limit: number = 20): Promise<G
       created_at: r.created_at,
       test_download_url: testUrl,
       preview_url: previewUrl,
+      solutions_available: Boolean(await getTestFile(r.test_id, "solutions")),
     });
   }
   return out;
+}
+
+export async function generateTestSolutions(testId: string): Promise<void> {
+  const row = await getFirst<SqlRow>("SELECT * FROM generated_test WHERE test_id = ?", [testId]);
+  if (!row) throw new Error("Generated test not found");
+  const questionIds = JSON.parse(String(row.question_ids_json)) as string[];
+  const questions = await hydrateQuestions(questionIds);
+  const savedFilter = parseJson(String(row.filter_json));
+  const generatedSections = Array.isArray(savedFilter.generated_sections)
+    ? savedFilter.generated_sections as Array<{ label: string | null; question_ids: string[] }>
+    : [];
+  const questionById = new Map(questions.map((question) => [question.question_id, question]));
+  const sections = generatedSections.length
+    ? generatedSections.map((section) => ({
+        label: section.label,
+        questions: section.question_ids.map((id) => questionById.get(id)).filter((question): question is Question => !!question),
+      }))
+    : [{ label: null, questions }];
+  const output = row.format === "pdf"
+    ? await buildPdfSolutions(String(row.title), sections)
+    : await buildDocxSolutions(String(row.title), sections);
+  await storeTestSolutionFile(testId, output);
 }
 
 export async function deleteTest(testId: string): Promise<void> {
