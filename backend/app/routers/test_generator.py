@@ -159,6 +159,11 @@ def generate_test(course_id: str, payload: TestGenerateRequest, db: Session = De
                 "Try widening the topics/type filters, or set marks on matching questions.",
             )
 
+        # Selection/shuffling determines which questions make the section;
+        # presentation order should then progress from easier to harder.
+        # Keep questions without a difficulty rating after rated questions.
+        qs.sort(key=lambda q: (q.difficulty is None, q.difficulty or 0))
+
         sec_marks = round(sum(q.marks or 0 for q in qs), 2)
         export_sections.append((name, qs))
         section_results.append(TestSectionResult(

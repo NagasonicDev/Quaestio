@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import { Check, ChevronDown, Plus, Upload } from "lucide-react";
 import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
@@ -9,6 +10,7 @@ import { cn } from "../lib/utils";
 
 export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const { courseId, setCourseId } = useActiveCourse();
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
   const [creating, setCreating] = useState(false);
   const [importing, setImporting] = useState(false);
@@ -20,6 +22,12 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
 
   const { data: courses } = useQuery({ queryKey: ["courses"], queryFn: api.listCourses });
   const active = courses?.find((c) => c.course_id === courseId);
+
+  function switchCourse(nextCourseId: string) {
+    if (nextCourseId === courseId) return;
+    setCourseId(nextCourseId);
+    navigate("/");
+  }
 
   useEffect(() => {
     if (!courseId && courses && courses.length > 0) setCourseId(courses[0].course_id);
@@ -63,7 +71,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
       if (imported.length) {
         await qc.invalidateQueries({ queryKey: ["courses"] });
         for (const course of imported) await qc.invalidateQueries({ queryKey: ["course", course.course_id] });
-        setCourseId(imported[imported.length - 1].course_id);
+        switchCourse(imported[imported.length - 1].course_id);
         setImportNotice(`Imported ${imported.length} course(s): ${imported.map((course) => `'${course.course_name}'`).join(", ")}.`);
         setOpen(false);
       }
@@ -152,7 +160,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
                   role="option"
                   aria-selected={isActive}
                   onClick={() => {
-                    setCourseId(c.course_id);
+                    switchCourse(c.course_id);
                     setOpen(false);
                   }}
                   className={cn(
@@ -199,6 +207,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         <div className="absolute left-4 top-11 z-50 w-72 rounded-lg border border-border bg-popover p-3 shadow-xl">
           <CreateCourseForm
             onDone={() => {
+              navigate("/");
               setCreating(false);
               setOpen(false);
             }}

@@ -64,6 +64,10 @@ export const api = {
     return data.updateCourseTags(courseId, tags);
   },
 
+  updateCourseName(courseId: string, name: string): Promise<void> {
+    return data.updateCourseName(courseId, name);
+  },
+
   createNode(
     courseId: string,
     payload: { level_index: number; parent_node_id?: string | null; name: string; code?: string | null }

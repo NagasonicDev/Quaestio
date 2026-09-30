@@ -771,6 +771,12 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
       }
       w.spacer(10);
       options.onQuestionProgress?.(qn, options.sections.reduce((sum, item) => sum + item.questions.length, 0));
+      // Let the UI paint the updated generation percentage before rendering
+      // the next question. Without yielding a frame, a long paper can keep the
+      // browser displaying the previous phase until the export is complete.
+      if (options.onQuestionProgress) {
+        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+      }
     }
     const isFinalSection = planIdx === plan.sections.length;
     w.ensure(LINE_H(EXAM.font.bodyPt) * 2);

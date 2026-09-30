@@ -67,7 +67,6 @@ export function TestGenerator() {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [downloadError, setDownloadError] = useState<string | null>(null);
   const [downloading, setDownloading] = useState<string | null>(null);
-  const [generatingSolutions, setGeneratingSolutions] = useState<string | null>(null);
   useEffect(() => {
     if (backgroundTask?.courseId !== courseId) return;
     if (backgroundTask.status === "complete" && backgroundTask.result) setResult(backgroundTask.result);
@@ -208,25 +207,6 @@ export function TestGenerator() {
     } catch (e) {
       setDownloadError(e instanceof Error ? e.message : "Download failed");
     } finally {
-      setDownloading(null);
-    }
-  }
-
-  async function handleSolutions(test: GeneratedTestMeta) {
-    setDownloadError(null);
-    const key = `${test.test_id}:solutions`;
-    setGeneratingSolutions(test.test_id);
-    setDownloading(key);
-    try {
-      if (!test.solutions_available) {
-        await api.generateTestSolutions(test.test_id);
-        qc.invalidateQueries({ queryKey: ["tests", courseId] });
-      }
-      await downloadTestFile(test.test_id, "solutions", test.format);
-    } catch (e) {
-      setDownloadError(e instanceof Error ? e.message : "Could not generate solutions");
-    } finally {
-      setGeneratingSolutions(null);
       setDownloading(null);
     }
   }
@@ -607,19 +587,6 @@ export function TestGenerator() {
                       </Meta>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        disabled={!!downloading || generatingSolutions === t.test_id}
-                        onClick={() => handleSolutions(t)}
-                      >
-                        <Download />
-                        {generatingSolutions === t.test_id
-                          ? "Generating…"
-                          : t.solutions_available
-                            ? "Download solutions"
-                            : "Generate solutions"}
-                      </Button>
                       <Button size="icon" variant="ghost" title="Preview" onClick={() => setResult(t)}>
                         <Eye />
                       </Button>

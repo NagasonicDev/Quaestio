@@ -78,10 +78,18 @@ export async function ensureAssetUrl(assetId: string): Promise<string> {
 
 /** Register every asset referenced by a question tree (question + parts). */
 export async function registerQuestionAssets(question: Question): Promise<void> {
-  const ids = new Set(question.assets.map((a) => a.asset_id));
-  for (const part of question.parts) {
-    for (const a of part.assets) ids.add(a.asset_id);
-  }
+  const ids = new Set<string>();
+  const collect = (current: Question) => {
+    for (const asset of current.assets ?? []) ids.add(asset.asset_id);
+    for (const option of current.mcq_options ?? []) {
+      for (const block of option.content ?? []) {
+        const path = block.content?.asset_path;
+        if (typeof path === "string" && path) ids.add(path);
+      }
+    }
+    for (const part of current.parts ?? []) collect(part);
+  };
+  collect(question);
   for (const id of ids) await ensureAssetUrl(id);
 }
 

@@ -2,7 +2,10 @@ import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
 import { appendFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import type { Plugin } from 'vite'
+
+const repositoryRoot = fileURLToPath(new URL('..', import.meta.url))
 
 function requestLogging(): Plugin {
   return {
@@ -41,6 +44,10 @@ export default defineConfig({
   // GitHub Pages serves this repository at the case-sensitive project path.
   base: '/Quaestio/',
   plugins: [react(), requestLogging()],
+  server: {
+    // The course skill ZIP includes shared helper sources from ../scripts.
+    fs: { allow: [repositoryRoot] },
+  },
   build: {
     // The backend serves this build directly and already uses /assets/ for
     // uploaded question images/diagrams — rename Vite's own bundle output

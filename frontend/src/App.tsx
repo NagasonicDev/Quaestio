@@ -5,6 +5,7 @@ import { Layout } from "./components/Layout";
 import { Dashboard } from "./pages/Dashboard";
 import { Browser } from "./pages/Browser";
 import { Practice } from "./pages/Practice";
+import { Quiz } from "./pages/Quiz";
 import { TestGenerator } from "./pages/TestGenerator";
 import { QuestionDetail } from "./pages/QuestionDetail";
 import { Import } from "./pages/Import";
@@ -25,6 +26,7 @@ export default function App() {
               <Route index element={<Dashboard />} />
               <Route path="browse" element={<Browser />} />
               <Route path="practice" element={<Practice />} />
+              <Route path="quiz" element={<Quiz />} />
               <Route path="test-generator" element={<TestGenerator />} />
               <Route path="questions/:questionId" element={<QuestionDetail />} />
               <Route path="import" element={<Import />} />

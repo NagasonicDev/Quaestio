@@ -20,9 +20,19 @@ POST /api/v1/courses/{course_id}/import-json (see routers/import_pipeline.py).
 """
 import io
 import json
+from pathlib import Path
 import zipfile
 
 from . import schemas
+
+
+REPO_ROOT = Path(__file__).resolve().parents[2]
+COMMON_SKILL_DIR = REPO_ROOT / "scripts" / "question_import"
+COMMON_SCRIPTS_DIR = COMMON_SKILL_DIR
+
+
+def _common_workflow_markdown() -> str:
+    return (COMMON_SKILL_DIR / "WORKFLOW.md").read_text(encoding="utf-8")
 
 
 def _flatten_nodes(nodes: list[schemas.CourseNodeOut], path: list[str] | None = None) -> list[dict]:
@@ -92,6 +102,15 @@ will not resolve against another course's database.
 6. Produce a single JSON file (see "Output format") containing every
    extracted question. Do not import anything yourself — the person uploads
    this file into the app.
+7. Before delivery, run
+   `python scripts/repair_multipart_solutions.py import.json`. Review the
+   reported part assignments and use the generated `import-fixed.json`.
+   The repair checks every nesting level, distributes part-labelled parent
+   answers onto their parts, moves parent-level solution blocks onto matching
+   parts, and removes parent copies already represented on a part. Do not
+   leave answers or solutions on a multipart parent. For `.qbx`
+   bundles, run `scripts/audit_qbx.py` on the repaired copy; it rejects any
+   multipart parent that still contains an answer or solution.
 
 ## Marking guides — required, and never an exemplar
 
@@ -238,11 +257,12 @@ for upright SI units. Example choice: `"(A) $5.4\\times10^{14}\\,\\mathrm{Hz}$"`
   item to the corresponding part and split combined text at those labels;
   never leave a single labelled multi-part solution only in the parent's
   `solution` field. Use `answer` for the concise result or response and
-  `solution` for the reasoning, working, or explanation. Provide both for each
-  part when the source supplies them or the result can be worked out from the
-  question. Leave a field empty only when its content cannot be established;
-  do not fabricate a result. Keep marking guidance in that part's
-  `marking_criteria`.
+  `solution` for the reasoning, working, or explanation. Every leaf part must
+  have at least an `answer` or a `solution`, even when the parent has neither.
+  If the source omits them, derive the response from the prompt where possible;
+  if it cannot be established, flag the part as unresolved rather than silently
+  leaving it blank. Do not fabricate a result. Keep marking guidance in that
+  part's `marking_criteria`.
 - For multi-part `extended_response`, `short_response`, or `short_answer`
   questions, include an `answer_area` block at the end of each part's `body`
   so answer lines appear immediately after that part. Set `content.lines` to
@@ -268,6 +288,10 @@ for upright SI units. Example choice: `"(A) $5.4\\times10^{14}\\,\\mathrm{Hz}$"`
 ---
 
 {instructions_markdown}
+
+---
+
+{_common_workflow_markdown()}
 """
 
 
@@ -328,4 +352,6 @@ def build_skill_zip(config: schemas.CourseFullConfig, instructions_markdown: str
         zf.writestr("SKILL.md", skill_md)
         zf.writestr("import-schema.json", json.dumps(import_schema, indent=2))
         zf.writestr("course-config.json", json.dumps(course_config_json, indent=2))
+        for script_path in sorted(COMMON_SCRIPTS_DIR.glob("*.py")):
+            zf.write(script_path, f"scripts/{script_path.name}")
     return buf.getvalue()

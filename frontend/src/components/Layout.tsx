@@ -15,6 +15,7 @@ const NAV = [
   { to: "/", label: "Dashboard", end: true },
   { to: "/browse", label: "Question Bank" },
   { to: "/practice", label: "Practice" },
+  { to: "/quiz", label: "Quiz" },
   { to: "/test-generator", label: "Test Generator" },
   { to: "/import", label: "Import" },
   { to: "/course-settings", label: "Course Settings" },

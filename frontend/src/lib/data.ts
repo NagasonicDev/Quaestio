@@ -864,6 +864,13 @@ async function getOrCreateTag(courseId: string, name: string): Promise<string> {
   throw new Error(`Tag '${name}' is not in this course's allowed tag list. Update the list in Course Settings first.`);
 }
 
+export async function updateCourseName(courseId: string, name: string): Promise<void> {
+  const normalized = name.trim();
+  if (!normalized) throw new Error("Course name can't be empty.");
+  if (!(await courseRow(courseId))) throw new Error("Course not found.");
+  await run("UPDATE course SET name = ?, updated_at = ? WHERE course_id = ?", [normalized, nowUtc(), courseId]);
+}
+
 export async function updateCourseTags(courseId: string, names: string[]): Promise<void> {
   const normalized = Array.from(new Set(names.map((name) => name.trim()).filter(Boolean)));
   if (!normalized.includes("action_required")) normalized.unshift("action_required");
@@ -892,13 +899,23 @@ async function finalizeAssetsForStatements(
 ): Promise<void> {
   const summaries: SlotBlockSummary[] = [];
   for (const [sql, params] of statements) {
-    if (!sql.includes("INSERT INTO content_block")) continue;
-    summaries.push({
-      slot: String(params[2]),
-      position: Number(params[3]),
-      block_type: String(params[4]),
-      content_json: String(params[5]),
-    });
+    if (sql.includes("INSERT INTO content_block")) {
+      summaries.push({
+        slot: String(params[2]),
+        position: Number(params[3]),
+        block_type: String(params[4]),
+        content_json: String(params[5]),
+      });
+    } else if (sql.includes("INSERT INTO mcq_option")) {
+      let blocks: any[] = [];
+      try { blocks = JSON.parse(String(params[3])); } catch { /* Ignore malformed option content. */ }
+      for (const block of blocks) summaries.push({
+        slot: "body",
+        position: Number(params[2]),
+        block_type: String(block.block_type ?? ""),
+        content_json: JSON.stringify(block.content ?? {}),
+      });
+    }
   }
   await finalizeQuestionAssets(questionId, summaries);
 }
@@ -1061,7 +1078,10 @@ export async function updateQuestion(
       "INSERT INTO mcq_option (option_id, question_id, position, content_json, is_correct) VALUES (?, ?, ?, ?, ?)",
       [newId("opt"), questionId, position, JSON.stringify(option.content ?? []), option.is_correct ? 1 : 0],
     ]));
-    if (options.length) await runMany(options);
+    if (options.length) {
+      await runMany(options);
+      await finalizeAssetsForStatements(questionId, options);
+    }
   }
   const statements: Array<[string, any[]]> = [];
   for (const slot of SLOTS) {

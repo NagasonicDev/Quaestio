@@ -13,6 +13,10 @@ const renderedEquations = new Map<string, Promise<RenderedEquation | null>>();
 const renderedEquationSizes = new Map<string, number>();
 const MAX_EQUATION_CACHE_ENTRIES = 64;
 const MAX_EQUATION_CACHE_BYTES = 24 * 1024 * 1024;
+// DOM-to-image can remain pending indefinitely in some browser/font states.
+// Equation rendering is optional in exports, so don't let it block the whole
+// document generation forever.
+const EQUATION_RENDER_TIMEOUT_MS = 15_000;
 let renderedEquationBytes = 0;
 
 function evictEquation(key: string): void {
@@ -51,7 +55,13 @@ export async function renderLatexPng(
     return cached;
   }
 
-  const render = renderLatexPngUncached(latex, display);
+  const render = new Promise<RenderedEquation | null>((resolve, reject) => {
+    const timeout = setTimeout(() => resolve(null), EQUATION_RENDER_TIMEOUT_MS);
+    renderLatexPngUncached(latex, display).then(
+      (result) => { clearTimeout(timeout); resolve(result); },
+      (error: unknown) => { clearTimeout(timeout); reject(error); },
+    );
+  });
   renderedEquations.set(cacheKey, render);
   void render.then((result) => {
     if (renderedEquations.get(cacheKey) !== render) return;

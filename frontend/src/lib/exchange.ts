@@ -1,4 +1,5 @@
 import JSZip from "jszip";
+import { questionImportScripts, questionImportWorkflow } from "./questionImportAssets";
 import * as idb from "./db/indexeddb";
 import { all, getFirst, run } from "./db/sqlite";
 import { newId, newQuestionId, nowUtc } from "./id";
@@ -307,8 +308,8 @@ on the source paper. When the source format includes \`source.institution\`,
 record only the institution's actual name (for example, \`Sydney Girls\`).
 Do not include a subject, course, exam type, year/grade, or difficulty/level
 descriptor in the institution field. Put those details in \`source.name\`
-instead: for example, interpret “Sydney Girls Physics Trial” as institution
-\`Sydney Girls\` and source name \`Physics Trial\`. Keep genuine words that
+instead: for example, interpret “Sydney Girls Term 2 Assessment” as institution
+\`Sydney Girls\` and source name \`Term 2 Assessment\`. Keep genuine words that
 are part of the institution's name, such as “High School”. If the institution
 cannot be identified separately with confidence, leave it null rather than
 guessing from the exam title.
@@ -370,7 +371,11 @@ the file as described in Image assets and import bundle),
 
 ---
 
-${instructionsMarkdown}`;
+${instructionsMarkdown}
+
+---
+
+${questionImportWorkflow}`;
 }
 
 export async function buildSkillBlob(
@@ -439,6 +444,7 @@ allow_multi_classification: config.allow_multi_classification,
   const zip = new JSZip();
   zip.file("SKILL.md", skillMd);
   zip.file("import-schema.json", JSON.stringify(importSchema, null, 2));
+  for (const [path, contents] of Object.entries(questionImportScripts)) zip.file(path, contents);
   return zip.generateAsync({ type: "blob" });
 }
 
@@ -504,6 +510,10 @@ export async function exportCourse(courseId: string, filters: CourseExportFilter
   const seen = new Set<string>();
   const collectIds = (q: Question) => {
     for (const a of q.assets) if (!seen.has(a.asset_id)) seen.add(a.asset_id);
+    for (const option of q.mcq_options ?? []) for (const block of option.content ?? []) {
+      const assetId = block.content?.asset_path;
+      if (typeof assetId === "string" && assetId) seen.add(assetId);
+    }
     for (const p of q.parts) collectIds(p);
   };
   for (const q of questions) collectIds(q);
@@ -538,6 +548,10 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
   const seen = new Set<string>();
   const collectIds = (q: Question) => {
     for (const a of q.assets) if (!seen.has(a.asset_id)) seen.add(a.asset_id);
+    for (const option of q.mcq_options ?? []) for (const block of option.content ?? []) {
+      const assetId = block.content?.asset_path;
+      if (typeof assetId === "string" && assetId) seen.add(assetId);
+    }
     for (const p of q.parts) collectIds(p);
   };
   for (const q of questions) collectIds(q);
@@ -710,9 +724,14 @@ async function insertQuestion(
     }
   }
   for (const [position, option] of (question.mcq_options ?? []).entries()) {
+    const content = (option.content ?? []).map((block) => {
+      if (!IMAGE_TYPES.has(block.block_type) || typeof block.content?.asset_path !== "string") return block;
+      const mapped = ctx.assetMap.get(block.content.asset_path);
+      return mapped ? { ...block, content: { ...block.content, asset_path: mapped } } : block;
+    });
     await run(
       "INSERT INTO mcq_option (option_id, question_id, position, content_json, is_correct) VALUES (?, ?, ?, ?, ?)",
-      [newId("opt"), questionId, position, JSON.stringify(option.content ?? []), option.is_correct ? 1 : 0]
+      [newId("opt"), questionId, position, JSON.stringify(content), option.is_correct ? 1 : 0]
     );
   }
   for (const a of question.assets ?? []) {
@@ -753,6 +772,12 @@ export async function applyCourseBundle(
       for (const asset of question.assets ?? []) bundleAssetIds.add(asset.asset_id);
       for (const slot of [question.body, question.answer, question.solution, question.marking_criteria]) {
         for (const block of slot ?? []) {
+          const assetPath = block.content?.asset_path;
+          if (typeof assetPath === "string" && assetPath) bundleAssetIds.add(assetPath);
+        }
+      }
+      for (const option of question.mcq_options ?? []) {
+        for (const block of option.content ?? []) {
           const assetPath = block.content?.asset_path;
           if (typeof assetPath === "string" && assetPath) bundleAssetIds.add(assetPath);
         }

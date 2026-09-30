@@ -26,6 +26,8 @@ export function CourseSettings() {
   const [actionError, setActionError] = useState<string | null>(null);
   const [deleting, setDeleting] = useState(false);
   const [exportMenuOpen, setExportMenuOpen] = useState(false);
+  const [deleteQuestionsOpen, setDeleteQuestionsOpen] = useState(false);
+  const [bulkDeleting, setBulkDeleting] = useState(false);
   const [exportFormat, setExportFormat] = useState<"course" | "questions">("course");
   const [exportTab, setExportTab] = useState<"type" | "difficulty" | "institution" | "tags">("type");
   const [exportTypes, setExportTypes] = useState<string[]>([]);
@@ -35,7 +37,7 @@ export function CourseSettings() {
   const { data: sourceOptions } = useQuery({
     queryKey: ["question-source-options", courseId],
     queryFn: () => api.questionSourceOptions(courseId!),
-    enabled: !!courseId && exportMenuOpen,
+    enabled: !!courseId && (exportMenuOpen || deleteQuestionsOpen),
   });
 
   if (!courseId || !config) {
@@ -65,6 +67,55 @@ export function CourseSettings() {
       setExportMenuOpen(false);
     } catch (e) {
       setActionError(e instanceof Error ? e.message : "Failed to export course");
+    }
+  };
+
+  const handleBulkDelete = async () => {
+    setActionError(null);
+    setBulkDeleting(true);
+    try {
+      const sourceFilters = exportInstitutions.flatMap((institution) => {
+        const option = sourceOptions?.institutions.find((item) => item.name === institution);
+        return option ? [{ institution, years: option.years }] : [];
+      });
+      const selectedTags = exportTags;
+      const tagsToQuery = selectedTags.length ? selectedTags : [undefined];
+      const ids = new Set<string>();
+      for (const tag of tagsToQuery) {
+        const first = await api.listQuestions(config.course_id, {
+          type: exportTypes.length ? exportTypes : undefined,
+          difficulty: exportDifficulties.length ? exportDifficulties : undefined,
+          source_filters: exportInstitutions.length ? sourceFilters : undefined,
+          tag,
+          page: 1,
+          page_size: 500,
+        });
+        first.items.forEach((item) => ids.add(item.question_id));
+        for (let page = 2; page <= Math.ceil(first.total / first.page_size); page++) {
+          const next = await api.listQuestions(config.course_id, {
+            type: exportTypes.length ? exportTypes : undefined,
+            difficulty: exportDifficulties.length ? exportDifficulties : undefined,
+            source_filters: exportInstitutions.length ? sourceFilters : undefined,
+            tag,
+            page,
+            page_size: first.page_size,
+          });
+          next.items.forEach((item) => ids.add(item.question_id));
+        }
+      }
+      if (!ids.size) {
+        setDeleteQuestionsOpen(false);
+        return;
+      }
+      if (!window.confirm(`Permanently delete ${ids.size} matching question${ids.size === 1 ? "" : "s"} and their related data? This can't be undone.`)) return;
+      for (const id of ids) await api.deleteQuestion(id);
+      setDeleteQuestionsOpen(false);
+      qc.invalidateQueries({ queryKey: ["questions", config.course_id] });
+      qc.invalidateQueries({ queryKey: ["question-counts", config.course_id] });
+    } catch (e) {
+      setActionError(e instanceof Error ? e.message : "Failed to delete questions");
+    } finally {
+      setBulkDeleting(false);
     }
   };
 
@@ -99,6 +150,10 @@ export function CourseSettings() {
             <Button variant="outline" onClick={() => { setExportFormat("questions"); setExportMenuOpen(true); }} title="Choose which questions to include in the editable question export.">
               <Download />
               Export questions
+            </Button>
+            <Button variant="destructive" onClick={() => setDeleteQuestionsOpen(true)} title="Choose which questions to delete.">
+              <Trash2 />
+              Delete questions
             </Button>
             <Button
               variant="outline"
@@ -159,6 +214,30 @@ export function CourseSettings() {
         </div>
       )}
 
+      {deleteQuestionsOpen && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          <div className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px]" onClick={() => !bulkDeleting && setDeleteQuestionsOpen(false)} />
+          <div className="relative flex min-h-full items-center justify-center p-4">
+            <section role="dialog" aria-modal="true" aria-label="Delete question options" className="panel flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden">
+              <header className="flex items-center justify-between border-b border-border px-5 py-4">
+                <div><h2 className="font-display text-lg font-semibold">Delete questions</h2><p className="text-xs text-muted-foreground">Choose matching questions to delete. Empty sections include all values.</p></div>
+                <Button size="icon" variant="ghost" aria-label="Close delete options" disabled={bulkDeleting} onClick={() => setDeleteQuestionsOpen(false)}><X /></Button>
+              </header>
+              <div className="min-h-0 flex-1 overflow-y-auto p-5 space-y-5">
+                <ExportOptionGroup title="Question type" values={config.question_types} selected={exportTypes} onChange={setExportTypes} />
+                <ExportOptionGroup title="Difficulty" values={config.difficulty_levels.map((d) => d.level)} selected={exportDifficulties} onChange={setExportDifficulties} labels={Object.fromEntries(config.difficulty_levels.map((d) => [d.level, d.label]))} />
+                <ExportOptionGroup title="Institution" values={(sourceOptions?.institutions ?? []).map((i) => i.name)} selected={exportInstitutions} onChange={setExportInstitutions} emptyLabel={sourceOptions ? "No institutions found." : "Loading institutions…"} />
+                <ExportOptionGroup title="Tags" values={config.tags} selected={exportTags} onChange={setExportTags} />
+              </div>
+              <footer className="flex justify-between gap-2 border-t border-border px-5 py-3">
+                <Button variant="outline" disabled={bulkDeleting} onClick={() => { setExportTypes([]); setExportDifficulties([]); setExportInstitutions([]); setExportTags([]); }}>Reset</Button>
+                <div className="flex gap-2"><Button variant="outline" disabled={bulkDeleting} onClick={() => setDeleteQuestionsOpen(false)}>Cancel</Button><Button variant="destructive" disabled={bulkDeleting || (exportInstitutions.length > 0 && !sourceOptions)} onClick={() => void handleBulkDelete()}><Trash2 />{bulkDeleting ? "Deleting…" : "Delete matching questions"}</Button></div>
+              </footer>
+            </section>
+          </div>
+        </div>
+      )}
+
       <Tabs value={tab} onValueChange={(v) => setTab(v as Tab)}>
         <TabsList className="mb-5">
           <TabsTrigger value="structure">Structure</TabsTrigger>
@@ -166,6 +245,7 @@ export function CourseSettings() {
           <TabsTrigger value="questions">Questions</TabsTrigger>
         </TabsList>
         <TabsContent value="structure" className="space-y-5">
+          <CourseNameSettings key={config.course_id} courseId={config.course_id} name={config.name} />
           <StructureEditor config={config} />
         </TabsContent>
         <TabsContent value="tags">
@@ -176,6 +256,46 @@ export function CourseSettings() {
         </TabsContent>
       </Tabs>
     </div>
+  );
+}
+
+function CourseNameSettings({ courseId, name }: { courseId: string; name: string }) {
+  const qc = useQueryClient();
+  const [draft, setDraft] = useState(name);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function save(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!draft.trim() || draft.trim() === name) return;
+    setSaving(true);
+    setError(null);
+    try {
+      await api.updateCourseName(courseId, draft);
+      await Promise.all([
+        qc.invalidateQueries({ queryKey: ["course", courseId] }),
+        qc.invalidateQueries({ queryKey: ["courses"] }),
+      ]);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Couldn't rename course");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  return (
+    <Panel>
+      <PanelHead title="Course name" note="Rename this course wherever it appears in Quaestio." />
+      <form onSubmit={(event) => void save(event)} className="flex flex-col gap-3 p-5 sm:flex-row sm:items-start">
+        <div className="min-w-0 flex-1">
+          <Input aria-label="Course name" value={draft} onChange={(event) => setDraft(event.target.value)} maxLength={200} />
+          {error && <p className="mt-2 text-sm text-destructive">{error}</p>}
+        </div>
+        <Button type="submit" disabled={saving || !draft.trim() || draft.trim() === name}>
+          {saving ? "Saving…" : "Save name"}
+        </Button>
+      </form>
+    </Panel>
   );
 }
 

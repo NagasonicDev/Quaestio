@@ -10,14 +10,24 @@ multiple-choice question answered). School trial papers need the relaxations:
 """
 
 import argparse
+import copy
+import difflib
 import io
 import json
 import pathlib
+import re
 import struct
 import sys
 import zipfile
 
-SCHEMA = pathlib.Path(".opencode/skills/physics-question-import/import-schema.json")
+HERE = pathlib.Path(__file__).resolve().parent
+SCHEMA = next(
+    path for path in (
+        HERE.parent / "import-schema.json",
+        HERE.parent / ".opencode" / "skills" / "physics-question-import" / "import-schema.json",
+        pathlib.Path(".opencode/skills/physics-question-import/import-schema.json"),
+    ) if path.exists()
+)
 EXPORT_KEYS = [
     "question_id", "course_id", "type_key", "difficulty", "marks",
     "parent_question_id", "part_label", "notes", "review_status",
@@ -85,6 +95,166 @@ def check_criteria(q, errs, where):
             errs.append(f"{where}: criterion without a mark allocation: {item[:60]!r}")
 
 
+def plain(block):
+    """Extract searchable text from a content block."""
+    content = block.get("content", {}) if isinstance(block, dict) else {}
+    if not isinstance(content, dict):
+        return ""
+    return " ".join(str(content.get(k, "")) for k in ("text", "latex", "code"))
+
+
+def norm(text):
+    return re.sub(r"[^a-z0-9]+", " ", text.lower()).strip()
+
+
+def check_multipart_solutions(payload, errs, fix=False):
+    """Move clear parent-level solution duplicates onto parts; report ambiguity.
+
+    In --fix mode, exact matches and clearly unique text matches are relocated
+    directly. Remaining worked steps are placed by their best text match while
+    preserving source order between already identified parts.
+    """
+    changes = []
+
+    def visit(q, where):
+        parts = q.get("parts") or []
+        if parts:
+            parent_solution = q.get("solution") or []
+            remaining = []
+            remaining_indices = []
+            anchors = {}
+            for block_index, block in enumerate(parent_solution):
+                text = norm(plain(block))
+                if not text:
+                    remaining.append(block)
+                    remaining_indices.append(block_index)
+                    continue
+                exact_solution = []
+                exact_answer = []
+                scored_parts = []
+                for part in parts:
+                    sol_text = norm(" ".join(plain(b) for b in part.get("solution", []) or []))
+                    ans_text = norm(" ".join(plain(b) for b in part.get("answer", []) or []))
+                    if text and sol_text and text in sol_text or sol_text and sol_text in text:
+                        exact_solution.append(part)
+                    elif text and ans_text and (text in ans_text or ans_text in text):
+                        exact_answer.append(part)
+                    else:
+                        target_text = norm(" ".join(
+                            plain(b) for field in ("body", "answer", "solution")
+                            for b in part.get(field, []) or []
+                        ))
+                        source_words = set(re.findall(r"[a-z]{4,}", text))
+                        target_words = set(re.findall(r"[a-z]{4,}", target_text))
+                        overlap = len(source_words & target_words) / max(1, len(source_words))
+                        sequence = difflib.SequenceMatcher(None, text, target_text).ratio()
+                        scored_parts.append((max(overlap, sequence), part))
+
+                if len(exact_solution) == 1:
+                    target = exact_solution[0]
+                    if fix:
+                        anchors[block_index] = parts.index(target)
+                        changes.append(f"{where}: removed duplicated parent solution block (already on part {target.get('part_label')})")
+                        continue
+                    remaining.append(block)
+                    remaining_indices.append(block_index)
+                    continue
+                if len(exact_answer) == 1 and not exact_answer[0].get("solution"):
+                    if fix:
+                        target = exact_answer[0]
+                        anchors[block_index] = parts.index(target)
+                        moved = copy.deepcopy(block)
+                        moved["slot"] = "solution"
+                        moved["position"] = len(target.get("solution") or [])
+                        target.setdefault("solution", []).append(moved)
+                        changes.append(f"{where}: moved parent solution block to part {target.get('part_label')} (matches its answer)")
+                        continue
+                if scored_parts:
+                    scored_parts.sort(key=lambda item: item[0], reverse=True)
+                    best_score, target = scored_parts[0]
+                    next_score = scored_parts[1][0] if len(scored_parts) > 1 else 0
+                    if best_score >= 0.22 and best_score - next_score >= 0.05:
+                        if fix:
+                            anchors[block_index] = parts.index(target)
+                            moved = copy.deepcopy(block)
+                            moved["slot"] = "solution"
+                            moved["position"] = len(target.get("solution") or [])
+                            target.setdefault("solution", []).append(moved)
+                            changes.append(f"{where}: moved parent solution block to best-matching part {target.get('part_label')} (text match {best_score:.2f})")
+                            continue
+                remaining.append(block)
+                remaining_indices.append(block_index)
+
+            # When some blocks are clear matches and others are bare working
+            # steps, retain their original sequence and fit the remaining
+            # blocks between those known part locations. Text overlap breaks
+            # ties; the original part order is the final tie-breaker.
+            if fix and remaining and anchors:
+                keep_blocks = []
+                keep_indices = []
+                for block_index, block in zip(remaining_indices, remaining):
+                    previous = [(i, part_i) for i, part_i in anchors.items() if i < block_index]
+                    following = [(i, part_i) for i, part_i in anchors.items() if i > block_index]
+                    previous_anchor = max(previous, default=None)
+                    next_anchor = min(following, default=None)
+                    lower = previous_anchor[1] if previous_anchor else 0
+                    upper = next_anchor[1] if next_anchor else len(parts) - 1
+                    source_text = norm(plain(block))
+                    source_words = set(re.findall(r"[a-z]{4,}", source_text))
+                    choices = []
+                    for part_i in range(lower, upper + 1):
+                        part = parts[part_i]
+                        target_text = norm(" ".join(
+                            plain(b) for field in ("body", "answer", "solution")
+                            for b in part.get(field, []) or []
+                        ))
+                        target_words = set(re.findall(r"[a-z]{4,}", target_text))
+                        overlap = len(source_words & target_words) / max(1, len(source_words))
+                        sequence = difflib.SequenceMatcher(None, source_text, target_text).ratio()
+                        source_math = set(re.findall(r"\\[A-Za-z]+|[A-Z](?:_[A-Za-z0-9]+)?", plain(block)))
+                        target_math = set(re.findall(r"\\[A-Za-z]+|[A-Z](?:_[A-Za-z0-9]+)?", " ".join(
+                            plain(b) for field in ("body", "answer", "solution")
+                            for b in part.get(field, []) or []
+                        )))
+                        math_match = len(source_math & target_math) / max(1, len(source_math))
+                        choices.append((max(overlap, sequence, math_match), part_i))
+                    if choices:
+                        best_score = max(score for score, _ in choices)
+                        expected = min(len(parts) - 1, block_index * len(parts) // max(1, len(parent_solution)))
+                        tied = [part_i for score, part_i in choices if best_score - score < 0.05]
+                        if previous_anchor is None and next_anchor is not None:
+                            target_i = expected
+                        elif (previous_anchor and next_anchor
+                              and previous_anchor[1] != next_anchor[1]):
+                            target_i = tied[0]
+                        elif previous_anchor and next_anchor:
+                            target_i = previous_anchor[1]
+                        else:
+                            target_i = expected if expected in tied else tied[0]
+                        target = parts[target_i]
+                        moved = copy.deepcopy(block)
+                        moved["slot"] = "solution"
+                        moved["position"] = len(target.get("solution") or [])
+                        target.setdefault("solution", []).append(moved)
+                        anchors[block_index] = target_i
+                        changes.append(f"{where}: placed remaining solution block on part {target.get('part_label')} using text match and source order")
+                    else:
+                        keep_blocks.append(block)
+                        keep_indices.append(block_index)
+                remaining, remaining_indices = keep_blocks, keep_indices
+
+            if fix:
+                q["solution"] = remaining
+            if remaining:
+                errs.append(f"{where}: {len(remaining)} parent-level solution block(s) remain; assign them to the correct part(s) before importing")
+            for part in parts:
+                visit(part, where + "/" + str(part.get("part_label")))
+
+    for question in payload.get("questions", []):
+        visit(question, "Q" + str(question.get("source", {}).get("original_question_no")))
+    return changes
+
+
 WARN = []
 
 
@@ -100,6 +270,8 @@ def main():
     ap.add_argument("--course-id", default=None,
                     help="expected course_id (default: the schema's, but a "
                          "mismatch is only a warning because ids are regenerated)")
+    ap.add_argument("--fix", action="store_true",
+                    help="write a repaired sibling .qbx, relocating clearly matched multipart solutions")
     a = ap.parse_args()
 
     qbx = pathlib.Path(a.qbx)
@@ -115,8 +287,10 @@ def main():
         names = z.namelist()
         if "questions.json" not in names:
             print("FAIL: no questions.json in bundle")
-            return
+            return 1
         payload = json.loads(z.read("questions.json").decode("utf-8"))
+
+        repairs = check_multipart_solutions(payload, errs, fix=a.fix)
 
         if payload.get("export_schema_version") != 1:
             errs.append("export_schema_version != 1")
@@ -283,6 +457,16 @@ def main():
         if orphan:
             errs.append(f"PNG files in ZIP never referenced: {sorted(orphan)}")
 
+    if a.fix:
+        fixed_path = qbx.with_name(qbx.stem + "-fixed" + qbx.suffix)
+        with zipfile.ZipFile(qbx, "r") as source_zip, zipfile.ZipFile(fixed_path, "w") as fixed_zip:
+            for info in source_zip.infolist():
+                data = (json.dumps(payload, ensure_ascii=False, indent=2).encode("utf-8")
+                        if info.filename == "questions.json" else source_zip.read(info.filename))
+                fixed_zip.writestr(info, data)
+        print(f"Repaired copy: {fixed_path}")
+        for repair in repairs:
+            print("  repaired: " + repair)
     print(f"{qbx.name}: {len(payload['questions'])} questions, "
           f"{len(referenced)} assets, {total} marks")
     for w in WARN:
@@ -293,7 +477,8 @@ def main():
             print("  " + e)
     else:
         print("--- VALID ---")
+    return 1 if errs else 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
