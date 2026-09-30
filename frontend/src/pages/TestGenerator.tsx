@@ -8,6 +8,7 @@ import { flattenCounts } from "../components/NodeTree";
 import { Field, InkLoader, LoadingState, Meta, MiniRows, PageHeader, Panel, PanelHead } from "../components/system";
 import { FilterMenu } from "../components/FilterMenu";
 import { Button } from "../components/ui/button";
+import { useConfirm } from "../components/ui/modal";
 import { downloadTestFile, ensureTestFileUrl } from "../lib/tests";
 import { Input } from "../components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
@@ -46,6 +47,7 @@ export function TestGenerator() {
   const { courseId } = useActiveCourse();
   const { data: config } = useCourseConfig(courseId);
   const qc = useQueryClient();
+  const confirm = useConfirm();
   const backgroundTask = useTestGenerationTask();
   const taskRunning = backgroundTask?.status === "running";
   const nextId = useRef(2);
@@ -344,7 +346,13 @@ export function TestGenerator() {
   }
 
   async function handleDeleteTest(testId: string) {
-    if (!window.confirm("Delete this generated test and its files? This can't be undone.")) return;
+    const ok = await confirm({
+      title: "Delete this generated test?",
+      description: "The test and any files generated from it are removed. This can't be undone.",
+      confirmLabel: "Delete test",
+      destructive: true,
+    });
+    if (!ok) return;
     await api.deleteTest(testId);
     if (result?.test_id === testId) setResult(null);
     qc.invalidateQueries({ queryKey: ["tests", courseId] });

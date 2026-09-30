@@ -10,17 +10,21 @@ import { QuestionEditor } from "../components/QuestionEditor";
 import { PageHeader, Panel, PanelHead, Meta, Pagination } from "../components/system";
 import { Button } from "../components/ui/button";
 import { ToggleButton } from "../components/FilterMenu";
+import { Modal, useConfirm } from "../components/ui/modal";
 import { Input } from "../components/ui/input";
+import { Switch } from "../components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
 import type { Question } from "../api/types";
-import { Download, Plus, Pencil, Trash2, ExternalLink, X, Shapes, Gauge, School, Tags } from "lucide-react";
+import { Download, Plus, Pencil, Trash2, ExternalLink, ListChecks, Shapes, Gauge, School, Tags } from "lucide-react";
 
 type Tab = "structure" | "tags" | "questions";
+type ExportTab = "type" | "difficulty" | "institution" | "tags" | "scope";
 const PAGE_SIZE = 20;
 
 export function CourseSettings() {
   const { courseId, setCourseId } = useActiveCourse();
   const qc = useQueryClient();
+  const confirm = useConfirm();
   const { data: config } = useCourseConfig(courseId);
   const [tab, setTab] = useState<Tab>("structure");
   const [actionError, setActionError] = useState<string | null>(null);
@@ -29,11 +33,13 @@ export function CourseSettings() {
   const [deleteQuestionsOpen, setDeleteQuestionsOpen] = useState(false);
   const [bulkDeleting, setBulkDeleting] = useState(false);
   const [exportFormat, setExportFormat] = useState<"course" | "questions">("course");
-  const [exportTab, setExportTab] = useState<"type" | "difficulty" | "institution" | "tags">("type");
+  const [exportTab, setExportTab] = useState<ExportTab>("type");
   const [exportTypes, setExportTypes] = useState<string[]>([]);
   const [exportDifficulties, setExportDifficulties] = useState<number[]>([]);
   const [exportInstitutions, setExportInstitutions] = useState<string[]>([]);
   const [exportTags, setExportTags] = useState<string[]>([]);
+  const [exportLearning, setExportLearning] = useState(true);
+  const [exportResponses, setExportResponses] = useState(false);
   const { data: sourceOptions } = useQuery({
     queryKey: ["question-source-options", courseId],
     queryFn: () => api.questionSourceOptions(courseId!),
@@ -63,7 +69,11 @@ export function CourseSettings() {
         tags: exportTags,
       };
       if (exportFormat === "questions") await api.exportQuestions(config.course_id, filters);
-      else await api.exportCourse(config.course_id, filters);
+      else
+        await api.exportCourse(config.course_id, filters, {
+          includeLearningData: exportLearning,
+          includeResponseText: exportResponses,
+        });
       setExportMenuOpen(false);
     } catch (e) {
       setActionError(e instanceof Error ? e.message : "Failed to export course");
@@ -107,7 +117,13 @@ export function CourseSettings() {
         setDeleteQuestionsOpen(false);
         return;
       }
-      if (!window.confirm(`Permanently delete ${ids.size} matching question${ids.size === 1 ? "" : "s"} and their related data? This can't be undone.`)) return;
+      const ok = await confirm({
+        title: "Delete these questions?",
+        description: `This permanently deletes ${ids.size} matching question${ids.size === 1 ? "" : "s"}, including any practice history and review schedule for them. It can't be undone.`,
+        confirmLabel: `Delete ${ids.size} question${ids.size === 1 ? "" : "s"}`,
+        destructive: true,
+      });
+      if (!ok) return;
       for (const id of ids) await api.deleteQuestion(id);
       setDeleteQuestionsOpen(false);
       qc.invalidateQueries({ queryKey: ["questions", config.course_id] });
@@ -120,7 +136,13 @@ export function CourseSettings() {
   };
 
   const handleDeleteCourse = async () => {
-    if (!window.confirm(`Delete “${config.name}” and all its questions, history, settings, and generated tests? This cannot be undone.`)) return;
+    const ok = await confirm({
+      title: "Delete this course?",
+      description: `“${config.name}” and all of its questions, images, practice history, review schedule, settings and generated tests will be permanently deleted. This cannot be undone. Export a backup first if you may want any of it later.`,
+      confirmLabel: "Delete course",
+      destructive: true,
+    });
+    if (!ok) return;
     setActionError(null);
     setDeleting(true);
     try {
@@ -174,69 +196,66 @@ export function CourseSettings() {
         <p className="mb-4 text-sm text-destructive">{actionError}</p>
       )}
 
-      {exportMenuOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto">
-          <div className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px]" onClick={() => setExportMenuOpen(false)} />
-          <div className="relative flex min-h-full items-center justify-center p-4">
-            <section role="dialog" aria-modal="true" aria-label="Export options" className="panel flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden">
-              <header className="flex items-center justify-between border-b border-border px-5 py-4">
-                <div><h2 className="font-display text-lg font-semibold">{exportFormat === "course" ? "Export course" : "Export questions"}</h2><p className="text-xs text-muted-foreground">Choose which questions to include. Empty sections include all values.</p></div>
-                <Button size="icon" variant="ghost" aria-label="Close export options" onClick={() => setExportMenuOpen(false)}><X /></Button>
-              </header>
-              <div className="flex min-h-0 flex-1 flex-col sm:flex-row">
-                <nav aria-label="Export sections" className="shrink-0 border-b border-border p-2 sm:w-48 sm:border-b-0 sm:border-r sm:p-3">
-                  <div className="flex flex-row gap-1 sm:flex-col">
-                    {([
-                      ["type", "Question type", Shapes],
-                      ["difficulty", "Difficulty", Gauge],
-                      ["institution", "Institution", School],
-                      ["tags", "Tags", Tags],
-                    ] as const).map(([key, label, Icon]) => (
-                      <button key={key} type="button" onClick={() => setExportTab(key)} aria-current={exportTab === key ? "page" : undefined} className={`flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm font-medium transition ${exportTab === key ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-surface hover:text-foreground"}`}>
-                        <Icon className="size-4 shrink-0" aria-hidden /><span className="min-w-0 flex-1">{label}</span>
-                      </button>
-                    ))}
-                  </div>
-                </nav>
-                <div className="min-h-0 flex-1 overflow-y-auto p-5">
-                  {exportTab === "type" && <ExportOptionGroup title="Question type" values={config.question_types} selected={exportTypes} onChange={setExportTypes} />}
-                  {exportTab === "difficulty" && <ExportOptionGroup title="Difficulty" values={config.difficulty_levels.map((d) => d.level)} selected={exportDifficulties} onChange={setExportDifficulties} labels={Object.fromEntries(config.difficulty_levels.map((d) => [d.level, d.label]))} />}
-                  {exportTab === "institution" && <ExportOptionGroup title="Institution" values={(sourceOptions?.institutions ?? []).map((i) => i.name)} selected={exportInstitutions} onChange={setExportInstitutions} emptyLabel={sourceOptions ? "No institutions found." : "Loading institutions…"} />}
-                  {exportTab === "tags" && <ExportOptionGroup title="Tags" values={config.tags} selected={exportTags} onChange={setExportTags} />}
-                </div>
-              </div>
-              <footer className="flex justify-end gap-2 border-t border-border px-5 py-3">
-                <Button variant="outline" onClick={() => { setExportTypes([]); setExportDifficulties([]); setExportInstitutions([]); setExportTags([]); }}>Reset</Button>
-                <Button onClick={() => void handleExport()}><Download />{exportFormat === "course" ? "Export .qb" : "Export questions"}</Button>
-              </footer>
-            </section>
+      <Modal
+        open={exportMenuOpen}
+        onClose={() => setExportMenuOpen(false)}
+        label="Export options"
+        header={exportFormat === "course" ? "Export course" : "Export questions"}
+        headerNote="Choose which questions to include. Empty sections include all values."
+        footer={
+          <>
+            <Button variant="outline" onClick={() => { setExportTypes([]); setExportDifficulties([]); setExportInstitutions([]); setExportTags([]); }}>Reset</Button>
+            <Button className="ml-auto" onClick={() => void handleExport()}><Download />{exportFormat === "course" ? "Export .qb" : "Export questions"}</Button>
+          </>
+        }
+      >
+        <div className="flex min-h-0 flex-1 flex-col sm:flex-row">
+          <nav aria-label="Export sections" className="shrink-0 border-b border-border p-2 sm:w-48 sm:border-b-0 sm:border-r sm:p-3">
+            <div className="flex flex-row gap-1 sm:flex-col">
+              {([
+                ["type", "Question type", Shapes],
+                ["difficulty", "Difficulty", Gauge],
+                ["institution", "Institution", School],
+                ["tags", "Tags", Tags],
+                ["scope", "What's included", ListChecks],
+              ] as const).map(([key, label, Icon]) => (
+                <button key={key} type="button" onClick={() => setExportTab(key)} aria-current={exportTab === key ? "page" : undefined} className={`flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm font-medium transition ${exportTab === key ? "bg-primary text-primary-foreground" : "text-muted-foreground hover:bg-surface hover:text-foreground"}`}>
+                  <Icon className="size-4 shrink-0" aria-hidden /><span className="min-w-0 flex-1">{label}</span>
+                </button>
+              ))}
+            </div>
+          </nav>
+          <div className="min-h-0 flex-1 overflow-y-auto p-5">
+            {exportTab === "type" && <ExportOptionGroup title="Question type" values={config.question_types} selected={exportTypes} onChange={setExportTypes} />}
+            {exportTab === "difficulty" && <ExportOptionGroup title="Difficulty" values={config.difficulty_levels.map((d) => d.level)} selected={exportDifficulties} onChange={setExportDifficulties} labels={Object.fromEntries(config.difficulty_levels.map((d) => [d.level, d.label]))} />}
+            {exportTab === "institution" && <ExportOptionGroup title="Institution" values={(sourceOptions?.institutions ?? []).map((i) => i.name)} selected={exportInstitutions} onChange={setExportInstitutions} emptyLabel={sourceOptions ? "No institutions found." : "Loading institutions…"} />}
+            {exportTab === "tags" && <ExportOptionGroup title="Tags" values={config.tags} selected={exportTags} onChange={setExportTags} />}
+            {exportTab === "scope" && <ExportScope includeLearning={exportLearning} onIncludeLearningChange={setExportLearning} includeResponses={exportResponses} onIncludeResponsesChange={setExportResponses} />}
           </div>
         </div>
-      )}
+      </Modal>
 
-      {deleteQuestionsOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto">
-          <div className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px]" onClick={() => !bulkDeleting && setDeleteQuestionsOpen(false)} />
-          <div className="relative flex min-h-full items-center justify-center p-4">
-            <section role="dialog" aria-modal="true" aria-label="Delete question options" className="panel flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden">
-              <header className="flex items-center justify-between border-b border-border px-5 py-4">
-                <div><h2 className="font-display text-lg font-semibold">Delete questions</h2><p className="text-xs text-muted-foreground">Choose matching questions to delete. Empty sections include all values.</p></div>
-                <Button size="icon" variant="ghost" aria-label="Close delete options" disabled={bulkDeleting} onClick={() => setDeleteQuestionsOpen(false)}><X /></Button>
-              </header>
-              <div className="min-h-0 flex-1 overflow-y-auto p-5 space-y-5">
-                <ExportOptionGroup title="Question type" values={config.question_types} selected={exportTypes} onChange={setExportTypes} />
-                <ExportOptionGroup title="Difficulty" values={config.difficulty_levels.map((d) => d.level)} selected={exportDifficulties} onChange={setExportDifficulties} labels={Object.fromEntries(config.difficulty_levels.map((d) => [d.level, d.label]))} />
-                <ExportOptionGroup title="Institution" values={(sourceOptions?.institutions ?? []).map((i) => i.name)} selected={exportInstitutions} onChange={setExportInstitutions} emptyLabel={sourceOptions ? "No institutions found." : "Loading institutions…"} />
-                <ExportOptionGroup title="Tags" values={config.tags} selected={exportTags} onChange={setExportTags} />
-              </div>
-              <footer className="flex justify-between gap-2 border-t border-border px-5 py-3">
-                <Button variant="outline" disabled={bulkDeleting} onClick={() => { setExportTypes([]); setExportDifficulties([]); setExportInstitutions([]); setExportTags([]); }}>Reset</Button>
-                <div className="flex gap-2"><Button variant="outline" disabled={bulkDeleting} onClick={() => setDeleteQuestionsOpen(false)}>Cancel</Button><Button variant="destructive" disabled={bulkDeleting || (exportInstitutions.length > 0 && !sourceOptions)} onClick={() => void handleBulkDelete()}><Trash2 />{bulkDeleting ? "Deleting…" : "Delete matching questions"}</Button></div>
-              </footer>
-            </section>
-          </div>
+      <Modal
+        open={deleteQuestionsOpen}
+        onClose={() => setDeleteQuestionsOpen(false)}
+        onCloseDisabled={bulkDeleting}
+        label="Delete question options"
+        header="Delete questions"
+        headerNote="Choose matching questions to delete. Empty sections include all values."
+        footer={
+          <>
+            <Button variant="outline" disabled={bulkDeleting} onClick={() => { setExportTypes([]); setExportDifficulties([]); setExportInstitutions([]); setExportTags([]); }}>Reset</Button>
+            <div className="ml-auto flex gap-2"><Button variant="outline" disabled={bulkDeleting} onClick={() => setDeleteQuestionsOpen(false)}>Cancel</Button><Button variant="destructive" disabled={bulkDeleting || (exportInstitutions.length > 0 && !sourceOptions)} onClick={() => void handleBulkDelete()}><Trash2 />{bulkDeleting ? "Deleting…" : "Delete matching questions"}</Button></div>
+          </>
+        }
+      >
+        <div className="min-h-0 flex-1 space-y-5 overflow-y-auto p-5">
+          <ExportOptionGroup title="Question type" values={config.question_types} selected={exportTypes} onChange={setExportTypes} />
+          <ExportOptionGroup title="Difficulty" values={config.difficulty_levels.map((d) => d.level)} selected={exportDifficulties} onChange={setExportDifficulties} labels={Object.fromEntries(config.difficulty_levels.map((d) => [d.level, d.label]))} />
+          <ExportOptionGroup title="Institution" values={(sourceOptions?.institutions ?? []).map((i) => i.name)} selected={exportInstitutions} onChange={setExportInstitutions} emptyLabel={sourceOptions ? "No institutions found." : "Loading institutions…"} />
+          <ExportOptionGroup title="Tags" values={config.tags} selected={exportTags} onChange={setExportTags} />
         </div>
-      )}
+      </Modal>
 
       <Tabs value={tab} onValueChange={(v) => setTab(v as Tab)}>
         <TabsList className="mb-5">
@@ -255,6 +274,62 @@ export function CourseSettings() {
           <QuestionManager config={config} />
         </TabsContent>
       </Tabs>
+    </div>
+  );
+}
+
+function ExportScope({
+  includeLearning,
+  onIncludeLearningChange,
+  includeResponses,
+  onIncludeResponsesChange,
+}: {
+  includeLearning: boolean;
+  onIncludeLearningChange: (value: boolean) => void;
+  includeResponses: boolean;
+  onIncludeResponsesChange: (value: boolean) => void;
+}) {
+  return (
+    <div className="space-y-4">
+      <p className="label mb-1">Always included in a .qb export</p>
+      <ul className="space-y-1.5 text-sm text-muted-foreground">
+        <li>• Course structure, hierarchy levels, difficulty levels and allowed tags</li>
+        <li>• Every question matching your filters, with answers, marking guides and hints</li>
+        <li>• Images and diagrams used by those questions</li>
+      </ul>
+      <p className="label mb-1">Not included</p>
+      <ul className="space-y-1.5 text-sm text-muted-foreground">
+        <li>• Generated tests and their files — regenerate them from the questions</li>
+        <li>• Your review intervals and queue settings, which are preferences on this device</li>
+      </ul>
+      <div className="space-y-3 border-t border-border pt-4">
+        <label className="flex items-start gap-2.5">
+          <Switch checked={includeLearning} onCheckedChange={onIncludeLearningChange} />
+          <span className="min-w-0">
+            <span className="block text-sm font-medium">Include practice history</span>
+            <span className="mt-0.5 block text-xs text-muted-foreground">
+              The review schedule for each question and every practice attempt: when it was
+              seen, whether you attempted or reviewed it, how you rated it, and how long it took.
+              Without this, an imported course starts with an empty schedule.
+            </span>
+          </span>
+        </label>
+        <label className="flex items-start gap-2.5">
+          <Switch
+            checked={includeResponses}
+            disabled={!includeLearning}
+            onCheckedChange={onIncludeResponsesChange}
+          />
+          <span className="min-w-0">
+            <span className="block text-sm font-medium">Include answers you typed</span>
+            <span className="mt-0.5 block text-xs text-muted-foreground">
+              {includeLearning
+                ? "The free-text responses you wrote while practising. Leave this off to share a backup without your written work."
+                : "Available once practice history is included."}
+            </span>
+          </span>
+        </label>
+      </div>
     </div>
   );
 }
@@ -362,9 +437,11 @@ function CourseTagSettings({ courseId, tags }: { courseId: string; tags: string[
 
 function QuestionManager({ config }: { config: NonNullable<ReturnType<typeof useCourseConfig>["data"]> }) {
   const qc = useQueryClient();
+  const confirm = useConfirm();
   const [page, setPage] = useState(1);
   const [editorMode, setEditorMode] = useState<"closed" | "create" | "edit">("closed");
   const [editingQuestion, setEditingQuestion] = useState<Question | null>(null);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   const { data: results, isLoading } = useQuery({
     queryKey: ["questions", config.course_id, "manage", page],
@@ -383,11 +460,18 @@ function QuestionManager({ config }: { config: NonNullable<ReturnType<typeof use
   }
 
   async function handleDelete(questionId: string) {
-    if (!window.confirm("Delete this question permanently? This can't be undone.")) return;
+    const ok = await confirm({
+      title: "Delete this question?",
+      description:
+        "The question, its images, and any practice history and review schedule for it will be permanently deleted. This can't be undone.",
+      confirmLabel: "Delete question",
+      destructive: true,
+    });
+    if (!ok) return;
     try {
       await api.deleteQuestion(questionId);
     } catch (err) {
-      window.alert(`Couldn't delete this question.\n\n${err instanceof Error ? err.message : String(err)}`);
+      setDeleteError(err instanceof Error ? err.message : String(err));
       return;
     }
     refresh();
@@ -425,6 +509,7 @@ function QuestionManager({ config }: { config: NonNullable<ReturnType<typeof use
           </Button>
         }
       />
+      {deleteError && <p role="alert" className="px-5 pt-3 text-sm text-destructive">{deleteError}</p>}
       <div className="divide-y divide-border">
         {results?.items.map((item) => (
           <div key={item.question_id} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4">

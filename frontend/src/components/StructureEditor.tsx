@@ -6,6 +6,7 @@ import type { CourseFullConfig, CourseNode, LevelDef } from "../api/types";
 import { Panel, PanelHead } from "./system";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { useConfirm } from "./ui/modal";
 
 interface StructureEditorProps {
   config: CourseFullConfig;
@@ -102,6 +103,7 @@ export function StructureEditor({ config }: StructureEditorProps) {
 function LevelRow({
   courseId, level, onChanged, onError,
 }: { courseId: string; level: LevelDef; onChanged: () => void; onError: (e: string | null) => void }) {
+  const confirm = useConfirm();
   const [label, setLabel] = useState(level.label);
   const [saving, setSaving] = useState(false);
 
@@ -118,7 +120,14 @@ function LevelRow({
 
   async function remove() {
     onError(null);
-    if (!window.confirm(`Delete the "${level.label}" level? This only works if no categories use it yet.`)) return;
+    const ok = await confirm({
+      title: `Delete the “${level.label}” level?`,
+      description:
+        "This only works if no categories use the level yet. Categories below it must be moved or deleted first.",
+      confirmLabel: "Delete level",
+      destructive: true,
+    });
+    if (!ok) return;
     try {
       await api.deleteLevel(courseId, level.level_index);
       onChanged();
@@ -161,6 +170,7 @@ function NodeEditRow({
   node: CourseNode; siblings: CourseNode[]; hierarchy: LevelDef[]; courseId: string;
   onChanged: () => void; depth?: number;
 }) {
+  const confirm = useConfirm();
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(node.name);
   const [code, setCode] = useState(node.code ?? "");
@@ -175,10 +185,16 @@ function NodeEditRow({
 
   async function remove() {
     const childCount = node.children.length;
-    const msg = childCount > 0
-      ? `Delete "${node.name}" and its ${childCount} sub-${hierarchy[node.level_index + 1]?.label.toLowerCase() ?? "item"}(s)? Questions keep their other classifications and are never deleted.`
-      : `Delete "${node.name}"? Any questions classified here keep their other classifications and are never deleted.`;
-    if (!window.confirm(msg)) return;
+    const ok = await confirm({
+      title: `Delete “${node.name}”?`,
+      description:
+        childCount > 0
+          ? `It has ${childCount} sub-${hierarchy[node.level_index + 1]?.label.toLowerCase() ?? "item"}(s), which are removed too. Questions keep their other classifications and are never deleted.`
+          : "Questions classified here keep their other classifications and are never deleted.",
+      confirmLabel: "Delete",
+      destructive: true,
+    });
+    if (!ok) return;
     await api.deleteNode(courseId, node.node_id);
     onChanged();
   }
