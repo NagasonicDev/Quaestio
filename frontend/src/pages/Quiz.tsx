@@ -16,7 +16,8 @@ import { useCourseConfig } from "../hooks/useCourseConfig";
 import { useQuestionFilterCounts } from "../hooks/useQuestionFilterCounts";
 import { effectiveNodeFilterIds } from "../lib/nodeFilters";
 
-type QuizResult = { question: Question; earned: number; possible: number; elapsed: number };
+type ScoredBy = "objective" | "self" | "skipped";
+type QuizResult = { question: Question; earned: number; possible: number; elapsed: number; scoredBy: ScoredBy };
 type Phase = "setup" | "loading" | "run" | "done";
 
 export function Quiz() {
@@ -84,6 +85,16 @@ export function Quiz() {
   const fullMarkCount = results.filter((result) => result.possible > 0 && result.earned >= result.possible).length;
   const noMarkCount = results.filter((result) => result.earned === 0).length;
   const partialMarkCount = results.length - fullMarkCount - noMarkCount;
+  const objectiveCount = results.filter((result) => result.scoredBy === "objective").length;
+  const selfMarkedCount = results.filter((result) => result.scoredBy === "self").length;
+  const skippedCount = results.filter((result) => result.scoredBy === "skipped").length;
+  const objectiveEarned = results.reduce((sum, result) => (result.scoredBy === "objective" ? sum + result.earned : sum), 0);
+  const objectivePossible = results.reduce((sum, result) => (result.scoredBy === "objective" ? sum + result.possible : sum), 0);
+  const scoreNote = selfMarkedCount > 0
+    ? `includes ${selfMarkedCount} self-marked`
+    : objectiveCount > 0
+      ? "all marked by the app"
+      : "nothing marked yet";
 
   useEffect(() => {
     if (phase !== "run" || revealed || !current) return;
@@ -159,10 +170,17 @@ export function Quiz() {
       const correct = selectedChoice === correctLabel;
       const possible = current.marks ?? 1;
       setResults((previous) => [...previous.filter((item) => item.question.question_id !== current.question_id), {
-        question: current, earned: correct ? possible : 0, possible, elapsed,
+        question: current, earned: correct ? possible : 0, possible, elapsed, scoredBy: "objective",
       }]);
       setRevealed(true);
-      api.recordAttempt({ question_id: current.question_id, status: "completed", correct, time_spent_sec: elapsed }).catch(() => {});
+      api.recordAttempt({
+        question_id: current.question_id,
+        status: "attempted",
+        scored_by: "objective",
+        correct,
+        response_text: answerDraft || null,
+        time_spent_sec: elapsed,
+      }).catch(() => {});
     } else {
       if (!answerDraft.trim()) return;
       setRevealed(true);
@@ -174,17 +192,24 @@ export function Quiz() {
     const possible = current.marks ?? 0;
     const earned = Math.max(0, Math.min(possible, Number(marksDraft) || 0));
     setResults((previous) => [...previous.filter((item) => item.question.question_id !== current.question_id), {
-      question: current, earned, possible, elapsed,
+      question: current, earned, possible, elapsed, scoredBy: "self",
     }]);
-    api.recordAttempt({ question_id: current.question_id, status: "completed", correct: possible > 0 && earned >= possible, time_spent_sec: elapsed, user_notes: answerDraft }).catch(() => {});
+    api.recordAttempt({
+      question_id: current.question_id,
+      status: "attempted",
+      scored_by: "self",
+      score_earned: earned,
+      score_possible: possible,
+      user_notes: answerDraft,
+      time_spent_sec: elapsed,
+    }).catch(() => {});
   }
 
   function advance() {
     if (!current) return;
     if (!results.some((item) => item.question.question_id === current.question_id)) {
-      const result = { question: current, earned: 0, possible: current.marks ?? 0, elapsed };
+      const result = { question: current, earned: 0, possible: current.marks ?? 0, elapsed, scoredBy: "skipped" as const };
       setResults((previous) => [...previous, result]);
-      api.recordAttempt({ question_id: current.question_id, status: "completed", correct: false, time_spent_sec: elapsed }).catch(() => {});
     }
     if (index + 1 >= deck.length) {
       setPhase("done");
@@ -244,13 +269,13 @@ export function Quiz() {
         <div className="mb-2 flex justify-between font-mono text-[11px] text-muted-foreground"><span>{phase === "done" ? "Complete" : `Question ${index + 1} of ${deck.length}`}</span><span>{earnedTotal} / {possibleTotal} marks</span></div>
         <div className="flex gap-1" aria-label="Quiz progress">{deck.map((question, i) => {
           const result = results.find((item) => item.question.question_id === question.question_id);
-          const resultColor = result
-            ? result.earned === 0
+          const resultColor = result?.scoredBy === "skipped" || !result
+            ? i === index && phase === "run" ? "bg-primary/40" : "bg-secondary"
+            : result.earned === 0
               ? "bg-destructive"
               : result.earned >= result.possible && result.possible > 0
                 ? "bg-success"
-                : "bg-accent-foreground"
-            : i === index && phase === "run" ? "bg-primary/40" : "bg-secondary";
+                : "bg-accent-foreground";
           return <div key={question.question_id} className={`h-1.5 flex-1 rounded-full ${resultColor}`} />;
         })}</div>
       </Panel>}
@@ -269,7 +294,7 @@ export function Quiz() {
           {revealed && current.type_key !== "multiple_choice" && <div className="flex flex-wrap items-end gap-3 rounded-md border border-border bg-surface/50 p-3">
             <label className="block w-36"><span className="label mb-1.5 block">Marks awarded</span><Input type="number" min={0} max={maxMarks || undefined} step="0.5" value={marksDraft} onChange={(event) => setMarksDraft(event.target.value)} placeholder={`0–${maxMarks}`} aria-label="Marks awarded" /></label>
             <Button size="sm" onClick={saveMark} disabled={marksDraft === ""}>Save score</Button>
-            <span className="pb-2 text-xs text-muted-foreground">Compare your work with the guide above, then enter your score.</span>
+            <span className="pb-2 text-xs text-muted-foreground">Compare your work with the guide above, then enter your score. This mark is self-marked, so it is kept separate from app-marked multiple choice.</span>
           </div>}
           <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border pt-4">
             <span className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground"><Clock3 className="size-3.5" />{revealed ? "Time taken" : "Elapsed"} {formatDuration(elapsedSeconds)}</span>
@@ -289,14 +314,14 @@ export function Quiz() {
             <h2 className="font-display text-4xl font-light leading-tight tracking-tight sm:text-5xl">Quiz complete</h2>
           </div>
           <div className="sm:text-right">
-            <p className="label mb-1">Final score</p>
+            <p className="label mb-1">Final score{selfMarkedCount > 0 ? " · partly self-marked" : ""}</p>
             <p className="font-display text-6xl font-semibold leading-none text-primary">{earnedTotal}<span className="text-2xl font-normal text-muted-foreground/60"> / {possibleTotal} marks</span></p>
           </div>
         </header>
         <div className="grid grid-cols-2 border-b border-border sm:grid-cols-4">
           <QuizStat label="Avg time / Q">{formatDuration(Math.round(totalElapsed / Math.max(results.length, 1)))}</QuizStat>
           <QuizStat label="Total duration" className="border-l border-border">{formatDuration(totalElapsed)}</QuizStat>
-          <QuizStat label="Accuracy" className="border-l border-border max-sm:border-t" valueClass="text-primary">{possibleTotal ? Math.round(earnedTotal / possibleTotal * 100) : 0}%</QuizStat>
+          <QuizStat label="Marks" className="border-l border-border max-sm:border-t" valueClass="text-primary" note={scoreNote}>{possibleTotal ? Math.round(earnedTotal / possibleTotal * 100) : 0}%</QuizStat>
           <div className="border-l border-border px-5 py-5 max-sm:border-t sm:px-6">
             <p className="label mb-1">Marked</p>
             <p className="flex flex-wrap gap-x-3 gap-y-1 font-mono text-sm leading-6">
@@ -304,16 +329,39 @@ export function Quiz() {
               {partialMarkCount > 0 && <span className="text-accent-foreground">{partialMarkCount} partial</span>}
               <span className="text-muted-foreground">{noMarkCount} no marks</span>
             </p>
+            <p className="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+              {objectiveCount} app-marked · {selfMarkedCount} self-marked · {skippedCount} skipped
+            </p>
+            {selfMarkedCount > 0 && objectivePossible > 0 && (
+              <p className="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+                app-marked only: {objectiveEarned} / {objectivePossible}
+              </p>
+            )}
           </div>
         </div>
         <ol className="divide-y divide-border">{deck.map((question, i) => {
           const result = results.find((item) => item.question.question_id === question.question_id);
-          const status = result && result.possible > 0 && result.earned >= result.possible ? "full" : result?.earned ? "partial" : "no marks";
+          const status = !result || result.scoredBy === "skipped"
+            ? "skipped"
+            : result.possible > 0 && result.earned >= result.possible
+              ? "full"
+              : result.earned
+                ? "partial"
+                : "no marks";
+          const statusClass = status === "full"
+            ? "border-success/30 bg-success/10 text-success"
+            : status === "no marks"
+              ? "border-border bg-secondary text-muted-foreground"
+              : status === "skipped"
+                ? "border-border bg-transparent text-muted-foreground/70"
+                : "border-accent-foreground/30 bg-accent-foreground/10 text-accent-foreground";
           return <li key={question.question_id} className="grid grid-cols-[32px_minmax(0,1fr)_auto] items-start gap-3 px-5 py-4 transition-colors hover:bg-secondary/40 sm:px-6">
             <span className="pt-0.5 font-mono text-xs text-muted-foreground/70">{String(i + 1).padStart(2, "0")}</span>
             <div className="min-w-0">
               <div className="mb-1 flex flex-wrap items-center gap-2.5">
-                <span className={`rounded-sm border px-2 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider ${status === "full" ? "border-success/30 bg-success/10 text-success" : status === "no marks" ? "border-border bg-secondary text-muted-foreground" : "border-accent-foreground/30 bg-accent-foreground/10 text-accent-foreground"}`}>{status}</span>
+                <span className={`rounded-sm border px-2 py-0.5 font-mono text-[10px] font-semibold uppercase tracking-wider ${statusClass}`}>{status}</span>
+                {result?.scoredBy === "self" && <span className="rounded-sm border border-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">self-marked</span>}
+                {result?.scoredBy === "objective" && <span className="rounded-sm border border-border px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">app-marked</span>}
                 <span className="font-mono text-[10px] uppercase text-muted-foreground">{question.difficulty != null && `Difficulty ${question.difficulty} · `}{question.type_key.replaceAll("_", " ")}</span>
               </div>
               <p className="text-sm leading-snug"><Link to={`/questions/${question.question_id}`} className="font-mono text-primary underline-offset-4 hover:underline" title="Open this question">{question.question_id}</Link><span className="text-muted-foreground"> · {result?.possible ?? question.marks ?? 0} marks available</span></p>
@@ -330,8 +378,12 @@ export function Quiz() {
   );
 }
 
-function QuizStat({ label, children, className, valueClass }: { label: string; children: import("react").ReactNode; className?: string; valueClass?: string }) {
-  return <div className={`px-5 py-5 sm:px-6 ${className ?? ""}`}><p className="label mb-1">{label}</p><p className={`text-xl font-medium ${valueClass ?? ""}`}>{children}</p></div>;
+function QuizStat({ label, children, className, valueClass, note }: { label: string; children: import("react").ReactNode; className?: string; valueClass?: string; note?: string }) {
+  return <div className={`px-5 py-5 sm:px-6 ${className ?? ""}`}>
+    <p className="label mb-1">{label}</p>
+    <p className={`text-xl font-medium ${valueClass ?? ""}`}>{children}</p>
+    {note && <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">{note}</p>}
+  </div>;
 }
 
 function formatDuration(totalSeconds: number): string {

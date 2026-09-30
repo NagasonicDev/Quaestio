@@ -12,6 +12,7 @@ import { Input } from "./ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Switch } from "./ui/switch";
 import { Checkbox } from "./ui/checkbox";
+import { Modal, useConfirm } from "./ui/modal";
 
 interface EditableOption {
   blocks: EditableBlock[];
@@ -71,6 +72,7 @@ interface QuestionEditorProps {
 export function QuestionEditor({ config, existing, onSaved, onCancel }: QuestionEditorProps) {
   const navigate = useNavigate();
   const location = useLocation();
+  const confirm = useConfirm();
   const [typeKey, setTypeKey] = useState(existing?.type_key ?? config.question_types[0] ?? "short_answer");
   const [difficulty, setDifficulty] = useState<number | null>(existing?.difficulty ?? null);
   const [marks, setMarks] = useState<string>(existing?.marks?.toString() ?? "");
@@ -86,6 +88,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     existing ? toEditable(existing.body) : [emptyBlock("text")]
   );
   const [answer, setAnswer] = useState<EditableBlock[]>(existing ? toEditable(existing.answer) : []);
+  const [hint, setHint] = useState<EditableBlock[]>(existing ? toEditable(existing.hint) : []);
   const [solution, setSolution] = useState<EditableBlock[]>(existing ? toEditable(existing.solution) : []);
   const [markingCriteria, setMarkingCriteria] = useState<EditableBlock[]>(
     existing ? toEditable(existing.marking_criteria) : []
@@ -186,6 +189,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
         node_ids: Array.from(nodeIds),
         tag_names: tags,
         body: blocksToPayload(body),
+        hint: blocksToPayload(hint),
         answer: blocksToPayload(answer),
         solution: blocksToPayload(solution),
         marking_criteria: blocksToPayload(markingCriteria),
@@ -231,7 +235,15 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   }
 
   async function handleDelete() {
-    if (!existing || !window.confirm("Delete this question permanently? This can't be undone.")) return;
+    if (!existing) return;
+    const ok = await confirm({
+      title: "Delete this question?",
+      description:
+        "The question, its images, and any practice history and review schedule for it are permanently deleted. This can't be undone.",
+      confirmLabel: "Delete question",
+      destructive: true,
+    });
+    if (!ok) return;
     setSaving(true);
     setError(null);
     try {
@@ -321,6 +333,12 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
             </Panel>
 
             <BlockEditor label="Question body" blocks={body} onChange={setBody} />
+            <BlockEditor
+              label="Hint (optional)"
+              blocks={hint}
+              onChange={setHint}
+              note="Shown during practice one step at a time, before the marking guide. Keep it answer-free."
+            />
             <BlockEditor label="Answer" blocks={answer} onChange={setAnswer} />
             <BlockEditor label="Solution / working" blocks={solution} onChange={setSolution} />
             <BlockEditor label="Marking criteria" blocks={markingCriteria} onChange={setMarkingCriteria} />
@@ -447,23 +465,31 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
         </div>
       )}
       {showLeavePrompt && (
-        <div className="fixed inset-0 z-[60] grid place-items-center bg-black/50 p-4" role="presentation">
-          <div role="alertdialog" aria-modal="true" aria-labelledby="unsaved-title" aria-describedby="unsaved-description" className="w-full max-w-md rounded-lg border border-border bg-surface p-5 shadow-xl">
-            <h2 id="unsaved-title" className="font-display text-lg font-semibold">Unsaved changes</h2>
-            <p id="unsaved-description" className="mt-2 text-sm text-muted-foreground">Would you like to save your changes before leaving?</p>
-            <div className="mt-5 flex flex-wrap justify-end gap-2">
-              <Button type="button" variant="ghost" onClick={() => { pendingNavigation.current = null; setShowLeavePrompt(false); }}>Cancel</Button>
-              <Button type="button" variant="outline" onClick={() => {
+        <Modal
+          open
+          role="alertdialog"
+          onClose={() => {
+            pendingNavigation.current = null;
+            setShowLeavePrompt(false);
+          }}
+          label="Unsaved changes"
+          className="max-w-md"
+          header="Unsaved changes"
+          description="Would you like to save your changes before leaving?"
+          footer={
+            <>
+              <Button variant="ghost" onClick={() => { pendingNavigation.current = null; setShowLeavePrompt(false); }}>Cancel</Button>
+              <Button variant="outline" onClick={() => {
                 const leave = pendingNavigation.current;
                 pendingNavigation.current = null;
                 setHasUnsavedChanges(false);
                 setShowLeavePrompt(false);
                 leave?.();
               }}>Discard changes</Button>
-              <Button type="button" disabled={saving} onClick={() => { setShowLeavePrompt(false); formRef.current?.requestSubmit(); }}>Save and leave</Button>
-            </div>
-          </div>
-        </div>
+              <Button className="ml-auto" disabled={saving} onClick={() => { setShowLeavePrompt(false); formRef.current?.requestSubmit(); }}>Save and leave</Button>
+            </>
+          }
+        />
       )}
     </form>
   );

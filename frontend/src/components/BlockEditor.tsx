@@ -75,9 +75,10 @@ interface BlockEditorProps {
   label: string;
   blocks: EditableBlock[];
   onChange: (blocks: EditableBlock[]) => void;
+  note?: string;
 }
 
-export function BlockEditor({ label, blocks, onChange }: BlockEditorProps) {
+export function BlockEditor({ label, blocks, onChange, note }: BlockEditorProps) {
   const [addType, setAddType] = useState<BlockType>("text");
 
   function update(tempId: string, content: Record<string, any>) {
@@ -128,6 +129,7 @@ export function BlockEditor({ label, blocks, onChange }: BlockEditorProps) {
     <Panel>
       <PanelHead
         title={label}
+        note={note}
       />
       <div className="p-4">
         {blocks.length === 0 && (

@@ -104,7 +104,7 @@ function Block({ block }: { block: ContentBlock }) {
   }
 }
 
-function BlockList({ blocks, interactiveChoices, selectedChoice, onSelectChoice, submitted, correctChoice }: {
+export function BlockList({ blocks, interactiveChoices, selectedChoice, onSelectChoice, submitted, correctChoice }: {
   blocks: ContentBlock[];
   interactiveChoices?: boolean;
   selectedChoice?: string | null;
@@ -332,7 +332,7 @@ function extractCriteriaRow(item: string): { criteria: string; marks: string } {
   return { criteria: text, marks: "" };
 }
 
-function MarkingGuideTable({ blocks }: { blocks: ContentBlock[] }) {
+export function MarkingGuideTable({ blocks }: { blocks: ContentBlock[] }) {
   const rows: { criteria: string; marks: string }[] = [];
   const supplementary: ContentBlock[] = [];
   for (const b of blocks) {

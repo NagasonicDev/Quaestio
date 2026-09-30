@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useState } from "react";
-import { createPortal } from "react-dom";
+import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
-import { Check, FolderTree, Gauge, Settings2, Shapes, SlidersHorizontal, X, School, Tags } from "lucide-react";
+import { Check, FolderTree, Gauge, Settings2, Shapes, SlidersHorizontal, School, Tags } from "lucide-react";
 import { cn } from "../lib/utils";
 import { formatQuestionType } from "../lib/questionTypes";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Modal } from "./ui/modal";
 import { Switch } from "./ui/switch";
 import type { CourseNode, DifficultyLevel } from "../api/types";
 
@@ -158,15 +158,6 @@ export function FilterMenu({
     return list;
   }, [selectedNodes, difficulties, typeKeys, institutionYears, avoidRecent, tags, selectedTag]);
 
-  useEffect(() => {
-    if (!open) return;
-    function onKey(e: KeyboardEvent) {
-      if (e.key === "Escape") setOpen(false);
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [open]);
-
   function toggleNode(id: string) {
     const next = new Set(selectedNodes);
     if (next.has(id)) {
@@ -270,225 +261,198 @@ export function FilterMenu({
         )}
       </Button>
 
-      {open && createPortal((
-        <div className="fixed inset-0 z-50 overflow-y-auto">
-          <div
-            className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px] animate-in fade-in-0"
-            onClick={() => setOpen(false)}
-          />
-          <div className="relative flex min-h-full items-center justify-center p-4">
-            <div
-              role="dialog"
-              aria-modal="true"
-              aria-label="Filters"
-              className="panel flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200"
-            >
-              <header className="flex shrink-0 items-center justify-between gap-3 border-b border-border px-5 py-4">
-                <div className="min-w-0">
-                  <h2 className="font-display text-lg font-semibold">Filters</h2>
-                  {activeCount > 0 && (
-                    <p className="mt-0.5 text-xs text-muted-foreground">
-                      {activeCount} active filter{activeCount === 1 ? "" : "s"}
-                    </p>
-                  )}
-                </div>
-                <Button
-                  size="icon"
-                  variant="ghost"
-                  onClick={() => setOpen(false)}
-                  aria-label="Close filters"
-                  className="shrink-0"
-                >
-                  <X />
+      <Modal
+        open={open}
+        onClose={() => setOpen(false)}
+        label="Filters"
+        header="Filters"
+        headerNote={
+          activeCount > 0 ? `${activeCount} active filter${activeCount === 1 ? "" : "s"}` : undefined
+        }
+        footer={
+          <>
+            <div>
+              {onReset && activeCount > 0 && (
+                <Button size="sm" variant="outline" onClick={onReset}>
+                  Reset
                 </Button>
-              </header>
+              )}
+            </div>
+            <Button
+              onClick={
+                footerAction
+                  ? () => {
+                      setOpen(false);
+                      footerAction.onClick();
+                    }
+                  : () => setOpen(false)
+              }
+            >
+              {footerAction ? footerAction.label : "Done"}
+            </Button>
+          </>
+        }
+      >
+        <div className="flex min-h-0 flex-1 flex-col sm:flex-row">
+          <nav
+            aria-label="Filter sections"
+            className="shrink-0 border-b border-border p-2 sm:w-48 sm:border-b-0 sm:border-r sm:p-3"
+          >
+            <div className="flex flex-row gap-1 sm:flex-col">
+              {tabs.map((t) => {
+                const active = tab === t.key;
+                const Icon = t.icon;
+                return (
+                  <button
+                    key={t.key}
+                    type="button"
+                    onClick={() => setTab(t.key)}
+                    aria-current={active ? "page" : undefined}
+                    className={cn(
+                      "flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm font-medium transition",
+                      active
+                        ? "bg-primary text-primary-foreground"
+                        : "text-muted-foreground hover:bg-surface hover:text-foreground"
+                    )}
+                  >
+                    <Icon className="size-4 shrink-0" aria-hidden />
+                    <span className="min-w-0 flex-1">{t.label}</span>
+                    {t.badge != null && (
+                      <span
+                        className={cn(
+                          "font-mono text-[10px]",
+                          active ? "text-primary-foreground/80" : "text-muted-foreground"
+                        )}
+                      >
+                        {t.badge}
+                      </span>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </nav>
 
-              <div className="flex min-h-0 flex-1 flex-col sm:flex-row">
-                <nav
-                  aria-label="Filter sections"
-                  className="shrink-0 border-b border-border p-2 sm:w-48 sm:border-b-0 sm:border-r sm:p-3"
-                >
-                  <div className="flex flex-row gap-1 sm:flex-col">
-                    {tabs.map((t) => {
-                      const active = tab === t.key;
-                      const Icon = t.icon;
-                      return (
-                        <button
-                          key={t.key}
-                          type="button"
-                          onClick={() => setTab(t.key)}
-                          aria-current={active ? "page" : undefined}
-                          className={cn(
-                            "flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm font-medium transition",
-                            active
-                              ? "bg-primary text-primary-foreground"
-                              : "text-muted-foreground hover:bg-surface hover:text-foreground"
-                          )}
-                        >
-                          <Icon className="size-4 shrink-0" aria-hidden />
-                          <span className="min-w-0 flex-1">{t.label}</span>
-                          {t.badge != null && (
-                            <span
-                              className={cn(
-                                "font-mono text-[10px]",
-                                active ? "text-primary-foreground/80" : "text-muted-foreground"
-                              )}
-                            >
-                              {t.badge}
-                            </span>
-                          )}
-                        </button>
-                      );
-                    })}
+          <div className="min-h-0 flex-1 overflow-y-auto p-5">
+            {tab === "structure" && (
+              <div>
+                <p className="label mb-2">Course structure</p>
+                <p className="mb-3 text-xs text-muted-foreground">
+                  Toggle a module to reveal its contents — each level expands as you enable it.
+                  Enabling a branch includes everything beneath it.
+                </p>
+                {nodes.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No course structure yet.</p>
+                ) : (
+                  <div className="space-y-1.5">{nodes.map((n) => renderNode(n, 0))}</div>
+                )}
+              </div>
+            )}
+
+            {tab === "difficulty" && (
+              <div>
+                <p className="label mb-2">Difficulty</p>
+                <p className="mb-3 text-xs text-muted-foreground">
+                  Pick any number of difficulty levels — every selected level matches.
+                </p>
+                {difficultyLevels.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No difficulty levels defined.</p>
+                ) : (
+                  <div className="space-y-1.5">
+                    {difficultyLevels.map((d) => (
+                      <ToggleButton
+                        key={d.level}
+                        enabled={difficulties.includes(d.level)}
+                        onClick={() => toggleDifficulty(d.level)}
+                        right={
+                          difficultyCounts?.[String(d.level)] != null
+                            ? difficultyCounts[String(d.level)]
+                            : undefined
+                        }
+                      >
+                        {d.label}
+                      </ToggleButton>
+                    ))}
                   </div>
-                </nav>
+                )}
+              </div>
+            )}
 
-                <div className="min-h-0 flex-1 overflow-y-auto p-5">
-                  {tab === "structure" && (
-                    <div>
-                      <p className="label mb-2">Course structure</p>
-                      <p className="mb-3 text-xs text-muted-foreground">
-                        Toggle a module to reveal its contents — each level expands as you enable
-                        it. Enabling a branch includes everything beneath it.
-                      </p>
-                      {nodes.length === 0 ? (
-                        <p className="text-sm text-muted-foreground">No course structure yet.</p>
-                      ) : (
-                        <div className="space-y-1.5">{nodes.map((n) => renderNode(n, 0))}</div>
-                      )}
-                    </div>
-                  )}
+            {tab === "type" && (
+              <div>
+                <p className="label mb-2">Question type</p>
+                <p className="mb-3 text-xs text-muted-foreground">
+                  Pick any number of question types — every selected type matches.
+                </p>
+                {questionTypes.length === 0 ? (
+                  <p className="text-sm text-muted-foreground">No question types defined.</p>
+                ) : (
+                  <div className="space-y-1.5">
+                    {questionTypes.map((t) => (
+                      <ToggleButton
+                        key={t}
+                        enabled={typeKeys.includes(t)}
+                        onClick={() => toggleType(t)}
+                        right={typeCounts?.[t] != null ? typeCounts[t] : undefined}
+                      >
+                        {formatQuestionType(t)}
+                      </ToggleButton>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
 
-                  {tab === "difficulty" && (
-                    <div>
-                      <p className="label mb-2">Difficulty</p>
-                      <p className="mb-3 text-xs text-muted-foreground">
-                        Pick any number of difficulty levels — every selected level matches.
-                      </p>
-                      {difficultyLevels.length === 0 ? (
-                        <p className="text-sm text-muted-foreground">No difficulty levels defined.</p>
-                      ) : (
-                        <div className="space-y-1.5">
-                          {difficultyLevels.map((d) => (
-                            <ToggleButton
-                              key={d.level}
-                              enabled={difficulties.includes(d.level)}
-                              onClick={() => toggleDifficulty(d.level)}
-                              right={
-                                difficultyCounts?.[String(d.level)] != null
-                                  ? difficultyCounts[String(d.level)]
-                                  : undefined
-                              }
-                            >
-                              {d.label}
-                            </ToggleButton>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )}
+            {tab === "institution" && <div><p className="label mb-2">Institution & year</p><p className="mb-3 text-xs text-muted-foreground">Choose an institution to include all its tests, then expand it to narrow the selection to specific years.</p>{renderInstitutions()}</div>}
 
-                  {tab === "type" && (
-                    <div>
-                      <p className="label mb-2">Question type</p>
-                      <p className="mb-3 text-xs text-muted-foreground">
-                        Pick any number of question types — every selected type matches.
-                      </p>
-                      {questionTypes.length === 0 ? (
-                        <p className="text-sm text-muted-foreground">No question types defined.</p>
-                      ) : (
-                        <div className="space-y-1.5">
-                          {questionTypes.map((t) => (
-                            <ToggleButton
-                              key={t}
-                              enabled={typeKeys.includes(t)}
-                              onClick={() => toggleType(t)}
-                              right={
-                                typeCounts?.[t] != null ? typeCounts[t] : undefined
-                              }
-                            >
-                              {formatQuestionType(t)}
-                            </ToggleButton>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  )}
-
-                  {tab === "institution" && <div><p className="label mb-2">Institution & year</p><p className="mb-3 text-xs text-muted-foreground">Choose an institution to include all its tests, then expand it to narrow the selection to specific years.</p>{renderInstitutions()}</div>}
-
-                  {tab === "tags" && (
-                    <div>
-                      <p className="label mb-2">Tags</p>
-                      <p className="mb-3 text-xs text-muted-foreground">Choose a tag to show questions labeled with it.</p>
-                      <div className="space-y-1.5">
-                        <ToggleButton enabled={!selectedTag} onClick={() => onSelectedTagChange?.("")}>All tags</ToggleButton>
-                        {tags.map((tag) => <ToggleButton key={tag} enabled={selectedTag === tag} onClick={() => onSelectedTagChange?.(selectedTag === tag ? "" : tag)}>{tag}</ToggleButton>)}
-                      </div>
-                    </div>
-                  )}
-
-                  {tab === "options" && (
-                    <div>
-                      <p className="label mb-2">Practice options</p>
-                      <div className="flex items-start gap-2">
-                        <Switch
-                          checked={avoidRecentDays != null}
-                          onCheckedChange={(c) => onAvoidRecentChange?.(c ? 7 : null)}
-                        />
-                        <div className="min-w-0">
-                          <p className="text-sm font-medium">Avoid recently seen</p>
-                          <p className="mt-0.5 text-xs text-muted-foreground">
-                            Skip questions you've seen in the last few days.
-                          </p>
-                          <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
-                            <Input
-                              type="number"
-                              min={1}
-                              className="h-8 w-20"
-                              value={avoidRecentDays ?? 7}
-                              onChange={(e) => onAvoidRecentChange?.(Number(e.target.value))}
-                            />
-                            days
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  {hint && (
-                    <p className="mt-5 border-t border-border pt-4 text-xs text-muted-foreground">
-                      {hint}
-                    </p>
-                  )}
+            {tab === "tags" && (
+              <div>
+                <p className="label mb-2">Tags</p>
+                <p className="mb-3 text-xs text-muted-foreground">Choose a tag to show questions labeled with it.</p>
+                <div className="space-y-1.5">
+                  <ToggleButton enabled={!selectedTag} onClick={() => onSelectedTagChange?.("")}>All tags</ToggleButton>
+                  {tags.map((tag) => <ToggleButton key={tag} enabled={selectedTag === tag} onClick={() => onSelectedTagChange?.(selectedTag === tag ? "" : tag)}>{tag}</ToggleButton>)}
                 </div>
               </div>
+            )}
 
-              <footer className="flex shrink-0 items-center justify-between gap-3 border-t border-border px-5 py-3">
-                <div>
-                  {onReset && activeCount > 0 && (
-                    <Button size="sm" variant="outline" onClick={onReset}>
-                      Reset
-                    </Button>
-                  )}
+            {tab === "options" && (
+              <div>
+                <p className="label mb-2">Practice options</p>
+                <div className="flex items-start gap-2">
+                  <Switch
+                    checked={avoidRecentDays != null}
+                    onCheckedChange={(c) => onAvoidRecentChange?.(c ? 7 : null)}
+                  />
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium">Avoid recently seen</p>
+                    <p className="mt-0.5 text-xs text-muted-foreground">
+                      Skip questions you&rsquo;ve seen in the last few days. This is separate from
+                      what has already been offered in the current session.
+                    </p>
+                    <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
+                      <Input
+                        type="number"
+                        min={1}
+                        className="h-8 w-20"
+                        value={avoidRecentDays ?? 7}
+                        onChange={(e) => onAvoidRecentChange?.(Number(e.target.value))}
+                      />
+                      days
+                    </div>
+                  </div>
                 </div>
-                <Button
-                  onClick={
-                    footerAction
-                      ? () => {
-                          setOpen(false);
-                          footerAction.onClick();
-                        }
-                      : () => setOpen(false)
-                  }
-                >
-                  {footerAction ? footerAction.label : "Done"}
-                </Button>
-              </footer>
-            </div>
+              </div>
+            )}
+
+            {hint && (
+              <p className="mt-5 border-t border-border pt-4 text-xs text-muted-foreground">
+                {hint}
+              </p>
+            )}
           </div>
         </div>
-      ), document.body)}
+      </Modal>
     </>
   );
 }
