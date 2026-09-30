@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useIsFetching } from "@tanstack/react-query";
 import { Check, Menu, Moon, Sun, X } from "lucide-react";
@@ -6,20 +6,46 @@ import { cn } from "../lib/utils";
 import { useTheme } from "../hooks/useTheme";
 import { CourseSelector } from "./CourseSelector";
 import { RecentQuestionsSidebar } from "./RecentQuestionsSidebar";
+import { SaveFailureBanner, SaveStatusIndicator } from "./SaveStatus";
 import { Button } from "./ui/button";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { CourseOnboarding } from "./CourseOnboarding";
 import { dismissTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
 
-const NAV = [
-  { to: "/", label: "Dashboard", end: true },
-  { to: "/browse", label: "Question Bank" },
-  { to: "/practice", label: "Practice" },
-  { to: "/quiz", label: "Quiz" },
-  { to: "/test-generator", label: "Test Generator" },
-  { to: "/import", label: "Import" },
-  { to: "/course-settings", label: "Course Settings" },
-  { to: "/settings", label: "Settings" },
+type NavItem = { to: string; label: string; end?: boolean };
+
+/**
+ * Grouped so the nav says what the app is for rather than listing eight pages.
+ * Practice leads Study because practising is the thing a student came to do;
+ * everything else is a means to that.
+ */
+const NAV_GROUPS: Array<{ id: string; label: string; items: NavItem[] }> = [
+  {
+    id: "study",
+    label: "Study",
+    items: [
+      { to: "/", label: "Overview", end: true },
+      { to: "/practice", label: "Practice" },
+      { to: "/quiz", label: "Quiz" },
+      { to: "/test-generator", label: "Test Generator" },
+    ],
+  },
+  {
+    id: "bank",
+    label: "Question bank",
+    items: [
+      { to: "/browse", label: "Browse" },
+      { to: "/import", label: "Import" },
+    ],
+  },
+  {
+    id: "course",
+    label: "Course",
+    items: [
+      { to: "/course-settings", label: "Course settings" },
+      { to: "/settings", label: "Settings" },
+    ],
+  },
 ];
 
 const linkBase =
@@ -31,8 +57,33 @@ export function Layout() {
   const location = useLocation();
   const { theme, toggle } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement | null>(null);
+  const menuPanelRef = useRef<HTMLDivElement | null>(null);
   const isFetching = useIsFetching() > 0;
   const generationTask = useTestGenerationTask();
+
+  // The menu is a disclosure, so focus moves into it on open, Escape closes it,
+  // and focus returns to the control that opened it rather than being dropped
+  // somewhere at the top of the page.
+  useEffect(() => {
+    if (!mobileOpen) return;
+    menuPanelRef.current
+      ?.querySelector<HTMLElement>("a, button, input, select, textarea")
+      ?.focus();
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setMobileOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    }
+    document.addEventListener("keydown", onKeyDown);
+    return () => document.removeEventListener("keydown", onKeyDown);
+  }, [mobileOpen]);
+
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [location.pathname]);
+
   const generationProgress = generationTask
     ? generationTask.phase === "paper"
       ? 22 + (generationTask.questionCount ? generationTask.completedQuestions / generationTask.questionCount : 0) * 56
@@ -59,70 +110,92 @@ export function Layout() {
             Quaestio<span className="text-accent-foreground">.</span>
           </Link>
 
-          <div className="hidden xl:block">
+          <div className="hidden lg:block">
             <CourseSelector />
           </div>
 
-          <nav className="ml-auto hidden items-center gap-0.5 xl:flex">
-            {NAV.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                end={item.end}
-                className={({ isActive }) => cn(linkBase, isActive && linkActive)}
-              >
-                {item.label}
-              </NavLink>
+          <nav className="ml-auto hidden items-center gap-0.5 lg:flex" aria-label="Main">
+            {NAV_GROUPS.map((group) => (
+              <div key={group.id} className="flex items-center gap-0.5">
+                {group.items.map((item) => (
+                  <NavLink
+                    key={item.to}
+                    to={item.to}
+                    end={item.end}
+                    className={({ isActive }) => cn(linkBase, isActive && linkActive)}
+                  >
+                    {item.label}
+                  </NavLink>
+                ))}
+              </div>
             ))}
           </nav>
 
           <div className="ml-auto flex shrink-0 items-center gap-1.5">
+            <SaveStatusIndicator />
             <Button
               variant="outline"
               size="sm"
               className="bg-surface/60"
               onClick={toggle}
-              aria-label="Toggle theme"
+              aria-label={`Switch to ${theme === "light" ? "dark" : "light"} theme`}
             >
               {theme === "light" ? <Sun /> : <Moon />}
               <span className="hidden md:inline">{theme === "light" ? "Light" : "Dark"}</span>
             </Button>
             <Button
+              ref={menuButtonRef}
               variant="outline"
-              size="icon"
-              className="xl:hidden"
-              aria-label="Toggle menu"
+              size="sm"
+              className="lg:hidden"
+              aria-expanded={mobileOpen}
+              aria-controls="site-menu"
               onClick={() => setMobileOpen((o) => !o)}
             >
               {mobileOpen ? <X /> : <Menu />}
+              Menu
             </Button>
           </div>
         </div>
 
         {mobileOpen && (
-          <nav className="grid border-t border-border bg-background p-3 sm:grid-cols-3 xl:hidden">
-            <div className="col-span-full border-b border-border pb-3 xl:hidden">
+          <div id="site-menu" ref={menuPanelRef} className="border-t border-border bg-background p-3 lg:hidden">
+            <div className="mb-3 border-b border-border pb-3 lg:hidden">
               <CourseSelector inMenu />
             </div>
-            {NAV.map((item) => (
-              <NavLink
-                key={item.to}
-                to={item.to}
-                end={item.end}
-                onClick={() => setMobileOpen(false)}
-                className={({ isActive }) =>
-                  cn(
-                    "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-surface hover:text-foreground",
-                    isActive && "bg-secondary text-foreground"
-                  )
-                }
-              >
-                {item.label}
-              </NavLink>
-            ))}
-          </nav>
+            <nav aria-label="Main">
+              <ul className="space-y-3">
+                {NAV_GROUPS.map((group) => (
+                  <li key={group.id}>
+                    <p className="label mb-1 px-1">{group.label}</p>
+                    <ul className="grid gap-1 sm:grid-cols-2">
+                      {group.items.map((item) => (
+                        <li key={item.to}>
+                          <NavLink
+                            to={item.to}
+                            end={item.end}
+                            onClick={() => setMobileOpen(false)}
+                            className={({ isActive }) =>
+                              cn(
+                                "block rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition hover:bg-surface hover:text-foreground",
+                                isActive && "bg-secondary text-foreground"
+                              )
+                            }
+                          >
+                            {item.label}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
         )}
       </header>
+
+      <SaveFailureBanner />
 
       {generationTask && (
         <div className="sticky top-14 z-30 border-b border-border bg-surface/95 px-4 py-2.5 shadow-sm backdrop-blur sm:px-5" role="status" aria-live="polite">
@@ -161,10 +234,11 @@ export function Layout() {
         </div>
       )}
 
-      <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "md:grid-cols-[238px_minmax(0,1fr)]")}>
-        {courseId && <RecentQuestionsSidebar />}
+      <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "lg:grid-cols-[238px_minmax(0,1fr)]")}>
+        {courseId && <RecentQuestionsSidebar variant="rail" />}
         <main className="min-w-0">
           {!courseId && location.pathname !== "/" ? <CourseOnboarding /> : <Outlet />}
+          {courseId && <RecentQuestionsSidebar variant="inline" />}
         </main>
       </div>
     </div>

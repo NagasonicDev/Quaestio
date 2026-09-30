@@ -8,17 +8,21 @@ import { useCourseConfig } from "../hooks/useCourseConfig";
 import { PageHeader, Panel } from "../components/system";
 import { Switch } from "../components/ui/switch";
 import { Button } from "../components/ui/button";
+import { useConfirm } from "../components/ui/modal";
 import { clearAllData } from "../lib/db/sqlite";
 import { clearQuestions } from "../lib/data";
 import { api } from "../api/client";
 import { Input } from "../components/ui/input";
+import { StudySettings } from "../components/StudySettings";
 
 export function Settings() {
   const { theme, toggle } = useTheme();
   const { courseId, setCourseId } = useActiveCourse();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
+  const confirm = useConfirm();
   const { data: config } = useCourseConfig(courseId);
+  const [clearError, setClearError] = useState<string | null>(null);
 
   return (
     <div className="mx-auto max-w-2xl space-y-5">
@@ -39,6 +43,8 @@ export function Settings() {
           <Switch checked={theme === "dark"} onCheckedChange={() => toggle()} />
         </div>
       </Panel>
+
+      <StudySettings courseId={courseId} />
 
       <InstitutionManager courseId={courseId} />
 
@@ -73,9 +79,9 @@ export function Settings() {
       </Panel>
 
       <p className="text-xs text-muted-foreground">
-        More settings (default course, default difficulty, data directory, font size) land in a
-        later build stage — this app is entirely local, so there's nothing here that touches the
-        network.
+        Appearance, the review schedule, and what practice keeps are above. Nothing here talks to the
+        network — this app runs entirely in the browser, so there is no account to configure and no
+        sync to wait for.
       </p>
 
       <Panel>
@@ -91,12 +97,20 @@ export function Settings() {
             <Button
               variant="destructive"
               onClick={async () => {
-                if (!window.confirm("Delete all questions and related data? Course structure will be kept. This cannot be undone.")) return;
+                const ok = await confirm({
+                  title: "Clear all questions?",
+                  description:
+                    "Every question, image, practice history entry, review schedule and generated test for this course is deleted. Course structure and settings are kept. This cannot be undone.",
+                  confirmLabel: "Clear questions",
+                  destructive: true,
+                });
+                if (!ok) return;
+                setClearError(null);
                 try {
                   await clearQuestions();
                   window.location.reload();
                 } catch (err) {
-                  window.alert(`Couldn't clear questions.\n\n${err instanceof Error ? err.message : String(err)}`);
+                  setClearError(err instanceof Error ? err.message : String(err));
                 }
               }}
             >
@@ -115,14 +129,22 @@ export function Settings() {
             <Button
               variant="destructive"
               onClick={async () => {
-                if (!window.confirm("Delete EVERYTHING stored in this browser? This cannot be undone.")) return;
+                const ok = await confirm({
+                  title: "Delete everything on this device?",
+                  description:
+                    "All courses, structure, questions, images, practice history and settings stored by this browser are deleted. Nothing is recoverable afterwards. Export a backup first if you might want it.",
+                  confirmLabel: "Delete everything",
+                  destructive: true,
+                });
+                if (!ok) return;
+                setClearError(null);
                 try {
                   await clearAllData();
                   setCourseId(null);
                   queryClient.clear();
                   navigate("/");
                 } catch (err) {
-                  window.alert(`Couldn't clear everything.\n\n${err instanceof Error ? err.message : String(err)}`);
+                  setClearError(err instanceof Error ? err.message : String(err));
                 }
               }}
             >
@@ -131,6 +153,11 @@ export function Settings() {
             </Button>
           </div>
         </div>
+        {clearError && (
+          <p role="alert" className="border-t border-border px-5 py-3 text-sm text-destructive">
+            {clearError}
+          </p>
+        )}
       </Panel>
     </div>
   );

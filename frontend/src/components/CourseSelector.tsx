@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { Check, ChevronDown, Plus, Upload } from "lucide-react";
@@ -6,22 +6,30 @@ import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { CreateCourseForm } from "./CreateCourseForm";
 import { Button } from "./ui/button";
+import { useConfirm } from "./ui/modal";
 import { cn } from "../lib/utils";
 
 export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const { courseId, setCourseId } = useActiveCourse();
   const navigate = useNavigate();
+  const confirm = useConfirm();
   const [open, setOpen] = useState(false);
   const [creating, setCreating] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [importing, setImporting] = useState(false);
   const [importError, setImportError] = useState<string | null>(null);
   const [importNotice, setImportNotice] = useState<string | null>(null);
   const ref = useRef<HTMLDivElement>(null);
+  const triggerRef = useRef<HTMLButtonElement>(null);
+  const createFormRef = useRef<HTMLDivElement>(null);
+  const listboxId = `course-listbox-${useId()}`;
   const fileInputRef = useRef<HTMLInputElement>(null);
   const qc = useQueryClient();
 
   const { data: courses } = useQuery({ queryKey: ["courses"], queryFn: api.listCourses });
   const active = courses?.find((c) => c.course_id === courseId);
+  const list = courses ?? [];
+  const activeOptionId = open && !creating && list.length > 0 ? `${listboxId}-option-${activeIndex}` : undefined;
 
   function switchCourse(nextCourseId: string) {
     if (nextCourseId === courseId) return;
@@ -33,13 +41,34 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
     if (!courseId && courses && courses.length > 0) setCourseId(courses[0].course_id);
   }, [courses, courseId, setCourseId]);
 
+  // Pointer clicks outside dismiss; focus leaving the popup dismisses too, so
+  // tabbing away never leaves an orphaned popup behind.
   useEffect(() => {
-    function onClick(e: MouseEvent) {
+    if (!open) return;
+    function onPointerDown(e: MouseEvent) {
       if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
     }
-    document.addEventListener("mousedown", onClick);
-    return () => document.removeEventListener("mousedown", onClick);
-  }, []);
+    function onFocusOut(e: FocusEvent) {
+      const next = e.relatedTarget as Node | null;
+      if (ref.current && (!next || !ref.current.contains(next))) setOpen(false);
+    }
+    document.addEventListener("mousedown", onPointerDown);
+    document.addEventListener("focusout", onFocusOut);
+    return () => {
+      document.removeEventListener("mousedown", onPointerDown);
+      document.removeEventListener("focusout", onFocusOut);
+    };
+  }, [open]);
+
+  // The create form takes focus when it opens; the course list keeps focus on
+  // the trigger and moves a virtual cursor with aria-activedescendant instead.
+  useEffect(() => {
+    if (!open || !creating) return;
+    const first = createFormRef.current?.querySelector<HTMLElement>(
+      "input, button, select, textarea, [tabindex]:not([tabindex='-1'])"
+    );
+    first?.focus();
+  }, [open, creating]);
 
   useEffect(() => {
     if (!importNotice) return;
@@ -50,6 +79,59 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   function startCreate() {
     setCreating(true);
     setOpen(true);
+  }
+
+  function openMenu() {
+    const current = list.findIndex((c) => c.course_id === courseId);
+    setActiveIndex(current >= 0 ? current : 0);
+    setCreating(false);
+    setOpen(true);
+  }
+
+  function closeMenu() {
+    setOpen(false);
+    setCreating(false);
+    triggerRef.current?.focus();
+  }
+
+  /** Single place that decides what the arrow/enter keys mean. Focus never
+   * leaves the trigger while the list is open, so the cursor is virtual. */
+  function handleTriggerKeyDown(event: React.KeyboardEvent<HTMLButtonElement>) {
+    if (event.key === "Tab") {
+      setOpen(false);
+      return;
+    }
+    if (!open || creating) {
+      if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+        event.preventDefault();
+        const current = list.findIndex((c) => c.course_id === courseId);
+        setActiveIndex(event.key === "ArrowDown" ? Math.max(0, current) : Math.max(0, current));
+        setCreating(false);
+        setOpen(true);
+      }
+      return;
+    }
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      if (list.length > 0) setActiveIndex((index) => (index + 1) % list.length);
+    } else if (event.key === "ArrowUp") {
+      event.preventDefault();
+      if (list.length > 0) setActiveIndex((index) => (index - 1 + list.length) % list.length);
+    } else if (event.key === "Home") {
+      event.preventDefault();
+      setActiveIndex(0);
+    } else if (event.key === "End") {
+      event.preventDefault();
+      setActiveIndex(Math.max(0, list.length - 1));
+    } else if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      const course = list[activeIndex];
+      if (course) switchCourse(course.course_id);
+      setOpen(false);
+    } else if (event.key === "Escape") {
+      event.preventDefault();
+      closeMenu();
+    }
   }
 
   async function handleImportFiles(files: FileList | null) {
@@ -63,7 +145,18 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
     try {
       for (const file of selected) {
         try {
-          imported.push(await api.importCourseFile(file));
+          imported.push(
+            await api.importCourseFile(file, async (info) => {
+              const replace = await confirm({
+                title: "This course already exists here",
+                description: `“${info.course_name}” has the same course id as a course on this device. Replacing it deletes the existing questions, practice history and review schedule first. Choose “Add as new course” to keep both.`,
+                confirmLabel: "Replace the existing course",
+                cancelLabel: "Add as a new course",
+                destructive: true,
+              });
+              return replace ? "replace" : "new";
+            })
+          );
         } catch (e) {
           failures.push(`${file.name}: ${e instanceof Error ? e.message : "Failed to import course"}`);
         }
@@ -88,19 +181,30 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         "relative min-w-0 items-center gap-1.5",
         inMenu
           ? "flex flex-wrap"
-          : "hidden border-l border-border pl-4 xl:flex"
+          : "hidden border-l border-border pl-4 lg:flex"
       )}
       ref={ref}
     >
       <Button
+        ref={triggerRef}
         variant="outline"
         className="max-w-58 justify-between bg-surface/70"
         onClick={() => {
-          setCreating(false);
-          setOpen((o) => !o);
+          if (open) {
+            setOpen(false);
+            setCreating(false);
+          } else {
+            openMenu();
+          }
         }}
+        onKeyDown={handleTriggerKeyDown}
+        role="combobox"
         aria-haspopup="listbox"
-        aria-expanded={open}
+        aria-expanded={open && !creating}
+        aria-controls={listboxId}
+        aria-activedescendant={activeOptionId}
+        aria-autocomplete="none"
+        aria-label="Course"
       >
         <span className="flex min-w-0 items-center gap-1.5">
           <span className="size-2 shrink-0 rounded-full bg-primary" />
@@ -136,27 +240,33 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
       />
 
       {importError && (
-        <p className="absolute left-4 top-16 z-50 max-w-72 whitespace-pre-line rounded-lg border border-border bg-popover px-3 py-2 text-sm text-destructive shadow-xl">
+        <p role="alert" className="absolute left-4 top-16 z-50 max-w-72 whitespace-pre-line rounded-lg border border-border bg-popover px-3 py-2 text-sm text-destructive shadow-xl">
           {importError}
         </p>
       )}
       {importNotice && (
-        <p className="absolute left-4 top-16 z-50 max-w-72 rounded-lg border border-border bg-popover px-3 py-2 text-sm shadow-xl">
+        <p role="status" className="absolute left-4 top-16 z-50 max-w-72 rounded-lg border border-border bg-popover px-3 py-2 text-sm shadow-xl">
           {importNotice}
         </p>
       )}
 
       {open && !creating && (
         <div
-          role="listbox"
           className="absolute left-4 top-11 z-50 w-64 rounded-lg border border-border bg-popover p-1 shadow-xl"
+          onKeyDown={(event) => {
+            if (event.key === "Escape") {
+              event.preventDefault();
+              closeMenu();
+            }
+          }}
         >
-          <div className="py-0.5">
-            {courses?.map((c) => {
+          <div id={listboxId} role="listbox" aria-label="Courses" className="py-0.5">
+            {list.map((c, index) => {
               const isActive = c.course_id === courseId;
               return (
-                <button
+                <div
                   key={c.course_id}
+                  id={`${listboxId}-option-${index}`}
                   role="option"
                   aria-selected={isActive}
                   onClick={() => {
@@ -164,7 +274,8 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
                     setOpen(false);
                   }}
                   className={cn(
-                    "flex w-full items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm transition hover:bg-accent",
+                    "flex cursor-pointer items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm transition",
+                    index === activeIndex ? "bg-accent" : "hover:bg-accent/60",
                     isActive && "text-accent-foreground"
                   )}
                 >
@@ -174,12 +285,15 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
                       isActive ? "bg-primary" : "bg-muted-foreground/40"
                     )}
                   />
-                  <span className="truncate">{c.name}</span>
+                  <span className="truncate">
+                    {c.name}
+                    {c.is_sample ? <span className="ml-1.5 text-xs text-muted-foreground">sample</span> : null}
+                  </span>
                   {isActive && <Check className="ml-auto size-4 shrink-0" />}
-                </button>
+                </div>
               );
             })}
-            {(!courses || courses.length === 0) && (
+            {list.length === 0 && (
               <p className="px-2.5 py-2 text-sm text-muted-foreground">No courses yet</p>
             )}
           </div>
@@ -204,7 +318,16 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
       )}
 
       {open && creating && (
-        <div className="absolute left-4 top-11 z-50 w-72 rounded-lg border border-border bg-popover p-3 shadow-xl">
+        <div
+          ref={createFormRef}
+          className="absolute left-4 top-11 z-50 w-72 rounded-lg border border-border bg-popover p-3 shadow-xl"
+          onKeyDown={(event) => {
+            if (event.key === "Escape") {
+              event.preventDefault();
+              closeMenu();
+            }
+          }}
+        >
           <CreateCourseForm
             onDone={() => {
               navigate("/");

@@ -9,6 +9,10 @@ import { PageHeader, Panel, PanelHead, Stat, MiniRows, Bars } from "../component
 import { Button } from "../components/ui/button";
 import { NodeTree, flattenCounts } from "../components/NodeTree";
 import { CourseOnboarding } from "../components/CourseOnboarding";
+import { StudyOverview } from "../components/StudyOverview";
+import { DueQueueCard } from "../components/DueQueueCard";
+import { SetupProgress } from "../components/SetupProgress";
+import { SampleCourseNotice } from "../components/SampleCourseNotice";
 
 export function Dashboard() {
   const { courseId } = useActiveCourse();
@@ -41,9 +45,38 @@ export function Dashboard() {
       <PageHeader
         eyebrow="Course overview"
         title={config?.name}
-        description="The active course at a glance."
+        description="Where the course stands, and what is worth doing next."
         actions={<Actions />}
       />
+
+      <div className="mb-6">
+        <StudyOverview courseId={courseId} />
+      </div>
+
+      {counts && counts.total === 0 && (
+        <div className="mb-6 space-y-3">
+          <Panel className="p-5">
+            <h2 className="font-display text-lg font-semibold">This course has no questions yet</h2>
+            <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+              Practice needs questions to draw from. Bring in a question file, or write one by
+              hand &mdash; either works, and you do not need a large bank to get value from it.
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              <Button asChild>
+                <Link to="/import">Add questions →</Link>
+              </Button>
+              <Button asChild variant="outline">
+                <Link to="/browse">Browse the bank →</Link>
+              </Button>
+            </div>
+          </Panel>
+          <SetupProgress courseId={courseId} />
+        </div>
+      )}
+
+      <div className="mb-6">
+        <SampleCourseNotice courseId={courseId} />
+      </div>
 
       <div className="mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Stat title="Total questions">
@@ -69,6 +102,12 @@ export function Dashboard() {
           </div>
         </Stat>
       </div>
+
+      {(counts?.total ?? 0) > 0 && (
+        <div className="mb-6">
+          <DueQueueCard courseId={courseId} />
+        </div>
+      )}
 
       <Panel>
         <PanelHead
