@@ -9,6 +9,7 @@ physics/
 imports/
 exams/
 tmp/
+work/
 
 # Local environments, runtime data, and logs
 backend/.venv/
