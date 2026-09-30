@@ -8,6 +8,11 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "test:selection": "node --test --test-isolation=none tests/questionSelection.test.mjs",
+    "test:review": "node --test --test-isolation=none tests/reviewSchedule.test.mjs",
+    "test:schema": "node --test --test-isolation=none tests/schemaMigrations.test.mjs",
+    "test:plan": "node --test --test-isolation=none tests/sessionPlan.test.mjs",
+    "test:progress": "node --test --test-isolation=none tests/studyProgress.test.mjs",
+    "test": "npm run test:selection && npm run test:review && npm run test:schema && npm run test:plan && npm run test:progress",
     "bench:selection": "node scripts/benchmark-question-selection.mjs",
     "preview": "vite preview"
   },

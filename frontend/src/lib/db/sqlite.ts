@@ -1,11 +1,24 @@
 import initSqlJs from "sql.js";
 import type { Database } from "sql.js";
-import { SCHEMA_SQL, BUILTIN_QUESTION_TYPES } from "./schema";
+import { SCHEMA_SQL, BUILTIN_QUESTION_TYPES, MIGRATIONS, SCHEMA_VERSION } from "./schema";
 import * as idb from "./indexeddb";
-import { isValidQuestionId, newQuestionId } from "../id";
+import { isValidQuestionId, newQuestionId, nowUtc } from "../id";
+import {
+  reportCleared,
+  reportSaved,
+  reportSaving,
+  reportSaveFailure,
+  setPersistenceRetry,
+} from "./persistenceStatus";
 
 let db: Database | null = null;
 let ready: Promise<Database> | null = null;
+
+const APP_SETTING_DDL = `CREATE TABLE IF NOT EXISTS app_setting (
+  setting_key TEXT PRIMARY KEY,
+  value TEXT,
+  updated_at TEXT NOT NULL
+)`;
 
 async function initDb(): Promise<Database> {
   const SQL = await initSqlJs({ locateFile: () => `${import.meta.env.BASE_URL}sql-wasm.wasm` });
@@ -18,15 +31,75 @@ async function initDb(): Promise<Database> {
     for (const [key, label] of BUILTIN_QUESTION_TYPES) {
       db.run("INSERT OR IGNORE INTO question_type (type_key, display_name) VALUES (?, ?)", [key, label]);
     }
+    writeSchemaVersion(SCHEMA_VERSION);
     markDirty();
   }
   db.run("PRAGMA foreign_keys = ON;");
+  applyMigrations();
   repairQuestionIds();
   // Keep the standard follow-up tag available in every existing course.
   db.run(`INSERT OR IGNORE INTO tag (tag_id, course_id, name)
           SELECT 'tag_action_' || course_id, course_id, 'action_required' FROM course`);
   if (db.getRowsModified() > 0) markDirty();
   return db;
+}
+
+// ---------- schema migrations ----------
+
+function readSchemaVersion(): number {
+  const stmt = db!.prepare("SELECT value FROM app_setting WHERE setting_key = 'schema_version'");
+  try {
+    if (stmt.step()) {
+      const parsed = Number(stmt.get()[0]);
+      return Number.isFinite(parsed) ? parsed : 0;
+    }
+  } finally {
+    stmt.free();
+  }
+  return 0;
+}
+
+function writeSchemaVersion(version: number): void {
+  db!.run(
+    "INSERT OR REPLACE INTO app_setting (setting_key, value, updated_at) VALUES ('schema_version', ?, datetime('now'))",
+    [String(version)]
+  );
+}
+
+/**
+ * Bring an existing database up to SCHEMA_VERSION. Safe to call on every
+ * start: it is a no-op once the recorded version matches, so a database
+ * created by this build never replays a migration against columns it already
+ * has.
+ */
+function applyMigrations(): void {
+  if (!db) return;
+  db.run(APP_SETTING_DDL);
+  const current = readSchemaVersion();
+  if (current >= SCHEMA_VERSION) return;
+  const pending = MIGRATIONS.filter((m) => m.id > current);
+  for (const migration of pending) {
+    db!.run("BEGIN;");
+    try {
+      db!.exec(migration.sql);
+      writeSchemaVersion(migration.id);
+      db!.run("COMMIT;");
+    } catch (error) {
+      try {
+        db!.run("ROLLBACK;");
+      } catch {
+        /* ignore */
+      }
+      const reason = error instanceof Error ? error.message : String(error);
+      throw new Error(`Database upgrade ${migration.id} (${migration.name}) failed: ${reason}`);
+    }
+  }
+  if (pending.length) markDirty();
+}
+
+/** The recorded database schema version, for the settings screen and exports. */
+export function schemaVersion(): number {
+  return db ? readSchemaVersion() : 0;
 }
 
 function repairQuestionIds(): void {
@@ -102,12 +175,19 @@ export function getDb(): Promise<Database> {
 let dirty = false;
 let persistTimer: ReturnType<typeof setTimeout> | null = null;
 let pendingPersist: Promise<void> | null = null;
+let lastFlushError: unknown = null;
+
+setPersistenceRetry(() => {
+  lastFlushError = null;
+  void flush().catch(() => {});
+});
 
 export function markDirty(): void {
   dirty = true;
+  reportSaving();
   if (persistTimer !== null) clearTimeout(persistTimer);
   persistTimer = setTimeout(() => {
-    void flush();
+    void flush().catch(() => {});
   }, 500);
 }
 
@@ -118,14 +198,46 @@ export async function flush(): Promise<void> {
   }
   if (!dirty || !db) return;
   dirty = false;
+  lastFlushError = null;
+  reportSaving();
   const bytes = db.export();
   const persist = idb.persistDb(bytes);
   pendingPersist = persist;
   try {
     await persist;
+    reportSaved(nowUtc());
+  } catch (error) {
+    // Keep the image marked dirty so a retry re-exports it rather than
+    // reporting a save that never happened.
+    dirty = true;
+    lastFlushError = error;
+    reportSaveFailure(error);
+    throw error;
   } finally {
     if (pendingPersist === persist) pendingPersist = null;
   }
+}
+
+/** The most recent write failure, for callers that want to explain it inline. */
+export function persistenceError(): unknown {
+  return lastFlushError;
+}
+
+/**
+ * Write pending changes at a point where the page may be about to go away.
+ * `beforeunload` cannot await, so this is a best-effort nudge alongside the
+ * debounced writes rather than the only safety net.
+ */
+export function flushOnHide(): void {
+  if (!dirty) return;
+  void flush().catch(() => {});
+}
+
+if (typeof document !== "undefined") {
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "hidden") flushOnHide();
+  });
+  window.addEventListener("pagehide", flushOnHide);
 }
 
 /** Clear persisted data and reset the in-memory database so stale data cannot return. */
@@ -140,6 +252,8 @@ export async function clearAllData(): Promise<void> {
   db = null;
   ready = null;
   dirty = false;
+  lastFlushError = null;
+  reportCleared();
 }
 
 // ---------- Query helpers ----------

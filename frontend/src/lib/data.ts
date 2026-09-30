@@ -6,23 +6,59 @@ import { getTestFile } from "./db/indexeddb";
 import { buildDocxSolutions } from "./docx";
 import { buildPdfSolutions } from "./pdf";
 import type {
+  AttemptInput,
+  AttemptStatus,
+  AttemptSummary,
+  Confidence,
   Course,
   CourseFullConfig,
   CourseNode,
   DifficultyLevel,
+  DueQueue,
+  DueQueueItem,
   GeneratedTestMeta,
   ImportResponse,
   LevelDef,
   NodeCount,
+  PracticeFilters,
+  PracticePoolCounts,
+  PracticeSessionSummary,
   Question,
   QuestionCountsResponse,
   QuestionListItem,
   QuestionListResponse,
   RandomQuestionResponse,
+  ResponseCapture,
+  ReviewOutcome,
+  ReviewPolicy,
+  ReviewStateRow,
+  ScoredBy,
+  SelfRating,
+  SessionMode,
+  SessionPlanItem,
+  SessionTopicCoverage,
   Source,
+  StudyProgress,
   TestSectionInput,
   TestSectionResult,
+  TopicProgress,
 } from "../api/types";
+import {
+  dueReason,
+  emptyReviewState,
+  formatSqlUtc,
+  isSelfRating,
+  newlyDueReviewState,
+  nextReviewState,
+  normalizePolicy,
+  parseSqlUtc,
+  rankDueQuestions,
+} from "./reviewSchedule";
+import type { ReviewState } from "./reviewSchedule";
+import { buildSessionPlan, suggestedSessionSize } from "./sessionPlan";
+import type { PoolItem } from "./sessionPlan";
+import { EMPTY_ACTIVITY, describeMarkingMix, pickNextAction, rollupTopicActivity } from "./studyProgress";
+import type { NodeActivity } from "./studyProgress";
 import { selectQuestionIndexes } from "./questionSelection";
 
 // ---------- helpers ----------
@@ -59,10 +95,14 @@ export async function listCourses(): Promise<Course[]> {
 async function getCourseRows(): Promise<Course[]> {
   const rows = await all<SqlRow>(
     `SELECT course_id, name, description, subject, curriculum, version_year,
-            schema_version, allow_multi_classification, created_at, updated_at
-     FROM course ORDER BY name`
+            schema_version, allow_multi_classification, is_sample, created_at, updated_at
+     FROM course ORDER BY is_sample DESC, name`
   );
-  return rows.map((r) => ({
+  return rows.map(courseOut);
+}
+
+function courseOut(r: SqlRow): Course {
+  return {
     course_id: r.course_id,
     name: r.name,
     description: r.description,
@@ -71,19 +111,20 @@ async function getCourseRows(): Promise<Course[]> {
     version_year: r.version_year,
     schema_version: r.schema_version,
     allow_multi_classification: boolFrom(r, "allow_multi_classification"),
+    is_sample: boolFrom(r, "is_sample"),
     created_at: r.created_at,
     updated_at: r.updated_at,
-  }));
+  };
 }
 
 export async function getCourseRow(courseId: string): Promise<Course | null> {
   const rows = await all<SqlRow>(
     `SELECT course_id, name, description, subject, curriculum, version_year,
-            schema_version, allow_multi_classification, created_at, updated_at
+            schema_version, allow_multi_classification, is_sample, created_at, updated_at
      FROM course WHERE course_id = ?`,
     [courseId]
   );
-  return rows.length ? rows[0] as unknown as Course : null;
+  return rows.length ? courseOut(rows[0]) : null;
 }
 
 async function courseRow(courseId: string): Promise<SqlRow | null> {
@@ -162,6 +203,7 @@ export async function createCourse(payload: {
   curriculum?: string | null;
   version_year?: string | null;
   allow_multi_classification?: boolean;
+  is_sample?: boolean;
   hierarchy?: LevelDef[];
   difficulty_levels?: DifficultyLevel[];
   question_types?: string[];
@@ -170,8 +212,8 @@ export async function createCourse(payload: {
   const now = nowUtc();
   await run(
     `INSERT INTO course (course_id, name, description, subject, curriculum, version_year,
-        schema_version, allow_multi_classification, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, 1, ?, ?, ?)`,
+        schema_version, allow_multi_classification, is_sample, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, 1, ?, ?, ?, ?)`,
     [
       courseId,
       payload.name,
@@ -180,6 +222,7 @@ export async function createCourse(payload: {
       payload.curriculum ?? null,
       payload.version_year ?? null,
       payload.allow_multi_classification ?? true ? 1 : 0,
+      payload.is_sample ? 1 : 0,
       now,
       now,
     ]
@@ -269,6 +312,30 @@ export async function deleteCourse(courseId: string): Promise<void> {
 }
 
 // ---------- levels ----------
+
+/**
+ * Clears one course's practice history: attempts, sessions and the review
+ * schedule. The questions themselves stay exactly as they are. Used by the
+ * sample course's "start again" action; kept generic so any disposable course
+ * can use it.
+ */
+export async function resetCourseProgress(courseId: string): Promise<void> {
+  await transaction((database) => {
+    database.run(
+      `DELETE FROM practice_attempt
+       WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)
+          OR session_id IN (SELECT session_id FROM practice_session WHERE course_id = ?)`,
+      [courseId, courseId]
+    );
+    database.run(
+      `DELETE FROM question_review_state
+       WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)`,
+      [courseId]
+    );
+    database.run("DELETE FROM practice_session WHERE course_id = ?", [courseId]);
+  });
+  await flush();
+}
 
 export async function addLevel(courseId: string, level: LevelDef): Promise<LevelDef> {
   const existing = await getFirst<SqlRow>(
@@ -645,6 +712,7 @@ export async function questionToOut(q: SqlRow, includeParts: boolean): Promise<Q
       })),
       is_correct: Boolean(row.is_correct),
     })),
+    hint: slotOf("hint"),
     answer: slotOf("answer"),
     solution: slotOf("solution"),
     marking_criteria: slotOf("marking_criteria"),
@@ -754,6 +822,7 @@ async function hydrateQuestions(questionIds: string[]): Promise<Question[]> {
         })),
         is_correct: boolFrom(row, "is_correct"),
       })),
+      hint: slotOf("hint"),
       answer: slotOf("answer"),
       solution: slotOf("solution"),
       marking_criteria: slotOf("marking_criteria"),
@@ -821,6 +890,7 @@ export interface QuestionCreatePayload {
   node_ids?: string[];
   tag_names?: string[];
   body?: BlockPayload[];
+  hint?: BlockPayload[];
   answer?: BlockPayload[];
   solution?: BlockPayload[];
   marking_criteria?: BlockPayload[];
@@ -834,7 +904,7 @@ export interface QuestionCreatePayload {
   classification_confidence?: string | null;
 }
 
-const SLOTS = ["body", "answer", "solution", "marking_criteria"] as const;
+const SLOTS = ["body", "hint", "answer", "solution", "marking_criteria"] as const;
 
 async function insertBlocks(
   questionId: string,
@@ -975,7 +1045,11 @@ export async function createQuestion(payload: QuestionCreatePayload): Promise<Qu
       [questionId, nodeId, i === 0 ? 1 : 0],
     ]);
   });
-  for (const tagName of payload.tag_names ?? []) {
+  const insertedTagNames = new Set<string>();
+  for (const rawTagName of payload.tag_names ?? []) {
+    const tagName = rawTagName.trim();
+    if (!tagName || insertedTagNames.has(tagName)) continue;
+    insertedTagNames.add(tagName);
     const tagId = await getOrCreateTag(payload.course_id!, tagName.trim());
     statements.push([
       "INSERT INTO question_tag (question_id, tag_id) VALUES (?, ?)",
@@ -1063,8 +1137,12 @@ export async function updateQuestion(
   }
   if (payload.tag_names) {
     await run("DELETE FROM question_tag WHERE question_id = ?", [questionId]);
-    for (const tagName of payload.tag_names) {
-      const tagId = await getOrCreateTag(existing.course_id, tagName.trim());
+    const insertedTagNames = new Set<string>();
+    for (const rawTagName of payload.tag_names) {
+      const tagName = rawTagName.trim();
+      if (!tagName || insertedTagNames.has(tagName)) continue;
+      insertedTagNames.add(tagName);
+      const tagId = await getOrCreateTag(existing.course_id, tagName);
       await run("INSERT INTO question_tag (question_id, tag_id) VALUES (?, ?)", [
         questionId,
         tagId,
@@ -1455,60 +1533,289 @@ export async function randomQuestion(params: {
 
 // ---------- practice ----------
 
-export async function createSession(
-  courseId: string,
-  filter: Record<string, any> | null,
-  mode: string = "random"
-): Promise<{ session_id: string; course_id: string; mode: string }> {
-  const course = await courseRow(courseId);
-  if (!course) throw new Error("Course not found");
-  const sessionId = newId("sess");
-  const now = nowUtc();
-  await run(
-    "INSERT INTO practice_session (session_id, course_id, filter_json, mode, created_at) VALUES (?, ?, ?, ?, ?)",
-    [sessionId, courseId, JSON.stringify(filter ?? {}), mode, now]
-  );
-  return { session_id: sessionId, course_id: courseId, mode };
+// ---------- study settings ----------
+
+const SETTING_REVIEW_POLICY = "review_policy";
+const SETTING_QUEUE_PAUSE = "review_queue_paused_until";
+const SETTING_RESPONSE_CAPTURE = "save_response_text";
+const SETTING_TIMER = "practice_timer";
+
+export async function getSetting(key: string): Promise<string | null> {
+  const row = await getFirst<SqlRow>("SELECT value FROM app_setting WHERE setting_key = ?", [key]);
+  return row && row.value != null ? String(row.value) : null;
 }
 
-export async function recordAttempt(payload: {
-  session_id?: string;
-  question_id: string;
-  status: string;
-  correct?: boolean;
-  time_spent_sec?: number;
-  user_notes?: string;
-}): Promise<{ attempt_id: string }> {
-  const q = await getFirst<SqlRow>("SELECT question_id FROM question WHERE question_id = ?", [
+export async function setSetting(key: string, value: string | null): Promise<void> {
+  if (value == null) {
+    await run("DELETE FROM app_setting WHERE setting_key = ?", [key]);
+    return;
+  }
+  await run(
+    "INSERT OR REPLACE INTO app_setting (setting_key, value, updated_at) VALUES (?, ?, datetime('now'))",
+    [key, value]
+  );
+}
+
+export async function getReviewPolicy(): Promise<ReviewPolicy> {
+  const raw = await getSetting(SETTING_REVIEW_POLICY);
+  if (!raw) return normalizePolicy(null);
+  try {
+    return normalizePolicy(JSON.parse(raw));
+  } catch {
+    return normalizePolicy(null);
+  }
+}
+
+export async function setReviewPolicy(policy: ReviewPolicy): Promise<void> {
+  await setSetting(SETTING_REVIEW_POLICY, JSON.stringify(normalizePolicy(policy)));
+}
+
+export async function getQueuePause(): Promise<{ paused_until: string | null; paused: boolean }> {
+  const until = await getSetting(SETTING_QUEUE_PAUSE);
+  if (!until) return { paused_until: null, paused: false };
+  return { paused_until: until, paused: until > nowUtc() };
+}
+
+export async function setQueuePause(pausedUntil: string | null): Promise<void> {
+  await setSetting(SETTING_QUEUE_PAUSE, pausedUntil);
+}
+
+/** Whether free-response text is kept on the device. Defaults to keeping it. */
+export async function getResponseCapture(): Promise<ResponseCapture> {
+  return (await getSetting(SETTING_RESPONSE_CAPTURE)) === "off" ? "off" : "on";
+}
+
+export async function setResponseCapture(value: ResponseCapture): Promise<void> {
+  await setSetting(SETTING_RESPONSE_CAPTURE, value);
+}
+
+/** The timer is opt-in: elapsed time is not treated as evidence of mastery. */
+export async function getTimerEnabled(): Promise<boolean> {
+  return (await getSetting(SETTING_TIMER)) === "on";
+}
+
+export async function setTimerEnabled(enabled: boolean): Promise<void> {
+  await setSetting(SETTING_TIMER, enabled ? "on" : "off");
+}
+
+// ---------- review schedule ----------
+
+const REVIEW_COLUMNS = `question_id, next_due_at, interval_days, last_reviewed_at, review_count,
+                       lapse_count, ladder_step, last_rating, last_outcome, updated_at`;
+
+function reviewStateFromRow(r: SqlRow): ReviewStateRow {
+  return {
+    question_id: String(r.question_id),
+    next_due_at: r.next_due_at == null ? null : String(r.next_due_at),
+    interval_days: Number(r.interval_days ?? 0),
+    last_reviewed_at: r.last_reviewed_at == null ? null : String(r.last_reviewed_at),
+    review_count: Number(r.review_count ?? 0),
+    lapse_count: Number(r.lapse_count ?? 0),
+    ladder_step: Number(r.ladder_step ?? 0),
+    last_rating: isSelfRating(r.last_rating) ? r.last_rating : null,
+    last_outcome: r.last_outcome == null ? null : (String(r.last_outcome) as ReviewOutcome),
+    updated_at: r.updated_at == null ? "" : String(r.updated_at),
+  };
+}
+
+export async function getReviewState(questionId: string): Promise<ReviewStateRow> {
+  const row = await getFirst<SqlRow>(
+    `SELECT ${REVIEW_COLUMNS} FROM question_review_state WHERE question_id = ?`,
+    [questionId]
+  );
+  return row ? reviewStateFromRow(row) : emptyReviewState(questionId, nowUtc());
+}
+
+const REVIEW_UPSERT = `INSERT INTO question_review_state (${REVIEW_COLUMNS})
+  VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  ON CONFLICT(question_id) DO UPDATE SET
+    next_due_at = excluded.next_due_at,
+    interval_days = excluded.interval_days,
+    last_reviewed_at = excluded.last_reviewed_at,
+    review_count = excluded.review_count,
+    lapse_count = excluded.lapse_count,
+    ladder_step = excluded.ladder_step,
+    last_rating = excluded.last_rating,
+    last_outcome = excluded.last_outcome,
+    updated_at = excluded.updated_at`;
+
+function reviewStateParams(state: ReviewStateRow): any[] {
+  return [
+    state.question_id,
+    state.next_due_at,
+    state.interval_days,
+    state.last_reviewed_at,
+    state.review_count,
+    state.lapse_count,
+    state.ladder_step,
+    state.last_rating,
+    state.last_outcome,
+    state.updated_at,
+  ];
+}
+
+/** Put a question on the queue as of now, without pretending it was reviewed. */
+export async function enqueueForReview(questionId: string, at?: string): Promise<ReviewStateRow> {
+  const state = newlyDueReviewState(questionId, at ?? nowUtc());
+  await run(REVIEW_UPSERT, reviewStateParams(state));
+  return state;
+}
+
+// ---------- attempt lifecycle ----------
+
+const ATTEMPT_COLUMNS = `attempt_id, session_id, question_id, status, correct, time_spent_sec,
+                         user_notes, created_at, response_text, confidence, self_rating,
+                         hints_revealed, scored_by, score_earned, score_possible`;
+
+export async function recordAttempt(payload: AttemptInput): Promise<{ attempt_id: string; created_at: string }> {
+  const exists = await getFirst<SqlRow>("SELECT question_id FROM question WHERE question_id = ?", [
     payload.question_id,
   ]);
-  if (!q) throw new Error("Question not found");
+  if (!exists) throw new Error("Question not found");
+  const capture = await getResponseCapture();
   const attemptId = newId("att");
+  const createdAt = nowUtc();
+  // `correct` is only written when the app itself decided the answer. A mark the
+  // student typed is stored as a score with its provenance attached, so nothing
+  // downstream can mistake it for an app-verified result.
+  const objective = payload.scored_by === "objective" && payload.correct != null;
   await run(
-    `INSERT INTO practice_attempt (attempt_id, session_id, question_id, status, correct, time_spent_sec, user_notes, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+    `INSERT INTO practice_attempt (${ATTEMPT_COLUMNS})
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       attemptId,
       payload.session_id ?? null,
       payload.question_id,
       payload.status,
-      payload.correct === undefined || payload.correct === null ? null : payload.correct ? 1 : 0,
+      objective ? (payload.correct ? 1 : 0) : null,
       payload.time_spent_sec ?? null,
       payload.user_notes ?? null,
-      nowUtc(),
+      createdAt,
+      capture === "on" ? payload.response_text ?? null : null,
+      payload.confidence ?? null,
+      payload.self_rating ?? null,
+      payload.hints_revealed ?? 0,
+      payload.scored_by ?? null,
+      payload.score_earned ?? null,
+      payload.score_possible ?? null,
     ]
   );
-  return { attempt_id: attemptId };
+  return { attempt_id: attemptId, created_at: createdAt };
+}
+
+export interface ReviewSubmission {
+  session_id?: string | null;
+  question_id: string;
+  rating: SelfRating;
+  /** Set only when something objective decided the outcome, such as a marked MCQ. */
+  objective_correct?: boolean | null;
+  response_text?: string | null;
+  confidence?: Confidence | null;
+  hints_revealed?: number | null;
+  time_spent_sec?: number | null;
+  user_notes?: string | null;
+  score_earned?: number | null;
+  score_possible?: number | null;
+}
+
+/**
+ * Finish one review: the attempt, the self-rating and the new due date are
+ * written together, so a rating can never be saved without moving the question
+ * and a question can never move without the student's rating being recorded.
+ */
+export async function recordReview(
+  input: ReviewSubmission
+): Promise<{ attempt_id: string; review: ReviewStateRow }> {
+  const exists = await getFirst<SqlRow>("SELECT question_id FROM question WHERE question_id = ?", [
+    input.question_id,
+  ]);
+  if (!exists) throw new Error("Question not found");
+  const policy = await getReviewPolicy();
+  const at = nowUtc();
+  const previous = await getReviewState(input.question_id);
+  const review = nextReviewState(previous, {
+    rating: input.rating,
+    objectiveCorrect: input.objective_correct ?? null,
+    at,
+    policy,
+  });
+  const capture = await getResponseCapture();
+  const attemptId = newId("att");
+  const objective = input.objective_correct != null;
+
+  await transaction((database) => {
+    database.run(
+      `INSERT INTO practice_attempt (${ATTEMPT_COLUMNS})
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+      [
+        attemptId,
+        input.session_id ?? null,
+        input.question_id,
+        "reviewed",
+        objective ? (input.objective_correct ? 1 : 0) : null,
+        input.time_spent_sec ?? null,
+        input.user_notes ?? null,
+        at,
+        capture === "on" ? input.response_text ?? null : null,
+        input.confidence ?? null,
+        input.rating,
+        input.hints_revealed ?? 0,
+        objective ? "objective" : null,
+        input.score_earned ?? null,
+        input.score_possible ?? null,
+      ]
+    );
+    database.run(REVIEW_UPSERT, reviewStateParams(review));
+    if (input.session_id) {
+      database.run(
+        `UPDATE practice_session
+         SET completed_count = (SELECT COUNT(DISTINCT question_id) FROM practice_attempt
+                                WHERE session_id = ? AND status = 'reviewed'),
+             status = CASE WHEN completed_count + 1 >= planned_count THEN 'completed' ELSE status END,
+             updated_at = ?
+         WHERE session_id = ?`,
+        [input.session_id, at, input.session_id]
+      );
+    }
+  });
+  return { attempt_id: attemptId, review };
+}
+
+/** Attempts for one question, newest first, for the "inspect your answers" view. */
+export async function questionAttempts(questionId: string, limit = 20): Promise<AttemptSummary[]> {
+  const rows = await all<SqlRow>(
+    `SELECT ${ATTEMPT_COLUMNS} FROM practice_attempt WHERE question_id = ? ORDER BY created_at DESC LIMIT ?`,
+    [questionId, limit]
+  );
+  return rows.map((r) => ({
+    attempt_id: String(r.attempt_id),
+    session_id: r.session_id ?? null,
+    question_id: String(r.question_id),
+    status: String(r.status) as AttemptStatus,
+    correct: r.correct == null ? null : boolFrom(r, "correct"),
+    scored_by: (r.scored_by ?? null) as ScoredBy | null,
+    score_earned: r.score_earned == null ? null : Number(r.score_earned),
+    score_possible: r.score_possible == null ? null : Number(r.score_possible),
+    time_spent_sec: r.time_spent_sec == null ? null : Number(r.time_spent_sec),
+    user_notes: r.user_notes ?? null,
+    response_text: r.response_text ?? null,
+    confidence: (r.confidence ?? null) as Confidence | null,
+    self_rating: (r.self_rating ?? null) as SelfRating | null,
+    hints_revealed: Number(r.hints_revealed ?? 0),
+    created_at: String(r.created_at),
+  }));
 }
 
 export async function recentQuestions(
   courseId: string,
   limit: number = 10
-): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; seen_at: string }>> {
+): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; scored_by: string | null; seen_at: string }>> {
   const rows = await all<SqlRow>(
     `SELECT a.question_id, q.type_key, q.course_id, MAX(a.created_at) AS last_seen,
             (SELECT a2.status FROM practice_attempt a2
-             WHERE a2.question_id = a.question_id ORDER BY a2.created_at DESC LIMIT 1) AS latest_status
+             WHERE a2.question_id = a.question_id ORDER BY a2.created_at DESC LIMIT 1) AS latest_status,
+            (SELECT a3.scored_by FROM practice_attempt a3
+             WHERE a3.question_id = a.question_id ORDER BY a3.created_at DESC LIMIT 1) AS latest_scored_by
      FROM practice_attempt a JOIN question q ON q.question_id = a.question_id
      WHERE q.course_id = ?
      GROUP BY a.question_id
@@ -1523,8 +1830,529 @@ export async function recentQuestions(
     snippet: snippets.get(r.question_id) ?? "",
     type_key: r.type_key,
     status: r.latest_status ?? "seen",
+    scored_by: r.latest_scored_by ?? null,
     seen_at: r.last_seen,
   }));
+}
+
+// ---------- practice pool, sessions and queues ----------
+
+interface PoolWhere {
+  where: string[];
+  params: any[];
+}
+
+/**
+ * Turn the filters the student picked into SQL. Kept in one place so the counts,
+ * the pool and the session plan can never disagree about what "matching" means.
+ */
+function practiceWhere(filters: PracticeFilters, dueAt: string | null): PoolWhere {
+  const f = buildFilters({
+    courseId: filters.course_id,
+    approvedOnly: true,
+    wholeQuestions: true,
+    typeKey: filters.type_key ?? undefined,
+    difficultyMin: filters.difficulty_min ?? undefined,
+    difficultyMax: filters.difficulty_max ?? undefined,
+    nodeIds: filters.node_ids?.length ? filters.node_ids : undefined,
+    tag: filters.tag ?? undefined,
+    institutionYears: filters.source_filters,
+  });
+  const where = [...f.where];
+  const params = [...f.params];
+  if (dueAt) {
+    where.push(
+      `q.question_id IN (SELECT question_id FROM question_review_state
+                         WHERE next_due_at IS NOT NULL AND next_due_at <= ?)`
+    );
+    params.push(dueAt);
+  }
+  return { where, params };
+}
+
+const PRIMARY_NODE_SQL = `(SELECT qc.node_id FROM question_classification qc
+                          WHERE qc.question_id = q.question_id
+                          ORDER BY qc.is_primary DESC, qc.node_id LIMIT 1)`;
+
+async function poolRows(filters: PracticeFilters, dueAt: string | null): Promise<Array<{ question_id: string; topic_id: string | null }>> {
+  const { where, params } = practiceWhere(filters, dueAt);
+  const rows = await all<SqlRow>(
+    `SELECT q.question_id, ${PRIMARY_NODE_SQL} AS primary_node
+     FROM question q WHERE ${where.join(" AND ")} ORDER BY q.question_id`,
+    params
+  );
+  return rows.map((r) => ({ question_id: String(r.question_id), topic_id: r.primary_node ?? null }));
+}
+
+export interface PoolCountOptions {
+  /** Questions already taken in this session, so the student is not shown the same one twice. */
+  excludeIds?: string[];
+  /** Questions attempted in the last N days, for "avoid recently attempted". */
+  avoidRecentDays?: number | null;
+  /** Restrict to questions the schedule says are due. */
+  dueAt?: string | null;
+}
+
+/**
+ * Three deliberately separate numbers, because collapsing them is what makes
+ * "nothing matches" confusing: what the filters match, what is still available
+ * in this session, and what is merely on a cooldown.
+ */
+export async function practicePoolCounts(
+  filters: PracticeFilters,
+  options: PoolCountOptions = {}
+): Promise<PracticePoolCounts> {
+  const { where, params } = practiceWhere(filters, options.dueAt ?? null);
+  const baseWhere = where.join(" AND ");
+  const countOf = async (extra: { sql: string; params: any[] }): Promise<number> => {
+    const clause = extra.sql ? `${baseWhere} AND ${extra.sql}` : baseWhere;
+    const row = await getFirst<SqlRow>(
+      `SELECT COUNT(*) AS total FROM question q WHERE ${clause}`,
+      [...params, ...extra.params]
+    );
+    return Number(row?.total ?? 0);
+  };
+
+  const filterMatch = await countOf({ sql: "", params: [] });
+  const exclude = (options.excludeIds ?? []).map(String);
+  const eligible = await countOf({
+    sql: exclude.length ? `q.question_id NOT IN (${exclude.map(() => "?").join(", ")})` : "",
+    params: exclude,
+  });
+  const recentDays = Number(options.avoidRecentDays ?? 0);
+  const recentClause =
+    recentDays > 0
+      ? {
+          sql: `q.question_id NOT IN (SELECT question_id FROM practice_attempt WHERE created_at >= datetime('now', ?))`,
+          params: [`-${recentDays} days`],
+        }
+      : { sql: "", params: [] as any[] };
+  const withRecent = await countOf(recentClause);
+
+  return {
+    filter_match_count: filterMatch,
+    eligible_count: eligible,
+    excluded_seen_count: Math.max(0, filterMatch - eligible),
+    recently_excluded_count: Math.max(0, filterMatch - withRecent),
+  };
+}
+
+export interface StartSessionInput {
+  course_id: string;
+  mode: SessionMode;
+  filters: PracticeFilters;
+  /** Cap the plan, or leave null to take the whole pool. */
+  size?: number | null;
+}
+
+function planTopicByQuestion(items: SessionPlanItem[]): Map<string, string | null> {
+  return new Map(items.map((i) => [i.question_id, i.topic_id ?? null]));
+}
+
+/**
+ * A session is a stored list of questions, not a pile of filters. Persisting the
+ * plan is what lets the app say "you have practised all 12 of these", explain why
+ * a question is being shown, and keep an unfinished session across a reload.
+ */
+export async function startPracticeSession(input: StartSessionInput): Promise<PracticeSessionSummary> {
+  const course = await courseRow(input.course_id);
+  if (!course) throw new Error("Course not found");
+  const at = nowUtc();
+  const filters: PracticeFilters = { ...input.filters, course_id: input.course_id };
+  const dueAt = input.mode === "due_review" ? at : null;
+
+  let pool: PoolItem[] = (await poolRows(filters, dueAt)).map((r) => ({
+    question_id: r.question_id,
+    topic_id: r.topic_id,
+  }));
+
+  if (input.mode === "due_review") {
+    const states = await reviewStatesForIds(pool.map((p) => p.question_id));
+    const topics = planTopicByQuestion(pool as SessionPlanItem[]);
+    pool = rankDueQuestions(states, at, 10000).map((state) => {
+      const reason = dueReason(state, at, { includeRatedDifficult: true });
+      return {
+        question_id: state.question_id,
+        topic_id: topics.get(state.question_id) ?? null,
+        reason_kind: reason.kind,
+        reason_text: reason.text,
+      };
+    });
+  }
+
+  // A due session is a batch, not a backlog: the queue stays visible and the
+  // student is told how much is left, instead of being handed all 300 at once.
+  const size = input.size ?? suggestedSessionSize(input.mode, pool.length) ?? null;
+  const plan = buildSessionPlan(pool, { mode: input.mode, size });
+  const sessionId = newId("sess");
+  await run(
+    `INSERT INTO practice_session (session_id, course_id, filter_json, mode, created_at,
+                                   config_json, plan_json, status, planned_count, completed_count, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, 'active', ?, 0, ?)`,
+    [
+      sessionId,
+      input.course_id,
+      JSON.stringify(filters),
+      input.mode,
+      at,
+      JSON.stringify({ mode: input.mode, size, started_at: at, dominant_topic_share: plan.dominant_topic_share }),
+      JSON.stringify({ items: plan.items, topic_coverage: plan.topic_coverage }),
+      plan.question_ids.length,
+      at,
+    ]
+  );
+
+  const poolCounts = await practicePoolCounts(filters, {
+    avoidRecentDays: filters.avoid_recent_days,
+  });
+  return {
+    session_id: sessionId,
+    course_id: input.course_id,
+    mode: input.mode,
+    status: "active",
+    filters,
+    created_at: at,
+    updated_at: at,
+    planned_count: plan.question_ids.length,
+    completed_count: 0,
+    remaining_count: plan.question_ids.length,
+    next_question_id: plan.question_ids[0] ?? null,
+    plan: plan.items,
+    topic_coverage: plan.topic_coverage,
+    dominant_topic_share: plan.dominant_topic_share,
+    pool: poolCounts,
+  };
+}
+export async function reviewStatesForIds(questionIds: string[]): Promise<ReviewState[]> {
+  if (!questionIds.length) return [];
+  const rows = await all<SqlRow>(
+    `SELECT ${REVIEW_COLUMNS} FROM question_review_state
+     WHERE question_id IN (${questionIds.map(() => "?").join(", ")})`,
+    questionIds
+  );
+  return rows.map(reviewStateFromRow);
+}
+
+function sessionSummaryFromRow(
+  row: SqlRow,
+  plan: { items?: SessionPlanItem[]; topic_coverage?: SessionTopicCoverage[] },
+  remaining: string[],
+  pool: PracticePoolCounts
+): PracticeSessionSummary {
+  const items = plan.items ?? [];
+  const config = parseJson(row.config_json);
+  return {
+    session_id: String(row.session_id),
+    course_id: String(row.course_id),
+    mode: String(row.mode ?? "focused") as SessionMode,
+    status: (String(row.status ?? "active") as PracticeSessionSummary["status"]),
+    filters: parseJson(row.filter_json) as unknown as PracticeFilters,
+    created_at: String(row.created_at),
+    updated_at: row.updated_at == null ? null : String(row.updated_at),
+    planned_count: Number(row.planned_count ?? items.length),
+    completed_count: Number(row.completed_count ?? 0),
+    remaining_count: remaining.length,
+    next_question_id: remaining[0] ?? null,
+    plan: items,
+    topic_coverage: plan.topic_coverage ?? [],
+    dominant_topic_share: typeof config.dominant_topic_share === "number" ? config.dominant_topic_share : 0,
+    pool,
+  };
+}
+
+async function offeredQuestionIds(sessionId: string): Promise<Set<string>> {
+  const rows = await all<SqlRow>(
+    "SELECT DISTINCT question_id FROM practice_attempt WHERE session_id = ?",
+    [sessionId]
+  );
+  return new Set(rows.map((r) => String(r.question_id)));
+}
+
+export async function getPracticeSession(sessionId: string): Promise<PracticeSessionSummary | null> {
+  const row = await getFirst<SqlRow>("SELECT * FROM practice_session WHERE session_id = ?", [sessionId]);
+  if (!row) return null;
+  const plan = parseJson(row.plan_json);
+  const items: SessionPlanItem[] = Array.isArray(plan.items) ? plan.items : [];
+  const offered = await offeredQuestionIds(sessionId);
+  const remaining = items.filter((i) => !offered.has(i.question_id)).map((i) => i.question_id);
+  const filters = parseJson(row.filter_json) as unknown as PracticeFilters;
+  const pool = await practicePoolCounts(filters, {
+    excludeIds: [...offered],
+    avoidRecentDays: filters?.avoid_recent_days,
+  });
+  return sessionSummaryFromRow(row, { items, topic_coverage: plan.topic_coverage }, remaining, pool);
+}
+
+export async function getActiveSession(
+  courseId: string,
+  mode?: SessionMode
+): Promise<PracticeSessionSummary | null> {
+  const row = await getFirst<SqlRow>(
+    `SELECT session_id FROM practice_session
+     WHERE course_id = ? AND status = 'active' ${mode ? "AND mode = ?" : ""}
+     ORDER BY created_at DESC LIMIT 1`,
+    mode ? [courseId, mode] : [courseId]
+  );
+  if (!row) return null;
+  return getPracticeSession(String(row.session_id));
+}
+
+export async function setSessionStatus(sessionId: string, status: "active" | "completed" | "abandoned"): Promise<void> {
+  await run("UPDATE practice_session SET status = ?, updated_at = ? WHERE session_id = ?", [
+    status,
+    nowUtc(),
+    sessionId,
+  ]);
+}
+
+/**
+ * Clear the questions this session already offered, keeping the plan and every
+ * review the student has actually completed.
+ */
+export async function resetPracticeSession(sessionId: string): Promise<PracticeSessionSummary | null> {
+  await run("DELETE FROM practice_attempt WHERE session_id = ? AND status = 'seen'", [sessionId]);
+  await run(
+    "UPDATE practice_session SET status = 'active', completed_count = 0, updated_at = ? WHERE session_id = ?",
+    [nowUtc(), sessionId]
+  );
+  return getPracticeSession(sessionId);
+}
+
+/** Drop a session without touching the attempts or the review schedule behind it. */
+export async function discardPracticeSession(sessionId: string): Promise<void> {
+  await run("DELETE FROM practice_session WHERE session_id = ?", [sessionId]);
+}
+
+// ---------- question activity ----------
+
+export interface QuestionActivity {
+  question_id: string;
+  type_key: string;
+  events: number;
+  attempted: number;
+  reviewed: number;
+  difficult: number;
+  lapses: number;
+  objective_reviews: number;
+  self_reviews: number;
+  last_event_at: string | null;
+  state: ReviewState;
+  node_ids: string[];
+  primary_node: string | null;
+}
+
+const ATTEMPT_AGGREGATE_SQL = `SELECT a.question_id AS question_id,
+    COUNT(*) AS events,
+    MAX(CASE WHEN a.status IN ('attempted', 'revealed', 'reviewed') THEN 1 ELSE 0 END) AS attempted,
+    MAX(CASE WHEN a.status = 'reviewed' THEN 1 ELSE 0 END) AS reviewed,
+    SUM(CASE WHEN a.status = 'reviewed' AND a.self_rating IN ('again', 'hard') THEN 1 ELSE 0 END) AS difficult,
+    SUM(CASE WHEN a.status = 'reviewed' AND (a.self_rating = 'again' OR (a.scored_by = 'objective' AND a.correct = 0)) THEN 1 ELSE 0 END) AS lapses,
+    SUM(CASE WHEN a.status = 'reviewed' AND a.scored_by = 'objective' THEN 1 ELSE 0 END) AS objective_reviews,
+    SUM(CASE WHEN a.status = 'reviewed' AND a.scored_by IS NOT NULL AND a.scored_by <> 'objective' THEN 1 ELSE 0 END) AS self_reviews,
+    MAX(a.created_at) AS last_event_at
+  FROM practice_attempt a GROUP BY a.question_id`;
+
+/** One row per approved, whole question: attempts on the left, schedule on the right. */
+export async function loadQuestionActivity(courseId: string): Promise<QuestionActivity[]> {
+  const rows = await all<SqlRow>(
+    `SELECT q.question_id, q.type_key,
+       COALESCE(p.events, 0) AS events,
+       COALESCE(p.attempted, 0) AS attempted,
+       COALESCE(p.reviewed, 0) AS reviewed,
+       COALESCE(p.difficult, 0) AS difficult,
+       COALESCE(p.lapses, 0) AS lapses,
+       COALESCE(p.objective_reviews, 0) AS objective_reviews,
+       COALESCE(p.self_reviews, 0) AS self_reviews,
+       p.last_event_at,
+       ${PRIMARY_NODE_SQL} AS primary_node,
+       rs.question_id AS state_present, rs.next_due_at, rs.interval_days, rs.last_reviewed_at,
+       rs.review_count, rs.lapse_count, rs.ladder_step, rs.last_rating, rs.last_outcome, rs.updated_at
+     FROM question q
+     LEFT JOIN (${ATTEMPT_AGGREGATE_SQL}) p ON p.question_id = q.question_id
+     LEFT JOIN question_review_state rs ON rs.question_id = q.question_id
+     WHERE q.course_id = ? AND q.review_status = 'approved' AND q.parent_question_id IS NULL
+     ORDER BY q.question_id`,
+    [courseId]
+  );
+  const classificationRows = await all<SqlRow>(
+    "SELECT question_id, node_id FROM question_classification WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)",
+    [courseId]
+  );
+  const nodesByQuestion = new Map<string, string[]>();
+  for (const c of classificationRows) {
+    const list = nodesByQuestion.get(c.question_id) ?? [];
+    list.push(String(c.node_id));
+    nodesByQuestion.set(c.question_id, list);
+  }
+  return rows.map((r) => ({
+    question_id: String(r.question_id),
+    type_key: String(r.type_key ?? ""),
+    events: Number(r.events ?? 0),
+    attempted: Number(r.attempted ?? 0),
+    reviewed: Number(r.reviewed ?? 0),
+    difficult: Number(r.difficult ?? 0),
+    lapses: Number(r.lapses ?? 0),
+    objective_reviews: Number(r.objective_reviews ?? 0),
+    self_reviews: Number(r.self_reviews ?? 0),
+    last_event_at: r.last_event_at ?? null,
+    state: r.state_present == null ? emptyReviewState(String(r.question_id), nowUtc()) : reviewStateFromRow(r),
+    node_ids: nodesByQuestion.get(String(r.question_id)) ?? [],
+    primary_node: r.primary_node ?? null,
+  }));
+}
+
+const MINUTES_PER_REVIEW = 1.5;
+
+export async function dueQueue(courseId: string, limit = 10): Promise<DueQueue> {
+  const at = nowUtc();
+  const activity = await loadQuestionActivity(courseId);
+  const scheduled = activity.filter((a) => a.state.next_due_at != null).map((a) => a.state);
+  const ranked = rankDueQuestions(scheduled, at, 10000);
+  const byId = new Map(activity.map((a) => [a.question_id, a]));
+  const items: DueQueueItem[] = ranked.slice(0, Math.max(1, limit)).map((state) => {
+    const row = byId.get(state.question_id);
+    const reason = dueReason(state, at, { includeRatedDifficult: true });
+    return {
+      question_id: state.question_id,
+      snippet: "",
+      type_key: row?.type_key ?? "",
+      next_due_at: state.next_due_at,
+      reason_kind: reason.kind,
+      reason_text: reason.text,
+      interval_days: state.interval_days,
+      review_count: state.review_count,
+      lapse_count: state.lapse_count,
+      last_rating: state.last_rating,
+      last_outcome: state.last_outcome,
+    };
+  });
+  if (items.length) {
+    const snippets = await snippetMap(items.map((i) => i.question_id), 90);
+    for (const item of items) item.snippet = snippets.get(item.question_id) ?? "";
+  }
+  const pause = await getQueuePause();
+  return {
+    due_count: ranked.length,
+    items,
+    paused_until: pause.paused_until,
+    paused: pause.paused,
+    estimated_minutes: Math.max(1, Math.round(items.length * MINUTES_PER_REVIEW)),
+  };
+}
+
+export async function studyProgress(courseId: string): Promise<StudyProgress> {
+  const at = nowUtc();
+  const activity = await loadQuestionActivity(courseId);
+  const nodes = buildNodeTree(
+    await all<SqlRow>("SELECT * FROM course_node WHERE course_id = ? ORDER BY sort_order, name", [courseId])
+  );
+  const snippets = await snippetMap(
+    activity.filter((a) => a.difficult >= 2 || a.lapses >= 2).map((a) => a.question_id),
+    90
+  );
+
+  const direct = new Map<string, NodeActivity>();
+  const bump = (nodeId: string, a: QuestionActivity): void => {
+    const current = direct.get(nodeId) ?? EMPTY_ACTIVITY;
+    const due = a.state.next_due_at != null && a.state.next_due_at <= at;
+    direct.set(nodeId, {
+      questions: current.questions + 1,
+      seen: current.seen + (a.events > 0 ? 1 : 0),
+      attempted: current.attempted + (a.attempted > 0 ? 1 : 0),
+      reviewed: current.reviewed + (a.reviewed > 0 ? 1 : 0),
+      due_now: current.due_now + (due ? 1 : 0),
+      review_events: current.review_events + a.reviewed,
+      lapses: current.lapses + a.lapses,
+      difficult_ratings: current.difficult_ratings + a.difficult,
+      objective_reviews: current.objective_reviews + a.objective_reviews,
+      self_reviews: current.self_reviews + a.self_reviews,
+      last_reviewed_at: laterTimestamp(current.last_reviewed_at, a.state.last_reviewed_at ?? a.last_event_at),
+    });
+  };
+  for (const a of activity) {
+    for (const nodeId of a.node_ids.length ? a.node_ids : a.primary_node ? [a.primary_node] : []) {
+      bump(nodeId, a);
+    }
+  }
+
+  const topics: TopicProgress[] = rollupTopicActivity(nodes, direct, at).map((t) => ({
+    node_id: t.node_id,
+    name: t.name,
+    level_index: t.level_index,
+    questions: t.questions,
+    subtree_questions: t.subtree_questions,
+    subtree_reviewed: t.subtree_reviewed,
+    subtree_due_now: t.subtree_due_now,
+    seen: t.seen,
+    attempted: t.attempted,
+    reviewed: t.reviewed,
+    due_now: t.due_now,
+    review_events: t.review_events,
+    lapses: t.lapses,
+    difficult_ratings: t.difficult_ratings,
+    objective_reviews: t.objective_reviews,
+    self_reviews: t.self_reviews,
+    last_reviewed_at: t.last_reviewed_at,
+    days_since_review: t.days_since_review,
+    evidence: t.evidence,
+    standing: t.standing,
+    evidence_note: t.evidence_note,
+  }));
+
+  const dueNow = activity.filter((a) => a.state.next_due_at != null && a.state.next_due_at <= at).length;
+  const weekAgo = daysBefore(at, 7);
+  const reviewed = activity.filter((a) => a.reviewed > 0).length;
+  const objectiveReviews = activity.reduce((n, a) => n + a.objective_reviews, 0);
+  const selfReviews = activity.reduce((n, a) => n + a.self_reviews, 0);
+  const pause = await getQueuePause();
+
+  return {
+    course_id: courseId,
+    generated_at: at,
+    total_questions: activity.length,
+    ever_seen: activity.filter((a) => a.events > 0).length,
+    attempted: activity.filter((a) => a.attempted > 0).length,
+    reviewed,
+    due_now: dueNow,
+    queue_paused_until: pause.paused ? pause.paused_until : null,
+    reviewed_last_7_days: activity.filter(
+      (a) => a.reviewed > 0 && (a.state.last_reviewed_at ?? a.last_event_at ?? "") >= weekAgo
+    ).length,
+    objective_reviews: objectiveReviews,
+    self_reviews: selfReviews,
+    marking_mix_note: describeMarkingMix(objectiveReviews, selfReviews),
+    topics,
+    repeated_difficulty: activity
+      .filter((a) => a.difficult >= 2 || a.lapses >= 2)
+      .sort((a, b) => b.difficult + b.lapses - (a.difficult + a.lapses))
+      .slice(0, 8)
+      .map((a) => ({
+        question_id: a.question_id,
+        snippet: snippets.get(a.question_id) ?? "",
+        type_key: a.type_key,
+        hard_or_again: a.difficult,
+        lapses: a.lapses,
+        last_rating: a.state.last_rating,
+        last_reviewed_at: a.state.last_reviewed_at,
+      })),
+    next_action: pickNextAction({
+      totalQuestions: activity.length,
+      dueNow,
+      topics,
+      queuePaused: pause.paused,
+    }),
+  };
+}
+
+function daysBefore(at: string, days: number): string {
+  const epoch = parseSqlUtc(at);
+  return epoch == null ? at : formatSqlUtc(epoch - days * 86400000);
+}
+
+function laterTimestamp(a: string | null, b: string | null): string | null {
+  if (!a) return b;
+  if (!b) return a;
+  return a >= b ? a : b;
 }
 
 // ---------- instructions / skill ----------

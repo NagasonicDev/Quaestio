@@ -1,29 +1,60 @@
 import * as data from "../lib/data";
 import { registerQuestionAssets, uploadAsset } from "../lib/assets";
 import type {
+  AttemptInput,
+  AttemptSummary,
   Course,
   CourseFullConfig,
   CourseNode,
   DifficultyLevel,
+  DueQueue,
   GeneratedTestMeta,
   ImportResponse,
   LevelDef,
+  PracticeFilters,
+  PracticePoolCounts,
+  PracticeSessionSummary,
   Question,
   QuestionCountsResponse,
   QuestionListResponse,
   RandomQuestionResponse,
+  ResponseCapture,
+  ReviewPolicy,
+  ReviewStateRow,
+  SessionMode,
   Source,
+  StudyProgress,
   InstitutionYearFilter,
   TestSectionInput,
 } from "./types";
 
 export { assetUrl } from "../lib/assets";
 export type {
+  AttemptInput,
+  AttemptStatus,
+  AttemptSummary,
+  Confidence,
+  DueQueue,
+  DueQueueItem,
+  DueReasonKind,
   GeneratedTestMeta,
   ImportResponse,
   ImportResultItem,
+  PracticeFilters,
+  PracticePoolCounts,
+  PracticeSessionSummary,
+  ReviewOutcome,
+  ReviewPolicy,
+  ReviewStateRow,
+  ScoredBy,
+  SelfRating,
+  SessionMode,
+  SessionPlanItem,
+  SessionTopicCoverage,
+  StudyProgress,
   TestSectionInput,
   TestSectionResult,
+  TopicProgress,
 } from "./types";
 
 async function registerQuestion(q: Question | null): Promise<Question | null> {
@@ -54,6 +85,10 @@ export const api = {
 
   deleteCourse(courseId: string): Promise<void> {
     return data.deleteCourse(courseId);
+  },
+
+  resetCourseProgress(courseId: string): Promise<void> {
+    return data.resetCourseProgress(courseId);
   },
 
   getCourse(courseId: string): Promise<CourseFullConfig> {
@@ -120,15 +155,27 @@ export const api = {
     return import("../lib/exchange").then((m) => m.downloadSkill(courseId));
   },
 
-  exportCourse(courseId: string, filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] }): Promise<void> {
-    return import("../lib/exchange").then((m) => m.exportCourse(courseId, filters));
+  exportCourse(
+    courseId: string,
+    filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] },
+    options?: { includeLearningData?: boolean; includeResponseText?: boolean }
+  ): Promise<void> {
+    return import("../lib/exchange").then((m) => m.exportCourse(courseId, filters, options));
   },
   exportQuestions(courseId: string, filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] }): Promise<void> {
     return import("../lib/exchange").then((m) => m.exportQuestions(courseId, filters));
   },
 
-  importCourseFile(file: File): Promise<{ course_id: string; course_name: string }> {
-    return import("../lib/exchange").then((m) => m.importCourseFile(file));
+  importCourseFile(
+    file: File,
+    onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">
+  ): Promise<{ course_id: string; course_name: string }> {
+    return import("../lib/exchange").then((m) => m.importCourseFile(file, onIdCollision));
+  },
+
+  /** Adds the optional starter course, or returns the copy already here. */
+  ensureSampleCourse(): Promise<{ course_id: string; course_name: string; created: boolean }> {
+    return import("../lib/sampleCourse").then((m) => m.ensureSampleCourse());
   },
 
   uploadAsset(
@@ -204,21 +251,110 @@ export const api = {
     return data.randomQuestion(params).then((r) => registerRandom(r));
   },
 
-  recordAttempt(payload: {
-    session_id?: string;
-    question_id: string;
-    status: string;
-    correct?: boolean;
-    time_spent_sec?: number;
-    user_notes?: string;
-  }): Promise<{ attempt_id: string }> {
+  recordAttempt(payload: AttemptInput): Promise<{ attempt_id: string; created_at: string }> {
     return data.recordAttempt(payload);
+  },
+
+  /**
+   * Finish one review: writes the attempt, the self-rating and the new due date
+   * together.
+   */
+  recordReview(payload: data.ReviewSubmission): Promise<{ attempt_id: string; review: ReviewStateRow }> {
+    return data.recordReview(payload);
+  },
+
+  questionAttempts(questionId: string, limit?: number): Promise<AttemptSummary[]> {
+    return data.questionAttempts(questionId, limit);
+  },
+
+  startPracticeSession(payload: {
+    course_id: string;
+    mode: SessionMode;
+    filters: PracticeFilters;
+    size?: number | null;
+  }): Promise<PracticeSessionSummary> {
+    return data.startPracticeSession(payload);
+  },
+
+  getPracticeSession(sessionId: string): Promise<PracticeSessionSummary | null> {
+    return data.getPracticeSession(sessionId);
+  },
+
+  getActiveSession(courseId: string, mode?: SessionMode): Promise<PracticeSessionSummary | null> {
+    return data.getActiveSession(courseId, mode);
+  },
+
+  resetPracticeSession(sessionId: string): Promise<PracticeSessionSummary | null> {
+    return data.resetPracticeSession(sessionId);
+  },
+
+  setSessionStatus(sessionId: string, status: "active" | "completed" | "abandoned"): Promise<void> {
+    return data.setSessionStatus(sessionId, status);
+  },
+
+  discardPracticeSession(sessionId: string): Promise<void> {
+    return data.discardPracticeSession(sessionId);
+  },
+
+  practicePoolCounts(
+    filters: PracticeFilters,
+    options?: { excludeIds?: string[]; avoidRecentDays?: number | null; dueAt?: string | null }
+  ): Promise<PracticePoolCounts> {
+    return data.practicePoolCounts(filters, options);
+  },
+
+  dueQueue(courseId: string, limit?: number): Promise<DueQueue> {
+    return data.dueQueue(courseId, limit);
+  },
+
+  studyProgress(courseId: string): Promise<StudyProgress> {
+    return data.studyProgress(courseId);
+  },
+
+  getReviewPolicy(): Promise<ReviewPolicy> {
+    return data.getReviewPolicy();
+  },
+
+  setReviewPolicy(policy: ReviewPolicy): Promise<void> {
+    return data.setReviewPolicy(policy);
+  },
+
+  getQueuePause(): Promise<{ paused_until: string | null; paused: boolean }> {
+    return data.getQueuePause();
+  },
+
+  setQueuePause(pausedUntil: string | null): Promise<void> {
+    return data.setQueuePause(pausedUntil);
+  },
+
+  getResponseCapture(): Promise<ResponseCapture> {
+    return data.getResponseCapture();
+  },
+
+  setResponseCapture(value: ResponseCapture): Promise<void> {
+    return data.setResponseCapture(value);
+  },
+
+  getTimerEnabled(): Promise<boolean> {
+    return data.getTimerEnabled();
+  },
+
+  setTimerEnabled(enabled: boolean): Promise<void> {
+    return data.setTimerEnabled(enabled);
+  },
+
+  getReviewState(questionId: string): Promise<ReviewStateRow> {
+    return data.getReviewState(questionId);
+  },
+
+  enqueueForReview(questionId: string): Promise<ReviewStateRow> {
+    return data.enqueueForReview(questionId);
   },
 
   recentQuestions(
     courseId: string,
     limit: number = 10
-  ): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; seen_at: string }>> {
+  ): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; scored_by: string | null; seen_at: string }>> {
     return data.recentQuestions(courseId, limit);
   },
 

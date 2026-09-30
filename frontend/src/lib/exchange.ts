@@ -1,9 +1,10 @@
 import JSZip from "jszip";
 import { questionImportScripts, questionImportWorkflow } from "./questionImportAssets";
 import * as idb from "./db/indexeddb";
-import { all, getFirst, run } from "./db/sqlite";
+import { all, getFirst, run, transaction } from "./db/sqlite";
 import { newId, newQuestionId, nowUtc } from "./id";
 import * as data from "./data";
+import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule";
 import type { CourseFullConfig, CourseNode, Question } from "../api/types";
 
 // ---------- helpers ----------
@@ -476,7 +477,99 @@ export interface CourseExportFilters {
   tags?: string[];
 }
 
-export async function exportCourse(courseId: string, filters: CourseExportFilters = {}): Promise<void> {
+export interface CourseExportOptions {
+  /** Include the review schedule and attempt history. On by default for a course bundle. */
+  includeLearningData?: boolean;
+  /** Include the free-text answers the student typed during practice. Off by default. */
+  includeResponseText?: boolean;
+}
+
+/** Bumped whenever the bundle shape changes. Version 1 had no learning data. */
+export const COURSE_EXPORT_SCHEMA_VERSION = 2;
+export const SUPPORTED_COURSE_EXPORT_VERSIONS = [1, COURSE_EXPORT_SCHEMA_VERSION];
+
+export interface LearningBundle {
+  review_policy: Record<string, unknown> | null;
+  review_state: Array<Record<string, unknown>>;
+  attempts: Array<Record<string, unknown>>;
+}
+
+function optionalText(value: unknown): string | null {
+  return typeof value === "string" && value.length > 0 ? value : null;
+}
+
+function optionalNumber(value: unknown): number | null {
+  return typeof value === "number" && Number.isFinite(value) ? value : null;
+}
+
+/** Review schedule + attempt history for one course, ready to be written to JSON. */
+async function readLearningData(
+  courseId: string,
+  includeResponseText: boolean
+): Promise<LearningBundle> {
+  const reviewRows = await all<Record<string, unknown>>(
+    `SELECT question_review_state.question_id AS question_id, next_due_at, interval_days,
+            last_reviewed_at, review_count, lapse_count, ladder_step, last_rating, last_outcome, updated_at
+       FROM question_review_state
+       JOIN question ON question.question_id = question_review_state.question_id
+      WHERE question.course_id = ?`,
+    [courseId]
+  );
+  const attemptRows = await all<Record<string, unknown>>(
+    `SELECT practice_attempt.question_id AS question_id, practice_attempt.status AS status,
+            practice_attempt.correct AS correct, practice_attempt.time_spent_sec AS time_spent_sec,
+            practice_attempt.user_notes AS user_notes, practice_attempt.created_at AS created_at,
+            practice_attempt.response_text AS response_text, practice_attempt.confidence AS confidence,
+            practice_attempt.self_rating AS self_rating, practice_attempt.hints_revealed AS hints_revealed,
+            practice_attempt.scored_by AS scored_by, practice_attempt.score_earned AS score_earned,
+            practice_attempt.score_possible AS score_possible
+       FROM practice_attempt
+       JOIN question ON question.question_id = practice_attempt.question_id
+      WHERE question.course_id = ?
+      ORDER BY practice_attempt.created_at`,
+    [courseId]
+  );
+  const policy = await data.getReviewPolicy();
+  return {
+    review_policy: { ladder: policy.ladder, again_minutes: policy.againMinutes },
+    review_state: reviewRows.map((row) => ({
+      question_id: row.question_id,
+      next_due_at: optionalText(row.next_due_at),
+      interval_days: Number(row.interval_days) || 0,
+      last_reviewed_at: optionalText(row.last_reviewed_at),
+      review_count: Number(row.review_count) || 0,
+      lapse_count: Number(row.lapse_count) || 0,
+      ladder_step: Number(row.ladder_step) || 0,
+      last_rating: optionalText(row.last_rating),
+      last_outcome: optionalText(row.last_outcome),
+      updated_at: optionalText(row.updated_at),
+    })),
+    attempts: attemptRows.map((row) => ({
+      question_id: row.question_id,
+      status: String(row.status),
+      // `correct` is only meaningful for objectively scored attempts; keep the
+      // provenance column so an imported history is not silently re-graded.
+      correct: optionalNumber(row.correct),
+      time_spent_sec: optionalNumber(row.time_spent_sec),
+      user_notes: optionalText(row.user_notes),
+      created_at: optionalText(row.created_at) ?? nowUtc(),
+      response_text: includeResponseText ? optionalText(row.response_text) : null,
+      confidence: optionalText(row.confidence),
+      self_rating: optionalText(row.self_rating),
+      hints_revealed: Number(row.hints_revealed) || 0,
+      scored_by: optionalText(row.scored_by),
+      score_earned: optionalNumber(row.score_earned),
+      score_possible: optionalNumber(row.score_possible),
+    })),
+  };
+}
+
+export async function exportCourse(
+  courseId: string,
+  filters: CourseExportFilters = {},
+  options: CourseExportOptions = {}
+): Promise<void> {
+  const includeLearningData = options.includeLearningData !== false;
   const config = await data.getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
   const row = await data.getCourseRow(courseId);
@@ -487,13 +580,24 @@ export async function exportCourse(courseId: string, filters: CourseExportFilter
     (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
+  const learning = includeLearningData
+    ? await readLearningData(courseId, options.includeResponseText === true)
+    : null;
   const zip = new JSZip();
   zip.file(
     "course.json",
     JSON.stringify(
       {
-        export_schema_version: 1,
+        export_schema_version: COURSE_EXPORT_SCHEMA_VERSION,
         exported_at: new Date().toISOString(),
+        includes: {
+          course_structure: true,
+          questions: true,
+          images: true,
+          learning_data: includeLearningData,
+          typed_answers: includeLearningData && options.includeResponseText === true,
+          generated_files: false,
+        },
         course: {
           ...config,
           description: row?.description ?? null,
@@ -502,6 +606,7 @@ export async function exportCourse(courseId: string, filters: CourseExportFilter
           version_year: row?.version_year ?? null,
         },
         questions,
+        learning,
       },
       null,
       2
@@ -522,6 +627,24 @@ export async function exportCourse(courseId: string, filters: CourseExportFilter
     if (!blob) continue;
     zip.file(`assets/${assetId}.${mimeExtension(blob.type || "")}`, blob);
   }
+  zip.file(
+    "README.txt",
+    [
+      `${config.name} — Quaestio course bundle`,
+      "",
+      "Contents:",
+      "- course.json: course structure, difficulty and tag definitions, and the questions listed in it.",
+      `- assets/: images and diagrams referenced by the exported questions (${seen.size} file(s)).`,
+      `- learning: ${learning ? `review schedule and ${learning.attempts.length} practice attempt record(s)` : "not included"}.`,
+      learning ? `- typed answers: ${options.includeResponseText === true ? "included" : "excluded"}.` : null,
+      "- Generated test files are not included; regenerate them from the questions.",
+      "",
+      "Importing replaces the course with the same id, or asks whether to add it as a new course.",
+      "Attempt history is restored without its practice session, so the schedule carries over but session history does not.",
+    ]
+      .filter((line) => line !== null)
+      .join("\n") + "\n"
+  );
   const zipBlob = await zip.generateAsync({ type: "blob" });
   downloadBlob(zipBlob, `${slugName(config.name)}.qb`);
 }
@@ -542,9 +665,17 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
     export_schema_version: 1,
     course_name: config.name,
     exported_at: new Date().toISOString(),
+    includes: {
+      course_structure: false,
+      questions: true,
+      images: true,
+      learning_data: false,
+      typed_answers: false,
+      generated_files: false,
+    },
     questions,
   }, null, 2));
-  zip.file("README.txt", "Editable question export. Edit questions.json; binary files referenced by asset_id are in assets/. Keep asset IDs and filenames unchanged so image blocks continue to resolve. This package contains no course structure or settings.\n");
+  zip.file("README.txt", "Editable question export. Edit questions.json; binary files referenced by asset_id are in assets/. Keep asset IDs and filenames unchanged so image blocks continue to resolve.\n\nThis package deliberately contains questions and their images only: no course structure, no review schedule, no attempt history, no typed answers, and no generated files. Use the .qb course export for a full backup.\n");
   const seen = new Set<string>();
   const collectIds = (q: Question) => {
     for (const a of q.assets) if (!seen.has(a.asset_id)) seen.add(a.asset_id);
@@ -570,9 +701,13 @@ export interface ParsedBundle {
     subject?: string | null;
     curriculum?: string | null;
     version_year?: string | null;
+    /** Set by the built-in starter bundle so the UI can offer to remove it. */
+    is_sample?: boolean;
   };
   questions: Question[];
   assetBlobs: Map<string, Blob>;
+  /** Present from export version 2 onwards. */
+  learning?: LearningBundle | null;
 }
 
 export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
@@ -587,9 +722,9 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
     throw new Error("This .qb bundle has no course.json — it may be corrupted.");
   }
   const courseJson = JSON.parse(await courseJsonFile.async("string"));
-  if (courseJson.export_schema_version !== 1) {
+  if (!SUPPORTED_COURSE_EXPORT_VERSIONS.includes(courseJson.export_schema_version)) {
     throw new Error(
-      `Unsupported export schema version ${courseJson.export_schema_version} — this app supports version 1.`
+      `Unsupported export schema version ${courseJson.export_schema_version} — this app supports version ${SUPPORTED_COURSE_EXPORT_VERSIONS.join(" and ")}.`
     );
   }
   const assetBlobs = new Map<string, Blob>();
@@ -603,7 +738,12 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
       if (!assetBlobs.has(assetId)) assetBlobs.set(assetId, await entry.async("blob"));
     }
   }
-  return { course: courseJson.course, questions: courseJson.questions ?? [], assetBlobs };
+  return {
+    course: courseJson.course,
+    questions: courseJson.questions ?? [],
+    assetBlobs,
+    learning: courseJson.learning ?? null,
+  };
 }
 
 async function wipeCourseData(courseId: string): Promise<void> {
@@ -699,12 +839,19 @@ async function insertQuestion(
       [questionId, mapped, i === 0 ? 1 : 0]
     );
   });
-  for (const tag of question.tags ?? []) {
+  // A question/tag pair is unique in the join table. Bundles from older
+  // exports may repeat a tag, so normalize and de-duplicate before inserting.
+  const insertedTagNames = new Set<string>();
+  for (const rawTag of question.tags ?? []) {
+    const tag = rawTag.trim();
+    if (!tag || insertedTagNames.has(tag)) continue;
+    insertedTagNames.add(tag);
     const tagId = await getAllowedTagId(ctx.courseId, tag);
     await run("INSERT INTO question_tag (question_id, tag_id) VALUES (?, ?)", [questionId, tagId]);
   }
   const slotLists: Array<[string, Question["body"]]> = [
     ["body", question.body],
+    ["hint", question.hint],
     ["answer", question.answer],
     ["solution", question.solution],
     ["marking_criteria", question.marking_criteria],
@@ -770,7 +917,7 @@ export async function applyCourseBundle(
   const collectQuestionAssets = (questions: Question[]) => {
     for (const question of questions) {
       for (const asset of question.assets ?? []) bundleAssetIds.add(asset.asset_id);
-      for (const slot of [question.body, question.answer, question.solution, question.marking_criteria]) {
+      for (const slot of [question.body, question.hint, question.answer, question.solution, question.marking_criteria]) {
         for (const block of slot ?? []) {
           const assetPath = block.content?.asset_path;
           if (typeof assetPath === "string" && assetPath) bundleAssetIds.add(assetPath);
@@ -793,8 +940,8 @@ export async function applyCourseBundle(
   const now = nowUtc();
   await run(
     `INSERT INTO course (course_id, name, description, subject, curriculum, version_year,
-        schema_version, allow_multi_classification, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        schema_version, allow_multi_classification, is_sample, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       courseId,
       src.name,
@@ -804,6 +951,7 @@ export async function applyCourseBundle(
       src.version_year ?? null,
       src.schema_version ?? 1,
       src.allow_multi_classification ? 1 : 0,
+      src.is_sample ? 1 : 0,
       now,
       now,
     ]
@@ -877,24 +1025,111 @@ export async function applyCourseBundle(
   for (const [assetId, blob] of bundle.assetBlobs) {
     await idb.putAsset(ctx.assetMap.get(assetId) ?? assetId, blob);
   }
+  await restoreLearningData(bundle.learning, ctx);
   return courseId;
 }
 
-export async function importCourseFile(file: File): Promise<{ course_id: string; course_name: string }> {
+/**
+ * Puts the review schedule and attempt history back, keyed by the ids the
+ * questions were given on import. Sessions are deliberately not restored: the
+ * plan was a snapshot of one sitting on one device, and replaying it would
+ * re-offer questions the student has already answered here.
+ */
+async function restoreLearningData(
+  learning: LearningBundle | null | undefined,
+  ctx: ImportCtx
+): Promise<void> {
+  if (!learning) return;
+  const now = nowUtc();
+  await transaction(async () => {
+    for (const row of learning.review_state ?? []) {
+      const questionId = ctx.questionMap.get(String(row.question_id));
+      if (!questionId) continue;
+      await run(
+        `INSERT INTO question_review_state
+           (question_id, next_due_at, interval_days, last_reviewed_at, review_count, lapse_count, ladder_step, last_rating, last_outcome, updated_at)
+         VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+         ON CONFLICT(question_id) DO UPDATE SET
+           next_due_at = excluded.next_due_at,
+           interval_days = excluded.interval_days,
+           last_reviewed_at = excluded.last_reviewed_at,
+           review_count = excluded.review_count,
+           lapse_count = excluded.lapse_count,
+           ladder_step = excluded.ladder_step,
+           last_rating = excluded.last_rating,
+           last_outcome = excluded.last_outcome,
+           updated_at = excluded.updated_at`,
+        [
+          questionId,
+          optionalText(row.next_due_at),
+          typeof row.interval_days === "number" && Number.isFinite(row.interval_days) ? row.interval_days : 0,
+          optionalText(row.last_reviewed_at),
+          typeof row.review_count === "number" ? row.review_count : 0,
+          typeof row.lapse_count === "number" ? row.lapse_count : 0,
+          typeof row.ladder_step === "number" ? row.ladder_step : 0,
+          isSelfRating(row.last_rating) ? row.last_rating : null,
+          isReviewOutcome(row.last_outcome) ? row.last_outcome : null,
+          optionalText(row.updated_at) ?? now,
+        ]
+      );
+    }
+    for (const row of learning.attempts ?? []) {
+      const questionId = ctx.questionMap.get(String(row.question_id));
+      if (!questionId) continue;
+      const status = String(row.status ?? "seen");
+      await run(
+        `INSERT INTO practice_attempt
+           (attempt_id, session_id, question_id, status, correct, time_spent_sec, user_notes, created_at,
+            response_text, confidence, self_rating, hints_revealed, scored_by, score_earned, score_possible)
+         VALUES (?, NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        [
+          newId("att"),
+          questionId,
+          isAttemptStatus(status) ? status : "seen",
+          // `correct` is a self-report or an app score. Only trust it when the
+          // bundle says an objective marker decided it.
+          optionalNumber(row.correct),
+          optionalNumber(row.time_spent_sec),
+          optionalText(row.user_notes),
+          optionalText(row.created_at) ?? now,
+          optionalText(row.response_text),
+          optionalText(row.confidence),
+          isSelfRating(row.self_rating) ? row.self_rating : null,
+          typeof row.hints_revealed === "number" ? row.hints_revealed : 0,
+          optionalText(row.scored_by),
+          optionalNumber(row.score_earned),
+          optionalNumber(row.score_possible),
+        ]
+      );
+    }
+  });
+}
+
+/**
+ * `onIdCollision` lets the UI ask the question in its own accessible dialog;
+ * without it the browser confirm() prompt is used.
+ */
+export async function importCourseFile(
+  file: File,
+  onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">
+): Promise<{ course_id: string; course_name: string }> {
   const bundle = await parseCourseBundle(file);
   const existing = await getFirst("SELECT course_id FROM course WHERE course_id = ?", [
     bundle.course.course_id,
   ]);
   let courseId: string;
   if (existing) {
-    const replace = window.confirm(
-      `A course with id '${bundle.course.course_id}' already exists. Replace it with the imported one, or add as a new course?`
-    );
-    if (replace) {
-      courseId = await applyCourseBundle(bundle, "replace");
-    } else {
-      courseId = await importAsNewCourse(bundle);
-    }
+    const choice = onIdCollision
+      ? await onIdCollision({ course_id: bundle.course.course_id, course_name: bundle.course.name })
+      : window.confirm(
+          `A course with id '${bundle.course.course_id}' already exists. Replace it with the imported one, or add as a new course?`
+        )
+        ? "replace"
+        : "new";
+    courseId =
+      choice === "replace"
+        ? await applyCourseBundle(bundle, "replace")
+        : await importAsNewCourse(bundle);
   } else {
     courseId = await importAsNewCourse(bundle);
   }

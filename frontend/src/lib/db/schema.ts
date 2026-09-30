@@ -9,7 +9,8 @@ CREATE TABLE IF NOT EXISTS course (
   schema_version INTEGER NOT NULL DEFAULT 1,
   allow_multi_classification INTEGER NOT NULL DEFAULT 1,
   created_at TEXT NOT NULL,
-  updated_at TEXT NOT NULL
+  updated_at TEXT NOT NULL,
+  is_sample INTEGER NOT NULL DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS course_level_def (
@@ -137,8 +138,15 @@ CREATE TABLE IF NOT EXISTS practice_session (
   course_id TEXT NOT NULL REFERENCES course(course_id),
   filter_json TEXT NOT NULL,
   mode TEXT NOT NULL,
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  config_json TEXT,
+  plan_json TEXT,
+  status TEXT NOT NULL DEFAULT 'active',
+  planned_count INTEGER NOT NULL DEFAULT 0,
+  completed_count INTEGER NOT NULL DEFAULT 0,
+  updated_at TEXT
 );
+CREATE INDEX IF NOT EXISTS idx_session_course ON practice_session(course_id, created_at);
 
 CREATE TABLE IF NOT EXISTS practice_attempt (
   attempt_id TEXT PRIMARY KEY,
@@ -148,9 +156,41 @@ CREATE TABLE IF NOT EXISTS practice_attempt (
   correct INTEGER,
   time_spent_sec INTEGER,
   user_notes TEXT,
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  response_text TEXT,
+  confidence TEXT,
+  self_rating TEXT,
+  hints_revealed INTEGER NOT NULL DEFAULT 0,
+  scored_by TEXT,
+  score_earned REAL,
+  score_possible REAL
 );
 CREATE INDEX IF NOT EXISTS idx_attempt_question ON practice_attempt(question_id, created_at);
+CREATE INDEX IF NOT EXISTS idx_attempt_created ON practice_attempt(created_at);
+
+-- Per-question review schedule. This is a projection: it can be rebuilt from
+-- practice_attempt rows, and it disappears with the question it belongs to.
+CREATE TABLE IF NOT EXISTS question_review_state (
+  question_id TEXT PRIMARY KEY REFERENCES question(question_id) ON DELETE CASCADE,
+  next_due_at TEXT,
+  interval_days REAL NOT NULL DEFAULT 0,
+  last_reviewed_at TEXT,
+  review_count INTEGER NOT NULL DEFAULT 0,
+  lapse_count INTEGER NOT NULL DEFAULT 0,
+  ladder_step INTEGER NOT NULL DEFAULT 0,
+  last_rating TEXT,
+  last_outcome TEXT,
+  updated_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_review_state_due ON question_review_state(next_due_at);
+
+-- App-level preferences and switches, keyed by name. Holds the review policy,
+-- the queue pause, and the answer-capture preference.
+CREATE TABLE IF NOT EXISTS app_setting (
+  setting_key TEXT PRIMARY KEY,
+  value TEXT,
+  updated_at TEXT NOT NULL
+);
 
 CREATE TABLE IF NOT EXISTS import_job (
   import_job_id TEXT PRIMARY KEY,
@@ -191,4 +231,76 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
   ["multiple_choice", "Multiple Choice"],
   ["short_answer", "Short Answer"],
   ["extended_response", "Extended Response"],
+];
+
+/**
+ * Bumped whenever SCHEMA_SQL changes shape. This is the *database* schema
+ * version and is deliberately unrelated to the IndexedDB DB_VERSION used to
+ * version the persisted blobs, and to the per-course `schema_version` that
+ * describes the question format a course expects.
+ */
+export const SCHEMA_VERSION = 1;
+
+export interface Migration {
+  id: number;
+  name: string;
+  sql: string;
+}
+
+/**
+ * Ordered, additive migrations applied to databases created by an earlier
+ * build. Each one runs in its own transaction, so a failure leaves the database
+ * at the last version that fully applied rather than half-upgraded.
+ */
+export const MIGRATIONS: Migration[] = [
+  {
+    id: 1,
+    name: "study-loop-foundation",
+    sql: `
+      ALTER TABLE course ADD COLUMN is_sample INTEGER NOT NULL DEFAULT 0;
+
+      ALTER TABLE practice_session ADD COLUMN config_json TEXT;
+      ALTER TABLE practice_session ADD COLUMN plan_json TEXT;
+      ALTER TABLE practice_session ADD COLUMN status TEXT NOT NULL DEFAULT 'active';
+      ALTER TABLE practice_session ADD COLUMN planned_count INTEGER NOT NULL DEFAULT 0;
+      ALTER TABLE practice_session ADD COLUMN completed_count INTEGER NOT NULL DEFAULT 0;
+      ALTER TABLE practice_session ADD COLUMN updated_at TEXT;
+      CREATE INDEX IF NOT EXISTS idx_session_course ON practice_session(course_id, created_at);
+
+      ALTER TABLE practice_attempt ADD COLUMN response_text TEXT;
+      ALTER TABLE practice_attempt ADD COLUMN confidence TEXT;
+      ALTER TABLE practice_attempt ADD COLUMN self_rating TEXT;
+      ALTER TABLE practice_attempt ADD COLUMN hints_revealed INTEGER NOT NULL DEFAULT 0;
+      ALTER TABLE practice_attempt ADD COLUMN scored_by TEXT;
+      ALTER TABLE practice_attempt ADD COLUMN score_earned REAL;
+      ALTER TABLE practice_attempt ADD COLUMN score_possible REAL;
+      CREATE INDEX IF NOT EXISTS idx_attempt_created ON practice_attempt(created_at);
+
+      -- Legacy rows recorded a bare correct flag. Some of those came from an
+      -- objectively marked multiple choice question and some from a mark the
+      -- student typed into the quiz, so they are labelled as a manual mark
+      -- rather than being upgraded to a claim of objectivity we cannot prove.
+      UPDATE practice_attempt SET scored_by = 'manual_legacy' WHERE correct IS NOT NULL;
+
+      CREATE TABLE IF NOT EXISTS question_review_state (
+        question_id TEXT PRIMARY KEY REFERENCES question(question_id) ON DELETE CASCADE,
+        next_due_at TEXT,
+        interval_days REAL NOT NULL DEFAULT 0,
+        last_reviewed_at TEXT,
+        review_count INTEGER NOT NULL DEFAULT 0,
+        lapse_count INTEGER NOT NULL DEFAULT 0,
+        ladder_step INTEGER NOT NULL DEFAULT 0,
+        last_rating TEXT,
+        last_outcome TEXT,
+        updated_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS idx_review_state_due ON question_review_state(next_due_at);
+
+      CREATE TABLE IF NOT EXISTS app_setting (
+        setting_key TEXT PRIMARY KEY,
+        value TEXT,
+        updated_at TEXT NOT NULL
+      );
+    `,
+  },
 ];
