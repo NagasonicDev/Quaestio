@@ -7,6 +7,7 @@ import { Panel, PanelHead } from "./system";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useConfirm } from "./ui/modal";
+import { notify } from "../lib/notifications";
 
 interface StructureEditorProps {
   config: CourseFullConfig;
@@ -15,7 +16,6 @@ interface StructureEditorProps {
 export function StructureEditor({ config }: StructureEditorProps) {
   const qc = useQueryClient();
   const [newLevelLabel, setNewLevelLabel] = useState("");
-  const [levelError, setLevelError] = useState<string | null>(null);
 
   function refresh() {
     qc.invalidateQueries({ queryKey: ["course", config.course_id] });
@@ -60,10 +60,9 @@ export function StructureEditor({ config }: StructureEditorProps) {
         />
         <div className="divide-y divide-border p-2">
           {config.hierarchy.map((lv) => (
-            <LevelRow key={lv.level_index} courseId={config.course_id} level={lv} onChanged={refresh} onError={setLevelError} />
+            <LevelRow key={lv.level_index} courseId={config.course_id} level={lv} onChanged={refresh} />
           ))}
         </div>
-        {levelError && <p className="px-5 py-2 text-xs text-destructive">{levelError}</p>}
       </Panel>
 
       <Panel>
@@ -101,8 +100,8 @@ export function StructureEditor({ config }: StructureEditorProps) {
 }
 
 function LevelRow({
-  courseId, level, onChanged, onError,
-}: { courseId: string; level: LevelDef; onChanged: () => void; onError: (e: string | null) => void }) {
+  courseId, level, onChanged,
+}: { courseId: string; level: LevelDef; onChanged: () => void }) {
   const confirm = useConfirm();
   const [label, setLabel] = useState(level.label);
   const [saving, setSaving] = useState(false);
@@ -119,7 +118,6 @@ function LevelRow({
   }
 
   async function remove() {
-    onError(null);
     const ok = await confirm({
       title: `Delete the “${level.label}” level?`,
       description:
@@ -132,11 +130,9 @@ function LevelRow({
       await api.deleteLevel(courseId, level.level_index);
       onChanged();
     } catch (err) {
-      onError(
-        err instanceof Error && err.message.includes("400")
-          ? "Can't delete this level while it still has categories. Delete or move those first."
-          : "Failed to delete level."
-      );
+      notify("Could not delete level", "error", err instanceof Error && err.message.includes("400")
+        ? "This level still has categories. Delete or move those first."
+        : err instanceof Error ? err.message : "Failed to delete level.");
     }
   }
 

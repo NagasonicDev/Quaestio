@@ -14,6 +14,7 @@ import { clearQuestions } from "../lib/data";
 import { api } from "../api/client";
 import { Input } from "../components/ui/input";
 import { StudySettings } from "../components/StudySettings";
+import { notify } from "../lib/notifications";
 
 export function Settings() {
   const { theme, toggle } = useTheme();
@@ -22,7 +23,6 @@ export function Settings() {
   const queryClient = useQueryClient();
   const confirm = useConfirm();
   const { data: config } = useCourseConfig(courseId);
-  const [clearError, setClearError] = useState<string | null>(null);
 
   return (
     <div className="mx-auto max-w-2xl space-y-5">
@@ -105,12 +105,11 @@ export function Settings() {
                   destructive: true,
                 });
                 if (!ok) return;
-                setClearError(null);
                 try {
                   await clearQuestions();
                   window.location.reload();
                 } catch (err) {
-                  setClearError(err instanceof Error ? err.message : String(err));
+                  notify("Could not clear questions", "error", err instanceof Error ? err.message : String(err));
                 }
               }}
             >
@@ -137,14 +136,13 @@ export function Settings() {
                   destructive: true,
                 });
                 if (!ok) return;
-                setClearError(null);
                 try {
                   await clearAllData();
                   setCourseId(null);
                   queryClient.clear();
                   navigate("/");
                 } catch (err) {
-                  setClearError(err instanceof Error ? err.message : String(err));
+                  notify("Could not clear local data", "error", err instanceof Error ? err.message : String(err));
                 }
               }}
             >
@@ -153,11 +151,6 @@ export function Settings() {
             </Button>
           </div>
         </div>
-        {clearError && (
-          <p role="alert" className="border-t border-border px-5 py-3 text-sm text-destructive">
-            {clearError}
-          </p>
-        )}
       </Panel>
     </div>
   );
@@ -172,13 +165,11 @@ function InstitutionManager({ courseId }: { courseId: string | null }) {
   });
   const [drafts, setDrafts] = useState<Record<string, string>>({});
   const [savingName, setSavingName] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   async function rename(currentName: string) {
     const nextName = (drafts[currentName] ?? currentName).trim();
     if (!courseId || !nextName || nextName === currentName) return;
     setSavingName(currentName);
-    setError(null);
     try {
       await api.renameInstitution(courseId, currentName, nextName);
       try {
@@ -200,8 +191,9 @@ function InstitutionManager({ courseId }: { courseId: string | null }) {
         queryClient.invalidateQueries({ queryKey: ["questions"] }),
         queryClient.invalidateQueries({ queryKey: ["question"] }),
       ]);
+      notify("Institution renamed", "success", `${currentName} → ${nextName}`);
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Could not rename the institution.");
+      notify("Could not rename institution", "error", err instanceof Error ? err.message : "Could not rename the institution.");
     } finally {
       setSavingName(null);
     }
@@ -222,7 +214,6 @@ function InstitutionManager({ courseId }: { courseId: string | null }) {
             </Button>
           </div>;
         })}</div>}
-        {error && <p className="mt-3 text-sm text-destructive" role="alert">{error}</p>}
       </div>
     </Panel>
   );

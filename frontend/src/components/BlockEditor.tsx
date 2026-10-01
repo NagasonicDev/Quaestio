@@ -6,11 +6,14 @@ import type { BlockType } from "../api/types";
 import { api, assetUrl } from "../api/client";
 import { Meta, Panel, PanelHead } from "./system";
 import { Button } from "./ui/button";
+import { notify } from "../lib/notifications";
 import { Checkbox } from "./ui/checkbox";
 import { Input } from "./ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Textarea } from "./ui/textarea";
 import { normalizeEquationLatex } from "./MathText";
+import { FunctionGraphPreview } from "./FunctionGraphPreview";
+import { DEFAULT_FUNCTION_GRAPH } from "../lib/functionGraph";
 
 export interface EditableBlock {
   tempId: string;
@@ -25,6 +28,7 @@ const BLOCK_TYPE_LABELS: Record<BlockType, string> = {
   image: "Image",
   diagram: "Diagram",
   graph: "Graph",
+  function: "Function",
   table: "Table",
   list: "List",
   code: "Code",
@@ -46,6 +50,7 @@ export function emptyBlock(type: BlockType): EditableBlock {
     image: { asset_path: "", alt_text: "", caption: "" },
     diagram: { asset_path: "", alt_text: "", caption: "" },
     graph: { asset_path: "", alt_text: "", caption: "" },
+    function: { expression: DEFAULT_FUNCTION_GRAPH.expression, x_min: DEFAULT_FUNCTION_GRAPH.xMin, x_max: DEFAULT_FUNCTION_GRAPH.xMax, y_min: DEFAULT_FUNCTION_GRAPH.yMin, y_max: DEFAULT_FUNCTION_GRAPH.yMax, x_label: DEFAULT_FUNCTION_GRAPH.xLabel, y_label: DEFAULT_FUNCTION_GRAPH.yLabel, caption: "" },
     table: { columns: ["", ""], rows: [["", ""]] },
     list: { ordered: false, items: [""] },
     code: { language: "", code: "" },
@@ -179,17 +184,15 @@ export function BlockEditor({ label, blocks, onChange, note }: BlockEditorProps)
 
 function ImageBlockFields({ content, onChange }: { content: Record<string, any>; onChange: (patch: Record<string, any>) => void }) {
   const [uploading, setUploading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   async function handleFile(file: File | null) {
     if (!file) return;
     setUploading(true);
-    setError(null);
     try {
       const res = await api.uploadAsset(file);
       onChange({ asset_path: res.asset_path });
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Upload failed");
+      notify("Image upload failed", "error", err instanceof Error ? err.message : "Upload failed.");
     } finally {
       setUploading(false);
     }
@@ -215,7 +218,6 @@ function ImageBlockFields({ content, onChange }: { content: Record<string, any>;
           <input type="file" accept="image/*" className="hidden" disabled={uploading} onChange={(e) => handleFile(e.target.files?.[0] ?? null)} />
         </label>
       )}
-      {error && <p className="text-xs text-destructive">{error}</p>}
       <Input value={content.alt_text ?? ""} onChange={(e) => onChange({ alt_text: e.target.value })} placeholder="Alt text (for accessibility)" />
       <Input value={content.caption ?? ""} onChange={(e) => onChange({ caption: e.target.value })} placeholder="Caption (optional)" />
     </div>
@@ -271,6 +273,27 @@ function BlockFields({ block, onChange }: { block: EditableBlock; onChange: (con
     case "diagram":
     case "graph":
       return <ImageBlockFields content={c} onChange={set} />;
+
+    case "function":
+      return (
+        <div className="space-y-3">
+          <label className="block space-y-1">
+            <span className="label">Function of x</span>
+            <Input value={c.expression ?? ""} onChange={(e) => set({ expression: e.target.value })} className="font-mono" placeholder="x(x - 2)" />
+          </label>
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+            {([["x_min", "x minimum"], ["x_max", "x maximum"], ["y_min", "y minimum"], ["y_max", "y maximum"]] as const).map(([key, label]) => (
+              <label key={key} className="space-y-1"><span className="label">{label}</span><Input type="number" value={c[key] ?? ""} onChange={(e) => set({ [key]: Number(e.target.value) })} /></label>
+            ))}
+          </div>
+          <div className="grid grid-cols-2 gap-2">
+            <label className="space-y-1"><span className="label">Horizontal axis label</span><Input value={c.x_label ?? "x"} onChange={(e) => set({ x_label: e.target.value })} /></label>
+            <label className="space-y-1"><span className="label">Vertical axis label</span><Input value={c.y_label ?? "y"} onChange={(e) => set({ y_label: e.target.value })} /></label>
+          </div>
+          <div className="overflow-x-auto rounded-md border border-border bg-white p-1"><FunctionGraphPreview content={c} className="min-w-[480px]" /></div>
+          <Input value={c.caption ?? ""} onChange={(e) => set({ caption: e.target.value })} placeholder="Caption (optional)" />
+        </div>
+      );
 
     case "table": {
       const columns: string[] = c.columns ?? [];

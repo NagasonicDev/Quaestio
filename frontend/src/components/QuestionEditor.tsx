@@ -8,6 +8,7 @@ import { BlockEditor, blocksToPayload, emptyBlock, type EditableBlock } from "./
 import type { CourseFullConfig, ContentBlock, CourseNode, Question } from "../api/types";
 import { Field, Panel, PanelHead } from "./system";
 import { Button } from "./ui/button";
+import { notify } from "../lib/notifications";
 import { Input } from "./ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Switch } from "./ui/switch";
@@ -114,7 +115,6 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const pendingNavigation = useRef<(() => void) | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!hasUnsavedChanges) return;
@@ -180,7 +180,6 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSaving(true);
-    setError(null);
     try {
       const payload: Record<string, any> = {
         type_key: typeKey,
@@ -227,7 +226,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
       if (leave) leave();
       else onSaved();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to save question");
+      notify("Could not save question", "error", err instanceof Error ? err.message : "Failed to save question.");
       if (pendingNavigation.current) setShowLeavePrompt(true);
     } finally {
       setSaving(false);
@@ -245,13 +244,12 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     });
     if (!ok) return;
     setSaving(true);
-    setError(null);
     try {
       await api.deleteQuestion(existing.question_id);
       setHasUnsavedChanges(false);
       onSaved();
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Failed to delete question");
+      notify("Could not delete question", "error", err instanceof Error ? err.message : "Failed to delete question.");
     } finally {
       setSaving(false);
     }
@@ -446,7 +444,6 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
           </div>
         </div>
 
-        {error && <p className="text-xs text-destructive">{error}</p>}
         <div className="flex justify-end gap-2">
           <Button type="button" variant="outline" data-dismiss-editor onClick={() => requestLeave(onCancel)}>
             Cancel

@@ -436,11 +436,12 @@ async function renderBlock(w: Writer, b: ContentBlock, images: Map<string, Resol
     }
     case "image":
     case "diagram":
-    case "graph": {
+    case "graph":
+    case "function": {
       const img = images.get(b.block_id);
       if (!img) {
         const path = contentOf(b, "asset_path", "");
-        w.text(`[missing image: ${typeof path === "string" ? path : ""}]`, { font: w.fonts.italic, size: 10, color: GRAY });
+        w.text(b.block_type === "function" ? `y = ${String(contentOf(b, "expression", ""))}` : `[missing image: ${typeof path === "string" ? path : ""}]`, { font: w.fonts.italic, size: 10, color: GRAY });
         w.y -= LINE_H(11);
         return true;
       }

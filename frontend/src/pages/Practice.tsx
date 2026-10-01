@@ -18,6 +18,7 @@ import { SessionModePicker } from "../components/SessionModePicker";
 import { SessionExhausted } from "../components/SessionExhausted";
 import { DueQueueCard, useDueQueue } from "../components/DueQueueCard";
 import { describeInterval } from "../lib/reviewSchedule";
+import { notify } from "../lib/notifications";
 
 function isSessionMode(value: string | null): value is SessionMode {
   return value === "focused" || value === "mixed" || value === "due_review";
@@ -51,7 +52,6 @@ export function Practice() {
   const [current, setCurrent] = useState<Question | null>(null);
   const [stage, setStage] = useState<PracticeStage>("prompt");
   const [planItem, setPlanItem] = useState<{ reason_text?: string; reason_kind?: string } | null>(null);
-  const [startError, setStartError] = useState<string | null>(null);
   const [sessionNote, setSessionNote] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
@@ -146,7 +146,6 @@ export function Practice() {
     },
     onSuccess: async (summary) => {
       setSessionId(summary.session_id);
-      setStartError(null);
       setSessionNote(null);
       setMode(summary.mode);
       setSearchParams(summary.mode === "due_review" ? { mode: "due_review" } : {}, { replace: true });
@@ -161,7 +160,6 @@ export function Practice() {
         return;
       }
       setLoading(true);
-      setStartError(null);
       try {
         const question = await api.getQuestion(questionId);
         setCurrent(question);
@@ -175,7 +173,7 @@ export function Practice() {
           .catch(() => {});
         queryClient.invalidateQueries({ queryKey: ["recent-questions", courseId] });
       } catch (e) {
-        setStartError(e instanceof Error ? e.message : "Could not load that question");
+        notify("Could not load question", "error", e instanceof Error ? e.message : "Could not load that question.");
         setCurrent(null);
       } finally {
         setLoading(false);
@@ -338,11 +336,6 @@ export function Practice() {
       />
 
       <div className="space-y-4">
-        {startError && (
-          <div className="rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">
-            {startError}
-          </div>
-        )}
 
         {!session && (
           <div className="space-y-4">

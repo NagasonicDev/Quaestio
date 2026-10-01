@@ -2,6 +2,7 @@ import type { ContentBlock } from "../api/types";
 import * as idb from "./db/indexeddb";
 import { contentOf, tableCellText, tableRows } from "./criteria";
 import { renderLatexPng } from "./equations";
+import { normalizedFunctionGraph, renderFunctionGraphPng } from "./functionGraph";
 
 export const IMAGE_TYPES = new Set(["image", "diagram", "graph"]);
 
@@ -94,6 +95,11 @@ export async function resolveImages(
         heightPx: size ? size.h : 96,
       });
     }
+  }));
+  const functionJobs = blocks.filter((b) => b.block_type === "function");
+  await Promise.all(functionJobs.map(async (b) => {
+    const png = await renderFunctionGraphPng(normalizedFunctionGraph(b.content));
+    if (png) map.set(b.block_id, { data: png.data, mime: "image/png", widthPx: png.width, heightPx: png.height });
   }));
   return map;
 }

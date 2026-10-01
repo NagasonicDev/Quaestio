@@ -232,6 +232,10 @@ be one of the listed valid types.
 Content block types available for `body`/`answer`/`solution`/`marking_criteria`:
 `text`, `heading`, `equation` (LaTeX in `latex`, `display: true/false`),
 `image`/`diagram`/`graph` (flag these for manual attachment — see step 3),
+`function` (for an explicit single-variable function, use its right-hand side
+in `expression`, numeric `x_min`, `x_max`, `y_min`, and `y_max`, and optional
+`x_label`, `y_label`, and `caption`; for example
+`{"block_type":"function","content":{"expression":"x^2","x_min":-5,"x_max":5,"y_min":-2,"y_max":10}}`),
 `table` (`columns`, `rows`), `list` (`ordered`, `items`), `code`
 (`language`, `code`), `answer_area` (`lines`), `page_break`.
 

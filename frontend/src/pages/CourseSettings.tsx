@@ -4,6 +4,7 @@ import { api } from "../api/client";
 import { formatQuestionType } from "../lib/questionTypes";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
+import { notify, startOperationNotification } from "../lib/notifications";
 import { StructureEditor } from "../components/StructureEditor";
 import { MathText } from "../components/MathText";
 import { QuestionEditor } from "../components/QuestionEditor";
@@ -27,7 +28,6 @@ export function CourseSettings() {
   const confirm = useConfirm();
   const { data: config } = useCourseConfig(courseId);
   const [tab, setTab] = useState<Tab>("structure");
-  const [actionError, setActionError] = useState<string | null>(null);
   const [deleting, setDeleting] = useState(false);
   const [exportMenuOpen, setExportMenuOpen] = useState(false);
   const [deleteQuestionsOpen, setDeleteQuestionsOpen] = useState(false);
@@ -51,16 +51,17 @@ export function CourseSettings() {
   }
 
   const handleSkill = async () => {
-    setActionError(null);
     try {
       await api.downloadSkill(config.course_id);
+      notify("Skill file downloaded", "success");
     } catch (e) {
-      setActionError(e instanceof Error ? e.message : "Failed to download skill file");
+      notify("Could not download skill file", "error", e instanceof Error ? e.message : "Failed to download skill file");
     }
   };
 
   const handleExport = async () => {
-    setActionError(null);
+    const exportTask = startOperationNotification(exportFormat === "course" ? "Exporting course…" : "Exporting questions…");
+    setExportMenuOpen(false);
     try {
       const filters = {
         typeKeys: exportTypes,
@@ -68,20 +69,19 @@ export function CourseSettings() {
         institutions: exportInstitutions,
         tags: exportTags,
       };
-      if (exportFormat === "questions") await api.exportQuestions(config.course_id, filters);
+      if (exportFormat === "questions") await api.exportQuestions(config.course_id, filters, exportTask.progress);
       else
         await api.exportCourse(config.course_id, filters, {
           includeLearningData: exportLearning,
           includeResponseText: exportResponses,
-        });
-      setExportMenuOpen(false);
+        }, exportTask.progress);
+      exportTask.succeed(exportFormat === "course" ? "Course export ready" : "Question export ready");
     } catch (e) {
-      setActionError(e instanceof Error ? e.message : "Failed to export course");
+      exportTask.fail("Export failed", e instanceof Error ? e.message : "Failed to create the export file.");
     }
   };
 
   const handleBulkDelete = async () => {
-    setActionError(null);
     setBulkDeleting(true);
     try {
       const sourceFilters = exportInstitutions.flatMap((institution) => {
@@ -128,8 +128,9 @@ export function CourseSettings() {
       setDeleteQuestionsOpen(false);
       qc.invalidateQueries({ queryKey: ["questions", config.course_id] });
       qc.invalidateQueries({ queryKey: ["question-counts", config.course_id] });
+      notify("Questions deleted", "success", `${ids.size} question${ids.size === 1 ? "" : "s"} deleted.`);
     } catch (e) {
-      setActionError(e instanceof Error ? e.message : "Failed to delete questions");
+      notify("Could not delete questions", "error", e instanceof Error ? e.message : "Failed to delete questions.");
     } finally {
       setBulkDeleting(false);
     }
@@ -143,15 +144,15 @@ export function CourseSettings() {
       destructive: true,
     });
     if (!ok) return;
-    setActionError(null);
     setDeleting(true);
     try {
       await api.deleteCourse(config.course_id);
       qc.removeQueries({ predicate: (query) => query.queryKey.includes(config.course_id) });
       await qc.invalidateQueries({ queryKey: ["courses"] });
       setCourseId(null);
+      notify("Course deleted", "success");
     } catch (e) {
-      setActionError(e instanceof Error ? e.message : "Failed to delete course");
+      notify("Could not delete course", "error", e instanceof Error ? e.message : "Failed to delete course.");
     } finally {
       setDeleting(false);
     }
@@ -192,10 +193,6 @@ export function CourseSettings() {
           </>
         }
       />
-      {actionError && (
-        <p className="mb-4 text-sm text-destructive">{actionError}</p>
-      )}
-
       <Modal
         open={exportMenuOpen}
         onClose={() => setExportMenuOpen(false)}
@@ -338,21 +335,20 @@ function CourseNameSettings({ courseId, name }: { courseId: string; name: string
   const qc = useQueryClient();
   const [draft, setDraft] = useState(name);
   const [saving, setSaving] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   async function save(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!draft.trim() || draft.trim() === name) return;
     setSaving(true);
-    setError(null);
     try {
       await api.updateCourseName(courseId, draft);
       await Promise.all([
         qc.invalidateQueries({ queryKey: ["course", courseId] }),
         qc.invalidateQueries({ queryKey: ["courses"] }),
       ]);
+      notify("Course renamed", "success");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Couldn't rename course");
+      notify("Could not rename course", "error", e instanceof Error ? e.message : "Couldn't rename course.");
     } finally {
       setSaving(false);
     }
@@ -364,7 +360,6 @@ function CourseNameSettings({ courseId, name }: { courseId: string; name: string
       <form onSubmit={(event) => void save(event)} className="flex flex-col gap-3 p-5 sm:flex-row sm:items-start">
         <div className="min-w-0 flex-1">
           <Input aria-label="Course name" value={draft} onChange={(event) => setDraft(event.target.value)} maxLength={200} />
-          {error && <p className="mt-2 text-sm text-destructive">{error}</p>}
         </div>
         <Button type="submit" disabled={saving || !draft.trim() || draft.trim() === name}>
           {saving ? "Saving…" : "Save name"}
@@ -386,18 +381,17 @@ function CourseTagSettings({ courseId, tags }: { courseId: string; tags: string[
   const [draft, setDraft] = useState<string[] | null>(null);
   const [input, setInput] = useState("");
   const [saving, setSaving] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const values = draft ?? tags;
 
   async function save(next: string[]) {
     setSaving(true);
-    setError(null);
     try {
       await api.updateCourseTags(courseId, next);
       setDraft(null);
       await qc.invalidateQueries({ queryKey: ["course", courseId] });
+      notify("Tags updated", "success");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Couldn't save tag list");
+      notify("Could not save tags", "error", e instanceof Error ? e.message : "Couldn't save tag list.");
     } finally {
       setSaving(false);
     }
@@ -425,7 +419,6 @@ function CourseTagSettings({ courseId, tags }: { courseId: string; tags: string[
           <Input value={input} onChange={(e) => setInput(e.target.value)} placeholder="Add an allowed tag" aria-label="New allowed tag" />
           <Button type="submit" variant="outline">Add</Button>
         </form>
-        {error && <p className="text-sm text-destructive">{error}</p>}
         <div className="flex items-center gap-2">
           <Button disabled={saving || draft === null} onClick={() => void save(values)}>{saving ? "Saving…" : "Save tag list"}</Button>
           {draft !== null && <Button variant="ghost" disabled={saving} onClick={() => setDraft(null)}>Discard</Button>}
@@ -441,7 +434,6 @@ function QuestionManager({ config }: { config: NonNullable<ReturnType<typeof use
   const [page, setPage] = useState(1);
   const [editorMode, setEditorMode] = useState<"closed" | "create" | "edit">("closed");
   const [editingQuestion, setEditingQuestion] = useState<Question | null>(null);
-  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   const { data: results, isLoading } = useQuery({
     queryKey: ["questions", config.course_id, "manage", page],
@@ -471,10 +463,11 @@ function QuestionManager({ config }: { config: NonNullable<ReturnType<typeof use
     try {
       await api.deleteQuestion(questionId);
     } catch (err) {
-      setDeleteError(err instanceof Error ? err.message : String(err));
+      notify("Could not delete question", "error", err instanceof Error ? err.message : String(err));
       return;
     }
     refresh();
+    notify("Question deleted", "success");
   }
 
   function closeEditor() {
@@ -509,7 +502,6 @@ function QuestionManager({ config }: { config: NonNullable<ReturnType<typeof use
           </Button>
         }
       />
-      {deleteError && <p role="alert" className="px-5 pt-3 text-sm text-destructive">{deleteError}</p>}
       <div className="divide-y divide-border">
         {results?.items.map((item) => (
           <div key={item.question_id} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4">

@@ -13,6 +13,7 @@ Anything mathtext can't parse falls back to plain monospaced text rather
 than failing the whole export.
 """
 import io
+import ast
 import random
 import re
 from datetime import date
@@ -21,6 +22,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import numpy as np
 
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
@@ -344,6 +346,23 @@ def _docx_render_blocks(doc: Document, blocks: list[models.ContentBlock], indent
                 run = p.add_run(content.get("latex", ""))
                 run.font.name = "Courier New"
 
+        elif bt == "function":
+            data = render_function_png(content)
+            p = doc.add_paragraph()
+            p.paragraph_format.left_indent = Inches(indent)
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            if data:
+                p.add_run().add_picture(io.BytesIO(data), width=Inches(min(4.5, 6.5 - indent)))
+            else:
+                p.add_run(f"y = {content.get('expression', '')}")
+            if content.get("caption"):
+                cap = doc.add_paragraph()
+                cap.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                cr = cap.add_run(content["caption"])
+                cr.italic = True
+                cr.font.size = Pt(9)
+                cr.font.color.rgb = GRAY
+
         elif bt in ("image", "diagram", "graph"):
             data = _asset_bytes(content.get("asset_path", ""))
             p = doc.add_paragraph()
@@ -539,6 +558,111 @@ def build_docx(*, title: str, course_name: str, questions: list[models.Question]
     return buf.getvalue()
 
 
+def render_function_png(content: dict) -> bytes | None:
+    """Plot a restricted single-variable expression for printable exports."""
+    expression = str(content.get("expression", "")).strip()
+    if not expression or len(expression) > 160:
+        return None
+    try:
+        bounds = [float(content[k]) for k in ("x_min", "x_max", "y_min", "y_max")]
+        x_min, x_max, y_min, y_max = bounds
+        if not all(np.isfinite(bounds)) or x_min >= x_max or y_min >= y_max or max(x_max - x_min, y_max - y_min) > 1e6:
+            return None
+        expression = re.sub(r"\bx(\s*)\(", r"x\1*(", expression)
+        tree = ast.parse(expression.replace("^", "**"), mode="eval")
+        funcs = {"sin": np.sin, "cos": np.cos, "tan": np.tan, "sqrt": np.sqrt,
+                 "log": np.log, "ln": np.log, "log10": np.log10, "exp": np.exp,
+                 "abs": np.abs, "floor": np.floor, "ceil": np.ceil}
+        constants = {"pi": np.pi, "e": np.e}
+
+        def evaluate(node):
+            if isinstance(node, ast.Expression): return evaluate(node.body)
+            if isinstance(node, ast.Constant) and isinstance(node.value, (int, float)): return node.value
+            if isinstance(node, ast.Name):
+                if node.id == "x": return x
+                if node.id in constants: return constants[node.id]
+                raise ValueError("Unknown name")
+            if isinstance(node, ast.UnaryOp) and isinstance(node.op, (ast.UAdd, ast.USub)):
+                value = evaluate(node.operand)
+                return value if isinstance(node.op, ast.UAdd) else -value
+            if isinstance(node, ast.BinOp) and isinstance(node.op, (ast.Add, ast.Sub, ast.Mult, ast.Div, ast.Pow, ast.Mod)):
+                left, right = evaluate(node.left), evaluate(node.right)
+                if isinstance(node.op, ast.Add): return left + right
+                if isinstance(node.op, ast.Sub): return left - right
+                if isinstance(node.op, ast.Mult): return left * right
+                if isinstance(node.op, ast.Div): return left / right
+                if isinstance(node.op, ast.Pow): return left ** right
+                return left % right
+            if isinstance(node, ast.Call) and isinstance(node.func, ast.Name) and node.func.id in funcs and len(node.args) == 1 and not node.keywords:
+                return funcs[node.func.id](evaluate(node.args[0]))
+            raise ValueError("Unsupported expression")
+
+        x = np.linspace(x_min, x_max, 1200)
+        with np.errstate(all="ignore"):
+            y = np.asarray(evaluate(tree), dtype=float)
+        if y.ndim == 0: y = np.full_like(x, float(y))
+        y = np.broadcast_to(y, x.shape)
+        raw_y = y.copy()
+        y = np.where(np.isfinite(y) & (y >= y_min - (y_max-y_min)) & (y <= y_max + (y_max-y_min)), y, np.nan)
+        fig, ax = plt.subplots(figsize=(8, 4.5), dpi=160)
+        try:
+            ax.plot(x, y, color="#000000", linewidth=2)
+            ax.set(xlim=(x_min, x_max), ylim=(y_min, y_max), xlabel="", ylabel="")
+            ax.grid(True, color="#d9d9d9", linewidth=0.6)
+            ax.tick_params(axis="both", colors="#000000")
+            ax.spines["top"].set_visible(False)
+            ax.spines["right"].set_visible(False)
+            axis_y = min(max(0, y_min), y_max)
+            axis_x = min(max(0, x_min), x_max)
+            ax.spines["bottom"].set_position(("data", axis_y))
+            ax.spines["left"].set_position(("data", axis_x))
+            ax.xaxis.set_ticks_position("bottom")
+            ax.yaxis.set_ticks_position("left")
+            def add_arrow(tip_x, tip_y, out_x, out_y):
+                length = np.hypot(out_x, out_y)
+                if not np.isfinite(length) or length == 0:
+                    return
+                scale = min((x_max - x_min) / 60, (y_max - y_min) / 45) * 1.5 / length
+                ax.annotate("", xy=(tip_x, tip_y), xytext=(tip_x - out_x * scale, tip_y - out_y * scale),
+                            arrowprops={"arrowstyle": "-|>", "color": "#000000", "lw": 0.9, "mutation_scale": 9},
+                            annotation_clip=False)
+
+            def inside(xv, yv):
+                return x_min <= xv <= x_max and y_min <= yv <= y_max
+
+            if np.isfinite(raw_y[0]) and inside(x[0], raw_y[0]):
+                add_arrow(x[0], raw_y[0], x[0] - x[1], raw_y[0] - raw_y[1])
+            if np.isfinite(raw_y[-1]) and inside(x[-1], raw_y[-1]):
+                add_arrow(x[-1], raw_y[-1], x[-1] - x[-2], raw_y[-1] - raw_y[-2])
+            for i in range(1, len(x)):
+                x0, y0, x1, y1 = x[i - 1], raw_y[i - 1], x[i], raw_y[i]
+                if not np.isfinite(y0) or not np.isfinite(y1) or inside(x0, y0) == inside(x1, y1):
+                    continue
+                ix, iy = (x0, y0) if inside(x0, y0) else (x1, y1)
+                ox, oy = (x1, y1) if inside(x0, y0) else (x0, y0)
+                dx, dy = ox - ix, oy - iy
+                candidates = [(-ix / dx) if dx < 0 else np.inf,
+                              ((x_max - ix) / dx) if dx > 0 else np.inf,
+                              ((y_min - iy) / dy) if dy < 0 else np.inf,
+                              ((y_max - iy) / dy) if dy > 0 else np.inf]
+                valid = [t for t in candidates if 0 <= t <= 1]
+                if valid:
+                    t = min(valid)
+                    add_arrow(ix + t * dx, iy + t * dy, dx, dy)
+            if content.get("x_label"):
+                ax.annotate(str(content["x_label"]), (x_max, axis_y), xytext=(-4, 4 if axis_y <= (y_min + y_max) / 2 else -10), textcoords="offset points", ha="right", va="bottom" if axis_y <= (y_min + y_max) / 2 else "top", fontsize=9)
+            if content.get("y_label"):
+                ax.annotate("\n".join(str(content["y_label"])), (axis_x, (y_min + y_max) / 2), xytext=(4 if axis_x <= (x_min + x_max) / 2 else -4, 0), textcoords="offset points", ha="left" if axis_x <= (x_min + x_max) / 2 else "right", va="center", fontsize=9)
+            fig.tight_layout()
+            buf = io.BytesIO()
+            fig.savefig(buf, format="png", dpi=160, facecolor="white")
+            return buf.getvalue()
+        finally:
+            plt.close(fig)
+    except Exception:
+        return None
+
+
 def _docx_render_solutions_section(doc: Document, questions: list[models.Question],
                                    heading: str | None = "Solutions & Marking Guide",
                                    sections: list[tuple[str | None, list[models.Question]]] | None = None):
@@ -674,6 +798,18 @@ def _pdf_render_blocks(story: list, styles, blocks: list[models.ContentBlock], i
                 story.append(img)
             else:
                 story.append(Paragraph(f"<font face='Courier'>{content.get('latex', '')}</font>", body_style))
+
+        elif bt == "function":
+            data = render_function_png(content)
+            if data:
+                img = RLImage(io.BytesIO(data))
+                img._restrictSize(4.5 * inch, 4.5 * inch)
+                img.hAlign = "CENTER"
+                story.append(img)
+                if content.get("caption"):
+                    story.append(Paragraph(content["caption"], styles["Caption"]))
+            else:
+                story.append(Paragraph(f"<i>y = {content.get('expression', '')}</i>", body_style))
 
         elif bt in ("image", "diagram", "graph"):
             data = _asset_bytes(content.get("asset_path", ""))

@@ -8,6 +8,7 @@ import { CreateCourseForm } from "./CreateCourseForm";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
 import { cn } from "../lib/utils";
+import { notify } from "../lib/notifications";
 
 export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const { courseId, setCourseId } = useActiveCourse();
@@ -17,8 +18,6 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const [creating, setCreating] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [importing, setImporting] = useState(false);
-  const [importError, setImportError] = useState<string | null>(null);
-  const [importNotice, setImportNotice] = useState<string | null>(null);
   const ref = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const createFormRef = useRef<HTMLDivElement>(null);
@@ -69,12 +68,6 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
     );
     first?.focus();
   }, [open, creating]);
-
-  useEffect(() => {
-    if (!importNotice) return;
-    const timeout = window.setTimeout(() => setImportNotice(null), 5000);
-    return () => window.clearTimeout(timeout);
-  }, [importNotice]);
 
   function startCreate() {
     setCreating(true);
@@ -137,8 +130,6 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   async function handleImportFiles(files: FileList | null) {
     if (!files?.length) return;
     const selected = Array.from(files);
-    setImportError(null);
-    setImportNotice(null);
     setImporting(true);
     const imported: Array<{ course_id: string; course_name: string }> = [];
     const failures: string[] = [];
@@ -165,10 +156,10 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         await qc.invalidateQueries({ queryKey: ["courses"] });
         for (const course of imported) await qc.invalidateQueries({ queryKey: ["course", course.course_id] });
         switchCourse(imported[imported.length - 1].course_id);
-        setImportNotice(`Imported ${imported.length} course(s): ${imported.map((course) => `'${course.course_name}'`).join(", ")}.`);
+        notify("Courses imported", "success", imported.map((course) => course.course_name).join(", "));
         setOpen(false);
       }
-      if (failures.length) setImportError(failures.join("\n"));
+      if (failures.length) notify("Some course imports failed", "error", failures.join("\n"));
     } finally {
       setImporting(false);
       if (fileInputRef.current) fileInputRef.current.value = "";
@@ -239,17 +230,6 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         }}
       />
 
-      {importError && (
-        <p role="alert" className="absolute left-4 top-16 z-50 max-w-72 whitespace-pre-line rounded-lg border border-border bg-popover px-3 py-2 text-sm text-destructive shadow-xl">
-          {importError}
-        </p>
-      )}
-      {importNotice && (
-        <p role="status" className="absolute left-4 top-16 z-50 max-w-72 rounded-lg border border-border bg-popover px-3 py-2 text-sm shadow-xl">
-          {importNotice}
-        </p>
-      )}
-
       {open && !creating && (
         <div
           className="absolute left-4 top-11 z-50 w-64 rounded-lg border border-border bg-popover p-1 shadow-xl"
@@ -264,8 +244,9 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
             {list.map((c, index) => {
               const isActive = c.course_id === courseId;
               return (
-                <div
+                <button
                   key={c.course_id}
+                  type="button"
                   id={`${listboxId}-option-${index}`}
                   role="option"
                   aria-selected={isActive}
@@ -274,7 +255,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
                     setOpen(false);
                   }}
                   className={cn(
-                    "flex cursor-pointer items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm transition",
+                    "flex w-full cursor-pointer items-center gap-2 rounded-md px-2.5 py-2 text-left text-sm transition",
                     index === activeIndex ? "bg-accent" : "hover:bg-accent/60",
                     isActive && "text-accent-foreground"
                   )}
@@ -290,7 +271,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
                     {c.is_sample ? <span className="ml-1.5 text-xs text-muted-foreground">sample</span> : null}
                   </span>
                   {isActive && <Check className="ml-auto size-4 shrink-0" />}
-                </div>
+                </button>
               );
             })}
             {list.length === 0 && (
@@ -298,6 +279,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
             )}
           </div>
           <button
+            type="button"
             onClick={() => {
               setOpen(false);
               fileInputRef.current?.click();
@@ -308,6 +290,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
             Import course
           </button>
           <button
+            type="button"
             onClick={startCreate}
             className="flex w-full items-center gap-2 rounded-md border-t border-border px-2.5 py-2 text-left text-sm font-medium text-accent-foreground transition hover:bg-accent"
           >

@@ -158,12 +158,13 @@ export const api = {
   exportCourse(
     courseId: string,
     filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] },
-    options?: { includeLearningData?: boolean; includeResponseText?: boolean }
+    options?: { includeLearningData?: boolean; includeResponseText?: boolean },
+    onProgress?: (percent: number) => void
   ): Promise<void> {
-    return import("../lib/exchange").then((m) => m.exportCourse(courseId, filters, options));
+    return import("../lib/exchange").then((m) => m.exportCourse(courseId, filters, options, onProgress));
   },
-  exportQuestions(courseId: string, filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] }): Promise<void> {
-    return import("../lib/exchange").then((m) => m.exportQuestions(courseId, filters));
+  exportQuestions(courseId: string, filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] }, onProgress?: (percent: number) => void): Promise<void> {
+    return import("../lib/exchange").then((m) => m.exportQuestions(courseId, filters, onProgress));
   },
 
   importCourseFile(

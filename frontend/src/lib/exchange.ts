@@ -335,6 +335,10 @@ Content block types available for \`body\`/\`answer\`/\`solution\`/\`marking_cri
 \`text\`, \`heading\`, \`equation\` (LaTeX in \`latex\`, \`display\`),
 \`image\`/\`diagram\`/\`graph\` (for extracted images, use \`asset_path\` and package
 the file as described in Image assets and import bundle),
+\`function\` (for a clear single-variable function, store its right-hand side in
+\`expression\`, numeric \`x_min\`, \`x_max\`, \`y_min\`, and \`y_max\`, and optional
+\`x_label\`, \`y_label\`, and \`caption\`; e.g.
+\`{"block_type":"function","content":{"expression":"x^2 - 3*x + 2","x_min":-5,"x_max":5,"y_min":-2,"y_max":10,"x_label":"x","y_label":"y"}}\`),
 \`table\` (\`columns\`, \`rows\`), \`list\` (\`ordered\`, \`items\`), \`code\`
 (\`language\`, \`code\`), \`answer_area\` (\`lines\`), \`page_break\`.
 
@@ -484,6 +488,8 @@ export interface CourseExportOptions {
   includeResponseText?: boolean;
 }
 
+export type ExportProgress = (percent: number) => void;
+
 /** Bumped whenever the bundle shape changes. Version 1 had no learning data. */
 export const COURSE_EXPORT_SCHEMA_VERSION = 2;
 export const SUPPORTED_COURSE_EXPORT_VERSIONS = [1, COURSE_EXPORT_SCHEMA_VERSION];
@@ -508,10 +514,13 @@ async function readLearningData(
   includeResponseText: boolean
 ): Promise<LearningBundle> {
   const reviewRows = await all<Record<string, unknown>>(
-    `SELECT question_review_state.question_id AS question_id, next_due_at, interval_days,
-            last_reviewed_at, review_count, lapse_count, ladder_step, last_rating, last_outcome, updated_at
-       FROM question_review_state
-       JOIN question ON question.question_id = question_review_state.question_id
+    `SELECT review_state.question_id AS question_id, review_state.next_due_at AS next_due_at,
+            review_state.interval_days AS interval_days, review_state.last_reviewed_at AS last_reviewed_at,
+            review_state.review_count AS review_count, review_state.lapse_count AS lapse_count,
+            review_state.ladder_step AS ladder_step, review_state.last_rating AS last_rating,
+            review_state.last_outcome AS last_outcome, review_state.updated_at AS updated_at
+       FROM question_review_state AS review_state
+       JOIN question ON question.question_id = review_state.question_id
       WHERE question.course_id = ?`,
     [courseId]
   );
@@ -567,11 +576,14 @@ async function readLearningData(
 export async function exportCourse(
   courseId: string,
   filters: CourseExportFilters = {},
-  options: CourseExportOptions = {}
+  options: CourseExportOptions = {},
+  onProgress?: ExportProgress
 ): Promise<void> {
   const includeLearningData = options.includeLearningData !== false;
+  onProgress?.(0);
   const config = await data.getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
+  const preAssetWork = 3 + (includeLearningData ? 1 : 0);
   const row = await data.getCourseRow(courseId);
   const allQuestions = await data.getCourseQuestions(courseId);
   const questions = allQuestions.filter((question) =>
@@ -580,9 +592,21 @@ export async function exportCourse(
     (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
-  const learning = includeLearningData
-    ? await readLearningData(courseId, options.includeResponseText === true)
-    : null;
+  const learning = includeLearningData ? await readLearningData(courseId, options.includeResponseText === true) : null;
+  const seen = new Set<string>();
+  const collectIds = (q: Question) => {
+    for (const a of q.assets) if (!seen.has(a.asset_id)) seen.add(a.asset_id);
+    for (const option of q.mcq_options ?? []) for (const block of option.content ?? []) {
+      const assetId = block.content?.asset_path;
+      if (typeof assetId === "string" && assetId) seen.add(assetId);
+    }
+    for (const p of q.parts) collectIds(p);
+  };
+  for (const q of questions) collectIds(q);
+  const workTotal = preAssetWork + seen.size + 2;
+  let completedWork = preAssetWork;
+  const report = (fraction = 0) => onProgress?.(Math.min(99, ((completedWork + fraction) / workTotal) * 100));
+  report();
   const zip = new JSZip();
   zip.file(
     "course.json",
@@ -607,25 +631,16 @@ export async function exportCourse(
         },
         questions,
         learning,
-      },
-      null,
-      2
+      }, null, 2
     )
   );
-  const seen = new Set<string>();
-  const collectIds = (q: Question) => {
-    for (const a of q.assets) if (!seen.has(a.asset_id)) seen.add(a.asset_id);
-    for (const option of q.mcq_options ?? []) for (const block of option.content ?? []) {
-      const assetId = block.content?.asset_path;
-      if (typeof assetId === "string" && assetId) seen.add(assetId);
-    }
-    for (const p of q.parts) collectIds(p);
-  };
-  for (const q of questions) collectIds(q);
+  completedWork++;
+  report();
   for (const assetId of seen) {
     const blob = await idb.getAsset(assetId);
-    if (!blob) continue;
-    zip.file(`assets/${assetId}.${mimeExtension(blob.type || "")}`, blob);
+    if (blob) zip.file(`assets/${assetId}.${mimeExtension(blob.type || "")}`, blob);
+    completedWork++;
+    report();
   }
   zip.file(
     "README.txt",
@@ -645,12 +660,15 @@ export async function exportCourse(
       .filter((line) => line !== null)
       .join("\n") + "\n"
   );
-  const zipBlob = await zip.generateAsync({ type: "blob" });
+  completedWork++;
+  const zipBlob = await zip.generateAsync({ type: "blob" }, (metadata) => report(metadata.percent / 100));
+  onProgress?.(100);
   downloadBlob(zipBlob, `${slugName(config.name)}.qb`);
 }
 
 /** Export the question records and their binary assets without course configuration. */
-export async function exportQuestions(courseId: string, filters: CourseExportFilters = {}): Promise<void> {
+export async function exportQuestions(courseId: string, filters: CourseExportFilters = {}, onProgress?: ExportProgress): Promise<void> {
+  onProgress?.(0);
   const config = await data.getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
   const allQuestions = await data.getCourseQuestions(courseId);
@@ -686,11 +704,20 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
     for (const p of q.parts) collectIds(p);
   };
   for (const q of questions) collectIds(q);
+  const workTotal = 2 + seen.size + 2;
+  let completedWork = 2;
+  const report = (fraction = 0) => onProgress?.(Math.min(99, ((completedWork + fraction) / workTotal) * 100));
+  report();
   for (const assetId of seen) {
     const blob = await idb.getAsset(assetId);
     if (blob) zip.file(`assets/${assetId}.${mimeExtension(blob.type || "")}`, blob);
+    completedWork++;
+    report();
   }
-  downloadBlob(await zip.generateAsync({ type: "blob" }), `${slugName(config.name)}-questions.qbx`);
+  completedWork++;
+  const zipBlob = await zip.generateAsync({ type: "blob" }, (metadata) => report(metadata.percent / 100));
+  onProgress?.(100);
+  downloadBlob(zipBlob, `${slugName(config.name)}-questions.qbx`);
 }
 
 // ---------- course import (.qb) ----------

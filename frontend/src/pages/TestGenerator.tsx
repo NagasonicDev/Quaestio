@@ -15,6 +15,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { effectiveNodeFilterIds } from "../lib/nodeFilters";
 import { beginTestGeneration, updateTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
 import type { QuestionCountsResponse } from "../api/types";
+import { notify } from "../lib/notifications";
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
@@ -64,15 +65,12 @@ export function TestGenerator() {
   const [generationPhase, setGenerationPhase] = useState<"selecting" | "hydrating" | "paper" | "preview" | "saving">("selecting");
   const [completedQuestions, setCompletedQuestions] = useState(0);
   const [generationQuestionCount, setGenerationQuestionCount] = useState(0);
-  const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<GeneratedTestMeta | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
-  const [downloadError, setDownloadError] = useState<string | null>(null);
   const [downloading, setDownloading] = useState<string | null>(null);
   useEffect(() => {
     if (backgroundTask?.courseId !== courseId) return;
     if (backgroundTask.status === "complete" && backgroundTask.result) setResult(backgroundTask.result);
-    if (backgroundTask.status === "failed" && backgroundTask.error) setError(backgroundTask.error);
   }, [backgroundTask, courseId]);
   const phaseProgress = { selecting: 4, hydrating: 12, paper: 22, preview: 78, saving: 96 }[generationPhase];
   const generationProgress = generationPhase === "paper"
@@ -202,12 +200,12 @@ export function TestGenerator() {
   }, [result?.test_id]);
 
   async function handleDownload(test: GeneratedTestMeta) {
-    setDownloadError(null);
     setDownloading(`${test.test_id}:test`);
     try {
       await downloadTestFile(test.test_id, "test", test.format as "docx" | "pdf");
+      notify("Test downloaded", "success", test.title);
     } catch (e) {
-      setDownloadError(e instanceof Error ? e.message : "Download failed");
+      notify("Could not download test", "error", e instanceof Error ? e.message : "Download failed.");
     } finally {
       setDownloading(null);
     }
@@ -285,7 +283,6 @@ export function TestGenerator() {
       completedQuestions: 0,
       estimatedSeconds: initialEstimate,
     });
-    setError(null);
     setResult(null);
     try {
       const meta = await api.generateTest(courseId, {
@@ -335,10 +332,11 @@ export function TestGenerator() {
       }
       setResult(meta);
       updateTestGeneration({ status: "complete", result: meta });
+      notify("Test generated", "success", `${meta.question_count} questions · ${meta.achieved_marks} marks`);
       refetchPastTests();
     } catch (e) {
       const message = e instanceof Error ? e.message : "Failed to generate test";
-      setError(message);
+      notify("Could not generate test", "error", message);
       updateTestGeneration({ status: "failed", error: message });
     } finally {
       setGenerating(false);
@@ -506,12 +504,6 @@ export function TestGenerator() {
               </Button>
             </div>
           </Panel>
-
-          {(error || downloadError) && (
-            <div className="rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">
-              {error ?? downloadError}
-            </div>
-          )}
 
           {result && (
             <Panel>

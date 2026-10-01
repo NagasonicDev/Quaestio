@@ -10,6 +10,7 @@ import JSZip from "jszip";
 import * as idb from "../lib/db/indexeddb";
 import { newId } from "../lib/id";
 import { ensureAssetUrl } from "../lib/assets";
+import { notify } from "../lib/notifications";
 
 async function parseQuestionBundle(file: File) {
   let archive: JSZip;
@@ -75,14 +76,12 @@ export function Import() {
 
   const [fileNames, setFileNames] = useState<string[]>([]);
   const [importing, setImporting] = useState(false);
-  const [fileErrors, setFileErrors] = useState<Array<{ name: string; error: string }>>([]);
   const [results, setResults] = useState<Array<{ name: string; result: ImportResponse }>>([]);
 
   async function handleFiles(files: FileList | null) {
     if (!files?.length || !courseId) return;
     const selected = Array.from(files);
     setFileNames(selected.map((file) => file.name));
-    setFileErrors([]);
     setResults([]);
     setImporting(true);
     const nextResults: Array<{ name: string; result: ImportResponse }> = [];
@@ -107,7 +106,11 @@ export function Import() {
         }
       }
       setResults(nextResults);
-      setFileErrors(nextErrors);
+      if (nextResults.length) {
+        const importedCount = nextResults.reduce((sum, item) => sum + item.result.imported_count, 0);
+        notify("Question import complete", "success", `${importedCount} question${importedCount === 1 ? "" : "s"} imported.`);
+      }
+      if (nextErrors.length) notify("Some question files could not be imported", "error", nextErrors.map(({ name, error }) => `${name}: ${error}`).join("\n"));
     } finally {
       setImporting(false);
     }
@@ -178,10 +181,6 @@ export function Import() {
           </div>
         </label>
       </Panel>
-
-      {fileErrors.map(({ name, error }) => (
-        <div key={name} className="rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">{name}: {error}</div>
-      ))}
 
       {results.map(({ name, result }) => {
         const detailItems = result.results.filter((r) => r.status === "error" || r.warnings.length > 0);

@@ -15,6 +15,7 @@ import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
 import { useQuestionFilterCounts } from "../hooks/useQuestionFilterCounts";
 import { effectiveNodeFilterIds } from "../lib/nodeFilters";
+import { notify } from "../lib/notifications";
 
 type ScoredBy = "objective" | "self" | "skipped";
 type QuizResult = { question: Question; earned: number; possible: number; elapsed: number; scoredBy: ScoredBy };
@@ -38,7 +39,6 @@ export function Quiz() {
   const [marksDraft, setMarksDraft] = useState("");
   const [revealed, setRevealed] = useState(false);
   const [results, setResults] = useState<QuizResult[]>([]);
-  const [error, setError] = useState<string | null>(null);
 
   const { data: counts } = useQuery({
     queryKey: ["question-counts", courseId],
@@ -121,7 +121,6 @@ export function Quiz() {
   async function startQuiz() {
     if (!courseId || matchingCount < 1) return;
     setPhase("loading");
-    setError(null);
     try {
       const picked: Question[] = [];
       const excluded: string[] = [];
@@ -149,12 +148,12 @@ export function Quiz() {
       setMarksDraft("");
       setRevealed(false);
       setPhase(picked.length ? "run" : "setup");
-      if (!picked.length) setError("No questions matched those filters. Adjust them and try again.");
+      if (!picked.length) notify("No matching questions", "info", "Adjust the filters and try again.");
       for (const question of picked) {
         api.recordAttempt({ question_id: question.question_id, status: "seen" }).catch(() => {});
       }
     } catch (cause) {
-      setError(cause instanceof Error ? cause.message : "Could not generate a quiz.");
+      notify("Could not generate quiz", "error", cause instanceof Error ? cause.message : "Could not generate a quiz.");
       setPhase("setup");
     }
   }
@@ -261,7 +260,6 @@ export function Quiz() {
         </div>
       </Panel>
 
-      {error && <p role="alert" className="mb-4 rounded-md bg-destructive/10 px-3 py-2 text-sm text-destructive">{error}</p>}
       {phase === "setup" && <Panel className="p-10 text-center text-sm text-muted-foreground">Set your filters and question count, then generate a quiz.</Panel>}
       {phase === "loading" && <Panel className="grid min-h-64 place-items-center p-10"><InkLoader messages={["Drawing questions…", "Starting your stopwatch…", "Preparing your quiz…"]} /></Panel>}
 

@@ -9,6 +9,7 @@ import { Panel, PanelHead } from "./system";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Switch } from "./ui/switch";
+import { notify } from "../lib/notifications";
 
 const PAUSE_OPTIONS = [
   { label: "a day", days: 1 },
@@ -43,7 +44,6 @@ function ReviewIntervals() {
   const [ladder, setLadder] = useState<number[] | null>(null);
   const [againMinutes, setAgainMinutes] = useState<number | null>(null);
   const [saved, setSaved] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (!stored) return;
@@ -55,10 +55,10 @@ function ReviewIntervals() {
     mutationFn: (policy: ReviewPolicy) => api.setReviewPolicy(policy),
     onSuccess: async () => {
       setSaved(true);
-      setError(null);
+      notify("Review intervals saved", "success");
       await queryClient.invalidateQueries({ queryKey: ["review-policy"] });
     },
-    onError: (e) => setError(e instanceof Error ? e.message : "Could not save the intervals."),
+    onError: (e) => notify("Could not save review intervals", "error", e instanceof Error ? e.message : "Could not save the intervals."),
   });
 
   if (!stored || !ladder || againMinutes == null) {
@@ -130,12 +130,7 @@ function ReviewIntervals() {
           onwards; dates already scheduled are left alone.
         </p>
 
-        {error && (
-          <p role="alert" className="text-sm text-destructive">
-            {error}
-          </p>
-        )}
-        {saved && !error && (
+        {saved && (
           <p role="status" className="text-sm text-success">
             Saved on this device.
           </p>

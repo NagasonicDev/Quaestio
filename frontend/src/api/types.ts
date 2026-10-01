@@ -1,5 +1,5 @@
 export type BlockType =
-  | "text" | "heading" | "equation" | "image" | "diagram" | "graph"
+  | "text" | "heading" | "equation" | "image" | "diagram" | "graph" | "function"
   | "table" | "list" | "code" | "answer_area" | "page_break";
 
 export type Slot = "body" | "hint" | "answer" | "solution" | "marking_criteria";

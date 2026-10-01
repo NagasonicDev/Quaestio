@@ -18,7 +18,7 @@ import { nowUtc } from "./id";
 
 export const SAMPLE_COURSE_NAME = "Sample course \u2014 how practising works";
 export const SAMPLE_COURSE_DESCRIPTION =
-  "A throwaway example with four questions. Try the practice flow here first, then remove this course whenever you are ready \u2014 it is completely separate from your own courses.";
+  "A throwaway example with five questions. Try the practice flow here first, then remove this course whenever you are ready \u2014 it is completely separate from your own courses.";
 
 const NODE_ANSWERING = "sample-node-answering";
 const NODE_REVIEWS = "sample-node-reviews";
@@ -44,6 +44,26 @@ function list(slot: Slot, position: number, items: string[]): ContentBlock {
     position,
     block_type: "list",
     content: { ordered: true, items },
+  };
+}
+
+function functionGraph(slot: Slot, position: number): ContentBlock {
+  blockSeq += 1;
+  return {
+    block_id: `sample-blk-${blockSeq}`,
+    slot,
+    position,
+    block_type: "function",
+    content: {
+      expression: "x^2 - 4",
+      x_min: -3,
+      x_max: 3,
+      y_min: -5,
+      y_max: 6,
+      x_label: "x",
+      y_label: "f(x)",
+      caption: "Graph of f(x) = x² − 4",
+    },
   };
 }
 
@@ -227,6 +247,32 @@ function sampleQuestions(): Question[] {
           "1 mark: includes the untouched question rather than ignoring it",
           "1-2 marks: explains that \u2018mastered\u2019 is not supported by the evidence, with a reason",
           "1 mark: explains that \u2018weak\u2019 judges the student, or ignores the missing evidence",
+        ]),
+      ],
+    }),
+
+    blank("sample-q5", {
+      type_key: "short_answer",
+      marks: 3,
+      difficulty: 2,
+      node_ids: [NODE_ANSWERING],
+      tags: ["onboarding", "retrieval"],
+      body: [
+        text("body", 0, "The graph shows f(x) = x² − 4."),
+        functionGraph("body", 1),
+        text("body", 2, "Read the graph to give the x-intercepts and the y-intercept."),
+      ],
+      answer: [
+        text("answer", 0, "The x-intercepts are (−2, 0) and (2, 0). The y-intercept is (0, −4)."),
+      ],
+      solution: [
+        text("solution", 0, "The curve crosses the x-axis where f(x) = 0, at x = −2 and x = 2. At x = 0, f(0) = −4, so it crosses the y-axis at (0, −4)."),
+      ],
+      marking_criteria: [
+        list("marking_criteria", 0, [
+          "1 mark: gives both x-intercepts, x = −2 and x = 2",
+          "1 mark: gives the y-intercept, y = −4",
+          "1 mark: identifies the intercepts as points on the correct axes",
         ]),
       ],
     }),

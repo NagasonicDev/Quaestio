@@ -6,6 +6,7 @@ import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
+import { notify } from "../lib/notifications";
 
 /**
  * Shown while the active course is the optional starter one. It has to be
@@ -17,7 +18,6 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
   const { data: courses } = useQuery({ queryKey: ["courses"], queryFn: api.listCourses });
   const course = courses?.find((c) => c.course_id === courseId);
   const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
   const qc = useQueryClient();
   const { setCourseId } = useActiveCourse();
   const confirm = useConfirm();
@@ -26,12 +26,12 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
 
   async function startAgain() {
     setBusy(true);
-    setError(null);
     try {
       await api.resetCourseProgress(courseId);
       await qc.invalidateQueries();
+      notify("Sample course restarted", "success");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Could not clear the practice history.");
+      notify("Could not restart sample course", "error", e instanceof Error ? e.message : "Could not clear the practice history.");
     } finally {
       setBusy(false);
     }
@@ -47,7 +47,6 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
     });
     if (!ok) return;
     setBusy(true);
-    setError(null);
     try {
       await api.deleteCourse(courseId);
       const remaining = await api.listCourses();
@@ -56,8 +55,9 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
       if (!remaining.length) {
         await qc.invalidateQueries();
       }
+      notify("Sample course removed", "success");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Could not remove the sample course.");
+      notify("Could not remove sample course", "error", e instanceof Error ? e.message : "Could not remove the sample course.");
     } finally {
       setBusy(false);
     }
@@ -73,7 +73,7 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
           <p className="label">Sample course</p>
           <h2 className="mt-1 font-display text-lg font-semibold">This is a throwaway example</h2>
           <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
-            Four example questions to try the practice flow on. It is a separate course, so nothing
+            Five example questions to try the practice flow on. It is a separate course, so nothing
             here mixes with your own work &mdash; practise a few, then remove it whenever you are
             ready.
           </p>
@@ -92,11 +92,6 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
             &ldquo;Start the sample again&rdquo; clears its practice history and review schedule but
             keeps the questions.
           </p>
-          {error && (
-            <p role="alert" className="mt-2 text-xs text-destructive">
-              {error}
-            </p>
-          )}
         </div>
       </div>
     </section>

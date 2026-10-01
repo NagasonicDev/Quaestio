@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useIsFetching } from "@tanstack/react-query";
-import { Check, Menu, Moon, Sun, X } from "lucide-react";
+import { AlertCircle, Check, Info, Menu, Moon, Sun, X } from "lucide-react";
 import { cn } from "../lib/utils";
 import { useTheme } from "../hooks/useTheme";
 import { CourseSelector } from "./CourseSelector";
@@ -11,6 +11,7 @@ import { Button } from "./ui/button";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { CourseOnboarding } from "./CourseOnboarding";
 import { dismissTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
+import { dismissNotification, useNotifications } from "../lib/notifications";
 
 type NavItem = { to: string; label: string; end?: boolean };
 
@@ -61,6 +62,7 @@ export function Layout() {
   const menuPanelRef = useRef<HTMLDivElement | null>(null);
   const isFetching = useIsFetching() > 0;
   const generationTask = useTestGenerationTask();
+  const notifications = useNotifications();
 
   // The menu is a disclosure, so focus moves into it on open, Escape closes it,
   // and focus returns to the control that opened it rather than being dropped
@@ -233,6 +235,31 @@ export function Layout() {
           </div>
         </div>
       )}
+
+      <div className="fixed bottom-5 right-5 z-[100] flex w-[min(24rem,calc(100vw-2.5rem))] flex-col gap-2">
+        {notifications.map((item) => {
+          const isProgress = item.tone === "progress";
+          const Icon = item.tone === "error" ? AlertCircle : item.tone === "success" ? Check : Info;
+          return (
+            <div key={item.id} className={`overflow-hidden rounded-xl border bg-card shadow-xl ${item.tone === "error" ? "border-destructive/60" : "border-border"}`} role={item.tone === "error" ? "alert" : "status"} aria-live={item.tone === "error" ? "assertive" : "polite"}>
+              <div className="flex items-start gap-3 p-4">
+                <Icon className={`mt-0.5 size-4 shrink-0 ${item.tone === "error" ? "text-destructive" : item.tone === "success" ? "text-green-600" : "text-muted-foreground"}`} aria-hidden="true" />
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-medium">{item.title}</p>
+                  {item.message && <p className="mt-1 whitespace-pre-line text-xs text-muted-foreground">{item.message}</p>}
+                  {isProgress && <p className="mt-1 font-mono text-xs tabular-nums text-muted-foreground">{Math.round(item.progress ?? 0)}%</p>}
+                </div>
+                {!isProgress && <button type="button" aria-label="Dismiss notification" onClick={() => dismissNotification(item.id)} className="-mr-1 -mt-1 rounded p-1 text-muted-foreground hover:bg-muted hover:text-foreground"><X className="size-4" /></button>}
+              </div>
+              {isProgress && (
+                <div className="h-1.5 w-full bg-muted" role="progressbar" aria-label={`${item.title} progress`} aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(item.progress ?? 0)}>
+                  <div className="h-full bg-primary transition-[width] duration-150" style={{ width: `${item.progress ?? 0}%` }} />
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
 
       <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "lg:grid-cols-[238px_minmax(0,1fr)]")}>
         {courseId && <RecentQuestionsSidebar variant="rail" />}

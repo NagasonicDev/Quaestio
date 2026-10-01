@@ -4,7 +4,7 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 BlockType = Literal[
-    "text", "heading", "equation", "image", "diagram", "graph",
+    "text", "heading", "equation", "image", "diagram", "graph", "function",
     "table", "list", "code", "answer_area", "page_break",
 ]
 Slot = Literal["body", "answer", "solution", "marking_criteria"]

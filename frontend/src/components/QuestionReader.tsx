@@ -6,6 +6,7 @@ import { assetUrl } from "../api/client";
 import { formatQuestionType } from "../lib/questionTypes";
 import { Meta, Panel } from "./system";
 import { MathText, normalizeEquationLatex } from "./MathText";
+import { FunctionGraphPreview } from "./FunctionGraphPreview";
 
 function Block({ block }: { block: ContentBlock }) {
   const c = block.content;
@@ -38,6 +39,16 @@ function Block({ block }: { block: ContentBlock }) {
           {c.caption && (
             <figcaption className="mt-1 text-[13px] text-muted-foreground">{c.caption}</figcaption>
           )}
+        </figure>
+      );
+
+    case "function":
+      return (
+        <figure className="my-2 overflow-x-auto">
+          <div className="min-w-[480px] max-w-3xl rounded-md border border-border bg-white p-1">
+            <FunctionGraphPreview content={c} />
+          </div>
+          {c.caption && <figcaption className="mt-1 text-[13px] text-muted-foreground">{c.caption}</figcaption>}
         </figure>
       );
 

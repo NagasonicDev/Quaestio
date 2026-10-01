@@ -185,7 +185,8 @@ function renderBlock(
     }
     case "image":
     case "diagram":
-    case "graph": {
+    case "graph":
+    case "function": {
       const path = contentOf(block, "asset_path");
       const caption = contentOf(block, "caption");
       const resolved = images.get(block.block_id);
@@ -194,7 +195,7 @@ function renderBlock(
           new Paragraph({
             children: [
               runProps({
-                text: `[missing image: ${typeof path === "string" ? path : ""}]`,
+                text: block.block_type === "function" ? `y = ${String(contentOf(block, "expression", ""))}` : `[missing image: ${typeof path === "string" ? path : ""}]`,
                 italics: true,
               }),
             ],

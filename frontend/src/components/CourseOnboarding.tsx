@@ -18,6 +18,7 @@ import { useActiveCourse } from "../hooks/useActiveCourse";
 import { CreateCourseForm } from "./CreateCourseForm";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
+import { notify } from "../lib/notifications";
 
 type Step = "sample" | "import" | "create" | null;
 
@@ -31,8 +32,6 @@ type Step = "sample" | "import" | "create" | null;
 export function CourseOnboarding() {
   const [step, setStep] = useState<Step>(null);
   const [busy, setBusy] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [notice, setNotice] = useState<string | null>(null);
   const fileRef = useRef<HTMLInputElement>(null);
   const qc = useQueryClient();
   const navigate = useNavigate();
@@ -48,17 +47,12 @@ export function CourseOnboarding() {
 
   async function addSampleCourse() {
     setBusy(true);
-    setError(null);
     try {
       const result = await api.ensureSampleCourse();
-      setNotice(
-        result.created
-          ? "Sample course added. Remove it from the course list whenever you like \u2014 it is separate from everything else."
-          : "You already had the sample course, so nothing was duplicated."
-      );
+      notify(result.created ? "Sample course added" : "Sample course already exists", result.created ? "success" : "info", result.created ? "Remove it from the course list whenever you like; it stays separate from your own courses." : "Nothing was duplicated.");
       await adopt(result.course_id, "/practice");
     } catch (e) {
-      setError(e instanceof Error ? e.message : "Could not add the sample course.");
+      notify("Could not add sample course", "error", e instanceof Error ? e.message : "Could not add the sample course.");
     } finally {
       setBusy(false);
     }
@@ -67,7 +61,6 @@ export function CourseOnboarding() {
   async function importBundle(files: FileList | null) {
     if (!files?.length) return;
     setBusy(true);
-    setError(null);
     const imported: string[] = [];
     const failures: string[] = [];
     try {
@@ -90,12 +83,10 @@ export function CourseOnboarding() {
       }
       if (imported.length) {
         const last = imported[imported.length - 1];
-        setNotice(
-          `Imported ${imported.length} course${imported.length === 1 ? "" : "s"}. Review the questions, then start a practice session.`
-        );
+        notify("Course import complete", "success", `Imported ${imported.length} course${imported.length === 1 ? "" : "s"}.`);
         await adopt(last, "/");
       }
-      if (failures.length) setError(failures.join("\n"));
+      if (failures.length) notify("Some course imports failed", "error", failures.join("\n"));
     } finally {
       setBusy(false);
       if (fileRef.current) fileRef.current.value = "";
@@ -116,7 +107,7 @@ export function CourseOnboarding() {
       id: "sample",
       icon: FlaskConical,
       title: "Try a sample course",
-      text: "Four example questions to practise on, so you can try the flow before your own questions are ready.",
+      text: "Five example questions to practise on, so you can try the flow before your own questions are ready.",
       detail: "Disposable: it is a separate course you can remove in one click, and it never mixes with your own work.",
       cta: "Add the sample course",
       onClick: addSampleCourse,
@@ -216,17 +207,6 @@ export function CourseOnboarding() {
           </div>
         </div>
       </section>
-
-      {error && (
-        <p role="alert" className="panel px-4 py-3 text-sm text-destructive">
-          {error}
-        </p>
-      )}
-      {notice && (
-        <p role="status" className="panel px-4 py-3 text-sm">
-          {notice}
-        </p>
-      )}
 
       {step === "create" ? (
         <section className="panel mx-auto max-w-2xl p-5 sm:p-7">
