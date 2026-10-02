@@ -169,9 +169,10 @@ export const api = {
 
   importCourseFile(
     file: File,
-    onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">
+    onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">,
+    onProgress?: (percent: number) => void
   ): Promise<{ course_id: string; course_name: string }> {
-    return import("../lib/exchange").then((m) => m.importCourseFile(file, onIdCollision));
+    return import("../lib/exchange").then((m) => m.importCourseFile(file, onIdCollision, onProgress));
   },
 
   /** Adds the optional starter course, or returns the copy already here. */

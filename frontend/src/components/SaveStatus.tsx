@@ -1,5 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { AlertTriangle, Check, CloudOff, RefreshCw } from "lucide-react";
+import { AlertTriangle, Check, CloudOff, LoaderCircle, RefreshCw } from "lucide-react";
 import { Link } from "react-router-dom";
 import {
   canRetry,
@@ -49,23 +49,36 @@ export function SaveStatusIndicator() {
     );
   }
 
+  const isSaving = snapshot.status === "saving";
+
   return (
-    <p
-      aria-live="polite"
-      className={cn(
-        "font-mono text-[10px] uppercase tracking-wider",
-        snapshot.status === "saving" ? "text-muted-foreground" : "text-success"
-      )}
+    <span
+      className="group relative inline-flex shrink-0"
     >
-      {snapshot.status === "saving" ? (
-        "Saving…"
-      ) : (
-        <span className="inline-flex items-center gap-1">
-          <Check className="size-3" aria-hidden="true" />
-          Saved on this device
-        </span>
-      )}
-    </p>
+      <button
+        type="button"
+        aria-label={isSaving ? "Saving status" : "Saved status"}
+        aria-describedby="save-status-tooltip"
+        aria-live="polite"
+        className={cn(
+          "inline-flex size-7 items-center justify-center rounded-full outline-none transition-colors hover:bg-surface focus-visible:ring-2 focus-visible:ring-ring",
+          isSaving ? "text-muted-foreground" : "text-success"
+        )}
+      >
+        {isSaving ? (
+          <LoaderCircle className="size-4 animate-spin" aria-hidden="true" />
+        ) : (
+          <Check className="size-4 animate-in zoom-in-50 duration-200" aria-hidden="true" />
+        )}
+      </button>
+      <span
+        id="save-status-tooltip"
+        role="tooltip"
+        className="pointer-events-none absolute right-0 top-full z-50 mt-2 hidden whitespace-nowrap rounded-md border border-border bg-popover px-3 py-2 text-xs font-medium text-popover-foreground shadow-md group-hover:block group-focus-within:block"
+      >
+        {isSaving ? "Saving to this device…" : "Saved on this device"}
+      </span>
+    </span>
   );
 }
 

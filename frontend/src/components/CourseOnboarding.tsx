@@ -18,7 +18,7 @@ import { useActiveCourse } from "../hooks/useActiveCourse";
 import { CreateCourseForm } from "./CreateCourseForm";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
-import { notify } from "../lib/notifications";
+import { notify, startOperationNotification } from "../lib/notifications";
 
 type Step = "sample" | "import" | "create" | null;
 
@@ -65,6 +65,7 @@ export function CourseOnboarding() {
     const failures: string[] = [];
     try {
       for (const file of Array.from(files)) {
+        const importTask = startOperationNotification("Importing course…", file.name);
         try {
           const result = await api.importCourseFile(file, async (info) => {
             const replace = await confirm({
@@ -75,10 +76,13 @@ export function CourseOnboarding() {
               destructive: true,
             });
             return replace ? "replace" : "new";
-          });
+          }, importTask.progress);
           imported.push(result.course_id);
+          importTask.succeed("Course imported", result.course_name);
         } catch (e) {
-          failures.push(`${file.name}: ${e instanceof Error ? e.message : "could not be imported"}`);
+          const message = e instanceof Error ? e.message : "could not be imported";
+          failures.push(`${file.name}: ${message}`);
+          importTask.fail("Course import failed", `${file.name}: ${message}`);
         }
       }
       if (imported.length) {

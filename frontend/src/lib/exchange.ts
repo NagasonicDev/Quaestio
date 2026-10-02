@@ -925,13 +925,15 @@ async function insertQuestion(
 export async function applyCourseBundle(
   bundle: ParsedBundle,
   mode: "replace" | "new",
-  requestedCourseId?: string
+  requestedCourseId?: string,
+  onProgress?: ExportProgress
 ): Promise<string> {
   const src = bundle.course;
   const courseId = mode === "new" ? (requestedCourseId ?? newId("course")) : src.course_id;
   if (mode === "replace") {
     await wipeCourseData(courseId);
   }
+  onProgress?.(5);
   const ctx: ImportCtx = { courseId, nodeMap: new Map(), questionMap: new Map(), assetMap: new Map() };
 
   // Asset IDs are unique in both IndexedDB and the SQL asset table. Include
@@ -1044,15 +1046,23 @@ export async function applyCourseBundle(
       ]
     );
   }
+  onProgress?.(25);
 
   const sourceAlready = new Map<string, string | null>();
+  let completedQuestions = 0;
+  const questionTotal = Math.max(1, bundle.questions.length);
   for (const q of bundle.questions) {
     await insertQuestion(q, ctx, sourceAlready);
+    completedQuestions++;
+    onProgress?.(25 + (completedQuestions / questionTotal) * 55);
   }
+  onProgress?.(82);
   for (const [assetId, blob] of bundle.assetBlobs) {
     await idb.putAsset(ctx.assetMap.get(assetId) ?? assetId, blob);
   }
+  onProgress?.(94);
   await restoreLearningData(bundle.learning, ctx);
+  onProgress?.(100);
   return courseId;
 }
 
@@ -1138,9 +1148,12 @@ async function restoreLearningData(
  */
 export async function importCourseFile(
   file: File,
-  onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">
+  onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">,
+  onProgress?: ExportProgress
 ): Promise<{ course_id: string; course_name: string }> {
+  onProgress?.(0);
   const bundle = await parseCourseBundle(file);
+  onProgress?.(2);
   const existing = await getFirst("SELECT course_id FROM course WHERE course_id = ?", [
     bundle.course.course_id,
   ]);
@@ -1155,18 +1168,18 @@ export async function importCourseFile(
         : "new";
     courseId =
       choice === "replace"
-        ? await applyCourseBundle(bundle, "replace")
-        : await importAsNewCourse(bundle);
+        ? await applyCourseBundle(bundle, "replace", undefined, onProgress)
+        : await importAsNewCourse(bundle, onProgress);
   } else {
-    courseId = await importAsNewCourse(bundle);
+    courseId = await importAsNewCourse(bundle, onProgress);
   }
   return { course_id: courseId, course_name: bundle.course.name };
 }
 
-async function importAsNewCourse(bundle: ParsedBundle): Promise<string> {
+async function importAsNewCourse(bundle: ParsedBundle, onProgress?: ExportProgress): Promise<string> {
   const courseId = newId("course");
   try {
-    return await applyCourseBundle(bundle, "new", courseId);
+    return await applyCourseBundle(bundle, "new", courseId, onProgress);
   } catch (error) {
     // Bundle import writes in stages; remove partial rows/blobs if one stage
     // fails so retrying cannot leave another half-imported course behind.

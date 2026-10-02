@@ -8,7 +8,7 @@ import { CreateCourseForm } from "./CreateCourseForm";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
 import { cn } from "../lib/utils";
-import { notify } from "../lib/notifications";
+import { notify, startOperationNotification } from "../lib/notifications";
 
 export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const { courseId, setCourseId } = useActiveCourse();
@@ -135,9 +135,9 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
     const failures: string[] = [];
     try {
       for (const file of selected) {
+        const importTask = startOperationNotification("Importing course…", file.name);
         try {
-          imported.push(
-            await api.importCourseFile(file, async (info) => {
+          const course = await api.importCourseFile(file, async (info) => {
               const replace = await confirm({
                 title: "This course already exists here",
                 description: `“${info.course_name}” has the same course id as a course on this device. Replacing it deletes the existing questions, practice history and review schedule first. Choose “Add as new course” to keep both.`,
@@ -146,10 +146,13 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
                 destructive: true,
               });
               return replace ? "replace" : "new";
-            })
-          );
+            }, importTask.progress);
+          imported.push(course);
+          importTask.succeed("Course imported", course.course_name);
         } catch (e) {
-          failures.push(`${file.name}: ${e instanceof Error ? e.message : "Failed to import course"}`);
+          const message = e instanceof Error ? e.message : "Failed to import course";
+          failures.push(`${file.name}: ${message}`);
+          importTask.fail("Course import failed", `${file.name}: ${message}`);
         }
       }
       if (imported.length) {

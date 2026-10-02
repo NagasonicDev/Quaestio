@@ -49,10 +49,6 @@ export function Dashboard() {
         actions={<Actions />}
       />
 
-      <div className="mb-6">
-        <StudyOverview courseId={courseId} />
-      </div>
-
       {counts && counts.total === 0 && (
         <div className="mb-6 space-y-3">
           <Panel className="p-5">
@@ -108,6 +104,10 @@ export function Dashboard() {
           <DueQueueCard courseId={courseId} />
         </div>
       )}
+
+      <div className="mb-6">
+        <StudyOverview courseId={courseId} />
+      </div>
 
       <Panel>
         <PanelHead

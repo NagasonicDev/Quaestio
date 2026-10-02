@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Check, Eye, Lightbulb, NotebookPen, Timer } from "lucide-react";
 import type { Confidence, ContentBlock, Question, SelfRating } from "../api/types";
-import { BlockList, MarkingGuideTable, QuestionReader, SourceLine } from "./QuestionReader";
+import { BlockList, MarkingGuideTable, QuestionReader } from "./QuestionReader";
 import { Meta, Panel } from "./system";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
@@ -233,12 +233,6 @@ export function PracticeFlow({
         <Meta>{formatQuestionType(question.type_key)}</Meta>
         {question.difficulty != null && <Meta>Difficulty {question.difficulty}</Meta>}
         {question.marks != null && <Meta>{question.marks} marks</Meta>}
-        {question.source?.name && (
-          <Meta className="ml-auto">
-            {question.source.institution || question.source.name}
-            {question.source.year ? ` · ${question.source.year}` : ""}
-          </Meta>
-        )}
       </div>
 
       <article className="question-paper p-5 sm:p-7">
@@ -261,7 +255,6 @@ export function PracticeFlow({
             {question.parts.length === 1 ? "" : "s"}. Answer each part in turn.
           </p>
         )}
-        <SourceLine source={question.source} />
       </article>
 
       {stage === "prompt" && (
