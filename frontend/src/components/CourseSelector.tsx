@@ -37,7 +37,10 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   }
 
   useEffect(() => {
-    if (!courseId && courses && courses.length > 0) setCourseId(courses[0].course_id);
+    if (!courses) return;
+    if (!courseId || !courses.some((course) => course.course_id === courseId)) {
+      setCourseId(courses[0]?.course_id ?? null);
+    }
   }, [courses, courseId, setCourseId]);
 
   // Pointer clicks outside dismiss; focus leaving the popup dismisses too, so
