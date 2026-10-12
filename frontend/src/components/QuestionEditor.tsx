@@ -25,6 +25,7 @@ interface EditablePart {
   label: string;
   marks: string;
   body: EditableBlock[];
+  hint: EditableBlock[];
   answer: EditableBlock[];
   solution: EditableBlock[];
   markingCriteria: EditableBlock[];
@@ -106,6 +107,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     label: part.part_label ?? "",
     marks: part.marks?.toString() ?? "",
     body: toEditable(part.body),
+    hint: toEditable(part.hint),
     answer: toEditable(part.answer),
     solution: toEditable(part.solution),
     markingCriteria: toEditable(part.marking_criteria),
@@ -202,6 +204,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
           part_label: part.label,
           marks: part.marks ? Number(part.marks) : null,
           body: blocksToPayload(part.body),
+          hint: blocksToPayload(part.hint),
           answer: blocksToPayload(part.answer),
           solution: blocksToPayload(part.solution),
           marking_criteria: blocksToPayload(part.markingCriteria),
@@ -361,7 +364,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
               </Panel>
             )}
             <Panel>
-              <PanelHead title="Question parts" action={<Button type="button" variant="outline" size="sm" onClick={() => setParts((items) => [...items, { label: String.fromCharCode(97 + items.length), marks: "", body: [emptyBlock("text")], answer: [], solution: [], markingCriteria: [] }])}><Plus /> Add part</Button>} />
+                <PanelHead title="Question parts" action={<Button type="button" variant="outline" size="sm" onClick={() => setParts((items) => [...items, { label: String.fromCharCode(97 + items.length), marks: "", body: [emptyBlock("text")], hint: [], answer: [], solution: [], markingCriteria: [] }])}><Plus /> Add part</Button>} />
               <div className="space-y-5 p-5">
                 {parts.map((part, index) => (
                   <div key={part.questionId ?? `new-${index}`} className="space-y-4 rounded-md border border-border p-4">
@@ -371,6 +374,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
                       <Button type="button" variant="ghost" size="icon" aria-label={`Remove part ${part.label || index + 1}`} onClick={() => setParts((items) => items.filter((_, i) => i !== index))}><Trash2 /></Button>
                     </div>
                     <BlockEditor label={`Part ${part.label || index + 1} question`} blocks={part.body} onChange={(body) => setParts((items) => items.map((item, i) => i === index ? { ...item, body } : item))} />
+                    <BlockEditor label={`Part ${part.label || index + 1} hint (optional)`} blocks={part.hint} onChange={(hint) => setParts((items) => items.map((item, i) => i === index ? { ...item, hint } : item))} note="Shown during practice one step at a time, before the marking guide. Keep it answer-free." />
                     <BlockEditor label={`Part ${part.label || index + 1} answer`} blocks={part.answer} onChange={(answer) => setParts((items) => items.map((item, i) => i === index ? { ...item, answer } : item))} />
                     <BlockEditor label={`Part ${part.label || index + 1} solution`} blocks={part.solution} onChange={(solution) => setParts((items) => items.map((item, i) => i === index ? { ...item, solution } : item))} />
                     <BlockEditor label={`Part ${part.label || index + 1} marking criteria`} blocks={part.markingCriteria} onChange={(markingCriteria) => setParts((items) => items.map((item, i) => i === index ? { ...item, markingCriteria } : item))} />

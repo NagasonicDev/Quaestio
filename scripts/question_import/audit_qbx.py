@@ -97,6 +97,24 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
             if not codes and not ids and obj is q:
                 probs.append(f"{w}: no node classification")
 
+            # The importer resolves node_names by full path first, then by a
+            # bare name that is unique in the course. A path the app cannot
+            # resolve is therefore the separator bug, and it silently picks the
+            # wrong node whenever the leaf name repeats.
+            for i, nm in enumerate(obj.get("node_names") or []):
+                if nm in nodes.path_to_id:
+                    continue
+                if nm in nodes.all_names:
+                    probs.append(f"{w}: node_names[{i}]={str(nm)[:60]!r} resolves "
+                                 f"only as a bare name -- use the full path (join "
+                                 f"the names with {nodes.sep!r})")
+                else:
+                    hint = (f" It looks like a full path: join the names with "
+                            f"{nodes.sep!r}."
+                            if ("/" in str(nm) or ">" in str(nm)) else "")
+                    probs.append(f"{w}: node_names[{i}]={str(nm)[:60]!r} is neither "
+                                 f"a node path nor a known node name.{hint}")
+
 
             if not obj.get("body"):
                 probs.append(f"{w}: empty body "
@@ -107,7 +125,7 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
             blocks = list(obj.get("body") or [])
             for o in obj.get("mcq_options") or []:
                 blocks += o.get("content") or []
-            for f in ("answer", "solution", "marking_criteria"):
+            for f in ("hint", "answer", "solution", "marking_criteria"):
                 blocks += obj.get(f) or []
             own = {x.get("asset_id") for x in obj.get("assets") or []}
             for b in blocks:
@@ -134,6 +152,18 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
                             if len(r) != len(cols):
                                 probs.append(f"{w}: table row {len(r)} cells vs "
                                              f"header {len(cols)}")
+                if bt == "function":
+                    content = c
+                    try:
+                        x_min, x_max, y_min, y_max = [float(content[k]) for k in
+                                                     ("x_min", "x_max", "y_min", "y_max")]
+                        valid_bounds = (x_min < x_max and y_min < y_max and
+                                        x_max - x_min <= 1e6 and y_max - y_min <= 1e6)
+                    except (KeyError, TypeError, ValueError):
+                        valid_bounds = False
+                    expression = str(content.get("expression", "")).strip()
+                    if not expression or len(expression) > 160 or not valid_bounds:
+                        probs.append(f"{w}: invalid function block expression or x/y bounds")
 
             for a in obj.get("assets") or []:
                 aid = a.get("asset_id")
@@ -171,8 +201,15 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
                                  f"{tot}")
                 for p in parts:
                     pl = str(p.get("part_label") or "")
-                    if re.search(r"[A-Za-z]\(", pl):
-                        probs.append(f"{w}: flattened part label {pl!r} -- nest it")
+                    if p.get("parts"):
+                        deep = [x.get("part_label") for x in p["parts"]]
+                        probs.append(f"{w}: part {pl!r} has nested parts {deep} "
+                                     f"-- only one level is ever rendered; flatten "
+                                     f"them to siblings {pl}(i), {pl}(ii), ...")
+                    if re.search(r"[A-Za-z]\(", pl) and not re.fullmatch(
+                            r"[A-Za-z]\([ivxIVX]+\)", pl):
+                        probs.append(f"{w}: composite part label {pl!r} must be a "
+                                     f"letter plus a roman sub-part, e.g. 'c(i)'")
             elif obj is not q and not (obj.get("answer") or obj.get("solution")):
                 probs.append(f"{w}: leaf part has no answer or solution")
             elif obj.get("type_key") == "extended_response":
@@ -293,6 +330,7 @@ def main() -> int:
 
 def _kind(msg: str) -> str:
     for pat, kind in [
+        ("node_names", "node_names is not a resolvable node path"),
         ("node_codes", "node_ids[i] is not the id of node_codes[i]"),
         ("empty body", "empty body"),
         ("no marking_criteria", "missing marking_criteria"),
@@ -304,7 +342,8 @@ def _kind(msg: str) -> str:
         ("asset", "asset problem"),
         ("image", "image block problem"),
         ("mark", "marks do not sum"),
-        ("part label", "flattened part label"),
+        ("part label", "part label / part depth"),
+        ("nested parts", "part label / part depth"),
         ("correct options", "MCQ has not exactly one correct option"),
         ("answer", "MCQ answer letter mismatch"),
     ]:

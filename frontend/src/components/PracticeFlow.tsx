@@ -67,9 +67,25 @@ function formatElapsed(seconds: number | null): string | null {
  */
 function buildHintSteps(question: Question): ContentBlock[][] {
   const authored = question.hint ?? [];
-  if (authored.length) {
-    return authored.map((block) => [block]);
-  }
+  const partHints = (parts: Question[], path = ""): ContentBlock[][] => parts.flatMap((part) => {
+    const label = [path, part.part_label].filter(Boolean).join(" ");
+    const labelBlock: ContentBlock = {
+      block_id: `hint-part-${part.question_id}`,
+      slot: "hint",
+      position: 0,
+      block_type: "text",
+      content: { text: `For part ${label}:` },
+    };
+    return [
+      ...(part.hint ?? []).map((block) => [labelBlock, block]),
+      ...partHints(part.parts, label),
+    ];
+  });
+  const authoredSteps = [
+    ...authored.map((block) => [block]),
+    ...partHints(question.parts),
+  ];
+  if (authoredSteps.length) return authoredSteps;
   const steps: ContentBlock[][] = [];
   if (question.marks != null && question.marks > 1) {
     steps.push([

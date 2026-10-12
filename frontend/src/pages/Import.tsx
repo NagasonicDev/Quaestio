@@ -55,7 +55,7 @@ async function parseQuestionBundle(file: File) {
         if (typeof oldId === "string" && assetMap.has(oldId)) block.content.asset_path = assetMap.get(oldId);
       }
     };
-    for (const slot of ["body", "answer", "solution", "marking_criteria"]) rewriteBlocks(question[slot]);
+    for (const slot of ["body", "hint", "answer", "solution", "marking_criteria"]) rewriteBlocks(question[slot]);
     for (const option of question.mcq_options ?? []) rewriteBlocks(option.content);
     for (const part of question.parts ?? []) rewriteQuestion(part);
   };

@@ -28,6 +28,7 @@ class ImportPartIn(BaseModel):
     part_label: str
     marks: float | None = None
     body: list[ImportBlockIn] = Field(default_factory=list)
+    hint: list[ImportBlockIn] = Field(default_factory=list)
     answer: list[ImportBlockIn] = Field(default_factory=list)
     solution: list[ImportBlockIn] = Field(default_factory=list)
     marking_criteria: list[ImportBlockIn] = Field(default_factory=list)
@@ -51,8 +52,11 @@ class ImportQuestionIn(BaseModel):
     difficulty: int | None = None
     marks: float | None = None
     node_ids: list[str] = Field(default_factory=list)
+    node_codes: list[str] = Field(default_factory=list)
+    node_names: list[str] = Field(default_factory=list)
     tags: list[str] = Field(default_factory=list)
     body: list[ImportBlockIn] = Field(default_factory=list)
+    hint: list[ImportBlockIn] = Field(default_factory=list)
     mcq_options: list[ImportMcqOptionIn] = Field(default_factory=list)
     answer: list[ImportBlockIn] = Field(default_factory=list)
     solution: list[ImportBlockIn] = Field(default_factory=list)
@@ -65,6 +69,7 @@ class ImportQuestionIn(BaseModel):
 class ImportFileIn(BaseModel):
     schema_version: int = 1
     course_id: str | None = None
+    course_name: str | None = None
     questions: list[ImportQuestionIn]
 
 
@@ -128,7 +133,9 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
     course = db.get(models.Course, course_id)
     if not course:
         raise HTTPException(404, "Course not found")
-    if payload.course_id and payload.course_id != course_id:
+    if payload.course_id and payload.course_id != course_id and (
+        not payload.course_name or payload.course_name.strip().casefold() != course.name.strip().casefold()
+    ):
         raise HTTPException(
             400,
             f"This file was generated for course '{payload.course_id}', not '{course_id}'. "
@@ -142,9 +149,16 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
             )
         ).all()
     }
-    valid_node_ids = {n.node_id for n in db.scalars(
+    course_nodes = db.scalars(
         select(models.CourseNode).where(models.CourseNode.course_id == course_id)
-    ).all()}
+    ).all()
+    valid_node_ids = {n.node_id for n in course_nodes}
+    path_by_id: dict[str, str] = {}
+    for node in sorted(course_nodes, key=lambda n: n.level_index):
+        prefix = path_by_id.get(node.parent_node_id or "", "")
+        path_by_id[node.node_id] = f"{prefix} / {node.name}" if prefix else node.name
+    id_by_code = {n.code: n.node_id for n in course_nodes if n.code}
+    id_by_path = {path: node_id for node_id, path in path_by_id.items()}
     valid_difficulties = {d.level for d in db.scalars(
         select(models.DifficultyLevel).where(models.DifficultyLevel.course_id == course_id)
     ).all()}
@@ -158,6 +172,10 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
     imported = 0
 
     for index, q in enumerate(payload.questions):
+        if q.node_codes:
+            q.node_ids = [id_by_code.get(code, code) for code in q.node_codes]
+        elif q.node_names:
+            q.node_ids = [id_by_path.get(name, name) for name in q.node_names]
         errors, warnings = _validate_question(
             q, valid_type_keys=valid_type_keys, valid_node_ids=valid_node_ids,
             valid_difficulties=valid_difficulties, valid_tags=valid_tags,
@@ -198,6 +216,7 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
             db.add(models.QuestionTag(question_id=question.question_id, tag_id=tag.tag_id))
 
         _write_blocks(db, question.question_id, "body", q.body)
+        _write_blocks(db, question.question_id, "hint", q.hint)
         for position, option in enumerate(q.mcq_options):
             db.add(models.McqOption(
                 question_id=question.question_id,
@@ -219,6 +238,7 @@ def import_json(course_id: str, payload: ImportFileIn, db: Session = Depends(get
                 db.add(part_q)
                 db.flush()
                 _write_blocks(db, part_q.question_id, "body", part.body)
+                _write_blocks(db, part_q.question_id, "hint", part.hint)
                 _write_blocks(db, part_q.question_id, "answer", part.answer)
                 _write_blocks(db, part_q.question_id, "solution", part.solution)
                 _write_blocks(db, part_q.question_id, "marking_criteria", part.marking_criteria)

@@ -31,3 +31,6 @@ data/**
 # Personal question banks and generated papers/solutions
 *.qb
 *.pdf
+
+# Packaged question-import skills (build artifacts of scripts/build_skill.py)
+*.skill

@@ -1,306 +1,111 @@
 """
-The "Download Course Skill" feature (§31-34 of the design doc, formalized).
+The "Download Course Skill" feature.
 
 A .skill file is just a zip (renamed) containing:
-  - SKILL.md            general document-to-question instructions, PLUS this
-                         course's specific structure/classification/marking
-                         rules, so the whole thing is self-contained — a
-                         person hands this single file to an LLM alongside a
-                         source exam and gets back an import-ready JSON file.
-  - import-schema.json  a concrete reference for the JSON the agent must
-                         produce: this course's valid node ids (with full
-                         path for readability), valid question types, valid
-                         difficulty levels, and an example question object.
-  - course-config.json  the full hydrated course config, for anything the
-                         agent needs that isn't already spelled out in
-                         SKILL.md.
+  - SKILL.md            a short entry point: which course this skill is for,
+                         that course's valid values, and a pointer to
+                         WORKFLOW.md. Deliberately small — the contract lives
+                         in one place so it cannot drift.
+  - WORKFLOW.md         the full, course-agnostic extraction contract and
+                         command pipeline, rendered from SKILL_TEMPLATE.md.
+                         Shared verbatim with the frontend generator
+                         (frontend/src/lib/exchange.ts) and with the installed
+                         skills in .opencode/skills/.
+  - import-schema.json  machine-readable reference: this course's node rows
+                         (id, name, code, level, full path), valid types,
+                         difficulty levels and tags. Agents search it with
+                         scripts/index_nodes.py; they never need it in context.
+  - nodes.txt           the same node list flattened to `code | full path`.
+  - course-config.json  the full hydrated course config.
+  - scripts/*.py        the shared question_import toolchain.
 
-The produced JSON is meant to be handed back to this app via
-POST /api/v1/courses/{course_id}/import-json (see routers/import_pipeline.py).
+The produced JSON is meant to be handed back to this app via the Import page
+(frontend/src/pages/Import.tsx -> lib/data.ts importJson).
 """
+from __future__ import annotations
+
 import io
 import json
-from pathlib import Path
+import sys
 import zipfile
+from pathlib import Path
 
 from . import schemas
 
-
 REPO_ROOT = Path(__file__).resolve().parents[2]
-COMMON_SKILL_DIR = REPO_ROOT / "scripts" / "question_import"
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+
+# The rendering rules live in scripts/skill_render.py so this backend, the
+# frontend generator and the repo-local renderer cannot drift apart.
+from skill_render import (  # noqa: E402
+    COMMON_SKILL_DIR as _COMMON_SKILL_DIR,
+    NODE_PATH_SEPARATOR,
+    WORKFLOW_NAME,
+    flatten_nodes,
+    nodes_index_markdown,
+    render_template,
+    schema_rows,
+    skill_substitutions,
+    slug,
+)
+from skill_render import (  # noqa: E402
+    TEMPLATE_NAME,
+)
+
+COMMON_SKILL_DIR = _COMMON_SKILL_DIR
 COMMON_SCRIPTS_DIR = COMMON_SKILL_DIR
+
+# Files that belong to the course-agnostic toolchain shipped inside the bundle.
+# SKILL_TEMPLATE.md is an input to rendering, not something an agent runs, so it
+# is deliberately excluded.
+TEMPLATE_EXCLUDED = {TEMPLATE_NAME}
+
+
+def _read_common(name: str) -> str:
+    return (COMMON_SKILL_DIR / name).read_text(encoding="utf-8")
 
 
 def _common_workflow_markdown() -> str:
-    return (COMMON_SKILL_DIR / "WORKFLOW.md").read_text(encoding="utf-8")
+    return _read_common(WORKFLOW_NAME)
 
 
-def _flatten_nodes(nodes: list[schemas.CourseNodeOut], path: list[str] | None = None) -> list[dict]:
-    path = path or []
-    out = []
-    for n in nodes:
-        full_path = path + [n.name]
-        out.append({
-            "node_id": n.node_id,
-            "name": n.name,
-            "code": n.code,
-            "level_index": n.level_index,
-            "path": " > ".join(full_path),
-        })
-        out.extend(_flatten_nodes(n.children, full_path))
-    return out
+def _flatten_nodes(nodes, path: list[str] | None = None) -> list[dict]:
+    """Flatten the course tree into the row shape the import scripts consume."""
+    return flatten_nodes(nodes, path)
+
+
+def _nodes_index_markdown(rows: list[dict]) -> str:
+    """Flat `code | full path` index — greppable, and far cheaper than a tree."""
+    return nodes_index_markdown(rows)
+
+
+def _substitutions(config: schemas.CourseFullConfig,
+                   instructions_markdown: str) -> dict[str, str]:
+    return skill_substitutions(
+        course_name=config.name,
+        course_id=config.course_id,
+        question_types=config.question_types,
+        difficulty_levels=[{"level": d.level, "label": d.label}
+                           for d in config.difficulty_levels],
+        tags=config.tags,
+        allow_multi_classification=config.allow_multi_classification,
+        node_rows=_flatten_nodes(config.nodes),
+        instructions_markdown=instructions_markdown,
+    )
+
+
+def render_skill_markdown(substitutions: dict[str, str]) -> str:
+    return render_template(_read_common(TEMPLATE_NAME), substitutions)
 
 
 def build_skill_markdown(config: schemas.CourseFullConfig, instructions_markdown: str) -> str:
-    diff_range = ""
-    if config.difficulty_levels:
-        levels = [d.level for d in config.difficulty_levels]
-        diff_range = f"{min(levels)}\u2013{max(levels)}"
-
-    return f"""# Document-to-Question Skill — {config.name}
-
-This skill converts source documents (exam papers, worksheets, assessments)
-into the question-bank's structured JSON import format, for **this specific
-course only**. It combines the general extraction process with the exact
-structure, categories, and rules {config.name} uses — do not apply this to a
-different course without downloading that course's own skill file, since
-node ids, question types, and difficulty labels are course-specific and
-will not resolve against another course's database.
-
-## Process
-
-1. Read the entire source document before extracting anything, so multi-part
-   questions, shared stems, and diagrams referenced across pages are handled
-   correctly rather than piecemeal.
-2. Identify each individual question (or question with parts). Preserve the
-   original question numbering only as source metadata — never let it drive
-   the app's own display order.
-3. For each question, extract in order: question text, equations (as LaTeX),
-   diagrams/images (describe what should be extracted; this skill cannot
-   extract binary image data itself — flag image locations for the person to
-   attach manually after import, via the app's block editor), tables
-   (as structured columns/rows, not flattened text), and lists.
-   **Format mathematical notation, scientific notation, symbols, and units
-   for rendering.** Use an `equation` block for standalone equations. For math
-   inside prose, choices, table cells, or list items, wrap LaTeX in single
-   dollar signs, e.g. `$v = 3.0\\times10^{8}\\,\\mathrm{m/s}$`. Never leave
-   powers as plain `10^8` or use plain `x` for multiplication.
-   If completing a question requires follow-up input or action from the person
-   (for example, manually attaching an image that could not be extracted), add
-   the exact tag `action_required` to that question's `tags` array. Do not add
-   it to questions that need no follow-up. Every tag must be selected from the
-   course's VALID TAGS list below. Never invent, rename, or create tags; omit a
-   tag when none of the listed tags applies. Only the user can change this list.
-4. Determine the question type, difficulty, marks, and classification
-   (course nodes) using the course-specific section below — never guess a
-   category that doesn't appear in "Valid categories"; if uncertain, use the
-   nearest matching node's parent instead of inventing one, and note the
-   classification confidence honestly.
-5. **Every question must end up with a marking guide** (see "Marking guides"
-   below) — this is not optional, even when the source material doesn't
-   include one.
-6. Produce a single JSON file (see "Output format") containing every
-   extracted question. Do not import anything yourself — the person uploads
-   this file into the app.
-7. Before delivery, run
-   `python scripts/repair_multipart_solutions.py import.json`. Review the
-   reported part assignments and use the generated `import-fixed.json`.
-   The repair checks every nesting level, distributes part-labelled parent
-   answers onto their parts, moves parent-level solution blocks onto matching
-   parts, and removes parent copies already represented on a part. Do not
-   leave answers or solutions on a multipart parent. For `.qbx`
-   bundles, run `scripts/audit_qbx.py` on the repaired copy; it rejects any
-   multipart parent that still contains an answer or solution.
-
-## Marking guides — required, and never an exemplar
-
-Every question in the output must have a `marking_criteria` field (in
-addition to `answer`/`solution` if the source provides them):
-
-- If the source document already gives marking criteria (a rubric, a mark
-  scheme, "1 mark for X, 1 mark for Y"), use it as given, reworded into the
-  block format below if needed.
-- **If the exam document gives no marking criteria, create them yourself**
-  for every question or part, using the question wording, its marks value,
-  difficulty, and course context (topic/dot point) to decide what a response
-  must demonstrate to earn each mark. For example, a 3-mark short-answer
-  question might earn "1 mark for
-  correctly identifying X; 1 mark for the correct method; 1 mark for the
-  correct final answer with appropriate units."
-- **Do not write a full worked exemplar answer or model solution as the
-  marking guide.** A marking guide describes what to check for and how marks
-  are allocated — it is a checklist for a marker, not a sample response. If
-  you also have or can produce a worked solution, put that in the separate
-  `solution` field instead; keep `marking_criteria` focused on grading
-  criteria only.
-- Marking criteria should be given as a `list` content block (one item per
-  criterion/mark) wherever practical, since that's the clearest format for a
-  marker to check off against.
-- **Every criterion item must state its mark allocation up front** — the app
-  renders the marking guide as a two-column table (criteria | marks), so
-  write each item as `\"<allocation> marks: <what to look for>\"` (or
-  `\"<allocation> marks for <what to look for>\"`), allocating a single mark
-  or a band, e.g. `\"1 mark: correctly identifies X\"`, `\"2 marks: sets up
-  the correct equation\"`, or `\"1–2 marks: partial method with one slip\"`.
-  A trailing parenthesised allocation (`\"... correctly (2 marks)\"`) also
-  works. Avoid vague criteria with no allocation — an unmallocated line
-  shows an empty marks cell in the table.
-- Apply this recursively: the shared parent and every part/subpart need their
-  own non-empty `marking_criteria` list block. If marks are awarded through
-  parts, give the parent a concise allocation note and put mark-by-mark
-  criteria on each leaf part; never leave the parent rubric blank.
-- For every question with parts, the parent `marks` must equal the sum of its
-  immediate parts; apply the same check to nested parts. Recheck printed marks
-  against the paper and any mark scheme before resolving a mismatch. Never
-  silently change a printed allocation; flag an unresolved conflict for review.
-
-## Output format
-
-Produce **one JSON file** (e.g. `import.json`) shaped like this:
-
-```json
-{{
-  "schema_version": 1,
-  "course_id": "{config.course_id}",
-  "questions": [
-    {{
-      "type_key": "short_answer",
-      "difficulty": 3,
-      "marks": 3,
-      "node_ids": ["<a valid node_id from import-schema.json>"],
-      "tags": [],
-      "body": [
-        {{"block_type": "text", "content": {{"text": "..."}}}},
-        {{"block_type": "equation", "content": {{"latex": "x^2 - 5x + 6 = 0", "display": true}}}}
-      ],
-      "answer": [{{"block_type": "text", "content": {{"text": "..."}}}}],
-      "solution": [],
-      "marking_criteria": [
-        {{"block_type": "list", "content": {{"ordered": false, "items": [
-          "1 mark: correctly extracts the coefficients",
-          "1 mark: applies the quadratic formula correctly",
-          "1 mark: correct final answer"
-        ]}}}}
-      ],
-      "classification_confidence": "high",
-      "source": {{"name": "Trial Examination", "year": 2025, "original_question_no": "17"}}
-    }}
-  ]
-}}
-```
-
-## Multiple-choice questions
-
-For every question whose `type_key` is `multiple_choice`, keep the question
-stem in `body` and put answer choices in a separate `mcq_options` array. Do
-not put choices in a body list. Keep stem blocks in the order they appear on
-the page, and keep options in their printed order (A, B, C, D). Each option
-has a `content` array of normal content blocks and an `is_correct` boolean.
-Use inline LaTeX for math in option text. Determine the answer by checking the
-paper, any answer key/mark scheme, and solving the question yourself. Mark
-exactly one option correct and set `answer` to its printed letter (for example,
-`C`). A missing key in the paper does not mean the answer is unknown. Only if
-the question is genuinely ambiguous or unsolvable from available material,
-mark no option correct, leave `answer` empty, and flag it for review.
-Preserve diagrams, tables, and equations in stem/option content. Emit exactly
-one non-empty option object for each printed choice, in order; never combine
-choices, omit choices missed by OCR, or place choices in the stem. For
-table-based choices, preserve the table and keep each option to its own choice.
-Use sequential labels A, B, C, D, etc.; do not truncate after D. Do not create
-question parts for the choices.
-
-Example:
-
-```json
-{{
-  "type_key": "multiple_choice",
-  "body": [{{"block_type": "text", "content": {{"text": "What is the temperature?"}}}}],
-  "mcq_options": [
-    {{"content": [{{"block_type": "text", "content": {{"text": "$1.6\\\\times10^12$ K"}}}}], "is_correct": false}},
-    {{"content": [{{"block_type": "text", "content": {{"text": "$5.2\\\\times10^3$ K"}}}}], "is_correct": true}}
-  ],
-  "answer": [{{"block_type": "text", "content": {{"text": "B"}}}}]
-}}
-```
-
-See `import-schema.json` (packaged alongside this file) for this course's
-actual valid `node_ids`, `type_key` values, and difficulty range
-({diff_range or "as configured"}) — every `node_ids` entry in your output
-must be one of the `node_id` values listed there, and every `type_key` must
-be one of the listed valid types.
-
-Content block types available for `body`/`answer`/`solution`/`marking_criteria`:
-`text`, `heading`, `equation` (LaTeX in `latex`, `display: true/false`),
-`image`/`diagram`/`graph` (flag these for manual attachment — see step 3),
-`function` (for an explicit single-variable function, use its right-hand side
-in `expression`, numeric `x_min`, `x_max`, `y_min`, and `y_max`, and optional
-`x_label`, `y_label`, and `caption`; for example
-`{"block_type":"function","content":{"expression":"x^2","x_min":-5,"x_max":5,"y_min":-2,"y_max":10}}`),
-`table` (`columns`, `rows`), `list` (`ordered`, `items`), `code`
-(`language`, `code`), `answer_area` (`lines`), `page_break`.
-
-Inline math uses `$...$` within `text`, `heading`, `list.items`, and table
-cell strings. Use `\\times`, braces for exponents, and `\\,\\mathrm{unit}`
-for upright SI units. Example choice: `"(A) $5.4\\times10^{14}\\,\\mathrm{Hz}$"`.
-
-## Handling uncertainty
-
-- Multi-part questions: emit one question object for the shared stem, with
-  a `parts` array of `{{"part_label": "a", "marks": ..., "body": [...],
-  "answer": [...], "solution": [...], "marking_criteria": [...]}}` objects in the same order as the source — do
-  not split them into unrelated top-level questions. A part may itself contain
-  a `parts` array using the same object shape for nested labels (for example,
-  question 26 has part `c`, whose parts are `i` and `ii`). Keep each level
-  nested under its immediate parent: represent this as 26 → c → i/ii, not as
-  flat labels such as `c(i)`.
-- Put each part's answer and worked solution on that part object, not only on
-  the shared parent. This applies at every nesting level: for example, answers
-  and solutions for 26(c)(i) and 26(c)(ii) belong on the `i` and `ii` objects.
-  Keep the shared stem and any genuinely shared context on the parent `body`.
-  When a source answer key or solution document labels work by part, match each
-  item to the corresponding part and split combined text at those labels;
-  never leave a single labelled multi-part solution only in the parent's
-  `solution` field. Use `answer` for the concise result or response and
-  `solution` for the reasoning, working, or explanation. Every leaf part must
-  have at least an `answer` or a `solution`, even when the parent has neither.
-  If the source omits them, derive the response from the prompt where possible;
-  if it cannot be established, flag the part as unresolved rather than silently
-  leaving it blank. Do not fabricate a result. Keep marking guidance in that
-  part's `marking_criteria`.
-- For multi-part `extended_response`, `short_response`, or `short_answer`
-  questions, include an `answer_area` block at the end of each part's `body`
-  so answer lines appear immediately after that part. Set `content.lines` to
-  two lines per mark (round fractional results up, with at least one line),
-  based on that part's `marks`; for example, a 2-mark part gets
-  `{"block_type":"answer_area","content":{"lines":4}}`. Do not put one
-  long answer area on the shared parent question. Leave answer areas off
-  multiple-choice parts and parts whose source already provides a specific
-  answer space.
-- If a question spans multiple valid nodes, list all of them in `node_ids`
-  (only if the course allows multiple classification — see below).
-- If you cannot confidently classify a question at all, still include it,
-  set `classification_confidence` to `"low"`, and pick the closest available
-  node rather than leaving `node_ids` empty.
-- Before saving, audit every question and nested part against the source:
-  confirm no empty text, heading, equation, list item, or MCQ choice; confirm
-  all printed choices are present and ordered; confirm each MCQ has exactly
-  one correct option and a matching answer letter unless explicitly flagged
-  unresolved; confirm every parent and part has an allocated marking guide;
-  and confirm parent/part mark totals. Parse the finished JSON and fix all
-  structural errors before delivering it.
-
----
-
-{instructions_markdown}
-
----
-
-{_common_workflow_markdown()}
-"""
+    return render_skill_markdown(skill_substitutions(config, instructions_markdown))
 
 
 def build_skill_zip(config: schemas.CourseFullConfig, instructions_markdown: str) -> bytes:
     skill_md = build_skill_markdown(config, instructions_markdown)
+    nodes = _flatten_nodes(config.nodes)
+    example_node = nodes[0] if nodes else None
 
     import_schema = {
         "course_id": config.course_id,
@@ -309,23 +114,37 @@ def build_skill_zip(config: schemas.CourseFullConfig, instructions_markdown: str
         "valid_type_keys": config.question_types,
         "valid_difficulty_levels": [{"level": d.level, "label": d.label} for d in config.difficulty_levels],
         "allow_multi_classification": config.allow_multi_classification,
-        "valid_node_ids": _flatten_nodes(config.nodes),
+        "node_path_separator": NODE_PATH_SEPARATOR,
+        "valid_node_ids": schema_rows(nodes),
         "valid_tags": config.tags,
+        "content_block_types": {
+            "slots": ["body", "hint", "answer", "solution", "marking_criteria"],
+            "types": ["text", "heading", "equation", "image", "diagram", "graph", "function", "table", "list", "code", "answer_area", "page_break"],
+        },
         "mcq_option_format": {
             "content": "array of content blocks, same block format as body",
             "is_correct": "boolean; mark exactly one true when the answer is known",
             "order": "array order is the printed choice order; labels A, B, C... are implicit",
         },
+        "ignored_fields": {
+            "question": ["question_id", "review_status", "notes", "created_at", "updated_at"],
+            "part": ["question_id", "difficulty", "node_ids", "node_codes", "node_names", "tags", "source", "notes", "classification_confidence", "mcq_options", "assets", "review_status"],
+            "never_exported": ["hint"],
+            "max_part_depth_rendered": 1,
+        },
         "example_question": {
             "type_key": config.question_types[0] if config.question_types else "short_answer",
             "difficulty": config.difficulty_levels[0].level if config.difficulty_levels else None,
             "marks": 3,
-            "node_ids": [],
+            "node_ids": [example_node["node_id"]] if example_node else [],
+            "node_codes": [example_node["code"]] if example_node and example_node["code"] else [],
+            "node_names": [example_node["path"]] if example_node else [],
             "tags": [],
             "body": [
                 {"block_type": "text", "content": {"text": "Example question text."}},
                 {"block_type": "equation", "content": {"latex": "x^2 - 5x + 6 = 0", "display": True}},
             ],
+            "hint": [{"block_type": "text", "content": {"text": "Try identifying the relevant principle first."}}],
             "answer": [{"block_type": "text", "content": {"text": "x = 2, x = 3"}}],
             "solution": [],
             "marking_criteria": [
@@ -342,8 +161,8 @@ def build_skill_zip(config: schemas.CourseFullConfig, instructions_markdown: str
             "type_key": "multiple_choice",
             "body": [{"block_type": "text", "content": {"text": "What is the temperature?"}}],
             "mcq_options": [
-                {"content": [{"block_type": "text", "content": {"text": "$1.6\\times10^12$ K"}}], "is_correct": False},
-                {"content": [{"block_type": "text", "content": {"text": "$5.2\\times10^3$ K"}}], "is_correct": True},
+                {"content": [{"block_type": "text", "content": {"text": "$1.6\\times10^{12}$ K"}}], "is_correct": False},
+                {"content": [{"block_type": "text", "content": {"text": "$5.2\\times10^{3}$ K"}}], "is_correct": True},
             ],
             "answer": [{"block_type": "text", "content": {"text": "B"}}],
         },
@@ -354,8 +173,14 @@ def build_skill_zip(config: schemas.CourseFullConfig, instructions_markdown: str
     buf = io.BytesIO()
     with zipfile.ZipFile(buf, "w", zipfile.ZIP_DEFLATED) as zf:
         zf.writestr("SKILL.md", skill_md)
-        zf.writestr("import-schema.json", json.dumps(import_schema, indent=2))
+        zf.writestr("WORKFLOW.md", _common_workflow_markdown())
+        # Compact on purpose: this file is a machine reference. Agents search it
+        # with scripts/index_nodes.py; they never need it in context.
+        zf.writestr("import-schema.json", json.dumps(import_schema, separators=(",", ":")))
+        zf.writestr("nodes.txt", _nodes_index_markdown(nodes))
         zf.writestr("course-config.json", json.dumps(course_config_json, indent=2))
         for script_path in sorted(COMMON_SCRIPTS_DIR.glob("*.py")):
+            if script_path.name in TEMPLATE_EXCLUDED:
+                continue
             zf.write(script_path, f"scripts/{script_path.name}")
     return buf.getvalue()

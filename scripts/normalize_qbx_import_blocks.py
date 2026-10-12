@@ -5,7 +5,7 @@ import tempfile
 import zipfile
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-SLOTS = ("body", "answer", "solution", "marking_criteria")
+SLOTS = ("body", "hint", "answer", "solution", "marking_criteria")
 
 
 def normalize_blocks(blocks):

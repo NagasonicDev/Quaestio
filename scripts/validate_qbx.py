@@ -32,13 +32,13 @@ EXPORT_KEYS = [
     "question_id", "course_id", "type_key", "difficulty", "marks",
     "parent_question_id", "part_label", "notes", "review_status",
     "classification_confidence", "node_ids", "node_codes", "tags", "body",
-    "mcq_options", "answer", "solution", "marking_criteria", "assets", "source",
+    "mcq_options", "hint", "answer", "solution", "marking_criteria", "assets", "source",
     "parts", "created_at", "updated_at",
 ]
 ASSET_KEYS = ["asset_id", "file_path", "mime_type", "width", "height",
               "alt_text", "caption"]
 BLOCK_TYPES = {"text", "heading", "equation", "table", "list", "code",
-               "image", "diagram", "graph", "answer_area", "page_break"}
+               "image", "diagram", "graph", "function", "answer_area", "page_break"}
 
 
 def png_size(data):
@@ -65,6 +65,18 @@ def walk(blocks, errs, where):
             errs.append(f"{where}: {bt} block has no text")
         if bt == "equation" and not (c or {}).get("latex"):
             errs.append(f"{where}: equation block has no latex")
+        if bt == "function":
+            content = c or {}
+            try:
+                x_min, x_max, y_min, y_max = [float(content[k]) for k in
+                                             ("x_min", "x_max", "y_min", "y_max")]
+                valid_bounds = (x_min < x_max and y_min < y_max and
+                                x_max - x_min <= 1e6 and y_max - y_min <= 1e6)
+            except (KeyError, TypeError, ValueError):
+                valid_bounds = False
+            expression = str(content.get("expression", "")).strip()
+            if not expression or len(expression) > 160 or not valid_bounds:
+                errs.append(f"{where}: invalid function block expression or x/y bounds")
         if bt == "list":
             if not (c or {}).get("items"):
                 errs.append(f"{where}: list block has no items")
@@ -346,6 +358,7 @@ def main():
                 elif n["code"] != code:
                     errs.append(f"{where}: {nid} is {n['code']}, not {code}")
             walk(q.get("body"), errs, where)
+            walk(q.get("hint"), errs, where + "/hint")
             walk(q.get("answer"), errs, where + "/answer")
             walk(q.get("solution"), errs, where + "/solution")
             walk(q.get("marking_criteria"), errs, where + "/marking_criteria")

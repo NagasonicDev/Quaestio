@@ -71,6 +71,7 @@ def create_question(payload: schemas.QuestionCreate, db: Session = Depends(get_d
         db.add(models.QuestionTag(question_id=q.question_id, tag_id=tag.tag_id))
 
     body_blocks = _write_blocks(db, q.question_id, "body", payload.body)
+    hint_blocks = _write_blocks(db, q.question_id, "hint", payload.hint)
     answer_blocks = _write_blocks(db, q.question_id, "answer", payload.answer)
     solution_blocks = _write_blocks(db, q.question_id, "solution", payload.solution)
     marking_blocks = _write_blocks(db, q.question_id, "marking_criteria", payload.marking_criteria)
@@ -84,7 +85,7 @@ def create_question(payload: schemas.QuestionCreate, db: Session = Depends(get_d
 
     db.flush()
     crud.finalize_uploaded_assets(
-        db, q.question_id, body_blocks + answer_blocks + solution_blocks + marking_blocks
+        db, q.question_id, body_blocks + hint_blocks + answer_blocks + solution_blocks + marking_blocks
     )
     db.commit()
     q = db.scalar(_question_query().where(models.Question.question_id == q.question_id))
@@ -145,7 +146,7 @@ def update_question(question_id: str, payload: schemas.QuestionUpdate, db: Sessi
             db.add(models.QuestionTag(question_id=question_id, tag_id=tag.tag_id))
 
     updated_blocks: list[models.ContentBlock] = []
-    for slot in ("body", "answer", "solution", "marking_criteria"):
+    for slot in ("body", "hint", "answer", "solution", "marking_criteria"):
         if slot in data and data[slot] is not None:
             db.query(models.ContentBlock).filter_by(question_id=question_id, slot=slot).delete()
             updated_blocks += _write_blocks(db, question_id, slot, [schemas.ContentBlockIn(**b) for b in data[slot]])

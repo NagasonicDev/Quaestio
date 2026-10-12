@@ -1,11 +1,14 @@
 """Index the course node table for fast lookup.
 
+    python index_nodes.py --search photoelectric        # lookup only, writes nothing
     python index_nodes.py --out NODES.txt --json nodes.json
-    python index_nodes.py --search "photoelectric"
 
-Writes `NODES.txt` (`code | node_id | path`) and a JSON map. The search mode
-is the first thing to run when you are unsure where a question belongs -- it
-beats scrolling 700 lines of SKILL.md.
+`--search` prints `code | full path` and writes nothing. Run it with no
+arguments to write `NODES.txt` and `nodes.json` for bulk work.
+
+Search is the first thing to run when you are unsure where a question belongs.
+The node tree is deliberately NOT in SKILL.md -- it is 370+ lines that the
+model only needs three or four entries from.
 """
 from __future__ import annotations
 
@@ -25,11 +28,30 @@ def main() -> int:
     ap.add_argument("--schema", default=None, help="path to import-schema.json")
     ap.add_argument("--out", default="NODES.txt", help="NODES.txt output path")
     ap.add_argument("--json", default="nodes.json", help="JSON map output path")
-    ap.add_argument("--search", help="search node names/paths and exit")
+    ap.add_argument("--search", metavar="TEXT",
+                    help="print matching nodes as `code | full path` and exit "
+                         "without writing anything")
     a = ap.parse_args()
 
     schema = load_schema(a.schema)
+    sep = schema.get("node_path_separator", " / ")
     idx = NodeIndex(schema)
+
+    if a.search:
+        hits = idx.search(a.search)
+        if not hits:
+            words = {w for w in a.search.lower().split() if len(w) > 3}
+            for code, name in sorted(idx.code_to_name.items()):
+                if words & set(name.lower().replace(",", " ").split()):
+                    hits.append((code, name))
+            print(f"no exact node matches {a.search!r}; loose matches:")
+        for code, name in hits[:40]:
+            path = idx.code_to_path.get(code, name)
+            print(f"  {code:<12} {path}")
+        print(f"\n{len(hits)} hit(s). Use the CODE for node_codes, or the full "
+              f"path above verbatim for node_names (separated by {sep!r}).")
+        return 0
+
     idx.write_nodelist(a.out)
     Path(a.json).write_text(json.dumps({
         "course_id": schema["course_id"],
@@ -40,19 +62,6 @@ def main() -> int:
         "code_to_path": idx.code_to_path,
     }, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"{len(idx)} nodes -> {a.out}, {a.json}")
-
-    if a.search:
-        hits = idx.search(a.search)
-        if not hits:
-            print(f"no node matches {a.search!r}")
-            # nearest nodes by shared words
-            words = {w for w in a.search.lower().split() if len(w) > 3}
-            for code, name in sorted(idx.code_to_name.items()):
-                if words & set(name.lower().replace(",", " ").split()):
-                    hits.append((code, name))
-            print("loose matches:")
-        for code, name in hits[:40]:
-            print(f"  {code:<12} {name}")
     return 0
 
 

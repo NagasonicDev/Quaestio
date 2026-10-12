@@ -10,7 +10,7 @@ format, which the prose in SKILL.md only describes loosely:
     mcq option  = {"content": [<blocks>], "is_correct": bool}   # A/B/C/D implicit
     answer      = [<blocks>]   # for MCQ, one text block holding the letter
     part        = {"part_label", "marks", "body", "marking_criteria",
-                   "answer", "solution", "assets", "parts"}
+                   "hint", "answer", "solution", "assets", "parts"}
 
 Authors should use the block constructors below rather than hand-writing dicts;
 they are what keeps 2000+ questions structurally consistent.
@@ -35,7 +35,7 @@ SKILL_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_SCHEMA = SKILL_DIR / "import-schema.json"
 
 TEXT_BLOCKS = {"text", "heading", "equation", "list", "code", "answer_area",
-               "table", "image", "diagram", "graph", "page_break"}
+               "table", "image", "diagram", "graph", "function", "page_break"}
 
 
 class SpecError(Exception):
@@ -68,30 +68,56 @@ class NodeIndex:
 
     The recurring bug this exists to prevent: a question carrying a
     ``node_code`` whose paired ``node_id`` names a *different* node. Node ids
-    are regenerated whenever the course is re-imported, so the code is the
-    durable truth -- but you still have to emit both, and they must agree.
+    can be regenerated, so use a stable code or full path when configured.
+    When neither exists, retain the valid node id and report that limitation.
     """
 
     def __init__(self, schema: dict):
+        self.sep = schema.get("node_path_separator") or " / "
         self.code_to_id: dict[str, str] = {}
         self.id_to_code: dict[str, str] = {}
         self.id_to_name: dict[str, str] = {}
         self.code_to_name: dict[str, str] = {}
         self.code_to_path: dict[str, str] = {}
+        self.id_to_path: dict[str, str] = {}
+        self.path_to_id: dict[str, str] = {}
         self.all_names: list[str] = []
-        for row in schema.get("valid_node_ids", []):
-            nid, code = row["node_id"], row["code"]
-            self.code_to_id[code] = nid
-            self.id_to_code[nid] = code
+        stack: list[str] = []
+        rows = schema.get("valid_node_ids", [])
+        for row in rows:
+            nid, code = row["node_id"], row.get("code")
+            # Rows are pre-order DFS with a level_index, so a node's full path is
+            # `level_index` ancestors back. An explicit `path` wins when present;
+            # otherwise rebuild it here. Rebuilding is the default because a
+            # stored path can disagree with the separator the app actually uses,
+            # and a mismatched path is silently unresolvable (it falls back to a
+            # bare-name match, which is a hard error for a duplicated leaf name).
+            level = row.get("level_index")
+            if row.get("path"):
+                full = row["path"]
+            elif isinstance(level, int):
+                ancestors = stack[:level]
+                stack[:] = ancestors + [row["name"]]
+                full = self.sep.join(stack)
+            else:
+                stack[:] = [row["name"]]
+                full = row["name"]
             self.id_to_name[nid] = row["name"]
-            self.code_to_name[code] = row["name"]
-            self.code_to_path[code] = row.get("path", "")
+            self.id_to_path[nid] = full
+            self.path_to_id[full] = nid
+            if code:
+                self.code_to_id[code] = nid
+                self.id_to_code[nid] = code
+                self.code_to_name[code] = row["name"]
+                self.code_to_path[code] = full
             if row["name"] not in self.all_names:
                 self.all_names.append(row["name"])
-        # valid_node_codes / valid_node_names may contain entries with no id
-        for code in schema.get("valid_node_codes", []):
-            if code not in self.code_to_id:
-                raise SpecError(f"code {code} has no node_id in schema")
+        # Integrity: a duplicated code would silently shadow a node.
+        coded = sum(1 for r in rows if r.get("code"))
+        if len(self.code_to_id) != coded:
+            raise SpecError(f"schema has duplicate node codes "
+                             f"({coded} coded nodes, {len(self.code_to_id)} "
+                             f"distinct codes)")
 
     def __len__(self):
         return len(self.code_to_id)
@@ -110,6 +136,9 @@ class NodeIndex:
             return self.id_to_code[node_id]
         except KeyError:
             raise SpecError(f"unknown node_id {node_id!r}") from None
+
+    def has_code(self, node_id: str) -> bool:
+        return node_id in self.id_to_code
 
     def search(self, needle: str, limit: int = 25) -> list[tuple[str, str]]:
         """Fuzzy-ish search over node names/paths -- your first move when unsure."""
@@ -150,6 +179,18 @@ def heading(s: str, level: int = 2) -> dict:
 
 def equation(latex: str, display: bool = True) -> dict:
     return {"block_type": "equation", "content": {"latex": latex, "display": display}}
+
+
+def function_graph(expression: str, x_min: float, x_max: float,
+                   y_min: float, y_max: float, x_label: str = "x",
+                   y_label: str = "y", caption: str | None = None) -> dict:
+    """A rendered single-variable function graph; expression is the RHS only."""
+    content = {"expression": expression, "x_min": x_min, "x_max": x_max,
+               "y_min": y_min, "y_max": y_max, "x_label": x_label,
+               "y_label": y_label}
+    if caption:
+        content["caption"] = caption
+    return {"block_type": "function", "content": content}
 
 
 def table(columns, rows, caption: str | None = None) -> dict:
@@ -315,8 +356,9 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
         rep.err(f"{where}: type_key {q.get('type_key')!r} not in "
                 f"{schema['valid_type_keys']}")
     d = q.get("difficulty")
-    if not isinstance(d, int) or not 1 <= d <= 4:
-        rep.err(f"{where}: difficulty {d!r} must be an integer 1-4")
+    valid_difficulties = {row["level"] for row in schema.get("valid_difficulty_levels", [])}
+    if d not in valid_difficulties:
+        rep.err(f"{where}: difficulty {d!r} is not in the course levels {sorted(valid_difficulties)}")
     m = q.get("marks")
     if not isinstance(m, (int, float)) or m <= 0:
         rep.err(f"{where}: marks {m!r} must be a positive number")
@@ -330,9 +372,8 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
         rep.err(f"{where}: course_id {q.get('course_id')!r} != {course_id!r}")
 
     src = q.get("source") or {}
-    for k in ("name", "year", "original_question_no"):
-        if not src.get(k) and src.get(k) != 0:
-            rep.err(f"{where}: source.{k} is empty")
+    if src.get("name") is not None and not str(src.get("name")).strip():
+        rep.err(f"{where}: source.name must be non-empty when provided")
     inst = src.get("institution")
     low = str(inst or "").lower()
     if low and any(bad in low for bad in (
@@ -342,7 +383,8 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
                  f"rather than a school name -- keep only the institution's own "
                  f"name here and put the rest in source.name")
 
-    if len(q.get("node_codes") or []) > 1 and not schema.get(
+    if max(len(q.get("node_codes") or []), len(q.get("node_names") or []),
+           len(q.get("node_ids") or [])) > 1 and not schema.get(
             "allow_multi_classification", True):
         rep.err(f"{where}: multiple nodes not allowed by the course schema")
 
@@ -358,6 +400,24 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
         # defect a top-level-only check can never see.
         codes = list(obj.get("node_codes") or [])
         ids = list(obj.get("node_ids") or [])
+        for i, nm in enumerate(obj.get("node_names") or []):
+            if nm in nodes.path_to_id:
+                continue
+            # A node_names entry the importer cannot resolve as a path is the
+            # separator bug: it falls back to a bare-name match, which silently
+            # picks the wrong node when the leaf name is duplicated elsewhere in
+            # the course. Catch it here instead of shipping it.
+            if nm in nodes.all_names:
+                rep.warn(f"{w}: node_names[{i}]={str(nm)[:70]!r} resolves only as a "
+                         f"bare name -- use the full path (join the names with "
+                         f"{nodes.sep!r}) so it cannot collide with a same-named "
+                         f"node elsewhere in the course")
+            else:
+                hint = (f" It looks like a full path: join the names with "
+                        f"{nodes.sep!r}."
+                        if ("/" in str(nm) or ">" in str(nm)) else "")
+                rep.err(f"{w}: node_names[{i}]={str(nm)[:70]!r} is neither a node "
+                        f"path nor a known node name.{hint}")
         if not codes and not ids:
             if obj is q:
                 rep.err(f"{w}: no node_codes / node_ids")
@@ -375,6 +435,8 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
                             f"lists must describe the same nodes in the same order")
             if ids and not codes:
                 for i in ids:
+                    if not nodes.has_code(i):
+                        continue
                     try:
                         rep.warn(f"{w}: node_codes missing for node_id {i!r} "
                                  f"({nodes.code_for(i)})")
@@ -392,7 +454,7 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
         all_blocks = list(body)
         for o in obj.get("mcq_options") or []:
             all_blocks += o.get("content") or []
-        for f in ("answer", "solution", "marking_criteria"):
+        for f in ("hint", "answer", "solution", "marking_criteria"):
             all_blocks += obj.get(f) or []
         if not body:
             if parts:
@@ -402,7 +464,7 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
             else:
                 rep.err(f"{w}: empty body on a leaf object -- it will render blank")
 
-        for b in body:
+        for b in all_blocks:
             bt = b.get("block_type")
             if bt not in TEXT_BLOCKS:
                 rep.err(f"{w}: unknown block_type {bt!r}")
@@ -423,6 +485,19 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
             elif bt == "code":
                 if not str(c.get("code", "")).strip():
                     rep.err(f"{w}: empty code block")
+            elif bt == "function":
+                expression = str(c.get("expression", "")).strip()
+                bounds = [c.get(k) for k in ("x_min", "x_max", "y_min", "y_max")]
+                try:
+                    x_min, x_max, y_min, y_max = [float(v) for v in bounds]
+                    valid_bounds = (x_min < x_max and y_min < y_max and
+                                    x_max - x_min <= 1e6 and y_max - y_min <= 1e6)
+                except (TypeError, ValueError):
+                    valid_bounds = False
+                if not expression or len(expression) > 160:
+                    rep.err(f"{w}: function block needs an expression of 1–160 characters")
+                if not valid_bounds:
+                    rep.err(f"{w}: function block needs finite ordered x/y bounds with each range at most 1e6")
             elif bt == "table":
                 cols, rows = table_shape(c)
                 if not cols:
@@ -462,17 +537,24 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
             labels = [p.get("part_label") for p in parts]
             if len(labels) != len(set(labels)):
                 rep.err(f"{w}: duplicate part_label among {labels}")
+            # The app renders parts exactly one level deep: parts[].parts is
+            # always [] on the way back out. Anything nested deeper is stored
+            # and then invisible, so depth-1 + composite labels is the contract.
+            for p in parts:
+                if p.get("parts"):
+                    deep = [x.get("part_label") for x in p["parts"]]
+                    rep.err(f"{w}: part {p.get('part_label')!r} has its own "
+                            f"parts {deep} -- only ONE level of parts is ever "
+                            f"rendered. Flatten them into siblings of "
+                            f"{p.get('part_label')!r} labelled "
+                            f"{p.get('part_label')}(i), {p.get('part_label')}(ii), ...")
             for lab in labels:
                 if lab and re.search(r"[A-Za-z]\(", str(lab)):
-                    m = re.match(r"([A-Za-z])\((\w+)\)$", str(lab))
-                    if m:
-                        rep.err(f"{w}: part_label {lab!r} is a flattened "
-                                f"composite -- make {m.group(1)!r} a part with "
-                                f"its own parts [{m.group(2)}, ...], not a "
-                                f"single part labelled {lab!r}")
-                    else:
-                        rep.err(f"{w}: part_label {lab!r} looks like a "
-                                f"flattened composite label")
+                    m = re.fullmatch(r"([A-Za-z])\(([ivxIVX]+)\)", str(lab))
+                    if not m:
+                        rep.err(f"{w}: part_label {lab!r} looks composite; the "
+                                f"only composite form that renders is a letter "
+                                f"plus a roman sub-part, e.g. 'c(i)'")
 
         # -- marking criteria ---------------------------------------------
         crit = obj.get("marking_criteria")
@@ -581,6 +663,7 @@ def sync_nodes(q: dict, nodes: NodeIndex, rep: Report | None = None,
     """
     codes = list(q.get("node_codes") or [])
     ids = list(q.get("node_ids") or [])
+    names = list(q.get("node_names") or [])
     if codes and ids:
         if len(codes) != len(ids):
             if rep:
@@ -601,9 +684,43 @@ def sync_nodes(q: dict, nodes: NodeIndex, rep: Report | None = None,
                     rep.warn(msg)
     if codes:
         q["node_ids"] = [nodes.id_for(c) for c in codes]
+        q["node_names"] = [nodes.id_to_path[nid] for nid in q["node_ids"]]
+        # Codes win, but a node_names entry that does not match the code it sits
+        # beside is a signal something is misread -- usually a path joined with
+        # the wrong separator. Say so instead of silently overwriting it.
+        for i, (nm, nid) in enumerate(zip(names, q["node_ids"])):
+            if nm and nm != nodes.id_to_path[nid]:
+                msg = (f"{where}: node_names[{i}]={str(nm)[:60]!r} is not the full "
+                       f"path of {codes[i]!r} ({nodes.id_to_path[nid]!r}) -- "
+                       f"paths join every ancestor name with {nodes.sep!r}")
+                if rep:
+                    (rep.warn if nm in nodes.all_names else rep.err)(msg)
+        return
+    if names:
+        missing = [n for n in names if n not in nodes.path_to_id]
+        if missing:
+            raise SpecError(
+                f"{where}: node_names entry {missing[0]!r} is not a node path. "
+                f"Paths join every ancestor name with {nodes.sep!r} -- run "
+                f"index_nodes.py --search to get the exact path. (A bare leaf "
+                f"name is not enough when the course repeats it.)"
+            )
+        q["node_ids"] = [nodes.path_to_id[name] for name in names]
+        if all(nodes.has_code(i) for i in q["node_ids"]):
+            q["node_codes"] = [nodes.code_for(i) for i in q["node_ids"]]
+        else:
+            q.pop("node_codes", None)
+        q["node_names"] = [nodes.id_to_path[i] for i in q["node_ids"]]
         return
     if ids:
-        q["node_codes"] = [nodes.code_for(i) for i in ids]
+        for node_id in ids:
+            if node_id not in nodes.id_to_path:
+                raise SpecError(f"unknown node_id {node_id!r}")
+        q["node_names"] = [nodes.id_to_path[i] for i in ids]
+        if all(nodes.has_code(i) for i in ids):
+            q["node_codes"] = [nodes.code_for(i) for i in ids]
+        else:
+            q.pop("node_codes", None)
 
 
 def png_size(path: Path) -> tuple[int | None, int | None]:
@@ -638,7 +755,7 @@ def stamp_assets(q: dict, assets_dir: Path, rep: Report, where: str) -> None:
         blocks = list(obj.get("body") or [])
         for o in obj.get("mcq_options") or []:
             blocks += o.get("content") or []
-        for f in ("answer", "solution", "marking_criteria"):
+        for f in ("hint", "answer", "solution", "marking_criteria"):
             blocks += obj.get(f) or []
         want = []
         for b in blocks:
@@ -691,8 +808,11 @@ def normalise(q: dict, *, nodes: NodeIndex, schema: dict, course_id: str,
     q.setdefault("part_label", None)
     q.setdefault("notes", None)
     q.setdefault("review_status", "imported")
-    q.setdefault("difficulty", 3)
+    levels = schema.get("valid_difficulty_levels", [])
+    default_difficulty = levels[0]["level"] if levels else 1
+    q.setdefault("difficulty", default_difficulty)
     q.setdefault("tags", [])
+    q.setdefault("hint", [])
     q.setdefault("answer", [])
     q.setdefault("solution", [])
     q.setdefault("marking_criteria", [])

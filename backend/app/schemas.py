@@ -7,7 +7,7 @@ BlockType = Literal[
     "text", "heading", "equation", "image", "diagram", "graph", "function",
     "table", "list", "code", "answer_area", "page_break",
 ]
-Slot = Literal["body", "answer", "solution", "marking_criteria"]
+Slot = Literal["body", "hint", "answer", "solution", "marking_criteria"]
 
 
 # ===================== Course config =====================
@@ -140,6 +140,7 @@ class QuestionCreate(BaseModel):
     node_ids: list[str] = Field(default_factory=list)
     tag_names: list[str] = Field(default_factory=list)
     body: list[ContentBlockIn] = Field(default_factory=list)
+    hint: list[ContentBlockIn] = Field(default_factory=list)
     answer: list[ContentBlockIn] = Field(default_factory=list)
     solution: list[ContentBlockIn] = Field(default_factory=list)
     marking_criteria: list[ContentBlockIn] = Field(default_factory=list)
@@ -160,6 +161,7 @@ class QuestionUpdate(BaseModel):
     node_ids: list[str] | None = None
     tag_names: list[str] | None = None
     body: list[ContentBlockIn] | None = None
+    hint: list[ContentBlockIn] | None = None
     answer: list[ContentBlockIn] | None = None
     solution: list[ContentBlockIn] | None = None
     marking_criteria: list[ContentBlockIn] | None = None
@@ -218,6 +220,7 @@ class QuestionOut(BaseModel):
     node_ids: list[str]
     tags: list[str]
     body: list[ContentBlockOut]
+    hint: list[ContentBlockOut] = Field(default_factory=list)
     mcq_options: list[McqOptionOut] = Field(default_factory=list)
     answer: list[ContentBlockOut]
     solution: list[ContentBlockOut]

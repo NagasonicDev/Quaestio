@@ -1,5 +1,5 @@
 import JSZip from "jszip";
-import { questionImportScripts, questionImportWorkflow } from "./questionImportAssets";
+import { questionImportScripts, questionImportSkillTemplate, questionImportWorkflow } from "./questionImportAssets";
 import * as idb from "./db/indexeddb";
 import { all, getFirst, run, transaction } from "./db/sqlite";
 import { newId, newQuestionId, nowUtc } from "./id";
@@ -8,6 +8,14 @@ import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule
 import type { CourseFullConfig, CourseNode, Question } from "../api/types";
 
 // ---------- helpers ----------
+
+/** The separator both importers key on when they build a node's full path:
+ *  `data.ts importJson` builds `parent + " / " + name` and
+ *  `scripts/question_import/qbx_lib.py` resolves node_names via
+ *  NodeIndex.path_to_id. A different separator makes every node_names entry fall
+ *  back to a unique-bare-name match, which is a hard error for any duplicated
+ *  leaf name. */
+export const NODE_PATH_SEPARATOR = " / ";
 
 export function slugName(name: string): string {
   const slug = name
@@ -38,7 +46,7 @@ function flattenNodes(nodes: CourseNode[]): Array<{ node_id: string; name: strin
         name: n.name,
         code: n.code,
         level_index: n.level_index,
-        path: fullPath.join(" > "),
+        path: fullPath.join(NODE_PATH_SEPARATOR),
       });
       walk(n.children, fullPath);
     }
@@ -49,375 +57,103 @@ function flattenNodes(nodes: CourseNode[]): Array<{ node_id: string; name: strin
 
 // ---------- course skill (.skill) ----------
 
-function skillFrontmatter(config: CourseFullConfig): string {
-  const name = `${slugName(config.name)}-question-import`;
-  const description = `Convert source documents (exam papers, worksheets, assessments, PDFs, images of questions) into import-ready JSON for the ${config.name} question bank, with correct node ids, question types, difficulty levels and marking guides. Use this skill whenever the user uploads or pastes ${config.name} questions or an exam and wants them extracted, digitised, classified, imported into the question bank, or turned into the question-bank JSON format, even if they do not mention the skill or JSON explicitly. Only valid for the ${config.name} course.`;
-  if (!description || !description.trim()) {
-    throw new Error("Skill validation failed: description is required.");
-  }
-  if (!name || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(name)) {
-    throw new Error(`Skill validation failed: name must be kebab-case (got '${name}').`);
-  }
-  return `---
-name: ${name}
-description: "${description.replace(/"/g, '\\"')}"
----
+/** Flat `code | full path` index - greppable, and far cheaper than a tree. */
+function nodesIndexMarkdown(rows: ReturnType<typeof flattenNodes>): string {
+  return rows.map((row) => `${row.code ?? ""} | ${row.path}`.trimEnd()).join("\n");
+}
 
-`;
+/** Placeholder values for SKILL_TEMPLATE.md. Mirrors backend/app/skill_export.py. */
+function skillSubstitutions(config: CourseFullConfig, instructionsMarkdown: string): Record<string, string> {
+  const nodes = flattenNodes(config.nodes);
+  const types = config.question_types.map((t) => `\`${t}\``).join(", ") || "see import-schema.json";
+  const levels = config.difficulty_levels.length
+    ? config.difficulty_levels.map((d) => `\`${d.level}\` = ${d.label}`).join(", ")
+    : "none defined - omit `difficulty`";
+  const tags = config.tags.map((t) => `\`${t}\``).join(", ") || "none";
+  const slug = slugName(config.name);
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
+    throw new Error(`Skill validation failed: name must be kebab-case (got '${slug}').`);
+  }
+  const description = `Convert exam papers, worksheets and assessments for ${config.name} into this question bank's import format. Use when digitising ${config.name} source documents, extracting questions with figures, equations, tables and marking guides, classifying them to ${config.name} curriculum nodes, or auditing and repairing an existing question bundle. Returns a validated .qbx bundle plus a list of unresolved source issues. Only valid for the ${config.name} course.`;
+  return {
+    COURSE_SLUG: slug,
+    COURSE_NAME: config.name,
+    COURSE_ID: config.course_id,
+    DESCRIPTION: description.replace(/"/g, "'"),
+    TYPES: types,
+    LEVELS: levels,
+    TAGS: tags,
+    MULTI: config.allow_multi_classification ? "allowed" : "one node only",
+    NODE_COUNT: String(nodes.length),
+    CLASSIFICATION_RULES: config.allow_multi_classification
+      ? "List several nodes when the question genuinely spans them, in most-specific-first order."
+      : "Pick exactly one node - this course allows only one per question.",
+    COURSE_INSTRUCTIONS: instructionsMarkdown.trim() || "_(none recorded)_",
+    WORKFLOW: questionImportWorkflow,
+  };
+}
+
+function renderSkillMarkdown(substitutions: Record<string, string>): string {
+  let out = questionImportSkillTemplate;
+  for (const [key, value] of Object.entries(substitutions)) {
+    out = out.split(`{{${key}}}`).join(value);
+  }
+  return out;
 }
 
 export function buildSkillMarkdown(config: CourseFullConfig, instructionsMarkdown: string): string {
-  let diffRange = "as configured";
-  if (config.difficulty_levels.length) {
-    const levels = config.difficulty_levels.map((d) => d.level);
-    diffRange = `${Math.min(...levels)}\u2013${Math.max(...levels)}`;
-  }
-  return `${skillFrontmatter(config)}# Document-to-Question Skill — ${config.name}
-
-This skill converts source documents (exam papers, worksheets, assessments)
-into the question-bank's structured JSON import format, for **this specific
-course only**. It combines the general extraction process with the exact
-structure, categories, and rules ${config.name} uses — do not apply this to a
-different course without downloading that course's own skill file, since
-node ids, question types, and difficulty labels are course-specific and
-will not resolve against another course's database.
-
-## Process
-
-1. Read the entire source document before extracting anything, so multi-part
-   questions, shared stems, and diagrams referenced across pages are handled
-   correctly rather than piecemeal.
-2. Identify each individual question (or question with parts). Preserve the
-   original question numbering only as source metadata — never let it drive
-   the app's own display order.
-3. For each question, extract in order: question text, equations (as LaTeX),
-   diagrams/images, tables (as structured columns/rows, not flattened text),
-   and lists. For PDF sources, use PyMuPDF when available to extract embedded
-   raster images and render vector diagrams/crops to PNG. For DOCX sources,
-   use python-docx to read document text and relationships, and extract
-    embedded media from the DOCX package (a ZIP) under \`word/media/\`; map each
-   image to its paragraph/table position using its relationship ID and nearby
-   text. If a DOCX figure is a vector shape rather than embedded media, render
-   the DOCX to PDF and use PyMuPDF to extract or crop it. Inspect all extracted
-   images and map each to its question and part; do not attach decorative
-   marks or unrelated figures. Keep a note of any figure that cannot be
-   confidently matched.
-   **Format mathematical notation, scientific notation, symbols, and units
-   for rendering.** Use an equation block for standalone equations. For math
-   inside prose, choices, table cells, or list items, wrap LaTeX in single
-   dollar signs, e.g. $v = 3.0\\times10^{8}\\,\\mathrm{m/s}$. Never leave
-   powers as plain 10^8 or use plain x for multiplication.
-   If completing a question requires follow-up input or action from the person
-   (for example, manually attaching an image that could not be extracted), add
-   the exact tag \`action_required\` to that question's \`tags\` array. Do not add
-   it to questions that need no follow-up. Every tag must be selected from the
-   course's VALID TAGS list below. Never invent, rename, or create tags; omit a
-   tag when none of the listed tags applies. Only the user can change this list.
-4. Determine the question type, difficulty, marks, and classification
-   (course nodes) using the course-specific section below — never guess a
-   category that doesn't appear in "VALID NODES"; if uncertain, use the
-   nearest matching node's parent instead of inventing one, and note the
-   classification confidence honestly.
-5. **Every question must end up with a marking guide** (see "Marking guides"
-   below) — this is not optional, even when the source material doesn't
-   include one.
-6. If there are no extracted images, produce one JSON file (see "Output
-   format"). If any question uses an extracted image, produce a \`.qbx\` ZIP
-   bundle containing \`questions.json\` and the image files under \`assets/\`,
-   as described in "Image assets and import bundle". Do not import anything
-   yourself — the person uploads the JSON or \`.qbx\` file into the app.
-
-## Image attachment checklist
-
-Every finished response must end with an **Image attachment checklist** that
-reports image extraction and any unresolved figure mapping. Successfully
-packaged images do not need manual attachment.
-
-- Track every image **by its original source question number** (the same
-  number you put in each question's \`source.original_question_no\`), plus its
-  part label if it's a multi-part question. Distinguish images included in
-  the bundle from any image that still needs manual review or attachment.
-- End the response with a checklist like this:
-
-\`\`\`
-## Image attachment checklist
-
-- Q17 (b): circuit diagram — two long parallel wires above a rectangular loop, AC source
-- Q22: force-vs-time graphs A\u2013D for the rocket's thrust
-- Q34: scatter plot of V0/V vs 1/\u03bb with five data points
-\`\`\`
-
-- If all required images were extracted and packaged, list their question
-numbers and filenames and say they are included in the \`.qbx\` bundle.
-- If any figure could not be extracted or mapped, list its question/part and
-  explain what needs review. Add \`action_required\` only to questions that
-  actually need follow-up.
-- If no question needs an image, write "None — every question is fully
-  text/equations."
-
-## Image assets and import bundle
-
-The JSON-only import does not upload image bytes. Never put a local filename,
-file path, data URI, or base64 payload in \`asset_path\`; the app would not be
-able to resolve it. For questions with images, build a \`.qbx\` ZIP that the
-question importer understands:
-
-- \`questions.json\` has \`export_schema_version: 1\`, \`course_name\`, and a
-  \`questions\` array. Each question uses the app's question export shape:
-  \`question_id\`, \`course_id\`, \`type_key\`, \`difficulty\`, \`marks\`,
-  \`parent_question_id\`, \`part_label\`, \`notes\`, \`review_status\`,
-  \`classification_confidence\`, \`node_ids\`, \`tags\`, \`body\`, \`mcq_options\`,
-  \`answer\`, \`solution\`, \`marking_criteria\`, \`assets\`, \`source\`, \`parts\`,
-  \`created_at\`, and \`updated_at\`. Keep the question content and
-  course-specific classifications from the JSON schema. Set unused nullable
-  fields to \`null\`, unused arrays to \`[]\`, and use unique stable IDs for each
-  question and asset within the bundle.
-- Put each image at \`assets/<asset_id>.<ext>\` using PNG for rendered PDF
-  figures. For every image, add an entry to the owning question's \`assets\`
-  array with \`asset_id\` equal to the filename stem, \`file_path\` equal to the
-  same ID, \`mime_type\` (\`image/png\` for PNG), pixel \`width\` and \`height\`,
-  \`alt_text\`, and \`caption\` (nullable).
-- The corresponding \`image\`, \`diagram\`, or \`graph\` block must use
-  \`content.asset_path\` equal to that same \`asset_id\`; include a concise
-  \`alt_text\` and optional \`caption\` in the block content. Store assets on the
-  question or part that owns the block. Preserve block order in the question.
-- Keep image blocks in the JSON question structure; do not replace figures
-  with descriptions when their files are included. Include images in MCQ
-  option content only when the image is specifically part of that option.
-- Include the extracted PNGs in the ZIP under \`assets/\` and name the ZIP with
-  the \`.qbx\` extension. The app matches asset IDs to filenames, stores the
-  bytes, and rewrites IDs on import. Without images, use the ordinary
-  \`schema_version: 1\` JSON format instead.
-
-## Marking guides — required, and never an exemplar
-
-Every question in the output must have a \`marking_criteria\` field (in
-addition to \`answer\`/\`solution\` if the source provides them):
-
-- If the source document already gives marking criteria (a rubric, a mark
-  scheme, "1 mark for X, 1 mark for Y"), use it as given, reworded into the
-  block format below if needed.
-- **If the exam document gives no marking criteria, create them yourself**
-  for every question or part, using the question wording, its marks value,
-  difficulty, and course context (topic/dot point) to decide what a response
-  must demonstrate to earn each mark. For example, a 3-mark short-answer
-  question might earn "1 mark for
-  correctly identifying X; 1 mark for the correct method; 1 mark for the
-  correct final answer with appropriate units."
-- **Do not write a full worked exemplar answer or model solution as the
-  marking guide.** A marking guide describes what to check for and how marks
-  are allocated — it is a checklist for a marker, not a sample response. If
-  you also have or can produce a worked solution, put that in the separate
-  \`solution\` field instead; keep \`marking_criteria\` focused on grading
-  criteria only.
-- Marking criteria should be given as a \`list\` content block (one item per
-  criterion/mark) wherever practical, since that's the clearest format for a
-  marker to check off against.
-- **Every criterion item must state its mark allocation up front** — the app
-  renders the marking guide as a two-column table (criteria | marks), so
-  write each item as \`"<allocation> marks: <what to look for>"\` (or
-  \`"<allocation> marks for <what to look for>"\`), allocating a single mark
-  or a band, e.g. \`"1 mark: correctly identifies X"\`, \`"2 marks: sets up
-  the correct equation"\`, or \`"1–2 marks: partial method with one slip"\`.
-  A trailing parenthesised allocation (\`"... correctly (2 marks)"\`) also
-  works. Avoid vague criteria with no allocation — an unmallocated line
-  shows an empty marks cell in the table.
-- Apply this recursively: the shared parent and every part/subpart need their
-  own non-empty \`marking_criteria\` list block. If marks are awarded through
-  parts, give the parent a concise allocation note and put mark-by-mark
-  criteria on each leaf part; never leave the parent rubric blank.
-- For every question with parts, the parent \`marks\` must equal the sum of its
-  immediate parts; apply the same check to nested parts. Recheck printed marks
-  against the paper and any mark scheme before resolving a mismatch. Never
-  silently change a printed allocation; flag an unresolved conflict for review.
-
-## Output format
-
-Produce **one JSON file** (e.g. \`import.json\`) shaped like this:
-
-\`\`\`json
-{
-  "schema_version": 1,
-  "course_id": "${config.course_id}",
-  "course_name": "${config.name}",
-  "questions": [
-    {
-      "type_key": "short_answer",
-      "difficulty": 3,
-      "marks": 3,
-      "node_ids": ["<a valid node_id from import-schema.json>"],
-      "node_codes": ["<the matching code from import-schema.json for the node_id above>"],
-      "tags": [],
-      "body": [
-        {"block_type": "text", "content": {"text": "..."}},
-        {"block_type": "equation", "content": {"latex": "x^2 - 5x + 6 = 0", "display": true}}
-      ],
-      "answer": [{"block_type": "text", "content": {"text": "..."}}],
-      "solution": [],
-      "marking_criteria": [
-        {"block_type": "list", "content": {"ordered": false, "items": [
-          "1 mark: correctly extracts the coefficients",
-          "1 mark: applies the quadratic formula correctly",
-          "1 mark: correct final answer"
-        ]}}
-      ],
-      "classification_confidence": "high",
-      "source": {"name": "Trial Examination", "year": 2025, "original_question_no": "17"}
-    }
-  ]
-}
-\`\`\`
-
-## Multiple-choice questions
-
-For every question whose \`type_key\` is \`multiple_choice\`, keep the question
-stem in \`body\` and put answer choices in a separate \`mcq_options\` array. Do
-not put choices in a body list. Keep stem blocks in the order they appear on
-the page, and keep options in their printed order (A, B, C, D). Each option
-has a \`content\` array of normal content blocks and an \`is_correct\` boolean.
-Use inline LaTeX for math in option text. Determine the answer by checking the
-paper, any answer key/mark scheme, and solving the question yourself. Mark
-exactly one option correct and set \`answer\` to its printed letter (for example,
-\`C\`). A missing key in the paper does not mean the answer is unknown. Only if
-the question is genuinely ambiguous or unsolvable from available material,
-mark no option correct, leave \`answer\` empty, and flag it for review.
-Preserve diagrams, tables, and equations in stem/option content. Emit exactly
-one non-empty option object for each printed choice, in order; never combine
-choices, omit choices missed by OCR, or place choices in the stem. For
-table-based choices, preserve the table and keep each option to its own choice.
-Use sequential labels A, B, C, D, etc.; do not truncate after D. Do not create
-question parts for the choices.
-
-Example:
-
-\`\`\`json
-{
-  "type_key": "multiple_choice",
-  "body": [{"block_type": "text", "content": {"text": "What is the temperature?"}}],
-  "mcq_options": [
-    {"content": [{"block_type": "text", "content": {"text": "$1.6\\\\times10^{12}$ K"}}], "is_correct": false},
-    {"content": [{"block_type": "text", "content": {"text": "$5.2\\\\times10^{3}$ K"}}], "is_correct": true}
-  ],
-  "answer": [{"block_type": "text", "content": {"text": "B"}}]
-}
-\`\`\`
-
-Fill in \`source.original_question_no\` for **every** question (and give each
-multi-part part a \`part_label\`) — the Image attachment checklist references
-questions by these same numbers, so they must match exactly what's printed
-on the source paper. When the source format includes \`source.institution\`,
-record only the institution's actual name (for example, \`Sydney Girls\`).
-Do not include a subject, course, exam type, year/grade, or difficulty/level
-descriptor in the institution field. Put those details in \`source.name\`
-instead: for example, interpret “Sydney Girls Term 2 Assessment” as institution
-\`Sydney Girls\` and source name \`Term 2 Assessment\`. Keep genuine words that
-are part of the institution's name, such as “High School”. If the institution
-cannot be identified separately with confidence, leave it null rather than
-guessing from the exam title.
-
-See \`import-schema.json\` (packaged alongside this file) for this course's
-actual valid \`node_ids\`, \`node_codes\`, \`node_names\`, \`type_key\` values,
-and difficulty range (${diffRange}) — every \`node_ids\` entry in your output
-must be one of the \`node_id\` values listed there, with its matching
-\`node_codes\` entry (the \`code\` on the same row), and every \`type_key\`
-must be one of the listed valid types.
-
-**Always fill in both \`node_ids\` and \`node_codes\`, and include
-\`course_name\`.** Course and node ids are regenerated whenever the course is
-re-imported (e.g. after a reset), but node \`code\`s, the course
-\`course_name\`, and the full node paths in \`node_names\` (e.g. \`Module /
-Topic / Subtopic\` from \`valid_node_names\`) stay stable. Including them lets
-the app re-match questions to the correct nodes even after the ids change, and
-lets the file be matched to a re-created course by name. Quote the ids, codes,
-names, and course name exactly as shown in \`import-schema.json\`.
-
-Content block types available for \`body\`/\`answer\`/\`solution\`/\`marking_criteria\`:
-\`text\`, \`heading\`, \`equation\` (LaTeX in \`latex\`, \`display\`),
-\`image\`/\`diagram\`/\`graph\` (for extracted images, use \`asset_path\` and package
-the file as described in Image assets and import bundle),
-\`function\` (for a clear single-variable function, store its right-hand side in
-\`expression\`, numeric \`x_min\`, \`x_max\`, \`y_min\`, and \`y_max\`, and optional
-\`x_label\`, \`y_label\`, and \`caption\`; e.g.
-\`{"block_type":"function","content":{"expression":"x^2 - 3*x + 2","x_min":-5,"x_max":5,"y_min":-2,"y_max":10,"x_label":"x","y_label":"y"}}\`),
-\`table\` (\`columns\`, \`rows\`), \`list\` (\`ordered\`, \`items\`), \`code\`
-(\`language\`, \`code\`), \`answer_area\` (\`lines\`), \`page_break\`.
-
-## Handling uncertainty
-
-- Multi-part questions: emit one question object for the shared stem, with
-  a \`parts\` array of \`{"part_label": "a", "marks": ..., "body": [...],
-  "marking_criteria": [...]}\` objects — do not split them into unrelated
-  top-level questions. A part may itself contain a \`parts\` array using the
-  same object shape for nested labels (for example, question 26 has part \`c\`,
-  whose parts are \`i\` and \`ii\`). Keep each level nested under its immediate
-  parent: represent this as 26 → c → i/ii, not as flat labels such as \`c(i)\`.
-- For multi-part \`extended_response\`, \`short_response\`, or \`short_answer\`
-  questions, include an \`answer_area\` block at the end of each part's \`body\`
-  so answer lines appear immediately after that part. Set \`content.lines\` to
-  two lines per mark (round fractional results up, with at least one line),
-  based on that part's \`marks\`; for example, a 2-mark part gets
-  \`{"block_type":"answer_area","content":{"lines":4}}\`. Do not put one
-  long answer area on the shared parent question. Leave answer areas off
-  multiple-choice parts and parts whose source already provides a specific
-  answer space.
-- If a question spans multiple valid nodes, list all of them in \`node_ids\`
-  (and the matching codes in \`node_codes\`) — only if the course allows
-  multiple classification — see below.
-- If you cannot confidently classify a question at all, still include it,
-  set \`classification_confidence\` to \`"low"\`, and pick the closest available
-  node rather than leaving \`node_ids\` empty.
-- Before saving, audit every question and nested part against the source:
-  confirm no empty text, heading, equation, list item, or MCQ choice; confirm
-  all printed choices are present and ordered; confirm each MCQ has exactly
-  one correct option and a matching answer letter unless explicitly flagged
-  unresolved; confirm every parent and part has an allocated marking guide;
-  and confirm parent/part mark totals. Parse the finished JSON and fix all
-  structural errors before delivering it.
-
----
-
-${instructionsMarkdown}
-
----
-
-${questionImportWorkflow}`;
+  return renderSkillMarkdown(skillSubstitutions(config, instructionsMarkdown));
 }
 
-export async function buildSkillBlob(
-  config: CourseFullConfig,
-  instructionsMarkdown: string
-): Promise<Blob> {
-  const skillMd = buildSkillMarkdown(config, instructionsMarkdown);
-  const importSchema = {
+export function buildImportSchema(config: CourseFullConfig): Record<string, unknown> {
+  const nodes = flattenNodes(config.nodes);
+  const exampleNode = nodes[0];
+  return {
     course_id: config.course_id,
     course_name: config.name,
     schema_version: 1,
     valid_type_keys: config.question_types,
-    valid_tags: config.tags,
     valid_difficulty_levels: config.difficulty_levels.map((d) => ({ level: d.level, label: d.label })),
-allow_multi_classification: config.allow_multi_classification,
-    valid_node_ids: flattenNodes(config.nodes),
-    valid_node_codes: flattenNodes(config.nodes)
-      .map((n) => n.code)
-      .filter((c): c is string => !!c),
-    valid_node_names: flattenNodes(config.nodes).map((n) => n.path),
+    allow_multi_classification: config.allow_multi_classification,
+    valid_tags: config.tags,
+    node_path_separator: NODE_PATH_SEPARATOR,
+    // No `path` per row: paths are rebuilt from level_index by
+    // scripts/question_import/qbx_lib.py, so storing them would only create a
+    // second copy that can disagree with the separator the app actually uses.
+    valid_node_ids: nodes.map((n) => ({
+      node_id: n.node_id,
+      code: n.code,
+      name: n.name,
+      level_index: n.level_index,
+    })),
+    content_block_types: {
+      slots: ["body", "hint", "answer", "solution", "marking_criteria"],
+      types: ["text", "heading", "equation", "image", "diagram", "graph", "function", "table", "list", "code", "answer_area", "page_break"],
+    },
     mcq_option_format: {
       content: "array of content blocks, same block format as body",
       is_correct: "boolean; mark exactly one true when the answer is known",
       order: "array order is the printed choice order; labels A, B, C... are implicit",
     },
+    ignored_fields: {
+      question: ["question_id", "review_status", "notes", "created_at", "updated_at"],
+      part: ["question_id", "difficulty", "node_ids", "node_codes", "node_names", "tags", "source", "notes", "classification_confidence", "mcq_options", "assets", "review_status"],
+      never_exported: ["hint"],
+      max_part_depth_rendered: 1,
+    },
     example_question: {
       type_key: config.question_types[0] ?? "short_answer",
       difficulty: config.difficulty_levels[0]?.level ?? null,
       marks: 3,
-      node_ids: [],
-      node_codes: [],
-      node_names: [],
+      node_ids: exampleNode ? [exampleNode.node_id] : [],
+      node_codes: exampleNode?.code ? [exampleNode.code] : [],
+      node_names: exampleNode ? [exampleNode.path] : [],
       tags: [],
       body: [
         { block_type: "text", content: { text: "Example question text." } },
         { block_type: "equation", content: { latex: "x^2 - 5x + 6 = 0", display: true } },
       ],
+      hint: [{ block_type: "text", content: { text: "Try identifying the relevant principle first." } }],
       answer: [{ block_type: "text", content: { text: "x = 2, x = 3" } }],
       solution: [],
       marking_criteria: [
@@ -446,9 +182,20 @@ allow_multi_classification: config.allow_multi_classification,
       answer: [{ block_type: "text", content: { text: "B" } }],
     },
   };
+}
+
+export async function buildSkillBlob(
+  config: CourseFullConfig,
+  instructionsMarkdown: string
+): Promise<Blob> {
+  const nodes = flattenNodes(config.nodes);
   const zip = new JSZip();
-  zip.file("SKILL.md", skillMd);
-  zip.file("import-schema.json", JSON.stringify(importSchema, null, 2));
+  zip.file("SKILL.md", buildSkillMarkdown(config, instructionsMarkdown));
+  zip.file("WORKFLOW.md", questionImportWorkflow);
+  // Compact on purpose: this file is a machine reference. Agents search it with
+  // scripts/index_nodes.py; they never need it in context.
+  zip.file("import-schema.json", JSON.stringify(buildImportSchema(config)));
+  zip.file("nodes.txt", nodesIndexMarkdown(nodes));
   for (const [path, contents] of Object.entries(questionImportScripts)) zip.file(path, contents);
   return zip.generateAsync({ type: "blob" });
 }
