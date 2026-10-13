@@ -1,3 +1,4 @@
+import type { ContentBlock, Question } from "../api/types";
 import type { DocSection } from "./docx";
 
 /** Shared HSC-style examination paper layout (NESA conventions). */
@@ -193,4 +194,70 @@ export function formatMcOption(text: string): string {
   const m = t.match(/^\(([A-Da-d])\)\s*(.*)$/);
   if (!m) return t;
   return `${m[1].toUpperCase()}. ${m[2]}`;
+}
+
+/**
+ * Blocks that render a question's MCQ options for the paper builders.
+ *
+ * Options that are text/equation only keep the historical flat list block
+ * (`(A) text`, "A. text" via formatMcOption). As soon as any option carries
+ * an image/diagram/graph/function/table, the old flatten dropped it (those
+ * blocks have no `text`/`latex`), so instead emit each option as a labelled
+ * sequence of its real content blocks. Deterministic block_ids let the image
+ * resolvers key and render each option's figures.
+ */
+export function mcqOptionBlocks(question: Question): ContentBlock[] {
+  const options = question.mcq_options ?? [];
+  if (!options.length) return [];
+  const allTextual = options.every((option) =>
+    (option.content ?? []).every((b) => b.block_type === "text" || b.block_type === "equation")
+  );
+  if (allTextual) {
+    return [{
+      block_id: `${question.question_id}-mcq-options`,
+      slot: "body",
+      position: question.body.length,
+      block_type: "list",
+      content: {
+        ordered: false,
+        items: options.map((option, i) =>
+          `(${String.fromCharCode(65 + i)}) ${(option.content ?? []).map((b) => {
+            const latex = b.content?.latex;
+            // Equations are stored as latex; wrap so the exporters' inline math
+            // parser renders them instead of printing raw `x^2`.
+            if (b.block_type === "equation" && typeof latex === "string") return `$${latex}$`;
+            return String(b.content?.text ?? latex ?? "");
+          }).join(" ")}`
+        ),
+      },
+    }];
+  }
+  const blocks: ContentBlock[] = [];
+  options.forEach((option, i) => {
+    const id = (j: number) => `${question.question_id}-mcq-${i}-${j}`;
+    const content = option.content ?? [];
+    if (!content.length) return;
+    const label = `(${String.fromCharCode(65 + i)})`;
+    const first = content[0];
+    if (first.block_type === "text") {
+      blocks.push({
+        block_id: id(0), slot: "body", position: i * 100,
+        block_type: "text",
+        content: { ...(first.content ?? {}), text: `${label} ${String(first.content.text ?? "")}` },
+      });
+    } else {
+      blocks.push({ block_id: id(0), slot: "body", position: i * 100, block_type: "text", content: { text: label } });
+      blocks.push({
+        block_id: id(1), slot: "body", position: i * 100 + 1,
+        block_type: first.block_type, content: first.content ?? {},
+      });
+    }
+    for (let j = 1; j < content.length; j++) {
+      blocks.push({
+        block_id: id(j + 1), slot: "body", position: i * 100 + j + 1,
+        block_type: content[j].block_type, content: content[j].content ?? {},
+      });
+    }
+  });
+  return blocks;
 }

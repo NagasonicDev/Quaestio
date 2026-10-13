@@ -92,7 +92,9 @@ export function Practice() {
         ? {
             course_id: courseId,
             node_ids: selectedNodeIds,
-            type_key: typeKeys.length === 1 ? typeKeys[0] : null,
+            type_key: null,
+            type_keys: typeKeys,
+            difficulties,
             difficulty_min: null,
             difficulty_max: null,
             tag: selectedTag || null,
@@ -103,7 +105,7 @@ export function Practice() {
             })),
           }
         : null,
-    [courseId, selectedNodeIds, typeKeys, selectedTag, avoidRecentDays, institutionYears]
+    [courseId, selectedNodeIds, typeKeys, difficulties, selectedTag, avoidRecentDays, institutionYears]
   );
 
   const { data: session } = useQuery({
@@ -132,7 +134,7 @@ export function Practice() {
     setCurrent(null);
     setStage("prompt");
     setPlanItem(null);
-  }, [mode, filters?.node_ids, filters?.type_key, filters?.tag, filters?.avoid_recent_days, filters?.difficulty_min, filters?.difficulty_max, filters?.source_filters]);
+  }, [mode, filters?.node_ids, filters?.type_key, filters?.type_keys, filters?.difficulties, filters?.tag, filters?.avoid_recent_days, filters?.difficulty_min, filters?.difficulty_max, filters?.source_filters]);
 
   const start = useMutation({
     mutationFn: async (options: { mode: SessionMode; size?: number | null }) => {

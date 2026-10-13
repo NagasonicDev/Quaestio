@@ -88,12 +88,17 @@ function interleave(buckets: Map<string, PoolItem[]>, size: number | null): Pool
   const order = [...buckets.keys()];
   const out: PoolItem[] = [];
   const limit = size == null ? Infinity : Math.max(0, size);
+  // Read each bucket by index instead of Array.shift(), which moves the whole
+  // remaining bucket on every call and made a large pool O(n^2).
+  const cursor = new Map<string, number>();
   while (out.length < limit) {
     let added = false;
     for (const key of order) {
       const bucket = buckets.get(key);
-      if (!bucket || !bucket.length) continue;
-      out.push(bucket.shift()!);
+      const index = cursor.get(key) ?? 0;
+      if (!bucket || index >= bucket.length) continue;
+      out.push(bucket[index]);
+      cursor.set(key, index + 1);
       added = true;
       if (out.length >= limit) break;
     }

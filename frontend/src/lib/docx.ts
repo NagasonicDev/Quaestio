@@ -28,6 +28,7 @@ import {
   formatMcOption,
   generalInstructionsLines,
   isMcOptionLine,
+  mcqOptionBlocks,
   sectionOpeningLines,
   sectionOverviewLines,
 } from "./examLayout";
@@ -395,14 +396,7 @@ function renderQuestion(
   out.push(questionHeader(question, counter));
   const questionBody = question.body;
   out.push(...renderBlocks(questionBody, { indentIn: 0, images }));
-  if (question.mcq_options?.length) {
-    const items = question.mcq_options.map((option, i) => {
-      const label = String.fromCharCode(65 + i);
-      const text = option.content.map((block) => String(block.content.text ?? block.content.latex ?? "")).join(" ");
-      return `(${label}) ${text}`;
-    });
-    out.push(...renderBlocks([{ block_id: `${question.question_id}-mcq-options`, slot: "body", position: 0, block_type: "list", content: { ordered: false, items } } as ContentBlock], { indentIn: 0, images }));
-  }
+  if (question.mcq_options?.length) out.push(...renderBlocks(mcqOptionBlocks(question), { indentIn: 0, images }));
   for (const part of question.parts) {
     const labelText = part.part_label ?? "";
     const marks = marksLabel(part.marks);
@@ -634,9 +628,7 @@ export async function collectImages(sections: DocSection[]): Promise<Map<string,
   for (const sec of sections) {
     for (const q of sec.questions) {
       blocks.push(...blocksOfQuestion(q));
-      if (q.mcq_options?.length) {
-        blocks.push({ block_id: `${q.question_id}-mcq-options`, slot: "body", position: q.body.length, block_type: "list", content: { ordered: false, items: q.mcq_options.map((option, i) => `(${String.fromCharCode(65 + i)}) ${option.content.map((b) => String(b.content.text ?? b.content.latex ?? "")).join(" ")}`) } });
-      }
+      if (q.mcq_options?.length) blocks.push(...mcqOptionBlocks(q));
       for (const part of q.parts) {
         blocks.push(...blocksOfQuestion(part));
       }

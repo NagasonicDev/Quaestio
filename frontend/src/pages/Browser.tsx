@@ -82,6 +82,7 @@ export function Browser() {
   const [storedState, setStoredState] = useState<BrowserState>(() => readBrowserState(courseId));
   const browserState = storedState.courseId === courseId ? storedState : readBrowserState(courseId);
   const { selectedNodes, typeKeys, difficulties, selectedTag, institutionYears, search, sort, page } = browserState;
+  const [searchInput, setSearchInput] = useState(search);
   function updateState(patch: Partial<Omit<BrowserState, "courseId">>) {
     const next = { ...browserState, ...patch, courseId };
     setStoredState(next);
@@ -95,6 +96,16 @@ export function Browser() {
     if (!courseId) return;
     writeBrowserState(storedState);
   }, [courseId, storedState.courseId, selectedNodes, typeKeys, difficulties, selectedTag, institutionYears, search, sort, page]);
+  // Keep the field responsive: push the term into the query key (and storage)
+  // only after typing pauses, instead of a query and a write per keystroke.
+  useEffect(() => {
+    if (searchInput === search) return;
+    const timer = window.setTimeout(() => updateState({ page: 1, search: searchInput }), 250);
+    return () => window.clearTimeout(timer);
+  }, [searchInput]);
+  useEffect(() => {
+    setSearchInput(search);
+  }, [courseId, search]);
   const { data: sourceOptions } = useQuery({ queryKey: ["question-source-options", courseId], queryFn: () => api.questionSourceOptions(courseId as string), enabled: !!courseId });
 
   const { data: counts } = useQuery({
@@ -135,6 +146,7 @@ export function Browser() {
   });
 
   function handleReset() {
+    setSearchInput("");
     updateState({ selectedNodes: new Set(), typeKeys: [], difficulties: [], selectedTag: "", institutionYears: {}, search: "", page: 1 });
   }
 
@@ -190,10 +202,8 @@ export function Browser() {
               <Input
                 className="pl-9"
                 placeholder="Search question text, code or source number"
-                value={search}
-                onChange={(e) => {
-                  updateState({ page: 1, search: e.target.value });
-                }}
+                value={searchInput}
+                onChange={(e) => setSearchInput(e.target.value)}
               />
             </div>
             <Select value={sort} onValueChange={(value) => updateState({ sort: value, page: 1 })}>

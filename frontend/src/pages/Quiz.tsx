@@ -122,23 +122,16 @@ export function Quiz() {
     if (!courseId || matchingCount < 1) return;
     setPhase("loading");
     try {
-      const picked: Question[] = [];
-      const excluded: string[] = [];
       const total = Math.min(requestedCount, matchingCount);
-      for (let i = 0; i < total; i++) {
-        const response = await api.randomQuestion({
-          course_id: courseId,
-          node_id: selectedNodeIds.length ? selectedNodeIds : undefined,
-          type: typeKeys.length ? typeKeys : undefined,
-          difficulty: difficulties.length ? difficulties : undefined,
-          tag: selectedTag || undefined,
-          source_filters: Object.entries(institutionYears).map(([institution, years]) => ({ institution, years })),
-          exclude_question_ids: excluded,
-        });
-        if (!response.question) break;
-        picked.push(response.question);
-        excluded.push(response.question.question_id);
-      }
+      const picked = await api.randomQuestions({
+        course_id: courseId,
+        node_id: selectedNodeIds.length ? selectedNodeIds : undefined,
+        type: typeKeys.length ? typeKeys : undefined,
+        difficulty: difficulties.length ? difficulties : undefined,
+        tag: selectedTag || undefined,
+        source_filters: Object.entries(institutionYears).map(([institution, years]) => ({ institution, years })),
+        count: total,
+      });
       setDeck(picked);
       setIndex(0);
       setResults([]);
@@ -149,9 +142,6 @@ export function Quiz() {
       setRevealed(false);
       setPhase(picked.length ? "run" : "setup");
       if (!picked.length) notify("No matching questions", "info", "Adjust the filters and try again.");
-      for (const question of picked) {
-        api.recordAttempt({ question_id: question.question_id, status: "seen" }).catch(() => {});
-      }
     } catch (cause) {
       notify("Could not generate quiz", "error", cause instanceof Error ? cause.message : "Could not generate a quiz.");
       setPhase("setup");

@@ -124,7 +124,7 @@ export function CourseSettings() {
         destructive: true,
       });
       if (!ok) return;
-      for (const id of ids) await api.deleteQuestion(id);
+      await api.deleteQuestions([...ids]);
       setDeleteQuestionsOpen(false);
       qc.invalidateQueries({ queryKey: ["questions", config.course_id] });
       qc.invalidateQueries({ queryKey: ["question-counts", config.course_id] });

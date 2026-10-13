@@ -1,7 +1,6 @@
 // Install to: <Quaestio repo root>/opencode.jsonc  (commit it)
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": ["AGENTS.md"],
 
   "mcp": {
     // Drives a real browser so agents can click through flows and take screenshots.
@@ -14,7 +13,6 @@
       "npm run*": "allow",
       "npm test*": "allow",
       "npx tsc*": "allow",
-      "npx vitest*": "allow",
       "npm install*": "ask",
       "npm publish*": "deny"
     }

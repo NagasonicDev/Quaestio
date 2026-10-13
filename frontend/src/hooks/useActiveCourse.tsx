@@ -7,15 +7,25 @@ interface CourseContextValue {
 
 const CourseContext = createContext<CourseContextValue | undefined>(undefined);
 
+function readActiveCourse(): string | null {
+  try {
+    return localStorage.getItem("qb-active-course");
+  } catch {
+    return null;
+  }
+}
+
 export function CourseProvider({ children }: { children: ReactNode }) {
-  const [courseId, setCourseIdState] = useState<string | null>(
-    () => localStorage.getItem("qb-active-course")
-  );
+  const [courseId, setCourseIdState] = useState<string | null>(readActiveCourse);
 
   const setCourseId = (id: string | null) => {
     setCourseIdState(id);
-    if (id) localStorage.setItem("qb-active-course", id);
-    else localStorage.removeItem("qb-active-course");
+    try {
+      if (id) localStorage.setItem("qb-active-course", id);
+      else localStorage.removeItem("qb-active-course");
+    } catch {
+      // Storage can be blocked; the in-memory selection still applies.
+    }
   };
 
   return (

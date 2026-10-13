@@ -9,7 +9,7 @@ import { Upload, FileJson } from "lucide-react";
 import JSZip from "jszip";
 import * as idb from "../lib/db/indexeddb";
 import { newId } from "../lib/id";
-import { ensureAssetUrl } from "../lib/assets";
+import { ensureAssetUrl, deleteUnclaimedAssetBlobs } from "../lib/assets";
 import { notify } from "../lib/notifications";
 
 async function parseQuestionBundle(file: File) {
@@ -39,10 +39,33 @@ async function parseQuestionBundle(file: File) {
   }
 
   const assetMap = new Map<string, string>();
+
+  // Collect every asset id the bundle actually references (declared assets and
+  // block/option paths anywhere in the tree) before rewriting, so an image is
+  // stored even when a question lists it only in a slot or a later question.
+  const referencedAssetIds = new Set<string>();
+  const collectQuestion = (question: any) => {
+    for (const asset of question.assets ?? []) {
+      if (asset?.asset_id) referencedAssetIds.add(String(asset.asset_id));
+    }
+    const collectBlocks = (blocks: any[]) => {
+      for (const block of blocks ?? []) {
+        const oldId = block?.content?.asset_path;
+        if (typeof oldId === "string" && oldId) referencedAssetIds.add(oldId);
+      }
+    };
+    for (const slot of ["body", "hint", "answer", "solution", "marking_criteria"]) collectBlocks(question[slot]);
+    for (const option of question.mcq_options ?? []) collectBlocks(option.content);
+    for (const part of question.parts ?? []) collectQuestion(part);
+  };
+  for (const question of payload.questions) collectQuestion(question);
+  for (const oldId of referencedAssetIds) {
+    if (blobs.has(oldId)) assetMap.set(oldId, newId("asset"));
+  }
+
   const rewriteQuestion = (question: any) => {
     for (const asset of question.assets ?? []) {
       const oldId = String(asset.asset_id);
-      if (blobs.has(oldId) && !assetMap.has(oldId)) assetMap.set(oldId, newId("asset"));
       const mapped = assetMap.get(oldId);
       if (mapped) {
         asset.asset_id = mapped;
@@ -66,7 +89,7 @@ async function parseQuestionBundle(file: File) {
     if (blob) await idb.putAsset(newAssetId, blob);
   }
   for (const id of assetMap.values()) await ensureAssetUrl(id);
-  return { ...payload, questions: payload.questions };
+  return { ...payload, questions: payload.questions, assetIds: [...assetMap.values()] };
 }
 
 export function Import() {
@@ -88,17 +111,21 @@ export function Import() {
     const nextErrors: Array<{ name: string; error: string }> = [];
     try {
       for (const file of selected) {
+        let parsed: Record<string, any> | null = null;
         try {
-          const parsed = file.name.toLowerCase().endsWith(".qbx")
+          parsed = file.name.toLowerCase().endsWith(".qbx")
             ? await parseQuestionBundle(file)
             : JSON.parse(await file.text());
-          const res = await api.importJson(courseId, parsed);
+          const res = await api.importJson(courseId, parsed!);
           nextResults.push({ name: file.name, result: res });
           if (res.imported_count > 0) {
             qc.invalidateQueries({ queryKey: ["questions", courseId] });
             qc.invalidateQueries({ queryKey: ["question-counts", courseId] });
           }
         } catch (e) {
+          // A .qbx import writes image blobs before the questions; if the import
+          // fails, drop any blob no question claimed so they do not leak.
+          if (parsed?.assetIds?.length) await deleteUnclaimedAssetBlobs(parsed.assetIds);
           nextErrors.push({
             name: file.name,
             error: e instanceof Error ? e.message : "Import failed — check the file is valid JSON in the expected format",

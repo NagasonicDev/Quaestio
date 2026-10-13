@@ -340,16 +340,7 @@ export async function exportCourse(
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
   const learning = includeLearningData ? await readLearningData(courseId, options.includeResponseText === true) : null;
-  const seen = new Set<string>();
-  const collectIds = (q: Question) => {
-    for (const a of q.assets) if (!seen.has(a.asset_id)) seen.add(a.asset_id);
-    for (const option of q.mcq_options ?? []) for (const block of option.content ?? []) {
-      const assetId = block.content?.asset_path;
-      if (typeof assetId === "string" && assetId) seen.add(assetId);
-    }
-    for (const p of q.parts) collectIds(p);
-  };
-  for (const q of questions) collectIds(q);
+  const seen = collectReferencedAssetIds(questions);
   const workTotal = preAssetWork + seen.size + 2;
   let completedWork = preAssetWork;
   const report = (fraction = 0) => onProgress?.(Math.min(99, ((completedWork + fraction) / workTotal) * 100));
@@ -441,16 +432,7 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
     questions,
   }, null, 2));
   zip.file("README.txt", "Editable question export. Edit questions.json; binary files referenced by asset_id are in assets/. Keep asset IDs and filenames unchanged so image blocks continue to resolve.\n\nThis package deliberately contains questions and their images only: no course structure, no review schedule, no attempt history, no typed answers, and no generated files. Use the .qb course export for a full backup.\n");
-  const seen = new Set<string>();
-  const collectIds = (q: Question) => {
-    for (const a of q.assets) if (!seen.has(a.asset_id)) seen.add(a.asset_id);
-    for (const option of q.mcq_options ?? []) for (const block of option.content ?? []) {
-      const assetId = block.content?.asset_path;
-      if (typeof assetId === "string" && assetId) seen.add(assetId);
-    }
-    for (const p of q.parts) collectIds(p);
-  };
-  for (const q of questions) collectIds(q);
+  const seen = collectReferencedAssetIds(questions);
   const workTotal = 2 + seen.size + 2;
   let completedWork = 2;
   const report = (fraction = 0) => onProgress?.(Math.min(99, ((completedWork + fraction) / workTotal) * 100));
@@ -495,11 +477,28 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
   if (!courseJsonFile) {
     throw new Error("This .qb bundle has no course.json — it may be corrupted.");
   }
-  const courseJson = JSON.parse(await courseJsonFile.async("string"));
+  let courseJson: Record<string, any>;
+  try {
+    courseJson = JSON.parse(await courseJsonFile.async("string"));
+  } catch {
+    throw new Error("This .qb bundle's course.json is not valid JSON — it may be corrupted.");
+  }
   if (!SUPPORTED_COURSE_EXPORT_VERSIONS.includes(courseJson.export_schema_version)) {
     throw new Error(
       `Unsupported export schema version ${courseJson.export_schema_version} — this app supports version ${SUPPORTED_COURSE_EXPORT_VERSIONS.join(" and ")}.`
     );
+  }
+  // Validate before anything is written: the replace path deletes the existing
+  // course first, so a malformed bundle must be rejected here, not mid-insert.
+  const course = courseJson.course;
+  if (!course || typeof course.course_id !== "string" || !course.course_id) {
+    throw new Error("This .qb bundle has no course id — it may be corrupted.");
+  }
+  if (typeof course.name !== "string" || !course.name.trim()) {
+    throw new Error("This .qb bundle's course has no name, so it cannot be imported.");
+  }
+  if (courseJson.questions != null && !Array.isArray(courseJson.questions)) {
+    throw new Error("This .qb bundle's question list is malformed.");
   }
   const assetBlobs = new Map<string, Blob>();
   const assetFolder = archive.folder("assets");
@@ -513,7 +512,7 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
     }
   }
   return {
-    course: courseJson.course,
+    course,
     questions: courseJson.questions ?? [],
     assetBlobs,
     learning: courseJson.learning ?? null,
@@ -526,6 +525,26 @@ async function wipeCourseData(courseId: string): Promise<void> {
 }
 
 const IMAGE_TYPES = new Set(["image", "diagram", "graph"]);
+
+/** Every asset id a question tree references: declared assets and any content
+ *  slot or MCQ option block. Mirrors what the importer scans. */
+function collectReferencedAssetIds(questions: Question[]): Set<string> {
+  const seen = new Set<string>();
+  const scanBlocks = (blocks: Array<{ content?: Record<string, any> }> | undefined) => {
+    for (const block of blocks ?? []) {
+      const assetId = block.content?.asset_path;
+      if (typeof assetId === "string" && assetId) seen.add(assetId);
+    }
+  };
+  const walk = (q: Question) => {
+    for (const a of q.assets ?? []) seen.add(a.asset_id);
+    for (const slot of ["body", "hint", "answer", "solution", "marking_criteria"] as const) scanBlocks(q[slot]);
+    for (const option of q.mcq_options ?? []) scanBlocks(option.content);
+    for (const p of q.parts ?? []) walk(p);
+  };
+  for (const q of questions) walk(q);
+  return seen;
+}
 
 interface ImportCtx {
   courseId: string;
@@ -580,7 +599,11 @@ async function insertQuestion(
   const parentId = question.parent_question_id
     ? (ctx.questionMap.get(question.parent_question_id) ?? null)
     : null;
-  const sourceKey = question.source ? JSON.stringify(question.source) : "";
+  // Key the memo on the paper's identity, not the whole source object: every
+  // question from one paper must share a single source row.
+  const sourceKey = question.source?.name
+    ? `${question.source.name}\u0000${question.source.year ?? ""}\u0000${question.source.institution ?? ""}`
+    : "";
   let sourceId = sourceKey ? (sourceAlready.get(sourceKey) ?? null) : null;
   if (sourceKey && !sourceId) {
     sourceId = await insertSourceIfNeeded(question);
@@ -602,17 +625,21 @@ async function insertQuestion(
       question.review_status,
       question.classification_confidence,
       sourceId,
-      question.created_at,
-      question.updated_at,
+      question.created_at ?? nowUtc(),
+      question.updated_at ?? nowUtc(),
     ]
   );
-  question.node_ids.forEach((nodeId, i) => {
-    const mapped = ctx.nodeMap.get(nodeId) ?? nodeId;
-    run(
+  let primarySet = false;
+  for (const nodeId of question.node_ids ?? []) {
+    // Skip ids that were not part of this bundle rather than writing a dangling FK.
+    const mapped = ctx.nodeMap.get(nodeId);
+    if (!mapped) continue;
+    await run(
       "INSERT INTO question_classification (question_id, node_id, is_primary) VALUES (?, ?, ?)",
-      [questionId, mapped, i === 0 ? 1 : 0]
+      [questionId, mapped, primarySet ? 0 : 1]
     );
-  });
+    primarySet = true;
+  }
   // A question/tag pair is unique in the join table. Bundles from older
   // exports may repeat a tag, so normalize and de-duplicate before inserting.
   const insertedTagNames = new Set<string>();
@@ -678,6 +705,10 @@ export async function applyCourseBundle(
   const src = bundle.course;
   const courseId = mode === "new" ? (requestedCourseId ?? newId("course")) : src.course_id;
   if (mode === "replace") {
+    // shortcut: the old course is deleted before the new rows are written, so a
+    // bundle that passes validation but still fails mid-insert leaves a half
+    // course. Upgrade to a single transaction if bundles ever come from an
+    // untrusted source.
     await wipeCourseData(courseId);
   }
   onProgress?.(5);
@@ -825,11 +856,13 @@ async function restoreLearningData(
 ): Promise<void> {
   if (!learning) return;
   const now = nowUtc();
-  await transaction(async () => {
+  // Synchronous callback: `transaction` commits when it returns, so an async
+  // body would commit before these inserts ran and lose atomicity.
+  await transaction((database) => {
     for (const row of learning.review_state ?? []) {
       const questionId = ctx.questionMap.get(String(row.question_id));
       if (!questionId) continue;
-      await run(
+      database.run(
         `INSERT INTO question_review_state
            (question_id, next_due_at, interval_days, last_reviewed_at, review_count, lapse_count, ladder_step, last_rating, last_outcome, updated_at)
          VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
@@ -861,7 +894,7 @@ async function restoreLearningData(
       const questionId = ctx.questionMap.get(String(row.question_id));
       if (!questionId) continue;
       const status = String(row.status ?? "seen");
-      await run(
+      database.run(
         `INSERT INTO practice_attempt
            (attempt_id, session_id, question_id, status, correct, time_spent_sec, user_notes, created_at,
             response_text, confidence, self_rating, hints_revealed, scored_by, score_earned, score_possible)

@@ -154,3 +154,12 @@ export async function deleteAssetBlob(assetId: string): Promise<void> {
   }
   await idb.deleteAsset(assetId);
 }
+
+/** Clean up blobs written for a failed import. Only removes ids no question
+ *  claimed, so a partially-imported course keeps its images. */
+export async function deleteUnclaimedAssetBlobs(assetIds: string[]): Promise<void> {
+  for (const assetId of assetIds) {
+    const row = await getAssetRow(assetId);
+    if (!row) await deleteAssetBlob(assetId);
+  }
+}

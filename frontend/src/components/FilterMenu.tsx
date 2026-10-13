@@ -29,8 +29,6 @@ interface FilterMenuProps {
   onAvoidRecentChange?: (days: number | null) => void;
   /** Primary button shown in the popup footer (e.g. Practice's generate button) */
   footerAction?: { label: string; onClick: () => void };
-  /** Optional note rendered at the bottom of the content area */
-  hint?: string;
   inline?: boolean;
   institutions?: Array<{ name: string; years: number[] }>;
   institutionYears?: Record<string, number[]>;
@@ -125,7 +123,6 @@ export function FilterMenu({
   avoidRecentDays = null,
   onAvoidRecentChange,
   footerAction,
-  hint,
   inline = false,
   institutions = [], institutionYears = {}, onInstitutionYearsChange,
   institutionCounts,
@@ -443,12 +440,6 @@ export function FilterMenu({
                   </div>
                 </div>
               </div>
-            )}
-
-            {hint && (
-              <p className="mt-5 border-t border-border pt-4 text-xs text-muted-foreground">
-                {hint}
-              </p>
             )}
           </div>
         </div>

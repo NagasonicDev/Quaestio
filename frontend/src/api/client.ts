@@ -17,7 +17,6 @@ import type {
   Question,
   QuestionCountsResponse,
   QuestionListResponse,
-  RandomQuestionResponse,
   ResponseCapture,
   ReviewPolicy,
   ReviewStateRow,
@@ -59,11 +58,6 @@ export type {
 
 async function registerQuestion(q: Question | null): Promise<Question | null> {
   if (q) await registerQuestionAssets(q);
-  return q;
-}
-
-async function registerRandom(q: RandomQuestionResponse): Promise<RandomQuestionResponse> {
-  if (q.question) await registerQuestionAssets(q.question);
   return q;
 }
 
@@ -144,13 +138,6 @@ export const api = {
     return data.getInstructions(courseId);
   },
 
-  skillDownloadUrl(courseId: string): string {
-    // Placeholder kept for API-surface compatibility; real download is
-    // triggered via downloadSkill() below.
-    void courseId;
-    return "";
-  },
-
   downloadSkill(courseId: string): Promise<void> {
     return import("../lib/exchange").then((m) => m.downloadSkill(courseId));
   },
@@ -224,6 +211,10 @@ export const api = {
     return data.deleteQuestion(id);
   },
 
+  deleteQuestions(ids: string[]): Promise<void> {
+    return data.deleteQuestions(ids);
+  },
+
   questionCounts(
     courseId: string,
     opts: {
@@ -240,7 +231,7 @@ export const api = {
     return data.estimateTestSections(courseId, sections);
   },
 
-  randomQuestion(params: {
+  randomQuestions(params: {
     course_id: string;
     node_id?: string | string[];
     type?: string | string[];
@@ -249,8 +240,12 @@ export const api = {
     exclude_question_ids?: Array<string | number>;
     exclude_recent_days?: number;
     source_filters?: InstitutionYearFilter[];
-  }): Promise<RandomQuestionResponse> {
-    return data.randomQuestion(params).then((r) => registerRandom(r));
+    count: number;
+  }): Promise<Question[]> {
+    return data.randomQuestions(params).then(async (questions) => {
+      for (const q of questions) await registerQuestionAssets(q);
+      return questions;
+    });
   },
 
   recordAttempt(payload: AttemptInput): Promise<{ attempt_id: string; created_at: string }> {

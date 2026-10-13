@@ -110,6 +110,13 @@ export function tableCellText(value: unknown): string {
   if (typeof value !== "object") return "";
 
   const cell = value as Record<string, unknown>;
+  if (cell.block_type === "image" || cell.block_type === "diagram" || cell.block_type === "graph") {
+    // A cell holding only a figure cannot be rendered as text; surface it
+    // instead of silently printing an empty cell.
+    const c = cell.content && typeof cell.content === "object" ? (cell.content as Record<string, unknown>) : null;
+    const alt = c && typeof c.alt_text === "string" ? c.alt_text : "";
+    return alt || "[figure]";
+  }
   const content = cell.content;
   if (cell.block_type === "equation" && content && typeof content === "object") {
     const latex = (content as Record<string, unknown>).latex;

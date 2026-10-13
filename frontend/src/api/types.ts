@@ -126,11 +126,6 @@ export interface QuestionListResponse {
   items: QuestionListItem[];
 }
 
-export interface RandomQuestionResponse {
-  matching_count: number;
-  question: Question | null;
-}
-
 export interface NodeCount {
   node_id: string;
   name: string;
@@ -150,6 +145,10 @@ export interface PracticeFilters {
   course_id: string;
   node_ids: string[];
   type_key: string | null;
+  /** Multi-select types. Kept in addition to `type_key` so sessions saved by older builds still load. */
+  type_keys?: string[];
+  /** Multi-select difficulty levels. */
+  difficulties?: number[];
   difficulty_min: number | null;
   difficulty_max: number | null;
   tag: string | null;

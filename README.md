@@ -21,7 +21,7 @@ Quaestio works in your browser and keeps your courses and study history on your 
 
 ### Try it online
 
-Open the **Quaestio GitHub Pages site**: [Launch Quaestio](https://nagasonicdev.github.io/quaestio/)
+Open the **Quaestio GitHub Pages site**: [Launch Quaestio](https://nagasonicdev.github.io/Quaestio/)
 
 Your courses are saved in the browser you use to open it. They are not synced between devices or browser profiles, so export a course backup if you want to move it or keep a copy.
 

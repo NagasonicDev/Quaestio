@@ -27,7 +27,6 @@ import type {
   QuestionCountsResponse,
   QuestionListItem,
   QuestionListResponse,
-  RandomQuestionResponse,
   ResponseCapture,
   ReviewOutcome,
   ReviewPolicy,
@@ -449,7 +448,9 @@ export async function updateNode(
     "parent_node_id",
   ];
   for (const k of keys) {
-    if (k in payload) {
+    // Only touch keys the caller actually supplied: `k in payload` is true for an
+    // explicit `undefined`, and `?? null` would then blank an untouched column.
+    if (k in payload && (payload as any)[k] !== undefined) {
       sets.push(`${k} = ?`);
       params.push((payload as any)[k] ?? null);
     }
@@ -462,7 +463,7 @@ export async function updateNode(
     node_id: nodeId,
     course_id: courseId,
     parent_node_id: (payload.parent_node_id ?? null) as string | null,
-    level_index: payload.parent_node_id === undefined ? existing.level_index : existing.level_index,
+    level_index: existing.level_index,
     name: (payload.name ?? existing.name) as string,
     code: (payload.code ?? existing.code) as string | null,
     description: (payload.description ?? existing.description) as string | null,
@@ -855,13 +856,16 @@ export function getQuestion(questionId: string): Promise<Question> {
 
 export async function getCourseQuestions(courseId: string): Promise<Question[]> {
   const f = buildFilters({ courseId, approvedOnly: false, wholeQuestions: true });
-  const rows = await all(
+  const rows = await all<{ question_id: string }>(
     `SELECT q.question_id FROM question q WHERE ${f.where.join(" AND ")} ORDER BY q.created_at ASC`,
     f.params
   );
-  const out: Question[] = [];
-  for (const r of rows) out.push(await hydrateQuestion(r.question_id));
-  return out;
+  // hydrateQuestions batches the per-question reads; one-at-a-time here was an
+  // N+1 that made a whole-course export issue thousands of queries.
+  const ids = rows.map((r) => String(r.question_id));
+  const hydrated = await hydrateQuestions(ids);
+  const byId = new Map(hydrated.map((q) => [q.question_id, q]));
+  return ids.map((id) => byId.get(id)).filter((q): q is Question => !!q);
 }
 
 function sourceOutFrom(rows: SqlRow[]): Source | null {
@@ -1220,6 +1224,24 @@ export async function deleteQuestion(questionId: string): Promise<void> {
   await run("DELETE FROM question WHERE question_id = ?", [questionId]);
 }
 
+/** Delete several question trees atomically. Deleting one at a time left a
+ *  half-wiped course if a later delete failed. */
+export async function deleteQuestions(questionIds: string[]): Promise<void> {
+  const ids = [...new Set(questionIds.map(String))];
+  if (!ids.length) return;
+  const placeholders = ids.map(() => "?").join(", ");
+  const roots = await all<SqlRow>(
+    `SELECT question_id FROM question WHERE question_id IN (${placeholders})`,
+    ids
+  );
+  for (const row of roots) await deleteAssetBlobsFor(String(row.question_id));
+  await runMany([
+    [`DELETE FROM practice_attempt WHERE question_id IN (${placeholders})`, ids],
+    [`UPDATE import_question SET final_question_id = NULL WHERE final_question_id IN (${placeholders})`, ids],
+    [`DELETE FROM question WHERE question_id IN (${placeholders})`, ids],
+  ]);
+}
+
 /** Remove question content and its related data while preserving all course structure. */
 export async function clearQuestions(): Promise<void> {
   // Clear references that do not cascade before deleting question trees.
@@ -1472,7 +1494,12 @@ export async function questionCounts(
   return { total, by_node: byNode, by_type: byType, by_difficulty: byDifficulty };
 }
 
-export async function randomQuestion(params: {
+/**
+ * Draw up to `count` random matching questions in one pass. A quiz uses this so
+ * it issues one id query plus one batched hydrate instead of a COUNT + OFFSET
+ * query per question.
+ */
+export async function randomQuestions(params: {
   course_id: string;
   node_id?: string | string[];
   type?: string | string[];
@@ -1481,7 +1508,8 @@ export async function randomQuestion(params: {
   exclude_question_ids?: Array<string | number>;
   exclude_recent_days?: number;
   source_filters?: Array<{ institution: string; years: number[] }>;
-}): Promise<RandomQuestionResponse> {
+  count: number;
+}): Promise<Question[]> {
   const difficulty = params.difficulty;
   const f = buildFilters({
     courseId: params.course_id,
@@ -1498,37 +1526,35 @@ export async function randomQuestion(params: {
     tag: params.tag,
     institutionYears: params.source_filters,
   });
-  const where2 = [...f.where];
-  const params2 = [...f.params];
+  const where = [...f.where];
+  const sqlParams = [...f.params];
   const excludes = (params.exclude_question_ids ?? []).map((x) => String(x));
   if (excludes.length) {
-    where2.push(`q.question_id NOT IN (${excludes.map(() => "?").join(", ")})`);
-    params2.push(...excludes);
+    where.push(`q.question_id NOT IN (${excludes.map(() => "?").join(", ")})`);
+    sqlParams.push(...excludes);
   }
   if (params.exclude_recent_days) {
-    where2.push(
+    where.push(
       `q.question_id NOT IN (
         SELECT question_id FROM practice_attempt
         WHERE created_at >= datetime('now', ?)
       )`
     );
-    params2.push(`-${params.exclude_recent_days} days`);
+    sqlParams.push(`-${params.exclude_recent_days} days`);
   }
-  const cond = where2.join(" AND ");
-  const countRow = await getFirst<SqlRow>(
-    `SELECT COUNT(*) AS c FROM question q WHERE ${cond}`,
-    params2
+  const rows = await all<SqlRow>(
+    `SELECT q.question_id FROM question q WHERE ${where.join(" AND ")}`,
+    sqlParams
   );
-  const matchingCount = countRow ? Number(countRow.c) : 0;
-  if (!matchingCount) return { matching_count: 0, question: null };
-  const offset = Math.floor(Math.random() * matchingCount);
-  const row = await getFirst<SqlRow>(
-    `SELECT q.question_id FROM question q WHERE ${cond} ORDER BY q.question_id LIMIT 1 OFFSET ?`,
-    [...params2, offset]
-  );
-  if (!row) return { matching_count: 0, question: null };
-  const question = await hydrateQuestion(row.question_id);
-  return { matching_count: matchingCount, question };
+  const ids = rows.map((r) => String(r.question_id));
+  for (let i = ids.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [ids[i], ids[j]] = [ids[j], ids[i]];
+  }
+  const picked = ids.slice(0, Math.max(0, params.count));
+  const hydrated = await hydrateQuestions(picked);
+  const byId = new Map(hydrated.map((q) => [q.question_id, q]));
+  return picked.map((id) => byId.get(id)).filter((q): q is Question => !!q);
 }
 
 // ---------- practice ----------
@@ -1771,10 +1797,12 @@ export async function recordReview(
         `UPDATE practice_session
          SET completed_count = (SELECT COUNT(DISTINCT question_id) FROM practice_attempt
                                 WHERE session_id = ? AND status = 'reviewed'),
-             status = CASE WHEN completed_count + 1 >= planned_count THEN 'completed' ELSE status END,
+             status = CASE WHEN (SELECT COUNT(DISTINCT question_id) FROM practice_attempt
+                                 WHERE session_id = ? AND status = 'reviewed') >= planned_count
+                           THEN 'completed' ELSE status END,
              updated_at = ?
          WHERE session_id = ?`,
-        [input.session_id, at, input.session_id]
+        [input.session_id, input.session_id, at, input.session_id]
       );
     }
   });
@@ -1852,6 +1880,8 @@ function practiceWhere(filters: PracticeFilters, dueAt: string | null): PoolWher
     approvedOnly: true,
     wholeQuestions: true,
     typeKey: filters.type_key ?? undefined,
+    typeKeys: filters.type_keys?.length ? filters.type_keys : undefined,
+    difficulties: filters.difficulties?.length ? filters.difficulties : undefined,
     difficultyMin: filters.difficulty_min ?? undefined,
     difficultyMax: filters.difficulty_max ?? undefined,
     nodeIds: filters.node_ids?.length ? filters.node_ids : undefined,

@@ -20,6 +20,7 @@ import {
   formatPageNumber,
   generalInstructionsLines,
   isMcOptionLine,
+  mcqOptionBlocks,
   sectionOpeningLines,
   sectionOverviewLines,
   type ExamPaperPlan,
@@ -614,21 +615,15 @@ function drawSourceLine(w: Writer, question: Question) {
 
 async function renderPaperQuestion(w: Writer, q: Question, sharedImages?: Map<string, ResolvedImage>, beforePart?: (part: Question["parts"][number]) => void) {
   const questionBody = q.body;
-  const blocks: ContentBlock[] = [...questionBody];
+  const optionBlocks = q.mcq_options?.length ? mcqOptionBlocks(q) : [];
+  const blocks: ContentBlock[] = [...questionBody, ...optionBlocks];
   for (const part of q.parts) blocks.push(...part.body);
   const ids = sharedImages ?? new Map<string, ResolvedImage>([
     ...(await resolveImages(blocks)),
     ...(await resolveEquations(blocks)),
   ]);
   await renderBlocks(w, questionBody, ids);
-  if (q.mcq_options?.length) {
-    const items = q.mcq_options.map((option, i) => {
-      const label = String.fromCharCode(65 + i);
-      const text = option.content.map((block) => String(block.content.text ?? block.content.latex ?? "")).join(" ");
-      return `(${label}) ${text}`;
-    });
-    await renderBlocks(w, [{ block_id: `${q.question_id}-mcq-options`, slot: "body", position: 0, block_type: "list", content: { ordered: false, items } } as ContentBlock], ids);
-  }
+  if (optionBlocks.length) await renderBlocks(w, optionBlocks, ids);
   for (const part of q.parts) {
     beforePart?.(part);
     const label = part.part_label ? `(${part.part_label})` : "";
@@ -718,7 +713,7 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
   const plan = buildExamPaperPlan(options);
   const allBlocks = options.sections.flatMap((section) => section.questions.flatMap((q) => [
     ...q.body,
-    ...(q.mcq_options?.length ? [{ block_id: `${q.question_id}-mcq-options`, slot: "body" as const, position: q.body.length, block_type: "list" as const, content: { ordered: false, items: q.mcq_options.map((option, i) => `(${String.fromCharCode(65 + i)}) ${option.content.map((b) => String(b.content.text ?? b.content.latex ?? "")).join(" ")}`) } }] : []),
+    ...(q.mcq_options?.length ? mcqOptionBlocks(q) : []),
     ...q.parts.flatMap((part) => part.body),
   ]));
   const sharedImages = options.resolvedImages ?? new Map<string, ResolvedImage>([
@@ -740,16 +735,10 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
 
     for (const q of section.questions) {
       const questionBody = q.body;
-      const mcqBlock = q.mcq_options?.length ? [{
-        block_id: `${q.question_id}-mcq-options`,
-        slot: "body" as const,
-        position: q.body.length,
-        block_type: "list" as const,
-        content: { ordered: false, items: q.mcq_options.map((option, i) => `(${String.fromCharCode(65 + i)}) ${option.content.map((b) => String(b.content.text ?? b.content.latex ?? "")).join(" ")}`) },
-      } as ContentBlock] : [];
+      const mcqBlocks = q.mcq_options?.length ? mcqOptionBlocks(q) : [];
       const questionStartHeight = 6 + LINE_H(EXAM.font.bodyPt)
         + estimateBlocksHeight(w, questionBody, sharedImages)
-        + estimateBlocksHeight(w, mcqBlock, sharedImages);
+        + estimateBlocksHeight(w, mcqBlocks, sharedImages);
       startOnNextPageIfNeeded(w, questionStartHeight);
       qn += 1;
       w.spacer(6);

@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { InlineMath } from "react-katex";
 
 /** Expand common legacy scientific notation before rendering LaTeX. */
-export function normalizeMathText(text: string) {
+function normalizeMathText(text: string) {
   return text.replace(
     /(\d+(?:\.\d+)?)\s*[x×]\s*10\s*\^\s*(-?\d+)(?:\s*(kg\s*m\s*s(?:\^?-?\d+)?|kg|ms\^-?\d+|m|s|N|J|Hz|V|A|T|K|C|Wb|lux|°C))?\b/g,
     (_, coefficient, exponent, unit) => `$${coefficient}\\times10^{${exponent}}${unit ? `\\,\\mathrm{${unit.replace(/\s+/g, "\\,")}}` : ""}$`
