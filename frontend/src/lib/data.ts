@@ -3120,7 +3120,7 @@ export async function listTests(courseId: string, limit: number = 20): Promise<G
   return out;
 }
 
-export async function generateTestSolutions(testId: string): Promise<void> {
+export async function generateTestSolutions(testId: string, onProgress?: (completed: number, total: number) => void): Promise<void> {
   const row = await getFirst<SqlRow>("SELECT * FROM generated_test WHERE test_id = ?", [testId]);
   if (!row) throw new Error("Generated test not found");
   const questionIds = JSON.parse(String(row.question_ids_json)) as string[];
@@ -3137,8 +3137,8 @@ export async function generateTestSolutions(testId: string): Promise<void> {
       }))
     : [{ label: null, questions }];
   const output = row.format === "pdf"
-    ? await buildPdfSolutions(String(row.title), sections)
-    : await buildDocxSolutions(String(row.title), sections);
+    ? await buildPdfSolutions(String(row.title), sections, onProgress)
+    : await buildDocxSolutions(String(row.title), sections, onProgress);
   await storeTestSolutionFile(testId, output);
 }
 

@@ -724,7 +724,7 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
 }
 
 /** Build a separate answer and marking guide for a previously generated paper. */
-export async function buildDocxSolutions(title: string, sections: DocSection[]): Promise<Blob> {
+export async function buildDocxSolutions(title: string, sections: DocSection[], onProgress?: (completed: number, total: number) => void): Promise<Blob> {
   const questions = sections.flatMap((section) => section.questions);
   const solutionBlocks = questions.flatMap((q) => [
     ...q.answer, ...q.solution, ...q.marking_criteria,
@@ -747,6 +747,8 @@ export async function buildDocxSolutions(title: string, sections: DocSection[]):
     for (const q of section.questions) {
       number++;
       children.push(new Paragraph({ children: [runProps({ text: `Question ${number}`, bold: true, sizePt: 13 })], spacing: { before: 220, after: 80 } }));
+      const src = [formatSourceBracket(q.source), `Question ID: ${q.question_id}`].filter(Boolean).join(" · ");
+      if (src) children.push(new Paragraph({ children: [runProps({ text: src, italics: true, sizePt: 8, color: GRAY })] }));
       appendSlot("Answer", q.answer);
       appendSlot("Solution", q.solution);
       appendSlot("Marking criteria", q.marking_criteria);
@@ -755,6 +757,10 @@ export async function buildDocxSolutions(title: string, sections: DocSection[]):
         appendSlot(`${label} — Answer`, part.answer);
         appendSlot(`${label} — Solution`, part.solution);
         appendSlot(`${label} — Marking criteria`, part.marking_criteria);
+      }
+      if (onProgress) {
+        onProgress(number, questions.length);
+        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       }
     }
   }

@@ -370,8 +370,8 @@ export const api = {
     return data.generateTest(courseId, payload);
   },
 
-  generateTestSolutions(testId: string): Promise<void> {
-    return data.generateTestSolutions(testId);
+  generateTestSolutions(testId: string, onProgress?: (completed: number, total: number) => void): Promise<void> {
+    return data.generateTestSolutions(testId, onProgress);
   },
 
   listTests(courseId: string, limit: number = 20): Promise<GeneratedTestMeta[]> {

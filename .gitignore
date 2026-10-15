@@ -10,6 +10,7 @@ imports/
 exams/
 tmp/
 work/
+.superpowers/
 
 # Local environments, runtime data, and logs
 backend/.venv/

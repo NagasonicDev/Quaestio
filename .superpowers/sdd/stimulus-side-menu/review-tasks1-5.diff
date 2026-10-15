@@ -1,0 +1,1638 @@
+diff --git a/frontend/src/api/client.ts b/frontend/src/api/client.ts
+index ae5949d..22d95bb 100644
+--- a/frontend/src/api/client.ts
++++ b/frontend/src/api/client.ts
+@@ -382,6 +382,38 @@ export const api = {
+     return data.deleteTest(testId);
+   },
+ 
++  createStimulus(payload: { course_id: string; title?: string | null; body?: any[] }): Promise<any> {
++    return data.createStimulus(payload);
++  },
++
++  updateStimulus(stimulusId: string, payload: Partial<{ course_id: string; title?: string | null; body?: any[] }>): Promise<any> {
++    return data.updateStimulus(stimulusId, payload);
++  },
++
++  deleteStimulus(stimulusId: string): Promise<void> {
++    return data.deleteStimulus(stimulusId);
++  },
++
++  getStimulus(stimulusId: string): Promise<any> {
++    return data.getStimulus(stimulusId);
++  },
++
++  listStimuliForCourse(courseId: string): Promise<any[]> {
++    return data.listStimuliForCourse(courseId);
++  },
++
++  getStimuliForQuestion(questionId: string): Promise<any[]> {
++    return data.getStimuliForQuestion(questionId);
++  },
++
++  linkStimulusToQuestion(stimulusId: string, questionId: string): Promise<void> {
++    return data.linkStimulusToQuestion(stimulusId, questionId);
++  },
++
++  unlinkStimulusFromQuestion(stimulusId: string, questionId: string): Promise<void> {
++    return data.unlinkStimulusFromQuestion(stimulusId, questionId);
++  },
++
+   testDownloadUrl(meta: Pick<GeneratedTestMeta, "test_download_url">): string {
+     return meta.test_download_url;
+   },
+diff --git a/frontend/src/api/types.ts b/frontend/src/api/types.ts
+index ab6da64..4cce7d7 100644
+--- a/frontend/src/api/types.ts
++++ b/frontend/src/api/types.ts
+@@ -349,6 +349,26 @@ export interface AttemptSummary extends AttemptInput {
+   created_at: string;
+ }
+ 
++export interface StimulusBlock {
++  block_id: string;
++  slot: Slot;
++  position: number;
++  block_type: BlockType;
++  content: Record<string, any>;
++}
++
++export interface Stimulus {
++  stimulus_id: string;
++  course_id: string;
++  title: string | null;
++  created_at: string;
++  updated_at: string;
++}
++
++export interface StimulusWithContent extends Stimulus {
++  blocks: StimulusBlock[];
++}
++
+ export interface TopicProgress {
+   node_id: string;
+   name: string;
+diff --git a/frontend/src/components/PracticeFlow.tsx b/frontend/src/components/PracticeFlow.tsx
+index dbd34f0..613711e 100644
+--- a/frontend/src/components/PracticeFlow.tsx
++++ b/frontend/src/components/PracticeFlow.tsx
+@@ -1,6 +1,6 @@
+ import { useEffect, useMemo, useRef, useState } from "react";
+ import type { ReactNode } from "react";
+-import { Check, Eye, Lightbulb, NotebookPen, Timer } from "lucide-react";
++import { Check, Eye, Lightbulb, NotebookPen, Timer, FileText } from "lucide-react";
+ import type { Confidence, ContentBlock, Question, SelfRating } from "../api/types";
+ import { BlockList, MarkingGuideTable, QuestionReader } from "./QuestionReader";
+ import { Meta, Panel } from "./system";
+@@ -8,6 +8,8 @@ import { Button } from "./ui/button";
+ import { Textarea } from "./ui/textarea";
+ import { ConfidencePicker, SelfAssessment } from "./SelfAssessment";
+ import { formatQuestionType } from "../lib/questionTypes";
++import { StimulusSideMenu } from "./StimulusSideMenu";
++import type { StimulusWithContent } from "../api/types";
+ 
+ /**
+  * The guided flow, in the order retrieval practice says it should happen in:
+@@ -171,6 +173,7 @@ export function PracticeFlow({
+   nextDisabled,
+   onNext,
+   footerNote,
++  stimuli = [],
+   callbacks,
+ }: {
+   question: Question;
+@@ -182,6 +185,7 @@ export function PracticeFlow({
+   nextDisabled?: boolean;
+   onNext?: () => void;
+   footerNote?: string;
++  stimuli?: StimulusWithContent[];
+   callbacks: PracticeFlowCallbacks;
+ }) {
+   const [response, setResponse] = useState("");
+@@ -191,6 +195,7 @@ export function PracticeFlow({
+   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
+   const [confidence, setConfidence] = useState<Confidence | null>(null);
+   const [revealed, setRevealed] = useState({ guide: false, answer: false, solution: false });
++  const [openStimulus, setOpenStimulus] = useState<StimulusWithContent | null>(null);
+   const [busy, setBusy] = useState(false);
+ 
+   const questionId = question.question_id;
+@@ -202,6 +207,7 @@ export function PracticeFlow({
+     setSelectedChoice(null);
+     setConfidence(null);
+     setRevealed({ guide: false, answer: false, solution: false });
++    setOpenStimulus(null);
+   }, [questionId]);
+ 
+   const elapsed = useElapsedSeconds(timerEnabled, stage !== "assessed");
+@@ -245,10 +251,29 @@ export function PracticeFlow({
+ 
+   return (
+     <Panel className="overflow-hidden">
+-      <div className="flex flex-wrap items-center gap-3 border-b border-border px-5 py-3">
+-        <Meta>{formatQuestionType(question.type_key)}</Meta>
+-        {question.difficulty != null && <Meta>Difficulty {question.difficulty}</Meta>}
+-        {question.marks != null && <Meta>{question.marks} marks</Meta>}
++      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border px-5 py-3">
++        <div className="flex flex-wrap items-center gap-3">
++          <Meta>{formatQuestionType(question.type_key)}</Meta>
++          {question.difficulty != null && <Meta>Difficulty {question.difficulty}</Meta>}
++          {question.marks != null && <Meta>{question.marks} marks</Meta>}
++        </div>
++        {stimuli.length > 0 && (
++          <div className="flex flex-wrap items-center gap-2">
++            {stimuli.map((stimulus, index) => (
++              <Button
++                key={stimulus.stimulus_id}
++                variant="outline"
++                size="sm"
++                onClick={() => setOpenStimulus(stimulus)}
++              >
++                <FileText />
++                {stimuli.length === 1
++                  ? "View stimulus"
++                  : stimulus.title?.trim() || `Stimulus ${index + 1}`}
++              </Button>
++            ))}
++          </div>
++        )}
+       </div>
+ 
+       <article className="question-paper p-5 sm:p-7">
+@@ -535,6 +560,11 @@ export function PracticeFlow({
+           </Button>
+         </div>
+       )}
++      <StimulusSideMenu
++        open={openStimulus != null}
++        onClose={() => setOpenStimulus(null)}
++        stimulus={openStimulus}
++      />
+     </Panel>
+   );
+ }
+diff --git a/frontend/src/components/QuestionEditor.tsx b/frontend/src/components/QuestionEditor.tsx
+index a25486a..b4fcc99 100644
+--- a/frontend/src/components/QuestionEditor.tsx
++++ b/frontend/src/components/QuestionEditor.tsx
+@@ -5,7 +5,7 @@ import { api } from "../api/client";
+ import { formatQuestionType } from "../lib/questionTypes";
+ import { ToggleButton } from "./FilterMenu";
+ import { BlockEditor, blocksToPayload, emptyBlock, type EditableBlock } from "./BlockEditor";
+-import type { CourseFullConfig, ContentBlock, CourseNode, Question } from "../api/types";
++import type { CourseFullConfig, ContentBlock, CourseNode, Question, Stimulus } from "../api/types";
+ import { Field, Panel, PanelHead } from "./system";
+ import { Button } from "./ui/button";
+ import { notify } from "../lib/notifications";
+@@ -14,6 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
+ import { Switch } from "./ui/switch";
+ import { Checkbox } from "./ui/checkbox";
+ import { Modal, useConfirm } from "./ui/modal";
++import { StimulusManager } from "./StimulusManager";
+ 
+ interface EditableOption {
+   blocks: EditableBlock[];
+@@ -85,6 +86,10 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
+   const [sourceInstitution, setSourceInstitution] = useState(existing?.source?.institution ?? "");
+   const [sourceOriginalNo, setSourceOriginalNo] = useState(existing?.source?.original_question_no ?? "");
+   const [reviewStatus, setReviewStatus] = useState(existing?.review_status ?? "approved");
++  const [linkedStimuli, setLinkedStimuli] = useState<Stimulus[]>([]);
++  const [stimulusList, setStimulusList] = useState<Stimulus[]>([]);
++  const [showStimulusModal, setShowStimulusModal] = useState(false);
++  const [linking, setLinking] = useState(false);
+ 
+   const [body, setBody] = useState<EditableBlock[]>(
+     existing ? toEditable(existing.body) : [emptyBlock("text")]
+@@ -118,6 +123,22 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
+   const formRef = useRef<HTMLFormElement>(null);
+   const pendingNavigation = useRef<(() => void) | null>(null);
+ 
++  useEffect(() => {
++    async function loadStimulusData() {
++      try {
++        const list = await api.listStimuliForCourse(config.course_id);
++        setStimulusList(list);
++        if (existing?.question_id) {
++          const linked = await api.getStimuliForQuestion(existing.question_id);
++          setLinkedStimuli(linked);
++        }
++      } catch (err) {
++        notify("Could not load stimuli", "error", err instanceof Error ? err.message : "Failed to load stimuli.");
++      }
++    }
++    loadStimulusData();
++  }, [config.course_id, existing?.question_id]);
++
+   useEffect(() => {
+     if (!hasUnsavedChanges) return;
+     const onBeforeUnload = (event: BeforeUnloadEvent) => {
+@@ -216,13 +237,32 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
+         source_original_question_no: sourceOriginalNo.trim() || null,
+       };
+ 
++      let questionId: string | undefined = existing?.question_id;
+       if (existing) {
+         await api.updateQuestion(existing.question_id, payload);
+       } else {
+-        await api.createQuestion({
++        const created = await api.createQuestion({
+           ...payload,
+           course_id: config.course_id,
+         });
++        questionId = created.question_id;
++      }
++      if (questionId) {
++        const currentLinked = new Set(linkedStimuli.map((s) => s.stimulus_id));
++        const selectedLinked = new Set(
++          stimulusList.filter((s) => currentLinked.has(s.stimulus_id)).map((s) => s.stimulus_id)
++        );
++        if (currentLinked.size !== selectedLinked.size || ![...currentLinked].every((id) => selectedLinked.has(id))) {
++          // simpler: just re-link based on current selection? easier: unlink old not in list
++          const allSelected = new Set(linkedStimuli.map((s) => s.stimulus_id));
++          for (const id of allSelected) {
++            await api.linkStimulusToQuestion(id, questionId);
++          }
++        } else {
++          for (const id of currentLinked) {
++            await api.linkStimulusToQuestion(id, questionId);
++          }
++        }
+       }
+       const leave = pendingNavigation.current;
+       pendingNavigation.current = null;
+@@ -258,6 +298,47 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
+     }
+   }
+ 
++  function toggleLinkedStimulus(stimulus: Stimulus) {
++    setLinkedStimuli((prev) => {
++      const has = prev.some((s) => s.stimulus_id === stimulus.stimulus_id);
++      if (has) return prev.filter((s) => s.stimulus_id !== stimulus.stimulus_id);
++      return [...prev, stimulus];
++    });
++    setHasUnsavedChanges(true);
++  }
++
++  async function handleLinkStimulus(stimulus: Stimulus) {
++    if (!existing?.question_id) return;
++    setLinking(true);
++    try {
++      await api.linkStimulusToQuestion(stimulus.stimulus_id, existing.question_id);
++      setLinkedStimuli((prev) => [...prev, stimulus]);
++      setStimulusList((prev) => {
++        if (prev.some((s) => s.stimulus_id === stimulus.stimulus_id)) return prev;
++        return [...prev, stimulus];
++      });
++      notify("Stimulus linked", "success");
++    } catch (err) {
++      notify("Could not link stimulus", "error", err instanceof Error ? err.message : "Failed to link stimulus.");
++    } finally {
++      setLinking(false);
++    }
++  }
++
++  async function handleUnlinkStimulus(stimulus: Stimulus) {
++    if (!existing?.question_id) {
++      setLinkedStimuli((prev) => prev.filter((s) => s.stimulus_id !== stimulus.stimulus_id));
++      return;
++    }
++    try {
++      await api.unlinkStimulusFromQuestion(stimulus.stimulus_id, existing.question_id);
++      setLinkedStimuli((prev) => prev.filter((s) => s.stimulus_id !== stimulus.stimulus_id));
++      notify("Stimulus unlinked", "success");
++    } catch (err) {
++      notify("Could not unlink stimulus", "error", err instanceof Error ? err.message : "Failed to unlink stimulus.");
++    }
++  }
++
+   return (
+     <form ref={formRef} onSubmit={handleSubmit} onChange={() => setHasUnsavedChanges(true)} onClick={(event) => {
+       const button = (event.target as HTMLElement).closest("button");
+@@ -426,6 +507,64 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
+               </Panel>
+             }
+ 
++            <Panel>
++              <PanelHead
++                title="Stimulus"
++                action={
++                  <Button type="button" size="sm" variant="outline" onClick={() => setShowStimulusModal(true)}>
++                    <Plus /> Manage stimuli
++                  </Button>
++                }
++              />
++              <div className="p-5">
++                <Field label="Link existing stimulus">
++                  <Select
++                    onValueChange={(val) => {
++                      const s = stimulusList.find((x) => x.stimulus_id === val);
++                      if (s) {
++                        toggleLinkedStimulus(s);
++                      }
++                    }}
++                  >
++                    <SelectTrigger>
++                      <SelectValue placeholder={stimulusList.length === 0 ? "No stimuli available" : "Select stimulus to link"} />
++                    </SelectTrigger>
++                    <SelectContent>
++                      {stimulusList
++                        .filter((s) => !linkedStimuli.some((l) => l.stimulus_id === s.stimulus_id))
++                        .map((s) => (
++                          <SelectItem key={s.stimulus_id} value={s.stimulus_id}>
++                            {s.title || s.stimulus_id.slice(0, 8)}
++                          </SelectItem>
++                        ))}
++                    </SelectContent>
++                  </Select>
++                </Field>
++                {linkedStimuli.length > 0 && (
++                  <div className="mt-4 space-y-2">
++                    {linkedStimuli.map((s) => (
++                      <div key={s.stimulus_id} className="flex items-center justify-between rounded-md border border-border px-3 py-2">
++                        <span className="text-sm truncate">{s.title || s.stimulus_id.slice(0, 8)}</span>
++                        <Button
++                          type="button"
++                          size="sm"
++                          variant="ghost"
++                          className="text-destructive hover:bg-destructive/10 hover:text-destructive"
++                          onClick={() => handleUnlinkStimulus(s)}
++                          disabled={linking}
++                        >
++                          <Trash2 /> Unlink
++                        </Button>
++                      </div>
++                    ))}
++                  </div>
++                )}
++                {linkedStimuli.length === 0 && (
++                  <p className="mt-3 text-sm text-muted-foreground">No stimulus linked. Link one or manage stimuli.</p>
++                )}
++              </div>
++            </Panel>
++
+             <Panel>
+               <div className="flex items-center justify-between p-5">
+                 <div>
+@@ -465,6 +604,26 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
+           </Button>
+         </div>
+       )}
++      {showStimulusModal && (
++        <Modal
++          open
++          onClose={() => setShowStimulusModal(false)}
++          label="Manage stimuli"
++          className="max-w-5xl"
++          header="Manage stimuli"
++        >
++          <StimulusManager
++            courseId={config.course_id}
++            onSelect={(s) => {
++              toggleLinkedStimulus(s);
++              if (existing?.question_id) {
++                handleLinkStimulus(s);
++              }
++            }}
++          />
++        </Modal>
++      )}
++
+       {showLeavePrompt && (
+         <Modal
+           open
+diff --git a/frontend/src/components/StimulusEditor.tsx b/frontend/src/components/StimulusEditor.tsx
+new file mode 100644
+index 0000000..fbd47e9
+--- /dev/null
++++ b/frontend/src/components/StimulusEditor.tsx
+@@ -0,0 +1,80 @@
++import { useState, type FormEvent } from "react";
++import { BlockEditor, blocksToPayload, type EditableBlock } from "./BlockEditor";
++import type { StimulusWithContent } from "../api/types";
++import { Button } from "./ui/button";
++import { Input } from "./ui/input";
++import { Panel, PanelHead } from "./system";
++
++function toEditable(blocks: StimulusWithContent["blocks"] | null | undefined): EditableBlock[] {
++  if (!blocks || blocks.length === 0) return [];
++  return blocks
++    .slice()
++    .sort((a, b) => a.position - b.position)
++    .map((b) => ({ tempId: b.block_id, block_type: b.block_type, content: b.content }));
++}
++
++export interface StimulusEditorProps {
++  existing?: StimulusWithContent | null;
++  onSave: (data: { title: string | null; body: ReturnType<typeof blocksToPayload> }) => Promise<void> | void;
++  onCancel: () => void;
++  saving?: boolean;
++}
++
++export function StimulusEditor({ existing, onSave, onCancel, saving = false }: StimulusEditorProps) {
++  const [title, setTitle] = useState<string>(existing?.title ?? "");
++  const [blocks, setBlocks] = useState<EditableBlock[]>(() =>
++    toEditable(existing?.blocks)
++  );
++
++  const [submitting, setSubmitting] = useState(false);
++
++  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
++    e.preventDefault();
++    if (submitting || saving) return;
++    setSubmitting(true);
++    try {
++      await onSave({
++        title: title.trim() || null,
++        body: blocksToPayload(blocks),
++      });
++    } finally {
++      setSubmitting(false);
++    }
++  }
++
++  const isSaving = submitting || saving;
++
++  return (
++    <form onSubmit={handleSubmit} className="space-y-4">
++      <Panel>
++        <PanelHead title={existing ? "Edit stimulus" : "New stimulus"} />
++        <div className="space-y-4 p-4">
++          <div className="space-y-1.5">
++            <label className="label">Title (optional)</label>
++            <Input
++              value={title}
++              onChange={(e) => setTitle(e.target.value)}
++              placeholder="e.g. Stimulus 1: Circuit diagram"
++            />
++          </div>
++        </div>
++      </Panel>
++
++      <BlockEditor
++        label="Stimulus content"
++        blocks={blocks}
++        onChange={setBlocks}
++        note="Add text, figures, equations, tables, etc. for this stimulus."
++      />
++
++      <div className="flex justify-end gap-2">
++        <Button type="button" variant="outline" onClick={onCancel} disabled={isSaving}>
++          Cancel
++        </Button>
++        <Button type="submit" disabled={isSaving}>
++          {isSaving ? "Saving…" : existing ? "Save changes" : "Create stimulus"}
++        </Button>
++      </div>
++    </form>
++  );
++}
+diff --git a/frontend/src/components/StimulusManager.tsx b/frontend/src/components/StimulusManager.tsx
+new file mode 100644
+index 0000000..5ba934c
+--- /dev/null
++++ b/frontend/src/components/StimulusManager.tsx
+@@ -0,0 +1,193 @@
++import { useEffect, useState } from "react";
++import { Plus, Pencil, Trash2 } from "lucide-react";
++import { api } from "../api/client";
++import type { Stimulus, StimulusWithContent } from "../api/types";
++import { Panel, PanelHead } from "./system";
++import { Button } from "./ui/button";
++import { Modal, useConfirm } from "./ui/modal";
++import { notify } from "../lib/notifications";
++import { StimulusEditor } from "./StimulusEditor";
++
++interface StimulusManagerProps {
++  courseId: string;
++  onSelect?: (stimulus: Stimulus) => void;
++}
++
++export function StimulusManager({ courseId, onSelect }: StimulusManagerProps) {
++  const confirm = useConfirm();
++  const [stimuli, setStimuli] = useState<Stimulus[]>([]);
++  const [loading, setLoading] = useState(false);
++  const [showModal, setShowModal] = useState(false);
++  const [editing, setEditing] = useState<StimulusWithContent | null>(null);
++  const [saving, setSaving] = useState(false);
++
++  async function load() {
++    setLoading(true);
++    try {
++      const list = await api.listStimuliForCourse(courseId);
++      setStimuli(list);
++    } catch (err) {
++      notify("Could not load stimuli", "error", err instanceof Error ? err.message : "Failed to load stimuli.");
++    } finally {
++      setLoading(false);
++    }
++  }
++
++  useEffect(() => {
++    load();
++  }, [courseId]);
++
++  function openCreate() {
++    setEditing(null);
++    setShowModal(true);
++  }
++
++  async function openEdit(stimulus: Stimulus) {
++    try {
++      setSaving(true);
++      const full = await api.getStimulus(stimulus.stimulus_id);
++      setEditing(full);
++      setShowModal(true);
++    } catch (err) {
++      notify("Could not load stimulus", "error", err instanceof Error ? err.message : "Failed to load stimulus.");
++    } finally {
++      setSaving(false);
++    }
++  }
++
++  async function handleSave(data: { title: string | null; body: any[] }) {
++    setSaving(true);
++    try {
++      if (editing) {
++        await api.updateStimulus(editing.stimulus_id, {
++          title: data.title,
++          body: data.body,
++        });
++        notify("Stimulus updated", "success");
++      } else {
++        await api.createStimulus({
++          course_id: courseId,
++          title: data.title,
++          body: data.body,
++        });
++        notify("Stimulus created", "success");
++      }
++      setShowModal(false);
++      setEditing(null);
++      await load();
++    } catch (err) {
++      notify("Could not save stimulus", "error", err instanceof Error ? err.message : "Failed to save stimulus.");
++    } finally {
++      setSaving(false);
++    }
++  }
++
++  async function handleDelete(stimulus: Stimulus) {
++    const ok = await confirm({
++      title: "Delete this stimulus?",
++      description: "This stimulus will be removed and unlinked from any questions. This can't be undone.",
++      confirmLabel: "Delete stimulus",
++      destructive: true,
++    });
++    if (!ok) return;
++    try {
++      await api.deleteStimulus(stimulus.stimulus_id);
++      notify("Stimulus deleted", "success");
++      await load();
++    } catch (err) {
++      notify("Could not delete stimulus", "error", err instanceof Error ? err.message : "Failed to delete stimulus.");
++    }
++  }
++
++  return (
++    <Panel>
++      <PanelHead
++        title="Stimuli"
++        action={
++          <Button type="button" size="sm" onClick={openCreate}>
++            <Plus /> New stimulus
++          </Button>
++        }
++      />
++      <div className="p-4">
++        {loading && <p className="text-sm text-muted-foreground">Loading stimuli…</p>}
++        {!loading && stimuli.length === 0 && (
++          <p className="text-sm text-muted-foreground">No stimuli yet. Create one to attach to questions.</p>
++        )}
++        {!loading && stimuli.length > 0 && (
++          <div className="space-y-2">
++            {stimuli.map((stimulus) => (
++              <div
++                key={stimulus.stimulus_id}
++                className="flex items-center justify-between rounded-md border border-border px-3 py-2"
++              >
++                <div className="min-w-0">
++                  <p className="text-sm font-medium truncate">
++                    {stimulus.title || `Stimulus ${stimulus.stimulus_id.slice(0, 8)}`}
++                  </p>
++                  <p className="text-xs text-muted-foreground">
++                    {new Date(stimulus.created_at).toLocaleString()}
++                  </p>
++                </div>
++                <div className="flex gap-1">
++                  {onSelect && (
++                    <Button
++                      type="button"
++                      size="sm"
++                      variant="ghost"
++                      onClick={() => onSelect(stimulus)}
++                    >
++                      Select
++                    </Button>
++                  )}
++                  <Button
++                    type="button"
++                    size="icon"
++                    variant="ghost"
++                    title="Edit stimulus"
++                    onClick={() => openEdit(stimulus)}
++                  >
++                    <Pencil />
++                  </Button>
++                  <Button
++                    type="button"
++                    size="icon"
++                    variant="ghost"
++                    className="text-destructive hover:bg-destructive/10 hover:text-destructive"
++                    title="Delete stimulus"
++                    onClick={() => handleDelete(stimulus)}
++                  >
++                    <Trash2 />
++                  </Button>
++                </div>
++              </div>
++            ))}
++          </div>
++        )}
++      </div>
++
++      {showModal && (
++        <Modal
++          open
++          onClose={() => {
++            setShowModal(false);
++            setEditing(null);
++          }}
++          label={editing ? "Edit stimulus" : "New stimulus"}
++          className="max-w-4xl"
++          header={editing ? "Edit stimulus" : "New stimulus"}
++        >
++          <StimulusEditor
++            existing={editing}
++            onSave={handleSave}
++            onCancel={() => {
++              setShowModal(false);
++              setEditing(null);
++            }}
++            saving={saving}
++          />
++        </Modal>
++      )}
++    </Panel>
++  );
++}
+diff --git a/frontend/src/components/StimulusSideMenu.tsx b/frontend/src/components/StimulusSideMenu.tsx
+new file mode 100644
+index 0000000..e4c5a37
+--- /dev/null
++++ b/frontend/src/components/StimulusSideMenu.tsx
+@@ -0,0 +1,151 @@
++import { useEffect, useId, useRef } from "react";
++import { createPortal } from "react-dom";
++import { X } from "lucide-react";
++import type { StimulusWithContent } from "../api/types";
++import { BlockList } from "./QuestionReader";
++import { Button } from "./ui/button";
++import { cn } from "../lib/utils";
++
++const FOCUSABLE_SELECTOR = [
++  "a[href]",
++  "button:not([disabled])",
++  "input:not([disabled])",
++  "select:not([disabled])",
++  "textarea:not([disabled])",
++  "[tabindex]:not([tabindex='-1'])",
++].join(",");
++
++function focusableWithin(container: HTMLElement | null): HTMLElement[] {
++  if (!container) return [];
++  return Array.from(container.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter(
++    (el) => el.offsetParent !== null || el === document.activeElement
++  );
++}
++
++export interface StimulusSideMenuProps {
++  open: boolean;
++  onClose: () => void;
++  stimulus: StimulusWithContent | null;
++  className?: string;
++  title?: string | null;
++}
++
++export function StimulusSideMenu({
++  open,
++  onClose,
++  stimulus,
++  className,
++  title,
++}: StimulusSideMenuProps) {
++  const panelRef = useRef<HTMLDivElement>(null);
++  const generatedId = useId();
++  const titleId = `${generatedId}-title`;
++
++  const latest = useRef({ onClose });
++  useEffect(() => {
++    latest.current = { onClose };
++  });
++
++  useEffect(() => {
++    if (!open) return;
++    const previouslyFocused = document.activeElement as HTMLElement | null;
++    const focusTimer = window.setTimeout(() => {
++      const items = focusableWithin(panelRef.current);
++      const target = items[0] ?? panelRef.current;
++      target?.focus();
++    }, 0);
++
++    function onKeyDown(event: KeyboardEvent) {
++      if (event.key === "Escape") {
++        event.preventDefault();
++        event.stopPropagation();
++        latest.current.onClose();
++        return;
++      }
++      if (event.key !== "Tab") return;
++      const items = focusableWithin(panelRef.current);
++      const panel = panelRef.current;
++      if (items.length === 0) {
++        event.preventDefault();
++        panel?.focus();
++        return;
++      }
++      const first = items[0];
++      const last = items[items.length - 1];
++      const active = document.activeElement as HTMLElement | null;
++      const inside = panel != null && active != null && panel.contains(active);
++      if (!event.shiftKey && (active === last || !inside)) {
++        event.preventDefault();
++        first.focus();
++      } else if (event.shiftKey && (active === first || !inside)) {
++        event.preventDefault();
++        last.focus();
++      }
++    }
++
++    document.addEventListener("keydown", onKeyDown, true);
++    const previousOverflow = document.body.style.overflow;
++    document.body.style.overflow = "hidden";
++    return () => {
++      window.clearTimeout(focusTimer);
++      document.removeEventListener("keydown", onKeyDown, true);
++      document.body.style.overflow = previousOverflow;
++      if (previouslyFocused && document.contains(previouslyFocused)) {
++        previouslyFocused.focus();
++      }
++    };
++  }, [open]);
++
++  if (!open || !stimulus) return null;
++
++  const headerTitle = title ?? stimulus.title ?? "Stimulus";
++
++  return createPortal(
++    <div className="fixed inset-0 z-50">
++      <div
++        className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px] animate-in fade-in-0"
++        aria-hidden
++        onClick={onClose}
++      />
++      <div className="relative flex h-full justify-end">
++        <div
++          ref={panelRef}
++          role="dialog"
++          aria-modal="true"
++          aria-labelledby={titleId}
++          tabIndex={-1}
++          className={cn(
++            "panel flex h-full w-full max-w-lg flex-col overflow-hidden rounded-none border-0 border-l border-border shadow-lg animate-in slide-in-from-right duration-200",
++            className
++          )}
++        >
++          <header className="flex shrink-0 items-center justify-between gap-3 border-b border-border px-5 py-4">
++            <div className="min-w-0">
++              <h2 id={titleId} className="font-display text-lg font-semibold">
++                {headerTitle}
++              </h2>
++              {stimulus.title && title !== stimulus.title && (
++                <p className="mt-0.5 text-xs text-muted-foreground">
++                  {stimulus.stimulus_id.slice(0, 8)}
++                </p>
++              )}
++            </div>
++            <Button
++              size="icon"
++              variant="ghost"
++              aria-label="Close stimulus"
++              onClick={onClose}
++              className="shrink-0"
++            >
++              <X />
++            </Button>
++          </header>
++          <div className="flex-1 overflow-y-auto p-5">
++            <BlockList blocks={stimulus.blocks} />
++          </div>
++        </div>
++      </div>
++    </div>,
++    document.body
++  );
++}
+diff --git a/frontend/src/lib/data.ts b/frontend/src/lib/data.ts
+index 2da93ef..9bf7ce0 100644
+--- a/frontend/src/lib/data.ts
++++ b/frontend/src/lib/data.ts
+@@ -37,6 +37,9 @@ import type {
+   SessionPlanItem,
+   SessionTopicCoverage,
+   Source,
++  Stimulus,
++  StimulusBlock,
++  StimulusWithContent,
+   StudyProgress,
+   TestSectionInput,
+   TestSectionResult,
+@@ -739,6 +742,35 @@ async function hydrateQuestion(questionId: string): Promise<Question> {
+   return questionToOut(q, true);
+ }
+ 
++// ---------- stimulus serialization ----------
++
++function stimulusBlockOut(b: SqlRow): StimulusBlock {
++  return {
++    block_id: b.block_id,
++    slot: "body",
++    position: b.position,
++    block_type: b.block_type,
++    content: parseJson(b.content_json),
++  };
++}
++
++async function hydrateStimulus(stimulusId: string): Promise<StimulusWithContent> {
++  const s = await getFirst<SqlRow>("SELECT * FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
++  if (!s) throw new Error("Stimulus not found");
++  const blocks = await all<SqlRow>(
++    "SELECT block_id, position, block_type, content_json FROM stimulus_block WHERE stimulus_id = ? ORDER BY position",
++    [stimulusId]
++  );
++  return {
++    stimulus_id: s.stimulus_id,
++    course_id: s.course_id,
++    title: s.title ?? null,
++    created_at: s.created_at,
++    updated_at: s.updated_at,
++    blocks: blocks.map(stimulusBlockOut),
++  };
++}
++
+ async function hydrateQuestions(questionIds: string[]): Promise<Question[]> {
+   if (!questionIds.length) return [];
+   const queryInBatches = async (ids: string[], sql: (placeholders: string) => string) => {
+@@ -881,7 +913,7 @@ function sourceOutFrom(rows: SqlRow[]): Source | null {
+ 
+ // ---------- question CRUD ----------
+ 
+-type BlockPayload = { block_type: string; content: Record<string, any> };
++export type BlockPayload = { block_type: string; content: Record<string, any> };
+ 
+ export interface QuestionCreatePayload {
+   course_id?: string;
+@@ -929,6 +961,24 @@ async function insertBlocks(
+   return ids;
+ }
+ 
++async function insertStimulusBlocks(
++  stimulusId: string,
++  blocks: BlockPayload[] | undefined,
++  statements: Array<[string, any[]]>,
++  idPrefix = "blk"
++): Promise<string[]> {
++  const ids: string[] = [];
++  (blocks ?? []).forEach((b, i) => {
++    const blockId = newId(idPrefix);
++    ids.push(blockId);
++    statements.push([
++      "INSERT INTO stimulus_block (block_id, stimulus_id, position, block_type, content_json) VALUES (?, ?, ?, ?, ?)",
++      [blockId, stimulusId, i, b.block_type, JSON.stringify(b.content ?? {})],
++    ]);
++  });
++  return ids;
++}
++
+ async function getOrCreateTag(courseId: string, name: string): Promise<string> {
+   const row = await getFirst<SqlRow>("SELECT tag_id FROM tag WHERE course_id = ? AND name = ?", [
+     courseId,
+@@ -3071,3 +3121,133 @@ export async function deleteTest(testId: string): Promise<void> {
+   await deleteTestOutputs(testId);
+   await run("DELETE FROM generated_test WHERE test_id = ?", [testId]);
+ }
++
++// ---------- stimulus CRUD ----------
++
++export interface StimulusCreatePayload {
++  course_id: string;
++  title?: string | null;
++  body?: BlockPayload[];
++}
++
++export async function createStimulus(payload: StimulusCreatePayload): Promise<StimulusWithContent> {
++  const course = await courseRow(payload.course_id);
++  if (!course) throw new Error("Course not found");
++
++  const stimulusId = newId("stim");
++  const now = nowUtc();
++  await run(
++    `INSERT INTO stimulus (stimulus_id, course_id, title, created_at, updated_at)
++     VALUES (?, ?, ?, ?, ?)`,
++    [stimulusId, payload.course_id, payload.title ?? null, now, now]
++  );
++
++  const statements: Array<[string, any[]]> = [];
++  await insertStimulusBlocks(stimulusId, payload.body, statements);
++  if (statements.length) {
++    await runMany(statements);
++  }
++  return hydrateStimulus(stimulusId);
++}
++
++export async function updateStimulus(
++  stimulusId: string,
++  payload: Partial<StimulusCreatePayload>
++): Promise<StimulusWithContent> {
++  const existing = await getFirst<SqlRow>("SELECT * FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
++  if (!existing) throw new Error("Stimulus not found");
++
++  const sets: string[] = [];
++  const params: any[] = [];
++  if (payload.title !== undefined) {
++    sets.push("title = ?");
++    params.push(payload.title ?? null);
++  }
++  if (sets.length) {
++    sets.push("updated_at = ?");
++    params.push(nowUtc());
++    params.push(stimulusId);
++    await run(`UPDATE stimulus SET ${sets.join(", ")} WHERE stimulus_id = ?`, params);
++  } else if (payload.body !== undefined) {
++    await run("UPDATE stimulus SET updated_at = ? WHERE stimulus_id = ?", [nowUtc(), stimulusId]);
++  }
++
++  if (payload.body !== undefined) {
++    await run("DELETE FROM stimulus_block WHERE stimulus_id = ?", [stimulusId]);
++    const statements: Array<[string, any[]]> = [];
++    await insertStimulusBlocks(stimulusId, payload.body, statements);
++    if (statements.length) {
++      await runMany(statements);
++    }
++  }
++
++  return hydrateStimulus(stimulusId);
++}
++
++export async function deleteStimulus(stimulusId: string): Promise<void> {
++  const existing = await getFirst<SqlRow>("SELECT stimulus_id FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
++  if (!existing) return;
++  await run("DELETE FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
++}
++
++export async function getStimulus(stimulusId: string): Promise<StimulusWithContent | null> {
++  const s = await getFirst<SqlRow>("SELECT * FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
++  if (!s) return null;
++  const blocks = await all<SqlRow>(
++    "SELECT block_id, position, block_type, content_json FROM stimulus_block WHERE stimulus_id = ? ORDER BY position",
++    [stimulusId]
++  );
++  return {
++    stimulus_id: s.stimulus_id,
++    course_id: s.course_id,
++    title: s.title ?? null,
++    created_at: s.created_at,
++    updated_at: s.updated_at,
++    blocks: blocks.map(stimulusBlockOut),
++  };
++}
++
++export async function listStimuliForCourse(courseId: string): Promise<Stimulus[]> {
++  const rows = await all<SqlRow>(
++    `SELECT stimulus_id, course_id, title, created_at, updated_at
++     FROM stimulus WHERE course_id = ? ORDER BY created_at DESC, stimulus_id`,
++    [courseId]
++  );
++  return rows.map((r) => ({
++    stimulus_id: r.stimulus_id,
++    course_id: r.course_id,
++    title: r.title ?? null,
++    created_at: r.created_at,
++    updated_at: r.updated_at,
++  }));
++}
++
++export async function getStimuliForQuestion(questionId: string): Promise<Stimulus[]> {
++  const rows = await all<SqlRow>(
++    `SELECT s.stimulus_id, s.course_id, s.title, s.created_at, s.updated_at
++     FROM stimulus s JOIN question_stimulus qs ON qs.stimulus_id = s.stimulus_id
++     WHERE qs.question_id = ? ORDER BY s.created_at DESC, s.stimulus_id`,
++    [questionId]
++  );
++  return rows.map((r) => ({
++    stimulus_id: r.stimulus_id,
++    course_id: r.course_id,
++    title: r.title ?? null,
++    created_at: r.created_at,
++    updated_at: r.updated_at,
++  }));
++}
++
++export async function linkStimulusToQuestion(stimulusId: string, questionId: string): Promise<void> {
++  await run(
++    `INSERT OR IGNORE INTO question_stimulus (question_id, stimulus_id) VALUES (?, ?)`,
++    [questionId, stimulusId]
++  );
++}
++
++export async function unlinkStimulusFromQuestion(stimulusId: string, questionId: string): Promise<void> {
++  await run(
++    `DELETE FROM question_stimulus WHERE question_id = ? AND stimulus_id = ?`,
++    [questionId, stimulusId]
++  );
++}
+diff --git a/frontend/src/lib/db/schema.ts b/frontend/src/lib/db/schema.ts
+index 2cdd359..97433dc 100644
+--- a/frontend/src/lib/db/schema.ts
++++ b/frontend/src/lib/db/schema.ts
+@@ -99,6 +99,31 @@ CREATE TABLE IF NOT EXISTS content_block (
+ );
+ CREATE INDEX IF NOT EXISTS idx_content_block_question ON content_block(question_id, slot, position);
+ 
++CREATE TABLE IF NOT EXISTS stimulus (
++  stimulus_id TEXT PRIMARY KEY,
++  course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
++  title TEXT,
++  created_at TEXT NOT NULL,
++  updated_at TEXT NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS stimulus_block (
++  block_id TEXT PRIMARY KEY,
++  stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
++  position INTEGER NOT NULL,
++  block_type TEXT NOT NULL,
++  content_json TEXT NOT NULL
++);
++CREATE INDEX IF NOT EXISTS idx_stimulus_block_stim ON stimulus_block(stimulus_id, position);
++
++CREATE TABLE IF NOT EXISTS question_stimulus (
++  question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
++  stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
++  PRIMARY KEY (question_id, stimulus_id)
++);
++CREATE INDEX IF NOT EXISTS idx_qs_stim ON question_stimulus(stimulus_id);
++CREATE INDEX IF NOT EXISTS idx_qs_q ON question_stimulus(question_id);
++
+ CREATE TABLE IF NOT EXISTS question_classification (
+   question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
+   node_id TEXT NOT NULL REFERENCES course_node(node_id) ON DELETE CASCADE,
+@@ -239,7 +264,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
+  * version the persisted blobs, and to the per-course `schema_version` that
+  * describes the question format a course expects.
+  */
+-export const SCHEMA_VERSION = 1;
++export const SCHEMA_VERSION = 2;
+ 
+ export interface Migration {
+   id: number;
+@@ -303,4 +328,34 @@ export const MIGRATIONS: Migration[] = [
+       );
+     `,
+   },
++  {
++    id: 2,
++    name: "stimulus-support",
++    sql: `
++      CREATE TABLE IF NOT EXISTS stimulus (
++        stimulus_id TEXT PRIMARY KEY,
++        course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
++        title TEXT,
++        created_at TEXT NOT NULL,
++        updated_at TEXT NOT NULL
++      );
++
++      CREATE TABLE IF NOT EXISTS stimulus_block (
++        block_id TEXT PRIMARY KEY,
++        stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
++        position INTEGER NOT NULL,
++        block_type TEXT NOT NULL,
++        content_json TEXT NOT NULL
++      );
++      CREATE INDEX IF NOT EXISTS idx_stimulus_block_stim ON stimulus_block(stimulus_id, position);
++
++      CREATE TABLE IF NOT EXISTS question_stimulus (
++        question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
++        stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
++        PRIMARY KEY (question_id, stimulus_id)
++      );
++      CREATE INDEX IF NOT EXISTS idx_qs_stim ON question_stimulus(stimulus_id);
++      CREATE INDEX IF NOT EXISTS idx_qs_q ON question_stimulus(question_id);
++    `,
++  },
+ ];
+diff --git a/frontend/src/pages/Practice.tsx b/frontend/src/pages/Practice.tsx
+index bf537b7..4fc7433 100644
+--- a/frontend/src/pages/Practice.tsx
++++ b/frontend/src/pages/Practice.tsx
+@@ -6,7 +6,7 @@ import { api } from "../api/client";
+ import { useActiveCourse } from "../hooks/useActiveCourse";
+ import { useCourseConfig } from "../hooks/useCourseConfig";
+ import { flattenCounts } from "../components/NodeTree";
+-import type { PracticeFilters, Question, SelfRating, SessionMode } from "../api/types";
++import type { PracticeFilters, Question, SelfRating, SessionMode, StimulusWithContent } from "../api/types";
+ import { InkLoader, PageHeader, Panel } from "../components/system";
+ import { FilterMenu } from "../components/FilterMenu";
+ import { Button } from "../components/ui/button";
+@@ -53,6 +53,7 @@ export function Practice() {
+   const [stage, setStage] = useState<PracticeStage>("prompt");
+   const [planItem, setPlanItem] = useState<{ reason_text?: string; reason_kind?: string } | null>(null);
+   const [sessionNote, setSessionNote] = useState<string | null>(null);
++  const [stimuli, setStimuli] = useState<StimulusWithContent[]>([]);
+   const [loading, setLoading] = useState(false);
+ 
+   const selectedNodeIds = useMemo(
+@@ -166,6 +167,7 @@ export function Practice() {
+         const question = await api.getQuestion(questionId);
+         setCurrent(question);
+         setStage("prompt");
++        setStimuli([]);
+         const summary = await api.getPracticeSession(id);
+         const item = summary?.plan.find((p) => p.question_id === questionId) ?? null;
+         setPlanItem(item ? { reason_text: item.reason_text, reason_kind: item.reason_kind } : null);
+@@ -174,6 +176,13 @@ export function Practice() {
+           .recordAttempt({ session_id: id, question_id: questionId, status: "seen" })
+           .catch(() => {});
+         queryClient.invalidateQueries({ queryKey: ["recent-questions", courseId] });
++        try {
++          const linked = await api.getStimuliForQuestion(questionId);
++          const full = await Promise.all(linked.map((s: any) => api.getStimulus(s.stimulus_id).catch(() => null)));
++          setStimuli(full.filter((s): s is StimulusWithContent => !!s));
++        } catch {
++          // Stimulus is optional: practice continues without it.
++        }
+       } catch (e) {
+         notify("Could not load question", "error", e instanceof Error ? e.message : "Could not load that question.");
+         setCurrent(null);
+@@ -463,6 +472,7 @@ export function Practice() {
+                     onNext={advance}
+                     nextLabel="Next question"
+                     footerNote={sessionNote ?? undefined}
++                    stimuli={stimuli}
+                     callbacks={{
+                       onConfirmAttempt,
+                       onReveal,
+
+
+=== UNTRACKED FILES ===
+diff --git a/frontend/src/components/StimulusEditor.tsx b/frontend/src/components/StimulusEditor.tsx
+new file mode 100644
+index 0000000..fbd47e9
+--- /dev/null
++++ b/frontend/src/components/StimulusEditor.tsx
+@@ -0,0 +1,80 @@
++import { useState, type FormEvent } from "react";
++import { BlockEditor, blocksToPayload, type EditableBlock } from "./BlockEditor";
++import type { StimulusWithContent } from "../api/types";
++import { Button } from "./ui/button";
++import { Input } from "./ui/input";
++import { Panel, PanelHead } from "./system";
++
++function toEditable(blocks: StimulusWithContent["blocks"] | null | undefined): EditableBlock[] {
++  if (!blocks || blocks.length === 0) return [];
++  return blocks
++    .slice()
++    .sort((a, b) => a.position - b.position)
++    .map((b) => ({ tempId: b.block_id, block_type: b.block_type, content: b.content }));
++}
++
++export interface StimulusEditorProps {
++  existing?: StimulusWithContent | null;
++  onSave: (data: { title: string | null; body: ReturnType<typeof blocksToPayload> }) => Promise<void> | void;
++  onCancel: () => void;
++  saving?: boolean;
++}
++
++export function StimulusEditor({ existing, onSave, onCancel, saving = false }: StimulusEditorProps) {
++  const [title, setTitle] = useState<string>(existing?.title ?? "");
++  const [blocks, setBlocks] = useState<EditableBlock[]>(() =>
++    toEditable(existing?.blocks)
++  );
++
++  const [submitting, setSubmitting] = useState(false);
++
++  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
++    e.preventDefault();
++    if (submitting || saving) return;
++    setSubmitting(true);
++    try {
++      await onSave({
++        title: title.trim() || null,
++        body: blocksToPayload(blocks),
++      });
++    } finally {
++      setSubmitting(false);
++    }
++  }
++
++  const isSaving = submitting || saving;
++
++  return (
++    <form onSubmit={handleSubmit} className="space-y-4">
++      <Panel>
++        <PanelHead title={existing ? "Edit stimulus" : "New stimulus"} />
++        <div className="space-y-4 p-4">
++          <div className="space-y-1.5">
++            <label className="label">Title (optional)</label>
++            <Input
++              value={title}
++              onChange={(e) => setTitle(e.target.value)}
++              placeholder="e.g. Stimulus 1: Circuit diagram"
++            />
++          </div>
++        </div>
++      </Panel>
++
++      <BlockEditor
++        label="Stimulus content"
++        blocks={blocks}
++        onChange={setBlocks}
++        note="Add text, figures, equations, tables, etc. for this stimulus."
++      />
++
++      <div className="flex justify-end gap-2">
++        <Button type="button" variant="outline" onClick={onCancel} disabled={isSaving}>
++          Cancel
++        </Button>
++        <Button type="submit" disabled={isSaving}>
++          {isSaving ? "Saving…" : existing ? "Save changes" : "Create stimulus"}
++        </Button>
++      </div>
++    </form>
++  );
++}
+diff --git a/frontend/src/components/StimulusManager.tsx b/frontend/src/components/StimulusManager.tsx
+new file mode 100644
+index 0000000..5ba934c
+--- /dev/null
++++ b/frontend/src/components/StimulusManager.tsx
+@@ -0,0 +1,193 @@
++import { useEffect, useState } from "react";
++import { Plus, Pencil, Trash2 } from "lucide-react";
++import { api } from "../api/client";
++import type { Stimulus, StimulusWithContent } from "../api/types";
++import { Panel, PanelHead } from "./system";
++import { Button } from "./ui/button";
++import { Modal, useConfirm } from "./ui/modal";
++import { notify } from "../lib/notifications";
++import { StimulusEditor } from "./StimulusEditor";
++
++interface StimulusManagerProps {
++  courseId: string;
++  onSelect?: (stimulus: Stimulus) => void;
++}
++
++export function StimulusManager({ courseId, onSelect }: StimulusManagerProps) {
++  const confirm = useConfirm();
++  const [stimuli, setStimuli] = useState<Stimulus[]>([]);
++  const [loading, setLoading] = useState(false);
++  const [showModal, setShowModal] = useState(false);
++  const [editing, setEditing] = useState<StimulusWithContent | null>(null);
++  const [saving, setSaving] = useState(false);
++
++  async function load() {
++    setLoading(true);
++    try {
++      const list = await api.listStimuliForCourse(courseId);
++      setStimuli(list);
++    } catch (err) {
++      notify("Could not load stimuli", "error", err instanceof Error ? err.message : "Failed to load stimuli.");
++    } finally {
++      setLoading(false);
++    }
++  }
++
++  useEffect(() => {
++    load();
++  }, [courseId]);
++
++  function openCreate() {
++    setEditing(null);
++    setShowModal(true);
++  }
++
++  async function openEdit(stimulus: Stimulus) {
++    try {
++      setSaving(true);
++      const full = await api.getStimulus(stimulus.stimulus_id);
++      setEditing(full);
++      setShowModal(true);
++    } catch (err) {
++      notify("Could not load stimulus", "error", err instanceof Error ? err.message : "Failed to load stimulus.");
++    } finally {
++      setSaving(false);
++    }
++  }
++
++  async function handleSave(data: { title: string | null; body: any[] }) {
++    setSaving(true);
++    try {
++      if (editing) {
++        await api.updateStimulus(editing.stimulus_id, {
++          title: data.title,
++          body: data.body,
++        });
++        notify("Stimulus updated", "success");
++      } else {
++        await api.createStimulus({
++          course_id: courseId,
++          title: data.title,
++          body: data.body,
++        });
++        notify("Stimulus created", "success");
++      }
++      setShowModal(false);
++      setEditing(null);
++      await load();
++    } catch (err) {
++      notify("Could not save stimulus", "error", err instanceof Error ? err.message : "Failed to save stimulus.");
++    } finally {
++      setSaving(false);
++    }
++  }
++
++  async function handleDelete(stimulus: Stimulus) {
++    const ok = await confirm({
++      title: "Delete this stimulus?",
++      description: "This stimulus will be removed and unlinked from any questions. This can't be undone.",
++      confirmLabel: "Delete stimulus",
++      destructive: true,
++    });
++    if (!ok) return;
++    try {
++      await api.deleteStimulus(stimulus.stimulus_id);
++      notify("Stimulus deleted", "success");
++      await load();
++    } catch (err) {
++      notify("Could not delete stimulus", "error", err instanceof Error ? err.message : "Failed to delete stimulus.");
++    }
++  }
++
++  return (
++    <Panel>
++      <PanelHead
++        title="Stimuli"
++        action={
++          <Button type="button" size="sm" onClick={openCreate}>
++            <Plus /> New stimulus
++          </Button>
++        }
++      />
++      <div className="p-4">
++        {loading && <p className="text-sm text-muted-foreground">Loading stimuli…</p>}
++        {!loading && stimuli.length === 0 && (
++          <p className="text-sm text-muted-foreground">No stimuli yet. Create one to attach to questions.</p>
++        )}
++        {!loading && stimuli.length > 0 && (
++          <div className="space-y-2">
++            {stimuli.map((stimulus) => (
++              <div
++                key={stimulus.stimulus_id}
++                className="flex items-center justify-between rounded-md border border-border px-3 py-2"
++              >
++                <div className="min-w-0">
++                  <p className="text-sm font-medium truncate">
++                    {stimulus.title || `Stimulus ${stimulus.stimulus_id.slice(0, 8)}`}
++                  </p>
++                  <p className="text-xs text-muted-foreground">
++                    {new Date(stimulus.created_at).toLocaleString()}
++                  </p>
++                </div>
++                <div className="flex gap-1">
++                  {onSelect && (
++                    <Button
++                      type="button"
++                      size="sm"
++                      variant="ghost"
++                      onClick={() => onSelect(stimulus)}
++                    >
++                      Select
++                    </Button>
++                  )}
++                  <Button
++                    type="button"
++                    size="icon"
++                    variant="ghost"
++                    title="Edit stimulus"
++                    onClick={() => openEdit(stimulus)}
++                  >
++                    <Pencil />
++                  </Button>
++                  <Button
++                    type="button"
++                    size="icon"
++                    variant="ghost"
++                    className="text-destructive hover:bg-destructive/10 hover:text-destructive"
++                    title="Delete stimulus"
++                    onClick={() => handleDelete(stimulus)}
++                  >
++                    <Trash2 />
++                  </Button>
++                </div>
++              </div>
++            ))}
++          </div>
++        )}
++      </div>
++
++      {showModal && (
++        <Modal
++          open
++          onClose={() => {
++            setShowModal(false);
++            setEditing(null);
++          }}
++          label={editing ? "Edit stimulus" : "New stimulus"}
++          className="max-w-4xl"
++          header={editing ? "Edit stimulus" : "New stimulus"}
++        >
++          <StimulusEditor
++            existing={editing}
++            onSave={handleSave}
++            onCancel={() => {
++              setShowModal(false);
++              setEditing(null);
++            }}
++            saving={saving}
++          />
++        </Modal>
++      )}
++    </Panel>
++  );
++}
+diff --git a/frontend/src/components/StimulusSideMenu.tsx b/frontend/src/components/StimulusSideMenu.tsx
+new file mode 100644
+index 0000000..e4c5a37
+--- /dev/null
++++ b/frontend/src/components/StimulusSideMenu.tsx
+@@ -0,0 +1,151 @@
++import { useEffect, useId, useRef } from "react";
++import { createPortal } from "react-dom";
++import { X } from "lucide-react";
++import type { StimulusWithContent } from "../api/types";
++import { BlockList } from "./QuestionReader";
++import { Button } from "./ui/button";
++import { cn } from "../lib/utils";
++
++const FOCUSABLE_SELECTOR = [
++  "a[href]",
++  "button:not([disabled])",
++  "input:not([disabled])",
++  "select:not([disabled])",
++  "textarea:not([disabled])",
++  "[tabindex]:not([tabindex='-1'])",
++].join(",");
++
++function focusableWithin(container: HTMLElement | null): HTMLElement[] {
++  if (!container) return [];
++  return Array.from(container.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter(
++    (el) => el.offsetParent !== null || el === document.activeElement
++  );
++}
++
++export interface StimulusSideMenuProps {
++  open: boolean;
++  onClose: () => void;
++  stimulus: StimulusWithContent | null;
++  className?: string;
++  title?: string | null;
++}
++
++export function StimulusSideMenu({
++  open,
++  onClose,
++  stimulus,
++  className,
++  title,
++}: StimulusSideMenuProps) {
++  const panelRef = useRef<HTMLDivElement>(null);
++  const generatedId = useId();
++  const titleId = `${generatedId}-title`;
++
++  const latest = useRef({ onClose });
++  useEffect(() => {
++    latest.current = { onClose };
++  });
++
++  useEffect(() => {
++    if (!open) return;
++    const previouslyFocused = document.activeElement as HTMLElement | null;
++    const focusTimer = window.setTimeout(() => {
++      const items = focusableWithin(panelRef.current);
++      const target = items[0] ?? panelRef.current;
++      target?.focus();
++    }, 0);
++
++    function onKeyDown(event: KeyboardEvent) {
++      if (event.key === "Escape") {
++        event.preventDefault();
++        event.stopPropagation();
++        latest.current.onClose();
++        return;
++      }
++      if (event.key !== "Tab") return;
++      const items = focusableWithin(panelRef.current);
++      const panel = panelRef.current;
++      if (items.length === 0) {
++        event.preventDefault();
++        panel?.focus();
++        return;
++      }
++      const first = items[0];
++      const last = items[items.length - 1];
++      const active = document.activeElement as HTMLElement | null;
++      const inside = panel != null && active != null && panel.contains(active);
++      if (!event.shiftKey && (active === last || !inside)) {
++        event.preventDefault();
++        first.focus();
++      } else if (event.shiftKey && (active === first || !inside)) {
++        event.preventDefault();
++        last.focus();
++      }
++    }
++
++    document.addEventListener("keydown", onKeyDown, true);
++    const previousOverflow = document.body.style.overflow;
++    document.body.style.overflow = "hidden";
++    return () => {
++      window.clearTimeout(focusTimer);
++      document.removeEventListener("keydown", onKeyDown, true);
++      document.body.style.overflow = previousOverflow;
++      if (previouslyFocused && document.contains(previouslyFocused)) {
++        previouslyFocused.focus();
++      }
++    };
++  }, [open]);
++
++  if (!open || !stimulus) return null;
++
++  const headerTitle = title ?? stimulus.title ?? "Stimulus";
++
++  return createPortal(
++    <div className="fixed inset-0 z-50">
++      <div
++        className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px] animate-in fade-in-0"
++        aria-hidden
++        onClick={onClose}
++      />
++      <div className="relative flex h-full justify-end">
++        <div
++          ref={panelRef}
++          role="dialog"
++          aria-modal="true"
++          aria-labelledby={titleId}
++          tabIndex={-1}
++          className={cn(
++            "panel flex h-full w-full max-w-lg flex-col overflow-hidden rounded-none border-0 border-l border-border shadow-lg animate-in slide-in-from-right duration-200",
++            className
++          )}
++        >
++          <header className="flex shrink-0 items-center justify-between gap-3 border-b border-border px-5 py-4">
++            <div className="min-w-0">
++              <h2 id={titleId} className="font-display text-lg font-semibold">
++                {headerTitle}
++              </h2>
++              {stimulus.title && title !== stimulus.title && (
++                <p className="mt-0.5 text-xs text-muted-foreground">
++                  {stimulus.stimulus_id.slice(0, 8)}
++                </p>
++              )}
++            </div>
++            <Button
++              size="icon"
++              variant="ghost"
++              aria-label="Close stimulus"
++              onClick={onClose}
++              className="shrink-0"
++            >
++              <X />
++            </Button>
++          </header>
++          <div className="flex-1 overflow-y-auto p-5">
++            <BlockList blocks={stimulus.blocks} />
++          </div>
++        </div>
++      </div>
++    </div>,
++    document.body
++  );
++}

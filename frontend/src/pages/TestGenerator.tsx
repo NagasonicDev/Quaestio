@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
-import { ArrowDown, ArrowUp, Download, Eye, FileText, Plus, Printer, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, BookOpen, Download, Eye, FileText, Plus, Printer, Trash2 } from "lucide-react";
 import { api, type GeneratedTestMeta } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
@@ -15,7 +15,54 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { effectiveNodeFilterIds } from "../lib/nodeFilters";
 import { beginTestGeneration, updateTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
 import type { QuestionCountsResponse } from "../api/types";
-import { notify } from "../lib/notifications";
+import { notify, startOperationNotification } from "../lib/notifications";
+
+// ---- Section marks configuration (edit these) ----------------------------
+const MIN_MARKS = 5; // lowest marks target allowed for a section
+const MAX_MARKS = 200; // highest marks target allowed for a section
+const DEFAULT_MARKS = 20; // starting marks target for new sections
+const MARKS_SLIDER_STEP = 4; // slider increment (typed values can be any whole number)
+// ---------------------------------------------------------------------------
+
+function clampMarks(value: number) {
+  return Math.min(MAX_MARKS, Math.max(MIN_MARKS, Math.round(value)));
+}
+
+function SectionMarksInput({ value, label, onChange }: { value: number; label: string; onChange: (marks: number) => void }) {
+  const [draft, setDraft] = useState(String(value));
+  // Keep the text box in sync when the slider (or anything else) changes the value.
+  useEffect(() => setDraft(String(value)), [value]);
+
+  function handleChange(raw: string) {
+    if (!/^\d*$/.test(raw)) return;
+    setDraft(raw);
+    const n = Number(raw);
+    if (raw !== "" && n >= MIN_MARKS && n <= MAX_MARKS) onChange(n);
+  }
+  function commit() {
+    if (draft === "") {
+      setDraft(String(value));
+      return;
+    }
+    const clamped = clampMarks(Number(draft));
+    setDraft(String(clamped));
+    onChange(clamped);
+  }
+
+  return (
+    <Input
+      aria-label={label}
+      className="h-8 w-20 text-right font-mono"
+      inputMode="numeric"
+      value={draft}
+      onChange={(e) => handleChange(e.target.value)}
+      onBlur={commit}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") e.currentTarget.blur();
+      }}
+    />
+  );
+}
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString(undefined, { day: "numeric", month: "short", year: "numeric" });
@@ -54,7 +101,7 @@ export function TestGenerator() {
   const nextId = useRef(2);
 
   const [sections, setSections] = useState<SectionDraft[]>([
-    { id: 1, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {}, marks: 20 },
+    { id: 1, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {}, marks: DEFAULT_MARKS },
   ]);
   const [format, setFormat] = useState<"docx" | "pdf">("docx");
   const [shuffle, setShuffle] = useState(true);
@@ -183,7 +230,7 @@ export function TestGenerator() {
     };
   }, [sections, availability]);
 
-  const allSectionsValid = sections.length > 0 && sections.every((s) => s.marks >= 5 && s.marks <= 80);
+  const allSectionsValid = sections.length > 0 && sections.every((s) => s.marks >= MIN_MARKS && s.marks <= MAX_MARKS);
 
   useEffect(() => {
     if (!result) {
@@ -206,6 +253,32 @@ export function TestGenerator() {
       notify("Test downloaded", "success", test.title);
     } catch (e) {
       notify("Could not download test", "error", e instanceof Error ? e.message : "Download failed.");
+    } finally {
+      setDownloading(null);
+    }
+  }
+
+  function markSolutionsAvailable(testId: string) {
+    setResult((r) => (r && r.test_id === testId ? { ...r, solutions_available: true } : r));
+    qc.setQueryData<GeneratedTestMeta[]>(["tests", courseId], (prev) =>
+      prev?.map((t) => (t.test_id === testId ? { ...t, solutions_available: true } : t))
+    );
+  }
+
+  async function handleSolutions(test: GeneratedTestMeta) {
+    setDownloading(`${test.test_id}:solutions`);
+    const task = startOperationNotification("Generating solutions…");
+    try {
+      if (!test.solutions_available) {
+        await api.generateTestSolutions(test.test_id, (completed, total) => {
+          task.progress(total ? (completed / total) * 100 : 0);
+        });
+        markSolutionsAvailable(test.test_id);
+      }
+      await downloadTestFile(test.test_id, "solutions", test.format as "docx" | "pdf");
+      task.succeed("Solutions ready", test.title);
+    } catch (e) {
+      task.fail("Could not create solutions", e instanceof Error ? e.message : "Download failed.");
     } finally {
       setDownloading(null);
     }
@@ -238,7 +311,7 @@ export function TestGenerator() {
   function addSection() {
     setSections((prev) => [
       ...prev,
-      { id: nextId.current++, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {}, marks: 20 },
+      { id: nextId.current++, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {}, marks: DEFAULT_MARKS },
     ]);
   }
   function removeSection(id: number) {
@@ -408,10 +481,13 @@ export function TestGenerator() {
                         placeholder="Section I (optional)"
                       />
                     </Field>
-                    <div className="w-64 max-w-full">
-                      <Field label={`Section marks · ${sec.marks}`}>
-                        <input aria-label={`Section ${index + 1} marks`} className="mt-2 h-2 w-full cursor-pointer appearance-none rounded-full bg-muted accent-primary" type="range" min={5} max={80} step={1} value={sec.marks} onChange={(e) => updateSection(sec.id, { marks: Number(e.target.value) })} />
-                        <div className="mt-1 flex justify-between font-mono text-[10px] text-muted-foreground"><span>5</span><span>80 marks</span></div>
+                    <div className="w-80 max-w-full">
+                      <Field label="Section marks">
+                        <div className="mt-2 flex items-center gap-3">
+                          <input aria-label={`Section ${index + 1} marks slider`} className="h-2 min-w-0 flex-1 cursor-pointer appearance-none rounded-full bg-muted accent-primary" type="range" min={MIN_MARKS} max={MAX_MARKS} step={MARKS_SLIDER_STEP} value={sec.marks} onChange={(e) => updateSection(sec.id, { marks: Number(e.target.value) })} />
+                          <SectionMarksInput label={`Section ${index + 1} marks`} value={sec.marks} onChange={(marks) => updateSection(sec.id, { marks })} />
+                        </div>
+                        <div className="mt-1 flex justify-between pr-[92px] font-mono text-[10px] text-muted-foreground"><span>{MIN_MARKS}</span><span>{MAX_MARKS} marks</span></div>
                       </Field>
                     </div>
                     <div className="flex items-center gap-1 pb-0.5">
@@ -512,6 +588,10 @@ export function TestGenerator() {
                 note={`${result.question_count} questions · ${result.achieved_marks} marks`}
                 action={
                   <div className="flex gap-1.5">
+                    <Button size="sm" variant="outline" disabled={!!downloading} onClick={() => handleSolutions(result)}>
+                      <BookOpen />
+                      {downloading === `${result.test_id}:solutions` ? "Preparing…" : "Solutions"}
+                    </Button>
                     <Button size="sm" variant="outline" disabled={!!downloading} onClick={() => handleDownload(result)}>
                       <Download />
                       {downloading === `${result.test_id}:test` ? "Downloading…" : "Download paper"}
@@ -598,6 +678,15 @@ export function TestGenerator() {
                         onClick={() => handleDownload(t)}
                       >
                         <FileText />
+                      </Button>
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        title="Solutions"
+                        disabled={!!downloading}
+                        onClick={() => handleSolutions(t)}
+                      >
+                        <BookOpen />
                       </Button>
                       <Button
                         size="icon"

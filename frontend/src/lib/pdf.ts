@@ -817,7 +817,7 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
 }
 
 /** Build a separate answer and marking guide for a previously generated paper. */
-export async function buildPdfSolutions(title: string, sections: DocSection[]): Promise<Blob> {
+export async function buildPdfSolutions(title: string, sections: DocSection[], onProgress?: (completed: number, total: number) => void): Promise<Blob> {
   const pdf = await PDFDocument.create();
   const fonts = await embedUnicodeFonts(pdf);
   const w = new Writer(pdf, fonts);
@@ -853,6 +853,8 @@ export async function buildPdfSolutions(title: string, sections: DocSection[]): 
       w.ensure(LINE_H(13) * 2);
       w.text(`Question ${number}`, { font: w.fonts.bold, size: 13 });
       w.spacer(3);
+      drawSourceLine(w, q);
+      w.spacer(3);
       await appendSlot("Answer", q.answer);
       await appendSlot("Solution", q.solution);
       await appendSlot("Marking criteria", q.marking_criteria);
@@ -861,6 +863,10 @@ export async function buildPdfSolutions(title: string, sections: DocSection[]): 
         await appendSlot(`${label} — Answer`, part.answer);
         await appendSlot(`${label} — Solution`, part.solution);
         await appendSlot(`${label} — Marking criteria`, part.marking_criteria);
+      }
+      if (onProgress) {
+        onProgress(number, questions.length);
+        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       }
     }
   }
