@@ -635,12 +635,18 @@ async function renderPaperQuestion(w: Writer, q: Question, sharedImages?: Map<st
   drawSourceLine(w, q);
 }
 
+export interface PdfStimulusItem {
+  stimulus: import("../api/types").StimulusWithContent;
+  questionNumbers: number[];
+}
+
 export interface PdfOptions {
   title: string;
   courseName: string;
   achievedMarks: number;
   sections: DocSection[];
   resolvedImages?: Map<string, ResolvedImage>;
+  stimuli?: PdfStimulusItem[];
   onQuestionProgress?: (completed: number, total: number) => void;
 }
 
@@ -776,6 +782,34 @@ export async function buildPdfPaper(options: PdfOptions): Promise<Blob> {
       size: EXAM.font.bodyPt,
       align: "center",
     });
+  }
+  if (options.stimuli?.length) {
+    w.newPage();
+    w.spacer(10);
+    w.text("Stimulus Material", { font: w.fonts.bold, size: EXAM.font.titlePt });
+    w.rule();
+    for (let i = 0; i < options.stimuli.length; i++) {
+      const item = options.stimuli[i];
+      const label = item.stimulus.title ? `Stimulus ${i + 1}: ${item.stimulus.title}` : `Stimulus ${i + 1}`;
+      const refs = item.questionNumbers.length
+        ? ` (Referenced by Question${item.questionNumbers.length > 1 ? "s" : ""}: ${item.questionNumbers.join(", ")})`
+        : "";
+      w.spacer(8);
+      w.text(`${label}${refs}`, { font: w.fonts.bold, size: EXAM.font.bodyPt });
+      const stimulusImages = new Map<string, ResolvedImage>([
+        ...(await resolveImages(item.stimulus.blocks)),
+        ...(await resolveEquations(item.stimulus.blocks)),
+      ]);
+      await renderBlocks(w, item.stimulus.blocks, stimulusImages);
+      if (i < options.stimuli.length - 1) {
+        w.spacer(6);
+        w.rule(HR);
+        w.spacer(6);
+      }
+    }
+    w.ensure(LINE_H(EXAM.font.bodyPt) * 2);
+    w.spacer(8);
+    w.text("End of Stimulus Material", { font: w.fonts.bold, size: EXAM.font.bodyPt, align: "center" });
   }
   w.drawPageFooter();
   const bytes = await pdf.save();

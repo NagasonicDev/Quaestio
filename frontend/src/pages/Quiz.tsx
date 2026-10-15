@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
-import { Check, Clock3, RotateCcw, SkipForward } from "lucide-react";
+import { BookOpen, Check, Clock3, RotateCcw, SkipForward } from "lucide-react";
 import { api } from "../api/client";
-import type { Question } from "../api/types";
+import type { Question, StimulusWithContent } from "../api/types";
 import { FilterMenu } from "../components/FilterMenu";
 import { QuestionSurface } from "../components/QuestionReader";
+import { StimulusSideMenu } from "../components/StimulusSideMenu";
 import { flattenCounts } from "../components/NodeTree";
 import { InkLoader, Meta, PageHeader, Panel } from "../components/system";
 import { Button } from "../components/ui/button";
@@ -39,6 +40,8 @@ export function Quiz() {
   const [marksDraft, setMarksDraft] = useState("");
   const [revealed, setRevealed] = useState(false);
   const [results, setResults] = useState<QuizResult[]>([]);
+  const [stimuli, setStimuli] = useState<StimulusWithContent[]>([]);
+  const [openStimulus, setOpenStimulus] = useState<StimulusWithContent | null>(null);
 
   const { data: counts } = useQuery({
     queryKey: ["question-counts", courseId],
@@ -102,6 +105,32 @@ export function Quiz() {
     return () => window.clearTimeout(timer);
   }, [phase, revealed, current, elapsedSeconds]);
 
+  useEffect(() => {
+    let cancelled = false;
+    async function loadStimuli() {
+      if (!current) {
+        setStimuli([]);
+        return;
+      }
+      try {
+        const linked = await api.getStimuliForQuestion(current.question_id);
+        const full = await Promise.all(
+          linked.map((s: any) => api.getStimulus(s.stimulus_id).catch(() => null))
+        );
+        if (!cancelled) {
+          setStimuli(full.filter((s): s is StimulusWithContent => !!s));
+        }
+      } catch {
+        // Stimulus is optional: the quiz continues without it.
+        if (!cancelled) setStimuli([]);
+      }
+    }
+    loadStimuli();
+    return () => {
+      cancelled = true;
+    };
+  }, [current]);
+
   function resetFilters() {
     setSelectedNodes(new Set());
     setTypeKeys([]);
@@ -116,6 +145,8 @@ export function Quiz() {
     setAnswerDraft("");
     setMarksDraft("");
     setRevealed(false);
+    setStimuli([]);
+    setOpenStimulus(null);
   }
 
   async function startQuiz() {
@@ -140,6 +171,8 @@ export function Quiz() {
       setAnswerDraft("");
       setMarksDraft("");
       setRevealed(false);
+      setStimuli([]);
+      setOpenStimulus(null);
       setPhase(picked.length ? "run" : "setup");
       if (!picked.length) notify("No matching questions", "info", "Adjust the filters and try again.");
     } catch (cause) {
@@ -275,6 +308,14 @@ export function Quiz() {
         selectedChoice={selectedChoice}
         onSelectChoice={current.type_key === "multiple_choice" ? setSelectedChoice : undefined}
         footer={<div className="space-y-4">
+          {stimuli.length > 0 && <div className="rounded-md border border-border bg-surface/50 px-3 py-2">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <p className="text-xs text-muted-foreground">This question uses the following stimulus{stimuli.length === 1 ? "" : "i"}.</p>
+              <div className="flex flex-wrap gap-2">
+                {stimuli.map((stimulus, i) => <Button key={stimulus.stimulus_id} variant="secondary" size="sm" onClick={() => setOpenStimulus(stimulus)}><BookOpen />{stimulus.title?.trim() || `Stimulus ${i + 1}`}</Button>)}
+              </div>
+            </div>
+          </div>}
           {current.type_key !== "multiple_choice" && <div>
             <label className="label mb-2 block" htmlFor="quiz-answer">Your answer</label>
             <Textarea id="quiz-answer" value={answerDraft} onChange={(event) => setAnswerDraft(event.target.value)} disabled={revealed} placeholder="Write your working and answer…" className="min-h-28 bg-surface/60" />
@@ -362,6 +403,12 @@ export function Quiz() {
           <Button onClick={startQuiz}><RotateCcw />Retry quiz</Button>
         </footer>
       </Panel>}
+
+      <StimulusSideMenu
+        open={!!openStimulus}
+        onClose={() => setOpenStimulus(null)}
+        stimulus={openStimulus}
+      />
     </div>
   );
 }

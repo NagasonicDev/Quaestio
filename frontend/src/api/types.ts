@@ -349,6 +349,26 @@ export interface AttemptSummary extends AttemptInput {
   created_at: string;
 }
 
+export interface StimulusBlock {
+  block_id: string;
+  slot: Slot;
+  position: number;
+  block_type: BlockType;
+  content: Record<string, any>;
+}
+
+export interface Stimulus {
+  stimulus_id: string;
+  course_id: string;
+  title: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface StimulusWithContent extends Stimulus {
+  blocks: StimulusBlock[];
+}
+
 export interface TopicProgress {
   node_id: string;
   name: string;

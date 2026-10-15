@@ -49,12 +49,18 @@ export interface DocSection {
   questions: Question[];
 }
 
+export interface DocStimulusItem {
+  stimulus: import("../api/types").StimulusWithContent;
+  questionNumbers: number[];
+}
+
 export interface DocOptions {
   title: string;
   courseName: string;
   achievedMarks: number;
   sections: DocSection[];
   resolvedImages?: Map<string, ResolvedImage>;
+  stimuli?: DocStimulusItem[];
   onQuestionProgress?: (completed: number, total: number) => void;
 }
 
@@ -623,7 +629,10 @@ function pack(children: Array<Paragraph | Table>): Promise<Blob> {
 
 // ---------- public builders ----------
 
-export async function collectImages(sections: DocSection[]): Promise<Map<string, ResolvedImage>> {
+export async function collectImages(
+  sections: DocSection[],
+  stimuli: DocStimulusItem[] = []
+): Promise<Map<string, ResolvedImage>> {
   const blocks: ContentBlock[] = [];
   for (const sec of sections) {
     for (const q of sec.questions) {
@@ -634,13 +643,53 @@ export async function collectImages(sections: DocSection[]): Promise<Map<string,
       }
     }
   }
+  for (const item of stimuli) blocks.push(...item.stimulus.blocks);
   const [images, equations] = await Promise.all([resolveImages(blocks), resolveEquations(blocks)]);
   for (const [id, img] of equations) images.set(id, img);
   return images;
 }
 
+function renderStimulusSection(stimuli: DocStimulusItem[], images: Map<string, ResolvedImage>): Array<Paragraph | Table> {
+  const children: Array<Paragraph | Table> = [];
+  if (!stimuli?.length) return children;
+  children.push(new Paragraph({ children: [new PageBreak()] }));
+  children.push(
+    new Paragraph({
+      children: [runProps({ text: "Stimulus Material", bold: true, sizePt: EXAM.font.titlePt })],
+      spacing: { before: 240, after: 80 },
+    })
+  );
+  children.push(new Paragraph({ border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: "777777", space: 1 } }, spacing: { after: 100 } }));
+  for (let i = 0; i < stimuli.length; i++) {
+    const item = stimuli[i];
+    const label = item.stimulus.title ? `Stimulus ${i + 1}: ${item.stimulus.title}` : `Stimulus ${i + 1}`;
+    const refs = item.questionNumbers.length
+      ? ` (Referenced by Question${item.questionNumbers.length > 1 ? "s" : ""}: ${item.questionNumbers.join(", ")})`
+      : "";
+    children.push(
+      new Paragraph({
+        children: [runProps({ text: `${label}${refs}`, bold: true })],
+        spacing: { before: 160, after: 60 },
+      })
+    );
+    children.push(...renderBlocks(item.stimulus.blocks, { indentIn: 0, images }));
+    if (i < stimuli.length - 1) {
+      children.push(new Paragraph({ spacing: { after: 80 } }));
+      children.push(new Paragraph({ border: { bottom: borderBottom("DDDDDD") }, spacing: { after: 80 } }));
+    }
+  }
+  children.push(
+    new Paragraph({
+      children: [runProps({ text: "End of Stimulus Material", bold: true })],
+      alignment: AlignmentType.CENTER,
+      spacing: { before: 8 * 20, after: 8 * 20 },
+    })
+  );
+  return children;
+}
+
 export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
-  const images = opts.resolvedImages ?? await collectImages(opts.sections);
+  const images = opts.resolvedImages ?? await collectImages(opts.sections, opts.stimuli);
   const plan = buildExamPaperPlan(opts);
   const children: Array<Paragraph | Table> = [];
   hscCoverPage(children, opts);
@@ -670,6 +719,7 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
       })
     );
   }
+  children.push(...renderStimulusSection(opts.stimuli ?? [], images));
   return pack(children);
 }
 

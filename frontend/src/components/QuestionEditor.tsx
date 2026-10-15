@@ -5,7 +5,7 @@ import { api } from "../api/client";
 import { formatQuestionType } from "../lib/questionTypes";
 import { ToggleButton } from "./FilterMenu";
 import { BlockEditor, blocksToPayload, emptyBlock, type EditableBlock } from "./BlockEditor";
-import type { CourseFullConfig, ContentBlock, CourseNode, Question } from "../api/types";
+import type { CourseFullConfig, ContentBlock, CourseNode, Question, Stimulus } from "../api/types";
 import { Field, Panel, PanelHead } from "./system";
 import { Button } from "./ui/button";
 import { notify } from "../lib/notifications";
@@ -14,6 +14,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { Switch } from "./ui/switch";
 import { Checkbox } from "./ui/checkbox";
 import { Modal, useConfirm } from "./ui/modal";
+import { StimulusManager } from "./StimulusManager";
 
 interface EditableOption {
   blocks: EditableBlock[];
@@ -85,6 +86,10 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   const [sourceInstitution, setSourceInstitution] = useState(existing?.source?.institution ?? "");
   const [sourceOriginalNo, setSourceOriginalNo] = useState(existing?.source?.original_question_no ?? "");
   const [reviewStatus, setReviewStatus] = useState(existing?.review_status ?? "approved");
+  const [linkedStimuli, setLinkedStimuli] = useState<Stimulus[]>([]);
+  const [stimulusList, setStimulusList] = useState<Stimulus[]>([]);
+  const [showStimulusModal, setShowStimulusModal] = useState(false);
+  const [linking, setLinking] = useState(false);
 
   const [body, setBody] = useState<EditableBlock[]>(
     existing ? toEditable(existing.body) : [emptyBlock("text")]
@@ -117,6 +122,22 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const pendingNavigation = useRef<(() => void) | null>(null);
+
+  useEffect(() => {
+    async function loadStimulusData() {
+      try {
+        const list = await api.listStimuliForCourse(config.course_id);
+        setStimulusList(list);
+        if (existing?.question_id) {
+          const linked = await api.getStimuliForQuestion(existing.question_id);
+          setLinkedStimuli(linked);
+        }
+      } catch (err) {
+        notify("Could not load stimuli", "error", err instanceof Error ? err.message : "Failed to load stimuli.");
+      }
+    }
+    loadStimulusData();
+  }, [config.course_id, existing?.question_id]);
 
   useEffect(() => {
     if (!hasUnsavedChanges) return;
@@ -216,13 +237,32 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
         source_original_question_no: sourceOriginalNo.trim() || null,
       };
 
+      let questionId: string | undefined = existing?.question_id;
       if (existing) {
         await api.updateQuestion(existing.question_id, payload);
       } else {
-        await api.createQuestion({
+        const created = await api.createQuestion({
           ...payload,
           course_id: config.course_id,
         });
+        questionId = created.question_id;
+      }
+      if (questionId) {
+        const currentLinked = new Set(linkedStimuli.map((s) => s.stimulus_id));
+        const selectedLinked = new Set(
+          stimulusList.filter((s) => currentLinked.has(s.stimulus_id)).map((s) => s.stimulus_id)
+        );
+        if (currentLinked.size !== selectedLinked.size || ![...currentLinked].every((id) => selectedLinked.has(id))) {
+          // simpler: just re-link based on current selection? easier: unlink old not in list
+          const allSelected = new Set(linkedStimuli.map((s) => s.stimulus_id));
+          for (const id of allSelected) {
+            await api.linkStimulusToQuestion(id, questionId);
+          }
+        } else {
+          for (const id of currentLinked) {
+            await api.linkStimulusToQuestion(id, questionId);
+          }
+        }
       }
       const leave = pendingNavigation.current;
       pendingNavigation.current = null;
@@ -255,6 +295,47 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
       notify("Could not delete question", "error", err instanceof Error ? err.message : "Failed to delete question.");
     } finally {
       setSaving(false);
+    }
+  }
+
+  function toggleLinkedStimulus(stimulus: Stimulus) {
+    setLinkedStimuli((prev) => {
+      const has = prev.some((s) => s.stimulus_id === stimulus.stimulus_id);
+      if (has) return prev.filter((s) => s.stimulus_id !== stimulus.stimulus_id);
+      return [...prev, stimulus];
+    });
+    setHasUnsavedChanges(true);
+  }
+
+  async function handleLinkStimulus(stimulus: Stimulus) {
+    if (!existing?.question_id) return;
+    setLinking(true);
+    try {
+      await api.linkStimulusToQuestion(stimulus.stimulus_id, existing.question_id);
+      setLinkedStimuli((prev) => [...prev, stimulus]);
+      setStimulusList((prev) => {
+        if (prev.some((s) => s.stimulus_id === stimulus.stimulus_id)) return prev;
+        return [...prev, stimulus];
+      });
+      notify("Stimulus linked", "success");
+    } catch (err) {
+      notify("Could not link stimulus", "error", err instanceof Error ? err.message : "Failed to link stimulus.");
+    } finally {
+      setLinking(false);
+    }
+  }
+
+  async function handleUnlinkStimulus(stimulus: Stimulus) {
+    if (!existing?.question_id) {
+      setLinkedStimuli((prev) => prev.filter((s) => s.stimulus_id !== stimulus.stimulus_id));
+      return;
+    }
+    try {
+      await api.unlinkStimulusFromQuestion(stimulus.stimulus_id, existing.question_id);
+      setLinkedStimuli((prev) => prev.filter((s) => s.stimulus_id !== stimulus.stimulus_id));
+      notify("Stimulus unlinked", "success");
+    } catch (err) {
+      notify("Could not unlink stimulus", "error", err instanceof Error ? err.message : "Failed to unlink stimulus.");
     }
   }
 
@@ -427,6 +508,64 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
             }
 
             <Panel>
+              <PanelHead
+                title="Stimulus"
+                action={
+                  <Button type="button" size="sm" variant="outline" onClick={() => setShowStimulusModal(true)}>
+                    <Plus /> Manage stimuli
+                  </Button>
+                }
+              />
+              <div className="p-5">
+                <Field label="Link existing stimulus">
+                  <Select
+                    onValueChange={(val) => {
+                      const s = stimulusList.find((x) => x.stimulus_id === val);
+                      if (s) {
+                        toggleLinkedStimulus(s);
+                      }
+                    }}
+                  >
+                    <SelectTrigger>
+                      <SelectValue placeholder={stimulusList.length === 0 ? "No stimuli available" : "Select stimulus to link"} />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {stimulusList
+                        .filter((s) => !linkedStimuli.some((l) => l.stimulus_id === s.stimulus_id))
+                        .map((s) => (
+                          <SelectItem key={s.stimulus_id} value={s.stimulus_id}>
+                            {s.title || s.stimulus_id.slice(0, 8)}
+                          </SelectItem>
+                        ))}
+                    </SelectContent>
+                  </Select>
+                </Field>
+                {linkedStimuli.length > 0 && (
+                  <div className="mt-4 space-y-2">
+                    {linkedStimuli.map((s) => (
+                      <div key={s.stimulus_id} className="flex items-center justify-between rounded-md border border-border px-3 py-2">
+                        <span className="text-sm truncate">{s.title || s.stimulus_id.slice(0, 8)}</span>
+                        <Button
+                          type="button"
+                          size="sm"
+                          variant="ghost"
+                          className="text-destructive hover:bg-destructive/10 hover:text-destructive"
+                          onClick={() => handleUnlinkStimulus(s)}
+                          disabled={linking}
+                        >
+                          <Trash2 /> Unlink
+                        </Button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {linkedStimuli.length === 0 && (
+                  <p className="mt-3 text-sm text-muted-foreground">No stimulus linked. Link one or manage stimuli.</p>
+                )}
+              </div>
+            </Panel>
+
+            <Panel>
               <div className="flex items-center justify-between p-5">
                 <div>
                   <p className="font-medium">Approved</p>
@@ -465,6 +604,26 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
           </Button>
         </div>
       )}
+      {showStimulusModal && (
+        <Modal
+          open
+          onClose={() => setShowStimulusModal(false)}
+          label="Manage stimuli"
+          className="max-w-5xl"
+          header="Manage stimuli"
+        >
+          <StimulusManager
+            courseId={config.course_id}
+            onSelect={(s) => {
+              toggleLinkedStimulus(s);
+              if (existing?.question_id) {
+                handleLinkStimulus(s);
+              }
+            }}
+          />
+        </Modal>
+      )}
+
       {showLeavePrompt && (
         <Modal
           open

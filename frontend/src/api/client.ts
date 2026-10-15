@@ -382,6 +382,38 @@ export const api = {
     return data.deleteTest(testId);
   },
 
+  createStimulus(payload: { course_id: string; title?: string | null; body?: any[] }): Promise<any> {
+    return data.createStimulus(payload);
+  },
+
+  updateStimulus(stimulusId: string, payload: Partial<{ course_id: string; title?: string | null; body?: any[] }>): Promise<any> {
+    return data.updateStimulus(stimulusId, payload);
+  },
+
+  deleteStimulus(stimulusId: string): Promise<void> {
+    return data.deleteStimulus(stimulusId);
+  },
+
+  getStimulus(stimulusId: string): Promise<any> {
+    return data.getStimulus(stimulusId);
+  },
+
+  listStimuliForCourse(courseId: string): Promise<any[]> {
+    return data.listStimuliForCourse(courseId);
+  },
+
+  getStimuliForQuestion(questionId: string): Promise<any[]> {
+    return data.getStimuliForQuestion(questionId);
+  },
+
+  linkStimulusToQuestion(stimulusId: string, questionId: string): Promise<void> {
+    return data.linkStimulusToQuestion(stimulusId, questionId);
+  },
+
+  unlinkStimulusFromQuestion(stimulusId: string, questionId: string): Promise<void> {
+    return data.unlinkStimulusFromQuestion(stimulusId, questionId);
+  },
+
   testDownloadUrl(meta: Pick<GeneratedTestMeta, "test_download_url">): string {
     return meta.test_download_url;
   },

@@ -88,6 +88,11 @@ export async function deleteTestOutputs(testId: string): Promise<void> {
   await idb.deleteTestFiles(testId);
 }
 
+export interface TestStimulusItem {
+  stimulus: import("../api/types").StimulusWithContent;
+  questionNumbers: number[];
+}
+
 export interface BuildOptions {
   testId: string;
   title: string;
@@ -97,6 +102,7 @@ export interface BuildOptions {
   sectionResults: TestSectionResult[];
   achievedMarks: number;
   sections: DocSection[];
+  stimuli?: TestStimulusItem[];
   onProgress?: (progress: { phase: "selecting" | "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void;
 }
 
@@ -105,7 +111,7 @@ export interface BuildOptions {
  * PDF was selected.
  */
 export async function buildTestOutputs(options: BuildOptions): Promise<{ test: Blob; preview: Blob }> {
-  const { title, courseName, format, sections, achievedMarks } = options;
+  const { title, courseName, format, sections, achievedMarks, stimuli } = options;
   const timed = async <T>(phase: string, run: () => Promise<T>): Promise<T> => {
     const name = `test-generation:${options.testId}:${phase}`;
     const start = performance.now();
@@ -117,10 +123,10 @@ export async function buildTestOutputs(options: BuildOptions): Promise<{ test: B
       performance.measure(name, { start, end: `${name}:end` });
     }
   };
-  const resolvedImages = await timed("render", () => collectImages(sections));
+  const resolvedImages = await timed("render", () => collectImages(sections, stimuli));
   const totalQuestions = options.questions.length;
   const onQuestionProgress = (completedQuestions: number) => options.onProgress?.({ phase: "paper", questionCount: totalQuestions, completedQuestions });
-  const docOptions = { title, courseName, achievedMarks, sections, resolvedImages, onQuestionProgress };
+  const docOptions = { title, courseName, achievedMarks, sections, resolvedImages, stimuli, onQuestionProgress };
   options.onProgress?.({ phase: "paper", questionCount: options.questions.length });
   const test =
     await timed("export-paper", () => format === "pdf" ? buildPdfPaper(docOptions) : buildDocxPaper(docOptions));

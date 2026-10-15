@@ -1,7 +1,7 @@
 import JSZip from "jszip";
 import { questionImportScripts, questionImportSkillTemplate, questionImportWorkflow } from "./questionImportAssets";
 import * as idb from "./db/indexeddb";
-import { all, getFirst, run, transaction } from "./db/sqlite";
+import { all, getFirst, run, runMany, transaction } from "./db/sqlite";
 import { newId, newQuestionId, nowUtc } from "./id";
 import * as data from "./data";
 import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule";
@@ -340,7 +340,34 @@ export async function exportCourse(
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
   const learning = includeLearningData ? await readLearningData(courseId, options.includeResponseText === true) : null;
-  const seen = collectReferencedAssetIds(questions);
+  const stimuli = await data.listStimuliForCourse(courseId);
+  const stimuliWithContent: StimulusExport[] = [];
+  for (const s of stimuli) {
+    const full = await data.getStimulus(s.stimulus_id);
+    if (full) {
+      stimuliWithContent.push({
+        stimulus_id: full.stimulus_id,
+        course_id: full.course_id,
+        title: full.title,
+        created_at: full.created_at,
+        updated_at: full.updated_at,
+        blocks: full.blocks.map((b: any) => ({
+          block_id: b.block_id,
+          position: b.position,
+          block_type: b.block_type,
+          content: b.content,
+        })),
+      });
+    }
+  }
+  const questionStimuli: QuestionStimulusLink[] = [];
+  for (const q of questions) {
+    const qs = await data.getStimuliForQuestion(q.question_id);
+    for (const s of qs) {
+      questionStimuli.push({ question_id: q.question_id, stimulus_id: s.stimulus_id });
+    }
+  }
+  const seen = collectReferencedAssetIdsWithStimuli(questions, stimuliWithContent);
   const workTotal = preAssetWork + seen.size + 2;
   let completedWork = preAssetWork;
   const report = (fraction = 0) => onProgress?.(Math.min(99, ((completedWork + fraction) / workTotal) * 100));
@@ -359,6 +386,8 @@ export async function exportCourse(
           learning_data: includeLearningData,
           typed_answers: includeLearningData && options.includeResponseText === true,
           generated_files: false,
+          stimuli: stimuliWithContent.length > 0,
+          question_stimuli: questionStimuli.length > 0,
         },
         course: {
           ...config,
@@ -369,6 +398,8 @@ export async function exportCourse(
         },
         questions,
         learning,
+        stimuli: stimuliWithContent,
+        question_stimuli: questionStimuli,
       }, null, 2
     )
   );
@@ -391,6 +422,7 @@ export async function exportCourse(
       `- learning: ${learning ? `review schedule and ${learning.attempts.length} practice attempt record(s)` : "not included"}.`,
       learning ? `- typed answers: ${options.includeResponseText === true ? "included" : "excluded"}.` : null,
       "- Generated test files are not included; regenerate them from the questions.",
+      stimuliWithContent.length > 0 ? `- Includes ${stimuliWithContent.length} stimulus(es) with question links.` : null,
       "",
       "Importing replaces the course with the same id, or asks whether to add it as a new course.",
       "Attempt history is restored without its practice session, so the schedule carries over but session history does not.",
@@ -451,6 +483,25 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
 
 // ---------- course import (.qb) ----------
 
+export interface StimulusExport {
+  stimulus_id: string;
+  course_id: string;
+  title: string | null;
+  created_at: string;
+  updated_at: string;
+  blocks: Array<{
+    block_id: string;
+    position: number;
+    block_type: string;
+    content: Record<string, any>;
+  }>;
+}
+
+export interface QuestionStimulusLink {
+  question_id: string;
+  stimulus_id: string;
+}
+
 export interface ParsedBundle {
   course: CourseFullConfig & {
     description?: string | null;
@@ -464,6 +515,8 @@ export interface ParsedBundle {
   assetBlobs: Map<string, Blob>;
   /** Present from export version 2 onwards. */
   learning?: LearningBundle | null;
+  stimuli?: StimulusExport[];
+  question_stimuli?: QuestionStimulusLink[];
 }
 
 export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
@@ -516,6 +569,8 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
     questions: courseJson.questions ?? [],
     assetBlobs,
     learning: courseJson.learning ?? null,
+    stimuli: Array.isArray(courseJson.stimuli) ? courseJson.stimuli : undefined,
+    question_stimuli: Array.isArray(courseJson.question_stimuli) ? courseJson.question_stimuli : undefined,
   };
 }
 
@@ -546,11 +601,29 @@ function collectReferencedAssetIds(questions: Question[]): Set<string> {
   return seen;
 }
 
+function collectReferencedAssetIdsWithStimuli(
+  questions: Question[],
+  stimuli?: StimulusExport[]
+): Set<string> {
+  const seen = collectReferencedAssetIds(questions);
+  const scanBlocks = (blocks: Array<{ content?: Record<string, any> }> | undefined) => {
+    for (const block of blocks ?? []) {
+      const assetId = block.content?.asset_path;
+      if (typeof assetId === "string" && assetId) seen.add(assetId);
+    }
+  };
+  for (const s of stimuli ?? []) {
+    scanBlocks(s.blocks as any);
+  }
+  return seen;
+}
+
 interface ImportCtx {
   courseId: string;
   nodeMap: Map<string, string>;
   questionMap: Map<string, string>;
   assetMap: Map<string, string>;
+  stimulusMap?: Map<string, string>;
 }
 
 async function getOrCreateTag(courseId: string, name: string): Promise<string> {
@@ -712,7 +785,7 @@ export async function applyCourseBundle(
     await wipeCourseData(courseId);
   }
   onProgress?.(5);
-  const ctx: ImportCtx = { courseId, nodeMap: new Map(), questionMap: new Map(), assetMap: new Map() };
+  const ctx: ImportCtx = { courseId, nodeMap: new Map(), questionMap: new Map(), assetMap: new Map(), stimulusMap: new Map() };
 
   // Asset IDs are unique in both IndexedDB and the SQL asset table. Include
   // both stores: old/partial imports can leave a SQL row without a blob.
@@ -840,6 +913,7 @@ export async function applyCourseBundle(
   }
   onProgress?.(94);
   await restoreLearningData(bundle.learning, ctx);
+  await restoreStimuli(bundle, ctx);
   onProgress?.(100);
   return courseId;
 }
@@ -920,6 +994,49 @@ async function restoreLearningData(
       );
     }
   });
+}
+
+async function restoreStimuli(bundle: ParsedBundle, ctx: ImportCtx): Promise<void> {
+  const stimuli = bundle.stimuli ?? [];
+  if (stimuli.length === 0) return;
+  const now = nowUtc();
+  for (const s of stimuli) {
+    const stimulusId = newId("stim");
+    await run(
+      `INSERT INTO stimulus (stimulus_id, course_id, title, created_at, updated_at)
+       VALUES (?, ?, ?, ?, ?)`,
+      [stimulusId, ctx.courseId, s.title ?? null, s.created_at ?? now, s.updated_at ?? now]
+    );
+    const stmts: Array<[string, any[]]> = [];
+    for (let i = 0; i < (s.blocks ?? []).length; i++) {
+      const b = s.blocks[i];
+      let content = b.content;
+      if (IMAGE_TYPES.has(b.block_type) && typeof content?.asset_path === "string") {
+        const mapped = ctx.assetMap.get(content.asset_path);
+        if (mapped) content = { ...content, asset_path: mapped };
+      }
+      stmts.push([
+        "INSERT INTO stimulus_block (block_id, stimulus_id, position, block_type, content_json) VALUES (?, ?, ?, ?, ?)",
+        [newId("blk"), stimulusId, i, b.block_type, JSON.stringify(content ?? {})],
+      ]);
+    }
+    if (stmts.length) {
+      await runMany(stmts);
+    }
+    ctx.stimulusMap = ctx.stimulusMap ?? new Map();
+    ctx.stimulusMap.set(s.stimulus_id, stimulusId);
+  }
+  const links = bundle.question_stimuli ?? [];
+  for (const link of links) {
+    const qid = ctx.questionMap.get(link.question_id);
+    const sid = (ctx.stimulusMap ?? new Map()).get(link.stimulus_id);
+    if (qid && sid) {
+      await run(
+        `INSERT OR IGNORE INTO question_stimulus (question_id, stimulus_id) VALUES (?, ?)`,
+        [qid, sid]
+      );
+    }
+  }
 }
 
 /**

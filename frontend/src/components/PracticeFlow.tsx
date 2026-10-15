@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
-import { Check, Eye, Lightbulb, NotebookPen, Timer } from "lucide-react";
+import { Check, Eye, Lightbulb, NotebookPen, Timer, FileText } from "lucide-react";
 import type { Confidence, ContentBlock, Question, SelfRating } from "../api/types";
 import { BlockList, MarkingGuideTable, QuestionReader } from "./QuestionReader";
 import { Meta, Panel } from "./system";
@@ -8,6 +8,8 @@ import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import { ConfidencePicker, SelfAssessment } from "./SelfAssessment";
 import { formatQuestionType } from "../lib/questionTypes";
+import { StimulusSideMenu } from "./StimulusSideMenu";
+import type { StimulusWithContent } from "../api/types";
 
 /**
  * The guided flow, in the order retrieval practice says it should happen in:
@@ -171,6 +173,7 @@ export function PracticeFlow({
   nextDisabled,
   onNext,
   footerNote,
+  stimuli = [],
   callbacks,
 }: {
   question: Question;
@@ -182,6 +185,7 @@ export function PracticeFlow({
   nextDisabled?: boolean;
   onNext?: () => void;
   footerNote?: string;
+  stimuli?: StimulusWithContent[];
   callbacks: PracticeFlowCallbacks;
 }) {
   const [response, setResponse] = useState("");
@@ -191,6 +195,7 @@ export function PracticeFlow({
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [confidence, setConfidence] = useState<Confidence | null>(null);
   const [revealed, setRevealed] = useState({ guide: false, answer: false, solution: false });
+  const [openStimulus, setOpenStimulus] = useState<StimulusWithContent | null>(null);
   const [busy, setBusy] = useState(false);
 
   const questionId = question.question_id;
@@ -202,6 +207,7 @@ export function PracticeFlow({
     setSelectedChoice(null);
     setConfidence(null);
     setRevealed({ guide: false, answer: false, solution: false });
+    setOpenStimulus(null);
   }, [questionId]);
 
   const elapsed = useElapsedSeconds(timerEnabled, stage !== "assessed");
@@ -245,10 +251,29 @@ export function PracticeFlow({
 
   return (
     <Panel className="overflow-hidden">
-      <div className="flex flex-wrap items-center gap-3 border-b border-border px-5 py-3">
-        <Meta>{formatQuestionType(question.type_key)}</Meta>
-        {question.difficulty != null && <Meta>Difficulty {question.difficulty}</Meta>}
-        {question.marks != null && <Meta>{question.marks} marks</Meta>}
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border px-5 py-3">
+        <div className="flex flex-wrap items-center gap-3">
+          <Meta>{formatQuestionType(question.type_key)}</Meta>
+          {question.difficulty != null && <Meta>Difficulty {question.difficulty}</Meta>}
+          {question.marks != null && <Meta>{question.marks} marks</Meta>}
+        </div>
+        {stimuli.length > 0 && (
+          <div className="flex flex-wrap items-center gap-2">
+            {stimuli.map((stimulus, index) => (
+              <Button
+                key={stimulus.stimulus_id}
+                variant="outline"
+                size="sm"
+                onClick={() => setOpenStimulus(stimulus)}
+              >
+                <FileText />
+                {stimuli.length === 1
+                  ? "View stimulus"
+                  : stimulus.title?.trim() || `Stimulus ${index + 1}`}
+              </Button>
+            ))}
+          </div>
+        )}
       </div>
 
       <article className="question-paper p-5 sm:p-7">
@@ -535,6 +560,11 @@ export function PracticeFlow({
           </Button>
         </div>
       )}
+      <StimulusSideMenu
+        open={openStimulus != null}
+        onClose={() => setOpenStimulus(null)}
+        stimulus={openStimulus}
+      />
     </Panel>
   );
 }

@@ -99,6 +99,31 @@ CREATE TABLE IF NOT EXISTS content_block (
 );
 CREATE INDEX IF NOT EXISTS idx_content_block_question ON content_block(question_id, slot, position);
 
+CREATE TABLE IF NOT EXISTS stimulus (
+  stimulus_id TEXT PRIMARY KEY,
+  course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
+  title TEXT,
+  created_at TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS stimulus_block (
+  block_id TEXT PRIMARY KEY,
+  stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
+  position INTEGER NOT NULL,
+  block_type TEXT NOT NULL,
+  content_json TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_stimulus_block_stim ON stimulus_block(stimulus_id, position);
+
+CREATE TABLE IF NOT EXISTS question_stimulus (
+  question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
+  stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
+  PRIMARY KEY (question_id, stimulus_id)
+);
+CREATE INDEX IF NOT EXISTS idx_qs_stim ON question_stimulus(stimulus_id);
+CREATE INDEX IF NOT EXISTS idx_qs_q ON question_stimulus(question_id);
+
 CREATE TABLE IF NOT EXISTS question_classification (
   question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
   node_id TEXT NOT NULL REFERENCES course_node(node_id) ON DELETE CASCADE,
@@ -239,7 +264,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
  * version the persisted blobs, and to the per-course `schema_version` that
  * describes the question format a course expects.
  */
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export interface Migration {
   id: number;
@@ -301,6 +326,36 @@ export const MIGRATIONS: Migration[] = [
         value TEXT,
         updated_at TEXT NOT NULL
       );
+    `,
+  },
+  {
+    id: 2,
+    name: "stimulus-support",
+    sql: `
+      CREATE TABLE IF NOT EXISTS stimulus (
+        stimulus_id TEXT PRIMARY KEY,
+        course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
+        title TEXT,
+        created_at TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+      );
+
+      CREATE TABLE IF NOT EXISTS stimulus_block (
+        block_id TEXT PRIMARY KEY,
+        stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
+        position INTEGER NOT NULL,
+        block_type TEXT NOT NULL,
+        content_json TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS idx_stimulus_block_stim ON stimulus_block(stimulus_id, position);
+
+      CREATE TABLE IF NOT EXISTS question_stimulus (
+        question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
+        stimulus_id TEXT NOT NULL REFERENCES stimulus(stimulus_id) ON DELETE CASCADE,
+        PRIMARY KEY (question_id, stimulus_id)
+      );
+      CREATE INDEX IF NOT EXISTS idx_qs_stim ON question_stimulus(stimulus_id);
+      CREATE INDEX IF NOT EXISTS idx_qs_q ON question_stimulus(question_id);
     `,
   },
 ];

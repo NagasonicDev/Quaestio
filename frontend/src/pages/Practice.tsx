@@ -6,7 +6,7 @@ import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
 import { flattenCounts } from "../components/NodeTree";
-import type { PracticeFilters, Question, SelfRating, SessionMode } from "../api/types";
+import type { PracticeFilters, Question, SelfRating, SessionMode, StimulusWithContent } from "../api/types";
 import { InkLoader, PageHeader, Panel } from "../components/system";
 import { FilterMenu } from "../components/FilterMenu";
 import { Button } from "../components/ui/button";
@@ -53,6 +53,7 @@ export function Practice() {
   const [stage, setStage] = useState<PracticeStage>("prompt");
   const [planItem, setPlanItem] = useState<{ reason_text?: string; reason_kind?: string } | null>(null);
   const [sessionNote, setSessionNote] = useState<string | null>(null);
+  const [stimuli, setStimuli] = useState<StimulusWithContent[]>([]);
   const [loading, setLoading] = useState(false);
 
   const selectedNodeIds = useMemo(
@@ -166,6 +167,7 @@ export function Practice() {
         const question = await api.getQuestion(questionId);
         setCurrent(question);
         setStage("prompt");
+        setStimuli([]);
         const summary = await api.getPracticeSession(id);
         const item = summary?.plan.find((p) => p.question_id === questionId) ?? null;
         setPlanItem(item ? { reason_text: item.reason_text, reason_kind: item.reason_kind } : null);
@@ -174,6 +176,13 @@ export function Practice() {
           .recordAttempt({ session_id: id, question_id: questionId, status: "seen" })
           .catch(() => {});
         queryClient.invalidateQueries({ queryKey: ["recent-questions", courseId] });
+        try {
+          const linked = await api.getStimuliForQuestion(questionId);
+          const full = await Promise.all(linked.map((s: any) => api.getStimulus(s.stimulus_id).catch(() => null)));
+          setStimuli(full.filter((s): s is StimulusWithContent => !!s));
+        } catch {
+          // Stimulus is optional: practice continues without it.
+        }
       } catch (e) {
         notify("Could not load question", "error", e instanceof Error ? e.message : "Could not load that question.");
         setCurrent(null);
@@ -463,6 +472,7 @@ export function Practice() {
                     onNext={advance}
                     nextLabel="Next question"
                     footerNote={sessionNote ?? undefined}
+                    stimuli={stimuli}
                     callbacks={{
                       onConfirmAttempt,
                       onReveal,

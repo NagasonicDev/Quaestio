@@ -37,6 +37,9 @@ import type {
   SessionPlanItem,
   SessionTopicCoverage,
   Source,
+  Stimulus,
+  StimulusBlock,
+  StimulusWithContent,
   StudyProgress,
   TestSectionInput,
   TestSectionResult,
@@ -739,6 +742,35 @@ async function hydrateQuestion(questionId: string): Promise<Question> {
   return questionToOut(q, true);
 }
 
+// ---------- stimulus serialization ----------
+
+function stimulusBlockOut(b: SqlRow): StimulusBlock {
+  return {
+    block_id: b.block_id,
+    slot: "body",
+    position: b.position,
+    block_type: b.block_type,
+    content: parseJson(b.content_json),
+  };
+}
+
+async function hydrateStimulus(stimulusId: string): Promise<StimulusWithContent> {
+  const s = await getFirst<SqlRow>("SELECT * FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
+  if (!s) throw new Error("Stimulus not found");
+  const blocks = await all<SqlRow>(
+    "SELECT block_id, position, block_type, content_json FROM stimulus_block WHERE stimulus_id = ? ORDER BY position",
+    [stimulusId]
+  );
+  return {
+    stimulus_id: s.stimulus_id,
+    course_id: s.course_id,
+    title: s.title ?? null,
+    created_at: s.created_at,
+    updated_at: s.updated_at,
+    blocks: blocks.map(stimulusBlockOut),
+  };
+}
+
 async function hydrateQuestions(questionIds: string[]): Promise<Question[]> {
   if (!questionIds.length) return [];
   const queryInBatches = async (ids: string[], sql: (placeholders: string) => string) => {
@@ -881,7 +913,7 @@ function sourceOutFrom(rows: SqlRow[]): Source | null {
 
 // ---------- question CRUD ----------
 
-type BlockPayload = { block_type: string; content: Record<string, any> };
+export type BlockPayload = { block_type: string; content: Record<string, any> };
 
 export interface QuestionCreatePayload {
   course_id?: string;
@@ -924,6 +956,24 @@ async function insertBlocks(
     statements.push([
       "INSERT INTO content_block (block_id, question_id, slot, position, block_type, content_json) VALUES (?, ?, ?, ?, ?, ?)",
       [blockId, questionId, slot, i, b.block_type, JSON.stringify(b.content ?? {})],
+    ]);
+  });
+  return ids;
+}
+
+async function insertStimulusBlocks(
+  stimulusId: string,
+  blocks: BlockPayload[] | undefined,
+  statements: Array<[string, any[]]>,
+  idPrefix = "blk"
+): Promise<string[]> {
+  const ids: string[] = [];
+  (blocks ?? []).forEach((b, i) => {
+    const blockId = newId(idPrefix);
+    ids.push(blockId);
+    statements.push([
+      "INSERT INTO stimulus_block (block_id, stimulus_id, position, block_type, content_json) VALUES (?, ?, ?, ?, ?)",
+      [blockId, stimulusId, i, b.block_type, JSON.stringify(b.content ?? {})],
     ]);
   });
   return ids;
@@ -2953,6 +3003,30 @@ export async function generateTest(
     throw new Error("No questions were selected for this test.");
   }
 
+  const stimulusOrder: string[] = [];
+  const stimulusQuestions = new Map<string, Set<number>>();
+  for (let i = 0; i < allQuestions.length; i++) {
+    for (const s of await getStimuliForQuestion(allQuestions[i].question_id)) {
+      const ids = stimulusQuestions.get(s.stimulus_id);
+      if (ids) {
+        ids.add(i + 1);
+      } else {
+        stimulusOrder.push(s.stimulus_id);
+        stimulusQuestions.set(s.stimulus_id, new Set([i + 1]));
+      }
+    }
+  }
+  const stimuli: Array<{ stimulus: StimulusWithContent; questionNumbers: number[] }> = [];
+  for (const stimulusId of stimulusOrder) {
+    const stimulus = await getStimulus(stimulusId);
+    if (stimulus) {
+      stimuli.push({
+        stimulus,
+        questionNumbers: Array.from(stimulusQuestions.get(stimulusId)!).sort((a, b) => a - b),
+      });
+    }
+  }
+
   const title = payload.title?.trim() || `${config.name} — Practice Test`;
   const format = payload.format ?? "docx";
   const achieved = round2(allQuestions.reduce((sum, q) => sum + (q.marks ?? 0), 0));
@@ -2967,6 +3041,7 @@ export async function generateTest(
     sectionResults,
     achievedMarks: achieved,
     sections: sectionQuestionsByWork,
+    stimuli,
     onProgress: payload.onProgress,
   });
   recordGenerationTiming(`${timingPrefix}:render-and-export`, renderStart);
@@ -3070,4 +3145,134 @@ export async function generateTestSolutions(testId: string): Promise<void> {
 export async function deleteTest(testId: string): Promise<void> {
   await deleteTestOutputs(testId);
   await run("DELETE FROM generated_test WHERE test_id = ?", [testId]);
+}
+
+// ---------- stimulus CRUD ----------
+
+export interface StimulusCreatePayload {
+  course_id: string;
+  title?: string | null;
+  body?: BlockPayload[];
+}
+
+export async function createStimulus(payload: StimulusCreatePayload): Promise<StimulusWithContent> {
+  const course = await courseRow(payload.course_id);
+  if (!course) throw new Error("Course not found");
+
+  const stimulusId = newId("stim");
+  const now = nowUtc();
+  await run(
+    `INSERT INTO stimulus (stimulus_id, course_id, title, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?)`,
+    [stimulusId, payload.course_id, payload.title ?? null, now, now]
+  );
+
+  const statements: Array<[string, any[]]> = [];
+  await insertStimulusBlocks(stimulusId, payload.body, statements);
+  if (statements.length) {
+    await runMany(statements);
+  }
+  return hydrateStimulus(stimulusId);
+}
+
+export async function updateStimulus(
+  stimulusId: string,
+  payload: Partial<StimulusCreatePayload>
+): Promise<StimulusWithContent> {
+  const existing = await getFirst<SqlRow>("SELECT * FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
+  if (!existing) throw new Error("Stimulus not found");
+
+  const sets: string[] = [];
+  const params: any[] = [];
+  if (payload.title !== undefined) {
+    sets.push("title = ?");
+    params.push(payload.title ?? null);
+  }
+  if (sets.length) {
+    sets.push("updated_at = ?");
+    params.push(nowUtc());
+    params.push(stimulusId);
+    await run(`UPDATE stimulus SET ${sets.join(", ")} WHERE stimulus_id = ?`, params);
+  } else if (payload.body !== undefined) {
+    await run("UPDATE stimulus SET updated_at = ? WHERE stimulus_id = ?", [nowUtc(), stimulusId]);
+  }
+
+  if (payload.body !== undefined) {
+    await run("DELETE FROM stimulus_block WHERE stimulus_id = ?", [stimulusId]);
+    const statements: Array<[string, any[]]> = [];
+    await insertStimulusBlocks(stimulusId, payload.body, statements);
+    if (statements.length) {
+      await runMany(statements);
+    }
+  }
+
+  return hydrateStimulus(stimulusId);
+}
+
+export async function deleteStimulus(stimulusId: string): Promise<void> {
+  const existing = await getFirst<SqlRow>("SELECT stimulus_id FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
+  if (!existing) return;
+  await run("DELETE FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
+}
+
+export async function getStimulus(stimulusId: string): Promise<StimulusWithContent | null> {
+  const s = await getFirst<SqlRow>("SELECT * FROM stimulus WHERE stimulus_id = ?", [stimulusId]);
+  if (!s) return null;
+  const blocks = await all<SqlRow>(
+    "SELECT block_id, position, block_type, content_json FROM stimulus_block WHERE stimulus_id = ? ORDER BY position",
+    [stimulusId]
+  );
+  return {
+    stimulus_id: s.stimulus_id,
+    course_id: s.course_id,
+    title: s.title ?? null,
+    created_at: s.created_at,
+    updated_at: s.updated_at,
+    blocks: blocks.map(stimulusBlockOut),
+  };
+}
+
+export async function listStimuliForCourse(courseId: string): Promise<Stimulus[]> {
+  const rows = await all<SqlRow>(
+    `SELECT stimulus_id, course_id, title, created_at, updated_at
+     FROM stimulus WHERE course_id = ? ORDER BY created_at DESC, stimulus_id`,
+    [courseId]
+  );
+  return rows.map((r) => ({
+    stimulus_id: r.stimulus_id,
+    course_id: r.course_id,
+    title: r.title ?? null,
+    created_at: r.created_at,
+    updated_at: r.updated_at,
+  }));
+}
+
+export async function getStimuliForQuestion(questionId: string): Promise<Stimulus[]> {
+  const rows = await all<SqlRow>(
+    `SELECT s.stimulus_id, s.course_id, s.title, s.created_at, s.updated_at
+     FROM stimulus s JOIN question_stimulus qs ON qs.stimulus_id = s.stimulus_id
+     WHERE qs.question_id = ? ORDER BY s.created_at DESC, s.stimulus_id`,
+    [questionId]
+  );
+  return rows.map((r) => ({
+    stimulus_id: r.stimulus_id,
+    course_id: r.course_id,
+    title: r.title ?? null,
+    created_at: r.created_at,
+    updated_at: r.updated_at,
+  }));
+}
+
+export async function linkStimulusToQuestion(stimulusId: string, questionId: string): Promise<void> {
+  await run(
+    `INSERT OR IGNORE INTO question_stimulus (question_id, stimulus_id) VALUES (?, ?)`,
+    [questionId, stimulusId]
+  );
+}
+
+export async function unlinkStimulusFromQuestion(stimulusId: string, questionId: string): Promise<void> {
+  await run(
+    `DELETE FROM question_stimulus WHERE question_id = ? AND stimulus_id = ?`,
+    [questionId, stimulusId]
+  );
 }
