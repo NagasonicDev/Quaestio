@@ -14,7 +14,8 @@
     "test:plan": "node --test tests/sessionPlan.test.mjs",
     "test:progress": "node --test tests/studyProgress.test.mjs",
     "test:mcq-options": "node --test tests/mcqOptions.test.mjs",
-    "test": "npm run test:selection && npm run test:review && npm run test:schema && npm run test:plan && npm run test:progress && npm run test:mcq-options",
+    "test:solutions": "node --test tests/solutionSlots.test.mjs tests/solutionsDocx.test.mjs",
+    "test": "npm run test:selection && npm run test:review && npm run test:schema && npm run test:plan && npm run test:progress && npm run test:mcq-options && npm run test:solutions",
     "bench:selection": "node scripts/benchmark-question-selection.mjs",
     "preview": "vite preview"
   },

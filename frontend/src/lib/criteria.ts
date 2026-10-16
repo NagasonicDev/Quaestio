@@ -1,4 +1,4 @@
-import type { ContentBlock, Source } from "../api/types";
+import type { ContentBlock, Question, Source } from "../api/types";
 
 export interface CriteriaRow {
   criteria: string;
@@ -35,14 +35,13 @@ export function splitAllocation(text: string): { allocation: string; clean: stri
 
 /**
  * Port of exam_export.py criteria_rows: list items and non-empty text blocks
- * become <criteria, alloc> rows; every other block type is supplementary.
+ * become <criteria, alloc> rows.
  */
 export function criteriaRows(
   marking: ContentBlock[]
-): { rows: CriteriaRow[]; hasRows: boolean; supplementary: ContentBlock[] } {
+): { rows: CriteriaRow[]; hasRows: boolean } {
   const sorted = [...marking].sort((a, b) => a.position - b.position);
   const rows: CriteriaRow[] = [];
-  const supplementary: ContentBlock[] = [];
   for (const block of sorted) {
     if (block.block_type === "list") {
       const content = block.content ?? {};
@@ -62,9 +61,61 @@ export function criteriaRows(
       rows.push({ criteria: clean, marks: allocation });
       continue;
     }
-    supplementary.push(block);
   }
-  return { rows, hasRows: rows.length > 0, supplementary };
+  return { rows, hasRows: rows.length > 0 };
+}
+
+export interface SolutionSlot {
+  label: string;
+  blocks: ContentBlock[];
+}
+
+/**
+ * Fold a marking-guide slot into one Marks/Criteria table block so it prints
+ * like the .qb export. The table takes the place of the first criteria row so
+ * any other blocks (figures, equations) keep their original order.
+ */
+export function markingCriteriaBlocks(marks: ContentBlock[]): ContentBlock[] {
+  const { rows, hasRows } = criteriaRows(marks);
+  if (!hasRows) return marks;
+  const sorted = [...marks].sort((a, b) => a.position - b.position);
+  const isRowBlock = (block: ContentBlock) =>
+    (block.block_type === "list" && Array.isArray(block.content?.items)) ||
+    (block.block_type === "text" && String(block.content?.text ?? "").trim().length > 0);
+  const out: ContentBlock[] = [];
+  let placed = false;
+  for (const block of sorted) {
+    if (!isRowBlock(block)) out.push(block);
+    else if (!placed) {
+      out.push({
+        block_id: `${block.block_id}:criteria-table`,
+        slot: "marking_criteria",
+        position: block.position,
+        block_type: "table",
+        content: { columns: ["Marks", "Criteria"], rows: rows.map((row) => [row.marks, row.criteria]) },
+      });
+      placed = true;
+    }
+  }
+  return out;
+}
+
+/** The answer/solution/marking-guide slots for a question and its parts. */
+export function solutionSlots(question: Question): SolutionSlot[] {
+  const slots: SolutionSlot[] = [
+    { label: "Answer", blocks: question.answer },
+    { label: "Solution", blocks: question.solution },
+    { label: "Marking criteria", blocks: markingCriteriaBlocks(question.marking_criteria) },
+  ];
+  for (const part of question.parts) {
+    const label = part.part_label ? `(${part.part_label})` : "Part";
+    slots.push(
+      { label: `${label} — Answer`, blocks: part.answer },
+      { label: `${label} — Solution`, blocks: part.solution },
+      { label: `${label} — Marking criteria`, blocks: markingCriteriaBlocks(part.marking_criteria) },
+    );
+  }
+  return slots;
 }
 
 /** {marks:g} equivalent — integers print bare, floats trimmed. */

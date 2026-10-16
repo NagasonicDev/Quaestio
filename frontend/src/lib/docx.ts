@@ -20,7 +20,7 @@ import {
   type ParagraphChild,
 } from "docx";
 import type { ContentBlock, Question } from "../api/types";
-import { contentOf, formatMarks, formatSourceBracket, marksLabel, tableCellText, tableRows } from "./criteria";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel, solutionSlots, tableCellText, tableRows } from "./criteria";
 import { inlineMathImageId, resolveEquations, resolveImages, type ResolvedImage } from "./resolvers";
 import {
   EXAM,
@@ -725,41 +725,39 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
 
 /** Build a separate answer and marking guide for a previously generated paper. */
 export async function buildDocxSolutions(title: string, sections: DocSection[], onProgress?: (completed: number, total: number) => void): Promise<Blob> {
+  // Resolve every question's figures and equations in one shared pass: the
+  // per-question write loop below only paints, so image work stays parallel.
   const questions = sections.flatMap((section) => section.questions);
-  const solutionBlocks = questions.flatMap((q) => [
-    ...q.answer, ...q.solution, ...q.marking_criteria,
-    ...q.parts.flatMap((part) => [...part.answer, ...part.solution, ...part.marking_criteria]),
-  ]);
+  const slotsByQuestion = new Map(questions.map((q) => [q, solutionSlots(q)] as const));
+  const solutionBlocks = questions.flatMap((q) => (slotsByQuestion.get(q) ?? []).flatMap((slot) => slot.blocks));
   const [images, equations] = await Promise.all([resolveImages(solutionBlocks), resolveEquations(solutionBlocks)]);
   for (const [id, image] of equations) images.set(id, image);
+  const total = questions.length;
   const children: Array<Paragraph | Table> = [
     new Paragraph({ children: [runProps({ text: title, bold: true, sizePt: 20 })], alignment: AlignmentType.CENTER }),
     new Paragraph({ children: [runProps({ text: "Solutions and marking guide", bold: true, sizePt: 14 })], alignment: AlignmentType.CENTER, spacing: { after: 240 } }),
   ];
   const appendSlot = (label: string, blocks: ContentBlock[]) => {
     if (!blocks.length) return;
-    children.push(new Paragraph({ children: [runProps({ text: label, bold: true })], spacing: { before: 100 } }));
+    children.push(new Paragraph({ children: [runProps({ text: label, bold: true })], spacing: { before: 240, after: 80 } }));
     children.push(...renderBlocks(blocks, { indentIn: 0, images }));
   };
+  const divider = () => children.push(new Paragraph({
+    border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: RULE_COLOR, space: 1 } },
+    spacing: { before: 140, after: 180 },
+  }));
   let number = 0;
   for (const section of sections) {
-    if (section.label) children.push(new Paragraph({ children: [runProps({ text: section.label, bold: true, sizePt: 15 })], spacing: { before: 260, after: 100 } }));
+    if (section.label) children.push(new Paragraph({ children: [runProps({ text: section.label, bold: true, sizePt: 15 })], spacing: { before: 360, after: 120 } }));
     for (const q of section.questions) {
       number++;
-      children.push(new Paragraph({ children: [runProps({ text: `Question ${number}`, bold: true, sizePt: 13 })], spacing: { before: 220, after: 80 } }));
+      if (number > 1) divider();
+      children.push(new Paragraph({ children: [runProps({ text: `Question ${number}`, bold: true, sizePt: 13 })], spacing: { after: 60 } }));
       const src = [formatSourceBracket(q.source), `Question ID: ${q.question_id}`].filter(Boolean).join(" · ");
-      if (src) children.push(new Paragraph({ children: [runProps({ text: src, italics: true, sizePt: 8, color: GRAY })] }));
-      appendSlot("Answer", q.answer);
-      appendSlot("Solution", q.solution);
-      appendSlot("Marking criteria", q.marking_criteria);
-      for (const part of q.parts) {
-        const label = part.part_label ? `(${part.part_label})` : "Part";
-        appendSlot(`${label} — Answer`, part.answer);
-        appendSlot(`${label} — Solution`, part.solution);
-        appendSlot(`${label} — Marking criteria`, part.marking_criteria);
-      }
+      if (src) children.push(new Paragraph({ children: [runProps({ text: src, italics: true, sizePt: 8, color: GRAY })], spacing: { after: 100 } }));
+      for (const slot of slotsByQuestion.get(q) ?? []) appendSlot(slot.label, slot.blocks);
       if (onProgress) {
-        onProgress(number, questions.length);
+        onProgress(number, total);
         await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       }
     }

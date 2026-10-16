@@ -10,7 +10,7 @@ import notoSerifRegularUrl from "../assets/NotoSerif-Regular.ttf?url";
 import notoSerifBoldUrl from "../assets/NotoSerif-Bold.ttf?url";
 import notoSerifItalicUrl from "../assets/NotoSerif-Italic.ttf?url";
 import type { ContentBlock, Question } from "../api/types";
-import { contentOf, formatMarks, formatSourceBracket, marksLabel, tableCellText, tableRows } from "./criteria";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel, solutionSlots, tableCellText, tableRows } from "./criteria";
 import { inlineMathImageId, resolveEquations, resolveImages, type ResolvedImage } from "./resolvers";
 import type { DocSection } from "./docx";
 import {
@@ -821,51 +821,46 @@ export async function buildPdfSolutions(title: string, sections: DocSection[], o
   const pdf = await PDFDocument.create();
   const fonts = await embedUnicodeFonts(pdf);
   const w = new Writer(pdf, fonts);
+  // Resolve every question's figures and equations in one shared pass: the
+  // per-question write loop below only paints, so image work stays parallel.
   const questions = sections.flatMap((section) => section.questions);
-  const solutionBlocks = questions.flatMap((q) => [
-    ...q.answer, ...q.solution, ...q.marking_criteria,
-    ...q.parts.flatMap((part) => [...part.answer, ...part.solution, ...part.marking_criteria]),
-  ]);
+  const slotsByQuestion = new Map(questions.map((q) => [q, solutionSlots(q)] as const));
+  const solutionBlocks = questions.flatMap((q) => (slotsByQuestion.get(q) ?? []).flatMap((slot) => slot.blocks));
   const images = new Map<string, ResolvedImage>([
     ...(await resolveImages(solutionBlocks)),
     ...(await resolveEquations(solutionBlocks)),
   ]);
+  const total = questions.length;
   w.text(title, { font: w.fonts.bold, size: 20, align: "center" });
   w.spacer(6);
   w.text("Solutions and marking guide", { font: w.fonts.bold, size: 13, align: "center" });
   w.rule();
   const appendSlot = async (label: string, blocks: ContentBlock[]) => {
     if (!blocks.length) return;
+    w.spacer(10);
     w.ensure(LINE_H(EXAM.font.bodyPt) * 2);
     w.text(label, { font: w.fonts.bold, size: EXAM.font.bodyPt });
+    w.spacer(2);
     await renderBlocks(w, blocks, images);
-    w.spacer(4);
   };
   let number = 0;
   for (const section of sections) {
     if (section.label) {
       w.ensure(LINE_H(15) * 2);
+      w.spacer(8);
       w.text(section.label, { font: w.fonts.bold, size: 15 });
       w.rule();
     }
     for (const q of section.questions) {
       number++;
+      if (number > 1 && q !== section.questions[0]) { w.ensure(LINE_H(13) * 5); w.spacer(14); w.rule(); w.spacer(8); }
       w.ensure(LINE_H(13) * 2);
       w.text(`Question ${number}`, { font: w.fonts.bold, size: 13 });
       w.spacer(3);
       drawSourceLine(w, q);
-      w.spacer(3);
-      await appendSlot("Answer", q.answer);
-      await appendSlot("Solution", q.solution);
-      await appendSlot("Marking criteria", q.marking_criteria);
-      for (const part of q.parts) {
-        const label = part.part_label ? `(${part.part_label})` : "Part";
-        await appendSlot(`${label} — Answer`, part.answer);
-        await appendSlot(`${label} — Solution`, part.solution);
-        await appendSlot(`${label} — Marking criteria`, part.marking_criteria);
-      }
+      for (const slot of slotsByQuestion.get(q) ?? []) await appendSlot(slot.label, slot.blocks);
       if (onProgress) {
-        onProgress(number, questions.length);
+        onProgress(number, total);
         await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
       }
     }
