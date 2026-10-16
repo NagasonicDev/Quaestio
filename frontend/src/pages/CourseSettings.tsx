@@ -8,6 +8,7 @@ import { notify, startOperationNotification } from "../lib/notifications";
 import { StructureEditor } from "../components/StructureEditor";
 import { MathText } from "../components/MathText";
 import { QuestionEditor } from "../components/QuestionEditor";
+import { StimulusManager } from "../components/StimulusManager";
 import { PageHeader, Panel, PanelHead, Meta, Pagination } from "../components/system";
 import { Button } from "../components/ui/button";
 import { ToggleButton } from "../components/FilterMenu";
@@ -18,7 +19,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs"
 import type { Question } from "../api/types";
 import { Download, Plus, Pencil, Trash2, ExternalLink, ListChecks, Shapes, Gauge, School, Tags } from "lucide-react";
 
-type Tab = "structure" | "tags" | "questions";
+type Tab = "structure" | "tags" | "questions" | "stimuli";
 type ExportTab = "type" | "difficulty" | "institution" | "tags" | "scope";
 const PAGE_SIZE = 20;
 
@@ -259,6 +260,7 @@ export function CourseSettings() {
           <TabsTrigger value="structure">Structure</TabsTrigger>
           <TabsTrigger value="tags">Tags</TabsTrigger>
           <TabsTrigger value="questions">Questions</TabsTrigger>
+          <TabsTrigger value="stimuli">Stimuli</TabsTrigger>
         </TabsList>
         <TabsContent value="structure" className="space-y-5">
           <CourseNameSettings key={config.course_id} courseId={config.course_id} name={config.name} />
@@ -269,6 +271,9 @@ export function CourseSettings() {
         </TabsContent>
         <TabsContent value="questions">
           <QuestionManager config={config} />
+        </TabsContent>
+        <TabsContent value="stimuli">
+          <StimulusManager courseId={config.course_id} />
         </TabsContent>
       </Tabs>
     </div>

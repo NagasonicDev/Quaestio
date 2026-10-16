@@ -109,6 +109,21 @@ importer can remap by name and node codes. Always include `course_name`. If a
 previous import of this course regenerated its node ids, the importer re-matches
 on **code and full path** — which is why both must be correct.
 
+### Stimuli
+
+A stimulus is content stored once and linked to several questions (Course
+Settings → Stimuli). The import format has none: a bundle carries `questions.json`
+only, and any `stimuli` key is ignored. **Never emit a `stimuli` field** — write
+the content into the question `body` instead. Stimuli are created and linked in
+the app afterwards.
+
+Use a stimulus only when the *same* content serves **two or more top-level
+questions** — never across the parts of one question, whose shared stem belongs in
+the parent `body`. Otherwise keep the content in the question `body`. The one
+exception is a long text extract or other large passage that would overwhelm a
+single question's body; **images never qualify** — an image stays with its
+question.
+
 ---
 
 ## 3. Extraction rules
@@ -345,6 +360,8 @@ Before delivering, parse the finished JSON and confirm:
 - No empty parent or part `body`; no answer or solution left on a multipart
   parent; no part left without an answer or solution.
 - Every referenced asset actually present in the bundle under `assets/`.
+- No `stimuli` field — the importer ignores it; content shared by two or more
+  questions lives in each question's `body`.
 - Genuine institution names preserved as the paper gives them — never inferred
   from a course, exam type or year.
 - Every printed question accounted for; printed marks checked against the paper
