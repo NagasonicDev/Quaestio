@@ -67,45 +67,61 @@ export async function svgToPng(
 }
 
 export async function resolveImages(
-  blocks: ContentBlock[]
+  blocks: ContentBlock[],
+  onProgress?: (completed: number, total: number) => void
 ): Promise<Map<string, ResolvedImage>> {
   const map = new Map<string, ResolvedImage>();
   const jobs = blocks.filter((b) => IMAGE_TYPES.has(b.block_type));
+  const functionJobs = blocks.filter((b) => b.block_type === "function");
+  const total = jobs.length + functionJobs.length;
+  let completed = 0;
+  // Skipped assets count too: the decision is the work, so the bar never stalls
+  // short of the plan.
+  const done = () => onProgress?.(++completed, total);
+  onProgress?.(0, total);
   let next = 0;
   await Promise.all(Array.from({ length: Math.min(4, jobs.length) }, async () => {
     while (next < jobs.length) {
       const b = jobs[next++];
-      const path = contentOf(b, "asset_path");
-      if (typeof path !== "string" || !path) continue;
-      const blob = await idb.getAsset(path);
-      if (!blob) continue;
-      let data = new Uint8Array(await blob.arrayBuffer());
-      let mime = blob.type || "image/png";
-      let size = await blobPixelSize(blob);
-      if (mime === "image/svg+xml") {
-        const png = await svgToPng(blob);
-        data = png.data;
-        mime = "image/png";
-        size = { w: png.width, h: png.height };
+      try {
+        const path = contentOf(b, "asset_path");
+        if (typeof path !== "string" || !path) continue;
+        const blob = await idb.getAsset(path);
+        if (!blob) continue;
+        let data = new Uint8Array(await blob.arrayBuffer());
+        let mime = blob.type || "image/png";
+        let size = await blobPixelSize(blob);
+        if (mime === "image/svg+xml") {
+          const png = await svgToPng(blob);
+          data = png.data;
+          mime = "image/png";
+          size = { w: png.width, h: png.height };
+        }
+        map.set(b.block_id, {
+          data,
+          mime,
+          widthPx: size ? size.w : 96,
+          heightPx: size ? size.h : 96,
+        });
+      } finally {
+        done();
       }
-      map.set(b.block_id, {
-        data,
-        mime,
-        widthPx: size ? size.w : 96,
-        heightPx: size ? size.h : 96,
-      });
     }
   }));
-  const functionJobs = blocks.filter((b) => b.block_type === "function");
   await Promise.all(functionJobs.map(async (b) => {
-    const png = await renderFunctionGraphPng(normalizedFunctionGraph(b.content));
-    if (png) map.set(b.block_id, { data: png.data, mime: "image/png", widthPx: png.width, heightPx: png.height });
+    try {
+      const png = await renderFunctionGraphPng(normalizedFunctionGraph(b.content));
+      if (png) map.set(b.block_id, { data: png.data, mime: "image/png", widthPx: png.width, heightPx: png.height });
+    } finally {
+      done();
+    }
   }));
   return map;
 }
 
 export async function resolveEquations(
-  blocks: ContentBlock[]
+  blocks: ContentBlock[],
+  onProgress?: (completed: number, total: number) => void
 ): Promise<Map<string, ResolvedImage>> {
   const map = new Map<string, ResolvedImage>();
   const jobs: Array<() => Promise<void>> = [];
@@ -162,9 +178,14 @@ export async function resolveEquations(
 
   // Keep DOM rasterization concurrent enough to reduce per-equation latency
   // without creating an unbounded number of canvases and cloned DOM trees.
+  let completed = 0;
+  onProgress?.(0, jobs.length);
   let next = 0;
   await Promise.all(Array.from({ length: Math.min(4, jobs.length) }, async () => {
-    while (next < jobs.length) await jobs[next++]();
+    while (next < jobs.length) {
+      await jobs[next++]();
+      onProgress?.(++completed, jobs.length);
+    }
   }));
   return map;
 }

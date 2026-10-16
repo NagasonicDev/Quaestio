@@ -826,11 +826,23 @@ export async function buildPdfSolutions(title: string, sections: DocSection[], o
   const questions = sections.flatMap((section) => section.questions);
   const slotsByQuestion = new Map(questions.map((q) => [q, solutionSlots(q)] as const));
   const solutionBlocks = questions.flatMap((q) => (slotsByQuestion.get(q) ?? []).flatMap((slot) => slot.blocks));
-  const images = new Map<string, ResolvedImage>([
-    ...(await resolveImages(solutionBlocks)),
-    ...(await resolveEquations(solutionBlocks)),
+  // Progress counts real work: each resolved figure/equation, then each written
+  // question, plus one unit held back until the PDF is actually saved.
+  const resolveTotals = [0, 0];
+  const resolveDone = [0, 0];
+  let questionsDone = 0;
+  const totalWork = () => resolveTotals[0] + resolveTotals[1] + questions.length + 1;
+  const report = () => onProgress?.(resolveDone[0] + resolveDone[1] + questionsDone, totalWork());
+  const track = (i: number) => (completed: number, total: number) => {
+    resolveTotals[i] = total;
+    resolveDone[i] = completed;
+    report();
+  };
+  const [imageMap, equationMap] = await Promise.all([
+    resolveImages(solutionBlocks, track(0)),
+    resolveEquations(solutionBlocks, track(1)),
   ]);
-  const total = questions.length;
+  const images = new Map<string, ResolvedImage>([...imageMap, ...equationMap]);
   w.text(title, { font: w.fonts.bold, size: 20, align: "center" });
   w.spacer(6);
   w.text("Solutions and marking guide", { font: w.fonts.bold, size: 13, align: "center" });
@@ -859,14 +871,15 @@ export async function buildPdfSolutions(title: string, sections: DocSection[], o
       w.spacer(3);
       drawSourceLine(w, q);
       for (const slot of slotsByQuestion.get(q) ?? []) await appendSlot(slot.label, slot.blocks);
-      if (onProgress) {
-        onProgress(number, total);
-        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
-      }
+      questionsDone++;
+      report();
+      if (onProgress) await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
     }
   }
   w.drawPageFooter();
   const bytes = await pdf.save();
-  return new Blob([bytes as unknown as BlobPart], { type: "application/pdf" });
+  const blob = new Blob([bytes as unknown as BlobPart], { type: "application/pdf" });
+  onProgress?.(totalWork(), totalWork());
+  return blob;
 }
 

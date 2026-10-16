@@ -59,3 +59,18 @@ test("consecutive questions are separated by a rule, a lone question is not", as
   assert.ok(!one.includes("pBdr"), "a single question draws no divider");
   assert.ok(two.includes("pBdr"), "the second question is preceded by a rule");
 });
+
+test("progress follows real work and only reaches 100% once the file is packed", async () => {
+  // The writer yields to the frame clock when reporting; Node has no rAF.
+  globalThis.requestAnimationFrame ??= (cb) => setTimeout(() => cb(0), 0);
+  const seen = [];
+  const questions = [question("q1"), question("q2"), question("q3")];
+  await buildDocxSolutions("My Test", [{ label: "Section A", questions }], (completed, total) => seen.push([completed, total]));
+  assert.equal(seen[0][0], 0, "no work is reported before anything is done");
+  const completedValues = seen.map(([completed]) => completed);
+  assert.deepEqual(completedValues, [...completedValues].sort((a, b) => a - b), "completed never goes backwards");
+  assert.ok(seen.some(([completed, total]) => completed > 0 && completed < total), "intermediate progress is reported");
+  assert.ok(seen.slice(0, -1).every(([completed, total]) => completed < total), "100% is held back until the file exists");
+  const last = seen[seen.length - 1];
+  assert.deepEqual(last, [last[1], last[1]], "the final report is exactly 100%");
+});

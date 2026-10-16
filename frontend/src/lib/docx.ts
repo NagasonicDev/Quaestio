@@ -730,9 +730,20 @@ export async function buildDocxSolutions(title: string, sections: DocSection[], 
   const questions = sections.flatMap((section) => section.questions);
   const slotsByQuestion = new Map(questions.map((q) => [q, solutionSlots(q)] as const));
   const solutionBlocks = questions.flatMap((q) => (slotsByQuestion.get(q) ?? []).flatMap((slot) => slot.blocks));
-  const [images, equations] = await Promise.all([resolveImages(solutionBlocks), resolveEquations(solutionBlocks)]);
+  // Progress counts real work: each resolved figure/equation, then each written
+  // question, plus one unit held back until the .docx is actually packed.
+  const resolveTotals = [0, 0];
+  const resolveDone = [0, 0];
+  let questionsDone = 0;
+  const totalWork = () => resolveTotals[0] + resolveTotals[1] + questions.length + 1;
+  const report = () => onProgress?.(resolveDone[0] + resolveDone[1] + questionsDone, totalWork());
+  const track = (i: number) => (completed: number, total: number) => {
+    resolveTotals[i] = total;
+    resolveDone[i] = completed;
+    report();
+  };
+  const [images, equations] = await Promise.all([resolveImages(solutionBlocks, track(0)), resolveEquations(solutionBlocks, track(1))]);
   for (const [id, image] of equations) images.set(id, image);
-  const total = questions.length;
   const children: Array<Paragraph | Table> = [
     new Paragraph({ children: [runProps({ text: title, bold: true, sizePt: 20 })], alignment: AlignmentType.CENTER }),
     new Paragraph({ children: [runProps({ text: "Solutions and marking guide", bold: true, sizePt: 14 })], alignment: AlignmentType.CENTER, spacing: { after: 240 } }),
@@ -756,12 +767,13 @@ export async function buildDocxSolutions(title: string, sections: DocSection[], 
       const src = [formatSourceBracket(q.source), `Question ID: ${q.question_id}`].filter(Boolean).join(" · ");
       if (src) children.push(new Paragraph({ children: [runProps({ text: src, italics: true, sizePt: 8, color: GRAY })], spacing: { after: 100 } }));
       for (const slot of slotsByQuestion.get(q) ?? []) appendSlot(slot.label, slot.blocks);
-      if (onProgress) {
-        onProgress(number, total);
-        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
-      }
+      questionsDone++;
+      report();
+      if (onProgress) await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
     }
   }
-  return pack(children);
+  const blob = await pack(children);
+  onProgress?.(totalWork(), totalWork());
+  return blob;
 }
 

@@ -267,18 +267,22 @@ export function TestGenerator() {
 
   async function handleSolutions(test: GeneratedTestMeta) {
     setDownloading(`${test.test_id}:solutions`);
-    const task = startOperationNotification("Generating solutions…");
+    // Only show a progress bar when there is generation work to report.
+    const task = test.solutions_available ? null : startOperationNotification("Generating solutions…");
     try {
       if (!test.solutions_available) {
         await api.generateTestSolutions(test.test_id, (completed, total) => {
-          task.progress(total ? (completed / total) * 100 : 0);
+          task?.progress(total ? (completed / total) * 100 : 0);
         });
         markSolutionsAvailable(test.test_id);
       }
       await downloadTestFile(test.test_id, "solutions", test.format as "docx" | "pdf");
-      task.succeed("Solutions ready", test.title);
+      if (task) task.succeed("Solutions ready", test.title);
+      else notify("Solutions ready", "success", test.title);
     } catch (e) {
-      task.fail("Could not create solutions", e instanceof Error ? e.message : "Download failed.");
+      const message = e instanceof Error ? e.message : "Download failed.";
+      if (task) task.fail("Could not create solutions", message);
+      else notify("Could not download solutions", "error", message);
     } finally {
       setDownloading(null);
     }
