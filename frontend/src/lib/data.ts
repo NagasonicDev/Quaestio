@@ -5,6 +5,7 @@ import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles,
 import { getTestFile } from "./db/indexeddb";
 import { buildDocxSolutions } from "./docx";
 import { buildPdfSolutions } from "./pdf";
+import { logTiming } from "./timing";
 import type {
   AttemptInput,
   AttemptStatus,
@@ -2852,6 +2853,7 @@ function recordGenerationTiming(name: string, start: number): void {
   const endMark = `${name}:end`;
   performance.mark(endMark);
   performance.measure(name, { start, end: endMark });
+  logTiming(name, start);
 }
 
 async function selectForMarks(
@@ -3003,6 +3005,7 @@ export async function generateTest(
     throw new Error("No questions were selected for this test.");
   }
 
+  const stimulusStart = performance.now();
   const stimulusOrder: string[] = [];
   const stimulusQuestions = new Map<string, Set<number>>();
   for (let i = 0; i < allQuestions.length; i++) {
@@ -3026,6 +3029,8 @@ export async function generateTest(
       });
     }
   }
+
+  logTiming("generate:stimuli", stimulusStart, `${stimuli.length} stimuli`);
 
   const title = payload.title?.trim() || `${config.name} — Practice Test`;
   const format = payload.format ?? "docx";
@@ -3121,10 +3126,13 @@ export async function listTests(courseId: string, limit: number = 20): Promise<G
 }
 
 export async function generateTestSolutions(testId: string, onProgress?: (completed: number, total: number) => void): Promise<void> {
+  const solutionsStart = performance.now();
   const row = await getFirst<SqlRow>("SELECT * FROM generated_test WHERE test_id = ?", [testId]);
   if (!row) throw new Error("Generated test not found");
   const questionIds = JSON.parse(String(row.question_ids_json)) as string[];
+  const hydrateStart = performance.now();
   const questions = await hydrateQuestions(questionIds);
+  logTiming("solutions:hydrate", hydrateStart, `${questions.length} questions`);
   const savedFilter = parseJson(String(row.filter_json));
   const generatedSections = Array.isArray(savedFilter.generated_sections)
     ? savedFilter.generated_sections as Array<{ label: string | null; question_ids: string[] }>
@@ -3140,6 +3148,7 @@ export async function generateTestSolutions(testId: string, onProgress?: (comple
     ? await buildPdfSolutions(String(row.title), sections, onProgress)
     : await buildDocxSolutions(String(row.title), sections, onProgress);
   await storeTestSolutionFile(testId, output);
+  logTiming("solutions:total", solutionsStart, `${row.format}`);
 }
 
 export async function deleteTest(testId: string): Promise<void> {

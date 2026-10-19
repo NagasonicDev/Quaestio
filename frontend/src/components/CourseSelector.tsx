@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import { Check, ChevronDown, Plus, Upload } from "lucide-react";
 import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
-import { CreateCourseForm } from "./CreateCourseForm";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
 import { cn } from "../lib/utils";
@@ -15,12 +14,10 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const navigate = useNavigate();
   const confirm = useConfirm();
   const [open, setOpen] = useState(false);
-  const [creating, setCreating] = useState(false);
   const [activeIndex, setActiveIndex] = useState(0);
   const [importing, setImporting] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
-  const createFormRef = useRef<HTMLDivElement>(null);
   const listboxId = `course-listbox-${useId()}`;
   const fileInputRef = useRef<HTMLInputElement>(null);
   const qc = useQueryClient();
@@ -28,7 +25,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const { data: courses } = useQuery({ queryKey: ["courses"], queryFn: api.listCourses });
   const active = courses?.find((c) => c.course_id === courseId);
   const list = courses ?? [];
-  const activeOptionId = open && !creating && list.length > 0 ? `${listboxId}-option-${activeIndex}` : undefined;
+  const activeOptionId = open && list.length > 0 ? `${listboxId}-option-${activeIndex}` : undefined;
 
   function switchCourse(nextCourseId: string) {
     if (nextCourseId === courseId) return;
@@ -62,31 +59,14 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
     };
   }, [open]);
 
-  // The create form takes focus when it opens; the course list keeps focus on
-  // the trigger and moves a virtual cursor with aria-activedescendant instead.
-  useEffect(() => {
-    if (!open || !creating) return;
-    const first = createFormRef.current?.querySelector<HTMLElement>(
-      "input, button, select, textarea, [tabindex]:not([tabindex='-1'])"
-    );
-    first?.focus();
-  }, [open, creating]);
-
-  function startCreate() {
-    setCreating(true);
-    setOpen(true);
-  }
-
   function openMenu() {
     const current = list.findIndex((c) => c.course_id === courseId);
     setActiveIndex(current >= 0 ? current : 0);
-    setCreating(false);
     setOpen(true);
   }
 
   function closeMenu() {
     setOpen(false);
-    setCreating(false);
     triggerRef.current?.focus();
   }
 
@@ -97,12 +77,11 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
       setOpen(false);
       return;
     }
-    if (!open || creating) {
+    if (!open) {
       if (event.key === "ArrowDown" || event.key === "ArrowUp") {
         event.preventDefault();
         const current = list.findIndex((c) => c.course_id === courseId);
         setActiveIndex(event.key === "ArrowDown" ? Math.max(0, current) : Math.max(0, current));
-        setCreating(false);
         setOpen(true);
       }
       return;
@@ -189,7 +168,6 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         onClick={() => {
           if (open) {
             setOpen(false);
-            setCreating(false);
           } else {
             openMenu();
           }
@@ -197,7 +175,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         onKeyDown={handleTriggerKeyDown}
         role="combobox"
         aria-haspopup="listbox"
-        aria-expanded={open && !creating}
+        aria-expanded={open}
         aria-controls={listboxId}
         aria-activedescendant={activeOptionId}
         aria-autocomplete="none"
@@ -210,7 +188,14 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         <ChevronDown className="size-4 shrink-0 text-muted-foreground" />
       </Button>
 
-      <Button variant="ghost" size="sm" onClick={startCreate}>
+      <Button
+        variant="ghost"
+        size="sm"
+        onClick={() => {
+          setOpen(false);
+          navigate("/add-course");
+        }}
+      >
         <Plus />
         New course
       </Button>
@@ -236,7 +221,7 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
         }}
       />
 
-      {open && !creating && (
+      {open && (
         <div
           className="absolute left-4 top-11 z-50 w-64 rounded-lg border border-border bg-popover p-1 shadow-xl"
           onKeyDown={(event) => {
@@ -297,33 +282,15 @@ export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
           </button>
           <button
             type="button"
-            onClick={startCreate}
+            onClick={() => {
+              setOpen(false);
+              navigate("/add-course");
+            }}
             className="flex w-full items-center gap-2 rounded-md border-t border-border px-2.5 py-2 text-left text-sm font-medium text-accent-foreground transition hover:bg-accent"
           >
             <Plus className="size-4" />
             New course
           </button>
-        </div>
-      )}
-
-      {open && creating && (
-        <div
-          ref={createFormRef}
-          className="absolute left-4 top-11 z-50 w-72 rounded-lg border border-border bg-popover p-3 shadow-xl"
-          onKeyDown={(event) => {
-            if (event.key === "Escape") {
-              event.preventDefault();
-              closeMenu();
-            }
-          }}
-        >
-          <CreateCourseForm
-            onDone={() => {
-              navigate("/");
-              setCreating(false);
-              setOpen(false);
-            }}
-          />
         </div>
       )}
     </div>

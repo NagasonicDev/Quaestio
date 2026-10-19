@@ -4,6 +4,7 @@ import type { Question } from "../api/types";
 import type { TestSectionResult } from "../api/types";
 import { buildDocxPaper, collectImages, type DocSection } from "./docx";
 import { buildPdfPaper } from "./pdf";
+import { logTiming } from "./timing";
 
 const urlCache = new Map<string, string>();
 
@@ -121,6 +122,7 @@ export async function buildTestOutputs(options: BuildOptions): Promise<{ test: B
     } finally {
       performance.mark(`${name}:end`);
       performance.measure(name, { start, end: `${name}:end` });
+      logTiming(`paper:${phase}`, start);
     }
   };
   const resolvedImages = await timed("render", () => collectImages(sections, stimuli));

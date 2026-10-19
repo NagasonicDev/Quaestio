@@ -1,5 +1,6 @@
 import JSZip from "jszip";
 import { questionImportScripts, questionImportSkillTemplate, questionImportWorkflow } from "./questionImportAssets";
+import { importConventionsMarkdown, checkConventionsScript, importAuthoringRules } from "./importConventions";
 import * as idb from "./db/indexeddb";
 import { all, getFirst, run, runMany, transaction } from "./db/sqlite";
 import { newId, newQuestionId, nowUtc } from "./id";
@@ -102,7 +103,17 @@ function renderSkillMarkdown(substitutions: Record<string, string>): string {
 }
 
 export function buildSkillMarkdown(config: CourseFullConfig, instructionsMarkdown: string): string {
-  return renderSkillMarkdown(skillSubstitutions(config, instructionsMarkdown));
+  const substitutions = skillSubstitutions(config, instructionsMarkdown);
+  // The house conventions (prompts always present, composite parts, banded
+  // criteria for written answers, real solutions, ...) must reach every agent that
+  // reads SKILL.md. A template that has its own {{CONVENTIONS}} slot gets them
+  // there; an older template gets them ahead of the course-specific instructions.
+  substitutions.CONVENTIONS = importConventionsMarkdown.trim();
+  if (!questionImportSkillTemplate.includes("{{CONVENTIONS}}")) {
+    substitutions.COURSE_INSTRUCTIONS =
+      `${importConventionsMarkdown.trim()}\n\n---\n\n### Course-specific instructions\n\n${substitutions.COURSE_INSTRUCTIONS}`;
+  }
+  return renderSkillMarkdown(substitutions);
 }
 
 export function buildImportSchema(config: CourseFullConfig): Record<string, unknown> {
@@ -126,6 +137,7 @@ export function buildImportSchema(config: CourseFullConfig): Record<string, unkn
       name: n.name,
       level_index: n.level_index,
     })),
+    authoring_rules: importAuthoringRules,
     content_block_types: {
       slots: ["body", "hint", "answer", "solution", "marking_criteria"],
       types: ["text", "heading", "equation", "image", "diagram", "graph", "function", "table", "list", "code", "answer_area", "page_break"],
@@ -156,6 +168,7 @@ export function buildImportSchema(config: CourseFullConfig): Record<string, unkn
       hint: [{ block_type: "text", content: { text: "Try identifying the relevant principle first." } }],
       answer: [{ block_type: "text", content: { text: "x = 2, x = 3" } }],
       solution: [],
+      // Calculation: step by step, one mark per step (written answers use bands instead).
       marking_criteria: [
         {
           block_type: "list",
@@ -172,14 +185,41 @@ export function buildImportSchema(config: CourseFullConfig): Record<string, unkn
       classification_confidence: "high",
       source: { name: "Example Source", year: 2025, original_question_no: "1" },
     },
+    example_written_question: {
+      type_key: config.question_types.includes("short_answer") ? "short_answer" : (config.question_types[0] ?? "short_answer"),
+      marks: 4,
+      body: [
+        { block_type: "text", content: { text: "Explain why concrete is reinforced with steel." } },
+        { block_type: "answer_area", content: { lines: 8 } },
+      ],
+      answer: [{ block_type: "text", content: { text: "Concrete is strong in compression but weak in tension, so steel bars carry the tensile loads. Steel and concrete have similar thermal expansion, so they stay bonded as temperature changes." } }],
+      marking_criteria: [
+        {
+          block_type: "list",
+          content: {
+            ordered: false,
+            // Written answers use bands: highest first, top band = the question's marks.
+            items: [
+              "4 marks: Explains that concrete is weak in tension, that steel carries the tension, and why the two work together (e.g. bonding, similar thermal expansion)",
+              "2-3 marks: Explains the roles of concrete and steel without explaining why they work together",
+              "1 mark: Identifies that steel strengthens the concrete",
+            ],
+          },
+        },
+      ],
+    },
     example_multiple_choice: {
       type_key: "multiple_choice",
+      marks: 1,
       body: [{ block_type: "text", content: { text: "What is the temperature?" } }],
       mcq_options: [
         { content: [{ block_type: "text", content: { text: "$1.6\\times10^{12}$ K" } }], is_correct: false },
         { content: [{ block_type: "text", content: { text: "$5.2\\times10^{3}$ K" } }], is_correct: true },
       ],
       answer: [{ block_type: "text", content: { text: "B" } }],
+      solution: [{ block_type: "text", content: { text: "Explain why B is correct and why the closest distractor is wrong." } }],
+      // Exactly one criterion for a one-mark multiple-choice question.
+      marking_criteria: [{ block_type: "list", content: { ordered: false, items: ["1 mark: selects B, $5.2\\times10^{3}$ K, because ..."] } }],
     },
   };
 }
@@ -192,6 +232,8 @@ export async function buildSkillBlob(
   const zip = new JSZip();
   zip.file("SKILL.md", buildSkillMarkdown(config, instructionsMarkdown));
   zip.file("WORKFLOW.md", questionImportWorkflow);
+  zip.file("CONVENTIONS.md", importConventionsMarkdown);
+  zip.file("scripts/check_conventions.py", checkConventionsScript);
   // Compact on purpose: this file is a machine reference. Agents search it with
   // scripts/index_nodes.py; they never need it in context.
   zip.file("import-schema.json", JSON.stringify(buildImportSchema(config)));

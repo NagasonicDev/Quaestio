@@ -40,8 +40,13 @@ test("solutionSlots flattens parts and tables each marking criteria", () => {
   const slots = solutionSlots(q);
   assert.deepEqual(slots.map((slot) => slot.label), [
     "Answer", "Solution", "Marking criteria",
-    "(a) — Answer", "(a) — Solution", "(a) — Marking criteria",
+    "Answer", "Solution", "Marking criteria",
   ]);
+  assert.deepEqual(slots.map((slot) => slot.heading), [
+    "Overview", undefined, undefined,
+    "(a)", undefined, undefined,
+  ]);
+  assert.equal(slots[3].sub, true);
   assert.equal(slots[2].blocks[0].block_type, "table");
   assert.equal(slots[5].blocks[0].block_type, "table");
 });
@@ -65,6 +70,10 @@ test("a part without a label falls back to 'Part'", () => {
   const q = { question_id: "q2", answer: [], solution: [], marking_criteria: [], parts: [{ answer: [], solution: [], marking_criteria: [], parts: [] }] };
   assert.deepEqual(solutionSlots(q).map((slot) => slot.label), [
     "Answer", "Solution", "Marking criteria",
-    "Part — Answer", "Part — Solution", "Part — Marking criteria",
+    "Answer", "Solution", "Marking criteria",
+  ]);
+  assert.deepEqual(solutionSlots(q).map((slot) => slot.heading), [
+    "Overview", undefined, undefined,
+    "Part", undefined, undefined,
   ]);
 });

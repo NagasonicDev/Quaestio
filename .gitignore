@@ -35,3 +35,6 @@ data/**
 
 # Packaged question-import skills (build artifacts of scripts/build_skill.py)
 *.skill
+
+# Local NESA syllabus source documents
+syllabus/

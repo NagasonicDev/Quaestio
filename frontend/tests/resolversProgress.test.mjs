@@ -6,12 +6,14 @@ import { registerHooks } from "node:module";
 
 const stubs = {
   "/src/lib/equations.ts":
-    "export async function renderLatexPng() { return { data: new Uint8Array([1]), width: 10, height: 5 }; }",
+    "export async function renderLatexPng() { return { data: new Uint8Array([1]), width: 10, height: 5 }; }\n" +
+    "export function equationStats() { return { misses: 0, cached: 0, rasterMs: 0, fontEmbedMs: 0 }; }",
   "/src/lib/functionGraph.ts":
     "export function normalizedFunctionGraph(content) { return content; }\n" +
     "export async function renderFunctionGraphPng() { return { data: new Uint8Array([1]), width: 10, height: 10 }; }",
   "/src/lib/db/indexeddb.ts":
-    "export async function getAsset(path) { return path === \"present\" ? new Blob([new Uint8Array([1])], { type: \"image/png\" }) : null; }",
+    "export let getAssetCalls = 0;\n" +
+    "export async function getAsset(path) { getAssetCalls++; return path === \"present\" ? new Blob([new Uint8Array([1])], { type: \"image/png\" }) : null; }",
 };
 
 registerHooks({
@@ -39,7 +41,7 @@ registerHooks({
 import test from "node:test";
 import assert from "node:assert/strict";
 
-const { resolveImages, resolveEquations } = await import("../src/lib/resolvers.ts");
+const { resolveImages, resolveEquations, yieldToUi } = await import("../src/lib/resolvers.ts");
 
 test("a solutions document counts resolved figures, each question, and one pack unit", async () => {
   // The writer yields to the frame clock when reporting; Node has no rAF.
@@ -85,4 +87,29 @@ test("resolveEquations reports one unit per inline and block equation", async ()
   assert.deepEqual(seen[seen.length - 1], [3, 3]);
   const completedValues = seen.map(([completed]) => completed);
   assert.deepEqual(completedValues, [...completedValues].sort((a, b) => a - b), "completed never goes backwards");
+});
+
+test("resolveImages reads a shared asset once and remembers a missing one", async () => {
+  const idb = await import("../src/lib/db/indexeddb.ts");
+  const before = idb.getAssetCalls;
+  const blocks = [
+    { block_id: "i1", block_type: "image", position: 0, content: { asset_path: "cache-check-missing" } },
+    { block_id: "i2", block_type: "image", position: 1, content: { asset_path: "cache-check-missing" } },
+  ];
+  await resolveImages(blocks, () => {});
+  assert.equal(idb.getAssetCalls - before, 1, "the second occurrence reuses the cached lookup");
+});
+
+test("yieldToUi settles even when the frame clock stops (background tab)", async () => {
+  const saved = globalThis.requestAnimationFrame;
+  globalThis.requestAnimationFrame = () => 0; // frames never fire
+  try {
+    const winner = await Promise.race([
+      yieldToUi().then(() => "yielded"),
+      new Promise((resolve) => setTimeout(() => resolve("stuck"), 1000)),
+    ]);
+    assert.equal(winner, "yielded", "the timeout backstop released the yield");
+  } finally {
+    globalThis.requestAnimationFrame = saved;
+  }
 });

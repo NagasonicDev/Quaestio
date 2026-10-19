@@ -68,6 +68,10 @@ export function criteriaRows(
 export interface SolutionSlot {
   label: string;
   blocks: ContentBlock[];
+  /** Heading printed before this slot when it changes, e.g. "Overview" or "(a)". */
+  heading?: string;
+  /** Part-level slot: rendered subordinate to the parent question. */
+  sub?: boolean;
 }
 
 /**
@@ -92,7 +96,14 @@ export function markingCriteriaBlocks(marks: ContentBlock[]): ContentBlock[] {
         slot: "marking_criteria",
         position: block.position,
         block_type: "table",
-        content: { columns: ["Marks", "Criteria"], rows: rows.map((row) => [row.marks, row.criteria]) },
+        content: {
+          columns: ["Marks", "Criteria"],
+          rows: rows.map((row) => [row.marks, row.criteria]),
+          // A narrow marks column and a wide criteria column; descriptive
+          // criteria read left-aligned, per-mark totals stay centred.
+          column_widths: [0.14, 0.86],
+          column_align: ["center", "left"],
+        },
       });
       placed = true;
     }
@@ -100,19 +111,47 @@ export function markingCriteriaBlocks(marks: ContentBlock[]): ContentBlock[] {
   return out;
 }
 
+/** Column widths in points for a table block, honouring `column_widths`. */
+export function tableColumnWidths(block: ContentBlock, bodyWidth: number): number[] {
+  const columns = contentOf(block, "columns", []);
+  const count = Array.isArray(columns) && columns.length ? columns.length : 1;
+  const fractions = contentOf(block, "column_widths", null);
+  if (
+    Array.isArray(fractions) &&
+    fractions.length === count &&
+    fractions.every((value) => typeof value === "number" && value > 0)
+  ) {
+    const sum = fractions.reduce((total, value) => total + (value as number), 0);
+    return fractions.map((value) => ((value as number) / sum) * bodyWidth);
+  }
+  return Array.from({ length: count }, () => bodyWidth / count);
+}
+
+/** Horizontal alignment per table column, honouring `column_align`. */
+export function tableColumnAligns(block: ContentBlock): Array<"left" | "center" | "right"> {
+  const columns = contentOf(block, "columns", []);
+  const count = Array.isArray(columns) && columns.length ? columns.length : 1;
+  const aligns = contentOf(block, "column_align", null);
+  return Array.from({ length: count }, (_, index) => {
+    const value = Array.isArray(aligns) ? aligns[index] : null;
+    return value === "left" || value === "center" || value === "right" ? value : "left";
+  });
+}
+
 /** The answer/solution/marking-guide slots for a question and its parts. */
 export function solutionSlots(question: Question): SolutionSlot[] {
+  const hasParts = question.parts.length > 0;
   const slots: SolutionSlot[] = [
-    { label: "Answer", blocks: question.answer },
+    { label: "Answer", blocks: question.answer, heading: hasParts ? "Overview" : undefined },
     { label: "Solution", blocks: question.solution },
     { label: "Marking criteria", blocks: markingCriteriaBlocks(question.marking_criteria) },
   ];
   for (const part of question.parts) {
     const label = part.part_label ? `(${part.part_label})` : "Part";
     slots.push(
-      { label: `${label} — Answer`, blocks: part.answer },
-      { label: `${label} — Solution`, blocks: part.solution },
-      { label: `${label} — Marking criteria`, blocks: markingCriteriaBlocks(part.marking_criteria) },
+      { label: "Answer", blocks: part.answer, heading: label, sub: true },
+      { label: "Solution", blocks: part.solution, sub: true },
+      { label: "Marking criteria", blocks: markingCriteriaBlocks(part.marking_criteria), sub: true },
     );
   }
   return slots;

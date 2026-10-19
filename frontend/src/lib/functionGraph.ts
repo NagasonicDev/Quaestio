@@ -183,7 +183,26 @@ export function drawFunctionGraph(target: HTMLElement, config: FunctionGraphConf
   }
 }
 
-export async function renderFunctionGraphPng(config: FunctionGraphConfig): Promise<{ data: Uint8Array<ArrayBuffer>; width: number; height: number } | null> {
+type RenderedFunctionGraph = { data: Uint8Array<ArrayBuffer>; width: number; height: number };
+
+// The paper and its solutions rasterise the same graph; draw each config once.
+const MAX_FUNCTION_GRAPH_CACHE = 128;
+const functionGraphCache = new Map<string, Promise<RenderedFunctionGraph | null>>();
+
+export async function renderFunctionGraphPng(config: FunctionGraphConfig): Promise<RenderedFunctionGraph | null> {
+  const key = JSON.stringify(config);
+  const cached = functionGraphCache.get(key);
+  if (cached) return cached;
+  const promise = renderFunctionGraphPngUncached(config);
+  functionGraphCache.set(key, promise);
+  if (functionGraphCache.size > MAX_FUNCTION_GRAPH_CACHE) {
+    const oldest = functionGraphCache.keys().next().value;
+    if (oldest !== undefined) functionGraphCache.delete(oldest);
+  }
+  return promise;
+}
+
+async function renderFunctionGraphPngUncached(config: FunctionGraphConfig): Promise<RenderedFunctionGraph | null> {
   if (!validFunctionGraph(config)) return null;
   const target = document.createElement("div");
   try {

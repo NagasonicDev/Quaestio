@@ -264,7 +264,7 @@ export function Layout() {
       <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "lg:grid-cols-[238px_minmax(0,1fr)]")}>
         {courseId && <RecentQuestionsSidebar variant="rail" />}
         <main className="min-w-0">
-          {!courseId && location.pathname !== "/" ? <CourseOnboarding /> : <Outlet />}
+          {!courseId && !["/", "/add-course", "/templates"].includes(location.pathname) ? <CourseOnboarding /> : <Outlet />}
           {courseId && <RecentQuestionsSidebar variant="inline" />}
         </main>
       </div>

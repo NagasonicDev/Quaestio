@@ -20,8 +20,10 @@ import {
   type ParagraphChild,
 } from "docx";
 import type { ContentBlock, Question } from "../api/types";
-import { contentOf, formatMarks, formatSourceBracket, marksLabel, solutionSlots, tableCellText, tableRows } from "./criteria";
-import { inlineMathImageId, resolveEquations, resolveImages, type ResolvedImage } from "./resolvers";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel, solutionSlots, tableCellText, tableColumnAligns, tableColumnWidths, tableRows } from "./criteria";
+import { inlineMathImageId, resolveEquations, resolveImages, yieldToUi, type ResolvedImage } from "./resolvers";
+import { latexToPlain, splitRichTokens } from "./mathText";
+import { logTiming } from "./timing";
 import {
   EXAM,
   buildExamPaperPlan,
@@ -113,17 +115,17 @@ function imageRun(img: ResolvedImage): ImageRun {
 
 function inlineRuns(blockId: string, text: string, images: Map<string, ResolvedImage>, index: { value: number }): ParagraphChild[] {
   const children: ParagraphChild[] = [];
-  const re = /\$([^$]+)\$/g;
-  let last = 0;
-  let match: RegExpExecArray | null;
-  while ((match = re.exec(text))) {
-    if (match.index > last) children.push(runProps({ text: text.slice(last, match.index) }));
+  for (const token of splitRichTokens(text)) {
+    if ("text" in token) {
+      if (token.text) children.push(runProps({ text: token.text }));
+      continue;
+    }
     const math = images.get(inlineMathImageId(blockId, index.value++));
+    // Rendered at MATH_FONT_PX (16px = 12pt at 96dpi), which is the body size,
+    // so the natural pixel size lands correctly beside Word's 12pt text.
     if (math) children.push(imageRun(math));
-    else children.push(runProps({ text: match[1] }));
-    last = re.lastIndex;
+    else children.push(runProps({ text: latexToPlain(token.math) }));
   }
-  if (last < text.length) children.push(runProps({ text: text.slice(last) }));
   return children.length ? children : [runProps({ text })];
 }
 
@@ -142,6 +144,11 @@ function renderBlock(
   const left = inches(indentIn);
   switch (block.block_type) {
     case "text": {
+      const resolvedEq = images.get(block.block_id);
+      if (resolvedEq) {
+        out.push(new Paragraph({ children: [imageRun(resolvedEq)], alignment: AlignmentType.CENTER }));
+        break;
+      }
       const text = contentOf(block, "text", "");
       if (typeof text === "string" && text) {
         out.push(
@@ -151,6 +158,11 @@ function renderBlock(
       break;
     }
     case "heading": {
+      const resolvedEq = images.get(block.block_id);
+      if (resolvedEq) {
+        out.push(new Paragraph({ children: [imageRun(resolvedEq)], alignment: AlignmentType.CENTER }));
+        break;
+      }
       const text = contentOf(block, "text", "");
       if (typeof text === "string" && text) {
         out.push(
@@ -178,7 +190,7 @@ function renderBlock(
           new Paragraph({
             children: [
               runProps({
-                text: typeof latex === "string" ? latex.replace(/\\(?:left|right)\b/g, "").replace(/\\(?:,|;|!|quad|qquad)/g, " ") : "",
+                text: typeof latex === "string" ? latexToPlain(latex) : "",
                 font: EXAM.font.family,
                 sizePt: 11,
               }),
@@ -244,26 +256,35 @@ function renderBlock(
       if (Array.isArray(columns)) {
         const rows = tableRows(rawRows, columns);
         const widthIn = 6.5 - indentIn;
-        const colWidthTwips = Math.round(inches(widthIn) / Math.max(1, columns.length));
+        const columnWidths = tableColumnWidths(block, widthIn * 96);
+        const columnAligns = tableColumnAligns(block);
+        const colWidthTwips = columnWidths.map((w) => Math.round(inches(w / 96)));
         const inlineMathIndex = { value: 0 };
+        const align = (index: number) =>
+          columnAligns[index] === "center"
+            ? AlignmentType.CENTER
+            : columnAligns[index] === "right"
+              ? AlignmentType.RIGHT
+              : AlignmentType.LEFT;
         const buildRow = (cells: unknown[], header: boolean): TableRow => {
           const normalized = Array.from({ length: columns.length }, (_, i) => cells[i]);
-          const cellChildren = normalized.map((c) => {
+          const cellChildren = normalized.map((c, i) => {
             const val = tableCellText(c);
             return new TableCell({
               children: [
                 new Paragraph({
                   children: inlineRuns(block.block_id, val, images, inlineMathIndex),
-                  alignment: AlignmentType.CENTER,
+                  alignment: header ? AlignmentType.CENTER : align(i),
                 }),
               ],
-              width: { size: colWidthTwips, type: WidthType.DXA },
+              width: { size: colWidthTwips[i], type: WidthType.DXA },
               margins: { top: 80, bottom: 80, left: 100, right: 100 },
-              verticalAlign: "center",
+              verticalAlign: header ? "center" : "top",
               ...(header ? { shading: { type: ShadingType.CLEAR, color: "auto", fill: "F1F1EE" } } : {}),
             });
           });
-          return new TableRow({ children: cellChildren });
+          // cantSplit keeps a criteria row whole instead of breaking mid-cell.
+          return new TableRow({ children: cellChildren, tableHeader: header, cantSplit: true });
         };
         const headerCells = columns.map(tableCellText);
         const bodyRows = rows.map((r) => r.map(tableCellText));
@@ -271,7 +292,7 @@ function renderBlock(
           new Table({
             alignment: AlignmentType.CENTER,
             borders: tableGridBorders(),
-            columnWidths: headerCells.map(() => colWidthTwips),
+            columnWidths: colWidthTwips,
             width: { size: inches(widthIn), type: WidthType.DXA },
             layout: "fixed",
             rows: [buildRow(headerCells, true), ...bodyRows.map((r) => buildRow(r, false))],
@@ -695,6 +716,7 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
   hscCoverPage(children, opts);
   const counter = { n: 0 };
   let planIdx = 0;
+  const totalQuestions = opts.sections.reduce((sum, item) => sum + item.questions.length, 0);
   for (const sec of opts.sections) {
     if (!sec.questions.length) continue;
     const secPlan = plan.sections[planIdx++];
@@ -706,8 +728,8 @@ export async function buildDocxPaper(opts: DocOptions): Promise<Blob> {
     for (const q of sec.questions) {
       children.push(...renderQuestion(q, counter, images));
       if (opts.onQuestionProgress) {
-        opts.onQuestionProgress(counter.n, opts.sections.reduce((sum, item) => sum + item.questions.length, 0));
-        await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+        opts.onQuestionProgress(counter.n, totalQuestions);
+        await yieldToUi();
       }
     }
     const isFinalSection = planIdx === plan.sections.length;
@@ -742,22 +764,28 @@ export async function buildDocxSolutions(title: string, sections: DocSection[], 
     resolveDone[i] = completed;
     report();
   };
+  const resolveStart = performance.now();
   const [images, equations] = await Promise.all([resolveImages(solutionBlocks, track(0)), resolveEquations(solutionBlocks, track(1))]);
+  logTiming("solutions:resolve", resolveStart, `${resolveTotals[0]} figures, ${resolveTotals[1]} equations`);
   for (const [id, image] of equations) images.set(id, image);
   const children: Array<Paragraph | Table> = [
     new Paragraph({ children: [runProps({ text: title, bold: true, sizePt: 20 })], alignment: AlignmentType.CENTER }),
     new Paragraph({ children: [runProps({ text: "Solutions and marking guide", bold: true, sizePt: 14 })], alignment: AlignmentType.CENTER, spacing: { after: 240 } }),
   ];
-  const appendSlot = (label: string, blocks: ContentBlock[]) => {
-    if (!blocks.length) return;
-    children.push(new Paragraph({ children: [runProps({ text: label, bold: true })], spacing: { before: 240, after: 80 } }));
-    children.push(...renderBlocks(blocks, { indentIn: 0, images }));
+  const appendSlot = (slot: { label: string; blocks: ContentBlock[]; heading?: string; sub?: boolean }) => {
+    if (!slot.blocks.length) return;
+    if (slot.heading) {
+      children.push(new Paragraph({ children: [runProps({ text: slot.heading, bold: true, sizePt: slot.sub ? 12 : 13 })], spacing: { before: 280, after: 80 } }));
+    }
+    children.push(new Paragraph({ children: [runProps({ text: slot.label, bold: !slot.sub, sizePt: 11 })], spacing: { before: slot.sub ? 120 : 240, after: 80 } }));
+    children.push(...renderBlocks(slot.blocks, { indentIn: slot.sub ? 0.25 : 0, images }));
   };
   const divider = () => children.push(new Paragraph({
     border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: RULE_COLOR, space: 1 } },
     spacing: { before: 140, after: 180 },
   }));
   let number = 0;
+  const writeStart = performance.now();
   for (const section of sections) {
     if (section.label) children.push(new Paragraph({ children: [runProps({ text: section.label, bold: true, sizePt: 15 })], spacing: { before: 360, after: 120 } }));
     for (const q of section.questions) {
@@ -766,13 +794,16 @@ export async function buildDocxSolutions(title: string, sections: DocSection[], 
       children.push(new Paragraph({ children: [runProps({ text: `Question ${number}`, bold: true, sizePt: 13 })], spacing: { after: 60 } }));
       const src = [formatSourceBracket(q.source), `Question ID: ${q.question_id}`].filter(Boolean).join(" · ");
       if (src) children.push(new Paragraph({ children: [runProps({ text: src, italics: true, sizePt: 8, color: GRAY })], spacing: { after: 100 } }));
-      for (const slot of slotsByQuestion.get(q) ?? []) appendSlot(slot.label, slot.blocks);
+      for (const slot of slotsByQuestion.get(q) ?? []) appendSlot(slot);
       questionsDone++;
       report();
-      if (onProgress) await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+      if (onProgress) await yieldToUi();
     }
   }
+  logTiming("solutions:write", writeStart, `${questions.length} questions`);
+  const packStart = performance.now();
   const blob = await pack(children);
+  logTiming("solutions:pack", packStart);
   onProgress?.(totalWork(), totalWork());
   return blob;
 }

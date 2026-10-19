@@ -1,13 +1,26 @@
 import type { ContentBlock } from "../api/types";
 import * as idb from "./db/indexeddb";
 import { contentOf, tableCellText, tableRows } from "./criteria";
-import { renderLatexPng } from "./equations";
+import { mathExpressions, looksLikeStandaloneLatex } from "./mathText";
+import { renderLatexPng, equationStats } from "./equations";
 import { normalizedFunctionGraph, renderFunctionGraphPng } from "./functionGraph";
+import { logTiming } from "./timing";
 
 export const IMAGE_TYPES = new Set(["image", "diagram", "graph"]);
 
-export function inlineMathExpressions(text: string): string[] {
-  return Array.from(text.matchAll(/\$([^$]+)\$/g), (match) => match[1]);
+/**
+ * Yield so the UI can repaint, preferring a frame but never waiting for one:
+ * a hidden tab suspends requestAnimationFrame, which would freeze a long
+ * export until the user returns.
+ */
+export function yieldToUi(): Promise<void> {
+  return new Promise((resolve) => {
+    const timer = setTimeout(resolve, 32);
+    requestAnimationFrame(() => {
+      clearTimeout(timer);
+      resolve();
+    });
+  });
 }
 
 export function inlineMathImageId(blockId: string, index: number): string {
@@ -66,10 +79,53 @@ export async function svgToPng(
   };
 }
 
+// Figures are read from IndexedDB and decoded once per block occurrence. The
+// same asset (asset_path is an immutable id) is often reused, so resolve each
+// path once and share the bytes, bounded by a byte cap.
+const MAX_ASSET_CACHE_BYTES = 32 * 1024 * 1024;
+const assetCache = new Map<string, Promise<ResolvedImage | null>>();
+const assetBytes = new Map<string, number>();
+let assetCacheTotal = 0;
+
+async function loadAsset(path: string): Promise<ResolvedImage | null> {
+  const blob = await idb.getAsset(path);
+  if (!blob) return null;
+  const mime = blob.type || "image/png";
+  if (mime === "image/svg+xml") {
+    const png = await svgToPng(blob);
+    return { data: png.data, mime: "image/png", widthPx: png.width, heightPx: png.height };
+  }
+  const data = new Uint8Array(await blob.arrayBuffer());
+  const size = await blobPixelSize(blob);
+  return { data, mime, widthPx: size ? size.w : 96, heightPx: size ? size.h : 96 };
+}
+
+function resolveAsset(path: string): Promise<ResolvedImage | null> {
+  const cached = assetCache.get(path);
+  if (cached) return cached;
+  const promise = loadAsset(path).then((image) => {
+    if (image) {
+      assetBytes.set(path, image.data.byteLength);
+      assetCacheTotal += image.data.byteLength;
+      while (assetCacheTotal > MAX_ASSET_CACHE_BYTES) {
+        const oldest = assetCache.keys().next().value;
+        if (oldest === undefined) break;
+        assetCache.delete(oldest);
+        assetCacheTotal -= assetBytes.get(oldest) ?? 0;
+        assetBytes.delete(oldest);
+      }
+    }
+    return image;
+  });
+  assetCache.set(path, promise);
+  return promise;
+}
+
 export async function resolveImages(
   blocks: ContentBlock[],
   onProgress?: (completed: number, total: number) => void
 ): Promise<Map<string, ResolvedImage>> {
+  const started = performance.now();
   const map = new Map<string, ResolvedImage>();
   const jobs = blocks.filter((b) => IMAGE_TYPES.has(b.block_type));
   const functionJobs = blocks.filter((b) => b.block_type === "function");
@@ -86,23 +142,8 @@ export async function resolveImages(
       try {
         const path = contentOf(b, "asset_path");
         if (typeof path !== "string" || !path) continue;
-        const blob = await idb.getAsset(path);
-        if (!blob) continue;
-        let data = new Uint8Array(await blob.arrayBuffer());
-        let mime = blob.type || "image/png";
-        let size = await blobPixelSize(blob);
-        if (mime === "image/svg+xml") {
-          const png = await svgToPng(blob);
-          data = png.data;
-          mime = "image/png";
-          size = { w: png.width, h: png.height };
-        }
-        map.set(b.block_id, {
-          data,
-          mime,
-          widthPx: size ? size.w : 96,
-          heightPx: size ? size.h : 96,
-        });
+        const image = await resolveAsset(path);
+        if (image) map.set(b.block_id, image);
       } finally {
         done();
       }
@@ -116,6 +157,7 @@ export async function resolveImages(
       done();
     }
   }));
+  logTiming("resolveImages", started, `${jobs.length} figures, ${functionJobs.length} function graphs`);
   return map;
 }
 
@@ -123,9 +165,25 @@ export async function resolveEquations(
   blocks: ContentBlock[],
   onProgress?: (completed: number, total: number) => void
 ): Promise<Map<string, ResolvedImage>> {
+  const started = performance.now();
   const map = new Map<string, ResolvedImage>();
   const jobs: Array<() => Promise<void>> = [];
   for (const b of blocks) {
+    // A whole text/heading block that is nothing but LaTeX (an import that lost
+    // its `$` delimiters) is rendered as a display equation rather than printed
+    // as literal markup. Mixed prose+LaTeX is left untouched — flagging it is
+    // safer than guessing which span is maths.
+    if (b.block_type === "text" || b.block_type === "heading") {
+      const text = contentOf(b, "text");
+      if (typeof text === "string" && looksLikeStandaloneLatex(text)) {
+        jobs.push(async () => {
+          const png = await renderLatexPng(text.trim(), true);
+          if (!png) return;
+          map.set(b.block_id, { data: png.data, mime: "image/png", widthPx: png.width, heightPx: png.height });
+        });
+        continue;
+      }
+    }
     if (b.block_type !== "equation") {
       const texts: string[] = [];
       if (b.block_type === "text" || b.block_type === "heading") {
@@ -140,20 +198,19 @@ export async function resolveEquations(
         const items = contentOf(b, "items", []);
         if (Array.isArray(items)) texts.push(...items.map(String));
       }
-      const expressions = texts.flatMap(inlineMathExpressions);
+      const expressions = texts.flatMap(mathExpressions);
       for (let i = 0; i < expressions.length; i++) {
         const expression = expressions[i];
         jobs.push(async () => {
           const png = await renderLatexPng(expression, false);
           if (!png) return;
-          const heightPx = 22;
           map.set(inlineMathImageId(b.block_id, i), {
             // The equation cache owns these immutable bytes. Share them across
             // blocks instead of retaining a second full copy per occurrence.
             data: png.data,
             mime: "image/png",
-            widthPx: Math.max(1, Math.round((png.width / png.height) * heightPx)),
-            heightPx,
+            widthPx: png.width,
+            heightPx: png.height,
           });
         });
       }
@@ -165,13 +222,11 @@ export async function resolveEquations(
     jobs.push(async () => {
       const png = await renderLatexPng(latex, display);
       if (!png) return;
-      const heightPx = 27;
-      const widthPx = Math.round((png.width / png.height) * heightPx);
       map.set(b.block_id, {
         data: png.data,
         mime: "image/png",
-        widthPx,
-        heightPx,
+        widthPx: png.width,
+        heightPx: png.height,
       });
     });
   }
@@ -187,5 +242,7 @@ export async function resolveEquations(
       onProgress?.(++completed, jobs.length);
     }
   }));
+  const stats = equationStats();
+  logTiming("resolveEquations", started, `${jobs.length} jobs, ${stats.misses} rendered, ${stats.cached} cached, raster ${stats.rasterMs}ms, font-embed ${stats.fontEmbedMs}ms`);
   return map;
 }
