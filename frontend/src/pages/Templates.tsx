@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { BookOpen, ChevronDown, Layers, Plus } from "lucide-react";
+import { BookOpen, ChevronDown, Layers, Plus, Search } from "lucide-react";
 import { PageHeader } from "../components/system";
 import { Button } from "../components/ui/button";
+import { Input } from "../components/ui/input";
 import { cn } from "../lib/utils";
 import { templateStats, templatesByCategory } from "../lib/courseTemplates";
 import { useInstallTemplate } from "../hooks/useInstallTemplate";
@@ -18,8 +19,21 @@ const PREVIEW_COUNT = 3;
 export function Templates() {
   const navigate = useNavigate();
   const install = useInstallTemplate();
-  const groups = templatesByCategory();
+  const [query, setQuery] = useState("");
   const [open, setOpen] = useState<Set<string>>(new Set());
+
+  // Filter within each category so results stay grouped by category.
+  const q = query.trim().toLowerCase();
+  const groups = templatesByCategory()
+    .map(({ category, templates }) => ({
+      category,
+      templates: q
+        ? templates.filter(
+            (t) => t.name.toLowerCase().includes(q) || (t.description ?? "").toLowerCase().includes(q)
+          )
+        : templates,
+    }))
+    .filter((g) => g.templates.length > 0);
 
   const toggle = (category: string) =>
     setOpen((current) => {
@@ -36,10 +50,24 @@ export function Templates() {
         title="Start from a template"
         description="Ready-made course banks you can add straight to your library. Each one installs as a new course you can then shape freely."
       />
+      <div className="relative max-w-md">
+        <Search className="absolute left-3 top-2.5 size-4 text-muted-foreground" />
+        <Input
+          className="pl-9"
+          placeholder="Search templates"
+          aria-label="Search templates"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </div>
+      {groups.length === 0 && (
+        <p className="text-sm text-muted-foreground">No templates match “{query.trim()}”.</p>
+      )}
       {groups.map(({ category, templates }) => {
         if (templates.length === 0) return null;
         const isOpen = open.has(category);
-        const shown = isOpen ? templates : templates.slice(0, PREVIEW_COUNT);
+        // While searching, show every match; otherwise preview the first few.
+        const shown = isOpen || q ? templates : templates.slice(0, PREVIEW_COUNT);
         const hasMore = templates.length > PREVIEW_COUNT;
 
         return (

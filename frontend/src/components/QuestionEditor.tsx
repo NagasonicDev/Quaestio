@@ -8,7 +8,7 @@ import { BlockEditor, blocksToPayload, emptyBlock, type EditableBlock } from "./
 import type { CourseFullConfig, ContentBlock, CourseNode, Question, Stimulus } from "../api/types";
 import { Field, Panel, PanelHead } from "./system";
 import { Button } from "./ui/button";
-import { notify } from "../lib/notifications";
+import { notify, startOperationNotification } from "../lib/notifications";
 import { Input } from "./ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Switch } from "./ui/switch";
@@ -287,12 +287,14 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     });
     if (!ok) return;
     setSaving(true);
+    const task = startOperationNotification("Deleting question…");
     try {
       await api.deleteQuestion(existing.question_id);
+      task.succeed("Question deleted");
       setHasUnsavedChanges(false);
       onSaved();
     } catch (err) {
-      notify("Could not delete question", "error", err instanceof Error ? err.message : "Failed to delete question.");
+      task.fail("Could not delete question", err instanceof Error ? err.message : "Failed to delete question.");
     } finally {
       setSaving(false);
     }

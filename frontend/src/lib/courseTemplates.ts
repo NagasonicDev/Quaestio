@@ -3324,6 +3324,8 @@ export function templatesByCategory(
 ): Array<{ category: string; templates: CourseTemplate[] }> {
   return categories.map((category) => ({
     category,
-    templates: templates.filter((t) => t.category === category),
+    templates: templates
+      .filter((t) => t.category === category)
+      .sort((a, b) => a.name.localeCompare(b.name)),
   }));
 }

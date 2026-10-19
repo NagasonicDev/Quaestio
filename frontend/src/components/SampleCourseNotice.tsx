@@ -6,7 +6,7 @@ import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
-import { notify } from "../lib/notifications";
+import { notify, startOperationNotification } from "../lib/notifications";
 
 /**
  * Shown while the active course is the optional starter one. It has to be
@@ -47,6 +47,7 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
     });
     if (!ok) return;
     setBusy(true);
+    const task = startOperationNotification("Deleting course…", "Sample course");
     try {
       await api.deleteCourse(courseId);
       const remaining = await api.listCourses();
@@ -55,9 +56,9 @@ export function SampleCourseNotice({ courseId }: { courseId: string }) {
       if (!remaining.length) {
         await qc.invalidateQueries();
       }
-      notify("Sample course removed", "success");
+      task.succeed("Sample course removed");
     } catch (e) {
-      notify("Could not remove sample course", "error", e instanceof Error ? e.message : "Could not remove the sample course.");
+      task.fail("Could not remove sample course", e instanceof Error ? e.message : "Could not remove the sample course.");
     } finally {
       setBusy(false);
     }

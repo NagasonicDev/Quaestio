@@ -125,11 +125,16 @@ export function CourseSettings() {
         destructive: true,
       });
       if (!ok) return;
-      await api.deleteQuestions([...ids]);
-      setDeleteQuestionsOpen(false);
-      qc.invalidateQueries({ queryKey: ["questions", config.course_id] });
-      qc.invalidateQueries({ queryKey: ["question-counts", config.course_id] });
-      notify("Questions deleted", "success", `${ids.size} question${ids.size === 1 ? "" : "s"} deleted.`);
+      const task = startOperationNotification("Deleting questions…", `${ids.size} question${ids.size === 1 ? "" : "s"}`);
+      try {
+        await api.deleteQuestions([...ids]);
+        setDeleteQuestionsOpen(false);
+        qc.invalidateQueries({ queryKey: ["questions", config.course_id] });
+        qc.invalidateQueries({ queryKey: ["question-counts", config.course_id] });
+        task.succeed("Questions deleted", `${ids.size} question${ids.size === 1 ? "" : "s"} deleted.`);
+      } catch (e) {
+        task.fail("Could not delete questions", e instanceof Error ? e.message : "Failed to delete questions.");
+      }
     } catch (e) {
       notify("Could not delete questions", "error", e instanceof Error ? e.message : "Failed to delete questions.");
     } finally {
@@ -146,14 +151,15 @@ export function CourseSettings() {
     });
     if (!ok) return;
     setDeleting(true);
+    const task = startOperationNotification("Deleting course…", config.name);
     try {
       await api.deleteCourse(config.course_id);
       qc.removeQueries({ predicate: (query) => query.queryKey.includes(config.course_id) });
       await qc.invalidateQueries({ queryKey: ["courses"] });
       setCourseId(null);
-      notify("Course deleted", "success");
+      task.succeed("Course deleted", config.name);
     } catch (e) {
-      notify("Could not delete course", "error", e instanceof Error ? e.message : "Failed to delete course.");
+      task.fail("Could not delete course", e instanceof Error ? e.message : "Failed to delete course.");
     } finally {
       setDeleting(false);
     }
@@ -465,14 +471,15 @@ function QuestionManager({ config }: { config: NonNullable<ReturnType<typeof use
       destructive: true,
     });
     if (!ok) return;
+    const task = startOperationNotification("Deleting question…");
     try {
       await api.deleteQuestion(questionId);
     } catch (err) {
-      notify("Could not delete question", "error", err instanceof Error ? err.message : String(err));
+      task.fail("Could not delete question", err instanceof Error ? err.message : String(err));
       return;
     }
     refresh();
-    notify("Question deleted", "success");
+    task.succeed("Question deleted");
   }
 
   function closeEditor() {
