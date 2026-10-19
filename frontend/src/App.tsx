@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { CourseProvider } from "./hooks/useActiveCourse";
 import { ConfirmProvider } from "./components/ui/modal";
+import { TourProvider } from "./components/Tour";
 import { Layout } from "./components/Layout";
 import { Dashboard } from "./pages/Dashboard";
 import { Browser } from "./pages/Browser";
@@ -26,7 +27,7 @@ export default function App() {
         <CourseProvider>
           <HashRouter>
             <Routes>
-              <Route element={<Layout />}>
+              <Route element={<TourProvider><Layout /></TourProvider>}>
                 <Route index element={<Dashboard />} />
                 <Route path="browse" element={<Browser />} />
                 <Route path="practice" element={<Practice />} />

@@ -12,6 +12,7 @@ import { useActiveCourse } from "../hooks/useActiveCourse";
 import { CourseOnboarding } from "./CourseOnboarding";
 import { dismissTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
 import { dismissNotification, useNotifications } from "../lib/notifications";
+import { navTourTarget } from "../lib/tour";
 
 type NavItem = { to: string; label: string; end?: boolean };
 
@@ -124,6 +125,7 @@ export function Layout() {
                     key={item.to}
                     to={item.to}
                     end={item.end}
+                    data-tour={navTourTarget(item.to)}
                     className={({ isActive }) => cn(linkBase, isActive && linkActive)}
                   >
                     {item.label}

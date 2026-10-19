@@ -74,7 +74,7 @@ export function Dashboard() {
         <SampleCourseNotice courseId={courseId} />
       </div>
 
-      <div className="mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
+      <div className="mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4" data-tour="dashboard-stats">
         <Stat title="Total questions">
           <p className="font-display text-4xl font-semibold">{counts?.total ?? "…"}</p>
           <p className="mt-1 font-mono text-[11px] text-success">{config?.name}</p>
@@ -100,7 +100,7 @@ export function Dashboard() {
       </div>
 
       {(counts?.total ?? 0) > 0 && (
-        <div className="mb-6">
+        <div className="mb-6" data-tour="dashboard-due">
           <DueQueueCard courseId={courseId} />
         </div>
       )}
@@ -109,23 +109,25 @@ export function Dashboard() {
         <StudyOverview courseId={courseId} />
       </div>
 
-      <Panel>
-        <PanelHead
-          title="Topic structure"
-          note={`${config?.hierarchy[0]?.label ?? "Topics"} · question count`}
-          action={
-            <Button size="sm" variant="outline" asChild>
-              <Link to="/course-settings">Edit structure</Link>
-            </Button>
-          }
-        />
-        <div className="p-5">
-          {config && <NodeTree checks={false} nodes={config.nodes} counts={flatCounts} />}
-          {config?.nodes.length === 0 && (
-            <p className="text-sm text-muted-foreground">This course has no categories yet.</p>
-          )}
-        </div>
-      </Panel>
+      <div data-tour="dashboard-structure">
+        <Panel>
+          <PanelHead
+            title="Topic structure"
+            note={`${config?.hierarchy[0]?.label ?? "Topics"} · question count`}
+            action={
+              <Button size="sm" variant="outline" asChild>
+                <Link to="/course-settings">Edit structure</Link>
+              </Button>
+            }
+          />
+          <div className="p-5">
+            {config && <NodeTree checks={false} nodes={config.nodes} counts={flatCounts} />}
+            {config?.nodes.length === 0 && (
+              <p className="text-sm text-muted-foreground">This course has no categories yet.</p>
+            )}
+          </div>
+        </Panel>
+      </div>
     </div>
   );
 }

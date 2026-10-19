@@ -14,10 +14,12 @@ import { clearQuestions } from "../lib/data";
 import { api } from "../api/client";
 import { Input } from "../components/ui/input";
 import { StudySettings } from "../components/StudySettings";
+import { useTour } from "../components/Tour";
 import { notify } from "../lib/notifications";
 
 export function Settings() {
   const { theme, toggle } = useTheme();
+  const { start } = useTour();
   const { courseId, setCourseId } = useActiveCourse();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
@@ -41,6 +43,20 @@ export function Settings() {
             </p>
           </div>
           <Switch checked={theme === "dark"} onCheckedChange={() => toggle()} />
+        </div>
+      </Panel>
+
+      <Panel>
+        <div className="flex items-center justify-between gap-4 p-5">
+          <div>
+            <p className="font-medium">Replay the tour</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Walk through the main features again — hands-on, starting from the Overview.
+            </p>
+          </div>
+          <Button variant="outline" onClick={start}>
+            Start tour
+          </Button>
         </div>
       </Panel>
 

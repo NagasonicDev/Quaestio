@@ -316,32 +316,34 @@ export function Practice() {
               <strong>{pool?.filter_match_count ?? counts?.total ?? 0}</strong> match
               {pool?.filter_match_count === 1 ? "es" : ""}
             </div>
-            <FilterMenu
-              nodes={config?.nodes ?? []}
-              counts={flatCounts}
-              selectedNodes={selectedNodes}
-              onSelectedNodesChange={setSelectedNodes}
-              onReset={handleResetFilters}
-              questionTypes={config?.question_types ?? []}
-              typeCounts={facetCounts.typeCounts}
-              typeKeys={typeKeys}
-              onTypeKeysChange={setTypeKeys}
-              difficultyLevels={config?.difficulty_levels ?? []}
-              tags={config?.tags ?? []}
-              selectedTag={selectedTag}
-              onSelectedTagChange={setSelectedTag}
-              difficultyCounts={facetCounts.difficultyCounts}
-              difficulties={difficulties}
-              onDifficultiesChange={setDifficulties}
-              institutions={sourceOptions?.institutions}
-              institutionCounts={sourceFacetQuery.data}
-              institutionYears={institutionYears}
-              onInstitutionYearsChange={setInstitutionYears}
-              avoidRecent
-              avoidRecentDays={avoidRecentDays}
-              onAvoidRecentChange={setAvoidRecentDays}
-              footerAction={{ label: "Start session", onClick: () => start.mutate({ mode }) }}
-            />
+            <div data-tour="practice-filters">
+              <FilterMenu
+                nodes={config?.nodes ?? []}
+                counts={flatCounts}
+                selectedNodes={selectedNodes}
+                onSelectedNodesChange={setSelectedNodes}
+                onReset={handleResetFilters}
+                questionTypes={config?.question_types ?? []}
+                typeCounts={facetCounts.typeCounts}
+                typeKeys={typeKeys}
+                onTypeKeysChange={setTypeKeys}
+                difficultyLevels={config?.difficulty_levels ?? []}
+                tags={config?.tags ?? []}
+                selectedTag={selectedTag}
+                onSelectedTagChange={setSelectedTag}
+                difficultyCounts={facetCounts.difficultyCounts}
+                difficulties={difficulties}
+                onDifficultiesChange={setDifficulties}
+                institutions={sourceOptions?.institutions}
+                institutionCounts={sourceFacetQuery.data}
+                institutionYears={institutionYears}
+                onInstitutionYearsChange={setInstitutionYears}
+                avoidRecent
+                avoidRecentDays={avoidRecentDays}
+                onAvoidRecentChange={setAvoidRecentDays}
+                footerAction={{ label: "Start session", onClick: () => start.mutate({ mode }) }}
+              />
+            </div>
           </>
         }
       />
@@ -351,12 +353,14 @@ export function Practice() {
         {!session && (
           <div className="space-y-4">
             <Panel className="p-5">
-              <SessionModePicker
-                value={mode}
-                onChange={setMode}
-                dueCount={dueTotal}
-                disabled={dueTotal === 0 ? ["due_review"] : undefined}
-              />
+              <div data-tour="practice-modes">
+                <SessionModePicker
+                  value={mode}
+                  onChange={setMode}
+                  dueCount={dueTotal}
+                  disabled={dueTotal === 0 ? ["due_review"] : undefined}
+                />
+              </div>
               <div className="mt-4 flex flex-wrap items-center justify-between gap-2">
                 <p className="text-xs text-muted-foreground">
                   {mode === "due_review"
@@ -365,13 +369,15 @@ export function Practice() {
                       : "Nothing is due yet."
                     : "Questions are drawn in order and the list is kept, so a half-finished session survives a reload."}
                 </p>
-                <Button
-                  onClick={() => start.mutate({ mode })}
-                  disabled={loading || (counts?.total ?? 0) === 0 || (mode === "due_review" && dueTotal === 0)}
-                >
-                  <Play />
-                  Start session
-                </Button>
+                <span data-tour="practice-start">
+                  <Button
+                    onClick={() => start.mutate({ mode })}
+                    disabled={loading || (counts?.total ?? 0) === 0 || (mode === "due_review" && dueTotal === 0)}
+                  >
+                    <Play />
+                    Start session
+                  </Button>
+                </span>
               </div>
             </Panel>
             <DueQueueCard courseId={courseId} onStart={() => start.mutate({ mode: "due_review" })} compact />

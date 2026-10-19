@@ -268,20 +268,24 @@ export function Quiz() {
         }
       />
 
-      <Panel className="mb-5 p-4 sm:p-5">
-        <div className="grid gap-5 sm:grid-cols-2">
-          <label className="block">
-            <span className="label mb-2 flex items-center justify-between">Questions <span className="font-mono text-xs text-foreground">{requestedCount}</span></span>
-            <input aria-label="Number of quiz questions" type="range" min={1} max={30} value={requestedCount} onChange={(event) => setRequestedCount(Number(event.target.value))} className="w-full accent-primary" />
-            <span className="mt-1 flex justify-between font-mono text-[10px] text-muted-foreground"><span>1</span><span>30 questions</span></span>
-          </label>
-          <p className="self-center text-sm text-muted-foreground">Use the stopwatch to track your time on each question.</p>
-        </div>
-        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-4">
-          <Meta>{matchingCount} matching · {Math.min(requestedCount, matchingCount)} will be drawn</Meta>
-          <Button onClick={startQuiz} disabled={matchingCount === 0 || phase === "loading"}>{phase === "run" ? "Restart quiz" : "Generate quiz"}</Button>
-        </div>
-      </Panel>
+      <div data-tour="quiz-setup">
+        <Panel className="mb-5 p-4 sm:p-5">
+          <div className="grid gap-5 sm:grid-cols-2">
+            <label className="block">
+              <span className="label mb-2 flex items-center justify-between">Questions <span className="font-mono text-xs text-foreground">{requestedCount}</span></span>
+              <input aria-label="Number of quiz questions" type="range" min={1} max={30} value={requestedCount} onChange={(event) => setRequestedCount(Number(event.target.value))} className="w-full accent-primary" />
+              <span className="mt-1 flex justify-between font-mono text-[10px] text-muted-foreground"><span>1</span><span>30 questions</span></span>
+            </label>
+            <p className="self-center text-sm text-muted-foreground">Use the stopwatch to track your time on each question.</p>
+          </div>
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-border pt-4">
+            <Meta>{matchingCount} matching · {Math.min(requestedCount, matchingCount)} will be drawn</Meta>
+            <span data-tour="quiz-generate">
+              <Button onClick={startQuiz} disabled={matchingCount === 0 || phase === "loading"}>{phase === "run" ? "Restart quiz" : "Generate quiz"}</Button>
+            </span>
+          </div>
+        </Panel>
+      </div>
 
       {phase === "setup" && <Panel className="p-10 text-center text-sm text-muted-foreground">Set your filters and question count, then generate a quiz.</Panel>}
       {phase === "loading" && <Panel className="grid min-h-64 place-items-center p-10"><InkLoader messages={["Drawing questions…", "Starting your stopwatch…", "Preparing your quiz…"]} /></Panel>}

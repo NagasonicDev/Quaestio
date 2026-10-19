@@ -195,6 +195,7 @@ export function Browser() {
       />
 
       <div className="min-w-0 space-y-3">
+        <div data-tour="browse-search">
         <Panel className="p-4">
           <div className="grid gap-3 sm:grid-cols-[minmax(0,1fr)_190px]">
             <div className="relative">
@@ -227,8 +228,9 @@ export function Browser() {
             </Meta>
           </div>
         </Panel>
+        </div>
 
-        <div className="mt-3 space-y-2">
+        <div className="mt-3 space-y-2" data-tour="browse-results">
           {!results && isLoading && (
             <Panel className="grid min-h-48 place-items-center p-8">
               <LoadingState label="Consulting the ledger…" />

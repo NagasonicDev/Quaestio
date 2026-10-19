@@ -460,6 +460,7 @@ export function TestGenerator() {
             </div>
           </Panel>
 
+          <div data-tour="testgen-sections">
           <Panel>
             <PanelHead
               title="2 · Build sections"
@@ -546,6 +547,7 @@ export function TestGenerator() {
               ))}
             </div>
           </Panel>
+          </div>
 
           <Panel>
             <PanelHead title="3 · Output options" />
@@ -573,7 +575,7 @@ export function TestGenerator() {
                 </Select>
               </Field>
             </div>
-            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-5 py-4">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border px-5 py-4" data-tour="testgen-generate">
               <Meta>
                 {sections.length} section{sections.length === 1 ? "" : "s"} ·{" "}
                 {summary.marksRequested} marks requested · {loadingAvailability || !availability ? "Updating availability…" : `${summary.availableQuestions} available questions · ${summary.availableMarks} available marks`}

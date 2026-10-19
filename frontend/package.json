@@ -16,7 +16,8 @@
     "test:mcq-options": "node --test tests/mcqOptions.test.mjs",
     "test:templates": "node --test tests/courseTemplates.test.mjs",
     "test:solutions": "node --test tests/solutionSlots.test.mjs tests/mathText.test.mjs tests/solutionsDocx.test.mjs tests/resolversProgress.test.mjs",
-    "test": "npm run test:selection && npm run test:review && npm run test:schema && npm run test:plan && npm run test:progress && npm run test:mcq-options && npm run test:templates && npm run test:solutions",
+    "test:tour": "node --test tests/tour.test.mjs",
+    "test": "npm run test:selection && npm run test:review && npm run test:schema && npm run test:plan && npm run test:progress && npm run test:mcq-options && npm run test:templates && npm run test:solutions && npm run test:tour",
     "bench:selection": "node scripts/benchmark-question-selection.mjs",
     "preview": "vite preview"
   },
