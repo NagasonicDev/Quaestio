@@ -41,7 +41,26 @@ export interface TemplateSpec {
 export type CourseTemplate = TemplateSpec & { nodes: TemplateNode[] };
 
 export function template(spec: TemplateSpec): CourseTemplate {
-  return { ...spec, nodes: spec.nodes ?? [] };
+  const rootCode = (name: string, index: number) => {
+    if (name === "Year 11") return "PRE";
+    if (name === "Year 12") return "HSC";
+    const suffix = name.replace(/^Year\s*12\s*[\u2013\u2014-]\s*/, "");
+    if (suffix === name) return `Y${index + 1}`;
+    return `HSC-${suffix.split(/\s+/).map((word) => word[0]).join("").toUpperCase()}`;
+  };
+  const assignCodes = (nodes: TemplateNode[], parentCode = "", level = 0): TemplateNode[] =>
+    nodes.map((entry, index) => {
+      const node = typeof entry === "string" ? { name: entry } : entry;
+      const code = node.code ?? (level === 0
+        ? rootCode(node.name, index)
+        : `${parentCode}-${level === 1 ? "M" : "T"}${index + 1}`);
+      return {
+        ...node,
+        code,
+        ...(node.children ? { children: assignCodes(node.children, code, level + 1) } : {}),
+      };
+    });
+  return { ...spec, nodes: assignCodes(spec.nodes ?? []) };
 }
 
 /** Counts the leaf topics in a template and how many hierarchy levels it declares. */
