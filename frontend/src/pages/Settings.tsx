@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { BookOpen, Pencil, Trash2 } from "lucide-react";
@@ -11,20 +11,30 @@ import { Button } from "../components/ui/button";
 import { useConfirm } from "../components/ui/modal";
 import { clearAllData } from "../lib/db/sqlite";
 import { clearQuestions } from "../lib/data";
+import { describeStoragePersistence, requestPersistentStorage } from "../lib/storage";
 import { api } from "../api/client";
 import { Input } from "../components/ui/input";
 import { StudySettings } from "../components/StudySettings";
-import { useTour } from "../components/Tour";
+import { useTour, useImportTour } from "../components/Tour";
 import { notify } from "../lib/notifications";
 
 export function Settings() {
   const { theme, toggle } = useTheme();
   const { start } = useTour();
+  const { start: startImportTour } = useImportTour();
   const { courseId, setCourseId } = useActiveCourse();
   const navigate = useNavigate();
   const queryClient = useQueryClient();
   const confirm = useConfirm();
   const { data: config } = useCourseConfig(courseId);
+  const [persistence, setPersistence] = useState<boolean | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    void requestPersistentStorage().then((value) => {
+      if (!cancelled) setPersistence(value);
+    });
+    return () => { cancelled = true; };
+  }, []);
 
   return (
     <div className="mx-auto max-w-2xl space-y-5">
@@ -60,7 +70,28 @@ export function Settings() {
         </div>
       </Panel>
 
-      <StudySettings courseId={courseId} />
+      <Panel>
+        <div className="flex items-center justify-between gap-4 p-5">
+          <div>
+            <p className="font-medium">Replay the import tutorial</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Walk through how to turn a past paper into questions for this course.
+            </p>
+          </div>
+          <Button variant="outline" onClick={startImportTour}>
+            Start tutorial
+          </Button>
+        </div>
+      </Panel>
+
+      <Panel>
+         <div className="p-5">
+           <p className="font-medium">Storage persistence</p>
+           <p className="mt-1 text-sm text-muted-foreground">{describeStoragePersistence(persistence)}</p>
+         </div>
+       </Panel>
+
+       <StudySettings courseId={courseId} />
 
       <InstitutionManager courseId={courseId} />
 

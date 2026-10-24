@@ -1,6 +1,21 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mcqOptionBlocks } from "../src/lib/examLayout.ts";
+import { registerHooks } from "node:module";
+
+registerHooks({
+  resolve(specifier, context, next) {
+    if (
+      specifier.startsWith(".") &&
+      !/\.[cm]?[jt]sx?$/.test(specifier) &&
+      !specifier.endsWith(".css")
+    ) {
+      return next(`${specifier}.ts`, context);
+    }
+    return next(specifier, context);
+  },
+});
+
+const { mcqOptionBlocks } = await import("../src/lib/examLayout.ts");
 
 function question(mcq_options) {
   return { question_id: "q1", body: [], parts: [], mcq_options };

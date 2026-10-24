@@ -23,6 +23,11 @@ export interface DifficultyLevel {
   label: string;
 }
 
+export interface GlossaryTerm {
+  term: string;
+  definition: string;
+}
+
 export interface CourseNode {
   node_id: string;
   course_id: string;
@@ -42,6 +47,7 @@ export interface CourseFullConfig {
   hierarchy: LevelDef[];
   allow_multi_classification: boolean;
   difficulty_levels: DifficultyLevel[];
+  glossary?: GlossaryTerm[];
   question_types: string[];
   tags: string[];
   nodes: CourseNode[];
@@ -172,7 +178,6 @@ export interface TestSectionResult {
   marks: number;
   count_requested: number | null;
   marks_requested: number | null;
-  selection_limited?: boolean;
 }
 
 export interface GeneratedTestMeta {

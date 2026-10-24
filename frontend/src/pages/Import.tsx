@@ -8,7 +8,9 @@ import { Button } from "../components/ui/button";
 import { Upload, FileJson } from "lucide-react";
 import JSZip from "jszip";
 import * as idb from "../lib/db/indexeddb";
+import { all } from "../lib/db/sqlite";
 import { newId } from "../lib/id";
+import { contentHash } from "../lib/storage";
 import { ensureAssetUrl, deleteUnclaimedAssetBlobs } from "../lib/assets";
 import { notify } from "../lib/notifications";
 
@@ -59,8 +61,30 @@ async function parseQuestionBundle(file: File) {
     for (const part of question.parts ?? []) collectQuestion(part);
   };
   for (const question of payload.questions) collectQuestion(question);
+
+  const existingAssets = new Set<string>([
+    ...await idb.listAssetIds(),
+    ...(await all<{ asset_id: string }>("SELECT asset_id FROM asset")).map((r) => r.asset_id),
+  ]);
+  const hashToTarget = new Map<string, string>();
   for (const oldId of referencedAssetIds) {
-    if (blobs.has(oldId)) assetMap.set(oldId, newId("asset"));
+    const blob = blobs.get(oldId);
+    if (!blob) continue;
+    const bytes = new Uint8Array(await blob.arrayBuffer());
+    const hash = await contentHash(bytes);
+    let target: string;
+    if (existingAssets.has(hash)) {
+      target = hash;
+    } else if (hashToTarget.has(hash)) {
+      target = hashToTarget.get(hash)!;
+    } else if (existingAssets.has(oldId)) {
+      target = newId("asset");
+    } else {
+      target = oldId;
+    }
+    hashToTarget.set(hash, target);
+    if (target !== oldId) assetMap.set(oldId, target);
+    existingAssets.add(target);
   }
 
   const rewriteQuestion = (question: any) => {
@@ -84,12 +108,18 @@ async function parseQuestionBundle(file: File) {
   };
   for (const question of payload.questions) rewriteQuestion(question);
 
-  for (const [oldId, newAssetId] of assetMap) {
+  const targetIds: string[] = [];
+  for (const oldId of referencedAssetIds) {
+    const target = assetMap.get(oldId) ?? oldId;
+    targetIds.push(target);
     const blob = blobs.get(oldId);
-    if (blob) await idb.putAsset(newAssetId, blob);
+    if (blob) {
+      const already = await idb.getAsset(target);
+      if (!already) await idb.putAsset(target, blob);
+    }
   }
-  for (const id of assetMap.values()) await ensureAssetUrl(id);
-  return { ...payload, questions: payload.questions, assetIds: [...assetMap.values()] };
+  for (const id of new Set(targetIds)) await ensureAssetUrl(id);
+  return { ...payload, questions: payload.questions, assetIds: [...new Set(targetIds)] };
 }
 
 export function Import() {
@@ -178,7 +208,10 @@ export function Import() {
       </Panel>
 
       <Panel className="p-6">
-        <label className="grid min-h-48 cursor-pointer place-items-center rounded-lg border border-dashed border-border bg-surface/40 p-6 text-center">
+        <label
+          data-tour="import-upload"
+          className="grid min-h-48 cursor-pointer place-items-center rounded-lg border border-dashed border-border bg-surface/40 p-6 text-center"
+        >
           <input
             type="file"
             accept=".json,.qbx,application/json,application/zip"

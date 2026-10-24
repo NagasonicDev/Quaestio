@@ -24,6 +24,7 @@ import { contentOf, formatMarks, formatSourceBracket, marksLabel, solutionSlots,
 import { inlineMathImageId, resolveEquations, resolveImages, yieldToUi, type ResolvedImage } from "./resolvers";
 import { latexToPlain, splitRichTokens } from "./mathText";
 import { logTiming } from "./timing";
+import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
 import {
   EXAM,
   buildExamPaperPlan,
@@ -61,6 +62,8 @@ export interface DocOptions {
   courseName: string;
   achievedMarks: number;
   sections: DocSection[];
+  /** Exam policy for the cover and timings; defaults to the NESA HSC profile. */
+  profile?: ExamProfile;
   resolvedImages?: Map<string, ResolvedImage>;
   stimuli?: DocStimulusItem[];
   onQuestionProgress?: (completed: number, total: number) => void;
@@ -487,7 +490,7 @@ function hscCoverPage(children: Array<Paragraph | Table>, opts: DocOptions): voi
   const plan = buildExamPaperPlan(opts);
   children.push(
     new Paragraph({
-      children: [runProps({ text: EXAM.certificateLine, bold: true })],
+      children: [runProps({ text: DEFAULT_EXAM_PROFILE.coverTitle, bold: true })],
       alignment: AlignmentType.CENTER,
       spacing: { after: 120 },
     }),

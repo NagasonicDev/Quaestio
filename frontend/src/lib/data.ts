@@ -1,10 +1,16 @@
 import { all, flush, getFirst, run, runMany, transaction } from "./db/sqlite";
-import { newId, newQuestionId, nowUtc } from "./id";
-import { deleteAssetBlob, finalizeQuestionAssets } from "./assets";
+import { claimQuestionId, newId, newQuestionId, nowUtc } from "./id";
+import {
+  countAssetReferences,
+  deleteAssetBlob,
+  deleteUnreferencedAssetBlob,
+  finalizeQuestionAssets,
+  findUnreferencedAssetIds,
+} from "./assets";
 import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles, storeTestSolutionFile } from "./tests";
+import { buildExamDocument, parseExamDocument } from "./examDocument";
 import { getTestFile } from "./db/indexeddb";
-import { buildDocxSolutions } from "./docx";
-import { buildPdfSolutions } from "./pdf";
+import { createRenderer } from "./paperRenderer";
 import { logTiming } from "./timing";
 import type {
   AttemptInput,
@@ -15,6 +21,7 @@ import type {
   CourseFullConfig,
   CourseNode,
   DifficultyLevel,
+  GlossaryTerm,
   DueQueue,
   DueQueueItem,
   GeneratedTestMeta,
@@ -63,6 +70,7 @@ import type { PoolItem } from "./sessionPlan";
 import { EMPTY_ACTIVITY, describeMarkingMix, pickNextAction, rollupTopicActivity } from "./studyProgress";
 import type { NodeActivity } from "./studyProgress";
 import { selectQuestionIndexes } from "./questionSelection";
+import { recentlyUsedQuestionIds, parseQuestionIdList } from "./testHistory";
 
 // ---------- helpers ----------
 
@@ -137,7 +145,7 @@ async function courseRow(courseId: string): Promise<SqlRow | null> {
 export async function getCourseFullConfig(courseId: string): Promise<CourseFullConfig | null> {
   const course = await courseRow(courseId);
   if (!course) return null;
-  const [nodesRaw, typesRaw, tagsRaw, levelsRaw, diffsRaw] = await Promise.all([
+  const [nodesRaw, typesRaw, tagsRaw, levelsRaw, diffsRaw, glossRaw] = await Promise.all([
     all<SqlRow>("SELECT * FROM course_node WHERE course_id = ?", [courseId]),
     all<SqlRow>(
       "SELECT type_key FROM question_type WHERE course_id = ? OR course_id IS NULL ORDER BY type_key",
@@ -152,6 +160,10 @@ export async function getCourseFullConfig(courseId: string): Promise<CourseFullC
       "SELECT level, label FROM difficulty_level WHERE course_id = ? ORDER BY level",
       [courseId]
     ),
+    all<SqlRow>(
+      "SELECT term, definition FROM course_glossary WHERE course_id = ? ORDER BY term",
+      [courseId]
+    ),
   ]);
   return {
     course_id: course.course_id,
@@ -164,6 +176,7 @@ export async function getCourseFullConfig(courseId: string): Promise<CourseFullC
     })),
     allow_multi_classification: boolFrom(course, "allow_multi_classification"),
     difficulty_levels: diffsRaw.map((d) => ({ level: d.level, label: d.label })),
+    glossary: glossRaw.map((g) => ({ term: g.term, definition: g.definition })),
     question_types: typesRaw.map((t) => t.type_key),
     tags: tagsRaw.map((t) => t.name),
     nodes: buildNodeTree(nodesRaw),
@@ -209,6 +222,7 @@ export async function createCourse(payload: {
   is_sample?: boolean;
   hierarchy?: LevelDef[];
   difficulty_levels?: DifficultyLevel[];
+  glossary?: GlossaryTerm[];
   question_types?: string[];
 }): Promise<CourseFullConfig> {
   const courseId = newId("course");
@@ -239,15 +253,35 @@ export async function createCourse(payload: {
     );
   }
   const difficultyLevels = payload.difficulty_levels ?? [
-    { level: 1, label: "Very Easy" },
-    { level: 2, label: "Easy" },
-    { level: 3, label: "Difficult" },
-    { level: 4, label: "Very Difficult" },
+    ...Array.from({ length: 6 }, (_, index) => ({ level: index + 1, label: `Band ${index + 1}` })),
   ];
+  validateDifficultyLevelCount(difficultyLevels.length);
+  const seenDifficultyLevels = new Set<number>();
+  for (const d of difficultyLevels) {
+    if (!d || !String(d.label ?? "").trim()) throw new Error("Difficulty label is required.");
+    if (!Number.isInteger(d.level) || d.level < 1 || d.level > 10) {
+      throw new Error("Difficulty level must be an integer between 1 and 10.");
+    }
+    if (seenDifficultyLevels.has(d.level)) throw new Error(`Duplicate difficulty level ${d.level}.`);
+    seenDifficultyLevels.add(d.level);
+  }
   for (const d of difficultyLevels) {
     await run(
       "INSERT INTO difficulty_level (course_id, level, label) VALUES (?, ?, ?)",
       [courseId, d.level, d.label]
+    );
+  }
+  const glossaryTerms = payload.glossary ?? defaultGlossaryTerms();
+  const seenGlossary = new Set<string>();
+  for (const g of glossaryTerms) {
+    const term = String(g?.term ?? "").trim();
+    const definition = String(g?.definition ?? "").trim();
+    if (!term || !definition) continue;
+    if (seenGlossary.has(term.toLowerCase())) continue;
+    seenGlossary.add(term.toLowerCase());
+    await run(
+      "INSERT INTO course_glossary (course_id, term, definition) VALUES (?, ?, ?)",
+      [courseId, term, definition]
     );
   }
   const questionTypes =
@@ -268,15 +302,37 @@ export async function createCourse(payload: {
   return config;
 }
 
-export async function deleteCourse(courseId: string): Promise<void> {
+export async function deleteCourse(courseId: string, onDeleted?: () => void): Promise<void> {
   const course = await courseRow(courseId);
   if (!course) throw new Error("Course not found");
 
-  const roots = await all<SqlRow>(
-    "SELECT question_id FROM question WHERE course_id = ? AND parent_question_id IS NULL",
+  const assetIds = new Set<string>();
+  const blocks = await all<SqlRow>(
+    `SELECT cb.content_json FROM content_block cb
+     JOIN question q ON q.question_id = cb.question_id
+     WHERE q.course_id = ? AND cb.block_type IN ('image', 'diagram', 'graph')`,
     [courseId]
   );
-  for (const row of roots) await deleteAssetBlobsFor(String(row.question_id));
+  const options = await all<SqlRow>(
+    `SELECT mo.content_json FROM mcq_option mo
+     JOIN question q ON q.question_id = mo.question_id WHERE q.course_id = ?`,
+    [courseId]
+  );
+  for (const row of blocks) {
+    try {
+      const path = JSON.parse(String(row.content_json))?.asset_path;
+      if (typeof path === "string" && path) assetIds.add(path);
+    } catch { /* malformed JSON — skip */ }
+  }
+  for (const row of options) {
+    try {
+      const parsed = JSON.parse(String(row.content_json));
+      for (const block of Array.isArray(parsed) ? parsed : [parsed]) {
+        const path = block?.content?.asset_path;
+        if (typeof path === "string" && path) assetIds.add(path);
+      }
+    } catch { /* malformed JSON — skip */ }
+  }
 
   const tests = await all<SqlRow>("SELECT test_id FROM generated_test WHERE course_id = ?", [courseId]);
   for (const row of tests) await deleteTestOutputs(String(row.test_id));
@@ -299,6 +355,28 @@ export async function deleteCourse(courseId: string): Promise<void> {
     );
     database.run("DELETE FROM generated_test WHERE course_id = ?", [courseId]);
     database.run("DELETE FROM import_job WHERE course_id = ?", [courseId]);
+    database.run(
+      `UPDATE asset SET question_id = (
+         SELECT q.question_id FROM question q
+         WHERE q.course_id <> ? AND (
+           EXISTS (SELECT 1 FROM content_block cb WHERE cb.question_id = q.question_id AND cb.content_json LIKE '%' || asset.asset_id || '%')
+           OR EXISTS (SELECT 1 FROM mcq_option mo WHERE mo.question_id = q.question_id AND mo.content_json LIKE '%' || asset.asset_id || '%')
+         ) LIMIT 1
+       )
+       WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)
+         AND EXISTS (
+           SELECT 1 FROM question q
+           WHERE q.course_id <> ? AND (
+             EXISTS (SELECT 1 FROM content_block cb WHERE cb.question_id = q.question_id AND cb.content_json LIKE '%' || asset.asset_id || '%')
+             OR EXISTS (SELECT 1 FROM mcq_option mo WHERE mo.question_id = q.question_id AND mo.content_json LIKE '%' || asset.asset_id || '%')
+           )
+         )`,
+      [courseId, courseId, courseId]
+    );
+    database.run(
+      "DELETE FROM asset WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)",
+      [courseId]
+    );
     database.run("DELETE FROM question WHERE course_id = ?", [courseId]);
     database.run("DELETE FROM practice_session WHERE course_id = ?", [courseId]);
     database.run("UPDATE question_type SET course_id = NULL WHERE course_id = ? AND EXISTS (SELECT 1 FROM question WHERE question.type_key = question_type.type_key)", [courseId]);
@@ -311,6 +389,16 @@ export async function deleteCourse(courseId: string): Promise<void> {
     }
     database.run("DELETE FROM course WHERE course_id = ?", [courseId]);
   });
+  await flush();
+  onDeleted?.();
+  // Release shared content-hash blobs only when no remaining question references them.
+  const unreferencedAssets = await findUnreferencedAssetIds(assetIds);
+  if (unreferencedAssets.length) {
+    await transaction((database) => {
+      for (const assetId of unreferencedAssets) database.run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
+    });
+    await Promise.all(unreferencedAssets.map(deleteUnreferencedAssetBlob));
+  }
   await flush();
 }
 
@@ -389,6 +477,263 @@ export async function deleteLevel(courseId: string, levelIndex: number): Promise
     courseId,
     levelIndex,
   ]);
+}
+
+// ---------- difficulty levels ----------
+
+function validateDifficultyLevelCount(count: number) {
+  if (count < 2) throw new Error("A course must have at least 2 difficulty levels.");
+  if (count > 10) throw new Error("A course can have at most 10 difficulty levels.");
+}
+
+export async function addDifficultyLevel(courseId: string, difficulty: DifficultyLevel): Promise<DifficultyLevel> {
+  if (!difficulty || !String(difficulty.label ?? "").trim()) throw new Error("Difficulty label is required.");
+  if (!Number.isInteger(difficulty.level) || difficulty.level < 1 || difficulty.level > 10) {
+    throw new Error("Difficulty level must be an integer between 1 and 10.");
+  }
+  const existing = await getFirst<SqlRow>(
+    "SELECT level FROM difficulty_level WHERE course_id = ? AND level = ?",
+    [courseId, difficulty.level]
+  );
+  if (existing) throw new Error(`Difficulty level ${difficulty.level} already exists.`);
+  const countRow = await getFirst<SqlRow>(
+    "SELECT COUNT(*) AS c FROM difficulty_level WHERE course_id = ?",
+    [courseId]
+  );
+  const count = Number(countRow?.c ?? 0);
+  if (count >= 10) throw new Error("A course can have at most 10 difficulty levels.");
+  const label = String(difficulty.label).trim();
+  await run(
+    "INSERT INTO difficulty_level (course_id, level, label) VALUES (?, ?, ?)",
+    [courseId, difficulty.level, label]
+  );
+  return { level: difficulty.level, label };
+}
+
+export async function updateDifficultyLevel(
+  courseId: string,
+  level: number,
+  difficulty: DifficultyLevel
+): Promise<DifficultyLevel>;
+export async function updateDifficultyLevel(
+  courseId: string,
+  difficulty: DifficultyLevel
+): Promise<DifficultyLevel>;
+export async function updateDifficultyLevel(
+  courseId: string,
+  levelOrDifficulty: number | DifficultyLevel,
+  maybeDifficulty?: DifficultyLevel
+): Promise<DifficultyLevel> {
+  const difficulty =
+    typeof levelOrDifficulty === "number" ? (maybeDifficulty as DifficultyLevel) : (levelOrDifficulty as DifficultyLevel);
+  const level =
+    typeof levelOrDifficulty === "number" ? levelOrDifficulty : (levelOrDifficulty as DifficultyLevel).level;
+  const existing = await getFirst<SqlRow>(
+    "SELECT level FROM difficulty_level WHERE course_id = ? AND level = ?",
+    [courseId, level]
+  );
+  if (!existing) throw new Error("Difficulty level not found.");
+  if (!difficulty || !String(difficulty.label ?? "").trim()) throw new Error("Difficulty label is required.");
+  if (!Number.isInteger(difficulty.level) || difficulty.level < 1 || difficulty.level > 10) {
+    throw new Error("Difficulty level must be an integer between 1 and 10.");
+  }
+  const label = String(difficulty.label).trim();
+  if (difficulty.level !== level) {
+    const target = await getFirst<SqlRow>(
+      "SELECT level FROM difficulty_level WHERE course_id = ? AND level = ?",
+      [courseId, difficulty.level]
+    );
+    if (target) throw new Error(`Difficulty level ${difficulty.level} already exists.`);
+    await run("UPDATE question SET difficulty = ? WHERE course_id = ? AND difficulty = ?", [
+      difficulty.level,
+      courseId,
+      level,
+    ]);
+    await run(
+      "UPDATE difficulty_level SET level = ?, label = ? WHERE course_id = ? AND level = ?",
+      [difficulty.level, label, courseId, level]
+    );
+  } else {
+    await run(
+      "UPDATE difficulty_level SET label = ? WHERE course_id = ? AND level = ?",
+      [label, courseId, level]
+    );
+  }
+  return { level: difficulty.level, label };
+}
+
+export async function deleteDifficultyLevel(courseId: string, level: number | DifficultyLevel): Promise<void> {
+  const lvl = typeof level === "number" ? level : (level as DifficultyLevel).level;
+  const existing = await getFirst<SqlRow>(
+    "SELECT level FROM difficulty_level WHERE course_id = ? AND level = ?",
+    [courseId, lvl]
+  );
+  if (!existing) throw new Error("Difficulty level not found.");
+  const countRow = await getFirst<SqlRow>(
+    "SELECT COUNT(*) AS c FROM difficulty_level WHERE course_id = ?",
+    [courseId]
+  );
+  const count = Number(countRow?.c ?? 0);
+  if (count <= 2) throw new Error("A course must have at least 2 difficulty levels.");
+  const inUse = await getFirst<SqlRow>(
+    "SELECT question_id FROM question WHERE course_id = ? AND difficulty = ? LIMIT 1",
+    [courseId, lvl]
+  );
+  if (inUse) {
+    throw new Error("Cannot delete a difficulty level that is still used by questions.");
+  }
+  await run("DELETE FROM difficulty_level WHERE course_id = ? AND level = ?", [courseId, lvl]);
+}
+
+export async function updateCourseDifficultyLevels(courseId: string, levels: DifficultyLevel[]): Promise<void> {
+  if (!Array.isArray(levels)) throw new Error("Difficulty levels must be an array.");
+  validateDifficultyLevelCount(levels.length);
+  const seen = new Set<number>();
+  for (const d of levels) {
+    if (!d || !String(d.label ?? "").trim()) throw new Error("Difficulty label is required.");
+    if (!Number.isInteger(d.level) || d.level < 1 || d.level > 10) {
+      throw new Error("Difficulty level must be an integer between 1 and 10.");
+    }
+    if (seen.has(d.level)) throw new Error(`Duplicate difficulty level ${d.level}.`);
+    seen.add(d.level);
+  }
+  const existingRows = await all<SqlRow>(
+    "SELECT level FROM difficulty_level WHERE course_id = ?",
+    [courseId]
+  );
+  const existingLevels = existingRows.map((r) => Number(r.level));
+  for (const old of existingLevels) {
+    if (!levels.some((d) => d.level === old)) {
+      const inUse = await getFirst<SqlRow>(
+        "SELECT question_id FROM question WHERE course_id = ? AND difficulty = ? LIMIT 1",
+        [courseId, old]
+      );
+      if (inUse) throw new Error("Cannot remove a difficulty level that is still used by questions.");
+    }
+  }
+  await transaction(async () => {
+    for (const d of levels) {
+      const label = String(d.label).trim();
+      if (existingLevels.includes(d.level)) {
+        await run(
+          "UPDATE difficulty_level SET label = ? WHERE course_id = ? AND level = ?",
+          [label, courseId, d.level]
+        );
+      } else {
+        await run(
+          "INSERT INTO difficulty_level (course_id, level, label) VALUES (?, ?, ?)",
+          [courseId, d.level, label]
+        );
+      }
+    }
+    for (const old of existingLevels) {
+      if (!levels.some((d) => d.level === old)) {
+        await run("DELETE FROM difficulty_level WHERE course_id = ? AND level = ?", [courseId, old]);
+      }
+    }
+  });
+}
+
+// aliases
+export const addDifficulty = addDifficultyLevel;
+export const updateDifficulty = updateDifficultyLevel;
+export const deleteDifficulty = deleteDifficultyLevel;
+export const updateDifficultyLevels = updateCourseDifficultyLevels;
+
+// ---------- glossary ----------
+export function defaultGlossaryTerms(): GlossaryTerm[] {
+  return [
+    { term: "analyse", definition: "Identify components and the relationship between them; draw out and relate implications." },
+    { term: "apply", definition: "Use, utilise or employ in a particular situation." },
+    { term: "assess", definition: "Make a judgement of value, quality, outcomes, results or size." },
+    { term: "calculate", definition: "Find a numerical answer, showing relevant working." },
+    { term: "compare", definition: "Estimate, measure or note how things are similar or different." },
+    { term: "contrast", definition: "Show how things are different or opposite." },
+    { term: "define", definition: "Give precise meaning." },
+    { term: "describe", definition: "Provide characteristics and features." },
+    { term: "discuss", definition: "Identify issues and provide points for and/or against." },
+    { term: "distinguish", definition: "Recognise or note/indicate as being distinct or different from; note differences between." },
+    { term: "evaluate", definition: "Make a judgement based on criteria; determine the value of." },
+    { term: "explain", definition: "Relate cause and effect; make the relationships between things evident; provide why and/or how." },
+    { term: "identify", definition: "Recognise and name." },
+    { term: "justify", definition: "Support an argument or conclusion with evidence." },
+    { term: "outline", definition: "Sketch in general terms; indicate the main features of." },
+    { term: "predict", definition: "Suggest what may happen based on available information." },
+    { term: "summarise", definition: "Express, concisely, the relevant details." },
+  ];
+}
+
+export async function listGlossary(courseId: string): Promise<GlossaryTerm[]> {
+  const rows = await all<SqlRow>(
+    "SELECT term, definition FROM course_glossary WHERE course_id = ? ORDER BY term",
+    [courseId]
+  );
+  return rows.map((r) => ({ term: String(r.term), definition: String(r.definition) }));
+}
+
+export async function addGlossaryTerm(courseId: string, term: string, definition: string): Promise<GlossaryTerm> {
+  const t = String(term ?? "").trim();
+  const d = String(definition ?? "").trim();
+  if (!t) throw new Error("Term is required.");
+  if (!d) throw new Error("Definition is required.");
+  const existing = await getFirst<SqlRow>(
+    "SELECT term FROM course_glossary WHERE course_id = ? AND term = ?",
+    [courseId, t]
+  );
+  if (existing) throw new Error(`Glossary term "${t}" already exists.`);
+  await run("INSERT INTO course_glossary (course_id, term, definition) VALUES (?, ?, ?)", [courseId, t, d]);
+  return { term: t, definition: d };
+}
+
+export async function updateGlossaryTerm(courseId: string, oldTerm: string, newTerm: string, definition: string): Promise<GlossaryTerm> {
+  const old = String(oldTerm ?? "").trim();
+  const nt = String(newTerm ?? "").trim();
+  const d = String(definition ?? "").trim();
+  if (!old) throw new Error("Term is required.");
+  if (!nt) throw new Error("Term is required.");
+  if (!d) throw new Error("Definition is required.");
+  const existing = await getFirst<SqlRow>(
+    "SELECT term FROM course_glossary WHERE course_id = ? AND term = ?",
+    [courseId, old]
+  );
+  if (!existing) throw new Error("Glossary term not found.");
+  if (nt !== old) {
+    const target = await getFirst<SqlRow>(
+      "SELECT term FROM course_glossary WHERE course_id = ? AND term = ?",
+      [courseId, nt]
+    );
+    if (target) throw new Error(`Glossary term "${nt}" already exists.`);
+    await run("DELETE FROM course_glossary WHERE course_id = ? AND term = ?", [courseId, old]);
+    await run("INSERT INTO course_glossary (course_id, term, definition) VALUES (?, ?, ?)", [courseId, nt, d]);
+  } else {
+    await run("UPDATE course_glossary SET definition = ? WHERE course_id = ? AND term = ?", [d, courseId, old]);
+  }
+  return { term: nt, definition: d };
+}
+
+export async function deleteGlossaryTerm(courseId: string, term: string): Promise<void> {
+  const t = String(term ?? "").trim();
+  await run("DELETE FROM course_glossary WHERE course_id = ? AND term = ?", [courseId, t]);
+}
+
+export async function updateCourseGlossary(courseId: string, terms: GlossaryTerm[]): Promise<void> {
+  if (!Array.isArray(terms)) throw new Error("Glossary must be an array.");
+  const seen = new Set<string>();
+  const cleaned: GlossaryTerm[] = [];
+  for (const g of terms) {
+    const term = String(g?.term ?? "").trim();
+    const definition = String(g?.definition ?? "").trim();
+    if (!term || !definition) continue;
+    if (seen.has(term.toLowerCase())) throw new Error(`Duplicate glossary term "${term}".`);
+    seen.add(term.toLowerCase());
+    cleaned.push({ term, definition });
+  }
+  await transaction(async () => {
+    await run("DELETE FROM course_glossary WHERE course_id = ?", [courseId]);
+    for (const g of cleaned) {
+      await run("INSERT INTO course_glossary (course_id, term, definition) VALUES (?, ?, ?)", [courseId, g.term, g.definition]);
+    }
+  });
 }
 
 // ---------- nodes ----------
@@ -1249,17 +1594,46 @@ export async function updateQuestion(
   return hydrateQuestion(questionId);
 }
 
-async function deleteAssetBlobsFor(questionId: string): Promise<void> {
-  const ids = await all<SqlRow>("SELECT asset_id FROM asset WHERE question_id = ?", [
-    questionId,
-  ]);
-  for (const row of ids) await deleteAssetBlob(row.asset_id);
+async function collectAssetIds(questionId: string, into: Set<string>): Promise<void> {
+  // Scan content blocks (body/answer/solution/etc.) for asset_path references.
+  const blocks = await all<SqlRow>(
+    "SELECT content_json FROM content_block WHERE question_id = ?",
+    [questionId]
+  );
+  for (const block of blocks) {
+    try {
+      const content = JSON.parse(String(block.content_json));
+      const path = content?.asset_path;
+      if (typeof path === "string" && path) into.add(path);
+    } catch {
+      /* malformed JSON — skip */
+    }
+  }
+  // Scan MCQ option content blocks for asset_path references.
+  const mcqOpts = await all<SqlRow>(
+    "SELECT content_json FROM mcq_option WHERE question_id = ?",
+    [questionId]
+  );
+  for (const opt of mcqOpts) {
+    try {
+      const parsed = JSON.parse(String(opt.content_json));
+      const arr = Array.isArray(parsed) ? parsed : [parsed];
+      for (const block of arr) {
+        const path = block?.content?.asset_path;
+        if (typeof path === "string" && path) into.add(path);
+      }
+    } catch {
+      /* malformed JSON — skip */
+    }
+  }
+  // Recurse into child parts.
   const children = await all<SqlRow>(
     "SELECT question_id FROM question WHERE parent_question_id = ?",
     [questionId]
   );
-  for (const child of children) await deleteAssetBlobsFor(child.question_id);
+  for (const child of children) await collectAssetIds(String(child.question_id), into);
 }
+
 
 export async function deleteQuestion(questionId: string): Promise<void> {
   const existing = await getFirst<SqlRow>(
@@ -1267,12 +1641,21 @@ export async function deleteQuestion(questionId: string): Promise<void> {
     [questionId]
   );
   if (!existing) throw new Error("Question not found");
+  // Collect the blobs before the rows go, release them after.
+  const assetIds = new Set<string>();
+  await collectAssetIds(questionId, assetIds);
   await run("DELETE FROM practice_attempt WHERE question_id = ?", [questionId]);
   await run("UPDATE import_question SET final_question_id = NULL WHERE final_question_id = ?", [
     questionId,
   ]);
-  await deleteAssetBlobsFor(questionId);
   await run("DELETE FROM question WHERE question_id = ?", [questionId]);
+  // Release shared content-hash blobs only when no remaining question references them.
+  for (const assetId of assetIds) {
+    if (await countAssetReferences(assetId) === 0) {
+      await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
+      await deleteAssetBlob(assetId);
+    }
+  }
 }
 
 /** Delete several question trees atomically. Deleting one at a time left a
@@ -1285,12 +1668,20 @@ export async function deleteQuestions(questionIds: string[]): Promise<void> {
     `SELECT question_id FROM question WHERE question_id IN (${placeholders})`,
     ids
   );
-  for (const row of roots) await deleteAssetBlobsFor(String(row.question_id));
+  const assetIds = new Set<string>();
+  for (const row of roots) await collectAssetIds(String(row.question_id), assetIds);
   await runMany([
     [`DELETE FROM practice_attempt WHERE question_id IN (${placeholders})`, ids],
     [`UPDATE import_question SET final_question_id = NULL WHERE final_question_id IN (${placeholders})`, ids],
     [`DELETE FROM question WHERE question_id IN (${placeholders})`, ids],
   ]);
+  // Release shared content-hash blobs only when no remaining question references them.
+  for (const assetId of assetIds) {
+    if (await countAssetReferences(assetId) === 0) {
+      await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
+      await deleteAssetBlob(assetId);
+    }
+  }
 }
 
 /** Remove question content and its related data while preserving all course structure. */
@@ -1309,9 +1700,17 @@ export async function clearQuestions(): Promise<void> {
   const roots = await all<SqlRow>(
     "SELECT question_id FROM question WHERE parent_question_id IS NULL"
   );
-  for (const row of roots) await deleteAssetBlobsFor(String(row.question_id));
+  const assetIds = new Set<string>();
+  for (const row of roots) await collectAssetIds(String(row.question_id), assetIds);
   await run("DELETE FROM question");
   await run("DELETE FROM source");
+  // Release shared content-hash blobs only when no remaining question references them.
+  for (const assetId of assetIds) {
+    if (await countAssetReferences(assetId) === 0) {
+      await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
+      await deleteAssetBlob(assetId);
+    }
+  }
   // Settings reloads immediately after this resolves. Persist synchronously so
   // the reload cannot restore the pre-clear database from IndexedDB.
   await flush();
@@ -2548,6 +2947,8 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
   );
 
   const questions: any[] = data?.questions ?? [];
+  const existingQuestionIds = await all<{ question_id: string }>("SELECT question_id FROM question");
+  const usedQuestionIds = new Set(existingQuestionIds.map((row) => String(row.question_id)));
   const results: ImportResponse["results"] = [];
   let importedCount = 0;
   let errorCount = 0;
@@ -2676,7 +3077,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
         [sourceId, q.source.name, q.source.year ?? null, q.source.institution ?? null, q.source.original_question_no ?? null]
       );
     }
-    const parentId = newQuestionId();
+    const parentId = claimQuestionId(q.question_id, usedQuestionIds);
     await run(
       `INSERT INTO question (question_id, course_id, type_key, difficulty, marks, review_status, classification_confidence, source_id, created_at, updated_at)
        VALUES (?, ?, ?, ?, ?, 'approved', ?, ?, ?, ?)`,
@@ -2707,7 +3108,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
     await runMany(statements);
     await finalizeAssetsForStatements(parentId, statements);
     const importPart = async (part: any, partParentId: string, inheritedType: string): Promise<void> => {
-      const partId = newQuestionId();
+      const partId = claimQuestionId(part.question_id, usedQuestionIds);
       await run(
         `INSERT INTO question (question_id, course_id, type_key, marks, parent_question_id, part_label, review_status, created_at, updated_at)
          VALUES (?, ?, ?, ?, ?, ?, 'approved', ?, ?)`,
@@ -2748,8 +3149,12 @@ export interface GenerateTestPayload {
   target_marks?: number;
   format?: "docx" | "pdf";
   shuffle?: boolean;
+  ordering?: string;
   sections?: TestSectionInput[];
-  selectionTimeoutMs?: number;
+  /** Exclude questions used by this many most recent tests (0 = off). */
+  excludeRecentTests?: number;
+  /** Question ids to keep in the paper; the solver fills the rest. */
+  keepQuestionIds?: string[];
   onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void;
 }
 
@@ -2836,13 +3241,57 @@ export async function estimateTestSections(
   }));
 }
 
-function shuffleList<T>(items: T[]): T[] {
-  const arr = [...items];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
+const TYPE_ORDER: Record<string, number> = {
+  multiple_choice: 0,
+  short_answer: 1,
+  extended_response: 2,
+};
+
+/**
+ * Order a section for the paper: multiple choice, then short answer, then
+ * extended response, and ascending difficulty within each type. `shuffle`
+ * false keeps a stable topic-then-id order instead of `created_at`.
+ */
+export type QuestionOrdering = "random" | "sequential" | "difficulty";
+
+function resolveOrdering(ordering: unknown): QuestionOrdering {
+  if (typeof ordering === "boolean") return ordering ? "random" : "sequential";
+  if (typeof ordering === "string") {
+    const v = ordering.toLowerCase().trim();
+    if (v === "difficulty" || v === "by_difficulty" || v === "by difficulty" || v === "difficulty (easiest first)") return "difficulty";
+    if (v === "sequential" || v === "sequential (oldest first)" || v === "oldest" || v === "oldest first") return "sequential";
+    if (v === "random" || v === "random selection") return "random";
+    return "random";
   }
-  return arr;
+  if (ordering && typeof ordering === "object") {
+    const o = ordering as { shuffle?: boolean; ordering?: unknown };
+    if (o.ordering !== undefined) return resolveOrdering(o.ordering);
+    if (typeof o.shuffle === "boolean") return o.shuffle ? "random" : "sequential";
+  }
+  return "random";
+}
+
+export function orderSectionQuestions(
+  questions: Question[],
+  ordering: unknown = "random",
+  ...rest: unknown[]
+): Question[] {
+  // Allow orderSectionQuestions(qs, shuffle, ordering) style calls.
+  if (rest.length && typeof rest[rest.length - 1] === "string") {
+    ordering = rest[rest.length - 1];
+  }
+  const mode = resolveOrdering(ordering);
+  const byTopicThenId = (a: Question, b: Question) =>
+    (a.node_ids?.[0] ?? "").localeCompare(b.node_ids?.[0] ?? "") || a.question_id.localeCompare(b.question_id);
+  if (mode === "sequential") return [...questions].sort(byTopicThenId);
+  if (mode === "difficulty") {
+    return [...questions].sort((a, b) => (a.difficulty ?? 0) - (b.difficulty ?? 0)
+      || (TYPE_ORDER[a.type_key] ?? 9) - (TYPE_ORDER[b.type_key] ?? 9)
+      || byTopicThenId(a, b));
+  }
+  return [...questions].sort((a, b) => (TYPE_ORDER[a.type_key] ?? 9) - (TYPE_ORDER[b.type_key] ?? 9)
+    || (a.difficulty ?? 0) - (b.difficulty ?? 0)
+    || byTopicThenId(a, b));
 }
 
 function round2(n: number): number {
@@ -2860,26 +3309,33 @@ async function selectForMarks(
   courseId: string,
   target: number,
   opts: Parameters<typeof matchingQuestionIds>[1],
-  selectionDeadline = Infinity,
+  excludeIds: ReadonlySet<string>,
+  keepIds: ReadonlySet<string>,
   onHydrating?: () => void,
   cachedCandidates?: Promise<SqlRow[]>,
   timingPrefix?: string
-): Promise<{ questions: Question[]; selectionLimited: boolean }> {
+): Promise<{ questions: Question[]; infeasible: boolean; nearestBelow: number; nearestAbove: number | null }> {
   const queryStart = performance.now();
   if (timingPrefix) performance.mark(`${timingPrefix}:candidate-query:start`);
   const rows = [...await (cachedCandidates ?? matchingQuestionMarks(courseId, opts))];
   if (timingPrefix) recordGenerationTiming(`${timingPrefix}:candidate-query`, queryStart);
-  // Shuffle only question IDs and marks in memory; full question data is loaded after selection.
-  for (let i = rows.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [rows[i], rows[j]] = [rows[j], rows[i]];
-  }
+  // A question already used in another section must not be selected again;
+  // author-pinned questions must be. Both are index sets into this section.
+  const excluded = new Set<number>();
+  const kept = new Set<number>();
+  rows.forEach((row, index) => {
+    const id = String(row.question_id);
+    // An author-pinned question wins over the usage-history exclusion, so a
+    // deliberately kept question is never dropped silently.
+    if (keepIds.has(id)) kept.add(index);
+    else if (excludeIds.has(id)) excluded.add(index);
+  });
   const selectionStart = performance.now();
   if (timingPrefix) performance.mark(`${timingPrefix}:selection:start`);
-  const { indexes, selectionLimited } = selectQuestionIndexes(
+  const { indexes, infeasible, nearestBelow, nearestAbove } = selectQuestionIndexes(
     rows.map((row) => Number(row.marks)),
-    Math.max(1, Math.round(target * 100)),
-    { deadline: selectionDeadline }
+    target,
+    { excludeIndexes: excluded, keepIndexes: kept }
   );
   const pickedRows = indexes.map((index) => rows[index]);
   if (timingPrefix) recordGenerationTiming(`${timingPrefix}:selection`, selectionStart);
@@ -2890,7 +3346,9 @@ async function selectForMarks(
   if (timingPrefix) recordGenerationTiming(`${timingPrefix}:hydration`, hydrateStart);
   return {
     questions,
-    selectionLimited,
+    infeasible: Boolean(infeasible),
+    nearestBelow: nearestBelow ?? 0,
+    nearestAbove: nearestAbove ?? null,
   };
 }
 
@@ -2899,11 +3357,18 @@ async function sectionQuestions(
   index: number,
   sec: TestSectionInput,
   config: CourseFullConfig,
-  selectionDeadline: number,
+  usedQuestionIds: ReadonlySet<string>,
+  keepQuestionIds: ReadonlySet<string>,
   onHydrating: () => void,
   candidateCache: Map<string, Promise<SqlRow[]>>,
   timingPrefix: string
-): Promise<{ questions: Question[]; marks: number; selectionLimited: boolean }> {
+): Promise<{
+  questions: Question[];
+  marks: number;
+  infeasible: boolean;
+  nearestBelow: number;
+  nearestAbove: number | null;
+}> {
   const hasMarks = sec.marks !== undefined && sec.marks !== null;
   if (!hasMarks) throw new Error(`Section ${index}: set a marks target.`);
   const opts = {
@@ -2929,16 +3394,40 @@ async function sectionQuestions(
     candidateCache.set(signature, cachedCandidates);
   }
   const display = sec.name || `Section ${index + 1}`;
-  const { questions, selectionLimited } = await selectForMarks(courseId, sec.marks!, opts, selectionDeadline, onHydrating, cachedCandidates, timingPrefix);
+  const result = await selectForMarks(courseId, sec.marks!, opts, usedQuestionIds, keepQuestionIds, onHydrating, cachedCandidates, timingPrefix);
+  const { questions, infeasible, nearestBelow, nearestAbove } = result;
   const secMarks = round2(questions.reduce((sum, q) => sum + (q.marks ?? 0), 0));
   if (!questions.length) {
     throw new Error(
       `No approved questions match ${display}. Try widening the topics/type filters, or set marks on matching questions.`
     );
   }
+  if (infeasible) {
+    // Never approximate silently: say why and what is actually achievable.
+    const available = await estimateSectionMarks(courseId, opts);
+    throw new Error(
+      `${display} cannot hit ${sec.marks} marks. ${available} marks are available in this section, ` +
+        `so the nearest achievable totals are ${nearestBelow} marks or ${nearestAbove ?? "none above"}. ` +
+        `Lower the target to ${nearestBelow}${nearestAbove ? ` or raise it to ${nearestAbove}` : ""}, or widen the filters.`
+    );
+  }
   const _ = config; // selection is course-scoped already
   void _;
-  return { questions, marks: secMarks, selectionLimited };
+  return { questions, marks: secMarks, infeasible, nearestBelow, nearestAbove };
+}
+
+/** Approved, unexcluded marks available to a section — for infeasibility messages. */
+async function estimateSectionMarks(courseId: string, opts: Parameters<typeof matchingQuestionIds>[1]): Promise<number> {
+  const f = buildFilters({
+    courseId, approvedOnly: true, wholeQuestions: true,
+    typeKeys: opts.type_keys, difficulties: opts.difficulties, nodeIds: opts.node_ids,
+    institutionYears: opts.institutionYears,
+  });
+  const row = await getFirst<SqlRow>(
+    `SELECT COUNT(*) AS n, COALESCE(SUM(q.marks), 0) AS marks FROM question q WHERE ${f.where.join(" AND ")} AND q.marks IS NOT NULL`,
+    f.params
+  );
+  return Number(row?.marks ?? 0);
 }
 
 export async function generateTest(
@@ -2974,20 +3463,35 @@ export async function generateTest(
   const selectionStart = performance.now();
   performance.mark(`${timingPrefix}:selection-and-hydration:start`);
   payload.onProgress?.({ phase: "selecting" });
-  const selectionDeadline = performance.now() + (payload.selectionTimeoutMs ?? Infinity);
   const candidateCache = new Map<string, Promise<SqlRow[]>>();
-  const selected = await Promise.all(work.map((sec, i) => sectionQuestions(
-    courseId, i, sec, config, selectionDeadline,
-    () => payload.onProgress?.({ phase: "hydrating" }),
-    candidateCache,
-    `${timingPrefix}:section-${i + 1}`
-  )));
+  // Usage history: never repeat questions from the last N tests when asked.
+  const usedQuestionIds = new Set<string>();
+  if (payload.excludeRecentTests && payload.excludeRecentTests > 0) {
+    const recent = await all<SqlRow>(
+      `SELECT question_ids_json FROM generated_test WHERE course_id = ? ORDER BY created_at DESC LIMIT ?`,
+      [courseId, payload.excludeRecentTests]
+    );
+    for (const id of recentlyUsedQuestionIds(recent, payload.excludeRecentTests)) usedQuestionIds.add(id);
+  }
+  const keepQuestionIds = new Set(payload.keepQuestionIds ?? []);
+  // Sections are solved in user-given order; each section excludes ids already
+  // taken by earlier sections.
+  const selected: Array<{ questions: Question[]; marks: number; infeasible: boolean; nearestBelow: number; nearestAbove: number | null }> = [];
+  for (let i = 0; i < work.length; i++) {
+    selected.push(await sectionQuestions(
+      courseId, i, work[i], config, usedQuestionIds, keepQuestionIds,
+      () => payload.onProgress?.({ phase: "hydrating" }),
+      candidateCache,
+      `${timingPrefix}:section-${i + 1}`
+    ));
+    for (const q of selected[i].questions) usedQuestionIds.add(q.question_id);
+  }
   recordGenerationTiming(`${timingPrefix}:selection-and-hydration`, selectionStart);
   const questionCount = selected.reduce((sum, item) => sum + item.questions.length, 0);
   for (let i = 0; i < work.length; i++) {
     const sec = work[i];
     const { questions, marks } = selected[i];
-    const picked = payload.shuffle === false ? questions : shuffleList(questions);
+    const picked = orderSectionQuestions(questions, payload.ordering ?? payload.shuffle);
     allQuestions.push(...picked);
     sectionQuestionsByWork.push({ label: sec.label, questions: picked });
     sectionResults.push({
@@ -2996,7 +3500,6 @@ export async function generateTest(
       marks,
       count_requested: null,
       marks_requested: sec.marks ?? null,
-      selection_limited: selected[i].selectionLimited,
     });
     if (sec.marks !== undefined && sec.marks !== null) targetMarks += sec.marks;
   }
@@ -3035,6 +3538,18 @@ export async function generateTest(
   const title = payload.title?.trim() || `${config.name} — Practice Test`;
   const format = payload.format ?? "docx";
   const achieved = round2(allQuestions.reduce((sum, q) => sum + (q.marks ?? 0), 0));
+  // Frozen snapshot: solutions and later re-renders read this, never live questions.
+  const snapshot = buildExamDocument({
+    testId,
+    title,
+    courseName: config.name,
+    format,
+    generatedAt: nowUtc(),
+    targetMarks: round2(targetMarks),
+    totalMarks: achieved,
+    sections: sectionQuestionsByWork,
+    stimuli,
+  });
   const renderStart = performance.now();
   performance.mark(`${timingPrefix}:render-and-export:start`);
   const files = await buildTestOutputs({
@@ -3047,6 +3562,7 @@ export async function generateTest(
     achievedMarks: achieved,
     sections: sectionQuestionsByWork,
     stimuli,
+    doc: snapshot,
     onProgress: payload.onProgress,
   });
   recordGenerationTiming(`${timingPrefix}:render-and-export`, renderStart);
@@ -3056,12 +3572,14 @@ export async function generateTest(
   await storeTestFiles(testId, files);
   const testUrl = (await ensureTestFileUrl(testId, "test")) ?? "";
   const previewUrl = (await ensureTestFileUrl(testId, "preview")) ?? "";
-  const extension = format === "pdf" ? "pdf" : "docx";
+  // format 'pdf' is the HTML print pipeline, so its artifact is .html.
+  const extension = format === "pdf" ? "html" : "docx";
 
   await run(
     `INSERT INTO generated_test (test_id, course_id, title, format, target_marks, achieved_marks,
-        question_count, filter_json, question_ids_json, test_file_path, solutions_file_path, preview_file_path, created_at)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+        question_count, filter_json, question_ids_json, test_file_path, solutions_file_path, preview_file_path,
+        document_json, solutions_generated, created_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       testId,
       courseId,
@@ -3080,7 +3598,9 @@ export async function generateTest(
       JSON.stringify(allQuestions.map((q) => q.question_id)),
       `${testId}-test.${extension}`,
       "",
-      `${testId}-preview.pdf`,
+      `${testId}-preview.html`,
+      JSON.stringify(snapshot),
+      0,
       nowUtc(),
     ]
   );
@@ -3129,25 +3649,51 @@ export async function generateTestSolutions(testId: string, onProgress?: (comple
   const solutionsStart = performance.now();
   const row = await getFirst<SqlRow>("SELECT * FROM generated_test WHERE test_id = ?", [testId]);
   if (!row) throw new Error("Generated test not found");
-  const questionIds = JSON.parse(String(row.question_ids_json)) as string[];
-  const hydrateStart = performance.now();
-  const questions = await hydrateQuestions(questionIds);
-  logTiming("solutions:hydrate", hydrateStart, `${questions.length} questions`);
-  const savedFilter = parseJson(String(row.filter_json));
-  const generatedSections = Array.isArray(savedFilter.generated_sections)
-    ? savedFilter.generated_sections as Array<{ label: string | null; question_ids: string[] }>
-    : [];
-  const questionById = new Map(questions.map((question) => [question.question_id, question]));
-  const sections = generatedSections.length
-    ? generatedSections.map((section) => ({
-        label: section.label,
-        questions: section.question_ids.map((id) => questionById.get(id)).filter((question): question is Question => !!question),
-      }))
-    : [{ label: null, questions }];
-  const output = row.format === "pdf"
-    ? await buildPdfSolutions(String(row.title), sections, onProgress)
-    : await buildDocxSolutions(String(row.title), sections, onProgress);
+  const snapshot = parseExamDocument(row.document_json == null ? null : String(row.document_json));
+  let doc: ReturnType<typeof buildExamDocument>;
+  if (snapshot) {
+    // Frozen at generation: later edits to source questions must not leak in.
+    doc = snapshot;
+  } else {
+    // Legacy test with no snapshot: rebuild from live data once, then freeze it.
+    const questionIds = parseQuestionIdList(String(row.question_ids_json));
+    if (!questionIds.length) {
+      throw new Error("This test's question list is unreadable, so its solutions cannot be rebuilt.");
+    }
+    const hydrateStart = performance.now();
+    const questions = await hydrateQuestions(questionIds);
+    logTiming("solutions:hydrate", hydrateStart, `${questions.length} questions`);
+    const savedFilter = parseJson(String(row.filter_json));
+    const generatedSections = Array.isArray(savedFilter.generated_sections)
+      ? savedFilter.generated_sections as Array<{ label: string | null; question_ids: string[] }>
+      : [];
+    const questionById = new Map(questions.map((question) => [question.question_id, question]));
+    const sections = generatedSections.length
+      ? generatedSections.map((section) => ({
+          label: section.label,
+          questions: section.question_ids.map((id) => questionById.get(id)).filter((question): question is Question => !!question),
+        }))
+      : [{ label: null, questions }];
+    doc = buildExamDocument({
+      testId,
+      title: String(row.title),
+      format: String(row.format),
+      generatedAt: nowUtc(),
+      targetMarks: Number(row.target_marks) || 0,
+      totalMarks: questions.reduce((sum, question) => sum + (question.marks ?? 0), 0),
+      sections,
+      legacy: true,
+    });
+  }
+  const renderer = createRenderer(String(row.format));
+  const output = await renderer.renderSolutions(doc, new Map(), onProgress);
   await storeTestSolutionFile(testId, output);
+  // Single write: flag the solutions as present, and freeze a legacy test's
+  // first solutions build as its snapshot (existing snapshots are never rewritten).
+  await run(
+    "UPDATE generated_test SET solutions_generated = 1, document_json = COALESCE(document_json, ?) WHERE test_id = ?",
+    [snapshot ? null : JSON.stringify(doc), testId]
+  );
   logTiming("solutions:total", solutionsStart, `${row.format}`);
 }
 

@@ -7,6 +7,7 @@ import type {
   CourseFullConfig,
   CourseNode,
   DifficultyLevel,
+  GlossaryTerm,
   DueQueue,
   GeneratedTestMeta,
   ImportResponse,
@@ -77,8 +78,8 @@ export const api = {
     return data.createCourse(payload);
   },
 
-  deleteCourse(courseId: string): Promise<void> {
-    return data.deleteCourse(courseId);
+  deleteCourse(courseId: string, onDeleted?: () => void): Promise<void> {
+    return data.deleteCourse(courseId, onDeleted);
   },
 
   resetCourseProgress(courseId: string): Promise<void> {
@@ -134,6 +135,57 @@ export const api = {
     return data.deleteLevel(courseId, levelIndex);
   },
 
+  addDifficultyLevel(courseId: string, difficulty: DifficultyLevel): Promise<DifficultyLevel> {
+    return data.addDifficultyLevel(courseId, difficulty);
+  },
+
+  updateDifficultyLevel(courseId: string, levelOrDifficulty: number | DifficultyLevel, maybeDifficulty?: DifficultyLevel): Promise<DifficultyLevel> {
+    return data.updateDifficultyLevel(courseId, levelOrDifficulty as any, maybeDifficulty as any);
+  },
+
+  deleteDifficultyLevel(courseId: string, level: number | DifficultyLevel): Promise<void> {
+    return data.deleteDifficultyLevel(courseId, level as any);
+  },
+
+  updateCourseDifficultyLevels(courseId: string, levels: DifficultyLevel[]): Promise<void> {
+    return data.updateCourseDifficultyLevels(courseId, levels);
+  },
+
+  listGlossary(courseId: string): Promise<GlossaryTerm[]> {
+    return data.listGlossary(courseId);
+  },
+
+  addGlossaryTerm(courseId: string, term: string, definition: string): Promise<GlossaryTerm> {
+    return data.addGlossaryTerm(courseId, term, definition);
+  },
+
+  updateGlossaryTerm(courseId: string, oldTerm: string, newTerm: string, definition: string): Promise<GlossaryTerm> {
+    return data.updateGlossaryTerm(courseId, oldTerm, newTerm, definition);
+  },
+
+  deleteGlossaryTerm(courseId: string, term: string): Promise<void> {
+    return data.deleteGlossaryTerm(courseId, term);
+  },
+
+  updateCourseGlossary(courseId: string, terms: GlossaryTerm[]): Promise<void> {
+    return data.updateCourseGlossary(courseId, terms);
+  },
+
+  addDifficulty(courseId: string, difficulty: DifficultyLevel): Promise<DifficultyLevel> {
+    return data.addDifficulty(courseId, difficulty);
+  },
+
+  updateDifficulty(courseId: string, level: number, difficulty: DifficultyLevel): Promise<DifficultyLevel> {
+    return data.updateDifficulty(courseId, level, difficulty);
+  },
+
+  deleteDifficulty(courseId: string, level: number): Promise<void> {
+    return data.deleteDifficulty(courseId, level);
+  },
+
+  updateDifficultyLevels(courseId: string, levels: DifficultyLevel[]): Promise<void> {
+    return data.updateDifficultyLevels(courseId, levels);
+  },
   getInstructions(courseId: string): Promise<{ course_id: string; instructions_markdown: string }> {
     return data.getInstructions(courseId);
   },
@@ -145,7 +197,7 @@ export const api = {
   exportCourse(
     courseId: string,
     filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] },
-    options?: { includeLearningData?: boolean; includeResponseText?: boolean },
+    options?: { includeQuestions?: boolean; includeLearningData?: boolean; includeResponseText?: boolean },
     onProgress?: (percent: number) => void
   ): Promise<void> {
     return import("../lib/exchange").then((m) => m.exportCourse(courseId, filters, options, onProgress));
@@ -362,8 +414,10 @@ export const api = {
       node_ids?: string[];
       format: "docx" | "pdf";
       shuffle?: boolean;
+      ordering?: string;
       sections: TestSectionInput[];
-      selectionTimeoutMs?: number;
+      excludeRecentTests?: number;
+      keepQuestionIds?: string[];
       onProgress?: (progress: { phase: "selecting" | "hydrating" | "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void;
     }
   ): Promise<GeneratedTestMeta> {

@@ -51,6 +51,52 @@ test("solutionSlots flattens parts and tables each marking criteria", () => {
   assert.equal(slots[5].blocks[0].block_type, "table");
 });
 
+const mcq = (correctFlags, answer = []) => ({
+  question_id: "m1",
+  type_key: "multiple_choice",
+  answer,
+  solution: [],
+  marking_criteria: [],
+  parts: [],
+  mcq_options: correctFlags.map((is_correct, i) => ({
+    position: i,
+    is_correct,
+    content: [{ block_type: "text", content: { text: `option ${i}` } }],
+  })),
+});
+
+test("an MCQ answer slot leads with the letter derived from is_correct", () => {
+  const blocks = solutionSlots(mcq([false, true, false]))[0].blocks;
+  assert.equal(blocks[0].block_type, "text");
+  assert.equal(blocks[0].content.text, "Correct answer: (B)");
+});
+
+test("answer-slot content follows the derived key instead of replacing it", () => {
+  const answer = [{ block_id: "a", slot: "answer", position: 0, block_type: "text", content: { text: "B because it is the definition" } }];
+  const blocks = solutionSlots(mcq([true, false], answer))[0].blocks;
+  assert.deepEqual(
+    blocks.map((block) => block.content.text),
+    ["Correct answer: (A)", "B because it is the definition"]
+  );
+});
+
+test("zero or multiple correct options are flagged, never silently dropped", () => {
+  assert.equal(
+    solutionSlots(mcq([false, false]))[0].blocks[0].content.text,
+    "No option is marked correct"
+  );
+  assert.equal(
+    solutionSlots(mcq([true, false, true]))[0].blocks[0].content.text,
+    "Correct answer: (A), (C)"
+  );
+});
+
+test("a non-MCQ question never prints an MCQ answer key", () => {
+  const shortAnswer = { ...mcq([false, false]), type_key: "short_answer" };
+  const blocks = solutionSlots(shortAnswer)[0].blocks;
+  assert.ok(!blocks.some((block) => /Correct answer|No option is marked correct/.test(block.content?.text ?? "")));
+});
+
 const equation = (position) => ({ block_id: "eq", slot: "marking_criteria", position, block_type: "equation", content: { latex: "x=1" } });
 const criteriaList = (position) => ({ ...list(["1 mark: correct"]), position });
 

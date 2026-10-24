@@ -150,6 +150,58 @@ test("review state is removed with its question and follows the foreign key", as
   );
 });
 
+const V2_GENERATED_TEST_SQL = `
+CREATE TABLE generated_test (
+  test_id TEXT PRIMARY KEY,
+  course_id TEXT NOT NULL,
+  title TEXT NOT NULL,
+  format TEXT NOT NULL,
+  target_marks REAL NOT NULL,
+  achieved_marks REAL NOT NULL,
+  question_count INTEGER NOT NULL,
+  filter_json TEXT NOT NULL,
+  question_ids_json TEXT NOT NULL,
+  test_file_path TEXT NOT NULL,
+  solutions_file_path TEXT NOT NULL,
+  preview_file_path TEXT NOT NULL,
+  created_at TEXT NOT NULL
+);
+`;
+
+test("migration 3 adds the exam document snapshot without touching existing rows", async () => {
+  const SQL = await initSqlJs();
+  const db = new SQL.Database();
+  db.run(V2_GENERATED_TEST_SQL);
+  db.run(
+    "INSERT INTO generated_test (test_id, course_id, title, format, target_marks, achieved_marks, question_count, filter_json, question_ids_json, test_file_path, solutions_file_path, preview_file_path, created_at) VALUES ('t1', 'c1', 'Paper', 'docx', 20, 20, 5, '{}', '[\"q1\",\"q2\"]', 't1-test.docx', '', 't1-preview.pdf', '2026-01-01 00:00:00')"
+  );
+
+  const migration = MIGRATIONS.find((m) => m.id === 3);
+  assert.ok(migration, "migration 3 must exist");
+  db.run(migration.sql);
+
+  const cols = columns(db, "generated_test");
+  assert.ok(cols.includes("document_json"));
+  assert.ok(cols.includes("seed"));
+  assert.ok(cols.includes("solutions_generated"));
+  assert.equal(one(db, "SELECT document_json FROM generated_test WHERE test_id = 't1'"), null, "no snapshot exists before one is built");
+  assert.equal(one(db, "SELECT seed FROM generated_test WHERE test_id = 't1'"), 0);
+  assert.equal(one(db, "SELECT solutions_generated FROM generated_test WHERE test_id = 't1'"), 0);
+  assert.equal(one(db, "SELECT question_ids_json FROM generated_test WHERE test_id = 't1'"), '["q1","q2"]', "existing rows are untouched");
+  assert.equal(one(db, "SELECT solutions_file_path FROM generated_test WHERE test_id = 't1'"), "");
+});
+
+test("the migrated generated_test table matches a fresh install", async () => {
+  const SQL = await initSqlJs();
+  const fresh = new SQL.Database();
+  fresh.run(SCHEMA_SQL);
+  const migrated = new SQL.Database();
+  migrated.run(V2_GENERATED_TEST_SQL);
+  // Migration 1 touches tables this fixture deliberately lacks; the rest are safe.
+  for (const migration of MIGRATIONS.filter((m) => m.id !== 1)) migrated.run(migration.sql);
+  assert.deepEqual(columns(migrated, "generated_test"), columns(fresh, "generated_test"));
+});
+
 test("a migrated database matches the fresh-install schema", async () => {
   const SQL = await initSqlJs();
   const fresh = new SQL.Database();

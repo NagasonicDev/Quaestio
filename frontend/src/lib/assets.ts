@@ -1,7 +1,7 @@
 import type { Question } from "../api/types";
-import { newId } from "./id";
-import { getFirst, run } from "./db/sqlite";
+import { getFirst, all, run } from "./db/sqlite";
 import * as idb from "./db/indexeddb";
+import { contentHash } from "./storage";
 
 const ALLOWED_EXTENSIONS = [".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"];
 const MAX_BYTES = 15 * 1024 * 1024;
@@ -45,7 +45,19 @@ export async function uploadAsset(file: File): Promise<{
   if (file.size > MAX_BYTES) {
     throw new Error("File too large (max 15 MB)");
   }
-  const assetId = newId("asset");
+  // Content-hash dedupe: the same bytes are stored once, so a repeated diagram
+  // does not multiply IndexedDB usage. The existing id is returned unchanged.
+  const hash = await contentHash(new Uint8Array(await file.arrayBuffer()));
+  const existing = await idb.getAsset(hash);
+  if (existing) {
+    registerUrl(hash, existing);
+    return {
+      asset_path: hash,
+      mime_type: existing.type || file.type || mimeFromExtension(ext),
+      original_filename: file.name,
+    };
+  }
+  const assetId = hash;
   await idb.putAsset(assetId, file);
   registerUrl(assetId, file);
   return {
@@ -145,8 +157,19 @@ async function insertAsset(
   );
 }
 
-/** Remove an asset's blob + object URL (used on question delete). */
+/**
+ * Remove an asset's blob + object URL (used on question delete). Content-hash
+ * ids mean several questions can share one blob, so the blob and its cached URL
+ * are only dropped once no question still references it.
+ */
 export async function deleteAssetBlob(assetId: string): Promise<void> {
+  const refCount = await countAssetReferences(assetId);
+  if (refCount > 0) return;
+  await deleteUnreferencedAssetBlob(assetId);
+}
+
+/** Delete a blob after the caller has confirmed no question references it. */
+export async function deleteUnreferencedAssetBlob(assetId: string): Promise<void> {
   const url = urlCache.get(assetId);
   if (url) {
     URL.revokeObjectURL(url);
@@ -155,8 +178,53 @@ export async function deleteAssetBlob(assetId: string): Promise<void> {
   await idb.deleteAsset(assetId);
 }
 
+/** Find which candidate blobs are no longer referenced, scanning stored content once. */
+export async function findUnreferencedAssetIds(assetIds: Iterable<string>): Promise<string[]> {
+  const unreferenced = new Set(assetIds);
+  if (!unreferenced.size) return [];
+  const [blocks, options] = await Promise.all([
+    all<{ content_json: string }>("SELECT content_json FROM content_block WHERE block_type IN ('image', 'diagram', 'graph')"),
+    all<{ content_json: string }>("SELECT content_json FROM mcq_option"),
+  ]);
+  for (const row of blocks) {
+    try {
+      const path = JSON.parse(row.content_json)?.asset_path;
+      if (typeof path === "string") unreferenced.delete(path);
+    } catch { /* malformed JSON — skip */ }
+  }
+  for (const row of options) {
+    try {
+      const parsed = JSON.parse(row.content_json);
+      for (const block of Array.isArray(parsed) ? parsed : [parsed]) {
+        const path = block?.content?.asset_path;
+        if (typeof path === "string") unreferenced.delete(path);
+      }
+    } catch { /* malformed JSON — skip */ }
+  }
+  return [...unreferenced];
+}
+
 /** Clean up blobs written for a failed import. Only removes ids no question
  *  claimed, so a partially-imported course keeps its images. */
+export async function countAssetReferences(assetId: string): Promise<number> {
+  // Get all question_ids that reference this asset in content blocks
+  const sql = `
+    SELECT DISTINCT q.question_id
+    FROM question q
+    LEFT JOIN content_block cb ON cb.question_id = q.question_id
+    WHERE cb.block_type IN ('image', 'diagram', 'graph')
+    AND cb.content_json LIKE '%' || ? || '%'
+    UNION
+    SELECT DISTINCT q.question_id
+    FROM question q
+    LEFT JOIN mcq_option mcq ON mcq.question_id = q.question_id
+    WHERE mcq.content_json LIKE '%' || ? || '%'
+  `;
+
+  const results = await all<{ question_id: string }>(sql, [assetId, assetId]);
+  return results.length;
+}
+
 export async function deleteUnclaimedAssetBlobs(assetIds: string[]): Promise<void> {
   for (const assetId of assetIds) {
     const row = await getAssetRow(assetId);

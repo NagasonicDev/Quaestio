@@ -1,7 +1,8 @@
 import type { ContentBlock, Question } from "../api/types";
 import type { DocSection } from "./docx";
+import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
 
-/** Shared HSC-style examination paper layout (NESA conventions). */
+/** Shared HSC-style examination paper layout geometry (NESA conventions). */
 export const EXAM = {
   /** A4 */
   page: { widthPt: 595.28, heightPt: 841.89 },
@@ -14,10 +15,6 @@ export const EXAM = {
     coverTitlePt: 16,
     lineHeight: 1.35,
   },
-  /** ~1.8 min/mark for a 100-mark, 3-hour paper */
-  minutesPerMark: 1.8,
-  defaultReadingMinutes: 10,
-  certificateLine: "HIGHER SCHOOL CERTIFICATE EXAMINATION",
 } as const;
 
 export interface ExamSectionPlan {
@@ -74,9 +71,9 @@ export function defaultSectionTitle(index: number, custom: string | null): strin
 }
 
 /** Round section working time to a sensible whole number of minutes. */
-export function minutesForMarks(marks: number): number {
+export function minutesForMarks(marks: number, minutesPerMark = DEFAULT_EXAM_PROFILE.minutesPerMark): number {
   if (marks <= 0) return 0;
-  const raw = marks * EXAM.minutesPerMark;
+  const raw = marks * minutesPerMark;
   if (raw < 15) return Math.max(5, Math.round(raw / 5) * 5);
   return Math.round(raw / 5) * 5;
 }
@@ -105,7 +102,9 @@ export function buildExamPaperPlan(opts: {
   achievedMarks: number;
   sections: DocSection[];
   examDate?: Date;
+  profile?: ExamProfile;
 }): ExamPaperPlan {
+  const profile = opts.profile ?? DEFAULT_EXAM_PROFILE;
   const examDate =
     opts.examDate ??
     new Date();
@@ -131,35 +130,33 @@ export function buildExamPaperPlan(opts: {
       questionStart: start,
       questionEnd: end,
       questionCount: count,
-      minutesAllow: minutesForMarks(marks),
+      minutesAllow: minutesForMarks(marks, profile.minutesPerMark),
     });
   }
 
   const totalQuestions = qn;
   const totalMarks = opts.achievedMarks;
-  const workingMinutes = minutesForMarks(totalMarks);
+  const workingMinutes = minutesForMarks(totalMarks, profile.minutesPerMark);
 
   return {
     subjectLine: opts.courseName,
     paperTitle: opts.title,
     totalMarks,
     totalQuestions,
-    readingMinutes: EXAM.defaultReadingMinutes,
+    readingMinutes: profile.readingTimeMinutes,
     workingMinutes,
     examDate: dateStr,
     sections,
   };
 }
 
-export function generalInstructionsLines(plan: ExamPaperPlan): string[] {
+export function generalInstructionsLines(plan: ExamPaperPlan, profile: ExamProfile = DEFAULT_EXAM_PROFILE): string[] {
   return [
     "General Instructions",
     "",
     `Reading time – ${plan.readingMinutes} minutes`,
     `Working time – ${formatDurationMinutes(plan.workingMinutes)}`,
-    "Write using black pen",
-    "Draw diagrams using pencil",
-    "Approved calculators may be used unless stated otherwise",
+    ...profile.generalInstructions,
     `Total marks – ${plan.totalMarks}`,
   ];
 }

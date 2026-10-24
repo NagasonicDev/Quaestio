@@ -43,6 +43,13 @@ CREATE TABLE IF NOT EXISTS difficulty_level (
   PRIMARY KEY (course_id, level)
 );
 
+CREATE TABLE IF NOT EXISTS course_glossary (
+  course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
+  term TEXT NOT NULL,
+  definition TEXT NOT NULL,
+  PRIMARY KEY (course_id, term)
+);
+
 CREATE TABLE IF NOT EXISTS question_type (
   type_key TEXT PRIMARY KEY,
   course_id TEXT REFERENCES course(course_id) ON DELETE CASCADE,
@@ -148,7 +155,7 @@ CREATE TABLE IF NOT EXISTS mcq_option (
 
 CREATE TABLE IF NOT EXISTS asset (
   asset_id TEXT PRIMARY KEY,
-  question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
+  question_id TEXT NOT NULL REFERENCES question(question_id),
   file_path TEXT NOT NULL,
   mime_type TEXT NOT NULL,
   width INTEGER,
@@ -247,7 +254,10 @@ CREATE TABLE IF NOT EXISTS generated_test (
   test_file_path TEXT NOT NULL,
   solutions_file_path TEXT NOT NULL,
   preview_file_path TEXT NOT NULL,
-  created_at TEXT NOT NULL
+  created_at TEXT NOT NULL,
+  document_json TEXT,
+  seed INTEGER NOT NULL DEFAULT 0,
+  solutions_generated INTEGER NOT NULL DEFAULT 0
 );
 CREATE INDEX IF NOT EXISTS idx_generated_test_course ON generated_test(course_id, created_at);
 `;
@@ -264,7 +274,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
  * version the persisted blobs, and to the per-course `schema_version` that
  * describes the question format a course expects.
  */
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 4;
 
 export interface Migration {
   id: number;
@@ -356,6 +366,27 @@ export const MIGRATIONS: Migration[] = [
       );
       CREATE INDEX IF NOT EXISTS idx_qs_stim ON question_stimulus(stimulus_id);
       CREATE INDEX IF NOT EXISTS idx_qs_q ON question_stimulus(question_id);
+    `,
+  },
+  {
+    id: 3,
+    name: "exam-document-snapshot",
+    sql: `
+      ALTER TABLE generated_test ADD COLUMN document_json TEXT;
+      ALTER TABLE generated_test ADD COLUMN seed INTEGER NOT NULL DEFAULT 0;
+      ALTER TABLE generated_test ADD COLUMN solutions_generated INTEGER NOT NULL DEFAULT 0;
+    `,
+  },
+  {
+    id: 4,
+    name: "course-glossary",
+    sql: `
+      CREATE TABLE IF NOT EXISTS course_glossary (
+        course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
+        term TEXT NOT NULL,
+        definition TEXT NOT NULL,
+        PRIMARY KEY (course_id, term)
+      );
     `,
   },
 ];

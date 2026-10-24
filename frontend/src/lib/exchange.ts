@@ -3,9 +3,10 @@ import { questionImportScripts, questionImportSkillTemplate, questionImportWorkf
 import { importConventionsMarkdown, checkConventionsScript, importAuthoringRules } from "./importConventions";
 import * as idb from "./db/indexeddb";
 import { all, getFirst, run, runMany, transaction } from "./db/sqlite";
-import { newId, newQuestionId, nowUtc } from "./id";
+import { claimQuestionId, newId, nowUtc } from "./id";
 import * as data from "./data";
 import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule";
+import { contentHash } from "./storage";
 import type { CourseFullConfig, CourseNode, Question } from "../api/types";
 
 // ---------- helpers ----------
@@ -148,8 +149,8 @@ export function buildImportSchema(config: CourseFullConfig): Record<string, unkn
       order: "array order is the printed choice order; labels A, B, C... are implicit",
     },
     ignored_fields: {
-      question: ["question_id", "review_status", "notes", "created_at", "updated_at"],
-      part: ["question_id", "difficulty", "node_ids", "node_codes", "node_names", "tags", "source", "notes", "classification_confidence", "mcq_options", "assets", "review_status"],
+      question: ["review_status", "notes", "created_at", "updated_at"],
+      part: ["difficulty", "node_ids", "node_codes", "node_names", "tags", "source", "notes", "classification_confidence", "mcq_options", "assets", "review_status"],
       never_exported: ["hint"],
       max_part_depth_rendered: 1,
     },
@@ -271,6 +272,8 @@ export interface CourseExportFilters {
 }
 
 export interface CourseExportOptions {
+  /** Export course structure without question content. */
+  includeQuestions?: boolean;
   /** Include the review schedule and attempt history. On by default for a course bundle. */
   includeLearningData?: boolean;
   /** Include the free-text answers the student typed during practice. Off by default. */
@@ -368,21 +371,22 @@ export async function exportCourse(
   options: CourseExportOptions = {},
   onProgress?: ExportProgress
 ): Promise<void> {
+  const includeQuestions = options.includeQuestions !== false;
   const includeLearningData = options.includeLearningData !== false;
   onProgress?.(0);
   const config = await data.getCourseFullConfig(courseId);
   if (!config) throw new Error("Course not found");
-  const preAssetWork = 3 + (includeLearningData ? 1 : 0);
+  const preAssetWork = 3 + (includeQuestions && includeLearningData ? 1 : 0);
   const row = await data.getCourseRow(courseId);
-  const allQuestions = await data.getCourseQuestions(courseId);
+  const allQuestions = includeQuestions ? await data.getCourseQuestions(courseId) : [];
   const questions = allQuestions.filter((question) =>
     (!filters.typeKeys?.length || filters.typeKeys.includes(question.type_key)) &&
     (!filters.difficulties?.length || (question.difficulty != null && filters.difficulties.includes(question.difficulty))) &&
     (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
-  const learning = includeLearningData ? await readLearningData(courseId, options.includeResponseText === true) : null;
-  const stimuli = await data.listStimuliForCourse(courseId);
+  const learning = includeQuestions && includeLearningData ? await readLearningData(courseId, options.includeResponseText === true) : null;
+  const stimuli = includeQuestions ? await data.listStimuliForCourse(courseId) : [];
   const stimuliWithContent: StimulusExport[] = [];
   for (const s of stimuli) {
     const full = await data.getStimulus(s.stimulus_id);
@@ -423,10 +427,10 @@ export async function exportCourse(
         exported_at: new Date().toISOString(),
         includes: {
           course_structure: true,
-          questions: true,
-          images: true,
-          learning_data: includeLearningData,
-          typed_answers: includeLearningData && options.includeResponseText === true,
+          questions: includeQuestions,
+          images: includeQuestions,
+          learning_data: includeQuestions && includeLearningData,
+          typed_answers: includeQuestions && includeLearningData && options.includeResponseText === true,
           generated_files: false,
           stimuli: stimuliWithContent.length > 0,
           question_stimuli: questionStimuli.length > 0,
@@ -459,11 +463,14 @@ export async function exportCourse(
       `${config.name} — Quaestio course bundle`,
       "",
       "Contents:",
-      "- course.json: course structure, difficulty and tag definitions, and the questions listed in it.",
-      `- assets/: images and diagrams referenced by the exported questions (${seen.size} file(s)).`,
+      includeQuestions
+        ? "- course.json: course structure, difficulty and tag definitions, and the questions listed in it."
+        : "- course.json: course structure, difficulty and tag definitions.",
+      includeQuestions ? `- assets/: images and diagrams referenced by the exported questions (${seen.size} file(s)).` : null,
+      includeQuestions ? null : "- Questions, images and practice history are not included.",
       `- learning: ${learning ? `review schedule and ${learning.attempts.length} practice attempt record(s)` : "not included"}.`,
       learning ? `- typed answers: ${options.includeResponseText === true ? "included" : "excluded"}.` : null,
-      "- Generated test files are not included; regenerate them from the questions.",
+      includeQuestions ? "- Generated test files are not included; regenerate them from the questions." : null,
       stimuliWithContent.length > 0 ? `- Includes ${stimuliWithContent.length} stimulus(es) with question links.` : null,
       "",
       "Importing replaces the course with the same id, or asks whether to add it as a new course.",
@@ -664,7 +671,9 @@ interface ImportCtx {
   courseId: string;
   nodeMap: Map<string, string>;
   questionMap: Map<string, string>;
+  usedQuestionIds: Set<string>;
   assetMap: Map<string, string>;
+  assetRows: Set<string>;
   stimulusMap?: Map<string, string>;
 }
 
@@ -709,7 +718,7 @@ async function insertQuestion(
   ctx: ImportCtx,
   sourceAlready: Map<string, string | null>
 ): Promise<string> {
-  const questionId = newQuestionId();
+  const questionId = claimQuestionId(question.question_id, ctx.usedQuestionIds);
   ctx.questionMap.set(question.question_id, questionId);
   const parentId = question.parent_question_id
     ? (ctx.questionMap.get(question.parent_question_id) ?? null)
@@ -799,11 +808,13 @@ async function insertQuestion(
   }
   for (const a of question.assets ?? []) {
     const mapped = ctx.assetMap.get(a.asset_id) ?? a.asset_id;
+    if (ctx.assetRows.has(mapped)) continue;
     await run(
       `INSERT INTO asset (asset_id, question_id, file_path, mime_type, width, height, alt_text, caption, original_filename)
        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [mapped, questionId, mapped, a.mime_type, a.width, a.height, a.alt_text, a.caption, null]
     );
+    ctx.assetRows.add(mapped);
   }
   for (const part of question.parts ?? []) {
     await insertQuestion(part, ctx, sourceAlready);
@@ -827,13 +838,24 @@ export async function applyCourseBundle(
     await wipeCourseData(courseId);
   }
   onProgress?.(5);
-  const ctx: ImportCtx = { courseId, nodeMap: new Map(), questionMap: new Map(), assetMap: new Map(), stimulusMap: new Map() };
+  const existingQuestionRows = await all<{ question_id: string }>("SELECT question_id FROM question");
+  const ctx: ImportCtx = {
+    courseId,
+    nodeMap: new Map(),
+    questionMap: new Map(),
+    usedQuestionIds: new Set(existingQuestionRows.map((row) => String(row.question_id))),
+    assetMap: new Map(),
+    assetRows: new Set(),
+    stimulusMap: new Map(),
+  };
 
   // Asset IDs are unique in both IndexedDB and the SQL asset table. Include
   // both stores: old/partial imports can leave a SQL row without a blob.
+  const existingAssetRows = await all<{ asset_id: string }>("SELECT asset_id FROM asset");
+  ctx.assetRows = new Set(existingAssetRows.map((asset) => asset.asset_id));
   const existingAssets = new Set([
     ...await idb.listAssetIds(),
-    ...(await all<{ asset_id: string }>("SELECT asset_id FROM asset")).map((asset) => asset.asset_id),
+    ...ctx.assetRows,
   ]);
   const bundleAssetIds = new Set(bundle.assetBlobs.keys());
   const collectQuestionAssets = (questions: Question[]) => {
@@ -855,8 +877,31 @@ export async function applyCourseBundle(
     }
   };
   collectQuestionAssets(bundle.questions);
+  // Reuse an existing asset id when its bytes are already stored (content-hash
+  // dedupe), so repeated imports do not duplicate blobs. Only mint a fresh id on
+  // a genuine collision (same id, different bytes).
+  const hashToTarget = new Map<string, string>();
   for (const assetId of bundleAssetIds) {
-    ctx.assetMap.set(assetId, existingAssets.has(assetId) ? newId("asset") : assetId);
+    const blob = bundle.assetBlobs.get(assetId);
+    let target: string;
+    if (blob) {
+      const bytes = new Uint8Array(await blob.arrayBuffer());
+      const hash = await contentHash(bytes);
+      if (existingAssets.has(hash)) {
+        target = hash;
+      } else if (hashToTarget.has(hash)) {
+        target = hashToTarget.get(hash)!;
+      } else if (existingAssets.has(assetId)) {
+        target = newId("asset");
+      } else {
+        target = assetId;
+      }
+      hashToTarget.set(hash, target);
+    } else {
+      target = existingAssets.has(assetId) ? newId("asset") : assetId;
+    }
+    ctx.assetMap.set(assetId, target);
+    existingAssets.add(target);
   }
 
   const now = nowUtc();
@@ -889,6 +934,17 @@ export async function applyCourseBundle(
       courseId,
       d.level,
       d.label,
+    ]);
+  }
+  const glossaryTerms = src.glossary ?? data.defaultGlossaryTerms();
+  for (const g of glossaryTerms) {
+    const term = String(g?.term ?? "").trim();
+    const definition = String(g?.definition ?? "").trim();
+    if (!term || !definition) continue;
+    await run("INSERT INTO course_glossary (course_id, term, definition) VALUES (?, ?, ?)", [
+      courseId,
+      term,
+      definition,
     ]);
   }
   const existingTypes = await all("SELECT type_key FROM question_type");

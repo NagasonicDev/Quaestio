@@ -104,8 +104,10 @@ export function TestGenerator() {
     { id: 1, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {}, marks: DEFAULT_MARKS },
   ]);
   const [format, setFormat] = useState<"docx" | "pdf">("docx");
-  const [shuffle, setShuffle] = useState(true);
+  const [ordering, setOrdering] = useState("random");
   const [title, setTitle] = useState("");
+  const [excludeRecentTests, setExcludeRecentTests] = useState(0);
+  const [keepQuestionIds, setKeepQuestionIds] = useState("");
 
   const [generating, setGenerating] = useState(false);
   const blockingGeneration = generating || (taskRunning && backgroundTask?.courseId === courseId);
@@ -304,7 +306,7 @@ export function TestGenerator() {
   }, [result]);
   const markMismatches = useMemo(
     () => result?.section_results?.filter(
-      (section) => section.selection_limited || (section.marks_requested != null && Math.abs(section.marks - section.marks_requested) > 0.009)
+      (section) => section.marks_requested != null && Math.abs(section.marks - section.marks_requested) > 0.009
     ) ?? [],
     [result]
   );
@@ -365,8 +367,10 @@ export function TestGenerator() {
       const meta = await api.generateTest(courseId, {
         title: title.trim() || undefined,
         format,
-        shuffle,
-        selectionTimeoutMs: Math.ceil(initialEstimate * 1.25 * 1000),
+        ordering,
+        shuffle: ordering !== "sequential",
+        excludeRecentTests,
+        keepQuestionIds: keepQuestionIds.split(/[,\\s]+/).map((s) => s.trim()).filter(Boolean),
         sections: sections.map((s) => ({
           name: s.name.trim() || undefined,
           node_ids: s.nodeIds.size ? effectiveNodeFilterIds(config?.nodes ?? [], s.nodeIds) : undefined,
@@ -563,14 +567,30 @@ export function TestGenerator() {
                   </SelectContent>
                 </Select>
               </Field>
-              <Field label="Question ordering">
-                <Select value={shuffle ? "random" : "sequential"} onValueChange={(v) => setShuffle(v === "random")}>
+              <Field label="Usage history">
+                <Select value={String(excludeRecentTests)} onValueChange={(v) => setExcludeRecentTests(Number(v))}>
+                  <SelectTrigger><SelectValue /></SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="0">Off</SelectItem>
+                    <SelectItem value="1">Last 1 test</SelectItem>
+                    <SelectItem value="2">Last 2 tests</SelectItem>
+                    <SelectItem value="3">Last 3 tests</SelectItem>
+                    <SelectItem value="5">Last 5 tests</SelectItem>
+                  </SelectContent>
+                </Select>
+              </Field>
+              <Field label="Keep question ids">
+                <Input value={keepQuestionIds} onChange={(e) => setKeepQuestionIds(e.target.value)} placeholder="q1, q2" />
+              </Field>
+      <Field label="Question ordering">
+                <Select value={ordering} onValueChange={setOrdering}>
                   <SelectTrigger>
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectItem value="random">Random selection</SelectItem>
                     <SelectItem value="sequential">Sequential (oldest first)</SelectItem>
+                    <SelectItem value="difficulty">By difficulty (easiest first)</SelectItem>
                   </SelectContent>
                 </Select>
               </Field>
@@ -609,9 +629,7 @@ export function TestGenerator() {
                 <div className="mx-5 mt-4 rounded-md border border-border bg-muted/50 px-3 py-2 text-sm" role="status">
                   {markMismatches.map((section, index) => (
                     <p key={`${section.name}-${index}`}>
-                      {section.selection_limited
-                        ? `${section.name}: the search reached its time limit, so it used the closest combination found so far (${section.marks} marks for a ${section.marks_requested}-mark target).`
-                        : `${section.name}: the requested ${section.marks_requested} marks weren’t achievable exactly; the closest available total was ${section.marks} marks.`}
+                      {`${section.name}: the requested ${section.marks_requested} marks weren’t achievable exactly; the closest available total was ${section.marks} marks.`}
                     </p>
                   ))}
                 </div>

@@ -20,6 +20,13 @@ export function newQuestionId(): string {
   return chars.join("");
 }
 
+export function claimQuestionId(preferred: unknown, used: Set<string>): string {
+  let id = typeof preferred === "string" && preferred.trim() ? preferred : newQuestionId();
+  while (used.has(id)) id = newQuestionId();
+  used.add(id);
+  return id;
+}
+
 export function isValidQuestionId(value: string): boolean {
   return /^[A-Z0-9]{6}$/.test(value) && /[A-Z]/.test(value) && /[0-9]/.test(value);
 }

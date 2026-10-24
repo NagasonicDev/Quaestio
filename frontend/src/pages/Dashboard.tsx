@@ -32,7 +32,7 @@ export function Dashboard() {
     const total = values.reduce((sum, n) => sum + n, 0) || 1;
     return levels.map(
       (l, i) =>
-        ["Level " + l.level, Math.round((values[i] / total) * 10000) / 100] as [string, number]
+        [l.label, Math.round((values[i] / total) * 10000) / 100] as [string, number]
     );
   }, [config, counts]);
 

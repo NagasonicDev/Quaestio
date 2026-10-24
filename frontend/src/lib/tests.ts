@@ -2,8 +2,9 @@ import type { TestFile } from "./db/indexeddb";
 import * as idb from "./db/indexeddb";
 import type { Question } from "../api/types";
 import type { TestSectionResult } from "../api/types";
-import { buildDocxPaper, collectImages, type DocSection } from "./docx";
-import { buildPdfPaper } from "./pdf";
+import { collectImages, type DocSection } from "./docx";
+import type { ExamDocument } from "./examDocument";
+import { createRenderer, type RenderInput } from "./paperRenderer";
 import { logTiming } from "./timing";
 
 const urlCache = new Map<string, string>();
@@ -62,7 +63,11 @@ function triggerDownload(blob: Blob, filename: string): void {
   setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
-/** Download a stored test paper with a sensible filename. */
+/** Send a stored artifact to the user. HTML artifacts (the "pdf" pipeline) are
+ * rasterised into a real PDF file so the download is one click with no print
+ * dialog; legacy PDF and DOCX blobs download directly. The branch keys off the
+ * blob's type, not the row's format, so legacy rows keep working.
+ */
 export async function downloadTestFile(
   testId: string,
   which: "test" | "solutions",
@@ -72,9 +77,14 @@ export async function downloadTestFile(
   if (!blob?.size) {
     throw new Error("That file is no longer available in this browser. Generate the test again.");
   }
-  const ext = format === "pdf" ? "pdf" : "docx";
-  const filename = `${which === "solutions" ? "test-solutions" : "test-paper"}.${ext}`;
-  triggerDownload(blob, filename);
+  const base = which === "solutions" ? "test-solutions" : "test-paper";
+  if (blob.type === "text/html") {
+    const { htmlBlobToPdfBlob } = await import("./htmlToPdf");
+    triggerDownload(await htmlBlobToPdfBlob(blob), `${base}.pdf`);
+    return;
+  }
+  const ext = blob.type === "application/pdf" || format === "pdf" ? "pdf" : "docx";
+  triggerDownload(blob, `${base}.${ext}`);
 }
 
 export async function storeTestSolutionFile(testId: string, blob: Blob): Promise<void> {
@@ -104,15 +114,19 @@ export interface BuildOptions {
   achievedMarks: number;
   sections: DocSection[];
   stimuli?: TestStimulusItem[];
+  /** The frozen snapshot the renderers draw from; sections/stimuli are overlaid from the fields above. */
+  doc: ExamDocument;
   onProgress?: (progress: { phase: "selecting" | "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void;
 }
 
 /**
- * Builds the paper and its PDF preview. The preview is the paper itself when
- * PDF was selected.
+ * Builds the paper and its preview. For the HTML pipeline (format "pdf") the
+ * preview is the paper itself, so the preview is literally the output. DOCX is
+ * an editable export and its preview is HTML from the same snapshot, which is
+ * why a DOCX preview is not pixel-identical to the DOCX file.
  */
 export async function buildTestOutputs(options: BuildOptions): Promise<{ test: Blob; preview: Blob }> {
-  const { title, courseName, format, sections, achievedMarks, stimuli } = options;
+  const { format, sections, stimuli } = options;
   const timed = async <T>(phase: string, run: () => Promise<T>): Promise<T> => {
     const name = `test-generation:${options.testId}:${phase}`;
     const start = performance.now();
@@ -127,15 +141,20 @@ export async function buildTestOutputs(options: BuildOptions): Promise<{ test: B
   };
   const resolvedImages = await timed("render", () => collectImages(sections, stimuli));
   const totalQuestions = options.questions.length;
-  const onQuestionProgress = (completedQuestions: number) => options.onProgress?.({ phase: "paper", questionCount: totalQuestions, completedQuestions });
-  const docOptions = { title, courseName, achievedMarks, sections, resolvedImages, stimuli, onQuestionProgress };
-  options.onProgress?.({ phase: "paper", questionCount: options.questions.length });
-  const test =
-    await timed("export-paper", () => format === "pdf" ? buildPdfPaper(docOptions) : buildDocxPaper(docOptions));
+  const renderer = createRenderer(format);
+  const doc: RenderInput = { ...options.doc, sections, stimuli: stimuli ?? [] };
+  options.onProgress?.({ phase: "paper", questionCount: totalQuestions });
+  const test = await timed("export-paper", () =>
+    renderer.renderPaper({ ...doc, onQuestionProgress: (completed) => options.onProgress?.({ phase: "paper", questionCount: totalQuestions, completedQuestions: completed }) }, resolvedImages));
   let preview = test;
-  if (format !== "pdf") {
-    options.onProgress?.({ phase: "preview", questionCount: options.questions.length });
-    preview = await timed("export-preview", () => buildPdfPaper({ ...docOptions, onQuestionProgress: (completedQuestions) => options.onProgress?.({ phase: "preview", questionCount: totalQuestions, completedQuestions }) }));
+  if (renderer.format !== "html") {
+    options.onProgress?.({ phase: "preview", questionCount: totalQuestions });
+    const htmlRenderer = createRenderer("pdf");
+    preview = await timed("export-preview", () =>
+      htmlRenderer.renderPaper({
+        ...doc,
+        onQuestionProgress: (completed) => options.onProgress?.({ phase: "preview", questionCount: totalQuestions, completedQuestions: completed }),
+      }, resolvedImages));
   }
   return { test, preview };
 }
