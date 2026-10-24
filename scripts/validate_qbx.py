@@ -295,6 +295,9 @@ def main():
     want_course = a.course_id or schema["course_id"]
 
     errs = []
+    difficulty_levels_list = schema.get("valid_difficulty_levels") or []
+    if len(difficulty_levels_list) < 2 or len(difficulty_levels_list) > 10:
+        errs.append(f"valid_difficulty_levels must contain 2-10 levels (got {len(difficulty_levels_list)})")
     with zipfile.ZipFile(qbx) as z:
         names = z.namelist()
         if "questions.json" not in names:

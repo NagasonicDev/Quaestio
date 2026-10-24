@@ -19,6 +19,7 @@ backend/.venv/
 data/**
 !data/.gitkeep
 logs/
+courses/
 
 # Personal question banks and generated papers/solutions
 *.qb

@@ -78,7 +78,7 @@ discarded without any warning. Read this before writing anything.
 
 | Field | What to do instead |
 |---|---|
-| `question_id` | Regenerated on import. Ids are display handles, not stable keys. |
+| `question_id` | Preserved on import when available and unused in this database; missing or colliding ids are regenerated. |
 | `review_status` | Hardcoded to `approved`. Do not ask for `pending_review` — any other value makes the question invisible everywhere. |
 | `notes` | **Dropped.** To flag a gap for follow-up, tag the question `action_required` and say what is needed in a field a reviewer actually reads. |
 | `created_at`, `updated_at`, `export_schema_version`, `includes`, `exported_at` | Set by the app. |
