@@ -1,12 +1,10 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { contentHash } from "../src/lib/storage.ts";
-import * as idb from "../src/lib/db/indexeddb.ts";
-import { uploadAsset, ensureAssetUrl, deleteAssetBlob, countAssetReferences } from "../src/lib/assets.ts";
+import { uploadAsset, deleteAssetBlob, countAssetReferences } from "../src/lib/assets.ts";
 import { run, all } from "../src/lib/db/sqlite.ts";
 
 // Helper function to generate IDs (simplified version of newId)
-function newId(prefix: string): string {
+function newId(prefix) {
   return prefix + "_" + Math.random().toString(36).substring(2, 9);
 }
 
@@ -38,7 +36,7 @@ test("shared asset - upload same bytes twice → same hash id used by two questi
   const assetId = result1.asset_path;
   
   // Asset row should exist
-  const assetRows = await all<{ asset_id: string }>("SELECT asset_id FROM asset WHERE asset_id = ?", [assetId]);
+  const assetRows = await all("SELECT asset_id FROM asset WHERE asset_id = ?", [assetId]);
   assert.equal(assetRows.length, 1);
   assert.equal(assetRows[0].asset_id, assetId);
   
@@ -92,7 +90,7 @@ test("shared asset - asset row persists across question deletions", async () => 
   assert.equal(newRefCount, 1);
   
   // Asset row should still exist
-  const assetRows = await all<{ asset_id: string }>("SELECT asset_id FROM asset WHERE asset_id = ?", [assetId]);
+  const assetRows = await all("SELECT asset_id FROM asset WHERE asset_id = ?", [assetId]);
   assert.equal(assetRows.length, 1);
   
   // Delete question 2
