@@ -16,10 +16,13 @@ import { getSetting, setSetting } from "../lib/data";
 import { flush } from "../lib/db/sqlite";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import {
+  IMPORT_TOUR_SEEN_KEY,
+  IMPORT_TOUR_STEPS,
   TOUR_STEPS,
   TOUR_SEEN_KEY,
   navTourTarget,
   resolveTourStep,
+  type TourStep,
 } from "../lib/tour";
 import { Button } from "./ui/button";
 
@@ -86,6 +89,7 @@ export function TourProvider({ children }: { children: ReactNode }) {
       {active && (
         <TourOverlay
           key={runId}
+          steps={TOUR_STEPS}
           index={index}
           onNext={() => setIndex((i) => i + 1)}
           onExit={() => void finish()}
@@ -95,23 +99,108 @@ export function TourProvider({ children }: { children: ReactNode }) {
   );
 }
 
+interface ImportTourContextValue {
+  /** Restart the import walkthrough from the first step. */
+  start: () => void;
+}
+
+const ImportTourContext = createContext<ImportTourContextValue | undefined>(undefined);
+
+export function useImportTour() {
+  const ctx = useContext(ImportTourContext);
+  if (!ctx) throw new Error("useImportTour must be used within ImportTourProvider");
+  return ctx;
+}
+
+/**
+ * Same machinery as TourProvider, for the import walkthrough: it opens by
+ * itself on the first visit to the Import page once the main tour is out of
+ * the way (so two overlays never stack), and Settings can restart it.
+ */
+export function ImportTourProvider({ children }: { children: ReactNode }) {
+  const { courseId } = useActiveCourse();
+  const { pathname } = useLocation();
+  const navigate = useNavigate();
+  const qc = useQueryClient();
+  const tourSeenQuery = useQuery({
+    queryKey: ["setting", TOUR_SEEN_KEY],
+    queryFn: () => getSetting(TOUR_SEEN_KEY),
+  });
+  const seenQuery = useQuery({
+    queryKey: ["setting", IMPORT_TOUR_SEEN_KEY],
+    queryFn: () => getSetting(IMPORT_TOUR_SEEN_KEY),
+  });
+  const [override, setOverride] = useState<boolean | null>(null);
+  const [index, setIndex] = useState(0);
+  const [runId, setRunId] = useState(0);
+
+  const active =
+    override ??
+    (courseId !== null &&
+      pathname === "/import" &&
+      tourSeenQuery.isSuccess &&
+      tourSeenQuery.data === "1" &&
+      seenQuery.isSuccess &&
+      seenQuery.data === null);
+
+  const finish = useCallback(async () => {
+    setOverride(false);
+    setIndex(0);
+    try {
+      await setSetting(IMPORT_TOUR_SEEN_KEY, "1");
+      // Same debounced-write flush as the main tour, so a reload right after
+      // Finish cannot resurrect the overlay.
+      await flush();
+      await qc.invalidateQueries({ queryKey: ["setting", IMPORT_TOUR_SEEN_KEY] });
+    } catch {
+      // The tour stays closed for this visit even if the flag cannot be saved.
+    }
+  }, [qc]);
+
+  const start = useCallback(() => {
+    setIndex(0);
+    setRunId((id) => id + 1);
+    setOverride(true);
+    navigate("/import");
+  }, [navigate]);
+
+  const value = useMemo(() => ({ start }), [start]);
+
+  return (
+    <ImportTourContext.Provider value={value}>
+      {children}
+      {active && (
+        <TourOverlay
+          key={runId}
+          steps={IMPORT_TOUR_STEPS}
+          index={index}
+          onNext={() => setIndex((i) => i + 1)}
+          onExit={() => void finish()}
+        />
+      )}
+    </ImportTourContext.Provider>
+  );
+}
+
 const PANEL_WIDTH = 340;
 const GAP = 14;
 const PANEL_HEIGHT_ESTIMATE = 210;
 
 function TourOverlay({
+  steps,
   index,
   onNext,
   onExit,
 }: {
+  steps: TourStep[];
   index: number;
   onNext: () => void;
   onExit: () => void;
 }) {
   const { pathname } = useLocation();
   const resolved = useMemo(
-    () => resolveTourStep(TOUR_STEPS, index, pathname),
-    [index, pathname]
+    () => resolveTourStep(steps, index, pathname),
+    [steps, index, pathname]
   );
   const step = resolved.step;
   // Hands-on steps point at the navigation link for their destination, which
@@ -217,7 +306,7 @@ function TourOverlay({
 
   const navigateMode = resolved.mode === "navigate";
   const panelStyle = panelStyleFor(rect, placement);
-  const isLast = index === TOUR_STEPS.length - 1;
+  const isLast = index === steps.length - 1;
 
   return (
     <>
@@ -243,12 +332,12 @@ function TourOverlay({
         ref={panelRef}
         tabIndex={-1}
         role="dialog"
-        aria-label={`Tour step ${index + 1} of ${TOUR_STEPS.length}: ${step.title}`}
+        aria-label={`Tour step ${index + 1} of ${steps.length}: ${step.title}`}
         className="fixed z-[96] rounded-xl border border-border bg-card p-4 shadow-2xl outline-none"
         style={panelStyle}
       >
         <p className="label">
-          Step {index + 1} of {TOUR_STEPS.length}
+          Step {index + 1} of {steps.length}
         </p>
         <h2 className="mt-1 font-display text-base font-semibold">{step.title}</h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.body}</p>

@@ -6,6 +6,8 @@ import assert from "node:assert/strict";
 import {
   TOUR_STEPS,
   TOUR_SEEN_KEY,
+  IMPORT_TOUR_STEPS,
+  IMPORT_TOUR_SEEN_KEY,
   resolveTourStep,
   navTourTarget,
 } from "../src/lib/tour.ts";
@@ -81,4 +83,33 @@ test("navigation targets are derived from routes, with the index page named over
   assert.equal(navTourTarget("/practice"), "nav-practice");
   assert.equal(navTourTarget("/test-generator"), "nav-test-generator");
   assert.equal(TOUR_SEEN_KEY, "tour_seen");
+});
+
+test("the import tour's steps are well-formed", () => {
+  const ids = IMPORT_TOUR_STEPS.map((step) => step.id);
+  assert.equal(new Set(ids).size, ids.length);
+  for (const step of IMPORT_TOUR_STEPS) {
+    assert.ok(step.title.length > 0, step.id);
+    assert.ok(step.body.length > 0, step.id);
+    if (step.path !== undefined) assert.ok(ROUTES.includes(step.path), `${step.id}: ${step.path}`);
+  }
+  const targets = IMPORT_TOUR_STEPS.map((step) => step.target).filter(Boolean);
+  assert.equal(new Set(targets).size, targets.length);
+});
+
+test("the import tour downloads the skill on Course Settings before uploading", () => {
+  const ids = IMPORT_TOUR_STEPS.map((step) => step.id);
+  assert.ok(ids.indexOf("download-skill") < ids.indexOf("import-upload"));
+  const skill = IMPORT_TOUR_STEPS.find((step) => step.id === "download-skill");
+  assert.equal(skill?.target, "download-skill");
+  const navSkill = IMPORT_TOUR_STEPS.find((step) => step.id === "nav-skill-settings");
+  assert.equal(navSkill?.target, navTourTarget("/course-settings"));
+});
+
+test("the import tour waits for the user to navigate between its pages", () => {
+  const index = IMPORT_TOUR_STEPS.findIndex((step) => step.id === "nav-import");
+  assert.equal(resolveTourStep(IMPORT_TOUR_STEPS, index, "/course-settings").mode, "navigate");
+  const done = resolveTourStep(IMPORT_TOUR_STEPS, IMPORT_TOUR_STEPS.length, "/import");
+  assert.equal(done.mode, "done");
+  assert.equal(IMPORT_TOUR_SEEN_KEY, "import_tour_seen");
 });

@@ -5,6 +5,9 @@
 /** Written once the tour is finished or skipped; cleared by "Clear everything". */
 export const TOUR_SEEN_KEY = "tour_seen";
 
+/** Written once the import tour is finished or skipped; same lifecycle as above. */
+export const IMPORT_TOUR_SEEN_KEY = "import_tour_seen";
+
 export type TourStep = {
   id: string;
   /** What the user is on when the step has no route of its own. */
@@ -180,5 +183,54 @@ export const TOUR_STEPS: TourStep[] = [
     page: "this page",
     title: "That is the tour",
     body: "Everything else — import formats, review scheduling, appearance and backups — lives in Settings. You can replay this walkthrough from Settings whenever you like.",
+  },
+];
+
+/** Shown on the first visit to the Import page; it detours to Course Settings. */
+export const IMPORT_TOUR_STEPS: TourStep[] = [
+  {
+    id: "import-welcome",
+    page: "this page",
+    title: "Importing questions — a short tour",
+    body: "Bringing a past paper in takes three moves: take the course skill, let an AI assistant write the import file, then upload it here. This tour walks through each one. You can leave at any time with Skip tour, and Settings brings it back.",
+  },
+  {
+    id: "nav-skill-settings",
+    page: "Course Settings",
+    path: "/course-settings",
+    target: "nav-course-settings",
+    title: "First: get the course skill",
+    body: "The course skill is a small file that teaches an AI assistant this course's exact question format — topics, difficulty, marking guides and images. Open Course Settings to download it.",
+  },
+  {
+    id: "download-skill",
+    page: "Course Settings",
+    path: "/course-settings",
+    target: "download-skill",
+    title: "Download skill file",
+    body: "Give the skill file and your source document — a past paper, worksheet or similar — to an AI assistant such as ChatGPT or Claude, and it will produce the import JSON following this course's format.",
+  },
+  {
+    id: "nav-import",
+    page: "Import",
+    path: "/import",
+    target: "nav-import",
+    title: "Next: back to the Import tab",
+    body: "Open the Import tab to carry on.",
+  },
+  {
+    id: "import-upload",
+    page: "Import",
+    path: "/import",
+    target: "import-upload",
+    title: "Upload the assistant's output",
+    body: "Drop the JSON file here, or a .qbx bundle which also carries its images. A .qbx imports its editable question data and packaged images into this course; JSON questions are validated one by one.",
+  },
+  {
+    id: "import-summary",
+    page: "Import",
+    path: "/import",
+    title: "Check what came in",
+    body: "Each file gets a summary of how many questions imported and how many were rejected, with the reason for every rejected question — fix the JSON and re-upload. That is the whole loop; you can replay this tour from Settings.",
   },
 ];
