@@ -28,6 +28,25 @@ export interface GlossaryTerm {
   definition: string;
 }
 
+export type DrawingTool = "pen" | "highlighter" | "stroke-eraser" | "pixel-eraser";
+export type DrawingPoint = { x: number; y: number; pressure: number; time: number };
+export type DrawingStroke = {
+  stroke_id: string;
+  kind: "pen" | "highlighter";
+  color: string;
+  width: number;
+  points: DrawingPoint[];
+};
+export type DrawingPage = {
+  page_id: string;
+  question_id: string;
+  position: number;
+  title: string;
+  background: "plain" | "ruled" | "grid" | "dotted";
+  strokes: DrawingStroke[];
+};
+export type DrawingNotebook = { question_id: string; pages: DrawingPage[] };
+
 export interface CourseNode {
   node_id: string;
   course_id: string;

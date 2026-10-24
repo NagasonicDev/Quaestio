@@ -12,6 +12,7 @@ import { InkLoader, Meta, PageHeader, Panel } from "../components/system";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
+import { DrawingNotebook } from "../components/drawing/DrawingNotebook";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
 import { useQuestionFilterCounts } from "../hooks/useQuestionFilterCounts";
@@ -309,6 +310,7 @@ export function Quiz() {
         key={current.question_id}
         question={current}
         submitted={revealed}
+        afterQuestion={<div className="px-5 sm:px-6"><DrawingNotebook questionId={current.question_id} /></div>}
         selectedChoice={selectedChoice}
         onSelectChoice={current.type_key === "multiple_choice" ? setSelectedChoice : undefined}
         footer={<div className="space-y-4">

@@ -26,6 +26,8 @@ import type {
   StudyProgress,
   InstitutionYearFilter,
   TestSectionInput,
+  DrawingNotebook,
+  DrawingPage,
 } from "./types";
 
 export { assetUrl } from "../lib/assets";
@@ -55,6 +57,11 @@ export type {
   TestSectionInput,
   TestSectionResult,
   TopicProgress,
+  DrawingNotebook,
+  DrawingPage,
+  DrawingPoint,
+  DrawingStroke,
+  DrawingTool,
 } from "./types";
 
 async function registerQuestion(q: Question | null): Promise<Question | null> {
@@ -261,6 +268,22 @@ export const api = {
 
   deleteQuestion(id: string): Promise<void> {
     return data.deleteQuestion(id);
+  },
+
+  getDrawingNotebook(questionId: string): Promise<DrawingNotebook> {
+    return data.getDrawingNotebook(questionId);
+  },
+
+  saveDrawingPage(questionId: string, page: DrawingPage): Promise<void> {
+    return data.saveDrawingPage(questionId, page);
+  },
+
+  deleteDrawingPage(questionId: string, pageId: string): Promise<void> {
+    return data.deleteDrawingPage(questionId, pageId);
+  },
+
+  reorderDrawingPages(questionId: string, pageIds: string[]): Promise<void> {
+    return data.reorderDrawingPages(questionId, pageIds);
   },
 
   deleteQuestions(ids: string[]): Promise<void> {

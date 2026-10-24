@@ -285,12 +285,14 @@ export function QuestionSurface({
   question,
   submitted = false,
   footer,
+  afterQuestion,
   selectedChoice,
   onSelectChoice,
 }: {
   question: Question;
   submitted?: boolean;
   footer?: ReactNode;
+  afterQuestion?: ReactNode;
   selectedChoice?: string | null;
   onSelectChoice?: (choice: string) => void;
 }) {
@@ -312,6 +314,7 @@ export function QuestionSurface({
         <p className="mb-5 font-mono text-xs text-muted-foreground">{label}</p>
         <QuestionReader question={question} selectedChoice={selectedChoice} onSelectChoice={onSelectChoice} submitted={submitted} />
       </article>
+      {afterQuestion}
       {submitted && <AnswerReveal question={question} />}
       {footer && <div className="border-t border-border px-5 py-4">{footer}</div>}
     </Panel>

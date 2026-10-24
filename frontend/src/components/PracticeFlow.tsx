@@ -6,6 +6,7 @@ import { BlockList, MarkingGuideTable, QuestionReader } from "./QuestionReader";
 import { Meta, Panel } from "./system";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
+import { DrawingNotebook } from "./drawing/DrawingNotebook";
 import { ConfidencePicker, SelfAssessment } from "./SelfAssessment";
 import { formatQuestionType } from "../lib/questionTypes";
 import { StimulusSideMenu } from "./StimulusSideMenu";
@@ -297,6 +298,8 @@ export function PracticeFlow({
           </p>
         )}
       </article>
+
+      <div className="px-5 sm:px-6"><DrawingNotebook questionId={questionId} /></div>
 
       {stage === "prompt" && (
         <div className="border-t border-border px-5 py-5 sm:px-6">

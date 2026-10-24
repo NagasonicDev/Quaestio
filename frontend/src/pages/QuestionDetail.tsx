@@ -8,6 +8,7 @@ import { LoadingState, PageHeader, Panel } from "../components/system";
 import { QuestionSurface } from "../components/QuestionReader";
 import { Button } from "../components/ui/button";
 import { QuestionEditor } from "../components/QuestionEditor";
+import { DrawingNotebook } from "../components/drawing/DrawingNotebook";
 import { useCourseConfig } from "../hooks/useCourseConfig";
 import type { Question } from "../api/types";
 
@@ -70,6 +71,7 @@ export function QuestionDetail() {
         <QuestionSurface
           question={question}
           submitted={showAnswer}
+          afterQuestion={<div className="px-5 sm:px-6"><DrawingNotebook questionId={question.question_id} /></div>}
           footer={
             question.answer.length > 0 || question.solution.length > 0 || question.marking_criteria.length > 0 ||
             question.parts.some((part) => part.answer.length > 0 || part.solution.length > 0 || part.marking_criteria.length > 0) ? (

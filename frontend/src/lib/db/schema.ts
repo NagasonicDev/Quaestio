@@ -106,6 +106,17 @@ CREATE TABLE IF NOT EXISTS content_block (
 );
 CREATE INDEX IF NOT EXISTS idx_content_block_question ON content_block(question_id, slot, position);
 
+CREATE TABLE IF NOT EXISTS question_drawing_page (
+  page_id TEXT PRIMARY KEY,
+  question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
+  position INTEGER NOT NULL,
+  title TEXT NOT NULL,
+  background TEXT NOT NULL,
+  strokes_json TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
+CREATE INDEX IF NOT EXISTS idx_drawing_page_question ON question_drawing_page(question_id, position);
+
 CREATE TABLE IF NOT EXISTS stimulus (
   stimulus_id TEXT PRIMARY KEY,
   course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
@@ -274,7 +285,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
  * version the persisted blobs, and to the per-course `schema_version` that
  * describes the question format a course expects.
  */
-export const SCHEMA_VERSION = 4;
+export const SCHEMA_VERSION = 5;
 
 export interface Migration {
   id: number;
@@ -387,6 +398,22 @@ export const MIGRATIONS: Migration[] = [
         definition TEXT NOT NULL,
         PRIMARY KEY (course_id, term)
       );
+    `,
+  },
+  {
+    id: 5,
+    name: "question-drawing-notebook",
+    sql: `
+      CREATE TABLE IF NOT EXISTS question_drawing_page (
+        page_id TEXT PRIMARY KEY,
+        question_id TEXT NOT NULL REFERENCES question(question_id) ON DELETE CASCADE,
+        position INTEGER NOT NULL,
+        title TEXT NOT NULL,
+        background TEXT NOT NULL,
+        strokes_json TEXT NOT NULL,
+        updated_at TEXT NOT NULL
+      );
+      CREATE INDEX IF NOT EXISTS idx_drawing_page_question ON question_drawing_page(question_id, position);
     `,
   },
 ];

@@ -76,7 +76,11 @@ export function SaveStatusIndicator() {
         role="tooltip"
         className="pointer-events-none absolute right-0 top-full z-50 mt-2 hidden whitespace-nowrap rounded-md border border-border bg-popover px-3 py-2 text-xs font-medium text-popover-foreground shadow-md group-hover:block group-focus-within:block"
       >
-        {isSaving ? "Saving to this device…" : "Saved on this device"}
+        {isSaving
+          ? "Saving to this device…"
+          : snapshot.lastSavedAt
+            ? `Saved on this device at ${new Date(snapshot.lastSavedAt).toLocaleTimeString([], { hour: "numeric", minute: "2-digit" })}`
+            : "Saved on this device"}
       </span>
     </span>
   );

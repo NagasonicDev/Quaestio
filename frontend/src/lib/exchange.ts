@@ -7,6 +7,8 @@ import { claimQuestionId, newId, nowUtc } from "./id";
 import * as data from "./data";
 import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule";
 import { contentHash } from "./storage";
+import type { DrawingNotebook } from "../api/types";
+import { validateDrawingNotebooks } from "./drawingNotebook";
 import type { CourseFullConfig, CourseNode, Question } from "../api/types";
 
 // ---------- helpers ----------
@@ -282,9 +284,9 @@ export interface CourseExportOptions {
 
 export type ExportProgress = (percent: number) => void;
 
-/** Bumped whenever the bundle shape changes. Version 1 had no learning data. */
-export const COURSE_EXPORT_SCHEMA_VERSION = 2;
-export const SUPPORTED_COURSE_EXPORT_VERSIONS = [1, COURSE_EXPORT_SCHEMA_VERSION];
+/** Bumped whenever the course bundle shape changes. */
+export const COURSE_EXPORT_SCHEMA_VERSION = 3;
+export const SUPPORTED_COURSE_EXPORT_VERSIONS = [1, 2, COURSE_EXPORT_SCHEMA_VERSION];
 
 export interface LearningBundle {
   review_policy: Record<string, unknown> | null;
@@ -385,6 +387,15 @@ export async function exportCourse(
     (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
+  const includedQuestionIds = new Set<string>();
+  const includeQuestionTree = (question: Question) => {
+    includedQuestionIds.add(question.question_id);
+    question.parts.forEach(includeQuestionTree);
+  };
+  questions.forEach(includeQuestionTree);
+  const drawingNotebooks = includeQuestions
+    ? (await data.listDrawingNotebooksForCourse(courseId)).filter((notebook) => includedQuestionIds.has(notebook.question_id))
+    : [];
   const learning = includeQuestions && includeLearningData ? await readLearningData(courseId, options.includeResponseText === true) : null;
   const stimuli = includeQuestions ? await data.listStimuliForCourse(courseId) : [];
   const stimuliWithContent: StimulusExport[] = [];
@@ -434,6 +445,7 @@ export async function exportCourse(
           generated_files: false,
           stimuli: stimuliWithContent.length > 0,
           question_stimuli: questionStimuli.length > 0,
+          drawing_notebooks: drawingNotebooks.length > 0,
         },
         course: {
           ...config,
@@ -446,6 +458,7 @@ export async function exportCourse(
         learning,
         stimuli: stimuliWithContent,
         question_stimuli: questionStimuli,
+        drawing_notebooks: drawingNotebooks,
       }, null, 2
     )
   );
@@ -566,6 +579,7 @@ export interface ParsedBundle {
   learning?: LearningBundle | null;
   stimuli?: StimulusExport[];
   question_stimuli?: QuestionStimulusLink[];
+  drawing_notebooks?: DrawingNotebook[];
 }
 
 export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
@@ -602,6 +616,11 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
   if (courseJson.questions != null && !Array.isArray(courseJson.questions)) {
     throw new Error("This .qb bundle's question list is malformed.");
   }
+  let drawingNotebooks: DrawingNotebook[] = [];
+  if (courseJson.drawing_notebooks != null) {
+    try { drawingNotebooks = validateDrawingNotebooks(courseJson.drawing_notebooks); }
+    catch (error) { throw new Error(`This .qb bundle has invalid drawing data: ${error instanceof Error ? error.message : String(error)}`); }
+  }
   const assetBlobs = new Map<string, Blob>();
   const assetFolder = archive.folder("assets");
   if (assetFolder) {
@@ -620,6 +639,7 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
     learning: courseJson.learning ?? null,
     stimuli: Array.isArray(courseJson.stimuli) ? courseJson.stimuli : undefined,
     question_stimuli: Array.isArray(courseJson.question_stimuli) ? courseJson.question_stimuli : undefined,
+    drawing_notebooks: drawingNotebooks,
   };
 }
 
@@ -1012,6 +1032,7 @@ export async function applyCourseBundle(
   onProgress?.(94);
   await restoreLearningData(bundle.learning, ctx);
   await restoreStimuli(bundle, ctx);
+  await data.importDrawingNotebooks(bundle.drawing_notebooks ?? [], ctx.questionMap);
   onProgress?.(100);
   return courseId;
 }
