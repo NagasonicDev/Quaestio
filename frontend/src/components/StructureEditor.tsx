@@ -65,6 +65,8 @@ export function StructureEditor({ config }: StructureEditorProps) {
         </div>
       </Panel>
 
+      <DifficultyLevelsPanel config={config} onChanged={refresh} />
+
       <Panel>
         <PanelHead
           title={config.hierarchy[0]?.label ?? "Categories"}
@@ -151,6 +153,125 @@ function LevelRow({
         variant="ghost"
         size="icon"
         onClick={remove}
+        className="h-8 w-8 text-destructive hover:bg-destructive/10 hover:text-destructive"
+        title="Delete level"
+      >
+        <Trash2 />
+      </Button>
+    </div>
+  );
+}
+
+function DifficultyLevelsPanel({ config, onChanged }: { config: CourseFullConfig; onChanged: () => void }) {
+  const [newLabel, setNewLabel] = useState("");
+  const levels = [...(config.difficulty_levels ?? [])].sort((a, b) => a.level - b.level);
+  const used = new Set(levels.map((d) => d.level));
+  let nextLevel = 1;
+  while (used.has(nextLevel) && nextLevel <= 10) nextLevel += 1;
+  const canAdd = levels.length < 10 && nextLevel <= 10;
+
+  async function add() {
+    if (!newLabel.trim() || !canAdd) return;
+    try {
+      await api.addDifficultyLevel(config.course_id, { level: nextLevel, label: newLabel.trim() });
+      setNewLabel("");
+      onChanged();
+    } catch (err) {
+      notify("Could not add difficulty level", "error", err instanceof Error ? err.message : "Failed to add difficulty level.");
+    }
+  }
+
+  return (
+    <Panel>
+      <PanelHead
+        title="Difficulty bands"
+        note="The difficulty bands assignable to questions (2–10 bands)."
+        action={
+          <div className="flex items-center gap-1.5">
+            <Input
+              value={newLabel}
+              onChange={(e) => setNewLabel(e.target.value)}
+              placeholder={canAdd ? `Band ${nextLevel}` : "Maximum 10 bands"}
+              className="h-8 w-44"
+              disabled={!canAdd}
+            />
+            <Button size="sm" onClick={() => void add()} disabled={!newLabel.trim() || !canAdd}>
+              <Plus />
+              Add band
+            </Button>
+          </div>
+        }
+      />
+      <div className="divide-y divide-border p-2">
+        {levels.map((d) => (
+          <DifficultyLevelRow
+            key={d.level}
+            courseId={config.course_id}
+            level={d}
+            onChanged={onChanged}
+            canDelete={levels.length > 2}
+          />
+        ))}
+        {levels.length === 0 && (
+          <p className="px-3 py-2 text-sm italic text-muted-foreground">No difficulty bands defined.</p>
+        )}
+      </div>
+    </Panel>
+  );
+}
+
+function DifficultyLevelRow({
+  courseId, level, onChanged, canDelete,
+}: { courseId: string; level: { level: number; label: string }; onChanged: () => void; canDelete: boolean }) {
+  const confirm = useConfirm();
+  const [label, setLabel] = useState(level.label);
+  const [saving, setSaving] = useState(false);
+
+  async function save() {
+    if (label === level.label || !label.trim()) return;
+    setSaving(true);
+    try {
+      await api.updateDifficultyLevel(courseId, level.level, { level: level.level, label: label.trim() });
+      onChanged();
+    } catch (err) {
+      notify("Could not save difficulty level", "error", err instanceof Error ? err.message : "Failed to save difficulty level.");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  async function remove() {
+    const ok = await confirm({
+      title: `Delete difficulty band ${level.level} — “${level.label}”?`,
+      description: "This only works if no questions use the level.",
+      confirmLabel: "Delete band",
+      destructive: true,
+    });
+    if (!ok) return;
+    try {
+      await api.deleteDifficultyLevel(courseId, level.level);
+      onChanged();
+    } catch (err) {
+      notify("Could not delete difficulty level", "error", err instanceof Error ? err.message : "Failed to delete difficulty level.");
+    }
+  }
+
+  return (
+    <div className="grid grid-cols-[30px_minmax(0,1fr)_auto] items-center gap-3 px-3 py-2">
+      <span className="font-mono text-xs text-muted-foreground">{level.level}</span>
+      <Input
+        value={label}
+        onChange={(e) => setLabel(e.target.value)}
+        onBlur={() => void save()}
+        disabled={saving}
+        className="h-8"
+      />
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon"
+        onClick={() => void remove()}
+        disabled={!canDelete || saving}
         className="h-8 w-8 text-destructive hover:bg-destructive/10 hover:text-destructive"
         title="Delete level"
       >

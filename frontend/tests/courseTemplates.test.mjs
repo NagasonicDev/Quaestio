@@ -56,7 +56,14 @@ test("buildTemplateBundle expands nested template nodes into a flat course tree"
     ]
   );
   assert.deepEqual(bundle.course.question_types, ["multiple_choice", "short_answer", "extended_response"]);
-  assert.equal(bundle.course.difficulty_levels.length, 4);
+  assert.deepEqual(bundle.course.difficulty_levels, [
+    { level: 1, label: "Band 1" },
+    { level: 2, label: "Band 2" },
+    { level: 3, label: "Band 3" },
+    { level: 4, label: "Band 4" },
+    { level: 5, label: "Band 5" },
+    { level: 6, label: "Band 6" },
+  ]);
   assert.deepEqual(bundle.questions, []);
   assert.equal(bundle.assetBlobs.size, 0);
 

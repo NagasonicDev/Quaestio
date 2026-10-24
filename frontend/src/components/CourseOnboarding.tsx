@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import {
@@ -7,6 +7,7 @@ import {
   Check,
   FileUp,
   FlaskConical,
+  Layers,
   Layers3,
   NotebookPen,
   Plus,
@@ -15,10 +16,12 @@ import {
 } from "lucide-react";
 import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
-import { CreateCourseForm } from "./CreateCourseForm";
 import { Button } from "./ui/button";
 import { useConfirm } from "./ui/modal";
 import { notify, startOperationNotification } from "../lib/notifications";
+import { templateStats, templatesByCategory } from "../lib/courseTemplates";
+import { useInstallTemplate } from "../hooks/useInstallTemplate";
+import { cn } from "../lib/utils";
 
 type Step = "sample" | "import" | "create" | null;
 
@@ -30,13 +33,24 @@ type Step = "sample" | "import" | "create" | null;
  * and students will ask about it.
  */
 export function CourseOnboarding() {
-  const [step, setStep] = useState<Step>(null);
   const [busy, setBusy] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
   const qc = useQueryClient();
   const navigate = useNavigate();
   const { setCourseId } = useActiveCourse();
   const confirm = useConfirm();
+  const install = useInstallTemplate();
+
+  const allTemplates = templatesByCategory().flatMap((g) => g.templates);
+  const [templateIndex, setTemplateIndex] = useState(0);
+
+  useEffect(() => {
+    if (allTemplates.length <= 1) return;
+    const id = window.setInterval(() => {
+      setTemplateIndex((i) => (i + 1) % allTemplates.length);
+    }, 4000);
+    return () => window.clearInterval(id);
+  }, [allTemplates.length]);
 
   async function adopt(courseId: string, to: string) {
     setCourseId(courseId);
@@ -132,7 +146,7 @@ export function CourseOnboarding() {
       text: "Name your subject and its levels, then add or import questions.",
       detail: "Two or three questions is enough to start practising \u2014 you do not need a full bank.",
       cta: "Set up a course",
-      onClick: () => setStep("create"),
+      onClick: () => navigate("/add-course"),
     },
     {
       id: null,
@@ -166,66 +180,124 @@ export function CourseOnboarding() {
               <Button onClick={addSampleCourse} disabled={busy} className="h-11 px-5">
                 <FlaskConical /> Try the sample course <ArrowRight className="ml-1" />
               </Button>
-              <Button variant="outline" size="lg" onClick={() => setStep("create")} disabled={busy}>
+              <Button variant="outline" size="lg" onClick={() => navigate("/add-course")} disabled={busy}>
                 Set up my own course
               </Button>
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-sm">
             <div className="absolute -inset-4 rounded-[2rem] bg-primary/5 blur-xl" />
-            <div className="relative rotate-1 rounded-2xl border border-border bg-background/90 p-5 shadow-xl shadow-foreground/5 backdrop-blur">
-              <div className="flex items-center justify-between border-b border-border pb-4">
-                <div>
-                  <p className="label">A fresh start</p>
-                  <p className="mt-1 font-display text-lg font-semibold">Your study space</p>
-                </div>
-                <div className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                  <Layers3 className="size-5" />
-                </div>
-              </div>
-              <div className="space-y-3 py-5">
-                {[
-                  ["01", "Get some questions in", "Sample, import, or your own"],
-                  ["02", "Practise one properly", "Attempt it, then check yourself"],
-                  ["03", "Come back to it later", "The queue decides when"],
-                ].map(([n, title, note], index) => (
-                  <div key={n} className="flex items-center gap-3 rounded-xl bg-surface/70 p-3">
-                    <span
-                      className={`flex size-8 shrink-0 items-center justify-center rounded-full text-xs font-semibold ${
-                        index === 0 ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
-                      }`}
-                    >
-                      {index === 0 ? <Check className="size-4" /> : n}
-                    </span>
-                    <div>
-                      <p className="text-sm font-medium">{title}</p>
-                      <p className="mt-0.5 text-xs text-muted-foreground">{note}</p>
-                    </div>
+            {allTemplates.length > 0 ? (
+              <div className="relative overflow-hidden rounded-2xl border border-border bg-background/90 shadow-xl shadow-foreground/5 backdrop-blur">
+                <div className="flex items-center justify-between border-b border-border px-5 pb-4 pt-5">
+                  <div>
+                    <p className="label">Start from a template</p>
+                    <p className="mt-1 font-display text-lg font-semibold">Ready-made courses</p>
                   </div>
-                ))}
+                  <Button variant="ghost" size="sm" onClick={() => navigate("/templates")}>
+                    Browse all
+                  </Button>
+                </div>
+                <div className="relative h-[220px]">
+                  {allTemplates.map((t, idx) => {
+                    const { topics, levels } = templateStats(t);
+                    const active = idx === templateIndex;
+                    return (
+                      <article
+                        key={t.id}
+                        className={cn(
+                          "absolute inset-0 flex flex-col gap-3 p-5 transition-all duration-700",
+                          active ? "translate-x-0 opacity-100" : "translate-x-4 opacity-0 pointer-events-none"
+                        )}
+                      >
+                        <div className="flex items-start justify-between gap-3">
+                          <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-secondary text-primary">
+                            <BookOpen className="h-5 w-5" />
+                          </div>
+                          <span className="label rounded-full border border-border px-2.5 py-1">{t.category}</span>
+                        </div>
+                        <div className="min-w-0 space-y-1.5">
+                          <h3 className="font-display text-lg font-semibold leading-snug">{t.name}</h3>
+                          {t.description && (
+                            <p className="text-[13px] leading-relaxed text-muted-foreground line-clamp-2">{t.description}</p>
+                          )}
+                        </div>
+                        <div className="mt-auto flex items-center justify-between gap-3 border-t border-border pt-3">
+                          <span className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.1em] text-muted-foreground">
+                            <Layers className="h-3.5 w-3.5" />
+                            {topics} topics · {levels} levels
+                          </span>
+                          <Button
+                            size="sm"
+                            disabled={install.isPending}
+                            className="shrink-0 gap-1.5"
+                            onClick={() => install.mutate(t, { onSuccess: () => navigate("/") })}
+                          >
+                            <Plus className="h-3.5 w-3.5" />
+                            Add template
+                          </Button>
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+                <div className="flex items-center justify-center gap-1.5 border-t border-border px-5 py-3">
+                  {allTemplates.map((_, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      aria-label={`Go to template ${idx + 1}`}
+                      onClick={() => setTemplateIndex(idx)}
+                      className={cn(
+                        "h-1.5 rounded-full transition-all",
+                        idx === templateIndex ? "w-6 bg-primary" : "w-1.5 bg-muted-foreground/40"
+                      )}
+                    />
+                  ))}
+                </div>
               </div>
-              <div className="flex items-center gap-2 border-t border-border pt-4 text-xs text-muted-foreground">
-                <span className="size-1.5 rounded-full bg-success" /> Local to this device
+            ) : (
+              <div className="relative rotate-1 rounded-2xl border border-border bg-background/90 p-5 shadow-xl shadow-foreground/5 backdrop-blur">
+                <div className="flex items-center justify-between border-b border-border pb-4">
+                  <div>
+                    <p className="label">A fresh start</p>
+                    <p className="mt-1 font-display text-lg font-semibold">Your study space</p>
+                  </div>
+                  <div className="flex size-10 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                    <Layers3 className="size-5" />
+                  </div>
+                </div>
+                <div className="space-y-3 py-5">
+                  {[
+                    ["01", "Get some questions in", "Sample, import, or your own"],
+                    ["02", "Practise one properly", "Attempt it, then check yourself"],
+                    ["03", "Come back to it later", "The queue decides when"],
+                  ].map(([n, title, note], index) => (
+                    <div key={n} className="flex items-center gap-3 rounded-xl bg-surface/70 p-3">
+                      <span
+                        className={`flex size-8 shrink-0 items-center justify-center rounded-full text-xs font-semibold ${
+                          index === 0 ? "bg-primary text-primary-foreground" : "bg-secondary text-muted-foreground"
+                        }`}
+                      >
+                        {index === 0 ? <Check className="size-4" /> : n}
+                      </span>
+                      <div>
+                        <p className="text-sm font-medium">{title}</p>
+                        <p className="mt-0.5 text-xs text-muted-foreground">{note}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="flex items-center gap-2 border-t border-border pt-4 text-xs text-muted-foreground">
+                  <span className="size-1.5 rounded-full bg-success" /> Local to this device
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
 
-      {step === "create" ? (
-        <section className="panel mx-auto max-w-2xl p-5 sm:p-7">
-          <div className="mb-5">
-            <p className="label">Let&rsquo;s get started</p>
-            <h2 className="mt-1 font-display text-2xl font-semibold">Create your course</h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              You can change the structure and add topics at any time.
-            </p>
-          </div>
-          <CreateCourseForm onDone={() => setStep(null)} />
-        </section>
-      ) : (
-        <>
-          <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-4 sm:grid-cols-2">
             {options.map(
               ({ id, icon: Icon, title, text, detail, cta, disabled, onClick }) => (
                 <div
@@ -281,8 +353,6 @@ export function CourseOnboarding() {
               </div>
             ))}
           </div>
-        </>
-      )}
     </div>
   );
 }

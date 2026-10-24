@@ -138,11 +138,39 @@ export function tableColumnAligns(block: ContentBlock): Array<"left" | "center" 
   });
 }
 
+/**
+ * The MCQ answer key, always derived from option `is_correct` flags rather
+ * than the free-text answer slot. position -1 keeps it ahead of authored
+ * answer blocks (builders sort by position).
+ */
+function mcqKeyBlock(question: Question): ContentBlock | null {
+  // Only a multiple-choice question has a lettered key. Options on some other
+  // question type must not print a spurious "No option is marked correct".
+  if (question.type_key !== "multiple_choice") return null;
+  const options = question.mcq_options ?? [];
+  if (!options.length) return null;
+  const letters = options
+    .map((option, index) => (option.is_correct ? String.fromCharCode(65 + index) : null))
+    .filter((letter): letter is string => letter !== null);
+  const text = letters.length
+    ? `Correct answer: ${letters.map((letter) => `(${letter})`).join(", ")}`
+    : "No option is marked correct";
+  return {
+    block_id: `${question.question_id}:mcq-key`,
+    slot: "answer",
+    position: -1,
+    block_type: "text",
+    content: { text },
+  };
+}
+
 /** The answer/solution/marking-guide slots for a question and its parts. */
 export function solutionSlots(question: Question): SolutionSlot[] {
   const hasParts = question.parts.length > 0;
+  const key = mcqKeyBlock(question);
+  const answerBlocks = key ? [key, ...question.answer] : question.answer;
   const slots: SolutionSlot[] = [
-    { label: "Answer", blocks: question.answer, heading: hasParts ? "Overview" : undefined },
+    { label: "Answer", blocks: answerBlocks, heading: hasParts ? "Overview" : undefined },
     { label: "Solution", blocks: question.solution },
     { label: "Marking criteria", blocks: markingCriteriaBlocks(question.marking_criteria) },
   ];

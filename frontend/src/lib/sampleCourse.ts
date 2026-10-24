@@ -292,12 +292,7 @@ export function sampleCourseBundle(): ParsedBundle {
       schema_version: 1,
       allow_multi_classification: true,
       hierarchy: [{ level_index: 0, label: "Topic", required: true }],
-      difficulty_levels: [
-        { level: 1, label: "Very Easy" },
-        { level: 2, label: "Easy" },
-        { level: 3, label: "Difficult" },
-        { level: 4, label: "Very Difficult" },
-      ],
+      difficulty_levels: Array.from({ length: 6 }, (_, index) => ({ level: index + 1, label: `Band ${index + 1}` })),
       question_types: ["multiple_choice", "short_answer", "extended_response"],
       tags: ["onboarding", "retrieval", "review-schedule"],
       nodes: [

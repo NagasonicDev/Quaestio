@@ -350,10 +350,10 @@ export function FilterMenu({
               <div>
                 <p className="label mb-2">Difficulty</p>
                 <p className="mb-3 text-xs text-muted-foreground">
-                  Pick any number of difficulty levels — every selected level matches.
+                  Pick any number of difficulty bands — every selected band matches.
                 </p>
                 {difficultyLevels.length === 0 ? (
-                  <p className="text-sm text-muted-foreground">No difficulty levels defined.</p>
+                  <p className="text-sm text-muted-foreground">No difficulty bands defined.</p>
                 ) : (
                   <div className="space-y-1.5">
                     {difficultyLevels.map((d) => (

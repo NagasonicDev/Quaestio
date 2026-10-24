@@ -35,7 +35,7 @@ flowchart LR
 
 | | Feature | What you get |
 |---|---|---|
-| 🎓 | **Start from a template** | Choose from **28 ready-made HSC course templates** (current syllabus and pre-reform) with the syllabus structure, subject tags, and module topics already in place. Or create a course from scratch with your own hierarchy, difficulty levels, and question types. |
+| 🎓 | **Start from a template** | Choose from **54 ready-made HSC course templates** (current syllabus and pre-reform) with the syllabus structure, subject tags, and module topics already in place. Or create a course from scratch with your own hierarchy, difficulty levels, and question types. |
 | 🗂️ | **Organise your way** | Questions sit in a course tree of topics and subtopics. Rename or reshape the levels, add categories, and browse or filter by subject, difficulty, question type, tags, institution, and year. |
 | ✍️ | **Write rich questions** | A block editor for formatted text, equations (LaTeX), images, diagrams, function graphs, tables, lists, code, and multi-part prompts. Keep the hint, answer, solution/working, and marking criteria with each question, plus source metadata and an **approved** flag for when it is ready for practice and tests. |
 | 📖 | **Share passages and data** | Maintain a course-level library of stimuli (passages, tables, data extracts), link them to any number of questions, and they appear beside the question while you study. |

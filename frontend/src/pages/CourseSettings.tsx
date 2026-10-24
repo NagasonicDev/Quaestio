@@ -16,10 +16,10 @@ import { Modal, useConfirm } from "../components/ui/modal";
 import { Input } from "../components/ui/input";
 import { Switch } from "../components/ui/switch";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
-import type { Question } from "../api/types";
+import type { Course, GlossaryTerm, Question } from "../api/types";
 import { Download, Plus, Pencil, Trash2, ExternalLink, ListChecks, Shapes, Gauge, School, Tags } from "lucide-react";
 
-type Tab = "structure" | "tags" | "questions" | "stimuli";
+type Tab = "structure" | "tags" | "questions" | "stimuli" | "glossary";
 type ExportTab = "type" | "difficulty" | "institution" | "tags" | "scope";
 const PAGE_SIZE = 20;
 
@@ -41,6 +41,7 @@ export function CourseSettings() {
   const [exportTags, setExportTags] = useState<string[]>([]);
   const [exportLearning, setExportLearning] = useState(true);
   const [exportResponses, setExportResponses] = useState(false);
+  const [exportQuestions, setExportQuestions] = useState(true);
   const { data: sourceOptions } = useQuery({
     queryKey: ["question-source-options", courseId],
     queryFn: () => api.questionSourceOptions(courseId!),
@@ -73,6 +74,7 @@ export function CourseSettings() {
       if (exportFormat === "questions") await api.exportQuestions(config.course_id, filters, exportTask.progress);
       else
         await api.exportCourse(config.course_id, filters, {
+          includeQuestions: exportQuestions,
           includeLearningData: exportLearning,
           includeResponseText: exportResponses,
         }, exportTask.progress);
@@ -152,14 +154,23 @@ export function CourseSettings() {
     if (!ok) return;
     setDeleting(true);
     const task = startOperationNotification("Deleting course…", config.name);
+    let deleted = false;
     try {
-      await api.deleteCourse(config.course_id);
-      qc.removeQueries({ predicate: (query) => query.queryKey.includes(config.course_id) });
+      await api.deleteCourse(config.course_id, () => {
+        deleted = true;
+        qc.removeQueries({ predicate: (query) => query.queryKey.includes(config.course_id) });
+        qc.setQueryData<Course[]>(["courses"], (courses) =>
+          courses?.filter((course) => course.course_id !== config.course_id)
+        );
+        setCourseId(null);
+      });
       await qc.invalidateQueries({ queryKey: ["courses"] });
-      setCourseId(null);
       task.succeed("Course deleted", config.name);
     } catch (e) {
-      task.fail("Could not delete course", e instanceof Error ? e.message : "Failed to delete course.");
+      task.fail(
+        deleted ? "Course deleted; cleanup incomplete" : "Could not delete course",
+        e instanceof Error ? e.message : "Failed to delete course."
+      );
     } finally {
       setDeleting(false);
     }
@@ -188,6 +199,7 @@ export function CourseSettings() {
             <Button
               variant="outline"
               onClick={handleSkill}
+              data-tour="download-skill"
               title="Download a .skill file: general document-to-question instructions plus this course's specific structure and marking-guide rules, for use with an AI assistant to convert source exams into an importable JSON file."
             >
               <ExternalLink />
@@ -205,7 +217,7 @@ export function CourseSettings() {
         onClose={() => setExportMenuOpen(false)}
         label="Export options"
         header={exportFormat === "course" ? "Export course" : "Export questions"}
-        headerNote="Choose which questions to include. Empty sections include all values."
+        headerNote={exportFormat === "course" ? "Choose what to include in the course backup." : "Choose which questions to include. Empty sections include all values."}
         footer={
           <>
             <Button variant="outline" onClick={() => { setExportTypes([]); setExportDifficulties([]); setExportInstitutions([]); setExportTags([]); }}>Reset</Button>
@@ -234,7 +246,7 @@ export function CourseSettings() {
             {exportTab === "difficulty" && <ExportOptionGroup title="Difficulty" values={config.difficulty_levels.map((d) => d.level)} selected={exportDifficulties} onChange={setExportDifficulties} labels={Object.fromEntries(config.difficulty_levels.map((d) => [d.level, d.label]))} />}
             {exportTab === "institution" && <ExportOptionGroup title="Institution" values={(sourceOptions?.institutions ?? []).map((i) => i.name)} selected={exportInstitutions} onChange={setExportInstitutions} emptyLabel={sourceOptions ? "No institutions found." : "Loading institutions…"} />}
             {exportTab === "tags" && <ExportOptionGroup title="Tags" values={config.tags} selected={exportTags} onChange={setExportTags} />}
-            {exportTab === "scope" && <ExportScope includeLearning={exportLearning} onIncludeLearningChange={setExportLearning} includeResponses={exportResponses} onIncludeResponsesChange={setExportResponses} />}
+            {exportTab === "scope" && <ExportScope includeQuestions={exportQuestions} onIncludeQuestionsChange={setExportQuestions} includeLearning={exportLearning} onIncludeLearningChange={setExportLearning} includeResponses={exportResponses} onIncludeResponsesChange={setExportResponses} />}
           </div>
         </div>
       </Modal>
@@ -267,6 +279,7 @@ export function CourseSettings() {
           <TabsTrigger value="tags">Tags</TabsTrigger>
           <TabsTrigger value="questions">Questions</TabsTrigger>
           <TabsTrigger value="stimuli">Stimuli</TabsTrigger>
+          <TabsTrigger value="glossary">Glossary</TabsTrigger>
         </TabsList>
         <TabsContent value="structure" className="space-y-5">
           <CourseNameSettings key={config.course_id} courseId={config.course_id} name={config.name} />
@@ -281,17 +294,24 @@ export function CourseSettings() {
         <TabsContent value="stimuli">
           <StimulusManager courseId={config.course_id} />
         </TabsContent>
+        <TabsContent value="glossary">
+          <CourseGlossarySettings courseId={config.course_id} glossary={config.glossary ?? []} />
+        </TabsContent>
       </Tabs>
     </div>
   );
 }
 
 function ExportScope({
+  includeQuestions,
+  onIncludeQuestionsChange,
   includeLearning,
   onIncludeLearningChange,
   includeResponses,
   onIncludeResponsesChange,
 }: {
+  includeQuestions: boolean;
+  onIncludeQuestionsChange: (value: boolean) => void;
   includeLearning: boolean;
   onIncludeLearningChange: (value: boolean) => void;
   includeResponses: boolean;
@@ -299,9 +319,19 @@ function ExportScope({
 }) {
   return (
     <div className="space-y-4">
+      <label className="flex items-start gap-2.5">
+        <Switch checked={includeQuestions} onCheckedChange={onIncludeQuestionsChange} />
+        <span className="min-w-0">
+          <span className="block text-sm font-medium">Include questions</span>
+          <span className="mt-0.5 block text-xs text-muted-foreground">
+            Turn this off to export only the course structure, hierarchy, difficulty bands and allowed tags.
+          </span>
+        </span>
+      </label>
+      {includeQuestions && <>
       <p className="label mb-1">Always included in a .qb export</p>
       <ul className="space-y-1.5 text-sm text-muted-foreground">
-        <li>• Course structure, hierarchy levels, difficulty levels and allowed tags</li>
+        <li>• Course structure, hierarchy levels, difficulty bands and allowed tags</li>
         <li>• Every question matching your filters, with answers, marking guides and hints</li>
         <li>• Images and diagrams used by those questions</li>
       </ul>
@@ -338,6 +368,7 @@ function ExportScope({
           </span>
         </label>
       </div>
+      </>}
     </div>
   );
 }
@@ -433,6 +464,96 @@ function CourseTagSettings({ courseId, tags }: { courseId: string; tags: string[
         <div className="flex items-center gap-2">
           <Button disabled={saving || draft === null} onClick={() => void save(values)}>{saving ? "Saving…" : "Save tag list"}</Button>
           {draft !== null && <Button variant="ghost" disabled={saving} onClick={() => setDraft(null)}>Discard</Button>}
+        </div>
+      </div>
+    </Panel>
+  );
+}
+
+function CourseGlossarySettings({ courseId, glossary }: { courseId: string; glossary: GlossaryTerm[] }) {
+  const qc = useQueryClient();
+  const [draft, setDraft] = useState<GlossaryTerm[] | null>(null);
+  const [termInput, setTermInput] = useState("");
+  const [defInput, setDefInput] = useState("");
+  const [saving, setSaving] = useState(false);
+  const values = draft ?? glossary;
+
+  async function save(next: GlossaryTerm[]) {
+    setSaving(true);
+    try {
+      await api.updateCourseGlossary(courseId, next);
+      setDraft(null);
+      await qc.invalidateQueries({ queryKey: ["course", courseId] });
+      notify("Glossary updated", "success");
+    } catch (e) {
+      notify("Could not save glossary", "error", e instanceof Error ? e.message : "Couldn't save glossary.");
+    } finally {
+      setSaving(false);
+    }
+  }
+
+  function add() {
+    const term = termInput.trim();
+    const definition = defInput.trim();
+    if (!term || !definition) return;
+    if (values.some((g) => g.term.toLowerCase() === term.toLowerCase())) {
+      setTermInput("");
+      setDefInput("");
+      return;
+    }
+    setDraft([...values, { term, definition }]);
+    setTermInput("");
+    setDefInput("");
+  }
+
+  function remove(term: string) {
+    setDraft(values.filter((g) => g.term !== term));
+  }
+
+  function updateDefinition(term: string, definition: string) {
+    setDraft(values.map((g) => (g.term === term ? { ...g, definition } : g)));
+  }
+
+  async function loadDefaults() {
+    const defaults = (await import("../lib/data")).defaultGlossaryTerms();
+    const merged = [...values];
+    const seen = new Set(values.map((g) => g.term.toLowerCase()));
+    for (const d of defaults) {
+      if (!seen.has(d.term.toLowerCase())) {
+        merged.push(d);
+        seen.add(d.term.toLowerCase());
+      }
+    }
+    setDraft(merged);
+  }
+
+  return (
+    <Panel>
+      <PanelHead title="Course glossary" note="Words and definitions. Click a highlighted glossary word in a question to read its definition." />
+      <div className="space-y-4 p-5">
+        <div className="flex flex-wrap gap-2">
+          {values.map((g) => (
+            <div key={g.term} className="flex items-center gap-2 rounded-md border border-border px-3 py-2">
+              <span className="text-sm font-medium">{g.term}</span>
+              <input
+                className="min-w-[200px] flex-1 border-0 bg-transparent text-sm outline-none"
+                value={g.definition}
+                onChange={(e) => updateDefinition(g.term, e.target.value)}
+                aria-label={`Definition for ${g.term}`}
+              />
+              <button type="button" aria-label={`Remove ${g.term}`} className="text-muted-foreground hover:text-foreground" onClick={() => remove(g.term)}>×</button>
+            </div>
+          ))}
+        </div>
+        <form className="flex flex-wrap gap-2" onSubmit={(e) => { e.preventDefault(); add(); }}>
+          <Input value={termInput} onChange={(e) => setTermInput(e.target.value)} placeholder="Term" aria-label="New glossary term" />
+          <Input value={defInput} onChange={(e) => setDefInput(e.target.value)} placeholder="Definition" aria-label="New glossary definition" className="min-w-[240px] flex-1" />
+          <Button type="submit" variant="outline">Add</Button>
+        </form>
+        <div className="flex items-center gap-2">
+          <Button disabled={saving || draft === null} onClick={() => void save(values)}>{saving ? "Saving…" : "Save glossary"}</Button>
+          {draft !== null && <Button variant="ghost" disabled={saving} onClick={() => setDraft(null)}>Discard</Button>}
+          <Button variant="outline" onClick={() => void loadDefaults()}>Load default directive verbs</Button>
         </div>
       </div>
     </Panel>
