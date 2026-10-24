@@ -1,6 +1,6 @@
 import type { ParsedBundle } from "./exchange";
 import type { CourseNode, LevelDef } from "../api/types";
-import { NESA_HSC_GLOSSARY } from "./nesaGlossary";
+import { NESA_HSC_GLOSSARY } from "./nesaGlossary.ts";
 
 /**
  * Base course templates that ship with the site.
