@@ -7,8 +7,8 @@ import { claimQuestionId, newId, nowUtc } from "./id";
 import * as data from "./data";
 import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule";
 import { contentHash } from "./storage";
-import type { DrawingNotebook } from "../api/types";
-import { validateDrawingNotebooks } from "./drawingNotebook";
+import type { DrawingNotebook, DrawingPage } from "../api/types";
+import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingNotebooks, validateDrawingPage } from "./drawingNotebook";
 import type { CourseFullConfig, CourseNode, Question } from "../api/types";
 
 // ---------- helpers ----------
@@ -285,8 +285,8 @@ export interface CourseExportOptions {
 export type ExportProgress = (percent: number) => void;
 
 /** Bumped whenever the course bundle shape changes. */
-export const COURSE_EXPORT_SCHEMA_VERSION = 3;
-export const SUPPORTED_COURSE_EXPORT_VERSIONS = [1, 2, COURSE_EXPORT_SCHEMA_VERSION];
+export const COURSE_EXPORT_SCHEMA_VERSION = 4;
+export const SUPPORTED_COURSE_EXPORT_VERSIONS = [1, 2, 3, COURSE_EXPORT_SCHEMA_VERSION];
 
 export interface LearningBundle {
   review_policy: Record<string, unknown> | null;
@@ -319,10 +319,11 @@ async function readLearningData(
     [courseId]
   );
   const attemptRows = await all<Record<string, unknown>>(
-    `SELECT practice_attempt.question_id AS question_id, practice_attempt.status AS status,
+    `SELECT practice_attempt.attempt_id AS attempt_id, practice_attempt.question_id AS question_id, practice_attempt.status AS status,
             practice_attempt.correct AS correct, practice_attempt.time_spent_sec AS time_spent_sec,
             practice_attempt.user_notes AS user_notes, practice_attempt.created_at AS created_at,
-            practice_attempt.response_text AS response_text, practice_attempt.confidence AS confidence,
+            practice_attempt.response_text AS response_text, practice_attempt.response_image AS response_image,
+            practice_attempt.confidence AS confidence,
             practice_attempt.self_rating AS self_rating, practice_attempt.hints_revealed AS hints_revealed,
             practice_attempt.scored_by AS scored_by, practice_attempt.score_earned AS score_earned,
             practice_attempt.score_possible AS score_possible
@@ -332,6 +333,29 @@ async function readLearningData(
       ORDER BY practice_attempt.created_at`,
     [courseId]
   );
+  const attemptDrawingRows = await all<Record<string, unknown>>(
+    `SELECT p.* FROM question_drawing_page p
+       JOIN practice_attempt a ON a.attempt_id = p.attempt_id
+       JOIN question q ON q.question_id = p.question_id
+      WHERE q.course_id = ? AND p.attempt_id IS NOT NULL
+      ORDER BY p.attempt_id, p.position, p.page_id`,
+    [courseId]
+  );
+  const attemptPages = new Map<string, Array<Record<string, unknown>>>();
+  for (const row of attemptDrawingRows) {
+    const pages = attemptPages.get(String(row.attempt_id)) ?? [];
+    let strokes: unknown = [];
+    try { strokes = JSON.parse(String(row.strokes_json)); } catch { /* malformed stored strokes export as empty */ }
+    pages.push({
+      page_id: row.page_id,
+      question_id: row.question_id,
+      position: Number(row.position),
+      title: row.title,
+      background: row.background,
+      strokes: Array.isArray(strokes) ? strokes : [],
+    });
+    attemptPages.set(String(row.attempt_id), pages);
+  }
   const policy = await data.getReviewPolicy();
   return {
     review_policy: { ladder: policy.ladder, again_minutes: policy.againMinutes },
@@ -348,6 +372,7 @@ async function readLearningData(
       updated_at: optionalText(row.updated_at),
     })),
     attempts: attemptRows.map((row) => ({
+      attempt_id: row.attempt_id,
       question_id: row.question_id,
       status: String(row.status),
       // `correct` is only meaningful for objectively scored attempts; keep the
@@ -357,12 +382,14 @@ async function readLearningData(
       user_notes: optionalText(row.user_notes),
       created_at: optionalText(row.created_at) ?? nowUtc(),
       response_text: includeResponseText ? optionalText(row.response_text) : null,
+      response_image: includeResponseText ? optionalText(row.response_image) : null,
       confidence: optionalText(row.confidence),
       self_rating: optionalText(row.self_rating),
       hints_revealed: Number(row.hints_revealed) || 0,
       scored_by: optionalText(row.scored_by),
       score_earned: optionalNumber(row.score_earned),
       score_possible: optionalNumber(row.score_possible),
+      drawing_pages: attemptPages.get(String(row.attempt_id)) ?? [],
     })),
   };
 }
@@ -620,6 +647,29 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
   if (courseJson.drawing_notebooks != null) {
     try { drawingNotebooks = validateDrawingNotebooks(courseJson.drawing_notebooks); }
     catch (error) { throw new Error(`This .qb bundle has invalid drawing data: ${error instanceof Error ? error.message : String(error)}`); }
+  }
+  const learningAttempts = courseJson.learning?.attempts;
+  if (learningAttempts != null && !Array.isArray(learningAttempts)) {
+    throw new Error("This .qb bundle has invalid attempt history data.");
+  }
+  for (const attempt of learningAttempts ?? []) {
+    if (!attempt || typeof attempt !== "object") throw new Error("This .qb bundle has invalid attempt history data.");
+    if (attempt.drawing_pages == null) continue;
+    if (typeof attempt.question_id !== "string" || !Array.isArray(attempt.drawing_pages) || attempt.drawing_pages.length > MAX_DRAWING_NOTEBOOK_PAGES) {
+      throw new Error("This .qb bundle has invalid attempt notebook data.");
+    }
+    const pageIds = new Set<string>();
+    const positions = new Set<number>();
+    try {
+      for (const page of attempt.drawing_pages as DrawingPage[]) {
+        validateDrawingPage(attempt.question_id, page);
+        if (pageIds.has(page.page_id) || positions.has(page.position)) throw new Error("Duplicate attempt notebook page.");
+        pageIds.add(page.page_id);
+        positions.add(page.position);
+      }
+    } catch (error) {
+      throw new Error(`This .qb bundle has invalid attempt notebook data: ${error instanceof Error ? error.message : String(error)}`);
+    }
   }
   const assetBlobs = new Map<string, Blob>();
   const assetFolder = archive.folder("assets");
@@ -1087,13 +1137,14 @@ async function restoreLearningData(
       const questionId = ctx.questionMap.get(String(row.question_id));
       if (!questionId) continue;
       const status = String(row.status ?? "seen");
+      const attemptId = newId("att");
       database.run(
         `INSERT INTO practice_attempt
            (attempt_id, session_id, question_id, status, correct, time_spent_sec, user_notes, created_at,
-            response_text, confidence, self_rating, hints_revealed, scored_by, score_earned, score_possible)
-         VALUES (?, NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+            response_text, response_image, confidence, self_rating, hints_revealed, scored_by, score_earned, score_possible)
+         VALUES (?, NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [
-          newId("att"),
+          attemptId,
           questionId,
           isAttemptStatus(status) ? status : "seen",
           // `correct` is a self-report or an app score. Only trust it when the
@@ -1103,6 +1154,7 @@ async function restoreLearningData(
           optionalText(row.user_notes),
           optionalText(row.created_at) ?? now,
           optionalText(row.response_text),
+          optionalText(row.response_image),
           optionalText(row.confidence),
           isSelfRating(row.self_rating) ? row.self_rating : null,
           typeof row.hints_revealed === "number" ? row.hints_revealed : 0,
@@ -1111,6 +1163,16 @@ async function restoreLearningData(
           optionalNumber(row.score_possible),
         ]
       );
+      for (const rawPage of Array.isArray(row.drawing_pages) ? row.drawing_pages as DrawingPage[] : []) {
+        const page: DrawingPage = { ...rawPage, page_id: newId("draw"), question_id: questionId };
+        validateDrawingPage(questionId, page);
+        database.run(
+          `INSERT INTO question_drawing_page
+             (page_id, question_id, position, title, background, strokes_json, updated_at, attempt_id)
+           VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
+          [page.page_id, questionId, page.position, page.title, page.background, JSON.stringify(page.strokes), now, attemptId]
+        );
+      }
     }
   });
 }

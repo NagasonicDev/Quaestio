@@ -11,8 +11,7 @@ import { flattenCounts } from "../components/NodeTree";
 import { InkLoader, Meta, PageHeader, Panel } from "../components/system";
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
-import { Textarea } from "../components/ui/textarea";
-import { DrawingNotebook } from "../components/drawing/DrawingNotebook";
+import { QuestionAnswerInput } from "../components/QuestionAnswerInput";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
 import { useQuestionFilterCounts } from "../hooks/useQuestionFilterCounts";
@@ -26,6 +25,10 @@ type Phase = "setup" | "loading" | "run" | "done";
 export function Quiz() {
   const { courseId } = useActiveCourse();
   const { data: config } = useCourseConfig(courseId);
+  const { data: responseCapture = "on" } = useQuery({
+    queryKey: ["practice-response-capture"],
+    queryFn: () => api.getResponseCapture(),
+  });
   const [selectedNodes, setSelectedNodes] = useState<Set<string>>(new Set());
   const [typeKeys, setTypeKeys] = useState<string[]>([]);
   const [difficulties, setDifficulties] = useState<number[]>([]);
@@ -35,9 +38,11 @@ export function Quiz() {
   const [phase, setPhase] = useState<Phase>("setup");
   const [deck, setDeck] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
+  const [attemptInstance, setAttemptInstance] = useState<{ key: string; id: string } | null>(null);
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [answerDraft, setAnswerDraft] = useState("");
+  const [answerImage, setAnswerImage] = useState("");
   const [marksDraft, setMarksDraft] = useState("");
   const [revealed, setRevealed] = useState(false);
   const [results, setResults] = useState<QuizResult[]>([]);
@@ -81,6 +86,20 @@ export function Quiz() {
   });
   const matchingCount = matchingQuestions?.total ?? 0;
   const current = deck[index];
+  const attemptKey = current ? `${index}:${current.question_id}` : null;
+  useEffect(() => {
+    if (phase !== "run" || !current) {
+      setAttemptInstance(null);
+      return;
+    }
+    let active = true;
+    setAttemptInstance(null);
+    void api.recordAttempt({ question_id: current.question_id, status: "seen" })
+      .then(({ attempt_id }) => { if (active) setAttemptInstance({ key: `${index}:${current.question_id}`, id: attempt_id }); })
+      .catch(() => {});
+    return () => { active = false; };
+  }, [phase, index, current?.question_id]);
+  const notebookAttemptId = attemptInstance?.key === attemptKey ? attemptInstance.id : undefined;
   const maxMarks = Math.max(0, current?.marks ?? 0);
   const elapsed = elapsedSeconds;
   const earnedTotal = results.reduce((sum, result) => sum + result.earned, 0);
@@ -144,6 +163,7 @@ export function Quiz() {
     setElapsedSeconds(0);
     setSelectedChoice(null);
     setAnswerDraft("");
+    setAnswerImage("");
     setMarksDraft("");
     setRevealed(false);
     setStimuli([]);
@@ -170,6 +190,7 @@ export function Quiz() {
       setElapsedSeconds(0);
       setSelectedChoice(null);
       setAnswerDraft("");
+      setAnswerImage("");
       setMarksDraft("");
       setRevealed(false);
       setStimuli([]);
@@ -202,10 +223,10 @@ export function Quiz() {
         scored_by: "objective",
         correct,
         response_text: answerDraft || null,
+        response_image: answerImage || null,
         time_spent_sec: elapsed,
       }).catch(() => {});
     } else {
-      if (!answerDraft.trim()) return;
       setRevealed(true);
     }
   }
@@ -224,6 +245,8 @@ export function Quiz() {
       score_earned: earned,
       score_possible: possible,
       user_notes: answerDraft,
+      response_text: answerDraft || null,
+      response_image: answerImage || null,
       time_spent_sec: elapsed,
     }).catch(() => {});
   }
@@ -310,7 +333,6 @@ export function Quiz() {
         key={current.question_id}
         question={current}
         submitted={revealed}
-        afterQuestion={<div className="px-5 sm:px-6"><DrawingNotebook questionId={current.question_id} /></div>}
         selectedChoice={selectedChoice}
         onSelectChoice={current.type_key === "multiple_choice" ? setSelectedChoice : undefined}
         footer={<div className="space-y-4">
@@ -322,10 +344,20 @@ export function Quiz() {
               </div>
             </div>
           </div>}
-          {current.type_key !== "multiple_choice" && <div>
-            <label className="label mb-2 block" htmlFor="quiz-answer">Your answer</label>
-            <Textarea id="quiz-answer" value={answerDraft} onChange={(event) => setAnswerDraft(event.target.value)} disabled={revealed} placeholder="Write your working and answer…" className="min-h-28 bg-surface/60" />
-          </div>}
+          <div>
+            <QuestionAnswerInput
+              questionId={current.question_id}
+              notebookAttemptId={notebookAttemptId}
+              text={answerDraft}
+              image={answerImage}
+              onTextChange={setAnswerDraft}
+              onImageChange={setAnswerImage}
+              disabled={revealed}
+              captureResponse={responseCapture === "on"}
+              notebookOnly={current.type_key === "multiple_choice"}
+              placeholder="Write your working and answer…"
+            />
+          </div>
           {revealed && current.type_key !== "multiple_choice" && <div className="flex flex-wrap items-end gap-3 rounded-md border border-border bg-surface/50 p-3">
             <label className="block w-36"><span className="label mb-1.5 block">Marks awarded</span><Input type="number" min={0} max={maxMarks || undefined} step="0.5" value={marksDraft} onChange={(event) => setMarksDraft(event.target.value)} placeholder={`0–${maxMarks}`} aria-label="Marks awarded" /></label>
             <Button size="sm" onClick={saveMark} disabled={marksDraft === ""}>Save score</Button>
@@ -335,7 +367,7 @@ export function Quiz() {
             <span className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground"><Clock3 className="size-3.5" />{revealed ? "Time taken" : "Elapsed"} {formatDuration(elapsedSeconds)}</span>
             <div className="flex gap-2">
               {!revealed && <Button variant="ghost" onClick={advance}><SkipForward />Skip</Button>}
-              {!revealed && <Button onClick={submitAnswer} disabled={current.type_key === "multiple_choice" ? !selectedChoice : !answerDraft.trim()}>{current.type_key === "multiple_choice" ? <Check /> : null}{current.type_key === "multiple_choice" ? "Submit answer" : "Reveal marking guide"}</Button>}
+              {!revealed && <Button onClick={submitAnswer} disabled={current.type_key === "multiple_choice" && !selectedChoice}>{current.type_key === "multiple_choice" ? <Check /> : null}{current.type_key === "multiple_choice" ? "Submit answer" : "Reveal marking guide"}</Button>}
               {revealed && <Button onClick={advance} disabled={current.type_key !== "multiple_choice" && !results.some((item) => item.question.question_id === current.question_id)}>{index + 1 >= deck.length ? "Finish quiz" : "Next question"} →</Button>}
             </div>
           </div>

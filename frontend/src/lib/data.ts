@@ -72,7 +72,7 @@ import type { NodeActivity } from "./studyProgress";
 import { selectQuestionIndexes } from "./questionSelection";
 import { recentlyUsedQuestionIds, parseQuestionIdList } from "./testHistory";
 import type { DrawingNotebook, DrawingPage } from "./drawingNotebook";
-import { validateDrawingPage } from "./drawingNotebook";
+import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingPage } from "./drawingNotebook";
 
 // ---------- helpers ----------
 
@@ -2142,7 +2142,7 @@ export async function enqueueForReview(questionId: string, at?: string): Promise
 // ---------- attempt lifecycle ----------
 
 const ATTEMPT_COLUMNS = `attempt_id, session_id, question_id, status, correct, time_spent_sec,
-                         user_notes, created_at, response_text, confidence, self_rating,
+                         user_notes, created_at, response_text, response_image, confidence, self_rating,
                          hints_revealed, scored_by, score_earned, score_possible`;
 
 export async function recordAttempt(payload: AttemptInput): Promise<{ attempt_id: string; created_at: string }> {
@@ -2159,7 +2159,7 @@ export async function recordAttempt(payload: AttemptInput): Promise<{ attempt_id
   const objective = payload.scored_by === "objective" && payload.correct != null;
   await run(
     `INSERT INTO practice_attempt (${ATTEMPT_COLUMNS})
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
     [
       attemptId,
       payload.session_id ?? null,
@@ -2170,6 +2170,7 @@ export async function recordAttempt(payload: AttemptInput): Promise<{ attempt_id
       payload.user_notes ?? null,
       createdAt,
       capture === "on" ? payload.response_text ?? null : null,
+      capture === "on" ? payload.response_image ?? null : null,
       payload.confidence ?? null,
       payload.self_rating ?? null,
       payload.hints_revealed ?? 0,
@@ -2188,6 +2189,7 @@ export interface ReviewSubmission {
   /** Set only when something objective decided the outcome, such as a marked MCQ. */
   objective_correct?: boolean | null;
   response_text?: string | null;
+  response_image?: string | null;
   confidence?: Confidence | null;
   hints_revealed?: number | null;
   time_spent_sec?: number | null;
@@ -2224,7 +2226,7 @@ export async function recordReview(
   await transaction((database) => {
     database.run(
       `INSERT INTO practice_attempt (${ATTEMPT_COLUMNS})
-       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
       [
         attemptId,
         input.session_id ?? null,
@@ -2235,6 +2237,7 @@ export async function recordReview(
         input.user_notes ?? null,
         at,
         capture === "on" ? input.response_text ?? null : null,
+        capture === "on" ? input.response_image ?? null : null,
         input.confidence ?? null,
         input.rating,
         input.hints_revealed ?? 0,
@@ -2279,6 +2282,7 @@ export async function questionAttempts(questionId: string, limit = 20): Promise<
     time_spent_sec: r.time_spent_sec == null ? null : Number(r.time_spent_sec),
     user_notes: r.user_notes ?? null,
     response_text: r.response_text ?? null,
+    response_image: r.response_image ?? null,
     confidence: (r.confidence ?? null) as Confidence | null,
     self_rating: (r.self_rating ?? null) as SelfRating | null,
     hints_revealed: Number(r.hints_revealed ?? 0),
@@ -2592,11 +2596,18 @@ export async function setSessionStatus(sessionId: string, status: "active" | "co
  * review the student has actually completed.
  */
 export async function resetPracticeSession(sessionId: string): Promise<PracticeSessionSummary | null> {
-  await run("DELETE FROM practice_attempt WHERE session_id = ? AND status = 'seen'", [sessionId]);
-  await run(
-    "UPDATE practice_session SET status = 'active', completed_count = 0, updated_at = ? WHERE session_id = ?",
-    [nowUtc(), sessionId]
-  );
+  await transaction((database) => {
+    // Keep offered attempts in history when resetting the queue, while releasing
+    // them from this session so each question can be offered as a new attempt.
+    database.run(
+      "UPDATE practice_attempt SET session_id = NULL WHERE session_id = ? AND status = 'seen'",
+      [sessionId]
+    );
+    database.run(
+      "UPDATE practice_session SET status = 'active', completed_count = 0, updated_at = ? WHERE session_id = ?",
+      [nowUtc(), sessionId]
+    );
+  });
   return getPracticeSession(sessionId);
 }
 
@@ -3849,71 +3860,86 @@ function drawingPageOut(row: SqlRow): DrawingPage {
   } as DrawingPage;
 }
 
-export async function getDrawingNotebook(questionId: string): Promise<DrawingNotebook> {
+export async function getDrawingNotebook(questionId: string, attemptId?: string): Promise<DrawingNotebook> {
   if (typeof questionId !== "string" || !questionId.trim()) throw new Error("Invalid question id");
+  if (attemptId !== undefined && (typeof attemptId !== "string" || !attemptId.trim())) throw new Error("Invalid attempt id");
+  const instanceId = attemptId ?? null;
   let rows = await all<SqlRow>(
-    "SELECT * FROM question_drawing_page WHERE question_id = ? ORDER BY position, page_id", [questionId]
+    "SELECT * FROM question_drawing_page WHERE question_id = ? AND attempt_id IS ? ORDER BY position, page_id", [questionId, instanceId]
   );
   if (!rows.length) {
     const pageId = newId("draw");
     await transaction((db) => db.run(
-      `INSERT INTO question_drawing_page (page_id, question_id, position, title, background, strokes_json, updated_at)
-       VALUES (?, ?, 0, 'Page 1', 'plain', '[]', ?)`, [pageId, questionId, nowUtc()]
+      `INSERT INTO question_drawing_page (page_id, question_id, position, title, background, strokes_json, updated_at, attempt_id)
+       VALUES (?, ?, 0, 'Page 1', 'ruled', '[]', ?, ?)`, [pageId, questionId, nowUtc(), instanceId]
     ));
     rows = await all<SqlRow>(
-      "SELECT * FROM question_drawing_page WHERE question_id = ? ORDER BY position, page_id", [questionId]
+      "SELECT * FROM question_drawing_page WHERE question_id = ? AND attempt_id IS ? ORDER BY position, page_id", [questionId, instanceId]
     );
   }
   return { question_id: questionId, pages: rows.map(drawingPageOut) };
 }
 
-export async function saveDrawingPage(questionId: string, page: DrawingPage): Promise<void> {
+export async function saveDrawingPage(questionId: string, page: DrawingPage, attemptId?: string): Promise<void> {
   validateDrawingPage(questionId, page);
+  if (attemptId !== undefined && (typeof attemptId !== "string" || !attemptId.trim())) throw new Error("Invalid attempt id");
+  const instanceId = attemptId ?? null;
   await transaction((db) => {
-    const existing = db.exec("SELECT question_id FROM question_drawing_page WHERE page_id = ?", [page.page_id]);
+    const existing = db.exec("SELECT question_id, attempt_id FROM question_drawing_page WHERE page_id = ?", [page.page_id]);
     if (existing[0]?.values.length && String(existing[0].values[0][0]) !== questionId) {
       throw new Error("Drawing page belongs to another question");
     }
+    if (existing[0]?.values.length && (existing[0].values[0][1] ?? null) !== instanceId) {
+      throw new Error("Drawing page belongs to another attempt");
+    }
+    if (!existing[0]?.values.length) {
+      const count = db.exec("SELECT COUNT(*) FROM question_drawing_page WHERE question_id = ? AND attempt_id IS ?", [questionId, instanceId]);
+      if (Number(count[0]?.values[0]?.[0] ?? 0) >= MAX_DRAWING_NOTEBOOK_PAGES) {
+        throw new Error(`A drawing notebook can have no more than ${MAX_DRAWING_NOTEBOOK_PAGES} pages`);
+      }
+    }
     db.run(
-      `INSERT INTO question_drawing_page (page_id, question_id, position, title, background, strokes_json, updated_at)
-       VALUES (?, ?, ?, ?, ?, ?, ?)
+      `INSERT INTO question_drawing_page (page_id, question_id, position, title, background, strokes_json, updated_at, attempt_id)
+       VALUES (?, ?, ?, ?, ?, ?, ?, ?)
        ON CONFLICT(page_id) DO UPDATE SET position=excluded.position, title=excluded.title,
        background=excluded.background, strokes_json=excluded.strokes_json, updated_at=excluded.updated_at`,
-      [page.page_id, questionId, page.position, page.title, page.background, JSON.stringify(page.strokes), nowUtc()]
+      [page.page_id, questionId, page.position, page.title, page.background, JSON.stringify(page.strokes), nowUtc(), instanceId]
     );
   });
 }
 
-export async function deleteDrawingPage(questionId: string, pageId: string): Promise<void> {
+export async function deleteDrawingPage(questionId: string, pageId: string, attemptId?: string): Promise<void> {
   if (!questionId?.trim() || !pageId?.trim()) throw new Error("Invalid drawing page id");
+  const instanceId = attemptId ?? null;
   await transaction((db) => {
-    const count = db.exec("SELECT COUNT(*) FROM question_drawing_page WHERE question_id = ?", [questionId]);
+    const count = db.exec("SELECT COUNT(*) FROM question_drawing_page WHERE question_id = ? AND attempt_id IS ?", [questionId, instanceId]);
     const pages = Number(count[0]?.values[0]?.[0] ?? 0);
-    const target = db.exec("SELECT 1 FROM question_drawing_page WHERE question_id = ? AND page_id = ?", [questionId, pageId]);
+    const target = db.exec("SELECT 1 FROM question_drawing_page WHERE question_id = ? AND page_id = ? AND attempt_id IS ?", [questionId, pageId, instanceId]);
     if (target[0]?.values.length && pages <= 1) throw new Error("A drawing notebook must keep at least one page");
-    db.run("DELETE FROM question_drawing_page WHERE question_id = ? AND page_id = ?", [questionId, pageId]);
+    db.run("DELETE FROM question_drawing_page WHERE question_id = ? AND page_id = ? AND attempt_id IS ?", [questionId, pageId, instanceId]);
   });
 }
 
-export async function reorderDrawingPages(questionId: string, pageIds: string[]): Promise<void> {
+export async function reorderDrawingPages(questionId: string, pageIds: string[], attemptId?: string): Promise<void> {
   if (!questionId?.trim() || !Array.isArray(pageIds) || pageIds.some((id) => typeof id !== "string" || !id.trim()) ||
       new Set(pageIds).size !== pageIds.length) throw new Error("Invalid drawing page order");
+  const instanceId = attemptId ?? null;
   await transaction((db) => {
-    const result = db.exec("SELECT page_id FROM question_drawing_page WHERE question_id = ? ORDER BY position, page_id", [questionId]);
+    const result = db.exec("SELECT page_id FROM question_drawing_page WHERE question_id = ? AND attempt_id IS ? ORDER BY position, page_id", [questionId, instanceId]);
     const current = (result[0]?.values ?? []).map(([id]) => String(id));
     if (current.length !== pageIds.length || current.some((id) => !pageIds.includes(id))) {
       throw new Error("Page order must include every notebook page exactly once");
     }
     pageIds.forEach((id, position) => db.run(
-      "UPDATE question_drawing_page SET position = ?, updated_at = ? WHERE question_id = ? AND page_id = ?",
-      [position, nowUtc(), questionId, id]
+      "UPDATE question_drawing_page SET position = ?, updated_at = ? WHERE question_id = ? AND page_id = ? AND attempt_id IS ?",
+      [position, nowUtc(), questionId, id, instanceId]
     ));
   });
 }
 export async function listDrawingNotebooksForCourse(courseId: string): Promise<DrawingNotebook[]> {
   const rows = await all<SqlRow>(
     `SELECT p.* FROM question_drawing_page p JOIN question q ON q.question_id = p.question_id
-     WHERE q.course_id = ? ORDER BY p.question_id, p.position, p.page_id`,
+     WHERE q.course_id = ? AND p.attempt_id IS NULL ORDER BY p.question_id, p.position, p.page_id`,
     [courseId]
   );
   const grouped = new Map<string, DrawingPage[]>();
@@ -3928,6 +3954,9 @@ export async function listDrawingNotebooksForCourse(courseId: string): Promise<D
 
 export async function importDrawingNotebooks(notebooks: DrawingNotebook[], questionIdMap: Map<string, string>): Promise<void> {
   for (const notebook of notebooks) {
+    if (notebook.pages.length > MAX_DRAWING_NOTEBOOK_PAGES) {
+      throw new Error(`A drawing notebook can have no more than ${MAX_DRAWING_NOTEBOOK_PAGES} pages`);
+    }
     const questionId = questionIdMap.get(notebook.question_id);
     if (!questionId) continue;
     for (const page of notebook.pages) {

@@ -1,6 +1,7 @@
 import type { ParsedBundle } from "./exchange";
 import type { CourseNode, LevelDef } from "../api/types";
 import { NESA_HSC_GLOSSARY } from "./nesaGlossary.ts";
+import { SYLLABUS_DOT_POINTS } from "./syllabusDotPoints.ts";
 
 /**
  * Base course templates that ship with the site.
@@ -40,6 +41,122 @@ export interface TemplateSpec {
 
 export type CourseTemplate = TemplateSpec & { nodes: TemplateNode[] };
 
+type CodedTemplateNode = {
+  name: string;
+  description?: string;
+  code: string;
+  children?: CodedTemplateNode[];
+};
+
+function syllabusNameKey(value: string): string {
+  return value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLocaleLowerCase()
+    .replace(/[^a-z0-9]+/g, "");
+}
+
+function syllabusNameSimilarity(left: string, right: string): number {
+  const a = syllabusNameKey(left);
+  const b = syllabusNameKey(right);
+  if (!a || !b) return 0;
+  if (a === b) return 1;
+  if (a.includes(b) || b.includes(a)) return Math.min(a.length, b.length) / Math.max(a.length, b.length);
+
+  const bigrams = (value: string) => new Set(
+    Array.from({ length: Math.max(0, value.length - 1) }, (_, index) => value.slice(index, index + 2)),
+  );
+  const aBigrams = bigrams(a);
+  const bBigrams = bigrams(b);
+  const intersection = [...aBigrams].filter((gram) => bBigrams.has(gram)).length;
+  const bigramScore = (2 * intersection) / Math.max(1, aBigrams.size + bBigrams.size);
+  const aWords = new Set(left.toLocaleLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean));
+  const bWords = new Set(right.toLocaleLowerCase().split(/[^\p{L}\p{N}]+/u).filter(Boolean));
+  const wordIntersection = [...aWords].filter((word) => bWords.has(word)).length;
+  const wordScore = wordIntersection / Math.max(1, new Set([...aWords, ...bWords]).size);
+  return Math.max(bigramScore, wordScore);
+}
+
+function joinSyllabusListFragments(points: string[]): string[] {
+  const result: string[] = [];
+  const objectiveVerb = /^(analyse|analyze|apply|assess|calculate|classify|compare|communicate|conduct|construct|contrast|define|demonstrate|describe|design|determine|develop|discuss|distinguish|draw|evaluate|examine|explain|explore|identify|interpret|investigate|justify|measure|model|outline|perform|plan|predict|prepare|produce|propose|recognise|recognize|research|select|solve|synthesise|synthesize|understand|use|write|create|complete|formulate|reflect|respond|engage|experience)\b/i;
+  for (let index = 0; index < points.length; index += 1) {
+    let point = points[index].trim();
+    if (!point.endsWith(":")) {
+      result.push(point);
+      continue;
+    }
+
+    const fragments: string[] = [];
+    while (index + 1 < points.length) {
+      const next = points[index + 1].trim();
+      const wordCount = next.split(/\s+/).filter(Boolean).length;
+      const beginsAsContinuation = /^[a-z(]/.test(next);
+      const isListFragment = wordCount <= 8 && !/[.!?]$/.test(next) && !objectiveVerb.test(next);
+      if (!beginsAsContinuation || !isListFragment) break;
+      fragments.push(next);
+      index += 1;
+    }
+    if (fragments.length) point += ` ${fragments.join("; ")}`;
+    result.push(point);
+  }
+  return result;
+}
+
+function enrichWithSyllabusDotPoints(
+  courseId: string,
+  _hierarchy: string[],
+  assignedNodes: TemplateNode[],
+): TemplateNode[] {
+  const groups = SYLLABUS_DOT_POINTS[courseId];
+  if (!groups?.length) return assignedNodes;
+
+  const nodes = assignedNodes as unknown as CodedTemplateNode[];
+  const walk = (
+    entries: CodedTemplateNode[],
+    depth: number,
+    names: string[],
+    parent?: CodedTemplateNode,
+  ): Array<{ node: CodedTemplateNode; depth: number; names: string[]; parent?: CodedTemplateNode }> =>
+    entries.flatMap((node) => {
+      if (/-D\d+$/.test(node.code)) return [];
+      const ref = { node, depth, names: [...names, node.name], parent };
+      return [ref, ...walk(node.children ?? [], depth + 1, ref.names, node)];
+    });
+  const addDotPoint = (parent: CodedTemplateNode, name: string): void => {
+    parent.children ??= [];
+    const code = `${parent.code}-D${parent.children.filter((child) => child.code.startsWith(`${parent.code}-D`)).length + 1}`;
+    const node: CodedTemplateNode = { name, code };
+    parent.children.push(node);
+  };
+  const allRefs = walk(nodes, 0, []);
+  const topicsByYear = {
+    PRE: allRefs.filter((ref) =>
+      (ref.node.code === "PRE" || ref.node.code.startsWith("PRE-"))
+      && !/-D\d+$/.test(ref.node.code)
+      && !(ref.node.children?.length),
+    ),
+    HSC: allRefs.filter((ref) =>
+      (ref.node.code === "HSC" || ref.node.code.startsWith("HSC-"))
+      && !/-D\d+$/.test(ref.node.code)
+      && !(ref.node.children?.length),
+    ),
+  };
+  for (const group of groups) {
+    const topics = topicsByYear[group.year];
+    const ranked = topics.map((ref) => {
+      const topicScore = syllabusNameSimilarity(group.topic, ref.node.name);
+      const contextScore = Math.max(0, ...ref.names.map((name) => syllabusNameSimilarity(group.module, name)));
+      return { ref, score: topicScore * 0.82 + contextScore * 0.18 };
+    }).sort((a, b) => b.score - a.score);
+    const destination = ranked[0]?.ref.node;
+    if (!destination) continue;
+    for (const point of joinSyllabusListFragments(group.points)) addDotPoint(destination, point);
+  }
+
+  return nodes;
+}
+
 export function template(spec: TemplateSpec): CourseTemplate {
   const rootCode = (name: string, index: number) => {
     if (name === "Year 11") return "PRE";
@@ -60,20 +177,22 @@ export function template(spec: TemplateSpec): CourseTemplate {
         ...(node.children ? { children: assignCodes(node.children, code, level + 1) } : {}),
       };
     });
-  return { ...spec, nodes: assignCodes(spec.nodes ?? []) };
+  const assignedNodes = assignCodes(spec.nodes ?? []);
+  return { ...spec, nodes: enrichWithSyllabusDotPoints(spec.id, spec.hierarchy, assignedNodes) };
 }
 
-/** Counts the leaf topics in a template and how many hierarchy levels it declares. */
+/** Counts topic-level nodes and how many hierarchy levels the template declares. */
 export function templateStats(t: CourseTemplate): { topics: number; levels: number } {
   let topics = 0;
-  const visit = (nodes: TemplateNode[]) => {
+  const topicDepth = Math.max(0, t.hierarchy.length - 2);
+  const visit = (nodes: TemplateNode[], depth: number) => {
     for (const entry of nodes) {
       const node = typeof entry === "string" ? { name: entry } : entry;
-      if ("children" in node && node.children && node.children.length > 0) visit(node.children);
-      else topics += 1;
+      if (depth === topicDepth) topics += 1;
+      else if ("children" in node && node.children && node.children.length > 0) visit(node.children, depth + 1);
     }
   };
-  visit(t.nodes);
+  visit(t.nodes, 0);
   return { topics, levels: t.hierarchy.length };
 }
 
@@ -169,7 +288,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 Ancient History (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "source_analysis", "source_evaluation", "historical_interpretation", "reliability", "archaeological_evidence", "causation", "continuity_and_change", "significance", "perspectives", "essay", "extended_response", "short_answer", "multiple_choice", "comparison", "terminology",
     ],
@@ -491,7 +610,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "NSW Stage 6 Biology (2025). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "conceptual", "explanation", "data_analysis", "graphing", "diagram", "experimental_design", "practical_investigation", "modelling", "calculation", "evaluation", "communication", "multiple_choice", "short_answer", "extended_response", "action_required",
     ],
@@ -565,7 +684,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "NSW Stage 6 Chemistry (2025). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "calculation", "stoichiometry", "conceptual", "explanation", "data_analysis", "graphing", "diagram", "practical_investigation", "experimental_design", "modelling", "derivation", "evaluation", "multiple_choice", "short_answer", "extended_response",
     ],
@@ -640,7 +759,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "NSW Stage 6 Economics (2025). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "explanation", "analysis", "evaluation", "data_analysis", "graphing", "calculation", "case_study", "contemporary_examples", "policy_analysis", "statistics", "interpretation", "extended_response", "short_answer", "multiple_choice", "action_required",
     ],
@@ -722,7 +841,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 English Advanced (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "textual_analysis", "essay", "extended_response", "creative_writing", "reflection", "comparative_study", "close_reading", "thesis", "evidence", "context", "imaginative_writing", "critical_analysis", "multimodal", "short_answer", "multiple_choice",
     ],
@@ -780,7 +899,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 English Extension (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "critical_analysis", "essay", "extended_response", "independent_research", "creative_writing", "reflection", "literary_theory", "comparative_study", "close_reading", "thesis", "major_work", "proposal", "source_analysis", "short_answer", "multiple_choice",
     ],
@@ -825,7 +944,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 English Standard (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "textual_analysis", "essay", "extended_response", "creative_writing", "reflection", "close_reading", "comprehension", "context", "evidence", "imaginative_writing", "multimodal", "media_analysis", "short_answer", "multiple_choice", "response_to_text",
     ],
@@ -881,7 +1000,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 English Studies (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "comprehension", "functional_writing", "workplace_communication", "media_analysis", "reflection", "creative_writing", "multimodal", "oral_presentation", "portfolio", "reading", "writing", "viewing", "short_answer", "multiple_choice", "extended_response",
     ],
@@ -1006,7 +1125,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2022",
     description: "NSW Stage 6 Enterprise Computing (2022). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "programming", "algorithm_design", "data_modelling", "database", "networking", "cybersecurity", "user_experience", "problem_solving", "systems_analysis", "project_management", "evaluation", "documentation", "calculation", "multiple_choice", "short_answer",
     ],
@@ -1063,7 +1182,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2022",
     description: "NSW Stage 6 Geography (2022). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "data_analysis", "fieldwork", "mapping", "spatial_technologies", "graphing", "explanation", "evaluation", "case_study", "stimulus_analysis", "calculation", "sustainability", "extended_response", "short_answer", "multiple_choice", "action_required",
     ],
@@ -1146,7 +1265,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "NSW Stage 6 Legal Studies (2025). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "legal_reasoning", "case_analysis", "legislation_analysis", "scenario_application", "evaluation", "explanation", "essay", "extended_response", "media_analysis", "contemporary_issues", "comparison", "legal_terminology", "short_answer", "multiple_choice", "action_required",
     ],
@@ -1263,7 +1382,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 Mathematics Advanced (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "calculation", "algebraic_manipulation", "graphing", "proof", "problem_solving", "modelling", "interpretation", "calculus", "trigonometry", "functions", "probability", "statistics", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -1358,7 +1477,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 Mathematics Extension 1 (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "calculation", "proof", "algebraic_manipulation", "graphing", "problem_solving", "modelling", "vectors", "calculus", "trigonometry", "combinatorics", "binomial", "distributions", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -1423,7 +1542,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 Mathematics Extension 2 (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "proof", "complex_numbers", "vectors", "integration", "mechanics", "calculus", "algebraic_manipulation", "graphing", "problem_solving", "modelling", "derivation", "rigorous_argument", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -1466,7 +1585,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 Mathematics Standard (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "calculation", "financial_mathematics", "measurement", "statistics", "probability", "graphing", "networks", "trigonometry", "problem_solving", "modelling", "interpretation", "practical_application", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -1572,7 +1691,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "NSW Stage 6 Modern History (2024). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "source_analysis", "source_evaluation", "historical_interpretation", "reliability", "historiography", "causation", "continuity_and_change", "significance", "perspectives", "essay", "extended_response", "short_answer", "multiple_choice", "comparison", "terminology",
     ],
@@ -1853,7 +1972,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "NSW Stage 6 Music 1 (2025). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "aural_analysis", "musicology", "composition", "performance", "listening", "score_reading", "music_language", "context_analysis", "creative_practice", "reflection", "improvisation", "analysis", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -1914,7 +2033,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "NSW Stage 6 Music 2 (2025). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "aural_analysis", "musicology", "composition", "performance", "listening", "score_reading", "music_language", "context_analysis", "creative_practice", "reflection", "harmony", "analysis", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -1975,7 +2094,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "NSW Stage 6 Physics (2025). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "calculation", "conceptual", "derivation", "data_analysis", "graphing", "diagram", "practical_investigation", "experimental_design", "modelling", "measurement", "evaluation", "short_answer", "extended_response", "multiple_choice", "action_required",
     ],
@@ -2052,7 +2171,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2017",
     description: "NSW Stage 6 Physics (2017). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "calculation", "conceptual", "derivation", "data_analysis", "graphing", "diagram", "practical_investigation", "experimental_design", "modelling", "measurement", "evaluation", "short_answer", "extended_response", "multiple_choice", "action_required",
     ],
@@ -2134,7 +2253,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2017",
     description: "NSW Stage 6 Biology (2017). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "conceptual", "explanation", "data_analysis", "graphing", "diagram", "experimental_design", "practical_investigation", "modelling", "calculation", "evaluation", "communication", "multiple_choice", "short_answer", "extended_response", "action_required",
     ],
@@ -2216,7 +2335,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2017",
     description: "NSW Stage 6 Chemistry (2017). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "calculation", "stoichiometry", "conceptual", "explanation", "data_analysis", "graphing", "diagram", "practical_investigation", "experimental_design", "modelling", "derivation", "evaluation", "multiple_choice", "short_answer", "extended_response",
     ],
@@ -2299,7 +2418,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2017",
     description: "NSW Stage 6 Ancient History (2017). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "source_analysis", "source_evaluation", "historical_interpretation", "reliability", "archaeological_evidence", "causation", "continuity_and_change", "significance", "perspectives", "essay", "extended_response", "short_answer", "multiple_choice", "comparison", "terminology",
     ],
@@ -2650,7 +2769,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2017",
     description: "NSW Stage 6 Modern History (2017). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "source_analysis", "source_evaluation", "historical_interpretation", "reliability", "historiography", "causation", "continuity_and_change", "significance", "perspectives", "essay", "extended_response", "short_answer", "multiple_choice", "comparison", "terminology",
     ],
@@ -2962,7 +3081,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Legal Studies (2009). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "legal_reasoning", "case_analysis", "legislation_analysis", "scenario_application", "evaluation", "explanation", "essay", "extended_response", "media_analysis", "contemporary_issues", "comparison", "legal_terminology", "short_answer", "multiple_choice", "action_required",
     ],
@@ -3044,7 +3163,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2011",
     description: "NSW Stage 6 Economics (2011). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "explanation", "analysis", "evaluation", "data_analysis", "graphing", "calculation", "case_study", "contemporary_examples", "policy_analysis", "statistics", "interpretation", "extended_response", "short_answer", "multiple_choice", "action_required",
     ],
@@ -3133,7 +3252,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2010",
     description: "NSW Stage 6 Music 1 (2010). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "aural_analysis", "musicology", "composition", "performance", "listening", "score_reading", "music_language", "context_analysis", "creative_practice", "reflection", "improvisation", "analysis", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -3243,7 +3362,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2010",
     description: "NSW Stage 6 Music 2 (2010). Year 11 and Year 12 syllabus modules and their topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: [
       "aural_analysis", "musicology", "composition", "performance", "listening", "score_reading", "music_language", "context_analysis", "creative_practice", "reflection", "harmony", "analysis", "short_answer", "extended_response", "multiple_choice",
     ],
@@ -3338,7 +3457,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2010",
     description: "NSW Stage 6 Business Studies (2010). Preliminary and HSC syllabus topics.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: ["business", "management", "operations", "marketing", "finance", "human_resources", "case_study", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3362,7 +3481,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2023",
     description: "NSW Health and Movement Science 11–12 (2023). Current course replacing PDHPE, with depth studies and a Year 11 collaborative investigation.",
-    hierarchy: ["Year", "Focus area", "Topic"],
+    hierarchy: ["Year", "Focus area", "Topic", "Syllabus Dot points"],
     tags: ["health", "movement", "performance", "training", "research", "depth_study", "collaborative_investigation", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3386,7 +3505,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Studies of Religion I (2009), a one-unit course. Select two religious traditions for the tradition studies.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: ["religion", "belief_systems", "religious_traditions", "source_analysis", "research", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3407,7 +3526,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Studies of Religion II (2009), a two-unit course. Select three religious traditions for the tradition studies.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: ["religion", "belief_systems", "religious_traditions", "source_analysis", "research", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3432,7 +3551,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2022",
     description: "NSW Stage 6 Community and Family Studies (2022). The HSC course includes an Independent Research Project and one selected option module.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: ["wellbeing", "families", "communities", "research", "resource_management", "case_study", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3456,7 +3575,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2016",
     description: "NSW Stage 6 Visual Arts (2016). Organised around artmaking, art criticism and art history; the HSC course includes a body of work and at least five case studies.",
-    hierarchy: ["Year", "Area", "Topic"],
+    hierarchy: ["Year", "Area", "Topic", "Syllabus Dot points"],
     tags: ["artmaking", "art_criticism", "art_history", "practice", "frames", "conceptual_framework", "case_study", "body_of_work"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3479,7 +3598,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA VET)",
     version_year: "2026",
     description: "NSW Hospitality Curriculum Framework (SITv3, 2026 HSC and beyond). Includes the mandatory content and both HSC streams; choose the stream and units that match your qualification pathway.",
-    hierarchy: ["Year", "Focus area", "Topic"],
+    hierarchy: ["Year", "Focus area", "Topic", "Syllabus Dot points"],
     tags: ["hospitality", "vet", "workplace_skills", "hygiene", "safety", "customer_service", "food_and_beverage", "cookery"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3506,7 +3625,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2013",
     description: "NSW Stage 6 Industrial Technology (2013). Choose one of six focus areas. The HSC course includes a major project and industry study.",
-    hierarchy: ["Year", "Section", "Topic"],
+    hierarchy: ["Year", "Section", "Topic", "Syllabus Dot points"],
     tags: ["design", "production", "industry_study", "project_management", "major_project", "technology", "research", "communication"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3533,7 +3652,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Italian Continuers (2009). Preliminary and HSC study develops communication through the three prescribed themes and topics.",
-    hierarchy: ["Year", "Theme", "Topic"],
+    hierarchy: ["Year", "Theme", "Topic", "Syllabus Dot points"],
     tags: ["language", "italian", "listening", "speaking", "reading", "writing", "culture", "translation"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3556,7 +3675,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 French Continuers (2009). Preliminary and HSC study develops communication through the three prescribed themes and topics.",
-    hierarchy: ["Year", "Theme", "Topic"],
+    hierarchy: ["Year", "Theme", "Topic", "Syllabus Dot points"],
     tags: ["language", "french", "listening", "speaking", "reading", "writing", "culture", "translation"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3579,7 +3698,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Chinese Continuers (2009). Preliminary and HSC study develops communication through the three prescribed themes and topics.",
-    hierarchy: ["Year", "Theme", "Topic"],
+    hierarchy: ["Year", "Theme", "Topic", "Syllabus Dot points"],
     tags: ["language", "chinese", "listening", "speaking", "reading", "writing", "culture", "translation"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3602,7 +3721,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Italian Beginners (2009). Topics are studied through the personal world and Italian communities perspectives.",
-    hierarchy: ["Year", "Topic"],
+    hierarchy: ["Year", "Topic", "Syllabus Dot points"],
     tags: ["language", "italian", "listening", "speaking", "reading", "writing", "culture"],
     nodes: [
       { name: "Year 11", code: "PRE", children: ["Family life, home and neighbourhood", "People, places and communities", "Education and work", "Friends, recreation and pastimes", "Holidays, travel and tourism", "Future plans and aspirations"] },
@@ -3617,7 +3736,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 French Beginners (2009). Topics are studied through the personal world and French communities perspectives.",
-    hierarchy: ["Year", "Topic"],
+    hierarchy: ["Year", "Topic", "Syllabus Dot points"],
     tags: ["language", "french", "listening", "speaking", "reading", "writing", "culture"],
     nodes: [
       { name: "Year 11", code: "PRE", children: ["Family life, home and neighbourhood", "People, places and communities", "Education and work", "Friends, recreation and pastimes", "Holidays, travel and tourism", "Future plans and aspirations"] },
@@ -3632,7 +3751,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Chinese Beginners (2009). Topics are studied through the personal world and Chinese-speaking communities perspectives.",
-    hierarchy: ["Year", "Topic"],
+    hierarchy: ["Year", "Topic", "Syllabus Dot points"],
     tags: ["language", "chinese", "listening", "speaking", "reading", "writing", "culture"],
     nodes: [
       { name: "Year 11", code: "PRE", children: ["Family life, home and neighbourhood", "People, places and communities", "Education and work", "Friends, recreation and pastimes", "Holidays, travel and tourism", "Future plans and aspirations"] },
@@ -3647,7 +3766,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Italian Extension (2009), a one-unit HSC course taken with Italian Continuers. Includes the 2025–2030 prescribed issues and text.",
-    hierarchy: ["Year", "Theme", "Issue or text", "Topic"],
+    hierarchy: ["Year", "Theme", "Issue or text", "Topic", "Syllabus Dot points"],
     tags: ["language", "italian", "extension", "text_analysis", "argument", "speaking", "writing", "culture"],
     nodes: [
       { name: "Year 12", code: "HSC", children: [
@@ -3668,7 +3787,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 French Extension (2009), a one-unit HSC course taken with French Continuers. Includes the 2025–2030 prescribed issues and song texts.",
-    hierarchy: ["Year", "Theme", "Issue or text", "Topic"],
+    hierarchy: ["Year", "Theme", "Issue or text", "Topic", "Syllabus Dot points"],
     tags: ["language", "french", "extension", "text_analysis", "argument", "speaking", "writing", "culture"],
     nodes: [
       { name: "Year 12", code: "HSC", children: [
@@ -3689,7 +3808,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2009",
     description: "NSW Stage 6 Chinese Extension (2009), a one-unit HSC course taken with Chinese Continuers. Includes the 2026–2030 prescribed issues and text.",
-    hierarchy: ["Year", "Theme", "Issue or text", "Topic"],
+    hierarchy: ["Year", "Theme", "Issue or text", "Topic", "Syllabus Dot points"],
     tags: ["language", "chinese", "extension", "text_analysis", "argument", "speaking", "writing", "culture"],
     nodes: [
       { name: "Year 12", code: "HSC", children: [
@@ -3710,7 +3829,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2024",
     description: "English EAL/D 11–12 (2024), implemented from 2026. Year 11 and Year 12 focus areas.",
-    hierarchy: ["Year", "Focus area", "Skill"],
+    hierarchy: ["Year", "Focus area", "Skill", "Syllabus Dot points"],
     tags: ["english", "eald", "language", "text_analysis", "reading", "writing", "speaking", "listening", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3734,7 +3853,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2017",
     description: "Earth and Environmental Science Stage 6 (2017), taught until the 2025 syllabus is implemented from 2028.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: ["science", "geology", "earth_systems", "environment", "sustainability", "fieldwork", "data_analysis", "depth_study"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3759,7 +3878,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2017",
     description: "Investigating Science Stage 6 (2017). The course develops scientific investigation, evidence evaluation and communication.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: ["science", "working_scientifically", "investigation", "evidence", "data_analysis", "depth_study", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3784,7 +3903,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "Drama 11–12 Syllabus (2025), implemented from 2027. Organised around making, performing and critically reflecting.",
-    hierarchy: ["Year", "Focus area", "Practice"],
+    hierarchy: ["Year", "Focus area", "Practice", "Syllabus Dot points"],
     tags: ["drama", "performance", "devising", "theatre", "reflection", "creative_process", "extended_response"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3807,7 +3926,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2025",
     description: "Dance 11–12 Syllabus (2025), implemented from 2027. Covers performance, choreography and appreciation in both years.",
-    hierarchy: ["Year", "Focus area", "Topic"],
+    hierarchy: ["Year", "Focus area", "Topic", "Syllabus Dot points"],
     tags: ["dance", "performance", "choreography", "appreciation", "analysis", "creative_process"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3830,7 +3949,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2013",
     description: "Design and Technology Stage 6 (2013), the current syllabus while a replacement is in development.",
-    hierarchy: ["Year", "Course area", "Topic"],
+    hierarchy: ["Year", "Course area", "Topic", "Syllabus Dot points"],
     tags: ["design", "technology", "innovation", "project_management", "research", "prototyping", "evaluation"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3850,7 +3969,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2013",
     description: "Food Technology Stage 6 (2013), the current syllabus while a replacement is in development.",
-    hierarchy: ["Year", "Topic", "Content"],
+    hierarchy: ["Year", "Topic", "Content", "Syllabus Dot points"],
     tags: ["food", "nutrition", "food_science", "food_industry", "product_development", "health"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3874,7 +3993,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2026",
     description: "Agriculture 11–12 Syllabus (2026), to be implemented from 2028. Includes the published focus areas and depth studies.",
-    hierarchy: ["Year", "Focus area", "Topic"],
+    hierarchy: ["Year", "Focus area", "Topic", "Syllabus Dot points"],
     tags: ["agriculture", "plant_production", "animal_production", "sustainability", "research", "fieldwork", "data_analysis", "depth_study"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [
@@ -3899,7 +4018,7 @@ export const COURSE_TEMPLATES: CourseTemplate[] = [
     curriculum: "NSW Stage 6 (NESA)",
     version_year: "2011",
     description: "Engineering Studies Stage 6 (current syllabus; new syllabus in development). Preliminary and HSC engineering application and focus modules.",
-    hierarchy: ["Year", "Module", "Topic"],
+    hierarchy: ["Year", "Module", "Topic", "Syllabus Dot points"],
     tags: ["engineering", "systems", "materials", "design", "analysis", "mechanics", "case_study"],
     nodes: [
       { name: "Year 11", code: "PRE", children: [

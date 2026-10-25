@@ -1,12 +1,11 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
-import { Check, Eye, Lightbulb, NotebookPen, Timer, FileText } from "lucide-react";
+import { Check, Eye, Lightbulb, Timer, FileText } from "lucide-react";
 import type { Confidence, ContentBlock, Question, SelfRating } from "../api/types";
 import { BlockList, MarkingGuideTable, QuestionReader } from "./QuestionReader";
 import { Meta, Panel } from "./system";
 import { Button } from "./ui/button";
-import { Textarea } from "./ui/textarea";
-import { DrawingNotebook } from "./drawing/DrawingNotebook";
+import { QuestionAnswerInput } from "./QuestionAnswerInput";
 import { ConfidencePicker, SelfAssessment } from "./SelfAssessment";
 import { formatQuestionType } from "../lib/questionTypes";
 import { StimulusSideMenu } from "./StimulusSideMenu";
@@ -22,6 +21,7 @@ export type PracticeStage = "prompt" | "attempted" | "feedback" | "assessed";
 
 export interface PracticeDraft {
   response_text: string;
+  response_image: string;
   selected_choice: string | null;
   confidence: Confidence | null;
   hints_revealed: number;
@@ -167,6 +167,7 @@ function RevealSection({
 
 export function PracticeFlow({
   question,
+  notebookAttemptId,
   stage,
   captureResponse,
   timerEnabled,
@@ -178,6 +179,7 @@ export function PracticeFlow({
   callbacks,
 }: {
   question: Question;
+  notebookAttemptId?: string;
   stage: PracticeStage;
   /** False when the student has turned response capture off in settings. */
   captureResponse: boolean;
@@ -190,8 +192,7 @@ export function PracticeFlow({
   callbacks: PracticeFlowCallbacks;
 }) {
   const [response, setResponse] = useState("");
-  const [scratch, setScratch] = useState("");
-  const [scratchpad, setScratchpad] = useState(false);
+  const [responseImage, setResponseImage] = useState("");
   const [hintsShown, setHintsShown] = useState(0);
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [confidence, setConfidence] = useState<Confidence | null>(null);
@@ -202,8 +203,7 @@ export function PracticeFlow({
   const questionId = question.question_id;
   useEffect(() => {
     setResponse("");
-    setScratch("");
-    setScratchpad(false);
+    setResponseImage("");
     setHintsShown(0);
     setSelectedChoice(null);
     setConfidence(null);
@@ -228,6 +228,7 @@ export function PracticeFlow({
 
   const draft = (): PracticeDraft => ({
     response_text: response.trim(),
+    response_image: responseImage,
     selected_choice: selectedChoice,
     confidence,
     hints_revealed: hintsShown,
@@ -299,48 +300,23 @@ export function PracticeFlow({
         )}
       </article>
 
-      <div className="px-5 sm:px-6"><DrawingNotebook questionId={questionId} /></div>
+      <div className="px-5 sm:px-6"><QuestionAnswerInput
+        questionId={questionId}
+        notebookAttemptId={notebookAttemptId}
+        text={response}
+        image={responseImage}
+        onTextChange={setResponse}
+        onImageChange={setResponseImage}
+        disabled={stage !== "prompt"}
+        captureResponse={captureResponse}
+        notebookOnly={isMcq}
+        placeholder="Write your answer here. It is kept on this device only, and you can turn saving off in settings."
+      /></div>
 
       {stage === "prompt" && (
         <div className="border-t border-border px-5 py-5 sm:px-6">
           {!isMcq && (
-            <div className="space-y-3">
-              {captureResponse && (
-                <div>
-                  <label htmlFor={`response-${questionId}`} className="label mb-1.5 block">
-                    Your answer
-                  </label>
-                  <Textarea
-                    id={`response-${questionId}`}
-                    value={response}
-                    onChange={(e) => setResponse(e.target.value)}
-                    rows={6}
-                    placeholder="Write your answer here. It is kept on this device only, and you can turn that off in settings."
-                  />
-                </div>
-              )}
-              <div>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setScratchpad((v) => !v)}
-                  aria-expanded={scratchpad}
-                >
-                  <NotebookPen />
-                  {scratchpad ? "Hide scratchpad" : "Scratchpad"}
-                </Button>
-                {scratchpad && (
-                  <Textarea
-                    aria-label="Scratchpad"
-                    className="mt-2"
-                    rows={3}
-                    value={scratch}
-                    onChange={(e) => setScratch(e.target.value)}
-                    placeholder="Rough working. Kept in this tab only: never saved and never sent anywhere."
-                  />
-                )}
-              </div>
-            </div>
+            <p className="text-sm text-muted-foreground">Choose how you want to answer above. Notebook pages are saved with this question attempt.</p>
           )}
 
           <div className="mt-4 flex flex-wrap items-center gap-2">

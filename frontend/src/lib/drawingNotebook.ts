@@ -1,6 +1,8 @@
 import type { DrawingNotebook, DrawingPage } from "../api/types";
 export type { DrawingNotebook, DrawingPage, DrawingPoint, DrawingStroke, DrawingTool } from "../api/types";
 
+export const MAX_DRAWING_NOTEBOOK_PAGES = 12;
+
 export function validateDrawingPage(questionId: string, page: DrawingPage): void {
   if (!questionId || page.question_id !== questionId || !page.page_id || !page.title.trim()) {
     throw new Error("Invalid drawing page");
@@ -26,6 +28,9 @@ export function validateDrawingNotebooks(value: unknown): DrawingNotebook[] {
   for (const notebook of value as DrawingNotebook[]) {
     if (!notebook || typeof notebook.question_id !== "string" || !notebook.question_id || !Array.isArray(notebook.pages)) {
       throw new Error("Invalid drawing notebook");
+    }
+    if (notebook.pages.length > MAX_DRAWING_NOTEBOOK_PAGES) {
+      throw new Error(`A drawing notebook can have no more than ${MAX_DRAWING_NOTEBOOK_PAGES} pages`);
     }
     const positions = new Set<number>();
     for (const page of notebook.pages) {

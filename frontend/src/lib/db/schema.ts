@@ -201,6 +201,7 @@ CREATE TABLE IF NOT EXISTS practice_attempt (
   user_notes TEXT,
   created_at TEXT NOT NULL,
   response_text TEXT,
+  response_image TEXT,
   confidence TEXT,
   self_rating TEXT,
   hints_revealed INTEGER NOT NULL DEFAULT 0,
@@ -285,7 +286,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
  * version the persisted blobs, and to the per-course `schema_version` that
  * describes the question format a course expects.
  */
-export const SCHEMA_VERSION = 5;
+export const SCHEMA_VERSION = 7;
 
 export interface Migration {
   id: number;
@@ -414,6 +415,21 @@ export const MIGRATIONS: Migration[] = [
         updated_at TEXT NOT NULL
       );
       CREATE INDEX IF NOT EXISTS idx_drawing_page_question ON question_drawing_page(question_id, position);
+    `,
+  },
+  {
+    id: 6,
+    name: "attempt-image-responses",
+    sql: `
+      ALTER TABLE practice_attempt ADD COLUMN response_image TEXT;
+    `,
+  },
+  {
+    id: 7,
+    name: "attempt-drawing-notebooks",
+    sql: `
+      ALTER TABLE question_drawing_page ADD COLUMN attempt_id TEXT;
+      CREATE INDEX IF NOT EXISTS idx_drawing_page_attempt ON question_drawing_page(question_id, attempt_id, position);
     `,
   },
 ];

@@ -363,6 +363,7 @@ export interface AttemptInput {
   time_spent_sec?: number | null;
   user_notes?: string | null;
   response_text?: string | null;
+  response_image?: string | null;
   confidence?: Confidence | null;
   self_rating?: SelfRating | null;
   hints_revealed?: number | null;

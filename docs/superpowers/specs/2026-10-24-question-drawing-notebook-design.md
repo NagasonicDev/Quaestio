@@ -2,7 +2,7 @@
 
 ## Intent
 
-Give tablet users a comfortable place to work out answers by hand, with one persistent, editable notebook per question. The same notebook should be available wherever that question is answered and remain saved across visits.
+Give tablet users a comfortable place to work out answers by hand, with a persistent, editable notebook per question and a separate saved notebook for each practice or quiz attempt.
 
 ## Goals
 
@@ -14,23 +14,23 @@ Give tablet users a comfortable place to work out answers by hand, with one pers
 
 ## Non-goals
 
-- Cloud sync, collaboration, or separate notebooks for each attempt.
+- Cloud sync or collaboration.
 - Raster-only pages that cannot be edited stroke by stroke.
 - A general-purpose illustration suite.
 
 ## User-approved approach
 
-Store editable vector strokes and page metadata in the app's local SQLite database, which is persisted in IndexedDB. The app already uses this local-first database for questions and has a save-status model. A separate IndexedDB image store is possible, but would make notebook export/restore and editing less direct; raster images would also lose stroke-level editing and scale quality. The user approved one persistent notebook per question.
+Store editable vector strokes and page metadata in the app's local SQLite database, which is persisted in IndexedDB. Keep the shared question notebook and attempt notebooks as separate records so they can coexist. Attempt notebooks are associated with the question-history entry created when the question is shown. A separate IndexedDB image store is possible, but would make notebook editing less direct; raster images would also lose stroke-level editing and scale quality.
 
 ## Product behavior
 
-- Show a **Drawing** area while answering in Practice and Quiz, and on the question detail page. Opening the same question in any of these places opens the same notebook.
+- Show a **Drawing** area while answering in Practice and Quiz, and on the question detail page. Practice and Quiz use a notebook for the current attempt; the question detail page retains the shared question notebook.
 - A question starts with one plain page. The user can add pages and choose plain, ruled, grid, or dotted backgrounds.
-- Drawing tools include a pressure-aware pen when the device reports pressure, a translucent highlighter, a colour palette with custom colour selection, adjustable thickness, a whole-stroke eraser, and a partial/pixel eraser. Provide undo/redo, clear-page with confirmation, page duplication, page rename, reorder, and delete.
+- Drawing tools include a pressure-aware pen when the device reports pressure, a translucent highlighter, a fixed colour palette, adjustable thickness, a whole-stroke eraser, and a partial/pixel eraser. Provide undo/redo, clear-page with confirmation, page duplication, page rename, reorder, and delete.
 - Provide touch/stylus drawing, palm-rejection heuristics, fit-page, zoom, and pan. Use large tablet-friendly controls and keep drawing input distinct from page navigation.
 - Changes autosave. A visible state reports saving, saved, or failed; a failure leaves the work in memory and offers retry. Do not claim saved until the database write succeeds.
 - The answer reveal and quiz/practice scoring flow remain available and do not cover or clear the notebook.
-- Export and import the notebook with the full `.qb` course backup. Question-only `.qbx` exports remain question-content-only. Existing backups without notebook data import normally.
+- Export and import shared and attempt-specific notebooks with the full `.qb` course backup. Question-only `.qbx` exports remain question-content-only. Existing backups without notebook data import normally.
 - Notebooks are local to this browser/device unless transferred using the full backup. Request persistent browser storage where supported and explain storage limits/failures; indefinite retention cannot be guaranteed if the user clears browser data or loses the device without a backup.
 
 ## Storage and implementation shape

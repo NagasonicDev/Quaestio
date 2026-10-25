@@ -152,6 +152,23 @@
   }
 }
 
+.drawing-paper { background-color: var(--background); }
+.drawing-paper-plain { background-color: var(--background); }
+.drawing-paper-ruled {
+  background-color: var(--background);
+  background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 30px, color-mix(in srgb, var(--foreground) 12%, transparent) 31px, color-mix(in srgb, var(--foreground) 12%, transparent) 32px);
+}
+.drawing-paper-grid {
+  background-color: var(--background);
+  background-image: linear-gradient(color-mix(in srgb, var(--foreground) 10%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--foreground) 10%, transparent) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+.drawing-paper-dotted {
+  background-color: var(--background);
+  background-image: radial-gradient(color-mix(in srgb, var(--foreground) 22%, transparent) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
 /* Panels and other custom design-system utilities */
 @utility panel {
   border: 1px solid var(--border);

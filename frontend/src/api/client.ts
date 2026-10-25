@@ -270,20 +270,20 @@ export const api = {
     return data.deleteQuestion(id);
   },
 
-  getDrawingNotebook(questionId: string): Promise<DrawingNotebook> {
-    return data.getDrawingNotebook(questionId);
+  getDrawingNotebook(questionId: string, attemptId?: string): Promise<DrawingNotebook> {
+    return data.getDrawingNotebook(questionId, attemptId);
   },
 
-  saveDrawingPage(questionId: string, page: DrawingPage): Promise<void> {
-    return data.saveDrawingPage(questionId, page);
+  saveDrawingPage(questionId: string, page: DrawingPage, attemptId?: string): Promise<void> {
+    return data.saveDrawingPage(questionId, page, attemptId);
   },
 
-  deleteDrawingPage(questionId: string, pageId: string): Promise<void> {
-    return data.deleteDrawingPage(questionId, pageId);
+  deleteDrawingPage(questionId: string, pageId: string, attemptId?: string): Promise<void> {
+    return data.deleteDrawingPage(questionId, pageId, attemptId);
   },
 
-  reorderDrawingPages(questionId: string, pageIds: string[]): Promise<void> {
-    return data.reorderDrawingPages(questionId, pageIds);
+  reorderDrawingPages(questionId: string, pageIds: string[], attemptId?: string): Promise<void> {
+    return data.reorderDrawingPages(questionId, pageIds, attemptId);
   },
 
   deleteQuestions(ids: string[]): Promise<void> {

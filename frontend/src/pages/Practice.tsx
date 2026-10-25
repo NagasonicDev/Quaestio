@@ -46,9 +46,10 @@ export function Practice() {
     queryFn: () => api.questionSourceOptions(courseId as string),
     enabled: !!courseId,
   });
-  const [avoidRecentDays, setAvoidRecentDays] = useState<number | null>(null);
+  const [avoidRecentDays, setAvoidRecentDays] = useState<number | null>(7);
 
   const [sessionId, setSessionId] = useState<string | null>(null);
+  const [attemptInstanceId, setAttemptInstanceId] = useState<string | null>(null);
   const [current, setCurrent] = useState<Question | null>(null);
   const [stage, setStage] = useState<PracticeStage>("prompt");
   const [planItem, setPlanItem] = useState<{ reason_text?: string; reason_kind?: string } | null>(null);
@@ -133,6 +134,7 @@ export function Practice() {
   useEffect(() => {
     setSessionId(null);
     setCurrent(null);
+    setAttemptInstanceId(null);
     setStage("prompt");
     setPlanItem(null);
   }, [mode, filters?.node_ids, filters?.type_key, filters?.type_keys, filters?.difficulties, filters?.tag, filters?.avoid_recent_days, filters?.difficulty_min, filters?.difficulty_max, filters?.source_filters]);
@@ -163,6 +165,7 @@ export function Practice() {
         return;
       }
       setLoading(true);
+      setAttemptInstanceId(null);
       try {
         const question = await api.getQuestion(questionId);
         setCurrent(question);
@@ -172,9 +175,8 @@ export function Practice() {
         const item = summary?.plan.find((p) => p.question_id === questionId) ?? null;
         setPlanItem(item ? { reason_text: item.reason_text, reason_kind: item.reason_kind } : null);
         // The session only counts a question as offered once it has been shown.
-        await api
-          .recordAttempt({ session_id: id, question_id: questionId, status: "seen" })
-          .catch(() => {});
+        const attempt = await api.recordAttempt({ session_id: id, question_id: questionId, status: "seen" });
+        setAttemptInstanceId(attempt.attempt_id);
         queryClient.invalidateQueries({ queryKey: ["recent-questions", courseId] });
         try {
           const linked = await api.getStimuliForQuestion(questionId);
@@ -232,6 +234,7 @@ export function Practice() {
         question_id: current.question_id,
         status: mcq ? "attempted" : "attempted",
         response_text: draft.response_text || null,
+        response_image: draft.response_image || null,
         confidence: draft.confidence,
         hints_revealed: draft.hints_revealed,
         time_spent_sec: draft.elapsed_sec,
@@ -253,6 +256,7 @@ export function Practice() {
         question_id: current.question_id,
         status: "revealed",
         response_text: draft.response_text || null,
+        response_image: draft.response_image || null,
         confidence: draft.confidence,
         hints_revealed: draft.hints_revealed,
         time_spent_sec: draft.elapsed_sec,
@@ -274,6 +278,7 @@ export function Practice() {
         rating,
         objective_correct: graded ? draft.selected_choice === currentLetter(current) : null,
         response_text: draft.response_text || null,
+        response_image: draft.response_image || null,
         confidence: draft.confidence,
         hints_revealed: draft.hints_revealed,
         time_spent_sec: draft.elapsed_sec,
@@ -470,8 +475,9 @@ export function Practice() {
                   </Panel>
                 ) : (
                   <PracticeFlow
-                    key={current.question_id}
+                    key={`${current.question_id}:${attemptInstanceId ?? "pending"}`}
                     question={current}
+                    notebookAttemptId={attemptInstanceId ?? undefined}
                     stage={stage}
                     captureResponse={captureResponse !== "off"}
                     timerEnabled={timerEnabled === true}
