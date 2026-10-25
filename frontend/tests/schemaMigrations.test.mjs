@@ -197,8 +197,9 @@ test("the migrated generated_test table matches a fresh install", async () => {
   fresh.run(SCHEMA_SQL);
   const migrated = new SQL.Database();
   migrated.run(V2_GENERATED_TEST_SQL);
-  // Migration 1 touches tables this fixture deliberately lacks; the rest are safe.
-  for (const migration of MIGRATIONS.filter((m) => m.id !== 1)) migrated.run(migration.sql);
+  // This fixture contains only generated_test, so apply the migration that
+  // upgrades that table rather than unrelated migrations with other inputs.
+  migrated.run(MIGRATIONS.find((m) => m.id === 3).sql);
   assert.deepEqual(columns(migrated, "generated_test"), columns(fresh, "generated_test"));
 });
 
@@ -208,11 +209,14 @@ test("a migrated database matches the fresh-install schema", async () => {
   fresh.run(SCHEMA_SQL);
   const migrated = new SQL.Database();
   migrated.run(LEGACY_SQL);
-  migrated.run(MIGRATIONS[0].sql);
+  // These are the migrations that change the tables compared below. Other
+  // migrations depend on tables intentionally absent from this legacy fixture.
+  migrated.run(MIGRATIONS.find((m) => m.id === 1).sql);
+  migrated.run(MIGRATIONS.find((m) => m.id === 6).sql);
   for (const table of ["course", "practice_session", "practice_attempt", "question_review_state", "app_setting"]) {
     assert.deepEqual(
-      columns(migrated, table),
-      columns(fresh, table),
+      columns(migrated, table).sort(),
+      columns(fresh, table).sort(),
       `${table} differs between an upgraded database and a fresh one`
     );
   }

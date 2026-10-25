@@ -143,7 +143,7 @@ test("every shipped template node declares an explicit, unique, well-formed code
             node.code.startsWith(`${parentCode}-`),
             `template "${t.id}" code "${node.code}" must extend its parent "${parentCode}"`
           );
-          assert.match(node.code, new RegExp(`-${level === 1 ? "M" : "T"}\\d+$`));
+          assert.match(node.code, new RegExp(`-${level === 1 ? "M" : "(?:T|D)"}\\d+$`));
         }
         if (node.children && node.children.length > 0) visit(node.children, node.code, level + 1);
       }

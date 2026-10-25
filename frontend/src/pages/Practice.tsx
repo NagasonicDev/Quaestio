@@ -6,7 +6,7 @@ import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
 import { flattenCounts } from "../components/NodeTree";
-import type { PracticeFilters, Question, SelfRating, SessionMode, StimulusWithContent } from "../api/types";
+import type { CourseNode, PracticeFilters, Question, SelfRating, SessionMode, StimulusWithContent } from "../api/types";
 import { InkLoader, PageHeader, Panel } from "../components/system";
 import { FilterMenu } from "../components/FilterMenu";
 import { Button } from "../components/ui/button";
@@ -22,6 +22,15 @@ import { notify } from "../lib/notifications";
 
 function isSessionMode(value: string | null): value is SessionMode {
   return value === "focused" || value === "mixed" || value === "due_review";
+}
+
+function nodePath(nodes: CourseNode[], targetId: string): string[] {
+  for (const node of nodes) {
+    if (node.node_id === targetId) return [node.node_id];
+    const childPath = nodePath(node.children, targetId);
+    if (childPath.length > 0) return [node.node_id, ...childPath];
+  }
+  return [];
 }
 
 export function Practice() {
@@ -123,11 +132,14 @@ export function Practice() {
     queryClient.invalidateQueries({ queryKey: ["recent-questions", courseId] });
   }, [queryClient, sessionId, courseId]);
 
-  // Deep link from the dashboard: /practice?node_id=... narrows the topic filter.
+  // Deep links select the full hierarchy path so nested filters are visible.
   const linkedNodeId = searchParams.get("node_id");
   useEffect(() => {
-    if (linkedNodeId) setSelectedNodes(new Set([linkedNodeId]));
-  }, [linkedNodeId]);
+    if (linkedNodeId && config?.nodes) {
+      const path = nodePath(config.nodes, linkedNodeId);
+      if (path.length > 0) setSelectedNodes(new Set(path));
+    }
+  }, [linkedNodeId, config?.nodes]);
 
   // Changing the filters changes what a session means, so the old session is
   // put aside rather than silently continued under new rules.

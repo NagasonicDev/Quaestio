@@ -184,15 +184,20 @@ export function template(spec: TemplateSpec): CourseTemplate {
 /** Counts topic-level nodes and how many hierarchy levels the template declares. */
 export function templateStats(t: CourseTemplate): { topics: number; levels: number } {
   let topics = 0;
-  const topicDepth = Math.max(0, t.hierarchy.length - 2);
-  const visit = (nodes: TemplateNode[], depth: number) => {
+  const visit = (nodes: TemplateNode[]) => {
     for (const entry of nodes) {
       const node = typeof entry === "string" ? { name: entry } : entry;
-      if (depth === topicDepth) topics += 1;
-      else if ("children" in node && node.children && node.children.length > 0) visit(node.children, depth + 1);
+      const children = "children" in node
+        ? (node.children ?? []).filter((child) => {
+            const childNode = typeof child === "string" ? null : child;
+            return !childNode?.code?.match(/-D\d+$/);
+          })
+        : [];
+      if (children.length === 0) topics += 1;
+      else visit(children);
     }
   };
-  visit(t.nodes, 0);
+  visit(t.nodes);
   return { topics, levels: t.hierarchy.length };
 }
 
