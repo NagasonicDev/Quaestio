@@ -1,5 +1,6 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { Analytics } from "@vercel/analytics/react";
 import { CourseProvider } from "./hooks/useActiveCourse";
 import { ConfirmProvider } from "./components/ui/modal";
 import { TourProvider, ImportTourProvider } from "./components/Tour";
@@ -21,12 +22,20 @@ const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1, refetchOnWindowFocus: false } },
 });
 
+function RouteAnalytics() {
+  const location = useLocation();
+  const path = `${location.pathname}${location.search}`;
+
+  return <Analytics route={location.pathname} path={path} />;
+}
+
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <ConfirmProvider>
         <CourseProvider>
           <HashRouter>
+            <RouteAnalytics />
             <Routes>
               <Route element={<TourProvider><ImportTourProvider><GlossaryProvider><Layout /></GlossaryProvider></ImportTourProvider></TourProvider>}>
                 <Route index element={<Dashboard />} />
