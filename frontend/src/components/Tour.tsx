@@ -143,6 +143,22 @@ export function ImportTourProvider({ children }: { children: ReactNode }) {
       seenQuery.isSuccess &&
       seenQuery.data === null);
 
+  // The automatic tutorial starts on Import, then deliberately takes the
+  // user to Course Settings. Keep that run alive after it leaves /import.
+  useEffect(() => {
+    if (
+      override === null &&
+      courseId !== null &&
+      pathname === "/import" &&
+      tourSeenQuery.isSuccess &&
+      tourSeenQuery.data === "1" &&
+      seenQuery.isSuccess &&
+      seenQuery.data === null
+    ) {
+      setOverride(true);
+    }
+  }, [courseId, override, pathname, seenQuery.data, seenQuery.isSuccess, tourSeenQuery.data, tourSeenQuery.isSuccess]);
+
   const finish = useCallback(async () => {
     setOverride(false);
     setIndex(0);
