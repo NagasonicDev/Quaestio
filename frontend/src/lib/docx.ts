@@ -117,8 +117,9 @@ function imageRun(img: ResolvedImage): ImageRun {
 }
 
 function inlineMathRun(img: ResolvedImage): ImageRun {
-  const scale = 0.9;
-  return imageRun({ ...img, widthPx: Math.max(1, Math.round(img.widthPx * scale)), heightPx: Math.max(1, Math.round(img.heightPx * scale)) });
+  // The math rasterizer uses the body font size, so its natural CSS-pixel box
+  // already matches the surrounding Word text. Preserve that size in DOCX.
+  return imageRun(img);
 }
 
 function inlineRuns(blockId: string, text: string, images: Map<string, ResolvedImage>, index: { value: number }): ParagraphChild[] {

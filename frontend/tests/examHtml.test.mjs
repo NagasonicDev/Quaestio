@@ -166,8 +166,8 @@ test("an inline maths image renders at its natural width, not halved", () => {
   const html = paper([{ label: null, questions: [question({ body })] }], {
     resolvedImages: new Map([image("q1-m:inline-math:0", { widthPx: 30, heightPx: 20 })]),
   });
-  assert.match(html, /<img class="math-img"[^>]*width="30"/);
-  assert.match(html, /<img class="math-img"[^>]*height="20"/);
+  assert.match(html, /<img class="math-img(?: math-inline-img)?"[^>]*width="30"/);
+  assert.match(html, /<img class="math-img(?: math-inline-img)?"[^>]*height="20"/);
 });
 
 test("MCQ options are lettered, and the plain paper carries no answer key", () => {

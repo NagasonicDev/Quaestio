@@ -178,8 +178,8 @@ export function solutionSlots(question: Question): SolutionSlot[] {
     const label = part.part_label ? `(${part.part_label})` : "Part";
     slots.push(
       { label: "Answer", blocks: part.answer, heading: `${"  ".repeat(depth)}${label}`, sub: true },
-      { label: "Solution", blocks: part.solution, heading: `${"  ".repeat(depth)}${label}`, sub: true },
-      { label: "Marking criteria", blocks: markingCriteriaBlocks(part.marking_criteria), heading: `${"  ".repeat(depth)}${label}`, sub: true },
+      { label: "Solution", blocks: part.solution, sub: true },
+      { label: "Marking criteria", blocks: markingCriteriaBlocks(part.marking_criteria), sub: true },
     );
     appendParts(part.parts, depth + 1);
   } };

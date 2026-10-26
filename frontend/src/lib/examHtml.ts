@@ -67,8 +67,7 @@ type ImageKind = "figure" | "graph" | "math" | "math-inline";
 function imageHtml(image: ResolvedImage, kind: ImageKind = "figure"): string {
   // widthPx/heightPx are the rasteriser's CSS box (pixelRatio-independent), so
   // an inline maths image is placed at its natural size to sit beside the text.
-  const scale = kind === "math-inline" ? 0.9 : 1;
-  const width = kind === "math" || kind === "math-inline" ? image.widthPx * scale : Math.min(image.widthPx, 640);
+  const width = kind === "math" || kind === "math-inline" ? image.widthPx : Math.min(image.widthPx, 640);
   const cls = kind === "math" || kind === "math-inline" ? `math-img${kind === "math-inline" ? " math-inline-img" : ""}` : "figure-img";
   return `<img class="${cls}" src="${dataUrl(image)}" width="${Math.max(1, Math.round(width))}" height="${Math.max(1, Math.round(image.heightPx * (width / image.widthPx)))}" alt="">`;
 }
@@ -245,16 +244,14 @@ h1, h2, h3 { margin: 0; font-weight: bold; }
 .structure { text-align: left; }
 .structure h2 { margin-bottom: 6pt; }
 .structure .section-overview { margin-left: 0.35in; margin-bottom: 6pt; }
-.section { break-before: page; page-break-before: always; }
-.paper-section:first-of-type { break-before: auto; page-break-before: auto; }
 .section-heading { font-size: ${pt(font.titlePt)}; border-bottom: 1pt solid #777; padding-bottom: 4pt; margin: 0 0 8pt; break-after: avoid; page-break-after: avoid; }
 .section-marks { font-weight: bold; margin-bottom: 4pt; }
 .section-note { margin-bottom: 4pt; }
-.question { margin-top: 14pt; }
+.question { margin-top: 14pt; break-inside: avoid; page-break-inside: avoid; }
 .question-head { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4pt; break-after: avoid; page-break-after: avoid; }
 .question-number { font-weight: bold; }
 .question-marks { font-weight: normal; }
-.question-part { margin: 0; }
+.question-part { margin: 0; break-inside: avoid; page-break-inside: avoid; }
 .part-head { margin: 6pt 0 4pt 0; break-after: avoid; page-break-after: avoid; }
 .part-label { font-weight: bold; }
 .part-marks { font-size: ${pt(9)}; margin-left: 6pt; }
@@ -353,10 +350,13 @@ export function renderPaperHtml(opts: DocOptions): string {
   const totalQuestions = opts.sections.reduce((sum, section) => sum + section.questions.length, 0);
   let counter = 0;
   let planIndex = 0;
+  let renderedSections = 0;
   for (const section of opts.sections) {
     if (!section.questions.length) continue;
     const secPlan = plan.sections[planIndex++];
     if (!secPlan) continue;
+    if (renderedSections > 0) body.push(`<div class="page-break"></div>`);
+    renderedSections += 1;
     body.push(`<section class="section paper-section">${sectionHeaderHtml(secPlan)}`);
     for (const question of section.questions) {
       counter += 1;
