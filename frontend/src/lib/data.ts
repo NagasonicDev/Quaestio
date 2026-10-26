@@ -343,6 +343,40 @@ export async function deleteCourse(courseId: string, onDeleted?: () => void): Pr
     "SELECT DISTINCT source_id FROM question WHERE course_id = ? AND source_id IS NOT NULL",
     [courseId]
   );
+  // Find shared blobs in one pass. The previous correlated UPDATE searched all
+  // other question content separately for every asset owned by this course.
+  const sharedAssetOwners = new Map<string, string>();
+  const findSharedAssets = (value: unknown, questionId: string): void => {
+    if (!value || typeof value !== "object") return;
+    if (Array.isArray(value)) {
+      for (const item of value) findSharedAssets(item, questionId);
+      return;
+    }
+    const record = value as Record<string, unknown>;
+    const assetPath = record.asset_path;
+    if (typeof assetPath === "string" && assetIds.has(assetPath) && !sharedAssetOwners.has(assetPath)) {
+      sharedAssetOwners.set(assetPath, questionId);
+    }
+    for (const nested of Object.values(record)) findSharedAssets(nested, questionId);
+  };
+  const otherBlocks = await all<SqlRow>(
+    `SELECT q.question_id, cb.content_json FROM content_block cb
+     JOIN question q ON q.question_id = cb.question_id WHERE q.course_id <> ?`,
+    [courseId]
+  );
+  for (const row of otherBlocks) {
+    try { findSharedAssets(JSON.parse(String(row.content_json)), String(row.question_id)); }
+    catch { /* malformed JSON — skip */ }
+  }
+  const otherOptions = await all<SqlRow>(
+    `SELECT q.question_id, mo.content_json FROM mcq_option mo
+     JOIN question q ON q.question_id = mo.question_id WHERE q.course_id <> ?`,
+    [courseId]
+  );
+  for (const row of otherOptions) {
+    try { findSharedAssets(JSON.parse(String(row.content_json)), String(row.question_id)); }
+    catch { /* malformed JSON — skip */ }
+  }
   await transaction((database) => {
     database.run(
       `DELETE FROM practice_attempt
@@ -357,24 +391,9 @@ export async function deleteCourse(courseId: string, onDeleted?: () => void): Pr
     );
     database.run("DELETE FROM generated_test WHERE course_id = ?", [courseId]);
     database.run("DELETE FROM import_job WHERE course_id = ?", [courseId]);
-    database.run(
-      `UPDATE asset SET question_id = (
-         SELECT q.question_id FROM question q
-         WHERE q.course_id <> ? AND (
-           EXISTS (SELECT 1 FROM content_block cb WHERE cb.question_id = q.question_id AND cb.content_json LIKE '%' || asset.asset_id || '%')
-           OR EXISTS (SELECT 1 FROM mcq_option mo WHERE mo.question_id = q.question_id AND mo.content_json LIKE '%' || asset.asset_id || '%')
-         ) LIMIT 1
-       )
-       WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)
-         AND EXISTS (
-           SELECT 1 FROM question q
-           WHERE q.course_id <> ? AND (
-             EXISTS (SELECT 1 FROM content_block cb WHERE cb.question_id = q.question_id AND cb.content_json LIKE '%' || asset.asset_id || '%')
-             OR EXISTS (SELECT 1 FROM mcq_option mo WHERE mo.question_id = q.question_id AND mo.content_json LIKE '%' || asset.asset_id || '%')
-           )
-         )`,
-      [courseId, courseId, courseId]
-    );
+    for (const [assetId, questionId] of sharedAssetOwners) {
+      database.run("UPDATE asset SET question_id = ? WHERE asset_id = ? AND question_id IN (SELECT question_id FROM question WHERE course_id = ?)", [questionId, assetId, courseId]);
+    }
     database.run(
       "DELETE FROM asset WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)",
       [courseId]
@@ -1036,7 +1055,7 @@ export async function questionToOut(q: SqlRow, includeParts: boolean): Promise<Q
       [q.question_id]
     );
     for (const child of childRows) {
-      parts.push(await questionToOut(child, false));
+      parts.push(await questionToOut(child, true));
     }
   }
   return {
@@ -1478,7 +1497,7 @@ export async function createQuestion(payload: QuestionCreatePayload): Promise<Qu
   await runMany(statements);
   await finalizeAssetsForStatements(questionId, statements);
   for (const part of payload.parts ?? []) {
-    const { question_id: _questionId, parts: _parts, ...partPayload } = part;
+    const { question_id: _questionId, ...partPayload } = part;
     await createQuestion({ ...partPayload, course_id: payload.course_id, parent_question_id: questionId });
   }
   return hydrateQuestion(questionId);
@@ -1582,7 +1601,7 @@ export async function updateQuestion(
     const existingParts = await all<SqlRow>("SELECT question_id FROM question WHERE parent_question_id = ?", [questionId]);
     const retainedIds = new Set(payload.parts.map((part) => part.question_id).filter((id): id is string => !!id));
     for (const part of payload.parts) {
-      const { question_id: partId, parts: _parts, ...partPayload } = part;
+      const { question_id: partId, ...partPayload } = part;
       if (partId && existingParts.some((row) => row.question_id === partId)) {
         await updateQuestion(partId, partPayload);
       } else {

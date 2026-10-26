@@ -1,6 +1,6 @@
 import type { ExamDocument } from "./examDocument";
 import type { DocOptions, DocSection, DocStimulusItem } from "./docx";
-import { buildDocxPaper, buildDocxSolutions } from "./docx";
+import { buildDocxPaper, buildDocxSolutions, collectImages } from "./docx";
 import { renderPaperHtml, renderSolutionsHtml } from "./examHtml";
 import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
 import type { ResolvedImage } from "./resolvers";
@@ -38,8 +38,9 @@ export const htmlRenderer: PaperRenderer = {
   async renderPaper(doc, images) {
     return new Blob([renderPaperHtml(docOptions(doc, images))], { type: "text/html" });
   },
-  async renderSolutions(doc, _images, onProgress) {
-    return new Blob([renderSolutionsHtml(doc.title, doc.sections as DocSection[], new Map(), onProgress)], { type: "text/html" });
+  async renderSolutions(doc, images, onProgress) {
+    const resolvedImages = images.size ? images : await collectImages(doc.sections as DocSection[]);
+    return new Blob([renderSolutionsHtml(doc.title, doc.sections as DocSection[], resolvedImages, onProgress)], { type: "text/html" });
   },
 };
 

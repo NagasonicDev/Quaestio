@@ -63,34 +63,34 @@ test("an HTML artifact is rasterised to a PDF and downloaded as a file", async (
   clicks.length = 0;
   globalThis.__stored = new Blob(["<!DOCTYPE html><p>x</p>"], { type: "text/html" });
   globalThis.__pdfInput = null;
-  await downloadTestFile("t1", "test", "pdf");
+  await downloadTestFile("t1", "test", "pdf", "Biology Paper 1");
   assert.equal(globalThis.__pdfInput?.type, "text/html", "the rasteriser received the HTML artifact");
   assert.equal(clicks.length, 1, "a download link was clicked");
-  assert.equal(clicks[0].download, "test-paper.pdf", "the file is a PDF");
+  assert.equal(clicks[0].download, "Biology Paper 1.pdf", "the file follows the test title");
 });
 
 test("a DOCX artifact downloads with a .docx filename", async () => {
   clicks.length = 0;
   globalThis.__stored = new Blob([new Uint8Array([0x50, 0x4b])], { type: "application/vnd.openxmlformats-officedocument.wordprocessingml.document" });
-  await downloadTestFile("t1", "test", "docx");
+  await downloadTestFile("t1", "test", "docx", "Biology Paper 1");
   assert.equal(clicks.length, 1, "a download link was clicked");
-  assert.equal(clicks[0].download, "test-paper.docx");
+  assert.equal(clicks[0].download, "Biology Paper 1.docx");
 });
 
 test("a legacy PDF artifact still downloads as a .pdf", async () => {
   clicks.length = 0;
   globalThis.__stored = new Blob([new Uint8Array([0x25, 0x50])], { type: "application/pdf" });
-  await downloadTestFile("t1", "solutions", "pdf");
+  await downloadTestFile("t1", "solutions", "pdf", "Biology Paper 1");
   assert.equal(clicks.length, 1);
-  assert.equal(clicks[0].download, "test-solutions.pdf");
+  assert.equal(clicks[0].download, "Biology Paper 1 - Solutions.pdf");
 });
 
 test("a SOLUTIONS HTML artifact downloads as test-solutions.pdf", async () => {
   clicks.length = 0;
   globalThis.__stored = new Blob(["<!DOCTYPE html><p>x</p>"], { type: "text/html" });
-  await downloadTestFile("t1", "solutions", "pdf");
+  await downloadTestFile("t1", "solutions", "pdf", "Biology Paper 1");
   assert.equal(clicks.length, 1);
-  assert.equal(clicks[0].download, "test-solutions.pdf");
+  assert.equal(clicks[0].download, "Biology Paper 1 - Solutions.pdf");
 });
 
 test("a missing file is a clear error, not a silent no-op", async () => {

@@ -74,7 +74,9 @@ export function QuestionDetail() {
           afterQuestion={<div className="px-5 sm:px-6"><DrawingNotebook questionId={question.question_id} /></div>}
           footer={
             question.answer.length > 0 || question.solution.length > 0 || question.marking_criteria.length > 0 ||
-            question.parts.some((part) => part.answer.length > 0 || part.solution.length > 0 || part.marking_criteria.length > 0) ? (
+            question.parts.some(function hasPartContent(part) {
+              return part.answer.length > 0 || part.solution.length > 0 || part.marking_criteria.length > 0 || part.parts.some(hasPartContent);
+            }) ? (
               <Button variant="outline" className="w-full" onClick={() => setShowAnswer((s) => !s)}>
                 <Eye />
                 {showAnswer ? "Hide answer" : "Show answer"}

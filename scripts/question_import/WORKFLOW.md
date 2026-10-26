@@ -174,37 +174,56 @@ Every question **and every part** carries a non-empty `marking_criteria`.
 
 ---
 
-## 5. Parts — exactly one level
+## 5. Parts — preserve every printed level
 
-The importer writes deeper nesting to the database, but the reader, practice
-flow, browser, test generator, PDF/DOCX export and the `.qb`/`.qbx` round-trip
-all stop after the first level. A nested `(i)`/`(ii)` would therefore be stored
-and **never displayed**. So:
+Represent the printed hierarchy recursively. For `26(b)(ii)`, create a `b`
+part whose own `parts` contains an `ii` part. Do not flatten it to a sibling
+labelled `b(ii)` or promote it to a separate top-level question. Keep siblings
+in printed order and use one label component per level (`b`, then `ii`).
 
-- `parts` holds the printed sub-questions of one question, in printed order:
+```json
+{
+  "part_label": "b",
+  "marks": 5,
+  "body": [{"block_type": "text", "content": {"text": "Shared part (b) prompt or context."}}],
+  "hint": [], "answer": [], "solution": [],
+  "marking_criteria": [{"block_type": "list", "content": {"items": [
+    "3 marks: part (i) - ...", "2 marks: part (ii) - ..."
+  ]}}],
+  "assets": [],
+  "parts": [
+    {"part_label": "i", "marks": 3, "body": [...], "hint": [],
+     "answer": [...], "solution": [...], "marking_criteria": [...],
+     "assets": [], "parts": []},
+    {"part_label": "ii", "marks": 2, "body": [...], "hint": [],
+     "answer": [...], "solution": [...], "marking_criteria": [...],
+     "assets": [], "parts": []}
+  ]
+}
+```
 
-  ```json
-  {"part_label": "a", "marks": 2, "body": [...], "hint": [...],
-   "answer": [...], "solution": [...], "marking_criteria": [...],
-   "assets": [], "parts": []}
-  ```
-
-- **A deeper printed level becomes a composite label at one level.** Question
-  `26(c)(i)` is a part with `"part_label": "c(i)"` — never a `c` part holding
-  `i`, and never a separate top-level question. Keep `parts: []` on every part.
-- Keep the shared stem and shared data tables on the parent `body`. Give each
-  part its own prompt, marks, answer area, marking guide, and **at least an
-  `answer` or a `solution`** — never a part whose answer sits only on the parent.
-  Use `answer` for the concise result, `solution` for the working.
-- Never leave the parent or any part `body` empty; an empty parent body is
-  rejected. If the paper prints no stem for a part, use that part's own prompt.
-- A multipart parent carries **no** `answer`/`solution` content of its own.
-- Add a trailing `answer_area` block to each part's `body` for written-response
-  types, `content.lines` = two lines per mark (round up, minimum 1). Skip it on
-  multiple-choice parts and where the paper already supplies an answer space.
-- When a source answer key or solution document labels work by part, split the
-  combined text at those labels onto the matching parts — never leave one
-  labelled multi-part solution sitting in the parent's `solution`.
+- Apply this structure to every depth. Each container's `marks` must equal the
+  sum of its immediate children, including the top-level question. Infer a
+  split only when the paper gives none; report that inference and tag the
+  question `action_required`.
+- Put shared context and figures on the nearest parent that all affected
+  children share. A parent or composite part may have its own prompt/context,
+  but it carries no `answer` or `solution`; store those on the appropriate leaf.
+- At every level, add one parent marking-criteria line per immediate child,
+  naming that child and what it asks. Each leaf carries its own answer,
+  solution, criteria, and answer space as appropriate. Part criteria must be
+  present at every level.
+- Keep each part's assets on the part whose body or answer references them.
+- A composite parent body may contain the lead-in for its children. Give every
+  leaf its actual prompt; restate data when a later leaf needs it but the
+  shared parent context is too distant or ambiguous.
+- Add a trailing `answer_area` block to each written-response leaf, with
+  `content.lines` = two lines per mark (round up, minimum 1). Skip it on
+  multiple-choice questions and where the paper already supplies an answer
+  space.
+- When answer keys or solution documents label work by part, follow the full
+  hierarchy and put each section on its matching leaf. Do not leave combined
+  part-labelled work on a parent.
 
 ---
 

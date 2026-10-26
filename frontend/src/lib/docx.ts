@@ -116,6 +116,11 @@ function imageRun(img: ResolvedImage): ImageRun {
   });
 }
 
+function inlineMathRun(img: ResolvedImage): ImageRun {
+  const scale = 0.9;
+  return imageRun({ ...img, widthPx: Math.max(1, Math.round(img.widthPx * scale)), heightPx: Math.max(1, Math.round(img.heightPx * scale)) });
+}
+
 function inlineRuns(blockId: string, text: string, images: Map<string, ResolvedImage>, index: { value: number }): ParagraphChild[] {
   const children: ParagraphChild[] = [];
   for (const token of splitRichTokens(text)) {
@@ -126,7 +131,7 @@ function inlineRuns(blockId: string, text: string, images: Map<string, ResolvedI
     const math = images.get(inlineMathImageId(blockId, index.value++));
     // Rendered at MATH_FONT_PX (16px = 12pt at 96dpi), which is the body size,
     // so the natural pixel size lands correctly beside Word's 12pt text.
-    if (math) children.push(imageRun(math));
+    if (math) children.push(inlineMathRun(math));
     else children.push(runProps({ text: latexToPlain(token.math) }));
   }
   return children.length ? children : [runProps({ text })];
@@ -183,7 +188,7 @@ function renderBlock(
       const resolved = images.get(block.block_id);
       if (resolved) {
         const para = new Paragraph({
-          children: [imageRun(resolved)],
+          children: [display ? imageRun(resolved) : inlineMathRun(resolved)],
           alignment: display ? AlignmentType.CENTER : AlignmentType.START,
           indent: display ? undefined : { left },
         });
@@ -282,7 +287,7 @@ function renderBlock(
               ],
               width: { size: colWidthTwips[i], type: WidthType.DXA },
               margins: { top: 80, bottom: 80, left: 100, right: 100 },
-              verticalAlign: header ? "center" : "top",
+              verticalAlign: "center",
               ...(header ? { shading: { type: ShadingType.CLEAR, color: "auto", fill: "F1F1EE" } } : {}),
             });
           });
@@ -373,6 +378,7 @@ function renderBlock(
           spacing: { after: 14 * 20 },
           border: { bottom: borderBottom() },
           indent: { left },
+          keepNext: i < lines - 1,
         });
         out.push(p);
       }
@@ -408,6 +414,7 @@ function questionHeader(question: Question, counter: { n: number }): Paragraph {
   return new Paragraph({
     children,
     spacing: { before: 14 * 20 },
+    keepNext: true,
     tabStops: [
       {
         type: TabStopType.RIGHT,
@@ -427,7 +434,8 @@ function renderQuestion(
   const questionBody = question.body;
   out.push(...renderBlocks(questionBody, { indentIn: 0, images }));
   if (question.mcq_options?.length) out.push(...renderBlocks(mcqOptionBlocks(question), { indentIn: 0, images }));
-  for (const part of question.parts) {
+  const renderParts = (parts: Question[], depth = 1) => {
+  for (const part of parts) {
     const labelText = part.part_label ?? "";
     const marks = marksLabel(part.marks);
     const headChildren = [
@@ -439,10 +447,13 @@ function renderQuestion(
     ];
     if (marks) headChildren.push(runProps({ text: `  [${marks}]`, sizePt: 9 }));
     out.push(
-      new Paragraph({ children: headChildren, indent: { left: inches(0.3) } })
+      new Paragraph({ children: headChildren, indent: { left: inches(0.3 * depth) }, keepNext: true })
     );
-    out.push(...renderBlocks(part.body, { indentIn: 0.3, images }));
+    out.push(...renderBlocks(part.body, { indentIn: 0.3 * depth, images }));
+    renderParts(part.parts, depth + 1);
   }
+  };
+  renderParts(question.parts);
   const src = formatSourceBracket(question.source);
   out.push(new Paragraph({
     children: [runProps({
@@ -523,6 +534,9 @@ function hscCoverPage(children: Array<Paragraph | Table>, opts: DocOptions): voi
                 new Paragraph({ children: [runProps({ text: "Centre Number", sizePt: EXAM.font.smallPt })] }),
                 new Paragraph({ spacing: { after: 240 } }),
                 new Paragraph({ children: [runProps({ text: "Student Number", sizePt: EXAM.font.smallPt })] }),
+                new Paragraph({ spacing: { after: 240 } }),
+                new Paragraph({ children: [runProps({ text: "Candidate Name", sizePt: EXAM.font.smallPt })] }),
+                new Paragraph({ spacing: { after: 160 } }),
               ],
               margins: { top: 120, bottom: 120, left: 160, right: 160 },
             }),
@@ -573,6 +587,7 @@ function appendSectionHeader(children: Array<Paragraph | Table>, sec: ReturnType
         new Paragraph({
           children: [runProps({ text: line, bold: true, sizePt: EXAM.font.titlePt })],
           spacing: { before: 240, after: 80 },
+          keepNext: true,
         })
       );
       children.push(new Paragraph({ border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: "777777", space: 1 } }, spacing: { after: 100 } }));
@@ -662,9 +677,11 @@ export async function collectImages(
     for (const q of sec.questions) {
       blocks.push(...blocksOfQuestion(q));
       if (q.mcq_options?.length) blocks.push(...mcqOptionBlocks(q));
-      for (const part of q.parts) {
+      const collectParts = (parts: Question[]) => { for (const part of parts) {
         blocks.push(...blocksOfQuestion(part));
-      }
+        collectParts(part.parts);
+      } };
+      collectParts(q.parts);
     }
   }
   for (const item of stimuli) blocks.push(...item.stimulus.blocks);
@@ -788,13 +805,17 @@ export async function buildDocxSolutions(title: string, sections: DocSection[], 
     spacing: { before: 140, after: 180 },
   }));
   let number = 0;
+  let sectionCount = 0;
   const writeStart = performance.now();
   for (const section of sections) {
-    if (section.label) children.push(new Paragraph({ children: [runProps({ text: section.label, bold: true, sizePt: 15 })], spacing: { before: 360, after: 120 } }));
+    if (section.label) {
+      children.push(new Paragraph({ children: [runProps({ text: section.label, bold: true, sizePt: 15 })], spacing: { before: 360, after: 120 }, pageBreakBefore: sectionCount > 0, keepNext: true }));
+      sectionCount++;
+    }
     for (const q of section.questions) {
       number++;
       if (number > 1) divider();
-      children.push(new Paragraph({ children: [runProps({ text: `Question ${number}`, bold: true, sizePt: 13 })], spacing: { after: 60 } }));
+      children.push(new Paragraph({ children: [runProps({ text: `Question ${number}${q.marks != null ? ` (${formatMarks(q.marks)})` : ""}`, bold: true, sizePt: 13 })], spacing: { after: 60 }, keepNext: true }));
       const src = [formatSourceBracket(q.source), `Question ID: ${q.question_id}`].filter(Boolean).join(" · ");
       if (src) children.push(new Paragraph({ children: [runProps({ text: src, italics: true, sizePt: 8, color: GRAY })], spacing: { after: 100 } }));
       for (const slot of slotsByQuestion.get(q) ?? []) appendSlot(slot);

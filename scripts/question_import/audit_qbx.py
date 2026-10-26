@@ -201,15 +201,10 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
                                  f"{tot}")
                 for p in parts:
                     pl = str(p.get("part_label") or "")
-                    if p.get("parts"):
-                        deep = [x.get("part_label") for x in p["parts"]]
-                        probs.append(f"{w}: part {pl!r} has nested parts {deep} "
-                                     f"-- only one level is ever rendered; flatten "
-                                     f"them to siblings {pl}(i), {pl}(ii), ...")
-                    if re.search(r"[A-Za-z]\(", pl) and not re.fullmatch(
-                            r"[A-Za-z]\([ivxIVX]+\)", pl):
-                        probs.append(f"{w}: composite part label {pl!r} must be a "
-                                     f"letter plus a roman sub-part, e.g. 'c(i)'")
+                    if not re.fullmatch(r"\(?[A-Za-z0-9]+\)?", pl):
+                        probs.append(f"{w}: part_label {pl!r} must be one label "
+                                     f"component; represent deeper levels in that "
+                                     f"part's own parts array")
             elif obj is not q and not (obj.get("answer") or obj.get("solution")):
                 probs.append(f"{w}: leaf part has no answer or solution")
             elif obj.get("type_key") == "extended_response":

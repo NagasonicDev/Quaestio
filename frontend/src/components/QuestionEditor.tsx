@@ -30,6 +30,61 @@ interface EditablePart {
   answer: EditableBlock[];
   solution: EditableBlock[];
   markingCriteria: EditableBlock[];
+  parts: EditablePart[];
+}
+
+function toEditablePart(part: Question): EditablePart {
+  return {
+    questionId: part.question_id, label: part.part_label ?? "", marks: part.marks?.toString() ?? "",
+    body: toEditable(part.body), hint: toEditable(part.hint), answer: toEditable(part.answer),
+    solution: toEditable(part.solution), markingCriteria: toEditable(part.marking_criteria),
+    parts: part.parts.map(toEditablePart),
+  };
+}
+
+function newPart(label: string): EditablePart {
+  return { label, marks: "", body: [emptyBlock("text")], hint: [], answer: [], solution: [], markingCriteria: [], parts: [] };
+}
+
+function partToPayload(part: EditablePart, typeKey: string): Record<string, unknown> {
+  return {
+    question_id: part.questionId, type_key: typeKey, part_label: part.label, marks: part.marks ? Number(part.marks) : null,
+    body: blocksToPayload(part.body), hint: blocksToPayload(part.hint), answer: blocksToPayload(part.answer),
+    solution: blocksToPayload(part.solution), marking_criteria: blocksToPayload(part.markingCriteria),
+    parts: part.parts.map((child) => partToPayload(child, typeKey)),
+  };
+}
+
+function updatePartTree(items: EditablePart[], path: number[], update: (part: EditablePart) => EditablePart): EditablePart[] {
+  const [index, ...rest] = path;
+  return items.map((part, i) => i !== index ? part : rest.length
+    ? { ...part, parts: updatePartTree(part.parts, rest, update) }
+    : update(part));
+}
+
+function PartEditor({ parts, path = [], setParts, markChanged }: {
+  parts: EditablePart[]; path?: number[]; setParts: React.Dispatch<React.SetStateAction<EditablePart[]>>; markChanged: () => void;
+}) {
+  const update = (index: number, change: (part: EditablePart) => EditablePart) => {
+    markChanged(); setParts((current) => updatePartTree(current, [...path, index], change));
+  };
+  return <div className="space-y-4">
+    {parts.map((part, index) => <div key={part.questionId ?? [...path, index].join("-")} className="space-y-4 rounded-md border border-border p-4">
+      <div className="flex items-end gap-3">
+        <Field label="Part label"><Input value={part.label} onChange={(e) => update(index, (p) => ({ ...p, label: e.target.value }))} placeholder={path.length ? "i" : "a"} /></Field>
+        <Field label="Marks"><Input type="number" step="0.5" value={part.marks} onChange={(e) => update(index, (p) => ({ ...p, marks: e.target.value }))} /></Field>
+        <Button type="button" variant="outline" size="sm" onClick={() => { markChanged(); setParts((current) => updatePartTree(current, [...path, index], (p) => ({ ...p, parts: [...p.parts, newPart(["i", "ii", "iii", "iv", "v"][p.parts.length] ?? String(p.parts.length + 1))] }))); }}><Plus /> Add sub-part</Button>
+        <Button type="button" variant="ghost" size="icon" aria-label={`Remove part ${part.label || index + 1}`} onClick={() => { markChanged(); setParts((current) => { if (!path.length) return current.filter((_, i) => i !== index); return updatePartTree(current, path, (p) => ({ ...p, parts: p.parts.filter((_, i) => i !== index) })); }); }}><Trash2 /></Button>
+      </div>
+      <BlockEditor label={`Part ${part.label || index + 1} question`} blocks={part.body} onChange={(body) => update(index, (p) => ({ ...p, body }))} />
+      <BlockEditor label={`Part ${part.label || index + 1} hint (optional)`} blocks={part.hint} onChange={(hint) => update(index, (p) => ({ ...p, hint }))} note="Shown during practice one step at a time, before the marking guide. Keep it answer-free." />
+      <BlockEditor label={`Part ${part.label || index + 1} answer`} blocks={part.answer} onChange={(answer) => update(index, (p) => ({ ...p, answer }))} />
+      <BlockEditor label={`Part ${part.label || index + 1} solution`} blocks={part.solution} onChange={(solution) => update(index, (p) => ({ ...p, solution }))} />
+      <BlockEditor label={`Part ${part.label || index + 1} marking criteria`} blocks={part.markingCriteria} onChange={(markingCriteria) => update(index, (p) => ({ ...p, markingCriteria }))} />
+      <PartEditor parts={part.parts} path={[...path, index]} setParts={setParts} markChanged={markChanged} />
+    </div>)}
+    {parts.length === 0 && path.length > 0 && <Button type="button" variant="outline" size="sm" onClick={() => { markChanged(); setParts((current) => updatePartTree(current, path, (p) => ({ ...p, parts: [...p.parts, newPart("i")] }))); }}><Plus /> Add sub-part</Button>}
+  </div>;
 }
 
 function toEditable(blocks: ContentBlock[]): EditableBlock[] {
@@ -107,16 +162,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     { blocks: [emptyBlock("text")], isCorrect: false },
     { blocks: [emptyBlock("text")], isCorrect: false },
   ] : []));
-  const [parts, setParts] = useState<EditablePart[]>(existing?.parts.map((part) => ({
-    questionId: part.question_id,
-    label: part.part_label ?? "",
-    marks: part.marks?.toString() ?? "",
-    body: toEditable(part.body),
-    hint: toEditable(part.hint),
-    answer: toEditable(part.answer),
-    solution: toEditable(part.solution),
-    markingCriteria: toEditable(part.marking_criteria),
-  })) ?? []);
+  const [parts, setParts] = useState<EditablePart[]>(existing?.parts.map(toEditablePart) ?? []);
 
   const [saving, setSaving] = useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
@@ -219,17 +265,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
           content: blocksToPayload(option.blocks),
           is_correct: option.isCorrect,
         })) : [],
-        parts: parts.map((part) => ({
-          question_id: part.questionId,
-          type_key: typeKey,
-          part_label: part.label,
-          marks: part.marks ? Number(part.marks) : null,
-          body: blocksToPayload(part.body),
-          hint: blocksToPayload(part.hint),
-          answer: blocksToPayload(part.answer),
-          solution: blocksToPayload(part.solution),
-          marking_criteria: blocksToPayload(part.markingCriteria),
-        })),
+        parts: parts.map((part) => partToPayload(part, typeKey)),
         review_status: reviewStatus,
         source_name: sourceName.trim() || null,
         source_year: sourceYear ? Number(sourceYear) : null,
@@ -447,22 +483,9 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
               </Panel>
             )}
             <Panel>
-                <PanelHead title="Question parts" action={<Button type="button" variant="outline" size="sm" onClick={() => setParts((items) => [...items, { label: String.fromCharCode(97 + items.length), marks: "", body: [emptyBlock("text")], hint: [], answer: [], solution: [], markingCriteria: [] }])}><Plus /> Add part</Button>} />
+                <PanelHead title="Question parts" action={<Button type="button" variant="outline" size="sm" onClick={() => { setHasUnsavedChanges(true); setParts((items) => [...items, newPart(String.fromCharCode(97 + items.length))]); }}><Plus /> Add part</Button>} />
               <div className="space-y-5 p-5">
-                {parts.map((part, index) => (
-                  <div key={part.questionId ?? `new-${index}`} className="space-y-4 rounded-md border border-border p-4">
-                    <div className="grid grid-cols-[1fr_1fr_auto] items-end gap-3">
-                      <Field label="Part label"><Input value={part.label} onChange={(e) => setParts((items) => items.map((item, i) => i === index ? { ...item, label: e.target.value } : item))} placeholder="a" /></Field>
-                      <Field label="Marks"><Input type="number" step="0.5" value={part.marks} onChange={(e) => setParts((items) => items.map((item, i) => i === index ? { ...item, marks: e.target.value } : item))} /></Field>
-                      <Button type="button" variant="ghost" size="icon" aria-label={`Remove part ${part.label || index + 1}`} onClick={() => setParts((items) => items.filter((_, i) => i !== index))}><Trash2 /></Button>
-                    </div>
-                    <BlockEditor label={`Part ${part.label || index + 1} question`} blocks={part.body} onChange={(body) => setParts((items) => items.map((item, i) => i === index ? { ...item, body } : item))} />
-                    <BlockEditor label={`Part ${part.label || index + 1} hint (optional)`} blocks={part.hint} onChange={(hint) => setParts((items) => items.map((item, i) => i === index ? { ...item, hint } : item))} note="Shown during practice one step at a time, before the marking guide. Keep it answer-free." />
-                    <BlockEditor label={`Part ${part.label || index + 1} answer`} blocks={part.answer} onChange={(answer) => setParts((items) => items.map((item, i) => i === index ? { ...item, answer } : item))} />
-                    <BlockEditor label={`Part ${part.label || index + 1} solution`} blocks={part.solution} onChange={(solution) => setParts((items) => items.map((item, i) => i === index ? { ...item, solution } : item))} />
-                    <BlockEditor label={`Part ${part.label || index + 1} marking criteria`} blocks={part.markingCriteria} onChange={(markingCriteria) => setParts((items) => items.map((item, i) => i === index ? { ...item, markingCriteria } : item))} />
-                  </div>
-                ))}
+                <PartEditor parts={parts} setParts={setParts} markChanged={() => setHasUnsavedChanges(true)} />
                 {parts.length === 0 && <p className="text-sm text-muted-foreground">Add parts to create a multi-part question.</p>}
               </div>
             </Panel>

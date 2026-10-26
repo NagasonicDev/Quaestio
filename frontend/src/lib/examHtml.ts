@@ -62,13 +62,14 @@ function dataUrl(image: ResolvedImage): string {
 }
 
 /** The kind of content a block/asset is keyed by, for missing-image messages. */
-type ImageKind = "figure" | "graph" | "math";
+type ImageKind = "figure" | "graph" | "math" | "math-inline";
 
 function imageHtml(image: ResolvedImage, kind: ImageKind = "figure"): string {
   // widthPx/heightPx are the rasteriser's CSS box (pixelRatio-independent), so
   // an inline maths image is placed at its natural size to sit beside the text.
-  const width = kind === "math" ? image.widthPx : Math.min(image.widthPx, 640);
-  const cls = kind === "math" ? "math-img" : "figure-img";
+  const scale = kind === "math-inline" ? 0.9 : 1;
+  const width = kind === "math" || kind === "math-inline" ? image.widthPx * scale : Math.min(image.widthPx, 640);
+  const cls = kind === "math" || kind === "math-inline" ? `math-img${kind === "math-inline" ? " math-inline-img" : ""}` : "figure-img";
   return `<img class="${cls}" src="${dataUrl(image)}" width="${Math.max(1, Math.round(width))}" height="${Math.max(1, Math.round(image.heightPx * (width / image.widthPx)))}" alt="">`;
 }
 
@@ -87,7 +88,7 @@ function inlineHtml(
       continue;
     }
     const math = images.get(inlineMathImageId(blockId, index.value++));
-    parts.push(math ? imageHtml(math, "math") : esc(latexToPlain(token.math)));
+    parts.push(math ? imageHtml(math, "math-inline") : esc(latexToPlain(token.math)));
   }
   return parts.length ? parts.join("") : esc(text);
 }
@@ -111,7 +112,7 @@ function renderBlock(block: ContentBlock, images: Map<string, ResolvedImage>, in
       const display = contentOf(block, "display", true) !== false;
       const resolved = images.get(block.block_id);
       const body = resolved
-        ? imageHtml(resolved, "math")
+        ? imageHtml(resolved, display ? "math" : "math-inline")
         : esc(typeof latex === "string" ? latexToPlain(latex) : "");
       return `<p class="${display ? "equation-display" : "equation-inline"}"${display ? "" : style}>${body}</p>`;
     }
@@ -168,7 +169,7 @@ function renderBlock(block: ContentBlock, images: Map<string, ResolvedImage>, in
     }
     case "answer_area": {
       const lines = Math.max(1, Number(contentOf(block, "lines", 3)) || 1);
-      return Array.from({ length: lines }, () => `<div class="answer-line"${style}></div>`).join("");
+      return `<div class="answer-area"${style}>${Array.from({ length: lines }, () => `<div class="answer-line"></div>`).join("")}</div>`;
     }
     case "page_break":
       return `<div class="page-break"></div>`;
@@ -191,14 +192,15 @@ function renderQuestion(question: Question, n: number, images: Map<string, Resol
   const header = `<div class="question-head"><span class="question-number">Question ${n}</span><span class="question-marks">${esc(marks)}</span></div>`;
   const body = renderBlocks(question.body, images);
   const options = question.mcq_options?.length ? renderBlocks(mcqOptionBlocks(question), images) : "";
-  const parts = question.parts
+  const renderParts = (children: Question[], depth = 0): string => children
     .map((part) => {
       const label = part.part_label ? `(${esc(part.part_label)})` : "";
       const labelMarks = marksLabel(part.marks);
       const head = `<div class="part-head"><span class="part-label">${label}</span>${labelMarks ? `<span class="part-marks">[${esc(labelMarks)}]</span>` : ""}</div>`;
-      return `<div class="question-part">${head}${renderBlocks(part.body, images, 0.3)}</div>`;
+      return `<div class="question-part" style="margin-left:${0.3 + depth * 0.3}in">${head}${renderBlocks(part.body, images, 0.3 + depth * 0.3)}${renderParts(part.parts, depth + 1)}</div>`;
     })
     .join("");
+  const parts = renderParts(question.parts);
   const source = [formatSourceBracket(question.source), `Question ID: ${question.question_id}`].filter(Boolean).join(" · ");
   return `<div class="question">${header}${body}${options}${parts}<p class="question-source">${esc(source)}</p></div>`;
 }
@@ -228,8 +230,8 @@ function stylesheet(footer: string): string {
   @bottom-center { content: counter(page); font-family: ${family}; font-size: ${pt(font.smallPt)}; color: #6b6b64; }
   @bottom-left { content: "${footer.replace(/\\/g, "\\\\").replace(/"/g, '\\"')}"; font-family: ${family}; font-size: ${pt(font.smallPt)}; color: #6b6b64; }
 }
-html { font-family: ${family}; font-size: ${pt(font.bodyPt)}; line-height: ${font.lineHeight}; color: #000; }
-body { margin: 0; }
+html { font-family: ${family}; font-size: ${pt(font.bodyPt)}; line-height: ${font.lineHeight}; color: #000; background: #fff; }
+body { margin: 0; background: #fff; color: #000; }
 p { margin: 0 0 6pt 0; }
 h1, h2, h3 { margin: 0; font-weight: bold; }
 .cover { text-align: center; }
@@ -243,15 +245,17 @@ h1, h2, h3 { margin: 0; font-weight: bold; }
 .structure { text-align: left; }
 .structure h2 { margin-bottom: 6pt; }
 .structure .section-overview { margin-left: 0.35in; margin-bottom: 6pt; }
-.section-heading { font-size: ${pt(font.titlePt)}; border-bottom: 1pt solid #777; padding-bottom: 4pt; margin: 18pt 0 8pt; }
+.section { break-before: page; page-break-before: always; }
+.paper-section:first-of-type { break-before: auto; page-break-before: auto; }
+.section-heading { font-size: ${pt(font.titlePt)}; border-bottom: 1pt solid #777; padding-bottom: 4pt; margin: 0 0 8pt; break-after: avoid; page-break-after: avoid; }
 .section-marks { font-weight: bold; margin-bottom: 4pt; }
 .section-note { margin-bottom: 4pt; }
-.question { break-inside: avoid; page-break-inside: avoid; margin-top: 14pt; }
-.question-head { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4pt; }
+.question { margin-top: 14pt; }
+.question-head { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 4pt; break-after: avoid; page-break-after: avoid; }
 .question-number { font-weight: bold; }
 .question-marks { font-weight: normal; }
-.question-part { break-inside: avoid; page-break-inside: avoid; }
-.part-head { margin: 6pt 0 4pt 0; }
+.question-part { margin: 0; }
+.part-head { margin: 6pt 0 4pt 0; break-after: avoid; page-break-after: avoid; }
 .part-label { font-weight: bold; }
 .part-marks { font-size: ${pt(9)}; margin-left: 6pt; }
 .block-heading { font-weight: bold; }
@@ -259,27 +263,30 @@ h1, h2, h3 { margin: 0; font-weight: bold; }
 .mcq-option { margin-left: 0.35in; }
 .equation-display { text-align: center; }
 .equation-inline { margin: 0 0 6pt 0; }
-.figure-block { text-align: center; margin: 6pt 0; }
-.figure { text-align: center; }
+.figure-block { text-align: center; margin: 6pt 0; break-inside: avoid; page-break-inside: avoid; }
+.figure { text-align: center; break-inside: avoid; page-break-inside: avoid; }
 .figure-caption { text-align: center; font-style: italic; font-size: ${pt(9)}; color: #6b6b64; }
 .missing-figure { font-style: italic; }
 .math-img { vertical-align: middle; }
+.math-inline-img { vertical-align: -0.12em; }
 .exam-table { width: 100%; border-collapse: collapse; break-inside: avoid; page-break-inside: avoid; margin: 6pt 0; }
-.exam-table th, .exam-table td { border: 0.5pt solid #000; padding: 3pt 4pt; vertical-align: top; }
+.exam-table th, .exam-table td { border: 0.5pt solid #000; padding: 3pt 4pt; vertical-align: middle; }
 .exam-table th { background: #f1f1ee; text-align: center; }
 .exam-table .align-left { text-align: left; }
 .exam-table .align-center { text-align: center; }
 .exam-table .align-right { text-align: right; }
 .code-language { font-style: italic; font-size: ${pt(8)}; color: #6b6b64; }
 .code-line { font-family: "Courier New", monospace; font-size: ${pt(10)}; margin: 0; }
-.answer-line { border-bottom: 0.5pt solid #999; height: 20pt; }
+.answer-area { break-inside: avoid; page-break-inside: avoid; }
+.answer-line { border-bottom: 0.5pt solid #999; height: 20pt; box-sizing: border-box; }
 .question-source { font-style: italic; font-size: ${pt(8)}; color: #6b6b64; }
 .page-break { break-before: page; page-break-before: always; }
 .end-note { text-align: center; font-weight: bold; margin: 8pt 0; }
 .solutions-title { text-align: center; font-size: ${pt(20)}; }
 .solutions-subtitle { text-align: center; font-size: ${pt(14)}; margin: 6pt 0 12pt; }
-.solutions-section { font-size: ${pt(15)}; margin: 18pt 0 6pt; }
-.solutions-question { break-inside: avoid; page-break-inside: avoid; margin-top: 12pt; padding-top: 6pt; }
+.solutions-section { font-size: ${pt(15)}; margin: 18pt 0 6pt; break-before: page; page-break-before: always; break-after: avoid; page-break-after: avoid; }
+.solutions-section:first-of-type { break-before: auto; page-break-before: auto; }
+.solutions-question { margin-top: 12pt; padding-top: 6pt; }
 .solutions-question.first { border-top: 0; margin-top: 0; padding-top: 0; }
 .solutions-question:not(.first) { border-top: 0.5pt solid #999; }
 .solutions-qtitle { font-size: ${pt(13)}; }
@@ -319,8 +326,9 @@ function coverHtml(plan: ReturnType<typeof buildExamPaperPlan>, profile: ExamPro
   parts.push(`<div class="structure"><h2>Examination structure</h2>${plan.sections
     .map((sec) => `<div class="section-overview">${sectionOverviewLines(sec).map((line) => line ? `<p>${esc(line)}</p>` : `<p>&nbsp;</p>`).join("")}</div>`)
     .join("")}</div>`);
+  parts.push(`<p class="candidate-name">Candidate name: ____________________________________</p>`);
   parts.push(`<p class="cover-date">${esc(plan.examDate)}</p>`);
-  return `<section class="cover">${parts.join("")}</section><div class="page-break"></div>`;
+  return `<div class="cover">${parts.join("")}</div><div class="page-break"></div>`;
 }
 
 function sectionHeaderHtml(sec: ExamSectionPlan): string {
@@ -349,8 +357,7 @@ export function renderPaperHtml(opts: DocOptions): string {
     if (!section.questions.length) continue;
     const secPlan = plan.sections[planIndex++];
     if (!secPlan) continue;
-    if (planIndex > 1) body.push(`<div class="page-break"></div>`);
-    body.push(`<section class="section">${sectionHeaderHtml(secPlan)}`);
+    body.push(`<section class="section paper-section">${sectionHeaderHtml(secPlan)}`);
     for (const question of section.questions) {
       counter += 1;
       body.push(renderQuestion(question, counter, images));
@@ -389,7 +396,7 @@ export function renderSolutionsHtml(
       const source = [formatSourceBracket(question.source), `Question ID: ${question.question_id}`].filter(Boolean).join(" · ");
       body.push(
         `<div class="solutions-question${number === 1 ? " first" : ""}">`,
-        `<h3 class="solutions-qtitle">Question ${number}</h3>`,
+        `<h3 class="solutions-qtitle">Question ${number}${question.marks != null ? ` <span class="question-marks">(${esc(formatMarks(question.marks))})</span>` : ""}</h3>`,
         `<p class="question-source">${esc(source)}</p>`,
         ...solutionSlots(question).map((slot) => appendSolutionSlot(slot, images)),
         `</div>`

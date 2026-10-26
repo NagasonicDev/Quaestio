@@ -128,6 +128,13 @@ function buildHintSteps(question: Question): ContentBlock[][] {
   return steps;
 }
 
+function flattenQuestionParts(parts: Question[], prefix = ""): Array<{ part: Question; label: string }> {
+  return parts.flatMap((part) => {
+    const label = [prefix, part.part_label ? `(${part.part_label})` : "Part"].filter(Boolean).join(" ");
+    return [{ part, label }, ...flattenQuestionParts(part.parts, label)];
+  });
+}
+
 function RevealSection({
   n,
   title,
@@ -449,17 +456,17 @@ export function PracticeFlow({
               </p>
             )}
 
-          {question.parts
+          {flattenQuestionParts(question.parts)
             .filter(
-              (part) =>
+              ({ part }) =>
                 part.marking_criteria.length > 0 ||
                 part.answer.length > 0 ||
                 part.solution.length > 0
             )
-            .map((part) => (
+            .map(({ part, label }) => (
               <section key={part.question_id} className="border-t border-border px-5 py-5 sm:px-6">
                 <h3 className="font-display font-semibold">
-                  Part {part.part_label}
+                  Part {label}
                   {part.marks != null && (
                     <span className="ml-2 font-sans text-sm font-normal text-muted-foreground">
                       [{part.marks} marks]

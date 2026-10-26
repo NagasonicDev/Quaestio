@@ -165,6 +165,7 @@ CREATE TABLE IF NOT EXISTS mcq_option (
   content_json TEXT NOT NULL,
   is_correct INTEGER NOT NULL DEFAULT 0
 );
+CREATE INDEX IF NOT EXISTS idx_mcq_option_question ON mcq_option(question_id);
 
 CREATE TABLE IF NOT EXISTS asset (
   asset_id TEXT PRIMARY KEY,
@@ -177,6 +178,7 @@ CREATE TABLE IF NOT EXISTS asset (
   caption TEXT,
   original_filename TEXT
 );
+CREATE INDEX IF NOT EXISTS idx_asset_question ON asset(question_id);
 
 CREATE TABLE IF NOT EXISTS practice_session (
   session_id TEXT PRIMARY KEY,
@@ -288,7 +290,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
  * version the persisted blobs, and to the per-course `schema_version` that
  * describes the question format a course expects.
  */
-export const SCHEMA_VERSION = 8;
+export const SCHEMA_VERSION = 9;
 
 export interface Migration {
   id: number;
@@ -440,5 +442,13 @@ export const MIGRATIONS: Migration[] = [
     // The fresh-install schema previously claimed version 7 without including
     // attempt_id. sqlite.ts applies this column addition conditionally.
     sql: `CREATE INDEX IF NOT EXISTS idx_drawing_page_attempt ON question_drawing_page(question_id, attempt_id, position);`,
+  },
+  {
+    id: 9,
+    name: "index-question-owned-assets-and-options",
+    sql: `
+      CREATE INDEX IF NOT EXISTS idx_asset_question ON asset(question_id);
+      CREATE INDEX IF NOT EXISTS idx_mcq_option_question ON mcq_option(question_id);
+    `,
   },
 ];

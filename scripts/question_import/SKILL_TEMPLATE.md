@@ -30,11 +30,11 @@ row is enforced by `scripts/audit_qbx.py`.
 |---|---|
 | `difficulty` | **Required.** Any defined level — a missing or `null` value is rejected. |
 | `marks` | **Required on the top-level question.** Without it the question is invisible to the Test Generator. |
-| Parts | **Exactly one level.** A printed `(i)`/`(ii)` becomes a composite label `c(i)` at the same level — nesting is stored and never displayed. |
+| Parts | Preserve every printed level as a nested `parts` array: `b` contains `ii` for printed `(b)(ii)`. Never flatten labels into `b(ii)`. |
 | Multiple choice | **Never a part.** Options on a part are dropped. Emit a nested MCQ as its own top-level question with the stem repeated. |
-| `marks` | Parent total must equal the sum of its parts. Read each printed allocation; splits are never uniform. |
+| `marks` | At every level, each container total must equal the sum of its immediate parts. Read printed allocations; never assume an even split. |
 | Marking guide | Every question **and every part**. Write the allocation **first**: `"2 marks: …"`, never `"2 marks for …"` — the parser leaves a stray `for` in the criteria column. |
-| Answer | Every part needs an `answer` or a `solution`. A partless `extended_response` needs one too. If no rubric was published, write the rubric yourself. |
+| Answer | Every leaf part needs an `answer` or a `solution`; multipart containers hold neither. A partless `extended_response` needs one too. If no rubric was published, write the rubric yourself. |
 | Classification | On the **parent**, never on a part. Always `node_ids` + the matching full path in `node_names` (separator `" / "`); `node_codes` only when every selected node has a code. |
 | Body | Never empty, on a parent or a part. |
 | Unknown values | Never invent a type, tag, difficulty level, block type or node — each one either rejects the question or renders nothing at all. |

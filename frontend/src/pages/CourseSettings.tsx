@@ -207,7 +207,7 @@ export function CourseSettings() {
             </Button>
             <Button variant="destructive" onClick={() => void handleDeleteCourse()} disabled={deleting} title="Permanently delete this course and its data.">
               <Trash2 />
-              {deleting ? "Deleting…" : "Delete course"}
+              {deleting ? "deleting..." : "Delete course"}
             </Button>
           </>
         }

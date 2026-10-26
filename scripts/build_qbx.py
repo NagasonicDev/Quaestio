@@ -251,14 +251,22 @@ def main():
             if target == "body":
                 reimage(out, stems, [])
 
-        for part in q.get("parts", []):
+        def export_part(part, parent_id, fallback, label_path=()):
             label = part["part_label"]
-            pid = f"{qid}_{slug(label)}"
-            pop = export_shape(part, pid, qid, label, year, None, parent=q)
-            stems = next((s for t, l, s in plan if t == "part" and l == label), [])
+            pid = f"{parent_id}_{slug(label)}"
+            pop = export_shape(part, pid, parent_id, label, year, None, parent=fallback)
+            components = (*label_path, label)
+            full_label = components[0] + "".join(f"({piece})" for piece in components[1:])
+            stems = next((s for t, l, s in plan
+                          if t == "part" and l in (label, full_label)), [])
             if stems:
                 reimage(pop, stems, [])
-            out["parts"].append(pop)
+            for child in part.get("parts", []):
+                pop["parts"].append(export_part(child, pid, part, (*label_path, label)))
+            return pop
+
+        for part in q.get("parts", []):
+            out["parts"].append(export_part(part, qid, q))
 
         # options
         for letter, option in zip("ABCD", out["mcq_options"]):
@@ -291,13 +299,17 @@ def main():
                 })
             return seen
 
-        used += collect(out)
-        for pop in out["parts"]:
-            used += collect(pop)
+        def walk_objects(container):
+            yield container
+            for child in container.get("parts", []):
+                yield from walk_objects(child)
+
+        for container in walk_objects(out):
+            used += collect(container)
 
         # any image block still carrying a prose `description` has no extracted
         # file behind it - drop it rather than ship a description as a figure
-        for container in [out] + out["parts"] + out["mcq_options"]:
+        for container in list(walk_objects(out)) + out["mcq_options"]:
             if "body" in container:
                 container["body"][:] = [b for b in container["body"]
                                         if not (b["block_type"] == "image"
@@ -316,7 +328,7 @@ def main():
                                         "artwork must be sourced manually.]"},
                 }]
 
-        for container in [out] + out["parts"]:
+        for container in walk_objects(out):
             if qno in GAPS and "action_required" not in container["tags"]:
                 container["tags"].append("action_required")
 

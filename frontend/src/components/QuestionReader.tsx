@@ -160,6 +160,23 @@ export function SourceLine({ source }: { source: Question["source"] }) {
   );
 }
 
+function QuestionPartTree({ parts, depth = 0 }: { parts: Question[]; depth?: number }) {
+  return <div className={depth === 0 ? "mt-6 space-y-6" : "mt-3 space-y-3"}>
+    {parts.map((part) => <div key={part.question_id} className="border-l-2 border-border pl-4">
+      <p className="mb-1 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">({part.part_label}){part.marks != null && <span className="ml-2">[{part.marks} marks]</span>}</p>
+      <BlockList blocks={part.body} />
+      {part.parts.length > 0 && <QuestionPartTree parts={part.parts} depth={depth + 1} />}
+    </div>)}
+  </div>;
+}
+
+function flattenParts(parts: Question[], prefix = ""): Array<{ part: Question; label: string }> {
+  return parts.flatMap((part) => {
+    const label = [prefix, part.part_label ? `(${part.part_label})` : "Part"].filter(Boolean).join(" ");
+    return [{ part, label }, ...flattenParts(part.parts, label)];
+  });
+}
+
 /** Renders a question's body exactly in content order, with source small and
  * secondary underneath. Answer/solution are opt-in reveals, never default. */
 export function QuestionReader({ question, selectedChoice, onSelectChoice, submitted }: { question: Question; selectedChoice?: string | null; onSelectChoice?: (choice: string) => void; submitted?: boolean }) {
@@ -184,19 +201,7 @@ export function QuestionReader({ question, selectedChoice, onSelectChoice, submi
         })}
       </div>}
 
-      {question.parts.length > 0 && (
-        <div className="mt-6 space-y-6">
-          {question.parts.map((part) => (
-            <div key={part.question_id} className="border-l-2 border-border pl-4">
-              <p className="mb-1 font-mono text-[11px] uppercase tracking-wide text-muted-foreground">
-                ({part.part_label})
-                {part.marks != null && <span className="ml-2">[{part.marks} marks]</span>}
-              </p>
-              <BlockList blocks={part.body} />
-            </div>
-          ))}
-        </div>
-      )}
+      {question.parts.length > 0 && <QuestionPartTree parts={question.parts} />}
 
       <SourceLine source={question.source} />
     </article>
@@ -219,8 +224,8 @@ export function AnswerReveal({ question }: { question: Question }) {
   const hasMarking = question.marking_criteria.length > 0;
   const hasAnswer = question.answer.length > 0;
   const hasSolution = question.solution.length > 0;
-  const partsWithContent = question.parts.filter(
-    (part) => part.marking_criteria.length > 0 || part.answer.length > 0 || part.solution.length > 0
+  const partsWithContent = flattenParts(question.parts).filter(
+    ({ part }) => part.marking_criteria.length > 0 || part.answer.length > 0 || part.solution.length > 0
   );
   if (!hasMarking && !hasAnswer && !hasSolution && partsWithContent.length === 0) {
     return (
@@ -248,10 +253,10 @@ export function AnswerReveal({ question }: { question: Question }) {
           <BlockList blocks={question.solution} />
         </AnswerPart>
       )}
-      {partsWithContent.map((part, index) => (
+      {partsWithContent.map(({ part, label }) => (
         <section key={part.question_id} className="border-t border-border px-6 py-5 sm:px-8">
           <h3 className="mb-4 font-display text-lg font-semibold">
-            Part {part.part_label || index + 1}
+            Part {label}
             {part.marks != null && <span className="ml-2 font-sans text-sm font-normal text-muted-foreground">[{part.marks} marks]</span>}
           </h3>
           <div className="space-y-5">

@@ -537,24 +537,11 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
             labels = [p.get("part_label") for p in parts]
             if len(labels) != len(set(labels)):
                 rep.err(f"{w}: duplicate part_label among {labels}")
-            # The app renders parts exactly one level deep: parts[].parts is
-            # always [] on the way back out. Anything nested deeper is stored
-            # and then invisible, so depth-1 + composite labels is the contract.
-            for p in parts:
-                if p.get("parts"):
-                    deep = [x.get("part_label") for x in p["parts"]]
-                    rep.err(f"{w}: part {p.get('part_label')!r} has its own "
-                            f"parts {deep} -- only ONE level of parts is ever "
-                            f"rendered. Flatten them into siblings of "
-                            f"{p.get('part_label')!r} labelled "
-                            f"{p.get('part_label')}(i), {p.get('part_label')}(ii), ...")
             for lab in labels:
-                if lab and re.search(r"[A-Za-z]\(", str(lab)):
-                    m = re.fullmatch(r"([A-Za-z])\(([ivxIVX]+)\)", str(lab))
-                    if not m:
-                        rep.err(f"{w}: part_label {lab!r} looks composite; the "
-                                f"only composite form that renders is a letter "
-                                f"plus a roman sub-part, e.g. 'c(i)'")
+                if not isinstance(lab, str) or not re.fullmatch(
+                        r"\(?[A-Za-z0-9]+\)?", lab):
+                    rep.err(f"{w}: part_label {lab!r} must be one label component; "
+                            f"put deeper printed labels in that part's own parts array")
 
         # -- marking criteria ---------------------------------------------
         crit = obj.get("marking_criteria")

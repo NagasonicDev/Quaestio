@@ -251,7 +251,7 @@ export function TestGenerator() {
   async function handleDownload(test: GeneratedTestMeta) {
     setDownloading(`${test.test_id}:test`);
     try {
-      await downloadTestFile(test.test_id, "test", test.format as "docx" | "pdf");
+      await downloadTestFile(test.test_id, "test", test.format as "docx" | "pdf", test.title);
       notify("Test downloaded", "success", test.title);
     } catch (e) {
       notify("Could not download test", "error", e instanceof Error ? e.message : "Download failed.");
@@ -278,7 +278,7 @@ export function TestGenerator() {
         });
         markSolutionsAvailable(test.test_id);
       }
-      await downloadTestFile(test.test_id, "solutions", test.format as "docx" | "pdf");
+      await downloadTestFile(test.test_id, "solutions", test.format as "docx" | "pdf", test.title);
       if (task) task.succeed("Solutions ready", test.title);
       else notify("Solutions ready", "success", test.title);
     } catch (e) {

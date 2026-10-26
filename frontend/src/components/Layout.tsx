@@ -50,12 +50,33 @@ const NAV_GROUPS: Array<{ id: string; label: string; items: NavItem[] }> = [
   },
 ];
 
+/** Keep the first-run menu focused on places that lead to a distinct action.
+ * Course pages all resolve to the same onboarding screen until a course exists.
+ */
+const FIRST_RUN_NAV_GROUPS: Array<{ id: string; label: string; items: NavItem[] }> = [
+  {
+    id: "start",
+    label: "Get started",
+    items: [
+      { to: "/", label: "Overview", end: true },
+      { to: "/add-course", label: "Create a course" },
+      { to: "/templates", label: "Templates" },
+    ],
+  },
+  {
+    id: "preferences",
+    label: "Preferences",
+    items: [{ to: "/settings", label: "Settings" }],
+  },
+];
+
 const linkBase =
   "rounded-md px-2.5 py-2 text-[13px] font-medium text-muted-foreground transition hover:bg-surface hover:text-foreground";
 const linkActive = "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground";
 
 export function Layout() {
   const { courseId } = useActiveCourse();
+  const navGroups = courseId ? NAV_GROUPS : FIRST_RUN_NAV_GROUPS;
   const location = useLocation();
   const { theme, toggle } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -118,7 +139,7 @@ export function Layout() {
           </div>
 
           <nav className="ml-auto hidden items-center gap-0.5 lg:flex" aria-label="Main">
-            {NAV_GROUPS.map((group) => (
+            {navGroups.map((group) => (
               <div key={group.id} className="flex items-center gap-0.5">
                 {group.items.map((item) => (
                   <NavLink
@@ -169,7 +190,7 @@ export function Layout() {
             </div>
             <nav aria-label="Main">
               <ul className="space-y-3">
-                {NAV_GROUPS.map((group) => (
+                {navGroups.map((group) => (
                   <li key={group.id}>
                     <p className="label mb-1 px-1">{group.label}</p>
                     <ul className="grid gap-1 sm:grid-cols-2">

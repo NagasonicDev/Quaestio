@@ -134,7 +134,7 @@ export function tableColumnAligns(block: ContentBlock): Array<"left" | "center" 
   const aligns = contentOf(block, "column_align", null);
   return Array.from({ length: count }, (_, index) => {
     const value = Array.isArray(aligns) ? aligns[index] : null;
-    return value === "left" || value === "center" || value === "right" ? value : "left";
+    return value === "left" || value === "center" || value === "right" ? value : "center";
   });
 }
 
@@ -174,14 +174,16 @@ export function solutionSlots(question: Question): SolutionSlot[] {
     { label: "Solution", blocks: question.solution },
     { label: "Marking criteria", blocks: markingCriteriaBlocks(question.marking_criteria) },
   ];
-  for (const part of question.parts) {
+  const appendParts = (parts: Question[], depth = 0) => { for (const part of parts) {
     const label = part.part_label ? `(${part.part_label})` : "Part";
     slots.push(
-      { label: "Answer", blocks: part.answer, heading: label, sub: true },
-      { label: "Solution", blocks: part.solution, sub: true },
-      { label: "Marking criteria", blocks: markingCriteriaBlocks(part.marking_criteria), sub: true },
+      { label: "Answer", blocks: part.answer, heading: `${"  ".repeat(depth)}${label}`, sub: true },
+      { label: "Solution", blocks: part.solution, heading: `${"  ".repeat(depth)}${label}`, sub: true },
+      { label: "Marking criteria", blocks: markingCriteriaBlocks(part.marking_criteria), heading: `${"  ".repeat(depth)}${label}`, sub: true },
     );
-  }
+    appendParts(part.parts, depth + 1);
+  } };
+  appendParts(question.parts);
   return slots;
 }
 

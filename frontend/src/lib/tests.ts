@@ -71,13 +71,19 @@ function triggerDownload(blob: Blob, filename: string): void {
 export async function downloadTestFile(
   testId: string,
   which: "test" | "solutions",
-  format: "docx" | "pdf"
+  format: "docx" | "pdf",
+  testTitle?: string
 ): Promise<void> {
   const blob = await idb.getTestFile(testId, which);
   if (!blob?.size) {
     throw new Error("That file is no longer available in this browser. Generate the test again.");
   }
-  const base = which === "solutions" ? "test-solutions" : "test-paper";
+  const safeTitle = (testTitle ?? "Test")
+    .replace(/[<>:"/\\|?*\u0000-\u001f]/g, "-")
+    .replace(/\s+/g, " ")
+    .replace(/[. ]+$/g, "")
+    .trim() || "Test";
+  const base = which === "solutions" ? `${safeTitle} - Solutions` : safeTitle;
   if (blob.type === "text/html") {
     const { htmlBlobToPdfBlob } = await import("./htmlToPdf");
     triggerDownload(await htmlBlobToPdfBlob(blob), `${base}.pdf`);

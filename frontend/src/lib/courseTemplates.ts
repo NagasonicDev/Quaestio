@@ -151,7 +151,8 @@ function enrichWithSyllabusDotPoints(
     }).sort((a, b) => b.score - a.score);
     const destination = ranked[0]?.ref.node;
     if (!destination) continue;
-    for (const point of joinSyllabusListFragments(group.points)) addDotPoint(destination, point);
+    const points = group.pointsAreJoined ? group.points : joinSyllabusListFragments(group.points);
+    for (const point of points) addDotPoint(destination, point);
   }
 
   return nodes;

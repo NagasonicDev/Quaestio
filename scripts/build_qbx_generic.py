@@ -82,6 +82,10 @@ def repair_nodes(container, report):
 
 
 def fix_answer_area(container, report):
+    if container.get("parts"):
+        for part in container["parts"]:
+            fix_answer_area(part, report)
+        return
     if container.get("part_label") is None:
         return
     want = max(1, 2 * (container.get("marks") or 1))
@@ -221,17 +225,25 @@ def main():
             if target == "body":
                 reimage(out, stems, alt_map)
 
-        for part in q.get("parts", []):
+        def export_part(part, parent_id, fallback, label_path=()):
             label = part["part_label"]
-            pop = export_shape(part, f"{qid}_{slug(label)}", qid, label, year, None, fb=q)
+            pop = export_shape(part, f"{parent_id}_{slug(label)}", parent_id, label, year, None, fb=fallback)
             pop["course_id"] = course_id
             pop["source"]["name"] = source_name
             repair_nodes(pop, report)
-            fix_answer_area(pop, report)
-            stems = next((s for t, l, s in plan if t == "part" and l == label), [])
+            components = (*label_path, label)
+            full_label = components[0] + "".join(f"({piece})" for piece in components[1:])
+            stems = next((s for t, l, s in plan
+                          if t == "part" and l in (label, full_label)), [])
             if stems:
                 reimage(pop, stems, alt_map)
-            out["parts"].append(pop)
+            for child in part.get("parts", []):
+                pop["parts"].append(export_part(child, pop["question_id"], part, components))
+            fix_answer_area(pop, report)
+            return pop
+
+        for part in q.get("parts", []):
+            out["parts"].append(export_part(part, qid, q))
 
         # Use spreadsheet-style labels so choices beyond D are not silently
         # dropped by zip("ABCD", ...).
@@ -251,7 +263,13 @@ def main():
 
         # any image block still carrying only a prose description has no file
         # behind it: drop it rather than ship the description as a figure
-        for container in [out] + out["parts"]:
+        def walk_objects(container):
+            yield container
+            for child in container.get("parts", []):
+                yield from walk_objects(child)
+
+        objects = list(walk_objects(out))
+        for container in objects:
             container["body"][:] = [b for b in container["body"]
                                     if not (b["block_type"] in ("image", "diagram", "graph")
                                             and "asset_path" not in b["content"])]
@@ -268,9 +286,8 @@ def main():
                                       "content": {"text": "\n\n".join(
                                           p.strip() for p in prose if p.strip())}}]
 
-        used += collect(out, used)
-        for pop in out["parts"]:
-            used += collect(pop, used)
+        for container in objects:
+            used += collect(container, used)
 
         if qno in gaps and "action_required" not in out["tags"]:
             out["tags"].append("action_required")
