@@ -41,8 +41,9 @@ function requestLogging(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
-  // GitHub Pages serves this repository at the case-sensitive project path.
-  base: '/Quaestio/',
+  // GitHub Pages serves this repository at a project path. Vercel and local
+  // builds use the origin root unless a deployment explicitly sets a base.
+  base: process.env.VITE_BASE_PATH ?? '/',
   plugins: [react(), requestLogging()],
   server: {
     // The course skill ZIP includes shared helper sources from ../scripts.

@@ -31,6 +31,8 @@ jobs:
       - run: npm run lint
       - run: npm test
       - run: npm run build
+        env:
+          VITE_BASE_PATH: /Quaestio/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/dist
