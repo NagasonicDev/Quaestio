@@ -81,6 +81,15 @@ function applyMigrations(): void {
   for (const migration of pending) {
     db!.run("BEGIN;");
     try {
+      // Version 7 could be stamped by fresh installs whose base schema was
+      // missing this column. Repair both those databases and correctly
+      // migrated version-7 databases safely.
+      if (migration.id === 8) {
+        const columns = db!.exec("PRAGMA table_info(question_drawing_page)")[0]?.values ?? [];
+        if (!columns.some((row) => String(row[1]) === "attempt_id")) {
+          db!.run("ALTER TABLE question_drawing_page ADD COLUMN attempt_id TEXT;");
+        }
+      }
       db!.exec(migration.sql);
       writeSchemaVersion(migration.id);
       db!.run("COMMIT;");

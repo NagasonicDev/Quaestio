@@ -113,9 +113,11 @@ CREATE TABLE IF NOT EXISTS question_drawing_page (
   title TEXT NOT NULL,
   background TEXT NOT NULL,
   strokes_json TEXT NOT NULL,
-  updated_at TEXT NOT NULL
+  updated_at TEXT NOT NULL,
+  attempt_id TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_drawing_page_question ON question_drawing_page(question_id, position);
+CREATE INDEX IF NOT EXISTS idx_drawing_page_attempt ON question_drawing_page(question_id, attempt_id, position);
 
 CREATE TABLE IF NOT EXISTS stimulus (
   stimulus_id TEXT PRIMARY KEY,
@@ -286,7 +288,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
  * version the persisted blobs, and to the per-course `schema_version` that
  * describes the question format a course expects.
  */
-export const SCHEMA_VERSION = 7;
+export const SCHEMA_VERSION = 8;
 
 export interface Migration {
   id: number;
@@ -431,5 +433,12 @@ export const MIGRATIONS: Migration[] = [
       ALTER TABLE question_drawing_page ADD COLUMN attempt_id TEXT;
       CREATE INDEX IF NOT EXISTS idx_drawing_page_attempt ON question_drawing_page(question_id, attempt_id, position);
     `,
+  },
+  {
+    id: 8,
+    name: "repair-attempt-drawing-notebook-schema",
+    // The fresh-install schema previously claimed version 7 without including
+    // attempt_id. sqlite.ts applies this column addition conditionally.
+    sql: `CREATE INDEX IF NOT EXISTS idx_drawing_page_attempt ON question_drawing_page(question_id, attempt_id, position);`,
   },
 ];
