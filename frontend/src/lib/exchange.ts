@@ -302,6 +302,109 @@ function optionalNumber(value: unknown): number | null {
   return typeof value === "number" && Number.isFinite(value) ? value : null;
 }
 
+/** Remove duplicate copies of the same stored block without changing order. */
+function compactBlocks<T extends { slot?: unknown; position?: unknown; block_type?: unknown; content?: unknown }>(
+  blocks: T[] | undefined
+): T[] {
+  const seen = new Set<string>();
+  return (blocks ?? []).filter((block) => {
+    const key = JSON.stringify([block.slot, block.position, block.block_type, block.content]);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+/** Compact export-only copies; the question records in the database are untouched. */
+function compactQuestionsForExport(questions: Question[]): void {
+  const compact = (question: Question) => {
+    question.body = compactBlocks(question.body);
+    question.hint = compactBlocks(question.hint);
+    question.answer = compactBlocks(question.answer);
+    question.solution = compactBlocks(question.solution);
+    question.marking_criteria = compactBlocks(question.marking_criteria);
+    question.tags = [...new Set(question.tags ?? [])];
+    const seenOptions = new Set<string>();
+    question.mcq_options = (question.mcq_options ?? []).filter((option) => {
+      const key = JSON.stringify([
+        option.position,
+        option.is_correct,
+        option.content.map((block) => [block.block_type, block.content]),
+      ]);
+      if (seenOptions.has(key)) return false;
+      seenOptions.add(key);
+      return true;
+    });
+    const seenAssets = new Set<string>();
+    question.assets = (question.assets ?? []).filter((asset) => {
+      if (seenAssets.has(asset.asset_id)) return false;
+      seenAssets.add(asset.asset_id);
+      return true;
+    });
+    (question.parts ?? []).forEach(compact);
+  };
+  questions.forEach(compact);
+}
+
+/** Remap byte-identical image ids to one archive entry and return its bytes once. */
+async function deduplicateExportAssets(
+  assetIds: Set<string>,
+  questions: Question[],
+  stimuli: StimulusExport[]
+): Promise<Map<string, Blob>> {
+  const idMap = new Map<string, string>();
+  const blobs = new Map<string, Blob>();
+  const hashToId = new Map<string, string>();
+  for (const assetId of assetIds) {
+    const blob = await idb.getAsset(assetId);
+    if (!blob) {
+      idMap.set(assetId, assetId);
+      continue;
+    }
+    const hash = await contentHash(new Uint8Array(await blob.arrayBuffer()));
+    const canonicalId = hashToId.get(hash) ?? assetId;
+    hashToId.set(hash, canonicalId);
+    idMap.set(assetId, canonicalId);
+    if (!blobs.has(canonicalId)) blobs.set(canonicalId, blob);
+  }
+
+  const remap = (value: unknown): unknown => {
+    if (typeof value !== "string") return value;
+    const basename = value.split("/").pop() ?? value;
+    const id = basename.replace(/\.[^.]+$/, "");
+    const canonicalId = idMap.get(id);
+    return canonicalId ? value.replace(id, canonicalId) : value;
+  };
+  const rewrite = (value: any) => {
+    if (Array.isArray(value)) {
+      value.forEach(rewrite);
+      return;
+    }
+    if (!value || typeof value !== "object") return;
+    for (const [key, child] of Object.entries(value)) {
+      if (key === "asset_path" || key === "asset_id" || key === "file_path") {
+        value[key] = remap(child);
+      } else {
+        rewrite(child);
+      }
+    }
+  };
+  rewrite(questions);
+  rewrite(stimuli);
+  // Several question records can declare the same asset; keep one declaration per id.
+  const compactDeclarations = (question: Question) => {
+    const seen = new Set<string>();
+    question.assets = (question.assets ?? []).filter((asset) => {
+      if (seen.has(asset.asset_id)) return false;
+      seen.add(asset.asset_id);
+      return true;
+    });
+    (question.parts ?? []).forEach(compactDeclarations);
+  };
+  questions.forEach(compactDeclarations);
+  return blobs;
+}
+
 /** Review schedule + attempt history for one course, ready to be written to JSON. */
 async function readLearningData(
   courseId: string,
@@ -414,6 +517,7 @@ export async function exportCourse(
     (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
+  compactQuestionsForExport(questions);
   const includedQuestionIds = new Set<string>();
   const includeQuestionTree = (question: Question) => {
     includedQuestionIds.add(question.question_id);
@@ -451,6 +555,9 @@ export async function exportCourse(
       questionStimuli.push({ question_id: q.question_id, stimulus_id: s.stimulus_id });
     }
   }
+  const referencedAssetIds = collectReferencedAssetIdsWithStimuli(questions, stimuliWithContent);
+  const assetBlobs = await deduplicateExportAssets(referencedAssetIds, questions, stimuliWithContent);
+  compactQuestionsForExport(questions);
   const seen = collectReferencedAssetIdsWithStimuli(questions, stimuliWithContent);
   const workTotal = preAssetWork + seen.size + 2;
   let completedWork = preAssetWork;
@@ -487,12 +594,13 @@ export async function exportCourse(
         question_stimuli: questionStimuli,
         drawing_notebooks: drawingNotebooks,
       }, null, 2
-    )
+    ),
+    { compression: "DEFLATE", compressionOptions: { level: 6 } }
   );
   completedWork++;
   report();
   for (const assetId of seen) {
-    const blob = await idb.getAsset(assetId);
+    const blob = assetBlobs.get(assetId) ?? null;
     if (blob) zip.file(`assets/${assetId}.${mimeExtension(blob.type || "")}`, blob);
     completedWork++;
     report();
@@ -537,6 +645,10 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
     (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
+  compactQuestionsForExport(questions);
+  const referencedAssetIds = collectReferencedAssetIds(questions);
+  const assetBlobs = await deduplicateExportAssets(referencedAssetIds, questions, []);
+  compactQuestionsForExport(questions);
   const zip = new JSZip();
   zip.file("questions.json", JSON.stringify({
     export_schema_version: 1,
@@ -551,7 +663,7 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
       generated_files: false,
     },
     questions,
-  }, null, 2));
+  }, null, 2), { compression: "DEFLATE", compressionOptions: { level: 6 } });
   zip.file("README.txt", "Editable question export. Edit questions.json; binary files referenced by asset_id are in assets/. Keep asset IDs and filenames unchanged so image blocks continue to resolve.\n\nThis package deliberately contains questions and their images only: no course structure, no review schedule, no attempt history, no typed answers, and no generated files. Use the .qb course export for a full backup.\n");
   const seen = collectReferencedAssetIds(questions);
   const workTotal = 2 + seen.size + 2;
@@ -559,7 +671,7 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
   const report = (fraction = 0) => onProgress?.(Math.min(99, ((completedWork + fraction) / workTotal) * 100));
   report();
   for (const assetId of seen) {
-    const blob = await idb.getAsset(assetId);
+    const blob = assetBlobs.get(assetId) ?? null;
     if (blob) zip.file(`assets/${assetId}.${mimeExtension(blob.type || "")}`, blob);
     completedWork++;
     report();
