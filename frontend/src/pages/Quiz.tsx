@@ -1,6 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import { Link } from "react-router-dom";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useQuery } from "@tanstack/react-query";import { Link } from "react-router-dom";
 import { BookOpen, Check, Clock3, RotateCcw, SkipForward } from "lucide-react";
 import { api } from "../api/client";
 import type { Question, StimulusWithContent } from "../api/types";
@@ -19,8 +18,7 @@ import { effectiveNodeFilterIds } from "../lib/nodeFilters";
 import { notify } from "../lib/notifications";
 
 type ScoredBy = "objective" | "self" | "skipped";
-type QuizResult = { question: Question; earned: number; possible: number; elapsed: number; scoredBy: ScoredBy };
-type Phase = "setup" | "loading" | "run" | "done";
+type QuizResult = { question: Question; earned: number; possible: number; elapsed: number; scoredBy: ScoredBy; responseText?: string | null | undefined; responseImage?: string | null | undefined; };type Phase = "setup" | "loading" | "run" | "done";
 
 export function Quiz() {
   const { courseId } = useActiveCourse();
@@ -48,6 +46,7 @@ export function Quiz() {
   const [results, setResults] = useState<QuizResult[]>([]);
   const [stimuli, setStimuli] = useState<StimulusWithContent[]>([]);
   const [openStimulus, setOpenStimulus] = useState<StimulusWithContent | null>(null);
+  const startingRef = useRef(false);
 
   const { data: counts } = useQuery({
     queryKey: ["question-counts", courseId],
@@ -96,7 +95,7 @@ export function Quiz() {
     setAttemptInstance(null);
     void api.recordAttempt({ question_id: current.question_id, status: "seen" })
       .then(({ attempt_id }) => { if (active) setAttemptInstance({ key: `${index}:${current.question_id}`, id: attempt_id }); })
-      .catch(() => {});
+      .catch((cause) => { notify("Practice attempt not saved", "error", cause instanceof Error ? cause.message : "Could not record the seen attempt."); });
     return () => { active = false; };
   }, [phase, index, current?.question_id]);
   const notebookAttemptId = attemptInstance?.key === attemptKey ? attemptInstance.id : undefined;
@@ -171,7 +170,9 @@ export function Quiz() {
   }
 
   async function startQuiz() {
+    if (startingRef.current) return;
     if (!courseId || matchingCount < 1) return;
+    startingRef.current = true;
     setPhase("loading");
     try {
       const total = Math.min(requestedCount, matchingCount);
@@ -200,6 +201,8 @@ export function Quiz() {
     } catch (cause) {
       notify("Could not generate quiz", "error", cause instanceof Error ? cause.message : "Could not generate a quiz.");
       setPhase("setup");
+    } finally {
+      startingRef.current = false;
     }
   }
 
@@ -215,6 +218,7 @@ export function Quiz() {
       const possible = current.marks ?? 1;
       setResults((previous) => [...previous.filter((item) => item.question.question_id !== current.question_id), {
         question: current, earned: correct ? possible : 0, possible, elapsed, scoredBy: "objective",
+        responseText: answerDraft || null, responseImage: answerImage || null,
       }]);
       setRevealed(true);
       api.recordAttempt({
@@ -225,7 +229,7 @@ export function Quiz() {
         response_text: answerDraft || null,
         response_image: answerImage || null,
         time_spent_sec: elapsed,
-      }).catch(() => {});
+      }).catch((cause) => { notify("Practice attempt not saved", "error", cause instanceof Error ? cause.message : "Could not record this attempt."); });
     } else {
       setRevealed(true);
     }
@@ -248,21 +252,24 @@ export function Quiz() {
       response_text: answerDraft || null,
       response_image: answerImage || null,
       time_spent_sec: elapsed,
-    }).catch(() => {});
+    }).catch((cause) => { notify("Practice attempt not saved", "error", cause instanceof Error ? cause.message : "Could not record this attempt."); });
   }
 
-  function advance() {
+  async function advance() {
     if (!current) return;
     if (!results.some((item) => item.question.question_id === current.question_id)) {
-      const result = { question: current, earned: 0, possible: current.marks ?? 0, elapsed, scoredBy: "skipped" as const };
+      const result: QuizResult = { question: current, earned: 0, possible: current.marks ?? 0, elapsed, scoredBy: "skipped", responseText: answerDraft || null, responseImage: answerImage || null };
       setResults((previous) => [...previous, result]);
     }
-    if (index + 1 >= deck.length) {
-      setPhase("done");
+    if (index + 1 < deck.length) {
+      setIndex((value) => value + 1);
+      resetQuestion();
       return;
     }
-    setIndex((value) => value + 1);
-    resetQuestion();
+    if (!results.some((item) => item.question.question_id === current.question_id)) {
+      setResults((previous) => [...previous, { question: current, earned: 0, possible: current.marks ?? 0, elapsed, scoredBy: "skipped", responseText: answerDraft || null, responseImage: answerImage || null }]);
+    }
+    setPhase("done");
   }
 
   if (!courseId) return <p className="text-sm text-muted-foreground">Select a course to start a quiz.</p>;
@@ -286,7 +293,9 @@ export function Quiz() {
               tags={config?.tags ?? []} selectedTag={selectedTag} onSelectedTagChange={setSelectedTag}
               institutions={sourceOptions?.institutions} institutionCounts={sourceFacetQuery.data}
               institutionYears={institutionYears} onInstitutionYearsChange={setInstitutionYears}
-              footerAction={{ label: phase === "run" ? "Restart quiz" : "Generate quiz", onClick: startQuiz }}
+              footerAction={matchingCount > 0 && phase !== "loading"
+                ? { label: phase === "run" ? "Restart quiz" : "Generate quiz", onClick: startQuiz }
+                : undefined}
             />
           </>
         }
@@ -308,13 +317,16 @@ export function Quiz() {
               <Button onClick={startQuiz} disabled={matchingCount === 0 || phase === "loading"}>{phase === "run" ? "Restart quiz" : "Generate quiz"}</Button>
             </span>
           </div>
+          {matchingQuestions && matchingCount === 0 && (
+            <p className="mt-3 text-sm text-muted-foreground">No matching questions for the current filters. Adjust the filters and try again.</p>
+          )}
         </Panel>
       </div>
 
       {phase === "setup" && <Panel className="p-10 text-center text-sm text-muted-foreground">Set your filters and question count, then generate a quiz.</Panel>}
       {phase === "loading" && <Panel className="grid min-h-64 place-items-center p-10"><InkLoader messages={["Drawing questions…", "Starting your stopwatch…", "Preparing your quiz…"]} /></Panel>}
 
-      {(phase === "run" || phase === "done") && <Panel className="sticky top-[64px] z-10 mb-5 p-4 backdrop-blur">
+      {(phase === "run" || phase === "done") && <Panel className="sticky top-[64px] z-10 mb-5 p-4">
         <div className="mb-2 flex justify-between font-mono text-[11px] text-muted-foreground"><span>{phase === "done" ? "Complete" : `Question ${index + 1} of ${deck.length}`}</span><span>{earnedTotal} / {possibleTotal} marks</span></div>
         <div className="flex gap-1" aria-label="Quiz progress">{deck.map((question, i) => {
           const result = results.find((item) => item.question.question_id === question.question_id);
@@ -397,8 +409,7 @@ export function Quiz() {
               <span className="text-muted-foreground">{noMarkCount} no marks</span>
             </p>
             <p className="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-              {objectiveCount} app-marked · {selfMarkedCount} self-marked · {skippedCount} skipped
-            </p>
+              {objectiveCount} app-marked · {selfMarkedCount} self-marked · {skippedCount} skipped            </p>
             {selfMarkedCount > 0 && objectivePossible > 0 && (
               <p className="mt-1.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
                 app-marked only: {objectiveEarned} / {objectivePossible}
@@ -441,6 +452,7 @@ export function Quiz() {
           <Button onClick={startQuiz}><RotateCcw />Retry quiz</Button>
         </footer>
       </Panel>}
+
 
       <StimulusSideMenu
         open={!!openStimulus}

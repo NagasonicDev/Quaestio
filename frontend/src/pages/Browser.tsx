@@ -12,6 +12,7 @@ import { Input } from "../components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 import { flattenCounts } from "../components/NodeTree";
 import { MathText } from "../components/MathText";
+import { Button } from "../components/ui/button";
 import { effectiveNodeFilterIds } from "../lib/nodeFilters";
 import { useQuestionFilterCounts } from "../hooks/useQuestionFilterCounts";
 
@@ -129,7 +130,7 @@ export function Browser() {
     enabled: !!courseId,
   });
 
-  const { data: results, isLoading } = useQuery({
+  const { data: results, isLoading, isError, error, refetch } = useQuery({
     queryKey: ["questions", courseId, effectiveNodeIds, typeKeys, difficulties, selectedTag, institutionYears, search, sort, page],
     queryFn: () => api.listQuestions(courseId as string, {
       node_id: effectiveNodeIds.length ? effectiveNodeIds : undefined,
@@ -231,12 +232,23 @@ export function Browser() {
         </div>
 
         <div className="mt-3 space-y-2" data-tour="browse-results">
-          {!results && isLoading && (
+          {isLoading && (
             <Panel className="grid min-h-48 place-items-center p-8">
-              <LoadingState label="Consulting the ledger…" />
+              <div role="status"><LoadingState label="Consulting the ledger…" /></div>
             </Panel>
           )}
-          {results?.items.map((item) => (
+          {isError && (
+            <Panel className="grid min-h-48 place-items-center gap-3 p-8 text-center">
+              <div role="alert" className="contents">
+              <p className="font-display text-lg font-semibold">Couldn't load questions</p>
+              <p className="text-sm text-muted-foreground">
+                {error instanceof Error ? error.message : "The question bank didn't load. Retry to try again."}
+              </p>
+              <Button variant="outline" onClick={() => void refetch()}>Retry</Button>
+              </div>
+            </Panel>
+          )}
+          {!isLoading && !isError && results?.items.map((item) => (
             <Link
               key={item.question_id}
               to={`/questions/${item.question_id}`}
@@ -274,7 +286,7 @@ export function Browser() {
           ))}
         </div>
 
-        {results && results.items.length === 0 && !isLoading && (
+        {results && results.items.length === 0 && !isLoading && !isError && (
           <Panel className="p-10 text-center text-sm text-muted-foreground">
             No questions match these filters.
           </Panel>

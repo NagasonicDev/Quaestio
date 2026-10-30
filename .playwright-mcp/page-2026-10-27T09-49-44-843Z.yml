@@ -1,0 +1,37 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Quaestio." [ref=e6] [cursor=pointer]:
+        - /url: "#/"
+      - generic [ref=e7]:
+        - button "Saving status" [ref=e377]
+        - button "Switch to dark theme" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: Light
+        - button "Menu" [ref=e10] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e380]:
+      - generic [ref=e381]:
+        - paragraph [ref=e382]: Browse
+        - heading "Question Bank" [level=1] [ref=e384]
+        - paragraph [ref=e385]: Search, filter and inspect every question in the active course.
+      - button "Filters" [ref=e387] [cursor=pointer]
+    - generic [ref=e388]:
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - textbox "Search question text, code or source number" [ref=e396]
+          - combobox [ref=e397] [cursor=pointer]:
+            - generic: Newest first
+        - generic [ref=e400]:
+          - generic [ref=e401]: Loading…
+          - generic [ref=e402]: Page 1 of 1
+      - status [ref=e405]:
+        - generic [aria-hidden] [ref=e406]: Q
+        - paragraph [ref=e410]: Consulting the ledger…
+      - generic [ref=e411]:
+        - button "← Previous" [disabled]
+        - generic [ref=e412]: 1 of 1
+        - button "Next →" [disabled]
+    - complementary [ref=e61]:
+      - button "Recent activity 1" [ref=e75]:
+        - generic [ref=e64]: Recent activity
+        - generic [ref=e65]: "1"

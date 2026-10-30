@@ -5,7 +5,7 @@ import { BookOpen, Shuffle } from "lucide-react";
 import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
-import { PageHeader, Panel, PanelHead, Stat, MiniRows, Bars } from "../components/system";
+import { LoadingState, PageHeader, Panel, PanelHead, Stat, MiniRows, Bars } from "../components/system";
 import { Button } from "../components/ui/button";
 import { NodeTree, flattenCounts } from "../components/NodeTree";
 import { CourseOnboarding } from "../components/CourseOnboarding";
@@ -16,13 +16,15 @@ import { SampleCourseNotice } from "../components/SampleCourseNotice";
 
 export function Dashboard() {
   const { courseId } = useActiveCourse();
-  const { data: config } = useCourseConfig(courseId);
+  const configQuery = useCourseConfig(courseId);
+  const config = configQuery.data;
 
-  const { data: counts } = useQuery({
+  const countsQuery = useQuery({
     queryKey: ["question-counts", courseId, null, null, null],
     queryFn: () => api.questionCounts(courseId as string, {}),
     enabled: !!courseId,
   });
+  const counts = countsQuery.data;
   const flatCounts = useMemo(() => (counts ? flattenCounts(counts.by_node) : {}), [counts]);
 
   const difficultyBars = useMemo(() => {
@@ -38,6 +40,43 @@ export function Dashboard() {
 
   if (!courseId) {
     return <CourseOnboarding />;
+  }
+
+  const isPending =
+    configQuery.isPending ||
+    configQuery.isLoading ||
+    countsQuery.isPending ||
+    countsQuery.isLoading;
+  const isError = configQuery.isError || countsQuery.isError;
+
+  if (isPending) {
+    return (
+      <div className="panel grid min-h-48 place-items-center p-8" role="status" aria-live="polite">
+        <LoadingState label="Loading course…" />
+      </div>
+    );
+  }
+
+  if (isError) {
+    return (
+      <div className="space-y-6">
+        <PageHeader
+          eyebrow="Course overview"
+          title={config?.name ?? "Course"}
+          description="Where the course stands, and what is worth doing next."
+          actions={<Actions />}
+        />
+        <Panel className="p-5">
+          <h2 className="font-display text-lg font-semibold">Couldn't load this course</h2>
+          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">
+            The course data or question counts failed to load. Check your connection and try again.
+          </p>
+          <div className="mt-4">
+            <Button onClick={() => { configQuery.refetch(); countsQuery.refetch(); }}>Retry</Button>
+          </div>
+        </Panel>
+      </div>
+    );
   }
 
   return (
@@ -76,8 +115,7 @@ export function Dashboard() {
 
       <div className="mb-6 grid grid-cols-2 gap-3 lg:grid-cols-4" data-tour="dashboard-stats">
         <Stat title="Total questions">
-          <p className="font-display text-4xl font-semibold">{counts?.total ?? "…"}</p>
-          <p className="mt-1 font-mono text-[11px] text-success">{config?.name}</p>
+          <p className="font-display text-4xl font-semibold">{counts?.total ?? 0}</p>
         </Stat>
         <Stat title="By type">
           <MiniRows

@@ -27,7 +27,8 @@
     "test:solutions": "node --test tests/solutionSlots.test.mjs tests/mathText.test.mjs tests/solutionsDocx.test.mjs tests/resolversProgress.test.mjs",
     "test:download": "node --test tests/testDownload.test.mjs",
     "test:tour": "node --test tests/tour.test.mjs",
-    "test": "npm run test:selection && npm run test:history && npm run test:question-ids && npm run test:storage && npm run test:hardening && npm run test:review && npm run test:schema && npm run test:exam-document && npm run test:exam-profile && npm run test:plan && npm run test:progress && npm run test:mcq-options && npm run test:templates && npm run test:exam-html && npm run test:solutions && npm run test:download && npm run test:tour",
+      "test:notebook": "node --test tests/drawingNotebook.test.mjs",
+    "test": "npm run test:selection && npm run test:history && npm run test:question-ids && npm run test:storage && npm run test:hardening && npm run test:review && npm run test:schema && npm run test:exam-document && npm run test:exam-profile && npm run test:plan && npm run test:progress && npm run test:mcq-options && npm run test:templates && npm run test:exam-html && npm run test:solutions && npm run test:download && npm run test:tour && npm run test:notebook",
     "bench:selection": "node scripts/benchmark-question-selection.mjs",
     "preview": "vite preview"
   },

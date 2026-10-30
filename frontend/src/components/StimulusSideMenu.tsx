@@ -103,7 +103,7 @@ export function StimulusSideMenu({
   return createPortal(
     <div className="fixed inset-0 z-50">
       <div
-        className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px] animate-in fade-in-0"
+        className="absolute inset-0 bg-foreground/25 animate-in fade-in-0"
         aria-hidden
         onClick={onClose}
       />

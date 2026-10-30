@@ -16,7 +16,6 @@ import { Import } from "./pages/Import";
 import { CourseSettings } from "./pages/CourseSettings";
 import { Settings } from "./pages/Settings";
 import { AddCourse } from "./pages/AddCourse";
-import { Templates } from "./pages/Templates";
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1, refetchOnWindowFocus: false } },
@@ -47,9 +46,7 @@ export default function App() {
                 <Route path="import" element={<Import />} />
                 <Route path="course-settings" element={<CourseSettings />} />
                 <Route path="settings" element={<Settings />} />
-                <Route path="add-course" element={<AddCourse />} />
-                <Route path="templates" element={<Templates />} />
-              </Route>
+                <Route path="add-course" element={<AddCourse />} />              </Route>
             </Routes>
           </HashRouter>
         </CourseProvider>

@@ -7,6 +7,7 @@ import type { DrawingNotebook as DrawingNotebookData, DrawingPage, DrawingTool }
 import { cn } from "../../lib/utils";
 import { useTheme } from "../../hooks/useTheme";
 import { SaveStatusIndicator } from "../SaveStatus";
+import { useConfirm } from "../ui/modal";
 import { DrawingCanvas } from "./DrawingCanvas";
 import { createDrawingHistory, type DrawingHistory } from "./drawingHistory";
 
@@ -14,6 +15,8 @@ interface DrawingNotebookProps {
   questionId: string;
   attemptId?: string;
   className?: string;
+  /** Latest in-memory notebook, so marking does not race the 500ms save. */
+  onChange?: (notebook: DrawingNotebookData) => void;
 }
 
 const TOOLS: Array<{ value: DrawingTool; label: string; Icon: typeof PenLine }> = [
@@ -34,8 +37,9 @@ function pageCopy(page: DrawingPage, updates: Partial<DrawingPage> = {}): Drawin
   return { ...page, ...updates, strokes: updates.strokes ?? page.strokes.map((stroke) => ({ ...stroke, points: [...stroke.points] })) };
 }
 
-export function DrawingNotebook({ questionId, attemptId, className }: DrawingNotebookProps) {
+export function DrawingNotebook({ questionId, attemptId, className, onChange }: DrawingNotebookProps) {
   const { theme } = useTheme();
+  const confirm = useConfirm();
   const defaultColour = theme === "dark" ? WHITE : BLACK;
   const [notebook, setNotebook] = useState<DrawingNotebookData | null>(null);
   const [selectedPageId, setSelectedPageId] = useState<string | null>(null);
@@ -55,6 +59,10 @@ export function DrawingNotebook({ questionId, attemptId, className }: DrawingNot
   const toolPopupRef = useRef<HTMLDivElement>(null);
   const histories = useRef(new Map<string, DrawingHistory<DrawingPage>>());
   const saveTimers = useRef(new Map<string, ReturnType<typeof setTimeout>>());
+  const onChangeRef = useRef(onChange);
+
+  useEffect(() => { onChangeRef.current = onChange; }, [onChange]);
+  useEffect(() => { if (notebook) onChangeRef.current?.(notebook); }, [notebook]);
 
   useEffect(() => {
     const previousDefault = theme === "dark" ? BLACK : WHITE;
@@ -198,8 +206,15 @@ export function DrawingNotebook({ questionId, attemptId, className }: DrawingNot
     setSelectedPageId(target.page_id);
   };
 
-  const deletePage = () => {
-    if (!notebook || !selectedPage || notebook.pages.length === 1 || !window.confirm(`Delete ${selectedPage.title}?`)) return;
+  const deletePage = async () => {
+    if (!notebook || !selectedPage || notebook.pages.length === 1) return;
+    const ok = await confirm({
+      title: "Delete page",
+      description: `Delete ${selectedPage.title}? This cannot be undone.`,
+      confirmLabel: "Delete page",
+      destructive: true,
+    });
+    if (!ok) return;
     const pages = notebook.pages.filter((page) => page.page_id !== selectedPage.page_id).map((page, position) => ({ ...page, position }));
     histories.current.delete(selectedPage.page_id);
     updateNotebook((current) => ({ ...current, pages }));
@@ -207,11 +222,23 @@ export function DrawingNotebook({ questionId, attemptId, className }: DrawingNot
     void api.deleteDrawingPage(questionId, selectedPage.page_id, attemptId).catch((cause) => setError(cause instanceof Error ? cause.message : "Could not delete page."));
   };
 
+  const clearPage = async () => {
+    if (!selectedPage?.strokes.length) return;
+    const ok = await confirm({
+      title: "Clear page",
+      description: "Clear all drawings on this page?",
+      confirmLabel: "Clear page",
+      destructive: true,
+    });
+    if (ok) changePage({ ...selectedPage, strokes: [] });
+  };
+
   const undo = () => {
     if (!selectedPage) return;
     const page = histories.current.get(selectedPage.page_id)?.undo();
     if (page) changePage(page, false);
   };
+
   const redo = () => {
     if (!selectedPage) return;
     const page = histories.current.get(selectedPage.page_id)?.redo();
@@ -299,7 +326,7 @@ export function DrawingNotebook({ questionId, attemptId, className }: DrawingNot
           <span className="mx-1 h-7 border-l border-border/80" />
           <button type="button" aria-label="Undo" title="Undo (Ctrl/⌘+Z)" disabled={!history?.canUndo()} onClick={undo} className="inline-flex size-11 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-background hover:text-foreground disabled:opacity-35"><Undo2 className="size-[18px]" /></button>
           <button type="button" aria-label="Redo" title="Redo (Ctrl/⌘+Shift+Z)" disabled={!history?.canRedo()} onClick={redo} className="inline-flex size-11 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-background hover:text-foreground disabled:opacity-35"><Redo2 className="size-[18px]" /></button>
-          <button type="button" aria-label="Clear page" title="Clear page" className="inline-flex size-11 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive" onClick={() => { if (selectedPage?.strokes.length && window.confirm("Clear all drawings on this page?")) changePage({ ...selectedPage, strokes: [] }); }}><Trash2 className="size-[18px]" /></button>
+          <button type="button" aria-label="Clear page" title="Clear page" className="inline-flex size-11 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-destructive/10 hover:text-destructive" onClick={() => void clearPage()}><Trash2 className="size-[18px]" /></button>
         </div>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-border/60 pt-2">

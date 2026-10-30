@@ -215,7 +215,7 @@ export const api = {
 
   importCourseFile(
     file: File,
-    onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">,
+    onIdCollision: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">,
     onProgress?: (percent: number) => void
   ): Promise<{ course_id: string; course_name: string }> {
     return import("../lib/exchange").then((m) => m.importCourseFile(file, onIdCollision, onProgress));
@@ -426,7 +426,7 @@ export const api = {
   recentQuestions(
     courseId: string,
     limit: number = 10
-  ): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; scored_by: string | null; seen_at: string }>> {
+  ): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; scored_by: string | null; score_earned: number | null; score_possible: number | null; seen_at: string }>> {
     return data.recentQuestions(courseId, limit);
   },
 

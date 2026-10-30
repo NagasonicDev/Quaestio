@@ -238,7 +238,7 @@ export type AttemptStatus = "seen" | "attempted" | "revealed" | "reviewed";
 export type SelfRating = "again" | "hard" | "got_it" | "easy" | "unsure";
 
 /** Where a mark came from. Anything but "objective" is not an app-verified result. */
-export type ScoredBy = "objective" | "self" | "manual_legacy";
+export type ScoredBy = "objective" | "self" | "manual_legacy" | "ai";
 
 export type Confidence = "low" | "medium" | "high";
 

@@ -1,5 +1,6 @@
 export function newId(prefix: string): string {
-  const hex = Math.random().toString(16).slice(2, 14).padEnd(12, "0");
+  const cryptoHex = globalThis.crypto?.randomUUID?.().replace(/-/g, "").slice(0, 12);
+  const hex = cryptoHex ?? Math.random().toString(16).slice(2, 14).padEnd(12, "0");
   return `${prefix}_${hex}`;
 }
 
@@ -7,14 +8,24 @@ const QUESTION_ID_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 const QUESTION_ID_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const QUESTION_ID_DIGITS = "0123456789";
 
+function randomQuestionIndex(max: number): number {
+  const getRandomValues = globalThis.crypto?.getRandomValues?.bind(globalThis.crypto);
+  if (getRandomValues) {
+    const buf = new Uint32Array(1);
+    getRandomValues(buf);
+    return buf[0] % max;
+  }
+  return Math.floor(Math.random() * max);
+}
+
 export function newQuestionId(): string {
   const chars = [
-    QUESTION_ID_LETTERS[Math.floor(Math.random() * QUESTION_ID_LETTERS.length)],
-    QUESTION_ID_DIGITS[Math.floor(Math.random() * QUESTION_ID_DIGITS.length)],
-    ...Array.from({ length: 4 }, () => QUESTION_ID_CHARS[Math.floor(Math.random() * QUESTION_ID_CHARS.length)]),
+    QUESTION_ID_LETTERS[randomQuestionIndex(QUESTION_ID_LETTERS.length)],
+    QUESTION_ID_DIGITS[randomQuestionIndex(QUESTION_ID_DIGITS.length)],
+    ...Array.from({ length: 4 }, () => QUESTION_ID_CHARS[randomQuestionIndex(QUESTION_ID_CHARS.length)]),
   ];
   for (let i = chars.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
+    const j = randomQuestionIndex(i + 1);
     [chars[i], chars[j]] = [chars[j], chars[i]];
   }
   return chars.join("");
@@ -38,5 +49,5 @@ export function nowUtc(): string {
   ).padStart(2, "0")} ${String(d.getUTCHours()).padStart(2, "0")}:${String(d.getUTCMinutes()).padStart(
     2,
     "0"
-  )}:${String(d.getUTCSeconds()).padStart(2, "0")}.000000`;
+  )}:${String(d.getUTCSeconds()).padStart(2, "0")}`;
 }

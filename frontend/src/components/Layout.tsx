@@ -118,13 +118,11 @@ export function Layout() {
 
   return (
     <div className="min-h-screen bg-background text-foreground font-sans">
-      <div className="ledger-wash" />
-
       <div className="global-loading-track" aria-hidden="true">
         {isFetching && <div className="global-loading-bar" />}
       </div>
 
-      <header className="sticky top-0 z-40 border-b border-border bg-background/85 shadow-sm shadow-foreground/[0.02] backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-border bg-background shadow-sm shadow-foreground/[0.02]">
         <div className="mx-auto grid h-14 max-w-[1500px] grid-cols-[minmax(0,1fr)_auto] items-center gap-3 px-4 sm:flex sm:px-5">
           <Link
             to="/"
@@ -223,17 +221,18 @@ export function Layout() {
       <SaveFailureBanner />
 
       {generationTask && (
-        <div className="sticky top-14 z-30 border-b border-border bg-surface/95 px-4 py-2.5 shadow-sm backdrop-blur sm:px-5" role="status" aria-live="polite">
+        <div className="sticky top-14 z-30 border-b border-border bg-surface px-4 py-2.5 shadow-sm sm:px-5" role="status" aria-live="polite">
           <div className="mx-auto flex max-w-[1500px] items-center gap-3">
             <div className="min-w-0 flex-1">
               <Link to="/test-generator" className="flex items-center gap-2 text-sm font-medium hover:underline">
                 {generationTask.status === "running" ? (
-                  <><span className="h-2 w-2 shrink-0 animate-pulse rounded-full bg-accent-foreground" />Generating your test…</>
+                  <><span className="h-2 w-2 shrink-0 rounded-full bg-accent-foreground" />Generating your test…</>
                 ) : generationTask.status === "complete" ? (
-                  <><Check className="h-4 w-4 shrink-0 text-green-600" />Your test is ready</>
+                  <><Check className="h-4 w-4 shrink-0 text-success" />Your test is ready</>
                 ) : (
                   <><span className="h-2 w-2 shrink-0 rounded-full bg-destructive" />Test generation failed</>
-                )}
+                )
+              }
               </Link>
               <p className="truncate text-xs text-muted-foreground">
                 {generationTask.status === "running"
@@ -266,7 +265,7 @@ export function Layout() {
           return (
             <div key={item.id} className={`overflow-hidden rounded-xl border bg-card shadow-xl ${item.tone === "error" ? "border-destructive/60" : "border-border"}`} role={item.tone === "error" ? "alert" : "status"} aria-live={item.tone === "error" ? "assertive" : "polite"}>
               <div className="flex items-start gap-3 p-4">
-                <Icon className={`mt-0.5 size-4 shrink-0 ${item.tone === "error" ? "text-destructive" : item.tone === "success" ? "text-green-600" : "text-muted-foreground"}`} aria-hidden="true" />
+                <Icon className={`mt-0.5 size-4 shrink-0 ${item.tone === "error" ? "text-destructive" : item.tone === "success" ? "text-success" : "text-muted-foreground"}`} aria-hidden="true" />
                 <div className="min-w-0 flex-1">
                   <p className="text-sm font-medium">{item.title}</p>
                   {item.message && <p className="mt-1 whitespace-pre-line text-xs text-muted-foreground">{item.message}</p>}
@@ -287,7 +286,7 @@ export function Layout() {
       <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "lg:grid-cols-[238px_minmax(0,1fr)]")}>
         {courseId && <RecentQuestionsSidebar variant="rail" />}
         <main className="min-w-0">
-          {!courseId && !["/", "/add-course", "/templates"].includes(location.pathname) ? <CourseOnboarding /> : <Outlet />}
+          {!courseId && !["/", "/add-course", "/templates", "/marking-trial"].includes(location.pathname) ? <CourseOnboarding /> : <Outlet />}
           {courseId && <RecentQuestionsSidebar variant="inline" />}
         </main>
       </div>

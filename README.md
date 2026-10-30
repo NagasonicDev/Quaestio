@@ -130,7 +130,7 @@ A matching DOCX/PDF of solutions and marking guide, with criteria tables, is gen
 
 ## 🔒 Your courses and privacy
 
-Quaestio stores course content, images, stimuli, practice history, review schedules, and generated tests in **browser storage on your device**. The app does not use a Quaestio account or sync your data to a Quaestio server.
+Quaestio stores course content, images, stimuli, practice history, review schedules, and generated tests in **browser storage on your device**. The app does not use a Quaestio account or sync your data to a Quaestio server. It may send anonymous, page-level usage statistics, but your course data stays on your device.
 
 Each browser profile has its own copy. Use **Export course** to download a `.qb` backup, then import that file in another browser or keep it somewhere safe.
 
@@ -147,6 +147,20 @@ Each browser profile has its own copy. Use **Export course** to download a `.qb`
 3. Import the `.qb` file. Images, review history, and stimuli come along with it.
 
 </details>
+
+## 🧪 Development checks
+
+From `frontend/`:
+
+```powershell
+npm run build
+npm run lint
+npm run test
+npm run test:tour
+npm run preview -- --host 127.0.0.1 --port 4173
+```
+
+Smoke-test the preview at 320 / 375 / 768 / 1024 / 1440 px widths in light and dark mode across the main routes.
 
 ## 💬 Questions and feedback
 

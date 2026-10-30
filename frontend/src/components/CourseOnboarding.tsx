@@ -44,13 +44,8 @@ export function CourseOnboarding() {
   const allTemplates = templatesByCategory().flatMap((g) => g.templates);
   const [templateIndex, setTemplateIndex] = useState(0);
 
-  useEffect(() => {
-    if (allTemplates.length <= 1) return;
-    const id = window.setInterval(() => {
-      setTemplateIndex((i) => (i + 1) % allTemplates.length);
-    }, 4000);
-    return () => window.clearInterval(id);
-  }, [allTemplates.length]);
+  // Keep first template static to avoid auto-motion; dots allow manual selection.
+  useEffect(() => {}, [allTemplates.length]);
 
   async function adopt(courseId: string, to: string) {
     setCourseId(courseId);
@@ -162,8 +157,6 @@ export function CourseOnboarding() {
   return (
     <div className="mx-auto max-w-5xl space-y-7 pb-10 pt-2 sm:pt-8">
       <section className="relative overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
-        <div className="absolute -right-24 -top-28 size-96 rounded-full bg-primary/10 blur-3xl" />
-        <div className="absolute bottom-0 right-[20%] h-40 w-40 rounded-full bg-accent/40 blur-3xl" />
         <div className="relative grid gap-8 p-7 sm:p-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:p-12">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-background/70 px-3 py-1.5 text-xs font-medium text-muted-foreground">
@@ -186,9 +179,8 @@ export function CourseOnboarding() {
             </div>
           </div>
           <div className="relative mx-auto w-full max-w-sm">
-            <div className="absolute -inset-4 rounded-[2rem] bg-primary/5 blur-xl" />
             {allTemplates.length > 0 ? (
-              <div className="relative overflow-hidden rounded-2xl border border-border bg-background/90 shadow-xl shadow-foreground/5 backdrop-blur">
+              <div className="relative overflow-hidden rounded-2xl border border-border bg-background shadow-xl shadow-foreground/5">
                 <div className="flex items-center justify-between border-b border-border px-5 pb-4 pt-5">
                   <div>
                     <p className="label">Start from a template</p>
@@ -257,7 +249,7 @@ export function CourseOnboarding() {
                 </div>
               </div>
             ) : (
-              <div className="relative rotate-1 rounded-2xl border border-border bg-background/90 p-5 shadow-xl shadow-foreground/5 backdrop-blur">
+              <div className="relative rotate-1 rounded-2xl border border-border bg-background p-5 shadow-xl shadow-foreground/5">
                 <div className="flex items-center justify-between border-b border-border pb-4">
                   <div>
                     <p className="label">A fresh start</p>

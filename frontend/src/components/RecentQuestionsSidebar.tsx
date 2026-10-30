@@ -47,11 +47,12 @@ export function RecentQuestionsSidebar({ variant }: { variant: "rail" | "inline"
       <div className="space-y-1">
         {recent?.map((item) => {
           const label = attemptStatusLabel(item.status);
+          const revealed = attemptRank(label) >= attemptRank("revealed");
           const done = attemptRank(label) >= attemptRank("reviewed");
           return (
             <Link
               key={item.question_id}
-              to={`/questions/${item.question_id}`}
+              to={revealed ? `/questions/${item.question_id}?revealed=1` : `/questions/${item.question_id}`}
               className="block rounded-md p-2.5 transition hover:bg-surface"
             >
               <div className="mb-1 flex items-center gap-2">
@@ -70,8 +71,10 @@ export function RecentQuestionsSidebar({ variant }: { variant: "rail" | "inline"
                 >
                   {label}
                 </span>
-                <span className="ml-auto font-mono text-[10px] text-muted-foreground">
-                  {formatQuestionType(item.type_key)}
+                <span className="ml-auto flex items-center gap-2">
+                  <span className="font-mono text-[10px] text-muted-foreground">
+                    {formatQuestionType(item.type_key)}
+                  </span>
                 </span>
               </div>
               <p className="line-clamp-2 text-[12px] leading-snug text-foreground">

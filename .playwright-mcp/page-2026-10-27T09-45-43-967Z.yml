@@ -1,0 +1,549 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Quaestio." [ref=e6] [cursor=pointer]:
+        - /url: "#/"
+      - generic [ref=e7]:
+        - button "Switch to dark theme" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: Light
+        - button "Menu" [ref=e10] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: Your question workspace
+          - heading "Make room for better questions." [level=1] [ref=e23]
+          - paragraph [ref=e24]: Pick a starting point. Everything stays on this device, and you can export a backup whenever you want one.
+          - generic [ref=e25]:
+            - button "Try the sample course" [ref=e26] [cursor=pointer]
+            - button "Set up my own course" [ref=e27] [cursor=pointer]
+        - generic [ref=e30]:
+          - generic [ref=e31]:
+            - generic [ref=e32]:
+              - paragraph [ref=e33]: Start from a template
+              - paragraph [ref=e34]: Ready-made courses
+            - button "Browse all" [ref=e35] [cursor=pointer]
+          - generic [ref=e36]:
+            - article [ref=e37]:
+              - generic [ref=e38]: HSC
+              - generic [ref=e43]:
+                - heading "Agriculture" [level=3] [ref=e44]
+                - paragraph [ref=e45]: Agriculture 11–12 Syllabus (2026), to be implemented from 2028. Includes the published focus areas and depth studies.
+              - generic [ref=e46]:
+                - generic [ref=e47]: 16 topics · 4 levels
+                - button "Add template" [ref=e52] [cursor=pointer]
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Ancient History" [level=3]
+                - paragraph: NSW Stage 6 Ancient History (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 195 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Ancient History (2017)" [level=3]
+                - paragraph: NSW Stage 6 Ancient History (2017). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 218 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Biology" [level=3]
+                - paragraph: NSW Stage 6 Biology (2025). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 37 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Biology (2017)" [level=3]
+                - paragraph: NSW Stage 6 Biology (2017). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 43 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Business Studies" [level=3]
+                - paragraph: NSW Stage 6 Business Studies (2010). Preliminary and HSC syllabus topics.
+              - generic:
+                - generic: 7 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Chemistry" [level=3]
+                - paragraph: NSW Stage 6 Chemistry (2025). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 38 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Chemistry (2017)" [level=3]
+                - paragraph: NSW Stage 6 Chemistry (2017). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 44 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Chinese Beginners" [level=3]
+                - paragraph: NSW Stage 6 Chinese Beginners (2009). Topics are studied through the personal world and Chinese-speaking communities perspectives.
+              - generic:
+                - generic: 12 topics · 3 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Chinese Continuers" [level=3]
+                - paragraph: NSW Stage 6 Chinese Continuers (2009). Preliminary and HSC study develops communication through the three prescribed themes and topics.
+              - generic:
+                - generic: 18 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Chinese Extension" [level=3]
+                - paragraph: NSW Stage 6 Chinese Extension (2009), a one-unit HSC course taken with Chinese Continuers. Includes the 2026–2030 prescribed issues and text.
+              - generic:
+                - generic: 10 topics · 5 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Community and Family Studies" [level=3]
+                - paragraph: NSW Stage 6 Community and Family Studies (2022). The HSC course includes an Independent Research Project and one selected option module.
+              - generic:
+                - generic: 16 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Dance" [level=3]
+                - paragraph: Dance 11–12 Syllabus (2025), implemented from 2027. Covers performance, choreography and appreciation in both years.
+              - generic:
+                - generic: 14 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Design and Technology" [level=3]
+                - paragraph: Design and Technology Stage 6 (2013), the current syllabus while a replacement is in development.
+              - generic:
+                - generic: 11 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Drama" [level=3]
+                - paragraph: Drama 11–12 Syllabus (2025), implemented from 2027. Organised around making, performing and critically reflecting.
+              - generic:
+                - generic: 18 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Earth and Environmental Science" [level=3]
+                - paragraph: Earth and Environmental Science Stage 6 (2017), taught until the 2025 syllabus is implemented from 2028.
+              - generic:
+                - generic: 17 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Economics" [level=3]
+                - paragraph: NSW Stage 6 Economics (2025). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 45 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Economics (2011)" [level=3]
+                - paragraph: NSW Stage 6 Economics (2011). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 50 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Engineering Studies" [level=3]
+                - paragraph: Engineering Studies Stage 6 (current syllabus; new syllabus in development). Preliminary and HSC engineering application and focus modules.
+              - generic:
+                - generic: 18 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "English Advanced" [level=3]
+                - paragraph: NSW Stage 6 English Advanced (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 25 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "English EAL/D" [level=3]
+                - paragraph: English EAL/D 11–12 (2024), implemented from 2026. Year 11 and Year 12 focus areas.
+              - generic:
+                - generic: 15 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "English Extension" [level=3]
+                - paragraph: NSW Stage 6 English Extension (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 16 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "English Standard" [level=3]
+                - paragraph: NSW Stage 6 English Standard (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 23 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "English Studies" [level=3]
+                - paragraph: NSW Stage 6 English Studies (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 56 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Enterprise Computing" [level=3]
+                - paragraph: NSW Stage 6 Enterprise Computing (2022). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 24 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Food Technology" [level=3]
+                - paragraph: Food Technology Stage 6 (2013), the current syllabus while a replacement is in development.
+              - generic:
+                - generic: 16 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "French Beginners" [level=3]
+                - paragraph: NSW Stage 6 French Beginners (2009). Topics are studied through the personal world and French communities perspectives.
+              - generic:
+                - generic: 12 topics · 3 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "French Continuers" [level=3]
+                - paragraph: NSW Stage 6 French Continuers (2009). Preliminary and HSC study develops communication through the three prescribed themes and topics.
+              - generic:
+                - generic: 22 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "French Extension" [level=3]
+                - paragraph: NSW Stage 6 French Extension (2009), a one-unit HSC course taken with French Continuers. Includes the 2025–2030 prescribed issues and song texts.
+              - generic:
+                - generic: 19 topics · 5 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Geography" [level=3]
+                - paragraph: NSW Stage 6 Geography (2022). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 44 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Health and Movement Science" [level=3]
+                - paragraph: NSW Health and Movement Science 11–12 (2023). Current course replacing PDHPE, with depth studies and a Year 11 collaborative investigation.
+              - generic:
+                - generic: 20 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Hospitality" [level=3]
+                - paragraph: NSW Hospitality Curriculum Framework (SITv3, 2026 HSC and beyond). Includes the mandatory content and both HSC streams; choose the stream and units that match your qualification pathway.
+              - generic:
+                - generic: 22 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Industrial Technology" [level=3]
+                - paragraph: NSW Stage 6 Industrial Technology (2013). Choose one of six focus areas. The HSC course includes a major project and industry study.
+              - generic:
+                - generic: 29 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Investigating Science" [level=3]
+                - paragraph: Investigating Science Stage 6 (2017). The course develops scientific investigation, evidence evaluation and communication.
+              - generic:
+                - generic: 17 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Italian Beginners" [level=3]
+                - paragraph: NSW Stage 6 Italian Beginners (2009). Topics are studied through the personal world and Italian communities perspectives.
+              - generic:
+                - generic: 12 topics · 3 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Italian Continuers" [level=3]
+                - paragraph: NSW Stage 6 Italian Continuers (2009). Preliminary and HSC study develops communication through the three prescribed themes and topics.
+              - generic:
+                - generic: 22 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Italian Extension" [level=3]
+                - paragraph: NSW Stage 6 Italian Extension (2009), a one-unit HSC course taken with Italian Continuers. Includes the 2025–2030 prescribed issues and text.
+              - generic:
+                - generic: 11 topics · 5 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Legal Studies" [level=3]
+                - paragraph: NSW Stage 6 Legal Studies (2025). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 70 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Legal Studies (2009)" [level=3]
+                - paragraph: NSW Stage 6 Legal Studies (2009). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 39 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Mathematics Advanced" [level=3]
+                - paragraph: NSW Stage 6 Mathematics Advanced (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 52 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Mathematics Extension 1" [level=3]
+                - paragraph: NSW Stage 6 Mathematics Extension 1 (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 30 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Mathematics Extension 2" [level=3]
+                - paragraph: NSW Stage 6 Mathematics Extension 2 (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 18 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Mathematics Standard" [level=3]
+                - paragraph: NSW Stage 6 Mathematics Standard (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 53 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Modern History" [level=3]
+                - paragraph: NSW Stage 6 Modern History (2024). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 164 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Modern History (2017)" [level=3]
+                - paragraph: NSW Stage 6 Modern History (2017). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 191 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Music 1" [level=3]
+                - paragraph: NSW Stage 6 Music 1 (2025). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 26 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Music 1 (2010)" [level=3]
+                - paragraph: NSW Stage 6 Music 1 (2010). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 73 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Music 2" [level=3]
+                - paragraph: NSW Stage 6 Music 2 (2025). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 26 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Music 2 (2010)" [level=3]
+                - paragraph: NSW Stage 6 Music 2 (2010). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 54 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Physics" [level=3]
+                - paragraph: NSW Stage 6 Physics (2025). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 40 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Physics (2017)" [level=3]
+                - paragraph: NSW Stage 6 Physics (2017). Year 11 and Year 12 syllabus modules and their topics.
+              - generic:
+                - generic: 43 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Studies of Religion I" [level=3]
+                - paragraph: NSW Stage 6 Studies of Religion I (2009), a one-unit course. Select two religious traditions for the tradition studies.
+              - generic:
+                - generic: 15 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Studies of Religion II" [level=3]
+                - paragraph: NSW Stage 6 Studies of Religion II (2009), a two-unit course. Select three religious traditions for the tradition studies.
+              - generic:
+                - generic: 26 topics · 4 levels
+                - button "Add template"
+            - article:
+              - generic: HSC
+              - generic:
+                - heading "Visual Arts" [level=3]
+                - paragraph: NSW Stage 6 Visual Arts (2016). Organised around artmaking, art criticism and art history; the HSC course includes a body of work and at least five case studies.
+              - generic:
+                - generic: 17 topics · 4 levels
+                - button "Add template"
+          - generic [ref=e53]:
+            - button "Go to template 1" [ref=e54]
+            - button "Go to template 2" [ref=e55]
+            - button "Go to template 3" [ref=e56]
+            - button "Go to template 4" [ref=e57]
+            - button "Go to template 5" [ref=e58]
+            - button "Go to template 6" [ref=e59]
+            - button "Go to template 7" [ref=e60]
+            - button "Go to template 8" [ref=e61]
+            - button "Go to template 9" [ref=e62]
+            - button "Go to template 10" [ref=e63]
+            - button "Go to template 11" [ref=e64]
+            - button "Go to template 12" [ref=e65]
+            - button "Go to template 13" [ref=e66]
+            - button "Go to template 14" [ref=e67]
+            - button "Go to template 15" [ref=e68]
+            - button "Go to template 16" [ref=e69]
+            - button "Go to template 17" [ref=e70]
+            - button "Go to template 18" [ref=e71]
+            - button "Go to template 19" [ref=e72]
+            - button "Go to template 20" [ref=e73]
+            - button "Go to template 21" [ref=e74]
+            - button "Go to template 22" [ref=e75]
+            - button "Go to template 23" [ref=e76]
+            - button "Go to template 24" [ref=e77]
+            - button "Go to template 25" [ref=e78]
+            - button "Go to template 26" [ref=e79]
+            - button "Go to template 27" [ref=e80]
+            - button "Go to template 28" [ref=e81]
+            - button "Go to template 29" [ref=e82]
+            - button "Go to template 30" [ref=e83]
+            - button "Go to template 31" [ref=e84]
+            - button "Go to template 32" [ref=e85]
+            - button "Go to template 33" [ref=e86]
+            - button "Go to template 34" [ref=e87]
+            - button "Go to template 35" [ref=e88]
+            - button "Go to template 36" [ref=e89]
+            - button "Go to template 37" [ref=e90]
+            - button "Go to template 38" [ref=e91]
+            - button "Go to template 39" [ref=e92]
+            - button "Go to template 40" [ref=e93]
+            - button "Go to template 41" [ref=e94]
+            - button "Go to template 42" [ref=e95]
+            - button "Go to template 43" [ref=e96]
+            - button "Go to template 44" [ref=e97]
+            - button "Go to template 45" [ref=e98]
+            - button "Go to template 46" [ref=e99]
+            - button "Go to template 47" [ref=e100]
+            - button "Go to template 48" [ref=e101]
+            - button "Go to template 49" [ref=e102]
+            - button "Go to template 50" [ref=e103]
+            - button "Go to template 51" [ref=e104]
+            - button "Go to template 52" [ref=e105]
+            - button "Go to template 53" [ref=e106]
+            - button "Go to template 54" [ref=e107]
+      - generic [ref=e108]:
+        - generic [ref=e109]:
+          - generic [ref=e114]:
+            - heading "Try a sample course" [level=2] [ref=e115]
+            - paragraph [ref=e116]: Five example questions to practise on, so you can try the flow before your own questions are ready.
+          - paragraph [ref=e117]: "Disposable: it is a separate course you can remove in one click, and it never mixes with your own work."
+          - button "Add the sample course" [ref=e119] [cursor=pointer]
+        - generic [ref=e120]:
+          - generic [ref=e127]:
+            - heading "Bring in questions" [level=2] [ref=e128]
+            - paragraph [ref=e129]: Open a .qb course bundle exported from Quaestio, questions and images included.
+          - paragraph [ref=e130]: If you have loose question files (JSON) rather than a .qb bundle, create a course first and import them there.
+          - button "Choose a .qb file" [ref=e132] [cursor=pointer]
+        - generic [ref=e133]:
+          - generic [ref=e137]:
+            - heading "Create a course" [level=2] [ref=e138]
+            - paragraph [ref=e139]: Name your subject and its levels, then add or import questions.
+          - paragraph [ref=e140]: Two or three questions is enough to start practising — you do not need a full bank.
+          - button "Set up a course" [ref=e142] [cursor=pointer]
+        - generic [ref=e143]:
+          - generic [ref=e149]:
+            - heading "Start from study material" [level=2] [ref=e150]
+            - paragraph [ref=e151]: Turn notes or a worked example into draft questions, each one linked to the passage it came from.
+          - paragraph [ref=e152]: Not built yet. When it arrives nothing leaves this device, drafts need your approval before they enter the bank, and you will be told what happens to the material you paste in.
+          - generic [ref=e153]:
+            - button "Not available yet" [disabled]
+      - generic [ref=e154]:
+        - generic [ref=e161]:
+          - heading "Keep things organised" [level=2] [ref=e162]
+          - paragraph [ref=e163]: Group questions by course, topic, and learning goal.
+        - generic [ref=e168]:
+          - heading "Build your question bank" [level=2] [ref=e169]
+          - paragraph [ref=e170]: Bring existing questions in or create new ones.
+        - generic [ref=e179]:
+          - heading "Learn actively" [level=2] [ref=e180]
+          - paragraph [ref=e181]: Practise one question properly, then let the queue bring it back.

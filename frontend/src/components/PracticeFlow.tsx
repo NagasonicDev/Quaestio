@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Check, Eye, Lightbulb, Timer, FileText } from "lucide-react";
 import type { Confidence, ContentBlock, Question, SelfRating } from "../api/types";
-import { BlockList, MarkingGuideTable, QuestionReader } from "./QuestionReader";
+import { BlockList, MarkingGuideTable, QuestionPartReveal, QuestionReader } from "./QuestionReader";
+import { flattenQuestionParts } from "../lib/questionParts";
 import { Meta, Panel } from "./system";
 import { Button } from "./ui/button";
 import { QuestionAnswerInput } from "./QuestionAnswerInput";
@@ -126,13 +127,6 @@ function buildHintSteps(question: Question): ContentBlock[][] {
     },
   ]);
   return steps;
-}
-
-function flattenQuestionParts(parts: Question[], prefix = ""): Array<{ part: Question; label: string }> {
-  return parts.flatMap((part) => {
-    const label = [prefix, part.part_label ? `(${part.part_label})` : "Part"].filter(Boolean).join(" ");
-    return [{ part, label }, ...flattenQuestionParts(part.parts, label)];
-  });
 }
 
 function RevealSection({
@@ -259,6 +253,7 @@ export function PracticeFlow({
   const canAttempt = !isMcq || selectedChoice != null;
 
   return (
+    <>
     <Panel className="overflow-hidden">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border px-5 py-3">
         <div className="flex flex-wrap items-center gap-3">
@@ -314,7 +309,7 @@ export function PracticeFlow({
         image={responseImage}
         onTextChange={setResponse}
         onImageChange={setResponseImage}
-        disabled={stage !== "prompt"}
+              disabled={stage !== "prompt"}
         captureResponse={captureResponse}
         notebookOnly={isMcq}
         placeholder="Write your answer here. It is kept on this device only, and you can turn saving off in settings."
@@ -367,7 +362,9 @@ export function PracticeFlow({
             </p>
             <Button
               disabled={!canAttempt || busy}
-              onClick={() => run(() => callbacks.onConfirmAttempt(draft()))}
+              onClick={() => run(async () => {
+                await callbacks.onConfirmAttempt(draft());
+              })}
             >
               <Check />
               {isMcq ? "Check my answer" : "I've attempted this"}
@@ -406,6 +403,7 @@ export function PracticeFlow({
 
       {stage !== "prompt" && (
         <div className="border-t border-border">
+
           {question.marking_criteria.length > 0 && (
             <RevealSection
               n="01"
@@ -464,42 +462,32 @@ export function PracticeFlow({
                 part.solution.length > 0
             )
             .map(({ part, label }) => (
-              <section key={part.question_id} className="border-t border-border px-5 py-5 sm:px-6">
-                <h3 className="font-display font-semibold">
-                  Part {label}
-                  {part.marks != null && (
-                    <span className="ml-2 font-sans text-sm font-normal text-muted-foreground">
-                      [{part.marks} marks]
-                    </span>
-                  )}
-                </h3>
-                <div className="mt-3 space-y-4">
-                  {part.marking_criteria.length > 0 && (
-                    <div>
-                      <h4 className="font-display font-semibold">Marking guide</h4>
-                      <div className="mt-1.5">
-                        <MarkingGuideTable blocks={part.marking_criteria} />
-                      </div>
+              <QuestionPartReveal key={part.question_id} label={label} marks={part.marks}>
+                {part.marking_criteria.length > 0 && (
+                  <div>
+                    <h4 className="font-display font-semibold">Marking guide</h4>
+                    <div className="mt-1.5">
+                      <MarkingGuideTable blocks={part.marking_criteria} />
                     </div>
-                  )}
-                  {part.answer.length > 0 && (
-                    <div>
-                      <h4 className="font-display font-semibold">Answer</h4>
-                      <div className="mt-1.5">
-                        <BlockList blocks={part.answer} />
-                      </div>
+                  </div>
+                )}
+                {part.answer.length > 0 && (
+                  <div>
+                    <h4 className="font-display font-semibold">Answer</h4>
+                    <div className="mt-1.5">
+                      <BlockList blocks={part.answer} />
                     </div>
-                  )}
-                  {part.solution.length > 0 && (
-                    <div>
-                      <h4 className="font-display font-semibold">Worked solution</h4>
-                      <div className="mt-1.5">
-                        <BlockList blocks={part.solution} />
-                      </div>
+                  </div>
+                )}
+                {part.solution.length > 0 && (
+                  <div>
+                    <h4 className="font-display font-semibold">Worked solution</h4>
+                    <div className="mt-1.5">
+                      <BlockList blocks={part.solution} />
                     </div>
-                  )}
-                </div>
-              </section>
+                  </div>
+                )}
+              </QuestionPartReveal>
             ))}
 
           {stage === "feedback" && (
@@ -552,5 +540,6 @@ export function PracticeFlow({
         stimulus={openStimulus}
       />
     </Panel>
+    </>
   );
 }

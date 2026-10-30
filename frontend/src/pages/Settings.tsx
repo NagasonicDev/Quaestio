@@ -9,7 +9,7 @@ import { PageHeader, Panel } from "../components/system";
 import { Switch } from "../components/ui/switch";
 import { Button } from "../components/ui/button";
 import { useConfirm } from "../components/ui/modal";
-import { clearAllData } from "../lib/db/sqlite";
+import { clearAllData, flush } from "../lib/db/sqlite";
 import { clearQuestions } from "../lib/data";
 import { describeStoragePersistence, requestPersistentStorage } from "../lib/storage";
 import { api } from "../api/client";
@@ -91,6 +91,11 @@ export function Settings() {
          </div>
        </Panel>
 
+       <Panel>
+         <div className="p-5 text-sm text-muted-foreground">
+         </div>
+       </Panel>
+
        <StudySettings courseId={courseId} />
 
       <InstitutionManager courseId={courseId} />
@@ -116,7 +121,7 @@ export function Settings() {
                   key={l.level_index}
                   className="rounded-md bg-secondary px-2.5 py-1.5 text-xs"
                 >
-                  <span className="mr-2 font-mono text-muted-foreground">{`0${i + 1}`}</span>
+                  <span className="mr-2 font-mono text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
                   {l.label}
                 </span>
               ))}
@@ -126,9 +131,9 @@ export function Settings() {
       </Panel>
 
       <p className="text-xs text-muted-foreground">
-        Appearance, the review schedule, and what practice keeps are above. Nothing here talks to the
-        network — this app runs entirely in the browser, so there is no account to configure and no
-        sync to wait for.
+        Appearance, the review schedule, and what practice keeps are above. Your course data stays on
+        this device and is never shared; the app may send anonymous usage statistics, but there is no
+        account to configure and no sync to wait for.
       </p>
 
       <Panel>
@@ -138,7 +143,8 @@ export function Settings() {
               <p className="font-medium text-destructive">Clear questions</p>
               <p className="mt-1 text-sm text-muted-foreground">
                 Deletes all questions, images, practice history, imports and generated tests. Course
-                structure and settings stay untouched.
+                structure and settings stay untouched. Export a backup first if you might want to keep
+                them.
               </p>
             </div>
             <Button
@@ -154,6 +160,7 @@ export function Settings() {
                 if (!ok) return;
                 try {
                   await clearQuestions();
+                  await flush();
                   window.location.reload();
                 } catch (err) {
                   notify("Could not clear questions", "error", err instanceof Error ? err.message : String(err));
@@ -168,8 +175,8 @@ export function Settings() {
             <div>
               <p className="font-medium text-destructive">Clear everything</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Deletes all local data, including courses, course structure, questions and files.
-                This cannot be undone.
+                Deletes all local data, including courses, course structure, questions and files. This
+                cannot be undone. Export a backup first if you might want to keep anything.
               </p>
             </div>
             <Button

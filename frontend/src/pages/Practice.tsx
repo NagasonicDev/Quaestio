@@ -6,7 +6,7 @@ import { api } from "../api/client";
 import { useActiveCourse } from "../hooks/useActiveCourse";
 import { useCourseConfig } from "../hooks/useCourseConfig";
 import { flattenCounts } from "../components/NodeTree";
-import type { CourseNode, PracticeFilters, Question, SelfRating, SessionMode, StimulusWithContent } from "../api/types";
+import type { CourseNode, PracticeFilters, PracticeSessionSummary, Question, SelfRating, SessionMode, StimulusWithContent } from "../api/types";
 import { InkLoader, PageHeader, Panel } from "../components/system";
 import { FilterMenu } from "../components/FilterMenu";
 import { Button } from "../components/ui/button";
@@ -166,8 +166,14 @@ export function Practice() {
       setSessionNote(null);
       setMode(summary.mode);
       setSearchParams(summary.mode === "due_review" ? { mode: "due_review" } : {}, { replace: true });
-      await loadQuestion(summary.session_id, summary.next_question_id);
+      try {
+        await loadQuestion(summary.session_id, summary.next_question_id);
+      } catch (e) {
+        notify("Could not load question", "error", e instanceof Error ? e.message : "Could not load that question.");
+      }
     },
+    onError: (e) =>
+      notify("Could not start session", "error", e instanceof Error ? e.message : "Could not start that session."),
   });
 
   const loadQuestion = useCallback(
@@ -211,13 +217,25 @@ export function Practice() {
     mutationFn: (id: string) => api.resetPracticeSession(id),
     onSuccess: async (summary) => {
       invalidate();
-      if (summary) await loadQuestion(summary.session_id, summary.next_question_id);
+      if (summary) {
+        try {
+          await loadQuestion(summary.session_id, summary.next_question_id);
+        } catch (e) {
+          notify("Could not load question", "error", e instanceof Error ? e.message : "Could not load that question.");
+        }
+      }
     },
   });
 
   const advance = useCallback(async () => {
     if (!sessionId) return;
-    const summary = await api.getPracticeSession(sessionId);
+    let summary: PracticeSessionSummary | null = null;
+    try {
+      summary = await api.getPracticeSession(sessionId);
+    } catch (e) {
+      notify("Could not load session", "error", e instanceof Error ? e.message : "Could not load that session.");
+      return;
+    }
     if (!summary) {
       setCurrent(null);
       return;
@@ -233,7 +251,11 @@ export function Practice() {
       invalidate();
       return;
     }
-    await loadQuestion(sessionId, summary.next_question_id);
+    try {
+      await loadQuestion(sessionId, summary.next_question_id);
+    } catch (e) {
+      notify("Could not load question", "error", e instanceof Error ? e.message : "Could not load that question.");
+    }
   }, [sessionId, loadQuestion, invalidate]);
 
   const onConfirmAttempt = useCallback(
@@ -318,6 +340,7 @@ export function Practice() {
   }
 
   const pool = session?.pool;
+  const matchCount = pool?.filter_match_count ?? counts?.total ?? 0;
   const exhausted = !!pool && pool.eligible_count === 0 && !!session && session.status === "active";
   const dueTotal = queue?.due_count ?? 0;
 
@@ -330,8 +353,7 @@ export function Practice() {
         actions={
           <>
             <div className="rounded-md bg-secondary px-3 py-2 font-mono text-xs">
-              <strong>{pool?.filter_match_count ?? counts?.total ?? 0}</strong> match
-              {pool?.filter_match_count === 1 ? "es" : ""}
+              <strong>{matchCount}</strong> {matchCount === 1 ? "match" : "matches"}
             </div>
             <div data-tour="practice-filters">
               <FilterMenu

@@ -131,7 +131,7 @@ export function Modal({
   return createPortal(
     <div className="fixed inset-0 z-50 overflow-y-auto">
       <div
-        className="absolute inset-0 bg-foreground/25 backdrop-blur-[2px] animate-in fade-in-0"
+        className="absolute inset-0 bg-foreground/25 animate-in fade-in-0"
         aria-hidden
         onClick={onCloseDisabled ? undefined : onClose}
       />
@@ -145,7 +145,7 @@ export function Modal({
           aria-describedby={descriptionId}
           tabIndex={-1}
           className={cn(
-            "panel flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden animate-in fade-in-0 zoom-in-95 duration-200",
+            "panel flex max-h-[85vh] w-full max-w-3xl flex-col overflow-hidden animate-in fade-in-0 duration-150",
             className
           )}
         >

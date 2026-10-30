@@ -48,8 +48,11 @@ export async function ensureTestFileUrl(testId: string, which: TestFile): Promis
   return url;
 }
 
-export function testFileUrlSync(testId: string, which: TestFile): string | null {
-  return urlCache.get(key(testId, which)) ?? null;
+export function clearTestUrlCache(): void {
+  for (const url of urlCache.values()) {
+    try { URL.revokeObjectURL(url); } catch { /* ignore */ }
+  }
+  urlCache.clear();
 }
 
 function triggerDownload(blob: Blob, filename: string): void {

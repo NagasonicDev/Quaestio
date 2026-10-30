@@ -49,6 +49,35 @@ export default defineConfig({
     // The course skill ZIP includes shared helper sources from ../scripts.
     fs: { allow: [repositoryRoot] },
   },
+  optimizeDeps: {
+    noDiscovery: true,
+    exclude: ["sql.js"],
+    include: [
+      "react",
+      "react-dom",
+      "react-dom/client",
+      "react-router",
+      "react-router-dom",
+      "@tanstack/react-query",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-select",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "class-variance-authority",
+      "clsx",
+      "docx",
+      "function-plot",
+      "html-to-image",
+      "html2canvas",
+      "jspdf",
+      "jszip",
+      "katex",
+      "lucide-react",
+      "react-katex",
+      "tailwind-merge",
+    ],
+  },
   build: {
     // The backend serves this build directly and already uses /assets/ for
     // uploaded question images/diagrams — rename Vite's own bundle output

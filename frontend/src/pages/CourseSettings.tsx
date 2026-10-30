@@ -158,7 +158,7 @@ export function CourseSettings() {
     try {
       await api.deleteCourse(config.course_id, () => {
         deleted = true;
-        qc.removeQueries({ predicate: (query) => query.queryKey.includes(config.course_id) });
+        qc.removeQueries({ predicate: (query) => Array.isArray(query.queryKey) && query.queryKey.length >= 2 && query.queryKey[1] === config.course_id });
         qc.setQueryData<Course[]>(["courses"], (courses) =>
           courses?.filter((course) => course.course_id !== config.course_id)
         );

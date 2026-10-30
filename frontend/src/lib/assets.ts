@@ -178,51 +178,116 @@ export async function deleteUnreferencedAssetBlob(assetId: string): Promise<void
   await idb.deleteAsset(assetId);
 }
 
-/** Find which candidate blobs are no longer referenced, scanning stored content once. */
+/** All asset ids still referenced anywhere in course content, in a single pass. */
+export async function referencedAssetIds(): Promise<Set<string>> {
+  const used = new Set<string>();
+  const [blockRows, optionRows, stimulusRows] = await Promise.all([
+    all<{ content_json: string }>("SELECT content_json FROM content_block WHERE block_type IN ('image', 'diagram', 'graph')"),
+    all<{ content_json: string }>("SELECT content_json FROM mcq_option"),
+    all<{ content_json: string }>("SELECT content_json FROM stimulus_block"),
+  ]);
+  const discardCollect = (value: unknown) => {
+    if (typeof value !== "string") return;
+    used.add(value);
+  };
+  for (const row of blockRows) {
+    try { discardCollect(JSON.parse(row.content_json)?.asset_path); } catch { /* malformed JSON — skip */ }
+  }
+  for (const row of optionRows) {
+    try {
+      const parsed = JSON.parse(row.content_json);
+      for (const block of Array.isArray(parsed) ? parsed : [parsed]) discardCollect(block?.content?.asset_path);
+    } catch { /* malformed JSON — skip */ }
+  }
+  for (const row of stimulusRows) {
+    try {
+      const parsed = JSON.parse(row.content_json);
+      if (Array.isArray(parsed)) {
+        for (const block of parsed) discardCollect(block?.content?.asset_path ?? block?.asset_path);
+      } else {
+        discardCollect(parsed?.asset_path ?? parsed?.content?.asset_path);
+      }
+    } catch { /* malformed JSON — skip */ }
+  }
+  return used;
+}
 export async function findUnreferencedAssetIds(assetIds: Iterable<string>): Promise<string[]> {
   const unreferenced = new Set(assetIds);
   if (!unreferenced.size) return [];
-  const [blocks, options] = await Promise.all([
+  const [blocks, options, stimuli] = await Promise.all([
     all<{ content_json: string }>("SELECT content_json FROM content_block WHERE block_type IN ('image', 'diagram', 'graph')"),
     all<{ content_json: string }>("SELECT content_json FROM mcq_option"),
+    all<{ content_json: string }>("SELECT content_json FROM stimulus_block"),
   ]);
+  const discard = (path: unknown) => {
+    if (typeof path === "string") unreferenced.delete(path);
+  };
   for (const row of blocks) {
-    try {
-      const path = JSON.parse(row.content_json)?.asset_path;
-      if (typeof path === "string") unreferenced.delete(path);
-    } catch { /* malformed JSON — skip */ }
+    try { discard(JSON.parse(row.content_json)?.asset_path); } catch { /* malformed JSON — skip */ }
   }
   for (const row of options) {
     try {
       const parsed = JSON.parse(row.content_json);
-      for (const block of Array.isArray(parsed) ? parsed : [parsed]) {
-        const path = block?.content?.asset_path;
-        if (typeof path === "string") unreferenced.delete(path);
+      for (const block of Array.isArray(parsed) ? parsed : [parsed]) discard(block?.content?.asset_path);
+    } catch { /* malformed JSON — skip */ }
+  }
+  for (const row of stimuli) {
+    try {
+      const parsed = JSON.parse(row.content_json);
+      if (Array.isArray(parsed)) {
+        for (const block of parsed) discard(block?.content?.asset_path);
+      } else {
+        discard(parsed?.asset_path ?? parsed?.content?.asset_path);
       }
     } catch { /* malformed JSON — skip */ }
   }
   return [...unreferenced];
 }
 
-/** Clean up blobs written for a failed import. Only removes ids no question
- *  claimed, so a partially-imported course keeps its images. */
+export function clearAssetUrlCache(): void {
+  for (const url of urlCache.values()) {
+    try { URL.revokeObjectURL(url); } catch { /* ignore */ }
+  }
+  urlCache.clear();
+}
 export async function countAssetReferences(assetId: string): Promise<number> {
-  // Get all question_ids that reference this asset in content blocks
-  const sql = `
-    SELECT DISTINCT q.question_id
-    FROM question q
-    LEFT JOIN content_block cb ON cb.question_id = q.question_id
-    WHERE cb.block_type IN ('image', 'diagram', 'graph')
-    AND cb.content_json LIKE '%' || ? || '%'
-    UNION
-    SELECT DISTINCT q.question_id
-    FROM question q
-    LEFT JOIN mcq_option mcq ON mcq.question_id = q.question_id
-    WHERE mcq.content_json LIKE '%' || ? || '%'
-  `;
-
-  const results = await all<{ question_id: string }>(sql, [assetId, assetId]);
-  return results.length;
+  // Count questions that still reference this asset, parsing content instead of
+  // treating the asset id as a SQL substring.
+  const [blockRows, optionRows, stimulusRows] = await Promise.all([
+    all<{ question_id: string; content_json: string }>(
+      `SELECT q.question_id, cb.content_json FROM question q
+       JOIN content_block cb ON cb.question_id = q.question_id
+       WHERE cb.block_type IN ('image', 'diagram', 'graph')`
+    ),
+    all<{ question_id: string; content_json: string }>(
+      `SELECT q.question_id, mo.content_json FROM question q
+       JOIN mcq_option mo ON mo.question_id = q.question_id`
+    ),
+    all<{ content_json: string }>("SELECT content_json FROM stimulus_block"),
+  ]);
+  const questions = new Set<string>();
+  for (const row of blockRows) {
+    try {
+      if (JSON.parse(row.content_json)?.asset_path === assetId) questions.add(row.question_id);
+    } catch { /* malformed JSON - skip */ }
+  }
+  for (const row of optionRows) {
+    try {
+      const parsed = JSON.parse(row.content_json);
+      const blocks = Array.isArray(parsed) ? parsed : [parsed];
+      if (blocks.some((block: any) => block?.content?.asset_path === assetId)) questions.add(row.question_id);
+    } catch { /* malformed JSON - skip */ }
+  }
+  // A stimulus reference does not belong to a question, but still keeps the blob.
+  let stimulusRefs = 0;
+  for (const row of stimulusRows) {
+    try {
+      const parsed = JSON.parse(row.content_json);
+      const blocks = Array.isArray(parsed) ? parsed : [parsed];
+      if (blocks.some((block: any) => block?.asset_path === assetId || block?.content?.asset_path === assetId)) stimulusRefs += 1;
+    } catch { /* malformed JSON - skip */ }
+  }
+  return questions.size + stimulusRefs;
 }
 
 export async function deleteUnclaimedAssetBlobs(assetIds: string[]): Promise<void> {

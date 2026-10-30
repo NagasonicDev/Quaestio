@@ -336,11 +336,11 @@ function TourOverlay({
               width: rect.width + 12,
               height: rect.height + 12,
               boxShadow:
-                "0 0 0 2px #4ade80, 0 0 0 9999px rgba(2, 6, 23, 0.55)",
+                "0 0 0 2px var(--accent-foreground), 0 0 0 9999px color-mix(in srgb, var(--foreground) 45%, transparent)",
             }}
           />
         ) : (
-          <div className="absolute inset-0 bg-slate-950/55" />
+          <div className="absolute inset-0 bg-foreground/50" />
         )}
       </div>
 

@@ -2,6 +2,13 @@ import type { DrawingNotebook, DrawingPage } from "../api/types";
 export type { DrawingNotebook, DrawingPage, DrawingPoint, DrawingStroke, DrawingTool } from "../api/types";
 
 export const MAX_DRAWING_NOTEBOOK_PAGES = 12;
+/** Pages marked per submission; mirrors the hosted daily page allowance. */
+export const MAX_MARKING_IMAGE_PAGES = 5;
+
+/** Only pages the student actually wrote on. Fully erased pages have no strokes. */
+export function touchedDrawingPages(notebook: DrawingNotebook, limit = MAX_MARKING_IMAGE_PAGES): DrawingPage[] {
+  return notebook.pages.filter((page) => page.strokes.length > 0).slice(0, limit);
+}
 
 export function validateDrawingPage(questionId: string, page: DrawingPage): void {
   if (!questionId || page.question_id !== questionId || !page.page_id || !page.title.trim()) {

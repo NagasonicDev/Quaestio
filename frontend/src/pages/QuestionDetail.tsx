@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, Eye, Pencil } from "lucide-react";
 import { api } from "../api/client";
@@ -14,18 +14,43 @@ import type { Question } from "../api/types";
 
 export function QuestionDetail() {
   const { questionId } = useParams<{ questionId: string }>();
-  const [showAnswer, setShowAnswer] = useState(false);
+  const [searchParams] = useSearchParams();
+  const [showAnswer, setShowAnswer] = useState(() => searchParams.get("revealed") === "1");
   const [isEditing, setIsEditing] = useState(false);
   const queryClient = useQueryClient();
 
-  const { data: question, isLoading } = useQuery({
+  const { data: question, isLoading, isError, error, refetch } = useQuery({
     queryKey: ["question", questionId],
     queryFn: () => api.getQuestion(questionId as string),
     enabled: !!questionId,
   });
 
-  if (isLoading) return <div className="panel grid min-h-64 place-items-center p-8"><LoadingState /></div>;
-  if (!question) return <p className="text-sm text-muted-foreground">Question not found.</p>;
+  const { data: attempts } = useQuery({
+    queryKey: ["question-attempts", questionId],
+    queryFn: () => api.questionAttempts(questionId as string, 20),
+    enabled: !!questionId,
+  });
+  useEffect(() => {
+    const status = attempts?.[0]?.status;
+    if (status === "revealed" || status === "reviewed") {
+      setShowAnswer(true);
+    }
+  }, [attempts]);
+  if (isLoading) return <div className="panel grid min-h-64 place-items-center p-8" role="status"><LoadingState /></div>;
+  if (isError) {
+    const notFound = /not found/i.test(error instanceof Error ? error.message : String(error ?? ""));
+    if (notFound) return <div className="panel grid min-h-64 place-items-center p-8"><p className="text-sm text-muted-foreground">Question not found.</p></div>;
+    return (
+      <div className="panel grid min-h-64 place-items-center gap-3 p-8 text-center" role="alert">
+        <p className="font-display text-lg font-semibold">Couldn't load question</p>
+        <p className="text-sm text-muted-foreground">
+          {error instanceof Error ? error.message : "The question didn't load."}
+        </p>
+        <Button variant="outline" onClick={() => void refetch()}>Retry</Button>
+      </div>
+    );
+  }
+  if (!question) return <div className="panel grid min-h-64 place-items-center p-8"><p className="text-sm text-muted-foreground">Question not found.</p></div>;
 
   if (isEditing) {
     return <QuestionEditView question={question} onCancel={() => setIsEditing(false)} onSaved={() => {

@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { ChevronRight } from "lucide-react";
 import { InlineMath, BlockMath } from "react-katex";
 import "katex/dist/katex.min.css";
 import type { ContentBlock, Question } from "../api/types";
@@ -7,6 +8,7 @@ import { formatQuestionType } from "../lib/questionTypes";
 import { Meta, Panel } from "./system";
 import { MathText, normalizeEquationLatex } from "./MathText";
 import { FunctionGraphPreview } from "./FunctionGraphPreview";
+import { flattenQuestionParts } from "../lib/questionParts";
 
 function Block({ block }: { block: ContentBlock }) {
   const c = block.content;
@@ -136,7 +138,7 @@ export function BlockList({ blocks, interactiveChoices, selectedChoice, onSelect
                   const label = match?.[1]?.toUpperCase() ?? String.fromCharCode(65 + i);
                   const chosen = selectedChoice === label;
                   const correct = correctChoice === label;
-                  const style = submitted && correct ? "border-green-600 bg-green-100 text-green-950" : submitted && chosen ? "border-red-600 bg-red-100 text-red-950" : chosen ? "border-primary bg-primary/10" : "border-border hover:border-primary/60";
+                  const style = submitted && correct ? "border-success bg-success/15 text-success" : submitted && chosen ? "border-destructive bg-destructive/15 text-destructive" : chosen ? "border-primary bg-primary/10" : "border-border hover:border-primary/60";
                   return <button key={i} type="button" disabled={submitted} onClick={() => onSelectChoice?.(label)} className={`flex items-start gap-3 rounded-md border-2 p-3 text-left transition-colors ${style}`}>
                     <span className="grid size-7 shrink-0 place-items-center rounded-full border font-mono text-xs font-semibold">{label}</span>
                     <span className="pt-0.5"><MathText text={match?.[2] ?? String(item)} /></span>
@@ -170,13 +172,6 @@ function QuestionPartTree({ parts, depth = 0 }: { parts: Question[]; depth?: num
   </div>;
 }
 
-function flattenParts(parts: Question[], prefix = ""): Array<{ part: Question; label: string }> {
-  return parts.flatMap((part) => {
-    const label = [prefix, part.part_label ? `(${part.part_label})` : "Part"].filter(Boolean).join(" ");
-    return [{ part, label }, ...flattenParts(part.parts, label)];
-  });
-}
-
 /** Renders a question's body exactly in content order, with source small and
  * secondary underneath. Answer/solution are opt-in reveals, never default. */
 export function QuestionReader({ question, selectedChoice, onSelectChoice, submitted }: { question: Question; selectedChoice?: string | null; onSelectChoice?: (choice: string) => void; submitted?: boolean }) {
@@ -192,7 +187,7 @@ export function QuestionReader({ question, selectedChoice, onSelectChoice, submi
           const label = String.fromCharCode(65 + i);
           const chosen = selectedChoice === label;
           const correct = correctChoice === label;
-          const style = submitted && correct ? "border-green-600 bg-green-100 text-green-950" : submitted && chosen ? "border-red-600 bg-red-100 text-red-950" : chosen ? "border-primary bg-primary/10" : "border-border hover:border-primary/60";
+          const style = submitted && correct ? "border-success bg-success/15 text-success" : submitted && chosen ? "border-destructive bg-destructive/15 text-destructive" : chosen ? "border-primary bg-primary/10" : "border-border hover:border-primary/60";
           const optionBlocks = option.content.map((block, j) => ({ ...block, block_id: `practice-option-${i}-${j}`, slot: "body" as const, position: j }));
           return <button key={i} type="button" disabled={submitted} onClick={() => onSelectChoice?.(label)} className={`flex w-full min-w-0 items-start gap-3 overflow-hidden rounded-md border-2 p-3 text-left transition-colors ${style}`}>
             <span className="grid size-7 shrink-0 place-items-center rounded-full border font-mono text-xs font-semibold">{label}</span>
@@ -220,11 +215,38 @@ function AnswerPart({ n, title, children }: { n: string; title: string; children
   );
 }
 
+/** One collapsed row per question part, so a long guide stays out of the way. */
+export function QuestionPartReveal({
+  label,
+  marks,
+  children,
+}: {
+  label: string;
+  marks: number | null;
+  children: ReactNode;
+}) {
+  return (
+    <details className="group border-t border-border px-6 py-4 sm:px-8">
+      <summary className="flex cursor-pointer list-none flex-wrap items-baseline gap-2 [&::-webkit-details-marker]:hidden">
+        <ChevronRight className="size-4 shrink-0 self-center text-muted-foreground transition-transform group-open:rotate-90" />
+        <span className="font-display font-semibold">Part {label}</span>
+        {marks != null && (
+          <span className="font-sans text-sm font-normal text-muted-foreground">[{marks} marks]</span>
+        )}
+        <span className="ml-auto font-mono text-[10px] uppercase tracking-wide text-muted-foreground">
+          Show marking guide
+        </span>
+      </summary>
+      <div className="mt-3 space-y-4 pl-6 text-sm leading-6 text-muted-foreground">{children}</div>
+    </details>
+  );
+}
+
 export function AnswerReveal({ question }: { question: Question }) {
   const hasMarking = question.marking_criteria.length > 0;
   const hasAnswer = question.answer.length > 0;
   const hasSolution = question.solution.length > 0;
-  const partsWithContent = flattenParts(question.parts).filter(
+  const partsWithContent = flattenQuestionParts(question.parts).filter(
     ({ part }) => part.marking_criteria.length > 0 || part.answer.length > 0 || part.solution.length > 0
   );
   if (!hasMarking && !hasAnswer && !hasSolution && partsWithContent.length === 0) {
@@ -254,32 +276,26 @@ export function AnswerReveal({ question }: { question: Question }) {
         </AnswerPart>
       )}
       {partsWithContent.map(({ part, label }) => (
-        <section key={part.question_id} className="border-t border-border px-6 py-5 sm:px-8">
-          <h3 className="mb-4 font-display text-lg font-semibold">
-            Part {label}
-            {part.marks != null && <span className="ml-2 font-sans text-sm font-normal text-muted-foreground">[{part.marks} marks]</span>}
-          </h3>
-          <div className="space-y-5">
-            {part.marking_criteria.length > 0 && (
-              <div>
-                <h4 className="font-display font-semibold">Marking guide</h4>
-                <div className="mt-2"><MarkingGuideTable blocks={part.marking_criteria} /></div>
-              </div>
-            )}
-            {part.answer.length > 0 && (
-              <div>
-                <h4 className="font-display font-semibold">Answer</h4>
-                <div className="mt-2 text-sm leading-6 text-muted-foreground"><BlockList blocks={part.answer} /></div>
-              </div>
-            )}
-            {part.solution.length > 0 && (
-              <div>
-                <h4 className="font-display font-semibold">Worked solution</h4>
-                <div className="mt-2 text-sm leading-6 text-muted-foreground"><BlockList blocks={part.solution} /></div>
-              </div>
-            )}
-          </div>
-        </section>
+        <QuestionPartReveal key={part.question_id} label={label} marks={part.marks}>
+          {part.marking_criteria.length > 0 && (
+            <div>
+              <h4 className="font-display font-semibold">Marking guide</h4>
+              <div className="mt-2"><MarkingGuideTable blocks={part.marking_criteria} /></div>
+            </div>
+          )}
+          {part.answer.length > 0 && (
+            <div>
+              <h4 className="font-display font-semibold">Answer</h4>
+              <div className="mt-2"><BlockList blocks={part.answer} /></div>
+            </div>
+          )}
+          {part.solution.length > 0 && (
+            <div>
+              <h4 className="font-display font-semibold">Worked solution</h4>
+              <div className="mt-2"><BlockList blocks={part.solution} /></div>
+            </div>
+          )}
+        </QuestionPartReveal>
       ))}
     </div>
   );
@@ -299,8 +315,7 @@ export function QuestionSurface({
   footer?: ReactNode;
   afterQuestion?: ReactNode;
   selectedChoice?: string | null;
-  onSelectChoice?: (choice: string) => void;
-}) {
+  onSelectChoice?: (choice: string) => void;}) {
   const num = question.source?.original_question_no;
   const label = num
     ? `Question ${num}`

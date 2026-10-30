@@ -64,7 +64,7 @@ export async function persistDb(bytes: Uint8Array): Promise<void> {
   const db = await getDb();
   return new Promise<void>((resolve, reject) => {
     const tx = db.transaction("kv", "readwrite");
-    tx.objectStore("kv").put(bytes.buffer.slice(0), DB_KEY);
+    tx.objectStore("kv").put(bytes.buffer.slice(bytes.byteOffset, bytes.byteOffset + bytes.byteLength), DB_KEY);
     tx.oncomplete = () => resolve();
     tx.onerror = () => reject(tx.error);
   });

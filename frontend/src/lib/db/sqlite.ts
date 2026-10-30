@@ -1,5 +1,11 @@
-import initSqlJs from "sql.js";
+import * as sqlJsModule from "sql.js";
 import type { Database } from "sql.js";
+
+// sql.js ships a UMD build whose export shape depends on the bundler; pick the
+// factory without relying on Vite optimizing sql.js.
+const initSqlJs = ((sqlJsModule as any).default ??
+  (sqlJsModule as any).Module ??
+  (sqlJsModule as any)) as (typeof import("sql.js"))["default"];
 import { SCHEMA_SQL, BUILTIN_QUESTION_TYPES, MIGRATIONS, SCHEMA_VERSION } from "./schema";
 import * as idb from "./indexeddb";
 import { isValidQuestionId, newQuestionId, nowUtc } from "../id";
@@ -133,19 +139,29 @@ function repairQuestionIds(): void {
     ["question_tag", "question_id"],
     ["mcq_option", "question_id"],
     ["asset", "question_id"],
+    ["question_review_state", "question_id"],
+    ["question_drawing_page", "question_id"],
     ["practice_attempt", "question_id"],
     ["import_question", "final_question_id"],
-  ] as const;
+  ] as const
   db.run("PRAGMA foreign_keys = OFF;");
   db.run("BEGIN;");
   try {
     for (const [oldId, newId] of replacements) {
-      const oldParam = `'${oldId.replace(/'/g, "''")}'`;
-      const newParam = `'${newId}'`;
       for (const [table, column] of references) {
-        db!.run(`UPDATE ${table} SET ${column} = ${newParam} WHERE ${column} = ${oldParam}`);
+        const stmt = db!.prepare(`UPDATE ${table} SET ${column} = ? WHERE ${column} = ?`);
+        try {
+          stmt.run([newId, oldId]);
+        } finally {
+          stmt.free();
+        }
       }
-      db!.run(`UPDATE question SET question_id = ${newParam} WHERE question_id = ${oldParam}`);
+      const qStmt = db!.prepare(`UPDATE question SET question_id = ? WHERE question_id = ?`);
+      try {
+        qStmt.run([newId, oldId]);
+      } finally {
+        qStmt.free();
+      }
     }
     const tests = db.exec("SELECT test_id, question_ids_json FROM generated_test");
     for (const [testId, rawIds] of (tests[0]?.values ?? [])) {
@@ -186,6 +202,29 @@ let persistTimer: ReturnType<typeof setTimeout> | null = null;
 let pendingPersist: Promise<void> | null = null;
 let lastFlushError: unknown = null;
 
+// Cross-tab sync: broadcast a successful persist and reload when another tab
+// has written (only if this tab has no unsaved changes of its own).
+let syncChannel: BroadcastChannel | null = null;
+if (typeof window !== "undefined" && typeof BroadcastChannel !== "undefined") {
+  try {
+    syncChannel = new BroadcastChannel("quaestio-db-sync");
+    syncChannel.onmessage = (event: MessageEvent) => {
+      const data = (event as { data?: unknown } | null)?.data;
+      if (!data || (data as { type?: unknown }).type !== "quaestio-persisted") return;
+      // If this tab has unsaved (or in-flight) work, keep it; let the user
+      // handle the conflict instead of clobbering their edits.
+      if (dirty || pendingPersist !== null) return;
+      try {
+        window.location.reload();
+      } catch {
+        /* ignore */
+      }
+    };
+  } catch {
+    syncChannel = null;
+  }
+}
+
 setPersistenceRetry(() => {
   lastFlushError = null;
   void flush().catch(() => {});
@@ -206,6 +245,15 @@ export async function flush(): Promise<void> {
     persistTimer = null;
   }
   if (!dirty || !db) return;
+  // Wait for an in-flight write so two saves cannot finish in the wrong order.
+  if (pendingPersist !== null) {
+    try {
+      await pendingPersist;
+    } catch {
+      /* retry will use the latest export below */
+    }
+  }
+  if (!dirty || !db) return;
   dirty = false;
   lastFlushError = null;
   reportSaving();
@@ -215,6 +263,13 @@ export async function flush(): Promise<void> {
   try {
     await persist;
     reportSaved(nowUtc());
+    if (syncChannel) {
+      try {
+        syncChannel.postMessage({ type: "quaestio-persisted" });
+      } catch {
+        /* ignore */
+      }
+    }
   } catch (error) {
     // Keep the image marked dirty so a retry re-exports it rather than
     // reporting a save that never happened.
@@ -256,6 +311,14 @@ export async function clearAllData(): Promise<void> {
     persistTimer = null;
   }
   await pendingPersist;
+  try {
+    const assetsMod = await import("../assets");
+    assetsMod.clearAssetUrlCache?.();
+  } catch { /* ignore */ }
+  try {
+    const testsMod = await import("../tests");
+    testsMod.clearTestUrlCache?.();
+  } catch { /* ignore */ }
   await idb.clearAllData();
   db?.close();
   db = null;
@@ -268,11 +331,11 @@ export async function clearAllData(): Promise<void> {
 // ---------- Query helpers ----------
 
 // Run a set of statements atomically (open transaction, rollback on error).
-export async function transaction(fn: (db: Database) => void): Promise<void> {
+export async function transaction(fn: (db: Database) => any): Promise<void> {
   const database = await getDb();
   database.run("BEGIN;");
   try {
-    fn(database);
+    await fn(database);
     database.run("COMMIT;");
     markDirty();
   } catch (e) {
@@ -311,7 +374,7 @@ export async function run(sql: string, params: any[] = []): Promise<void> {
     while (stmt.step()) {
       /* execute all statements */
     }
-    markDirty();
+    if (db && db.getRowsModified() > 0) markDirty();
   } finally {
     stmt.free();
   }

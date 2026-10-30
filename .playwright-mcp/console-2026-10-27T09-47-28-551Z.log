@@ -1,0 +1,1 @@
+[      51ms] [LOG] %c[Vercel Web Analytics]%c [view] http://127.0.0.1:5173/practice#/practice color: rgb(120, 120, 120) color: inherit {o: http://127.0.0.1:5173/practice#/practice, sv: 0.1.3, sdkn: @vercel/analytics/react, sdkv: 2.0.1, dp: /practice} /_vercel/insights/view @ https://va.vercel-scripts.com/v1/script.debug.js:0

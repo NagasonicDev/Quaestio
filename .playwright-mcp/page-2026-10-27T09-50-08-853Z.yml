@@ -1,0 +1,108 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "Quaestio." [ref=e6] [cursor=pointer]:
+          - /url: "#/"
+        - generic [ref=e7]:
+          - button "Saved status" [ref=e714]
+          - button "Switch to dark theme" [ref=e8] [cursor=pointer]:
+            - generic [ref=e9]: Light
+          - button "Menu" [ref=e10] [cursor=pointer]
+    - main [ref=e12]:
+      - generic [ref=e554]:
+        - generic [ref=e564]:
+          - generic [ref=e565]:
+            - paragraph [ref=e566]: Question detail
+            - heading "Question 0ZTGFI" [level=1] [ref=e568]
+            - paragraph [ref=e569]: Complete question, source record and reviewed solution.
+          - generic [ref=e570]:
+            - button "Edit question" [ref=e571] [cursor=pointer]
+            - link "Back to browser" [ref=e572] [cursor=pointer]:
+              - /url: "#/browse"
+        - generic [ref=e573]:
+          - generic [ref=e574]:
+            - generic [ref=e575]:
+              - generic [ref=e576]: Multiple Choice
+              - generic [ref=e577]: Difficulty 1
+              - generic [ref=e578]: 2 marks
+            - article [ref=e579]:
+              - paragraph [ref=e580]: Multiple Choice
+              - article [ref=e581]:
+                - paragraph [ref=e584]: You have just been shown a free-response question in a practice session. What does the app ask you to do before it shows you the marking guide?
+                - group "Answer choices" [ref=e585]:
+                  - button "A Mark it as attempted, so the app knows you tried it" [ref=e586]:
+                    - generic [ref=e587]: A
+                    - paragraph [ref=e591]: Mark it as attempted, so the app knows you tried it
+                  - button "B Nothing — read it for as long as you like" [ref=e592]:
+                    - generic [ref=e593]: B
+                    - paragraph [ref=e597]: Nothing — read it for as long as you like
+                  - button "C Rate how hard it looks before answering" [ref=e598]:
+                    - generic [ref=e599]: C
+                    - paragraph [ref=e603]: Rate how hard it looks before answering
+                  - button "D Start the timer so the app can check your speed" [ref=e604]:
+                    - generic [ref=e605]: D
+                    - paragraph [ref=e609]: Start the timer so the app can check your speed
+            - button "Show answer" [ref=e695] [cursor=pointer]
+          - generic [ref=e696]:
+            - heading "Metadata" [level=2] [ref=e697]
+            - generic [ref=e698]:
+              - generic [ref=e699]:
+                - term [ref=e700]: Type
+                - definition [ref=e701]: Multiple Choice
+              - generic [ref=e702]:
+                - term [ref=e703]: Difficulty
+                - definition [ref=e704]: "1"
+              - generic [ref=e705]:
+                - term [ref=e706]: Marks
+                - definition [ref=e707]: "2"
+              - generic [ref=e708]:
+                - term [ref=e709]: Tags
+                - definition [ref=e710]: onboarding, retrieval
+              - generic [ref=e711]:
+                - term [ref=e712]: Review status
+                - definition [ref=e713]: Approved
+      - complementary [ref=e61]:
+        - button "Recent activity 1" [ref=e75]:
+          - generic [ref=e64]: Recent activity
+          - generic [ref=e65]: "1"
+  - region "Question drawing notebook" [ref=e717]:
+    - generic [ref=e718]:
+      - generic [ref=e724]:
+        - paragraph [ref=e725]: Notebook
+        - heading "Working notebook" [level=2] [ref=e726]
+        - paragraph [ref=e727]: Shared across this question · saved on this device
+      - generic [ref=e728]:
+        - button "Saved status" [ref=e730]
+        - button "Exit expanded notebook" [ref=e733]
+    - generic [ref=e739]:
+      - toolbar "Drawing tools" [ref=e741]:
+        - button "Pen settings" [pressed] [ref=e743]:
+          - generic [ref=e746]: Pen
+        - button "Highlighter settings" [ref=e749]:
+          - generic [ref=e753]: Highlighter
+        - button "Eraser settings" [ref=e755]:
+          - generic [ref=e759]: Eraser
+        - button "Undo" [disabled] [ref=e761]
+        - button "Redo" [disabled] [ref=e765]
+        - button "Clear page" [ref=e769]
+      - generic [ref=e773]:
+        - group "Notebook pages, 2 of 12" [ref=e774]:
+          - button "Page 1, current page" [pressed] [ref=e775]: "1"
+          - button "Page 2" [ref=e776]: "2"
+          - button "Add page 3" [ref=e777]
+        - paragraph [ref=e779]: Write or sketch on the page.
+    - generic [ref=e780]:
+      - generic [ref=e781]:
+        - heading "Page 1" [level=3] [ref=e782]
+        - paragraph [ref=e783]: Page 1 of 2
+      - generic [ref=e784]:
+        - text: Paper
+        - combobox "Paper style" [ref=e785]:
+          - option "Plain"
+          - option "Ruled" [selected]
+          - option "Grid"
+          - option "Dotted"
+      - group [ref=e786]:
+        - generic "Page options" [ref=e787] [cursor=pointer]
+    - img "Drawing page. Use a pen or touch input to write or sketch." [ref=e795]

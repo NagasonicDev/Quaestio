@@ -514,7 +514,7 @@ export async function exportCourse(
   const questions = allQuestions.filter((question) =>
     (!filters.typeKeys?.length || filters.typeKeys.includes(question.type_key)) &&
     (!filters.difficulties?.length || (question.difficulty != null && filters.difficulties.includes(question.difficulty))) &&
-    (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
+    (!filters.institutions?.length || filters.institutions.includes(((question.source?.institution ?? "").trim() || (question.source?.name ?? "").trim()))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
   compactQuestionsForExport(questions);
@@ -642,7 +642,7 @@ export async function exportQuestions(courseId: string, filters: CourseExportFil
   const questions = allQuestions.filter((question) =>
     (!filters.typeKeys?.length || filters.typeKeys.includes(question.type_key)) &&
     (!filters.difficulties?.length || (question.difficulty != null && filters.difficulties.includes(question.difficulty))) &&
-    (!filters.institutions?.length || (question.source?.institution != null && filters.institutions.includes(question.source.institution))) &&
+    (!filters.institutions?.length || filters.institutions.includes(((question.source?.institution ?? "").trim() || (question.source?.name ?? "").trim()))) &&
     (!filters.tags?.length || question.tags.some((tag) => filters.tags!.includes(tag)))
   );
   compactQuestionsForExport(questions);
@@ -1013,10 +1013,9 @@ export async function applyCourseBundle(
   const src = bundle.course;
   const courseId = mode === "new" ? (requestedCourseId ?? newId("course")) : src.course_id;
   if (mode === "replace") {
-    // shortcut: the old course is deleted before the new rows are written, so a
-    // bundle that passes validation but still fails mid-insert leaves a half
-    // course. Upgrade to a single transaction if bundles ever come from an
-    // untrusted source.
+    // Replace deletes the existing course before inserting the replacement. The
+    // rollback capture/restore lives in importCourseFile; this function is not
+    // internally atomic, so callers needing safety should go through that path.
     await wipeCourseData(courseId);
   }
   onProgress?.(5);
@@ -1181,8 +1180,16 @@ export async function applyCourseBundle(
 
   const sourceAlready = new Map<string, string | null>();
   let completedQuestions = 0;
-  const questionTotal = Math.max(1, bundle.questions.length);
-  for (const q of bundle.questions) {
+  const byId = new Map(bundle.questions.map((q) => [q.question_id, q]));
+  const depthOf = (q: any, seen = new Set<string>()): number => {
+    if (!q?.parent_question_id || seen.has(q.question_id)) return 0;
+    seen.add(q.question_id);
+    const parent = byId.get(q.parent_question_id);
+    return parent ? 1 + depthOf(parent, seen) : 0;
+  };
+  const orderedQuestions = [...bundle.questions].sort((a, b) => depthOf(a) - depthOf(b));
+  const questionTotal = Math.max(1, orderedQuestions.length);
+  for (const q of orderedQuestions) {
     await insertQuestion(q, ctx, sourceAlready);
     completedQuestions++;
     onProgress?.(25 + (completedQuestions / questionTotal) * 55);
@@ -1332,13 +1339,74 @@ async function restoreStimuli(bundle: ParsedBundle, ctx: ImportCtx): Promise<voi
   }
 }
 
+async function backupCourseToBundle(courseId: string): Promise<ParsedBundle | null> {
+  // In-memory snapshot of an existing course, shaped so applyCourseBundle can
+  // re-import it. Captured before a replace-mode delete so a failed import
+  // can put the original course back.
+  const config = await data.getCourseFullConfig(courseId);
+  if (!config) return null;
+  const row = await data.getCourseRow(courseId);
+  const questions = await data.getCourseQuestions(courseId);
+  const stimuliRows = await data.listStimuliForCourse(courseId);
+  const stimuli: StimulusExport[] = [];
+  for (const s of stimuliRows) {
+    const full = await data.getStimulus(s.stimulus_id);
+    if (!full) continue;
+    stimuli.push({
+      stimulus_id: full.stimulus_id,
+      course_id: full.course_id,
+      title: full.title,
+      created_at: full.created_at,
+      updated_at: full.updated_at,
+      blocks: full.blocks.map((b) => ({
+        block_id: b.block_id,
+        position: b.position,
+        block_type: b.block_type,
+        content: b.content,
+      })),
+    });
+  }
+  const questionStimuli: QuestionStimulusLink[] = [];
+  for (const q of questions) {
+    const links = await data.getStimuliForQuestion(q.question_id);
+    for (const s of links) questionStimuli.push({ question_id: q.question_id, stimulus_id: s.stimulus_id });
+  }
+  const drawingNotebooks = await data.listDrawingNotebooksForCourse(courseId);
+  const learning = await readLearningData(courseId, true);
+  const referenced = collectReferencedAssetIdsWithStimuli(questions, stimuli);
+  const assetBlobs = new Map<string, Blob>();
+  for (const assetId of referenced) {
+    try {
+      const blob = await idb.getAsset(assetId);
+      if (blob) assetBlobs.set(assetId, blob);
+    } catch {
+      // Missing blob store: leave the asset to be restored from SQL rows.
+    }
+  }
+  return {
+    course: {
+      ...config,
+      description: row?.description ?? null,
+      subject: row?.subject ?? null,
+      curriculum: row?.curriculum ?? null,
+      version_year: row?.version_year ?? null,
+      is_sample: row?.is_sample ?? false,
+    },
+    questions,
+    assetBlobs,
+    learning,
+    stimuli,
+    question_stimuli: questionStimuli,
+    drawing_notebooks: drawingNotebooks,
+  };
+}
+
 /**
- * `onIdCollision` lets the UI ask the question in its own accessible dialog;
- * without it the browser confirm() prompt is used.
+ * `onIdCollision` lets the UI ask the question in its own accessible dialog.
  */
 export async function importCourseFile(
   file: File,
-  onIdCollision?: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">,
+  onIdCollision: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">,
   onProgress?: ExportProgress
 ): Promise<{ course_id: string; course_name: string }> {
   onProgress?.(0);
@@ -1349,17 +1417,26 @@ export async function importCourseFile(
   ]);
   let courseId: string;
   if (existing) {
-    const choice = onIdCollision
-      ? await onIdCollision({ course_id: bundle.course.course_id, course_name: bundle.course.name })
-      : window.confirm(
-          `A course with id '${bundle.course.course_id}' already exists. Replace it with the imported one, or add as a new course?`
-        )
-        ? "replace"
-        : "new";
-    courseId =
-      choice === "replace"
-        ? await applyCourseBundle(bundle, "replace", undefined, onProgress)
-        : await importAsNewCourse(bundle, onProgress);
+    const choice = await onIdCollision({ course_id: bundle.course.course_id, course_name: bundle.course.name });
+    if (choice === "replace") {
+      // Capture the original course before deletion so a failed replacement can
+      // be rolled back to it instead of leaving a half-imported course behind.
+      const backup = await backupCourseToBundle(bundle.course.course_id);
+      try {
+        courseId = await applyCourseBundle(bundle, "replace", undefined, onProgress);
+      } catch (error) {
+        const partial = await getFirst("SELECT course_id FROM course WHERE course_id = ?", [bundle.course.course_id]);
+        if (partial) {
+          try { await data.deleteCourse(bundle.course.course_id); } catch { /* ignore cleanup errors */ }
+        }
+        if (backup) {
+          try { await applyCourseBundle(backup, "replace", undefined, onProgress); } catch { /* surface original error */ }
+        }
+        throw error;
+      }
+    } else {
+      courseId = await importAsNewCourse(bundle, onProgress);
+    }
   } else {
     courseId = await importAsNewCourse(bundle, onProgress);
   }

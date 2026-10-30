@@ -729,7 +729,7 @@ export function TestGenerator() {
         </div>
         {blockingGeneration && (
           <div
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-background/95 px-5 py-10 backdrop-blur-sm"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-background px-5 py-10"
             role="status"
             aria-live="polite"
             aria-busy="true"

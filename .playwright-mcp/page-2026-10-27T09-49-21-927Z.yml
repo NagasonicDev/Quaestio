@@ -1,0 +1,46 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Quaestio." [ref=e6] [cursor=pointer]:
+        - /url: "#/"
+      - generic [ref=e7]:
+        - button "Switch to dark theme" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: Light
+        - button "Menu" [ref=e10] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: Practice
+          - heading "Practise a question" [level=1] [ref=e18]
+          - paragraph [ref=e19]: Try the question before looking at anything. Finish it by saying how it went, which is what decides when it comes back.
+        - generic [ref=e20]:
+          - generic [ref=e21]:
+            - strong [ref=e22]: "0"
+            - text: match
+          - button "Filters 1" [ref=e24] [cursor=pointer]:
+            - text: Filters
+            - generic [ref=e25]: "1"
+      - generic [ref=e28]:
+        - group "What kind of session?" [ref=e30]:
+          - generic [ref=e32]:
+            - generic [ref=e33] [cursor=pointer]:
+              - radio "Focused practice Stays with the topics and question types you picked. Good when you are working through one section." [checked] [ref=e34]
+              - generic [ref=e35]: Focused practice
+              - generic [ref=e39]: Stays with the topics and question types you picked. Good when you are working through one section.
+            - generic [ref=e40] [cursor=pointer]:
+              - radio "Mixed practice Draws from everything you picked and spreads the questions across those topics, so a large topic does not fill the whole session." [ref=e41]
+              - generic [ref=e42]: Mixed practice
+              - generic [ref=e49]: Draws from everything you picked and spreads the questions across those topics, so a large topic does not fill the whole session.
+            - generic [ref=e50]:
+              - radio "Due for review Nothing due for review yet." [disabled] [ref=e51]
+              - generic [ref=e52]: Due for review
+              - generic [ref=e57]: Nothing due for review yet.
+        - generic [ref=e58]:
+          - paragraph [ref=e59]: Questions are drawn in order and the list is kept, so a half-finished session survives a reload.
+          - generic [ref=e60]:
+            - button "Start session" [disabled]
+    - complementary [ref=e61]:
+      - button "Recent activity 0" [ref=e63]:
+        - generic [ref=e64]: Recent activity
+        - generic [ref=e65]: "0"

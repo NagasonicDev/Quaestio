@@ -18,7 +18,7 @@ export function PageHeader({
   actions?: ReactNode;
 }) {
   return (
-    <div className="mb-6 flex flex-col gap-4 rounded-2xl border border-border/80 bg-card/65 p-5 shadow-sm shadow-foreground/[0.025] backdrop-blur sm:p-6 md:flex-row md:items-end md:justify-between">
+    <div className="mb-6 flex flex-col gap-4 sm:p-0 md:flex-row md:items-end md:justify-between">
       <div className="min-w-0">
         <p className="label mb-2 inline-flex items-center gap-2"><span className="size-1.5 rounded-full bg-accent-foreground" />{eyebrow}</p>
         <h1 className="font-display text-3xl font-semibold leading-tight tracking-tight sm:text-[34px]">

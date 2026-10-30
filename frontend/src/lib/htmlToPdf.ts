@@ -38,6 +38,14 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
     const cssPageH = pageH / pageW * windowWidth;
     const paddingPx = (42 * 96) / 25.4;
     const contentHeight = cssPageH - paddingPx;
+    // Cap every image to a single printable page so a tall figure never aborts
+    // pagination (mirrors the limit already applied in splitTallSolution).
+    doc.body.querySelectorAll("img").forEach((img) => {
+      img.style.maxWidth = "100%";
+      img.style.maxHeight = `${contentHeight * 0.8}px`;
+      img.style.width = "auto";
+      img.style.objectFit = "contain";
+    });
     const sourceNodes = Array.from(doc.body.children);
     doc.body.replaceChildren();
     let currentPage: HTMLDivElement | null = null;
@@ -106,6 +114,14 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
           part.appendChild(unit);
         }
         if (contentUsed(ensurePage()) > contentHeight) {
+          const image = Array.from(unit.querySelectorAll("img"))[0];
+          if (image) {
+            image.style.maxWidth = "100%";
+            image.style.maxHeight = `${contentHeight * 0.8}px`;
+            image.style.width = "auto";
+            image.style.objectFit = "contain";
+            continue;
+          }
           throw new Error("A diagram or part of a question is taller than one printable page. Reduce its size before downloading again.");
         }
       }

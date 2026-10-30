@@ -16,6 +16,8 @@ interface StructureEditorProps {
 export function StructureEditor({ config }: StructureEditorProps) {
   const qc = useQueryClient();
   const [newLevelLabel, setNewLevelLabel] = useState("");
+  const [rootDraft, setRootDraft] = useState("");
+  const [addingRoot, setAddingRoot] = useState(false);
 
   function refresh() {
     qc.invalidateQueries({ queryKey: ["course", config.course_id] });
@@ -31,9 +33,10 @@ export function StructureEditor({ config }: StructureEditorProps) {
   }
 
   async function addRootNode() {
-    const name = window.prompt(`New ${config.hierarchy[0]?.label ?? "category"} name:`);
-    if (!name?.trim()) return;
-    await api.createNode(config.course_id, { level_index: 0, name: name.trim() });
+    if (!rootDraft.trim()) return;
+    await api.createNode(config.course_id, { level_index: 0, name: rootDraft.trim() });
+    setRootDraft("");
+    setAddingRoot(false);
     refresh();
   }
 
@@ -72,10 +75,32 @@ export function StructureEditor({ config }: StructureEditorProps) {
           title={config.hierarchy[0]?.label ?? "Categories"}
           note="Rename nodes, set short codes, or add children at the next level."
           action={
-            <Button size="sm" onClick={addRootNode}>
-              <Plus />
-              Add {config.hierarchy[0]?.label ?? "category"}
-            </Button>
+            addingRoot ? (
+              <div className="flex items-center gap-1.5">
+                <Input
+                  value={rootDraft}
+                  onChange={(event) => setRootDraft(event.target.value)}
+                  onKeyDown={(event) => {
+                    if (event.key === "Enter") void addRootNode();
+                  }}
+                  placeholder={`New ${config.hierarchy[0]?.label ?? "category"} name`}
+                  className="h-8 w-44"
+                  autoFocus
+                />
+                <Button size="sm" onClick={() => void addRootNode()} disabled={!rootDraft.trim()}>
+                  <Plus />
+                  Add
+                </Button>
+                <Button size="sm" variant="ghost" onClick={() => { setAddingRoot(false); setRootDraft(""); }}>
+                  Cancel
+                </Button>
+              </div>
+            ) : (
+              <Button size="sm" onClick={() => setAddingRoot(true)}>
+                <Plus />
+                Add {config.hierarchy[0]?.label ?? "category"}
+              </Button>
+            )
           }
         />
         <div className="p-5">
@@ -140,7 +165,7 @@ function LevelRow({
 
   return (
     <div className="grid grid-cols-[30px_minmax(0,1fr)_auto] items-center gap-3 px-3 py-2">
-      <span className="font-mono text-xs text-muted-foreground">{`0${level.level_index + 1}`}</span>
+      <span className="font-mono text-xs text-muted-foreground">{String(level.level_index + 1).padStart(2, "0")}</span>
       <Input
         value={label}
         onChange={(e) => setLabel(e.target.value)}
@@ -291,6 +316,8 @@ function NodeEditRow({
   const [editing, setEditing] = useState(false);
   const [name, setName] = useState(node.name);
   const [code, setCode] = useState(node.code ?? "");
+  const [childDraft, setChildDraft] = useState("");
+  const [addingChild, setAddingChild] = useState(false);
   const nextLevel = hierarchy[node.level_index + 1];
   const index = siblings.findIndex((s) => s.node_id === node.node_id);
 
@@ -317,10 +344,10 @@ function NodeEditRow({
   }
 
   async function addChild() {
-    if (!nextLevel) return;
-    const name = window.prompt(`New ${nextLevel.label} name, under "${node.name}":`);
-    if (!name?.trim()) return;
-    await api.createNode(courseId, { level_index: nextLevel.level_index, parent_node_id: node.node_id, name: name.trim() });
+    if (!nextLevel || !childDraft.trim()) return;
+    await api.createNode(courseId, { level_index: nextLevel.level_index, parent_node_id: node.node_id, name: childDraft.trim() });
+    setChildDraft("");
+    setAddingChild(false);
     onChanged();
   }
 
@@ -410,7 +437,7 @@ function NodeEditRow({
                   type="button"
                   variant="ghost"
                   size="icon"
-                  onClick={addChild}
+                  onClick={() => setAddingChild(true)}
                   className="h-8 w-8"
                   title={`+ ${nextLevel.label}`}
                 >
@@ -444,6 +471,26 @@ function NodeEditRow({
               depth={depth + 1}
             />
           ))}
+        </div>
+      )}
+      {addingChild && nextLevel && (
+        <div className="mt-2 flex items-center gap-1.5">
+          <Input
+            value={childDraft}
+            onChange={(event) => setChildDraft(event.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") void addChild();
+            }}
+            placeholder={`New ${nextLevel.label} name`}
+            className="h-8 flex-1"
+            autoFocus
+          />
+          <Button size="sm" onClick={() => void addChild()} disabled={!childDraft.trim()}>
+            Add
+          </Button>
+          <Button size="sm" variant="ghost" onClick={() => { setAddingChild(false); setChildDraft(""); }}>
+            Cancel
+          </Button>
         </div>
       )}
     </div>

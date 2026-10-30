@@ -120,6 +120,35 @@ function renderClassification(nodes: CourseNode[], selected: Set<string>, onTogg
   });
 }
 
+function blockHasContent(block: EditableBlock): boolean {
+  const c = block.content ?? {};
+  switch (block.block_type) {
+    case "text":
+    case "heading":
+      return String(c.text ?? "").trim().length > 0;
+    case "equation":
+      return String(c.latex ?? "").trim().length > 0;
+    case "code":
+      return String(c.code ?? "").trim().length > 0;
+    case "image":
+    case "diagram":
+    case "graph":
+      return Boolean(c.asset_path);
+    case "table":
+      return (Array.isArray(c.columns) && (c.columns as unknown[]).some((x) => String(x ?? "").trim().length > 0))
+        || (Array.isArray(c.rows) && (c.rows as unknown[]).some((r) => Array.isArray(r) && (r as unknown[]).some((x) => String(x ?? "").trim().length > 0)));
+    case "list":
+      return Array.isArray(c.items) && (c.items as unknown[]).some((x) => String(x ?? "").trim().length > 0);
+    case "function":
+      return String(c.expression ?? "").trim().length > 0;
+    case "answer_area":
+    case "page_break":
+      return true;
+    default:
+      return true;
+  }
+}
+
 interface QuestionEditorProps {
   config: CourseFullConfig;
   existing?: Question;      // omit for "create new"
@@ -142,6 +171,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   const [sourceOriginalNo, setSourceOriginalNo] = useState(existing?.source?.original_question_no ?? "");
   const [reviewStatus, setReviewStatus] = useState(existing?.review_status ?? "approved");
   const [linkedStimuli, setLinkedStimuli] = useState<Stimulus[]>([]);
+  const [initialLinkedIds, setInitialLinkedIds] = useState<Set<string>>(new Set());
   const [stimulusList, setStimulusList] = useState<Stimulus[]>([]);
   const [showStimulusModal, setShowStimulusModal] = useState(false);
   const [linking, setLinking] = useState(false);
@@ -165,7 +195,10 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
   const [parts, setParts] = useState<EditablePart[]>(existing?.parts.map(toEditablePart) ?? []);
 
   const [saving, setSaving] = useState(false);
+  const [deleting, setDeleting] = useState(false);
   const [hasUnsavedChanges, setHasUnsavedChanges] = useState(false);
+  const [errors, setErrors] = useState<{ body?: string; marks?: string; mcq?: string }>({});
+  const [showLeavePrompt, setShowLeavePrompt] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const pendingNavigation = useRef<(() => void) | null>(null);
 
@@ -177,6 +210,9 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
         if (existing?.question_id) {
           const linked = await api.getStimuliForQuestion(existing.question_id);
           setLinkedStimuli(linked);
+          setInitialLinkedIds(new Set(linked.map((s) => s.stimulus_id)));
+        } else {
+          setInitialLinkedIds(new Set());
         }
       } catch (err) {
         notify("Could not load stimuli", "error", err instanceof Error ? err.message : "Failed to load stimuli.");
@@ -212,8 +248,6 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     };
   }, [hasUnsavedChanges, location.pathname, navigate]);
 
-  const [showLeavePrompt, setShowLeavePrompt] = useState(false);
-
   function requestLeave(action: () => void) {
     if (!hasUnsavedChanges) {
       action();
@@ -248,6 +282,41 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const nextErrors: { body?: string; marks?: string; mcq?: string } = {};
+    if (!body.some(blockHasContent)) {
+      nextErrors.body = "Add at least one non-empty body block.";
+    }
+    if (marks.trim()) {
+      const marksNumber = Number(marks);
+      if (!Number.isFinite(marksNumber) || marksNumber < 0) {
+        nextErrors.marks = "Marks must be a finite non-negative number.";
+      }
+    }
+    const hasInvalidPartMarks = (items: EditablePart[]): boolean =>
+      items.some((part) => {
+        const value = part.marks.trim();
+        if (value && (!Number.isFinite(Number(value)) || Number(value) < 0)) return true;
+        return hasInvalidPartMarks(part.parts);
+      });
+    if (!nextErrors.marks && hasInvalidPartMarks(parts)) {
+      nextErrors.marks = "Marks must be a finite non-negative number.";
+    }
+    if (typeKey === "multiple_choice") {
+      if (options.length < 2) {
+        nextErrors.mcq = "Multiple choice questions need at least 2 choices.";
+      } else {
+        const correctCount = options.filter((option) => option.isCorrect).length;
+        if (correctCount !== 1) {
+          nextErrors.mcq = "Select exactly one correct choice.";
+        }
+      }
+    }
+    if (Object.keys(nextErrors).length > 0) {
+      setErrors(nextErrors);
+      notify("Please fix the highlighted fields.", "error");
+      return;
+    }
+    setErrors({});
     setSaving(true);
     try {
       const payload: Record<string, any> = {
@@ -284,21 +353,18 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
         questionId = created.question_id;
       }
       if (questionId) {
-        const currentLinked = new Set(linkedStimuli.map((s) => s.stimulus_id));
-        const selectedLinked = new Set(
-          stimulusList.filter((s) => currentLinked.has(s.stimulus_id)).map((s) => s.stimulus_id)
-        );
-        if (currentLinked.size !== selectedLinked.size || ![...currentLinked].every((id) => selectedLinked.has(id))) {
-          // simpler: just re-link based on current selection? easier: unlink old not in list
-          const allSelected = new Set(linkedStimuli.map((s) => s.stimulus_id));
-          for (const id of allSelected) {
-            await api.linkStimulusToQuestion(id, questionId);
+        const finalIds = new Set(linkedStimuli.map((s) => s.stimulus_id));
+        for (const id of initialLinkedIds) {
+          if (!finalIds.has(id)) {
+            await api.unlinkStimulusFromQuestion(id, questionId);
           }
-        } else {
-          for (const id of currentLinked) {
+        }
+        for (const id of finalIds) {
+          if (!initialLinkedIds.has(id)) {
             await api.linkStimulusToQuestion(id, questionId);
           }
         }
+        setInitialLinkedIds(new Set(finalIds));
       }
       const leave = pendingNavigation.current;
       pendingNavigation.current = null;
@@ -322,7 +388,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
       destructive: true,
     });
     if (!ok) return;
-    setSaving(true);
+    setDeleting(true);
     const task = startOperationNotification("Deleting question…");
     try {
       await api.deleteQuestion(existing.question_id);
@@ -332,7 +398,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
     } catch (err) {
       task.fail("Could not delete question", err instanceof Error ? err.message : "Failed to delete question.");
     } finally {
-      setSaving(false);
+      setDeleting(false);
     }
   }
 
@@ -447,12 +513,14 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
                   </Select>
                 </Field>
                 <Field label="Marks">
-                  <Input type="number" step="0.5" value={marks} onChange={(e) => setMarks(e.target.value)} />
+                  <Input type="number" step="0.5" value={marks} onChange={(e) => { setMarks(e.target.value); setErrors((prev) => ({ ...prev, marks: undefined })); }} />
+                  {errors.marks && <p role="alert" className="mt-1 text-sm text-destructive">{errors.marks}</p>}
                 </Field>
               </div>
             </Panel>
 
-            <BlockEditor label="Question body" blocks={body} onChange={setBody} />
+            <BlockEditor label="Question body" blocks={body} onChange={(next) => { setBody(next); setErrors((prev) => ({ ...prev, body: undefined })); }} />
+            {errors.body && <p role="alert" className="text-sm text-destructive">{errors.body}</p>}
             <BlockEditor
               label="Hint (optional)"
               blocks={hint}
@@ -465,6 +533,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
             {typeKey === "multiple_choice" && (
               <Panel>
                 <PanelHead title="Answer choices" action={<Button type="button" variant="outline" size="sm" onClick={() => setOptions((items) => [...items, { blocks: [emptyBlock("text")], isCorrect: false }])}><Plus /> Add choice</Button>} />
+                {errors.mcq && <p role="alert" className="px-5 pt-4 text-sm text-destructive">{errors.mcq}</p>}
                 <div className="space-y-4 p-5">
                   {options.map((option, index) => (
                     <div key={index} className="rounded-md border border-border p-4">
@@ -603,8 +672,8 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
               </div>
               {existing && (
                 <div className="border-t border-border p-5">
-                  <Button type="button" variant="destructive" disabled={saving} onClick={handleDelete}>
-                    <Trash2 /> Delete question
+                  <Button type="button" variant="destructive" disabled={deleting || saving} onClick={handleDelete}>
+                    <Trash2 /> {deleting ? "Deleting…" : "Delete question"}
                   </Button>
                 </div>
               )}
@@ -616,15 +685,15 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
           <Button type="button" variant="outline" data-dismiss-editor onClick={() => requestLeave(onCancel)}>
             Cancel
           </Button>
-          <Button type="submit" disabled={saving}>
+          <Button type="submit" disabled={saving || deleting}>
             {saving ? "Saving…" : existing ? "Save changes" : "Create question"}
           </Button>
         </div>
       </div>
       {hasUnsavedChanges && (
-        <div role="status" className="fixed bottom-4 right-4 z-50 flex max-w-[calc(100vw-2rem)] items-center gap-4 rounded-lg border border-amber-500/40 bg-surface p-3 shadow-lg sm:bottom-6 sm:right-6">
+        <div role="status" className="fixed bottom-4 right-4 z-50 flex max-w-[calc(100vw-2rem)] items-center gap-4 rounded-lg border border-warning/40 bg-surface p-3 shadow-lg sm:bottom-6 sm:right-6">
           <p className="text-sm font-medium">You have unsaved changes</p>
-          <Button type="button" size="sm" data-editor-save disabled={saving} onClick={() => formRef.current?.requestSubmit()}>
+          <Button type="button" size="sm" data-editor-save disabled={saving || deleting} onClick={() => formRef.current?.requestSubmit()}>
             <Save />{saving ? "Saving…" : "Save now"}
           </Button>
         </div>
@@ -671,7 +740,7 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
                 setShowLeavePrompt(false);
                 leave?.();
               }}>Discard changes</Button>
-              <Button className="ml-auto" disabled={saving} onClick={() => { setShowLeavePrompt(false); formRef.current?.requestSubmit(); }}>Save and leave</Button>
+              <Button className="ml-auto" disabled={saving || deleting} onClick={() => { setShowLeavePrompt(false); formRef.current?.requestSubmit(); }}>Save and leave</Button>
             </>
           }
         />

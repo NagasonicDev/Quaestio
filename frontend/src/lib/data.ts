@@ -1,11 +1,11 @@
 import { all, flush, getFirst, run, runMany, transaction } from "./db/sqlite";
 import { claimQuestionId, newId, newQuestionId, nowUtc } from "./id";
 import {
-  countAssetReferences,
   deleteAssetBlob,
   deleteUnreferencedAssetBlob,
   finalizeQuestionAssets,
   findUnreferencedAssetIds,
+  referencedAssetIds,
 } from "./assets";
 import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles, storeTestSolutionFile } from "./tests";
 import { buildExamDocument, parseExamDocument } from "./examDocument";
@@ -377,6 +377,42 @@ export async function deleteCourse(courseId: string, onDeleted?: () => void): Pr
     try { findSharedAssets(JSON.parse(String(row.content_json)), String(row.question_id)); }
     catch { /* malformed JSON — skip */ }
   }
+  // Other courses' stimuli can also borrow these blobs; keep a surviving
+  // question as owner when one exists, otherwise preserve the asset row.
+  const sharedStimulusAssets = new Set<string>();
+  const survivingQuestions = await all<SqlRow>("SELECT course_id, question_id FROM question WHERE course_id <> ?", [courseId]);
+  const firstQuestionByCourse = new Map<string, string>();
+  for (const row of survivingQuestions) {
+    if (!firstQuestionByCourse.has(String(row.course_id))) firstQuestionByCourse.set(String(row.course_id), String(row.question_id));
+  }
+  const otherStimuli = await all<SqlRow>(
+    `SELECT st.course_id, sb.content_json FROM stimulus_block sb
+     JOIN stimulus st ON st.stimulus_id = sb.stimulus_id WHERE st.course_id <> ?`,
+    [courseId]
+  );
+  for (const row of otherStimuli) {
+    const owner = firstQuestionByCourse.get(String(row.course_id));
+    try {
+      const parsed = JSON.parse(String(row.content_json));
+      if (owner) findSharedAssets(parsed, owner);
+      else {
+        const collect = (value: unknown): void => {
+          if (!value || typeof value !== "object") return;
+          if (Array.isArray(value)) { for (const item of value) collect(item); return; }
+          const record = value as Record<string, unknown>;
+          const path = record.asset_path;
+          if (typeof path === "string" && assetIds.has(path)) sharedStimulusAssets.add(path);
+          for (const nested of Object.values(record)) collect(nested);
+        };
+        collect(parsed);
+      }
+    } catch { /* malformed JSON — skip */ }
+  }
+  const preservedStimulusAssets = [...sharedStimulusAssets].filter((id) => assetIds.has(id));
+  const assetRowDeleteSql = preservedStimulusAssets.length
+    ? `DELETE FROM asset WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?) AND asset_id NOT IN (${preservedStimulusAssets.map(() => "?").join(", ")})`
+    : `DELETE FROM asset WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)`;
+  const assetRowDeleteParams = [courseId, ...preservedStimulusAssets];
   await transaction((database) => {
     database.run(
       `DELETE FROM practice_attempt
@@ -394,10 +430,7 @@ export async function deleteCourse(courseId: string, onDeleted?: () => void): Pr
     for (const [assetId, questionId] of sharedAssetOwners) {
       database.run("UPDATE asset SET question_id = ? WHERE asset_id = ? AND question_id IN (SELECT question_id FROM question WHERE course_id = ?)", [questionId, assetId, courseId]);
     }
-    database.run(
-      "DELETE FROM asset WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)",
-      [courseId]
-    );
+    database.run(assetRowDeleteSql, assetRowDeleteParams);
     database.run("DELETE FROM question WHERE course_id = ?", [courseId]);
     database.run("DELETE FROM practice_session WHERE course_id = ?", [courseId]);
     database.run("UPDATE question_type SET course_id = NULL WHERE course_id = ? AND EXISTS (SELECT 1 FROM question WHERE question.type_key = question_type.type_key)", [courseId]);
@@ -822,7 +855,7 @@ export async function updateNode(
     // explicit `undefined`, and `?? null` would then blank an untouched column.
     if (k in payload && (payload as any)[k] !== undefined) {
       sets.push(`${k} = ?`);
-      params.push((payload as any)[k] ?? null);
+      params.push((payload as any)[k]);
     }
   }
   sets.push("updated_at = ?");
@@ -949,14 +982,13 @@ function buildFilters(opts: FilterOptions): { where: string[]; params: any[] } {
   }
   if (opts.q) {
     where.push(
-      `(q.question_id LIKE ?
-        OR q.source_id IN (SELECT source_id FROM source WHERE original_question_no LIKE ?)
+      `(INSTR(LOWER(q.question_id), LOWER(?)) > 0
+        OR q.source_id IN (SELECT source_id FROM source WHERE INSTR(LOWER(original_question_no), LOWER(?)) > 0)
         OR q.question_id IN (
-          SELECT question_id FROM content_block WHERE slot = 'body' AND content_json LIKE ?
+          SELECT question_id FROM content_block WHERE slot = 'body' AND INSTR(LOWER(content_json), LOWER(?)) > 0
         ))`
     );
-    const search = `%${opts.q}%`;
-    params.push(search, search, search);
+    params.push(opts.q, opts.q, opts.q);
   }
   return { where, params };
 }
@@ -1153,8 +1185,27 @@ async function hydrateQuestions(questionIds: string[]): Promise<Question[]> {
     (inClause) => `SELECT * FROM question WHERE question_id IN ${inClause}`
   );
   const children = await queryInBatches(
-    questionIds,
-    (inClause) => `SELECT * FROM question WHERE parent_question_id IN ${inClause} ORDER BY parent_question_id, part_label COLLATE NOCASE ASC, question_id`
+    // Load every descendant level so nested question parts survive hydration.
+    await (async () => {
+      const descendants: string[] = [];
+      const queued = [...questionIds];
+      const seen = new Set(questionIds);
+      while (queued.length) {
+        const batch = queued.splice(0, 400);
+        const rows = await all<SqlRow>(
+          `SELECT question_id, parent_question_id FROM question WHERE parent_question_id IN (${batch.map(() => "?").join(",")})`,
+          batch
+        );
+        for (const row of rows) {
+          const id = String(row.question_id);
+          if (seen.has(id)) continue;
+          seen.add(id);
+          descendants.push(id);
+          queued.push(id);
+        }
+      }
+      return descendants;
+    })(), (inClause) => `SELECT * FROM question WHERE question_id IN ${inClause} ORDER BY parent_question_id, part_label COLLATE NOCASE ASC, question_id`
   );
   const allQuestions = [...roots, ...children];
   const relatedIds = [...new Set(allQuestions.map((q) => String(q.question_id)))];
@@ -1236,7 +1287,7 @@ async function hydrateQuestions(questionIds: string[]): Promise<Question[]> {
         caption: asset.caption ?? null,
       })),
       source,
-      parts: includeParts ? (childrenByParent.get(id) ?? []).map((part) => toQuestion(part, false)) : [],
+      parts: includeParts ? (childrenByParent.get(id) ?? []).map((part) => toQuestion(part, true)) : [],
       created_at: q.created_at,
       updated_at: q.updated_at,
     };
@@ -1665,17 +1716,19 @@ export async function deleteQuestion(questionId: string): Promise<void> {
   // Collect the blobs before the rows go, release them after.
   const assetIds = new Set<string>();
   await collectAssetIds(questionId, assetIds);
-  await run("DELETE FROM practice_attempt WHERE question_id = ?", [questionId]);
-  await run("UPDATE import_question SET final_question_id = NULL WHERE final_question_id = ?", [
-    questionId,
-  ]);
-  await run("DELETE FROM question WHERE question_id = ?", [questionId]);
+  await transaction(async () => {
+    await run("DELETE FROM practice_attempt WHERE question_id = ?", [questionId]);
+    await run("UPDATE import_question SET final_question_id = NULL WHERE final_question_id = ?", [
+      questionId,
+    ]);
+    await run("DELETE FROM question WHERE question_id = ?", [questionId]);
+  });
   // Release shared content-hash blobs only when no remaining question references them.
+  const usedAssetIds = await referencedAssetIds();
   for (const assetId of assetIds) {
-    if (await countAssetReferences(assetId) === 0) {
-      await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
-      await deleteAssetBlob(assetId);
-    }
+    if (usedAssetIds.has(assetId)) continue;
+    await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
+    await deleteAssetBlob(assetId);
   }
 }
 
@@ -1697,11 +1750,11 @@ export async function deleteQuestions(questionIds: string[]): Promise<void> {
     [`DELETE FROM question WHERE question_id IN (${placeholders})`, ids],
   ]);
   // Release shared content-hash blobs only when no remaining question references them.
+  const usedAfterDelete = await referencedAssetIds();
   for (const assetId of assetIds) {
-    if (await countAssetReferences(assetId) === 0) {
-      await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
-      await deleteAssetBlob(assetId);
-    }
+    if (usedAfterDelete.has(assetId)) continue;
+    await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
+    await deleteAssetBlob(assetId);
   }
 }
 
@@ -1726,11 +1779,11 @@ export async function clearQuestions(): Promise<void> {
   await run("DELETE FROM question");
   await run("DELETE FROM source");
   // Release shared content-hash blobs only when no remaining question references them.
+  const usedAfterDelete = await referencedAssetIds();
   for (const assetId of assetIds) {
-    if (await countAssetReferences(assetId) === 0) {
-      await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
-      await deleteAssetBlob(assetId);
-    }
+    if (usedAfterDelete.has(assetId)) continue;
+    await run("DELETE FROM asset WHERE asset_id = ?", [assetId]);
+    await deleteAssetBlob(assetId);
   }
   // Settings reloads immediately after this resolves. Persist synchronously so
   // the reload cannot restore the pre-clear database from IndexedDB.
@@ -2286,7 +2339,7 @@ export async function recordReview(
 /** Attempts for one question, newest first, for the "inspect your answers" view. */
 export async function questionAttempts(questionId: string, limit = 20): Promise<AttemptSummary[]> {
   const rows = await all<SqlRow>(
-    `SELECT ${ATTEMPT_COLUMNS} FROM practice_attempt WHERE question_id = ? ORDER BY created_at DESC LIMIT ?`,
+    `SELECT ${ATTEMPT_COLUMNS} FROM practice_attempt WHERE question_id = ? ORDER BY created_at DESC, rowid DESC LIMIT ?`,
     [questionId, limit]
   );
   return rows.map((r) => ({
@@ -2312,13 +2365,20 @@ export async function questionAttempts(questionId: string, limit = 20): Promise<
 export async function recentQuestions(
   courseId: string,
   limit: number = 10
-): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; scored_by: string | null; seen_at: string }>> {
+): Promise<Array<{ question_id: string; course_id: string; snippet: string; type_key: string; status: string; scored_by: string | null; score_earned: number | null; score_possible: number | null; seen_at: string }>> {
   const rows = await all<SqlRow>(
     `SELECT a.question_id, q.type_key, q.course_id, MAX(a.created_at) AS last_seen,
             (SELECT a2.status FROM practice_attempt a2
-             WHERE a2.question_id = a.question_id ORDER BY a2.created_at DESC LIMIT 1) AS latest_status,
+             WHERE a2.question_id = a.question_id ORDER BY a2.created_at DESC, a2.rowid DESC LIMIT 1) AS latest_status,
             (SELECT a3.scored_by FROM practice_attempt a3
-             WHERE a3.question_id = a.question_id ORDER BY a3.created_at DESC LIMIT 1) AS latest_scored_by
+             WHERE a3.question_id = a.question_id AND a3.scored_by IS NOT NULL
+             ORDER BY a3.created_at DESC, a3.rowid DESC LIMIT 1) AS latest_scored_by,
+            (SELECT a4.score_earned FROM practice_attempt a4
+             WHERE a4.question_id = a.question_id AND a4.scored_by IS NOT NULL
+             ORDER BY a4.created_at DESC, a4.rowid DESC LIMIT 1) AS latest_score_earned,
+            (SELECT a5.score_possible FROM practice_attempt a5
+             WHERE a5.question_id = a.question_id AND a5.scored_by IS NOT NULL
+             ORDER BY a5.created_at DESC, a5.rowid DESC LIMIT 1) AS latest_score_possible
      FROM practice_attempt a JOIN question q ON q.question_id = a.question_id
      WHERE q.course_id = ?
      GROUP BY a.question_id
@@ -2334,6 +2394,8 @@ export async function recentQuestions(
     type_key: r.type_key,
     status: r.latest_status ?? "seen",
     scored_by: r.latest_scored_by ?? null,
+    score_earned: r.latest_score_earned == null ? null : Number(r.latest_score_earned),
+    score_possible: r.latest_score_possible == null ? null : Number(r.latest_score_possible),
     seen_at: r.last_seen,
   }));
 }

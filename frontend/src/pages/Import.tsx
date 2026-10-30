@@ -163,11 +163,17 @@ export function Import() {
         }
       }
       setResults(nextResults);
-      if (nextResults.length) {
-        const importedCount = nextResults.reduce((sum, item) => sum + item.result.imported_count, 0);
-        notify("Question import complete", "success", `${importedCount} question${importedCount === 1 ? "" : "s"} imported.`);
+      const importedCount = nextResults.reduce((sum, item) => sum + item.result.imported_count, 0);
+      if (nextResults.length || nextErrors.length) {
+        const importedPart = nextResults.length ? `${importedCount} question${importedCount === 1 ? "" : "s"} imported.` : "";
+        const errorPart = nextErrors.length ? nextErrors.map(({ name, error }) => `${name}: ${error}`).join("\n") : "";
+        const message = [importedPart, errorPart].filter(Boolean).join("\n");
+        notify(
+          nextErrors.length ? "Some question files could not be imported" : "Question import complete",
+          nextErrors.length ? "error" : "success",
+          message,
+        );
       }
-      if (nextErrors.length) notify("Some question files could not be imported", "error", nextErrors.map(({ name, error }) => `${name}: ${error}`).join("\n"));
     } finally {
       setImporting(false);
     }
@@ -225,7 +231,7 @@ export function Import() {
             {importing ? (
               <h2 className="font-display text-xl font-semibold">Importing…</h2>
             ) : fileNames.length ? (
-              <h2 className="font-display text-xl font-semibold">{fileNames.length} file(s) selected</h2>
+              <h2 className="font-display text-xl font-semibold">{fileNames.length} file{fileNames.length === 1 ? "" : "s"} selected</h2>
             ) : (
               <h2 className="font-display text-xl font-semibold">Choose a JSON file</h2>
             )}
@@ -257,7 +263,7 @@ export function Import() {
               <p className="mt-1 font-display text-4xl font-semibold text-destructive">{result.error_count}</p>
             </div>
             <div className="p-5 text-xs text-muted-foreground sm:col-span-2">
-              {result.imported_count} question(s) imported
+              {result.imported_count} question{result.imported_count === 1 ? "" : "s"} imported
               {result.error_count > 0 ? `, ${result.error_count} rejected` : " without issues"}.
             </div>
           </div>

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { ImagePlus, PenLine, Type, X } from "lucide-react";
 import { DrawingNotebook } from "./drawing/DrawingNotebook";
+import type { DrawingNotebook as DrawingNotebookData } from "../lib/drawingNotebook";
 import { Textarea } from "./ui/textarea";
 import { cn } from "../lib/utils";
 
@@ -18,6 +19,7 @@ export function QuestionAnswerInput({
   captureResponse = true,
   notebookOnly = false,
   placeholder = "Write your working and answer…",
+  onNotebookChange,
 }: {
   questionId: string;
   notebookAttemptId?: string;
@@ -25,6 +27,7 @@ export function QuestionAnswerInput({
   image: string;
   onTextChange(value: string): void;
   onImageChange(value: string): void;
+  onNotebookChange?: (notebook: DrawingNotebookData) => void;
   disabled?: boolean;
   captureResponse?: boolean;
   /** For objective questions, show the persistent working notebook without response tabs. */
@@ -76,7 +79,7 @@ export function QuestionAnswerInput({
       <Textarea aria-label="Your typed answer" value={text} onChange={(event) => onTextChange(event.target.value)} disabled={disabled} rows={5} placeholder={placeholder} className="bg-background" />
       <p className="mt-2 text-xs text-muted-foreground">{captureResponse ? "Your work stays on this device and is saved with your attempt." : "Response saving is turned off in settings, so this text will not be saved with your attempt."}</p>
     </div>}
-    {notebookVisited && notebookAttemptId && <div hidden={mode !== "notebook"} className={notebookOnly ? "" : "p-3"}><DrawingNotebook questionId={questionId} attemptId={notebookAttemptId} /></div>}
+    {notebookVisited && notebookAttemptId && <div hidden={mode !== "notebook"} className={notebookOnly ? "" : "p-3"}><DrawingNotebook questionId={questionId} attemptId={notebookAttemptId} onChange={onNotebookChange} /></div>}
     {mode === "image" && <div className="space-y-3 p-3">
       {image ? <div className="relative inline-block max-w-full">
         <img src={image} alt="Your uploaded answer" className="max-h-96 max-w-full rounded border border-border object-contain" />
