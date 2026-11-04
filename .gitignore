@@ -12,6 +12,9 @@ tmp/
 work/
 .superpowers/
 
+# Shipped HSC exam bundles are app data, not scratch material
+!frontend/public/templates/hsc/physics/
+
 # Local environments, runtime data, and logs
 backend/.venv/
 **/__pycache__/
