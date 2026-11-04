@@ -266,7 +266,7 @@ export function Practice() {
       await api.recordAttempt({
         session_id: sessionId,
         question_id: current.question_id,
-        status: mcq ? "attempted" : "attempted",
+        status: "attempted",
         response_text: draft.response_text || null,
         response_image: draft.response_image || null,
         confidence: draft.confidence,
@@ -316,8 +316,9 @@ export function Practice() {
         confidence: draft.confidence,
         hints_revealed: draft.hints_revealed,
         time_spent_sec: draft.elapsed_sec,
-        score_earned: null,
+        score_earned: draft.self_mark,
         score_possible: current.marks ?? null,
+        scored_by: !mcq && draft.self_mark != null ? "self" : undefined,
       });
       setStage("assessed");
       setSessionNote(`Next time this comes up: ${describeInterval(review)}.`);

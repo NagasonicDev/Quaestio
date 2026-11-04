@@ -345,6 +345,25 @@ export function isSelfRating(value: unknown): value is SelfRating {
   return typeof value === "string" && (SELF_RATINGS as readonly string[]).includes(value);
 }
 
+/** Turn a self-claimed mark into the qualitative rating the ladder understands. A
+ * full mark is treated as "got it", a partial mark as "hard", and zero as a
+ * lapse ("again"). Keeping this mapping in one place means the timer math can
+ * be tested without a component. */
+export function ratingFromSelfMark(
+  mark: number | null | undefined,
+  possible: number | null | undefined
+): SelfRating {
+  const p = Number(possible);
+  if (!Number.isFinite(p) || p <= 0) return "unsure";
+  const m = Number(mark);
+  if (!Number.isFinite(m) || m <= 0) return "again";
+  if (m >= p) return "got_it";
+  return "hard";
+}
+
+export const selfMarkToRating = ratingFromSelfMark;
+
+
 export function isReviewOutcome(value: unknown): value is ReviewOutcome {
   return (
     value === "self_assessed" || value === "objective_correct" || value === "objective_incorrect"

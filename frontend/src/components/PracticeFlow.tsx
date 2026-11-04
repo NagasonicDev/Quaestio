@@ -10,6 +10,9 @@ import { QuestionAnswerInput } from "./QuestionAnswerInput.tsx";
 import { ConfidencePicker, SelfAssessment } from "./SelfAssessment.tsx";
 import { formatQuestionType } from "../lib/questionTypes.ts";
 import { StimulusSideMenu } from "./StimulusSideMenu.tsx";
+import { ratingFromSelfMark } from "../lib/reviewSchedule.ts";
+import { Textarea } from "./ui/textarea.tsx";
+import { Input } from "./ui/input.tsx";
 import type { StimulusWithContent } from "../api/types.ts";
 
 /**
@@ -25,6 +28,7 @@ export interface PracticeDraft {
   response_image: string;
   selected_choice: string | null;
   confidence: Confidence | null;
+  self_mark: number | null;
   hints_revealed: number;
   elapsed_sec: number | null;
 }
@@ -197,6 +201,10 @@ export function PracticeFlow({
   const [hintsShown, setHintsShown] = useState(0);
   const [selectedChoice, setSelectedChoice] = useState<string | null>(null);
   const [confidence, setConfidence] = useState<Confidence | null>(null);
+  const [selfMark, setSelfMark] = useState<string>("");
+  const [partAnswers, setPartAnswers] = useState<Record<string, string>>({});
+  const [partSubmitted, setPartSubmitted] = useState<ReadonlySet<string>>(new Set());
+  const [partMarks, setPartMarks] = useState<Record<string, string>>({});
   const [revealed, setRevealed] = useState({ guide: false, answer: false, solution: false });
   const [openStimulus, setOpenStimulus] = useState<StimulusWithContent | null>(null);
   const [busy, setBusy] = useState(false);
@@ -208,6 +216,10 @@ export function PracticeFlow({
     setHintsShown(0);
     setSelectedChoice(null);
     setConfidence(null);
+    setSelfMark("");
+    setPartAnswers({});
+    setPartSubmitted(new Set());
+    setPartMarks({});
     setRevealed({ guide: false, answer: false, solution: false });
     setOpenStimulus(null);
   }, [questionId]);
@@ -232,6 +244,7 @@ export function PracticeFlow({
     response_image: responseImage,
     selected_choice: selectedChoice,
     confidence,
+    self_mark: selfMark === "" ? null : Number(selfMark),
     hints_revealed: hintsShown,
     elapsed_sec: timerEnabled ? elapsed : null,
   });
@@ -314,6 +327,50 @@ export function PracticeFlow({
         notebookOnly={isMcq}
         placeholder="Write your answer here. It is kept on this device only, and you can turn saving off in settings."
       /></div>
+       {/* Part answers/self-marks are working space: they guide the review but are not persisted with the attempt. */}
+       {hasParts && (
+         <div className="space-y-4 border-t border-border px-5 py-5 sm:px-6">
+           {flattenQuestionParts(question.parts).map(({ part, label }) => {
+             const submitted = partSubmitted.has(part.question_id);
+             return (
+               <div key={part.question_id} className="rounded-md border border-border bg-surface/40 p-3">
+                 <p className="font-mono text-[11px] uppercase tracking-wide text-muted-foreground">Part {label}{part.marks != null ? ` [${part.marks} marks]` : ""}</p>
+                 <Textarea value={partAnswers[part.question_id] ?? ""} onChange={(e) => setPartAnswers((s) => ({ ...s, [part.question_id]: e.target.value }))} disabled={stage !== "prompt" || submitted} rows={4} placeholder="Write your answer for this part…" className="mt-2 bg-background" aria-label={`Your answer for part ${label}`} />
+                 {!submitted ? (
+                   <Button className="mt-2" size="sm" onClick={() => setPartSubmitted((s) => { const n = new Set(s); n.add(part.question_id); return n; })} disabled={stage !== "prompt" || !(partAnswers[part.question_id] ?? "").trim()}>
+                     Submit part
+                   </Button>
+                 ) : (
+                   <div className="mt-3 space-y-3">
+                     <div className="flex flex-wrap items-center gap-2">
+                       <Input type="number" min={0} max={part.marks ?? undefined} step={0.5} value={partMarks[part.question_id] ?? ""} onChange={(e) => setPartMarks((s) => ({ ...s, [part.question_id]: e.target.value }))} disabled={busy} className="w-24" aria-label={`Mark you think you got for part ${label}`} />
+                       {part.marks != null && <span className="text-sm text-muted-foreground">out of {part.marks}</span>}
+                     </div>
+                     {part.marking_criteria.length > 0 && (
+                       <div>
+                         <h4 className="font-display font-semibold">Marking guide</h4>
+                         <div className="mt-1.5"><MarkingGuideTable blocks={part.marking_criteria} /></div>
+                       </div>
+                     )}
+                     {part.answer.length > 0 && (
+                       <div>
+                         <h4 className="font-display font-semibold">Answer</h4>
+                         <div className="mt-1.5"><BlockList blocks={part.answer} /></div>
+                       </div>
+                     )}
+                     {part.solution.length > 0 && (
+                       <div>
+                         <h4 className="font-display font-semibold">Worked solution</h4>
+                         <div className="mt-1.5"><BlockList blocks={part.solution} /></div>
+                       </div>
+                     )}
+                   </div>
+                 )}
+               </div>
+             );
+           })}
+         </div>
+       )}
 
       {stage === "prompt" && (
         <div className="border-t border-border px-5 py-5 sm:px-6">
@@ -492,20 +549,63 @@ export function PracticeFlow({
 
           {stage === "feedback" && (
             <div className="space-y-5 border-t border-border px-5 py-5 sm:px-6">
-              <ConfidencePicker
-                value={confidence}
-                onChange={setConfidence}
-                note={
-                  graded
-                    ? "This is recorded separately from whether the answer was right."
-                    : undefined
-                }
-              />
-              <SelfAssessment
-                value={null}
-                onChange={(rating) => run(() => callbacks.onRate(rating, draft()))}
-                disabled={busy}
-              />
+               <ConfidencePicker
+                 value={confidence}
+                 onChange={setConfidence}
+                 note={
+                   graded
+                     ? "This is recorded separately from whether the answer was right."
+                     : undefined
+                 }
+               />
+               {isMcq && (
+                 <SelfAssessment
+                   value={null}
+                   onChange={(rating) => run(() => callbacks.onRate(rating, draft()))}
+                   disabled={busy}
+                 />
+               )}
+               {!isMcq && (
+                 <fieldset className="min-w-0 space-y-3">
+                   <legend className="label mb-1">What mark do you think you got?</legend>
+                   <p className="text-xs text-muted-foreground">
+                     Compare your work with the guide above, then enter the mark you would award it.
+                     This sets when the question comes back.
+                   </p>
+                   <div className="flex flex-wrap items-center gap-2">
+                     <Input
+                       type="number"
+                       id={`self-mark-${questionId}`}
+                       min={0}
+                       max={question.marks ?? undefined}
+                       step={0.5}
+                       value={selfMark}
+                       onChange={(event) => setSelfMark(event.target.value)}
+                       disabled={busy}
+                       className="w-28"
+                       aria-label="The mark you think you got"
+                     />
+                     {question.marks != null && (
+                       <span className="text-sm text-muted-foreground">out of {question.marks}</span>
+                     )}
+                     <Button
+                       disabled={busy || selfMark.trim() === "" || !Number.isFinite(Number(selfMark)) || Number(selfMark) < 0 || (question.marks != null && Number(selfMark) > question.marks)}
+                       onClick={() =>
+                         run(async () => {
+                           const rating = ratingFromSelfMark(
+                             selfMark === "" ? null : Number(selfMark),
+                             question.marks
+                           );
+                           await callbacks.onRate(rating, draft());
+                         })
+                       }
+                     >
+                       <Check />
+                       Save mark
+                     </Button>
+                   </div>
+                 </fieldset>
+               )}
             </div>
           )}
         </div>

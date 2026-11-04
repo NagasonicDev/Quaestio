@@ -2311,6 +2311,7 @@ export interface ReviewSubmission {
   user_notes?: string | null;
   score_earned?: number | null;
   score_possible?: number | null;
+  scored_by?: ScoredBy | null;
 }
 
 /**
@@ -2337,6 +2338,7 @@ export async function recordReview(
   const capture = await getResponseCapture();
   const attemptId = newId("att");
   const objective = input.objective_correct != null;
+  const scoredBy = input.scored_by ?? (objective ? "objective" : null);
 
   await transaction((database) => {
     database.run(
@@ -2356,7 +2358,7 @@ export async function recordReview(
         input.confidence ?? null,
         input.rating,
         input.hints_revealed ?? 0,
-        objective ? "objective" : null,
+        scoredBy,
         input.score_earned ?? null,
         input.score_possible ?? null,
       ]
