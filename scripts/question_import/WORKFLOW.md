@@ -70,6 +70,7 @@ discarded without any warning. Read this before writing anything.
 | `body`, `hint`, `answer`, `solution`, `marking_criteria` | The only five content slots. Any other slot name is stored and never rendered. |
 | `mcq_options` | Top-level questions only — see §7. |
 | `assets` + image blocks | The asset bytes must be inside the bundle — see §8. |
+| `stimuli`, `question_stimuli` | Optional `questions.json` arrays, stored and linked on import — see **Stimuli** below. |
 | `source` | `name`, `year`, `institution`, `original_question_no`. Always include `original_question_no`. |
 | `classification_confidence` | `high` / `medium` / `low`; drives review workflows. |
 | `part_label`, `marks`, `body`, `hint`, `answer`, `solution`, `marking_criteria`, `parts`, `assets` on a part | The per-part contract — see §5. |
@@ -112,10 +113,37 @@ on **code and full path** — which is why both must be correct.
 ### Stimuli
 
 A stimulus is content stored once and linked to several questions (Course
-Settings → Stimuli). The import format has none: a bundle carries `questions.json`
-only, and any `stimuli` key is ignored. **Never emit a `stimuli` field** — write
-the content into the question `body` instead. Stimuli are created and linked in
-the app afterwards.
+Settings → Stimuli). A bundle may carry two optional top-level arrays in
+`questions.json`: `stimuli` holds the shared content, `question_stimuli` pairs a
+question with a stimulus.
+
+```json
+"stimuli": [
+  {
+    "stimulus_id": "stim-2021-t1",
+    "title": "Text 1 — Nonfiction extract",
+    "blocks": [{ "block_type": "text", "content": { "text": "..." } }]
+  }
+],
+"question_stimuli": [
+  { "question_id": "ea202101", "stimulus_id": "stim-2021-t1" }
+]
+```
+
+Each stimulus takes a `stimulus_id`, an optional `title` and `blocks` in the
+normal block format. Each link names a `question_id` and a `stimulus_id`.
+`stimulus_id` and `question_id` are the ids **you authored in the bundle**; the
+importer maps them to the ids it actually creates. A stimulus is skipped with a
+warning when its `stimulus_id` is missing or duplicated, or its `blocks` are
+missing, empty or malformed. A link naming a question or stimulus that was not
+imported is skipped and counted in one warning; a link repeating an
+already-imported pair is collapsed silently. None of this rejects a question.
+
+The generic builder writes neither array: `qbx_lib.build` and
+`scripts/question_import/build_qbx.py` emit only `export_schema_version`,
+`course_id`, `course_name` and `questions`. A spec that uses stimuli must inject
+`stimuli` and `question_stimuli` into `questions.json` after building (the
+English Paper 1 rebuild does this), or the importer sees no stimuli.
 
 Use a stimulus only when the *same* content serves **two or more top-level
 questions** — never across the parts of one question, whose shared stem belongs in
@@ -123,6 +151,9 @@ the parent `body`. Otherwise keep the content in the question `body`. The one
 exception is a long text extract or other large passage that would overwhelm a
 single question's body; **images never qualify** — an image stays with its
 question.
+
+Omit both arrays when nothing is shared; the bundle then imports exactly as it
+did before, with all content in question bodies.
 
 ---
 
@@ -367,11 +398,38 @@ still a defect — resolve it before delivering). `build_qbx.py` prints both.
 
 ---
 
-## 11. Final review
+## 11. Quality gate
+
+These defects parse cleanly but make a question unusable. `audit_qbx.py` treats
+every one as a problem; do not deliver a bundle it rejects.
+
+| Defect | Required output |
+|---|---|
+| Printed page furniture | Transcribe only the question. Remove `Question N (M marks)` headers, `– 3 –` page numbers, `===== PAGE 3 =====`, `Please turn over`, `BLANK PAGE`, `Do NOT write in this area`, office-use boxes, centre/student numbers and copyright footers. |
+| Dot leaders | Remove `.....` runs. Replace the printed answer space with one trailing `answer_area` block: `answer_lines(marks)` (two lines per mark, minimum two). |
+| Placeholder body | Never write "See exam paper", "refer to the exam paper" or a summary of missing content. Extract the actual text; if it is genuinely unavailable, tag `action_required` and report the source gap. |
+| Missing answer space | Every written-response leaf, including each part, ends with `answer_area`. MCQ has none. |
+| Shared or long source text | Put it in top-level `stimuli`, link with `question_stimuli`; never repeat it in each question body. Both arrays are validated and passed through by `qbx_lib.build()`. A body with more than 1200 characters of text fails the gate. |
+| Empty bundle | A bundle with zero questions is a failure, not a draft. Report the reason instead. |
+
+Run the gate on every finished bundle:
+
+```sh
+python scripts/audit_qbx.py output.qbx --schema import-schema.json
+```
+
+The same rules live in `scripts/quality_rules.py`, which the builder, the audit
+and the skill generator all use. If a rule is wrong, fix it there — do not work
+around it by hand.
+
+---
+
+## 12. Final review
 
 Before delivering, parse the finished JSON and confirm:
 
 - No empty `text`, `heading`, `equation`, `list` item or MCQ option.
+- No copied printed header, page furniture or dot leaders; every written leaf has `answer_area`; no body points at "the exam paper".
 - Every printed MCQ choice present, in order, exactly one correct, answer letter
   agreeing with that option.
 - A marking guide with allocated criteria on every question **and every part**.
@@ -379,8 +437,8 @@ Before delivering, parse the finished JSON and confirm:
 - No empty parent or part `body`; no answer or solution left on a multipart
   parent; no part left without an answer or solution.
 - Every referenced asset actually present in the bundle under `assets/`.
-- No `stimuli` field — the importer ignores it; content shared by two or more
-  questions lives in each question's `body`.
+- Every `question_stimuli` link names a question and a stimulus present in the
+  same bundle.
 - Genuine institution names preserved as the paper gives them — never inferred
   from a course, exam type or year.
 - Every printed question accounted for; printed marks checked against the paper

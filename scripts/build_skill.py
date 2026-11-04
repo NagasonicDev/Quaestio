@@ -35,7 +35,9 @@ REPO = Path(__file__).resolve().parent.parent
 SKILLS_DIR = REPO / ".opencode" / "skills"
 TOOLCHAIN = REPO / "scripts" / "question_import"
 sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(TOOLCHAIN))
 from skill_render import COMMON_SKILL_DIR, generated_files  # noqa: E402
+from quality_rules import self_test as quality_self_test  # noqa: E402
 
 # Fixed DOS timestamp (the earliest a ZIP can express) for reproducible output.
 FIXED_DATE = (1980, 1, 1, 0, 0, 0)
@@ -134,6 +136,11 @@ def main() -> int:
     ap.add_argument("--sync", action="store_true",
                     help="copy scripts/question_import/*.py into each skill dir")
     args = ap.parse_args()
+
+    try:
+        quality_self_test()
+    except AssertionError as e:
+        raise SystemExit(f"quality rules self-test failed: {e}")
 
     if args.skill_dir:
         dirs = [Path(args.skill_dir)]

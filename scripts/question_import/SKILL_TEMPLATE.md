@@ -37,6 +37,11 @@ row is enforced by `scripts/audit_qbx.py`.
 | Answer | Every leaf part needs an `answer` or a `solution`; multipart containers hold neither. A partless `extended_response` needs one too. If no rubric was published, write the rubric yourself. |
 | Classification | On the **parent**, never on a part. Always `node_ids` + the matching full path in `node_names` (separator `" / "`); `node_codes` only when every selected node has a code. |
 | Body | Never empty, on a parent or a part. |
+| Page copy | Transcribe the question, not the page. No printed `Question N` header, `– 3 –` page number, `Please turn over`, `BLANK PAGE`, `Do NOT write in this area`, barcode/centre-number box or copyright footer. |
+| Answer space | Every written-response leaf ends with `answer_area` — two lines per mark, minimum two. No dot leaders (`.....`) and no "answer on the lines below" filler. |
+| Source only | Never put `See exam paper`, "refer to the exam paper" or a description of missing content in a body. Extract the real text; if it is genuinely unavailable, tag `action_required` and report it. |
+| Stimuli | Shared or long source text goes in `stimuli` + `question_stimuli`, never copied into each question body. A body over 1200 characters of text fails the gate. Each link must name a question and a stimulus in the same bundle. |
+| Empty bundle | Never deliver a bundle with zero questions. If the paper has no extractable questions, deliver nothing and report why. |
 | Unknown values | Never invent a type, tag, difficulty level, block type or node — each one either rejects the question or renders nothing at all. |
 
 `notes` is **dropped on import**. To flag a gap for follow-up, tag the question

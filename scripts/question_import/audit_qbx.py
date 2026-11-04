@@ -37,6 +37,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from qbx_lib import (NodeIndex, collect_blocks, enable_utf8_stdout,  # noqa: E402
                      load_schema, table_shape, _allocations, _criteria_items)
+from quality_rules import (MAX_BODY_CHARS, body_char_count,  # noqa: E402
+                           has_answer_area, text_problems)
 
 def year_of(path: Path):
     m = re.search(r"(19|20)\d{2}", path.name)
@@ -68,6 +70,8 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
     stats = {"questions": 0, "parts": 0, "assets": len(files)}
     qs = payload.get("questions") or []
     stats["questions"] = len(qs)
+    if not qs:
+        probs.append("empty bundle: no questions")
 
     for q in qs:
         qid = q.get("question_id", "<no id>")
@@ -116,9 +120,18 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
                                  f"a node path nor a known node name.{hint}")
 
 
-            if not obj.get("body"):
-                probs.append(f"{w}: empty body "
-                             f"({'parent' if obj.get('parts') else 'leaf'})")
+            # A composite parent/container may have no body when the paper
+            # prints no shared stem; its children carry the prompts.
+            if not obj.get("body") and not obj.get("parts"):
+                probs.append(f"{w}: empty body (leaf)")
+            elif (not (obj.get("parts") or [])
+                  and obj.get("type_key") != "multiple_choice"
+                  and not has_answer_area(obj.get("body"))):
+                probs.append(f"{w}: written-response leaf has no answer_area")
+            if body_char_count(obj.get("body")) > MAX_BODY_CHARS:
+                probs.append(f"{w}: body copies {body_char_count(obj.get('body'))} "
+                             f"characters of text; long source text belongs in a "
+                             f"stimulus")
 
             # An image can live in body, in an MCQ option, or in a sample
             # answer / marking-criteria block -- all count as "referenced".
@@ -131,6 +144,9 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
             for b in blocks:
                 bt = b.get("block_type")
                 c = b.get("content") or {}
+                if bt in ("text", "heading"):
+                    for problem in text_problems(c.get("text")):
+                        probs.append(f"{w}: {problem}")
                 if bt in ("image", "diagram", "graph"):
                     ap = c.get("asset_path")
                     if not ap:
@@ -223,6 +239,44 @@ def audit_bundle(path: Path, nodes: NodeIndex, schema: dict,
                     for b in q.get("answer") or []).strip().upper()
                 if got != want:
                     probs.append(f"{qid}: answer {got!r} != correct option {want}")
+
+    question_ids = {q.get("question_id") for q in qs}
+    stimuli = payload.get("stimuli") or []
+    if not isinstance(stimuli, list):
+        probs.append("stimuli is not a list")
+        stimuli = []
+    stimulus_ids = set()
+    for i, s in enumerate(stimuli, start=1):
+        sid = s.get("stimulus_id") if isinstance(s, dict) else None
+        if not isinstance(sid, str) or not sid.strip():
+            probs.append(f"stimuli[{i}]: missing stimulus_id")
+            continue
+        if sid in stimulus_ids:
+            probs.append(f"stimulus {sid}: duplicate stimulus_id")
+        stimulus_ids.add(sid)
+        if not isinstance(s.get("blocks"), list) or not s["blocks"]:
+            probs.append(f"stimulus {sid}: no blocks")
+            continue
+        for j, b in enumerate(s["blocks"], start=1):
+            if not isinstance(b, dict) or not b.get("block_type"):
+                probs.append(f"stimulus {sid} block {j}: missing block_type")
+            elif b["block_type"] in ("text", "heading"):
+                for problem in text_problems((b.get("content") or {}).get("text")):
+                    probs.append(f"stimulus {sid} block {j}: {problem}")
+    links = payload.get("question_stimuli") or []
+    if not isinstance(links, list):
+        probs.append("question_stimuli is not a list")
+        links = []
+    for i, link in enumerate(links, start=1):
+        if not isinstance(link, dict):
+            probs.append(f"question_stimuli[{i}]: not an object")
+            continue
+        qid = link.get("question_id")
+        sid = link.get("stimulus_id")
+        if qid not in question_ids:
+            probs.append(f"question_stimuli[{i}]: unknown question_id {qid!r}")
+        if sid not in stimulus_ids:
+            probs.append(f"question_stimuli[{i}]: unknown stimulus_id {sid!r}")
 
     stats["problems"] = probs
     return stats

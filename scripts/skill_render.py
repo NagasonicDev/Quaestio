@@ -48,6 +48,10 @@ NODES_NAME = "nodes.txt"
 # name and silent misclassification everywhere else.
 NODE_PATH_SEPARATOR = " / "
 
+# A generated skill must carry the quality contract; a silent template edit that
+# drops it is how the page-copy defects reached every course in the first place.
+REQUIRED_WORKFLOW_SECTIONS = ("## 11. Quality gate", "## 12. Final review")
+
 
 def slug(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-") or "course"
@@ -55,6 +59,16 @@ def slug(name: str) -> str:
 
 def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
+
+
+def workflow_text() -> str:
+    """The shared contract, refusing to generate without its quality gate."""
+    text = read(COMMON_SKILL_DIR / WORKFLOW_NAME)
+    missing = [s for s in REQUIRED_WORKFLOW_SECTIONS if s not in text]
+    if missing:
+        raise SystemExit(f"{WORKFLOW_NAME} is missing {missing}; restore the "
+                         f"quality contract before generating skills")
+    return text
 
 
 def flatten_nodes(nodes, path: list[str] | None = None) -> list[dict]:
@@ -225,7 +239,7 @@ def generated_files(skill_dir: Path) -> list[tuple[Path, str]]:
                          substitutions_from_skill_dir(skill_dir))),
         (skill_dir / NODES_NAME,
          nodes_index_markdown(schema.get("valid_node_ids") or [], sep)),
-        (skill_dir / WORKFLOW_NAME, read(COMMON_SKILL_DIR / WORKFLOW_NAME)),
+        (skill_dir / WORKFLOW_NAME, workflow_text()),
     ]
 
 

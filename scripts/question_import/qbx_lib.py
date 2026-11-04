@@ -27,6 +27,9 @@ import zipfile
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from quality_rules import (MAX_BODY_CHARS, body_char_count, has_answer_area,
+                           text_problems)
+
 # --------------------------------------------------------------------------
 # Course schema
 # --------------------------------------------------------------------------
@@ -471,8 +474,13 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
                 continue
             c = b.get("content") or {}
             if bt in ("text", "heading"):
-                if not str(c.get("text", "")).strip():
+                text = str(c.get("text", ""))
+                if not text.strip():
                     rep.err(f"{w}: empty {bt} block")
+                else:
+                    for problem in text_problems(text):
+                        rep.err(f"{w}: {problem} -- copy the question text only, "
+                                f"not the printed page")
             elif bt == "equation":
                 if not str(c.get("latex", "")).strip():
                     rep.err(f"{w}: empty equation block")
@@ -520,6 +528,16 @@ def validate_question(q: dict, *, nodes: NodeIndex, schema: dict,
                 if ap and ap not in owner_assets:
                     rep.err(f"{w}: image {ap!r} is not declared in this "
                             f"object's assets array")
+
+        if body_char_count(body) > MAX_BODY_CHARS:
+            rep.err(f"{w}: body has {body_char_count(body)} characters of text "
+                    f"(max {MAX_BODY_CHARS}) -- move the shared/long source text "
+                    f"into a stimulus instead of copying the page")
+
+        if (not parts and obj.get("type_key") != "multiple_choice"
+                and body and not has_answer_area(body)):
+            rep.err(f"{w}: written-response leaf has no answer_area -- add "
+                    f"answer_area(answer_lines(marks)) as the last body block")
 
         for a in obj.get("assets") or []:
             used = any((bl.get("content") or {}).get("asset_path") == a["asset_id"]
@@ -817,6 +835,64 @@ def normalise(q: dict, *, nodes: NodeIndex, schema: dict, course_id: str,
     return q
 
 
+def _stimuli_payload(spec: dict, question_ids: set[str],
+                     rep: Report) -> tuple[list, list]:
+    """Validate authored stimuli and links, returning the payload arrays."""
+    stimuli = spec.get("stimuli") or []
+    links = spec.get("question_stimuli") or []
+    if not isinstance(stimuli, list):
+        rep.err("stimuli must be a list")
+        stimuli = []
+    if not isinstance(links, list):
+        rep.err("question_stimuli must be a list")
+        links = []
+
+    seen: set[str] = set()
+    for i, s in enumerate(stimuli, start=1):
+        if not isinstance(s, dict):
+            rep.err(f"stimuli[{i}]: must be an object")
+            continue
+        sid = s.get("stimulus_id")
+        if not isinstance(sid, str) or not sid.strip():
+            rep.err(f"stimuli[{i}]: stimulus_id must be a non-empty string")
+            continue
+        if sid in seen:
+            rep.err(f"stimuli[{i}]: duplicate stimulus_id {sid!r}")
+        seen.add(sid)
+        if "title" in s and s["title"] is not None and not isinstance(s["title"], str):
+            rep.err(f"stimulus {sid}: title must be a string")
+        blocks = s.get("blocks")
+        if not isinstance(blocks, list) or not blocks:
+            rep.err(f"stimulus {sid}: blocks must be a non-empty list")
+            continue
+        for j, b in enumerate(blocks, start=1):
+            if not isinstance(b, dict) or b.get("block_type") not in TEXT_BLOCKS:
+                rep.err(f"stimulus {sid} block {j}: unknown block_type")
+                continue
+            if b["block_type"] in ("image", "diagram", "graph"):
+                rep.err(f"stimulus {sid} block {j}: images are not supported in "
+                        f"stimuli -- keep the figure with its question")
+            if b["block_type"] in ("text", "heading"):
+                for problem in text_problems((b.get("content") or {}).get("text")):
+                    rep.err(f"stimulus {sid} block {j}: {problem}")
+
+    pairs: set[tuple[str, str]] = set()
+    for i, link in enumerate(links, start=1):
+        if not isinstance(link, dict):
+            rep.err(f"question_stimuli[{i}]: must be an object")
+            continue
+        qid = str(link.get("question_id") or "").strip()
+        sid = str(link.get("stimulus_id") or "").strip()
+        if qid not in question_ids:
+            rep.err(f"question_stimuli[{i}]: unknown question_id {qid!r}")
+        if sid not in seen:
+            rep.err(f"question_stimuli[{i}]: unknown stimulus_id {sid!r}")
+        if (qid, sid) in pairs:
+            rep.err(f"question_stimuli[{i}]: duplicate link {qid!r} -> {sid!r}")
+        pairs.add((qid, sid))
+    return stimuli, links
+
+
 def build(spec: dict, out_path, *, schema=None, assets_dir=None,
           id_prefix=None, course_id=None) -> tuple[Path, Report]:
     """spec -> validated .qbx bundle. Returns (path, report)."""
@@ -837,6 +913,10 @@ def build(spec: dict, out_path, *, schema=None, assets_dir=None,
                                    assets_dir=assets_dir, rep=rep, index=i,
                                    seen_ids=seen))
 
+    question_ids = {obj.get("question_id") for q in questions
+                    for obj in collect_blocks(q) if obj.get("question_id")}
+    stimuli, links = _stimuli_payload(spec, question_ids, rep)
+
     if rep.errors:
         return out_path, rep
 
@@ -846,6 +926,9 @@ def build(spec: dict, out_path, *, schema=None, assets_dir=None,
         "course_name": course_name,
         "questions": questions,
     }
+    if stimuli or links:
+        payload["stimuli"] = stimuli
+        payload["question_stimuli"] = links
     out_path.parent.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(out_path, "w", zipfile.ZIP_DEFLATED) as z:
         z.writestr("questions.json", json.dumps(payload, ensure_ascii=False,
