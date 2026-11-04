@@ -22,6 +22,23 @@ test("splitRichTokens keeps plain text and maths spans separate", () => {
   ]);
 });
 
+test("splitRichTokens marks bold and italic outside maths", () => {
+  assert.deepEqual(splitRichTokens("**Bold** and *italic* and ***both***"), [
+    { text: "Bold", bold: true },
+    { text: " and " },
+    { text: "italic", italic: true },
+    { text: " and " },
+    { text: "both", bold: true, italic: true },
+  ]);
+  assert.deepEqual(splitRichTokens("$x$ **is** *bold*"), [
+    { math: "x" },
+    { text: " " },
+    { text: "is", bold: true },
+    { text: " " },
+    { text: "bold", italic: true },
+  ]);
+});
+
 test("standalone LaTeX blocks are recognised", () => {
   assert.equal(looksLikeStandaloneLatex("\\tau = 0.20\\,\\mathrm{N\\,m}"), true);
   assert.equal(looksLikeStandaloneLatex("t = \\dfrac{2.5 - 0}{3.5 - 0} = 0.714\\,\\mathrm{s}."), true);

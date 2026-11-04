@@ -34,15 +34,15 @@ test("duplicate pool entries collapse to one question each", () => {
     { question_id: "q1", topic_id: "a" },
     { question_id: "q2", topic_id: "b" },
   ];
-  const plan = buildSessionPlan(items, { mode: "focused" });
-  assert.deepEqual(plan.question_ids, ["q1", "q2"]);
+  const plan = buildSessionPlan(items, { mode: "focused", random: constantRandom() });
+  assert.deepEqual(plan.question_ids, ["q2", "q1"]);
   assert.equal(plan.truncated, false);
 });
 
-test("focused practice keeps the pool order the student filtered down to", () => {
+test("focused practice randomises the filtered pool", () => {
   const items = pool({ a: 3, b: 2 });
   const plan = buildSessionPlan(items, { mode: "focused", random: constantRandom() });
-  assert.deepEqual(plan.question_ids, ["a-0", "a-1", "a-2", "b-0", "b-1"]);
+  assert.deepEqual(plan.question_ids, ["a-1", "a-2", "b-0", "b-1", "a-0"]);
   assert.equal(plan.balanced, false);
   assert.equal(plan.dominant_topic_share, 0.6);
 });

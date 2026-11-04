@@ -215,3 +215,24 @@ test("createRenderer maps the stored artifact type to the renderer that made it"
   assert.equal(createRenderer("pdf").format, "html");
   assert.equal(createRenderer("docx").format, "docx");
 });
+
+
+test("the docx keeps a multi-paragraph question together", async () => {
+  const multi = question({ marks: 9, body: [
+    { block_id: "b1", slot: "body", position: 0, block_type: "text", content: { text: "Para one." } },
+    { block_id: "b2", slot: "body", position: 1, block_type: "text", content: { text: "Para two." } },
+  ] });
+  const blob = await docxRenderer.renderPaper(doc({ format: "docx", sections: [{ label: null, questions: [multi] }] }), new Map());
+  const zip = await JSZip.loadAsync(await blob.arrayBuffer());
+  const xml = await zip.file("word/document.xml").async("string");
+  const keepNextCount = (xml.match(/<w:keepNext\/>/g) || []).length;
+  assert.ok(keepNextCount >= 2, "expected multiple keepNext, got " + keepNextCount);
+});
+
+test("the docx footer contains native PAGE and NUMPAGES fields", async () => {
+  const blob = await docxRenderer.renderPaper(doc({ format: "docx" }), new Map());
+  const zip = await JSZip.loadAsync(await blob.arrayBuffer());
+  const xml = await zip.file("word/footer1.xml").async("string");
+  assert.ok(xml.includes("PAGE"), "PAGE field missing");
+  assert.ok(xml.includes("NUMPAGES"), "NUMPAGES field missing");
+});
