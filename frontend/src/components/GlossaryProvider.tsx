@@ -1,7 +1,7 @@
 import { createContext, useContext, type ReactNode } from "react";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { useCourseConfig } from "../hooks/useCourseConfig";
-import type { GlossaryTerm } from "../api/types";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { useCourseConfig } from "../hooks/useCourseConfig.ts";
+import type { GlossaryTerm } from "../api/types.ts";
 
 const GlossaryContext = createContext<GlossaryTerm[]>([]);
 

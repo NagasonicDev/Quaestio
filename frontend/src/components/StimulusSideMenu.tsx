@@ -1,10 +1,10 @@
 import { useEffect, useId, useRef } from "react";
 import { createPortal } from "react-dom";
 import { X } from "lucide-react";
-import type { StimulusWithContent } from "../api/types";
-import { BlockList } from "./QuestionReader";
-import { Button } from "./ui/button";
-import { cn } from "../lib/utils";
+import type { StimulusWithContent } from "../api/types.ts";
+import { BlockList } from "./QuestionReader.tsx";
+import { Button } from "./ui/button.tsx";
+import { cn } from "../lib/utils.ts";
 
 const FOCUSABLE_SELECTOR = [
   "a[href]",

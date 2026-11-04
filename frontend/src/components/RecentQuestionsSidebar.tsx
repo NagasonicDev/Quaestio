@@ -2,12 +2,12 @@ import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
-import { api } from "../api/client";
-import { formatQuestionType } from "../lib/questionTypes";
-import { attemptRank, attemptStatusLabel } from "../lib/reviewSchedule";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { cn } from "../lib/utils";
-import { MathText } from "./MathText";
+import { api } from "../api/client.ts";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { attemptRank, attemptStatusLabel } from "../lib/reviewSchedule.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { cn } from "../lib/utils.ts";
+import { MathText } from "./MathText.tsx";
 
 /**
  * Recent activity, in two shapes.

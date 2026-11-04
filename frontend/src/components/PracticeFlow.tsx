@@ -1,16 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { ReactNode } from "react";
 import { Check, Eye, Lightbulb, Timer, FileText } from "lucide-react";
-import type { Confidence, ContentBlock, Question, SelfRating } from "../api/types";
-import { BlockList, MarkingGuideTable, QuestionPartReveal, QuestionReader } from "./QuestionReader";
-import { flattenQuestionParts } from "../lib/questionParts";
-import { Meta, Panel } from "./system";
-import { Button } from "./ui/button";
-import { QuestionAnswerInput } from "./QuestionAnswerInput";
-import { ConfidencePicker, SelfAssessment } from "./SelfAssessment";
-import { formatQuestionType } from "../lib/questionTypes";
-import { StimulusSideMenu } from "./StimulusSideMenu";
-import type { StimulusWithContent } from "../api/types";
+import type { Confidence, ContentBlock, Question, SelfRating } from "../api/types.ts";
+import { BlockList, MarkingGuideTable, QuestionPartReveal, QuestionReader } from "./QuestionReader.tsx";
+import { flattenQuestionParts } from "../lib/questionParts.ts";
+import { Meta, Panel } from "./system.tsx";
+import { Button } from "./ui/button.tsx";
+import { QuestionAnswerInput } from "./QuestionAnswerInput.tsx";
+import { ConfidencePicker, SelfAssessment } from "./SelfAssessment.tsx";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { StimulusSideMenu } from "./StimulusSideMenu.tsx";
+import type { StimulusWithContent } from "../api/types.ts";
 
 /**
  * The guided flow, in the order retrieval practice says it should happen in:

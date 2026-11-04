@@ -1,6 +1,6 @@
 import { useEffect, useState, type CSSProperties, type ReactNode } from "react";
-import { cn } from "../lib/utils";
-import { Button } from "./ui/button";
+import { cn } from "../lib/utils.ts";
+import { Button } from "./ui/button.tsx";
 
 /* ------------------------------------------------------------------ */
 /* Layout primitives used across every page                            */

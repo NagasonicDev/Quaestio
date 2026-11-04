@@ -10,8 +10,8 @@ import {
 import { createPortal } from "react-dom";
 import type { ReactNode } from "react";
 import { X } from "lucide-react";
-import { Button } from "./button";
-import { cn } from "../../lib/utils";
+import { Button } from "./button.tsx";
+import { cn } from "../../lib/utils.ts";
 
 const FOCUSABLE_SELECTOR = [
   "a[href]",

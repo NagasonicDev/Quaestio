@@ -1,4 +1,4 @@
-import type { DrawingPoint, DrawingStroke } from "../../lib/drawingNotebook";
+import type { DrawingPoint, DrawingStroke } from "../../lib/drawingNotebook.ts";
 
 const squaredDistance = (a: DrawingPoint, b: DrawingPoint) => {
   const x = a.x - b.x;

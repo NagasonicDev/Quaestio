@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from "react";
 import type { PointerEvent } from "react";
-import type { DrawingPage, DrawingPoint, DrawingStroke, DrawingTool } from "../../lib/drawingNotebook";
-import { eraseStrokePath, eraseWholeStrokesAtPath } from "./drawingGeometry";
+import type { DrawingPage, DrawingPoint, DrawingStroke, DrawingTool } from "../../lib/drawingNotebook.ts";
+import { eraseStrokePath, eraseWholeStrokesAtPath } from "./drawingGeometry.ts";
 
 interface DrawingCanvasProps {
   page: DrawingPage;

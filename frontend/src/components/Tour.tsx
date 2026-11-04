@@ -12,9 +12,9 @@ import {
 } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { getSetting, setSetting } from "../lib/data";
-import { flush } from "../lib/db/sqlite";
-import { useActiveCourse } from "../hooks/useActiveCourse";
+import { getSetting, setSetting } from "../lib/data.ts";
+import { flush } from "../lib/db/sqlite.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
 import {
   IMPORT_TOUR_SEEN_KEY,
   IMPORT_TOUR_STEPS,
@@ -23,8 +23,8 @@ import {
   navTourTarget,
   resolveTourStep,
   type TourStep,
-} from "../lib/tour";
-import { Button } from "./ui/button";
+} from "../lib/tour.ts";
+import { Button } from "./ui/button.tsx";
 
 interface TourContextValue {
   /** Restart the walkthrough from the first step. */

@@ -2,13 +2,13 @@ import { useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { ArrowRight, Eye, History, ListPlus, Repeat } from "lucide-react";
-import { api } from "../api/client";
-import type { DifficultyCue, StudyProgress, TopicProgress } from "../api/types";
-import { formatQuestionType } from "../lib/questionTypes";
-import { MIN_EVIDENCE, STANDING_LABEL, describeRecency } from "../lib/studyProgress";
-import { SELF_RATING_LABEL, isSelfRating } from "../lib/reviewSchedule";
-import { Button } from "./ui/button";
-import { LoadingState, Meta, Panel, PanelHead, Stat } from "./system";
+import { api } from "../api/client.ts";
+import type { DifficultyCue, StudyProgress, TopicProgress } from "../api/types.ts";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { MIN_EVIDENCE, STANDING_LABEL, describeRecency } from "../lib/studyProgress.ts";
+import { SELF_RATING_LABEL, isSelfRating } from "../lib/reviewSchedule.ts";
+import { Button } from "./ui/button.tsx";
+import { LoadingState, Meta, Panel, PanelHead, Stat } from "./system.tsx";
 
 /**
  * The study half of the dashboard: what has been reviewed, what is due, where

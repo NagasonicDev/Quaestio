@@ -14,14 +14,14 @@ import {
   Shuffle,
   Sparkles,
 } from "lucide-react";
-import { api } from "../api/client";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { Button } from "./ui/button";
-import { useConfirm } from "./ui/modal";
-import { notify, startOperationNotification } from "../lib/notifications";
-import { templateStats, templatesByCategory } from "../lib/courseTemplates";
-import { useInstallTemplate } from "../hooks/useInstallTemplate";
-import { cn } from "../lib/utils";
+import { api } from "../api/client.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { Button } from "./ui/button.tsx";
+import { useConfirm } from "./ui/modal.tsx";
+import { notify, startOperationNotification } from "../lib/notifications.ts";
+import { templateStats, templatesByCategory } from "../lib/courseTemplates.ts";
+import { useInstallTemplate } from "../hooks/useInstallTemplate.ts";
+import { cn } from "../lib/utils.ts";
 
 type Step = "sample" | "import" | "create" | null;
 

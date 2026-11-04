@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BookOpen, ChevronDown, Layers, Plus, Search } from "lucide-react";
-import { PageHeader } from "../components/system";
-import { Button } from "../components/ui/button";
-import { Input } from "../components/ui/input";
-import { cn } from "../lib/utils";
-import { templateStats, templatesByCategory } from "../lib/courseTemplates";
-import { useInstallTemplate } from "../hooks/useInstallTemplate";
+import { PageHeader } from "../components/system.tsx";
+import { Button } from "../components/ui/button.tsx";
+import { Input } from "../components/ui/input.tsx";
+import { cn } from "../lib/utils.ts";
+import { templateStats, templatesByCategory } from "../lib/courseTemplates.ts";
+import { useInstallTemplate } from "../hooks/useInstallTemplate.ts";
 
 /** Cards shown per category before "View all" expands the group. */
 const PREVIEW_COUNT = 3;

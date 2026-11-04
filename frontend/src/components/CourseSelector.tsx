@@ -2,12 +2,12 @@ import { useEffect, useId, useRef, useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { Check, ChevronDown, Plus, Upload } from "lucide-react";
-import { api } from "../api/client";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { Button } from "./ui/button";
-import { useConfirm } from "./ui/modal";
-import { cn } from "../lib/utils";
-import { notify, startOperationNotification } from "../lib/notifications";
+import { api } from "../api/client.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { Button } from "./ui/button.tsx";
+import { useConfirm } from "./ui/modal.tsx";
+import { cn } from "../lib/utils.ts";
+import { notify, startOperationNotification } from "../lib/notifications.ts";
 
 export function CourseSelector({ inMenu = false }: { inMenu?: boolean }) {
   const { courseId, setCourseId } = useActiveCourse();

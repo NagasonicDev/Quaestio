@@ -2,17 +2,17 @@ import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { BookOpen, Shuffle } from "lucide-react";
-import { api } from "../api/client";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { useCourseConfig } from "../hooks/useCourseConfig";
-import { LoadingState, PageHeader, Panel, PanelHead, Stat, MiniRows, Bars } from "../components/system";
-import { Button } from "../components/ui/button";
-import { NodeTree, flattenCounts } from "../components/NodeTree";
-import { CourseOnboarding } from "../components/CourseOnboarding";
-import { StudyOverview } from "../components/StudyOverview";
-import { DueQueueCard } from "../components/DueQueueCard";
-import { SetupProgress } from "../components/SetupProgress";
-import { SampleCourseNotice } from "../components/SampleCourseNotice";
+import { api } from "../api/client.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { useCourseConfig } from "../hooks/useCourseConfig.ts";
+import { LoadingState, PageHeader, Panel, PanelHead, Stat, MiniRows, Bars } from "../components/system.tsx";
+import { Button } from "../components/ui/button.tsx";
+import { NodeTree, flattenCounts } from "../components/NodeTree.tsx";
+import { CourseOnboarding } from "../components/CourseOnboarding.tsx";
+import { StudyOverview } from "../components/StudyOverview.tsx";
+import { DueQueueCard } from "../components/DueQueueCard.tsx";
+import { SetupProgress } from "../components/SetupProgress.tsx";
+import { SampleCourseNotice } from "../components/SampleCourseNotice.tsx";
 
 export function Dashboard() {
   const { courseId } = useActiveCourse();

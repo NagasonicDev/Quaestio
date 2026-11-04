@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { Plus, Pencil, Trash2 } from "lucide-react";
-import { api } from "../api/client";
-import type { Stimulus, StimulusWithContent } from "../api/types";
-import { Panel, PanelHead } from "./system";
-import { Button } from "./ui/button";
-import { Modal, useConfirm } from "./ui/modal";
-import { notify } from "../lib/notifications";
-import { StimulusEditor } from "./StimulusEditor";
+import { api } from "../api/client.ts";
+import type { Stimulus, StimulusWithContent } from "../api/types.ts";
+import { Panel, PanelHead } from "./system.tsx";
+import { Button } from "./ui/button.tsx";
+import { Modal, useConfirm } from "./ui/modal.tsx";
+import { notify } from "../lib/notifications.ts";
+import { StimulusEditor } from "./StimulusEditor.tsx";
 
 interface StimulusManagerProps {
   courseId: string;

@@ -2,11 +2,11 @@ import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { FlaskConical, RotateCcw, Trash2 } from "lucide-react";
-import { api } from "../api/client";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { Button } from "./ui/button";
-import { useConfirm } from "./ui/modal";
-import { notify, startOperationNotification } from "../lib/notifications";
+import { api } from "../api/client.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { Button } from "./ui/button.tsx";
+import { useConfirm } from "./ui/modal.tsx";
+import { notify, startOperationNotification } from "../lib/notifications.ts";
 
 /**
  * Shown while the active course is the optional starter one. It has to be

@@ -1,21 +1,22 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
-import { ArrowDown, ArrowUp, BookOpen, Download, Eye, FileText, Plus, Printer, Trash2 } from "lucide-react";
-import { api, type GeneratedTestMeta } from "../api/client";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { useCourseConfig } from "../hooks/useCourseConfig";
-import { flattenCounts } from "../components/NodeTree";
-import { Field, InkLoader, LoadingState, Meta, MiniRows, PageHeader, Panel, PanelHead } from "../components/system";
-import { FilterMenu } from "../components/FilterMenu";
-import { Button } from "../components/ui/button";
-import { useConfirm } from "../components/ui/modal";
-import { downloadTestFile, ensureTestFileUrl } from "../lib/tests";
-import { Input } from "../components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
-import { effectiveNodeFilterIds } from "../lib/nodeFilters";
-import { beginTestGeneration, updateTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
-import type { QuestionCountsResponse } from "../api/types";
-import { notify, startOperationNotification } from "../lib/notifications";
+import { ArrowDown, ArrowUp, BookOpen, Download, Eye, FileText, Loader2, Plus, Printer, RefreshCw, Trash2 } from "lucide-react";
+import { api, type GeneratedTestMeta } from "../api/client.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { useCourseConfig } from "../hooks/useCourseConfig.ts";
+import { flattenCounts } from "../components/NodeTree.tsx";
+import { Field, InkLoader, LoadingState, Meta, MiniRows, PageHeader, Panel, PanelHead } from "../components/system.tsx";
+import { FilterMenu } from "../components/FilterMenu.tsx";
+import { Button } from "../components/ui/button.tsx";
+import { useConfirm } from "../components/ui/modal.tsx";
+import { downloadTestFile, ensureTestFileUrl } from "../lib/tests.ts";
+import { Input } from "../components/ui/input.tsx";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select.tsx";
+import { effectiveNodeFilterIds } from "../lib/nodeFilters.ts";
+import { beginTestGeneration, updateTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask.ts";
+import type { QuestionCountsResponse } from "../api/types.ts";
+import { notify, startOperationNotification } from "../lib/notifications.ts";
+import { beginHeavyTask, endHeavyTask } from "../lib/db/sqlite.ts";
 
 // ---- Section marks configuration (edit these) ----------------------------
 const MIN_MARKS = 5; // lowest marks target allowed for a section
@@ -87,6 +88,7 @@ interface SectionDraft {
   nodeIds: Set<string>;
   typeKeys: string[];
   difficulties: number[];
+  selectedTag: string;
   institutionYears: Record<string, number[]>;
   marks: number;
 }
@@ -101,7 +103,7 @@ export function TestGenerator() {
   const nextId = useRef(2);
 
   const [sections, setSections] = useState<SectionDraft[]>([
-    { id: 1, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {}, marks: DEFAULT_MARKS },
+    { id: 1, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], selectedTag: "", institutionYears: {}, marks: DEFAULT_MARKS },
   ]);
   const [format, setFormat] = useState<"docx" | "pdf">("docx");
   const [ordering, setOrdering] = useState("random");
@@ -180,6 +182,7 @@ export function TestGenerator() {
     node_ids: s.nodeIds.size ? effectiveNodeFilterIds(config?.nodes ?? [], s.nodeIds).sort() : undefined,
     type_keys: s.typeKeys.length ? [...s.typeKeys].sort() : undefined,
     difficulties: s.difficulties.length ? [...s.difficulties].sort((a, b) => a - b) : undefined,
+    tag: s.selectedTag || undefined,
     source_filters: Object.entries(s.institutionYears).map(([institution, years]) => ({ institution, years })),
     marks: s.marks,
   })), [sections, config?.nodes]);
@@ -193,24 +196,26 @@ export function TestGenerator() {
       const nodeIds = effectiveNodeFilterIds(config?.nodes ?? [], section.nodeIds).sort();
       const types = [...section.typeKeys].sort();
       const difficulties = [...section.difficulties].sort((a, b) => a - b);
+      const tag = section.selectedTag || undefined;
       return [
         {
-          queryKey: ["test-type-facet-counts", courseId, nodeIds, difficulties],
-          queryFn: () => api.questionCounts(courseId as string, { node_ids: nodeIds, difficulties }),
+          queryKey: ["test-type-facet-counts", courseId, nodeIds, difficulties, tag],
+          queryFn: () => api.questionCounts(courseId as string, { node_ids: nodeIds, difficulties, tag }),
           enabled: !!courseId,
         },
         {
-          queryKey: ["test-difficulty-facet-counts", courseId, nodeIds, types],
+          queryKey: ["test-difficulty-facet-counts", courseId, nodeIds, types, tag],
           queryFn: () => api.questionCounts(courseId as string, {
             node_ids: nodeIds,
             type: types.length ? types : undefined,
+            tag,
           }),
           enabled: !!courseId,
         },
         {
-          queryKey: ["test-source-facet-counts", courseId, nodeIds, types, difficulties],
+          queryKey: ["test-source-facet-counts", courseId, nodeIds, types, difficulties, tag],
           queryFn: () => api.questionSourceCounts(courseId as string, {
-            node_ids: nodeIds, type: types, difficulties,
+            node_ids: nodeIds, type: types, difficulties, tag,
           }),
           enabled: !!courseId,
         },
@@ -248,6 +253,22 @@ export function TestGenerator() {
     };
   }, [result?.test_id]);
 
+  async function handleRerender(test: GeneratedTestMeta) {
+    setDownloading(`${test.test_id}:rerender`);
+    try {
+      await api.rerenderTest(test.test_id);
+      await refetchPastTests();
+      if (result?.test_id === test.test_id) {
+        const url = await ensureTestFileUrl(test.test_id, "preview");
+        if (url) setPreviewUrl(url);
+      }
+      notify("Test rerendered", "success", test.title);
+    } catch (e) {
+      notify("Could not rerender test", "error", e instanceof Error ? e.message : "Rerender failed.");
+    } finally {
+      setDownloading(null);
+    }
+  }
   async function handleDownload(test: GeneratedTestMeta) {
     setDownloading(`${test.test_id}:test`);
     try {
@@ -317,7 +338,7 @@ export function TestGenerator() {
   function addSection() {
     setSections((prev) => [
       ...prev,
-      { id: nextId.current++, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {}, marks: DEFAULT_MARKS },
+      { id: nextId.current++, name: "", nodeIds: new Set(), typeKeys: [], difficulties: [], selectedTag: "", institutionYears: {}, marks: DEFAULT_MARKS },
     ]);
   }
   function removeSection(id: number) {
@@ -337,6 +358,7 @@ export function TestGenerator() {
   async function handleGenerate() {
     if (!courseId || taskRunning) return;
     setGenerating(true);
+    beginHeavyTask();
     const start = Date.now();
     setGenerationPhase("selecting");
     setCompletedQuestions(0);
@@ -376,6 +398,7 @@ export function TestGenerator() {
           node_ids: s.nodeIds.size ? effectiveNodeFilterIds(config?.nodes ?? [], s.nodeIds) : undefined,
           type_keys: s.typeKeys.length ? s.typeKeys : undefined,
           difficulties: s.difficulties.length ? s.difficulties : undefined,
+          tag: s.selectedTag || undefined,
           source_filters: Object.entries(s.institutionYears).map(([institution, years]) => ({ institution, years })),
           marks: s.marks,
         })),
@@ -420,6 +443,7 @@ export function TestGenerator() {
       notify("Could not generate test", "error", message);
       updateTestGeneration({ status: "failed", error: message });
     } finally {
+      endHeavyTask();
       setGenerating(false);
     }
   }
@@ -532,15 +556,15 @@ export function TestGenerator() {
                   <div className="mt-4 border-t border-border pt-4">
                     <p className="label mb-2">Section filters</p>
                     <FilterMenu
-                      inline
                       nodes={config?.nodes ?? []} counts={flatCounts} selectedNodes={sec.nodeIds}
                       onSelectedNodesChange={(nodeIds) => updateSection(sec.id, { nodeIds })}
-                      onReset={() => updateSection(sec.id, { nodeIds: new Set(), typeKeys: [], difficulties: [], institutionYears: {} })}
+                      onReset={() => updateSection(sec.id, { nodeIds: new Set(), typeKeys: [], difficulties: [], selectedTag: "", institutionYears: {} })}
                       questionTypes={config?.question_types ?? []} typeCounts={(sectionFacetQueries[index * 3]?.data as QuestionCountsResponse | undefined)?.by_type}
                       typeKeys={sec.typeKeys} onTypeKeysChange={(typeKeys) => updateSection(sec.id, { typeKeys })}
                       difficultyLevels={config?.difficulty_levels ?? []} difficultyCounts={(sectionFacetQueries[index * 3 + 1]?.data as QuestionCountsResponse | undefined)?.by_difficulty}
                       difficulties={sec.difficulties} onDifficultiesChange={(difficulties) => updateSection(sec.id, { difficulties })}
                       institutions={sourceOptions?.institutions} institutionCounts={sectionFacetQueries[index * 3 + 2]?.data as Record<string, { total: number; years: Record<string, number> }> | undefined} institutionYears={sec.institutionYears} onInstitutionYearsChange={(institutionYears) => updateSection(sec.id, { institutionYears })}
+                      tags={config?.tags ?? []} selectedTag={sec.selectedTag} onSelectedTagChange={(tag) => updateSection(sec.id, { selectedTag: tag })}
                     />
                     <span className="ml-2 text-xs text-muted-foreground">{sec.nodeIds.size || "All"} topics · {sec.typeKeys.length || "All"} types · {sec.difficulties.length || "All"} difficulties</span>
                     <p className="mt-2 text-sm font-medium" aria-live="polite">
@@ -711,6 +735,19 @@ export function TestGenerator() {
                         onClick={() => handleSolutions(t)}
                       >
                         <BookOpen />
+                      </Button>
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        title="Rerender"
+                        disabled={!!downloading}
+                        onClick={() => handleRerender(t)}
+                      >
+                        {downloading === `${t.test_id}:rerender` ? (
+                          <Loader2 className="animate-spin" />
+                        ) : (
+                          <RefreshCw />
+                        )}
                       </Button>
                       <Button
                         size="icon"

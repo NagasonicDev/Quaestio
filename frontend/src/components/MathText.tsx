@@ -1,6 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { InlineMath } from "react-katex";
-import { useGlossaryTerms } from "./GlossaryProvider";
+import { splitRichTokens } from "../lib/mathText.ts";
+import { useGlossaryTerms } from "./GlossaryProvider.tsx";
 
 /** Expand common legacy scientific notation before rendering LaTeX. */
 function normalizeMathText(text: string) {
@@ -69,20 +70,20 @@ function renderPlainWithGlossary(text: string, terms: { term: string; definition
   return out.length ? out : [text];
 }
 
-/** Render explicit $...$ math and common legacy scientific notation in text. */
+/** Render explicit maths, bold/italic markup and common legacy scientific notation. */
 export function MathText({ text }: { text: string }) {
   const glossary = useGlossaryTerms();
   const parts: ReactNode[] = [];
-  const source = normalizeMathText(text);
-  const re = /\$([^$]+)\$/g;
-  let last = 0;
-  let match: RegExpExecArray | null;
-  let index = 0;
-  while ((match = re.exec(source))) {
-    if (match.index > last) parts.push(...renderPlainWithGlossary(source.slice(last, match.index), glossary));
-    parts.push(<InlineMath key={index++} math={match[1]} errorColor="#b3261e" />);
-    last = re.lastIndex;
-  }
-  if (last < source.length) parts.push(...renderPlainWithGlossary(source.slice(last), glossary));
+  splitRichTokens(normalizeMathText(text)).forEach((token, index) => {
+    if ("math" in token) {
+      parts.push(<InlineMath key={index} math={token.math} errorColor="#b3261e" />);
+      return;
+    }
+    const content = renderPlainWithGlossary(token.text, glossary);
+    if (token.bold && token.italic) parts.push(<strong key={index}><em>{content}</em></strong>);
+    else if (token.bold) parts.push(<strong key={index}>{content}</strong>);
+    else if (token.italic) parts.push(<em key={index}>{content}</em>);
+    else parts.push(...content);
+  });
   return <>{parts}</>;
 }

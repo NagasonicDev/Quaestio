@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { drawFunctionGraph, normalizedFunctionGraph, validFunctionGraph } from "../lib/functionGraph";
+import { drawFunctionGraph, normalizedFunctionGraph, validFunctionGraph } from "../lib/functionGraph.ts";
 
 export function FunctionGraphPreview({ content, className = "" }: { content: Record<string, unknown>; className?: string }) {
   const target = useRef<HTMLDivElement>(null);

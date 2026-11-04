@@ -1,11 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { Check, Circle } from "lucide-react";
-import { api } from "../api/client";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { useCourseConfig } from "../hooks/useCourseConfig";
-import { Button } from "./ui/button";
-import { Panel } from "./system";
+import { api } from "../api/client.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { useCourseConfig } from "../hooks/useCourseConfig.ts";
+import { Button } from "./ui/button.tsx";
+import { Panel } from "./system.tsx";
 
 type Step = {
   key: string;

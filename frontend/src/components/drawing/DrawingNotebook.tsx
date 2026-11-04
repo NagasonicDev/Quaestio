@@ -1,15 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import type { FormEvent } from "react";
 import { Check, CircleDashed, Copy, Eraser, Expand, Highlighter, Minimize2, NotebookPen, PenLine, Plus, Redo2, Settings2, Trash2, Undo2, X } from "lucide-react";
-import { api } from "../../api/client";
-import { MAX_DRAWING_NOTEBOOK_PAGES } from "../../lib/drawingNotebook";
-import type { DrawingNotebook as DrawingNotebookData, DrawingPage, DrawingTool } from "../../lib/drawingNotebook";
-import { cn } from "../../lib/utils";
-import { useTheme } from "../../hooks/useTheme";
-import { SaveStatusIndicator } from "../SaveStatus";
-import { useConfirm } from "../ui/modal";
-import { DrawingCanvas } from "./DrawingCanvas";
-import { createDrawingHistory, type DrawingHistory } from "./drawingHistory";
+import { api } from "../../api/client.ts";
+import { MAX_DRAWING_NOTEBOOK_PAGES } from "../../lib/drawingNotebook.ts";
+import type { DrawingNotebook as DrawingNotebookData, DrawingPage, DrawingTool } from "../../lib/drawingNotebook.ts";
+import { cn } from "../../lib/utils.ts";
+import { useTheme } from "../../hooks/useTheme.ts";
+import { SaveStatusIndicator } from "../SaveStatus.tsx";
+import { useConfirm } from "../ui/modal.tsx";
+import { DrawingCanvas } from "./DrawingCanvas.tsx";
+import { createDrawingHistory, type DrawingHistory } from "./drawingHistory.ts";
 
 interface DrawingNotebookProps {
   questionId: string;

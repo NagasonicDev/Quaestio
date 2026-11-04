@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
-import { api } from "../api/client";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { Field } from "./system";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
-import { notify } from "../lib/notifications";
+import { api } from "../api/client.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { Field } from "./system.tsx";
+import { Input } from "./ui/input.tsx";
+import { Button } from "./ui/button.tsx";
+import { notify } from "../lib/notifications.ts";
 
 /**
  * Quick-create form: name + a comma-separated list of hierarchy level

@@ -2,15 +2,15 @@ import { useState, useEffect } from "react";
 import { useParams, Link, useSearchParams } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, Eye, Pencil } from "lucide-react";
-import { api } from "../api/client";
-import { formatQuestionType } from "../lib/questionTypes";
-import { LoadingState, PageHeader, Panel } from "../components/system";
-import { QuestionSurface } from "../components/QuestionReader";
-import { Button } from "../components/ui/button";
-import { QuestionEditor } from "../components/QuestionEditor";
-import { DrawingNotebook } from "../components/drawing/DrawingNotebook";
-import { useCourseConfig } from "../hooks/useCourseConfig";
-import type { Question } from "../api/types";
+import { api } from "../api/client.ts";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { LoadingState, PageHeader, Panel } from "../components/system.tsx";
+import { QuestionSurface } from "../components/QuestionReader.tsx";
+import { Button } from "../components/ui/button.tsx";
+import { QuestionEditor } from "../components/QuestionEditor.tsx";
+import { DrawingNotebook } from "../components/drawing/DrawingNotebook.tsx";
+import { useCourseConfig } from "../hooks/useCourseConfig.ts";
+import type { Question } from "../api/types.ts";
 
 export function QuestionDetail() {
   const { questionId } = useParams<{ questionId: string }>();

@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { ImagePlus, PenLine, Type, X } from "lucide-react";
-import { DrawingNotebook } from "./drawing/DrawingNotebook";
-import type { DrawingNotebook as DrawingNotebookData } from "../lib/drawingNotebook";
-import { Textarea } from "./ui/textarea";
-import { cn } from "../lib/utils";
+import { DrawingNotebook } from "./drawing/DrawingNotebook.tsx";
+import type { DrawingNotebook as DrawingNotebookData } from "../lib/drawingNotebook.ts";
+import { Textarea } from "./ui/textarea.tsx";
+import { cn } from "../lib/utils.ts";
 
 type AnswerMode = "text" | "notebook" | "image";
 

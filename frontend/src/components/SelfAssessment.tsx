@@ -1,7 +1,7 @@
 import { useId } from "react";
-import { cn } from "../lib/utils";
-import type { Confidence, SelfRating } from "../api/types";
-import { SELF_RATING_HINT, SELF_RATING_LABEL, SELF_RATINGS } from "../lib/reviewSchedule";
+import { cn } from "../lib/utils.ts";
+import type { Confidence, SelfRating } from "../api/types.ts";
+import { SELF_RATING_HINT, SELF_RATING_LABEL, SELF_RATINGS } from "../lib/reviewSchedule.ts";
 
 const CONFIDENCE_OPTIONS: Array<{ value: Confidence; label: string }> = [
   { value: "low", label: "Guessing" },

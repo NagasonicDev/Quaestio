@@ -1,7 +1,7 @@
 import { Layers, ListChecks, Shuffle } from "lucide-react";
-import type { SessionMode } from "../api/types";
-import { SESSION_MODE_HINT, SESSION_MODE_LABEL } from "../lib/sessionPlan";
-import { cn } from "../lib/utils";
+import type { SessionMode } from "../api/types.ts";
+import { SESSION_MODE_HINT, SESSION_MODE_LABEL } from "../lib/sessionPlan.ts";
+import { cn } from "../lib/utils.ts";
 
 const MODE_ICON: Record<SessionMode, typeof Shuffle> = {
   focused: ListChecks,

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, ChevronRight } from "lucide-react";
-import type { CourseNode, NodeCount } from "../api/types";
-import { Checkbox } from "./ui/checkbox";
+import type { CourseNode, NodeCount } from "../api/types.ts";
+import { Checkbox } from "./ui/checkbox.tsx";
 
 interface NodeTreeProps {
   nodes: CourseNode[];

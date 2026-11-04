@@ -2,17 +2,17 @@ import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useIsFetching } from "@tanstack/react-query";
 import { AlertCircle, Check, Info, Menu, Moon, Sun, X } from "lucide-react";
-import { cn } from "../lib/utils";
-import { useTheme } from "../hooks/useTheme";
-import { CourseSelector } from "./CourseSelector";
-import { RecentQuestionsSidebar } from "./RecentQuestionsSidebar";
-import { SaveFailureBanner, SaveStatusIndicator } from "./SaveStatus";
-import { Button } from "./ui/button";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { CourseOnboarding } from "./CourseOnboarding";
-import { dismissTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask";
-import { dismissNotification, useNotifications } from "../lib/notifications";
-import { navTourTarget } from "../lib/tour";
+import { cn } from "../lib/utils.ts";
+import { useTheme } from "../hooks/useTheme.ts";
+import { CourseSelector } from "./CourseSelector.tsx";
+import { RecentQuestionsSidebar } from "./RecentQuestionsSidebar.tsx";
+import { SaveFailureBanner, SaveStatusIndicator } from "./SaveStatus.tsx";
+import { Button } from "./ui/button.tsx";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { CourseOnboarding } from "./CourseOnboarding.tsx";
+import { dismissTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask.ts";
+import { dismissNotification, useNotifications } from "../lib/notifications.ts";
+import { navTourTarget } from "../lib/tour.ts";
 
 type NavItem = { to: string; label: string; end?: boolean };
 

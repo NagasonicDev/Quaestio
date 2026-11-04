@@ -1,13 +1,13 @@
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
 import { Check, FolderTree, Gauge, Settings2, Shapes, SlidersHorizontal, School, Tags } from "lucide-react";
-import { cn } from "../lib/utils";
-import { formatQuestionType } from "../lib/questionTypes";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Modal } from "./ui/modal";
-import { Switch } from "./ui/switch";
-import type { CourseNode, DifficultyLevel } from "../api/types";
+import { cn } from "../lib/utils.ts";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { Button } from "./ui/button.tsx";
+import { Input } from "./ui/input.tsx";
+import { Modal } from "./ui/modal.tsx";
+import { Switch } from "./ui/switch.tsx";
+import type { CourseNode, DifficultyLevel } from "../api/types.ts";
 
 interface FilterMenuProps {
   nodes: CourseNode[];

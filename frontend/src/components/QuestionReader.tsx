@@ -1,14 +1,40 @@
 import type { ReactNode } from "react";
 import { ChevronRight } from "lucide-react";
 import { InlineMath, BlockMath } from "react-katex";
-import "katex/dist/katex.min.css";
-import type { ContentBlock, Question } from "../api/types";
-import { assetUrl } from "../api/client";
-import { formatQuestionType } from "../lib/questionTypes";
-import { Meta, Panel } from "./system";
-import { MathText, normalizeEquationLatex } from "./MathText";
-import { FunctionGraphPreview } from "./FunctionGraphPreview";
-import { flattenQuestionParts } from "../lib/questionParts";
+if (typeof window !== "undefined") void import("katex/dist/katex.min.css");
+import { assetUrl, ensureAssetUrl } from "../lib/assets.ts";
+import type { ContentBlock, Question } from "../api/types.ts";
+import { useState, useEffect } from "react";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { Meta, Panel } from "./system.tsx";
+import { MathText, normalizeEquationLatex } from "./MathText.tsx";
+import { FunctionGraphPreview } from "./FunctionGraphPreview.tsx";
+import { flattenQuestionParts } from "../lib/questionParts.ts";
+
+function AssetImage({ assetPath, alt }: { assetPath: string; alt?: string | null }) {
+  const [src, setSrc] = useState(() => assetUrl(assetPath));
+  useEffect(() => {
+    let active = true;
+    void ensureAssetUrl(assetPath).then((url) => {
+      if (active) setSrc(url || src);
+    });
+    return () => { active = false; };
+  }, [assetPath]);
+  if (!src) {
+    return (
+      <div className="flex max-w-full items-center justify-center rounded-md border border-dashed border-border px-3 py-6 text-xs text-muted-foreground">
+        Image unavailable
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt ?? ""}
+      className="max-w-full rounded-md border border-border"
+    />
+  );
+}
 
 function Block({ block }: { block: ContentBlock }) {
   const c = block.content;
@@ -33,11 +59,7 @@ function Block({ block }: { block: ContentBlock }) {
     case "graph":
       return (
         <figure className="my-2">
-          <img
-            src={assetUrl(c.asset_path ?? "")}
-            alt={c.alt_text ?? ""}
-            className="max-w-full rounded-md border border-border"
-          />
+          <AssetImage assetPath={c.asset_path ?? ""} alt={c.alt_text ?? ""} />
           {c.caption && (
             <figcaption className="mt-1 text-[13px] text-muted-foreground">{c.caption}</figcaption>
           )}

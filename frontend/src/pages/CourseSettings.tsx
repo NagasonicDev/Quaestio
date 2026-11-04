@@ -1,22 +1,23 @@
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { api } from "../api/client";
-import { formatQuestionType } from "../lib/questionTypes";
-import { useActiveCourse } from "../hooks/useActiveCourse";
-import { useCourseConfig } from "../hooks/useCourseConfig";
-import { notify, startOperationNotification } from "../lib/notifications";
-import { StructureEditor } from "../components/StructureEditor";
-import { MathText } from "../components/MathText";
-import { QuestionEditor } from "../components/QuestionEditor";
-import { StimulusManager } from "../components/StimulusManager";
-import { PageHeader, Panel, PanelHead, Meta, Pagination } from "../components/system";
-import { Button } from "../components/ui/button";
-import { ToggleButton } from "../components/FilterMenu";
-import { Modal, useConfirm } from "../components/ui/modal";
-import { Input } from "../components/ui/input";
-import { Switch } from "../components/ui/switch";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs";
-import type { Course, GlossaryTerm, Question } from "../api/types";
+import { api } from "../api/client.ts";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
+import { useCourseConfig } from "../hooks/useCourseConfig.ts";
+import { notify, startOperationNotification } from "../lib/notifications.ts";
+import { beginHeavyTask, endHeavyTask } from "../lib/db/sqlite.ts";
+import { StructureEditor } from "../components/StructureEditor.tsx";
+import { MathText } from "../components/MathText.tsx";
+import { QuestionEditor } from "../components/QuestionEditor.tsx";
+import { StimulusManager } from "../components/StimulusManager.tsx";
+import { PageHeader, Panel, PanelHead, Meta, Pagination } from "../components/system.tsx";
+import { Button } from "../components/ui/button.tsx";
+import { ToggleButton } from "../components/FilterMenu.tsx";
+import { Modal, useConfirm } from "../components/ui/modal.tsx";
+import { Input } from "../components/ui/input.tsx";
+import { Switch } from "../components/ui/switch.tsx";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/ui/tabs.tsx";
+import type { Course, GlossaryTerm, Question } from "../api/types.ts";
 import { Download, Plus, Pencil, Trash2, ExternalLink, ListChecks, Shapes, Gauge, School, Tags } from "lucide-react";
 
 type Tab = "structure" | "tags" | "questions" | "stimuli" | "glossary";
@@ -62,6 +63,7 @@ export function CourseSettings() {
   };
 
   const handleExport = async () => {
+    beginHeavyTask();
     const exportTask = startOperationNotification(exportFormat === "course" ? "Exporting course…" : "Exporting questions…");
     setExportMenuOpen(false);
     try {
@@ -81,6 +83,8 @@ export function CourseSettings() {
       exportTask.succeed(exportFormat === "course" ? "Course export ready" : "Question export ready");
     } catch (e) {
       exportTask.fail("Export failed", e instanceof Error ? e.message : "Failed to create the export file.");
+    } finally {
+      endHeavyTask();
     }
   };
 
@@ -515,7 +519,7 @@ function CourseGlossarySettings({ courseId, glossary }: { courseId: string; glos
   }
 
   async function loadDefaults() {
-    const defaults = (await import("../lib/data")).defaultGlossaryTerms();
+    const defaults = (await import("../lib/data.ts")).defaultGlossaryTerms();
     const merged = [...values];
     const seen = new Set(values.map((g) => g.term.toLowerCase()));
     for (const d of defaults) {

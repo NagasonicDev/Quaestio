@@ -1,9 +1,9 @@
 import { useState, type FormEvent } from "react";
-import { BlockEditor, blocksToPayload, type EditableBlock } from "./BlockEditor";
-import type { StimulusWithContent } from "../api/types";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Panel, PanelHead } from "./system";
+import { BlockEditor, blocksToPayload, type EditableBlock } from "./BlockEditor.tsx";
+import type { StimulusWithContent } from "../api/types.ts";
+import { Button } from "./ui/button.tsx";
+import { Input } from "./ui/input.tsx";
+import { Panel, PanelHead } from "./system.tsx";
 
 function toEditable(blocks: StimulusWithContent["blocks"] | null | undefined): EditableBlock[] {
   if (!blocks || blocks.length === 0) return [];

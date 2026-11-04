@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { BellOff, Clock, Download, HardDrive, RotateCcw } from "lucide-react";
-import { api } from "../api/client";
-import type { ReviewPolicy } from "../api/types";
-import { DEFAULT_REVIEW_POLICY, formatSqlUtc, normalizePolicy } from "../lib/reviewSchedule";
-import { Panel, PanelHead } from "./system";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Switch } from "./ui/switch";
-import { notify } from "../lib/notifications";
+import { api } from "../api/client.ts";
+import type { ReviewPolicy } from "../api/types.ts";
+import { DEFAULT_REVIEW_POLICY, formatSqlUtc, normalizePolicy } from "../lib/reviewSchedule.ts";
+import { Panel, PanelHead } from "./system.tsx";
+import { Button } from "./ui/button.tsx";
+import { Input } from "./ui/input.tsx";
+import { Switch } from "./ui/switch.tsx";
+import { notify } from "../lib/notifications.ts";
 
 const PAUSE_OPTIONS = [
   { label: "a day", days: 1 },

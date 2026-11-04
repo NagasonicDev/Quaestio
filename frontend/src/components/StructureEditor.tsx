@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { ArrowDown, ArrowUp, CirclePlus, Plus, Trash2 } from "lucide-react";
-import { api } from "../api/client";
-import type { CourseFullConfig, CourseNode, LevelDef } from "../api/types";
-import { Panel, PanelHead } from "./system";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { useConfirm } from "./ui/modal";
-import { notify } from "../lib/notifications";
+import { api } from "../api/client.ts";
+import type { CourseFullConfig, CourseNode, LevelDef } from "../api/types.ts";
+import { Panel, PanelHead } from "./system.tsx";
+import { Button } from "./ui/button.tsx";
+import { Input } from "./ui/input.tsx";
+import { useConfirm } from "./ui/modal.tsx";
+import { notify } from "../lib/notifications.ts";
 
 interface StructureEditorProps {
   config: CourseFullConfig;

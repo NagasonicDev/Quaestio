@@ -7,9 +7,9 @@ import {
   retryPersistence,
   subscribePersistence,
   type SaveState,
-} from "../lib/db/persistenceStatus";
-import { Button } from "./ui/button";
-import { cn } from "../lib/utils";
+} from "../lib/db/persistenceStatus.ts";
+import { Button } from "./ui/button.tsx";
+import { cn } from "../lib/utils.ts";
 
 /**
  * A single honest line about local storage: what is happening right now, and

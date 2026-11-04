@@ -2,11 +2,11 @@ import { useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { BellOff, Clock, Info, Play, RotateCcw } from "lucide-react";
-import { api } from "../api/client";
-import type { DueQueue } from "../api/types";
-import { formatQuestionType } from "../lib/questionTypes";
-import { Button } from "./ui/button";
-import { Meta, Panel } from "./system";
+import { api } from "../api/client.ts";
+import type { DueQueue } from "../api/types.ts";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { Button } from "./ui/button.tsx";
+import { Meta, Panel } from "./system.tsx";
 
 /** "Roughly N minutes" — an effort estimate, never a prediction of a result. */
 function sessionSizeNote(queue: DueQueue): string {

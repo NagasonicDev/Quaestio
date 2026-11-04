@@ -1,10 +1,10 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Plus } from "lucide-react";
-import { PageHeader, Panel, PanelHead } from "../components/system";
-import { CreateCourseForm } from "../components/CreateCourseForm";
-import { Button } from "../components/ui/button";
-import { templatesByCategory, type CourseTemplate } from "../lib/courseTemplates";
-import { useInstallTemplate } from "../hooks/useInstallTemplate";
+import { PageHeader, Panel, PanelHead } from "../components/system.tsx";
+import { CreateCourseForm } from "../components/CreateCourseForm.tsx";
+import { Button } from "../components/ui/button.tsx";
+import { templatesByCategory, type CourseTemplate } from "../lib/courseTemplates.ts";
+import { useInstallTemplate } from "../hooks/useInstallTemplate.ts";
 
 /**
  * Full-page "add course" destination: start blank, or begin from a base

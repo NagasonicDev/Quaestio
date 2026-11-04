@@ -1,7 +1,7 @@
 import { CircleCheck, Filter, RotateCcw, Repeat } from "lucide-react";
-import type { PracticePoolCounts, PracticeSessionSummary } from "../api/types";
-import { Button } from "./ui/button";
-import { Panel } from "./system";
+import type { PracticePoolCounts, PracticeSessionSummary } from "../api/types.ts";
+import { Button } from "./ui/button.tsx";
+import { Panel } from "./system.tsx";
 
 /**
  * Two different dead ends, kept apart on purpose.

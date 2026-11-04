@@ -1,19 +1,20 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ArrowDown, ArrowUp, Plus, Trash2 } from "lucide-react";
 import { InlineMath, BlockMath } from "react-katex";
-import "katex/dist/katex.min.css";
-import type { BlockType } from "../api/types";
-import { api, assetUrl } from "../api/client";
-import { Meta, Panel, PanelHead } from "./system";
-import { Button } from "./ui/button";
-import { notify } from "../lib/notifications";
-import { Checkbox } from "./ui/checkbox";
-import { Input } from "./ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { Textarea } from "./ui/textarea";
-import { normalizeEquationLatex } from "./MathText";
-import { FunctionGraphPreview } from "./FunctionGraphPreview";
-import { DEFAULT_FUNCTION_GRAPH } from "../lib/functionGraph";
+if (typeof window !== "undefined") void import("katex/dist/katex.min.css");
+import type { BlockType } from "../api/types.ts";
+import { api, assetUrl } from "../api/client.ts";
+import { ensureAssetUrl } from "../lib/assets.ts";
+import { Meta, Panel, PanelHead } from "./system.tsx";
+import { Button } from "./ui/button.tsx";
+import { notify } from "../lib/notifications.ts";
+import { Checkbox } from "./ui/checkbox.tsx";
+import { Input } from "./ui/input.tsx";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select.tsx";
+import { Textarea } from "./ui/textarea.tsx";
+import { normalizeEquationLatex } from "./MathText.tsx";
+import { FunctionGraphPreview } from "./FunctionGraphPreview.tsx";
+import { DEFAULT_FUNCTION_GRAPH } from "../lib/functionGraph.ts";
 
 export interface EditableBlock {
   tempId: string;
@@ -184,6 +185,15 @@ export function BlockEditor({ label, blocks, onChange, note }: BlockEditorProps)
 
 function ImageBlockFields({ content, onChange }: { content: Record<string, any>; onChange: (patch: Record<string, any>) => void }) {
   const [uploading, setUploading] = useState(false);
+  const [previewSrc, setPreviewSrc] = useState(() => assetUrl(content.asset_path ?? ""));
+  useEffect(() => {
+    let active = true;
+    const assetPath = content.asset_path ?? "";
+    void ensureAssetUrl(assetPath).then((url) => {
+      if (active) setPreviewSrc(url || assetUrl(assetPath));
+    });
+    return () => { active = false; };
+  }, [content.asset_path]);
 
   async function handleFile(file: File | null) {
     if (!file) return;
@@ -203,7 +213,7 @@ function ImageBlockFields({ content, onChange }: { content: Record<string, any>;
       {content.asset_path ? (
         <div className="flex items-start gap-2">
           <img
-            src={assetUrl(content.asset_path)}
+            src={previewSrc}
             alt={content.alt_text ?? ""}
             className="max-h-48 rounded-md border border-border"
           />

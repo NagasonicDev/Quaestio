@@ -1,20 +1,20 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft, Plus, Save, Trash2 } from "lucide-react";
-import { api } from "../api/client";
-import { formatQuestionType } from "../lib/questionTypes";
-import { ToggleButton } from "./FilterMenu";
-import { BlockEditor, blocksToPayload, emptyBlock, type EditableBlock } from "./BlockEditor";
-import type { CourseFullConfig, ContentBlock, CourseNode, Question, Stimulus } from "../api/types";
-import { Field, Panel, PanelHead } from "./system";
-import { Button } from "./ui/button";
-import { notify, startOperationNotification } from "../lib/notifications";
-import { Input } from "./ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
-import { Switch } from "./ui/switch";
-import { Checkbox } from "./ui/checkbox";
-import { Modal, useConfirm } from "./ui/modal";
-import { StimulusManager } from "./StimulusManager";
+import { api } from "../api/client.ts";
+import { formatQuestionType } from "../lib/questionTypes.ts";
+import { ToggleButton } from "./FilterMenu.tsx";
+import { BlockEditor, blocksToPayload, emptyBlock, type EditableBlock } from "./BlockEditor.tsx";
+import type { CourseFullConfig, ContentBlock, CourseNode, Question, Stimulus } from "../api/types.ts";
+import { Field, Panel, PanelHead } from "./system.tsx";
+import { Button } from "./ui/button.tsx";
+import { notify, startOperationNotification } from "../lib/notifications.ts";
+import { Input } from "./ui/input.tsx";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select.tsx";
+import { Switch } from "./ui/switch.tsx";
+import { Checkbox } from "./ui/checkbox.tsx";
+import { Modal, useConfirm } from "./ui/modal.tsx";
+import { StimulusManager } from "./StimulusManager.tsx";
 
 interface EditableOption {
   blocks: EditableBlock[];
