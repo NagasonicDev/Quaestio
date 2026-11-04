@@ -1,17 +1,19 @@
-import { all, flush, getFirst, run, runMany, transaction } from "./db/sqlite";
-import { claimQuestionId, newId, newQuestionId, nowUtc } from "./id";
+import { all, flush, getFirst, run, runMany, transaction } from "./db/sqlite.ts";
+import { claimQuestionId, newId, newQuestionId, nowUtc } from "./id.ts";
+import { resolveStimulusLinks } from "./stimulus.ts";
 import {
   deleteAssetBlob,
   deleteUnreferencedAssetBlob,
   finalizeQuestionAssets,
   findUnreferencedAssetIds,
   referencedAssetIds,
-} from "./assets";
-import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles, storeTestSolutionFile } from "./tests";
-import { buildExamDocument, parseExamDocument } from "./examDocument";
-import { getTestFile } from "./db/indexeddb";
-import { createRenderer } from "./paperRenderer";
-import { logTiming } from "./timing";
+} from "./assets.ts";
+import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles, storeTestSolutionFile } from "./tests.ts";
+import { buildExamDocument, parseExamDocument } from "./examDocument.ts";
+import { getTestFile } from "./db/indexeddb.ts";
+import type { DocSection } from "./docx.ts";
+import { createRenderer } from "./paperRenderer.ts";
+import { logTiming } from "./timing.ts";
 import type {
   AttemptInput,
   AttemptStatus,
@@ -52,7 +54,7 @@ import type {
   TestSectionInput,
   TestSectionResult,
   TopicProgress,
-} from "../api/types";
+} from "../api/types.ts";
 import {
   dueReason,
   emptyReviewState,
@@ -63,16 +65,16 @@ import {
   normalizePolicy,
   parseSqlUtc,
   rankDueQuestions,
-} from "./reviewSchedule";
-import type { ReviewState } from "./reviewSchedule";
-import { buildSessionPlan, suggestedSessionSize } from "./sessionPlan";
-import type { PoolItem } from "./sessionPlan";
-import { EMPTY_ACTIVITY, describeMarkingMix, pickNextAction, rollupTopicActivity } from "./studyProgress";
-import type { NodeActivity } from "./studyProgress";
-import { selectQuestionIndexes } from "./questionSelection";
-import { recentlyUsedQuestionIds, parseQuestionIdList } from "./testHistory";
-import type { DrawingNotebook, DrawingPage } from "./drawingNotebook";
-import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingPage } from "./drawingNotebook";
+} from "./reviewSchedule.ts";
+import type { ReviewState } from "./reviewSchedule.ts";
+import { buildSessionPlan, suggestedSessionSize } from "./sessionPlan.ts";
+import type { PoolItem } from "./sessionPlan.ts";
+import { EMPTY_ACTIVITY, describeMarkingMix, pickNextAction, rollupTopicActivity } from "./studyProgress.ts";
+import type { NodeActivity } from "./studyProgress.ts";
+import { selectQuestionIndexes } from "./questionSelection.ts";
+import { recentlyUsedQuestionIds, parseQuestionIdList } from "./testHistory.ts";
+import type { DrawingNotebook, DrawingPage } from "./drawingNotebook.ts";
+import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingPage } from "./drawingNotebook.ts";
 
 // ---------- helpers ----------
 
@@ -336,6 +338,39 @@ export async function deleteCourse(courseId: string, onDeleted?: () => void): Pr
     } catch { /* malformed JSON — skip */ }
   }
 
+  // Assets recorded only in the asset table (e.g. shared/imported images) must
+  // also be candidates for cleanup.
+  const courseAssetRows = await all<SqlRow>(
+    `SELECT a.asset_id FROM asset a JOIN question q ON q.question_id = a.question_id WHERE q.course_id = ?`,
+    [courseId]
+  );
+  for (const row of courseAssetRows) {
+    const path = row.asset_id;
+    if (typeof path === "string" && path) assetIds.add(path);
+  }
+  // Stimulus blocks owned by this course can also reference blobs, so include
+  // their asset ids in the release candidate set.
+  const courseStimulusBlocks = await all<SqlRow>(
+    `SELECT sb.content_json FROM stimulus_block sb
+     JOIN stimulus st ON st.stimulus_id = sb.stimulus_id WHERE st.course_id = ?`,
+    [courseId]
+  );
+  for (const row of courseStimulusBlocks) {
+    try {
+      const collect = (value: unknown): void => {
+        if (!value || typeof value !== "object") return;
+        if (Array.isArray(value)) {
+          for (const item of value) collect(item);
+          return;
+        }
+        const record = value as Record<string, unknown>;
+        const path = record.asset_path;
+        if (typeof path === "string" && path) assetIds.add(path);
+        for (const nested of Object.values(record)) collect(nested);
+      };
+      collect(JSON.parse(String(row.content_json)));
+    } catch { /* malformed JSON - skip */ }
+  }
   const tests = await all<SqlRow>("SELECT test_id FROM generated_test WHERE course_id = ?", [courseId]);
   for (const row of tests) await deleteTestOutputs(String(row.test_id));
 
@@ -1698,7 +1733,13 @@ async function collectAssetIds(questionId: string, into: Set<string>): Promise<v
       /* malformed JSON — skip */
     }
   }
-  // Recurse into child parts.
+  // Scan asset ownership rows too, so assets tracked only in the asset table
+  // (shared/imported images) are released when their owner question goes.
+  const assetRows = await all<SqlRow>("SELECT asset_id FROM asset WHERE question_id = ?", [questionId]);
+  for (const row of assetRows) {
+    const path = row.asset_id;
+    if (typeof path === "string" && path) into.add(path);
+  }
   const children = await all<SqlRow>(
     "SELECT question_id FROM question WHERE parent_question_id = ?",
     [questionId]
@@ -1940,6 +1981,7 @@ export async function questionCounts(
     difficulty?: string | number;
     difficulties?: Array<string | number>;
     node_ids?: string[];
+    tag?: string;
   } = {}
 ): Promise<QuestionCountsResponse> {
   const f = buildFilters({
@@ -1950,6 +1992,7 @@ export async function questionCounts(
     difficulty: opts.difficulty,
     difficulties: opts.difficulties,
     nodeIds: opts.node_ids,
+    tag: opts.tag,
   });
   const whereSql = f.where.join(" AND ");
   const totalRow = await getFirst<SqlRow>(
@@ -3035,6 +3078,9 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
 
   const jobId = newId("imp");
   const now = nowUtc();
+
+  let outcome: any = null;
+  await transaction(async () => {
   await run(
     "INSERT INTO import_job (import_job_id, course_id, source_filename, status, created_at) VALUES (?, ?, ?, 'processing', ?)",
     [jobId, courseId, data?.source_filename ?? null, now]
@@ -3043,6 +3089,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
   const questions: any[] = data?.questions ?? [];
   const existingQuestionIds = await all<{ question_id: string }>("SELECT question_id FROM question");
   const usedQuestionIds = new Set(existingQuestionIds.map((row) => String(row.question_id)));
+  const questionMap = new Map<string, string>();
   const results: ImportResponse["results"] = [];
   let importedCount = 0;
   let errorCount = 0;
@@ -3172,6 +3219,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
       );
     }
     const parentId = claimQuestionId(q.question_id, usedQuestionIds);
+    if (String(q.question_id ?? "").trim()) questionMap.set(String(q.question_id).trim(), parentId);
     await run(
       `INSERT INTO question (question_id, course_id, type_key, difficulty, marks, review_status, classification_confidence, source_id, created_at, updated_at)
        VALUES (?, ?, ?, ?, ?, 'approved', ?, ?, ?, ?)`,
@@ -3203,6 +3251,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
     await finalizeAssetsForStatements(parentId, statements);
     const importPart = async (part: any, partParentId: string, inheritedType: string): Promise<void> => {
       const partId = claimQuestionId(part.question_id, usedQuestionIds);
+      if (String(part.question_id ?? "").trim()) questionMap.set(String(part.question_id).trim(), partId);
       await run(
         `INSERT INTO question (question_id, course_id, type_key, marks, parent_question_id, part_label, review_status, created_at, updated_at)
          VALUES (?, ?, ?, ?, ?, ?, 'approved', ?, ?)`,
@@ -3225,11 +3274,64 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
     results.push({ index: i, status: "imported", question_id: parentId, errors, warnings });
   }
 
+  const stimuli: any[] = Array.isArray(data?.stimuli) ? data.stimuli : [];
+  if (data?.stimuli !== undefined && data?.stimuli !== null && !Array.isArray(data.stimuli)) {
+    jobWarnings.push("Ignored 'stimuli' because it is not an array.");
+  }
+  const stimulusMap = new Map<string, string>();
+  for (const stimulus of stimuli) {
+    const authoredStimulusId = String(stimulus?.stimulus_id ?? "").trim();
+    if (!authoredStimulusId) {
+      jobWarnings.push("Skipped a stimulus with no stimulus_id.");
+      continue;
+    }
+    if (stimulusMap.has(authoredStimulusId)) {
+      jobWarnings.push(`Skipped duplicate stimulus '${authoredStimulusId}'.`);
+      continue;
+    }
+    if (
+      !Array.isArray(stimulus.blocks) ||
+      stimulus.blocks.length === 0 ||
+      stimulus.blocks.some((block: any) => !block || typeof block.block_type !== "string")
+    ) {
+      jobWarnings.push(`Skipped stimulus '${authoredStimulusId}' because its blocks are missing or malformed.`);
+      continue;
+    }
+    const newStimulusId = newId("stim");
+    const statements: Array<[string, any[]]> = [
+      [
+        "INSERT INTO stimulus (stimulus_id, course_id, title, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
+        [newStimulusId, courseId, typeof stimulus.title === "string" ? stimulus.title : null, now, now],
+      ],
+    ];
+    await insertStimulusBlocks(newStimulusId, stimulus.blocks, statements);
+    await runMany(statements);
+    stimulusMap.set(authoredStimulusId, newStimulusId);
+  }
+  if (data?.question_stimuli !== undefined && data?.question_stimuli !== null && !Array.isArray(data.question_stimuli)) {
+    jobWarnings.push("Ignored 'question_stimuli' because it is not an array.");
+  }
+  const linkRows: any[] = Array.isArray(data?.question_stimuli) ? data.question_stimuli : [];
+  const resolvedStimulusLinks = resolveStimulusLinks(linkRows, questionMap, stimulusMap);
+  await runMany(
+    resolvedStimulusLinks.links.map(([questionId, stimulusId]) => [
+      "INSERT OR IGNORE INTO question_stimulus (question_id, stimulus_id) VALUES (?, ?)",
+      [questionId, stimulusId],
+    ])
+  );
+  if (resolvedStimulusLinks.skipped > 0) {
+    jobWarnings.push(
+      `Skipped ${resolvedStimulusLinks.skipped} question–stimulus link(s) whose question or stimulus was not imported.`
+    );
+  }
+
   await run("UPDATE import_job SET status = ? WHERE import_job_id = ?", [
     importedCount ? "imported" : "failed",
     jobId,
   ]);
-  return { import_job_id: jobId, imported_count: importedCount, error_count: errorCount, results, warnings: jobWarnings };
+  outcome = { import_job_id: jobId, imported_count: importedCount, error_count: errorCount, results, warnings: jobWarnings };
+  });
+  return outcome;
 }
 
 // ---------- test generation ----------
@@ -3244,6 +3346,7 @@ export interface GenerateTestPayload {
   format?: "docx" | "pdf";
   shuffle?: boolean;
   ordering?: string;
+  random?: () => number;
   sections?: TestSectionInput[];
   /** Exclude questions used by this many most recent tests (0 = off). */
   excludeRecentTests?: number;
@@ -3263,6 +3366,7 @@ async function matchingQuestionIds(
     marks_min?: number;
     marks_max?: number;
     node_ids?: string[];
+    tag?: string;
     institutionYears?: Array<{ institution: string; years: number[] }>;
     limit?: number;
   }
@@ -3279,6 +3383,7 @@ async function matchingQuestionIds(
     marksMin: opts.marks_min,
     marksMax: opts.marks_max,
     nodeIds: opts.node_ids,
+    tag: opts.tag,
     institutionYears: opts.institutionYears,
   });
   const limitSql = opts.limit ? "LIMIT ?" : "";
@@ -3301,6 +3406,7 @@ async function matchingQuestionMarks(
     difficulties: opts.difficulties, difficultyMin: opts.difficulty_min,
     difficultyMax: opts.difficulty_max, marksMin: opts.marks_min,
     marksMax: opts.marks_max, nodeIds: opts.node_ids,
+    tag: opts.tag,
     institutionYears: opts.institutionYears,
   });
   return all<SqlRow>(
@@ -3317,12 +3423,13 @@ export async function estimateTestSections(
     const opts = {
       type_keys: sec.type_keys,
       difficulties: sec.difficulties,
+      tag: sec.tag,
       node_ids: sec.node_ids,
       institutionYears: sec.source_filters,
     };
     const f = buildFilters({
       courseId, approvedOnly: true, wholeQuestions: true,
-      typeKeys: opts.type_keys, difficulties: opts.difficulties, nodeIds: opts.node_ids, institutionYears: opts.institutionYears,
+      typeKeys: opts.type_keys, difficulties: opts.difficulties, tag: opts.tag, nodeIds: opts.node_ids, institutionYears: opts.institutionYears,
     });
     const row = await getFirst<SqlRow>(
       `SELECT COUNT(*) AS question_count, COALESCE(SUM(q.marks), 0) AS available_marks FROM question q WHERE ${f.where.join(" AND ")} AND q.marks IS NOT NULL`,
@@ -3374,6 +3481,14 @@ export function orderSectionQuestions(
   if (rest.length && typeof rest[rest.length - 1] === "string") {
     ordering = rest[rest.length - 1];
   }
+  const random: () => number =
+    (typeof ordering === "object" && ordering && typeof (ordering as { random?: unknown }).random === "function")
+      ? ((ordering as { random: () => number }).random)
+      : (rest.length && typeof rest[0] === "function")
+        ? (rest[0] as () => number)
+        : (rest.length && typeof rest[rest.length - 1] === "object" && rest[rest.length - 1] && typeof (rest[rest.length - 1] as { random?: unknown }).random === "function")
+          ? ((rest[rest.length - 1] as { random: () => number }).random)
+          : Math.random;
   const mode = resolveOrdering(ordering);
   const byTopicThenId = (a: Question, b: Question) =>
     (a.node_ids?.[0] ?? "").localeCompare(b.node_ids?.[0] ?? "") || a.question_id.localeCompare(b.question_id);
@@ -3383,9 +3498,12 @@ export function orderSectionQuestions(
       || (TYPE_ORDER[a.type_key] ?? 9) - (TYPE_ORDER[b.type_key] ?? 9)
       || byTopicThenId(a, b));
   }
-  return [...questions].sort((a, b) => (TYPE_ORDER[a.type_key] ?? 9) - (TYPE_ORDER[b.type_key] ?? 9)
-    || (a.difficulty ?? 0) - (b.difficulty ?? 0)
-    || byTopicThenId(a, b));
+  const shuffled = [...questions];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
 }
 
 function round2(n: number): number {
@@ -3407,11 +3525,19 @@ async function selectForMarks(
   keepIds: ReadonlySet<string>,
   onHydrating?: () => void,
   cachedCandidates?: Promise<SqlRow[]>,
-  timingPrefix?: string
+  timingPrefix?: string,
+  random?: () => number
 ): Promise<{ questions: Question[]; infeasible: boolean; nearestBelow: number; nearestAbove: number | null }> {
   const queryStart = performance.now();
   if (timingPrefix) performance.mark(`${timingPrefix}:candidate-query:start`);
+  const rng = random ?? Math.random;
   const rows = [...await (cachedCandidates ?? matchingQuestionMarks(courseId, opts))];
+  // Candidate order must not be inherited from storage so filtered selections
+  // vary across runs; Fisher-Yates is stable regardless of filter clauses.
+  for (let i = rows.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [rows[i], rows[j]] = [rows[j], rows[i]];
+  }
   if (timingPrefix) recordGenerationTiming(`${timingPrefix}:candidate-query`, queryStart);
   // A question already used in another section must not be selected again;
   // author-pinned questions must be. Both are index sets into this section.
@@ -3455,7 +3581,8 @@ async function sectionQuestions(
   keepQuestionIds: ReadonlySet<string>,
   onHydrating: () => void,
   candidateCache: Map<string, Promise<SqlRow[]>>,
-  timingPrefix: string
+  timingPrefix: string,
+  random?: () => number
 ): Promise<{
   questions: Question[];
   marks: number;
@@ -3469,6 +3596,7 @@ async function sectionQuestions(
     type_key: undefined,
     type_keys: sec.type_keys,
     difficulties: sec.difficulties,
+    tag: sec.tag,
     node_ids: sec.node_ids,
     institutionYears: sec.source_filters,
   };
@@ -3478,6 +3606,7 @@ async function sectionQuestions(
     type_keys: [...(opts.type_keys ?? [])].sort(),
     difficulties: [...(opts.difficulties ?? [])].map(Number).sort((a, b) => a - b),
     node_ids: [...(opts.node_ids ?? [])].sort(),
+    tag: opts.tag ?? null,
     institutionYears: [...(opts.institutionYears ?? [])]
       .map(({ institution, years }) => ({ institution, years: [...years].sort((a, b) => a - b) }))
       .sort((a, b) => a.institution.localeCompare(b.institution)),
@@ -3488,7 +3617,7 @@ async function sectionQuestions(
     candidateCache.set(signature, cachedCandidates);
   }
   const display = sec.name || `Section ${index + 1}`;
-  const result = await selectForMarks(courseId, sec.marks!, opts, usedQuestionIds, keepQuestionIds, onHydrating, cachedCandidates, timingPrefix);
+  const result = await selectForMarks(courseId, sec.marks!, opts, usedQuestionIds, keepQuestionIds, onHydrating, cachedCandidates, timingPrefix, random);
   const { questions, infeasible, nearestBelow, nearestAbove } = result;
   const secMarks = round2(questions.reduce((sum, q) => sum + (q.marks ?? 0), 0));
   if (!questions.length) {
@@ -3515,6 +3644,7 @@ async function estimateSectionMarks(courseId: string, opts: Parameters<typeof ma
   const f = buildFilters({
     courseId, approvedOnly: true, wholeQuestions: true,
     typeKeys: opts.type_keys, difficulties: opts.difficulties, nodeIds: opts.node_ids,
+    tag: opts.tag,
     institutionYears: opts.institutionYears,
   });
   const row = await getFirst<SqlRow>(
@@ -3576,7 +3706,8 @@ export async function generateTest(
       courseId, i, work[i], config, usedQuestionIds, keepQuestionIds,
       () => payload.onProgress?.({ phase: "hydrating" }),
       candidateCache,
-      `${timingPrefix}:section-${i + 1}`
+      `${timingPrefix}:section-${i + 1}`,
+      payload.random
     ));
     for (const q of selected[i].questions) usedQuestionIds.add(q.question_id);
   }
@@ -3790,6 +3921,85 @@ export async function generateTestSolutions(testId: string, onProgress?: (comple
   );
   logTiming("solutions:total", solutionsStart, `${row.format}`);
 }
+
+export async function rerenderTest(
+  testId: string,
+  onProgress?: (progress: { phase: "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void,
+): Promise<void> {
+  const row = await getFirst<SqlRow>("SELECT * FROM generated_test WHERE test_id = ?", [testId]);
+  if (!row) throw new Error("Generated test not found");
+
+  const snapshot = parseExamDocument(row.document_json == null ? null : String(row.document_json));
+  let doc: ReturnType<typeof buildExamDocument>;
+  if (snapshot) {
+    doc = snapshot;
+  } else {
+    const questionIds = parseQuestionIdList(String(row.question_ids_json));
+    if (!questionIds.length) {
+      throw new Error("This test's question list is unreadable, so it cannot be rerendered.");
+    }
+    const questions = await hydrateQuestions(questionIds);
+    const savedFilter = parseJson(String(row.filter_json));
+    const generatedSections = Array.isArray(savedFilter.generated_sections)
+      ? savedFilter.generated_sections as Array<{ label: string | null; question_ids: string[] }>
+      : [];
+    const questionById = new Map(questions.map((question) => [question.question_id, question]));
+    const sections = generatedSections.length
+      ? generatedSections.map((section) => ({
+          label: section.label,
+          questions: section.question_ids.map((id) => questionById.get(id)).filter((q): q is Question => !!q),
+        }))
+      : [{ label: null, questions }];
+    doc = buildExamDocument({
+      testId,
+      title: String(row.title),
+      format: String(row.format),
+      generatedAt: String(row.created_at ?? nowUtc()),
+      targetMarks: Number(row.target_marks) || 0,
+      totalMarks: questions.reduce((sum, q) => sum + (q.marks ?? 0), 0),
+      sections,
+      legacy: true,
+    });
+  }
+
+  const format = String(row.format) as "docx" | "pdf";
+  const sections = doc.sections.map((section) => ({
+    label: section.label,
+    questions: section.questions,
+  })) as DocSection[];
+  const stimuli = (doc.stimuli ?? []).map((item) => ({
+    stimulus: item.stimulus,
+    questionNumbers: item.questionNumbers,
+  })) as any;
+  const questions = sections.flatMap((section) => section.questions);
+  const files = await buildTestOutputs({
+    testId,
+    title: String(row.title),
+    courseName: doc.courseName ?? "",
+    format,
+    questions,
+    sectionResults: [],
+    achievedMarks: doc.totalMarks,
+    sections,
+    stimuli,
+    doc,
+    onProgress: (p) => {
+      if (p.phase === "paper" || p.phase === "preview" || p.phase === "saving") {
+        onProgress?.({ phase: p.phase as "paper" | "preview" | "saving", questionCount: p.questionCount, completedQuestions: p.completedQuestions });
+      }
+    },
+  });
+  await storeTestFiles(testId, files);
+  onProgress?.({ phase: "saving" });
+
+  if (Number(row.solutions_generated) === 1) {
+    await generateTestSolutions(testId, (completed, total) => {
+      onProgress?.({ phase: "paper", questionCount: total, completedQuestions: completed });
+    });
+  }
+  logTiming("rerender:total", performance.now());
+}
+
 
 export async function deleteTest(testId: string): Promise<void> {
   await deleteTestOutputs(testId);

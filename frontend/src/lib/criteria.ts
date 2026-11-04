@@ -1,4 +1,4 @@
-import type { ContentBlock, Question, Source } from "../api/types";
+import type { ContentBlock, Question, Source } from "../api/types.ts";
 
 export interface CriteriaRow {
   criteria: string;

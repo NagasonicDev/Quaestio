@@ -19,7 +19,7 @@
 // extensionless path. Every other import in the app is bundled by Vite, which
 // does not need it.
 import { daysBetween } from "./reviewSchedule.ts";
-import type { CourseNode } from "../api/types";
+import type { CourseNode } from "../api/types.ts";
 
 /**
  * Reviews needed in a topic before the app is willing to describe how that

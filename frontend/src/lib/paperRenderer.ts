@@ -1,9 +1,9 @@
-import type { ExamDocument } from "./examDocument";
-import type { DocOptions, DocSection, DocStimulusItem } from "./docx";
-import { buildDocxPaper, buildDocxSolutions, collectImages } from "./docx";
-import { renderPaperHtml, renderSolutionsHtml } from "./examHtml";
-import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
-import type { ResolvedImage } from "./resolvers";
+import type { ExamDocument } from "./examDocument.ts";
+import type { DocOptions, DocSection, DocStimulusItem } from "./docx.ts";
+import { buildDocxPaper, buildDocxSolutions, collectImages } from "./docx.ts";
+import { renderPaperHtml, renderSolutionsHtml } from "./examHtml.ts";
+import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile.ts";
+import type { ResolvedImage } from "./resolvers.ts";
 
 /** A snapshot plus the paper-render progress hook the builders want. */
 export type RenderInput = ExamDocument & { onQuestionProgress?: (completed: number, total: number) => void };

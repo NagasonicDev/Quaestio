@@ -1,4 +1,4 @@
-import type { GlossaryTerm } from "../api/types";
+import type { GlossaryTerm } from "../api/types.ts";
 
 /** NESA command terms included with HSC course templates. */
 export const NESA_HSC_GLOSSARY: GlossaryTerm[] = [

@@ -187,6 +187,7 @@ export interface TestSectionInput {
   type_key?: string | null;
   type_keys?: string[];
   difficulties?: Array<number | string>;
+  tag?: string;
   source_filters?: InstitutionYearFilter[];
   marks?: number | null;
 }

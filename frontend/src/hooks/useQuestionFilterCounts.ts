@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
-import { api } from "../api/client";
-import type { CourseNode } from "../api/types";
-import { effectiveNodeFilterIds } from "../lib/nodeFilters";
+import { api } from "../api/client.ts";
+import type { CourseNode } from "../api/types.ts";
+import { effectiveNodeFilterIds } from "../lib/nodeFilters.ts";
 
 export function useQuestionFilterCounts(
   courseId: string | null,

@@ -8,10 +8,15 @@
  * KaTeX rasterises at {@link MATH_FONT_PX}, so a rendered image's pixel size
  * maps to points as `targetPt / MATH_FONT_PX` — see `mathPtSize`.
  */
-export const MATH_FONT_PX = 16;
+// KaTeX's `.katex` rules render at `1.21em` relative to the wrapper, so pinning
+// the wrapper at 16px would yield ~19.3 CSS px glyphs. Compensate here so the
+// raster matches the body text size (16px ≈ 12pt).
+export const MATH_FONT_PX = 16 / 1.21;
 
 export interface TextToken {
   text: string;
+  bold?: boolean;
+  italic?: boolean;
 }
 export interface MathToken {
   math: string;
@@ -39,6 +44,23 @@ export function hasMath(text: string): boolean {
   return spanRegExp().test(text);
 }
 
+/** Markdown-style `**bold**`, `*italic*` and `***both***` inside plain text. */
+function splitEmphasis(text: string): TextToken[] {
+  const out: TextToken[] = [];
+  const re = /\*\*\*([^*\n]+)\*\*\*|\*\*([^*\n]+)\*\*|\*([^*\n]+)\*/g;
+  let last = 0;
+  let match: RegExpExecArray | null;
+  while ((match = re.exec(text))) {
+    if (match.index > last) out.push({ text: text.slice(last, match.index) });
+    if (match[1] != null) out.push({ text: match[1], bold: true, italic: true });
+    else if (match[2] != null) out.push({ text: match[2], bold: true });
+    else out.push({ text: match[3], italic: true });
+    last = re.lastIndex;
+  }
+  if (last < text.length) out.push({ text: text.slice(last) });
+  return out;
+}
+
 /** Split `text` into plain and math runs, preserving every other character. */
 export function splitRichTokens(text: string): RichToken[] {
   const out: RichToken[] = [];
@@ -46,11 +68,11 @@ export function splitRichTokens(text: string): RichToken[] {
   let last = 0;
   let match: RegExpExecArray | null;
   while ((match = re.exec(text))) {
-    if (match.index > last) out.push({ text: text.slice(last, match.index) });
+    if (match.index > last) out.push(...splitEmphasis(text.slice(last, match.index)));
     out.push({ math: match[1] ?? match[2] ?? match[3] ?? match[4] ?? "" });
     last = re.lastIndex;
   }
-  if (last < text.length) out.push({ text: text.slice(last) });
+  if (last < text.length) out.push(...splitEmphasis(text.slice(last)));
   return out;
 }
 

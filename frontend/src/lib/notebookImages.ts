@@ -1,4 +1,4 @@
-import type { DrawingPage, DrawingStroke } from "./drawingNotebook";
+import type { DrawingPage, DrawingStroke } from "./drawingNotebook.ts";
 
 const WIDTH = 1024;
 const HEIGHT = 768;

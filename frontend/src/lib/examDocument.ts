@@ -1,5 +1,5 @@
-import type { Question, StimulusWithContent } from "../api/types";
-import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
+import type { Question, StimulusWithContent } from "../api/types.ts";
+import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile.ts";
 
 /**
  * A frozen snapshot of an issued exam paper: the questions exactly as selected

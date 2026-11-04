@@ -1,4 +1,4 @@
-import type { CourseNode } from "../api/types";
+import type { CourseNode } from "../api/types.ts";
 
 /**
  * Turn literal hierarchy picks into classification IDs for filtering.

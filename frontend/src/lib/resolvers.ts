@@ -1,10 +1,10 @@
-import type { ContentBlock } from "../api/types";
-import * as idb from "./db/indexeddb";
-import { contentOf, tableCellText, tableRows } from "./criteria";
-import { mathExpressions, looksLikeStandaloneLatex } from "./mathText";
-import { renderLatexPng, equationStats } from "./equations";
-import { normalizedFunctionGraph, renderFunctionGraphPng } from "./functionGraph";
-import { logTiming } from "./timing";
+import type { ContentBlock } from "../api/types.ts";
+import * as idb from "./db/indexeddb.ts";
+import { contentOf, tableCellText, tableRows } from "./criteria.ts";
+import { mathExpressions, looksLikeStandaloneLatex } from "./mathText.ts";
+import { renderLatexPng, equationStats } from "./equations.ts";
+import { normalizedFunctionGraph, renderFunctionGraphPng } from "./functionGraph.ts";
+import { logTiming } from "./timing.ts";
 
 export const IMAGE_TYPES = new Set(["image", "diagram", "graph"]);
 

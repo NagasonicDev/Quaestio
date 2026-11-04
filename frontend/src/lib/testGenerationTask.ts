@@ -1,5 +1,5 @@
 import { useSyncExternalStore } from "react";
-import type { GeneratedTestMeta } from "../api/types";
+import type { GeneratedTestMeta } from "../api/types.ts";
 
 export type TestGenerationPhase = "selecting" | "hydrating" | "paper" | "preview" | "saving";
 

@@ -7,13 +7,13 @@
  * argued about, and a pure function is the cheapest place to settle them. The
  * data layer supplies the pool; nothing here touches SQL.
  *
- * Focused and due-review sessions keep the pool's own order, because in both
- * cases the ordering already means something: the student chose a topic, or the
- * queue ranked the items. Only mixed practice reorders, and it does so by
- * interleaving topics so that one large topic cannot quietly fill the session.
+ * Due-review sessions keep the queue's own ranked order, because the queue
+ * already means something. Focused practice is shuffled so a filtered pool does
+ * not always come out in storage order, and mixed practice interleaves topics
+ * so that one large topic cannot quietly fill the session.
  */
 
-import type { DueReasonKind } from "./reviewSchedule";
+import type { DueReasonKind } from "./reviewSchedule.ts";
 
 export type SessionMode = "focused" | "mixed" | "due_review";
 
@@ -131,7 +131,12 @@ export function buildSessionPlan(pool: readonly PoolItem[], options: PlanOptions
   for (const [key, bucket] of buckets) buckets.set(key, shuffle(bucket, random));
 
   const balanced = options.mode === "mixed" && buckets.size > 1;
-  const items = balanced ? interleave(buckets, size) : unique.slice(0, size);
+  // Focused practice is also meant to vary across runs instead of always
+  // following the insert/import id order of the filtered pool. Due review
+  // keeps its ranking, and multi-topic mixed practice already balances
+  // topics via interleave; only the single-topic filtered list stays put.
+  const ordered = options.mode === "focused" ? shuffle(unique, random) : (balanced ? interleave(buckets, size) : unique);
+  const items = (options.mode === "focused" || !balanced) ? ordered.slice(0, size) : ordered;
 
   const selectedByTopic = new Map<string, number>();
   for (const item of items) {

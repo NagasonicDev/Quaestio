@@ -1,5 +1,5 @@
-import type { DrawingNotebook, DrawingPage } from "../api/types";
-export type { DrawingNotebook, DrawingPage, DrawingPoint, DrawingStroke, DrawingTool } from "../api/types";
+import type { DrawingNotebook, DrawingPage } from "../api/types.ts";
+export type { DrawingNotebook, DrawingPage, DrawingPoint, DrawingStroke, DrawingTool } from "../api/types.ts";
 
 export const MAX_DRAWING_NOTEBOOK_PAGES = 12;
 /** Pages marked per submission; mirrors the hosted daily page allowance. */

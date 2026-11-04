@@ -1,7 +1,7 @@
-import type { ContentBlock, Question, Slot } from "../api/types";
-import { getFirst } from "./db/sqlite";
-import { applyCourseBundle, type ParsedBundle } from "./exchange";
-import { nowUtc } from "./id";
+import type { ContentBlock, Question, Slot } from "../api/types.ts";
+import { getFirst } from "./db/sqlite.ts";
+import { applyCourseBundle, type ParsedBundle } from "./exchange.ts";
+import { nowUtc } from "./id.ts";
 
 /**
  * The optional starter course. It is a small, self-describing example: the

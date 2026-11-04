@@ -6,9 +6,12 @@ import {
   Footer,
   ImageRun,
   LevelFormat,
+  OnOffElement,
   Packer,
   PageBreak,
+  PageNumber,
   Paragraph,
+  RunProperties,
   Tab,
   TabStopType,
   Table,
@@ -19,12 +22,12 @@ import {
   convertInchesToTwip,
   type ParagraphChild,
 } from "docx";
-import type { ContentBlock, Question } from "../api/types";
-import { contentOf, formatMarks, formatSourceBracket, marksLabel, solutionSlots, tableCellText, tableColumnAligns, tableColumnWidths, tableRows } from "./criteria";
-import { inlineMathImageId, resolveEquations, resolveImages, yieldToUi, type ResolvedImage } from "./resolvers";
-import { latexToPlain, splitRichTokens } from "./mathText";
-import { logTiming } from "./timing";
-import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
+import type { ContentBlock, Question } from "../api/types.ts";
+import { contentOf, formatMarks, formatSourceBracket, marksLabel, solutionSlots, tableCellText, tableColumnAligns, tableColumnWidths, tableRows } from "./criteria.ts";
+import { inlineMathImageId, resolveEquations, resolveImages, yieldToUi, type ResolvedImage } from "./resolvers.ts";
+import { latexToPlain, splitRichTokens } from "./mathText.ts";
+import { logTiming } from "./timing.ts";
+import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile.ts";
 import {
   EXAM,
   buildExamPaperPlan,
@@ -34,7 +37,7 @@ import {
   mcqOptionBlocks,
   sectionOpeningLines,
   sectionOverviewLines,
-} from "./examLayout";
+} from "./examLayout.ts";
 
 const GRAY = "6B6B64";
 const RULE_COLOR = "999999";
@@ -45,7 +48,7 @@ const inches = (n: number) => convertInchesToTwip(n);
 const PAGE_W_IN = 8.27;
 const PAGE_H_IN = 11.69;
 const MARGIN_IN = 0.75;
-const MARKS_TAB_IN = 7.05;
+const MARKS_TAB_IN = 6.77;
 
 export interface DocSection {
   label: string | null;
@@ -53,7 +56,7 @@ export interface DocSection {
 }
 
 export interface DocStimulusItem {
-  stimulus: import("../api/types").StimulusWithContent;
+  stimulus: import("../api/types.ts").StimulusWithContent;
   questionNumbers: number[];
 }
 
@@ -117,16 +120,23 @@ function imageRun(img: ResolvedImage): ImageRun {
 }
 
 function inlineMathRun(img: ResolvedImage): ImageRun {
-  // The math rasterizer uses the body font size, so its natural CSS-pixel box
-  // already matches the surrounding Word text. Preserve that size in DOCX.
-  return imageRun(img);
+  const run = imageRun(img) as ImageRun & { root?: unknown[] };
+  // Inline images default to resting on the text baseline, which raises their
+  // painted glyph baseline above the surrounding text. Shift the run down by an
+  // approximate KaTeX descent delta so the equation's own baseline lines up.
+  try {
+    if (Array.isArray(run.root)) run.root[0] = new RunProperties({ position: `-${Math.max(1, Math.round(img.heightPx * 0.2 * 0.75))}pt` } );
+  } catch {
+    // Keep the image intact if the library's XML shape changes.
+  }
+  return run;
 }
 
 function inlineRuns(blockId: string, text: string, images: Map<string, ResolvedImage>, index: { value: number }): ParagraphChild[] {
   const children: ParagraphChild[] = [];
   for (const token of splitRichTokens(text)) {
     if ("text" in token) {
-      if (token.text) children.push(runProps({ text: token.text }));
+      if (token.text) children.push(runProps({ text: token.text, bold: token.bold, italics: token.italic }));
       continue;
     }
     const math = images.get(inlineMathImageId(blockId, index.value++));
@@ -425,6 +435,28 @@ function questionHeader(question: Question, counter: { n: number }): Paragraph {
   });
 }
 
+function answerAreaPseudo(marks: number): ContentBlock {
+  return {
+    block_id: "syn-answer-area",
+    slot: "body",
+    position: 999,
+    block_type: "answer_area",
+    content: { lines: Math.max(3, Number.isFinite(marks) && marks > 0 ? marks : 3) },
+  };
+}
+
+function hasAnswerArea(q: Question): boolean {
+  if (q.body.some((b: ContentBlock) => b.block_type === "answer_area")) return true;
+  return (q.parts ?? []).some(hasAnswerArea);
+}
+
+function withSyntheticAnswerSpace(body: ContentBlock[], marks: number | null): ContentBlock[] {
+  if (body.some((b) => b.block_type === "answer_area")) return body;
+  // Avoid duplicating when a nested part provides the space.
+  if (body.length === 0) return body;
+  return [...body, answerAreaPseudo(Number(marks) || 3)];
+}
+
 function renderQuestion(
   question: Question,
   counter: { n: number },
@@ -432,8 +464,8 @@ function renderQuestion(
 ): Array<Paragraph | Table> {
   const out: Array<Paragraph | Table> = [];
   out.push(questionHeader(question, counter));
-  const questionBody = question.body;
-  out.push(...renderBlocks(questionBody, { indentIn: 0, images }));
+  const body = hasAnswerArea(question) ? question.body : withSyntheticAnswerSpace(question.body, question.marks);
+  out.push(...renderBlocks(body, { indentIn: 0, images }));
   if (question.mcq_options?.length) out.push(...renderBlocks(mcqOptionBlocks(question), { indentIn: 0, images }));
   const renderParts = (parts: Question[], depth = 1) => {
   for (const part of parts) {
@@ -450,7 +482,10 @@ function renderQuestion(
     out.push(
       new Paragraph({ children: headChildren, indent: { left: inches(0.3 * depth) }, keepNext: true })
     );
-    out.push(...renderBlocks(part.body, { indentIn: 0.3 * depth, images }));
+    const partBody = hasAnswerArea(part)
+      ? part.body
+      : withSyntheticAnswerSpace(part.body, part.marks);
+    out.push(...renderBlocks(partBody, { indentIn: 0.3 * depth, images }));
     renderParts(part.parts, depth + 1);
   }
   };
@@ -464,9 +499,16 @@ function renderQuestion(
       color: GRAY,
     })],
   }));
+  // Keep the whole question together between paragraphs.
+  for (let i = 0; i < out.length - 1; i++) {
+    const pp = out[i] as any;
+    if (pp?.properties?.push) {
+      try { pp.properties.push(new OnOffElement("w:keepNext", true)); } catch { /* ignore */ }
+    }
+  }
+
   return out;
 }
-
 // ---------- cover ----------
 
 function boxedParagraphs(lines: string[]): Table {
@@ -643,10 +685,18 @@ function pack(children: Array<Paragraph | Table>): Promise<Blob> {
       {
         footers: {
           default: new Footer({
-            children: [new Paragraph({
-              children: [runProps({ text: "Made with Quaestio", sizePt: EXAM.font.smallPt, color: GRAY })],
-              alignment: AlignmentType.CENTER,
-            })],
+            children: [
+              new Paragraph({
+                children: [
+                  runProps({ text: "Made with Quaestio   |   Page ", sizePt: EXAM.font.smallPt, color: GRAY }),
+                  new TextRun({ children: [PageNumber.CURRENT], size: ptH(EXAM.font.smallPt), color: GRAY, font: { name: EXAM.font.family } }),
+                  runProps({ text: " of ", sizePt: EXAM.font.smallPt, color: GRAY }),
+                  new TextRun({ children: [PageNumber.TOTAL_PAGES], size: ptH(EXAM.font.smallPt), color: GRAY, font: { name: EXAM.font.family } }),
+                ],
+                alignment: AlignmentType.CENTER,
+              }),
+            ],
+
           }),
         },
         properties: {

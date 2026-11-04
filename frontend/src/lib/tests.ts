@@ -1,11 +1,11 @@
-import type { TestFile } from "./db/indexeddb";
-import * as idb from "./db/indexeddb";
-import type { Question } from "../api/types";
-import type { TestSectionResult } from "../api/types";
-import { collectImages, type DocSection } from "./docx";
-import type { ExamDocument } from "./examDocument";
-import { createRenderer, type RenderInput } from "./paperRenderer";
-import { logTiming } from "./timing";
+import type { TestFile } from "./db/indexeddb.ts";
+import * as idb from "./db/indexeddb.ts";
+import type { Question } from "../api/types.ts";
+import type { TestSectionResult } from "../api/types.ts";
+import { collectImages, type DocSection } from "./docx.ts";
+import type { ExamDocument } from "./examDocument.ts";
+import { createRenderer, type RenderInput } from "./paperRenderer.ts";
+import { logTiming } from "./timing.ts";
 
 const urlCache = new Map<string, string>();
 
@@ -88,7 +88,7 @@ export async function downloadTestFile(
     .trim() || "Test";
   const base = which === "solutions" ? `${safeTitle} - Solutions` : safeTitle;
   if (blob.type === "text/html") {
-    const { htmlBlobToPdfBlob } = await import("./htmlToPdf");
+    const { htmlBlobToPdfBlob } = await import("./htmlToPdf.ts");
     triggerDownload(await htmlBlobToPdfBlob(blob), `${base}.pdf`);
     return;
   }
@@ -109,7 +109,7 @@ export async function deleteTestOutputs(testId: string): Promise<void> {
 }
 
 export interface TestStimulusItem {
-  stimulus: import("../api/types").StimulusWithContent;
+  stimulus: import("../api/types.ts").StimulusWithContent;
   questionNumbers: number[];
 }
 

@@ -1,7 +1,7 @@
-import type { Question } from "../api/types";
-import { getFirst, all, run } from "./db/sqlite";
-import * as idb from "./db/indexeddb";
-import { contentHash } from "./storage";
+import type { Question } from "../api/types.ts";
+import { getFirst, all, run } from "./db/sqlite.ts";
+import * as idb from "./db/indexeddb.ts";
+import { contentHash } from "./storage.ts";
 
 const ALLOWED_EXTENSIONS = [".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg"];
 const MAX_BYTES = 15 * 1024 * 1024;
@@ -67,21 +67,48 @@ export async function uploadAsset(file: File): Promise<{
   };
 }
 
+const MAX_URL_CACHE = 512;
+
 function registerUrl(assetId: string, blob: Blob): void {
-  if (!urlCache.has(assetId)) {
-    urlCache.set(assetId, URL.createObjectURL(blob));
+  const existing = urlCache.get(assetId);
+  if (existing) {
+    // Move an existing entry to the end so it is treated as most recently used.
+    urlCache.delete(assetId);
+    urlCache.set(assetId, existing);
+    return;
   }
+  // Bound the process-global object-URL cache so long sessions do not
+  // accumulate one URL per viewed image indefinitely.
+  while (urlCache.size >= MAX_URL_CACHE) {
+    const oldest = urlCache.keys().next().value;
+    if (!oldest) break;
+    const stale = urlCache.get(oldest);
+    if (stale) {
+      try { URL.revokeObjectURL(stale); } catch { /* ignore */ }
+    }
+    urlCache.delete(oldest);
+  }
+  urlCache.set(assetId, URL.createObjectURL(blob));
 }
 
 /** Synchronous lookup used by renderers (QuestionReader / BlockEditor). */
 export function assetUrl(assetIdOrPath: string): string {
-  return urlCache.get(assetIdOrPath) ?? "";
+  const cached = urlCache.get(assetIdOrPath);
+  if (!cached) return "";
+  // Least-recently-used: re-insert on every use.
+  urlCache.delete(assetIdOrPath);
+  urlCache.set(assetIdOrPath, cached);
+  return cached;
 }
 
 /** Load an asset's blob from IndexedDB and register its object URL. */
 export async function ensureAssetUrl(assetId: string): Promise<string> {
   const cached = urlCache.get(assetId);
-  if (cached) return cached;
+  if (cached) {
+    urlCache.delete(assetId);
+    urlCache.set(assetId, cached);
+    return cached;
+  }
   const blob = await idb.getAsset(assetId);
   if (!blob) return "";
   registerUrl(assetId, blob);
@@ -181,11 +208,15 @@ export async function deleteUnreferencedAssetBlob(assetId: string): Promise<void
 /** All asset ids still referenced anywhere in course content, in a single pass. */
 export async function referencedAssetIds(): Promise<Set<string>> {
   const used = new Set<string>();
-  const [blockRows, optionRows, stimulusRows] = await Promise.all([
+  const [blockRows, optionRows, stimulusRows, assetRows] = await Promise.all([
     all<{ content_json: string }>("SELECT content_json FROM content_block WHERE block_type IN ('image', 'diagram', 'graph')"),
     all<{ content_json: string }>("SELECT content_json FROM mcq_option"),
     all<{ content_json: string }>("SELECT content_json FROM stimulus_block"),
+    all<{ asset_id: string }>("SELECT asset_id FROM asset"),
   ]);
+  for (const row of assetRows) {
+    if (row.asset_id) used.add(String(row.asset_id));
+  }
   const discardCollect = (value: unknown) => {
     if (typeof value !== "string") return;
     used.add(value);
@@ -214,33 +245,9 @@ export async function referencedAssetIds(): Promise<Set<string>> {
 export async function findUnreferencedAssetIds(assetIds: Iterable<string>): Promise<string[]> {
   const unreferenced = new Set(assetIds);
   if (!unreferenced.size) return [];
-  const [blocks, options, stimuli] = await Promise.all([
-    all<{ content_json: string }>("SELECT content_json FROM content_block WHERE block_type IN ('image', 'diagram', 'graph')"),
-    all<{ content_json: string }>("SELECT content_json FROM mcq_option"),
-    all<{ content_json: string }>("SELECT content_json FROM stimulus_block"),
-  ]);
-  const discard = (path: unknown) => {
-    if (typeof path === "string") unreferenced.delete(path);
-  };
-  for (const row of blocks) {
-    try { discard(JSON.parse(row.content_json)?.asset_path); } catch { /* malformed JSON — skip */ }
-  }
-  for (const row of options) {
-    try {
-      const parsed = JSON.parse(row.content_json);
-      for (const block of Array.isArray(parsed) ? parsed : [parsed]) discard(block?.content?.asset_path);
-    } catch { /* malformed JSON — skip */ }
-  }
-  for (const row of stimuli) {
-    try {
-      const parsed = JSON.parse(row.content_json);
-      if (Array.isArray(parsed)) {
-        for (const block of parsed) discard(block?.content?.asset_path);
-      } else {
-        discard(parsed?.asset_path ?? parsed?.content?.asset_path);
-      }
-    } catch { /* malformed JSON — skip */ }
-  }
+  // Ownership graph unified with referencedAssetIds (asset table + stimuli included).
+  const referenced = await referencedAssetIds();
+  for (const id of referenced) unreferenced.delete(id);
   return [...unreferenced];
 }
 
@@ -265,7 +272,11 @@ export async function countAssetReferences(assetId: string): Promise<number> {
     ),
     all<{ content_json: string }>("SELECT content_json FROM stimulus_block"),
   ]);
+  const assetTableRows = await all<{ question_id: string }>("SELECT question_id FROM asset WHERE asset_id = ?", [assetId]);
   const questions = new Set<string>();
+  for (const row of assetTableRows) {
+    if (row.question_id) questions.add(String(row.question_id));
+  }
   for (const row of blockRows) {
     try {
       if (JSON.parse(row.content_json)?.asset_path === assetId) questions.add(row.question_id);

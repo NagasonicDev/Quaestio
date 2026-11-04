@@ -1,4 +1,4 @@
-import type { ContentBlock, Question } from "../api/types";
+import type { ContentBlock, Question } from "../api/types.ts";
 import {
   contentOf,
   formatMarks,
@@ -10,7 +10,7 @@ import {
   tableColumnWidths,
   tableRows,
   type SolutionSlot,
-} from "./criteria";
+} from "./criteria.ts";
 import {
   EXAM,
   buildExamPaperPlan,
@@ -21,11 +21,11 @@ import {
   sectionOpeningLines,
   sectionOverviewLines,
   type ExamSectionPlan,
-} from "./examLayout";
-import type { DocOptions, DocSection, DocStimulusItem } from "./docx";
-import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
-import { latexToPlain, splitRichTokens } from "./mathText";
-import { inlineMathImageId, type ResolvedImage } from "./resolvers";
+} from "./examLayout.ts";
+import type { DocOptions, DocSection, DocStimulusItem } from "./docx.ts";
+import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile.ts";
+import { latexToPlain, splitRichTokens } from "./mathText.ts";
+import { inlineMathImageId, type ResolvedImage } from "./resolvers.ts";
 
 /**
  * Plain HTML rendering of an examination paper and its solutions.
@@ -83,7 +83,12 @@ function inlineHtml(
   const parts: string[] = [];
   for (const token of splitRichTokens(text)) {
     if ("text" in token) {
-      if (token.text) parts.push(esc(token.text));
+      if (!token.text) continue;
+      const html = esc(token.text);
+      if (token.bold && token.italic) parts.push(`<strong><em>${html}</em></strong>`);
+      else if (token.bold) parts.push(`<strong>${html}</strong>`);
+      else if (token.italic) parts.push(`<em>${html}</em>`);
+      else parts.push(html);
       continue;
     }
     const math = images.get(inlineMathImageId(blockId, index.value++));
@@ -186,17 +191,41 @@ function renderBlocks(blocks: ContentBlock[], images: Map<string, ResolvedImage>
 
 // ---------- questions ----------
 
+function hasAnswerArea(q: Question): boolean {
+  if (q.body.some((b) => b.block_type === "answer_area")) return true;
+  return (q.parts ?? []).some(hasAnswerArea);
+}
+
+function withSyntheticAnswerSpace(body: ContentBlock[], marks: Question["marks"]): ContentBlock[] {
+  if (body.some((b) => b.block_type === "answer_area")) return body;
+  if (body.length === 0) return body;
+  const lines = Number.isFinite(Number(marks)) && Number(marks) > 0 ? Number(marks) : 3;
+  const pseudo: ContentBlock = {
+    block_id: "syn-answer-area",
+    slot: "body",
+    position: 999,
+    block_type: "answer_area",
+    content: { lines: Math.max(3, lines) },
+  };
+  return [...body, pseudo];
+}
+
 function renderQuestion(question: Question, n: number, images: Map<string, ResolvedImage>): string {
   const marks = formatMarks(question.marks);
   const header = `<div class="question-head"><span class="question-number">Question ${n}</span><span class="question-marks">${esc(marks)}</span></div>`;
-  const body = renderBlocks(question.body, images);
+  const body = hasAnswerArea(question)
+    ? renderBlocks(question.body, images)
+    : renderBlocks(withSyntheticAnswerSpace(question.body, question.marks), images);
   const options = question.mcq_options?.length ? renderBlocks(mcqOptionBlocks(question), images) : "";
   const renderParts = (children: Question[], depth = 0): string => children
     .map((part) => {
+      const partBody = hasAnswerArea(part)
+        ? renderBlocks(part.body, images, 0.3 + depth * 0.3)
+        : renderBlocks(withSyntheticAnswerSpace(part.body, part.marks), images, 0.3 + depth * 0.3);
       const label = part.part_label ? `(${esc(part.part_label)})` : "";
       const labelMarks = marksLabel(part.marks);
       const head = `<div class="part-head"><span class="part-label">${label}</span>${labelMarks ? `<span class="part-marks">[${esc(labelMarks)}]</span>` : ""}</div>`;
-      return `<div class="question-part" style="margin-left:${0.3 + depth * 0.3}in">${head}${renderBlocks(part.body, images, 0.3 + depth * 0.3)}${renderParts(part.parts, depth + 1)}</div>`;
+      return `<div class="question-part" style="margin-left:${0.3 + depth * 0.3}in">${head}${partBody}${renderParts(part.parts, depth + 1)}</div>`;
     })
     .join("");
   const parts = renderParts(question.parts);

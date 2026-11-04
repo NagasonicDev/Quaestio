@@ -1,5 +1,5 @@
-import * as data from "../lib/data";
-import { registerQuestionAssets, uploadAsset } from "../lib/assets";
+import * as data from "../lib/data.ts";
+import { registerQuestionAssets, uploadAsset } from "../lib/assets.ts";
 import type {
   AttemptInput,
   AttemptSummary,
@@ -28,9 +28,9 @@ import type {
   TestSectionInput,
   DrawingNotebook,
   DrawingPage,
-} from "./types";
+} from "./types.ts";
 
-export { assetUrl } from "../lib/assets";
+export { assetUrl } from "../lib/assets.ts";
 export type {
   AttemptInput,
   AttemptStatus,
@@ -62,7 +62,7 @@ export type {
   DrawingPoint,
   DrawingStroke,
   DrawingTool,
-} from "./types";
+} from "./types.ts";
 
 async function registerQuestion(q: Question | null): Promise<Question | null> {
   if (q) await registerQuestionAssets(q);
@@ -198,7 +198,7 @@ export const api = {
   },
 
   downloadSkill(courseId: string): Promise<void> {
-    return import("../lib/exchange").then((m) => m.downloadSkill(courseId));
+    return import("../lib/exchange.ts").then((m) => m.downloadSkill(courseId));
   },
 
   exportCourse(
@@ -207,10 +207,10 @@ export const api = {
     options?: { includeQuestions?: boolean; includeLearningData?: boolean; includeResponseText?: boolean },
     onProgress?: (percent: number) => void
   ): Promise<void> {
-    return import("../lib/exchange").then((m) => m.exportCourse(courseId, filters, options, onProgress));
+    return import("../lib/exchange.ts").then((m) => m.exportCourse(courseId, filters, options, onProgress));
   },
   exportQuestions(courseId: string, filters?: { typeKeys?: string[]; difficulties?: number[]; institutions?: string[]; tags?: string[] }, onProgress?: (percent: number) => void): Promise<void> {
-    return import("../lib/exchange").then((m) => m.exportQuestions(courseId, filters, onProgress));
+    return import("../lib/exchange.ts").then((m) => m.exportQuestions(courseId, filters, onProgress));
   },
 
   importCourseFile(
@@ -218,12 +218,12 @@ export const api = {
     onIdCollision: (info: { course_id: string; course_name: string }) => Promise<"replace" | "new">,
     onProgress?: (percent: number) => void
   ): Promise<{ course_id: string; course_name: string }> {
-    return import("../lib/exchange").then((m) => m.importCourseFile(file, onIdCollision, onProgress));
+    return import("../lib/exchange.ts").then((m) => m.importCourseFile(file, onIdCollision, onProgress));
   },
 
   /** Adds the optional starter course, or returns the copy already here. */
   ensureSampleCourse(): Promise<{ course_id: string; course_name: string; created: boolean }> {
-    return import("../lib/sampleCourse").then((m) => m.ensureSampleCourse());
+    return import("../lib/sampleCourse.ts").then((m) => m.ensureSampleCourse());
   },
 
   uploadAsset(
@@ -297,6 +297,7 @@ export const api = {
       difficulty?: string | number;
       difficulties?: Array<string | number>;
       node_ids?: string[];
+      tag?: string;
     } = {}
   ): Promise<QuestionCountsResponse> {
     return data.questionCounts(courseId, opts);
@@ -449,6 +450,10 @@ export const api = {
 
   generateTestSolutions(testId: string, onProgress?: (completed: number, total: number) => void): Promise<void> {
     return data.generateTestSolutions(testId, onProgress);
+  },
+
+  rerenderTest(testId: string, onProgress?: (progress: { phase: "paper" | "preview" | "saving"; questionCount?: number; completedQuestions?: number }) => void): Promise<void> {
+    return data.rerenderTest(testId, onProgress);
   },
 
   listTests(courseId: string, limit: number = 20): Promise<GeneratedTestMeta[]> {

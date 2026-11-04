@@ -1,15 +1,15 @@
 import JSZip from "jszip";
-import { questionImportScripts, questionImportSkillTemplate, questionImportWorkflow } from "./questionImportAssets";
-import { importConventionsMarkdown, checkConventionsScript, importAuthoringRules } from "./importConventions";
-import * as idb from "./db/indexeddb";
-import { all, getFirst, run, runMany, transaction } from "./db/sqlite";
-import { claimQuestionId, newId, nowUtc } from "./id";
-import * as data from "./data";
-import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule";
-import { contentHash } from "./storage";
-import type { DrawingNotebook, DrawingPage } from "../api/types";
-import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingNotebooks, validateDrawingPage } from "./drawingNotebook";
-import type { CourseFullConfig, CourseNode, Question } from "../api/types";
+import { questionImportScripts, questionImportSkillTemplate, questionImportWorkflow } from "./questionImportAssets.ts";
+import { importConventionsMarkdown, checkConventionsScript, importAuthoringRules } from "./importConventions.ts";
+import * as idb from "./db/indexeddb.ts";
+import { all, getFirst, run, runMany, transaction } from "./db/sqlite.ts";
+import { claimQuestionId, newId, nowUtc } from "./id.ts";
+import * as data from "./data.ts";
+import { isAttemptStatus, isSelfRating, isReviewOutcome } from "./reviewSchedule.ts";
+import { contentHash } from "./storage.ts";
+import type { DrawingNotebook, DrawingPage } from "../api/types.ts";
+import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingNotebooks, validateDrawingPage } from "./drawingNotebook.ts";
+import type { CourseFullConfig, CourseNode, Question } from "../api/types.ts";
 
 // ---------- helpers ----------
 
@@ -37,7 +37,7 @@ export function downloadBlob(blob: Blob, filename: string): void {
   document.body.appendChild(a);
   a.click();
   a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  setTimeout(() => URL.revokeObjectURL(url), 300_000);
 }
 
 function flattenNodes(nodes: CourseNode[]): Array<{ node_id: string; name: string; code: string | null; level_index: number; path: string }> {
@@ -805,11 +805,6 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
   };
 }
 
-async function wipeCourseData(courseId: string): Promise<void> {
-  const existing = await getFirst("SELECT course_id FROM course WHERE course_id = ?", [courseId]);
-  if (existing) await data.deleteCourse(courseId);
-}
-
 const IMAGE_TYPES = new Set(["image", "diagram", "graph"]);
 
 /** Every asset id a question tree references: declared assets and any content
@@ -1012,12 +1007,6 @@ export async function applyCourseBundle(
 ): Promise<string> {
   const src = bundle.course;
   const courseId = mode === "new" ? (requestedCourseId ?? newId("course")) : src.course_id;
-  if (mode === "replace") {
-    // Replace deletes the existing course before inserting the replacement. The
-    // rollback capture/restore lives in importCourseFile; this function is not
-    // internally atomic, so callers needing safety should go through that path.
-    await wipeCourseData(courseId);
-  }
   onProgress?.(5);
   const existingQuestionRows = await all<{ question_id: string }>("SELECT question_id FROM question");
   const ctx: ImportCtx = {
@@ -1086,6 +1075,28 @@ export async function applyCourseBundle(
   }
 
   const now = nowUtc();
+  await transaction(async (database) => {
+    if (mode === "replace") {
+      const existsRows = database.exec("SELECT 1 FROM course WHERE course_id = ?", [courseId]);
+      const exists = (existsRows[0]?.values?.length ?? 0) > 0;
+      if (exists) {
+        const sourceRows = database.exec("SELECT DISTINCT source_id FROM question WHERE course_id = ? AND source_id IS NOT NULL", [courseId]);
+        const sources = (sourceRows[0]?.values ?? []).map((row) => String(row[0]));
+        database.run("DELETE FROM practice_attempt WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?) OR session_id IN (SELECT session_id FROM practice_session WHERE course_id = ?)", [courseId, courseId]);
+        database.run("UPDATE import_question SET final_question_id = NULL WHERE final_question_id IN (SELECT question_id FROM question WHERE course_id = ?)", [courseId]);
+        database.run("DELETE FROM generated_test WHERE course_id = ?", [courseId]);
+        database.run("DELETE FROM import_job WHERE course_id = ?", [courseId]);
+        database.run("DELETE FROM asset WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)", [courseId]);
+        database.run("DELETE FROM question WHERE course_id = ?", [courseId]);
+        database.run("DELETE FROM practice_session WHERE course_id = ?", [courseId]);
+        database.run("UPDATE question_type SET course_id = NULL WHERE course_id = ? AND EXISTS (SELECT 1 FROM question WHERE question.type_key = question_type.type_key)", [courseId]);
+        database.run("DELETE FROM question_type WHERE course_id = ?", [courseId]);
+        for (const sourceId of sources) {
+          database.run("DELETE FROM source WHERE source_id = ? AND NOT EXISTS (SELECT 1 FROM question WHERE question.source_id = ?)", [sourceId, sourceId]);
+        }
+        database.run("DELETE FROM course WHERE course_id = ?", [courseId]);
+      }
+    }
   await run(
     `INSERT INTO course (course_id, name, description, subject, curriculum, version_year,
         schema_version, allow_multi_classification, is_sample, created_at, updated_at)
@@ -1202,6 +1213,7 @@ export async function applyCourseBundle(
   await restoreLearningData(bundle.learning, ctx);
   await restoreStimuli(bundle, ctx);
   await data.importDrawingNotebooks(bundle.drawing_notebooks ?? [], ctx.questionMap);
+  });
   onProgress?.(100);
   return courseId;
 }

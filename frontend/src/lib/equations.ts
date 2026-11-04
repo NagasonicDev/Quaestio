@@ -1,7 +1,7 @@
-import "katex/dist/katex.min.css";
+if (typeof window !== "undefined") void import("katex/dist/katex.min.css");
 import katex from "katex";
 import { toBlob, getFontEmbedCSS } from "html-to-image";
-import { MATH_FONT_PX } from "./mathText";
+import { MATH_FONT_PX } from "./mathText.ts";
 
 export interface RenderedEquation {
   data: Uint8Array<ArrayBuffer>;

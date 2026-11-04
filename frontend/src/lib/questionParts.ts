@@ -1,4 +1,4 @@
-import type { Question } from "../api/types";
+import type { Question } from "../api/types.ts";
 
 /** Flatten nested question parts into a single labelled list, e.g. "(a)" or "(a) (i)". */
 export function flattenQuestionParts(parts: Question[], prefix = ""): Array<{ part: Question; label: string }> {

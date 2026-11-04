@@ -1,6 +1,6 @@
-import type { ContentBlock, Question } from "../api/types";
-import type { DocSection } from "./docx";
-import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile";
+import type { ContentBlock, Question } from "../api/types.ts";
+import type { DocSection } from "./docx.ts";
+import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile.ts";
 
 /** Shared HSC-style examination paper layout geometry (NESA conventions). */
 export const EXAM = {

@@ -1,3 +1,4 @@
+const hasIndexedDB = typeof indexedDB !== "undefined";
 const DB_NAME = "qb";
 const DB_VERSION = 1;
 
@@ -20,6 +21,7 @@ function open(): Promise<IDBDatabase> {
 let dbPromise: Promise<IDBDatabase> | null = null;
 
 export function getDb(): Promise<IDBDatabase> {
+  if (!hasIndexedDB) return Promise.resolve(null as any);
   if (!dbPromise) dbPromise = open().catch((e) => {
     dbPromise = null;
     throw e;
@@ -48,6 +50,7 @@ function txn<T>(store: string, mode: IDBTransactionMode, fn: (s: IDBObjectStore)
 // ---------- Database snapshot (the whole DB as a Uint8Array) ----------
 
 export async function loadPersistedDb(): Promise<Uint8Array | null> {
+  if (!hasIndexedDB) return null;
   const db = await getDb();
   return new Promise<Uint8Array | null>((resolve, reject) => {
     const tx = db.transaction("kv", "readonly");
@@ -61,6 +64,7 @@ export async function loadPersistedDb(): Promise<Uint8Array | null> {
 }
 
 export async function persistDb(bytes: Uint8Array): Promise<void> {
+  if (!hasIndexedDB) return;
   const db = await getDb();
   return new Promise<void>((resolve, reject) => {
     const tx = db.transaction("kv", "readwrite");
@@ -73,30 +77,36 @@ export async function persistDb(bytes: Uint8Array): Promise<void> {
 // ---------- Question assets (keyed by asset_id) ----------
 
 export async function putAsset(assetId: string, blob: Blob): Promise<void> {
+  if (!hasIndexedDB) return;
   await txn("assets", "readwrite", (s) => s.put(blob, assetId));
 }
 
 export async function getAsset(assetId: string): Promise<Blob | null> {
+  if (!hasIndexedDB) return null;
   const blob = await txn<Blob | null>("assets", "readonly", (s) => s.get(assetId));
   return blob ?? null;
 }
 
 export async function deleteAsset(assetId: string): Promise<void> {
+  if (!hasIndexedDB) return;
   await txn("assets", "readwrite", (s) => s.delete(assetId));
 }
 
 export async function listAssetIds(): Promise<string[]> {
+  if (!hasIndexedDB) return [];
   return txn<IDBValidKey[]>("assets", "readonly", (s) => s.getAllKeys() as IDBRequest<IDBValidKey[]>).then(
     (keys) => keys.map(String)
   );
 }
 
 export async function hasAsset(assetId: string): Promise<boolean> {
+  if (!hasIndexedDB) return false;
   const blob = await getAsset(assetId);
   return blob !== null && blob.size > 0;
 }
 
 export async function getAllAssets(): Promise<Array<{ key: string; blob: Blob }>> {
+  if (!hasIndexedDB) return [];
   const db = await getDb();
   return new Promise((resolve, reject) => {
     const tx = db.transaction("assets", "readonly");
@@ -117,15 +127,18 @@ export async function getAllAssets(): Promise<Array<{ key: string; blob: Blob }>
 export type TestFile = "test" | "preview" | "solutions";
 
 export async function putTestFile(testId: string, which: TestFile, blob: Blob): Promise<void> {
+  if (!hasIndexedDB) return;
   await txn("tests", "readwrite", (s) => s.put(blob, `${testId}:${which}`));
 }
 
 export async function getTestFile(testId: string, which: TestFile): Promise<Blob | null> {
+  if (!hasIndexedDB) return null;
   const blob = await txn<Blob | null>("tests", "readonly", (s) => s.get(`${testId}:${which}`));
   return blob ?? null;
 }
 
 export async function deleteTestFiles(testId: string): Promise<void> {
+  if (!hasIndexedDB) return;
   const db = await getDb();
   return new Promise((resolve, reject) => {
     const tx = db.transaction("tests", "readwrite");
@@ -146,6 +159,7 @@ export async function deleteTestFiles(testId: string): Promise<void> {
 // ---------- Wipe everything (questions, assets, generated tests) ----------
 
 export async function clearAllData(): Promise<void> {
+  if (!hasIndexedDB) return;
   const db = await getDb();
   await Promise.all(
     ["kv", "assets", "tests"].map(
@@ -162,6 +176,7 @@ export async function clearAllData(): Promise<void> {
 }
 
 export async function getAllTestKeys(): Promise<string[]> {
+  if (!hasIndexedDB) return [];
   const db = await getDb();
   return new Promise((resolve, reject) => {
     const tx = db.transaction("tests", "readonly");

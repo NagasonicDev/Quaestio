@@ -6,16 +6,16 @@ import type { Database } from "sql.js";
 const initSqlJs = ((sqlJsModule as any).default ??
   (sqlJsModule as any).Module ??
   (sqlJsModule as any)) as (typeof import("sql.js"))["default"];
-import { SCHEMA_SQL, BUILTIN_QUESTION_TYPES, MIGRATIONS, SCHEMA_VERSION } from "./schema";
-import * as idb from "./indexeddb";
-import { isValidQuestionId, newQuestionId, nowUtc } from "../id";
+import { SCHEMA_SQL, BUILTIN_QUESTION_TYPES, MIGRATIONS, SCHEMA_VERSION } from "./schema.ts";
+import * as idb from "./indexeddb.ts";
+import { isValidQuestionId, newQuestionId, nowUtc } from "../id.ts";
 import {
   reportCleared,
   reportSaved,
   reportSaving,
   reportSaveFailure,
   setPersistenceRetry,
-} from "./persistenceStatus";
+} from "./persistenceStatus.ts";
 
 let db: Database | null = null;
 let ready: Promise<Database> | null = null;
@@ -27,7 +27,14 @@ const APP_SETTING_DDL = `CREATE TABLE IF NOT EXISTS app_setting (
 )`;
 
 async function initDb(): Promise<Database> {
-  const SQL = await initSqlJs({ locateFile: () => `${import.meta.env.BASE_URL}sql-wasm.wasm` });
+  let locateFile: () => string;
+  if (typeof window !== "undefined") {
+    const baseUrl = (import.meta as { env?: { BASE_URL?: string } }).env?.BASE_URL ?? "/";
+    locateFile = () => `${baseUrl}sql-wasm.wasm`;
+  } else {
+    locateFile = () => new URL("../../../node_modules/sql.js/dist/sql-wasm.wasm", import.meta.url).href;
+  }
+  const SQL = await initSqlJs({ locateFile });
   const bytes = await idb.loadPersistedDb();
   if (bytes && bytes.byteLength > 0) {
     db = new SQL.Database(bytes);
@@ -205,15 +212,36 @@ let lastFlushError: unknown = null;
 // Cross-tab sync: broadcast a successful persist and reload when another tab
 // has written (only if this tab has no unsaved changes of its own).
 let syncChannel: BroadcastChannel | null = null;
+let heavyTaskCount = 0;
+
+export function beginHeavyTask(): void {
+  heavyTaskCount += 1;
+}
+export function endHeavyTask(): void {
+  heavyTaskCount = Math.max(0, heavyTaskCount - 1);
+}
+export function isHeavyTaskActive(): boolean {
+  return heavyTaskCount > 0;
+}
 if (typeof window !== "undefined" && typeof BroadcastChannel !== "undefined") {
   try {
     syncChannel = new BroadcastChannel("quaestio-db-sync");
     syncChannel.onmessage = (event: MessageEvent) => {
-      const data = (event as { data?: unknown } | null)?.data;
-      if (!data || (data as { type?: unknown }).type !== "quaestio-persisted") return;
-      // If this tab has unsaved (or in-flight) work, keep it; let the user
-      // handle the conflict instead of clobbering their edits.
-      if (dirty || pendingPersist !== null) return;
+       const data = (event as { data?: unknown } | null)?.data;
+       if (!data || (data as { type?: unknown }).type !== "quaestio-persisted") return;
+       // If this tab has unsaved (or in-flight) work, or is running a long-lived
+       // task (import/generation/export), or is mid-session on a practice/quiz
+       // route, keep it; surface newer data instead of clobbering the page.
+       const loc = (typeof window !== "undefined" ? window.location : null);
+       const protectedRoute = !!loc && /practice|quiz/i.test(String(loc.pathname || "") + String(loc.hash || ""));
+       if (dirty || pendingPersist !== null || heavyTaskCount > 0 || protectedRoute) {
+         try {
+           window.dispatchEvent(new CustomEvent("quaestio-newer-data-available"));
+         } catch {
+           /* ignore */
+         }
+         return;
+       }
       try {
         window.location.reload();
       } catch {
@@ -293,8 +321,29 @@ export function persistenceError(): unknown {
  * debounced writes rather than the only safety net.
  */
 export function flushOnHide(): void {
-  if (!dirty) return;
   void flush().catch(() => {});
+}
+
+if (typeof window !== "undefined") {
+  window.addEventListener("beforeunload", (event) => {
+    if (isDirty()) {
+      try {
+        void flush().catch(() => {});
+      } catch {
+        /* best-effort nudge */
+      }
+      event.preventDefault();
+      event.returnValue = "Unsaved changes may be lost.";
+    }
+  });
+}
+
+export function flushPending(): Promise<void> {
+  return flush();
+}
+
+export function isDirty(): boolean {
+  return dirty;
 }
 
 if (typeof document !== "undefined") {
@@ -312,11 +361,11 @@ export async function clearAllData(): Promise<void> {
   }
   await pendingPersist;
   try {
-    const assetsMod = await import("../assets");
+    const assetsMod = await import("../assets.ts");
     assetsMod.clearAssetUrlCache?.();
   } catch { /* ignore */ }
   try {
-    const testsMod = await import("../tests");
+    const testsMod = await import("../tests.ts");
     testsMod.clearTestUrlCache?.();
   } catch { /* ignore */ }
   await idb.clearAllData();
@@ -331,8 +380,15 @@ export async function clearAllData(): Promise<void> {
 // ---------- Query helpers ----------
 
 // Run a set of statements atomically (open transaction, rollback on error).
+let transactionDepth = 0;
+
 export async function transaction(fn: (db: Database) => any): Promise<void> {
   const database = await getDb();
+  if (transactionDepth > 0) {
+    await fn(database);
+    return;
+  }
+  transactionDepth++;
   database.run("BEGIN;");
   try {
     await fn(database);
@@ -345,6 +401,8 @@ export async function transaction(fn: (db: Database) => any): Promise<void> {
       /* ignore */
     }
     throw e;
+  } finally {
+    transactionDepth--;
   }
 }
 

@@ -1,5 +1,5 @@
-import type { ParsedBundle } from "./exchange";
-import type { CourseNode, LevelDef } from "../api/types";
+import type { ParsedBundle } from "./exchange.ts";
+import type { CourseNode, LevelDef } from "../api/types.ts";
 import { NESA_HSC_GLOSSARY } from "./nesaGlossary.ts";
 import { SYLLABUS_DOT_POINTS } from "./syllabusDotPoints.ts";
 
