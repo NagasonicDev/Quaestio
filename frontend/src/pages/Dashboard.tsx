@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { Suspense, lazy, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
 import { BookOpen, Shuffle } from "lucide-react";
@@ -8,7 +8,7 @@ import { useCourseConfig } from "../hooks/useCourseConfig.ts";
 import { LoadingState, PageHeader, Panel, PanelHead, Stat, MiniRows, Bars } from "../components/system.tsx";
 import { Button } from "../components/ui/button.tsx";
 import { NodeTree, flattenCounts } from "../components/NodeTree.tsx";
-import { CourseOnboarding } from "../components/CourseOnboarding.tsx";
+const CourseOnboarding = lazy(() => import("../components/CourseOnboarding.tsx").then((m) => ({ default: m.CourseOnboarding })));
 import { StudyOverview } from "../components/StudyOverview.tsx";
 import { DueQueueCard } from "../components/DueQueueCard.tsx";
 import { SetupProgress } from "../components/SetupProgress.tsx";
@@ -39,7 +39,11 @@ export function Dashboard() {
   }, [config, counts]);
 
   if (!courseId) {
-    return <CourseOnboarding />;
+    return (
+      <Suspense fallback={<LoadingState label="Loading…" />}>
+        <CourseOnboarding />
+      </Suspense>
+    );
   }
 
   const isPending =

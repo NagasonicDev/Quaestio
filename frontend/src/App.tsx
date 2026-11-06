@@ -1,8 +1,7 @@
 import { HashRouter, Routes, Route, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { flush } from "./lib/db/sqlite.ts";
+import { Suspense, lazy, useEffect, useState } from "react";
+import { flush, subscribeExternalChange } from "./lib/db/sqlite.ts";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Analytics } from "@vercel/analytics/react";
 import { CourseProvider } from "./hooks/useActiveCourse.tsx";
 import { ConfirmProvider } from "./components/ui/modal.tsx";
 import { TourProvider, ImportTourProvider } from "./components/Tour.tsx";
@@ -17,8 +16,8 @@ import { QuestionDetail } from "./pages/QuestionDetail.tsx";
 import { Import } from "./pages/Import.tsx";
 import { CourseSettings } from "./pages/CourseSettings.tsx";
 import { Settings } from "./pages/Settings.tsx";
-import { AddCourse } from "./pages/AddCourse.tsx";
-import { Templates } from "./pages/Templates.tsx";
+const AddCourse = lazy(() => import("./pages/AddCourse.tsx").then((m) => ({ default: m.AddCourse })));
+const Templates = lazy(() => import("./pages/Templates.tsx").then((m) => ({ default: m.Templates })));
 
 const queryClient = new QueryClient({
   defaultOptions: { queries: { retry: 1, refetchOnWindowFocus: false } },
@@ -26,20 +25,15 @@ const queryClient = new QueryClient({
 
 function RouteAnalytics() {
   const location = useLocation();
-  const path = `${location.pathname}${location.search}`;
   useEffect(() => {
     void flush();
   }, [location.pathname, location.search]);
-  return <Analytics route={location.pathname} path={path} />;
+  return null;
 }
 
 export default function App() {
   const [newerData, setNewerData] = useState(false);
-  useEffect(() => {
-    const onNewer = () => setNewerData(true);
-    window.addEventListener("quaestio-newer-data-available", onNewer);
-    return () => window.removeEventListener("quaestio-newer-data-available", onNewer);
-  }, []);
+  useEffect(() => subscribeExternalChange(() => setNewerData(true)), []);
   return (
     <QueryClientProvider client={queryClient}>
       <ConfirmProvider>
@@ -72,8 +66,8 @@ export default function App() {
                 <Route path="import" element={<Import />} />
                 <Route path="course-settings" element={<CourseSettings />} />
                 <Route path="settings" element={<Settings />} />
-                <Route path="add-course" element={<AddCourse />} />
-                <Route path="templates" element={<Templates />} />
+                <Route path="add-course" element={<Suspense fallback={<div className="p-6 text-sm">Loading…</div>}><AddCourse /></Suspense>} />
+                <Route path="templates" element={<Suspense fallback={<div className="p-6 text-sm">Loading…</div>}><Templates /></Suspense>} />
               </Route>
             </Routes>
           </HashRouter>

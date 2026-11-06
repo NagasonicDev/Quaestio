@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { useIsFetching } from "@tanstack/react-query";
 import { AlertCircle, Check, Info, Menu, Moon, Sun, X } from "lucide-react";
@@ -9,7 +9,9 @@ import { RecentQuestionsSidebar } from "./RecentQuestionsSidebar.tsx";
 import { SaveFailureBanner, SaveStatusIndicator } from "./SaveStatus.tsx";
 import { Button } from "./ui/button.tsx";
 import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
-import { CourseOnboarding } from "./CourseOnboarding.tsx";
+const CourseOnboarding = lazy(() =>
+  import("./CourseOnboarding.tsx").then((m) => ({ default: m.CourseOnboarding }))
+);
 import { dismissTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask.ts";
 import { dismissNotification, useNotifications } from "../lib/notifications.ts";
 import { navTourTarget } from "../lib/tour.ts";
@@ -286,7 +288,13 @@ export function Layout() {
       <div className={cn("relative z-10 mx-auto grid max-w-[1500px] gap-6 px-4 py-6 sm:px-5", courseId && "lg:grid-cols-[238px_minmax(0,1fr)]")}>
         {courseId && <RecentQuestionsSidebar variant="rail" />}
         <main className="min-w-0">
-          {!courseId && !["/", "/add-course", "/templates", "/marking-trial"].includes(location.pathname) ? <CourseOnboarding /> : <Outlet />}
+          {!courseId && !["/", "/add-course", "/templates", "/marking-trial"].includes(location.pathname) ? (
+            <Suspense fallback={<p className="text-sm text-muted-foreground">Loading…</p>}>
+              <CourseOnboarding />
+            </Suspense>
+          ) : (
+            <Outlet />
+          )}
           {courseId && <RecentQuestionsSidebar variant="inline" />}
         </main>
       </div>
