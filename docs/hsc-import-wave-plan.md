@@ -23,7 +23,7 @@ Course graph source for new subjects: template nodes in `frontend/src/lib/course
    - `courses/<subject>.qb` only if the existing importer requires it; otherwise use template-expanded node IDs.
    - `.opencode/skills/<subject>-question-import/` copied from `ancient-history-question-import`.
    - `nodes.txt` generated from the expanded template node list.
-   - `import-schema.json`, `course-instructions.md`, then `python scripts/skill_render.py --course <subject>` and `python scripts/build_skill.py --sync --course <subject>`.
+   - `import-schema.json`, `course-instructions.md`, then `python scripts/skill_render.py .opencode/skills/<subject>-question-import` and `python scripts/build_skill.py --sync --course <subject>`.
    - Verify with `python scripts/build_skill.py --check --course <subject>`.
 2. Fetch official source documents:
    - Start from the NESA subject page: `https://www.nsw.gov.au/education-and-training/nesa/curriculum/hsc-exam-papers/<subject-slug>`.

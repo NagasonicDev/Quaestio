@@ -26,7 +26,7 @@ From `.opencode/skills/physics-question-import`:
 4. Render generated files:
 
 ```sh
-python scripts/skill_render.py --course <subject>
+python scripts/skill_render.py .opencode/skills/<subject>-question-import
 python scripts/build_skill.py --sync --course <subject>
 ```
 

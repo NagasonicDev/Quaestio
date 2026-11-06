@@ -38,6 +38,7 @@ What the builder repairs on the way through
   year lives in ``source.year``.
 """
 import json
+import os
 import pathlib
 import re
 import shutil
@@ -307,17 +308,26 @@ def main():
         seen_assets.add(stem)
         shutil.copy2(figdir / f"{stem}.png", stage / "assets" / f"{stem}.png")
 
+    # ---- validate the spec before the destination is touched -------------
+    for qno, plan in amap.items():
+        for _t, _l, stems in plan:
+            for s in stems:
+                if s not in index:
+                    sys.exit(f"spec references unknown asset {s!r} (Q{qno})")
+                if s not in seen_assets:
+                    sys.exit(f"asset {s!r} (Q{qno}) was never attached to a block")
+
     payload = {"export_schema_version": 1, "course_id": course_id,
                "course_name": src["course_name"], "questions": out_questions}
     (stage / "questions.json").write_text(
         json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-    if out_path.exists():
-        out_path.unlink()
-    with zipfile.ZipFile(out_path, "w", zipfile.ZIP_DEFLATED) as z:
+    tmp = out_path.with_name(out_path.name + ".tmp")
+    with zipfile.ZipFile(tmp, "w", zipfile.ZIP_DEFLATED) as z:
         z.write(stage / "questions.json", "questions.json")
         for stem in seen_assets:
             z.write(stage / "assets" / f"{stem}.png", f"assets/{stem}.png")
+    os.replace(tmp, out_path)
 
     total = sum(q["marks"] for q in out_questions)
     print(f"{out_path}: {len(out_questions)} questions, "
@@ -327,13 +337,6 @@ def main():
     unused = sorted(set(index) - set(used))
     if unused:
         print("WARNING extracted but not attached:", ", ".join(unused))
-    for qno, plan in amap.items():
-        for _t, _l, stems in plan:
-            for s in stems:
-                if s not in index:
-                    sys.exit(f"spec references unknown asset {s!r} (Q{qno})")
-                if s not in seen_assets:
-                    sys.exit(f"asset {s!r} (Q{qno}) was never attached to a block")
 
 
 if __name__ == "__main__":

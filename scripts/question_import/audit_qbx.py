@@ -21,7 +21,7 @@ build and only show up when the bundle is rendered in the app:
     the ZIP;
   * a flattened composite part label like 'a(i)' instead of real nesting.
 
-Add --years all to include bundles you did not build in this session; the
+Add --all to include bundles you did not build in this session; the
 default is to skip any bundle whose year is above --max-year, which is how
 you audit your own new work without being swamped by pre-existing files.
 """
@@ -333,9 +333,13 @@ def main() -> int:
             total[k] += s[k]
         if y:
             years.add(y)
-        for q in [json.loads(zipfile.ZipFile(f).read("questions.json"))]:
-            for qq in q.get("questions") or []:
+        try:
+            with zipfile.ZipFile(f) as z:
+                payload = json.loads(z.read("questions.json"))
+            for qq in payload.get("questions") or []:
                 institutions.add((qq.get("source") or {}).get("institution"))
+        except (KeyError, zipfile.BadZipFile, json.JSONDecodeError, OSError):
+            pass  # audit_bundle already reported this bundle's problems
         print(f"{f.name:<34} {s['questions']:>5} {s['parts']:>6} "
               f"{s['assets']:>7}  {y or '-'}")
         for p in s["problems"]:

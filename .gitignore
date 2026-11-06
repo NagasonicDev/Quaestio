@@ -42,3 +42,18 @@ data/**
 
 # Local NESA syllabus source documents
 syllabus/
+
+# Scratch/probe files: one-off investigation scripts and their outputs.
+# Kept out of git so they can't be accidentally committed; the reclassify_*/
+# verify_* runs stay on disk as the record of those decisions.
+temp_*
+probe*
+check_depth.py
+extract_2023.py
+inspect_*
+nodes.json
+*.log
+Physics-*-Drill.html
+scripts/question_import/reclassify_*.py
+scripts/question_import/verify_*.py
+scripts/question_import/dump_nodes.py

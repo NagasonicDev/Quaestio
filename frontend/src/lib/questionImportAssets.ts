@@ -8,7 +8,9 @@ import extractFigures from "../../../scripts/question_import/extract_figures.py?
 import indexNodes from "../../../scripts/question_import/index_nodes.py?raw";
 import prepPaper from "../../../scripts/question_import/prep_paper.py?raw";
 import qbxLib from "../../../scripts/question_import/qbx_lib.py?raw";
+import qualityRules from "../../../scripts/question_import/quality_rules.py?raw";
 import repairMultipartSolutions from "../../../scripts/question_import/repair_multipart_solutions.py?raw";
+import textClean from "../../../scripts/question_import/text_clean.py?raw";
 
 export const questionImportScripts: Record<string, string> = {
   "scripts/audit_qbx.py": auditQbx,
@@ -19,7 +21,9 @@ export const questionImportScripts: Record<string, string> = {
   "scripts/index_nodes.py": indexNodes,
   "scripts/prep_paper.py": prepPaper,
   "scripts/qbx_lib.py": qbxLib,
+  "scripts/quality_rules.py": qualityRules,
   "scripts/repair_multipart_solutions.py": repairMultipartSolutions,
+  "scripts/text_clean.py": textClean,
 };
 
 export const questionImportWorkflow = workflow;

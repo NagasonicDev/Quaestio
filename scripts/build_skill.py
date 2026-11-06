@@ -48,10 +48,21 @@ SKIP_DIRS = {"__pycache__", ".git", ".pytest_cache", ".mypy_cache"}
 GENERATED = {"SKILL.md", "WORKFLOW.md", "nodes.txt"}
 
 
+# The shared toolchain vendored into every skill. This mirrors
+# frontend/src/lib/questionImportAssets.ts, plus the modules the shipped
+# scripts import (quality_rules, text_clean). Everything else in this
+# directory (reclassify_*/verify_*/probe one-offs) is scratch and must stay
+# out of the bundle -- a glob used to sweep it in.
+TOOLCHAIN_FILES = [
+    "audit_qbx.py", "build_qbx.py", "check_scheme_bundle.py", "crop.py",
+    "extract_figures.py", "index_nodes.py", "prep_paper.py", "qbx_lib.py",
+    "quality_rules.py", "repair_multipart_solutions.py", "text_clean.py",
+]
+
+
 def toolchain() -> list[Path]:
-    """The shared scripts, excluding the render-only template."""
-    return sorted(p for p in TOOLCHAIN.glob("*.py")
-                  if p.name != "SKILL_TEMPLATE.md")
+    """The shared toolchain scripts vendored into every skill."""
+    return sorted(TOOLCHAIN / name for name in TOOLCHAIN_FILES)
 
 
 def script_drift(skill_dir: Path) -> list[str]:
@@ -134,7 +145,7 @@ def main() -> int:
     ap.add_argument("--check", action="store_true",
                     help="report stale rendered files or drifted scripts")
     ap.add_argument("--sync", action="store_true",
-                    help="copy scripts/question_import/*.py into each skill dir")
+                    help="copy the shared toolchain scripts into each skill dir")
     args = ap.parse_args()
 
     try:

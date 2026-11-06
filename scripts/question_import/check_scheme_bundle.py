@@ -101,7 +101,7 @@ def main() -> int:
         # the whole question, which usually means the entry is a fragment.
         has_parts = bool(q.get("parts"))
         em, mm = e.get("marks") or 0, q.get("marks") or 0
-        if not has_parts and em and mm and mm < em and mm == 0:
+        if not has_parts and em and mm and mm < em:
             notes.append(f"{label}: partless entry worth {mm} marks against a "
                          f"{em}-mark question -- check it isn't a fragment")
 
