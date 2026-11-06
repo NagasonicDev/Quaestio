@@ -1,7 +1,8 @@
 /**
  * SHA-256 of a blob's bytes, used to store identical assets once (content-hash
- * dedupe, plan §6.2). Falls back to a hex digest of the bytes when SubtleCrypto
- * is unavailable (older/insecure contexts), so callers always get a stable key.
+ * dedupe, plan §6.2). When SubtleCrypto is unavailable (older/insecure
+ * contexts), returns a per-call unique non-dedupe token so distinct assets can
+ * never collide on a weak 64-bit hash.
  */
 export async function contentHash(data: Uint8Array): Promise<string> {
   const subtle = globalThis.crypto?.subtle;
@@ -9,14 +10,10 @@ export async function contentHash(data: Uint8Array): Promise<string> {
     const digest = await subtle.digest("SHA-256", toBuffer(data));
     return toHex(new Uint8Array(digest));
   }
-  // Fallback: FNV-1a over the bytes, widened into a 64-char hex string.
-  let h1 = 0x811c9dc5;
-  let h2 = 0x01000193;
-  for (const byte of data) {
-    h1 = Math.imul(h1 ^ byte, 0x01000193) >>> 0;
-    h2 = Math.imul(h2 ^ (byte + 1), 0x85ebca6b) >>> 0;
-  }
-  return (h1.toString(16).padStart(8, "0") + h2.toString(16).padStart(8, "0")).padStart(64, "0");
+  const random = globalThis.crypto?.getRandomValues
+    ? Array.from(globalThis.crypto.getRandomValues(new Uint8Array(6))).map((b) => b.toString(16).padStart(2, "0")).join("")
+    : Math.random().toString(36).slice(2);
+  return `nondedup-${Date.now().toString(36)}-${random}`;
 }
 
 function toBuffer(data: Uint8Array): ArrayBuffer {

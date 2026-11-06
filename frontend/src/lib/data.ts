@@ -1799,26 +1799,51 @@ export async function deleteQuestions(questionIds: string[]): Promise<void> {
   }
 }
 
-/** Remove question content and its related data while preserving all course structure. */
-export async function clearQuestions(): Promise<void> {
+/** Remove this course's question content and its related data while preserving course structure. */
+export async function clearQuestions(courseId: string): Promise<void> {
+  if (!courseId) throw new Error("A course is required");
   // Clear references that do not cascade before deleting question trees.
-  await run("DELETE FROM practice_attempt");
-  await run("UPDATE import_question SET final_question_id = NULL");
+  await run(
+    `DELETE FROM practice_attempt
+     WHERE question_id IN (SELECT question_id FROM question WHERE course_id = ?)
+        OR session_id IN (SELECT session_id FROM practice_session WHERE course_id = ?)`,
+    [courseId, courseId]
+  );
+  await run(
+    "UPDATE import_question SET final_question_id = NULL WHERE final_question_id IN (SELECT question_id FROM question WHERE course_id = ?)",
+    [courseId]
+  );
 
-  const tests = await all<SqlRow>("SELECT test_id FROM generated_test");
+  const tests = await all<SqlRow>("SELECT test_id FROM generated_test WHERE course_id = ?", [courseId]);
   for (const row of tests) await deleteTestOutputs(row.test_id);
-  await run("DELETE FROM generated_test");
-  await run("DELETE FROM import_question");
-  await run("DELETE FROM import_job");
-  await run("DELETE FROM practice_session");
+  await run("DELETE FROM generated_test WHERE course_id = ?", [courseId]);
+  await run(
+    "DELETE FROM import_question WHERE import_job_id IN (SELECT import_job_id FROM import_job WHERE course_id = ?)",
+    [courseId]
+  );
+  await run("DELETE FROM import_job WHERE course_id = ?", [courseId]);
+  await run("DELETE FROM practice_session WHERE course_id = ?", [courseId]);
 
   const roots = await all<SqlRow>(
-    "SELECT question_id FROM question WHERE parent_question_id IS NULL"
+    "SELECT question_id FROM question WHERE parent_question_id IS NULL AND course_id = ?",
+    [courseId]
   );
   const assetIds = new Set<string>();
   for (const row of roots) await collectAssetIds(String(row.question_id), assetIds);
-  await run("DELETE FROM question");
-  await run("DELETE FROM source");
+
+  // Sources have no course of their own; capture this course's and delete only
+  // those no remaining question in any course still references.
+  const sourceRows = await all<SqlRow>(
+    "SELECT DISTINCT source_id FROM question WHERE course_id = ? AND source_id IS NOT NULL",
+    [courseId]
+  );
+  await run("DELETE FROM question WHERE course_id = ?", [courseId]);
+  for (const row of sourceRows) {
+    await run(
+      "DELETE FROM source WHERE source_id = ? AND NOT EXISTS (SELECT 1 FROM question WHERE question.source_id = source.source_id)",
+      [row.source_id]
+    );
+  }
   // Release shared content-hash blobs only when no remaining question references them.
   const usedAfterDelete = await referencedAssetIds();
   for (const assetId of assetIds) {
@@ -2294,6 +2319,14 @@ export async function recordAttempt(payload: AttemptInput): Promise<{ attempt_id
       payload.score_possible ?? null,
     ]
   );
+  // Old 'seen' attempts add storage without review value, so prune them for
+  // this question occasionally; scored attempts are never pruned here.
+  if (Math.random() < 0.02) {
+    await run(
+      "DELETE FROM practice_attempt WHERE question_id = ? AND status = 'seen' AND created_at < datetime('now', '-90 days')",
+      [payload.question_id]
+    );
+  }
   return { attempt_id: attemptId, created_at: createdAt };
 }
 
@@ -3031,6 +3064,37 @@ export function buildInstructionsMarkdown(config: CourseFullConfig): string {
   return lines.join("\n");
 }
 
+/**
+ * Import-time validation shared by the JSON importer (importJson) and the
+ * .qb course-bundle importer (parseCourseBundle). An MCQ question with zero
+ * or several correct options has no usable answer key, and marks must be a
+ * positive integer (test generation sums integer marks), so reject these
+ * instead of inserting them verbatim. Returns human errors naming the
+ * question id, recursing into parts.
+ */
+export function validateQuestionForImport(question: any): string[] {
+  if (!question || typeof question !== "object") return ["Invalid question entry."];
+  const id = String(question.question_id ?? "").trim();
+  const label = id ? `Question '${id}': ` : "Question: ";
+  const problems: string[] = [];
+  const marks = question.marks;
+  if (marks !== null && marks !== undefined && (!Number.isInteger(marks) || marks <= 0 || marks > 1000)) {
+    problems.push(`${label}marks must be a positive integer up to 1000 (got ${marks}).`);
+  }
+  if (question.type_key === "multiple_choice") {
+    const correct = Array.isArray(question.mcq_options)
+      ? question.mcq_options.filter((option: any) => option?.is_correct).length
+      : 0;
+    if (correct !== 1) {
+      problems.push(`${label}multiple-choice question must have exactly one correct option (found ${correct}).`);
+    }
+  }
+  for (const part of Array.isArray(question.parts) ? question.parts : []) {
+    problems.push(...validateQuestionForImport(part));
+  }
+  return problems;
+}
+
 // ---------- import ----------
 
 export async function importJson(courseId: string, data: any): Promise<ImportResponse> {
@@ -3124,6 +3188,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
         `Invalid difficulty level ${q.difficulty}. Valid: ${[...validDifficulties].sort().join(", ")}`
       );
     }
+    for (const problem of validateQuestionForImport(q)) errors.push(problem);
     const byCode = Array.isArray(q.node_codes) && q.node_codes.length > 0;
     const byName = Array.isArray(q.node_names) && q.node_names.length > 0;
     let nodeRefs: string[] = [];

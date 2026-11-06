@@ -5,6 +5,24 @@ import { newId } from "./id.ts";
 import { contentHash } from "./storage.ts";
 import { ensureAssetUrl } from "./assets.ts";
 
+const MAX_BUNDLE_FILE_BYTES = 250 * 1024 * 1024;
+const MAX_BUNDLE_UNCOMPRESSED_BYTES = 500 * 1024 * 1024;
+const MAX_BUNDLE_QUESTIONS = 5000;
+const MAX_PART_DEPTH = 8;
+
+function assertZipSize(archive: JSZip): void {
+  let total = 0;
+  for (const path in archive.files) {
+    const entry = archive.files[path];
+    if (entry.dir) continue;
+    const size = (entry as unknown as { _data?: { uncompressedSize?: number } })._data?.uncompressedSize ?? 0;
+    total += size;
+    if (total > MAX_BUNDLE_UNCOMPRESSED_BYTES) {
+      throw new Error("This bundle is too large when unzipped.");
+    }
+  }
+}
+
 /**
  * Read a `.qbx` zip and stage its question JSON + image blobs into the local
  * stores, returning the (asset-rewritten) payload ready for `data.importJson`.
@@ -14,12 +32,16 @@ import { ensureAssetUrl } from "./assets.ts";
  * duplication.
  */
 export async function parseQuestionBundleBlob(blob: Blob): Promise<Record<string, any> & { assetIds: string[] }> {
+  if (blob.size > MAX_BUNDLE_FILE_BYTES) {
+    throw new Error("This .qbx bundle is too large (over 250 MB).");
+  }
   let archive: JSZip;
   try {
     archive = await JSZip.loadAsync(blob);
   } catch {
     throw new Error("This is not a valid .qbx question bundle.");
   }
+  assertZipSize(archive);
   const manifest = archive.file("questions.json");
   if (!manifest) throw new Error("This .qbx bundle has no questions.json file.");
   const payload = JSON.parse(await manifest.async("string"));
@@ -46,13 +68,21 @@ export async function parseQuestionBundleBlob(blob: Blob): Promise<Record<string
       if (typeof oldId === "string" && oldId) referencedAssetIds.add(oldId);
     }
   };
-  const collectQuestion = (question: any) => {
+  let questionCount = 0;
+  const collectQuestion = (question: any, depth = 0) => {
+    if (depth > MAX_PART_DEPTH) {
+      throw new Error("This .qbx bundle has questions nested too deeply.");
+    }
+    questionCount += 1;
+    if (questionCount > MAX_BUNDLE_QUESTIONS) {
+      throw new Error("This .qbx bundle has too many questions.");
+    }
     for (const asset of question.assets ?? []) {
       if (asset?.asset_id) referencedAssetIds.add(String(asset.asset_id));
     }
     for (const slot of ["body", "hint", "answer", "solution", "marking_criteria"]) collectBlocks(question[slot]);
     for (const option of question.mcq_options ?? []) collectBlocks(option.content);
-    for (const part of question.parts ?? []) collectQuestion(part);
+    for (const part of question.parts ?? []) collectQuestion(part, depth + 1);
   };
   for (const question of payload.questions) collectQuestion(question);
   for (const stimulus of Array.isArray(payload.stimuli) ? payload.stimuli : []) collectBlocks(stimulus?.blocks);

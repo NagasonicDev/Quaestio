@@ -208,11 +208,45 @@ let dirty = false;
 let persistTimer: ReturnType<typeof setTimeout> | null = null;
 let pendingPersist: Promise<void> | null = null;
 let lastFlushError: unknown = null;
+let writeGeneration = 0;
+let pendingFlush = false;
+let transactionDepth = 0;
 
-// Cross-tab sync: broadcast a successful persist and reload when another tab
-// has written (only if this tab has no unsaved changes of its own).
+// Cross-tab sync: broadcast a successful persist; another tab notifies via a
+// callback instead of reloading, and a stale tab's flush is held so it cannot
+// quietly overwrite the other tab's save.
 let syncChannel: BroadcastChannel | null = null;
 let heavyTaskCount = 0;
+let revisionCounter = 0;
+let lastOwnRevision: string | null = null;
+let externalChangePending = false;
+const externalChangeListeners = new Set<() => void>();
+
+export function subscribeExternalChange(fn: () => void): () => void {
+  externalChangeListeners.add(fn);
+  return () => {
+    externalChangeListeners.delete(fn);
+  };
+}
+
+function notifyExternalChange(protectedRoute: boolean): void {
+  for (const fn of externalChangeListeners) {
+    try {
+      fn();
+    } catch {
+      /* ignore */
+    }
+  }
+  if (typeof window !== "undefined") {
+    try {
+      window.dispatchEvent(
+        new CustomEvent("quaestio-newer-data-available", { detail: { protectedRoute } })
+      );
+    } catch {
+      /* ignore */
+    }
+  }
+}
 
 export function beginHeavyTask(): void {
   heavyTaskCount += 1;
@@ -227,26 +261,20 @@ if (typeof window !== "undefined" && typeof BroadcastChannel !== "undefined") {
   try {
     syncChannel = new BroadcastChannel("quaestio-db-sync");
     syncChannel.onmessage = (event: MessageEvent) => {
-       const data = (event as { data?: unknown } | null)?.data;
-       if (!data || (data as { type?: unknown }).type !== "quaestio-persisted") return;
-       // If this tab has unsaved (or in-flight) work, or is running a long-lived
-       // task (import/generation/export), or is mid-session on a practice/quiz
-       // route, keep it; surface newer data instead of clobbering the page.
-       const loc = (typeof window !== "undefined" ? window.location : null);
-       const protectedRoute = !!loc && /practice|quiz/i.test(String(loc.pathname || "") + String(loc.hash || ""));
-       if (dirty || pendingPersist !== null || heavyTaskCount > 0 || protectedRoute) {
-         try {
-           window.dispatchEvent(new CustomEvent("quaestio-newer-data-available"));
-         } catch {
-           /* ignore */
-         }
-         return;
-       }
-      try {
-        window.location.reload();
-      } catch {
-        /* ignore */
-      }
+      const data = (event as { data?: unknown } | null)?.data;
+      if (!data || (data as { type?: unknown }).type !== "quaestio-persisted") return;
+      const revision = (data as { revision?: unknown }).revision;
+      if (typeof revision === "string" && revision === lastOwnRevision) return;
+      // Never reload: that discards in-memory work (including, for clean tabs,
+      // the revision stamp this tab would save against). Mark the change and
+      // notify; flush() holds this tab's writes until the user reloads, so a
+      // stale tab cannot overwrite the other tab's save. This applies to
+      // protected practice/quiz routes as well as clean tabs.
+      const loc = typeof window !== "undefined" ? window.location : null;
+      const protectedRoute =
+        !!loc && /practice|quiz/i.test(String(loc.pathname || "") + String(loc.hash || ""));
+      externalChangePending = true;
+      notifyExternalChange(protectedRoute);
     };
   } catch {
     syncChannel = null;
@@ -260,6 +288,7 @@ setPersistenceRetry(() => {
 
 export function markDirty(): void {
   dirty = true;
+  writeGeneration += 1;
   reportSaving();
   if (persistTimer !== null) clearTimeout(persistTimer);
   persistTimer = setTimeout(() => {
@@ -273,6 +302,12 @@ export async function flush(): Promise<void> {
     persistTimer = null;
   }
   if (!dirty || !db) return;
+  // Exporting mid-transaction would persist a half-applied batch; flush again
+  // when the transaction exits instead.
+  if (transactionDepth > 0) {
+    pendingFlush = true;
+    return;
+  }
   // Wait for an in-flight write so two saves cannot finish in the wrong order.
   if (pendingPersist !== null) {
     try {
@@ -282,25 +317,53 @@ export async function flush(): Promise<void> {
     }
   }
   if (!dirty || !db) return;
-  dirty = false;
+  if (transactionDepth > 0) {
+    pendingFlush = true;
+    return;
+  }
+  if (externalChangePending) {
+    // This tab's image is stale; persisting would overwrite the other tab's
+    // save. Keep dirty so the user is prompted and reloads to resync.
+    notifyExternalChange(false);
+    return;
+  }
+  pendingFlush = false;
   lastFlushError = null;
   reportSaving();
+  const generation = writeGeneration;
   const bytes = db.export();
   const persist = idb.persistDb(bytes);
   pendingPersist = persist;
   try {
     await persist;
+    revisionCounter += 1;
+    lastOwnRevision = `${Date.now()}:${revisionCounter}`;
     reportSaved(nowUtc());
     if (syncChannel) {
       try {
-        syncChannel.postMessage({ type: "quaestio-persisted" });
+        syncChannel.postMessage({ type: "quaestio-persisted", revision: lastOwnRevision });
       } catch {
         /* ignore */
       }
     }
+    if (writeGeneration === generation) {
+      dirty = false;
+    } else {
+      // New writes landed while persisting; keep dirty and run again so the
+      // finished export (which lacks them) is not mistaken for current data.
+      // markDirty normally schedules this timer; only fill the gap.
+      dirty = true;
+      if (persistTimer === null) {
+        persistTimer = setTimeout(() => {
+          void flush().catch(() => {});
+        }, 500);
+      }
+    }
   } catch (error) {
     // Keep the image marked dirty so a retry re-exports it rather than
-    // reporting a save that never happened.
+    // reporting a save that never happened. Do not reschedule here: a persist
+    // failure retries on the next write or via setPersistenceRetry, never in
+    // a loop.
     dirty = true;
     lastFlushError = error;
     reportSaveFailure(error);
@@ -326,7 +389,7 @@ export function flushOnHide(): void {
 
 if (typeof window !== "undefined") {
   window.addEventListener("beforeunload", (event) => {
-    if (isDirty()) {
+    if (isDirty() || pendingFlush || pendingPersist !== null) {
       try {
         void flush().catch(() => {});
       } catch {
@@ -373,6 +436,10 @@ export async function clearAllData(): Promise<void> {
   db = null;
   ready = null;
   dirty = false;
+  pendingFlush = false;
+  externalChangePending = false;
+  lastOwnRevision = null;
+  writeGeneration += 1;
   lastFlushError = null;
   reportCleared();
 }
@@ -380,7 +447,6 @@ export async function clearAllData(): Promise<void> {
 // ---------- Query helpers ----------
 
 // Run a set of statements atomically (open transaction, rollback on error).
-let transactionDepth = 0;
 
 export async function transaction(fn: (db: Database) => any): Promise<void> {
   const database = await getDb();
@@ -403,6 +469,10 @@ export async function transaction(fn: (db: Database) => any): Promise<void> {
     throw e;
   } finally {
     transactionDepth--;
+    if (transactionDepth === 0 && (pendingFlush || dirty)) {
+      pendingFlush = false;
+      void flush().catch(() => {});
+    }
   }
 }
 

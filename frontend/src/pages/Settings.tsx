@@ -140,11 +140,11 @@ export function Settings() {
         <div className="divide-y divide-border">
           <div className="flex items-center justify-between gap-4 p-5">
             <div>
-              <p className="font-medium text-destructive">Clear questions</p>
+              <p className="font-medium text-destructive">Clear questions for this course</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Deletes all questions, images, practice history, imports and generated tests. Course
-                structure and settings stay untouched. Export a backup first if you might want to keep
-                them.
+                Questions and attempts for this course, images, imports and generated tests are
+                deleted. Course structure and settings stay untouched. Export a backup first if you
+                might want to keep them.
               </p>
             </div>
             <Button
@@ -158,8 +158,12 @@ export function Settings() {
                   destructive: true,
                 });
                 if (!ok) return;
+                if (!courseId) {
+                  notify("No course selected", "error", "Select a course before clearing its questions.");
+                  return;
+                }
                 try {
-                  await clearQuestions();
+                  await clearQuestions(courseId);
                   await flush();
                   window.location.reload();
                 } catch (err) {

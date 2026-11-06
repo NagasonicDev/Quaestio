@@ -2,6 +2,7 @@ import JSZip from "jszip";
 import { questionImportScripts, questionImportSkillTemplate, questionImportWorkflow } from "./questionImportAssets.ts";
 import { importConventionsMarkdown, checkConventionsScript, importAuthoringRules } from "./importConventions.ts";
 import * as idb from "./db/indexeddb.ts";
+import { deleteUnclaimedAssetBlobs } from "./assets.ts";
 import { all, getFirst, run, runMany, transaction } from "./db/sqlite.ts";
 import { claimQuestionId, newId, nowUtc } from "./id.ts";
 import * as data from "./data.ts";
@@ -530,29 +531,60 @@ export async function exportCourse(
   const learning = includeQuestions && includeLearningData ? await readLearningData(courseId, options.includeResponseText === true) : null;
   const stimuli = includeQuestions ? await data.listStimuliForCourse(courseId) : [];
   const stimuliWithContent: StimulusExport[] = [];
-  for (const s of stimuli) {
-    const full = await data.getStimulus(s.stimulus_id);
-    if (full) {
+  if (stimuli.length) {
+    // One batched read for every stimulus block, instead of one getStimulus
+    // per stimulus.
+    const blocksByStimulus = new Map<string, Array<{ block_id: string; position: number; block_type: string; content: Record<string, any> }>>();
+    const stimulusIds = stimuli.map((s) => s.stimulus_id);
+    for (let offset = 0; offset < stimulusIds.length; offset += 400) {
+      const batch = stimulusIds.slice(offset, offset + 400);
+      const rows = await all<any>(
+        `SELECT stimulus_id, block_id, position, block_type, content_json FROM stimulus_block
+         WHERE stimulus_id IN (${batch.map(() => "?").join(",")}) ORDER BY stimulus_id, position`,
+        batch
+      );
+      for (const row of rows) {
+        const list = blocksByStimulus.get(String(row.stimulus_id)) ?? [];
+        let content: Record<string, any> = {};
+        try { content = JSON.parse(String(row.content_json)); } catch { /* malformed JSON — export empty */ }
+        list.push({ block_id: row.block_id, position: Number(row.position), block_type: row.block_type, content });
+        blocksByStimulus.set(String(row.stimulus_id), list);
+      }
+    }
+    for (const s of stimuli) {
       stimuliWithContent.push({
-        stimulus_id: full.stimulus_id,
-        course_id: full.course_id,
-        title: full.title,
-        created_at: full.created_at,
-        updated_at: full.updated_at,
-        blocks: full.blocks.map((b: any) => ({
-          block_id: b.block_id,
-          position: b.position,
-          block_type: b.block_type,
-          content: b.content,
-        })),
+        stimulus_id: s.stimulus_id,
+        course_id: s.course_id,
+        title: s.title,
+        created_at: s.created_at,
+        updated_at: s.updated_at,
+        blocks: blocksByStimulus.get(s.stimulus_id) ?? [],
       });
     }
   }
+  // One batched read for every question–stimulus link, instead of one
+  // getStimuliForQuestion per question. Ordering matches that query.
   const questionStimuli: QuestionStimulusLink[] = [];
+  const linkIds = questions.map((q) => q.question_id);
+  const stimuliByQuestion = new Map<string, string[]>();
+  for (let offset = 0; offset < linkIds.length; offset += 400) {
+    const batch = linkIds.slice(offset, offset + 400);
+    const rows = await all<any>(
+      `SELECT qs.question_id, qs.stimulus_id
+       FROM question_stimulus qs JOIN stimulus s ON s.stimulus_id = qs.stimulus_id
+       WHERE qs.question_id IN (${batch.map(() => "?").join(",")})
+       ORDER BY s.created_at DESC, s.stimulus_id`,
+      batch
+    );
+    for (const row of rows) {
+      const list = stimuliByQuestion.get(String(row.question_id)) ?? [];
+      list.push(String(row.stimulus_id));
+      stimuliByQuestion.set(String(row.question_id), list);
+    }
+  }
   for (const q of questions) {
-    const qs = await data.getStimuliForQuestion(q.question_id);
-    for (const s of qs) {
-      questionStimuli.push({ question_id: q.question_id, stimulus_id: s.stimulus_id });
+    for (const stimulus_id of stimuliByQuestion.get(q.question_id) ?? []) {
+      questionStimuli.push({ question_id: q.question_id, stimulus_id });
     }
   }
   const referencedAssetIds = collectReferencedAssetIdsWithStimuli(questions, stimuliWithContent);
@@ -721,12 +753,29 @@ export interface ParsedBundle {
   drawing_notebooks?: DrawingNotebook[];
 }
 
+const MAX_COURSE_BUNDLE_FILE_BYTES = 250 * 1024 * 1024;
+const MAX_COURSE_BUNDLE_UNCOMPRESSED_BYTES = 500 * 1024 * 1024;
+const MAX_COURSE_BUNDLE_QUESTIONS = 5000;
+const MAX_PART_DEPTH = 8;
+
 export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
+  if (file.size > MAX_COURSE_BUNDLE_FILE_BYTES) {
+    throw new Error("This .qb bundle is too large (over 250 MB).");
+  }
   let archive: JSZip;
   try {
     archive = await JSZip.loadAsync(file);
   } catch {
     throw new Error("This file is not a valid .qb course bundle.");
+  }
+  let uncompressed = 0;
+  for (const path in archive.files) {
+    const entry = archive.files[path];
+    if (entry.dir) continue;
+    uncompressed += (entry as unknown as { _data?: { uncompressedSize?: number } })._data?.uncompressedSize ?? 0;
+    if (uncompressed > MAX_COURSE_BUNDLE_UNCOMPRESSED_BYTES) {
+      throw new Error("This .qb bundle is too large when unzipped.");
+    }
   }
   const courseJsonFile = archive.file("course.json");
   if (!courseJsonFile) {
@@ -754,6 +803,25 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
   }
   if (courseJson.questions != null && !Array.isArray(courseJson.questions)) {
     throw new Error("This .qb bundle's question list is malformed.");
+  }
+  // Cap the walk before anything is written: unbounded nesting or question
+  // counts would hang the importer, and each question must carry a usable
+  // answer key and integer marks.
+  let questionCount = 0;
+  const checkQuestionBounds = (question: any, depth: number): void => {
+    if (depth > MAX_PART_DEPTH) {
+      throw new Error("This .qb bundle has questions nested too deeply.");
+    }
+    questionCount += 1;
+    if (questionCount > MAX_COURSE_BUNDLE_QUESTIONS) {
+      throw new Error("This .qb bundle has too many questions (over 5000).");
+    }
+    for (const part of Array.isArray(question?.parts) ? question.parts : []) checkQuestionBounds(part, depth + 1);
+  };
+  for (const question of courseJson.questions ?? []) checkQuestionBounds(question, 0);
+  for (const question of courseJson.questions ?? []) {
+    const problems = data.validateQuestionForImport(question);
+    if (problems.length) throw new Error(`This .qb bundle is invalid: ${problems[0]}`);
   }
   let drawingNotebooks: DrawingNotebook[] = [];
   if (courseJson.drawing_notebooks != null) {
@@ -1075,6 +1143,7 @@ export async function applyCourseBundle(
   }
 
   const now = nowUtc();
+  try {
   await transaction(async (database) => {
     if (mode === "replace") {
       const existsRows = database.exec("SELECT 1 FROM course WHERE course_id = ?", [courseId]);
@@ -1214,6 +1283,13 @@ export async function applyCourseBundle(
   await restoreStimuli(bundle, ctx);
   await data.importDrawingNotebooks(bundle.drawing_notebooks ?? [], ctx.questionMap);
   });
+  } catch (error) {
+    // Blobs were written to IndexedDB inside the transaction; a rollback
+    // removes the SQLite rows but not the blobs, so drop any blob no row
+    // claims.
+    await deleteUnclaimedAssetBlobs([...new Set([...bundle.assetBlobs.keys()].map((assetId) => ctx.assetMap.get(assetId) ?? assetId))]);
+    throw error;
+  }
   onProgress?.(100);
   return courseId;
 }

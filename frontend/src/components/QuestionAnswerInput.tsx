@@ -55,13 +55,56 @@ export function QuestionAnswerInput({
       setImageError("Choose an image smaller than 10 MB.");
       return;
     }
-    const reader = new FileReader();
-    reader.onload = () => {
-      if (typeof reader.result === "string") onImageChange(reader.result);
-      else setImageError("Could not read this image.");
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      try {
+        const maxDim = 1600;
+        const scale = Math.min(1, maxDim / Math.max(img.naturalWidth, img.naturalHeight));
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.max(1, Math.round(img.naturalWidth * scale));
+        canvas.height = Math.max(1, Math.round(img.naturalHeight * scale));
+        const ctx = canvas.getContext("2d");
+        if (!ctx) {
+          setImageError("Could not read this image.");
+          return;
+        }
+        // JPEG has no alpha channel; a white fill keeps scans readable.
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        canvas.toBlob(
+          (blob) => {
+            if (!blob) {
+              setImageError("Could not read this image.");
+              return;
+            }
+            if (blob.size > 2 * 1024 * 1024) {
+              setImageError(
+                "That image is too large to save with your attempt (2 MB limit after resizing). Try a smaller or lower-resolution image."
+              );
+              return;
+            }
+            const reader = new FileReader();
+            reader.onload = () => {
+              if (typeof reader.result === "string") onImageChange(reader.result);
+              else setImageError("Could not read this image.");
+            };
+            reader.onerror = () => setImageError("Could not read this image.");
+            reader.readAsDataURL(blob);
+          },
+          "image/jpeg",
+          0.8
+        );
+      } finally {
+        URL.revokeObjectURL(url);
+      }
     };
-    reader.onerror = () => setImageError("Could not read this image.");
-    reader.readAsDataURL(file);
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      setImageError("Could not read this image.");
+    };
+    img.src = url;
   };
 
   const modes: Array<{ value: AnswerMode; label: string; Icon: typeof Type }> = [
@@ -90,7 +133,7 @@ export function QuestionAnswerInput({
         <input type="file" accept="image/*" disabled={disabled} className="sr-only" onChange={(event) => readImage(event.target.files?.[0])} />
       </label>}
       {imageError && <p role="alert" className="text-sm text-destructive">{imageError}</p>}
-      <p className="text-xs text-muted-foreground">PNG, JPEG, WebP, GIF, or another image format, up to 10 MB. {captureResponse ? "Saved with your attempt on this device." : "Response saving is turned off in settings."}</p>
+      <p className="text-xs text-muted-foreground">PNG, JPEG, WebP, GIF, or another image format, up to 10 MB. It is downscaled and saved with your attempt at up to 2 MB. {captureResponse ? "Saved with your attempt on this device." : "Response saving is turned off in settings."}</p>
     </div>}
   </section>;
 }
