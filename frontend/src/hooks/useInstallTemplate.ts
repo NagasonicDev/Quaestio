@@ -1,17 +1,14 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { buildTemplateBundle, type CourseTemplate } from "../lib/courseTemplates.ts";
+import type { CourseTemplate } from "../lib/courseTemplates.ts";
 import { useActiveCourse } from "./useActiveCourse.tsx";
 import { notify } from "../lib/notifications.ts";
-import { api } from "../api/client.ts";
-import { parseQuestionBundleBlob } from "../lib/questionBundle.ts";
-import { deleteUnclaimedAssetBlobs } from "../lib/assets.ts";
-
-const EXAM_YEARS = [2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025];
 
 /**
  * Installs a base course template as a brand-new course (never writes into an
- * existing one) and makes it the active course. The 2020-25 HSC exam bundles
- * shipped in public/templates/hsc/<template>/ are pulled in as questions, if present.
+ * existing one) and makes it the active course. Each template ships as one
+ * `.qb` (built by `scripts/build-template-bundles.mjs`) carrying the course
+ * structure and all of its questions, so install is a single fetch and one
+ * atomic apply: an interrupted install leaves no partial course behind.
  */
 export function useInstallTemplate() {
   const qc = useQueryClient();
@@ -20,31 +17,14 @@ export function useInstallTemplate() {
   return useMutation({
     mutationFn: async (template: CourseTemplate) => {
       // Lazy so the bundle importer (and jszip) stays out of the main chunk.
-      const { applyCourseBundle } = await import("../lib/exchange.ts");
-      const courseId = await applyCourseBundle(buildTemplateBundle(template), "new");
+      const { parseCourseBundle, applyCourseBundle } = await import("../lib/exchange.ts");
+      const base = import.meta.env.BASE_URL ?? "/";
+      const res = await fetch(`${base}templates/hsc/${template.id}/${template.id}.qb`);
+      if (!res.ok) throw new Error("This template's course file is unavailable.");
+      const bundle = await parseCourseBundle(new File([await res.blob()], `${template.id}.qb`));
+      const courseId = await applyCourseBundle(bundle, "new");
       await qc.invalidateQueries({ queryKey: ["courses"] });
       setCourseId(courseId);
-
-      const base = import.meta.env.BASE_URL ?? "/";
-      for (const year of EXAM_YEARS) {
-        const url = `${base}templates/hsc/${template.id}/${year}-hsc-${template.id}.qbx`;
-        let res: Response;
-        try {
-          res = await fetch(url);
-        } catch {
-          continue;
-        }
-        if (!res.ok) continue;
-        let parsed: Awaited<ReturnType<typeof parseQuestionBundleBlob>> | null = null;
-        try {
-          parsed = await parseQuestionBundleBlob(await res.blob());
-          await api.importJson(courseId, parsed);
-        } catch {
-          // Bundles may be absent or unusable for some template/year pairs; drop
-          // any image blobs staged before a failed import so they do not leak.
-          if (parsed?.assetIds.length) await deleteUnclaimedAssetBlobs(parsed.assetIds);
-        }
-      }
       await qc.invalidateQueries({ queryKey: ["questions", courseId] });
       await qc.invalidateQueries({ queryKey: ["question-counts", courseId] });
       return courseId;

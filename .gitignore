@@ -57,3 +57,6 @@ Physics-*-Drill.html
 scripts/question_import/reclassify_*.py
 scripts/question_import/verify_*.py
 scripts/question_import/dump_nodes.py
+
+# Shipped single-file template banks (built by build-template-bundles.mjs)
+!frontend/public/templates/hsc/**/*.qb

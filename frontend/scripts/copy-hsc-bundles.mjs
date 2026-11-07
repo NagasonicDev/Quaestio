@@ -2,7 +2,9 @@
  * Copy the 2020-25 HSC exam bundles out of the (private, uncommitted)
  * repo-root `imports/` folder into `public/templates/hsc/<template-id>/` so the
  * template installer can ship them with the app. Run after adding new bundles;
- * the output is committed, so dev/build do not need this step.
+ * then run `build-template-bundles` to merge each template's `.qbx` files into
+ * the single shipped `.qb` (the `.qbx` are deleted again). The output is
+ * committed, so dev/build do not need these steps.
  */
 import fs from "node:fs";
 import path from "node:path";

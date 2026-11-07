@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "vite",
     "copy-hsc-bundles": "node scripts/copy-hsc-bundles.mjs",
+    "build-template-bundles": "node scripts/build-template-bundles.mjs",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "test:selection": "node --test tests/questionSelection.test.mjs",
