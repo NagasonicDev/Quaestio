@@ -222,12 +222,14 @@ async function buildOne(sourceId, targetId) {
   let unclassified = 0;
   let total = 0;
 
-  const process = (q, parentId = null, parentMapped = null) => {
+  const process = (q, parentId = null, parentMapped = null, parentType = null) => {
     total += 1;
     let mapped = mapQuestion(sourceId, targetId, q, src, dst);
     if (!mapped.length && parentMapped?.length) mapped = parentMapped;
     if (!mapped.length) unclassified += 1;
     const copy = JSON.parse(JSON.stringify(q));
+    copy.review_status = "approved";
+    if (!copy.type_key && parentType) copy.type_key = parentType;
     copy.question_id = fixId(copy.question_id);
     copy.parent_question_id = parentId;
     copy.course_id = dstJson.course.course_id;
@@ -243,7 +245,7 @@ async function buildOne(sourceId, targetId) {
     if (problems.length) throw new Error(`${targetId} ${problems[0]}`);
     copy.parts = [];
     const parts = Array.isArray(q.parts) ? q.parts : [];
-    for (const part of parts) process(part, copy.question_id, mapped);
+    for (const part of parts) process(part, copy.question_id, mapped, copy.type_key);
     questions.push(copy);
   };
   // Preserve order: parents first (parts are nested, so flat list order is

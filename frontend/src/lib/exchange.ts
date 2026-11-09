@@ -963,6 +963,8 @@ async function insertQuestion(
   ctx: ImportCtx,
   sourceAlready: Map<string, string | null>
 ): Promise<string> {
+  // Bundled questions may omit optional columns; sql.js rejects `undefined` binds,
+  // so normalise to the column defaults/nulls before binding.
   const questionId = claimQuestionId(question.question_id, ctx.usedQuestionIds);
   ctx.questionMap.set(question.question_id, questionId);
   const parentId = question.parent_question_id
@@ -986,13 +988,13 @@ async function insertQuestion(
       questionId,
       ctx.courseId,
       question.type_key,
-      question.difficulty,
-      question.marks,
+      question.difficulty ?? null,
+      question.marks ?? null,
       parentId,
-      question.part_label,
-      question.notes,
-      question.review_status,
-      question.classification_confidence,
+      question.part_label ?? null,
+      question.notes ?? null,
+      question.review_status ?? "approved",
+      question.classification_confidence ?? null,
       sourceId,
       question.created_at ?? nowUtc(),
       question.updated_at ?? nowUtc(),

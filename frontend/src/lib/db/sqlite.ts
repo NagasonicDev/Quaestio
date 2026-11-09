@@ -1,11 +1,45 @@
 import * as sqlJsModule from "sql.js";
 import type { Database } from "sql.js";
+import sqlJsScriptUrl from "sql.js/dist/sql-wasm-browser.js?url";
 
 // sql.js ships a UMD build whose export shape depends on the bundler; pick the
 // factory without relying on Vite optimizing sql.js.
-const initSqlJs = ((sqlJsModule as any).default ??
+const staticInitSqlJs = ((sqlJsModule as any).default ??
   (sqlJsModule as any).Module ??
   (sqlJsModule as any)) as (typeof import("sql.js"))["default"];
+
+// In the browser, Vite serves the UMD file raw with no ESM exports, so the
+// static import above is an empty namespace. Load the same file as a classic
+// script instead: pre-seed the `module`/`exports` globals the UMD checks for,
+// then read the factory back out of `window.module.exports`.
+let browserFactoryPromise: Promise<(typeof import("sql.js"))["default"]> | null = null;
+
+async function initSqlJsBrowser(): Promise<(typeof import("sql.js"))["default"]> {
+  const w = globalThis as any;
+  if (!browserFactoryPromise) {
+    browserFactoryPromise = (async () => {
+      const wrapper: { exports: unknown } = { exports: {} };
+      w.module = wrapper;
+      w.exports = wrapper.exports;
+      try {
+        await new Promise<void>((resolve, reject) => {
+          const script = document.createElement("script");
+          script.src = sqlJsScriptUrl;
+          script.onload = () => resolve();
+          script.onerror = () => reject(new Error("sql.js failed to load."));
+          document.head.appendChild(script);
+        });
+        const factory = (wrapper.exports as any)?.default ?? (wrapper.exports as any) ?? w.initSqlJs;
+        if (typeof factory !== "function") throw new Error("sql.js did not export an initializer.");
+        return factory as (typeof import("sql.js"))["default"];
+      } finally {
+        delete w.module;
+        delete w.exports;
+      }
+    })();
+  }
+  return browserFactoryPromise;
+}
 import { SCHEMA_SQL, BUILTIN_QUESTION_TYPES, MIGRATIONS, SCHEMA_VERSION } from "./schema.ts";
 import * as idb from "./indexeddb.ts";
 import { isValidQuestionId, newQuestionId, nowUtc } from "../id.ts";
@@ -34,6 +68,10 @@ async function initDb(): Promise<Database> {
   } else {
     locateFile = () => new URL("../../../node_modules/sql.js/dist/sql-wasm.wasm", import.meta.url).href;
   }
+  const initSqlJs =
+    typeof window !== "undefined" && typeof staticInitSqlJs !== "function"
+      ? await initSqlJsBrowser()
+      : staticInitSqlJs;
   const SQL = await initSqlJs({ locateFile });
   const bytes = await idb.loadPersistedDb();
   if (bytes && bytes.byteLength > 0) {

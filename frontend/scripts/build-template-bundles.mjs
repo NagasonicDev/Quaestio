@@ -171,6 +171,11 @@ function countNested(q, depth = 0) {
   return total;
 }
 
+function approve(q) {
+  q.review_status = "approved";
+  for (const part of q.parts ?? []) approve(part);
+}
+
 async function buildOne(template) {
   const bundle = buildTemplateBundle(template);
   const dir = path.join(templatesDir, template.id);
@@ -229,6 +234,7 @@ async function buildOne(template) {
     for (const q of payload.questions ?? []) {
       rewriteAssetRefs(q, idMap);
       remapQuestion(q, maps);
+      approve(q);
       if (!q.node_ids?.length) unclassified += 1;
       nestedCount += countNested(q);
       if (nestedCount > MAX_BUNDLE_QUESTIONS) {
