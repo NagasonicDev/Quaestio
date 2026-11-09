@@ -87,7 +87,7 @@ def fix_answer_area(container, report):
         for part in container["parts"]:
             fix_answer_area(part, report)
         return
-    if container.get("part_label") is None:
+    if container.get("type_key") == "multiple_choice":
         return
     want = max(1, 2 * (container.get("marks") or 1))
     body = container.setdefault("body", [])

@@ -70,6 +70,13 @@ export function defaultSectionTitle(index: number, custom: string | null): strin
   return `Section ${toRoman(index + 1)}`;
 }
 
+/** Ruled answer lines per mark: two, minimum two, rounded to even (matches qbx_lib.answer_lines). */
+export function answerLinesForMarks(marks: number | null | undefined): number {
+  const m = Number(marks);
+  if (!Number.isFinite(m) || m <= 0) return 2;
+  return Math.max(2, Math.ceil(Math.round(m * 2) / 2) * 2);
+}
+
 /** Round section working time to a sensible whole number of minutes. */
 export function minutesForMarks(marks: number, minutesPerMark = DEFAULT_EXAM_PROFILE.minutesPerMark): number {
   if (marks <= 0) return 0;

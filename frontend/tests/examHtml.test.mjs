@@ -185,6 +185,23 @@ test("MCQ options are lettered, and the plain paper carries no answer key", () =
   assert.ok(!html.includes("Correct answer"), "the paper never shows the key");
 });
 
+test("multiple choice gets no working-out space, even with a non-empty body", () => {
+  const mcq = question({
+    type_key: "multiple_choice",
+    mcq_options: [
+      { position: 0, content: [{ block_type: "text", content: { text: "alpha" } }], is_correct: true },
+      { position: 1, content: [{ block_type: "text", content: { text: "beta" } }], is_correct: false },
+    ],
+  });
+  const html = paper([{ label: null, questions: [mcq] }]);
+  assert.equal((html.match(/class="answer-line"/g) ?? []).length, 0);
+});
+
+test("synthetic answer space follows the two-lines-per-mark convention", () => {
+  const html = paper([{ label: null, questions: [question()] }]);
+  assert.equal((html.match(/class="answer-line"/g) ?? []).length, 6);
+});
+
 test("the solutions document marks the MCQ key and prints each question's slots", () => {
   const mcq = question({
     body: [],

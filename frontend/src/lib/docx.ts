@@ -30,6 +30,7 @@ import { logTiming } from "./timing.ts";
 import { DEFAULT_EXAM_PROFILE, type ExamProfile } from "./examProfile.ts";
 import {
   EXAM,
+  answerLinesForMarks,
   buildExamPaperPlan,
   formatMcOption,
   generalInstructionsLines,
@@ -441,7 +442,7 @@ function answerAreaPseudo(marks: number): ContentBlock {
     slot: "body",
     position: 999,
     block_type: "answer_area",
-    content: { lines: Math.max(3, Number.isFinite(marks) && marks > 0 ? marks : 3) },
+    content: { lines: answerLinesForMarks(marks) },
   };
 }
 
@@ -450,11 +451,12 @@ function hasAnswerArea(q: Question): boolean {
   return (q.parts ?? []).some(hasAnswerArea);
 }
 
-function withSyntheticAnswerSpace(body: ContentBlock[], marks: number | null): ContentBlock[] {
+function withSyntheticAnswerSpace(body: ContentBlock[], marks: number | null, skip = false): ContentBlock[] {
+  if (skip) return body;
   if (body.some((b) => b.block_type === "answer_area")) return body;
   // Avoid duplicating when a nested part provides the space.
   if (body.length === 0) return body;
-  return [...body, answerAreaPseudo(Number(marks) || 3)];
+  return [...body, answerAreaPseudo(Number(marks) || 0)];
 }
 
 function renderQuestion(
@@ -464,7 +466,7 @@ function renderQuestion(
 ): Array<Paragraph | Table> {
   const out: Array<Paragraph | Table> = [];
   out.push(questionHeader(question, counter));
-  const body = hasAnswerArea(question) ? question.body : withSyntheticAnswerSpace(question.body, question.marks);
+  const body = hasAnswerArea(question) ? question.body : withSyntheticAnswerSpace(question.body, question.marks, (question.mcq_options?.length ?? 0) > 0);
   out.push(...renderBlocks(body, { indentIn: 0, images }));
   if (question.mcq_options?.length) out.push(...renderBlocks(mcqOptionBlocks(question), { indentIn: 0, images }));
   const renderParts = (parts: Question[], depth = 1) => {
@@ -484,7 +486,7 @@ function renderQuestion(
     );
     const partBody = hasAnswerArea(part)
       ? part.body
-      : withSyntheticAnswerSpace(part.body, part.marks);
+      : withSyntheticAnswerSpace(part.body, part.marks, (part.mcq_options?.length ?? 0) > 0);
     out.push(...renderBlocks(partBody, { indentIn: 0.3 * depth, images }));
     renderParts(part.parts, depth + 1);
   }

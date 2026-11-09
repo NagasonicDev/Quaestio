@@ -13,6 +13,7 @@ import {
 } from "./criteria.ts";
 import {
   EXAM,
+  answerLinesForMarks,
   buildExamPaperPlan,
   formatMcOption,
   generalInstructionsLines,
@@ -196,16 +197,16 @@ function hasAnswerArea(q: Question): boolean {
   return (q.parts ?? []).some(hasAnswerArea);
 }
 
-function withSyntheticAnswerSpace(body: ContentBlock[], marks: Question["marks"]): ContentBlock[] {
+function withSyntheticAnswerSpace(body: ContentBlock[], marks: Question["marks"], skip = false): ContentBlock[] {
+  if (skip) return body;
   if (body.some((b) => b.block_type === "answer_area")) return body;
   if (body.length === 0) return body;
-  const lines = Number.isFinite(Number(marks)) && Number(marks) > 0 ? Number(marks) : 3;
   const pseudo: ContentBlock = {
     block_id: "syn-answer-area",
     slot: "body",
     position: 999,
     block_type: "answer_area",
-    content: { lines: Math.max(3, lines) },
+    content: { lines: answerLinesForMarks(marks) },
   };
   return [...body, pseudo];
 }
@@ -215,13 +216,13 @@ function renderQuestion(question: Question, n: number, images: Map<string, Resol
   const header = `<div class="question-head"><span class="question-number">Question ${n}</span><span class="question-marks">${esc(marks)}</span></div>`;
   const body = hasAnswerArea(question)
     ? renderBlocks(question.body, images)
-    : renderBlocks(withSyntheticAnswerSpace(question.body, question.marks), images);
+    : renderBlocks(withSyntheticAnswerSpace(question.body, question.marks, (question.mcq_options?.length ?? 0) > 0), images);
   const options = question.mcq_options?.length ? renderBlocks(mcqOptionBlocks(question), images) : "";
   const renderParts = (children: Question[], depth = 0): string => children
     .map((part) => {
       const partBody = hasAnswerArea(part)
         ? renderBlocks(part.body, images, 0.3 + depth * 0.3)
-        : renderBlocks(withSyntheticAnswerSpace(part.body, part.marks), images, 0.3 + depth * 0.3);
+        : renderBlocks(withSyntheticAnswerSpace(part.body, part.marks, (part.mcq_options?.length ?? 0) > 0), images, 0.3 + depth * 0.3);
       const label = part.part_label ? `(${esc(part.part_label)})` : "";
       const labelMarks = marksLabel(part.marks);
       const head = `<div class="part-head"><span class="part-label">${label}</span>${labelMarks ? `<span class="part-marks">[${esc(labelMarks)}]</span>` : ""}</div>`;
