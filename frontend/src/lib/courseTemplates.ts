@@ -144,15 +144,37 @@ function enrichWithSyllabusDotPoints(
   };
   for (const group of groups) {
     const topics = topicsByYear[group.year];
+    const points = group.pointsAreJoined ? group.points : joinSyllabusListFragments(group.points);
+    // A group named after its module describes the whole module, so every topic
+    // under it needs the points, not just the closest name match.
+    if (syllabusNameKey(group.topic) === syllabusNameKey(group.module)) {
+      const moduleKey = syllabusNameKey(group.module);
+      for (const ref of topics) {
+        if (!ref.names.slice(0, -1).some((name) => syllabusNameKey(name) === moduleKey)) continue;
+        for (const point of points) addDotPoint(ref.node, point);
+      }
+      continue;
+    }
     const ranked = topics.map((ref) => {
       const topicScore = syllabusNameSimilarity(group.topic, ref.node.name);
       const contextScore = Math.max(0, ...ref.names.map((name) => syllabusNameSimilarity(group.module, name)));
       return { ref, score: topicScore * 0.82 + contextScore * 0.18 };
     }).sort((a, b) => b.score - a.score);
-    const destination = ranked[0]?.ref.node;
-    if (!destination) continue;
-    const points = group.pointsAreJoined ? group.points : joinSyllabusListFragments(group.points);
-    for (const point of points) addDotPoint(destination, point);
+    const best = ranked[0];
+    if (!best) continue;
+    // Parallel course paths (e.g. Standard 1 and Standard 2) repeat the exact
+    // topic name under the same module name; both are valid homes for the points.
+    const exactTopic = syllabusNameSimilarity(group.topic, best.ref.node.name) > 1 - 1e-9;
+    const parentKey = best.ref.parent ? syllabusNameKey(best.ref.parent.name) : "";
+    const destinations = exactTopic
+      ? ranked.filter((entry) =>
+        Math.abs(entry.score - best.score) < 1e-9
+        && (entry.ref.parent ? syllabusNameKey(entry.ref.parent.name) : "") === parentKey,
+      )
+      : [best];
+    for (const { ref } of destinations) {
+      for (const point of points) addDotPoint(ref.node, point);
+    }
   }
 
   return nodes;

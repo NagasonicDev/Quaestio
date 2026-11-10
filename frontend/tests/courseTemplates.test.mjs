@@ -8,6 +8,7 @@ import {
   templatesByCategory,
   templateStats,
 } from "../src/lib/courseTemplates.ts";
+import { SYLLABUS_DOT_POINTS } from "../src/lib/syllabusDotPoints.ts";
 
 test("every shipped template uses a declared category", () => {
   for (const t of COURSE_TEMPLATES) {
@@ -121,6 +122,54 @@ test("buildTemplateBundle derives .qb-style node codes", () => {
       ["Module B", "HSC-M1"],
     ]
   );
+});
+
+test("syllabus dot points reach parallel topics and every topic of a module-level group", () => {
+  const dotPointCount = (node) => (node.children ?? []).filter((child) => /-D\d+$/.test(child.code)).length;
+  const find = (nodes, name) => nodes.find((node) => node.name === name);
+
+  const parallel = template({
+    id: "mathematics-standard",
+    name: "Mathematics Standard",
+    category: "HSC",
+    hierarchy: ["Year", "Module", "Topic"],
+    nodes: [
+      { name: "Year 11" },
+      {
+        name: "Year 12",
+        children: [
+          { name: "Standard 1", children: [{ name: "Algebraic relationships", children: ["Simultaneous linear equations"] }] },
+          { name: "Standard 2", children: [{ name: "Algebraic relationships", children: ["Simultaneous linear equations"] }] },
+        ],
+      },
+    ],
+  });
+  const parallelLeaves = [find(parallel.nodes[1].children, "Standard 1"), find(parallel.nodes[1].children, "Standard 2")]
+    .map((path) => find(path.children, "Algebraic relationships").children[0]);
+  const simultaneous = SYLLABUS_DOT_POINTS["mathematics-standard"]
+    .find((group) => group.year === "HSC" && group.topic === "Simultaneous linear equations");
+  const ownPoints = (node) => node.children.filter((child) =>
+    simultaneous.points.some((point) => child.name.startsWith(point.slice(0, 40))));
+  assert.deepEqual(parallelLeaves.map((node) => ownPoints(node).length), [11, 11], "both parallel topics get the same dot points");
+
+  const moduleScoped = template({
+    id: "modern-history-2017",
+    name: "Modern History (2017)",
+    category: "HSC",
+    hierarchy: ["Year", "Module", "Topic"],
+    nodes: [
+      { name: "Year 11" },
+      {
+        name: "Year 12",
+        children: [{
+          name: "Core Study: Power and Authority in the Modern World 1919\u20131946",
+          children: ["Survey", "The rise of dictatorships", "The Nazi regime to 1939"],
+        }],
+      },
+    ],
+  });
+  const moduleNode = moduleScoped.nodes[1].children[0];
+  assert.deepEqual(moduleNode.children.map(dotPointCount), [13, 13, 13], "every topic in the module gets the module points");
 });
 
 test("every shipped template node declares an explicit, unique, well-formed code", () => {
