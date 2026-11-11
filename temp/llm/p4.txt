@@ -1,0 +1,94 @@
+auto202503|HSC-M4-T1-D31|high|thermostat controls coolant flow
+auto202504|HSC-M4-T1-D10|medium|diesel engine advantage torque efficiency
+auto202505|HSC-M4-T1-D78|high|distributor directs spark sequence
+auto202506|HSC-M4-T1-D35|high|carburettor mixes air and fuel
+auto202507|HSC-M4-T1-D52|high|differential allows varying wheel speeds
+auto202508|HSC-M4-T1-D45|medium|transmission operation purpose
+auto202509|HSC-M4-T1-D63|high|ABS maintains steering control
+auto202510|HSC-M4-T1-D69|high|torsion spring suspension
+auto202511|HSC-M4-T1-D107|medium|paint quantity and cost calculation
+auto202512|HSC-M4-T1-D132|medium|government statutory regulation affecting industry
+auto202513|HSC-M4-T1-D81|medium|electrical system improves occupant safety
+auto202514|HSC-M4-T1-D17|medium|engine components affect performance
+auto202515|HSC-M4-T1-D116|high|vehicle design functionality and sustainability
+auto202516|HSC-M2-T1-D19|medium|legislation sustainability and historical developments
+elec202501|HSC-M4-T2-D16|high|FET amplifies audio
+elec202502|HSC-M4-T2-D3|medium|earthing safe path for electricity
+elec202503|HSC-M4-T2-D15|high|Zener diode reverse current
+elec202504|HSC-M4-T2-D49|high|zero volts fault finding
+elec202505|HSC-M4-T2-D56|high|resistance from voltage and current
+elec202506|HSC-M4-T2-D33|high|solenoid controls fluid flow
+elec202507|HSC-M4-T2-D45|medium|removing solder bridge
+elec202508|HSC-M4-T2-D15|medium|voltage regulator fault cause
+elec202509|HSC-M4-T2-D49|high|microcontroller power fault finding
+elec202510|HSC-M4-T2-D49|high|LED orientation fault finding
+elec202511|HSC-M4-T2-D4|high|diodes rectify AC current
+elec202512|HSC-M4-T2-D7|high|NOR versus NAND gate
+elec202513|HSC-M4-T2-D59|high|sketch missing circuit symbols
+elec202514|HSC-M4-T2-D56|high|power current calculation circuit breaker
+elec202515|HSC-M4-T2-D23|high|insulation for high voltage
+elec202516|HSC-M2-T1-D19|medium|legislation sustainability and historical developments
+graph202501|HSC-M1-T1-D1|high|third angle projection representation
+graph202502|HSC-M3-T1-D8|high|purpose of assembly drawing
+graph202503|HSC-M3-T1-D13|medium|CAD layers visibility organisation
+graph202504|HSC-M3-T1-D1|high|advantage of isometric sketches
+graph202505|HSC-M3-T1-D13|low|vector software scalable graphics
+graph202506|HSC-M3-T1-D17|high|purpose of shadow diagram
+graph202507|HSC-M3-T1-D3|high|oblique receding edge scales
+graph202508|null|medium|paper size system not covered
+graph202509|HSC-M3-T1-D17|medium|area from architectural floor plan
+graph202510|HSC-M3-T1-D13|medium|CAD boolean intersection
+graph202511|HSC-M3-T1-D21|high|site plan feature for council
+graph202512|HSC-M3-T1-D1|medium|fillet curve in isometric
+graph202513|HSC-M3-T1-D6|medium|audience of orthogonal versus pictorial
+graph202514|HSC-M3-T1-D1|high|isometric view from third angle views
+graph202515|HSC-M1-T1-D3|high|full sectional view A-A
+graph202516|HSC-M2-T1-D19|medium|legislation sustainability and historical developments
+metal202501|HSC-M3-T2-D21|medium|identify hammer type
+metal202502|HSC-M1-T2-D25|high|brass is copper and zinc
+metal202503|HSC-M3-T2-D4|high|knurling on lathe turning
+metal202504|HSC-M1-T2-D31|medium|zinc galvanising corrosion protection
+metal202505|HSC-M3-T2-D1|high|power tool safe initial inspection
+metal202506|HSC-M3-T2-D15|high|buffing definition
+metal202507|HSC-M3-T2-D4|high|forging with red heat hammering
+metal202508|HSC-M3-T2-D4|high|argon shielding gas MIG
+metal202509|HSC-M3-T2-D4|medium|nibbler cuts 5mm mild steel
+metal202510|HSC-M3-T2-D11|high|quenching and tempering
+metal202511|HSC-M3-T2-D3|high|spring dividers marking out
+metal202512|HSC-M1-T2-D36|high|rivets versus screws fasteners
+metal202513|HSC-M3-T2-D4|medium|cutting fluids when machining
+metal202514|HSC-M3-T2-D4|high|internal thread on lathe
+metal202515|HSC-M1-T2-D34|high|hollow tube versus solid section
+metal202516|HSC-M2-T1-D19|medium|legislation sustainability and historical developments
+multi202501|HSC-M4-T5-D2|high|purpose of paragraph formatting
+multi202502|HSC-M4-T5-D13|high|screenshot tools screen capture
+multi202503|HSC-M2-T2-D65|high|compression affects streamed sound quality
+multi202504|HSC-M4-T5-D20|high|contrast filter effect
+multi202505|HSC-M2-T2-D27|high|slow motion special effect
+multi202506|HSC-M2-T2-D38|medium|rigging in 3D animation
+multi202507|HSC-M2-T2-D16|medium|processor for smooth video playback
+multi202508|HSC-M2-T2-D60|high|PDF editing limitation
+multi202509|HSC-M2-T2-D31|medium|animation definition as multimedia element
+multi202510|HSC-M2-T2-D53|high|age verification adult content
+multi202511|HSC-M4-T5-D12|high|PNG instead of JPEG
+multi202512|HSC-M4-T5-D20|high|manipulate banner image
+multi202513|HSC-M2-T2-D16|high|analogue versus digital video
+multi202514|HSC-M2-T2-D43|high|motion capture advantages
+multi202515|HSC-M2-T2-D77|high|ethical use image manipulation
+multi202516|HSC-M2-T1-D19|medium|legislation sustainability and historical developments
+timber202501|HSC-M1-T2-D137|high|stopped housing conceals joint
+timber202502|HSC-M1-T2-D139|high|scrap wood prevents drilling splintering
+timber202503|HSC-M1-T2-D142|high|tailstock supports woodturning workpiece
+timber202504|HSC-M1-T2-D100|high|pictorial versus working drawing
+timber202505|HSC-M1-T2-D148|high|laminated timber stronger
+timber202506|HSC-M1-T2-D113|high|rails stabilise frame components
+timber202507|HSC-M1-T2-D59|high|plywood delaminates with moisture
+timber202508|HSC-M1-T2-D76|high|mechanical drawer runners
+timber202509|HSC-M1-T2-D131|high|tenon one third thickness
+timber202510|HSC-M1-T2-D164|high|order of finishing operations
+timber202511|HSC-M1-T2-D114|high|drawer measurements from carcase
+timber202512|HSC-M1-T2-D134|high|carcase joint characteristics
+timber202513|HSC-M1-T2-D169|medium|band saw versus table saw
+timber202514|HSC-M1-T2-D149|high|bending curved feature legs
+timber202515|HSC-M1-T2-D173|medium|high-risk machinery maintenance procedures
+timber202516|HSC-M2-T1-D19|medium|legislation sustainability and historical developments

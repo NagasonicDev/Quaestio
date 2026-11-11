@@ -1,0 +1,1331 @@
+=== PAGE 1 ===
+	
+
+Page 1 of 20
+NSW Education Standards Authority	 	
+2025 HSC Mathematics Extension 1 
+Marking Guidelines
+Section I
+Multiple-choice Answer Key
+Question
+Answer
+1
+A
+2
+B
+3
+B
+4
+C
+5
+D
+6
+D
+7
+A
+8
+A
+9
+B
+10
+C
+
+=== PAGE 2 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 2 of 20
+Section II
+Question 11 (a)
+Criteria
+Marks
+• Provides correct solution
+2
+• Rearranges to make x the subject, or equivalent merit
+1
+Sample answer:
+Let  y = ƒ x .  Then
+1
+ 
+y = 1 − x − 2
+1
+ 
+y − 1 = − x − 2
+1
+ 
+x − 2 = − y − 1
+1
+ 
+x = 2 − y − 1
+1
+Swap y and x for the inverse function,  y = 2 − 
+.
+x − 1
+` 
+ −1
+ƒ
+( x )
+1
+ = 2 − 
+.
+x − 1
+( )
+
+=== PAGE 3 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 3 of 20
+Question 11 (b)
+Criteria
+Marks
+• Provides correct solution
+3
+• Finds one correct value of q 
+2
+• Applies double angle formula
+1
+Sample answer:
+ 
+sin 2 q − sin q = 0
+ 2 sin q cos q − sin q = 0
+ 
+sin q (2 cos q − 1) = 0
+either
+ sin q = 0
+ 
+q = 0, p 
+or
+2cosq − 1 = 0
+ 
+cos q
+1
+ =  
+2
+ 
+q 
+p
+=  
+ 
+3
+ 
+ 
+q = 0, p , 
+3 p 
+	  
+ 
+Question 11 (c)
+Criteria
+Marks
+• Provides correct solution
+2
+• Applies trigonometric product as sum, or equivalent merit
+1
+Sample answer:
+ sin 3 x cos x dx
+1
+=   (sin (4 x) + sin (2 x)) dx
+2
+cos 4 x
+= −
+(
+)
+cos 2 x
+ 
+−
+(
+)
+ 
+  
+ + C 
+8
+4
+
+=== PAGE 4 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 4 of 20
+Question 11 (d)
+Criteria
+Marks
+• Provides correct graph
+2
+• Provides correct domain and range, or equivalent method
+1
+Sample answer:
+1
+2
+−
+1
+2
+O
+y
+x
+p
+3
+p
+6
+
+Question 11 (e)
+Criteria
+Marks
+• Provides correct answer
+1
+Sample answer:
+2
+1
+‍  ‍  = 2 ‍  ‍ 
+6
+3
+So  m = 3  makes the vectors parallel.
+
+=== PAGE 5 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 5 of 20
+Question 11 (f)
+Criteria
+Marks
+• Provides correct solution
+2
+• Arranges over a common denominator
+OR
+• Applies formulas for sums or products of roots, or equivalent merit
+1
+Sample answer:
+1
+1
+1
+ + 
+ + 
+ab
+ag
+bg
+ g  b  a
+=
++
++
+abg
+abg
+abg
+a + b + 
+= 
+g
+abg
+6
+− 2
+= 1
+2
+= −6
+Question 11 (g)
+Criteria
+Marks
+• Provides correct solution
+3
+• Integrates expression
+2
+• Uses compound angle formula
+1
+Sample answer:
+p
+p
+ 3
+2(
+)
+ 3 1 + cos (6x)
+ 
+  3x
+p cos
+ dx = 
+p 
+ dx
+2
+6
+6
+p
+1
+sin (6x)
+ 
+=   x + 
+  
+3 
+2
+6
+p
+6
+1
+p
+sin (2p)
+1
+p
+sin (  )
+ 
+    + 
+ −   
+p
+=
+ + 
+2
+3
+6
+2
+6
+6
+ 
+= p + 0 −  p  − 0
+6
+12
+ 
+= p
+12
+
+=== PAGE 6 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 6 of 20
+Question 12 (a)
+Criteria
+Marks
+• Provides correct solution
+3
+dr
+• Finds 
+ in terms of r , or equivalent merit
+dt
+2
+dq
+• Finds dr
+OR
+• Attempts to use chain rule, or equivalent merit
+1
+Sample answer:
+1
+ Area =  r 2
+2
+q = 10
+` 
+q
+20
+ = r 2 
+` d
+ 
+q
+40
+ = − 
+dr
+r 3 
+dq = 2 (given) 
+dt
+q
+`
+dr
+dr
+d
+ 
+ = 
+ × 
+ 
+dt
+dq
+dt
+r 3
+ 
+= − 
+ × 2 
+40
+r 3
+ 
+= − 
+ 
+20
+When  r = 4,
+dr
+43
+ 
+ = − 
+ 
+dt
+20
+16
+ 
+= − 
+ 
+5
+ 
+–1
+= −3.2 cm s 
+(That is radius is decreasing at a rate of 3.2 cm s–1.)
+
+=== PAGE 7 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 7 of 20
+Question 12 (b)
+Criteria
+Marks
+• Provides correct solution
+2
+• Provides correct integral, or equivalent merit
+1
+Sample answer:
+The volume is
+ a
+1 2
+a
+V
+ p 
+ 
+p
+ =
+    dy 
+y
+= p
+1
+ ‍ − ‍   
+y
+= p − 
+1
+1
+a
+Question 12 (c)
+Criteria
+Marks
+• Provides correct proof
+3
+• Uses inductive assumption, or equivalent merit
+2
+• Establishes initial statement, or equivalent merit
+1
+Sample answer:
+When  n = 1
+ 
+LHS = 1 × (1!) = 1
+ 
+RHS = (1 + 1)! − 1 = 2 − 1 = 1
+`  True when  n = 1
+Assume true for  n = k,  that is
+1 × (1!) + 2 × (2!) + · · · + k × (k!) = (k + 1)! − 1
+Now prove true for  n = k + 1,  that is prove
+1 × (1!) + 2 × (2!) + · · · + k × (k!) + (k + 1) × ((k + 1)!) = (k + 2)! − 1
+ 
+LHS = 61 × (1!) + 2 × (2!) + · · · + k × (k!)@ + (k + 1) × ((k + 1)!) 
+ 
+ = 6(k + 1)! − 1@ + (k + 1) × ((k + 1)!)  by assumption
+ 
+ = 61 + (k + 1)@ (k + 1)! − 1
+ 
+ = (k + 2)! − 1 = RHS.
+Hence the statement is also true for  n = k + 1.  So the statement is true for all positive 
+integers by mathematical induction.
+
+=== PAGE 8 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 8 of 20
+Question 12 (d)
+Criteria
+Marks
+• Provides correct solution
+3
+y
+ Finds the general solution  x = sin−1
+•
+    + C
+2
+, or equivalent merit
+2
+• Separates variables, or equivalent merit
+1
+Sample answer:
+dy
+ 
+ = (2 − y) (2 + y) 
+dx
+ 
+= 4 − y 2
+`
+dy
+ 
+ 
+ =  dx
+4 
+2
+− y 
+ 
+x = sin−1 y
+    + C 
+2
+When  x = 0,  y = 1
+` 
+0 = sin−1 1
+    + C 
+2
+ 
+ = p + C 
+6
+` 
+C = − p 
+6
+p
+` 
+x = sin−1 y
+    −   or  y = 2 sin  x + p  
+2
+6
+6
+
+=== PAGE 9 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 9 of 20
+Question 12 (e) (i)
+Criteria
+Marks
+• Provides correct answer
+1
+Sample answer:
+3 
+1
+ 2  
+ sin x −  cos x  = 2 sin  x − p  
+2
+2
+6
+Question 12 (e) (ii)
+Criteria
+Marks
+• Provides correct answer
+2
+• Uses part (i) to simplify the equation, or equivalent merit
+1
+Sample answer:
+	
+
+=== PAGE 10 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 10 of 20
+Question 13 (a)
+Criteria
+Marks
+• Provides correct solution
+3
+• Obtains  y 2 = 10 x + 16, or equivalent merit
+2
+y 2
+• Integrates to obtain  
+ = 5 x + C
+2
+, or equivalent merit
+1
+Sample answer:
+d y
+5
+Since  
+ =  ,  
+d x
+y
+` 
+ y dy =  5 dx
+y 2
+ 
+ = 5x + C 
+2
+When  x = 0,  y = −4.
+`
+16
+ 
+ = 0 + C 
+2
+ 
+C = 8 
+y2
+ie 
+ = 5x + 8 
+2
+ 
+y 2 = 10 x + 16
+ 
+y = ± 10 x + 16
+When  x = 0,  y = −4
+` y = − 10 x + 16 
+Question 13 (b)
+Criteria
+Marks
+• Provides correct solution
+2
+• Obtains 7! unrestricted seating arrangements at a round table, 
+or equivalent merit
+1
+Sample answer:
+There are 7! possible seating arrangements at a round table without restriction.
+There are  6! × 2  possible seating arrangements where the two people sit together.
+Hence, there are  7! − 6! × 2 = 3600  seating arrangements where they do not sit together.
+
+=== PAGE 11 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 11 of 20
+Question 13 (c)
+Criteria
+Marks
+• Provides correct solution
+4
+• Equates the two expressions of   v ·  a  in terms of t, or equivalent merit
+3
+4 t
+• Obtains expression   v ·  a = 81
+, or equivalent merit
+2
+• Obtains expression for  v 
+1̰̰̰̰̰
+Sample answer:
+Given  r ( t )
+t 2
+ = t i + 
+  j 
+9
+then 
+ v ( t )
+2 t
+ =  i + 
+  j 
+9
+and 
+ a ( t )
+2
+ = 0 i +   j 
+9
+Using scalar product,
+4 t
+ 
+ v ·  a = 
+ 
+81
+and 
+ v 
+p
+·  a = |  v | · |  a | cos  
+4
+4 t 2
+4
+1
+ 
+= 
+1 + 
+ · 
+ · 
+ 
+81
+81
+2
+Equating,
+4 t
+1
+4 t 2
+2
+ 
+ = 
+ 
+1 + 
+ ·  
+81
+2
+81
+9
+2 t
+1
+4 t 2
+ 
+ = 
+ 
+1 + 
+ 
+9
+2
+81
+Squaring,
+4 t 2
+1
+4 t 2
+ 
+ =  1 + 
+ 
+81
+2
+81
+8 t 2
+4 t 2
+ 
+ = 1 + 
+ 
+81
+81
+4 t 2
+ 
+ = 1 
+81
+ 
+t 2
+81
+ = 
+ 
+4
+9
+ 
+t = ±  
+2
+9
+ 
+t =  ,  since  t > 0.
+2̰̰̰̰̰̰̰̰̰̰̰̰̰̰̰
+
+=== PAGE 12 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 12 of 20
+Question 13 (d)
+Criteria
+Marks
+• Provides correct solution
+4
+X 
+ Uses  Z = 
+− 20
+•
+4
+  as the normal approximation and finds  
+P ( X < k ) = 0.9332, or equivalent merit
+3
+X − 20
+• Attempts to use  Z = 
+4
+  as the normal approximation, or equivalent 
+merit
+2
+1
+• Obtains  p =  or finds  P ( Z ≤ 1.5 ) = 0.9332
+5
+, or equivalent merit
+1
+Sample answer:
+1
+If p is the probability that a counter is green then  E ^Xh = np = 100p = 20  so  p =  . 
+5
+The variance is  s 2 = 100 × p × (1 − p) 
+1
+4
+  
+= 100 ×  ×  = 16.
+5
+5
+The probability of selecting at least k green counters is  
+(
+)
+X − 20
+k − 20
+k  20
+P  X ≥ k  = P  
+ ≥ 
+  = P  Z ≥ 
+−
+  
+4
+4
+4
+X  20
+where  Z = 
+−
+ ~ N (0, 1).
+4
+Since  P ( X ≥ k ) = 0.0668  then  P ( X < k ) = 1 − 0.0668 = 0.9332  and so
+k 
+P  Z ≤ 
+− 20  = 0.9332 = P ( Z 
+4
+≤ 1.5 )  by table.
+k  20
+So  1.5 = 
+−
+,  hence  k = 26.
+4
+
+=== PAGE 13 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 13 of 20
+Question 13 (e) (i)
+Criteria
+Marks
+• Provides correct solution
+1
+Sample answer:
+Re-arranging
+n 
+  
+ − 1
+n
+n  1
+  =    
+−
+−  
+  
+r − 1
+r
+r
+Let  r = R + 1,  n = m + 1.  Therefore
+m
+m  1
+m
+  
+   =  
++  −  
+  
+R
+R + 1
+R + 1
+Question 13 (e) (ii)
+Criteria
+Marks
+• Provides correct solution
+2
+• Applies part (i), or equivalent merit
+1
+Sample answer:
+Therefore,
+2000
+2002
+2001
+LHS =   
+  + = 
+  −  
+ G 
+Using part (i)
+2000
+2001
+2001
+2003
+2002
+ 
+ 
++ = 
+  −  
+ G 
+2001
+2001
+2051
+2050
+ 
+ 
++ · · · + = 
+  −  
+ G 
+2001
+2001
+ 
+2000
+2001
+2051
+ 
+=  
+  −  
+  + ‍ 
+‍  
+2000
+2001
+2001
+2051
+ 
+= 1 − 1 + ‍ 
+‍  
+2001
+2051
+ 
+= ‍ 
+‍  
+2001
+ 
+=  RHS
+
+=== PAGE 14 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 14 of 20
+Question 14 (a)
+Criteria
+Marks
+• Provides correct proof
+2
+• Creates 6 appropriate buckets, or equivalent merit
+1
+Sample answer:
+Create 6 buckets 61, 60@, 62, 30@, 63, 20@, 64, 15@, 65, 12@, 66, 10@.
+If we choose 7 numbers, then by the pigeonhole principle two numbers must be chosen from 
+the same bucket. These two numbers multiply to 60. Hence, the product of all 7 numbers is a 
+multiple of 60.
+
+=== PAGE 15 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 15 of 20
+Question 14 (b)
+Criteria
+Marks
+• Provides correct solution
+4
+• Equates x‑components, and equates y‑components with zero, 
+or equivalent merit
+3
+• Equates x‑components, or equates y‑components with zero, 
+or equivalent merit
+2
+• Establishes displacement in either direction for either particle
+1
+Sample answer:
+Let t be the time after the first particle is projected, let the time difference be T seconds and 
+let  OB = h metres  so  OA = kh metres.
+`
+1
+  For the particle projected from A, the equations of motion are  x = Ut  and  y = −
+ gt
+2
+ 2 + kh 
+and for the particle projected from B, the equations of motion are  x = V (t − T )  and  
+1
+y = −
+ g (t − T )2 + h.
+2
+The particles land in the same place, so
+ 
+x = Ut = V (t − T ) 
+`
+V
+t
+ 
+ = 
+U
+t − T
+Also, they land on the ground, so
+1
+1
+ 
+y = −  gt 2 + kh = 0   and
+ 
+y = −  g (t 
+2
+− T ) + h = 0
+2
+2
+`
+1
+1
+ kh 
+2
+2
+=  gt  
+` 
+h =  g (t − T ) 
+2
+2
+2 kh
+ 
+  t 2
+2 h
+=
+ 
+ 
+ = (t 
+g
+  
+g
+− T )2 
+` 
+t 2 = k (t − T )2 
+t 2
+ 
+(t − T )2 = k 
+`
+V
+t
+ 
+ = 
+U
+t − T
+ 
+ = k 
+since  t > T > 0.
+ ‍
+ ‍
+
+=== PAGE 16 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+
+Page 16 of 20
+Question 14 (c)
+Criteria
+Marks
+• Provides correct solution
+3
+• Attempts to use compound angle formula, or equivalent merit
+2
+• Uses the scalar product, or equivalent merit
+1
+Sample answer:
+The hands are perpendicular when the scalar product is zero, which leads to
+p t
+p t
+ t
+ t
+sin  
+  sin  
+  + cos  p  cos  p  = 0,
+360
+30
+360
+30
+ t
+ t
+11 t
+which simplifies to  cos  p  p
+−
+  = cos  
+p  = 0.
+30
+360
+360
+11
+This means  
+p t
+3
+       p,  p,  p
+= ··· −
+,  · · · . 
+360
+2
+2
+2
+11
+The first time that the hands are perpendicular is when 
+p t = p ,   
+360
+2
+360 
+gives  t = 
+× 
+which 
+p ≈ 16.364 minutes.
+2 × 11 × p
+11
+The second time that the hands are perpendicular is when 
+p t
+3
+ = p ,   
+360
+2
+3 × 360 
+which gives  t 
+× p
+= 
+ ≈ 49.091 minutes.
+2 × 11 × p
+‍
+‍
+
+=== PAGE 17 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+	
+CONFIDENTIAL
+Page 17 of 20
+Question 14 (d)
+Criteria
+Marks
+• Provides correct solution
+3
+• Recognises ƒ′( x ) is undefined at x = p
+2
+, or equivalent merit
+2
+• States  ƒ′( x ) = 1  or  ƒ′( x ) = −1  or  ƒ′( x ) = ±1, or equivalent merit
+1
+Sample answer:
+ 
+ƒ( x ) = cos−1 (sin x) 
+` ƒ′( x ) = 
+− cos x
+ 
+1 − sin2x
+− cos x
+ 
+= 
+| cos x |
+ 
+= ±1
+For 
+0 < x < p , 
+cos x > 0 
+2
+` ƒ′( x ) = −1
+For 
+p < x < p, 
+cos x < 0 
+` ƒ′( x ) = 1
+2
+When  x = p ,  ƒ′( x ) is undefined.
+2
+p
+` 
+ƒ′( x ) = −1 for x ! 0, 
+  
+2
+and ƒ′( x ) = 1 
+for x ! p, 
+2
+p  
+
+=== PAGE 18 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+Page 18 of 20
+Question 14 (e)
+Criteria
+Marks
+•
+Provides correct solution
+3
+•
+Applies tan ( A + B ) formula, or equivalent merit
+2
+•
+Uses relation between roots and coefficients of polynomials,
+or equivalent merit
+1
+Sample answer:
+tan a + tan b + tan g = −b 
+ 
+tan a tan b + tan a tan g + tan b tan g = c 
+tan a tan b tan g = 1 − b − c 
+(
+a +
+a
+b
+g)
+tan   tan (    )
+tan     +   = 
+b + g
++
+ 
+1 − tan a tan ( b + g )
+tan  
+tan   
+b + tan g
+a + 1 − tan b tan g
+=
+tanb +
+a
+ 
+ tan 
+1 − tan   
+g
+1 − tan b tan g
+tan a − tan a tan b tan g + tan b + tan 
+= 
+g 
+1 − tan b tan g − tan a tan b − tan a tan g
+( tan 
+ 
+a + tan b + tan g  − tan a tan b tan g
+=
+)
+ 
+1 − ( tan a tan b + tan a tan g + tan b tan g )
+− b − 
+=
+(1 − b − c )
+1 − c
+= −(1 − c )
+1 − c
+= − 1
+` a
+b
+g
+3
+ 
+ +  +  = · · · ,  − p,  p,  · · ·
+4
+4
+Smallest positive value is 3p .
+4
+
+=== PAGE 19 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+Page 19 of 20
+2025 HSC Mathematics Extension 1 
+Mapping Grid 
+Section I 
+Question 
+Marks 
+Content 
+Syllabus outcomes 
+1 
+1 
+ME-F1 Further Work with Functions 
+ME11-2 
+2 
+1 
+ME-V1 Introduction to Vectors 
+ME12-2 
+3 
+1 
+ME-C2 Further Calculus Skills 
+ME12-1 
+4 
+1 
+ME-S1 The Binomial Distribution 
+ME12-5 
+5 
+1 
+ME-T3 Trigonometric Equations 
+ME12-3 
+6 
+1 
+ME-T1 Inverse Trigonometric Functions 
+ME11-3 
+7 
+1 
+ME-C3 Applications of Calculus 
+ME12-4 
+8 
+1 
+ME-V1 Introduction to Vectors 
+ME12-2 
+9 
+1 
+ME-V1 Introduction to Vectors 
+ME12-2 
+10 
+1 
+ME-C2 Further Calculus Skills 
+ME12-4 
+Section II 
+Question 
+Marks 
+Content 
+Syllabus outcomes 
+11 (a) 
+2 
+ME-F1 Further Work with Functions 
+ME11-1 
+11 (b) 
+3 
+ME-T3 Trigonometric Equations 
+ME12-3 
+11 (c) 
+2 
+ME-T2 Further Trigonometric Identities 
+ME11-3 
+11 (d) 
+2 
+ME-T1 Inverse Trigonometric Functions 
+ME11-3 
+11 (e) 
+1 
+ME-V1 Introduction to Vectors 
+ME12-2 
+11 (f) 
+2 
+ME-F2 Polynomials 
+ME11-2 
+11 (g) 
+3 
+ME-C2 Further Calculus Skills 
+ME12-1 
+12 (a) 
+3 
+ME-C1 Rates of Change 
+ME11-4 
+12 (b) 
+2 
+ME-C3 Applications of Calculus 
+ME12-4 
+12 (c) 
+3 
+ME-P1 Proof by Mathematical Induction 
+ME12-1 
+12 (d) 
+3 
+ME-C3 Applications of Calculus 
+ME12-4 
+12 (e) (i) 
+1 
+ME-T3 Trigonometric Equations 
+ME12-3 
+12 (e) (ii) 
+2 
+ME-T3 Trigonometric Equations 
+ME12-3 
+13 (a) 
+3 
+ME-C3 Applications of Calculus 
+ME12-4 
+13 (b) 
+2 
+ME-A1 Working with Combinatorics 
+ME11-5 
+13 (c) 
+4 
+ME-V1 Introduction to Vectors 
+ME12-2 
+13 (d) 
+4 
+ME-S1 The Binomial Distribution 
+ME12-5 
+13 (e) (i) 
+1 
+ME-A1 Working with Combinatorics 
+ME11-5 
+13 (e) (ii) 
+2 
+ME-A1 Working with Combinatorics 
+ME11-5 
+14 (a) 
+2 
+ME-A1 Working with Combinatorics 
+ME11-5 
+14 (b) 
+4 
+ME-V1 Introduction to Vectors 
+ME12-2 
+
+=== PAGE 20 ===
+NESA   2025 HSC   Mathematics Extension 1   Marking Guidelines
+Page 20 of 20
+Question 
+Marks 
+Content 
+Syllabus outcomes 
+14 (c) 
+3 
+ME-V1 Introduction to Vectors 
+ME-T3 Trigonometric Equations 
+ME12-2, ME12-3 
+14 (d) 
+3 
+ME-C2 Further Calculus Skills 
+ME12-1 
+14 (e) 
+3 
+ME-F2 Polynomials 
+ME-T3 Trigonometric Equations 
+ME12-3 

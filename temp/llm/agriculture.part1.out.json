@@ -1,0 +1,802 @@
+{
+  "2020hsc01": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "high",
+    "why": "carbon cycle sinks"
+  },
+  "2020hsc02": {
+    "code": "PRE-M1-T2-D2",
+    "confidence": "high",
+    "why": "soil texture is physical property"
+  },
+  "2020hsc03": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "medium",
+    "why": "liming soil health management practice"
+  },
+  "2020hsc04": {
+    "code": "PRE-M3-T2-D1",
+    "confidence": "medium",
+    "why": "ethical animal care during husbandry"
+  },
+  "2020hsc05": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "AI manipulates reproduction efficiency"
+  },
+  "2020hsc06": {
+    "code": null,
+    "confidence": "low",
+    "why": "cooperative marketing strategy not in dots"
+  },
+  "2020hsc07": {
+    "code": "PRE-M2-T1-D9",
+    "confidence": "low",
+    "why": "photosynthesis minus respiration"
+  },
+  "2020hsc08": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "medium",
+    "why": "interpret density-profit graph trend"
+  },
+  "2020hsc09": {
+    "code": "PRE-M3-T1-D12",
+    "confidence": "low",
+    "why": "nutrition affects reproduction"
+  },
+  "2020hsc10": {
+    "code": "HSC-M1-T1-D8",
+    "confidence": "high",
+    "why": "native vs introduced pasture features"
+  },
+  "2020hsc11": {
+    "code": "PRE-M2-T1-D16",
+    "confidence": "high",
+    "why": "microbe roles including nitrogen fixation"
+  },
+  "2020hsc12": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "IPM definition"
+  },
+  "2020hsc13": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "high",
+    "why": "line breeding selection method"
+  },
+  "2020hsc14": {
+    "code": "PRE-M3-T1-D1",
+    "confidence": "high",
+    "why": "ruminant vs monogastric organ function"
+  },
+  "2020hsc15": {
+    "code": "PRE-M3-T1-D1",
+    "confidence": "low",
+    "why": "energy losses during digestion"
+  },
+  "2020hsc16": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "high",
+    "why": "experimental design element applied"
+  },
+  "2020hsc17": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "medium",
+    "why": "choice of valid dependent variable"
+  },
+  "2020hsc18": {
+    "code": "HSC-M1-T2-D16",
+    "confidence": "high",
+    "why": "gross margin calculation"
+  },
+  "2020hsc19": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "mean and SD for consistency"
+  },
+  "2020hsc20": {
+    "code": "HSC-M2-T1-D9",
+    "confidence": "high",
+    "why": "supply and demand shift cause"
+  },
+  "2020hsc21": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "soil degradation management practice"
+  },
+  "2020hsc22": {
+    "code": "HSC-M2-T1-D14",
+    "confidence": "medium",
+    "why": "government influence on production"
+  },
+  "2020hsc23": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "plant pest disease management IPDM"
+  },
+  "2020hsc24": {
+    "code": "HSC-M1-T2-D7",
+    "confidence": "medium",
+    "why": "quality criteria inform management"
+  },
+  "2020hsc25": {
+    "code": "HSC-M1-T1-D14",
+    "confidence": "medium",
+    "why": "feed rations over production cycle"
+  },
+  "2020hsc26": {
+    "code": "PRE-M1-T1-D6",
+    "confidence": "low",
+    "why": "agriculture GDP data comparison"
+  },
+  "2020hsc27": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "embryo transfer reproduction technique"
+  },
+  "2020hsc28": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "GMO genetic engineering constraints"
+  },
+  "2020hsc29": {
+    "code": "PRE-M1-T2-D13",
+    "confidence": "medium",
+    "why": "SOI data, seasonal variability"
+  },
+  "2020hsc30": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "R and D funding and patents"
+  },
+  "2021hsc01": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "low",
+    "why": "insecticide label use"
+  },
+  "2021hsc02": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "low",
+    "why": "pesticide application rate label"
+  },
+  "2021hsc03": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "calculate mean dry matter yield"
+  },
+  "2021hsc04": {
+    "code": null,
+    "confidence": "low",
+    "why": "direct marketing strategy not in dots"
+  },
+  "2021hsc05": {
+    "code": "PRE-M1-T2-D2",
+    "confidence": "high",
+    "why": "soil structure ped shape"
+  },
+  "2021hsc06": {
+    "code": "PRE-M2-T1-D7",
+    "confidence": "medium",
+    "why": "vegetative growth phase"
+  },
+  "2021hsc07": {
+    "code": "PRE-M2-T1-D9",
+    "confidence": "high",
+    "why": "photosynthesis summary equation"
+  },
+  "2021hsc08": {
+    "code": "PRE-M2-T1-D15",
+    "confidence": "high",
+    "why": "legume rhizobium symbiosis"
+  },
+  "2021hsc09": {
+    "code": "PRE-M1-T2-D2",
+    "confidence": "high",
+    "why": "properties affected by organic matter"
+  },
+  "2021hsc10": {
+    "code": "HSC-M1-T1-D14",
+    "confidence": "high",
+    "why": "diet by growth stage"
+  },
+  "2021hsc11": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "reproduction techniques and welfare"
+  },
+  "2021hsc12": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "high",
+    "why": "control in experimental design"
+  },
+  "2021hsc13": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "graphical representation of results"
+  },
+  "2021hsc14": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "low",
+    "why": "compare trial yield data"
+  },
+  "2021hsc15": {
+    "code": "HSC-M2-T1-D14",
+    "confidence": "medium",
+    "why": "legislation enforceable by law"
+  },
+  "2021hsc16": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "medium",
+    "why": "hybrid breeding program"
+  },
+  "2021hsc17": {
+    "code": "PRE-M3-T1-D16",
+    "confidence": "medium",
+    "why": "rumen microbial fermentation conditions"
+  },
+  "2021hsc18": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "low",
+    "why": "density economics trial data"
+  },
+  "2021hsc19": {
+    "code": "PRE-M3-T1-D5",
+    "confidence": "high",
+    "why": "oestrogen ovulation graph"
+  },
+  "2021hsc20": {
+    "code": "HSC-M1-T2-D10",
+    "confidence": "high",
+    "why": "nitrogen cycle components"
+  },
+  "2021hsc21": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "soil degradation management practice"
+  },
+  "2021hsc22": {
+    "code": "HSC-M1-T1-D8",
+    "confidence": "medium",
+    "why": "pasture mix and native species"
+  },
+  "2021hsc23": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "high",
+    "why": "line versus cross breeding"
+  },
+  "2021hsc24": {
+    "code": null,
+    "confidence": "low",
+    "why": "processing and value adding not in dots"
+  },
+  "2021hsc25": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "high",
+    "why": "market specifications importance"
+  },
+  "2021hsc26": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "animal pest IPM program"
+  },
+  "2021hsc27": {
+    "code": "HSC-M1-T2-D16",
+    "confidence": "high",
+    "why": "gross margin financial planning"
+  },
+  "2021hsc28": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "medium",
+    "why": "biofuel production and carbon"
+  },
+  "2021hsc29": {
+    "code": "HSC-M2-T1-D12",
+    "confidence": "high",
+    "why": "ruminant emissions reduction"
+  },
+  "2021hsc30": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "robotics and biotechnology developments"
+  },
+  "2022hsc01": {
+    "code": "PRE-M2-T1-D7",
+    "confidence": "high",
+    "why": "monocot versus dicot seedling"
+  },
+  "2022hsc02": {
+    "code": "PRE-M1-T2-D4",
+    "confidence": "low",
+    "why": "fertiliser effects on soil"
+  },
+  "2022hsc03": {
+    "code": null,
+    "confidence": "low",
+    "why": "marketing chain order not in dots"
+  },
+  "2022hsc04": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "crop rotation soil fertility"
+  },
+  "2022hsc05": {
+    "code": null,
+    "confidence": "low",
+    "why": "vertical integration not in dots"
+  },
+  "2022hsc06": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "IPM program goal"
+  },
+  "2022hsc07": {
+    "code": "HSC-M1-T2-D16",
+    "confidence": "high",
+    "why": "gross margin formula"
+  },
+  "2022hsc08": {
+    "code": "PRE-M1-T2-D3",
+    "confidence": "high",
+    "why": "soil pH test"
+  },
+  "2022hsc09": {
+    "code": null,
+    "confidence": "low",
+    "why": "value adding not in dots"
+  },
+  "2022hsc10": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "pasture ley soil health"
+  },
+  "2022hsc11": {
+    "code": "HSC-M2-T1-D14",
+    "confidence": "high",
+    "why": "government influence example"
+  },
+  "2022hsc12": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "high",
+    "why": "replication in experimental design"
+  },
+  "2022hsc13": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "improve graph communication"
+  },
+  "2022hsc14": {
+    "code": "HSC-M1-T1-D14",
+    "confidence": "high",
+    "why": "ME requirement dairy cow"
+  },
+  "2022hsc15": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "soil management techniques"
+  },
+  "2022hsc16": {
+    "code": null,
+    "confidence": "low",
+    "why": "plant hormone gibberellin not in dots"
+  },
+  "2022hsc17": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "standard deviation meaning"
+  },
+  "2022hsc18": {
+    "code": "PRE-M3-T1-D1",
+    "confidence": "low",
+    "why": "energy fate in digestion"
+  },
+  "2022hsc19": {
+    "code": "PRE-M3-T1-D2",
+    "confidence": "high",
+    "why": "monogastric digestive labelling"
+  },
+  "2022hsc20": {
+    "code": "HSC-M1-T1-D14",
+    "confidence": "high",
+    "why": "ME requirement by stage"
+  },
+  "2022hsc21": {
+    "code": "PRE-M2-T1-D16",
+    "confidence": "high",
+    "why": "invertebrate decomposition nutrient cycle"
+  },
+  "2022hsc22": {
+    "code": "PRE-M2-T1-D22",
+    "confidence": "medium",
+    "why": "disease triangle interactions"
+  },
+  "2022hsc23": {
+    "code": "PRE-M3-T2-D2",
+    "confidence": "medium",
+    "why": "animal behaviour and management"
+  },
+  "2022hsc24": {
+    "code": "PRE-M3-T1-D11",
+    "confidence": "high",
+    "why": "muscle fat bone proportions"
+  },
+  "2022hsc25": {
+    "code": "HSC-M1-T2-D15",
+    "confidence": "medium",
+    "why": "financial pressures economic sustainability"
+  },
+  "2022hsc26": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "high",
+    "why": "plant breeding techniques"
+  },
+  "2022hsc27": {
+    "code": "HSC-M2-T1-D9",
+    "confidence": "medium",
+    "why": "supply and demand factors"
+  },
+  "2022hsc28": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "biotechnology ethics GMO"
+  },
+  "2022hsc29": {
+    "code": "PRE-M1-T2-D13",
+    "confidence": "medium",
+    "why": "climate variability management strategies"
+  },
+  "2022hsc30": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "new technology assists industry"
+  },
+  "2023hsc01": {
+    "code": "PRE-M1-T1-D9",
+    "confidence": "high",
+    "why": "traditional ecological management techniques"
+  },
+  "2023hsc02": {
+    "code": "PRE-M1-T2-D2",
+    "confidence": "high",
+    "why": "porosity definition"
+  },
+  "2023hsc03": {
+    "code": null,
+    "confidence": "low",
+    "why": "contract selling not in dots"
+  },
+  "2023hsc04": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "medium",
+    "why": "product quality measures"
+  },
+  "2023hsc05": {
+    "code": "PRE-M2-T1-D15",
+    "confidence": "high",
+    "why": "legume nitrogen fixation"
+  },
+  "2023hsc06": {
+    "code": "HSC-M1-T2-D11",
+    "confidence": "high",
+    "why": "effluent waste management"
+  },
+  "2023hsc07": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "chemical pest management IPDM"
+  },
+  "2023hsc08": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "environmental constraints and variety choice"
+  },
+  "2023hsc09": {
+    "code": "PRE-M3-T1-D16",
+    "confidence": "high",
+    "why": "rumen microbe functions"
+  },
+  "2023hsc10": {
+    "code": "PRE-M3-T2-D1",
+    "confidence": "medium",
+    "why": "welfare in husbandry practice"
+  },
+  "2023hsc11": {
+    "code": "HSC-M2-T1-D9",
+    "confidence": "high",
+    "why": "flood changes supply"
+  },
+  "2023hsc12": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "low",
+    "why": "farm profit graph comparison"
+  },
+  "2023hsc13": {
+    "code": "PRE-M1-T2-D4",
+    "confidence": "medium",
+    "why": "organic fertilisers soil fertility"
+  },
+  "2023hsc14": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "high",
+    "why": "new varieties quality yield adaptation"
+  },
+  "2023hsc15": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "medium",
+    "why": "heritability and objective measurement"
+  },
+  "2023hsc16": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "medium",
+    "why": "pesticide resistance development"
+  },
+  "2023hsc17": {
+    "code": "PRE-M1-T2-D12",
+    "confidence": "medium",
+    "why": "temperature effects on NAR"
+  },
+  "2023hsc18": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "medium",
+    "why": "graph represents data"
+  },
+  "2023hsc19": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "standard deviation variability conclusion"
+  },
+  "2023hsc20": {
+    "code": "HSC-M1-T1-D14",
+    "confidence": "high",
+    "why": "ration energy requirement"
+  },
+  "2023hsc21": {
+    "code": "PRE-M2-T1-D16",
+    "confidence": "high",
+    "why": "nutrient cycle and invertebrates"
+  },
+  "2023hsc22": {
+    "code": "HSC-M2-T1-D14",
+    "confidence": "medium",
+    "why": "government influence and marketing"
+  },
+  "2023hsc23": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "high",
+    "why": "market specification and timing"
+  },
+  "2023hsc24": {
+    "code": null,
+    "confidence": "low",
+    "why": "advertising campaign not in dots"
+  },
+  "2023hsc25": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "high",
+    "why": "standardisation and randomisation"
+  },
+  "2023hsc26": {
+    "code": "PRE-M3-T1-D11",
+    "confidence": "high",
+    "why": "breed muscle fat and HGPs"
+  },
+  "2023hsc27": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "oestrus based reproduction techniques"
+  },
+  "2023hsc28": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "GMO labelling and regulation"
+  },
+  "2023hsc29": {
+    "code": "PRE-M1-T2-D10",
+    "confidence": "high",
+    "why": "agricultural GHG sources and mitigation"
+  },
+  "2023hsc30": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "new technology uses"
+  },
+  "2024hsc01": {
+    "code": null,
+    "confidence": "low",
+    "why": "farm gate advertising not in dots"
+  },
+  "2024hsc02": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "low",
+    "why": "pesticide label active constituent"
+  },
+  "2024hsc03": {
+    "code": "PRE-M2-T1-D7",
+    "confidence": "high",
+    "why": "plant developmental stages"
+  },
+  "2024hsc04": {
+    "code": "HSC-M1-T1-D6",
+    "confidence": "medium",
+    "why": "improved product quality by breeding"
+  },
+  "2024hsc05": {
+    "code": null,
+    "confidence": "low",
+    "why": "family versus corporate farm not in dots"
+  },
+  "2024hsc06": {
+    "code": "PRE-M3-T2-D1",
+    "confidence": "high",
+    "why": "animal welfare legislation"
+  },
+  "2024hsc07": {
+    "code": "PRE-M2-T1-D21",
+    "confidence": "medium",
+    "why": "weed impact on pasture"
+  },
+  "2024hsc08": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "medium",
+    "why": "pasture ley soil fertility"
+  },
+  "2024hsc09": {
+    "code": "PRE-M2-T1-D16",
+    "confidence": "high",
+    "why": "decomposition invertebrates"
+  },
+  "2024hsc10": {
+    "code": "HSC-M1-T2-D15",
+    "confidence": "medium",
+    "why": "export ban financial pressure"
+  },
+  "2024hsc11": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "medium",
+    "why": "diverse pasture mix benefits"
+  },
+  "2024hsc12": {
+    "code": "PRE-M2-T1-D22",
+    "confidence": "medium",
+    "why": "disease triangle and resistance"
+  },
+  "2024hsc13": {
+    "code": "PRE-M3-T1-D6",
+    "confidence": "high",
+    "why": "photoperiod and male fertility"
+  },
+  "2024hsc14": {
+    "code": "PRE-M1-T1-D12",
+    "confidence": "high",
+    "why": "land capability classes"
+  },
+  "2024hsc15": {
+    "code": "PRE-M1-T2-D3",
+    "confidence": "high",
+    "why": "ion exchange capacity"
+  },
+  "2024hsc16": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "low",
+    "why": "breed weight data variability"
+  },
+  "2024hsc17": {
+    "code": "PRE-M3-T1-D1",
+    "confidence": "high",
+    "why": "ruminant organ functions"
+  },
+  "2024hsc18": {
+    "code": "HSC-M1-T2-D16",
+    "confidence": "high",
+    "why": "gross margin and return to capital"
+  },
+  "2024hsc19": {
+    "code": null,
+    "confidence": "low",
+    "why": "plant hormones not in dots"
+  },
+  "2024hsc20": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "calculate mean and standard deviation"
+  },
+  "2024hsc21": {
+    "code": "PRE-M1-T1-D16",
+    "confidence": "high",
+    "why": "grassed waterways water quality"
+  },
+  "2024hsc22": {
+    "code": "HSC-M2-T1-D9",
+    "confidence": "medium",
+    "why": "marketing chain and demand factors"
+  },
+  "2024hsc23": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "medium",
+    "why": "market specifications and value adding"
+  },
+  "2024hsc24": {
+    "code": null,
+    "confidence": "low",
+    "why": "vertical integration not in dots"
+  },
+  "2024hsc25": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "medium",
+    "why": "replication purpose in investigation"
+  },
+  "2024hsc26": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "medium",
+    "why": "line breeding and selection"
+  },
+  "2024hsc27": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "evaluate IPM program"
+  },
+  "2024hsc28": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "biotechnology research and GMO"
+  },
+  "2024hsc29": {
+    "code": "PRE-M1-T1-D14",
+    "confidence": "low",
+    "why": "water storage and trading"
+  },
+  "2024hsc30": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "recent technology impacts"
+  },
+  "2025hsc01": {
+    "code": "PRE-M3-T1-D11",
+    "confidence": "high",
+    "why": "tissue development proportions"
+  },
+  "2025hsc02": {
+    "code": null,
+    "confidence": "low",
+    "why": "source text unavailable"
+  },
+  "2025hsc03": {
+    "code": "HSC-M2-T1-D7",
+    "confidence": "medium",
+    "why": "consumer preference egg production systems"
+  },
+  "2025hsc04": {
+    "code": "PRE-M2-T1-D21",
+    "confidence": "high",
+    "why": "herbicide reduces plant competition"
+  },
+  "2025hsc05": {
+    "code": "HSC-M1-T1-D13",
+    "confidence": "medium",
+    "why": "wool quality measures"
+  },
+  "2025hsc06": {
+    "code": "PRE-M1-T2-D3",
+    "confidence": "high",
+    "why": "soil pH suitability"
+  },
+  "2025hsc07": {
+    "code": null,
+    "confidence": "low",
+    "why": "cooperative marketing not in dots"
+  },
+  "2025hsc08": {
+    "code": "PRE-M3-T1-D5",
+    "confidence": "high",
+    "why": "oestrogen heat behaviour"
+  },
+  "2025hsc09": {
+    "code": "PRE-M1-T2-D6",
+    "confidence": "high",
+    "why": "soil texture triangle"
+  },
+  "2025hsc10": {
+    "code": "HSC-M1-T2-D13",
+    "confidence": "low",
+    "why": "egg production system ranking"
+  }
+}

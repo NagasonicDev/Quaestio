@@ -1,0 +1,462 @@
+{
+  "ah202335": {
+    "code": "HSC-M28-T2-D3",
+    "confidence": "high",
+    "why": "Second Athenian Confederacy explicit"
+  },
+  "ah202336": {
+    "code": "HSC-M28-T3-D3",
+    "confidence": "high",
+    "why": "Philip army reforms explicit"
+  },
+  "ah202337": {
+    "code": "HSC-M29-T2-D2",
+    "confidence": "high",
+    "why": "Cicero explicit"
+  },
+  "ah202338": {
+    "code": "HSC-M29-T2-D4",
+    "confidence": "high",
+    "why": "military campaigns of Pompey/Caesar"
+  },
+  "ah202339": {
+    "code": "HSC-M30-T2-D3",
+    "confidence": "high",
+    "why": "titles, honours and images explicit"
+  },
+  "ah202340": {
+    "code": "HSC-M30-T2-D6",
+    "confidence": "medium",
+    "why": "challenges to Augustus, opposition"
+  },
+  "ah202341": {
+    "code": "HSC-M31-T2-D1",
+    "confidence": "high",
+    "why": "Gaius as princeps explicit"
+  },
+  "ah202342": {
+    "code": "HSC-M31-T3-D2",
+    "confidence": "high",
+    "why": "expansion and consolidation explicit"
+  },
+  "ah202401": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "medium",
+    "why": "archaeologist contribution, excavation"
+  },
+  "ah202402": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "medium",
+    "why": "food and dining, diet"
+  },
+  "ah202403": {
+    "code": null,
+    "confidence": "low",
+    "why": "Greek/Egyptian influence has no dot"
+  },
+  "ah202404": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "public buildings as evidence"
+  },
+  "ah202405": {
+    "code": "HSC-M4-T5-D6",
+    "confidence": "low",
+    "why": "art part; tomb decoration closest"
+  },
+  "ah202406": {
+    "code": "HSC-M5-T5-D7",
+    "confidence": "low",
+    "why": "art part; tomb decoration closest"
+  },
+  "ah202407": {
+    "code": "HSC-M6-T3-D3",
+    "confidence": "high",
+    "why": "social structure explicit"
+  },
+  "ah202408": {
+    "code": "HSC-M7-T3-D5",
+    "confidence": "high",
+    "why": "subject peoples explicit"
+  },
+  "ah202409": {
+    "code": "HSC-M8-T4-D2",
+    "confidence": "medium",
+    "why": "economy 12-mark part"
+  },
+  "ah202410": {
+    "code": "HSC-M9-T6-D1",
+    "confidence": "high",
+    "why": "art 12-mark part"
+  },
+  "ah202411": {
+    "code": "HSC-M10-T3-D4",
+    "confidence": "high",
+    "why": "social structure roles hierarchy"
+  },
+  "ah202412": {
+    "code": "HSC-M11-T3-D2",
+    "confidence": "high",
+    "why": "social structure roles hierarchy"
+  },
+  "ah202413": {
+    "code": "HSC-M13-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202414": {
+    "code": "HSC-M14-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202415": {
+    "code": null,
+    "confidence": "low",
+    "why": "Sennacherib option absent from dots"
+  },
+  "ah202416": {
+    "code": "HSC-M15-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202417": {
+    "code": "HSC-M16-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202418": {
+    "code": "HSC-M17-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202419": {
+    "code": "HSC-M18-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202420": {
+    "code": null,
+    "confidence": "low",
+    "why": "Tiberius Gracchus option absent from dots"
+  },
+  "ah202421": {
+    "code": "HSC-M19-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202422": {
+    "code": "HSC-M20-T4-D1",
+    "confidence": "high",
+    "why": "success, impact and influence"
+  },
+  "ah202423": {
+    "code": "HSC-M22-T2-D4",
+    "confidence": "high",
+    "why": "cult of Amun explicit"
+  },
+  "ah202424": {
+    "code": "HSC-M22-T3-D4",
+    "confidence": "high",
+    "why": "Nubia, Syria-Palestine, Mitanni"
+  },
+  "ah202425": {
+    "code": "HSC-M23-T2-D3",
+    "confidence": "high",
+    "why": "post-Amarna pharaohs explicit"
+  },
+  "ah202426": {
+    "code": "HSC-M23-T3-D3",
+    "confidence": "high",
+    "why": "Ramesside imperialism explicit"
+  },
+  "ah202427": {
+    "code": "HSC-M24-T1-D2",
+    "confidence": "medium",
+    "why": "Rehoboam, division of kingdoms"
+  },
+  "ah202428": {
+    "code": "HSC-M24-T3-D3",
+    "confidence": "medium",
+    "why": "Judah relations Assyria vs Babylon"
+  },
+  "ah202429": {
+    "code": "HSC-M25-T2-D1",
+    "confidence": "high",
+    "why": "reign of Cyrus II explicit"
+  },
+  "ah202430": {
+    "code": "HSC-M25-T2-D2",
+    "confidence": "medium",
+    "why": "Persian expansion, kings"
+  },
+  "ah202431": {
+    "code": "HSC-M26-T2-D1",
+    "confidence": "high",
+    "why": "unification of Warring States"
+  },
+  "ah202432": {
+    "code": "HSC-M26-T3-D1",
+    "confidence": "high",
+    "why": "Emperor Wendi explicit"
+  },
+  "ah202433": {
+    "code": "HSC-M27-T2-D3",
+    "confidence": "high",
+    "why": "Thermopylae, Artemisium 480-479"
+  },
+  "ah202434": {
+    "code": "HSC-M27-T3-D4",
+    "confidence": "medium",
+    "why": "Athenian democracy under empire"
+  },
+  "ah202435": {
+    "code": "HSC-M28-T3-D4",
+    "confidence": "high",
+    "why": "Macedonian expansion into Greece"
+  },
+  "ah202436": {
+    "code": "HSC-M28-T1-D2",
+    "confidence": "high",
+    "why": "Spartan hegemony explicit"
+  },
+  "ah202437": {
+    "code": "HSC-M29-T2-D3",
+    "confidence": "high",
+    "why": "Pompey and Crassus explicit"
+  },
+  "ah202438": {
+    "code": "HSC-M29-T2-D6",
+    "confidence": "high",
+    "why": "urban violence explicit"
+  },
+  "ah202439": {
+    "code": "HSC-M30-T2-D1",
+    "confidence": "high",
+    "why": "establishment of principate"
+  },
+  "ah202440": {
+    "code": "HSC-M30-T2-D2",
+    "confidence": "high",
+    "why": "Augustus and Senate explicit"
+  },
+  "ah202441": {
+    "code": "HSC-M31-T1-D2",
+    "confidence": "high",
+    "why": "legacy of Augustus explicit"
+  },
+  "ah202442": {
+    "code": "HSC-M31-T2-D7",
+    "confidence": "high",
+    "why": "Julio-Claudian reforms and policies"
+  },
+  "ah202501": {
+    "code": "HSC-M2-T1-D2",
+    "confidence": "high",
+    "why": "eruption features AD 79"
+  },
+  "ah202502": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "high",
+    "why": "value of graffiti as source"
+  },
+  "ah202503": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "industries explicit"
+  },
+  "ah202504": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "new technologies explicit"
+  },
+  "ah202505": {
+    "code": "HSC-M4-T5-D3",
+    "confidence": "high",
+    "why": "beliefs and practices about death"
+  },
+  "ah202506": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "high",
+    "why": "impact of pharaoh explicit"
+  },
+  "ah202507": {
+    "code": "HSC-M6-T4-D1",
+    "confidence": "medium",
+    "why": "economy of Israel, agriculture"
+  },
+  "ah202508": {
+    "code": "HSC-M7-T3-D2",
+    "confidence": "high",
+    "why": "women in Persia explicit"
+  },
+  "ah202509": {
+    "code": "HSC-M8-T3-D2",
+    "confidence": "medium",
+    "why": "Han social structure, ranks"
+  },
+  "ah202510": {
+    "code": "HSC-M9-T4-D1",
+    "confidence": "medium",
+    "why": "Minoan economy, palace economy"
+  },
+  "ah202511": {
+    "code": "HSC-M10-T3-D6",
+    "confidence": "high",
+    "why": "education and training, agoge"
+  },
+  "ah202512": {
+    "code": "HSC-M11-T6-D1",
+    "confidence": "medium",
+    "why": "Athenian cultural life, monuments"
+  },
+  "ah202513": {
+    "code": "HSC-M13-T3-D4",
+    "confidence": "high",
+    "why": "changing titles and images explicit"
+  },
+  "ah202514": {
+    "code": "HSC-M14-T3-D5",
+    "confidence": "high",
+    "why": "artistic representations explicit"
+  },
+  "ah202515": {
+    "code": null,
+    "confidence": "low",
+    "why": "Sennacherib option absent from dots"
+  },
+  "ah202516": {
+    "code": "HSC-M15-T3-D7",
+    "confidence": "high",
+    "why": "manner and impact of Xerxes death"
+  },
+  "ah202517": {
+    "code": "HSC-M16-T3-D3",
+    "confidence": "high",
+    "why": "court officials, Li Si"
+  },
+  "ah202518": {
+    "code": "HSC-M17-T3-D7",
+    "confidence": "high",
+    "why": "prominent individuals relationship"
+  },
+  "ah202519": {
+    "code": "HSC-M18-T3-D7",
+    "confidence": "high",
+    "why": "manner and impact of death"
+  },
+  "ah202520": {
+    "code": null,
+    "confidence": "low",
+    "why": "Tiberius Gracchus option absent from dots"
+  },
+  "ah202521": {
+    "code": "HSC-M19-T3-D9",
+    "confidence": "high",
+    "why": "manner and impact of death"
+  },
+  "ah202522": {
+    "code": "HSC-M20-T3-D7",
+    "confidence": "high",
+    "why": "manner and impact of death"
+  },
+  "ah202523": {
+    "code": "HSC-M22-T2-D3",
+    "confidence": "high",
+    "why": "queens, reunification explicit"
+  },
+  "ah202524": {
+    "code": "HSC-M22-T3-D5",
+    "confidence": "high",
+    "why": "warrior pharaoh image explicit"
+  },
+  "ah202525": {
+    "code": "HSC-M23-T3-D3",
+    "confidence": "high",
+    "why": "relations with Hittites explicit"
+  },
+  "ah202526": {
+    "code": "HSC-M23-T2-D1",
+    "confidence": "high",
+    "why": "contribution of Ramesses II"
+  },
+  "ah202527": {
+    "code": "HSC-M24-T1-D2",
+    "confidence": "medium",
+    "why": "First Temple, Solomon legacy"
+  },
+  "ah202528": {
+    "code": "HSC-M24-T2-D1",
+    "confidence": "high",
+    "why": "Israel and Judah relations 8th century"
+  },
+  "ah202529": {
+    "code": "HSC-M25-T2-D1",
+    "confidence": "high",
+    "why": "Cyrus II establishment explicit"
+  },
+  "ah202530": {
+    "code": "HSC-M25-T2-D2",
+    "confidence": "high",
+    "why": "Darius I reign explicit"
+  },
+  "ah202531": {
+    "code": "HSC-M26-T2-D3",
+    "confidence": "high",
+    "why": "Qin legal and cultural reforms"
+  },
+  "ah202532": {
+    "code": "HSC-M26-T3-D3",
+    "confidence": "high",
+    "why": "empress dowagers explicit"
+  },
+  "ah202533": {
+    "code": "HSC-M27-T2-D1",
+    "confidence": "high",
+    "why": "Marathon and Miltiades explicit"
+  },
+  "ah202534": {
+    "code": "HSC-M27-T3-D6",
+    "confidence": "high",
+    "why": "Peloponnesian League response"
+  },
+  "ah202535": {
+    "code": "HSC-M28-T2-D2",
+    "confidence": "high",
+    "why": "King Peace explicit"
+  },
+  "ah202536": {
+    "code": "HSC-M28-T3-D4",
+    "confidence": "medium",
+    "why": "Philip successful king, expansion"
+  },
+  "ah202537": {
+    "code": "HSC-M29-T2-D6",
+    "confidence": "high",
+    "why": "use of army political purposes"
+  },
+  "ah202538": {
+    "code": "HSC-M29-T2-D5",
+    "confidence": "low",
+    "why": "optimates/populares, Senate faction"
+  },
+  "ah202539": {
+    "code": "HSC-M30-T2-D4",
+    "confidence": "high",
+    "why": "equestrians and freedmen explicit"
+  },
+  "ah202540": {
+    "code": "HSC-M30-T3-D2",
+    "confidence": "high",
+    "why": "provincial government explicit"
+  },
+  "ah202541": {
+    "code": "HSC-M31-T2-D1",
+    "confidence": "high",
+    "why": "Nero as princeps explicit"
+  },
+  "ah202542": {
+    "code": "HSC-M31-T2-D6",
+    "confidence": "high",
+    "why": "image of princeps changing"
+  }
+}

@@ -1,0 +1,1559 @@
+{
+ "course_id": "french-beginners",
+ "course_name": "French Beginners",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M3-D1",
+   "path": "Year 11 / Education and work / the structure and format of particular texts",
+   "text": "the structure and format of particular texts"
+  },
+  {
+   "code": "PRE-M3-D2",
+   "path": "Year 11 / Education and work / present and organise information in ways appropriate to audience, purpose and context",
+   "text": "present and organise information in ways appropriate to audience, purpose and context"
+  },
+  {
+   "code": "PRE-M3-D3",
+   "path": "Year 11 / Education and work / the purpose and context of a text and their influence on the choice of structure, format and vocabulary",
+   "text": "the purpose and context of a text and their influence on the choice of structure, format and vocabulary"
+  },
+  {
+   "code": "PRE-M3-D4",
+   "path": "Year 11 / Education and work / plan, draft and edit text",
+   "text": "plan, draft and edit text"
+  },
+  {
+   "code": "PRE-M3-D5",
+   "path": "Year 11 / Education and work / the logical sequencing of ideas in extended text",
+   "text": "the logical sequencing of ideas in extended text"
+  },
+  {
+   "code": "PRE-M3-D6",
+   "path": "Year 11 / Education and work / sequence ideas and information in texts",
+   "text": "sequence ideas and information in texts"
+  },
+  {
+   "code": "PRE-M3-D7",
+   "path": "Year 11 / Education and work / application of known linguistic structures in new contexts",
+   "text": "application of known linguistic structures in new contexts"
+  },
+  {
+   "code": "PRE-M3-D8",
+   "path": "Year 11 / Education and work / apply a range of vocabulary and linguistic structures across a range of contexts",
+   "text": "apply a range of vocabulary and linguistic structures across a range of contexts"
+  },
+  {
+   "code": "PRE-M3-D9",
+   "path": "Year 11 / Education and work / language choices and their effect on intended meaning",
+   "text": "language choices and their effect on intended meaning"
+  },
+  {
+   "code": "PRE-M3-D10",
+   "path": "Year 11 / Education and work / evaluate the accuracy and appropriateness of structures when constructing and editing text",
+   "text": "evaluate the accuracy and appropriateness of structures when constructing and editing text"
+  },
+  {
+   "code": "PRE-M3-D11",
+   "path": "Year 11 / Education and work / resources available to enhance and expand independent learning",
+   "text": "resources available to enhance and expand independent learning"
+  },
+  {
+   "code": "PRE-M3-D12",
+   "path": "Year 11 / Education and work / extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online",
+   "text": "extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online"
+  },
+  {
+   "code": "PRE-M3-D13",
+   "path": "Year 11 / Education and work / register in language use.",
+   "text": "register in language use."
+  },
+  {
+   "code": "PRE-M3-D14",
+   "path": "Year 11 / Education and work / use culturally appropriate language when creating and presenting texts, eg Tu veux prendre un pot? Vous voulez boire quelque chose?",
+   "text": "use culturally appropriate language when creating and presenting texts, eg Tu veux prendre un pot? Vous voulez boire quelque chose?"
+  },
+  {
+   "code": "PRE-M4-D1",
+   "path": "Year 11 / Friends, recreation and pastimes / ways in which texts are constructed for specific purposes",
+   "text": "ways in which texts are constructed for specific purposes"
+  },
+  {
+   "code": "PRE-M4-D2",
+   "path": "Year 11 / Friends, recreation and pastimes / identify why, how or to whom a text is delivered or presented",
+   "text": "identify why, how or to whom a text is delivered or presented"
+  },
+  {
+   "code": "PRE-M4-D3",
+   "path": "Year 11 / Friends, recreation and pastimes / ways in which texts are formatted for particular purposes and effects",
+   "text": "ways in which texts are formatted for particular purposes and effects"
+  },
+  {
+   "code": "PRE-M4-D4",
+   "path": "Year 11 / Friends, recreation and pastimes / explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts",
+   "text": "explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts"
+  },
+  {
+   "code": "PRE-M4-D5",
+   "path": "Year 11 / Friends, recreation and pastimes / ways of identifying relevant details in texts when listening or reading for specific information",
+   "text": "ways of identifying relevant details in texts when listening or reading for specific information"
+  },
+  {
+   "code": "PRE-M4-D6",
+   "path": "Year 11 / Friends, recreation and pastimes / make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text",
+   "text": "make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text"
+  },
+  {
+   "code": "PRE-M4-D7",
+   "path": "Year 11 / Friends, recreation and pastimes / ways of inferring meaning from text",
+   "text": "ways of inferring meaning from text"
+  },
+  {
+   "code": "PRE-M4-D8",
+   "path": "Year 11 / Friends, recreation and pastimes / use contextual and other clues to infer meaning from text",
+   "text": "use contextual and other clues to infer meaning from text"
+  },
+  {
+   "code": "PRE-M4-D9",
+   "path": "Year 11 / Friends, recreation and pastimes / resources available to access, enhance or promote independent learning",
+   "text": "resources available to access, enhance or promote independent learning"
+  },
+  {
+   "code": "PRE-M4-D10",
+   "path": "Year 11 / Friends, recreation and pastimes / access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts",
+   "text": "access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts"
+  },
+  {
+   "code": "PRE-M4-D11",
+   "path": "Year 11 / Friends, recreation and pastimes / the effect of syntax on meaning",
+   "text": "the effect of syntax on meaning"
+  },
+  {
+   "code": "PRE-M4-D12",
+   "path": "Year 11 / Friends, recreation and pastimes / analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect une nouvelle voiture, un nouveau vélo",
+   "text": "analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect une nouvelle voiture, un nouveau vélo"
+  },
+  {
+   "code": "PRE-M4-D13",
+   "path": "Year 11 / Friends, recreation and pastimes / cultural attitudes that add meaning to texts",
+   "text": "cultural attitudes that add meaning to texts"
+  },
+  {
+   "code": "PRE-M4-D14",
+   "path": "Year 11 / Friends, recreation and pastimes / identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films",
+   "text": "identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films"
+  },
+  {
+   "code": "PRE-M4-D15",
+   "path": "Year 11 / Friends, recreation and pastimes / language used to express cultural values, and to represent people and cultures in texts",
+   "text": "language used to express cultural values, and to represent people and cultures in texts"
+  },
+  {
+   "code": "PRE-M4-D16",
+   "path": "Year 11 / Friends, recreation and pastimes / explain cultural references in texts, eg la francophonie, l’hypermarché",
+   "text": "explain cultural references in texts, eg la francophonie, l’hypermarché"
+  },
+  {
+   "code": "PRE-M4-D17",
+   "path": "Year 11 / Friends, recreation and pastimes / register and common expressions in language use.",
+   "text": "register and common expressions in language use."
+  },
+  {
+   "code": "PRE-M4-D18",
+   "path": "Year 11 / Friends, recreation and pastimes / explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms mettre les pieds dans le plat, avoir la chair de poule.",
+   "text": "explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms mettre les pieds dans le plat, avoir la chair de poule."
+  },
+  {
+   "code": "PRE-M4-D19",
+   "path": "Year 11 / Friends, recreation and pastimes / suggested components and weightings for the internal assessment of the Preliminary course",
+   "text": "suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "PRE-M4-D20",
+   "path": "Year 11 / Friends, recreation and pastimes / mandatory components and weightings for the internal assessment of the HSC course",
+   "text": "mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "PRE-M4-D21",
+   "path": "Year 11 / Friends, recreation and pastimes / the HSC examination specifications, which describe the format of the external HSC examination.",
+   "text": "the HSC examination specifications, which describe the format of the external HSC examination."
+  },
+  {
+   "code": "PRE-M6-D1",
+   "path": "Year 11 / Future plans and aspirations / the importance of listening for key words to assist understanding",
+   "text": "the importance of listening for key words to assist understanding"
+  },
+  {
+   "code": "PRE-M6-D2",
+   "path": "Year 11 / Future plans and aspirations / listen for meaning",
+   "text": "listen for meaning"
+  },
+  {
+   "code": "PRE-M6-D3",
+   "path": "Year 11 / Future plans and aspirations / the importance of reading for key words to assist understanding",
+   "text": "the importance of reading for key words to assist understanding"
+  },
+  {
+   "code": "PRE-M6-D4",
+   "path": "Year 11 / Future plans and aspirations / read for meaning",
+   "text": "read for meaning"
+  },
+  {
+   "code": "PRE-M6-D5",
+   "path": "Year 11 / Future plans and aspirations / links in communication",
+   "text": "links in communication"
+  },
+  {
+   "code": "PRE-M6-D6",
+   "path": "Year 11 / Future plans and aspirations / use strategies to initiate, maintain and conclude an interaction, eg Bonjour! Alors, je ne suis pas sûr(e) mais….",
+   "text": "use strategies to initiate, maintain and conclude an interaction, eg Bonjour! Alors, je ne suis pas sûr(e) mais…."
+  },
+  {
+   "code": "PRE-M6-D7",
+   "path": "Year 11 / Future plans and aspirations / À plus tard.",
+   "text": "À plus tard."
+  },
+  {
+   "code": "PRE-M6-D8",
+   "path": "Year 11 / Future plans and aspirations / the purpose and context of communication",
+   "text": "the purpose and context of communication"
+  },
+  {
+   "code": "PRE-M6-D9",
+   "path": "Year 11 / Future plans and aspirations / select and incorporate particular vocabulary and structures to achieve specific communication goals",
+   "text": "select and incorporate particular vocabulary and structures to achieve specific communication goals"
+  },
+  {
+   "code": "PRE-M6-D10",
+   "path": "Year 11 / Future plans and aspirations / register in language use",
+   "text": "register in language use"
+  },
+  {
+   "code": "PRE-M6-D11",
+   "path": "Year 11 / Future plans and aspirations / interact with reference to context, purpose and audience",
+   "text": "interact with reference to context, purpose and audience"
+  },
+  {
+   "code": "PRE-M6-D12",
+   "path": "Year 11 / Future plans and aspirations / responding to factual and open-ended questions",
+   "text": "responding to factual and open-ended questions"
+  },
+  {
+   "code": "PRE-M6-D13",
+   "path": "Year 11 / Future plans and aspirations / maintain an interaction by responding to and asking questions and sharing information, eg Tu as un petit boulot? Oui, je travaille jeudi soir à la boulangerie. Et toi, tu travailles?",
+   "text": "maintain an interaction by responding to and asking questions and sharing information, eg Tu as un petit boulot? Oui, je travaille jeudi soir à la boulangerie. Et toi, tu travailles?"
+  },
+  {
+   "code": "PRE-M6-D14",
+   "path": "Year 11 / Future plans and aspirations / ways to support effective interaction",
+   "text": "ways to support effective interaction"
+  },
+  {
+   "code": "PRE-M6-D15",
+   "path": "Year 11 / Future plans and aspirations / use appropriate language features to enhance communication, eg tone, intonation Vraiment! Ça alors!",
+   "text": "use appropriate language features to enhance communication, eg tone, intonation Vraiment! Ça alors!"
+  },
+  {
+   "code": "PRE-M6-D16",
+   "path": "Year 11 / Future plans and aspirations / the logical sequencing of ideas",
+   "text": "the logical sequencing of ideas"
+  },
+  {
+   "code": "PRE-M6-D17",
+   "path": "Year 11 / Future plans and aspirations / structure information and ideas coherently",
+   "text": "structure information and ideas coherently"
+  },
+  {
+   "code": "PRE-M6-D18",
+   "path": "Year 11 / Future plans and aspirations / formal and informal language, and when and where it is used",
+   "text": "formal and informal language, and when and where it is used"
+  },
+  {
+   "code": "PRE-M6-D19",
+   "path": "Year 11 / Future plans and aspirations / apply appropriate social conventions in formal and informal contexts, eg terms of address Bonjour, messieurs-dames! Salut, Sandra!",
+   "text": "apply appropriate social conventions in formal and informal contexts, eg terms of address Bonjour, messieurs-dames! Salut, Sandra!"
+  },
+  {
+   "code": "PRE-M6-D20",
+   "path": "Year 11 / Future plans and aspirations / sociolinguistic conventions relating to everyday activities.",
+   "text": "sociolinguistic conventions relating to everyday activities."
+  },
+  {
+   "code": "PRE-M6-D21",
+   "path": "Year 11 / Future plans and aspirations / use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Santé! À la tienne! Enchanté(e). Pas de quoi. Je regrette.",
+   "text": "use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Santé! À la tienne! Enchanté(e). Pas de quoi. Je regrette."
+  },
+  {
+   "code": "HSC-M3-D1",
+   "path": "Year 12 / Education and work / the structure and format of particular texts",
+   "text": "the structure and format of particular texts"
+  },
+  {
+   "code": "HSC-M3-D2",
+   "path": "Year 12 / Education and work / present and organise information in ways appropriate to audience, purpose and context",
+   "text": "present and organise information in ways appropriate to audience, purpose and context"
+  },
+  {
+   "code": "HSC-M3-D3",
+   "path": "Year 12 / Education and work / the purpose and context of a text and their influence on the choice of structure, format and vocabulary",
+   "text": "the purpose and context of a text and their influence on the choice of structure, format and vocabulary"
+  },
+  {
+   "code": "HSC-M3-D4",
+   "path": "Year 12 / Education and work / plan, draft and edit text",
+   "text": "plan, draft and edit text"
+  },
+  {
+   "code": "HSC-M3-D5",
+   "path": "Year 12 / Education and work / the logical sequencing of ideas in extended text",
+   "text": "the logical sequencing of ideas in extended text"
+  },
+  {
+   "code": "HSC-M3-D6",
+   "path": "Year 12 / Education and work / sequence ideas and information in texts",
+   "text": "sequence ideas and information in texts"
+  },
+  {
+   "code": "HSC-M3-D7",
+   "path": "Year 12 / Education and work / application of known linguistic structures in new contexts",
+   "text": "application of known linguistic structures in new contexts"
+  },
+  {
+   "code": "HSC-M3-D8",
+   "path": "Year 12 / Education and work / apply a range of vocabulary and linguistic structures across a range of contexts",
+   "text": "apply a range of vocabulary and linguistic structures across a range of contexts"
+  },
+  {
+   "code": "HSC-M3-D9",
+   "path": "Year 12 / Education and work / language choices and their effect on intended meaning",
+   "text": "language choices and their effect on intended meaning"
+  },
+  {
+   "code": "HSC-M3-D10",
+   "path": "Year 12 / Education and work / evaluate the accuracy and appropriateness of structures when constructing and editing text",
+   "text": "evaluate the accuracy and appropriateness of structures when constructing and editing text"
+  },
+  {
+   "code": "HSC-M3-D11",
+   "path": "Year 12 / Education and work / resources available to enhance and expand independent learning",
+   "text": "resources available to enhance and expand independent learning"
+  },
+  {
+   "code": "HSC-M3-D12",
+   "path": "Year 12 / Education and work / extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online",
+   "text": "extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online"
+  },
+  {
+   "code": "HSC-M3-D13",
+   "path": "Year 12 / Education and work / register in language use.",
+   "text": "register in language use."
+  },
+  {
+   "code": "HSC-M3-D14",
+   "path": "Year 12 / Education and work / use culturally appropriate language when creating and presenting texts, eg Tu veux prendre un pot? Vous voulez boire quelque chose?",
+   "text": "use culturally appropriate language when creating and presenting texts, eg Tu veux prendre un pot? Vous voulez boire quelque chose?"
+  },
+  {
+   "code": "HSC-M4-D1",
+   "path": "Year 12 / Friends, recreation and pastimes / ways in which texts are constructed for specific purposes",
+   "text": "ways in which texts are constructed for specific purposes"
+  },
+  {
+   "code": "HSC-M4-D2",
+   "path": "Year 12 / Friends, recreation and pastimes / identify why, how or to whom a text is delivered or presented",
+   "text": "identify why, how or to whom a text is delivered or presented"
+  },
+  {
+   "code": "HSC-M4-D3",
+   "path": "Year 12 / Friends, recreation and pastimes / ways in which texts are formatted for particular purposes and effects",
+   "text": "ways in which texts are formatted for particular purposes and effects"
+  },
+  {
+   "code": "HSC-M4-D4",
+   "path": "Year 12 / Friends, recreation and pastimes / explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts",
+   "text": "explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts"
+  },
+  {
+   "code": "HSC-M4-D5",
+   "path": "Year 12 / Friends, recreation and pastimes / ways of identifying relevant details in texts when listening or reading for specific information",
+   "text": "ways of identifying relevant details in texts when listening or reading for specific information"
+  },
+  {
+   "code": "HSC-M4-D6",
+   "path": "Year 12 / Friends, recreation and pastimes / make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text",
+   "text": "make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text"
+  },
+  {
+   "code": "HSC-M4-D7",
+   "path": "Year 12 / Friends, recreation and pastimes / ways of inferring meaning from text",
+   "text": "ways of inferring meaning from text"
+  },
+  {
+   "code": "HSC-M4-D8",
+   "path": "Year 12 / Friends, recreation and pastimes / use contextual and other clues to infer meaning from text",
+   "text": "use contextual and other clues to infer meaning from text"
+  },
+  {
+   "code": "HSC-M4-D9",
+   "path": "Year 12 / Friends, recreation and pastimes / resources available to access, enhance or promote independent learning",
+   "text": "resources available to access, enhance or promote independent learning"
+  },
+  {
+   "code": "HSC-M4-D10",
+   "path": "Year 12 / Friends, recreation and pastimes / access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts",
+   "text": "access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts"
+  },
+  {
+   "code": "HSC-M4-D11",
+   "path": "Year 12 / Friends, recreation and pastimes / the effect of syntax on meaning",
+   "text": "the effect of syntax on meaning"
+  },
+  {
+   "code": "HSC-M4-D12",
+   "path": "Year 12 / Friends, recreation and pastimes / analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect une nouvelle voiture, un nouveau vélo",
+   "text": "analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect une nouvelle voiture, un nouveau vélo"
+  },
+  {
+   "code": "HSC-M4-D13",
+   "path": "Year 12 / Friends, recreation and pastimes / cultural attitudes that add meaning to texts",
+   "text": "cultural attitudes that add meaning to texts"
+  },
+  {
+   "code": "HSC-M4-D14",
+   "path": "Year 12 / Friends, recreation and pastimes / identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films",
+   "text": "identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films"
+  },
+  {
+   "code": "HSC-M4-D15",
+   "path": "Year 12 / Friends, recreation and pastimes / language used to express cultural values, and to represent people and cultures in texts",
+   "text": "language used to express cultural values, and to represent people and cultures in texts"
+  },
+  {
+   "code": "HSC-M4-D16",
+   "path": "Year 12 / Friends, recreation and pastimes / explain cultural references in texts, eg la francophonie, l’hypermarché",
+   "text": "explain cultural references in texts, eg la francophonie, l’hypermarché"
+  },
+  {
+   "code": "HSC-M4-D17",
+   "path": "Year 12 / Friends, recreation and pastimes / register and common expressions in language use.",
+   "text": "register and common expressions in language use."
+  },
+  {
+   "code": "HSC-M4-D18",
+   "path": "Year 12 / Friends, recreation and pastimes / explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms mettre les pieds dans le plat, avoir la chair de poule.",
+   "text": "explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms mettre les pieds dans le plat, avoir la chair de poule."
+  },
+  {
+   "code": "HSC-M4-D19",
+   "path": "Year 12 / Friends, recreation and pastimes / suggested components and weightings for the internal assessment of the Preliminary course",
+   "text": "suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "HSC-M4-D20",
+   "path": "Year 12 / Friends, recreation and pastimes / mandatory components and weightings for the internal assessment of the HSC course",
+   "text": "mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "HSC-M4-D21",
+   "path": "Year 12 / Friends, recreation and pastimes / the HSC examination specifications, which describe the format of the external HSC examination.",
+   "text": "the HSC examination specifications, which describe the format of the external HSC examination."
+  },
+  {
+   "code": "HSC-M6-D1",
+   "path": "Year 12 / Future plans and aspirations / the importance of listening for key words to assist understanding",
+   "text": "the importance of listening for key words to assist understanding"
+  },
+  {
+   "code": "HSC-M6-D2",
+   "path": "Year 12 / Future plans and aspirations / listen for meaning",
+   "text": "listen for meaning"
+  },
+  {
+   "code": "HSC-M6-D3",
+   "path": "Year 12 / Future plans and aspirations / the importance of reading for key words to assist understanding",
+   "text": "the importance of reading for key words to assist understanding"
+  },
+  {
+   "code": "HSC-M6-D4",
+   "path": "Year 12 / Future plans and aspirations / read for meaning",
+   "text": "read for meaning"
+  },
+  {
+   "code": "HSC-M6-D5",
+   "path": "Year 12 / Future plans and aspirations / links in communication",
+   "text": "links in communication"
+  },
+  {
+   "code": "HSC-M6-D6",
+   "path": "Year 12 / Future plans and aspirations / use strategies to initiate, maintain and conclude an interaction, eg Bonjour! Alors, je ne suis pas sûr(e) mais….",
+   "text": "use strategies to initiate, maintain and conclude an interaction, eg Bonjour! Alors, je ne suis pas sûr(e) mais…."
+  },
+  {
+   "code": "HSC-M6-D7",
+   "path": "Year 12 / Future plans and aspirations / À plus tard.",
+   "text": "À plus tard."
+  },
+  {
+   "code": "HSC-M6-D8",
+   "path": "Year 12 / Future plans and aspirations / the purpose and context of communication",
+   "text": "the purpose and context of communication"
+  },
+  {
+   "code": "HSC-M6-D9",
+   "path": "Year 12 / Future plans and aspirations / select and incorporate particular vocabulary and structures to achieve specific communication goals",
+   "text": "select and incorporate particular vocabulary and structures to achieve specific communication goals"
+  },
+  {
+   "code": "HSC-M6-D10",
+   "path": "Year 12 / Future plans and aspirations / register in language use",
+   "text": "register in language use"
+  },
+  {
+   "code": "HSC-M6-D11",
+   "path": "Year 12 / Future plans and aspirations / interact with reference to context, purpose and audience",
+   "text": "interact with reference to context, purpose and audience"
+  },
+  {
+   "code": "HSC-M6-D12",
+   "path": "Year 12 / Future plans and aspirations / responding to factual and open-ended questions",
+   "text": "responding to factual and open-ended questions"
+  },
+  {
+   "code": "HSC-M6-D13",
+   "path": "Year 12 / Future plans and aspirations / maintain an interaction by responding to and asking questions and sharing information, eg Tu as un petit boulot? Oui, je travaille jeudi soir à la boulangerie. Et toi, tu travailles?",
+   "text": "maintain an interaction by responding to and asking questions and sharing information, eg Tu as un petit boulot? Oui, je travaille jeudi soir à la boulangerie. Et toi, tu travailles?"
+  },
+  {
+   "code": "HSC-M6-D14",
+   "path": "Year 12 / Future plans and aspirations / ways to support effective interaction",
+   "text": "ways to support effective interaction"
+  },
+  {
+   "code": "HSC-M6-D15",
+   "path": "Year 12 / Future plans and aspirations / use appropriate language features to enhance communication, eg tone, intonation Vraiment! Ça alors!",
+   "text": "use appropriate language features to enhance communication, eg tone, intonation Vraiment! Ça alors!"
+  },
+  {
+   "code": "HSC-M6-D16",
+   "path": "Year 12 / Future plans and aspirations / the logical sequencing of ideas",
+   "text": "the logical sequencing of ideas"
+  },
+  {
+   "code": "HSC-M6-D17",
+   "path": "Year 12 / Future plans and aspirations / structure information and ideas coherently",
+   "text": "structure information and ideas coherently"
+  },
+  {
+   "code": "HSC-M6-D18",
+   "path": "Year 12 / Future plans and aspirations / formal and informal language, and when and where it is used",
+   "text": "formal and informal language, and when and where it is used"
+  },
+  {
+   "code": "HSC-M6-D19",
+   "path": "Year 12 / Future plans and aspirations / apply appropriate social conventions in formal and informal contexts, eg terms of address Bonjour, messieurs-dames! Salut, Sandra!",
+   "text": "apply appropriate social conventions in formal and informal contexts, eg terms of address Bonjour, messieurs-dames! Salut, Sandra!"
+  },
+  {
+   "code": "HSC-M6-D20",
+   "path": "Year 12 / Future plans and aspirations / sociolinguistic conventions relating to everyday activities.",
+   "text": "sociolinguistic conventions relating to everyday activities."
+  },
+  {
+   "code": "HSC-M6-D21",
+   "path": "Year 12 / Future plans and aspirations / use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Santé! À la tienne! Enchanté(e). Pas de quoi. Je regrette.",
+   "text": "use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Santé! À la tienne! Enchanté(e). Pas de quoi. Je regrette."
+  }
+ ],
+ "questions": [
+  {
+   "id": "fb202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Which diagram best fits the weather forecast for Lyon?\nA.\n17°\nsunny\nB.\n17°\ncloudy\nC.\n17° rai n\nD.\n17‡\nwindy\n17° sunny\n17° cloudy\n17° rain\n17° windy"
+  },
+  {
+   "id": "fb202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Identify THREE instructions given to Sophie."
+  },
+  {
+   "id": "fb202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Why does the teacher need to call Paul’s mother?\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)"
+  },
+  {
+   "id": "fb202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWho is the speaker addressing in this announcement?\n(b)\nWhat is being offered?"
+  },
+  {
+   "id": "fb202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Complete Luc’s to-do list.\nLuc’s to-do list for Saturday\n• Before 5 pm\n• Basketball match\n• 6:30 pm\n• pm\nMeet at the restaurant.\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)"
+  },
+  {
+   "id": "fb202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "(a)\nWhat is the purpose of this announcement?\n(b)\nOutline the process.\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2201\nFrench Beginners"
+  },
+  {
+   "id": "fb202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "What are the requirements for this job?\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)"
+  },
+  {
+   "id": "fb202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhat decisions have been made?\n(b)\nWhat has led to these decisions?"
+  },
+  {
+   "id": "fb202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "How likely is it that Mark will go to schoolies with Sophie? Justify\nyour answer with reference to the text.\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2202\nFrench Beginners\nSection II — Reading\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "fb202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the question that follows.\nLe s’cool bus\nLe s’cool bus, un nouveau type de transport scolaire en ville. Mi-bus, mi-vélo, il\npermet de transporter en même temps 8 enfants âgés de 7 à 11 ans. Les écoliers\npédalent ensemble pour aller à l’école. Cette innovation écologique est aussi\nbonne pour la santé que pour l’environnement.\nWhat are the benefits of le s’cool bus?"
+  },
+  {
+   "id": "fb202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the questions that follow.\nAttention automobilistes !\nEn voyageant dans la forêt de Rambouillet, à une heure seulement de Paris,\nvous pourrez voir des panneaux « Attention kangourous ! » Est-ce que c’est une\nplaisanterie ? Est-ce que c’est une hallucination ? Incroyable mais non !\nEn fait, des kangourous se sont échappés d’un zoo à proximité dans les années\n1970 et se sont reproduits depuis. Ils ont trouvé de la nourriture adéquate dans\nla forêt et se sont parfaitement adaptés à leur nouvel habitat. Ils sont maintenant\nplus d’une centaine en liberté dans cette forêt française.\n(a)\nWhat is incredible about the Rambouillet forest?\n(b)\nWhat led to this unusual situation?"
+  },
+  {
+   "id": "fb202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nLa semaine du goût\nEn France, tous les jours dans les écoles, collèges et lycées, les élèves peuvent\ndéjeuner à la cantine. Typiquement, un déjeuner à la cantine est composé d’une\nentrée, d’un plat principal, d’un fromage et d’un dessert. Ces menus équilibrés\nsont créés par une équipe de nutritionnistes. C’est très différent pour les élèves\naustraliens qui doivent apporter leur déjeuner de la maison !\nDe plus, chaque année, une semaine en octobre est dédiée à la semaine du\ngoût dans toutes les cantines françaises. Le but de cette semaine spéciale est\nde découvrir d’autres goûts, des recettes qui viennent d’autres pays avec de\nnouvelles épices et saveurs. En France, l’éducation ne se passe pas uniquement\ndans la salle de classe ! On éduque aussi les papilles gustatives !\n(a)\nCompare French and Australian school lunches. Support your answer with\ndetails from the text.\n(b)\nWhat is the aim of la semaine du goût ?\n(c)\nExplain what is meant by « On éduque aussi les papilles gustatives ! »\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2203\nFrench Beginners"
+  },
+  {
+   "id": "fb202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nLes films de Noël, le remède contre le blues\nPour certains, la période de Noël peut être synonyme d’isolement et de tristesse,\nen particulier si vous êtes en échange ou que vous êtes loin de votre famille.\nCependant, il existe un antidote facilement accessible depuis votre sofa.\nL’impact scientifique des films de Noël\nLes dernières recherches scientifiques ont révélé que regarder un film de Noël\navait un effet positif sur le cerveau. Ces films émouvants et touchants libèrent\ndans notre corps de la dopamine et de l’oxytocine, aussi appelées hormones\ndu bonheur. Ces deux hormones font baisser le stress et la tension sanguine\nen même temps. Par conséquent, en regardant ces films de Noël, on est en\nmeilleure santé et on se sent plus détendu. Il n’y a donc rien de mieux que de\npasser un après-midi à regarder ces films.\nL’impact émotionnel des films de Noël\nCes films de Noël nous rendent aussi nostalgiques : ces scènes qui montrent\nles décorations, le sapin, les repas de famille, l’ouverture de cadeaux, les\nbatailles de boules de neige, tout cela nous fait revivre nos propres souvenirs\nd’enfance. C’est comme si nous nous replongions avec plaisir dans cette période\nd’insouciance, sans stress ni préoccupations. Quand nous regardons un film de\nNoël, nous avons envie d’appeler notre famille pour nous rapprocher des gens\nque nous aimons. Alors maintenant que nous savons que c’est bon pour notre\nsanté et pour nos rapports avec les autres, nous les regarderons sans modération !\n(a)\nDescribe the Christmas blues.\n(b)\nExplain the benefits of watching Christmas movies. Support your answer with\nreference to the text.\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2204\nFrench Beginners"
+  },
+  {
+   "id": "fb202014",
+   "year": 2020,
+   "number": "14",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nInternet article window\nPlouf ! . . . Catastrophe ou pas ?\nEn 2019, 1 portable sur 3 est tombé dans l’eau des toilettes. Si ton portable\nest mouillé ou tombe à l’eau, comment peux-tu le réparer ? Evaluons les\nmythes et les solutions possibles.\nScénario 1 :\nD’abord, éteins tout de suite ton portable. Ensuite, enlève la batterie et la\ncarte SIM. Va au plus vite dans un magasin de smartphones pour qu’un\ntechnicien-expert évalue les dégâts. C’est une bonne solution mais qui\ncoûte cher.\nScénario 2 :\nLe riz sec est très absorbant. Alors mets ton téléphone dans une boîte en\nplastique remplie de riz. Ensuite, ferme la boîte et attends patiemment 48h.\nC’est une bonne solution qui marche dans 75% des cas.\nScénario 3 :\nL’air du sèche-cheveux peut pousser l’eau plus loin dans les circuits. De\nplus, la chaleur du sèche-cheveux peut détruire les circuits électroniques.\nDonc c’est un mythe, ça ne marche jamais ! A éviter absolument !\nScénario 4 :\nL’aspirateur peut aider à éliminer l’eau dans ton téléphone. Mais c’est\nune solution très risquée car l’aspirateur peut aussi avaler certaines petites\nparties de ton téléphone. A essayer seulement si tu es désespéré(e).\nScénario 5 :\nTu peux décider d’acheter une assurance pour ton téléphone qui le protège\ncontre les chutes, la poussière et aussi l’eau. C’est la solution idéale. Tu\nauras ainsi un téléphone tout neuf. Cela ne coûte pas cher mais tu devras\nabsolument acheter cette assurance en même temps que le téléphone.\n(a)\nWhat is the purpose of the article?\n(b)\nCompare each solution by completing the table.\nPros\nCons\nRepair shop\nRice\n75% success rate\nVacuum cleaner\n(c)\nEvaluate the best and the worst solution. Support your answer with reference to\nthe text.\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2205\nFrench Beginners\nSection III — Writing in French\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202015",
+   "year": 2020,
+   "number": "15",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "You have won two tickets to a concert. Write an email to a friend to invite him/her to come\nwith you. Write approximately 50 words in FRENCH."
+  },
+  {
+   "id": "fb202016",
+   "year": 2020,
+   "number": "16",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Your friend would like to apply for a part-time job but is unsure if he/she should. Write an\ninformal letter to your friend persuading him/her why they would be an ideal candidate. Write\napproximately 75 words in FRENCH.\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2206\nFrench Beginners\nPart B – 10 marks\nAttempt either Question 17 or Question 18\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in FRENCH.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202017",
+   "year": 2020,
+   "number": "17",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Vous ne voulez pas aller en vacances en famille. Exprimez vos sentiments dans votre journal\nintime.\nYou don’t want to go on your family holiday trip. Write a diary entry expressing your feelings.\nOR"
+  },
+  {
+   "id": "fb202018",
+   "year": 2020,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Vous ne voulez pas aller à l’université l’année prochaine. Exprimez vos sentiments dans votre\njournal intime.\nYou don’t want to go to university next year. Write a diary entry expressing your feelings."
+  },
+  {
+   "id": "fb202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12 / Future plans and aspirations",
+   "text": "What does the horoscope predict for Sagittarius tomorrow?\n1"
+  },
+  {
+   "id": "fb202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "I\nm\na\nge of people\nWho is the speaker? Tick the correct box.\nA.\nB.\nC.\nD.\n1\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\nPicture A\nPicture B\nPicture C\nPicture D"
+  },
+  {
+   "id": "fb202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Complete the table below in ENGLISH to compare the two\nprofessionals.\n4\nPatrick\nCamille\nProfession\nBaker\nWorking hours\n7 pm to 7 am\n3 am to\nPositive aspects\nof job\nColleagues are fun\nNegative aspects\nof job\nDoesn’t like the\nuniform"
+  },
+  {
+   "id": "fb202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How does Pauline try to help Léo?\n4"
+  },
+  {
+   "id": "fb202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "(a)\nWhat new button has been requested by social media users?\n1\n(b)\nExplain why an alternative was chosen.\n2\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nFrench Beginners\n2291\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)"
+  },
+  {
+   "id": "fb202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWho is the target audience of this advertisement?\n1\n(b)\nWhat are the benefits of these products according to the\nadvertisement?\n3"
+  },
+  {
+   "id": "fb202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Explain the significance of the speaker’s collection of animal\nfigurines.\n4\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)"
+  },
+  {
+   "id": "fb202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What makes this flight unique?\n4"
+  },
+  {
+   "id": "fb202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "How likely is it that Marc will choose to work from home? Justify\nyour answer with reference to the text.\n5\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nFrench Beginners\n2292\nSection II — Reading\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "fb202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the question that follows.\nMessages\nMaman\nDétails\nOù es-tu, Luc ? Il est\ntard !\nJe suis chez Laure.\nNe t’inquiète pas!\nNous faisons nos\ndevoirs. Je rentrerai\nvers 22h.\nHow does Luc reassure his mother?\n2"
+  },
+  {
+   "id": "fb202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nUne prothèse imprimée en 3D devient un accessoire pour\npetits super-héros\nUne nouvelle start-up fait sensation : Brabionique fabrique des bras artificiels\ncustomisés au design de superhéros pour les enfants qui ont perdu un bras.\nCes prothèses sont colorées et attrayantes, ce qui plaît beaucoup aux petits\nenfants. Tout cela les aide à surmonter leur handicap car ils pensent qu’ils\nont les mêmes super-pouvoirs que leur héros préféré.\nEn plus, ces prothèses imprimées en 3D ont l’avantage d’être beaucoup\nmoins chères pour les parents : elles ne coûtent que la moitié du prix des\nprothèses traditionnelles.\n(a)\nWhat does Brabionique produce?\n1\n(b)\nWhy is this new product appealing to children and to parents?\n3"
+  },
+  {
+   "id": "fb202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nLa cohabitation entre seniors\nPour les personnes âgées, la cohabitation (le fait de partager une maison)\nreprésente une nouvelle façon de vivre une retraite plus confortable.\nLa colocation senior a beaucoup de caractéristiques similaires avec la colocation\nentre étudiants: chaque personne occupe une chambre privée mais la cuisine,\nle salon et la salle de bains sont en commun. Il y a cependant une différence\nimportante : entre étudiants, les tâches ménagères (sortir les poubelles, nettoyer\nles espaces communs) sont partagées. Par contre, pour les seniors, une aide-\nménagère est souvent employée pour s’occuper de l’entretien.\nCette solution d’hébergement plaît à beaucoup de personnes âgées qui peuvent\nainsi garder leur indépendance et éviter de vivre dans une maison de retraite.\nElles peuvent choisir des maisons bien situées, près des commerces et des\ncinémas. Vivre en colocation permet aussi d’avoir de la compagnie : il y\na toujours quelqu’un à qui parler. C’est bon pour le moral ! D’un point de\nvue financier, en partageant le loyer et les autres frais, les seniors font aussi\ndes économies.\n(a)\nCompare share housing for seniors with share housing for students.\n3\n(b)\nList the main benefits for seniors of this housing model.\n4\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nFrench Beginners\n2293"
+  },
+  {
+   "id": "fb202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nChers parents,\nJe voudrais attirer votre attention sur un problème récent dans notre\nétablissement. Nous avons noté une augmentation alarmante de\nl’utilisation de cigarettes électroniques au lycée. Je compte sur vous pour\nparler sérieusement de ce problème avec vos enfants à la maison.\nVous pourriez croire que le vapotage est moins dangereux pour la santé\nque le tabac. Or, c’est une idée fausse : on peut absolument devenir\naccro aux cigarettes électroniques car elles contiennent, elles aussi, de la\nnicotine.\nDeuxièmement, elles sont difficiles à reconnaître : elles ressemblent\nsouvent à des clefs USB. Je vais former tous mes professeurs à les\nidentifier et vous aussi, je vous supplie de regarder dans le sac de vos\nenfants.\nFinalement, nos élèves n’ont pas l’âge légal d’acheter des cigarettes\nélectroniques, et par conséquent, il y a tout un marché de e-cigarettes au\nlycée. Chaque semaine, on trouve des élèves qui achètent et vendent des\nvapoteurs dans les toilettes ou dans les vestiaires. Nous ne le tolérerons\npas !\nJe compte vraiment sur votre aide pour mettre fin à cette tendance\nnuisible !\nCordialement,\n(a)\nWhat is the purpose of this email?\n2\n(b)\nSummarise the issues outlined by the principal.\n4\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nFrench Beginners\n2294"
+  },
+  {
+   "id": "fb202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nLes nouveaux mots dans la langue française\nLa culture populaire, les mouvements politiques et les événements globaux changent nos vies,\nbien sûr, mais ils changent aussi nos mots. Voilà quelques termes récemment apparus dans la\nlangue française. Ne cherchez pas ces mots dans vos dictionnaires, ils n’y sont pas . . . encore !\nadulescent\nnom masculin\nOrigine :\nNéologisme né de la contraction des mots français « adulte » et « adolescent ».\nDéfinition :\nUne personne de l’âge adulte qui évite ses responsabilités en se comportant\nencore comme un ado.\nse défriender verbe pronominal\nOrigine :\nAnglicisme formé à partir du mot anglais « friend » et du préfixe français « dé ».\nDéfinition :\nÉliminer une personne de sa liste d’amis en ligne. Mot utilisé presque\nuniquement par les jeunes sur les réseaux sociaux.\ndjomb\nadjectif\nOrigine :\nMot provenant d’Afrique de l’Ouest, apparu dans une chanson de rap très\npopulaire.\nDéfinition :\nUtilisé pour décrire une personne très belle ou habillée avec style.\ninfox\nnom féminin\nOrigine :\nNéologisme formé à partir des mots français « information » et « intoxication ».\nDéfinition :\nFausse information diffusée au public par les médias. Inventé en France par\nl’Académie française, il est utilisé par les politiciens pour éviter d’utiliser le\nterme anglais « fake news » parce que les Français sont très protecteurs et fiers\nde leur langue.\nlocavore\nnom masculin\nOrigine :\nEmprunté directement de l’anglais, composé de « loca » (proche de) et de\n« vore » (qui se nourrit de).\nDéfinition :\nPersonne qui mange exclusivement de la nourriture produite localement, par\nexemple dans un rayon de 100 kilomètres autour de son domicile.\nslasheur\nnom masculin\nOrigine :\nNéologisme formé de la contraction du mot anglais « slash » et du suffi\nfrançais « eur ».\nDéfinition :\nUne personne qui fait plusieurs métiers simultanément. Ces différentes activi\nprofessionnelles sont séparées du signe « / ».\nxe\ntés\n(a)\nAccording to the text, why are new words created?\n2\n(b)\nFill in the table.\n4\nWord\nMeaning\nadulescent\nPerson with multiple jobs\nlocavore\ndjomb\n(c)\nCompare the terms se défriender and infox. In your answer, refer to both origin\nand definition.\n5\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nFrench Beginners\n2295\nSection III — Writing in French\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202115",
+   "year": 2021,
+   "number": "15",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "You would like to drop one of your school subjects. Write a note to the teacher of this subject\nexplaining why. Write approximately 50 words in FRENCH."
+  },
+  {
+   "id": "fb202116",
+   "year": 2021,
+   "number": "16",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Your best friend wants to borrow your car. Write a message explaining why you cannot lend\nit to him/her. Write approximately 75 words in FRENCH.\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\n2296\nFrench Beginners\nPart B – 10 marks\nAttempt either Question 17 or Question 18\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in FRENCH.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202117",
+   "year": 2021,
+   "number": "17",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Vous venez de rentrer d’un week-end fatigant avec vos amis. Écrivez une lettre informelle à\nvotre grand-parent lui décrivant ce que vous avez fait.\nYou have just returned from a tiring weekend away with friends. Write an informal letter to\nyour grandparent, telling him/her what you did.\nOR"
+  },
+  {
+   "id": "fb202118",
+   "year": 2021,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Un de vos grands-parents vous a donné de l’argent pour contribuer à une nouvelle activité.\nÉcrivez lui une lettre informelle pour lui dire comment vous allez dépenser cet argent.\nA grandparent has given you some money to contribute to a new activity. Write an informal\nletter to tell him/her how you will spend it."
+  },
+  {
+   "id": "fb202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Why is Juliette leaving this message?\n2"
+  },
+  {
+   "id": "fb202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Fill in the table according to the text in ENGLISH.\n2\nWhat?\nPresentation about Ancient History\nTime:\nLocation:\nRoom 23\nWho should attend?"
+  },
+  {
+   "id": "fb202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What are the benefits of choosing Speedza instead of Bel Rosso?\n2\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)"
+  },
+  {
+   "id": "fb202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How likely is it that Angelique will go to the party tonight?\n3"
+  },
+  {
+   "id": "fb202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How does Dominique’s attitude change during the conversation?\n4"
+  },
+  {
+   "id": "fb202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Education and work",
+   "text": "According to the text, some people have been queuing up to\nsneakers because\nA.\nthere is only one sneaker store.\nB.\nrare pairs are not available online.\nC.\nthere is a limited number at 50% off.\nD.\nthey can make a profit by reselling them.\nbuy\n1\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2261\nthere is only one sneaker store.\nrare pairs are not available online.\nthere is a limited number at 50% off.\nthey can make a profit by reselling them."
+  },
+  {
+   "id": "fb202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Outline what the message says to parents about e-sport.\n3"
+  },
+  {
+   "id": "fb202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Future plans and aspirations",
+   "text": "Contrast how Lara’s and Antoine’s experiences have influenced their\nfuture aspirations.\n4\nFrench Beginners\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)"
+  },
+  {
+   "id": "fb202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Who would be interested in this destination? Justify your answer wit\nreference to the text.\nh\n4"
+  },
+  {
+   "id": "fb202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "What motivates Paul to participate in this project?\n5\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2262\nFrench Beginners\nSection II — Reading\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "fb202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nDécouvrez notre camion-piscine pour apprendre à nager à vos enfants\nVous n’avez pas accès à une piscine publique dans votre village ? Cette\ninvention permet de donner des leçons de natation aux enfants. A l’intérieur,\nil y a une vraie piscine de huit mètres de long. Ce camion spécial s’installe\nprès des écoles de campagne et en deux semaines, les élèves apprennent à\nnager. Inscrivez vos enfants sur www.camion-piscine.fr.\n(a)\nWhat can be found inside this truck?\n1\n(b)\nWhy was the truck created?\n2"
+  },
+  {
+   "id": "fb202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nUn chanteur aimé de toutes les générations !\nJean-Jacques Goldman vient de fêter ses 71 ans. En 30 ans de carrière, il a\nvendu plus de 32 millions d’albums et composé environ 270 chansons. Le\nplus incroyable ? Les moins de 20 ans continuent d’écouter ses paroles et\nmélodies ! Pourtant, c’est rare que les adolescents aiment les mêmes chanteurs\nque leurs parents. Depuis 2013, chaque année, il est élu personnalité préférée\ndes Français. Ça fait 9 ans de suite ! Pourquoi ? Non seulement il a beaucoup\nde talent mais il s’est investi de manière extraordinaire pendant vingt ans dans\nles Restos du Cœur pour nourrir les gens qui ont faim en hiver. Enfin, il a aussi\ndonné énormément de son temps pour lancer la carrière de jeunes artistes. Ce\nsont ces raisons qui l’ont fait entrer dans le cœur de TOUS les Français. Quelle\ncarrière extraordinaire !\n(a)\nFill in the table to show what each of the numbers refers to.\n4\nNumber\nRefers to\n71\nJean-Jacques Goldman’s age\n30\n32\n270\n9\n(b)\nSummarise why Jean-Jacques Goldman’s career is extraordinary.\n3"
+  },
+  {
+   "id": "fb202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nChers élèves de terminale, vous allez bientôt obtenir votre bac, mais vous ne\nsavez toujours pas quoi faire de votre vie ? Restez calmes ! Avec du temps, vous\nallez pouvoir vous épanouir.\nD’abord, saviez-vous que beaucoup de gens prennent la mauvaise route avant\nde trouver leur vraie vocation ? Une chanteuse actuellement très célèbre a été\nofficier dans l’armée avant de devenir la star que nous connaissons aujourd’hui.\nVous aussi, vous aurez peut-être plusieurs métiers avant de trouver le bon. Il\nfaut être ouvert au fait de changer de parcours plusieurs fois.\nD’autres personnalités ont connu l’échec avant la réussite. L’animatrice de\nl’émission la plus regardée aux États-Unis a été renvoyée de son premier travail\nde présentatrice de télévision.\nLaissez tomber l’idée de « réaliser vos rêves aussi vite que possible ! » Je vous\nconseille de rester optimistes quoi qu’il arrive. Le temps et la patience sont\nessentiels pour trouver votre voie dans la vie.\n(a)\nDescribe the target audience for this speech.\n2\n(b)\nHow does the speaker convince the audience to stay optimistic?\n3\n(c)\nWhich statement best summarises the speech?\nA.\nThere are many paths to success.\nB.\nLife is short, make the most of it.\nC.\nYour future is decided at a young age.\nD.\nIt is important to make career decisions early in life.\n1\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2263"
+  },
+  {
+   "id": "fb202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "French Beginners\nRead the text and then answer the question that follows.\nMieux vaut tard que jamais\nDans un village en Afrique il y a une élève extraordinaire. Elle s’appelle\nFatou. Elle a presque 100 ans et elle va à l’école… primaire ! Elle est\nofficiellement la plus vieille écolière au monde.\nMalgré ses problèmes de vue et d’audition, rien ne l’empêchera d’apprendre\nà lire, écrire et compter. Elle est la preuve vivante qu’on peut apprendre à\ntout âge.\nQuel bel exemple ! Elle profite au maximum de toutes les activités offertes :\ncomme les autres élèves, elle porte l’uniforme scolaire, elle fait ses devoirs,\nelle participe aux cours de gym et de danse, et elle apprend même l’anglais !\nSurtout, comme l’école était interdite aux filles quand elle était petite, elle\nencourage maintenant les filles à chérir leur droit à éducation : « L’éducation\nest un trésor, lancez-vous sans hésiter ! »\nDescribe what Fatou has done to become a role model.\n5\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2264\nFrench Beginners"
+  },
+  {
+   "id": "fb202215",
+   "year": 2022,
+   "number": "15",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nCet été, nous rêvons tous de partir loin. Mais, si c’est impossible,\nÉRIC\nvoici une autre option : aménager son balcon pour passer des\nTOULOUSE\nvacances à la maison ! Prenons nos vacances à « Balconville ».\nVous l’avez fait ? J’attends vos conseils et vos idées !\nCommentaires\nMoi, j’ai installé un hamac sur mon balcon avec une grande poche\nMARC\nsur le côté pour y mettre mes écouteurs, ma tablette… Je peux\nfaire la sieste à l’ombre, écouter de la musique… c’est devenu mon\nendroit préféré !\nMoi aussi. Une couverture et des coussins. Et hop, soirée cinéma en\nADAM\nplein air.\nAlors moi, j’ai essayé d’amener un peu de nature en ville. J’ai\nOLIVIA\nacheté plein de pots pour créer une oasis verte. J’imaginais un\njardin odorant et coloré. Je voulais des herbes fraîches, des tomates\njuteuses… mais je n’ai pas la main verte. Tout a pourri ! Quel\ndésastre !\nMoi, j’ai installé une petite table et deux chaises pliantes sur\nFLORIANNE\nmon balcon pour des dîners à l’extérieur. Le soleil couchant, la\nbrise légère… un seau à glace pour maintenir mes boissons bien\nfroides… C’est vraiment agréable ! Et puis après le dîner… pas\nbesoin de prendre un taxi pour rentrer, la chambre est juste à côté !\nPour moi, pas question ! Mon balcon à moi, il donne sur une rue très\nANGELA\nbruyante. Je suis obligée de garder les fenêtres fermées tout l’été !\n(a)\nWhat is Eric’s purpose in starting this discussion?\n2\n(b)\nCompare the experiences of Marc, Adam and Olivia.\n4\n(c)\nHow likely is it that Angela will follow Florianne’s example? Support your\nanswer with reference to both Florianne’s and Angela’s posts.\n3\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2265\nFrench Beginners\nSection III — Writing in French\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202216",
+   "year": 2022,
+   "number": "16",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "One of your classmates was absent from school today and missed French class. Write him/her\na message outlining the details of tomorrow’s French excursion. Write approximately 50 words\nin FRENCH."
+  },
+  {
+   "id": "fb202217",
+   "year": 2022,
+   "number": "17",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "It is your brother’s 21st birthday party. Write the script of a speech in which you describe your\nrelationship. Write approximately 75 words in FRENCH.\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2266\nFrench Beginners\nPart B – 10 marks\nAttempt either Question 18 or Question 19\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in FRENCH.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202218",
+   "year": 2022,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Ecrivez un email à un ami en France lui décrivant comment vous avez célébré le réveillon du\nnouvel an en Australie.\nWrite an email to a friend in France describing how you celebrated New Year’s Eve in\nAustralia.\nOR"
+  },
+  {
+   "id": "fb202219",
+   "year": 2022,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Vous venez de terminer l’année scolaire. Écrivez un email à un ami en France pour lui\nraconter votre dernière semaine à l’école.\nYou have just finished the school year. Write an email to a friend in France about your last\nweek at school."
+  },
+  {
+   "id": "fb202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "List TWO ingredients Max still needs to buy.\n1"
+  },
+  {
+   "id": "fb202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Describe the target audience of this advertisement.\n3\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2396310037"
+  },
+  {
+   "id": "fb202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhat is Paul complaining about?\n1\n(b)\nWhat suggestion does Paul’s friend make?\n2"
+  },
+  {
+   "id": "fb202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Fill in the table with information from the news report.\n3\nNumber\nRefers to\n26\nNumber of marathons completed\n812"
+  },
+  {
+   "id": "fb202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Summarise the requests Sascha has made of Christophe.\n4\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n6785310033"
+  },
+  {
+   "id": "fb202306",
+   "year": 2023,
+   "number": "6(a)",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "(a) (1 mark)\n(a)\nWhere is the conversation most likely taking place?\nA.\nA hotel\nB.\nA university\nC.\nA restaurant\nD.\nA post office\n1\n(b)\nWhat is the male speaker most likely to say next?\nA.\nThat’s too bad!\nB.\nWhat a pity you are not free!\nC.\nI will contact you again in February.\nD.\nI will contact you again in early December.\n1\nA hotel\nA university\nA restaurant\nA post office"
+  },
+  {
+   "id": "fb202307",
+   "year": 2023,
+   "number": "6(b)",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "(b) (1 mark)\n(b)\nWhat is the male speaker most likely to say next?\nA.\nThat’s too bad!\nB.\nWhat a pity you are not free!\nC.\nI will contact you again in February.\nD.\nI will contact you again in early December.\n1\nThat’s too bad!\nWhat a pity you are not free!\nI will contact you again in February.\nI will contact you again in early December."
+  },
+  {
+   "id": "fb202308",
+   "year": 2023,
+   "number": "7",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Explain Rosie’s change in attitude by the end of the conversation.\n4\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2070310036"
+  },
+  {
+   "id": "fb202309",
+   "year": 2023,
+   "number": "8",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nDescribe the changes that are planned for the famous landmark.\n3\n(b)\nWhat has led to the decision to make these changes?\n2"
+  },
+  {
+   "id": "fb202310",
+   "year": 2023,
+   "number": "9",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Compare the parents’ opinions about Daniel’s plans.\n5\n2491310033\n0674310034\n4262310031\n2023 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2306310072\n2261\nFrench Beginners\nSection II — Reading\nAnswer Booklet\n15670\nInstructions\n• Write your Centre Number and Student Number at the top of this\npage.\n• Read the texts and then answer the questions in ENGLISH in\nthe spaces provided. These spaces provide guidance for the\nexpected length of response.\n3166310077"
+  },
+  {
+   "id": "fb202311",
+   "year": 2023,
+   "number": "10",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the questions that follow.\nSavez-vous qu’il y a du miel fabriqué à Paris ? Il y a plus de 700 ruches sur les\ntoits de monuments parisiens mais, en particulier, sur le toit de la Cathédrale\nNotre Dame. Pendant l’incendie qui a détruit en partie la cathédrale en 2019,\nle feu n’a pas tué les abeilles mais la fumée les a seulement endormies !\nMaintenant il y a encore plus d’abeilles et elles produisent encore plus de miel\nqu’avant l’incendie. Quel miracle ! Alors, si vous cherchez un cadeau unique à\nrapporter de Paris, pourquoi pas le miel de Notre Dame !\n(a)\nWhat makes this honey from Paris unique?\n1\n(b)\nExplain why the result of the event described in the text is considered a miracle.\n3\n4173310076"
+  },
+  {
+   "id": "fb202312",
+   "year": 2023,
+   "number": "11",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nL’étoile montante de l’athlétisme\nL’un des plus grands espoirs pour le 110 mètres-haies aux Jeux Olympiques\nde Paris en 2024 est franco-australien. Il a grandi en Australie, mais il a\ndéménagé en France en 2017, c’est pourquoi il a choisi de représenter la\nFrance. À l’âge de 20 ans, il a déjà deux records du monde et c’est pour\nça qu’il a plus de 100 000 fans sur les réseaux sociaux ! S’il gagne une\nmédaille, quel pays sera le plus fier de lui ?\n(a)\nWhy does this athlete have such a following on social media?\n1\n(b)\nExplain the meaning of ‘S’il gagne une médaille, quel pays sera le plus fier de\nlui ?’.\n3\n5830310077"
+  },
+  {
+   "id": "fb202313",
+   "year": 2023,
+   "number": "12",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\n• 13 janvier, St-Étienne :\nCher Journal,\nJe viens d’arriver en échange. Quelle idée stupide j’ai eue d’arriver en France en\nplein hiver ! Oh mon dieu, quand j’ai quitté Newcastle, il faisait 42 degrés et ici\nil fait − 4 degrés ! Je vais mourir de froid ici. Quelle horreur !\n– Lily\n• 2 février :\nCher Journal,\nJe suis déprimée ! C’est vraiment difficile de s’adapter à la vie en France. Mes\nparents d’accueil parlent tellement vite que je me sens nulle ! Je ne comprends\nrien… Moi qui croyais que mon niveau de français était bon !\n– Lily\n• 20 février :\nCher Journal,\nMa famille d’accueil est géniale ! Ils m’ont emmenée à Grenoble pour skier\nune semaine ! Je n’ai jamais vu autant de neige de ma vie ! C’est le paradis, je\nm’éclate !\n– Lily\n(a)\nWhy does Lily say ‘Quelle idée stupide’?\n2\n(b)\nTo what extent has Lily enjoyed her time on exchange?\n5\n9835310076"
+  },
+  {
+   "id": "fb202314",
+   "year": 2023,
+   "number": "13",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the question that follows.\nPetite annonce\nPropriétaire cherche à louer une chambre spacieuse pour un/e étudiant/e\ndans un appartement de 4 chambres en colocation. Une des colocataires\npossède un chat. L’autre est végane et le troisième étudie la trompette\nau conservatoire. On prépare les repas à tour de rôle. Les trois\ncolocataires vivent ensemble depuis 3 ans et aiment faire la fête.\nIl y a un grand salon. Situé au troisième étage sans ascenseur à\n25 minutes à pied de l’université, l’appartement est lumineux.\nLa chambre possède un lit simple mais il n’y a qu’une salle de bain\npour 4 personnes. Il n’y a pas de garage ni de parking dans la rue. Prix\npar mois : seulement 600 euros, factures d’électricité, de chauffage et\nd’eau incluses.\nContactez Evelyn : Evelyn@salon.fr\nDescribe the ideal candidate for this accommodation.\n6\n0399310072"
+  },
+  {
+   "id": "fb202315",
+   "year": 2023,
+   "number": "14",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nAstucieux ou criminel ?\nJ’ai trouvé une création extraordinaire aujourd’hui chez mon\nAlain :\nboulanger ! Ça s’appelle « la baguette de motard » ! C’est une\nbaguette pas comme les autres : elle est pliée en forme de « U »\navant la cuisson, donc on peut la transporter dans sa sacoche à\nmoto ou à vélo sans la casser !\nCommentaires\nC’est une plaisanterie, j’espère ? Quelle horreur ! La baguette,\nÉlodie :\nc’est une icône française ! Elle est même devenue un objet culturel\nprotégé par l’UNESCO comme la cérémonie du thé en Chine ou\nla danse des masques en Corée. Elle appartient à la façon de vivre\nfrançaise ! C’est une tradition française depuis deux-cents ans et si\nla recette change, ce n’est plus une baguette !\nTu as raison Élodie, la création de cette baguette était plutôt une\nAlain :\nblague au début : en parlant avec son boulanger, une dame lui a\nexpliqué que les baguettes arrivaient toujours cassées car son fils\navait des difficultés à bien les transporter à moto. Le boulanger\na donc décidé de créer une baguette spéciale pour les aider, une\nbaguette pliée en forme de U. D’autres clients l’ont vue et ont\nvoulu la même. C’est comme cela que tout a commencé.\nMoi, je fais mes courses à vélo ou en scooter électrique et je trouve\nPhilippe :\nque c’est une invention géniale de pouvoir transporter une baguette\ndans mon sac à dos. Sinon, quand on doit la casser en deux, le pain\nsèche trop vite ! Rassure-toi Élodie, la recette reste la même ! C’est\nseulement la forme qui a changé.\nJe ne crois pas que cette tendance durera longtemps ! Les gens vont\nÉlodie :\nvite revenir à la baguette traditionnelle !\nJe ne sais pas ! Ces baguettes ont déjà beaucoup de succès avec les\nAlain :\nhabitants de ma ville. Leur vente a augmenté de six par jour à une\ncinquantaine par jour en un mois !!\n6526310070\n(a)\nWhat has been created by this local baker?\n1\n(b)\nExplain how this new creation came about.\n2\n(c)\nAccording to Élodie, how long has the baguette been a French tradition?\n1\n(d)\nCompare the three people’s opinions on the topic.\n5\n0402310077\n2023 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2262\n5499310056\nFrench Beginners\nSection III — Writing in French\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202316",
+   "year": 2023,
+   "number": "15",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "You are travelling after completing the HSC. Write a postcard to one of your family members\nthanking him/her for their support during the HSC year. Write approximately 50 words\nin FRENCH.\n15670"
+  },
+  {
+   "id": "fb202317",
+   "year": 2023,
+   "number": "16",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "You have received some positive feedback from an interview you attended for a holiday\njob. You will be starting the job next week. Write a diary entry about the good news. Write\napproximately 75 words in FRENCH.\n8287310054\nPart B – 10 marks\nAttempt either Question 17 or Question 18\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in FRENCH.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202318",
+   "year": 2023,
+   "number": "17",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Ton ami/e voudrait étudier une des matières que tu viens de finir d’étudier. Écris-lui un email\nà propos des avantages et désavantages d’étudier cette matière.\nYour friend wants to study one of the subjects you have just finished. Write him/her an email\nabout the advantages and disadvantages of studying this subject.\nOR"
+  },
+  {
+   "id": "fb202319",
+   "year": 2023,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Ton/Ta meilleur/e ami/e voudrait participer à la même activité de loisirs que toi. Écris-lui un\nemail à propos des avantages et désavantages de cette activité.\nYour best friend wants to participate in the same recreational activity as you. Write him/her an\nemail about the advantages and disadvantages of this activity."
+  },
+  {
+   "id": "fb202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Complete the reservation slip.\n1\nLa Colombe\nNom :\nHeure :\n19 h\nPersonnes : 2"
+  },
+  {
+   "id": "fb202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhat is the weather forecast for Paris?\n2\n(b)\nList TWO items that Parisians should not forget tomorrow.\n2\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2396310037"
+  },
+  {
+   "id": "fb202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What is unique about this pastry chef’s career path?\n3"
+  },
+  {
+   "id": "fb202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Why did the police arrest the man?\n2"
+  },
+  {
+   "id": "fb202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhat is the proposal that is being discussed?\n1\n(b)\nSummarise the arguments in support of the proposal.\n3"
+  },
+  {
+   "id": "fb202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhat is the purpose of the text?\n1\n(b)\nList THREE experiences available at this location.\n3\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n6785310033"
+  },
+  {
+   "id": "fb202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "How has the Principal justified the change at Sophie’s school?\nSupport your answer with reference to the text.\n3"
+  },
+  {
+   "id": "fb202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How did fast-food chains adapt to the French market?\n4\nChange\nReason\n• The French considered it too\nbright and not aesthetically\npleasing.\n• They had to adapt their decor.\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2070310036"
+  },
+  {
+   "id": "fb202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Compare the speakers’ views about their plans for next year.\n5\n2491310033\n0674310034\n4262310031\n2024 HIGHER SCHOOL CERTIFICATE EXAMINATION\n6741310293\n2261\nFrench Beginners\nSection II — Reading\nAnswer Booklet\n15670\nInstructions\n• Write your Centre Number and Student Number at the top of this\npage.\n• Read the texts and then answer the questions in ENGLISH in\nthe spaces provided. These spaces provide guidance for the\nexpected length of response.\n0730310295"
+  },
+  {
+   "id": "fb202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Read the text and then answer the questions that follow.\nUn chat astronaute\nLe 18 octobre 2023 marque le soixantième anniversaire du voyage dans\nl’espace de Félicette, une chatte errante parisienne. En 1963, quatorze chats\nont été attrapés dans les rues de Paris. Celui qui a été choisi pour partir dans\nl’espace s’appelait Félix, jusqu’à ce qu’on découvre que c’était, en fait, une\nchatte donc on a changé son nom en Félicette.\n(a)\nWhy is Félicette famous?\n2\n(b)\nWhy was the name changed to Félicette?\n1\n8668310293"
+  },
+  {
+   "id": "fb202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nChers lecteurs,\nÀ Paris, jusqu’à récemment, on pouvait louer des trottinettes électriques\ncomme on pouvait louer des vélos, 24h sur 24 et 7 jours sur 7 en libre-service.\nOn pouvait les louer pour une heure ou pour la journée. C’était très pratique\npour les touristes qui voulaient découvrir Paris sans se fatiguer à marcher ou\npour les Parisiens qui voulaient éviter les transports en commun bondés. Mais\nla Maire de Paris a décidé de les bannir car elles étaient trop dangereuses sur\nles trottoirs. Paris devient la première capitale d’Europe à interdire la location\nde ces trottinettes électriques. Les 15 000 trottinettes qui étaient disponibles\ndans Paris seront envoyées dans d’autres grandes villes d’Europe.\nécrit par Jean-Bernard@fanadeparis.fr\n(a)\nWhat form of transport was available in Paris until recently?\n1\n(b)\nWhat were the main reasons for using this form of transport?\n2\n(c)\nWhat is going to happen to this form of transport?\n2\n5654310295"
+  },
+  {
+   "id": "fb202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nMadeleine\nQue la vie est chère à Paris pour une étudiante !\nJ’ai payé 4 € pour un croissant ! Tu as des\nconseils pour économiser ?\nTu sais qu’il existe une boulangerie révolutionnaire\nprès de chez toi ? Elle ne vend pas son propre pain\nmais le pain qui n’a pas été vendu la veille (et qui\nallait être jeté) dans les autres boulangeries.\nHélène\nMadeleine\nMais comment ça ?\nElle achète tous ces pains et viennoiseries à prix\nréduits juste avant la fermeture et le lendemain,\nelle vend baguettes et croissants de qualité à\n50 centimes.\nHélène\nMadeleine\nC’est génial !\nParfait pour faire des économies !\nHélène\nMadeleine\nÇa marche bien ?\nC’est un véritable succès : elle vend jusqu’à 2 000\npains et viennoiseries par jour !\nHélène\nMadeleine\nTu y vas toi ?\nAbsolument ! J’adore cette boulangerie ! Elle\ndonne ses produits invendus à une société qui les\ntransforme en compost pour les jardins. Elle réduit\nainsi le gaspillage alimentaire. C’est bon pour\nl’environnement.\nHélène\nMadeleine\nSuper ! On y va demain ?\n8839310293\n(a)\nWhat has prompted Madeleine to text Hélène?\n3\n(b)\nExplain how this bakery is revolutionary. Support your answer with reference\nto the text.\n4\n2984310298"
+  },
+  {
+   "id": "fb202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nDéconnectez-vous, vous en avez le droit.\nDans notre univers connecté, les employés consultent ou répondent à leurs\nemails professionnels à toute heure, y compris le dimanche soir. Ils utilisent\nleur smartphone même pendant leurs vacances, pour répondre à une question\nd’un client ou de leur patron. 74 % des cadres français déclarent regarder\nleurs emails professionnels en dehors des heures de travail.\nOr, selon les psychiatres, les nouvelles technologies sont source d’un nouveau\nstress néfaste qui peut amener à la dépression. Le burnout (épuisement\nprofessionnel) touche plus de 12 % de la population. Pour résoudre ce\nproblème, la France a créé une nouvelle loi : « le droit à la déconnexion ».\nAfin de respecter l’équilibre entre vie professionnelle et vie privée, les\nemployés ont maintenant le droit de se déconnecter le soir après 18h et tous\nles week-ends. Plus besoin de répondre à ses emails professionnels pendant\nce temps réservé au repos, aux loisirs ou à la famille car la qualité de la vie\npasse avant tout !\n(a)\nAccording to the text, what is the problem with new technologies?\n3\n1918310294\n(b)\nAccording to the text, how will the new law fix the problem?\n4\n7407310293"
+  },
+  {
+   "id": "fb202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the questions that follow.\nLe nouveau fléau en France !\n« Moi, je ne m’assois plus dans le bus ni dans le métro, je reste debout,\nEtienne\nc’est plus sûr. Je ne vais plus au cinéma non plus. J’ai trop peur de\nramener des punaises chez moi ! » C’est une vraie épidémie en France\nen ce moment ! Les punaises de lit sont partout et personne n’est à\nl’abri de ces petits insectes : maison, école, transports et même dans\nles cinémas. On peut tous en être victimes ! Elles gâchent la vie de\nbeaucoup de Français en ce moment.\nAlors qu’est-ce que je peux faire pour me débarrasser de ces punaises\nsi j’en ai chez moi ? Vous avez des idées ?\nTu peux gérer tout seul le problème : inspecte ton lit – matelas, draps,\nBruno\noreillers, couvertures et lave tout à chaud. C’est économique mais cela\nn’est pas très bon pour la planète car consomme beaucoup d’eau.\nTu peux faire venir un chien renifleur de punaises de lit qui pourra\nFiona\nt’aider à détecter les nids dans ta maison. C’est assez cher entre 200 et\n300 euros mais c’est la solution la plus respectueuse de l’environnement.\nPar contre, ensuite il faudra louer une machine à vapeur pour les tuer.\nTu peux appeler un professionnel : Les produits chimiques éradiqueront\nAdeline\nces petites bêtes à 99 %. Mais attention : ce service est celui qui a le\nplus d’impact sur l’environnement et il n’est pas recommandé pour les\npersonnes qui souffrent d’allergies.\n4957310290\n(a)\nWhat is the purpose of Etienne’s post?\n2\n(b)\nCompare the advantages and disadvantages of the three pieces of advice given.\n6\n4792310297\n5461310291\n9410310299\n2024 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2262\n5499310056\nFrench Beginners\nSection III — Writing in French\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Write an invitation to a friend to your themed birthday party. Write approximately 50 words\nin FRENCH.\n15670"
+  },
+  {
+   "id": "fb202416",
+   "year": 2024,
+   "number": "16",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Your family has recently adopted a new pet. Write an email to your best friend about the\nchanges it has brought to your family life. Write approximately 75 words in FRENCH.\n8287310054\nPart B – 10 marks\nAttempt either Question 17 or Question 18\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in FRENCH.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202417",
+   "year": 2024,
+   "number": "17",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "On t’a demandé de faire un discours devant l’assemblée du lycée à propos de ton meilleur\nsouvenir de ta scolarité. Écris le texte de ton discours.\nYou have been asked to present a speech at your high school assembly about your favourite\nmemory of your time at school. Write the script of your speech.\nOR"
+  },
+  {
+   "id": "fb202418",
+   "year": 2024,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "On t’a demandé de faire un discours à une réunion de famille ou d’amis à propos de ton\nmeilleur souvenir ensemble. Écris le texte de ton discours.\nYou have been asked to present a speech at a gathering of family or friends about your favourite\nmemory together. Write the script of your speech."
+  },
+  {
+   "id": "fb202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What is the purpose of the call?\n2"
+  },
+  {
+   "id": "fb202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Use information from the text to complete the table.\n2\nItems bought\n• Coffee\nCost\neuros cents\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2396310037"
+  },
+  {
+   "id": "fb202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Which picture best fits Paul’s description?\n1\nA.\nB.\nC.\nD.\nPicture A\nPicture B\nPicture C\nPicture D"
+  },
+  {
+   "id": "fb202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What are the directions given?\n3\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n6785310033"
+  },
+  {
+   "id": "fb202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Explain Pierre’s subject choices for next year.\n3"
+  },
+  {
+   "id": "fb202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Describe the ideal candidate for this job.\n4\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2070310036"
+  },
+  {
+   "id": "fb202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How do Sarah’s and Jacques’s personalities differ? Support your\nanswer with reference to the text.\n5"
+  },
+  {
+   "id": "fb202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhat is revealed about Gaston in the text?\n2\n(b)\nSummarise the benefits of Molly’s presence.\n3\nCandidate’s\nNotes\n(These notes\nwill NOT be\nmarked.)\n2491310033"
+  },
+  {
+   "id": "fb202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "How likely is the teacher to accept the suggestion of the travel agent?\nSupport your answer with reference to the text.\n5\n0674310034\n4262310031\n2025 HIGHER SCHOOL CERTIFICATE EXAMINATION\n4393310351\n1261\n15670\nFrench Beginners\nSection II and Section III\nAnswer Booklet\nInstructions\n• Write your Centre Number and Student Number at the top of this\npage\n• Follow the instructions inside this booklet as to where you should\nwrite your answers\n2381310356\nSection II — Reading\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "fb202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Read the text and then answer the questions that follow.\nIl va y avoir un nouveau mode de transport à Paris. Au lieu d’utiliser\nle métro, le bus ou le vélo, on pourra prendre un taxi électrique volant !\nCes taxis électriques ressemblent à de mini-hélicoptères qui décollent\nverticalement. Ils ne font pas de bruits et ne produisent pas d’émission\nde carbone. Levez-les yeux !\n(a)\nWhat is the new form of transport?\n1\n(b)\nWhat are the benefits of the new form of transport?\n2\n1159310358"
+  },
+  {
+   "id": "fb202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the questions that follow.\nJulie\nSalut ! Tu as fait du bénévolat avec le programme\n« Sourires à l’Hôpital » pour les enfants malades ?\nAndré\nOui, c’était génial. J’étais clown. J’ai jonglé et fait\ndes tours de magie. Ils m’ont adoré !\nJulie\nFaire le clown et des tours de magie, c’est pas mon\ntruc, mais je veux être bénévole comme toi.\nAndré\nBen, tu chantes bien et tu peux maquiller les\nenfants. Ils vont adorer !\nJulie\nÇa, c’est une bonne idée ! Mais je n’aime pas\nchanter en public.\nAndré\nD’accord, tu peux aussi jouer et danser avec eux.\nJulie\nGénial ! C’est ce que je vais faire.\n(a)\nWhat is « Sourires à l’Hôpital »?\n3\n(b)\nExplain Julie’s choice of activities.\n3\n4873310354"
+  },
+  {
+   "id": "fb202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nUne belle initiative !\nDepuis quelques semaines, une crèche intergénérationnelle s’est\nouverte dans la maison de retraite Les Trésors d’Hier.\nC’est un espace qui rassemble des enfants de moins de 3 ans et des\npersonnes âgées plusieurs fois par semaine pour faire des activités\nensemble comme le ferait leurs grand-parents. Les activités incluent\nle coloriage, la pâtisserie, et même le jardinage. Les familles sont\nsouvent éloignées, les grands-parents et petits-enfants ne se voient\npas. Donc cette crèche permet aux enfants de côtoyer des personnes\nâgées, de mieux les comprendre et de développer leur empathie\npour les autres.\nLes avantages sont la création de liens, des moments de joie,\nmais surtout l’échange entre générations. D’habitude calme et\nsilencieuse, la maison de retraite est alors remplie de rires et de\nchansons, pour le plus grand bonheur des petits et grands. C’est\nun programme pilote qui a beaucoup de succès. Nous venons\nd’appendre que cette initiative est renouvelée et mise en place dans\nune autre maison de retraite de la région.\n(a)\nTo whom would this article appeal?\n2\n7471310351\n(b)\nAccording to the text, how likely is it that this program will continue in the\nfuture?\n4\n9964310350"
+  },
+  {
+   "id": "fb202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nNos desserts préférés\nSophie\nBonjour tout le monde.\nJ’ai un problème ! Mon dessert préféré c’est la tarte aux fraises. Ma\ngrand-mère la fait pour moi chaque année, mais ce n’est pas possible\ncet hiver ! En France, les fraises et les cerises ne poussent pas en hiver,\net ils ne vont plus en importer. J’ai besoin d’idées pour remplacer ma\ntarte aux fraises adorée. Faites-moi des suggestions, s’il vous plaît !\nQuel est votre dessert préféré en hiver ? J’adore les fruits !\nCharlotte Bonjour Sophie,\nMa pauvre ! Je suis vraiment désolée ! Moi, j’habite en Australie, où\nil fait beau toute l’année, donc, nous avons toujours des fraises. Moi,\nj’adore la pavlova. C’est une meringue avec de la crème fouettée et\nbeaucoup de fruits, comme les framboises, les fruits de la passion et\nles bananes, mais ça marche avec tous les fruits disponibles.\nHans\nSalut Sophie,\nJe viens d’Allemagne et moi, j’adore le lebkuchen. C’est du pain\nd’épice. C’est parfait pour accompagner une boisson chaude quand il\nfait froid en hiver.\nMax\nSalut,\nMoi, je suis français, comme toi, Sophie, et je préfère la bûche de Noël\nclassique au chocolat ! Ma grand-mère la fait pour nous. Mais si tu\nadores les fruits, peut-être que tu préférerais une tarte tatin ? C’est une\ntarte chaude avec des pommes caramélisées. Miam !\n5638310354\n(a)\nWhat prompted Sophie to write her post?\n3\n(b)\nWhose suggestion is Sophie most likely to accept? Support your answer with\nreference to the text.\n4\n9657310359"
+  },
+  {
+   "id": "fb202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and then answer the questions that follow.\nÉchange de maisons\nCette semaine, nous allons vous parler d’échange de maisons. Chloé, originaire\nde Paris, nous raconte…\nJOURNALISTE: Depuis quand faites-vous des échanges de maisons ?\nCHLOÉ:\nDepuis 2019, nous faisons de longs échanges de maison pendant\nl’été car toute la famille est en vacances. Nous avons voyagé en\nAustralie et Nouvelle-Zélande. Cela nous a permis d’améliorer\nnotre anglais.\nJOURNALISTE: Vous faites souvent des échanges ?\nCHLOÉ:\n2 à 3 par an pendant les vacances scolaires, mais nous n’allons\npas toujours aussi loin. Pendant les vacances de Pâques ou de la\nToussaint, nous voyageons en Europe. Un échange de maisons\npermet de voyager plus souvent et plus longtemps à prix réduit.\nJOURNALISTE: Avez-vous peur de laisser votre maison à des inconnus ?\nCHLOÉ:\nParfois, mais j’essaie de choisir une famille similaire à la\nmienne : avec des enfants et des animaux. Comme ça, je n’ai\nplus besoin d’emmener des jouets, de faire garder mon chat ou\nd’arroser les plantes. Et, on se fait de nouveaux amis. Mais j’ai\naussi eu une mauvaise expérience. Je suis tombée sur une famille\nqui n’a pas fait le ménage pendant un mois. J’ai passé 3 jours\nà nettoyer à mon retour et mes plantes sont mortes. Et puis j’ai\ntrouvé des punaises de lit ! C’était horrible, mais c’est rare ! Je\nconseille à toute personne qui pense à ce genre d’échange de bien\ncommuniquer avec la famille qu’ils accueilleront.\nJOURNALISTE: Merci beaucoup pour votre partage d’expérience.\n6157310351\n(a)\nWho is the target audience of the interview?\n1\n(b)\nDescribe Chloé’s holiday habit.\n2\n(c)\nTo what extent has Chloé enjoyed similar previous experiences? Support your\nanswer with reference to the text.\n5\n1086310357\nSection III — Writing in French\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Your cousin has recently moved back to Australia. Write a message to your cousin outlining\nthe plan for both of you this evening. Write approximately 50 words in FRENCH.\n6784310357"
+  },
+  {
+   "id": "fb202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "You have found this old drawing of you and a friend. Write an email to this friend reflecting\non that day. Write approximately 75 words in FRENCH.\n7927310357\nPart B – 10 marks\nAttempt either Question 17 or Question 18\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in FRENCH.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in French"
+  },
+  {
+   "id": "fb202517",
+   "year": 2025,
+   "number": "17",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Vous prévoyez d’aller à l’université l’année prochaine. Ecrivez un email à votre ami(e) pour\nlui parler de vos intentions.\nYou are planning to go to university next year. Write an email to a friend telling them about\nyour plans.\nOR"
+  },
+  {
+   "id": "fb202518",
+   "year": 2025,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Vous faites partie d’un comité qui organise une journée multiculturelle dans votre école.\nEcrivez un email à votre ami(e) pour lui parler de vos intentions.\nYou are part of a committee planning a multicultural day at your school. Write an email to a\nfriend telling them about the plans.\n9403310358\n8246310352\n9248310355\n8455310354"
+  }
+ ]
+}

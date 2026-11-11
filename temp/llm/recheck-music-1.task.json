@@ -1,0 +1,813 @@
+{
+ "course_id": "music-1",
+ "course_name": "Music 1",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is the current label and is known to be unreliable. Use null if the text is missing, placeholder, or no dot covers the core concept. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Music context and Music language / Music context / Style, including the characteristic manner in which music is composed, performed or understood"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Music context and Music language / Music context / Genre, including categorisations of music based on formal and cultural criteria"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Music context and Music language / Music context / Musical conventions, including established practices, norms and rules that govern the composition, performance and interpretation of music within specific genres, cultures or historical periods"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Metre, including simple and compound"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Note values and rhythmic patterns, including"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Scales and modes, including diatonic major and minor, pentatonic, Aeolian, Lydian, Mixolydian and Dorian"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Chords, including I/i (tonic), ii/ii° (supertonic), IV/iv (subdominant), V (dominant), vi/VI (submediant) and V7 (dominant seventh)"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Chord qualities, including major (M), minor (m), diminished (), augmented () and dominant seventh (V7)"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Chord progressions and cadences"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Music context and Music language / Compositional language / Rhythmic devices, including syncopation, polyrhythm, ostinato, triplets, hemiola, backbeat, swing and groove"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Music context and Music language / Compositional language / Melodic devices, including sequence, imitation, inversion, hook, riff and melisma"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Music context and Music language / Compositional language / Harmonic devices, including modulation, dissonance, resolution, drone, pedal point and circle of fifths"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Music context and Music language / Compositional language / Textural devices, including canon, doubling, layering, countermelody, unison, parallel and looping"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Music context and Music language / Compositional language / Structural devices, including verse–chorus, motifs, theme, call and response, binary and ternary"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Music context and Music language / Compositional language / Expressive devices, including dynamics, articulation, vibrato, mute, accent and phrasing"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Music context and Music language / Compositional language / Digital techniques, including looping, sampling, delay, echo, pitch shifting and digital reverb, electroacoustic"
+  },
+  {
+   "code": "PRE-M1-T3-D8",
+   "path": "Year 11 / Music context and Music language / Compositional language / Performing media, including choices of instrumental, vocal, analogue and digital sounds and manipulation of timbres"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Music context and Music language / Notational language / Lead sheets"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Music context and Music language / Notational language / Guitar tablature"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Music context and Music language / Notational language / Five-line staff notation"
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Music context and Music language / Notational language / Note and rest notation, including"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Music context and Music language / Notational language / Drum notation"
+  },
+  {
+   "code": "PRE-M1-T4-D6",
+   "path": "Year 11 / Music context and Music language / Notational language / Graphic notation"
+  },
+  {
+   "code": "PRE-M1-T4-D7",
+   "path": "Year 11 / Music context and Music language / Notational language / Digital audio workstation (DAW) representations, including waveform, piano roll, beat grid and spectral visualisations"
+  },
+  {
+   "code": "PRE-M1-T4-D8",
+   "path": "Year 11 / Music context and Music language / Notational language / Systems associated with music from specific cultural or performance traditions which may include oral, kinaesthetic gesture-based systems"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Contexts of music / Performing / Perform using techniques appropriate to the style and genre"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Contexts of music / Performing / Improvise with pitch sets and rhythmic patterns from a range of traditions"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Contexts of music / Performing / Adjust performance approaches in response to feedback"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Investigate the use of Music language in repertoire from diverse traditions"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Identify rhythmic, melodic, structural, textural and expressive compositional devices"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Explore how performance conventions reflect distinctive contexts"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Analyse how Music context influences interpretation"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Evaluate the role of technologies in the development of musical styles"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Explore lead sheets, tablature, drum notation and staff notation"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Use aural skills to recognise metre, tempo and rhythmic patterns"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Contexts of music / Listening, analysing and responding / Use aural skills to recognise pentatonic, major, minor, Aeolian mode tonality, and harmonic progressions including chords I/i (tonic), IV/iv (subdominant), V (dominant) and vi/VI (submediant)"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Contexts of music / Creating and composing / Use Compositional language to develop existing musical motifs and themes"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Contexts of music / Creating and composing / Explore rhythmic, melodic and harmonic Compositional language to create new musical ideas"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Contexts of music / Creating and composing / Document musical ideas as part of the creative process"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Creative practice / Performing / Apply knowledge of musical style, genre and conventions"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Creative practice / Performing / Realise expression through articulation, dynamics and phrasing"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Creative practice / Performing / Adjust expressive approaches to different repertoire and performance contexts"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / Examine applications of Music language to develop, shape and extend musical ideas across a range of repertoire"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / Explain how stylistic conventions inform the presentation, development and variation of musical ideas"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / Investigate how instrument-specific techniques and digital processes affect timbre"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / Analyse the use of harmonic and textural devices to create expressive depth"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / Explore graphic scores and digital audio workstation (DAW) visualisations"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / Use aural skills to recognise melodic patterns, cadences, Dorian, Lydian and Mixolydian mode tonality, and harmonic progressions including chords ii/ii° (supertonic) and V7 (dominant seventh)"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Creative practice / Creating and composing / Create musical ideas that reflect the stylistic and expressive characteristics of selected genres and traditions"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Creative practice / Creating and composing / Generate and develop musical material using improvisation, songwriting and compositional processes"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Creative practice / Creating and composing / Explore acoustic and digital sound sources, including DAWs, virtual instruments and effects, to create distinctive timbres and textures"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Creative practice / Creating and composing / Evaluate to refine structure, expression and stylistic impact"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Creative practice / Creating and composing / Document ideas and influences as part of the creative process"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Music in focus / Performing / Use vocal or instrumental techniques that reflect the stylistic and expressive features of the selected musical style, tradition or practice"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Music in focus / Performing / Explore and expand on musical material relevant to the selected repertoire"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Music in focus / Performing / Make interpretative decisions informed by stylistic analysis, performance directions and contextual understanding"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Music in focus / Performing / Adjust performance approaches through analysis of recordings, reflection and feedback"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Music in focus / Listening, analysing and responding / Analyse musical features and stylistic conventions in selected repertoire"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Music in focus / Listening, analysing and responding / Use aural skills to identify melodic, harmonic, tonal, metric and rhythmic features"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Music in focus / Listening, analysing and responding / Interpret Notational language relevant to the selected repertoire"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Music in focus / Listening, analysing and responding / Examine how technologies, context and performance media influence stylistic development and musical meaning"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Music in focus / Listening, analysing and responding / Evaluate treatments of musical material including the ways expressive devices and interpretative practices shape, characterise and inform meaning"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / Music in focus / Listening, analysing and responding / Justify observations and interpretative insights"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Music in focus / Creating and composing / Create original material or arrange existing repertoire"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Music in focus / Creating and composing / Generate and refine musical ideas using improvisation and experimentation"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Music in focus / Creating and composing / Document ideas as part of the compositional process"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Music context and Music language / Music context / Style, including the characteristic manner in which music is composed, performed or understood"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Music context and Music language / Music context / Genre, including categorisations of music based on formal and cultural criteria"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Music context and Music language / Music context / Musical conventions, including established practices, norms and rules that govern the composition, performance and interpretation of music within specific genres, cultures or historical periods"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Metre, including simple and compound"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Note values and rhythmic patterns, including"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Scales and modes, including diatonic major and minor, pentatonic, Aeolian, Lydian, Mixolydian and Dorian"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Chords, including I/i (tonic), ii/ii° (supertonic), IV/iv (subdominant), V (dominant), vi/VI (submediant) and V7 (dominant seventh)"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Chord qualities, including major (M), minor (m), diminished (), augmented () and dominant seventh (V7)"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Chord progressions and cadences"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Music context and Music language / Compositional language / Rhythmic devices, including syncopation, polyrhythm, ostinato, triplets, hemiola, backbeat, swing and groove"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Music context and Music language / Compositional language / Melodic devices, including sequence, imitation, inversion, hook, riff and melisma"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Music context and Music language / Compositional language / Harmonic devices, including modulation, dissonance, resolution, drone, pedal point and circle of fifths"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Music context and Music language / Compositional language / Textural devices, including canon, doubling, layering, countermelody, unison, parallel and looping"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Music context and Music language / Compositional language / Structural devices, including verse–chorus, motifs, theme, call and response, binary and ternary"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Music context and Music language / Compositional language / Expressive devices, including dynamics, articulation, vibrato, mute, accent and phrasing"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Music context and Music language / Compositional language / Digital techniques, including looping, sampling, delay, echo, pitch shifting and digital reverb, electroacoustic"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Music context and Music language / Compositional language / Performing media, including choices of instrumental, vocal, analogue and digital sounds and manipulation of timbres"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Music context and Music language / Notational language / Lead sheets"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Music context and Music language / Notational language / Guitar tablature"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Music context and Music language / Notational language / Five-line staff notation"
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / Music context and Music language / Notational language / Note and rest notation, including"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / Music context and Music language / Notational language / Drum notation"
+  },
+  {
+   "code": "HSC-M1-T4-D6",
+   "path": "Year 12 / Music context and Music language / Notational language / Graphic notation"
+  },
+  {
+   "code": "HSC-M1-T4-D7",
+   "path": "Year 12 / Music context and Music language / Notational language / Digital audio workstation (DAW) representations, including waveform, piano roll, beat grid and spectral visualisations"
+  },
+  {
+   "code": "HSC-M1-T4-D8",
+   "path": "Year 12 / Music context and Music language / Notational language / Systems associated with music from specific cultural or performance traditions which may include oral, kinaesthetic gesture-based systems"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Use vocal and/or instrumental techniques that demonstrate the stylistic and expressive features of selected repertoire"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Experiment with contemporary performance techniques"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Evaluate interpretation through analysis of recordings, reflection and feedback"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Analyse and describe the use of Compositional language and stylistic influences in a range of repertoire from the last 25 years"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Analyse electronic and digital techniques for sound manipulation"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Interpret Notational language relevant to the repertoire to support analysis"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Explain ways contemporary composers, arrangers, performers and producers challenge, extend, reimagine and hybridise conventional musical styles and structures"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Evaluate the influence of digital technologies and media on musical creation, distribution and audience reception"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Plan thematic and structural directions to shape a musical journey"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Experiment with planning approaches, including narrative storyboarding, stylistic modelling or structural mapping to ensure structural coherence and creative interest"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Select performing media and technologies that support compositional intent"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Experiment with a range of approaches to create new musical ideas, including improvisation, fusion of material or generative methods"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Explain creative intent, stylistic influences, and expressive choices"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Document ideas, reflections and refinements as part of the compositional process"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / Refine technical control to perform with fluency"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / Improvise using motifs, rhythmic patterns and harmonic ideas drawn from the selected cultural or historical context"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / Shape a stylistic and personal interpretation using performance techniques, phrasing, articulation and expressive elements"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / Apply composer, performer and audience perspectives to make performance choices that enhance communication, including staging and ensemble configurations"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Music of a style"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Music of a region"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Music of a culture"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Music of a tradition"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Music of a religion"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Music of a historical period."
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Analyse musical features that characterise stylistic, cultural or historical traditions"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Use aural skills to identify and describe tonal centres, harmonic progressions, rhythmic groupings and phrasing"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Analyse how instrumentation and timbral qualities reflect regional, cultural or historical identities"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Interpret and analyse Notational language relevant to the selected repertoire"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Explain the role of Compositional language in maintaining, transforming and reinterpreting musical traditions using appropriate music terminology"
+  },
+  {
+   "code": "HSC-M3-T2-D12",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Explain the role of improvisation in shaping form and expression"
+  },
+  {
+   "code": "HSC-M3-T2-D13",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Compare interpretations of repertoire to evaluate how stylistic and expressive features are shaped by performance choices"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Music across cultures, traditions and time / Creating and composing / Experiment with a range of approaches to shaping musical ideas and expression, including transformation, technological manipulation and collaborative processes"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Music across cultures, traditions and time / Creating and composing / Develop and extend musical ideas using Compositional language, structures and materials appropriate to the selected context"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Music across cultures, traditions and time / Creating and composing / Evaluate and refine musical ideas to shape stylistic identity, structural coherence and expressive outcomes"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Music across cultures, traditions and time / Creating and composing / Document ideas, reflections and refinements as part of the compositional process"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Music for screen, stage and story / Performing / Consolidate technical control to perform with fluency and stylistic awareness"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Music for screen, stage and story / Performing / Use performance techniques, phrasing, articulation and expressive elements to shape personal interpretation"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Music for screen, stage and story / Performing / Adjust performance in response to phrasing, balance and tempo in solo or ensemble settings"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Music for screen, stage and story / Performing / Evaluate and refine performance through analysis of recordings, reflection and feedback"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Music for screen, stage and story / Listening, analysing and responding / Identify the use of Compositional language and stylistic influences in selected repertoire"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Music for screen, stage and story / Listening, analysing and responding / Use aural skills to identify and describe tonal centres, harmonic progressions, rhythmic groupings and phrasing"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Music for screen, stage and story / Listening, analysing and responding / Interpret and analyse Notational language appropriate to the selected repertoire"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Music for screen, stage and story / Listening, analysing and responding / Analyse how musical features contribute to dramatic purpose, narrative and emotional impact"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Music for screen, stage and story / Listening, analysing and responding / Evaluate the use of Compositional language to enhance musical intent, dramatic effect and emotional impact using appropriate music terminology"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Music for screen, stage and story / Listening, analysing and responding / Compare different interpretations of repertoire to examine how performance choices and contexts shape meaning"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Music for visual media"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Music for theatre"
+  },
+  {
+   "code": "HSC-M4-T3-D3",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Music for dance"
+  },
+  {
+   "code": "HSC-M4-T3-D4",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Music for entertainment"
+  },
+  {
+   "code": "HSC-M4-T3-D5",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Music for ritual and ceremony"
+  },
+  {
+   "code": "HSC-M4-T3-D6",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Music for communication and storytelling."
+  },
+  {
+   "code": "HSC-M4-T3-D7",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Evaluate composition through reflection and feedback"
+  },
+  {
+   "code": "HSC-M4-T3-D8",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Refine musical ideas to strengthen stylistic coherence and expressive clarity"
+  },
+  {
+   "code": "HSC-M4-T3-D9",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Explain how expressive aims are realised through the structure"
+  },
+  {
+   "code": "HSC-M4-T3-D10",
+   "path": "Year 12 / Music for screen, stage and story / Creating and composing / Document ideas, reflections and refinements as part of the compositional process"
+  }
+ ],
+ "questions": [
+  {
+   "id": "m1202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 46 seconds) from Gibraltar by Beirut will be played FIVE times for you\nto answer Question 1.\nThis excerpt is from 0:00–1:46 of Gibraltar by Beirut on the ‘No No No’ album (2015).\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nDescribe the structure of this excerpt, with reference to its performing media.\n8668310293"
+  },
+  {
+   "id": "m1202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 45 seconds) from ‘Overture’ from Colas Breugnon, Op. 24 by Dmitri\nKabalevsky will be played SIX times for you to answer Question 2.\nThis excerpt is from 1:14–2:00 of the BBC Philharmonic recording conducted by\nVassily Sinaisky (2003, Chandos recordings).\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nExplore the use of dynamics and expressive techniques, and tone colour in this excerpt.\n8839310293"
+  },
+  {
+   "id": "m1202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 13 seconds) from Didge Fusion by William Barton will be played\nSIX times for you to answer Question 3.\nThis excerpt is from 4:00–5:13 of Didge Fusion by William Barton which appears on the\n‘Birdsong at Dusk’ album (2014 ABC Classic).\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nExplain how tension is created in this excerpt.\n1918310294"
+  },
+  {
+   "id": "m1202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 30 seconds) from Everlasting Motion (feat. Hamid El Kasri) by Jacob\nCollier will be played SIX times for you to answer Question 4.\nThis excerpt is from 5:05–6:34 of Everlasting Motion (feat. Hamid El Kasri) by Jacob\nCollier which appears on the ‘Djesse Volume 1’ album (2018).\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nAnalyse how musical interest is achieved in this excerpt. In your answer, make reference to\nduration and ONE other concept of music.\n4957310290"
+  },
+  {
+   "id": "m1202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 5 seconds) from ‘Stay Alive’ from Hamilton by Lin-Manuel Miranda\nwill be played FIVE times for you to answer Question 1.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nHow are duration and pitch used in this excerpt?\nThis excerpt is from 0:00–1:05 of Stay Alive by Lin-Manuel Miranda on the Hamilton\n(Original Broadway Cast Recording) album (2015 Atlantic Records).\nCopyright Lin-Manuel Miranda,\nUsed by permission of Warner-Chappelle Music\n8668310293"
+  },
+  {
+   "id": "m1202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 13 seconds) from Rock You by Dirty Loops will be played SIX times for\nyou to answer Question 2.\nThis excerpt is from 0:00–1:13 of Rock You by Dirty Loops which appears on the Phoenix\nalbum (2020).\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nDescribe the roles of each layer of sound in this excerpt, with specific reference to performing\nmedia.\n8839310293"
+  },
+  {
+   "id": "m1202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "is based on excerpts from two versions of Passepied by Claude Debussy.\nVersion 1 (1 minute) is performed by The Punch Brothers.\nVersion 2 (1 minute 27 seconds) is performed by Super Swing Machine.\nEach version will be played FOUR times for you to answer Question 3.\nVersion 1 is from 0:00–1:00 of Passepied (Debussy) by Punch Brothers on The\nPhosphorescent Blues album (2015 Nonesuch Records).\nVersion 2 is from 0:00–1:27 of Passepied by Gerard Badini on the Mister Swing Meets\nClaude Debussy album (1991 Mantra Records).\nTimes:\nVersion 1 first playing\n— 5 second pause\nVersion 2 first playing\n— 30 second pause\nVersion 1 second playing — 5 second pause\nVersion 2 second playing — 30 second pause\nVersion 1 third playing\n— 5 second pause\nVersion 2 third playing\n— 1 minute pause\nVersion 1 fourth playing\n— 5 second pause\nVersion 2 fourth playing\n— 2 minute pause\nCompare how tone colour is explored in the two versions of Passepied.\n1918310294"
+  },
+  {
+   "id": "m1202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 48 seconds) from ‘Gloria Tibi’ from Mass by Leonard Bernstein will be\nplayed SIX times for you to answer Question 4.\nThis is from Gloria Tibi by Leonard Bernstein on the Bernstein: Mass - A Theatre Piece for\nSingers, Players and Dancers I album (1971 Sony Classical).\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nHow are unity and contrast achieved in this excerpt?\n4957310290"
+  },
+  {
+   "id": "m1202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 39 seconds) from Next To Me by RÜFÜS DU SOL will be played\nFIVE times for you to answer Question 1.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nDescribe how pitch is used in this excerpt.\nThis excerpt is from 0:00–1:39 of Next To Me by Rüfüs Du Sol from the single ‘Next To\nMe ’ (2021).\n8668310293"
+  },
+  {
+   "id": "m1202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 47 seconds) from From Uluru by Peter Sculthorpe will be played\nSIX times for you to answer Question 2.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nExplain how repetition is used in this excerpt.\nThis excerpt is from 0:00–1:47 of From Uluru by Peter Sculthorpe on the ‘Peter Sculthorpe\nSun Music’ album (2021).\n8839310293"
+  },
+  {
+   "id": "m1202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 38 seconds) from MYWD by Baker Boy will be played SIX times for you\nto answer Question 3.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nDescribe how texture and structure are used in this excerpt.\nThis excerpt is from 0:00–1:38 of MYWD by Baker Boy on the ‘Gela’ album (2021).\n1918310294"
+  },
+  {
+   "id": "m1202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 29 seconds) from I Will Survive + Maroon 5 Mashup by Pomplamoose\nft. Andie Case will be played SIX times for you to answer Question 4.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 1 minute pause\nSixth playing\n— 2 minute pause\nExplain how contrast has been achieved in this excerpt through the use of tone colour.\nThis excerpt is from 0:00–1:29 of I Will Survive + Maroon 5 Mashup by Pomplamoose ft.\nAndie Case.\n4957310290"
+  },
+  {
+   "id": "m1202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 49 seconds) from 15 Step by The Swingles will be played FIVE times\nfor you to answer Question 1.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nOutline the use of duration in this excerpt.\nThis excerpt is from 0:00–1:49 of 15 Step by The Swingles from the on the ‘Snapshots,\nVol. II’ album (2021).\n8668310293"
+  },
+  {
+   "id": "m1202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 40 seconds) from 1979 by The Smashing Pumpkins will be played\nFIVE times for you to answer Question 2.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nExplain how interest is maintained in this excerpt. Refer to TWO concepts in your answer.\nThis excerpt is from 0:00–1:39 of 1979 by The Smashing Pumpkins on the ‘Mellon Collie\nand the Infinite Sadness (Deluxe Edition)’ album (1995).\n8839310293"
+  },
+  {
+   "id": "m1202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 30 seconds) from The Beautiful Steppe by Batzorig Vaanchig will be\nplayed FIVE times for you to answer Question 3.\nTimes:\nFirst playing\n— 5 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nDescribe the use of texture in this excerpt.\nThis excerpt is from 0:00–1:30 of The Beautiful Steppe by Batzorig Vaanchig on the\n‘Marco Polo (Music from the Netflix Original Series)’ album (2015).\n1918310294"
+  },
+  {
+   "id": "m1202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 41 seconds) from Come Along by Cosmo Sheldrake will be played\nSIX times for you to answer Question 4.\nThis excerpt is from 2:36–4:19 (end) of Come Along by Cosmo Sheldrake on the ‘The\nMuch Much How How and I’ album (2019).\n4957310290"
+  },
+  {
+   "id": "m1202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 22 seconds) from Heal by Mitch Tambo will be played FIVE times for\nyou to answer Question 1.\nThis excerpt is from 0:00–1:22 of Heal by Mitch Tambo from the single ‘Heal’ (Sony Music\nEntertainment, 2021).\nTimes:\nFirst playing\n— 10 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nOutline the use of structure in this excerpt.\n8668310293"
+  },
+  {
+   "id": "m1202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 49 seconds) from Call Me Joker by Hildur Guðnadóttir will be played\nFIVE times for you to answer Question 2.\nThis excerpt is from 0:00–1:49 of Call Me Joker by Hildur Guðnadóttir on the ‘Joker\n(Original Motion Picture Soundtrack)’ album (2019).\nTimes:\nFirst playing\n— 10 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nExplain how the use of pitch and duration has created tension in this excerpt.\n8839310293"
+  },
+  {
+   "id": "m1202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 43 seconds) from Gloria Patri by John Rutter will be played FIVE times\nfor you to answer Question 3.\nThis excerpt is from 0:00–1:43 of Gloria Patri by John Rutter on the ‘Magnificat’ album\n(Collegium, 1991).\nTimes:\nFirst playing\n— 10 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nExplain how the composer uses dynamics and expressive techniques to create variety in this\nexcerpt.\n1918310294"
+  },
+  {
+   "id": "m1202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 40 seconds) from Edge of Midnight (Midnight Sky Remix) by Miley\nCyrus ft. Stevie Nicks will be played SIX times for you to answer Question 4.\nThis excerpt is from 0:00–1:40 of Edge of Midnight (Midnight Sky Remix) by Miley Cyrus\nft. Stevie Nicks on the ‘Plastic Hearts’ album (2020).\nTimes:\nFirst playing\n— 10 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nSixth playing\n— 2 minute pause\nAnalyse the use of texture and tone colour in this excerpt.\n4957310290"
+  },
+  {
+   "id": "m1202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 17 seconds) from Steer by Missy Higgins will be played FIVE times for\nyou to answer Question 1.\nThis excerpt is from 0:00–1:15 of Steer by Missy Higgins from the album ‘On A Clear\nNight (Eleven: A Music Company, 2007).\nTimes:\nFirst playing\n— 10 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nDescribe how variety is achieved in this excerpt."
+  },
+  {
+   "id": "m1202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "is based on excerpts from the original of Youngblood by 5 Seconds of Summer and\na version by 3%.\nThe original (56 seconds) is performed by 5 Seconds of Summer.\nThis excerpt is from 0:00–0:55 of Youngblood by 5 Seconds of Summer from the single/\nalbum ‘Youngblood’ (One Mode Productions Limited, 2018).\nThe version (1 minute 19 seconds) is performed by 3%.\nThis excerpt is from 0:00–1:18 of Youngblood by 3% from the single ‘Youngblood (triple j\nLike A Version)’ (Australian Broadcasting Corporation, 2024).\nEach excerpt will be played FIVE times for you to answer Question 2.\nTimes:\nOriginal first playing\n— 5 second pause\nVersion first playing\n— 30 second pause\nOriginal second playing\n— 5 second pause\nVersion second playing\n— 30 second pause\nOriginal third playing\n— 5 second pause\nVersion third playing\n— 30 second pause\nOriginal fourth playing\n— 5 second pause\nVersion fourth playing\n— 1 minute pause\nOriginal fifth playing\n— 5 second pause\nVersion fifth playing\n— 2 minute pause\nCompare the 5 Seconds of Summer original and the 3% version of Youngblood."
+  },
+  {
+   "id": "m1202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 33 seconds) from Thick of It performed by Rahilu will be played\nSIX times for you to answer Question 3.\nThis excerpt is from 0:19–1:51 of Thick of It by Rahilu from the single ‘Thick of It (Jazz\nVersion)’ (RAHILU, under exclusive licence to TMG, 2025).\nTimes:\nFirst playing\n— 10 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nSixth playing\n— 2 minute pause\nExplain how style is used in this excerpt. In your answer, refer to at least TWO concepts of\nmusic."
+  },
+  {
+   "id": "m1202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Use aural skills to identify and describe melodic, harmonic, rhythmic, textural and expressive features",
+   "text": "An excerpt (1 minute 27 seconds) from the third movement of Symphony No. 1 in E Minor,\n‘Juba Dance’ by Florence Price will be played SIX times for you to answer Question 4.\nThis excerpt is from 0:00–1:27 of Symphony No.1 in E minor: III Juba Dance Allegro\nby Florence Price from the album ‘Florence Price: Symphonies Nos. 1 & 3 (Deutsche\nGrammophon, 2021).\nTimes:\nFirst playing\n— 10 second pause\nSecond playing\n— 30 second pause\nThird playing\n— 1 minute pause\nFourth playing\n— 1 minute pause\nFifth playing\n— 2 minute pause\nSixth playing\n— 2 minute pause\nDescribe the roles of performing media in relation to the structure of this excerpt."
+  }
+ ]
+}

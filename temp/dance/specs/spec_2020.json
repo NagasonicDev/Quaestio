@@ -1,0 +1,281 @@
+{
+  "course_id": "course_dance",
+  "course_name": "Dance",
+  "id_prefix": "dance_2020",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 1 (10 marks)\nExplain how Pina Bausch has developed dance as an artform.\nIn your response, provide specific examples from her works.\nOR\nExplain how Ohad Naharin has developed dance as an artform.\nIn your response, provide specific examples from his works."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Pina Bausch: Bausch sensed that the world had irretrievably changed and was determined to reinvent the language of dance to release it from traditional confines.",
+              "The two main focuses that shaped her productions were choreographer Kurt Jooss and Rudolph von Laban (German Expressionist Movement).",
+              "She brought dance, theatre and German expressionism together; a blend of raw emotionalism, stark movement, earthy pathos and humour.",
+              "Used improvisation and collaboration with dancers, establishing mutual trust by encouraging them to bring their own individual lives to the work.",
+              "Bausch was more concerned with what moved the dancers rather than the way they moved.",
+              "Transformed dance from the balletic world to the raw contemporary world.",
+              "She changed dance by removing the stereotypical ballerina, replacing this with a fusion of radical interactive theatre, surreal imagery and 'danced body language'.",
+              "Reworked old dances and made them more theatrical eg Le Sacre du Printemps / Rite of Spring (1975).",
+              "Blurred lines between dance and theatre (Tanztheater) eg Macbeth, stage design to make her point visually.",
+              "Other choreographers take inspiration from her works; theatrical dance and Broadway musicals continue her ideas.",
+              "Ohad Naharin: developed a new movement vocabulary relying on concepts and abstract interpretation to make movement.",
+              "Gaga Language emphasised the exploration of sensation and availability for movement; sensed where the body is in space without mirrors.",
+              "Provided a framework for discovering and strengthening the body.",
+              "Increased use of technology eg computer coding, the internet, globalisation; collaborated with contemporary musicians and other artists.",
+              "Choreographed with access for all to dance eg disabled; developed new ideas challenging previous practice, breaking away from ballet technique to more authentic and free movement.",
+              "Explored ideas about multiculturalism, human relationships; emphasised creativity and uniqueness of dancers; connected with universal audiences."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how the artist has developed dance as an artform; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how the artist has developed dance as an artform; uses appropriate examples and language to support the response with inconsistencies; presents a logical response.",
+              "5-6 marks: Provides a general explanation of how the artist has developed dance as an artform; uses adequate AND/OR general examples and language with inconsistencies; attempts to present a structured response.",
+              "3-4 marks: Provides limited knowledge AND/OR understanding of the artist AND/OR developments in dance as an artform; uses basic examples and language; presents a limited response.",
+              "1-2 marks: Provides information about aspects of the artist AND/OR their work; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2020 HSC Dance",
+        "year": 2020,
+        "original_question_no": "1",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T1-D8",
+        "HSC-M3-T1-D6",
+        "HSC-M3-T2-D10"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Prescribed dance works / Twyla Tharp",
+        "Year 12 / Appreciation / Prescribed dance works / Akram Khan",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 2 (10 marks)\nExplain the relationship between Twyla Tharp's work and the major social, cultural, political and/or historical events of the 1960s-1980s.\nIn your response, provide specific examples from her works.\nOR\nExplain the relationship between Akram Khan's work and the major social, cultural, political and/or historical events of the 1990s-present.\nIn your response, provide specific examples from his works."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Twyla Tharp: major events of the 1960s-1980s eg JFK assassination, civil rights movements, racial discrimination, Vietnam War, women's rights, protest movements, Apollo 11, the Cold War, post-war affluence.",
+              "Changing nature of music eg protest music, Beatles, Woodstock; technological development/revolution; pop art and popular culture.",
+              "Postmodernists challenged the boundaries of the modern era - time of experimental dance with no rules or boundaries; emergence of the Broadway musical as an artform.",
+              "Eclectic dance style drawing on a broad variety of styles in ballet, jazz, pedestrian, postmodern and break dance (In The Upper Room 1986, The Catherine Wheel 1981).",
+              "Dance as art shared by a wider audience; pedestrian style connected with ballet, dance and film (Hair 1979, Ragtime 1981).",
+              "Choreographed for dance on television (Sue's Leg 1976, Making Television Dance 1977); worked on Broadway (When We Were Very Young 1980, The Catherine Wheel 1981).",
+              "Created public credibility for use of popular music (Deuce Coupe 1973); collaboration with important ballet dancers eg Baryshnikov.",
+              "Akram Khan: emergence of issues surrounding race, multiculturalism, sexuality and economics; technology and the internet - globalisation; aftermath of the Cold War.",
+              "Conflict in the Middle East, emergence of terrorism; development of contemporary dance companies merging ballet, cultural and modern contemporary influences.",
+              "Dance becoming minimalistic and pedestrian - incorporating text, speech and gesture; emotional effects of migration; connections to his culture and non-western cultures.",
+              "Created a diverse movement vocabulary fusing Indian Kathak and contemporary; collaboration with other artists eg Anthony Gormley, Anish Kapoor, Sylvie Guillem.",
+              "Broadened audience awareness and acceptance of dance; broke ground as a choreographer in non-traditional theatre spaces."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of the relationship between the artist and the major events of the chosen era; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of the relationship between the artist and the major events of the chosen era; uses appropriate examples and language to support the response with inconsistencies; presents a logical response.",
+              "5-6 marks: Provides a general explanation of the relationship between the artist and the major events of the chosen era; uses adequate AND/OR general examples and language with inconsistencies; attempts to present a structured response.",
+              "3-4 marks: Provides limited knowledge AND/OR understanding of the artist AND/OR their works AND/OR the era; uses basic examples and language; presents a limited response.",
+              "1-2 marks: Provides information about aspects of the artist AND/OR their works AND/OR the era; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2020 HSC Dance",
+        "year": 2020,
+        "original_question_no": "2",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 5,
+      "marks": 20,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10",
+        "HSC-M3-T2-D11"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 3 (20 marks)\nEvaluate how Mats Ek uses his distinctive choreographic style to communicate the central ideas of Appartement.\nIn your response, provide specific examples from the work."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Choreographic style: a reinterpretation mixing ballet and diverse contemporary dance techniques; stylised pedestrian movements, raw movement, manipulation of the body's centre of gravity, athleticism, twisting and squirming low-level movement.",
+              "Distinctive for its imaginative interpretation of storylines with a lyrical approach conveying underlying emotions rather than just narrative detail; unique use of space, time and dynamics.",
+              "Signature steps: flexed feet, grand plie a la seconde, lunges, 'wavy' backs; fluidity through prolongation and extension; use of humour, irony and shock tactics eg toilet, vacuum cleaner, couch.",
+              "Individual expression and emotion are more important than aesthetics; quirkiness or unusual use of movement or production elements - costumes, props, set, lights, music, voice, unusual involvement of dancers.",
+              "Use of the curtain for multiple purposes - entrances/exits and relationship of the band to the dancers.",
+              "Central ideas: a snapshot of society through life in an apartment - the extraordinary expression of the ordinary and mundane through 11 scenes in non-narrative form.",
+              "Gender roles, generation roles, household tasks, emotional response, simplicity/complexity of everyday life, commentary on modern life.",
+              "Concept of relationships and society through life in an apartment; relatable situations creating empathy and sympathy.",
+              "Human nature of being close and separate communicated through arguments, intimacy, love, anger, thoughts, feelings, actions."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "17-20 marks: Provides a detailed evaluation of how Mats Ek's choreographic style has been used to communicate the central ideas of Appartement; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "13-16 marks: Provides a sound evaluation of how Mats Ek's choreographic style has been used to communicate the central ideas of Appartement; uses appropriate examples and language to support the response with inconsistencies; presents a logical response.",
+              "9-12 marks: Provides a general evaluation of how Mats Ek's choreographic style has been used to communicate the central ideas of Appartement; uses adequate AND/OR general examples and language with inconsistencies; attempts to present a structured response.",
+              "5-8 marks: Provides limited knowledge AND/OR understanding of Mats Ek's choreographic style AND/OR central ideas of Appartement; uses basic examples and language; presents a limited response.",
+              "1-4 marks: Provides information about aspects of the artist AND/OR Appartement; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2020 HSC Dance",
+        "year": 2020,
+        "original_question_no": "3",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    }
+  ]
+}

@@ -1,0 +1,570 @@
+auto202001 | HSC-M4-T1-D128 | In terms of government legislation, what do the letters ADR stand for? Australian Design Rule A
+auto202002 | HSC-M4-T1-D53 | An image of a tyre is shown. tyre What could be the cause of the tyre wear shown? Overinflation
+auto202003 | HSC-M4-T1-D111 | An image of a tool is shown. tool What is the name of this tool? Micrometer Rule Spanner Vernie
+auto202004 | HSC-M4-T1-D22 | The image shows an engine head. Four components are labelled: A, B, C and D. engine head Where 
+auto202005 | HSC-M4-T1-D57 | The image shows an automotive part. automotive part What is the name of this automotive part? A
+auto202006 | HSC-M4-T1-D111 | An image of a tool is shown. tool Which vehicle component is this tool used to remove? Oil filt
+auto202007 | HSC-M4-T1-D31 | Which automotive component is responsible for managing coolant flow? Fuel pump Carburettor Ther
+auto202008 | NULL | A minor safety fault has been identified in a large number of vehicles. The manufacturer is now
+auto202009 | HSC-M4-T1-D92 | What is the main purpose of a relay in a vehicle’s electrical system? It allows a low current c
+auto202010 | HSC-M4-T1-D67 | Which of the following is true of leaf springs when compared to coil springs? Leaf springs carr
+auto202011 | HSC-M4-T1-D8 | Identify ONE type of road-registered vehicle that uses a single cylinder engine.
+auto202012 | HSC-M4-T1-D32 | Outline the operational difference between belt driven fans and thermostatically controlled fan
+auto202013 | NULL | A vehicle’s sump holds 3.8 litres of oil and the filter holds 0.6 litres of oil. The recommende
+auto202014 | HSC-M4-T1-D10 | Describe the differences between modern diesel engines and modern petrol engines.
+auto202015 | HSC-M4-T1-D63 | Explain how an anti-lock braking system (ABS) works.
+auto202016 | HSC-M2-T1-D16 | An automotive company is considering moving to a new location. An automotive company is conside
+elec202001 | HSC-M4-T2-D1 | Which of the following sources of power is NOT used in Australia? Solar cells Storage devices H
+elec202002 | HSC-M4-T2-D23 | Ceramic material is mainly used with electronic components because it is a good conductor. insu
+elec202003 | HSC-M4-T2-D38 | Piezo devices measure change in physical action (mechanical stress) by converting mechanical st
+elec202004 | HSC-M4-T2-D59 | An electronic circuit symbol is shown. electron ic circuit The circuit symbol represents a step
+elec202005 | HSC-M4-T2-D34 | Which row of the table correctly identifies features of stepped motors? Option A (image in orig
+elec202006 | HSC-M4-T2-D6 | What is the decimal equivalent of the binary number 1001? A. Option A (image in original exam) 
+elec202007 | HSC-M4-T2-D18 | Which electronic component is used to create a VLSI single-chip? Capacitors Diodes Resistors Tr
+elec202008 | NULL | B. Option A (image in original exam) Option B (image in original exam) Option C (image in origi
+elec202009 | NULL | C. Option A (image in original exam) Option B (image in original exam) Option C (image in origi
+elec202010 | NULL | D. 11 Option A (image in original exam) Option B (image in original exam) Option C (image in or
+elec202011 | HSC-M4-T2-D23 | What electronic component is used to store electrical charge?
+elec202012 | HSC-M4-T2-D15 | What is the function of a voltage regulator?
+elec202013 | NULL | A circuit is shown. circui t Determine the cost of components for one complete circuit by compl
+elec202014 | HSC-M4-T2-D15 | Compare the operation of light emitting diodes and light sensitive diodes.
+elec202015 | HSC-M4-T2-D7 | A simple logic circuit is shown. lo gi c ci rc ui t This logic circuit has two inputs, A and B,
+elec202016 | HSC-M2-T1-D16 | An electronics company is considering moving to a new location. An electronics company is consi
+graph202001 | HSC-M3-T1-D18 | Which distinctive architectural style of building was used in Australia between 1915–1940? Art 
+graph202002 | HSC-M3-T1-D13 | Which CAD component can be used to manage visually complex objects? Pan Ortho Layers Hatching –
+graph202003 | HSC-M3-T1-D7 | An isometric view of a block with a hole in the top is shown. Which of the following shows the 
+graph202004 | HSC-M3-T1-D13 | The diagrams show different views of a pulley. Top, Fron t and 3D view of pulley Which CAD mode
+graph202005 | HSC-M1-T1-D2 | What scale is most commonly used for a typical residential site plan? 1 : 10 1 : 20 1 : 100 1 :
+graph202006 | HSC-M3-T1-D17 | Which drawing type contains information about setbacks? Site plan Elevation Floor plan Cross-se
+graph202007 | HSC-M3-T1-D17 | What is used to show the slope of land on landscape plans? Datum Contours Land referencing Orie
+graph202008 | HSC-M3-T1-D17 | A roofing detail of a typical boxed eave construction is shown. roofing detail What is the name
+graph202009 | HSC-M1-T1-D3 | A bolt is shown. bolt What is the height, h, of the bolt head as a standard proportion of the n
+graph202010 | HSC-M1-T1-D2 | The working drawings of a 1200 × 800 × 450 bench seat have to fit on ONE A4 sheet. Which scale 
+graph202011 | HSC-M3-T1-D17 | A footing detail is shown. Footing detail What is the name of the material indicated by A?
+graph202012 | HSC-M1-T2-D176 | Why are flash drives and external hard drives used to store CAD drawings?
+graph202013 | HSC-M3-T1-D21 | A floor plan for a proposed dwelling is shown. floor p lan The proposed dwelling is to be built
+graph202014 | HSC-M3-T1-D1 | An orthogonal drawing of a swing bracket is shown. All dimensions are in mm. orth ogo nal of a 
+graph202015 | HSC-M3-T1-D3 | Sketch the mechanical perspective of the step block shown. Eye level CV Picture plane Ground li
+graph202016 | HSC-M2-T1-D16 | A graphics company is considering moving to a new location. A graphics company is considering m
+metal202001 | HSC-M3-T2-D3 | The diagram shows a marking-out tool. What is the name of this tool? Dividers Jenny calipers Ma
+metal202002 | HSC-M3-T2-D4 | A centre punch is shown.centre punch Which turning operation can be performed to machine the su
+metal202003 | HSC-M3-T2-D1 | What is the most appropriate method of determining if a 240 V hand-held grinder is electrically
+metal202005 | HSC-M3-T2-D21 | Which gauge is used to check the accuracy of micrometers and dial indicators? Feeler Plug Ring 
+metal202006 | HSC-M3-T2-D4 | What gas is used for shielding aluminium when using a MIG welder? Hydrogen Pure argon Carbon di
+metal202007 | HSC-M3-T2-D4 | Which method can be used to manufacture two-metre long seamless metallic tubes? Coining Die cas
+metal202008 | HSC-M1-T2-D32 | Steel is more commonly hot-rolled than cold-rolled because hot-rolling results in a faster proc
+metal202009 | HSC-M3-T2-D4 | What term is used for the process of removing metal to form a seat for a washer or a nut? Bobbi
+metal202010 | HSC-M3-T2-D12 | What is the term used to describe the process of making a metal stronger through plastic deform
+metal202011 | HSC-M1-T2-D25 | What is alloyed with copper to form brass?
+metal202012 | HSC-M3-T2-D4 | Outline the process used to cut a thread to the bottom of a blind hole.
+metal202013 | HSC-M1-T2-D101 | A metal workbench frame is shown. meta l w orkbench The legs are made from 50 × 50 square tubin
+metal202014 | HSC-M3-T2-D4 | Describe how a soldering bit is tinned.
+metal202015 | HSC-M3-T2-D21 | Explain the purpose of using lubricants in machines.
+metal202016 | HSC-M2-T1-D16 | A metal and engineering company is considering moving to a new location. A metal and engineerin
+multi202001 | HSC-M4-T5-D2 | When text is moved at the beginning of a paragraph by five spaces to the right it is called a r
+multi202002 | HSC-M2-T2-D60 | What does PDF stand for? Portable Data File Printer Description File Page Description Format Po
+multi202003 | HSC-M4-T5-D2 | What is pagination used for? Removing irrelevant pages Arranging the aligning of pages Separati
+multi202004 | HSC-M4-T5-D5 | Which of the following affects file size? Colour depth Hard-disk space Processor speed The size
+multi202005 | NULL | What is the primary function of a clapper board? To indicate the beginning of a shot To show wh
+multi202006 | HSC-M4-T5-D19 | What does authoring software allow a user to do? Watch media content Create their own content C
+multi202007 | HSC-M2-T2-D76 | What is required to use copyrighted images on your webpage? A software licence A disclaimer on 
+multi202008 | HSC-M2-T2-D35 | Tweening is the process of generating hand-drawn files. frames that link key frames. key frames
+multi202009 | HSC-M4-T5-D20 | Anti-aliasing is used when games don’t run fast enough. there are too many pixels on the screen
+multi202010 | HSC-M2-T2-D16 | Which row best describes the result of lossy video compression on both video quality and file s
+multi202011 | HSC-M2-T2-D65 | What does RTSP stand for?
+multi202012 | HSC-M2-T2-D43 | Outline how motion capture technology works.
+multi202013 | NULL | A client requires a print run of 15 000 pages for an advertising campaign. Paper $25.00 per rea
+multi202014 | HSC-M2-T2-D16 | Describe how large MP4 files can be reduced in size when authoring for DVD media.
+multi202015 | HSC-M2-T2-D55 | A company has decided to update its website’s homepage to improve its effectiveness. Describe t
+multi202016 | HSC-M2-T1-D16 | A multimedia company is considering moving to a new location. A multimedia company is consideri
+timber202001 | HSC-M1-T2-D119 | The diagram shows a joint. What type of joint is shown? Biscuit Butt Domino Dowelled
+timber202002 | HSC-M1-T2-D72 | The diagram shows a hinge. What type of hinge is shown? Butt Flush Lift off Piano – 3 –
+timber202003 | HSC-M1-T2-D75 | What is the most effective method of fixing upholstery to a stool? Nails Screws Staples Stitchi
+timber202004 | HSC-M1-T2-D149 | The salad server shown has been made by gluing three thin pieces of timber together and clampin
+timber202005 | HSC-M1-T2-D68 | Flat head nails are used in best practice cabinet work for attaching door handles. veneer edgin
+timber202006 | HSC-M1-T2-D71 | Which row of the table correctly identifies features of a bolt and barrel knockdown fitting? Op
+timber202007 | HSC-M1-T2-D50 | Which of the following is a characteristic of ‘green’ timber when compared to ‘seasoned’ timber
+timber202008 | HSC-M1-T2-D108 | A mark is circled on a piece of timber. What is the purpose of the mark circled? The mark shows
+timber202009 | HSC-M1-T2-D161 | Which tool is best for testing the flatness of a table top? Calipers Trammel Straight edge Wind
+timber202010 | HSC-M1-T2-D59 | Which row of the table is correct for medium-density fibreboard? Option A (image in original ex
+timber202011 | HSC-M1-T2-D55 | Identify a suitable Australian hardwood for making the outdoor bench seat.
+timber202012 | HSC-M1-T2-D139 | The edges of the bench seat are rounded. Outline reasons for this edge treatment.
+timber202013 | HSC-M1-T2-D101 | Complete the cutting list for the outdoor bench seat. Part Quantity required Length Width Thick
+timber202014 | HSC-M1-T2-D126 | Outline a method of production for a suitable joint to attach the cross support to the bott rai
+timber202015 | HSC-M1-T2-D164 | Name a suitable finish for the outdoor bench seat and describe the steps involved in preparing 
+timber202016 | HSC-M2-T1-D16 | A timber products and furniture company is considering moving to a new location. A timber produ
+auto202101 | HSC-M4-T1-D50 | What type of joint is commonly found on a tailshaft? CV joint Ball joint Universal joint Differ
+auto202102 | HSC-M4-T1-D21 | The diagram shows a piston assembly. Piston assembly What is the common name of the component i
+auto202103 | HSC-M4-T1-D17 | What are the stages, in order, of a 4-stroke cycle engine? Intake, combustion, compression, exh
+auto202104 | HSC-M4-T1-D7 | Compared with petrol, diesel fuel is not as efficient. can generate higher rpm, but has less to
+auto202105 | HSC-M4-T1-D16 | When attempting to start their car, a driver hears a ticking noise instead of hearing the engin
+auto202106 | HSC-M4-T1-D36 | Which system has replaced the function of a choke on a modern petrol engine? Hybrid Fuel inject
+auto202107 | HSC-M4-T1-D111 | A tool is shown in the photograph. Tool The main purpose of this tool is to remove internal cir
+auto202108 | HSC-M4-T1-D116 | Which structural safety feature is designed within the body of a modern motor vehicle? Airbags 
+auto202109 | HSC-M4-T1-D22 | Which part of the cam’s lobe profile opens the valve? Nose Shoulder Toe Tooth
+auto202110 | HSC-M4-T1-D131 | Which scheme requires a suitably qualified person to assess a light vehicle, that has had recen
+auto202111 | HSC-M4-T1-D90 | An image of a collection of wires is shown. Collection of wires Identify this collection of wir
+auto202112 | NULL | A part of a car is shown with two details magnified. C a r part Outline the purpose of the part
+auto202113 | HSC-M4-T1-D107 | One coat of primer and one coat of colour is to be applied to a bonnet with an area of 1.7 m2. 
+auto202114 | HSC-M4-T1-D65 | The photograph shows a brake assembly on a vehicle. Brake assembly A customer has complained th
+auto202115 | HSC-M4-T1-D16 | Explain possible causes of an overheating engine.
+auto202116 | HSC-M2-T1-D22 | A company has experienced a significant change in demand for its products and services. Consequ
+elec202101 | HSC-M4-T2-D59 | The symbol for a component is shown. S y mbol What is the name of the component represented by 
+elec202102 | HSC-M4-T2-D32 | Which of the following is an input device? Light Speaker Switch Thyristor
+elec202103 | HSC-M4-T2-D23 | Which of the following is the correct way to represent a 48 000 ohm resistor? 480 R 48k W 4k8 W
+elec202104 | HSC-M4-T2-D6 | Which binary number is equivalent to the decimal number 42? 101010 110010 101001 111010
+elec202105 | HSC-M4-T2-D13 | What is the main purpose of a transformer in an appliance? To make it run faster To avoid buyin
+elec202106 | HSC-M4-T2-D15 | What is the shorter leg on an LED? Anode Base Cathode Emitter
+elec202107 | NULL | What is the purpose of a fuse in an electronic device? To reduce power consumption To make the 
+elec202108 | HSC-M4-T2-D23 | If a circuit board with one capacitor has a second capacitor of equal value added, in series, t
+elec202109 | HSC-M4-T2-D4 | Which of the following signal outputs on an oscilloscope would be typical of a full wave rectif
+elec202110 | HSC-M4-T2-D14 | Which material is used to dope silicon in the manufacture of P-type semiconductor materials? An
+elec202111 | HSC-M4-T2-D15 | What is the function of a diode in an electronic circuit?
+elec202112 | HSC-M4-T2-D41 | How does a microphone work?
+elec202113 | HSC-M4-T2-D56 | A diagram of a circuit is shown. Circu it di agr am Calculate the current that would be measure
+elec202114 | HSC-M4-T2-D49 | Explain how a multimeter could be used to fault-find components on a circuit board.
+elec202115 | HSC-M4-T2-D1 | Power generation is moving towards additional renewable sources of energy and moving away from 
+elec202116 | HSC-M2-T1-D22 | A company has experienced a significant change in demand for its products. Consequently, it is 
+graph202101 | HSC-M3-T1-D3 | Which of the following lists two pictorial drawing types? Production, cabinet Isometric, obliqu
+graph202102 | HSC-M1-T1-D3 | Which Australian Standard are technical drawings required to follow? AS 1100 AS 1101 AS 1110 AS
+graph202103 | HSC-M3-T1-D13 | Which drafting tool has replaced a pair of compasses when developing technical drawings? Divide
+graph202104 | HSC-M1-T1-D3 | Which type of line used in technical drawing is shown below? Line from technical drawing Fold l
+graph202105 | HSC-M3-T1-D7 | The front view is missing in the following drawing. Diagram showing to p and s ide view Which o
+graph202106 | HSC-M3-T1-D18 | Which architectural style immediately followed the Federation style of the early 1900s in Austr
+graph202107 | HSC-M3-T1-D26 | In which of the following situations would a prototype be useful? Presenting a risk assessment 
+graph202108 | HSC-M3-T1-D17 | Which of the following is included on a site plan? Room dimensions Boundary dimensions The loca
+graph202109 | HSC-M1-T1-D3 | If a bolt has a diameter of 8 mm, what is the outside diameter of the associated standard washe
+graph202110 | HSC-M3-T1-D3 | Which set of features is used when creating a mechanical perspective drawing? Height, plan, axe
+graph202111 | HSC-M3-T1-D13 | An image of drawing instruments is shown. Drawing of instruments Identify ONE use for the drawi
+graph202112 | HSC-M3-T1-D17 | Why are shadow diagrams used by architects?
+graph202113 | HSC-M3-T1-D17 | An office in a brick veneer building needs a cupboard to store drawing equipment, paper and sta
+graph202114 | HSC-M3-T1-D7 | An isometric projection of a symmetrical flange is shown. Symmetrical fl an ge sh own Draw a to
+graph202115 | HSC-M3-T1-D25 | Render the drawing below to show that it is a hollow pipe with a T-junction and include a shado
+graph202116 | HSC-M2-T1-D22 | A company has experienced a significant change in demands for its products. Consequently, it is
+metal202101 | HSC-M3-T2-D21 | An image of a tool is shown. Tool What is the name of this tool? Pincers Scissors Tinsnips Avia
+metal202102 | HSC-M3-T2-D4 | An image of a machining operation is shown. Machining operation What process is being represent
+metal202103 | HSC-M1-T2-D25 | Which of the following properties of a metal allows it to be hammered into thin sheets? Density
+metal202104 | HSC-M1-T2-D25 | What is alloyed with copper to form bronze? Iron Tin Tungsten Zinc
+metal202105 | HSC-M3-T2-D21 | Which set has all the features of a try square, a mitre square, a bevel protractor and a rule? 
+metal202106 | HSC-M1-T2-D25 | What material is used to manufacture cold chisels? Cast iron Mild steel Carbon tool steel Low c
+metal202107 | HSC-M3-T2-D4 | Which is the most suitable chuck to use when setting up heavy and irregular shaped work? Scroll
+metal202108 | HSC-M3-T2-D4 | How is a neutral flame obtained during oxyacetylene welding? Using equal amounts of oxygen and 
+metal202109 | HSC-M3-T2-D4 | What is the benefit of ‘climb milling’ while machining? Noise generated is reduced. A better su
+metal202110 | HSC-M1-T2-D27 | Which process would be most effective to produce a high tensile steel bolt? Drawing Upsetting A
+metal202111 | HSC-M3-T2-D4 | The drawing shows a tool being used. Identify the process shown. �����������������������������
+metal202112 | HSC-M1-T2-D25 | Outline the properties of copper that make it ideal for electrical wiring. �������������������
+metal202113 | HSC-M1-T2-D101 | The design of a box made from sheet metal is shown. Each corner of the box will be attached wit
+metal202114 | HSC-M1-T2-D33 | Describe the process to produce aluminium from its raw materials.
+metal202115 | HSC-M3-T2-D4 | How can welding defects be identified and corrected in a fabricated article?
+metal202116 | HSC-M2-T1-D22 | A company has experienced a significant change in demand for its products. Consequently, it is 
+multi202101 | HSC-M4-T5-D2 | Which of the following is a ‘serif’ font? Option A (image in original exam) Option B (image in 
+multi202102 | HSC-M4-T5-D13 | Scanners are typically used to convert numbers into files. convert text into an animation. conv
+multi202103 | HSC-M2-T2-D65 | What units are used to measure high speed video streaming? Mbps MHz MW Tflops
+multi202104 | HSC-M4-T5-D11 | What image type supports transparency? BMP GIF JPEG JPG – 3 –
+multi202105 | HSC-M2-T2-D43 | Which technique can be used to digitally capture patterns of movement in order to animate a 3D 
+multi202106 | HSC-M4-T5-D20 | Which technique is used to smooth jagged lines by blending the edge with the pixels around it? 
+multi202107 | HSC-M2-T2-D35 | In what type of animation is tweening used? Cel based Still based Path based Stop based
+multi202108 | HSC-M2-T2-D64 | Which type of file format is lossless? JPG MP3 MP4 PNG – 4 –
+multi202109 | HSC-M2-T2-D36 | Which of the following frame rates should be used when producing slow-motion video? Play at 12 
+multi202110 | HSC-M2-T2-D65 | How long (in seconds) will it take to transfer 163840 bytes of data at 10 megabits per second? 
+multi202111 | HSC-M2-T2-D68 | Which software is best suited to creating vector graphics?
+multi202112 | HSC-M2-T2-D6 | Draw a diagram to represent a digital audio wave pattern. Axis with volume and frequency
+multi202113 | HSC-M4-T5-D5 | Calculate the file size in megabytes (MB) of a 1920 × 1080 pixel image with a bit depth of 32. 
+multi202114 | HSC-M2-T2-D16 | Explain the effects of video compression on image quality and data storage.
+multi202115 | HSC-M2-T2-D80 | Explain ethical issues that need to be considered in the development and use of multimedia prod
+multi202116 | HSC-M2-T1-D22 | A company has experienced a significant change in demand for its products. Consequently, it is 
+timber202101 | HSC-M1-T2-D108 | What is the first step in timber preparation? Select face side Gauge to width Select face edge 
+timber202102 | HSC-M1-T2-D67 | An image of a screw is shown. D i a gram of a screw Which number shows the gauge of the screw? 
+timber202103 | NULL | D. Option A (image in original exam) Option B (image in original exam) Option C (image in origi
+timber202104 | HSC-M1-T2-D62 | Which term is used for timber that is very finely sliced? Biscuit Intarsia Parquetry Veneer
+timber202105 | HSC-M1-T2-D77 | The drawing shows a table top being attached to a rail. Diagram o f table top Which method of a
+timber202106 | NULL | The drawing shows a nail being extracted. Diagram of nail being extracted Why is the block of t
+timber202107 | HSC-M1-T2-D137 | What is the correct depth of the trench in a housing joint? Option A (image in original exam) O
+timber202108 | HSC-M1-T2-D71 | The diagram shows a knockdown joint. What type of fastener is used? Cam lock Coach screw Connec
+timber202109 | HSC-M1-T2-D110 | Which liquid is mixed with ‘shellac’ to make French polish? Vinegar Acetone Turpentine Methylat
+timber202110 | HSC-M1-T2-D43 | What is the disadvantage of converting logs into timber by the quarter sawing method? The timbe
+timber202111 | HSC-M1-T2-D169 | A drawing of a tool is shown. Identify the tool shown.
+timber202112 | HSC-M1-T2-D43 | What are the advantages of kiln seasoning compared to air seasoning?
+timber202113 | HSC-M1-T2-D101 | A coffee table made from Tasmanian Oak is shown. Cof fee table The top is made from pieces of t
+timber202114 | HSC-M1-T2-D59 | Describe how plywood is manufactured from a log.
+timber202115 | HSC-M1-T2-D56 | Describe the environmental factors that should be considered when creating timber furniture.
+timber202116 | HSC-M2-T1-D22 | A company has experienced a significant change in demand for its products. Consequently, it is 
+auto202201 | HSC-M4-T1-D6 | What do the letters LPG stand for? Lifted performance gas Liquefied petroleum gas Liquefied pro
+auto202202 | HSC-M4-T1-D93 | A diagram of a vehicle fuse box is shown. Fuse box diagr am What is the value of the most commo
+auto202203 | HSC-M4-T1-D2 | In new all-electric vehicles, what is the most common battery type used to po drive system? Lea
+auto202204 | HSC-M4-T1-D111 | Which tool shown is best for tightening engine head bolts? Tool s d iagr ams Option A (image in
+auto202205 | HSC-M4-T1-D71 | Which of the following is an advantage of rack and pinion steering over a steering box? It cons
+auto202206 | HSC-M4-T1-D75 | Which of the following options contain features of four-wheel steering? Worse steering response
+auto202207 | HSC-M4-T1-D53 | The tyre placard inside a vehicle’s door recommends tyre inflation pressure to be 30 PSI (205 k
+auto202208 | NULL | Which of the following is an optional extra in a new vehicle? Lane change assist Windscreen wip
+auto202209 | HSC-M4-T1-D95 | Which of the following is an advantage that mechanical gauges have over digital electronic inst
+auto202210 | HSC-M4-T1-D42 | What does a catalytic converter do in a vehicle? Converts chemicals in exhaust gases to less ha
+auto202211 | HSC-M4-T1-D14 | Identify a fuel source, other than petrol, that is used to power passenger vehicles.
+auto202212 | HSC-M4-T1-D20 | Outline a reason why a mechanic may need to install a sleeve into an engine block.
+auto202213 | NULL | Using the information in the table, calculate the total displacement of each engine and the dis
+auto202214 | HSC-M4-T1-D52 | Describe advantages of a limited slip differential over an open differential.
+auto202215 | NULL | Explain what actions a driver could take to improve their vehicle’s fuel economy.
+auto202216 | HSC-M2-T1-D29 | A company has identified safety issues as a potential area of concern. Describe the role of wor
+elec202201 | HSC-M4-T2-D64 | What is the name of the item shown? Test probe Multimeter Oscilloscope Power supply
+elec202202 | HSC-M4-T2-D23 | Which electronic component is used to store electrical charge? Capacitor Diode Inductor Resisto
+elec202204 | HSC-M4-T2-D14 | Which of the following is the most commonly used semiconductor material? Carbon Silicon Solder 
+elec202205 | HSC-M4-T2-D6 | Which decimal number is equivalent to the binary number 10101? 12 19 21 27
+elec202206 | HSC-M4-T2-D39 | Which component of a UHF communication system is used to change its frequency? . Amplifier . An
+elec202207 | NULL | The f Option A (image in original exam) Option B (image in original exam) Option C (image in or
+elec202208 | HSC-M4-T2-D17 | Which part of a microprocessor regulates Control unit Accumulator Register array Arithmetic Log
+elec202209 | HSC-M4-T2-D5 | Which of the following is used by analogue circuits? Boolean logic A binary signal A sequence o
+elec202210 | HSC-M4-T2-D47 | The table shows the steps involved in the construction of printed circuit boards. Which row of 
+elec202211 | HSC-M4-T2-D45 | The diagram shows a soldering fault. solder component lead printed circuit board component Iden
+elec202212 | HSC-M4-T2-D17 | Outline ONE application of a microprocessor in an electronic device.
+elec202213 | NULL | A diagram of a circuit is shown. C5 C2 R1 R2 6–20pF 470pF Q1 22k 47k BC548 M1 C4 B1 C1 3.3pF 9V
+elec202214 | HSC-M4-T2-D37 | Describe how a buzzer works.
+elec202215 | HSC-M4-T2-D65 | Compare the features of analogue and digital meters.
+elec202216 | HSC-M2-T1-D29 | A company has identified safety issues as a potential area of concern. Describe the role of wor
+graph202201 | NULL | Which grade of pencil is most suitable for drawing construction lines? B H 4H HB
+graph202202 | HSC-M3-T1-D3 | A drawing is shown. rawing is this? What type of pictorial d Axonometric Cabinet Isometric Pers
+graph202203 | HSC-M1-T1-D3 | A drawing of a section is shown. The view A-A illustrates which type of section? Full Half Offs
+graph202204 | HSC-M1-T1-D3 | A drawing of a section is shown. A A The view A–A illustrates which type of section? Option A (
+graph202205 | HSC-M3-T1-D7 | An isometric view of a block is shown. Isometri c view of block Front view Which orthogonal vie
+graph202206 | HSC-M3-T1-D18 | Which of the following is an Australian architectural style between 1940 and 1960? Structuralis
+graph202207 | HSC-M3-T1-D17 | What key information is contained in a section drawing in a set of house building plans? Setbac
+graph202208 | HSC-M3-T1-D17 | Development proposals are required to show shadow diagrams at which times of the day? 8 am 12 p
+graph202208q9 | HSC-M1-T1-D2 | A scale rule is shown. What actual length is represented by a scale length of 600 mm when the s
+graph202209 | HSC-M1-T1-D3 | A multitool for a Ø10 bolt is shown. 20 X 20 100 What is dimension X? 36 mm 46 mm 56 mm 66 mm
+graph202210 | HSC-M3-T1-D26 | What is the purpose of developing a prototype?
+graph202211 | HSC-M3-T1-D4 | Outline an advantage of freehand sketching as a communication tool.
+graph202212 | HSC-M3-T1-D17 | A picnic area at a local park requires a concrete slab, a picnic table and trees for shading to
+graph202213 | HSC-M3-T1-D3 | Draw the block illustrated full size in oblique cavalier projection. 0 28 NOT TO SCALE 40 20 R1
+graph202214 | HSC-M3-T1-D8 | An exploded view of a shaft housing is shown. Exploded view of shaft housing diagram NOT TO SCA
+graph202215 | HSC-M2-T1-D29 | A company has identified safety issues as a potential area of concern. Describe the role of wor
+metal202201 | HSC-M3-T2-D3 | What tool is used to mark fold lines on sheet metal? Scriber Curved snips Centre punch Ball pei
+metal202202 | HSC-M1-T2-D25 | Which pair of metals is used to make soft solder? Tin and lead Iron and zinc Tin and brass Copp
+metal202203 | HSC-M3-T2-D4 | What is the function of flux while brazing? It prevents splatter. It helps to heat up the metal
+metal202204 | HSC-M1-T2-D32 | Which metal can be found naturally in its pure form? Aluminium Gold Iron Zinc – 2 –
+metal202205 | HSC-M3-T2-D4 | What term is used for shaping a metal by heating and hitting it with anvil? Annealing Casting D
+metal202206 | HSC-M3-T2-D21 | What is the name of the tool used for shaping internal curves in metal work? . Raising mallet .
+metal202207 | HSC-M1-T2-D36 | An image of a fastener is shown. Image of fastener What does this type of fastener prevent? Cor
+metal202208 | HSC-M3-T2-D15 | What is the process called when a cloth wheel impregnated with cutting compounds is used to shi
+metal202209 | HSC-M3-T2-D11 | A process is shown in the diagram. Diagram What type of process is shown? Annealing Enamelling 
+metal202210 | HSC-M3-T2-D4 | An image of a bevel is shown. Image of bevel Which of the following would be the best tool to p
+metal202211 | HSC-M3-T2-D11 | What is the purpose of annealing?
+metal202212 | HSC-M3-T2-D4 | Outline functions of the tailstock on a metal lathe.
+metal202213 | NULL | A student needs to purchase the following items from the school for their major project: • 200 
+metal202214 | HSC-M3-T2-D4 | Describe how to construct a small box out of sheet metal. Diagrams may be used to support your 
+metal202215 | HSC-M3-T2-D4 | Describe TWO different methods of extruding metals.
+metal202216 | HSC-M2-T1-D29 | A company has identified safety issues as a potential area of concern. Describe the role of wor
+multi202201 | HSC-M2-T2-D15 | A MIDI file contains high-fidelity audio. music sequence data. high definition video. live-stre
+multi202202 | NULL | Which of the following images uses stroke colour? Option A (image in original exam) Option B (i
+multi202203 | NULL | A. Only 1 Option A (image in original exam) Option B (image in original exam) Option C (image i
+multi202204 | HSC-M4-T5-D4 | What is the screen size in pixels for a full HD screen with a 16 : 9 aspect ratio? 480 × 680 12
+multi202205 | HSC-M2-T2-D65 | What does RTSP stand for? Real-time server protocol Real-time server program Real-time streamin
+multi202206 | HSC-M2-T2-D65 | What is the function of progressive JPEG technology? To enhance the colours of the image To inc
+multi202207 | HSC-M4-T5-D20 | A colour adjustments box is shown. Color Balance Tone: Midtones Cyan Red Magenta Green Yellow B
+multi202208 | HSC-M2-T2-D6 | What is the cause of the poor quality audio represented in the diagram? +Vcc +Vcc Positive half
+multi202209 | HSC-M2-T2-D65 | Buffering is used when streaming video in order to preload content. load content in real time. 
+multi202210 | HSC-M2-T2-D21 | How does larger aperture affect an image recorded by a camera? It increases the depth of field.
+multi202211 | HSC-M2-T2-D60 | Identify an advantage of using PDF files.
+multi202212 | HSC-M2-T2-D65 | Outline the purpose of an online thumbnail.
+multi202213 | HSC-M2-T2-D65 | Calculate the time required (in seconds) to transfer a 550 MB (megabyte) file at 80 megabits pe
+multi202214 | HSC-M2-T2-D44 | Describe an advantage and a disadvantage of virtual reality.
+multi202215 | HSC-M2-T2-D31 | An animator has drawn various mouth shapes for a character. Explain how the animator can use th
+multi202216 | HSC-M2-T1-D29 | A company has identified safety issues as a potential area of concern. Describe the role of wor
+timber202201 | HSC-M1-T2-D68 | An image of a nail is shown. Image of a nail What type of 20 mm nail is shown? Clout Panel pin 
+timber202202 | HSC-M1-T2-D130 | Where would Doorfra Drawer Shelf Table you normally find a box pin joint? me
+timber202203 | HSC-M1-T2-D93 | Hot melt glue is commonly used for dovetail joints. temporary joinery. attaching a leg to a rai
+timber202204 | HSC-M1-T2-D75 | In which situation would you commonly use a staple gun? Joining thin pieces of timber For scarf
+timber202205 | HSC-M1-T2-D114 | What is the benefit of cutting grooves for a floating bottom in drawer construction? It is easi
+timber202206 | HSC-M1-T2-D169 | A part of a tool is shown. Part of a tool is shown What is the correct procedure for fixing the
+timber202207 | HSC-M1-T2-D58 | Which row of the table correctly identifies features of manufactured boards? Cheaper to manufac
+timber202208 | HSC-M1-T2-D123 | Which joint could be strengthened by the use of a groove and feather? Mitre Finger Box pin Dove
+timber202209 | HSC-M1-T2-D109 | Which of the following is a property of shellac? Fast drying Water based Water proof Hard weari
+timber202210 | HSC-M1-T2-D135 | Where would a scribed joint be used? In toolbox assembly Joining window frames In carcase const
+timber202211 | HSC-M1-T2-D170 | Identify a machine used in industry to dress timber.
+timber202212 | HSC-M1-T2-D43 | Why is equilibrium moisture content (EMC) important when selecting timber?
+timber202213 | NULL | Use the information provided to calculate the cost of constructing the stool illustrated. For t
+timber202214 | HSC-M1-T2-D49 | Explain how recycling and reusing can be used to address timber shortages.
+timber202215 | HSC-M1-T2-D71 | Explain the benefits of using knock-down fittings.
+timber202216 | HSC-M2-T1-D29 | A company has identified safety issues as a potential area of concern. Describe the role of wor
+auto202301 | HSC-M4-T1-D2 | Which of the following is generally an advantage of using electric cars compared to petrol vehi
+auto202302 | HSC-M4-T1-D17 | What is the correct sequence for the operation of an internal combustion engine? Intake, combus
+auto202303 | HSC-M4-T1-D42 | Which component reduces the level of carbon monoxide in the exhaust? Muffler Fuel filter Exhaus
+auto202304 | HSC-M4-T1-D16 | What does a discoloured coolant in a radiator indicate? A faulty water pump An empty header tan
+auto202305 | HSC-M4-T1-D70 | What is the main function of a car’s suspension system? To support the steering system of the c
+auto202306 | HSC-M4-T1-D16 | What is the most likely cause of an internal combustion engine’s fuel injectors failing? Fuel c
+auto202307 | HSC-M4-T1-D54 | Why is it important to rotate the tyres on a vehicle every 5000 km? To ensure even wear on the 
+auto202308 | HSC-M4-T1-D18 | The flatness of a cylinder head can be checked by using a vernier gauge. an engineer’s square. 
+auto202309 | HSC-M4-T1-D44 | Refer to the following image. Which component of a car’s transmission system is shown? Flywheel
+auto202310 | HSC-M4-T1-D21 | What is the purpose of the gap at the end of piston rings when fitted in the cylinder? To allow
+auto202311 | HSC-M4-T1-D129 | Identify ONE document that is required to renew a vehicle’s registration in NSW.
+auto202312 | HSC-M4-T1-D131 | Outline ONE modification to a motor vehicle that must be reported to the registration authority
+auto202313 | HSC-M4-T1-D107 | A litre of automotive acrylic paint covers 7.5 m2 of surface area. The total surface area of on
+auto202314 | HSC-M4-T1-D5 | Explain why it is necessary to regularly drain and replace the engine oil in a motor vehicle.
+auto202315 | HSC-M4-T1-D18 | Explain the process for replacing a cylinder head.
+auto202316 | HSC-M2-T1-D11 | Describe how ONE new technology is being used to improve the automotive industry. Describe how 
+elec202301 | HSC-M4-T2-D44 | Which of the following is the correct tool for bending the legs of a resistor? Tin snips Circli
+elec202302 | HSC-M4-T2-D33 | What is the primary function of a solenoid? To control a switch To act as a battery charger To 
+elec202303 | HSC-M4-T2-D6 | In which device is the binary numbering system used? Multimeter Record player Computer processo
+elec202304 | HSC-M4-T2-D19 | What is the main purpose of an erasable programmable read-only memory (EPROM)? To act as a cach
+elec202305 | HSC-M4-T2-D74 | What is an op amp used to amplify? Capacitance Current Signal Voltage
+elec202306 | HSC-M4-T2-D15 | What is the main function of a diode? To allow current through a circuit To switch current thro
+elec202307 | HSC-M4-T2-D65 | What is the purpose of an integrated circuit oscillator? To flash an LED To count specific even
+elec202308 | HSC-M4-T2-D73 | Which of the following uses a piezo device to function? MP3 player Record player Bluetooth earb
+elec202309 | HSC-M4-T2-D38 | 20 30 40 50 ACV RANGE Option A (image in original exam) Option B (image in original exam) Optio
+elec202310 | HSC-M4-T2-D59 | Draw the circuit symbol for a diode.
+elec202311 | HSC-M4-T2-D12 | What is the purpose of a relay in a circuit?
+elec202312 | HSC-M4-T2-D55 | A circuit is shown. 20 K 10 K 15 K 980 Calculate the total resistance of the circuit.
+elec202313 | HSC-M4-T2-D47 | Describe the process of creating a single-sided printed circuit board using a blank, copper-coa
+elec202314 | HSC-M4-T2-D1 | Explain how ONE type of renewable energy is used in the community.
+elec202315 | HSC-M2-T1-D11 | Describe how ONE new technology is being used to improve the electronics industry. Describe how
+graph202301 | HSC-M3-T1-D7 | A block is shown. Which of the following shows the top view of the block? Option A (image in or
+graph202302 | HSC-M3-T1-D17 | A symbol is shown. What type of door does this symbol represent? Single swing Double swing Slid
+graph202303 | HSC-M1-T1-D2 | A landscape plan has been drawn to a scale of 1 : 100. What is the actual length of a 56 mm mea
+graph202305 | HSC-M1-T1-D3 | According to AS1100 drawing standards, which of the following lines takes priority when two or 
+graph202306 | HSC-M3-T1-D17 | Why are houses required to be set back a certain distance from the front boundary of the proper
+graph202307 | HSC-M3-T1-D17 | An image is shown. Ground level Slab Which type of footing is illustrated? Strip Timber piles S
+graph202308 | HSC-M3-T1-D18 | Refer to the following image. Which Australian architectural style is shown? Queen Anne Queensl
+graph202309 | HSC-M3-T1-D21 | Which of the following is required when submitting development applications to the council? Pro
+graph202310 | HSC-M3-T1-D17 | What is ONE reason for including elevations in architectural drawings?
+graph202311 | HSC-M3-T1-D13 | Outline ONE disadvantage of using CAD rather than traditional drawing methods.
+graph202312 | HSC-M3-T1-D17 | A floor plan is shown. 5500 1820 1730 Bathroom 1630 2530 Entry Living room and kitchen Bedroom 
+graph202313 | HSC-M3-T1-D3 | Using the provided starting point, sketch the block in oblique cabinet projection in the direct
+graph202314 | HSC-M3-T1-D17 | Explain why shadow diagrams are required in residential development applications.
+graph202315 | HSC-M2-T1-D11 | Describe how ONE new technology is being used to improve the graphics industry. Describe how ON
+metal202301 | HSC-M3-T2-D21 | A tool is shown. What is this tool? Jigsaw Hacksaw Bow saw Coping saw
+metal202302 | HSC-M3-T2-D21 | Which of the following tools can be used to measure sheet metal thickness? Dividers Steel rule 
+metal202303 | HSC-M1-T2-D31 | What metal is used to galvanise roofing sheets? Copper Nickel Tin Zinc – 3 –
+metal202304 | HSC-M3-T2-D3 | A tool is shown. What is this tool used for? Finding an internal diameter Measuring an outside 
+metal202305 | HSC-M3-T2-D21 | A micrometer is shown. mm 0 Option A (image in original exam) Option B (image in original exam)
+metal202306 | HSC-M1-T2-D25 | What is the primary alloying element used in the production of stainless steel alloy? Chromium 
+metal202307 | HSC-M1-T2-D25 | Pure metals are rarely used in industrial applications because they are too brittle. hard. shin
+metal202308 | HSC-M3-T2-D4 | Which of the following would be used to create an external screw thread? Die Firmer chisel Mill
+metal202309 | HSC-M3-T2-D4 | When a metal lathe is parallel turning, which part is used to give depth to the cut? Tail stock
+metal202310 | HSC-M3-T2-D4 | What process makes use of a moving mandrel? Forging Wire drawing Tube drawing Centrifugal casti
+metal202311 | HSC-M3-T2-D3 | Which tool is used to make indentations on solid metal before drilling?
+metal202312 | HSC-M1-T2-D36 | A fastener is shown. Outline the use of this fastener.
+metal202313 | NULL | The diagram shows a folded, galvanised steel box. 500 300 250 15 15 20 By completing the table 
+metal202314 | HSC-M1-T2-D38 | Describe the process of pickling a corroded piece of metal.
+metal202315 | HSC-M3-T2-D4 | Explain why MIG welders are considered more efficient than TIG welders.
+metal202316 | HSC-M2-T1-D11 | Describe how ONE new technology is being used to improve the metal and engineering industry. De
+multi202301 | HSC-M4-T5-D2 | Which of the following is the best way to format headings and titles in a document? Use any siz
+multi202302 | HSC-M2-T2-D37 | Which term describes the process where an animated image repeats indefinitely? Blending Keyfram
+multi202303 | HSC-M4-T5-D20 | What is object layering? Preparing audio and video elements for editing Combining visual elemen
+multi202304 | HSC-M2-T2-D65 | What term is used to describe the broadcasting and listening of on-demand music over the intern
+multi202305 | HSC-M4-T5-D20 | Which process is used for smoothing the edges of a graphic by blending colours on the image’s e
+multi202306 | HSC-M2-T2-D16 | What is the primary purpose of video compression? To reduce the size of a file and maintain qua
+multi202307 | HSC-M2-T2-D39 | Which of the following best describes 3D modelling for animation? The visual illusion of depth 
+multi202308 | HSC-M4-T5-D2 | Which of the following best describes a font? It has many sizes and styles. It contains related
+multi202309 | HSC-M4-T5-D19 | Which of the following correctly describes a multimedia authoring tool? The hardware used to di
+multi202310 | HSC-M2-T2-D76 | Which statement is true about using images from the internet? Images downloaded from the intern
+multi202311 | HSC-M2-T2-D44 | Identify a key characteristic of fully immersive virtual reality.
+multi202312 | HSC-M4-T5-D5 | Outline ONE disadvantage of using high-resolution graphics when creating a multimedia product.
+multi202313 | NULL | A print company’s price list for producing business cards is shown. BUSINESS CARD PRICE LIST PE
+multi202314 | HSC-M2-T2-D27 | A filmmaker is editing video footage from a scene in a short film. They decide to add backgroun
+multi202315 | HSC-M2-T2-D80 | Explain the ethical and legal issues that a project team should consider before using pre-exist
+multi202316 | HSC-M2-T1-D11 | Describe how ONE new technology is being used to improve the multimedia industry. Describe how 
+timber202301 | HSC-M1-T2-D169 | A tool is shown. What is this tool? Jack plane Block plane Spokeshave Cabinet scraper
+timber202302 | HSC-M1-T2-D169 | A cutting tool is shown. What is this tool used for? Producing key holes Cutting curves in thin
+timber202303 | HSC-M1-T2-D169 | Which type of hammer is used to extract nails from timber? Claw Ball pein Cross pein Warrington
+timber202304 | HSC-M1-T2-D127 | What is the primary benefit of incorporating a mitre joint in high-end furniture construction? 
+timber202305 | HSC-M1-T2-D142 | Which method of turning would be most suited to producing a large bowl? Faceplate Parallel Spin
+timber202306 | HSC-M1-T2-D67 | The pitch of a wood screw is the distance between the head and the tip. between the adjacent th
+timber202307 | HSC-M1-T2-D169 | A tool is shown. What is the primary purpose of this tool? Cutting joints accurately Cutting mi
+timber202308 | HSC-M1-T2-D94 | What is the most common type of adhesive used in the production of plywood? Hot melt glue Conta
+timber202309 | HSC-M1-T2-D43 | What is the name for a bump, swelling or bulge that grows on the trunk of a tree? Burl Flitch S
+timber202310 | HSC-M1-T2-D164 | What is the main disadvantage of using a water-based finish on timber rather than an oil-based 
+timber202311 | HSC-M1-T2-D66 | The diagram shows some cabinet fittings. Name the category of the cabinet fittings.
+timber202312 | HSC-M1-T2-D65 | Outline an environmental benefit of using manufactured boards.
+timber202313 | NULL | A 2.5 m × 1.5 m dining table top requires TWO coats of a polyurethane finish. One litre of the 
+timber202314 | HSC-M1-T2-D62 | Describe the process of cutting veneers to produce plywood.
+timber202315 | HSC-M1-T2-D43 | Explain the process of seasoning timber through natural air drying.
+timber202316 | HSC-M2-T1-D11 | Describe how ONE new technology is being used to improve the timber products and furniture indu
+auto202401 | HSC-M4-T1-D27 | Which component of a water-cooled system helps prevent the engine from overheating by dissipati
+auto202402 | HSC-M4-T1-D111 | When using an impact driver, what is the correct method to avoid damaging the nut or bolt? Hamm
+auto202403 | NULL | What is best practice for an automotive specialist when working on a customer’s car? Focusing s
+auto202404 | HSC-M4-T1-D66 | Which of the following is an advantage of negative camber? It improves handling during heavy co
+auto202405 | HSC-M4-T1-D35 | What is the primary purpose of a venturi in a carburettor? To cool down the engine during opera
+auto202406 | HSC-M4-T1-D47 | What is the function of a torque converter in an automatic transmission? To provide variable ge
+auto202407 | HSC-M4-T1-D50 | The diagram shows a drive shaft joint. What best describes the type of drive shaft shown in the
+auto202408 | HSC-M4-T1-D7 | Why was tetraethyl lead added to petrol in the past? To increase octane rating and reduce engin
+auto202409 | HSC-M4-T1-D106 | Which of the following profiles is the most suitable cutting surface to show high spots on a pa
+auto202410 | HSC-M4-T1-D21 | What is the advantage of using tapered pistons in high-performance engines? They reduce oil bur
+auto202411 | HSC-M2-T1-D26 | Identify a chemical hazard in a mechanical workshop.
+auto202412 | HSC-M4-T1-D114 | Outline a mandatory NSW regulation regarding the use of child restraints in vehicles.
+auto202413 | HSC-M4-T1-D89 | A section of a wiring diagram for 1200 (V) B110 model with manual transmission is shown. 1 2 Y 
+auto202414 | NULL | A component from the exhaust system of a vehicle is shown. Name the component and describe its 
+auto202415 | HSC-M4-T1-D16 | Explain TWO possible causes and their remedies for a car that is making unusual noises when in 
+auto202416 | HSC-M2-T1-D3 | Use the following information to answer parts and . Organisation A is a partnership-owned firm 
+elec202401 | HSC-M4-T2-D1 | The initial output of electricity from a rooftop solar panel is direct current. reactive power.
+elec202402 | HSC-M4-T2-D55 | Which of the following circuits ONLY contains resistors in series? Option A (image in original 
+elec202403 | HSC-M4-T2-D45 | What is the primary reason for using flux as part of the soldering process? It increases the vi
+elec202404 | HSC-M4-T2-D2 | A common circuit used in electronics is shown. + – What is the purpose of this circuit? To inve
+elec202405 | HSC-M4-T2-D59 | Which of the following symbols shows the correct representation of a variable resistor in AS 11
+elec202406 | HSC-M4-T2-D66 | An electronics bench testing device is displaying a waveform as shown. What is this device func
+elec202407 | HSC-M4-T2-D56 | A circuit is shown. 120 W 3.3 V What is the current flowing in this circuit? 0.0275 A 36.36 A 3
+elec202408 | HSC-M4-T2-D7 | The diagram shows a logic circuit with 1 indicating ‘on’ and 0 indicating ‘off’. X Option A (im
+elec202409 | HSC-M4-T2-D15 | What is the most common application of a Zener diode in electronics? Producing a stable referen
+elec202410 | HSC-M4-T2-D16 | What are the main functions of a single bipolar junction transistor in a circuit? Switching and
+elec202411 | NULL | Two types of a common electronic component are shown below. What is this component used for?
+elec202412 | HSC-M4-T2-D61 | Outline a use of circuit design software in electronics.
+elec202413 | HSC-M4-T2-D31 | Compare a thyristor and a thermistor, in terms of their use.
+elec202414 | HSC-M4-T2-D64 | Why is the internal resistance of an ammeter and a voltmeter different?
+elec202415 | HSC-M4-T2-D20 | Explain how components of a programmable integrated circuit (PIC) process input signals to prod
+elec202416 | HSC-M2-T1-D3 | Use the following information to answer parts and . Organisation A is a partnership-owned firm 
+graph202401 | HSC-M1-T1-D3 | What is the correct term for the drawing convention that shows internal details of a component 
+graph202402 | HSC-M3-T1-D17 | The building certifier needs to assess the size of the footings for a building project. Which d
+graph202403 | HSC-M3-T1-D24 | Which new technology would enhance the impact of a CAD-generated fly through? 3D printing Virtu
+graph202404 | HSC-M1-T1-D3 | A symbol is shown. What type of weld does the symbol indicate? Butt Spot Fillet Seam
+graph202405 | HSC-M3-T1-D26 | Which file type is commonly used in rapid prototyping to store 3D models? .DOCX .STL .TIFF .TXT
+graph202406 | HSC-M1-T1-D1 | A stepped block is shown. Which of these drawings of the stepped block is shown in first angle 
+graph202407 | HSC-M3-T1-D3 | A drawing is shown. Which of the following identifies this type of drawing? Isometric Oblique P
+graph202408 | HSC-M3-T1-D8 | Which is the correct term for a drawing of a mechanical device, with multiple components shown 
+graph202409 | HSC-M3-T1-D18 | What architectural style features streamlined geometric designs? Art Deco Georgian Victorian Fe
+graph202410 | HSC-M3-T1-D2 | Which of the following diagrams shows a cube in axonometric view? Option A (image in original e
+graph202411 | HSC-M3-T1-D17 | How is the slope of a block of land indicated on a site plan?
+graph202412 | HSC-M1-T1-D3 | Dimension the sizes of the curve and the circle on the drawing below to AS 1100 standards.
+graph202413 | HSC-M1-T1-D3 | An incomplete drawing of a M12 ◊ 2 bolt is provided. Complete the drawing to show: • the extern
+graph202414 | HSC-M3-T1-D7 | The side view of a pipe and flange are shown. In the space provided, sketch an auxiliary view o
+graph202415 | HSC-M3-T1-D3 | Compare the use of mechanical perspective and measuring point perspective. Support your answer 
+graph202416 | HSC-M2-T1-D3 | Use the following information to answer parts and . Organisation A is a partnership-owned firm 
+metal202401 | HSC-M1-T2-D25 | Which of the following metals is NOT an alloy? Brass Bronze Copper Pewter
+metal202402 | HSC-M3-T2-D4 | A shaper is shown. Which of the following terms best describes the motion of the ram? Linear Os
+metal202403 | HSC-M3-T2-D3 | Which of the following tools would best support cylindrical work while marking out? G clamp Vee
+metal202404 | HSC-M3-T2-D11 | What is the purpose of annealing? To case harden To temper the material To increase the ductili
+metal202405 | HSC-M3-T2-D21 | Which of the following cold chisels is used for cutting keyways and slots? Flat Cross-cut Round
+metal202406 | HSC-M3-T2-D4 | Which of the following processes should be used to join non-metal materials to steel? Brazing F
+metal202407 | HSC-M3-T2-D4 | Sheet metal edges are not strong and require additional support. Which of the following edge tr
+metal202408 | HSC-M3-T2-D1 | Students are to cut a 3 mm thick steel plate using an angle grinder fitted with a 100 mm cuttin
+metal202409 | HSC-M3-T2-D4 | Which part of a metal lathe is specifically used for thread cutting? Apron Feed rod Headstock L
+metal202410 | HSC-M3-T2-D4 | Which of the following statements applies ONLY to MIG welding? Protective gas is used to shield
+metal202411 | HSC-M3-T2-D3 | Identify the tool used to find the centre on the end of a cylindrical object.
+metal202412 | HSC-M3-T2-D4 | Outline the process of manually forming a copper bowl, using a hollowing block.
+metal202413 | HSC-M3-T2-D27 | Describe how the use of CNC machines can reduce manufacturing costs.
+metal202414 | HSC-M1-T2-D25 | Describe the advantages of using alloyed metals instead of non-alloyed metals.
+metal202415 | HSC-M3-T2-D4 | A workpiece of irregular shape is to be turned on a metal lathe. Explain the process of using a
+metal202416 | HSC-M2-T1-D3 | Use the following information to answer parts and . Organisation A is a partnership-owned firm 
+multi202401 | HSC-M4-T5-D2 | When text on a page is fully justified, it is aligned to the left. to the right. to the centre.
+multi202402 | HSC-M4-T5-D12 | Which file format supports transparent backgrounds? BMP JPEG PNG RAW
+multi202403 | HSC-M2-T2-D59 | A web-based survey uses a drop-down list to guide the user to the correct answer. limit the pos
+multi202404 | HSC-M2-T2-D43 | What characterises ‘motion capture’ as an animation technique? Drawing individual frames by han
+multi202405 | HSC-M2-T2-D65 | Which encoding technique maintains the original quality of an image while reducing the file siz
+multi202406 | HSC-M2-T2-D16 | What is the standard video size for full HD video? 1920 × 1080 2048 × 1080 3840 × 2160 7680 × 4
+multi202407 | HSC-M4-T5-D20 | What does the ‘hue’ adjustment tool primarily affect? Sharpness of the image Colour intensity o
+multi202408 | HSC-M2-T2-D65 | What advantage does progressive loading of web pages offer? Images can be re-sent if interrupte
+multi202409 | HSC-M2-T2-D16 | Which statement correctly describes the storage of analogue video? Analogue video is stored in 
+multi202410 | HSC-M2-T2-D40 | Which stage of the animation process typically involves the use of wire frames? Previsualisatio
+multi202411 | HSC-M2-T2-D10 | Identify ONE audio file type.
+multi202412 | HSC-M4-T5-D2 | Outline TWO advantages of using a serif font.
+multi202413 | HSC-M4-T5-D4 | Describe the differences between vector and bitmapped images.
+multi202414 | HSC-M2-T2-D21 | Explain how a director could use different camera shots in the multimedia production process. U
+multi202415 | HSC-M2-T2-D27 | Explain the process of using special effects in multimedia production. Use examples to support 
+multi202416 | HSC-M2-T1-D3 | Use the following information to answer parts and . Organisation A is a partnership-owned firm 
+timber202401 | HSC-M1-T2-D106 | Which of the following is an everyday use for timber filler in woodworking? Staining wood surfa
+timber202402 | HSC-M1-T2-D124 | Which is the most appropriate classification of a biscuit joint? Drawer Carcase Framing Widenin
+timber202403 | HSC-M1-T2-D41 | What does ‘DAR’ indicate? Dry and ready Dressed all round Durable and resistant Delaminated and
+timber202404 | HSC-M1-T2-D169 | Which saw is used to cut timber along the grain? Rip saw Back saw Coping saw Dovetail saw – 3 –
+timber202405 | HSC-M1-T2-D88 | What is the primary purpose of incorporating additional materials, such as glass, to woodworkin
+timber202406 | HSC-M1-T2-D56 | What is the primary environmental concern when purchasing exotic timbers? Durability Cost-effec
+timber202407 | HSC-M1-T2-D161 | Why should squareness and flatness be tested during dry assembly of components? To ensure the c
+timber202408 | HSC-M1-T2-D73 | Why do cabinet handles often include snap-off screws? They streamline the installation process.
+timber202409 | HSC-M1-T2-D101 | Why is it important to include a materials list when planning a woodworking project? It provide
+timber202410 | HSC-M1-T2-D115 | Which order is the most appropriate for component preparation of framed cabinet doors? Stiles, 
+timber202411 | HSC-M1-T2-D92 | Identify a robust and versatile adhesive that also acts as a feature on a finished project.
+timber202412 | HSC-M1-T2-D51 | Outline ONE strategy to minimise wastage and ensure economical usage of materials in woodworkin
+timber202413 | HSC-M1-T2-D169 | Describe the difference between a mitre saw and a compound mitre saw in their function and use.
+timber202414 | HSC-M1-T2-D169 | Explain ONE crucial feature that woodworkers should consider when selecting a router for their 
+timber202415 | HSC-M1-T2-D54 | Explain TWO work health and safety (WHS) risks that should be assessed prior to preparing and u
+timber202416 | HSC-M2-T1-D3 | Use the following information to answer parts and . Organisation A is a partnership-owned firm 
+auto202501 | HSC-M4-T1-D111 | A range of automotive tools is shown. Which of the following identifies the tools from left to 
+auto202502 | HSC-M4-T1-D2 | Which of the following is a primary advantage of using electric energy in automotive vehicles? 
+auto202503 | HSC-M4-T1-D31 | Which component helps regulate the engine’s temperature by controlling the flow of coolant? Fan
+auto202504 | HSC-M4-T1-D10 | What is an advantage of a diesel engine compared to a petrol engine in automotive applications?
+auto202505 | HSC-M4-T1-D78 | What is the purpose of the distributor in an automotive ignition system? . It sends an electric
+auto202506 | HSC-M4-T1-D35 | What is the primary function of a carburettor? To inject fuel into the combustion chamber of th
+auto202507 | HSC-M4-T1-D52 | Which part of the drive line system prevents tyre slippage by allowing wheels to rotate at vary
+auto202508 | HSC-M4-T1-D45 | What is the main purpose of a vehicle’s transmission system? To control the vehicle’s braking e
+auto202509 | HSC-M4-T1-D63 | Why is an anti-lock braking system important for vehicles? It prevents the engine from stalling
+auto202510 | HSC-M4-T1-D69 | How does torsion spring suspension provide support in a vehicle? By compressing air to cushion 
+auto202511 | HSC-M4-T1-D107 | A litre of paint covers an area of 5 m2. One litre of paint costs $120.00. How much, in paint o
+auto202512 | HSC-M4-T1-D132 | Outline ONE key government or statutory regulation that affects the automotive industry in New 
+auto202513 | HSC-M4-T1-D81 | Outline ONE way the electrical system in a motor vehicle can improve the safety of the vehicle’
+auto202514 | HSC-M4-T1-D17 | Describe how an engine and its components affect the overall performance of a vehicle.
+auto202515 | HSC-M4-T1-D116 | Explain the key factors that influence automotive design in terms of functionality and sustaina
+auto202516 | HSC-M2-T1-D19 | Describe the effects of legislative requirements on the sustainable practices and environmental
+elec202501 | HSC-M4-T2-D16 | Which of the following is a common application of field effect transistors (FETs)? Amplifying a
+elec202502 | HSC-M4-T2-D3 | What is the purpose of grounding (earthing) in an electrical circuit? To provide a safe path fo
+elec202503 | HSC-M4-T2-D15 | Which semiconductor specialises in current flowing in reverse? Signal diode Zener diode Schottk
+elec202504 | HSC-M4-T2-D49 | Using a multimeter, 0 volts is measured across a resistor in a circuit that should be receiving
+elec202505 | HSC-M4-T2-D56 | What is the resistance of an electric toaster rated at 8 amps on a domestic 240 V supply? 30 Ω 
+elec202506 | HSC-M4-T2-D33 | What is a common practical use of a solenoid in everyday applications? Storing electrical energ
+elec202507 | HSC-M4-T2-D45 | Components in a PCB are not functioning correctly. Upon inspection, a solder bridge is observed
+elec202508 | HSC-M4-T2-D15 | A circuit was designed that required a voltage regulator to ensure consistent voltage output. W
+elec202509 | HSC-M4-T2-D49 | A microcontroller power supply works well when powered through a USB, but fails to operate when
+elec202510 | HSC-M4-T2-D49 | An LED connected to a circuit is not lighting up, despite the power supply being on. The resist
+elec202511 | HSC-M4-T2-D4 | Outline the use of diodes in the rectification of AC current.
+elec202512 | HSC-M4-T2-D7 | Distinguish between a NOR gate and a NAND gate in a circuit.
+elec202513 | HSC-M4-T2-D59 | Sketch the TWO missing component symbols to complete the circuit diagram below. Battery Resisto
+elec202514 | HSC-M4-T2-D56 | A kitchen has three appliances connected in a 240 V circuit with an 8 A circuit breaker: • a 12
+elec202515 | HSC-M4-T2-D23 | Discuss factors that need to be considered when choosing insulation material suitable for high 
+elec202516 | HSC-M2-T1-D19 | Describe the effects of legislative requirements on the sustainable practices and environmental
+graph202501 | HSC-M1-T1-D1 | Which is the correct representation for third angle projection? Option A (image in original exa
+graph202502 | HSC-M3-T1-D8 | What is the main purpose of an assembly drawing? To provide exact measurements for the producti
+graph202503 | HSC-M3-T1-D13 | Why are layers used in CAD drawings? To decrease the file size for more complex models To autom
+graph202504 | HSC-M3-T1-D1 | What is an advantage of using isometric sketches for quick visualisation? They eliminate the ne
+graph202506 | HSC-M3-T1-D17 | Shadow diagrams are often required in building applications to local councils. What is the purp
+graph202507 | HSC-M3-T1-D3 | In cabinet and cavalier oblique projections, objects are drawn with receding edges at specific 
+graph202508 | NULL | What is the primary advantage of using the A system of paper sizes, such as A4 or A3, in design
+graph202509 | HSC-M3-T1-D17 | An architect prepares a drawing for a poolside change room. The shower area is recessed. What i
+graph202510 | HSC-M3-T1-D13 | A CAD operator draws a sphere and prism in 3D and then proceeds to create one final complex sha
+graph202511 | HSC-M3-T1-D21 | Outline ONE feature that would be included in a site plan for submission to a local council.
+graph202512 | HSC-M3-T1-D1 | Outline a process that can be used to hand draw a fillet curve in isometric projection, without
+graph202513 | HSC-M3-T1-D6 | Distinguish between the intended audiences of orthogonal and pictorial drawings.
+graph202514 | HSC-M3-T1-D1 | An object is drawn in third angle projection. TOP VIEW D E F SCALE 1:1 A B C G H I FRONT VIEW R
+graph202515 | HSC-M1-T1-D3 | A pictorial view of a machine part is shown. 28 R14 Keyway 4 × 2 ∅ ∅32 A 37 4 A Complete the fu
+graph202516 | HSC-M2-T1-D19 | Describe the effects of legislative requirements on the sustainable practices and environmental
+metal202501 | HSC-M3-T2-D21 | A hammer is shown. What type of hammer is this? Blocking Planishing Engineer’s ball pein Warrin
+metal202502 | HSC-M1-T2-D25 | What is brass an alloy of? Copper and tin Copper and zinc Tin and manganese Manganese and zinc
+metal202503 | HSC-M3-T2-D4 | Which machining process is the term knurling associated with? Milling Reaming Tapping Turning
+metal202504 | HSC-M1-T2-D31 | Which metal is applied to iron and steel in the galvanising process? Aluminium Nickel Tin Zinc
+metal202505 | HSC-M3-T2-D1 | Which row of the table indicates that a power tool is safe to use on initial inspection? Option
+metal202506 | HSC-M3-T2-D15 | Which of the following best describes buffing? . Pressing a metal surface against a calico whee
+metal202507 | HSC-M3-T2-D4 | The process of shaping metal by heating to red heat and hammering is known as forging. planishi
+metal202508 | HSC-M3-T2-D4 | What gas is used in MIG welding? Acetylene Argon Oxygen Radon
+metal202509 | HSC-M3-T2-D4 | Which manually-operated cutting tool can cut flat mild steel up to 5 mm thick? Nibbler Guilloti
+metal202510 | HSC-M3-T2-D11 | A steel part is heated until it is red hot, then quickly cooled in water to make it harder. Aft
+metal202511 | HSC-M3-T2-D3 | Outline ONE process that spring dividers can be used for.
+metal202512 | HSC-M1-T2-D36 | Outline differences between the use of rivets and screws.
+metal202513 | HSC-M3-T2-D4 | Why are cutting fluids used when machining metals?
+metal202514 | HSC-M3-T2-D4 | A cylindrical handle needs to have an internal thread produced. Describe the process by which t
+metal202515 | HSC-M1-T2-D34 | Compare the use of a hollow section steel tube to a solid steel section.
+metal202516 | HSC-M2-T1-D19 | Describe the effects of legislative requirements on the sustainable practices and environmental
+multi202501 | HSC-M4-T5-D2 | What is the primary purpose of paragraph formatting in a word processing document? To ensure do
+multi202502 | HSC-M4-T5-D13 | What is the primary advantage of using dedicated screenshot tools over keyboard shortcuts? They
+multi202503 | HSC-M2-T2-D65 | Which factor most commonly affects sound quality when streaming audio on the World Wide Web? Th
+multi202504 | HSC-M4-T5-D20 | Which of the following best describes the effect of using a contrast filter in multimedia desig
+multi202505 | HSC-M2-T2-D27 | Which of the following post-editing techniques is commonly used to create slow-motion effects i
+multi202506 | HSC-M2-T2-D38 | Which of the following is a characteristic of rigging in 3D animation? Modelling characters and
+multi202507 | HSC-M2-T2-D16 | Which of the following is most important for video player software to play videos smoothly? Hig
+multi202508 | HSC-M2-T2-D60 | What is a key limitation of PDF files that hinders collaboration and editing? Dependence on pro
+multi202509 | HSC-M2-T2-D31 | Which of the following best describes animation as a multimedia element? A special effect used 
+multi202510 | HSC-M2-T2-D53 | A website wants to implement an age verification system to restrict access to adult content. Wh
+multi202511 | HSC-M4-T5-D12 | Why would a PNG file format be used instead of a JPEG file format?
+multi202512 | HSC-M4-T5-D20 | The home page of a website includes a banner image that needs to be adjusted to match the site’
+multi202513 | HSC-M2-T2-D16 | How do analogue and digital video types differ?
+multi202514 | HSC-M2-T2-D43 | Explain the potential advantages of using motion capture technology in a short, animated film.
+multi202515 | HSC-M2-T2-D77 | Describe the ethical implications of image manipulation and enhancement.
+multi202516 | HSC-M2-T1-D19 | Describe the effects of legislative requirements on the sustainable practices and environmental
+timber202501 | HSC-M1-T2-D137 | What is the primary purpose of a stopped housing joint? To conceal the housing To prevent the j
+timber202502 | HSC-M1-T2-D139 | A spade bit is used to drill a hole through a piece of timber. What is the recommended method t
+timber202503 | HSC-M1-T2-D142 | What is the purpose of a tailstock in woodturning? To hold the tool rest in place To control th
+timber202504 | HSC-M1-T2-D100 | How does a pictorial drawing differ from a working drawing? It focuses on construction details.
+timber202505 | HSC-M1-T2-D148 | Laminated timber is considered to be stronger than solid timber because it uses synthetic mater
+timber202506 | HSC-M1-T2-D113 | What is the primary purpose of rails in cabinetmaking? To provide decorative elements on cabine
+timber202507 | HSC-M1-T2-D59 | What is a major disadvantage of using plywood in cabinetmaking? It cannot be cut or shaped easi
+timber202508 | HSC-M1-T2-D76 | When should mechanical drawer runners be used in cabinetmaking? When cost efficiency is more of
+timber202509 | HSC-M1-T2-D131 | Why is it recommended that a tenon be one third of the timber’s thickness? For efficient chisel
+timber202510 | HSC-M1-T2-D164 | What is the correct order of operations for finishing the timber of a completed woodworking pro
+timber202511 | HSC-M1-T2-D114 | A carcase has been assembled but still requires a drawer with runners to be made. Outline ONE c
+timber202512 | HSC-M1-T2-D134 | Outline ONE key characteristic of carcase joints in woodworking.
+timber202513 | HSC-M1-T2-D169 | What are the differences between the use of a band saw and a table saw? �����������������������
+timber202514 | HSC-M1-T2-D149 | The diagram shows a table with curved feature legs Describe a suitable bending process that cou
+timber202515 | HSC-M1-T2-D173 | Recommend set-up, startup and maintenance procedures for operating high-risk machinery.
+timber202516 | HSC-M2-T1-D19 | Describe the effects of legislative requirements on the sustainable practices and environmental

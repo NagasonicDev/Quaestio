@@ -1,0 +1,1919 @@
+{
+ "course_id": "legal-studies-2009",
+ "course_name": "Legal Studies (2009)",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / meaning of law"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / customs, rules and law"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / values and ethics"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / characteristics of just laws"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / nature of justice: procedural fairness (principles of natural justice); rule of law; anarchy; tyranny"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / define law"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / distinguish between customs, rules, laws, values and ethics"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / describe the characteristics of just laws and the nature of justice"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / define and investigate procedural fairness and the rule of law"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / define anarchy and tyranny"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / British origins, including: court hierarchy:; role and structure of parliament; legislative process; delegated legislation"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / outline the origin of common law"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the hierarchy and jurisdiction of state and federal courts"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / outline the role and structure of parliament and the legislative process"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / describe the function of delegated legislation"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / division of powers"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / separation of powers"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / role of the High Court"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / diverse nature of customary laws"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / spiritual basis, significance of land and water"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / family and kinship"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / ritual and oral traditions"
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / mediation and sanctions"
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / relevance to contemporary Australian law"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / differences between domestic and international law"
+  },
+  {
+   "code": "PRE-M1-T1-D26",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / state sovereignty"
+  },
+  {
+   "code": "PRE-M1-T1-D27",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / sources, including: role of:"
+  },
+  {
+   "code": "PRE-M1-T1-D28",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / explain the difference between division and separation of powers"
+  },
+  {
+   "code": "PRE-M1-T1-D29",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the role of the High Court in the interpretation of the constitution"
+  },
+  {
+   "code": "PRE-M1-T1-D30",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the characteristics of Aboriginal and Torres Strait Islander Peoples’ customary laws"
+  },
+  {
+   "code": "PRE-M1-T1-D31",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / outline the extent to which Aboriginal and Torres Strait Islander Peoples’ customary laws have been integrated into Australian law"
+  },
+  {
+   "code": "PRE-M1-T1-D32",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / distinguish between domestic and international law and examine the impact of state sovereignty"
+  },
+  {
+   "code": "PRE-M1-T1-D33",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the sources of international law"
+  },
+  {
+   "code": "PRE-M1-T1-D34",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / describe the role of the various organisations involved in international law"
+  },
+  {
+   "code": "PRE-M1-T1-D35",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine how international law impacts on and is incorporated into Australian law"
+  },
+  {
+   "code": "PRE-M1-T1-D36",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / public law"
+  },
+  {
+   "code": "PRE-M1-T1-D37",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / private law (civil law)"
+  },
+  {
+   "code": "PRE-M1-T1-D38",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / criminal and civil court procedures including legal personnel"
+  },
+  {
+   "code": "PRE-M1-T1-D39",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / common and civil law systems"
+  },
+  {
+   "code": "PRE-M1-T1-D40",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / outline different types of law"
+  },
+  {
+   "code": "PRE-M1-T1-D41",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / compare the purpose of different types of law"
+  },
+  {
+   "code": "PRE-M1-T1-D42",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / distinguish between civil and criminal court procedures"
+  },
+  {
+   "code": "PRE-M1-T1-D43",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / identify the role of legal personnel involved in the court process"
+  },
+  {
+   "code": "PRE-M1-T1-D44",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / compare and contrast common and civil law systems"
+  },
+  {
+   "code": "PRE-M1-T1-D45",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / conditions that give rise to law reform including: changing social values, new concepts of justice, new technology"
+  },
+  {
+   "code": "PRE-M1-T1-D46",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / agencies of reform including law reform commissions, parliamentary committees, the media, non-government organisations"
+  },
+  {
+   "code": "PRE-M1-T1-D47",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / mechanisms of reform including courts, parliaments, United Nations intergovernmental organizations"
+  },
+  {
+   "code": "PRE-M1-T1-D48",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the conditions that give rise to law reform"
+  },
+  {
+   "code": "PRE-M1-T1-D49",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / describe the role of agencies involved in law"
+  },
+  {
+   "code": "PRE-M1-T1-D50",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / reform"
+  },
+  {
+   "code": "PRE-M1-T1-D51",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the operation of the different mechanisms of reform"
+  },
+  {
+   "code": "PRE-M1-T1-D52",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / explain why terra nullius was an obstacle to achieving native title"
+  },
+  {
+   "code": "PRE-M1-T1-D53",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the roles of the High Court and federal parliament in recognising native title"
+  },
+  {
+   "code": "PRE-M1-T1-D54",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine major Australian native title decisions"
+  },
+  {
+   "code": "PRE-M1-T1-D55",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / assess the effectiveness of the law reform process in achieving just outcomes in regard to native title"
+  },
+  {
+   "code": "PRE-M1-T1-D56",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / identify and investigate a contemporary law reform issue"
+  },
+  {
+   "code": "PRE-M1-T1-D57",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / examine the conditions that give rise to the need for law reform, the agencies of reform and mechanisms of reform"
+  },
+  {
+   "code": "PRE-M1-T1-D58",
+   "path": "Year 11 / Law in practice / Contemporary legal issues / assess the effectiveness of law reform in achieving just outcomes with regard to a contemporary law reform issue."
+  },
+  {
+   "code": "PRE-M2-T5-D1",
+   "path": "Year 11 / The legal system / Law reform in action / the relationship between justice, law and society"
+  },
+  {
+   "code": "PRE-M2-T5-D2",
+   "path": "Year 11 / The legal system / Law reform in action / the development and reform of law as a reflection of society"
+  },
+  {
+   "code": "PRE-M2-T5-D3",
+   "path": "Year 11 / The legal system / Law reform in action / the importance of the rule of law"
+  },
+  {
+   "code": "PRE-M2-T5-D4",
+   "path": "Year 11 / The legal system / Law reform in action / the responsiveness of the legal system in dealing with issues"
+  },
+  {
+   "code": "PRE-M2-T5-D5",
+   "path": "Year 11 / The legal system / Law reform in action / the effectiveness of legal and non-legal mechanisms in achieving justice for individuals and society."
+  },
+  {
+   "code": "PRE-M2-T5-D6",
+   "path": "Year 11 / The legal system / Law reform in action / groups or individuals suffering disadvantage: events which highlight legal issues; individuals or groups in conflict with the state"
+  },
+  {
+   "code": "PRE-M2-T5-D7",
+   "path": "Year 11 / The legal system / Law reform in action / criminal or civil cases that raise issues of interest to students."
+  },
+  {
+   "code": "PRE-M2-T5-D8",
+   "path": "Year 11 / The legal system / Law reform in action / examine at least two contemporary issues that involve Australian citizen(s) in either a domestic or another jurisdiction"
+  },
+  {
+   "code": "PRE-M2-T5-D9",
+   "path": "Year 11 / The legal system / Law reform in action / describe the legal and non-legal responses to this issue"
+  },
+  {
+   "code": "PRE-M2-T5-D10",
+   "path": "Year 11 / The legal system / Law reform in action / evaluate the effectiveness of the legal and non-legal responses to this issue. Criteria to evaluate effectiveness could include:"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / relationship between justice, law and society"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / relationship between rights and responsibilities"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / balancing the rights of individuals with the needs of the state"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / role of the law in regulating technology"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / effectiveness of legal mechanisms for achieving justice for individuals and society."
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / the nature of individual rights"
+  },
+  {
+   "code": "PRE-M3-T3-D7",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / identify the types of rights to which individuals are entitled"
+  },
+  {
+   "code": "PRE-M3-T3-D8",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / outline the responsibilities of citizens within a society"
+  },
+  {
+   "code": "PRE-M3-T3-D9",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / explain the interrelationship between rights and responsibilities"
+  },
+  {
+   "code": "PRE-M3-T3-D10",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / the roles of the federal and state police and other law enforcement agencies"
+  },
+  {
+   "code": "PRE-M3-T3-D11",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / resolving disputes between individuals: resolving disputes with the state:"
+  },
+  {
+   "code": "PRE-M3-T3-D12",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / outline the roles of law enforcement agencies"
+  },
+  {
+   "code": "PRE-M3-T3-D13",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / identify and examine methods of resolving disputes between individuals"
+  },
+  {
+   "code": "PRE-M3-T3-D14",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / compare and contrast disputes between individuals and those between individuals and the state"
+  },
+  {
+   "code": "PRE-M3-T3-D15",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / assess the effectiveness of methods of resolving disputes"
+  },
+  {
+   "code": "PRE-M3-T3-D16",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / distinguish between non-legal and legal methods of enforcing rights and resolving disputes"
+  },
+  {
+   "code": "PRE-M3-T3-D17",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / assess the effectiveness of dispute resolution processes in achieving justice for and between individuals"
+  },
+  {
+   "code": "PRE-M3-T3-D18",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / impacts of technology on the individual"
+  },
+  {
+   "code": "PRE-M3-T3-D19",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / legal implications"
+  },
+  {
+   "code": "PRE-M3-T3-D20",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / difficulties with enforcing rights"
+  },
+  {
+   "code": "PRE-M3-T3-D21",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / future directions – the role of law reform"
+  },
+  {
+   "code": "PRE-M3-T3-D22",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / misuse of interactive technologies"
+  },
+  {
+   "code": "PRE-M3-T3-D23",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / cyber-bullying"
+  },
+  {
+   "code": "PRE-M3-T3-D24",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / genetic profiling"
+  },
+  {
+   "code": "PRE-M3-T3-D25",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / cyberspace"
+  },
+  {
+   "code": "PRE-M3-T3-D26",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / privacy issues"
+  },
+  {
+   "code": "PRE-M3-T3-D27",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / security and surveillance"
+  },
+  {
+   "code": "PRE-M3-T3-D28",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / mobile phones"
+  },
+  {
+   "code": "PRE-M3-T3-D29",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / copyright."
+  },
+  {
+   "code": "PRE-M3-T3-D30",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / explain the difficulties with enforcing rights"
+  },
+  {
+   "code": "PRE-M3-T3-D31",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / assess the role of law reform in addressing emerging technological issues and enforcing rights"
+  },
+  {
+   "code": "PRE-M3-T3-D32",
+   "path": "Year 11 / The individual and the law / Contemporary issue: The individual and technology / discuss the legal implications of the use of technology and its impact on the individual."
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / the changing understanding of the relationship between state sovereignty and human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / issues of compliance and non-compliance in relation to human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / the development of human rights as a reflection of changing values and ethical standards"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / the role of law reform in protecting human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / the effectiveness of legal and non-legal measures in protecting human rights."
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / the definition of human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / developing recognition of human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / formal statements of human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / define human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D10",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / outline how human rights have changed and developed over time"
+  },
+  {
+   "code": "HSC-M1-T3-D11",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / investigate the evolving recognition and importance of universal human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D12",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / examine major human rights documents and explain their contribution to the development of human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D13",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / state sovereignty"
+  },
+  {
+   "code": "HSC-M1-T3-D14",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / the roles of : statutory authorities; the incorporation of human rights into domestic law; the roles of:"
+  },
+  {
+   "code": "HSC-M1-T3-D15",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / assess the role of state sovereignty in promoting and enforcing human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D16",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / evaluate the effectiveness of international responses in promoting and enforcing human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D17",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / outline how human rights are incorporated into Australian domestic law"
+  },
+  {
+   "code": "HSC-M1-T3-D18",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / evaluate the effectiveness of Australian responses in promoting and enforcing human rights"
+  },
+  {
+   "code": "HSC-M1-T3-D19",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / discuss the arguments for and against a Charter of Rights for Australia"
+  },
+  {
+   "code": "HSC-M1-T3-D20",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / Issues could include:"
+  },
+  {
+   "code": "HSC-M1-T3-D21",
+   "path": "Year 12 / Human rights / Contemporary issue concerning the promotion and/or enforcement of human rights / investigate a contemporary human rights issue and evaluate the effectiveness of legal and non-legal responses to the issue."
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the role of the law in encouraging cooperation and resolving conflict in regard to consumers"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / issues of compliance and non-compliance"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / laws relating to consumers as a reflection of changing values and ethical standards"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the role of law reform in recognising the rights of consumers"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the effectiveness of legal and non-legal responses in achieving justice for consumers."
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the developing need for consumer protection"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the definition of consumer"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / objectives of consumer laws"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / contracts – types, elements, terms, exclusion clauses"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / standards implied by statutes"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / unjust contracts – common law and statutory protection"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the role of negligence in consumer protection"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / regulation of marketing and advertising: statutory protection, non-statutory controls on advertising"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / occupational licensing"
+  },
+  {
+   "code": "HSC-M2-T2-D15",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / outline the developing need for consumer protection"
+  },
+  {
+   "code": "HSC-M2-T2-D16",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / outline the objectives of consumer law"
+  },
+  {
+   "code": "HSC-M2-T2-D17",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / examine the nature, function and regulation of contracts"
+  },
+  {
+   "code": "HSC-M2-T2-D18",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / evaluate the effectiveness of the regulation of marketing, advertising and product certification in achieving consumer protection"
+  },
+  {
+   "code": "HSC-M2-T2-D19",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / examine the role of occupational licensing in achieving consumer protection"
+  },
+  {
+   "code": "HSC-M2-T2-D20",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / awareness and self-help"
+  },
+  {
+   "code": "HSC-M2-T2-D21",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / state government organisations"
+  },
+  {
+   "code": "HSC-M2-T2-D22",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / federal government organisations"
+  },
+  {
+   "code": "HSC-M2-T2-D23",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / industry organisations"
+  },
+  {
+   "code": "HSC-M2-T2-D24",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the role of tribunals and courts"
+  },
+  {
+   "code": "HSC-M2-T2-D25",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the role of non-government organisations"
+  },
+  {
+   "code": "HSC-M2-T2-D26",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the role of the media"
+  },
+  {
+   "code": "HSC-M2-T2-D27",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / consumer remedies: individual, society"
+  },
+  {
+   "code": "HSC-M2-T2-D28",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / recognise the importance of awareness and self-help"
+  },
+  {
+   "code": "HSC-M2-T2-D29",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / examine the range of different remedies available to consumers"
+  },
+  {
+   "code": "HSC-M2-T2-D30",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / evaluate the effectiveness of non-legal and legal measures in achieving justice for consumers"
+  },
+  {
+   "code": "HSC-M2-T2-D31",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / credit"
+  },
+  {
+   "code": "HSC-M2-T2-D32",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / product certification"
+  },
+  {
+   "code": "HSC-M2-T2-D33",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / marketing innovations"
+  },
+  {
+   "code": "HSC-M2-T2-D34",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / technology."
+  },
+  {
+   "code": "HSC-M2-T2-D35",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / identify and investigate these contemporary issues involving the protection of consumers and evaluate the effectiveness of legal and non-legal responses to these issues."
+  },
+  {
+   "code": "HSC-M2-T2-D36",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / assisting student learning"
+  },
+  {
+   "code": "HSC-M2-T2-D37",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / evaluating and improving teaching and learning programs"
+  },
+  {
+   "code": "HSC-M2-T2-D38",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / providing evidence of satisfactory achievement and completion in the Preliminary course"
+  },
+  {
+   "code": "HSC-M2-T2-D39",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / providing the Higher School certificate results."
+  },
+  {
+   "code": "HSC-M2-T2-D40",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / an assessment mark derived from the mark submitted by the school and produced in accordance with NESA’s requirements for the School-based assessment program"
+  },
+  {
+   "code": "HSC-M2-T2-D41",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / an examination mark derived from the HSC external examination"
+  },
+  {
+   "code": "HSC-M2-T2-D42",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / an HSC mark, which is the average of the assessment mark and the examination mark"
+  },
+  {
+   "code": "HSC-M2-T2-D43",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / a performance band, determined by the HSC mark."
+  },
+  {
+   "code": "HSC-M2-T2-D44",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the knowledge, skills and understanding expected to be learnt by students – the syllabus standards"
+  },
+  {
+   "code": "HSC-M2-T2-D45",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the levels of achievement of the knowledge, skills and understanding – the performance standards."
+  },
+  {
+   "code": "HSC-M2-T2-D46",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / the performance descriptions that summarise the different levels of performance of the course outcomes"
+  },
+  {
+   "code": "HSC-M2-T2-D47",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / HSC examination papers and marking guidelines"
+  },
+  {
+   "code": "HSC-M2-T2-D48",
+   "path": "Year 12 / Option 1: Consumers / Consumer redress and remedies / samples of students’ achievement, collected in the Standards Packages."
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the impact of state sovereignty on international cooperation and the resolution of conflict in regard to environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / issues of compliance and non-compliance"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the impact of changing values and ethical standards on environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the role of law reform in protecting the global environment"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the effectiveness of legal and non-legal responses in protecting the environment."
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / The nature of global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the definition of global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the development of global environmental law"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the need for global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the importance of ecologically sustainable development: biodiversity, intergenerational equity, intragenerational equity, the precautionary principle"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / define global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D12",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / outline the development of global environmental law"
+  },
+  {
+   "code": "HSC-M3-T2-D13",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / outline the need for laws to protect the global environment"
+  },
+  {
+   "code": "HSC-M3-T2-D14",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / Responses to global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D15",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / nation state and state sovereignty"
+  },
+  {
+   "code": "HSC-M3-T2-D16",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the United Nations"
+  },
+  {
+   "code": "HSC-M3-T2-D17",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / international instruments"
+  },
+  {
+   "code": "HSC-M3-T2-D18",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / courts and conferences"
+  },
+  {
+   "code": "HSC-M3-T2-D19",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / intergovernmental organisations"
+  },
+  {
+   "code": "HSC-M3-T2-D20",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / non-government organisations"
+  },
+  {
+   "code": "HSC-M3-T2-D21",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the media"
+  },
+  {
+   "code": "HSC-M3-T2-D22",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / Australia’s federal structure"
+  },
+  {
+   "code": "HSC-M3-T2-D23",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / examine the role of sovereignty in assisting and impeding the resolution of global environmental protection issues"
+  },
+  {
+   "code": "HSC-M3-T2-D24",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / outline the structure and function of the United Nations in relation to environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D25",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / explain the effects of Australia’s federal structure in responding to global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D26",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / evaluate the effectiveness of legal and non-legal measures in protecting the global environment"
+  },
+  {
+   "code": "HSC-M3-T2-D27",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / Contemporary issues concerning global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D28",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / the role of the law in relation to global threats to the environment"
+  },
+  {
+   "code": "HSC-M3-T2-D29",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / legal responses to conflict between the demand for resources and global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D30",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / Australia’s responses to international initiatives for global environmental protection"
+  },
+  {
+   "code": "HSC-M3-T2-D31",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / barriers to achieving an international response to global environmental protection."
+  },
+  {
+   "code": "HSC-M3-T2-D32",
+   "path": "Year 12 / Option 2: Global environmental protection / Responses to global environmental protection / identify and investigate these contemporary issues involving the protection of the global environment and evaluate the effectiveness of legal and non-legal responses to these issues."
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / the role of the law in encouraging cooperation and resolving conflict in regard to family"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / issues of compliance and non-compliance"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / changes to family law as a response to changing values in the community"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / the role of law reform in achieving just outcomes for family members and society"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / the effectiveness of legal and non-legal responses in achieving just outcomes for family members."
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / the concept of family law"
+  },
+  {
+   "code": "HSC-M4-T2-D7",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / legal requirements of marriage"
+  },
+  {
+   "code": "HSC-M4-T2-D8",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / alternative family relationships"
+  },
+  {
+   "code": "HSC-M4-T2-D9",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / legal rights and obligations of parents and children"
+  },
+  {
+   "code": "HSC-M4-T2-D10",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / adoption"
+  },
+  {
+   "code": "HSC-M4-T2-D11",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / discuss the difficulty of defining ‘family’ and the changing concepts of family"
+  },
+  {
+   "code": "HSC-M4-T2-D12",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / distinguish between state and federal jurisdiction in family law"
+  },
+  {
+   "code": "HSC-M4-T2-D13",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / outline the legal requirements of a valid marriage"
+  },
+  {
+   "code": "HSC-M4-T2-D14",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / explain the legal rights and obligations of parents and children, including those derived from international law"
+  },
+  {
+   "code": "HSC-M4-T2-D15",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / divorce"
+  },
+  {
+   "code": "HSC-M4-T2-D16",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / legal consequences of separation"
+  },
+  {
+   "code": "HSC-M4-T2-D17",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / dealing with domestic violence"
+  },
+  {
+   "code": "HSC-M4-T2-D18",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / the roles of:"
+  },
+  {
+   "code": "HSC-M4-T2-D19",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / outline the legal processes involved in dealing with problems in family relationships"
+  },
+  {
+   "code": "HSC-M4-T2-D20",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / evaluate the effectiveness of the law in protecting victims of domestic violence"
+  },
+  {
+   "code": "HSC-M4-T2-D21",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / examine the role of non-government organisations and the media in relation to family law"
+  },
+  {
+   "code": "HSC-M4-T2-D22",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / evaluate the effectiveness of the law in achieving justice for parties involved in relationship breakdowns"
+  },
+  {
+   "code": "HSC-M4-T2-D23",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / recognition of same-sex relationships"
+  },
+  {
+   "code": "HSC-M4-T2-D24",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / the changing nature of parental responsibility"
+  },
+  {
+   "code": "HSC-M4-T2-D25",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / surrogacy and birth technologies"
+  },
+  {
+   "code": "HSC-M4-T2-D26",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / care and protection of children."
+  },
+  {
+   "code": "HSC-M4-T2-D27",
+   "path": "Year 12 / Option 3: Family / Responses to problems in family relationships / identify and investigate these contemporary issues relating to family law and evaluate the effectiveness of legal and non-legal responses to these issues."
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / the impact of state sovereignty in encouraging cooperation and resolving conflict regarding indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / issues of compliance and non-compliance"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / laws relating to indigenous peoples as a reflection of changing values and ethical standards"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / the role of law reform in recognising the rights of indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D5",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / the effectiveness of legal and non-legal responses in achieving justice for indigenous peoples."
+  },
+  {
+   "code": "HSC-M5-T2-D6",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / Nature of the law and indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D7",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / definition of ‘indigenous peoples’"
+  },
+  {
+   "code": "HSC-M5-T2-D8",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / loss of rights of indigenous peoples over time"
+  },
+  {
+   "code": "HSC-M5-T2-D9",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / legal recognition of indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D10",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / importance of the right to self-determination"
+  },
+  {
+   "code": "HSC-M5-T2-D11",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / define ‘indigenous peoples’"
+  },
+  {
+   "code": "HSC-M5-T2-D12",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / outline the loss of rights of indigenous peoples globally"
+  },
+  {
+   "code": "HSC-M5-T2-D13",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / outline the need for legal recognition of indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D14",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / explain the difficulties faced by indigenous peoples in determining their own future"
+  },
+  {
+   "code": "HSC-M5-T2-D15",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / Responses to indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D16",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / The roles of:"
+  },
+  {
+   "code": "HSC-M5-T2-D17",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / Australia’s federal structure"
+  },
+  {
+   "code": "HSC-M5-T2-D18",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / examine the role of sovereignty in assisting and impeding the recognition of the rights of indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D19",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / evaluate the effectiveness of legal and non-legal measures in achieving justice for indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D20",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / explain the role of Australia’s federal structure in responding to the needs of indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D21",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / Contemporary issues concerning indigenous peoples"
+  },
+  {
+   "code": "HSC-M5-T2-D22",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / loss of cultural rights including language"
+  },
+  {
+   "code": "HSC-M5-T2-D23",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / land rights"
+  },
+  {
+   "code": "HSC-M5-T2-D24",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / legal rights to natural resources"
+  },
+  {
+   "code": "HSC-M5-T2-D25",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / intellectual property rights."
+  },
+  {
+   "code": "HSC-M5-T2-D26",
+   "path": "Year 12 / Option 4: Indigenous peoples / Responses to indigenous peoples / identify and investigate these contemporary issues involving the rights of indigenous peoples and evaluate the effectiveness of legal and non-legal responses to these issues."
+  },
+  {
+   "code": "HSC-M6-T1-D1",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / the role of the law in encouraging cooperation and resolving conflict in regard to shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D2",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / issues of compliance and non-compliance"
+  },
+  {
+   "code": "HSC-M6-T1-D3",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / laws relating to shelter as a reflection of changing values and ethical standards"
+  },
+  {
+   "code": "HSC-M6-T1-D4",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / the role of law reform in protecting the rights of those seeking shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D5",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / the effectiveness of the legal and non-legal responses in achieving just outcomes regarding the provision of shelter."
+  },
+  {
+   "code": "HSC-M6-T1-D6",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / The nature of shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D7",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / definition of ‘shelter’"
+  },
+  {
+   "code": "HSC-M6-T1-D8",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / right to shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D9",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / obligation to provide shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D10",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / types of shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D11",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / define ‘shelter’ and outline the extent of laws concerning shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D12",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / discuss the right to shelter according to international law"
+  },
+  {
+   "code": "HSC-M6-T1-D13",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / examine the obligation of state and federal governments to provide shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D14",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / describe the types of shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D15",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / purchasing including: leasing including:"
+  },
+  {
+   "code": "HSC-M6-T1-D16",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / securing other types of shelter such as: aged care, residential parks and squats"
+  },
+  {
+   "code": "HSC-M6-T1-D17",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / dispute resolution mechanisms"
+  },
+  {
+   "code": "HSC-M6-T1-D18",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / the roles of:"
+  },
+  {
+   "code": "HSC-M6-T1-D19",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / outline the process of securing shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D20",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / assess the role of the legal system in protecting those securing and providing shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D21",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / evaluate the effectiveness of legal and non-legal measures in achieving justice for people seeking shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D22",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / Contemporary issues concerning shelter"
+  },
+  {
+   "code": "HSC-M6-T1-D23",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / affordability"
+  },
+  {
+   "code": "HSC-M6-T1-D24",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / discrimination"
+  },
+  {
+   "code": "HSC-M6-T1-D25",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / homelessness"
+  },
+  {
+   "code": "HSC-M6-T1-D26",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / social housing including public housing, cooperative housing and community housing."
+  },
+  {
+   "code": "HSC-M6-T1-D27",
+   "path": "Year 12 / Option 5: Shelter / The nature of shelter / identify and investigate these contemporary issues involving the provision of shelter and evaluate the effectiveness of legal and non-legal responses to these issues."
+  },
+  {
+   "code": "HSC-M7-T2-D1",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / the role of the law in encouraging cooperation and resolving conflict in the workplace"
+  },
+  {
+   "code": "HSC-M7-T2-D2",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / issues of compliance and non-compliance"
+  },
+  {
+   "code": "HSC-M7-T2-D3",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / laws relating to the workplace as a reflection of changing values and ethical standards"
+  },
+  {
+   "code": "HSC-M7-T2-D4",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / the role of law reform in recognising rights and enforcing responsibilities in the workplace"
+  },
+  {
+   "code": "HSC-M7-T2-D5",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / the effectiveness of legal and non-legal responses in achieving justice in the workplace."
+  },
+  {
+   "code": "HSC-M7-T2-D6",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / the changing nature of workplace law over time"
+  },
+  {
+   "code": "HSC-M7-T2-D7",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / contracts: awards and agreements; statutory conditions"
+  },
+  {
+   "code": "HSC-M7-T2-D8",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / outline the developing need for workplace law"
+  },
+  {
+   "code": "HSC-M7-T2-D9",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / outline the sources of workplace regulations"
+  },
+  {
+   "code": "HSC-M7-T2-D10",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / describe the rights and responsibilities of employers and employees in the workplace"
+  },
+  {
+   "code": "HSC-M7-T2-D11",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / industrial relations – the state and federal framework"
+  },
+  {
+   "code": "HSC-M7-T2-D12",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / negotiations between employers and employees"
+  },
+  {
+   "code": "HSC-M7-T2-D13",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / dispute resolution mechanisms"
+  },
+  {
+   "code": "HSC-M7-T2-D14",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / the roles of: remuneration"
+  },
+  {
+   "code": "HSC-M7-T2-D15",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / examine the legal framework for workplace law"
+  },
+  {
+   "code": "HSC-M7-T2-D16",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / evaluate the effectiveness of dispute resolution processes"
+  },
+  {
+   "code": "HSC-M7-T2-D17",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / assess the role of the legal system in regulating the workplace"
+  },
+  {
+   "code": "HSC-M7-T2-D18",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / outline how remuneration is determined"
+  },
+  {
+   "code": "HSC-M7-T2-D19",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / evaluate the effectiveness of legal and non-legal measures in protecting and recognising workplace rights"
+  },
+  {
+   "code": "HSC-M7-T2-D20",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / discrimination"
+  },
+  {
+   "code": "HSC-M7-T2-D21",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / safety"
+  },
+  {
+   "code": "HSC-M7-T2-D22",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / termination of employment"
+  },
+  {
+   "code": "HSC-M7-T2-D23",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / leave."
+  },
+  {
+   "code": "HSC-M7-T2-D24",
+   "path": "Year 12 / Option 6: Workplace / Regulation of the workplace / identify and investigate these contemporary issues involving workplace law and evaluate the effectiveness of legal and non-legal responses to these issues."
+  },
+  {
+   "code": "HSC-M7-T3-D1",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / specifies the various assessment tasks and the weightings allocated to each task"
+  },
+  {
+   "code": "HSC-M7-T3-D2",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / provides a schedule of the tasks designed for the whole course."
+  },
+  {
+   "code": "HSC-M7-T3-D3",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / assessment tasks are designed to focus on outcomes"
+  },
+  {
+   "code": "HSC-M7-T3-D4",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / the types of assessment tasks are appropriate for the outcomes being assessed"
+  },
+  {
+   "code": "HSC-M7-T3-D5",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / students are given the opportunity to demonstrate their level of achievement of the outcomes in a range of different task types"
+  },
+  {
+   "code": "HSC-M7-T3-D6",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / tasks reflect the weightings and components specified in the relevant syllabus"
+  },
+  {
+   "code": "HSC-M7-T3-D7",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / students know the assessment criteria before they begin the task"
+  },
+  {
+   "code": "HSC-M7-T3-D8",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / marking guidelines for each task are linked to the standards by including the wording of all or parts of the syllabus outcomes and relevant performance descriptions"
+  },
+  {
+   "code": "HSC-M7-T3-D9",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / marks earned on individual tasks are expressed on a scale sufficiently wide to reflect adequately the relative differences in student performances."
+  },
+  {
+   "code": "HSC-M7-T3-D10",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / students receive meaningful feedback about what they are able to do and what they need to do in order to improve their level of performance"
+  },
+  {
+   "code": "HSC-M7-T3-D11",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / the ranking and relative difference between students result from different levels of achievement of the specified standards"
+  },
+  {
+   "code": "HSC-M7-T3-D12",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / marks submitted to NESA for each course are on a scale sufficiently wide to reflect adequately the relative differences in student performances."
+  },
+  {
+   "code": "HSC-M7-T3-D13",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / measures of objectives that address values and attitudes should not be included in school-based assessments of students’ achievements. As these objectives are important elements of any course, schools may decide to report on them separately to students and parents, perhaps using some form of descriptive statements"
+  },
+  {
+   "code": "HSC-M7-T3-D14",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / measures that reflect student conduct should not be included."
+  },
+  {
+   "code": "HSC-M7-T3-D15",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / 4 assessment tasks, including:"
+  },
+  {
+   "code": "HSC-M7-T3-D16",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / a minimum weighting for an individual task of 10%"
+  },
+  {
+   "code": "HSC-M7-T3-D17",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / a maximum weighting for an individual task of 40%"
+  },
+  {
+   "code": "HSC-M7-T3-D18",
+   "path": "Year 12 / Option 6: Workplace / Contemporary issues concerning the workplace / a task that is an assignment or investigation-style task with a weighting of 30%."
+  },
+  {
+   "code": "HSC-M8-T2-D1",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the role of law in encouraging cooperation and resolving conflict in regard to world order"
+  },
+  {
+   "code": "HSC-M8-T2-D2",
+   "path": "Year 12 / Option 7: World order / Responses to world order / issues of compliance and non-compliance"
+  },
+  {
+   "code": "HSC-M8-T2-D3",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the impact of changing values and ethical standards on world order"
+  },
+  {
+   "code": "HSC-M8-T2-D4",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the role of law reform in promoting and maintaining world order"
+  },
+  {
+   "code": "HSC-M8-T2-D5",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the effectiveness of legal and non-legal responses in promoting and maintaining world order."
+  },
+  {
+   "code": "HSC-M8-T2-D6",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the meaning of ‘world order’"
+  },
+  {
+   "code": "HSC-M8-T2-D7",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the need for world order"
+  },
+  {
+   "code": "HSC-M8-T2-D8",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the development of world order over time"
+  },
+  {
+   "code": "HSC-M8-T2-D9",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the nature of conflict: inter-state and intra-state"
+  },
+  {
+   "code": "HSC-M8-T2-D10",
+   "path": "Year 12 / Option 7: World order / Responses to world order / access to resources as a source of conflict"
+  },
+  {
+   "code": "HSC-M8-T2-D11",
+   "path": "Year 12 / Option 7: World order / Responses to world order / discuss the concept of ‘world order’"
+  },
+  {
+   "code": "HSC-M8-T2-D12",
+   "path": "Year 12 / Option 7: World order / Responses to world order / outline the evolving nature of world order"
+  },
+  {
+   "code": "HSC-M8-T2-D13",
+   "path": "Year 12 / Option 7: World order / Responses to world order / describe the need for world order"
+  },
+  {
+   "code": "HSC-M8-T2-D14",
+   "path": "Year 12 / Option 7: World order / Responses to world order / explain the implications of the nature of conflict on achieving world order"
+  },
+  {
+   "code": "HSC-M8-T2-D15",
+   "path": "Year 12 / Option 7: World order / Responses to world order / Responses to world order"
+  },
+  {
+   "code": "HSC-M8-T2-D16",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the roles of: political negotiation, persuasion and the use of force"
+  },
+  {
+   "code": "HSC-M8-T2-D17",
+   "path": "Year 12 / Option 7: World order / Responses to world order / examine the role of sovereignty in assisting and impeding the resolution of world order issues"
+  },
+  {
+   "code": "HSC-M8-T2-D18",
+   "path": "Year 12 / Option 7: World order / Responses to world order / explain the role of Australia’s federal government in responding to world order"
+  },
+  {
+   "code": "HSC-M8-T2-D19",
+   "path": "Year 12 / Option 7: World order / Responses to world order / evaluate the effectiveness of legal and non-legal measures in resolving conflict and working towards world order"
+  },
+  {
+   "code": "HSC-M8-T2-D20",
+   "path": "Year 12 / Option 7: World order / Responses to world order / Contemporary issues concerning world order"
+  },
+  {
+   "code": "HSC-M8-T2-D21",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the principle of ‘responsibility to protect’"
+  },
+  {
+   "code": "HSC-M8-T2-D22",
+   "path": "Year 12 / Option 7: World order / Responses to world order / regional and global situations that threaten peace and security"
+  },
+  {
+   "code": "HSC-M8-T2-D23",
+   "path": "Year 12 / Option 7: World order / Responses to world order / the success of global cooperation in achieving world order"
+  },
+  {
+   "code": "HSC-M8-T2-D24",
+   "path": "Year 12 / Option 7: World order / Responses to world order / rules regarding the conduct of hostilities."
+  },
+  {
+   "code": "HSC-M8-T2-D25",
+   "path": "Year 12 / Option 7: World order / Responses to world order / identify and investigate these contemporary issues involving world order and evaluate the effectiveness of legal and non-legal responses to these issues."
+  },
+  {
+   "code": "HSC-M9-T1-D1",
+   "path": "Year 12 / Crime / The nature of crime / the role of discretion in the criminal justice system"
+  },
+  {
+   "code": "HSC-M9-T1-D2",
+   "path": "Year 12 / Crime / The nature of crime / issues of compliance and non-compliance in regard to criminal law"
+  },
+  {
+   "code": "HSC-M9-T1-D3",
+   "path": "Year 12 / Crime / The nature of crime / the extent to which law reflects moral and ethical standards"
+  },
+  {
+   "code": "HSC-M9-T1-D4",
+   "path": "Year 12 / Crime / The nature of crime / the role of law reform in the criminal justice system"
+  },
+  {
+   "code": "HSC-M9-T1-D5",
+   "path": "Year 12 / Crime / The nature of crime / the extent to which the law balances the rights of victims, offenders and society"
+  },
+  {
+   "code": "HSC-M9-T1-D6",
+   "path": "Year 12 / Crime / The nature of crime / the effectiveness of legal and non-legal measures in achieving justice."
+  },
+  {
+   "code": "HSC-M9-T1-D7",
+   "path": "Year 12 / Crime / The nature of crime / the meaning of crime"
+  },
+  {
+   "code": "HSC-M9-T1-D8",
+   "path": "Year 12 / Crime / The nature of crime / the elements of crime: actus reus, mens rea"
+  },
+  {
+   "code": "HSC-M9-T1-D9",
+   "path": "Year 12 / Crime / The nature of crime / strict liability offences"
+  },
+  {
+   "code": "HSC-M9-T1-D10",
+   "path": "Year 12 / Crime / The nature of crime / causation"
+  },
+  {
+   "code": "HSC-M9-T1-D11",
+   "path": "Year 12 / Crime / The nature of crime / categories of crime includingoffences against the person, offences against the sovereign, economic offences (property/white collar/computer), drug offences, driving offences, public order offences, preliminary crimes (attempts and conspiracy)"
+  },
+  {
+   "code": "HSC-M9-T1-D12",
+   "path": "Year 12 / Crime / The nature of crime / summary and indictable offences"
+  },
+  {
+   "code": "HSC-M9-T1-D13",
+   "path": "Year 12 / Crime / The nature of crime / parties to a crime including principal in the first degree, principal in the second degree, accessory before the fact, accessory after the fact"
+  },
+  {
+   "code": "HSC-M9-T1-D14",
+   "path": "Year 12 / Crime / The nature of crime / factors affecting criminal behaviour"
+  },
+  {
+   "code": "HSC-M9-T1-D15",
+   "path": "Year 12 / Crime / The nature of crime / crime prevention: situational and social"
+  },
+  {
+   "code": "HSC-M9-T1-D16",
+   "path": "Year 12 / Crime / The nature of crime / describe the nature of crime"
+  },
+  {
+   "code": "HSC-M9-T1-D17",
+   "path": "Year 12 / Crime / The nature of crime / recognise the different categories of crime"
+  },
+  {
+   "code": "HSC-M9-T1-D18",
+   "path": "Year 12 / Crime / The nature of crime / define summary and indictable offences"
+  },
+  {
+   "code": "HSC-M9-T1-D19",
+   "path": "Year 12 / Crime / The nature of crime / examine a range of factors that may lead to criminal behaviour"
+  },
+  {
+   "code": "HSC-M9-T1-D20",
+   "path": "Year 12 / Crime / The nature of crime / investigate a range of situational and social crime prevention techniques"
+  },
+  {
+   "code": "HSC-M9-T1-D21",
+   "path": "Year 12 / Crime / The nature of crime / police powers"
+  },
+  {
+   "code": "HSC-M9-T1-D22",
+   "path": "Year 12 / Crime / The nature of crime / reporting crime"
+  },
+  {
+   "code": "HSC-M9-T1-D23",
+   "path": "Year 12 / Crime / The nature of crime / investigating crime: gathering evidence, use of technology, search and seizure, use of warrants"
+  },
+  {
+   "code": "HSC-M9-T1-D24",
+   "path": "Year 12 / Crime / The nature of crime / arrest and charge, summons, warrants"
+  },
+  {
+   "code": "HSC-M9-T1-D25",
+   "path": "Year 12 / Crime / The nature of crime / bail or remand"
+  },
+  {
+   "code": "HSC-M9-T1-D26",
+   "path": "Year 12 / Crime / The nature of crime / detention and interrogation, rights of suspects"
+  },
+  {
+   "code": "HSC-M9-T1-D27",
+   "path": "Year 12 / Crime / The nature of crime / discuss the powers of police in the criminal process"
+  },
+  {
+   "code": "HSC-M9-T1-D28",
+   "path": "Year 12 / Crime / The nature of crime / examine the reporting and investigating of crime"
+  },
+  {
+   "code": "HSC-M9-T1-D29",
+   "path": "Year 12 / Crime / The nature of crime / assess the effectiveness of the criminal investigation process as a means of achieving justice"
+  },
+  {
+   "code": "HSC-M9-T1-D30",
+   "path": "Year 12 / Crime / The nature of crime / court jurisdiction"
+  },
+  {
+   "code": "HSC-M9-T1-D31",
+   "path": "Year 12 / Crime / The nature of crime / the adversary system"
+  },
+  {
+   "code": "HSC-M9-T1-D32",
+   "path": "Year 12 / Crime / The nature of crime / legal personnel: magistrate, judge, police prosecutor, Director of Public Prosecution, Public Defenders"
+  },
+  {
+   "code": "HSC-M9-T1-D33",
+   "path": "Year 12 / Crime / The nature of crime / pleas, charge negotiation"
+  },
+  {
+   "code": "HSC-M9-T1-D34",
+   "path": "Year 12 / Crime / The nature of crime / legal representation, including legal aid"
+  },
+  {
+   "code": "HSC-M9-T1-D35",
+   "path": "Year 12 / Crime / The nature of crime / burden and standard of proof"
+  },
+  {
+   "code": "HSC-M9-T1-D36",
+   "path": "Year 12 / Crime / The nature of crime / use of evidence, including witnesses"
+  },
+  {
+   "code": "HSC-M9-T1-D37",
+   "path": "Year 12 / Crime / The nature of crime / defences to criminal charges: the role of juries, including verdicts"
+  },
+  {
+   "code": "HSC-M9-T1-D38",
+   "path": "Year 12 / Crime / The nature of crime / describe the role of courts in the criminal justice process"
+  },
+  {
+   "code": "HSC-M9-T1-D39",
+   "path": "Year 12 / Crime / The nature of crime / discuss the use of the adversary system as a means of achieving justice"
+  },
+  {
+   "code": "HSC-M9-T1-D40",
+   "path": "Year 12 / Crime / The nature of crime / examine the role of legal representation in the criminal trial"
+  },
+  {
+   "code": "HSC-M9-T1-D41",
+   "path": "Year 12 / Crime / The nature of crime / assess the use of defences to criminal charges in achieving justice"
+  },
+  {
+   "code": "HSC-M9-T1-D42",
+   "path": "Year 12 / Crime / The nature of crime / evaluate the effectiveness of the jury system in the criminal trial"
+  },
+  {
+   "code": "HSC-M9-T1-D43",
+   "path": "Year 12 / Crime / The nature of crime / assess the effectiveness of the criminal trial process as a means of achieving justice"
+  },
+  {
+   "code": "HSC-M9-T1-D44",
+   "path": "Year 12 / Crime / The nature of crime / statutory and judicial guidelines"
+  },
+  {
+   "code": "HSC-M9-T1-D45",
+   "path": "Year 12 / Crime / The nature of crime / the purposes of punishment: deterrence (specific and general), retribution, rehabilitation, incapacitation"
+  },
+  {
+   "code": "HSC-M9-T1-D46",
+   "path": "Year 12 / Crime / The nature of crime / factors affecting a sentencing decision: aggravating and mitigating circumstances"
+  },
+  {
+   "code": "HSC-M9-T1-D47",
+   "path": "Year 12 / Crime / The nature of crime / the role of the victim in sentencing"
+  },
+  {
+   "code": "HSC-M9-T1-D48",
+   "path": "Year 12 / Crime / The nature of crime / appeals"
+  },
+  {
+   "code": "HSC-M9-T1-D49",
+   "path": "Year 12 / Crime / The nature of crime / types of penalties including: no conviction recorded, caution, fine, bond, suspended sentence, probation, criminal infringement notice, penalty units, community service order, home detention, periodic detention, forfeiture of assets, imprisonment, diversionary programs"
+  },
+  {
+   "code": "HSC-M9-T1-D50",
+   "path": "Year 12 / Crime / The nature of crime / alternative methods of sentencing including circle sentencing, restorative justice"
+  },
+  {
+   "code": "HSC-M9-T1-D51",
+   "path": "Year 12 / Crime / The nature of crime / discuss factors that affect sentencing decisions, including the purposes of punishment and the role of the victim"
+  },
+  {
+   "code": "HSC-M9-T1-D52",
+   "path": "Year 12 / Crime / The nature of crime / evaluate the effectiveness of different types of penalties, including diversionary programs"
+  },
+  {
+   "code": "HSC-M9-T1-D53",
+   "path": "Year 12 / Crime / The nature of crime / assess the roles of alternative methods of sentencing"
+  },
+  {
+   "code": "HSC-M9-T1-D54",
+   "path": "Year 12 / Crime / The nature of crime / post-sentencing considerations, including security classification, protective custody, parole, preventative detention, continued detention, sexual offenders’ registration, deportation"
+  },
+  {
+   "code": "HSC-M9-T1-D55",
+   "path": "Year 12 / Crime / The nature of crime / examine the implications of post-sentencing considerations in achieving justice"
+  },
+  {
+   "code": "HSC-M9-T1-D56",
+   "path": "Year 12 / Crime / The nature of crime / evaluate the effectiveness of sentencing and punishment as a means of achieving justice"
+  },
+  {
+   "code": "HSC-M9-T1-D57",
+   "path": "Year 12 / Crime / The nature of crime / age of criminal responsibility"
+  },
+  {
+   "code": "HSC-M9-T1-D58",
+   "path": "Year 12 / Crime / The nature of crime / the rights of children when questioned or arrested"
+  },
+  {
+   "code": "HSC-M9-T1-D59",
+   "path": "Year 12 / Crime / The nature of crime / Children’s Court – procedures and operation"
+  },
+  {
+   "code": "HSC-M9-T1-D60",
+   "path": "Year 12 / Crime / The nature of crime / penalties for children"
+  },
+  {
+   "code": "HSC-M9-T1-D61",
+   "path": "Year 12 / Crime / The nature of crime / alternatives to court"
+  },
+  {
+   "code": "HSC-M9-T1-D62",
+   "path": "Year 12 / Crime / The nature of crime / discuss the issues surrounding the age of criminal responsibility"
+  },
+  {
+   "code": "HSC-M9-T1-D63",
+   "path": "Year 12 / Crime / The nature of crime / explain why young offenders are treated differently in the criminal justice system"
+  },
+  {
+   "code": "HSC-M9-T1-D64",
+   "path": "Year 12 / Crime / The nature of crime / assess the effectiveness of the criminal justice system when dealing with young offenders"
+  },
+  {
+   "code": "HSC-M9-T1-D65",
+   "path": "Year 12 / Crime / The nature of crime / categories of international crime, including: dealing with international crime:"
+  },
+  {
+   "code": "HSC-M9-T1-D66",
+   "path": "Year 12 / Crime / The nature of crime / define international crime"
+  },
+  {
+   "code": "HSC-M9-T1-D67",
+   "path": "Year 12 / Crime / The nature of crime / describe the various measures used to deal with international crime"
+  },
+  {
+   "code": "HSC-M9-T1-D68",
+   "path": "Year 12 / Crime / The nature of crime / evaluate the effectiveness of the domestic and international legal systems in dealing with international crime."
+  },
+  {
+   "code": "HSC-M9-T6-D1",
+   "path": "Year 12 / Crime / International crime / providing clear links to syllabus outcomes"
+  },
+  {
+   "code": "HSC-M9-T6-D2",
+   "path": "Year 12 / Crime / International crime / enabling students to demonstrate the levels of achievement outlined in the course performance scale"
+  },
+  {
+   "code": "HSC-M9-T6-D3",
+   "path": "Year 12 / Crime / International crime / applying marking guidelines based on established criteria."
+  }
+ ],
+ "questions": [
+  {
+   "id": "ls09_2025_q06",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 6 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q07",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 7 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q08",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 8 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q09",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 9 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q10",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 10 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q11",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 11 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q12",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 12 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q13",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 13 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q14",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 14 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q15",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 15 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q16",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 16 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q17",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 17 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q18",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 18 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q19",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 19 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q20",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human rights",
+   "text": "Multiple-choice question 20 from the 2025 HSC Legal Studies (2009) examination (see official exam paper).\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "ls09_2025_q21",
+   "year": 2025,
+   "number": "21",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Human rights",
+   "text": "Short-answer question 21 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q22",
+   "year": 2025,
+   "number": "22",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Human rights",
+   "text": "Short-answer question 22 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q23",
+   "year": 2025,
+   "number": "23",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Human rights",
+   "text": "Short-answer question 23 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q24",
+   "year": 2025,
+   "number": "24",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 24 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q25",
+   "year": 2025,
+   "number": "25",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 25 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q26",
+   "year": 2025,
+   "number": "26",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 26 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q27",
+   "year": 2025,
+   "number": "27",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 27 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q28",
+   "year": 2025,
+   "number": "28",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 28 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q29",
+   "year": 2025,
+   "number": "29",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 29 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q30",
+   "year": 2025,
+   "number": "30",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 30 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  },
+  {
+   "id": "ls09_2025_q31",
+   "year": 2025,
+   "number": "31",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human rights",
+   "text": "Extended-response question 31 from the 2025 HSC Legal Studies (2009) examination (see official exam paper)."
+  }
+ ]
+}

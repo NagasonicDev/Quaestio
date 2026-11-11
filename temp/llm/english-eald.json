@@ -1,0 +1,625 @@
+{
+ "course_id": "english-eald",
+ "course_name": "English EAL/D",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Compose texts that experiment with tone, modality and register for different purposes and audiences",
+   "text": "Compose texts that experiment with tone, modality and register for different purposes and audiences"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Compose imaginative texts that experiment with point of view, form and setting to represent a range of personal, social, historical or cultural contexts and perspectives",
+   "text": "Compose imaginative texts that experiment with point of view, form and setting to represent a range of personal, social, historical or cultural contexts and perspectives"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Select and use appropriate structure to communicate ideas and opinions for different purposes, audiences and contexts",
+   "text": "Select and use appropriate structure to communicate ideas and opinions for different purposes, audiences and contexts"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Compose critical and creative texts that use accurate spelling, punctuation and syntax in a range of modes and mediums",
+   "text": "Compose critical and creative texts that use accurate spelling, punctuation and syntax in a range of modes and mediums"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Plan, draft and refine ideas and language in own texts for a range of purposes and audiences",
+   "text": "Plan, draft and refine ideas and language in own texts for a range of purposes and audiences"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Assess their choices of language and textual form in their own critical and creative compositions",
+   "text": "Assess their choices of language and textual form in their own critical and creative compositions"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Compose texts in a range of modes and mediums with appropriate application of language conventions including syntax, spelling and grammar",
+   "text": "Compose texts in a range of modes and mediums with appropriate application of language conventions including syntax, spelling and grammar"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Compose a variety of texts in different modes and mediums to present ideas and opinions for different purposes and audiences",
+   "text": "Compose a variety of texts in different modes and mediums to present ideas and opinions for different purposes and audiences"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Use technical terminology, semantic fields, appropriacy and jargon in spoken and written texts particular to specific areas of society",
+   "text": "Use technical terminology, semantic fields, appropriacy and jargon in spoken and written texts particular to specific areas of society"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Use the information and ideas gathered from a range of texts to present and support ideas in analytical, expressive and imaginative ways",
+   "text": "Use the information and ideas gathered from a range of texts to present and support ideas in analytical, expressive and imaginative ways"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Reading to write: Transition to English EAL/D / Reading / Plan, draft and refine ideas and language in own texts for a range of purposes and audiences",
+   "text": "Plan, draft and refine ideas and language in own texts for a range of purposes and audiences"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Close study of text / Understanding the text / The language forms, text structures and stylistic features in spoken and written texts to shape ideas and perspectives, including parts of speech and verb forms and tenses",
+   "text": "The language forms, text structures and stylistic features in spoken and written texts to shape ideas and perspectives, including parts of speech and verb forms and tenses"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Close study of text / Understanding the text / Synonyms and antonyms",
+   "text": "Synonyms and antonyms"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Close study of text / Understanding the text / The use of discourse markers to show cause and effect",
+   "text": "The use of discourse markers to show cause and effect"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Close study of text / Understanding the text / The ways ideas, attitudes and perspectives are represented in spoken and written texts and how these shape meaning",
+   "text": "The ways ideas, attitudes and perspectives are represented in spoken and written texts and how these shape meaning"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Close study of text / Understanding the text / The conventions of genre and the ways texts may conform or subvert these conventions",
+   "text": "The conventions of genre and the ways texts may conform or subvert these conventions"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Close study of text / Understanding the text / The impact of language forms, conventions and literary devices in familiar and unfamiliar texts",
+   "text": "The impact of language forms, conventions and literary devices in familiar and unfamiliar texts"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Close study of text / Understanding the text / The impact of variations in style and register in spoken and written texts in semi-formal and formal texts and contexts",
+   "text": "The impact of variations in style and register in spoken and written texts in semi-formal and formal texts and contexts"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Close study of text / Understanding the text / The use of active and passive voice",
+   "text": "The use of active and passive voice"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Close study of text / Understanding the text / Clause types, including declarative, interrogative, imperative and exclamative",
+   "text": "Clause types, including declarative, interrogative, imperative and exclamative"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Close study of text / Understanding the text / The ways in which verbal and nonverbal elements interact to shape meaning",
+   "text": "The ways in which verbal and nonverbal elements interact to shape meaning"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Close study of text / Understanding the text / The aesthetic qualities, themes and representation of ideas, values and attitudes in a text",
+   "text": "The aesthetic qualities, themes and representation of ideas, values and attitudes in a text"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Close study of text / Understanding the text / The ways the context of the author and the audience shape meaning",
+   "text": "The ways the context of the author and the audience shape meaning"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Close study of text / Understanding the text / Language for making connections, posing questions, affirming, challenging, speculating and generalising",
+   "text": "Language for making connections, posing questions, affirming, challenging, speculating and generalising"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Close study of text / Analysis and response / Compose sustained texts that experiment with appropriate metalanguage and structural choices to shape perspectives and opinions in a range of modes and mediums",
+   "text": "Compose sustained texts that experiment with appropriate metalanguage and structural choices to shape perspectives and opinions in a range of modes and mediums"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Close study of text / Analysis and response / Use descriptive, rhetorical and persuasive language to express ideas, attitudes and evaluations of texts",
+   "text": "Use descriptive, rhetorical and persuasive language to express ideas, attitudes and evaluations of texts"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Close study of text / Analysis and response / Apply the conventions of syntax, spelling and grammar accurately in own compositions for specific purposes, audiences and contexts",
+   "text": "Apply the conventions of syntax, spelling and grammar accurately in own compositions for specific purposes, audiences and contexts"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Close study of text / Analysis and response / Plan, draft, reflect, edit and refine texts using accurate syntax in clauses and sentences for a range of purposes and audiences",
+   "text": "Plan, draft, reflect, edit and refine texts using accurate syntax in clauses and sentences for a range of purposes and audiences"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Compose creative, informed and sustained interpretations of texts supported by integrated textual evidence",
+   "text": "Compose creative, informed and sustained interpretations of texts supported by integrated textual evidence"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Apply a range of language features in own compositions",
+   "text": "Apply a range of language features in own compositions"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Make connections with other texts through language, form and structure",
+   "text": "Make connections with other texts through language, form and structure"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Use cohesive links and discourse markers to show cause and effect in spoken and written texts",
+   "text": "Use cohesive links and discourse markers to show cause and effect in spoken and written texts"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Use metalanguage to interpret texts and evaluate their own learning",
+   "text": "Use metalanguage to interpret texts and evaluate their own learning"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Compose texts that use forms and features to represent a range of perspectives on culture and identity",
+   "text": "Compose texts that use forms and features to represent a range of perspectives on culture and identity"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Compose critical texts that affirm and challenge ideas, values and perspectives that are represented in text",
+   "text": "Compose critical texts that affirm and challenge ideas, values and perspectives that are represented in text"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Use accurate syntax in clauses and sentences in own spoken and written texts",
+   "text": "Use accurate syntax in clauses and sentences in own spoken and written texts"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Make connections with other texts through language, form and structure",
+   "text": "Make connections with other texts through language, form and structure"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Compose sustained imaginative, persuasive, discursive texts that affirm and challenge the ideas, perspectives and values represented in other texts",
+   "text": "Compose sustained imaginative, persuasive, discursive texts that affirm and challenge the ideas, perspectives and values represented in other texts"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Recreate existing texts as new texts by changing context and perspective",
+   "text": "Recreate existing texts as new texts by changing context and perspective"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "Select and apply a range of language, structural and stylistic features to shape meaning and influence readers"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Use referencing skills to support ideas, arguments and perspectives in own compositions",
+   "text": "Use referencing skills to support ideas, arguments and perspectives in own compositions"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Texts and human experiences / Responding to texts / Plan, draft and refine spoken and written texts applying accurate conventions of syntax, spelling and grammar for their purpose, audience and context",
+   "text": "Plan, draft and refine spoken and written texts applying accurate conventions of syntax, spelling and grammar for their purpose, audience and context"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Close study of text / Understanding the text / Comparative, temporal and consequential conjunctions",
+   "text": "Comparative, temporal and consequential conjunctions"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Close study of text / Understanding the text / The impact of direct and indirect speech",
+   "text": "The impact of direct and indirect speech"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Close study of text / Understanding the text / The use of literary and persuasive features, including rhetorical devices, figurative language and dramatic irony, in familiar and unfamiliar texts",
+   "text": "The use of literary and persuasive features, including rhetorical devices, figurative language and dramatic irony, in familiar and unfamiliar texts"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Close study of text / Understanding the text / The ways arguments are presented in nonfiction texts",
+   "text": "The ways arguments are presented in nonfiction texts"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Close study of text / Understanding the text / The ways cultural perspectives and identities are represented in texts",
+   "text": "The ways cultural perspectives and identities are represented in texts"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Close study of text / Understanding the text / The ways in which texts created by authors from diverse backgrounds represent people, places, histories and experiences",
+   "text": "The ways in which texts created by authors from diverse backgrounds represent people, places, histories and experiences"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Close study of text / Understanding the text / Culturally specific phrases, idioms, colloquialisms, collocations and references in a range of texts",
+   "text": "Culturally specific phrases, idioms, colloquialisms, collocations and references in a range of texts"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Close study of text / Understanding the text / The different perspectives on personal, social and historical issues represented in texts",
+   "text": "The different perspectives on personal, social and historical issues represented in texts"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "The ways language features, text structures and stylistic choices create particular effects for specific purposes"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Close study of text / Understanding the text / The ways context shapes meaning",
+   "text": "The ways context shapes meaning"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Close study of text / Understanding the text / The influence of narrative point(s) of view to convey ideas, attitudes and values in literary texts",
+   "text": "The influence of narrative point(s) of view to convey ideas, attitudes and values in literary texts"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Close study of text / Understanding the text / The ways language forms, features and structures are adapted for different purposes, audiences and contexts in a range of forms, modes and mediums",
+   "text": "The ways language forms, features and structures are adapted for different purposes, audiences and contexts in a range of forms, modes and mediums"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Close study of text / Understanding the text / The impact of descriptive, rhetorical and persuasive language",
+   "text": "The impact of descriptive, rhetorical and persuasive language"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Close study of text / Understanding the text / Synonyms and antonyms",
+   "text": "Synonyms and antonyms"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Close study of text / Understanding the text / The impact of conventions of form and structure in their own spoken and written compositions",
+   "text": "The impact of conventions of form and structure in their own spoken and written compositions"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Close study of text / Analysis and response / Compose extended texts that explain the use and effects of particular textual forms and language choices",
+   "text": "Compose extended texts that explain the use and effects of particular textual forms and language choices"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Close study of text / Analysis and response / Compose a range of critical and analytical texts that explore complex ideas about the relationship between content, form and language",
+   "text": "Compose a range of critical and analytical texts that explore complex ideas about the relationship between content, form and language"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Close study of text / Analysis and response / Compose informed arguments about texts supported by appropriate textual analysis",
+   "text": "Compose informed arguments about texts supported by appropriate textual analysis"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Close study of text / Analysis and response / Use descriptive, persuasive and rhetorical vocabulary to construct sustained interpretations of texts in a range of modes",
+   "text": "Use descriptive, persuasive and rhetorical vocabulary to construct sustained interpretations of texts in a range of modes"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Close study of text / Analysis and response / Use lexical chains and referential devices to achieve cohesion in spoken and written texts",
+   "text": "Use lexical chains and referential devices to achieve cohesion in spoken and written texts"
+  }
+ ],
+ "questions": [
+  {
+   "id": "eald202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Culture and communication",
+   "text": "How does the form of your prescribed text contribute to the way personal and cultural backgrounds are revealed?\nThe prescribed texts (Module B: Language, Identity and Culture) are listed on page 3."
+  },
+  {
+   "id": "eald202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "(a) Ray Bradbury, Fahrenheit 451\nRay Bradbury's novel challenges ideas about ignorance and knowledge.\nTo what extent does this view reflect your understanding of Fahrenheit 451? In your response, make detailed reference to your prescribed text.\nOR\n(b) Jhumpa Lahiri, The Namesake\nJhumpa Lahiri's novel challenges ideas about individual hope and family loyalty.\nTo what extent does this view reflect your understanding of The Namesake? In your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "Emma Jones, The Striped World (poetry)\nEmma Jones's poems challenge ideas about personal and public worlds.\nTo what extent does this view reflect your understanding of The Striped World? In your response, make detailed reference to at least TWO poems from your prescribed text."
+  },
+  {
+   "id": "eald202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "(a) Michael Gow, Away\nMichael Gow's play challenges ideas about forgiveness and courage.\nTo what extent does this view reflect your understanding of Away? In your response, make detailed reference to your prescribed text.\nOR\n(b) Scott Rankin, Namatjira\nScott Rankin's play challenges ideas about art and culture.\nTo what extent does this view reflect your understanding of Namatjira? In your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "Raymond Gaita, Romulus, My Father (nonfiction)\nRaymond Gaita's autobiography challenges ideas about family and place.\nTo what extent does this view reflect your understanding of Romulus, My Father? In your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "Peter Weir, The Truman Show (film)\nPeter Weir's film challenges ideas about fact and fiction.\nTo what extent does this view reflect your understanding of The Truman Show? In your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "Lucy Walker, Waste Land (media)\nLucy Walker's documentary challenges ideas about human dignity and innovation.\nTo what extent does this view reflect your understanding of Waste Land? In your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "Explain why Cyrus crafted 'the perfect look' for his first day at a new school."
+  },
+  {
+   "id": "eald202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "How does Cyrus use language features to show his feelings after changing his name?"
+  },
+  {
+   "id": "eald202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "What conclusions does Cyrus reach about the importance of names?"
+  },
+  {
+   "id": "eald202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "Analyse how Cyrus uses tone to engage the audience."
+  },
+  {
+   "id": "eald202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "Text 1 - Poem (copyright-restricted source)\nHow is the speaker inspired by the natural world?"
+  },
+  {
+   "id": "eald202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "Text 2 - Nonfiction extract (Stanley Tucci, Taste: My Life Through Food)\nHow has Stanley Tucci's relationship with food influenced his life experiences?"
+  },
+  {
+   "id": "eald202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "Text 3 - Screenplay extract (copyright-restricted source)\nHow does the text use metaphor to represent ideas about human experiences?"
+  },
+  {
+   "id": "eald202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "Text 4 - Fiction extract (Murray Bail, Eucalyptus)\nAnalyse how this extract represents the connection between Ellen and the tree."
+  },
+  {
+   "id": "eald202205",
+   "year": 2022,
+   "number": "5 (a)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(a) - Prose Fiction - Allan Baillie, The China Coin (15 marks)\nHow have the characters in The China Coin broadened your understanding of acceptance?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202206",
+   "year": 2022,
+   "number": "5 (b)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(b) - Prose Fiction - Favel Parrett, Past the Shallows (15 marks)\nHow have the characters in Past the Shallows broadened your understanding of responsibility?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202207",
+   "year": 2022,
+   "number": "5 (c)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(c) - Poetry - Oodgeroo Noonuccal, My People (15 marks)\nHow have the speakers in the prescribed poems in My People broadened your understanding of respect?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202208",
+   "year": 2022,
+   "number": "5 (d)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(d) - Poetry - Ken Watson (ed.), The Round Earth's Imagined Corners (15 marks)\nHow have the speakers in the prescribed poems in The Round Earth's Imagined Corners broadened your understanding of belonging?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202209",
+   "year": 2022,
+   "number": "5 (e)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(e) - Drama - Jane Harrison, Rainbow's End (15 marks)\nHow have the characters in Rainbow's End broadened your understanding of power?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202210",
+   "year": 2022,
+   "number": "5 (f)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(f) - Nonfiction - Ernesto 'Che' Guevara, The Motorcycle Diaries (15 marks)\nHow have the people in The Motorcycle Diaries broadened your understanding of commitment?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202211",
+   "year": 2022,
+   "number": "5 (g)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(g) - Nonfiction - Alice Pung, Unpolished Gem (15 marks)\nHow have the people in Unpolished Gem broadened your understanding of opportunity?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202212",
+   "year": 2022,
+   "number": "5 (h)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(h) - Nonfiction - Malala Yousafzai and Christina Lamb, I am Malala (15 marks)\nHow have the people in I am Malala broadened your understanding of dedication?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202213",
+   "year": 2022,
+   "number": "5 (i)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(i) - Film - Rachel Perkins, One Night the Moon (15 marks)\nHow have the characters in One Night the Moon broadened your understanding of determination?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202214",
+   "year": 2022,
+   "number": "5 (j)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Representations of human experiences",
+   "text": "(j) - Media - Ivan O'Mahoney, Go Back to Where You Came From (15 marks)\nHow have the people in Go Back to Where You Came From broadened your understanding of empathy?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202215",
+   "year": 2022,
+   "number": "6",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Writing / Composing and editing",
+   "text": "Focus on Writing\nStimulus: book cover, Happy City (Charles Montgomery / Vesa Sammalisto).\nUse one aspect of the stimulus as the central idea for a piece of writing which aims to evoke a positive emotional response about community. You may write an imaginative, discursive or persuasive response."
+  },
+  {
+   "id": "eald202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Culture and communication",
+   "text": "Composers challenge assumptions about cultural identity.\nTo what extent is this true of your prescribed text?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "Analyse how the need for connection is explored through the distinctive qualities of your prescribed text.\nIn your response, refer to your prescribed text."
+  },
+  {
+   "id": "eald202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "In what ways do the hosts encourage the audience to 'hear the unexpected stories behind ordinary people's lives'?"
+  },
+  {
+   "id": "eald202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "Apart from Nan, what influence did other members of the family have on Linda Augusto's life?"
+  },
+  {
+   "id": "eald202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "Analyse how Linda Augusto presents the relationship she had with her Nan."
+  },
+  {
+   "id": "eald202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Texts and human experiences / Responding to texts / Select and apply a range of language, structural and stylistic features to shape meaning and influence readers",
+   "text": "How effectively are music and sound effects used to engage the audience in Linda Augusto's storytelling?"
+  },
+  {
+   "id": "eald202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Culture and communication",
+   "text": "How are the complications of embracing identity represented in your prescribed text?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "eald202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of text / Understanding the text / The ways language features, text structures and stylistic choices create particular effects for specific purposes",
+   "text": "How does your prescribed text use language forms and features to evoke empathy, and challenge you to see the world differently?\nIn your response, make detailed reference to your prescribed text."
+  }
+ ]
+}

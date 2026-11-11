@@ -1,0 +1,123 @@
+{
+  "course_id": "course_community_and_family_studies",
+  "course_name": "Community and Family Studies",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 7,
+      "node_codes": [
+        "HSC-M2-T1-D5"
+      ],
+      "node_names": [
+        "Year 12 / Groups in Context / Characteristics and needs of community groups / Rural and remote families"
+      ],
+      "node_ids": [
+        "community-and-family-studies-n318"
+      ],
+      "tags": [
+        "case_study"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "How could the characteristics of individuals living in a rural and remote location affect a family's access to services?"
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer: Individuals from rural and remote families may have lower socioeconomic status during drought or flood, affecting access to high-fee health services, and people with disabilities may have to travel long distances for specialised care."
+          }
+        }
+      ],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "7 marks: demonstrates a thorough understanding of how the characteristics of individuals living in a rural and remote location affect a family's access to services.",
+              "6 marks: demonstrates a sound understanding of how the characteristics affect access to services.",
+              "4-5 marks: demonstrates an understanding of how the characteristics of individuals living in a rural and remote location affect a family's access to services.",
+              "2-3 marks: demonstrates some understanding of characteristic(s) of individuals in rural and remote families and/or their access to service(s).",
+              "1 mark: provides some relevant information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "HSC",
+        "year": 2024,
+        "institution": "HSC",
+        "original_question_no": "27"
+      }
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 5,
+      "marks": 8,
+      "node_codes": [
+        "HSC-M3-T1-D4",
+        "HSC-M3-T1-D31"
+      ],
+      "node_names": [
+        "Year 12 / Parenting and Caring / Parenting / social parents",
+        "Year 12 / Parenting and Caring / Parenting / special needs, eg illness, disability"
+      ],
+      "node_ids": [
+        "community-and-family-studies-n382",
+        "community-and-family-studies-n409"
+      ],
+      "tags": [
+        "case_study"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "How can the wellbeing of social parents be affected by the responsibility of making health and medical decisions for a dependant?"
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer: Social parents such as foster and stepparents are often legally unable to make major health decisions, which can cause stress, frustration and helplessness affecting their emotional wellbeing."
+          }
+        }
+      ],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "8 marks: provides a thorough understanding of how the wellbeing of social parents can be affected by the responsibilities of making health and medical decisions for a dependant.",
+              "6-7 marks: provides a sound understanding of how the wellbeing of social parents can be affected.",
+              "4-5 marks: provides some understanding of how the wellbeing of social parent(s) can be affected.",
+              "2-3 marks: demonstrates some understanding of the impact on parent(s) when making health and/or medical decisions for a dependant.",
+              "1 mark: provides some relevant information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "HSC",
+        "year": 2024,
+        "institution": "HSC",
+        "original_question_no": "28"
+      }
+    }
+  ]
+}

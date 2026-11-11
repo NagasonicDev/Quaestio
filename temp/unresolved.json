@@ -1,0 +1,594 @@
+{
+ "physics": [
+  {
+   "id": "qhsc2002_27",
+   "codes": [
+    "M4-T2-12"
+   ],
+   "names": [
+    "Electricity and Magnetism / Electric circuits / Solve problems relating to energy loss in circuits using P = I²R and the law of conservation of energy"
+   ],
+   "year": 2002,
+   "no": "27",
+   "text": "There are two areas in which energy savings can be made by the use of superconductors. These are: - electricity generation and transmission;\n- transportation. Discuss how energy savings can be achieved in each of these two areas. "
+  },
+  {
+   "id": "qhsc2003_11",
+   "codes": [
+    "M7-T2-5"
+   ],
+   "names": [
+    "The Nature of Light / The wave model of light / Analyse the factors involved in the production of an interference pattern from a double slit and a diffraction grating using dsinθ = mλ = dy/L"
+   ],
+   "year": 2003,
+   "no": "11",
+   "text": "Which of the following did the Braggs investigate using X-ray diffraction?"
+  },
+  {
+   "id": "qhsc2003_18",
+   "codes": [
+    "M7-T4-2"
+   ],
+   "names": [
+    "The Nature of Light / Light and special relativity / Outline Einstein's first and second postulates of special relativity"
+   ],
+   "year": 2003,
+   "no": "18",
+   "text": "Michelson and Morley set up an experiment to measure the velocity of Earth relative to the aether."
+  },
+  {
+   "id": "qhsc2004_23",
+   "codes": [
+    "M7-T3-14"
+   ],
+   "names": [
+    "The Nature of Light / The quantum model of light / Analyse data from photoelectric effect and thermionic emission experiments to explain relationships using K_max = hf − φ and K_max = qV₀"
+   ],
+   "year": 2004,
+   "no": "23",
+   "text": "In the past 50 years electrical technology has developed from the widespread use of thermionic devices to the use of solid state devices and superconductors."
+  },
+  {
+   "id": "qhsc2004_26",
+   "codes": [
+    "M4-T3-3"
+   ],
+   "names": [
+    "Electricity and Magnetism / Magnetism / Calculate the strength of the magnetic field produced by a current-carrying wire using B = μ₀I/2πr"
+   ],
+   "year": 2004,
+   "no": "26",
+   "text": "The diagram shows part of an experiment designed to measure the force between two parallel current-carrying conductors.  The experimental results are tabulated below.  Plot the data and draw the line of best fit. "
+  },
+  {
+   "id": "qhsc2006_11",
+   "codes": [
+    "M7-T2-5"
+   ],
+   "names": [
+    "The Nature of Light / The wave model of light / Analyse the factors involved in the production of an interference pattern from a double slit and a diffraction grating using dsinθ = mλ = dy/L"
+   ],
+   "year": 2006,
+   "no": "11",
+   "text": "Lawrence and William Bragg used X-rays to determine the crystal structure of materials. Which property of waves was the basis of their technique?"
+  },
+  {
+   "id": "qhsc2007_12",
+   "codes": [
+    "M7-T2-5"
+   ],
+   "names": [
+    "The Nature of Light / The wave model of light / Analyse the factors involved in the production of an interference pattern from a double slit and a diffraction grating using dsinθ = mλ = dy/L"
+   ],
+   "year": 2007,
+   "no": "12",
+   "text": "The Bragg experiment used X-rays to investigate crystal structure. Which statement best describes the results of this experiment?"
+  },
+  {
+   "id": "qhsc2009_24",
+   "codes": [
+    "M2-T3-6"
+   ],
+   "names": [
+    "Dynamics / Momentum and energy / Apply the law of conservation of mechanical energy and use W = ΔKE = ½mv² and W = ΔU to solve problems"
+   ],
+   "year": 2009,
+   "no": "24",
+   "text": "An experiment was conducted to investigate the flexibility* and strength** of different types of rubber bands, all with the same initial length. A mass was attached to each band and the extension was measured. Masses were gradually increased, and the extensions measured until each band broke. The photograph was taken during the experiment. The results are summarised in the graph.   * Flexibility: the more flexible the rubber band, the greater its extension for a given mass. ** Strength: the stronger the rubber band, the more mass it is able to hold before breaking."
+  },
+  {
+   "id": "qhsc2009_28",
+   "codes": [
+    "M5-T3-1"
+   ],
+   "names": [
+    "Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect the force of gravity with reference to Newton's law of universal gravitation and F = GMm/r² and F_w = mg"
+   ],
+   "year": 2009,
+   "no": "28",
+   "text": "— Geophysics"
+  },
+  {
+   "id": "qhsc2009_29",
+   "codes": [
+    "M6-T1-2"
+   ],
+   "names": [
+    "Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using E = V/d, F = qE, W = qV = ΔKE, and equations for uniformly accelerated motion"
+   ],
+   "year": 2009,
+   "no": "29",
+   "text": "— Medical Physics"
+  },
+  {
+   "id": "qhsc2010_06",
+   "codes": [
+    "M7-T1-3"
+   ],
+   "names": [
+    "The Nature of Light / Electromagnetic waves / Discuss how the historical prediction of the speed of light was made by relating the electric permittivity and magnetic permeability of free space, using c = 1/√(ε₀μ₀)"
+   ],
+   "year": 2010,
+   "no": "6",
+   "text": "Which statement about the Michelson-Morley experiment is correct?"
+  },
+  {
+   "id": "qhsc2010_18",
+   "codes": [
+    "M7-T2-5"
+   ],
+   "names": [
+    "The Nature of Light / The wave model of light / Analyse the factors involved in the production of an interference pattern from a double slit and a diffraction grating using dsinθ = mλ = dy/L"
+   ],
+   "year": 2010,
+   "no": "18",
+   "text": "What did William and Lawrence Bragg use X-rays to investigate?"
+  },
+  {
+   "id": "qhsc2010_32",
+   "codes": [
+    "M5-T2-12",
+    "M6-T1-8"
+   ],
+   "names": [
+    "Advanced Mechanics / Circular motion / Analyse the factors that affect the gravitational potential energy of an object above a planet's surface using U = −GMm/r",
+    "Electromagnetism / Charged particles in electric and magnetic fields / Analyse the force on a charged particle in a uniform magnetic field by applying F = qv×B = qvBsinθ"
+   ],
+   "year": 2010,
+   "no": "32",
+   "text": "Two significant problems that will affect a manned spaceflight to Mars are:  Use your understanding of physics to analyse each of these problems. "
+  },
+  {
+   "id": "qhsc2010_33",
+   "codes": [
+    "M3-T1-4",
+    "M5-T3-2"
+   ],
+   "names": [
+    "Waves and Thermodynamics / Wave properties / Solve problems using f = 1/T and v = fλ",
+    "Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect a planet's gravitational field strength with reference to g = GM/r²"
+   ],
+   "year": 2010,
+   "no": "33",
+   "text": "Geophysics"
+  },
+  {
+   "id": "qhsc2011_11",
+   "codes": [
+    "M6-T3-3"
+   ],
+   "names": [
+    "Electromagnetism / Electromagnetic induction / Analyse the relationship between generated electromotive force (emf) and the change in magnetic flux per unit time, using the law of electromagnetic induction and |ε| = N|ΔΦ/Δt|"
+   ],
+   "year": 2011,
+   "no": "11",
+   "text": "A student set up the equipment shown to carry out a first-hand investigation.  What was the student investigating?"
+  },
+  {
+   "id": "qhsc2012_02",
+   "codes": [
+    "M7-T1-1"
+   ],
+   "names": [
+    "The Nature of Light / Electromagnetic waves / Identify that all forms of electromagnetic radiation have constant speed, c, in a vacuum"
+   ],
+   "year": 2012,
+   "no": "2",
+   "text": "What is currently used to define the standard metre?"
+  },
+  {
+   "id": "qhsc2012_05",
+   "codes": [
+    "M7-T3-17"
+   ],
+   "names": [
+    "The Nature of Light / The quantum model of light / Conduct a secondary-source investigation to explain how the photoelectric effect is used in photovoltaics (solar cells) and one other real-world application"
+   ],
+   "year": 2012,
+   "no": "5",
+   "text": "Which of the following could be added to a crystal of silicon to create a p-type semiconductor?"
+  },
+  {
+   "id": "qhsc2012_07",
+   "codes": [
+    "M6-T2-7"
+   ],
+   "names": [
+    "Electromagnetism / The motor effect and electric motors / Analyse the factors that affect the magnitude of torque on a current-carrying loop using τ = nIA×B = nIABsinθ"
+   ],
+   "year": 2012,
+   "no": "7",
+   "text": "In moving-coil galvanometers, the coil experiences a torque because of the current flowing through it. What ensures that this torque is directly proportional to the current flowing through the coil?"
+  },
+  {
+   "id": "qhsc2012_17",
+   "codes": [
+    "M4-T3-3"
+   ],
+   "names": [
+    "Electricity and Magnetism / Magnetism / Calculate the strength of the magnetic field produced by a current-carrying wire using B = μ₀I/2πr"
+   ],
+   "year": 2012,
+   "no": "17",
+   "text": "The following equipment is attached to a DC power supply.  What current must be flowing through the wires to result in a force of $2.50 \\times 10^{-3}\\,\\mathrm{N}$ between them?"
+  },
+  {
+   "id": "qhsc2012_20",
+   "codes": [
+    "M7-T3-17"
+   ],
+   "names": [
+    "The Nature of Light / The quantum model of light / Conduct a secondary-source investigation to explain how the photoelectric effect is used in photovoltaics (solar cells) and one other real-world application"
+   ],
+   "year": 2012,
+   "no": "20",
+   "text": "A company wishes to develop a semiconductor sensor to detect thermal radiation from people. The sensor will work on the same principle as a solar cell.   Using the information provided, which semiconductor would be most suitable for this purpose?"
+  },
+  {
+   "id": "qhsc2012_24",
+   "codes": [
+    "M4-T1-7"
+   ],
+   "names": [
+    "Electricity and Magnetism / Electrostatics / Solve problems involving charges in electric fields using F = qE"
+   ],
+   "year": 2012,
+   "no": "24",
+   "text": "Answer the questions in the spaces provided."
+  },
+  {
+   "id": "qhsc2013_36",
+   "codes": [
+    "M4-T2-7",
+    "M4-T2-19",
+    "M3-T4-2"
+   ],
+   "names": [
+    "Electricity and Magnetism / Electric circuits / Analyse the relationships between voltage, current and resistance using V = IR for electric circuits having constant and variable resistance",
+    "Electricity and Magnetism / Electric circuits / Use the relationship between the total resistance and resistance in each branch of a parallel circuit, 1/R_parallel = 1/R₁ + 1/R₂ + … + 1/Rₙ, to calculate resistances",
+    "Waves and Thermodynamics / Thermodynamics / Explain the concept of thermal equilibrium and that thermal energy flows spontaneously from regions of higher temperature to regions of lower temperature"
+   ],
+   "year": 2013,
+   "no": "36",
+   "text": "- The Age of Silicon."
+  },
+  {
+   "id": "qhsc2014_21",
+   "codes": [
+    "M4-T2-12"
+   ],
+   "names": [
+    "Electricity and Magnetism / Electric circuits / Solve problems relating to energy loss in circuits using P = I²R and the law of conservation of energy"
+   ],
+   "year": 2014,
+   "no": "21",
+   "text": "Identify THREE limitations of the use of superconductors. "
+  },
+  {
+   "id": "qhsc2014_35",
+   "codes": [
+    "M8-T1-16",
+    "M8-T1-18"
+   ],
+   "names": [
+    "From the Universe to the Atom / Modelling the atom / Solve problems involving the transition of electrons using E = hf, c = fλ and 1/λ = R(1/n_f² − 1/n_i²)",
+    "From the Universe to the Atom / Modelling the atom / Use λ = h/mv to relate wave and particle properties of matter"
+   ],
+   "year": 2014,
+   "no": "35",
+   "text": "From Quanta to Quarks"
+  },
+  {
+   "id": "qhsc2015_13",
+   "codes": [
+    "M7-T3-10",
+    "M7-T3-2"
+   ],
+   "names": [
+    "The Nature of Light / The quantum model of light / Solve problems using E = hf",
+    "The Nature of Light / The quantum model of light / Analyse the relationships between photon energy, frequency, speed of light and wavelength, using E = hf and c = fλ"
+   ],
+   "year": 2015,
+   "no": "13",
+   "text": "The following diagram represents the band structure of four materials. NOT TO SCALE.  Which material would absorb a photon of wavelength $8.60 \\times 10^{-7}\\,\\mathrm{m}$, causing an electron to just jump the band gap?"
+  },
+  {
+   "id": "qhsc2017_07",
+   "codes": [
+    "M7-T4-2"
+   ],
+   "names": [
+    "The Nature of Light / Light and special relativity / Outline Einstein's first and second postulates of special relativity"
+   ],
+   "year": 2017,
+   "no": "7",
+   "text": "Which of the following is a correct statement about the Michelson–Morley experiment?"
+  },
+  {
+   "id": "qhsc2017_32",
+   "codes": [
+    "M3-T3-7"
+   ],
+   "names": [
+    "Waves and Thermodynamics / Wave behaviours / Solve total internal reflection and critical angle problems using sinθ_c = n₂/n₁"
+   ],
+   "year": 2017,
+   "no": "32",
+   "text": "Medical Physics"
+  },
+  {
+   "id": "qhsc2018_08",
+   "codes": [
+    "M7"
+   ],
+   "names": [
+    "The Nature of Light"
+   ],
+   "year": 2018,
+   "no": "8",
+   "text": "Crystal lattice structures for two types of doped semiconductors and band gap diagrams for two types of materials are shown.  "
+  },
+  {
+   "id": "qhsc2018_31",
+   "codes": [
+    "M8"
+   ],
+   "names": [
+    "From the Universe to the Atom"
+   ],
+   "year": 2018,
+   "no": "31",
+   "text": "Geophysics"
+  },
+  {
+   "id": "qhsc2018_32",
+   "codes": [
+    "M8"
+   ],
+   "names": [
+    "From the Universe to the Atom"
+   ],
+   "year": 2018,
+   "no": "32",
+   "text": "Medical Physics"
+  },
+  {
+   "id": "qhsc2020_18",
+   "codes": [
+    "M5-T3-8"
+   ],
+   "names": [
+    "Advanced Mechanics / Motion in gravitational fields / Derive the law of periods r³/T² = GM/4π² using Newton's law of universal gravitation"
+   ],
+   "year": 2020,
+   "no": "18",
+   "text": "An observer sees Io complete one orbit of Jupiter as Earth moves from $P_1$ to $P_2$, and records the observed orbital period as $t_P$. Similarly, the time for one orbit of Io around Jupiter was measured as Earth moved between the pairs of points at Q, R and S, with the corresponding measured periods of Io being $t_Q$, $t_R$ and $t_S$.  Which measurement of the orbital period would be the longest?"
+  },
+  {
+   "id": "qhsc2025_34",
+   "codes": [
+    "M7-T1-1"
+   ],
+   "names": [
+    "The Nature of Light / Electromagnetic waves / Identify that all forms of electromagnetic radiation have constant speed, c, in a vacuum"
+   ],
+   "year": 2025,
+   "no": "34",
+   "text": "The diagram shows a model of the orbits of Earth, Jupiter and Io, including their orbital direction and periods of orbit. In this model, it is assumed that the orbits of Earth, Jupiter and Io are circular.  A method to determine the speed of light using this model is described below. When Earth was at position P, the orbital period of Io was measured, and the time that Io was at position R was recorded. Six months later, Io had orbited Jupiter $10^{3}$ times, and Earth had reached position Q. The orbital period of Io was used to predict when it would be at position R. Assume that Jupiter has not moved significantly in its orbit around the Sun. The time for Io to reach position R was measured to be $1.000 \\times 10^{3}\\,\\mathrm{s}$ later than predicted, due to the time it takes light to cross the diameter of Earth's orbit from P to Q."
+  }
+ ],
+ "engineering-studies": [
+  {
+   "id": "FMQ9LK",
+   "codes": null,
+   "names": null,
+   "year": 2015,
+   "no": "1",
+   "text": "Which graph best represents the relative proportions of materials used in the construction of new, large passenger aircraft?"
+  },
+  {
+   "id": "UDC6W4",
+   "codes": null,
+   "names": null,
+   "year": 2015,
+   "no": "1",
+   "text": "A pole is supported by four cables that are attached to its top and to the sloping ground.  Which cable is shown as true length?"
+  },
+  {
+   "id": "5IPBYP",
+   "codes": null,
+   "names": null,
+   "year": 2015,
+   "no": "1",
+   "text": "The following parts refer to a steel railway power column: its corrosion protection and microstructure, and the pin-jointed cantilever truss that supports the overhead cables."
+  },
+  {
+   "id": "NFJZU5",
+   "codes": null,
+   "names": null,
+   "year": 2015,
+   "no": "1",
+   "text": "The following parts refer to light aircraft: the choice of propulsion system, the control adjustments that vary lift, a wind tunnel test of an aerofoil, and non-destructive testing of aircraft components."
+  },
+  {
+   "id": "9YZ6AO",
+   "codes": null,
+   "names": null,
+   "year": 2015,
+   "no": "1",
+   "text": "The following parts refer to a winch mechanism: the forces acting on a crate on a ramp, the force needed to operate the winch, and the load-extension behaviour of the steel winch cable."
+  },
+  {
+   "id": "LZMPU0",
+   "codes": null,
+   "names": null,
+   "year": 2016,
+   "no": "1",
+   "text": "Four points $A$, $B$, $C$ and $D$ are plotted in orthogonal projection.  How many of the lines joining these points are shown at their true length in the views drawn?"
+  },
+  {
+   "id": "OXL456",
+   "codes": null,
+   "names": null,
+   "year": 2016,
+   "no": "1",
+   "text": "relates to a modular reinforced concrete public seating system (bus shelter) and to the PVC based polymer used for student travel cards."
+  },
+  {
+   "id": "7V3PT8",
+   "codes": null,
+   "names": null,
+   "year": 2016,
+   "no": "1",
+   "text": "concerns a small drone: how it achieves flight, the manufacture of its nylon and carbon fibre composite propellers, aircraft flight control systems, and the aerodynamic drag of an aerofoil compared with a taut cable."
+  },
+  {
+   "id": "LN2FHP",
+   "codes": null,
+   "names": null,
+   "year": 2016,
+   "no": "1",
+   "text": "A simplified diagram of a pin jointed truss of a hammerhead crane is shown. It is lifting a load of $54\\,\\mathrm{kN}$. "
+  },
+  {
+   "id": "2SGLN3",
+   "codes": null,
+   "names": null,
+   "year": 2017,
+   "no": "1",
+   "text": "The properties of some aluminium-magnesium-silicon alloys can be altered using the following procedure.  What type of hardening process is this?"
+  },
+  {
+   "id": "65XPDJ",
+   "codes": null,
+   "names": null,
+   "year": 2017,
+   "no": "1",
+   "text": "Which drawing shows the correct AS 1100 standard representation of a $\\varnothing 10$ non-structural bolt head?"
+  },
+  {
+   "id": "70B0WT",
+   "codes": null,
+   "names": null,
+   "year": 2017,
+   "no": "1",
+   "text": "In which of the following does an impervious oxide surface layer provide corrosion resistance for the base metal?"
+  },
+  {
+   "id": "QE82QP",
+   "codes": null,
+   "names": null,
+   "year": 2017,
+   "no": "1",
+   "text": "Carbon fibre was originally developed to produce aircraft bodies and high performance vehicles. Carbon fibre is now used in a wide range of applications, including the manufacture of the type of bicycle frame shown. "
+  },
+  {
+   "id": "P4KQ62",
+   "codes": null,
+   "names": null,
+   "year": 2017,
+   "no": "1",
+   "text": "Sleds are used to slide loads over soft surfaces such as grass, sand and snow. They can be made using polypropylene. "
+  },
+  {
+   "id": "5EG95B",
+   "codes": null,
+   "names": null,
+   "year": 2017,
+   "no": "1",
+   "text": "An engineering team has been contracted to design a multi-function lifting device for a coastal container wharf. The table shows some of the engineering design elements for this lifting device. "
+  },
+  {
+   "id": "OUV4X0",
+   "codes": null,
+   "names": null,
+   "year": 2018,
+   "no": "1",
+   "text": "Two types of bridge are shown.  Which option correctly identifies Bridge 1 and Bridge 2?"
+  },
+  {
+   "id": "J27NJ4",
+   "codes": null,
+   "names": null,
+   "year": 2018,
+   "no": "1",
+   "text": "A box with weight $W$ and subject to a friction force $F$ is being pulled up an inclined plane by a force $P$.  Which two forces can be combined into a single resultant contact reaction?"
+  },
+  {
+   "id": "KWIN6N",
+   "codes": null,
+   "names": null,
+   "year": 2018,
+   "no": "1",
+   "text": "The diagram shows a self-driving electric vehicle. "
+  },
+  {
+   "id": "YRTE4M",
+   "codes": null,
+   "names": null,
+   "year": 2018,
+   "no": "1",
+   "text": "A people-mover vehicle is assembled using a variety of parts. "
+  },
+  {
+   "id": "C7QXNR",
+   "codes": null,
+   "names": null,
+   "year": 2018,
+   "no": "1",
+   "text": "A fidget spinner is shown. It is a toy that contains a ball bearing in its centre and is designed to spin on its axis with little effort.  The central components of a fidget spinner are press fitted together using a press punch. "
+  },
+  {
+   "id": "0B5YPQ",
+   "codes": null,
+   "names": null,
+   "year": 2019,
+   "no": "1",
+   "text": "A general purpose bolt drawn to AS 1100 drawing standards is shown.  What is the diameter of the bolt?"
+  },
+  {
+   "id": "XKC75T",
+   "codes": null,
+   "names": null,
+   "year": 2019,
+   "no": "1",
+   "text": "A bus shelter is shown. "
+  },
+  {
+   "id": "2X93LG",
+   "codes": null,
+   "names": null,
+   "year": 2019,
+   "no": "1",
+   "text": "A telecommunications engineer has designed a tower that is to support two mobile repeater transmitters. It is to be located in an urban community. "
+  },
+  {
+   "id": "EY8TLG",
+   "codes": null,
+   "names": null,
+   "year": 2019,
+   "no": "1",
+   "text": "Modern racing yachts are now designed using aeronautical engineering principles."
+  }
+ ]
+}

@@ -1,0 +1,2976 @@
+{
+ "course_id": "earth-environmental-science",
+ "course_name": "Earth and Environmental Science",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Earth’s Resources / Earth systems / investigate and model the processes that formed the geosphere (ACSES018), atmosphere (ACSES022) and hydrosphere (ACSES023)",
+   "text": "investigate and model the processes that formed the geosphere (ACSES018), atmosphere (ACSES022) and hydrosphere (ACSES023)"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Earth’s Resources / Earth systems / investigate evidence for the structure of the Earth using technologies, including: seismic wave velocities",
+   "text": "investigate evidence for the structure of the Earth using technologies, including: seismic wave velocities"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Earth’s Resources / Earth systems / meteorite evidence to demonstrate differences in density and composition (ACSES009, ACSES018)",
+   "text": "meteorite evidence to demonstrate differences in density and composition (ACSES009, ACSES018)"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Earth’s Resources / Earth systems / describe the compositional layers and thickness of the Earth’s layers, including: lithosphere (ACSES015); asthenosphere",
+   "text": "describe the compositional layers and thickness of the Earth’s layers, including: lithosphere (ACSES015); asthenosphere"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Earth’s Resources / Earth systems / crust, mantle and core and their compositional layers (ACSES006)",
+   "text": "crust, mantle and core and their compositional layers (ACSES006)"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Earth’s Resources / Earth systems / conduct a practical investigation to compare the differences in the density of representative rock samples found in the crust, mantle and core (ACSES003)",
+   "text": "conduct a practical investigation to compare the differences in the density of representative rock samples found in the crust, mantle and core (ACSES003)"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Earth’s Resources / Earth systems / analyse evidence of the Earth’s age, including: formation and age of zircon crystals; radiometric techniques; meteorite evidence (ACSES009)",
+   "text": "analyse evidence of the Earth’s age, including: formation and age of zircon crystals; radiometric techniques; meteorite evidence (ACSES009)"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSES006, ACSES010)",
+   "text": "use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSES006, ACSES010)"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / use scientific evidence and critical thinking skills to solve problems",
+   "text": "use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / investigate methods of classifying rocks and minerals used by Aboriginal and Torres Strait Islander Peoples",
+   "text": "investigate methods of classifying rocks and minerals used by Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / investigate the chemical composition of a variety of minerals and explain their formation, including: felsic minerals; mafic minerals",
+   "text": "investigate the chemical composition of a variety of minerals and explain their formation, including: felsic minerals; mafic minerals"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / investigate the physical properties of minerals that are used to assist in classification",
+   "text": "investigate the physical properties of minerals that are used to assist in classification"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / investigate a range of rocks and minerals and classify samples using dichotomous keys",
+   "text": "investigate a range of rocks and minerals and classify samples using dichotomous keys"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / explain the formation of rocks as characteristic assemblages of mineral crystals or grains that are formed through igneous, sedimentary and metamorphic processes, as part of the Rock Cycle (ACSES019)",
+   "text": "explain the formation of rocks as characteristic assemblages of mineral crystals or grains that are formed through igneous, sedimentary and metamorphic processes, as part of the Rock Cycle (ACSES019)"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / explain the formation of soil in terms of the interaction of atmospheric, geologic, hydrologic and biotic processes (ACSES020)",
+   "text": "explain the formation of soil in terms of the interaction of atmospheric, geologic, hydrologic and biotic processes (ACSES020)"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Earth’s Resources / Minerals, rocks and soils / conduct a practical investigation to examine soil types and component materials (ACSES020)",
+   "text": "conduct a practical investigation to examine soil types and component materials (ACSES020)"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Earth’s Resources / Geological resources / describe relative and absolute dating of the geosphere (ACSES017)",
+   "text": "describe relative and absolute dating of the geosphere (ACSES017)"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Earth’s Resources / Geological resources / use data of both relative and absolute dating from secondary sources to determine the age of geological materials (ACSES013, ACSES015, ACSES016, ACSES017)",
+   "text": "use data of both relative and absolute dating from secondary sources to determine the age of geological materials (ACSES013, ACSES015, ACSES016, ACSES017)"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Earth’s Resources / Geological resources / investigate traditional Aboriginal quarrying and mining methods",
+   "text": "investigate traditional Aboriginal quarrying and mining methods"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Earth’s Resources / Geological resources / locate and relate a range of non-renewable resources to their location, for example: minerals; fossil fuels (ACSES072); ores of economic significance (ACSES071, ACSES072)",
+   "text": "locate and relate a range of non-renewable resources to their location, for example: minerals; fossil fuels (ACSES072); ores of economic significance (ACSES071, ACSES072)"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Earth’s Resources / Geological resources / analyse the economic importance of Australia’s non-renewable resources (ACSES061)",
+   "text": "analyse the economic importance of Australia’s non-renewable resources (ACSES061)"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Earth’s Resources / Geological resources / investigate and assess the appropriateness of direct sampling techniques and remote sensing techniques in discovering non-renewable resources (ACSES073), including but not limited to: satellite images; aerial photographs; geophysical data",
+   "text": "investigate and assess the appropriateness of direct sampling techniques and remote sensing techniques in discovering non-renewable resources (ACSES073), including but not limited to: satellite images; aerial photographs; geophysical data"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Earth’s Resources / Geological resources / investigate the locations and extraction methods of, for example: (ACSES074)",
+   "text": "investigate the locations and extraction methods of, for example: (ACSES074)"
+  },
+  {
+   "code": "PRE-M1-T3-D8",
+   "path": "Year 11 / Earth’s Resources / Geological resources / open-pit mining",
+   "text": "open-pit mining"
+  },
+  {
+   "code": "PRE-M1-T3-D9",
+   "path": "Year 11 / Earth’s Resources / Geological resources / underground mining methods",
+   "text": "underground mining methods"
+  },
+  {
+   "code": "PRE-M1-T3-D10",
+   "path": "Year 11 / Earth’s Resources / Geological resources / offshore and onshore drilling",
+   "text": "offshore and onshore drilling"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation (ACSES031, ACSES097)",
+   "text": "assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation (ACSES031, ACSES097)"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSES002)",
+   "text": "justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSES002)"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / evaluate and modify an investigation in response to new evidence",
+   "text": "evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / select and use suitable forms of digital, visual, written and/or oral forms of communication",
+   "text": "select and use suitable forms of digital, visual, written and/or oral forms of communication"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSES008, ACSES036, ACSES067, ACSES102)",
+   "text": "select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSES008, ACSES036, ACSES067, ACSES102)"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSES034, ACSES036)",
+   "text": "construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSES034, ACSES036)"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / analyse evidence, including data and models, that supports the theory of plate tectonics, including but not limited to:",
+   "text": "analyse evidence, including data and models, that supports the theory of plate tectonics, including but not limited to:"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / the ‘jigsaw fit’ of the continental shelves (ACSES004, ACSES006)",
+   "text": "the ‘jigsaw fit’ of the continental shelves (ACSES004, ACSES006)"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / matching up identical fossils on different continents (ACSES004, ACSES006)",
+   "text": "matching up identical fossils on different continents (ACSES004, ACSES006)"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / the profile of the ocean floor",
+   "text": "the profile of the ocean floor"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / the age of sea floor rocks (ACSES004)",
+   "text": "the age of sea floor rocks (ACSES004)"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / magnetic reversals in sea floor rocks (ACSES035)",
+   "text": "magnetic reversals in sea floor rocks (ACSES035)"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / evaluate the contributions of the following theories, models and research to our understanding of the movement of plates, including but not limited to: (ACSES005, ACSES009, ACSES035, ACSES038)",
+   "text": "evaluate the contributions of the following theories, models and research to our understanding of the movement of plates, including but not limited to: (ACSES005, ACSES009, ACSES035, ACSES038)"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / Wegener – continental drift",
+   "text": "Wegener – continental drift"
+  },
+  {
+   "code": "PRE-M2-T1-D15",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / Holmes – convection in the mantle",
+   "text": "Holmes – convection in the mantle"
+  },
+  {
+   "code": "PRE-M2-T1-D16",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / Hess – sea floor spreading",
+   "text": "Hess – sea floor spreading"
+  },
+  {
+   "code": "PRE-M2-T1-D17",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / Vine and Matthews – magnetic reversals (ACSES004)",
+   "text": "Vine and Matthews – magnetic reversals (ACSES004)"
+  },
+  {
+   "code": "PRE-M2-T1-D18",
+   "path": "Year 11 / Plate Tectonics / Evidence for plate tectonics / Glomar Challenger – age of oceanic floors",
+   "text": "Glomar Challenger – age of oceanic floors"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSES001, ACSES061, ACSES096)",
+   "text": "develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSES001, ACSES061, ACSES096)"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / modify questions and hypotheses to reflect new evidence",
+   "text": "modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSES004, ACSES007, ACSES064, ACSES101)",
+   "text": "select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSES004, ACSES007, ACSES064, ACSES101)"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / apply quantitative processes where appropriate",
+   "text": "apply quantitative processes where appropriate"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / evaluate and improve the quality of data",
+   "text": "evaluate and improve the quality of data"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / use geological maps of the Earth to locate boundary types and model the processes that have contributed to their formation, including: (ACSES006, ACSES035, ACSES099)",
+   "text": "use geological maps of the Earth to locate boundary types and model the processes that have contributed to their formation, including: (ACSES006, ACSES035, ACSES099)"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / divergent boundaries",
+   "text": "divergent boundaries"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / convergent boundaries",
+   "text": "convergent boundaries"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / transform boundaries",
+   "text": "transform boundaries"
+  },
+  {
+   "code": "PRE-M2-T2-D10",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / model types of plate boundaries showing the dominant topographic and geological features, including: (ACSES006)",
+   "text": "model types of plate boundaries showing the dominant topographic and geological features, including: (ACSES006)"
+  },
+  {
+   "code": "PRE-M2-T2-D11",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / divergent boundaries: rift valley, mid-ocean ridge, normal and transform faults",
+   "text": "divergent boundaries: rift valley, mid-ocean ridge, normal and transform faults"
+  },
+  {
+   "code": "PRE-M2-T2-D12",
+   "path": "Year 11 / Plate Tectonics / Plate boundaries and processes / convergent boundaries: mountain range, trench, reverse faults and folds",
+   "text": "convergent boundaries: mountain range, trench, reverse faults and folds"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Energy Transformations / Energy within Earth / conduct a practical investigation to demonstrate convection currents (ACSES031)",
+   "text": "conduct a practical investigation to demonstrate convection currents (ACSES031)"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Energy Transformations / Energy within Earth / analyse the role of solar radiation in driving the Earth’s processes, eg photosynthesis and the water cycle (ACSES046, ACSES048)",
+   "text": "analyse the role of solar radiation in driving the Earth’s processes, eg photosynthesis and the water cycle (ACSES046, ACSES048)"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Energy Transformations / Energy within Earth / investigate the role of gravity and heat in tectonic plate movements, including: (ACSES033, ACSES047)",
+   "text": "investigate the role of gravity and heat in tectonic plate movements, including: (ACSES033, ACSES047)"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Energy Transformations / Energy within Earth / comparing the movement of the Earth’s plates to surface movements of other bodies in the solar system",
+   "text": "comparing the movement of the Earth’s plates to surface movements of other bodies in the solar system"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Energy Transformations / Energy within Earth / modelling movement caused by gravity and heat (ACSES048, ACSES049)",
+   "text": "modelling movement caused by gravity and heat (ACSES048, ACSES049)"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Energy Transformations / Energy within Earth / describing the contributions of convection and slab pull to plate speed",
+   "text": "describing the contributions of convection and slab pull to plate speed"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / derive trends, patterns and relationships in data and information",
+   "text": "derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / assess error, uncertainty and limitations in data (ACSES004, ACSES005, ACSES033, ACSES099)",
+   "text": "assess error, uncertainty and limitations in data (ACSES004, ACSES005, ACSES033, ACSES099)"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSES005)",
+   "text": "assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSES005)"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / explain how the release of elastic potential energy in rock leads to earthquakes (ACSES044, ACSES047)",
+   "text": "explain how the release of elastic potential energy in rock leads to earthquakes (ACSES044, ACSES047)"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / describe the role of heat and its interactions with the lithosphere in creating different types of volcanic eruptions and magma compositions, including but not limited to: (ACSES099)",
+   "text": "describe the role of heat and its interactions with the lithosphere in creating different types of volcanic eruptions and magma compositions, including but not limited to: (ACSES099)"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / thermal plumes resulting in effusive mafic eruptions",
+   "text": "thermal plumes resulting in effusive mafic eruptions"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / partial melting of subducted oceanic plates resulting in explosive felsic eruptions",
+   "text": "partial melting of subducted oceanic plates resulting in explosive felsic eruptions"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / interactions of magma and overlying ice resulting in ash clouds",
+   "text": "interactions of magma and overlying ice resulting in ash clouds"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / represent these energy transformations in the formation of mountains due to: thermal expansion; deformation of the lithosphere (ACSES035)",
+   "text": "represent these energy transformations in the formation of mountains due to: thermal expansion; deformation of the lithosphere (ACSES035)"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / investigate the unique properties of water that make it such an important component of the Earth’s systems, including: (ACSES024)",
+   "text": "investigate the unique properties of water that make it such an important component of the Earth’s systems, including: (ACSES024)"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / boiling point",
+   "text": "boiling point"
+  },
+  {
+   "code": "PRE-M3-T2-D12",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / ability to act as a solvent",
+   "text": "ability to act as a solvent"
+  },
+  {
+   "code": "PRE-M3-T2-D13",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / density",
+   "text": "density"
+  },
+  {
+   "code": "PRE-M3-T2-D14",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / thermal capacity",
+   "text": "thermal capacity"
+  },
+  {
+   "code": "PRE-M3-T2-D15",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / surface tension",
+   "text": "surface tension"
+  },
+  {
+   "code": "PRE-M3-T2-D16",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / outline the roles of energy, water masses and salinity in producing ocean currents (ACSES051)",
+   "text": "outline the roles of energy, water masses and salinity in producing ocean currents (ACSES051)"
+  },
+  {
+   "code": "PRE-M3-T2-D17",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / explain the role of heat transfer by ocean currents and atmospheric movement in causing phenomena, eg El Niño and La Niña (ACSES052)",
+   "text": "explain the role of heat transfer by ocean currents and atmospheric movement in causing phenomena, eg El Niño and La Niña (ACSES052)"
+  },
+  {
+   "code": "PRE-M3-T2-D18",
+   "path": "Year 11 / Energy Transformations / Energy and Earth systems / extract information from secondary sources to document and investigate changes in the cryosphere (ACSES034)",
+   "text": "extract information from secondary sources to document and investigate changes in the cryosphere (ACSES034)"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Human Impacts / Water and land use / employ and evaluate safe work practices and manage risks (ACSES031)",
+   "text": "employ and evaluate safe work practices and manage risks (ACSES031)"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Human Impacts / Water and land use / use appropriate technologies to ensure and evaluate accuracy",
+   "text": "use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Human Impacts / Water and land use / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style",
+   "text": "select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Human Impacts / Water and land use / represent the distribution of the Earth’s water, including the amount available to plants and animals (ACSES060)",
+   "text": "represent the distribution of the Earth’s water, including the amount available to plants and animals (ACSES060)"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Human Impacts / Water and land use / investigate the treatment and potential reuse of different types of water, including but not limited to: (ACSES058)",
+   "text": "investigate the treatment and potential reuse of different types of water, including but not limited to: (ACSES058)"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Human Impacts / Water and land use / industrial wastewater",
+   "text": "industrial wastewater"
+  },
+  {
+   "code": "PRE-M4-T1-D7",
+   "path": "Year 11 / Human Impacts / Water and land use / sewage",
+   "text": "sewage"
+  },
+  {
+   "code": "PRE-M4-T1-D8",
+   "path": "Year 11 / Human Impacts / Water and land use / stormwater",
+   "text": "stormwater"
+  },
+  {
+   "code": "PRE-M4-T1-D9",
+   "path": "Year 11 / Human Impacts / Water and land use / Describe ways in which human activity can influence the availability and quality of water both directly (eg over-extraction) or indirectly (eg algal blooms) (ACSES080)",
+   "text": "Describe ways in which human activity can influence the availability and quality of water both directly (eg over-extraction) or indirectly (eg algal blooms) (ACSES080)"
+  },
+  {
+   "code": "PRE-M4-T1-D10",
+   "path": "Year 11 / Human Impacts / Water and land use / explain causes of salinisation, including but not limited to: (ACSES024)",
+   "text": "explain causes of salinisation, including but not limited to: (ACSES024)"
+  },
+  {
+   "code": "PRE-M4-T1-D11",
+   "path": "Year 11 / Human Impacts / Water and land use / land clearing",
+   "text": "land clearing"
+  },
+  {
+   "code": "PRE-M4-T1-D12",
+   "path": "Year 11 / Human Impacts / Water and land use / irrigation",
+   "text": "irrigation"
+  },
+  {
+   "code": "PRE-M4-T1-D13",
+   "path": "Year 11 / Human Impacts / Water and land use / investigate the rehabilitation of salinity-affected area(s) by preparing a case study (ACSES070)",
+   "text": "investigate the rehabilitation of salinity-affected area(s) by preparing a case study (ACSES070)"
+  },
+  {
+   "code": "PRE-M4-T1-D14",
+   "path": "Year 11 / Human Impacts / Water and land use / conduct a practical investigation into soil erosion prevention and analyse the efficacy of the method(s) used (ACSES060, ACSES102)",
+   "text": "conduct a practical investigation into soil erosion prevention and analyse the efficacy of the method(s) used (ACSES060, ACSES102)"
+  },
+  {
+   "code": "PRE-M4-T1-D15",
+   "path": "Year 11 / Human Impacts / Water and land use / investigate sources and effects of soil contamination, including but not limited to: heavy metal contamination",
+   "text": "investigate sources and effects of soil contamination, including but not limited to: heavy metal contamination"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Human Impacts / Human impacts on ecosystems / outline the biotic and abiotic effects of introduced species",
+   "text": "outline the biotic and abiotic effects of introduced species"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Human Impacts / Human impacts on ecosystems / conduct an investigation into a local introduced species, including: reason for introducing the species; biotic and abiotic effects of the species; area affected by the species; human impacts that favour the introduced species; control or mitigation methods; economic impact of the species",
+   "text": "conduct an investigation into a local introduced species, including: reason for introducing the species; biotic and abiotic effects of the species; area affected by the species; human impacts that favour the introduced species; control or mitigation methods; economic impact of the species"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Human Impacts / Human impacts on ecosystems / different views about the value of and/or harm caused by the introduced species, including the views of Aboriginal and Torres Strait Islander Peoples",
+   "text": "different views about the value of and/or harm caused by the introduced species, including the views of Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Human Impacts / Human impacts on ecosystems / analyse ways in which human activity can upset the balance of ecosystems and favour introduced species (ACSES027)",
+   "text": "analyse ways in which human activity can upset the balance of ecosystems and favour introduced species (ACSES027)"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Human Impacts / Human impacts on ecosystems / describe ways in which introduced species contribute to the decline or extinction of native Australian species (ACSES081)",
+   "text": "describe ways in which introduced species contribute to the decline or extinction of native Australian species (ACSES081)"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Earth’s Processes / Earth history / investigate evidence for the origin of organic molecules on the Earth, including: (ACSES025)",
+   "text": "investigate evidence for the origin of organic molecules on the Earth, including: (ACSES025)"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Earth’s Processes / Earth history / Urey and Miller’s experiments (ACSES026)",
+   "text": "Urey and Miller’s experiments (ACSES026)"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Earth’s Processes / Earth history / communities around Black smokers (ACSES026, ACSES027)",
+   "text": "communities around Black smokers (ACSES026, ACSES027)"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Earth’s Processes / Earth history / meteorites/panspermia",
+   "text": "meteorites/panspermia"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Earth’s Processes / Earth history / investigate the evidence for the development of photosynthetic life, including cyanobacteria and stromatolites (ACSES021, ACSES028)",
+   "text": "investigate the evidence for the development of photosynthetic life, including cyanobacteria and stromatolites (ACSES021, ACSES028)"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Earth’s Processes / Earth history / evaluate the evidence for the origin of multicellular life and resulting changes to ecosystems, for example, the Ediacaran and Cambrian fauna (ACSES029)",
+   "text": "evaluate the evidence for the origin of multicellular life and resulting changes to ecosystems, for example, the Ediacaran and Cambrian fauna (ACSES029)"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Earth’s Processes / Earth history / investigate the conquest of land by both plants and animals (ACSES029)",
+   "text": "investigate the conquest of land by both plants and animals (ACSES029)"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / analyse the changes in the geosphere, atmosphere and hydrosphere that resulted from the development and evolution of the biosphere, for example: (ACSES022, ACSES023)",
+   "text": "analyse the changes in the geosphere, atmosphere and hydrosphere that resulted from the development and evolution of the biosphere, for example: (ACSES022, ACSES023)"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / effect of photosynthesising cyanobacteria on each of the spheres (ACSES021, ACSES025)",
+   "text": "effect of photosynthesising cyanobacteria on each of the spheres (ACSES021, ACSES025)"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / role of oxygen in the production of banded iron formations",
+   "text": "role of oxygen in the production of banded iron formations"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / investigate and model processes of fossil formation by examining a variety of methods in rock, including: (ACSES028)",
+   "text": "investigate and model processes of fossil formation by examining a variety of methods in rock, including: (ACSES028)"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / mould formations",
+   "text": "mould formations"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / cast formations",
+   "text": "cast formations"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / trace fossils",
+   "text": "trace fossils"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / discuss the significance of index fossils in generating a geological timescale",
+   "text": "discuss the significance of index fossils in generating a geological timescale"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / extrapolate how the principles of uniformitarianism and superposition as well as fossils and absolute dating can be used to date events of geological significance, for example: (ACSES006, ACSES015, ACSES016)",
+   "text": "extrapolate how the principles of uniformitarianism and superposition as well as fossils and absolute dating can be used to date events of geological significance, for example: (ACSES006, ACSES015, ACSES016)"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / the evolution of the Cambrian fauna (ACSES029)",
+   "text": "the evolution of the Cambrian fauna (ACSES029)"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Earth’s Processes / Earth systems and life / mass extinction events (ACSES029)",
+   "text": "mass extinction events (ACSES029)"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / using data, predict the zones along which earthquakes and both effusive and explosive volcanic eruptions are likely to occur and relate these to plate boundaries (ACSES094)",
+   "text": "using data, predict the zones along which earthquakes and both effusive and explosive volcanic eruptions are likely to occur and relate these to plate boundaries (ACSES094)"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / using secondary sources, investigate and model the changing depth of the focus of earthquakes at convergent and divergent boundaries (ACSES100)",
+   "text": "using secondary sources, investigate and model the changing depth of the focus of earthquakes at convergent and divergent boundaries (ACSES100)"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / using secondary sources, investigate and explain the hazards associated with earthquakes, including ground motion and tsunamis (ACSES100)",
+   "text": "using secondary sources, investigate and explain the hazards associated with earthquakes, including ground motion and tsunamis (ACSES100)"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / using secondary sources, investigate and explain the hazards associated with volcanoes, for example: ash eruptions and lava flows; lahars and poisonous gas emissions",
+   "text": "using secondary sources, investigate and explain the hazards associated with volcanoes, for example: ash eruptions and lava flows; lahars and poisonous gas emissions"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / account for the types of magma in each of the above types of volcanoes, and analyse how this affects the explosivity of their eruptions",
+   "text": "account for the types of magma in each of the above types of volcanoes, and analyse how this affects the explosivity of their eruptions"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / investigate the point at which a geological hazard becomes a disaster",
+   "text": "investigate the point at which a geological hazard becomes a disaster"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / using secondary sources, evaluate the effectiveness of technologies in predicting natural disasters, for example:",
+   "text": "using secondary sources, evaluate the effectiveness of technologies in predicting natural disasters, for example:"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / volcanoes: three-dimensional imaging, seismic data, early-warning systems, ground-movement data, analysis of historical data (ACSES095, ACSES098, ACSES100)",
+   "text": "volcanoes: three-dimensional imaging, seismic data, early-warning systems, ground-movement data, analysis of historical data (ACSES095, ACSES098, ACSES100)"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / earthquakes: ground movement detectors, anomalous animal behaviour, strain meters",
+   "text": "earthquakes: ground movement detectors, anomalous animal behaviour, strain meters"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / east coast lows: temperatures, pressure systems",
+   "text": "east coast lows: temperatures, pressure systems"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / investigate and evaluate the technologies used to minimise the effect of natural disasters associated with volcanoes and earthquakes, including building codes, disaster warning systems and education (ACSES103)",
+   "text": "investigate and evaluate the technologies used to minimise the effect of natural disasters associated with volcanoes and earthquakes, including building codes, disaster warning systems and education (ACSES103)"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Hazards / Geological and environmental hazards / using secondary sources, assess the accuracy of technologies used in meteorology to predict and prevent damage to life and infrastructure as a result of natural weather events",
+   "text": "using secondary sources, assess the accuracy of technologies used in meteorology to predict and prevent damage to life and infrastructure as a result of natural weather events"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Hazards / Hazard mitigation / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation (ACSES031, ACSES097)",
+   "text": "assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation (ACSES031, ACSES097)"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Hazards / Hazard mitigation / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSES002)",
+   "text": "justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSES002)"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Hazards / Hazard mitigation / evaluate and modify an investigation in response to new evidence",
+   "text": "evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Hazards / Hazard mitigation / employ and evaluate safe work practices and manage risks (ACSES031)",
+   "text": "employ and evaluate safe work practices and manage risks (ACSES031)"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Hazards / Hazard mitigation / use appropriate technologies to ensure and evaluate accuracy",
+   "text": "use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Hazards / Hazard mitigation / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style",
+   "text": "select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Hazards / Hazard mitigation / select and use suitable forms of digital, visual, written and/or oral forms of communication",
+   "text": "select and use suitable forms of digital, visual, written and/or oral forms of communication"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Hazards / Hazard mitigation / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSES008, ACSES036, ACSES067, ACSES102)",
+   "text": "select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSES008, ACSES036, ACSES067, ACSES102)"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Hazards / Hazard mitigation / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSES034, ACSES036)",
+   "text": "construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSES034, ACSES036)"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Hazards / Hazard mitigation / using data from secondary sources, compare the eruptions that occur at explosive and effusive volcanoes in terms of the impact on the biosphere and atmosphere (ACSES099)",
+   "text": "using data from secondary sources, compare the eruptions that occur at explosive and effusive volcanoes in terms of the impact on the biosphere and atmosphere (ACSES099)"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Hazards / Hazard mitigation / analyse the effects of a major volcanic eruption on the atmosphere in terms of changing the climate (both warming and cooling) (ACSES099)",
+   "text": "analyse the effects of a major volcanic eruption on the atmosphere in terms of changing the climate (both warming and cooling) (ACSES099)"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Hazards / Hazard mitigation / in a case study, investigate one eruption that has had a significant effect on the biosphere and atmosphere and assess its impact, including but not limited to:",
+   "text": "in a case study, investigate one eruption that has had a significant effect on the biosphere and atmosphere and assess its impact, including but not limited to:"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Hazards / Hazard mitigation / Mount Pinatubo (ACSES099)",
+   "text": "Mount Pinatubo (ACSES099)"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Hazards / Hazard mitigation / evaluate the causes and physical impact of climatic phenomena on a local ecosystem, including: (ACSES101, ACSES103)",
+   "text": "evaluate the causes and physical impact of climatic phenomena on a local ecosystem, including: (ACSES101, ACSES103)"
+  },
+  {
+   "code": "HSC-M2-T2-D15",
+   "path": "Year 12 / Hazards / Hazard mitigation / hailstorms",
+   "text": "hailstorms"
+  },
+  {
+   "code": "HSC-M2-T2-D16",
+   "path": "Year 12 / Hazards / Hazard mitigation / east coast lows",
+   "text": "east coast lows"
+  },
+  {
+   "code": "HSC-M2-T2-D17",
+   "path": "Year 12 / Hazards / Hazard mitigation / droughts or floods",
+   "text": "droughts or floods"
+  },
+  {
+   "code": "HSC-M2-T2-D18",
+   "path": "Year 12 / Hazards / Hazard mitigation / bushfires",
+   "text": "bushfires"
+  },
+  {
+   "code": "HSC-M2-T2-D19",
+   "path": "Year 12 / Hazards / Hazard mitigation / investigate how human activities can contribute to the frequency and magnitude of some natural disasters, including: (ACSES102)",
+   "text": "investigate how human activities can contribute to the frequency and magnitude of some natural disasters, including: (ACSES102)"
+  },
+  {
+   "code": "HSC-M2-T2-D20",
+   "path": "Year 12 / Hazards / Hazard mitigation / landslides",
+   "text": "landslides"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Climate Science / Climate systems / use modelling to explain the causes of the natural greenhouse effect and examine the timescales in which changes occur (ACSES049, ACSES084)",
+   "text": "use modelling to explain the causes of the natural greenhouse effect and examine the timescales in which changes occur (ACSES049, ACSES084)"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Climate Science / Climate systems / using secondary sources, assess the different causes of natural climate variation and the timescales in which changes occur, including: (ACSES104, ACSES105)",
+   "text": "using secondary sources, assess the different causes of natural climate variation and the timescales in which changes occur, including: (ACSES104, ACSES105)"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Climate Science / Climate systems / the plate tectonic supercycle",
+   "text": "the plate tectonic supercycle"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Climate Science / Climate systems / massive volcanic eruptions, in the Deccan and Siberian Traps",
+   "text": "massive volcanic eruptions, in the Deccan and Siberian Traps"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Climate Science / Climate systems / changes in the Earth’s orbit around the Sun",
+   "text": "changes in the Earth’s orbit around the Sun"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Climate Science / Climate systems / changes in ocean currents and ocean circulation",
+   "text": "changes in ocean currents and ocean circulation"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Climate Science / Climate systems / describe and discuss ancient evidence of variations in global temperature, including but not limited to: (ACSES088, ACSES108)",
+   "text": "describe and discuss ancient evidence of variations in global temperature, including but not limited to: (ACSES088, ACSES108)"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Climate Science / Climate systems / pollen grains in sedimentary rocks",
+   "text": "pollen grains in sedimentary rocks"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Climate Science / Climate systems / changes in rock types",
+   "text": "changes in rock types"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Climate Science / Climate systems / fossils and microfossils",
+   "text": "fossils and microfossils"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Climate Science / Climate systems / changing isotope ratios in rocks and deep sea sediments",
+   "text": "changing isotope ratios in rocks and deep sea sediments"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Climate Science / Climate systems / identify and explain more recent evidence of climate variation, including but not limited to: (ACSES091, ACSES107, ACSES108)",
+   "text": "identify and explain more recent evidence of climate variation, including but not limited to: (ACSES091, ACSES107, ACSES108)"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Climate Science / Climate systems / ice cores containing gas bubbles and oxygen isotopes",
+   "text": "ice cores containing gas bubbles and oxygen isotopes"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Climate Science / Climate systems / dendrochronology",
+   "text": "dendrochronology"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Climate Science / Climate systems / Aboriginal art sites showing now-extinct species and environments (ACSES107)",
+   "text": "Aboriginal art sites showing now-extinct species and environments (ACSES107)"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Climate Science / Climate systems / human instrumental records (ACSES087, ACSES107)",
+   "text": "human instrumental records (ACSES087, ACSES107)"
+  },
+  {
+   "code": "HSC-M3-T1-D17",
+   "path": "Year 12 / Climate Science / Climate systems / isotope ratios shown in stalagmites, stalactites and corals",
+   "text": "isotope ratios shown in stalagmites, stalactites and corals"
+  },
+  {
+   "code": "HSC-M3-T1-D18",
+   "path": "Year 12 / Climate Science / Climate systems / investigate possible human-induced causes for the enhanced greenhouse effect, including: the burning of fossil fuels for energy",
+   "text": "investigate possible human-induced causes for the enhanced greenhouse effect, including: the burning of fossil fuels for energy"
+  },
+  {
+   "code": "HSC-M3-T1-D19",
+   "path": "Year 12 / Climate Science / Climate systems / land use and land cover change (ACSES092, ACSES093, ACSES094, ACSES105)",
+   "text": "land use and land cover change (ACSES092, ACSES093, ACSES094, ACSES105)"
+  },
+  {
+   "code": "HSC-M3-T1-D20",
+   "path": "Year 12 / Climate Science / Climate systems / investigate scientific evidence suggesting ways in which humans may assist to minimise any human contribution to the greenhouse effect in their daily lives (ACSES098, ACSES108)",
+   "text": "investigate scientific evidence suggesting ways in which humans may assist to minimise any human contribution to the greenhouse effect in their daily lives (ACSES098, ACSES108)"
+  },
+  {
+   "code": "HSC-M3-T1-D21",
+   "path": "Year 12 / Climate Science / Climate systems / evaluate scientific evidence for the usefulness of a range of mitigation and adaptation strategies, including but not limited to: (ACSES090, ACSES097, ACSES108)",
+   "text": "evaluate scientific evidence for the usefulness of a range of mitigation and adaptation strategies, including but not limited to: (ACSES090, ACSES097, ACSES108)"
+  },
+  {
+   "code": "HSC-M3-T1-D22",
+   "path": "Year 12 / Climate Science / Climate systems / urban design",
+   "text": "urban design"
+  },
+  {
+   "code": "HSC-M3-T1-D23",
+   "path": "Year 12 / Climate Science / Climate systems / geo-engineering strategies",
+   "text": "geo-engineering strategies"
+  },
+  {
+   "code": "HSC-M3-T1-D24",
+   "path": "Year 12 / Climate Science / Climate systems / alternative energy sources",
+   "text": "alternative energy sources"
+  },
+  {
+   "code": "HSC-M3-T1-D25",
+   "path": "Year 12 / Climate Science / Climate systems / using or changing agricultural practices of a range of cultural groups, including those of Aboriginal and Torres Strait Islander Peoples",
+   "text": "using or changing agricultural practices of a range of cultural groups, including those of Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Climate Science / Climate change and impacts / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSES001, ACSES061, ACSES096)",
+   "text": "develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSES001, ACSES061, ACSES096)"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Climate Science / Climate change and impacts / modify questions and hypotheses to reflect new evidence",
+   "text": "modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Climate Science / Climate change and impacts / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSES004, ACSES007, ACSES064, ACSES101)",
+   "text": "select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSES004, ACSES007, ACSES064, ACSES101)"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Climate Science / Climate change and impacts / apply quantitative processes where appropriate",
+   "text": "apply quantitative processes where appropriate"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Climate Science / Climate change and impacts / evaluate and improve the quality of data",
+   "text": "evaluate and improve the quality of data"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Climate Science / Climate change and impacts / derive trends, patterns and relationships in data and information",
+   "text": "derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Climate Science / Climate change and impacts / assess error, uncertainty and limitations in data (ACSES004, ACSES005, ACSES033, ACSES099)",
+   "text": "assess error, uncertainty and limitations in data (ACSES004, ACSES005, ACSES033, ACSES099)"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Climate Science / Climate change and impacts / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSES005)",
+   "text": "assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSES005)"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Climate Science / Climate change and impacts / model the plate tectonic supercycle (ACSES025, ACSES038)",
+   "text": "model the plate tectonic supercycle (ACSES025, ACSES038)"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Climate Science / Climate change and impacts / outline the effect of the plate tectonic supercycle on large-scale phenomena, including climate and evolution (ACSES003, ACSES010, ACSES013, ACSES014)",
+   "text": "outline the effect of the plate tectonic supercycle on large-scale phenomena, including climate and evolution (ACSES003, ACSES010, ACSES013, ACSES014)"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Climate Science / Climate change and impacts / distinguish between the natural greenhouse effect and any anthropogenic greenhouse effects",
+   "text": "distinguish between the natural greenhouse effect and any anthropogenic greenhouse effects"
+  },
+  {
+   "code": "HSC-M3-T2-D12",
+   "path": "Year 12 / Climate Science / Climate change and impacts / investigate any influence that human activities may have had on the environment since the Industrial Revolution, for example: increases in greenhouse gases (ACSES104); ocean acidification (ACSES105)",
+   "text": "investigate any influence that human activities may have had on the environment since the Industrial Revolution, for example: increases in greenhouse gases (ACSES104); ocean acidification (ACSES105)"
+  },
+  {
+   "code": "HSC-M3-T2-D13",
+   "path": "Year 12 / Climate Science / Climate change and impacts / investigate flow-on effects of changes to climate, including but not limited to: (ACSES106, ACSES108)",
+   "text": "investigate flow-on effects of changes to climate, including but not limited to: (ACSES106, ACSES108)"
+  },
+  {
+   "code": "HSC-M3-T2-D14",
+   "path": "Year 12 / Climate Science / Climate change and impacts / changing weather patterns (ACSES049, ACSES050, ACSES052)",
+   "text": "changing weather patterns (ACSES049, ACSES050, ACSES052)"
+  },
+  {
+   "code": "HSC-M3-T2-D15",
+   "path": "Year 12 / Climate Science / Climate change and impacts / changes in glaciers, sea ice and ice sheets",
+   "text": "changes in glaciers, sea ice and ice sheets"
+  },
+  {
+   "code": "HSC-M3-T2-D16",
+   "path": "Year 12 / Climate Science / Climate change and impacts / changing range of species due to rising sea level",
+   "text": "changing range of species due to rising sea level"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Resource Management / Resource use / identify Australian renewable resources and where they are located, including but not limited to: (ACSES062, ACSES072)",
+   "text": "identify Australian renewable resources and where they are located, including but not limited to: (ACSES062, ACSES072)"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Resource Management / Resource use / agricultural resources: terrestrial and aquatic",
+   "text": "agricultural resources: terrestrial and aquatic"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Resource Management / Resource use / water",
+   "text": "water"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Resource Management / Resource use / energy sources",
+   "text": "energy sources"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Resource Management / Resource use / investigate how mining sites affect the environment, including Aboriginal cultural sites, and examine methods of reclamation of the environment and those sites after mining operations cease, including: open-pit mining; underground mining methods; offshore and onshore drilling",
+   "text": "investigate how mining sites affect the environment, including Aboriginal cultural sites, and examine methods of reclamation of the environment and those sites after mining operations cease, including: open-pit mining; underground mining methods; offshore and onshore drilling"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Resource Management / Resource use / prepare a case study to investigate the involvement of traditional owners in the planning procedures, mining practices and restoration of damaged lands after mining operations cease",
+   "text": "prepare a case study to investigate the involvement of traditional owners in the planning procedures, mining practices and restoration of damaged lands after mining operations cease"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Resource Management / Resource use / prepare a case study of an important Australian renewable or non-renewable resource, including but not limited to:",
+   "text": "prepare a case study of an important Australian renewable or non-renewable resource, including but not limited to:"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Resource Management / Resource use / how the resource is found, extracted and/or managed (ACSES073, ACSES074)",
+   "text": "how the resource is found, extracted and/or managed (ACSES073, ACSES074)"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Resource Management / Resource use / how the resource is used (ACSES078)",
+   "text": "how the resource is used (ACSES078)"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Resource Management / Resource use / whether the resource can be extracted and/or used sustainably (ACSES075, ACSES076)",
+   "text": "whether the resource can be extracted and/or used sustainably (ACSES075, ACSES076)"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / Resource Management / Resource use / the past, present and future use and importance of the resource (ACSES079)",
+   "text": "the past, present and future use and importance of the resource (ACSES079)"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Resource Management / Sustainable management / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSES006, ACSES010)",
+   "text": "use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSES006, ACSES010)"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Resource Management / Sustainable management / use scientific evidence and critical thinking skills to solve problems",
+   "text": "use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Resource Management / Sustainable management / conduct a practical investigation of the composition of household or organisational waste (ACSES058)",
+   "text": "conduct a practical investigation of the composition of household or organisational waste (ACSES058)"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Resource Management / Sustainable management / outline the management options for different types of solid waste (ACSES062)",
+   "text": "outline the management options for different types of solid waste (ACSES062)"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Resource Management / Sustainable management / evaluate the sustainability of a named waste management option, for example: (ACSES061, ACSES083)",
+   "text": "evaluate the sustainability of a named waste management option, for example: (ACSES061, ACSES083)"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Resource Management / Sustainable management / energy used to produce and/or recycle the waste",
+   "text": "energy used to produce and/or recycle the waste"
+  },
+  {
+   "code": "HSC-M4-T2-D7",
+   "path": "Year 12 / Resource Management / Sustainable management / environmental impact of waste disposal",
+   "text": "environmental impact of waste disposal"
+  },
+  {
+   "code": "HSC-M4-T2-D8",
+   "path": "Year 12 / Resource Management / Sustainable management / space for disposal or storage of waste",
+   "text": "space for disposal or storage of waste"
+  },
+  {
+   "code": "HSC-M4-T2-D9",
+   "path": "Year 12 / Resource Management / Sustainable management / local waste management facilities",
+   "text": "local waste management facilities"
+  },
+  {
+   "code": "HSC-M4-T2-D10",
+   "path": "Year 12 / Resource Management / Sustainable management / demand for reused or recycled waste",
+   "text": "demand for reused or recycled waste"
+  },
+  {
+   "code": "HSC-M4-T2-D11",
+   "path": "Year 12 / Resource Management / Sustainable management / investigate different definitions of sustainability and the rationales that underpin those definitions (ACSES066)",
+   "text": "investigate different definitions of sustainability and the rationales that underpin those definitions (ACSES066)"
+  },
+  {
+   "code": "HSC-M4-T2-D12",
+   "path": "Year 12 / Resource Management / Sustainable management / investigate human activities that affect sustainability, including but not limited to: overharvesting (ACSES082, ACSES083); water pollution (ACSES080); habitat removal or destruction (ACSES081)",
+   "text": "investigate human activities that affect sustainability, including but not limited to: overharvesting (ACSES082, ACSES083); water pollution (ACSES080); habitat removal or destruction (ACSES081)"
+  },
+  {
+   "code": "HSC-M4-T2-D13",
+   "path": "Year 12 / Resource Management / Sustainable management / investigate the processes used by Aboriginal and Torres Strait Islander Peoples as sustainable resource managers, for example: (ACSES040)",
+   "text": "investigate the processes used by Aboriginal and Torres Strait Islander Peoples as sustainable resource managers, for example: (ACSES040)"
+  },
+  {
+   "code": "HSC-M4-T2-D14",
+   "path": "Year 12 / Resource Management / Sustainable management / cultural traditions that preserve Country and Place and the resources located in those spaces",
+   "text": "cultural traditions that preserve Country and Place and the resources located in those spaces"
+  },
+  {
+   "code": "HSC-M4-T2-D15",
+   "path": "Year 12 / Resource Management / Sustainable management / ongoing engagement with groups such as land councils, national parks and municipal councils to improve resource management",
+   "text": "ongoing engagement with groups such as land councils, national parks and municipal councils to improve resource management"
+  },
+  {
+   "code": "HSC-M4-T2-D16",
+   "path": "Year 12 / Resource Management / Sustainable management / legislation and actions to protect significant areas of Country and Place",
+   "text": "legislation and actions to protect significant areas of Country and Place"
+  },
+  {
+   "code": "HSC-M4-T2-D17",
+   "path": "Year 12 / Resource Management / Sustainable management / research and present information about a sustainability initiative in their community (ACSES063)",
+   "text": "research and present information about a sustainability initiative in their community (ACSES063)"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ees202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which era in the Geological Time Scale covers the greatest duration of time?\nCenozoic\nMesozoic\nNeoproterozoic\nPalaeozoic"
+  },
+  {
+   "id": "ees202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following is correctly ordered from oldest to youngest?\nSilurian, Paleogene, Cambrian, Jurassic\nOrdovician, Devonian, Triassic, Cretaceous\nArchaean, Hadean, Proterozoic, Phanerozoic\nCenozoic, Mesozoic, Palaeozoic, Neoproterozoic"
+  },
+  {
+   "id": "ees202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Significant increases in oxygen in the atmosphere occurred during the Precambrian. Which sphere was largely responsible for this increase in the production of oxygen?\nAtmosphere\nBiosphere\nGeosphere\nHydrosphere"
+  },
+  {
+   "id": "ees202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Which of the following is made from a renewable resource?\nCardboard\nGlass\nPetrol\nSteel – 3 –"
+  },
+  {
+   "id": "ees202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The principle of uniformitarianism states that geological processes acted\nin an unexplained manner in the past.\nrandomly in the past as they do in the present.\nin the same manner and with the same intensity in the past as they do at present.\nin a different manner and with a different intensity in the past as they do at present."
+  },
+  {
+   "id": "ees202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following is most likely to account for the origin of life on Earth?\nPanspermia\nSuperposition\nContinental drift\nAnthropogenesis"
+  },
+  {
+   "id": "ees202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "At which of the following tectonic boundaries do most earthquakes of high magnitude occur?\nOceanic–oceanic divergent\nContinental–oceanic convergent\nContinental–continental divergent\nContinental–continental convergent"
+  },
+  {
+   "id": "ees202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following is the best technique that could be used to project how Earth’s climate will change in the future?\nAnalysing ice cores\nForecasting daily weather\nExtrapolating past climate data\nUsing computers to model climate processes"
+  },
+  {
+   "id": "ees202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Which of the following identifies the potential immediate hazards caused by explosive volcanic eruptions such as those associated with Mount Pinatubo?\nPyroclastic flows, lahars, acid rain, typhoons\nEarthquakes, typhoons, lava bombs, ash emissions\nLahars, poisonous gas emissions, lava bombs, ash emissions\nPoisonous gas emissions, global warming, lava bombs, ash emissions – 4 –"
+  },
+  {
+   "id": "ees202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Australia may be susceptible to a tsunami because it\nis on a convergent plate boundary.\nis near active plate boundaries in New Zealand.\nhas a divergent boundary to the south of Tasmania.\nhas large tidal movements around the north of the continent."
+  },
+  {
+   "id": "ees202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which human activity has the most immediate and direct effect on natural habitats?\nOver-harvesting fish for human consumption\nCombustion of fossil fuels producing carbon dioxide\nUrban expansion requiring infrastructure development\nCoal fired power stations producing thermal pollution in artificial lakes"
+  },
+  {
+   "id": "ees202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following contributes most to the enhanced greenhouse effect?\nCarbon\nMethane\nNitrogen\nOxygen – 5 – Refer to the following graph to answer Questions 13 and 14. The graph shows the changes in Earth’s global temperature from 1900−2008 followed by three different climate change projections to the year 2100. The projections are derived from different greenhouse gas emission scenarios. Grap h © Science Education Resource Centre (SERC) https://serc.carleton.edu/download/images/41716/modeling_climate.v2.jpg"
+  },
+  {
+   "id": "ees202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Earth’s average global temperature between 1900 and 2008 was approximately 15°C. If the world follows a lower emissions scenario (X), what would the average global temperature in 2100 be closest to?\n2°C\n4°C\n16°C\n17°C"
+  },
+  {
+   "id": "ees202014",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which aspect of the graph shows the scientific uncertainty associated with each projection?\nThe shading around each line\nThe time scale shown in 25 year intervals\nShowing both observations and a trend line\nMany data points shown on the same graph – 6 –"
+  },
+  {
+   "id": "ees202015",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "An Earth scientist collected the following data. Volcano Volcano type Tectonic setting Average flow rate of lava (km/hour) W Cinder cone Subduction zone 20 X Fissure Divergent ocean–ocean 25 Y Shield Hot spot 30 Z Composite Subduction zone 4 Based on the data provided, which volcano has the greatest capacity to affect global climate?\nVolcano W\nVolcano X\nVolcano Y\nVolcano Z"
+  },
+  {
+   "id": "ees202016",
+   "year": 2020,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The diagram shows a cross-section of a landfill site. The gravel allows leachate (liquid produced or contaminated by the decomposition of solid waste) to flow down to a collection point, where it can be pumped out of the landfill site for treatment. Pump Leachate drain pipe Underlying geology Groundwater Water table Under-gravel layer NOT TO SCALE Gravel Ground Based on the diagram, which of the following would be most suitable for use as the under-gravel layer?\nLimestone\nMethane capture pipes\nClay and welded plastic\nSand spread over natural soils – 7 –"
+  },
+  {
+   "id": "ees202017",
+   "year": 2020,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "The table shows the percentage composition of gas emitted from two sites on Kilauea. Volcano Gas composition (%) H2O 2 H CO2 CO SO2 H2S 2 Kilauea summit 37.1 0.5 48.9 1.5 11.84 0.04 0.02 Kilauea rift zone 79.8 0.9 3.15 0.1 14.9 0.622 0.309 Adapted from https://volcano.oregonstate.edu/gas-compositions-and-tectonic-setting Which pie chart represents the composition of gas emitted at the Kilauea summit? H2O SO2\nB. C. D. KEY CO2 Other S – 8 – 18 Which of the following is the best source of evidence for variations in global temperature during the Miocene epoch? A. Dendrochronology\nPollen grains in sedimentary rocks\nAboriginal rock art sites showing now-extinct species\nIce cores containing gas bubbles and oxygen isotopes"
+  },
+  {
+   "id": "ees202018",
+   "year": 2020,
+   "number": "18",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following is the best source of evidence for variations in global temperature during the Miocene epoch?"
+  },
+  {
+   "id": "ees202019",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The diagram shows a stream bed near an abandoned mine. A process known as acid mine drainage has lowered the pH of the sediment in the stream to a point where vegetation cannot grow. Diagram An environmental scientist wanted to investigate the relationship between distance from the mine and the severity of this problem caused by acid mine drainage. Which row of the table best describes the variables in this investigation?\nB. C. D. Independent variable Dependent variable Controlled variables pH of sediment Distance from the mine Rainfall in the past month Time since mining ceased Time since mining ceased pH of sediment Rainfall in the past month % plant cover Distance from the mine Time since mining ceased pH of sediment % plant cover Distance from the mine pH of sediment Time since mining ceased Rainfall in the past month – 9 – 20 A table showing climate data and a graph showing sulfur dioxide emissions in Mount Isa are provided. Mt Isa long-term averages Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Ann Mean max (°C) 36.4 35.4 34.4 32.0 28.0 24.9 24.8 27.4 31.3 34.7 36.6 37.1 31.9 Mean min (°C) 23.7 23.3 21.8 18.5 13.8 10.0 8.7 10.2 14.2 18.4 21.5 23.1 17.3 Mean rain (mm) 118.1 101.3 63.6 14.3 12.7 6.5 6.0 3.6 8.7 17.9 38.6 76.0 470.8 Median rain (mm) 72.8 85.6 38.0 1.8 3.7 0.0 0.0 0.4 0.4 8.6 25.2 49.4 421.2 Mean rain days 9.9 9.0 5.7 2.2 1.7 1.1 0.9 1.0 1.7 3.2 5.4 8.0 48.6 © Copyright Commonwealth of Australia 2021, Bureau of Meteorology Gra p h In which month would you expect the greatest decrease in local soil pH? A. January\nMay\nSeptember\nDecember © The State of Queensland 2021 BLANK PAGE – 10 – BLANK PAGE – 11 – © 2020 NSW Education Standards Authority – 12 – BLANK PAGE Office Use Only – Do NOT write anything, or make any marks below this line. – 13 – Do NOT write in this area. 2020 HIGHER SCHOOL CERTIFICATE EXAMINATION Earth and Environmental Science Section II Answer Booklet 80 marks Attempt Questions 21–36 Allow about 2 hours and 25 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Centre Number Student Number 5638310365 1051 15100 Office Use Only – Do NOT write anything, or make any marks below this line. – 14 – Do NOT write in this area. 0589310365"
+  },
+  {
+   "id": "ees202020",
+   "year": 2020,
+   "number": "20",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Climate Science",
+   "text": "A table showing climate data and a graph showing sulfur dioxide emissions in Mount Isa are provided. Mt Isa long-term averages Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec Ann Mean max (°C) 36.4 35.4 34.4 32.0 28.0 24.9 24.8 27.4 31.3 34.7 36.6 37.1 31.9 Mean min (°C) 23.7 23.3 21.8 18.5 13.8 10.0 8.7 10.2 14.2 18.4 21.5 23.1 17.3 Mean rain (mm) 118.1 101.3 63.6 14.3 12.7 6.5 6.0 3.6 8.7 17.9 38.6 76.0 470.8 Median rain (mm) 72.8 85.6 38.0 1.8 3.7 0.0 0.0 0.4 0.4 8.6 25.2 49.4 421.2 Mean rain days 9.9 9.0 5.7 2.2 1.7 1.1 0.9 1.0 1.7 3.2 5.4 8.0 48.6 © Copyright Commonwealth of Australia 2021, Bureau of Meteorology Gra p h In which month would you expect the greatest decrease in local soil pH?"
+  },
+  {
+   "id": "ees202021",
+   "year": 2020,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Describe the use of index fossils in the development of a Geological Time Scale."
+  },
+  {
+   "id": "ees202022",
+   "year": 2020,
+   "number": "22",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Explain TWO effects that a volcanic eruption had on the atmosphere or the biosphere."
+  },
+  {
+   "id": "ees202023",
+   "year": 2020,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "In January 2019, a 270 km pipeline was completed to supply water to the City of"
+  },
+  {
+   "id": "ees202024",
+   "year": 2020,
+   "number": "24",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The image shows the global conveyor belt and the movement of water through the"
+  },
+  {
+   "id": "ees202025",
+   "year": 2020,
+   "number": "25",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Explain TWO factors which allowed animals to move from an aquatic environment"
+  },
+  {
+   "id": "ees202026",
+   "year": 2020,
+   "number": "26",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "A council is encouraging residents to sort their waste into separate bins. The image"
+  },
+  {
+   "id": "ees202027",
+   "year": 2020,
+   "number": "27",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Students are planning a practical investigation into the composition of household or"
+  },
+  {
+   "id": "ees202028",
+   "year": 2020,
+   "number": "28",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "For a mine that you have investigated, describe the involvement of traditional owners"
+  },
+  {
+   "id": "ees202029",
+   "year": 2020,
+   "number": "29",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "The graph shows data on all reported volcanic eruptions since 1800 CE and the"
+  },
+  {
+   "id": "ees202030",
+   "year": 2020,
+   "number": "30",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Using an example, explain a change in the geosphere that resulted from a development"
+  },
+  {
+   "id": "ees202031",
+   "year": 2020,
+   "number": "31",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Assess the effectiveness of a method used to minimise the impact of a natural disaster."
+  },
+  {
+   "id": "ees202032",
+   "year": 2020,
+   "number": "32",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Since human settlement, Australia’s land use has changed the natural land cover"
+  },
+  {
+   "id": "ees202033",
+   "year": 2020,
+   "number": "33",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Explain ONE effect that an aspect of the plate tectonic supercycle has had on the"
+  },
+  {
+   "id": "ees202034",
+   "year": 2020,
+   "number": "34",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "It has been suggested that practices used by Aboriginal and Torres Strait Islander"
+  },
+  {
+   "id": "ees202035",
+   "year": 2020,
+   "number": "35",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Two tectonic plate boundaries run in a north–south direction. A geologist measured"
+  },
+  {
+   "id": "ees202036",
+   "year": 2020,
+   "number": "36",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Assess the effects of both climatic phenomena and human activities on the frequency"
+  },
+  {
+   "id": "ees202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "To which eon does the Holocene epoch belong?\nPalaeozoic\nPhanerozoic\nPrecambrian\nQuaternary"
+  },
+  {
+   "id": "ees202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "A term is defined as ‘maintaining an ecological balance by avoiding the depletion of a natural resource’. To which term does this definition apply?\nDendrochronology\nSuperposition\nSustainability\nUniformitarianism"
+  },
+  {
+   "id": "ees202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "What was produced in the flask as a result of Urey and Miller’s experiment?\nDNA\nAmino acids\nLiving tissue\nThe first cells"
+  },
+  {
+   "id": "ees202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Hard-bodied animals are most likely to have evolved in response to\nchanges in the Earth’s climate.\nthe evolution of vertebrate fauna.\nthe need for protection from predation.\nthe deposition of banded iron formations. – 3 –"
+  },
+  {
+   "id": "ees202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The following model shows a suggested change in thinking for solid waste management. If this change in thinking was adopted in Australia, which row of the table shows the most likely outcome?\nB. C. D. Increased Decreased Recycling and composting Source reduction Conversion technologies Recycling and composting Landfilling Source reduction Source reduction Landfilling 6 Which of the following provides evidence of recent variations in global temperatur A. Observations of fossils\nChanges in the Earth’s orbit\nPollen grains in sedimentary rocks\nIce cores containing gas bubbles and oxygen isotopes e? Due to copyright restrictions, this material cannot be displayed until permission has been obtained. – 4 –"
+  },
+  {
+   "id": "ees202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following provides evidence of recent variations in global temperatur"
+  },
+  {
+   "id": "ees202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The graphic identifies trends in the composition and physical characteristics of magma. 1200°C Temperature 600°C Viscosity Mobility 48% Silica content 77% Explosivity 0.5% Gas content 5% Basaltic Rhyolitic , % & 4 2 ) ' ( 4 In which direction should the Explosivity arrow point and why?\nRight, as high viscosity magma can hold more gas\nRight, because silica content decreases to the right\nLeft, as hotter magma is more explosive than cooler magma\nLeft, as mobile magma is more explosive than less mobile magma"
+  },
+  {
+   "id": "ees202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The most effective strategy for NSW to help reduce rising global temperatures would be to\nreplace hydro power with solar.\nbuy electricity from another state.\nreplace coal-fired power stations with gas.\nreplace coal-fired power stations with wind power. – 5 –"
+  },
+  {
+   "id": "ees202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Which of the following most accurately identifies the relationship between plate boundaries and the nature of eruptions and depth of earthquakes found along these boundaries?\nB. C. D. Boundary Nature of eruption Earthquake depth Convergent Effusive Shallow Convergent Explosive Deep Divergent Effusive Deep Divergent Explosive Shallow 10 The diagram shows a sketch of different Australian dinosaur footprints that were made approximately 95 million years ago. Image of dinosaur footprints In which type of environment were these trace fossils most likely formed? A. Mud flats\nLava field\nSand dunes\nFlowing river – 6 –"
+  },
+  {
+   "id": "ees202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The diagram shows a sketch of different Australian dinosaur footprints that were made approximately 95 million years ago. Image of dinosaur footprints In which type of environment were these trace fossils most likely formed?"
+  },
+  {
+   "id": "ees202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The managed landfill system shown was built to service a growing city. Landfield syst em di agra m Which of the following would have the greatest impact on the sustainability of this system?\nAir pollution\nVolume of waste\nHabitat destruction\nGroundwater pollution"
+  },
+  {
+   "id": "ees202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Which of the following is classified as a natural disaster?\nAn earthquake generating a tsunami\nA severe weather system causing increased rainfall\nChanges in the chemical composition of the atmosphere\nAn eruption causing loss of life and destruction of property © United Nations Environment Progarmme – 7 –"
+  },
+  {
+   "id": "ees202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following is the best indication that increases in atmospheric carbon dioxide are of anthropogenic origin?\nMeasurements of isotope ratios in cave sediments\nMeasurements of carbon dioxide content of ocean floor sediments\nComparing atmospheric composition from before the industrial revolution to the present\nAnalysing ways in which human activities have contributed to the frequency and magnitude of natural disasters"
+  },
+  {
+   "id": "ees202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "The eruption of Mt Pinatubo in 1991 ejected more than 5 km3 of material from the volcano and released about 20 million tonnes of sulfur dioxide into the atmosphere. The 0.5°C fall in average global temperature which lasted throughout 1991–1993 was most likely due to the\namount of ash carried around the Earth.\nproduction of solid material in the lower atmosphere.\nproduction of sulfuric acid aerosols in the lower atmosphere.\nstratospheric winds which carried sulfuric acid aerosols around the Earth. – 8 –"
+  },
+  {
+   "id": "ees202115",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "This graph contains information about changes in atmospheric CO2 and the pH of seawater over time. Graph showing a tmo sph er ic changes According to the graph, which row of the table correctly identifies the changes in atmospheric CO2 and seawater pH?\nB. C. D. Atmospheric (CO2) Seawater (pH) Increasing Decreasing Increasing Increasing Decreasing Increasing Decreasing Decreasing Courtesy of NOAA – 9 – 16 Students used the following source to analyse the impact that large-scale renewable energy projects had on the Australian economy in 2017. Large-scale renewable energy projects under construction or starting in 2017 Di ag ra m Which inference could the students correctly make based on this source? A. The source is biased towards non-renewable energy.\nAll states and territories support renewable energy projects.\nRenewable energy projects contributed to the Australian economy.\nInvestment in renewable energy will provide more energy per invested dollar in Queensland than in New South Wales. Courtesy of Clean Energy Council – 10 –"
+  },
+  {
+   "id": "ees202116",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Students used the following source to analyse the impact that large-scale renewable energy projects had on the Australian economy in 2017. Large-scale renewable energy projects under construction or starting in 2017 Di ag ra m Which inference could the students correctly make based on this source?"
+  },
+  {
+   "id": "ees202117",
+   "year": 2021,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The image shows the position of the leading edge of the Gangotri glacier in the Himalayas since 1780. Cross-section of Gangotri Glacier (Himalayan Mountains) 1780 1935 1950 1971 2001 DRAWN TO SCALE Leading edge of the glacier at times indicated Position of the ice in 2001 KEY The glacier retreated fastest between\n1780 and 1935.\n1935 and 1950.\n1950 and 1971.\n1971 and 2001. – 11 –"
+  },
+  {
+   "id": "ees202118",
+   "year": 2021,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The following diagram shows a method for small-scale mining of a lake to extract gold. gold min ing diagram Which rehabilitation strategy would be the most environmentally sustainable at the conclusion of mining?\nFill in the holes and replant native aquatic vegetation.\nIntroduce more pollution tolerant species of fish and plants.\nFill in the lake and use the reclaimed land as playing fields.\nCover the area with a thick layer of clay to seal it against leakages."
+  },
+  {
+   "id": "ees202119",
+   "year": 2021,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Technologies available for the prediction of volcanic eruptions are more effective than those available for predicting earthquakes, because they\nare able to analyse complex data.\nconsistently produce accurate warnings.\noften provide sufficient warning to prepare for the disaster.\ncan identify the location, magnitude and timing of an eruption. © Pact, Inc. – 12 –"
+  },
+  {
+   "id": "ees202120",
+   "year": 2021,
+   "number": "20",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "As part of the most recent plate tectonic supercycle, India collided with Asia forming the Himalayan mountain range. map an sw er t able © 2021 NSW Education Standards Authority © U.S. Geological Survey Which row of the table correctly identifies the tectonic boundaries that moved India from its location 70 million years ago to its location 50 million years ago? Office Use Only – Do NOT write anything, or make any marks below this line. – 13 – Do NOT write in this area. 2021 HIGHER SCHOOL CERTIFICATE EXAMINATION Earth and Environmental Science Section II Answer Booklet 80 marks Attempt Questions 21–33 Allow about 2 hours and 25 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Centre Number Student Number 2690310371 2051 15100 Office Use Only – Do NOT write anything, or make any marks below this line. – 14 – Do NOT write in this area. 6580310373"
+  },
+  {
+   "id": "ees202121",
+   "year": 2021,
+   "number": "21",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Rubbish, packaging and discarded household goods resulting from online shopping,"
+  },
+  {
+   "id": "ees202122",
+   "year": 2021,
+   "number": "22",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "(a)"
+  },
+  {
+   "id": "ees202123",
+   "year": 2021,
+   "number": "23",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Identify TWO hazards associated with earthquakes and explain the effect that each"
+  },
+  {
+   "id": "ees202124",
+   "year": 2021,
+   "number": "24",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "As climate continues to change, many people believe human behaviour must also"
+  },
+  {
+   "id": "ees202125",
+   "year": 2021,
+   "number": "25",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Assess the extent to which human activities have affected the sustainability of"
+  },
+  {
+   "id": "ees202126",
+   "year": 2021,
+   "number": "26",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "(a)"
+  },
+  {
+   "id": "ees202127",
+   "year": 2021,
+   "number": "27",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "How does scientific evidence contribute to our understanding of ancient variations in"
+  },
+  {
+   "id": "ees202128",
+   "year": 2021,
+   "number": "28",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Scientists have been monitoring and recording volcanic activity in Hawaii for more"
+  },
+  {
+   "id": "ees202129",
+   "year": 2021,
+   "number": "29",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Diagram A provides a model which explains differences in chemical composition of"
+  },
+  {
+   "id": "ees202130",
+   "year": 2021,
+   "number": "30",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Examples of all stages of the plate tectonic supercycle currently taking place on Earth"
+  },
+  {
+   "id": "ees202131",
+   "year": 2021,
+   "number": "31",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The images below show the shape of burrows made by an unknown organism"
+  },
+  {
+   "id": "ees202132",
+   "year": 2021,
+   "number": "32",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Explain how TWO conditions present at ‘Black Smokers’ may have resulted in the"
+  },
+  {
+   "id": "ees202133",
+   "year": 2021,
+   "number": "33",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "‘Some scientists are predicting the possibility of a new mass extinction event as a"
+  },
+  {
+   "id": "ees202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "1 3 Dragonfly nymph 1 10 20 34 Pouch snail 1 11 11 Caddisfly larva 2 2 6 Dragonfly nymph 2 12 24 37 Pouch snail 2 7 7 Caddisfly larva 3 0 0 Dragonfly nymph 3 5 10 Pouch snail 3 7 7 Caddisfly larva 4 0 0 Dragonfly nymph 4 9 Pouch snail 4 9 Complete the table to answer Questions 10 –12. – 7 – 10 During which week was water quality the best?\nWeek 1\nWeek 2\nWeek 3\nWeek 4"
+  },
+  {
+   "id": "ees202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following could be a flow-on effect of climate change?\nAn increase in volcanic activity\nA change in species distribution\nIrresponsible land clearing practices\nAn alteration in the position of continents"
+  },
+  {
+   "id": "ees202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Which of the following is the most sustainable waste management option for aluminium cans?\nCompost\nIncineration\nLandfill\nRecycling – 3 –"
+  },
+  {
+   "id": "ees202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Ecosystem damage in NSW due to coastal erosion and flash flooding is caused by\neast coast lows.\nthe greenhouse effect.\nvolcanic aerosol emissions.\nan increase in the explosivity of volcanic eruptions."
+  },
+  {
+   "id": "ees202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following defines the term geo-engineering?\nSmall-scale manipulation of global climate systems to reduce harmful variations in the Earth’s climate\nLarge-scale manipulation of global climate systems to reduce harmful variations in the Earth’s climate\nSmall-scale manipulation of local climate systems to reduce harmful variations in the Earth’s climate\nLarge-scale manipulation of local climate systems to reduce harmful variations in the Earth’s climate"
+  },
+  {
+   "id": "ees202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which fossil type is the most significant in developing the Geological Time Scale?\nIndex fossils\nTrace fossils\nCast formations\nMould formations – 4 –"
+  },
+  {
+   "id": "ees202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Different techniques are combined to give us a more complete understanding of when rock strata were formed, as shown in the diagram. Rock strata dia gram Based on the diagram, which combination of techniques is the most effective at dating events of geological significance?\nAbsolute dating and relative dating\nSuperposition and uniformitarianism\nUniformitarianism and relative dating\nRadiometric dating and absolute dating © UC Museum of Paleontology Understanding Evolution, www.understandingevolution.org – 5 –"
+  },
+  {
+   "id": "ees202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "The Pacific Plate subducts under Umnak Island near the edge of the North American Plate. Which of the following identifies likely hazards on Umnak Island, based on its location?\nEarthquakes, tsunami, typhoons\nEarthquakes, tsunami, ash eruptions, lahars\nExtreme weather events, bushfires, droughts\nEffusive lava flows, earthquakes, poisonous gas emissions"
+  },
+  {
+   "id": "ees202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Direct measurements of greenhouse gases present in the atmosphere 400 000 years ago can be obtained from\ntree rings.\nfossilised pollen grains.\ngas bubbles trapped in ice cores.\noxygen isotopes in ocean sediments. – 6 – Use the following information to answer Questions 10 –12. Aquatic macroinvertebrates are good biological indicators for water quality. A group of students undertook a macroinvertebrate study over several weeks to investigate the water quality in the stream next to their school. The students gathered data by randomly sampling macroinvertebrates which they classified using a key. These data were then multiplied by the sensitivity score shown below. The higher the total weekly organisms score, the better the water quality. The study involved collecting data once a week for four weeks on the following species. Caddisfly larva Sensitive to pollution Multiplier × 3 Dragonfly nymph Moderately tolerant of pollution Multiplier × 2 Pouch snail Tolerant of pollution Multiplier × 1 Organism Week Count Total score Total weekly organisms score Caddisfly larva"
+  },
+  {
+   "id": "ees202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Resource Management",
+   "text": "During which week was water quality the best?"
+  },
+  {
+   "id": "ees202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The accuracy of this data could be improved by\nincluding a variety of microorganisms in the investigation.\nextending the duration of the investigation by another four weeks.\nrepeating the experiment at three other streams, averaging the data and removing outliers.\nreducing the chance of incorrect identification by cross-checking the classification of each organism with a qualified scientist."
+  },
+  {
+   "id": "ees202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The students were asked to graph water quality over time as part of their experimental report. The best type of graph for this data is\na column graph because the data is continuous.\na pie chart because the data forms part of a whole count.\na line graph because the data is continuous and from the same location.\na line graph because the data can be grouped into discrete categories by location."
+  },
+  {
+   "id": "ees202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following has been most directly related to both the likely origin of organic molecules and the plate tectonic supercycle?\nBlack smokers\nPanspermia\nStromatolites\nSuper-continents – 8 –"
+  },
+  {
+   "id": "ees202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following is evidence that climate change is being driven by anthropogenic causes?\nBoth CO2 concentrations and global temperatures are increasing.\nChanges in CO2 concentrations and global temperatures are closely linked.\nThere is a cyclic variation in CO2 concentrations and global temperatures over time.\nThere has been an anomalous increase in CO2 concentrations and global temperatures in the past 200 years."
+  },
+  {
+   "id": "ees202215",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Which aspect(s) of earthquakes is best predicted using current technologies?\nTiming\nLocation\nLocation and timing\nTiming and intensity"
+  },
+  {
+   "id": "ees202216",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The lease of a mining company extracting petroleum oil in the Carnarvon Basin off the coast of Western Australia expires in 2024. In line with current legislation, the company has planned the process of reclaiming the site. Which row of the table correctly identifies the processes that should be undertaken as mining approaches completion?\nB. C. D. Stage 1 Stage 2 Stage 3 Stage 4 Submit plans and risk assessments for approval Decontaminate and contain wastewater Backfill mining pit and contour land Plant native vegetation in partnership with traditional landowners Request permission to cease mining Remove the drill from the well Trawl the ocean floor to clear debris Treat and contain wastewater and tailings Submit plans and risk assessments for approval Decontaminate and plug the oil well Remove the platform and pipeline Trawl the ocean floor to clear debris Request permission to cease mining Remove the platform and pipeline Create an artificial reef Introduce new fish species to the reef – 9 – 17 A dam was built on a river, 80 km upstream of a major city. The dam was built for the dual purpose of providing a safe and reliable water supply for the region and flood mitigation. Which management strategy would be most effective in allowing the dam to serve its dual purpose? A. Maintain its water levels as close to full as possible\nDemolish the dam and replace it with a smaller dam further upstream\nRelease water from the dam as necessary to prevent its water levels from approaching full\nContinuously release sufficient amounts of water from the dam to ensure environmental flows"
+  },
+  {
+   "id": "ees202217",
+   "year": 2022,
+   "number": "17",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Hazards",
+   "text": "A dam was built on a river, 80 km upstream of a major city. The dam was built for the dual purpose of providing a safe and reliable water supply for the region and flood mitigation. Which management strategy would be most effective in allowing the dam to serve its dual purpose?"
+  },
+  {
+   "id": "ees202218",
+   "year": 2022,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Why is it important to develop strategies to adapt to rising global temperatures as well as strategies to mitigate their effects?\nAdaptation strategies are easier to implement.\nPeople are more willing to adopt adaptation strategies.\nAdaptation strategies are more cost effective than mitigation strategies.\nMitigation strategies will take decades to affect rising global temperatures."
+  },
+  {
+   "id": "ees202219",
+   "year": 2022,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Climate variations which occur across tens of thousands of years are most likely driven by\nchanges in solar output.\nmassive volcanic eruptions.\nthe plate tectonic supercycle.\nvariations in the Earth’s orbit. © Seqwater. Reproduced with permission. – 10 –"
+  },
+  {
+   "id": "ees202220",
+   "year": 2022,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Earthquakes produce seismic waves which shake the lithosphere. Geoscience Australia has a network of seismometers which detect the shaking caused by seismic waves. Seismometer output is in the form of a seismogram, which is a graph with time on the horizontal axis and lithospheric shaking on the vertical axis. The distance between a seismometer and an earthquake can be determined by the arrival time of seismic waves: seismic waves reach nearby seismometers first and distant seismometers later. Examine the seismograms below. Each seismogram has the same horizontal (time) axis. S e i smometer diag ram Seism omet er lo cati on m ap Which earthquake is represented by the seismograms?\nW\nX\nY\nZ Based on seismograms by Geoscience Australia © Commonwealth of Australia and is provided under a Creative Commons Attribution 4.0 International Licence and is subject to the disclaimer of warranties in section 5 of that licence. BLANK PAGE – 11 – BLANK PAGE © 2022 NSW Education Standards Authority – 12 – Office Use Only – Do NOT write anything, or make any marks below this line. – 13 – Do NOT write in this area. 2022 HIGHER SCHOOL CERTIFICATE EXAMINATION Earth and Environmental Science Section II Answer Booklet 80 marks Attempt Questions 21–34 Allow about 2 hours and 25 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Centre Number Student Number 2690310371 2051 15100 Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. – 14 – Do NOT write in this area. 6580310373"
+  },
+  {
+   "id": "ees202221",
+   "year": 2022,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Compare eras and periods in the Geological Time Scale. Your response should"
+  },
+  {
+   "id": "ees202222",
+   "year": 2022,
+   "number": "22",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Blue carbon ecosystems such as saltmarshes, mangroves and seagrass forests can store"
+  },
+  {
+   "id": "ees202223",
+   "year": 2022,
+   "number": "23",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Discuss the sustainability of ONE named waste management option."
+  },
+  {
+   "id": "ees202224",
+   "year": 2022,
+   "number": "24",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Mt Vesuvius is a volcano that erupted in 79 CE, destroying the towns of Pompeii and"
+  },
+  {
+   "id": "ees202225",
+   "year": 2022,
+   "number": "25",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The simplified model shows the basic components of the greenhouse effect."
+  },
+  {
+   "id": "ees202226",
+   "year": 2022,
+   "number": "26",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Draw and annotate a flow chart to demonstrate the effect of the plate tectonic"
+  },
+  {
+   "id": "ees202227",
+   "year": 2022,
+   "number": "27",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The following source contains information from an item published in ABC News online on"
+  },
+  {
+   "id": "ees202228",
+   "year": 2022,
+   "number": "28",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "An ecological footprint is the impact a person has on the environment, expressed as"
+  },
+  {
+   "id": "ees202229",
+   "year": 2022,
+   "number": "29",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "This diagram shows data on the reproduction rate of red snapper since 1962."
+  },
+  {
+   "id": "ees202230",
+   "year": 2022,
+   "number": "30",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The graphs show variations in global temperature since 1440 CE, measured using a variety of"
+  },
+  {
+   "id": "ees202231",
+   "year": 2022,
+   "number": "31",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "A student wanted to investigate the effect of photosynthesising cyanobacteria on the"
+  },
+  {
+   "id": "ees202232",
+   "year": 2022,
+   "number": "32",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "The photos show some aspects of bushfires in Australia."
+  },
+  {
+   "id": "ees202233",
+   "year": 2022,
+   "number": "33",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Atmospheric low pressure systems can cause severe weather and flood hazards."
+  },
+  {
+   "id": "ees202234",
+   "year": 2022,
+   "number": "34",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Image of stromatolites"
+  },
+  {
+   "id": "ees202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following technologies could be used to predict the formation of an east coast low?\nBarometer\nStrain meter\nSeismometer\nGlobal positioning system"
+  },
+  {
+   "id": "ees202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "The Aleutian Islands are located in the North Pacific Ocean, as shown on the map. These islands are subject to both earthquakes and volcanoes. Russia Alaska Bering Sea Al eu tia n Is la n d s North Pacific Ocean What is the most likely plate tectonic setting for these islands?\nA hot spot\nA transform boundary\nAn ocean–ocean divergent boundary\nAn ocean–ocean convergent boundary Aleutian Islands | Historica Wiki | Fandom. CC-BY-SA – 3 –"
+  },
+  {
+   "id": "ees202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "In November 2022, a major soft plastic recycling program was paused in Australia, resulting in a less sustainable strategy being used to manage soft plastic waste. Which of the following is the most likely effect if soft plastic is NOT recycled?\nMore space would be required for landfill.\nGreenhouse gas emissions would decrease.\nComposting capacity would need to be increased.\nOther recycling industries would experience a reduction in efficiency."
+  },
+  {
+   "id": "ees202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following causes global climate change on the shortest timescale?\nPlate tectonic supercycle\nMassive volcanic eruptions\nChanges in ocean circulation\nChanges in the Earth’s orbit around the Sun"
+  },
+  {
+   "id": "ees202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Which of the following hazards would be the most difficult to accurately predict for a timely evacuation?\nTsunamis\nEarthquakes\nEast coast lows\nVolcanic eruptions – 4 –"
+  },
+  {
+   "id": "ees202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The diagram shows the time range in which four organisms W, X, Y and Z existed. Each of these organisms has been fossilised. Geological time Fossil W X Y Z Which of these organisms would be the most useful as an index fossil?\nW\nX\nY\nZ"
+  },
+  {
+   "id": "ees202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Palaeontologists have discovered that fossils of aquatic and marine organisms are more common than those of terrestrial organisms. Which of the following factors is most likely to account for this difference?\nHard parts fossilise more easily than soft parts.\nThere is no tectonic movement of the ocean floor.\nRapid burial by sediments is more likely under water.\nDissolved oxygen in seawater prevents decomposition. – 5 –"
+  },
+  {
+   "id": "ees202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Which row correctly matches the tectonic boundary type with its features? Tectonic boundary Earthquakes Volcano eruption type Volcanic lava\nB. C. D. Continental–continental divergence Shallow to medium focus Explosive Gluggy (high viscosity) Oceanic–oceanic convergence Shallow to deep focus Explosive Runny (low viscosity) Oceanic–continental convergence Deep focus only Effusive Gluggy (high viscosity) Oceanic–oceanic divergence Shallow focus only Effusive Runny (low viscosity) 9 The following graph shows CO levels in the atmosphere over time. 2 Years before present Carbon dioxide (parts per million) 450 400 150 800 000 600 000 400 000 200 000 0 200 250 300 350 Which of the following pieces of scientific evidence would be used to generate this graph? A. Gas bubbles in ice cores\nHuman instrumental records\nPollen grains in sedimentary rocks\nOxygen isotope ratios in microfossils Global Climate Change: Evidence.\" NASA Global Climate Change and Global Warming: Vital Signs of the Planet. June 15, 2008. Accessed January 14, 2015. http://climate.nasa.gov/evidence – 6 – Use the following information and graph to answer Questions 10–11. Mining has ceased at a uranium mine. A creek flows past the mine. Creek water is tested for the presence of uranium. If downstream uranium concentrations exceed the guideline value of 2.8 mg/L, the mine operator is required to investigate the cause and take corrective action. Uranium concentration measured in the creek guideline value = 2.8 mg/L 3.0"
+  },
+  {
+   "id": "ees202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The following graph shows CO levels in the atmosphere over time. 2 Years before present Carbon dioxide (parts per million) 450 400 150 800 000 600 000 400 000 200 000 0 200 250 300 350 Which of the following pieces of scientific evidence would be used to generate this graph?"
+  },
+  {
+   "id": "ees202310",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "During the time period provided, which of the following statements is supported by the data?"
+  },
+  {
+   "id": "ees202311",
+   "year": 2023,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Electrical conductivity measurements show the total concentration of all dissolved ions including uranium in creek water. Why are electrical conductivity measurements taken both upstream and downstream of the mine?\nAdditional measurements improve the reliability of data.\nUpstream measurements provide an experimental control.\nAveraging upstream and downstream values improves the accuracy of measurements.\nElectrical conductivity data shows that uranium concentrations may be higher than initial estimates."
+  },
+  {
+   "id": "ees202312",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "A student was conducting a case study into the sustainability of timber production in an Australian forest. Which of the following sources is most likely to provide accurate, reliable and valid information?\nTube, X., 1967, ‘Timber Production in Leafy Green Forest’, NSW Journal of Tree Felling Practitioners, 12(2), pp25–29.\nTree and Shrubbery Protection Warriors, 2021, ‘Protect Our Trees’, [online] available at: treeandshrubberyprotectionwarriors.org.au [accessed 16 July 2023].\nLeafy Green Timber Mill, 2021, ‘2020 Production Report’, Australian Timber and Tree Cutting Industry Magazine, 14 September 2021, pp50–51.\nNSW Department of Timber, Trees and Wood Production, 2018, ‘Forestry Management Assessment Report’, Shellharbour: NSW Department of Timber, Trees and Wood Production."
+  },
+  {
+   "id": "ees202313",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following key features assisted animals in their conquest of the land?\nExternal fertilisation, stronger legs, permeable skin\nPermeable skin, paired limbs, leathery-shelled eggs\nWaterproof scales, external fertilisation, paired limbs\nStronger legs, waterproof scales, leathery-shelled eggs – 8 –"
+  },
+  {
+   "id": "ees202314",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The plate tectonic supercycle involves the opening and closing of ocean basins between a single land mass and many smaller continents. How does the presence of many smaller continents increase the rate of evolution?\nDivergence of continents increases the variety of habitats.\nContinental collisions increase the range of possible climates.\nConvergence of continents increases nutrient transport in the oceans.\nRifting of the supercontinent increases the likelihood of ice caps forming and sea levels rising."
+  },
+  {
+   "id": "ees202315",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following phenomena is caused by large, local, vertical temperature variations in the atmosphere?\nDroughts\nBushfires\nHailstorms\nEast coast lows"
+  },
+  {
+   "id": "ees202316",
+   "year": 2023,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following ONLY lists adaptation strategies for anthropogenic climate change?\nPlanting heat tolerant crops and expanding irrigation\nReplanting forests on cleared land and installing offshore wind farms\nFire-stick farming and incorporating earthquake resilience into building codes\nConstructing tall buildings to create shade and increasing use of public transport – 9 –"
+  },
+  {
+   "id": "ees202317",
+   "year": 2023,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which graph best represents the trend in atmospheric carbon dioxide concentration in the atmosphere over the past 50 years? 1970\nTime (years) 2020 Carbon dioxide levels (ppm)\n1970 Time (years) 2020 Carbon dioxide levels (ppm)\n1970 Time (years) 2020 Carbon dioxide levels (ppm)\n1970 Time (years) 2020 Carbon dioxide levels (ppm)"
+  },
+  {
+   "id": "ees202318",
+   "year": 2023,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "A fast food company conducted a litter survey to find out which types of packaging were most often discarded by customers in the restaurant carpark. Which of the following is necessary to ensure validity of the data?\nGathering litter samples each morning over several days\nUsing accurately calibrated, precision scales to measure the mass of litter collected\nCollecting litter samples on calm days to prevent lightweight litter being blown away\nEnsuring organic litter is composted after the survey to prevent greenhouse gas production in landfill – 10 –"
+  },
+  {
+   "id": "ees202319",
+   "year": 2023,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The amount and location of O , known as free oxygen, has altered the hydrosphere, 2 geosphere and atmosphere over the course of Earth’s history. A geologist suggested the following timeline. Event Time Photosynthesis began Late Archean Oceans saturated with oxygen and oxygenation of the atmosphere Mid Proterozoic A Geological Time Scale is provided at the back of this paper. Which graph most accurately represents the duration of these changes, as a proportion of total geological time?\n15% 29% 56% 14% 8% 78% 8%\n6% 20% 74%\n44% 22% 34%\nKEY Free oxygen released into the atmosphere No free oxygen in oceans or atmosphere Free oxygen produced within oceans but mostly absorbed by geosphere – 11 –"
+  },
+  {
+   "id": "ees202320",
+   "year": 2023,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Oxygen isotope ratios are used as evidence to determine changes in climate. In which of the following samples would there be an elevated level of Oxygen-18 compared to Oxygen-16?\nIce cores at high latitudes during a glacial period\nCorals on a continental shelf during a glacial period\nStalagmites at low latitudes during an interglacial period\nMicrofossils on the bed of a lake at low latitudes during an interglacial period BLANK PAGE © 2023 NSW Education Standards Authority – 12 – Office Use Only – Do NOT write anything, or make any marks below this line. – 13 – Do NOT write in this area. 2023 HIGHER SCHOOL CERTIFICATE EXAMINATION Earth and Environmental Science Section II Answer Booklet 80 marks Attempt Questions 21–35 Allow about 2 hours and 25 minutes for this section Instructions Centre Number Student Number 6936310424 2051 15100 • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. – 14 – Do NOT write in this area. 1530310429"
+  },
+  {
+   "id": "ees202321",
+   "year": 2023,
+   "number": "21",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Outline the conditions required for an east coast low to be classified as a disaster."
+  },
+  {
+   "id": "ees202322",
+   "year": 2023,
+   "number": "22",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Outline an effect of photosynthesis on the development of each of the identified"
+  },
+  {
+   "id": "ees202323",
+   "year": 2023,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Complete the table to compare the natural and anthropogenic greenhouse effect."
+  },
+  {
+   "id": "ees202324",
+   "year": 2023,
+   "number": "24",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "A family wishes to make changes to their 1970s home in order to minimise their"
+  },
+  {
+   "id": "ees202325",
+   "year": 2023,
+   "number": "25",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "(a)"
+  },
+  {
+   "id": "ees202326",
+   "year": 2023,
+   "number": "26",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "For a named resource, state whether the resource is renewable or non-renewable and"
+  },
+  {
+   "id": "ees202327",
+   "year": 2023,
+   "number": "27",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "In 2004, the International Union of Geological Sciences approved the addition of the Ediacaran"
+  },
+  {
+   "id": "ees202328",
+   "year": 2023,
+   "number": "28",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Construct a flow chart that could be used to show people how to separate household"
+  },
+  {
+   "id": "ees202329",
+   "year": 2023,
+   "number": "29",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The diagram shows a model of the Urey–Miller experiment."
+  },
+  {
+   "id": "ees202330",
+   "year": 2023,
+   "number": "30",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "A student investigated the effect of increasing levels of ocean acidity on the mass"
+  },
+  {
+   "id": "ees202331",
+   "year": 2023,
+   "number": "31",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Evaluate the involvement of traditional owners in the planning procedures for a mine,"
+  },
+  {
+   "id": "ees202332",
+   "year": 2023,
+   "number": "32",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "A satellite image of the region around Indonesia is shown. On 21 November 2022, an"
+  },
+  {
+   "id": "ees202333",
+   "year": 2023,
+   "number": "33",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "On 15 June 1991, the second largest volcanic eruption of the twentieth century"
+  },
+  {
+   "id": "ees202334",
+   "year": 2023,
+   "number": "34",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The annual rainfall for Isabella Plains, ACT, is provided in the following table."
+  },
+  {
+   "id": "ees202335",
+   "year": 2023,
+   "number": "35",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The Earth and Environmental Science course explores human activities and natural"
+  },
+  {
+   "id": "ees202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following occurred during the Ediacaran Period?\nInitial oxygenation of the atmosphere\nFossilisation of multicellular organisms\nMassive volcanic eruptions in the Siberian traps\nA steady increase in global temperatures continuing to today"
+  },
+  {
+   "id": "ees202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "What leads to the formation of an east coast low?\nDecreasing air pressure over ocean waters\nA sudden change in wind direction and decrease in strength\nCycling of droplets from lower to higher altitude within a cloud\nWater vapour condensing as it moves up and over a high mountain range"
+  },
+  {
+   "id": "ees202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following is a feature of communities around black smokers?\nFood webs using energy from photosynthesis\nBiosedimentary structures including stromatolites\nOrganisms using energy derived from volcanic chemicals\nBiochemical processes modelled by Harold Urey and Stanley Miller"
+  },
+  {
+   "id": "ees202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Which of the following is a human activity that could increase the frequency and magnitude of landslides?\nEngaging in extensive logging on hillsides\nDestabilising waterlogged soil by prolonged rainfall\nLoosening material on steep slopes by seismic vibrations\nConverting farmland for suburban development on river flats – 3 –"
+  },
+  {
+   "id": "ees202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following provides ancient evidence of variations in global temperatures?\nDendrochronology\nGas bubbles in ice cores\nPollen grains in sedimentary rocks\nIsotopic ratios in stalactites and stalagmites"
+  },
+  {
+   "id": "ees202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "When did the Ordovician Period occur?\n430 --> 500 Ma BP\n490 --> 440 Ma BP\n500 --> 420 Ma BP\n550 --> 250 Ma BP"
+  },
+  {
+   "id": "ees202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "What is the purpose of disaster warning systems in areas with high earthquake risk such as Japan and California?\nTo help people prepare an emergency survival kit\nTo give people sufficient time to evacuate major cities\nTo ensure buildings are designed to survive the effects of ground movements\nTo initiate emergency responses such as switching on backup power generators"
+  },
+  {
+   "id": "ees202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Why is scientific research into climate adaptation strategies essential?\nTo reverse the changes in climate\nTo reduce dependence on non-renewable resources\nTo develop action plans to respond to changes in climate\nTo limit temperature increases to internationally agreed targets – 4 –"
+  },
+  {
+   "id": "ees202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The maps show the rearrangement of Earth’s continents from the Permian Period to the present day. P A N G A E A P A N G A E A Equator Equator Permian Period Equator Equator North America North America Africa Africa Asia Asia Australia Australia Antarctica Antarctica South America South America Present day © United States Geological Survey. The present day global climate is warmer and wetter than at the time of the Pangaea supercontinent. Which of the following is the most likely cause for these changes in climate over this time period?\nChanges to ocean circulation\nReduction in polar ice coverage\nVolcanic activity during the Permian Period\nIncreased greenhouse gas production due to early industrial activity – 5 –"
+  },
+  {
+   "id": "ees202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which pair of statements comparing the natural and anthropogenic greenhouse effects is correct? Natural greenhouse effect Anthropogenic greenhouse effect\nCaused by greenhouse gases trapping UV radiation in the atmosphere Caused by greenhouse gases emitted through human activities\nKeeps Earth at a suitable temperature to sustain life Sustains Earth’s present levels of biodiversity\nSome incoming solar radiation is trapped by atmospheric greenhouse gases All incoming solar radiation is trapped by atmospheric greenhouse gases\nGreenhouse gas levels vary over time through environmental processes Greenhouse gases accumulate faster than environmental processes can remove them"
+  },
+  {
+   "id": "ees202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Data collected from satellites is used to measure the extent of sea ice in the Arctic. Arctic sea ice monthly average January 1979–2023 Year 13.0 13.5 14.0 14.5 15.0 15.5 16.0 Extent (million square kilometres) 1980 1984 1988 1992 1996 2000 2004 2008 2012 2016 2020 2024 Missing extent Graph courtesy of the National Snow and Ice data Center, University of Colorado, Boulder. Which of the following predictions regarding the extent of Arctic sea ice can be inferred from these data and your understanding of climate change?\nIt will stabilise at 13.5 million square kilometres.\nIt will fall below 13 million square kilometres by 2032.\nIt will fall by 0.425 million square kilometres each year.\nIt will continue to fall and disappear completely by 2032. – 6 –"
+  },
+  {
+   "id": "ees202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "Changes in global surface temperature associated with three major volcanic eruptions are indicated on the graph. Global surface temperature (1940–2016) 1940 1960 1980 2000 –1.0 –0.5 –0.0 0.5 Difference from average (°C) 1981–2010 average Mt Agung Mt Pinatubo El Chichón Year © Global Surface Temperature Graph – National Centers for Environmental Information – part of NOAA. Which statement correctly links these eruptions to changes in global surface temperature?\nEffusive eruptions produced large ash clouds that spread globally.\nSulfur dioxide emissions formed sulfuric acid aerosols in the stratosphere.\nLarge amounts of carbon dioxide were released into the atmosphere which caused cooling.\nOne volcano only affected local climate but the combined activity of Mt Agung, El Chichón and Mt Pinatubo affected the whole planet. – 7 –"
+  },
+  {
+   "id": "ees202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "A student wanted to investigate the relationship between viscosity of magma and explosivity due to the pressure of trapped gases. They set up the following experiment as a model to compare the speed of bubbles travelling through the liquid. Each measuring cylinder contained a tablet to generate bubbles. 0% corn syrup 100% water 25% corn syrup 75% water 50% corn syrup 50% water 75% corn syrup 25% water 100% corn syrup 0% water tablet Which statement about the investigation is correct?\nThe results will be reliable.\nThe results will be accurate.\nThe dependent variable is the rate of bubble production.\nThe independent variable is the composition of the liquid. – 8 – Use the following information to answer Questions 14–16. A student decided to conduct a practical investigation into the composition of the waste in his red (landfill) bin. He audited the rubbish in his red bin prior to putting it out for collection each week, in the hope of determining where he could reduce his contribution to landfill. Mass of waste per week by type WASTE TYPE MASS (kg) Week 1 Week 2 Week 3 Week 4 Average Recyclables 0.5 1.0 1.0 0.6 0.8 Food scraps 2.5 3.3 3.4 2.1 2.8 General rubbish 3.0 2.6 2.7 3.1 2.9 TOTAL 6.0 6.9 7.1 5.8 6.5"
+  },
+  {
+   "id": "ees202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which strategy would see the largest reduction in the student’s contribution to landfill?\nRecycling\nComposting\nPurchasing second-hand items\nCancelling newspaper subscriptions"
+  },
+  {
+   "id": "ees202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which row of the table correctly identifies the variables for this investigation? Independent variable Dependent variable Controlled variable\nType of waste Number of weeks measured Mass of waste\nNumber of days of waste audited Mass of waste Type of waste\nMass of waste Type of waste Number of weeks measured\nType of waste Mass of waste Number of days of waste audited – 9 –"
+  },
+  {
+   "id": "ees202416",
+   "year": 2024,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The reliability of this investigation could be determined by\nusing the same set of digital scales for each measurement.\nensuring that the same number of people are living in the household each week.\nundertaking the same investigation across another four weeks and comparing the data.\nusing a neighbour to record the data so that the student doesn’t change his waste habits during the investigation."
+  },
+  {
+   "id": "ees202417",
+   "year": 2024,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following features of Earth’s orbit around the Sun causes the most rapid variations in climate?\nTilt of Earth’s axis (obliquity)\nWobble of Earth’s axis (precession)\nShape of Earth’s orbit (eccentricity)\nEarth’s distance from the Sun (proximity)"
+  },
+  {
+   "id": "ees202418",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Models of the plate tectonic supercycle describe the breakup of a supercontinent into smaller continents. Two of these continents have been moving apart at an average speed of 4.7 cm/year, and are now 4000 km apart. During which geological period did these two continents start to separate?\nCretaceous\nNeoproterozic\nPaleogene\nTriassic – 10 – Use the following information to answer Questions 19–20. Abalone is a shellfish that lives in coastal waters and is considered a delicacy to eat. The measuring tool shown is used by non-commercial abalone divers in Victoria as a strategy to prevent overharvesting. The tool is placed over the abalone shell to measure its length. 11 cm Blacklip abalone between Lakes Entrance and Lorne, as well as Mallacoota airport area. 13 cm Blacklip abalone west of the Hopkins River. Greenlip abalone in all waters (excluding Port Phillip Bay where there is a permanent closure). 10 cm Blacklip abalone in Port Phillip Bay 12 cm Blacklip abalone east of Lakes Entrance, and between Lorne and the Hopkins River. Abalone measure Abalone must be measured immediately upon removal and be returned to the place of take if found to be undersize. NOT TO SCALE"
+  },
+  {
+   "id": "ees202419",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "What can be inferred from the tool about blacklip abalone?\nThey reach sexual maturity at 13 cm in length.\nThey grow larger in size than greenlip abalone.\nThey are more threatened by overharvesting than are greenlip abalone.\nThey are more abundant in Port Phillip Bay than in other identified locations. © The Scuba Doctor Dive Shop – scubadoctor.com – 11 –"
+  },
+  {
+   "id": "ees202420",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Examine the scale diagram showing a blacklip abalone caught in Victoria. 10 cm © Tasmanian Government: Image Peter Gouldthorpe. Which of the following statements is true?\nThis specimen was illegally caught in Port Phillip Bay.\nThis specimen was legally caught west of the Hopkins River.\nThis specimen could have been legally caught east of Lakes Entrance.\nThis specimen could only have been legally caught in the Mallacoota Airport area. BLANK PAGE © 2024 NSW Education Standards Authority – 12 – Office Use Only – Do NOT write anything, or make any marks below this line. – 13 – Do NOT write in this area. 2024 HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Student Number 2690310371 2051 15100 Earth and Environmental Science Section II Answer Booklet 80 marks Attempt Questions 21–35 Allow about 2 hours and 25 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. – 14 – Do NOT write in this area. 6580310373"
+  },
+  {
+   "id": "ees202421",
+   "year": 2024,
+   "number": "21",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Outline a named strategy for managing solid waste."
+  },
+  {
+   "id": "ees202422",
+   "year": 2024,
+   "number": "22",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Assess the present and likely future use of a named resource."
+  },
+  {
+   "id": "ees202423",
+   "year": 2024,
+   "number": "23",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "(a)"
+  },
+  {
+   "id": "ees202424",
+   "year": 2024,
+   "number": "24",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Explain an impact of rising sea levels on the distribution of species."
+  },
+  {
+   "id": "ees202425",
+   "year": 2024,
+   "number": "25",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Explain how a community initiative could manage a resource sustainably."
+  },
+  {
+   "id": "ees202426",
+   "year": 2024,
+   "number": "26",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Complete the table to justify how TWO reclamation methods could be used to address"
+  },
+  {
+   "id": "ees202427",
+   "year": 2024,
+   "number": "27",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Cultural burning includes low-intensity burns and is practised by Aboriginal and"
+  },
+  {
+   "id": "ees202428",
+   "year": 2024,
+   "number": "28",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "On 22 February 2011, there was a magnitude 6.3 earthquake in Christchurch, New"
+  },
+  {
+   "id": "ees202429",
+   "year": 2024,
+   "number": "29",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "This image shows outlined ‘piperock structures’, which are trace fossils of worm"
+  },
+  {
+   "id": "ees202430",
+   "year": 2024,
+   "number": "30",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Coral reefs support one of the most diverse ecosystems, and protect coastlines from"
+  },
+  {
+   "id": "ees202431",
+   "year": 2024,
+   "number": "31",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The oldest known evidence for photosynthetic cyanobacteria are Archaean stromatolite"
+  },
+  {
+   "id": "ees202432",
+   "year": 2024,
+   "number": "32",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "El Niño and La Niña are climate-related patterns that occur in the Pacific Ocean. Sea surface"
+  },
+  {
+   "id": "ees202433",
+   "year": 2024,
+   "number": "33",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Earth’s spheres include the atmosphere, biosphere, cryosphere, geosphere and"
+  },
+  {
+   "id": "ees202434",
+   "year": 2024,
+   "number": "34",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Australia and Antarctica were once connected as part of the Gondwana supercontinent."
+  },
+  {
+   "id": "ees202435",
+   "year": 2024,
+   "number": "35",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "NASA’s Perseverance rover is one of several missions searching for evidence of"
+  },
+  {
+   "id": "ees202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "What did Urey and Miller produce in their experiments while investigating the origin of organic molecules?\nAmino acids\nStromatolites\nPrimitive cells\nCarbon dioxide"
+  },
+  {
+   "id": "ees202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Australia has been drifting north, away from Antarctica, for about 85 million years. What causes Australia and Antarctica to drift apart?\nGlobal warming\nChanges in ocean currents\nA divergent tectonic boundary\nSeparation of the hydrosphere and cryosphere – 2 –"
+  },
+  {
+   "id": "ees202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "The Volcanic Explosivity Index (VEI) is a scale for expressing the size of an explosive volcanic eruption. The data provides characteristics of eruptions for each VEI. 106 107 108 109 1010 1011 1012 Volume of volcanic material emitted <104 104 (m3) How often? VEI 0 1 10 000s of years 1000s of years 100s of years 100s of years 10s of years Yearly 2 3 4 5 6 7 8 Weekly Daily Daily Based on the data above, what period of time would likely pass between two consecutive eruptions in the VEI 7 range?\nOne day\nOne year\n100s of years\n1000s of years"
+  },
+  {
+   "id": "ees202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Why is solid waste compacted in a landfill site?\nTo speed up decomposition\nTo increase the space available\nTo reduce ongoing operational costs\nTo decrease the transport distance between facilities"
+  },
+  {
+   "id": "ees202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following contributes most to the anthropogenic greenhouse effect?\nFire stick farming\nChanges in solar activity\nLand clearing for agriculture\nIncreased use of rooftop solar panels – 3 – © strangesounds.org"
+  },
+  {
+   "id": "ees202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The image shows an imprint of a leaf in concrete. The process responsible for the leaf imprint is similar to the process responsible for the formation of mould fossils. Which principle accounts for the similarity of the process involved in each case?\nDendrochronology\nExtinction\nSuperposition\nUniformitarianism – 4 – – 5 –"
+  },
+  {
+   "id": "ees202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The diagram shows a typical river system (not to scale). Waterfall Mine Rapids Billabong River terraces Estuary Levee Wetland W X Y Z Ocean Which location is most suitable for large-scale hydroelectric power production?\nW\nX\nY\nZ Published by Nuclear Research Foundation within University of Sydney, Copyright 1964"
+  },
+  {
+   "id": "ees202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Which of the following is likely to contribute to high-speed lava flows?\nRelatively cool magma\nLava with high water content\nLava with relatively low silica content\nHigh pressure within the magma chamber"
+  },
+  {
+   "id": "ees202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "What is the most likely effect of carbon dioxide being released from a single volcanic eruption?\nLocal cooling\nRapid global warming\nA minor increase in global warming\nA drop in global temperatures over several months"
+  },
+  {
+   "id": "ees202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "A fossil found in NSW was formed during the Permian period. What is the most likely age of the fossil?\n260 BP\n260 Ma\n320 BP\n320 Ma"
+  },
+  {
+   "id": "ees202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "A student wanted to collect data on the effectiveness of a sustainability initiative in their local community. Which of the following is the most accurate, reliable and valid source of information for this research?\nReports about the initiative published by the project manager\nA local television news report showing a protest against the initiative\nAn artificial intelligence (AI) generated analysis of Australian sustainability initiatives\nPeer-reviewed scientific journal articles analysing international sustainability initiatives – 6 – – 7 –"
+  },
+  {
+   "id": "ees202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The following image shows a mine which is reaching the end of its useful life. Once the mine is closed, the site should be reclaimed. Winder house Water pump Head frame Water pump line Level 1 Level 2 Level 3 Level 4 Well Mill and treatment plant Ore conveyor Cage Cross-cut Drive (along the ore body) Mine shaft Ore body What is the most appropriate reclamation strategy that could be used once mining has ceased and the structures have been removed?\nBackfill the mine shaft and fence the area\nLeave the shaft and drives open to provide animal access\nBuild sporting fields around the mine shaft and use the water pump for irrigation\nUse explosives to collapse levels 1− 4 to create a lake and wetland environment on the surface Published by Nuclear Research Foundation within University of Sydney, Copyright 1964"
+  },
+  {
+   "id": "ees202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Why is it difficult to make accurate long-term weather predictions?\nMeteorological models cannot keep up with rapid climate change.\nThe atmosphere is a dynamic system influenced by numerous variables.\nRainfall patterns are influenced by geographic features, which vary greatly across regions.\nLong-range predictions are only based on historical data, which does not account for current conditions."
+  },
+  {
+   "id": "ees202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Hazards",
+   "text": "A student wants to conduct an experiment to test the effect of soil moisture on landslide frequency. Which of the following variables should be controlled?\nThe type of soil used\nThe amount of soil displaced\nThe amount of water added to the soil\nThe time it takes for the soil to be displaced"
+  },
+  {
+   "id": "ees202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which of the following is derived from direct instrumental measurements of climate variation?\nThe size of CO2 bubbles trapped in ice reveal cyclical patterns of change.\nAll local temperatures in the future will be higher than current temperatures.\nAverage global temperatures have undergone cycles of change for the past 800 000 years.\nThere is a link between the concentration of greenhouse gases in the atmosphere and average global temperatures. – 8 –"
+  },
+  {
+   "id": "ees202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "The graph shows the change in average global temperature over time. Temperature (°C) +1.0 +0.5 0.0 – 0.5 200 400 600 800 1000 1200 1400 1600 1800 2000 Year CE KEY Average global temperature Uncertainty © Wikipedia.org Why does the estimated uncertainty in temperature on the graph become thinner over time?\nClimate data have become more accurate.\nThere is a decrease in available evidence for dating.\nThe difference between polar and equatorial temperatures has decreased.\nThe difference between annual maximum and minimum temperatures has decreased."
+  },
+  {
+   "id": "ees202517",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which statement best describes a key feature of the natural greenhouse effect?\nAll solar energy, not absorbed by the atmosphere, is reflected into space.\nGreenhouse gases in the atmosphere absorb and scatter infrared radiation.\nInfrared radiation reflected from the Earth’s surface cannot escape the atmosphere.\nDepleted ozone levels allow increased ultraviolet radiation to be absorbed by greenhouse gases in the atmosphere. – 9 –"
+  },
+  {
+   "id": "ees202518",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The following graph shows the different fuel types used to produce electricity in Australia between 1997 and 2023. Percentage (%) 0 10 20 30 40 50 60 70 80 90 100 1997–98 2002–03 2007–08 2012–13 2017–18 2022–23 Other Renewables Natural gas Brown coal Black coal Which graph represents the trends for Australia’s use of black coal and renewables between 1997 and 2023? – 10 –\nB. 0 50 Percentage (%) 100 1997 2007 Year 2017 0 50 Percentage (%) 100 1997 2007 Year 2017 Renewables Black coal Renewables Black coal C. D. 0 50 100 1997 2007 Year 2017 Percentage (%) 0 50 Percentage (%) 100 1997 2007 Year 2017 Renewables Black coal Renewables Black coal © Department of Climate Change, the Environment, Energy and Water 19 Which underlying principle allows scientists to use fossilised pollen grains to determine ancient climate? A. Fossilised pollen grains contain preserved DNA.\nPlants have evolved over geological time in response to changing environmental conditions.\nThe climatic conditions that support different kinds of plants remain constant throughout time.\nMicrofossils such as pollen grains are the best source of data for determining past climatic conditions."
+  },
+  {
+   "id": "ees202519",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Which underlying principle allows scientists to use fossilised pollen grains to determine ancient climate?"
+  },
+  {
+   "id": "ees202520",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The age of igneous rocks can be determined using absolute dating methods, such as radiometric dating. Radioactive nuclei decay over time. The percentage of original radioactive nuclei remaining can be used to determine the age of a rock. Original nuclei remaining (%) Radioactive decay 100 90 80 70 60 50 40 30 20 10 0 0 1 2 3 4 5 6 7 8 Age (half-lives) Uranium-235 decays to form lead-207 with a half-life of 704 million years. A sample was found containing 80% uranium-235 and 20% lead-207. When did the sample form?\n0.3 Ma BP\n80 Ma BP\nTriassic period\nProterozoic eon – 11 – BLANK PAGE – 12 – © 2025 NSW Education Standards Authority Do NOT write in this area. 2025 HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Earth and Environmental Science Student Number Section II Answer Booklet 80 marks Attempt Questions 21–35 Allow about 2 hours and 25 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response • Show all relevant working in questions involving calculations • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering Please turn over – 13 – Office Use Only – Do NOT write anything, or make any marks below this line. 2690310371 2051 15100"
+  },
+  {
+   "id": "ees202521",
+   "year": 2025,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "(a)"
+  },
+  {
+   "id": "ees202522",
+   "year": 2025,
+   "number": "22",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Describe ONE method of determining the age of a rock layer, other than absolute"
+  },
+  {
+   "id": "ees202523",
+   "year": 2025,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Describe ONE resource management process used by Aboriginal and/or Torres Strait"
+  },
+  {
+   "id": "ees202524",
+   "year": 2025,
+   "number": "24",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Compare EITHER the Deccan OR Siberian Traps eruptions with an eruption of"
+  },
+  {
+   "id": "ees202525",
+   "year": 2025,
+   "number": "25",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "A student leadership team has decided to take action to manage its school’s waste."
+  },
+  {
+   "id": "ees202526",
+   "year": 2025,
+   "number": "26",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "Figure 1 and Figure 2 model the relative size of tsunami waves as they move closer"
+  },
+  {
+   "id": "ees202527",
+   "year": 2025,
+   "number": "27",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Evaluate the effectiveness of planting native trees in solving problems studied in the"
+  },
+  {
+   "id": "ees202528",
+   "year": 2025,
+   "number": "28",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "Assess the effect of TWO human activities on the sustainability of water resources."
+  },
+  {
+   "id": "ees202529",
+   "year": 2025,
+   "number": "29",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Contrast TWO effects of human activity and cyanobacteria on the atmosphere."
+  },
+  {
+   "id": "ees202530",
+   "year": 2025,
+   "number": "30",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The table shows the estimated timing of supercontinents throughout Earth’s geological"
+  },
+  {
+   "id": "ees202531",
+   "year": 2025,
+   "number": "31",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Climate Science",
+   "text": "Individuals and scientific communities can help mitigate rising global temperatures."
+  },
+  {
+   "id": "ees202532",
+   "year": 2025,
+   "number": "32",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "Explain how ONE technology used to monitor meteorological activity can be used to"
+  },
+  {
+   "id": "ees202533",
+   "year": 2025,
+   "number": "33",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Hazards",
+   "text": "The ground shaking experienced by buildings during an earthquake is dependent on"
+  },
+  {
+   "id": "ees202534",
+   "year": 2025,
+   "number": "34",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Earth’s Processes",
+   "text": "The supercontinent Rodinia broke apart due to processes involved in the plate tectonic"
+  },
+  {
+   "id": "ees202535",
+   "year": 2025,
+   "number": "35",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Resource Management",
+   "text": "The North Atlantic Deep Water (NADW) overturning current forms in the North"
+  }
+ ]
+}

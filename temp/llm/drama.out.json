@@ -1,0 +1,242 @@
+{
+  "drama2020_q1": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Cultural contexts of Australian plays staged to confront"
+  },
+  "drama2020_q2": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers women's representation or gender in theatre"
+  },
+  "drama2020_q3": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "Practitioner philosophies, practices and contexts of actor training"
+  },
+  "drama2020_q4": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers verbatim or documentary theatre practice"
+  },
+  "drama2020_q5": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers comedy, catharsis or taboo subject matter"
+  },
+  "drama2020_q6": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Only ensemble devising dots; no multi-discipline theatre dot"
+  },
+  "drama2020_q7": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers revolutionary twentieth-century play texts"
+  },
+  "drama2020_q8": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers Japanese theatre forms or Suzuki"
+  },
+  "drama2021_q1": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Political and social contexts expressed through characters and settings"
+  },
+  "drama2021_q2": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers female playwrights or status of women"
+  },
+  "drama2021_q3": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "Actor training philosophies and practices of studied practitioners"
+  },
+  "drama2021_q4": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers verbatim theatre shape or theatricality"
+  },
+  "drama2021_q5": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers black comedy or discomfort-laughter tension"
+  },
+  "drama2021_q6": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Lepage and Complicite absent; no multi-discipline theatre dot"
+  },
+  "drama2021_q7": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers significant twentieth-century plays as a topic"
+  },
+  "drama2021_q8": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers Japanese theatre body or cultural expression"
+  },
+  "drama2022_q1": {
+    "code": "HSC-M1-T2-D3",
+    "confidence": "medium",
+    "why": "Creating stage images examining Australian social and personal concerns"
+  },
+  "drama2022_q2": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers distinctive female voices or gender stereotypes"
+  },
+  "drama2022_q3": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "Practitioner exercises and techniques shaping performance aesthetic"
+  },
+  "drama2022_q4": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers testimony shaping staged real events"
+  },
+  "drama2022_q5": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers comedic staging, taboo subjects or catharsis"
+  },
+  "drama2022_q6": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Shared word collaboration only; multi-discipline theatre uncovered"
+  },
+  "drama2022_q7": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers shifting theatrical paradigms in twentieth-century plays"
+  },
+  "drama2022_q8": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers Japanese aesthetic staging social ideas"
+  },
+  "drama2023_q1": {
+    "code": "HSC-M1-T2-D3",
+    "confidence": "medium",
+    "why": "Shaping theatrical moments examining Australian societal challenges"
+  },
+  "drama2023_q2": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers playwrights presenting female experience"
+  },
+  "drama2023_q3": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "Actor training practices using space and presence"
+  },
+  "drama2023_q4": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers authentic communities and verbatim performance"
+  },
+  "drama2023_q5": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers black comedy conventions or cathartic relief"
+  },
+  "drama2023_q6": {
+    "code": null,
+    "confidence": "medium",
+    "why": "No dot covers theatre technologies or highly visual hybrid forms"
+  },
+  "drama2023_q7": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers plays breaking new theatrical ground"
+  },
+  "drama2023_q8": {
+    "code": null,
+    "confidence": "high",
+    "why": "Suzuki and Japanese traditional music and movement absent"
+  },
+  "drama2024_q1": {
+    "code": "HSC-M1-T2-D6",
+    "confidence": "high",
+    "why": "Staging space as production element shaping dramatic meaning"
+  },
+  "drama2024_q2": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers directing for women's equality and voice"
+  },
+  "drama2024_q3": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "Staging as manifestation of practitioners' training approaches"
+  },
+  "drama2024_q4": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers truth versus engagement in verbatim theatre"
+  },
+  "drama2024_q5": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers comedy and controversy in direction"
+  },
+  "drama2024_q6": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Collaboration is only shared word; no multi-discipline dot"
+  },
+  "drama2024_q7": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers revolutionary forms creating audience experiences"
+  },
+  "drama2024_q8": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers uniquely Japanese theatrical aesthetic"
+  },
+  "drama2025_q1": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "medium",
+    "why": "Staging Australian plays to express diverse Australian perspectives"
+  },
+  "drama2025_q2": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers staging socio-cultural judgements about women"
+  },
+  "drama2025_q3": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "Practitioner approaches to actor presence and contemporary practice"
+  },
+  "drama2025_q4": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers function of verbatim theatre from real events"
+  },
+  "drama2025_q5": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers humour and the controversial in black comedy"
+  },
+  "drama2025_q6": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Improvisation only shared word; no multi-discipline theatre dot"
+  },
+  "drama2025_q7": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers reinvention of theatrical styles in significant plays"
+  },
+  "drama2025_q8": {
+    "code": null,
+    "confidence": "high",
+    "why": "No dot covers purpose of Japanese traditional and contemporary forms"
+  }
+}

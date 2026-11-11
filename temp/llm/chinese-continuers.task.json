@@ -1,0 +1,935 @@
+{
+ "course_id": "chinese-continuers",
+ "course_name": "Chinese Continuers",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / The individual / Personal identity / appearance and"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / The individual / Personal identity / family, friends and"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / The individual / Personal identity / home and"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / The individual / Personal identity / daily routine"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / The individual / Education and aspirations / school life,"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / The individual / Education and aspirations / study habits"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / The individual / Education and aspirations / subjects and"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / The individual / Education and aspirations / further education"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / The individual / Recreation and leisure / sport, interests"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / The individual / Recreation and leisure / shopping, eating"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / The individual / Recreation and leisure / parties"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / The individual / Travel experiences / holidays and"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / The individual / Travel experiences / travel plans and"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / The individual / Travel experiences / transport and"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Chinese-speaking communities / History and culture / tradition and beliefs"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Chinese-speaking communities / History and culture / festivals and customs"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Chinese-speaking communities / History and culture / legends and fables"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Chinese-speaking communities / History and culture / famous people"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Chinese-speaking communities / History and culture / places of interest in China"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Chinese-speaking communities / Lifestyles / food types and cuisine"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Chinese-speaking communities / Lifestyles / entertainment"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Chinese-speaking communities / Lifestyles / urban and rural life"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Chinese-speaking communities / Lifestyles / daily life"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / The changing world / Youth issues / technology in daily life"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / The changing world / Youth issues / environment"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / The changing world / Youth issues / social life"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / The changing world / The world of work / careers and"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / The changing world / Tourism and hospitality / tourism in Australia"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / The individual / Personal identity / appearance and"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / The individual / Personal identity / family, friends and"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / The individual / Personal identity / home and"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / The individual / Personal identity / daily routine"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / The individual / Education and aspirations / school life,"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / The individual / Education and aspirations / study habits"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / The individual / Education and aspirations / subjects and"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / The individual / Education and aspirations / further education"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / The individual / Recreation and leisure / sport, interests"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / The individual / Recreation and leisure / shopping, eating"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / The individual / Recreation and leisure / parties"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / The individual / Travel experiences / holidays and"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / The individual / Travel experiences / travel plans and"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / The individual / Travel experiences / transport and"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Chinese-speaking communities / History and culture / tradition and beliefs"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Chinese-speaking communities / History and culture / festivals and customs"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Chinese-speaking communities / History and culture / legends and fables"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Chinese-speaking communities / History and culture / famous people"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Chinese-speaking communities / History and culture / places of interest in China"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Chinese-speaking communities / Lifestyles / food types and cuisine"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Chinese-speaking communities / Lifestyles / entertainment"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Chinese-speaking communities / Lifestyles / urban and rural life"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Chinese-speaking communities / Lifestyles / daily life"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / The changing world / Youth issues / technology in daily life"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / The changing world / Youth issues / environment"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / The changing world / Youth issues / social life"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / The changing world / The world of work / careers and"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / The changing world / Tourism and hospitality / tourism in Australia"
+  }
+ ],
+ "questions": [
+  {
+   "id": "cc2020_q1",
+   "year": 2020,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "What is Lili supposed to do?"
+  },
+  {
+   "id": "cc2020_q2",
+   "year": 2020,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "What is the purpose of this announcement?"
+  },
+  {
+   "id": "cc2020_q3",
+   "year": 2020,
+   "number": "q3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Which statement about the female speaker is correct?\nShe wants ice in her tea.\nShe prefers lemon in her tea.\nShe orders a cup of black tea.\nShe loves half a spoonful of sugar in her tea."
+  },
+  {
+   "id": "cc2020_q4",
+   "year": 2020,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "How likely is it that Jimmy will participate in the activity? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2020_q5",
+   "year": 2020,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Youth issues",
+   "text": "Compare Xinglu's and Peter's views on the issue."
+  },
+  {
+   "id": "cc2020_q6",
+   "year": 2020,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Travel experiences",
+   "text": "Summarise why the speaker found the experience unique."
+  },
+  {
+   "id": "cc2020_q7",
+   "year": 2020,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Explain how the speakers come to the final decision."
+  },
+  {
+   "id": "cc2020_q8",
+   "year": 2020,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "How does the speaker try to convince the audience of her point of view? In your answer, refer to content and language used."
+  },
+  {
+   "id": "cc2020_q9",
+   "year": 2020,
+   "number": "q9",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "Blog window\n兰兰的博客\n6 月3 号\n去年，我在中国全国数学比赛中得了第一名，所以我的学校出钱给我来澳大利亚读书。现在，我来这儿已经五个月了，非常喜欢这里的高中生活。放假的时候，我们还去了农场，剪了羊毛，骑了马。我学了半天就学会剪羊毛。还有，第一次骑马像飞起来一样，太好玩儿了。\n7 月12 号\n今天，就像平常放学一样，我去图书馆教小孩子做功课。今天天气很冷，走了35 分钟的路，觉得特别长。因为学校不会付我的生活费，所以如果我走路，就不会花爸爸妈妈的钱。我喜欢在图书馆做义工，做义工很有意义。虽然有时候那些小孩子学不会，我得教很多次，但是当我看到孩子们的笑脸时，我感到非常愉快。孩子们也很高兴我从不生他们的气。我真的很喜欢来图书馆。我已经和很多图书馆的职员交了朋友。今天他们给我买了一条围巾，我太开心了！连那些小孩子的父母都对我很好。有一位妈妈还请我星期天到她家吃晚饭。\nHow was Lanlan able to come to Australia?\nAccording to the first blog entry, has Lanlan's experience in Australia been positive? Support your answer with reference to the text.\nWhat does the second blog entry reveal about Lanlan's personal qualities? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2020_q10",
+   "year": 2020,
+   "number": "q10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Youth issues",
+   "text": "各位老师：\n我通知了家长们下个月学生的露营活动，今天我收到了三个家长的电子邮件。我想让老师们看看，听听你们的意见。校长\n我的两个孩子从来没有去过露营。他俩听了很开心，非常想参加可是，为什么才一周啊？要学会很多野外求生的技能，比如做饭、生火、爬山等等。两周才够啊！露营真的很累，学生们回来后才会珍惜在学校里舒服的学习生活。马丁先生。\n学生们应该在学校好好学习。露营好是好，但是对我们住在大城市的人，有什么用呢？我经常看到学生们乱扔垃圾。他们连学校的环境都不管，去露营就能让他们变好吗？而且，去一个星期太长了，可能还被蛇咬，很不安全！又不让带手机，如果我女儿生病了怎么办？史密斯太太。\n我儿子去年第一次参加露营。他学会了做饭和打扫营地，还认识了很多新朋友。回来以后，我儿子每天都准备自己的午饭饭盒，比以前独立多了！这次的活动，我儿子还可以用上次露营的东西，不用再买新的了。每天学生们要背行李包，走十多公里。没有老师的帮助，也没有手机，只有一张地图，孩子们要一起合作，才能找到路。这些知识在学校里能学到吗？学不到。我是家长会的会长，在下次家长会上我会让他们知道我儿子露营的经验。李先生。\nWhat has prompted the principal to send the email?\nWhy does Mr Martin say ‘为什么才一周啊’?\nHow does Mrs Smith feel about this event? Support your answer with reference to the text.\nHow likely is it that Mr Li will allow his son to participate in this event? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2020_q11",
+   "year": 2020,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Answer the following question by writing approximately 250 characters in CHINESE.\nYou are Haisheng, and have received this email from Wang Gang. Write an email in response to Wang Gang's email.\n海生：\n你好！明年我们就上大学了。现在放暑假，你在忙什么呢？\n你还在我们俩一起打工的花店工作吗？我两周都没有收到老板的电话，叫我 上班，你知道为什么吗？\n我的女朋友让我不要去上班，多花时间陪陪她。可是我觉得和她在 一起的时候，不是打游戏就是看电视，挺无聊的。她还想让我买车，但我想存钱买一个新电脑，不想买车。坐公共汽车和火车跟开车不是一样方便吗？我也不想跟父母要钱买车。\n你是我的好朋友，你觉得我该怎么办？我现在很苦恼。\n你的好朋友 王刚"
+  },
+  {
+   "id": "cc2020_q12",
+   "year": 2020,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Answer the following question by writing approximately 90 characters in CHINESE.\nYou are meeting your idol tonight. Write a note to your best friend about how excited you are to meet your idol."
+  },
+  {
+   "id": "cc2020_q13",
+   "year": 2020,
+   "number": "q13",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations | Year 12 / The individual / Recreation and leisure",
+   "text": "Answer ONE of the following questions. Write approximately 250 characters in CHINESE.\n(a) You have participated in an extracurricular sport activity for a while. Your team won the grand final last Saturday. Write a diary entry reflecting on this experience.\nOR\n(b) You have recently made a new friend and went to his/her birthday party last Saturday. Write a diary entry reflecting on this experience."
+  },
+  {
+   "id": "cc2021_q1",
+   "year": 2021,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "What do the speakers plan to do?"
+  },
+  {
+   "id": "cc2021_q2",
+   "year": 2021,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "Fill in the table with the relevant information in ENGLISH."
+  },
+  {
+   "id": "cc2021_q3",
+   "year": 2021,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "Why are the speakers concerned about Mr Zhang?"
+  },
+  {
+   "id": "cc2021_q4",
+   "year": 2021,
+   "number": "q4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "What is the purpose of this announcement?\nwear red, green and blue clothes.\ntravel to the distant sports stadium.\nsign up at the office if volunteering.\ntake charge of selling food at the stalls."
+  },
+  {
+   "id": "cc2021_q5",
+   "year": 2021,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "What does this phone message reveal about Ailin's relationship with her grandmother? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2021_q6",
+   "year": 2021,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "Describe how the choices made by Lanlan and Martin reflect their lifestyles."
+  },
+  {
+   "id": "cc2021_q7",
+   "year": 2021,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Explain the changes in the father's attitude throughout the conversation. Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2021_q8",
+   "year": 2021,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "How does the speaker try to persuade his audience? Support your answer with reference to the content and language techniques within the text."
+  },
+  {
+   "id": "cc2021_q9",
+   "year": 2021,
+   "number": "q9",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "这是安娜的电子邮箱。\nFrom: Anna@nsw.com.au\nTo:\nLili@nsw.com.au, Dashan@nsw.com.au\n丽丽、大山：\n你们的西安旅游怎么样？好玩吗？听说西安这个古城现代化了，真的\n吗？我也想去看看。\n安娜\nFrom: Lili@nsw.com.au\nTo:\nAnna@nsw.com.au\n安娜：\n没错，西安真的现代化了。在不少饭馆和商店，都有机器人服务。有些\n店的门外，还有机器人在唱歌、跳舞，吸引游客。可是，我更喜欢去名胜古迹，\n看有名的古物，学习有关的历史。我特别喜欢在古城散步，体验古老的文化，\n多美啊！我们还去了一个很热闹的市场。我买了几件漂亮的旗袍，也给大山\n买了一个小兵马俑，希望他会喜欢。\n不知为什么，大山经常不说话，只是不停地玩手机。\n丽丽\nFrom: Dashan@nsw.com.au\nTo:\nAnna@nsw.com.au\n安娜：\n西安是现代化了，可是，我都没有机会好好地看。每天从早到晚在外面\n跑来跑去，看的都是丽丽喜欢的东西，真无聊！\n丽丽知道我喜欢新科技，对历史没有兴趣，却买了兵马俑给我作礼物！\n真想马上把它扔掉！她从来不考虑我的爱好，不让我去看飞机展览，也不要\n去电影城看怎么拍功夫电影。她说时间不够，去不了，但她自己却用那么多\n时间看衣服！太自私了！我真想现在就回家！\n大山\nWhat has prompted Anna to write to Lili and Dashan?\nAccording to Lili, how is technology used in Xi'an?\nHow likely is it that Lili and Dashan will continue their relationship? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2021_q10",
+   "year": 2021,
+   "number": "q10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "日记\n二〇二〇年二月四号\n星期三\n阴转晴\n昨天我又没交作业，陈老师要我马上把作业做好，我就发脾气，离开\n了学校。今天，陈老师没有骂我，还像平常一样用心地教课。下课后，她\n留下来教我怎么样做作业。我大声地说：“这是浪费时间！我是考不上大\n学的！”老师静静地看着我说：“小明，你个子不小，人也聪明，只是对\n自己没有信心。你常常发脾气、不快乐，是不是因为觉得自己没有前途？\n别忘了，路是自己走出来的，你今天的行为决定你以后的日子。你明白吗？\n我要你做作业，是希望你学会对自己负责。”老师的话说到我心里去了！\n妈妈又在卧室里哭了，这都是因为我不听话，经常逃课。多少次了，\n我想改，可是改不了。我爱妈妈，我不能再让她伤心了！妈妈从来不要求\n我有好的成绩，只希望我快乐。可是她越不要求我，我越觉得对不起她。\n二〇二〇年十二月十八号\n星期五\n晴\n今天收到了高考的成绩，我做梦也没想到我考进了大学！中文还拿到\n九十三分！真要谢谢陈老师，因为她的话，我开始用心读书。\n妈妈看到我的成绩，开心得又是哭又是笑。我从来没见过她这么高兴，\n我一定要让她开心下去。为了妈妈，我再也不会和朋友做不好的事了。\n以前，我有一个不敢说出口的梦，就是要做一个律师。现在，我有信\n心告诉别人我的梦想。虽然大学第一年我读不了法律，但是只要我努力，\n就会有机会转读法律，让妈妈骄傲。\n负责　　take responsibility\nWhat happened to Xiaoming on 3 February?\nWhat makes Xiaoming say '我有一个不敢说出口的梦'?\nExplain the impact Xiaoming's mother had on him. Support your answer with reference to the text.\nWhat does the diary reveal about Ms Chen's personality? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2021_q11",
+   "year": 2021,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Part B – 15 marks\nYour answer will be assessed on how well you:\n● respond to the stimulus text with relevant information and ideas\n● write text appropriate to context, purpose and audience\n● structure and sequence information and ideas\n● demonstrate control of a range of language structures and vocabulary in Chinese\nAnswer the following question by writing approximately 250 characters in CHINESE.\nYou are Wang Wei. You have received this email from Annie. Write an email in reply to\nAnnie.\n王伟：\n你好！\n十二年级的功课越来越忙了，为了放松，我常常一边学习，一边\n吃零食，人也越来越不健康了。这一年来，爸爸、妈妈的工作太忙了，\n经常不在家吃饭，所以，我只能在学校的小卖部买午饭，晚上也经常\n吃快餐。我知道，这会影响我的健康。可是，我又不会做饭，能怎么\n办呢？\n姐姐说我应该多锻炼身体，多和朋友出去走走。但是，我的时间\n都用在学习上，哪有时间做这些事？\n王伟，你成绩好，又是运动队长，能不能告诉我减轻学习压力和\n保持健康的好方法？\n安妮\n六月八日"
+  },
+  {
+   "id": "cc2021_q12",
+   "year": 2021,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Answer the following question by writing approximately 90 characters in CHINESE.\nYou have just spent a weekend with your friend and his/her family. Write a note to the parents to thank them."
+  },
+  {
+   "id": "cc2021_q13",
+   "year": 2021,
+   "number": "q13",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Travel experiences | Year 12 / The individual / Personal identity",
+   "text": "Answer ONE of the following questions. Write approximately 250 characters in CHINESE.\n(a) You have been invited to speak at a conference promoting Australian domestic travel. The topic of your speech is, 'The importance of travelling in Australia'. Write the script of the speech.\nOR\n(b) You have been invited to speak at a youth forum. The topic of your speech is, 'The importance of friendship for young people'. Write the script of the speech."
+  },
+  {
+   "id": "cc2022_q1",
+   "year": 2022,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Complete the table in ENGLISH."
+  },
+  {
+   "id": "cc2022_q2",
+   "year": 2022,
+   "number": "q2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "The conversation reveals that\nthe homework is part of the next examination.\nstudents have three weeks to complete the assignment.\nMark is keen on completing his homework by himself.\nMark does not like to help Lanlan with her school work."
+  },
+  {
+   "id": "cc2022_q3",
+   "year": 2022,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "Summarise why the female speaker chooses to move house."
+  },
+  {
+   "id": "cc2022_q4",
+   "year": 2022,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "How does Xiaoming's attitude change throughout the conversation? Justify your answer with reference to the text."
+  },
+  {
+   "id": "cc2022_q5",
+   "year": 2022,
+   "number": "q5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Would Meifang introduce her sister to David? Justify your answer with reference to the text."
+  },
+  {
+   "id": "cc2022_q6",
+   "year": 2022,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "How effective is the advertisement in convincing the audience to participate in the trip? Support your answer with reference to the content and language techniques in the text."
+  },
+  {
+   "id": "cc2022_q7",
+   "year": 2022,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Youth issues",
+   "text": "How do the speakers resolve the problems that are raised in the conversation?"
+  },
+  {
+   "id": "cc2022_q8",
+   "year": 2022,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Travel experiences",
+   "text": "To what extent is the trip to Italy a life-changing experience for Wang Yue? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2022_q9",
+   "year": 2022,
+   "number": "q9",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Chinese-speaking communities / History and culture",
+   "text": "2022\nHIGHER SCHOOL CERTIFICATE EXAMINATION\n2161\nChinese Continuers\nSection II — Reading and Responding\nPart A – 25 marks\nRead both texts and then answer the corresponding questions in ENGLISH in the Section II\nPart A Answer Booklet.\n奶奶：\n今天是情人节，你怎么不跟丽丽约会？\n小明：\n丽丽生我的气了，说我送的礼物太便宜，不爱她。\n奶奶：\n现在的女孩只看重名贵的礼物，不看重爱情。我们年轻时不这样。\n小明：\n那时候你们也过情人节吗？\n奶奶：\n我们过中国情人节，叫七夕。在七月七日的晚上，女孩子都打扮\n得漂漂亮亮，庆祝七夕。她们还祈求自己聪明、会做家务、有一\n个好丈夫，做一个好太太、好母亲。\n小明：\n你也这样祈求吗？\n奶奶：\n不。我从小就不愿意做家庭主妇，我要做一个工程师，所以我非\n常努力学习。进大学以后，我认识了你爷爷，一个没钱的穷学生。\n那时，有一个有钱的男生想和我谈恋爱，可是我不喜欢他。\n小明：\n你们的七夕只有女生，没有男生，怎么能叫情人节？\n奶奶：\n那时的男女不能约会。但是七夕有一个“牛郎织女”的爱情故事。\n女孩子都希望有一个浪漫的爱情。那时的情人节虽然简单，但是\n我们却很快乐。不像现在，男女只喜欢花钱的活动和名贵的礼物，\n太商业化了！\n祈求　　　　to pray\n牛郎织女　　Cowherd and Weaving Maid\nWhy is the Chinese Valentine's Day called 七夕?\nWhat does the conversation reveal about the personality of the grandmother? Support your answer with reference to the text.\nCompare how people in the past and present have celebrated Valentine's Day."
+  },
+  {
+   "id": "cc2022_q10",
+   "year": 2022,
+   "number": "q10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "美兰：\n我看到电视台《时尚生活》找主持人。申请人要了解各\n种时尚信息、能组织户外活动、性格开朗外向、口才好、\n体力好。我喜欢这个工作，可是他们的要求很高，我怕\n我的能力不够好，而且我也没做过主持人，我应该申请\n吗？\n马丁：\n你应该申请呀！你性格开朗，是大家的“开心果”。而\n且你是学校辩论队队员，得过比赛第二名，还参加过汉\n语演讲比赛，得过两次第一名。在朋友中你最有语言细\n胞了。你还是“时尚女王”，穿衣打扮总是那么时髦漂亮。\n我觉得你很适合这个工作。\n安娜：\n当主持人要长得漂亮，我参加过选美比赛，长得比你好\n看多了，我都不去申请，你更不行了，不要浪费时间。\n再说你体力太差，怎么能组织户外活动呢？而且这个电\n视台不太有名，在那儿当主持人也没意思。我对时尚节\n目没兴趣，电视台应该多介绍关于找工作的节目，让我\n可以找更好的工作，挣更多的钱。\n王山： 《时尚生活》主要是女观众看。如果有一个帅哥主持人\n更好。比如我，又酷又帅，大家都说我很开朗、好动、\n脑子快、身体好。我喜欢爬山、游泳、吃各地美食，除\n了是学校辩论队的队长以外，还组织过学校的运动会和\n音乐节，我的好主意像天上的星星一样多。再说，有你\n们做朋友，还怕不了解时尚信息吗？\n时尚　　　　modern\nWhat are Meilan's concerns?\nHow does Martin encourage Meilan?\nWhat does Anna's post reveal about her personality? Support your answer with reference to the text.\nTo what extent is Wang Shan a suitable candidate for the job? Justify your answer with reference to the content and language techniques of the text."
+  },
+  {
+   "id": "cc2022_q11",
+   "year": 2022,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "Part B – 15 marks\nYour answer will be assessed on how well you:\n● respond to the stimulus text with relevant information and ideas\n● write text appropriate to context, purpose and audience\n● structure and sequence information and ideas\n● demonstrate control of a range of language structures and vocabulary in Chinese\nAnswer the following question by writing approximately 250 characters in CHINESE.\nImagine you are Mali’s cousin. You have received this email from her. Write an email to Mali\nin response.\n表哥：\n我高考成绩非常好，能上喜欢的大学和课程了！\n不过，我希望像你一样，停学一年，然后再上大学。如果我这么做，会\n影响我将来的学习吗？\n另外，父母觉得我应该大学毕业后再做别的事情；还说我才十八岁，没\n有生活经验，很多事情不会自己做。我不想让他们生气，但是我已经做了决\n定，我应该怎么跟父母说？\n表哥，你最了解我，知道我很想独立，所以我希望一边打工，一边旅行。\n但是我没有打过工，也没有一个人旅行过。你觉得什么工作适合我，什么地\n方我应该去？我想听听你的意见。\n祝好。\n玛丽"
+  },
+  {
+   "id": "cc2022_q12",
+   "year": 2022,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Answer the following question by writing approximately 90 characters in CHINESE.\nYour friend has organised a barbecue lunch on the weekend that you cannot attend. Write a note to your friend explaining why you cannot attend."
+  },
+  {
+   "id": "cc2022_q13",
+   "year": 2022,
+   "number": "q13",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations | Year 12 / The individual / Personal identity",
+   "text": "Answer ONE of the following questions. Write approximately 250 characters in CHINESE.\n(a) You have just completed the first day at a new school. Write a diary entry reflecting on whether the school is suitable for you.\nOR\n(b) You have just completed the last day of your high school education. Write a diary entry reflecting on how your high school experiences have affected you."
+  },
+  {
+   "id": "cc2023_q1",
+   "year": 2023,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Describe Xiao Hong's problem."
+  },
+  {
+   "id": "cc2023_q2",
+   "year": 2023,
+   "number": "q2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "When is this announcement taking place?\nDuring a lesson\nBefore an exam\nDuring a debate\nAfter an excursion"
+  },
+  {
+   "id": "cc2023_q3",
+   "year": 2023,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "What does the father expect Fang Fang to do?"
+  },
+  {
+   "id": "cc2023_q4",
+   "year": 2023,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "How likely is it that students will participate in the proposed opportunity? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2023_q5",
+   "year": 2023,
+   "number": "q5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "How does the speaker justify her opinion? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2023_q6",
+   "year": 2023,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Chinese-speaking communities / History and culture",
+   "text": "Summarise the advice shared by Ai Ling in the interview."
+  },
+  {
+   "id": "cc2023_q7",
+   "year": 2023,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Youth issues",
+   "text": "How does Peter try to convince Na Na? Support your answer with reference to his use of language."
+  },
+  {
+   "id": "cc2023_q8",
+   "year": 2023,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Travel experiences",
+   "text": "How does the mother convey her feelings throughout the conversation? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2023_q9",
+   "year": 2023,
+   "number": "q9",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "2023\nHIGHER SCHOOL CERTIFICATE EXAMINATION\n2161\nChinese Continuers\nSection II — Reading and Responding\nPart A – 25 marks\nRead both texts and then answer the corresponding questions in ENGLISH in the Section II\nPart A Answer Booklet.\n2023 年1 月8 日\n星期二\n晴\n今天我和兰兰认识一年了，我约她去海滩，想让她开心一下。\n结果和我想的很不一样！\n早上我穿上名牌外套，因为兰兰总是穿得很时髦。我租了一辆\n她喜欢的好车去接她。我还给她带了太阳伞，因为她最怕晒太阳。\n我打算请她去吃最贵的牛排。只要她高兴，花多少钱我都愿意。\n没想到兰兰今天穿了一身旧衣服，背着一个旧布袋子。她不要\n坐车，一定要走一个小时的路去海边。\n在路上，兰兰对我说她最近看了一个纪录片，里面说人们买了\n很多不需要的衣服，浪费了地球资源。做皮包，很多动物会死；少\n开车，空气会更新鲜；少吃肉，身体会更健康。保护环境应该从我\n做起。所以她决定改变她的生活方式，而且，已经把所有的名牌皮\n包和衣服都卖了。\n在海滩，兰兰没有去游泳，而是要我跟她一起捡垃圾。可是，\n她以前十分怕脏，怕累，还怕晒太阳呀！\n最后，我们去了一家便宜的饭馆吃饭。我第一次看她只吃了沙拉，\n没吃肉。她说以后每星期只吃两次肉。\nWhat has prompted the author to write this diary entry?\nWhat does the text reveal about the author's personality?\nExplain the impact of the documentary on Lan Lan."
+  },
+  {
+   "id": "cc2023_q10",
+   "year": 2023,
+   "number": "q10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "马丁 我现在在大学学习中文，明年准备去中国的一个城市，提高中文水平\n和体验不同的生活。去哪个城市更好呢？请大家给我建议。\n李月 为什么不来北京？北京是首都，衣食住行都是全中国最好、最方便的\n特别是公共汽车、地铁、出租车，又快又便宜。住在北京你不会无聊\n因为北京比西安现代，比上海古老。北京有八十多所大学。中国最好\n的大学有三分之二都在北京。你想学什么就学什么。\n马丁 其实，我去过北京很多次了。对北京的传统和文化很着迷！可是每次\n去，我不是发烧就是感冒，因为北京夏天热，冬天冷，春天刮大风\n我真不敢想，在北京住一年，我的身体会怎样!\n大山 你难道不想来深圳\n？深圳是中国的硅谷。年轻的城市、年轻的产业\n年轻的人们，这就是深圳！北京人、上海人、西安人，来自五湖四海\n的我们，都在谈论最热门的话题和最新鲜的科技。深圳就像一张白纸\n让年轻人在上面画出自己的未来。\n马丁 你是说，我不仅能跟中国各地的年轻人交朋友，还能练习跟我专业有\n关的汉语？其实，我大学专业是电脑科学，将来我希望在科技公司工\n作。我没去过深圳，所以我也不知道去了会怎样。但是，我觉得我知\n道我要去哪里了！\n，\n，\n。\n、\n，\n硅谷\nSilicon Valley\n深圳\nShenzhen (a city in China)\n产业\nindustries\nWhy does Martin write his first post?\nWhat is Li Yue's advice?\nCompare how Li Yue and Da Shan use language techniques to express their views.\nWhat is Martin most likely to do? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2023_q11",
+   "year": 2023,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "Part B – 15 marks\nYour answer will be assessed on how well you:\n● respond to the stimulus text with relevant information and ideas\n● write text appropriate to context, purpose and audience\n● structure and sequence information and ideas\n● demonstrate control of a range of language structures and vocabulary in Chinese\nAnswer the following question by writing approximately 250 characters in CHINESE.\nYou are Jack. You have received messages from two of your school friends. Write a diary entry\nin which you discuss the choice you will make.\nText 1\n杰克，你不是最喜欢看短视频吗？快来参加我们的学做短视频俱乐部吧！\n每个星期五下午三点半在学校操场见面。我们可以分享爱好、生活、学习\n和各种技能。让更多人认识我们，也让我们认识更多朋友，和他们合作，\n我们一定会学得又多又快。\n小山\nText 2\n杰克，我最近加入了学校的读书俱乐部，你也和我一起来吧！每个星期五\n下午三点半在学校图书馆开会。你以前很爱读书的，最近却一直看电脑、\n玩手机。你看你的成绩都没有以前好了。读书让你更专心，认识更多喜欢\n读书的朋友，大家一起读书，讨论书里写的东西，说说笑笑，多好啊！\n大山\n视频\nvideo clip\n俱乐部\nclub"
+  },
+  {
+   "id": "cc2023_q12",
+   "year": 2023,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Answer the following question by writing approximately 90 characters in CHINESE.\nYour friend Mark has posted a photo on social media in which he is receiving an award from school. Write a message to congratulate him."
+  },
+  {
+   "id": "cc2023_q13",
+   "year": 2023,
+   "number": "q13",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Recreation and leisure | Year 12 / The individual / Travel experiences",
+   "text": "Answer ONE of the following questions. Write approximately 250 characters in CHINESE.\n(a) You are a journalist for an online magazine. Write an article in which you evaluate a recent Chinese film festival in your city.\nOR\n(b) You are a journalist for an online magazine. Write an article in which you evaluate a recent visit to a rural area."
+  },
+  {
+   "id": "cc2024_q1",
+   "year": 2024,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Fill in the information in the table for today's sports arrangements."
+  },
+  {
+   "id": "cc2024_q2",
+   "year": 2024,
+   "number": "q2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Chinese-speaking communities / History and culture",
+   "text": "Which festival is most likely being celebrated by the family?\nLantern Festival\nChinese New Year\nDragon Boat Festival\nMid-Autumn Festival"
+  },
+  {
+   "id": "cc2024_q3",
+   "year": 2024,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Youth issues",
+   "text": "Why is Xiaodong disappointed?"
+  },
+  {
+   "id": "cc2024_q4",
+   "year": 2024,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "What kind of person is Jack?"
+  },
+  {
+   "id": "cc2024_q5",
+   "year": 2024,
+   "number": "q5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Travel experiences",
+   "text": "Outline the features highlighted in the advertisement."
+  },
+  {
+   "id": "cc2024_q6",
+   "year": 2024,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "Summarise Xiaoming's point of view."
+  },
+  {
+   "id": "cc2024_q7",
+   "year": 2024,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "How does the speaker convey her opinion in the speech? Refer to both content and language techniques."
+  },
+  {
+   "id": "cc2024_q8",
+   "year": 2024,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Compare Sam's opinion to his mother's opinion."
+  },
+  {
+   "id": "cc2024_q9",
+   "year": 2024,
+   "number": "q9",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Chinese-speaking communities / History and culture",
+   "text": "2024 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2161\nChinese Continuers\nSection II — Reading and Responding\nPart A – 25 marks\nRead both texts and then answer the corresponding questions in ENGLISH in the Section II\nPart A Answer Booklet.\n《 _________________ 》\n很久以前，没有拼音时，连中国人学习汉字也十分难。学习每一个汉字\n的发音真不简单，因为中国不同地方的发音都不一样。所以，如果想提高每\n个人的知识水平，就需要把中文发音标准化。\n一位叫周有光的先生去过很多国家，也会说很多语言。他知道拉丁语是\n世界中最重要的语言之一，英语也来自拉丁语。六十年前，他建议中国最高\n的领导们一定要用拉丁语的字母发明新的发音系统！最后，领导们赞成了，\n而且决定请他和别的语言学家一起发明了汉语拼音。这不仅让中国人学习汉\n字变得容易多了，也让现在这么多外国人都可以说流利的汉语。\n现在科技用得越来越多，周先生很关心拼音在新科技中怎么帮助人们。\n我们今天能在电脑和手机上用拼音打字，也要感谢周先生。\n这就是为什么有人说周有光是“拼音之父” 了。\n标准化\nstandardise\n拉丁语\nLatin\n领导\nleader\n字母\nalphabet\n发明\nto invent\n系统\nsystem\nWhat is the most suitable title for this article?\nA. Father of the Pinyin System\nB. Origin of Chinese Phonetics\nC. Evolution of Chinese Literacy\nD. Challenges of Learning Chinese\nExplain why the standardisation occurred. Justify your answer with reference to the text.\nAssess the benefit of Zhou's contribution. Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2024_q10",
+   "year": 2024,
+   "number": "q10",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "[ 选自短剧：家]\n本和妈妈在聊天\n本（一边笑一边看着妈妈）：\n妈，您昨天和阿姨们见面，玩儿得开心吗？\n妈：\n你阿姨们都忙着和她们的小孙子\n，小孙女玩儿呢！我看着孩子们的\n照片，真是觉得可爱极了，好喜欢！你呢？为什么现在还是单身？\n本：\n好了，妈，我已经知道您要说什么了．．．．．．\n妈：\n那你说，你什么时候能找一个我喜欢的女朋友？\n本（想说话）：\n您别．．．．．．\n妈（没等本说完）：\n别！我要开始帮你找女朋友了，阿姨们都给我介绍了好多不错的\n女孩子。\n本：\n我最近忙着．．．．．．\n妈（又没等本说完）：\n如果你下个星期很忙，那就一定得把下个月空出来，去和这些女孩儿\n见面认识一下。\n本：\n妈，您别担心我的事。\n妈：\n那你说，我什么时候也能像你阿姨们那样当奶奶？\n本：\n妈，小时候您让我专心学习，我连交朋友的时间都没有。中学毕业了，\n我只想学科技，但是您一定要我学科学，我也听您的了。现在我都\n三十多岁了，您就别管我了。\n妈：\n我不管？我还是你妈吗？\n本（脸慢慢变红）：\n我是您儿子，但我也是成年人了！小时候上学您说的话我没反对过。\n我上班后就想去国外体验生活，您病了，为了您，我去英国工作的\n机会也给别人了。现在您病也好了，您就多休息休息吧。\n妈（大声说）：\n我现在是病好了，你不结婚，没孩子，我一定还会再生病的！\n本（声音也越来越大）：\n女朋友我也不是没交过！一切都挺好的，您一说“不喜欢她家人”\n就逼我分手了！现在我就是一个人过得非常好，不想认识新的人，\n也不想谈恋爱！妈，唉 ．．．．．．您什么时候能让我自由地生活呢？\n选自短剧\nextract from a play\n逼\nto force\nEnd of Question 10 text\nWhat emotional state would Ben's mother have been in yesterday?\nA. Angry\nB. Anxious\nC. Envious\nD. Stressed\nSummarise Ben's mother's concerns.\nTo what extent has Ben's life been influenced by his mum? Support your answer with reference to the text.\nHow were the changes in Ben's attitude towards his mum portrayed in the text? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2024_q11",
+   "year": 2024,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "Part B – 15 marks\nYour answer will be assessed on how well you:\n● respond to the stimulus text with relevant information and ideas\n● write text appropriate to context, purpose and audience\n● structure and sequence information and ideas\n● demonstrate control of a range of language structures and vocabulary in Chinese\nAnswer the following question by writing approximately 250 characters in CHINESE.\nImagine you are Mark. Write an email to Simon in response.\n马克：\n你好，上次你问我，来中国应该住寄宿家庭还是宿舍，我想告诉你\n我的想法。\n住在学校的宿舍让我有了新的好习惯。第一，大家每天都要早起去\n锻炼身体，然后去教室学习。我学会了更好地安排时间，睡得好，又健\n康又开心。你觉得这种生活方式适合你吗？第二，晚上回到宿舍，因为\n不能用手机，同学们只能聊天，都成为了好朋友。难道你不觉得这样非\n常好吗？最后，为了让宿舍看起来干净，每个星期大家都会一起打扫卫生。\n每个人都把宿舍当成自己的家。年轻人学会合作不是很重要吗？\n我想知道你的决定，期待你的回信。\n赛门"
+  },
+  {
+   "id": "cc2024_q12",
+   "year": 2024,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Answer the following question by writing approximately 90 characters in CHINESE.\nYou are organising a 'Sports Day' event at your school that will promote activities and sportsmanship among school students. Write a notice for the school community."
+  },
+  {
+   "id": "cc2024_q13",
+   "year": 2024,
+   "number": "q13",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality | Year 12 / The individual / Recreation and leisure",
+   "text": "Answer ONE of the following questions. Write approximately 250 characters in CHINESE.\n(a) You helped a tourist today when you went to Chinatown. Write a diary entry reflecting on this experience.\nOR\n(b) You have been coaching young children in an activity that you are passionate about. Write a diary entry reflecting on this experience."
+  },
+  {
+   "id": "cc2025_q1",
+   "year": 2025,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and aspirations",
+   "text": "Fill in the table with the relevant information."
+  },
+  {
+   "id": "cc2025_q2",
+   "year": 2025,
+   "number": "q2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "What does the speaker want Xiaoli to do?\nMove in with her\nHelp with moving house\nHang out on the weekend\nIntroduce her to fun places in the neighbourhood"
+  },
+  {
+   "id": "cc2025_q3",
+   "year": 2025,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "What are the speakers' upcoming plans?"
+  },
+  {
+   "id": "cc2025_q4",
+   "year": 2025,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Summarise why Li Dazhong believes he is a good candidate."
+  },
+  {
+   "id": "cc2025_q5",
+   "year": 2025,
+   "number": "q5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Travel experiences",
+   "text": "Upon hearing this news item, would you want to travel to Xishan? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2025_q6",
+   "year": 2025,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "What types of people would find this advertisement appealing? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2025_q7",
+   "year": 2025,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "How is Peter's personality revealed during the conversation? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2025_q8",
+   "year": 2025,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Youth issues",
+   "text": "How does the speaker try to persuade her audience? Refer to BOTH content and language techniques."
+  },
+  {
+   "id": "cc2025_q9",
+   "year": 2025,
+   "number": "q9",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Youth issues",
+   "text": "2025 HIGHER SCHOOL CERTIFICATE EXAMINATION\n2201\nChinese Continuers\nSection II — Reading and Responding\nPart A – 25 marks\nRead both texts and then answer the corresponding questions in ENGLISH in the Section II\nPart A Answer Booklet.\n刘云是个有名的流行音乐歌手。她在世界各地都开过演唱会，\n去年就挣了八百万。刘云的百分之四十的收入还来自她自己写的歌和\n自己拍的音乐视频。\n从小，刘云就有自己的想法——用音乐讲故事。她每天都练习\n弹钢琴、吉他，还有唱歌。虽然她没有运动细胞，但是她还是常常练\n习跳舞，努力提高自己的水平。开始的时候，刘云只喜欢古典音乐，\n可是她为了梦想，还学了流行音乐、摇滚乐等。\n刘云是一个十分善良的人。首先，她非常乐于助人。比如，刘云\n常常去医院看生病的孩子们，也常常给不同的慈善机构很多钱去帮助\n有需要的人。因为她这么做，所以现在很多年轻人也想加入那些慈善\n机构做义工。其次，刘云为了男女平等付出了很多。她在歌词里就写\n了这个问题，而且她把很多自己的表演机会给了其他的年轻女艺术家，\n让她们也有成长的机会，希望她们在未来也继续支持男女平等。最后，\n刘云认真的工作态度也让年轻人明白想要成功，努力很重要，一定要\n坚持！\n慈善\ncharity\n机构\norganisation\n坚持\nto persist\nOutline what Liu Yun does for a living.\nHow has Liu Yun achieved her childhood dream?\nTo what extent have Liu Yun's contributions helped shape younger generations?"
+  },
+  {
+   "id": "cc2025_q10",
+   "year": 2025,
+   "number": "q10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "美林\n大家好！我朋友一家人要搬去加拿大了。我特别想知道住在海外\n的中国人的生活经历。\n英英\n你好，我是去年才来悉尼留学的。作为大学生，我在这里的生活\n轻松多了，但是我对这里的感觉有好有坏。\n大山\n你们好，我八岁就和家人一起搬来马来西亚了。\n美林\n我看网上说大部分中国人出国就是为了有新的机会。有些人想要\n更多工作选择，有些人希望体验不同的生活。听起来住在国外会\n让人们的生活更有意思，连我自己都想出国了。\n英英\n不是的。刚来的时候我谁都不认识，很想家人、朋友。尤其是我\n英语一开始说得马马虎虎，沟通常常有问题。\n美林\n你当时一定觉得很难！唉！不知道我朋友到加拿大以后会怎么\n样．．．\n大山\n我家刚来马来西亚时，我记得我们常常打电话给爷爷奶奶。\n和英英比起来，语言方面我们没有太多麻烦，因为这里很多人都\n会说中文。春节是这个国家的公共假期，庆祝的方法也和中国\n一样。其实很多方面，我家的生活习惯和中国人没什么不一样。\n英英\n虽然澳洲很多元化，但是这里的公共假期不包括别的国家的节日。\n澳洲人的生活习惯和中国人完全不同！我花了好久才慢慢适应。\n美林\n谢谢你们跟我分享的经历！我马上就把你们的故事告诉我朋友！\n多元化\nmulticulturalism\n包括\nto include\nWhat has prompted Meilin to start this online forum?\nAccording to Meilin's online research, why have many Chinese people chosen to live overseas?\nHow different have Dashan's and Yingying's experiences been while overseas? Support your answer with reference to the text.\nHow does Meilin's attitude towards her friend's situation change during the course of the online discussion? Support your answer with reference to the text."
+  },
+  {
+   "id": "cc2025_q11",
+   "year": 2025,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Recreation and leisure",
+   "text": "Part B – 15 marks\nYour answer will be assessed on how well you:\n● respond to the stimulus text with relevant information and ideas\n● write text appropriate to context, purpose and audience\n● structure and sequence information and ideas\n● demonstrate control of a range of language structures and vocabulary in Chinese\nAnswer the following question by writing approximately 250 characters in CHINESE.\nImagine you are Dongdong. Write an email to Xiaoma in response.\n东东：\n你上个星期怎么没来参加学校的舞会呀？我们玩得真过瘾！\n很多人都穿得像明星一样，有几个男生还穿了裙子，特别有趣。我\n还听说有些人专门花了五百多块钱买了一套衣服，我们只是中学生，哪\n来那么多钱？\n还有，男生不是应该给自己的女朋友买门票吗？安娜说她的票就是\n她男朋友买的，但是王莉却要买她男朋友和她自己的票，这也太奇怪了！\n我们又唱又跳，认识了很多新朋友。但是，大伟和他的朋友们都一\n直坐着玩手机，也不和其他人聊天。如果你在，你会怎么想？\n小马"
+  },
+  {
+   "id": "cc2025_q12",
+   "year": 2025,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Answer the following question by writing approximately 90 characters in CHINESE.\nYou are looking for a part-time employee for your small business. Write a job advertisement for your local community's notice board."
+  },
+  {
+   "id": "cc2025_q13",
+   "year": 2025,
+   "number": "q13",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and aspirations | Year 12 / Chinese-speaking communities / Lifestyles",
+   "text": "Answer ONE of the following questions. Write approximately 250 characters in CHINESE.\n(a) Your friend is in a dilemma regarding whether to focus their studies on humanities or STEM (Science, Technology, Engineering and Mathematics) at university. Write an email to persuade them to choose one of these options.\nOR\n(b) Your friend at university told you they are looking for a suitable roommate in order to cut costs. Write an email to persuade them NOT to do this."
+  }
+ ]
+}

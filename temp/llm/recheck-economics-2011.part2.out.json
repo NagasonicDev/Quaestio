@@ -1,0 +1,37 @@
+{
+  "econ2011_2025_q22": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Depreciation effects on domestic businesses"
+  },
+  "econ2011_2025_q23": {
+    "code": "HSC-M3-T2-D14",
+    "confidence": "high",
+    "why": "NAIRU and policy options"
+  },
+  "econ2011_2025_q24": {
+    "code": "HSC-M4-T4-D3",
+    "confidence": "high",
+    "why": "Cash rate impacts; monetary implementation"
+  },
+  "econ2011_2025_q25": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "Trends in size and composition of BoP"
+  },
+  "econ2011_2025_q26": {
+    "code": "HSC-M3-T5-D10",
+    "confidence": "high",
+    "why": "Dimensions and trends of income inequality"
+  },
+  "econ2011_2025_q27": {
+    "code": "HSC-M4-T1-D1",
+    "confidence": "high",
+    "why": "Conflicts among economic objectives"
+  },
+  "econ2011_2025_q28": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Effects of protection methods on firms and government"
+  }
+}

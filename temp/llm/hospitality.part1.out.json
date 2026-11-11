@@ -1,0 +1,802 @@
+{
+  "hosp2020fb_q1": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "medium",
+    "why": "naturally poisonous foods named in contamination dot"
+  },
+  "hosp2020fb_q2": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "high",
+    "why": "blending listed as beverage preparation method"
+  },
+  "hosp2020fb_q3": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "crema is a coffee quality criterion"
+  },
+  "hosp2020fb_q4": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "medium",
+    "why": "safe practices during display and service of food"
+  },
+  "hosp2020fb_q5": {
+    "code": "HSC-M2-T1-D33",
+    "confidence": "high",
+    "why": "table d'hote menu features"
+  },
+  "hosp2020fb_q6": {
+    "code": null,
+    "confidence": "low",
+    "why": "allied MICE industry not in dot points"
+  },
+  "hosp2020fb_q7": {
+    "code": "HSC-M1-T3-D1",
+    "confidence": "high",
+    "why": "internal and external customer types"
+  },
+  "hosp2020fb_q8": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "identify espresso coffee styles"
+  },
+  "hosp2020fb_q9": {
+    "code": "HSC-M4-T1-D14",
+    "confidence": "high",
+    "why": "Food Authority and local regulator roles"
+  },
+  "hosp2020fb_q10": {
+    "code": "HSC-M1-T3-D37",
+    "confidence": "medium",
+    "why": "effective initial response to complaint"
+  },
+  "hosp2020fb_q11": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "espresso extraction deficiency cause"
+  },
+  "hosp2020fb_q12": {
+    "code": "HSC-M2-T3-D26",
+    "confidence": "medium",
+    "why": "dietary intolerance special request"
+  },
+  "hosp2020fb_q13": {
+    "code": "HSC-M3-T1-D8",
+    "confidence": "high",
+    "why": "HSR role represents employee work group"
+  },
+  "hosp2020fb_q14": {
+    "code": "HSC-M1-T3-D25",
+    "confidence": "high",
+    "why": "rapport techniques when approaching customers"
+  },
+  "hosp2020fb_q15": {
+    "code": "HSC-M2-T1-D40",
+    "confidence": "high",
+    "why": "inert gas dangers in post-mix systems"
+  },
+  "hosp2020fb_q16": {
+    "code": "HSC-M1-T2-D34",
+    "confidence": "medium",
+    "why": "security of customer records is largest part"
+  },
+  "hosp2020fb_q17": {
+    "code": "HSC-M2-T1-D55",
+    "confidence": "medium",
+    "why": "online delivery trend is largest part"
+  },
+  "hosp2020fb_q18": {
+    "code": "HSC-M2-T1-D37",
+    "confidence": "medium",
+    "why": "beverage types table is largest part"
+  },
+  "hosp2020fb_q19": {
+    "code": "HSC-M2-T1-D37",
+    "confidence": "medium",
+    "why": "making and serving tea as beverage type"
+  },
+  "hosp2020fb_q20": {
+    "code": "HSC-M1-T3-D59",
+    "confidence": "high",
+    "why": "proactive strategies promoting workplace diversity"
+  },
+  "hosp2020fb_q21": {
+    "code": "HSC-M2-T1-D40",
+    "confidence": "high",
+    "why": "equipment purpose and selection"
+  },
+  "hosp2020fb_q22": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "high",
+    "why": "service delivery and business success link"
+  },
+  "hosp2020fb_q23": {
+    "code": "HSC-M1-T2-D19",
+    "confidence": "medium",
+    "why": "external information sources for employment issues"
+  },
+  "hosp2020ko_q1": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "medium",
+    "why": "naturally poisonous foods named in contamination dot"
+  },
+  "hosp2020ko_q2": {
+    "code": "HSC-M4-T1-D41",
+    "confidence": "high",
+    "why": "paring knife selection and use"
+  },
+  "hosp2020ko_q3": {
+    "code": "HSC-M3-T1-D49",
+    "confidence": "medium",
+    "why": "appropriate garnish for a dish"
+  },
+  "hosp2020ko_q4": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "medium",
+    "why": "safe practices during display and service of food"
+  },
+  "hosp2020ko_q5": {
+    "code": "HSC-M3-T3-D16",
+    "confidence": "high",
+    "why": "table d'hote menu features"
+  },
+  "hosp2020ko_q6": {
+    "code": null,
+    "confidence": "low",
+    "why": "allied MICE industry not in dot points"
+  },
+  "hosp2020ko_q7": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "medium",
+    "why": "oils characteristics and selection"
+  },
+  "hosp2020ko_q8": {
+    "code": "HSC-M3-T1-D42",
+    "confidence": "high",
+    "why": "tomato concasse precision cut"
+  },
+  "hosp2020ko_q9": {
+    "code": "HSC-M4-T1-D14",
+    "confidence": "high",
+    "why": "Food Authority and local regulator roles"
+  },
+  "hosp2020ko_q10": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "medium",
+    "why": "reheating as a critical control point"
+  },
+  "hosp2020ko_q11": {
+    "code": "HSC-M3-T3-D46",
+    "confidence": "high",
+    "why": "chemical waste disposal systems"
+  },
+  "hosp2020ko_q12": {
+    "code": null,
+    "confidence": "low",
+    "why": "choux pastry type not in dots"
+  },
+  "hosp2020ko_q13": {
+    "code": "HSC-M3-T1-D8",
+    "confidence": "high",
+    "why": "HSR role represents employee work group"
+  },
+  "hosp2020ko_q14": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "medium",
+    "why": "blind baking as baking method"
+  },
+  "hosp2020ko_q16": {
+    "code": "HSC-M1-T2-D34",
+    "confidence": "medium",
+    "why": "security of customer records is largest part"
+  },
+  "hosp2020ko_q17": {
+    "code": "HSC-M3-T3-D47",
+    "confidence": "medium",
+    "why": "online delivery trend is largest part"
+  },
+  "hosp2020ko_q18": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "high",
+    "why": "freshness indicators across food types"
+  },
+  "hosp2020ko_q19": {
+    "code": "HSC-M2-T1-D18",
+    "confidence": "medium",
+    "why": "thaw reheat hold temperatures"
+  },
+  "hosp2020ko_q20": {
+    "code": "HSC-M3-T3-D43",
+    "confidence": "high",
+    "why": "strategies reducing cleaning environmental impact"
+  },
+  "hosp2020ko_q21": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "blanching cookery method and purpose"
+  },
+  "hosp2020ko_q22": {
+    "code": "HSC-M2-T1-D2",
+    "confidence": "medium",
+    "why": "HACCP key principles is largest part"
+  },
+  "hosp2020ko_q23": {
+    "code": "HSC-M1-T2-D19",
+    "confidence": "medium",
+    "why": "external information sources for employment issues"
+  },
+  "hosp2021fb_q1": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "medium",
+    "why": "environmental choice in beverage service"
+  },
+  "hosp2021fb_q2": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "high",
+    "why": "waste disposal during beverage preparation"
+  },
+  "hosp2021fb_q3": {
+    "code": "HSC-M3-T1-D10",
+    "confidence": "medium",
+    "why": "PCBU definition and role"
+  },
+  "hosp2021fb_q4": {
+    "code": "HSC-M2-T1-D39",
+    "confidence": "high",
+    "why": "beverage equipment identification"
+  },
+  "hosp2021fb_q5": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "purpose of frequent hand washing"
+  },
+  "hosp2021fb_q6": {
+    "code": "HSC-M1-T2-D27",
+    "confidence": "medium",
+    "why": "SDS training during WHS induction"
+  },
+  "hosp2021fb_q7": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "textured milk characteristics"
+  },
+  "hosp2021fb_q8": {
+    "code": "HSC-M1-T3-D25",
+    "confidence": "high",
+    "why": "dealing with abusive customer"
+  },
+  "hosp2021fb_q9": {
+    "code": "HSC-M2-T1-D37",
+    "confidence": "medium",
+    "why": "tea steeping standard preparation"
+  },
+  "hosp2021fb_q10": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "piccolo latte style characteristics"
+  },
+  "hosp2021fb_q11": {
+    "code": "HSC-M2-T1-D32",
+    "confidence": "medium",
+    "why": "set menu type"
+  },
+  "hosp2021fb_q12": {
+    "code": "HSC-M2-T1-D35",
+    "confidence": "high",
+    "why": "sommelier role in F&B team"
+  },
+  "hosp2021fb_q13": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "high",
+    "why": "campylobacter as bacterial contaminant"
+  },
+  "hosp2021fb_q14": {
+    "code": "HSC-M2-T3-D26",
+    "confidence": "high",
+    "why": "religious and cultural special request"
+  },
+  "hosp2021fb_q15": {
+    "code": null,
+    "confidence": "low",
+    "why": "occupational licensing not in dot points"
+  },
+  "hosp2021fb_q16": {
+    "code": "HSC-M1-T2-D28",
+    "confidence": "medium",
+    "why": "adherence to work standards and implications"
+  },
+  "hosp2021fb_q17": {
+    "code": "HSC-M1-T3-D61",
+    "confidence": "medium",
+    "why": "EAL/D cross-cultural communication strategies"
+  },
+  "hosp2021fb_q18": {
+    "code": "HSC-M1-T2-D22",
+    "confidence": "high",
+    "why": "key WHS bodies primary functions"
+  },
+  "hosp2021fb_q19": {
+    "code": "HSC-M2-T1-D51",
+    "confidence": "high",
+    "why": "presentation standards for quality beverages"
+  },
+  "hosp2021fb_q20": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "dosing tamping and milk texturising"
+  },
+  "hosp2021fb_q21": {
+    "code": "HSC-M2-T3-D14",
+    "confidence": "medium",
+    "why": "preparing for service period set-up"
+  },
+  "hosp2021fb_q22": {
+    "code": "HSC-M1-T3-D5",
+    "confidence": "high",
+    "why": "establishing needs through communication"
+  },
+  "hosp2021fb_q23": {
+    "code": "HSC-M1-T1-D19",
+    "confidence": "medium",
+    "why": "hygienic practices across job roles and services"
+  },
+  "hosp2021ko_q1": {
+    "code": null,
+    "confidence": "low",
+    "why": "cutlery biodegradability not in dot points"
+  },
+  "hosp2021ko_q2": {
+    "code": "HSC-M3-T1-D46",
+    "confidence": "high",
+    "why": "food waste disposal practice"
+  },
+  "hosp2021ko_q3": {
+    "code": "HSC-M3-T1-D10",
+    "confidence": "medium",
+    "why": "PCBU definition and role"
+  },
+  "hosp2021ko_q4": {
+    "code": "HSC-M3-T1-D28",
+    "confidence": "high",
+    "why": "utensil identification and purpose"
+  },
+  "hosp2021ko_q5": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "purpose of frequent hand washing"
+  },
+  "hosp2021ko_q6": {
+    "code": "HSC-M1-T2-D27",
+    "confidence": "medium",
+    "why": "SDS training during WHS induction"
+  },
+  "hosp2021ko_q7": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "braised dish characteristics"
+  },
+  "hosp2021ko_q8": {
+    "code": "HSC-M3-T1-D28",
+    "confidence": "medium",
+    "why": "bain marie purpose and limitations"
+  },
+  "hosp2021ko_q9": {
+    "code": "HSC-M2-T1-D16",
+    "confidence": "medium",
+    "why": "cooking temperature for microbiological safety"
+  },
+  "hosp2021ko_q10": {
+    "code": "HSC-M3-T1-D42",
+    "confidence": "high",
+    "why": "jardiniere precision cut method"
+  },
+  "hosp2021ko_q11": {
+    "code": "HSC-M3-T3-D15",
+    "confidence": "medium",
+    "why": "set menu type"
+  },
+  "hosp2021ko_q12": {
+    "code": null,
+    "confidence": "low",
+    "why": "pastry type not in dot points"
+  },
+  "hosp2021ko_q13": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "high",
+    "why": "campylobacter as bacterial contaminant"
+  },
+  "hosp2021ko_q14": {
+    "code": "HSC-M3-T3-D17",
+    "confidence": "medium",
+    "why": "religious dietary special request"
+  },
+  "hosp2021ko_q15": {
+    "code": null,
+    "confidence": "low",
+    "why": "occupational licensing not in dot points"
+  },
+  "hosp2021ko_q16": {
+    "code": "HSC-M1-T2-D28",
+    "confidence": "medium",
+    "why": "adherence to work standards and implications"
+  },
+  "hosp2021ko_q17": {
+    "code": "HSC-M1-T3-D61",
+    "confidence": "medium",
+    "why": "EAL/D cross-cultural communication strategies"
+  },
+  "hosp2021ko_q18": {
+    "code": "HSC-M1-T2-D22",
+    "confidence": "high",
+    "why": "key WHS bodies primary functions"
+  },
+  "hosp2021ko_q19": {
+    "code": "HSC-M3-T1-D51",
+    "confidence": "high",
+    "why": "current food presentation trends"
+  },
+  "hosp2021ko_q20": {
+    "code": "HSC-M4-T1-D40",
+    "confidence": "high",
+    "why": "knife parts grip and safe cutting"
+  },
+  "hosp2021ko_q21": {
+    "code": "HSC-M1-T2-D10",
+    "confidence": "high",
+    "why": "completing a HACCP plan"
+  },
+  "hosp2021ko_q22": {
+    "code": "HSC-M3-T1-D40",
+    "confidence": "medium",
+    "why": "menu planning using excess commodities"
+  },
+  "hosp2021ko_q23": {
+    "code": "HSC-M1-T1-D19",
+    "confidence": "medium",
+    "why": "hygienic practices across job roles and services"
+  },
+  "hosp2022fb_q1": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "hand washing facilities legal requirement"
+  },
+  "hosp2022fb_q2": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "milk types used in coffee styles"
+  },
+  "hosp2022fb_q3": {
+    "code": "HSC-M1-T3-D62",
+    "confidence": "high",
+    "why": "greeting and seating interaction"
+  },
+  "hosp2022fb_q4": {
+    "code": "HSC-M3-T3-D35",
+    "confidence": "high",
+    "why": "chemical splash in eye first aid"
+  },
+  "hosp2022fb_q5": {
+    "code": "HSC-M1-T3-D49",
+    "confidence": "high",
+    "why": "non-verbal communication methods"
+  },
+  "hosp2022fb_q6": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "Arabica coffee bean characteristics"
+  },
+  "hosp2022fb_q7": {
+    "code": "HSC-M2-T1-D52",
+    "confidence": "high",
+    "why": "garnish and accompaniment for water"
+  },
+  "hosp2022fb_q8": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "ristretto style definition"
+  },
+  "hosp2022fb_q9": {
+    "code": "HSC-M1-T3-D64",
+    "confidence": "high",
+    "why": "multiple diverse customer demands in service"
+  },
+  "hosp2022fb_q10": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "safe milk texturising practices"
+  },
+  "hosp2022fb_q11": {
+    "code": "HSC-M2-T1-D40",
+    "confidence": "high",
+    "why": "pre-operational safety checks of equipment"
+  },
+  "hosp2022fb_q12": {
+    "code": "HSC-M2-T3-D26",
+    "confidence": "high",
+    "why": "reasons for customer special requests"
+  },
+  "hosp2022fb_q13": {
+    "code": null,
+    "confidence": "low",
+    "why": "sector interrelationship not in dot points"
+  },
+  "hosp2022fb_q14": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "medium",
+    "why": "control measure at purchasing control point"
+  },
+  "hosp2022fb_q15": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "medium",
+    "why": "sensory analysis of coffee quality"
+  },
+  "hosp2022fb_q16": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "food hazards on food contact surfaces"
+  },
+  "hosp2022fb_q17": {
+    "code": "HSC-M3-T1-D3",
+    "confidence": "high",
+    "why": "reporting food safety issues"
+  },
+  "hosp2022fb_q18": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "medium",
+    "why": "quality assurance and service quality"
+  },
+  "hosp2022fb_q19": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "espresso machine cleaning and maintenance"
+  },
+  "hosp2022fb_q20": {
+    "code": "HSC-M2-T3-D25",
+    "confidence": "medium",
+    "why": "consequences of incorrect orders"
+  },
+  "hosp2022fb_q21": {
+    "code": "HSC-M2-T3-D26",
+    "confidence": "high",
+    "why": "special requests is largest part"
+  },
+  "hosp2022fb_q22": {
+    "code": null,
+    "confidence": "low",
+    "why": "question text missing"
+  },
+  "hosp2022fb_q23": {
+    "code": "HSC-M3-T1-D9",
+    "confidence": "high",
+    "why": "WHS consultation role responsibilities"
+  },
+  "hosp2022ko_q1": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "hand washing facilities legal requirement"
+  },
+  "hosp2022ko_q2": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "roasting method definition"
+  },
+  "hosp2022ko_q3": {
+    "code": "HSC-M2-T3-D4",
+    "confidence": "high",
+    "why": "vulnerable customer groups"
+  },
+  "hosp2022ko_q4": {
+    "code": "HSC-M3-T3-D35",
+    "confidence": "high",
+    "why": "chemical splash in eye first aid"
+  },
+  "hosp2022ko_q5": {
+    "code": "HSC-M1-T3-D49",
+    "confidence": "high",
+    "why": "non-verbal communication methods"
+  },
+  "hosp2022ko_q6": {
+    "code": "HSC-M4-T1-D43",
+    "confidence": "high",
+    "why": "unyielding cutting surfaces"
+  },
+  "hosp2022ko_q7": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "medium",
+    "why": "trussing technique for roasting"
+  },
+  "hosp2022ko_q8": {
+    "code": "HSC-M3-T1-D42",
+    "confidence": "high",
+    "why": "jardiniere precision cut dimensions"
+  },
+  "hosp2022ko_q9": {
+    "code": "HSC-M3-T3-D43",
+    "confidence": "medium",
+    "why": "environmental sustainability strategies"
+  },
+  "hosp2022ko_q10": {
+    "code": "HSC-M3-T2-D1",
+    "confidence": "high",
+    "why": "conduction heat transfer"
+  },
+  "hosp2022ko_q11": {
+    "code": "HSC-M3-T1-D28",
+    "confidence": "high",
+    "why": "pre-operational equipment checks"
+  },
+  "hosp2022ko_q12": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "medium",
+    "why": "sauce examples and characteristics"
+  },
+  "hosp2022ko_q13": {
+    "code": null,
+    "confidence": "low",
+    "why": "sector interrelationship not in dot points"
+  },
+  "hosp2022ko_q14": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "medium",
+    "why": "control measure at purchasing control point"
+  },
+  "hosp2022ko_q15": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "high",
+    "why": "allergen in beurre manie sauce"
+  },
+  "hosp2022ko_q16": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "food hazards on food contact surfaces"
+  },
+  "hosp2022ko_q17": {
+    "code": "HSC-M3-T1-D3",
+    "confidence": "high",
+    "why": "reporting food safety issues"
+  },
+  "hosp2022ko_q18": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "medium",
+    "why": "quality assurance and service quality"
+  },
+  "hosp2022ko_q19": {
+    "code": "HSC-M3-T3-D30",
+    "confidence": "high",
+    "why": "cleaning sanitising and disinfecting difference"
+  },
+  "hosp2022ko_q20": {
+    "code": "HSC-M4-T1-D9",
+    "confidence": "medium",
+    "why": "compliance requirements for food businesses"
+  },
+  "hosp2022ko_q21": {
+    "code": "HSC-M3-T3-D17",
+    "confidence": "medium",
+    "why": "special requests and dietary requirements"
+  },
+  "hosp2022ko_q22": {
+    "code": null,
+    "confidence": "low",
+    "why": "question text missing"
+  },
+  "hosp2022ko_q23": {
+    "code": "HSC-M3-T1-D9",
+    "confidence": "high",
+    "why": "WHS consultation role responsibilities"
+  },
+  "hosp2023fb_q1": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "medium",
+    "why": "milk types and lactose intolerance"
+  },
+  "hosp2023fb_q2": {
+    "code": "HSC-M4-T1-D35",
+    "confidence": "high",
+    "why": "safety sign colour and shape"
+  },
+  "hosp2023fb_q3": {
+    "code": "HSC-M2-T1-D52",
+    "confidence": "high",
+    "why": "tea accompaniments and garnishes"
+  },
+  "hosp2023fb_q4": {
+    "code": null,
+    "confidence": "low",
+    "why": "legislation aspects and privacy not in dots"
+  },
+  "hosp2023fb_q5": {
+    "code": "HSC-M2-T1-D52",
+    "confidence": "high",
+    "why": "glassware identification"
+  },
+  "hosp2023fb_q6": {
+    "code": "HSC-M2-T1-D55",
+    "confidence": "medium",
+    "why": "disaster impact on menus as industry issue"
+  },
+  "hosp2023fb_q7": {
+    "code": "HSC-M2-T1-D24",
+    "confidence": "high",
+    "why": "meaning of covers"
+  },
+  "hosp2023fb_q8": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "over-extracted coffee cause"
+  },
+  "hosp2023fb_q9": {
+    "code": "HSC-M4-T1-D15",
+    "confidence": "high",
+    "why": "local government food inspection regime"
+  },
+  "hosp2023fb_q10": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "medium",
+    "why": "test extraction pour rate"
+  },
+  "hosp2023fb_q11": {
+    "code": "HSC-M2-T1-D37",
+    "confidence": "medium",
+    "why": "steeping tea definition"
+  },
+  "hosp2023fb_q12": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "medium",
+    "why": "long macchiato standard recipe"
+  },
+  "hosp2023fb_q13": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "high",
+    "why": "efficient use of resources"
+  },
+  "hosp2023fb_q14": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "medium",
+    "why": "plunger coffee preparation"
+  },
+  "hosp2023fb_q15": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "high",
+    "why": "E. coli in high-risk minced meat"
+  },
+  "hosp2023fb_q16": {
+    "code": "HSC-M1-T2-D33",
+    "confidence": "high",
+    "why": "potential security breaches"
+  },
+  "hosp2023fb_q17": {
+    "code": "HSC-M3-T3-D6",
+    "confidence": "medium",
+    "why": "emergency exits is largest part"
+  },
+  "hosp2023fb_q18": {
+    "code": "HSC-M1-T2-D28",
+    "confidence": "medium",
+    "why": "outcomes of policy non-compliance"
+  },
+  "hosp2023fb_q19": {
+    "code": "HSC-M2-T1-D33",
+    "confidence": "high",
+    "why": "table d'hote menu features"
+  },
+  "hosp2023fb_q20": {
+    "code": "HSC-M2-T3-D36",
+    "confidence": "medium",
+    "why": "end of service duties largest part"
+  },
+  "hosp2023fb_q21": {
+    "code": "HSC-M2-T3-D22",
+    "confidence": "medium",
+    "why": "poor workflow implications"
+  },
+  "hosp2023fb_q22": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "high",
+    "why": "beverage deficiencies and mise en place"
+  },
+  "hosp2023fb_q23": {
+    "code": "HSC-M2-T1-D55",
+    "confidence": "high",
+    "why": "current issues and trends"
+  }
+}

@@ -1,0 +1,802 @@
+{
+ "chem202001": {
+  "code": null,
+  "confidence": "low",
+  "why": "magnetic field function, not MS structure analysis"
+ },
+ "chem202002": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "medium",
+  "why": "chooses indicator by pH range to identify solutions"
+ },
+ "chem202003": {
+  "code": null,
+  "confidence": "low",
+  "why": "fragmentary text, unclear stem"
+ },
+ "chem202004": {
+  "code": "HSC-M5-T1-D3",
+  "confidence": "high",
+  "why": "IR distinguishes compounds by functional groups"
+ },
+ "chem202005": {
+  "code": "HSC-M5-T1-D13",
+  "confidence": "high",
+  "why": "identifies compound from carbon-13 NMR"
+ },
+ "chem202006": {
+  "code": "HSC-M4-T2-D2",
+  "confidence": "medium",
+  "why": "IUPAC naming with alcohol as principal group"
+ },
+ "chem202007": {
+  "code": null,
+  "confidence": "low",
+  "why": "no structures shown to classify isomers"
+ },
+ "chem202008": {
+  "code": "HSC-M3-T2-D16",
+  "confidence": "medium",
+  "why": "buffer effectiveness region on pH curve"
+ },
+ "chem202009": {
+  "code": "HSC-M4-T3-D5",
+  "confidence": "high",
+  "why": "NaHCO3 test identifies carboxylic acid"
+ },
+ "chem202010": {
+  "code": "HSC-M3-T2-D12",
+  "confidence": "high",
+  "why": "salt acidity order from parent acid/base strength"
+ },
+ "chem202011": {
+  "code": "PRE-M4-T1-D5",
+  "confidence": "medium",
+  "why": "compares precipitate masses using solubility rules"
+ },
+ "chem202012": {
+  "code": "HSC-M5-T1-D9",
+  "confidence": "medium",
+  "why": "polymer softening explained by interchain forces"
+ },
+ "chem202013": {
+  "code": "PRE-M2-T4-D12",
+  "confidence": "medium",
+  "why": "conversion changes molecular geometry around carbon"
+ },
+ "chem202014": {
+  "code": "HSC-M3-T2-D7",
+  "confidence": "medium",
+  "why": "Kw and pure water pH calculation"
+ },
+ "chem202015": {
+  "code": "HSC-M5-T1-D1",
+  "confidence": "high",
+  "why": "assigns mass spectrum fragment peak"
+ },
+ "chem202016": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "Le Chatelier predicts equation from yield graph"
+ },
+ "chem202017": {
+  "code": null,
+  "confidence": "low",
+  "why": "apparatus/options missing, mechanism unclear"
+ },
+ "chem202018": {
+  "code": "HSC-M3-T2-D12",
+  "confidence": "high",
+  "why": "explains basic salt from conjugate acid strength"
+ },
+ "chem202019": {
+  "code": null,
+  "confidence": "low",
+  "why": "question stem and options missing"
+ },
+ "chem202020": {
+  "code": "HSC-M2-T4-D9",
+  "confidence": "medium",
+  "why": "calculates Ksp from solubility graph data"
+ },
+ "chem202021": {
+  "code": "HSC-M5-T1-D1",
+  "confidence": "high",
+  "why": "identifies alkane from mass spectrum"
+ },
+ "chem202022": {
+  "code": "HSC-M2-T4-D5",
+  "confidence": "high",
+  "why": "sequence of tests identifies unknown ions"
+ },
+ "chem202023": {
+  "code": "HSC-M2-T2-D8",
+  "confidence": "medium",
+  "why": "industrial synthesis design conditions"
+ },
+ "chem202024": {
+  "code": "HSC-M4-T4-D5",
+  "confidence": "medium",
+  "why": "biodiesel ester combustion and energy comparisons"
+ },
+ "chem202025": {
+  "code": "HSC-M3-T3-D5",
+  "confidence": "medium",
+  "why": "thermometric titration data determines concentration"
+ },
+ "chem202026": {
+  "code": "HSC-M2-T3-D4",
+  "confidence": "high",
+  "why": "temperature effect on Keq via collision theory"
+ },
+ "chem202027": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "high",
+  "why": "Kb used to calculate hydroxide concentration"
+ },
+ "chem202028": {
+  "code": "HSC-M1-T5-D4",
+  "confidence": "high",
+  "why": "judges accuracy and reliability of titration data"
+ },
+ "chem202029": {
+  "code": null,
+  "confidence": "low",
+  "why": "flow chart contents absent, reactions unknown"
+ },
+ "chem202030": {
+  "code": "HSC-M5-T1-D15",
+  "confidence": "high",
+  "why": "deduces structure from IR, 1H and 13C NMR"
+ },
+ "chem202031": {
+  "code": "HSC-M3-T3-D6",
+  "confidence": "high",
+  "why": "back titration with AgNO3 and KSCN"
+ },
+ "chem202032": {
+  "code": "HSC-M4-T4-D4",
+  "confidence": "high",
+  "why": "ester boiling points related to structure"
+ },
+ "chem202033": {
+  "code": "HSC-M2-T4-D9",
+  "confidence": "medium",
+  "why": "solubility equilibrium of Ca(OH)2 to find pH"
+ },
+ "chem202034": {
+  "code": "HSC-M3-T2-D10",
+  "confidence": "high",
+  "why": "strong versus weak acid pH trends"
+ },
+ "chem202035": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "high",
+  "why": "Keq calculated from equilibrium concentrations and absorbance"
+ },
+ "chem202036": {
+  "code": "PRE-M4-T3-D6",
+  "confidence": "medium",
+  "why": "q=mcDT after combining enthalpy changes"
+ },
+ "chem202101": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "equal forward and reverse rates at equilibrium"
+ },
+ "chem202102": {
+  "code": "HSC-M2-T4-D3",
+  "confidence": "medium",
+  "why": "silver nitrate precipitation identifies chloride"
+ },
+ "chem202103": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "medium",
+  "why": "derives acid/base constant from salt pH"
+ },
+ "chem202104": {
+  "code": "HSC-M4-T4-D6",
+  "confidence": "medium",
+  "why": "reactants for esterification to ethyl pentanoate"
+ },
+ "chem202105": {
+  "code": "HSC-M3-T3-D3",
+  "confidence": "medium",
+  "why": "titration procedure error affects calculated concentration"
+ },
+ "chem202106": {
+  "code": "HSC-M3-T2-D10",
+  "confidence": "medium",
+  "why": "dilution changes ionisation extent, not Ka"
+ },
+ "chem202107": {
+  "code": "HSC-M4-T2-D12",
+  "confidence": "high",
+  "why": "alcohol substitution with HBr product properties"
+ },
+ "chem202108": {
+  "code": null,
+  "confidence": "low",
+  "why": "soap emulsion not covered by dots"
+ },
+ "chem202109": {
+  "code": null,
+  "confidence": "low",
+  "why": "UV-Vis solvent choice not covered by dots"
+ },
+ "chem202110": {
+  "code": "HSC-M5-T1-D9",
+  "confidence": "medium",
+  "why": "identifies monomer from polymer structure"
+ },
+ "chem202111": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "adding solid shifts heterogeneous equilibrium"
+ },
+ "chem202112": {
+  "code": "HSC-M5-T1-D15",
+  "confidence": "high",
+  "why": "matches mass spectrum and 13C NMR to compound"
+ },
+ "chem202113": {
+  "code": "HSC-M4-T2-D11",
+  "confidence": "medium",
+  "why": "hydration then oxidation pathway to ketone"
+ },
+ "chem202114": {
+  "code": null,
+  "confidence": "low",
+  "why": "colorimetric analysis not represented in dots"
+ },
+ "chem202115": {
+  "code": "HSC-M3-T2-D8",
+  "confidence": "high",
+  "why": "pH after mixing strong acid and base"
+ },
+ "chem202116": {
+  "code": "HSC-M3-T3-D4",
+  "confidence": "medium",
+  "why": "titration curve gives number of acidic protons"
+ },
+ "chem202117": {
+  "code": "HSC-M5-T2-D8",
+  "confidence": "medium",
+  "why": "gravimetric phosphate determination by precipitate mass"
+ },
+ "chem202118": {
+  "code": "HSC-M5-T1-D14",
+  "confidence": "high",
+  "why": "proton NMR shifts and splitting identify compound"
+ },
+ "chem202119": {
+  "code": "HSC-M2-T4-D8",
+  "confidence": "high",
+  "why": "mass needed to start precipitation from Ksp"
+ },
+ "chem202120": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "high",
+  "why": "weak acid Ka applied to find pH"
+ },
+ "chem202121": {
+  "code": null,
+  "confidence": "low",
+  "why": "multiple organic classes, no single matching dot"
+ },
+ "chem202122": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "two Le Chatelier shifts of chromate equilibrium"
+ },
+ "chem202123": {
+  "code": "HSC-M3-T2-D12",
+  "confidence": "high",
+  "why": "salt nature from weak acid neutralisation"
+ },
+ "chem202124": {
+  "code": "HSC-M4-T1-D3",
+  "confidence": "medium",
+  "why": "alkane chain isomers drawn and named"
+ },
+ "chem202125": {
+  "code": "PRE-M3-T4-D6",
+  "confidence": "medium",
+  "why": "fermentation gas volume to ethanol mass"
+ },
+ "chem202126": {
+  "code": "HSC-M4-T4-D9",
+  "confidence": "medium",
+  "why": "multi-step flow chart ending in ester"
+ },
+ "chem202127": {
+  "code": "HSC-M2-T4-D9",
+  "confidence": "medium",
+  "why": "Ksp range from precipitation observations"
+ },
+ "chem202128": {
+  "code": "PRE-M3-T2-D8",
+  "confidence": "medium",
+  "why": "reacting masses identify alkali metal hydroxide"
+ },
+ "chem202129": {
+  "code": "HSC-M5-T1-D15",
+  "confidence": "high",
+  "why": "spectra features related to molecular structure"
+ },
+ "chem202130": {
+  "code": "HSC-M2-T4-D5",
+  "confidence": "medium",
+  "why": "ion identification tests evaluated"
+ },
+ "chem202131": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "high",
+  "why": "Keq calculation after adding nitrogen"
+ },
+ "chem202132": {
+  "code": "HSC-M3-T2-D10",
+  "confidence": "medium",
+  "why": "weak acid ionisation lowers neutralisation enthalpy"
+ },
+ "chem202133": {
+  "code": null,
+  "confidence": "low",
+  "why": "Gibbs free energy not in dot list"
+ },
+ "chem202134": {
+  "code": null,
+  "confidence": "low",
+  "why": "solutions X and Y undefined, stem unclear"
+ },
+ "chem202135": {
+  "code": "HSC-M3-T3-D6",
+  "confidence": "high",
+  "why": "back titration determines ethanol content"
+ },
+ "chem202136": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "medium",
+  "why": "combines two Ka values for overall equilibrium constant"
+ },
+ "chem202201": {
+  "code": "HSC-M5-T1-D9",
+  "confidence": "high",
+  "why": "monomer is polymer repeating unit"
+ },
+ "chem202202": {
+  "code": "HSC-M3-T3-D1",
+  "confidence": "high",
+  "why": "balance required for primary standard preparation"
+ },
+ "chem202203": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "medium",
+  "why": "identifies false equilibrium characteristic"
+ },
+ "chem202204": {
+  "code": "HSC-M5-T2-D7",
+  "confidence": "medium",
+  "why": "selects AAS lamp for manganese analysis"
+ },
+ "chem202205": {
+  "code": "HSC-M5-T2-D5",
+  "confidence": "medium",
+  "why": "flame test distinguishes metal ions"
+ },
+ "chem202206": {
+  "code": null,
+  "confidence": "low",
+  "why": "UV-Vis wavelength selection not in dots"
+ },
+ "chem202207": {
+  "code": "HSC-M4-T1-D10",
+  "confidence": "high",
+  "why": "correct IUPAC name for chloroalkane"
+ },
+ "chem202208": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, question incomplete"
+ },
+ "chem202209": {
+  "code": "HSC-M4-T1-D1",
+  "confidence": "medium",
+  "why": "condensed formula converted to structural representation"
+ },
+ "chem202210": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "medium",
+  "why": "hydrogen carbonate acting as Bronsted-Lowry acid"
+ },
+ "chem202211": {
+  "code": "HSC-M4-T2-D10",
+  "confidence": "high",
+  "why": "major product of alcohol dehydration"
+ },
+ "chem202212": {
+  "code": "HSC-M5-T1-D13",
+  "confidence": "high",
+  "why": "fewest carbon-13 signals from symmetry"
+ },
+ "chem202213": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "high",
+  "why": "equilibrium concentrations from ICE calculation"
+ },
+ "chem202214": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "volume decrease shifts NO2/N2O4 equilibrium"
+ },
+ "chem202215": {
+  "code": "HSC-M3-T3-D4",
+  "confidence": "high",
+  "why": "conductivity titration graph gives concentration"
+ },
+ "chem202216": {
+  "code": null,
+  "confidence": "low",
+  "why": "colourimetry absorbance not covered by dots"
+ },
+ "chem202217": {
+  "code": "HSC-M2-T4-D9",
+  "confidence": "medium",
+  "why": "solubility equilibrium ratio on dilution"
+ },
+ "chem202218": {
+  "code": "HSC-M5-T1-D9",
+  "confidence": "medium",
+  "why": "polymer molar mass from monomer units"
+ },
+ "chem202219": {
+  "code": "HSC-M2-T4-D7",
+  "confidence": "high",
+  "why": "molar solubility from Ksp"
+ },
+ "chem202220": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "medium",
+  "why": "plant pigment indicator colour at given pH"
+ },
+ "chem202221": {
+  "code": "HSC-M4-T1-D11",
+  "confidence": "high",
+  "why": "alkene addition with chlorine product"
+ },
+ "chem202222": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "high",
+  "why": "identifies base and conjugate acid pair"
+ },
+ "chem202223": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "medium",
+  "why": "temperature, catalyst and removal effects on equilibrium"
+ },
+ "chem202224": {
+  "code": "HSC-M4-T1-D8",
+  "confidence": "medium",
+  "why": "boiling point trend from dispersion forces"
+ },
+ "chem202225": {
+  "code": "HSC-M3-T2-D10",
+  "confidence": "high",
+  "why": "weak versus strong acid pH explanation"
+ },
+ "chem202226": {
+  "code": "PRE-M4-T3-D7",
+  "confidence": "medium",
+  "why": "heat released converted to enthalpy of neutralisation"
+ },
+ "chem202227": {
+  "code": "HSC-M4-T2-D11",
+  "confidence": "medium",
+  "why": "propanol oxidation products distinguish isomers"
+ },
+ "chem202228": {
+  "code": "PRE-M3-T2-D8",
+  "confidence": "medium",
+  "why": "gravimetric reacting masses give percentage iron"
+ },
+ "chem202229": {
+  "code": "HSC-M4-T2-D8",
+  "confidence": "high",
+  "why": "enthalpy of combustion versus chain length"
+ },
+ "chem202230": {
+  "code": "HSC-M5-T1-D15",
+  "confidence": "high",
+  "why": "deduces unknown from combined spectra"
+ },
+ "chem202231": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "medium",
+  "why": "complex ion equilibrium constant calculation"
+ },
+ "chem202232": {
+  "code": "HSC-M3-T3-D5",
+  "confidence": "high",
+  "why": "titration data determines citric acid concentration"
+ },
+ "chem202233": {
+  "code": "HSC-M4-T4-D6",
+  "confidence": "medium",
+  "why": "designs safe ester synthesis with yield and purity"
+ },
+ "chem202234": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "medium",
+  "why": "Kb equilibrium used for hypochlorite volume"
+ },
+ "chem202235": {
+  "code": "HSC-M2-T4-D9",
+  "confidence": "high",
+  "why": "Ksp from precipitated strontium hydroxide mass"
+ },
+ "chem202236": {
+  "code": "HSC-M2-T1-D5",
+  "confidence": "high",
+  "why": "open versus sealed system evaporation equilibrium"
+ },
+ "chem202301": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "medium",
+  "why": "indicator colours matched to solution pH"
+ },
+ "chem202302": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "medium",
+  "why": "equilibrium concentration of NO calculated"
+ },
+ "chem202303": {
+  "code": "HSC-M4-T1-D2",
+  "confidence": "high",
+  "why": "IUPAC name of alkyne structure"
+ },
+ "chem202304": {
+  "code": "HSC-M2-T4-D6",
+  "confidence": "medium",
+  "why": "Ksp expression and value for saturated NaCl"
+ },
+ "chem202305": {
+  "code": "HSC-M2-T4-D8",
+  "confidence": "high",
+  "why": "precipitation order from Ksp comparison"
+ },
+ "chem202306": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "pH change converts to hydrogen ion factor"
+ },
+ "chem202307": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, stem incomplete"
+ },
+ "chem202308": {
+  "code": null,
+  "confidence": "low",
+  "why": "counting haloalkane isomers not in dots"
+ },
+ "chem202309": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, question incomplete"
+ },
+ "chem202310": {
+  "code": "HSC-M4-T3-D6",
+  "confidence": "high",
+  "why": "boiling point order from intermolecular forces"
+ },
+ "chem202311": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "medium",
+  "why": "flower natural indicator colour chart"
+ },
+ "chem202312": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, question incomplete"
+ },
+ "chem202313": {
+  "code": null,
+  "confidence": "low",
+  "why": "tests and options absent"
+ },
+ "chem202314": {
+  "code": null,
+  "confidence": "low",
+  "why": "question stem incomplete"
+ },
+ "chem202315": {
+  "code": "HSC-M4-T2-D8",
+  "confidence": "high",
+  "why": "estimates molar heat of combustion from trend"
+ },
+ "chem202316": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, question incomplete"
+ },
+ "chem202317": {
+  "code": null,
+  "confidence": "low",
+  "why": "question stem incomplete"
+ },
+ "chem202318": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, question incomplete"
+ },
+ "chem202319": {
+  "code": "HSC-M5-T1-D1",
+  "confidence": "high",
+  "why": "assigns mass spectrum fragmentation at m/z 43"
+ },
+ "chem202320": {
+  "code": "HSC-M4-T1-D6",
+  "confidence": "high",
+  "why": "safe disposal of liquid hydrocarbon"
+ },
+ "chem202321": {
+  "code": null,
+  "confidence": "low",
+  "why": "aldehyde/ketone isomerism not covered"
+ },
+ "chem202322": {
+  "code": "HSC-M3-T1-D5",
+  "confidence": "high",
+  "why": "Arrhenius limits lead to Bronsted-Lowry classification"
+ },
+ "chem202323": {
+  "code": "HSC-M3-T2-D16",
+  "confidence": "high",
+  "why": "buffer resists pH change versus unbuffered solution"
+ },
+ "chem202324": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "high",
+  "why": "amphiprotic ion equations"
+ },
+ "chem202325": {
+  "code": "HSC-M4-T2-D9",
+  "confidence": "medium",
+  "why": "alcohol combustion calorimetry calculation"
+ },
+ "chem202326": {
+  "code": "HSC-M2-T2-D8",
+  "confidence": "high",
+  "why": "industrial process conditions and improvements"
+ },
+ "chem202327": {
+  "code": "PRE-M3-T4-D6",
+  "confidence": "medium",
+  "why": "fermentation stoichiometry with gas volume"
+ },
+ "chem202328": {
+  "code": "HSC-M4-T1-D11",
+  "confidence": "medium",
+  "why": "alkene addition with chlorine, test and structure"
+ },
+ "chem202329": {
+  "code": "HSC-M4-T2-D4",
+  "confidence": "high",
+  "why": "alcohol solubility trend from chain length"
+ },
+ "chem202330": {
+  "code": "HSC-M2-T4-D3",
+  "confidence": "medium",
+  "why": "anion identification using solubility rules"
+ },
+ "chem202331": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "high",
+  "why": "Keq from colourimetric equilibrium concentrations"
+ },
+ "chem202332": {
+  "code": "HSC-M3-T3-D6",
+  "confidence": "medium",
+  "why": "back titration for ammonium content"
+ },
+ "chem202333": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "medium",
+  "why": "equilibrium graph disturbances interpreted"
+ },
+ "chem202334": {
+  "code": "HSC-M2-T4-D9",
+  "confidence": "high",
+  "why": "equilibrium magnesium concentration from Ksp"
+ },
+ "chem202335": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "high",
+  "why": "Ka and pKa compare acid strengths"
+ },
+ "chem202336": {
+  "code": "HSC-M5-T1-D15",
+  "confidence": "high",
+  "why": "spectra identify functional groups and structures"
+ },
+ "chem202401": {
+  "code": null,
+  "confidence": "low",
+  "why": "structure options and stem unclear"
+ },
+ "chem202402": {
+  "code": "HSC-M2-T3-D3",
+  "confidence": "high",
+  "why": "reaction quotient approaches Keq over time"
+ },
+ "chem202403": {
+  "code": null,
+  "confidence": "low",
+  "why": "stem and options incomplete"
+ },
+ "chem202404": {
+  "code": "HSC-M5-T1-D3",
+  "confidence": "high",
+  "why": "IR spectrum identifies functional groups"
+ },
+ "chem202405": {
+  "code": "HSC-M4-T2-D13",
+  "confidence": "high",
+  "why": "reagent distinguishes primary and tertiary alcohols"
+ },
+ "chem202406": {
+  "code": "HSC-M3-T2-D5",
+  "confidence": "high",
+  "why": "hydroxide concentration from pH"
+ },
+ "chem202407": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "conditions increasing sulfur trioxide yield"
+ },
+ "chem202408": {
+  "code": null,
+  "confidence": "low",
+  "why": "stem missing, ion pair purpose unclear"
+ },
+ "chem202409": {
+  "code": null,
+  "confidence": "low",
+  "why": "spectra stem and compound missing"
+ },
+ "chem202410": {
+  "code": null,
+  "confidence": "low",
+  "why": "catalyst effect on equilibrium not in dots"
+ },
+ "chem202411": {
+  "code": "HSC-M2-T4-D7",
+  "confidence": "high",
+  "why": "solubility expression for PbI2 with common ion"
+ },
+ "chem202412": {
+  "code": null,
+  "confidence": "low",
+  "why": "amide nomenclature not covered by dots"
+ },
+ "chem202413": {
+  "code": "PRE-M4-T3-D7",
+  "confidence": "medium",
+  "why": "molar enthalpy of combustion identifies fuel"
+ },
+ "chem202414": {
+  "code": "HSC-M4-T4-D7",
+  "confidence": "medium",
+  "why": "condensation polymerisation monomer for polyamide"
+ },
+ "chem202415": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, question incomplete"
+ },
+ "chem202416": {
+  "code": "HSC-M3-T2-D16",
+  "confidence": "high",
+  "why": "buffer reaction with added acid"
+ }
+}

@@ -1,0 +1,394 @@
+{
+ "course_id": "english-extension",
+ "course_name": "English Extension",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Texts, culture and value / Understanding / The relationship between text, author, reader and context, and the ways they shape meaning",
+   "text": "The relationship between text, author, reader and context, and the ways they shape meaning"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Texts, culture and value / Understanding / The relationship between a text and the culture it is composed in and responded to",
+   "text": "The relationship between a text and the culture it is composed in and responded to"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Texts, culture and value / Understanding / The ways texts are appropriated or manifested in a range of social, historical and cultural contexts",
+   "text": "The ways texts are appropriated or manifested in a range of social, historical and cultural contexts"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Texts, culture and value / Understanding / The ways values are shaped in and through texts",
+   "text": "The ways values are shaped in and through texts"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Texts, culture and value / Understanding / The ways that textual forms, language and stylistic choices shape meaning",
+   "text": "The ways that textual forms, language and stylistic choices shape meaning"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Texts, culture and value / Understanding / Intertextual connections that offer multiple interpretations",
+   "text": "Intertextual connections that offer multiple interpretations"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Texts, culture and value / Understanding / Sophisticated metalanguage in textual analysis and reflection",
+   "text": "Sophisticated metalanguage in textual analysis and reflection"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Texts, culture and value / Responding / Craft texts that experiment with traditional and emerging literary forms in familiar or new contexts",
+   "text": "Craft texts that experiment with traditional and emerging literary forms in familiar or new contexts"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Texts, culture and value / Responding / Craft arguments that support critical interpretations with textual analysis",
+   "text": "Craft arguments that support critical interpretations with textual analysis"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Texts, culture and value / Responding / Craft texts that re-imagine and re-create other texts, experimenting with perspective, point of view, style and context to show how values are maintained and changed",
+   "text": "Craft texts that re-imagine and re-create other texts, experimenting with perspective, point of view, style and context to show how values are maintained and changed"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Texts, culture and value / Responding / Craft reflective texts that evaluate and assess the influence of stylistic choices on meaning",
+   "text": "Craft reflective texts that evaluate and assess the influence of stylistic choices on meaning"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Texts, culture and value / Responding / Craft critical and creative texts that demonstrate skills in research methodology and independent investigation",
+   "text": "Craft critical and creative texts that demonstrate skills in research methodology and independent investigation"
+  },
+  {
+   "code": "HSC-E1-M1-T1-D1",
+   "path": "Year 12 – Extension 1 / Literary worlds / Understanding / The aesthetic qualities of language and the ways they shape meaning and communicate values",
+   "text": "The aesthetic qualities of language and the ways they shape meaning and communicate values"
+  },
+  {
+   "code": "HSC-E1-M1-T1-D2",
+   "path": "Year 12 – Extension 1 / Literary worlds / Understanding / Changing contexts and values, and how they influence the ways meaning is made",
+   "text": "Changing contexts and values, and how they influence the ways meaning is made"
+  },
+  {
+   "code": "HSC-E1-M1-T1-D3",
+   "path": "Year 12 – Extension 1 / Literary worlds / Understanding / A range of critical perspectives that shape personal responses to complex texts",
+   "text": "A range of critical perspectives that shape personal responses to complex texts"
+  },
+  {
+   "code": "HSC-E1-M1-T1-D4",
+   "path": "Year 12 – Extension 1 / Literary worlds / Understanding / Social, historical and personal values in texts, and how they shape meaning and influence responses",
+   "text": "Social, historical and personal values in texts, and how they shape meaning and influence responses"
+  },
+  {
+   "code": "HSC-E1-M1-T2-D1",
+   "path": "Year 12 – Extension 1 / Literary worlds / Responding / Craft extended texts in a variety of modes and mediums to communicate an understanding of evolving literary conventions and genres",
+   "text": "Craft extended texts in a variety of modes and mediums to communicate an understanding of evolving literary conventions and genres"
+  },
+  {
+   "code": "HSC-E1-M1-T2-D2",
+   "path": "Year 12 – Extension 1 / Literary worlds / Responding / Craft original texts that experiment with and manipulate textual form and stylistic features to shape meaning and present informed perspectives",
+   "text": "Craft original texts that experiment with and manipulate textual form and stylistic features to shape meaning and present informed perspectives"
+  },
+  {
+   "code": "HSC-E1-M1-T2-D3",
+   "path": "Year 12 – Extension 1 / Literary worlds / Responding / Craft sustained arguments that synthesise a range of critical perspectives about a text’s cultural assumptions and values, informed by analysis of textual evidence",
+   "text": "Craft sustained arguments that synthesise a range of critical perspectives about a text’s cultural assumptions and values, informed by analysis of textual evidence"
+  },
+  {
+   "code": "HSC-E1-M1-T2-D4",
+   "path": "Year 12 – Extension 1 / Literary worlds / Responding / Craft texts that reflect on stylistic and language choices to represent the complex relationship between texts, authors, readers and contexts",
+   "text": "Craft texts that reflect on stylistic and language choices to represent the complex relationship between texts, authors, readers and contexts"
+  },
+  {
+   "code": "HSC-E1-M1-T2-D5",
+   "path": "Year 12 – Extension 1 / Literary worlds / Responding / Use sophisticated and controlled language with clarity to express informed perspectives",
+   "text": "Use sophisticated and controlled language with clarity to express informed perspectives"
+  },
+  {
+   "code": "HSC-E2-M1-T2-D1",
+   "path": "Year 12 – Extension 2 / Author and authority / Understanding / The ways significant texts generate ideas and develop knowledge of authorship and aesthetics",
+   "text": "The ways significant texts generate ideas and develop knowledge of authorship and aesthetics"
+  },
+  {
+   "code": "HSC-E2-M1-T2-D2",
+   "path": "Year 12 – Extension 2 / Author and authority / Understanding / The ways that text, author, reader, context and criticism interact and shape an author’s reception over time and in a range of contexts",
+   "text": "The ways that text, author, reader, context and criticism interact and shape an author’s reception over time and in a range of contexts"
+  },
+  {
+   "code": "HSC-E2-M1-T2-D3",
+   "path": "Year 12 – Extension 2 / Author and authority / Understanding / The ways complex and interconnected textual forms, language features and structures, can represent sophisticated ideas",
+   "text": "The ways complex and interconnected textual forms, language features and structures, can represent sophisticated ideas"
+  },
+  {
+   "code": "HSC-E2-M1-T3-D1",
+   "path": "Year 12 – Extension 2 / Author and authority / Responding / Craft extended texts to explain, argue, analyse and evaluate ideas and perspectives",
+   "text": "Craft extended texts to explain, argue, analyse and evaluate ideas and perspectives"
+  },
+  {
+   "code": "HSC-E2-M1-T3-D2",
+   "path": "Year 12 – Extension 2 / Author and authority / Responding / Craft sophisticated and original texts with precision to develop and communicate complex ideas, perspectives and arguments",
+   "text": "Craft sophisticated and original texts with precision to develop and communicate complex ideas, perspectives and arguments"
+  },
+  {
+   "code": "HSC-E2-M1-T3-D3",
+   "path": "Year 12 – Extension 2 / Author and authority / Responding / Craft texts that evaluate the different ways texts are valued and received",
+   "text": "Craft texts that evaluate the different ways texts are valued and received"
+  },
+  {
+   "code": "HSC-E2-M1-T3-D4",
+   "path": "Year 12 – Extension 2 / Author and authority / Responding / Craft texts using language and structural choices appropriate to context, audience and purpose",
+   "text": "Craft texts using language and structural choices appropriate to context, audience and purpose"
+  },
+  {
+   "code": "HSC-E2-M1-T3-D5",
+   "path": "Year 12 – Extension 2 / Author and authority / Responding / Use appropriate academic language in the analysis and evaluation of texts",
+   "text": "Use appropriate academic language in the analysis and evaluation of texts"
+  },
+  {
+   "code": "HSC-E2-M2-T1-D1",
+   "path": "Year 12 – Extension 2 / Major work / Understanding / The complex relationship between text, author, reader and context",
+   "text": "The complex relationship between text, author, reader and context"
+  },
+  {
+   "code": "HSC-E2-M2-T1-D2",
+   "path": "Year 12 – Extension 2 / Major work / Understanding / Complex and interconnected language forms, language features and structures that shape meaning",
+   "text": "Complex and interconnected language forms, language features and structures that shape meaning"
+  },
+  {
+   "code": "HSC-E2-M2-T1-D3",
+   "path": "Year 12 – Extension 2 / Major work / Understanding / The ways context shapes the value, audience and reception of their composition",
+   "text": "The ways context shapes the value, audience and reception of their composition"
+  },
+  {
+   "code": "HSC-E2-M2-T1-D4",
+   "path": "Year 12 – Extension 2 / Major work / Understanding / The ways scholarly texts, academic readings and literary debates can refine and test original ideas",
+   "text": "The ways scholarly texts, academic readings and literary debates can refine and test original ideas"
+  },
+  {
+   "code": "HSC-E2-M2-T1-D5",
+   "path": "Year 12 – Extension 2 / Major work / Understanding / The ways research methodology supports independent inquiry in the creation of an extended composition",
+   "text": "The ways research methodology supports independent inquiry in the creation of an extended composition"
+  },
+  {
+   "code": "HSC-E2-M2-T2-D1",
+   "path": "Year 12 – Extension 2 / Major work / Responding / Craft texts in a range of modes and mediums that evaluate ideas and perspectives",
+   "text": "Craft texts in a range of modes and mediums that evaluate ideas and perspectives"
+  },
+  {
+   "code": "HSC-E2-M2-T2-D2",
+   "path": "Year 12 – Extension 2 / Major work / Responding / Craft texts that purposefully experiment with and manipulate textual form and language to shape meaning",
+   "text": "Craft texts that purposefully experiment with and manipulate textual form and language to shape meaning"
+  },
+  {
+   "code": "HSC-E2-M2-T2-D3",
+   "path": "Year 12 – Extension 2 / Major work / Responding / Craft texts that justify choices of mode and medium, based on the relationship between purpose, audience and context",
+   "text": "Craft texts that justify choices of mode and medium, based on the relationship between purpose, audience and context"
+  },
+  {
+   "code": "HSC-E2-M2-T2-D4",
+   "path": "Year 12 – Extension 2 / Major work / Responding / Craft texts that make reflective judgements on creative and critical choices of concept and style in the Major work",
+   "text": "Craft texts that make reflective judgements on creative and critical choices of concept and style in the Major work"
+  },
+  {
+   "code": "HSC-E2-M2-T2-D5",
+   "path": "Year 12 – Extension 2 / Major work / Responding / Create an independent composition underpinned by targeted extensive research into concept and form",
+   "text": "Create an independent composition underpinned by targeted extensive research into concept and form"
+  },
+  {
+   "code": "HSC-E2-M2-T2-D6",
+   "path": "Year 12 – Extension 2 / Major work / Responding / Use appropriate academic language, including metalanguage, in the analysis and evaluation of strategically chosen texts and their influence on the Major work",
+   "text": "Use appropriate academic language, including metalanguage, in the analysis and evaluation of strategically chosen texts and their influence on the Major work"
+  },
+  {
+   "code": "HSC-E2-M2-T2-D7",
+   "path": "Year 12 – Extension 2 / Major work / Responding / Use their Major work journal to record, develop and critique the influence of texts, perspectives and ideas",
+   "text": "Use their Major work journal to record, develop and critique the influence of texts, perspectives and ideas"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ee2020_q1",
+   "year": 2020,
+   "number": "1",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Understanding | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Afloat on the empty night it is the sea itself that amazes him. The sea as a place\nof the living. There are no dead here. Gazing around, entranced and awestruck,\nhe murmurs under his breath, but the words of his landlocked language do not\nseem adequate. That noble language of his forebears, having been shaped by gritty\nplains and harsh rocks, the dignities of work, even high notions of the sacred\nflame, has no voice for this . . . this continent of water. His heart opens with an\necstasy of unreadiness and yearning.\nThere is so much sea. Even as a modern, educated man he is unprepared. He can\nhardly breathe for the jostle of a million dancing moon-shards programmed to rise\nand subside with breathtaking restlessness. Thus, the strange name ocean (strange\nperhaps in every tongue) delivers for him, at last, its reality: the greatest beauty of\ncreation. Nothing else on earth so vast or dazzling. Not rivers, not lakes, nor even\nsnow-covered mountains.\nHead tipped back he opens his voiceless mouth. Whether this is anguish or longing\nno one else on board is awake to witness or wonder . . . Sea near. And sea far.\nWaves interlocked and heaving with sinister elasticity. Sinister? No, he corrects\nhimself. This is, at last, an interval of hope. Himself almost at peace. He gazes\nover the side. To glimpse, past glassy fractures, a liquid abyss*. Always and\nforever the abyss. Seen now and then for an instant only. Water vertiginous** as\nthe inverted sky in that towering transparency. Triggered alarm flashes lightnings\nthrough his uprooted tree. He recollects an ancient warning against casting oneself\non the waters. Defiantly, he has done so. They have done so.\nThe moon, heavy as marble and miraculously airborne, hurtles overboard.\nRODNEY HALL\nExtract from ‘Moonlight’, A Country Too Far\n* abyss\na seemingly bottomless depth\n** vertiginous\nextremely high and steep\nReproduced with permission by Martin Shaw Literary Agent\nThey left at sunset. The west, over the land, was a clear gush of light up from\nthe departed sun. The east, over the Pacific, was a tall concave of rose-coloured\nclouds, a marvellous high apse*. Now the bush had gone dark and spectral again,\non the right hand . . . And from time to time, on the left hand, they caught sight of\nthe long green rollers of the Pacific, with the star-white foam, and back of that,\nthe dusk green sea glimmered over with smoky rose, reflected from the eastern\nhorizon where the bank of flesh-rose colour and pure smoke-blue lingered a long\ntime, like magic, as if the sky’s rim were cooling down. It seemed characteristic\nof Australia, this far-off flesh-rose bank of colour on the sky’s horizon, so tender\nand unvisited, topped with the smoky, beautiful blueness. And then the thickness\nof the night’s stars overhead, and one star very brave in the last effulgence** of\nsunset, westward over the continent. As soon as night came, all the raggle-taggle\nof amorphous white settlements disappeared, and the continent of the Kangaroo\nreassumed its strange, unvisited glamour . . .\nDH LAWRENCE\nExtract from Kangaroo\n* apse\na large recess with a domed roof in a church\n** effulgence\nradiance\nSydney, November 1960\nThe day the great man sang, heat blazed in haloes over Bennelong Point*. This is what\nPearl will remember, later, this is what she will say: that his voice** turned the air\nholy. Men, sweat-slicked, stood with bowed heads or hung off scaffolds, swatting at\nflies and tears. Few looked at the singer; they needed all their senses to hear. Needed\ntheir whole bodies, skin and eyes and hearts, to absorb what they couldn’t say: that\nsacredness had returned to this place. It flowed through them on a single human voice,\nthrough their bodies and the building that was rising beneath their hands.\nPearl stood with the other journalists, and watched the men grow luminous. Wept as\nshe understood: that it wasn’t just the building or the place Robeson had sanctified,\nbut the labour. The valour of it. The modest hearts of workers. In his songs, in the\nfaces of the men, was every story she had ever tried to write. This one too. She\nclosed her eyes as the voice trailed away. Words formed and crumbled in her head,\ninsubstantial. She gripped her notebook and forgot to write them down.\n· · ·\nAutumn 1965\nDarkness thickened as they passed Bennelong Point. In starlight the new structure was\na strange oceanic creature mantling the land. Each head turned to it, a gravitational\npull. God help us, said the man next to her. But now Pearl could see how its new\ncurves pulled at the water. She’d heard the first thing Utzon*** had done, before\nhe thought about design, before he began to draw, was to consult the sea charts for\nSydney Harbour. It made sudden sense: the building was marine more than earthly.\nFrom this angle, in this light, it was not a structure but an eruption from the sea. An\nact of nature rather than man, a disturbance. She stared at its massive base, a plinth\nfor a sculpture or a ceremony, and thought about surfaces, the familiar faces of earth\nand water, what lay beneath. About the architect’s way of seeing.\nKRISTINA OLSSON\nExtract from Shell\n* Bennelong Point\nsite of the Sydney Opera House\n** his voice\nin 1960 African–American singer Paul Robeson sang for the\nconstruction workers\n*** Utzon\narchitect who designed the Sydney Opera House\nRead Texts 1, 2 and 3.\nCompare how the construction of literary worlds offers you new insights.\nIn your response, refer to TWO of the extracts provided."
+  },
+  {
+   "id": "ee2020_q2",
+   "year": 2020,
+   "number": "2",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "When composers construct texts that interrogate contextual values, we are positioned to consider the complexity of the world.\nDiscuss this statement in light of the elective that you have studied.\nIn your response, refer to TWO of your prescribed texts and ONE related text of your own choosing."
+  },
+  {
+   "id": "ee2021_q1",
+   "year": 2021,
+   "number": "1",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Understanding | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "In literature, the engagement between the reader’s imagination and the writer’s\nimagination is different, more intense and more participatory, than that between\nthe viewer and the painter. This is because with fiction, the reader is asked to\nimagine, to see, what is being described, and so reading itself becomes an act\nof psychological reckoning. We are asked as readers to become complicit in the\nworld we are encouraged to create for ourselves.\n…\nFiction, and the lives we encounter in fiction, does not harden us to the lives of\nothers, but rather reminds us that the stories we know are only the stories we have\nheard. The world is full of impossible lives. Fiction reminds us that they exist all\naround us and that our obligation is to listen to their details when they are being told\nto us. There are many reasons not to read a book, to not look at a piece of art, but\nthe fact that it is difficult cannot be one of them. Fiction allows us the opportunity\nto practise our own humanity, to exercise our own compassion, to remain alive and\nalert to the indignities of all lives. Art should make us uncomfortable. To choose\nnot to see it because it does so is to start sacrificing that humanity, bit by bit.\n…\nTo read fiction is … to leave us with every nerve and sense exposed, to allow\nourselves to be vulnerable, horribly and wonderfully vulnerable, to all lives, and\nevery life. We may not encounter them in person, in the flesh, but we can on the\npage, no matter who we are, or where we live.\n…\nI would argue that what makes fiction uniquely powerful is that I not only don’t\nhave to – but ideally don’t – think of you at all when I write. Thinking about\none’s reader means that you are performing for your audience. You are choosing\nto become an entertainer, and an entertainer is not always the same thing as a\nstoryteller. And yet we have a relationship anyway, though not one defined by the\ntypical rules of a relationship. If your job is to surrender, my job is to tell you a\nstory and to tell you that story without fear or compromise.\nMy vow to you is that I will create a complete universe for you to inhabit.\nMy vow to you is that I will not think of the potential popularity of what I am\ncreating or how it might be critically received.\nMy vow to you is that I will tell the story that I think needs to be told, not the story\nI think will be liked.\nRead Text 1 on pages 3-4.\nHow does Hanya Yanagihara's closing address challenge your understanding of the nature of literary worlds?"
+  },
+  {
+   "id": "ee2021_q2a",
+   "year": 2021,
+   "number": "2(a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 1: Confessional worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Through the unique ways they explore questions of difference, composers allow us 'to practise our own humanity'.\nHow does this statement reflect your experience of studying Literary Homelands?\nIn your response, refer to TWO of your prescribed texts and at least ONE related text of your own choosing."
+  },
+  {
+   "id": "ee2021_q2b",
+   "year": 2021,
+   "number": "2(b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 2: Historical worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Through the unique ways they explore possibilities of liberty, composers allow us 'to practise our own humanity'.\nHow does this statement reflect your experience of studying Worlds of Upheaval?\nIn your response, refer to TWO of your prescribed texts and at least ONE related text of your own choosing."
+  },
+  {
+   "id": "ee2021_q2c",
+   "year": 2021,
+   "number": "2(c)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 3: Hybrid worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Through the unique ways they explore questions of certainty, composers allow us 'to practise our own humanity'.\nHow does this statement reflect your experience of studying Reimagined Worlds?\nIn your response, refer to TWO of your prescribed texts and at least ONE related text of your own choosing."
+  },
+  {
+   "id": "ee2021_q2d",
+   "year": 2021,
+   "number": "2(d)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 4: Natural worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Through the unique ways they explore the possibility of enlightenment, composers allow us 'to practise our own humanity'.\nHow does this statement reflect your experience of studying Literary Mindscapes?\nIn your response, refer to TWO of your prescribed texts and at least ONE related text of your own choosing."
+  },
+  {
+   "id": "ee2021_q2e",
+   "year": 2021,
+   "number": "2(e)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 5: Shakespearean worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Through the unique ways they explore the possibilities of renewal, composers allow us 'to practise our own humanity'.\nHow does this statement reflect your experience of studying Intersecting Worlds?\nIn your response, refer to TWO of your prescribed texts and at least ONE related text of your own choosing."
+  },
+  {
+   "id": "ee2022_q1",
+   "year": 2022,
+   "number": "1",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Understanding | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Literary writers, unless they are writing fairy tales, learn early never to have characters\nwho are polar opposites, one ‘good’, the other ‘evil’. That’s not believable. People are\nmore than just good and evil. Intelligent readers will demand that you not reduce people\nto such simplistic terms, or resolve situations with ‘Good always conquers evil’, ‘Might\nis always right’, and so forth. And while such resolutions are common . . . they are feeble\nin literary fiction, which is supposed to reflect subtle truths about the world. Better to be\nsubtle rather than overbearing, subversive rather than didactic.\n. . . Your own voice is one that seeks a personal truth, one that only you can obtain. That\ntruth comes from your own experiences, your own observations, and when you find it, if\nit really is true and specific to you, you may be surprised that others find it to be true as\nwell. In searching for your own voice, be aware of the difference between emulation and\nimitation, inspiration and intimidation.\n. . . A successful story is one in which the narrator can treat human foibles, even serious\nflaws, with depth and hence compassion. Imagination brings you close to compassion.\nPractice imagining yourself living the life of someone whose situation differs entirely\nfrom yours – living in another country, having another religion – and the more deeply\nyou can do so, the more you become that character as you write. You cannot help being\ncompassionate.\nWhat makes a story worthwhile is the question or questions it poses. The questions\nmight be: What is love? What is loss? What is hope? Those three could take a lifetime to\nanswer. My story is one answer. Your story is another.\nAMY TAN\nThe Opposite of Fate\nMargaret Atwood asked novelists what it felt like when they first began writing a novel.\nOne said [writing] was like walking into a labyrinth, without knowing what monster\nmight be inside; another said it was like groping through a tunnel; another said it was\nlike being in a cave – she could see daylight through the opening, but she herself was in\ndarkness. Another said it was like being under water, in a lake or ocean. Another said\nit was like being in a completely dark room, feeling her way: she had to rearrange the\nfurniture in the dark, and then when it was all arranged the light would come on. Another\nsaid it was like wading through a deep river, at dawn or twilight; another said it was like\nbeing in an empty room which was nevertheless filled with unspoken words, with a sort\nof whispering; another said it was like grappling with an unseen being or entity; another\nsaid it was like sitting in an empty theatre before any play or film had started, waiting\nfor the characters to appear.\nMARGARET ATWOOD\nNegotiating with the Dead: A Writer on Writing\nWords! We all have a world of things inside ourselves and each one of us has his own\nprivate world. How can we understand each other if the words I use have the sense and\nthe value that I expect them to have, but whoever is listening to me inevitably thinks that\nthose same words have a different sense and value, because of the private world he has\ninside himself too. We think we understand each other: but we never do.\nLUIGI PIRANDELLO\nSix Characters in Search of an Author\nRead Texts 1, 2 and 3 on pages 4-5.\nConsider the ideas about Literary Worlds that are common to Texts 1, 2 and 3.\nUse these ideas as the basis of an imaginative response where you create a world with characters who represent divergent points of view."
+  },
+  {
+   "id": "ee2022_q2",
+   "year": 2022,
+   "number": "2",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Voices in literary texts are constructs through which competing points of view are reflected, reconciled or left unresolved.\nEvaluate how this idea is realised in the texts you have studied in your elective.\nIn your response, refer to TWO of your prescribed texts and at least ONE related text of your own choosing."
+  },
+  {
+   "id": "ee2023_q1",
+   "year": 2023,
+   "number": "1",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Understanding | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Compose an imaginative or discursive response which examines the possibilities and problems exposed by literary worlds.\nIn your response, include an unexpected journey into a literary world that transforms an individual."
+  },
+  {
+   "id": "ee2023_q2a",
+   "year": 2023,
+   "number": "2(a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 1: Confessional worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Read the stimulus provided below.\nEvaluate how the ideas in the stimulus echo, unsettle or oppose your understanding of the texts you have studied in Literary Homelands.\nIn your response, make close reference to TWO prescribed texts and ONE other text of your own choosing.\nBridges are thresholds to other realities, archetypal, primal symbols of shifting\nconsciousness. They are passageways, conduits, and connectors that connote\ntransitioning, crossing borders, and changing perspectives. Bridges span liminal\n(threshold) spaces between worlds . . .\nBut there are no safe spaces. “Home” can be unsafe and dangerous because it bears\nthe likelihood of intimacy and thus thinner boundaries. Staying “home” and not\nventuring out from our own group comes from woundedness, and stagnates our\ngrowth. To bridge means loosening our borders, not closing off to others. Bridging is\nthe work of opening the gate to the stranger, within and without. To step across the\nthreshold is to be stripped of the illusion of safety because it moves us into unfamiliar\nterritory and does not grant safe passage. To bridge is to attempt community, and\nfor that we must risk being open to personal, political, and spiritual intimacy, to risk\nbeing wounded. Effective bridging comes from knowing when to close ranks to those\noutside our home, group, community, nation – and when to keep the gates open . . .\nA bridge . . . is not just about one set of people crossing to the other side; it’s also\nabout those on the other side crossing to this side. And ultimately, it’s about doing\naway with demarcations like “ours” and “theirs”. It’s about honouring people’s\notherness in ways that allow us to be changed by embracing that otherness rather than\npunishing others for having a different view, belief system, skin colour, or spiritual\npractice. Diversity of perspectives expands and alters the dialogue, not in an add-on\nfashion but through a multiplicity that’s transformational . . .\nWe honour those whose backs are the bedrock we stand on, even as our shoulders\nbecome the ground for the generations that follow, and their bodies then will become\nthe next layer. Though we’re aware of the danger of losing our individuality to the\ncollective fires and the risking of our safe spaces, this undertaking empowers us to\nbecome sentinels, bearers of witness, makers of [histories].\nGLORIA E ANZALDÚA\n(Un)natural bridges, (Un)safe spaces"
+  },
+  {
+   "id": "ee2023_q2b",
+   "year": 2023,
+   "number": "2(b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 2: Historical worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Read the stimulus provided below.\nEvaluate how the ideas in the stimulus echo, unsettle or oppose your understanding of the texts you have studied in Worlds of Upheaval.\nIn your response, make close reference to TWO prescribed texts and ONE other text of your own choosing.\nSince I’ve been alive (or a teenager anyway) I’ve been aware of forever arguments\nabout whether or not fiction should be political, written to address injustice or at least\nto support social morality. Right now this could seem like an especially frivolous\nquestion: wherever you are on the ideological spectrum, social issues are sitting atop\nus like demon beasts, that is, if “social issues” is even a strong enough phrase for\nthe literally burning evidence of planetary destruction, daily gun violence, grinding\neconomic fear, violent racism, unpredictable pandemic illness and pointless war\nbeing waged . . . all on rumbling sub-crawl under our daily lives.\nEven in less harrowing times, social institutions and the political machinations\nsurrounding them are huge facts of life that we are all subject to, regardless of where\nwe live on the spectrum of class and privilege; the stories of small, soft humans – all\nhumans – caught up in the wheels of such institutions are dramatically compelling\neven when they are badly written . . .\nFiction speaks in a specific language of individual consciousness that senses and\ninterprets the world with a moral ambiguity in which issues and impulses large and\nsmall fluctuate and conflict nonstop, running from ugly to beautiful, blending the\ntwo categories in mysterious, asocial ways that reflect the depths of human nature in\ndarkish, dream-like flashes . . .\nPolitical writing requires clear definition, consistent, recognisable language and a\n“take-away” that will get people moving down the street as opposed to sitting on the\ncurb wondering “what did he mean by that?” It requires consensus in thought and\nlanguage . . .\nWhat I am saying is that stories about political systems or social struggle are most\npoignant and effective when they acknowledge that we are all up against such harsh\nmystery whether we are a powerful statesman or a poor child . . .\nI am expressing honour for art that illuminates this mystery of our human nature,\nwhere good and evil are constantly and unpredictably mixed. Because I think as\nartists it is of primary importance that we remember this paradox and maintain\nhumility before it.\nMARY GAITSKILL\nPolitical Fiction: Why is it so hard to write?\n© Mary Gaitskill, 2022"
+  },
+  {
+   "id": "ee2023_q2c",
+   "year": 2023,
+   "number": "2(c)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 3: Hybrid worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Read the stimulus provided below.\nEvaluate how the ideas in the stimulus echo, unsettle or oppose your understanding of the texts you have studied in Reimagined Worlds.\nIn your response, make close reference to TWO prescribed texts and ONE other text of your own choosing.\nWe writers . . . have an obligation to our readers: it’s the obligation to write true\nthings, especially important when we are creating tales of people who do not exist in\nplaces that never were – to understand that truth is not in what happens but in what it\ntells us about who we are . . . And while we must tell our readers true things and give\nthem weapons and give them armour and pass on whatever wisdom we have gleaned\nfrom our short stay on this green world, we have an obligation not to preach, not to\nlecture, not to force predigested morals and messages down our readers’ throats . . .\nWe all – adults and children, writers and readers – have an obligation to daydream.\nWe have an obligation to imagine. It is easy to pretend that nobody can change\nanything, that we are in a world in which society is huge and the individual is\nless than nothing: an atom in a wall, a grain of rice in a rice field. But the truth is,\nindividuals change their world over and over, individuals make the future, and they\ndo it by imagining that things can be different . . .\nJust look around this room . . . Everything you can see, including the walls, was, at\nsome point, imagined. Someone decided that it might be easier to sit on a chair than\non the ground and imagined the chair. Someone had to imagine a way that I could\ntalk to you in London right now without us all getting rained on. This room and the\nthings in it, and all the other things in this building, in this city, exist because, over\nand over and over, people imagined things. They daydreamed, they pondered, they\nmade things that didn’t quite work, they described things that didn’t yet exist to\npeople who laughed at them.\nAnd then, in time, they succeeded. Political movements, personal movements, all\nbegin with people imagining another way of existing.\nNEIL GAIMAN\nWhy our future depends on libraries, reading and daydreaming\n© Neil Gaiman, 2013. First published in The Guardian\nReprinted by"
+  },
+  {
+   "id": "ee2023_q2d",
+   "year": 2023,
+   "number": "2(d)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 4: Natural worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Read the stimulus provided below.\nEvaluate how the ideas in the stimulus echo, unsettle or oppose your understanding of the texts you have studied in Literary Mindscapes.\nIn your response, make close reference to TWO prescribed texts and ONE other text of your own choosing.\nObjects in mirror are closer than they appear, read the rear-view mirror. I did not\nunderstand, for perceptions of depth and time have always made me dizzy. I like the\nunreality of compressing time, past and present not so different, or looking down\nfrom a tall building, stomach drooping into my temple.\nCaution, my parents explained. It meant that when you’ve left something behind it\ncan sneak up on you, that you are never as far ahead of something as you believe.\nThat the narrative of your present is crafted by the past . . .\nA true mirror is one that projects your image as others see you. Wave your right hand\nand the three-dimensional image will wave as if from the left. Lean to one side and\nsee yourself lean away. The image is lifelike in a way that a traditional mirror is not\nand the experience disrupts our understanding of reflection, at once more human and\nintimate than our many years brushing our teeth or hair at the abstraction in front of\nus.\nSome are startled, shaken, some shamed they have understood themselves incorrectly.\nAnd some weep at the rare chance to witness the self as it truly exists in time and\nspace . . .\nReflection is both the mirrored image and careful rumination*. I’ve been avoiding\nthe image because I’ve been avoiding the thinking – about the homes I’ve made and\nthe ways they do not fit, about the country changing underfoot. But these images I’ve\navoided are not true reflections, and each is already gone. The only thing to do is\nremember there is no mirror test to convince your restless animal self that existence\nis precious, to convince you to step away from the reflection and into reality.\nThis doesn’t mean we forget history or stop aching for it, mourning it if we must, but\nrather that living requires we keep some distance between our past and present, we\nkeep our many selves in sight in the rear-view mirror, as we determine which path to\ntake and where to deviate.\nSARAH FAWN MONTGOMERY\nOn Self-Reflection, Stories, and What Mirrors Really Tell Us\nrumination\ndeep considered thought\n*"
+  },
+  {
+   "id": "ee2023_q2e",
+   "year": 2023,
+   "number": "2(e)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Elective 5: Shakespearean worlds | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Read the stimulus provided below.\nEvaluate how the ideas in the stimulus echo, unsettle or oppose your understanding of the texts you have studied in Intersecting Worlds.\nIn your response, make close reference to TWO prescribed texts and ONE other text of your own choosing.\nis a challenging word.\n“Wild” is used to describe a misbehaving child, a kick-ass party, a city with traffic\ncongestion problems, a piece of salmon that hasn’t been designed in a chemical lab,\na backyard overgrown with too many weeds. In the same breath, wild is a parcel of\nland or sea that seems to resist human control.\n“Wild” – its etymology tells us – signifies something that is self-willed. Relatedly,\n“wilderness” – arising from a combination of “wild”, “deor” (deer or beast), and\n“ness” (promontory or cape) – is a place that abides by nothing but its own will, a\nnonhuman will. But if things were that simple, we would be remiss in calling “wild”\nchallenging. What makes the word “wild” semantically treacherous* is its lack of\nformal policing . . .\nWho determines whether a place is truly unmodified, only slightly modified, or\nsufficiently modified? What is a “natural character”? When is human habitation\n“significant”? Above what threshold is the impact of humankind “substantially\nnoticeable”? . . .\nScores of writers before us have answered the call of the wild from places wild in\ntheir minds and their hearts. But “wild” continues to evade cognitive capture . . .\nThe idea of wild is elusive, but so, too, are its geographical referents. When you seek\nwildness, where, precisely, do you go? Logically, to a place where you expect to find\nit, to a place that you deem wild. That is what most writers and adventurers do. But\nwhen you do, a problem emerges. If you look for wildness where you expect to find\nit, what you see mirrors your mental images. Wild places become a mere test of your\nideologies, a manifestation of your fantasies, aspirations, and fears. Wilderness areas\nbecome fantasies of well-cultivated minds and well-trained bodies keen on putting\ntheir Instagram flag on the next highest peak.\nPHILLIP VANNINI and APRIL VANNINI\nThe Problem with Calling Nature “Wild”\nsemantically treacherous\nproblematic to define\n*"
+  },
+  {
+   "id": "ee2024_q1",
+   "year": 2024,
+   "number": "1",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Understanding | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "I really don’t like words like “artist” or “integrity” or “courage” or “nobility”.\nI have a kind of distrust of all those words because I don’t really know what\nthey mean, any more than I really know what such words as “democracy” or\n“peace” or “peace-loving” or “warlike” or “integration” mean. And yet one is\ncompelled to recognize that all these imprecise words are attempts made by us\nall to get to something which is real and which lives behind the words. Whether\nI like it or not, for example, and no matter what I call myself, I suppose the\nonly word for me, when the chips are down*, is that I am an artist. There is\nsuch a thing. There is such a thing as integrity. Some people are noble. There is\nsuch a thing as courage. The terrible thing is that the reality behind these words\ndepends ultimately on what the human being (meaning every single one of us)\nbelieves to be real. The terrible thing is that the reality behind all these words\ndepends on choices one has got to make, for ever and ever and ever, every day.\n· · ·\nI am not interested really in talking to you as an artist. It seems to me that the\nartist’s struggle for integrity must be considered as a kind of metaphor for the\nstruggle, which is universal and daily, of all human beings on the face of this\nglobe to get to become human beings . . . The poets (by which I mean all artists)\nare finally the only people who know the truth about us.\nJAMES BALDWIN\nExtract from The Artist’s Struggle for Integrity\nUse the ideas in the extract to compose a narrative in which you construct a literary world to explore 'something which is real and which lives behind the words'.\nAnalyse how you constructed a literary world in part (a) to explore 'something which is real and which lives behind the words'."
+  },
+  {
+   "id": "ee2024_q2",
+   "year": 2024,
+   "number": "2",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Why do we value literary worlds that immerse us in powerful and challenging experiences?\nJustify your argument in light of the literary worlds you have studied in your elective.\nIn your response, make close reference to TWO prescribed texts and ONE other text of your own choosing."
+  },
+  {
+   "id": "ee2025_q1",
+   "year": 2025,
+   "number": "1",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Understanding | Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "For me, all fiction is about prizing the logic of metaphors – which is the logic of narratives\nin general – over reality, which is irreducibly random and senseless.\nWe spend our entire lives trying to tell stories about ourselves – they’re the essence of\nmemory. It is how we make living in this unfeeling, accidental universe tolerable. That we\ncall such a tendency “the narrative fallacy” doesn’t mean it doesn’t also touch upon some\naspect of the truth.\nSome stories simply literalise their metaphors a bit more explicitly.\nI’m also a translator, and translation offers a natural metaphor for how I think about writing\nin general.\nEvery act of communication is a miracle of translation.\nAt this moment, in this place, the shifting action potentials in my neurons cascade into\ncertain arrangements, patterns, thoughts; they flow down my spine, branch into my arms,\nmy fingers, until muscles twitch and thought is translated into motion; mechanical levers\nare pressed; electrons are rearranged; marks are made on paper.\nAt another time, in another place, light strikes the marks, reflects into a pair of high-precision\noptical instruments sculpted by nature after billions of years of random mutations; upside-\ndown images are formed against two screens made up of millions of light-sensitive cells,\nwhich translate light into electrical pulses that go up the optic nerves, cross the chiasm[1],\ndown the optic tracts, and into the visual cortex, where the pulses are reassembled into\nletters, punctuation marks, words, sentences . . . thoughts.\nThe entire system seems fragile, preposterous, science fictional.\nWho can say if the thoughts you have in your mind as you read these words are the same\nthoughts I had in my mind as I typed them? We are different, you and I, and the qualia of\nour consciousnesses[2] are as divergent as two stars at the ends of the universe.\nAnd yet, whatever has been lost in translation in the long journey of my thoughts through\nthe maze of civilisation to your mind, I think you do understand me, and you think you do\nunderstand me. Our minds managed to touch, if but briefly and imperfectly.\nDoes the thought not make the universe seem just a bit kinder, a bit brighter, a bit warmer\nand more human?\nWe live for such miracles.\nKEN LIU\nExtract from The Paper Menagerie and Other Stories\n[1] chiasm\nintersection of pathways in the eye\n[2] qualia of our\nsubjectivity of our thoughts\nconsciousnesses\nRead Text 1 on page 3.\nCompose a discursive response in which you extend the ideas in Text 1.\nIn your response, articulate your insights into how texts make meaning through the crafting of literary worlds."
+  },
+  {
+   "id": "ee2025_q2",
+   "year": 2025,
+   "number": "2",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 – Extension 1 / Literary worlds / Responding",
+   "text": "Stories surround us like air; we breathe them in, we breathe them out. The art of being fully\nconscious in personal life means seeing the stories and becoming their teller, rather than\nletting them be the unseen forces that tell you what to do.\n· ·\nThere are stories beneath the stories and around the stories. The recent event on the surface\nis often merely the hood ornament on the mighty social engine that is a story driving the\nculture. We call those “dominant narratives” or “paradigms” or “memes”[1] or “metaphors\nwe live by” or “frameworks”. However we describe them, they are immensely powerful\nforces. And the dominant culture mostly goes about reinforcing the stories that are the\npillars propping it up and that, too often, are also the bars of someone else’s cage. They\nare too often stories that should be broken, or are already broken and ruined and ruinous\nand way past their expiration date. They sit atop mountains of unexamined assumptions . . .\nPart of the job of a great storyteller is to examine the stories that underlie the story . . . to\nmake them visible, and sometimes to break us free of them. Break the story. Breaking is a\ncreative act as much as making . . .\nREBECCA SOLNIT\nExtract from Break the Story\n[1] memes\nideas, behaviours or styles that are symbolic and easily transmitted\nRead Text 2.\nHow does Text 2 shape your understanding of the ways your texts 'creatively break' dominant assumptions in the elective you have studied?\nIn your response, make close reference to TWO prescribed texts from your elective and ONE other text of your own choosing."
+  }
+ ]
+}

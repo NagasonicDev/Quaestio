@@ -1,0 +1,1625 @@
+{
+ "course_id": "chinese-beginners",
+ "course_name": "Chinese Beginners",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M3-D1",
+   "path": "Year 11 / Education and work / the structure and format of particular texts"
+  },
+  {
+   "code": "PRE-M3-D2",
+   "path": "Year 11 / Education and work / present and organise information in ways appropriate to audience, purpose and context"
+  },
+  {
+   "code": "PRE-M3-D3",
+   "path": "Year 11 / Education and work / the purpose and context of a text and their influence on the choice of structure, format and vocabulary"
+  },
+  {
+   "code": "PRE-M3-D4",
+   "path": "Year 11 / Education and work / plan, draft and edit text"
+  },
+  {
+   "code": "PRE-M3-D5",
+   "path": "Year 11 / Education and work / the logical sequencing of ideas in extended text"
+  },
+  {
+   "code": "PRE-M3-D6",
+   "path": "Year 11 / Education and work / sequence ideas and information in texts"
+  },
+  {
+   "code": "PRE-M3-D7",
+   "path": "Year 11 / Education and work / the application of known linguistic structures in new contexts"
+  },
+  {
+   "code": "PRE-M3-D8",
+   "path": "Year 11 / Education and work / apply a range of vocabulary and linguistic structures across a range of contexts"
+  },
+  {
+   "code": "PRE-M3-D9",
+   "path": "Year 11 / Education and work / language choices and their effect on intended meaning"
+  },
+  {
+   "code": "PRE-M3-D10",
+   "path": "Year 11 / Education and work / evaluate the accuracy and appropriateness of structures when constructing and editing text"
+  },
+  {
+   "code": "PRE-M3-D11",
+   "path": "Year 11 / Education and work / resources available to enhance and expand independent learning"
+  },
+  {
+   "code": "PRE-M3-D12",
+   "path": "Year 11 / Education and work / extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online"
+  },
+  {
+   "code": "PRE-M3-D13",
+   "path": "Year 11 / Education and work / register in language use"
+  },
+  {
+   "code": "PRE-M3-D14",
+   "path": "Year 11 / Education and work / use culturally appropriate language when creating and presenting texts"
+  },
+  {
+   "code": "PRE-M3-D15",
+   "path": "Year 11 / Education and work / key features of the writing system"
+  },
+  {
+   "code": "PRE-M3-D16",
+   "path": "Year 11 / Education and work / write Hanzi and build words using familiar symbols, eg 明 ming"
+  },
+  {
+   "code": "PRE-M3-D17",
+   "path": "Year 11 / Education and work / meaning conveyed in words."
+  },
+  {
+   "code": "PRE-M3-D18",
+   "path": "Year 11 / Education and work / analyse ways in which words are constructed, eg how particles are used for grammatical effect, 了 le particle for completed action, 着 zhe particle for continuing action, 过 guo particle indicating a certain experience in the past."
+  },
+  {
+   "code": "PRE-M4-D1",
+   "path": "Year 11 / Friends, recreation and pastimes / ways in which texts are constructed for specific purposes"
+  },
+  {
+   "code": "PRE-M4-D2",
+   "path": "Year 11 / Friends, recreation and pastimes / identify why, how or to whom a text is delivered or presented"
+  },
+  {
+   "code": "PRE-M4-D3",
+   "path": "Year 11 / Friends, recreation and pastimes / ways in which texts are formatted for particular purposes and effects"
+  },
+  {
+   "code": "PRE-M4-D4",
+   "path": "Year 11 / Friends, recreation and pastimes / explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts"
+  },
+  {
+   "code": "PRE-M4-D5",
+   "path": "Year 11 / Friends, recreation and pastimes / ways of identifying relevant details in texts when listening or reading for specific information"
+  },
+  {
+   "code": "PRE-M4-D6",
+   "path": "Year 11 / Friends, recreation and pastimes / make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text"
+  },
+  {
+   "code": "PRE-M4-D7",
+   "path": "Year 11 / Friends, recreation and pastimes / ways of inferring meaning from text"
+  },
+  {
+   "code": "PRE-M4-D8",
+   "path": "Year 11 / Friends, recreation and pastimes / use contextual and other clues to infer meaning from text"
+  },
+  {
+   "code": "PRE-M4-D9",
+   "path": "Year 11 / Friends, recreation and pastimes / resources available to access, enhance or promote independent learning"
+  },
+  {
+   "code": "PRE-M4-D10",
+   "path": "Year 11 / Friends, recreation and pastimes / access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts"
+  },
+  {
+   "code": "PRE-M4-D11",
+   "path": "Year 11 / Friends, recreation and pastimes / the effect of syntax on meaning"
+  },
+  {
+   "code": "PRE-M4-D12",
+   "path": "Year 11 / Friends, recreation and pastimes / analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect"
+  },
+  {
+   "code": "PRE-M4-D13",
+   "path": "Year 11 / Friends, recreation and pastimes / cultural attitudes that add meaning to texts"
+  },
+  {
+   "code": "PRE-M4-D14",
+   "path": "Year 11 / Friends, recreation and pastimes / identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films"
+  },
+  {
+   "code": "PRE-M4-D15",
+   "path": "Year 11 / Friends, recreation and pastimes / language used to express cultural values, and to represent people and cultures in texts"
+  },
+  {
+   "code": "PRE-M4-D16",
+   "path": "Year 11 / Friends, recreation and pastimes / explain cultural references in texts"
+  },
+  {
+   "code": "PRE-M4-D17",
+   "path": "Year 11 / Friends, recreation and pastimes / register and common expressions in language use"
+  },
+  {
+   "code": "PRE-M4-D18",
+   "path": "Year 11 / Friends, recreation and pastimes / explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms"
+  },
+  {
+   "code": "PRE-M4-D19",
+   "path": "Year 11 / Friends, recreation and pastimes / the construction of Hanzi and meaning"
+  },
+  {
+   "code": "PRE-M4-D20",
+   "path": "Year 11 / Friends, recreation and pastimes / explore the specific written forms used to convey meaning, eg radicals 亻,氵"
+  },
+  {
+   "code": "PRE-M4-D21",
+   "path": "Year 11 / Friends, recreation and pastimes / ways to deconstruct Hanzi."
+  },
+  {
+   "code": "PRE-M4-D22",
+   "path": "Year 11 / Friends, recreation and pastimes / recognise that compound Hanzi are composed of two sides which may be related in sound or meaning to the compound Hanzi."
+  },
+  {
+   "code": "PRE-M4-D23",
+   "path": "Year 11 / Friends, recreation and pastimes / suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "PRE-M4-D24",
+   "path": "Year 11 / Friends, recreation and pastimes / mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "PRE-M4-D25",
+   "path": "Year 11 / Friends, recreation and pastimes / the HSC examination specifications, which describe the format of the external HSC examination."
+  },
+  {
+   "code": "PRE-M6-D1",
+   "path": "Year 11 / Future plans and aspirations / the importance of listening for key words to assist understanding"
+  },
+  {
+   "code": "PRE-M6-D2",
+   "path": "Year 11 / Future plans and aspirations / listen for meaning"
+  },
+  {
+   "code": "PRE-M6-D3",
+   "path": "Year 11 / Future plans and aspirations / the importance of reading for key words to assist understanding"
+  },
+  {
+   "code": "PRE-M6-D4",
+   "path": "Year 11 / Future plans and aspirations / read for meaning"
+  },
+  {
+   "code": "PRE-M6-D5",
+   "path": "Year 11 / Future plans and aspirations / links in communication"
+  },
+  {
+   "code": "PRE-M6-D6",
+   "path": "Year 11 / Future plans and aspirations / use strategies to initiate, maintain and conclude an interaction, eg 好吧! Hao ba! 明天见! Mingtian jian!"
+  },
+  {
+   "code": "PRE-M6-D7",
+   "path": "Year 11 / Future plans and aspirations / the purpose and context of communication"
+  },
+  {
+   "code": "PRE-M6-D8",
+   "path": "Year 11 / Future plans and aspirations / select and incorporate particular vocabulary and structures to achieve specific communication goals"
+  },
+  {
+   "code": "PRE-M6-D9",
+   "path": "Year 11 / Future plans and aspirations / register in language use"
+  },
+  {
+   "code": "PRE-M6-D10",
+   "path": "Year 11 / Future plans and aspirations / interact with reference to context, purpose and audience"
+  },
+  {
+   "code": "PRE-M6-D11",
+   "path": "Year 11 / Future plans and aspirations / responding to factual and open-ended questions"
+  },
+  {
+   "code": "PRE-M6-D12",
+   "path": "Year 11 / Future plans and aspirations / maintain an interaction by responding to and asking questions and sharing information"
+  },
+  {
+   "code": "PRE-M6-D13",
+   "path": "Year 11 / Future plans and aspirations / ways to support effective interaction"
+  },
+  {
+   "code": "PRE-M6-D14",
+   "path": "Year 11 / Future plans and aspirations / use appropriate language features to enhance communication, eg tone, intonation"
+  },
+  {
+   "code": "PRE-M6-D15",
+   "path": "Year 11 / Future plans and aspirations / the logical sequencing of ideas"
+  },
+  {
+   "code": "PRE-M6-D16",
+   "path": "Year 11 / Future plans and aspirations / structure information and ideas coherently"
+  },
+  {
+   "code": "PRE-M6-D17",
+   "path": "Year 11 / Future plans and aspirations / formal and informal language, and when and where it is used"
+  },
+  {
+   "code": "PRE-M6-D18",
+   "path": "Year 11 / Future plans and aspirations / apply appropriate social conventions in formal and informal contexts, eg terms of address 李老师 Li laoshi, 王先生 Wang xiansheng"
+  },
+  {
+   "code": "PRE-M6-D19",
+   "path": "Year 11 / Future plans and aspirations / sociolinguistic conventions relating to everyday activities"
+  },
+  {
+   "code": "PRE-M6-D20",
+   "path": "Year 11 / Future plans and aspirations / use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations 谢谢! Xiexie! 不客气。Bu keqi"
+  },
+  {
+   "code": "PRE-M6-D21",
+   "path": "Year 11 / Future plans and aspirations / the linking of Hanzi with a sound and meaning"
+  },
+  {
+   "code": "PRE-M6-D22",
+   "path": "Year 11 / Future plans and aspirations / relate Hanzi components to pictures representing objects and ideas, eg 雨 yu"
+  },
+  {
+   "code": "PRE-M6-D23",
+   "path": "Year 11 / Future plans and aspirations / the construction of Hanzi and sounds."
+  },
+  {
+   "code": "PRE-M6-D24",
+   "path": "Year 11 / Future plans and aspirations / recognise similar phonetic components, eg 马 ma, 妈 ma, 吗 ma."
+  },
+  {
+   "code": "HSC-M3-D1",
+   "path": "Year 12 / Education and work / the structure and format of particular texts"
+  },
+  {
+   "code": "HSC-M3-D2",
+   "path": "Year 12 / Education and work / present and organise information in ways appropriate to audience, purpose and context"
+  },
+  {
+   "code": "HSC-M3-D3",
+   "path": "Year 12 / Education and work / the purpose and context of a text and their influence on the choice of structure, format and vocabulary"
+  },
+  {
+   "code": "HSC-M3-D4",
+   "path": "Year 12 / Education and work / plan, draft and edit text"
+  },
+  {
+   "code": "HSC-M3-D5",
+   "path": "Year 12 / Education and work / the logical sequencing of ideas in extended text"
+  },
+  {
+   "code": "HSC-M3-D6",
+   "path": "Year 12 / Education and work / sequence ideas and information in texts"
+  },
+  {
+   "code": "HSC-M3-D7",
+   "path": "Year 12 / Education and work / the application of known linguistic structures in new contexts"
+  },
+  {
+   "code": "HSC-M3-D8",
+   "path": "Year 12 / Education and work / apply a range of vocabulary and linguistic structures across a range of contexts"
+  },
+  {
+   "code": "HSC-M3-D9",
+   "path": "Year 12 / Education and work / language choices and their effect on intended meaning"
+  },
+  {
+   "code": "HSC-M3-D10",
+   "path": "Year 12 / Education and work / evaluate the accuracy and appropriateness of structures when constructing and editing text"
+  },
+  {
+   "code": "HSC-M3-D11",
+   "path": "Year 12 / Education and work / resources available to enhance and expand independent learning"
+  },
+  {
+   "code": "HSC-M3-D12",
+   "path": "Year 12 / Education and work / extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online"
+  },
+  {
+   "code": "HSC-M3-D13",
+   "path": "Year 12 / Education and work / register in language use"
+  },
+  {
+   "code": "HSC-M3-D14",
+   "path": "Year 12 / Education and work / use culturally appropriate language when creating and presenting texts"
+  },
+  {
+   "code": "HSC-M3-D15",
+   "path": "Year 12 / Education and work / key features of the writing system"
+  },
+  {
+   "code": "HSC-M3-D16",
+   "path": "Year 12 / Education and work / write Hanzi and build words using familiar symbols, eg 明 ming"
+  },
+  {
+   "code": "HSC-M3-D17",
+   "path": "Year 12 / Education and work / meaning conveyed in words."
+  },
+  {
+   "code": "HSC-M3-D18",
+   "path": "Year 12 / Education and work / analyse ways in which words are constructed, eg how particles are used for grammatical effect, 了 le particle for completed action, 着 zhe particle for continuing action, 过 guo particle indicating a certain experience in the past."
+  },
+  {
+   "code": "HSC-M4-D1",
+   "path": "Year 12 / Friends, recreation and pastimes / ways in which texts are constructed for specific purposes"
+  },
+  {
+   "code": "HSC-M4-D2",
+   "path": "Year 12 / Friends, recreation and pastimes / identify why, how or to whom a text is delivered or presented"
+  },
+  {
+   "code": "HSC-M4-D3",
+   "path": "Year 12 / Friends, recreation and pastimes / ways in which texts are formatted for particular purposes and effects"
+  },
+  {
+   "code": "HSC-M4-D4",
+   "path": "Year 12 / Friends, recreation and pastimes / explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts"
+  },
+  {
+   "code": "HSC-M4-D5",
+   "path": "Year 12 / Friends, recreation and pastimes / ways of identifying relevant details in texts when listening or reading for specific information"
+  },
+  {
+   "code": "HSC-M4-D6",
+   "path": "Year 12 / Friends, recreation and pastimes / make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text"
+  },
+  {
+   "code": "HSC-M4-D7",
+   "path": "Year 12 / Friends, recreation and pastimes / ways of inferring meaning from text"
+  },
+  {
+   "code": "HSC-M4-D8",
+   "path": "Year 12 / Friends, recreation and pastimes / use contextual and other clues to infer meaning from text"
+  },
+  {
+   "code": "HSC-M4-D9",
+   "path": "Year 12 / Friends, recreation and pastimes / resources available to access, enhance or promote independent learning"
+  },
+  {
+   "code": "HSC-M4-D10",
+   "path": "Year 12 / Friends, recreation and pastimes / access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts"
+  },
+  {
+   "code": "HSC-M4-D11",
+   "path": "Year 12 / Friends, recreation and pastimes / the effect of syntax on meaning"
+  },
+  {
+   "code": "HSC-M4-D12",
+   "path": "Year 12 / Friends, recreation and pastimes / analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect"
+  },
+  {
+   "code": "HSC-M4-D13",
+   "path": "Year 12 / Friends, recreation and pastimes / cultural attitudes that add meaning to texts"
+  },
+  {
+   "code": "HSC-M4-D14",
+   "path": "Year 12 / Friends, recreation and pastimes / identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films"
+  },
+  {
+   "code": "HSC-M4-D15",
+   "path": "Year 12 / Friends, recreation and pastimes / language used to express cultural values, and to represent people and cultures in texts"
+  },
+  {
+   "code": "HSC-M4-D16",
+   "path": "Year 12 / Friends, recreation and pastimes / explain cultural references in texts"
+  },
+  {
+   "code": "HSC-M4-D17",
+   "path": "Year 12 / Friends, recreation and pastimes / register and common expressions in language use"
+  },
+  {
+   "code": "HSC-M4-D18",
+   "path": "Year 12 / Friends, recreation and pastimes / explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms"
+  },
+  {
+   "code": "HSC-M4-D19",
+   "path": "Year 12 / Friends, recreation and pastimes / the construction of Hanzi and meaning"
+  },
+  {
+   "code": "HSC-M4-D20",
+   "path": "Year 12 / Friends, recreation and pastimes / explore the specific written forms used to convey meaning, eg radicals 亻,氵"
+  },
+  {
+   "code": "HSC-M4-D21",
+   "path": "Year 12 / Friends, recreation and pastimes / ways to deconstruct Hanzi."
+  },
+  {
+   "code": "HSC-M4-D22",
+   "path": "Year 12 / Friends, recreation and pastimes / recognise that compound Hanzi are composed of two sides which may be related in sound or meaning to the compound Hanzi."
+  },
+  {
+   "code": "HSC-M4-D23",
+   "path": "Year 12 / Friends, recreation and pastimes / suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "HSC-M4-D24",
+   "path": "Year 12 / Friends, recreation and pastimes / mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "HSC-M4-D25",
+   "path": "Year 12 / Friends, recreation and pastimes / the HSC examination specifications, which describe the format of the external HSC examination."
+  },
+  {
+   "code": "HSC-M6-D1",
+   "path": "Year 12 / Future plans and aspirations / the importance of listening for key words to assist understanding"
+  },
+  {
+   "code": "HSC-M6-D2",
+   "path": "Year 12 / Future plans and aspirations / listen for meaning"
+  },
+  {
+   "code": "HSC-M6-D3",
+   "path": "Year 12 / Future plans and aspirations / the importance of reading for key words to assist understanding"
+  },
+  {
+   "code": "HSC-M6-D4",
+   "path": "Year 12 / Future plans and aspirations / read for meaning"
+  },
+  {
+   "code": "HSC-M6-D5",
+   "path": "Year 12 / Future plans and aspirations / links in communication"
+  },
+  {
+   "code": "HSC-M6-D6",
+   "path": "Year 12 / Future plans and aspirations / use strategies to initiate, maintain and conclude an interaction, eg 好吧! Hao ba! 明天见! Mingtian jian!"
+  },
+  {
+   "code": "HSC-M6-D7",
+   "path": "Year 12 / Future plans and aspirations / the purpose and context of communication"
+  },
+  {
+   "code": "HSC-M6-D8",
+   "path": "Year 12 / Future plans and aspirations / select and incorporate particular vocabulary and structures to achieve specific communication goals"
+  },
+  {
+   "code": "HSC-M6-D9",
+   "path": "Year 12 / Future plans and aspirations / register in language use"
+  },
+  {
+   "code": "HSC-M6-D10",
+   "path": "Year 12 / Future plans and aspirations / interact with reference to context, purpose and audience"
+  },
+  {
+   "code": "HSC-M6-D11",
+   "path": "Year 12 / Future plans and aspirations / responding to factual and open-ended questions"
+  },
+  {
+   "code": "HSC-M6-D12",
+   "path": "Year 12 / Future plans and aspirations / maintain an interaction by responding to and asking questions and sharing information"
+  },
+  {
+   "code": "HSC-M6-D13",
+   "path": "Year 12 / Future plans and aspirations / ways to support effective interaction"
+  },
+  {
+   "code": "HSC-M6-D14",
+   "path": "Year 12 / Future plans and aspirations / use appropriate language features to enhance communication, eg tone, intonation"
+  },
+  {
+   "code": "HSC-M6-D15",
+   "path": "Year 12 / Future plans and aspirations / the logical sequencing of ideas"
+  },
+  {
+   "code": "HSC-M6-D16",
+   "path": "Year 12 / Future plans and aspirations / structure information and ideas coherently"
+  },
+  {
+   "code": "HSC-M6-D17",
+   "path": "Year 12 / Future plans and aspirations / formal and informal language, and when and where it is used"
+  },
+  {
+   "code": "HSC-M6-D18",
+   "path": "Year 12 / Future plans and aspirations / apply appropriate social conventions in formal and informal contexts, eg terms of address 李老师 Li laoshi, 王先生 Wang xiansheng"
+  },
+  {
+   "code": "HSC-M6-D19",
+   "path": "Year 12 / Future plans and aspirations / sociolinguistic conventions relating to everyday activities"
+  },
+  {
+   "code": "HSC-M6-D20",
+   "path": "Year 12 / Future plans and aspirations / use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations 谢谢! Xiexie! 不客气。Bu keqi"
+  },
+  {
+   "code": "HSC-M6-D21",
+   "path": "Year 12 / Future plans and aspirations / the linking of Hanzi with a sound and meaning"
+  },
+  {
+   "code": "HSC-M6-D22",
+   "path": "Year 12 / Future plans and aspirations / relate Hanzi components to pictures representing objects and ideas, eg 雨 yu"
+  },
+  {
+   "code": "HSC-M6-D23",
+   "path": "Year 12 / Future plans and aspirations / the construction of Hanzi and sounds."
+  },
+  {
+   "code": "HSC-M6-D24",
+   "path": "Year 12 / Future plans and aspirations / recognise similar phonetic components, eg 马 ma, 妈 ma, 吗 ma."
+  }
+ ],
+ "questions": [
+  {
+   "id": "cb202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhat is the purpose of the father’s message? 1 | (These notes\nwill NOT be\n[| A. To tell her not to go to school marked.)\n[| B. To remind her to do her homework\n[| C. To tell her that it will be raining tomorrow\n[| D. To remind her to take an umbrella to school"
+  },
+  {
+   "id": "cb202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Identify the suggestions made by Mary. 2"
+  },
+  {
+   "id": "cb202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Why is Xiaohong relieved? 2\n一 2 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p3_ocr.txt ====="
+  },
+  {
+   "id": "cb202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nOutline why Daming’s plans changed. Support your answer with 3 | (These notes\nreference to the text. will NOT be\nmarked.)"
+  },
+  {
+   "id": "cb202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Outline the directions the female speaker has to follow to get to the 3\nZOO.\n一 3 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p4_ocr.txt ====="
+  },
+  {
+   "id": "cb202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nList the THREE main points of this announcement. 3 | (These notes\n. will NOT be\nO marked. )"
+  },
+  {
+   "id": "cb202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What is Xiaoyue most likely to do next year? Justify your answer 3\nwith reference to the text."
+  },
+  {
+   "id": "cb202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "How does Xiaowen convince his mum to change her mind? Support 4\nyour answer with reference to the text.\n_4 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p5_ocr.txt ====="
+  },
+  {
+   "id": "cb202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nExplain why Zhang Xiaochun considers his experiences in China to 4 | (These notes\nhave been positive. will NOT be\nmarked. )"
+  },
+  {
+   "id": "cb202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": ".\nWhat is Mr Li’s most likely decision? Support your answer with 5\nreference to the text.\n一 5 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p6_ocr.txt =====\n_6-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p7_ocr.txt =====\n一 7 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p8_ocr.txt =====\n_ 8 L\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p9_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nSection Ht — Reading PT ETT ETT | |\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "cb202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the encyclopaedia entry and then answer the question that follows.\n是 球 类 运 动 。 每 队 有 十 一 个 人 。 不 可 以 用 手 打 。\n踢 进 球 门 得 一 分 。\nChoose the best answer to fill in the blank. 1\n门 oA. 游 泳\n门 B 网 球\n门 c,。 足 球\n门 Dee\n2101 - 9 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p10_ocr.txt ====="
+  },
+  {
+   "id": "cb202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n图 书 馆 开 门 时 间\n一 月 二 十 六 日 星 期 日 是 澳 大 利 亚 日 ,\n图 书 馆 不 开 门 。 一 月 二 十 七 日 星 期 一 ,\n图 书 馆 也 不 开 门 。 星 期 二 , 图 书 馆 早\n上 十 点 到 晚 上 九 点 开 门 。\n(a) Who is the audience for this notice? 1\n(b) Complete the table according to the information in the notice. 3\npe [reign\nim | 一 一 一\na 一 一 一 一 一\n_ 10 -\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p11_ocr.txt ====="
+  },
+  {
+   "id": "cb202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n白 先 生 ,\n您 好 !\n我 是 一 名 来 自 悉 尼 的 十 二 年 级 学 生 , 刚 刚 毕 业 。 您 的 中 餐 馆 需 要\n一 位 服 务 员 。 我 想 我 能 做 这 个 工 作 。\n在 中 学 的 六 年 里 , 我 学 习 了 英 语 、 数 学 、 科 学 和 中 文 等 课 。 我 的\n中 文 非 常 好 。 十 年 级 的 时 候 , 我 在 一 家 中 餐 馆 打 工 。\n我 很 外 向 , 喜 欢 交 朋 友 , 也 常 常 帮 助 人 。\n希 望 我 能 做 这 个 工 作 。 我 的 电 话 号 码 是 04123456789。\n祝 好 !\n王 朋\n二 零 二 零 年 五 月 八 日\n希 望 hopefully\n(a) What job is Wang Peng applying for? 1\n(b) Why does he think he is suitable for this job? 3\n一 11 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p12_ocr.txt ====="
+  },
+  {
+   "id": "cb202014",
+   "year": 2020,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n大 大 旅 游 广 告\n我 们 的 日 太 旋 行 团 很 好 1 奕 天 住 翩 好 的 旋 店 , 吃 好 吃 的 小 国 粟 , 远\n能 买 沥 厂 。 而 且 , 我 们 多 旋 行 团 非 脊 便 宛 。\n_互| 一 定 不 能 去 大 大 旅 行 团 。 住 的 旅 店 离 市 中 心 很 远 , 每 天\n坐 很 长 时 间 的 车 。\n|亘| 不 要 去 大 大 旅 行 团 。 他 们 每 天 带 我 们 去 买 东 西 , 不 买 东\n西 不 能 走 。 我 们 只 吃 中 国 菜 , 没 有 日 本 菜 。\n+E comment\n(a) How does the advertisement appeal to customers? 2\n(b) Outline the differences between the advertisement and the comments. 4\n一 12 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p13_ocr.txt ====="
+  },
+  {
+   "id": "cb202015",
+   "year": 2020,
+   "number": "15",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n三 月 六 日 星 期 日 大 雨\n今 天 是 我 男 朋 友 大 伟 十 八 岁 的 生 日 。\n我 们 两 个 人 己 经 为 生 日 会 准 备 了 一 个 多 月 了 。 请 了 很 多 朋 友 , 买\n了 很 多 好 吃 的 和 好 喝 的 , 还 准 备 在 家 唱 歌 、 跳 舞 、 看 电 影 。 可 是 , 今\n天 早 上 要 出 门 的 时 候 , 爸 爸 、 妈 妈 不 让 我 去 , 因 为 明 天 有 考 试 。 我 很\n生 气 。\n还 好 , 大 伟 打 电 话 给 我 , 还 和 我 视 频 聊 天 。 我 看 到 很 多 朋 友 都 去\n了 。 大 伟 收 到 了 很 多 礼 物 , 有 电 脑 包 、 皮 带 和 手 表 。 他 们 玩 儿 得 很 开 心 。\n大 伟 说 考 完 试 请 我 去 中 国 城 吃 饭 , 然 后 一 起 去 看 电 影 。\n希 望 快 点 考 完 试 。\n准 备 prepare 视 频 video\n(a) Outline the reasons Lanlan is angry. 3\n(b) By the end of the diary entry, how has Lanlan’s mood changed? Support your 4\nanswer with reference to the text.\n~13-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p14_ocr.txt ====="
+  },
+  {
+   "id": "cb202016",
+   "year": 2020,
+   "number": "16",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n(a>) (ATA) Cd) ee)\niy 明 年 要 上 大 学 了 , 可 是 我 不 知 道 要 学 什 么 史 我 喜 欢 画 画 ,\n将 来 想 成 为 画 家 。 我 的 爸 爸 妈 妈 都 是 中 国 人 , 他 们 说 做\n画 家 钱 不 多 , 一 定 要 我 当 医 生 。 但 是 , 我 对 科 学 没 兴 趣 。\n暮c辈乙刁恽妾…〔′云亘怎 么 Tre\n[am | 我 觉 得 你 爸 爸 妈 妈 说 得 也 对 。 我 姐 姐 的 一 个 好 朋 友 学 习\n画 画 , 毕 业 后 找 不 到 工 作 , 只 能 教 小 学 生 画 画 , 钱 很 少 ,\n还 要 和 爸 爸 妈 妈 一 起 住 。 她 想 回 大 学 学 习 别 的 课 。\n| Jenny | 你 画 画 很 好 , 你 应 该 做 你 喜 欢 的 。 每 个 人 都 有 梦 想 。 当\n医 生 是 你 爸 爸 妈 妈 的 梦 想 , 不 是 你 的 。 你 的 梦 想 是 成 为\n一 名 画 家 。 只 要 你 好 好 学 习 , 一 定 会 做 好 你 想 做 的 事 。\n_ 14 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p15_ocr.txt =====\n(a) What has prompted Lily to write her post? Give reasons for your answer. 3\n(b) Compare the advice provided by Ann and Jenny to Lily. Support your answer 5\nwith reference to the text.\nEnd of\n_ 15 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p16_ocr.txt =====\n~16—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p17_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nsection t—writingincrinese = LLI | | LI I I |\nPart A - 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of vocabulary and language structures in Chinese"
+  },
+  {
+   "id": "cb202017",
+   "year": 2020,
+   "number": "17",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Write a message to a friend, inviting them to go shopping with you this weekend. Write\napproximately 50 characters in CHINESE.\n2102 _17-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p18_ocr.txt ====="
+  },
+  {
+   "id": "cb202018",
+   "year": 2020,
+   "number": "18",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "You have participated in an exchange program in Beijing. Write a diary entry describing one\nof your days. Write approximately 100 characters in CHINESE.\n~18-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p19_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nSection II (continued FL ETT TT | LI\nPart B - 10 marks\nAttempt either"
+  },
+  {
+   "id": "cb202019",
+   "year": 2020,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "or\nor\n一 个 新 同 学 要 到 你 的 班 。 写 一 封 邮 件 给 你 的 新 同 学 , 说 说 你 们 的 学 校 。\nA new student is coming to your class. Write an email to your new classmate, introducing your\nschool.\nOR"
+  },
+  {
+   "id": "cb202020",
+   "year": 2020,
+   "number": "20",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "2100\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p2_ocr.txt =====\nSection I — Listening\nThis section should take approximately 40 minutes\nYou will hear TEN texts. Each text will be read twice. There will be a pause after the first\nreading in which you may make notes. However, you may make notes at any time. You will be\ngiven adequate time after the second reading to complete your answer. Answer the questions\nin ENGLISH in the spaces provided. These spaces provide guidance for the expected length of\nresponse. In the case of multiple-choice questions, tick the box that corresponds to the correct\nresponse. You may proceed to Section II as soon as you have finished\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 150 characters in CHINESE.\nYour answer will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of a range of vocabulary and language structures in Chinese\n你 的 朋 友 要 来 澳 大 利 亚 旅 游 。 写 一 封 邮 件 给 你 的 朋 友 , 说 一 说 他 / 她 可 以 在 澳 大 利 亚\n做 什 么 。\nYour friend is coming to Australia for a holiday. Write an email to them about the activities\nthey can do in Australia.\n2103 _19—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2020_p20_ocr.txt =====\nQuestion stempicd|\n_ 20 -"
+  },
+  {
+   "id": "cb202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhy does Lanlan say ‘our school is very good’? 2 | (These notes\nwill NOT be\nO marked. )"
+  },
+  {
+   "id": "cb202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Who is An? 1\n| | A. A friend from China\n[ ] B.A friend from Australia\n[ ] ©. A friend who Mary does not know\n[ ] D A friend they had dinner with last night"
+  },
+  {
+   "id": "cb202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What are the speakers discussing? 2\n一 2 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p3_ocr.txt ====="
+  },
+  {
+   "id": "cb202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nSummarise the main points made by the speaker. 3 | (These notes\n. will NOT be\nPPUOPeTESETETETETUTETTPOTETETeTeTeTeTeTeTeTeTeTeTeTeTeTeTereeererereeerereeecrre eer ere rere re rer errr eerie ee marked. )"
+  },
+  {
+   "id": "cb202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Why did Xiaoli not perform well in her exam? 3"
+  },
+  {
+   "id": "cb202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Fill in the details for the birthday party’s preparations. 3\noe\ns T 一 一 一\na 一\n一 3 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p4_ocr.txt ====="
+  },
+  {
+   "id": "cb202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nHow does the son justify using his phone? 4 | (These notes\nwill NOT be\nO marked. )"
+  },
+  {
+   "id": "cb202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Who is the audience of this speech? 1\n(b) Outline the advantages and disadvantages mentioned in this 3\nspeech.\n~4-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p5_ocr.txt ====="
+  },
+  {
+   "id": "cb202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nLabel the following landmarks on the map. 3 | (These notes\nwill NOT be\n¢ Florist marked.)\n¢ Hospital\n¢ School\n¢ Train station\n— late"
+  },
+  {
+   "id": "cb202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": ".\nAccording to the speaker, why would people be interested in 5\nparticipating in this event?\n一 5 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p6_ocr.txt =====\n_ 6 L\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p7_ocr.txt =====\n一 7 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p8_ocr.txt =====\n_ 8 L\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p9_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nH H ntre Number\nChinese Beginners Centre Numbe\nSection — Reading PTET ET Ey\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "cb202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the question that follows.\n妹 妹 :\n今 天 晓 上 你 要 跳 舞 , 不 要 忘 记 带\n跳 舞 鞋 。\n哥 哥\nWhat is the purpose of this note? 1\n2181 一 9 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p10_ocr.txt ====="
+  },
+  {
+   "id": "cb202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n大 家 好 , 我 们 都 住 在 东 山 城 。 我 们 这 里 有 新 的 游 泳 池 ,\n图 书 馆 和 汽 车 站 了 。\n游 泳 池 是 二 十 四 小 时 热 水 游 泳 池 , 其 它 地 方 都 没 有 。\n图 书 馆 在 游 泳 池 的 后 面 , 有 三 层 。 图 书 馆 里 有 咖 啡 店 和 电\n影 院 , 其 它 图 书 馆 都 没 有 。 图 书 馆 的 前 面 和 后 面 都 有 汽 车 站 ,\n汽 车 都 是 没 有 人 开 的 。\n(a) Who is the audience for this notice? 1\n(b) Why are the changes mentioned in the notice so special? 3\n_~10—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p11_ocr.txt ====="
+  },
+  {
+   "id": "cb202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n10H 120 星 期 五 普\n今 天 我 从 日 本 回 到 澳 大 利 亚 。 蛭 然 很 累 , 但 是 我 很\n高 兴 。\n在 日 本 , 我 学 习 了 日 文 。 我 交 了 很 多 新 朋 友 , 和 他\n们 一 起 打 球 , 画 画 , 看 电 影 。 我 还 学 了 很 多 日 本 的 历 史\n和 文 化 。 我 很 喜 欢 日 本 。\n我 的 日 文 有 了 很 大 进 步 。 我 要 学 好 日 文 , 因 为 我 想\n当 日 文 老 师 。\n(a) Who is the writer of this diary entry? 1\n[| A. A painter\n[| B. A student\n[| C. A teacher\n[| D. A sportsperson\n(b) How has the writer’s experience overseas influenced their choice of career? 3\nSupport your answer with reference to the text.\n一 11 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p12_ocr.txt ====="
+  },
+  {
+   "id": "cb202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n中 文 才 艺 比 赛\n传 善 欢 唱 个 文 歌 吗 7\n传 会 写 毛 参 宝 吗 ?\n请 来 参 加 中 文 才 艺 比 赛 1\n年 级 : 七 年 级 一 十 年 级 学 中 文 的 学 生\n时 间 : 2021 年 12 月 3 日 下 午 五 点 半 到 八 点\n比 赛 地 点 : “ 城 市 体 育 馆\n怎 么 去 : 参 加 比 赛 的 同 学 在 学 校 坐 校 车 , 大 家 一 起 去 。\n想 参 加 的 人 找 中 文 老 师 , 他 们 会 帮 助 你 。\n学 校 会 给 你 买 比 赛 衣 服 。\na Zo talent\n一 12 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p13_ocr.txt =====\n(a) Who is the target audience of this advertisement? 3\n(b) What arrangements has the school made to help the participants? 3\nEnd of\n~13-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p14_ocr.txt ====="
+  },
+  {
+   "id": "cb202115",
+   "year": 2021,
+   "number": "15",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\nRP 凸 更 曲 | 白 团 万 更 | 外 Q ii |\n弟 弟 :\n你 最 近 看 太 多 电 视 了 , 我 和 爸 爸 妈 妈 都 很 担 心 你 。\n你 每 天 都 看 到 很 晓 , 十 二 点 才 睡 觉 , 对 你 身 体 不 好 。 你 看\n电 视 后 就 不 和 我 们 说 话 了 , 我 们 也 很 久 没 有 一 起 出 去 玩\n了 C\n弟 弟 , 我 党 得 你 要 改 变 了 。 明 天 开 始 , 我 们 每 天 早\n上 一 起 去 跑 步 , 好 吗 ? 所 以 你 晚 上 要 早 点 睡 觉 。 下 星 期\n有 你 最 喜 欢 的 音 乐 会 , 我 们 一 起 去 吧 ! 还 有 , 新 年 快 到 了 ,\n我 们 一 起 做 饭 给 爸 爸 妈 妈 吃 , 好 吗 ? 他 们 一 定 会 很 高 兴\n白勺D\n姐 姐\nFS WOrTY\n改 变 change\n—~14—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p15_ocr.txt =====\n(a) What has prompted the sister to write this email? Support your answer with 3\nreference to the text.\n(b) How is the sister trying to help her brother? Support your answer with reference 4\nto the text.\nEnd of\n~15-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p16_ocr.txt ====="
+  },
+  {
+   "id": "cb202116",
+   "year": 2021,
+   "number": "16",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n(ayy) (ATA) Ce [Grc _\nal 我 快 毕 业 了 。 很 多 澳 大 利 亚 的 学 生 中 学 毕 业 后 , 先 工\n作 、 旅 游 一 年 , 再 上 大 学 。 有 的 父 母 不 同 意 。 我 该 怎\n么 做 ?\n我 认 为 这 样 很 好 。 有 些 学 生 不 知 道 上 大 学 要 学 什 么 ,\nPaul 所 以 先 工 作 才 会 知 道 自 己 喜 欢 什 么 , 对 什 么 有 兴 趣 ,\n将 来 什 么 工 作 比 较 适 合 自 己 , 然 后 再 上 大 学 。\n_直_ 我 也 认 为 这 样 很 好 。 有 些 学 生 喜 欢 旅 游 、 认 识 更 多 的\n朋 友 , 学 会 和 人 交 流 , 有 更 多 的 经 历 , 上 大 学 后 会 做\n得 更 好 。\n丨噩_ 我 不 会 让 我 的 孩 子 工 作 、 旅 游 一 年 后 再 上 大 学 。 孩 子\n们 在 中 学 九 年 级 和 十 一 年 级 选 课 的 时 候 已 经 有 过 两 次\n选 择 , 而 且 中 学 毕 业 后 已 经 十 八 岁 了 , 应 该 知 道 自 己\n喜 欢 什 么 , 对 什 么 感 兴 趣 , 将 来 要 做 什 么 。 如 果 想 交\n朋 友 , 有 更 多 经 历 , 他 们 可 以 一 边 上 大 学 , 一 边 打 工 。\n放 假 的 时 候 可 以 去 旅 游 。\neal 我 在 学 校 选 过 课 , 可 是 现 在 还 是 不 知 道 上 大 学 学 什 么 。\n上 大 学 很 忙 , 没 有 时 间 打 工 , 没 有 钱 , 放 假 也 不 能 旅 游 。\n适 合 ~~ suitable\n经 历 experience\ndE choice\n~16-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p17_ocr.txt =====\n(a) Outline the issues being discussed in this forum. 3\n(b) Whose advice is John most likely to take? Justify your answer with reference to 5\nall the advice given.\nEnd of\n一 17 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p18_ocr.txt =====\n一 18\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p19_ocr.txt =====\n~19_\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p20_ocr.txt =====\n一 20 -\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p21_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\n。 。 ntre Number\nChinese Beginners Centre Numbe\nsecton tt —writinginchinese LL | | | | I I\nPart A - 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of vocabulary and language structures in Chinese"
+  },
+  {
+   "id": "cb202117",
+   "year": 2021,
+   "number": "17",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Write a message to one of your family members, telling them why you are not coming home\nfor dinner tonight. Write approximately 50 characters in CHINESE.\n2182 一 21 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p22_ocr.txt ====="
+  },
+  {
+   "id": "cb202118",
+   "year": 2021,
+   "number": "18",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "You have recently moved to a new school. Write an email to your best friend in China\ndescribing your new school. Write approximately 100 characters in CHINESE.\n一 22 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p23_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\n。 。 ntre Number\nChinese Beginners Centre Numbe\nSection II (continued LETT TT | Ly\nPart B - 10 marks\nAttempt either"
+  },
+  {
+   "id": "cb202119",
+   "year": 2021,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "or\nor\n你 和 你 的 朋 友 们 刚 刚 过 了 一 个 美 好 的 周 末 。 写 一 篇 日 记 , 说 说 你 的 体 验 。\nYou and your friends just had a wonderful weekend doing something different. Write a diary\nentry describing this experience.\nOR"
+  },
+  {
+   "id": "cb202120",
+   "year": 2021,
+   "number": "20",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "2180\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p2_ocr.txt =====\nSection I — Listening\nThis section should take approximately 40 minutes\nYou will hear TEN texts. Each text will be read twice. There will be a pause after the first\nreading in which you may make notes. However, you may make notes at any time. You will be\ngiven adequate time after the second reading to complete your answer. Answer the questions\nin ENGLISH in the spaces provided. These spaces provide guidance for the expected length of\nresponse. In the case of multiple-choice questions, tick the box that corresponds to the correct\nresponse. You may proceed to Section II as soon as you have finished\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 150 characters in CHINESE.\nYour answer will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of a range of vocabulary and language structures in Chinese\n你 今 天 参 加 了 春 节 活 动 。 写 一 篇 日 记 , 说 说 你 的 一 天 。\nYou attended a Spring Festival event today. Write a diary entry describing your day.\n2183 _23-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2021_p24_ocr.txt =====\nQuestion atenpiet] |\n一 24 一"
+  },
+  {
+   "id": "cb202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhat is the purpose of the mother’s message? 2 | (These notes\nwill NOT be\nLe ee bene ee ee eens eens eens eee eee DEDEDE DERE REESE EE SESESES SESE SESE SESE SESE SESE OE OS DEES De DEES DEES ESSE SESE SESE DS marked.)"
+  },
+  {
+   "id": "cb202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Where is the library? Tick the box that corresponds to its location. 1\nSwimming\npool\nDasheng’s\nhouse"
+  },
+  {
+   "id": "cb202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What are the speakers discussing? 2\n一 2 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p3_ocr.txt ====="
+  },
+  {
+   "id": "cb202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nComplete the table. 3 | (These notes\nwill NOT be\nme ye\nee"
+  },
+  {
+   "id": "cb202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What makes Mary a suitable candidate for this position? 3"
+  },
+  {
+   "id": "cb202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What is David most likely to do as a result of this conversation? 3\nJustify your answer with reference to the text.\n一 3 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p4_ocr.txt ====="
+  },
+  {
+   "id": "cb202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nIs Xiaoshuai likely to go out with Lanlan this weekend? Justify your 3 | (These notes\nanswer with reference to the text. will NOT be\nmarked.)"
+  },
+  {
+   "id": "cb202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Summarise the main points made by the speaker. 4"
+  },
+  {
+   "id": "cb202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain the changes in the mother’s feelings. 4\n_4 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p5_ocr.txt ====="
+  },
+  {
+   "id": "cb202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": ".\nCandidate’s\nNotes\nWhy is this announcement being made? Support your answer with 5 | (These notes\nreference to the text. will NOT be\nmarked.)\n一 5 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p6_ocr.txt =====\n_6-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p7_ocr.txt =====\n一 7 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p8_ocr.txt =====\n_ 8 L\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p9_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nH H ntre Number\nChinese Beginners Centre Numbe\nSection — Reading PTET ET Ey\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "cb202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the question that follows.\n快 乐 饭 馆 新 的 开 门 时 间\n从 十 一 月 二 十 日 到 明 年 一 月 八 日 , 饭 馆\n中 午 不 开 门 。 大 家 不 要 来 吃 午 饭 1!\nWhat is the purpose of this notice? 1\n2151 一 9 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p10_ocr.txt ====="
+  },
+  {
+   "id": "cb202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n马 克 , 你 要 打 工 吗 ? 运 动 场 有 新 工 作 , 教 小 学 生\n打 板 球 , 一 小 时 给 四 十 块 , 真 好 1 你 板 球 打 得 好 ,\n人 也 好 , 小 学 生 会 喜 欢 你 。\n好 。 谢 谢 丽 丽 。\n(a) Why did Lily message Mark? 1\n(b) What are the main points made by Lily? 3\n~10-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p11_ocr.txt ====="
+  },
+  {
+   "id": "cb202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n三 月 二 十 八 日 星 期 二 普\n今 天 我 去 了 小 明 的 生 日 会 , 非 常 开 心 。\n我 们 一 起 去 了 有 名 的 中 国 饭 馆 , 吃 了 春 卷 , 炒 饭 , 麻 婆 豆 腐 。\n都 是 我 最 喜 欢 吃 的 东 西 。 我 们 还 唱 歌 , 跳 舞 , 小 明 的 舞 跳 得 非 常 好 。\n最 后 , 我 们 还 一 起 吃 了 一 个 很 大 的 生 日 蛋 糕 。 小 明 也 很 喜 欢 我 给 他 的\n生 日 礼 物 。\n(a) What happened on 28 March? 1\n(b) Explain how the author was feeling at the event. Support your answer with 3\nreference to the text.\n一 11 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p12_ocr.txt ====="
+  },
+  {
+   "id": "cb202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n=> @FA@ QMGB-Se7H8\nam | 大 家 好 , 我 们 中 学 快 毕 业 了 , 你 们 毕 业 以 后 打 算 做 什 么 ? 我\n想 去 旅 游 , 也 想 练 习 中 文 , 你 们 说 呢 ?\n〔亘〕 你 要 去 中 国 餐 馆 找 工 作 , 你 可 以 绊 习 中 文 , 也 可 以 有 钱 买 喜\n欢 的 东 西 。 你 去 旅 游 要 花 很 多 钱 。\nsam | 现 在 我 每 个 星 期 也 打 工 四 天 , 所 以 我 有 钱 买 喜 欢 的 东 西 , 也\n有 钱 出 去 玩 。 我 考 试 后 想 休 息 休 息 。\n〔趸〕 你 要 去 中 国 。 中 国 有 很 多 好 玩 的 地 方 , 你 可 以 去 北 京 的 长 城 ,\n也 可 以 去 上 海 买 便 宜 的 东 西 。 中 国 人 也 非 常 友 好 , 可 以 和 他\n们 练 习 说 中 文 。\n(a) What are the forum participants discussing? 2\n(b) What is Mary most likely to do next? Justify your answer with reference to the 4\ntext.\n~12-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p13_ocr.txt ====="
+  },
+  {
+   "id": "cb202215",
+   "year": 2022,
+   "number": "15",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n我 们 附 近 有 很 多 新 大 楼 , 我 不 喜 欢 。 大 楼 多 了 , 人 也 多 了 , 所 以 学 生\n太 多 , 老 师 太 少 了 。 房 子 也 很 货 , 很 吵 。 “ 一 大 山 ( 三 十 五 岁 )\n我 很 喜 欢 新 大 楼 。 眼 上 回 家 也 没 问 题 , 因 为 外 面 常 常 有 很 多 人 。 大 楼\n附 近 有 很 多 商 店 和 饭 馆 , 很 方 便 。 “ 一 乐 乐 ( 二 十 六 岁 )\n以 前 , 我 住 大 楼 , 房 间 又 小 又 吵 。 现 在 我 家 在 很 远 的 地 方 , 但 是 我 的\n房 子 很 大 , 很 便 宜 , 也 有 大 花 园 。 “ 一 彼 得 ( 五 十 八 岁 )\n(a) | What are Dashan’s concerns? 3\n(b) How do Lele’s and Peter’s opinions differ? Support your answer with reference 5\nto the text.\n~13-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p14_ocr.txt ====="
+  },
+  {
+   "id": "cb202216",
+   "year": 2022,
+   "number": "16",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\nEmail 1\nRP 凸 鲁 曲 | 白 BK 丑 | gb Q 面 |\n哥 哥 :\n你 好 吗 ? 我 不 上 大 学 , 想 当 vlogger, 你 说 好 吗 ?\n我 党 得 上 大 学 功 课 又 多 , 学 习 又 忙 。 还 有 , 我 的 朋 友 也 是\nvlogger, 她 常 常 出 去 玩 , 吃 好 吃 的 东 西 。 我 党 得 她 又 开 心 又 有 很 多 钱 ,\n所 以 我 也 想 当 vlogger。\n丽 红\nEmail 2\n[ 凸 鸡 曲 | 白 BK 丑 | 9b Q 相 |\n妹 妹 :\n我 很 好 , 你 呻 我 不 喜 欢 你 做 vylogger, 我 要 你 上 大 学 。\n你 不 是 很 爱 交 朋 友 吗 ? 上 大 学 可 以 交 很 多 新 朋 友 。 蛛 然 上 大 学 很\n累 , 但 是 做 vlogger 更 累 。 我 党 得 你 常 常 考 试 考 得 好 , 所 以 上 大 学 没\n问 题 。 当 vlogger 很 难 , 我 的 朋 友 也 是 vlogger, 他 没 有 钱 , 他 的 爹\n爸 妈 妈 给 他 钱 。 你 还 是 学 生 , 你 要 好 好 学 习 , 可 以 一 边 上 大 学 , 一 边\n做 vlogger, 如 果 你 上 大 学 , 你 会 有 好 工 作 。\n哥 哥 国 宏\n一 14 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p15_ocr.txt =====\n(a) _Why does the younger sister want to be a vlogger? 2\n(b) How does the older brother try to convince the younger sister to change her 5\nmind? Support your answer with reference to the text.\nEnd of\n~15-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p16_ocr.txt =====\n~16—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p17_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nH H ntre Number\nChinese Beginners Centre Numbe\nsection —Wrtingin chinese 。 I | | | I I I |\nPart A - 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of vocabulary and language structures in Chinese"
+  },
+  {
+   "id": "cb202217",
+   "year": 2022,
+   "number": "17",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Write a message to your parents to explain why you will come home late tonight. Write\napproximately 50 characters in CHINESE.\n2152 _17-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p18_ocr.txt ====="
+  },
+  {
+   "id": "cb202218",
+   "year": 2022,
+   "number": "18",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Your friend is going to move to your neighbourhood. Write an email to describe your\nneighbourhood to them. Write approximately 100 characters in CHINESE.\n~18-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p19_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nH H ntre Number\nChinese Beginners Centre Numbe\nSection II (continued PTET ET Ey\nPart B - 10 marks\nAttempt either"
+  },
+  {
+   "id": "cb202219",
+   "year": 2022,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "or\nor\n你 马 上 要 中 学 毕 业 了 , 你 要 在 学 校 大 会 上 说 说 你 的 高 中 生 活 。 写 这 篇 讲 话 。\nYou are graduating from high school. You have been invited to share some of your experiences\nof high school at a school assembly. Write the script of your talk.\nOR"
+  },
+  {
+   "id": "cb202220",
+   "year": 2022,
+   "number": "20",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "2150\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p2_ocr.txt =====\nSection I — Listening\nThis section should take approximately 40 minutes\nYou will hear TEN texts. Each text will be read twice. There will be a pause after the first\nreading in which you may make notes. However, you may make notes at any time. You will be\ngiven adequate time after the second reading to complete your answer. Answer the questions\nin ENGLISH in the spaces provided. These spaces provide guidance for the expected length of\nresponse. In the case of multiple-choice questions, tick the box that corresponds to the correct\nresponse. You may proceed to Section II as soon as you have finished\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 150 characters in CHINESE.\nYour answer will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of a range of vocabulary and language structures in Chinese\n你 刚 刚 从 中 国 旅 行 回 澳 大 利 亚 , 你 要 在 学 校 大 会 上 说 说 你 的 中 国 旅 行 。 写 这 篇 讲 话 。\nYou have just returned to Australia from a tour of China. You have been invited to share your\ntravel experiences at a school assembly. Write the script of your talk.\n2153 _19—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2022_p20_ocr.txt =====\nQuestion stempicd|\n_ 20 -"
+  },
+  {
+   "id": "cb202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhat is the purpose of this text? 2 | (These notes\nwill NOT be\nPeer eee eee eee eee eee eee eee eee eee er eee ree eeeeeeerere eer erererererererer ere rer ere rer errr ere rere rere rere rere rey marked.)"
+  },
+  {
+   "id": "cb202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Describe Xiaoyu’s older sister. 2"
+  },
+  {
+   "id": "cb202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Use the information provided in the announcement to complete the 4\ntable.\n| Pays [ Aavres 。\nWednesday Free/nothing\n一 2 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p3_ocr.txt ====="
+  },
+  {
+   "id": "cb202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhere is this conversation taking place? 1 | (These notes\nwill NOT be\n[ ] A. On the bus marked.)\n[ ] B. At the park\n[ ] C. On the train\n[ ] D. At the bus stop"
+  },
+  {
+   "id": "cb202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain what Dazhang decides to do on his birthday. 3"
+  },
+  {
+   "id": "cb202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Is Peter likely to choose to study Chinese in Year 11? Justify your 3\nanswer with reference to the text.\n一 3 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p4_ocr.txt ====="
+  },
+  {
+   "id": "cb202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nSummarise the reasons why the female speaker may move house. 3 | (These notes\nwill NOT be\nbd Pere eee eee eee e eee eee eee eee eer eee rere rere rere rere rere eee er ee ere ree er eee rere rer ere rer eee rere rere eer ere ere marked.)"
+  },
+  {
+   "id": "cb202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain why the two speakers made the decision. 3"
+  },
+  {
+   "id": "cb202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "How does Xiaohong influence Dazhong’s decision? 4\n_4 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p5_ocr.txt ====="
+  },
+  {
+   "id": "cb202310",
+   "year": 2023,
+   "number": "10",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": ".\nCandidate’s\nNotes\nWho would be interested in going to this restaurant? Justify your 5 | (These notes\nanswer with reference to the text. will NOT be\nmarked.)\n一 5 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p6_ocr.txt =====\n_6-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p7_ocr.txt =====\n_7-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p8_ocr.txt =====\n_ 8 L\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p9_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\n。 。 ntre Number\nChinese Beginners Centre Numbe\nSection It — Reading TUT tT yy\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "cb202311",
+   "year": 2023,
+   "number": "11",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the question that follows.\n美 丽 的 舞 会\n时 间 : 十 月 九 号 晚 上 七 点\n地 点 KR\n请 带 游 泳 衣 。\nComplete the table using the information from the invitation. 3\nwaama |\n2151 - 9 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p10_ocr.txt ====="
+  },
+  {
+   "id": "cb202312",
+   "year": 2023,
+   "number": "12",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n同 学 们 , 明 天 下 午 三 点 在 英 语 教 室 ,\n白 老 师 会 和 你 们 说 说 十 二 年 级 后 可\n以 做 什 么 , 请 大 家 来 。\n小 华 : 山 山 , 你 想 一 起 去 听 听 吗 》 明 年 我 想 去 美 国 上 大 学 ,\n你 明 年 想 做 什 么 ?\n山 山 : 我 不 知 道 明 年 做 什 么 。 我 想 打 工 , 也 想 上 大 学 , 但\n是 不 知 道 学 什 么 。\n小 华 : 上 大 学 也 可 以 打 工 。 你 很 喜 欢 运 动 , 打 篮 球 打 得 很\n好 , 跑 步 也 很 快 , 可 以 学 习 当 体 育 老 师 。\n山 山 : 你 说 得 对 !1 我 们 一 起 去 听 白 老 师 说 什 么 吧 ?\n(a) What is the purpose of the notice? 1\n(b) Explain what Shanshan is most likely to do next year. 2\n~10-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p11_ocr.txt ====="
+  },
+  {
+   "id": "cb202313",
+   "year": 2023,
+   "number": "13",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n来 宠 物 咖 啡 店 吧 !\n你 喜 欢 小 狗 、 小 猫 吗 ?\n你 喜 欢 喝 咖 啡 吗 ?\n我 们 有 最 可 爱 的 小 动 物 也 有 好 喝 的 咖 啡 !\n你 可 以 带 你 家 的 小 猫 、 小 狗 一 起 来 !\n你 不 在 家 的 时 候 , 你 的 宠 物 可 以 住 在 这 里 。\n我 们 这 里 好 吃 , 好 玩 , 又 不 贵 !\n现 在 来 , 咖 啡 + 宠 物 蛋 糕 只 要 五 块 钱 !\n(a) Who is the target audience for this advertisement? 2\n(b) What makes this advertisement appealing for its audience? 3\n一 11 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p12_ocr.txt ====="
+  },
+  {
+   "id": "cb202314",
+   "year": 2023,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n(om) 听 说 你 下 个 月 会 去 中 国 旅 行 。\n是 。 我 非 常 想 去 北 京 看 长 城 , 也 很 愚 和\n中 国 人 说 汉 语 。\n北 京 十 二 月 非 常 冷 。 你 真 的 要\n去 吗 3\n我 喜 欢 冷 的 天 气 , 也 喜 欢 下 雪 。 (sm)\n可 是 天 气 冷 , 你 生 病 了 , 怎 么\n办 ?\n我 妈 妈 的 朋 友 住 在 北 京 , 她 会 帮 我 。 (am)\nB\n今 年 我 在 上 班 , 我 有 钱 。 而 且 我 住 在\n我 妈 妈 的 朋 友 家 , 不 用 钱 。\n圃 你 不 喜 欢 吃 中 国 菜 , 对 吗 ?\n我 不 喜 欢 吃 辣 的 菜 , 但 是 我 喜 欢 吃 包 子 ,\n饺 子 和 面 条 。\n一 12 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p13_ocr.txt =====\n(a) What does Mary want to do in China? 2\n(b) How does Mary ease Xiaoming’s concerns? 4\nEnd of\n_13-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p14_ocr.txt ====="
+  },
+  {
+   "id": "cb202315",
+   "year": 2023,
+   "number": "15",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\nEmail 1\n[ 之 更 曲 | 已 BL B|4Q 面 |\n你 说 你 想 找 奶 茶 店 的 工 作 , 我 看 到 了 这 个 工 作 。 我 想 你 会 做 得 好 。\n你 要 去 吗 ?\n明 明\n0\n奶 茶 店 打 工\n© 星 期 六 和 星 期 天 , 早 上 八 点 到 中 午 十 二 点\n。 友 好 , 喜 欢 说 话\n。 会 说 中 文 , 会 做 奶 茶\n。 一 小 时 三 十 五 块\nEmail 2\n匹 乌 鸡 曲 | 巳 园 上 兰 | @ Q 面 |\n明 明 :\n谢 谢 你 ! 我 党 得 这 个 工 作 很 好 。 我 去 年 在 奶 茶 店 工 作 。\n我 学 中 文 五 年 了 , 所 以 我 中 文 说 得 很 好 。 星 期 六 和 星 期 天 我 只 在\n家 看 电 视 和 睡 觉 。 而 且 我 很 喜 欢 交 新 朋 友 , 大 家 都 爱 和 我 一 起 玩 。\n我 和 朋 友 一 起 玩 的 时 修 , 常 常 没 有 钱 , 爸 爸 妈 妈 也 不 给 我 钱 去 玩 。\n祝 好 ,\n_ 14 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p15_ocr.txt =====\n(a) Why is Mingming writing to Lanlan? 2\n(b) Assess Lanlan’s suitability for the opportunity. Justify your answer with 5\nreference to the text.\nEnd of\n~15-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p16_ocr.txt ====="
+  },
+  {
+   "id": "cb202316",
+   "year": 2023,
+   "number": "16",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\nI - 巳 - 园 团 合 1@ 团 @@ 虫 - 粤 团 园\n[ 命 J 日 月 学 们 , 作 们 要 走 路 上 学 , 对 体 们 的 身 体 好\n圈〕 为 什 么 老 师 和 爸 爸 妈 妈 都 要 我 们 走 路 上 学 ? 我 不 喜 欢 走 路 ,\n我 喜 欢 坐 火 车 , 又 快 又 方 便 。 而 且 十 二 年 级 的 书 很 多 , 走 路\n会 很 累 。 如 果 学 校 离 家 太 远 , 上 学 要 花 很 多 时 间 。\n匾〕 走 路 很 好 , 可 以 一 边 听 歌 , 一 边 运 动 。 蛇 然 走 路 花 时 间 , 但\n是 对 身 休 好 。 现 在 学 习 不 用 书 了 , 我 们 上 课 和 做 作 业 都 用 电 脑 。\n我 们 一 起 走 路 上 学 吧 ?\n(a) What is the teacher suggesting the students do? 1\n(b) Compare Liming’s and Xiaomei’s points of view on this issue. 5\n~16—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p17_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nsecton nt — writigincrince = LLL I | || |]\nPart A - 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of vocabulary and language structures in Chinese"
+  },
+  {
+   "id": "cb202317",
+   "year": 2023,
+   "number": "17",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "You received some money from your grandparents during Chinese New Year. Write a message\nto thank them. Write approximately 50 characters in CHINESE.\n2152 _17-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p18_ocr.txt ====="
+  },
+  {
+   "id": "cb202318",
+   "year": 2023,
+   "number": "18",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "You are going to the airport to pick up an exchange student who you have never met. Write an\nemail to him/her describing your appearance. Write approximately 100 characters in CHINESE.\n~18—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p19_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nSection IT (continued TUT tT yy\nPart B - 10 marks\nAttempt either"
+  },
+  {
+   "id": "cb202319",
+   "year": 2023,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "or\nor\n你 参 加 了 新 的 课 外 活 动 。 给 你 的 好 朋 友 写 一 封 信 , 说 说 你 的 新 朋 友 。\nYou have joined a new extracurricular activity. Write a letter to your best friend describing\na new friend you have met at the activity.\nOR"
+  },
+  {
+   "id": "cb202320",
+   "year": 2023,
+   "number": "20",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "2150\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p2_ocr.txt =====\nSection I 一 Listening\nThis section should take approximately 40 minutes\nYou will hear TEN texts. Each text will be read twice. There will be a pause after the first\nreading in which you may make notes. However, you may make notes at any time. You will be\ngiven adequate time after the second reading to complete your answer. Answer the questions\nin ENGLISH in the spaces provided. These spaces provide guidance for the expected length of\nresponse. In the case of multiple-choice questions, tick the box that corresponds to the correct\nresponse. You may proceed to Section II as soon as you have finished\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 150 characters in CHINESE.\nYour answer will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of a range of vocabulary and language structures in Chinese\n你 的 中 国 朋 友 要 来 澳 大 利 亚 旅 游 。 给 他 / 她 写 一 封 信 , 说 说 他 / 她 可 以 在 澳 大 利 亚 做\n什 么 。\nYour friend from China is coming to visit Australia. Write a letter to him/her describing what\nhe/she can do in Australia.\n2153 _ 19 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2023_p20_ocr.txt =====\nQuestion stempicd|\n_ 20 -"
+  },
+  {
+   "id": "cb202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhy is Longlong unable to go to the park with Meimei? 2 | (These notes\nwill NOT be\n【 marked.)"
+  },
+  {
+   "id": "cb202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What suggestions did Xiaohong make? 2"
+  },
+  {
+   "id": "cb202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What will Shanshan and Mingming do on Saturday? 2\n一 2 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p3_ocr.txt ====="
+  },
+  {
+   "id": "cb202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhy does Dawei disagree with his father? 2 | (These notes\nwill NOT be\nPeer eee eee eee eee eee eee eee eee eee er eee ree eeeeeeerere eer erererererererer ere rer ere rer errr ere rere rere rere rere rey marked.)"
+  },
+  {
+   "id": "cb202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "How likely is it that Dali will get this job? Support your answer with 3\nreference to the text."
+  },
+  {
+   "id": "cb202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain why Lily wants to change subjects next year. 3"
+  },
+  {
+   "id": "cb202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Complete the table of Dazhong’s activities for tomorrow. 3\nsom fT\n0\n| Paying badninon\n一 3 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p4_ocr.txt ====="
+  },
+  {
+   "id": "cb202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nSummarise what students need to do after listening to the talk by 4 | (These notes\nMr Li. will NOT be\nmarked.)"
+  },
+  {
+   "id": "cb202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "How does Mary’s decision change during the conversation? Support 4\nyour answer with reference to the text."
+  },
+  {
+   "id": "cb202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": ".\nCompare the two speakers’ work experience. 5\n_4 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p5_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nH H ntre Number\nChinese Beginners Centre Numbe\nSection It — Reading TUT tT yy\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "cb202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the question that follows.\n第 一 中 学 乒 乓 球 大 赛\n日 期 : 三 月 七 日\n地 点 : 学 校 礼 堂\n请 带 十 块 钱 给 老 师\nComplete the table using the information from the notice. 2\nsamy Hal\nretin | 一\n2151 一 3 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p6_ocr.txt ====="
+  },
+  {
+   "id": "cb202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n(om) 我 明 年 不 想 学 中 文 了 , 你 呢 ?\n我 明 年 要 学 中 文 、 数 学 和 法 语 , 小 周 , 你 为\n什 么 不 学 中 文 了 ?\n我 中 文 考 试 第 五 名 , 其 他 课 都 第 一\n名 。 爸 爸 也 说 学 中 文 没 有 用 。\n中 文 班 有 三 十 个 人 , 第 五 名 很 好 咪 ! 霆鄄\n去 年 我 中 文 考 试 都 是 第 一 名 , 今 年\n中 文 作 业 很 多 , 我 没 时 间 做 。\n可 是 你 想 当 医 生 , 会 说 中 文 很 有 用 ! 今 年 你\n生 病 了 , 一 个 月 没 来 上 学 , 所 以 考 第 五 。\nS\n_6 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p7_ocr.txt =====\n(a) What is the relationship between Xiaozhou and Amy? 1\n| ] A. Classmates\n[ ] B. Doctor and patient\n[ ] “C. Father and daughter\n|_| D. Teacher and student\n(b) How does Amy encourage Xiaozhou to change his mind? 3\nEnd of\n一 7 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p8_ocr.txt ====="
+  },
+  {
+   "id": "cb202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n- 皿 死 ]\n明 天 没 有 火 车 去 城 里 , 要 去 城 里 的 人 要 坐 四 六 七 路\n公 共 汽 车 。\n四 六 七 路 公 共 汽 车 站 在 火 车 站 对 面 , 百 货 商 店 的 旅 边 。\n小 王 : 老 陈 , 明 天 要 一 起 去 城 里 吗 》 我 给 妈 妈 买 手 机 。\n老 陈 : 可 是 明 天 没 有 火 车 , 只 有 去 城 里 的 公 共 汽 车 。 我 们 开 车 去 吧 。\n小 王 : 开 车 去 城 里 很 贵 , 但 是 很 方 便 。\n老 陈 : 公 共 汽 车 太 慢 了 , 空 气 也 不 好 。\n小 王 : 你 说 得 对 , 让 我 想 想 吧 。\n~8-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p9_ocr.txt =====\n(a) Where is the bus stop? 1\nDepartment\nStore\n_\n[ ] A. A\n[| |] B. B\n[|] c C\n[ ] D. D\n(b) Explain what Xiaowang is most likely to do. 3\nEnd of\n_ 9 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p10_ocr.txt ====="
+  },
+  {
+   "id": "cb202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n=> @AA QHG9B-SaR78\n(Rp) 想 一 起 去 马 朱 西 亚 玩 合 》 我 们 可 以 一 起 学 中 文 , 一 起 去 吃 好\n吃 的 东 西 , 叉 能 去 好 玩 、 美 丽 的 地 方 。 想 去 的 人 可 以 给 我 打\n电 话 , 我 的 电 话 是 二 四 五 七 八 九 六 。\n[AA] 我 喜 欢 学 中 文 , 我 也 喜 欢 吃 好 吃 的 东 西 , 但 是 马 来 西 亚 比\n澳 大 利 亚 更 热 , 我 不 喜 欢 热 的 天 气 。\n〔亘〕 太 好 了 ! 马 来 西 亚 的 东 西 很 好 吃 , 马 来 西 亚 人 很 友 好 , 都 会\n说 中 文 。\n〔趸〕 我 很 喜 欢 很 热 的 天 气 , 也 喜 欢 美 丽 的 风 景 , 我 们 也 可 以 学 习\n马 来 西 亚 的 中 国 文 化 。\n(a) What decision is Tiantian most likely to make? Justify your answer with 2\nreference to the text.\n(b) Who are likely to join Anna’s proposed plan? Justify your answer with reference 3\nto the text.\n~10-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p11_ocr.txt ====="
+  },
+  {
+   "id": "cb202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\nl=-> @AA QHG9B-Sa7H\n新 的 狗 公 园\n大 家 好 !\n我 们 有 新 的 狗 公 园 了 ! 狗 公 园 在 图 书 馆 的 左 边 。 狗 公 园 非 常 大 ,\n有 很 多 狗 可 以 喝 水 的 地 方 , 还 有 一 个 小 游 泳 池 , 你 们 的 狗 会 很 开 心 1\n评 论 :\nJamie:\n图 书 馆 是 学 习 的 地 方 , 狗 公 园 离 图 书 馆 不 远 , 很 吵 , 学 生 不 能\n学 习 。\nAlice:\n太 方 便 了 ! 我 可 以 和 朋 友 们 带 狗 在 狗 公 园 玩 儿 , 我 不 用 早 上 带\n狗 去 走 路 了 , 狗 还 可 以 游 泳 。\n(a) Describe the new facility. 3\n(b) Compare Jamie’s and Alice’s views on this news. 5\n一 11 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p12_ocr.txt ====="
+  },
+  {
+   "id": "cb202416",
+   "year": 2024,
+   "number": "16",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\nEmail 1\nRR 幼 曲 | 白 BL 8|4Q 面 |\n亲 爱 的 娜 娜 ,\n你 好 吗 ?》 去 年 在 墨 尔 本 和 你 们 学 校 的 学 生 打 网 球 , 很 开 心 认 识 了\n你 和 你 的 朋 友 们 !\n中 国 的 大 学 生 每 天 都 学 习 和 打 工 , 没 有 时 间 玩 和 运 动 , 所 以 我 不\n想 在 中 国 上 大 学 。 我 的 爸 爸 妈 妈 要 我 在 中 国 上 大 学 。 我 喜 欢 打 网 球 。\n我 十 二 年 级 考 试 后 想 去 墨 尔 本 打 网 球 比 赛 。\n在 澳 大 利 亚 上 大 学 有 时 间 运 动 吗 ? 澳 大 利 亚 的 十 二 年 级 学 生 都 要\n上 大 学 吗 ?\n祝 好 ,\n花 花\nEmail 2\n匹 后 幼 鸡 | 白 BL8|14Q fi |\n亲 爱 的 好 友 花 花 ,\n你 好 吗 ? 我 很 喜 欢 和 你 打 网 球 , 很 快 乐 。 你 要 来 澳 大 利 亚 打 网 球\nmh? ARIF!\n澳 大 利 亚 的 十 二 年 级 学 生 和 大 学 生 都 可 以 一 边 打 工 , 一 边 运 动 。\n我 爸 爸 妈 妈 说 , 我 可 以 不 上 大 学 , 做 自 己 喜 欢 的 事 。 但 是 , 我 喜 欢 学\n习 , 学 习 很 快 乐 , 我 想 上 大 学 。 如 果 我 想 一 边 上 大 学 , 一 边 打 网 球 比\n赛 , 也 可 以 。\n我 们 一 起 去 墨 尔 本 打 网 球 比 赛 好 吗 ?\n祝 好 ,\n娜 娜\n一 12 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p13_ocr.txt =====\n(a) Explain Huahua’s and Nana’s relationship. 2\n(b) Why are Huahua and Nana having this discussion? Justify your answer with 5\nreference to the text.\nEnd of\n_13-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p14_ocr.txt =====\n_ 14 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p15_ocr.txt =====\n一 15 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p16_ocr.txt =====\n_16—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p17_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nsecton nt — writigincrince = LLL I | || |]\nPart A - 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of vocabulary and language structures in Chinese"
+  },
+  {
+   "id": "cb202417",
+   "year": 2024,
+   "number": "17",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Your sister is going to China soon. Write a message to remind her to buy gifts for the family.\nWrite approximately 50 characters in CHINESE.\n2152 _17-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p18_ocr.txt ====="
+  },
+  {
+   "id": "cb202418",
+   "year": 2024,
+   "number": "18",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "You want to go to a Chinese cultural event in the summer holiday. Write an email to your\nfriends inviting them to go with you. Write approximately 100 characters in CHINESE.\n~18—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p19_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nSection IT (continued TUT tT yy\nPart B - 10 marks\nAttempt either"
+  },
+  {
+   "id": "cb202419",
+   "year": 2024,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "or\nor\n你 在 学 校 学 习 中 文 两 年 了 。 给 你 的 好 朋 友 写 一 封 信 , 说 说 为 什 么 学 中 文 。\nYou have been learning Chinese at school for two years. Write a letter to your best friend about\nwhy you chose to learn Chinese.\nOR"
+  },
+  {
+   "id": "cb202420",
+   "year": 2024,
+   "number": "20",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "2150\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p2_ocr.txt =====\nSection I 一 Listening\nThis section should take approximately 40 minutes\nYou will hear TEN texts. Each text will be read twice. There will be a pause after the first\nreading in which you may make notes. However, you may make notes at any time. You will be\ngiven adequate time after the second reading to complete your answer. Answer the questions\nin ENGLISH in the spaces provided. These spaces provide guidance for the expected length of\nresponse. In the case of multiple-choice questions, tick the box that corresponds to the correct\nresponse. You may proceed to Section II as soon as you have finished\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 150 characters in CHINESE.\nYour answer will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of a range of vocabulary and language structures in Chinese\n你 参 加 了 悉 尼 的 中 国 文 化 日 。 写 一 封 信 给 你 在 中 国 的 好 朋 友 , 谈 谈 你 的 一 天 。\nYou participated in a Chinese cultural day in Sydney. Write a letter to your friend in China to\ndescribe your day.\n2153 _ 19 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2024_p20_ocr.txt =====\nQuestion stempicd|\n_ 20 -"
+  },
+  {
+   "id": "cb202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhat is the purpose of the message? 2 | (These notes\nwill NOT be\n【 marked.)"
+  },
+  {
+   "id": "cb202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Complete the table using information from the conversation. 2\nesi for somone |\now gertre |\nWear school uniform\n一 2 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p3_ocr.txt ====="
+  },
+  {
+   "id": "cb202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nExplain what the students should bring with them to Guangzhou. 3 | (These notes\nwill NOT be\nPeer eee eee eee eee eee eee eee eee eee er eee ree eeeeeeerere eer erererererererer ere rer ere rer errr ere rere rere rere rere rey marked.)"
+  },
+  {
+   "id": "cb202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "What will the friends do on Saturday afternoon? 1\n[ ] A. Stay at home\n|_| B. Gotoamovie\n[ ] ©. Study at the library\n[ ] D. Go shopping together"
+  },
+  {
+   "id": "cb202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain why the two speakers made the decision. 3\n一 3 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p4_ocr.txt ====="
+  },
+  {
+   "id": "cb202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nWhat are Dadong’s reasons for his decision? 3 | (These notes\nwill NOT be\n【 marked.)"
+  },
+  {
+   "id": "cb202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Summarise Shanshan’s study tips. 3\n_4 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p5_ocr.txt ====="
+  },
+  {
+   "id": "cb202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Candidate’s\nNotes\nHow does Mary convince her father to change his mind? Support 4 | (These notes\nyour answer with reference to the text. will NOT be\nmarked.)"
+  },
+  {
+   "id": "cb202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Who would be interested in this school activity? Support your answer 4\nwith reference to the text.\n一 5 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p6_ocr.txt ====="
+  },
+  {
+   "id": "cb202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": ".\nCandidate’s\nNotes\nHow likely is David to accept Ms Zhang’s suggestion? Support your 5 | (These notes\nanswer with reference to the text. will NOT be\nmarked.)\n_6 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p7_ocr.txt =====\n_7-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p8_ocr.txt =====\n_ 8 L\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p9_ocr.txt =====\n|巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\n。 。 ntre Number\nChinese Beginners Centre Numbe\nSection It — Reading TUT tT yy\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response."
+  },
+  {
+   "id": "cb202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the question that follows.\n(8) 秋 美 , 这 个 星 期 天 你 有 时 间 吗 ?》 你 想 做 什 么 ?\n这 个 星 期 天 我 有 时 间 , 我 要 去 中 国 城 。 我 们 一\n起 去 吧 ? 上 午 九 点 我 们 在 中 国 书 店 见 , 好 吗 ?\n(0) Lanta\nComplete the table using the information from the text. 3\ne | Visiting Chinatown\nPaccwmet |\nTnewmes |\n2191 - 9 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p10_ocr.txt ====="
+  },
+  {
+   "id": "cb202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\neke 吕 幼 鸿 | 日 团 万 丑 | @ Q ii |\n兰 兰 :\n我 们 明 天 一 起 去 坐 新 火 车 吧 ! 我 知 道 你 和 你 哥 哥 都 非 常 喜 欢 火 车 ,\n你 们 住 在 日 本 的 时 候 常 常 跟 家 人 一 起 去 火 车 站 看 火 车 。 我 朋 友 上 个 星 期\n五 坐 了 新 火 车 , 他 说 新 火 车 又 干 净 又 漂 亮 , 你 一 定 会 喜 欢 。\n明 天 早 上 九 点 新 火 车 站 见 , 好 吗 ?\n小 白\n(a) What is Xiaobai proposing? 1\n(b) Explain why Xiaobai thinks Lanlan will like this activity. 2\n~10-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p11_ocr.txt ====="
+  },
+  {
+   "id": "cb202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n文 文 :\n今 天 下 午 两 点 半 我 和 爸 爸 会 去 中 国 看 爷 爷 , 不 能 开 车 接 你 。\n下 课 后 你 走 路 去 明 明 家 。 我 和 明 明 的 爸 爸 妈 妈 说 了 这 几 天 你 住 在\n他 家 。 你 们 晚 上 不 要 玩 电 脑 游 戏 , 早 一 点 睡 觉 。 明 明 的 爸 爸 每 天\n在 书 房 工 作 , 你 不 要 大 声 说 话 。 明 明 的 妹 妹 喜 欢 游 泳 , 每 天 下 午\n放 学 以 后 你 要 跟 她 一 起 游 泳 。\n妈 妈\n星 期 四 早 上 八 点\n(a) What is the change made to Wenwen’s routine today? 2\n(b) Outline what Wenwen’s mother wants Wenwen to do for the next few days. 3\n一 11 二\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p12_ocr.txt ====="
+  },
+  {
+   "id": "cb202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n亲 爱 的 老 师 们 :\n大 家 好 , 我 是 王 春 。 我 在 中 国 大 学 教 英 文 三 年 了 , 还 认 识 了 很\n多 新 朋 友 , 我 很 开 心 。\n我 的 大 学 在 找 新 的 英 文 老 师 。 你 也 想 去 中 国 大 学 教 英 文 吗 ?\n如 果 你 会 中 文 , 也 会 英 文 , 你 就 可 以 在 中 国 教 英 文 。 大 学 生 用 电 脑\n上 课 , 你 要 会 用 电 脑 上 课 。 很 多 中 国 大 学 生 想 去 外 国 工 作 , 你 要 会\n教 外 国 文 化 。 他 们 很 喜 欢 英 文 歌 , 所 以 你 得 会 唱 英 文 歌 。 学 生 也 喜\n欢 个 性 好 的 老 师 , 如 果 你 很 友 好 也 很 外 向 , 他 们 会 喜 欢 你 。\n谢 谢 !\n(a) What has made Wangchun so happy? 1\n(b) Who would be a suitable candidate for this position? Support your answer with 5\nreference to the text.\n一 12 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p13_ocr.txt ====="
+  },
+  {
+   "id": "cb202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n| 一 - 巳 - 园 出 吾 1@ 团 团 蚊 - 尹 团 围\n高 考 以 后 我 想 去 中 国 旅 行 , 我 不 知 道 去 哪 里 好 玩 。 你 们 觉 得 我 去\n唧 个 城 市 比 较 好 ?\n[ 南 南 ] 去 年 12 月 我 和 家 人 去 了 西 安 , 非 常 冷 , 我 和 妈 妈 都 感 冒 了 。 我\n真 不 喜 欢 西 安 的 冬 天 。 中 国 南 边 的 天 气 比 西 安 好 , 你 应 该 去 南 方 。\n我 冬 天 去 过 西 安 旅 行 , 天 气 太 冷 了 , 我 想 去 别 的 地 方 。\n(+P PA) 我 是 广 东 人 , 中 国 的 南 方 天 气 很 好 , 不 下 雪 。 南 方 人 很 友 好 , 你\n可 以 来 南 方 学 习 汉 语 和 中 国 文 化 。\n[ 南 南 ] 真 的 , 我 也 是 南 方 人 , 南 方 有 很 多 很 美 的 山 和 海 。\n南 方 的 东 西 好 吃 吗 3\n[ 雨 酊 南 方 的 东 西 不 辣 , 挺 好 吃 的\n(a) Why does Peter start a post on this forum? 2\n(b) What is Peter likely to decide? Support your answer with reference to the text. 4\n~13-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p14_ocr.txt ====="
+  },
+  {
+   "id": "cb202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Read the text and then answer the questions that follow.\n氏 凸 鱼 曲 | 日 RL 上 | 外 Q ii |\n马 克 ,\n我 听 说 你 上 个 星 期 从 美 国 回 悉 尼 了 , 我 很 开 心 。 你 好 吗 ?\n今 年 十 一 月 悉 尼 还 会 有 音 乐 节 , 我 们 去 年 一 起 去 了 悉 尼 音 乐 节 ,\n大 家 都 很 喜 欢 我 们 的 音 乐 。 我 想 再 和 你 一 起 去 这 个 音 乐 节 做 音 乐 !\n我 听 说 去 年 你 在 美 国 、 中 国 和 日 本 也 做 了 很 多 音 乐 , 大 家 都 很 喜\n欢 你 的 音 乐 。 他 们 最 喜 欢 你 的 歌 《 秋 天 里 》。 你 今 年 做 了 很 多 音 乐 吗 ?\n我 也 做 了 很 多 歌 。 十 一 月 的 音 乐 节 要 更 多 的 音 乐 人 , 我 们 一 定 会 做 得\n很 好 1 我 们 一 起 申 请 * 吧 !\n龙 龙\n| 音 乐 节 海 报 吉\n| 新 悉 尼 音 乐 节 需 要 你 ! |\n三 你 在 音 乐 节 上 做 过 音 乐 吗 ?\n熹 你 有 很 多 自 己 的 音 乐 合 3 熹\n… 很 多 不 同 国 家 的 人 喜 欢 你 的 音 乐 吗 ?\n… 十 一 月 三 日 星 期 日 下 午 五 点 见 ! …\n| RY re!\n“ wig apply for\n“ 海 报 poster\n_ 14 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p15_ocr.txt =====\n(a) Why has Longlong written to Mark? 2\n(b) Are they likely to be selected for this event? Support your answer with reference 5\nto the text.\nEnd of\n~15-—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p16_ocr.txt =====\n_16—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p17_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nsecton nt — writigincrince = LLL I | || |]\nPart A - 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of vocabulary and language structures in Chinese"
+  },
+  {
+   "id": "cb202517",
+   "year": 2025,
+   "number": "17",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "You and your friend are going to watch a sporting event this weekend. Write a message\nreminding your friend of the arrangements for the weekend. Write approximately 50 characters\nin CHINESE.\n2192 _17-\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p18_ocr.txt ====="
+  },
+  {
+   "id": "cb202518",
+   "year": 2025,
+   "number": "18",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "You have just finished your first day of a new part-time job at a local shop. Write a diary entry\nreflecting on your experience. Write approximately 100 characters in CHINESE.\n~18—\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p19_ocr.txt =====\n_巫_ HIGHER SCHOOL CERTIFICATE EXAMINATION 口〕〕〕〕\nChinese Beginners\nSection IT (continued TUT tT yy\nPart B - 10 marks\nAttempt either"
+  },
+  {
+   "id": "cb202519",
+   "year": 2025,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "or\nor\n你 打 算 帮 家 人 开 生 日 会 。 给 你 的 家 人 写 一 封 邮 件 , 说 说 你 的 安 排 。\nYou are planning a birthday party for a family member. Write an email to your family about\nyour plan.\nOR"
+  },
+  {
+   "id": "cb202520",
+   "year": 2025,
+   "number": "20",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "2190\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p2_ocr.txt =====\nSection I 一 Listening\nThis section should take approximately 40 minutes\nYou will hear TEN texts. Each text will be read twice. There will be a pause after the first\nreading in which you may make notes. However, you may make notes at any time. You will be\ngiven adequate time after the second reading to complete your answer. Answer the questions\nin ENGLISH in the spaces provided. These spaces provide guidance for the expected length of\nresponse. In the case of multiple-choice questions, tick the box that corresponds to the correct\nresponse. You may proceed to Section II as soon as you have finished\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 150 characters in CHINESE.\nYour answer will be assessed on how well you:\ne communicate relevant ideas and information\ne write text appropriate to audience, purpose and context\ne structure and sequence ideas and information\ne demonstrate control of a range of vocabulary and language structures in Chinese\n你 的 朋 友 要 从 中 国 来 澳 大 利 亚 上 学 , 给 你 的 朋 友 写 一 封 邮 件 , 说 说 澳 大 利 亚 的 学 校\n生 活 。\nYour friend from China is coming to Australia to attend school. Write an email to your friend\ntelling them about school life in Australia.\n2193 _ 19 一\n===== C:/Users/adamq/AppData/Local/Temp/opencode\\ex2025_p20_ocr.txt =====\nQuestion stempicd|\n_ 20 -"
+  }
+ ]
+}

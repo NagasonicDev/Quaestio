@@ -1,0 +1,760 @@
+{
+ "course_id": "english-standard",
+ "course_name": "English Standard",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Understanding / The power of language to shape and influence meaning"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Understanding / The ways mode, medium and context shape meaning"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Understanding / The ways various language features, including figurative elements, shape ideas, perspectives and experiences"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Understanding / The ways close analysis of language and literary devices informs interpretations of familiar and unfamiliar texts"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Understanding / The ways personal experience is transformed into imaginative texts across a range of purposes, audiences and contexts"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Understanding / The similarities and differences in language forms, features and structures within and between texts"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Responding / Compose persuasive, discursive and imaginative texts that explore increasingly complex ideas"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Responding / Compose texts that make thematic and stylistic connections with other texts"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Responding / Compose texts that explore a range of values and perspectives, including their own"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Responding / Compose texts that integrate different modes and mediums for a range of purposes and audiences"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Responding / Draft, edit, revise and refine texts for a range of purposes and audiences"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Responding / Use appropriate metalanguage to assess and reflect on the value of writing"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Reading to write: Transition to English Standard / Responding / Use accurate spelling, punctuation, syntax and metalanguage in creating critical and creative texts"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Contemporary possibilities / Understanding / The language features, text structures and stylistic choices that influence narratives from a range of modes and mediums, including digital texts"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Contemporary possibilities / Understanding / The ways different mediums and technologies shape meaning and influence storytelling"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Contemporary possibilities / Understanding / The ways composers transform and adapt texts for different contexts, purposes and audiences, including appropriations in popular culture"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Contemporary possibilities / Understanding / The impact of intertextuality on purpose, audience and content"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Contemporary possibilities / Understanding / The values and assumptions that are represented and communicated in texts from emerging modes and mediums"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Contemporary possibilities / Responding / Experiment with text structures and language features related to specific genres and modes and mediums"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Contemporary possibilities / Responding / Compose logical, ordered and cohesive texts that build effective arguments in response to the ideas generated through texts"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Contemporary possibilities / Responding / Compose critical and creative texts that reflect particular values and perspectives, including their own"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Contemporary possibilities / Responding / Compose texts that reflect on the processes of composition in different mediums and technologies"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Contemporary possibilities / Responding / Use different processes and technologies to generate, investigate, clarify, organise, refine and present information and ideas"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Close study of literature / Understanding / The ways textual forms and language features, including style, tone and point of view, shape meaning"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Close study of literature / Understanding / The relationship between language and content in a literary text"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Close study of literature / Understanding / The ways language forms, features and structure conform to, or challenge, accepted conventions"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Close study of literature / Understanding / The ways that different perspectives can affect interpretations of a text"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Close study of literature / Responding / Select, interpret and use appropriate textual evidence to support informed personal interpretations of a literary text"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Close study of literature / Responding / Compose logical, ordered and cohesive texts that build effective arguments in response to the ideas generated from a literary text"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Close study of literature / Responding / Compose critical and creative texts that reflect particular values and perspectives, including their own"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Texts and human experiences / Understanding / The language, forms and features of texts that shape meaning for different audiences and purposes in familiar and unfamiliar texts"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Texts and human experiences / Understanding / The language, forms and features of texts that shape a range of perspectives, personal and public worlds, and diverse human experiences"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Texts and human experiences / Understanding / The aesthetic qualities of texts and the power of language to express personal ideas and experiences"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Texts and human experiences / Understanding / Language used for making connections, questioning, affirming, challenging and speculating about texts"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Texts and human experiences / Understanding / The evaluative language and metalanguage used to make informed judgements about texts and express personal perspectives"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Texts and human experiences / Responding / Develop creative, informed and sustained interpretations of texts, supported by close textual analysis"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Texts and human experiences / Responding / Compose creative and critical texts that affirm or challenge ideas, values and perspectives represented in a range of texts"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Texts and human experiences / Responding / Compose texts using structures, language features and stylistic elements for specific audiences, to reinterpret ideas and perspectives"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Language, identity and culture / Understanding / The ways personal, social, cultural and historical contexts shape meaning in texts"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Language, identity and culture / Understanding / The ways specific language features and forms of texts influence perceptions of ourselves, other people and a range of cultural perspectives"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Language, identity and culture / Understanding / The ways mode and medium shape meaning"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Language, identity and culture / Understanding / The ways context and implicit cultural assumptions influence the perspectives and ideas of authors"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Language, identity and culture / Understanding / The ways content shapes the social, moral and ethical positions represented in texts"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Language, identity and culture / Responding / Develop an understanding of the ways language features, text structures and stylistic choices shape points of view and influence audiences"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Language, identity and culture / Responding / Use information and ideas for a range of purposes including the development of sustained, evidence-based, logical and complex arguments"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Language, identity and culture / Responding / Develop an understanding of how different perspectives, attitudes and values can be represented in texts for meaning and purpose"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Language, identity and culture / Responding / Compose informed and cohesive interpretations of texts, supported by close textual analysis"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Close study of literature / Understanding / The ways texts influence and position readers"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Close study of literature / Understanding / The ways textual forms, language and stylistic choices shape meaning"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Close study of literature / Understanding / The ways mode and medium shape meaning and influence personal responses"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Close study of literature / Understanding / The relationship between text and context"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Close study of literature / Understanding / The ways texts conform to, or challenge, accepted conventions through their textual forms, language and stylistic choices"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Close study of literature / Responding / Compose texts that demonstrate their understanding of and appreciation for how language features, form and stylistic choices are effectively integrated to shape meaning and influence responses"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Close study of literature / Responding / Consider different interpretations of texts derived from a range of perspectives"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Close study of literature / Responding / Compose informed personal interpretations of a literary text, supported by close textual analysis"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Close study of literature / Responding / Compose logical, ordered and cohesive texts that build arguments in response to the ideas generated from a literary text"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / The craft of writing / Understanding / The power of language to express ideas, perspectives and experiences"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / The craft of writing / Understanding / The forms, language features and stylistic choices that shape imaginative, discursive, persuasive and reflective texts"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / The craft of writing / Responding / Use different processes to generate, investigate, clarify, organise, refine and present information and ideas"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / The craft of writing / Responding / Use and manipulate genre in a range of modes and mediums for a range of purposes and audiences"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / The craft of writing / Responding / Compose texts by changing context, perspective or point of view, and assess the effectiveness of these changes"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / The craft of writing / Responding / Compose imaginative, discursive, persuasive and reflective texts that make thematic or stylistic connections with other texts and reflect particular values and perspectives, including their own"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / The craft of writing / Responding / Use appropriate metalanguage to assess and reflect on the ways meaning is made in their own writing and the writing of others"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / The craft of writing / Responding / Draft, reflect, edit, refine, revise and present texts for a range of purposes and audiences"
+  }
+ ],
+ "questions": [
+  {
+   "id": "es202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "Module A: Language, Identity and Culture\nTo what extent does your prescribed text disrupt assumptions about culture?\nIn your response, make close reference to your prescribed text.\nThe prescribed texts are listed on page 3."
+  },
+  {
+   "id": "es202002",
+   "year": 2020,
+   "number": "2 (a)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "(a) - Prose Fiction - M T Anderson, Feed (20 marks)\nIn what ways does Feed invite questions about resistance and conformity?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202003",
+   "year": 2020,
+   "number": "2 (b)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "(b) - Prose Fiction - Mark Haddon, The Curious Incident of the Dog in the Night-time (20 marks)\nIn what ways does The Curious Incident of the Dog in the Night-time invite questions about acceptance and prejudice?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202004",
+   "year": 2020,
+   "number": "3 (a)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Poetry",
+   "text": "(a) - Poetry - Robert Gray, Coast Road (20 marks)\nIn what ways does Robert Gray's poetry invite questions about appreciation and indifference?\nIn your response, make close reference to your prescribed text.\nThe prescribed poems are:\n* Journey, the North Coast\n* Flames and Dangling Wire\n* Harbour Dusk\n* Byron Bay: Winter\n* Description of a Walk\n* 24 Poems"
+  },
+  {
+   "id": "es202005",
+   "year": 2020,
+   "number": "3 (b)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Poetry",
+   "text": "(b) - Poetry - Oodgeroo Noonuccal (20 marks)\nIn what ways does Oodgeroo Noonuccal's poetry invite questions about loss and discovery?\nIn your response, make close reference to your prescribed text.\nThe prescribed poems are:\n* The Past\n* China . . . Woman\n* Reed Flute Cave\n* Entombed Warriors\n* Visit to Sun Yat-Sen Memorial Hall\n* Sunrise on Huampu River\n* A Lake Within a Lake"
+  },
+  {
+   "id": "es202006",
+   "year": 2020,
+   "number": "4 (a)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(a) - Drama - Scott Rankin, Namatjira (20 marks)\nIn what ways does Namatjira invite questions about creativity and conformity?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202007",
+   "year": 2020,
+   "number": "4 (b)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(b) - Drama - William Shakespeare, A Midsummer Night's Dream (20 marks)\nIn what ways does A Midsummer Night's Dream invite questions about conflict and reconciliation?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202008",
+   "year": 2020,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "- Nonfiction - Anna Funder, Stasiland (20 marks)\nIn what ways does Stasiland invite questions about resentment and forgiveness?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202009",
+   "year": 2020,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "- Film - Peter Weir, The Truman Show (20 marks)\nIn what ways does The Truman Show invite questions about resistance and acceptance?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202010",
+   "year": 2020,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "- Media - Simon Nasht, Frank Hurley: The Man Who Made History (20 marks)\nIn what ways does Frank Hurley: The Man Who Made History invite questions about perception and truth?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202011",
+   "year": 2020,
+   "number": "8",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "Module C: The Craft of Writing\nCompose a piece of imaginative writing that is set in a significant place.\nBegin with the words:\nThis is my world now, and it can be yours too, if you like. A place can soak through your skin like sweat, and ooze into your heart and soul. Breathe it in, and let me tell you a story.\n'Breathe Me In' by Sophie L Macdonald\nExtract from Underdog by Tobias Madden\nwith courtesy of Tobias Madden\nNote: You are NOT required to write out the extract as part of your response."
+  },
+  {
+   "id": "es202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "Module A: Language, Identity and Culture\nAnalyse how language creates a sense of identity for individuals within a community in your prescribed text.\nIn your response, make detailed reference to your prescribed text.\nThe prescribed texts are listed on page 3."
+  },
+  {
+   "id": "es202102",
+   "year": 2021,
+   "number": "2 (a)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "(a) - Prose Fiction - M T Anderson, Feed (20 marks)\nHow does Anderson shape character and setting to create a personal and intellectual connection with the reader?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "es202103",
+   "year": 2021,
+   "number": "2 (b)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "(b) - Prose Fiction - Mark Haddon, The Curious Incident of the Dog in the Night-time (20 marks)\nHow does Haddon shape character and setting to create a personal and intellectual connection with the reader?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "es202104",
+   "year": 2021,
+   "number": "2 (c)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Poetry",
+   "text": "(c) - Poetry - Robert Gray, Coast Road (20 marks)\nHow does Gray portray people and places to create a personal and intellectual connection with the reader?\nIn your response, make detailed reference to your prescribed text.\nThe prescribed poems are:\n* Journey, the North Coast\n* Flames and Dangling Wire\n* Harbour Dusk\n* Byron Bay: Winter\n* Description of a Walk\n* 24 Poems"
+  },
+  {
+   "id": "es202105",
+   "year": 2021,
+   "number": "2 (d)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Poetry",
+   "text": "(d) - Poetry - Oodgeroo Noonuccal (20 marks)\nHow does Noonuccal portray people and places to create a personal and intellectual connection with the reader?\nIn your response, make detailed reference to your prescribed text.\nThe prescribed poems are:\n* The Past\n* China . . . Woman\n* Reed Flute Cave\n* Entombed Warriors\n* Visit to Sun Yat-Sen Memorial Hall\n* Sunrise on Huampu River\n* A Lake Within a Lake"
+  },
+  {
+   "id": "es202106",
+   "year": 2021,
+   "number": "2 (e)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(e) - Drama - Scott Rankin, Namatjira (20 marks)\nHow does Rankin shape character and setting to create a personal and intellectual connection with the audience?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "es202107",
+   "year": 2021,
+   "number": "2 (f)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(f) - Drama - William Shakespeare, A Midsummer Night's Dream (20 marks)\nHow does Shakespeare shape character and setting to create a personal and intellectual connection with the audience?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "es202108",
+   "year": 2021,
+   "number": "2 (g)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(g) - Nonfiction - Anna Funder, Stasiland (20 marks)\nHow does Funder portray people and places to create a personal and intellectual connection with the reader?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "es202109",
+   "year": 2021,
+   "number": "2 (h)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(h) - Film - Peter Weir, The Truman Show (20 marks)\nHow does Weir shape character and setting to create a personal and intellectual connection with the audience?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "es202110",
+   "year": 2021,
+   "number": "2 (i)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(i) - Media - Simon Nasht, Frank Hurley: The Man Who Made History (20 marks)\nHow does Nasht shape character and setting to create a personal and intellectual connection with the audience?\nIn your response, make detailed reference to your prescribed text."
+  },
+  {
+   "id": "es202111",
+   "year": 2021,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "Module C: The Craft of Writing\n(a) Compose a piece of imaginative, discursive or persuasive writing that develops ONE idea about luck explored in the stimulus provided. (12 marks)\n(b) Explain how the creative decisions that you made in part (a) were influenced by a prescribed text that you have studied. (8 marks)\nCompose a piece of imaginative, discursive or persuasive writing that develops ONE idea about luck explored in the stimulus provided.\nExplain how the creative decisions that you made in part (a) were influenced by a prescribed text that you have studied."
+  },
+  {
+   "id": "es202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "Module A: Language, Identity and Culture\nExplain how the language used in your prescribed text changed your perceptions about identity.\nIn your response, make detailed reference to your prescribed text.\nThe prescribed texts are listed on page 3."
+  },
+  {
+   "id": "es202202",
+   "year": 2022,
+   "number": "2 (a)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "(a) - Prose Fiction - M T Anderson, Feed (20 marks)\nAnalyse how the central ideas of Feed are explored through the distinctive qualities of the text.\nIn your response, make detailed reference to the extract below and your prescribed text.\n(Extract from Feed by M T Anderson)"
+  },
+  {
+   "id": "es202203",
+   "year": 2022,
+   "number": "2 (b)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "(b) - Prose Fiction - Mark Haddon, The Curious Incident of the Dog in the Night-time (20 marks)\nAnalyse how the central ideas of The Curious Incident of the Dog in the Night-time are explored through the distinctive qualities of the text.\nIn your response, make detailed reference to the extract below and your prescribed text."
+  },
+  {
+   "id": "es202204",
+   "year": 2022,
+   "number": "2 (c)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Poetry",
+   "text": "(c) - Poetry - Robert Gray, Coast Road (20 marks)\nAnalyse how the central ideas of Gray's poetry are explored through the distinctive qualities of the poems.\nIn your response, make detailed reference to the extract below and at least ONE other prescribed poem.\nThe prescribed poems are:\n* Journey, the North Coast\n* Flames and Dangling Wire\n* Harbour Dusk\n* Byron Bay: Winter\n* Description of a Walk\n* 24 Poems"
+  },
+  {
+   "id": "es202205",
+   "year": 2022,
+   "number": "2 (d)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Poetry",
+   "text": "(d) - Poetry - Oodgeroo Noonuccal (20 marks)\nAnalyse how the central ideas of Noonuccal's poetry are explored through the distinctive qualities of the poems.\nIn your response, make detailed reference to the extract below and at least ONE other prescribed poem.\nThe prescribed poems are:\n* The Past\n* China . . . Woman\n* Reed Flute Cave\n* Entombed Warriors\n* Visit to Sun Yat-Sen Memorial Hall\n* Sunrise on Huampu River\n* A Lake Within a Lake"
+  },
+  {
+   "id": "es202206",
+   "year": 2022,
+   "number": "2 (e)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(e) - Drama - Scott Rankin, Namatjira (20 marks)\nAnalyse how the central ideas of Namatjira are explored through the distinctive qualities of the text.\nIn your response, make detailed reference to the extract below and your prescribed text."
+  },
+  {
+   "id": "es202207",
+   "year": 2022,
+   "number": "2 (f)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(f) - Drama - William Shakespeare, A Midsummer Night's Dream (20 marks)\nAnalyse how the central ideas of A Midsummer Night's Dream are explored through the distinctive qualities of the text.\nIn your response, make detailed reference to the extract below and your prescribed text."
+  },
+  {
+   "id": "es202208",
+   "year": 2022,
+   "number": "2 (g)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(g) - Nonfiction - Anna Funder, Stasiland (20 marks)\nAnalyse how the central ideas of Stasiland are explored through the distinctive qualities of the text.\nIn your response, make detailed reference to the extract below and your prescribed text."
+  },
+  {
+   "id": "es202209",
+   "year": 2022,
+   "number": "2 (h)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(h) - Film - Peter Weir, The Truman Show (20 marks)\nAnalyse how the central ideas of The Truman Show are explored through the distinctive qualities of the text.\nIn your response, make detailed reference to the extracts below and your prescribed text."
+  },
+  {
+   "id": "es202210",
+   "year": 2022,
+   "number": "2 (i)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Drama, film, media or nonfiction",
+   "text": "(i) - Media - Simon Nasht, Frank Hurley: The Man Who Made History (20 marks)\nAnalyse how the central ideas of Frank Hurley: The Man Who Made History are explored through the distinctive qualities of the text.\nIn your response, make detailed reference to the extracts below and your prescribed text."
+  },
+  {
+   "id": "es202211",
+   "year": 2022,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "Module C: The Craft of Writing\n(a) Describe how ideas about the power of taste are conveyed in this podcast. In your response, refer to at least ONE language device or stylistic feature in the extract. (5 marks)\n(b) Craft an imaginative or discursive piece of writing that explores the power of the senses. In your composition, you should emphasise ONE of the five senses (sight, smell, sound, taste OR touch). (15 marks)\nDescribe how ideas about the power of taste are conveyed in this podcast. In your response, refer to at least ONE language device or stylistic feature in the extract.\nCraft an imaginative or discursive piece of writing that explores the power of the senses. In your composition, you should emphasise ONE of the five senses (sight, smell, sound, taste OR touch)."
+  },
+  {
+   "id": "es202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Understanding",
+   "text": "Text 1 - Poem\nExplain how Greenacre represents the value of shared experiences."
+  },
+  {
+   "id": "es202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Understanding",
+   "text": "Text 2 - Feature article extract\nHow does Dahl use personal experience to show the reader the importance of kindness?"
+  },
+  {
+   "id": "es202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Understanding",
+   "text": "Text 3 - Prose extract\nWhy does Dank prefer 'that gravel and dust comfort, away from that other place'?"
+  },
+  {
+   "id": "es202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Understanding",
+   "text": "Text 4 - Memoir extract\nAnalyse Langbroek's representation of the emotional impact of new places."
+  },
+  {
+   "id": "es202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Understanding",
+   "text": "Text 5 - Feature article extract\nHow does Hamblin expand the reader's understanding of the paradoxes of consumerism?"
+  },
+  {
+   "id": "es202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "'A text can ignite ideas about collective human experiences that enrich our view of the world.'\nTo what extent do you agree with this statement in relation to your prescribed text?\nIn your response, make close reference to your prescribed text.\nThe prescribed texts are listed on pages 10 and 11."
+  },
+  {
+   "id": "es202401",
+   "year": 2024,
+   "number": "1 (a)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(a) - Prose Fiction - Henry Lawson, The Penguin Henry Lawson Short Stories (20 marks)\nHow does your study of The Penguin Henry Lawson Short Stories inform your understanding of place and its connection to culture?\nIn your response, make close reference to your prescribed text.\nThe prescribed stories are:\n* The Drover's Wife\n* The Union Buries Its Dead\n* Shooting the Moon\n* Our Pipes\n* The Loaded Dog"
+  },
+  {
+   "id": "es202402",
+   "year": 2024,
+   "number": "1 (b)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(b) - Prose Fiction - Andrea Levy, Small Island (20 marks)\nHow does your study of Small Island inform your understanding of place and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202403",
+   "year": 2024,
+   "number": "1 (c)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(c) - Poetry - Adam Aitken, Kim Cheng Boey and Michelle Cahill (eds), Contemporary Asian Australian Poets (20 marks)\nHow does your study of Contemporary Asian Australian Poets inform your understanding of family and its connection to culture?\nIn your response, make close reference to your prescribed text.\nThe prescribed poems are:\n* Merlinda Bobis, This is where it begins\n* Miriam Wei Wei Lo, Home\n* Ouyang Yu, New Accents\n* Vuong Pham, Mother\n* Jaya Savige, Circular Breathing\n* Maureen Ten (Ten Ch'Tin O), Translucent Jade"
+  },
+  {
+   "id": "es202404",
+   "year": 2024,
+   "number": "1 (d)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(d) - Poetry - Ali Cobby Eckermann, Inside my Mother (20 marks)\nHow does your study of Inside my Mother inform your understanding of place and its connection to culture?\nIn your response, make close reference to your prescribed text.\nThe prescribed poems are:\n* Trance\n* Unearth\n* Oombulgarri\n* Eyes\n* Leaves\n* Key"
+  },
+  {
+   "id": "es202405",
+   "year": 2024,
+   "number": "1 (e)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(e) - Drama - Ray Lawler, Summer of the Seventeenth Doll (20 marks)\nHow does your study of Summer of the Seventeenth Doll inform your understanding of change and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202406",
+   "year": 2024,
+   "number": "1 (f)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(f) - Drama - Bernard Shaw, Pygmalion (20 marks)\nHow does your study of Pygmalion inform your understanding of change and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202407",
+   "year": 2024,
+   "number": "1 (g)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(g) - Drama - Alana Valentine, Shafana and Aunt Sarrinah (20 marks)\nHow does your study of Shafana and Aunt Sarrinah inform your understanding of change and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202408",
+   "year": 2024,
+   "number": "1 (h)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(h) - Nonfiction - Alice Pung, Unpolished Gem (20 marks)\nHow does your study of Unpolished Gem inform your understanding of family and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202409",
+   "year": 2024,
+   "number": "1 (i)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(i) - Film - Rachel Perkins, One Night the Moon (20 marks)\nHow does your study of One Night the Moon inform your understanding of change and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202410",
+   "year": 2024,
+   "number": "1 (j)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(j) - Film - Rob Sitch, The Castle (20 marks)\nHow does your study of The Castle inform your understanding of place and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202411",
+   "year": 2024,
+   "number": "1 (k)",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "(k) - Media - Janet Merewether, Reindeer in my Saami Heart (20 marks)\nHow does your study of Reindeer in my Saami Heart inform your understanding of change and its connection to culture?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "es202412",
+   "year": 2024,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "Module B: Close Study of Literature\n'Literature does not just describe our world, it shapes and enriches our understanding of it.'\nTo what extent does your prescribed text reflect the ideas about literature in this statement?\nIn your response, make close reference to your prescribed text.\nThe Module B prescribed texts are listed on page 7."
+  },
+  {
+   "id": "es202413",
+   "year": 2024,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "Module C: The Craft of Writing\n(a) Craft an imaginative piece of writing that explores at least ONE idea from the stimulus above. (15 marks)\n(b) Explain how ONE stylistic device you have used in part (a) was inspired by ONE of the prescribed texts in Module C. (5 marks)\nCraft an imaginative piece of writing that explores at least ONE idea from the stimulus above.\nExplain how ONE stylistic device you have used in part (a) was inspired by ONE of the prescribed texts in Module C."
+  },
+  {
+   "id": "es202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Language, identity and culture / Responding",
+   "text": "Module A: Language, Identity and Culture\nHow does your prescribed text reveal the benefits and challenges of belonging to specific cultures?\nIn your response, make close reference to your prescribed text.\nThe Module A prescribed texts are listed on page 3."
+  },
+  {
+   "id": "es202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Close study of literature / Prose fiction",
+   "text": "Module B: Close Study of Literature\nAnalyse how different values and attitudes are exposed through the key features of your prescribed text.\nIn your response, make close reference to your prescribed text.\nThe Module B prescribed texts are listed on page 5."
+  },
+  {
+   "id": "es202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "Module C: The Craft of Writing\n'A fond memory brings you a wave of comfort and ignites the senses. It's the kind of memory you can visualise and describe in rich detail.'\nUsing the stimulus above, craft an imaginative or discursive piece of writing that captures the richness of a fond memory."
+  }
+ ]
+}

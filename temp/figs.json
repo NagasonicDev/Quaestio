@@ -1,0 +1,58 @@
+[
+  {
+    "page": 5,
+    "file": "p005_f01.png",
+    "kinds": [
+      "vector"
+    ],
+    "rect": [
+      154.0,
+      107.6,
+      439.7,
+      323.4
+    ],
+    "verified": false
+  },
+  {
+    "page": 6,
+    "file": "p006_f01.png",
+    "kinds": [
+      "vector"
+    ],
+    "rect": [
+      209.1,
+      164.0,
+      252.8,
+      212.6
+    ],
+    "verified": false
+  },
+  {
+    "page": 8,
+    "file": "p008_f01.png",
+    "kinds": [
+      "vector"
+    ],
+    "rect": [
+      194.9,
+      152.8,
+      302.0,
+      242.2
+    ],
+    "verified": false
+  },
+  {
+    "page": 11,
+    "file": "p011_f01.png",
+    "kinds": [
+      "vector"
+    ],
+    "rect": [
+      203.2,
+      293.0,
+      388.7,
+      416.3
+    ],
+    "verified": false
+  }
+]

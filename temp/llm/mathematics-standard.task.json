@@ -1,0 +1,1452 @@
+{
+ "course_id": "mathematics-standard",
+ "course_name": "Mathematics Standard",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-D1",
+   "path": "Year 11 / Formulas and equations / Substitute numbers into linear and non-linear algebraic expressions, equations and formulas"
+  },
+  {
+   "code": "PRE-M1-D2",
+   "path": "Year 11 / Formulas and equations / Evaluate the subject of a formula, given the value of other pronumerals in the formula"
+  },
+  {
+   "code": "PRE-M1-D3",
+   "path": "Year 11 / Formulas and equations / Calculate distance, speed and time (with change of units of measurement as required) and stopping distances of vehicles using and"
+  },
+  {
+   "code": "PRE-M1-D4",
+   "path": "Year 11 / Formulas and equations / Apply the formulas and to calculate and interpret blood alcohol content (BAC) based on drink consumption and body weight, where is the number of standard drinks consumed, is the number of hours of drinking and is the person’s weight in kilograms"
+  },
+  {
+   "code": "PRE-M1-D5",
+   "path": "Year 11 / Formulas and equations / Apply the formula to determine the number of hours required for a person to stop consuming alcohol in order to reach zero BAC"
+  },
+  {
+   "code": "PRE-M1-D6",
+   "path": "Year 11 / Formulas and equations / Identify and explain the limitations of methods used to estimate BAC"
+  },
+  {
+   "code": "PRE-M1-D7",
+   "path": "Year 11 / Formulas and equations / Calculate the required medication dosages for children and adults given age or weight, using Fried’s, Young’s and Clark’s formula as appropriate"
+  },
+  {
+   "code": "PRE-M1-D8",
+   "path": "Year 11 / Formulas and equations / Apply given formulas to solve problems in a variety of contexts"
+  },
+  {
+   "code": "PRE-M1-D9",
+   "path": "Year 11 / Formulas and equations / Change the subject of linear and non-linear formulas limited to quadratics of the form to solve problems and make decisions about solutions in the context of the problem"
+  },
+  {
+   "code": "PRE-M1-D10",
+   "path": "Year 11 / Formulas and equations / Represent a word problem as a linear equation, solve the equation and interpret the solution in the context of the problem"
+  },
+  {
+   "code": "PRE-M1-D11",
+   "path": "Year 11 / Formulas and equations / Use a spreadsheet to perform calculations involving formulas"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Linear relationships / Linear modelling / Determine the -intercept and gradient of a straight line given in graphical form"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Linear relationships / Linear modelling / Determine the equation of a straight line of the form where is the gradient and is the -intercept"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Linear relationships / Linear modelling / Determine the -intercept and gradient from the equation of a straight line"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Linear relationships / Linear modelling / Construct a straight-line graph, with and without using graphing applications"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Linear relationships / Linear modelling / Model linear relationships and interpret the features of those relationships in a variety of contexts, noting that the -intercept is the vertical intercept and the gradient is the rate of change"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Linear relationships / Linear modelling / Interpolate and extrapolate from a linear model in a practical context"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Linear relationships / Linear modelling / Identify and describe the limitations of a linear model in a practical context"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Linear relationships / Linear modelling / Use a spreadsheet to model a linear relationship in a variety of contexts"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Linear relationships / Direct variation / Recognise that a direct variation relationship of the form produces a straight-line graph"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Linear relationships / Direct variation / Explain that a direct variation relationship of the form is a graph that passes through the origin with gradient being the constant of variation"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Linear relationships / Direct variation / Identify and represent direct variation of the form from descriptions of situations in which one quantity varies directly with another quantity"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Linear relationships / Direct variation / Evaluate in equations of the form , given one pair of values for the variables, and use the resulting formula to find other values of the variables to solve problems in a variety of contexts"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Linear relationships / Direct variation / Graph and analyse equations of the form to solve problems in a variety of contexts"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Earning money / Ways of earning / Solve problems involving salaries"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Earning money / Ways of earning / Solve problems involving wages, penalty rates for overtime, weekends and public holidays, given an hourly rate of pay"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Earning money / Ways of earning / Calculate an individual’s earnings from commission, sliding scale commission, piecework, royalties, government payments and as a sole trader"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Earning money / Ways of earning / Calculate weekly, fortnightly, monthly and yearly earnings assuming"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Earning money / Ways of earning / Calculate leave loading by finding a percentage of eligible normal pay"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Earning money / Ways of earning / Use a spreadsheet to model an employee’s income including overtime, salary, bonuses, commission, piecework and royalties"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Earning money / Taxation / Determine taxable income by examining allowable deductions"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Earning money / Taxation / Determine tax payable by interpreting and applying information in tax tables"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Earning money / Taxation / Calculate the weekly, fortnightly or monthly tax to be deducted from a worker’s pay under the Australian Pay-As-You-Go (PAYG) taxation system using tax tables"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Earning money / Taxation / Calculate the Medicare levy from taxable income"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Earning money / Taxation / Calculate net earnings after deductions, taxation and the Medicare levy"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Earning money / Taxation / Determine by calculation if more tax is payable or if a refund is owed after completing a tax return"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Earning money / Taxation / Use a spreadsheet to model scenarios involving taxation"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Managing money / Purchasing goods / Apply percentage increase and decrease to determine the cost of goods, and profit and loss"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Managing money / Purchasing goods / Calculate the goods and service tax (GST) or value-added tax (VAT) when purchasing goods and services in Australia and internationally"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Managing money / Purchasing goods / Solve problems involving GST or VAT"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Managing money / Purchasing goods / Examine payment options involving buy now, pay later and analyse the costs associated with these schemes for purchasing goods"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Managing money / Purchasing goods / Calculate the cost of buying on terms that involve paying an initial deposit and making regular repayments"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Managing money / Purchasing goods / Compare the total cost of using different methods of purchasing goods and justify which method of purchasing is best suited to a given context"
+  },
+  {
+   "code": "PRE-M4-T1-D7",
+   "path": "Year 11 / Managing money / Purchasing goods / Calculate the cost of purchasing a vehicle by considering the purchase price or loan repayments, registration, compulsory and non-compulsory third-party insurance, comprehensive insurance and stamp duty at current rates"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Managing money / Budgeting / Examine the ongoing costs of a vehicle"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Managing money / Budgeting / Use a spreadsheet to model the costs of purchasing, running and maintaining a vehicle"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Managing money / Budgeting / Calculate household costs including electricity, water and gas usage from household bills"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Managing money / Budgeting / Prepare a personal budget for a given income, considering fixed and discretionary spending"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Managing money / Budgeting / Use a spreadsheet to model personal and household budgets"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / Managing money / Budgeting / Examine budgeting, saving, establishing an emergency fund with 3 to 6 months of living expenses, and monitoring spending as strategies designed to minimise financial problems"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Applications of measurement / Practicalities of measurement / Identify and convert between the metric units of length: millimetres (mm), centimetres (cm), metres (m) and kilometres (km)"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Applications of measurement / Practicalities of measurement / Identify and convert between metric units of area, using , , and"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Applications of measurement / Practicalities of measurement / Identify and convert between metric units of volume, using , , and"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Applications of measurement / Practicalities of measurement / Identify and convert between the metric units of capacity: millilitres (mL), litres (L), kilolitres (kL) and megalitres (ML)"
+  },
+  {
+   "code": "PRE-M5-T1-D5",
+   "path": "Year 11 / Applications of measurement / Practicalities of measurement / Identify and convert between units of volume and capacity, using , and"
+  },
+  {
+   "code": "PRE-M5-T1-D6",
+   "path": "Year 11 / Applications of measurement / Practicalities of measurement / Identify and convert between the metric units of mass: milligrams (mg), grams (g), kilograms (kg) and tonnes (t)"
+  },
+  {
+   "code": "PRE-M5-T1-D7",
+   "path": "Year 11 / Applications of measurement / Practicalities of measurement / Apply scientific notation to represent numbers involving standard prefixes: nano- (n) for , micro- (µ) for , milli- (m) for , centi- (c) for , kilo- (k) for , mega- (M) for , giga- (G) for and tera- (T) for , with and without a required number of significant figures"
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Applications of measurement / Perimeter, area and volume / Solve practical problems requiring the calculation of perimeters and areas of triangles, rectangles, parallelograms, trapeziums, circles, sectors of circles and composite shapes in a variety of contexts"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Applications of measurement / Perimeter, area and volume / Apply Pythagoras’ theorem to solve problems involving right-angled triangles"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Applications of measurement / Perimeter, area and volume / Calculate perimeters and areas of irregularly shaped blocks of land by dissection into triangles, rectangles and trapeziums"
+  },
+  {
+   "code": "PRE-M5-T2-D4",
+   "path": "Year 11 / Applications of measurement / Perimeter, area and volume / Solve practical problems involving the surface area of prisms, cylinders, spheres and composite solids in a variety of contexts"
+  },
+  {
+   "code": "PRE-M5-T2-D5",
+   "path": "Year 11 / Applications of measurement / Perimeter, area and volume / Solve practical problems involving volume and capacity of prisms, cylinders, spheres, cones, pyramids and composite solids in a variety of contexts"
+  },
+  {
+   "code": "PRE-M5-T2-D6",
+   "path": "Year 11 / Applications of measurement / Perimeter, area and volume / Apply the Trapezoidal rule , where is the area, and are the lengths of the parallel sides of the trapezium, is the first length and is the last length, and is the perpendicular distance between them, to solve a variety of practical problems involving area, volume and capacity for up to four applications"
+  },
+  {
+   "code": "PRE-M6-T1-D1",
+   "path": "Year 11 / Time and location / Positions on the Earth’s surface / Identify a location on the Earth's surface using latitude, longitude and position coordinates, with and without using digital tools"
+  },
+  {
+   "code": "PRE-M6-T1-D2",
+   "path": "Year 11 / Time and location / Positions on the Earth’s surface / Apply hour time difference to calculate the time differences between locations on Earth given the relevant longitudes"
+  },
+  {
+   "code": "PRE-M6-T2-D1",
+   "path": "Year 11 / Time and location / Time and time differences / Convert between seconds (s), minutes (min) and hours (h)"
+  },
+  {
+   "code": "PRE-M6-T2-D2",
+   "path": "Year 11 / Time and location / Time and time differences / Represent and convert between 12-hour and 24-hour time formats"
+  },
+  {
+   "code": "PRE-M6-T2-D3",
+   "path": "Year 11 / Time and location / Time and time differences / Solve a variety of practical problems by calculating elapsed time"
+  },
+  {
+   "code": "PRE-M6-T2-D4",
+   "path": "Year 11 / Time and location / Time and time differences / Solve problems involving time zones in Australia, making necessary allowances for daylight saving"
+  },
+  {
+   "code": "PRE-M6-T2-D5",
+   "path": "Year 11 / Time and location / Time and time differences / Represent time difference between locations using Coordinated Universal Time (UTC)"
+  },
+  {
+   "code": "PRE-M6-T2-D6",
+   "path": "Year 11 / Time and location / Time and time differences / Solve practical problems involving UTC"
+  },
+  {
+   "code": "PRE-M7-T1-D1",
+   "path": "Year 11 / Networks, paths and trees / Network concepts / Describe a network as a collection of objects (vertices) interconnected by lines (edges) that can represent systems in the real world"
+  },
+  {
+   "code": "PRE-M7-T1-D2",
+   "path": "Year 11 / Networks, paths and trees / Network concepts / Define and use the network terminology: vertex, edge, degree, directed networks and weighted edges"
+  },
+  {
+   "code": "PRE-M7-T1-D3",
+   "path": "Year 11 / Networks, paths and trees / Network concepts / Examine circumstances in which networks are used in a variety of real-world applications"
+  },
+  {
+   "code": "PRE-M7-T1-D4",
+   "path": "Year 11 / Networks, paths and trees / Network concepts / Construct a network diagram to represent information from a given table or map, showing weighted and directed edges"
+  },
+  {
+   "code": "PRE-M7-T1-D5",
+   "path": "Year 11 / Networks, paths and trees / Network concepts / Solve problems involving network diagrams in a variety of practical contexts"
+  },
+  {
+   "code": "PRE-M7-T2-D1",
+   "path": "Year 11 / Networks, paths and trees / Shortest paths and spanning trees / Define and use the network terminology: path, tree, spanning tree and minimum spanning tree"
+  },
+  {
+   "code": "PRE-M7-T2-D2",
+   "path": "Year 11 / Networks, paths and trees / Shortest paths and spanning trees / Determine the minimum spanning tree of a network with weighted edges, using any method"
+  },
+  {
+   "code": "PRE-M7-T2-D3",
+   "path": "Year 11 / Networks, paths and trees / Shortest paths and spanning trees / Use minimum spanning trees to solve minimal connector problems"
+  },
+  {
+   "code": "PRE-M7-T2-D4",
+   "path": "Year 11 / Networks, paths and trees / Shortest paths and spanning trees / Identify a shortest path on a network diagram with no more than 10 vertices"
+  },
+  {
+   "code": "PRE-M7-T2-D5",
+   "path": "Year 11 / Networks, paths and trees / Shortest paths and spanning trees / Describe a circumstance in which a shortest path is not necessarily the best path nor contained in any minimum spanning tree"
+  },
+  {
+   "code": "PRE-M8-T1-D1",
+   "path": "Year 11 / Data analysis / Statistical investigation process / Identify an issue and pose a question to a targeted population to gather statistical information"
+  },
+  {
+   "code": "PRE-M8-T1-D2",
+   "path": "Year 11 / Data analysis / Statistical investigation process / Develop a survey by applying questionnaire design principles of clear language, unambiguous questions and consideration of number of choices"
+  },
+  {
+   "code": "PRE-M8-T1-D3",
+   "path": "Year 11 / Data analysis / Statistical investigation process / Examine issues of privacy, bias, ethics and responsiveness to diverse groups and cultures"
+  },
+  {
+   "code": "PRE-M8-T2-D1",
+   "path": "Year 11 / Data analysis / Population and sample / Compare and contrast systematic sampling, self-selected sampling, random sampling and stratified sampling"
+  },
+  {
+   "code": "PRE-M8-T2-D2",
+   "path": "Year 11 / Data analysis / Population and sample / Justify whether a sample obtained from a population is representative of the population by considering the sampling method"
+  },
+  {
+   "code": "PRE-M8-T2-D3",
+   "path": "Year 11 / Data analysis / Population and sample / Describe the potential faults in the design and practicalities of a data collection process by considering survey design, experiments and observational studies, and misunderstandings and misrepresentations"
+  },
+  {
+   "code": "PRE-M8-T3-D1",
+   "path": "Year 11 / Data analysis / Data classification / Classify and describe variables as numerical or categorical"
+  },
+  {
+   "code": "PRE-M8-T3-D2",
+   "path": "Year 11 / Data analysis / Data classification / Describe a numerical variable as discrete or continuous"
+  },
+  {
+   "code": "PRE-M8-T3-D3",
+   "path": "Year 11 / Data analysis / Data classification / Describe a categorical variable as nominal or ordinal"
+  },
+  {
+   "code": "PRE-M8-T3-D4",
+   "path": "Year 11 / Data analysis / Data classification / Identify collections of data that can be described as numerical or categorical depending on responses"
+  },
+  {
+   "code": "PRE-M8-T4-D1",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Recognise and explain why some datasets need to be grouped to allow for appropriate representation and analysis"
+  },
+  {
+   "code": "PRE-M8-T4-D2",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Use a spreadsheet to organise and represent data using appropriate graphs"
+  },
+  {
+   "code": "PRE-M8-T4-D3",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Represent a numerical dataset as either a frequency distribution table or a cumulative frequency distribution table and graph the associated histogram with polygon, both with and without using digital tools"
+  },
+  {
+   "code": "PRE-M8-T4-D4",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Represent categorical datasets in tables and column graphs as appropriate, with and without using digital tools"
+  },
+  {
+   "code": "PRE-M8-T4-D5",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Select the type of graph best suited to represent various single datasets and justify the choice of graph"
+  },
+  {
+   "code": "PRE-M8-T4-D6",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Identify and describe the shape of the distribution of a dataset as either symmetric, positively skewed or negatively skewed"
+  },
+  {
+   "code": "PRE-M8-T4-D7",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Interpret and analyse dot plots, line graphs, sector graphs, stem-and-leaf plots, back-to-back stem-and-leaf plots and divided bar charts related to real-world applications"
+  },
+  {
+   "code": "PRE-M8-T4-D8",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Analyse a statistical infographic and justify the choice of graphical representations used for the relevant dataset"
+  },
+  {
+   "code": "PRE-M8-T4-D9",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Interpret and consider limitations of graphical representations to make conclusions and predictions"
+  },
+  {
+   "code": "PRE-M8-T4-D10",
+   "path": "Year 11 / Data analysis / Display and interpret grouped and ungrouped data / Explain why a given graphical representation can lead to a misinterpretation of data"
+  },
+  {
+   "code": "PRE-M8-T5-D1",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Describe the mean, median and mode as measures of centre and calculate their values for a dataset in graphical form and tabular form, using a scientific calculator and other digital tools"
+  },
+  {
+   "code": "PRE-M8-T5-D2",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Identify and describe datasets as uniform, unimodal, bimodal or multimodal"
+  },
+  {
+   "code": "PRE-M8-T5-D3",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Identify the range and standard deviation as measures of spread to describe variation in a dataset"
+  },
+  {
+   "code": "PRE-M8-T5-D4",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Calculate the range and population standard deviation of a dataset using a scientific calculator or other digital tools"
+  },
+  {
+   "code": "PRE-M8-T5-D5",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Compare datasets using measures of centre and measures of spread"
+  },
+  {
+   "code": "PRE-M8-T5-D6",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Examine the merits of each measure of centre and justify where each measure is most appropriately used"
+  },
+  {
+   "code": "PRE-M8-T5-D7",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Identify and describe real-world examples illustrating appropriate and inappropriate uses of measures of centre and measures of spread"
+  },
+  {
+   "code": "PRE-M8-T5-D8",
+   "path": "Year 11 / Data analysis / Measures of centre and spread / Use a spreadsheet to analyse data including calculating measures of centre and spread"
+  },
+  {
+   "code": "PRE-M8-T6-D1",
+   "path": "Year 11 / Data analysis / Quartiles and interquartile range / Determine the five-number summary from a set of numerical data or graphical representation"
+  },
+  {
+   "code": "PRE-M8-T6-D2",
+   "path": "Year 11 / Data analysis / Quartiles and interquartile range / Determine the interquartile range (IQR) of datasets"
+  },
+  {
+   "code": "PRE-M8-T6-D3",
+   "path": "Year 11 / Data analysis / Quartiles and interquartile range / Compare and contrast the use of range and IQR as measures of spread"
+  },
+  {
+   "code": "PRE-M8-T7-D1",
+   "path": "Year 11 / Data analysis / Five-number summary and box plots / Represent numerical datasets using a box plot to display a five-number summary, with and without using digital tools"
+  },
+  {
+   "code": "PRE-M8-T7-D2",
+   "path": "Year 11 / Data analysis / Five-number summary and box plots / Compare and contrast the measures of centre, spread and shape using parallel box plots"
+  },
+  {
+   "code": "PRE-M8-T7-D3",
+   "path": "Year 11 / Data analysis / Five-number summary and box plots / Determine quartiles from datasets displayed in histograms and dot plots, and represent these datasets as a box plot"
+  },
+  {
+   "code": "PRE-M8-T7-D4",
+   "path": "Year 11 / Data analysis / Five-number summary and box plots / Interpret box plots to draw conclusions and make inferences about a dataset"
+  },
+  {
+   "code": "PRE-M8-T8-D1",
+   "path": "Year 11 / Data analysis / Clusters and outliers / Identify clusters, gaps and outliers and explain their occurrence in the context of the data"
+  },
+  {
+   "code": "PRE-M8-T8-D2",
+   "path": "Year 11 / Data analysis / Clusters and outliers / Apply and to formally identify outliers"
+  },
+  {
+   "code": "PRE-M8-T8-D3",
+   "path": "Year 11 / Data analysis / Clusters and outliers / Explain the impact of outliers on the measures of centre and spread"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D1",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Graph two linear equations using a table of values or a graphing application and identify the point of intersection"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D2",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Solve a pair of simultaneous linear equations by finding the point of intersection of their graphs, with and without graphing applications"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D3",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Determine and interpret the point of intersection of two linear graphs in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D4",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Use simultaneous equations to model and analyse the break-even point of a problem where cost and revenue are represented by linear equations"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D5",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Identify the break-even point and solve problems involving profit and loss by using a spreadsheet to model the problem"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D6",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Graph two linear equations and identify the point of intersection, with and without using graphing applications"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D7",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Solve a pair of simultaneous linear equations using graphical and algebraic methods"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D8",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Develop a pair of simultaneous linear equations to model a practical situation"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D9",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Solve practical problems that involve simultaneous linear equations"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D10",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Use simultaneous equations to model and analyse the break-even point where cost and revenue are represented by linear equations"
+  },
+  {
+   "code": "HSC-S1-M1-T1-D11",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Simultaneous linear equations / Identify the break-even point and solve problems involving profit and loss using a spreadsheet"
+  },
+  {
+   "code": "HSC-S1-M1-T2-D1",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Graphs of practical situations / Construct a linear or exponential graph using a table of values or graphing application to make predictions in practical contexts"
+  },
+  {
+   "code": "HSC-S1-M1-T2-D2",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Graphs of practical situations / Represent the description of a real-world situation graphically"
+  },
+  {
+   "code": "HSC-S1-M1-T2-D3",
+   "path": "Year 12 – Standard 1 / Algebraic relationships / Graphs of practical situations / Identify the strengths and limitations of linear and exponential models in given practical contexts"
+  },
+  {
+   "code": "HSC-S1-M2-D1",
+   "path": "Year 12 – Standard 1 / Investment / Calculate simple interest for different interest rates and time periods using the formula where = simple interest, = principal, = interest rate per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S1-M2-D2",
+   "path": "Year 12 – Standard 1 / Investment / Solve problems involving simple interest in a variety of contexts"
+  },
+  {
+   "code": "HSC-S1-M2-D3",
+   "path": "Year 12 – Standard 1 / Investment / Compare simple interest graphs for different interest rates and time periods, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S1-M2-D4",
+   "path": "Year 12 – Standard 1 / Investment / Calculate the future value, present value or interest rate of a compound interest investment using the formula where = future value of the investment, = present value of the investment, = interest rate per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S1-M2-D5",
+   "path": "Year 12 – Standard 1 / Investment / Solve problems involving compound interest in a variety of contexts, including inflation and appreciation"
+  },
+  {
+   "code": "HSC-S1-M2-D6",
+   "path": "Year 12 – Standard 1 / Investment / Compare the growth of simple interest and compound interest investments either numerically or from a given graph"
+  },
+  {
+   "code": "HSC-S1-M2-D7",
+   "path": "Year 12 – Standard 1 / Investment / Use a spreadsheet to model investments using both simple and compound interest"
+  },
+  {
+   "code": "HSC-S1-M2-D8",
+   "path": "Year 12 – Standard 1 / Investment / Compare and contrast savings accounts, term deposits and buying property as investment strategies"
+  },
+  {
+   "code": "HSC-S1-M3-T1-D1",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Depreciation / Apply the straight-line depreciation method to calculate the depreciation of an asset using the formula where = salvage value, = initial value of the asset, = depreciation amount per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S1-M3-T1-D2",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Depreciation / Apply the declining balance method to calculate the depreciation of an asset using the formula where = salvage value, = initial value of the asset, = depreciation rate per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S1-M3-T1-D3",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Depreciation / Explain the similarities and differences between the declining balance formula and the compound interest formula"
+  },
+  {
+   "code": "HSC-S1-M3-T1-D4",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Depreciation / Compare straight-line depreciation and declining balance depreciation either numerically or from a given graph"
+  },
+  {
+   "code": "HSC-S1-M3-T1-D5",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Depreciation / Use a spreadsheet to model depreciation using the straight-line and declining balance methods"
+  },
+  {
+   "code": "HSC-S1-M3-T2-D1",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Loans / Compare and analyse the costs associated with buy now, pay later, short term and long term loans"
+  },
+  {
+   "code": "HSC-S1-M3-T2-D2",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Loans / Model a reducing balance loan as an application of compound interest, given the interest rate per time period, with periodic repayments, using a table for up to three time periods"
+  },
+  {
+   "code": "HSC-S1-M3-T2-D3",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Loans / Examine the effect of changing the repayment frequency, making additional repayments or a making a lump-sum payment on the term and cost of repaying a loan"
+  },
+  {
+   "code": "HSC-S1-M3-T2-D4",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Loans / Use a spreadsheet to model and solve problems involving a reducing balance loan in a variety of contexts"
+  },
+  {
+   "code": "HSC-S1-M3-T3-D1",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Credit cards / Explain how credit cards are an example of a reducing balance loan"
+  },
+  {
+   "code": "HSC-S1-M3-T3-D2",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Credit cards / Compare credit card interest rates with interest rates for other loan types"
+  },
+  {
+   "code": "HSC-S1-M3-T3-D3",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Credit cards / Identify the various fees and charges associated with credit card usage, and explain the meaning of an interest-free period"
+  },
+  {
+   "code": "HSC-S1-M3-T3-D4",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Credit cards / Interpret a credit card statement, examining the implications of only making the minimum payment"
+  },
+  {
+   "code": "HSC-S1-M3-T3-D5",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Credit cards / Calculate the compound interest charged on a transaction or outstanding balance for a given number of days"
+  },
+  {
+   "code": "HSC-S1-M3-T3-D6",
+   "path": "Year 12 – Standard 1 / Depreciation and loans / Credit cards / Compare credit cards and personal loans as options to meet short-term, medium-term and long-term financial goals"
+  },
+  {
+   "code": "HSC-S1-M4-D1",
+   "path": "Year 12 – Standard 1 / Right-angled triangles / Apply Pythagoras’ theorem to solve practical problems in two dimensions"
+  },
+  {
+   "code": "HSC-S1-M4-D2",
+   "path": "Year 12 – Standard 1 / Right-angled triangles / Apply trigonometric ratios to find the lengths of unknown sides in right-angled triangles given an angle in both degrees, and degrees and minutes"
+  },
+  {
+   "code": "HSC-S1-M4-D3",
+   "path": "Year 12 – Standard 1 / Right-angled triangles / Apply trigonometric ratios to find the size of unknown angles in right-angled triangles, in both degrees, and degrees and minutes"
+  },
+  {
+   "code": "HSC-S1-M4-D4",
+   "path": "Year 12 – Standard 1 / Right-angled triangles / Identify and interpret true bearings and compass bearings and convert between them"
+  },
+  {
+   "code": "HSC-S1-M4-D5",
+   "path": "Year 12 – Standard 1 / Right-angled triangles / Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled triangles, angles of elevation and depression, and true bearings and compass bearings"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D1",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Recognise ratios and explain their relationship with fractions"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D2",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Express a ratio in simplest form"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D3",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Determine the ratio of two quantities"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D4",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Divide a quantity in a given ratio"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D5",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Solve practical problems involving ratios"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D6",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Explain the relationship between ratios and map scales and apply this relationship to solve problems in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D7",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Obtain measurements from scale drawings and building plans with commonly used symbols to solve problems in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D8",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Estimate and compare quantities, materials and costs using measurements taken from scale drawings"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D9",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Solve practical ratio problems involving the capture-recapture technique"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D10",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Construct scale drawings, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D11",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Estimate and compare quantities, materials and costs using measurements taken from scale drawings and building plans with commonly used symbols"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D12",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Calculate the perimeter, or area of a section of land using the Trapezoidal rule where appropriate, from a site plan, an aerial photograph, a radial survey or a map that includes a scale"
+  },
+  {
+   "code": "HSC-S1-M5-T1-D13",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Ratios / Calculate the volume of rainfall over an area using , where is the volume, is the area of land and is the depth of rain, from a site plan, an aerial photograph, a radial survey or a map that includes a scale"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D1",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Explain the difference between ratios and rates"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D2",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Represent given information as a unit rate"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D3",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Convert between rates"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D4",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Make comparisons between rates in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D5",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Compare unit prices to determine best buys"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D6",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Use rates to solve problems in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D7",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Interpret and analyse distance–time graphs to solve problems related to speed, distance and time"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D8",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Examine fuel consumption rates to compare the efficiency of vehicles"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D9",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Recognise and convert between watts (W) and kilowatts (kW) using"
+  },
+  {
+   "code": "HSC-S1-M5-T2-D10",
+   "path": "Year 12 – Standard 1 / Ratios and rates / Rates / Apply units of energy to calculate kilowatt hours and solve problems involving the consumption of energy"
+  },
+  {
+   "code": "HSC-S1-M6-T1-D1",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Bivariate datasets / Distinguish between situations involving one-variable data and bivariate data and explain when each is needed"
+  },
+  {
+   "code": "HSC-S1-M6-T1-D2",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Bivariate datasets / Explain the difference between variables that show correlation and those that have a causal relationship"
+  },
+  {
+   "code": "HSC-S1-M6-T1-D3",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Bivariate datasets / Identify the independent and dependent variables within a bivariate dataset where appropriate"
+  },
+  {
+   "code": "HSC-S1-M6-T1-D4",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Bivariate datasets / Analyse relationships between independent and dependent variables that may be described as causal"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D1",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Represent a bivariate dataset using a scatter plot"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D2",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Create a line of best fit on a scatter plot for a bivariate dataset, by eye and with digital tools"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D3",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Describe the form of a dataset as linear or non-linear based on the association between two variables"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D4",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Describe the strength of a linear relationship between two variables as strong, moderate or weak, and its direction as positive or negative"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D5",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Examine lines of best fit to make predictions and recognise limitations of interpolation and extrapolation for bivariate datasets within a variety of contexts"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D6",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Determine and interpret the intercept and gradient of the line of best fit from a given graph to form an equation of the line"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D7",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Calculate and interpret Pearson’s correlation coefficient () for a bivariate dataset using a scientific calculator to quantify the strength of a linear association between the two variables"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D8",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Determine the equation of the least-squares regression line for a bivariate dataset using a scientific calculator"
+  },
+  {
+   "code": "HSC-S1-M6-T2-D9",
+   "path": "Year 12 – Standard 1 / Bivariate data analysis / Scatter plots and lines of best fit / Use a spreadsheet to construct a scatter plot and the least-squares regression line for a bivariate dataset"
+  },
+  {
+   "code": "HSC-S1-M7-D1",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Recognise that probabilities range from 0 (impossible) to 1 (certain) and can be represented as fractions, decimals and percentages"
+  },
+  {
+   "code": "HSC-S1-M7-D2",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Identify and define the sample space as the set of all possible outcomes of a chance experiment"
+  },
+  {
+   "code": "HSC-S1-M7-D3",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Determine the number of outcomes for an experiment"
+  },
+  {
+   "code": "HSC-S1-M7-D4",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Express the probability of an event that has a finite number of equally likely outcomes, as"
+  },
+  {
+   "code": "HSC-S1-M7-D5",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Apply to calculate the probability of the complement of an event"
+  },
+  {
+   "code": "HSC-S1-M7-D6",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Represent equally likely outcomes using arrays and tree diagrams to solve problems, involving replacement where applicable, in two-stage events"
+  },
+  {
+   "code": "HSC-S1-M7-D7",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Use relative frequency as an estimate of probability"
+  },
+  {
+   "code": "HSC-S1-M7-D8",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Recognise that increasing the number of trials produces relative frequencies that become closer in value to the theoretical probability"
+  },
+  {
+   "code": "HSC-S1-M7-D9",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Calculate the expected frequency of an event occurring using where is the number of times an experiment is repeated, and is the probability that the event occurs each of those times"
+  },
+  {
+   "code": "HSC-S1-M7-D10",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Examine the use of statistics and the associated probabilities in shaping decisions made by the media, governments and companies"
+  },
+  {
+   "code": "HSC-S1-M7-D11",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Construct and use arrays, tree diagrams and probability trees to determine the outcomes and probabilities for multistage events"
+  },
+  {
+   "code": "HSC-S1-M7-D12",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Determine the probabilities of outcomes for multistage events using"
+  },
+  {
+   "code": "HSC-S1-M7-D13",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Calculate the expected frequency of an event occurring using where is the number of times an experiment is repeated, and is the probability that the event occurs on each of those times"
+  },
+  {
+   "code": "HSC-S1-M7-D14",
+   "path": "Year 12 – Standard 1 / Relative frequency and probability / Construct and interpret Venn diagrams and two-way tables from given information, limited to combinations of two attributes, and use them to solve problems in a variety of contexts"
+  },
+  {
+   "code": "HSC-S2-M1-T2-D1",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Exponential relationships / Recognise that an exponential relationship can be represented by an equation, a table of values, a set of ordered pairs or a graph, and move flexibly between these representations"
+  },
+  {
+   "code": "HSC-S2-M1-T2-D2",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Exponential relationships / Graph an exponential relationship of the form and , where , with and without using graphing applications"
+  },
+  {
+   "code": "HSC-S2-M1-T2-D3",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Exponential relationships / Construct and analyse an exponential model of the form and , where and is a constant, to solve practical growth or decay problems"
+  },
+  {
+   "code": "HSC-S2-M1-T2-D4",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Exponential relationships / Interpret the meaning of the intercept of an exponential graph in a variety of contexts"
+  },
+  {
+   "code": "HSC-S2-M1-T2-D5",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Exponential relationships / Explain the limitations of exponential models in practical contexts"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D1",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Recognise that a quadratic relationship can be represented by an equation, a table of values, a set of ordered pairs or a graph, and move flexibly between these representations"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D2",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Recognise the parabolic shape of a quadratic relationship, noting its vertex and axis of symmetry"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D3",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Graph a quadratic relationship of the form using graphing applications"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D4",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Identify the -intercepts and -intercept of a parabola from a graph"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D5",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Determine the axis of symmetry and vertex of a parabola using the midpoint of the -intercepts shown on a graph"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D6",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Analyse a given graph of a quadratic relationship and use it to solve practical problems"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D7",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Interpret the meaning of the intercepts and vertex of a parabola in a variety of contexts"
+  },
+  {
+   "code": "HSC-S2-M1-T3-D8",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Quadratic relationships / Explain the limitations of a model of a quadratic relationship in a practical context and consider the values for and for which the quadratic model is valid"
+  },
+  {
+   "code": "HSC-S2-M1-T4-D1",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Reciprocal relationships / Recognise that inverse variation is represented by a reciprocal relationship of the form , where is the constant of variation"
+  },
+  {
+   "code": "HSC-S2-M1-T4-D2",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Reciprocal relationships / Identify the hyperbolic shape of a reciprocal graph"
+  },
+  {
+   "code": "HSC-S2-M1-T4-D3",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Reciprocal relationships / Graph a reciprocal relationship of the form , with and without using graphing applications"
+  },
+  {
+   "code": "HSC-S2-M1-T4-D4",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Reciprocal relationships / Construct a reciprocal model of the form to analyse inverse variation problems"
+  },
+  {
+   "code": "HSC-S2-M1-T4-D5",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Reciprocal relationships / Solve inverse variation problems graphically, or algebraically given the value of two of the variables in"
+  },
+  {
+   "code": "HSC-S2-M1-T4-D6",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Reciprocal relationships / Explain the limitations of reciprocal models in practical inverse variation problems"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D1",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Calculate simple interest for different rates and time periods using the formula where = simple interest, = principal, = interest rate per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D2",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Solve problems involving simple interest in a variety of contexts"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D3",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Compare simple interest graphs for different interest rates and time periods, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D4",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Calculate the future value, present value or interest rate of a compound interest investment using the formula where = future value of the investment, = present value of the investment, = interest rate per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D5",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Solve problems involving compound interest in a variety of contexts, including inflation and appreciation"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D6",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Examine the effect of varying the interest rate, the term or the compounding period on the future value of an investment, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D7",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Compare the growth of simple interest and compound interest investments numerically and graphically, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D8",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Recognise that simple interest graphs are linear and compound interest graphs are exponential"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D9",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Use a spreadsheet to numerically and graphically model investments using both simple and compound interest"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D10",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Interpret and analyse tables and graphs about the value of share"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D11",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Graph and interpret the value of a share over time, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D12",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Calculate the dividend paid and the dividend yield on shares (excluding franked dividends)"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D13",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Solve problems involving calculation of brokerage costs and total costs of purchasing shares"
+  },
+  {
+   "code": "HSC-S2-M2-T1-D14",
+   "path": "Year 12 – Standard 2 / Investment and loans / Investment / Compare and contrast savings accounts, term deposits, shares and buying property as investment strategies"
+  },
+  {
+   "code": "HSC-S2-M2-T2-D1",
+   "path": "Year 12 – Standard 2 / Investment and loans / Depreciation / Apply the straight-line depreciation method to calculate the depreciation of an asset using the formula where = salvage value, = initial value of the asset, = depreciation amount per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S2-M2-T2-D2",
+   "path": "Year 12 – Standard 2 / Investment and loans / Depreciation / Apply the declining balance method to calculate the depreciation of an asset using the formula where = salvage value, = initial value of the asset, = depreciation rate per time period and = number of time periods"
+  },
+  {
+   "code": "HSC-S2-M2-T2-D3",
+   "path": "Year 12 – Standard 2 / Investment and loans / Depreciation / Compare straight-line depreciation and declining balance depreciation both numerically and graphically, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M2-T2-D4",
+   "path": "Year 12 – Standard 2 / Investment and loans / Depreciation / Use a spreadsheet to numerically and graphically model depreciation using the straight-line and declining balance methods"
+  },
+  {
+   "code": "HSC-S2-M2-T3-D1",
+   "path": "Year 12 – Standard 2 / Investment and loans / Loans / Compare and analyse the costs associated with buy now, pay later, short term and long term loans"
+  },
+  {
+   "code": "HSC-S2-M2-T3-D2",
+   "path": "Year 12 – Standard 2 / Investment and loans / Loans / Model a reducing balance loan as an application of compound interest with periodic repayments in tabular form for up to four time periods, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M2-T3-D3",
+   "path": "Year 12 – Standard 2 / Investment and loans / Loans / Use a spreadsheet to model and solve problems involving a reducing balance loan in a variety of contexts"
+  },
+  {
+   "code": "HSC-S2-M2-T3-D4",
+   "path": "Year 12 – Standard 2 / Investment and loans / Loans / Examine the effect of changing the repayment frequency, additional repayments or a lump-sum payment on the term and cost of a loan using a graph or by calculation"
+  },
+  {
+   "code": "HSC-S2-M2-T3-D5",
+   "path": "Year 12 – Standard 2 / Investment and loans / Loans / Solve problems involving reducing balance loans including calculating the total amount paid, monthly repayments, amount still owing and the time taken to repay the loan"
+  },
+  {
+   "code": "HSC-S2-M2-T4-D1",
+   "path": "Year 12 – Standard 2 / Investment and loans / Credit cards / Explain how credit cards are an example of a reducing balance loan"
+  },
+  {
+   "code": "HSC-S2-M2-T4-D2",
+   "path": "Year 12 – Standard 2 / Investment and loans / Credit cards / Compare credit card interest rates with interest rates for other loan types"
+  },
+  {
+   "code": "HSC-S2-M2-T4-D3",
+   "path": "Year 12 – Standard 2 / Investment and loans / Credit cards / Identify the various fees and charges associated with credit card usage, and understand the meaning of an interest-free period"
+  },
+  {
+   "code": "HSC-S2-M2-T4-D4",
+   "path": "Year 12 – Standard 2 / Investment and loans / Credit cards / Interpret a credit card statement, examining the implications of only making the minimum payment"
+  },
+  {
+   "code": "HSC-S2-M2-T4-D5",
+   "path": "Year 12 – Standard 2 / Investment and loans / Credit cards / Calculate the compound interest charged on a purchase, transaction or outstanding balance for a given number of days, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M2-T4-D6",
+   "path": "Year 12 – Standard 2 / Investment and loans / Credit cards / Compare credit options to best manage finances to meet short-term, medium-term and long-term goals, such as credit cards and personal loans"
+  },
+  {
+   "code": "HSC-S2-M3-D1",
+   "path": "Year 12 – Standard 2 / Annuities / Identify an annuity as an investment account with regular, equal contributions and interest compounding at the end of each period, or as a single sum investment from which regular equal withdrawals are made"
+  },
+  {
+   "code": "HSC-S2-M3-D2",
+   "path": "Year 12 – Standard 2 / Annuities / Model an annuity in tabular form for up to four time periods"
+  },
+  {
+   "code": "HSC-S2-M3-D3",
+   "path": "Year 12 – Standard 2 / Annuities / Use a spreadsheet to model an annuity"
+  },
+  {
+   "code": "HSC-S2-M3-D4",
+   "path": "Year 12 – Standard 2 / Annuities / Using a table of interest factors, calculate the future value or present value of an annuity"
+  },
+  {
+   "code": "HSC-S2-M3-D5",
+   "path": "Year 12 – Standard 2 / Annuities / Using a table of interest factors, determine the contribution amount required to achieve a given future value or the single sum contribution required to produce an equivalent future value for any given annuity"
+  },
+  {
+   "code": "HSC-S2-M3-D6",
+   "path": "Year 12 – Standard 2 / Annuities / Examine the effect of varying the amount initially invested, the value of the periodic payment, the interest rate and the duration of the annuity on the total value of the investment, using digital tools"
+  },
+  {
+   "code": "HSC-S2-M3-D7",
+   "path": "Year 12 – Standard 2 / Annuities / Solve annuity problems involving financial decisions regarding superannuation, savings accounts and loans"
+  },
+  {
+   "code": "HSC-S2-M4-D1",
+   "path": "Year 12 – Standard 2 / Trigonometry / Apply trigonometric ratios to right-angled triangles to find either the lengths of unknown sides or the size of unknown angles in both degrees, and degrees and minutes"
+  },
+  {
+   "code": "HSC-S2-M4-D2",
+   "path": "Year 12 – Standard 2 / Trigonometry / Apply the sine rule in a given triangle to find the value of an unknown side"
+  },
+  {
+   "code": "HSC-S2-M4-D3",
+   "path": "Year 12 – Standard 2 / Trigonometry / Apply the sine rule in a given triangle to find the value of an unknown angle, excluding the ambiguous case"
+  },
+  {
+   "code": "HSC-S2-M4-D4",
+   "path": "Year 12 – Standard 2 / Trigonometry / Apply the sine rule in a given triangle to find the value of an unknown angle, given that the unknown angle is obtuse"
+  },
+  {
+   "code": "HSC-S2-M4-D5",
+   "path": "Year 12 – Standard 2 / Trigonometry / Apply the cosine rule in a given triangle to find the value of an unknown side"
+  },
+  {
+   "code": "HSC-S2-M4-D6",
+   "path": "Year 12 – Standard 2 / Trigonometry / Apply the cosine rule in a given triangle to find the value of an unknown angle"
+  },
+  {
+   "code": "HSC-S2-M4-D7",
+   "path": "Year 12 – Standard 2 / Trigonometry / Apply the formula , where and are the sides that form the included angle in a given triangle , to solve problems in a range of contexts"
+  },
+  {
+   "code": "HSC-S2-M4-D8",
+   "path": "Year 12 – Standard 2 / Trigonometry / Identify and interpret true bearings and compass bearings and convert between them"
+  },
+  {
+   "code": "HSC-S2-M4-D9",
+   "path": "Year 12 – Standard 2 / Trigonometry / Construct and interpret compass radial surveys and solve related problems"
+  },
+  {
+   "code": "HSC-S2-M4-D10",
+   "path": "Year 12 – Standard 2 / Trigonometry / Solve practical problems involving Pythagoras’ theorem, the trigonometry of right-angled and non-right-angled triangles, angles of elevation and depression, and true bearings and compass bearings"
+  },
+  {
+   "code": "HSC-S2-M6-D1",
+   "path": "Year 12 – Standard 2 / Network flow / Define and use network flow terminology including source, sink, outflow, inflow and cut"
+  },
+  {
+   "code": "HSC-S2-M6-D2",
+   "path": "Year 12 – Standard 2 / Network flow / Convert information presented in a table to a weighted and directed network diagram"
+  },
+  {
+   "code": "HSC-S2-M6-D3",
+   "path": "Year 12 – Standard 2 / Network flow / Calculate and analyse the flow capacity of a network including the use of the saturated edges method"
+  },
+  {
+   "code": "HSC-S2-M6-D4",
+   "path": "Year 12 – Standard 2 / Network flow / Solve small-scale network flow problems including the use of applying the maximum-flow minimum-cut theorem"
+  },
+  {
+   "code": "HSC-S2-M6-D5",
+   "path": "Year 12 – Standard 2 / Network flow / Examine the impact of increasing or reducing the flow capacity of an edge in a network diagram"
+  },
+  {
+   "code": "HSC-S2-M6-D6",
+   "path": "Year 12 – Standard 2 / Network flow / Explain why the flow capacity of a network is or is not sufficient to meet demand in a variety of contexts"
+  },
+  {
+   "code": "HSC-S2-M7-D1",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Construct a network diagram from a precedence table or equivalent, including those involving dummy activities, limited to 10 activities"
+  },
+  {
+   "code": "HSC-S2-M7-D2",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Explain the term critical path"
+  },
+  {
+   "code": "HSC-S2-M7-D3",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Apply forward and backward scanning to determine the earliest starting time (EST) and latest starting time (LST) for each activity in a project"
+  },
+  {
+   "code": "HSC-S2-M7-D4",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Calculate float times to identify critical and non-critical activities"
+  },
+  {
+   "code": "HSC-S2-M7-D5",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Analyse ESTs and LSTs to locate the critical path(s) for the project"
+  },
+  {
+   "code": "HSC-S2-M7-D6",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Apply critical path analysis to determine the minimum completion time for a project"
+  },
+  {
+   "code": "HSC-S2-M7-D7",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Construct a Gantt chart to represent a project from a network diagram indicating the critical path"
+  },
+  {
+   "code": "HSC-S2-M7-D8",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Examine the impact of increasing or reducing the duration of an activity on the completion time of the project or task being modelled"
+  },
+  {
+   "code": "HSC-S2-M7-D9",
+   "path": "Year 12 – Standard 2 / Critical path analysis / Use a spreadsheet to model a project involving precedence tables and solve related problems"
+  },
+  {
+   "code": "HSC-S2-M10-T1-D1",
+   "path": "Year 12 – Standard 2 / The normal distribution / Normally distributed datasets / Recognise that a dataset that is normally distributed can be represented by a bell-shaped curve"
+  },
+  {
+   "code": "HSC-S2-M10-T1-D2",
+   "path": "Year 12 – Standard 2 / The normal distribution / Normally distributed datasets / Explain that the mean, median and mode are approximately equal for data arising from a random variable that is normally distributed"
+  },
+  {
+   "code": "HSC-S2-M10-T2-D1",
+   "path": "Year 12 – Standard 2 / The normal distribution / Calculating z-scores / Describe the -score as the number of standard deviations that a value is above or below the mean"
+  },
+  {
+   "code": "HSC-S2-M10-T2-D2",
+   "path": "Year 12 – Standard 2 / The normal distribution / Calculating z-scores / Recognise that the set of -scores for data arising from a random variable that is normally distributed has a mean of 0 and standard deviation of 1"
+  },
+  {
+   "code": "HSC-S2-M10-T2-D3",
+   "path": "Year 12 – Standard 2 / The normal distribution / Calculating z-scores / Calculate the -score corresponding to a specific value in a dataset by applying the formula, where is a specific value, is the mean and is the standard deviation"
+  },
+  {
+   "code": "HSC-S2-M10-T2-D4",
+   "path": "Year 12 – Standard 2 / The normal distribution / Calculating z-scores / Use -scores to compare scores from different datasets and justify conclusions in the context of the problem"
+  },
+  {
+   "code": "HSC-S2-M10-T2-D5",
+   "path": "Year 12 – Standard 2 / The normal distribution / Calculating z-scores / Model and apply the empirical rule, where approximately 68% of data will have -scores between −1 and 1, approximately 95% of data will have -scores between −2 and 2, and approximately 99.7% of data will have -scores between −3 and 3"
+  },
+  {
+   "code": "HSC-S2-M10-T3-D1",
+   "path": "Year 12 – Standard 2 / The normal distribution / Probability using z-scores / Calculate probabilities using -scores and the empirical rule"
+  },
+  {
+   "code": "HSC-S2-M10-T3-D2",
+   "path": "Year 12 – Standard 2 / The normal distribution / Probability using z-scores / Represent probabilities by shading areas under the normal distribution curve"
+  },
+  {
+   "code": "HSC-S2-M10-T3-D3",
+   "path": "Year 12 – Standard 2 / The normal distribution / Probability using z-scores / Use -scores to identify probabilities of events less or more extreme than a given event and solve problems"
+  },
+  {
+   "code": "HSC-S2-M10-T3-D4",
+   "path": "Year 12 – Standard 2 / The normal distribution / Probability using z-scores / Use -scores to make judgements related to outcomes of a given event or sets of data"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D1",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Explain the difference between ratios and rates"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D2",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Represent given information as a unit rate"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D3",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Convert between rates"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D4",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Make comparisons between rates in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D5",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Compare unit prices to determine best buys"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D6",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Use rates to solve problems in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D7",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Interpret and analyse distance–time graphs to solve problems related to speed, distance and time"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D8",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Examine fuel consumption rates to compare the efficiency of vehicles"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D9",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Recognise and convert between watts (W) and kilowatts (kW) using"
+  },
+  {
+   "code": "HSC-S2-M5-T2-D10",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Rates / Apply units of energy to calculate kilowatt hours and solve problems involving the consumption of energy"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D1",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Recognise ratios and explain their relationship with fractions"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D2",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Express a ratio in simplest form"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D3",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Determine the ratio of two quantities"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D4",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Divide a quantity in a given ratio"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D5",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Solve practical problems involving ratios"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D6",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Explain the relationship between ratios and map scales and apply this relationship to solve problems in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D7",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Obtain measurements from scale drawings and building plans with commonly used symbols to solve problems in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D8",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Estimate and compare quantities, materials and costs using measurements taken from scale drawings"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D9",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Solve practical ratio problems involving the capture-recapture technique"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D10",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Construct scale drawings, with and without using digital tools"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D11",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Estimate and compare quantities, materials and costs using measurements taken from scale drawings and building plans with commonly used symbols"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D12",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Calculate the perimeter, or area of a section of land using the Trapezoidal rule where appropriate, from a site plan, an aerial photograph, a radial survey or a map that includes a scale"
+  },
+  {
+   "code": "HSC-S2-M5-T1-D13",
+   "path": "Year 12 – Standard 2 / Ratios and rates / Ratios / Calculate the volume of rainfall over an area using , where is the volume, is the area of land and is the depth of rain, from a site plan, an aerial photograph, a radial survey or a map that includes a scale"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D1",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Graph two linear equations using a table of values or a graphing application and identify the point of intersection"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D2",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Solve a pair of simultaneous linear equations by finding the point of intersection of their graphs, with and without graphing applications"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D3",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Determine and interpret the point of intersection of two linear graphs in a variety of practical contexts"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D4",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Use simultaneous equations to model and analyse the break-even point of a problem where cost and revenue are represented by linear equations"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D5",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Identify the break-even point and solve problems involving profit and loss by using a spreadsheet to model the problem"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D6",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Graph two linear equations and identify the point of intersection, with and without using graphing applications"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D7",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Solve a pair of simultaneous linear equations using graphical and algebraic methods"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D8",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Develop a pair of simultaneous linear equations to model a practical situation"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D9",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Solve practical problems that involve simultaneous linear equations"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D10",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Use simultaneous equations to model and analyse the break-even point where cost and revenue are represented by linear equations"
+  },
+  {
+   "code": "HSC-S2-M1-T1-D11",
+   "path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations / Identify the break-even point and solve problems involving profit and loss using a spreadsheet"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D1",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Represent a bivariate dataset using a scatter plot"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D2",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Create a line of best fit on a scatter plot for a bivariate dataset, by eye and with digital tools"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D3",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Describe the form of a dataset as linear or non-linear based on the association between two variables"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D4",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Describe the strength of a linear relationship between two variables as strong, moderate or weak, and its direction as positive or negative"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D5",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Examine lines of best fit to make predictions and recognise limitations of interpolation and extrapolation for bivariate datasets within a variety of contexts"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D6",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Determine and interpret the intercept and gradient of the line of best fit from a given graph to form an equation of the line"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D7",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Calculate and interpret Pearson’s correlation coefficient () for a bivariate dataset using a scientific calculator to quantify the strength of a linear association between the two variables"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D8",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Determine the equation of the least-squares regression line for a bivariate dataset using a scientific calculator"
+  },
+  {
+   "code": "HSC-S2-M8-T2-D9",
+   "path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit / Use a spreadsheet to construct a scatter plot and the least-squares regression line for a bivariate dataset"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ms22020q17",
+   "year": 2020,
+   "number": "17",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 – Standard 2 / Ratios and rates / Rates",
+   "text": "Ayla wishes to estimate the number of trees on a square block of land measuring $1000$ m by $1000$ m. She counts the number of trees on a $5$ m by $5$ m section of the block and finds there are $8$ trees. Based on this, estimate the number of trees on the entire square block of land."
+  },
+  {
+   "id": "ms22020q23",
+   "year": 2020,
+   "number": "23",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 – Standard 2 / Ratios and rates / Ratios",
+   "text": "In a tropical drink, the ratio of pineapple juice to mango juice to orange juice is $15 : 9 : 4$. (a) How much orange juice is needed if the tropical drink is to contain $3$ litres of pineapple juice? (b) The internal dimensions of a drink container, in the shape of a rectangular prism, are shown. Diagram: $40$ cm by $35$ cm by $20$ cm, NOT TO SCALE. To completely fill the container with the tropical drink, how many litres of mango juice are required?"
+  },
+  {
+   "id": "ms22020q24",
+   "year": 2020,
+   "number": "24",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 – Standard 2 / Algebraic relationships / Simultaneous linear equations",
+   "text": "There are two tanks on a property, Tank A and Tank B. Initially, Tank A holds $1000$ litres of water and Tank B is empty. (a) Tank A begins to lose water at a constant rate of $20$ litres per minute. The volume of water in Tank A is modelled by $V = 1000 - 20t$ where $V$ is the volume in litres and $t$ is the time in minutes from when the tank begins to lose water. On the grid below, draw the graph of this model and label it as Tank A. Grid: $V$ 0 to 1000 against $t$ 0 to 50. (b) Tank B remains empty until $t = 15$ when water is added to it at a constant rate of $30$ litres per minute. By drawing a line on the grid on the previous page, or otherwise, find the value of $t$ when the two tanks contain the same volume of water. (c) Using the graphs drawn, or otherwise, find the value of $t$ (where $t > 0$) when the total volume of water in the two tanks is $1000$ litres."
+  },
+  {
+   "id": "ms22021q15",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 – Standard 2 / Ratios and rates / Ratios",
+   "text": "A total of 11 400 people entered a running race. The ratio of professional runners to amateurs was 3 : 16. All the professional runners completed the race while 600 of the amateurs did not complete the race.\nFor those who completed the race, what is the ratio, in simplest form, of professional runners to amateurs?\n1 : 2\n1 : 5\n1 : 8\n1 : 19"
+  },
+  {
+   "id": "ms22021q28",
+   "year": 2021,
+   "number": "28",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit",
+   "text": "A salesperson is interested in the relationship between the number of bottles of lemonade sold per day and the number of hours of sunshine in the day. The diagram shows the dataset used in the investigation and the least-squares regression line. Points plotted are (2, 8), (3, 11), (5, 19), (6, 22), (9, 30) on axes Number of hours of sunshine (x) from 0 to 10 and Number of bottles sold (y) from 0 to 32. A dashed regression line passes through about (0, 2) and (9, 31).\n(a) Find the equation of the least-squares regression line relating to the dataset.\n(b) Suppose a sixth data point was collected on a day which had 10 hours of sunshine. On that day 45 bottles of lemonade were sold. What would happen to the gradient found in part (a)?"
+  },
+  {
+   "id": "ms22021q33",
+   "year": 2021,
+   "number": "33",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 – Standard 2 / Bivariate data analysis / Scatter plots and lines of best fit",
+   "text": "For a sample of 17 inland towns, height above sea level ($x$ metres) and average maximum daily temperature ($y$ degrees Celsius) were recorded. Regression line $y = 29.2 - 0.011x$, correlation $r = -0.494$.\nFor the same towns, latitude ($x$ degrees south) and average maximum daily temperature ($y$ degrees Celsius) are shown. Regression line $y = 45.6 - 0.683x$, correlation $r = -0.897$. Another town is 540 m above sea level and at 28 degrees south.\n(a) (i) Use the height equation to predict temperature for a town 540 m above sea level (1 dp). (a) (ii) Interpret the gradient -0.011. (b) Which of height or latitude is better to predict temperature? Give a reason."
+  },
+  {
+   "id": "ms12023q01",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Applications of measurement / Practicalities of measurement",
+   "text": "What is $4.26819$ when rounded to 3 decimal places?\n$4.26$\n$4.27$\n$4.268$\n$4.269$"
+  }
+ ]
+}

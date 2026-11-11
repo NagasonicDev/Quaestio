@@ -1,0 +1,802 @@
+{
+ "multi202101": {
+  "code": "HSC-M4-T5-D2",
+  "confidence": "high",
+  "why": "serif font identification"
+ },
+ "multi202102": {
+  "code": "HSC-M4-T5-D13",
+  "confidence": "high",
+  "why": "scanner converts image to digital file"
+ },
+ "multi202103": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "medium",
+  "why": "streaming connection speed units"
+ },
+ "multi202104": {
+  "code": "HSC-M4-T5-D11",
+  "confidence": "medium",
+  "why": "GIF supports transparency"
+ },
+ "multi202105": {
+  "code": "HSC-M2-T2-D43",
+  "confidence": "high",
+  "why": "motion capture for animation"
+ },
+ "multi202106": {
+  "code": "HSC-M4-T5-D20",
+  "confidence": "high",
+  "why": "anti-aliasing smooths jagged lines"
+ },
+ "multi202107": {
+  "code": "HSC-M2-T2-D35",
+  "confidence": "high",
+  "why": "tweening between key frames"
+ },
+ "multi202108": {
+  "code": "HSC-M2-T2-D64",
+  "confidence": "medium",
+  "why": "PNG is lossless format"
+ },
+ "multi202109": {
+  "code": "HSC-M2-T2-D36",
+  "confidence": "high",
+  "why": "frame rates for slow motion"
+ },
+ "multi202110": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "medium",
+  "why": "data transfer time at connection speed"
+ },
+ "multi202111": {
+  "code": "HSC-M2-T2-D68",
+  "confidence": "medium",
+  "why": "software for vector graphics"
+ },
+ "multi202112": {
+  "code": "HSC-M2-T2-D6",
+  "confidence": "high",
+  "why": "digital audio wave pattern diagram"
+ },
+ "multi202113": {
+  "code": "HSC-M4-T5-D5",
+  "confidence": "high",
+  "why": "image file size from colour depth"
+ },
+ "multi202114": {
+  "code": "HSC-M2-T2-D16",
+  "confidence": "high",
+  "why": "video compression quality and storage"
+ },
+ "multi202115": {
+  "code": "HSC-M2-T2-D80",
+  "confidence": "high",
+  "why": "ethical issues in multimedia"
+ },
+ "multi202116": {
+  "code": "HSC-M2-T1-D22",
+  "confidence": "high",
+  "why": "industrial relations issues"
+ },
+ "timber202101": {
+  "code": "HSC-M1-T2-D108",
+  "confidence": "medium",
+  "why": "select face side first"
+ },
+ "timber202102": {
+  "code": "HSC-M1-T2-D67",
+  "confidence": "medium",
+  "why": "screw gauge number"
+ },
+ "timber202103": {
+  "code": null,
+  "confidence": "high",
+  "why": "placeholder question text"
+ },
+ "timber202104": {
+  "code": "HSC-M1-T2-D62",
+  "confidence": "medium",
+  "why": "veneer is finely sliced timber"
+ },
+ "timber202105": {
+  "code": "HSC-M1-T2-D77",
+  "confidence": "high",
+  "why": "table clips attach tabletop"
+ },
+ "timber202106": {
+  "code": null,
+  "confidence": "medium",
+  "why": "nail extraction leverage not covered"
+ },
+ "timber202107": {
+  "code": "HSC-M1-T2-D137",
+  "confidence": "high",
+  "why": "housing joint trench depth"
+ },
+ "timber202108": {
+  "code": "HSC-M1-T2-D71",
+  "confidence": "high",
+  "why": "cam lock knockdown fastener"
+ },
+ "timber202109": {
+  "code": "HSC-M1-T2-D110",
+  "confidence": "high",
+  "why": "shellac with methylated spirits"
+ },
+ "timber202110": {
+  "code": "HSC-M1-T2-D43",
+  "confidence": "high",
+  "why": "quarter sawing wastes timber"
+ },
+ "timber202111": {
+  "code": "HSC-M1-T2-D169",
+  "confidence": "medium",
+  "why": "identify timber tool"
+ },
+ "timber202112": {
+  "code": "HSC-M1-T2-D43",
+  "confidence": "high",
+  "why": "kiln versus air seasoning"
+ },
+ "timber202113": {
+  "code": "HSC-M1-T2-D101",
+  "confidence": "medium",
+  "why": "cutting list and material cost"
+ },
+ "timber202114": {
+  "code": "HSC-M1-T2-D59",
+  "confidence": "high",
+  "why": "plywood manufacture from log"
+ },
+ "timber202115": {
+  "code": "HSC-M1-T2-D56",
+  "confidence": "medium",
+  "why": "environmental factors timber furniture"
+ },
+ "timber202116": {
+  "code": "HSC-M2-T1-D22",
+  "confidence": "high",
+  "why": "industrial relations issues"
+ },
+ "auto202201": {
+  "code": "HSC-M4-T1-D6",
+  "confidence": "high",
+  "why": "LPG stands for liquefied petroleum gas"
+ },
+ "auto202202": {
+  "code": "HSC-M4-T1-D93",
+  "confidence": "high",
+  "why": "fuse value in fuse box"
+ },
+ "auto202203": {
+  "code": "HSC-M4-T1-D2",
+  "confidence": "medium",
+  "why": "electric vehicle battery type"
+ },
+ "auto202204": {
+  "code": "HSC-M4-T1-D111",
+  "confidence": "medium",
+  "why": "torque wrench for head bolts"
+ },
+ "auto202205": {
+  "code": "HSC-M4-T1-D71",
+  "confidence": "high",
+  "why": "rack and pinion advantage"
+ },
+ "auto202206": {
+  "code": "HSC-M4-T1-D75",
+  "confidence": "high",
+  "why": "four wheel steering features"
+ },
+ "auto202207": {
+  "code": "HSC-M4-T1-D53",
+  "confidence": "high",
+  "why": "overinflation tyre wear pattern"
+ },
+ "auto202208": {
+  "code": null,
+  "confidence": "medium",
+  "why": "optional extra not covered by dots"
+ },
+ "auto202209": {
+  "code": "HSC-M4-T1-D95",
+  "confidence": "high",
+  "why": "mechanical gauge advantage"
+ },
+ "auto202210": {
+  "code": "HSC-M4-T1-D42",
+  "confidence": "high",
+  "why": "catalytic converter function"
+ },
+ "auto202211": {
+  "code": "HSC-M4-T1-D14",
+  "confidence": "high",
+  "why": "alternative fuel source"
+ },
+ "auto202212": {
+  "code": "HSC-M4-T1-D20",
+  "confidence": "high",
+  "why": "cylinder sleeve installation reason"
+ },
+ "auto202213": {
+  "code": null,
+  "confidence": "medium",
+  "why": "engine displacement calculation not covered"
+ },
+ "auto202214": {
+  "code": "HSC-M4-T1-D52",
+  "confidence": "high",
+  "why": "limited slip differential advantages"
+ },
+ "auto202215": {
+  "code": null,
+  "confidence": "medium",
+  "why": "fuel economy driving actions not covered"
+ },
+ "auto202216": {
+  "code": "HSC-M2-T1-D29",
+  "confidence": "high",
+  "why": "WHS legislation and safe workplace"
+ },
+ "elec202201": {
+  "code": "HSC-M4-T2-D64",
+  "confidence": "high",
+  "why": "identify measurement equipment"
+ },
+ "elec202202": {
+  "code": "HSC-M4-T2-D23",
+  "confidence": "high",
+  "why": "capacitor stores charge"
+ },
+ "elec202203": {
+  "code": "HSC-M4-T2-D23",
+  "confidence": "low",
+  "why": "resistor tolerance characteristic"
+ },
+ "elec202204": {
+  "code": "HSC-M4-T2-D14",
+  "confidence": "high",
+  "why": "silicon common semiconductor material"
+ },
+ "elec202205": {
+  "code": "HSC-M4-T2-D6",
+  "confidence": "high",
+  "why": "binary to decimal conversion"
+ },
+ "elec202206": {
+  "code": "HSC-M4-T2-D39",
+  "confidence": "high",
+  "why": "UHF system tuner changes frequency"
+ },
+ "elec202207": {
+  "code": null,
+  "confidence": "high",
+  "why": "placeholder question text"
+ },
+ "elec202208": {
+  "code": "HSC-M4-T2-D17",
+  "confidence": "high",
+  "why": "microprocessor control unit"
+ },
+ "elec202209": {
+  "code": "HSC-M4-T2-D5",
+  "confidence": "high",
+  "why": "analogue continuous variable signal"
+ },
+ "elec202210": {
+  "code": "HSC-M4-T2-D47",
+  "confidence": "high",
+  "why": "PCB construction step order"
+ },
+ "elec202211": {
+  "code": "HSC-M4-T2-D45",
+  "confidence": "medium",
+  "why": "soldering fault cause"
+ },
+ "elec202212": {
+  "code": "HSC-M4-T2-D17",
+  "confidence": "medium",
+  "why": "microprocessor application"
+ },
+ "elec202213": {
+  "code": null,
+  "confidence": "high",
+  "why": "circuit component costing not covered"
+ },
+ "elec202214": {
+  "code": "HSC-M4-T2-D37",
+  "confidence": "high",
+  "why": "how a buzzer works"
+ },
+ "elec202215": {
+  "code": "HSC-M4-T2-D65",
+  "confidence": "high",
+  "why": "analogue versus digital meters"
+ },
+ "elec202216": {
+  "code": "HSC-M2-T1-D29",
+  "confidence": "high",
+  "why": "WHS legislation and safe workplace"
+ },
+ "graph202201": {
+  "code": null,
+  "confidence": "medium",
+  "why": "pencil grade not covered by dots"
+ },
+ "graph202202": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "medium",
+  "why": "identify pictorial drawing type"
+ },
+ "graph202203": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "high",
+  "why": "section view type AS1100"
+ },
+ "graph202204": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "high",
+  "why": "section view type AS1100"
+ },
+ "graph202205": {
+  "code": "HSC-M3-T1-D7",
+  "confidence": "high",
+  "why": "view from back orthographic"
+ },
+ "graph202206": {
+  "code": "HSC-M3-T1-D18",
+  "confidence": "high",
+  "why": "Australian architectural style 1940s"
+ },
+ "graph202207": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "high",
+  "why": "section drawing information house plans"
+ },
+ "graph202208": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "medium",
+  "why": "shadow diagram times"
+ },
+ "graph202208q9": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "high",
+  "why": "scale rule actual length"
+ },
+ "graph202209": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "medium",
+  "why": "standard dimension for bolt multitool"
+ },
+ "graph202210": {
+  "code": "HSC-M3-T1-D26",
+  "confidence": "high",
+  "why": "purpose of prototype"
+ },
+ "graph202211": {
+  "code": "HSC-M3-T1-D4",
+  "confidence": "high",
+  "why": "advantage of freehand sketching"
+ },
+ "graph202212": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "medium",
+  "why": "site plan layout at scale"
+ },
+ "graph202213": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "high",
+  "why": "oblique cavalier projection"
+ },
+ "graph202214": {
+  "code": "HSC-M3-T1-D8",
+  "confidence": "medium",
+  "why": "section view of assembly drawing"
+ },
+ "graph202215": {
+  "code": "HSC-M2-T1-D29",
+  "confidence": "high",
+  "why": "WHS legislation and safe workplace"
+ },
+ "metal202201": {
+  "code": "HSC-M3-T2-D3",
+  "confidence": "high",
+  "why": "scriber marks fold lines"
+ },
+ "metal202202": {
+  "code": "HSC-M1-T2-D25",
+  "confidence": "high",
+  "why": "soft solder tin and lead"
+ },
+ "metal202203": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "flux prevents oxidation brazing"
+ },
+ "metal202204": {
+  "code": "HSC-M1-T2-D32",
+  "confidence": "medium",
+  "why": "gold found naturally pure"
+ },
+ "metal202205": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "forging metal on anvil"
+ },
+ "metal202206": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "medium",
+  "why": "bossing mallet for internal curves"
+ },
+ "metal202207": {
+  "code": "HSC-M1-T2-D36",
+  "confidence": "medium",
+  "why": "fastener prevents unintentional loosening"
+ },
+ "metal202208": {
+  "code": "HSC-M3-T2-D15",
+  "confidence": "high",
+  "why": "buffing with cloth wheel"
+ },
+ "metal202209": {
+  "code": "HSC-M3-T2-D11",
+  "confidence": "medium",
+  "why": "identify heat treatment process"
+ },
+ "metal202210": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "tool to produce a bevel"
+ },
+ "metal202211": {
+  "code": "HSC-M3-T2-D11",
+  "confidence": "high",
+  "why": "purpose of annealing"
+ },
+ "metal202212": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "lathe tailstock functions"
+ },
+ "metal202213": {
+  "code": null,
+  "confidence": "high",
+  "why": "material purchase costing not covered"
+ },
+ "metal202214": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "construct sheet metal box"
+ },
+ "metal202215": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "two methods of extrusion"
+ },
+ "metal202216": {
+  "code": "HSC-M2-T1-D29",
+  "confidence": "high",
+  "why": "WHS legislation and safe workplace"
+ },
+ "multi202201": {
+  "code": "HSC-M2-T2-D15",
+  "confidence": "high",
+  "why": "MIDI holds music sequence data"
+ },
+ "multi202202": {
+  "code": null,
+  "confidence": "medium",
+  "why": "stroke colour not covered"
+ },
+ "multi202203": {
+  "code": null,
+  "confidence": "high",
+  "why": "placeholder question text"
+ },
+ "multi202204": {
+  "code": "HSC-M4-T5-D4",
+  "confidence": "medium",
+  "why": "full HD screen resolution"
+ },
+ "multi202205": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "high",
+  "why": "RTSP streaming protocol"
+ },
+ "multi202206": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "high",
+  "why": "progressive JPEG loads faster"
+ },
+ "multi202207": {
+  "code": "HSC-M4-T5-D20",
+  "confidence": "high",
+  "why": "colour balance adjustment"
+ },
+ "multi202208": {
+  "code": "HSC-M2-T2-D6",
+  "confidence": "medium",
+  "why": "clipped audio recording level"
+ },
+ "multi202209": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "high",
+  "why": "buffering preloads content"
+ },
+ "multi202210": {
+  "code": "HSC-M2-T2-D21",
+  "confidence": "high",
+  "why": "aperture and depth of field"
+ },
+ "multi202211": {
+  "code": "HSC-M2-T2-D60",
+  "confidence": "high",
+  "why": "advantage of PDF files"
+ },
+ "multi202212": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "high",
+  "why": "purpose of online thumbnail"
+ },
+ "multi202213": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "medium",
+  "why": "file transfer time at connection speed"
+ },
+ "multi202214": {
+  "code": "HSC-M2-T2-D44",
+  "confidence": "high",
+  "why": "virtual reality advantages"
+ },
+ "multi202215": {
+  "code": "HSC-M2-T2-D31",
+  "confidence": "medium",
+  "why": "mouth shapes for animation dialogue"
+ },
+ "multi202216": {
+  "code": "HSC-M2-T1-D29",
+  "confidence": "high",
+  "why": "WHS legislation and safe workplace"
+ },
+ "timber202201": {
+  "code": "HSC-M1-T2-D68",
+  "confidence": "high",
+  "why": "panel pin nail identification"
+ },
+ "timber202202": {
+  "code": "HSC-M1-T2-D130",
+  "confidence": "high",
+  "why": "box pin used in drawer"
+ },
+ "timber202203": {
+  "code": "HSC-M1-T2-D93",
+  "confidence": "high",
+  "why": "hot melt glue temporary joinery"
+ },
+ "timber202204": {
+  "code": "HSC-M1-T2-D75",
+  "confidence": "high",
+  "why": "staple gun use"
+ },
+ "timber202205": {
+  "code": "HSC-M1-T2-D114",
+  "confidence": "high",
+  "why": "drawer bottom groove seasonal movement"
+ },
+ "timber202206": {
+  "code": "HSC-M1-T2-D169",
+  "confidence": "medium",
+  "why": "repair damaged chisel edge"
+ },
+ "timber202207": {
+  "code": "HSC-M1-T2-D58",
+  "confidence": "high",
+  "why": "manufactured board features"
+ },
+ "timber202208": {
+  "code": "HSC-M1-T2-D123",
+  "confidence": "medium",
+  "why": "groove and feather strengthens mitre"
+ },
+ "timber202209": {
+  "code": "HSC-M1-T2-D109",
+  "confidence": "high",
+  "why": "shellac fast drying"
+ },
+ "timber202210": {
+  "code": "HSC-M1-T2-D135",
+  "confidence": "high",
+  "why": "scribed joint in carcase"
+ },
+ "timber202211": {
+  "code": "HSC-M1-T2-D170",
+  "confidence": "medium",
+  "why": "industry machine to dress timber"
+ },
+ "timber202212": {
+  "code": "HSC-M1-T2-D43",
+  "confidence": "high",
+  "why": "equilibrium moisture content importance"
+ },
+ "timber202213": {
+  "code": null,
+  "confidence": "high",
+  "why": "stool material cost calculation"
+ },
+ "timber202214": {
+  "code": "HSC-M1-T2-D49",
+  "confidence": "high",
+  "why": "recycling timbers addresses shortages"
+ },
+ "timber202215": {
+  "code": "HSC-M1-T2-D71",
+  "confidence": "high",
+  "why": "benefits of knockdown fittings"
+ },
+ "timber202216": {
+  "code": "HSC-M2-T1-D29",
+  "confidence": "high",
+  "why": "WHS legislation and safe workplace"
+ },
+ "auto202301": {
+  "code": "HSC-M4-T1-D2",
+  "confidence": "high",
+  "why": "electric car quieter operation"
+ },
+ "auto202302": {
+  "code": "HSC-M4-T1-D17",
+  "confidence": "high",
+  "why": "four stroke operation sequence"
+ },
+ "auto202303": {
+  "code": "HSC-M4-T1-D42",
+  "confidence": "high",
+  "why": "catalytic converter reduces carbon monoxide"
+ },
+ "auto202304": {
+  "code": "HSC-M4-T1-D16",
+  "confidence": "medium",
+  "why": "discoloured coolant head gasket diagnosis"
+ },
+ "auto202305": {
+  "code": "HSC-M4-T1-D70",
+  "confidence": "high",
+  "why": "suspension system function"
+ },
+ "auto202306": {
+  "code": "HSC-M4-T1-D16",
+  "confidence": "medium",
+  "why": "injector failure cause diagnosis"
+ },
+ "auto202307": {
+  "code": "HSC-M4-T1-D54",
+  "confidence": "high",
+  "why": "tyre rotation even wear"
+ },
+ "auto202308": {
+  "code": "HSC-M4-T1-D18",
+  "confidence": "high",
+  "why": "cylinder head flatness check"
+ },
+ "auto202309": {
+  "code": "HSC-M4-T1-D44",
+  "confidence": "high",
+  "why": "clutch plate transmission part"
+ },
+ "auto202310": {
+  "code": "HSC-M4-T1-D21",
+  "confidence": "high",
+  "why": "piston ring end gap expansion"
+ },
+ "auto202311": {
+  "code": "HSC-M4-T1-D129",
+  "confidence": "high",
+  "why": "document to renew registration"
+ },
+ "auto202312": {
+  "code": "HSC-M4-T1-D131",
+  "confidence": "high",
+  "why": "modification reported to authority"
+ },
+ "auto202313": {
+  "code": "HSC-M4-T1-D107",
+  "confidence": "medium",
+  "why": "paint quantity and cost calculation"
+ },
+ "auto202314": {
+  "code": "HSC-M4-T1-D5",
+  "confidence": "medium",
+  "why": "engine oil replacement purpose"
+ },
+ "auto202315": {
+  "code": "HSC-M4-T1-D18",
+  "confidence": "high",
+  "why": "replacing cylinder head process"
+ },
+ "auto202316": {
+  "code": "HSC-M2-T1-D11",
+  "confidence": "medium",
+  "why": "mass production and automation impact"
+ },
+ "elec202301": {
+  "code": "HSC-M4-T2-D44",
+  "confidence": "high",
+  "why": "round nosed pliers for resistor legs"
+ },
+ "elec202302": {
+  "code": "HSC-M4-T2-D33",
+  "confidence": "high",
+  "why": "solenoid controls switch"
+ },
+ "elec202303": {
+  "code": "HSC-M4-T2-D6",
+  "confidence": "high",
+  "why": "binary used in computer processor"
+ },
+ "elec202304": {
+  "code": "HSC-M4-T2-D19",
+  "confidence": "medium",
+  "why": "EPROM programmable integrated circuit"
+ },
+ "elec202305": {
+  "code": "HSC-M4-T2-D74",
+  "confidence": "high",
+  "why": "op amp amplifies voltage"
+ },
+ "elec202306": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "high",
+  "why": "diode blocks reverse current"
+ },
+ "elec202307": {
+  "code": "HSC-M4-T2-D65",
+  "confidence": "high",
+  "why": "multimeter reading"
+ },
+ "elec202308": {
+  "code": "HSC-M4-T2-D73",
+  "confidence": "high",
+  "why": "IC oscillator purpose"
+ },
+ "elec202309": {
+  "code": "HSC-M4-T2-D38",
+  "confidence": "high",
+  "why": "condenser microphone uses piezo"
+ },
+ "elec202310": {
+  "code": "HSC-M4-T2-D59",
+  "confidence": "high",
+  "why": "draw diode circuit symbol"
+ },
+ "elec202311": {
+  "code": "HSC-M4-T2-D12",
+  "confidence": "high",
+  "why": "relay purpose in circuit"
+ },
+ "elec202312": {
+  "code": "HSC-M4-T2-D55",
+  "confidence": "high",
+  "why": "total resistance series parallel"
+ },
+ "elec202313": {
+  "code": "HSC-M4-T2-D47",
+  "confidence": "high",
+  "why": "single sided PCB process"
+ },
+ "elec202314": {
+  "code": "HSC-M4-T2-D1",
+  "confidence": "high",
+  "why": "renewable energy in community"
+ },
+ "elec202315": {
+  "code": "HSC-M2-T1-D11",
+  "confidence": "medium",
+  "why": "mass production and automation impact"
+ },
+ "graph202301": {
+  "code": "HSC-M3-T1-D7",
+  "confidence": "high",
+  "why": "top view of block"
+ }
+}

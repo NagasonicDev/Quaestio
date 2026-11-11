@@ -1,0 +1,401 @@
+{
+ "course_id": "french-extension",
+ "course_name": "French Extension",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "HSC-M1-T4-T6-D1",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / language"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D2",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / colloquial"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D3",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / dialect"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D4",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / accent"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D5",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / use of irony"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D6",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / satire"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D7",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / humour"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D8",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / tenses"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D9",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / ellipses"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D10",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / structure"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D11",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / setting"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D12",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / time"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D13",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / place"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D14",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / cultural aspects"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D15",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / character"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D16",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / key/secondary"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D17",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / imagery"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D18",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / symbolism"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D19",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / recurrent motif"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D20",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / simile/metaphor"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D21",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / relationship between author/director/narrator/singer and the audience"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D22",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / narrative technique"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D23",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / perspective"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D24",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / point of view"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D25",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / tone and mood"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D26",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / novel"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D27",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / plot development, sequencing of events, use of flashback"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D28",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / use of dialogue, narrative"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D29",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / use of allegory, extended metaphor"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D30",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / short story"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D31",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / brevity and compactness"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D32",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / focus on one situation or a few crucial moments"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D33",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / limited character development"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D34",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / fragmented plot"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D35",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / inconclusive or unexpected ending"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D36",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / song"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D37",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / instrumentation, voice, melody, rhythm, tempo"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D38",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / use of repetition"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D39",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / use of refrain"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D40",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / rhyme, rhythm, assonance, alliteration"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D41",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / film"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D42",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / shot composition/framing/editing"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D43",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / lighting/sound/colour"
+  },
+  {
+   "code": "HSC-M1-T4-T6-D44",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Le bon côté de la charité / costuming"
+  }
+ ],
+ "questions": [
+  {
+   "id": "french-extension-2020-q1",
+   "year": 2020,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer in ENGLISH the questions that\nfollow.\nScene A\nELISA:\nOh, passe-moi une clope . . .\nDRISS:\nEh, on t’a jamais appris à frapper, toi ?\nELISA:\nTu peins ?\nDRISS:\nOuais, allez dégage !\nELISA:\nNon mais c’est une blague ? Toi, tu peins ? Et t’as appris à lire aussi,\ndu coup, euh . . .\nDRISS:\nEh tu veux quoi, là ? Allez ! Sors ! Dégage !\nELISA:\nQu’est-ce que tu vas me faire ? Tu vas me frapper, c’est ça ? C’est\ncomme ça qu’on traite les femmes dans ton pays ?\nDRISS:\nMais t’as chaud ou quoi ? Allez sors là, sors, allez !\nELISA:\nJe sors si je veux quand je veux, OK ?\nDRISS:\nC’est ça ! Allez, dégage !\nELISA:\nTu vois là, j’décide, et là je sors.\nDRISS:\nDégage ! Putain !\nScene B\nPHILIPPE:\nRetirez cette photo et vous la remplacez par l’autre. Soyez gentille\nde la poster personnellement. Et restez discrète !\nYVONNE:\nComme vous voudrez.\nPHILIPPE:\nEt maintenant, vous jetez l’autre photo dans la poubelle.\nDRISS:\nFais gaffe ou j’vais péter un plomb.\nPHILIPPE:\nQuel est le problème ?\nDRISS:\nLe problème c’est votre fille. J’étais en train de peindre, là . . .\nPHILIPPE:\nVous étiez en train de peindre ?\nDRISS:\nOui bref, . . . j’veux juste vous dire. Faut la recadrer, parce que\nsinon, je vais l’encastrer contre un mur.\nPHILIPPE:\nCalmez-vous un peu !\nDRISS:\nNon, non je ne me calme pas. On est d’accord pour dire qu’ici je\nsuis vos bras et vos jambes ?\nPHILIPPE:\nOui, on est d’accord !\nDRISS:\nOui d’accord. Moi, j’ai envie d’être vos mains pour lui en coller une\nbonne. Parce que vous, à part lui rouler dessus, vous ne pouvez plus\nfaire grand-chose.\nPHILIPPE:\nDriss, vous n’en rajoutez pas un peu, là ? Yvonne ?\nDRISS:\nYvonne ?\nYVONNE:\nC’est vrai qu’elle aurait bien besoin d’un . . . d’un léger recadrage.\nDRISS:\nLéger ! Mais à seize ans, elle s’habille, elle se maquille n’importe\ncomment. Sans compter qu’elle galoche l’autre plumeau partout\ndans la baraque. Ça, à la rigueur, je m’en fous. Ça ne me regarde\npas. C’est son éducation. Ce qui me dérange, c’est plutôt comment\nelle prend tout le monde de haut là : comment elle vous parle;\ncomment elle me parle. Il est où, le respect là ? On est quoi, nous ?\nOn est des chiens ? Alors, donnez-moi le top que je lui remette les\nidées en place.\nPHILIPPE:\nBon, ça va j’ai compris. Laissez-moi faire. Je lui parlerai.\nDRISS:\nParlez-lui alors ! Mais, parlez-lui vite. Faites un truc. Mettez Elisa à\nsa place.\nPHILIPPE:\nIl peint ? Mais qu’est-ce qu’il peint ?\nYVONNE:\nJe ne sais pas moi.\n© 2011 Gaumont / Studio Canal / TF1 Films Production\n(a)\nExplain Elisa’s behaviour towards Driss in Scene A.\n3\n(b)\nRetirez cette photo et vous la remplacez par l’autre. (Scene B)\nExplain Philippe’s motivation in making this demand.\n3\n(c)\nIl est où, le respect là ? On est quoi, nous ? On est des chiens ? (Scene B)\nWhat does this statement reveal about Driss?\n4\n(d)\nAnalyse how the issue of acceptance is explored through the relationship\nbetween Driss and Philippe in Scene B and ONE other scene in the film.\n5\nExplain Elisa's behaviour towards Driss in Scene A.\nRetirez cette photo et vous la remplacez par l'autre. (Scene B)\nExplain Philippe's motivation in making this demand.\nIl est ou, le respect la? On est quoi, nous? On est des chiens? (Scene B)\nWhat does this statement reveal about Driss?\nAnalyse how the issue of acceptance is explored through the relationship between Driss and Philippe in Scene B and ONE other scene in the film."
+  },
+  {
+   "id": "french-extension-2020-q2",
+   "year": 2020,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer the question that follows. Write\napproximately 200 words in FRENCH.\nDRISS:\nElle s’en fout de la poésie ! Six mois de poésie ! Téléphone-lui !\nPHILIPPE:\nIl est malade, ce mec. Je m’en fous, je lui parle pas.\nDRISS:\nJe vais vérifier si elle a pas un accent bizarre. Dunkerque, c’est\nles ch’tis.\nImaginez qu’après cet échange, Magalie est allée voir Yvonne pour lui parler de ce qui s’est\npassé. Écrivez le texte de leur conversation.\nImagine that after this exchange Magalie goes to see Yvonne to talk about what happened.\nWrite the script of their conversation.\n© 2011 Gaumont / Studio Canal / TF1 Films Production"
+  },
+  {
+   "id": "french-extension-2020-q3",
+   "year": 2020,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous avez ete invite(e) a ecrire un article pour un magazine de jeunes en ligne sur le sujet, 'Les differences sociales nous empechent de vivre harmonieusement'. Ecrivez cet article dans lequel vous exprimez et justifiez votre avis.\nYou have been invited to write an article for an online youth magazine on the topic, 'Social differences prevent us from living harmoniously'. Write this article in which you express and justify your opinion."
+  },
+  {
+   "id": "french-extension-2020-q4",
+   "year": 2020,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous avez ete invite(e) a ecrire un article pour un magazine de jeunes en ligne sur le sujet, 'Notre identite et nos idees sont trop facilement formes par les medias'. Ecrivez cet article dans lequel vous exprimez et justifiez votre avis.\nYou have been invited to write an article for an online youth magazine on the topic, 'Our identity and our ideas are too easily shaped by the media'. Write this article in which you express and justify your opinion."
+  },
+  {
+   "id": "french-extension-2021-q1",
+   "year": 2021,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer in ENGLISH the questions that\nfollow.\nDRISS:\nC’est bon. Il est avec moi. Je te dis. Mina, arrête de pleurer. Il est pas\nblessé, c’est une égratignure. Il a rien. C’est n’importe quoi Mina !\nPersonne ne va tuer personne. C’est des menaces, c’est des mots. Ils\nvont rien faire. Maintenant moi je peux pas m’en occuper. Je peux\npas. Je travaille là. Non, tu dis rien. Tu dis rien. Tu la préviens pas. Tu\n5\nt’enfermes dans ta chambre si tu as envie de pleurer, tu pleures là-bas\nmais tu dis rien.\nOn va se coucher là non ?\nPHILIPPE: Moi je vais rester encore un petit instant. Asseyez-vous ! Asseyez-vous\nlà ! Qu’est-ce qu’elle évoque cette femme pour vous ?\n10\nDRISS:\nJ’sais pas. Elle a l’air bonne.\nPHILIPPE: À part ça ?\nDRISS:\nOn y va. On monte là ? Parce que j’ai un truc à régler là-haut.\nPHILIPPE: Moi, j’imagine qu’elle se lève, qu’elle se retourne, qu’enfin je découvre\nson visage. . . Il vous ressemble, le petit. Adama, c’est ça ?\n15\nDRISS:\nC’est ça.\nPHILIPPE: Je l’ai aperçu tout à l’heure. Je crois que si je l’avais croisé dans la rue,\nj’aurais tout de suite pu deviner que c’était votre frère.\nDRISS:\nC’est drôle !\nPHILIPPE: Pourquoi ?\n20\nDRISS:\nC’est drôle parce que c’est pas mon frère.\nPHILIPPE: Ah, bon ?\nDRISS:\nBen c’est compliqué.\nPHILIPPE: Ben, c’est votre frère ou c’est pas votre frère ? Bon, d’accord. J’ai\ncompris. Bon, allez, on y va !\n25\nDRISS:\nC’est mes parents. Pas mes parents. . . En fait c’est mon oncle et ma\ntante. Ils sont venus me chercher au Sénégal quand j’avais huit ans. Ils\narrivaient pas à avoir de gosses. Donc ils sont allés voir un frère qui\navait plein de gosses. Ils ont pris l’aîné. . . moi. En vrai je m’appelle\nBakari. C’est ça mon vrai nom. Mais y en avait déjà plein au quartier.\n30\nDonc, ils m’ont appelé Idriss. Je ne sais pas pourquoi c’est Driss qui\nest resté.\nPHILIPPE: Et après ?\nDRISS:\nAprès, comme par hasard ma mère. . . ma tante. . . elle est tombée\nenceinte deux fois de suite. Puis mon oncle est mort. Après il y a eu\n35\nd’autres gars, d’autres gosses. Je vous ai dit, c’est compliqué.\nPHILIPPE: Le petit Adama, il n’aurait pas besoin d’un léger recadrage ? Il est\nvenu vous chercher ? C’est ça ? Driss, je crois qu’on va s’arrêter là. En\nsomme, vous n’alliez pas pousser un handicapé toute votre vie. Puisque\nvous avez travaillé, vous avez bien mérité vos Assédics. Bon, allez !\n40\nAllez ! En route ! Allez.\nDRISS:\nOuais.\nPHILIPPE: Bassari, Bakari. . . Bakari, Bassari. . . C’est beau hein. On dirait de la\npoésie. On dirait presqu’une allitération. Vous savez ce que c’est une\nallitération ?\n45\n(a)\nTu dis rien. Tu la préviens pas. (line 5)\nWhy does Driss say this?\n2\n© 2011 Gaumont / Studio Canal / TF1 Films Production\n(b)\nDriss, je crois qu’on va s’arrêter là. (line 38)\nExplain the significance of this statement.\n3\n(c)\nOn dirait presqu’une allitération. Vous savez ce que c’est une allitération ?\n(lines 44–45)\nWhy does Philippe make these remarks?\n4\n(d)\nAnalyse how the issue of identity is explored in this extract.\n6\nTu dis rien. Tu la previens pas. (line 5)\nWhy does Driss say this?\nDriss, je crois qu'on va s'arreter la. (line 38)\nExplain the significance of this statement.\nOn dirait presqu'une alliteration. Vous savez ce que c'est une alliteration? (lines 44-45)\nWhy does Philippe make these remarks?\nAnalyse how the issue of identity is explored in this extract."
+  },
+  {
+   "id": "french-extension-2021-q2",
+   "year": 2021,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer the question that follows. Write\napproximately 200 words in FRENCH.\nPHILIPPE: . . . Alors tout le reste, maintenant, aujourd’hui « dans mon état »,\ncomme tu dis. . . D’où il vient, ce qu’il a fait avant, je m’en contrefous !\nANTOINE: Bon, ben, comme tu veux.\nImaginez que vous êtes Philippe. Après cette conversation avec Antoine, vous décidez de\nparler à Magali pour lui expliquer votre motivation d’employer Driss. Écrivez le texte de leur\nconversation.\nImagine you are Philippe. After this conversation with Antoine, you decide to speak with\nMagali to explain your motivation in employing Driss. Write the script of your conversation.\n© 2011 Gaumont / Studio Canal / TF1 Films Production"
+  },
+  {
+   "id": "french-extension-2021-q3",
+   "year": 2021,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "A la derniere assemblee de la terminale, vous prononcez un discours sur le sujet 'Ceux qui possedent un temperament positif sont capables de faire face aux tempetes de la vie.' Ecrivez le texte du discours dans lequel vous justifiez votre opinion.\nYou are giving a speech at the final assembly for Year 12 on the topic, 'Those who have a positive temperament are able to deal with difficult times in life.' Write the text of your speech in which you justify your opinion."
+  },
+  {
+   "id": "french-extension-2021-q4",
+   "year": 2021,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous participez a un forum de jeunes ou vous prononcez un discours sur le sujet 'Dans la societe actuelle, il n'est pas necessaire d'accepter tout comportement pour preserver la paix'. Ecrivez le texte du discours dans lequel vous justifiez votre opinion.\nYou are participating in a youth forum at which you give a speech on the topic, 'In today's society, you don't have to accept all behaviours in order to keep the peace.' Write the text of your speech in which you justify your opinion."
+  },
+  {
+   "id": "french-extension-2022-q1",
+   "year": 2022,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer in ENGLISH the questions that\nfollow.\nPHILIPPE:\nAvec Alice ma femme on s’est rencontrés à 20 ans sur les bancs de\nSciences Po. Elle était grande, très élégante, des yeux rieurs …\nDRISS:\nJ’ai vu plein de photos je me souviens. C’est la blonde, là ? Elle est pas\nmal.\nPHILIPPE:\nOn a vécu une histoire incroyable. Je vous souhaite de vivre ça au moins\n5\nune fois dans votre vie. Putain ce que je l’ai aimée ! Qu’est-ce que je l’ai\naimée … Puis elle est tombée enceinte une fois, deux fois. Cinq fausses\ncouches successives. Puis le verdict est tombé. C’était une maladie\nincurable, elle était condamnée. On a décidé d’adopter.\nDRISS:\nMonsieur, s’il vous plaît ? S’il vous plaît !\n10\nSERVEUR: Oui ? (Philippe laughs.)\nDRISS:\nJe vais prendre une tarte Tatin, s’il vous plaît. Mais cuite, parce qu’il y\navait un problème avec le gâteau au chocolat, il était cru, tout moulant …\nenfin, moelleux … Bizarre.\nSERVEUR: … c’est un petit peu le principe de mi cuit.\n15\nDRISS:\nAh c’est pour ça ?\nSERVEUR: Oui.\nDRISS:\nBah, je vais quand même prendre une tarte Tatin.\nPHILIPPE:\nJ’ai toujours aimé la compétition. Les sports extrêmes, la vitesse, aller\nplus vite, plus haut. Avec le parapente, j’avais tout. Je prenais de la\n20\nhauteur, je voyais les choses d’en haut, puis je soufflais. J’ai été élevé\ndans l’idée qu’on pissait sur le monde ! Je veux bien boire quelque chose\nparce que j’ai la bouche un peu sèche.\nDRISS:\nC’est un des effets du joint ça.\nPHILIPPE:\nC’est quoi les autres ?\n25\nDRISS:\nBah ça donne faim, et ça fait causer un peu.\nPHILIPPE:\nEt puis, une météo difficile, ça en parapente, ça pardonne pas.\nDRISS:\nEt vous y avez quand même été ?\nPHILIPPE:\nPeut-être pour rejoindre Alice dans sa souffrance parce que je savais\nqu’elle s’en sortirait pas. Résultat : cervicales 3 et 4 brisées, et plus que\n30\nma tête pour me lever. Quand la douleur me laisse tranquille, ben il me\nreste l’esprit. Mon vrai handicap, c’est pas d’être en fauteuil, c’est d’être\nsans elle.\nDRISS:\nEt les médecins, ils vous disent quoi ?\nPHILIPPE:\nAvec les progrès de la science, ils vont arriver à me faire tenir jusqu’à 70\n35\nans, à coups de massages et de remontants. Tout ça coûte cher, mais en\nmême temps, je suis un tétraplégique riche !\nDRISS:\nÇa m’arrive, je me flingue.\nPHILIPPE:\nÇa aussi c’est difficile, pour un tétra.\nDRISS:\nAh oui, c’est vrai. C’est chaud, putain.\n40\nPHILIPPE:\nOn est quelle date aujourd’hui ?\nDRISS:\nJe sais pas, le 8 ou 9.\nPHILIPPE:\nAlors, c’est officiel !\nDRISS:\nDe quoi ?\nPHILIPPE:\nBen, vous avez gagné le pari ! Votre période d’essai va se terminer.\n45\nDRISS:\nJe suis embauché alors ?!\nPHILIPPE:\nAh ouais, vous êtes embauché. Je peux compter sur vous maintenant ?\nDRISS:\nOui.\nPHILIPPE:\nTrès bien. Alors, commencez par me rendre l’œuf de Fabergé. C’est un\ncadeau d’Alice, elle m’en a offert un par an, j’en ai 25, comme les années\n50\nqu’on a vécues ensemble. J’y tiens énormément.\nDRISS:\nOui non, c’est … je sais pas pourquoi vous dites … C’est pas moi. C’est\nquoi là que vous avez perdu ?\n© 2011 Gaumont / Studio Canal / TF1 Films Production\n(a)\nWhat circumstances led Philippe and Driss to be at the cafe?\n2\n(b)\n… qu’on pissait sur le monde ! (line 22)\nExplain whether, in this extract, Philippe holds this attitude.\n3\n(c)\nMon vrai handicap, c’est pas d’être en fauteuil, c’est d’être sans elle.\n(lines 32−33)\nExplain the significance of this statement.\n4\n(d)\nAnalyse how the issue of acceptance is explored in this extract.\n6\nWhat circumstances led Philippe and Driss to be at the cafe?\n... qu'on pissait sur le monde! (line 22)\nExplain whether, in this extract, Philippe holds this attitude.\nMon vrai handicap, c'est pas d'etre en fauteuil, c'est d'etre sans elle. (lines 32-33)\nExplain the significance of this statement.\nAnalyse how the issue of acceptance is explored in this extract."
+  },
+  {
+   "id": "french-extension-2022-q2",
+   "year": 2022,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer the question that follows. Write\napproximately 200 words in FRENCH.\nPHILIPPE:\nSinon, vous pensez que vous seriez quand même capable de travailler ?\nAvec des contraintes, des horaires, des responsabilités …\nDRISS:\nJe me suis trompé en fait, vous en avez de l’humour !\nPHILIPPE:\nJ’en ai tellement que je suis prêt à vous prendre à l’essai pendant un\nmois.\n© 2011 Gaumont / Studio Canal / TF1 Films Production\nImaginez que vous êtes Driss et que vous commencez un nouveau travail. Vous vous rappelez\nde ce rendez-vous-là avec Philippe. Vous décidez de lui écrire une lettre.\nÉcrivez la lettre dans laquelle vous réfléchissez à l’influence qu’il a eue sur votre vie.\nImagine that you are Driss and that you are starting a new job. You recall this encounter with\nPhilippe. You decide to write a letter to him.\nWrite the letter in which you reflect on the influence that he has had on your life."
+  },
+  {
+   "id": "french-extension-2022-q3",
+   "year": 2022,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous ecrivez un article pour un magazine de jeunes. Le sujet est 'Les heros sont vitaux pour les jeunes afin de s'epanouir'. Ecrivez l'article dans lequel vous exprimez votre opinion.\nYou are writing an article for a youth magazine. The topic is, 'Heroes are vital for young people to develop fully'. Write the article in which you express your opinion."
+  },
+  {
+   "id": "french-extension-2022-q4",
+   "year": 2022,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous ecrivez un article pour un magazine de jeunes. Le sujet est 'La cle du bonheur dans la vie est d'embrasser la nouveaute'. Ecrivez l'article dans lequel vous exprimez votre opinion.\nYou are writing an article for a youth magazine. The topic is, 'The key to happiness in life is to embrace the new'. Write the article in which you express your opinion."
+  },
+  {
+   "id": "french-extension-2023-q1",
+   "year": 2023,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer in ENGLISH the questions that\nfollow.\nDRISS:\nPardon… Excusez-moi, j’étais là avant. Merci.\nPHILIPPE:\nEléonore, je suis content ! Ah si, je suis content !\nDRISS:\nOh la pipelette ! Gros tchatcheur en fait ! Il arrête plus !\nPHILIPPE:\nJe vous embrasse.\nDRISS:\nTout le monde s’embrasse, tout le monde se lèche l’oreille. Très\n5\nbien. Bon, alors ?\nPHILIPPE:\nBen alors, y a du bon et du moins bon.\nDRISS:\nC’est quoi, le bon ?\nPHILIPPE:\n53 kilos.\nDRISS:\n53 kilos, c’est bien ! Sauf si elle fait un mètre…\n10\nPHILIPPE:\nEt le moins bon, elle veut une photo.\nDRISS:\nEt alors ?\nPHILIPPE:\nBen alors ? Il est marrant lui…\nFEMME:\nBonsoir messieurs, vos billets, s’il vous plaît.\nDRISS:\nBonsoir !\n15\nFEMME:\nAlors, c’est juste là.\nDRISS:\nTrès bien !\nFEMME:\nBonne soirée.\nDRISS:\nBonne soirée à vous ! Si vous me cherchez, on est là. On bouge pas,\nenfin surtout lui. (They enter the theatre.)\n20\nDRISS:\nAttendez, qu’est-ce qu’elles cherchent les femmes, à votre avis.\nPHILIPPE:\nJ’sais pas. La beauté, le charme, l’élégance…\nDRISS:\nMon cul ! Elles cherchent l’oseille, la sécurité. Demandez-lui à lui\nlà. Et là, vous, vous avez des arguments.\nPHILIPPE:\nJ’suis peut-être naïf, mais j’espère que je peux séduire encore avec\n25\nautres choses que mon compte en banque…\nDRISS:\nAttendez, elle passe six mois à lire vos poèmes à la mords-moi-le-\nnœud là. Elle kiffe. C’est une originale, c’est sûr. Elle peut très bien\ns’en foutre du fauteuil.\nPHILIPPE:\nÇa, c’est vrai.\n30\nDRISS:\nPuis là-bas, dans le nord, les mecs ils cognent à force de boire. Avec\nvous, elle verra qu’elle risque rien.\nPHILIPPE:\nSalaud. (Both laugh)\nDRISS:\nC’est pragmatique, ça, non ?\nPHILIPPE:\nJ’sais pas si… ouais.\n35\nDRISS:\nDonc, la photo c’est un bon test. Si elle renvoie la sienne, ça veut\ndire qu’elle est d’accord pour aller plus loin. Après, vous, vous\npouvez envoyer une photo de vous avec le fauteuil mais on voit pas\ntrop ! Vous êtes pas obligé de lui envoyer une photo genre Téléthon,\navec le filet de bave, avec une sale tête !\n40\nPHILIPPE:\nÇa va, ça va j’ai compris.\nOh la pipelette! Gros tchatcheur en fait! Il arrete plus! (line 3)\nExplain why Driss says this.\nCompare Driss's and Philippe's opinions regarding women.\nExplain why Driss thinks that Eleonore could be the right woman for Philippe.\nHow has the friendship between Driss and Philippe influenced and changed them? Support your answer with reference to this extract."
+  },
+  {
+   "id": "french-extension-2023-q2",
+   "year": 2023,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer the question that follows. Write\napproximately 200 words in FRENCH.\nVous êtes Philippe. Le lendemain, vous racontez à Driss ce qui s’est passé au restaurant.\nÉcrivez cette conversation.\nYou are Philippe. The following day, you discuss with Driss what happened at the restaurant.\nWrite the script of this conversation.\nIntouchables Directed by Eric Toledano and Oliver Nakache.\n© 2011 Gaumont/ Studio Canal/TF1 Films Production\nDRISS:\nPHILIPPE:\nDRISS:\nPHILIPPE:\nDRISS:\nPHILIPPE:\nJe vais pas rester déjeuner.\nPourquo ?\ni\nJ’vous laisse pas seul hein. C’est juste, j’crois que vous avez\nun petit rendez-vous là.\nPetit rendez-vous ? Comment ça ?\nPaniquez pas. Ça va bien se passer.\nNon mais…\n1918310294\n7407310293"
+  },
+  {
+   "id": "french-extension-2023-q3",
+   "year": 2023,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous etes invite(e) a faire un discours a l'assemblee de votre ecole sur le theme : 'La resilience s'apprend a l'ecole'. Ecrivez le texte du discours dans lequel vous justifiez votre opinion.\nYou are invited to make a speech at your school's assembly on the topic, 'Resilience is learnt at school'. Write the script of your speech in which you justify your opinion."
+  },
+  {
+   "id": "french-extension-2023-q4",
+   "year": 2023,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous etes invite(e) a faire un discours a l'assemblee de votre ecole sur le theme : 'Notre identite numerique ne represente pas toujours la realite'. Ecrivez le texte du discours dans lequel vous justifiez votre opinion.\nYou are invited to make a speech at your school's assembly on the topic, 'Our digital identity does not always represent reality'. Write the script of your speech in which you justify your opinion."
+  },
+  {
+   "id": "french-extension-2024-q1",
+   "year": 2024,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer in ENGLISH the questions that\nfollow.\nELISA:\nPasse-moi une clope…\nDRISS:\nEh, on t’a jamais appris à frapper, toi ?\nELISA:\nTu peins ?\nDRISS:\nOuais, allez dégage !\nELISA:\nNon mais c’est une blague ? Toi, tu peins ? Et t’as appris à lire\n5\naussi, du coup, euh…\nDRISS:\nEh tu veux quoi, là ? Allez ! Sors ! Dégage !\nELISA:\nQu’est-ce que tu vas me faire ? Tu vas me frapper, c’est ça ? C’est\ncomme ça qu’on traite les femmes dans ton pays ?\nDRISS:\nMais t’as chaud ou quoi ? Allez sors là, sors, allez !\n10\nELISA:\nJe sors si je veux quand je veux, OK ?\nDRISS:\nC’est ça ! Allez, dégage !\nELISA:\nTu vois là, j’décide, et là je sors.\nDRISS:\nDégage ! Putain !\nPHILIPPE:\nRetirez cette photo et vous la remplacez par l’autre. Soyez gentille\n15\nde la poster personnellement. Et restez discrète !\nYVONNE:\nComme vous voudrez.\nPHILIPPE:\nEt maintenant, vous jetez l’autre photo dans la poubelle.\nDRISS:\nPéter un plomb. J’vais péter un plomb.\nPHILIPPE:\nQuel est le problème ?\n20\nDRISS:\nLe problème c’est votre fille. J’étais en train de peindre, là…\nPHILIPPE:\nVous étiez en train de peindre ?\nDRISS:\nOui bref, … faut juste vous dire. Faut la recadrer, parce que sinon,\nje vais l’encastrer contre un mur.\nPHILIPPE:\nCalmez-vous un peu !\n25\nDRISS:\nNon, non je ne me calme pas. On est d’accord qu’on est ici je suis\nvos bras et vos jambes ?\nPHILIPPE:\nOui, on est d’accord !\nDRISS:\nOui d’accord. Moi, j’ai envie d’être vos mains pour lui en coller une\nbonne. Parce que vous, à part lui rouler dessus, vous ne pouvez plus\n30\nfaire grand-chose.\nPHILIPPE:\nDriss, vous n’en rajoutez pas un peu, là ? Yvonne ?\nDRISS:\nYvonne ?\nYVONNE:\nC’est vrai qu’elle aurait bien besoin d’un… d’un léger recadrage.\nDRISS:\nLéger ! Mais à seize ans, elle s’habille, elle se maquille n’importe\n35\ncomment. Sans compter qu’elle galoche l’autre plumeau partout\ndans la baraque. Ça, à la rigueur je m’en fous. Ça ne me regarde pas.\nC’est son éducation. Ce qui me dérange, c’est plutôt comment elle\nprend tout le monde de haut là : comment elle vous parle ; comment\nelle me parle. Il est où, le respect là ? On est quoi nous ? On est des\n40\nchiens ? Donnez-moi le top que je lui remette les idées en place.\nPHILIPPE:\nBon, ça va j’ai compris. Laissez-moi faire. Je lui parlerai.\nDRISS\nParlez-lui alors ! Mais, parlez-lui vite. Faites un truc, mettez-la à sa\nplace.\nPHILIPPE:\nIl peint ? Mais qu’est-ce qu’il peint ?\n45\nYVONNE:\nJe ne sais pas moi.\nOn t'a jamais appris a frapper, toi? (line 2)\nTo what is Driss objecting?\nDonnez-moi le top (line 41)\nWhy does Driss make this request?\nCompare the ways that Driss interacts with Elisa and Philippe in this extract.\nAnalyse how the theme of identity is explored in this extract."
+  },
+  {
+   "id": "french-extension-2024-q2",
+   "year": 2024,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the film Intouchables and then answer the question that follows. Write\napproximately 200 words in FRENCH.\nPHILIPPE:\nJe l’ai aperçu tout à l’heure. Je crois que si je l’avais croisé dans la\nrue, j’aurais tout de suite pu deviner que c’était votre frère.\nDRISS:\nC’est drôle !\nPHILIPPE:\nPourquoi ?\nDRISS:\nC’est drôle parce que c’est pas mon frère.\nVous êtes Philippe. Vous parlez à Yvonne de votre gaffe et de ce que vous avez appris\nsubséquemment.\nÉcrivez le texte de cette conversation.\nYou are Philippe. You speak to Yvonne about your mistake and what you have learned\nsubsequently.\nWrite the script of this conversation.\nWritten and directed by Eric Toledano and Oliver Nakoche\n© 2011 Gaumont/Studio Canal/TF1 Films Production\n1918310294\n7407310293"
+  },
+  {
+   "id": "french-extension-2024-q3",
+   "year": 2024,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous etes selectionne(e) pour participer a un concours organise par l'Association Francaise sur le sujet : 'C'est principalement la famille qui faconne notre identite'. Ecrivez le texte de votre dissertation dans laquelle vous exprimez et justifiez votre avis.\nYou have been selected to participate in a competition organised by the Association Francaise on the topic, 'It is mainly family who shape our identity'. Write the text of your essay in which you express and justify your opinion."
+  },
+  {
+   "id": "french-extension-2024-q4",
+   "year": 2024,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Vous etes selectionne(e) pour participer a un concours organise par l'Association Francaise sur le sujet : 'Pour bien s'epanouir dans la vie, il faut d'abord s'accepter soi-meme'. Ecrivez le texte de votre dissertation dans laquelle vous exprimez et justifiez votre avis.\nYou have been selected to participate in a competition organised by the Association Francaise on the topic, 'To fully blossom in life, you must first accept yourself'. Write the text of your essay in which you express and justify your opinion."
+  },
+  {
+   "id": "french-extension-2025-q1",
+   "year": 2025,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text set: songs / Santé",
+   "text": "Read the extract from the song Santé by Stromae and then answer in ENGLISH the questions\nthat follow.\nÀ ceux qui n’en ont pas\nÀ ceux qui n’en ont pas\nRosa, Rosa\nQuand on fout le bordel, tu nettoies\nEt toi, Albert\n5\nQuand on trinque, tu ramasses les verres\nCéline (céli) bataire (bataire)\nToi, tu t’prends des vestes au vestiaire\nArlette, arrête\nToi la fête tu la passes aux toilettes\n10\nEt si on célébrait ceux qui ne célèbrent pas\nPour une fois, j’aimerais lever mon verre à ceux qui n’en ont pas\nÀ ceux qui n’en ont pas\nQuoi les bonnes manières ?\nPourquoi j’f’rais semblant ?\n15\nToute façon elle est payée pour le faire\nTu t’prends pour ma mère ?\nDans une heure je reviens qu’ce soit propre\nQu’on puisse y manger par terre\nTrois heures que j’attends, franchement\n20\nIl les fabrique ou quoi ?\nHeureusement qu’c’est que deux verres\nAppelle-moi ton responsable\nEt fais vite, elle pourrait se finir comme ça ta carrière\nOui, célébrons ceux qui ne célèbrent pas\n25\nEncore une fois, j’aimerais lever mon verre à ceux qui n’en ont pas\nÀ ceux qui n’en ont pas\nÀ ceux qui n’en ont pas\nFrotter, frotter\nMieux vaut ne pas s’y\n30\nFrotter, frotter\nSi tu n’me connais pas\nBrosser, brosser\nTu pourras toujours te\nBrosser, brosser\n35\nSi tu ne me respectes pas\nOui, célébrons ceux qui ne célèbrent pas\nEncore une fois, j’aimerais lever mon verre à ceux qui n’en ont pas\nÀ ceux qui n’en ont pas\nPilotes d’avion ou infirmières\n40\nChauffeurs de camion, hôtesses de l’air\nBoulangers ou marins-pêcheurs\nUn verre aux champions des pires horaires\nAux jeunes parents bercés par les pleurs\nAux insomniaques de profession\n45\nEt tous ceux qui souffrent de peines de cœur\nQui n’ont pas le cœur aux célébrations\nExplain how the singer views Rosa, Albert, Celine and Arlette.\nAppelle-moi ton responsable (line 23)\nHow does this quote reveal the singer's attitude? In your answer, refer to another example of where this attitude is expressed.\nCelebrons ceux qui ne celebrent pas (line 37)\nExplain the importance of this to the singer.\nAnalyse how the theme of connectedness is developed in this song."
+  },
+  {
+   "id": "french-extension-2025-q2",
+   "year": 2025,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "Read the extract from the song Ma France à moi by Diam’s and then answer the question that\nfollows. Write approximately 200 words in FRENCH.\nVous êtes un/e journaliste qui a assisté à un concert donné par Diam’s.\nÉcrivez un article à la suite de ce concert qui vous a amené(e) à réfléchir aux défis\nauxquels les jeunes sont confrontés aujourd’hui.\nYou are a journalist who attended the concert of Diam’s.\nWrite an article about how this concert has led you to reflect upon the challenges confronting\nyoung people today.\nPlease refer to the song lyrics from Ma France a moi\nby Diam’s 2006 – Under BRIDGE (first 4 lines)\nhttps://www.musixmatch.com/lyrics/Diam-s/Ma-France-%C3%A0-moi\nDue to copyright restrictions, this material cannot be displayed.\n1918310294\n7407310293"
+  },
+  {
+   "id": "french-extension-2025-q3",
+   "year": 2025,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "A la derniere assemblee de la terminale, vous prononcez un discours sur le sujet : 'La technologie a profondement transforme notre vie. Faut-il accepter tous ces changements ?' Ecrivez le texte de votre discours dans lequel vous exprimez et justifiez votre avis.\nYou are giving a speech at the final assembly for Year 12 on the topic, 'Technology has profoundly transformed our lives. Must we accept all these changes?' Write the script of your speech in which you express and justify your opinion."
+  },
+  {
+   "id": "french-extension-2025-q4",
+   "year": 2025,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": "A la derniere assemblee de la terminale, vous prononcez un discours sur le sujet : 'Notre societe s'enrichit grace a une plus grande diversite culturelle'. Ecrivez le texte de votre discours dans lequel vous exprimez et justifiez votre opinion.\nYou are giving a speech at the final assembly for Year 12 on the topic, 'Our society is enriched by greater cultural diversity'. Write the script of your speech in which you express and justify your opinion."
+  }
+ ]
+}

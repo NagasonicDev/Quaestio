@@ -1,0 +1,552 @@
+{
+  "qhsc2015_30": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "medium",
+    "why": "Newton gravitation applied to Cassini mission"
+  },
+  "qhsc2016_05": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Field between parallel plates"
+  },
+  "qhsc2016_06": {
+    "code": "HSC-M4-T4-D2",
+    "confidence": "high",
+    "why": "Light speed invariant across frames"
+  },
+  "qhsc2016_08": {
+    "code": "HSC-M3-T3-D4",
+    "confidence": "high",
+    "why": "Relative motion changes induced emf"
+  },
+  "qhsc2016_10": {
+    "code": "HSC-M4-T4-D3",
+    "confidence": "high",
+    "why": "Simultaneity in moving carriage"
+  },
+  "qhsc2016_11": {
+    "code": "HSC-M4-T3-D2",
+    "confidence": "high",
+    "why": "Photon wavelength from energy"
+  },
+  "qhsc2016_14": {
+    "code": "HSC-M2-T3-D9",
+    "confidence": "high",
+    "why": "Period for planet four times Earth mass"
+  },
+  "qhsc2016_15": {
+    "code": "HSC-M4-T3-D17",
+    "confidence": "high",
+    "why": "Light creates electron-hole pairs in solar cell"
+  },
+  "qhsc2016_25": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "medium",
+    "why": "Assessing inverse-square gravity data"
+  },
+  "qhsc2016_30": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "medium",
+    "why": "Generator load causes magnetic braking"
+  },
+  "qhsc2017_04": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "g=W/m on Planet X"
+  },
+  "qhsc2017_07": {
+    "code": null,
+    "confidence": "high",
+    "why": "Michelson-Morley not in dots"
+  },
+  "qhsc2017_08": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "Electron and proton deflection in E field"
+  },
+  "qhsc2017_11": {
+    "code": "HSC-M3-T4-D3",
+    "confidence": "high",
+    "why": "Transformer output voltage then field strength"
+  },
+  "qhsc2017_12": {
+    "code": "HSC-M2-T2-D16",
+    "confidence": "medium",
+    "why": "Elliptical orbit KE and PE comparison"
+  },
+  "qhsc2017_17": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "Magnetic force on rod, balance reading"
+  },
+  "qhsc2017_18": {
+    "code": "HSC-M3-T1-D9",
+    "confidence": "high",
+    "why": "r=mv/qB proportional reasoning"
+  },
+  "qhsc2017_20": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Length contraction velocity calculation"
+  },
+  "qhsc2017_21": {
+    "code": "HSC-M4-T3-D15",
+    "confidence": "medium",
+    "why": "Photon energy compared with work function"
+  },
+  "qhsc2017_22": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "Torque depends on force angle"
+  },
+  "qhsc2017_27": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "Flux graph gives field and emf"
+  },
+  "qhsc2017_29": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "Projectile range from spring launch"
+  },
+  "qhsc2017_32": {
+    "code": null,
+    "confidence": "high",
+    "why": "Medical physics option not in dots"
+  },
+  "qhsc2017_35": {
+    "code": null,
+    "confidence": "high",
+    "why": "Age of silicon option not in dots"
+  },
+  "qhsc2018_05": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "Force on current-carrying conductor"
+  },
+  "qhsc2018_07": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "g for twice mass and radius"
+  },
+  "qhsc2018_08": {
+    "code": null,
+    "confidence": "high",
+    "why": "Doped semiconductor lattices not in dots"
+  },
+  "qhsc2018_10": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "medium",
+    "why": "Commutator reverses force, torque constant"
+  },
+  "qhsc2018_13": {
+    "code": "HSC-M3-T1-D9",
+    "confidence": "high",
+    "why": "Electron radius and force with speed"
+  },
+  "qhsc2018_20": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "medium",
+    "why": "Lenz law between coupled galvanometers"
+  },
+  "qhsc2018_21": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Equal gravitational forces Earth and Moon"
+  },
+  "qhsc2018_29": {
+    "code": "HSC-M4-T3-D17",
+    "confidence": "medium",
+    "why": "Light-driven current in cells"
+  },
+  "qhsc2018_31": {
+    "code": null,
+    "confidence": "high",
+    "why": "Geophysics option not in dots"
+  },
+  "qhsc2018_32": {
+    "code": null,
+    "confidence": "high",
+    "why": "Medical physics option not in dots"
+  },
+  "qhsc2019_04": {
+    "code": "HSC-M5-T4-D4",
+    "confidence": "high",
+    "why": "Classifying stars on H-R diagram"
+  },
+  "qhsc2019_06": {
+    "code": "HSC-M4-T3-D7",
+    "confidence": "high",
+    "why": "Wien law T versus peak wavelength"
+  },
+  "qhsc2019_07": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "high",
+    "why": "Lenz law for magnet leaving coil"
+  },
+  "qhsc2019_09": {
+    "code": "HSC-M2-T2-D16",
+    "confidence": "medium",
+    "why": "LEO and GEO period and total energy"
+  },
+  "qhsc2019_10": {
+    "code": "HSC-M4-T2-D10",
+    "confidence": "high",
+    "why": "Malus law at 30 degrees"
+  },
+  "qhsc2019_11": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Kepler law for dwarf planet"
+  },
+  "qhsc2019_14": {
+    "code": "HSC-M2-T3-D6",
+    "confidence": "high",
+    "why": "Orbital speed at doubled radius"
+  },
+  "qhsc2019_16": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Charge trajectory with uniform E field"
+  },
+  "qhsc2019_18": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Loop entering field, lamp brightness"
+  },
+  "qhsc2019_21": {
+    "code": "HSC-M5-T1-D18",
+    "confidence": "high",
+    "why": "de Broglie wavelength contribution"
+  },
+  "qhsc2019_22": {
+    "code": "HSC-M5-T4-D1",
+    "confidence": "high",
+    "why": "Stellar spectra reveal other features"
+  },
+  "qhsc2019_26": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "Torque versus angle experiment"
+  },
+  "qhsc2019_29": {
+    "code": "HSC-M3-T1-D3",
+    "confidence": "high",
+    "why": "qV equals kinetic energy"
+  },
+  "qhsc2019_30": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "medium",
+    "why": "Projectile from track, heights"
+  },
+  "qhsc2019_36": {
+    "code": "HSC-M5-T3-D21",
+    "confidence": "high",
+    "why": "Mass defect in alpha decay"
+  },
+  "qhsc2020_03": {
+    "code": "HSC-M4-T1-D3",
+    "confidence": "high",
+    "why": "Maxwell predicted speed from EM equations"
+  },
+  "qhsc2020_04": {
+    "code": "HSC-M5-T2-D11",
+    "confidence": "medium",
+    "why": "Decay constant from half-life graph"
+  },
+  "qhsc2020_06": {
+    "code": "HSC-M5-T4-D4",
+    "confidence": "high",
+    "why": "H-R diagram cluster characteristics"
+  },
+  "qhsc2020_18": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Roemer light-travel timing not in dots"
+  },
+  "qhsc2020_19": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Rotating conductor emf graph"
+  },
+  "qhsc2020_23": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "medium",
+    "why": "Motor torque and current"
+  },
+  "qhsc2020_24": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "Initial velocity from trajectory"
+  },
+  "qhsc2020_27": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "medium",
+    "why": "Fringe spacing factors, double slit"
+  },
+  "qhsc2020_31": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "medium",
+    "why": "Comet speed changes on ellipse"
+  },
+  "qhsc2020_34": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Work and distance in E field"
+  },
+  "qhsc2021_07": {
+    "code": "HSC-M3-T4-D4",
+    "confidence": "high",
+    "why": "Ideal transformer current and turns"
+  },
+  "qhsc2021_11": {
+    "code": "HSC-M4-T3-D7",
+    "confidence": "high",
+    "why": "Wien law body temperature"
+  },
+  "qhsc2021_14": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Earth-Moon mutual gravitational force"
+  },
+  "qhsc2021_16": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "medium",
+    "why": "Sun mass loss via E=mc2"
+  },
+  "qhsc2021_24": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "emf from changing magnetic flux"
+  },
+  "qhsc2021_25": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "medium",
+    "why": "Areostationary orbit radius from period"
+  },
+  "qhsc2021_26": {
+    "code": "HSC-M4-T3-D14",
+    "confidence": "medium",
+    "why": "V-f data for Planck constant"
+  },
+  "qhsc2021_35": {
+    "code": "HSC-M5-T3-D21",
+    "confidence": "medium",
+    "why": "Pu-238 decay energy and yield"
+  },
+  "qhsc2022_01": {
+    "code": "HSC-M3-T4-D3",
+    "confidence": "high",
+    "why": "Transformer secondary turns"
+  },
+  "qhsc2022_06": {
+    "code": "HSC-M2-T2-D16",
+    "confidence": "medium",
+    "why": "Elliptical orbit energy comparison"
+  },
+  "qhsc2022_07": {
+    "code": "HSC-M4-T3-D2",
+    "confidence": "high",
+    "why": "Photon frequency from energy"
+  },
+  "qhsc2022_09": {
+    "code": "HSC-M4-T3-D7",
+    "confidence": "high",
+    "why": "Black-body temperature from peak wavelength"
+  },
+  "qhsc2022_10": {
+    "code": "HSC-M2-T3-D6",
+    "confidence": "high",
+    "why": "Orbital velocity inversely proportional to sqrt r"
+  },
+  "qhsc2022_13": {
+    "code": "HSC-M2-T3-D10",
+    "confidence": "medium",
+    "why": "Same orbit, only momentum differs"
+  },
+  "qhsc2022_17": {
+    "code": "HSC-M4-T2-D10",
+    "confidence": "high",
+    "why": "Malus law through rotating glasses"
+  },
+  "qhsc2022_18": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Oil droplet forces in electric field"
+  },
+  "qhsc2022_26": {
+    "code": "HSC-M4-T3-D15",
+    "confidence": "medium",
+    "why": "Photoelectric effect plus stopping field"
+  },
+  "qhsc2022_28": {
+    "code": "HSC-M5-T4-D7",
+    "confidence": "high",
+    "why": "CNO cycle energy release"
+  },
+  "qhsc2022_30": {
+    "code": "HSC-M4-T4-D4",
+    "confidence": "high",
+    "why": "Time dilation thought experiment"
+  },
+  "qhsc2022_34": {
+    "code": "HSC-M3-T1-D10",
+    "confidence": "high",
+    "why": "Particle paths in magnetic field"
+  },
+  "qhsc2023_01": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "Field strength falls with distance"
+  },
+  "qhsc2023_07": {
+    "code": "HSC-M5-T1-D18",
+    "confidence": "high",
+    "why": "de Broglie wavelength proton versus neutron"
+  },
+  "qhsc2023_10": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "medium",
+    "why": "Loop orientation changes torque not force"
+  },
+  "qhsc2023_12": {
+    "code": "HSC-M3-T1-D3",
+    "confidence": "high",
+    "why": "Kinetic energy change from qV"
+  },
+  "qhsc2023_13": {
+    "code": "HSC-M5-T3-D14",
+    "confidence": "medium",
+    "why": "Binding energy and nuclear stability"
+  },
+  "qhsc2023_22": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Time dilation at 0.9c"
+  },
+  "qhsc2023_23": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "medium",
+    "why": "JWST gravitational force; light subparts"
+  },
+  "qhsc2023_26": {
+    "code": "HSC-M5-T3-D21",
+    "confidence": "high",
+    "why": "Energy released from nuclear masses"
+  },
+  "qhsc2023_28": {
+    "code": "HSC-M3-T4-D4",
+    "confidence": "high",
+    "why": "Ideal transformer voltage and current"
+  },
+  "qphys2024_06": {
+    "code": "HSC-M4-T3-D12",
+    "confidence": "high",
+    "why": "Work function in photoelectric equation"
+  },
+  "qphys2024_11": {
+    "code": "HSC-M2-T3-D6",
+    "confidence": "high",
+    "why": "Orbital velocity versus radius"
+  },
+  "qphys2024_12": {
+    "code": "HSC-M4-T4-D5",
+    "confidence": "high",
+    "why": "Length contraction relationship"
+  },
+  "qphys2024_13": {
+    "code": "HSC-M2-T2-D16",
+    "confidence": "high",
+    "why": "Compare satellite potential and kinetic energy"
+  },
+  "qphys2024_14": {
+    "code": "HSC-M5-T1-D18",
+    "confidence": "high",
+    "why": "de Broglie wavelength ratio"
+  },
+  "qphys2024_15": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Rotating conductor emf graph"
+  },
+  "qphys2024_21": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "Torque calculation and increase"
+  },
+  "qphys2024_24": {
+    "code": "HSC-M5-T4-D1",
+    "confidence": "medium",
+    "why": "Stellar absorption spectrum"
+  },
+  "qphys2024_25": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Derive and use law of periods"
+  },
+  "qphys2024_28": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "Electron gun deflection"
+  },
+  "qphys2024_29": {
+    "code": "HSC-M3-T2-D1",
+    "confidence": "medium",
+    "why": "Forces between current-carrying rods"
+  },
+  "qphys2024_31": {
+    "code": "HSC-M2-T2-D13",
+    "confidence": "medium",
+    "why": "Vertical launch energy, two models"
+  },
+  "qhsc2025_01": {
+    "code": "HSC-M4-T1-D3",
+    "confidence": "high",
+    "why": "Maxwell predicted EM wave speed"
+  },
+  "qhsc2025_04": {
+    "code": "HSC-M5-T1-D18",
+    "confidence": "high",
+    "why": "Shortest de Broglie wavelength"
+  },
+  "qhsc2025_07": {
+    "code": "HSC-M2-T2-D18",
+    "confidence": "high",
+    "why": "Higher orbit energy and period"
+  },
+  "qhsc2025_10": {
+    "code": "HSC-M5-T2-D11",
+    "confidence": "medium",
+    "why": "Decay curves and decay constant"
+  },
+  "qhsc2025_12": {
+    "code": "HSC-M4-T2-D10",
+    "confidence": "high",
+    "why": "Malus law graph"
+  },
+  "qhsc2025_19": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "medium",
+    "why": "Mass decreases as energy leaves"
+  },
+  "qhsc2025_20": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "medium",
+    "why": "Pair production conserves mass-energy"
+  },
+  "qhsc2025_24": {
+    "code": "HSC-M2-T2-D16",
+    "confidence": "high",
+    "why": "Satellite kinetic energy and mass ratio"
+  },
+  "qhsc2025_25": {
+    "code": "HSC-M4-T3-D15",
+    "confidence": "high",
+    "why": "Stopping voltage and work function"
+  },
+  "qhsc2025_34": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Roemer speed-of-light method not in dots"
+  }
+}

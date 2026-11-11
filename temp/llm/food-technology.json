@@ -1,0 +1,2226 @@
+{
+ "course_id": "food-technology",
+ "course_name": "Food Technology",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / historical changes to the availability of food, including: global migration of cultural groups",
+   "text": "historical changes to the availability of food, including: global migration of cultural groups"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / use of foods native to Australia",
+   "text": "use of foods native to Australia"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / technological developments influential on food availability, including: production and manufacturingprocesses and equipment techniques; storage and distribution techniques; marketplace practices",
+   "text": "technological developments influential on food availability, including: production and manufacturingprocesses and equipment techniques; storage and distribution techniques; marketplace practices"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / social, economic and political influences on food availability, including: effects of poverty and affluence; type and state of the economy",
+   "text": "social, economic and political influences on food availability, including: effects of poverty and affluence; type and state of the economy"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / government policy, eg taxation, embargoes, subsidies, war, export strategies",
+   "text": "government policy, eg taxation, embargoes, subsidies, war, export strategies"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / outline the historical changes to food availability in Australia",
+   "text": "outline the historical changes to food availability in Australia"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / debate the issue of social justice in relation to food consumption in developed and developing regions of the world",
+   "text": "debate the issue of social justice in relation to food consumption in developed and developing regions of the world"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / physiological factors, including: hunger, appetite, satiety; nutritional requirements, eg age, gender, size, activity level; reactions to food, eg appearance, odour, taste, allergy; psychological factors, including:; values, beliefs, habits, attitudes, emotions, self-concept, experiences; social factors, including:; traditions and culture",
+   "text": "physiological factors, including: hunger, appetite, satiety; nutritional requirements, eg age, gender, size, activity level; reactions to food, eg appearance, odour, taste, allergy; psychological factors, including:; values, beliefs, habits, attitudes, emotions, self-concept, experiences; social factors, including:; traditions and culture"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / lifestyle, eg employment, education, household structures, roles, geographic location, interests",
+   "text": "lifestyle, eg employment, education, household structures, roles, geographic location, interests"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / social interaction, eg peer group, family hospitality",
+   "text": "social interaction, eg peer group, family hospitality"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / media",
+   "text": "media"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / economic factors, including: the marketplace (retail and purchasing practices)",
+   "text": "economic factors, including: the marketplace (retail and purchasing practices)"
+  },
+  {
+   "code": "PRE-M1-T2-D13",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / resource availability such as food processing equipment and food preparation skills",
+   "text": "resource availability such as food processing equipment and food preparation skills"
+  },
+  {
+   "code": "PRE-M1-T2-D14",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / occupation and finances",
+   "text": "occupation and finances"
+  },
+  {
+   "code": "PRE-M1-T2-D15",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / explain how various factors influence selection of food by individuals and groups",
+   "text": "explain how various factors influence selection of food by individuals and groups"
+  },
+  {
+   "code": "PRE-M1-T2-D16",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / prepare foods that reflect various factors influencing food selection",
+   "text": "prepare foods that reflect various factors influencing food selection"
+  },
+  {
+   "code": "PRE-M1-T2-D17",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / investigate current food consumption and expenditure patterns in Australia",
+   "text": "investigate current food consumption and expenditure patterns in Australia"
+  },
+  {
+   "code": "PRE-M1-T2-D18",
+   "path": "Year 11 / Food Availability and Selection / Factors influencing food selection / analyse the eating patterns of a selected group to identify influences on food selection",
+   "text": "analyse the eating patterns of a selected group to identify influences on food selection"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Food Quality / Food safety / methods of storing foods to maintain quality such as dry storage, cold storage and freezing",
+   "text": "methods of storing foods to maintain quality such as dry storage, cold storage and freezing"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Food Quality / Food safety / describe methods of storing foods to maintain sensory characteristics and ensure safety",
+   "text": "describe methods of storing foods to maintain sensory characteristics and ensure safety"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Food Quality / Food safety / equipment and utensils to produce quality food products across a range of settings",
+   "text": "equipment and utensils to produce quality food products across a range of settings"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Food Quality / Food safety / safe and hygienic work practices when handling food",
+   "text": "safe and hygienic work practices when handling food"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Food Quality / Food safety / preparation methods to produce food products across a range of settings",
+   "text": "preparation methods to produce food products across a range of settings"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / Food Quality / Food safety / layout of food for visual appeal, including styling for photography and plating for service",
+   "text": "layout of food for visual appeal, including styling for photography and plating for service"
+  },
+  {
+   "code": "PRE-M2-T3-D7",
+   "path": "Year 11 / Food Quality / Food safety / select appropriate equipment and utensils to produce quality food products across a range of settings",
+   "text": "select appropriate equipment and utensils to produce quality food products across a range of settings"
+  },
+  {
+   "code": "PRE-M2-T3-D8",
+   "path": "Year 11 / Food Quality / Food safety / implement safe and hygienic work practices when handling food",
+   "text": "implement safe and hygienic work practices when handling food"
+  },
+  {
+   "code": "PRE-M2-T3-D9",
+   "path": "Year 11 / Food Quality / Food safety / select and apply suitable preparation methods to produce quality food products and plate meals for service across a range of settings",
+   "text": "select and apply suitable preparation methods to produce quality food products and plate meals for service across a range of settings"
+  },
+  {
+   "code": "PRE-M2-T3-D10",
+   "path": "Year 11 / Food Quality / Food safety / style foods for photography",
+   "text": "style foods for photography"
+  },
+  {
+   "code": "PRE-M2-T3-D11",
+   "path": "Year 11 / Food Quality / Food safety / sensory characteristics of foods, including appearance, odour, taste (flavour) and texture (mouth feel)",
+   "text": "sensory characteristics of foods, including appearance, odour, taste (flavour) and texture (mouth feel)"
+  },
+  {
+   "code": "PRE-M2-T3-D12",
+   "path": "Year 11 / Food Quality / Food safety / sensory assessment of a variety of foods",
+   "text": "sensory assessment of a variety of foods"
+  },
+  {
+   "code": "PRE-M2-T3-D13",
+   "path": "Year 11 / Food Quality / Food safety / identify sensory characteristics that constitute quality in a variety of foods",
+   "text": "identify sensory characteristics that constitute quality in a variety of foods"
+  },
+  {
+   "code": "PRE-M2-T3-D14",
+   "path": "Year 11 / Food Quality / Food safety / evaluate the appeal of foods using sensory assessment",
+   "text": "evaluate the appeal of foods using sensory assessment"
+  },
+  {
+   "code": "PRE-M2-T3-D15",
+   "path": "Year 11 / Food Quality / Food safety / functional properties of food, including:",
+   "text": "functional properties of food, including:"
+  },
+  {
+   "code": "PRE-M2-T3-D16",
+   "path": "Year 11 / Food Quality / Food safety / the role of proteins in denaturing, coagulation, gelation, foaming and browning",
+   "text": "the role of proteins in denaturing, coagulation, gelation, foaming and browning"
+  },
+  {
+   "code": "PRE-M2-T3-D17",
+   "path": "Year 11 / Food Quality / Food safety / the role of carbohydrates in gelatinising, dextrinising, caramelising and crystallising",
+   "text": "the role of carbohydrates in gelatinising, dextrinising, caramelising and crystallising"
+  },
+  {
+   "code": "PRE-M2-T3-D18",
+   "path": "Year 11 / Food Quality / Food safety / the role of fats in emulsifying and aerating",
+   "text": "the role of fats in emulsifying and aerating"
+  },
+  {
+   "code": "PRE-M2-T3-D19",
+   "path": "Year 11 / Food Quality / Food safety / explain some of the functional properties of food",
+   "text": "explain some of the functional properties of food"
+  },
+  {
+   "code": "PRE-M2-T3-D20",
+   "path": "Year 11 / Food Quality / Food safety / identify the factors that affect the functional properties of food",
+   "text": "identify the factors that affect the functional properties of food"
+  },
+  {
+   "code": "PRE-M2-T3-D21",
+   "path": "Year 11 / Food Quality / Food safety / factors that affect the functional properties of food, including: oxygen; temperature; acidity; agitation; enzymes; addition of other ingredients",
+   "text": "factors that affect the functional properties of food, including: oxygen; temperature; acidity; agitation; enzymes; addition of other ingredients"
+  },
+  {
+   "code": "PRE-M2-T3-D22",
+   "path": "Year 11 / Food Quality / Food safety / investigate through experimentation the factors that affect the functional properties of foods",
+   "text": "investigate through experimentation the factors that affect the functional properties of foods"
+  },
+  {
+   "code": "PRE-M2-T3-D23",
+   "path": "Year 11 / Food Quality / Food safety / prepare a range of foods which demonstrate the functional properties of food",
+   "text": "prepare a range of foods which demonstrate the functional properties of food"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Nutrition / Nutrients / food nutrients: carbohydrates, proteins, lipids, vitamins, minerals and water",
+   "text": "food nutrients: carbohydrates, proteins, lipids, vitamins, minerals and water"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Nutrition / Nutrients / structure of carbohydrates, proteins and lipids",
+   "text": "structure of carbohydrates, proteins and lipids"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Nutrition / Nutrients / sources of carbohydrates, proteins, lipids, vitamins, minerals and water",
+   "text": "sources of carbohydrates, proteins, lipids, vitamins, minerals and water"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Nutrition / Nutrients / functions of carbohydrates, proteins, lipids, vitamins, minerals and water in the body",
+   "text": "functions of carbohydrates, proteins, lipids, vitamins, minerals and water in the body"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Nutrition / Nutrients / significant interrelationships between nutrients, including: iron and vitamin C; iron and fibre; calcium and phosphorous; calcium and vitamin D; calcium and fibre; calcium and lactose; folate and vitamin B12; sodium and potassium",
+   "text": "significant interrelationships between nutrients, including: iron and vitamin C; iron and fibre; calcium and phosphorous; calcium and vitamin D; calcium and fibre; calcium and lactose; folate and vitamin B12; sodium and potassium"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Nutrition / Nutrients / identify food nutrients",
+   "text": "identify food nutrients"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Nutrition / Nutrients / identify types of carbohydrates, proteins, lipids and vitamins",
+   "text": "identify types of carbohydrates, proteins, lipids and vitamins"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Nutrition / Nutrients / identify the nutrient composition of various foods",
+   "text": "identify the nutrient composition of various foods"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Nutrition / Nutrients / explain the functions of food nutrients in human nutrition",
+   "text": "explain the functions of food nutrients in human nutrition"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Nutrition / Nutrients / combine foods to demonstrate nutritionally beneficial interrelationships between foods",
+   "text": "combine foods to demonstrate nutritionally beneficial interrelationships between foods"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Nutrition / Nutrients / digestion, absorption and metabolism of food",
+   "text": "digestion, absorption and metabolism of food"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Nutrition / Nutrients / describe the process of digestion, absorption and metabolism of food",
+   "text": "describe the process of digestion, absorption and metabolism of food"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Nutrition / Nutrients / nutritional requirements throughout the life cycle",
+   "text": "nutritional requirements throughout the life cycle"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Nutrition / Nutrients / investigate the recommended dietary intake of energy, protein, vitamins and minerals for particular individuals and groups using appropriate data such as RDI tables in print or electronic format",
+   "text": "investigate the recommended dietary intake of energy, protein, vitamins and minerals for particular individuals and groups using appropriate data such as RDI tables in print or electronic format"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Nutrition / Nutrients / current food selection guides and nutritional information that assist in planning and evaluating meals/diets",
+   "text": "current food selection guides and nutritional information that assist in planning and evaluating meals/diets"
+  },
+  {
+   "code": "PRE-M3-T1-D16",
+   "path": "Year 11 / Nutrition / Nutrients / select foods to provide a balanced intake of nutrients for particular individuals and groups to meet a variety of nutritional needs",
+   "text": "select foods to provide a balanced intake of nutrients for particular individuals and groups to meet a variety of nutritional needs"
+  },
+  {
+   "code": "PRE-M3-T1-D17",
+   "path": "Year 11 / Nutrition / Nutrients / preparation techniques to produce nutritious foods",
+   "text": "preparation techniques to produce nutritious foods"
+  },
+  {
+   "code": "PRE-M3-T1-D18",
+   "path": "Year 11 / Nutrition / Nutrients / use suitable preparation methods to optimise the nutritional value of foods",
+   "text": "use suitable preparation methods to optimise the nutritional value of foods"
+  },
+  {
+   "code": "PRE-M3-T1-D19",
+   "path": "Year 11 / Nutrition / Nutrients / assess meals/diets in regard to meeting nutritional needs throughout the life cycle",
+   "text": "assess meals/diets in regard to meeting nutritional needs throughout the life cycle"
+  },
+  {
+   "code": "PRE-M3-T1-D20",
+   "path": "Year 11 / Nutrition / Nutrients / plan, prepare, present and evaluate meals/diets that address the needs for optimal nutrition throughout the life cycle",
+   "text": "plan, prepare, present and evaluate meals/diets that address the needs for optimal nutrition throughout the life cycle"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / identify sectors within the Australian food industry",
+   "text": "identify sectors within the Australian food industry"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / plan and prepare foods/meals that reflect sectors of the Australian food industry",
+   "text": "plan and prepare foods/meals that reflect sectors of the Australian food industry"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / emerging technologies in food production, manufacturing and packaging including biotechnology in genetically modified foods, ecologically sustainable production methods, such as organic farming",
+   "text": "emerging technologies in food production, manufacturing and packaging including biotechnology in genetically modified foods, ecologically sustainable production methods, such as organic farming"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / investigate an emerging technology in ONE sector of the Australian food industry",
+   "text": "investigate an emerging technology in ONE sector of the Australian food industry"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / discuss the potential risks and benefits of using emerging technologies in food production and manufacture",
+   "text": "discuss the potential risks and benefits of using emerging technologies in food production and manufacture"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / operation of organisations within the Australian food industry with particular attention to:",
+   "text": "operation of organisations within the Australian food industry with particular attention to:"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / levels of operation and mechanisation, including household, small business, large companies, multinationals",
+   "text": "levels of operation and mechanisation, including household, small business, large companies, multinationals"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / research and development",
+   "text": "research and development"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / quality assurance",
+   "text": "quality assurance"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / consumer influences such as value added foods",
+   "text": "consumer influences such as value added foods"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / impact on the",
+   "text": "impact on the"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / environment including waste management, packaging practices, production techniques, and transportation",
+   "text": "environment including waste management, packaging practices, production techniques, and transportation"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / economy, eg generation of profit and changes in employment",
+   "text": "economy, eg generation of profit and changes in employment"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / society including lifestyle changes,",
+   "text": "society including lifestyle changes,"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / career opportunities and working conditions",
+   "text": "career opportunities and working conditions"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / describe the activities carried out in ONE organisation within the food industry",
+   "text": "describe the activities carried out in ONE organisation within the food industry"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / evaluate the impact of the operation of an organisation on individuals, society and the environment",
+   "text": "evaluate the impact of the operation of an organisation on individuals, society and the environment"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / advisory groups that have a role in formulating and implementing policy and legislation",
+   "text": "advisory groups that have a role in formulating and implementing policy and legislation"
+  },
+  {
+   "code": "HSC-M1-T2-D20",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / government policies and legislation (local, state, federal) that impact on the Australian food industry including legislative requirements for labelling",
+   "text": "government policies and legislation (local, state, federal) that impact on the Australian food industry including legislative requirements for labelling"
+  },
+  {
+   "code": "HSC-M1-T2-D21",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / explain career opportunities and working conditions, including gender issues within the Australian food industry",
+   "text": "explain career opportunities and working conditions, including gender issues within the Australian food industry"
+  },
+  {
+   "code": "HSC-M1-T2-D22",
+   "path": "Year 12 / The Australian Food Industry / Food industry sectors / identify significant government policies and legislation and explain their impact upon the Australian food industry",
+   "text": "identify significant government policies and legislation and explain their impact upon the Australian food industry"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / quality and quantity control in the selection of raw materials for food processing",
+   "text": "quality and quantity control in the selection of raw materials for food processing"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / role of food additives in the manufacturing process",
+   "text": "role of food additives in the manufacturing process"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / characteristics of equipment used in different types of production and the factors influencing their selection",
+   "text": "characteristics of equipment used in different types of production and the factors influencing their selection"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / production systems used in the manufacture of food, eg small scale, large scale, manual, automated, computerised",
+   "text": "production systems used in the manufacture of food, eg small scale, large scale, manual, automated, computerised"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / describe processes that transform raw materials into manufactured food products",
+   "text": "describe processes that transform raw materials into manufactured food products"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / describe the processing techniques, equipment, storage and distribution systems used in industry and compare with those used domestically",
+   "text": "describe the processing techniques, equipment, storage and distribution systems used in industry and compare with those used domestically"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / quality management considerations in industrial practices to achieve safe foods for public consumption, eg hazard analysis and critical control point (HACCP); work health and safety and hygiene",
+   "text": "quality management considerations in industrial practices to achieve safe foods for public consumption, eg hazard analysis and critical control point (HACCP); work health and safety and hygiene"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / identify critical control points and describe quality control procedures in food production systems",
+   "text": "identify critical control points and describe quality control procedures in food production systems"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / identify food safety hazards and risks",
+   "text": "identify food safety hazards and risks"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / reasons for preserving foods, eg safety, acceptability, nutritive value, availability and economic viability",
+   "text": "reasons for preserving foods, eg safety, acceptability, nutritive value, availability and economic viability"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / principles behind food preservation techniques, including temperature control and restriction of moisture, exclusion of air and pH",
+   "text": "principles behind food preservation techniques, including temperature control and restriction of moisture, exclusion of air and pH"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / preservation processes, including canning, drying, pasteurising, freezing and fermenting",
+   "text": "preservation processes, including canning, drying, pasteurising, freezing and fermenting"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / prepare food using the principles of food preservation to ensure a safe product",
+   "text": "prepare food using the principles of food preservation to ensure a safe product"
+  },
+  {
+   "code": "HSC-M2-T2-D15",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / functions of packaging and types of materials available",
+   "text": "functions of packaging and types of materials available"
+  },
+  {
+   "code": "HSC-M2-T2-D16",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / current developments in packaging, including active packaging; modified atmosphere packaging; sous vide",
+   "text": "current developments in packaging, including active packaging; modified atmosphere packaging; sous vide"
+  },
+  {
+   "code": "HSC-M2-T2-D17",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / storage conditions and distribution systems at various stages of food manufacture",
+   "text": "storage conditions and distribution systems at various stages of food manufacture"
+  },
+  {
+   "code": "HSC-M2-T2-D18",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / investigate, through experimentation, the suitability of packaging materials for different food products",
+   "text": "investigate, through experimentation, the suitability of packaging materials for different food products"
+  },
+  {
+   "code": "HSC-M2-T2-D19",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / suggested components and weightings for the internal assessment of the Preliminary course",
+   "text": "suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "HSC-M2-T2-D20",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / mandatory components and weightings for the internal assessment of the HSC course",
+   "text": "mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "HSC-M2-T2-D21",
+   "path": "Year 12 / Food Manufacture / Food processing and packaging / the HSC examination specifications, which describe the format of the external HSC examination.",
+   "text": "the HSC examination specifications, which describe the format of the external HSC examination."
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Food Product Development / Product development process / external factors (macro-environment) that impact on food product development, including the: economic environment; political environment; ecological environment; technological environment",
+   "text": "external factors (macro-environment) that impact on food product development, including the: economic environment; political environment; ecological environment; technological environment"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Food Product Development / Product development process / internal factors (micro-environment) that impact on food product development, including: personnel expertise; production facilities; financial position; company image",
+   "text": "internal factors (micro-environment) that impact on food product development, including: personnel expertise; production facilities; financial position; company image"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Food Product Development / Product development process / analyse commercial practices in terms of a food company’s response to the macro and micro environments",
+   "text": "analyse commercial practices in terms of a food company’s response to the macro and micro environments"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Food Product Development / Product development process / conduct a SWOT analysis to identify strengths, weaknesses, opportunities and threats",
+   "text": "conduct a SWOT analysis to identify strengths, weaknesses, opportunities and threats"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "drivers of the development of food products:"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Food Product Development / Product development process / market concerns such as health, dietary considerations and the environment",
+   "text": "market concerns such as health, dietary considerations and the environment"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Food Product Development / Product development process / consumer demands such as convenience foods and cost",
+   "text": "consumer demands such as convenience foods and cost"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Food Product Development / Product development process / societal changes including increasing ageing population, single person households and longer working hours",
+   "text": "societal changes including increasing ageing population, single person households and longer working hours"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Food Product Development / Product development process / technological developments such as processing equipment and packaging materials",
+   "text": "technological developments such as processing equipment and packaging materials"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Food Product Development / Product development process / company profitability such as increasing market share",
+   "text": "company profitability such as increasing market share"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Food Product Development / Product development process / types of food product development: line extensions; me toos; new to world",
+   "text": "types of food product development: line extensions; me toos; new to world"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Food Product Development / Product development process / design brief based on project aims and development criteria: idea generation and screening; market research; product specifications; feasibility study; production process development; development of a prototype",
+   "text": "design brief based on project aims and development criteria: idea generation and screening; market research; product specifications; feasibility study; production process development; development of a prototype"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Food Product Development / Product development process / testing product prototype, eg sensory evaluation, consumer testing, packaging tests, storage trials",
+   "text": "testing product prototype, eg sensory evaluation, consumer testing, packaging tests, storage trials"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Food Product Development / Product development process / describe different types of food products on the market",
+   "text": "describe different types of food products on the market"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Food Product Development / Product development process / develop a food product that meets a consumer need",
+   "text": "develop a food product that meets a consumer need"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Food Product Development / Product development process / product planning",
+   "text": "product planning"
+  },
+  {
+   "code": "HSC-M3-T1-D17",
+   "path": "Year 12 / Food Product Development / Product development process / price structure",
+   "text": "price structure"
+  },
+  {
+   "code": "HSC-M3-T1-D18",
+   "path": "Year 12 / Food Product Development / Product development process / place and distribution system",
+   "text": "place and distribution system"
+  },
+  {
+   "code": "HSC-M3-T1-D19",
+   "path": "Year 12 / Food Product Development / Product development process / promotional program",
+   "text": "promotional program"
+  },
+  {
+   "code": "HSC-M3-T1-D20",
+   "path": "Year 12 / Food Product Development / Product development process / plan suitable strategies for the marketing of a specific food product",
+   "text": "plan suitable strategies for the marketing of a specific food product"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / physical effects and economic costs of malnutrition (under and over nutrition) and diet related disorders",
+   "text": "physical effects and economic costs of malnutrition (under and over nutrition) and diet related disorders"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / nutritional considerations for specific groups",
+   "text": "nutritional considerations for specific groups"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of the individual, community groups, the food industry, government organisations and private agencies in promoting health",
+   "text": "the role of the individual, community groups, the food industry, government organisations and private agencies in promoting health"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the production/manufacture of nutritionally modified foods to meet consumer demand including a range of functional foods such as fortified foods",
+   "text": "the production/manufacture of nutritionally modified foods to meet consumer demand including a range of functional foods such as fortified foods"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of supplements in the diet",
+   "text": "the role of supplements in the diet"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / explain the consequences of malnutrition",
+   "text": "explain the consequences of malnutrition"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / independently investigate and report on the health of a group in Australia and develop a strategy to promote optimum health through good nutrition for this group",
+   "text": "independently investigate and report on the health of a group in Australia and develop a strategy to promote optimum health through good nutrition for this group"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / plan diets and prepare foods/meals to address dietary requirements of specific groups",
+   "text": "plan diets and prepare foods/meals to address dietary requirements of specific groups"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / discuss the relationship between nutritionally modified foods and health",
+   "text": "discuss the relationship between nutritionally modified foods and health"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / discuss the role of ‘active non-nutrients’ in the diet",
+   "text": "discuss the role of ‘active non-nutrients’ in the diet"
+  },
+  {
+   "code": "HSC-M4-T1-D12",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / debate the role of dietary supplements in a balanced diet",
+   "text": "debate the role of dietary supplements in a balanced diet"
+  },
+  {
+   "code": "HSC-M4-T1-D13",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / health and the role of diet in the development of conditions, including obesity, diabetes, cardiovascular disease, food sensitivity/intolerance/allergies",
+   "text": "health and the role of diet in the development of conditions, including obesity, diabetes, cardiovascular disease, food sensitivity/intolerance/allergies"
+  },
+  {
+   "code": "HSC-M4-T1-D14",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / lifestyle and the effect of cultural and social practices on nutritional status",
+   "text": "lifestyle and the effect of cultural and social practices on nutritional status"
+  },
+  {
+   "code": "HSC-M4-T1-D15",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / media and ethical issues related to advertising practices on food consumption such as the promotion of ‘health’ foods and ‘fast’ foods",
+   "text": "media and ethical issues related to advertising practices on food consumption such as the promotion of ‘health’ foods and ‘fast’ foods"
+  },
+  {
+   "code": "HSC-M4-T1-D16",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / describe the relationship between nutrient intake and dietary disorders",
+   "text": "describe the relationship between nutrient intake and dietary disorders"
+  },
+  {
+   "code": "HSC-M4-T1-D17",
+   "path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / discuss ethical issues related to the responsible advertising of food products",
+   "text": "discuss ethical issues related to the responsible advertising of food products"
+  }
+ ],
+ "questions": [
+  {
+   "id": "2020hsc01",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which sector of the Australian food industry sells packaged frozen pizza?\nFood retail\nAgriculture and fisheries\nFood service and catering\nFood processing/manufacturing"
+  },
+  {
+   "id": "2020hsc02",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / types of food product development: line extensions; me toos; new to world",
+   "text": "An ice-cream manufacturer develops a lactose free variety of their most popular ice-cream. Which type of food product development is this an example of?\nMe too\nCopycat\nNew to world\nLine extension"
+  },
+  {
+   "id": "2020hsc03",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / nutritional considerations for specific groups",
+   "text": "An elderly person who consumes a low fibre diet is at risk of developing which dietary disorder?\nAnaemia\nDiverticulitis\nDental caries\nCoeliac disease"
+  },
+  {
+   "id": "2020hsc04",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "A food product developer creates a single serve, ready-to-heat meal. Which is the most likely driver to have led to the creation of this food?\nSocietal changes\nMarket concerns for health\nConsumer demand for value\nMarket concerns for the environment"
+  },
+  {
+   "id": "2020hsc05",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / consumer influences such as value added foods",
+   "text": "Which of the following is an example of value adding in food manufacturing?\nLabelling on packaging\nAdding a profit margin to the price of the product\nIncreasing the price of a product to reflect increased ingredient cost\nPackaging a variety of lettuce leaves in a convenient single serve bowl"
+  },
+  {
+   "id": "2020hsc06",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / design brief based on project aims and development criteria: idea generation and screening; market research; product specifications; feasibility study; production process development; development of a prototype",
+   "text": "In which step of food product development does the packaging design occur?\nFeasibility study\nProduct specifications\nIdea generation screening\nTesting product prototype"
+  },
+  {
+   "id": "2020hsc07",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / conduct a SWOT analysis to identify strengths, weaknesses, opportunities and threats",
+   "text": "A food manufacturer is conducting a SWOT analysis after a competitor releases a me too of one of its products. In the SWOT analysis the me too product is considered\na threat.\na strength.\na weakness.\nan opportunity."
+  },
+  {
+   "id": "2020hsc08",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / quality assurance",
+   "text": "A company wishes to ensure the consistency and safety of its products throughout production. An example of a quality management system they might use to achieve this is\nCSIRO.\nFSANZ.\nHACCP.\nNHMRC."
+  },
+  {
+   "id": "2020hsc09",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / emerging technologies in food production, manufacturing and packaging including biotechnology in genetically modified foods, ecologically sustainable production methods, such as organic farming",
+   "text": "One short-term benefit of using ecologically sustainable production methods is\nimproved yields.\nreduced labour costs.\nlower production costs.\nreduced carbon emissions."
+  },
+  {
+   "id": "2020hsc10",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / role of food additives in the manufacturing process",
+   "text": "Which food additive ensures the free flow of powdered products?\nEmulsifier\nAntioxidant\nBulking agent\nAnti-caking agent"
+  },
+  {
+   "id": "2020hsc11",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / price structure",
+   "text": "Which pricing structure involves selling a new product at a similar price to that of existing products?\nBreak-even\nCompetitive\nPenetration\nSkimming"
+  },
+  {
+   "id": "2020hsc12",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / career opportunities and working conditions",
+   "text": "In which list of career opportunities are all of the positions available in the food processing and manufacturing sector of the Australian food industry?\nFruit picker, food merchandiser, market researcher\nFood technologist, agronomist, warehouse personnel\nGraphic designer, market researcher, food production line worker\nFood technologist, food product developer, product demonstrator"
+  },
+  {
+   "id": "2020hsc13",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of the individual, community groups, the food industry, government organisations and private agencies in promoting health",
+   "text": "A government initiative promoting health to Australians is\nDance 4 Diabetes.\nJump Rope for Heart.\nAustralia’s Biggest Morning Tea.\nAustralian Guide to Healthy Eating."
+  },
+  {
+   "id": "2020hsc14",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / principles behind food preservation techniques, including temperature control and restriction of moisture, exclusion of air and pH",
+   "text": "How are vegetables processed to deactivate enzymes prior to freezing?\nPeeled\nChopped\nBlanched\nVacuum sealed"
+  },
+  {
+   "id": "2020hsc15",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / quality and quantity control in the selection of raw materials for food processing",
+   "text": "Raw materials used in food manufacture primarily undergo quality control to ensure that they\nminimise waste.\nare cost effective.\ncomply to standard specifications.\ncomply with work health and safety regulations."
+  },
+  {
+   "id": "2020hsc16",
+   "year": 2020,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / physical effects and economic costs of malnutrition (under and over nutrition) and diet related disorders",
+   "text": "Which of the following diet-related disorders has the highest economic cost in Australia?\nCardiovascular disease\nGluten intolerance\nType 2 diabetes\nOsteoporosis"
+  },
+  {
+   "id": "2020hsc17",
+   "year": 2020,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of supplements in the diet",
+   "text": "Omega 3 oils may be used as a\nprobiotic.\nflavonoid.\ndietary fibre.\nnutritional supplement."
+  },
+  {
+   "id": "2020hsc18",
+   "year": 2020,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / storage conditions and distribution systems at various stages of food manufacture",
+   "text": "In large factories, bulk dry ingredients are stored in a\nsilo.\nhopper.\nretort.\ncentrifuge."
+  },
+  {
+   "id": "2020hsc19",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "What is the effect on dried herbs of long-term exposure to light?\nAttracts pests\nDiscolouration\nChange in texture\nCultivates microbes"
+  },
+  {
+   "id": "2020hsc20",
+   "year": 2020,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Australian researchers have recently developed a new variety of plum which can reduce cholesterol levels within 30 minutes. Which compound in the plum is most likely to deliver this health benefit?\nInsoluble fibre\nLow-density lipoproteins\nPhytochemicals\nVitamin C"
+  },
+  {
+   "id": "2020hsc21",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "Name an organisation in the Australian food industry.\nIdentify the sector of the Australian food industry to which this organisation belongs.\nDescribe how this organisation has responded to consumer demand for convenience foods."
+  },
+  {
+   "id": "2020hsc22",
+   "year": null,
+   "number": null,
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food spoilage and preservation.\nOutline TWO causes of food spoilage.\nExplain TWO reasons why manufacturers preserve foods.\nExplain the principles behind ONE preservation technique. In your answer, refer to an example of a specific food."
+  },
+  {
+   "id": "2020hsc23",
+   "year": null,
+   "number": null,
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "A food manufacturing company has developed a shelf-stable, dairy-free probiotic spread.\nDefine the term active non-nutrient.\nDescribe the health benefits of this product for consumers."
+  },
+  {
+   "id": "2020hsc24",
+   "year": null,
+   "number": null,
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / government policies and legislation (local, state, federal) that impact on the Australian food industry including legislative requirements for labelling",
+   "text": "Answer the following questions about government policy and food product development.\nOutline ONE government policy that affects the Australian food industry.\nDescribe how government legislation influences the decisions made by Australian food manufacturers.\nExplain external factors that affect food product development in the Australian food industry."
+  },
+  {
+   "id": "2020hsc25",
+   "year": null,
+   "number": null,
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "Answer the following questions about food product development and nutrition.\nIdentify the types of market research that would be useful during the development of a food product.\nWhy is it important to test product prototypes in food product development?\nExplain the relationship between nutrient intake and ONE dietary disorder. Name of disorder."
+  },
+  {
+   "id": "2020hsc26",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / quality management considerations in industrial practices to achieve safe foods for public consumption, eg hazard analysis and critical control point (HACCP); work health and safety and hygiene",
+   "text": "How is quality management in food manufacture assisted by computerised production systems?"
+  },
+  {
+   "id": "2020hsc27",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "A food manufacturing company has produced a plant-based product that is low in cholesterol and high in fibre and protein.\nOutline a target market for this product.\nPropose a marketing plan that could be used to launch this product.\nExplain the potential benefits of moving towards a plant-based diet."
+  },
+  {
+   "id": "2020hsc28",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / current developments in packaging, including active packaging; modified atmosphere packaging; sous vide",
+   "text": "How effectively have developments in food packaging responded to both consumer demands for convenience and concerns about the environment?"
+  },
+  {
+   "id": "2021hsc01",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "What is the name of the group of additives used to replace sugar in food manufacturing?\nEmulsifiers\nPreservatives\nFlavour enhancers\nArtificial sweeteners"
+  },
+  {
+   "id": "2021hsc02",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "A food manufacturer introduces a new packaging size for an existing product they produce. This product is known as a\nme-too.\ncopy-cat.\nline-extension.\nnew-to-the-world."
+  },
+  {
+   "id": "2021hsc03",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "The main purpose of food dehydration in food manufacture is to\nrehydrate food.\nprolong the shelf life of food.\nconcentrate the flavour of the food.\nreduce the size for ease of packaging."
+  },
+  {
+   "id": "2021hsc04",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "An individual who does not eat any food derived from animals or animal-sourced products is most likely to be considered\nvegan.\nvegetarian.\npescatarian.\nlactose intolerant."
+  },
+  {
+   "id": "2021hsc05",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Which of the following is a breach of the Work Health and Safety Act 2011 (Cth)?\nServing expired food\nNot reporting faulty equipment\nNot declaring allergens on food labels\nProviding inaccurate weight on food packaging"
+  },
+  {
+   "id": "2021hsc06",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Which of the following may be a consequence of consuming a high salt diet?\nObesity\nDental caries\nHypertension\nVitamin deficiency"
+  },
+  {
+   "id": "2021hsc07",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Industrial food production equipment is required to be\ndurable, fast and efficient.\nprecise, consistent and large.\nsturdy, manually operated and large.\ndurable, manually operated and efficient."
+  },
+  {
+   "id": "2021hsc08",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which sector of the Australian food industry would get the greatest benefit from an increase in people using apps to order take-away food?\nFood retail\nAgriculture and fisheries\nFood service and catering\nFood manufacture and processing"
+  },
+  {
+   "id": "2021hsc09",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A person working in food retail is successful in obtaining a scholarship for a course in management training. This is an example of\nan employee right.\na career opportunity.\nenterprise bargaining.\nimproving company image."
+  },
+  {
+   "id": "2021hsc10",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which set of factors is required to successfully market a new food product?\nPopularity, planning, product and price\nProduct, product features, price and placement\nPlace, price, product and promotional program\nPlanning, promotional program, place and distribution system"
+  },
+  {
+   "id": "2021hsc11",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A fast food company is sponsoring a major sporting event. This is an example of\ndirect selling.\ncross promotion.\nconsumer testing.\ncompetition give-away."
+  },
+  {
+   "id": "2021hsc12",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A child complains of tingling in the mouth, swelling of the face and feeling dizzy. These symptoms are most likely to be caused by\na food allergy.\na diabetic reaction.\na diet high in fibre.\nan excess vitamin intake."
+  },
+  {
+   "id": "2021hsc13",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "The primary role of advisory groups in the Australian food industry is to\nmarket products to consumers.\nplace tariffs on new food products.\ndevelop new food products for a food manufacturer.\nprovide guidance to government when developing policies."
+  },
+  {
+   "id": "2021hsc14",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "A food manufacturer is required to pay a tax on an imported ingredient. Which of the following is most likely to be responsible for this tax?\nPolitical decision\nCompany profitability\nForeign trade partnerships\nTechnological advancements"
+  },
+  {
+   "id": "2021hsc15",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Food manufacturers have increased their use of biodegradable packaging materials. Which of the following has enabled this change?\nPersonnel expertise\nMarket concerns for health\nTechnological developments\nConsumer demands for convenience"
+  },
+  {
+   "id": "2021hsc16",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "During which step of the food product development process would a food manufacturer determine if the product is likely to be a financial success?\nMarket research\nFeasibility study\nProduct specifications\nDevelopment of product prototype"
+  },
+  {
+   "id": "2021hsc17",
+   "year": 2021,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following is the best example of a functional, fortified food?\nCustard\nSultanas\nCake mix\nWhite bread"
+  },
+  {
+   "id": "2021hsc18",
+   "year": 2021,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Lack of available fruit pickers has left Australian farmers with unpicked, rotting fruit. Which of the following is most likely to be affected?\nThe economy\nQuality assurance\nWorking conditions\nResearch and development"
+  },
+  {
+   "id": "2021hsc19",
+   "year": 2021,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "A new yoghurt has been released which has added fibre and probiotics. These ingredients are\nlaxatives.\nfood additives.\ndiet supplements.\nactive non-nutrients."
+  },
+  {
+   "id": "2021hsc20",
+   "year": 2021,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "A supermarket has introduced data embedded barcodes to their meat and poultry labels to help manage product recalls, food waste and sales of expired food products. What is this an example of?\nActive packaging\nA preservation process\nA current development in technology\nA legislated food labelling requirement"
+  },
+  {
+   "id": "2021hsc21",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "A food manufacturer wants to release a me-too version of an existing popular sandwich spread.\nOutline the roles of BOTH idea generation and screening in the development of this product.\nConduct a SWOT analysis for this me-too version."
+  },
+  {
+   "id": "2021hsc22",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / emerging technologies in food production, manufacturing and packaging including biotechnology in genetically modified foods, ecologically sustainable production methods, such as organic farming",
+   "text": "Answer the following questions about emerging technologies.\nOutline ONE emerging technology in the Australian food industry.\nDescribe potential benefits of an emerging technology in ONE sector of the Australian food industry."
+  },
+  {
+   "id": "2021hsc23",
+   "year": null,
+   "number": null,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food manufacture.\nOutline the features required in equipment to be used by a household company in the production of a food product.\nDescribe the specifications food manufacturers need to consider when selecting raw materials.\nPropose possible waste management strategies a food manufacturing company could implement."
+  },
+  {
+   "id": "2021hsc24",
+   "year": null,
+   "number": null,
+   "marks": 13,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food deterioration and preservation.\nOutline the causes of food deterioration that affect the shelf life of cut fruit and vegetables.\nRecommend a preservation process that could be used to prolong the shelf life of a named fruit or vegetable. Fruit or vegetable:\nExplain how food product developers have responded to consumer demands for healthier products. Support your response with examples."
+  },
+  {
+   "id": "2021hsc25",
+   "year": null,
+   "number": null,
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues",
+   "text": "Answer the following questions about nutrition and health.\nHow have food product developers responded to the nutritional considerations for a specific group in Australia?\nWhat is the role of ONE organisation in promoting health in Australia?\nExplain the physical consequences of malnutrition."
+  },
+  {
+   "id": "2021hsc26",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / quality assurance",
+   "text": "How does ONE organisation within the Australian food industry provide consumer with quality assurance? Support your response with examples."
+  },
+  {
+   "id": "2021hsc27",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "An Australian fruit juice manufacturer has developed a new range of fruit drinks with 50% less sugar and added dietary fibre.\nOutline TWO pieces of legislation that would need to be followed by the food manufacturer during the development of this product.\nDescribe ONE test that could be used to determine the suitability of a proposed package for the newly developed juice.\nExplain how this nutritionally modified juice can improve the health of Australians."
+  },
+  {
+   "id": "2021hsc28",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "Evaluate how sectors of the Australian food industry have responded to BOTH societal changes and consumer demands for convenience."
+  },
+  {
+   "id": "2022hsc01",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "An individual is diagnosed with anaemia. Which dietary supplement would best address this disorder?\nVitamin C\nIron tablet\nDietary fibre\nSodium powder"
+  },
+  {
+   "id": "2022hsc02",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "What is the process of removing moisture from a food product?\nDrying\nFreezing\nFermentation\nPasteurisation"
+  },
+  {
+   "id": "2022hsc03",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A food product developer has completed the product specifications in the development of a new food product. What is the next step?\nMarket research\nFeasibility study\nDevelopment of a prototype\nProduction process development"
+  },
+  {
+   "id": "2022hsc04",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "For which of the following is seasonal employment an expected working condition?\nFruit pickers\nForklift drivers\nHorticulturalists\nProduction line engineers"
+  },
+  {
+   "id": "2022hsc05",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which food category is most likely to prevent the development of type 2 diabetes when regularly consumed?\nFats and oils\nMeat and dairy\nBreads and cereals\nFruits and vegetables"
+  },
+  {
+   "id": "2022hsc06",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "What is the purpose of an emulsifier in food manufacturing?\nTo prevent drying\nTo prevent oxidation\nTo combine oil and water\nTo extend the product’s shelf life"
+  },
+  {
+   "id": "2022hsc07",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "During times of strong economic growth, many food manufacturers expand their product range. What is the best explanation for this?\nMarket concerns\nConsumer demands\nCompany profitability\nTechnological developments"
+  },
+  {
+   "id": "2022hsc08",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Peeled, sliced and frozen potatoes that are sold in the food retail sector are an example of\nfunctional food.\nvalue-added food.\nlow-cost nutritious food.\nfood to be consumed on the go."
+  },
+  {
+   "id": "2022hsc09",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Athletes consume food products with increased protein to enhance their performance. These products are an example of\nsupplements.\nenriched foods.\nfunctional foods.\nactive non-nutrients."
+  },
+  {
+   "id": "2022hsc10",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "A small sachet is inserted into a food package to remove gases during storage. What type of packaging is this?\nActive\nVacuum\nSous vide\nBarrier specific"
+  },
+  {
+   "id": "2022hsc11",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "An apple producer has redesigned their fruit punnets to include a convenient carry handle. Which of the following is most likely to have influenced this development?\nMarket concerns\nDecreasing costs\nTechnological developments\nConcerns for the environment"
+  },
+  {
+   "id": "2022hsc12",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Producers can use technology to monitor irrigation remotely. Which sector of the food industry is using this technology?\nFood retail\nAgriculture and fisheries\nFood service and catering\nFood processing and manufacturing"
+  },
+  {
+   "id": "2022hsc13",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "An individual is producing protein-destroying antibodies. What is the individual most likely to be experiencing?\nFood poisoning\nAllergic reaction\nDiabetic episode\nFood intolerance"
+  },
+  {
+   "id": "2022hsc14",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which method of preservation relies on lactic acid to extend the shelf life of a food product?\nChilling\nDehydration\nFermentation\nFreezing"
+  },
+  {
+   "id": "2022hsc15",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "A honey producer has applied to maintain the use of their product name based on flora that is unique to their geographic region. What aspect of a SWOT analysis would have identified the need for this application?\nStrength\nWeakness\nOpportunity\nThreat"
+  },
+  {
+   "id": "2022hsc16",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Two Australian dairy manufacturers have merged their operations and will make use of multiple processing plants across the country. As a result, their production capabilities will increase. Which level of operation is represented in this merger?\nHousehold\nMultinational\nSmall business\nLarge company"
+  },
+  {
+   "id": "2022hsc17",
+   "year": 2022,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "The health of which specific group in Australia is most likely to be affected by geographic location, high mortality rates, predisposition to obesity, hypertension and cardiovascular disease?\nAthletes\nMiddle-aged men\nPregnant and lactating women\nAboriginal and Torres Strait Islander People"
+  },
+  {
+   "id": "2022hsc18",
+   "year": 2022,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "During a quality control inspection at a manufacturing facility, mould has been identified in a batch of freeze-dried pineapple. What is the most likely cause of the growth of mould?\nEnzymatic activity\nHigh moisture content\nInappropriate packaging\nIncorrect storage conditions"
+  },
+  {
+   "id": "2022hsc19",
+   "year": 2022,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A sustainable seafood partnership was developed in response to unethical aquaculture practices. What is the primary external factor that has influenced the development of this partnership?\nThe political environment\nThe economic environment\nThe ecological environment\nThe technological environment"
+  },
+  {
+   "id": "2022hsc20",
+   "year": 2022,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "A team of researchers investigates the use of electric motors for agricultural machinery in order to reduce carbon emissions associated with food production. Which government body is most likely to be responsible for this research?\nCSIRO\nFSANZ\nNSW Food Authority\nDepartment of Agriculture, Water and the Environment"
+  },
+  {
+   "id": "2022hsc21",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / functions of packaging and types of materials available",
+   "text": "Answer the following questions about packaging.\nIdentify ONE function of packaging.\nRecommend a suitable packaging material for refrigerated cookie dough."
+  },
+  {
+   "id": "2022hsc22",
+   "year": null,
+   "number": null,
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "An organisation is adopting a technology that can be used to rescue surplus food and distribute it via an online marketplace.\nOutline the benefits of this technology for the environment.\nHow does ONE piece of legislation affect the operation of a surplus food rescue organisation?\nExplain storage and distribution considerations for rescued surplus food. Support your response with examples."
+  },
+  {
+   "id": "2022hsc23",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of supplements in the diet",
+   "text": "Justify the inclusion of TWO specific dietary supplements in contributing to a balanced diet for pregnant and lactating women."
+  },
+  {
+   "id": "2022hsc24",
+   "year": null,
+   "number": null,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "An organisation is repurposing food nearing the end of its shelf life into food products such as pesto, smoothies and pizzas.\nWhy have these food products been developed?\nAnalyse the impact of the micro-environment in the development of a successful food product. Support your response with an example."
+  },
+  {
+   "id": "2022hsc25",
+   "year": null,
+   "number": null,
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues",
+   "text": "An example of an adult’s daily diet is provided below.\nOutline ONE dietary disorder that may develop as a result of this diet. (an adult daily diet high in fat, salt and sugar)\nIdentify a different dietary disorder to the one outlined in part (a) and propose lifestyle practices that may improve an individual’s nutritional status for this disorder.\nHow should a health food company advertise responsibly?"
+  },
+  {
+   "id": "2022hsc26",
+   "year": null,
+   "number": null,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food preservation.\nHow can a principle of preservation assist in ensuring that dairy products are safe for consumption?\nAssess the suitability of ONE preservation process for extending the shelf life of a meat product. Provide examples to support your response."
+  },
+  {
+   "id": "2022hsc27",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "A food retailer has opened a new store that provides a range of self-serve food options. This includes locally sourced and culturally considered ingredients to meet the consumer demands of the surrounding area.\nIdentify TWO career opportunities this store has created in the food retail sector.\nExplain quality management considerations that need to be in place to ensure the self-serve food options are safe for public consumption.\nEvaluate the use of TWO promotional strategies suitable for a locally sourced food product sold by the food retailer. Provide examples to support your response."
+  },
+  {
+   "id": "2022hsc28",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of the individual, community groups, the food industry, government organisations and private agencies in promoting health",
+   "text": "Assess the roles of government organisations, food manufacturers and community groups in improving the diet and health of Australians."
+  },
+  {
+   "id": "2023hsc01",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Vacuum sealing stops food from spoiling by controlling the\nlight.\noxygen.\nenzymes.\ntemperature."
+  },
+  {
+   "id": "2023hsc02",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "The excess consumption of sugar is most likely to be responsible for causing which condition?\nConstipation\nBowel cancer\nOsteoporosis\nDental caries"
+  },
+  {
+   "id": "2023hsc03",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "A food manufacturer uses semi-automated commercial equipment to produce baked goods. This is an example of which level of operation?\nHousehold\nMultinational\nSmall business\nLarge company"
+  },
+  {
+   "id": "2023hsc04",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following products would be suitable for an individual living with coeliac disease?\nGluten-free pasta\nHigh-fibre rye bread\nBarley grain porridge\nWheat flour chocolate cake"
+  },
+  {
+   "id": "2023hsc05",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Why would a food manufacturing company use the hazard analysis and critical control point (HACCP) system?\nTo analyse staff productivity\nTo manage processing issues\nTo improve energy efficiency\nTo ensure consistent product size"
+  },
+  {
+   "id": "2023hsc06",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following lists long-term physical effects of type 2 diabetes?\nBloating and lethargy\nBlindness and renal failure\nMood swings and mouth ulcers\nLow-blood glucose and reduced thirst"
+  },
+  {
+   "id": "2023hsc07",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "What factor of the macro-environment could affect a food manufacturer?\nChange of government\nThe wider community’s perception of the food manufacturer\nImprovement to production facilities which increase efficiency and volume\nThe food manufacturer’s financial ability to invest in research and development"
+  },
+  {
+   "id": "2023hsc08",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following tasks in food manufacturing would be performed by unskilled workers?\nConducting sensory assessments\nDevelopment of packaging labels\nVisual inspection of fresh produce\nModification of processing equipment"
+  },
+  {
+   "id": "2023hsc09",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following is an example of a food industry advisory group?\nNSW Food Authority\nFood and Agriculture Organization\nAustralian Food and Grocery Council\nAustralian Institute of Science and Technology"
+  },
+  {
+   "id": "2023hsc10",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following must appear on a food label in Australia?\nNutrition panel\nGuaranteed health claims\nDirections for the disposal of the packaging\nContact information of overseas manufacturer"
+  },
+  {
+   "id": "2023hsc11",
+   "year": 2023,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A food item is recalled as it contains an undeclared allergen. What are the next steps to be followed?\nConduct a batch control test and donate recalled products to a charity\nRelease a media statement and direct supermarkets to discount the product\nNotify consumers of the inaccuracy and modify ingredients label on all existing products\nComplete a food safety audit and advise consumers to return the product to place of purchase"
+  },
+  {
+   "id": "2023hsc12",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Eating a diet high in soy will provide an individual with\nprobiotics.\ncarotenoids.\ninsoluble fibre.\nphytoestrogens."
+  },
+  {
+   "id": "2023hsc13",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following is an example of a me too food product?\nLaunching a generic breakfast cereal\nUsing organic ingredients for a muffin range\nPackaging mini chocolate bars in bulk packets\nProducing a low sugar version of an existing muesli bar"
+  },
+  {
+   "id": "2023hsc14",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "An individual has a subscription to a food company that sells pre-packaged dinners. Who is responsible for the nutritional impact of these food products on the individual?\nThe consumer\nPrivate agencies\nThe government\nThe meal deliverer"
+  },
+  {
+   "id": "2023hsc15",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which of the following lists of additives is used to fortify foods?\nFolate, calcium, iron\nVitamin C, gluten, sucrose\nLactose, vitamin D, gelatin\nDietary fibre, sodium, iodine"
+  },
+  {
+   "id": "2023hsc16",
+   "year": 2023,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "A food product developer conducted market research and it identified more people were choosing to eat a meat-free meal once a week. What is the next step, in response to this research, for the food product developer?\nCreate a marketing campaign that targets vegans\nConduct idea generation for potential new food products\nLaunch the prototype of a new food item into the marketplace\nExamine the break-even point of their existing vegetarian range"
+  },
+  {
+   "id": "2023hsc17",
+   "year": 2023,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which row of the table identifies a potential benefit and a potential risk when producing organic tomatoes? Benefit Risk\nThe yield will be consistent throughout the season The tomatoes will all be the same size\nPests can be managed by the use of companion planting Some genes in the tomatoes have been modified\nThe tomatoes will be free from synthetic chemicals There will be a greater variety in the quality of the produce\nThe tomatoes will be more nutritious than non-organic tomatoes There are concerns about the safety of organically produced foods"
+  },
+  {
+   "id": "2023hsc18",
+   "year": 2023,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "The use of oxygen scavengers in the packaging of bread products is an example of\ngas packaging.\nactive packaging.\naseptic packaging.\nbarrier specific packaging."
+  },
+  {
+   "id": "2023hsc19",
+   "year": 2023,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "A food company has launched a new line of snacks targeting health-conscious consumers. They claim that their snacks are made with ‘100% natural ingredients’ and are ‘free from artificial additives’. The company’s advertisements show images of fresh fruits and vegetables, giving the impression that their snacks are healthy and nutritious. What is a possible ethical issue associated with the advertising claims made by the food company?\nMeeting the demands of the target market\nExaggerating the taste and flavour of the snacks\nMisleading consumers about the nutritional value of the snacks\nFailing to provide contact information on the snack packaging label"
+  },
+  {
+   "id": "2023hsc20",
+   "year": 2023,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "What is the primary role of the Department of Agriculture, Fisheries and Forestry?\nOversee quality control procedures and guarantee that food is safe for consumption\nManage disease outbreaks and facilitate the movement of all stock around the country\nInspect food production facilities and ensure that Australian produce is free of antibiotics\nPrevent the entry of exotic pests into Australia and certify livestock exports for the global market"
+  },
+  {
+   "id": "2023hsc21",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Answer the following questions about probiotics.\nIdentify TWO foods that contain probiotics.\nDescribe the role probiotics play in a balanced diet."
+  },
+  {
+   "id": "2023hsc22",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food safety and quality.\nOutline ONE food safety hazard associated with selling uncovered raw meat in a chilled open display cabinet.\nDescribe a process for maintaining the quality of seafood products."
+  },
+  {
+   "id": "2023hsc23",
+   "year": null,
+   "number": null,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Product Development / Product development process / conduct a SWOT analysis to identify strengths, weaknesses, opportunities and threats",
+   "text": "Answer the following questions about product development and packaging.\nExplain why a food manufacturer may use a SWOT analysis in the development of a new product.\nDescribe how chocolate-coated biscuits should be packaged."
+  },
+  {
+   "id": "2023hsc24",
+   "year": null,
+   "number": null,
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "Answer the following questions about the Australian food industry.\nDescribe TWO gender issues in ONE sector of the Australian food industry.\nExplain how waste is managed in the food processing and manufacturing sector. Provide TWO relevant examples."
+  },
+  {
+   "id": "2023hsc25",
+   "year": null,
+   "number": null,
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues",
+   "text": "Answer the following questions about nutrition and malnutrition.\nOutline the characteristics of ONE group at risk of malnutrition.\nDescribe a diet-related condition that is experienced by a specific group in Australia.\nExplain ONE strategy that aims to promote optimal health for nutritionally vulnerable individuals."
+  },
+  {
+   "id": "2023hsc26",
+   "year": null,
+   "number": null,
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Product Development / Product development process / price structure",
+   "text": "Answer the following questions about pricing.\nCompare TWO price structures a food company may choose to use. Include relevant examples.\nExplain THREE factors a food company must consider when determining a price for their product."
+  },
+  {
+   "id": "2023hsc27",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "Food retail fresh produce availability and preservation.\nOutline factors that influence the availability of fresh produce in food retail.\nDescribe commercial practices that food companies could implement in response to consumer demands.\nExplain preservation processes for extending the shelf life of ONE perishable food."
+  },
+  {
+   "id": "2023hsc28",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / government policies and legislation (local, state, federal) that impact on the Australian food industry including legislative requirements for labelling",
+   "text": "Discuss the impact of government policies and legislation on the agri-food chain."
+  },
+  {
+   "id": "2024hsc01",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which sector of the Australian food industry has responsibility for the growth of seaweed?\nFood retail\nAgriculture and fisheries\nFood service and catering\nFood processing/manufacturing"
+  },
+  {
+   "id": "2024hsc02",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Which of the following is a diet-related condition currently on the rise in Australia due to the over-consumption of foods high in kilojoules and fats?\nObesity\nAnaemia\nOsteoporosis\nType 1 diabetes"
+  },
+  {
+   "id": "2024hsc03",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "What is a me-too product?\nA unique product\nA completely new product\nAn extension of an existing product\nA direct copy of an existing product"
+  },
+  {
+   "id": "2024hsc04",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "Which part of the marketing plan is associated with the advertising of a new food item?\nPrice structure\nProduct life-cycle\nPromotional program\nPlace and distribution"
+  },
+  {
+   "id": "2024hsc05",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A student sells cupcakes at a school market day. Under which level of operation does this fall?\nHousehold\nMultinational\nSmall business\nLarge company"
+  },
+  {
+   "id": "2024hsc06",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A fast-food chain makes several changes to its menu earning it the Heart Foundation Tick. This results in consumers being provided with\ncheaper options.\nhealthier options.\nmore convenient foods.\nspecial dietary products."
+  },
+  {
+   "id": "2024hsc07",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "What step in the food product development process involves storage trials?\nIdea generation\nFeasibility study\nProduct specifications\nTesting product prototypes"
+  },
+  {
+   "id": "2024hsc08",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "A company that manufactures plant-based meat alternatives has decided to use newly available processing equipment. What is probably the driver of this decision?\nMarket concerns\nSocietal changes\nConsumer demand\nTechnological developments"
+  },
+  {
+   "id": "2024hsc09",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Food Standards Australia New Zealand (FSANZ) has made it mandatory for bread flour in Australia to be fortified with what additional ingredient?\nIron\nCalcium\nFolic Acid\nVitamin C"
+  },
+  {
+   "id": "2024hsc10",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which food additive is used in table salt to prevent clumping, allowing it to flow?\nA humectant\nAn emulsifier\nA bulking agent\nAn anti-caking agent"
+  },
+  {
+   "id": "2024hsc11",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A bag of dried oats has been infested with insects. What is the most likely cause of this?\nEnzymatic activity\nEnvironmental factors\nMicrobial contamination\nExpiry of best-before date"
+  },
+  {
+   "id": "2024hsc12",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "A food company is being influenced by rising interest rates. Which macro-environment is likely to be most affected?\nEconomic\nEcological\nLegislative\nTechnological"
+  },
+  {
+   "id": "2024hsc13",
+   "year": 2024,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which of the following is produced using ecologically-sustainable production methods?\nSkim milk\nCaged eggs\nOrganic apples\nFreeze-dried berries"
+  },
+  {
+   "id": "2024hsc14",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "An Australian energy drink company is targeting a new drink at children by using bright colours and celebrity endorsements on social media. Which of the following is responsible for overseeing this company’s ethical compliance?\nWorld Health Organisation\nThe Advertising Standards Bureau\nAustralian Food and Grocery Council\nFood Standards Australia New Zealand"
+  },
+  {
+   "id": "2024hsc15",
+   "year": 2024,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Quality control measures are used to ensure that raw materials used in the manufacturing process are\nin season.\nvalue for money.\nconveniently sourced.\nmeeting specifications."
+  },
+  {
+   "id": "2024hsc16",
+   "year": 2024,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Which of the following lists two health issues related to the over-consumption of some vitamin supplements?\nKidney failure and liver damage\nConstipation and haemorrhoids\nCoeliac disease and diarrhoea\nDental caries and bad breath"
+  },
+  {
+   "id": "2024hsc17",
+   "year": 2024,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which of the following is the primary purpose of centrifuging as a processing technique?\nEnhancing flavour\nIncreasing temperature\nSeparating components\nReducing cooking time"
+  },
+  {
+   "id": "2024hsc18",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "Which active non-nutrient is beneficial for an individual recovering from diverticulitis?\nProbiotics\nDietary fibre\nPhyto-chemicals\nOmega-3 fatty acids"
+  },
+  {
+   "id": "2024hsc19",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which legislation ensures compliance of the safe operating of machinery in the NSW food industry?\nFood Act 2003\nFood Regulation Act 2015\nWork Health and Safety Act 2011\nCompetition and Consumer Act 2010"
+  },
+  {
+   "id": "2024hsc20",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "What temperature and time are required to produce shelf stable, long-life milk?\n110°C for 3 seconds\n110°C for 32 seconds\n140°C for 3 seconds\n140°C for 32 seconds"
+  },
+  {
+   "id": "2024hsc21",
+   "year": null,
+   "number": null,
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "Name an organisation in the Australian food industry that you have studied.\nIdentify TWO career opportunities within the organisation.\nDescribe the level of operation and mechanisation within the organisation. Provide a relevant example.\nExplain the impact that this organisation has on the Australian economy."
+  },
+  {
+   "id": "2024hsc22",
+   "year": null,
+   "number": null,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / emerging technologies in food production, manufacturing and packaging including biotechnology in genetically modified foods, ecologically sustainable production methods, such as organic farming",
+   "text": "Answer the following questions about emerging technology and agriculture.\nDescribe the potential risks and benefits of ONE emerging technology for the food service and catering sector.\nExplain how organic farming addresses the environmental concerns associated with food production."
+  },
+  {
+   "id": "2024hsc23",
+   "year": null,
+   "number": null,
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food additives, processing and preservation.\nWhy is food colouring used as an additive in the production of lollies?\nA multinational company produces biscuits 24 hours a day, 7 days a week. Identify TWO characteristics of the equipment required for this production.\nDescribe how food is preserved using fermentation. Provide a relevant example.\nExplain the significance of quality management in ensuring the safety of frozen foods. Provide a relevant example."
+  },
+  {
+   "id": "2024hsc24",
+   "year": null,
+   "number": null,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "Answer the following questions about food product development.\nCompare TWO types of food product development.\nWhy is it important to test product prototypes when creating a new food product?"
+  },
+  {
+   "id": "2024hsc25",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of supplements in the diet",
+   "text": "Discuss the role that supplements can have in the diet of a professional athlete. Provide relevant examples."
+  },
+  {
+   "id": "2024hsc26",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues",
+   "text": "Bubble Milk Tea ingredients include sugar syrup, full cream milk, brewed tea, flavoured jelly. Explain the potential health implications for an adolescent who consumes 500 mL of this beverage daily."
+  },
+  {
+   "id": "2024hsc27",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "A food company has introduced a new tropical fruit and avocado drink that is lactose-free and enriched with active non-nutrients.\nIdentify TWO drivers that could have influenced the development of this product.\nExplain how the food company’s micro-environment could affect the success of this drink.\nExplain the health benefits of this drink for an individual."
+  },
+  {
+   "id": "2024hsc28",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / principles behind food preservation techniques, including temperature control and restriction of moisture, exclusion of air and pH",
+   "text": "Explain how food manufacturers use preservation processes and current developments in packaging to respond to consumer demands."
+  },
+  {
+   "id": "2025hsc01",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which sector of the Australian food industry includes the production of crops and livestock?\nFood retail\nFood manufacturing\nAgriculture and fisheries\nFood service and catering"
+  },
+  {
+   "id": "2025hsc02",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "What is the first step of the food product development process?\nIdea generation\nMarket research\nProduct specification\nPrototype development"
+  },
+  {
+   "id": "2025hsc03",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "What is the function of a humectant in a food product?\nTo improve colour\nTo increase viscosity\nTo reduce moisture loss\nTo restore flavour damage"
+  },
+  {
+   "id": "2025hsc04",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "What is the primary reason for a food manufacturer conducting a product recall?\nTo adjust pricing for perishable food items\nTo promote new food products to consumers\nTo reduce food waste in the production process\nTo remove non-compliant food products from the market"
+  },
+  {
+   "id": "2025hsc05",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following nutrients is primarily known for its antioxidant properties?\nIron\nProtein\nCalcium\nVitamin C"
+  },
+  {
+   "id": "2025hsc06",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which piece of legislation is being breached when an untrained worker is instructed to operate a delicatessen meat slicer?\nFood Act 2003 (NSW)\nWork Health and Safety Act 2011 (NSW)\nTrade Practices Act 1974 (Commonwealth)\nCompetition and Consumer Act 2010 (Commonwealth)"
+  },
+  {
+   "id": "2025hsc07",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "A popular confectionery company has released a range of different flavoured chocolate bars designed by celebrity chefs. What type of food product development is this an example of?\nMe too\nCopycat\nLine extension\nNew to the world"
+  },
+  {
+   "id": "2025hsc08",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which of the following food products has had the most value added to it during food manufacture?\nPotato chips\nMashed potato\nUnwashed potatoes\nMeat and potato pie"
+  },
+  {
+   "id": "2025hsc09",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues / the role of ‘active non-nutrients’ in the diet, eg phytochemicals, probiotics and fibre",
+   "text": "A person visits the doctor with the following symptoms: weakness, pale skin, fatigue and loss of appetite. Which of the following dietary-related conditions are they most likely to be suffering from?\nObesity\nAnaemia\nHypertension\nCoronary heart disease"
+  },
+  {
+   "id": "2025hsc10",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following is responsible for regulating the use of genetically modified (GM) foods in Australia?\nAustralia Food and Grocery Council (AFGC)\nFood Standards Australia New Zealand (FSANZ)\nAustralian Competition and Consumer Commission (ACCC)\nCommonwealth Scientific and Industrial Research Organisation (CSIRO)"
+  },
+  {
+   "id": "2025hsc11",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Which of the following statements about food allergy or food intolerance is true?\nA food allergy is rarely detectable at birth.\nA food intolerance is always life threatening.\nA food allergy causes an autoimmune response in the body.\nA food intolerance usually causes an anaphylactic response."
+  },
+  {
+   "id": "2025hsc12",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "What type of equipment is most likely used for food preparation in a small bakery with five employees?\nManual\nAutomated\nLarge scale\nComputerised"
+  },
+  {
+   "id": "2025hsc13",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "Why are low glycaemic index (GI) foods recommended for people with type 2 diabetes?\nThey increase blood sugar levels quickly to boost energy.\nThey contain no carbohydrates and reduce blood sugar levels.\nThey assist in maintaining stable blood sugar levels over time.\nThey increase the need for insulin in managing blood sugar levels."
+  },
+  {
+   "id": "2025hsc14",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "Which piece of commercial equipment is used to separate cream from whole milk?\nCentrifuge\nFiltration system\nExtrusion device\nCommercial sieve"
+  },
+  {
+   "id": "2025hsc15",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "What type of packaging uses an oxygen absorber to modify the environment within the package?\nGas\nActive\nAseptic\nBarrier specific"
+  },
+  {
+   "id": "2025hsc16",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors / sectors of the agri-food chain in the Australian food industry, including agriculture and fisheries, food processing/manufacturing, food service and catering, food retail",
+   "text": "At what stage of the food product life cycle would a product reach market saturation?\nDecline\nGrowth\nIntroduction\nMaturity"
+  },
+  {
+   "id": "2025hsc17",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "Which of the following is an example of primary market research?\nAnalysing consumer feedback data from reviews\nUsing sales data from similar products\nConducting an online focus group\nReviewing government reports"
+  },
+  {
+   "id": "2025hsc18",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "What type of dryer machinery would NOT be suitable to use in the commercial production of breakfast cereal flakes?\nSpray\nDrum\nTunnel\nCabinet"
+  },
+  {
+   "id": "2025hsc19",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging / causes of food deterioration and spoilage: environmental factors (infestation, oxygen, light and water); enzymatic activity; microbial contamination (mould, yeast and bacteria)",
+   "text": "In the production of bread, what gas is produced during yeast fermentation?\nOxygen\nSulphur\nNitrogen\nCarbon dioxide"
+  },
+  {
+   "id": "2025hsc20",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food Product Development / Product development process / drivers of the development of food products:",
+   "text": "A new food product is priced lower to attract a larger customer base and increase its market share. What type of pricing strategy is this an example of?\nBundle pricing\nPrice skimming\nPremium pricing\nPenetration pricing"
+  },
+  {
+   "id": "2025hsc21",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "Answer parts (a) and (b) with reference to a named organisation in the Australian food industry that you have studied. Name of organisation.\nOutline a research and development activity carried out by the organisation.\nDescribe how lifestyle changes of consumers have been addressed by the organisation."
+  },
+  {
+   "id": "2025hsc22",
+   "year": null,
+   "number": null,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about packaging and food labelling.\nIdentify TWO reasons why some food manufacturers prefer to use plastic packaging.\nDescribe TWO examples of tamper-evident packaging that can be used by a food manufacturer to ensure the safety of its products in retail facilities.\nExplain the importance of accurate food labelling for consumers."
+  },
+  {
+   "id": "2025hsc23",
+   "year": null,
+   "number": null,
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues",
+   "text": "Answer parts (a) and (b) with reference to a specific group in Australia that has nutritional considerations. Name of group.\nDescribe a strategy used to promote optimum health through good nutrition for this group.\nA breakfast meal plan is shown. Porridge: Rolled oats, full cream milk, brown sugar. Toast: White bread, butter, strawberry jam. Coffee: Black. Justify TWO modifications to the breakfast meal plan that could address the specific nutritional needs of the named group.\nDescribe how the economic environment can affect the development of new food products in the Australian food industry."
+  },
+  {
+   "id": "2025hsc24",
+   "year": null,
+   "number": null,
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food preservation and quality management.\nOutline TWO reasons why a can of tomatoes may bulge after it has been processed.\nDescribe quality management procedures in relation to the commercial production of a food product."
+  },
+  {
+   "id": "2025hsc25",
+   "year": null,
+   "number": null,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food Manufacture / Food processing and packaging",
+   "text": "Answer the following questions about food preservation.\nExplain the benefits of preserving food.\nCompare the effectiveness of temperature control with ONE other preservation principle."
+  },
+  {
+   "id": "2025hsc26",
+   "year": null,
+   "number": null,
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Australian Food Industry / Food industry sectors",
+   "text": "Explain how TWO sectors of the Australian food industry have responded to the growing popularity of plant-based foods. Use examples to support your answer."
+  },
+  {
+   "id": "2025hsc27",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food Product Development / Product development process",
+   "text": "An ice cream company would like to develop a new flavour using native plant ingredients. The ice cream will be distributed to supermarkets nationwide. The company will need to invest in new equipment.\nDescribe ONE additive that could be used during the commercial manufacture of this new ice cream.\nConduct a SWOT analysis of this new product for the manufacturing company.\nPropose a marketing plan that could be used to market this new ice cream."
+  },
+  {
+   "id": "2025hsc28",
+   "year": null,
+   "number": null,
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Contemporary Nutrition Issues / Nutrition-related issues",
+   "text": "Explain how a person’s lifestyle, culture and social practices can affect their nutritional status."
+  }
+ ]
+}

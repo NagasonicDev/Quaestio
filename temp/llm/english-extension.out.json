@@ -1,0 +1,102 @@
+{
+  "ee2020_q1": {
+    "code": "HSC-E1-M1-T1-D1",
+    "confidence": "medium",
+    "why": "Construction of literary worlds through aesthetic language choices"
+  },
+  "ee2020_q2": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "high",
+    "why": "Contextual values interrogated position readers to see complexity"
+  },
+  "ee2021_q1": {
+    "code": "HSC-E1-M1-T1-D3",
+    "confidence": "low",
+    "why": "Address challenges personal understanding of literary worlds"
+  },
+  "ee2021_q2a": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "medium",
+    "why": "Difference and humanity: values shaping reader response"
+  },
+  "ee2021_q2b": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "medium",
+    "why": "Liberty as value shaping empathetic reader response"
+  },
+  "ee2021_q2c": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "medium",
+    "why": "Certainty interrogated; values shape reader response"
+  },
+  "ee2021_q2d": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "medium",
+    "why": "Enlightenment as value shaping reader response"
+  },
+  "ee2021_q2e": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "medium",
+    "why": "Renewal as value shaping reader response"
+  },
+  "ee2022_q1": {
+    "code": "HSC-E1-M1-T2-D2",
+    "confidence": "high",
+    "why": "Imaginative composition manipulating form for divergent viewpoints"
+  },
+  "ee2022_q2": {
+    "code": "HSC-E1-M1-T1-D1",
+    "confidence": "medium",
+    "why": "Voice as linguistic construct shaping competing perspectives"
+  },
+  "ee2023_q1": {
+    "code": "HSC-E1-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Imaginative or discursive composition on literary worlds"
+  },
+  "ee2023_q2a": {
+    "code": "HSC-E1-M1-T1-D3",
+    "confidence": "high",
+    "why": "Stimulus perspective echoes or unsettles personal reading"
+  },
+  "ee2023_q2b": {
+    "code": "HSC-E1-M1-T1-D3",
+    "confidence": "high",
+    "why": "Critical perspective on political fiction reshapes response"
+  },
+  "ee2023_q2c": {
+    "code": "HSC-E1-M1-T1-D3",
+    "confidence": "high",
+    "why": "Gaiman perspective on imagination reshapes textual response"
+  },
+  "ee2023_q2d": {
+    "code": "HSC-E1-M1-T1-D3",
+    "confidence": "high",
+    "why": "Reflection and mirror perspective reshapes personal response"
+  },
+  "ee2023_q2e": {
+    "code": "HSC-E1-M1-T1-D3",
+    "confidence": "high",
+    "why": "Perspective on wild unsettles understanding of texts"
+  },
+  "ee2024_q1": {
+    "code": "HSC-E1-M1-T2-D2",
+    "confidence": "high",
+    "why": "Narrative composition constructs world; reflection on craft"
+  },
+  "ee2024_q2": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "high",
+    "why": "Why literary worlds are valued; values shape response"
+  },
+  "ee2025_q1": {
+    "code": "HSC-E1-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Discursive response communicating insight into crafted worlds"
+  },
+  "ee2025_q2": {
+    "code": "HSC-E1-M1-T1-D4",
+    "confidence": "medium",
+    "why": "Texts break dominant assumptions; social values contested"
+  }
+}

@@ -1,0 +1,622 @@
+{
+ "66UIOG": {
+  "code": "PRE-M1-T1-D2",
+  "confidence": "high",
+  "why": "Vector defined by magnitude and direction"
+ },
+ "AK40PB": {
+  "code": "HSC-M2-T2-D39",
+  "confidence": "medium",
+  "why": "Blow moulding process for PET bottles"
+ },
+ "L1NA2Z": {
+  "code": "HSC-M2-T1-D26",
+  "confidence": "medium",
+  "why": "Kinetic energy rises with velocity, PE unchanged"
+ },
+ "6N7COZ": {
+  "code": "PRE-M1-T3-D3",
+  "confidence": "high",
+  "why": "Reading front view from pictorial projection"
+ },
+ "WS2BQ9": {
+  "code": "HSC-M2-T2-D11",
+  "confidence": "medium",
+  "why": "Choosing suitable heat treatment to harden teeth"
+ },
+ "6N466N": {
+  "code": "HSC-M4-T2-D10",
+  "confidence": "high",
+  "why": "Modulation combines data with carrier wave"
+ },
+ "9OZ81T": {
+  "code": "PRE-M1-T1-D4",
+  "confidence": "high",
+  "why": "Lever arrangement needing least effort for load"
+ },
+ "ZR5BUT": {
+  "code": "PRE-M1-T2-D13",
+  "confidence": "medium",
+  "why": "Cast iron versus steel ferrous metal comparison"
+ },
+ "U7F1GV": {
+  "code": "PRE-M2-T1-D24",
+  "confidence": "medium",
+  "why": "Rectification of AC, half and full wave"
+ },
+ "VSBU43": {
+  "code": "PRE-M1-T2-D23",
+  "confidence": "medium",
+  "why": "Casting process suitability for alloy heat sink"
+ },
+ "D4UE66": {
+  "code": "HSC-M4-T2-D18",
+  "confidence": "high",
+  "why": "Logic gate conditions switching lamp on"
+ },
+ "UXFS3Z": {
+  "code": "PRE-M4-T1-D29",
+  "confidence": "medium",
+  "why": "Series and parallel resistor total resistance"
+ },
+ "NX50OD": {
+  "code": "HSC-M1-T1-D12",
+  "confidence": "high",
+  "why": "Direction of reaction at roller support"
+ },
+ "1YPV4Z": {
+  "code": "PRE-M1-T2-D6",
+  "confidence": "medium",
+  "why": "Material selection by conductivity, temperature stability"
+ },
+ "FMQ9LK": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "low",
+  "why": "Material proportions and selection in aircraft"
+ },
+ "UDC6W4": {
+  "code": "HSC-M1-T2-D42",
+  "confidence": "low",
+  "why": "True length obtained by graphical solution"
+ },
+ "NL9A58": {
+  "code": "HSC-M1-T2-D9",
+  "confidence": "medium",
+  "why": "Cyclic load initiates fatigue crack growth"
+ },
+ "98PMFW": {
+  "code": "HSC-M2-T2-D19",
+  "confidence": "high",
+  "why": "Advantages of powder forming for bearings"
+ },
+ "PJE5O7": {
+  "code": "PRE-M4-T1-D37",
+  "confidence": "medium",
+  "why": "Full section view conventions for beam"
+ },
+ "05VC4H": {
+  "code": "HSC-M1-T1-D20",
+  "confidence": "high",
+  "why": "Shear force distribution along supported beam"
+ },
+ "V7FI5F": {
+  "code": "PRE-M3-T1-D17",
+  "confidence": "medium",
+  "why": "Hydraulic brake principles and operation"
+ },
+ "HH851L": {
+  "code": "HSC-M4-T1-D24",
+  "confidence": "medium",
+  "why": "Semiconductor component types and functions in circuit"
+ },
+ "TWSD7Q": {
+  "code": "HSC-M4-T2-D1",
+  "confidence": "medium",
+  "why": "Analogue to digital systems, fixed and mobile telephony"
+ },
+ "5IPBYP": {
+  "code": "HSC-M1-T1-D10",
+  "confidence": "low",
+  "why": "Cantilever truss analysis with corrosion and microstructure"
+ },
+ "NFJZU5": {
+  "code": "HSC-M3-T2-D6",
+  "confidence": "low",
+  "why": "Aircraft propulsion system choice and justification"
+ },
+ "9YZ6AO": {
+  "code": "PRE-M1-T1-D4",
+  "confidence": "low",
+  "why": "Ramp and winch machine forces, cable extension"
+ },
+ "AOJD5Q": {
+  "code": "PRE-M1-T3-D13",
+  "confidence": "high",
+  "why": "Areas of engineering and each engineer's role"
+ },
+ "X3I46R": {
+  "code": "PRE-M1-T2-D10",
+  "confidence": "high",
+  "why": "Identifying cubic crystal structures"
+ },
+ "LL15QE": {
+  "code": "HSC-M1-T1-D12",
+  "confidence": "high",
+  "why": "Reactions at simply supported beam ends"
+ },
+ "LZMPU0": {
+  "code": "HSC-M1-T2-D42",
+  "confidence": "low",
+  "why": "True length of lines in orthogonal views"
+ },
+ "6LZ40M": {
+  "code": "HSC-M4-T1-D22",
+  "confidence": "medium",
+  "why": "Diode and transistor are semiconductors"
+ },
+ "HKBRB3": {
+  "code": "HSC-M3-T1-D25",
+  "confidence": "medium",
+  "why": "Lift, thrust, weight, drag in level flight"
+ },
+ "4PMAMH": {
+  "code": "HSC-M1-T1-D30",
+  "confidence": "medium",
+  "why": "Yield stress marks onset of permanent deformation"
+ },
+ "JZM1B1": {
+  "code": "HSC-M3-T1-D21",
+  "confidence": "high",
+  "why": "Australian box kite experiments led to wing warping"
+ },
+ "2BVSQ2": {
+  "code": "HSC-M2-T1-D18",
+  "confidence": "medium",
+  "why": "Sliding angle gives coefficient of friction"
+ },
+ "BQO6Y7": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "high",
+  "why": "Geostationary satellite broadcasts television signals"
+ },
+ "AHF6UE": {
+  "code": "HSC-M1-T1-D29",
+  "confidence": "medium",
+  "why": "True stress and strain curve of polymer"
+ },
+ "62JZEN": {
+  "code": "HSC-M3-T2-D3",
+  "confidence": "high",
+  "why": "Turbofan uses bypass air for thrust"
+ },
+ "R26YY1": {
+  "code": "PRE-M1-T3-D4",
+  "confidence": "medium",
+  "why": "Pictorial drawing matching given orthogonal views"
+ },
+ "FTQ25U": {
+  "code": "HSC-M2-T2-D45",
+  "confidence": "high",
+  "why": "Electrical power difference between globe types"
+ },
+ "O8WFYH": {
+  "code": "PRE-M3-T2-D5",
+  "confidence": "medium",
+  "why": "Compression test changes cross-section and gauge length"
+ },
+ "W5DAI7": {
+  "code": "HSC-M4-T2-D18",
+  "confidence": "high",
+  "why": "Logic circuit output values truth table"
+ },
+ "KT1P23": {
+  "code": "PRE-M1-T3-D12",
+  "confidence": "medium",
+  "why": "Range of civil engineer's project responsibilities"
+ },
+ "1ZAF6Q": {
+  "code": "HSC-M1-T2-D17",
+  "confidence": "high",
+  "why": "Vitrification gives bricks compressive strength"
+ },
+ "K6XAM1": {
+  "code": "PRE-M1-T1-D4",
+  "confidence": "medium",
+  "why": "Pulley system speed and rotation direction"
+ },
+ "OVPWT0": {
+  "code": "PRE-M4-T1-D37",
+  "confidence": "medium",
+  "why": "Offset cutting plane sectioning to standard"
+ },
+ "P6Z50X": {
+  "code": "HSC-M1-T1-D20",
+  "confidence": "high",
+  "why": "Maximum bending moment from shear force diagram"
+ },
+ "OXL456": {
+  "code": "PRE-M1-T2-D24",
+  "confidence": "low",
+  "why": "Justifying polymer choice for travel card"
+ },
+ "BMSNV5": {
+  "code": "HSC-M4-T1-D14",
+  "confidence": "medium",
+  "why": "History of technological change in telecommunications"
+ },
+ "31OKCQ": {
+  "code": "HSC-M1-T2-D36",
+  "confidence": "medium",
+  "why": "Benefits of AS 1100 drawing standards"
+ },
+ "07AMKO": {
+  "code": "HSC-M2-T2-D42",
+  "confidence": "medium",
+  "why": "Materials choice for glass, panels, tyres, bolts"
+ },
+ "7V3PT8": {
+  "code": "HSC-M3-T1-D26",
+  "confidence": "low",
+  "why": "Aerofoil drag compared with taut cable"
+ },
+ "LN2FHP": {
+  "code": "HSC-M1-T1-D14",
+  "confidence": "low",
+  "why": "Redundant members in pin-jointed crane truss"
+ },
+ "YF58J7": {
+  "code": "HSC-M2-T1-D13",
+  "confidence": "high",
+  "why": "Environmental impact of transport engineering innovations"
+ },
+ "YJ1SE6": {
+  "code": "PRE-M3-T1-D4",
+  "confidence": "medium",
+  "why": "Engineer as project manager delivering projects"
+ },
+ "CZ68E5": {
+  "code": "PRE-M2-T1-D20",
+  "confidence": "medium",
+  "why": "Circuit symbol identification for diode"
+ },
+ "9ZW171": {
+  "code": "HSC-M2-T1-D19",
+  "confidence": "high",
+  "why": "Normal reaction on inclined plane"
+ },
+ "N5K2SI": {
+  "code": "PRE-M2-T3-D3",
+  "confidence": "medium",
+  "why": "Dimension tolerance range for bar diameter"
+ },
+ "S32BTT": {
+  "code": "PRE-M1-T2-D10",
+  "confidence": "medium",
+  "why": "Grain structure of brass, crystalline structure"
+ },
+ "DQF9BM": {
+  "code": "HSC-M3-T1-D33",
+  "confidence": "medium",
+  "why": "Bernoulli pressure difference produces lift"
+ },
+ "IRA92L": {
+  "code": "HSC-M4-T2-D13",
+  "confidence": "medium",
+  "why": "Wireless bands, attenuation and bandwidth"
+ },
+ "LDL6F6": {
+  "code": "HSC-M2-T2-D5",
+  "confidence": "high",
+  "why": "Annealing reverses cold work, restores ductility"
+ },
+ "FC1UQE": {
+  "code": "HSC-M1-T1-D25",
+  "confidence": "medium",
+  "why": "Free body diagram with uniformly distributed load"
+ },
+ "S41B45": {
+  "code": "HSC-M1-T1-D30",
+  "confidence": "high",
+  "why": "Hooke's law force proportional to extension"
+ },
+ "2SGLN3": {
+  "code": "HSC-M3-T2-D22",
+  "confidence": "low",
+  "why": "Precipitation hardening of aluminium alloy"
+ },
+ "65XPDJ": {
+  "code": "PRE-M2-T3-D2",
+  "confidence": "low",
+  "why": "AS 1100 representation of bolt head"
+ },
+ "6EL45O": {
+  "code": "HSC-M1-T1-D10",
+  "confidence": "medium",
+  "why": "Tension and compression in truss bridge members"
+ },
+ "U77M3D": {
+  "code": "HSC-M1-T2-D11",
+  "confidence": "high",
+  "why": "Drilling hole at tip slows crack growth"
+ },
+ "5011IV": {
+  "code": "HSC-M2-T2-D44",
+  "confidence": "medium",
+  "why": "High voltage minimises transmission power loss"
+ },
+ "QMFI93": {
+  "code": "HSC-M4-T2-D11",
+  "confidence": "medium",
+  "why": "Digital television transmission and compression"
+ },
+ "70B0WT": {
+  "code": "HSC-M1-T2-D32",
+  "confidence": "low",
+  "why": "Impervious oxide layer as corrosion protection"
+ },
+ "S4F313": {
+  "code": "HSC-M1-T1-D30",
+  "confidence": "high",
+  "why": "0.2 percent proof stress from tensile graph"
+ },
+ "V7VJT8": {
+  "code": "PRE-M2-T3-D3",
+  "confidence": "medium",
+  "why": "Correct standard dimensioning of features"
+ },
+ "E81KV1": {
+  "code": "PRE-M1-T1-D4",
+  "confidence": "medium",
+  "why": "Velocity ratio of compound lever system"
+ },
+ "QE82QP": {
+  "code": "PRE-M1-T2-D36",
+  "confidence": "low",
+  "why": "Carbon fibre composite frame properties, manufacture"
+ },
+ "P4KQ62": {
+  "code": "PRE-M1-T2-D24",
+  "confidence": "low",
+  "why": "Polypropylene properties for sled application"
+ },
+ "83T0MK": {
+  "code": "HSC-M1-T1-D10",
+  "confidence": "high",
+  "why": "Truss analysis for roadside sign support"
+ },
+ "5EG95B": {
+  "code": "HSC-M1-T2-D3",
+  "confidence": "low",
+  "why": "Specialised testing and evaluation of lifting device"
+ },
+ "95JDKN": {
+  "code": "PRE-M1-T3-D10",
+  "confidence": "medium",
+  "why": "Steps before finalising an engineering report"
+ },
+ "M32X4N": {
+  "code": "HSC-M1-T1-D10",
+  "confidence": "medium",
+  "why": "Scaffold braces carry compression and tension"
+ },
+ "M6EED8": {
+  "code": "PRE-M1-T1-D4",
+  "confidence": "medium",
+  "why": "Mechanical advantage of pulley system"
+ },
+ "H73ZUR": {
+  "code": "PRE-M2-T3-D2",
+  "confidence": "medium",
+  "why": "AS 1100 line type identification"
+ },
+ "OUV4X0": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "low",
+  "why": "Historical bridge structural forms identified"
+ },
+ "Q65WVU": {
+  "code": "HSC-M3-T2-D12",
+  "confidence": "high",
+  "why": "Pitot tube measures aircraft airspeed"
+ },
+ "OB62I1": {
+  "code": "PRE-M4-T1-D29",
+  "confidence": "medium",
+  "why": "Total resistance of series parallel network"
+ },
+ "J86PO5": {
+  "code": "PRE-M1-T2-D16",
+  "confidence": "medium",
+  "why": "Forming processes involving plastic deformation"
+ },
+ "81D35E": {
+  "code": "HSC-M2-T1-D24",
+  "confidence": "medium",
+  "why": "Energy conversion gives hammer drop height"
+ },
+ "A00AKF": {
+  "code": "HSC-M1-T1-D31",
+  "confidence": "high",
+  "why": "Factor of safety uses working and yield stress"
+ },
+ "H7IP1Z": {
+  "code": "HSC-M3-T2-D6",
+  "confidence": "medium",
+  "why": "Turbofan suits long-haul commuter aircraft"
+ },
+ "PS9KW6": {
+  "code": "HSC-M3-T2-D44",
+  "confidence": "high",
+  "why": "Development of non-circular transition piece"
+ },
+ "25D8MP": {
+  "code": "HSC-M4-T2-D10",
+  "confidence": "high",
+  "why": "Definition of modulation"
+ },
+ "LSYKT7": {
+  "code": "HSC-M2-T2-D7",
+  "confidence": "high",
+  "why": "Tempering raises toughness, little hardness loss"
+ },
+ "6M9J2M": {
+  "code": "HSC-M4-T2-D17",
+  "confidence": "high",
+  "why": "NAND gate circuit recognition"
+ },
+ "EMM2YV": {
+  "code": "PRE-M2-T1-D24",
+  "confidence": "medium",
+  "why": "Direct current waveform identification"
+ },
+ "N8T346": {
+  "code": "HSC-M3-T2-D31",
+  "confidence": "medium",
+  "why": "Fibre metal laminate properties versus aluminium"
+ },
+ "7PN70R": {
+  "code": "HSC-M1-T1-D10",
+  "confidence": "medium",
+  "why": "Truss member force and reaction change with load"
+ },
+ "EDP4A0": {
+  "code": "HSC-M4-T1-D20",
+  "confidence": "high",
+  "why": "Copper beryllium for electrical contact springs"
+ },
+ "J27NJ4": {
+  "code": "HSC-M2-T1-D17",
+  "confidence": "low",
+  "why": "Friction and normal force form contact reaction"
+ },
+ "KWIN6N": {
+  "code": "HSC-M2-T2-D53",
+  "confidence": "low",
+  "why": "Control technology using GPS and sensors"
+ },
+ "YRTE4M": {
+  "code": "HSC-M2-T2-D42",
+  "confidence": "low",
+  "why": "Material, property and process selection for vehicle"
+ },
+ "C7QXNR": {
+  "code": "HSC-M1-T1-D28",
+  "confidence": "low",
+  "why": "Compressive stress in punch, friction and moment"
+ },
+ "JP49Z2": {
+  "code": "HSC-M3-T1-D16",
+  "confidence": "medium",
+  "why": "Australian aeronautical innovation, in-flight data recorder"
+ },
+ "S4URFF": {
+  "code": "HSC-M4-T1-D30",
+  "confidence": "medium",
+  "why": "Polymer properties for cable insulation"
+ },
+ "0P3R0W": {
+  "code": "HSC-M4-T2-D17",
+  "confidence": "high",
+  "why": "AND gate output for given inputs"
+ },
+ "0B5YPQ": {
+  "code": "PRE-M2-T3-D2",
+  "confidence": "low",
+  "why": "Bolt diameter read from AS 1100 drawing"
+ },
+ "T4H4DB": {
+  "code": "PRE-M2-T3-D6",
+  "confidence": "medium",
+  "why": "CAD offset command efficiency"
+ },
+ "MDB6TE": {
+  "code": "PRE-M2-T1-D24",
+  "confidence": "medium",
+  "why": "Bridge rectifier converts AC to DC"
+ },
+ "18V2MR": {
+  "code": "HSC-M2-T1-D18",
+  "confidence": "medium",
+  "why": "Sliding angle gives coefficient of friction"
+ },
+ "O55ROO": {
+  "code": "HSC-M3-T1-D14",
+  "confidence": "high",
+  "why": "Aeronautical engineer maintenance responsibilities"
+ },
+ "0RNKBH": {
+  "code": "HSC-M1-T2-D27",
+  "confidence": "medium",
+  "why": "Loading condition for post-tensioned beam"
+ },
+ "3AJIBV": {
+  "code": "HSC-M3-T1-D30",
+  "confidence": "medium",
+  "why": "Venturi flow illustrates Bernoulli's principle"
+ },
+ "OI2AZF": {
+  "code": "HSC-M1-T1-D4",
+  "confidence": "medium",
+  "why": "Historical order of civil structure materials"
+ },
+ "68R8AR": {
+  "code": "HSC-M3-T1-D27",
+  "confidence": "medium",
+  "why": "Winglets alter lift, drag and vortices"
+ },
+ "8NGQNP": {
+  "code": "PRE-M1-T1-D4",
+  "confidence": "medium",
+  "why": "Mechanical advantage of lever with efficiency loss"
+ },
+ "232Q2J": {
+  "code": "HSC-M4-T2-D11",
+  "confidence": "medium",
+  "why": "Analogue and digital television signal features"
+ },
+ "7L7FXU": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "medium",
+  "why": "Titanium properties for aircraft undercarriage"
+ },
+ "CMMVK4": {
+  "code": "HSC-M1-T1-D4",
+  "confidence": "medium",
+  "why": "Wrought iron as historic civil structure material"
+ },
+ "KHW45G": {
+  "code": "HSC-M2-T2-D16",
+  "confidence": "medium",
+  "why": "Hot and cold rolling of metal components"
+ },
+ "8GT7G6": {
+  "code": "HSC-M2-T1-D24",
+  "confidence": "high",
+  "why": "Energy stored in compressed shock absorber"
+ },
+ "AYJM8S": {
+  "code": "PRE-M4-T1-D37",
+  "confidence": "medium",
+  "why": "Section A-A of webbed flange"
+ },
+ "E3ZJP3": {
+  "code": "HSC-M1-T1-D29",
+  "confidence": "high",
+  "why": "True stress from reduced cross-section area"
+ },
+ "XKC75T": {
+  "code": "HSC-M1-T2-D15",
+  "confidence": "low",
+  "why": "Toughened glass properties for bus shelter"
+ },
+ "2X93LG": {
+  "code": "HSC-M4-T1-D7",
+  "confidence": "low",
+  "why": "Telecommunications engineer responsibilities to community"
+ },
+ "EY8TLG": {
+  "code": "HSC-M3-T1-D26",
+  "confidence": "low",
+  "why": "Drag reduction applied to yacht hull design"
+ }
+}

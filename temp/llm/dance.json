@@ -1,0 +1,669 @@
+{
+ "course_id": "dance",
+ "course_name": "Dance",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Appreciation / Context / Demonstrate the conventions of contemporary dance practice, including class protocols, behaviour and responsibilities",
+   "text": "Demonstrate the conventions of contemporary dance practice, including class protocols, behaviour and responsibilities"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Appreciation / Context / Explain how context influences the choice of accompaniment, the intent and the application of the components of performance in dance works",
+   "text": "Explain how context influences the choice of accompaniment, the intent and the application of the components of performance in dance works"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Appreciation / Context / Use the language of dance performance, including context, dance technique, kinaesthetic awareness, elements of dance, auditory elements, structure and interpretation",
+   "text": "Use the language of dance performance, including context, dance technique, kinaesthetic awareness, elements of dance, auditory elements, structure and interpretation"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Appreciation / Context / Analyse the relationship between context, intent, style, dance technique and interpretation",
+   "text": "Analyse the relationship between context, intent, style, dance technique and interpretation"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Appreciation / Context / Demonstrate the stylistic features of dance works specific to context",
+   "text": "Demonstrate the stylistic features of dance works specific to context"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Appreciation / Context / Demonstrate dance technique and kinaesthetic awareness to communicate the choreographer’s intent specific to context",
+   "text": "Demonstrate dance technique and kinaesthetic awareness to communicate the choreographer’s intent specific to context"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Appreciation / Context / Reflect critically on the performance of a dance work relative to context",
+   "text": "Reflect critically on the performance of a dance work relative to context"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Appreciation / Context / Apply the ethics and conventions of choreographic practice to the creation of dance works",
+   "text": "Apply the ethics and conventions of choreographic practice to the creation of dance works"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Appreciation / Context / Demonstrate responsible dance protocols, including respect, working with others, gaining, giving and/or denying consent, cultural safety, and respect for Indigenous Cultural and Intellectual Property (ICIP)",
+   "text": "Demonstrate responsible dance protocols, including respect, working with others, gaining, giving and/or denying consent, cultural safety, and respect for Indigenous Cultural and Intellectual Property (ICIP)"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Appreciation / Context / Use the language of choreography, including context, stimulus, idea, intent, elements of dance, auditory elements, abstract symbolic movement and structure",
+   "text": "Use the language of choreography, including context, stimulus, idea, intent, elements of dance, auditory elements, abstract symbolic movement and structure"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Appreciation / Context / Choreograph abstract symbolic dance movements in a personal style that communicate the idea and intent",
+   "text": "Choreograph abstract symbolic dance movements in a personal style that communicate the idea and intent"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Appreciation / Context / Reflect critically on the use of choreographed personalised movement vocabulary in relation to the context",
+   "text": "Reflect critically on the use of choreographed personalised movement vocabulary in relation to the context"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Appreciation / Context / Describe artistic, cultural, social and personal contexts related to dance",
+   "text": "Describe artistic, cultural, social and personal contexts related to dance"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Appreciation / Context / Explain how establishing context informs the analysis and judgement of dance works",
+   "text": "Explain how establishing context informs the analysis and judgement of dance works"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Appreciation / Context / Use the language of dance analysis to evaluate dance works, including context, stimulus, idea, intent, elements of dance, auditory elements, abstract symbolic movement, structure, dancers and theatrical elements",
+   "text": "Use the language of dance analysis to evaluate dance works, including context, stimulus, idea, intent, elements of dance, auditory elements, abstract symbolic movement, structure, dancers and theatrical elements"
+  },
+  {
+   "code": "PRE-M3-T1-D16",
+   "path": "Year 11 / Appreciation / Context / Explain how context is linked to Cultural significance and protocols in Aboriginal and Torres Strait Islander dance",
+   "text": "Explain how context is linked to Cultural significance and protocols in Aboriginal and Torres Strait Islander dance"
+  },
+  {
+   "code": "PRE-M3-T1-D17",
+   "path": "Year 11 / Appreciation / Context / Analyse the context of selected dance works",
+   "text": "Analyse the context of selected dance works"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Appreciation / The dancing body / Explain the relationship between skeletal structures, major muscle groups, and the safe execution of movement",
+   "text": "Explain the relationship between skeletal structures, major muscle groups, and the safe execution of movement"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Appreciation / The dancing body / Demonstrate alignment, control, strength, flexibility, endurance and coordination relative to personal anatomical structure",
+   "text": "Demonstrate alignment, control, strength, flexibility, endurance and coordination relative to personal anatomical structure"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Appreciation / The dancing body / Apply dance technique and demonstrate kinaesthetic awareness to express a range of emotions, ideas and intents",
+   "text": "Apply dance technique and demonstrate kinaesthetic awareness to express a range of emotions, ideas and intents"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Appreciation / The dancing body / Perform complex combinations of body skills relative to anatomical structure",
+   "text": "Perform complex combinations of body skills relative to anatomical structure"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Appreciation / The dancing body / Interpret and communicate the intent in contrasting dance styles",
+   "text": "Interpret and communicate the intent in contrasting dance styles"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Appreciation / The dancing body / Reflect critically on the demonstration of dance technique and kinaesthetic awareness in order to refine personal interpretation of the choreographer’s intent",
+   "text": "Reflect critically on the demonstration of dance technique and kinaesthetic awareness in order to refine personal interpretation of the choreographer’s intent"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Appreciation / The dancing body / Generate abstract symbolic dance movements that communicate the intent",
+   "text": "Generate abstract symbolic dance movements that communicate the intent"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Appreciation / The dancing body / Use improvisation to generate personalised abstract symbolic dance movements in response to a range of stimuli",
+   "text": "Use improvisation to generate personalised abstract symbolic dance movements in response to a range of stimuli"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Appreciation / The dancing body / Create and refine a personalised movement vocabulary and style that communicates the intent",
+   "text": "Create and refine a personalised movement vocabulary and style that communicates the intent"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Appreciation / The dancing body / Generate movement using one or more dancers",
+   "text": "Generate movement using one or more dancers"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Appreciation / The dancing body / Reflect critically in order to refine how the dancing body communicates the intent",
+   "text": "Reflect critically in order to refine how the dancing body communicates the intent"
+  },
+  {
+   "code": "PRE-M3-T2-D12",
+   "path": "Year 11 / Appreciation / The dancing body / Describe how the choreographer uses the dancer(s) to communicate the intent",
+   "text": "Describe how the choreographer uses the dancer(s) to communicate the intent"
+  },
+  {
+   "code": "PRE-M3-T2-D13",
+   "path": "Year 11 / Appreciation / The dancing body / Explain how the dancer(s) shares stories and Cultural Knowledges in an Aboriginal and/or Torres Strait Islander dance work",
+   "text": "Explain how the dancer(s) shares stories and Cultural Knowledges in an Aboriginal and/or Torres Strait Islander dance work"
+  },
+  {
+   "code": "PRE-M3-T2-D14",
+   "path": "Year 11 / Appreciation / The dancing body / Analyse the choreographer’s use of one or more dancers in dance works",
+   "text": "Analyse the choreographer’s use of one or more dancers in dance works"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Appreciation / Elements of dance / Manipulate the elements of dance to achieve the desired interpretation in dance works",
+   "text": "Manipulate the elements of dance to achieve the desired interpretation in dance works"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Appreciation / Elements of dance / Identify and demonstrate the relationship between the elements of dance and the auditory elements necessary to achieve the desired interpretation",
+   "text": "Identify and demonstrate the relationship between the elements of dance and the auditory elements necessary to achieve the desired interpretation"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Appreciation / Elements of dance / Control and manipulate the elements of dance to demonstrate the stylistic features of a selected dance work",
+   "text": "Control and manipulate the elements of dance to demonstrate the stylistic features of a selected dance work"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Appreciation / Elements of dance / Reflect critically on the control and manipulation of the elements of dance in order to refine the stylistic features in dance works",
+   "text": "Reflect critically on the control and manipulation of the elements of dance in order to refine the stylistic features in dance works"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Appreciation / Elements of dance / Explain how the elements of dance are used to generate movements to communicate the intent",
+   "text": "Explain how the elements of dance are used to generate movements to communicate the intent"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Appreciation / Elements of dance / Experiment with the elements of dance to communicate the intent in a personal style",
+   "text": "Experiment with the elements of dance to communicate the intent in a personal style"
+  },
+  {
+   "code": "PRE-M3-T3-D7",
+   "path": "Year 11 / Appreciation / Elements of dance / Combine the elements of dance to create choreographed movements that communicate the intent in a personal style",
+   "text": "Combine the elements of dance to create choreographed movements that communicate the intent in a personal style"
+  },
+  {
+   "code": "PRE-M3-T3-D8",
+   "path": "Year 11 / Appreciation / Elements of dance / Manipulate the elements of dance to develop a motif as a thematic device in a phrase and throughout a dance work",
+   "text": "Manipulate the elements of dance to develop a motif as a thematic device in a phrase and throughout a dance work"
+  },
+  {
+   "code": "PRE-M3-T3-D9",
+   "path": "Year 11 / Appreciation / Elements of dance / Reflect critically on the use of the elements of dance and personal style in order to refine the communication of the intent",
+   "text": "Reflect critically on the use of the elements of dance and personal style in order to refine the communication of the intent"
+  },
+  {
+   "code": "PRE-M3-T3-D10",
+   "path": "Year 11 / Appreciation / Elements of dance / Describe how the choreographer has used the elements of dance in a dance work",
+   "text": "Describe how the choreographer has used the elements of dance in a dance work"
+  },
+  {
+   "code": "PRE-M3-T3-D11",
+   "path": "Year 11 / Appreciation / Elements of dance / Explain how the elements of dance create the intent and emotion in an Aboriginal and/or Torres Strait Islander dance work",
+   "text": "Explain how the elements of dance create the intent and emotion in an Aboriginal and/or Torres Strait Islander dance work"
+  },
+  {
+   "code": "PRE-M3-T3-D12",
+   "path": "Year 11 / Appreciation / Elements of dance / Analyse the use of the elements of dance in conjunction with auditory and theatrical elements in choreographed dance works",
+   "text": "Analyse the use of the elements of dance in conjunction with auditory and theatrical elements in choreographed dance works"
+  },
+  {
+   "code": "PRE-M3-T4-D1",
+   "path": "Year 11 / Appreciation / Structure / Identify the structure of a dance work to refine the performer’s interpretation and communication of the intent",
+   "text": "Identify the structure of a dance work to refine the performer’s interpretation and communication of the intent"
+  },
+  {
+   "code": "PRE-M3-T4-D2",
+   "path": "Year 11 / Appreciation / Structure / Analyse the auditory elements of the accompaniment and identify their relationship to the structure of the dance work to interpret and communicate the choreographer’s intent",
+   "text": "Analyse the auditory elements of the accompaniment and identify their relationship to the structure of the dance work to interpret and communicate the choreographer’s intent"
+  },
+  {
+   "code": "PRE-M3-T4-D3",
+   "path": "Year 11 / Appreciation / Structure / Perform a structured dance work",
+   "text": "Perform a structured dance work"
+  },
+  {
+   "code": "PRE-M3-T4-D4",
+   "path": "Year 11 / Appreciation / Structure / Reflect critically on the relationship between auditory elements and structure in order to communicate the intent in dance works",
+   "text": "Reflect critically on the relationship between auditory elements and structure in order to communicate the intent in dance works"
+  },
+  {
+   "code": "PRE-M3-T4-D5",
+   "path": "Year 11 / Appreciation / Structure / Explain structure in choreography and how it is used to organise the movement in a dance work",
+   "text": "Explain structure in choreography and how it is used to organise the movement in a dance work"
+  },
+  {
+   "code": "PRE-M3-T4-D6",
+   "path": "Year 11 / Appreciation / Structure / Structure movements into phrases that have a beginning, a middle and an end, and that communicate the intent",
+   "text": "Structure movements into phrases that have a beginning, a middle and an end, and that communicate the intent"
+  },
+  {
+   "code": "PRE-M3-T4-D7",
+   "path": "Year 11 / Appreciation / Structure / Experiment with phrases and sequencing, and the use of transitions, repetition, variation, and contrast",
+   "text": "Experiment with phrases and sequencing, and the use of transitions, repetition, variation, and contrast"
+  },
+  {
+   "code": "PRE-M3-T4-D8",
+   "path": "Year 11 / Appreciation / Structure / Analyse the structure of any accompaniment and its relationship to the structure of the dance work",
+   "text": "Analyse the structure of any accompaniment and its relationship to the structure of the dance work"
+  },
+  {
+   "code": "PRE-M3-T4-D9",
+   "path": "Year 11 / Appreciation / Structure / Structure a dance work by sequencing phrases to develop the thematic intent",
+   "text": "Structure a dance work by sequencing phrases to develop the thematic intent"
+  },
+  {
+   "code": "PRE-M3-T4-D10",
+   "path": "Year 11 / Appreciation / Structure / Reflect critically on the structure of a dance work in order to refine motifs, phrases, sequencing, transition, repetition, variation, and contrast",
+   "text": "Reflect critically on the structure of a dance work in order to refine motifs, phrases, sequencing, transition, repetition, variation, and contrast"
+  },
+  {
+   "code": "PRE-M3-T4-D11",
+   "path": "Year 11 / Appreciation / Structure / Describe the function of movement structure in a dance work, including phrases and sequencing, and the use of transitions, repetition, variation, and contrast",
+   "text": "Describe the function of movement structure in a dance work, including phrases and sequencing, and the use of transitions, repetition, variation, and contrast"
+  },
+  {
+   "code": "PRE-M3-T4-D12",
+   "path": "Year 11 / Appreciation / Structure / Analyse the structure of a dance work and its relationship to the structure of the accompaniment",
+   "text": "Analyse the structure of a dance work and its relationship to the structure of the accompaniment"
+  },
+  {
+   "code": "PRE-M3-T4-D13",
+   "path": "Year 11 / Appreciation / Structure / Reflect on the diverse structures of Aboriginal and Torres Strait Islander dance that facilitate story-sharing and share the intent",
+   "text": "Reflect on the diverse structures of Aboriginal and Torres Strait Islander dance that facilitate story-sharing and share the intent"
+  },
+  {
+   "code": "PRE-M3-T4-D14",
+   "path": "Year 11 / Appreciation / Structure / Analyse the structure of a dance work and its relationship to context, the dancing body and the elements of dance to communicate the intent",
+   "text": "Analyse the structure of a dance work and its relationship to context, the dancing body and the elements of dance to communicate the intent"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Performance / Components of performance / Demonstrate conventions, protocols and responsibilities, including safe dance practices when preparing the body to perform dance works",
+   "text": "Demonstrate conventions, protocols and responsibilities, including safe dance practices when preparing the body to perform dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Performance / Components of performance / Explain how context influences the choice of auditory elements, the intent and the application of the components of performance in dance works",
+   "text": "Explain how context influences the choice of auditory elements, the intent and the application of the components of performance in dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Performance / Components of performance / Use the language of dance performance in the context of the dance works being performed to describe the intent, technique, style and interpretation",
+   "text": "Use the language of dance performance in the context of the dance works being performed to describe the intent, technique, style and interpretation"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Performance / Components of performance / Analyse the relationship between context, intent, interpretation, style, dance technique and kinaesthetic awareness in the performance of contrasting dance works",
+   "text": "Analyse the relationship between context, intent, interpretation, style, dance technique and kinaesthetic awareness in the performance of contrasting dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Performance / Components of performance / Explain the function of the components of performance in dance works",
+   "text": "Explain the function of the components of performance in dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Performance / Components of performance / Explain the relationship between the application of the components of performance and the characteristics of dance styles",
+   "text": "Explain the relationship between the application of the components of performance and the characteristics of dance styles"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Performance / Components of performance / Use auditory elements to refine the interpretation and communication in dance works",
+   "text": "Use auditory elements to refine the interpretation and communication in dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Performance / Components of performance / Demonstrate the relationship between dance technique, kinaesthetic awareness and the communication of the intent and style",
+   "text": "Demonstrate the relationship between dance technique, kinaesthetic awareness and the communication of the intent and style"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Performance / Components of performance / Manipulate the elements of dance to communicate the intent and demonstrate stylistic characteristics",
+   "text": "Manipulate the elements of dance to communicate the intent and demonstrate stylistic characteristics"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Performance / Components of performance / Identify the structure of the dance work and use it to refine the performer’s communication and interpretation of the intent",
+   "text": "Identify the structure of the dance work and use it to refine the performer’s communication and interpretation of the intent"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Performance / Components of performance / Manipulate the components of performance to communicate the intent in contrasting dance works",
+   "text": "Manipulate the components of performance to communicate the intent in contrasting dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Performance / Components of performance / Analyse how the components of performance have been manipulated to communicate the intent in contrasting dance works",
+   "text": "Analyse how the components of performance have been manipulated to communicate the intent in contrasting dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Performance / Components of performance / Compare the use of the components of performance in contrasting dance works relative to context",
+   "text": "Compare the use of the components of performance in contrasting dance works relative to context"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Performance / Components of performance / Reflect critically on the use of the components of performance in order to refine the communication of the intent in contrasting dance works",
+   "text": "Reflect critically on the use of the components of performance in order to refine the communication of the intent in contrasting dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / Performance / Components of performance / Explain the components of appreciation and how they are applied to make informed judgements about dance works and practitioners",
+   "text": "Explain the components of appreciation and how they are applied to make informed judgements about dance works and practitioners"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / Performance / Components of performance / Evaluate the practitioner’s genre, style, technique and body of work",
+   "text": "Evaluate the practitioner’s genre, style, technique and body of work"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / Performance / Components of performance / Use the components of appreciation to describe, analyse, interpret and make informed judgements about dance works",
+   "text": "Use the components of appreciation to describe, analyse, interpret and make informed judgements about dance works"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / Performance / Components of performance / Analyse the relationship between the structure of the dance work and the auditory elements",
+   "text": "Analyse the relationship between the structure of the dance work and the auditory elements"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / Performance / Components of performance / Reflect critically on the use of the components of appreciation in order to refine the evaluation of a dance work",
+   "text": "Reflect critically on the use of the components of appreciation in order to refine the evaluation of a dance work"
+  },
+  {
+   "code": "HSC-M1-T2-D20",
+   "path": "Year 12 / Performance / Components of performance / Evaluate the dance work and its contribution to the art form",
+   "text": "Evaluate the dance work and its contribution to the art form"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Choreography / Practitioner research / Students will draw on their research of the selected prescribed practitioner from the Appreciation focus area as stimulus for the creation of a choreographed dance work.",
+   "text": "Students will draw on their research of the selected prescribed practitioner from the Appreciation focus area as stimulus for the creation of a choreographed dance work."
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Choreography / Choreographic work / Explain how the study of a prescribed dance practitioner has provided the stimulus for the development of a choreographic work",
+   "text": "Explain how the study of a prescribed dance practitioner has provided the stimulus for the development of a choreographic work"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Choreography / Choreographic work / Use the stimulus provided by research to develop the idea and intent for the choreographed dance work",
+   "text": "Use the stimulus provided by research to develop the idea and intent for the choreographed dance work"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Choreography / Choreographic work / Explain the selection of the accompaniment for the choreographed work and its relationship to the idea and intent",
+   "text": "Explain the selection of the accompaniment for the choreographed work and its relationship to the idea and intent"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Choreography / Choreographic work / Generate abstract symbolic movements using auditory elements and the elements of dance to communicate the intent",
+   "text": "Generate abstract symbolic movements using auditory elements and the elements of dance to communicate the intent"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Choreography / Choreographic work / Explain the link between the structure of the auditory elements and the structure of the dance work",
+   "text": "Explain the link between the structure of the auditory elements and the structure of the dance work"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Choreography / Choreographic work / Use the components of choreography to choreograph a dance work in a personal style",
+   "text": "Use the components of choreography to choreograph a dance work in a personal style"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Choreography / Choreographic work / Analyse how the components of choreography have been used to communicate the intent in a choreographed dance work",
+   "text": "Analyse how the components of choreography have been used to communicate the intent in a choreographed dance work"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Choreography / Choreographic work / Reflect critically on the use of the components of choreography in order to refine the communication of the intent in a choreographed dance work",
+   "text": "Reflect critically on the use of the components of choreography in order to refine the communication of the intent in a choreographed dance work"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Appreciation / Prescribed dance works / Yuldea, Bangarra Dance Theatre (2023)",
+   "text": "Yuldea, Bangarra Dance Theatre (2023)"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Appreciation / Prescribed dance works / Bangarra Dance Theatre website",
+   "text": "Bangarra Dance Theatre website"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Appreciation / Prescribed dance works / ClickView streaming platform",
+   "text": "ClickView streaming platform"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Appreciation / Prescribed dance works / Audio description transcript – Yuldea, Bangarra Dance Theatre",
+   "text": "Audio description transcript – Yuldea, Bangarra Dance Theatre"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Appreciation / Prescribed dance works / Bob Fosse",
+   "text": "Bob Fosse"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Appreciation / Prescribed dance works / Akram Khan",
+   "text": "Akram Khan"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Appreciation / Prescribed dance works / Crystal Pite",
+   "text": "Crystal Pite"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Appreciation / Prescribed dance works / Twyla Tharp",
+   "text": "Twyla Tharp"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Appreciation / Context and analysis / Apply the ethics and conventions of choreographic practice when choreographing a dance work",
+   "text": "Apply the ethics and conventions of choreographic practice when choreographing a dance work"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Appreciation / Context and analysis / Apply the ethics and responsibilities associated with using professional dance works as the stimulus for new creative work",
+   "text": "Apply the ethics and responsibilities associated with using professional dance works as the stimulus for new creative work"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Appreciation / Context and analysis / Explain the possibilities and limitations of communication through dance and the dancing body",
+   "text": "Explain the possibilities and limitations of communication through dance and the dancing body"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Appreciation / Context and analysis / Explain how context has informed the idea, intent and choice of auditory elements in a choreographed work",
+   "text": "Explain how context has informed the idea, intent and choice of auditory elements in a choreographed work"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Appreciation / Context and analysis / Use the language of choreography in the context of a choreographed work",
+   "text": "Use the language of choreography in the context of a choreographed work"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Appreciation / Context and analysis / Use the components of choreography relative to context to communicate the intent in a dance work",
+   "text": "Use the components of choreography relative to context to communicate the intent in a dance work"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Appreciation / Context and analysis / Explain how context informs interpretation and judgements about practitioners and dance works",
+   "text": "Explain how context informs interpretation and judgements about practitioners and dance works"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Appreciation / Context and analysis / Apply the ethics and responsibilities associated with research in dance and using professional dance works",
+   "text": "Apply the ethics and responsibilities associated with research in dance and using professional dance works"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Appreciation / Context and analysis / Use the language of dance appreciation when researching and making judgements about practitioners and dance works in different contexts",
+   "text": "Use the language of dance appreciation when researching and making judgements about practitioners and dance works in different contexts"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+   "text": "Analyse the contextual background, training, influences, style and body of work of the practitioner"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "Analyse the contextual background of the dance work"
+  }
+ ],
+ "questions": [
+  {
+   "id": "dance_202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+   "text": "Explain how Pina Bausch has developed dance as an artform.\nIn your response, provide specific examples from her works.\nOR\nExplain how Ohad Naharin has developed dance as an artform.\nIn your response, provide specific examples from his works."
+  },
+  {
+   "id": "dance_202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Prescribed dance works / Twyla Tharp | Year 12 / Appreciation / Prescribed dance works / Akram Khan | Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+   "text": "Explain the relationship between Twyla Tharp's work and the major social, cultural, political and/or historical events of the 1960s-1980s.\nIn your response, provide specific examples from her works.\nOR\nExplain the relationship between Akram Khan's work and the major social, cultural, political and/or historical events of the 1990s-present.\nIn your response, provide specific examples from his works."
+  },
+  {
+   "id": "dance_202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "Evaluate how Mats Ek uses his distinctive choreographic style to communicate the central ideas of Appartement.\nIn your response, provide specific examples from the work."
+  },
+  {
+   "id": "dance_202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+   "text": "How have Pina Bausch's choreographic practices contributed to her being recognised as a seminal artist?\nIn your response, provide specific examples from her works.\nOR\nHow have Ohad Naharin's choreographic practices contributed to him being recognised as a seminal artist?\nIn your response, provide specific examples from his works."
+  },
+  {
+   "id": "dance_202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Prescribed dance works / Twyla Tharp | Year 12 / Appreciation / Prescribed dance works / Akram Khan | Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+   "text": "Twyla Tharp reinvented dance to reflect a changing world.\nExplain this statement in relation to the works of Twyla Tharp from the 1960s-1980s.\nIn your response, provide specific examples from her works.\nOR\nAkram Khan reinvented dance to reflect a changing world.\nExplain this statement in relation to the works of Akram Khan from the 1990s-present.\nIn your response, provide specific examples from his works."
+  },
+  {
+   "id": "dance_202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "Explain how Mats Ek uses dance and theatrical elements to explore the emotions of everyday situations.\nIn your response, provide specific examples from Appartement."
+  },
+  {
+   "id": "dance_202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Prescribed dance works / Crystal Pite | Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "Explain how Crystal Pite communicates personal struggles in Betroffenheit.\nIn your response, provide specific examples from the work."
+  },
+  {
+   "id": "dance_202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+   "text": "Explain how Merce Cunningham extended the boundaries of dance to reflect the era 1955-1975.\nIn your response, provide specific examples from his works."
+  },
+  {
+   "id": "dance_202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+   "text": "Explain how Lucinda Childs' ideas about dance have established her as a seminal artist.\nIn your response, provide specific examples from her works."
+  },
+  {
+   "id": "dance_202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "Explain how Mats Ek uses spatial elements to communicate the theme of rebellion in Juliet and Romeo.\nIn your response, provide specific examples from the work."
+  },
+  {
+   "id": "dance_202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "Explain how Frances Rings portrays Kati Thanda-Lake Eyre as a place of both threat and natural beauty in the work Terrain.\nIn your response, provide specific examples from the work."
+  },
+  {
+   "id": "dance_202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "How does Mats Ek's work Juliet and Romeo use movement to represent Juliet's perspective?\nIn your response, provide specific examples from the work."
+  },
+  {
+   "id": "dance_202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "How does Frances Rings express meaning in her work Terrain?\nIn your response, provide specific examples from the work."
+  },
+  {
+   "id": "dance_202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "How does Frances Rings use storytelling in the work Terrain?\nIn your response, provide specific examples from the work."
+  },
+  {
+   "id": "dance_202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner | Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work",
+   "text": "Explain how Mats Ek shows the destiny of characters in the work Juliet and Romeo.\nIn your response, provide specific examples from the work."
+  }
+ ]
+}

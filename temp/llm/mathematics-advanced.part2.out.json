@@ -1,0 +1,157 @@
+{
+  "ma202501": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202502": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202503": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202504": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202505": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202506": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202507": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202508": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202509": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202510": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma2025q11": {
+    "code": "PRE-M1-T4-D4",
+    "confidence": "high",
+    "why": "Quadratic turning point"
+  },
+  "ma2025q12": {
+    "code": "HSC-M3-T4-D2",
+    "confidence": "high",
+    "why": "Tangent to rational function"
+  },
+  "ma2025q13": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "Geometric sequence terms"
+  },
+  "ma2025q14": {
+    "code": null,
+    "confidence": "high",
+    "why": "Regression interpretation; no matching dot"
+  },
+  "ma2025q15": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "high",
+    "why": "Trig amplitude, period and comparison"
+  },
+  "ma2025q16": {
+    "code": "HSC-M5-T1-D9",
+    "confidence": "high",
+    "why": "Stationary points and nature"
+  },
+  "ma2025q17": {
+    "code": "HSC-M7-T1-D3",
+    "confidence": "high",
+    "why": "Reducing balance loan"
+  },
+  "ma2025q18": {
+    "code": "PRE-M1-T9-D7",
+    "confidence": "medium",
+    "why": "Composite function range"
+  },
+  "ma2025q19": {
+    "code": "PRE-M7-T3-D4",
+    "confidence": "high",
+    "why": "Conditional probability Bayes"
+  },
+  "ma2025q20": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity future value from table"
+  },
+  "ma2025q21": {
+    "code": "HSC-M6-T2-D11",
+    "confidence": "high",
+    "why": "PDF mode and quartile"
+  },
+  "ma2025q22": {
+    "code": "PRE-M3-D12",
+    "confidence": "high",
+    "why": "Prove trigonometric identity"
+  },
+  "ma2025q23": {
+    "code": "HSC-M6-T3-D13",
+    "confidence": "medium",
+    "why": "Normal distribution inverse z"
+  },
+  "ma2025q24": {
+    "code": "HSC-M3-T4-D2",
+    "confidence": "high",
+    "why": "Common tangent to log and parabola"
+  },
+  "ma2025q25": {
+    "code": "HSC-M4-T8-D5",
+    "confidence": "medium",
+    "why": "Integrate and find total area"
+  },
+  "ma2025q26": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "medium",
+    "why": "Optimise area using quadratic"
+  },
+  "ma2025q27": {
+    "code": "HSC-M4-T8-D11",
+    "confidence": "high",
+    "why": "Trapezoidal rule and exact area"
+  },
+  "ma2025q28": {
+    "code": "PRE-M2-T3-D8",
+    "confidence": "high",
+    "why": "Sector segment area and arc length"
+  },
+  "ma2025q29": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "Bearings and angles of elevation"
+  },
+  "ma2025q30": {
+    "code": "PRE-M6-D6",
+    "confidence": "high",
+    "why": "Translate parabola, find k"
+  },
+  "ma2025q31": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "high",
+    "why": "Trig equation solution count"
+  }
+}

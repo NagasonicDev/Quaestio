@@ -1,0 +1,77 @@
+{
+  "dance_202001": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "medium",
+    "why": "Practitioner's body of work and style developed artform"
+  },
+  "dance_202002": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "Work related to 1960s-80s social and cultural influences"
+  },
+  "dance_202003": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "Choreographic style communicates Appartement's central ideas"
+  },
+  "dance_202101": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "medium",
+    "why": "Choreographic practices and body of work established significance"
+  },
+  "dance_202102": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "Reinvented dance reflecting a changing world"
+  },
+  "dance_202103": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "Dance and theatrical elements convey everyday emotions"
+  },
+  "dance_202201": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "Movement communicates personal struggles in Betroffenheit"
+  },
+  "dance_202202": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "Extended dance boundaries reflecting era 1955-1975"
+  },
+  "dance_202203": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "medium",
+    "why": "Ideas shaped body of work and seminal status"
+  },
+  "dance_202301": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "Spatial elements communicate the rebellion theme"
+  },
+  "dance_202302": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "Choreography portrays place as threat and beauty"
+  },
+  "dance_202401": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "Movement represents Juliet's perspective in the work"
+  },
+  "dance_202402": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "low",
+    "why": "Meaning expressed through choreographed movement; broad prompt"
+  },
+  "dance_202501": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "low",
+    "why": "Storytelling through choreographed movement; broad narrative prompt"
+  },
+  "dance_202502": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "Choreography shows characters' destiny in the work"
+  }
+}

@@ -1,0 +1,802 @@
+{
+  "ancient-history-2017-ah202001": {
+    "code": "HSC-M2-T1-D2",
+    "confidence": "high",
+    "why": "eruption of AD 79 dot"
+  },
+  "ancient-history-2017-ah202002": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "medium",
+    "why": "graffiti as inscription evidence"
+  },
+  "ancient-history-2017-ah202003": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "social structure: freedmen and slaves"
+  },
+  "ancient-history-2017-ah202004": {
+    "code": "HSC-M2-T3-D17",
+    "confidence": "high",
+    "why": "changing interpretations: new research"
+  },
+  "ancient-history-2017-ah202005": {
+    "code": "HSC-M4-T2-D7",
+    "confidence": "medium",
+    "why": "Egyptian economy: Nile and exchange"
+  },
+  "ancient-history-2017-ah202006": {
+    "code": "HSC-M5-T2-D9",
+    "confidence": "medium",
+    "why": "Ramesside economic exchange"
+  },
+  "ancient-history-2017-ah202007": {
+    "code": "HSC-M6-T2-D2",
+    "confidence": "low",
+    "why": "Israelite political organisation, kingship"
+  },
+  "ancient-history-2017-ah202008": {
+    "code": "HSC-M7-T2-D7",
+    "confidence": "medium",
+    "why": "Persian economic exchange and tribute"
+  },
+  "ancient-history-2017-ah202009": {
+    "code": "HSC-M8-T2-D3",
+    "confidence": "low",
+    "why": "Han political organisation, bureaucracy"
+  },
+  "ancient-history-2017-ah202010": {
+    "code": "HSC-M9-T2-D1",
+    "confidence": "low",
+    "why": "Minoan social structure overview"
+  },
+  "ancient-history-2017-ah202011": {
+    "code": "HSC-M10-T2-D9",
+    "confidence": "high",
+    "why": "Spartan economy: land, kleroi"
+  },
+  "ancient-history-2017-ah202012": {
+    "code": "HSC-M11-T2-D7",
+    "confidence": "high",
+    "why": "Athenian gods, beliefs, practices"
+  },
+  "ancient-history-2017-ah202013": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "medium",
+    "why": "assessment of her life and reign"
+  },
+  "ancient-history-2017-ah202014": {
+    "code": "HSC-M14-T1-D13",
+    "confidence": "medium",
+    "why": "evaluation of Akhenaten"
+  },
+  "ancient-history-2017-ah202015": {
+    "code": "HSC-M1-T1-D22",
+    "confidence": "medium",
+    "why": "evaluation of Sennacherib"
+  },
+  "ancient-history-2017-ah202016": {
+    "code": "HSC-M32-T4-D6",
+    "confidence": "medium",
+    "why": "evaluation of Xerxes"
+  },
+  "ancient-history-2017-ah202017": {
+    "code": "HSC-M1-T1-D36",
+    "confidence": "medium",
+    "why": "evaluation of Qin Shihuangdi"
+  },
+  "ancient-history-2017-ah202018": {
+    "code": "HSC-M1-T1-D45",
+    "confidence": "medium",
+    "why": "evaluation of Pericles"
+  },
+  "ancient-history-2017-ah202019": {
+    "code": "HSC-M1-T1-D56",
+    "confidence": "medium",
+    "why": "evaluation of Alexander"
+  },
+  "ancient-history-2017-ah202020": {
+    "code": "HSC-M20-T1-D9",
+    "confidence": "medium",
+    "why": "evaluation of Tiberius Gracchus"
+  },
+  "ancient-history-2017-ah202021": {
+    "code": "HSC-M1-T1-D73",
+    "confidence": "medium",
+    "why": "evaluation of Julius Caesar"
+  },
+  "ancient-history-2017-ah202022": {
+    "code": "HSC-M32-T4-D19",
+    "confidence": "medium",
+    "why": "evaluation of Agrippina"
+  },
+  "ancient-history-2017-ah202023": {
+    "code": "HSC-M24-T3-D16",
+    "confidence": "high",
+    "why": "development and importance of cult of Amun"
+  },
+  "ancient-history-2017-ah202024": {
+    "code": "HSC-M24-T3-D21",
+    "confidence": "high",
+    "why": "establishment of empire by campaigns"
+  },
+  "ancient-history-2017-ah202025": {
+    "code": "HSC-M4-T2-D24",
+    "confidence": "high",
+    "why": "Amarna revolution responsibility"
+  },
+  "ancient-history-2017-ah202026": {
+    "code": "HSC-M4-T2-D35",
+    "confidence": "high",
+    "why": "image of the Warrior Pharaoh"
+  },
+  "ancient-history-2017-ah202027": {
+    "code": "HSC-M1-T1-D78",
+    "confidence": "medium",
+    "why": "strategic location of Ancient Levant"
+  },
+  "ancient-history-2017-ah202028": {
+    "code": "HSC-M1-T1-D80",
+    "confidence": "high",
+    "why": "Solomon and building of First Temple"
+  },
+  "ancient-history-2017-ah202029": {
+    "code": "HSC-M27-T2-D4",
+    "confidence": "medium",
+    "why": "contribution of Persian kings incl Cambyses"
+  },
+  "ancient-history-2017-ah202030": {
+    "code": "HSC-M27-T2-D8",
+    "confidence": "high",
+    "why": "religious and economic policies"
+  },
+  "ancient-history-2017-ah202031": {
+    "code": "HSC-M28-T2-D18",
+    "confidence": "high",
+    "why": "problems of succession, decline of Qin"
+  },
+  "ancient-history-2017-ah202032": {
+    "code": "HSC-M28-T2-D23",
+    "confidence": "high",
+    "why": "role of empress dowagers"
+  },
+  "ancient-history-2017-ah202033": {
+    "code": "HSC-M29-T3-D8",
+    "confidence": "high",
+    "why": "Plataea, invasion of 480-479"
+  },
+  "ancient-history-2017-ah202034": {
+    "code": "HSC-M29-T3-D13",
+    "confidence": "high",
+    "why": "Delian League into Athenian Empire"
+  },
+  "ancient-history-2017-ah202035": {
+    "code": "HSC-M30-T3-D10",
+    "confidence": "high",
+    "why": "changes in Greek warfare"
+  },
+  "ancient-history-2017-ah202036": {
+    "code": "HSC-M30-T3-D18",
+    "confidence": "high",
+    "why": "Demosthenes opposing Philip II"
+  },
+  "ancient-history-2017-ah202037": {
+    "code": "HSC-M31-T4-D1",
+    "confidence": "high",
+    "why": "legacy of Sulla"
+  },
+  "ancient-history-2017-ah202038": {
+    "code": "HSC-M31-T4-D5",
+    "confidence": "medium",
+    "why": "First Triumvirate aims and roles"
+  },
+  "ancient-history-2017-ah202039": {
+    "code": "HSC-M32-T4-D34",
+    "confidence": "high",
+    "why": "Augustus building programs"
+  },
+  "ancient-history-2017-ah202040": {
+    "code": "HSC-M32-T4-D36",
+    "confidence": "high",
+    "why": "imperial women: Livia, Julia"
+  },
+  "ancient-history-2017-ah202041": {
+    "code": "HSC-M33-T2-D6",
+    "confidence": "high",
+    "why": "Praetorian Guard political role"
+  },
+  "ancient-history-2017-ah202042": {
+    "code": "HSC-M33-T2-D3",
+    "confidence": "high",
+    "why": "Senate changing role"
+  },
+  "ancient-history-2017-ah202101": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "household gods and religion"
+  },
+  "ancient-history-2017-ah202102": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "medium",
+    "why": "natural features of Campania"
+  },
+  "ancient-history-2017-ah202103": {
+    "code": "HSC-M2-T3-D20",
+    "confidence": "high",
+    "why": "value and impact of tourism"
+  },
+  "ancient-history-2017-ah202104": {
+    "code": "HSC-M2-T2-D9",
+    "confidence": "high",
+    "why": "everyday life: leisure activities"
+  },
+  "ancient-history-2017-ah202105": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "medium",
+    "why": "roles and status of women"
+  },
+  "ancient-history-2017-ah202106": {
+    "code": "HSC-M5-T2-D15",
+    "confidence": "high",
+    "why": "festivals: Opet"
+  },
+  "ancient-history-2017-ah202107": {
+    "code": "HSC-M6-T2-D4",
+    "confidence": "high",
+    "why": "prophets: Elijah, Amos, Elisha, Hosea"
+  },
+  "ancient-history-2017-ah202108": {
+    "code": "HSC-M7-T2-D18",
+    "confidence": "high",
+    "why": "palace complexes: Persepolis"
+  },
+  "ancient-history-2017-ah202109": {
+    "code": "HSC-M8-T2-D7",
+    "confidence": "high",
+    "why": "nature and role of army"
+  },
+  "ancient-history-2017-ah202110": {
+    "code": "HSC-M9-T2-D19",
+    "confidence": "high",
+    "why": "art: frescoes, figurines, pottery"
+  },
+  "ancient-history-2017-ah202111": {
+    "code": "HSC-M10-T2-D6",
+    "confidence": "high",
+    "why": "Spartan army: training and composition"
+  },
+  "ancient-history-2017-ah202112": {
+    "code": "HSC-M11-T2-D1",
+    "confidence": "medium",
+    "why": "role of military in Athenian society"
+  },
+  "ancient-history-2017-ah202113": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "medium",
+    "why": "influence on her time"
+  },
+  "ancient-history-2017-ah202114": {
+    "code": "HSC-M14-T1-D13",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202115": {
+    "code": "HSC-M1-T1-D22",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202116": {
+    "code": "HSC-M32-T4-D6",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202117": {
+    "code": "HSC-M1-T1-D36",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202118": {
+    "code": "HSC-M1-T1-D45",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202119": {
+    "code": "HSC-M1-T1-D56",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202120": {
+    "code": "HSC-M20-T1-D9",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202121": {
+    "code": "HSC-M1-T1-D73",
+    "confidence": "medium",
+    "why": "influence on his time"
+  },
+  "ancient-history-2017-ah202122": {
+    "code": "HSC-M32-T4-D19",
+    "confidence": "medium",
+    "why": "influence on her time"
+  },
+  "ancient-history-2017-ah202123": {
+    "code": "HSC-M24-T3-D13",
+    "confidence": "high",
+    "why": "impact of the Hyksos"
+  },
+  "ancient-history-2017-ah202124": {
+    "code": "HSC-M24-T3-D25",
+    "confidence": "high",
+    "why": "maintenance of empire: Amenhotep II, Thutmose IV"
+  },
+  "ancient-history-2017-ah202125": {
+    "code": "HSC-M4-T2-D26",
+    "confidence": "high",
+    "why": "post-Amarna restoration of Amun"
+  },
+  "ancient-history-2017-ah202126": {
+    "code": "HSC-M4-T2-D34",
+    "confidence": "high",
+    "why": "relationship with vassal rulers"
+  },
+  "ancient-history-2017-ah202127": {
+    "code": "HSC-M1-T1-D82",
+    "confidence": "high",
+    "why": "Israel and Judah relations 931-722 BC"
+  },
+  "ancient-history-2017-ah202128": {
+    "code": "HSC-M1-T1-D88",
+    "confidence": "high",
+    "why": "relations with Babylonian Empire"
+  },
+  "ancient-history-2017-ah202129": {
+    "code": "HSC-M27-T2-D3",
+    "confidence": "high",
+    "why": "building programs: Pasargadae, Susa, Persepolis"
+  },
+  "ancient-history-2017-ah202130": {
+    "code": "HSC-M27-T2-D7",
+    "confidence": "high",
+    "why": "treatment of subject peoples"
+  },
+  "ancient-history-2017-ah202131": {
+    "code": "HSC-M28-T2-D16",
+    "confidence": "medium",
+    "why": "Qin reforms political, cultural, legal"
+  },
+  "ancient-history-2017-ah202132": {
+    "code": "HSC-M28-T2-D21",
+    "confidence": "high",
+    "why": "Han emperors Gaozo to Jingdi"
+  },
+  "ancient-history-2017-ah202133": {
+    "code": "HSC-M29-T3-D9",
+    "confidence": "high",
+    "why": "role of Themistocles"
+  },
+  "ancient-history-2017-ah202134": {
+    "code": "HSC-M29-T3-D17",
+    "confidence": "medium",
+    "why": "Peloponnesian League responses to Athens"
+  },
+  "ancient-history-2017-ah202135": {
+    "code": "HSC-M30-T3-D8",
+    "confidence": "high",
+    "why": "Persian intervention and King's Peace"
+  },
+  "ancient-history-2017-ah202136": {
+    "code": "HSC-M30-T3-D11",
+    "confidence": "high",
+    "why": "Theban hegemony"
+  },
+  "ancient-history-2017-ah202137": {
+    "code": "HSC-M31-T4-D2",
+    "confidence": "high",
+    "why": "significance of Pompey's career"
+  },
+  "ancient-history-2017-ah202138": {
+    "code": "HSC-M31-T3-D6",
+    "confidence": "high",
+    "why": "impact of warfare and conquest"
+  },
+  "ancient-history-2017-ah202139": {
+    "code": "HSC-M32-T4-D32",
+    "confidence": "high",
+    "why": "Augustan reforms"
+  },
+  "ancient-history-2017-ah202140": {
+    "code": "HSC-M32-T4-D35",
+    "confidence": "high",
+    "why": "literature and propaganda"
+  },
+  "ancient-history-2017-ah202141": {
+    "code": "HSC-M33-T2-D2",
+    "confidence": "high",
+    "why": "changing role of princeps: Tiberius"
+  },
+  "ancient-history-2017-ah202142": {
+    "code": "HSC-M33-T2-D8",
+    "confidence": "high",
+    "why": "imperial family and succession"
+  },
+  "ancient-history-2017-ah202201": {
+    "code": "HSC-M2-T2-D11",
+    "confidence": "high",
+    "why": "influence of Greek and Egyptian cultures"
+  },
+  "ancient-history-2017-ah202202": {
+    "code": "HSC-M2-T2-D9",
+    "confidence": "high",
+    "why": "water supply and sanitation"
+  },
+  "ancient-history-2017-ah202203": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "status of women in social structure"
+  },
+  "ancient-history-2017-ah202204": {
+    "code": "HSC-M2-T3-D18",
+    "confidence": "high",
+    "why": "Italian and international conservation contributions"
+  },
+  "ancient-history-2017-ah202205": {
+    "code": "HSC-M4-T2-D3",
+    "confidence": "high",
+    "why": "vizier and administrative elites"
+  },
+  "ancient-history-2017-ah202206": {
+    "code": "HSC-M5-T2-D3",
+    "confidence": "high",
+    "why": "vizier and administrative elites"
+  },
+  "ancient-history-2017-ah202207": {
+    "code": "HSC-M6-T2-D2",
+    "confidence": "high",
+    "why": "Israelite kingship and Davidic dynasty"
+  },
+  "ancient-history-2017-ah202208": {
+    "code": "HSC-M7-T2-D2",
+    "confidence": "high",
+    "why": "bureaucracy, satraps, provincial government"
+  },
+  "ancient-history-2017-ah202209": {
+    "code": "HSC-M8-T2-D3",
+    "confidence": "high",
+    "why": "imperial bureaucracy"
+  },
+  "ancient-history-2017-ah202210": {
+    "code": "HSC-M9-T2-D2",
+    "confidence": "medium",
+    "why": "identity of Minoan ruler(s)"
+  },
+  "ancient-history-2017-ah202211": {
+    "code": "HSC-M10-T2-D4",
+    "confidence": "high",
+    "why": "ephorate, gerousia, ekklesia"
+  },
+  "ancient-history-2017-ah202212": {
+    "code": "HSC-M11-T2-D2",
+    "confidence": "high",
+    "why": "ekklesia, boule, strategia, heliaea"
+  },
+  "ancient-history-2017-ah202213": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "significance of her legacy"
+  },
+  "ancient-history-2017-ah202214": {
+    "code": "HSC-M14-T1-D13",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202215": {
+    "code": "HSC-M1-T1-D22",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202216": {
+    "code": "HSC-M32-T4-D6",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202217": {
+    "code": "HSC-M1-T1-D36",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202218": {
+    "code": "HSC-M1-T1-D45",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202219": {
+    "code": "HSC-M1-T1-D56",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202220": {
+    "code": "HSC-M20-T1-D9",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202221": {
+    "code": "HSC-M1-T1-D73",
+    "confidence": "high",
+    "why": "significance of his legacy"
+  },
+  "ancient-history-2017-ah202222": {
+    "code": "HSC-M32-T4-D19",
+    "confidence": "high",
+    "why": "significance of her legacy"
+  },
+  "ancient-history-2017-ah202223": {
+    "code": "HSC-M24-T3-D17",
+    "confidence": "high",
+    "why": "political and religious significance of building programs"
+  },
+  "ancient-history-2017-ah202224": {
+    "code": "HSC-M24-T3-D23",
+    "confidence": "high",
+    "why": "administration of the empire"
+  },
+  "ancient-history-2017-ah202225": {
+    "code": "HSC-M4-T2-D27",
+    "confidence": "high",
+    "why": "political and religious significance of building programs"
+  },
+  "ancient-history-2017-ah202226": {
+    "code": "HSC-M4-T2-D28",
+    "confidence": "high",
+    "why": "establishment of Nineteenth Dynasty"
+  },
+  "ancient-history-2017-ah202227": {
+    "code": "HSC-M1-T1-D80",
+    "confidence": "medium",
+    "why": "Solomon and First Temple period"
+  },
+  "ancient-history-2017-ah202228": {
+    "code": "HSC-M1-T1-D83",
+    "confidence": "high",
+    "why": "foreign relations with Assyria and Babylon"
+  },
+  "ancient-history-2017-ah202229": {
+    "code": "HSC-M27-T2-D4",
+    "confidence": "high",
+    "why": "kings from Cyrus II to Darius III"
+  },
+  "ancient-history-2017-ah202230": {
+    "code": "HSC-M27-T2-D5",
+    "confidence": "high",
+    "why": "role and composition of Persian army"
+  },
+  "ancient-history-2017-ah202231": {
+    "code": "HSC-M28-T2-D22",
+    "confidence": "high",
+    "why": "Confucianism in Han government"
+  },
+  "ancient-history-2017-ah202232": {
+    "code": "HSC-M28-T2-D28",
+    "confidence": "high",
+    "why": "administration of the empire"
+  },
+  "ancient-history-2017-ah202233": {
+    "code": "HSC-M29-T3-D8",
+    "confidence": "high",
+    "why": "Salamis, invasion of 480-479"
+  },
+  "ancient-history-2017-ah202234": {
+    "code": "HSC-M29-T3-D12",
+    "confidence": "high",
+    "why": "Delian League origins and aims"
+  },
+  "ancient-history-2017-ah202235": {
+    "code": "HSC-M30-T3-D7",
+    "confidence": "high",
+    "why": "nature and impact of Spartan hegemony"
+  },
+  "ancient-history-2017-ah202236": {
+    "code": "HSC-M30-T3-D16",
+    "confidence": "medium",
+    "why": "Macedonian expansion into Greece"
+  },
+  "ancient-history-2017-ah202237": {
+    "code": "HSC-M31-T4-D7",
+    "confidence": "high",
+    "why": "political crises and role of Senate"
+  },
+  "ancient-history-2017-ah202238": {
+    "code": "HSC-M31-T4-D15",
+    "confidence": "high",
+    "why": "impact of Caesar's assassination"
+  },
+  "ancient-history-2017-ah202239": {
+    "code": "HSC-M32-T4-D26",
+    "confidence": "high",
+    "why": "settlements of 27 and 23 BC"
+  },
+  "ancient-history-2017-ah202240": {
+    "code": "HSC-M32-T4-D40",
+    "confidence": "high",
+    "why": "Augustus and the army"
+  },
+  "ancient-history-2017-ah202241": {
+    "code": "HSC-M33-T2-D4",
+    "confidence": "high",
+    "why": "reforms and policies of Julio-Claudians"
+  },
+  "ancient-history-2017-ah202242": {
+    "code": "HSC-M33-T2-D12",
+    "confidence": "high",
+    "why": "relationship of princeps and army"
+  },
+  "ancient-history-2017-ah202301": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "representations of Pompeii over time"
+  },
+  "ancient-history-2017-ah202302": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "medium",
+    "why": "human remains as evidence"
+  },
+  "ancient-history-2017-ah202303": {
+    "code": "HSC-M2-T3-D4",
+    "confidence": "high",
+    "why": "reconstruction of the ancient site"
+  },
+  "ancient-history-2017-ah202304": {
+    "code": "HSC-M2-T2-D8",
+    "confidence": "high",
+    "why": "local political life"
+  },
+  "ancient-history-2017-ah202305": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "medium",
+    "why": "gods, cults and priesthoods"
+  },
+  "ancient-history-2017-ah202306": {
+    "code": "HSC-M5-T2-D13",
+    "confidence": "medium",
+    "why": "gods, cults and priesthoods"
+  },
+  "ancient-history-2017-ah202307": {
+    "code": "HSC-M6-T2-D14",
+    "confidence": "medium",
+    "why": "conflicting religious beliefs and practices"
+  },
+  "ancient-history-2017-ah202308": {
+    "code": "HSC-M7-T2-D12",
+    "confidence": "medium",
+    "why": "religious beliefs throughout the empire"
+  },
+  "ancient-history-2017-ah202309": {
+    "code": "HSC-M8-T2-D14",
+    "confidence": "medium",
+    "why": "religious beliefs: Daoism, Cult of Heaven"
+  },
+  "ancient-history-2017-ah202310": {
+    "code": "HSC-M9-T2-D11",
+    "confidence": "medium",
+    "why": "nature and identity of deities"
+  },
+  "ancient-history-2017-ah202311": {
+    "code": "HSC-M10-T2-D10",
+    "confidence": "medium",
+    "why": "gods, festivals, funerary customs"
+  },
+  "ancient-history-2017-ah202312": {
+    "code": "HSC-M11-T2-D7",
+    "confidence": "medium",
+    "why": "Athenian religion, beliefs and practices"
+  },
+  "ancient-history-2017-ah202313": {
+    "code": "HSC-M1-T1-D8",
+    "confidence": "high",
+    "why": "purpose of Hatshepsut building program"
+  },
+  "ancient-history-2017-ah202314": {
+    "code": "HSC-M14-T1-D4",
+    "confidence": "medium",
+    "why": "early building program, East Karnak"
+  },
+  "ancient-history-2017-ah202315": {
+    "code": "HSC-M1-T1-D16",
+    "confidence": "high",
+    "why": "background and rise to prominence"
+  },
+  "ancient-history-2017-ah202316": {
+    "code": "HSC-M32-T4-D4",
+    "confidence": "high",
+    "why": "relationship with prominent Persians"
+  },
+  "ancient-history-2017-ah202317": {
+    "code": "HSC-M1-T1-D25",
+    "confidence": "high",
+    "why": "background and rise to prominence"
+  },
+  "ancient-history-2017-ah202318": {
+    "code": "HSC-M1-T1-D42",
+    "confidence": "high",
+    "why": "relationships with prominent individuals"
+  },
+  "ancient-history-2017-ah202319": {
+    "code": "HSC-M1-T1-D49",
+    "confidence": "high",
+    "why": "background and rise to prominence"
+  },
+  "ancient-history-2017-ah202320": {
+    "code": "HSC-M20-T1-D1",
+    "confidence": "high",
+    "why": "background and rise to prominence"
+  },
+  "ancient-history-2017-ah202321": {
+    "code": "HSC-M1-T1-D60",
+    "confidence": "high",
+    "why": "background and rise to prominence"
+  },
+  "ancient-history-2017-ah202322": {
+    "code": "HSC-M32-T4-D10",
+    "confidence": "high",
+    "why": "background and rise to prominence"
+  },
+  "ancient-history-2017-ah202323": {
+    "code": "HSC-M24-T3-D18",
+    "confidence": "high",
+    "why": "role and contribution of Thutmose III"
+  },
+  "ancient-history-2017-ah202324": {
+    "code": "HSC-M24-T3-D24",
+    "confidence": "high",
+    "why": "nature of Egyptian imperialism"
+  },
+  "ancient-history-2017-ah202325": {
+    "code": "HSC-M4-T2-D29",
+    "confidence": "high",
+    "why": "contribution of Seti I and Ramesses II"
+  },
+  "ancient-history-2017-ah202326": {
+    "code": "HSC-M4-T2-D30",
+    "confidence": "high",
+    "why": "changing role of queens"
+  },
+  "ancient-history-2017-ah202327": {
+    "code": "HSC-M1-T1-D78",
+    "confidence": "high",
+    "why": "relations with Levantine kingdoms"
+  },
+  "ancient-history-2017-ah202328": {
+    "code": "HSC-M1-T1-D87",
+    "confidence": "high",
+    "why": "Judah as client-state of Assyria"
+  },
+  "ancient-history-2017-ah202329": {
+    "code": "HSC-M27-T2-D6",
+    "confidence": "high",
+    "why": "Persian invasions of mainland Greece"
+  },
+  "ancient-history-2017-ah202330": {
+    "code": "HSC-M27-T2-D11",
+    "confidence": "high",
+    "why": "decline of the Persian Empire"
+  },
+  "ancient-history-2017-ah202331": {
+    "code": "HSC-M28-T2-D17",
+    "confidence": "high",
+    "why": "role and contribution of Li Si"
+  },
+  "ancient-history-2017-ah202332": {
+    "code": "HSC-M28-T2-D27",
+    "confidence": "medium",
+    "why": "management and maintenance of empire"
+  },
+  "ancient-history-2017-ah202333": {
+    "code": "HSC-M29-T3-D5",
+    "confidence": "high",
+    "why": "origins: Persian imperialism, Ionian Revolt"
+  },
+  "ancient-history-2017-ah202334": {
+    "code": "HSC-M29-T3-D12",
+    "confidence": "high",
+    "why": "role of Cimon and Aristides"
+  }
+}

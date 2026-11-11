@@ -1,0 +1,819 @@
+{
+ "course_id": "visual-arts",
+ "course_name": "Visual Arts",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / appreciate the characteristics of practice in the visual arts in artmaking, art criticism, and art history"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / appreciate the role and contribution of the artist in different societies and cultures"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / appreciate the different meanings of artworks that are valued"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / appreciate the material, physical, transient or virtual qualities of expressive forms of artworks"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / appreciate the different ways the world can be interpreted in the making of art and in the critical and historical interpretation of art"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / value the role of an audience as a body of critical consumers and appreciate opportunities to view artworks as audience members"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / value how significant interpretations and meanings in the visual arts are sustained"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / appreciate the significance of expressive representation in the visual arts"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / value how their intellectual autonomy is advanced through the making of art and in the critical and historical investigation of art"
+  },
+  {
+   "code": "PRE-M2-T2-D10",
+   "path": "Year 11 / Art criticism and art history / The conceptual framework / appreciate how the field of the visual arts offers insights about themselves, art and the world."
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / the nature of practice in artmaking, art criticism, and art history through different investigations"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / agencies in the artworld – artist, artwork, world, audience"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / the frames and how students might develop their own informed points of view"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / how they might develop meaning and interest in their work"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / building understanding over time through various investigations and through working in different forms."
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / how they may ‘own’ practice in artmaking, art criticism, and art history"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / how they may further relate concepts of the artworld involving the agencies of artist, artwork, world, audience"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / how they may develop their own informed points of view in increasingly independent ways using the frames"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / Artmaking / Meaning, focus and resolution / how they may further develop meaning and interest in their work."
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / agency of artists, art critics and art historians and the work they produce"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / social structures, positions, actions and sequences that affect choices, procedures and judgements"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / perceptions, directions, ways of working and views of those involved in the visual arts."
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / intentional, informed human activity"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / the inculcation of beliefs, actions, motives and ideas over time"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / recognition that the field of visual arts and design has a history and is continuously transformed by innovations and new knowledge, technologies and agents"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / recognition that conceptions of practice are fluid and transform with changes in the field of visual arts and design. Notions of practice are not only informed by the new and the emergent but also by the re-emergence of existing or traditional conventions of practice."
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / In the Preliminary year they are expected to explore practices in at least two of the expressive forms."
+  },
+  {
+   "code": "HSC-M2-T3-D9",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / In the HSC year, students will develop their artmaking practice through a body of work in one of the 12 expressive forms over the course."
+  },
+  {
+   "code": "HSC-M2-T3-D10",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / In both the Preliminary and HSC courses students are required to keep a Visual Arts Process Diary. The diary provides a useful pedagogical tool in artmaking and supports the ongoing exchange between teachers and students in the development of artworks."
+  },
+  {
+   "code": "HSC-M2-T3-D11",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / In the Preliminary course, art criticism and art history can focus on particular aspects of content such as the agencies in the conceptual framework, the notion of practice, and how the frames offer different interpretations of the visual arts. Students may be introduced to case studies in the Preliminary course following more broadly based understanding being developed about practice, the conceptual framework and frames."
+  },
+  {
+   "code": "HSC-M2-T3-D12",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / In the HSC course, case studies, related to other more general critical and historical learning opportunities offered during the course, provide for the investigation of critical and historical cases that focus on relations between practice, the conceptual framework and the frames."
+  },
+  {
+   "code": "HSC-M2-T3-D13",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / During the Preliminary and HSC courses students learn about selected artworks using these as examples to explain their understanding of the visual arts. These examples should include artistic practice in Australia, other regions and globalised contexts. Examples and instances should include contemporary and historical contexts."
+  },
+  {
+   "code": "HSC-M2-T3-D14",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / a person making artworks individually, collaboratively as a group, school, movement or enlisting others to produce their work"
+  },
+  {
+   "code": "HSC-M2-T3-D15",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / practitioners such as artists, craftspeople, designers, architects, filmmakers, performance artists, digital and multimodal practitioners."
+  },
+  {
+   "code": "HSC-M2-T3-D16",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / in physical, material, virtual and ephemeral forms"
+  },
+  {
+   "code": "HSC-M2-T3-D17",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / as 2D, 3D, 4D and time-based works"
+  },
+  {
+   "code": "HSC-M2-T3-D18",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / as art, craft, and design as two- and three-dimensional works (including architecture), four-dimensional and time-based works, as well as multimodal and interactive media, temporal, ephemeral and relational forms, synthetic realities and other new and emergent technologies and forms."
+  },
+  {
+   "code": "HSC-M2-T3-D19",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore their own deeply felt experiences and perceptions of the world"
+  },
+  {
+   "code": "HSC-M2-T3-D20",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate their own and others’ feelings and responses to the world around them. This may influence their selection and imaginative investigation of subject matter"
+  },
+  {
+   "code": "HSC-M2-T3-D21",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore autobiographical and personal concerns and/or experiences of significance from their own environment. This can include world events that have an impact on an intimate level"
+  },
+  {
+   "code": "HSC-M2-T3-D22",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore the role of intuition, spontaneity or chance in artmaking practice."
+  },
+  {
+   "code": "HSC-M2-T3-D23",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore artworks as expressive and unique objects"
+  },
+  {
+   "code": "HSC-M2-T3-D24",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore explanations of artworks or practices which are based on the personal psychology of the artist"
+  },
+  {
+   "code": "HSC-M2-T3-D25",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate how other critics and historians represent personal, emotive accounts of art practices"
+  },
+  {
+   "code": "HSC-M2-T3-D26",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate themes of human emotion and psychology in artworks"
+  },
+  {
+   "code": "HSC-M2-T3-D27",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / develop personal interpretive responses to artists and artworks that are significant to themselves."
+  },
+  {
+   "code": "HSC-M2-T3-D28",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore cultural values and social meanings"
+  },
+  {
+   "code": "HSC-M2-T3-D29",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / choose to explore ideas and interests of significance to their society or of particular cultural groups. This may influence how they represent subject matter of a broad social significance"
+  },
+  {
+   "code": "HSC-M2-T3-D30",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore the cultural meanings of the expressive forms they work in."
+  },
+  {
+   "code": "HSC-M2-T3-D31",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / consider how notions of cultural identity can inform artistic practice and the production of artworks"
+  },
+  {
+   "code": "HSC-M2-T3-D32",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / study differing cultural attitudes towards the visual arts and the effects of scientific and technological innovation, politics and economics"
+  },
+  {
+   "code": "HSC-M2-T3-D33",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / study concepts of social and cultural identity (eg gender, Indigenous, regional, national, modern, contemporary, globalised) on artistic practices in particular places at a certain time and over time"
+  },
+  {
+   "code": "HSC-M2-T3-D34",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore the reconstruction of meaning of an artwork in and for the society in which it was produced or they may explore the reception, uses and meanings of artworks at certain times or over time"
+  },
+  {
+   "code": "HSC-M2-T3-D35",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate how art historians have constructed social histories of art"
+  },
+  {
+   "code": "HSC-M2-T3-D36",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate how art critical practice might be considered as a socially significant contribution to the artworld"
+  },
+  {
+   "code": "HSC-M2-T3-D37",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / apply their understanding of significant narratives on the social history of art to their understanding of artworks."
+  },
+  {
+   "code": "HSC-M2-T3-D38",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / explore the communicative value of their work through the use of conventions and in the selection of codes and symbols"
+  },
+  {
+   "code": "HSC-M2-T3-D39",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate signs, codes and symbols as a system of visual language including the way meaning is embedded in the material and conceptual organisation of the work"
+  },
+  {
+   "code": "HSC-M2-T3-D40",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate how this may affect their adoption of certain conventions and lead them to consider how codes and symbols are read by themselves and audiences and how particular expressive forms convey certain meanings."
+  },
+  {
+   "code": "HSC-M2-T3-D41",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / consider how artworks can be read and their meaning understood in terms of how specific symbols refer to the world within conventions of representation"
+  },
+  {
+   "code": "HSC-M2-T3-D42",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / study how visual information is organised and transmitted in artworks within individual artistic practice, within a particular art form as well as within genres or traditions of subject matter"
+  },
+  {
+   "code": "HSC-M2-T3-D43",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate art critical and art historical practices which categorise, value and explain artworks through their formal language"
+  },
+  {
+   "code": "HSC-M2-T3-D44",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / study how the formal and organisational relationships in a work may mean certain things and how the visual arts can operate as visual language at a certain time and over time."
+  },
+  {
+   "code": "HSC-M2-T3-D45",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / adopt positions related to their understanding of contemporary artistic practice and theories"
+  },
+  {
+   "code": "HSC-M2-T3-D46",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / recontextualise artworks and critique definitions of what art is through exploration of both art forms and imagery"
+  },
+  {
+   "code": "HSC-M2-T3-D47",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / modify, reinterpret or appropriate images from a variety of sources, including popular culture and forms of communication in the artworks they make"
+  },
+  {
+   "code": "HSC-M2-T3-D48",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate the potential of newer technologies where challenges are made to the unique, singular, precious object as art."
+  },
+  {
+   "code": "HSC-M2-T3-D49",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / question practice in art, assumptions about what art is and the generally accepted classifications of artists, artworks, movements and styles"
+  },
+  {
+   "code": "HSC-M2-T3-D50",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigate contemporary critical theory and particular theorists"
+  },
+  {
+   "code": "HSC-M2-T3-D51",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / view revisionist histories and critique traditional explanations of meaning in art to identify inconsistencies, contradictions and hidden assumptions in what is written"
+  },
+  {
+   "code": "HSC-M2-T3-D52",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / re-evaluate notions of artistic genius and the masterpiece, and study influences, canons and chronologies to reveal power relations, disjunctions and hidden assumptions"
+  },
+  {
+   "code": "HSC-M2-T3-D53",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / re-examine artistic practices which have been marginalised by conventional narratives of value in art."
+  },
+  {
+   "code": "HSC-M2-T3-D54",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / 40% of time should be devoted to artmaking with consideration of the frames and conceptual framework"
+  },
+  {
+   "code": "HSC-M2-T3-D55",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / 40% of time should be devoted to art criticism and art history with consideration of the frames and conceptual framework"
+  },
+  {
+   "code": "HSC-M2-T3-D56",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / the remaining 20% of time may be allocated to any aspect of content depending on the interests of teachers and students."
+  },
+  {
+   "code": "HSC-M2-T3-D57",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / the content of practice, conceptual framework, frames"
+  },
+  {
+   "code": "HSC-M2-T3-D58",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / making artworks in at least two forms"
+  },
+  {
+   "code": "HSC-M2-T3-D59",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / use of a process diary"
+  },
+  {
+   "code": "HSC-M2-T3-D60",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / broad investigation of ideas in art criticism and art history."
+  },
+  {
+   "code": "HSC-M2-T3-D61",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / the development of a body of work"
+  },
+  {
+   "code": "HSC-M2-T3-D62",
+   "path": "Year 12 / Art criticism and art history / The conceptual framework / investigation of content through at least five case studies in art criticism and art history."
+  }
+ ],
+ "questions": [
+  {
+   "id": "va202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "In what ways is the imagination engaged by Plate 1?\nPlate 1: Sandy Skoglund, b. 1946, America, Revenge of the Goldfish, 1981, Cibachrome photograph, 69.2 x 88.9 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Analyse how Russell Drysdale represents and interprets his world in Plates 2 and 3.\nPlate 2: Russell Drysdale, 1912-1981, United Kingdom, Shopping Day, 1953, oil on canvas, 61 x 76.2 cm. Plate 3: Russell Drysdale, 1912-1981, United Kingdom, West Wyalong, 1949, oil on composition board, 81.3 x 101.6 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 13,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Explain how the artists' choice of material and actions create meaning in Plates 4, 5, 6(a) and 6(b).\nPlate 4: Artist unknown, Mithridates VI, King of Pontus, Greek, 1st century BC, marble, 27.9 x 48.2 x 24.1 cm. Plate 5: Alberto Giacometti, 1901-1966, Switzerland, Bust of Annette VIII, 1962 (cast 1965), bronze with brown and green patina, 58 x 19.1 x 18.4 cm. Plate 6 (a)/(b): Li Hongbo, b. 1974, China, Bust of Marseilles, 2012, paper, 60 x 35.9 x 34.9 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Investigate the role of innovation in artmaking practice.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Evaluate the influences of time and place on artmaking practice.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "It is the intention of art to manipulate rather than reflect the world.\nDiscuss this statement with reference to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Investigate how artists develop relationships with their audiences by continually challenging them.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Art is either revolution or plagiarism.\nDiscuss this statement with reference to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Analyse the roles of memory and experience in the creation of artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "What do Plates 1 and 2 show about the artmaking practice of Susanna Bauer?\nPlate 1: Susanna Bauer, b. 1969, Germany, Everything That Surrounds Us, 2019, magnolia leaves, cotton thread, 38 x 38 x 5.5 cm (framed). Plate 2: Susanna Bauer, b. 1969, Germany, Core II, 2015, magnolia leaf, cotton thread, 34.2 x 26.3 x 5 cm (framed).\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "How do these two Aboriginal artists represent their culture and history?\nPlate 3: Tommy McRae, 1835-1901, of the Kwatkwat Nation, Australia, Corroboree or William Buckley and Dancers from the Wathaurong People, 1890, ink on paper, 21.6 x 27.3 cm. Plate 4: Marlene Gilson, b. 1944, of the Wathaurung Nation, Australia, Wathaurung Visit, Coranderrk, 2019, acrylic on linen, 100 x 100 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Analyse the relationships between audience, artwork and world in Adnate's work.\nPlate 5: Adnate (Matt Last), b. 1984, Australia, gallery photographs from the Into the Sun exhibition, 2015, Nanda/Hobbs Gallery, Sydney. Plate 6: Adnate (Matt Last), b. 1984, Australia, The Sheep Hills Silo, Wimmera, Victoria, from the Silo Art Trail Series, 2016, acrylic and spray paint, 30 x 40 m; Silo Art Trail, Australia's largest outdoor gallery, stretching over 200 km. Plate 7: Adnate (Matt Last), b. 1984, Australia, Wellington Street High Rise, Collingwood, Victoria, 2018, acrylic and spray paint, 20-storey mural featuring four residents from three continents.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Analyse the influence of technology on the evolution of artists' practice.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Evaluate the role of risk-taking and experimentation in artists' practice.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Investigate the ways artists stay relevant in an ever-changing world.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Assess how exhibitions create context and meaning for artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Investigate how artists visually process their personal experiences.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "To what extent do artworks reflect and document their cultural contexts?\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Describe Thea Proctor's artmaking practice as represented in Plate 1.\nPlate 1: Thea Proctor, 1879-1966, Australia, The Swing, 1925, woodcut print hand-coloured on paper, 25.1 x 24.9 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Analyse how the architecture of Murinsel (Mur Island) interacts with its environment.\nPlate 2: Vito Acconci (Acconci Studio), 1940-2017, America, Murinsel (Mur Island), Mur River, Graz, Austria, 2003, steel, glass, rubber, asphalt, water, light, 1052 sq m. Plate 3: Murinsel viewed from the south bank. Plate 4: Murinsel viewed from within the tiered amphitheatre.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Explain how artists use materials and techniques to communicate meaning.\nPlate 5: Cave painting, Lascaux, France, 15000-10000 BCE, charcoal, ochre, 19 m wide x 7.5 m high. Plate 6: Kenojuak Ashevak, 1927-2013, Canada, Spirit of the Raven, 1979, stonecut print, 61 x 73.7 cm (Inuit artist). Plate 7: Aboriginal artists from Aurukun, Queensland, Australia, Camp Dogs, 2020, carved milkwood with natural pigments, charcoal and acrylic binder, sizes variable; the five carvings represent the Dog Ancestral Being (Totem) of the Apalech Clan.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Explain how artists collaborate with others in the production of their artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Analyse how artists use traditional materials in contemporary artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Explain how an audience's interactions and responses are affected by the size of an artwork.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Explain how artists use simple yet powerful imagery to portray aspects of the world.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Analyse how text and imagery can be combined to create meaning in artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Explain how artists express global concerns in personal ways.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "How does the artwork in Plate 1 reflect aspects of Faith Ringgold's world?\nPlate 1: Faith Ringgold, b. 1930, America, The Bitter Nest Part II: Harlem Renaissance Party, 1988, story quilt, acrylic on canvas with tie-dyed and pieced fabric border, 240 x 210 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Explain how drama and emotion are created in Plates 2 and 3.\nPlate 2: Gustave Courbet, 1819-1877, France, The Desperate Man (self portrait), 1843-1845, oil on canvas, 45 x 54 cm. Plate 3: Abdul Abdullah, b. 1986, Australia, Self Portrait as Ophelia study 2, 2015, oil and resin on board, 180 x 110 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Analyse how ideas are communicated through material choices and processes in Plates 4-8.\nPlate 4/5: Lucienne Rickard, b. 1981, Australia, Extinction Studies (Swift Parrot), December 2020, graphite pencil on paper, approx. 1.2 x 1.6 m; completion January 2021. Plate 6: Erasing of Swift Parrot drawing, January 2021. Extinction Studies was a sixteen-month performance; the Swift Parrot took five weeks to draw and 20 minutes to erase. Plate 7: Olafur Eliasson, b. 1967, Denmark and Minik Rosing, b. 1957, Greenland, Ice Watch, 3-12 December 2015, twelve blocks of ice harvested as free-floating icebergs from Greenland in clock formation. Plate 8: Ice harvesting for Ice Watch installation.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "The aim of art is to represent not the outward appearance of things, but their inward significance.\nAttributed to Aristotle.\nWith reference to this quotation, analyse how artmaking is influenced by the conceptual practice of artists.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Investigate the different roles artists adopt as part of their artmaking practice.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Examine how artists engage audiences to become active participants in their artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Investigate how controversy is used in art to provoke discussion about ideas and issues.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Painting is just another way of keeping a diary.\nPablo Picasso.\nWith reference to this quotation, explain how artists use their own visual language to create artworks that are autobiographical.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Analyse how artists reinterpret the past to construct new meanings in the present.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "How does Spowers communicate a sense of movement to create meaning in Plate 1?\nPlate 1: Ethel Spowers, 1890-1947, Australia, The Plough, 1929, wood engraving printed in black ink on ivory laid tissue paper, 10.1 x 15.7 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Explain the significance of the artmaking decisions in the practice of Reko Rennie.\nPlate 2: Reko Rennie, b. 1974, Kamilaroi, Australia, OA_RR, 2016-2017, photographic still from installation. Plate 3: Reko Rennie, b. 1974, Kamilaroi, Australia, OA_RR, 2016-2017, film still from installation. Plate 4: Reko Rennie, b. 1974, Kamilaroi, Australia, OA_RR, 2016-2017, 3 channel HD video, 7 min 47 s, installation view, Murray Art Museum Albury. Adapted from rekorennie.com. (Images withheld from PDF due to copyright.)\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Analyse how the artists have represented personal and collective experience in Plates 5, 6 and 7.\nPlate 5: Pierre-Auguste Renoir, 1841-1919, France, Luncheon of the Boating Party, 1881, oil on canvas, 129.8 x 172.7 cm. Plate 6: Kubo Shunman, 1757-1820, Japan, Two Young Men and Several Women Dining at a Tea-house on the Bank of the Sumida River, 1788, diptych of woodblock prints, ink and colour on paper, 38.1 x 52.1 cm (Metropolitan Museum of Art NY). Plate 7: Andrea Kowch, b. 1986, United States, An Invitation, 2013, acrylic on canvas, 152.4 x 121.9 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Explain how artists use emerging technologies to express their ideas and intentions.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Analyse how an artist's choice of materials and methods communicates their experience.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Explain how artworks and/or exhibitions evoke responses from audiences.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Analyse how artists' ideas and intentions are shaped by historical factors.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Analyse how artworks reflect the social and cultural values of artists.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Explain how artists reinterpret the ideas and actions of other artists in their own artmaking.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Describe Paula Rego's artmaking practice as represented in Plate 1.\nPlate 1: Paula Rego, 1935-2022, Portugal, The Dance, 1988, acrylic on paper laid on canvas, 212.6 x 274 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Analyse how Hoda Amin and Henri Cartier-Bresson use figures and leading lines in similar ways to create meaning.\nPlate 2: Hoda Amin, b. 1976, Lebanon, Untitled, from the series No Man's Land, 2013-2016, Type C print, dimensions unknown. Plate 3: Henri Cartier-Bresson, 1908-2004, France, Rue de Crimée and staircase to the rue des Annelets, 1953, gelatin silver print, 23.7 x 35.7 cm.\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Analyse the Seed Cathedral's relationship with its audience and with the world.\nPlate 4: Thomas Heatherwick (Heatherwick Studio), b. 1970, United Kingdom, UK Pavilion (Seed Cathedral) at the 2010 World Expo in Shanghai, steel and timber composite frame, 60000 transparent fibre-optic rods, 250000 plant seeds, 20 x 25 x 25 m. Plate 5: external view at night. Plate 6: interior view during the day, rods draw daylight inwards and glow at night, moving in the wind. Plate 7: interior view (detail).\nNote: the original HSC paper included a printed image(s) of the plate(s); the image is not bundled here and remains referenced by description only."
+  },
+  {
+   "id": "va202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Ideas rather than methods are central to the way I work.\nPatricia Piccinini.\nDiscuss this statement with reference to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / Case studies",
+   "text": "Explain how artists' intentions are shaped by the evolution of their practice over time.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "All ideas grow out of other ideas.\nAnish Kapoor.\nDiscuss this statement with reference to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The conceptual framework",
+   "text": "Explain the role audiences play in enhancing the meaning of artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "The object of art is not to reproduce reality, but to create a reality of the same intensity.\nAlberto Giacometti.\nDiscuss this statement with reference to specific artists and artworks you have studied."
+  },
+  {
+   "id": "va202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Art criticism and art history / The frames",
+   "text": "Analyse how visual language is used by artists to communicate meaning in their artworks.\nIn your answer, refer to specific artists and artworks you have studied."
+  }
+ ]
+}

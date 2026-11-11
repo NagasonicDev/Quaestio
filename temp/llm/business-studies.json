@@ -1,0 +1,2972 @@
+{
+ "course_id": "business-studies",
+ "course_name": "Business Studies",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Nature of business / The role and nature of business / discuss the global expansion of one Australian business",
+   "text": "discuss the global expansion of one Australian business"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Nature of business / The role and nature of business / discuss the expansion into Australia of one global business",
+   "text": "discuss the expansion into Australia of one global business"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how changes in external influences have contributed to the growth of the tertiary, quaternary and quinary industries in Australia",
+   "text": "explain how changes in external influences have contributed to the growth of the tertiary, quaternary and quinary industries in Australia"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify problems that arise for stakeholders when companies go into liquidation",
+   "text": "identify problems that arise for stakeholders when companies go into liquidation"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Nature of business / The role and nature of business / distinguish between the different types of businesses",
+   "text": "distinguish between the different types of businesses"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify actual businesses at different stages in the business life cycle",
+   "text": "identify actual businesses at different stages in the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Nature of business / The role and nature of business / outline possible business strategies appropriate for different stages in the business life cycle",
+   "text": "outline possible business strategies appropriate for different stages in the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Nature of business / The role and nature of business / the nature of a business",
+   "text": "the nature of a business"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Nature of business / The role and nature of business / producing goods and services",
+   "text": "producing goods and services"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Nature of business / The role and nature of business / profit, employment, incomes, choice, innovation, entrepreneurship and risk, wealth and quality of life",
+   "text": "profit, employment, incomes, choice, innovation, entrepreneurship and risk, wealth and quality of life"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Nature of business / The role and nature of business / classification of business",
+   "text": "classification of business"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Nature of business / The role and nature of business / size – small to medium enterprises (SMEs), large",
+   "text": "size – small to medium enterprises (SMEs), large"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Nature of business / The role and nature of business / local, national, global",
+   "text": "local, national, global"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Nature of business / The role and nature of business / industry – primary, secondary, tertiary, quaternary, quinary",
+   "text": "industry – primary, secondary, tertiary, quaternary, quinary"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Nature of business / The role and nature of business / legal structure – sole trader, partnership, private company, public company, government enterprise",
+   "text": "legal structure – sole trader, partnership, private company, public company, government enterprise"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Nature of business / The role and nature of business / factors influencing choice of legal structure",
+   "text": "factors influencing choice of legal structure"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Nature of business / The role and nature of business / size, ownership, finance",
+   "text": "size, ownership, finance"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Nature of business / The role and nature of business / external influences – economic, financial, geographic, social, legal, political, institutional, technological, competitive situation, markets",
+   "text": "external influences – economic, financial, geographic, social, legal, political, institutional, technological, competitive situation, markets"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Nature of business / The role and nature of business / internal influences – products, location, resources, management and business culture",
+   "text": "internal influences – products, location, resources, management and business culture"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Nature of business / The role and nature of business / stakeholders",
+   "text": "stakeholders"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Nature of business / The role and nature of business / stages of the business life cycle",
+   "text": "stages of the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Nature of business / The role and nature of business / establishment",
+   "text": "establishment"
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Nature of business / The role and nature of business / growth",
+   "text": "growth"
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Nature of business / The role and nature of business / maturity",
+   "text": "maturity"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Nature of business / The role and nature of business / post-maturity",
+   "text": "post-maturity"
+  },
+  {
+   "code": "PRE-M1-T1-D26",
+   "path": "Year 11 / Nature of business / The role and nature of business / responding to challenges at each stage of the business life cycle",
+   "text": "responding to challenges at each stage of the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D27",
+   "path": "Year 11 / Nature of business / The role and nature of business / factors that can contribute to business decline",
+   "text": "factors that can contribute to business decline"
+  },
+  {
+   "code": "PRE-M1-T1-D28",
+   "path": "Year 11 / Nature of business / The role and nature of business / voluntary and involuntary cessation – liquidation",
+   "text": "voluntary and involuntary cessation – liquidation"
+  },
+  {
+   "code": "PRE-M1-T1-D29",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify the qualities of managers who have exhibited high personal and ethical standards",
+   "text": "identify the qualities of managers who have exhibited high personal and ethical standards"
+  },
+  {
+   "code": "PRE-M1-T1-D30",
+   "path": "Year 11 / Nature of business / The role and nature of business / analyse different ways of coordinating key business functions for an SME",
+   "text": "analyse different ways of coordinating key business functions for an SME"
+  },
+  {
+   "code": "PRE-M1-T1-D31",
+   "path": "Year 11 / Nature of business / The role and nature of business / examine effective cash flow management",
+   "text": "examine effective cash flow management"
+  },
+  {
+   "code": "PRE-M1-T1-D32",
+   "path": "Year 11 / Nature of business / The role and nature of business / assess the role of the income statement and the balance sheet when describing the financial performance of a business",
+   "text": "assess the role of the income statement and the balance sheet when describing the financial performance of a business"
+  },
+  {
+   "code": "PRE-M1-T1-D33",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how SMEs manage change effectively",
+   "text": "explain how SMEs manage change effectively"
+  },
+  {
+   "code": "PRE-M1-T1-D34",
+   "path": "Year 11 / Nature of business / The role and nature of business / discuss the influence of government on SMEs",
+   "text": "discuss the influence of government on SMEs"
+  },
+  {
+   "code": "PRE-M1-T1-D35",
+   "path": "Year 11 / Nature of business / The role and nature of business / assess the effect of two changes in the business environment on SMEs",
+   "text": "assess the effect of two changes in the business environment on SMEs"
+  },
+  {
+   "code": "PRE-M1-T1-D36",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how the business plan is determined in at least one SME",
+   "text": "explain how the business plan is determined in at least one SME"
+  },
+  {
+   "code": "PRE-M1-T1-D37",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how SMEs can enter the global market for long-term growth",
+   "text": "explain how SMEs can enter the global market for long-term growth"
+  },
+  {
+   "code": "PRE-M1-T1-D38",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify ways that SMEs gain a competitive advantage",
+   "text": "identify ways that SMEs gain a competitive advantage"
+  },
+  {
+   "code": "PRE-M1-T1-D39",
+   "path": "Year 11 / Nature of business / The role and nature of business / based on a hypothetical or actual business",
+   "text": "based on a hypothetical or actual business"
+  },
+  {
+   "code": "PRE-M1-T1-D40",
+   "path": "Year 11 / Nature of business / The role and nature of business / presented in a business plan/report format",
+   "text": "presented in a business plan/report format"
+  },
+  {
+   "code": "PRE-M1-T1-D41",
+   "path": "Year 11 / Nature of business / The role and nature of business / sources of planning ideas",
+   "text": "sources of planning ideas"
+  },
+  {
+   "code": "PRE-M1-T1-D42",
+   "path": "Year 11 / Nature of business / The role and nature of business / situational analysis",
+   "text": "situational analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D43",
+   "path": "Year 11 / Nature of business / The role and nature of business / vision, goals and/or objectives",
+   "text": "vision, goals and/or objectives"
+  },
+  {
+   "code": "PRE-M1-T1-D44",
+   "path": "Year 11 / Nature of business / The role and nature of business / vision",
+   "text": "vision"
+  },
+  {
+   "code": "PRE-M1-T1-D45",
+   "path": "Year 11 / Nature of business / The role and nature of business / business goals",
+   "text": "business goals"
+  },
+  {
+   "code": "PRE-M1-T1-D46",
+   "path": "Year 11 / Nature of business / The role and nature of business / long-term growth",
+   "text": "long-term growth"
+  },
+  {
+   "code": "PRE-M1-T1-D47",
+   "path": "Year 11 / Nature of business / The role and nature of business / organising resources",
+   "text": "organising resources"
+  },
+  {
+   "code": "PRE-M1-T1-D48",
+   "path": "Year 11 / Nature of business / The role and nature of business / operations",
+   "text": "operations"
+  },
+  {
+   "code": "PRE-M1-T1-D49",
+   "path": "Year 11 / Nature of business / The role and nature of business / marketing",
+   "text": "marketing"
+  },
+  {
+   "code": "PRE-M1-T1-D50",
+   "path": "Year 11 / Nature of business / The role and nature of business / finance",
+   "text": "finance"
+  },
+  {
+   "code": "PRE-M1-T1-D51",
+   "path": "Year 11 / Nature of business / The role and nature of business / human resources",
+   "text": "human resources"
+  },
+  {
+   "code": "PRE-M1-T1-D52",
+   "path": "Year 11 / Nature of business / The role and nature of business / forecasting",
+   "text": "forecasting"
+  },
+  {
+   "code": "PRE-M1-T1-D53",
+   "path": "Year 11 / Nature of business / The role and nature of business / total revenue, total cost",
+   "text": "total revenue, total cost"
+  },
+  {
+   "code": "PRE-M1-T1-D54",
+   "path": "Year 11 / Nature of business / The role and nature of business / break-even analysis",
+   "text": "break-even analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D55",
+   "path": "Year 11 / Nature of business / The role and nature of business / cash flow projections",
+   "text": "cash flow projections"
+  },
+  {
+   "code": "PRE-M1-T1-D56",
+   "path": "Year 11 / Nature of business / The role and nature of business / monitoring and evaluations",
+   "text": "monitoring and evaluations"
+  },
+  {
+   "code": "PRE-M1-T1-D57",
+   "path": "Year 11 / Nature of business / The role and nature of business / sales",
+   "text": "sales"
+  },
+  {
+   "code": "PRE-M1-T1-D58",
+   "path": "Year 11 / Nature of business / The role and nature of business / budgets",
+   "text": "budgets"
+  },
+  {
+   "code": "PRE-M1-T1-D59",
+   "path": "Year 11 / Nature of business / The role and nature of business / profit",
+   "text": "profit"
+  },
+  {
+   "code": "PRE-M1-T1-D60",
+   "path": "Year 11 / Nature of business / The role and nature of business / taking corrective action",
+   "text": "taking corrective action"
+  },
+  {
+   "code": "PRE-M1-T1-D61",
+   "path": "Year 11 / Nature of business / The role and nature of business / importance of a business plan",
+   "text": "importance of a business plan"
+  },
+  {
+   "code": "PRE-M1-T1-D62",
+   "path": "Year 11 / Nature of business / The role and nature of business / management – staffing and teams",
+   "text": "management – staffing and teams"
+  },
+  {
+   "code": "PRE-M1-T1-D63",
+   "path": "Year 11 / Nature of business / The role and nature of business / trend analysis",
+   "text": "trend analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D64",
+   "path": "Year 11 / Nature of business / The role and nature of business / identifying and sustaining competitive advantage",
+   "text": "identifying and sustaining competitive advantage"
+  },
+  {
+   "code": "PRE-M1-T1-D65",
+   "path": "Year 11 / Nature of business / The role and nature of business / avoiding over-extension of finance and other resources",
+   "text": "avoiding over-extension of finance and other resources"
+  },
+  {
+   "code": "PRE-M1-T1-D66",
+   "path": "Year 11 / Nature of business / The role and nature of business / using technology",
+   "text": "using technology"
+  },
+  {
+   "code": "PRE-M1-T1-D67",
+   "path": "Year 11 / Nature of business / The role and nature of business / economic conditions",
+   "text": "economic conditions"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / discuss strategies that could reconcile the conflicting interests of stakeholders",
+   "text": "discuss strategies that could reconcile the conflicting interests of stakeholders"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / compare and contrast approaches to management",
+   "text": "compare and contrast approaches to management"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / explain the benefits of quality management practices",
+   "text": "explain the benefits of quality management practices"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / features of effective management",
+   "text": "features of effective management"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / skills of management",
+   "text": "skills of management"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / interpersonal, communication, strategic thinking, vision, problem-solving, decisionmaking, flexibility, adaptability to change, reconciling the conflicting interests of stakeholders",
+   "text": "interpersonal, communication, strategic thinking, vision, problem-solving, decisionmaking, flexibility, adaptability to change, reconciling the conflicting interests of stakeholders"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / achieving business goals",
+   "text": "achieving business goals"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / profits, market share, growth, share price, social, environmental",
+   "text": "profits, market share, growth, share price, social, environmental"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / achieving a mix of the above goals",
+   "text": "achieving a mix of the above goals"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / staff involvement – innovation, motivation, mentoring, training",
+   "text": "staff involvement – innovation, motivation, mentoring, training"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / classical approach",
+   "text": "classical approach"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / management as planning, organising and controlling",
+   "text": "management as planning, organising and controlling"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / hierarchical organisational structure",
+   "text": "hierarchical organisational structure"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / autocratic leadership style",
+   "text": "autocratic leadership style"
+  },
+  {
+   "code": "PRE-M2-T1-D15",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / behavioural approach",
+   "text": "behavioural approach"
+  },
+  {
+   "code": "PRE-M2-T1-D16",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / management as leading, motivating, communicating",
+   "text": "management as leading, motivating, communicating"
+  },
+  {
+   "code": "PRE-M2-T1-D17",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / teams",
+   "text": "teams"
+  },
+  {
+   "code": "PRE-M2-T1-D18",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / participative/democratic leadership style",
+   "text": "participative/democratic leadership style"
+  },
+  {
+   "code": "PRE-M2-T1-D19",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / contingency approach",
+   "text": "contingency approach"
+  },
+  {
+   "code": "PRE-M2-T1-D20",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / adapting to changing circumstances",
+   "text": "adapting to changing circumstances"
+  },
+  {
+   "code": "PRE-M2-T1-D21",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / coordinating key business functions and resources",
+   "text": "coordinating key business functions and resources"
+  },
+  {
+   "code": "PRE-M2-T1-D22",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / operations",
+   "text": "operations"
+  },
+  {
+   "code": "PRE-M2-T1-D23",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / goods and/or services",
+   "text": "goods and/or services"
+  },
+  {
+   "code": "PRE-M2-T1-D24",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / the production process",
+   "text": "the production process"
+  },
+  {
+   "code": "PRE-M2-T1-D25",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / quality management",
+   "text": "quality management"
+  },
+  {
+   "code": "PRE-M2-T1-D26",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / marketing",
+   "text": "marketing"
+  },
+  {
+   "code": "PRE-M2-T1-D27",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / identification of the target market",
+   "text": "identification of the target market"
+  },
+  {
+   "code": "PRE-M2-T1-D28",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / marketing mix",
+   "text": "marketing mix"
+  },
+  {
+   "code": "PRE-M2-T1-D29",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / finance",
+   "text": "finance"
+  },
+  {
+   "code": "PRE-M2-T1-D30",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / cash flow statement",
+   "text": "cash flow statement"
+  },
+  {
+   "code": "PRE-M2-T1-D31",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / income statement",
+   "text": "income statement"
+  },
+  {
+   "code": "PRE-M2-T1-D32",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / balance sheet",
+   "text": "balance sheet"
+  },
+  {
+   "code": "PRE-M2-T1-D33",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / human resources",
+   "text": "human resources"
+  },
+  {
+   "code": "PRE-M2-T1-D34",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / recruitment",
+   "text": "recruitment"
+  },
+  {
+   "code": "PRE-M2-T1-D35",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / training",
+   "text": "training"
+  },
+  {
+   "code": "PRE-M2-T1-D36",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / employment contracts",
+   "text": "employment contracts"
+  },
+  {
+   "code": "PRE-M2-T1-D37",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / separation – voluntary/involuntary",
+   "text": "separation – voluntary/involuntary"
+  },
+  {
+   "code": "PRE-M2-T1-D38",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / ethical business behaviour",
+   "text": "ethical business behaviour"
+  },
+  {
+   "code": "PRE-M2-T1-D39",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / responding to internal and external influences",
+   "text": "responding to internal and external influences"
+  },
+  {
+   "code": "PRE-M2-T1-D40",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / managing change effectively",
+   "text": "managing change effectively"
+  },
+  {
+   "code": "PRE-M2-T1-D41",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / identifying the need for change",
+   "text": "identifying the need for change"
+  },
+  {
+   "code": "PRE-M2-T1-D42",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / business information systems",
+   "text": "business information systems"
+  },
+  {
+   "code": "PRE-M2-T1-D43",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / setting achievable goals",
+   "text": "setting achievable goals"
+  },
+  {
+   "code": "PRE-M2-T1-D44",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / resistance to change",
+   "text": "resistance to change"
+  },
+  {
+   "code": "PRE-M2-T1-D45",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / management consultants",
+   "text": "management consultants"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / definition",
+   "text": "definition"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / role",
+   "text": "role"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / economic contribution",
+   "text": "economic contribution"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / success and/or failure",
+   "text": "success and/or failure"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / personal qualities – qualifications, skills, motivation, entrepreneurship, cultural background, gender",
+   "text": "personal qualities – qualifications, skills, motivation, entrepreneurship, cultural background, gender"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / sources of information",
+   "text": "sources of information"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / the business idea – competition",
+   "text": "the business idea – competition"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / establishment options – new, existing, franchise",
+   "text": "establishment options – new, existing, franchise"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / market – goods and/or services, price, location",
+   "text": "market – goods and/or services, price, location"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / finance – source, cost",
+   "text": "finance – source, cost"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / legal – business name, zoning, health and other regulations",
+   "text": "legal – business name, zoning, health and other regulations"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / human resources",
+   "text": "human resources"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / skills",
+   "text": "skills"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / costs – wage and non-wage",
+   "text": "costs – wage and non-wage"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / taxation – federal and state taxes, local rates and charges",
+   "text": "taxation – federal and state taxes, local rates and charges"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Operations / Strategies for effective operations management / discuss the balance between cost and quality in operations strategy",
+   "text": "discuss the balance between cost and quality in operations strategy"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Operations / Strategies for effective operations management / examine the impact of globalisation on operations strategy",
+   "text": "examine the impact of globalisation on operations strategy"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Operations / Strategies for effective operations management / identify the breadth of government policies that affect operations management",
+   "text": "identify the breadth of government policies that affect operations management"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Operations / Strategies for effective operations management / explain why corporate social responsibility is a key concern in operations management",
+   "text": "explain why corporate social responsibility is a key concern in operations management"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Operations / Strategies for effective operations management / describe the features of operations management for businesses in a tertiary industry",
+   "text": "describe the features of operations management for businesses in a tertiary industry"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Operations / Strategies for effective operations management / assess the relationship between operations and the other key business functions in two actual businesses",
+   "text": "assess the relationship between operations and the other key business functions in two actual businesses"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Operations / Strategies for effective operations management / explain how operations strategy can help a business sustain its competitive advantage",
+   "text": "explain how operations strategy can help a business sustain its competitive advantage"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Operations / Strategies for effective operations management / recommend possible operations strategies for one hypothetical business",
+   "text": "recommend possible operations strategies for one hypothetical business"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Operations / Strategies for effective operations management / strategic role of operations management – cost leadership, good/service differentiation",
+   "text": "strategic role of operations management – cost leadership, good/service differentiation"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Operations / Strategies for effective operations management / goods and/or services in different industries",
+   "text": "goods and/or services in different industries"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Operations / Strategies for effective operations management / interdependence with other key business functions",
+   "text": "interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Operations / Strategies for effective operations management / globalisation, technology, quality expectations, cost-based competition, government policies, legal regulation, environmental sustainability",
+   "text": "globalisation, technology, quality expectations, cost-based competition, government policies, legal regulation, environmental sustainability"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Operations / Strategies for effective operations management / corporate social responsibility",
+   "text": "corporate social responsibility"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Operations / Strategies for effective operations management / the difference between legal compliance and ethical responsibility",
+   "text": "the difference between legal compliance and ethical responsibility"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Operations / Strategies for effective operations management / environmental sustainability and social responsibility",
+   "text": "environmental sustainability and social responsibility"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Operations / Strategies for effective operations management / inputs",
+   "text": "inputs"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Operations / Strategies for effective operations management / transformed resources (materials, information, customers)",
+   "text": "transformed resources (materials, information, customers)"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Operations / Strategies for effective operations management / transforming resources (human resources, facilities)",
+   "text": "transforming resources (human resources, facilities)"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Operations / Strategies for effective operations management / transformation processes",
+   "text": "transformation processes"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Operations / Strategies for effective operations management / the influence of volume, variety, variation in demand and visibility (customer contact)",
+   "text": "the influence of volume, variety, variation in demand and visibility (customer contact)"
+  },
+  {
+   "code": "HSC-M1-T1-D21",
+   "path": "Year 12 / Operations / Strategies for effective operations management / sequencing and scheduling – Gantt charts, critical path analysis",
+   "text": "sequencing and scheduling – Gantt charts, critical path analysis"
+  },
+  {
+   "code": "HSC-M1-T1-D22",
+   "path": "Year 12 / Operations / Strategies for effective operations management / technology, task design and process layout",
+   "text": "technology, task design and process layout"
+  },
+  {
+   "code": "HSC-M1-T1-D23",
+   "path": "Year 12 / Operations / Strategies for effective operations management / monitoring, control and improvement",
+   "text": "monitoring, control and improvement"
+  },
+  {
+   "code": "HSC-M1-T1-D24",
+   "path": "Year 12 / Operations / Strategies for effective operations management / outputs",
+   "text": "outputs"
+  },
+  {
+   "code": "HSC-M1-T1-D25",
+   "path": "Year 12 / Operations / Strategies for effective operations management / customer service",
+   "text": "customer service"
+  },
+  {
+   "code": "HSC-M1-T1-D26",
+   "path": "Year 12 / Operations / Strategies for effective operations management / warranties",
+   "text": "warranties"
+  },
+  {
+   "code": "HSC-M1-T1-D27",
+   "path": "Year 12 / Operations / Strategies for effective operations management / performance objectives – quality, speed, dependability, flexibility, customisation, cost",
+   "text": "performance objectives – quality, speed, dependability, flexibility, customisation, cost"
+  },
+  {
+   "code": "HSC-M1-T1-D28",
+   "path": "Year 12 / Operations / Strategies for effective operations management / new product or service design and development",
+   "text": "new product or service design and development"
+  },
+  {
+   "code": "HSC-M1-T1-D29",
+   "path": "Year 12 / Operations / Strategies for effective operations management / supply chain management – logistics, e-commerce, global sourcing",
+   "text": "supply chain management – logistics, e-commerce, global sourcing"
+  },
+  {
+   "code": "HSC-M1-T1-D30",
+   "path": "Year 12 / Operations / Strategies for effective operations management / outsourcing – advantages and disadvantages",
+   "text": "outsourcing – advantages and disadvantages"
+  },
+  {
+   "code": "HSC-M1-T1-D31",
+   "path": "Year 12 / Operations / Strategies for effective operations management / technology – leading edge, established",
+   "text": "technology – leading edge, established"
+  },
+  {
+   "code": "HSC-M1-T1-D32",
+   "path": "Year 12 / Operations / Strategies for effective operations management / inventory management – advantages and disadvantages of holding stock, LIFO (lastinfirst-out), FIFO (first-in-first-out), JIT (just-in-time)",
+   "text": "inventory management – advantages and disadvantages of holding stock, LIFO (lastinfirst-out), FIFO (first-in-first-out), JIT (just-in-time)"
+  },
+  {
+   "code": "HSC-M1-T1-D33",
+   "path": "Year 12 / Operations / Strategies for effective operations management / quality management",
+   "text": "quality management"
+  },
+  {
+   "code": "HSC-M1-T1-D34",
+   "path": "Year 12 / Operations / Strategies for effective operations management / control",
+   "text": "control"
+  },
+  {
+   "code": "HSC-M1-T1-D35",
+   "path": "Year 12 / Operations / Strategies for effective operations management / assurance",
+   "text": "assurance"
+  },
+  {
+   "code": "HSC-M1-T1-D36",
+   "path": "Year 12 / Operations / Strategies for effective operations management / improvement",
+   "text": "improvement"
+  },
+  {
+   "code": "HSC-M1-T1-D37",
+   "path": "Year 12 / Operations / Strategies for effective operations management / overcoming resistance to change – financial costs, purchasing new equipment, redundancy payments, retraining, reorganising plant layout, inertia",
+   "text": "overcoming resistance to change – financial costs, purchasing new equipment, redundancy payments, retraining, reorganising plant layout, inertia"
+  },
+  {
+   "code": "HSC-M1-T1-D38",
+   "path": "Year 12 / Operations / Strategies for effective operations management / global factors – global sourcing, economies of scale, scanning and learning, research and development",
+   "text": "global factors – global sourcing, economies of scale, scanning and learning, research and development"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / explain why goods and/or services are central to both marketing and operations",
+   "text": "explain why goods and/or services are central to both marketing and operations"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / examine why ethical behaviour and government regulation are important in marketing",
+   "text": "examine why ethical behaviour and government regulation are important in marketing"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / assess why a mix of promotional strategies is important in the marketing of goods and services",
+   "text": "assess why a mix of promotional strategies is important in the marketing of goods and services"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / evaluate the marketing strategies for a good or service",
+   "text": "evaluate the marketing strategies for a good or service"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / analyse a marketing plan for a business",
+   "text": "analyse a marketing plan for a business"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / explain how globalisation has affected marketing management",
+   "text": "explain how globalisation has affected marketing management"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / strategic role of marketing goods and services",
+   "text": "strategic role of marketing goods and services"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / interdependence with other key business functions",
+   "text": "interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / production, selling, marketing approaches",
+   "text": "production, selling, marketing approaches"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / types of markets – resource, industrial, intermediate, consumer, mass, niche",
+   "text": "types of markets – resource, industrial, intermediate, consumer, mass, niche"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / factors influencing customer choice – psychological, sociocultural, economic, government",
+   "text": "factors influencing customer choice – psychological, sociocultural, economic, government"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / consumer laws",
+   "text": "consumer laws"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / deceptive and misleading advertising",
+   "text": "deceptive and misleading advertising"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / price discrimination",
+   "text": "price discrimination"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / implied conditions",
+   "text": "implied conditions"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / warranties",
+   "text": "warranties"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / ethical – truth, accuracy and good taste in advertising, products that may damage health, engaging in fair competition, sugging",
+   "text": "ethical – truth, accuracy and good taste in advertising, products that may damage health, engaging in fair competition, sugging"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / situational analysis – SWOT, product life cycle",
+   "text": "situational analysis – SWOT, product life cycle"
+  },
+  {
+   "code": "HSC-M2-T1-D19",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / market research",
+   "text": "market research"
+  },
+  {
+   "code": "HSC-M2-T1-D20",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / establishing market objectives",
+   "text": "establishing market objectives"
+  },
+  {
+   "code": "HSC-M2-T1-D21",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / identifying target markets",
+   "text": "identifying target markets"
+  },
+  {
+   "code": "HSC-M2-T1-D22",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / developing marketing strategies",
+   "text": "developing marketing strategies"
+  },
+  {
+   "code": "HSC-M2-T1-D23",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / implementation, monitoring and controlling – developing a financial forecast; comparing actual and planned results, revising the marketing strategy",
+   "text": "implementation, monitoring and controlling – developing a financial forecast; comparing actual and planned results, revising the marketing strategy"
+  },
+  {
+   "code": "HSC-M2-T1-D24",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / market segmentation, product/service differentiation and positioning",
+   "text": "market segmentation, product/service differentiation and positioning"
+  },
+  {
+   "code": "HSC-M2-T1-D25",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / products – goods and/or services",
+   "text": "products – goods and/or services"
+  },
+  {
+   "code": "HSC-M2-T1-D26",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / branding",
+   "text": "branding"
+  },
+  {
+   "code": "HSC-M2-T1-D27",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / packaging",
+   "text": "packaging"
+  },
+  {
+   "code": "HSC-M2-T1-D28",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / price including pricing methods – cost, market, competition-based",
+   "text": "price including pricing methods – cost, market, competition-based"
+  },
+  {
+   "code": "HSC-M2-T1-D29",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / pricing strategies – skimming, penetration, loss leaders, price points",
+   "text": "pricing strategies – skimming, penetration, loss leaders, price points"
+  },
+  {
+   "code": "HSC-M2-T1-D30",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / price and quality interaction",
+   "text": "price and quality interaction"
+  },
+  {
+   "code": "HSC-M2-T1-D31",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / promotion",
+   "text": "promotion"
+  },
+  {
+   "code": "HSC-M2-T1-D32",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / elements of the promotion mix – advertising, personal selling and relationship marketing, sales promotions, publicity and public relations",
+   "text": "elements of the promotion mix – advertising, personal selling and relationship marketing, sales promotions, publicity and public relations"
+  },
+  {
+   "code": "HSC-M2-T1-D33",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / the communication process – opinion leaders, word of mouth",
+   "text": "the communication process – opinion leaders, word of mouth"
+  },
+  {
+   "code": "HSC-M2-T1-D34",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / place/distribution",
+   "text": "place/distribution"
+  },
+  {
+   "code": "HSC-M2-T1-D35",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / distribution channels",
+   "text": "distribution channels"
+  },
+  {
+   "code": "HSC-M2-T1-D36",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / channel choice – intensive, selective, exclusive",
+   "text": "channel choice – intensive, selective, exclusive"
+  },
+  {
+   "code": "HSC-M2-T1-D37",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / physical distribution issues – transport, warehousing, inventory",
+   "text": "physical distribution issues – transport, warehousing, inventory"
+  },
+  {
+   "code": "HSC-M2-T1-D38",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / people, processes and physical evidence",
+   "text": "people, processes and physical evidence"
+  },
+  {
+   "code": "HSC-M2-T1-D39",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / e-marketing",
+   "text": "e-marketing"
+  },
+  {
+   "code": "HSC-M2-T1-D40",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / global marketing",
+   "text": "global marketing"
+  },
+  {
+   "code": "HSC-M2-T1-D41",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / global branding",
+   "text": "global branding"
+  },
+  {
+   "code": "HSC-M2-T1-D42",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / standardisation",
+   "text": "standardisation"
+  },
+  {
+   "code": "HSC-M2-T1-D43",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / customisation",
+   "text": "customisation"
+  },
+  {
+   "code": "HSC-M2-T1-D44",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / global pricing",
+   "text": "global pricing"
+  },
+  {
+   "code": "HSC-M2-T1-D45",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / competitive positioning",
+   "text": "competitive positioning"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / explain potential conflicts between short-term and long-term financial objectives",
+   "text": "explain potential conflicts between short-term and long-term financial objectives"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / analyse the influence of government and the global market on financial management",
+   "text": "analyse the influence of government and the global market on financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / identify the limitations of financial reporting",
+   "text": "identify the limitations of financial reporting"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / compare the risks involved in domestic and global financial transactions",
+   "text": "compare the risks involved in domestic and global financial transactions"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / calculate key financial ratios",
+   "text": "calculate key financial ratios"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / assess business performance using comparative ratio analysis",
+   "text": "assess business performance using comparative ratio analysis"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / recommend strategies to improve financial performance",
+   "text": "recommend strategies to improve financial performance"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / examine ethical financial reporting practices",
+   "text": "examine ethical financial reporting practices"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / strategic role of financial management",
+   "text": "strategic role of financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / objectives of financial management",
+   "text": "objectives of financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / profitability, growth, efficiency, liquidity, solvency",
+   "text": "profitability, growth, efficiency, liquidity, solvency"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / short-term and long-term",
+   "text": "short-term and long-term"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / interdependence with other key business functions",
+   "text": "interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / internal sources of finance – retained profits",
+   "text": "internal sources of finance – retained profits"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / external sources of finance",
+   "text": "external sources of finance"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / debt – short-term borrowing (overdraft, commercial bills, factoring), long-term borrowing (mortgage, debentures, unsecured notes, leasing)",
+   "text": "debt – short-term borrowing (overdraft, commercial bills, factoring), long-term borrowing (mortgage, debentures, unsecured notes, leasing)"
+  },
+  {
+   "code": "HSC-M3-T1-D17",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / equity – ordinary shares (new issues, rights issues, placements, share purchase plans), private equity",
+   "text": "equity – ordinary shares (new issues, rights issues, placements, share purchase plans), private equity"
+  },
+  {
+   "code": "HSC-M3-T1-D18",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / financial institutions – banks, investment banks, finance companies, superannuation funds, life insurance companies, unit trusts and the Australian Securities Exchange",
+   "text": "financial institutions – banks, investment banks, finance companies, superannuation funds, life insurance companies, unit trusts and the Australian Securities Exchange"
+  },
+  {
+   "code": "HSC-M3-T1-D19",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / influence of government – Australian Securities and Investments Commission, company taxation",
+   "text": "influence of government – Australian Securities and Investments Commission, company taxation"
+  },
+  {
+   "code": "HSC-M3-T1-D20",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / global market influences – economic outlook, availability of funds, interest rates",
+   "text": "global market influences – economic outlook, availability of funds, interest rates"
+  },
+  {
+   "code": "HSC-M3-T1-D21",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / planning and implementing – financial needs, budgets, record systems, financial risks, financial controls",
+   "text": "planning and implementing – financial needs, budgets, record systems, financial risks, financial controls"
+  },
+  {
+   "code": "HSC-M3-T1-D22",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / debt and equity financing – advantages and disadvantages of each",
+   "text": "debt and equity financing – advantages and disadvantages of each"
+  },
+  {
+   "code": "HSC-M3-T1-D23",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / matching the terms and source of finance to business purpose",
+   "text": "matching the terms and source of finance to business purpose"
+  },
+  {
+   "code": "HSC-M3-T1-D24",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / monitoring and controlling – cash flow statement, income statement, balance sheet",
+   "text": "monitoring and controlling – cash flow statement, income statement, balance sheet"
+  },
+  {
+   "code": "HSC-M3-T1-D25",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / financial ratios",
+   "text": "financial ratios"
+  },
+  {
+   "code": "HSC-M3-T1-D26",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / liquidity – current ratio (current assets ÷ current liabilities)",
+   "text": "liquidity – current ratio (current assets ÷ current liabilities)"
+  },
+  {
+   "code": "HSC-M3-T1-D27",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / gearing – debt to equity ratio (total liabilities ÷ total equity)",
+   "text": "gearing – debt to equity ratio (total liabilities ÷ total equity)"
+  },
+  {
+   "code": "HSC-M3-T1-D28",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / profitability – gross profit ratio (gross profit ÷ sales); net profit ratio (net profit ÷ sales); return on equity ratio (net profit ÷ total equity)",
+   "text": "profitability – gross profit ratio (gross profit ÷ sales); net profit ratio (net profit ÷ sales); return on equity ratio (net profit ÷ total equity)"
+  },
+  {
+   "code": "HSC-M3-T1-D29",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / efficiency – expense ratio (total expenses ÷ sales), accounts receivable turnover ratio (sales ÷ accounts receivable)",
+   "text": "efficiency – expense ratio (total expenses ÷ sales), accounts receivable turnover ratio (sales ÷ accounts receivable)"
+  },
+  {
+   "code": "HSC-M3-T1-D30",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / comparative ratio analysis – over different time periods, against standards, with similar businesses",
+   "text": "comparative ratio analysis – over different time periods, against standards, with similar businesses"
+  },
+  {
+   "code": "HSC-M3-T1-D31",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / limitations of financial reports – normalised earnings, capitalising expenses, valuing assets, timing issues, debt repayments, notes to the financial statements",
+   "text": "limitations of financial reports – normalised earnings, capitalising expenses, valuing assets, timing issues, debt repayments, notes to the financial statements"
+  },
+  {
+   "code": "HSC-M3-T1-D32",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / ethical issues related to financial reports",
+   "text": "ethical issues related to financial reports"
+  },
+  {
+   "code": "HSC-M3-T1-D33",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / cash flow management",
+   "text": "cash flow management"
+  },
+  {
+   "code": "HSC-M3-T1-D34",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / cash flow statements",
+   "text": "cash flow statements"
+  },
+  {
+   "code": "HSC-M3-T1-D35",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / distribution of payments, discounts for early payment, factoring",
+   "text": "distribution of payments, discounts for early payment, factoring"
+  },
+  {
+   "code": "HSC-M3-T1-D36",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / working capital management",
+   "text": "working capital management"
+  },
+  {
+   "code": "HSC-M3-T1-D37",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / control of current assets – cash, receivables, inventories",
+   "text": "control of current assets – cash, receivables, inventories"
+  },
+  {
+   "code": "HSC-M3-T1-D38",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / control of current liabilities – payables, loans, overdrafts",
+   "text": "control of current liabilities – payables, loans, overdrafts"
+  },
+  {
+   "code": "HSC-M3-T1-D39",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / strategies – leasing, sale and lease back",
+   "text": "strategies – leasing, sale and lease back"
+  },
+  {
+   "code": "HSC-M3-T1-D40",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / profitability management",
+   "text": "profitability management"
+  },
+  {
+   "code": "HSC-M3-T1-D41",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / cost controls – fixed and variable, cost centres, expense minimisation",
+   "text": "cost controls – fixed and variable, cost centres, expense minimisation"
+  },
+  {
+   "code": "HSC-M3-T1-D42",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / revenue controls – marketing objectives",
+   "text": "revenue controls – marketing objectives"
+  },
+  {
+   "code": "HSC-M3-T1-D43",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / global financial management",
+   "text": "global financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D44",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / exchange rates",
+   "text": "exchange rates"
+  },
+  {
+   "code": "HSC-M3-T1-D45",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / interest rates",
+   "text": "interest rates"
+  },
+  {
+   "code": "HSC-M3-T1-D46",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / methods of international payment – payment in advance, letter of credit, clean payment, bill of exchange",
+   "text": "methods of international payment – payment in advance, letter of credit, clean payment, bill of exchange"
+  },
+  {
+   "code": "HSC-M3-T1-D47",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / hedging",
+   "text": "hedging"
+  },
+  {
+   "code": "HSC-M3-T1-D48",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / derivatives",
+   "text": "derivatives"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Human resources / Human resource management and business performance / discuss the influence of government on the process of determining employment contracts",
+   "text": "discuss the influence of government on the process of determining employment contracts"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Human resources / Human resource management and business performance / explain how businesses exhibit corporate social responsibility in the management of human resources",
+   "text": "explain how businesses exhibit corporate social responsibility in the management of human resources"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Human resources / Human resource management and business performance / analyse the causes of two workplace disputes and the strategies used to resolve them",
+   "text": "analyse the causes of two workplace disputes and the strategies used to resolve them"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Human resources / Human resource management and business performance / examine the advantages of a diverse, culturally competent workforce for a global business",
+   "text": "examine the advantages of a diverse, culturally competent workforce for a global business"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Human resources / Human resource management and business performance / explain the interdependence between human resources and other key business functions",
+   "text": "explain the interdependence between human resources and other key business functions"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Human resources / Human resource management and business performance / compare the process of negotiating enterprise/collective agreements with the negotiation of individual contracts",
+   "text": "compare the process of negotiating enterprise/collective agreements with the negotiation of individual contracts"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Human resources / Human resource management and business performance / discuss the advantages and disadvantages of outsourcing in the global market",
+   "text": "discuss the advantages and disadvantages of outsourcing in the global market"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Human resources / Human resource management and business performance / evaluate the effectiveness of human resource management for one business and recommend appropriate alternative strategies",
+   "text": "evaluate the effectiveness of human resource management for one business and recommend appropriate alternative strategies"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Human resources / Human resource management and business performance / strategic role of human resources",
+   "text": "strategic role of human resources"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Human resources / Human resource management and business performance / interdependence with other key business functions",
+   "text": "interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / Human resources / Human resource management and business performance / outsourcing",
+   "text": "outsourcing"
+  },
+  {
+   "code": "HSC-M4-T1-D12",
+   "path": "Year 12 / Human resources / Human resource management and business performance / human resource functions",
+   "text": "human resource functions"
+  },
+  {
+   "code": "HSC-M4-T1-D13",
+   "path": "Year 12 / Human resources / Human resource management and business performance / using contractors – domestic, global",
+   "text": "using contractors – domestic, global"
+  },
+  {
+   "code": "HSC-M4-T1-D14",
+   "path": "Year 12 / Human resources / Human resource management and business performance / stakeholders – employers, employees, employer associations, unions, government organisations, society",
+   "text": "stakeholders – employers, employees, employer associations, unions, government organisations, society"
+  },
+  {
+   "code": "HSC-M4-T1-D15",
+   "path": "Year 12 / Human resources / Human resource management and business performance / legal – the current legal framework",
+   "text": "legal – the current legal framework"
+  },
+  {
+   "code": "HSC-M4-T1-D16",
+   "path": "Year 12 / Human resources / Human resource management and business performance / the employment contract – common law (rights and obligations of employers and employees), minimum employment standards, minimum wage rates, awards, enterprise agreements, other employment contracts",
+   "text": "the employment contract – common law (rights and obligations of employers and employees), minimum employment standards, minimum wage rates, awards, enterprise agreements, other employment contracts"
+  },
+  {
+   "code": "HSC-M4-T1-D17",
+   "path": "Year 12 / Human resources / Human resource management and business performance / work health and safety and workers compensation",
+   "text": "work health and safety and workers compensation"
+  },
+  {
+   "code": "HSC-M4-T1-D18",
+   "path": "Year 12 / Human resources / Human resource management and business performance / antidiscrimination and equal employment opportunity",
+   "text": "antidiscrimination and equal employment opportunity"
+  },
+  {
+   "code": "HSC-M4-T1-D19",
+   "path": "Year 12 / Human resources / Human resource management and business performance / economic",
+   "text": "economic"
+  },
+  {
+   "code": "HSC-M4-T1-D20",
+   "path": "Year 12 / Human resources / Human resource management and business performance / technological",
+   "text": "technological"
+  },
+  {
+   "code": "HSC-M4-T1-D21",
+   "path": "Year 12 / Human resources / Human resource management and business performance / social – changing work patterns, living standards",
+   "text": "social – changing work patterns, living standards"
+  },
+  {
+   "code": "HSC-M4-T1-D22",
+   "path": "Year 12 / Human resources / Human resource management and business performance / ethics and corporate social responsibility",
+   "text": "ethics and corporate social responsibility"
+  },
+  {
+   "code": "HSC-M4-T1-D23",
+   "path": "Year 12 / Human resources / Human resource management and business performance / acquisition",
+   "text": "acquisition"
+  },
+  {
+   "code": "HSC-M4-T1-D24",
+   "path": "Year 12 / Human resources / Human resource management and business performance / development",
+   "text": "development"
+  },
+  {
+   "code": "HSC-M4-T1-D25",
+   "path": "Year 12 / Human resources / Human resource management and business performance / maintenance",
+   "text": "maintenance"
+  },
+  {
+   "code": "HSC-M4-T1-D26",
+   "path": "Year 12 / Human resources / Human resource management and business performance / separation",
+   "text": "separation"
+  },
+  {
+   "code": "HSC-M4-T1-D27",
+   "path": "Year 12 / Human resources / Human resource management and business performance / leadership style",
+   "text": "leadership style"
+  },
+  {
+   "code": "HSC-M4-T1-D28",
+   "path": "Year 12 / Human resources / Human resource management and business performance / job design – general or specific tasks",
+   "text": "job design – general or specific tasks"
+  },
+  {
+   "code": "HSC-M4-T1-D29",
+   "path": "Year 12 / Human resources / Human resource management and business performance / recruitment – internal or external, general or specific skills",
+   "text": "recruitment – internal or external, general or specific skills"
+  },
+  {
+   "code": "HSC-M4-T1-D30",
+   "path": "Year 12 / Human resources / Human resource management and business performance / training and development – current or future skills",
+   "text": "training and development – current or future skills"
+  },
+  {
+   "code": "HSC-M4-T1-D31",
+   "path": "Year 12 / Human resources / Human resource management and business performance / performance management – developmental or administrative",
+   "text": "performance management – developmental or administrative"
+  },
+  {
+   "code": "HSC-M4-T1-D32",
+   "path": "Year 12 / Human resources / Human resource management and business performance / rewards – monetary and non-monetary, individual or group, performance pay",
+   "text": "rewards – monetary and non-monetary, individual or group, performance pay"
+  },
+  {
+   "code": "HSC-M4-T1-D33",
+   "path": "Year 12 / Human resources / Human resource management and business performance / global – costs, skills, supply",
+   "text": "global – costs, skills, supply"
+  },
+  {
+   "code": "HSC-M4-T1-D34",
+   "path": "Year 12 / Human resources / Human resource management and business performance / workplace disputes",
+   "text": "workplace disputes"
+  },
+  {
+   "code": "HSC-M4-T1-D35",
+   "path": "Year 12 / Human resources / Human resource management and business performance / resolution – negotiation, mediation, grievance procedures, involvement of courts and tribunals",
+   "text": "resolution – negotiation, mediation, grievance procedures, involvement of courts and tribunals"
+  },
+  {
+   "code": "HSC-M4-T1-D36",
+   "path": "Year 12 / Human resources / Human resource management and business performance / indicators",
+   "text": "indicators"
+  },
+  {
+   "code": "HSC-M4-T1-D37",
+   "path": "Year 12 / Human resources / Human resource management and business performance / corporate culture",
+   "text": "corporate culture"
+  },
+  {
+   "code": "HSC-M4-T1-D38",
+   "path": "Year 12 / Human resources / Human resource management and business performance / benchmarking key variables",
+   "text": "benchmarking key variables"
+  },
+  {
+   "code": "HSC-M4-T1-D39",
+   "path": "Year 12 / Human resources / Human resource management and business performance / changes in staff turnover",
+   "text": "changes in staff turnover"
+  },
+  {
+   "code": "HSC-M4-T1-D40",
+   "path": "Year 12 / Human resources / Human resource management and business performance / absenteeism",
+   "text": "absenteeism"
+  },
+  {
+   "code": "HSC-M4-T1-D41",
+   "path": "Year 12 / Human resources / Human resource management and business performance / accidents",
+   "text": "accidents"
+  },
+  {
+   "code": "HSC-M4-T1-D42",
+   "path": "Year 12 / Human resources / Human resource management and business performance / levels of disputation",
+   "text": "levels of disputation"
+  },
+  {
+   "code": "HSC-M4-T1-D43",
+   "path": "Year 12 / Human resources / Human resource management and business performance / worker satisfaction",
+   "text": "worker satisfaction"
+  }
+ ],
+ "questions": [
+  {
+   "id": "bs2020_q1",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which row of the table shows benefits of both staff training and staff development?\nStaff training: increase staff skills; Staff development: increased staff turnover\nStaff training: increase staff skills; Staff development: retain experienced staff\nStaff training: decrease in workplace accidents; Staff development: increased staff turnover\nStaff training: decrease in workplace redundancies; Staff development: retain experienced staff"
+  },
+  {
+   "id": "bs2020_q2",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Betty believes she is eligible to ask her employer for flexible working arrangements. Which of the following is a provision of the Fair Work Act 2009 (Cth) that gives Betty the right to make this request?\nA modern award\nA common law contract\nAn enterprise agreement\nMinimum employment standards"
+  },
+  {
+   "id": "bs2020_q3",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "A firm has been hiring its own staff but due to growth no longer has time to satisfactorily manage this process. What could the firm's human resource manager use to resolve this issue?\nAcquisition\nOutsourcing\nRecruitment\nSelection"
+  },
+  {
+   "id": "bs2020_q4",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Australian businesses are required by law to offer a refund if the product or service\ndoes not match the description.\nis no longer required by the customer.\nis damaged by the customer after purchase.\nis available at a competitor's business for a cheaper price."
+  },
+  {
+   "id": "bs2020_q5",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A business collects its own primary data through market research prior to developing a new product. Which of the following could this business have used to provide primary data?\nCustomer survey\nPublished journal\nAustralian Bureau of Statistics catalogue\nAustralian Bureau of Statistics census data"
+  },
+  {
+   "id": "bs2020_q6",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "The main advantage of economies of scale is that a business can achieve\neconomic objectives.\nindustry benchmarks.\nlower per unit input costs.\nsimplified supply chain management."
+  },
+  {
+   "id": "bs2020_q7",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "What is the most likely reason for an Australian clothing business choosing to manufacture locally?\nTo achieve cost leadership\nTo maintain quality control\nTo focus on other key business functions\nTo take advantage of lower overseas wages"
+  },
+  {
+   "id": "bs2020_q8",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Two boxes of oats are shown. Which strategy is being used by Product B that is not being used by Product A?\nBranding\nLabelling\nPackaging\nTrademarking"
+  },
+  {
+   "id": "bs2020_q9",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "At which stage of the economic cycle is it most likely for a business to begin to reduce staff working hours?\nBoom\nDownswing\nRecession\nUpswing"
+  },
+  {
+   "id": "bs2020_q10",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A company has reduced the price of their current razor as a new model will be released soon. Which stage of the product life cycle for the current razor is indicated by this decision?\nIntroduction\nGrowth\nMaturity\nDecline"
+  },
+  {
+   "id": "bs2020_q11",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A manager is concerned about ongoing theft and the cost of storing raw materials. Which inventory management strategy would best address the manager's concerns?\nJust-in-time\nWarehousing\nLast-in-first-out\nFirst-in-first-out"
+  },
+  {
+   "id": "bs2020_q12",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "A NSW employer develops a return to work plan in consultation with an insurer and an injured employee. Which legislation requires the employer to undertake this action?\nFair Work Act 2009 (Cth)\nWorkers Compensation Act 1987 (NSW)\nWork Health and Safety Act 2011 (NSW)\nAustralian Human Rights Commission Act 1986 (Cth)"
+  },
+  {
+   "id": "bs2020_q13",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "In order to achieve best practice, a mobile phone company examines global trends in phone technology before designing and producing their phones. What operations strategy is this business using?\nStandardisation\nGlobal sourcing\nScanning and learning\nInventory management"
+  },
+  {
+   "id": "bs2020_q14",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A hairdresser includes proceeds of the sale of salon equipment in the business's income statement. Which limitation of financial reporting is evident?\nTiming issues\nValuing assets\nNormalised earnings\nCapitalising expenses"
+  },
+  {
+   "id": "bs2020_q15",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A sandwich shop bakes a variety of breads throughout the day. Customers select their choice of bread and filling(s) and sandwiches are then made to order. Which pair of performance objectives would have influenced the development of this approach?\nCost and efficiency\nEfficiency and quality\nCost and customisation\nQuality and customisation"
+  },
+  {
+   "id": "bs2020_q16",
+   "year": 2020,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A bathroom products business cannot sustain the production of their current range. A consultant has advised the business to reduce the product range. By comparing actual and planned results, which product should be deleted? Coconut Handwash 7500/7500 then 10000/9000; Lavender Bodywash 8000/8500 then 8500/9500; Blueberry Handcream 7000/6000 then 7500/8500; Peppermint Bath Salts 8000/7000 then (blank)/10000?\nCoconut Handwash\nLavender Bodywash\nBlueberry Handcream\nPeppermint Bath Salts"
+  },
+  {
+   "id": "bs2020_q17",
+   "year": 2020,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Use the following financial information. 2019: sales 250000, COGS 145000, expenses 35000; 2020: sales 275000, COGS 145000, expenses 35000. Q17: Which shows gross profit and net profit ratio for 2020?\nGross profit $105 000; Net profit ratio 28.0%\nGross profit $105 000; Net profit ratio 42.0%\nGross profit $130 000; Net profit ratio 34.5%\nGross profit $130 000; Net profit ratio 47.0%"
+  },
+  {
+   "id": "bs2020_q18",
+   "year": 2020,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Q18: Which describes the change in gross profit ratio and expense ratio from 2019 to 2020?\nGross profit ratio Improved; Expense ratio Improved\nGross profit ratio Improved; Expense ratio Worsened\nGross profit ratio Worsened; Expense ratio Improved\nGross profit ratio Worsened; Expense ratio Worsened"
+  },
+  {
+   "id": "bs2020_q19",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Extract from balance sheet June 2020: current assets 1700, non-current assets 8650, current liabilities 1100, non-current liabilities 6500. Financial data 2019 debt to equity 2:1 or 200%, current ratio 1.25:1 or 125%. Industry averages 2019-2020 debt to equity 1:1 or 100%, current ratio 2:1 or 200%. Q19 liquidity position in 2020 is\nbetter than industry average and has improved since 2019.\nbetter than industry average and has worsened since 2019.\nworse than industry average and has improved since 2019.\nworse than industry average and has worsened since 2019."
+  },
+  {
+   "id": "bs2020_q20",
+   "year": 2020,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Q20 gearing for this business in 2020 indicates\nbetter than industry average and has improved since 2019.\nbetter than industry average and has worsened since 2019.\nworse than industry average and has improved since 2019.\nworse than industry average and has worsened since 2019."
+  },
+  {
+   "id": "bs2020_q21",
+   "year": 2020,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Outline the role of ONE external stakeholder who represents the interests of employees in workplace disputes.\nDistinguish between voluntary and involuntary separation.\nExplain how technological influences and globalisation can lead to a company reducing staff numbers. Support your answer with relevant examples."
+  },
+  {
+   "id": "bs2020_q22",
+   "year": 2020,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "A popular Australian guitar manufacturer is about to enter the US market using a standardised marketing strategy.\nClarify the purpose of a SWOT analysis for this business.\nRecommend a pricing method this business could adopt for the US market.\nJustify this business's decision to adopt a standardised marketing strategy."
+  },
+  {
+   "id": "bs2020_q23",
+   "year": 2020,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "A denim jeans clothing store is concerned about declining sales. Identified causes: outdated store presentation; increased foreign competition; reluctance to adopt modern in-store payment methods.\nHow could the strategic role of operations management assist this business?\nAnalyse operations strategies that could be used to address TWO operations influences affecting this business."
+  },
+  {
+   "id": "bs2020_q24",
+   "year": 2020,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "Financial Information for robotics company: Sales 225000; COGS 105000; selling expenses 8500; administration expenses 6000; financial expenses 4000; accounts receivable 30000. Credit policy 30 days. Industry expense ratio 10%.\nCalculate the accounts receivable turnover ratio (sales / accounts receivable) for this business.\nInterpret this business's expense ratio (total expenses / sales).\nRecommend ONE financial strategy this business could implement to improve efficiency in the collection of accounts receivable.\nExplain TWO ways in which comparative ratio analysis can be used by this business to assess its financial position."
+  },
+  {
+   "id": "bs2020_q25",
+   "year": 2020,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "Icecreams R Us exclusively delivers ice-cream to homes in Newcastle. To increase market share, they are negotiating with Eucafuels Ltd to sell their brand throughout NSW. Eucafuels concerns: timely delivery; creating awareness; increased volume while maintaining quality. Report to directors: describe TWO physical distribution issues; justify ONE promotional strategy; recommend possible changes to operations processes to address volume and quality concerns."
+  },
+  {
+   "id": "bs2020_q26",
+   "year": 2020,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "Evaluate the effectiveness of financial management strategies used to achieve profit and growth objectives."
+  },
+  {
+   "id": "bs2020_q27",
+   "year": 2020,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Evaluate human resource strategies used to achieve THREE indicators of effective human resource management."
+  },
+  {
+   "id": "bs2021_q1",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "The role of a cost centre within a business is to monitor and control\nassets.\nexpenses.\nliabilities.\nreceipts."
+  },
+  {
+   "id": "bs2021_q2",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which pair of business functions is conducted by human resource management?\nPricing and scheduling\nScheduling and induction\nInduction and recruitment\nRecruitment and receivables"
+  },
+  {
+   "id": "bs2021_q3",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Which row of the table shows both an advantage and a disadvantage of a business investing in leading edge technology?\nHigher quality output / High initial investment\nProven effectiveness / Increased waste\nWidely accepted and used / High initial investment\nIncreased speed / Increased waste"
+  },
+  {
+   "id": "bs2021_q4",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which statement about common law contracts is correct?\nCommon law contracts are determined by the Fair Work Commission.\nCommon law contracts are required to pass the better off overall test.\nCommon law contracts are negotiated by unions on behalf of employees.\nCommon law contracts are between individual employees and their employer."
+  },
+  {
+   "id": "bs2021_q5",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A consumer purchases expensive designer clothing believing higher quality and longer lasting product. Which factor is influencing this consumer's choice?\nEconomic\nGovernment\nPsychological\nSociocultural"
+  },
+  {
+   "id": "bs2021_q6",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which row of the table shows how a recession would affect human resource management processes and strategies in the tourism industry?\nIncrease in separation / Decrease in monetary rewards\nIncrease in acquisition / Increase in training expenditure\nDecrease in separation / Decrease in monetary rewards\nDecrease in acquisition / Increase in training expenditure"
+  },
+  {
+   "id": "bs2021_q7",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A manufacturer of fishing equipment sponsors an annual fishing competition; a local TV news station reports on it, leading to increased sales. Which combination of elements of the promotion mix benefited the manufacturer?\nPublicity and advertising\nAdvertising and sales promotion\nRelationship marketing and publicity\nSales promotion and relationship marketing"
+  },
+  {
+   "id": "bs2021_q8",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A farmer sells vegetables to a manufacturer of tinned vegetables; manufacturer sells tinned vegetables to supermarkets. Which row shows markets targeted by farmer and manufacturer?\nResource / Intermediate\nIndustrial / Intermediate\nIndustrial / Consumer\nResource / Consumer"
+  },
+  {
+   "id": "bs2021_q9",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A business spends one million dollars on an advertising campaign. Which pair of analyses could be used to evaluate effectiveness?\nMarket share and sales\nSWOT and market share\nSales and product life cycle\nProduct life cycle and SWOT"
+  },
+  {
+   "id": "bs2021_q10",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A manufacturing business is a cost leader in their industry. Which combination of features of the transformation process are they most likely to demonstrate?\nLow volume, low variety\nHigh volume, low variety\nLow volume, high variety\nHigh volume, high variety"
+  },
+  {
+   "id": "bs2021_q11",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A mobile phone manufacturer decides to globally source inputs previously produced themselves. Which shows possible negative effects?\nSimplified logistics and delays in the supply chain\nDelays in the supply chain and increased transport costs\nIncreased transport costs and reduced access to specialist suppliers\nReduced access to specialist suppliers and a decrease in logistics costs"
+  },
+  {
+   "id": "bs2021_q12",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A manager at a fast-food business wants to change operations process in response to corporate social responsibility. Which action achieves this?\nProviding cash donations to a local hospital\nIncreasing the visibility of the cooking process\nOffering a wider variety of healthy options on their menu\nEnsuring that injured workers receive access to compensation payments"
+  },
+  {
+   "id": "bs2021_q13",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Consider financial information: Year1 Revenue 100M Gross Profit 80M Net Profit 30M; Year2 Revenue 80M Gross Profit 60M Net Profit 30M. Which must have occurred?\nExpenses increased\nExpenses decreased\nCost of goods sold increased\nCost of goods sold decreased"
+  },
+  {
+   "id": "bs2021_q14",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A car manufacturer's marketing manager suggests increasing warranty period from 3 to 5 years to increase market share. Operations manager would agree if\ngearing has reduced.\nit provided an incentive to increase production speed.\ncurrent quality management strategies could support it.\nit provided sales staff the opportunity to increase sales commissions."
+  },
+  {
+   "id": "bs2021_q15",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "A food delivery business made a recent HR strategy change with results: absenteeism 30% decrease; deliveries per driver 25% increase; accidents 100% increase; worker satisfaction 15% decrease. Which HR strategy likely caused these?\nAn increase in work health and safety training\nThe reduced use of staff performance reviews\nA move from an autocratic to a democratic leadership style\nMove from a fixed salary to pay based on individual deliveries"
+  },
+  {
+   "id": "bs2021_q16",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Why might a business move from a production approach to a selling approach?\nIn response to increased competition\nIn order to increase promotional expenditure\nIn order to better understand customer needs\nIn response to an inability to satisfy current demand"
+  },
+  {
+   "id": "bs2021_q17",
+   "year": 2021,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Joe was made redundant but believes dismissed unfairly. Evidence supporting employer's decision?\nVideo of Joe stealing goods from the storeroom\nConsistent warnings over ongoing poor performance\nFinancial records showing ongoing losses due to poor sales\nDocuments showing that a new employee is doing Joe's job"
+  },
+  {
+   "id": "bs2021_q18",
+   "year": 2021,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "When a business uses factoring, they improve their\ncash flow by increasing their revenue.\ncash flow but reduce their profitability.\nworking capital by reducing their costs.\nworking capital but increase their liabilities."
+  },
+  {
+   "id": "bs2021_q19",
+   "year": 2021,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "An Australian farmer contracted to sell oranges to American juice manufacturer at set price, payment in 60 days in AUD. Effective method of hedging?\nThe Australian farmer using a derivative to protect themselves from a falling Australian dollar.\nThe Australian farmer using a derivative to protect themselves from a falling American dollar.\nThe American manufacturer using a derivative to protect themselves from a falling Australian dollar.\nThe American manufacturer using a derivative to protect themselves from a falling American dollar."
+  },
+  {
+   "id": "bs2021_q20",
+   "year": 2021,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Company A intends to buy Company B. Company A might pay too much if Company B's financial manager decides to\nnormalise a large one-off asset sale.\ncapitalise their research and development expenses.\nfully disclose the nature of the receivables owed to the company.\nrecord their buildings at historical cost although they increased in value."
+  },
+  {
+   "id": "bs2021_q21",
+   "year": 2021,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "A building company contracted to build a new home; contract completed within six months and budget.\nOutline how this customer can be considered an input in the construction of the new home.\nHow could a Gantt chart help the building company meet the terms of the contract?\nThe operations manager will need to outsource certain elements. Explain TWO quality management strategies to ensure quality of outsourced work."
+  },
+  {
+   "id": "bs2021_q22",
+   "year": 2021,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "A luxury Australian handbag business expanding; borrow 30 million USD to buy retail properties across Australia.\nIdentify where the business could record the loan and the properties on its balance sheet.\nExplain a financial risk associated with borrowing funds from the USA.\nAccount for the changes in gross profit 65% to 70%, net profit 21% to 18%, debt to equity 0.85:1 to 1.5:1."
+  },
+  {
+   "id": "bs2021_q23",
+   "year": 2021,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Outline how corporate culture can affect staff turnover.\nWhy might a business use a contractor to recruit staff?\nIn recent times governments have imposed restrictions on businesses such as lockdowns, social distancing and the movement of people. As a result, businesses have changed the way their employees work and communicate with each other.\nDiscuss the possible implications of these influences on human resource management."
+  },
+  {
+   "id": "bs2021_q24",
+   "year": 2021,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "based on an advertisement for a fridge show in the exam but not reproduced here.\nExplain the benefits of customisation as a global marketing strategy.\nHow does the advertisement use sociocultural factors to influence customer choice?\nHow might aspects of this advertisement breach Australian consumer laws?"
+  },
+  {
+   "id": "bs2021_q25",
+   "year": 2021,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "Ozzi Baby Food Pty Ltd trusted reputation; significant increase in demand; considering purchase of larger automated factory; some job losses. Need external finance via mortgage or becoming public company on ASX. Report: outline TWO operations influences; discuss retraining/redundancy to overcome resistance; compare mortgage vs new issue of shares."
+  },
+  {
+   "id": "bs2021_q26",
+   "year": 2021,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "Analyse how a situational analysis (SWOT, product life cycle) may affect marketing strategies."
+  },
+  {
+   "id": "bs2021_q27",
+   "year": 2021,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Analyse how human resource management strategies can improve employee acquisition and maintenance."
+  },
+  {
+   "id": "bs2022_q1",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "What is an economic factor that could influence customer choice?\nPerception\nRecession\nRegulation\nSubculture"
+  },
+  {
+   "id": "bs2022_q2",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which of the following is a type of voluntary separation in the workplace?\nDismissal\nLayoff\nResignation\nRetrenchment"
+  },
+  {
+   "id": "bs2022_q3",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Which of the following is a pair of primary data collection methods?\nQuestionnaires and industry reports\nIndustry reports and internet sources\nPersonal interviews and questionnaires\nInternet sources and personal interviews"
+  },
+  {
+   "id": "bs2022_q4",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A watch manufacturer uses price-skimming strategies and provides a lifetime warranty. What would most likely have influenced these strategies?\nLegal compliance\nQuality expectations\nEthical responsibility\nCost-based competition"
+  },
+  {
+   "id": "bs2022_q5",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "The characteristics of lifestyle, motivation and personality are most often used in which market segmentation strategy?\nBehavioural\nDemographic\nGeographic\nPsychographic"
+  },
+  {
+   "id": "bs2022_q6",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "All staff in a business participate equally in a profit-sharing scheme. Which row correctly identifies this reward strategy?\nMonetary / Group\nMonetary / Individual\nNon-monetary / Group\nNon-monetary / Individual"
+  },
+  {
+   "id": "bs2022_q7",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A large clothing manufacturer in NSW wants to reduce input costs. Which strategy would achieve this?\nIncreasing product variety\nIncreasing employee training\nImplementing global sourcing\nImplementing sustainable packaging"
+  },
+  {
+   "id": "bs2022_q8",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A business implemented training in new machinery for employees. Main reason for this training?\nTo prevent accidents\nTo reduce absenteeism\nTo reduce staff turnover\nTo improve corporate culture"
+  },
+  {
+   "id": "bs2022_q9",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "An employee bullied at work lodged a complaint. What initial action should employer take?\nArbitration\nConciliation\nMediation\nNegotiation"
+  },
+  {
+   "id": "bs2022_q10",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A printing business uses chemicals. Which factor has legal regulation affecting operations management?\nSuperannuation\nCode of conduct\nUnion membership\nEnvironmental protection"
+  },
+  {
+   "id": "bs2022_q11",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which is correct for the growth phase of the product life cycle (production/price)?\nDecreased / Maintained\nMaintained / Increased\nIncreased / Increased\nIncreased / Maintained"
+  },
+  {
+   "id": "bs2022_q12",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which is an example of service differentiation?\nA car manufacturer supplies cars with premium tinted windows.\nA chemist issues medication in exchange for a script.\nA shoe store assistant spends varying amounts of time with customers.\nA salesperson provides a receipt to a customer who purchased a bed."
+  },
+  {
+   "id": "bs2022_q13",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Which combination of global market influences supports global expansion?\nA depressed economic outlook and low interest rates\nA depressed economic outlook and high interest rates\nAn improved economic outlook and low interest rates\nAn improved economic outlook and high interest rates"
+  },
+  {
+   "id": "bs2022_q14",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A private investment company accepts client money; owner illegally uses it for personal use. Which government body takes legal action?\nAustralian Taxation Office\nAustralian Securities Exchange\nAustralian Prudential Regulation Authority\nAustralian Securities and Investments Commission"
+  },
+  {
+   "id": "bs2022_q15",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Heidi has a small farm selling excess eggs. Which distribution method best supports her?\nProducer to consumer\nProducer to retailer\nProducer to wholesaler\n Retailer to consumer"
+  },
+  {
+   "id": "bs2022_q16",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which could be a disadvantage of price penetration strategy?\nA large number of products are sold quickly.\nThe business has problems trying to raise prices later.\nNew competitors find more difficult to enter the market.\nCustomers discouraged from purchasing immediately."
+  },
+  {
+   "id": "bs2022_q17",
+   "year": 2022,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A florist purchases flowers to create arrangements. What type of market does florist operate in?\nConsumer\nIndustrial\nMass\nResource"
+  },
+  {
+   "id": "bs2022_q18",
+   "year": 2022,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A business owns a $2m building with $500k mortgage; sells building and leases back over five years. Likely purpose?\nReduce liquidity\nReduce cash flow\nImprove profitability\nImprove working capital"
+  },
+  {
+   "id": "bs2022_q19",
+   "year": 2022,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A large cake business offers a contract to another business for decorations. Which business functions provide input?\nFinance, operations and marketing\nFinance, marketing and human resources\nOperations, human resources and finance\nOperations, marketing and human resources"
+  },
+  {
+   "id": "bs2022_q20",
+   "year": 2022,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A business provides financial information; which reflects changes to profitability in Year 2?\nReturn on owner's equity improved and gross profit ratio worse than industry average\nReturn on owner's equity worsened and gross profit ratio worse than industry average\nReturn on owner's equity improved and gross profit ratio better than industry average\nReturn on owner's equity worsened and gross profit ratio better than industry average"
+  },
+  {
+   "id": "bs2022_q21",
+   "year": 2022,
+   "number": "21",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "Michael wants to open a new burger restaurant.\nOutline a performance objective relevant to this business.\nRecommend an appropriate inventory management strategy for this business.\nCompare each process layout option 1 and option 2 in terms of efficiency and profitability."
+  },
+  {
+   "id": "bs2022_q22",
+   "year": 2022,
+   "number": "22",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Outline how an increase in the minimum wage rate could affect business.\nOutline how the minimum employment standards protect employees in Australia. Use examples in your answer.\nHow are performance appraisals of employees beneficial to employers?\nExplain the importance of carrying out an induction program for new employees."
+  },
+  {
+   "id": "bs2022_q23",
+   "year": 2022,
+   "number": "23",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "gifts and homewares business financial info: revenue 1.5m, gross profit 1.1m, expenses 0.6m, total liabilities 2m, net profit 0.5m, owner equity 1.8m. Considering expansion borrowing 3m at 4%.\nCalculate efficiency (total expenses / total sales).\nExplain how the expense ratio can help determine efficiency.\nWhy is level of gearing important to lender?\nUsing financial info, explain why business should use debt finance to acquire two new stores."
+  },
+  {
+   "id": "bs2022_q24",
+   "year": 2022,
+   "number": "24",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "introducing new products into market.\nOutline ONE promotion strategy to launch new product range.\nHow will business know marketing plan successful for new product range?\nWhy adopt marketing approach instead of selling approach?"
+  },
+  {
+   "id": "bs2022_q25",
+   "year": 2022,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "Bee Sticky Pty Ltd Australian premium organic honey expanding globally; SWOT analysis provided; leases warehouses Malaysia and USA. Report: describe branding and product strategies; recommend channel choice; analyse global financial management strategies."
+  },
+  {
+   "id": "bs2022_q26",
+   "year": 2022,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Explain importance to business of human resources strategies that reduce workplace disputes and increase worker satisfaction."
+  },
+  {
+   "id": "bs2022_q27",
+   "year": 2022,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "Explain importance to business of operations processes that can maintain a competitive advantage."
+  },
+  {
+   "id": "bs2023_q1",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Businesses offer employees rewards in order to\nPrevent industrial action.\nRecognise value of their effort to business.\nFulfil federal government legislation requirements.\nProvide employees income to meet costs of living."
+  },
+  {
+   "id": "bs2023_q2",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "An Australian florist designs wedding floral displays to suit couples' colour preferences. Main performance objective targeted?\nCustomisation\nFlexibility\nQuality\nSpeed"
+  },
+  {
+   "id": "bs2023_q3",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which best illustrates relationship marketing?\nCreating long-term customer loyalty\nDistributing goods directly to customers\nUsing promotions to increase customer sales\nBasing marketing mix on customer feedback"
+  },
+  {
+   "id": "bs2023_q4",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "An employee receives electrical burn, hospital treatment, unable to work three months. What support entitled to?\nMediation\nPayment in advance\nWorkers compensation\nTraining and development"
+  },
+  {
+   "id": "bs2023_q5",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A business wants quickly achieve large market share. Which marketing strategy most likely?\nBranding\nSkimming\nPenetration\nPrice points"
+  },
+  {
+   "id": "bs2023_q6",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A mattress manufacturer reduced working hours due to decreased demand. Which HR influence likely led?\nEconomic\nLegal\nOperations\nSocial"
+  },
+  {
+   "id": "bs2023_q7",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which shows correct order of steps in a marketing plan?\nMarket research, establishing market objectives, identifying target markets, situational analysis\nEstablishing market objectives, identifying target markets, situational analysis, market research\nIdentifying target markets, situational analysis, market research, establishing market objectives\nSituational analysis, market research, establishing market objectives, identifying target markets"
+  },
+  {
+   "id": "bs2023_q8",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "An export company based in Sydney sells Australian-made art to Asian market. Which payment form has lowest risk for exporter?\nClean payment\nLetter of credit\nBill of exchange\nPayment in advance"
+  },
+  {
+   "id": "bs2023_q9",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Training manufacturing staff is interdependence between which business functions?\nFinance and marketing\nMarketing and operations\nFinance and human resources\nOperations and human resources"
+  },
+  {
+   "id": "bs2023_q10",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "An energy drink business uses a celebrity to promote products online. Which marketing strategy is used?\nLoss leaders\nOpinion leaders\nPersonal selling\nSales promotion"
+  },
+  {
+   "id": "bs2023_q11",
+   "year": 2023,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which involved in making workplace agreements and resolving disputes?\nFair Work Commission\nAustralian Human Rights Commission\nASIC\nACCC"
+  },
+  {
+   "id": "bs2023_q12",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A theme park wants new point-of-sale system costing $185000. Which long-term finance most appropriate?\nDerivatives\nHedging\nLeasing\nOverdraft"
+  },
+  {
+   "id": "bs2023_q13",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A customer returns faulty 5G phone. Under consumer law why must business refund?\nIt is ethical to replace defective goods.\nIt is within implied conditions of contract.\nImportant to meet CSR.\nCan be considered deceptive and misleading advertising."
+  },
+  {
+   "id": "bs2023_q14",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Australian dollar increases 0.50 to 0.70 USD. Impact on imports and exports?\nImports More expensive/Exports More expensive\nImports More expensive/Exports Less expensive\nImports Less expensive/Exports More expensive\nImports Less expensive/Exports Less expensive"
+  },
+  {
+   "id": "bs2023_q15",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A construction company focuses operations on design and innovation. Which best describes strategy?\nOutsourcing\nCost leadership\nSupply chain development\nGoods/services differentiation"
+  },
+  {
+   "id": "bs2023_q16",
+   "year": 2023,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Spiritual? Table extracts financial statements. What is net profit ratio in 2022?\n13%\n20%\n53%\n150%"
+  },
+  {
+   "id": "bs2023_q17",
+   "year": 2023,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Refer to critical path diagram. Which tasks could be occurring at same time?\nAB, BC and CD\nAB, BF and FC\nBE, BF and BC\nBE, BF and EC"
+  },
+  {
+   "id": "bs2023_q18",
+   "year": 2023,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Task EC delayed additional 7 days. By how many days will critical path length change?\n0 days\n2 days\n4 days\n6 days"
+  },
+  {
+   "id": "bs2023_q19",
+   "year": 2023,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which stakeholder has power to implement workplace reforms supporting various abilities, ages, genders?\nUnions\nSociety\nEmployer associations\nGovernment organisations"
+  },
+  {
+   "id": "bs2023_q20",
+   "year": 2023,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Extract balance sheet. Which strategy most effective improving current ratio?\nSell excess machinery and equipment\nBorrow money on short-term bank loan\nTake on new mortgage to purchase buildings\nOffer discount for early payment"
+  },
+  {
+   "id": "bs2023_q21",
+   "year": 2023,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "Australian tyre manufacturer expanding; rubber sourced globally; wants maintain quality outputs and achieve economies of scale.\nOutline ONE potential issue in relation to both cost and quality of outputs.\nExplain benefits of achieving economies of scale for business and consumers.\nExplain why both staff and management might be resistant to leading-edge technology change."
+  },
+  {
+   "id": "bs2023_q22",
+   "year": 2023,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "What is the purpose of Equal Employment Opportunity (EEO) legislation?\nThe advertisement for a store manager is shown.\nEst. 1990\nTeddy Bear Store aims to bring joy to children.\nWe are looking for a Store Manager. If you are interested, please contact us.\nRole:\nResponsibilities:\nGeneral information:\nOutline TWO human resource issues found in this advertisement.\nThe table shows labour force participation rates for males and females in Australia, 1981−2021.\nExplain the social influences that have contributed to the changing labour force participation rates in the period 1981−2021."
+  },
+  {
+   "id": "bs2023_q23",
+   "year": 2023,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "Cereal manufacturer changing packaging to reverse drop in sales and remain competitive; considering catering health-conscious consumers and global expansion.\nOutline current product life cycle stage of this cereal.\nHow could niche market approach increase sales?\nJustify ONE global marketing strategy to expand."
+  },
+  {
+   "id": "bs2023_q24",
+   "year": 2023,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "What is the purpose of a cash flow statement?\nExplain a possible conflict between ONE short-term and ONE long-term financial objective.\nExplain TWO limitations of financial reports."
+  },
+  {
+   "id": "bs2023_q25",
+   "year": 2023,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Future Century Gaming Pty Ltd operates online gaming platform targeting 18-40 in Australia; since 2012 subscription access. Considering expansion into emerging global markets; challenges recruiting/retaining skilled game designers/developers; considering international labour markets; finance expansion through external sources. Report: outline challenges including global factors costs/skills/supply; compare debt vs equity; recommend one source of finance."
+  },
+  {
+   "id": "bs2023_q26",
+   "year": 2023,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "To what extent do influences on marketing affect business success?"
+  },
+  {
+   "id": "bs2023_q27",
+   "year": 2023,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "To what extent do influences on operations affect business success?"
+  },
+  {
+   "id": "bs2024_q1",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Who is most likely to represent employees for an increase in wages?\nA trade union\nFair Work Australia\nAn employer association\nFederal Court of Australia"
+  },
+  {
+   "id": "bs2024_q2",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "The banning of dangerous goods such as asbestos is due to\nGlobal sourcing\nBusiness policies\nLegal regulations\nOperational regulations"
+  },
+  {
+   "id": "bs2024_q3",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "At which stage of human resource process would a performance appraisal be conducted?\nAcquisition\nDevelopment\nInduction\nSeparation"
+  },
+  {
+   "id": "bs2024_q4",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A retailer sells a new style of sunglasses at significantly higher price for first month. What pricing strategy?\nPrice skimming\nPrice penetration\nPrice discrimination\nPrice and quality interaction"
+  },
+  {
+   "id": "bs2024_q5",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which row shows results of effective human resource management (accidents/absenteeism)?\nIncrease/Decrease\nDecrease/Decrease\nIncrease/Increase\nDecrease/Increase"
+  },
+  {
+   "id": "bs2024_q6",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A government provides tax benefit if businesses source electricity through renewable energy. Most likely reason?\nMinimise government debt\nMinimise government utility costs\nEncourage competition\nEncourage environmental sustainability"
+  },
+  {
+   "id": "bs2024_q7",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "An employee injured shoulder at work; physiotherapist treatment described as\nCustomised good\nStandardised good\nCustomised service\nStandardised service"
+  },
+  {
+   "id": "bs2024_q8",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "An employee engaged in misconduct told to leave organisation. Which term describes separation?\nAttrition\nDismissal\nRedundancy\nRetrenchment"
+  },
+  {
+   "id": "bs2024_q9",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "The role of an operations manager is to\nReduce waste and increase efficiency\nReduce output and increase customisation\nImprove customisation and decrease speed\nImprove quality and decrease economies of scale"
+  },
+  {
+   "id": "bs2024_q10",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A business financial info Sales 800000, COGS 200000, gross 600000, net 250000. Expense ratio?\n25%\n31%\n35%\n44%"
+  },
+  {
+   "id": "bs2024_q11",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A distributor of new mop surveys shoppers then uses persuasive selling. Which selling technique?\nSugging\nPersonal selling\nIllegal marketing\nRelationship marketing"
+  },
+  {
+   "id": "bs2024_q12",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "A global business considering replacing operations manager European division. What employment offer suits?\nCasual contract\nIndividual contract\nCollective agreement\nGreenfields agreement"
+  },
+  {
+   "id": "bs2024_q13",
+   "year": 2024,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "LimpLeaf brand research found customers thought product inferior due to brand name. Influencing factor?\nFinancial reasons\nImplied conditions\nEnvironmental reasons\nPsychological reasons"
+  },
+  {
+   "id": "bs2024_q14",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Table cash flow Jul/Aug/Sep. What is closing cash balance for September?\n$7000\n$47000\n$54000\n$150000"
+  },
+  {
+   "id": "bs2024_q15",
+   "year": 2024,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which organisation functions as market operator for companies raising public finance?\nAustralian Taxation Office\nAustralian Securities Exchange\nAPRA\nASIC"
+  },
+  {
+   "id": "bs2024_q16",
+   "year": 2024,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "An Australian manufacturer sells product in USA and Australia without changing marketing mix. Advantage of same mix?\nPromotion can be modified\nEconomies of scale in advertising\nWorld sales maximised through customisation\nSame access to all customers"
+  },
+  {
+   "id": "bs2024_q17",
+   "year": 2024,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A business owner selling business is unethical. What may they be motivated to do?\nUndervalue assets and liabilities\nOvervalue assets and liabilities\nUnderstate income and overstate expenses\nOverstate income and understate expenses"
+  },
+  {
+   "id": "bs2024_q18",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Which are common characteristics of a critical path analysis?\nWhat tasks need to be done, how long they take, delivery timing\nWhat tasks need to be done, how long they take, what order is necessary\nWhich tasks simultaneously, how long, quality testing\nWhich tasks simultaneously, how long, how many components"
+  },
+  {
+   "id": "bs2024_q19",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A private company wants to expand and become public listed. Form of equity finance?\nPrivate equity\nCommercial bill\nNew issue of shares\nShare purchase plan"
+  },
+  {
+   "id": "bs2024_q20",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A company sets marketing objective dominant market leader; sales table advertising/sales/market share declined from 20% to15%. What should marketing manager do?\nIncrease advertising budget to boost market share\nMake no changes as sales increased by 5m\nDecrease advertising budget as market growing\nControl marketing mix as market share declined"
+  },
+  {
+   "id": "bs2024_q21",
+   "year": 2024,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "A manufacturer of flags has seen a steady increase in sales, which coincides with the start of a major sporting event. The operations manager has increased the working hours of all employees to meet this demand.\nExplain the interdependence between operations and ONE other key business function for this business.\nA department store is considering the quantity of products they will need to order and store for the following year.\nProduct A: Baby Milk Formula 900 g, a tin of baby formula.\nProduct B: Air conditioner, a split-system air conditioner unit with cooling airflow symbols.\nHow can each of these TWO products affect inventory management?\nAn ice-cream business is considering allowing customers to choose their own ice-cream flavours and toppings rather than having a set menu of ice-creams.\nDiscuss the influence of visibility (customer contact) for this business."
+  },
+  {
+   "id": "bs2024_q22",
+   "year": 2024,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "business with highly skilled employees valued input in decisions, flexible conditions.\nOutline relationship between ONE stakeholder and human resources function.\nExplain how business exhibits corporate social responsibility in management of employees.\nJustify importance of maintenance in HRM."
+  },
+  {
+   "id": "bs2024_q23",
+   "year": 2024,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "piano teaching business highly qualified experienced teachers expanding nationally.\nOutline how marketing relies on effective HR department.\nHow may economic factors influence customers choosing this business?\nPropose TWO ways to use market segmentation to continue growth."
+  },
+  {
+   "id": "bs2024_q24",
+   "year": 2024,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "balance sheet extract current ratio; then (ii) influence of financial institution (4 marks), (b) discounts early payment (4 marks).\nBalance sheet extract: current ratio calculation and influence of one financial institution.\nCalculate current ratio. (Current assets 5000+20000+5000=30000; current liabilities 9000+11000=20000; ratio 1.5:1)\nExplain influence of ONE financial institution on financial management.\nExplain how offering discounts for early payment may improve cash flow and reduce working capital."
+  },
+  {
+   "id": "bs2024_q25",
+   "year": 2024,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "Hans-Made Watches designs hand-made European-style watches with lifetime warranty; family run; selling to local community; autocratic leadership; decrease in sales/market share; owner retiring; expression of interest assistant manager circulated family/friends only (award wages, free parking, coffee machine, reports to owner, no experience necessary). Report: describe product differentiation; discuss acquisition process; recommend HR strategies."
+  },
+  {
+   "id": "bs2024_q26",
+   "year": 2024,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "How can financial strategies affect objectives of financial management?"
+  },
+  {
+   "id": "bs2024_q27",
+   "year": 2024,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Operations",
+   "text": "How can operations strategies affect corporate social responsibility?"
+  },
+  {
+   "id": "bs2025_q1",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Which performance objective is a business trying to achieve by minimising waste in production?\nCost\nFlexibility\nSpeed\nVolume"
+  },
+  {
+   "id": "bs2025_q2",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A dealership customises caravans by putting solar panels on roof. Which type of market does this business operate in?\nMass\nNiche\nProduction\nResource"
+  },
+  {
+   "id": "bs2025_q3",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "Which of following is an essential component of a balance sheet?\nAssets\nExpenses\nSales\nWages"
+  },
+  {
+   "id": "bs2025_q4",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "An employee applying for maternity leave told job will not exist when returns. What form of discrimination may have occurred?\nAge\nDisability\nRacial\nSex"
+  },
+  {
+   "id": "bs2025_q5",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Price of fitness watch advertised as special $159, store usually sells watch for $159. Which area consumer law broken?\nWarranties\nImplied conditions\nPrice discrimination\nDeceptive and misleading advertising"
+  },
+  {
+   "id": "bs2025_q6",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "An international clothing brand uses Japanese fashion trends and cultural preferences in designs/ads for Japanese market. Which global marketing strategy?\nCustomisation\nStandardisation\nGlobal branding\nPrice and quality interaction"
+  },
+  {
+   "id": "bs2025_q7",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "Which following is an essential aspect of logistics?\nReorganising plant layout\nChecking quality of all output\nAssessing materials handling and packaging\nCreating budget for new machinery/equipment"
+  },
+  {
+   "id": "bs2025_q8",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A business demonstrates ongoing commitment to make operations more efficient/effective as quality management strategy. Example of?\nAssurance\nControl\nFlexibility\nImprovement"
+  },
+  {
+   "id": "bs2025_q9",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A business with 30-day credit policy collects receivables on average every 26 days. Which financial objective?\nEfficiency\nGrowth\nMinimisation\nSolvency"
+  },
+  {
+   "id": "bs2025_q10",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Human resources",
+   "text": "Which lists elements of legal framework influencing HRM?\nCode of conduct, WHS, awards\nCode of conduct, WHS, workers compensation\nCommon law, minimum employment standards, customer contact\nCommon law, minimum employment standards, workers compensation"
+  },
+  {
+   "id": "bs2025_q11",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "What is benefit of internal recruitment for senior management position?\nPosition always filled\nEncourages staff professional growth\nLarger pool of applicants\nGain perspectives outside business"
+  },
+  {
+   "id": "bs2025_q12",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A business introducing leading edge technology experiencing employee resistance. Most likely reason?\nFear of the unknown\nRedundancy payments\nIncreased financial costs\nReorganisation of plant layout"
+  },
+  {
+   "id": "bs2025_q13",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "A marketing manager recognises poor customer service negatively affected sales. In which part of marketing process would recognition occur?\nIdentifying target markets\nUndertaking situational analysis\nDeveloping marketing strategies\nEstablishing marketing objectives"
+  },
+  {
+   "id": "bs2025_q14",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Which marketing strategy could a new gym adopt to attract customers and become viable business?\nCharge high price during introductory stage\nSet introductory price same as competitors\nOffer first month membership at a discount\nOffer lifetime membership below cost"
+  },
+  {
+   "id": "bs2025_q15",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Graph employee data. Most likely cause of change after month 3?\nStaff completed productivity course\nEmployees given monetary bonus\nChange in senior management\nImprovements in WHS made"
+  },
+  {
+   "id": "bs2025_q16",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Marketing",
+   "text": "Cash in/out extract. In which month should business have adopted cash flow management strategies?\nAugust\nSeptember\nNovember\nDecember"
+  },
+  {
+   "id": "bs2025_q17",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A chef's finger cut off during workplace accident. Which steps should employer take? (table)\nAssess site, employee takes annual leave, injury management plan created\nInjury management plan created, employee returns to work, annual leave\nWork site assessed for safety, injury management plan, employee assigned suitable duties, modified work hours, return to work\nInjury management plan created, employee returns to work, annual leave etc"
+  },
+  {
+   "id": "bs2025_q18",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "In hope of long-term profit, medical company spends $2b developing medicine recorded balance sheet. Which limitation of financial reports?\nTiming issues\nValuing assets\nDebt repayment\nCapitalising expenses"
+  },
+  {
+   "id": "bs2025_q19",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Operations",
+   "text": "A retail franchise opening a new store. Correct sequence for its operations process?\nProduct, task design, materials\nFacilities, control, customer service\nInformation, warranties, improvement\nHuman resources, planning, customers"
+  },
+  {
+   "id": "bs2025_q20",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Finance",
+   "text": "A business calculated gearing ratio 75% in 2023, 66% in 2024. Correct statement about 2024?\nDebt to equity ratio has improved\nHigher risk of business failure\nSolvency declined\nOwner higher return-on-equity"
+  },
+  {
+   "id": "bs2025_q21",
+   "year": 2025,
+   "number": "21",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "Cafe produces quality food and friendly personalised service; donates leftover food to local charity.\nOutline corporate social responsibility demonstrated.\nOutline difference between goods and services in this business.\nExplain influence of ONE legal regulation on operations management.\nDiscuss implications of outsourcing cakes from local bakery for operation."
+  },
+  {
+   "id": "bs2025_q22",
+   "year": 2025,
+   "number": "22",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "stainless steel water bottles; customers complain leak and no biodegradable packaging.\nIdentify ONE weakness and ONE potential threat.\nJustify TWO product strategies to gain competitive advantage.\nWhy important to monitor and control marketing strategies?"
+  },
+  {
+   "id": "bs2025_q23",
+   "year": 2025,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "travel agency expanding sales several countries; financial info 2023/2024 sales 600k/700k, expenses 140k/210k, net profit 160k/170k, expense ratio 23.3%, debt/equity 0.6:1/1:1, ROE 8%/8.5%; industry averages provided.\nWhat does expense ratio for 2024 indicate?\nHow can comparative ratio analysis improve financial outcome?\nExplain how TWO global market influences could affect solvency of business."
+  },
+  {
+   "id": "bs2025_q24",
+   "year": 2025,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Human resources",
+   "text": "technology influence on HR function; factory employees discouraged from joining union; business pays migrant workers less and bullies staff illegal practices.\nDescribe influence technology has on human resources function.\nEmployees discouraged from joining union. Explain TWO possible reasons.\nBusiness pays migrant workers less and bullies staff. Explain how engaging in illegal practices."
+  },
+  {
+   "id": "bs2025_q25",
+   "year": 2025,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "XYZ Equipment Pty Ltd Australian manufacturer equipment for schools wanting relocate/manufacture overseas by 2026 due high labour/production costs, poor quality, strict environmental laws, growth market in Asia. Chart activities/sequence (close factory, source suppliers, manufacture, build factory, determine staffing, lease warehouse, register business name) with possible sequencing issues. Report: outline one relevant HR process; describe purpose of chart and issues; recommend global factors for cost leadership."
+  },
+  {
+   "id": "bs2025_q26",
+   "year": 2025,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "Explain how target markets affect e-marketing, people, processes and physical evidence."
+  },
+  {
+   "id": "bs2025_q27",
+   "year": 2025,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "Explain how financial strategies can achieve liquidity and profitability objectives."
+  }
+ ]
+}

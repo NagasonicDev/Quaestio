@@ -1,0 +1,802 @@
+﻿{
+    "econ202001":  {
+                       "code":  "HSC-M2-T3-D2",
+                       "confidence":  "high",
+                       "why":  "RBA objectives price stability and full employment"
+                   },
+    "econ202002":  {
+                       "code":  "HSC-M3-T2-D4",
+                       "confidence":  "high",
+                       "why":  "IMF maintains international financial stability"
+                   },
+    "econ202003":  {
+                       "code":  "HSC-M2-T5-D2",
+                       "confidence":  "high",
+                       "why":  "decentralised wage determination features"
+                   },
+    "econ202004":  {
+                       "code":  "HSC-M3-T4-D4",
+                       "confidence":  "high",
+                       "why":  "characteristics of developing economies"
+                   },
+    "econ202005":  {
+                       "code":  "HSC-M3-T1-D9",
+                       "confidence":  "high",
+                       "why":  "effects of quota change on producers"
+                   },
+    "econ202006":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "ToT index calculation, no measurement dot"
+                   },
+    "econ202007":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "balance of payments recording of transaction"
+                   },
+    "econ202008":  {
+                       "code":  "HSC-M1-T2-D2",
+                       "confidence":  "high",
+                       "why":  "factors reducing participation rate"
+                   },
+    "econ202009":  {
+                       "code":  "HSC-M1-T1-D6",
+                       "confidence":  "high",
+                       "why":  "AD shift from demand components"
+                   },
+    "econ202010":  {
+                       "code":  null,
+                       "confidence":  "medium",
+                       "why":  "composite reasons for CPI and unemployment changes"
+                   },
+    "econ202011":  {
+                       "code":  "HSC-M2-T3-D5",
+                       "confidence":  "medium",
+                       "why":  "monetary policy exchange rate channel"
+                   },
+    "econ202012":  {
+                       "code":  "HSC-M1-T3-D6",
+                       "confidence":  "low",
+                       "why":  "growth unemployment and NAIRU relationship"
+                   },
+    "econ202013":  {
+                       "code":  "PRE-M6-T2-D1",
+                       "confidence":  "medium",
+                       "why":  "net foreign liabilities, foreign equity and debt"
+                   },
+    "econ202014":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "current account and capital account identity"
+                   },
+    "econ202015":  {
+                       "code":  "HSC-M1-T3-D3",
+                       "confidence":  "high",
+                       "why":  "headline versus underlying inflation"
+                   },
+    "econ202016":  {
+                       "code":  "HSC-M1-T1-D2",
+                       "confidence":  "high",
+                       "why":  "real GDP from nominal GDP and CPI"
+                   },
+    "econ202017":  {
+                       "code":  "HSC-M1-T1-D9",
+                       "confidence":  "high",
+                       "why":  "multiplier used to derive MPC"
+                   },
+    "econ202018":  {
+                       "code":  "HSC-M3-T1-D8",
+                       "confidence":  "high",
+                       "why":  "tariff effects on production and revenue"
+                   },
+    "econ202019":  {
+                       "code":  "HSC-M3-T3-D4",
+                       "confidence":  "high",
+                       "why":  "factors causing AUD depreciation"
+                   },
+    "econ202020":  {
+                       "code":  "HSC-M1-T4-D3",
+                       "confidence":  "high",
+                       "why":  "Lorenz curve shift from unemployment"
+                   },
+    "econ202021":  {
+                       "code":  "HSC-M3-T4-D2",
+                       "confidence":  "medium",
+                       "why":  "growth versus development, World Bank aid"
+                   },
+    "econ202022":  {
+                       "code":  "HSC-M1-T2-D6",
+                       "confidence":  "medium",
+                       "why":  "AD fall causes underemployment"
+                   },
+    "econ202023":  {
+                       "code":  "HSC-M3-T1-D13",
+                       "confidence":  "high",
+                       "why":  "bilateral trade agreement discussion"
+                   },
+    "econ202024":  {
+                       "code":  "HSC-M2-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "micro reform raising productivity and supply"
+                   },
+    "econ202025":  {
+                       "code":  "HSC-M3-T3-D5",
+                       "confidence":  "high",
+                       "why":  "exchange rate effects on external stability"
+                   },
+    "econ202026":  {
+                       "code":  "HSC-M2-T6-D7",
+                       "confidence":  "medium",
+                       "why":  "effectiveness of environmental policies and agreements"
+                   },
+    "econ202027":  {
+                       "code":  "HSC-M2-T7-D2",
+                       "confidence":  "medium",
+                       "why":  "evaluate macro policy options for objectives"
+                   },
+    "econ202028":  {
+                       "code":  "HSC-M2-T7-D2",
+                       "confidence":  "medium",
+                       "why":  "policy limitations for growth and equity"
+                   },
+    "econ202101":  {
+                       "code":  "HSC-M3-T1-D14",
+                       "confidence":  "high",
+                       "why":  "WTO role resolving trade disputes"
+                   },
+    "econ202102":  {
+                       "code":  "HSC-M3-T4-D4",
+                       "confidence":  "high",
+                       "why":  "advanced economy characteristics"
+                   },
+    "econ202103":  {
+                       "code":  "HSC-M2-T5-D4",
+                       "confidence":  "medium",
+                       "why":  "employment standards safety net"
+                   },
+    "econ202104":  {
+                       "code":  "HSC-M2-T2-D9",
+                       "confidence":  "medium",
+                       "why":  "automatic stabilisers in downturn"
+                   },
+    "econ202105":  {
+                       "code":  "HSC-M2-T2-D5",
+                       "confidence":  "high",
+                       "why":  "structural discretionary budget component"
+                   },
+    "econ202106":  {
+                       "code":  "HSC-M2-T2-D10",
+                       "confidence":  "medium",
+                       "why":  "regressive consumption tax raises Gini"
+                   },
+    "econ202107":  {
+                       "code":  "HSC-M2-T2-D9",
+                       "confidence":  "high",
+                       "why":  "automatic stabiliser definition"
+                   },
+    "econ202108":  {
+                       "code":  "HSC-M3-T1-D6",
+                       "confidence":  "medium",
+                       "why":  "quotas and subsidies as protection"
+                   },
+    "econ202109":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "low",
+                       "why":  "current account balance and import prices"
+                   },
+    "econ202110":  {
+                       "code":  "PRE-M1-T5-D4",
+                       "confidence":  "low",
+                       "why":  "policy moves economy along cycle stages"
+                   },
+    "econ202111":  {
+                       "code":  "HSC-M1-T3-D2",
+                       "confidence":  "high",
+                       "why":  "inflation rate from CPI"
+                   },
+    "econ202112":  {
+                       "code":  "HSC-M1-T1-D9",
+                       "confidence":  "high",
+                       "why":  "MPS change alters multiplier and income"
+                   },
+    "econ202113":  {
+                       "code":  "PRE-M2-T8-D5",
+                       "confidence":  "high",
+                       "why":  "public good free rider features"
+                   },
+    "econ202114":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "secondary income debit in current account"
+                   },
+    "econ202115":  {
+                       "code":  "HSC-M1-T2-D9",
+                       "confidence":  "medium",
+                       "why":  "participation and unemployment rate relationship"
+                   },
+    "econ202116":  {
+                       "code":  "PRE-M2-T8-D3",
+                       "confidence":  "high",
+                       "why":  "identify externality versus private benefit"
+                   },
+    "econ202117":  {
+                       "code":  "HSC-M1-T2-D9",
+                       "confidence":  "medium",
+                       "why":  "calculate unemployment and participation changes"
+                   },
+    "econ202118":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "BoP goods services and financial account"
+                   },
+    "econ202119":  {
+                       "code":  "HSC-M3-T3-D3",
+                       "confidence":  "high",
+                       "why":  "central bank intervention to hold managed rate"
+                   },
+    "econ202120":  {
+                       "code":  "HSC-M1-T1-D2",
+                       "confidence":  "high",
+                       "why":  "real economic growth rate calculation"
+                   },
+    "econ202121":  {
+                       "code":  null,
+                       "confidence":  "medium",
+                       "why":  "development strategies, no matching dot"
+                   },
+    "econ202122":  {
+                       "code":  "HSC-M2-T6-D8",
+                       "confidence":  "medium",
+                       "why":  "limitations of environmental policies"
+                   },
+    "econ202123":  {
+                       "code":  "HSC-M1-T3-D6",
+                       "confidence":  "low",
+                       "why":  "NAIRU and low inflation effects"
+                   },
+    "econ202124":  {
+                       "code":  "HSC-M3-T3-D5",
+                       "confidence":  "high",
+                       "why":  "effects of appreciation on economy"
+                   },
+    "econ202125":  {
+                       "code":  "HSC-M2-T2-D13",
+                       "confidence":  "high",
+                       "why":  "fiscal policy effectiveness for objectives"
+                   },
+    "econ202126":  {
+                       "code":  "HSC-M2-T3-D7",
+                       "confidence":  "high",
+                       "why":  "monetary policy effectiveness for objectives"
+                   },
+    "econ202127":  {
+                       "code":  "HSC-M3-T1-D13",
+                       "confidence":  "medium",
+                       "why":  "FTA and protection effects on global economy"
+                   },
+    "econ202128":  {
+                       "code":  "HSC-M3-T5-D3",
+                       "confidence":  "high",
+                       "why":  "global changes affecting Australia\u0027s flows"
+                   },
+    "econ202201":  {
+                       "code":  "HSC-M3-T2-D4",
+                       "confidence":  "high",
+                       "why":  "IMF promotes global financial stability"
+                   },
+    "econ202202":  {
+                       "code":  "HSC-M1-T2-D8",
+                       "confidence":  "high",
+                       "why":  "discouraged worker becomes hidden unemployed"
+                   },
+    "econ202203":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "globalisation drivers, no matching dot"
+                   },
+    "econ202204":  {
+                       "code":  "HSC-M1-T3-D6",
+                       "confidence":  "medium",
+                       "why":  "full employment consistent with NAIRU"
+                   },
+    "econ202205":  {
+                       "code":  "HSC-M3-T3-D5",
+                       "confidence":  "medium",
+                       "why":  "depreciation raises import prices and inflation"
+                   },
+    "econ202206":  {
+                       "code":  "HSC-M2-T6-D3",
+                       "confidence":  "high",
+                       "why":  "tradable water permits as market-based policy"
+                   },
+    "econ202207":  {
+                       "code":  "HSC-M3-T2-D1",
+                       "confidence":  "medium",
+                       "why":  "portfolio versus direct investment"
+                   },
+    "econ202208":  {
+                       "code":  "HSC-M1-T1-D6",
+                       "confidence":  "high",
+                       "why":  "AD shift causes"
+                   },
+    "econ202209":  {
+                       "code":  "HSC-M2-T2-D2",
+                       "confidence":  "low",
+                       "why":  "ending subsidy to reduce budget deficit"
+                   },
+    "econ202210":  {
+                       "code":  "HSC-M2-T4-D2",
+                       "confidence":  "high",
+                       "why":  "competition policy regulation in product market"
+                   },
+    "econ202211":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "current account balance calculation"
+                   },
+    "econ202212":  {
+                       "code":  "HSC-M2-T2-D10",
+                       "confidence":  "high",
+                       "why":  "GST regressive effect on Gini"
+                   },
+    "econ202213":  {
+                       "code":  "HSC-M1-T2-D2",
+                       "confidence":  "high",
+                       "why":  "childcare subsidy raises participation"
+                   },
+    "econ202214":  {
+                       "code":  "HSC-M1-T1-D13",
+                       "confidence":  "high",
+                       "why":  "AD-AS shifts lowering GDP"
+                   },
+    "econ202215":  {
+                       "code":  "HSC-M2-T5-D6",
+                       "confidence":  "medium",
+                       "why":  "vocational training lowers NAIRU"
+                   },
+    "econ202216":  {
+                       "code":  "HSC-M1-T1-D2",
+                       "confidence":  "high",
+                       "why":  "real GDP to find negative growth"
+                   },
+    "econ202217":  {
+                       "code":  "HSC-M1-T1-D9",
+                       "confidence":  "high",
+                       "why":  "multiplier with fall in investment"
+                   },
+    "econ202218":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "ToT change and cause, no measurement dot"
+                   },
+    "econ202219":  {
+                       "code":  "HSC-M3-T1-D8",
+                       "confidence":  "high",
+                       "why":  "tariff change and government revenue"
+                   },
+    "econ202220":  {
+                       "code":  "HSC-M3-T1-D8",
+                       "confidence":  "high",
+                       "why":  "tariff change and foreign producer revenue"
+                   },
+    "econ202221":  {
+                       "code":  "HSC-M2-T2-D3",
+                       "confidence":  "medium",
+                       "why":  "fiscal stance drivers"
+                   },
+    "econ202222":  {
+                       "code":  "HSC-M2-T1-D2",
+                       "confidence":  "medium",
+                       "why":  "sustainability conflicts with other objectives"
+                   },
+    "econ202223":  {
+                       "code":  "HSC-M3-T5-D3",
+                       "confidence":  "high",
+                       "why":  "global trends change industry structure"
+                   },
+    "econ202224":  {
+                       "code":  "HSC-M3-T1-D3",
+                       "confidence":  "medium",
+                       "why":  "trade benefits and costs for an economy"
+                   },
+    "econ202225":  {
+                       "code":  "HSC-M3-T3-D4",
+                       "confidence":  "high",
+                       "why":  "BoP components affect AUD demand"
+                   },
+    "econ202226":  {
+                       "code":  "HSC-M2-T5-D7",
+                       "confidence":  "high",
+                       "why":  "labour market policies effectiveness"
+                   },
+    "econ202227":  {
+                       "code":  "HSC-M1-T3-D7",
+                       "confidence":  "high",
+                       "why":  "inflation effects on stakeholders"
+                   },
+    "econ202228":  {
+                       "code":  "HSC-M3-T4-D5",
+                       "confidence":  "high",
+                       "why":  "factors explaining development differences"
+                   },
+    "econ202301":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "OECD role, no matching dot"
+                   },
+    "econ202302":  {
+                       "code":  "PRE-M6-T1-D2",
+                       "confidence":  "medium",
+                       "why":  "composition of Australia\u0027s exports"
+                   },
+    "econ202303":  {
+                       "code":  "HSC-M1-T2-D2",
+                       "confidence":  "high",
+                       "why":  "school leaving age lowers participation"
+                   },
+    "econ202304":  {
+                       "code":  "HSC-M1-T1-D6",
+                       "confidence":  "high",
+                       "why":  "AD shift causes"
+                   },
+    "econ202305":  {
+                       "code":  "HSC-M3-T1-D7",
+                       "confidence":  "high",
+                       "why":  "tariff effects on both countries"
+                   },
+    "econ202306":  {
+                       "code":  "HSC-M3-T1-D3",
+                       "confidence":  "medium",
+                       "why":  "FTA raises long-run GDP"
+                   },
+    "econ202307":  {
+                       "code":  "PRE-M2-T8-D5",
+                       "confidence":  "high",
+                       "why":  "clean air as public good"
+                   },
+    "econ202308":  {
+                       "code":  "HSC-M2-T2-D4",
+                       "confidence":  "high",
+                       "why":  "identify contractionary fiscal stance"
+                   },
+    "econ202309":  {
+                       "code":  "HSC-M3-T4-D5",
+                       "confidence":  "medium",
+                       "why":  "HDI rise from infrastructure access"
+                   },
+    "econ202310":  {
+                       "code":  "HSC-M3-T1-D3",
+                       "confidence":  "medium",
+                       "why":  "lower quota to specialise by advantage"
+                   },
+    "econ202311":  {
+                       "code":  "HSC-M3-T3-D4",
+                       "confidence":  "high",
+                       "why":  "factors shifting AUD supply"
+                   },
+    "econ202312":  {
+                       "code":  "HSC-M2-T3-D5",
+                       "confidence":  "high",
+                       "why":  "cash rate cut raises asset prices and investment"
+                   },
+    "econ202313":  {
+                       "code":  "PRE-M6-T2-D1",
+                       "confidence":  "medium",
+                       "why":  "net foreign liabilities calculation"
+                   },
+    "econ202314":  {
+                       "code":  "PRE-M2-T8-D3",
+                       "confidence":  "medium",
+                       "why":  "tax raises marginal private cost"
+                   },
+    "econ202315":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "ToT deterioration combination, no measurement dot"
+                   },
+    "econ202316":  {
+                       "code":  "HSC-M3-T3-D3",
+                       "confidence":  "medium",
+                       "why":  "central bank action to hold fixed rate"
+                   },
+    "econ202317":  {
+                       "code":  "HSC-M1-T3-D2",
+                       "confidence":  "high",
+                       "why":  "CPI group contribution to inflation"
+                   },
+    "econ202318":  {
+                       "code":  "HSC-M1-T1-D9",
+                       "confidence":  "high",
+                       "why":  "multiplier of higher government spending"
+                   },
+    "econ202319":  {
+                       "code":  "HSC-M3-T1-D10",
+                       "confidence":  "high",
+                       "why":  "subsidy size to cut imports"
+                   },
+    "econ202320":  {
+                       "code":  "PRE-M6-T3-D2",
+                       "confidence":  "low",
+                       "why":  "trade weighted index composition"
+                   },
+    "econ202321":  {
+                       "code":  "HSC-M3-T1-D7",
+                       "confidence":  "medium",
+                       "why":  "protection effects on global income distribution"
+                   },
+    "econ202322":  {
+                       "code":  "HSC-M3-T3-D5",
+                       "confidence":  "high",
+                       "why":  "depreciation effects on current account"
+                   },
+    "econ202323":  {
+                       "code":  "HSC-M1-T4-D9",
+                       "confidence":  "high",
+                       "why":  "costs of increased inequality"
+                   },
+    "econ202324":  {
+                       "code":  "HSC-M2-T4-D5",
+                       "confidence":  "high",
+                       "why":  "micro policy effectiveness on unemployment"
+                   },
+    "econ202325":  {
+                       "code":  "PRE-M6-T1-D2",
+                       "confidence":  "medium",
+                       "why":  "trade value composition direction and performance"
+                   },
+    "econ202326":  {
+                       "code":  "HSC-M2-T1-D2",
+                       "confidence":  "medium",
+                       "why":  "sustainability goal versus other objectives"
+                   },
+    "econ202327":  {
+                       "code":  "HSC-M3-T4-D2",
+                       "confidence":  "medium",
+                       "why":  "globalisation growth and development case study"
+                   },
+    "econ202328":  {
+                       "code":  "HSC-M2-T7-D2",
+                       "confidence":  "medium",
+                       "why":  "evaluate macro policies for growth and stability"
+                   },
+    "econ202401":  {
+                       "code":  "HSC-M3-T4-D8",
+                       "confidence":  "high",
+                       "why":  "World Bank raises quality of life"
+                   },
+    "econ202402":  {
+                       "code":  "HSC-M2-T5-D2",
+                       "confidence":  "high",
+                       "why":  "centralised wage system safety net"
+                   },
+    "econ202403":  {
+                       "code":  "HSC-M2-T1-D2",
+                       "confidence":  "high",
+                       "why":  "conflicting economic objectives"
+                   },
+    "econ202404":  {
+                       "code":  "HSC-M3-T1-D5",
+                       "confidence":  "medium",
+                       "why":  "dumping as free trade disadvantage"
+                   },
+    "econ202405":  {
+                       "code":  "HSC-M3-T2-D1",
+                       "confidence":  "high",
+                       "why":  "portfolio investment recording"
+                   },
+    "econ202406":  {
+                       "code":  "HSC-M1-T2-D3",
+                       "confidence":  "high",
+                       "why":  "participation rate calculation"
+                   },
+    "econ202407":  {
+                       "code":  "PRE-M3-T1-D5",
+                       "confidence":  "medium",
+                       "why":  "determine MPC from income and savings"
+                   },
+    "econ202408":  {
+                       "code":  null,
+                       "confidence":  "medium",
+                       "why":  "comparing policy implementation lags, no dot"
+                   },
+    "econ202409":  {
+                       "code":  "HSC-M1-T2-D5",
+                       "confidence":  "high",
+                       "why":  "job search reduces frictional unemployment"
+                   },
+    "econ202410":  {
+                       "code":  "HSC-M3-T3-D3",
+                       "confidence":  "medium",
+                       "why":  "RBA action to appreciate AUD"
+                   },
+    "econ202411":  {
+                       "code":  "HSC-M1-T1-D10",
+                       "confidence":  "high",
+                       "why":  "aggregate supply shift determinants"
+                   },
+    "econ202412":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "BoP exports of goods calculation"
+                   },
+    "econ202413":  {
+                       "code":  "HSC-M3-T1-D6",
+                       "confidence":  "high",
+                       "why":  "local content rules as protection"
+                   },
+    "econ202414":  {
+                       "code":  "HSC-M2-T2-D10",
+                       "confidence":  "medium",
+                       "why":  "policy changes worsening income distribution"
+                   },
+    "econ202415":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "low",
+                       "why":  "cyclical and structural net primary income factors"
+                   },
+    "econ202416":  {
+                       "code":  "HSC-M1-T3-D3",
+                       "confidence":  "high",
+                       "why":  "headline above underlying inflation"
+                   },
+    "econ202417":  {
+                       "code":  "HSC-M1-T3-D4",
+                       "confidence":  "medium",
+                       "why":  "imported cost pressures raise inflation"
+                   },
+    "econ202418":  {
+                       "code":  "PRE-M6-T2-D1",
+                       "confidence":  "medium",
+                       "why":  "net foreign liabilities share of GDP"
+                   },
+    "econ202419":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "TWI and ToT reasons, no measurement dot"
+                   },
+    "econ202420":  {
+                       "code":  "HSC-M1-T1-D2",
+                       "confidence":  "medium",
+                       "why":  "real growth and inflation calculation"
+                   },
+    "econ202421":  {
+                       "code":  "HSC-M3-T1-D7",
+                       "confidence":  "medium",
+                       "why":  "foreign protection effects on current account"
+                   },
+    "econ202422":  {
+                       "code":  "HSC-M2-T5-D7",
+                       "confidence":  "medium",
+                       "why":  "labour market policies and inflation"
+                   },
+    "econ202423":  {
+                       "code":  "HSC-M2-T6-D5",
+                       "confidence":  "medium",
+                       "why":  "effectiveness of market-based environmental policy"
+                   },
+    "econ202424":  {
+                       "code":  "HSC-M3-T4-D2",
+                       "confidence":  "medium",
+                       "why":  "globalisation effects on development"
+                   },
+    "econ202425":  {
+                       "code":  "HSC-M2-T7-D1",
+                       "confidence":  "high",
+                       "why":  "coordinated macro and micro policy mix"
+                   },
+    "econ202426":  {
+                       "code":  "HSC-M2-T7-D1",
+                       "confidence":  "high",
+                       "why":  "coordinated policy mix for full employment"
+                   },
+    "econ202427":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "international economic integration, no matching dot"
+                   },
+    "econ202428":  {
+                       "code":  "HSC-M3-T3-D5",
+                       "confidence":  "high",
+                       "why":  "appreciation impacts on stakeholders"
+                   },
+    "econ202501":  {
+                       "code":  "HSC-M3-T1-D13",
+                       "confidence":  "medium",
+                       "why":  "monetary union as regional arrangement"
+                   },
+    "econ202502":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "globalisation accelerator, no matching dot"
+                   },
+    "econ202503":  {
+                       "code":  "HSC-M3-T4-D4",
+                       "confidence":  "high",
+                       "why":  "health and education by economy type"
+                   },
+    "econ202504":  {
+                       "code":  "HSC-M2-T2-D9",
+                       "confidence":  "medium",
+                       "why":  "cyclical revenue fall in downturn"
+                   },
+    "econ202505":  {
+                       "code":  "PRE-M2-T8-D5",
+                       "confidence":  "medium",
+                       "why":  "private good excludable and rival"
+                   },
+    "econ202506":  {
+                       "code":  null,
+                       "confidence":  "medium",
+                       "why":  "general rationale for macro policy, ambiguous dot"
+                   },
+    "econ202507":  {
+                       "code":  "HSC-M1-T1-D9",
+                       "confidence":  "high",
+                       "why":  "multiplier to derive MPC"
+                   },
+    "econ202508":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "regional business cycle, no matching dot"
+                   },
+    "econ202509":  {
+                       "code":  "HSC-M1-T1-D11",
+                       "confidence":  "high",
+                       "why":  "injections versus leakages equilibrium"
+                   },
+    "econ202510":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "foreign aid debit in current account"
+                   },
+    "econ202511":  {
+                       "code":  "HSC-M2-T2-D5",
+                       "confidence":  "high",
+                       "why":  "cyclical component affected by stabilisers"
+                   },
+    "econ202512":  {
+                       "code":  "HSC-M2-T6-D3",
+                       "confidence":  "high",
+                       "why":  "emissions trading as market-based instrument"
+                   },
+    "econ202513":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "medium",
+                       "why":  "financial account calculation"
+                   },
+    "econ202514":  {
+                       "code":  "HSC-M1-T3-D3",
+                       "confidence":  "high",
+                       "why":  "headline versus underlying reasons"
+                   },
+    "econ202515":  {
+                       "code":  "HSC-M1-T1-D2",
+                       "confidence":  "high",
+                       "why":  "real economic growth calculation"
+                   },
+    "econ202516":  {
+                       "code":  "PRE-M6-T2-D1",
+                       "confidence":  "medium",
+                       "why":  "net foreign liability calculation"
+                   },
+    "econ202517":  {
+                       "code":  "HSC-M3-T1-D9",
+                       "confidence":  "medium",
+                       "why":  "quota reduction changes price"
+                   },
+    "econ202518":  {
+                       "code":  "HSC-M3-T1-D8",
+                       "confidence":  "high",
+                       "why":  "tariff cuts foreign producer revenue"
+                   },
+    "econ202519":  {
+                       "code":  null,
+                       "confidence":  "high",
+                       "why":  "ToT export price index, no measurement dot"
+                   },
+    "econ202520":  {
+                       "code":  "HSC-M2-T6-D4",
+                       "confidence":  "high",
+                       "why":  "optimal tax from externality graph"
+                   }
+}

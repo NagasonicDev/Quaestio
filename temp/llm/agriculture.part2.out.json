@@ -1,0 +1,102 @@
+{
+  "2025hsc11": {
+    "code": "HSC-M2-T1-D14",
+    "confidence": "high",
+    "why": "government influence examples"
+  },
+  "2025hsc12": {
+    "code": null,
+    "confidence": "low",
+    "why": "auxin plant hormone not in dots"
+  },
+  "2025hsc13": {
+    "code": "PRE-M1-T2-D4",
+    "confidence": "medium",
+    "why": "organic versus inorganic fertiliser"
+  },
+  "2025hsc14": {
+    "code": "PRE-M2-T1-D9",
+    "confidence": "low",
+    "why": "NAR dry matter and photosynthesis"
+  },
+  "2025hsc15": {
+    "code": null,
+    "confidence": "low",
+    "why": "question stem incomplete"
+  },
+  "2025hsc16": {
+    "code": "HSC-M1-T1-D10",
+    "confidence": "medium",
+    "why": "plant density and yield"
+  },
+  "2025hsc17": {
+    "code": "HSC-M2-T1-D7",
+    "confidence": "low",
+    "why": "egg market share trends"
+  },
+  "2025hsc18": {
+    "code": "PRE-M3-T1-D1",
+    "confidence": "low",
+    "why": "energy fate in digestion"
+  },
+  "2025hsc19": {
+    "code": "HSC-M1-T2-D10",
+    "confidence": "high",
+    "why": "nitrogen cycle compounds"
+  },
+  "2025hsc20": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "perishability and inelastic supply"
+  },
+  "2025hsc21": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "soil degradation farming practices"
+  },
+  "2025hsc22": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "medium",
+    "why": "market specifications and feedback"
+  },
+  "2025hsc23": {
+    "code": null,
+    "confidence": "low",
+    "why": "advertising and value adding not in dots"
+  },
+  "2025hsc24": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "high",
+    "why": "plant breeding hybridisation and GE"
+  },
+  "2025hsc25": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "technology impacts on production"
+  },
+  "2025hsc26": {
+    "code": "PRE-M3-T1-D16",
+    "confidence": "medium",
+    "why": "rumen microbes and ration"
+  },
+  "2025hsc27": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "high",
+    "why": "experimental design pot trial"
+  },
+  "2025hsc28": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "GM crops ethics"
+  },
+  "2025hsc29": {
+    "code": "PRE-M1-T2-D10",
+    "confidence": "medium",
+    "why": "fertiliser and ruminant GHG sources"
+  },
+  "2025hsc30": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "recent technology managerial impact"
+  }
+}

@@ -1,0 +1,1317 @@
+{
+ "course_id": "chemistry-2017",
+ "course_name": "Chemistry (2017)",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Working scientifically / Questioning and Predicting / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSCH001, ACSCH061, ACSCH096)"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Working scientifically / Questioning and Predicting / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Working scientifically / Planning Investigations / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation (ACSCH031, ACSCH097)"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Working scientifically / Planning Investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSCH002)"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Working scientifically / Planning Investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Working scientifically / Conducting Investigations / employ and evaluate safe work practices and manage risks (ACSCH031)"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Working scientifically / Conducting Investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Working scientifically / Conducting Investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Working scientifically / Processing Data and Information / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSCH004, ACSCH007, ACSCH064, ACSCH101)"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Working scientifically / Processing Data and Information / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Working scientifically / Processing Data and Information / evaluate and improve the quality of data"
+  },
+  {
+   "code": "PRE-M1-T5-D1",
+   "path": "Year 11 / Working scientifically / Analysing Data and Information / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "PRE-M1-T5-D2",
+   "path": "Year 11 / Working scientifically / Analysing Data and Information / assess error, uncertainty and limitations in data (ACSCH004, ACSCH005, ACSCH033, ACSCH099)"
+  },
+  {
+   "code": "PRE-M1-T5-D3",
+   "path": "Year 11 / Working scientifically / Analysing Data and Information / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSCH005)"
+  },
+  {
+   "code": "PRE-M1-T6-D1",
+   "path": "Year 11 / Working scientifically / Problem Solving / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSCH006, ACSCH010)"
+  },
+  {
+   "code": "PRE-M1-T6-D2",
+   "path": "Year 11 / Working scientifically / Problem Solving / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "PRE-M1-T7-D1",
+   "path": "Year 11 / Working scientifically / Communicating / select and use suitable forms of digital, visual, written and/or oral communication"
+  },
+  {
+   "code": "PRE-M1-T7-D2",
+   "path": "Year 11 / Working scientifically / Communicating / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSCH008, ACSCH036, ACSCH067, ACSCH102)"
+  },
+  {
+   "code": "PRE-M1-T7-D3",
+   "path": "Year 11 / Working scientifically / Communicating / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSCH034, ACSCH036)"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Properties and Structure of Matter / Properties of Matter / explore homogeneous mixtures and heterogeneous mixtures through practical investigations: using separation techniques based on physical properties (ACSCH026)"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Properties and Structure of Matter / Properties of Matter / calculating percentage composition by weight of component elements and/or compounds (ACSCH007)"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Properties and Structure of Matter / Properties of Matter / investigate the nomenclature of inorganic substances using International Union of Pure and Applied Chemistry (IUPAC) naming conventions"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Properties and Structure of Matter / Properties of Matter / classify the elements based on their properties and position in the periodic table through their: physical properties; chemical properties"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / investigate the basic structure of stable and unstable isotopes by examining: their position in the periodic table"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / the distribution of electrons, protons and neutrons in the atom"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / representation of the symbol, atomic number and mass number (nucleon number)"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / model the atom’s discrete energy levels, including electronic configuration and spdf notation (ACSCH017, ACSCH018, ACSCH020, ACSCH022)"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / calculate the relative atomic mass from isotopic composition (ACSCH024)"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / investigate energy levels in atoms and ions through:"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / collecting primary data from a flame test using different ionic solutions of metals (ACSCH019)"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / examining spectral evidence for the Bohr model and introducing the Schrödinger model"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Properties and Structure of Matter / Atomic structure and atomic mass / investigate the properties of unstable isotopes using natural and human-made radioisotopes as examples, including but not limited to: types of radiation; types of balanced nuclear reactions"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Properties and Structure of Matter / Periodicity / demonstrate, explain and predict the relationships in the observable trends in the physical and chemical properties of elements in periods and groups in the periodic table, including but not limited to: state of matter at room temperature; electronic configurations and atomic radii; first ionisation energy and electronegativity; reactivity with water"
+  },
+  {
+   "code": "PRE-M2-T4-D1",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / investigate the role of electronegativity in determining the ionic or covalent nature of bonds between atoms"
+  },
+  {
+   "code": "PRE-M2-T4-D2",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / investigate the differences between ionic and covalent compounds through:"
+  },
+  {
+   "code": "PRE-M2-T4-D3",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / using nomenclature, valency and chemical formulae (including Lewis dot diagrams) (ACSCH029)"
+  },
+  {
+   "code": "PRE-M2-T4-D4",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / examining the spectrum of bonds between atoms with varying degrees of polarity with respect to their constituent elements’ positions on the periodic table"
+  },
+  {
+   "code": "PRE-M2-T4-D5",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / modelling the shapes of molecular substances (ACSCH056, ACSCH057)"
+  },
+  {
+   "code": "PRE-M2-T4-D6",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / investigate elements that possess the physical property of allotropy"
+  },
+  {
+   "code": "PRE-M2-T4-D7",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / investigate the different chemical structures of atoms and elements, including but not limited to: ionic networks; covalent networks (including diamond and silicon dioxide); covalent molecular; metallic structure"
+  },
+  {
+   "code": "PRE-M2-T4-D8",
+   "path": "Year 11 / Properties and Structure of Matter / Bonding / explore the similarities and differences between the nature of intermolecular and intramolecular bonds and the strength of the forces associated with each, in order to explain the: physical properties of elements; physical properties of compounds (ACSCH020, ACSCH055, ACSCH058)"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Chemical Reactions and Stoichiometry / conduct practical investigations to observe and measure the quantitative relationships of chemical reactions, including but not limited to: masses of solids and/or liquids in chemical reactions; volumes of gases in chemical reactions (ACSCH046)"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Chemical Reactions and Stoichiometry / relate stoichiometry to the law of conservation of mass in chemical reactions by investigating: balancing chemical equations (ACSCH039)"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Chemical Reactions and Stoichiometry / solving problems regarding mass changes in chemical reactions (ACSCH046)"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Mole Concept / conduct a practical investigation to demonstrate and calculate the molar mass (mass of one mole) of: an element; a compound (ACSCH046)"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Mole Concept / conduct an investigation to determine that chemicals react in simple whole number ratios by moles"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Mole Concept / explore the concept of the mole and relate this to Avogadro’s constant to describe, calculate and manipulate masses, chemical amounts and numbers of particles in: (ACSCH007, ACSCH039)"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Mole Concept / moles of elements and compounds (n = chemical amount in moles, m = mass in grams, MM = molar mass in gmol-1)"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Mole Concept / percentage composition calculations and empirical formulae"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Mole Concept / limiting reagent reactions"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Concentration and Molarity / conduct practical investigations to determine the concentrations of solutions and investigate the different ways in which concentrations are measured (ACSCH046, ACSCH063)"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Concentration and Molarity / manipulate variables and solve problems to calculate concentration, mass or volume using: (molarity formula) (ACSCH063)"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Concentration and Molarity / dilutions (number of moles before dilution = number of moles of sample after dilution)"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Concentration and Molarity / conduct an investigation to make a standard solution and perform a dilution"
+  },
+  {
+   "code": "PRE-M3-T4-D1",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Gas Laws / conduct investigations and solve problems to determine the relationship between the Ideal Gas Law and:"
+  },
+  {
+   "code": "PRE-M3-T4-D2",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Gas Laws / Gay-Lussac’s Law (temperature)"
+  },
+  {
+   "code": "PRE-M3-T4-D3",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Gas Laws / Boyle’s Law"
+  },
+  {
+   "code": "PRE-M3-T4-D4",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Gas Laws / Charles’ Law"
+  },
+  {
+   "code": "PRE-M3-T4-D5",
+   "path": "Year 11 / Introduction to Quantitative Chemistry / Gas Laws / Avogadro’s Law (ACSCH060)"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Reactive Chemistry / Chemical Reactions / investigate a variety of reactions to identify possible indicators of a chemical change"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Reactive Chemistry / Chemical Reactions / use modelling to demonstrate"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Reactive Chemistry / Chemical Reactions / the rearrangement of atoms to form new substances"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Reactive Chemistry / Chemical Reactions / the conservation of atoms in a chemical reaction (ACSCH042, ACSCH080)"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Reactive Chemistry / Chemical Reactions / conduct investigations to predict and identify the products of a range of reactions, for example: synthesis; decomposition; combustion; precipitation; acid/base reactions; acid/carbonate reactions (ACSCH042, ACSCH080)"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Reactive Chemistry / Chemical Reactions / investigate the chemical processes that occur when Aboriginal and Torres Strait Islander Peoples detoxify poisonous food items"
+  },
+  {
+   "code": "PRE-M4-T1-D7",
+   "path": "Year 11 / Reactive Chemistry / Chemical Reactions / construct balanced equations to represent chemical reactions"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / conduct practical investigations to compare the reactivity of a variety of metals in: water; dilute acid (ACSCH032, ACSCH037); oxygen; other metal ions in solution"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / construct a metal activity series using the data obtained from practical investigations and compare this series with that obtained from standard secondary-sourced information (ACSCH103)"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / analyse patterns in metal activity on the periodic table and explain why they correlate with, for example: ionisation energy (ACSCH045); atomic radius (ACSCH007); electronegativity (ACSCH057)"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / apply the definitions of oxidation and reduction in terms of electron transfer and oxidation numbers to a range of reduction and oxidation (redox) reactions"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / conduct investigations to measure and compare the reduction potential of galvanic half-cells"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / construct relevant half-equations and balanced overall equations to represent a range of redox reactions"
+  },
+  {
+   "code": "PRE-M4-T2-D7",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / predict the reaction of metals in solutions using the table of standard reduction potentials"
+  },
+  {
+   "code": "PRE-M4-T2-D8",
+   "path": "Year 11 / Reactive Chemistry / Predicting Reactions of Metals / predict the spontaneity of redox reactions using the value of cell potentials (ACSCH079, ACSCH080)"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Reactive Chemistry / Rates of Reactions / conduct a practical investigation, using appropriate tools (including digital technologies), to collect data, analyse and report on how the rate of a chemical reaction can be affected by a range of factors, including but not limited to: temperature; surface area of reactant(s); concentration of reactant(s); catalysts (ACSCH042)"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Reactive Chemistry / Rates of Reactions / investigate the role of activation energy, collisions and molecular orientation in collision theory"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Reactive Chemistry / Rates of Reactions / explain a change in reaction rate using collision theory (ACSCH003, ACSCH046)"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Drivers of Reactions / Energy Changes in Chemical Reactions / conduct practical investigations to measure temperature changes in examples of endothermic and exothermic reactions, including: combustion"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Drivers of Reactions / Energy Changes in Chemical Reactions / dissociation of ionic substances in aqueous solution (ACSCH018, ACSCH037)"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Drivers of Reactions / Energy Changes in Chemical Reactions / investigate enthalpy changes in reactions using calorimetry and (heat capacity formula) to calculate, analyse and compare experimental results with reliable secondary-sourced data, and to explain any differences"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Drivers of Reactions / Energy Changes in Chemical Reactions / construct energy profile diagrams to represent and analyse the enthalpy changes and activation energy associated with a chemical reaction (ACSCH072)"
+  },
+  {
+   "code": "PRE-M5-T1-D5",
+   "path": "Year 11 / Drivers of Reactions / Energy Changes in Chemical Reactions / model and analyse the role of catalysts in reactions (ACSCH073)"
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Drivers of Reactions / Enthalpy and Hess’s Law / explain the enthalpy changes in a reaction in terms of breaking and reforming bonds, and relate this to: the law of conservation of energy"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Drivers of Reactions / Enthalpy and Hess’s Law / investigate Hess’s Law in quantifying the enthalpy change for a stepped reaction using standard enthalpy change data and bond energy data, for example: (ACSCH037)"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Drivers of Reactions / Enthalpy and Hess’s Law / carbon reacting with oxygen to form carbon dioxide via carbon monoxide"
+  },
+  {
+   "code": "PRE-M5-T2-D4",
+   "path": "Year 11 / Drivers of Reactions / Enthalpy and Hess’s Law / apply Hess’s Law to simple energy cycles and solve problems to quantify enthalpy changes within reactions, including but not limited to: heat of combustion; enthalpy changes involved in photosynthesis; enthalpy changes involved in respiration (ACSCH037)"
+  },
+  {
+   "code": "PRE-M5-T3-D1",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / analyse the differences between entropy and enthalpy"
+  },
+  {
+   "code": "PRE-M5-T3-D2",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / use modelling to illustrate entropy changes in reactions"
+  },
+  {
+   "code": "PRE-M5-T3-D3",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / predict entropy changes from balanced chemical reactions to classify as increasing or decreasing entropy"
+  },
+  {
+   "code": "PRE-M5-T3-D4",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / explain reaction spontaneity using terminology, including: (ACSCH072)"
+  },
+  {
+   "code": "PRE-M5-T3-D5",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / Gibbs free energy"
+  },
+  {
+   "code": "PRE-M5-T3-D6",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / enthalpy"
+  },
+  {
+   "code": "PRE-M5-T3-D7",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / entropy"
+  },
+  {
+   "code": "PRE-M5-T3-D8",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / solve problems using standard references and (Gibbs free energy formula) to classify reactions as spontaneous or nonspontaneous"
+  },
+  {
+   "code": "PRE-M5-T3-D9",
+   "path": "Year 11 / Drivers of Reactions / Entropy and Gibbs Free Energy / predict the effect of temperature changes on spontaneity (ACSCH070)"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Working scientifically / Questioning and Predicting / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSCH001, ACSCH061, ACSCH096)"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Working scientifically / Questioning and Predicting / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Working scientifically / Planning Investigations / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation (ACSCH031, ACSCH097)"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Working scientifically / Planning Investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSCH002)"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Working scientifically / Planning Investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Working scientifically / Conducting Investigations / employ and evaluate safe work practices and manage risks (ACSCH031)"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Working scientifically / Conducting Investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Working scientifically / Conducting Investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Working scientifically / Processing Data and Information / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSCH004, ACSCH007, ACSCH064, ACSCH101)"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Working scientifically / Processing Data and Information / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Working scientifically / Processing Data and Information / evaluate and improve the quality of data"
+  },
+  {
+   "code": "HSC-M1-T5-D1",
+   "path": "Year 12 / Working scientifically / Analysing Data and Information / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "HSC-M1-T5-D2",
+   "path": "Year 12 / Working scientifically / Analysing Data and Information / assess error, uncertainty and limitations in data (ACSCH004, ACSCH005, ACSCH033, ACSCH099)"
+  },
+  {
+   "code": "HSC-M1-T5-D3",
+   "path": "Year 12 / Working scientifically / Analysing Data and Information / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSCH005)"
+  },
+  {
+   "code": "HSC-M1-T6-D1",
+   "path": "Year 12 / Working scientifically / Problem Solving / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSCH006, ACSCH010)"
+  },
+  {
+   "code": "HSC-M1-T6-D2",
+   "path": "Year 12 / Working scientifically / Problem Solving / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "HSC-M1-T7-D1",
+   "path": "Year 12 / Working scientifically / Communicating / select and use suitable forms of digital, visual, written and/or oral communication"
+  },
+  {
+   "code": "HSC-M1-T7-D2",
+   "path": "Year 12 / Working scientifically / Communicating / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSCH008, ACSCH036, ACSCH067, ACSCH102)"
+  },
+  {
+   "code": "HSC-M1-T7-D3",
+   "path": "Year 12 / Working scientifically / Communicating / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSCH034, ACSCH036)"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Static and Dynamic Equilibrium / conduct practical investigations to analyse the reversibility of chemical reactions, for example: cobalt(II) chloride hydrated and dehydrated; iron(III) nitrate and potassium thiocyanate; burning magnesium; burning steel wool (ACSCH090)"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Static and Dynamic Equilibrium / model static and dynamic equilibrium and analyse the differences between open and closed systems (ACSCH079, ACSCH091)"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Static and Dynamic Equilibrium / analyse examples of non-equilibrium systems in terms of the effect of entropy and enthalpy, for example: combustion reactions; photosynthesis"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Static and Dynamic Equilibrium / investigate the relationship between collision theory and reaction rate in order to analyse chemical equilibrium reactions (ACSCH070, ACSCH094)"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Factors that Affect Equilibrium / investigate the effects of temperature, concentration, volume and/or pressure on a system at equilibrium and explain how Le Chatelier’s principle can be used to predict such effects, for example: heating cobalt(II) chloride hydrate; interaction between nitrogen dioxide and dinitrogen tetroxide; iron(III) thiocyanate and varying concentration of ions (ACSCH095)"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Factors that Affect Equilibrium / explain the overall observations about equilibrium in terms of the collision theory (ACSCH094)"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Factors that Affect Equilibrium / examine how activation energy and heat of reaction affect the position of equilibrium"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq) / deduce the equilibrium expression (in terms of Keq) for homogeneous reactions occurring in solution (ACSCH079, ACSCH096)"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq) / perform calculations to find the value of Keq and concentrations of substances within an equilibrium system, and use these values to make predictions on the direction in which a reaction may proceed (ACSCH096)"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq) / qualitatively analyse the effect of temperature on the value of Keq (ACSCH093)"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq) / conduct an investigation to determine Keq of a chemical equilibrium system, for example:"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq) / Keq of the iron(III) thiocyanate equilibrium (ACSCH096)"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq) / explore the use of Keq for different types of chemical reactions, including but not limited to: dissociation of ionic solutions; dissociation of acids and bases (ACSCH098, ACSCH099)"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria / describe and analyse the processes involved in the dissolution of ionic compounds in water"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria / investigate the use of solubility equilibria by Aboriginal and Torres Strait Islander Peoples when removing toxicity from foods, for example: toxins in cycad fruit"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria / conduct an investigation to determine solubility rules, and predict and analyse the composition of substances when two ionic solutions are mixed, for example: potassium chloride and silver nitrate; potassium iodide and lead nitrate; sodium sulfate and barium nitrate (ACSCH065)"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria / derive equilibrium expressions for saturated solutions in terms of Ksp and calculate the solubility of an ionic substance from its Ksp value"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria / predict the formation of a precipitate given the standard reference values for Ksp"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / investigate the correct IUPAC nomenclature and properties of common inorganic acids and bases (ACSCH067)"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / conduct an investigation to demonstrate the preparation and use of indicators as illustrators of the characteristics and properties of acids and bases and their reversible reactions (ACSCH101)"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / predict the products of acid reactions and write balanced equations to represent: acids and bases; acids and carbonates; acids and metals (ACSCH067)"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / investigate applications of neutralisation reactions in everyday life and industrial processes"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / conduct a practical investigation to measure the enthalpy of neutralisation (ACSCH093)"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / explore the changes in definitions and models of an acid and a base over time to explain the limitations of each model, including but not limited to:"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / Arrhenius’ theory"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases / Brønsted–Lowry theory (ACSCH064, ACSCH067)"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory / conduct a practical investigation to measure the pH of a range of acids and bases"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory / calculate pH, pOH, hydrogen ion concentration ([H+]) and hydroxide ion concentration ([OH–]) for a range of solutions (ACSCH102)"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory / conduct an investigation to demonstrate the use of pH to indicate the differences between the strength of acids and bases (ACSCH102)"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory / write ionic equations to represent the dissociation of acids and bases in water, conjugate acid/base pairs in solution and amphiprotic nature of some salts, for example: sodium hydrogen carbonate; potassium dihydrogen phosphate"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory / construct models and/or animations to communicate the differences between strong, weak, concentrated and dilute acids and bases (ACSCH099)"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory / calculate the pH of the resultant solution when solutions of acids and/or bases are diluted or mixed"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / conduct practical investigations to analyse the concentration of an unknown acid or base by titration"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / investigate titration curves and conductivity graphs to analyse data to indicate characteristic reaction profiles, for example: strong acid/strong base; strong acid/weak base; weak acid/strong base (ACSCH080, ACSCH102)"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / model neutralisation of strong and weak acids and bases using a variety of media"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / calculate and apply the dissociation constant (Ka) and pKa (pKa = -log10 (Ka)) to determine the difference between strong and weak acids (ACSCH098)"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / explore acid/base analysis techniques that are applied: in industries; by Aboriginal and Torres Strait Islander Peoples; using digital probes and instruments"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / conduct a chemical analysis of a common household substance for its acidity or basicity (ACSCH080) , for example: soft drink; wine; juice; medicine"
+  },
+  {
+   "code": "HSC-M3-T3-D7",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / conduct a practical investigation to prepare a buffer and demonstrate its properties (ACSCH080)"
+  },
+  {
+   "code": "HSC-M3-T3-D8",
+   "path": "Year 12 / Acid/Base Reactions / Quantitative Analysis / describe the importance of buffers in natural systems (ACSCH098, ACSCH102)"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / investigate the nomenclature of organic chemicals, up to C8, using IUPAC conventions, including simple methyl and ethyl branched chains, including: (ACSCH127)"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / alkanes"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / alkenes"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / alkynes"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / alcohols (primary, secondary and tertiary)"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / aldehydes and ketones"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / carboxylic acids"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / amines and amides"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / halogenated organic compounds"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / explore and distinguish the different types of structural isomers, including saturated and unsaturated hydrocarbons, including: (ACSCH035)"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / chain isomers"
+  },
+  {
+   "code": "HSC-M4-T1-D12",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / position isomers"
+  },
+  {
+   "code": "HSC-M4-T1-D13",
+   "path": "Year 12 / Organic Chemistry / Nomenclature / functional group isomers"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Organic Chemistry / Hydrocarbons / construct models, identify the functional group, and write structural and molecular formulae for homologous series of organic chemical compounds, up to C8 (ACSCH035) : alkanes; alkenes; alkynes"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Organic Chemistry / Hydrocarbons / conduct an investigation to compare the properties of organic chemical compounds within a homologous series, and explain these differences in terms of bonding (ACSCH035)"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Organic Chemistry / Hydrocarbons / analyse the shape of molecules formed between carbon atoms when a single, double or triple bond is formed between them"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Organic Chemistry / Hydrocarbons / explain the properties within and between the homologous series of alkanes with reference to the intermolecular and intramolecular bonding present"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Organic Chemistry / Hydrocarbons / describe the procedures required to safely handle and dispose of organic substances (ACSCH075)"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Organic Chemistry / Hydrocarbons / examine the environmental, economic and sociocultural implications of obtaining and using hydrocarbons from the Earth"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Organic Chemistry / Products of Reactions Involving Hydrocarbons / investigate, write equations and construct models to represent the reactions of unsaturated hydrocarbons when added to a range of chemicals, including but not limited to: hydrogen (H2); halogens (X2); hydrogen halides (HX); water (H2O) (ACSCH136)"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Organic Chemistry / Products of Reactions Involving Hydrocarbons / investigate, write equations and construct models to represent the reactions of saturated hydrocarbons when substituted with halogens"
+  },
+  {
+   "code": "HSC-M4-T4-D1",
+   "path": "Year 12 / Organic Chemistry / Alcohols / investigate the structural formulae, properties and functional group including: primary; secondary; tertiary alcohols"
+  },
+  {
+   "code": "HSC-M4-T4-D2",
+   "path": "Year 12 / Organic Chemistry / Alcohols / explain the properties within and between the homologous series of alcohols with reference to the intermolecular and intramolecular bonding present"
+  },
+  {
+   "code": "HSC-M4-T4-D3",
+   "path": "Year 12 / Organic Chemistry / Alcohols / conduct a practical investigation to measure and reliably compare the enthalpy of combustion for a range of alcohols"
+  },
+  {
+   "code": "HSC-M4-T4-D4",
+   "path": "Year 12 / Organic Chemistry / Alcohols / write equations, state conditions and predict products to represent the reactions of alcohols, including but not limited to (ACSCH128, ACSCH136): combustion; dehydration; substitution with HX; oxidation"
+  },
+  {
+   "code": "HSC-M4-T4-D5",
+   "path": "Year 12 / Organic Chemistry / Alcohols / investigate the production of alcohols, including: substitution reactions of halogenated organic compounds; fermentation"
+  },
+  {
+   "code": "HSC-M4-T4-D6",
+   "path": "Year 12 / Organic Chemistry / Alcohols / investigate the products of the oxidation of primary and secondary alcohols"
+  },
+  {
+   "code": "HSC-M4-T4-D7",
+   "path": "Year 12 / Organic Chemistry / Alcohols / compare and contrast fuels from organic sources to biofuels, including ethanol"
+  },
+  {
+   "code": "HSC-M4-T5-D1",
+   "path": "Year 12 / Organic Chemistry / Reactions of Organic Acids and Bases / investigate the structural formulae, properties and functional group including: primary, secondary and tertiary alcohols; aldehydes and ketones (ACSCH127); amines and amides; carboxylic acids"
+  },
+  {
+   "code": "HSC-M4-T5-D2",
+   "path": "Year 12 / Organic Chemistry / Reactions of Organic Acids and Bases / explain the properties within and between the homologous series of carboxylic acids amines and amides with reference to the intermolecular and intramolecular bonding present"
+  },
+  {
+   "code": "HSC-M4-T5-D3",
+   "path": "Year 12 / Organic Chemistry / Reactions of Organic Acids and Bases / investigate the production, in a school laboratory, of simple esters"
+  },
+  {
+   "code": "HSC-M4-T5-D4",
+   "path": "Year 12 / Organic Chemistry / Reactions of Organic Acids and Bases / investigate the differences between an organic acid and organic base"
+  },
+  {
+   "code": "HSC-M4-T5-D5",
+   "path": "Year 12 / Organic Chemistry / Reactions of Organic Acids and Bases / investigate the structure and action of soaps and detergents"
+  },
+  {
+   "code": "HSC-M4-T5-D6",
+   "path": "Year 12 / Organic Chemistry / Reactions of Organic Acids and Bases / draft and construct flow charts to show reaction pathways for chemical synthesis, including those that involve more than one step"
+  },
+  {
+   "code": "HSC-M4-T6-D1",
+   "path": "Year 12 / Organic Chemistry / Polymers / model and compare the structure, properties and uses of addition polymers of ethylene and related monomers, for example: polyethylene (PE); polyvinyl chloride (PVC); polystyrene (PS); polytetrafluoroethylene (PTFE) (ACSCH136)"
+  },
+  {
+   "code": "HSC-M4-T6-D2",
+   "path": "Year 12 / Organic Chemistry / Polymers / model and compare the structure, properties and uses of condensation polymers, for example: nylon; polyesters"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Inorganic Substances / analyse the need for monitoring the environment"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Inorganic Substances / conduct qualitative investigations – using flame tests, precipitation and complexation reactions as appropriate – to test for the presence in aqueous solution of the following ions:"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Inorganic Substances / cations: barium (Ba2+), calcium (Ca2+), magnesium (Mg2+), lead(II) (Pb2+), silver ion (Ag+), copper(II) (Cu2+), iron(II) (Fe2+), iron(III) (Fe3+)"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Inorganic Substances / anions: chloride (Cl–), bromide (Br–), iodide (I–), hydroxide (OH–), acetate (CH3COO–), carbonate (CO32–), sulfate (SO42–), phosphate (PO43–)"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Inorganic Substances / conduct investigations and/or process data involving: gravimetric analysis; precipitation titrations"
+  },
+  {
+   "code": "HSC-M5-T1-D6",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Inorganic Substances / conduct investigations and/or process data to determine the concentration of coloured species and/or metal ions in aqueous solution, including but not limited to, the use of: colourimetry; ultravioletvisible spectrophotometry; atomic absorption spectroscopy"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances / conduct qualitative investigations to test for the presence in organic molecules of the following functional groups: carbon–carbon double bonds; hydroxyl groups; carboxylic acids (ACSCH130)"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances / investigate the processes used to analyse the structure of simple organic compounds addressed in the course, including but not limited to: proton and carbon-13 NMR; mass spectrometry; infrared spectroscopy (ACSCH130)"
+  },
+  {
+   "code": "HSC-M5-T3-D1",
+   "path": "Year 12 / Applying Chemical Ideas / Chemical Synthesis and Design / evaluate the factors that need to be considered when designing a chemical synthesis process, including but not limited to: availability of reagents; reaction conditions (ACSCH133); yield and purity (ACSCH134)"
+  },
+  {
+   "code": "HSC-M5-T3-D2",
+   "path": "Year 12 / Applying Chemical Ideas / Chemical Synthesis and Design / industrial uses (eg pharmaceutical, cosmetics, cleaning products, fuels) (ACSCH131)"
+  },
+  {
+   "code": "HSC-M5-T3-D3",
+   "path": "Year 12 / Applying Chemical Ideas / Chemical Synthesis and Design / environmental, social and economic issues"
+  }
+ ],
+ "questions": [
+  {
+   "id": "chemistry-2017-chem202417",
+   "year": 2024,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria",
+   "text": "sodium hydroxide. A graph of pH against the volume of sodium hydroxide for this experiment is shown. 14.0 12.0 10.0 8.0 pH 6.0 4.0 2.0 0.0 0 10 20 30 40 50 L–1 Volume of 0.1 mol sodium hydroxide added (mL) Which of the following acids was used in the titration? Acid pKa1 pKa2\n1 4.76 –\n2 Strong –\n3 1.91 6.30\n4 4.11 9.61 A reaction mixture, not at equilibrium, is composed of both N O (g) and NO (g) in a 18"
+  },
+  {
+   "id": "chemistry-2017-chem202418",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "A reaction mixture, not at equilibrium, is composed of both NO2(g) and N2O4(g) in a closed container. The reaction quotient, Q, is given. The rate of the forward reaction is initially greater than the rate of the reverse reaction. Which diagram shows how Q changes over time for this mixture?\ngraph A\ngraph B\ngraph C\ngraph D"
+  },
+  {
+   "id": "chemistry-2017-chem202419",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Factors that Affect Equilibrium",
+   "text": "A. B. H O H CH Cl CH\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "chemistry-2017-chem202420",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria",
+   "text": "MM = determined by titration. • A 25.00 mL sample of solution A was titrated with potassium hydroxide solution. • 50.00 mg of ascorbic acid was added to a second 25.00 mL sample of solution A, which was titrated in the same way. Titration volumes for both titrations are given. (mL) Solution Titre 25.00 mL solution A 17.50 25.00 mL solution A + 33.10 50.00 mg of ascorbic acid What is the concentration of ascorbic acid in solution A? 10–3 L–1\n5.352 mol # 10–3 L–1\n6.004 mol # 10–2 L–1\n1.012 mol # 10–2 L–1\n1.274 mol #"
+  },
+  {
+   "id": "chemistry-2017-chem202421",
+   "year": 2024,
+   "number": "21",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "A solution of acetic acid reacts with magnesium metal. 2 Write the names of the products of this reaction in the boxes provided. acetic acid + magnesium --> +"
+  },
+  {
+   "id": "chemistry-2017-chem202422",
+   "year": 2024,
+   "number": "22",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions",
+   "text": "Vinyl fluoride can be polymerised. 2 C C H H H F vinyl fluoride In the box provided, draw the structural formula for a six-carbon section of the polymer formed from the polymerisation of vinyl fluoride."
+  },
+  {
+   "id": "chemistry-2017-chem202423",
+   "year": 2024,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry",
+   "text": "Consider the following equilibrium system. 3 7Co_H Oi A2+(aq) + 4Cl–(aq)  7CoCl A2–(aq) + 6H O(l ) 2 6 4 2 7Co_H Oi A2+(aq) is pink and 7CoCl A2–(aq) is blue. When a solution of these ions 2 6 4 and chloride ions is heated, the mixture becomes more blue. Relate the observed colour change to the change in K . Please turn over"
+  },
+  {
+   "id": "chemistry-2017-chem202424",
+   "year": 2024,
+   "number": "24",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry / Polymers",
+   "text": "The boiling points for two series of compounds are listed. Amine Boiling point (°C) Methanamine -6 Ethanamine 17 Propan-1-amine 48 Butan-1-amine 78 Alcohol Methanol Boiling point (°C) 65 Ethanol 78 Propan-1-ol Butan-1-ol 97 118\nPlot the boiling points for each series of compounds against the number of carbon atoms per molecule. Number of carbon atoms per molecule\nWith reference to hydrogen bonding and dispersion forces, explain the trends in the boiling point data of these compounds, within each series and between the series. Please turn over"
+  },
+  {
+   "id": "chemistry-2017-chem202425",
+   "year": 2024,
+   "number": "25",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Quantitative Analysis",
+   "text": "The concentration of phosphate ions in washing machine waste water can be 4 determined using colourimetry. A sample of washing machine waste water was collected and diluted by quantitatively transferring 1.00 mL of the solution to a volumetric flask and making up the volume to 1.000 L with distilled water. Standard phosphate solutions were prepared and analysed with a colourimeter using an accepted method. The standard calibration graph is shown. 0.20 0.00 0.10 0.20 0.30 0.40 0.50 0.60 0.70 0.80 0.90 1.00 0.00 Absorbance 0.40 Concentration of phosphate ion (mg Lï\u0014) 0.60 0.80 1.00 1.20 The diluted sample solution was then analysed using the same method as the standard solutions. The absorbance of this solution was found to be 0.64 . Determine the concentration of phosphate ions in the sample of washing machine waste water, in mol L–1. Please turn over"
+  },
+  {
+   "id": "chemistry-2017-chem202426",
+   "year": 2024,
+   "number": "26",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq)",
+   "text": "The equilibrium equation for the reaction of iodine with hydrogen cyanide in aqueous solution is given. I (aq) + HCN(aq) W ICN(aq) + I–(aq) + H+(aq) 2 At t = 0 min, I was added to a mixture of HCN, I– and H+, bringing 2 7I2A to 2.0 # 10–5 mol L–1. After 3 minutes, the system was at equilibrium, and an analysis of the mixture found that half of the I had reacted. 2\nOn the axes provided, sketch a graph to show how 7I A changes in the solution between t = 0 min and t = 6 min. Time (min) 7I2A (# 10–5 mol Lï\u0014)\nUsing collision theory, explain the rate of reaction between t = 0 min and t = 6 min. Refer to the 7I A in your answer."
+  },
+  {
+   "id": "chemistry-2017-chem202427",
+   "year": 2024,
+   "number": "27",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "The following procedure is proposed to test for the presence of lead(II) and barium ions in water at concentrations of 0.1 mol L–1. 1. Add excess 0.1 mol L–1 sodium sulfate solution. If a precipitate is produced, then barium ions are present. 2. Filter any precipitate produced. 3. Add excess 0.1 mol L–1 sodium bromide solution to the filtrate. If a precipitate is produced, then lead(II) ions are present. Explain why this procedure gives correct results when only barium ions are present, but not when both barium and lead(II) ions are present. Include ONE balanced chemical equation in your answer. 4 Please turn over"
+  },
+  {
+   "id": "chemistry-2017-chem202428",
+   "year": 2024,
+   "number": "28",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Quantitative Analysis",
+   "text": "Iodic acid and sulfamic acid are monoprotic acids. A 0.100 mol L–1 solution of iodic acid has a pH of 1.151, as does a 0.120 mol L–1 solution of sulfamic acid. Show that neither iodic acid nor sulfamic acid dissociates completely in water, and determine which is the stronger acid. 3"
+  },
+  {
+   "id": "chemistry-2017-chem202429",
+   "year": 2024,
+   "number": "29",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry",
+   "text": "150 mL of a 0.20 mol L–1 sodium hydroxide solution is added to 100 mL of a 0.10 mol L–1 sulfuric acid solution. Calculate the pH of the resulting solution, assuming that the volume of the resulting solution is 250 mL and that its temperature is 25°C. 4 Please turn over"
+  },
+  {
+   "id": "chemistry-2017-chem202430",
+   "year": 2024,
+   "number": "30",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "An equilibrium mixture of hydrogen, carbon dioxide, water and carbon monoxide is in a closed, 1 L container at a fixed temperature as shown: 4 H2(g) + CO2(g)  H2O(g) + CO(g) Keq = 1.600 The initial concentrations are 7H2A = 1.000 mol L–1, 7CO2A = 0.500 mol L–1, 7H OA = 0.400 mol L–1 and 2 7COA = 2.000 mol L–1. An unknown amount of CO(g) was added to the same container, and the temperature was kept constant. After the new equilibrium had been established, the concentration of H O(g) was found to be 0.200 mol L–1. 2 Using this information, calculate the unknown amount (in mol) of CO(g) that was added to the container."
+  },
+  {
+   "id": "chemistry-2017-chem202431",
+   "year": 2024,
+   "number": "31",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Quantitative Analysis",
+   "text": "The atom economy (AE) of a reaction is a measure of the mass of atoms in the starting materials that are incorporated into the desired product. Higher AE means lower mass of waste products. Urea can be produced in a variety of ways. One way is to react ammonia (high toxicity) with phosgene (high toxicity). Another way is to react ammonia with dimethyl carbonate (DMC, low toxicity). The chemical equations and AE for these two processes are provided. 3 + 2NH4Cl + 4NH3 AE = 35.9% + 2CH3OH + 2NH3 DMC AE = 48.4% Cl O Cl H3CO O OCH3 Phosgene Urea H2N O NH2 H2N O NH2 Urea Which of these two processes is preferable for urea production? Justify your answer with reference to the information provided."
+  },
+  {
+   "id": "chemistry-2017-chem202432",
+   "year": 2024,
+   "number": "32",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry / Hydrocarbons",
+   "text": "Calculate the concentration of cadmium ions in a saturated solution of cadmium(II) phosphate, Cd _PO i , K = 2.53 # 10–33. 3 4 2 4"
+  },
+  {
+   "id": "chemistry-2017-chem202433",
+   "year": 2024,
+   "number": "33",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria",
+   "text": "Acetone can be reduced, as shown. reduction O OH\nIdentify the shape around the central carbon atom in each molecule.\nExplain how 13C NMR spectroscopy could be used to monitor the progress of this reaction."
+  },
+  {
+   "id": "chemistry-2017-chem202434",
+   "year": 2024,
+   "number": "34",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "An aqueous solution of ammonia is added to a solution containing hydrochloric acid. A plot of conductivity against volume of ammonia solution added is shown. The temperature of the solution is kept constant throughout and the conductivity of the solution is corrected for dilution. 4 2 0 Conductivity 4 Volume of ammonia solution added (mL) 6 8 10 1 3 5 7 9 The relative conductivities of some relevant ions are shown in the table. Ion Relative conductivity H+ 4.76 OH– 2.70 Cl– 1.04 + NH4 1.00 Explain the shape of the graph. Include TWO balanced chemical equations in your answer. Please turn over"
+  },
+  {
+   "id": "chemistry-2017-chem202435",
+   "year": 2024,
+   "number": "35",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq)",
+   "text": "Unknown samples of three carboxylic acids, labelled X, Y and Z, are analysed to determine their identities. 7 • Both Y and Z react rapidly with bromine in the absence of UV light, but X does not. A 0.100 g sample of Y reacts with the same amount of bromine as a 0.200 g sample of Z. • Separate 0.100 g samples of X, Y and Z are titrated with 0.0617 mol L–1 sodium hydroxide solution. The titre volumes are shown. Acid X Y Volume of NaOH 21.88 22.49 22.49 Z • Both Y and Z can undergo hydration reactions in the presence of a suitable catalyst. Two products are possible for the hydration of Y, but only one product is possible with Z. Identify which structures 1, 2 and 3 in the table are acids X, Y and Z. Justify your answer with reference to the information provided. Structure 1 Structure 2 Structure 3 H Molar mass (g mol–1) Acid (X, Y or Z) H O C C C H 72.062 g mol–1 OH H H H C C C H H 74.078 g mol–1 O OH O HO C H H H C C C C H H H 144.124 g mol–1 C O OH"
+  },
+  {
+   "id": "chemistry-2017-chem202436",
+   "year": 2024,
+   "number": "36",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions",
+   "text": "14.7 g of solid sodium hydrogen carbonate _MM = 84.008 g mol–1i was reacted with 120 mL of 1.50 mol L–1 hydrochloric acid solution _density 1.02 g mL–1i in a calorimeter. The temperature of the solution before and after reaction was recorded. 5 Initial temperature of hydrochloric acid solution (°C) Final temperature of reaction solution (°C) 21.5 11.5 Assume that all CO produced is lost from the reaction solution and that the specific 2 heat capacity of the reaction solution is 3.80 J K–1 g–1. What is the enthalpy of reaction, in kJ mol–1?"
+  },
+  {
+   "id": "chemistry-2017-chem202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "An aqueous solution of an unknown acid (HA) is represented below. H+ A− A− H+ Which row of the table best describes this solution? Strong Concentrated\n✓ ✓\n✓ ✗\n✗ ✓\n✗ ✗"
+  },
+  {
+   "id": "chemistry-2017-chem202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Acid/Base Reactions / Properties of Acids and Bases",
+   "text": "Consider the following organic reaction. Br Reaction condition X CH3CH2CH2CH3 Br2 CH3CH2CHCH3 HBr + + In the space provided, identify reaction condition X and name the organic product. Reaction condition X IUPAC name of organic product Do Question 22 (2 marks) NOT\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "chemistry-2017-chem202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Organic Chemistry / Alcohols",
+   "text": "Which of the following structural formulae represents 1,2-dibromopentane?\nB. Br Br H H H Br H H H H H C C C C C H Br C C C C C H H H H H H H H H H H\nEthanol\nD. Br H Br H H Br H H Br H H C C C C C H H C C C C C H H H H H H H H H H H Pb2+\nEthyl ethanoate"
+  },
+  {
+   "id": "chemistry-2017-chem202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "A student is presented with two clear colourless solutions. One contains and the Na+ other ions. Which ion can be added to the solutions to identify the solutions? I−\n+\nNH\nOption C\nOption D"
+  },
+  {
+   "id": "chemistry-2017-chem202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "PCl3 and Cl2 were introduced to an empty sealed vessel. PCl3 reacted with Cl2 to produce PCl5. PCl ( g) Cl2( g) PCl5( g) + \nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "chemistry-2017-chem202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Organic Chemistry / Hydrocarbons",
+   "text": "What is the pH of a 0.25 mol solution of hydrochloric acid?\n0.60 −\n0.25 −\n0.25\n0.60"
+  },
+  {
+   "id": "chemistry-2017-chem202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Organic Chemistry / Hydrocarbons",
+   "text": "Copper ions can form coloured complexes with water molecules and with chloride ions in dilute aqueous solutions. Complex ion Colour 9Cu(H 2+ )6C O Blue\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "chemistry-2017-chem202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "An alkene X with only one C C bond undergoes an addition reaction with an unknown substance to produce Y. X + unknown substance Y The following table shows the molecular ion peaks for X and Y. X Y 70 m /z 90 m /z Which of the following can be the unknown substance?\nWater\nFluorine\nHydrogen\nHydrogen fluoride"
+  },
+  {
+   "id": "chemistry-2017-chem202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Organic Chemistry / Reactions of Organic Acids and Bases",
+   "text": "Some Torres Strait Islander Peoples pound the leaves of the vine to Derris uliginosa extract a chemical called saponin. Saponin is a relatively large molecule that contains both a water-soluble carbohydrate chain and a fat-soluble side chain. Which is the most likely use of saponin?\nAs a cleaning agent\nAs a neutraliser of insect bites\nAs a dye for pigmentation and painting\nAs an additive to food for flavouring and tenderising"
+  },
+  {
+   "id": "chemistry-2017-chem202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "Which of the following options lists ALL the forces that are present between molecules of butanoic acid?\nCovalent bonding\nDispersion and dipole-dipole\nCovalent bonding and hydrogen bonding\nDispersion, dipole-dipole and hydrogen bonding"
+  },
+  {
+   "id": "chemistry-2017-chem202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria",
+   "text": "The structures of two substances, X and Y, are shown. H H O H H H H C C C O H C C N H H H H H X Y Which row of the table correctly classifies these substances as a Brønsted−Lowry acid or a Brønsted−Lowry base? Brønsted−Lowry Brønsted−Lowry acid base\n− X and Y\nX and Y −\nY X\nX Y"
+  },
+  {
+   "id": "chemistry-2017-chem202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Organic Chemistry / Hydrocarbons",
+   "text": "Consider the following reaction. Fe(NO3 )3(aq) 3AgNO (aq) FeCl (aq) 3AgCl( s) +  +\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "chemistry-2017-chem202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Organic Chemistry / Hydrocarbons",
+   "text": "Which row of the table correctly shows the expected signs of the enthalpy (DH ) and entropy (DS ) changes for the complete combustion of octane above 100°C? DH DS\n0 0 > <\n0 0 < <\n0 0 < >\n> 0 0 >"
+  },
+  {
+   "id": "chemistry-2017-chem202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "The equation for the decomposition of hydrogen iodide is shown. –1 2HI( g) I 2(g) H2(g ) +52 kJ mol DH  + = The equilibrium formed during this reaction was investigated in two experiments carried out at different temperatures. The initial and equilibrium concentrations for both experiments are shown in the table, with only the for Experiment 1 shown. Keq Initial Equilibrium Equilibrium concentrations concentrations constant (K ) (mol L–1) (mol L–1) eq 7HIA 7H2A 7I2A 7HIA 7H2A 7I2A 10−2 Experiment 1 0.06 0.00 0.00 0.04 0.01 0.01 6 × Experiment 2 0.00 0.04 0.04 0.04 0.02 0.02 ? Which row in the table correctly compares features of the two experiments? K Temperature of eq experiment\nLower in 1 Lower in 2\nLower in 1 Higher in 2\nHigher in 1 Lower in 2\nHigher in 1 Higher in 2"
+  },
+  {
+   "id": "chemistry-2017-chem202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "Consider the following sequence of reactions. • Prop-2-en-1-ol was reacted with hydrogen gas to form liquid X. • X was oxidised, producing liquid Y that formed bubbles of a gas when reacted with aqueous sodium carbonate. • Y was heated under reflux with methanol and a drop of concentrated sulfuric acid, producing an organic liquid, Z. This process has been presented in the flow chart below. H2 Oxidation Methanol X Y Z OH H+ Pd catalyst , D Prop-2-en-1-ol Which option correctly identifies the structures for X, Y and Z? X Y Z O O\nOH OH O O\nOH O O O\nOH O O O\nOH OH O"
+  },
+  {
+   "id": "chemistry-2017-chem202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Factors that Affect Equilibrium",
+   "text": "A single straight strand of polyester was produced through a condensation reaction of 1000 molecul es of 3-hydroxypropanoic acid, HOCH2CH2COOH. (in −1) What is the approximate molar mass of the strand g mol ?\n72 062\n72 080\n90 060\n90 078"
+  },
+  {
+   "id": "chemistry-2017-chem202517",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria",
+   "text": "The chemical environment of an atom depends on the species surrounding that atom within a molecule. In which of the following compounds does the number of carbon chemical environments equal the number of proton chemical environments?\nH B. H H H H H C H O H O H C C C H H C C C H H H H H H H\nOption B\nD. H O H H H C C C H H C C C H H H H\nOption D"
+  },
+  {
+   "id": "chemistry-2017-chem202518",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "The concentration of silver ions in a solution is determined by titrating it with aqueous sodium chloride, using yellow potassium chromate as the indicator. Which row of the table correctly identifies the colour change at the endpoint and the more soluble salt? Colour change More soluble salt at endpoint\nRed to yellow Ag2CrO4\nYellow to red Ag2CrO4\nRed to yellow AgCl\nYellow to red AgCl"
+  },
+  {
+   "id": "chemistry-2017-chem202519",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Factors that Affect Equilibrium",
+   "text": "L−1 0.1 mol of solid sodium acetate is dissolved in 500 mL of 0.1 mol HCl in a beaker. This solution has a pH of 4.8. 500 mL of distilled water is then added to the beaker. What is the pH of the final solution?\n2.4\n4.5\n4.8\n5.1 (Ag2C2O4 )"
+  },
+  {
+   "id": "chemistry-2017-chem202520",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria",
+   "text": "The solubility constant for silver(I) oxalate was determined using the following method. • 2.0 g of solid Ag2C2O4 was added to 100 mL of distilled water. • A sample of the saturated solution above the undissolved Ag2C2O4 was diluted by a factor of 2000, using distilled water. • This diluted solution was analysed using atomic absorption spectroscopy (AAS). The calibration curve for the AAS is provided below. [Ag+] Absorbance vs 0.12 0.10 0.08 Absorbance 0.06 0.04 0.02 0 0 0.05 0.10 0.15 0.20 0.25 (× L−1) [Ag+] 10−6 mol The absorbance of the diluted sample was 0.055. What is the for silver oxalate? Ksp −14\n8.8 10 × 10−12\n5.3 × 10−11\n1.1 × 10−11\n2.1 ×"
+  },
+  {
+   "id": "chemistry-2017-chem202521",
+   "year": 2025,
+   "number": "21",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "Consider the following organic reaction. Br Reaction condition X CH3CH2CH2CH3 + Br2 CH3CH2CHCH3 + HBr In the space provided, identify reaction condition X and name the organic product. 2 Reaction condition X IUPAC name of organic product"
+  },
+  {
+   "id": "chemistry-2017-chem202522",
+   "year": 2025,
+   "number": "22",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions",
+   "text": "Outline why quantitative and qualitative analyses are BOTH important in determining water quality. 2 Do NOT write in this area."
+  },
+  {
+   "id": "chemistry-2017-chem202523",
+   "year": 2025,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry",
+   "text": "A student attempted to determine the % w/w of sulfate in a sample of solid fertiliser. They used the procedure described below. 1. Weigh a clean, dry beaker. 2. Add fertiliser to the beaker and weigh again. 3. Add 250 mL of distilled water and stir thoroughly. 4. Add 20 mL of 0.1 mol L−1 BaCl2 solution. 5. Filter out the BaSO4 precipitate, using distilled water to ensure all of the solid is transferred from the beaker to the filter paper. 6. Put the filter paper and precipitate onto a weighed watch glass and leave them to dry for 20 minutes in the sun. 7. Weigh the watch glass, the filter paper and the precipitate. 8. Calculate the % w/w. Justify TWO changes that can be made to the procedure to ensure more accurate results. 3 Do NOT write in this area."
+  },
+  {
+   "id": "chemistry-2017-chem202524",
+   "year": 2025,
+   "number": "24",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry / Polymers",
+   "text": "65.0 g of ethyne gas reacts with an excess of gaseous hydrogen chloride to produce chloroethene.\nDraw the full structural formula of ethyne and identify the shape of the molecule. Structural formula Shape of molecule\nThe molar masses of the compounds in the reaction are provided. Compound Molar mass Ethyne 26.04 Hydrogen chloride 36.46 Chloroethene 62.50 Calculate the mass of chloroethene produced, using the molar masses provided. Include a relevant chemical equation in your answer. Do  NOT  write  in  this  area."
+  },
+  {
+   "id": "chemistry-2017-chem202525",
+   "year": 2025,
+   "number": "25",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Quantitative Analysis",
+   "text": "A student produced the ester propyl butanoate in the school laboratory, by refluxing 0.267 mol of propan-1-ol and 0.298 mol of butanoic acid with a catalyst. Use the data in the table to calculate the percentage yield of the ester. 3 Product Volume produced Density (g mL−1) Molar mass (g mol−1) propyl butanoate 12.2 0.873 130.2 Please turn over Do NOT write in this area."
+  },
+  {
+   "id": "chemistry-2017-chem202526",
+   "year": 2025,
+   "number": "26",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq)",
+   "text": "A hydrogen atom on the methyl group of ethanoic acid can be replaced with a single halogen atom. A general formula for these haloethanoic acids is shown. X– CH2COOH (X = F, Cl, Br or I) The pKa values of the four haloethanoic acids are given in the table. Acid X pKa Fluoroethanoic acid F 2.6 Chloroethanoic acid Cl 2.9 Bromoethanoic acid Br 2.9 Iodoethanoic acid I 3.2 Do NOT write in this area.\nConstruct an appropriate graph for the four haloethanoic acids, showing their pKa values and the identity of the halogen X in each molecule, in the order provided in the table. X (in X–CH2COOH)\nDescribe the trend in the relative strengths of the haloethanoic acids. Do  NOT  write  in  this  area."
+  },
+  {
+   "id": "chemistry-2017-chem202527",
+   "year": 2025,
+   "number": "27",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "Mixtures of hydrocarbons can be obtained from crude oil by the process of fractional distillation. Examples include petrol, diesel and natural gas.\nOutline an environmental implication for a use of a named hydrocarbon mixture that is obtained from crude oil.\nEthene is a simple hydrocarbon obtained from crude oil. Using structural formulae, write the chemical equation for the conversion of ethene to ethanol, including any other necessary reagents. Do  NOT  write  in  this  area.\nWhen ethanol is reacted with ethanoic acid, ethyl ethanoate is formed, as shown by the equation. ethanol + ethanoic acid  ethyl ethanoate + water The graph below shows the concentration of ethanol from the start of the reaction, t0, up to a time t1. At time t1, an additional amount of ethanol is added to the system. Sketch on the graph the changes that occur in the concentration of ethanol between time t1, and when the system reaches a new equilibrium before time t2. 6Ethanol@ t0 t1 t2 Time Do  NOT  write  in  this  area."
+  },
+  {
+   "id": "chemistry-2017-chem202528",
+   "year": 2025,
+   "number": "28",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Quantitative Analysis",
+   "text": "Kevlar and polystyrene are two common polymers. A section of their structures is shown. H N O H N N H O N H Kevlar Polystyrene\nKevlar is produced through a reaction of two different monomers, one of which is shown. Draw the missing monomer in the box provided. Cl O O Cl Do  NOT  write  in  this  area.\nKevlar chains are hard to pull apart, whereas polystyrene chains are not. With reference to intermolecular forces, explain the difference in the physical properties of the two polymers. Please turn over Do  NOT  write  in  this  area."
+  },
+  {
+   "id": "chemistry-2017-chem202529",
+   "year": 2025,
+   "number": "29",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry",
+   "text": "Consider the following reaction. 2NO ( g) N O ( g) DH 57.2 kJ mol –1 = − 2  2 4 A sealed reaction vessel of fixed volume contains a mixture of NO2 and N2O4 gases at equilibrium. Explain the impact of the addition of argon, an inert gas, on the temperature of the system. 4 Do NOT write in this area."
+  },
+  {
+   "id": "chemistry-2017-chem202530",
+   "year": 2025,
+   "number": "30",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Applying Chemical Ideas / Analysis of Organic Substances",
+   "text": "Phosgene is used in industry as a starting material to synthesise useful polymers. Phosgene (Cl2CO) is a gas at room temperature and is highly toxic.\nJustify a suitable precaution when using phosgene.\nPhosgene ( ) synthesised by the reaction of carbon monoxide (CO) and chlorine Cl2 in the gas phase. Cl2( g) + CO( g)  Cl2CO( g) Explain why an excess of carbon monoxide and a catalyst are used in the industrial synthesis of phosgene. Do  NOT  write  in  this  area."
+  },
+  {
+   "id": "chemistry-2017-chem202531",
+   "year": 2025,
+   "number": "31",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Quantitative Analysis",
+   "text": "Hydrazine is a compound of hydrogen and nitrogen. The complete combustion of 1.0 L of gaseous hydrazine requires 3.0 L of oxygen, producing 2.0 L of nitrogen dioxide gas and 2.0 L of water vapour. All volumes are measured at 400°C.\nUse the chemical equation for the combustion of hydrazine to show that the molecular formula for hydrazine is N 2H4.\nThe relationship between the acid equilibrium conjugate base equilibrium constant ( b) constant K a and the corresponding K is shown. K × K = K w Use a relevant chemical equation to calculate the pH of a 0.20 mol L−1 solution of N2H + 5 using the following data: • the K −6 b of hydrazine is 1.7 × 10 at 25°C • N2H + 5 is the conjugate acid of N2H4. ( ) Do  NOT  write  in  this  area."
+  },
+  {
+   "id": "chemistry-2017-chem202532",
+   "year": 2025,
+   "number": "32",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Organic Chemistry / Hydrocarbons",
+   "text": "The following three solids were added together to 1 litre of water: • 0.006 mol Mg (NO3)2 • 0.010 mol NaOH • 0.002 mol Na 2CO3. Which precipitate(s), if any, will form? Justify your answer with appropriate calculations. 5 Do NOT write in this area."
+  },
+  {
+   "id": "chemistry-2017-chem202533",
+   "year": 2025,
+   "number": "33",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Solution Equilibria",
+   "text": "Chalk is predominantly calcium carbonate. Different brands of chalk vary in their calcium carbonate composition. The table shows the composition of three different brands of chalk. Brand X Brand Y Brand Z CaCO3 (%) 85.5 83.9 82.4 The following procedure was used to determine the calcium carbonate composition of a chalk sample. • A sample of chalk was crushed in a mortar and pestle. • A 3.00 g sample of the crushed chalk was placed in a conical flask. • 100.0 mL of 0.550 mol L −1 HCl(aq) was added to the sample and left to react completely, resulting in a clear solution. • Four 20 mL aliquots of this mixture were then titrated with 0.10 mol L−1 KOH. The results of the titrations are recorded. Burette volume (mL) Trial 1 Trial 2 Trial 3 Trial 4 Final 7.80 14.90 22.10 29.25 Initial 0.00 7.80 14.90 22.10 Total used 7.80 7.10 7.20 7.15 Determine the brand of the chalk sample. Include a relevant chemical equation in your answer. 7 Do NOT write in this area. Do NOT write in this area."
+  },
+  {
+   "id": "chemistry-2017-chem202534",
+   "year": 2025,
+   "number": "34",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions / Using Brønsted–Lowry Theory",
+   "text": "A 0.010 L aliquot of an acid was titrated with 0.10 mol L−1 NaOH, resulting in the following titration curve. pH vs Volume of base added 14.0 12.0 10.0 8.0 pH 6.0 4.0 2.0 0.00 0.010 0.020 0.030 0.040 0.050 0.060 NaOH (L)\nCalculate the Ka for the acid used. Do  NOT  write  in  this  area.\nThe concentration of the NaOH was 0.10 mol L−1. Explain why the pH of the final solution never reached 13. Please turn over Do  NOT  write  in  this  area."
+  },
+  {
+   "id": "chemistry-2017-chem202535",
+   "year": 2025,
+   "number": "35",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Equilibrium and Acid Reactions / Calculating the Equilibrium Constant (Keq)",
+   "text": "A purple solution at 25°C contains a mixture of two different cobalt(II) complexes which are at equilibrium. CoCl 2− 4 (aq) + 6H2O(l )  Co(H2O) 2+ + 6 (aq) 4Cl−(aq) The results of heating and cooling a sample of this solution are given in the table. Temperature (°C) Colour of solution The energy profile diagram for this reaction is shown. Enthalpy Ea1 Ea2 Reactants Products Reaction coordinate How do collision theory and Le Chatelier’s principle account for the colour change to pink when the solution is cooled? Refer to the energy profile diagram in your answer. Do NOT write in this area. Do NOT write in this area. CH3, CH2 , CH CH2 OH or CH2 NH"
+  },
+  {
+   "id": "chemistry-2017-chem202536",
+   "year": 2025,
+   "number": "36",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Acid/Base Reactions",
+   "text": "Use the data sheet provided and the information in the table to answer this question. 1H NMR chemical shift data Type of proton Common functional groups d (ppm) hydrocarbons 0.7–2.1 CH3 CO CH2 CO CH2 CO aldehydes, ketones, carboxylic acids or esters 2.1–4.5 alcohols or amines 0.5–4.8 COOH carboxylic acid 9.0–13.0 Consider the molecule shown. HO O For each of the following instrumental techniques, predict the expected features of the spectra produced. Refer to the structural features of the molecule in your answer. • Infrared (IR) (Ignore any absorptions due to C C or C H) • Carbon-13 NMR • Proton NMR • Mass spectroscopy 7 Do NOT write in this area. Do NOT write in this area. Do NOT write in this area."
+  }
+ ]
+}

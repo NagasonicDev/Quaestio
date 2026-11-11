@@ -1,0 +1,422 @@
+{
+ "fc2020_q1": {
+  "code": null,
+  "confidence": "low",
+  "why": "listening stem only; no theme evidence"
+ },
+ "fc2020_q2": {
+  "code": null,
+  "confidence": "low",
+  "why": "phone call purpose; no theme identified"
+ },
+ "fc2020_q3": {
+  "code": "HSC-M3-T2-D2",
+  "confidence": "medium",
+  "why": "job suitability; careers and occupations"
+ },
+ "fc2020_q4": {
+  "code": null,
+  "confidence": "low",
+  "why": "main points summary; no topic given"
+ },
+ "fc2020_q5": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "low",
+  "why": "postcards vs social media; technology theme"
+ },
+ "fc2020_q6": {
+  "code": "HSC-M1-T4-D1",
+  "confidence": "high",
+  "why": "boxing likelihood; sport and leisure"
+ },
+ "fc2020_q7": {
+  "code": null,
+  "confidence": "low",
+  "why": "product advertisement; theme unclear"
+ },
+ "fc2020_q8": {
+  "code": "HSC-M3-T4-D1",
+  "confidence": "medium",
+  "why": "youth forum speaker; young person world"
+ },
+ "fc2020_q9": {
+  "code": "HSC-M1-T3-D1",
+  "confidence": "high",
+  "why": "school timetable changes; school life"
+ },
+ "fc2020_q10": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "air pollution purifiers; environment"
+ },
+ "fc2020_q11": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "sister, parents, shoplifting; family relationships"
+ },
+ "fc2020_q12": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "beach summer holiday invitation; travel"
+ },
+ "fc2020_q13a": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "living overseas six months; traveller abroad"
+ },
+ "fc2020_q13b": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "family gathering; family relationships"
+ },
+ "fc2021_q1": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "visiting mother; family relationships"
+ },
+ "fc2021_q2": {
+  "code": null,
+  "confidence": "low",
+  "why": "rewards card form; consumer theme unclear"
+ },
+ "fc2021_q3": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "feelings about the trip; travel"
+ },
+ "fc2021_q4": {
+  "code": null,
+  "confidence": "low",
+  "why": "ad purpose; topic not identifiable"
+ },
+ "fc2021_q5": {
+  "code": null,
+  "confidence": "low",
+  "why": "ZR21 service unexplained; no theme"
+ },
+ "fc2021_q6": {
+  "code": null,
+  "confidence": "low",
+  "why": "differing viewpoints; topic unknown"
+ },
+ "fc2021_q7": {
+  "code": null,
+  "confidence": "low",
+  "why": "couple actions; topic unknown"
+ },
+ "fc2021_q8": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "medium",
+  "why": "discovery days cultural event ad; arts"
+ },
+ "fc2021_q9": {
+  "code": "HSC-M3-T4-D1",
+  "confidence": "high",
+  "why": "grounded teen forum; young person world"
+ },
+ "fc2021_q10": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "medium",
+  "why": "dogs in city apartments; daily life"
+ },
+ "fc2021_q11": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "moving to countryside; rural lifestyle"
+ },
+ "fc2021_q12": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "medium",
+  "why": "meeting favourite celebrity; entertainment"
+ },
+ "fc2021_q13a": {
+  "code": "HSC-M1-T3-D1",
+  "confidence": "high",
+  "why": "school fundraising article; school life"
+ },
+ "fc2021_q13b": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "medium",
+  "why": "French Cultural Day; arts and culture"
+ },
+ "fc2022_q1": {
+  "code": null,
+  "confidence": "low",
+  "why": "looking forward to; no theme"
+ },
+ "fc2022_q2": {
+  "code": null,
+  "confidence": "low",
+  "why": "announcement purpose; no theme"
+ },
+ "fc2022_q3": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "Impressionists exhibition feedback; arts"
+ },
+ "fc2022_q4": {
+  "code": null,
+  "confidence": "low",
+  "why": "speaker main points; no topic"
+ },
+ "fc2022_q5": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "experiences in France; traveller abroad"
+ },
+ "fc2022_q6": {
+  "code": "HSC-M1-T3-D1",
+  "confidence": "high",
+  "why": "university readiness; post-school aspirations"
+ },
+ "fc2022_q7a": {
+  "code": null,
+  "confidence": "low",
+  "why": "ambulance or fire incident; no theme dot"
+ },
+ "fc2022_q7b": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "medium",
+  "why": "relationship with Laurent; relationships"
+ },
+ "fc2022_q8": {
+  "code": "HSC-M3-T2-D2",
+  "confidence": "high",
+  "why": "event planner career profile"
+ },
+ "fc2022_q9": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "high",
+  "why": "island weekend destination; travel"
+ },
+ "fc2022_q10": {
+  "code": "HSC-M3-T2-D2",
+  "confidence": "medium",
+  "why": "tutoring job offer; careers"
+ },
+ "fc2022_q11": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "friend award celebration; friendship"
+ },
+ "fc2022_q12a": {
+  "code": "HSC-M3-T4-D1",
+  "confidence": "medium",
+  "why": "youth club volunteer speech; young people"
+ },
+ "fc2022_q12b": {
+  "code": "HSC-M1-T3-D1",
+  "confidence": "high",
+  "why": "school wellbeing committee; school life"
+ },
+ "fc2023_q1": {
+  "code": null,
+  "confidence": "low",
+  "why": "annoyance reason; no theme"
+ },
+ "fc2023_q2": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "father and daughter; family"
+ },
+ "fc2023_q3": {
+  "code": null,
+  "confidence": "low",
+  "why": "gratitude to Benjamin; no theme"
+ },
+ "fc2023_q4": {
+  "code": null,
+  "confidence": "low",
+  "why": "catering company hiring; theme unclear"
+ },
+ "fc2023_q5": {
+  "code": "HSC-M1-T4-D1",
+  "confidence": "high",
+  "why": "birthday activity choice; leisure"
+ },
+ "fc2023_q6": {
+  "code": null,
+  "confidence": "low",
+  "why": "Tropique features; topic unknown"
+ },
+ "fc2023_q7": {
+  "code": null,
+  "confidence": "low",
+  "why": "Maella attitude; no theme"
+ },
+ "fc2023_q8": {
+  "code": "HSC-M3-T2-D2",
+  "confidence": "medium",
+  "why": "profession changes; careers"
+ },
+ "fc2023_q9": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "parenting teenage son; family relationships"
+ },
+ "fc2023_q10": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "eco textile business; environment"
+ },
+ "fc2023_q11": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "volunteer work abroad; traveller abroad"
+ },
+ "fc2023_q12": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "note to best friend; friendship"
+ },
+ "fc2023_q13a": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "low",
+  "why": "shared apartment living; daily life"
+ },
+ "fc2023_q13b": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "medium",
+  "why": "live event; arts and entertainment"
+ },
+ "fc2024_q1": {
+  "code": null,
+  "confidence": "low",
+  "why": "cake order message; theme unclear"
+ },
+ "fc2024_q2": {
+  "code": null,
+  "confidence": "low",
+  "why": "Arthur decision; no theme"
+ },
+ "fc2024_q3": {
+  "code": null,
+  "confidence": "low",
+  "why": "announcement main points; no topic"
+ },
+ "fc2024_q4": {
+  "code": null,
+  "confidence": "low",
+  "why": "advertisement audience; no theme"
+ },
+ "fc2024_q5": {
+  "code": null,
+  "confidence": "low",
+  "why": "Sabine reply; topic unknown"
+ },
+ "fc2024_q6": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "medium",
+  "why": "quitting job; world of work"
+ },
+ "fc2024_q7": {
+  "code": null,
+  "confidence": "low",
+  "why": "Emma and Paul opinions; topic unknown"
+ },
+ "fc2024_q8": {
+  "code": null,
+  "confidence": "low",
+  "why": "Amelie feelings; context missing"
+ },
+ "fc2024_q9": {
+  "code": "HSC-M1-T3-D1",
+  "confidence": "high",
+  "why": "school behaviour notice; school life"
+ },
+ "fc2024_q10": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "island pollution; environment"
+ },
+ "fc2024_q11": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "brother wedding plans; family"
+ },
+ "fc2024_q12": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "medium",
+  "why": "house-sitting instructions; daily life"
+ },
+ "fc2024_q13a": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "trip not as advertised; travel"
+ },
+ "fc2024_q13b": {
+  "code": "HSC-M1-T4-D1",
+  "confidence": "high",
+  "why": "new activity enjoyed; leisure"
+ },
+ "fc2025_q1": {
+  "code": "HSC-M1-T3-D1",
+  "confidence": "high",
+  "why": "studying physics; post-school study"
+ },
+ "fc2025_q2": {
+  "code": null,
+  "confidence": "low",
+  "why": "message purpose; no theme"
+ },
+ "fc2025_q3": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "high",
+  "why": "holiday destination choice; travel"
+ },
+ "fc2025_q4": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "K-pop exhibition appeal; arts"
+ },
+ "fc2025_q5": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "good friend to Nathalie; friendship"
+ },
+ "fc2025_q6": {
+  "code": null,
+  "confidence": "low",
+  "why": "Olympics announcement; sport or travel ambiguous"
+ },
+ "fc2025_q7": {
+  "code": null,
+  "confidence": "low",
+  "why": "Robert plan; no theme"
+ },
+ "fc2025_q8": {
+  "code": "HSC-M3-T2-D2",
+  "confidence": "medium",
+  "why": "job interview feelings; careers"
+ },
+ "fc2025_q9": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "low",
+  "why": "social media influencer; technology"
+ },
+ "fc2025_q10": {
+  "code": "HSC-M1-T3-D1",
+  "confidence": "medium",
+  "why": "school fundraising initiative; school life"
+ },
+ "fc2025_q11": {
+  "code": "HSC-M3-T4-D1",
+  "confidence": "medium",
+  "why": "youth forum identity; young person world"
+ },
+ "fc2025_q12": {
+  "code": "HSC-M1-T2-D1",
+  "confidence": "high",
+  "why": "thanks to grandparent; family"
+ },
+ "fc2025_q13a": {
+  "code": "HSC-M3-T2-D2",
+  "confidence": "medium",
+  "why": "work experience evaluation; careers"
+ },
+ "fc2025_q13b": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "high",
+  "why": "work schedule negotiation; world of work"
+ }
+}

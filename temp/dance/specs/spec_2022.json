@@ -1,0 +1,262 @@
+{
+  "course_id": "course_dance",
+  "course_name": "Dance",
+  "id_prefix": "dance_2022",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 5,
+      "marks": 20,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T1-D7",
+        "HSC-M3-T2-D10",
+        "HSC-M3-T2-D11"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Prescribed dance works / Crystal Pite",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 1 (20 marks)\nExplain how Crystal Pite communicates personal struggles in Betroffenheit.\nIn your response, provide specific examples from the work."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Components of dance: movement, spatial elements, dynamic elements, dancers, setting and environment; organising the dance through repetition and formal structure.",
+              "Dance styles and theatrical elements: contemporary dance, tap dance, cabaret, musical theatre, vaudeville; voice portraying internal voices - alter ego; props, set and staging; music; lighting; costuming.",
+              "Repetition, rigid structure, systematic deconstruction and reconstruction.",
+              "Personal struggles could include but are not limited to: grief, anger, emptiness, escapism, coping mechanisms, psychological impact, despair, humour, denial, masking pain, finding the thing worth saving which is the memory of those lost.",
+              "The work follows the aftermath of the accidental fire that took Crystal Pite's relatives."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "17-20 marks: Provides a detailed explanation of how Crystal Pite communicates personal struggles in Betroffenheit; uses detailed examples and language to clearly support the response; presents a logical and cohesive response.",
+              "13-16 marks: Provides a sound explanation of how Crystal Pite communicates personal struggles in Betroffenheit; uses relevant examples and language to support the response; presents a logical response.",
+              "9-12 marks: Provides a general explanation of how Crystal Pite communicates personal struggles in Betroffenheit; uses some examples and language; attempts to present a structured response.",
+              "5-8 marks: Provides a limited understanding of Betroffenheit; uses basic examples and/or language; presents a limited response.",
+              "1-4 marks: Provides information about aspects of Betroffenheit; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2022 HSC Dance",
+        "year": 2022,
+        "original_question_no": "1",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 2 (10 marks)\nExplain how Merce Cunningham extended the boundaries of dance to reflect the era 1955-1975.\nIn your response, provide specific examples from his works."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Cunningham was at the forefront of modern dance for over 50 years due to innovative practices; created Merce Cunningham Dance Company.",
+              "Collaborative process relying on the autonomy of music, dance and design; rejected psychological and dramatic content.",
+              "Collaborated with renowned musicians, graphic artists and fashion designers to move beyond the world of dance - profound impact on Avant-Garde art.",
+              "Manipulated space and time (Points in Space); rejected 'front and centre', encouraging audiences to look at the whole stage; challenged traditional ideas of dance and the role of dancers/audience.",
+              "Used the idea of chance and randomness as a creative tool (I Ching, dice, coin toss); dancers were often not informed of the order of sequences until the night of performance.",
+              "Rejected storytelling in dance - believed dance did not need a beginning, middle and end; believed the human body was the source of inspiration.",
+              "Developed his own dance notation for recording choreography; dancers trained with him formed their own companies continuing his influence."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how Merce Cunningham extended the boundaries of dance to reflect the era 1955-1975; uses detailed examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how Merce Cunningham extended the boundaries of dance to reflect the era 1955-1975; uses relevant examples and language to support the response; presents a logical response.",
+              "5-6 marks: Provides a general explanation of how Merce Cunningham extended the boundaries of dance to reflect the era 1955-1975; uses some examples and language; attempts to present a structured response.",
+              "3-4 marks: Provides a limited understanding of Merce Cunningham and/or the era 1955-1975; uses basic examples and/or language; presents a limited response.",
+              "1-2 marks: Provides information about aspects of Merce Cunningham; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2022 HSC Dance",
+        "year": 2022,
+        "original_question_no": "2",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 3 (10 marks)\nExplain how Lucinda Childs' ideas about dance have established her as a seminal artist.\nIn your response, provide specific examples from her works."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "American postmodern dancer and choreographer; challenged the scope of movement by manipulating movements and complex transitions.",
+              "Site-specific works for the first thirteen years of her choreographic journey; took dance to churches, museums, galleries and streets.",
+              "Alters the slightest movements into intricate choreography; patterns, repetition and dialect are characteristics unique to her style.",
+              "Dance style described as conceptual dance; where dancers are in space, arrangement of sections and order of movements are free.",
+              "Beauty lies in spatial exploration and design; uses pedestrian movement such as skipping or turning to create locomotor patterns.",
+              "Often pairs movement with monologue (Street Dance 1964); uses music as source of inspiration; musical collaboration with Philip Glass.",
+              "Non-traditional audiences eg occupants of a nearby loft; challenged audiences with non-traditional dance; created Lucinda Childs Dance Company.",
+              "Worked in opera and ballet as well as her own productions."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how Lucinda Childs' ideas about dance have established her as a seminal artist; uses detailed examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how Lucinda Childs' ideas about dance have established her as a seminal artist; uses relevant examples and language to support the response; presents a logical response.",
+              "5-6 marks: Provides a general explanation of how Lucinda Childs' ideas about dance have established her as a seminal artist; uses some examples and language; attempts to present a structured response.",
+              "3-4 marks: Provides a limited understanding of Lucinda Childs' ideas about dance and/or being a seminal artist; uses basic examples and/or language; presents a limited response.",
+              "1-2 marks: Provides information about aspects of Lucinda Childs; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2022 HSC Dance",
+        "year": 2022,
+        "original_question_no": "3",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    }
+  ]
+}

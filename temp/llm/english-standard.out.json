@@ -1,0 +1,277 @@
+{
+ "es202001": {
+  "code": "HSC-M2-T1-D2",
+  "confidence": "medium",
+  "why": "Text disrupts cultural assumptions, shaping perceptions of culture"
+ },
+ "es202002": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Stylistic choices shape meaning of resistance and conformity"
+ },
+ "es202003": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Form and language shape ideas of acceptance, prejudice"
+ },
+ "es202004": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Poetic form shapes appreciation and indifference"
+ },
+ "es202005": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Poetic language shapes loss and discovery"
+ },
+ "es202006": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Dramatic form shapes creativity and conformity"
+ },
+ "es202007": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Dramatic language shapes conflict and reconciliation"
+ },
+ "es202008": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Nonfiction form shapes resentment and forgiveness"
+ },
+ "es202009": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Film techniques shape ideas of resistance and acceptance"
+ },
+ "es202010": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Media form shapes questions of perception and truth"
+ },
+ "es202011": {
+  "code": "HSC-M4-T2-D4",
+  "confidence": "high",
+  "why": "Compose imaginative piece from stimulus extract style"
+ },
+ "es202101": {
+  "code": "HSC-M2-T1-D2",
+  "confidence": "high",
+  "why": "Language features construct identity within a community"
+ },
+ "es202102": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "Character and setting position reader for personal, intellectual connection"
+ },
+ "es202103": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "Character and setting position reader for personal, intellectual connection"
+ },
+ "es202104": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "People and places position reader for personal, intellectual connection"
+ },
+ "es202105": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "People and places position reader for personal, intellectual connection"
+ },
+ "es202106": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "Character and setting position audience for personal, intellectual connection"
+ },
+ "es202107": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "Character and setting position audience for personal, intellectual connection"
+ },
+ "es202108": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "People and places position reader for personal, intellectual connection"
+ },
+ "es202109": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "Character and setting position audience for personal, intellectual connection"
+ },
+ "es202110": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "Character and setting position audience for personal, intellectual connection"
+ },
+ "es202111": {
+  "code": "HSC-M4-T2-D5",
+  "confidence": "medium",
+  "why": "Reflect on creative decisions using prescribed text metalanguage"
+ },
+ "es202201": {
+  "code": "HSC-M2-T1-D2",
+  "confidence": "high",
+  "why": "Language changes perceptions about identity"
+ },
+ "es202202": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive qualities of form and language shape central ideas"
+ },
+ "es202203": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive qualities of form and language shape central ideas"
+ },
+ "es202204": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive poetic qualities shape central ideas"
+ },
+ "es202205": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive poetic qualities shape central ideas"
+ },
+ "es202206": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive dramatic qualities shape central ideas"
+ },
+ "es202207": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive dramatic qualities shape central ideas"
+ },
+ "es202208": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive nonfiction qualities shape central ideas"
+ },
+ "es202209": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive film qualities shape central ideas"
+ },
+ "es202210": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "high",
+  "why": "Distinctive media qualities shape central ideas"
+ },
+ "es202211": {
+  "code": "HSC-M4-T2-D4",
+  "confidence": "medium",
+  "why": "Compose imaginative or discursive piece from stimulus about senses"
+ },
+ "es202301": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "high",
+  "why": "Shared human experiences represented as valuable"
+ },
+ "es202302": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "medium",
+  "why": "Personal experience shapes reader perspective on kindness"
+ },
+ "es202303": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "low",
+  "why": "Character personal experience of place and home"
+ },
+ "es202304": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "medium",
+  "why": "Language conveys emotional, personal experience of new places"
+ },
+ "es202305": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "medium",
+  "why": "Public-world perspective on consumerism expands reader understanding"
+ },
+ "es202306": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "high",
+  "why": "Collective human experiences and perspectives enrich world view"
+ },
+ "es202401": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Place and cultural context shape meaning"
+ },
+ "es202402": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Place and cultural context shape meaning"
+ },
+ "es202403": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Family and cultural context shape meaning"
+ },
+ "es202404": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Place and cultural context shape meaning"
+ },
+ "es202405": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Change and cultural context shape meaning"
+ },
+ "es202406": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Change and cultural context shape meaning"
+ },
+ "es202407": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Change and cultural context shape meaning"
+ },
+ "es202408": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Family and cultural context shape meaning"
+ },
+ "es202409": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Change and cultural context shape meaning"
+ },
+ "es202410": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Place and cultural context shape meaning"
+ },
+ "es202411": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Change and cultural context shape meaning"
+ },
+ "es202412": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "Literature shapes and enriches understanding, positioning readers"
+ },
+ "es202413": {
+  "code": "HSC-M4-T2-D4",
+  "confidence": "medium",
+  "why": "Compose imaginative piece from stimulus; explain one device"
+ },
+ "es202501": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "medium",
+  "why": "Cultural context shapes benefits and challenges of belonging"
+ },
+ "es202502": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "Key features shape meaning, exposing values and attitudes"
+ },
+ "es202503": {
+  "code": "HSC-M4-T2-D4",
+  "confidence": "high",
+  "why": "Compose imaginative or discursive piece from stimulus on memory"
+ }
+}

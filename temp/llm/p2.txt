@@ -1,0 +1,160 @@
+multi202101|HSC-M4-T5-D2|high|serif font identification
+multi202102|HSC-M4-T5-D13|high|scanner converts image to digital file
+multi202103|HSC-M2-T2-D65|medium|streaming connection speed units
+multi202104|HSC-M4-T5-D11|medium|GIF supports transparency
+multi202105|HSC-M2-T2-D43|high|motion capture for animation
+multi202106|HSC-M4-T5-D20|high|anti-aliasing smooths jagged lines
+multi202107|HSC-M2-T2-D35|high|tweening between key frames
+multi202108|HSC-M2-T2-D64|medium|PNG is lossless format
+multi202109|HSC-M2-T2-D36|high|frame rates for slow motion
+multi202110|HSC-M2-T2-D65|medium|data transfer time at connection speed
+multi202111|HSC-M2-T2-D68|medium|software for vector graphics
+multi202112|HSC-M2-T2-D6|high|digital audio wave pattern diagram
+multi202113|HSC-M4-T5-D5|high|image file size from colour depth
+multi202114|HSC-M2-T2-D16|high|video compression quality and storage
+multi202115|HSC-M2-T2-D80|high|ethical issues in multimedia
+multi202116|HSC-M2-T1-D22|high|industrial relations issues
+timber202101|HSC-M1-T2-D108|medium|select face side first
+timber202102|HSC-M1-T2-D67|medium|screw gauge number
+timber202103|null|high|placeholder question text
+timber202104|HSC-M1-T2-D62|medium|veneer is finely sliced timber
+timber202105|HSC-M1-T2-D77|high|table clips attach tabletop
+timber202106|null|medium|nail extraction leverage not covered
+timber202107|HSC-M1-T2-D137|high|housing joint trench depth
+timber202108|HSC-M1-T2-D71|high|cam lock knockdown fastener
+timber202109|HSC-M1-T2-D110|high|shellac with methylated spirits
+timber202110|HSC-M1-T2-D43|high|quarter sawing wastes timber
+timber202111|HSC-M1-T2-D169|medium|identify timber tool
+timber202112|HSC-M1-T2-D43|high|kiln versus air seasoning
+timber202113|HSC-M1-T2-D101|medium|cutting list and material cost
+timber202114|HSC-M1-T2-D59|high|plywood manufacture from log
+timber202115|HSC-M1-T2-D56|medium|environmental factors timber furniture
+timber202116|HSC-M2-T1-D22|high|industrial relations issues
+auto202201|HSC-M4-T1-D6|high|LPG stands for liquefied petroleum gas
+auto202202|HSC-M4-T1-D93|high|fuse value in fuse box
+auto202203|HSC-M4-T1-D2|medium|electric vehicle battery type
+auto202204|HSC-M4-T1-D111|medium|torque wrench for head bolts
+auto202205|HSC-M4-T1-D71|high|rack and pinion advantage
+auto202206|HSC-M4-T1-D75|high|four wheel steering features
+auto202207|HSC-M4-T1-D53|high|overinflation tyre wear pattern
+auto202208|null|medium|optional extra not covered by dots
+auto202209|HSC-M4-T1-D95|high|mechanical gauge advantage
+auto202210|HSC-M4-T1-D42|high|catalytic converter function
+auto202211|HSC-M4-T1-D14|high|alternative fuel source
+auto202212|HSC-M4-T1-D20|high|cylinder sleeve installation reason
+auto202213|null|medium|engine displacement calculation not covered
+auto202214|HSC-M4-T1-D52|high|limited slip differential advantages
+auto202215|null|medium|fuel economy driving actions not covered
+auto202216|HSC-M2-T1-D29|high|WHS legislation and safe workplace
+elec202201|HSC-M4-T2-D64|high|identify measurement equipment
+elec202202|HSC-M4-T2-D23|high|capacitor stores charge
+elec202203|HSC-M4-T2-D23|low|resistor tolerance characteristic
+elec202204|HSC-M4-T2-D14|high|silicon common semiconductor material
+elec202205|HSC-M4-T2-D6|high|binary to decimal conversion
+elec202206|HSC-M4-T2-D39|high|UHF system tuner changes frequency
+elec202207|null|high|placeholder question text
+elec202208|HSC-M4-T2-D17|high|microprocessor control unit
+elec202209|HSC-M4-T2-D5|high|analogue continuous variable signal
+elec202210|HSC-M4-T2-D47|high|PCB construction step order
+elec202211|HSC-M4-T2-D45|medium|soldering fault cause
+elec202212|HSC-M4-T2-D17|medium|microprocessor application
+elec202213|null|high|circuit component costing not covered
+elec202214|HSC-M4-T2-D37|high|how a buzzer works
+elec202215|HSC-M4-T2-D65|high|analogue versus digital meters
+elec202216|HSC-M2-T1-D29|high|WHS legislation and safe workplace
+graph202201|null|medium|pencil grade not covered by dots
+graph202202|HSC-M3-T1-D3|medium|identify pictorial drawing type
+graph202203|HSC-M1-T1-D3|high|section view type AS1100
+graph202204|HSC-M1-T1-D3|high|section view type AS1100
+graph202205|HSC-M3-T1-D7|high|view from back orthographic
+graph202206|HSC-M3-T1-D18|high|Australian architectural style 1940s
+graph202207|HSC-M3-T1-D17|high|section drawing information house plans
+graph202208|HSC-M3-T1-D17|medium|shadow diagram times
+graph202208q9|HSC-M1-T1-D2|high|scale rule actual length
+graph202209|HSC-M1-T1-D3|medium|standard dimension for bolt multitool
+graph202210|HSC-M3-T1-D26|high|purpose of prototype
+graph202211|HSC-M3-T1-D4|high|advantage of freehand sketching
+graph202212|HSC-M3-T1-D17|medium|site plan layout at scale
+graph202213|HSC-M3-T1-D3|high|oblique cavalier projection
+graph202214|HSC-M3-T1-D8|medium|section view of assembly drawing
+graph202215|HSC-M2-T1-D29|high|WHS legislation and safe workplace
+metal202201|HSC-M3-T2-D3|high|scriber marks fold lines
+metal202202|HSC-M1-T2-D25|high|soft solder tin and lead
+metal202203|HSC-M3-T2-D4|high|flux prevents oxidation brazing
+metal202204|HSC-M1-T2-D32|medium|gold found naturally pure
+metal202205|HSC-M3-T2-D4|medium|forging metal on anvil
+metal202206|HSC-M3-T2-D21|medium|bossing mallet for internal curves
+metal202207|HSC-M1-T2-D36|medium|fastener prevents unintentional loosening
+metal202208|HSC-M3-T2-D15|high|buffing with cloth wheel
+metal202209|HSC-M3-T2-D11|medium|identify heat treatment process
+metal202210|HSC-M3-T2-D4|medium|tool to produce a bevel
+metal202211|HSC-M3-T2-D11|high|purpose of annealing
+metal202212|HSC-M3-T2-D4|medium|lathe tailstock functions
+metal202213|null|high|material purchase costing not covered
+metal202214|HSC-M3-T2-D4|high|construct sheet metal box
+metal202215|HSC-M3-T2-D4|medium|two methods of extrusion
+metal202216|HSC-M2-T1-D29|high|WHS legislation and safe workplace
+multi202201|HSC-M2-T2-D15|high|MIDI holds music sequence data
+multi202202|null|medium|stroke colour not covered
+multi202203|null|high|placeholder question text
+multi202204|HSC-M4-T5-D4|medium|full HD screen resolution
+multi202205|HSC-M2-T2-D65|high|RTSP streaming protocol
+multi202206|HSC-M2-T2-D65|high|progressive JPEG loads faster
+multi202207|HSC-M4-T5-D20|high|colour balance adjustment
+multi202208|HSC-M2-T2-D6|medium|clipped audio recording level
+multi202209|HSC-M2-T2-D65|high|buffering preloads content
+multi202210|HSC-M2-T2-D21|high|aperture and depth of field
+multi202211|HSC-M2-T2-D60|high|advantage of PDF files
+multi202212|HSC-M2-T2-D65|high|purpose of online thumbnail
+multi202213|HSC-M2-T2-D65|medium|file transfer time at connection speed
+multi202214|HSC-M2-T2-D44|high|virtual reality advantages
+multi202215|HSC-M2-T2-D31|medium|mouth shapes for animation dialogue
+multi202216|HSC-M2-T1-D29|high|WHS legislation and safe workplace
+timber202201|HSC-M1-T2-D68|high|panel pin nail identification
+timber202202|HSC-M1-T2-D130|high|box pin used in drawer
+timber202203|HSC-M1-T2-D93|high|hot melt glue temporary joinery
+timber202204|HSC-M1-T2-D75|high|staple gun use
+timber202205|HSC-M1-T2-D114|high|drawer bottom groove seasonal movement
+timber202206|HSC-M1-T2-D169|medium|repair damaged chisel edge
+timber202207|HSC-M1-T2-D58|high|manufactured board features
+timber202208|HSC-M1-T2-D123|medium|groove and feather strengthens mitre
+timber202209|HSC-M1-T2-D109|high|shellac fast drying
+timber202210|HSC-M1-T2-D135|high|scribed joint in carcase
+timber202211|HSC-M1-T2-D170|medium|industry machine to dress timber
+timber202212|HSC-M1-T2-D43|high|equilibrium moisture content importance
+timber202213|null|high|stool material cost calculation
+timber202214|HSC-M1-T2-D49|high|recycling timbers addresses shortages
+timber202215|HSC-M1-T2-D71|high|benefits of knockdown fittings
+timber202216|HSC-M2-T1-D29|high|WHS legislation and safe workplace
+auto202301|HSC-M4-T1-D2|high|electric car quieter operation
+auto202302|HSC-M4-T1-D17|high|four stroke operation sequence
+auto202303|HSC-M4-T1-D42|high|catalytic converter reduces carbon monoxide
+auto202304|HSC-M4-T1-D16|medium|discoloured coolant head gasket diagnosis
+auto202305|HSC-M4-T1-D70|high|suspension system function
+auto202306|HSC-M4-T1-D16|medium|injector failure cause diagnosis
+auto202307|HSC-M4-T1-D54|high|tyre rotation even wear
+auto202308|HSC-M4-T1-D18|high|cylinder head flatness check
+auto202309|HSC-M4-T1-D44|high|clutch plate transmission part
+auto202310|HSC-M4-T1-D21|high|piston ring end gap expansion
+auto202311|HSC-M4-T1-D129|high|document to renew registration
+auto202312|HSC-M4-T1-D131|high|modification reported to authority
+auto202313|HSC-M4-T1-D107|medium|paint quantity and cost calculation
+auto202314|HSC-M4-T1-D5|medium|engine oil replacement purpose
+auto202315|HSC-M4-T1-D18|high|replacing cylinder head process
+auto202316|HSC-M2-T1-D11|medium|mass production and automation impact
+elec202301|HSC-M4-T2-D44|high|round nosed pliers for resistor legs
+elec202302|HSC-M4-T2-D33|high|solenoid controls switch
+elec202303|HSC-M4-T2-D6|high|binary used in computer processor
+elec202304|HSC-M4-T2-D19|medium|EPROM programmable integrated circuit
+elec202305|HSC-M4-T2-D74|high|op amp amplifies voltage
+elec202306|HSC-M4-T2-D15|high|diode blocks reverse current
+elec202307|HSC-M4-T2-D65|high|multimeter reading
+elec202308|HSC-M4-T2-D73|high|IC oscillator purpose
+elec202309|HSC-M4-T2-D38|high|condenser microphone uses piezo
+elec202310|HSC-M4-T2-D59|high|draw diode circuit symbol
+elec202311|HSC-M4-T2-D12|high|relay purpose in circuit
+elec202312|HSC-M4-T2-D55|high|total resistance series parallel
+elec202313|HSC-M4-T2-D47|high|single sided PCB process
+elec202314|HSC-M4-T2-D1|high|renewable energy in community
+elec202315|HSC-M2-T1-D11|medium|mass production and automation impact
+graph202301|HSC-M3-T1-D7|high|top view of block

@@ -1,0 +1,802 @@
+{
+ "auto202001": {
+  "code": "HSC-M4-T1-D128",
+  "confidence": "medium",
+  "why": "ADR acronym is design rule legislation"
+ },
+ "auto202002": {
+  "code": "HSC-M4-T1-D53",
+  "confidence": "high",
+  "why": "tyre wear diagnosis"
+ },
+ "auto202003": {
+  "code": "HSC-M4-T1-D111",
+  "confidence": "medium",
+  "why": "identify measuring tool"
+ },
+ "auto202004": {
+  "code": "HSC-M4-T1-D22",
+  "confidence": "high",
+  "why": "valve clearance check on head"
+ },
+ "auto202005": {
+  "code": "HSC-M4-T1-D57",
+  "confidence": "high",
+  "why": "brake master cylinder identification"
+ },
+ "auto202006": {
+  "code": "HSC-M4-T1-D111",
+  "confidence": "medium",
+  "why": "tool to remove oil filter"
+ },
+ "auto202007": {
+  "code": "HSC-M4-T1-D31",
+  "confidence": "high",
+  "why": "thermostat manages coolant flow"
+ },
+ "auto202008": {
+  "code": null,
+  "confidence": "high",
+  "why": "recall rebate not covered by dots"
+ },
+ "auto202009": {
+  "code": "HSC-M4-T1-D92",
+  "confidence": "high",
+  "why": "relay low current switching"
+ },
+ "auto202010": {
+  "code": "HSC-M4-T1-D67",
+  "confidence": "high",
+  "why": "leaf versus coil springs"
+ },
+ "auto202011": {
+  "code": "HSC-M4-T1-D8",
+  "confidence": "high",
+  "why": "single cylinder engine vehicle"
+ },
+ "auto202012": {
+  "code": "HSC-M4-T1-D32",
+  "confidence": "high",
+  "why": "belt versus thermostatic fan"
+ },
+ "auto202013": {
+  "code": null,
+  "confidence": "high",
+  "why": "oil change cost calculation not covered"
+ },
+ "auto202014": {
+  "code": "HSC-M4-T1-D10",
+  "confidence": "medium",
+  "why": "diesel versus petrol engine differences"
+ },
+ "auto202015": {
+  "code": "HSC-M4-T1-D63",
+  "confidence": "high",
+  "why": "ABS operation"
+ },
+ "auto202016": {
+  "code": "HSC-M2-T1-D16",
+  "confidence": "medium",
+  "why": "environmental factors when selecting site"
+ },
+ "auto202101": {
+  "code": "HSC-M4-T1-D50",
+  "confidence": "high",
+  "why": "universal joint on tailshaft"
+ },
+ "auto202102": {
+  "code": "HSC-M4-T1-D21",
+  "confidence": "high",
+  "why": "piston assembly conrod"
+ },
+ "auto202103": {
+  "code": "HSC-M4-T1-D17",
+  "confidence": "high",
+  "why": "four stroke cycle order"
+ },
+ "auto202104": {
+  "code": "HSC-M4-T1-D7",
+  "confidence": "high",
+  "why": "diesel versus petrol fuel merits"
+ },
+ "auto202105": {
+  "code": "HSC-M4-T1-D16",
+  "confidence": "high",
+  "why": "starter motor fault diagnosis"
+ },
+ "auto202106": {
+  "code": "HSC-M4-T1-D36",
+  "confidence": "high",
+  "why": "fuel injection replaced choke"
+ },
+ "auto202107": {
+  "code": "HSC-M4-T1-D111",
+  "confidence": "medium",
+  "why": "tool for removing circlips"
+ },
+ "auto202108": {
+  "code": "HSC-M4-T1-D116",
+  "confidence": "medium",
+  "why": "crumple zones vehicle design"
+ },
+ "auto202109": {
+  "code": "HSC-M4-T1-D22",
+  "confidence": "high",
+  "why": "cam lobe nose opens valve"
+ },
+ "auto202110": {
+  "code": "HSC-M4-T1-D131",
+  "confidence": "high",
+  "why": "VSCCS modified vehicle registration"
+ },
+ "auto202111": {
+  "code": "HSC-M4-T1-D90",
+  "confidence": "high",
+  "why": "wiring harness identification"
+ },
+ "auto202112": {
+  "code": null,
+  "confidence": "medium",
+  "why": "image only part purpose unclear"
+ },
+ "auto202113": {
+  "code": "HSC-M4-T1-D107",
+  "confidence": "medium",
+  "why": "paint coverage cost calculation"
+ },
+ "auto202114": {
+  "code": "HSC-M4-T1-D65",
+  "confidence": "medium",
+  "why": "brake assembly fault repair"
+ },
+ "auto202115": {
+  "code": "HSC-M4-T1-D16",
+  "confidence": "medium",
+  "why": "overheating engine fault causes"
+ },
+ "auto202116": {
+  "code": "HSC-M2-T1-D22",
+  "confidence": "high",
+  "why": "industrial relations issues"
+ },
+ "elec202001": {
+  "code": "HSC-M4-T2-D1",
+  "confidence": "high",
+  "why": "electricity generation sources"
+ },
+ "elec202002": {
+  "code": "HSC-M4-T2-D23",
+  "confidence": "high",
+  "why": "ceramic insulator property"
+ },
+ "elec202003": {
+  "code": "HSC-M4-T2-D38",
+  "confidence": "high",
+  "why": "piezo device behaviour"
+ },
+ "elec202004": {
+  "code": "HSC-M4-T2-D59",
+  "confidence": "high",
+  "why": "transformer circuit symbol"
+ },
+ "elec202005": {
+  "code": "HSC-M4-T2-D34",
+  "confidence": "high",
+  "why": "stepped motor features"
+ },
+ "elec202006": {
+  "code": "HSC-M4-T2-D6",
+  "confidence": "high",
+  "why": "binary to decimal conversion"
+ },
+ "elec202007": {
+  "code": "HSC-M4-T2-D18",
+  "confidence": "high",
+  "why": "VLSI transistors"
+ },
+ "elec202008": {
+  "code": null,
+  "confidence": "high",
+  "why": "placeholder question text"
+ },
+ "elec202009": {
+  "code": null,
+  "confidence": "high",
+  "why": "placeholder question text"
+ },
+ "elec202010": {
+  "code": null,
+  "confidence": "high",
+  "why": "placeholder question text"
+ },
+ "elec202011": {
+  "code": "HSC-M4-T2-D23",
+  "confidence": "high",
+  "why": "capacitor stores charge"
+ },
+ "elec202012": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "medium",
+  "why": "voltage regulator function"
+ },
+ "elec202013": {
+  "code": null,
+  "confidence": "high",
+  "why": "component cost calculation not covered"
+ },
+ "elec202014": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "high",
+  "why": "LED versus light sensitive diode"
+ },
+ "elec202015": {
+  "code": "HSC-M4-T2-D7",
+  "confidence": "high",
+  "why": "logic gates and truth table"
+ },
+ "elec202016": {
+  "code": "HSC-M2-T1-D16",
+  "confidence": "medium",
+  "why": "environmental factors when selecting site"
+ },
+ "elec202101": {
+  "code": "HSC-M4-T2-D59",
+  "confidence": "high",
+  "why": "transistor circuit symbol"
+ },
+ "elec202102": {
+  "code": "HSC-M4-T2-D32",
+  "confidence": "high",
+  "why": "switch as input device"
+ },
+ "elec202103": {
+  "code": "HSC-M4-T2-D23",
+  "confidence": "medium",
+  "why": "resistor preferred value notation"
+ },
+ "elec202104": {
+  "code": "HSC-M4-T2-D6",
+  "confidence": "high",
+  "why": "decimal to binary conversion"
+ },
+ "elec202105": {
+  "code": "HSC-M4-T2-D13",
+  "confidence": "high",
+  "why": "transformer changes voltage"
+ },
+ "elec202106": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "medium",
+  "why": "LED cathode identification"
+ },
+ "elec202107": {
+  "code": null,
+  "confidence": "medium",
+  "why": "fuse purpose not in dots"
+ },
+ "elec202108": {
+  "code": "HSC-M4-T2-D23",
+  "confidence": "high",
+  "why": "capacitors in series"
+ },
+ "elec202109": {
+  "code": "HSC-M4-T2-D4",
+  "confidence": "high",
+  "why": "full wave rectification waveform"
+ },
+ "elec202110": {
+  "code": "HSC-M4-T2-D14",
+  "confidence": "high",
+  "why": "P-type semiconductor doping"
+ },
+ "elec202111": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "high",
+  "why": "diode function"
+ },
+ "elec202112": {
+  "code": "HSC-M4-T2-D41",
+  "confidence": "high",
+  "why": "microphone operation"
+ },
+ "elec202113": {
+  "code": "HSC-M4-T2-D56",
+  "confidence": "high",
+  "why": "calculate circuit current"
+ },
+ "elec202114": {
+  "code": "HSC-M4-T2-D49",
+  "confidence": "high",
+  "why": "multimeter fault finding"
+ },
+ "elec202115": {
+  "code": "HSC-M4-T2-D1",
+  "confidence": "high",
+  "why": "renewable generation implications"
+ },
+ "elec202116": {
+  "code": "HSC-M2-T1-D22",
+  "confidence": "high",
+  "why": "industrial relations issues"
+ },
+ "graph202001": {
+  "code": "HSC-M3-T1-D18",
+  "confidence": "high",
+  "why": "identify Australian architectural style"
+ },
+ "graph202002": {
+  "code": "HSC-M3-T1-D13",
+  "confidence": "medium",
+  "why": "CAD layers manage complexity"
+ },
+ "graph202003": {
+  "code": "HSC-M3-T1-D7",
+  "confidence": "high",
+  "why": "front view orthographic projection"
+ },
+ "graph202004": {
+  "code": "HSC-M3-T1-D13",
+  "confidence": "medium",
+  "why": "CAD revolve command"
+ },
+ "graph202005": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "high",
+  "why": "residential site plan scale"
+ },
+ "graph202006": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "high",
+  "why": "site plan shows setbacks"
+ },
+ "graph202007": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "medium",
+  "why": "landscape plan contours slope"
+ },
+ "graph202008": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "medium",
+  "why": "roofing detail member naming"
+ },
+ "graph202009": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "medium",
+  "why": "AS1100 bolt head proportions"
+ },
+ "graph202010": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "medium",
+  "why": "select scale for A4 drawing"
+ },
+ "graph202011": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "high",
+  "why": "footing detail material"
+ },
+ "graph202012": {
+  "code": "HSC-M1-T2-D176",
+  "confidence": "medium",
+  "why": "flash drives external drives for CAD"
+ },
+ "graph202013": {
+  "code": "HSC-M3-T1-D21",
+  "confidence": "medium",
+  "why": "council site coverage requirements"
+ },
+ "graph202014": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "high",
+  "why": "isometric sketch from orthogonal"
+ },
+ "graph202015": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "high",
+  "why": "mechanical perspective construction"
+ },
+ "graph202016": {
+  "code": "HSC-M2-T1-D16",
+  "confidence": "medium",
+  "why": "environmental factors when selecting site"
+ },
+ "graph202101": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "high",
+  "why": "pictorial drawing types"
+ },
+ "graph202102": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "high",
+  "why": "AS1100 drawing standard"
+ },
+ "graph202103": {
+  "code": "HSC-M3-T1-D13",
+  "confidence": "medium",
+  "why": "drawing instrument replaces compasses"
+ },
+ "graph202104": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "high",
+  "why": "line types in technical drawing"
+ },
+ "graph202105": {
+  "code": "HSC-M3-T1-D7",
+  "confidence": "high",
+  "why": "missing front view orthographic"
+ },
+ "graph202106": {
+  "code": "HSC-M3-T1-D18",
+  "confidence": "high",
+  "why": "architectural style after Federation"
+ },
+ "graph202107": {
+  "code": "HSC-M3-T1-D26",
+  "confidence": "high",
+  "why": "purpose of prototype"
+ },
+ "graph202108": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "high",
+  "why": "site plan contents"
+ },
+ "graph202109": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "medium",
+  "why": "standard washer proportions"
+ },
+ "graph202110": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "high",
+  "why": "mechanical perspective features"
+ },
+ "graph202111": {
+  "code": "HSC-M3-T1-D13",
+  "confidence": "medium",
+  "why": "drawing instrument use"
+ },
+ "graph202112": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "medium",
+  "why": "shadow diagrams purpose"
+ },
+ "graph202113": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "medium",
+  "why": "draw floor plan at scale"
+ },
+ "graph202114": {
+  "code": "HSC-M3-T1-D7",
+  "confidence": "high",
+  "why": "third angle top and section views"
+ },
+ "graph202115": {
+  "code": "HSC-M3-T1-D25",
+  "confidence": "high",
+  "why": "rendering and shadow projection"
+ },
+ "graph202116": {
+  "code": "HSC-M2-T1-D22",
+  "confidence": "high",
+  "why": "industrial relations issues"
+ },
+ "metal202001": {
+  "code": "HSC-M3-T2-D3",
+  "confidence": "high",
+  "why": "marking out tool identification"
+ },
+ "metal202002": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "turning operation on centre punch"
+ },
+ "metal202003": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "high",
+  "why": "electrical safety test tag WHS"
+ },
+ "metal202004": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "low",
+  "why": "filing technique to prevent pinning"
+ },
+ "metal202005": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "medium",
+  "why": "slip gauge for micrometer checking"
+ },
+ "metal202006": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "MIG shielding gas for aluminium"
+ },
+ "metal202007": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "hot extrusion seamless tube"
+ },
+ "metal202008": {
+  "code": "HSC-M1-T2-D32",
+  "confidence": "medium",
+  "why": "hot versus cold rolling steel"
+ },
+ "metal202009": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "spot facing machining"
+ },
+ "metal202010": {
+  "code": "HSC-M3-T2-D12",
+  "confidence": "high",
+  "why": "work hardening definition"
+ },
+ "metal202011": {
+  "code": "HSC-M1-T2-D25",
+  "confidence": "high",
+  "why": "copper alloyed with zinc for brass"
+ },
+ "metal202012": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "thread cutting blind hole"
+ },
+ "metal202013": {
+  "code": "HSC-M1-T2-D101",
+  "confidence": "medium",
+  "why": "metal cutting list and cost"
+ },
+ "metal202014": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "tinning soldering bit"
+ },
+ "metal202015": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "medium",
+  "why": "purpose of machine lubricants"
+ },
+ "metal202016": {
+  "code": "HSC-M2-T1-D16",
+  "confidence": "medium",
+  "why": "environmental factors when selecting site"
+ },
+ "metal202101": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "medium",
+  "why": "identify aviation snips"
+ },
+ "metal202102": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "counterboring versus countersinking"
+ },
+ "metal202103": {
+  "code": "HSC-M1-T2-D25",
+  "confidence": "high",
+  "why": "malleability metal property"
+ },
+ "metal202104": {
+  "code": "HSC-M1-T2-D25",
+  "confidence": "high",
+  "why": "copper alloyed with tin for bronze"
+ },
+ "metal202105": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "medium",
+  "why": "combination set tools"
+ },
+ "metal202106": {
+  "code": "HSC-M1-T2-D25",
+  "confidence": "medium",
+  "why": "carbon tool steel for chisels"
+ },
+ "metal202107": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "four jaw chuck for irregular work"
+ },
+ "metal202108": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "neutral oxyacetylene flame"
+ },
+ "metal202109": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "climb milling benefit"
+ },
+ "metal202110": {
+  "code": "HSC-M1-T2-D27",
+  "confidence": "high",
+  "why": "drawing produces high tensile bolt"
+ },
+ "metal202111": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "identify process from drawing"
+ },
+ "metal202112": {
+  "code": "HSC-M1-T2-D25",
+  "confidence": "high",
+  "why": "copper properties for electrical wiring"
+ },
+ "metal202113": {
+  "code": "HSC-M1-T2-D101",
+  "confidence": "medium",
+  "why": "sheet metal cutting list cost"
+ },
+ "metal202114": {
+  "code": "HSC-M1-T2-D33",
+  "confidence": "high",
+  "why": "aluminium production process"
+ },
+ "metal202115": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "welding defects identified corrected"
+ },
+ "metal202116": {
+  "code": "HSC-M2-T1-D22",
+  "confidence": "high",
+  "why": "industrial relations issues"
+ },
+ "multi202001": {
+  "code": "HSC-M4-T5-D2",
+  "confidence": "high",
+  "why": "hanging indent text formatting"
+ },
+ "multi202002": {
+  "code": "HSC-M2-T2-D60",
+  "confidence": "medium",
+  "why": "PDF file format"
+ },
+ "multi202003": {
+  "code": "HSC-M4-T5-D2",
+  "confidence": "high",
+  "why": "pagination purpose"
+ },
+ "multi202004": {
+  "code": "HSC-M4-T5-D5",
+  "confidence": "high",
+  "why": "colour depth affects file size"
+ },
+ "multi202005": {
+  "code": null,
+  "confidence": "medium",
+  "why": "clapper board not covered"
+ },
+ "multi202006": {
+  "code": "HSC-M4-T5-D19",
+  "confidence": "high",
+  "why": "authoring software scope"
+ },
+ "multi202007": {
+  "code": "HSC-M2-T2-D76",
+  "confidence": "high",
+  "why": "copyright permission for images"
+ },
+ "multi202008": {
+  "code": "HSC-M2-T2-D35",
+  "confidence": "high",
+  "why": "tweening definition"
+ },
+ "multi202009": {
+  "code": "HSC-M4-T5-D20",
+  "confidence": "high",
+  "why": "anti-aliasing"
+ },
+ "multi202010": {
+  "code": "HSC-M2-T2-D16",
+  "confidence": "high",
+  "why": "lossy compression quality and size"
+ },
+ "multi202011": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "high",
+  "why": "RTSP streaming protocol"
+ },
+ "multi202012": {
+  "code": "HSC-M2-T2-D43",
+  "confidence": "high",
+  "why": "motion capture technology"
+ },
+ "multi202013": {
+  "code": null,
+  "confidence": "high",
+  "why": "print consumables costing not covered"
+ },
+ "multi202014": {
+  "code": "HSC-M2-T2-D16",
+  "confidence": "medium",
+  "why": "reduce MP4 file size for DVD"
+ },
+ "multi202015": {
+  "code": "HSC-M2-T2-D55",
+  "confidence": "medium",
+  "why": "website homepage design features"
+ },
+ "multi202016": {
+  "code": "HSC-M2-T1-D16",
+  "confidence": "medium",
+  "why": "environmental factors when selecting site"
+ },
+ "timber202001": {
+  "code": "HSC-M1-T2-D119",
+  "confidence": "medium",
+  "why": "joint identification widening joints"
+ },
+ "timber202002": {
+  "code": "HSC-M1-T2-D72",
+  "confidence": "high",
+  "why": "hinge type identification"
+ },
+ "timber202003": {
+  "code": "HSC-M1-T2-D75",
+  "confidence": "high",
+  "why": "staples fix upholstery"
+ },
+ "timber202004": {
+  "code": "HSC-M1-T2-D149",
+  "confidence": "high",
+  "why": "laminating in mould"
+ },
+ "timber202005": {
+  "code": "HSC-M1-T2-D68",
+  "confidence": "high",
+  "why": "flat head nail use"
+ },
+ "timber202006": {
+  "code": "HSC-M1-T2-D71",
+  "confidence": "high",
+  "why": "knockdown fitting features"
+ },
+ "timber202007": {
+  "code": "HSC-M1-T2-D50",
+  "confidence": "high",
+  "why": "green timber characteristics"
+ },
+ "timber202008": {
+  "code": "HSC-M1-T2-D108",
+  "confidence": "medium",
+  "why": "face side face edge mark"
+ },
+ "timber202009": {
+  "code": "HSC-M1-T2-D161",
+  "confidence": "high",
+  "why": "straight edge tests flatness"
+ },
+ "timber202010": {
+  "code": "HSC-M1-T2-D59",
+  "confidence": "medium",
+  "why": "MDF structure adhesive application"
+ },
+ "timber202011": {
+  "code": "HSC-M1-T2-D55",
+  "confidence": "medium",
+  "why": "select hardwood for outdoor use"
+ },
+ "timber202012": {
+  "code": "HSC-M1-T2-D139",
+  "confidence": "high",
+  "why": "edge treatment reasons"
+ },
+ "timber202013": {
+  "code": "HSC-M1-T2-D101",
+  "confidence": "medium",
+  "why": "timber cutting list completion"
+ },
+ "timber202014": {
+  "code": "HSC-M1-T2-D126",
+  "confidence": "high",
+  "why": "framing joint production method"
+ },
+ "timber202015": {
+  "code": "HSC-M1-T2-D164",
+  "confidence": "high",
+  "why": "outdoor finish preparation application"
+ },
+ "timber202016": {
+  "code": "HSC-M2-T1-D16",
+  "confidence": "medium",
+  "why": "environmental factors when selecting site"
+ }
+}

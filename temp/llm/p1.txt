@@ -1,0 +1,160 @@
+auto202001|HSC-M4-T1-D128|medium|ADR acronym is design rule legislation
+auto202002|HSC-M4-T1-D53|high|tyre wear diagnosis
+auto202003|HSC-M4-T1-D111|medium|identify measuring tool
+auto202004|HSC-M4-T1-D22|high|valve clearance check on head
+auto202005|HSC-M4-T1-D57|high|brake master cylinder identification
+auto202006|HSC-M4-T1-D111|medium|tool to remove oil filter
+auto202007|HSC-M4-T1-D31|high|thermostat manages coolant flow
+auto202008|null|high|recall rebate not covered by dots
+auto202009|HSC-M4-T1-D92|high|relay low current switching
+auto202010|HSC-M4-T1-D67|high|leaf versus coil springs
+auto202011|HSC-M4-T1-D8|high|single cylinder engine vehicle
+auto202012|HSC-M4-T1-D32|high|belt versus thermostatic fan
+auto202013|null|high|oil change cost calculation not covered
+auto202014|HSC-M4-T1-D10|medium|diesel versus petrol engine differences
+auto202015|HSC-M4-T1-D63|high|ABS operation
+auto202016|HSC-M2-T1-D16|medium|environmental factors when selecting site
+auto202101|HSC-M4-T1-D50|high|universal joint on tailshaft
+auto202102|HSC-M4-T1-D21|high|piston assembly conrod
+auto202103|HSC-M4-T1-D17|high|four stroke cycle order
+auto202104|HSC-M4-T1-D7|high|diesel versus petrol fuel merits
+auto202105|HSC-M4-T1-D16|high|starter motor fault diagnosis
+auto202106|HSC-M4-T1-D36|high|fuel injection replaced choke
+auto202107|HSC-M4-T1-D111|medium|tool for removing circlips
+auto202108|HSC-M4-T1-D116|medium|crumple zones vehicle design
+auto202109|HSC-M4-T1-D22|high|cam lobe nose opens valve
+auto202110|HSC-M4-T1-D131|high|VSCCS modified vehicle registration
+auto202111|HSC-M4-T1-D90|high|wiring harness identification
+auto202112|null|medium|image only part purpose unclear
+auto202113|HSC-M4-T1-D107|medium|paint coverage cost calculation
+auto202114|HSC-M4-T1-D65|medium|brake assembly fault repair
+auto202115|HSC-M4-T1-D16|medium|overheating engine fault causes
+auto202116|HSC-M2-T1-D22|high|industrial relations issues
+elec202001|HSC-M4-T2-D1|high|electricity generation sources
+elec202002|HSC-M4-T2-D23|high|ceramic insulator property
+elec202003|HSC-M4-T2-D38|high|piezo device behaviour
+elec202004|HSC-M4-T2-D59|high|transformer circuit symbol
+elec202005|HSC-M4-T2-D34|high|stepped motor features
+elec202006|HSC-M4-T2-D6|high|binary to decimal conversion
+elec202007|HSC-M4-T2-D18|high|VLSI transistors
+elec202008|null|high|placeholder question text
+elec202009|null|high|placeholder question text
+elec202010|null|high|placeholder question text
+elec202011|HSC-M4-T2-D23|high|capacitor stores charge
+elec202012|HSC-M4-T2-D15|medium|voltage regulator function
+elec202013|null|high|component cost calculation not covered
+elec202014|HSC-M4-T2-D15|high|LED versus light sensitive diode
+elec202015|HSC-M4-T2-D7|high|logic gates and truth table
+elec202016|HSC-M2-T1-D16|medium|environmental factors when selecting site
+elec202101|HSC-M4-T2-D59|high|transistor circuit symbol
+elec202102|HSC-M4-T2-D32|high|switch as input device
+elec202103|HSC-M4-T2-D23|medium|resistor preferred value notation
+elec202104|HSC-M4-T2-D6|high|decimal to binary conversion
+elec202105|HSC-M4-T2-D13|high|transformer changes voltage
+elec202106|HSC-M4-T2-D15|medium|LED cathode identification
+elec202107|null|medium|fuse purpose not in dots
+elec202108|HSC-M4-T2-D23|high|capacitors in series
+elec202109|HSC-M4-T2-D4|high|full wave rectification waveform
+elec202110|HSC-M4-T2-D14|high|P-type semiconductor doping
+elec202111|HSC-M4-T2-D15|high|diode function
+elec202112|HSC-M4-T2-D41|high|microphone operation
+elec202113|HSC-M4-T2-D56|high|calculate circuit current
+elec202114|HSC-M4-T2-D49|high|multimeter fault finding
+elec202115|HSC-M4-T2-D1|high|renewable generation implications
+elec202116|HSC-M2-T1-D22|high|industrial relations issues
+graph202001|HSC-M3-T1-D18|high|identify Australian architectural style
+graph202002|HSC-M3-T1-D13|medium|CAD layers manage complexity
+graph202003|HSC-M3-T1-D7|high|front view orthographic projection
+graph202004|HSC-M3-T1-D13|medium|CAD revolve command
+graph202005|HSC-M1-T1-D2|high|residential site plan scale
+graph202006|HSC-M3-T1-D17|high|site plan shows setbacks
+graph202007|HSC-M3-T1-D17|medium|landscape plan contours slope
+graph202008|HSC-M3-T1-D17|medium|roofing detail member naming
+graph202009|HSC-M1-T1-D3|medium|AS1100 bolt head proportions
+graph202010|HSC-M1-T1-D2|medium|select scale for A4 drawing
+graph202011|HSC-M3-T1-D17|high|footing detail material
+graph202012|HSC-M1-T2-D176|medium|flash drives external drives for CAD
+graph202013|HSC-M3-T1-D21|medium|council site coverage requirements
+graph202014|HSC-M3-T1-D1|high|isometric sketch from orthogonal
+graph202015|HSC-M3-T1-D3|high|mechanical perspective construction
+graph202016|HSC-M2-T1-D16|medium|environmental factors when selecting site
+graph202101|HSC-M3-T1-D3|high|pictorial drawing types
+graph202102|HSC-M1-T1-D3|high|AS1100 drawing standard
+graph202103|HSC-M3-T1-D13|medium|drawing instrument replaces compasses
+graph202104|HSC-M1-T1-D3|high|line types in technical drawing
+graph202105|HSC-M3-T1-D7|high|missing front view orthographic
+graph202106|HSC-M3-T1-D18|high|architectural style after Federation
+graph202107|HSC-M3-T1-D26|high|purpose of prototype
+graph202108|HSC-M3-T1-D17|high|site plan contents
+graph202109|HSC-M1-T1-D3|medium|standard washer proportions
+graph202110|HSC-M3-T1-D3|high|mechanical perspective features
+graph202111|HSC-M3-T1-D13|medium|drawing instrument use
+graph202112|HSC-M3-T1-D17|medium|shadow diagrams purpose
+graph202113|HSC-M3-T1-D17|medium|draw floor plan at scale
+graph202114|HSC-M3-T1-D7|high|third angle top and section views
+graph202115|HSC-M3-T1-D25|high|rendering and shadow projection
+graph202116|HSC-M2-T1-D22|high|industrial relations issues
+metal202001|HSC-M3-T2-D3|high|marking out tool identification
+metal202002|HSC-M3-T2-D4|medium|turning operation on centre punch
+metal202003|HSC-M3-T2-D1|high|electrical safety test tag WHS
+metal202004|HSC-M3-T2-D4|low|filing technique to prevent pinning
+metal202005|HSC-M3-T2-D21|medium|slip gauge for micrometer checking
+metal202006|HSC-M3-T2-D4|high|MIG shielding gas for aluminium
+metal202007|HSC-M3-T2-D4|medium|hot extrusion seamless tube
+metal202008|HSC-M1-T2-D32|medium|hot versus cold rolling steel
+metal202009|HSC-M3-T2-D4|medium|spot facing machining
+metal202010|HSC-M3-T2-D12|high|work hardening definition
+metal202011|HSC-M1-T2-D25|high|copper alloyed with zinc for brass
+metal202012|HSC-M3-T2-D4|medium|thread cutting blind hole
+metal202013|HSC-M1-T2-D101|medium|metal cutting list and cost
+metal202014|HSC-M3-T2-D4|high|tinning soldering bit
+metal202015|HSC-M3-T2-D21|medium|purpose of machine lubricants
+metal202016|HSC-M2-T1-D16|medium|environmental factors when selecting site
+metal202101|HSC-M3-T2-D21|medium|identify aviation snips
+metal202102|HSC-M3-T2-D4|high|counterboring versus countersinking
+metal202103|HSC-M1-T2-D25|high|malleability metal property
+metal202104|HSC-M1-T2-D25|high|copper alloyed with tin for bronze
+metal202105|HSC-M3-T2-D21|medium|combination set tools
+metal202106|HSC-M1-T2-D25|medium|carbon tool steel for chisels
+metal202107|HSC-M3-T2-D4|medium|four jaw chuck for irregular work
+metal202108|HSC-M3-T2-D4|high|neutral oxyacetylene flame
+metal202109|HSC-M3-T2-D4|medium|climb milling benefit
+metal202110|HSC-M1-T2-D27|high|drawing produces high tensile bolt
+metal202111|HSC-M3-T2-D4|medium|identify process from drawing
+metal202112|HSC-M1-T2-D25|high|copper properties for electrical wiring
+metal202113|HSC-M1-T2-D101|medium|sheet metal cutting list cost
+metal202114|HSC-M1-T2-D33|high|aluminium production process
+metal202115|HSC-M3-T2-D4|high|welding defects identified corrected
+metal202116|HSC-M2-T1-D22|high|industrial relations issues
+multi202001|HSC-M4-T5-D2|high|hanging indent text formatting
+multi202002|HSC-M2-T2-D60|medium|PDF file format
+multi202003|HSC-M4-T5-D2|high|pagination purpose
+multi202004|HSC-M4-T5-D5|high|colour depth affects file size
+multi202005|null|medium|clapper board not covered
+multi202006|HSC-M4-T5-D19|high|authoring software scope
+multi202007|HSC-M2-T2-D76|high|copyright permission for images
+multi202008|HSC-M2-T2-D35|high|tweening definition
+multi202009|HSC-M4-T5-D20|high|anti-aliasing
+multi202010|HSC-M2-T2-D16|high|lossy compression quality and size
+multi202011|HSC-M2-T2-D65|high|RTSP streaming protocol
+multi202012|HSC-M2-T2-D43|high|motion capture technology
+multi202013|null|high|print consumables costing not covered
+multi202014|HSC-M2-T2-D16|medium|reduce MP4 file size for DVD
+multi202015|HSC-M2-T2-D55|medium|website homepage design features
+multi202016|HSC-M2-T1-D16|medium|environmental factors when selecting site
+timber202001|HSC-M1-T2-D119|medium|joint identification widening joints
+timber202002|HSC-M1-T2-D72|high|hinge type identification
+timber202003|HSC-M1-T2-D75|high|staples fix upholstery
+timber202004|HSC-M1-T2-D149|high|laminating in mould
+timber202005|HSC-M1-T2-D68|high|flat head nail use
+timber202006|HSC-M1-T2-D71|high|knockdown fitting features
+timber202007|HSC-M1-T2-D50|high|green timber characteristics
+timber202008|HSC-M1-T2-D108|medium|face side face edge mark
+timber202009|HSC-M1-T2-D161|high|straight edge tests flatness
+timber202010|HSC-M1-T2-D59|medium|MDF structure adhesive application
+timber202011|HSC-M1-T2-D55|medium|select hardwood for outdoor use
+timber202012|HSC-M1-T2-D139|high|edge treatment reasons
+timber202013|HSC-M1-T2-D101|medium|timber cutting list completion
+timber202014|HSC-M1-T2-D126|high|framing joint production method
+timber202015|HSC-M1-T2-D164|high|outdoor finish preparation application
+timber202016|HSC-M2-T1-D16|medium|environmental factors when selecting site

@@ -1,0 +1,122 @@
+{
+  "m1202001": {
+    "code": "HSC-M1-T3-D5",
+    "confidence": "high",
+    "why": "Asks to describe structure; structural devices dot"
+  },
+  "m1202002": {
+    "code": "HSC-M1-T3-D6",
+    "confidence": "high",
+    "why": "Dynamics and expressive techniques named; expressive devices dot"
+  },
+  "m1202003": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Open tension question spans many concepts; no single dot"
+  },
+  "m1202004": {
+    "code": "HSC-M1-T3-D1",
+    "confidence": "medium",
+    "why": "Duration compulsory lens; rhythmic devices carry duration"
+  },
+  "m1202101": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Duration and pitch co-equal; no dot covers both"
+  },
+  "m1202102": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "medium",
+    "why": "Roles of sound layers asks textural/layering devices"
+  },
+  "m1202103": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "medium",
+    "why": "Compares tone colour across versions; timbre/performing media"
+  },
+  "m1202104": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Unity and contrast open across all concepts; no single dot"
+  },
+  "m1202201": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "medium",
+    "why": "Pitch use described via melodic devices and riffs"
+  },
+  "m1202202": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Repetition spans rhythmic, melodic, textural and structural devices"
+  },
+  "m1202203": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "medium",
+    "why": "Texture asked first, structure second; textural devices"
+  },
+  "m1202204": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "medium",
+    "why": "Contrast achieved through tone colour; timbre/performing media"
+  },
+  "m1202301": {
+    "code": "HSC-M1-T3-D1",
+    "confidence": "medium",
+    "why": "Outline duration use; rhythm devices carry the concept"
+  },
+  "m1202302": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Interest with any two concepts; no single dot"
+  },
+  "m1202303": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "high",
+    "why": "Single focus on texture; textural devices dot"
+  },
+  "m1202304": {
+    "code": null,
+    "confidence": "high",
+    "why": "No question prompt in source text, excerpt note only"
+  },
+  "m1202401": {
+    "code": "HSC-M1-T3-D5",
+    "confidence": "high",
+    "why": "Outline structure use; structural devices dot"
+  },
+  "m1202402": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Pitch, duration and tension combined; no single dot"
+  },
+  "m1202403": {
+    "code": "HSC-M1-T3-D6",
+    "confidence": "high",
+    "why": "Dynamics and expressive techniques named as the means"
+  },
+  "m1202404": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "medium",
+    "why": "Texture named first alongside tone colour; textural devices"
+  },
+  "m1202501": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Variety is open across concepts; no single dot"
+  },
+  "m1202502": {
+    "code": "HSC-M3-T2-D13",
+    "confidence": "medium",
+    "why": "Compare two interpretations of Youngblood for performance choices"
+  },
+  "m1202503": {
+    "code": "HSC-M1-T1-D1",
+    "confidence": "high",
+    "why": "Question asks about style directly; style dot"
+  },
+  "m1202504": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "medium",
+    "why": "Roles of performing media relative to structure"
+  }
+}

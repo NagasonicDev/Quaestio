@@ -1,0 +1,802 @@
+{
+  "ees202001": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "low",
+    "why": "geological timescale era durations"
+  },
+  "ees202002": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "low",
+    "why": "ordering periods oldest to youngest"
+  },
+  "ees202003": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "biosphere responsible for atmospheric oxygen rise"
+  },
+  "ees202004": {
+    "code": "HSC-M4-T1-D1",
+    "confidence": "low",
+    "why": "renewable versus non-renewable resource materials"
+  },
+  "ees202005": {
+    "code": "HSC-M1-T2-D9",
+    "confidence": "high",
+    "why": "uniformitarianism principle for past geological processes"
+  },
+  "ees202006": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "high",
+    "why": "panspermia origin of life"
+  },
+  "ees202007": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "medium",
+    "why": "high-magnitude earthquakes at plate boundaries"
+  },
+  "ees202008": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "low",
+    "why": "computer modelling to project future climate"
+  },
+  "ees202009": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "explosive eruption hazards ash lahars gas"
+  },
+  "ees202010": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "medium",
+    "why": "tsunami hazard near active plate boundaries"
+  },
+  "ees202011": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "high",
+    "why": "urban expansion destroying natural habitat"
+  },
+  "ees202012": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "medium",
+    "why": "methane contribution to enhanced greenhouse effect"
+  },
+  "ees202013": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "low",
+    "why": "reading climate projection temperature data"
+  },
+  "ees202014": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "high",
+    "why": "scientific uncertainty shading in climate projections"
+  },
+  "ees202015": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "medium",
+    "why": "eruption type capacity to affect global climate"
+  },
+  "ees202016": {
+    "code": "HSC-M4-T2-D7",
+    "confidence": "medium",
+    "why": "landfill liner preventing groundwater pollution"
+  },
+  "ees202017": {
+    "code": null,
+    "confidence": "low",
+    "why": "pie chart only, no syllabus concept"
+  },
+  "ees202018": {
+    "code": "HSC-M3-T1-D7",
+    "confidence": "high",
+    "why": "best evidence for ancient Miocene temperatures"
+  },
+  "ees202019": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "independent and dependent variables in investigation"
+  },
+  "ees202020": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "variables in acid mine drainage study"
+  },
+  "ees202021": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "high",
+    "why": "index fossils generating geological timescale"
+  },
+  "ees202022": {
+    "code": "HSC-M2-T2-D12",
+    "confidence": "high",
+    "why": "volcanic eruption effects on atmosphere biosphere"
+  },
+  "ees202023": {
+    "code": "HSC-M4-T1-D3",
+    "confidence": "low",
+    "why": "pipeline supplying water to city"
+  },
+  "ees202024": {
+    "code": "PRE-M3-T2-D16",
+    "confidence": "medium",
+    "why": "global conveyor belt ocean circulation"
+  },
+  "ees202025": {
+    "code": "HSC-M1-T1-D7",
+    "confidence": "high",
+    "why": "factors enabling animals to colonise land"
+  },
+  "ees202026": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "managing household waste by separation"
+  },
+  "ees202027": {
+    "code": "HSC-M4-T2-D3",
+    "confidence": "high",
+    "why": "practical waste composition investigation"
+  },
+  "ees202028": {
+    "code": "HSC-M4-T1-D6",
+    "confidence": "high",
+    "why": "traditional owners involved in mine planning"
+  },
+  "ees202029": {
+    "code": null,
+    "confidence": "low",
+    "why": "truncated stem, unclear core concept"
+  },
+  "ees202030": {
+    "code": "HSC-M4-T1-D5",
+    "confidence": "low",
+    "why": "development changing the geosphere"
+  },
+  "ees202031": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "effectiveness of disaster impact minimisation method"
+  },
+  "ees202032": {
+    "code": "HSC-M3-T1-D19",
+    "confidence": "high",
+    "why": "land use change altering natural land cover"
+  },
+  "ees202033": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "supercycle effect on climate or evolution"
+  },
+  "ees202034": {
+    "code": "HSC-M4-T2-D13",
+    "confidence": "medium",
+    "why": "Aboriginal practices as sustainable resource management"
+  },
+  "ees202035": {
+    "code": null,
+    "confidence": "low",
+    "why": "truncated stem, no identifiable concept"
+  },
+  "ees202036": {
+    "code": "HSC-M2-T2-D19",
+    "confidence": "medium",
+    "why": "climatic phenomena and human activity raising disaster frequency"
+  },
+  "ees202101": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "low",
+    "why": "eon containing Holocene epoch"
+  },
+  "ees202102": {
+    "code": "HSC-M4-T2-D11",
+    "confidence": "high",
+    "why": "definition of sustainability"
+  },
+  "ees202103": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "high",
+    "why": "Urey and Miller experiment products"
+  },
+  "ees202104": {
+    "code": "HSC-M1-T2-D10",
+    "confidence": "high",
+    "why": "evolution of hard-bodied Cambrian fauna"
+  },
+  "ees202105": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "solid waste management hierarchy options"
+  },
+  "ees202106": {
+    "code": "HSC-M3-T1-D12",
+    "confidence": "high",
+    "why": "recent evidence of global temperature variation"
+  },
+  "ees202107": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "high",
+    "why": "magma viscosity silica explosivity relationship"
+  },
+  "ees202108": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "medium",
+    "why": "wind replacing coal to cut emissions"
+  },
+  "ees202109": {
+    "code": "HSC-M2-T1-D2",
+    "confidence": "medium",
+    "why": "boundary type, eruption style and focus depth"
+  },
+  "ees202110": {
+    "code": "HSC-M1-T2-D7",
+    "confidence": "high",
+    "why": "trace fossils indicating depositional environment"
+  },
+  "ees202111": {
+    "code": "HSC-M4-T2-D7",
+    "confidence": "high",
+    "why": "groundwater pollution affecting landfill sustainability"
+  },
+  "ees202112": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "when hazard becomes natural disaster"
+  },
+  "ees202113": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "medium",
+    "why": "isotopic evidence for anthropogenic carbon dioxide"
+  },
+  "ees202114": {
+    "code": "HSC-M2-T2-D11",
+    "confidence": "high",
+    "why": "Pinatubo aerosols causing global cooling"
+  },
+  "ees202115": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "high",
+    "why": "rising carbon dioxide lowering seawater pH"
+  },
+  "ees202116": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "low",
+    "why": "renewable energy projects and economy"
+  },
+  "ees202117": {
+    "code": "HSC-M3-T2-D15",
+    "confidence": "high",
+    "why": "glacier retreat rate over time"
+  },
+  "ees202118": {
+    "code": "HSC-M4-T1-D5",
+    "confidence": "high",
+    "why": "rehabilitation after small-scale mining"
+  },
+  "ees202119": {
+    "code": "HSC-M2-T1-D7",
+    "confidence": "high",
+    "why": "comparing volcano and earthquake prediction technologies"
+  },
+  "ees202120": {
+    "code": "PRE-M2-T2-D6",
+    "confidence": "medium",
+    "why": "identifying boundaries from tectonic map"
+  },
+  "ees202121": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "waste from online shopping and packaging"
+  },
+  "ees202123": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "earthquake hazards and their effects"
+  },
+  "ees202124": {
+    "code": "HSC-M3-T1-D20",
+    "confidence": "medium",
+    "why": "changing human behaviour to reduce emissions"
+  },
+  "ees202125": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "high",
+    "why": "human activities affecting sustainability"
+  },
+  "ees202127": {
+    "code": "HSC-M3-T1-D7",
+    "confidence": "high",
+    "why": "scientific evidence for ancient temperature variation"
+  },
+  "ees202128": {
+    "code": "HSC-M2-T1-D8",
+    "confidence": "high",
+    "why": "monitoring technology for volcanic eruption prediction"
+  },
+  "ees202129": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "medium",
+    "why": "magma chemical composition differences explained"
+  },
+  "ees202130": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "high",
+    "why": "modelling stages of plate tectonic supercycle"
+  },
+  "ees202131": {
+    "code": "HSC-M1-T2-D7",
+    "confidence": "high",
+    "why": "burrow trace fossils identifying organism behaviour"
+  },
+  "ees202132": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "high",
+    "why": "black smokers conditions forming organic molecules"
+  },
+  "ees202133": {
+    "code": "HSC-M1-T2-D11",
+    "confidence": "high",
+    "why": "predicted new mass extinction event"
+  },
+  "ees202201": {
+    "code": null,
+    "confidence": "low",
+    "why": "table only, question text missing"
+  },
+  "ees202202": {
+    "code": "HSC-M3-T2-D13",
+    "confidence": "high",
+    "why": "flow-on effects of climate change"
+  },
+  "ees202203": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "medium",
+    "why": "sustainability of aluminium can recycling"
+  },
+  "ees202204": {
+    "code": "HSC-M2-T2-D16",
+    "confidence": "high",
+    "why": "east coast lows causing coastal erosion flooding"
+  },
+  "ees202205": {
+    "code": "HSC-M3-T1-D23",
+    "confidence": "high",
+    "why": "definition of geo-engineering"
+  },
+  "ees202206": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "high",
+    "why": "index fossils most significant for timescale"
+  },
+  "ees202207": {
+    "code": "HSC-M1-T2-D9",
+    "confidence": "high",
+    "why": "combining dating techniques for geological events"
+  },
+  "ees202208": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "medium",
+    "why": "hazards predicted from subduction boundary setting"
+  },
+  "ees202209": {
+    "code": "HSC-M3-T1-D13",
+    "confidence": "high",
+    "why": "ice core gas bubbles giving past greenhouse gases"
+  },
+  "ees202210": {
+    "code": null,
+    "confidence": "low",
+    "why": "table reading only, no syllabus concept"
+  },
+  "ees202211": {
+    "code": "PRE-M3-T2-D3",
+    "confidence": "high",
+    "why": "improving accuracy by repeating and averaging"
+  },
+  "ees202212": {
+    "code": "PRE-M2-T2-D3",
+    "confidence": "low",
+    "why": "choosing appropriate graph type for data"
+  },
+  "ees202213": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "high",
+    "why": "black smokers linked to organic molecules and supercycle"
+  },
+  "ees202214": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "medium",
+    "why": "anomalous recent carbon dioxide and temperature rise"
+  },
+  "ees202215": {
+    "code": "HSC-M2-T1-D9",
+    "confidence": "high",
+    "why": "which earthquake aspects current technology predicts"
+  },
+  "ees202216": {
+    "code": "HSC-M4-T1-D5",
+    "confidence": "high",
+    "why": "offshore petroleum site reclamation sequence"
+  },
+  "ees202217": {
+    "code": "HSC-M4-T1-D3",
+    "confidence": "low",
+    "why": "dam operation for water supply and flood mitigation"
+  },
+  "ees202218": {
+    "code": "HSC-M3-T1-D21",
+    "confidence": "high",
+    "why": "why adaptation needed alongside mitigation"
+  },
+  "ees202219": {
+    "code": "HSC-M3-T1-D5",
+    "confidence": "high",
+    "why": "orbital variations driving long-term climate change"
+  },
+  "ees202220": {
+    "code": null,
+    "confidence": "low",
+    "why": "seismogram interpretation, no matching dot"
+  },
+  "ees202221": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "medium",
+    "why": "comparing eras and periods of timescale"
+  },
+  "ees202222": {
+    "code": "HSC-M3-T1-D21",
+    "confidence": "medium",
+    "why": "blue carbon as climate mitigation"
+  },
+  "ees202223": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "high",
+    "why": "sustainability of a named waste option"
+  },
+  "ees202224": {
+    "code": "HSC-M2-T2-D12",
+    "confidence": "high",
+    "why": "Vesuvius eruption impact case study"
+  },
+  "ees202225": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "modelling the greenhouse effect"
+  },
+  "ees202226": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "medium",
+    "why": "flow chart of supercycle effects"
+  },
+  "ees202227": {
+    "code": null,
+    "confidence": "low",
+    "why": "source text missing, concept unknown"
+  },
+  "ees202228": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "low",
+    "why": "ecological footprint measuring human impact"
+  },
+  "ees202229": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "medium",
+    "why": "red snapper decline from overharvesting"
+  },
+  "ees202230": {
+    "code": "HSC-M3-T1-D12",
+    "confidence": "medium",
+    "why": "proxies showing temperature variation since 1440"
+  },
+  "ees202231": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "cyanobacteria effects on Earth spheres"
+  },
+  "ees202232": {
+    "code": "HSC-M2-T2-D18",
+    "confidence": "high",
+    "why": "bushfire causes and impacts"
+  },
+  "ees202233": {
+    "code": "HSC-M2-T1-D12",
+    "confidence": "low",
+    "why": "low pressure systems and severe weather prediction"
+  },
+  "ees202234": {
+    "code": "HSC-M1-T1-D5",
+    "confidence": "high",
+    "why": "stromatolites evidence of photosynthetic life"
+  },
+  "ees202301": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "high",
+    "why": "predicting east coast low formation"
+  },
+  "ees202302": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "medium",
+    "why": "plate setting causing earthquakes and volcanoes"
+  },
+  "ees202303": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "medium",
+    "why": "consequence of not recycling soft plastic"
+  },
+  "ees202304": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "natural climate drivers and their timescales"
+  },
+  "ees202305": {
+    "code": "HSC-M2-T1-D7",
+    "confidence": "high",
+    "why": "difficulty predicting hazards for evacuation"
+  },
+  "ees202306": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "high",
+    "why": "choosing most useful index fossil"
+  },
+  "ees202307": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "why aquatic organisms fossilise more often"
+  },
+  "ees202308": {
+    "code": "HSC-M2-T1-D2",
+    "confidence": "medium",
+    "why": "boundary type with focus depth and eruption style"
+  },
+  "ees202309": {
+    "code": "HSC-M3-T1-D13",
+    "confidence": "high",
+    "why": "ice core gas bubbles generating carbon dioxide graph"
+  },
+  "ees202310": {
+    "code": "PRE-M4-T1-D9",
+    "confidence": "low",
+    "why": "mine creek uranium data interpretation"
+  },
+  "ees202311": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "upstream measurement as experimental control"
+  },
+  "ees202312": {
+    "code": "PRE-M4-T1-D3",
+    "confidence": "high",
+    "why": "choosing reliable secondary source"
+  },
+  "ees202313": {
+    "code": "HSC-M1-T1-D7",
+    "confidence": "high",
+    "why": "features enabling animal conquest of land"
+  },
+  "ees202314": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "many continents increasing evolution rate"
+  },
+  "ees202315": {
+    "code": "HSC-M2-T2-D15",
+    "confidence": "high",
+    "why": "hailstorms from local vertical temperature variation"
+  },
+  "ees202316": {
+    "code": "HSC-M3-T1-D21",
+    "confidence": "high",
+    "why": "identifying adaptation strategies only"
+  },
+  "ees202317": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "medium",
+    "why": "carbon dioxide trend over past fifty years"
+  },
+  "ees202318": {
+    "code": "PRE-M3-T2-D3",
+    "confidence": "medium",
+    "why": "ensuring validity of litter survey data"
+  },
+  "ees202319": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "oxygenation history across Earth spheres"
+  },
+  "ees202320": {
+    "code": "HSC-M3-T1-D17",
+    "confidence": "medium",
+    "why": "oxygen isotope ratios in corals and stalagmites"
+  },
+  "ees202321": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "conditions making east coast low a disaster"
+  },
+  "ees202322": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "photosynthesis effects on each sphere"
+  },
+  "ees202323": {
+    "code": "HSC-M3-T2-D11",
+    "confidence": "high",
+    "why": "comparing natural and anthropogenic greenhouse effect"
+  },
+  "ees202324": {
+    "code": "HSC-M3-T1-D20",
+    "confidence": "high",
+    "why": "home changes minimising household emissions"
+  },
+  "ees202326": {
+    "code": "HSC-M4-T1-D7",
+    "confidence": "low",
+    "why": "named resource renewable status and use"
+  },
+  "ees202327": {
+    "code": "HSC-M1-T1-D6",
+    "confidence": "medium",
+    "why": "Ediacaran Period and multicellular life"
+  },
+  "ees202328": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "flow chart separating household waste"
+  },
+  "ees202329": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "high",
+    "why": "Urey-Miller apparatus origin of molecules"
+  },
+  "ees202330": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "medium",
+    "why": "ocean acidification affecting shell mass"
+  },
+  "ees202331": {
+    "code": "HSC-M4-T1-D6",
+    "confidence": "high",
+    "why": "traditional owners in mine planning"
+  },
+  "ees202332": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "medium",
+    "why": "Indonesian earthquake and plate boundary setting"
+  },
+  "ees202333": {
+    "code": "HSC-M2-T2-D13",
+    "confidence": "high",
+    "why": "Mount Pinatubo eruption case study"
+  },
+  "ees202334": {
+    "code": "HSC-M2-T2-D17",
+    "confidence": "low",
+    "why": "rainfall data assessing drought or flood"
+  },
+  "ees202335": {
+    "code": null,
+    "confidence": "low",
+    "why": "general course statement, no question"
+  },
+  "ees202401": {
+    "code": "HSC-M1-T1-D6",
+    "confidence": "high",
+    "why": "multicellular organisms appearing in Ediacaran"
+  },
+  "ees202402": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "high",
+    "why": "what forms an east coast low"
+  },
+  "ees202403": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "high",
+    "why": "black smoker community energy from chemicals"
+  },
+  "ees202404": {
+    "code": "HSC-M2-T2-D20",
+    "confidence": "high",
+    "why": "logging increasing landslide frequency"
+  },
+  "ees202405": {
+    "code": "HSC-M3-T1-D7",
+    "confidence": "high",
+    "why": "ancient evidence of temperature variation"
+  },
+  "ees202406": {
+    "code": "HSC-M1-T2-D8",
+    "confidence": "low",
+    "why": "dating the Ordovician Period"
+  },
+  "ees202407": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "purpose of earthquake disaster warning systems"
+  },
+  "ees202408": {
+    "code": "HSC-M3-T1-D21",
+    "confidence": "high",
+    "why": "why adaptation research is essential"
+  },
+  "ees202409": {
+    "code": "HSC-M3-T1-D6",
+    "confidence": "high",
+    "why": "ocean circulation change causing Pangaea climate difference"
+  },
+  "ees202410": {
+    "code": "HSC-M3-T2-D11",
+    "confidence": "high",
+    "why": "comparing natural and anthropogenic greenhouse effects"
+  },
+  "ees202411": {
+    "code": "HSC-M3-T2-D15",
+    "confidence": "high",
+    "why": "declining Arctic sea ice extent"
+  },
+  "ees202412": {
+    "code": "HSC-M2-T2-D11",
+    "confidence": "high",
+    "why": "volcanic aerosol cooling global temperature"
+  },
+  "ees202413": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "variables in viscosity explosivity experiment"
+  },
+  "ees202414": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "medium",
+    "why": "waste audit guiding landfill reduction strategy"
+  },
+  "ees202415": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "identifying variables in waste audit"
+  },
+  "ees202416": {
+    "code": "PRE-M3-T2-D3",
+    "confidence": "high",
+    "why": "determining reliability by repeating investigation"
+  },
+  "ees202417": {
+    "code": "HSC-M3-T1-D5",
+    "confidence": "high",
+    "why": "orbital features causing rapid climate variation"
+  },
+  "ees202418": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "medium",
+    "why": "calculating supercontinent separation using plate motion"
+  },
+  "ees202419": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "medium",
+    "why": "size limits preventing abalone overharvesting"
+  },
+  "ees202420": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "low",
+    "why": "legal catch size measuring abalone"
+  },
+  "ees202421": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "outlining a solid waste management strategy"
+  },
+  "ees202422": {
+    "code": "HSC-M4-T1-D11",
+    "confidence": "high",
+    "why": "present and future use of a resource"
+  },
+  "ees202424": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "high",
+    "why": "sea level rise shifting species distribution"
+  },
+  "ees202425": {
+    "code": "HSC-M4-T2-D17",
+    "confidence": "high",
+    "why": "community initiative managing resource sustainably"
+  },
+  "ees202426": {
+    "code": "HSC-M4-T1-D5",
+    "confidence": "high",
+    "why": "justifying mine reclamation methods"
+  }
+}

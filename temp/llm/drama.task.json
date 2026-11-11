@@ -1,0 +1,1101 @@
+{
+ "course_id": "drama",
+ "course_name": "Drama",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Forms and styles / Making / Investigate the ways artistic, cultural, social and personal contexts shape creative choices in dramatic works"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Forms and styles / Making / Select influences, intentions and innovations of dramatic practitioners to shape conventions, forms and styles in their own dramatic works"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Forms and styles / Making / Interpret the ways that dramatic meaning is shaped using dramatic forms and styles"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Forms and styles / Making / Experiment with dramatic processes in the creation and development of works"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Forms and styles / Making / Manipulate dramatic forms and styles to structure and shape meaning in works"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Forms and styles / Making / Adapt, reimagine and transform works to realise creative intent applying approaches, conventions and the elements of production to shape and communicate meaning"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Forms and styles / Making / Select dramatic forms and elements of production to shape the dramatic journey and engage audiences"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Forms and styles / Performing / Apply improvisation processes and performance approaches influenced by significant practitioners, forms and styles"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Forms and styles / Performing / Enact dramatic works using contexts, conventions, forms and styles to shape a dramatic journey"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Forms and styles / Performing / Experiment with the staging and performing of works and experiences with a range of dramatic processes, forms and styles"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Forms and styles / Performing / Stage and perform characters and roles using selected forms and styles to shape meaning and audience engagement"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Forms and styles / Performing / Enact dramatic works using the elements of drama to engage audiences and communicate meaning"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Forms and styles / Critically reflecting / Analyse the artistic, cultural, social and personal contexts of dramatic practitioners and works"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Forms and styles / Critically reflecting / Explain the influences, intentions and innovations of dramatic practitioners and how these shape forms and styles"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Forms and styles / Critically reflecting / Evaluate how meaning is constructed and communicated through dramatic forms and styles"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Forms and styles / Critically reflecting / Evaluate how dramatic elements are manipulated and refined through rehearsal strategies and dramatic processes"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Forms and styles / Critically reflecting / Assess the influences of dramatic practitioners and how these shape forms and styles"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Forms and styles / Critically reflecting / Reflect on the ways dramatic elements are applied through embodied responses, rehearsal exercises and performance practices"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Forms and styles / Critically reflecting / Reflect on the ways devising, acting, designing, writing and direction contribute to the shaping of dramatic meaning"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Improvising and devising / Making / Collaborate safely and respectfully using agreed protocols, roles and responsibilities"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Improvising and devising / Making / Collaboratively develop and refine directorial concept and creative intent for devised and scripted works"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Improvising and devising / Making / Apply collaborative and improvisational approaches to enhance ensemble focus, energy and cohesion"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Improvising and devising / Making / Use research, images, stories and ideas to shape dramatic meaning"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Improvising and devising / Making / Collaborate to refine directorial concept and creative intent for devised and scripted works"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Improvising and devising / Making / Experiment with dramatic elements to refine and shape the dramatic journey for audience engagement"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Improvising and devising / Making / Adapt conventions, forms and styles through the devising process to shape dramatic meaning"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Improvising and devising / Making / Create and shape dramatic forms, styles and elements for audience engagement"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Improvising and devising / Making / Generate and refine creative and critical ideas to shape the creative intent of an ensemble"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Improvising and devising / Performing / Apply safe and inclusive processes and protocols to support performers, practitioners and audience members for the staging and live performance of dramatic works"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Improvising and devising / Performing / Perform with cohesion, energy, focus and intent to support the dramatic journey and communicate meaning through dramatic contexts"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Improvising and devising / Performing / Embody character, roles and ideas with intention in rehearsal and performance"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Improvising and devising / Performing / Control appropriate performance skills to communicate characters, roles, relationships and dramatic meaning"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Improvising and devising / Performing / Apply blocking, proxemics, transitions and stage space to refine and focus intentional dramatic action to shape meaning and audience engagement"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Improvising and devising / Critically reflecting / Reflect on research and stimulus used to generate ideas, images and concepts in devised works, considering dramatic contexts and perspectives"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Improvising and devising / Critically reflecting / Assess the application of dramatic elements in improvised and devised dramatic works"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Improvising and devising / Critically reflecting / Assess the dramatic contexts and processes applied in the development, refinement, rehearsals and performance of the ensemble work"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Improvising and devising / Critically reflecting / Evaluate group choices and moments in performance to consider their impact on audience engagement and meaning"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Improvising and devising / Critically reflecting / Document the impact of the creative and collaborative processes used to shape creative intent"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / Improvising and devising / Critically reflecting / Discuss dramatic moments and creative choices and use individual and collaborative feedback to refine dramatic work"
+  },
+  {
+   "code": "PRE-M2-T3-D7",
+   "path": "Year 11 / Improvising and devising / Critically reflecting / Use safe processes to share ideas and provide feedback as a maker, performer and audience member"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Scripts in practice / Making / Analyse the ways context, ideas, intentions, forms and styles shape creative choices in dramatic works"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Scripts in practice / Making / Create a concept that uses dramatic elements to shape meaning in a scripted work"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Scripts in practice / Making / Integrate acting, design and direction to a scripted work to structure a dramatic journey and realise creative intent"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Scripts in practice / Making / Apply dramatic elements in scripted scenes to engage audiences and shape meaning"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Scripts in practice / Making / Integrate elements of production with a directorial concept and creative choices to realise interpretations of selected moments"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Scripts in practice / Making / Document processes to support the making, realisation and development of dramatic works"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Scripts in practice / Performing / Enact scripted works by applying dramatic elements and conventions to realise a directorial concept"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Scripts in practice / Performing / Apply the elements of performance in response to dramatic contexts to embody characters or roles"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Scripts in practice / Performing / Stage dramatic works adapting the aesthetic styles and elements of production"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Scripts in practice / Performing / Shape the dramatic journeys of characters through the actor–audience relationship to realise creative intent"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Scripts in practice / Performing / Manipulate the dramatic elements in the staging of scripted works to realise a concept and shape audience engagement"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Scripts in practice / Performing / Apply the elements of production in live, recorded or hybrid performances as a performer or practitioner to realise creative intent"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Scripts in practice / Critically reflecting / Reflect on the ways dramatic contexts and elements shape choices to realise creative intent"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Scripts in practice / Critically reflecting / Assess the influence of directorial concepts in the ways dramatic processes and elements are applied in scripted works"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Scripts in practice / Critically reflecting / Identify and evaluate the ways the elements of performance shape meaning in the staging of works"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Scripts in practice / Critically reflecting / Analyse ways dramatic elements shape meaning in acting, design, playwriting or directing to enhance audience engagement"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Scripts in practice / Critically reflecting / Analyse how the elements of production heighten key moments and shape the dramatic journey in scripted works"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Scripts in practice / Critically reflecting / Evaluate how group and individual choices in scripted performances impact audience engagement"
+  },
+  {
+   "code": "PRE-M3-T3-D7",
+   "path": "Year 11 / Scripts in practice / Critically reflecting / Analyse the ways dramatic meaning is shaped by design, direction, writing and performance"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Australian drama and theatre / Prescribed Australian works / Belanszky, Hannah, SaplingsCurrency Press, 2025, ISBN: 9781761732225"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Australian drama and theatre / Prescribed Australian works / Blake, Yve, FangirlsCurrency Press, 2021, ISBN: 9781760623425"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Australian drama and theatre / Prescribed Australian works / Enright, Nick and Monjo, Justin, CloudstreetCurrency Press, 1999, ISBN: 9780868195896"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Australian drama and theatre / Prescribed Australian works / Feaver, Kendall, My brilliant careerCurrency Press, 2021, ISBN: 9781760627300"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Australian drama and theatre / Prescribed Australian works / Law, Michelle, Single Asian femaleCurrency Press, 2018, ISBN: 9781760621810"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Australian drama and theatre / Prescribed Australian works / Shakthidharan, S, Counting and crackingCurrency Press, 2020, ISBN: 9781760623395"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Australian drama and theatre / Context and interpretation / Investigate the artistic, cultural, social, political and personal contexts of dramatic practitioners, forms and styles"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Australian drama and theatre / Context and interpretation / Experiment with and adapt dramatic forms and styles to shape ideas and express Australian voices, perspectives and representations"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Australian drama and theatre / Context and interpretation / Create and shape scenes and images to examine challenges and opportunities in Australian works"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Australian drama and theatre / Context and interpretation / Explore the dramatic contexts of characters, roles or relationships through embodied exercises"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Australian drama and theatre / Context and interpretation / Experiment with dramatic elements to shape dramatic intention and meaning"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Australian drama and theatre / Context and interpretation / Apply the elements of production to shape dramatic meaning and audience engagement"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Australian drama and theatre / Context and interpretation / Explore and experiment with the dynamics of the actor–audience relationship and its impact on audience engagement"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Approaches to drama and theatre / Practitioner approaches / Samuel Beckett"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Approaches to drama and theatre / Practitioner approaches / Anne Bogart and Tina Landau"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Approaches to drama and theatre / Practitioner approaches / Frantic Assembly"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Approaches to drama and theatre / Practitioner approaches / Jacques Lecoq"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Approaches to drama and theatre / Practitioner approaches / Tectonic Theater Project"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Approaches to drama and theatre / Practitioner approaches / Yirra Yaakin Theatre Company"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Investigate the conventions, practices and contexts of practitioners and their works"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Experiment with and apply dramatic forms, styles and conventions informed by practitioner approaches"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Apply artistic, cultural, social and personal protocols and practices collaboratively to devise an ensemble performance"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Generate, shape and refine performance using ideas, images, stories and stimulus informed by practitioner approaches"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Apply and refine ensemble processes to support group cohesion, focus and creative intent"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Experiment with the role of the audience when devising and shaping the performance"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Plan and shape dramatic moments, including transitions and structure, to engage audience and communicate intended meaning"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Experiment with and refine the dramatic journey using forms, styles and practitioner conventions"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Develop ideas, concepts and creative choices using rehearsal experimentation and feedback"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Experiment with the ways dramatic elements shape dramatic meaning and audience engagement"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Realise a shared directorial vision and concept in ensemble performance"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Apply practitioner approaches to dramatic forms and styles to inform staging, scene impact and audience engagement"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Manipulate practitioner conventions in performance to communicate intention, character, roles and dramatic meaning"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Apply conventions and ideas informed by practitioner approaches to develop, stage and refine ensemble performance"
+  },
+  {
+   "code": "HSC-M2-T2-D15",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Use dramatic elements to enact characters and roles appropriate to form and style"
+  },
+  {
+   "code": "HSC-M2-T2-D16",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Adapt performance techniques, including timing, response, focus and spatial awareness"
+  },
+  {
+   "code": "HSC-M2-T2-D17",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Use the dramatic elements to shape meaning and audience engagement"
+  },
+  {
+   "code": "HSC-M2-T2-D18",
+   "path": "Year 12 / Approaches to drama and theatre / Ensemble performance / Establish, realise and sustain an actor–audience relationship in ensemble performance"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Individual project / Design / Research the purpose of costume design and approaches to developing designs from a range of industry contexts"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Individual project / Design / Create a design concept to support the directorial vision of a prescribed work and realise creative intent"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Individual project / Design / Select characters and scenes from the prescribed work to create costume renderings that communicate meaning for the directorial vision and design context"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Individual project / Design / Select and apply design choices, including colour, texture and fabric, to create audience engagement"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Individual project / Design / Identify issues and apply solutions to costume design that support the characters’ dramatic and technical needs"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Individual project / Design / Research the purpose of and approaches to developing theatre promotional material from a range of industry contexts"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Individual project / Design / Create a design concept for promotional materials to support the directorial vision of a prescribed work and realise creative intent"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Individual project / Design / Select and manipulate images, colours, symbols, motifs, vectors and other visual design elements to communicate meaning based on the directorial vision and theatre context"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Individual project / Design / Select and apply language conventions to express and promote work and create audience engagement"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Individual project / Design / Identify issues and apply solutions to unify the promotional design concept"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Individual project / Design / Research the purpose of set design and approaches to developing set design construction from a range of industry contexts"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Individual project / Design / Create a design concept for a set to support the directorial vision of a prescribed work and realise creative intent"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Individual project / Design / Select design features and scenic requirements, including stage space, texture, colour and composition, to communicate meaning based on the directorial vision and theatre context"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Individual project / Design / Select and apply design tools, process and materials to influence audience engagement"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Individual project / Design / Identify issues and apply solutions to set design that support the integrity of the set design concept"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Individual project / Director’s folio / design (costume OR promotion OR set)"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Individual project / Director’s folio / director’s folio"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Individual project / Director’s folio / performance"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Individual project / Director’s folio / scriptwriting"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Individual project / Director’s folio / short film."
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Individual project / Director’s folio / Research approaches and conventions used by dramatic practitioners to interpret and shape scripted works for production"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Individual project / Director’s folio / Create a directorial vision for the prescribed work, manipulating dramatic contexts, processes and elements to explore possibilities for aesthetic and dramatic meaning"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Individual project / Director’s folio / Use dramatic, theatrical and design elements, including scenography and dramatic moments, to structure the dramatic journey for audience engagement"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Individual project / Director’s folio / Communicate meaning to a theatre audience using costume, lighting, sound and performance choices that realise the directorial vision and creative intent"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Individual project / Director’s folio / Document the processes used in the making, development and realisation of their directorial vision, including research, script analysis, rehearsal techniques and production plans"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Individual project / Performance / Use voice and movement to embody a character or role in artistic, cultural, social and personal contexts"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Individual project / Performance / Enact scenes to explore the conventions and approaches used to develop characters and their roles"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Individual project / Performance / Stage dramatic action to experiment with characters’ perspectives and relationships within works"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Individual project / Performance / Shape the audience experience through deliberate actor choices and relationships"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Individual project / Performance / Interpret and perform characters or roles to realise creative intent and explore character relationships"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Individual project / Performance / Apply the dramatic elements in performance to stage interpretations of prescribed works"
+  },
+  {
+   "code": "HSC-M3-T3-D7",
+   "path": "Year 12 / Individual project / Performance / Research approaches to solo performance using dramatic processes, considering style and context"
+  },
+  {
+   "code": "HSC-M3-T3-D8",
+   "path": "Year 12 / Individual project / Performance / Create a directorial vision for the performance using dramatic processes to structure the dramatic journey and engage an audience"
+  },
+  {
+   "code": "HSC-M3-T3-D9",
+   "path": "Year 12 / Individual project / Performance / Select and apply elements of performance to refine and realise the role and/or character that is aligned to a directorial vision and realise the directorial vision and creative intent"
+  },
+  {
+   "code": "HSC-M3-T3-D10",
+   "path": "Year 12 / Individual project / Performance / Communicate meaning to an audience using skills in voice and movement"
+  },
+  {
+   "code": "HSC-M3-T3-D11",
+   "path": "Year 12 / Individual project / Performance / Interpret and apply dramatic features through rehearsal to realise the directorial vision"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / Individual project / Scriptwriting / Analyse how dramatic works and practitioners shape meaning through the representation of values and assumptions in artistic, cultural, social and personal contexts"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / Individual project / Scriptwriting / Analyse how perspectives, values and traditions influence dramatic processes and the development of dramatic works"
+  },
+  {
+   "code": "HSC-M3-T4-D3",
+   "path": "Year 12 / Individual project / Scriptwriting / Evaluate the impacts of dramatic form and style on dramatic meaning and audience engagement, including use of language"
+  },
+  {
+   "code": "HSC-M3-T4-D4",
+   "path": "Year 12 / Individual project / Scriptwriting / Reflect on the ways dramatic elements are used to represent identities, environments and culture"
+  },
+  {
+   "code": "HSC-M3-T4-D5",
+   "path": "Year 12 / Individual project / Scriptwriting / Evaluate the ways the ideas, processes and practices of dramatic practitioners are applied in dramatic works to shape meaning and influence audience engagement"
+  },
+  {
+   "code": "HSC-M3-T4-D6",
+   "path": "Year 12 / Individual project / Scriptwriting / Investigate and analyse the contexts, ideas and practices of dramatic practitioners"
+  },
+  {
+   "code": "HSC-M3-T4-D7",
+   "path": "Year 12 / Individual project / Scriptwriting / Evaluate how practitioner approaches to theatre making can inform choices in form and style"
+  },
+  {
+   "code": "HSC-M3-T4-D8",
+   "path": "Year 12 / Individual project / Scriptwriting / Assess the ways practitioner processes can be used to influence and inform the development of ensemble performance"
+  },
+  {
+   "code": "HSC-M3-T4-D9",
+   "path": "Year 12 / Individual project / Scriptwriting / Evaluate the relationships created between the actor and audience in ensemble work"
+  },
+  {
+   "code": "HSC-M3-T4-D10",
+   "path": "Year 12 / Individual project / Scriptwriting / Explain the embodiment of characters and roles in relation to ensemble work"
+  },
+  {
+   "code": "HSC-M3-T4-D11",
+   "path": "Year 12 / Individual project / Scriptwriting / Evaluate and analyse dramatic processes used in collaboration to develop, refine, rehearse and perform ensemble work"
+  },
+  {
+   "code": "HSC-M3-T4-D12",
+   "path": "Year 12 / Individual project / Scriptwriting / Discuss the use of physically, emotionally and culturally safe processes in staging and performance"
+  },
+  {
+   "code": "HSC-M3-T4-D13",
+   "path": "Year 12 / Individual project / Scriptwriting / Research approaches to scriptwriting to investigate the ways scripted works create meaning for practitioners and audiences"
+  },
+  {
+   "code": "HSC-M3-T4-D14",
+   "path": "Year 12 / Individual project / Scriptwriting / Create dramatic action with an awareness of performance and production purposes to realise creative intent"
+  },
+  {
+   "code": "HSC-M3-T4-D15",
+   "path": "Year 12 / Individual project / Scriptwriting / Use language to shape characters, relationships and dramatic action to shape dramatic journey appropriate to dramatic form and style"
+  },
+  {
+   "code": "HSC-M3-T4-D16",
+   "path": "Year 12 / Individual project / Scriptwriting / Use dramatic language to communicate subtextual, symbolic and thematic meaning to shape performable moments"
+  },
+  {
+   "code": "HSC-M3-T4-D17",
+   "path": "Year 12 / Individual project / Scriptwriting / Select and apply dramatic, stylistic, structural and thematic features in the composition process to refine and realise creative intent"
+  },
+  {
+   "code": "HSC-M3-T4-D18",
+   "path": "Year 12 / Individual project / Scriptwriting / design (costume OR promotion OR set)"
+  },
+  {
+   "code": "HSC-M3-T4-D19",
+   "path": "Year 12 / Individual project / Scriptwriting / director’s folio."
+  },
+  {
+   "code": "HSC-M3-T4-D20",
+   "path": "Year 12 / Individual project / Scriptwriting / Aristophanes, The birdsPenguin Classics, 1824/2004, ISBN: 9780140449518"
+  },
+  {
+   "code": "HSC-M3-T4-D21",
+   "path": "Year 12 / Individual project / Scriptwriting / Enoch, Wesley and Mailman, Deborah, The 7 stages of grieving25th Anniversary edn, Playlab Press, 2019, ISBN: 9781925338966"
+  },
+  {
+   "code": "HSC-M3-T4-D22",
+   "path": "Year 12 / Individual project / Scriptwriting / Katz, Lally, Neighbourhood watchCurrency Press, 2014, ISBN: 9781925005141"
+  },
+  {
+   "code": "HSC-M3-T4-D23",
+   "path": "Year 12 / Individual project / Scriptwriting / McDonagh, Martin, The lieutenant of InishmoreBloomsbury, Methuen Drama, 2009, ISBN: 9780413765000"
+  },
+  {
+   "code": "HSC-M3-T4-D24",
+   "path": "Year 12 / Individual project / Scriptwriting / Shakespeare, William, The comedy of errors(Andrews R ed), Cambridge University Press, 1623/1992, ISBN: 9780521535168"
+  },
+  {
+   "code": "HSC-M3-T4-D25",
+   "path": "Year 12 / Individual project / Scriptwriting / Tulloch, Richard and Kuijer, Guus, The book of everything: the playCurrency Press, 2011, ISBN: 9780868199337"
+  },
+  {
+   "code": "HSC-M3-T4-D26",
+   "path": "Year 12 / Individual project / Scriptwriting / Washburn, Anne, Mr. Burns and other playsTheatre Communications Group, 2017, ISBN: 9781350200555"
+  },
+  {
+   "code": "HSC-M3-T4-D27",
+   "path": "Year 12 / Individual project / Scriptwriting / Whittet, Matthew, Girl asleepCurrency Press, 2016, ISBN: 9781925005721"
+  },
+  {
+   "code": "HSC-M3-T4-D28",
+   "path": "Year 12 / Individual project / Scriptwriting / Wilde, Oscar, The importance of being earnestVintage, 2016, ISBN: 9781784871529"
+  },
+  {
+   "code": "HSC-M3-T5-D1",
+   "path": "Year 12 / Individual project / Short film / Research approaches to creating short film as a dramatic form and investigate developing short film in industry contexts"
+  },
+  {
+   "code": "HSC-M3-T5-D2",
+   "path": "Year 12 / Individual project / Short film / Create a directorial vision for the film that communicates visual and aural meaning for screen"
+  },
+  {
+   "code": "HSC-M3-T5-D3",
+   "path": "Year 12 / Individual project / Short film / Use dramatic elements, screenwriting, narrative structure and dramatic action to structure the dramatic journey and engage an audience"
+  },
+  {
+   "code": "HSC-M3-T5-D4",
+   "path": "Year 12 / Individual project / Short film / Manipulate casting, costume, location, lighting, sound and other production elements to maintain and realise the directorial vision and creative intent"
+  },
+  {
+   "code": "HSC-M3-T5-D5",
+   "path": "Year 12 / Individual project / Short film / Investigate and analyse relevant stylistic, structural and thematic conventions or ideas to inform pre-production and post-production processes that support the communication of intended meaning"
+  }
+ ],
+ "questions": [
+  {
+   "id": "drama2020_q1",
+   "year": 2020,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australian drama and theatre / Context and interpretation",
+   "text": "How are cultural tensions staged to confront audiences?\nIn your response, refer to your study of at least TWO plays and your own experiential learning\nof the topic.\nTopic 1: Dramatic Traditions in Australi\nTexts set for study:\n– Alexander Buzo, Norm and Ahmed\n– Jack Davis, No Sugar\n– Dorothy Hewett, The Chapel Perilous\n– David Williamson, The Removalists\na\nOR\nTopic 2: Contemporary Australian Theatre Practice\nTexts set for study:\n– Jane Harrison, Stolen\n– Lally Katz, Neighbourhood Watch\n– Daniel Keene, Life Without Me\n– Mirra Todd, Fearless\nSection II — Studies in Drama and Theatre\nAttempt ONE question from Questions 2–8\nare available.\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding of drama and theatre relevant to the\nquestion\n● express your point of view using appropriate supporting evidence\n● present a sustained, logical and cohesive response"
+  },
+  {
+   "id": "drama2020_q2",
+   "year": 2020,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— The Voice of Women in Theatre (20 marks)\nHow are socio/cultural judgements about women represented on stage?\nIn your response, compare the TWO plays you have studied and refer to your own experiential\nlearning of this topic.\nTexts set for study:\nList 1\n– Caryl Churchill, Top Girls\nor\n– Aphra Behn et al., The Rover in Restoration Comedy\nAND\nList 2\n– Donna Abela, Jump for Jordan\nor\n– Mary Anne Butler, Highway of Lost Hearts\nor\n– Joanna Murray-Smith, The Female of the Species\nor\n– Leah Purcell and Scott Rankin, Box the Pony\nOR"
+  },
+  {
+   "id": "drama2020_q3",
+   "year": 2020,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Approaches to Acting (20 marks)\nTheatre is realised through discipline and tension.\nDiscuss this statement with reference to the philosophy and practice of TWO practitioners’\nworks set for study and your own experiential learning of this topic.\nPractitioners and texts set for study:\n– Augusto Boal, Games for Actors and Non-Actors\n– Jacques Lecoq et al., The Moving Body\n– Jonathan Pitches, Vsevolod Meyerhold\n– James Slowiak and Jairo Cuesta, Jerzy Grotowski\nOR"
+  },
+  {
+   "id": "drama2020_q4",
+   "year": 2020,
+   "number": "4",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Verbatim Theatre (20 marks)\nEngaging with a community’s social context shapes theatrical truth.\nDiscuss this statement with reference to TWO texts set for study and the development of a\npiece of original Verbatim Theatre.\nTexts set for study:\n– Campion Decent, Embers\n– Tom Holloway, Beyond the Neck: A Quartet on Loss and Violence\n– Robin Soans, Talking to Terrorists\n– Alana Valentine, Parramatta Girls\nOR"
+  },
+  {
+   "id": "drama2020_q5",
+   "year": 2020,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Black Comedy (20 marks)\nThe audience’s experience of loss and catharsis is manipulated by rhythm.\nTo what extent is this revealed in Black Comedy?\nIn your response, refer to TWO plays set for study and your own experiential learning of this\ntopic.\nTexts set for study:\n– Neil LaBute, The Shape of Things\n– Martin McDonagh, The Lieutenant of Inishmore\n– Harold Pinter, The Homecoming\n– Ian Wilding, October\nOR"
+  },
+  {
+   "id": "drama2020_q6",
+   "year": 2020,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Multi-Discipline Theatre (20 marks)\nHow are imagination and physical expression brought together to challenge ideas in Multi-\nDiscipline Theatre?\nIn your response, refer to ONE practitioner and an original piece of Multi-Discipline Theatre.\nPractitioners and texts set for study:\n• Robert Lepage and ExMachina\nTexts set for study:\n– Patrick Caux et al., Ex Machina: Creating for the Stage\n– Aleksandar Saša Dundjerovic´, Robert Lepage\nor\n• Simon McBurney and Théâtre de Complicité\nTexts set for study:\n– Complicite (Theatre company) and Simon McBurney (eds), A Disappearing Number\n– Sarah Ainslie et al., Complicite: Rehearsal Notes\nOR"
+  },
+  {
+   "id": "drama2020_q7",
+   "year": 2020,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Significant Plays of the 20th Century (20 marks)\nHow does a revolutionary theatrical approach to narrative challenge audiences?\nIn your response, refer to TWO texts set for study and your own experiential learning of this\ntopic.\nTexts set for study:\n– Bertolt Brecht, Mother Courage\n– Eugène Ionesco and Donald Watson (trans.), The Bald Prima Donna: A pseudo-play in\none act\n– Moisés Kaufman, The Laramie Project\n– Tony Kushner, Angels in America: A Gay Fantasia on National Themes (Part 1)\nOR"
+  },
+  {
+   "id": "drama2020_q8",
+   "year": 2020,
+   "number": "8",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Japanese Traditional and Contemporary Theatre (20 marks)\nTo what extent is meaning made in Japanese theatre by the tension between movement and\nstillness?\nIn your response, refer to your study of the texts and your own experiential learning of this\ntopic.\nTexts set for study:\nONE of the following traditional Japanese forms:\n– James R Brandon (ed.), Kabuki: Five Classic Plays\n– Ernest Francisco Fenollosa et al., The Noh Theatre of Japan: With Complete Texts of\n15 Classic Plays\n– Stanleigh H Jones et al. (eds), The Mountains from Mount Imo and Mount Se: Precepts\nfor Women in The Bunraku Puppet Theatre of Japan: Honor, Vengeance, and Love in\nFour Plays of the 18th and 19th Centuries\nAND ONE of the following contemporary work of Tadashi Suzuki:\n– Tadashi Suzuki, The Way of Acting: The Theatre Writings of Tadashi Suzuki\nor\n– Paul Allain, The Art of Stillness: The Theatre Practice of Tadashi Suzuki"
+  },
+  {
+   "id": "drama2021_q1",
+   "year": 2021,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australian drama and theatre / Context and interpretation",
+   "text": "How are characters and settings used to stage Australian political and social ideas?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof the topic.\nTopic 1: Dramatic Traditions in Australia\nTexts set for study:\n– Alexander Buzo, Norm and Ahmed\n– Jack Davis, No Sugar\n– Dorothy Hewett, The Chapel Perilous\n– David Williamson, The Removalists\nOR\nTopic 2: Contemporary Australian Theatre Practice\nTexts set for study:\n– Jane Harrison, Stolen\n– Lally Katz, Neighbourhood Watch\n– Daniel Keene, Life Without Me\n– Mirra Todd, Fearless\nSection II — Studies in Drama and Theatre\nAttempt ONE question from Questions 2–8\nare available.\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding of drama and theatre relevant to the\nquestion\n● express your point of view using appropriate supporting evidence\n● present a sustained, logical and cohesive response"
+  },
+  {
+   "id": "drama2021_q2",
+   "year": 2021,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— The Voice of Women in Theatre (20 marks)\nCompare how female playwrights create challenging situations that encourage an audience to\nconsider the status of women.\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\nList 1\n– Caryl Churchill, Top Girls\nor\n– Aphra Behn et al., The Rover in Restoration Comedy\nAND\nList 2\n– Donna Abela, Jump for Jordan\nor\n– Mary Anne Butler, Highway of Lost Hearts\nor\n– Joanna Murray-Smith, The Female of the Species\nor\n– Leah Purcell and Scott Rankin, Box the Pony\nOR"
+  },
+  {
+   "id": "drama2021_q3",
+   "year": 2021,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Approaches to Acting (20 marks)\nTo what extent did actor training in the 20th century shift the focus from performance to\nprocess?\nIn your response, refer to the philosophies and practices of TWO practitioners’ works set for\nstudy and your own experiential learning of this topic.\nPractitioners and texts set for study:\n– Augusto Boal, Games for Actors and Non-Actors\n– Jacques Lecoq et al., The Moving Body\n– Jonathan Pitches, Vsevolod Meyerhold\n– James Slowiak and Jairo Cuesta, Jerzy Grotowski\nOR"
+  },
+  {
+   "id": "drama2021_q4",
+   "year": 2021,
+   "number": "4",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Verbatim Theatre (20 marks)\nHow have the dramatic shape and theatricality of the TWO plays you have studied influenced\nthe development of a piece of original Verbatim Theatre?\nTexts set for study:\n– Campion Decent, Embers\n– Tom Holloway, Beyond the Neck: A Quartet on Loss and Violence\n– Robin Soans, Talking to Terrorists\n– Alana Valentine, Parramatta Girls\nOR"
+  },
+  {
+   "id": "drama2021_q5",
+   "year": 2021,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Black Comedy (20 marks)\nAudiences are confronted with situations that create tension between discomfort and laughter.\nTo what extent is this true of Black Comedy?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Neil LaBute, The Shape of Things\n– Martin McDonagh, The Lieutenant of Inishmore\n– Harold Pinter, The Homecoming\n– Ian Wilding, October\nOR"
+  },
+  {
+   "id": "drama2021_q6",
+   "year": 2021,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Multi-Discipline Theatre (20 marks)\nHow do Multi-Discipline Theatre practitioners use tradition and innovation to engage an\naudience in significant issues?\nIn your response, refer to ONE practitioner and an original piece of Multi-Discipline Theatre.\nPractitioners and texts set for study:\n• Robert Lepage and ExMachina\nTexts set for study:\n– Patrick Caux et al., Ex Machina: Creating for the Stage\n– Aleksandar Saša Dundjerovic´, Robert Lepage\nor\n• Simon McBurney and Théâtre de Complicité\nTexts set for study:\n– Complicite (Theatre company) and Simon McBurney (eds), A Disappearing Number\n– Sarah Ainslie et al., Complicite: Rehearsal Notes\nOR"
+  },
+  {
+   "id": "drama2021_q7",
+   "year": 2021,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Significant Plays of the 20th Century (20 marks)\nSignificant plays challenge audiences to understand characters in places and times beyond their\nown.\nTo what extent is this true?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Bertolt Brecht, Mother Courage\n– Eugène Ionesco and Donald Watson (trans.), The Bald Prima Donna: A pseudo-play in\none act\n– Moisés Kaufman, The Laramie Project\n– Tony Kushner, Angels in America: A Gay Fantasia on National Themes (Part 1)\nOR"
+  },
+  {
+   "id": "drama2021_q8",
+   "year": 2021,
+   "number": "8",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Japanese Traditional and Contemporary Theatre (20 marks)\nHow do both traditional and contemporary Japanese Theatre convey cultural ideas through the\nuse of body?\nIn your response, refer to your study of the texts and your own experiential learning of this\ntopic.\nTexts set for study:\nONE of the following traditional Japanese forms:\n– James R Brandon (ed.), Kabuki: Five Classic Plays\n– Ernest Francisco Fenollosa et al., The Noh Theatre of Japan: With Complete Texts of\n15 Classic Plays\n– Stanleigh H Jones et al. (eds), The Mountains from Mount Imo and Mount Se: Precepts\nfor Women in The Bunraku Puppet Theatre of Japan: Honor, Vengeance, and Love in\nFour Plays of the 18th and 19th Centuries\nAND ONE of the following contemporary works of Tadashi Suzuki:\n– Tadashi Suzuki, The Way of Acting: The Theatre Writings of Tadashi Suzuki\nor\n– Paul Allain, The Art of Stillness: The Theatre Practice of Tadashi Suzuki"
+  },
+  {
+   "id": "drama2022_q1",
+   "year": 2022,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australian drama and theatre / Context and interpretation",
+   "text": "How do Australian plays create images on the stage that provoke audiences to consider social\nand personal concerns?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof the topic.\nTopic 1: Dramatic Traditions in Australia\nTexts set for study:\n– Alexander Buzo, Norm and Ahmed\n– Jack Davis, No Sugar\n– Dorothy Hewett, The Chapel Perilous\n– David Williamson, The Removalists\nOR\nTopic 2: Contemporary Australian Theatre Practice\nTexts set for study:\n– Jane Harrison, Stolen\n– Lally Katz, Neighbourhood Watch\n– Daniel Keene, Life Without Me\n– Mirra Todd, Fearless\nSection II — Studies in Drama and Theatre\nAttempt ONE question from Questions 2–8\nare available.\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding of drama and theatre relevant to the\nquestion\n● express your point of view using appropriate supporting evidence\n● present a sustained, logical and cohesive response"
+  },
+  {
+   "id": "drama2022_q2",
+   "year": 2022,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— The Voice of Women in Theatre (20 marks)\nCompare how female playwrights use distinctive voices on the stage to examine stereotypes\nin their social context.\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\nList 1\n– Caryl Churchill, Top Girls\nor\n– Aphra Behn et al., The Rover in Restoration Comedy\nAND\nList 2\n– Donna Abela, Jump for Jordan\nor\n– Mary Anne Butler, Highway of Lost Hearts\nor\n– Joanna Murray-Smith, The Female of the Species\nor\n– Leah Purcell and Scott Rankin, Box the Pony\nOR"
+  },
+  {
+   "id": "drama2022_q3",
+   "year": 2022,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Approaches to Acting (20 marks)\nHow do practitioners’ exercises and techniques allow actors to choose a specific performance\naesthetic for audiences?\nIn your response, refer to the philosophies and practices of TWO practitioners’ works set for\nstudy and your own experiential learning of this topic.\nPractitioners and texts set for study:\n– Augusto Boal, Games for Actors and Non-Actors\n– Jacques Lecoq et al., The Moving Body\n– Jonathan Pitches, Vsevolod Meyerhold\n– James Slowiak and Jairo Cuesta, Jerzy Grotowski\nOR"
+  },
+  {
+   "id": "drama2022_q4",
+   "year": 2022,
+   "number": "4",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Verbatim Theatre (20 marks)\nTo what extent has direct testimony been shaped to stage real events that create a theatrical\nexperience for the audience?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Campion Decent, Embers\n– Tom Holloway, Beyond the Neck: A Quartet on Loss and Violence\n– Robin Soans, Talking to Terrorists\n– Alana Valentine, Parramatta Girls\nOR"
+  },
+  {
+   "id": "drama2022_q5",
+   "year": 2022,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Black Comedy (20 marks)\nExplain how the staging of comedic situations and taboo subjects provides audiences with a\ncathartic experience.\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Neil LaBute, The Shape of Things\n– Martin McDonagh, The Lieutenant of Inishmore\n– Harold Pinter, The Homecoming\n– Ian Wilding, October\nOR"
+  },
+  {
+   "id": "drama2022_q6",
+   "year": 2022,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Multi-Discipline Theatre (20 marks)\nHow do practitioners use collaboration to create theatrical experiences that examine cultural\nissues?\nIn your response, refer to ONE practitioner and an original piece of Multi-Discipline Theatre.\nPractitioners and texts set for study:\n• Robert Lepage and ExMachina\nTexts set for study:\n– Patrick Caux et al., Ex Machina: Creating for the Stage\n– Aleksandar Saša Dundjerovic´, Robert Lepage\nor\n• Simon McBurney and Théâtre de Complicité\nTexts set for study:\n– Complicite (Theatre company) and Simon McBurney (eds), A Disappearing Number\n– Sarah Ainslie et al., Complicite: Rehearsal Notes\nOR"
+  },
+  {
+   "id": "drama2022_q7",
+   "year": 2022,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Significant Plays of the 20th Century (20 marks)\nHow did the content of significant plays and shifting theatrical paradigms challenge audiences?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Bertolt Brecht, Mother Courage\n– Eugène Ionesco and Donald Watson (trans.), The Bald Prima Donna: A pseudo-play in\none act\n– Moisés Kaufman, The Laramie Project\n– Tony Kushner, Angels in America: A Gay Fantasia on National Themes (Part 1)\nOR"
+  },
+  {
+   "id": "drama2022_q8",
+   "year": 2022,
+   "number": "8",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Japanese Traditional and Contemporary Theatre (20 marks)\nHow is the unique aesthetic of Japanese Theatre used to stage social ideas relevant to an\naudience’s context?\nIn your response, refer to your study of the texts and your own experiential learning of this\ntopic.\nTexts set for study:\nONE of the following traditional Japanese forms:\n– James R Brandon (ed.), Kabuki: Five Classic Plays\n– Ernest Francisco Fenollosa et al., The Noh Theatre of Japan: With Complete Texts of\n15 Classic Plays\n– Stanleigh H Jones et al. (eds), The Mountains from Mount Imo and Mount Se: Precepts\nfor Women in The Bunraku Puppet Theatre of Japan: Honor, Vengeance, and Love in\nFour Plays of the 18th and 19th Centuries\nAND ONE of the following contemporary works of Tadashi Suzuki:\n– Tadashi Suzuki, The Way of Acting: The Theatre Writings of Tadashi Suzuki\nor\n– Paul Allain, The Art of Stillness: The Theatre Practice of Tadashi Suzuki"
+  },
+  {
+   "id": "drama2023_q1",
+   "year": 2023,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australian drama and theatre / Context and interpretation",
+   "text": "How do Australian practitioners create theatrical moments to challenge an audience’s ideas\nabout Australian society?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTopic 1: Dramatic Traditions in Australia\nTexts set for study:\n– Alexander Buzo, Norm and Ahmed\n– Jack Davis, No Sugar\n– Dorothy Hewett, The Chapel Perilous\n– David Williamson, The Removalists\nOR\nTopic 2: Contemporary Australian Theatre Practice\nTexts set for study:\n– Jane Harrison, Stolen\n– Lally Katz, Neighbourhood Watch\n– Daniel Keene, Life Without Me\n– Mirra Todd, Fearless\nSection II — Studies in Drama and Theatre\nAttempt ONE question from Questions 2–8\nare available.\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding of drama and theatre relevant to the\nquestion\n● express your point of view using appropriate supporting evidence\n● present a sustained, logical and cohesive response"
+  },
+  {
+   "id": "drama2023_q2",
+   "year": 2023,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— The Voice of Women in Theatre (20 marks)\nCompare how the TWO playwrights you have studied present their vision of female experience\nthrough their characters.\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\nList 1\n– Caryl Churchill, Top Girls\nor\n– Aphra Behn et al., The Rover in Restoration Comedy\nAND\nList 2\n– Donna Abela, Jump for Jordan\nor\n– Mary Anne Butler, Highway of Lost Hearts\nor\n– Joanna Murray-Smith, The Female of the Species\nor\n– Leah Purcell and Scott Rankin, Box the Pony\nOR"
+  },
+  {
+   "id": "drama2023_q3",
+   "year": 2023,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Approaches to Acting (20 marks)\nHow did actor training practitioners in the 20th century use space and presence to engage\naudiences?\nIn your response, refer to TWO practitioners set for study and your own experiential learning\nof this topic.\nPractitioners and texts set for study:\n– Augusto Boal, Games for Actors and Non-Actors\n– Jacques Lecoq et al., The Moving Body\n– Jonathan Pitches, Vsevolod Meyerhold\n– James Slowiak and Jairo Cuesta, Jerzy Grotowski\nOR"
+  },
+  {
+   "id": "drama2023_q4",
+   "year": 2023,
+   "number": "4",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Verbatim Theatre (20 marks)\nHow does Verbatim Theatre use authentic communities and events to create thought-provoki\nperformances?\nIn your response, refer to the TWO plays you have studied and your own experiential learni\nof this topic.\nTexts set for study:\n– Campion Decent, Embers\n– Tom Holloway, Beyond the Neck: A Quartet on Loss and Violence\n– Robin Soans, Talking to Terrorists\n– Alana Valentine, Parramatta Girls\nng\nng\nOR"
+  },
+  {
+   "id": "drama2023_q5",
+   "year": 2023,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Black Comedy (20 marks)\nHow do the conventions of Black Comedy provide cathartic relief from uncomfortable\nsituations for an audience?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Neil LaBute, The Shape of Things\n– Martin McDonagh, The Lieutenant of Inishmore\n– Harold Pinter, The Homecoming\n– Ian Wilding, October\nOR"
+  },
+  {
+   "id": "drama2023_q6",
+   "year": 2023,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Multi-Discipline Theatre (20 marks)\nHow does Multi-Discipline Theatre draw on traditional and new theatre technologies to create\nhighly visual forms that address global issues.\nIn your response, refer to ONE practitioner and an original piece of Multi-Discipline Theatre.\nPractitioners and texts set for study:\n• Robert Lepage and ExMachina\nTexts set for study:\n– Patrick Caux et al., Ex Machina: Creating for the Stage\n– Aleksandar Saša Dundjerovic´, Robert Lepage\nor\n• Simon McBurney and Théâtre de Complicité\nTexts set for study:\n– Complicite (Theatre company) and Simon McBurney (eds), A Disappearing Number\n– Sarah Ainslie et al., Complicite: Rehearsal Notes\nOR"
+  },
+  {
+   "id": "drama2023_q7",
+   "year": 2023,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Significant Plays of the 20th Century (20 marks)\nHow did the plays that you have studied break new ground by providing powerful theatrical\nexperiences for their audiences?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Bertolt Brecht, Mother Courage\n– Eugène Ionesco and Donald Watson (trans.), The Bald Prima Donna: A Pseudo-Play in\nOne Act\n– Moisés Kaufman, The Laramie Project\n– Tony Kushner, Angels in America: A Gay Fantasia on National Themes (Part 1)\nOR"
+  },
+  {
+   "id": "drama2023_q8",
+   "year": 2023,
+   "number": "8",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Japanese Traditional and Contemporary Theatre (20 marks)\nHow does Suzuki draw on the music and movement of traditional Japanese Theatre to explore\ncontemporary ideas?\nIn your response, refer to your study of the texts and your own experiential learning of this\ntopic.\nTexts set for study:\nONE of the following traditional Japanese forms:\n– James R Brandon (ed.), Kabuki: Five Classic Plays\n– Ernest Francisco Fenollosa et al., The Noh Theatre of Japan: With Complete Texts of\n15 Classic Plays\n– Stanleigh H Jones et al. (eds), The Mountains from Mount Imo and Mount Se: Precepts\nfor Women in The Bunraku Puppet Theatre of Japan: Honor, Vengeance, and Love in\nFour Plays of the 18th and 19th Centuries\nAND ONE of the following contemporary works of Tadashi Suzuki:\n– Tadashi Suzuki, The Way of Acting: The Theatre Writings of Tadashi Suzuki\nor\n– Paul Allain, The Art of Stillness: The Theatre Practice of Tadashi Suzuki"
+  },
+  {
+   "id": "drama2024_q1",
+   "year": 2024,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australian drama and theatre / Context and interpretation",
+   "text": "How does the space in which a play is staged influence its meaning?\nIn your response, refer to key dramatic moments from the TWO plays you have studied and\nyour own experiential learning.\nTopic 1: Dramatic Traditions in Australia\nTexts set for study:\n– Alexander Buzo, Norm and Ahmed\n– Jack Davis, No Sugar\n– Dorothy Hewett, The Chapel Perilous\n– David Williamson, The Removalists\nOR\nTopic 2: Contemporary Australian Theatre Practice\nTexts set for study:\n– Jane Harrison, Stolen\n– Lally Katz, Neighbourhood Watch\n– Daniel Keene, Life Without Me\n– Mirra Todd, Fearless\nSection II — Studies in Drama and Theatre\nAttempt ONE question from Questions 2–8\nare available.\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding of drama and theatre relevant to the\nquestion\n● express your point of view using appropriate supporting evidence\n● present a sustained, logical and cohesive response"
+  },
+  {
+   "id": "drama2024_q2",
+   "year": 2024,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— The Voice of Women in Theatre (20 marks)\nHow do directors give theatrical voice to issues affecting women’s equality?\nIn your response, compare the TWO plays you have studied and refer to your own experiential\nlearning on this topic.\nTexts set for study:\nList 1\n– Caryl Churchill, Top Girls\nor\n– Aphra Behn et al., The Rover in Restoration Comedy\nAND\nList 2\n– Donna Abela, Jump for Jordan\nor\n– Mary Anne Butler, Highway of Lost Hearts\nor\n– Joanna Murray-Smith, The Female of the Species\nor\n– Leah Purcell and Scott Rankin, Box the Pony\nOR"
+  },
+  {
+   "id": "drama2024_q3",
+   "year": 2024,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Approaches to Acting (20 marks)\nHow is the staging of theatre works a manifestation of approaches to actor training?\nIn your response, refer to the TWO practitioners you have studied and your own experiential\nlearning of this topic.\nPractitioners and texts set for study:\n– Augusto Boal, Games for Actors and Non-Actors\n– Jacques Lecoq et al., The Moving Body\n– Jonathan Pitches, Vsevolod Meyerhold\n– James Slowiak and Jairo Cuesta, Jerzy Grotowski\nOR"
+  },
+  {
+   "id": "drama2024_q4",
+   "year": 2024,
+   "number": "4",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Verbatim Theatre (20 marks)\nHow do theatre makers maintain the balance between truth and audience engagement?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Campion Decent, Embers\n– Tom Holloway, Beyond the Neck: A Quartet on Loss and Violence\n– Robin Soans, Talking to Terrorists\n– Alana Valentine, Parramatta Girls\nOR"
+  },
+  {
+   "id": "drama2024_q5",
+   "year": 2024,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Black Comedy (20 marks)\nHow do directors explore the relationship between comedy and controversy?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Neil LaBute, The Shape of Things\n– Martin McDonagh, The Lieutenant of Inishmore\n– Harold Pinter, The Homecoming\n– Ian Wilding, October\nOR"
+  },
+  {
+   "id": "drama2024_q6",
+   "year": 2024,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Multi-Discipline Theatre (20 marks)\nHow do practitioners use collaborative processes to create highly visual forms?\nIn your response, refer to ONE practitioner in this topic and an original piece of\nMulti-Discipline Theatre.\nPractitioners and texts set for study:\n• Robert Lepage and ExMachina\nTexts set for study:\n– Patrick Caux et al., Ex Machina: Creating for the Stage\n– Aleksandar Saša Dundjerovic´, Robert Lepage\nor\n• Simon McBurney and Théâtre de Complicité\nTexts set for study:\n– Complicite (Theatre company) and Simon McBurney (eds), A Disappearing Number\n– Sarah Ainslie et al., Complicite: Rehearsal Notes\nOR"
+  },
+  {
+   "id": "drama2024_q7",
+   "year": 2024,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Significant Plays of the 20th Century (20 marks)\nHow have revolutionary theatrical forms been used to create dynamic audience experiences?\nIn your response, refer to the TWO plays you have studied and your own experiential learning\nof this topic.\nTexts set for study:\n– Bertolt Brecht, Mother Courage\n– Eugène Ionesco and Donald Watson (trans.), The Bald Prima Donna: A Pseudo-Play in\nOne Act\n– Moisés Kaufman, The Laramie Project\n– Tony Kushner, Angels in America: A Gay Fantasia on National Themes (Part 1)\nOR"
+  },
+  {
+   "id": "drama2024_q8",
+   "year": 2024,
+   "number": "8",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Japanese Traditional and Contemporary Theatre (20 marks)\nHow do directors give expression to a theatrical aesthetic that is uniquely Japanese?\nIn your response, refer to your study of ONE traditional form, ONE contemporary work and\nyour own experiential learning of this topic.\nTexts set for study:\nONE of the following traditional Japanese forms:\n– James R Brandon (ed.), Kabuki: Five Classic Plays\n– Ernest Francisco Fenollosa et al., The Noh Theatre of Japan: With Complete Texts of\n15 Classic Plays\n– Stanleigh H Jones et al. (eds), The Mountains from Mount Imo and Mount Se: Precepts\nfor Women in The Bunraku Puppet Theatre of Japan: Honor, Vengeance, and Love in\nFour Plays of the 18th and 19th Centuries\nAND ONE of the following contemporary works of Tadashi Suzuki:\n– Tadashi Suzuki, The Way of Acting: The Theatre Writings of Tadashi Suzuki\nor\n– Paul Allain, The Art of Stillness: The Theatre Practice of Tadashi Suzuki"
+  },
+  {
+   "id": "drama2025_q1",
+   "year": 2025,
+   "number": "1",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australian drama and theatre / Context and interpretation",
+   "text": "How could Australian plays be staged to share diverse concerns with audiences?\nIn your response, refer to TWO plays you have studied and your own experiential learning.\nTopic 1: Dramatic Traditions in Australia\nTexts set for study:\n– Alexander Buzo, Norm and Ahmed\n– Wesley Enoch and Deborah Mailman, The 7 Stages of Grieving\n– Robert Merritt, The Cake Man\n– David Williamson, The Removalists\nOR\nTopic 2: Contemporary Australian Theatre Practice\nTexts set for study:\n– Yve Blake, Fangirls\n– Jane Harrison, The Visitors\n– Michelle Law, Single Asian Female\n– Lally Katz, Neighbourhood Watch\nSection II — Studies in Drama and Theatre\nAttempt ONE question from Questions 2–8\nare available.\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding of drama and theatre relevant to the\nquestion\n● express your point of view using appropriate supporting evidence\n● present a sustained, logical and cohesive response"
+  },
+  {
+   "id": "drama2025_q2",
+   "year": 2025,
+   "number": "2",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— The Voice of Women in Theatre (20 marks)\nCompare how the TWO plays you have studied could be staged to voice socio/cultural\njudgements about women.\nIn your response, refer to the TWO plays you have studied and your own experiential learning.\nTexts set for study:\nList 1\n– Caryl Churchill, Top Girls\nor\n– Aphra Behn, ‘The Rover’, in Trevor R Griffiths, Simon Trussler, William Wycherley,\nAphra Behn and William Congreve, Restoration Comedy\nAND\nList 2\n– Donna Abela, Jump for Jordan\nor\n– Mary Anne Butler, Highway of Lost Hearts\nor\n– Joanna Murray-Smith, The Female of the Species\nor\n– Leah Purcell and Scott Rankin, Box the Pony\nOR"
+  },
+  {
+   "id": "drama2025_q3",
+   "year": 2025,
+   "number": "3",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Approaches to Acting (20 marks)\nHow has your exploration of the expression of the actor’s presence influenced your\nunderstanding of contemporary theatre practice?\nIn your response, refer to the TWO practitioners and texts you have studied and your own\nexperiential learning.\nPractitioners and texts set for study:\n– Anne Bogart and Tina Landau, The Viewpoints Book: A Practical Guide to Viewpoints and\nComposition\n– Jacques Lecoq, The Moving Body (Le Corps Poétique): Teaching Creative Theatre (David\nBradby trans.)\n– Jonathan Pitches, Vsevolod Meyerhold\n– James Slowiak and Jairo Cuesta, Jerzy Grotowski\nOR"
+  },
+  {
+   "id": "drama2025_q4",
+   "year": 2025,
+   "number": "4",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Verbatim Theatre (20 marks)\nHow has your exploration of real issues or events in the plays you have studied influenced your\nunderstanding of the function of Verbatim Theatre?\nIn your response, refer to TWO plays you have studied and the development of a piece of\noriginal Verbatim Theatre.\nTexts set for study:\n– Campion Decent, Embers\n– Robin Soans, Talking to Terrorists\n– Alana Valentine, Parramatta Girls\n– Tom Wright, Black Diggers\nOR"
+  },
+  {
+   "id": "drama2025_q5",
+   "year": 2025,
+   "number": "5",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Black Comedy (20 marks)\nHow has your exploration of the use of humour in plays from different countries influenced\nyour understanding of the controversial in Black Comedy?\nIn your response, refer to the TWO plays you have studied and your own experiential learning.\nTexts set for study:\n– Neil LaBute, The Shape of Things\n– Nakkiah Lui, Black is the New White\n– Martin McDonagh, The Lieutenant of Inishmore\n– Harold Pinter, The Homecoming\nOR"
+  },
+  {
+   "id": "drama2025_q6",
+   "year": 2025,
+   "number": "6",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Multi-Discipline Theatre (20 marks)\nHow has your exploration of creative processes that are focused on improvisation influenced\nyour understanding of the function of Multi-Discipline Theatre?\nIn your response, refer to ONE practitioner in this topic and the development of an original\npiece of Multi-Discipline Theatre.\nPractitioners and texts set for study:\n• Robert Lepage and ExMachina\nTexts set for study:\n– Patrick Caux and Bernard Gilbert, Ex Machina: Creating for the Stage (Neil Kroetsch\ntrans.)\n– Aleksandar Saša Dundjerovic´, Robert Lepage\nor\n• Simon McBurney and Théâtre de Complicité\nTexts set for study:\n– Complicité and Simon McBurney, A Disappearing Number\n– Sarah Ainslie, Complicité: Rehearsal Notes\nOR"
+  },
+  {
+   "id": "drama2025_q7",
+   "year": 2025,
+   "number": "7",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Significant Plays of the 20th Century (20 marks)\nHow has your exploration of the reinvention of theatrical styles influenced your understanding\nof the impact of significant plays?\nIn your response, refer to the TWO plays you have studied and your own experiential learning.\nTexts set for study:\n– Bertolt Brecht and David Hare, Mother Courage and Her Children\n– Eugène Ionesco, The Bald Prima Donna: A Pseudo-Play in One Act (Donald Watson trans.)\n– Moisés Kaufman, The Laramie Project\n– Lorraine Hansberry, A Raisin in the Sun\nOR"
+  },
+  {
+   "id": "drama2025_q8",
+   "year": 2025,
+   "number": "8",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Approaches to drama and theatre",
+   "text": "— Japanese Traditional and Contemporary Theatre (20 marks)\nHow has your exploration of both traditional and contemporary forms influenced your\nunderstanding of the purpose of Japanese theatre?\nIn your response, refer to your study of ONE traditional form, ONE contemporary work and\nyour own experiential learning of this topic.\nTexts set for study:\nONE of the following traditional Japanese forms:\n– James R Brandon, Kabuki: Five Classic Plays (J R Brandon trans.)\n– Ernest Francisco Fenollosa and Ezra Pound, The Noh Theatre of Japan: With Complete\nTexts of 15 Classic Plays\n– Stanleigh H Jones, The Bunraku Puppet Theatre of Japan: Honor, Vengeance, and Love\nin Four Plays of the 18th and 19th Centuries (S H Jones trans.)\nAND ONE of the following contemporary works of Tadashi Suzuki:\n– Tadashi Suzuki, The Way of Acting: The Theatre Writings of Tadashi Suzuki (T Suzuki\ntrans.)\nor\n– Paul Allain, The Art of Stillness: The Theatre Practice of Tadashi Suzuki"
+  }
+ ]
+}

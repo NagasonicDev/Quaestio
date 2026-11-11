@@ -1,0 +1,2302 @@
+{
+ "course_id": "enterprise-computing",
+ "course_name": "Enterprise Computing",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Investigate how interactive media and the user experience (UX) is used to communicate information to an audience",
+   "text": "Investigate how interactive media and the user experience (UX) is used to communicate information to an audience"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Investigate social, ethical and legal issues when developing and implementing interactive media systems",
+   "text": "Investigate social, ethical and legal issues when developing and implementing interactive media systems"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Research the evolution of interactive media",
+   "text": "Research the evolution of interactive media"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / prevalence of blogs, online video and digital radio",
+   "text": "prevalence of blogs, online video and digital radio"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / privacy issues and the use of intellectual property, including Indigenous Cultural and Intellectual Property (ICIP)",
+   "text": "privacy issues and the use of intellectual property, including Indigenous Cultural and Intellectual Property (ICIP)"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Describe the contribution of interactive media systems to a range of enterprises",
+   "text": "Describe the contribution of interactive media systems to a range of enterprises"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / how simulation, gamification and augmented reality (AR) support online training and learning",
+   "text": "how simulation, gamification and augmented reality (AR) support online training and learning"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / how streaming services, gaming and virtual reality (VR) improve access to entertainment",
+   "text": "how streaming services, gaming and virtual reality (VR) improve access to entertainment"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / how specialist apps support delivery tracking, advertising and communication",
+   "text": "how specialist apps support delivery tracking, advertising and communication"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Evaluate the performance requirements of hardware for specific interactive media projects",
+   "text": "Evaluate the performance requirements of hardware for specific interactive media projects"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Explain how interactive media systems can support creative processes",
+   "text": "Explain how interactive media systems can support creative processes"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / sandbox gaming",
+   "text": "sandbox gaming"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / social media",
+   "text": "social media"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / digital creative commons",
+   "text": "digital creative commons"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Examine how human behaviour may be influenced by interactive media, including opportunities for people with disability to explore and participate in their environment",
+   "text": "Examine how human behaviour may be influenced by interactive media, including opportunities for people with disability to explore and participate in their environment"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Investigate how digital marketing techniques influence consumer behaviour",
+   "text": "Investigate how digital marketing techniques influence consumer behaviour"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / guided choice (nudging)",
+   "text": "guided choice (nudging)"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / default settings, including cookies",
+   "text": "default settings, including cookies"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / autofill",
+   "text": "autofill"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / pop-ups promoting online shopping",
+   "text": "pop-ups promoting online shopping"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Evaluate social media applications that encourage human connections",
+   "text": "Evaluate social media applications that encourage human connections"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / crowdsourcing through a social media app",
+   "text": "crowdsourcing through a social media app"
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / learning via massive online open courses (MOOCs)",
+   "text": "learning via massive online open courses (MOOCs)"
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / gaming platforms that encourage massive multiplayer online games (MMOGs)",
+   "text": "gaming platforms that encourage massive multiplayer online games (MMOGs)"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / Explore how interactive media platforms support the creation of digital identities",
+   "text": "Explore how interactive media platforms support the creation of digital identities"
+  },
+  {
+   "code": "PRE-M1-T1-D26",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / personal e-profiles",
+   "text": "personal e-profiles"
+  },
+  {
+   "code": "PRE-M1-T1-D27",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / identifier versus identity",
+   "text": "identifier versus identity"
+  },
+  {
+   "code": "PRE-M1-T1-D28",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / profiling and auto-profiling",
+   "text": "profiling and auto-profiling"
+  },
+  {
+   "code": "PRE-M1-T1-D29",
+   "path": "Year 11 / Interactive media and the user experience / Ubiquity of interactive media / privacy settings",
+   "text": "privacy settings"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Interactive media and the user experience / Capture, store and integrate data / Select and use appropriate file formats for a defined purpose",
+   "text": "Select and use appropriate file formats for a defined purpose"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Interactive media and the user experience / Capture, store and integrate data / Use software to develop elements of interactive media in a project",
+   "text": "Use software to develop elements of interactive media in a project"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Interactive media and the user experience / Capture, store and integrate data / Use hardware and software to digitise assets for use in interactive media systems, including lossy and lossless data compression",
+   "text": "Use hardware and software to digitise assets for use in interactive media systems, including lossy and lossless data compression"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Interactive media and the user experience / Capture, store and integrate data / Explain how the user interface (UI) impacts on the user experience (UX)",
+   "text": "Explain how the user interface (UI) impacts on the user experience (UX)"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Interactive media and the user experience / Capture, store and integrate data / Apply design tools and techniques to develop an engaging UI",
+   "text": "Apply design tools and techniques to develop an engaging UI"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Interactive media and the user experience / Create interactive media systems / Apply design thinking to develop a front-end, web-based interactive media system incorporating UX and UI principles",
+   "text": "Apply design thinking to develop a front-end, web-based interactive media system incorporating UX and UI principles"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Interactive media and the user experience / Create interactive media systems / Develop and publish an interactive work of data journalism",
+   "text": "Develop and publish an interactive work of data journalism"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Interactive media and the user experience / Create interactive media systems / Select an appropriate project management approach to develop an interactive media-based solution",
+   "text": "Select an appropriate project management approach to develop an interactive media-based solution"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Interactive media and the user experience / Create interactive media systems / Apply features of user interaction and UX within web-based systems",
+   "text": "Apply features of user interaction and UX within web-based systems"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Interactive media and the user experience / Create interactive media systems / communication processes via social media",
+   "text": "communication processes via social media"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Interactive media and the user experience / Create interactive media systems / search, sort and selection processes via online retail services",
+   "text": "search, sort and selection processes via online retail services"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Interactive media and the user experience / Create interactive media systems / online gaming platforms",
+   "text": "online gaming platforms"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / Investigate the effects of disruptive technology on everyday computing",
+   "text": "Investigate the effects of disruptive technology on everyday computing"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / effects on the individual",
+   "text": "effects on the individual"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / innovations in infrastructure, hardware and software",
+   "text": "innovations in infrastructure, hardware and software"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / trends and technology buzzwords",
+   "text": "trends and technology buzzwords"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / Investigate the application of graph and network theory in the design of social networks",
+   "text": "Investigate the application of graph and network theory in the design of social networks"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / Describe how web applications and dedicated apps for mobile devices influence the success of social networking",
+   "text": "Describe how web applications and dedicated apps for mobile devices influence the success of social networking"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / Investigate how the development of hardware and software has influenced the adoption of the Internet of Things (IoT) and the Internet of Me (IoMe)",
+   "text": "Investigate how the development of hardware and software has influenced the adoption of the Internet of Things (IoT) and the Internet of Me (IoMe)"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / impact on the individual",
+   "text": "impact on the individual"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / impact on enterprise, including edge computing",
+   "text": "impact on enterprise, including edge computing"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / hardware infrastructure",
+   "text": "hardware infrastructure"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / software protocols",
+   "text": "software protocols"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / data backup",
+   "text": "data backup"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / regulation, compliance and cybersecurity",
+   "text": "regulation, compliance and cybersecurity"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / Networking systems and social computing / Introduction to human-centric computing / Outline the business and individual cultural characteristics that contribute to the success of start-ups",
+   "text": "Outline the business and individual cultural characteristics that contribute to the success of start-ups"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Investigate how the developments in network connectivity and speed have influenced work practices within an enterprise",
+   "text": "Investigate how the developments in network connectivity and speed have influenced work practices within an enterprise"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / remote working opportunities",
+   "text": "remote working opportunities"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / file sharing",
+   "text": "file sharing"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / task delegation and monitoring",
+   "text": "task delegation and monitoring"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Examine the benefits and limitations of digital workflows operating in an enterprise",
+   "text": "Examine the benefits and limitations of digital workflows operating in an enterprise"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Investigate data storage requirements for an enterprise",
+   "text": "Investigate data storage requirements for an enterprise"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / capacity",
+   "text": "capacity"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / accessibility",
+   "text": "accessibility"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / location",
+   "text": "location"
+  },
+  {
+   "code": "PRE-M2-T2-D10",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / security",
+   "text": "security"
+  },
+  {
+   "code": "PRE-M2-T2-D11",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Explore cloud computing services",
+   "text": "Explore cloud computing services"
+  },
+  {
+   "code": "PRE-M2-T2-D12",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Infrastructure as a Service (IaaS)",
+   "text": "Infrastructure as a Service (IaaS)"
+  },
+  {
+   "code": "PRE-M2-T2-D13",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Software as a Service (SaaS)",
+   "text": "Software as a Service (SaaS)"
+  },
+  {
+   "code": "PRE-M2-T2-D14",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Platform as a Service (PaaS)",
+   "text": "Platform as a Service (PaaS)"
+  },
+  {
+   "code": "PRE-M2-T2-D15",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / Compare different types of cloud-based data storage in terms of access and services",
+   "text": "Compare different types of cloud-based data storage in terms of access and services"
+  },
+  {
+   "code": "PRE-M2-T2-D16",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / public cloud",
+   "text": "public cloud"
+  },
+  {
+   "code": "PRE-M2-T2-D17",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / private cloud",
+   "text": "private cloud"
+  },
+  {
+   "code": "PRE-M2-T2-D18",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / hybrid cloud",
+   "text": "hybrid cloud"
+  },
+  {
+   "code": "PRE-M2-T2-D19",
+   "path": "Year 11 / Networking systems and social computing / Storage and workflow in enterprise networks / non-cloud on premises",
+   "text": "non-cloud on premises"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Describe key components of an organisation’s information technology infrastructure",
+   "text": "Describe key components of an organisation’s information technology infrastructure"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / networking, including servers, storage and end-point devices",
+   "text": "networking, including servers, storage and end-point devices"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / on-premises computing",
+   "text": "on-premises computing"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / cloud computing",
+   "text": "cloud computing"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Describe how transmission media is used in networks",
+   "text": "Describe how transmission media is used in networks"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Explain factors that interfere with the transmission of data across a computer and social network",
+   "text": "Explain factors that interfere with the transmission of data across a computer and social network"
+  },
+  {
+   "code": "PRE-M2-T3-D7",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / distance",
+   "text": "distance"
+  },
+  {
+   "code": "PRE-M2-T3-D8",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / topography",
+   "text": "topography"
+  },
+  {
+   "code": "PRE-M2-T3-D9",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / physical barriers",
+   "text": "physical barriers"
+  },
+  {
+   "code": "PRE-M2-T3-D10",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / environmental barriers",
+   "text": "environmental barriers"
+  },
+  {
+   "code": "PRE-M2-T3-D11",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Investigate ways to improve data flow within a system, considering proximity and modes of connectivity",
+   "text": "Investigate ways to improve data flow within a system, considering proximity and modes of connectivity"
+  },
+  {
+   "code": "PRE-M2-T3-D12",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / size, location and power of antennae when using satellite and microwave",
+   "text": "size, location and power of antennae when using satellite and microwave"
+  },
+  {
+   "code": "PRE-M2-T3-D13",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / traffic filtering",
+   "text": "traffic filtering"
+  },
+  {
+   "code": "PRE-M2-T3-D14",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / flow scheduling and traffic monitoring on telecommunications, including wireless broadband for mobile devices (3G→), Bluetooth and wi-fi",
+   "text": "flow scheduling and traffic monitoring on telecommunications, including wireless broadband for mobile devices (3G→), Bluetooth and wi-fi"
+  },
+  {
+   "code": "PRE-M2-T3-D15",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Investigate the application of graph theory and network theory in the design of optimised computer networks",
+   "text": "Investigate the application of graph theory and network theory in the design of optimised computer networks"
+  },
+  {
+   "code": "PRE-M2-T3-D16",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / adjacency",
+   "text": "adjacency"
+  },
+  {
+   "code": "PRE-M2-T3-D17",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / centrality",
+   "text": "centrality"
+  },
+  {
+   "code": "PRE-M2-T3-D18",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / connectedness",
+   "text": "connectedness"
+  },
+  {
+   "code": "PRE-M2-T3-D19",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / weighted graphs",
+   "text": "weighted graphs"
+  },
+  {
+   "code": "PRE-M2-T3-D20",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Explore device interoperability within an Internet of Things (IoT) based enterprise network, including supervisory control and data acquisition (SCADA)",
+   "text": "Explore device interoperability within an Internet of Things (IoT) based enterprise network, including supervisory control and data acquisition (SCADA)"
+  },
+  {
+   "code": "PRE-M2-T3-D21",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Investigate communication protocols between devices in an Internet of Things (IoT) network",
+   "text": "Investigate communication protocols between devices in an Internet of Things (IoT) network"
+  },
+  {
+   "code": "PRE-M2-T3-D22",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Explore the benefits of interfacing machine learning (ML) with IoT",
+   "text": "Explore the benefits of interfacing machine learning (ML) with IoT"
+  },
+  {
+   "code": "PRE-M2-T3-D23",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / data-driven optimisation to enable predictive maintenance and logistics in manufacturing",
+   "text": "data-driven optimisation to enable predictive maintenance and logistics in manufacturing"
+  },
+  {
+   "code": "PRE-M2-T3-D24",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / data acquired from medical imaging to improve accuracy of diagnosis",
+   "text": "data acquired from medical imaging to improve accuracy of diagnosis"
+  },
+  {
+   "code": "PRE-M2-T3-D25",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / improving traffic control through ML and sensors",
+   "text": "improving traffic control through ML and sensors"
+  },
+  {
+   "code": "PRE-M2-T3-D26",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / automating soil moisture data collection to manage farm irrigation",
+   "text": "automating soil moisture data collection to manage farm irrigation"
+  },
+  {
+   "code": "PRE-M2-T3-D27",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Investigate security measures used to control access to networks",
+   "text": "Investigate security measures used to control access to networks"
+  },
+  {
+   "code": "PRE-M2-T3-D28",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / password systems",
+   "text": "password systems"
+  },
+  {
+   "code": "PRE-M2-T3-D29",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / biometric measures",
+   "text": "biometric measures"
+  },
+  {
+   "code": "PRE-M2-T3-D30",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / CAPTCHA",
+   "text": "CAPTCHA"
+  },
+  {
+   "code": "PRE-M2-T3-D31",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / trusted Platform Module (TPM)",
+   "text": "trusted Platform Module (TPM)"
+  },
+  {
+   "code": "PRE-M2-T3-D32",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / automatic software updates",
+   "text": "automatic software updates"
+  },
+  {
+   "code": "PRE-M2-T3-D33",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / Examine data security for an intelligent home network",
+   "text": "Examine data security for an intelligent home network"
+  },
+  {
+   "code": "PRE-M2-T3-D34",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / access levels, including universal plug and play (UPnP)",
+   "text": "access levels, including universal plug and play (UPnP)"
+  },
+  {
+   "code": "PRE-M2-T3-D35",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / passwords and firewalls",
+   "text": "passwords and firewalls"
+  },
+  {
+   "code": "PRE-M2-T3-D36",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / port management on routers and switches",
+   "text": "port management on routers and switches"
+  },
+  {
+   "code": "PRE-M2-T3-D37",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / wi-fi device positioning",
+   "text": "wi-fi device positioning"
+  },
+  {
+   "code": "PRE-M2-T3-D38",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / virtual private networks (VPNs) and hidden networks",
+   "text": "virtual private networks (VPNs) and hidden networks"
+  },
+  {
+   "code": "PRE-M2-T3-D39",
+   "path": "Year 11 / Networking systems and social computing / Network architecture and infrastructure / backup and disaster recovery",
+   "text": "backup and disaster recovery"
+  },
+  {
+   "code": "PRE-M2-T4-D1",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / Design and model a network of interconnected devices for a specific purpose",
+   "text": "Design and model a network of interconnected devices for a specific purpose"
+  },
+  {
+   "code": "PRE-M2-T4-D2",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / Apply appropriate project management tools to develop a project",
+   "text": "Apply appropriate project management tools to develop a project"
+  },
+  {
+   "code": "PRE-M2-T4-D3",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / Configure devices within a network",
+   "text": "Configure devices within a network"
+  },
+  {
+   "code": "PRE-M2-T4-D4",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / naming the device",
+   "text": "naming the device"
+  },
+  {
+   "code": "PRE-M2-T4-D5",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / updating the device",
+   "text": "updating the device"
+  },
+  {
+   "code": "PRE-M2-T4-D6",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / configuring security protocols",
+   "text": "configuring security protocols"
+  },
+  {
+   "code": "PRE-M2-T4-D7",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / connecting to the internet",
+   "text": "connecting to the internet"
+  },
+  {
+   "code": "PRE-M2-T4-D8",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / Implement procedures and security protocols considering cybersecurity",
+   "text": "Implement procedures and security protocols considering cybersecurity"
+  },
+  {
+   "code": "PRE-M2-T4-D9",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / Explore opportunities for optimising network performance",
+   "text": "Explore opportunities for optimising network performance"
+  },
+  {
+   "code": "PRE-M2-T4-D10",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / improving bandwidth",
+   "text": "improving bandwidth"
+  },
+  {
+   "code": "PRE-M2-T4-D11",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / updating drivers and firmware",
+   "text": "updating drivers and firmware"
+  },
+  {
+   "code": "PRE-M2-T4-D12",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / Evaluate the role of hardware and software related to the transmission of data",
+   "text": "Evaluate the role of hardware and software related to the transmission of data"
+  },
+  {
+   "code": "PRE-M2-T4-D13",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / unsecured data",
+   "text": "unsecured data"
+  },
+  {
+   "code": "PRE-M2-T4-D14",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / encrypted data",
+   "text": "encrypted data"
+  },
+  {
+   "code": "PRE-M2-T4-D15",
+   "path": "Year 11 / Networking systems and social computing / Creating a network / infrastructure",
+   "text": "infrastructure"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / Explain privacy, trust and freedom of information with respect to people, systems and data",
+   "text": "Explain privacy, trust and freedom of information with respect to people, systems and data"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / Describe privacy and security principles associated with access, storage and permissions used by enterprises to collect and interpret data",
+   "text": "Describe privacy and security principles associated with access, storage and permissions used by enterprises to collect and interpret data"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / Investigate how an individual can contribute to maintaining the privacy of their own data",
+   "text": "Investigate how an individual can contribute to maintaining the privacy of their own data"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / Explore security vulnerabilities of social networking to both an individual and an enterprise",
+   "text": "Explore security vulnerabilities of social networking to both an individual and an enterprise"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / account access",
+   "text": "account access"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / account behaviour",
+   "text": "account behaviour"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / hosting platform security",
+   "text": "hosting platform security"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / identity theft",
+   "text": "identity theft"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / phishing",
+   "text": "phishing"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / evil twins",
+   "text": "evil twins"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / Describe the attributes of a cybersecurity breach",
+   "text": "Describe the attributes of a cybersecurity breach"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / confidentiality of information",
+   "text": "confidentiality of information"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / integrity of information",
+   "text": "integrity of information"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / availability of information",
+   "text": "availability of information"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / privacy implications",
+   "text": "privacy implications"
+  },
+  {
+   "code": "PRE-M3-T1-D16",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / Investigate vulnerabilities exploited by the threat actor involved in a breach, such as the impact on various elements",
+   "text": "Investigate vulnerabilities exploited by the threat actor involved in a breach, such as the impact on various elements"
+  },
+  {
+   "code": "PRE-M3-T1-D17",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / data",
+   "text": "data"
+  },
+  {
+   "code": "PRE-M3-T1-D18",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / people",
+   "text": "people"
+  },
+  {
+   "code": "PRE-M3-T1-D19",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / processes",
+   "text": "processes"
+  },
+  {
+   "code": "PRE-M3-T1-D20",
+   "path": "Year 11 / Principles of cybersecurity / Understanding privacy and security / technology",
+   "text": "technology"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / Investigate cybercrime threats to an enterprise",
+   "text": "Investigate cybercrime threats to an enterprise"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / hacking",
+   "text": "hacking"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / phishing, including smishing",
+   "text": "phishing, including smishing"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / scamming",
+   "text": "scamming"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / bots and botnets",
+   "text": "bots and botnets"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / employee action causing a vulnerability",
+   "text": "employee action causing a vulnerability"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / Research hardware and software strategies used to protect data",
+   "text": "Research hardware and software strategies used to protect data"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / isolation",
+   "text": "isolation"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / physical security",
+   "text": "physical security"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / biometrics",
+   "text": "biometrics"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / password protection, encryption and permissions",
+   "text": "password protection, encryption and permissions"
+  },
+  {
+   "code": "PRE-M3-T2-D12",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / multi-factor authentication",
+   "text": "multi-factor authentication"
+  },
+  {
+   "code": "PRE-M3-T2-D13",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / back up and disaster recovery",
+   "text": "back up and disaster recovery"
+  },
+  {
+   "code": "PRE-M3-T2-D14",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / firewalls",
+   "text": "firewalls"
+  },
+  {
+   "code": "PRE-M3-T2-D15",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / antivirus and anti-malware",
+   "text": "antivirus and anti-malware"
+  },
+  {
+   "code": "PRE-M3-T2-D16",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / Investigate cyber risk management",
+   "text": "Investigate cyber risk management"
+  },
+  {
+   "code": "PRE-M3-T2-D17",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / implementing a cybersecurity strategy with ongoing training",
+   "text": "implementing a cybersecurity strategy with ongoing training"
+  },
+  {
+   "code": "PRE-M3-T2-D18",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / identifying and managing vulnerabilities",
+   "text": "identifying and managing vulnerabilities"
+  },
+  {
+   "code": "PRE-M3-T2-D19",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / assessing the impact of a breach",
+   "text": "assessing the impact of a breach"
+  },
+  {
+   "code": "PRE-M3-T2-D20",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / controlling damage and loss",
+   "text": "controlling damage and loss"
+  },
+  {
+   "code": "PRE-M3-T2-D21",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / Assess cyber risk by implementing risk-management strategies using a risk matrix",
+   "text": "Assess cyber risk by implementing risk-management strategies using a risk matrix"
+  },
+  {
+   "code": "PRE-M3-T2-D22",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / internal and external vulnerabilities",
+   "text": "internal and external vulnerabilities"
+  },
+  {
+   "code": "PRE-M3-T2-D23",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / threat landscape",
+   "text": "threat landscape"
+  },
+  {
+   "code": "PRE-M3-T2-D24",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / impact of exposure",
+   "text": "impact of exposure"
+  },
+  {
+   "code": "PRE-M3-T2-D25",
+   "path": "Year 11 / Principles of cybersecurity / Security awareness / likelihood of exploitation",
+   "text": "likelihood of exploitation"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Principles of cybersecurity / Cyber law and ethics / Explain impacts of cybersecurity breaches on the individual, organisation and society",
+   "text": "Explain impacts of cybersecurity breaches on the individual, organisation and society"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Principles of cybersecurity / Cyber law and ethics / financial loss",
+   "text": "financial loss"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Principles of cybersecurity / Cyber law and ethics / reputational damage",
+   "text": "reputational damage"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Principles of cybersecurity / Cyber law and ethics / operational disruptions",
+   "text": "operational disruptions"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Principles of cybersecurity / Cyber law and ethics / legal and regulatory ramifications",
+   "text": "legal and regulatory ramifications"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Principles of cybersecurity / Cyber law and ethics / Identify laws and legislation associated with cybersecurity",
+   "text": "Identify laws and legislation associated with cybersecurity"
+  },
+  {
+   "code": "PRE-M3-T3-D7",
+   "path": "Year 11 / Principles of cybersecurity / Cyber law and ethics / Explore current and emerging cybercrime threats to an enterprise",
+   "text": "Explore current and emerging cybercrime threats to an enterprise"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Explore the difference between quantitative and qualitative data",
+   "text": "Explore the difference between quantitative and qualitative data"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Determine which data types are used to represent quantitative and qualitative data",
+   "text": "Determine which data types are used to represent quantitative and qualitative data"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Explore nominal, ordinal, interval and ratio levels of measurement applied to data",
+   "text": "Explore nominal, ordinal, interval and ratio levels of measurement applied to data"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Investigate data sampling, including manual and computerised methods of active and passive data collection",
+   "text": "Investigate data sampling, including manual and computerised methods of active and passive data collection"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Assess the relevance, accuracy, validity and reliability of primary and secondary data",
+   "text": "Assess the relevance, accuracy, validity and reliability of primary and secondary data"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Investigate how informatics supports the development of a deeper understanding of data",
+   "text": "Investigate how informatics supports the development of a deeper understanding of data"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Interpret and present data using graphs, infographics, dashboards, reports, network diagrams and maps",
+   "text": "Interpret and present data using graphs, infographics, dashboards, reports, network diagrams and maps"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Investigate structured and unstructured datasets",
+   "text": "Investigate structured and unstructured datasets"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Explore the use of likes, emoticons and memes as forms of alternative data as sources of feedback",
+   "text": "Explore the use of likes, emoticons and memes as forms of alternative data as sources of feedback"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Examine the impact of errors, uncertainty and limitations in data",
+   "text": "Examine the impact of errors, uncertainty and limitations in data"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / data sources",
+   "text": "data sources"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / raw data versus processed data",
+   "text": "raw data versus processed data"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / data bias",
+   "text": "data bias"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Explain how blockchain technology is used to manage and verify data",
+   "text": "Explain how blockchain technology is used to manage and verify data"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / online voting",
+   "text": "online voting"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / online identities",
+   "text": "online identities"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / tracking items of value",
+   "text": "tracking items of value"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / recordkeeping",
+   "text": "recordkeeping"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Examine software features that affect the privacy and security of data",
+   "text": "Examine software features that affect the privacy and security of data"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / autofill",
+   "text": "autofill"
+  },
+  {
+   "code": "HSC-M1-T1-D21",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / public or private connections",
+   "text": "public or private connections"
+  },
+  {
+   "code": "HSC-M1-T1-D22",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / checkbox",
+   "text": "checkbox"
+  },
+  {
+   "code": "HSC-M1-T1-D23",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / terms of agreement",
+   "text": "terms of agreement"
+  },
+  {
+   "code": "HSC-M1-T1-D24",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Explore the use of big data and data warehousing, considering volume, variety and velocity",
+   "text": "Explore the use of big data and data warehousing, considering volume, variety and velocity"
+  },
+  {
+   "code": "HSC-M1-T1-D25",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Explore the risks and benefits of data mining",
+   "text": "Explore the risks and benefits of data mining"
+  },
+  {
+   "code": "HSC-M1-T1-D26",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Analyse the impact of data scale",
+   "text": "Analyse the impact of data scale"
+  },
+  {
+   "code": "HSC-M1-T1-D27",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / volume of raw data",
+   "text": "volume of raw data"
+  },
+  {
+   "code": "HSC-M1-T1-D28",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / storage",
+   "text": "storage"
+  },
+  {
+   "code": "HSC-M1-T1-D29",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / real-time and continuous streaming",
+   "text": "real-time and continuous streaming"
+  },
+  {
+   "code": "HSC-M1-T1-D30",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / opportunities for machine learning (ML)",
+   "text": "opportunities for machine learning (ML)"
+  },
+  {
+   "code": "HSC-M1-T1-D31",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / changes in human behaviour",
+   "text": "changes in human behaviour"
+  },
+  {
+   "code": "HSC-M1-T1-D32",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / ethical implications, including digital footprints",
+   "text": "ethical implications, including digital footprints"
+  },
+  {
+   "code": "HSC-M1-T1-D33",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / Evaluate the effectiveness of different methods for data storage",
+   "text": "Evaluate the effectiveness of different methods for data storage"
+  },
+  {
+   "code": "HSC-M1-T1-D34",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / local storage",
+   "text": "local storage"
+  },
+  {
+   "code": "HSC-M1-T1-D35",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / cloud storage",
+   "text": "cloud storage"
+  },
+  {
+   "code": "HSC-M1-T1-D36",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / portable storage media",
+   "text": "portable storage media"
+  },
+  {
+   "code": "HSC-M1-T1-D37",
+   "path": "Year 12 / Data science / Collecting, storing and analysing data / data warehouses",
+   "text": "data warehouses"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Data science / Data quality / Investigate the ethical use of data for social or enterprise research purposes",
+   "text": "Investigate the ethical use of data for social or enterprise research purposes"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Data science / Data quality / Explore social, ethical and legal issues associated with using data",
+   "text": "Explore social, ethical and legal issues associated with using data"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Data science / Data quality / bias",
+   "text": "bias"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Data science / Data quality / accuracy of the collected data",
+   "text": "accuracy of the collected data"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Data science / Data quality / metadata",
+   "text": "metadata"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Data science / Data quality / copyright and acknowledgement of source data",
+   "text": "copyright and acknowledgement of source data"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Data science / Data quality / intellectual property and respect for ownership, including Indigenous Cultural and Intellectual Property (ICIP)",
+   "text": "intellectual property and respect for ownership, including Indigenous Cultural and Intellectual Property (ICIP)"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Data science / Data quality / permissions, rights and privacy of individuals, including cultural responsibility",
+   "text": "permissions, rights and privacy of individuals, including cultural responsibility"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Data science / Data quality / security",
+   "text": "security"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Data science / Data quality / Investigate the legal issues surrounding data collection and handling",
+   "text": "Investigate the legal issues surrounding data collection and handling"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Data science / Data quality / legislation",
+   "text": "legislation"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Data science / Data quality / authorities responsible for data protection",
+   "text": "authorities responsible for data protection"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Data science / Data quality / data sovereignty of Aboriginal and Torres Strait Islander Peoples",
+   "text": "data sovereignty of Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Data science / Data quality / Investigate the influence of curated and communicated data on social behaviour",
+   "text": "Investigate the influence of curated and communicated data on social behaviour"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / Data science / Data quality / data literacy",
+   "text": "data literacy"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / Data science / Data quality / timeframes",
+   "text": "timeframes"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / Data science / Data quality / signals impacting on behaviour",
+   "text": "signals impacting on behaviour"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / Data science / Data quality / data swamps",
+   "text": "data swamps"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / Data science / Data quality / educating users",
+   "text": "educating users"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Data science / Processing and presenting data / Summarise data using a spreadsheet",
+   "text": "Summarise data using a spreadsheet"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Data science / Processing and presenting data / Collate information using spreadsheet analysis features, including charts, statistical analysis and what-if modelling",
+   "text": "Collate information using spreadsheet analysis features, including charts, statistical analysis and what-if modelling"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Data science / Processing and presenting data / Filter, group and sort data in a spreadsheet to process and display information",
+   "text": "Filter, group and sort data in a spreadsheet to process and display information"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Data science / Processing and presenting data / linking multiple sheets to extract data and create summaries",
+   "text": "linking multiple sheets to extract data and create summaries"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Data science / Processing and presenting data / applying conditional formatting",
+   "text": "applying conditional formatting"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Data science / Processing and presenting data / making data comparisons",
+   "text": "making data comparisons"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Data science / Processing and presenting data / designing forms and reports",
+   "text": "designing forms and reports"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Data science / Processing and presenting data / Apply spreadsheet analysis features to develop a data dashboard",
+   "text": "Apply spreadsheet analysis features to develop a data dashboard"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / Data science / Processing and presenting data / graphs",
+   "text": "graphs"
+  },
+  {
+   "code": "HSC-M1-T3-D10",
+   "path": "Year 12 / Data science / Processing and presenting data / pivot tables and slicers",
+   "text": "pivot tables and slicers"
+  },
+  {
+   "code": "HSC-M1-T3-D11",
+   "path": "Year 12 / Data science / Processing and presenting data / Develop a flat-file database",
+   "text": "Develop a flat-file database"
+  },
+  {
+   "code": "HSC-M1-T3-D12",
+   "path": "Year 12 / Data science / Processing and presenting data / Apply computational thinking to design a relational database with appropriate user views",
+   "text": "Apply computational thinking to design a relational database with appropriate user views"
+  },
+  {
+   "code": "HSC-M1-T3-D13",
+   "path": "Year 12 / Data science / Processing and presenting data / develop a data dictionary",
+   "text": "develop a data dictionary"
+  },
+  {
+   "code": "HSC-M1-T3-D14",
+   "path": "Year 12 / Data science / Processing and presenting data / linking tables via key fields",
+   "text": "linking tables via key fields"
+  },
+  {
+   "code": "HSC-M1-T3-D15",
+   "path": "Year 12 / Data science / Processing and presenting data / sort and search data, including using structured query language (SQL)",
+   "text": "sort and search data, including using structured query language (SQL)"
+  },
+  {
+   "code": "HSC-M1-T3-D16",
+   "path": "Year 12 / Data science / Processing and presenting data / using forms and reports",
+   "text": "using forms and reports"
+  },
+  {
+   "code": "HSC-M1-T3-D17",
+   "path": "Year 12 / Data science / Processing and presenting data / Explore how machine learning and statistical modelling are used in data analytics to analyse big data, and as a prediction tool",
+   "text": "Explore how machine learning and statistical modelling are used in data analytics to analyse big data, and as a prediction tool"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Explain the purposes of data visualisation",
+   "text": "Explain the purposes of data visualisation"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / simplifying understanding",
+   "text": "simplifying understanding"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / telling a story",
+   "text": "telling a story"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / highlighting significant results",
+   "text": "highlighting significant results"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Describe how features of software contribute to a better understanding of datasets through data visualisation, including spreadsheets, creative design applications and combining applications to track trends and forecast",
+   "text": "Describe how features of software contribute to a better understanding of datasets through data visualisation, including spreadsheets, creative design applications and combining applications to track trends and forecast"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Identify patterns in data by interpreting and comparing datasets for an enterprise, social or ethical issue to highlight trends and for predictive data analytics",
+   "text": "Identify patterns in data by interpreting and comparing datasets for an enterprise, social or ethical issue to highlight trends and for predictive data analytics"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Investigate the impact of the evolution of hardware and software on the field of data analytics",
+   "text": "Investigate the impact of the evolution of hardware and software on the field of data analytics"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / processing power",
+   "text": "processing power"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / storage/memory",
+   "text": "storage/memory"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / communication media",
+   "text": "communication media"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Describe online analytical processing (OLAP)",
+   "text": "Describe online analytical processing (OLAP)"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Assess data integrity in the development of a data visualisation",
+   "text": "Assess data integrity in the development of a data visualisation"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / ownership",
+   "text": "ownership"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / source",
+   "text": "source"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / validation",
+   "text": "validation"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / risk",
+   "text": "risk"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Explain the impact of enterprise data warehousing on data visualisation",
+   "text": "Explain the impact of enterprise data warehousing on data visualisation"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / analysis and use of historical data trends and patterns",
+   "text": "analysis and use of historical data trends and patterns"
+  },
+  {
+   "code": "HSC-M2-T1-D19",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / correlation with current data",
+   "text": "correlation with current data"
+  },
+  {
+   "code": "HSC-M2-T1-D20",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / data refinement/optimisation",
+   "text": "data refinement/optimisation"
+  },
+  {
+   "code": "HSC-M2-T1-D21",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Explain how big data affects the design and development of data visualisation",
+   "text": "Explain how big data affects the design and development of data visualisation"
+  },
+  {
+   "code": "HSC-M2-T1-D22",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / scope of visible information",
+   "text": "scope of visible information"
+  },
+  {
+   "code": "HSC-M2-T1-D23",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / types and depth of insight provided by the data",
+   "text": "types and depth of insight provided by the data"
+  },
+  {
+   "code": "HSC-M2-T1-D24",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / Evaluate bias in data collection, storage and analysis when developing visualisations",
+   "text": "Evaluate bias in data collection, storage and analysis when developing visualisations"
+  },
+  {
+   "code": "HSC-M2-T1-D25",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / accuracy",
+   "text": "accuracy"
+  },
+  {
+   "code": "HSC-M2-T1-D26",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / audience",
+   "text": "audience"
+  },
+  {
+   "code": "HSC-M2-T1-D27",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / data source",
+   "text": "data source"
+  },
+  {
+   "code": "HSC-M2-T1-D28",
+   "path": "Year 12 / Data visualisation / Using data to tell a story / unconscious bias",
+   "text": "unconscious bias"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / Evaluate the effectiveness of software tools used to develop data visualisations",
+   "text": "Evaluate the effectiveness of software tools used to develop data visualisations"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / spreadsheets used to develop dashboards",
+   "text": "spreadsheets used to develop dashboards"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / presentation software used to present data analysis",
+   "text": "presentation software used to present data analysis"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / business analytics services, including ‘as a service’ products",
+   "text": "business analytics services, including ‘as a service’ products"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / custom software solutions",
+   "text": "custom software solutions"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / Interrogate data from a data visualisation",
+   "text": "Interrogate data from a data visualisation"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / interpreting what you see",
+   "text": "interpreting what you see"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / aggregation",
+   "text": "aggregation"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / filtering",
+   "text": "filtering"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / the effect of outliers",
+   "text": "the effect of outliers"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Data visualisation / Interpreting data visualisations / reasoning",
+   "text": "reasoning"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Data visualisation / Designing for user experience / Use graphic design tools to assist in the graphic development of a data visualisation",
+   "text": "Use graphic design tools to assist in the graphic development of a data visualisation"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Data visualisation / Designing for user experience / Explain how user experience (UX) influences the development of effective data visualisations",
+   "text": "Explain how user experience (UX) influences the development of effective data visualisations"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Data visualisation / Designing for user experience / relevance to the audience",
+   "text": "relevance to the audience"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Data visualisation / Designing for user experience / audience interpretation",
+   "text": "audience interpretation"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Data visualisation / Designing for user experience / customisation",
+   "text": "customisation"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Data visualisation / Designing for user experience / live analysis",
+   "text": "live analysis"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Data visualisation / Designing for user experience / Develop and implement criteria for evaluating the effectiveness of user experiences",
+   "text": "Develop and implement criteria for evaluating the effectiveness of user experiences"
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Data visualisation / Designing for user experience / Investigate the impact of emerging hardware and software technologies on user interface (UI) and UX design and development",
+   "text": "Investigate the impact of emerging hardware and software technologies on user interface (UI) and UX design and development"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Data visualisation / Creating data visualisations / Research, source, organise and store data appropriate for a data visualisation",
+   "text": "Research, source, organise and store data appropriate for a data visualisation"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Data visualisation / Creating data visualisations / Design and develop a data visualisation for a specific scenario to represent trends, patterns and relationships, and illustrate predictive analysis incorporating big data",
+   "text": "Design and develop a data visualisation for a specific scenario to represent trends, patterns and relationships, and illustrate predictive analysis incorporating big data"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Data visualisation / Creating data visualisations / Investigate and implement methods to maintain data security",
+   "text": "Investigate and implement methods to maintain data security"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Data visualisation / Creating data visualisations / cybersecurity",
+   "text": "cybersecurity"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Data visualisation / Creating data visualisations / data backup",
+   "text": "data backup"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Investigate applications of decision support systems",
+   "text": "Investigate applications of decision support systems"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Describe categories of decision-making within decision support systems",
+   "text": "Describe categories of decision-making within decision support systems"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / an infinite set of instructions where judgement may be required (unstructured)",
+   "text": "an infinite set of instructions where judgement may be required (unstructured)"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / use of a specified set of finite instructions (semi-structured)",
+   "text": "use of a specified set of finite instructions (semi-structured)"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / automated decisions (structured)",
+   "text": "automated decisions (structured)"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Investigate common applications of expert systems",
+   "text": "Investigate common applications of expert systems"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / diagnosis",
+   "text": "diagnosis"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / monitoring",
+   "text": "monitoring"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / process control",
+   "text": "process control"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / scheduling and planning",
+   "text": "scheduling and planning"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Describe key features of an expert system",
+   "text": "Describe key features of an expert system"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / knowledge base",
+   "text": "knowledge base"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / inference engine, including forward chaining and backward chaining",
+   "text": "inference engine, including forward chaining and backward chaining"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / user interface (UI)",
+   "text": "user interface (UI)"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Research factors that have allowed expert systems to advance from rule-based systems to integrate probability",
+   "text": "Research factors that have allowed expert systems to advance from rule-based systems to integrate probability"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / processing power",
+   "text": "processing power"
+  },
+  {
+   "code": "HSC-M3-T1-D17",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / data availability and access",
+   "text": "data availability and access"
+  },
+  {
+   "code": "HSC-M3-T1-D18",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / hardware costs",
+   "text": "hardware costs"
+  },
+  {
+   "code": "HSC-M3-T1-D19",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / neural networks",
+   "text": "neural networks"
+  },
+  {
+   "code": "HSC-M3-T1-D20",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / webometrics",
+   "text": "webometrics"
+  },
+  {
+   "code": "HSC-M3-T1-D21",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Describe how people’s changing needs have shaped the proliferation of expert systems",
+   "text": "Describe how people’s changing needs have shaped the proliferation of expert systems"
+  },
+  {
+   "code": "HSC-M3-T1-D22",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / the Internet of Things (IoT)",
+   "text": "the Internet of Things (IoT)"
+  },
+  {
+   "code": "HSC-M3-T1-D23",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Internet of Me (IoMe)",
+   "text": "Internet of Me (IoMe)"
+  },
+  {
+   "code": "HSC-M3-T1-D24",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Industry 4.0",
+   "text": "Industry 4.0"
+  },
+  {
+   "code": "HSC-M3-T1-D25",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Describe the operation of simplistic and complex intelligent agents used by search engines, including predictive search strings and the use of voice assistants to initiate interaction",
+   "text": "Describe the operation of simplistic and complex intelligent agents used by search engines, including predictive search strings and the use of voice assistants to initiate interaction"
+  },
+  {
+   "code": "HSC-M3-T1-D26",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Compare techniques used by different inference engines",
+   "text": "Compare techniques used by different inference engines"
+  },
+  {
+   "code": "HSC-M3-T1-D27",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / truth maintenance",
+   "text": "truth maintenance"
+  },
+  {
+   "code": "HSC-M3-T1-D28",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / hypothetical reasoning",
+   "text": "hypothetical reasoning"
+  },
+  {
+   "code": "HSC-M3-T1-D29",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / heuristic knowledge and fuzzy logic",
+   "text": "heuristic knowledge and fuzzy logic"
+  },
+  {
+   "code": "HSC-M3-T1-D30",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / ontology classification",
+   "text": "ontology classification"
+  },
+  {
+   "code": "HSC-M3-T1-D31",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Investigate the hardware used in an intelligent system",
+   "text": "Investigate the hardware used in an intelligent system"
+  },
+  {
+   "code": "HSC-M3-T1-D32",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / biometrics",
+   "text": "biometrics"
+  },
+  {
+   "code": "HSC-M3-T1-D33",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / haptics",
+   "text": "haptics"
+  },
+  {
+   "code": "HSC-M3-T1-D34",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / touch and gesture",
+   "text": "touch and gesture"
+  },
+  {
+   "code": "HSC-M3-T1-D35",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / virtual and augmented reality (VR/AR)",
+   "text": "virtual and augmented reality (VR/AR)"
+  },
+  {
+   "code": "HSC-M3-T1-D36",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / voice and sound",
+   "text": "voice and sound"
+  },
+  {
+   "code": "HSC-M3-T1-D37",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / microcontrollers",
+   "text": "microcontrollers"
+  },
+  {
+   "code": "HSC-M3-T1-D38",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / sensors, actuators and motors",
+   "text": "sensors, actuators and motors"
+  },
+  {
+   "code": "HSC-M3-T1-D39",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Explore how computational thinking can be integrated into the design and development of an intelligent system",
+   "text": "Explore how computational thinking can be integrated into the design and development of an intelligent system"
+  },
+  {
+   "code": "HSC-M3-T1-D40",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / decomposition",
+   "text": "decomposition"
+  },
+  {
+   "code": "HSC-M3-T1-D41",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / pattern recognition",
+   "text": "pattern recognition"
+  },
+  {
+   "code": "HSC-M3-T1-D42",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / abstraction",
+   "text": "abstraction"
+  },
+  {
+   "code": "HSC-M3-T1-D43",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / algorithms",
+   "text": "algorithms"
+  },
+  {
+   "code": "HSC-M3-T1-D44",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Communicate the logical processes performed by an intelligent system by using flowcharts, data flow diagrams and infographics",
+   "text": "Communicate the logical processes performed by an intelligent system by using flowcharts, data flow diagrams and infographics"
+  },
+  {
+   "code": "HSC-M3-T1-D45",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Investigate the disruptive effects of intelligent systems",
+   "text": "Investigate the disruptive effects of intelligent systems"
+  },
+  {
+   "code": "HSC-M3-T1-D46",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / multitasking versus digital distraction",
+   "text": "multitasking versus digital distraction"
+  },
+  {
+   "code": "HSC-M3-T1-D47",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / working differently to complete the same task",
+   "text": "working differently to complete the same task"
+  },
+  {
+   "code": "HSC-M3-T1-D48",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / automation of enterprise and manufacturing processes",
+   "text": "automation of enterprise and manufacturing processes"
+  },
+  {
+   "code": "HSC-M3-T1-D49",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / impact of artificial intelligence (AI) on employment",
+   "text": "impact of artificial intelligence (AI) on employment"
+  },
+  {
+   "code": "HSC-M3-T1-D50",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Investigate social and ethical issues to be considered when developing, implementing and using intelligent systems",
+   "text": "Investigate social and ethical issues to be considered when developing, implementing and using intelligent systems"
+  },
+  {
+   "code": "HSC-M3-T1-D51",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Investigate current and emerging technologies associated with intelligent systems, including AI",
+   "text": "Investigate current and emerging technologies associated with intelligent systems, including AI"
+  },
+  {
+   "code": "HSC-M3-T1-D52",
+   "path": "Year 12 / Intelligent systems / Systems and their applications / Explain how intelligent systems combine innovative techniques and technologies to meet the needs of enterprise",
+   "text": "Explain how intelligent systems combine innovative techniques and technologies to meet the needs of enterprise"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / Investigate the infrastructure requirements for an intelligent network in an enterprise with devices linked through an Internet of Things (IoT)",
+   "text": "Investigate the infrastructure requirements for an intelligent network in an enterprise with devices linked through an Internet of Things (IoT)"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / networks with servers, local and cloud storage, and end-point devices",
+   "text": "networks with servers, local and cloud storage, and end-point devices"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / communication links that enable the efficient control and flow of data",
+   "text": "communication links that enable the efficient control and flow of data"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / Explore collection, type, storage, processing, application and transmission of relevant and surplus data in an intelligent IoT network",
+   "text": "Explore collection, type, storage, processing, application and transmission of relevant and surplus data in an intelligent IoT network"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / Investigate the application of simulation, data modelling and the automation of systems in a range of enterprises",
+   "text": "Investigate the application of simulation, data modelling and the automation of systems in a range of enterprises"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / education and training",
+   "text": "education and training"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / business analytics",
+   "text": "business analytics"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / high-risk applications",
+   "text": "high-risk applications"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / Explain the role of intelligent systems in surveillance",
+   "text": "Explain the role of intelligent systems in surveillance"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / closed circuit television (CCTV)",
+   "text": "closed circuit television (CCTV)"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / biometric scanning",
+   "text": "biometric scanning"
+  },
+  {
+   "code": "HSC-M3-T2-D12",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / customer loyalty schemes",
+   "text": "customer loyalty schemes"
+  },
+  {
+   "code": "HSC-M3-T2-D13",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / fraud prevention",
+   "text": "fraud prevention"
+  },
+  {
+   "code": "HSC-M3-T2-D14",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / sniffing",
+   "text": "sniffing"
+  },
+  {
+   "code": "HSC-M3-T2-D15",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / trolling",
+   "text": "trolling"
+  },
+  {
+   "code": "HSC-M3-T2-D16",
+   "path": "Year 12 / Intelligent systems / Data and intelligent systems / Explain how AI supports efficiency in an IoT network",
+   "text": "Explain how AI supports efficiency in an IoT network"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Develop a set of rules and facts that could be used within an expert system to draw conclusions",
+   "text": "Develop a set of rules and facts that could be used within an expert system to draw conclusions"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Apply certainty factors to construct a decision tree for a proposed expert system",
+   "text": "Apply certainty factors to construct a decision tree for a proposed expert system"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Verify the sources of data used in a decision support system",
+   "text": "Verify the sources of data used in a decision support system"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Use a flowchart to develop a knowledge base of IF-THEN rules to be used by an expert system",
+   "text": "Use a flowchart to develop a knowledge base of IF-THEN rules to be used by an expert system"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Design and model an automated smart system using a range of inputs and outputs",
+   "text": "Design and model an automated smart system using a range of inputs and outputs"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Implement automated processing using software",
+   "text": "Implement automated processing using software"
+  },
+  {
+   "code": "HSC-M3-T3-D7",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Assess the output produced by a decision support system, including graphing to detail the success of decisions, and comparing the proposed versus the actual outputs",
+   "text": "Assess the output produced by a decision support system, including graphing to detail the success of decisions, and comparing the proposed versus the actual outputs"
+  },
+  {
+   "code": "HSC-M3-T3-D8",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / Explain how expert systems contribute to the efficiency of intelligent systems",
+   "text": "Explain how expert systems contribute to the efficiency of intelligent systems"
+  },
+  {
+   "code": "HSC-M3-T3-D9",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / supercomputers",
+   "text": "supercomputers"
+  },
+  {
+   "code": "HSC-M3-T3-D10",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / digital assistants",
+   "text": "digital assistants"
+  },
+  {
+   "code": "HSC-M3-T3-D11",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / autonomous vehicles",
+   "text": "autonomous vehicles"
+  },
+  {
+   "code": "HSC-M3-T3-D12",
+   "path": "Year 12 / Intelligent systems / Creating intelligent systems / streaming services",
+   "text": "streaming services"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Enterprise project / Identifying and defining / Describe the tools and processes used to manage and document the development of an enterprise system",
+   "text": "Describe the tools and processes used to manage and document the development of an enterprise system"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Enterprise project / Identifying and defining / problem definition",
+   "text": "problem definition"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Enterprise project / Identifying and defining / time and resource management, including Gantt charts",
+   "text": "time and resource management, including Gantt charts"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Enterprise project / Identifying and defining / an iterative approach",
+   "text": "an iterative approach"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Enterprise project / Identifying and defining / production process and technical skills",
+   "text": "production process and technical skills"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Enterprise project / Identifying and defining / testing and evaluation",
+   "text": "testing and evaluation"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Enterprise project / Identifying and defining / Explain the effect of the changing nature of enterprise on the development of projects",
+   "text": "Explain the effect of the changing nature of enterprise on the development of projects"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Enterprise project / Identifying and defining / offshore development",
+   "text": "offshore development"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Enterprise project / Identifying and defining / working remotely",
+   "text": "working remotely"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Enterprise project / Identifying and defining / freelance work",
+   "text": "freelance work"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / Enterprise project / Identifying and defining / enabling the growth of start-ups",
+   "text": "enabling the growth of start-ups"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Enterprise project / Researching and planning / Investigate tools that support the design and development of an enterprise system",
+   "text": "Investigate tools that support the design and development of an enterprise system"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Enterprise project / Researching and planning / online collaboration",
+   "text": "online collaboration"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Enterprise project / Researching and planning / time/task action plans",
+   "text": "time/task action plans"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Enterprise project / Researching and planning / process diary, including ongoing evaluation",
+   "text": "process diary, including ongoing evaluation"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Enterprise project / Researching and planning / budget",
+   "text": "budget"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Enterprise project / Researching and planning / system flowcharts",
+   "text": "system flowcharts"
+  },
+  {
+   "code": "HSC-M4-T2-D7",
+   "path": "Year 12 / Enterprise project / Researching and planning / data flow diagrams",
+   "text": "data flow diagrams"
+  },
+  {
+   "code": "HSC-M4-T2-D8",
+   "path": "Year 12 / Enterprise project / Researching and planning / decision trees",
+   "text": "decision trees"
+  },
+  {
+   "code": "HSC-M4-T2-D9",
+   "path": "Year 12 / Enterprise project / Researching and planning / Describe how computational, design and systems thinking skills are used in the design and development of an enterprise system",
+   "text": "Describe how computational, design and systems thinking skills are used in the design and development of an enterprise system"
+  },
+  {
+   "code": "HSC-M4-T2-D10",
+   "path": "Year 12 / Enterprise project / Researching and planning / Select key collaborating and managing criteria appropriate to the development of an enterprise project",
+   "text": "Select key collaborating and managing criteria appropriate to the development of an enterprise project"
+  },
+  {
+   "code": "HSC-M4-T2-D11",
+   "path": "Year 12 / Enterprise project / Researching and planning / designing for ease of operation and maintenance",
+   "text": "designing for ease of operation and maintenance"
+  },
+  {
+   "code": "HSC-M4-T2-D12",
+   "path": "Year 12 / Enterprise project / Researching and planning / clarifying each of the relevant informatics within the new system",
+   "text": "clarifying each of the relevant informatics within the new system"
+  },
+  {
+   "code": "HSC-M4-T2-D13",
+   "path": "Year 12 / Enterprise project / Researching and planning / outlining the role of the participants, data and components used in the system",
+   "text": "outlining the role of the participants, data and components used in the system"
+  },
+  {
+   "code": "HSC-M4-T2-D14",
+   "path": "Year 12 / Enterprise project / Researching and planning / negotiating user/client needs and wants",
+   "text": "negotiating user/client needs and wants"
+  },
+  {
+   "code": "HSC-M4-T2-D15",
+   "path": "Year 12 / Enterprise project / Researching and planning / working collaboratively",
+   "text": "working collaboratively"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Enterprise project / Producing and implementing / Apply tools to inform the requirements and limitations of an enterprise system",
+   "text": "Apply tools to inform the requirements and limitations of an enterprise system"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Enterprise project / Producing and implementing / interviews",
+   "text": "interviews"
+  },
+  {
+   "code": "HSC-M4-T3-D3",
+   "path": "Year 12 / Enterprise project / Producing and implementing / surveys",
+   "text": "surveys"
+  },
+  {
+   "code": "HSC-M4-T3-D4",
+   "path": "Year 12 / Enterprise project / Producing and implementing / analytical reports",
+   "text": "analytical reports"
+  },
+  {
+   "code": "HSC-M4-T3-D5",
+   "path": "Year 12 / Enterprise project / Producing and implementing / prototypes",
+   "text": "prototypes"
+  },
+  {
+   "code": "HSC-M4-T3-D6",
+   "path": "Year 12 / Enterprise project / Producing and implementing / presentations of research results",
+   "text": "presentations of research results"
+  },
+  {
+   "code": "HSC-M4-T3-D7",
+   "path": "Year 12 / Enterprise project / Producing and implementing / Explore and apply the most suitable development approach to develop, modify and implement an enterprise system",
+   "text": "Explore and apply the most suitable development approach to develop, modify and implement an enterprise system"
+  },
+  {
+   "code": "HSC-M4-T3-D8",
+   "path": "Year 12 / Enterprise project / Producing and implementing / waterfall (structured)",
+   "text": "waterfall (structured)"
+  },
+  {
+   "code": "HSC-M4-T3-D9",
+   "path": "Year 12 / Enterprise project / Producing and implementing / agile",
+   "text": "agile"
+  },
+  {
+   "code": "HSC-M4-T3-D10",
+   "path": "Year 12 / Enterprise project / Producing and implementing / prototyping",
+   "text": "prototyping"
+  },
+  {
+   "code": "HSC-M4-T3-D11",
+   "path": "Year 12 / Enterprise project / Producing and implementing / end-user",
+   "text": "end-user"
+  },
+  {
+   "code": "HSC-M4-T3-D12",
+   "path": "Year 12 / Enterprise project / Producing and implementing / outsourcing",
+   "text": "outsourcing"
+  },
+  {
+   "code": "HSC-M4-T3-D13",
+   "path": "Year 12 / Enterprise project / Producing and implementing / Develop an implementation plan and test its feasibility for an enterprise computing system",
+   "text": "Develop an implementation plan and test its feasibility for an enterprise computing system"
+  },
+  {
+   "code": "HSC-M4-T3-D14",
+   "path": "Year 12 / Enterprise project / Producing and implementing / design thinking",
+   "text": "design thinking"
+  },
+  {
+   "code": "HSC-M4-T3-D15",
+   "path": "Year 12 / Enterprise project / Producing and implementing / thinking and design tools, including storyboards, Gantt chart, decision tree",
+   "text": "thinking and design tools, including storyboards, Gantt chart, decision tree"
+  },
+  {
+   "code": "HSC-M4-T3-D16",
+   "path": "Year 12 / Enterprise project / Producing and implementing / risk analysis",
+   "text": "risk analysis"
+  },
+  {
+   "code": "HSC-M4-T3-D17",
+   "path": "Year 12 / Enterprise project / Producing and implementing / hardware and software integration",
+   "text": "hardware and software integration"
+  },
+  {
+   "code": "HSC-M4-T3-D18",
+   "path": "Year 12 / Enterprise project / Producing and implementing / training",
+   "text": "training"
+  },
+  {
+   "code": "HSC-M4-T3-D19",
+   "path": "Year 12 / Enterprise project / Producing and implementing / preferred system implementation method",
+   "text": "preferred system implementation method"
+  },
+  {
+   "code": "HSC-M4-T3-D20",
+   "path": "Year 12 / Enterprise project / Producing and implementing / methodology for testing the system",
+   "text": "methodology for testing the system"
+  },
+  {
+   "code": "HSC-M4-T4-D1",
+   "path": "Year 12 / Enterprise project / Testing and evaluating / Verify and validate an enterprise computing system",
+   "text": "Verify and validate an enterprise computing system"
+  },
+  {
+   "code": "HSC-M4-T4-D2",
+   "path": "Year 12 / Enterprise project / Testing and evaluating / evaluating test data",
+   "text": "evaluating test data"
+  },
+  {
+   "code": "HSC-M4-T4-D3",
+   "path": "Year 12 / Enterprise project / Testing and evaluating / trialling the operation and maintenance documentation",
+   "text": "trialling the operation and maintenance documentation"
+  },
+  {
+   "code": "HSC-M4-T4-D4",
+   "path": "Year 12 / Enterprise project / Testing and evaluating / reviewing the impact of system implementation within relevant environments",
+   "text": "reviewing the impact of system implementation within relevant environments"
+  },
+  {
+   "code": "HSC-M4-T4-D5",
+   "path": "Year 12 / Enterprise project / Testing and evaluating / modifying designs to improve functionality",
+   "text": "modifying designs to improve functionality"
+  },
+  {
+   "code": "HSC-M4-T4-D6",
+   "path": "Year 12 / Enterprise project / Testing and evaluating / testing, evaluating and maintaining the developed enterprise computing system",
+   "text": "testing, evaluating and maintaining the developed enterprise computing system"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ec202501",
+   "year": 2025,
+   "number": "14",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Data science / Collecting, storing and analysing data / Explore the use of likes, emoticons and memes as forms of alternative data as sources of feedback",
+   "text": "A company wants to analyse memes on social media to assess the effectiveness of its advertising campaign. Describe how memes can be analysed to provide insights into the effectiveness of the advertising campaign."
+  },
+  {
+   "id": "ec202502",
+   "year": 2025,
+   "number": "15",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Data science / Processing and presenting data / Apply computational thinking to design a relational database with appropriate user views | Year 12 / Data science / Processing and presenting data / sort and search data, including using structured query language (SQL)",
+   "text": ". Data science - relational database and SQL (HSC 2025).\nComplete all of the dropdowns for the relational database design for the car rental booking question (refer to the HSC online exam).\nA small car rental business, with five vehicles, wants to use a spreadsheet to keep track of its bookings. A staff member will enter the driver's name, vehicle size selected (small, medium, large) and the number of days of rental for each vehicle. The spreadsheet should automatically provide daily rate (small $200, medium $250, large $300), a 20% discount if the booking is for at least 7 days, and rental cost. Write a SQL query to extract from a relational database of customers, products and sales: customer last name, product name, sale date and total cost for electronics sales before 17-01-2025, ordered by sale date ascending."
+  },
+  {
+   "id": "ec202503",
+   "year": 2025,
+   "number": "16",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Intelligent systems / Systems and their applications / sensors, actuators and motors | Year 12 / Intelligent systems / Systems and their applications / Investigate common applications of expert systems",
+   "text": ". TV manufacturer intelligent system and expert system (HSC 2025).\nA TV manufacturer wants to improve the efficiency and reliability of its manufacturing system. It plans to incorporate an intelligent system into its manufacturing process to collect live data for analysis. Hardware devices will be installed to collect data on the system's operations. The data is then sent to a server for processing. The manufacturing processes include attaching the LCD panel to the motherboard and testing the brightness of the screen. The current system is controlled through manual processes and monitoring. Describe the hardware that is needed for the intelligent system. Include examples of specific types of sensors in your answer.\nUsing the same TV manufacturing scenario, explain the potential benefits of introducing an expert system into the manufacturing process. Support your answer with reference to Industry 4.0."
+  },
+  {
+   "id": "ec202504",
+   "year": 2025,
+   "number": "17",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Data science / Collecting, storing and analysing data / data warehouses | Year 12 / Data visualisation / Using data to tell a story / Investigate the impact of the evolution of hardware and software on the field of data analytics",
+   "text": ". Coffee shop chain cloud-based data warehouse (HSC 2025).\nA coffee shop chain has branches in all major cities in Australia. It collects a large volume of sales data as well as geographic and demographic data from each of its coffee shop branches. The chain plans to use a cloud-based data warehouse for storage and for future analysis. Explain how the use of data warehousing could benefit this coffee shop chain.\nUsing the same coffee shop chain scenario, explain how the advancement of hardware can affect the processing of data from the data warehouse for this coffee shop chain."
+  },
+  {
+   "id": "ec202505",
+   "year": 2025,
+   "number": "18",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Data science / Processing and presenting data / Summarise data using a spreadsheet",
+   "text": "A small car rental business, with five vehicles, wants to use a spreadsheet to keep track of its bookings. A staff member will enter the driver's name, vehicle size selected (small, medium, large), and the number of days of rental for each vehicle. The spreadsheet should automatically provide: daily rate (small $200, medium $250, large $300); discount of 20% if the booking is for at least 7 days; rental cost by multiplying the daily rate and the number of days, allowing for a discount if applicable. Complete the spreadsheet (part has been set up) so the required information displays automatically."
+  },
+  {
+   "id": "ec202506",
+   "year": 2025,
+   "number": "19",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Enterprise project / Producing and implementing / prototypes",
+   "text": "An education business intends to provide a subscription service to teachers and students for online resources. To register, the subscriber needs to provide their name, email address and date of birth, and indicate whether they are a teacher or student. Design a user interface for registering an account. Clearly label all features."
+  },
+  {
+   "id": "ec202507",
+   "year": 2025,
+   "number": "20",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Data science / Processing and presenting data / Collate information using spreadsheet analysis features, including charts, statistical analysis and what-if modelling",
+   "text": "A marine biologist needs to better understand large datasets visually. Describe spreadsheet features that can assist the marine biologist to better understand the datasets visually."
+  },
+  {
+   "id": "ec202508",
+   "year": 2025,
+   "number": "21",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Enterprise project / Researching and planning / data flow diagrams",
+   "text": "An online booking system allows customers to purchase tickets to a concert. Once a customer specifies the number of tickets required, the system displays the seats available and allows the customer to make seat selections. The selected seats are held for five minutes, total cost is displayed and payment by credit card is accepted. After payment is confirmed by the bank, a digital ticket is generated and sent to the customer and the seat booking database is updated. Construct a data flow diagram (DFD) to represent this system."
+  },
+  {
+   "id": "ec202509",
+   "year": 2025,
+   "number": "22",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Enterprise project / Identifying and defining / time and resource management, including Gantt charts | Year 12 / Data visualisation / Creating data visualisations / Investigate and implement methods to maintain data security",
+   "text": ". Insurance company cloud-based data system (HSC 2025).\nAn insurance company hires a project team to develop a system that manages personal information of customers and employees, customer claims and business contracts. The data will be stored and accessed on a cloud-based server and backed up locally. (a) Outline a tool that can be used by the project team to manage the project.\nUsing the same insurance company scenario, justify TWO methods that the company can use to maintain the security of the data."
+  },
+  {
+   "id": "ec202510",
+   "year": 2025,
+   "number": "23",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Data visualisation / Using data to tell a story / Investigate the impact of the evolution of hardware and software on the field of data analytics | Year 12 / Data visualisation / Designing for user experience / Explain how user experience (UX) influences the development of effective data visualisations",
+   "text": ". Employee performance dashboard (dashboard image in online exam; content referenced). As a result of advancements in technology, a company now presents employee performance information on a dashboard updated using real-time data, rather than spreadsheets.\nAs a result of advancements in technology, a company now presents employee performance information on a dashboard updated using real-time data, rather than spreadsheets. The data dashboard is shown online (not available offline). Describe how advancements in software have empowered data analytics. In your answer, refer to the scenario.\nUsing the same dashboard scenario, explain how the visualisations used in the data dashboard provided could affect the management team's user experience and understanding of employee productivity."
+  },
+  {
+   "id": "ec202511",
+   "year": 2025,
+   "number": "24",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Enterprise project / Identifying and defining / freelance work",
+   "text": "A food company is considering the use of freelance work and offshore development to support its packaging design. Explain the advantages and disadvantages to the company in using freelance work and offshore development for packaging design."
+  },
+  {
+   "id": "ec202512",
+   "year": 2025,
+   "number": "25",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Intelligent systems / Systems and their applications / Describe categories of decision-making within decision support systems",
+   "text": "View the slideshow about applications of decision support systems (stimulus in online exam). Explain how intelligent systems can assist the different categories of decision-making. Support your answer with some examples from the stimulus."
+  }
+ ]
+}

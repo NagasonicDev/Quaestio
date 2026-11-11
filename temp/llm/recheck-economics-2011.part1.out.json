@@ -1,0 +1,802 @@
+{
+  "econ2011_2020_q1": {
+    "code": "HSC-M4-T2-D1",
+    "confidence": "medium",
+    "why": "Objectives of monetary policy: price stability, full employment"
+  },
+  "econ2011_2020_q2": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "IMF role in maintaining global financial stability"
+  },
+  "econ2011_2020_q3": {
+    "code": "HSC-M4-T6-D9",
+    "confidence": "high",
+    "why": "Feature of decentralised wage determination"
+  },
+  "econ2011_2020_q4": {
+    "code": "HSC-M3-T5-D2",
+    "confidence": "high",
+    "why": "Characteristics of developing economies"
+  },
+  "econ2011_2020_q5": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Effect of reducing a quota"
+  },
+  "econ2011_2020_q6": {
+    "code": "HSC-M3-T4-D5",
+    "confidence": "high",
+    "why": "Calculate terms of trade index"
+  },
+  "econ2011_2020_q7": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "Recording transaction in capital/financial account"
+  },
+  "econ2011_2020_q8": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "Cause of lower participation rate"
+  },
+  "econ2011_2020_q9": {
+    "code": "HSC-M3-T1-D22",
+    "confidence": "high",
+    "why": "AD shift; components of aggregate demand"
+  },
+  "econ2011_2020_q10": {
+    "code": null,
+    "confidence": "low",
+    "why": "Covers causes of both inflation and unemployment; no single dot"
+  },
+  "econ2011_2020_q11": {
+    "code": "HSC-M4-T4-D3",
+    "confidence": "high",
+    "why": "Monetary stance, depreciation and economic effect"
+  },
+  "econ2011_2020_q12": {
+    "code": "HSC-M3-T2-D14",
+    "confidence": "medium",
+    "why": "Unemployment and GDP growth at NAIRU"
+  },
+  "econ2011_2020_q13": {
+    "code": "HSC-M3-T4-D4",
+    "confidence": "high",
+    "why": "Determinants of net foreign liabilities"
+  },
+  "econ2011_2020_q14": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Link between current account and capital/financial account"
+  },
+  "econ2011_2020_q15": {
+    "code": "HSC-M3-T3-D1",
+    "confidence": "high",
+    "why": "Headline versus underlying inflation measurement"
+  },
+  "econ2011_2020_q16": {
+    "code": "HSC-M3-T1-D25",
+    "confidence": "high",
+    "why": "Real GDP derived from nominal GDP and CPI"
+  },
+  "econ2011_2020_q17": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "high",
+    "why": "Simple multiplier and MPC relationship"
+  },
+  "econ2011_2020_q18": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Tariff effects on production and revenue"
+  },
+  "econ2011_2020_q19": {
+    "code": "HSC-M2-T3-D4",
+    "confidence": "medium",
+    "why": "Factors affecting demand and supply of AUD"
+  },
+  "econ2011_2020_q20": {
+    "code": "HSC-M3-T5-D6",
+    "confidence": "high",
+    "why": "Minimum wage effect on Lorenz curve"
+  },
+  "econ2011_2020_q21": {
+    "code": "HSC-M1-T4-D9",
+    "confidence": "medium",
+    "why": "Growth versus development; development institutions"
+  },
+  "econ2011_2020_q22": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "medium",
+    "why": "Unemployment types and underemployment"
+  },
+  "econ2011_2020_q23": {
+    "code": "HSC-M2-T4-D2",
+    "confidence": "high",
+    "why": "Australia involvement in a bilateral trade agreement"
+  },
+  "econ2011_2020_q24": {
+    "code": "HSC-M4-T5-D10",
+    "confidence": "high",
+    "why": "Microeconomic reform, aggregate supply and efficiency"
+  },
+  "econ2011_2020_q25": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Exchange rate fluctuations and external stability"
+  },
+  "econ2011_2020_q26": {
+    "code": "HSC-M4-T7-D4",
+    "confidence": "medium",
+    "why": "Environmental policy and international agreements"
+  },
+  "econ2011_2020_q27": {
+    "code": "HSC-M4-T9-D1",
+    "confidence": "medium",
+    "why": "Macro policy effectiveness for growth and employment"
+  },
+  "econ2011_2020_q28": {
+    "code": "HSC-M4-T1-D3",
+    "confidence": "high",
+    "why": "Limitations of economic policies"
+  },
+  "econ2011_2021_q1": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "WTO role in resolving trade disputes"
+  },
+  "econ2011_2021_q2": {
+    "code": "HSC-M3-T5-D2",
+    "confidence": "high",
+    "why": "Classifying advanced economies"
+  },
+  "econ2011_2021_q3": {
+    "code": "HSC-M4-T6-D3",
+    "confidence": "high",
+    "why": "National Employment Standards content"
+  },
+  "econ2011_2021_q4": {
+    "code": "HSC-M4-T3-D1",
+    "confidence": "high",
+    "why": "Budget outcome effects of lower economic activity"
+  },
+  "econ2011_2021_q5": {
+    "code": "HSC-M4-T3-D1",
+    "confidence": "high",
+    "why": "Structural component reflects deliberate fiscal changes"
+  },
+  "econ2011_2021_q6": {
+    "code": "HSC-M3-T5-D6",
+    "confidence": "high",
+    "why": "Gini coefficient and inequality cause"
+  },
+  "econ2011_2021_q7": {
+    "code": "HSC-M4-T3-D2",
+    "confidence": "medium",
+    "why": "Automatic stabilisers and economic activity"
+  },
+  "econ2011_2021_q8": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Protection methods and increase in free trade"
+  },
+  "econ2011_2021_q9": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "medium",
+    "why": "Causes of current account improvement"
+  },
+  "econ2011_2021_q10": {
+    "code": "HSC-M4-T2-D2",
+    "confidence": "high",
+    "why": "Policy settings to stabilise the business cycle"
+  },
+  "econ2011_2021_q11": {
+    "code": "HSC-M3-T3-D1",
+    "confidence": "high",
+    "why": "Calculating inflation rate from CPI"
+  },
+  "econ2011_2021_q12": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "high",
+    "why": "MPS effect on multiplier and national income"
+  },
+  "econ2011_2021_q13": {
+    "code": "HSC-M3-T6-D6",
+    "confidence": "high",
+    "why": "Characteristics of public goods"
+  },
+  "econ2011_2021_q14": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "Secondary income debit in current account"
+  },
+  "econ2011_2021_q15": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "medium",
+    "why": "Participation and unemployment rate movements"
+  },
+  "econ2011_2021_q16": {
+    "code": "HSC-M3-T6-D5",
+    "confidence": "high",
+    "why": "Identifying externalities"
+  },
+  "econ2011_2021_q17": {
+    "code": "HSC-M3-T1-D17",
+    "confidence": "high",
+    "why": "Calculating unemployment and participation rates"
+  },
+  "econ2011_2021_q18": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Calculating balance of goods and services"
+  },
+  "econ2011_2021_q19": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "high",
+    "why": "Central bank intervention under managed exchange rate"
+  },
+  "econ2011_2021_q20": {
+    "code": "HSC-M3-T1-D25",
+    "confidence": "high",
+    "why": "Real economic growth from nominal GDP and CPI"
+  },
+  "econ2011_2021_q21": {
+    "code": "HSC-M1-T1-D8",
+    "confidence": "medium",
+    "why": "Development strategies in another economy"
+  },
+  "econ2011_2021_q22": {
+    "code": "HSC-M4-T7-D2",
+    "confidence": "medium",
+    "why": "Market-based environmental policy and its limitations"
+  },
+  "econ2011_2021_q23": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "medium",
+    "why": "Inflation effects and NAIRU"
+  },
+  "econ2011_2021_q24": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Effects of exchange rate appreciation"
+  },
+  "econ2011_2021_q25": {
+    "code": "HSC-M4-T3-D2",
+    "confidence": "medium",
+    "why": "Fiscal policy effectiveness across objectives"
+  },
+  "econ2011_2021_q26": {
+    "code": "HSC-M4-T4-D3",
+    "confidence": "high",
+    "why": "Monetary policy effectiveness across objectives"
+  },
+  "econ2011_2021_q27": {
+    "code": "HSC-M1-T1-D5",
+    "confidence": "high",
+    "why": "Protectionist policies and the global economy"
+  },
+  "econ2011_2021_q28": {
+    "code": "HSC-M4-T5-D1",
+    "confidence": "medium",
+    "why": "Global changes affecting trade and financial flows"
+  },
+  "econ2011_2022_q1": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "IMF promotes global financial stability"
+  },
+  "econ2011_2022_q2": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "Discouraged worker outside the labour force"
+  },
+  "econ2011_2022_q3": {
+    "code": "HSC-M1-T4-D2",
+    "confidence": "high",
+    "why": "Factors contributing to globalisation"
+  },
+  "econ2011_2022_q4": {
+    "code": "HSC-M3-T2-D14",
+    "confidence": "high",
+    "why": "Full employment consistent with NAIRU"
+  },
+  "econ2011_2022_q5": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Effects of currency depreciation"
+  },
+  "econ2011_2022_q6": {
+    "code": "HSC-M4-T7-D2",
+    "confidence": "high",
+    "why": "Tradable water permits as market-based policy"
+  },
+  "econ2011_2022_q7": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "Portfolio investment in capital and financial account"
+  },
+  "econ2011_2022_q8": {
+    "code": "HSC-M3-T1-D22",
+    "confidence": "high",
+    "why": "Factors shifting aggregate demand"
+  },
+  "econ2011_2022_q9": {
+    "code": "HSC-M4-T3-D1",
+    "confidence": "medium",
+    "why": "Ending wage subsidy to reduce budget deficit"
+  },
+  "econ2011_2022_q10": {
+    "code": "HSC-M4-T5-D12",
+    "confidence": "high",
+    "why": "Regulation to enhance product market competition"
+  },
+  "econ2011_2022_q11": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "Calculating current account balance"
+  },
+  "econ2011_2022_q12": {
+    "code": "HSC-M3-T5-D8",
+    "confidence": "high",
+    "why": "Regressive tax effect on income distribution"
+  },
+  "econ2011_2022_q13": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "Factors increasing participation rate"
+  },
+  "econ2011_2022_q14": {
+    "code": "HSC-M3-T1-D22",
+    "confidence": "low",
+    "why": "AD and AS shifts lowering GDP; AS half uncovered"
+  },
+  "econ2011_2022_q15": {
+    "code": "HSC-M3-T2-D14",
+    "confidence": "high",
+    "why": "Policies lowering NAIRU"
+  },
+  "econ2011_2022_q16": {
+    "code": "HSC-M3-T1-D25",
+    "confidence": "high",
+    "why": "Real economic growth comparison"
+  },
+  "econ2011_2022_q17": {
+    "code": "HSC-M3-T1-D15",
+    "confidence": "high",
+    "why": "Multiplier effect of investment change"
+  },
+  "econ2011_2022_q18": {
+    "code": "HSC-M3-T4-D5",
+    "confidence": "high",
+    "why": "Terms of trade change and reasons"
+  },
+  "econ2011_2022_q19": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Tariff reduction and government revenue"
+  },
+  "econ2011_2022_q20": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Tariff reduction and foreign producer revenue"
+  },
+  "econ2011_2022_q21": {
+    "code": "HSC-M4-T3-D1",
+    "confidence": "medium",
+    "why": "Fiscal policy and financing deficits"
+  },
+  "econ2011_2022_q22": {
+    "code": "HSC-M3-T6-D10",
+    "confidence": "high",
+    "why": "Conflicts between environmental and other objectives"
+  },
+  "econ2011_2022_q23": {
+    "code": "HSC-M4-T5-D5",
+    "confidence": "medium",
+    "why": "Industry structure changes from global trends"
+  },
+  "econ2011_2022_q24": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "medium",
+    "why": "Quota increase and trade impacts"
+  },
+  "econ2011_2022_q25": {
+    "code": "HSC-M3-T1-D5",
+    "confidence": "high",
+    "why": "Balance of payments components and the AUD"
+  },
+  "econ2011_2022_q26": {
+    "code": "HSC-M4-T6-D9",
+    "confidence": "medium",
+    "why": "Labour market policies, growth and distribution"
+  },
+  "econ2011_2022_q27": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Effects of inflation on stakeholders"
+  },
+  "econ2011_2022_q28": {
+    "code": "HSC-M3-T5-D3",
+    "confidence": "high",
+    "why": "Reasons for differences between nations"
+  },
+  "econ2011_2023_q1": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "OECD role in the global economy"
+  },
+  "econ2011_2023_q2": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "high",
+    "why": "Composition of Australia exports"
+  },
+  "econ2011_2023_q3": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "Cause of falling participation rate"
+  },
+  "econ2011_2023_q4": {
+    "code": "HSC-M3-T1-D22",
+    "confidence": "high",
+    "why": "Cause of aggregate demand shift"
+  },
+  "econ2011_2023_q5": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Tariff effects on prices and producers"
+  },
+  "econ2011_2023_q6": {
+    "code": "HSC-M2-T4-D2",
+    "confidence": "high",
+    "why": "Effect of multilateral FTA on Australia"
+  },
+  "econ2011_2023_q7": {
+    "code": "HSC-M3-T6-D6",
+    "confidence": "high",
+    "why": "Example of a public good"
+  },
+  "econ2011_2023_q8": {
+    "code": "HSC-M4-T3-D1",
+    "confidence": "high",
+    "why": "Contractionary fiscal stance from budget outcomes"
+  },
+  "econ2011_2023_q9": {
+    "code": "HSC-M3-T5-D1",
+    "confidence": "high",
+    "why": "HDI as quality of life indicator"
+  },
+  "econ2011_2023_q10": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "Gains from free trade and comparative advantage"
+  },
+  "econ2011_2023_q11": {
+    "code": "HSC-M2-T3-D4",
+    "confidence": "high",
+    "why": "Factors shifting supply of Australian dollars"
+  },
+  "econ2011_2023_q12": {
+    "code": "HSC-M4-T4-D3",
+    "confidence": "high",
+    "why": "Effects of a lower cash rate"
+  },
+  "econ2011_2023_q13": {
+    "code": "HSC-M3-T4-D4",
+    "confidence": "medium",
+    "why": "Calculating net foreign liabilities"
+  },
+  "econ2011_2023_q14": {
+    "code": "HSC-M3-T6-D5",
+    "confidence": "high",
+    "why": "Tax correcting a negative externality"
+  },
+  "econ2011_2023_q15": {
+    "code": "HSC-M3-T4-D5",
+    "confidence": "high",
+    "why": "Cause of terms of trade deterioration"
+  },
+  "econ2011_2023_q16": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "high",
+    "why": "Intervention to maintain a fixed exchange rate"
+  },
+  "econ2011_2023_q17": {
+    "code": "HSC-M3-T3-D1",
+    "confidence": "high",
+    "why": "CPI weightings and contribution to inflation"
+  },
+  "econ2011_2023_q18": {
+    "code": "HSC-M3-T1-D15",
+    "confidence": "high",
+    "why": "Multiplier effect of government expenditure"
+  },
+  "econ2011_2023_q19": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Subsidy required to reduce imports"
+  },
+  "econ2011_2023_q20": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "high",
+    "why": "Trade weighted index movements"
+  },
+  "econ2011_2023_q21": {
+    "code": "HSC-M1-T1-D5",
+    "confidence": "medium",
+    "why": "WTO roles, trade and protection effects"
+  },
+  "econ2011_2023_q22": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "medium",
+    "why": "Depreciation effects on the current account"
+  },
+  "econ2011_2023_q23": {
+    "code": "HSC-M3-T5-D11",
+    "confidence": "high",
+    "why": "Lorenz curve and costs of inequality"
+  },
+  "econ2011_2023_q24": {
+    "code": "HSC-M4-T5-D11",
+    "confidence": "medium",
+    "why": "Microeconomic policies reducing unemployment"
+  },
+  "econ2011_2023_q25": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "high",
+    "why": "Value, composition, direction of Australia trade"
+  },
+  "econ2011_2023_q26": {
+    "code": "HSC-M3-T6-D4",
+    "confidence": "medium",
+    "why": "Effects of pursuing environmental sustainability"
+  },
+  "econ2011_2023_q27": {
+    "code": "HSC-M3-T6-D3",
+    "confidence": "high",
+    "why": "Globalisation in an economy other than Australia"
+  },
+  "econ2011_2023_q28": {
+    "code": "HSC-M4-T9-D1",
+    "confidence": "medium",
+    "why": "Macro policy effectiveness for growth and stability"
+  },
+  "econ2011_2024_q1": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "World Bank role in developing countries"
+  },
+  "econ2011_2024_q2": {
+    "code": "HSC-M4-T6-D9",
+    "confidence": "high",
+    "why": "Benefit of centralised wage determination"
+  },
+  "econ2011_2024_q3": {
+    "code": "HSC-M4-T1-D1",
+    "confidence": "high",
+    "why": "Conflicting economic objectives in the short term"
+  },
+  "econ2011_2024_q4": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "Disadvantage of free trade"
+  },
+  "econ2011_2024_q5": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "Portfolio investment recorded in financial account"
+  },
+  "econ2011_2024_q6": {
+    "code": "HSC-M3-T1-D17",
+    "confidence": "high",
+    "why": "Calculating labour force participation rate"
+  },
+  "econ2011_2024_q7": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "high",
+    "why": "MPC calculation from income and savings"
+  },
+  "econ2011_2024_q8": {
+    "code": "HSC-M4-T8-D1",
+    "confidence": "high",
+    "why": "Shortest implementation time lag"
+  },
+  "econ2011_2024_q9": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "high",
+    "why": "Frictional unemployment and job search"
+  },
+  "econ2011_2024_q10": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "high",
+    "why": "RBA actions to appreciate the dollar"
+  },
+  "econ2011_2024_q11": {
+    "code": "HSC-M3-T1-D27",
+    "confidence": "high",
+    "why": "Increase in aggregate supply causes"
+  },
+  "econ2011_2024_q12": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Calculating exports using balance of payments identity"
+  },
+  "econ2011_2024_q13": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Local content rules effects"
+  },
+  "econ2011_2024_q14": {
+    "code": "HSC-M3-T5-D8",
+    "confidence": "high",
+    "why": "Policy changes raising the Gini coefficient"
+  },
+  "econ2011_2024_q15": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "Factors affecting net primary income"
+  },
+  "econ2011_2024_q16": {
+    "code": "HSC-M3-T3-D1",
+    "confidence": "high",
+    "why": "Headline above underlying inflation"
+  },
+  "econ2011_2024_q17": {
+    "code": "HSC-M3-T3-D6",
+    "confidence": "high",
+    "why": "Imported cost inflation and exchange rate"
+  },
+  "econ2011_2024_q18": {
+    "code": "HSC-M3-T4-D1",
+    "confidence": "medium",
+    "why": "Measurement of external stability indicators"
+  },
+  "econ2011_2024_q19": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "medium",
+    "why": "TWI and terms of trade movements"
+  },
+  "econ2011_2024_q20": {
+    "code": "HSC-M3-T1-D25",
+    "confidence": "high",
+    "why": "Real growth and inflation calculation"
+  },
+  "econ2011_2024_q21": {
+    "code": "HSC-M2-T4-D4",
+    "confidence": "high",
+    "why": "Other countries protectionism and current account"
+  },
+  "econ2011_2024_q22": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "medium",
+    "why": "Causes of inflation and labour market policy"
+  },
+  "econ2011_2024_q23": {
+    "code": "HSC-M4-T7-D2",
+    "confidence": "high",
+    "why": "Market-based environmental policy effectiveness"
+  },
+  "econ2011_2024_q24": {
+    "code": "HSC-M3-T6-D3",
+    "confidence": "medium",
+    "why": "Business cycles and globalisation in another economy"
+  },
+  "econ2011_2024_q25": {
+    "code": "HSC-M4-T9-D1",
+    "confidence": "medium",
+    "why": "Macro and micro policies for sustainable growth"
+  },
+  "econ2011_2024_q27": {
+    "code": "HSC-M1-T4-D2",
+    "confidence": "high",
+    "why": "Factors driving international economic integration"
+  },
+  "econ2011_2024_q28": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Impacts of exchange rate appreciation"
+  },
+  "econ2011_2025_q1": {
+    "code": "HSC-M1-T2-D3",
+    "confidence": "high",
+    "why": "Common currency as a monetary union"
+  },
+  "econ2011_2025_q2": {
+    "code": "HSC-M1-T4-D2",
+    "confidence": "high",
+    "why": "Factors accelerating globalisation"
+  },
+  "econ2011_2025_q3": {
+    "code": "HSC-M3-T5-D2",
+    "confidence": "high",
+    "why": "Health and education indicators by economy type"
+  },
+  "econ2011_2025_q4": {
+    "code": "HSC-M4-T3-D1",
+    "confidence": "high",
+    "why": "Budget component falling in a downturn"
+  },
+  "econ2011_2025_q5": {
+    "code": "HSC-M3-T6-D6",
+    "confidence": "high",
+    "why": "Public transport as a private good"
+  },
+  "econ2011_2025_q6": {
+    "code": "HSC-M4-T2-D2",
+    "confidence": "high",
+    "why": "Rationale for macroeconomic policy"
+  },
+  "econ2011_2025_q7": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "high",
+    "why": "MPC from government spending multiplier"
+  },
+  "econ2011_2025_q8": {
+    "code": "HSC-M1-T4-D8",
+    "confidence": "high",
+    "why": "Characteristic of a regional business cycle"
+  },
+  "econ2011_2025_q9": {
+    "code": "HSC-M3-T1-D23",
+    "confidence": "high",
+    "why": "Comparing injections and leakages"
+  },
+  "econ2011_2025_q10": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "Foreign aid as a current account debit"
+  },
+  "econ2011_2025_q11": {
+    "code": "HSC-M4-T3-D1",
+    "confidence": "medium",
+    "why": "Cyclical component and automatic stabilisers"
+  },
+  "econ2011_2025_q12": {
+    "code": "HSC-M4-T7-D2",
+    "confidence": "high",
+    "why": "Emissions trading as market-based policy"
+  },
+  "econ2011_2025_q13": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Calculating financial account balance"
+  },
+  "econ2011_2025_q14": {
+    "code": "HSC-M3-T3-D1",
+    "confidence": "high",
+    "why": "Headline and underlying inflation causes"
+  },
+  "econ2011_2025_q15": {
+    "code": "HSC-M3-T1-D25",
+    "confidence": "high",
+    "why": "Real economic growth rate calculation"
+  },
+  "econ2011_2025_q16": {
+    "code": "HSC-M3-T4-D4",
+    "confidence": "medium",
+    "why": "Calculating net foreign liabilities"
+  },
+  "econ2011_2025_q17": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Quota reduction and domestic price"
+  },
+  "econ2011_2025_q18": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "Tariff effect on foreign producer revenue"
+  },
+  "econ2011_2025_q19": {
+    "code": "HSC-M3-T4-D5",
+    "confidence": "high",
+    "why": "Export price index from terms of trade"
+  },
+  "econ2011_2025_q20": {
+    "code": "HSC-M3-T6-D5",
+    "confidence": "high",
+    "why": "Per unit tax correcting an externality"
+  },
+  "econ2011_2025_q21": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "high",
+    "why": "World development and environmental sustainability"
+  }
+}

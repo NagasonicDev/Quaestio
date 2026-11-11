@@ -1,0 +1,547 @@
+{
+  "hosp2023ko_q1": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "deep-fried food characteristics"
+  },
+  "hosp2023ko_q2": {
+    "code": "HSC-M4-T1-D35",
+    "confidence": "high",
+    "why": "safety sign colour and shape"
+  },
+  "hosp2023ko_q3": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "high",
+    "why": "fruit freshness and quality indicators"
+  },
+  "hosp2023ko_q4": {
+    "code": null,
+    "confidence": "low",
+    "why": "legislation aspects and privacy not in dots"
+  },
+  "hosp2023ko_q5": {
+    "code": "HSC-M3-T1-D40",
+    "confidence": "high",
+    "why": "standard recipe card quantities"
+  },
+  "hosp2023ko_q6": {
+    "code": "HSC-M3-T3-D47",
+    "confidence": "medium",
+    "why": "disaster impact as industry issue"
+  },
+  "hosp2023ko_q7": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "high",
+    "why": "poultry freshness indicators"
+  },
+  "hosp2023ko_q8": {
+    "code": "HSC-M3-T1-D43",
+    "confidence": "medium",
+    "why": "portioning beef fillet tools"
+  },
+  "hosp2023ko_q9": {
+    "code": "HSC-M4-T1-D15",
+    "confidence": "high",
+    "why": "local government food inspection regime"
+  },
+  "hosp2023ko_q10": {
+    "code": "HSC-M3-T1-D28",
+    "confidence": "high",
+    "why": "mandolin purpose and benefits"
+  },
+  "hosp2023ko_q11": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "medium",
+    "why": "over-blanching principles and effects"
+  },
+  "hosp2023ko_q12": {
+    "code": "HSC-M2-T3-D13",
+    "confidence": "medium",
+    "why": "colour-coded boards prevent cross-contamination"
+  },
+  "hosp2023ko_q13": {
+    "code": "HSC-M3-T3-D45",
+    "confidence": "medium",
+    "why": "efficient use of resources water energy"
+  },
+  "hosp2023ko_q14": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "medium",
+    "why": "bechamel as sauce example"
+  },
+  "hosp2023ko_q15": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "high",
+    "why": "E. coli in high-risk minced meat"
+  },
+  "hosp2023ko_q16": {
+    "code": "HSC-M1-T2-D33",
+    "confidence": "high",
+    "why": "potential security breaches"
+  },
+  "hosp2023ko_q17": {
+    "code": "HSC-M3-T3-D6",
+    "confidence": "medium",
+    "why": "emergency exits is largest part"
+  },
+  "hosp2023ko_q18": {
+    "code": "HSC-M1-T2-D28",
+    "confidence": "medium",
+    "why": "outcomes of policy non-compliance"
+  },
+  "hosp2023ko_q19": {
+    "code": "HSC-M3-T3-D12",
+    "confidence": "high",
+    "why": "a la carte menu features"
+  },
+  "hosp2023ko_q20": {
+    "code": "HSC-M3-T3-D26",
+    "confidence": "medium",
+    "why": "cleaning timing during and after service"
+  },
+  "hosp2023ko_q21": {
+    "code": "HSC-M3-T1-D40",
+    "confidence": "high",
+    "why": "workflow and time management in kitchen"
+  },
+  "hosp2023ko_q22": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "roasting and braising techniques"
+  },
+  "hosp2023ko_q23": {
+    "code": "HSC-M3-T3-D47",
+    "confidence": "high",
+    "why": "current issues and trends"
+  },
+  "hosp2024fb_q1": {
+    "code": "HSC-M2-T1-D18",
+    "confidence": "high",
+    "why": "refrigerated storage temperature"
+  },
+  "hosp2024fb_q2": {
+    "code": "HSC-M2-T1-D30",
+    "confidence": "high",
+    "why": "cyclic menu definition"
+  },
+  "hosp2024fb_q3": {
+    "code": "HSC-M2-T1-D37",
+    "confidence": "high",
+    "why": "brewed black tea characteristics"
+  },
+  "hosp2024fb_q4": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "coffee bean storage and shelf life"
+  },
+  "hosp2024fb_q5": {
+    "code": "HSC-M1-T3-D63",
+    "confidence": "medium",
+    "why": "probe question example"
+  },
+  "hosp2024fb_q6": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "backflush cleaning frequency"
+  },
+  "hosp2024fb_q7": {
+    "code": "HSC-M2-T1-D43",
+    "confidence": "medium",
+    "why": "matching customer preferences to beverage"
+  },
+  "hosp2024fb_q8": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "manageable first aid situation"
+  },
+  "hosp2024fb_q9": {
+    "code": "HSC-M1-T2-D28",
+    "confidence": "high",
+    "why": "task rotation prevents sprains and strains"
+  },
+  "hosp2024fb_q10": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "test extraction adjustments"
+  },
+  "hosp2024fb_q11": {
+    "code": "HSC-M4-T1-D5",
+    "confidence": "high",
+    "why": "ANZFSC purpose"
+  },
+  "hosp2024fb_q13": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "swirling to texturise milk"
+  },
+  "hosp2024fb_q14": {
+    "code": "HSC-M1-T3-D74",
+    "confidence": "high",
+    "why": "chemical dilution calculation"
+  },
+  "hosp2024fb_q15": {
+    "code": "HSC-M5-T1-D8",
+    "confidence": "high",
+    "why": "risk control hierarchy order"
+  },
+  "hosp2024fb_q16": {
+    "code": "HSC-M2-T3-D34",
+    "confidence": "medium",
+    "why": "cash transactions largest part"
+  },
+  "hosp2024fb_q17": {
+    "code": "HSC-M1-T3-D36",
+    "confidence": "medium",
+    "why": "conflict resolution techniques"
+  },
+  "hosp2024fb_q18": {
+    "code": "HSC-M2-T3-D36",
+    "confidence": "high",
+    "why": "debriefing and customer feedback largest part"
+  },
+  "hosp2024fb_q19": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "HACCP receiving delivery largest part"
+  },
+  "hosp2024fb_q20": {
+    "code": "HSC-M2-T1-D58",
+    "confidence": "high",
+    "why": "integrating current information into work"
+  },
+  "hosp2024fb_q21": {
+    "code": "HSC-M2-T1-D54",
+    "confidence": "high",
+    "why": "consistency in quality volume appearance"
+  },
+  "hosp2024fb_q22": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "paddock to plate food safety consequences"
+  },
+  "hosp2024ko_q1": {
+    "code": "HSC-M3-T1-D44",
+    "confidence": "medium",
+    "why": "refrigerated storage prevents spoilage"
+  },
+  "hosp2024ko_q2": {
+    "code": "HSC-M3-T3-D13",
+    "confidence": "high",
+    "why": "cyclic menu definition"
+  },
+  "hosp2024ko_q3": {
+    "code": "HSC-M3-T1-D49",
+    "confidence": "high",
+    "why": "sauce and garnish accompaniments"
+  },
+  "hosp2024ko_q4": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "high",
+    "why": "fruit and vegetable freshness indicators"
+  },
+  "hosp2024ko_q5": {
+    "code": "HSC-M3-T3-D40",
+    "confidence": "high",
+    "why": "pest control procedures"
+  },
+  "hosp2024ko_q6": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "stir-fried food characteristics"
+  },
+  "hosp2024ko_q7": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "basting during roasting"
+  },
+  "hosp2024ko_q8": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "manageable first aid situation"
+  },
+  "hosp2024ko_q9": {
+    "code": "HSC-M1-T2-D28",
+    "confidence": "high",
+    "why": "task rotation prevents sprains and strains"
+  },
+  "hosp2024ko_q10": {
+    "code": "HSC-M3-T3-D32",
+    "confidence": "medium",
+    "why": "consult SDS after chemical accident"
+  },
+  "hosp2024ko_q11": {
+    "code": "HSC-M4-T1-D5",
+    "confidence": "high",
+    "why": "ANZFSC purpose"
+  },
+  "hosp2024ko_q12": {
+    "code": "HSC-M3-T1-D40",
+    "confidence": "medium",
+    "why": "portion control equipment selection"
+  },
+  "hosp2024ko_q13": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "foods suited to cookery methods"
+  },
+  "hosp2024ko_q14": {
+    "code": "HSC-M3-T3-D33",
+    "confidence": "high",
+    "why": "sanitiser dilution calculation"
+  },
+  "hosp2024ko_q15": {
+    "code": "HSC-M5-T1-D8",
+    "confidence": "high",
+    "why": "risk control hierarchy order"
+  },
+  "hosp2024ko_q16": {
+    "code": "HSC-M4-T1-D41",
+    "confidence": "medium",
+    "why": "palette knife features largest part"
+  },
+  "hosp2024ko_q17": {
+    "code": "HSC-M1-T3-D36",
+    "confidence": "medium",
+    "why": "conflict resolution techniques"
+  },
+  "hosp2024ko_q18": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "grilling and steaming methods"
+  },
+  "hosp2024ko_q19": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "HACCP receiving delivery largest part"
+  },
+  "hosp2024ko_q20": {
+    "code": "HSC-M3-T3-D50",
+    "confidence": "medium",
+    "why": "chef integrating current information"
+  },
+  "hosp2024ko_q21": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "cooking time and temperature effects"
+  },
+  "hosp2024ko_q22": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "paddock to plate food safety consequences"
+  },
+  "hosp2025fb_q1": {
+    "code": "HSC-M4-T1-D11",
+    "confidence": "high",
+    "why": "nominate a food safety supervisor"
+  },
+  "hosp2025fb_q2": {
+    "code": "HSC-M2-T3-D34",
+    "confidence": "high",
+    "why": "EFTPOS in customer accounts"
+  },
+  "hosp2025fb_q3": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "high",
+    "why": "water-saving environmental practice"
+  },
+  "hosp2025fb_q4": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "high",
+    "why": "measuring ingredients and equipment"
+  },
+  "hosp2025fb_q5": {
+    "code": "HSC-M3-T1-D21",
+    "confidence": "high",
+    "why": "indirect bullying example"
+  },
+  "hosp2025fb_q6": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "flat white preparation sequence"
+  },
+  "hosp2025fb_q7": {
+    "code": "HSC-M2-T1-D50",
+    "confidence": "high",
+    "why": "brewing plunging shaking methods"
+  },
+  "hosp2025fb_q8": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "medium",
+    "why": "espresso machine seasoning and preparation"
+  },
+  "hosp2025fb_q9": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "olfactory sense in sensory analysis"
+  },
+  "hosp2025fb_q10": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "Arabica versus Robusta characteristics"
+  },
+  "hosp2025fb_q11": {
+    "code": "HSC-M4-T1-D9",
+    "confidence": "high",
+    "why": "food business compliance requirements"
+  },
+  "hosp2025fb_q12": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "high",
+    "why": "bacterial toxin examples"
+  },
+  "hosp2025fb_q13": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "purpose of tamping"
+  },
+  "hosp2025fb_q14": {
+    "code": "HSC-M4-T1-D1",
+    "confidence": "high",
+    "why": "act regulation code standard differences"
+  },
+  "hosp2025fb_q15": {
+    "code": "HSC-M2-T3-D34",
+    "confidence": "medium",
+    "why": "customer account calculation"
+  },
+  "hosp2025fb_q16": {
+    "code": "HSC-M2-T3-D4",
+    "confidence": "medium",
+    "why": "vulnerable customer practice largest part"
+  },
+  "hosp2025fb_q17": {
+    "code": "HSC-M4-T1-D23",
+    "confidence": "high",
+    "why": "purpose of WHS legislation"
+  },
+  "hosp2025fb_q18": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "medium",
+    "why": "quality assurance and customer service"
+  },
+  "hosp2025fb_q19": {
+    "code": "HSC-M2-T3-D32",
+    "confidence": "high",
+    "why": "clearing and carrying multiple plates"
+  },
+  "hosp2025fb_q20": {
+    "code": "HSC-M2-T1-D51",
+    "confidence": "medium",
+    "why": "presentation standards impacts largest part"
+  },
+  "hosp2025fb_q21": {
+    "code": "HSC-M2-T3-D22",
+    "confidence": "high",
+    "why": "service sequence and procedures"
+  },
+  "hosp2025fb_q23": {
+    "code": "HSC-M3-T3-D6",
+    "confidence": "high",
+    "why": "cost of workplace injury"
+  },
+  "hosp2025ko_q1": {
+    "code": "HSC-M4-T1-D11",
+    "confidence": "high",
+    "why": "nominate a food safety supervisor"
+  },
+  "hosp2025ko_q2": {
+    "code": "HSC-M4-T1-D41",
+    "confidence": "high",
+    "why": "filleting knife selection"
+  },
+  "hosp2025ko_q3": {
+    "code": "HSC-M3-T1-D43",
+    "confidence": "high",
+    "why": "portioning and standard cuts purpose"
+  },
+  "hosp2025ko_q4": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "poaching temperature range"
+  },
+  "hosp2025ko_q5": {
+    "code": "HSC-M3-T1-D21",
+    "confidence": "high",
+    "why": "indirect bullying example"
+  },
+  "hosp2025ko_q6": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "roasting method description"
+  },
+  "hosp2025ko_q7": {
+    "code": "HSC-M3-T1-D42",
+    "confidence": "high",
+    "why": "precision cuts identification"
+  },
+  "hosp2025ko_q8": {
+    "code": "HSC-M3-T3-D38",
+    "confidence": "high",
+    "why": "sanitising equipment methods"
+  },
+  "hosp2025ko_q9": {
+    "code": "HSC-M3-T1-D40",
+    "confidence": "high",
+    "why": "task sheet work instructions"
+  },
+  "hosp2025ko_q10": {
+    "code": "HSC-M3-T2-D1",
+    "confidence": "high",
+    "why": "conduction heat transfer"
+  },
+  "hosp2025ko_q11": {
+    "code": "HSC-M4-T1-D9",
+    "confidence": "high",
+    "why": "food business compliance requirements"
+  },
+  "hosp2025ko_q12": {
+    "code": "HSC-M2-T3-D11",
+    "confidence": "high",
+    "why": "bacterial toxin examples"
+  },
+  "hosp2025ko_q14": {
+    "code": "HSC-M4-T1-D1",
+    "confidence": "high",
+    "why": "act regulation code standard differences"
+  },
+  "hosp2025ko_q15": {
+    "code": "HSC-M3-T1-D43",
+    "confidence": "high",
+    "why": "chicken supreme standard cut"
+  },
+  "hosp2025ko_q16": {
+    "code": "HSC-M2-T3-D4",
+    "confidence": "medium",
+    "why": "vulnerable customer practice largest part"
+  },
+  "hosp2025ko_q17": {
+    "code": "HSC-M4-T1-D23",
+    "confidence": "high",
+    "why": "purpose of WHS legislation"
+  },
+  "hosp2025ko_q18": {
+    "code": "HSC-M1-T3-D8",
+    "confidence": "medium",
+    "why": "quality assurance and customer service"
+  },
+  "hosp2025ko_q19": {
+    "code": "HSC-M3-T1-D40",
+    "confidence": "medium",
+    "why": "standard recipe consequences largest part"
+  },
+  "hosp2025ko_q20": {
+    "code": "HSC-M3-T1-D48",
+    "confidence": "high",
+    "why": "plating considerations largest part"
+  },
+  "hosp2025ko_q21": {
+    "code": "HSC-M3-T3-D19",
+    "confidence": "high",
+    "why": "cleaning importance to service and food safety"
+  },
+  "hosp2025ko_q23": {
+    "code": "HSC-M3-T3-D6",
+    "confidence": "high",
+    "why": "cost of workplace injury"
+  }
+}

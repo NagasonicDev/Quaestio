@@ -1,0 +1,393 @@
+### ma2020q11 [4m]
+2020 HSC Mathematics Advanced: There are two tanks on a property, Tank A and Tank B. Initially, Tank A holds 1000 litres of water and Tank B is empty. (a) Tank A begins to lose water at a constant rate of 20 litres per minute. The volume of water in Tank A is modelled by V = 1000 − 20 t where V is the volume in litres and t is the time in minutes from when the tank begins to lose water. On the grid below, draw the graph of this model and label it as Tank A. 1 g r id Question 11 continues on page 11 8668310293 Question 11 (continued) (b) Tank B remains empty until t = 15 when water is added to it at a constant rate of 30 litres per minute. By drawing a line on the grid on the previous page, o
+
+### ma2020q12 [3m]
+2020 HSC Mathematics Advanced: Calculate the sum of the arithmetic series 4 + 10 + 16 + · · · + 1354 . 3
+
+### ma2020q13 [2m]
+2020 HSC Mathematics Advanced: π ⌠4 Evaluate sec2 ⎮ x dx . ⌡0 2 8839310293
+
+### ma2020q14 [5m]
+2020 HSC Mathematics Advanced: History and Geography are two of the subjects students may decide to study. For a group of 40 students, the following is known. • 7 students study neither History nor Geography • 20 students study History • 18 students study Geography (a) A student is chosen at random. By using a Venn diagram, or otherwise, find the probability that the student studies both History and Geography. 2 (b) A student is chosen at random. Given that the student studies Geography, what is the probability that the student does NOT study History? 1 (c) Two different students are chosen at random, one after the other. What is the probability that the first student studies History and the
+
+### ma2020q15 [5m]
+2020 HSC Mathematics Advanced: Mr Ali, Ms Brown and a group of students were camping at the site located at Mr Ali walked with some of the students on a bearing of 035° for 7 km to location Ms Brown, with the rest of the students, walked on a bearing of 100° for 9 km location B. P. A. to loca tion diagr am (a) Show that the angle APB is 65°. 1 (b) Find the distance AB. 2 (c) Find the bearing of Ms Brown’s group from Mr Ali’s group. Give your answer correct to the nearest degree. Do write 2 1918310294
+
+### ma2020q16 [4m]
+2020 HSC Mathematics Advanced: Sketch the graph of the curve y = − x 3 + 3x 2 − 1, labelling the stationary points and point of inflection. Do NOT determine the x intercepts of the curve. 4 7407310293
+
+### ma2020q17 [2m]
+2020 HSC Mathematics Advanced: ⌠ x Find ⎮ dx . 4 + x2 ⌡ 2
+
+### ma2020q18 [3m]
+2020 HSC Mathematics Advanced: (a) Differentiate e2x(2x + 1) . 2 ⌠ (b) Hence, find ( ) x +1 e2x ⎮ dx . ⌡ 1 4957310290
+
+### ma2020q19 [2m]
+2020 HSC Mathematics Advanced: Prove that sec q − cos q = sin q tan q . 2 Please turn over 4792310297
+
+### ma2020q20 [2m]
+2020 HSC Mathematics Advanced: Kenzo is driving his car along a road while his friend records the velocity of the car, v ( t ), in km/h every minute over a 5-minute period. The table gives the velocity v ( t ) at time t hours. 2 1 2 3 4 5 t 0 60 60 60 60 60 v ( t ) 60 55 65 68 70 67 The distance covered by the car over the 5-minute period is given by 5 ⌠60 ⎮ v t( )dt. ⌡0 Use the trapezoidal rule and the velocity at each of the six time values to find the approximate distance in kilometres the car has travelled in the 5-minute period. Give your answer correct to one decimal place. 5461310291 Section II extra writing space If you use this space, clearly indicate which question you are answerin
+
+### ma2020q21 [6m]
+2020 HSC Mathematics Advanced: Hot tea is poured into a cup. The temperature of tea can be modelled by T = 25 + 70 (1.5)−0.4 t , where T is the temperature of the tea, in degrees Celsius, t minutes after it is poured. (a) What is the temperature of the tea 4 minutes after it has been poured? 1 (b) At what rate is the tea cooling 4 minutes after it has been poured? 2 (c) How long after the tea is poured will it take for its temperature to reach 55°C? 3 1024310360
+
+### ma2020q22 [4m]
+2020 HSC Mathematics Advanced: The diagram shows a regular decagon (ten-sided shape with all sides equal and all interior angles equal). The decagon has centre O. 4 d e cagon The perimeter of the shape is 80 cm. By considering triangle OAB, calculate the area of the ten-sided shape. Give your answer in square centimetres correct to one decimal place. 5486310366
+
+### ma2020q23 [4m]
+2020 HSC Mathematics Advanced: A continuous random variable, X, has the following probability density function. ⎧sin x for 0 ≤ x ≤ k ƒ ( ) x = ⎨⎩0 for all other values of x (a) Find the value of k . 2 (b) Find P ( X ≤ 1). Give your answer correct to four decimal places. Questions 11–23 are worth 46 marks in total 2 7986310363
+
+### ma2020q24 [3m]
+2020 HSC Mathematics Advanced: The circle x 2 − 6x + y 2 + 4y − 3 = 0 is reflected in the x-axis. Sketch the reflected circle, showing the coordinates of the centre and the radius. 3 0736310369
+
+### ma2020q25 [7m]
+2020 HSC Mathematics Advanced: A landscape gardener wants to build a garden bed in the shape of a rectangle attached to a quarter-circle. Let x and y be the dimensions of the rectangle in metres, as shown in the diagram. r ectangle and quarter circle The garden bed is required to have an area of 36 m2 and to have a perimeter which is as small as possible. Let P metres be the perimeter of the garden bed. 72 (a) Show that P = 2x + . x 3 Question 25 continues on page 27 6277310365 Question 25 (continued) (b) Find the smallest possible perimeter of the garden bed, showing why this is the minimum perimeter. 4 End of Question 25 1032310369
+
+### ma2020q26 [7m]
+2020 HSC Mathematics Advanced: Tina inherits $60 000 and invests it in an account earning interest at a rate of 0.5% per month. Each month, immediately after the interest has been paid, Tina withdraws $800. The amount in the account immediately after the nth withdrawal can be determined using the recurrence relation A = A n n − 1 (1.005) − 800, where n = 1, 2, 3, . . . and A = 60 000. 0 (a) Use the recurrence relation to find the amount of money in the account immediately after the third withdrawal. 2 Question 26 continues on page 29 0136310363 Question 26 (continued) (b) Calculate the amount of interest earned in the first three months. 2 (c) Calculate the amount of money in the account imm
+
+### ma2020q27 [5m]
+2020 HSC Mathematics Advanced: A cricket is an insect. The male cricket produces a chirping sound. A scientist wants to explore the relationship between the temperature in degrees Celsius and the number of cricket chirps heard in a 15-second time interval. Once a day for 20 days, the scientist collects data. Based on the 20 data points, the scientist provides the information below. • A box-plot of the temperature data is shown. 5 bo x- pl ot • The mean temperature in the dataset is 0.525°C below the median temperature in the dataset. • A total of 684 chirps was counted when collecting the 20 data points. The scientist fits a least-squares regression line using the data ( x, y ), where x is t
+
+### ma2020q28 [5m]
+2020 HSC Mathematics Advanced: In a particular country, the hourly rate of pay for adults who work is normally distributed with a mean of $25 and a standard deviation of $5. (a) Two adults who both work are chosen at random. Find the probability that at least one of them earns between $15 and $30 per hour. 3 (b) The number of adults who work is equal to three times the number of adults who do not work. One adult is chosen at random. Find the probability that the chosen adult works and earns more than $25 per hour. 2 0585310361
+
+### ma2020q29 [4m]
+2020 HSC Mathematics Advanced: The diagram shows the graph of y = c ln x , c > 0. g r a ph (a) Show that the equation of the tangent to y = c ln x at x = p, where p > 0, is c y = x − c + c ln p . p 2 (b) Find the value of c such that the tangent from part (a) has a gradient of 1 and passes through the origin. 2 6577310368
+
+### ma2020q30 [6m]
+2020 HSC Mathematics Advanced: The diagram shows two parabolas y = 4x − x 2 and y = ax 2, where a > 0. The two parabolas intersect at the origin, O, and at A. g r a p h 4 (a) Show that the x-coordinate of A is . a + 1 2 Question 30 continues on page 35 4074310368 Question 30 (continued) 16 (b) Find the value of a such that the shaded area is . 3 4 End of Question 30 9566310369
+
+### ma2020q31 [7m]
+2020 HSC Mathematics Advanced: The population of mice on an isolated island can be modelled by the function p m ( t ) = a sin t + b , 26 where t is the time in weeks and 0 ≤ t ≤ 52. The population of mice reaches a maximum of 35 000 when t = 13 and a minimum of 5000 when t = 39. The graph of m ( t ) is shown. g raph (a) What are the values of a and b? 2 Question 31 continues on page 37 0008310361 Question 31 (continued) (b) On the same island, the population of cats can be modelled by the function p c ( t ) = −80 cos ( t − 10) + 120 . 26 Consider the graph of m ( t ) and the graph of c ( t ). Find the values of t, 0 ≤ t ≤ 52, for which both populations are increasing. 3 (c) Find the rate of 
+
+### ma2021q11 [2m]
+2021 HSC Mathematics Advanced: x − 1 Solve x + = 9. 2 2 1024310360
+
+### ma2021q12 [5m]
+2021 HSC Mathematics Advanced: A right-angled triangle XYZ is cut out from a semicircle with centre O. The length of the diameter XZ is 16 cm and YXZ = 30°, as shown on the diagram. Semicircle diagra m (a) Find the length of XY in centimetres, correct to two decimal places. 2 (b) Hence, find the area of the shaded region in square centimetres, correct to one decimal place. 3 5486310366
+
+### ma2021q13 [3m]
+2021 HSC Mathematics Advanced: Find the exact gradient of the tangent to the curve y = x tan x at the point where p x = . 3 3
+
+### ma2021q14 [2m]
+2021 HSC Mathematics Advanced: The first term of an arithmetic sequence is 5. The sum of the first 43 terms is 2021. What is the common difference of the sequence? 2 7986310363
+
+### ma2021q15 [2m]
+2021 HSC Mathematics Advanced: ⌠ 0 Evaluate ⎮ 2x + 4 dx. ⌡–2 2
+
+### ma2021q16 [3m]
+2021 HSC Mathematics Advanced: For what values of x is â ( x ) = x2 – 2x3 increasing? 3 0736310369
+
+### ma2021q17 [4m]
+2021 HSC Mathematics Advanced: For a sample of 17 inland towns in Australia, the height above sea level, x (metres), and the average maximum daily temperature, y (°C), were recorded. The graph shows the data as well as a regression line. Gr ap h of d at a The equation of the regression line is y = 29.2 − 0.011x . The correlation coefficient is r = − 0.494 . (a) (i) By using the equation of the regression line, predict the average maximum daily temperature, in degrees Celsius, for a town that is 540 m above sea level. Give your answer correct to one decimal place. 1 (ii) The gradient of the regression line is − 0.011. Interpret the value of this gradient in the given context. 2 Question 17 co
+
+### ma2021q18 [3m]
+2021 HSC Mathematics Advanced: The diagram shows a triangle ABC where AC = 25 cm, BC = 16 cm, BAC = 28° and angle ABC is obtuse. 3 Triang le Find the size of the obtuse angle ABC correct to the nearest degree. 0136310363
+
+### ma2021q19 [3m]
+2021 HSC Mathematics Advanced: 1 Without using calculus, sketch the graph of y = 2 + , showing the asymptotes x + 4 and the x and y intercepts. 3
+
+### ma2021q20 [2m]
+2021 HSC Mathematics Advanced: p For what values of x, in the interval 0 ≤ x ≤ , does the line y = 1 intersect the graph 4 of y = 2 sin 4x ? 2 7037310360
+
+### ma2021q21 [2m]
+2021 HSC Mathematics Advanced: Consider the graph of y = â ( x ) as shown. 2 G r aph of curv e Sketch the graph of y = 4 â ( 2x ) showing the x-intercepts and the coordinates of the turning points. 2207310364
+
+### ma2021q22 [4m]
+2021 HSC Mathematics Advanced: A random variable is normally distributed with mean 0 and standard deviation 1. The table gives the probability that this random variable lies between 0 and z for different values of z. z 0.1 0.2 0.3 0.4 0.5 0.6 Probability 0.0398 0.0793 0.1179 0.1554 0.1915 0.2257 The probability values given in the table for different values of z are represented by the shaded area in the following diagram. D iagram of shaded area (a) Using the table, find the probability that a value from a random variable that is normally distributed with mean 0 and standard deviation 1 lies between 0.1 and 0.5. 1 (b) Birth weights are normally distributed with a mean of 3300 grams and a sta
+
+### ma2021q23 [4m]
+2021 HSC Mathematics Advanced: A population, P, which is initially 5000, varies according to the formula −t P = 5000b10 , where b is a positive constant and t is time in years, t ≥ 0. The population is 1250 after 20 years. Find the value of t, correct to one decimal place, for which the instantaneous rate of decrease is 30 people per year. 4 0585310361
+
+### ma2021q24 [3m]
+2021 HSC Mathematics Advanced: 3 3 The curve y = intersects the line y = x at the point (2, 3). x – 1 2 3 3 The region bounded by the curve y = , the line y = x, the x-axis and the line x – 1 2 x = 4 is shaded in the diagram. 3 D i a g ram with shaded diagram Find the exact area of the shaded region. 6577310368
+
+### ma2021q25 [3m]
+2021 HSC Mathematics Advanced: A table of future value interest factors for an annuity of $1 is shown. 3 Table of future value interest factors Number of periods Interest rate per period 0.25% 0.5% 0.75% 1% 1.25% 2 2.0025 2.0050 2.0075 2.0100 2.0125 4 4.0150 4.0301 4.0452 4.0604 4.0756 6 6.0376 6.0755 6.1136 6.1520 6.1907 8 8.0704 8.1414 8.2132 8.2857 8.3589 10 10.1133 10.2280 10.3443 10.4622 10.5817 Simone deposits $1000 into a savings account at the end of each year for 8 years. The interest rate for these 8 years is 0.75% per annum, compounded annually. After the 8th deposit, Simone stops making deposits but leaves the money in the savings account. The money in her savings account then ea
+
+### ma2021q26 [5m]
+2021 HSC Mathematics Advanced: A particle is shot vertically upwards from a point 100 metres above ground level. The position of the particle, y metres above the ground after t seconds, is given by y ( t ) = −5 t 2 + 70 t + 100. (a) Find the maximum height above ground level reached by the particle. 2 (b) Find the velocity of the particle, in metres per second, immediately before it hits the ground, leaving your answer in the form a b , where a and b are integers. 3 Questions 11–26 are worth 50 marks in total 9566310369
+
+### ma2021q27 [8m]
+2021 HSC Mathematics Advanced: Kenzo has a solar powered phone charger. Its power, P, can be modelled by the function p P ( t ) = 400 sin t , 0 ≤ t ≤ 12 , 12 where t is the number of hours after sunrise. (a) Sketch the graph of P for 0 ≤ t ≤ 12 . 2 Power is the rate of change of energy. Hence the amount of energy, E units, generated by the solar powered phone charger from t = a to t = b, where 0 ≤ a ≤ b ≤ 12 is given by ⌠ b E = ⎮P t( )dt . ⌡a 4800 a p b p (b) Show that E = cos − cos . p 12 12 2 Question 27 continues on page 25 0008310361 Question 27 (continued) (c) To make a phone call, a phone battery needs at least 300 units of energy. Kenzo woke up 3 hours after sunrise and found that his
+
+### ma2021q28 [6m]
+2021 HSC Mathematics Advanced: The region bounded by the graph of the function â ( x ) = 8 − 2 x and the coordinate axes is shown. G r a p h 7 (a) Show that the exact area of the shaded region is given by 24 − . ln 2 3 Question 28 continues on page 27 2306310364 Question 28 (continued) (b) A new function g ( x ) is found by taking the graph of y = −â ( −x ) and translating it by 5 units to the right. Sketch the graph of y = g ( x ) showing the x-intercept and the asymptote. 5 2 ⌠ (c) Hence, find the exact value of ⎮g x ( )dx . ⌡2 1 End of Question 28 Proceed to Booklet 2 for Questions 29−34 2770310369 Section II extra writing space If you use this space, clearly indicate which question you a
+
+### ma2021q29 [5m]
+2021 HSC Mathematics Advanced: (a) On the day that Megan was born, her grandfather deposited $5000 into an account earning 3% per annum compounded annually. On each birthday after this, her grandfather deposited $1000 into the same account, making his final deposit on Megan’s 17th birthday. That is, a total of 18 deposits were made. Let A be the amount in the account on Megan’s n n th birthday, after the deposit is made. Show that A = $8554.54 . 3 2 Question 29 continues on page 31 8668310293 Question 29 (continued) (b) On her 17th birthday, just after the final deposit is made, Megan has $30 025.83 in her account. You are NOT required to show this. Megan then decides to leave all the money 
+
+### ma2021q30 [2m]
+2021 HSC Mathematics Advanced: The number of hours for which light bulbs will work before failing can be modelled by the random variable X with cumulative distribution function ⎧⎪1− − e 0.01x, x ≥0 F x ( ) = ⎨ . 0, x < 0 ⎩⎪ Jane sells light bulbs and promises that they will work for longer than exactly 99% of all light bulbs. Find how long, according to Jane’s promise, a light bulb bought from her should work. Give your answer in hours, rounded to two decimal places. 2 8839310293
+
+### ma2021q31 [4m]
+2021 HSC Mathematics Advanced: By considering the equation of the tangent to y = x 2 − 1 at the point (a, a 2 − 1), find the equations of the two tangents to y = x 2 − 1 which pass through (3, −8). 4 2984310298
+
+### ma2021q32 [4m]
+2021 HSC Mathematics Advanced: In a particular city, the heights of adult females and the heights of adult males are each normally distributed. Information relating to two females from that city is given in Table 1. 4 Table 1 Height Gender Percentage of females in this city shorter than this person 175 cm Female 97.5% 160.6 cm Female 16% The means and standard deviations of adult females and males, in centimetres, are given in Table 2. Table 2 Mean Standard deviation Females m s Males 1.05 m 1.1 s A selected male is taller than 84% of the population of adult males in this city. By first labelling the normal distribution curve below with the heights of the two females given in Table 1, calcul
+
+### ma2021q33 [8m]
+2021 HSC Mathematics Advanced: People are given a maximum of six hours to complete a puzzle. The time spent on the puzzle, in hours, can be modelled using the continuous random variable X which has probability density function ⎧ Ax ⎪ , for 0 ≤x ≤6, (where A > 0) ƒ ( ) x = ⎨x2 + 4 . ⎪ ⎩ 0, for all other values of x The graph of the probability density function is shown below. The graph has a local maximum. G r a p h 2 (a) Show that A = . ln 10 2 Question 33 continues on page 36 7407310293 Question 33 (continued) (b) Show that the mode of X is two hours. 2 (c) Show that P(X < 2) = log10 2. 2 Question 33 continues on page 37 4957310290 Question 33 (continued) (d) The Intelligence Quotient (IQ) 
+
+### ma2021q34 [3m]
+2021 HSC Mathematics Advanced: A discrete random variable has probability distribution as shown in the table where n is a finite positive integer. 3 x r r 2 r 3 . . . r k . . . r n P (X = x ) r n r n −1 r n − 2 . . . r n – k + 1 . . . r Show that E ( X ) = n ( 2r − 1). End of paper 5461310291 Section II extra writing space If you use this space, clearly indicate which question you are answering. 9410310299 Section II extra writing space If you use this space, clearly indicate which question you are answering. © 2021 NSW Education Standards Authority 1261 NSW Education Standards Authority 2021 HIGHER SCHOOL CERTIFICATE EXAMINATION Mathematics Advanced Mathematics Extension 1 Mathematics Exten
+
+### ma2022q11 [3m]
+2022 HSC Mathematics Advanced: The table shows the types of customer complaints received by an online business in a month. Type of complaint Frequency Cumulative Cumulative frequency percentage Stock shortage 98 98 49 Delivery fee 62 A 80 Delivery time 24 184 92 Damaged item 8 192 B Returns policy 6 198 99 Product information 2 200 100 Total 200 (a) What are the values of A and B? 2 (b) The data from the table are shown in the following Pareto chart. 1 Graph 100% 90% 100 80% 70% y 80 Frequenc 60% 60 50% e percentage v 40% 40 30% 20% 20 Cumulati 10% 0 0% Stock Delivery Delivery Damaged Returns Product shortage fee time item policy information Type of complaint The manager will address 80% of 
+
+### ma2022q12 [4m]
+2022 HSC Mathematics Advanced: A student believes that the time it takes for an ice cube to melt (M minutes) varies inversely with the room temperature (T °C). The student observes that at a room temperature of 15°C it takes 12 minutes for an ice cube to melt. (a) Find the equation relating M and T. 2 (b) By first completing this table of values, graph the relationship between temperature and time from T = 5°C to T = 30°C. T 5 15 30 M 2 Office Use Only – Do NOT write anything, or make any marks below this line. 0398310420 40 30 minutes) 20 M ime ( T 10 0 0 10 20 30 40 Temperature (T°C)
+
+### ma2022q13 [2m]
+2022 HSC Mathematics Advanced: Use two applications of the trapezoidal rule to find an approximate 2 value of 1 + x2 dx . Give your answer correct to 2 decimal places. 0 2
+
+### ma2022q14 [2m]
+2022 HSC Mathematics Advanced: The graph of y = k sin ( a x ) is shown. 2 y 4 2 x –8p –6p –4p –2p 2p 4p 6p 8p What are the values of k and a?
+
+### ma2022q15 [2m]
+2022 HSC Mathematics Advanced: Question 15 (2 marks), Section II, 2022 HSC Mathematics Advanced.
+
+### ma2022q16 [3m]
+2022 HSC Mathematics Advanced: A s
+
+### ma2022q17 [5m]
+2022 HSC Mathematics Advanced: Cards are stacked to build a ‘house of cards’. A house of cards with 3 rows is shown. house of cards requires 3 cards in the top row, 6 cards in the next row, and each uccessive row has 3 more cards than the previous row. (a) Show that a house of cards with 12 rows has a total of 234 cards. 2 (b) Another house of cards has a total of 828 cards. How many rows are in this house of cards? 3 Office Use Only – Do NOT write anything, or make any marks below this line. 6982310425
+
+### ma2022q18 [3m]
+2022 HSC Mathematics Advanced: 4 (a) Differentiate y = ( x2 + 1) . 2 ( 3 (b) Hence, or otherwise, find x x2 + 1) dx . 1
+
+### ma2022q19 [3m]
+2022 HSC Mathematics Advanced: The graph of the function â ( x ) = x 2 is translated m units to the right, dilated vertically y a scale factor of k and then translated 5 units down. The equation of the transformed unction is g ( x ) = 3x 2 − 12x + 7. ind the values of m and k. 3 b f F
+
+### ma2022q20 [4m]
+2022 HSC Mathematics Advanced: A scientist is studying the growth of bacteria. The scientist models the number of bacteria, N, by the equation N( t ) = 200e 0.013t, where t is the number of hours after starting the experiment. (a) What is the initial number of bacteria in the experiment? 1 (b) What is the number of bacteria 24 hours after starting the experiment? 1 (c) What is the rate of increase in the number of bacteria 24 hours after starting the experiment? 2 Office Use Only – Do NOT write anything, or make any marks below this line. 8039310420
+
+### ma2022q21 [4m]
+2022 HSC Mathematics Advanced: Eli is choosing between two investment options. Option 1: Depositing a single amount of $40 000 today, earning interest of 1.2% per annum, compounded monthly. Option 2: Depositing $1000 at the end of each quarter, earning interest of 2.4% per annum, compounded quarterly. A table of future value interest factors for an annuity of $1 is shown. N r Interest rate per period as a decimal 0.002 0.006 0.020 0.024 0.060 0.240 10 10.09048 10.27437 10.94972 11.15211 13.18079 31.64344 20 20.38460 21.18211 24.29737 25.28909 36.78559 303.60062 30 30.88646 32.76227 40.56808 43.20983 79.05819 2640.91639 40 41.60026 45.05630 60.40198 65.92708 154.76197 22 728.80260 (a) What is
+
+### ma2022q22 [4m]
+2022 HSC Mathematics Advanced: Office Use Only – Do NOT write anything, or make any marks below this line. 2248310426 Find the global maximum and minimum values of y = x3 − 6x2 + 8, where −1 ≤ x ≤ 7. 4 Please turn over
+
+### ma2022q23 [6m]
+2022 HSC Mathematics Advanced: The depth of water in a bay rises and falls with the tide. On a particular day the depth of the water, d metres, can be modelled by the equation 4p d = 1.3 − 0.6 cos t , 25 where t is the time in hours since low tide. (a) Find the depth of water at low tide and at high tide. 2 (b) What is the time interval, in hours, between two successive low tides? 1 (c) For how long between successive low tides will the depth of water be at least 1 metre? 3 Questions 11–23 are worth 45 marks in total
+
+### ma2022q24 [4m]
+2022 HSC Mathematics Advanced: Office Use Only – Do NOT write anything, or make any marks below this line. 6077310420 Jo is researching the relationship between the ages of teenage characters in television series and the ages of actors playing these characters. After collecting the data, Jo finds that the correlation coefficient is 0.4564 . A scatterplot showing the data is drawn. The line of best fit with equation y = −7.51 + 1.85 x , is also drawn. 4 34 years) 30 26 y Age of actor ( 22 18 14 12 14 16 18 20 Age of character (x years) Describe and interpret the data and other information provided, with reference to the context given.
+
+### ma2022q25 [3m]
+2022 HSC Mathematics Advanced: Let â x = sin 2x . Find the value of x, for 0 < x < p , for which â ′( x ) = − 3 AND â ″( x ) = 2. ( ) ( ) 3
+
+### ma2022q26 [3m]
+2022 HSC Mathematics Advanced: Office Use Only – Do NOT write anything, or make any marks below this line. 6048310428 The life span of batteries from a particular factory is normally distributed with a mean of 840 hours and a standard deviation of 80 hours. It is known from statistical tables that for this distribution approximately 60% of the batteries have a life span of less than 860 hours. What is the approximate percentage of batteries with a life span between 820 and 920 hours? 3 Please turn over
+
+### ma2022q27 [7m]
+2022 HSC Mathematics Advanced: Let â ( x ) = x e−2x . It is given that â ′( x ) = e−2x − 2x e−2x . (a) Show that â ″( x ) = 4( x − 1) e−2x . 2 (b) Find any stationary points of â ( x ) and determine their nature. 2 Question 27 continues on page 25 Question 27 (continued) (c) Sketch the curve y = xe −2x , showing any stationary points, points of inflection and intercepts with the axes. Office Use Only – Do NOT write anything, or make any marks below this line. 0600310426 3 End of Question 27
+
+### ma2022q28 [7m]
+2022 HSC Mathematics Advanced: The graph of the circle x2 + y 2 = 2 is shown. The interval connecting the origin, O, and the point (1, 1) makes an angle q with the positive x-axis. G r aph q (1, 1) y x2 + y2 = 2 NOT TO SCALE O x (a) By considering the value of q, find the exact area of the shaded region, as show on the diagram. n 2 Question 28 continues on page 27 Question 28 (continued) a Part of the hyperbola y = − 1 which passes through the points (0, 0) and (1, 1) b − x is drawn with the circle x2 + y2 = 2 as shown. Office Use Only – Do NOT write anything, or make any marks below this line. 5460310425 y a y = − 1 b − x x2 + y2 = 2 (1, 1) NOT TO SCALE O x (b) Show that a = b = 2 . 2 (c) U
+
+### ma2022q29 [5m]
+2022 HSC Mathematics Advanced: (a) The diagram shows the graph of y = 2 x. Also shown on the diagram are the first 5 of an infinite number of rectangular strips of width 1 unit and height y = 2−x for non-negative integer values of x. For example, the second rectangle 1 shown has width 1 and height . 2 1 − y Graph The sum of the areas of the rectangles forms a geometric se Show that the limiting sum of this series is 2. ries. 4 15 (b) Show that 2−x dx = . 2 16 ln 2 0 Question 29 continues on page 29 Question 29 (continued) (c) Use parts (a) and (b) to show that e15 < 232 . 2
+
+### ma2022q30 [3m]
+2022 HSC Mathematics Advanced: 1 x > e 3 1 F ( x ) = ln x 1 ≤ x ≤ e 3 . k 0 x < 1 (a) Show that k = 3. 1 A continuous random variable X has cumulative distribution function given by (b) Given that P(X < c) = 2P(X > c) , find the exact value of c. 2
+
+### ma2022q31 [6m]
+2022 HSC Mathematics Advanced: A line passes through the point P 1, 2 and meets the axes at X (x, 0) and Y (0, y), where x > 1. Gr aph 2x (a) Show that y = . 2 x − 1 Question 31 (continued) (b) Find the minimum value of the area of triangle XOY. 4
+
+### ma2022q32 [7m]
+2022 HSC Mathematics Advanced: Question 32 (continued) (b) After 100 repayments of $1381.16 have been made, the interest rate changes to 0.35% per month. (Do NOT At this stage, the amount owing to the nearest dollar is $100 032. prove this.) Jane continues to make the same monthly repayments. For how many more months will Jane need to make full monthly payments of $1381.16? 3 (c) The final repayment will be less than $1381.16 . How much will Jane need to pay in the final payment in order to pay off the loan? 2 End of paper © 2022 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. 4543310426 NSW Education Standards Authority 2022 HIGH
+
+### ma2023q11 [2m]
+2023 HSC Mathematics Advanced: The first three terms of an arithmetic sequence are 3, 7 and 11. Find the 15th term. 2
+
+### ma2023q12 [3m]
+2023 HSC Mathematics Advanced: The table shows the probability distribution of a discrete random variable. x 0 1 2 3 4 P(X = x) 0 0.3 0.5 0.1 0.1 (a) Show that the expected value E(X ) = 2. 1 (b) Calculate the standard deviation, correct to one decimal place. 2 Office Use Only – Do NOT write anything, or make any marks below this line. 7450310437
+
+### ma2023q13 [2m]
+2023 HSC Mathematics Advanced: d P Let P ( t ) be a function such that = 3000e2t. d t When t = 0, P = 4000. Find an expression for P ( t ). 2
+
+### ma2023q14 [3m]
+2023 HSC Mathematics Advanced: Find the equation of the tangent to the curve y = (2 x + 1)3 at the point (0, 1). 3
+
+### ma2023q15 [5m]
+2023 HSC Mathematics Advanced: A table of future value interest factors for an annuity of $1 is shown. Period Rate 1.5% 3% 4.5% 6% 5 5.152 5.309 5.471 5.637 10 10.703 11.464 12.288 13.181 20 23.124 26.870 31.371 36.786 40 54.268 75.401 107.030 154.762 (a) Micky wants to save $450 000 over the next 10 years. If the interest rate is 6% per annum compounding annually, how much should Micky contribute each year? Give your answer to the nearest dollar. 2 (b) Instead, Micky decides to contribute $8535 every three months for 10 years to an annuity paying 6% per annum, compounding quarterly. How much will Micky have at the end of 10 years? 3 Office Use Only – Do NOT write anything, or make any marks
+
+### ma2023q16 [4m]
+2023 HSC Mathematics Advanced: The diagram shows a shape APQBCD. The shape consists of a rectangle ABCD with an arc PQ on side AB and with side lengths BC = 3.6 m and CD = 8.0 m. The arc PQ is an arc of a circle with centre O and radius 2.1 m and ∠POQ = 110°. 4 P Q A B 110° 2.1 m NOT TO SCALE O 3.6 m D C 8.0 m What is the perimeter of the shape APQBCD? Give your answer correct to one decimal place.
+
+### ma2023q17 [2m]
+2023 HSC Mathematics Advanced: Find x x2 + 1 dx . 2 Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. 7717310433
+
+### ma2023q18 [6m]
+2023 HSC Mathematics Advanced: A university uses gas to heat its buildings. Over a period of 10 weekdays during winter, the gas used each day was measured in megawatts (MW) and the average outside temperature each day was recorded in degrees Celsius (°C). Using x as the average daily outside temperature and y as the total daily gas usage, the equation of the least-squares regression line was found. The equation of the regression line predicts that when the temperature is 0°C, the daily gas usage is 236 MW. The ten temperatures measured were: 0°, 0°, 0°, 2°, 5°, 7°, 8°, 9°, 9°, 10°. The total gas usage for the ten weekdays was 1840 MW. In any bivariate dataset, the least-squares regression li
+
+### ma2023q19 [4m]
+2023 HSC Mathematics Advanced: (a) Sketch the graphs of the functions ƒ ( x ) = x − 1 and g ( x ) = (1 − x )(3 + x ) showing the x-intercepts. 2 y O x (b) Hence, or otherwise, solve the inequality x − 1 < (1 − x )(3 + x ). 2
+
+### ma2023q20 [3m]
+2023 HSC Mathematics Advanced: Find all the values of q, where 0° ≤ q ≤ 360°, such that 3 sin (q − 60°) = − . 2 3 Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. 9635310434
+
+### ma2023q21 [3m]
+2023 HSC Mathematics Advanced: The fourth term of a geometric sequence is 48. 3 The eighth term of the same sequence is . 16 Find the possible value(s) of the common ratio and the corresponding first term(s). 3
+
+### ma2023q22 [3m]
+2023 HSC Mathematics Advanced: In the rectangular prism shown, AD = 7 cm, AE = 8 cm, EF = 6 cm. Point M is the midpoint of CD. 3 M D B C 7 A NOT TO SCALE 8 G E F 6 Find ∠ AEM, to the nearest degree. Office Use Only – Do NOT write anything, or make any marks below this line. 8534310431
+
+### ma2023q23 [4m]
+2023 HSC Mathematics Advanced: A random variable is normally distributed with a mean of 0 and a standard deviation of 1. The table gives the probability that this random variable lies below z for some positive values of z. 4 z 1.30 1.31 1.32 1.33 1.34 1.35 1.36 1.37 1.38 1.39 Probability 0.9032 0.9049 0.9066 0.9082 0.9099 0.9115 0.9131 0.9147 0.9162 0.9177 The probability values given in the table are represented by the shaded area in the following diagram. z The weights of adult male koalas form a normal distribution with mean m = 10.40 kg, and standard deviation s = 1.15 kg. In a group of 400 adult male koalas, how many would be expected to weigh more than 11.93 kg? Questions 11–23 are wor
+
+### ma2023q24 [5m]
+2023 HSC Mathematics Advanced: A gardener wants to build a rectangular garden of area 50 m2 against an existing wall as shown in the diagram. A concrete path of width 1 metre is to be built around the other three sides of the garden. 1 m 1 m Existing wall y m 1 m Garden Area 50 m2 x m Let x and y be the dimensions, in metres, of the outer rectangle as shown. 50 (a) Show that y = + 1 . x − 2 1 Question 24 continues on page 25 Question 24 (continued) (b) Find the value of x such that the area of the concrete path is a minimum. Show that your answer gives a minimum area. 4 End of Question 24 Office Use Only – Do NOT write anything, or make any marks below this line. 2191310434
+
+### ma2023q25 [6m]
+2023 HSC Mathematics Advanced: On the first day of November, Jia deposits $10 000 into a new account which earns 0.4% interest per month, compounded monthly. At the end of each month, after the interest is added to the account, Jia intends to withdraw $M from the account. Let A be the amount (in dollars) in Jia’s account at the end of n months. n (a) Show that A = 10 000 2 (1.004)2 − M(1.004) − M. 1 (b) Show that A = n (10 000 − 250M )(1.004)n + 250M. 3 Question 25 continues on page 27 Question 25 (continued) (c) Jia wants to be able to make at least 100 withdrawals. What is the largest value of M that will enable Jia to do this? 2 End of Question 25 Please turn over Office Use Only – Do NOT
+
+### ma2023q26 [4m]
+2023 HSC Mathematics Advanced: A camera films the motion of a swing in a park. Let x ( t ) be the horizontal distance, in metres, from the camera to the seat of the swing at t seconds. The seat is released from rest at a horizontal distance of 11.2 m from the camera. (a) The rate of change of x can be modelled by the equation d x 5p = −1.5p sin t . d t 4 Find an expression for x ( t ). 2 (b) How many times does the swing reach the closest point to the camera during the first 10 seconds? 2
+
+### ma2023q27 [5m]
+2023 HSC Mathematics Advanced: The graph of y = ƒ ( x ), where ƒ ( x ) = a | x − b | + c, passes through the points (3, −5), (6, 7) and (9, −5) as shown in the diagram. y (6, 7) O x (3, −5) (9, −5) (a) Find the values of a, b and c. 3 (b) The line y = m x cuts the graph of y = ƒ ( x ) in two distinct places. Find all possible values of m. 2 Office Use Only – Do NOT write anything, or make any marks below this line. 5892310435
+
+### ma2023q28 [4m]
+2023 HSC Mathematics Advanced: The curve y = ƒ ( x ) is shown on the diagram. The equation of the tangent to the curve at point T (−1, 6) is y = x + 7. At a point R, another tangent parallel to the tangent at T is drawn. 4 y y = â ( x ) y = x + 7 T x R NOT TO SCALE O dy The gradient function of the curve is given by = 3x2 − 6x − 8. dx Find the coordinates of R.
+
+### ma2023q29 [6m]
+2023 HSC Mathematics Advanced: A continuous random variable X has probability density function ƒ ( x ) given by 12x2 (1 − x), for 0 ≤ x ≤ 1 ƒ ( x ) = . 0, for all other values of x (a) Find the mode of X. 2 (b) Find the cumulative distribution function for the given probability density function. 2 (c) Without calculating the median, show that the mode is greater than the median. 2 Office Use Only – Do NOT write anything, or make any marks below this line. 6068310431
+
+### ma2023q30 [5m]
+2023 HSC Mathematics Advanced: Let ƒ ( x ) = e−x sin x . (a) Find the coordinates of the stationary points of ƒ ( x ) for 0 ≤ x ≤ 2p. You do NOT need to check the nature of the stationary points. 3 Question 30 continues on page 33 Question 30 (continued) (b) Without using any further calculus, sketch the graph of y = ƒ ( x ), for 0 ≤ x ≤ 2p, showing stationary points and intercepts. 2 y x End of Question 30 Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. 9911310431
+
+### ma2023q31 [5m]
+2023 HSC Mathematics Advanced: Four Year 12 students want to organise a graduation party. All four students have the same probability, P(F ), of being available next Friday. All four students have the same probability, P(S ), of being available next Saturday. 3 1 1 It is given that P(F ) = , P(S |F ) = , and P(F |S ) = . 10 3 8 Kim is one of the four students. (a) Is Kim’s availability next Friday independent from his availability next Saturday? Justify your answer. 1 4 (b) Show that the probability that Kim is available next Saturday is . 5 2 Question 31 continues on page 35 Question 31 (continued) (c) What is the probability that at least one of the four students is NOT available next Satu
+
+### ma2023q32 [6m]
+2023 HSC Mathematics Advanced: The curves y = e−2x 1 and y = e−x − intersect at exactly one point as shown in the 4 1 diagram. The point of intersection has coordinates ln 2, . (Do NOT prove this.) 4 O y = e−2x y = e−x − 4 1 ln 2, 1 4 y x (a) Show that the area bounded by the two curves and the y-axis, as shaded in the 1 1 diagram, is ln 2 − . 4 8 3 Question 32 continues on page 37 Question 32 (continued) (b) Find the values of k such that the curves y = e−2x and y = e−x + k intersect at two points. 3 End of paper © 2023 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. 6054310436 NSW Education Standards Authority 2023 HIGHER SCHOOL
+
+### ma2024q11 [3m]
+2024 HSC Mathematics Advanced: The graph of the function g ]xg is shown. 3 y y = g^xh x 1 2 3 4 5 Using the graph, complete the table with the words positive, zero or negative as appropriate. x-value First derivative of g ]xg at x Second derivative of g ]xg at x x = -3 x = 1 x = 5 4619310431
+
+### ma2024q12 [3m]
+2024 HSC Mathematics Advanced: Find the sum of the terms in the arithmetic series 3 50 + 57 + 64 + g + 2024. 6368310434
+
+### ma2024q13 [3m]
+2024 HSC Mathematics Advanced: The graph shows the populations of two different animals, W and K, in a conservation park over time. The y-axis is the size of the population and the x-axis is the number of years since 1985. Population W is modelled by the equation y = A # ^1.055hx. Population K is modelled by the equation y = B # 0.97 x. ^ h 3 10 0 50 100 150 200 250 300 350 400 y 0 Population 20 Number of years since 1985 30 40 50 55 x 5 15 25 35 45 Complete the table using the information provided. Population W Population K Population in 1985 A = 34 B = Percentage yearly change in the population Predicted population when x = 50 61 8840310431
+
+### ma2024q14 [4m]
+2024 HSC Mathematics Advanced: The curves y = ^x - 1h2 and y = 5 - x2 intersect at two points, as shown in the diagram. x O y NOT TO SCALE (a) Find the x-coordinates of the points of intersection of the two curves. 1 (b) Find the area enclosed by the two curves. 3 7717310433
+
+### ma2024q15 [3m]
+2024 HSC Mathematics Advanced: Initially there are 350 litres of water in a tank. Water starts flowing into the tank. dV The rate of increase of the volume V of water in litres is given by = 300 - 7. 5t , dt where t is the time in hours. dV Find the volume of water in the tank when = 0. dt 3 0669310432
+
+### ma2024q16 [3m]
+2024 HSC Mathematics Advanced: Flowers were planted in two gardens (Garden A and Garden B). On a particular day, 25 flowers were randomly selected from each garden and their heights measured in millimetres. The data are represented in parallel box-plots. 3 140 Garden A 145 150 155 160 165 170 175 180 185 Garden B Compare the two datasets by examining the skewness of the distributions, and the measures of central tendency and spread. 8973310438
+
+### ma2024q17 [6m]
+2024 HSC Mathematics Advanced: In a particular electrical circuit, the voltage V (volts) across a capacitor is given by V ^th = 6.5_1 - e– k t i, where k is a positive constant and t is the number of seconds after the circuit is switched on. (a) Draw a sketch of the graph of V ^th, showing its behaviour as t increases. 2 (b) When t = 1, the voltage across the capacitor is 2.6 volts. Find the value of k, correct to 3 decimal places. 2 (c) Find the rate at which the voltage is increasing when t = 2, correct to 3 decimal places. 2 7413310436
+
+### ma2024q18 [3m]
+2024 HSC Mathematics Advanced: In a game, the probability that a particular player scores a goal at each attempt is 0.15 . (a) What is the probability that this player does NOT score a goal in the first two attempts? 1 (b) Determine the least number of attempts that this player must make so that the probability of scoring at least one goal is greater than 0.8 . 2 9635310434
+
+### ma2024q19 [5m]
+2024 HSC Mathematics Advanced: Sketch the curve y = x 4 - 2 x 3 + 2 by first finding all stationary points, checking their nature, and finding the points of inflection. 5 9643310433
+
+### ma2024q20 [4m]
+2024 HSC Mathematics Advanced: A vertical tower TC is 40 metres high. The point A is due east of the base of the tower C. The angle of elevation to the top T of the tower from A is 35°. A second point B is on a different bearing from the tower as shown. The angle of elevation to the top of the tower from B is 30°. The points A and B are 100 metres apart. 35° NOT TO SCALE 100 m 30° 40 m A C B T (a) Show that distance AC is 57.13 metres, correct to 2 decimal places. 1 (b) Find the bearing of B from C to the nearest degree. 3 8534310431
+
+### ma2024q21 [3m]
+2024 HSC Mathematics Advanced: A researcher is studying anacondas (a type of snake). A dataset recording the age (in years) and length (in cm) of female and male anacondas is displayed on the graph. Anacondas reach maturity at about 4 years of age. 3 2 0 50 100 150 200 250 300 350 400 450 y 0 Length (cm) 4 Age (years) 6 8 10 x 1 3 5 7 9 Female KEY Male Write THREE observations about anacondas that may be made from the scatterplot. (Note: No calculations are required.) 1724310435
+
+### ma2024q22 [6m]
+2024 HSC Mathematics Advanced: The graph of the function f x = ln 1 + x 2 is shown. ^ h _ i 0.5 1 –0.5 x O 0.5 1 y (a) Prove that f x is concave up for -1 < x < 1. ^ h 3 Question 22 continues on page 23 4664310431 Question 22 (continued) (b) A table of function values, correct to 4 decimal places, for some x values is provided. 2 x 0 0.25 0.5 0.75 1 2 ln _1 + x i 0 0.0606 0.2231 0.4463 0.6931 Using the function values provided and the trapezoidal rule, estimate the shaded area in the diagram. (c) Is the answer to part (b) an overestimate or underestimate? Give a reason for your answer. 1 End of Question 22 Questions 11–22 are worth 46 marks in total 1354310434
+
+### ma2024q23 [5m]
+2024 HSC Mathematics Advanced: A random variable is normally distributed with mean 0 and standard deviation 1. The table gives the probability that this random variable is less than z. z 0.6 0.7 0.8 0.9 1.0 1.1 1.2 1.3 1.4 Probability 0.7257 0.7580 0.7881 0.8159 0.8413 0.8643 0.8849 0.9032 0.9192 The probability values given in the table for different values of z are represented by the shaded area in the following diagram. 0 z The scores in a university examination with a large number of candidates are normally distributed with mean 58 and standard deviation 15. (a) By calculating a z-score, find the percentage of scores that are between 58 and 70. 2 (b) Explain why the percentage of scores 
+
+### ma2024q24 [4m]
+2024 HSC Mathematics Advanced: Jack intends to deposit $80 into a savings account on the first day of each month for 24 months. The interest rate during this time is 6% per annum, compounded monthly. (a) Calculate how much money Jack will have in his account at the end of the 24 months. 3 (b) A table of future value interest factors could have been used to calculate how much money Jack would have in his account at the end of the 24 months. Part of the table is shown. Table of future value interest factors for an annuity of $1 1 Number of Interest rate per period periods 0.5% 24 A What is the value of A in the table? Give your answer correct to 3 decimal places. 6559310436
+
+### ma2024q25 [6m]
+2024 HSC Mathematics Advanced: A function f ^xh is defined as f ^xh = 0, for x < 0 1 - x h, for 0 # x # h 0, for x > h , where h is a constant. (a) Find the value of h such that f ^xh is a probability density function. 2 (b) By first finding a formula for the cumulative distribution function, sketch its graph. 2 Question 25 continues on page 27 3620310432 Question 25 (continued) (c) Find the value of the median of the probability density function f x . Give your answer correct to 3 decimal places. ^ h 2 End of Question 25 Please turn over 8699310433
+
+### ma2024q26 [4m]
+2024 HSC Mathematics Advanced: Twenty-five years ago, Phoenix deposited a single sum of money into a new bank account, earning 2.4% interest per annum compounding monthly. Present value interest factors for an annuity of $1 for various interest rates (r) and numbers of periods (n) are given in the table. 4 Rate Period (r) 0.001 0.002 0.003 0.004 (n) 60 58.207 56.487 54.835 53.249 120 113.026 106.592 100.649 95.156 180 164.655 151.036 138.927 128.137 240 213.278 190.460 170.908 154.093 300 259.071 225.430 197.627 174.521 Phoenix made the following withdrawals from this account. • $2000 at the end of each month for the first 15 years, starting at the end of the first month. • $1200 at the end 
+
+### ma2024q27 [5m]
+2024 HSC Mathematics Advanced: (a) Find the derivative of x 2 tan x. 2 (b) Hence, find ^x tan x + 1h2 dx . 3 Please turn over 1902310433
+
+### ma2024q28 [7m]
+2024 HSC Mathematics Advanced: Anna is sitting in a carriage of a Ferris wheel which is revolving. The height, A t , in metres above the ground of the top of her carriage is given by ^ h pt A ^th = c - k cos d n, 24 where t is the time in seconds after Anna’s carriage first reaches the bottom of its revolution and c and k are constants. NOT TO SCALE The top of each carriage reaches a greatest height of 39 metres and a smallest height of 3 metres. (a) Find the value of c and k. 2 (b) How many seconds does it take for one complete revolution of the Ferris wheel? 1 Question 28 continues on page 31 6068310431 Question 28 (continued) (c) Billie is in another carriage. The height, B t , in metres 
+
+### ma2024q29 [4m]
+2024 HSC Mathematics Advanced: Consider the curve y ax bx + c, where a 0. At a particular point, the tangent and normal to the curve are given by t ^xh = 2x + 3 1 and n ^xh = - x - 2 respectively. 2 The curve has a minimum turning point at x = -4. Find the values of a, b and c. = 2 + ! 4 9911310431
+
+### ma2024q30 [3m]
+2024 HSC Mathematics Advanced: Suppose the geometric series x + x 2 + x 3 + g has a limiting sum, S. 1 By considering the graph y = -1 - , or otherwise, find the range of possible x - 1 values of S. 3 0014310436
+
+### ma2024q31 [6m]
+2024 HSC Mathematics Advanced: Two circles have the same centre O. The smaller circle has radius 1 cm, while the larger circle has radius 1 + x cm. The circles enclose a region QRST, which is subtended by an angle q ^ h at O, as shaded. The area of QRST is A cm2, where A is a constant and A > 0. O q T S Q R x 1 Let P cm be the perimeter of QRST. (a) By finding expressions for the area and perimeter of QRST, show that P ^xh 2A = 2 x + . x 3 Question 31 continues on page 35 3419310438 Question 31 (continued) (b) Show that if the perimeter, P ^xh, is minimised, then q must be less than 2. 3 End of paper 7561310430 Section II extra writing space If you use this space, clearly indicate which ques
+
+### ma2025q11 [3m]
+2025 HSC Mathematics Advanced: The graph of a quadratic function represented by the equation h = t 2 − 8 t + 12 is shown. O 12 h t 2 6 (a) Find the values of t and h at the turning point of the graph. 2 (b) The graph shows h = 12 when t = 0. 1 What is the other value of t for which h = 12? 7450310437
+
+### ma2025q12 [3m]
+2025 HSC Mathematics Advanced: y = 5x 3 2 Find the equation of the tangent to − − 9 at the point (1, −6). x 2 3
+
+### ma2025q13 [2m]
+2025 HSC Mathematics Advanced: The numbers, 75, p, q, 2025, form a geometric sequence. 2 Find the values of p and q. 4619310431
+
+### ma2025q14 [6m]
+2025 HSC Mathematics Advanced: In a research study, participants were asked to record the number of minutes they spent watching television and the number of minutes they spent exercising each day over a period of 3 months. The averages for each participant were recorded and graphed. 10 0 20 30 Average minutes per day watching television Average minutes per day exercising 40 50 60 0 20 40 60 80 x y (a) Describe the bivariate dataset in terms of its form and direction. 2 Form: Direction: Question 14 continues on page 13 6368310434 Question 14 (continued) The equation of the least-squares regression line for this dataset is y = 64.3 − 0.7x. (b) Interpret the values of the slope and y-intercept 
+
+### ma2025q15 [6m]
+2025 HSC Mathematics Advanced: A sound wave can be modelled using a function P ( t ) = k sin a t, where P is air pressure in Pascals, t is time in milliseconds (ms) and k and a are constants. (a) Write the equation for a sound wave P1( t ) that has an amplitude of 2 Pascals and a period of 5 ms. 2 Question 15 continues on page 15 7717310433 Question 15 (continued) (b) The graph of P1( t ) from part (a) is shown. 2 p On the diagram, sketch the graph of P ( t ) = 4 sin t for 0 2 ≤ t ≤ 10. 10 P(t) t 1 2 3 4 5 6 7 8 9 10 −2 −4 4 2 O (c) Hence, find the values of t, where 0 < t < 10, for which functions P1( t ) and P2( t ) are BOTH decreasing. 2 End of Question 15 0669310432
+
+### ma2025q16 [5m]
+2025 HSC Mathematics Advanced: x 2 Consider the function ƒ( x ) = . ex (a) Find the stationary points of the function and determine their nature. 4 Question 16 continues on page 17 8973310438 Question 16 (continued) x 2 (b) A partially completed graph of ƒ( x ) = is shown. ex 1 Use your answer from part (a) to complete the graph. 1 O y 1 2 3 4 5 6 7 0.5 x End of Question 16 Please turn over 7413310436
+
+### ma2025q17 [7m]
+2025 HSC Mathematics Advanced: A borrower obtains a reducing-balance loan of $800 000 to buy a house. Interest is charged at 0.5% monthly, compounded monthly. On the last day of each month, interest is added to the balance owing on the loan and then the monthly repayment of $5740 is made. Let $A be the balance owing on the loan at the end of n months. n (a) Show that A 2 = 800 000 (1.005)2 − 5740 (1.005) − 5740. 2 Question 17 continues on page 19 9635310434 Question 17 (continued) (b) Show that A n = 1 148 000 − 348 000 (1.005)n. 3 (c) After how many months will the balance owing on the loan first be less than $400 000? 2 End of Question 17 9643310433
+
+### ma2025q18 [2m]
+2025 HSC Mathematics Advanced: 3 Find the range of g ( ƒ( x ) ), given ƒ( x ) = and g ( x ) = x + 5. x − 1 2
+
+### ma2025q19 [3m]
+2025 HSC Mathematics Advanced: Three girls, Amara, Bala and Cassie, have nominated themselves for the local soccer team. Exactly one of the girls will be selected. The chances of their selection are in the ratio 1 : 2 : 3, respectively. 3 The probability that the team wins when: • Amara is selected is 0.5 • Bala is selected is 0.4 • Cassie is selected is 0.2 . Given that the team wins, find the probability that Amara was selected. 8534310431
+
+### ma2025q20 [3m]
+2025 HSC Mathematics Advanced: The table shows future value interest factors for an annuity of $1. 3 Period (n) Rate (r) 0.005 0.01 0.015 0.02 0.03 0.06 7 7.10588 7.21354 7.32300 7.43428 7.66246 8.39384 28 29.97452 32.12910 34.48148 37.05121 42.93092 68.52811 56 64.44140 74.58098 86.79754 101.55826 141.15377 418.82235 84 104.07393 130.67227 166.17264 213.86661 365.88054 2209.41674 Lin invests a lump sum of $21 000 for 7 years at an interest rate of 6% per annum, compounding monthly. Yemi wants to achieve the same future value as Lin by using an annuity. Yemi plans to deposit a fixed amount into an investment account at the end of each month for 7 years. The investment account pays 6% per ann
+
+### ma2025q21 [5m]
+2025 HSC Mathematics Advanced: A continuous random variable X has a probability density function given by 0 x < 1 1 ƒ( x ) = 1 ≤ x ≤ e . x 0 x > e (a) Find the mode of the given probability density function. Justify your answer. 2 (b) Calculate the value of the 25th percentile (Q1) of this distribution. Give your answer correct to 3 decimal places. 3 4664310431
+
+### ma2025q22 [2m]
+2025 HSC Mathematics Advanced: Prove that sin4 q + cos4 q + 2 = sec2 q cosec2 q . sin2 q cos2 q 2 Questions 11–22 are worth 47 marks in total 1354310434
+
+### ma2025q23 [5m]
+2025 HSC Mathematics Advanced: (a) In a flock of 12 600 sheep, the ratio of males to females is 1 : 20. 4 The weights of the male sheep are normally distributed with a mean of 76.2 kg and a standard deviation of 6.8 kg. In the flock, 15 of the male sheep each weigh more than x kg. Find the value of x. (b) The weights of the female sheep are also normally distributed but have a smaller mean and smaller standard deviation than the weights of male sheep. 1 Explain whether it could be expected that 300 of the females from the flock each weigh more than x kg, where x is the value found in part (a). 2191310434
+
+### ma2025q24 [4m]
+2025 HSC Mathematics Advanced: The graphs of y = e ln x and y = a x 2 + c are shown. The line y = x is a tangent to both graphs at their point of intersection. 4 x y = x y = elnx y = ax2 + c y O Find the values of a and c. 6559310436
+
+### ma2025q25 [6m]
+2025 HSC Mathematics Advanced: (a) Show that 2 d (sin x − x cos x) = x sin x. dx 2025 p (b) Hence, find the value of x sin x dx . 0 2 Question 25 continues on page 27 3620310432 Question 25 (continued) (c) The regions bounded by the x-axis and the graph of y = x sin x for x ≥ 0 are shown. 2 y x p 2p 3p 4p O n p Let A = x sin x dx, where n is a positive integer. n (n − 1) p It can be shown that | A n | = (2 n − 1) p. (Do NOT prove this.) Find the exact total area of the regions bounded by the curve y = x sin x, and the x-axis between x = 0 and x = 2025 p. End of Question 25 8699310433
+
+### ma2025q26 [5m]
+2025 HSC Mathematics Advanced: A piece of wire is 100 cm long. Some of the wire is to be used to make a circle of radius r cm. The remainder of the wire is used to make an equilateral triangle of side length x cm. (a) Show that the combined area of the circle and equilateral triangle is given by 2 1 2 A( x ) = 3x 2 (100 − 3x) + . 4 p Question 26 continues on page 29 5892310435 Question 26 (continued) (b) By considering the quadratic function in part (a), show that the maximum value of A( x ) occurs when all the wire is used for the circle. 3 End of Question 26 1902310433
+
+### ma2025q27 [6m]
+2025 HSC Mathematics Advanced: x 1 The shaded region is bounded by the graph y = , the coordinate axes and x = 2. 2 1 1 2 x O y (a) Use two applications of the trapezoidal rule to estimate the area of the shaded region. 2 3 (b) Show that the exact area of the shaded region is . 4 ln 2 2 Question 27 continues on page 31 6068310431 Question 27 (continued) (c) Using your answers from part (a) and part (b), deduce e < 2 2. 2 End of Question 27 Please turn over 4194310439
+
+### ma2025q28 [4m]
+2025 HSC Mathematics Advanced: A farmer wants to use a straight fence to divide a circular paddock of radius 10 metres 1 into two segments. The smaller segment is of the paddock and is shaded in the 4 diagram. The fence subtends an angle of q radians at the centre of the circle as shown. q NOT TO SCALE 10 m p (a) Show that q = sin q + . 2 2 Question 28 continues on page 33 9911310431 Question 28 (continued) p (b) The graph of y = sin q + is shown. 2 2 O y 1 2 3 q 2 1 3 4 5 6 7 Use the graph and the result in part (a) to estimate the arc length of the smaller segment to the nearest metre. End of Question 28 0014310436
+
+### ma2025q29 [7m]
+2025 HSC Mathematics Advanced: The point T is the peak of a mountain and the point O is directly below the mountain’s peak. The point Y is due east of O and the angle of elevation of T from Y is 60°. The point F is 4 km south-west of Y. The points O, Y and F are on level ground. The angle of elevation of T from F is 45°. NOT TO SCALE 60° 4 km h Y O F T 45° (a) Let the height of the mountain be h. 1 h Show that OY = . 3 Question 29 continues on page 35 3419310438 Question 29 (continued) (b) Hence, or otherwise, find the value of h, correct to 2 decimal places. 3 (c) Find the bearing of point O from point F, correct to the nearest degree. 3 End of Question 29 7561310430
+
+### ma2025q30 [3m]
+2025 HSC Mathematics Advanced: The parabola with equation y = ( x − 1) ( x − 5) is translated both horizontally to the right and vertically up by k units, where k is positive. 3 The translated parabola passes through the point (6, 11). Find the value of k. 6393310432
+
+### ma2025q31 [3m]
+2025 HSC Mathematics Advanced: 1 The equation cos px = has 2 solutions where 0 ≤ x ≤ 2 p and p > 0. 2 3 Find all possible values of p. End of paper Office Use Only – Do NOT write anything, or make any marks below this line. 6054310436 © 2025 NSW Education Standards Authority Section II extra writing space If you use this space, clearly indicate which question you are answering. 2471 NSW Education Standards Authority 2025 HIGHER SCHOOL CERTIFICATE EXAMINATION Mathematics Advanced Mathematics Extension 1 Mathematics Extension 2 REFERENCE SHEET © 2025 NSW Education Standards Authority
+

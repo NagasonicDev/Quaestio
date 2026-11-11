@@ -1,0 +1,940 @@
+{
+ "course_id": "english-advanced",
+ "course_name": "English Advanced",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Understanding / The aesthetic qualities of quality texts and the power of language to express ideas and experiences"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Understanding / The relationship between reader, writer, text and context, and how and why texts position readers"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Understanding / The ways language features, text structures and stylistic choices shape ideas, perspectives and experiences in familiar and unfamiliar texts"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Understanding / The conventions of genre and the ways texts may conform to or subvert these conventions"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Responding / Compose persuasive, discursive, imaginative and reflective texts that experiment with language features and emerging textual forms"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Responding / Compose texts that explore a range of personal, social, historical and cultural meanings"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Responding / Use appropriate metalanguage and textual forms to reflect on the processes of writing"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Responding / Draft, edit, revise and refine texts for a range of audiences and purposes"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Reading to write: Transition to English Advanced / Responding / Use accurate spelling, punctuation, syntax and metalanguage in creating complex critical and creative texts"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Narratives that shape our world / Understanding / The ways personal, social, historical and cultural contexts can shape meaning"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Narratives that shape our world / Understanding / Mode, medium and form, and the ways they influence meaning and shape responses to texts"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Narratives that shape our world / Understanding / The ways authors adapt textual form, language features and structures of texts from a range of genres, periods and cultures in new texts, including through appropriation, intertextuality and literary allusion"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Narratives that shape our world / Understanding / The similarities and differences within and between texts linked by form, perspective or genre"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Narratives that shape our world / Responding / Compare specific uses of language in a range of textual forms"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Narratives that shape our world / Responding / Compare perspectives in texts from a range of personal, social, historical and cultural contexts"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Narratives that shape our world / Responding / Select and adapt particular aspects of texts to create new texts"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Narratives that shape our world / Responding / Compose critical and creative texts that synthesise complex ideas"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Narratives that shape our world / Responding / Use appropriate language to make connections between and speculate about texts, and to question, affirm and challenge texts with increasing clarity"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Critical study of literature / Understanding / The ways a text can be valued for its themes, aesthetic qualities and representation of ideas, values and attitudes"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Critical study of literature / Understanding / The ways particular texts are influenced by other texts and contexts"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Critical study of literature / Understanding / The ways a text may conform to or subvert conventions of form, genre or style"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Critical study of literature / Understanding / Language, style and form, and the ways they support interpretations of a text"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Critical study of literature / Understanding / The effect of language choices in a range of personal, social and cultural contexts, and how these choices can influence meaning"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Critical study of literature / Responding / Compose informed personal responses to texts, supported by critical perspectives and close textual analysis"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Critical study of literature / Responding / Compose sustained, structured arguments that synthesise complex ideas, using relevant textual evidence"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Critical study of literature / Responding / Compose texts that integrate elements of form, personal voice, language and content for a variety of audiences and purposes"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Critical study of literature / Responding / Use the language of analysis and literary criticism to shape their own interpretations of a complex text"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Texts and human experiences / Understanding / The language, forms and features of texts that shape meaning for different audiences and purposes in familiar and unfamiliar texts"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Texts and human experiences / Understanding / The language, forms and features of texts that shape a range of perspectives, personal and public worlds, and diverse human experiences"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Texts and human experiences / Understanding / The aesthetic qualities of texts and the power of language to express personal ideas and experiences"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Texts and human experiences / Understanding / Language used for making connections, questioning, affirming, challenging and speculating about texts"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Texts and human experiences / Understanding / The evaluative language and metalanguage used to make informed judgements about texts and express personal perspectives"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Texts and human experiences / Responding / Develop creative, informed and sustained interpretations of texts, supported by close textual analysis"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Texts and human experiences / Responding / Compose creative and critical texts that affirm or challenge ideas, values and perspectives represented in a range of texts"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Texts and human experiences / Responding / Compose texts using structures, language features and stylistic elements for specific audiences, to reinterpret ideas and perspectives"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Textual conversations / Understanding / The relationship between reader, author, text and context"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Textual conversations / Understanding / Text structures, including mode, medium, form, language features and stylistic elements, and the ways they shape meaning"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Textual conversations / Understanding / The influence of context and values on the perspectives and ideas in texts"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Textual conversations / Understanding / Theme, genre and aesthetic elements, and the ways they are used to represent personal and public worlds and influence responses"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Textual conversations / Understanding / The influence of historical and cultural context across a pair of texts"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Textual conversations / Understanding / The ways a comparative study creates a new understanding and appreciation of each text"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Textual conversations / Responding / Compose texts that explore text structures, language features and stylistic elements from different contexts to deepen understanding of how meaning is made"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Textual conversations / Responding / Compare and evaluate textual form and language features in a pair of texts"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Textual conversations / Responding / Compose sustained critical texts that affirm and challenge ideas, values and perspectives in a pair of texts"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Textual conversations / Responding / Use the language of critical and creative expression to refine arguments and craft sustained writing"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Textual conversations / Responding / Apply appropriate language and terminology used for making connections, interpreting texts and shaping meaning"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Critical study of literature / Understanding / The relationship between reader, author, text and context"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Critical study of literature / Understanding / The ways a text can be valued for its aesthetic qualities, text structures, language features and stylistic elements"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Critical study of literature / Understanding / The language of critical expression in refining arguments and interpreting texts"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Critical study of literature / Understanding / The ways mode, medium and form shape and inform responses to texts"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Critical study of literature / Understanding / The ways language forms, features and structures are used to represent a range of perspectives"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Critical study of literature / Understanding / The ways texts can reflect, confirm and challenge expectations associated with particular genres and styles"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Critical study of literature / Understanding / The ways context can shape social, moral and ethical perspectives in texts"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Critical study of literature / Understanding / The effect of theme and genre, and how these can influence a texts value"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Critical study of literature / Responding / Compose critical texts that affirm or challenge the ideas, values and perspectives represented in a complex text"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Critical study of literature / Responding / Compose informed personal responses shaped by critical interpretations of texts and textual analysis"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Critical study of literature / Responding / Support critical interpretations of texts through sustained argument and relevant textual analysis"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / The craft of writing / Understanding / The aesthetic qualities of texts and the power of language to express ideas, perspectives and experiences"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / The craft of writing / Understanding / The forms, language features and stylistic choices that shape imaginative, discursive, persuasive and reflective texts"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / The craft of writing / Responding / Compose personal, critical and creative texts that experiment with emerging forms, language features and literary devices including imagery, motif and allusion"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / The craft of writing / Responding / Compose texts that use the language of critical and creative expression"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / The craft of writing / Responding / Compose imaginative, discursive, persuasive and reflective texts that affirm or challenge ideas, values and perspectives represented in texts"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / The craft of writing / Responding / Use metalanguage to assess and reflect on their own process of writing and the writing of others"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / The craft of writing / Responding / Draft, reflect, edit, refine, revise and present texts for a range of audiences and purposes"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ea202001",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Textual conversations / Responding",
+   "text": "In textual conversations, the later text is often seen as a shadow, lacking the originality and\npower of the earlier.\nTo what extent is this statement true of the two prescribed texts you have studied in Module A?\nThe prescribed texts are listed on pages 3–4."
+  },
+  {
+   "id": "ea202002",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(a)\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Austen’s\nnovel?\nIn your response, make close reference to the excerpt and to your prescribed text.\nOR"
+  },
+  {
+   "id": "ea202003",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(b)\nCharles Dickens, Great Expectations\nIt is a most miserable thing to feel ashamed of home. There may be black\ningratitude in the thing, and the punishment may be retributive and well\ndeserved; but, that it is a miserable thing, I can testify.\nHome had never been a very pleasant place to me, because of my sister’s\ntemper. But, Joe had sanctified it, and I had believed in it. I had believed in\nthe best parlour as a most elegant saloon; I had believed in the front door,\nas a mysterious portal of the Temple of State whose solemn opening was\nattended with a sacrifice of roast fowls; I had believed in the kitchen as a\nchaste though not magnificent apartment; I had believed in the forge as the\nglowing road to manhood and independence. Within a single year, all this\nwas changed. Now, it was all coarse and common, and I would not have had\nMiss Havisham and Estella see it on any account.\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Dickens’\nnovel?\nIn your response, make close reference to the excerpt and to your prescribe\nOR\nd text."
+  },
+  {
+   "id": "ea202004",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(c)\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Ishiguro’s\nnovel?\nIn your response, make close reference to the excerpt and to your prescribed text."
+  },
+  {
+   "id": "ea202005",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(a)\nT S Eliot, T S Eliot: Selected Poems\nThe Hollow Men (extract)\nBetween the idea\nAnd the reality\nBetween the motion\nAnd the act\nFalls the Shadow\nFor Thine is the Kingdom\nBetween the conception\nAnd the creation\nBetween the emotion\nAnd the response\nFalls the Shadow\nLife is very long\nBetween the desire\nAnd the spasm\nBetween the potency\nAnd the existence\nBetween the essence\nAnd the descent\nFalls the Shadow\nFor Thine is the Kingdom\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Eliot’s\npoetry?\nIn your response, make close reference to the excerpt and to your prescribed text.\nThe prescribed poems are:\n* The Love Song of J Alfred Prufrock\n* Preludes\n* Rhapsody on a Windy Night\n* The Hollow Men\n* Journey of the Magi\nOR\nCollected Poems 1909-1962 by T.S. Eliot. Reproduced by\npermission of Faber and Faber Ltd"
+  },
+  {
+   "id": "ea202006",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(b)\nDavid Malouf, Earth Hour\nAquarius II (extract)\n. . . Elsewhere the world\nkindles and quakes, women bear\non their heads a hodful of it\nfrom one side to the other of the globe, children cram\ntheir belly with its mud,\nin a lakeside wood\nanemones feel their way out of the dark\nand the first four downward\nnotes of K.581 take a second breath and swing\ncompanionably upward — sheer miracle\nor happy accident, one, like us,\nof many. With a quiet thankyou to the planet\nfor snow, hoop pines, Mozart,\nand you of course, and you, I leave the room\nto its play, sacred perhaps, with salt and sun-motes.\nExtract from the poem ‘Aquarius II’ by David Malouf from Earth Hour\npublished by UQP (St Lucia: 2014)\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Malouf’s\npoetry?\nIn your response, make close reference to the excerpt and to your prescribed text.\nThe prescribed poems are:\n* Aquarius\n* Radiance\n* Ladybird\n* A Recollection of Starlings: Rome ’84\n* Eternal Moment at Poggia Madonna\n* Towards Midnight\n* Earth Hour\n* Aquarius II"
+  },
+  {
+   "id": "ea202007",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(a)\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Ibs\nplay?\nIn your response, make close reference to the excerpt and to your prescribed text.\nOR"
+  },
+  {
+   "id": "ea202008",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(b)\nDylan Thomas, Under Milk Wood\nCome closer now.\nOnly you can hear the houses sleeping in the streets in the slow deep salt and\nsilent black, bandaged night. Only you can see, in the blinded bedrooms, the\ncoms and petticoats over the chairs, the jugs and basins, the glasses of teeth,\nThou Shalt Not on the wall, and the yellowing dickybird-watching pictures\nof the dead. Only you can hear and see, behind the eyes of the sleepers, the\nmovements and countries and mazes and colours and dismays and rainbows\nand tunes and wishes and flight and fall and despairs and big seas of their\ndreams.\nFrom where you are, you can hear their dreams.\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Thomas’s\nplay?\nIn your response, make close reference to the excerpt and to your prescribed text."
+  },
+  {
+   "id": "ea202009",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(a)\nEdmund de Waal, The Hare with Amber Eyes\nTouch is not only through the fingers, but through the whole body, too.\nEach one of these netsuke for Anna is a resistance to the sapping of\nmemory. Each one carried out is a resistance against the news, a story\nrecalled, a future held on to. Here that Viennese cult of Gemütlichkeit – the\neasy tears over sentimental stories, the wrapping of everything in pastry and\ncream, those candied pictures of servant girls and their beaux – meets a place\nof adamantine hardness. I think of Herr Brockhaus and his imprecations\nagainst the carelessness of servants, and I think of how wrong he was.\nThere is no sentimentality, no nostalgia. It is something much harder,\nliterally harder. It is a kind of trust.\nFrom The Hare with Amber Eyes by Edmund de Waal published by Chatto & Windus\nCopyright © Edmund de Waal 2010. Reproduced by permission of The Random House Group Ltd\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of de Waal’s\nnonfiction?\nIn your response, make close reference to the excerpt and to your prescribed text.\nOR"
+  },
+  {
+   "id": "ea202010",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(b)\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Nabokov’s\nnonfiction?\nIn your response, make close reference to the excerpt and to your prescribed text."
+  },
+  {
+   "id": "ea202011",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "— Film – George Clooney, Good Night, and Good Luck (20 marks)\nFilm clips\nIn what ways do these screenshots reflect the concerns and aesthetic qualities of Clooney’s\nfilm?\nIn your response, make close reference to the screenshots and to your prescribed text.\nReproduced by permission of Icon Film Distribution"
+  },
+  {
+   "id": "ea202012",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "— Media – Gillian Armstrong, Unfolding Florence (20 marks)\nScreenshots from film.\nIn what ways do these screenshots reflect the concerns and aesthetic qualities of Armstrong’s\ndocumentary?\nIn your response, make close reference to the screenshots and to your prescribed text.\nReproduced with permission by the National Film and Sound Archive of Australia"
+  },
+  {
+   "id": "ea202013",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "— Shakespearean Drama – William Shakespeare, King Henry IV, Part 1\n(20 marks)\nIn what ways does this excerpt reflect the concerns and aesthetic qualities of Shakespeare’s\nplay?\nIn your response, make close reference to the excerpt and to your prescribed text."
+  },
+  {
+   "id": "ea202014",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "Compose a piece of imaginative writing that begins with the words:\nSome things are unknowable. A person’s secrets may be revealed by the things\nthey leave behind; but what are they, those supposedly uncovered secrets? They\nare words, ideas . . . Dry and dead as dust.\n© JENNY SINCLAIR, Tamby East\nhttps://www.griffithreview.com/articles/tamby-east/\nNote: You are NOT required to write out the extract as part of your response."
+  },
+  {
+   "id": "ea202101",
+   "year": null,
+   "number": null,
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Explain how Daniel Gray uses language to invite the reader to share his experiences."
+  },
+  {
+   "id": "ea202102",
+   "year": null,
+   "number": null,
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "How effectively does the use of imagery convey a human experience?"
+  },
+  {
+   "id": "ea202103",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "How does Ocean Vuong represent the relationship between the characters?"
+  },
+  {
+   "id": "ea202104",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse how Didem Caia uses literary devices to reflect on her experience."
+  },
+  {
+   "id": "ea202105",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Evaluate Anne Enright’s use of narrative voice in shaping the character of Katherine O’Dell."
+  },
+  {
+   "id": "ea202106",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse how your prescribed text represents the ways individuals respond to the challenges\nthey face.\nIn your response, make reference to your prescribed text.\nThe prescribed texts are listed on pages 10 and 11."
+  },
+  {
+   "id": "ea202201",
+   "year": null,
+   "number": null,
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "In what ways does Azzam celebrate togetherness?"
+  },
+  {
+   "id": "ea202202",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse how Fforde captures the narrator’s experience of awe and wonder."
+  },
+  {
+   "id": "ea202203",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Explain how Gemmell explores the paradoxes of human behaviour in this extract."
+  },
+  {
+   "id": "ea202204",
+   "year": null,
+   "number": null,
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse how Saramago conveys the value of memory in this extract."
+  },
+  {
+   "id": "ea202205",
+   "year": null,
+   "number": null,
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Compare how Falconer and Paine represent interactions between humans and the natural world."
+  },
+  {
+   "id": "ea202206",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(a) — Prose Fiction – Anthony Doerr, All the Light We Cannot See\n(20 marks)\nHow does Doerr represent the emotions arising from human experiences through the features\nof prose fiction?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202207",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(b) — Prose Fiction – Amanda Lohrey, Vertigo (20 marks)\nHow does Lohrey represent the emotions arising from human experiences through the features\nof prose fiction?\nIn your response, make reference to the prescribed text.\nOR\n1022"
+  },
+  {
+   "id": "ea202208",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(c) — Prose Fiction – George Orwell, Nineteen Eighty-Four (20 marks)\nHow does Orwell represent the emotions arising from human experiences through the features\nof prose fiction?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202209",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(d) — Prose Fiction – Favel Parrett, Past the Shallows (20 marks)\nHow does Parrett represent the emotions arising from human experiences through the features\nof prose fiction?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202210",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(e) — Poetry – Rosemary Dobson, Rosemary Dobson Collected (20 marks)\nHow does Dobson represent the emotions arising from human experiences through the features\nof poetry?\nIn your response, make reference to the prescribed text.\nThe prescribed poems are:\n* Young Girl at a Window\n* Over the Hill\n* Summer’s End\n* The Conversation\n* Cock Crow\n* Amy Caroline\n* Canberra Morning\nOR"
+  },
+  {
+   "id": "ea202211",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(f ) — Poetry – Kenneth Slessor, Selected Poems (20 marks)\nHow does Slessor represent the emotions arising from human experiences through the features\nof poetry?\nIn your response, make reference to the prescribed text.\nThe prescribed poems are:\n* Wild Grapes\n* Gulliver\n* Out of Time\n* Vesper-Song of the Reverend Samuel Marsden\n* William Street\n* Beach Burial\nOR"
+  },
+  {
+   "id": "ea202212",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(g) — Drama – Jane Harrison, Rainbow’s End, from Vivienne Cleven et al.,\nContemporary Indigenous Plays (20 marks)\nHow does Harrison represent the emotions arising from human experiences through the\nfeatures of drama?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202213",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(h) — Drama – Arthur Miller, The Crucible (20 marks)\nHow does Miller represent the emotions arising from human experiences through the features\nof drama?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202214",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(i) — Shakespearean Drama – William Shakespeare, The Merchant of\nVenice (20 marks)\nHow does Shakespeare represent the emotions arising from human experiences through the\nfeatures of drama?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202215",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(j) — Nonfiction – Tim Winton, The Boy Behind the Curtain (20 marks)\nHow does Winton represent the emotions arising from human experiences through the features\nof nonfiction?\nIn your response, make reference to the prescribed text.\nThe prescribed chapters are:\n* Havoc: A Life in Accidents\n* Betsy\n* Twice on Sundays\n* The Wait and the Flow\n* In the Shadow of the Hospital\n* The Demon Shark\n* Barefoot in the Temple of Art\nOR"
+  },
+  {
+   "id": "ea202216",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(k) — Nonfiction – Malala Yousafzai and Christina Lamb, I am Malala\n(20 marks)\nHow do Yousafzai and Lamb represent the emotions arising from human experiences through\nthe features of nonfiction?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202217",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(l) — Film – Stephen Daldry, Billy Elliot (20 marks)\nHow does Daldry represent the emotions arising from human experiences through the features\nof film?\nIn your response, make reference to the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202218",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(m) — Media – Ivan O’Mahoney, Go Back to Where You Came From\n(20 marks)\nHow does O’Mahoney represent the emotions arising from human experiences through the\nfeatures of media?\nIn your response, make reference to the prescribed text.\nThe prescribed episodes are:\n* Series 1: Episodes 1, 2 and 3\nand\n* The Response\nOR"
+  },
+  {
+   "id": "ea202219",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "(n) — Media – Lucy Walker, Waste Land (20 marks)\nHow does Walker represent the emotions arising from human experiences through the features\nof media?\nIn your response, make reference to the prescribed text."
+  },
+  {
+   "id": "ea202301",
+   "year": null,
+   "number": null,
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Why does Dank prefer ‘that gravel and dust comfort, away from that other place’?"
+  },
+  {
+   "id": "ea202302",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse Langbroek’s representation of the emotional impact of new places."
+  },
+  {
+   "id": "ea202303",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "How does Hamblin expand the reader’s understanding of the paradoxes of consumerism?"
+  },
+  {
+   "id": "ea202304",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "How does Robertson challenge the trend towards ‘self-narrativisation’ in modern culture?"
+  },
+  {
+   "id": "ea202305",
+   "year": null,
+   "number": null,
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse how O’Sullivan captures the idea of being in the moment."
+  },
+  {
+   "id": "ea202306",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "‘A text can ignite ideas about collective human experiences that enrich our view of the world.’\nTo what extent do you agree with this statement in relation to your prescribed text?\nIn your response, make close reference to your prescribed text."
+  },
+  {
+   "id": "ea202401",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Textual conversations / Responding",
+   "text": "To what extent has your perspective of the earlier text determined your interpretation and\nappreciation of the later text?\nIn your response, make detailed reference to both of your prescribed texts.\nThe Module A prescribed texts are listed on pages 4−5."
+  },
+  {
+   "id": "ea202402",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "Evaluate how the artistry and integrity of your prescribed text has influenced your understanding\nof its literary value.\nIn your response, make detailed reference to your prescribed text.\nThe Module B prescribed texts are listed on page 7."
+  },
+  {
+   "id": "ea202403",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "For all the benefits gained by time-saving inventions, there’s much to be said\nfor going back to basics . . . So, could there be benefits to leading a life less\nconvenient?\nJESSICA POWELL\nWorth the while\nCraft a discursive or persuasive piece of writing that incorporates the ideas in the stimulus\nabove.\nCourtesy of Jessica Powell"
+  },
+  {
+   "id": "ea202501",
+   "year": null,
+   "number": null,
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Explain how Jansson celebrates the process of creativity."
+  },
+  {
+   "id": "ea202502",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "How does Ferrante portray the ways that family relationships shape identity?"
+  },
+  {
+   "id": "ea202503",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse how Kooser shares insights about the experience of change."
+  },
+  {
+   "id": "ea202504",
+   "year": null,
+   "number": null,
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "How does Kingsolver expand the reader’s understanding of the relationship between past and present?"
+  },
+  {
+   "id": "ea202505",
+   "year": null,
+   "number": null,
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Evaluate Macfarlane’s representation of the connections between humans and the landscape."
+  },
+  {
+   "id": "ea202506",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Texts and human experiences / Responding",
+   "text": "Analyse how the representation of particular lives in your prescribed text enriches your\nunderstanding of the endurance of the human spirit.\nIn your response, make close reference to your prescribed text.\nThe prescribed texts are listed on pages 10−11."
+  },
+  {
+   "id": "ea202507",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Drama",
+   "text": "(a) — Shakespearean Drama and Film (20 marks)\nEvaluate the role of strategy in King Richard III and Looking for Richard in enhancing your\nappreciation of the textual connections between these texts.\nIn your response, make close reference to both of your prescribed texts.\nThe prescribed texts are:\n– William Shakespeare, King Richard III\nand\n– Al Pacino, Looking for Richard\nOR"
+  },
+  {
+   "id": "ea202508",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Prose fiction",
+   "text": "(b) — Prose Fiction and Film (20 marks)\nEvaluate the role of conformity in Mrs Dalloway and The Hours in enhancing your appreciation\nof the textual connections between these texts.\nIn your response, make close reference to both of your prescribed texts.\nThe prescribed texts are:\n– Virginia Woolf, Mrs Dalloway\nand\n– Stephen Daldry, The Hours\nOR"
+  },
+  {
+   "id": "ea202509",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Prose fiction",
+   "text": "(c) — Prose Fiction and Prose Fiction (20 marks)\nEvaluate the role of alienation in The Stranger and The Meursault Investigation in enhancing\nyour appreciation of the textual connections between these texts.\nIn your response, make close reference to both of your prescribed texts.\nThe prescribed texts are:\n– Albert Camus, The Stranger\nand\n– Kamel Daoud, The Meursault Investigation\nOR"
+  },
+  {
+   "id": "ea202510",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Poetry",
+   "text": "(d) — Poetry and Drama (20 marks)\nEvaluate the role of humility in Donne’s poetry and W;t in enhancing your appreciation of the\ntextual connections between these texts.\nIn your response, make close reference to both of your prescribed texts.\nThe prescribed texts are:\n– John Donne, John Donne: A Selection of His Poetry\nThe prescribed poems are:\n* The Sunne Rising\n* The Apparition\n* A Valediction: forbidding mourning\n* This is my playes last scene\n* At the round earths imagin’d corners\n* If poysonous mineralls\n* Death be not proud\n* Hymne to God my God, in my sicknesse\nand\n– Margaret Edson, W;t\nOR"
+  },
+  {
+   "id": "ea202511",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Poetry",
+   "text": "(e) — Poetry and Film (20 marks)\nEvaluate the role of creativity in Keats’ poetry and Bright Star in enhancing your appreciation\nof the textual connections between these texts.\nIn your response, make close reference to both of your prescribed texts.\nThe prescribed texts are:\n– John Keats, The Complete Poems\nThe prescribed poems are:\n* La Belle Dame sans Merci\n* To Autumn\n* Bright star! would I were steadfast as thou art\n* Ode to a Nightingale\n* Ode on a Grecian Urn\n* When I have fears that I may cease to be\n* The Eve of St Agnes, XXIII\nand\n– Jane Campion, Bright Star\nOR"
+  },
+  {
+   "id": "ea202512",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Poetry",
+   "text": "(f ) — Poetry and Poetry (20 marks)\nEvaluate the role of reinvention in Plath’s poetry and Hughes’ poetry in enhancing your\nappreciation of the textual connections between these texts.\nIn your response, make close reference to both of your prescribed texts.\nThe prescribed texts are:\n– Sylvia Plath, Ariel\nThe prescribed poems are:\n* Daddy\n* Nick and the Candlestick\n* A Birthday Present\n* Lady Lazarus\n* Fever 103°\n* The Arrival of the Bee Box\nand\n– Ted Hughes, Birthday Letters\nThe prescribed poems are:\n* Fulbright Scholars\n* The Shot\n* A Picture of Otto\n* Fever\n* Red\n* The Bee God\nOR"
+  },
+  {
+   "id": "ea202513",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Prose fiction",
+   "text": "(g) — Shakespearean Drama and Prose Fiction (20 marks)\nEvaluate the role of artistry in The Tempest and Hag-Seed in enhancing your appreciation of\nthe textual connections between these texts.\nIn your response, make close reference to both of your prescribed texts.\nThe prescribed texts are:\n– William Shakespeare, The Tempest\nand\n– Margaret Atwood, Hag-Seed\nSection II — Module B: Critical Study of Literature\nAttempt ONE question from Questions 2 (a) – 2 ( l )\nare available.\nYour answer will be assessed on how well you:\n● demonstrate an informed understanding of the ideas expressed in the text\n● evaluate the text’s distinctive language and stylistic qualities\n● organise, develop and express ideas using language appropriate to audience, purpose\nand form"
+  },
+  {
+   "id": "ea202514",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Prose fiction",
+   "text": "(a) — Prose Fiction – Jane Austen, Emma (20 marks)\nIn what ways are these closing paragraphs an effective resolution to the narrative tensions\nexplored in Austen’s Emma?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202515",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Prose fiction",
+   "text": "(b) — Prose Fiction – Charles Dickens, Great Expectations (20 marks)\nIn what ways are these closing paragraphs an effective resolution to the narrative tensions\nexplored in Dickens’ Great Expectations?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202516",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Prose fiction",
+   "text": "(c) — Prose Fiction – Kazuo Ishiguro, An Artist of the Floating World\n(20 marks)\nIn what ways are these closing paragraphs an effective resolution to the narrative tensions\nexplored in Ishiguro’s An Artist of the Floating World ?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202517",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Poetry",
+   "text": "(d) — Poetry – T S Eliot, T S Eliot: Selected Poems (20 marks)\nJourney of the Magi (extract)\nAll this was a long time ago, I remember,\nAnd I would do it again, but set down\nThis set down\nThis: were we led all that way for\nBirth or Death? There was a Birth, certainly,\nWe had evidence and no doubt. I had seen birth and death,\nBut had thought they were different; this Birth was\nHard and bitter agony for us, like Death, our death.\nWe returned to our places, these Kingdoms,\nBut no longer at ease here, in the old dispensation,\nWith an alien people clutching their gods.\nI should be glad of another death.\nIn what ways is this closing stanza of Journey of the Magi an effective resolution to the poetic\ntensions explored in Eliot’s poetry?\nIn your response, make close reference to Journey of the Magi and at least ONE other\nprescribed poem.\nThe prescribed poems are:\n* The Love Song of J Alfred Prufrock\n* Preludes\n* Rhapsody on a Windy Night\n* The Hollow Men\n* Journey of the Magi\nOR\nT S Eliot: Collected Poems (1909–1962) Journey of the Magi by T S Eliot, Faber and Faber Ltd."
+  },
+  {
+   "id": "ea202518",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Poetry",
+   "text": "(e) — Poetry – David Malouf, Earth Hour (20 marks)\nEarth Hour (extract)\nWe are feral\nat heart, unhouseled creatures. Mind\nis the maker, mad for light, for enlightenment, this late admission\nof darkness the cost, and the silence\non our tongue as we count the hour down — the coin we bring,\nlong hoarded just for this — the extended cry of our first coming\nto this ambulant, airy\nSchatzkammer and midden, our green accommodating tomb.\nIn what ways is this closing stanza of Earth Hour an effective resolution to the poetic tensions\nexplored in Malouf’s poetry?\nIn your response, make close reference to the poem Earth Hour and at least ONE other\nprescribed poem.\nThe prescribed poems are:\n* Aquarius\n* Radiance\n* Ladybird\n* A Recollection of Starlings: Rome ’84\n* Eternal Moment at Poggia Madonna\n* Towards Midnight\n* Earth Hour\n* Aquarius II\nOR\n© 2014, the work is made available for viewing for personal use\nAll other rights are reserved by UQP"
+  },
+  {
+   "id": "ea202519",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Drama",
+   "text": "(f ) — Drama – Henrik Ibsen, A Doll’s House (20 marks)\nIn what ways is this closing scene an effective resolution to the dramatic tensions explored in\nIbsen’s A Doll’s House?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202520",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Drama",
+   "text": "(g) — Drama – Dylan Thomas, Under Milk Wood (20 marks)\nIn what ways is this closing scene an effective resolution to the dramatic tensions explored in\nThomas’s Under Milk Wood ?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202521",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(h) — Nonfiction – Edmund de Waal, The Hare with Amber Eyes (20 marks)\nIn what ways are these closing paragraphs an effective resolution to the narrative tensions\nexplored in de Waal’s The Hare with Amber Eyes?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202522",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(i) — Nonfiction – Vladimir Nabokov, Speak, Memory (20 marks)\nIn what ways is this closing paragraph an effective resolution to the narrative tensions explored\nin Nabokov’s Speak, Memory?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202523",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Drama",
+   "text": "(j) — Film – George Clooney, Good Night, and Good Luck (20 marks)\nIn what ways is this closing scene an effective resolution to the dramatic tensions explored in\nClooney’s Good Night, and Good Luck ?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR\nThis material cannot be displayed due to copyright issues.\nPlease refer to the source link below (encompassing speech and stills as video)\nhttps://www.imdb.com/title/tt0433383/quotes/?item=qt0351921"
+  },
+  {
+   "id": "ea202524",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(k) — Media – Gillian Armstrong, Unfolding Florence (20 marks)\nUpbeat jazz music plays throughout this scene.\nVoice over: Great success comes when you least expect it.\n© National Film and Sound Archive of Australia\nIn what ways is this closing scene an effective resolution to the dramatic tensions explored in\nArmstrong’s Unfolding Florence?\nIn your response, make close reference to the extract provided and the prescribed text.\nOR"
+  },
+  {
+   "id": "ea202525",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / The craft of writing / Responding",
+   "text": "( l ) — Shakespearean Drama – William Shakespeare, King Henry IV, Part 1\n(20 marks)\nIn what ways is this closing scene an effective resolution to the dramatic tensions explored in\nShakespeare’s King Henry IV Part 1?\nIn your response, make close reference to the extract provided and the prescribed text."
+  },
+  {
+   "id": "ea202526",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(a)\nCraft an imaginative piece of writing which incorporates the provided image as\nthe focus of your narrative.\n12"
+  },
+  {
+   "id": "ea202527",
+   "year": null,
+   "number": null,
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Critical study of literature / Responding",
+   "text": "(b)\nExplain how you have incorporated the provided image to shape meaning in\nyour narrative, making close reference to your specific language choices in\npart (a).\n8\nLicensed under CC BY 2.0\nhttps://creativecommons.org/licenses/by/2.0/?ref=openverse"
+  }
+ ]
+}

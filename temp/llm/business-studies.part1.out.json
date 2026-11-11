@@ -1,0 +1,802 @@
+{
+  "bs2020_q1": {
+    "code": "HSC-M4-T1-D30",
+    "confidence": "high",
+    "why": "benefits of staff training and development"
+  },
+  "bs2020_q2": {
+    "code": "HSC-M4-T1-D16",
+    "confidence": "high",
+    "why": "Fair Work Act minimum employment standards"
+  },
+  "bs2020_q3": {
+    "code": "HSC-M4-T1-D11",
+    "confidence": "medium",
+    "why": "outsourcing the recruitment process"
+  },
+  "bs2020_q4": {
+    "code": "HSC-M2-T1-D15",
+    "confidence": "high",
+    "why": "refund when product mismatches description"
+  },
+  "bs2020_q5": {
+    "code": "HSC-M2-T1-D19",
+    "confidence": "high",
+    "why": "primary data through market research"
+  },
+  "bs2020_q6": {
+    "code": "HSC-M1-T1-D38",
+    "confidence": "high",
+    "why": "economies of scale lower unit input costs"
+  },
+  "bs2020_q7": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "medium",
+    "why": "local manufacturing to maintain quality control"
+  },
+  "bs2020_q8": {
+    "code": "HSC-M2-T1-D27",
+    "confidence": "low",
+    "why": "packaging or labelling difference between products"
+  },
+  "bs2020_q9": {
+    "code": "HSC-M4-T1-D19",
+    "confidence": "high",
+    "why": "economic cycle reduces staff working hours"
+  },
+  "bs2020_q10": {
+    "code": "HSC-M2-T1-D18",
+    "confidence": "high",
+    "why": "price cut indicates product decline stage"
+  },
+  "bs2020_q11": {
+    "code": "HSC-M1-T1-D32",
+    "confidence": "high",
+    "why": "inventory strategy for theft and storage"
+  },
+  "bs2020_q12": {
+    "code": "HSC-M4-T1-D17",
+    "confidence": "high",
+    "why": "return to work plan workers compensation"
+  },
+  "bs2020_q13": {
+    "code": "HSC-M1-T1-D38",
+    "confidence": "high",
+    "why": "scanning and learning global technology trends"
+  },
+  "bs2020_q14": {
+    "code": "HSC-M3-T1-D31",
+    "confidence": "medium",
+    "why": "equipment sale proceeds in income statement"
+  },
+  "bs2020_q15": {
+    "code": "HSC-M1-T1-D27",
+    "confidence": "high",
+    "why": "customisation and quality performance objectives"
+  },
+  "bs2020_q16": {
+    "code": "HSC-M2-T1-D23",
+    "confidence": "high",
+    "why": "comparing actual and planned product results"
+  },
+  "bs2020_q17": {
+    "code": "HSC-M3-T1-D28",
+    "confidence": "high",
+    "why": "gross and net profit ratio calculation"
+  },
+  "bs2020_q18": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "high",
+    "why": "ratio changes compared over two years"
+  },
+  "bs2020_q19": {
+    "code": "HSC-M3-T1-D26",
+    "confidence": "high",
+    "why": "liquidity current ratio versus industry"
+  },
+  "bs2020_q20": {
+    "code": "HSC-M3-T1-D27",
+    "confidence": "high",
+    "why": "gearing debt to equity versus industry"
+  },
+  "bs2020_q21": {
+    "code": "HSC-M4-T1-D26",
+    "confidence": "medium",
+    "why": "voluntary and involuntary separation; staff reductions"
+  },
+  "bs2020_q22": {
+    "code": "HSC-M2-T1-D42",
+    "confidence": "medium",
+    "why": "standardised marketing strategy for US market"
+  },
+  "bs2020_q23": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "medium",
+    "why": "operations influences affecting clothing retailer"
+  },
+  "bs2020_q24": {
+    "code": "HSC-M3-T1-D29",
+    "confidence": "high",
+    "why": "accounts receivable turnover and expense ratio"
+  },
+  "bs2020_q25": {
+    "code": "HSC-M1-T1-D20",
+    "confidence": "medium",
+    "why": "operations volume and quality process changes"
+  },
+  "bs2020_q26": {
+    "code": "HSC-M3-T1-D40",
+    "confidence": "medium",
+    "why": "financial strategies for profit and growth"
+  },
+  "bs2020_q27": {
+    "code": "HSC-M4-T1-D36",
+    "confidence": "high",
+    "why": "three indicators of effective human resource management"
+  },
+  "bs2021_q1": {
+    "code": "HSC-M3-T1-D41",
+    "confidence": "high",
+    "why": "cost centre monitors and controls expenses"
+  },
+  "bs2021_q2": {
+    "code": "HSC-M4-T1-D12",
+    "confidence": "high",
+    "why": "induction and recruitment are HR functions"
+  },
+  "bs2021_q3": {
+    "code": "HSC-M1-T1-D31",
+    "confidence": "high",
+    "why": "leading edge technology advantages and disadvantages"
+  },
+  "bs2021_q4": {
+    "code": "HSC-M4-T1-D16",
+    "confidence": "high",
+    "why": "common law contract individual employer employee"
+  },
+  "bs2021_q5": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "psychological factor influencing designer clothing choice"
+  },
+  "bs2021_q6": {
+    "code": "HSC-M4-T1-D19",
+    "confidence": "high",
+    "why": "recession affects HR processes and strategies"
+  },
+  "bs2021_q7": {
+    "code": "HSC-M2-T1-D32",
+    "confidence": "high",
+    "why": "publicity and advertising in promotion mix"
+  },
+  "bs2021_q8": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "high",
+    "why": "industrial and intermediate market types"
+  },
+  "bs2021_q9": {
+    "code": "HSC-M2-T1-D23",
+    "confidence": "medium",
+    "why": "evaluating advertising using sales and market share"
+  },
+  "bs2021_q10": {
+    "code": "HSC-M1-T1-D20",
+    "confidence": "high",
+    "why": "cost leader high volume low variety"
+  },
+  "bs2021_q11": {
+    "code": "HSC-M1-T1-D29",
+    "confidence": "high",
+    "why": "global sourcing supply chain negative effects"
+  },
+  "bs2021_q12": {
+    "code": "HSC-M1-T1-D13",
+    "confidence": "high",
+    "why": "corporate social responsibility healthy menu options"
+  },
+  "bs2021_q13": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "medium",
+    "why": "income statement shows expenses decreased"
+  },
+  "bs2021_q14": {
+    "code": "HSC-M1-T1-D26",
+    "confidence": "medium",
+    "why": "extended warranty depends on quality management"
+  },
+  "bs2021_q15": {
+    "code": "HSC-M4-T1-D32",
+    "confidence": "high",
+    "why": "individual delivery pay reward strategy"
+  },
+  "bs2021_q16": {
+    "code": "HSC-M2-T1-D9",
+    "confidence": "high",
+    "why": "shift from production to selling approach"
+  },
+  "bs2021_q17": {
+    "code": "HSC-M4-T1-D26",
+    "confidence": "high",
+    "why": "unfair dismissal evidence at separation"
+  },
+  "bs2021_q18": {
+    "code": "HSC-M3-T1-D35",
+    "confidence": "high",
+    "why": "factoring improves cash flow reduces profitability"
+  },
+  "bs2021_q19": {
+    "code": "HSC-M3-T1-D47",
+    "confidence": "high",
+    "why": "derivative hedging export currency risk"
+  },
+  "bs2021_q20": {
+    "code": "HSC-M3-T1-D31",
+    "confidence": "high",
+    "why": "capitalising research and development expenses"
+  },
+  "bs2021_q21": {
+    "code": "HSC-M1-T1-D33",
+    "confidence": "medium",
+    "why": "quality management for outsourced building work"
+  },
+  "bs2021_q22": {
+    "code": "HSC-M3-T1-D44",
+    "confidence": "medium",
+    "why": "USD borrowing exchange rate risk"
+  },
+  "bs2021_q23": {
+    "code": "HSC-M4-T1-D37",
+    "confidence": "medium",
+    "why": "corporate culture affects staff turnover"
+  },
+  "bs2021_q24": {
+    "code": "HSC-M2-T1-D43",
+    "confidence": "medium",
+    "why": "customisation in global marketing advertisement"
+  },
+  "bs2021_q25": {
+    "code": "HSC-M3-T1-D22",
+    "confidence": "medium",
+    "why": "mortgage versus new share issue finance"
+  },
+  "bs2021_q26": {
+    "code": "HSC-M2-T1-D18",
+    "confidence": "high",
+    "why": "SWOT and product life cycle analysis"
+  },
+  "bs2021_q27": {
+    "code": "HSC-M4-T1-D23",
+    "confidence": "medium",
+    "why": "improving employee acquisition and maintenance"
+  },
+  "bs2022_q1": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "economic factor recession influencing customer choice"
+  },
+  "bs2022_q2": {
+    "code": "HSC-M4-T1-D26",
+    "confidence": "high",
+    "why": "resignation is voluntary separation"
+  },
+  "bs2022_q3": {
+    "code": "HSC-M2-T1-D19",
+    "confidence": "high",
+    "why": "primary data interviews and questionnaires"
+  },
+  "bs2022_q4": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "quality expectations influence pricing and warranty"
+  },
+  "bs2022_q5": {
+    "code": "HSC-M2-T1-D24",
+    "confidence": "high",
+    "why": "psychographic segmentation lifestyle motivation personality"
+  },
+  "bs2022_q6": {
+    "code": "HSC-M4-T1-D32",
+    "confidence": "high",
+    "why": "profit sharing monetary group reward"
+  },
+  "bs2022_q7": {
+    "code": "HSC-M1-T1-D29",
+    "confidence": "high",
+    "why": "global sourcing reduces input costs"
+  },
+  "bs2022_q8": {
+    "code": "HSC-M4-T1-D30",
+    "confidence": "medium",
+    "why": "machinery training aims to prevent accidents"
+  },
+  "bs2022_q9": {
+    "code": "HSC-M4-T1-D35",
+    "confidence": "high",
+    "why": "mediation initial action for bullying complaint"
+  },
+  "bs2022_q10": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "environmental legal regulation affects operations"
+  },
+  "bs2022_q11": {
+    "code": "HSC-M2-T1-D18",
+    "confidence": "high",
+    "why": "growth stage production and price"
+  },
+  "bs2022_q12": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "medium",
+    "why": "service differentiation through variable customer time"
+  },
+  "bs2022_q13": {
+    "code": "HSC-M3-T1-D20",
+    "confidence": "high",
+    "why": "economic outlook and interest rates global"
+  },
+  "bs2022_q14": {
+    "code": "HSC-M3-T1-D19",
+    "confidence": "high",
+    "why": "ASIC takes action over illegal client funds"
+  },
+  "bs2022_q15": {
+    "code": "HSC-M2-T1-D35",
+    "confidence": "high",
+    "why": "producer to consumer distribution channel"
+  },
+  "bs2022_q16": {
+    "code": "HSC-M2-T1-D29",
+    "confidence": "high",
+    "why": "price penetration disadvantage raising prices later"
+  },
+  "bs2022_q17": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "medium",
+    "why": "florist operating in industrial market"
+  },
+  "bs2022_q18": {
+    "code": "HSC-M3-T1-D39",
+    "confidence": "high",
+    "why": "sale and lease back improves working capital"
+  },
+  "bs2022_q19": {
+    "code": "HSC-M1-T1-D11",
+    "confidence": "medium",
+    "why": "business functions providing input to contract"
+  },
+  "bs2022_q20": {
+    "code": "HSC-M3-T1-D28",
+    "confidence": "high",
+    "why": "return on equity and gross profit ratio"
+  },
+  "bs2022_q21": {
+    "code": "HSC-M1-T1-D22",
+    "confidence": "medium",
+    "why": "process layout efficiency and profitability comparison"
+  },
+  "bs2022_q22": {
+    "code": "HSC-M4-T1-D16",
+    "confidence": "medium",
+    "why": "minimum wage and minimum employment standards"
+  },
+  "bs2022_q23": {
+    "code": "HSC-M3-T1-D29",
+    "confidence": "high",
+    "why": "expense ratio calculation and efficiency"
+  },
+  "bs2022_q24": {
+    "code": "HSC-M2-T1-D31",
+    "confidence": "medium",
+    "why": "promotion strategy for new product launch"
+  },
+  "bs2022_q25": {
+    "code": "HSC-M3-T1-D43",
+    "confidence": "medium",
+    "why": "global financial management strategies for expansion"
+  },
+  "bs2022_q26": {
+    "code": "HSC-M4-T1-D34",
+    "confidence": "medium",
+    "why": "strategies reducing workplace disputes satisfaction"
+  },
+  "bs2022_q27": {
+    "code": "HSC-M1-T1-D7",
+    "confidence": "high",
+    "why": "operations processes sustaining competitive advantage"
+  },
+  "bs2023_q1": {
+    "code": "HSC-M4-T1-D32",
+    "confidence": "high",
+    "why": "rewards recognise employee effort"
+  },
+  "bs2023_q2": {
+    "code": "HSC-M1-T1-D27",
+    "confidence": "high",
+    "why": "customisation performance objective"
+  },
+  "bs2023_q3": {
+    "code": "HSC-M2-T1-D32",
+    "confidence": "high",
+    "why": "relationship marketing builds customer loyalty"
+  },
+  "bs2023_q4": {
+    "code": "HSC-M4-T1-D17",
+    "confidence": "high",
+    "why": "workers compensation for workplace injury"
+  },
+  "bs2023_q5": {
+    "code": "HSC-M2-T1-D29",
+    "confidence": "high",
+    "why": "penetration pricing gains market share"
+  },
+  "bs2023_q6": {
+    "code": "HSC-M4-T1-D19",
+    "confidence": "high",
+    "why": "economic influence reduced demand working hours"
+  },
+  "bs2023_q7": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "low",
+    "why": "order of marketing plan steps"
+  },
+  "bs2023_q8": {
+    "code": "HSC-M3-T1-D46",
+    "confidence": "high",
+    "why": "payment in advance lowest exporter risk"
+  },
+  "bs2023_q9": {
+    "code": "HSC-M4-T1-D10",
+    "confidence": "high",
+    "why": "training interdependence operations and HR"
+  },
+  "bs2023_q10": {
+    "code": "HSC-M2-T1-D33",
+    "confidence": "high",
+    "why": "celebrity opinion leader promotion"
+  },
+  "bs2023_q11": {
+    "code": "HSC-M4-T1-D35",
+    "confidence": "medium",
+    "why": "Fair Work Commission agreements and disputes"
+  },
+  "bs2023_q12": {
+    "code": "HSC-M3-T1-D16",
+    "confidence": "high",
+    "why": "leasing long-term point of sale system"
+  },
+  "bs2023_q13": {
+    "code": "HSC-M2-T1-D15",
+    "confidence": "high",
+    "why": "faulty phone refund implied conditions"
+  },
+  "bs2023_q14": {
+    "code": "HSC-M3-T1-D44",
+    "confidence": "high",
+    "why": "AUD appreciation affects imports and exports"
+  },
+  "bs2023_q15": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "high",
+    "why": "design innovation goods and service differentiation"
+  },
+  "bs2023_q16": {
+    "code": "HSC-M3-T1-D28",
+    "confidence": "high",
+    "why": "net profit ratio calculation"
+  },
+  "bs2023_q17": {
+    "code": "HSC-M1-T1-D21",
+    "confidence": "high",
+    "why": "simultaneous tasks in critical path diagram"
+  },
+  "bs2023_q18": {
+    "code": "HSC-M1-T1-D21",
+    "confidence": "high",
+    "why": "delay changes critical path length"
+  },
+  "bs2023_q19": {
+    "code": "HSC-M4-T1-D14",
+    "confidence": "high",
+    "why": "government stakeholder implements workplace reforms"
+  },
+  "bs2023_q20": {
+    "code": "HSC-M3-T1-D37",
+    "confidence": "medium",
+    "why": "early payment discount improves current ratio"
+  },
+  "bs2023_q21": {
+    "code": "HSC-M1-T1-D38",
+    "confidence": "medium",
+    "why": "economies of scale and cost quality balance"
+  },
+  "bs2023_q22": {
+    "code": "HSC-M4-T1-D18",
+    "confidence": "high",
+    "why": "purpose of equal employment opportunity legislation"
+  },
+  "bs2023_q23": {
+    "code": "HSC-M2-T1-D18",
+    "confidence": "high",
+    "why": "cereal product life cycle stage"
+  },
+  "bs2023_q24": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "conflict between short and long-term objectives"
+  },
+  "bs2023_q25": {
+    "code": "HSC-M3-T1-D22",
+    "confidence": "medium",
+    "why": "compare debt and equity finance options"
+  },
+  "bs2023_q26": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "low",
+    "why": "influences on marketing affect business success"
+  },
+  "bs2023_q27": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "influences on operations affect business success"
+  },
+  "bs2024_q1": {
+    "code": "HSC-M4-T1-D14",
+    "confidence": "high",
+    "why": "trade union represents employees on wages"
+  },
+  "bs2024_q2": {
+    "code": "HSC-M1-T1-D12",
+    "confidence": "high",
+    "why": "asbestos ban is legal regulation"
+  },
+  "bs2024_q3": {
+    "code": "HSC-M4-T1-D31",
+    "confidence": "high",
+    "why": "performance appraisal in development stage"
+  },
+  "bs2024_q4": {
+    "code": "HSC-M2-T1-D29",
+    "confidence": "high",
+    "why": "price skimming new product"
+  },
+  "bs2024_q5": {
+    "code": "HSC-M4-T1-D36",
+    "confidence": "high",
+    "why": "accidents and absenteeism are HR indicators"
+  },
+  "bs2024_q6": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "medium",
+    "why": "government tax incentive for renewable energy"
+  },
+  "bs2024_q7": {
+    "code": "HSC-M1-T1-D10",
+    "confidence": "medium",
+    "why": "physiotherapy as customised service"
+  },
+  "bs2024_q8": {
+    "code": "HSC-M4-T1-D26",
+    "confidence": "high",
+    "why": "dismissal for misconduct is separation"
+  },
+  "bs2024_q9": {
+    "code": "HSC-M1-T1-D27",
+    "confidence": "medium",
+    "why": "operations manager reduces waste and cost"
+  },
+  "bs2024_q10": {
+    "code": "HSC-M3-T1-D29",
+    "confidence": "high",
+    "why": "expense ratio calculation"
+  },
+  "bs2024_q11": {
+    "code": "HSC-M2-T1-D17",
+    "confidence": "high",
+    "why": "sugging survey then selling"
+  },
+  "bs2024_q12": {
+    "code": "HSC-M4-T1-D16",
+    "confidence": "high",
+    "why": "individual contract for overseas manager"
+  },
+  "bs2024_q13": {
+    "code": "HSC-M2-T1-D11",
+    "confidence": "high",
+    "why": "brand name psychological influence"
+  },
+  "bs2024_q14": {
+    "code": "HSC-M3-T1-D34",
+    "confidence": "high",
+    "why": "closing cash balance cash flow statement"
+  },
+  "bs2024_q15": {
+    "code": "HSC-M3-T1-D18",
+    "confidence": "high",
+    "why": "ASX market operator for public finance"
+  },
+  "bs2024_q16": {
+    "code": "HSC-M2-T1-D42",
+    "confidence": "high",
+    "why": "same marketing mix standardisation advantage"
+  },
+  "bs2024_q17": {
+    "code": "HSC-M3-T1-D32",
+    "confidence": "high",
+    "why": "unethical asset valuation and expense understatement"
+  },
+  "bs2024_q18": {
+    "code": "HSC-M1-T1-D21",
+    "confidence": "high",
+    "why": "critical path analysis characteristics"
+  },
+  "bs2024_q19": {
+    "code": "HSC-M3-T1-D17",
+    "confidence": "high",
+    "why": "new issue of shares for public listing"
+  },
+  "bs2024_q20": {
+    "code": "HSC-M2-T1-D23",
+    "confidence": "medium",
+    "why": "market share decline requires marketing control"
+  },
+  "bs2024_q21": {
+    "code": "HSC-M1-T1-D32",
+    "confidence": "medium",
+    "why": "inventory management for two products"
+  },
+  "bs2024_q22": {
+    "code": "HSC-M4-T1-D2",
+    "confidence": "medium",
+    "why": "corporate social responsibility in employee management"
+  },
+  "bs2024_q23": {
+    "code": "HSC-M2-T1-D24",
+    "confidence": "medium",
+    "why": "market segmentation to sustain growth"
+  },
+  "bs2024_q24": {
+    "code": "HSC-M3-T1-D35",
+    "confidence": "medium",
+    "why": "early payment discounts improve cash flow"
+  },
+  "bs2024_q25": {
+    "code": "HSC-M4-T1-D23",
+    "confidence": "medium",
+    "why": "acquisition and recruitment process issues"
+  },
+  "bs2024_q26": {
+    "code": "HSC-M3-T1-D11",
+    "confidence": "medium",
+    "why": "financial strategies affect financial objectives"
+  },
+  "bs2024_q27": {
+    "code": "HSC-M1-T1-D13",
+    "confidence": "high",
+    "why": "operations strategies affect corporate social responsibility"
+  },
+  "bs2025_q1": {
+    "code": "HSC-M1-T1-D27",
+    "confidence": "high",
+    "why": "waste minimisation achieves cost objective"
+  },
+  "bs2025_q2": {
+    "code": "HSC-M2-T1-D10",
+    "confidence": "high",
+    "why": "customised caravans niche market"
+  },
+  "bs2025_q3": {
+    "code": "HSC-M3-T1-D24",
+    "confidence": "medium",
+    "why": "assets essential component of balance sheet"
+  },
+  "bs2025_q4": {
+    "code": "HSC-M4-T1-D18",
+    "confidence": "high",
+    "why": "maternity leave discrimination on sex"
+  },
+  "bs2025_q5": {
+    "code": "HSC-M2-T1-D13",
+    "confidence": "high",
+    "why": "false special price deceptive advertising"
+  },
+  "bs2025_q6": {
+    "code": "HSC-M2-T1-D43",
+    "confidence": "high",
+    "why": "customised design for Japanese market"
+  },
+  "bs2025_q7": {
+    "code": "HSC-M1-T1-D29",
+    "confidence": "high",
+    "why": "materials handling and packaging logistics"
+  },
+  "bs2025_q8": {
+    "code": "HSC-M1-T1-D36",
+    "confidence": "high",
+    "why": "ongoing improvement quality management strategy"
+  },
+  "bs2025_q9": {
+    "code": "HSC-M3-T1-D11",
+    "confidence": "high",
+    "why": "receivables collection efficiency objective"
+  },
+  "bs2025_q10": {
+    "code": "HSC-M4-T1-D15",
+    "confidence": "high",
+    "why": "common law standards workers compensation framework"
+  },
+  "bs2025_q11": {
+    "code": "HSC-M4-T1-D29",
+    "confidence": "high",
+    "why": "internal recruitment benefits"
+  },
+  "bs2025_q12": {
+    "code": "HSC-M1-T1-D37",
+    "confidence": "high",
+    "why": "fear of unknown resistance to technology"
+  },
+  "bs2025_q13": {
+    "code": "HSC-M2-T1-D18",
+    "confidence": "medium",
+    "why": "customer service weakness in situational analysis"
+  },
+  "bs2025_q14": {
+    "code": "HSC-M2-T1-D29",
+    "confidence": "high",
+    "why": "introductory discount penetration pricing"
+  },
+  "bs2025_q15": {
+    "code": "HSC-M4-T1-D36",
+    "confidence": "low",
+    "why": "employee data change HR indicator cause"
+  },
+  "bs2025_q16": {
+    "code": "HSC-M3-T1-D33",
+    "confidence": "high",
+    "why": "adopt cash flow management strategies"
+  },
+  "bs2025_q17": {
+    "code": "HSC-M4-T1-D17",
+    "confidence": "high",
+    "why": "workplace injury return to work steps"
+  },
+  "bs2025_q18": {
+    "code": "HSC-M3-T1-D31",
+    "confidence": "high",
+    "why": "capitalised development costs limitation"
+  },
+  "bs2025_q19": {
+    "code": "HSC-M1-T1-D19",
+    "confidence": "low",
+    "why": "sequence of operations transformation process"
+  },
+  "bs2025_q20": {
+    "code": "HSC-M3-T1-D27",
+    "confidence": "high",
+    "why": "gearing ratio decline improved"
+  },
+  "bs2025_q21": {
+    "code": "HSC-M1-T1-D13",
+    "confidence": "medium",
+    "why": "cafe corporate social responsibility donation"
+  },
+  "bs2025_q22": {
+    "code": "HSC-M2-T1-D23",
+    "confidence": "medium",
+    "why": "monitor and control marketing strategies"
+  },
+  "bs2025_q23": {
+    "code": "HSC-M3-T1-D30",
+    "confidence": "medium",
+    "why": "comparative ratio analysis improves outcomes"
+  },
+  "bs2025_q24": {
+    "code": "HSC-M4-T1-D15",
+    "confidence": "medium",
+    "why": "technology influence and illegal HR practices"
+  },
+  "bs2025_q25": {
+    "code": "HSC-M1-T1-D38",
+    "confidence": "medium",
+    "why": "global factors for cost leadership"
+  }
+}

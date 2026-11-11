@@ -1,0 +1,1015 @@
+{
+ "course_id": "music-1-2010",
+ "course_name": "Music 1 (2010)",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Musical concepts / duration / beat: the underlying pulse in music",
+   "text": "beat: the underlying pulse in music"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Musical concepts / duration / rhythm: patterns of long and short sounds and silences found in music",
+   "text": "rhythm: patterns of long and short sounds and silences found in music"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Musical concepts / duration / tempo: the speed of the beat. Music may be relatively fast or slow and may become faster or slower",
+   "text": "tempo: the speed of the beat. Music may be relatively fast or slow and may become faster or slower"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Musical concepts / duration / metre: the grouping of beats. Beats can be grouped in any combination including 2, 3, 4, 5, 6, 7 and so on.",
+   "text": "metre: the grouping of beats. Beats can be grouped in any combination including 2, 3, 4, 5, 6, 7 and so on."
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Musical concepts / duration / regular and irregular metres",
+   "text": "regular and irregular metres"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Musical concepts / duration / metric groupings",
+   "text": "metric groupings"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Musical concepts / duration / tempo",
+   "text": "tempo"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Musical concepts / duration / rhythmic devices such as syncopation, augmentation and diminution",
+   "text": "rhythmic devices such as syncopation, augmentation and diminution"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Musical concepts / duration / methods of notating duration, both traditional and graphic.",
+   "text": "methods of notating duration, both traditional and graphic."
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Musical concepts / pitch / high/low: pitches can be comparatively high or low",
+   "text": "high/low: pitches can be comparatively high or low"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Musical concepts / pitch / direction of pitch movement: up, down, same level",
+   "text": "direction of pitch movement: up, down, same level"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Musical concepts / pitch / melody: a horizontal succession of pitches",
+   "text": "melody: a horizontal succession of pitches"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Musical concepts / pitch / harmony: two or more pitches sounding together",
+   "text": "harmony: two or more pitches sounding together"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Musical concepts / pitch / indefinite pitch: untuned sounds, for example, the speaking voice",
+   "text": "indefinite pitch: untuned sounds, for example, the speaking voice"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Musical concepts / pitch / definite pitch: tuned sounds, for example, the singing voice.",
+   "text": "definite pitch: tuned sounds, for example, the singing voice."
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Musical concepts / pitch / definite and indefinite pitch",
+   "text": "definite and indefinite pitch"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Musical concepts / pitch / pitch direction and contour",
+   "text": "pitch direction and contour"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Musical concepts / pitch / pitch patterns",
+   "text": "pitch patterns"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Musical concepts / pitch / pitch range and register",
+   "text": "pitch range and register"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Musical concepts / pitch / harmony",
+   "text": "harmony"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Musical concepts / pitch / methods of notating pitch, both traditional and graphic",
+   "text": "methods of notating pitch, both traditional and graphic"
+  },
+  {
+   "code": "PRE-M1-T2-D13",
+   "path": "Year 11 / Musical concepts / pitch / various scales, modes and other ways of organising pitch.",
+   "text": "various scales, modes and other ways of organising pitch."
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / a range of dynamics, including gradations",
+   "text": "a range of dynamics, including gradations"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / articulations",
+   "text": "articulations"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / tempo, including gradations",
+   "text": "tempo, including gradations"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / stylistic indications.",
+   "text": "stylistic indications."
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Musical concepts / tone colour / sound source material, for example, wood, metal, string, skin, electronic and vocal",
+   "text": "sound source material, for example, wood, metal, string, skin, electronic and vocal"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Musical concepts / tone colour / method of sound production, for example, blowing, hitting, plucking, scraping and shaking",
+   "text": "method of sound production, for example, blowing, hitting, plucking, scraping and shaking"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Musical concepts / tone colour / combination of sound sources, for example, single voice, multiple voices, voices accompanied or unaccompanied by instruments.",
+   "text": "combination of sound sources, for example, single voice, multiple voices, voices accompanied or unaccompanied by instruments."
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Musical concepts / tone colour / types of instruments and voices",
+   "text": "types of instruments and voices"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Musical concepts / tone colour / combinations of voices and instruments",
+   "text": "combinations of voices and instruments"
+  },
+  {
+   "code": "PRE-M1-T4-D6",
+   "path": "Year 11 / Musical concepts / tone colour / acoustic sounds",
+   "text": "acoustic sounds"
+  },
+  {
+   "code": "PRE-M1-T4-D7",
+   "path": "Year 11 / Musical concepts / tone colour / electronic sounds",
+   "text": "electronic sounds"
+  },
+  {
+   "code": "PRE-M1-T4-D8",
+   "path": "Year 11 / Musical concepts / tone colour / synthesised sounds",
+   "text": "synthesised sounds"
+  },
+  {
+   "code": "PRE-M1-T4-D9",
+   "path": "Year 11 / Musical concepts / tone colour / sound production methods",
+   "text": "sound production methods"
+  },
+  {
+   "code": "PRE-M1-T4-D10",
+   "path": "Year 11 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources.",
+   "text": "traditional and non-traditional ways of using sound sources."
+  },
+  {
+   "code": "PRE-M1-T5-D1",
+   "path": "Year 11 / Musical concepts / texture / the layers of sound and their function",
+   "text": "the layers of sound and their function"
+  },
+  {
+   "code": "PRE-M1-T5-D2",
+   "path": "Year 11 / Musical concepts / texture / the roles of instruments and/or voices.",
+   "text": "the roles of instruments and/or voices."
+  },
+  {
+   "code": "PRE-M1-T6-D1",
+   "path": "Year 11 / Musical concepts / structure / phrases",
+   "text": "phrases"
+  },
+  {
+   "code": "PRE-M1-T6-D2",
+   "path": "Year 11 / Musical concepts / structure / motifs",
+   "text": "motifs"
+  },
+  {
+   "code": "PRE-M1-T6-D3",
+   "path": "Year 11 / Musical concepts / structure / riffs/repetitive patterns",
+   "text": "riffs/repetitive patterns"
+  },
+  {
+   "code": "PRE-M1-T6-D4",
+   "path": "Year 11 / Musical concepts / structure / techniques of call and response/question and answer",
+   "text": "techniques of call and response/question and answer"
+  },
+  {
+   "code": "PRE-M1-T6-D5",
+   "path": "Year 11 / Musical concepts / structure / traditional and non-traditional patterns of musical structure",
+   "text": "traditional and non-traditional patterns of musical structure"
+  },
+  {
+   "code": "PRE-M1-T6-D6",
+   "path": "Year 11 / Musical concepts / structure / structures used in world music",
+   "text": "structures used in world music"
+  },
+  {
+   "code": "PRE-M1-T6-D7",
+   "path": "Year 11 / Musical concepts / structure / structures used in single pieces of music",
+   "text": "structures used in single pieces of music"
+  },
+  {
+   "code": "PRE-M1-T6-D8",
+   "path": "Year 11 / Musical concepts / structure / multi-movement structures (eg symphony).",
+   "text": "multi-movement structures (eg symphony)."
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Creative practice / Performing / solo and as part of an ensemble",
+   "text": "solo and as part of an ensemble"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Creative practice / Performing / music of various genres, periods and styles",
+   "text": "music of various genres, periods and styles"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Creative practice / Performing / music representative of the contexts studied",
+   "text": "music representative of the contexts studied"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Creative practice / Performing / compositions, arrangements and improvisations",
+   "text": "compositions, arrangements and improvisations"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Creative practice / Performing / with different types of technology.",
+   "text": "with different types of technology."
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / investigating some of the cultural contexts of music.",
+   "text": "investigating some of the cultural contexts of music."
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / the concepts of music: the use of technology; music of various cultures; unity, contrast and style",
+   "text": "the concepts of music: the use of technology; music of various cultures; unity, contrast and style"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Creative practice / Listening, analysing and responding / Students’ listening experiences should include a wide range of styles, periods and genres.",
+   "text": "Students’ listening experiences should include a wide range of styles, periods and genres."
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Creative practice / Creating and composing / experimenting",
+   "text": "experimenting"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Creative practice / Creating and composing / improvising",
+   "text": "improvising"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Creative practice / Creating and composing / arranging",
+   "text": "arranging"
+  },
+  {
+   "code": "PRE-M4-T3-D4",
+   "path": "Year 11 / Creative practice / Creating and composing / structuring",
+   "text": "structuring"
+  },
+  {
+   "code": "PRE-M4-T3-D5",
+   "path": "Year 11 / Creative practice / Creating and composing / notating",
+   "text": "notating"
+  },
+  {
+   "code": "PRE-M4-T3-D6",
+   "path": "Year 11 / Creative practice / Creating and composing / using different types of technology.",
+   "text": "using different types of technology."
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Musical concepts / duration / beat: the underlying pulse in music",
+   "text": "beat: the underlying pulse in music"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Musical concepts / duration / rhythm: patterns of long and short sounds and silences found in music",
+   "text": "rhythm: patterns of long and short sounds and silences found in music"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Musical concepts / duration / tempo: the speed of the beat. Music may be relatively fast or slow and may become faster or slower",
+   "text": "tempo: the speed of the beat. Music may be relatively fast or slow and may become faster or slower"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Musical concepts / duration / metre: the grouping of beats. Beats can be grouped in any combination including 2, 3, 4, 5, 6, 7 and so on.",
+   "text": "metre: the grouping of beats. Beats can be grouped in any combination including 2, 3, 4, 5, 6, 7 and so on."
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Musical concepts / duration / regular and irregular metres",
+   "text": "regular and irregular metres"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Musical concepts / duration / metric groupings",
+   "text": "metric groupings"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Musical concepts / duration / tempo",
+   "text": "tempo"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Musical concepts / duration / rhythmic devices such as syncopation, augmentation and diminution",
+   "text": "rhythmic devices such as syncopation, augmentation and diminution"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Musical concepts / duration / methods of notating duration, both traditional and graphic.",
+   "text": "methods of notating duration, both traditional and graphic."
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Musical concepts / pitch / high/low: pitches can be comparatively high or low",
+   "text": "high/low: pitches can be comparatively high or low"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Musical concepts / pitch / direction of pitch movement: up, down, same level",
+   "text": "direction of pitch movement: up, down, same level"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Musical concepts / pitch / melody: a horizontal succession of pitches",
+   "text": "melody: a horizontal succession of pitches"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Musical concepts / pitch / harmony: two or more pitches sounding together",
+   "text": "harmony: two or more pitches sounding together"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Musical concepts / pitch / indefinite pitch: untuned sounds, for example, the speaking voice",
+   "text": "indefinite pitch: untuned sounds, for example, the speaking voice"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Musical concepts / pitch / definite pitch: tuned sounds, for example, the singing voice.",
+   "text": "definite pitch: tuned sounds, for example, the singing voice."
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Musical concepts / pitch / definite and indefinite pitch",
+   "text": "definite and indefinite pitch"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Musical concepts / pitch / pitch direction and contour",
+   "text": "pitch direction and contour"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Musical concepts / pitch / pitch patterns",
+   "text": "pitch patterns"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Musical concepts / pitch / pitch range and register",
+   "text": "pitch range and register"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Musical concepts / pitch / harmony",
+   "text": "harmony"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Musical concepts / pitch / methods of notating pitch, both traditional and graphic",
+   "text": "methods of notating pitch, both traditional and graphic"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Musical concepts / pitch / various scales, modes and other ways of organising pitch.",
+   "text": "various scales, modes and other ways of organising pitch."
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / a range of dynamics, including gradations",
+   "text": "a range of dynamics, including gradations"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / articulations",
+   "text": "articulations"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / tempo, including gradations",
+   "text": "tempo, including gradations"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / stylistic indications.",
+   "text": "stylistic indications."
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Musical concepts / tone colour / sound source material, for example, wood, metal, string, skin, electronic and vocal",
+   "text": "sound source material, for example, wood, metal, string, skin, electronic and vocal"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Musical concepts / tone colour / method of sound production, for example, blowing, hitting, plucking, scraping and shaking",
+   "text": "method of sound production, for example, blowing, hitting, plucking, scraping and shaking"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Musical concepts / tone colour / combination of sound sources, for example, single voice, multiple voices, voices accompanied or unaccompanied by instruments.",
+   "text": "combination of sound sources, for example, single voice, multiple voices, voices accompanied or unaccompanied by instruments."
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / Musical concepts / tone colour / types of instruments and voices",
+   "text": "types of instruments and voices"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / Musical concepts / tone colour / combinations of voices and instruments",
+   "text": "combinations of voices and instruments"
+  },
+  {
+   "code": "HSC-M1-T4-D6",
+   "path": "Year 12 / Musical concepts / tone colour / acoustic sounds",
+   "text": "acoustic sounds"
+  },
+  {
+   "code": "HSC-M1-T4-D7",
+   "path": "Year 12 / Musical concepts / tone colour / electronic sounds",
+   "text": "electronic sounds"
+  },
+  {
+   "code": "HSC-M1-T4-D8",
+   "path": "Year 12 / Musical concepts / tone colour / synthesised sounds",
+   "text": "synthesised sounds"
+  },
+  {
+   "code": "HSC-M1-T4-D9",
+   "path": "Year 12 / Musical concepts / tone colour / sound production methods",
+   "text": "sound production methods"
+  },
+  {
+   "code": "HSC-M1-T4-D10",
+   "path": "Year 12 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources.",
+   "text": "traditional and non-traditional ways of using sound sources."
+  },
+  {
+   "code": "HSC-M1-T5-D1",
+   "path": "Year 12 / Musical concepts / texture / the layers of sound and their function",
+   "text": "the layers of sound and their function"
+  },
+  {
+   "code": "HSC-M1-T5-D2",
+   "path": "Year 12 / Musical concepts / texture / the roles of instruments and/or voices.",
+   "text": "the roles of instruments and/or voices."
+  },
+  {
+   "code": "HSC-M1-T6-D1",
+   "path": "Year 12 / Musical concepts / structure / phrases",
+   "text": "phrases"
+  },
+  {
+   "code": "HSC-M1-T6-D2",
+   "path": "Year 12 / Musical concepts / structure / motifs",
+   "text": "motifs"
+  },
+  {
+   "code": "HSC-M1-T6-D3",
+   "path": "Year 12 / Musical concepts / structure / riffs/repetitive patterns",
+   "text": "riffs/repetitive patterns"
+  },
+  {
+   "code": "HSC-M1-T6-D4",
+   "path": "Year 12 / Musical concepts / structure / techniques of call and response/question and answer",
+   "text": "techniques of call and response/question and answer"
+  },
+  {
+   "code": "HSC-M1-T6-D5",
+   "path": "Year 12 / Musical concepts / structure / traditional and non-traditional patterns of musical structure",
+   "text": "traditional and non-traditional patterns of musical structure"
+  },
+  {
+   "code": "HSC-M1-T6-D6",
+   "path": "Year 12 / Musical concepts / structure / structures used in world music",
+   "text": "structures used in world music"
+  },
+  {
+   "code": "HSC-M1-T6-D7",
+   "path": "Year 12 / Musical concepts / structure / structures used in single pieces of music",
+   "text": "structures used in single pieces of music"
+  },
+  {
+   "code": "HSC-M1-T6-D8",
+   "path": "Year 12 / Musical concepts / structure / multi-movement structures (eg symphony).",
+   "text": "multi-movement structures (eg symphony)."
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / experimenting",
+   "text": "experimenting"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / improvising",
+   "text": "improvising"
+  },
+  {
+   "code": "HSC-M4-T3-D3",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / arranging",
+   "text": "arranging"
+  },
+  {
+   "code": "HSC-M4-T3-D4",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / structuring",
+   "text": "structuring"
+  },
+  {
+   "code": "HSC-M4-T3-D5",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / notating",
+   "text": "notating"
+  },
+  {
+   "code": "HSC-M4-T3-D6",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / using different types of technology.",
+   "text": "using different types of technology."
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / solo and as part of an ensemble",
+   "text": "solo and as part of an ensemble"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / music of various genres, periods and styles",
+   "text": "music of various genres, periods and styles"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / music representative of the contexts studied",
+   "text": "music representative of the contexts studied"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / compositions, arrangements and improvisations",
+   "text": "compositions, arrangements and improvisations"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Music across cultures, traditions and time / Performing / with different types of technology.",
+   "text": "with different types of technology."
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / investigating some of the cultural contexts of music.",
+   "text": "investigating some of the cultural contexts of music."
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / the concepts of music: the use of technology; music of various cultures; unity, contrast and style",
+   "text": "the concepts of music: the use of technology; music of various cultures; unity, contrast and style"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / Students’ listening experiences should include a wide range of styles, periods and genres.",
+   "text": "Students’ listening experiences should include a wide range of styles, periods and genres."
+  }
+ ],
+ "questions": [
+  {
+   "id": "m12010201501",
+   "year": 2015,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2015 HSC Music 1 Aural Skills examination. How is melodic material used in this excerpt?"
+  },
+  {
+   "id": "m12010201502",
+   "year": 2015,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2015 HSC Music 1 Aural Skills examination. Explain how the layers of sound are used in this excerpt to achieve unity and contrast."
+  },
+  {
+   "id": "m12010201503",
+   "year": 2015,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2015 HSC Music 1 Aural Skills examination. Compare how the concepts of music are used in the two versions of I Just Don't Know What to Do With Myself."
+  },
+  {
+   "id": "m12010201504",
+   "year": 2015,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2015 HSC Music 1 Aural Skills examination. How are the voices used to create musical interest in this excerpt?"
+  },
+  {
+   "id": "m12010201601",
+   "year": 2016,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2016 HSC Music 1 Aural Skills examination. Describe the structure of this excerpt with reference to the use of sound sources."
+  },
+  {
+   "id": "m12010201602",
+   "year": 2016,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2016 HSC Music 1 Aural Skills examination. Explain how pitch relates to texture in this excerpt."
+  },
+  {
+   "id": "m12010201603",
+   "year": 2016,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2016 HSC Music 1 Aural Skills examination. How are expressive techniques and duration used in this excerpt?"
+  },
+  {
+   "id": "m12010201604",
+   "year": 2016,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2016 HSC Music 1 Aural Skills examination. Explain how tension is achieved in this excerpt."
+  },
+  {
+   "id": "m12010201701",
+   "year": 2017,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2017 HSC Music 1 Aural Skills examination. Describe the use of pitch in this excerpt."
+  },
+  {
+   "id": "m12010201702",
+   "year": 2017,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2017 HSC Music 1 Aural Skills examination. How is musical interest created in this excerpt?"
+  },
+  {
+   "id": "m12010201703",
+   "year": 2017,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2017 HSC Music 1 Aural Skills examination. Explore the roles of the sound sources in this excerpt."
+  },
+  {
+   "id": "m12010201704",
+   "year": 2017,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2017 HSC Music 1 Aural Skills examination. Explain how both unity and contrast are achieved in this excerpt."
+  },
+  {
+   "id": "m12010201801",
+   "year": 2018,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2018 HSC Music 1 Aural Skills examination. Describe the use of tone colour in this excerpt."
+  },
+  {
+   "id": "m12010201802",
+   "year": 2018,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2018 HSC Music 1 Aural Skills examination. Explore how duration is used in this excerpt."
+  },
+  {
+   "id": "m12010201803",
+   "year": 2018,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2018 HSC Music 1 Aural Skills examination. Analyse how contrast is used in this excerpt."
+  },
+  {
+   "id": "m12010201804",
+   "year": 2018,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2018 HSC Music 1 Aural Skills examination. Explain how texture is used in this excerpt."
+  },
+  {
+   "id": "m12010201901",
+   "year": 2019,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2019 HSC Music 1 Aural Skills examination. Explain how duration is used in this excerpt."
+  },
+  {
+   "id": "m12010201902",
+   "year": 2019,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2019 HSC Music 1 Aural Skills examination. Explore the use of pitch and dynamics and expressive techniques in this excerpt."
+  },
+  {
+   "id": "m12010201903",
+   "year": 2019,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2019 HSC Music 1 Aural Skills examination. Describe how the use of technology has affected tone colour and texture in this excerpt."
+  },
+  {
+   "id": "m12010201904",
+   "year": 2019,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "from the 2019 HSC Music 1 Aural Skills examination. Analyse the use of both unity and contrast in this work."
+  },
+  {
+   "id": "m12010202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / structure / structures used in single pieces of music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 46 seconds) from Gibraltar by Beirut will be played FIVE times for you to answer Question 1. This excerpt is from 0:00–1:46 of Gibraltar by Beirut on the 'No No No' album (2015). Describe the structure of this excerpt, with reference to its performing media."
+  },
+  {
+   "id": "m12010202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / dynamics and expressive techniques / a range of dynamics, including gradations | Year 12 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources. | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 45 seconds) from 'Overture' from Colas Breugnon, Op. 24 by Dmitri Kabalevsky will be played SIX times for you to answer Question 2. This excerpt is from 1:14–2:00 of the BBC Philharmonic recording conducted by Vassily Sinaisky (2003, Chandos recordings). Explore the use of dynamics and expressive techniques, and tone colour in this excerpt."
+  },
+  {
+   "id": "m12010202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 13 seconds) from Didge Fusion by William Barton will be played SIX times for you to answer Question 3. This excerpt is from 4:00–5:13 of Didge Fusion by William Barton which appears on the 'Birdsong at Dusk' album (2014 ABC Classic). Explain how tension is created in this excerpt."
+  },
+  {
+   "id": "m12010202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / duration / rhythm: patterns of long and short sounds and silences found in music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 30 seconds) from Everlasting Motion (feat. Hamid El Kasri) by Jacob Collier will be played SIX times for you to answer Question 4. This excerpt is from 5:05–6:34 of Everlasting Motion (feat. Hamid El Kasri) by Jacob Collier which appears on the 'Djesse Volume 1' album (2018). Analyse how musical interest is achieved in this excerpt. In your answer, make reference to duration and ONE other concept of music."
+  },
+  {
+   "id": "m12010202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / duration / rhythm: patterns of long and short sounds and silences found in music | Year 12 / Musical concepts / pitch / harmony | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 5 seconds) from 'Stay Alive' from Hamilton by Lin-Manuel Miranda will be played FIVE times for you to answer Question 1. How are duration and pitch used in this excerpt? This excerpt is from 0:00–1:05 of Stay Alive by Lin-Manuel Miranda on the Hamilton (Original Broadway Cast Recording) album (2015 Atlantic Records)."
+  },
+  {
+   "id": "m12010202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / texture / the roles of instruments and/or voices. | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 13 seconds) from Rock You by Dirty Loops will be played SIX times for you to answer Question 2. This excerpt is from 0:00–1:13 of Rock You by Dirty Loops which appears on the Phoenix album (2020). Describe the roles of each layer of sound in this excerpt, with specific reference to performing media."
+  },
+  {
+   "id": "m12010202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources. | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "This question is based on excerpts from two versions of Passepied by Claude Debussy. Version 1 (1 minute) is performed by The Punch Brothers. Version 2 (1 minute 27 seconds) is performed by Super Swing Machine. Each version will be played FOUR times for you to answer Question 3. Version 1 is from 0:00–1:00 of Passepied (Debussy) by Punch Brothers on The Phosphorescent Blues album (2015 Nonesuch Records). Version 2 is from 0:00–1:27 of Passepied by Gerard Badini on the Mister Swing Meets Claude Debussy album (1991 Mantra Records). Compare how tone colour is explored in the two versions of Passepied."
+  },
+  {
+   "id": "m12010202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 48 seconds) from 'Gloria Tibi' from Mass by Leonard Bernstein will be played SIX times for you to answer Question 4. This is from Gloria Tibi by Leonard Bernstein on the Bernstein: Mass – A Theatre Piece for Singers, Players and Dancers I album (1971 Sony Classical). How are unity and contrast achieved in this excerpt?"
+  },
+  {
+   "id": "m12010202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / pitch / harmony | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 39 seconds) from Next To Me by RÜfüs Du Sol will be played FIVE times for you to answer Question 1. Describe how pitch is used in this excerpt. This excerpt is from 0:00–1:39 of Next To Me by Rüfüs Du Sol from the single 'Next To Me' (2021)."
+  },
+  {
+   "id": "m12010202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / structure / structures used in single pieces of music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 47 seconds) from From Uluru by Peter Sculthorpe will be played SIX times for you to answer Question 2. Explain how repetition is used in this excerpt. This excerpt is from 0:00–1:47 of From Uluru by Peter Sculthorpe on the 'Peter Sculthorpe Sun Music' album (2021)."
+  },
+  {
+   "id": "m12010202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / texture / the roles of instruments and/or voices. | Year 12 / Musical concepts / structure / structures used in single pieces of music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 38 seconds) from MYWD by Baker Boy will be played SIX times for you to answer Question 3. Describe how texture and structure are used in this excerpt. This excerpt is from 0:00–1:38 of MYWD by Baker Boy on the 'Gela' album (2021)."
+  },
+  {
+   "id": "m12010202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources. | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 29 seconds) from I Will Survive + Maroon 5 Mashup by Pomplamoose ft. Andie Case will be played SIX times for you to answer Question 4. Explain how contrast has been achieved in this excerpt through the use of tone colour. This excerpt is from 0:00–1:29 of I Will Survive + Maroon 5 Mashup by Pomplamoose ft. Andie Case."
+  },
+  {
+   "id": "m12010202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / duration / rhythm: patterns of long and short sounds and silences found in music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 49 seconds) from 15 Step by The Swingles will be played FIVE times for you to answer Question 1. Outline the use of duration in this excerpt. This excerpt is from 0:00–1:49 of 15 Step by The Swingles from the on the 'Snapshots, Vol. II' album (2021)."
+  },
+  {
+   "id": "m12010202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 40 seconds) from 1979 by The Smashing Pumpkins will be played FIVE times for you to answer Question 2. Explain how interest is maintained in this excerpt. Refer to TWO concepts in your answer. This excerpt is from 0:00–1:39 of 1979 by The Smashing Pumpkins on the 'Mellon Collie and the Infinite Sadness (Deluxe Edition)' album (1995)."
+  },
+  {
+   "id": "m12010202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / texture / the roles of instruments and/or voices. | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 30 seconds) from The Beautiful Steppe by Batzorig Vaanchig will be played FIVE times for you to answer Question 3. Describe the use of texture in this excerpt. This excerpt is from 0:00–1:30 of The Beautiful Steppe by Batzorig Vaanchig on the 'Marco Polo (Music from the Netflix Original Series)' album (2015)."
+  },
+  {
+   "id": "m12010202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources. | Year 12 / Musical concepts / structure / structures used in single pieces of music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 41 seconds) from Come Along by Cosmo Sheldrake will be played SIX times for you to answer Question 4. Describe how performing media is used to create contrast in this excerpt. This excerpt is from 2:36–4:19 (end) of Come Along by Cosmo Sheldrake on the 'The Much Much How How and I' album (2019)."
+  },
+  {
+   "id": "m12010202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / structure / structures used in single pieces of music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 22 seconds) from Heal by Mitch Tambo will be played FIVE times for you to answer Question 1. This excerpt is from 0:00–1:22 of Heal by Mitch Tambo from the single 'Heal' (Sony Music Entertainment, 2021). Outline the use of structure in this excerpt."
+  },
+  {
+   "id": "m12010202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / pitch / harmony | Year 12 / Musical concepts / duration / rhythm: patterns of long and short sounds and silences found in music | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 49 seconds) from Call Me Joker by Hildur Guðnadóttir will be played FIVE times for you to answer Question 2. This excerpt is from 0:00–1:49 of Call Me Joker by Hildur Guðnadóttir on the 'Joker (Original Motion Picture Soundtrack)' album (2019). Explain how the use of pitch and duration has created tension in this excerpt."
+  },
+  {
+   "id": "m12010202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / dynamics and expressive techniques / a range of dynamics, including gradations | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 43 seconds) from Gloria Patri by John Rutter will be played FIVE times for you to answer Question 3. This excerpt is from 0:00–1:43 of Gloria Patri by John Rutter on the 'Magnificat' album (Collegium, 1991). Explain how the composer uses dynamics and expressive techniques to create variety in this excerpt."
+  },
+  {
+   "id": "m12010202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / texture / the roles of instruments and/or voices. | Year 12 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources. | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 40 seconds) from Edge of Midnight (Midnight Sky Remix) by Miley Cyrus ft. Stevie Nicks will be played SIX times for you to answer Question 4. This excerpt is from 0:00–1:40 of Edge of Midnight (Midnight Sky Remix) by Miley Cyrus ft. Stevie Nicks on the 'Plastic Hearts' album (2020). Analyse the use of texture and tone colour in this excerpt."
+  },
+  {
+   "id": "m12010202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 17 seconds) from Steer by Missy Higgins will be played FIVE times for you to answer Question 1. This excerpt is from 0:00–1:15 of Steer by Missy Higgins from the album 'On A Clear Night' (Eleven: A Music Company, 2007). Describe how variety is achieved in this excerpt."
+  },
+  {
+   "id": "m12010202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "This question is based on excerpts from the original of Youngblood by 5 Seconds of Summer and a version by 3%. The original (56 seconds) is performed by 5 Seconds of Summer. This excerpt is from 0:00–0:55 of Youngblood by 5 Seconds of Summer from the single/album 'Youngblood' (One Mode Productions Limited, 2018). The version (1 minute 19 seconds) is performed by 3%. This excerpt is from 0:00–1:18 of Youngblood by 3% from the single 'Youngblood (triple j Like A Version)' (Australian Broadcasting Corporation, 2024). Each excerpt will be played FIVE times for you to answer Question 2. Compare the 5 Seconds of Summer original and the 3% version of Youngblood."
+  },
+  {
+   "id": "m12010202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 33 seconds) from Thick of It performed by Rahilu will be played SIX times for you to answer Question 3. This excerpt is from 0:19–1:51 of Thick of It by Rahilu from the single 'Thick of It (Jazz Version)' (RAHILU, under exclusive licence to TMG, 2025). Explain how style is used in this excerpt. In your answer, refer to at least TWO concepts of music."
+  },
+  {
+   "id": "m12010202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Musical concepts / structure / structures used in single pieces of music | Year 12 / Musical concepts / tone colour / traditional and non-traditional ways of using sound sources. | Year 12 / Music across cultures, traditions and time / Listening, analysing and responding / identifying and commenting on: duration; pitch; dynamics and expressive techniques; tone colour; texture; structure; analysing; collecting information; using different types of technology",
+   "text": "An excerpt (1 minute 27 seconds) from the third movement of Symphony No. 1 in E Minor, 'Juba Dance' by Florence Price will be played SIX times for you to answer Question 4. This excerpt is from 0:00–1:27 of Symphony No.1 in E minor: III Juba Dance Allegro by Florence Price from the album 'Florence Price: Symphonies Nos. 1 & 3' (Deutsche Grammophon, 2021). Describe the roles of performing media in relation to the structure of this excerpt."
+  }
+ ]
+}

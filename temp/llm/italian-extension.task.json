@@ -1,0 +1,367 @@
+{
+ "course_id": "italian-extension",
+ "course_name": "Italian Extension",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "HSC-M1-T4-T1-D1",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / language"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D2",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / colloquial"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D3",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / dialect"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D4",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / accent"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D5",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / use of irony"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D6",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / satire"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D7",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / humour"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D8",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / tenses"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D9",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / ellipses"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D10",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / structure"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D11",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / setting"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D12",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / time"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D13",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / place"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D14",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / cultural aspects"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D15",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / character"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D16",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / key/secondary"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D17",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / imagery"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D18",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / symbolism"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D19",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / recurrent motif"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D20",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / simile/metaphor"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D21",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / relationship between author/director/narrator/singer and the audience"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D22",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / narrative technique"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D23",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / perspective"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D24",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / point of view"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D25",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / tone and mood"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D26",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / novel"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D27",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / plot development, sequencing of events, use of flashback"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D28",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / use of dialogue, narrative"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D29",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / use of allegory, extended metaphor"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D30",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / short story"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D31",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / brevity and compactness"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D32",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / focus on one situation or a few crucial moments"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D33",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / limited character development"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D34",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / fragmented plot"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D35",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / inconclusive or unexpected ending"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D36",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / song"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D37",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / instrumentation, voice, melody, rhythm, tempo"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D38",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / use of repetition"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D39",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / use of refrain"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D40",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / rhyme, rhythm, assonance, alliteration"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D41",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / film"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D42",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / shot composition/framing/editing"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D43",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / lighting/sound/colour"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D44",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Prescribed extracts / costuming"
+  },
+  {
+   "code": "HSC-M1-T4-T2-D1",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Related texts / formal letter"
+  },
+  {
+   "code": "HSC-M1-T4-T2-D2",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Related texts / monologue"
+  },
+  {
+   "code": "HSC-M1-T4-T2-D3",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Related texts / narrative account*"
+  },
+  {
+   "code": "HSC-M1-T4-T2-D4",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Related texts / script of a conversation"
+  },
+  {
+   "code": "HSC-M1-T4-T2-D5",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film) / Related texts / short essay"
+  }
+ ],
+ "questions": [
+  {
+   "id": "2020-hsc-italian-extension01",
+   "year": 2020,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film)",
+   "text": ". Read the extract from the novel Bianca come il latte, rossa come il sangue and then answer in ENGLISH the questions that follow. The prescribed text extract is omitted from the official paper due to copyright restrictions; answer using the cues printed in each part.\n(a) Sto già meglio. (line 1)\nExplain this change in how Leo is feeling.\n(b) In this extract, silenzio appears three times.\nWhat role does silence play in this extract?\n(c) Leo's character evolves in this extract.\nHow is language used to illustrate this?\n(d) Analyse the way in which education is explored in this extract and in ONE other part of the novel."
+  },
+  {
+   "id": "2020-hsc-italian-extension03",
+   "year": 2020,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": ". Ti è stato chiesto di contribuire un articolo ad una rivista per giovani. L'argomento è: «La libertà di espressione è essenziale.» Scrivi l'articolo esprimendo il tuo punto di vista.\nYou have been asked to contribute an article to a youth magazine. The topic is, 'Freedom of expression is essential.' Write the article expressing your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2020-hsc-italian-extension04",
+   "year": 2020,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Relationships",
+   "text": ". Ti è stato chiesto di contribuire un articolo ad una rivista per giovani. L'argomento è: «La natura dei nostri rapporti è determinata dalle circostanze.» Scrivi l'articolo esprimendo il tuo punto di vista.\nYou have been asked to contribute an article to a youth magazine. The topic is, 'The nature of our relationships is determined by circumstances.' Write the article expressing your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2021-hsc-italian-extension01",
+   "year": 2021,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film)",
+   "text": ". Read the extract from the novel Bianca come il latte, rossa come il sangue and then answer in ENGLISH the questions that follow. The prescribed text extract is omitted from the official paper due to copyright restrictions; answer using the cues printed in each part.\n(a) Con il braccio destro ancora mezzo incriccato … (lines 11–12)\nWhat has led to this situation?\n(b) Mi dovrò vedere e capire chi sono. (line 4)\nExplain why Leo says this.\n(c) Compare Leo's opinion of his mother in this extract with his opinion of her later in the novel.\n(d) The relationship between Leo and Niko is evident throughout the novel.\nAnalyse how friendship is explored through this relationship in this extract and ONE other part of the novel."
+  },
+  {
+   "id": "2021-hsc-italian-extension03",
+   "year": 2021,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Relationships",
+   "text": ". Sei stato/a invitato/a dalla tua scuola a parlare durante una serata informativa per genitori e studenti. L'argomento è: «I gruppi a cui apparteniamo influenzano troppo le nostre decisioni.» Scrivi il testo del tuo discorso in cui esprimi il tuo punto di vista.\nYou have been invited by your school to give a talk at a parent/student information evening. The topic is, 'The groups we belong to have too much influence on our decisions.'\nWrite the script of your talk in which you express your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2021-hsc-italian-extension04",
+   "year": 2021,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Journeys",
+   "text": ". Sei stato/a invitato/a dalla tua scuola a parlare durante una serata informativa per genitori e studenti. L'argomento è: «Ribellarsi è imperativo per lo sviluppo personale.» Scrivi il testo del tuo discorso in cui esprimi il tuo punto di vista.\nYou have been invited by your school to give a talk at a parent/student information evening. The topic is, 'To rebel is imperative for personal growth.'\nWrite the script of your talk in which you express your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2022-hsc-italian-extension01",
+   "year": 2022,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film)",
+   "text": ". Read the extract from the novel Bianca come il latte, rossa come il sangue and then answer in ENGLISH the questions that follow. The prescribed text extract is omitted from the official paper due to copyright restrictions; answer using the cues printed in each part.\n(a) Questo è il primo anno in cui ne avevo voglia. (paragraph 1)\nExplain why Leo says this.\n(b) What is the significance of Leo's inability to open Silvia's letter?\n(c) How is Leo's state of mind in this extract conveyed? In your answer, refer to language and content.\n(d) Analyse how Leo's perception of love evolves in the course of the novel. In your answer, refer specifically to this extract and ONE other part of the novel."
+  },
+  {
+   "id": "2022-hsc-italian-extension03",
+   "year": 2022,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": ". Ti hanno chiesto di scrivere un articolo per il sito web della biblioteca comunale. L'argomento è: «Affrontare le avversità rafforza sempre la resilienza.» Scrivi l'articolo in cui esprimi il tuo punto di vista.\nYou have been asked to write an article for your local library's website. The topic is, 'Facing adversity always strengthens resilience.'\nWrite the article in which you express your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2022-hsc-italian-extension04",
+   "year": 2022,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Education",
+   "text": ". Ti hanno chiesto di scrivere un articolo per il sito web del tuo istituto scolastico. L'argomento è: «La scuola dovrebbe dare più responsabilità a studenti di tutte le età.» Scrivi l'articolo in cui esprimi il tuo punto di vista.\nYou have been asked to write an article for your school website. The topic is, 'School should give more responsibility to students of all ages.'\nWrite the article in which you express your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2023-hsc-italian-extension01",
+   "year": 2023,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film)",
+   "text": ". Read the extract from the novel Bianca come il latte, rossa come il sangue and then answer in ENGLISH the questions that follow. The prescribed text extract is omitted from the official paper due to copyright restrictions; answer using the cues printed in each part.\n(a) Ci devo provare. (line 3)\nWhat prompts Leo to say this?\n(b) Outline Leo's attitude towards his mother in this extract.\n(c) Explain the importance of music for Leo. In your answer, refer to both language and content.\n(d) Analyse the way in which Leo's developing self-awareness is explored in this extract and ONE other part of the novel."
+  },
+  {
+   "id": "2023-hsc-italian-extension03",
+   "year": 2023,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Relationships",
+   "text": ". Ti è stato chiesto di partecipare ad un concorso di saggi per la tua scuola. Il tema è: «Le persone di successo danno priorità ai rapporti significativi.» Scrivi il tuo saggio in cui esprimi il tuo punto di vista.\nYou have been invited to take part in an essay competition at your school. The topic is, 'Successful people prioritise meaningful relationships.'\nWrite your essay expressing your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2023-hsc-italian-extension04",
+   "year": 2023,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Education",
+   "text": ". Ti è stato chiesto di partecipare ad un concorso di saggi per la tua scuola. Il tema è: «La tecnologia non è nemica dell'istruzione.» Scrivi il tuo saggio in cui esprimi il tuo punto di vista.\nYou have been invited to take part in an essay competition at your school. The topic is, 'Technology is not the enemy of education.'\nWrite your essay expressing your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2024-hsc-italian-extension01",
+   "year": 2024,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film)",
+   "text": ". Read the extract from the novel Bianca come il latte, rossa come il sangue and then answer in ENGLISH the questions that follow. The prescribed text extract is omitted from the official paper due to copyright restrictions; answer using the cues printed in each part.\n(a) I prof sono come i boa (line 2).\nWhat has led Leo to describe teachers in this way?\n(b) Explain the impact of the use of the phrase non lo sa (lines 23–26) in this extract.\n(c) Analyse how D'Avenia's use of imagery highlights Leo's intense emotions in this extract.\n(d) 'We need other people to support us when navigating significant life events.'\nExplain how this statement is explored in this extract and in ONE other part of the novel."
+  },
+  {
+   "id": "2024-hsc-italian-extension03",
+   "year": 2024,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Relationships",
+   "text": ". Sei stato/a invitato/a dalla tua scuola di fare il discorso di laurea. L'argomento è: «Le esigenze dell'individuo non sono mai importanti quanto le esigenze del gruppo.» Scrivi il testo del tuo discorso in cui esprimi il tuo punto di vista.\nYou have been invited by your school to give the graduation speech. The topic is, 'The needs of the individual are never as important as the needs of the group.' Write the script of your speech in which you express your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2024-hsc-italian-extension04",
+   "year": 2024,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society",
+   "text": ". Sei stato/a invitato/a dalla tua scuola di fare il discorso di laurea. L'argomento è: «Le scelte difficili che prendiamo nella vita, ci portano a risultati positivi.» Scrivi il testo del tuo discorso in cui esprimi il tuo punto di vista.\nYou have been invited by your school to give the graduation speech. The topic is, 'The difficult choices that we make in life lead us to positive outcomes.' Write the script of your speech in which you express your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2025-hsc-italian-extension01",
+   "year": 2025,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Il Campione (film)",
+   "text": ". Read the extract from the film Il Campione and then answer in ENGLISH the questions that follow. The prescribed text extract is omitted from the official paper due to copyright restrictions; answer using the cues printed in each part.\n(a) Valerio: 500,000… cosa? (line 27)\nHow does this question highlight what Sylvie values compared with what Valerio values?\n(b) Explain how this extract demonstrates the nature of the relationship between Christian and Enzo.\n(c) Analyse how the director highlights the differences between Valerio and Christian, as reflected in their homes. Support your answer with reference to film techniques.\n(d) 'The needs of all learners must be met for education to be truly effective.'\nExplain how this statement is explored in this extract and in ONE other part of the film."
+  },
+  {
+   "id": "2025-hsc-italian-extension03",
+   "year": 2025,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Journeys",
+   "text": ". Ti è stato chiesto di scrivere un articolo per una rivista online per i giovani. Il tema è, «La ricchezza, la popolarità e la fama non sono sufficienti per sostenerci.» Scrivi l'articolo in cui esprimi il tuo punto di vista.\nYou have been asked to write an article for an online youth magazine. The topic is, 'Wealth, popularity and fame are not enough to sustain us.'\nWrite the article expressing your point of view.\nWrite approximately 300 words in ITALIAN."
+  },
+  {
+   "id": "2025-hsc-italian-extension04",
+   "year": 2025,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Education",
+   "text": ". Ti è stato chiesto di scrivere un articolo per una rivista online per i giovani. Il tema è, «L'istruzione dovrebbe essere valorizzata come un processo che dura tutta la vita e che può assumere diverse forme.» Scrivi l'articolo in cui esprimi il tuo punto di vista.\nYou have been asked to write an article for an online youth magazine. The topic is, 'Education needs to be valued as a lifelong process that can take many forms.'\nWrite the article expressing your point of view.\nWrite approximately 300 words in ITALIAN."
+  }
+ ]
+}

@@ -1,0 +1,1885 @@
+{
+ "course_id": "legal-studies",
+ "course_name": "Legal Studies",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Legal themes and skills / Legal themes / Relationship between law, justice and society"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Legal themes and skills / Legal themes / Development of law as a reflection of society’s values"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Legal themes and skills / Legal themes / Effectiveness of legal and non-legal measures in achieving justice for individuals, groups and society"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Legal themes and skills / Analysis and use of sources / Use and integrate a range of evidence, including legislation, cases, media, international instruments, documents, expert opinions and statistics"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Legal themes and skills / Analysis and use of sources / Analyse evidence to identify and account for the different perspectives of individuals and groups in society"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Legal themes and skills / Analysis and use of sources / Distinguish between fact and opinion"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Legal themes and skills / Interpretation / Examine the nature of the relationship between law, justice and society"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Legal themes and skills / Interpretation / Analyse the development of law as a reflection of society’s values"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Legal themes and skills / Interpretation / Form judgements about the effectiveness of legal and non-legal measures in achieving justice for individuals and society"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Legal themes and skills / Investigation and research / Acknowledge sources appropriately"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Legal themes and skills / Investigation and research / Examine legal issues that illustrate how the law operates in practice"
+  },
+  {
+   "code": "PRE-M1-T5-D1",
+   "path": "Year 11 / Legal themes and skills / Evaluation / Construct and develop reasoned arguments supported by relevant evidence"
+  },
+  {
+   "code": "PRE-M1-T5-D2",
+   "path": "Year 11 / Legal themes and skills / Evaluation / Evaluate the responsiveness of the legal system to changing values, events, the media, outdated laws and developments in technology"
+  },
+  {
+   "code": "PRE-M1-T5-D3",
+   "path": "Year 11 / Legal themes and skills / Evaluation / Evaluate the effectiveness of the law using criteria. These include: accessibility of the law; achievement of justice; application of the rule of law; capacity to meet society’s needs; capacity to uphold community standards; capacity to uphold the interests of justice; enforceability of legal measures; need for law reform; protection of individual rights; resource efficiency; responsiveness of the law"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Investigating the law / Legal foundations / The meaning and function of the law"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Investigating the law / Legal foundations / Characteristics of effective law"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Investigating the law / Legal foundations / Ways to classify the law, including binding or non-binding, written or unwritten, public or private, criminal or civil, common or statute, and domestic or international"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Investigating the law / Legal foundations / Principles of justice, including equality, access and fairness"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Investigating the law / Legal foundations / The relationship between ethics and the law"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Investigating the law / Legal foundations / Principles of procedural fairness, including a fair hearing and rules against bias"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Investigating the law / Legal foundations / The rule of law and its importance to individuals, groups, government and society"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Investigating the law / Legal foundations / Consequences of an absence of law or a misuse of law"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Investigating the law / Aboriginal and Torres Strait Islander Customary Lore / The significance and diversity of Customary Lore for Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Investigating the law / Aboriginal and Torres Strait Islander Customary Lore / The roles of Elders in maintaining and upholding Customary Lore, including mediation and traditional dispute resolution"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Investigating the law / Aboriginal and Torres Strait Islander Customary Lore / The interconnectedness of Country, Peoples, Cultural Practices and kinship that underpins Customary Lore"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Investigating the law / Aboriginal and Torres Strait Islander Customary Lore / Responsibilities in caring for Country, including land and water management"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Investigating the law / Sources of law / The origin and development of common law in Australia"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Investigating the law / Sources of law / Features of the doctrine of precedent and its application in law"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Investigating the law / Sources of law / Statute law and the steps in the legislative process"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Investigating the law / Sources of law / The role and types of delegated legislation"
+  },
+  {
+   "code": "PRE-M2-T4-D1",
+   "path": "Year 11 / Investigating the law / Legal institutions / The role, jurisdiction and hierarchy of courts in NSW and Australia"
+  },
+  {
+   "code": "PRE-M2-T4-D2",
+   "path": "Year 11 / Investigating the law / Legal institutions / The purpose of specialist courts, including the Children’s Court and the Coroner’s Court"
+  },
+  {
+   "code": "PRE-M2-T4-D3",
+   "path": "Year 11 / Investigating the law / Legal institutions / Features of the adversarial system"
+  },
+  {
+   "code": "PRE-M2-T4-D4",
+   "path": "Year 11 / Investigating the law / Legal institutions / The role and structure of parliament in NSW and Australia"
+  },
+  {
+   "code": "PRE-M2-T4-D5",
+   "path": "Year 11 / Investigating the law / Legal institutions / The relationship between courts and parliament"
+  },
+  {
+   "code": "PRE-M2-T5-D1",
+   "path": "Year 11 / Investigating the law / The constitutional framework / The creation and function of the Australian Constitution"
+  },
+  {
+   "code": "PRE-M2-T5-D2",
+   "path": "Year 11 / Investigating the law / The constitutional framework / The division of powers between federal, state and territory governments"
+  },
+  {
+   "code": "PRE-M2-T5-D3",
+   "path": "Year 11 / Investigating the law / The constitutional framework / Reasons for the separation of powers"
+  },
+  {
+   "code": "PRE-M2-T5-D4",
+   "path": "Year 11 / Investigating the law / The constitutional framework / The role of the High Court in interpreting the Constitution"
+  },
+  {
+   "code": "PRE-M2-T5-D5",
+   "path": "Year 11 / Investigating the law / The constitutional framework / Amending the Constitution through referendums"
+  },
+  {
+   "code": "PRE-M2-T6-D1",
+   "path": "Year 11 / Investigating the law / The global legal system / The formation of international law through customary law and instruments"
+  },
+  {
+   "code": "PRE-M2-T6-D2",
+   "path": "Year 11 / Investigating the law / The global legal system / The principle of state sovereignty and its impact on international and domestic law"
+  },
+  {
+   "code": "PRE-M2-T6-D3",
+   "path": "Year 11 / Investigating the law / The global legal system / Responsibilities of nation-states under international law, including Australia’s obligations"
+  },
+  {
+   "code": "PRE-M2-T6-D4",
+   "path": "Year 11 / Investigating the law / The global legal system / The purpose of the United Nations and its participation in international law"
+  },
+  {
+   "code": "PRE-M2-T6-D5",
+   "path": "Year 11 / Investigating the law / The global legal system / The purpose of intergovernmental organisations in encouraging cooperation among nation-states"
+  },
+  {
+   "code": "PRE-M2-T6-D6",
+   "path": "Year 11 / Investigating the law / The global legal system / The role of international courts and tribunals in resolving disputes"
+  },
+  {
+   "code": "PRE-M2-T6-D7",
+   "path": "Year 11 / Investigating the law / The global legal system / The participation of non-government organisations in international law"
+  },
+  {
+   "code": "PRE-M2-T7-D1",
+   "path": "Year 11 / Investigating the law / Legal rights / The relationship between the rights and responsibilities of individuals"
+  },
+  {
+   "code": "PRE-M2-T7-D2",
+   "path": "Year 11 / Investigating the law / Legal rights / Sources of rights derived from the Australian Constitution, statute law, common law and international law"
+  },
+  {
+   "code": "PRE-M2-T7-D3",
+   "path": "Year 11 / Investigating the law / Legal rights / Domestic and international protection of rights"
+  },
+  {
+   "code": "PRE-M2-T7-D4",
+   "path": "Year 11 / Investigating the law / Legal rights / Consequences of a breach of rights"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Disputes under the law / Criminal law / The purpose and characteristics of criminal law"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Disputes under the law / Criminal law / Elements of a crime, including actus reus, mens rea and causation"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Disputes under the law / Criminal law / Types of crime, including strict liability, summary and indictable, and crimes against people and property"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Disputes under the law / Criminal law / The burden and standard of proof in criminal law"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Disputes under the law / Criminal law / Procedures in NSW criminal courts, including legal representation"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Disputes under the law / Criminal law / The role of legal personnel and the jury in a criminal trial"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Disputes under the law / Criminal law / Types and aims of punishments"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Disputes under the law / Criminal law / Key concepts of justice as illustrated through the operation of the law in a criminal case"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Disputes under the law / Civil law / The purpose and characteristics of civil law"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Disputes under the law / Civil law / Elements of civil law, including breach, causation and loss"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Disputes under the law / Civil law / Types of civil law, including torts and contracts"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Disputes under the law / Civil law / The burden and standard of proof in civil law"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Disputes under the law / Civil law / Procedures in NSW tribunals and civil courts, including alternative methods of resolving disputes"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Disputes under the law / Civil law / The role of legal personnel and the jury in a civil trial"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Disputes under the law / Civil law / Types and aims of remedies"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Disputes under the law / Civil law / Key concepts of justice as illustrated through the operation of the law in a civil case"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / The purpose and characteristics of administrative law"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / Reasons individuals and groups have disputes with the state"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / Ways to address disputes through non-government organisations and the media"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / Ways to address disputes through government reviews, courts and tribunals"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / The role of the Ombudsman in investigating complaints and providing remedies"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / The purpose of a royal commission"
+  },
+  {
+   "code": "PRE-M3-T3-D7",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / The findings and recommendations of royal commissions, including the Royal Commission into Aboriginal Deaths in Custody and the Royal Commission into Misconduct in the Banking, Superannuation and Financial Services Industry"
+  },
+  {
+   "code": "PRE-M3-T3-D8",
+   "path": "Year 11 / Disputes under the law / Disputes with the state / Key concepts of justice as illustrated through the operation of a dispute between individuals or groups and the state"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Changing the law / Reasons for change / Recognising changing values"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Changing the law / Reasons for change / Maintaining relevance in society"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Changing the law / Reasons for change / Adapting to technological change"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Changing the law / Reasons for change / Upholding international standards"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Changing the law / Reasons for change / Amending existing or outdated laws"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Changing the law / Reasons for change / Addressing the needs of individuals, groups or society"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Changing the law / Drivers of change / the recognition of land rights in NSW and native title for Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Changing the law / Drivers of change / ONE other case study of law reform selected from NSW or the federal level."
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Changing the law / Drivers of change / Ways to influence change, including activism, advocacy, public opinion, investigations, findings and recommendations"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Changing the law / Drivers of change / Informal methods of change by individuals, advocacy groups and the media"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Changing the law / Drivers of change / Formal methods of change through the legislative process, judicial decisions, royal commissions, law reform commissions and inquiries"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Changing the law / Processes of change / Legislative methods"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Changing the law / Processes of change / Executive methods"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Changing the law / Processes of change / Judicial methods"
+  },
+  {
+   "code": "PRE-M6-T1-D1",
+   "path": "Year 11 / Case study 1: Young people / The nature of the experience / The need for protection under the law"
+  },
+  {
+   "code": "PRE-M6-T1-D2",
+   "path": "Year 11 / Case study 1: Young people / The nature of the experience / Reasons for encountering the legal system"
+  },
+  {
+   "code": "PRE-M6-T1-D3",
+   "path": "Year 11 / Case study 1: Young people / The nature of the experience / Issues arising from contact with the law, including evolving capacity, the age of criminal responsibility and recidivism"
+  },
+  {
+   "code": "PRE-M6-T2-D1",
+   "path": "Year 11 / Case study 1: Young people / Access to justice / Protection under domestic and international law"
+  },
+  {
+   "code": "PRE-M6-T2-D2",
+   "path": "Year 11 / Case study 1: Young people / Access to justice / Authorities that advocate for the rights of young people"
+  },
+  {
+   "code": "PRE-M6-T2-D3",
+   "path": "Year 11 / Case study 1: Young people / Access to justice / Contact with legal processes, including police and the Children’s Court"
+  },
+  {
+   "code": "PRE-M6-T2-D4",
+   "path": "Year 11 / Case study 1: Young people / Access to justice / Alternative approaches to justice, including justice reinvestment, diversionary programs and Culturally inclusive processes for Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "PRE-M6-T2-D5",
+   "path": "Year 11 / Case study 1: Young people / Access to justice / The role of non-government organisations that represent the interests of young people"
+  },
+  {
+   "code": "PRE-M6-T3-D1",
+   "path": "Year 11 / Case study 1: Young people / Responsiveness of the legal system / Indicators of success in achieving justice"
+  },
+  {
+   "code": "PRE-M6-T3-D2",
+   "path": "Year 11 / Case study 1: Young people / Responsiveness of the legal system / Barriers to achieving justice"
+  },
+  {
+   "code": "PRE-M7-T1-D1",
+   "path": "Year 11 / Case study 2: ONE group in society / The nature of the experience / The need for protection under the law"
+  },
+  {
+   "code": "PRE-M7-T1-D2",
+   "path": "Year 11 / Case study 2: ONE group in society / The nature of the experience / Reasons for encountering the legal system"
+  },
+  {
+   "code": "PRE-M7-T1-D3",
+   "path": "Year 11 / Case study 2: ONE group in society / The nature of the experience / Issues arising from contact with the law"
+  },
+  {
+   "code": "PRE-M7-T2-D1",
+   "path": "Year 11 / Case study 2: ONE group in society / Access to justice / Protection under domestic and international law"
+  },
+  {
+   "code": "PRE-M7-T2-D2",
+   "path": "Year 11 / Case study 2: ONE group in society / Access to justice / Authorities that advocate for the rights of the group"
+  },
+  {
+   "code": "PRE-M7-T2-D3",
+   "path": "Year 11 / Case study 2: ONE group in society / Access to justice / Contact with legal processes, including law enforcement agencies, courts or tribunals, and dispute resolution methods"
+  },
+  {
+   "code": "PRE-M7-T2-D4",
+   "path": "Year 11 / Case study 2: ONE group in society / Access to justice / Alternative approaches to justice"
+  },
+  {
+   "code": "PRE-M7-T2-D5",
+   "path": "Year 11 / Case study 2: ONE group in society / Access to justice / The role of non-government organisations that represent the interests of the group"
+  },
+  {
+   "code": "PRE-M7-T3-D1",
+   "path": "Year 11 / Case study 2: ONE group in society / Responsiveness of the legal system / Indicators of success in achieving justice"
+  },
+  {
+   "code": "PRE-M7-T3-D2",
+   "path": "Year 11 / Case study 2: ONE group in society / Responsiveness of the legal system / Barriers to achieving justice"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Legal themes and skills / Legal themes / Relationship between law, justice and society"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Legal themes and skills / Legal themes / Development of law as a reflection of society’s values"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Legal themes and skills / Legal themes / Effectiveness of legal and non-legal measures in achieving justice for individuals, groups and society"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Legal themes and skills / Analysis and use of sources / Use and integrate a range of evidence, including legislation, cases, media, international instruments, documents, expert opinions and statistics"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Legal themes and skills / Analysis and use of sources / Analyse evidence to identify and account for the different perspectives of individuals and groups in society"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Legal themes and skills / Analysis and use of sources / Distinguish between fact and opinion"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Legal themes and skills / Interpretation / Examine the nature of the relationship between law, justice and society"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Legal themes and skills / Interpretation / Analyse the development of law as a reflection of society’s values"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Legal themes and skills / Interpretation / Form judgements about the effectiveness of legal and non-legal measures in achieving justice for individuals and society"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Legal themes and skills / Investigation and research / Acknowledge sources appropriately"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Legal themes and skills / Investigation and research / Examine legal issues that illustrate how the law operates in practice"
+  },
+  {
+   "code": "HSC-M1-T5-D1",
+   "path": "Year 12 / Legal themes and skills / Evaluation / Construct and develop reasoned arguments supported by relevant evidence"
+  },
+  {
+   "code": "HSC-M1-T5-D2",
+   "path": "Year 12 / Legal themes and skills / Evaluation / Evaluate the responsiveness of the legal system to changing values, events, the media, outdated laws and developments in technology"
+  },
+  {
+   "code": "HSC-M1-T5-D3",
+   "path": "Year 12 / Legal themes and skills / Evaluation / Evaluate the effectiveness of the law using criteria. These include: accessibility of the law; achievement of justice; application of the rule of law; capacity to meet society’s needs; capacity to uphold community standards; capacity to uphold the interests of justice; enforceability of legal measures; need for law reform; protection of individual rights; resource efficiency; responsiveness of the law"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / The criminal justice system (core) / The nature of crime / The changing nature and types of crime affecting individuals and society"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / The criminal justice system (core) / The nature of crime / Factors affecting criminal behaviour"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / The criminal justice system (core) / The nature of crime / The importance of situational and social crime prevention"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / The criminal justice system (core) / Investigation / The role of police in investigating crime, protecting the community and upholding the rule of law"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / The criminal justice system (core) / Investigation / Police powers and responsibilities under the law in relation to arrests, searches, warrants, questioning and detention"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / The criminal justice system (core) / Investigation / The role of police discretion, including the use of warnings, cautions and fines"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / The criminal justice system (core) / Investigation / The recognition of the rights of the accused, including the right to silence"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / The criminal justice system (core) / Investigation / Support measures, including advocacy for the accused and assistance for victims"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / The criminal justice system (core) / Pre-trial / The roles and impact of pre-trial processes and decisions"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / The criminal justice system (core) / Pre-trial / The bail process and its implications for the presumption of innocence"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / The criminal justice system (core) / Pre-trial / The role of remand and its impact on the accused and society"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / The criminal justice system (core) / Trial / Reasons for and the operation of a criminal court hierarchy, including the appeal process"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / The criminal justice system (core) / Trial / The adversarial system and its implications for the achievement of justice"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / The criminal justice system (core) / Trial / The use of partial and complete defences to criminal charges"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / The criminal justice system (core) / Trial / Reasons for and against the use of juries and judge-alone trials"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / The criminal justice system (core) / Trial / The provision of legal aid to improve access to justice"
+  },
+  {
+   "code": "HSC-M2-T4-D6",
+   "path": "Year 12 / The criminal justice system (core) / Trial / The impact of support services and advocacy to improve access to justice for Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M2-T5-D1",
+   "path": "Year 12 / The criminal justice system (core) / Sentencing / The purposes of sentencing, including punishment, deterrence, protection and rehabilitation, and their roles in balancing the rights of victims, offenders and society"
+  },
+  {
+   "code": "HSC-M2-T5-D2",
+   "path": "Year 12 / The criminal justice system (core) / Sentencing / Factors affecting a sentencing decision, including statutory and judicial sentencing guidelines, aggravating and mitigating factors, and the use of judicial discretion"
+  },
+  {
+   "code": "HSC-M2-T5-D3",
+   "path": "Year 12 / The criminal justice system (core) / Sentencing / The role and consideration of victim impact statements"
+  },
+  {
+   "code": "HSC-M2-T5-D4",
+   "path": "Year 12 / The criminal justice system (core) / Sentencing / Types of custodial and non-custodial penalties and the extent to which they achieve their intended outcomes"
+  },
+  {
+   "code": "HSC-M2-T5-D5",
+   "path": "Year 12 / The criminal justice system (core) / Sentencing / Types of diversionary programs, including intervention, treatment and rehabilitation"
+  },
+  {
+   "code": "HSC-M2-T5-D6",
+   "path": "Year 12 / The criminal justice system (core) / Sentencing / The role of and participation in Culturally appropriate options to improve outcomes for Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M2-T5-D7",
+   "path": "Year 12 / The criminal justice system (core) / Sentencing / The impact of diversionary programs and alternative approaches to sentencing in diverting offenders and reducing recidivism"
+  },
+  {
+   "code": "HSC-M2-T6-D1",
+   "path": "Year 12 / The criminal justice system (core) / Post-sentencing / The classification and placement of offenders in prison"
+  },
+  {
+   "code": "HSC-M2-T6-D2",
+   "path": "Year 12 / The criminal justice system (core) / Post-sentencing / The purpose and conditions of parole"
+  },
+  {
+   "code": "HSC-M2-T6-D3",
+   "path": "Year 12 / The criminal justice system (core) / Post-sentencing / The use of detention and supervision orders for high-risk offenders"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / International relations and human rights (core) / The nature of international relations / The origin and nature of international relations"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / International relations and human rights (core) / The nature of international relations / The need for international relations in the global community"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / International relations and human rights (core) / The nature of international relations / The changing nature of the global community and the impact of state sovereignty"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / International relations and human rights (core) / The nature of international relations / The contribution of international organisations in fostering relationships in the global community"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / International relations and human rights (core) / The nature of human rights / Characteristics of human rights"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / International relations and human rights (core) / The nature of human rights / The changing nature and developing recognition of human rights"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / International relations and human rights (core) / The nature of human rights / Categories of human rights, including civil and political rights, economic, social and cultural rights, the right to self-determination, environmental rights and peace rights"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / International relations and human rights (core) / The nature of human rights / Foundational instruments for establishing human rights contained in the International Bill of Human Rights: the Universal Declaration of Human Rights, the International Covenant on Civil and Political Rights and the International Covenant on Economic, Social and Cultural Rights"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / International relations and human rights (core) / The nature of human rights / The role of international human rights law in upholding the obligations of nation-states in emerging areas of human rights protection, including the United Nations Declaration on the Rights of Indigenous Peoples"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / International relations and human rights (core) / International protection of human rights / The role and limits of the United Nations in setting standards for human rights protection"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / International relations and human rights (core) / International protection of human rights / The obligations and duties of nation-states to protect human rights through international instruments"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / International relations and human rights (core) / International protection of human rights / Ways to monitor the protection and breaches of human rights"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / International relations and human rights (core) / International protection of human rights / Responses to breaches of human rights by international courts and tribunals"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / International relations and human rights (core) / International protection of human rights / ONE case study of a human right and the extent to which it is protected at an international level"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / International relations and human rights (core) / Australian protection of human rights / The process of incorporating international human rights instruments into domestic law"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / International relations and human rights (core) / Australian protection of human rights / Australia’s obligation to protect human rights through the Australian Constitution, and statute and common law"
+  },
+  {
+   "code": "HSC-M3-T4-D3",
+   "path": "Year 12 / International relations and human rights (core) / Australian protection of human rights / The function and importance of the Australian Human Rights Commission"
+  },
+  {
+   "code": "HSC-M3-T4-D4",
+   "path": "Year 12 / International relations and human rights (core) / Australian protection of human rights / Responses to breaches of human rights by Australian courts and tribunals"
+  },
+  {
+   "code": "HSC-M3-T4-D5",
+   "path": "Year 12 / International relations and human rights (core) / Australian protection of human rights / Debates over the need for a human rights framework in Australia"
+  },
+  {
+   "code": "HSC-M3-T4-D6",
+   "path": "Year 12 / International relations and human rights (core) / Australian protection of human rights / ONE case study of a human right and the extent to which it is protected in Australia"
+  },
+  {
+   "code": "HSC-M3-T5-D1",
+   "path": "Year 12 / International relations and human rights (core) / Promotion of human rights / Methods to promote human rights, including advocacy, education, persuasion and investigation"
+  },
+  {
+   "code": "HSC-M3-T5-D2",
+   "path": "Year 12 / International relations and human rights (core) / Promotion of human rights / The role of non-government organisations that promote and monitor breaches of human rights"
+  },
+  {
+   "code": "HSC-M3-T5-D3",
+   "path": "Year 12 / International relations and human rights (core) / Promotion of human rights / The role of organisations that support and advocate for Aboriginal and Torres Strait Islander Peoples’ right to self-determination"
+  },
+  {
+   "code": "HSC-M3-T5-D4",
+   "path": "Year 12 / International relations and human rights (core) / Promotion of human rights / The role and limits of the media in promoting human rights"
+  },
+  {
+   "code": "HSC-M3-T5-D5",
+   "path": "Year 12 / International relations and human rights (core) / Promotion of human rights / ONE case study of a human right and the extent to which it is promoted by nongovernment organisations or the media"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Consumer law (option) / The nature of consumer law / The evolving need for consumer protection, including international recognition"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Consumer law (option) / The nature of consumer law / Key consumer legislation and organisations in Australia, including protections around consumer rights and guarantees"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Consumer law (option) / The nature of consumer law / Rights and responsibilities of consumers"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Consumer law (option) / The nature of consumer law / Contracts as a key function of consumer protection against unfair business practices"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Consumer law (option) / The nature of consumer law / The roles of non-government organisations and the media in promoting consumer interests"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Consumer law (option) / Marketing and advertising / The nature of marketing and advertising, including evolving methods for promoting products and services"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Consumer law (option) / Marketing and advertising / Statutory regulation of marketing and advertising in Australia"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Consumer law (option) / Marketing and advertising / Challenges in protecting consumers from unethical marketing practices and scams, including those driven by technology and global markets"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Consumer law (option) / Marketing and advertising / The obligations of businesses under the law to avoid unfair practices"
+  },
+  {
+   "code": "HSC-M5-T3-D1",
+   "path": "Year 12 / Consumer law (option) / Credit services / The need for consumer protection relating to credit services"
+  },
+  {
+   "code": "HSC-M5-T3-D2",
+   "path": "Year 12 / Consumer law (option) / Credit services / The statutory regulation of credit services"
+  },
+  {
+   "code": "HSC-M5-T3-D3",
+   "path": "Year 12 / Consumer law (option) / Credit services / Challenges facing vulnerable consumers and the importance of advocacy and financial support agencies"
+  },
+  {
+   "code": "HSC-M5-T3-D4",
+   "path": "Year 12 / Consumer law (option) / Credit services / Responses to non-compliance through consumer credit laws, including enforcement measures"
+  },
+  {
+   "code": "HSC-M5-T4-D1",
+   "path": "Year 12 / Consumer law (option) / Industry standards and product safety / The need for industry standards and product safety in a globalised market"
+  },
+  {
+   "code": "HSC-M5-T4-D2",
+   "path": "Year 12 / Consumer law (option) / Industry standards and product safety / The regulation of industries and product safety in Australia, including mandatory and voluntary standards"
+  },
+  {
+   "code": "HSC-M5-T4-D3",
+   "path": "Year 12 / Consumer law (option) / Industry standards and product safety / The impact of government and industry organisations in addressing compliance challenges"
+  },
+  {
+   "code": "HSC-M5-T4-D4",
+   "path": "Year 12 / Consumer law (option) / Industry standards and product safety / Responses to non-compliance with industry standards and product safety, including enforcement measures"
+  },
+  {
+   "code": "HSC-M5-T5-D1",
+   "path": "Year 12 / Consumer law (option) / Competition in the marketplace / The need for competition in the marketplace"
+  },
+  {
+   "code": "HSC-M5-T5-D2",
+   "path": "Year 12 / Consumer law (option) / Competition in the marketplace / The regulation of competition in Australia"
+  },
+  {
+   "code": "HSC-M5-T5-D3",
+   "path": "Year 12 / Consumer law (option) / Competition in the marketplace / Challenges for consumers due to anti-competitive behaviour, including limits on choice and price increases"
+  },
+  {
+   "code": "HSC-M5-T5-D4",
+   "path": "Year 12 / Consumer law (option) / Competition in the marketplace / Responses to anti-competitive behaviour, including enforcement measures"
+  },
+  {
+   "code": "HSC-M6-T1-D1",
+   "path": "Year 12 / Family law (option) / The nature of family law / The evolving concept of family in Australia"
+  },
+  {
+   "code": "HSC-M6-T1-D2",
+   "path": "Year 12 / Family law (option) / The nature of family law / Principles of the family law system"
+  },
+  {
+   "code": "HSC-M6-T1-D3",
+   "path": "Year 12 / Family law (option) / The nature of family law / The need to regulate family relationships and protect family members"
+  },
+  {
+   "code": "HSC-M6-T1-D4",
+   "path": "Year 12 / Family law (option) / The nature of family law / The responsibility of the state to protect families under international law"
+  },
+  {
+   "code": "HSC-M6-T1-D5",
+   "path": "Year 12 / Family law (option) / The nature of family law / The role and impact of non-government organisations and the media in promoting and supporting families"
+  },
+  {
+   "code": "HSC-M6-T2-D1",
+   "path": "Year 12 / Family law (option) / Family relationships / Types of family structures, including the interconnections of kinship, Community and shared responsibilities for Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M6-T2-D2",
+   "path": "Year 12 / Family law (option) / Family relationships / Statutory regulation of de facto relationships and marriages"
+  },
+  {
+   "code": "HSC-M6-T2-D3",
+   "path": "Year 12 / Family law (option) / Family relationships / The requirements of a valid marriage"
+  },
+  {
+   "code": "HSC-M6-T2-D4",
+   "path": "Year 12 / Family law (option) / Family relationships / Challenges in identifying and responding to forced marriages in Australia"
+  },
+  {
+   "code": "HSC-M6-T3-D1",
+   "path": "Year 12 / Family law (option) / Children / The need for protection of the best interests of the child under domestic and international law"
+  },
+  {
+   "code": "HSC-M6-T3-D2",
+   "path": "Year 12 / Family law (option) / Children / Parental responsibility and the obligations of parents and guardians"
+  },
+  {
+   "code": "HSC-M6-T3-D3",
+   "path": "Year 12 / Family law (option) / Children / Legal requirements for foster care, Aboriginal and Torres Strait Islander kinship care and adoption"
+  },
+  {
+   "code": "HSC-M6-T3-D4",
+   "path": "Year 12 / Family law (option) / Children / Challenges in safeguarding children from harm, including child abuse and neglect"
+  },
+  {
+   "code": "HSC-M6-T4-D1",
+   "path": "Year 12 / Family law (option) / Conflict / Statutory frameworks for separation and divorce"
+  },
+  {
+   "code": "HSC-M6-T4-D2",
+   "path": "Year 12 / Family law (option) / Conflict / The use of family dispute resolution and the role of the court in resolving conflict"
+  },
+  {
+   "code": "HSC-M6-T4-D3",
+   "path": "Year 12 / Family law (option) / Conflict / The use of parenting plans, court orders and child support to consider the best interests of a child during relationship breakdown"
+  },
+  {
+   "code": "HSC-M6-T4-D4",
+   "path": "Year 12 / Family law (option) / Conflict / The determination of property and financial matters to ensure equitable outcomes, including the role of informal and binding financial agreements"
+  },
+  {
+   "code": "HSC-M6-T5-D1",
+   "path": "Year 12 / Family law (option) / Protection / The roles and powers of police and courts in promoting safety for family members"
+  },
+  {
+   "code": "HSC-M6-T5-D2",
+   "path": "Year 12 / Family law (option) / Protection / Legal remedies, advocacy and support for victims of domestic and family violence"
+  },
+  {
+   "code": "HSC-M6-T5-D3",
+   "path": "Year 12 / Family law (option) / Protection / Responses from government departments and the Children’s Court to prioritise the safety and wellbeing of children"
+  },
+  {
+   "code": "HSC-M6-T5-D4",
+   "path": "Year 12 / Family law (option) / Protection / Barriers to the protection of vulnerable individuals and groups from family violence and harm"
+  },
+  {
+   "code": "HSC-M7-T1-D1",
+   "path": "Year 12 / Housing law (option) / The nature of housing law / The right to adequate housing under international law and the obligation to provide shelter in Australia"
+  },
+  {
+   "code": "HSC-M7-T1-D2",
+   "path": "Year 12 / Housing law (option) / The nature of housing law / Forms of real property ownership"
+  },
+  {
+   "code": "HSC-M7-T1-D3",
+   "path": "Year 12 / Housing law (option) / The nature of housing law / Types of property title, including the significance and recognition of native title to Aboriginal and Torres Strait Islander People"
+  },
+  {
+   "code": "HSC-M7-T1-D4",
+   "path": "Year 12 / Housing law (option) / The nature of housing law / The roles of non-government organisations and the media in supporting those seeking housing"
+  },
+  {
+   "code": "HSC-M7-T2-D1",
+   "path": "Year 12 / Housing law (option) / Securing a home / Legal processes for purchasing and selling property through private treaty and auctions, including the contract of sale"
+  },
+  {
+   "code": "HSC-M7-T2-D2",
+   "path": "Year 12 / Housing law (option) / Securing a home / The role of residential tenancy agreements in outlining the rights and responsibilities of landlords and tenants"
+  },
+  {
+   "code": "HSC-M7-T2-D3",
+   "path": "Year 12 / Housing law (option) / Securing a home / Barriers to buying property, including sources of finance and unfair practices"
+  },
+  {
+   "code": "HSC-M7-T2-D4",
+   "path": "Year 12 / Housing law (option) / Securing a home / Challenges faced in tenancy relationships, including security of tenure and discrimination"
+  },
+  {
+   "code": "HSC-M7-T3-D1",
+   "path": "Year 12 / Housing law (option) / Conflict / Types of residential property disputes"
+  },
+  {
+   "code": "HSC-M7-T3-D2",
+   "path": "Year 12 / Housing law (option) / Conflict / The role of alternative dispute resolution in managing conflict for home owners, neighbours, tenants and landlords"
+  },
+  {
+   "code": "HSC-M7-T3-D3",
+   "path": "Year 12 / Housing law (option) / Conflict / The role of courts and tribunals in resolving property disputes"
+  },
+  {
+   "code": "HSC-M7-T3-D4",
+   "path": "Year 12 / Housing law (option) / Conflict / Challenges in the access of justice in property disputes, including complexity, cost and language barriers"
+  },
+  {
+   "code": "HSC-M7-T4-D1",
+   "path": "Year 12 / Housing law (option) / Housing affordability / The nature and extent of housing affordability and its impact on individuals, families and groups"
+  },
+  {
+   "code": "HSC-M7-T4-D2",
+   "path": "Year 12 / Housing law (option) / Housing affordability / Challenges in securing housing, including financial barriers and supply"
+  },
+  {
+   "code": "HSC-M7-T4-D3",
+   "path": "Year 12 / Housing law (option) / Housing affordability / The need for social housing, including public and community housing"
+  },
+  {
+   "code": "HSC-M7-T4-D4",
+   "path": "Year 12 / Housing law (option) / Housing affordability / The importance of Culturally appropriate housing for Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M7-T4-D5",
+   "path": "Year 12 / Housing law (option) / Housing affordability / Measures by state and federal governments to address housing affordability"
+  },
+  {
+   "code": "HSC-M7-T5-D1",
+   "path": "Year 12 / Housing law (option) / Homelessness / The causes, nature and extent of homelessness in NSW and Australia"
+  },
+  {
+   "code": "HSC-M7-T5-D2",
+   "path": "Year 12 / Housing law (option) / Homelessness / The impact of homelessness on the access to and enjoyment of human rights"
+  },
+  {
+   "code": "HSC-M7-T5-D3",
+   "path": "Year 12 / Housing law (option) / Homelessness / The role of housing for those with diverse needs and housing instability, including boarding homes and crisis and emergency accommodation"
+  },
+  {
+   "code": "HSC-M7-T5-D4",
+   "path": "Year 12 / Housing law (option) / Homelessness / Measures by state and federal governments to address the needs of individuals and groups experiencing homelessness"
+  },
+  {
+   "code": "HSC-M8-T1-D1",
+   "path": "Year 12 / Peace, conflict and the law (option) / The nature of peace and conflict / The evolving need for peace at global, regional and national levels"
+  },
+  {
+   "code": "HSC-M8-T1-D2",
+   "path": "Year 12 / Peace, conflict and the law (option) / The nature of peace and conflict / The regulation of a global society and the impact of state sovereignty"
+  },
+  {
+   "code": "HSC-M8-T1-D3",
+   "path": "Year 12 / Peace, conflict and the law (option) / The nature of peace and conflict / Types and causes of global conflict"
+  },
+  {
+   "code": "HSC-M8-T1-D4",
+   "path": "Year 12 / Peace, conflict and the law (option) / The nature of peace and conflict / The creation of international instruments to set global standards for collective security"
+  },
+  {
+   "code": "HSC-M8-T1-D5",
+   "path": "Year 12 / Peace, conflict and the law (option) / The nature of peace and conflict / The roles and involvement of non-government organisations and the media in promoting peace and responding to conflict"
+  },
+  {
+   "code": "HSC-M8-T2-D1",
+   "path": "Year 12 / Peace, conflict and the law (option) / Global cooperation / The need to foster global cooperation and relationships through mutual aid and assistance"
+  },
+  {
+   "code": "HSC-M8-T2-D2",
+   "path": "Year 12 / Peace, conflict and the law (option) / Global cooperation / Obligations of nation-states and non-state actors under international law"
+  },
+  {
+   "code": "HSC-M8-T2-D3",
+   "path": "Year 12 / Peace, conflict and the law (option) / Global cooperation / The roles and involvement of the United Nations and intergovernmental organisations in maintaining relationships and promoting international cooperation"
+  },
+  {
+   "code": "HSC-M8-T2-D4",
+   "path": "Year 12 / Peace, conflict and the law (option) / Global cooperation / Australia’s participation as a global citizen to enhance collective security"
+  },
+  {
+   "code": "HSC-M8-T3-D1",
+   "path": "Year 12 / Peace, conflict and the law (option) / War and conflict / The changing nature of war"
+  },
+  {
+   "code": "HSC-M8-T3-D2",
+   "path": "Year 12 / Peace, conflict and the law (option) / War and conflict / The role of international humanitarian law in limiting the impact of armed conflict"
+  },
+  {
+   "code": "HSC-M8-T3-D3",
+   "path": "Year 12 / Peace, conflict and the law (option) / War and conflict / The actions of the United Nations in response to conflict"
+  },
+  {
+   "code": "HSC-M8-T3-D4",
+   "path": "Year 12 / Peace, conflict and the law (option) / War and conflict / The roles of courts and ad hoc tribunals in resolving conflict, and the use of sanctions to ensure the compliance of individuals and nation-states"
+  },
+  {
+   "code": "HSC-M8-T4-D1",
+   "path": "Year 12 / Peace, conflict and the law (option) / Implications of conflict / The impact of conflict on individuals, groups and nation-states"
+  },
+  {
+   "code": "HSC-M8-T4-D2",
+   "path": "Year 12 / Peace, conflict and the law (option) / Implications of conflict / Ways to address displacement as a result of conflict"
+  },
+  {
+   "code": "HSC-M8-T4-D3",
+   "path": "Year 12 / Peace, conflict and the law (option) / Implications of conflict / State sovereignty as a challenge in complying with obligations under international law"
+  },
+  {
+   "code": "HSC-M8-T4-D4",
+   "path": "Year 12 / Peace, conflict and the law (option) / Implications of conflict / The principle of Responsibility to Protect (R2P) as a framework to address conflict"
+  },
+  {
+   "code": "HSC-M8-T5-D1",
+   "path": "Year 12 / Peace, conflict and the law (option) / Maintaining peace and security / Measures to build and promote peace through peacebuilding activities and peacekeeping operations"
+  },
+  {
+   "code": "HSC-M8-T5-D2",
+   "path": "Year 12 / Peace, conflict and the law (option) / Maintaining peace and security / The use of diplomacy to foster and maintain relationships between nation-states"
+  },
+  {
+   "code": "HSC-M8-T5-D3",
+   "path": "Year 12 / Peace, conflict and the law (option) / Maintaining peace and security / The use of economic sanctions in response to conflict"
+  },
+  {
+   "code": "HSC-M8-T5-D4",
+   "path": "Year 12 / Peace, conflict and the law (option) / Maintaining peace and security / Responses from the international community to the threat of force by nation-states, including the elimination of weapons of mass destruction"
+  },
+  {
+   "code": "HSC-M9-T1-D1",
+   "path": "Year 12 / Workplace law (option) / The nature of workplace law / The evolution of the labour market and the recognition of employee rights under international law"
+  },
+  {
+   "code": "HSC-M9-T1-D2",
+   "path": "Year 12 / Workplace law (option) / The nature of workplace law / Key workplace legislation and organisations in Australia"
+  },
+  {
+   "code": "HSC-M9-T1-D3",
+   "path": "Year 12 / Workplace law (option) / The nature of workplace law / The implications of employment status for employees, independent contractors and gig-economy workers"
+  },
+  {
+   "code": "HSC-M9-T1-D4",
+   "path": "Year 12 / Workplace law (option) / The nature of workplace law / The employment contract and minimum conditions of employment"
+  },
+  {
+   "code": "HSC-M9-T1-D5",
+   "path": "Year 12 / Workplace law (option) / The nature of workplace law / The roles of trade unions, non-government organisations and the media in advocating for workers’ rights"
+  },
+  {
+   "code": "HSC-M9-T2-D1",
+   "path": "Year 12 / Workplace law (option) / Safety / The need to maintain safe workplaces, including culturally responsive workplaces"
+  },
+  {
+   "code": "HSC-M9-T2-D2",
+   "path": "Year 12 / Workplace law (option) / Safety / The regulation of safety requirements in the workplace"
+  },
+  {
+   "code": "HSC-M9-T2-D3",
+   "path": "Year 12 / Workplace law (option) / Safety / Methods of enforcing employer responsibilities through government organisations and courts"
+  },
+  {
+   "code": "HSC-M9-T2-D4",
+   "path": "Year 12 / Workplace law (option) / Safety / Challenges in protecting the safety of workers, including technological advancements and the inadequacy of regulation and penalties"
+  },
+  {
+   "code": "HSC-M9-T3-D1",
+   "path": "Year 12 / Workplace law (option) / Fair pay / The need to protect fair pay in the workplace"
+  },
+  {
+   "code": "HSC-M9-T3-D2",
+   "path": "Year 12 / Workplace law (option) / Fair pay / The regulatory framework for paid work in Australia"
+  },
+  {
+   "code": "HSC-M9-T3-D3",
+   "path": "Year 12 / Workplace law (option) / Fair pay / Methods of enforcing fair pay through government organisations and courts"
+  },
+  {
+   "code": "HSC-M9-T3-D4",
+   "path": "Year 12 / Workplace law (option) / Fair pay / Challenges facing vulnerable workers, including exploitation, wage theft, unpaid work and unlawful deductions"
+  },
+  {
+   "code": "HSC-M9-T4-D1",
+   "path": "Year 12 / Workplace law (option) / Leave / The evolving recognition of leave entitlements in the workplace"
+  },
+  {
+   "code": "HSC-M9-T4-D2",
+   "path": "Year 12 / Workplace law (option) / Leave / Types of leave entitlement"
+  },
+  {
+   "code": "HSC-M9-T4-D3",
+   "path": "Year 12 / Workplace law (option) / Leave / The regulatory framework for leave entitlements"
+  },
+  {
+   "code": "HSC-M9-T4-D4",
+   "path": "Year 12 / Workplace law (option) / Leave / Measures to address a changing and diverse workforce without paid leave entitlements"
+  },
+  {
+   "code": "HSC-M9-T5-D1",
+   "path": "Year 12 / Workplace law (option) / Discrimination and termination / The need to protect workers’ rights regarding discrimination and termination"
+  },
+  {
+   "code": "HSC-M9-T5-D2",
+   "path": "Year 12 / Workplace law (option) / Discrimination and termination / Laws regulating unlawful workplace discrimination, unfair dismissal, unlawful termination and redundancy"
+  },
+  {
+   "code": "HSC-M9-T5-D3",
+   "path": "Year 12 / Workplace law (option) / Discrimination and termination / The roles of courts and tribunals in resolving disputes and imposing penalties, including alternative dispute resolution"
+  },
+  {
+   "code": "HSC-M9-T5-D4",
+   "path": "Year 12 / Workplace law (option) / Discrimination and termination / Barriers to participation in employment dispute resolution"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ls2020q25a",
+   "year": 2020,
+   "number": "25 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "Evaluate the effectiveness of the legal system in addressing issues for consumers arising from technology."
+  },
+  {
+   "id": "ls2020q25b",
+   "year": 2020,
+   "number": "25 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "Compliance with the law can be difficult to achieve. To what extent is this statement true in relation to consumer law?"
+  },
+  {
+   "id": "ls2020q26a",
+   "year": 2020,
+   "number": "26 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Evaluate the effectiveness of legal processes in addressing issues arising from global threats to the environment."
+  },
+  {
+   "id": "ls2020q26b",
+   "year": 2020,
+   "number": "26 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Cooperation with the law can be difficult to achieve. To what extent is this statement true in relation to global environment protection? al"
+  },
+  {
+   "id": "ls2020q27a",
+   "year": 2020,
+   "number": "27 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "Evaluate the effectiveness of the legal system in addressing issues relating to care and protection of children."
+  },
+  {
+   "id": "ls2020q27b",
+   "year": 2020,
+   "number": "27 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "Compliance with the law can be difficult to achieve. To what extent is this statement true in relation to family law?"
+  },
+  {
+   "id": "ls2020q28a",
+   "year": 2020,
+   "number": "28 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Evaluate the effectiveness of legal processes in addressing issues arising from the loss of indigenous peoples’ cultural rights."
+  },
+  {
+   "id": "ls2020q28b",
+   "year": 2020,
+   "number": "28 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Cooperation with the law can be difficult to achieve. To what extent is this statement true in relation to indigenous peoples?"
+  },
+  {
+   "id": "ls2020q29a",
+   "year": 2020,
+   "number": "29 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "Evaluate the effectiveness of the legal system in addressing issues relating to the affordability of shelter."
+  },
+  {
+   "id": "ls2020q29b",
+   "year": 2020,
+   "number": "29 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "Compliance with the law can be difficult to achieve. To what extent is this statement true in relation to laws governing shelter?"
+  },
+  {
+   "id": "ls2020q30a",
+   "year": 2020,
+   "number": "30 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "Evaluate the effectiveness of the legal system in addressing issues relating to workplace safety."
+  },
+  {
+   "id": "ls2020q30b",
+   "year": 2020,
+   "number": "30 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "Compliance with the law can be difficult to achieve. To what extent is this statement true in relation to workplace law?"
+  },
+  {
+   "id": "ls2020q31a",
+   "year": 2020,
+   "number": "31 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "Evaluate the effectiveness of legal measures in addressing issues relating to rules regarding the conduct of hostilities."
+  },
+  {
+   "id": "ls2020q31b",
+   "year": 2020,
+   "number": "31 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "Cooperation with the law can be difficult to achieve. To what extent is this statement true in relation to world order?"
+  },
+  {
+   "id": "ls2021q26a",
+   "year": 2021,
+   "number": "26 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "To what extent do courts and tribunals achieve justice for consumers?"
+  },
+  {
+   "id": "ls2021q26b",
+   "year": 2021,
+   "number": "26 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "‘Legal measures often fail to respond to change.’ Assess this statement with reference to the need to protect consumers."
+  },
+  {
+   "id": "ls2021q27a",
+   "year": 2021,
+   "number": "27 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "To what extent do courts and conferences achieve protection of the global environment?"
+  },
+  {
+   "id": "ls2021q27b",
+   "year": 2021,
+   "number": "27 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "‘Legal measures often fail to respond to change.’ Assess this statement with reference to the need to protect the global environment."
+  },
+  {
+   "id": "ls2021q28a",
+   "year": 2021,
+   "number": "28 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "To what extent do courts and dispute resolution methods achieve justice for family members?"
+  },
+  {
+   "id": "ls2021q28b",
+   "year": 2021,
+   "number": "28 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "‘Legal measures often fail to respond to change.’ Assess this statement with reference to the need to protect family members."
+  },
+  {
+   "id": "ls2021q29a",
+   "year": 2021,
+   "number": "29 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "To what extent do courts and the United Nations achieve justice for Indigenous peoples?"
+  },
+  {
+   "id": "ls2021q29b",
+   "year": 2021,
+   "number": "29 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "‘Legal measures often fail to respond to change.’ Assess this statement with reference to the loss of rights of Indigenous peoples."
+  },
+  {
+   "id": "ls2021q30a",
+   "year": 2021,
+   "number": "30 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "To what extent do courts and tribunals achieve justice for people seeking shelter?"
+  },
+  {
+   "id": "ls2021q30b",
+   "year": 2021,
+   "number": "30 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "‘Legal measures often fail to respond to change.’ Assess this statement with reference to the provision of shelter."
+  },
+  {
+   "id": "ls2021q31a",
+   "year": 2021,
+   "number": "31 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "To what extent do courts and tribunals achieve justice in the workplace?"
+  },
+  {
+   "id": "ls2021q31b",
+   "year": 2021,
+   "number": "31 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "‘Legal measures often fail to respond to change.’ Assess this statement with reference to the need for protection in the workplace."
+  },
+  {
+   "id": "ls2021q32a",
+   "year": 2021,
+   "number": "32 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "To what extent do courts and tribunals promote and maintain world order?"
+  },
+  {
+   "id": "ls2021q32b",
+   "year": 2021,
+   "number": "32 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "‘Legal measures often fail to respond to change.’ Assess this statement with reference to resolving conflict between nation states."
+  },
+  {
+   "id": "ls2022q26a",
+   "year": 2022,
+   "number": "26 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "‘Legal responses are more effective than non-legal responses in achieving justice.’ To what extent is this statement true in relation to consumers?"
+  },
+  {
+   "id": "ls2022q26b",
+   "year": 2022,
+   "number": "26 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "Evaluate the effectiveness of the law in encouraging cooperation to resolve issues concerning consumers. Support your response with reference to at least ONE issue."
+  },
+  {
+   "id": "ls2022q27a",
+   "year": 2022,
+   "number": "27 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "‘Legal responses are more effective than non-legal responses in achieving justice.’ To what extent is this statement true in relation to global environmental protection?"
+  },
+  {
+   "id": "ls2022q27b",
+   "year": 2022,
+   "number": "27 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Evaluate the effectiveness of the law in encouraging cooperation to resolve issues concerning global environmental protection. Support your response with reference to at least ONE issue."
+  },
+  {
+   "id": "ls2022q28a",
+   "year": 2022,
+   "number": "28 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "‘Legal responses are more effective than non-legal responses in achieving justice.’ To what extent is this statement true in relation to families?"
+  },
+  {
+   "id": "ls2022q28b",
+   "year": 2022,
+   "number": "28 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "Evaluate the effectiveness of the law in encouraging cooperation to resolve issues concerning families. Support your response with reference to at least ONE issue."
+  },
+  {
+   "id": "ls2022q29a",
+   "year": 2022,
+   "number": "29 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "‘Legal responses are more effective than non-legal responses in achieving justice.’ To what extent is this statement true in relation to Indigenous Peoples?"
+  },
+  {
+   "id": "ls2022q29b",
+   "year": 2022,
+   "number": "29 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Evaluate the effectiveness of the law in encouraging cooperation to resolve issues concerning Indigenous Peoples. Support your response with reference to at least ONE issue."
+  },
+  {
+   "id": "ls2022q30a",
+   "year": 2022,
+   "number": "30 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "‘Legal responses are more effective than non-legal responses in achieving justice.’ To what extent is this statement true in relation to shelter?"
+  },
+  {
+   "id": "ls2022q30b",
+   "year": 2022,
+   "number": "30 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "Evaluate the effectiveness of the law in encouraging cooperation to resolve issues concerning shelter. Support your response with reference to at least ONE issue."
+  },
+  {
+   "id": "ls2022q31a",
+   "year": 2022,
+   "number": "31 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "‘Legal responses are more effective than non-legal responses in achieving justice.’ To what extent is this statement true in relation to the workplace?"
+  },
+  {
+   "id": "ls2022q31b",
+   "year": 2022,
+   "number": "31 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "Evaluate the effectiveness of the law in encouraging cooperation to resolve issues concerning the workplace. Support your response with reference to at least ONE issue."
+  },
+  {
+   "id": "ls2022q32a",
+   "year": 2022,
+   "number": "32 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "‘Legal responses are more effective than non-legal responses in achieving justice.’ To what extent is this statement true in relation to world order?"
+  },
+  {
+   "id": "ls2022q32b",
+   "year": 2022,
+   "number": "32 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "Evaluate the effectiveness of the law in encouraging cooperation to resolve issues concerning world order. Support your response with reference to at least ONE issue."
+  },
+  {
+   "id": "ls2023q26a",
+   "year": 2023,
+   "number": "26 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "To what extent do legal responses protect consumers in regard to product certification and marketing innovations?"
+  },
+  {
+   "id": "ls2023q26b",
+   "year": 2023,
+   "number": "26 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "Assess the roles of government and non-government organisations in achieving justice for consumers."
+  },
+  {
+   "id": "ls2023q27a",
+   "year": 2023,
+   "number": "27 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "To what extent do legal processes address barriers to the protection of the global environment?"
+  },
+  {
+   "id": "ls2023q27b",
+   "year": 2023,
+   "number": "27 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Assess the roles of the United Nations and other organisations in promoting and achieving environmental protection."
+  },
+  {
+   "id": "ls2023q28a",
+   "year": 2023,
+   "number": "28 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "To what extent does family law respond to the changing nature of parental responsibilities?"
+  },
+  {
+   "id": "ls2023q28b",
+   "year": 2023,
+   "number": "28 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "Assess the effectiveness of the law in protecting victims of domestic violence."
+  },
+  {
+   "id": "ls2023q29a",
+   "year": 2023,
+   "number": "29 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "To what extent do legal processes recognise rights to land and natural resources for Indigenous Peoples?"
+  },
+  {
+   "id": "ls2023q29b",
+   "year": 2023,
+   "number": "29 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Assess the roles of the United Nations and courts in achieving justice for Indigenous Peoples."
+  },
+  {
+   "id": "ls2023q30a",
+   "year": 2023,
+   "number": "30 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "To what extent do legal responses relating to shelter address discrimination and homelessness?"
+  },
+  {
+   "id": "ls2023q30b",
+   "year": 2023,
+   "number": "30 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "Assess the role of dispute resolution mechanisms in achieving justice for people seeking and providing shelter."
+  },
+  {
+   "id": "ls2023q31a",
+   "year": 2023,
+   "number": "31 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "To what extent does workplace law address discrimination?"
+  },
+  {
+   "id": "ls2023q31b",
+   "year": 2023,
+   "number": "31 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "Assess the role of dispute resolution mechanisms in achieving justice in the workplace."
+  },
+  {
+   "id": "ls2023q32a",
+   "year": 2023,
+   "number": "32 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "How effectively do legal measures respond to regional and global situations that threaten peace and security?"
+  },
+  {
+   "id": "ls2023q32b",
+   "year": 2023,
+   "number": "32 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "Assess the role of the United Nations in promoting peace and resolving conflict."
+  },
+  {
+   "id": "ls2024q25a",
+   "year": 2024,
+   "number": "25 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "Analyse the role of state and federal government organisations in responding to the rights of consumers."
+  },
+  {
+   "id": "ls2024q25b",
+   "year": 2024,
+   "number": "25 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "To what extent are legal responses effective in addressing the issues of credit and technology?"
+  },
+  {
+   "id": "ls2024q26a",
+   "year": 2024,
+   "number": "26 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Analyse the role of Australia’s federal structure in the protection of the global environment."
+  },
+  {
+   "id": "ls2024q26b",
+   "year": 2024,
+   "number": "26 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "To what extent are legal responses effective in addressing the conflict between the demand for resources and global environmental protection?"
+  },
+  {
+   "id": "ls2024q27a",
+   "year": 2024,
+   "number": "27 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "Analyse the role of state and federal governments in responding to the rights of family members."
+  },
+  {
+   "id": "ls2024q27b",
+   "year": 2024,
+   "number": "27 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "To what extent are legal responses effective in addressing the issues of surrogacy and birth technologies?"
+  },
+  {
+   "id": "ls2024q28a",
+   "year": 2024,
+   "number": "28 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Analyse the role of Australia’s federal structure in responding to the rights of Indigenous peoples."
+  },
+  {
+   "id": "ls2024q28b",
+   "year": 2024,
+   "number": "28 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "To what extent are legal responses effective in addressing the issues of intellectual property and cultural rights of Indigenous peoples?"
+  },
+  {
+   "id": "ls2024q29a",
+   "year": 2024,
+   "number": "29 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "Analyse the role of state and federal governments in responding to the rights of individuals accessing shelter."
+  },
+  {
+   "id": "ls2024q29b",
+   "year": 2024,
+   "number": "29 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "To what extent are legal responses effective in addressing the issues of affordability and social housing?"
+  },
+  {
+   "id": "ls2024q30a",
+   "year": 2024,
+   "number": "30 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "Analyse the role of state and federal governments in responding to the rights of employees."
+  },
+  {
+   "id": "ls2024q30b",
+   "year": 2024,
+   "number": "30 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "To what extent are legal responses effective in addressing the issues of leave and termination of employment?"
+  },
+  {
+   "id": "ls2024q31a",
+   "year": 2024,
+   "number": "31 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "Analyse the role of Australia’s federal government in promoting and maintaining world order."
+  },
+  {
+   "id": "ls2024q31b",
+   "year": 2024,
+   "number": "31 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "To what extent are legal responses effective in ensuring the principle of ‘responsibility to protect’ and rules regarding the conduct of hostilities?"
+  },
+  {
+   "id": "ls2025q25a",
+   "year": 2025,
+   "number": "25 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "‘Non-compliance challenges the effectiveness of the law.’ To what extent is this statement accurate in relation to consumers?"
+  },
+  {
+   "id": "ls2025q25b",
+   "year": 2025,
+   "number": "25 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Consumer law (option)",
+   "text": "Assess the interrelationship between changing community values and the achievement of just outcomes for consumers. In your answer, you must refer to at least ONE contemporary issue."
+  },
+  {
+   "id": "ls2025q26a",
+   "year": 2025,
+   "number": "26 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "‘Non-compliance challenges the effectiveness of the law.’ To what extent is this statement accurate in relation to global environmental protection?"
+  },
+  {
+   "id": "ls2025q26b",
+   "year": 2025,
+   "number": "26 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Assess the interrelationship between changing community values and the achievement of just outcomes for the global environment. In your answer, you must refer to at least ONE contemporary issue."
+  },
+  {
+   "id": "ls2025q27a",
+   "year": 2025,
+   "number": "27 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "‘Non-compliance challenges the effectiveness of the law.’ To what extent is this statement accurate in relation to families?"
+  },
+  {
+   "id": "ls2025q27b",
+   "year": 2025,
+   "number": "27 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family law (option)",
+   "text": "Assess the interrelationship between changing community values and the achievement of just outcomes for families. In your answer, you must refer to at least ONE contemporary issue."
+  },
+  {
+   "id": "ls2025q28a",
+   "year": 2025,
+   "number": "28 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "‘Non-compliance challenges the effectiveness of the law.’ To what extent is this statement accurate in regard to laws relating to Indigenous Peoples?"
+  },
+  {
+   "id": "ls2025q28b",
+   "year": 2025,
+   "number": "28 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / International relations and human rights (core)",
+   "text": "Assess the interrelationship between changing community values and the achievement of just outcomes for Indigenous Peoples. In your answer, you must refer to at least ONE contemporary issue."
+  },
+  {
+   "id": "ls2025q29a",
+   "year": 2025,
+   "number": "29 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "‘Non-compliance challenges the effectiveness of the law.’ To what extent is this statement accurate in relation to shelter?"
+  },
+  {
+   "id": "ls2025q29b",
+   "year": 2025,
+   "number": "29 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Housing law (option)",
+   "text": "Assess the interrelationship between changing community values and the achievement of just outcomes for people seeking and providing shelter. In your answer, you must refer to at least ONE contemporary issue."
+  },
+  {
+   "id": "ls2025q30a",
+   "year": 2025,
+   "number": "30 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "‘Non-compliance challenges the effectiveness of the law.’ To what extent is this statement accurate in relation to the workplace?"
+  },
+  {
+   "id": "ls2025q30b",
+   "year": 2025,
+   "number": "30 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Workplace law (option)",
+   "text": "Assess the interrelationship between changing community values and the achievement of just outcomes in the workplace. In your answer, you must refer to at least ONE contemporary issue."
+  },
+  {
+   "id": "ls2025q31a",
+   "year": 2025,
+   "number": "31 (a)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "‘Non-compliance challenges the effectiveness of the law.’ To what extent is this statement accurate in relation to world order?"
+  },
+  {
+   "id": "ls2025q31b",
+   "year": 2025,
+   "number": "31 (b)",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Peace, conflict and the law (option)",
+   "text": "Assess the interrelationship between changing community values and the achievement of just outcomes in promoting peace and resolving conflict. In your answer, you must refer to at least ONE contemporary issue."
+  }
+ ]
+}

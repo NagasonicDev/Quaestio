@@ -1,0 +1,401 @@
+{
+ "course_id": "chinese-extension",
+ "course_name": "Chinese Extension",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "HSC-M1-T4-T1-D1",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / language"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D2",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / colloquial"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D3",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / dialect"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D4",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / accent"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D5",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / use of irony"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D6",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / satire"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D7",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / humour"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D8",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / tenses"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D9",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / ellipses"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D10",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / structure"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D11",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / setting"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D12",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / time"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D13",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / place"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D14",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / cultural aspects"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D15",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / character"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D16",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / key/secondary"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D17",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / imagery"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D18",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / symbolism"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D19",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / recurrent motif"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D20",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / simile/metaphor"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D21",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / relationship between author/director/narrator/singer and the audience"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D22",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / narrative technique"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D23",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / perspective"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D24",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / point of view"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D25",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / tone and mood"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D26",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / novel"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D27",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / plot development, sequencing of events, use of flashback"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D28",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / use of dialogue, narrative"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D29",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / use of allegory, extended metaphor"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D30",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / short story"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D31",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / brevity and compactness"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D32",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / focus on one situation or a few crucial moments"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D33",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / limited character development"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D34",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / fragmented plot"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D35",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / inconclusive or unexpected ending"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D36",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / song"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D37",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / instrumentation, voice, melody, rhythm, tempo"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D38",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / use of repetition"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D39",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / use of refrain"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D40",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / rhyme, rhythm, assonance, alliteration"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D41",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / film"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D42",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / shot composition/framing/editing"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D43",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / lighting/sound/colour"
+  },
+  {
+   "code": "HSC-M1-T4-T1-D44",
+   "path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film) / Prescribed extracts / costuming"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ce202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality | Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer in ENGLISH the questions that follow.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions.\nMs Sa says ‘竟然’ three times in Scene A. What does this indicate?\nExplain Qi Mingzhi’s response to Ms Sa when he is singled out.\nWhat values does Ms Sa try to convey to her students in Scene C? Support your answer with reference to the scene.\nAnalyse how the wealth gap is explored in Scenes A and B."
+  },
+  {
+   "id": "ce202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer the question that follows. Write approximately 250 characters in CHINESE.\n假如你是姑姑。在对话的当天晚上，你写一篇日记，谈谈你对然然妈妈所做的决定的\n感受。写这篇日记。\nImagine you are the aunty. On the night of this conversation you write a diary entry, expressing how you feel about the decision Ranran’s mother made. Write the diary entry.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions."
+  },
+  {
+   "id": "ce202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你应邀在社区讨论会上发表演讲，题目是：“有钱的人就应该承担更多的社会责任”。\n写出你的演讲稿，谈谈你的看法。\nYou have been invited to speak at a community forum on the topic, ‘Rich people should take on more social responsibilities’. Write the script of your speech, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Relationships",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你应邀在校会上发表演讲，题目是：“朋友之间的相处，不是看你说什么，而是看你做什么”。写出你的演讲稿，谈谈你的看法。\nYou have been invited to speak at a school assembly on the topic, ‘Getting along with friends is not about what you say, but what you do’. Write the script of your speech, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality | Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer in ENGLISH the questions that follow.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions.\nWhy does Jia Di say ‘学生我也想进焦，但是根本进不去啊’?\nHow does the extract show the tension between Ms Sa and Ju Ran?\nExplain what this extract reveals about Jia Di. Support your response with reference to the extract.\n‘Films always explore the concept of attaining individual goals.’\nHow true is this statement with reference to the film Young Style? In your answer, refer to this extract and one EARLIER scene in this film."
+  },
+  {
+   "id": "ce202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer the question that follows. Write approximately 250 characters in CHINESE.\n假设你是黄晶晶。在和居然谈话的第二天，你给他写一封信，反思最近发生的事和你\n跟他之间的关系。写出这封信。\nImagine you are Huang Jingjing. The day after this conversation with Ju Ran, you write a letter to him reflecting on what happened recently and your relationship with him. Write the letter.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions."
+  },
+  {
+   "id": "ce202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Pursuit of personal goals",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你应邀为当地的中文报纸写一篇文章。题目是：“家长应该限制孩子使用手机和电脑”。\n写出这篇文章，谈谈你的看法。\nYou have been invited to write an article for a local Chinese newspaper. The topic is, ‘Parents should restrict children’s access to mobile phones and computers’. Write the article, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你应邀为当地的中文报纸写一篇文章。题目是：“农村生活让孩子更有能力”。写出这篇文章，谈谈你的看法。\nYou have been invited to write an article for a local Chinese newspaper. The topic is, ‘Living in the countryside makes children more capable’. Write the article, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality | Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer in ENGLISH the questions that follow.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions.\nWhy does the aunty say ‘滴答滴答，砰!’ (page 2)?\nHow does Ju Ran’s mother show her disapproval of Ju Ran having a girlfriend?\nExplain the role of Ju Ran’s internal monologues in this extract. Support your answer with specific examples.\n‘Parental expectations and academic pressures are major causes of stress for students.’\nTo what extent is this statement explored in the film Young Style? In your response, refer to this extract and ONE other scene from the film."
+  },
+  {
+   "id": "ce202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer the question that follows. Write approximately 250 characters in CHINESE.\n假设你是撒老师，写一封电子邮件给你的学生们，说出你对居然所说的话的感想。\nImagine you are Ms Sa. Write an email to your students, expressing your thoughts regarding Ju Ran’s speech.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions."
+  },
+  {
+   "id": "ce202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Pursuit of personal goals",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你应邀在青年论坛发表演讲，题目是：“年轻人要有明确的人生目标”。写出你的演讲稿，谈谈你的看法。\nYou have been invited to speak at a Youth Forum on the topic, ‘Young people must have a clear goal in their lives’. Write the script of your speech, expressing your opinion on the topic."
+  },
+  {
+   "id": "ce202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Pursuit of personal goals",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你应邀在青年论坛发表演讲，题目是：“成长的环境越舒服，你就越难面对困难”。\n写出你的演讲稿，谈谈你的看法。\nYou have been invited to speak at a Youth Forum on the topic, ‘The more comfortable your upbringing is, the more difficult it will be for you to face hardship’. Write the script of your speech, expressing your opinion on the topic."
+  },
+  {
+   "id": "ce202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality | Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer in ENGLISH the questions that follow.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions.\n‘我突然有时间想了很多事情。’\nWhat has led Ms Sa to say this?\nDescribe Ms Sa’s personality as revealed in Scene A.\nAnalyse how the director uses film techniques in this extract to affect the audience.\n‘The way a person communicates reflects their level of maturity.’\nTo what extent is this statement explored through Ju Ran, in this extract and ONE other scene from the film?"
+  },
+  {
+   "id": "ce202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer the question that follows. Write approximately 250 characters in CHINESE.\n假设你是齐明智，写一篇日记，反思今天在课堂和宿舍发生的事。\nImagine you are Qi Mingzhi. Write a diary entry, reflecting on what happened in the classroom and in the dormitory today.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions."
+  },
+  {
+   "id": "ce202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你受邀给一份青年报纸写一篇文章，题目是：“年轻人应该根据社会的需要计划未来”。\n写这篇文章，谈谈你的想法。\nYou are invited to write an article for a youth newspaper. The topic is, ‘Young people should plan their future according to the needs of society’. Write the article, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Relationships",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你受邀给一本家庭杂志写一篇文章，题目是：“家庭关系是人生中最重要的关系”。写这篇文章，谈谈你的想法。\nYou are invited to write an article for a family magazine. The topic is, ‘Family relationships are the most important relationships in one’s life’. Write the article, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality | Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer in ENGLISH the questions that follow.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions.\nHow does Jia Di provoke Ju Ran before Ms Sa enters the room?\nWhy does Ms Sa ask Ju Ran to introduce himself at the end of her speech?\nHow does the director use film techniques to illustrate conflicts in this extract?\nJu Ran and Ms Sa have common traits that have allowed them to achieve their goals. How is this demonstrated in this extract and in ONE other extract from the film?"
+  },
+  {
+   "id": "ce202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer the question that follows. Write approximately 250 characters in CHINESE.\n听了撒老师在课堂上的话以后，晓凡和李飞有一段对话，讨论他们对高考的看法和\n怎么为将来做准备。写出他们的对话。\nAfter hearing what Ms Sa said in class, Xiaofan and Li Fei have a conversation discussing their views on Gaokao and their strategies to prepare for the future. Write the script of their conversation.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions."
+  },
+  {
+   "id": "ce202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Pursuit of personal goals",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你参加一个论文比赛，题目是：“考试是衡量一个人理解的最好方法”。写这篇论文，谈谈你的看法。\nYou are taking part in a Chinese essay contest. The topic is, ‘Examinations are the best way to measure one’s understanding’. Write the essay, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Pursuit of personal goals",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n你参加一个论文比赛，题目是：“网络是年轻人实现梦想的最好地方”。写这篇论文，谈谈你的看法。\nYou are taking part in a Chinese essay contest. The topic is, ‘The internet is the best place for young people to realise their dreams’. Write the essay, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality | Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer in ENGLISH the questions that follow.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions.\nWhy does Ju Ran’s mother exclaim ‘你想气死我！’?\nHow does the director use film techniques to reveal the strained relationship between Ju Ran and his mother?\nTo what extent does Ju Ran’s father have authority in his family? Support your answer with reference to the text.\nHow does this extract reveal Huang Jingjing’s personality? Support your answer with reference to the text.\nHow is Ju Ran’s lack of responsibility conveyed in this extract and in Extract 2 of the film?"
+  },
+  {
+   "id": "ce202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Prescribed text: Nice View (film)",
+   "text": "Read the extract from the film Young Style and then answer the question that follows. Write approximately 250 characters in CHINESE.\n假设你是五年后的居然。撒老师邀请你给她的高三学生讲话。写出你的演讲稿，反思\n撒老师的话如何影响了你的人生态度。\nImagine you are Ju Ran five years later. Ms Sa has invited you to give a speech to her Year 12 students. Write the script of your speech, reflecting on how Ms Sa’s words have affected your attitude to life.\nThe film extract that accompanies this question is withheld from the printed paper due to copyright restrictions."
+  },
+  {
+   "id": "ce202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Social inequality",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n“高度竞争的社会对穷人不利”。给当地中文报纸的编辑写一封信，谈谈你对这个观点的看法。\n‘A highly competitive society disadvantages the poor’. Write a letter to the editor of a local Chinese newspaper, expressing your opinion on this topic."
+  },
+  {
+   "id": "ce202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual and contemporary society / Relationships",
+   "text": "Section II — Writing in Chinese (15 marks). Attempt either Question 3 or Question 4.\nWrite approximately 350 characters in CHINESE.\n“在当今社会，谦虚已经过时了”。给当地中文报纸的编辑写一封信，谈谈你对这个观点的看法。\n‘In today’s society, humility is outdated’. Write a letter to the editor of a local Chinese newspaper, expressing your opinion on this topic."
+  }
+ ]
+}
