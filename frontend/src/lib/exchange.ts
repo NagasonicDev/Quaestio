@@ -556,6 +556,7 @@ export async function exportCourse(
         stimulus_id: s.stimulus_id,
         course_id: s.course_id,
         title: s.title,
+        attach_all: s.attach_all,
         created_at: s.created_at,
         updated_at: s.updated_at,
         blocks: blocksByStimulus.get(s.stimulus_id) ?? [],
@@ -720,6 +721,7 @@ export interface StimulusExport {
   stimulus_id: string;
   course_id: string;
   title: string | null;
+  attach_all?: boolean;
   created_at: string;
   updated_at: string;
   blocks: Array<{
@@ -1393,9 +1395,9 @@ async function restoreStimuli(bundle: ParsedBundle, ctx: ImportCtx): Promise<voi
   for (const s of stimuli) {
     const stimulusId = newId("stim");
     await run(
-      `INSERT INTO stimulus (stimulus_id, course_id, title, created_at, updated_at)
-       VALUES (?, ?, ?, ?, ?)`,
-      [stimulusId, ctx.courseId, s.title ?? null, s.created_at ?? now, s.updated_at ?? now]
+      `INSERT INTO stimulus (stimulus_id, course_id, title, attach_all, created_at, updated_at)
+       VALUES (?, ?, ?, ?, ?, ?)`,
+      [stimulusId, ctx.courseId, s.title ?? null, s.attach_all ? 1 : 0, s.created_at ?? now, s.updated_at ?? now]
     );
     const stmts: Array<[string, any[]]> = [];
     for (let i = 0; i < (s.blocks ?? []).length; i++) {
@@ -1446,6 +1448,7 @@ async function backupCourseToBundle(courseId: string): Promise<ParsedBundle | nu
       stimulus_id: full.stimulus_id,
       course_id: full.course_id,
       title: full.title,
+      attach_all: full.attach_all,
       created_at: full.created_at,
       updated_at: full.updated_at,
       blocks: full.blocks.map((b) => ({
@@ -1459,7 +1462,11 @@ async function backupCourseToBundle(courseId: string): Promise<ParsedBundle | nu
   const questionStimuli: QuestionStimulusLink[] = [];
   for (const q of questions) {
     const links = await data.getStimuliForQuestion(q.question_id);
-    for (const s of links) questionStimuli.push({ question_id: q.question_id, stimulus_id: s.stimulus_id });
+    // Course-wide stimuli are implied by attach_all; do not snapshot them as
+    // explicit per-question links.
+    for (const s of links) {
+      if (!s.attach_all) questionStimuli.push({ question_id: q.question_id, stimulus_id: s.stimulus_id });
+    }
   }
   const drawingNotebooks = await data.listDrawingNotebooksForCourse(courseId);
   const learning = await readLearningData(courseId, true);

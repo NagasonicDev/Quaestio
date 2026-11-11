@@ -464,11 +464,11 @@ export const api = {
     return data.deleteTest(testId);
   },
 
-  createStimulus(payload: { course_id: string; title?: string | null; body?: any[] }): Promise<any> {
+  createStimulus(payload: { course_id: string; title?: string | null; attach_all?: boolean; body?: any[] }): Promise<any> {
     return data.createStimulus(payload);
   },
 
-  updateStimulus(stimulusId: string, payload: Partial<{ course_id: string; title?: string | null; body?: any[] }>): Promise<any> {
+  updateStimulus(stimulusId: string, payload: Partial<{ course_id: string; title?: string | null; attach_all?: boolean; body?: any[] }>): Promise<any> {
     return data.updateStimulus(stimulusId, payload);
   },
 

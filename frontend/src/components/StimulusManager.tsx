@@ -55,12 +55,13 @@ export function StimulusManager({ courseId, onSelect }: StimulusManagerProps) {
     }
   }
 
-  async function handleSave(data: { title: string | null; body: any[] }) {
+  async function handleSave(data: { title: string | null; attach_all: boolean; body: any[] }) {
     setSaving(true);
     try {
       if (editing) {
         await api.updateStimulus(editing.stimulus_id, {
           title: data.title,
+          attach_all: data.attach_all,
           body: data.body,
         });
         notify("Stimulus updated", "success");
@@ -68,6 +69,7 @@ export function StimulusManager({ courseId, onSelect }: StimulusManagerProps) {
         await api.createStimulus({
           course_id: courseId,
           title: data.title,
+          attach_all: data.attach_all,
           body: data.body,
         });
         notify("Stimulus created", "success");
@@ -127,6 +129,7 @@ export function StimulusManager({ courseId, onSelect }: StimulusManagerProps) {
                   </p>
                   <p className="text-xs text-muted-foreground">
                     {new Date(stimulus.created_at).toLocaleString()}
+                    {stimulus.attach_all ? " · Attached to all questions" : ""}
                   </p>
                 </div>
                 <div className="flex gap-1">

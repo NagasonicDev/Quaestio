@@ -638,17 +638,23 @@ export function QuestionEditor({ config, existing, onSaved, onCancel }: Question
                   <div className="mt-4 space-y-2">
                     {linkedStimuli.map((s) => (
                       <div key={s.stimulus_id} className="flex items-center justify-between rounded-md border border-border px-3 py-2">
-                        <span className="text-sm truncate">{s.title || s.stimulus_id.slice(0, 8)}</span>
-                        <Button
-                          type="button"
-                          size="sm"
-                          variant="ghost"
-                          className="text-destructive hover:bg-destructive/10 hover:text-destructive"
-                          onClick={() => handleUnlinkStimulus(s)}
-                          disabled={linking}
-                        >
-                          <Trash2 /> Unlink
-                        </Button>
+                        <span className="text-sm truncate" title={s.title || s.stimulus_id.slice(0, 8)}>
+                          {s.title || s.stimulus_id.slice(0, 8)}
+                        </span>
+                        {s.attach_all ? (
+                          <span className="ml-2 shrink-0 text-xs text-muted-foreground">Attached to all questions</span>
+                        ) : (
+                          <Button
+                            type="button"
+                            size="sm"
+                            variant="ghost"
+                            className="text-destructive hover:bg-destructive/10 hover:text-destructive"
+                            onClick={() => handleUnlinkStimulus(s)}
+                            disabled={linking}
+                          >
+                            <Trash2 /> Unlink
+                          </Button>
+                        )}
                       </div>
                     ))}
                   </div>
