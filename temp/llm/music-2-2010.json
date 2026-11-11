@@ -1,0 +1,739 @@
+{
+ "course_id": "music-2-2010",
+ "course_name": "Music 2 (2010)",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Musical concepts / duration / metre, eg regular, simple and compound, irregular metres, mixed metre, polymetre",
+   "text": "metre, eg regular, simple and compound, irregular metres, mixed metre, polymetre"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Musical concepts / duration / tempo",
+   "text": "tempo"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Musical concepts / duration / rhythmic devices, eg syncopation, anacrusis, diminution, augmentation and polyrhythms",
+   "text": "rhythmic devices, eg syncopation, anacrusis, diminution, augmentation and polyrhythms"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Musical concepts / duration / methods of notating duration",
+   "text": "methods of notating duration"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Musical concepts / duration / notes and rests.",
+   "text": "notes and rests."
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Musical concepts / duration / Notes, values and rests for study should include:",
+   "text": "Notes, values and rests for study should include:"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Musical concepts / duration / In simple time In compound time",
+   "text": "In simple time In compound time"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Musical concepts / duration / Some examples are:",
+   "text": "Some examples are:"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Musical concepts / duration / Students will learn about pitch",
+   "text": "Students will learn about pitch"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Musical concepts / duration / Pitch refers to the relative highness and lowness of sounds. Important aspects include high, low, higher and lower pitches, direction of pitch movement, melody, harmony, indefinite and definite pitch.",
+   "text": "Pitch refers to the relative highness and lowness of sounds. Important aspects include high, low, higher and lower pitches, direction of pitch movement, melody, harmony, indefinite and definite pitch."
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Musical concepts / duration / graphic and traditional notation",
+   "text": "graphic and traditional notation"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Musical concepts / duration / the variety of clefs encountered in scores",
+   "text": "the variety of clefs encountered in scores"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Musical concepts / duration / pitch direction and melodic contour",
+   "text": "pitch direction and melodic contour"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Musical concepts / duration / definite and indefinite pitch",
+   "text": "definite and indefinite pitch"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Musical concepts / duration / diatonic scales",
+   "text": "diatonic scales"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Musical concepts / duration / other forms of tonality which may include polytonality, bitonality, whole tone, tone row, experimental scale forms, microtonal scales",
+   "text": "other forms of tonality which may include polytonality, bitonality, whole tone, tone row, experimental scale forms, microtonal scales"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Musical concepts / duration / chromaticism",
+   "text": "chromaticism"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Musical concepts / duration / diatonic harmony including triads, the dominant seventh, secondary sevenths, and inversions in both major and minor keys",
+   "text": "diatonic harmony including triads, the dominant seventh, secondary sevenths, and inversions in both major and minor keys"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Musical concepts / duration / modal harmony",
+   "text": "modal harmony"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Musical concepts / duration / cadences",
+   "text": "cadences"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Musical concepts / duration / modulation and tonicisation",
+   "text": "modulation and tonicisation"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Musical concepts / duration / pitch conventions in a variety of cultures.",
+   "text": "pitch conventions in a variety of cultures."
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Musical concepts / duration / Through study of the mandatory topic, Music of the last 25 years (Australian Focus), students should have experiences in music which involve current as well as traditional forms of notation. As part of the mandatory topic, students should study new methods of pitch notation either as written symbols or as a computer generated representations.",
+   "text": "Through study of the mandatory topic, Music of the last 25 years (Australian Focus), students should have experiences in music which involve current as well as traditional forms of notation. As part of the mandatory topic, students should study new methods of pitch notation either as written symbols or as a computer generated representations."
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Musical concepts / duration / Some examples of this could be:",
+   "text": "Some examples of this could be:"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Musical concepts / duration / Composers often provide explanations of contemporary symbols in the score.",
+   "text": "Composers often provide explanations of contemporary symbols in the score."
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / a range of dynamics including gradations",
+   "text": "a range of dynamics including gradations"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / the meanings of the most commonly used dynamic signs and directions",
+   "text": "the meanings of the most commonly used dynamic signs and directions"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / commonly used terms indicating expression",
+   "text": "commonly used terms indicating expression"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / tempo, including gradations",
+   "text": "tempo, including gradations"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / articulation",
+   "text": "articulation"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / finer degrees of: phrasing; dynamics; stylistic indications; ornamentation",
+   "text": "finer degrees of: phrasing; dynamics; stylistic indications; ornamentation"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Musical concepts / dynamics and expressive techniques / electronic manipulation of sounds.",
+   "text": "electronic manipulation of sounds."
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Musical concepts / tone colour / recognition of the tone colours of: individual voices and instruments; combinations of voices and instruments; acoustic sounds; electronic sounds; synthesised sounds; techniques to manipulate tone colour; commonly used directions for instrumental and vocal techniques",
+   "text": "recognition of the tone colours of: individual voices and instruments; combinations of voices and instruments; acoustic sounds; electronic sounds; synthesised sounds; techniques to manipulate tone colour; commonly used directions for instrumental and vocal techniques"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Musical concepts / tone colour / methods of sound production.",
+   "text": "methods of sound production."
+  },
+  {
+   "code": "PRE-M1-T6-D1",
+   "path": "Year 11 / Musical concepts / structure / aspects of structure such as unity and contrast",
+   "text": "aspects of structure such as unity and contrast"
+  },
+  {
+   "code": "PRE-M1-T6-D2",
+   "path": "Year 11 / Musical concepts / structure / the use of standard patterns",
+   "text": "the use of standard patterns"
+  },
+  {
+   "code": "PRE-M1-T6-D3",
+   "path": "Year 11 / Musical concepts / structure / structures which do not conform to standard patterns",
+   "text": "structures which do not conform to standard patterns"
+  },
+  {
+   "code": "PRE-M1-T6-D4",
+   "path": "Year 11 / Musical concepts / structure / larger multi-movement structures, for example, sonata, symphony, suite, concerto",
+   "text": "larger multi-movement structures, for example, sonata, symphony, suite, concerto"
+  },
+  {
+   "code": "PRE-M1-T6-D5",
+   "path": "Year 11 / Musical concepts / structure / structures in different cultures.",
+   "text": "structures in different cultures."
+  },
+  {
+   "code": "PRE-M1-T6-D6",
+   "path": "Year 11 / Musical concepts / structure / 8.2 Learning Experiences",
+   "text": "8.2 Learning Experiences"
+  },
+  {
+   "code": "PRE-M1-T6-D7",
+   "path": "Year 11 / Musical concepts / structure / Students will constantly be involved in the integration of learning experiences in Performance, Composition, Musicology and Aural in both the Preliminary and HSC courses.",
+   "text": "Students will constantly be involved in the integration of learning experiences in Performance, Composition, Musicology and Aural in both the Preliminary and HSC courses."
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / music of various genres and styles representative of the topics studied",
+   "text": "music of various genres and styles representative of the topics studied"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / original compositions",
+   "text": "original compositions"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / music studied in listening activities where appropriate",
+   "text": "music studied in listening activities where appropriate"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / accompaniments of class or other school music making activities",
+   "text": "accompaniments of class or other school music making activities"
+  },
+  {
+   "code": "PRE-M5-T1-D5",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / improvisations",
+   "text": "improvisations"
+  },
+  {
+   "code": "PRE-M5-T1-D6",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / using different types of technology.",
+   "text": "using different types of technology."
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "duration (rhythm, tempo, metre, beat)"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / pitch (melody, tonality/atonality, harmony)",
+   "text": "pitch (melody, tonality/atonality, harmony)"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / dynamics and other expressive techniques",
+   "text": "dynamics and other expressive techniques"
+  },
+  {
+   "code": "PRE-M5-T2-D4",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / tone colour",
+   "text": "tone colour"
+  },
+  {
+   "code": "PRE-M5-T2-D5",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / texture",
+   "text": "texture"
+  },
+  {
+   "code": "PRE-M5-T2-D6",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / structure",
+   "text": "structure"
+  },
+  {
+   "code": "PRE-M5-T2-D7",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / and make judgements in relation to: style and aspects of style; unity",
+   "text": "and make judgements in relation to: style and aspects of style; unity"
+  },
+  {
+   "code": "PRE-M5-T2-D8",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / contrast.",
+   "text": "contrast."
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Musical concepts / duration / metre, eg regular, simple and compound, irregular metres, mixed metre, polymetre",
+   "text": "metre, eg regular, simple and compound, irregular metres, mixed metre, polymetre"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Musical concepts / duration / tempo",
+   "text": "tempo"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Musical concepts / duration / rhythmic devices, eg syncopation, anacrusis, diminution, augmentation and polyrhythms",
+   "text": "rhythmic devices, eg syncopation, anacrusis, diminution, augmentation and polyrhythms"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Musical concepts / duration / methods of notating duration",
+   "text": "methods of notating duration"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Musical concepts / duration / notes and rests.",
+   "text": "notes and rests."
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Musical concepts / duration / Notes, values and rests for study should include:",
+   "text": "Notes, values and rests for study should include:"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Musical concepts / duration / In simple time In compound time",
+   "text": "In simple time In compound time"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Musical concepts / duration / Some examples are:",
+   "text": "Some examples are:"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Musical concepts / duration / Students will learn about pitch",
+   "text": "Students will learn about pitch"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Musical concepts / duration / Pitch refers to the relative highness and lowness of sounds. Important aspects include high, low, higher and lower pitches, direction of pitch movement, melody, harmony, indefinite and definite pitch.",
+   "text": "Pitch refers to the relative highness and lowness of sounds. Important aspects include high, low, higher and lower pitches, direction of pitch movement, melody, harmony, indefinite and definite pitch."
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Musical concepts / duration / graphic and traditional notation",
+   "text": "graphic and traditional notation"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Musical concepts / duration / the variety of clefs encountered in scores",
+   "text": "the variety of clefs encountered in scores"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Musical concepts / duration / pitch direction and melodic contour",
+   "text": "pitch direction and melodic contour"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Musical concepts / duration / definite and indefinite pitch",
+   "text": "definite and indefinite pitch"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Musical concepts / duration / diatonic scales",
+   "text": "diatonic scales"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Musical concepts / duration / other forms of tonality which may include polytonality, bitonality, whole tone, tone row, experimental scale forms, microtonal scales",
+   "text": "other forms of tonality which may include polytonality, bitonality, whole tone, tone row, experimental scale forms, microtonal scales"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Musical concepts / duration / chromaticism",
+   "text": "chromaticism"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Musical concepts / duration / diatonic harmony including triads, the dominant seventh, secondary sevenths, and inversions in both major and minor keys",
+   "text": "diatonic harmony including triads, the dominant seventh, secondary sevenths, and inversions in both major and minor keys"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Musical concepts / duration / modal harmony",
+   "text": "modal harmony"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Musical concepts / duration / cadences",
+   "text": "cadences"
+  },
+  {
+   "code": "HSC-M1-T1-D21",
+   "path": "Year 12 / Musical concepts / duration / modulation and tonicisation",
+   "text": "modulation and tonicisation"
+  },
+  {
+   "code": "HSC-M1-T1-D22",
+   "path": "Year 12 / Musical concepts / duration / pitch conventions in a variety of cultures.",
+   "text": "pitch conventions in a variety of cultures."
+  },
+  {
+   "code": "HSC-M1-T1-D23",
+   "path": "Year 12 / Musical concepts / duration / Through study of the mandatory topic, Music of the last 25 years (Australian Focus), students should have experiences in music which involve current as well as traditional forms of notation. As part of the mandatory topic, students should study new methods of pitch notation either as written symbols or as a computer generated representations.",
+   "text": "Through study of the mandatory topic, Music of the last 25 years (Australian Focus), students should have experiences in music which involve current as well as traditional forms of notation. As part of the mandatory topic, students should study new methods of pitch notation either as written symbols or as a computer generated representations."
+  },
+  {
+   "code": "HSC-M1-T1-D24",
+   "path": "Year 12 / Musical concepts / duration / Some examples of this could be:",
+   "text": "Some examples of this could be:"
+  },
+  {
+   "code": "HSC-M1-T1-D25",
+   "path": "Year 12 / Musical concepts / duration / Composers often provide explanations of contemporary symbols in the score.",
+   "text": "Composers often provide explanations of contemporary symbols in the score."
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / a range of dynamics including gradations",
+   "text": "a range of dynamics including gradations"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / the meanings of the most commonly used dynamic signs and directions",
+   "text": "the meanings of the most commonly used dynamic signs and directions"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / commonly used terms indicating expression",
+   "text": "commonly used terms indicating expression"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / tempo, including gradations",
+   "text": "tempo, including gradations"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / articulation",
+   "text": "articulation"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / finer degrees of: phrasing; dynamics; stylistic indications; ornamentation",
+   "text": "finer degrees of: phrasing; dynamics; stylistic indications; ornamentation"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Musical concepts / dynamics and expressive techniques / electronic manipulation of sounds.",
+   "text": "electronic manipulation of sounds."
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Musical concepts / tone colour / recognition of the tone colours of: individual voices and instruments; combinations of voices and instruments; acoustic sounds; electronic sounds; synthesised sounds; techniques to manipulate tone colour; commonly used directions for instrumental and vocal techniques",
+   "text": "recognition of the tone colours of: individual voices and instruments; combinations of voices and instruments; acoustic sounds; electronic sounds; synthesised sounds; techniques to manipulate tone colour; commonly used directions for instrumental and vocal techniques"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Musical concepts / tone colour / methods of sound production.",
+   "text": "methods of sound production."
+  },
+  {
+   "code": "HSC-M1-T6-D1",
+   "path": "Year 12 / Musical concepts / structure / aspects of structure such as unity and contrast",
+   "text": "aspects of structure such as unity and contrast"
+  },
+  {
+   "code": "HSC-M1-T6-D2",
+   "path": "Year 12 / Musical concepts / structure / the use of standard patterns",
+   "text": "the use of standard patterns"
+  },
+  {
+   "code": "HSC-M1-T6-D3",
+   "path": "Year 12 / Musical concepts / structure / structures which do not conform to standard patterns",
+   "text": "structures which do not conform to standard patterns"
+  },
+  {
+   "code": "HSC-M1-T6-D4",
+   "path": "Year 12 / Musical concepts / structure / larger multi-movement structures, for example, sonata, symphony, suite, concerto",
+   "text": "larger multi-movement structures, for example, sonata, symphony, suite, concerto"
+  },
+  {
+   "code": "HSC-M1-T6-D5",
+   "path": "Year 12 / Musical concepts / structure / structures in different cultures.",
+   "text": "structures in different cultures."
+  },
+  {
+   "code": "HSC-M1-T6-D6",
+   "path": "Year 12 / Musical concepts / structure / 8.2 Learning Experiences",
+   "text": "8.2 Learning Experiences"
+  },
+  {
+   "code": "HSC-M1-T6-D7",
+   "path": "Year 12 / Musical concepts / structure / Students will constantly be involved in the integration of learning experiences in Performance, Composition, Musicology and Aural in both the Preliminary and HSC courses.",
+   "text": "Students will constantly be involved in the integration of learning experiences in Performance, Composition, Musicology and Aural in both the Preliminary and HSC courses."
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "duration (rhythm, tempo, metre, beat)"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / pitch (melody, tonality/atonality, harmony)",
+   "text": "pitch (melody, tonality/atonality, harmony)"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / dynamics and other expressive techniques",
+   "text": "dynamics and other expressive techniques"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / tone colour",
+   "text": "tone colour"
+  },
+  {
+   "code": "HSC-M5-T2-D5",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / texture",
+   "text": "texture"
+  },
+  {
+   "code": "HSC-M5-T2-D6",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / structure",
+   "text": "structure"
+  },
+  {
+   "code": "HSC-M5-T2-D7",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / and make judgements in relation to: style and aspects of style; unity",
+   "text": "and make judgements in relation to: style and aspects of style; unity"
+  },
+  {
+   "code": "HSC-M5-T2-D8",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / contrast.",
+   "text": "contrast."
+  },
+  {
+   "code": "HSC-M6-T1-D1",
+   "path": "Year 12 / Elective project / Performing / music of various genres and styles representative of the topics studied",
+   "text": "music of various genres and styles representative of the topics studied"
+  },
+  {
+   "code": "HSC-M6-T1-D2",
+   "path": "Year 12 / Elective project / Performing / original compositions",
+   "text": "original compositions"
+  },
+  {
+   "code": "HSC-M6-T1-D3",
+   "path": "Year 12 / Elective project / Performing / music studied in listening activities where appropriate",
+   "text": "music studied in listening activities where appropriate"
+  },
+  {
+   "code": "HSC-M6-T1-D4",
+   "path": "Year 12 / Elective project / Performing / accompaniments of class or other school music making activities",
+   "text": "accompaniments of class or other school music making activities"
+  },
+  {
+   "code": "HSC-M6-T1-D5",
+   "path": "Year 12 / Elective project / Performing / improvisations",
+   "text": "improvisations"
+  },
+  {
+   "code": "HSC-M6-T1-D6",
+   "path": "Year 12 / Elective project / Performing / using different types of technology.",
+   "text": "using different types of technology."
+  }
+ ],
+ "questions": [
+  {
+   "id": "m2_2010_201501",
+   "year": 2015,
+   "number": "1",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on TWO excerpts from Movement 1 of String Quartet No. 6, Op. 18, No. 6 (1801) by Ludwig van Beethoven. The scores of these excerpts are Score Attachments A(i) and A(ii). You have ONE minute to look at the scores. Bars 1–44 (Score Attachment A(i)) will be played THREE times for you to answer part (a).\nDescribe the roles of the instruments in this excerpt.\nHow is the melodic material treated in this excerpt? In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201502",
+   "year": 2015,
+   "number": "2",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on Waltz from Jazz Suite No. 1 (1934) by Dmitri Shostakovich. Note: There is no score attachment for this question. Part (a) is based on a 16 bar excerpt from Waltz. The excerpt will be played SIX times for you to answer part (a).\nNotate the pitch and rhythm of the trumpet on the staves provided.\nExplore how contrast is achieved in this excerpt."
+  },
+  {
+   "id": "m2_2010_201503",
+   "year": 2015,
+   "number": "3",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on III. Militiamen from Living Toys (1993) by Thomas Adès. The score of III. Militiamen is Score Attachment B. You have ONE minute to look at the score. The movement will be played THREE times for you to answer part (a).\nExplain how expressive techniques are used to create musical interest in this movement.\nAnalyse the treatment of rhythm in this movement, with specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201504",
+   "year": 2015,
+   "number": "4",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on Möbius Strip from Five of One, Half a Dozen of the Other . . . ? (2000) by Stuart Greenbaum. The score of Möbius Strip is Score Attachment C. You have ONE minute to look at the score. The movement will be played FOUR times. Compare how the concepts of music have been manipulated in Möbius Strip and ONE other work you have studied. In your answer, make reference to the scores of both works. The other work MUST be chosen from EITHER the mandatory topic OR from your additional topic. Title Composer"
+  },
+  {
+   "id": "m2_2010_201601",
+   "year": 2016,
+   "number": "1",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on Crucifixus by Antonio Lotti. The score of Crucifixus is Score Attachment A. You have ONE minute to look at the score. The work will now be played ONCE for familiarisation. Time: First playing — short pause An excerpt (bars 1–11) will now be played THREE times for you to answer parts (a) and (b).\nIdentify compositional devices used in this excerpt. In your answer, make specific reference to the score.\nExplain how pitch is used in this excerpt. In your answer, make specific reference to the score. A different excerpt (bars 12–41) will be played TWICE for you to answer part (c).\nExplore the composer’s use of texture in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201602",
+   "year": 2016,
+   "number": "2",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on TWO excerpts from Roman Carnival Overture, Op. 9 (1844) by Hector Berlioz. Note: There is no score attachment for this question. Part (a) is based on an 8 bar excerpt from Roman Carnival Overture. The excerpt will be played SIX times for you to answer part (a).\nNotate the pitch and rhythm of the cor anglais on the staves provided.\nHow does Berlioz use duration to create interest?"
+  },
+  {
+   "id": "m2_2010_201603",
+   "year": 2016,
+   "number": "3",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on TWO excerpts from Jetstream: Fanfare for Orchestra by Paul Stanhope. The first excerpt will be played THREE times for you to answer part (a). Note: There is no score attachment for part (a) of this question.\nExplore how tone colour is used in this excerpt.\nAnalyse how contrast and unity are achieved in this excerpt. Make specific reference to the score in your answer."
+  },
+  {
+   "id": "m2_2010_201604",
+   "year": 2016,
+   "number": "4",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "Compare how TWO composers develop their musical ideas. In your response, refer to TWO works, one from the MANDATORY TOPIC and one from your ADDITIONAL TOPIC. Mandatory Topic: Music of the Last 25 Years (Australian Focus) Title: Composer: Additional Topic: Title: Composer:"
+  },
+  {
+   "id": "m2_2010_201701",
+   "year": 2017,
+   "number": "1",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on Canzone by Alessandro Stradella. The score of Canzone is Score Attachment A. You have ONE minute to look at the score. The work will now be played ONCE for familiarisation. Time: First playing — short pause The work will be played FIVE times for you to answer parts (a), (b) and (c).\nOutline the roles of the instruments that play the continuo part in this work.\nExplore the use of harmony in the section marked from A to B (bars 22–25) on the score. In your answer, make specific reference to the score.\nHow has the composer treated the theme notated below (bars 1–3) throughout the work? In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201702",
+   "year": 2017,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on THREE excerpts from Sanctus by Dan Walker. The scores of these excerpts are Score Attachments B(i), B(ii) and B(iii). You have ONE minute to look at the scores. Bars 1–16 (Score Attachment B(i)) will be played THREE times for you to answer part (a).\nThe expression marking ‘bell-like’ is given in bar 1. How has the composer achieved this quality in the excerpt? In your answer, make specific reference to the score. Bars 49–64 (Score Attachment B(ii)) will be played THREE times for you to answer part (b).\nDescribe the use of duration in this excerpt. In your answer, make specific reference to the score.\nExplain how both unity and contrast are achieved in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201703",
+   "year": 2017,
+   "number": "3",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on Piano Concerto in D-flat Major, Op. 38, Movement 2 by Aram Khachaturian. Note: There is no score attachment for part (a) of this question. Part (a) is based on an 8 bar excerpt from Piano Concerto. The excerpt will be played SIX times for you to answer part (a).\nNotate the pitch and rhythm of the violin melody on the staves provided.\nExplain how tension is created in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201704",
+   "year": 2017,
+   "number": "4",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on Movement II from High Tension Wires by Nigel Westlake. The score of this excerpt is Score Attachment D. You have ONE minute to look at the score. The excerpt will be played FOUR times. Compare how tone colour and duration are explored in Movement II from High Tension Wires and ONE other significant work you have studied. In your answer, make reference to the scores of both works. The other significant work MUST be chosen from the mandatory topic, Music of the last 25 years (Australian focus). Title Composer"
+  },
+  {
+   "id": "m2_2010_201801",
+   "year": 2018,
+   "number": "1",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on two movements from Oboe Concerto No. 1 in B-flat Major, HWV 301 by George Frideric Handel. Note: There is no score attachment for Question 1. Part (a) is based on the second movement of the Oboe Concerto. The excerpt will be played THREE times for you to answer part (a).\nDescribe the ways instruments are used in this excerpt.\nNotate the pitch and rhythm of the oboe melody on the staves provided."
+  },
+  {
+   "id": "m2_2010_201802",
+   "year": 2018,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on THREE excerpts from the fourth movement of Symphony No. 3 in E-flat Major by Ludwig van Beethoven. Note: There is no score attachment for part (a). The excerpt will be played TWICE for you to answer part (a).\nOutline the structure used in this excerpt.\nDescribe the composer’s use of texture in this excerpt. In your answer, make specific reference to the score.\nExplain how variety is achieved in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201803",
+   "year": 2018,
+   "number": "3",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on TWO excerpts from Canzona by Carl Vine. The scores of these excerpts are Score Attachments B(i) and B(ii). Part (a) is based on bars 245–256 which is provided in Score Attachment B(i). You have ONE minute to look at the score. Bars 245–256 will be played THREE times for you to answer part (a).\nHow is balance created in this excerpt? In your answer, make reference to the score.\nAnalyse the musical features in this excerpt. In your answer, make reference to the score."
+  },
+  {
+   "id": "m2_2010_201804",
+   "year": 2018,
+   "number": "4",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "Explain how composers treat the concepts of music to create a particular style. In your response, refer to TWO works from the mandatory topic, Music of the last 25 years (Australian focus)."
+  },
+  {
+   "id": "m2_2010_201901",
+   "year": 2019,
+   "number": "1",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on TWO excerpts from Parade by Eric Satie. Note: There is no score attachment for part (a). The excerpt will be played THREE times for you to answer part (a).\nDescribe the use of texture in this excerpt.\nDescribe how tone colour is used in this excerpt.\nHow is duration used in this excerpt? In your answer, make reference to the score."
+  },
+  {
+   "id": "m2_2010_201902",
+   "year": 2019,
+   "number": "2",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on TWO excerpts from Elegy in D Major for Double Bass and Pianoforte by Giovanni Bottesini. Part (a) is based on bars 19–31 which is provided in Score Attachment B. You have ONE minute to look at the score. Bars 19–31 will be played THREE times for you to answer part (a).\nDescribe the relationship between the double bass and pianoforte parts. In your answer, make specific reference to the score.\nNotate the pitch and rhythm of the double bass part on the staves provided. Note: the score is notated at sounding pitch."
+  },
+  {
+   "id": "m2_2010_201903",
+   "year": 2019,
+   "number": "3",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "This question is based on TWO excerpts from Onomatopoeia for Bass Clarinet in B-flat with Digital Delay by Nigel Westlake. The scores of these excerpts are Score Attachment C(i) and C(ii). A digital delay system is used to repeat phrases 4.5 seconds after they have been played and to ‘hold’ rhythmical motifs to act as accompaniment for other material. Part (a) is based on an excerpt which is provided in Score Attachment C(i). You have ONE minute to look at the score. The excerpt will be played THREE times for you to answer part (a).\nDescribe how THREE concepts of music contribute to tension in this excerpt.\nExplain how contrast is achieved in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2010_201904",
+   "year": 2019,
+   "number": "4",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / duration (rhythm, tempo, metre, beat)",
+   "text": "To what extent is this statement true of works you have studied in both the mandatory topic, Music of the last 25 years (Australian focus) AND the additional topic? In your response, make reference to relevant musical examples."
+  }
+ ]
+}

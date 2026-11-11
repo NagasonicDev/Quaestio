@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { BlockEditor, blocksToPayload, type EditableBlock } from "./BlockEditor.tsx";
 import type { StimulusWithContent } from "../api/types.ts";
 import { Button } from "./ui/button.tsx";
+import { Checkbox } from "./ui/checkbox.tsx";
 import { Input } from "./ui/input.tsx";
 import { Panel, PanelHead } from "./system.tsx";
 
@@ -15,13 +16,14 @@ function toEditable(blocks: StimulusWithContent["blocks"] | null | undefined): E
 
 export interface StimulusEditorProps {
   existing?: StimulusWithContent | null;
-  onSave: (data: { title: string | null; body: ReturnType<typeof blocksToPayload> }) => Promise<void> | void;
+  onSave: (data: { title: string | null; attach_all: boolean; body: ReturnType<typeof blocksToPayload> }) => Promise<void> | void;
   onCancel: () => void;
   saving?: boolean;
 }
 
 export function StimulusEditor({ existing, onSave, onCancel, saving = false }: StimulusEditorProps) {
   const [title, setTitle] = useState<string>(existing?.title ?? "");
+  const [attachAll, setAttachAll] = useState<boolean>(existing?.attach_all ?? false);
   const [blocks, setBlocks] = useState<EditableBlock[]>(() =>
     toEditable(existing?.blocks)
   );
@@ -35,6 +37,7 @@ export function StimulusEditor({ existing, onSave, onCancel, saving = false }: S
     try {
       await onSave({
         title: title.trim() || null,
+        attach_all: attachAll,
         body: blocksToPayload(blocks),
       });
     } finally {
@@ -57,6 +60,15 @@ export function StimulusEditor({ existing, onSave, onCancel, saving = false }: S
               placeholder="e.g. Stimulus 1: Circuit diagram"
             />
           </div>
+          <label className="flex items-start gap-2 text-sm">
+            <Checkbox checked={attachAll} onCheckedChange={(v) => setAttachAll(v === true)} />
+            <span>
+              Attach to every question in this course
+              <span className="block text-xs text-muted-foreground">
+                Includes questions created later. Useful for formula sheets and data sheets.
+              </span>
+            </span>
+          </label>
         </div>
       </Panel>
 
@@ -64,7 +76,7 @@ export function StimulusEditor({ existing, onSave, onCancel, saving = false }: S
         label="Stimulus content"
         blocks={blocks}
         onChange={setBlocks}
-        note="Add text, figures, equations, tables, etc. for this stimulus."
+        note="Add text, figures, equations, tables, or attach a PDF."
       />
 
       <div className="flex justify-end gap-2">

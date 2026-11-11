@@ -1,0 +1,173 @@
+{
+  "course_id": "course_dance",
+  "course_name": "Dance",
+  "id_prefix": "dance_2024",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10",
+        "HSC-M3-T2-D11"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 1 (10 marks)\nHow does Mats Ek's work Juliet and Romeo use movement to represent Juliet's perspective?\nIn your response, provide specific examples from the work."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Perspective - Juliet's movement represents her perspective through themes and ideas of: love, defiance against societal expectations, protection, betrayal, fate, violence, honour, rebellion, emotional response.",
+              "Movement: the use of the elements of dance to communicate meaning, including space (performance space, personal space, shape, level, direction, dimension, floor pattern, spatial pathways), time (tempo, duration, accent, stillness, aural), dynamics (energy and weight/force), relationships between characters, significant parts of the narrative, emotional response.",
+              "Organising the movement: development of motifs and phrases to illustrate Juliet's character development; organising the dance through sequencing, transition, repetition, variation and contrast, formal structure, unity, appraisal and evaluation."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how Mats Ek uses movement to represent Juliet's perspective in Juliet and Romeo; effectively integrates appropriate examples and language to support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how Mats Ek uses movement to represent Juliet's perspective in Juliet and Romeo; uses appropriate examples and language to support the response; presents a logical response.",
+              "5-6 marks: Provides some explanation of how Mats Ek uses movement to represent Juliet's perspective in Juliet and Romeo; uses general examples and language in the response; presents a structured response.",
+              "3-4 marks: Demonstrates a limited understanding of movement and/or Juliet's perspective and/or Juliet and Romeo; uses basic examples and language in the response.",
+              "1-2 marks: Provides some information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2024 HSC Dance",
+        "year": 2024,
+        "original_question_no": "1",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10",
+        "HSC-M3-T2-D11"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 2 (10 marks)\nHow does Frances Rings express meaning in her work Terrain?\nIn your response, provide specific examples from the work."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Meaning - the worth, attention and importance of Kati Thanda (Lake Eyre) and its impact on the audience within the context of the work; can be expressed through individual aspects, the sections and/or the whole work.",
+              "Connection between land and peoples: ancestral ties, connection to Country, generational aspects, passing on of customs; interconnectedness of the Land, its treatment, understanding of spirit, considerations for its future.",
+              "Themes and social commentary: displacement, social and political issues, voice, recognition, reconciliation, sharing of cultural stories in the context of Kati Thanda.",
+              "Movement and dance components: relevant movement across sections/episodes contributing to the conveyance of the cyclic nature of Kati Thanda.",
+              "Depiction of Lake Eyre: physical aspects, connection to land, kinship, human impact; fusion of customary and contemporary Aboriginal dance elements; creative process and influences; integration of movement, spatial elements, dynamics, aural aspects, dancers, set design/environment, music, props and costuming."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how Frances Rings expresses meaning in Terrain; effectively integrates appropriate examples and language to support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how Frances Rings expresses meaning in Terrain; uses appropriate examples and language to support the response; presents a logical response.",
+              "5-6 marks: Provides some explanation of how Frances Rings expresses meaning in Terrain; uses general examples and language in the response; presents a structured response.",
+              "3-4 marks: Demonstrates a limited understanding of meaning and/or Terrain; uses basic examples and language in the response.",
+              "1-2 marks: Provides some information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2024 HSC Dance",
+        "year": 2024,
+        "original_question_no": "2",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    }
+  ]
+}

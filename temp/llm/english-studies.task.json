@@ -1,0 +1,975 @@
+{
+ "course_id": "english-studies",
+ "course_name": "English Studies",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Understanding / Use comprehension strategies to identify main ideas, information and purposes of texts"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Understanding / The ways textual forms and language features represent ideas and perspectives"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Responding / Compose critical and creative texts that represent a range of perspectives"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Responding / Compose texts using appropriate language and textual forms for audience, purpose and context"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Responding / Compose texts that use accurate spelling, grammar and punctuation to communicate ideas"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Responding / Use appropriate language to make connections between ideas and perspectives in a variety of texts"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Reading to write: Transition to English Studies / Responding / Plan, draft and edit language and ideas in their own texts for a range of audiences and purposes"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Elective A: Voices of Australia / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Elective A: Voices of Australia / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Elective A: Voices of Australia / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Elective A: Voices of Australia / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Elective A: Voices of Australia / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Elective A: Voices of Australia / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Elective A: Voices of Australia / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Elective A: Voices of Australia / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Elective B: Media and influence / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Elective B: Media and influence / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Elective B: Media and influence / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Elective B: Media and influence / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Elective B: Media and influence / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Elective B: Media and influence / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Elective B: Media and influence / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Elective B: Media and influence / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Elective C: On the road / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Elective C: On the road / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Elective C: On the road / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Elective C: On the road / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Elective C: On the road / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Elective C: On the road / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Elective C: On the road / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M5-T2-D4",
+   "path": "Year 11 / Elective C: On the road / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M6-T1-D1",
+   "path": "Year 11 / Elective D: Playing the game / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M6-T1-D2",
+   "path": "Year 11 / Elective D: Playing the game / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M6-T1-D3",
+   "path": "Year 11 / Elective D: Playing the game / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M6-T1-D4",
+   "path": "Year 11 / Elective D: Playing the game / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M6-T2-D1",
+   "path": "Year 11 / Elective D: Playing the game / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M6-T2-D2",
+   "path": "Year 11 / Elective D: Playing the game / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M6-T2-D3",
+   "path": "Year 11 / Elective D: Playing the game / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M6-T2-D4",
+   "path": "Year 11 / Elective D: Playing the game / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M7-T1-D1",
+   "path": "Year 11 / Elective E: Lyrical voices / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M7-T1-D2",
+   "path": "Year 11 / Elective E: Lyrical voices / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M7-T1-D3",
+   "path": "Year 11 / Elective E: Lyrical voices / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M7-T1-D4",
+   "path": "Year 11 / Elective E: Lyrical voices / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M7-T2-D1",
+   "path": "Year 11 / Elective E: Lyrical voices / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M7-T2-D2",
+   "path": "Year 11 / Elective E: Lyrical voices / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M7-T2-D3",
+   "path": "Year 11 / Elective E: Lyrical voices / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M7-T2-D4",
+   "path": "Year 11 / Elective E: Lyrical voices / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M8-T1-D1",
+   "path": "Year 11 / Elective F: Everyday heroes / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M8-T1-D2",
+   "path": "Year 11 / Elective F: Everyday heroes / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M8-T1-D3",
+   "path": "Year 11 / Elective F: Everyday heroes / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M8-T1-D4",
+   "path": "Year 11 / Elective F: Everyday heroes / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M8-T2-D1",
+   "path": "Year 11 / Elective F: Everyday heroes / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M8-T2-D2",
+   "path": "Year 11 / Elective F: Everyday heroes / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M8-T2-D3",
+   "path": "Year 11 / Elective F: Everyday heroes / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M8-T2-D4",
+   "path": "Year 11 / Elective F: Everyday heroes / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M9-T1-D1",
+   "path": "Year 11 / Elective G: Part of a family / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M9-T1-D2",
+   "path": "Year 11 / Elective G: Part of a family / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M9-T1-D3",
+   "path": "Year 11 / Elective G: Part of a family / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M9-T1-D4",
+   "path": "Year 11 / Elective G: Part of a family / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M9-T2-D1",
+   "path": "Year 11 / Elective G: Part of a family / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M9-T2-D2",
+   "path": "Year 11 / Elective G: Part of a family / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M9-T2-D3",
+   "path": "Year 11 / Elective G: Part of a family / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M9-T2-D4",
+   "path": "Year 11 / Elective G: Part of a family / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M10-T1-D1",
+   "path": "Year 11 / Elective H: Uncovering the truth / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M10-T1-D2",
+   "path": "Year 11 / Elective H: Uncovering the truth / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M10-T1-D3",
+   "path": "Year 11 / Elective H: Uncovering the truth / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M10-T1-D4",
+   "path": "Year 11 / Elective H: Uncovering the truth / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M10-T2-D1",
+   "path": "Year 11 / Elective H: Uncovering the truth / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M10-T2-D2",
+   "path": "Year 11 / Elective H: Uncovering the truth / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M10-T2-D3",
+   "path": "Year 11 / Elective H: Uncovering the truth / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M10-T2-D4",
+   "path": "Year 11 / Elective H: Uncovering the truth / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M11-T1-D1",
+   "path": "Year 11 / Elective I: The big screen / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M11-T1-D2",
+   "path": "Year 11 / Elective I: The big screen / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M11-T1-D3",
+   "path": "Year 11 / Elective I: The big screen / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M11-T1-D4",
+   "path": "Year 11 / Elective I: The big screen / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M11-T2-D1",
+   "path": "Year 11 / Elective I: The big screen / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M11-T2-D2",
+   "path": "Year 11 / Elective I: The big screen / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M11-T2-D3",
+   "path": "Year 11 / Elective I: The big screen / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M11-T2-D4",
+   "path": "Year 11 / Elective I: The big screen / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M12-T1-D1",
+   "path": "Year 11 / Elective J: Representing the past / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M12-T1-D2",
+   "path": "Year 11 / Elective J: Representing the past / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M12-T1-D3",
+   "path": "Year 11 / Elective J: Representing the past / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M12-T1-D4",
+   "path": "Year 11 / Elective J: Representing the past / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M12-T2-D1",
+   "path": "Year 11 / Elective J: Representing the past / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M12-T2-D2",
+   "path": "Year 11 / Elective J: Representing the past / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M12-T2-D3",
+   "path": "Year 11 / Elective J: Representing the past / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M12-T2-D4",
+   "path": "Year 11 / Elective J: Representing the past / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "PRE-M13-T1-D1",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "PRE-M13-T1-D2",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Understanding / Explicit and implicit meaning in texts"
+  },
+  {
+   "code": "PRE-M13-T1-D3",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "PRE-M13-T1-D4",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "PRE-M13-T2-D1",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "PRE-M13-T2-D2",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "PRE-M13-T2-D3",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "PRE-M13-T2-D4",
+   "path": "Year 11 / Elective K: Achieving through English – English in education, work and community / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Narrative and human experiences / Understanding / The ways personal, social, cultural or historical contexts shape meaning in texts"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Narrative and human experiences / Understanding / The ways narrative represents ideas, information and perspectives in texts"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Narrative and human experiences / Understanding / The ways author’s shape and influence meaning in texts"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Narrative and human experiences / Understanding / Use of inference and an understanding of symbolism to interpret ideas and information in texts"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Narrative and human experiences / Understanding / The impact of structure, language and tone to convey ideas and perspectives in narratives"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Narrative and human experiences / Responding / Compose creative and critical texts that convey ideas, information and perspectives about human experiences"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Narrative and human experiences / Responding / Compose texts that use appropriate text and grammatical structures to communicate ideas, information and arguments"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Narrative and human experiences / Responding / Use formal and informal language for particular audiences, purposes and contexts"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Narrative and human experiences / Responding / Use evaluative language to communicate opinions and arguments about familiar and unfamiliar texts"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Narrative and human experiences / Responding / Use a range of simple and complex sentences to compose cohesive paragraphs in texts"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Narrative and human experiences / Responding / Plan, draft and edit a variety of compositions"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Writing for purpose / Understanding / The relationship between audience, purpose and context and the ways these shape meaning and influence responses"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Writing for purpose / Understanding / The ways social, cultural, academic, community or workplace texts use language features and text structures for particular purposes, audiences and contexts"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Writing for purpose / Understanding / The ways the form and structure of texts are influenced by audience, purpose and context"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Writing for purpose / Understanding / The ways critical and creative texts represent experiences, perspectives and ideas"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Writing for purpose / Responding / Compose critical and creative texts that make relevant connections to other texts"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Writing for purpose / Responding / Compose a variety of texts that experiment with language, forms and features to represent attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Writing for purpose / Responding / Compose logical, ordered and cohesive texts that integrate relevant information"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Writing for purpose / Responding / Use appropriate language, structure and stylistic choices to produce cohesive texts"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Writing for purpose / Responding / Develop sustained arguments supported by close textual evidence"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Writing for purpose / Responding / Use language and structure to communicate ideas and arguments"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Writing for purpose / Responding / Plan, draft and edit texts for a range of audiences and purposes"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Elective A: Voices of Australia / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Elective A: Voices of Australia / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Elective A: Voices of Australia / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Elective A: Voices of Australia / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Elective A: Voices of Australia / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Elective A: Voices of Australia / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Elective A: Voices of Australia / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Elective A: Voices of Australia / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Elective A: Voices of Australia / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Elective A: Voices of Australia / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Elective B: Media and influence / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Elective B: Media and influence / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Elective B: Media and influence / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Elective B: Media and influence / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Elective B: Media and influence / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Elective B: Media and influence / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Elective B: Media and influence / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Elective B: Media and influence / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Elective B: Media and influence / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M5-T2-D5",
+   "path": "Year 12 / Elective B: Media and influence / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M6-T1-D1",
+   "path": "Year 12 / Elective C: On the road / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M6-T1-D2",
+   "path": "Year 12 / Elective C: On the road / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M6-T1-D3",
+   "path": "Year 12 / Elective C: On the road / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M6-T1-D4",
+   "path": "Year 12 / Elective C: On the road / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M6-T1-D5",
+   "path": "Year 12 / Elective C: On the road / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M6-T2-D1",
+   "path": "Year 12 / Elective C: On the road / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M6-T2-D2",
+   "path": "Year 12 / Elective C: On the road / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M6-T2-D3",
+   "path": "Year 12 / Elective C: On the road / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M6-T2-D4",
+   "path": "Year 12 / Elective C: On the road / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M6-T2-D5",
+   "path": "Year 12 / Elective C: On the road / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M7-T1-D1",
+   "path": "Year 12 / Elective D: Playing the game / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M7-T1-D2",
+   "path": "Year 12 / Elective D: Playing the game / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M7-T1-D3",
+   "path": "Year 12 / Elective D: Playing the game / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M7-T1-D4",
+   "path": "Year 12 / Elective D: Playing the game / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M7-T1-D5",
+   "path": "Year 12 / Elective D: Playing the game / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M7-T2-D1",
+   "path": "Year 12 / Elective D: Playing the game / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M7-T2-D2",
+   "path": "Year 12 / Elective D: Playing the game / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M7-T2-D3",
+   "path": "Year 12 / Elective D: Playing the game / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M7-T2-D4",
+   "path": "Year 12 / Elective D: Playing the game / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M7-T2-D5",
+   "path": "Year 12 / Elective D: Playing the game / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M8-T1-D1",
+   "path": "Year 12 / Elective E: Lyrical voices / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M8-T1-D2",
+   "path": "Year 12 / Elective E: Lyrical voices / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M8-T1-D3",
+   "path": "Year 12 / Elective E: Lyrical voices / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M8-T1-D4",
+   "path": "Year 12 / Elective E: Lyrical voices / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M8-T1-D5",
+   "path": "Year 12 / Elective E: Lyrical voices / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M8-T2-D1",
+   "path": "Year 12 / Elective E: Lyrical voices / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M8-T2-D2",
+   "path": "Year 12 / Elective E: Lyrical voices / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M8-T2-D3",
+   "path": "Year 12 / Elective E: Lyrical voices / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M8-T2-D4",
+   "path": "Year 12 / Elective E: Lyrical voices / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M8-T2-D5",
+   "path": "Year 12 / Elective E: Lyrical voices / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M9-T1-D1",
+   "path": "Year 12 / Elective F: Everyday heroes / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M9-T1-D2",
+   "path": "Year 12 / Elective F: Everyday heroes / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M9-T1-D3",
+   "path": "Year 12 / Elective F: Everyday heroes / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M9-T1-D4",
+   "path": "Year 12 / Elective F: Everyday heroes / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M9-T1-D5",
+   "path": "Year 12 / Elective F: Everyday heroes / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M9-T2-D1",
+   "path": "Year 12 / Elective F: Everyday heroes / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M9-T2-D2",
+   "path": "Year 12 / Elective F: Everyday heroes / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M9-T2-D3",
+   "path": "Year 12 / Elective F: Everyday heroes / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M9-T2-D4",
+   "path": "Year 12 / Elective F: Everyday heroes / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M9-T2-D5",
+   "path": "Year 12 / Elective F: Everyday heroes / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M10-T1-D1",
+   "path": "Year 12 / Elective G: Part of a family / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M10-T1-D2",
+   "path": "Year 12 / Elective G: Part of a family / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M10-T1-D3",
+   "path": "Year 12 / Elective G: Part of a family / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M10-T1-D4",
+   "path": "Year 12 / Elective G: Part of a family / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M10-T1-D5",
+   "path": "Year 12 / Elective G: Part of a family / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M10-T2-D1",
+   "path": "Year 12 / Elective G: Part of a family / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M10-T2-D2",
+   "path": "Year 12 / Elective G: Part of a family / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M10-T2-D3",
+   "path": "Year 12 / Elective G: Part of a family / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M10-T2-D4",
+   "path": "Year 12 / Elective G: Part of a family / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M10-T2-D5",
+   "path": "Year 12 / Elective G: Part of a family / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M11-T1-D1",
+   "path": "Year 12 / Elective H: Uncovering the truth / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M11-T1-D2",
+   "path": "Year 12 / Elective H: Uncovering the truth / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M11-T1-D3",
+   "path": "Year 12 / Elective H: Uncovering the truth / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M11-T1-D4",
+   "path": "Year 12 / Elective H: Uncovering the truth / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M11-T1-D5",
+   "path": "Year 12 / Elective H: Uncovering the truth / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M11-T2-D1",
+   "path": "Year 12 / Elective H: Uncovering the truth / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M11-T2-D2",
+   "path": "Year 12 / Elective H: Uncovering the truth / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M11-T2-D3",
+   "path": "Year 12 / Elective H: Uncovering the truth / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M11-T2-D4",
+   "path": "Year 12 / Elective H: Uncovering the truth / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M11-T2-D5",
+   "path": "Year 12 / Elective H: Uncovering the truth / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M12-T1-D1",
+   "path": "Year 12 / Elective I: The big screen / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M12-T1-D2",
+   "path": "Year 12 / Elective I: The big screen / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M12-T1-D3",
+   "path": "Year 12 / Elective I: The big screen / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M12-T1-D4",
+   "path": "Year 12 / Elective I: The big screen / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M12-T1-D5",
+   "path": "Year 12 / Elective I: The big screen / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M12-T2-D1",
+   "path": "Year 12 / Elective I: The big screen / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M12-T2-D2",
+   "path": "Year 12 / Elective I: The big screen / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M12-T2-D3",
+   "path": "Year 12 / Elective I: The big screen / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M12-T2-D4",
+   "path": "Year 12 / Elective I: The big screen / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M12-T2-D5",
+   "path": "Year 12 / Elective I: The big screen / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M13-T1-D1",
+   "path": "Year 12 / Elective J: Representing the past / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M13-T1-D2",
+   "path": "Year 12 / Elective J: Representing the past / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M13-T1-D3",
+   "path": "Year 12 / Elective J: Representing the past / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M13-T1-D4",
+   "path": "Year 12 / Elective J: Representing the past / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M13-T1-D5",
+   "path": "Year 12 / Elective J: Representing the past / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M13-T2-D1",
+   "path": "Year 12 / Elective J: Representing the past / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M13-T2-D2",
+   "path": "Year 12 / Elective J: Representing the past / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M13-T2-D3",
+   "path": "Year 12 / Elective J: Representing the past / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M13-T2-D4",
+   "path": "Year 12 / Elective J: Representing the past / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M13-T2-D5",
+   "path": "Year 12 / Elective J: Representing the past / Responding / Compose texts that reflect on their choices in the writing process"
+  },
+  {
+   "code": "HSC-M14-T1-D1",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Understanding / The ways language forms and features are used to communicate ideas and shape meaning"
+  },
+  {
+   "code": "HSC-M14-T1-D2",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Understanding / Explicit and implicit meaning is created in texts"
+  },
+  {
+   "code": "HSC-M14-T1-D3",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Understanding / The ways mode and medium can influence language and structure"
+  },
+  {
+   "code": "HSC-M14-T1-D4",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Understanding / The ways that audience, purpose and context shape meaning in a variety of social, community and workplace texts"
+  },
+  {
+   "code": "HSC-M14-T1-D5",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Understanding / The connection between texts"
+  },
+  {
+   "code": "HSC-M14-T2-D1",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Responding / Compose a variety of texts that use language forms and features to present particular attitudes, values and perspectives"
+  },
+  {
+   "code": "HSC-M14-T2-D2",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Responding / Compose critical texts that use appropriate evidence to support a clear point of view"
+  },
+  {
+   "code": "HSC-M14-T2-D3",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Responding / Use complex sentences to communicate the relationship between ideas in a range of texts"
+  },
+  {
+   "code": "HSC-M14-T2-D4",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Responding / Use appropriate textual forms and structures to communicate information and ideas"
+  },
+  {
+   "code": "HSC-M14-T2-D5",
+   "path": "Year 12 / Elective K: Achieving through English – English in education, work and community / Responding / Compose texts that reflect on their choices in the writing process"
+  }
+ ],
+ "questions": [
+  {
+   "id": "es2020_q7",
+   "year": 2020,
+   "number": "7",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Elective focus areas",
+   "text": "Choose a significant issue from one of the modules you have studied this year.\nIn what ways has your study helped you understand and rethink this issue?\nIn your response, make close reference to at least ONE text from ONE module you have\nstudied.\nIdentify the module you have chosen at the top of your answer booklet.\nThe modules for study are listed below.\nModule A: We are Australians\nModule H: Part of a Family\nModule B:\nTelling us all about it"
+  },
+  {
+   "id": "es2021_q7",
+   "year": 2021,
+   "number": "7",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Elective focus areas",
+   "text": "Choose ONE of the English Studies modules that you have studied during your HSC year.\nExplain why you believe this module may be valuable for you in the future. In your response,\nmake close reference to ONE text you have studied in this module.\nIdentify the module you have chosen at the top of page 2 of your answer booklet.\nThe modules for study are listed below.\nModule A: We are Australians\nModule B:\nTelling us all about it\nModule C: On the Road\nModule D: Digital Worlds"
+  },
+  {
+   "id": "es2022_q7",
+   "year": 2022,
+   "number": "7",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Elective focus areas",
+   "text": "There is a new English teacher at your school who is about to teach English Studies for the\nfirst time.\nWrite a letter to this new teacher recommending the module that you think students in Year 12\nnext year would find the most rewarding.\nIn your response, make close reference to ONE text you have studied in the module.\nIdentify the module you have chosen at the top of page 2 of your writing booklet.\nThe modules for study are listed below.\nModule A: We are Australians\nModule B:\nModule C:"
+  },
+  {
+   "id": "es2023_q7",
+   "year": 2023,
+   "number": "7",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Elective focus areas",
+   "text": "Choose ONE of the English Studies modules that you have studied during your HSC year.\nIn what ways did this module interest you and challenge the way you think? In your response,\nmake close reference to ONE text you have studied in this module.\nIdentify the module you have chosen at the top of page 2 of your writing booklet.\nThe modules for study are listed below.\nModule A: We are Australians\nModule B:\nTelling us all about it\nModule C: On the Road\nModule D: Digital Worlds"
+  },
+  {
+   "id": "es2024_q7",
+   "year": 2024,
+   "number": "7",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Elective focus areas",
+   "text": "Your school is reviewing the modules they teach in English Studies and has uploaded the\nfollowing student survey question to the school website:\n‘Which ONE of the English Studies modules you have\nstudied this year should remain in the program? Why?’\nWrite your response to the survey question. In your response, make reference to ONE text from\nyour chosen module.\nIdentify the module you have chosen at the top of page 2 of your writing booklet.\nThe modules for study are listed below.\nModule A: We are Australians\nModule B:"
+  },
+  {
+   "id": "es2025_q7",
+   "year": 2025,
+   "number": "7",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Elective focus areas",
+   "text": "Select ONE text you have studied in a module this year. Explain how the key ideas in this text\nhave had a significant impact on you and your understanding of the world.\nIn your response, make close reference to ONE text you have studied this year.\nIdentify the module you have chosen at the top of page 2 of your writing booklet.\nThe modules for study are listed below.\nModule A: We are Australians\nModule B:\nTelling us all about it\nModule C: On the Road\nModule D: Digital Worlds"
+  }
+ ]
+}

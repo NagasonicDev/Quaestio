@@ -1,0 +1,1185 @@
+{
+ "course_id": "economics",
+ "course_name": "Economics",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Introduction to economics / Economic thinking / What is an economy and what is economics?"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Introduction to economics / Economic thinking / The economic problem, including wants, resources and scarcity, and economic decision-making as the choice between alternatives"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Economic agents responsible for economic decision-making, including consumers, producers and government"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Opportunity cost and other trade-offs in economic decision-making"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Cost–benefit principle in economic decision-making, including marginal costs and benefits, and short-term versus long-term factors"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Incentives and disincentives in economic decision-making, including intended and unintended consequences"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Role of data in economic decision-making, including informing public policy, monitoring economic performance and forecasting"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Role of models in economic decision-making, including the key assumptions of economic models"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Challenge of behavioural economics to conventional assumptions of rational behaviour and self-interest in economic decision-making, including cognitive biases and ethical considerations"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Relationship between microeconomics and macroeconomics"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Contribution of economics to understanding and solving real-world problems"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Factors of production, including natural resources (land), labour, capital and entrepreneurship"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Factor incomes, specifically rent, wages, interest and profit"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Key questions for any economy, including ‘What to produce?’, ‘How to produce?’, ‘How much to produce?’, ‘How to distribute production?’"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / How the key questions for any economy are addressed in different economic systems, including pre-industrial, planned, free market and mixed market economies"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Importance of money to the operation of an economy, including its forms and functions"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Production possibilities model and opportunity cost, including production possibilities frontiers (PPF) and production possibilities schedules"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Interpret PPFs and production possibilities schedules, including shifts of the frontier"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Assumptions of the production possibilities model"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Identify opportunity costs from PPFs and production possibilities schedules"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Economic efficiency and reasons for an economy operating on, inside or outside its PPF, including underemployment of resources and technological advances"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Opportunity costs of producing consumer and capital goods"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Roles of the household, business, financial, government and international sectors in the circular flow of income model"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Income flows into the economy (injections) and out of the economy (leakages) from different sectors via investment (), government spending (), exports (), savings (), taxation () and imports ()"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Interpret circular flow of income diagrams"
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Identify equilibrium and disequilibrium positions in an economy using the formula"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Effects of change to injections and leakages on the circular flow of income model and the overall economy"
+  },
+  {
+   "code": "PRE-M1-T5-D1",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Gross domestic product (GDP), including contributions of the private and public sectors"
+  },
+  {
+   "code": "PRE-M1-T5-D2",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Reasons economies pursue higher GDP"
+  },
+  {
+   "code": "PRE-M1-T5-D3",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Contributions of Aboriginal and Torres Strait Islander businesses to GDP"
+  },
+  {
+   "code": "PRE-M1-T5-D4",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Stages of the business cycle, including expansion/upturn, contraction/downturn, peak, trough"
+  },
+  {
+   "code": "PRE-M1-T5-D5",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Relationship between stages of the business cycle and economic conditions, including unemployment and inflation"
+  },
+  {
+   "code": "PRE-M1-T5-D6",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Reasons for fluctuations in the business cycle"
+  },
+  {
+   "code": "PRE-M1-T5-D7",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Effects of business cycle fluctuations on households, businesses and government"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Markets / Role of markets / Role of the price mechanism in a market economy, including the signalling, incentive and rationing functions of relative prices"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Markets / Role of markets / Contribution of self-interest and institutions to the functioning of markets, including the rule of law and enforcement of property rights and contracts"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Markets / Role of markets / Relationship between factor markets and product markets"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Markets / Demand / Effective individual demand and market demand"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Markets / Demand / Law of demand and the corresponding negatively sloping demand curve"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Markets / Demand / Movements along the demand curve, specifically expansions and contractions of demand for a good or service due to a change in price"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Markets / Demand / Movements (shifts) of the demand curve, including increases and decreases in demand for a good or service due to changes in non-price factors involving income, population, tastes, prices of substitutes and complements, and expected future prices"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Markets / Demand / Construct and interpret demand schedules and graphs"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Markets / Supply / Effective individual and market supply"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Markets / Supply / Law of supply and corresponding positively sloping supply curve"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Markets / Supply / Movements along the supply curve, specifically expansions and contractions of supply for a good or service due to a change in price"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Markets / Supply / Movements (shifts) of the supply curve, including increases and decreases of supply for a good or service due to changes in non-price factors involving the cost of factors of production, expected future prices, number of suppliers, and technology"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Markets / Supply / Construct and interpret supply schedules and graphs"
+  },
+  {
+   "code": "PRE-M2-T4-D1",
+   "path": "Year 11 / Markets / Market equilibrium / Effects of changes in demand and supply on equilibrium market price and equilibrium quantity"
+  },
+  {
+   "code": "PRE-M2-T4-D2",
+   "path": "Year 11 / Markets / Market equilibrium / Construct and interpret demand and supply graphs that demonstrate changes to market equilibrium"
+  },
+  {
+   "code": "PRE-M2-T4-D3",
+   "path": "Year 11 / Markets / Market equilibrium / Contribution of market equilibrium and market outcomes to efficiency"
+  },
+  {
+   "code": "PRE-M2-T5-D1",
+   "path": "Year 11 / Markets / Price elasticity of demand / Degrees of price elasticity of demand, including perfectly elastic, relatively elastic, unitary elastic, relatively inelastic and perfectly inelastic"
+  },
+  {
+   "code": "PRE-M2-T5-D2",
+   "path": "Year 11 / Markets / Price elasticity of demand / Interpret demand graphs for price elasticity of demand"
+  },
+  {
+   "code": "PRE-M2-T5-D3",
+   "path": "Year 11 / Markets / Price elasticity of demand / Calculate price elasticity of demand using the percentage method formula"
+  },
+  {
+   "code": "PRE-M2-T5-D4",
+   "path": "Year 11 / Markets / Price elasticity of demand / Factors affecting price elasticity of demand, including degree of necessity, closeness and number of available substitutes, proportion of income spent on an item, time horizon and addictiveness of the item"
+  },
+  {
+   "code": "PRE-M2-T5-D5",
+   "path": "Year 11 / Markets / Price elasticity of demand / Significance of price elasticity of demand for businesses in terms of pricing, product differentiation and output"
+  },
+  {
+   "code": "PRE-M2-T6-D1",
+   "path": "Year 11 / Markets / Price elasticity of supply / Degrees of price elasticity of supply, including perfectly elastic, relatively elastic, unitary elastic, relatively inelastic and perfectly inelastic"
+  },
+  {
+   "code": "PRE-M2-T6-D2",
+   "path": "Year 11 / Markets / Price elasticity of supply / Interpret supply graphs for price elasticity of supply"
+  },
+  {
+   "code": "PRE-M2-T6-D3",
+   "path": "Year 11 / Markets / Price elasticity of supply / Factors affecting price elasticity of supply, including time horizon, excess capacity, durability of goods and factor mobility"
+  },
+  {
+   "code": "PRE-M2-T6-D4",
+   "path": "Year 11 / Markets / Price elasticity of supply / Significance of price elasticity of supply for businesses"
+  },
+  {
+   "code": "PRE-M2-T7-D1",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Role of competition in markets and degrees of competition"
+  },
+  {
+   "code": "PRE-M2-T7-D2",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Characteristics of perfect competition, monopolistic competition, oligopolies and monopolies, including number of businesses, types of goods and services, barriers to entry and pricing power"
+  },
+  {
+   "code": "PRE-M2-T7-D3",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Economic implications of increases in the level of market concentration on the price, quantity and quality of goods and services, and the innovation and profit of businesses"
+  },
+  {
+   "code": "PRE-M2-T7-D4",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Effects of technological innovation and the digital economy on market power, including first-mover advantage and network effects associated with digital platforms"
+  },
+  {
+   "code": "PRE-M2-T8-D1",
+   "path": "Year 11 / Markets / Nature and types of market failure / Limitations of the price mechanism in achieving economic and social objectives"
+  },
+  {
+   "code": "PRE-M2-T8-D2",
+   "path": "Year 11 / Markets / Nature and types of market failure / Challenges faced by Aboriginal and Torres Strait Islander businesses in accessing capital and markets"
+  },
+  {
+   "code": "PRE-M2-T8-D3",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of positive externalities and negative externalities from consumption and production in relation to market failure, including marginal private costs and benefits, marginal social costs and benefits, property rights, common-pool resources, merit goods and demerit goods"
+  },
+  {
+   "code": "PRE-M2-T8-D4",
+   "path": "Year 11 / Markets / Nature and types of market failure / Interpret demand and supply graphs that demonstrate negative externalities from production and positive externalities from consumption"
+  },
+  {
+   "code": "PRE-M2-T8-D5",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of public goods in relation to market failure, including non-excludability, non-rivalry, and the free rider problem"
+  },
+  {
+   "code": "PRE-M2-T8-D6",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of market power abuse in relation to market failure, including predatory pricing and collusion"
+  },
+  {
+   "code": "PRE-M2-T8-D7",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of asymmetric information in relation to market failure, including lack of disclosure and adverse selection"
+  },
+  {
+   "code": "PRE-M2-T8-D8",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of income and wealth inequality in relation to market failure, including social exclusion"
+  },
+  {
+   "code": "PRE-M2-T9-D1",
+   "path": "Year 11 / Markets / Government intervention in market failures / Rationale for government intervention to address market failure"
+  },
+  {
+   "code": "PRE-M2-T9-D2",
+   "path": "Year 11 / Markets / Government intervention in market failures / Forms and features of government policy interventions to correct market failure, including taxes, subsidies, direct provision of goods, regulations, price controls (binding ceiling and floor prices), quantity controls (quotas) and nudges"
+  },
+  {
+   "code": "PRE-M2-T9-D3",
+   "path": "Year 11 / Markets / Government intervention in market failures / Interpret demand and supply graphs that demonstrate the effects of taxes and price controls"
+  },
+  {
+   "code": "PRE-M2-T9-D4",
+   "path": "Year 11 / Markets / Government intervention in market failures / Limitations of government intervention into market failure"
+  },
+  {
+   "code": "PRE-M2-T9-D5",
+   "path": "Year 11 / Markets / Government intervention in market failures / Government failure, including unintended consequences of policy interventions and rent-seeking behaviour"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Role of households in the economy"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Consumers as utility-maximising agents, including choices at the margin and the law of diminishing marginal utility"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Consumers as socially and ethically motivated agents, including the influence of collective values, culture and social norms"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Relationship between consumption, savings and income, including the marginal propensity to consume (), marginal propensity to save (), and"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Determine the marginal propensity to consume"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Savings as deferred consumption, dissaving and the paradox of thrift"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Role of consumer sovereignty and factors that challenge its functioning, including marketing and behavioural sludges"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Effect of changes in income on types of consumption, including expenditure on normal goods, inferior goods and Veblen goods"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Contribution of consumption and income to wellbeing"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Household and business sector / Households: the provision of labour / Factors affecting supply of labour from households, including wage and non-wage benefits, working conditions, population, workforce participation, education, training and skills, occupational and geographic mobility of labour"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Household and business sector / Households: the provision of labour / Disincentives to participation in the workforce, including workplace inflexibility and culture, inadequate leave entitlements, and affordability and availability of care"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Role of businesses in the economy"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Producers as profit-maximising agents, including the differences between economic profit and accounting profit"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Classification of businesses, including public enterprises, private enterprises and industries"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Relationship between production and productivity, and the importance of productivity to profitability and living standards"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Factors affecting the productivity of businesses, including technological innovation, capital deepening, worker skills, internal and external economies and diseconomies of scale"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Interpret long-run average cost (LRAC) curves that model economies and diseconomies of scale, including the technical optimum"
+  },
+  {
+   "code": "PRE-M3-T4-D1",
+   "path": "Year 11 / Household and business sector / Businesses: the provision of income / Income earned by labour, including wage benefits, non-wage benefits and the role of the minimum wage"
+  },
+  {
+   "code": "PRE-M3-T4-D2",
+   "path": "Year 11 / Household and business sector / Businesses: the provision of income / Arguments for and against the equitable distribution of income from work"
+  },
+  {
+   "code": "PRE-M3-T4-D3",
+   "path": "Year 11 / Household and business sector / Businesses: the provision of income / Factors affecting demand for labour by businesses, including total output, relative cost of labour and capital, artificial intelligence (AI) and automation, profitability of businesses and government policy"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Financial sector / Role of financial sector / Role of financial sector in the economy, including facilitating savings and investment"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Financial sector / Role of financial sector / Types of financial intermediaries, including banks, insurers, fund managers and the central bank"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Financial sector / Role of financial sector / Role of superannuation in the Australian economy as a source of savings and investment"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Financial sector / Types of financial markets: equity markets / Characteristics of equity markets"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Financial sector / Types of financial markets: equity markets / Primary and secondary share markets, including their functions and effects on the economy"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Characteristics of debt markets"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Primary and secondary bond markets, including their functions and effects on the economy"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Role of interest rates in the economy, including the price of money, the cost of credit, the return on savings, and as an indicator of risk"
+  },
+  {
+   "code": "PRE-M4-T3-D4",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Factors affecting the demand for funds, including consumer and business confidence, investment opportunities and government policies"
+  },
+  {
+   "code": "PRE-M4-T3-D5",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Factors affecting the supply of funds, including domestic savings, alternative investment opportunities, foreign investment and government policies"
+  },
+  {
+   "code": "PRE-M4-T3-D6",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Interpret a loanable funds graph to demonstrate the effect of changes in demand for funds and supply of funds on the rate of interest"
+  },
+  {
+   "code": "PRE-M4-T3-D7",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Effects of interest rate changes on housing affordability"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Government sector / Role of government / Role of government in the economy, including redistribution, reallocation, stabilisation and correction of market failure"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Government sector / Role of government / Role of Aboriginal and Torres Strait Islander advisory bodies in shaping government policy for economic outcomes"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Government sector / Role of government / Governments as social welfare-maximising agents, including improving quality of life"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Government sector / Role of government / Features of the Australian federal Budget and tax-transfer system"
+  },
+  {
+   "code": "PRE-M5-T1-D5",
+   "path": "Year 11 / Government sector / Role of government / Regulation as a government tool to manage the economy and minimise, mitigate or eliminate harm"
+  },
+  {
+   "code": "PRE-M5-T1-D6",
+   "path": "Year 11 / Government sector / Role of government / Government use of nudges and incentives to alter the economic behaviour of households and businesses"
+  },
+  {
+   "code": "PRE-M5-T1-D7",
+   "path": "Year 11 / Government sector / Role of government / Arguments for and against the privatisation and nationalisation of businesses"
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Government sector / Taxation / Purposes of taxation for the economy and society"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Government sector / Taxation / Major sources of Australian Government revenue"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Government sector / Taxation / Features of the tax base, including income, wealth and consumption"
+  },
+  {
+   "code": "PRE-M5-T2-D4",
+   "path": "Year 11 / Government sector / Taxation / Types of taxation, including personal income, profit, sales taxes and excise duty"
+  },
+  {
+   "code": "PRE-M5-T2-D5",
+   "path": "Year 11 / Government sector / Taxation / Characteristics and types of direct and indirect taxes, including the economic and legal incidence of tax"
+  },
+  {
+   "code": "PRE-M5-T2-D6",
+   "path": "Year 11 / Government sector / Taxation / Features of a good tax, including simplicity, fairness and efficiency"
+  },
+  {
+   "code": "PRE-M5-T2-D7",
+   "path": "Year 11 / Government sector / Taxation / Rationale for reform of the Australian taxation system"
+  },
+  {
+   "code": "PRE-M5-T3-D1",
+   "path": "Year 11 / Government sector / Government spending / Purpose of recurrent and non-recurrent government spending, including transfer payments, essential services and infrastructure"
+  },
+  {
+   "code": "PRE-M5-T3-D2",
+   "path": "Year 11 / Government sector / Government spending / Major areas of Australian Government expenditure"
+  },
+  {
+   "code": "PRE-M5-T3-D3",
+   "path": "Year 11 / Government sector / Government spending / Rationale for reform of Australian Government spending"
+  },
+  {
+   "code": "PRE-M6-T1-D1",
+   "path": "Year 11 / International sector / International trade / Role and basis of international trade in the economy, including voluntary exchange for mutual benefit and the efficient allocation of resources"
+  },
+  {
+   "code": "PRE-M6-T1-D2",
+   "path": "Year 11 / International sector / International trade / Value, direction and composition of Australia’s international trade"
+  },
+  {
+   "code": "PRE-M6-T1-D3",
+   "path": "Year 11 / International sector / International trade / Features of Aboriginal and Torres Strait Islander trade, including major exports and historical international trade routes"
+  },
+  {
+   "code": "PRE-M6-T1-D4",
+   "path": "Year 11 / International sector / International trade / Identify trade outcomes, including balanced, surplus and deficit"
+  },
+  {
+   "code": "PRE-M6-T2-D1",
+   "path": "Year 11 / International sector / International investment / Features of international investment flows, including foreign debt and foreign equity"
+  },
+  {
+   "code": "PRE-M6-T2-D2",
+   "path": "Year 11 / International sector / International investment / Value, direction and composition of Australia’s international investment"
+  },
+  {
+   "code": "PRE-M6-T3-D1",
+   "path": "Year 11 / International sector / Exchange rates / Role of exchange rates in facilitating international trade and investment flows"
+  },
+  {
+   "code": "PRE-M6-T3-D2",
+   "path": "Year 11 / International sector / Exchange rates / Measurement of the relative value of the Australian dollar using bilateral exchange rates"
+  },
+  {
+   "code": "PRE-M6-T4-D1",
+   "path": "Year 11 / International sector / Balance of payments / Purpose of the balance of payments as a record of international economic transactions"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Distinction between nominal GDP and real GDP"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Calculate real GDP using the formula"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Relationship between GDP and economic growth"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Limitations of GDP as a measurement, specifically the exclusion of population, hours worked, the informal economy, the non-market sector, distribution of income, environmental degradation and depletion of the resource base"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Types of economic decline, including negative economic growth, technical recession, per capita recession and depression"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Factors influencing the components of aggregate demand , including consumption (), investment (), government spending () and net exports ()"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Effect of changes in the terms of trade on net exports and aggregate demand"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Effects of changes in aggregate expenditure () on national income () through the multiplier effect"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Calculate and interpret the simple expenditure multiplier () using the formula and its effect on national income using the formula"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Factors influencing the components of aggregate supply, including productivity, quality and quantity of inputs"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Identify an equilibrium position for an economy from leakages and injections using the formula"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Relationship between actual output and potential output"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Construct and interpret aggregate demand and aggregate supply (AD-AS) graphs to demonstrate changes in GDP"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Effects of economic growth and economic decline on households, businesses and the government"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Reasons for trends in economic growth in Australia"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Interpret and analyse economic growth data through tables, time series line graphs, column charts and bar charts"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Composition of the labour force, including employed and unemployed persons, part-time and full-time workers"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Factors affecting labour force participation in Australia, including cyclical and structural influences"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Calculate and interpret the rate of labour force participation using the formula"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Economic implications of demographic shifts and changes to Australia’s dependency ratio, including possible effects on economic growth, government revenue and expenditure, immigration and retirement age"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Types of unemployment, including cyclical, structural and frictional"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Causes of unemployment and underemployment, including insufficient aggregate demand, structural changes, technological changes, labour market frictions"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Calculate and interpret the rate of unemployment using the formula"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Limitations of measuring the rate of unemployment, including hidden unemployed, underemployed and informal workers"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Relationship between the labour force, labour force participation rate, unemployment rate and labour force underutilisation rate"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Economic and social effects of unemployment and underemployment"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Reasons for trends in employment and unemployment in Australia"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Interpret and analyse unemployment and employment data through tables, time series line graphs, column charts and bar charts"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Distinctions between inflation, deflation, disinflation and stagflation"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Measurement of inflation from the consumer price index (CPI) using the formula"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Distinction between the headline inflation rate and underlying inflation rate"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Types and causes of inflation, including demand-pull, cost-push, inflationary expectations, imported inflation"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Interpret aggregate demand and supply graphs that demonstrate demand–pull inflation and cost–push inflation"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Relationship between inflation, unemployment and potential output"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Negative effects of high inflation and deflation on households, businesses, the government and the economy"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Reasons for trends in inflation and the cost of living in Australia"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Interpret and analyse inflation data through tables, time series line graphs, column charts and bar charts"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Relationship between income and wealth"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Types of economic inequality, including income, wealth and opportunity"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Interpret income and wealth inequality using the Lorenz curve, Gini coefficient, Palma ratio"
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Cycle of poverty, intergenerational income mobility and the extent of relative poverty in Australia, based on the proportion of population below the Organisation for Economic Co-operation and Development (OECD) poverty line"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Causes of economic inequality, including educational disparities, asset price inflation, wealth transfers, structural changes to the economy and government policies"
+  },
+  {
+   "code": "HSC-M1-T4-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Factors contributing to inequities in health and housing outcomes in Australia"
+  },
+  {
+   "code": "HSC-M1-T4-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Features of the gender pay gap, including wage disparity, occupational segregation, promotion gaps, the motherhood penalty and fatherhood premium"
+  },
+  {
+   "code": "HSC-M1-T4-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Reasons for economic inequality disproportionately affecting Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M1-T4-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Effects of economic inequality in Australia"
+  },
+  {
+   "code": "HSC-M1-T4-D10",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Reasons for trends in inequality in Australia"
+  },
+  {
+   "code": "HSC-M1-T4-D11",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Interpret and analyse inequality data through tables and scatterplot charts, including the relationship between inequality and socio-economic outcomes"
+  },
+  {
+   "code": "HSC-M1-T5-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Role of the natural environment in the economy, including the provision of natural resources, ecosystem services and amenities"
+  },
+  {
+   "code": "HSC-M1-T5-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Types of environmental issues arising from inefficient resource use, including the depletion of non-renewable resources, overexploitation of renewable resources, overproduction of waste and climate change"
+  },
+  {
+   "code": "HSC-M1-T5-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Measurement of environmental sustainability, including greenhouse gas emissions and ecological footprint"
+  },
+  {
+   "code": "HSC-M1-T5-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Intergenerational equity and its relationship to environmental degradation"
+  },
+  {
+   "code": "HSC-M1-T5-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Environmental impacts of market failure, including negative externalities related to overproduction caused by undefined property rights and positive externalities related to underproduction of environmental goods"
+  },
+  {
+   "code": "HSC-M1-T5-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Interpret demand and supply graphs relating to the natural environment that demonstrate negative externalities from production and positive externalities from consumption"
+  },
+  {
+   "code": "HSC-M1-T5-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Economic costs of climate change to the Australian economy"
+  },
+  {
+   "code": "HSC-M1-T5-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Reasons for trends in greenhouse gas emissions in Australia"
+  },
+  {
+   "code": "HSC-M1-T5-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Interpret and analyse environmental sustainability data through tables, time series line graphs, column charts, bar charts and scatterplot charts, including the relationship between the natural environment and production"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Economic objectives / Economic objectives of the Australian Government, including higher quality of life, economic growth, full employment, price stability, equitable distribution of income and wealth, and environmental sustainability"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Economic objectives / Constraints on the government’s ability to simultaneously achieve economic objectives"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Fiscal policy as a macroeconomic, demand-side, counter-cyclical tool for economic management"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Budget outcomes, including balanced, surplus and deficit"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Fiscal stance, including neutral, contractionary and expansionary"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Identify budget outcomes and fiscal stance"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Discretionary (structural) and non-discretionary (cyclical) components of the budget"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Limitations of financing a budget deficit through debt financing, monetary financing and asset sales, including servicing costs, the crowding-out effect, inflation and loss of future revenue"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Construct and interpret a loanable funds graph to demonstrate the crowding-out effect"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Uses of a budget surplus, including contributing to sovereign investment funds and retiring Australian Government debt"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of the budget on the stabilisation of the business cycle, including automatic stabilisers and discretionary adjustments to government expenditure and taxation, especially during significant economic downturns"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of the budget on the redistribution of income and wealth, including progressive, regressive and proportional taxation, bracket creep and welfare spending"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of the budget on the reallocation of resources between industries in the economy"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of budget outcomes and fiscal stances on Australian Government debt and fiscal sustainability, including Australian Government debt as a proportion of GDP"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effectiveness of fiscal policy in achieving Australia’s economic objectives, including reference to relevant data"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Limitations to the effectiveness of fiscal policy, including policy lags, political considerations, global influences, the relative size of Australian Government debt and credit ratings"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Monetary policy as a macroeconomic, demand-side, counter-cyclical tool for economic management"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Economic objectives of the Reserve Bank of Australia (RBA), including price stability and full employment, and the role of monetary policy in achieving these objectives"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Features of the inflation target, including flexibility and its role in anchoring inflation expectations"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Role of the RBA’s Monetary Policy Board and factors influencing its decisions on setting the target cash rate"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Effects of monetary policy on the economy, including the saving and investment channel, cash-flow channel, asset price and wealth channel and exchange rate channel"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Rationale for using unconventional monetary policy"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Effectiveness of monetary policy in achieving the RBA’s economic objectives of price stability and full employment, including reference to relevant data"
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Limitations to the effectiveness of monetary policy, including policy lags, the zero lower bound and inability to target specific areas of the economy"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Role and nature of microeconomic policies, including raising productivity and improving outcomes on social issues to enhance quality of life"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Microeconomic reform to improve productivity in Australia in the areas of competition policy, regulation and deregulation, infrastructure development and taxation"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Microeconomic policies to reduce inequality and improve wellbeing in the areas of health and housing in Australia"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Effects of microeconomic policies on households, businesses, the government and the economy"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Effectiveness of microeconomic policies in achieving Australia’s economic objectives"
+  },
+  {
+   "code": "HSC-M2-T4-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Limitations to the effectiveness of microeconomic policies, including policy lags, political considerations and regulatory capture"
+  },
+  {
+   "code": "HSC-M2-T5-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Features of main wage-setting mechanisms in Australia, including individual arrangements, enterprise bargaining agreements and industry awards"
+  },
+  {
+   "code": "HSC-M2-T5-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Advantages and disadvantages of centralised and decentralised wage determination"
+  },
+  {
+   "code": "HSC-M2-T5-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Costs and benefits of non-standard work arrangements for individuals, businesses and the economy"
+  },
+  {
+   "code": "HSC-M2-T5-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Purpose of the industrial safety net, including the minimum wage"
+  },
+  {
+   "code": "HSC-M2-T5-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Effects of changes in union representation on bargaining power and wages in Australia"
+  },
+  {
+   "code": "HSC-M2-T5-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Role of education and training funding and migration policy to improve the size and skills of the Australian workforce"
+  },
+  {
+   "code": "HSC-M2-T5-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Effectiveness of labour market policies in achieving Australia’s economic objectives"
+  },
+  {
+   "code": "HSC-M2-T5-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Limitations to the effectiveness of labour market policies, including policy lags and political considerations"
+  },
+  {
+   "code": "HSC-M2-T6-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Role of Aboriginal and Torres Strait Islander Peoples' land and water management Practices in economic environmental policy, including caring for Country"
+  },
+  {
+   "code": "HSC-M2-T6-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Environmental command-and-control instruments, including bans, restrictions, efficiency standards and technical specifications for products"
+  },
+  {
+   "code": "HSC-M2-T6-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Environmental market-based instruments, including price-based instruments (taxes and subsidies) and quantity-based instruments (permit schemes)"
+  },
+  {
+   "code": "HSC-M2-T6-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Identify the optimal size of a tax on producers from a negative externalities graph"
+  },
+  {
+   "code": "HSC-M2-T6-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Advantages and disadvantages of market-based instruments relative to command-and-control instruments"
+  },
+  {
+   "code": "HSC-M2-T6-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Role of Australia’s international agreements and national targets for greenhouse gas emissions, including the extent of their influence on domestic government policy"
+  },
+  {
+   "code": "HSC-M2-T6-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Effectiveness of Australia’s policies in achieving greenhouse gas emission targets"
+  },
+  {
+   "code": "HSC-M2-T6-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Limitations to the effectiveness of environmental policies, including policy lags, political considerations, global free riders and carbon leakage"
+  },
+  {
+   "code": "HSC-M2-T7-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Policy mix / Need for a coordinated mix of macroeconomic and microeconomic policies to achieve Australia’s short-term and longer-term economic objectives and to respond effectively to economic shocks"
+  },
+  {
+   "code": "HSC-M2-T7-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Policy mix / Propose and evaluate policy options to achieve the economic objectives of higher quality of life, economic growth, full employment, price stability, equitable distribution of income and environmental sustainability in hypothetical and contemporary Australian contexts"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Australia and the global economy / Global trade / Principles of absolute advantage and comparative advantage"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify comparative advantage for output from tables and production possibility frontiers (PPF)"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Australia and the global economy / Global trade / Benefits of free trade, including greater access to resources, specialisation, development of economies of scale, increased competition, lower prices, wider choice, higher living standards"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Australia and the global economy / Global trade / Costs and benefits of global supply chains"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Australia and the global economy / Global trade / Arguments for trade protection, including supporting domestic employment in specific industries, shielding infant industries, enabling self-sufficiency in strategic industries and preventing dumping"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Australia and the global economy / Global trade / Methods of protection, including tariffs, quotas, subsidies and local content requirements"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Australia and the global economy / Global trade / Effects of trade protection on domestic and global economies"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify the effects of tariffs on import-competing domestic markets, including size of the tariff, government revenue, total consumer spending, domestic producer revenue, quantity of imports and foreign producer revenue"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify the effects of quotas on import-competing domestic markets, including size of the quotas, total consumer spending, domestic producer revenue and foreign producer revenue"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify the effects of production subsidies on import-competing domestic markets, including the size of the subsidies, total consumer spending, domestic producer revenue, cost to government and foreign producer revenue"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Australia and the global economy / Global trade / Interpret demand and supply graphs that demonstrate the effects of tariffs, quotas and subsidies on import-competing domestic markets"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Australia and the global economy / Global trade / Interpret demand and supply graphs that demonstrate the effects of export subsidies on the world market, where world price equals equilibrium price"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Australia and the global economy / Global trade / Arguments for and against the use of bilateral and multilateral trade agreements, including regional trading blocs"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Australia and the global economy / Global trade / Role and effectiveness of the World Trade Organization (WTO) in facilitating multilateral free trade agreements and resolving trade disputes between member states"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Australia and the global economy / Global trade / Reasons for major trends in global trade and protectionism"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Australia and the global economy / Global trade / Extent to which Australian Government policies promote free trade"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Australia and the global economy / Global investment / Types of international investment flows, including foreign direct investment (FDI) and portfolio investment"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Australia and the global economy / Global investment / Costs and benefits of FDI and transnational corporations to the global economy"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Australia and the global economy / Global investment / Costs and benefits of international portfolio investment to the global economy, including liquidity, access to capital, volatility and financial crisis contagion"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Australia and the global economy / Global investment / Role and effectiveness of the International Monetary Fund (IMF) in maintaining international financial stability"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Features of Australia’s floating exchange rate system, including currency appreciation and depreciation"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Construct and interpret demand and supply graphs to demonstrate how the value of a currency is determined under a floating exchange rate system"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Reserve Bank of Australia’s (RBA) intervention in foreign exchange markets to affect the value of the Australian dollar during periods of significant market disorder"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Domestic and global factors affecting demand and supply of the Australian dollar"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Effects of exchange rate movements on households, businesses, the government and the Australian economy"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Reasons for major trends in the value of the Australian dollar"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / Australia and the global economy / International economic development / Features of economic development, including economic structure, education, health and sustainability"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / Australia and the global economy / International economic development / Relationship between economic growth and economic development, and the importance of inclusive and sustainable growth to long-term wellbeing"
+  },
+  {
+   "code": "HSC-M3-T4-D3",
+   "path": "Year 12 / Australia and the global economy / International economic development / Measures of economic development, including the Human Development Index (HDI) and GDP adjusted for a common currency, differences in population and purchasing power parity (PPP)"
+  },
+  {
+   "code": "HSC-M3-T4-D4",
+   "path": "Year 12 / Australia and the global economy / International economic development / Characteristics of different types of economies, including least developed countries, developing countries, emerging economies and advanced economies"
+  },
+  {
+   "code": "HSC-M3-T4-D5",
+   "path": "Year 12 / Australia and the global economy / International economic development / Factors contributing to differences in economic development between countries, including strength of institutions, geography and natural resource endowment, quality of human capital and infrastructure"
+  },
+  {
+   "code": "HSC-M3-T4-D6",
+   "path": "Year 12 / Australia and the global economy / International economic development / Global equity issues from the uneven distribution of economic costs associated with climate change"
+  },
+  {
+   "code": "HSC-M3-T4-D7",
+   "path": "Year 12 / Australia and the global economy / International economic development / Effects of international economic development on the level and geographical distribution of absolute poverty in the global economy"
+  },
+  {
+   "code": "HSC-M3-T4-D8",
+   "path": "Year 12 / Australia and the global economy / International economic development / Role and effectiveness of the World Bank Group (WBG) in achieving economic development in developing countries"
+  },
+  {
+   "code": "HSC-M3-T5-D1",
+   "path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia / Factors contributing to the vulnerability of the Australian economy to fluctuations in regional and international business cycles"
+  },
+  {
+   "code": "HSC-M3-T5-D2",
+   "path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia / Factors contributing to the resilience of the Australian economy against external shocks"
+  },
+  {
+   "code": "HSC-M3-T5-D3",
+   "path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia / Effects of changes in the global economy on the performance and structure of Australia’s economy"
+  }
+ ],
+ "questions": [
+  {
+   "id": "econ202521",
+   "year": 2025,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "(a) Outline ONE role of the Organisation for Economic Co-operation and Development (OECD) in the global economy. In your answer, refer to a specific example. 2 (b) Explain the limitations of using income as a single measure of quality of life. 3 (c) Discuss the impact of world economic development on environmental sustainability. 5 End of Question 21"
+  },
+  {
+   "id": "econ202522",
+   "year": 2025,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Use the following graph to answer parts (a) and (b). Foreign exchange market for Australian dollars Price of AUD in D S terms of another currency D1 P P1 D S D1 Q1 Q Quantity of currency traded (a) Outline ONE global factor that could cause the movement from D to D in the 1 graph. 2 (b) Explain how the Reserve Bank could directly influence the value of the Australian currency to move from P to P. 1 3 (c) Discuss the effects of a depreciation of a currency on domestic businesses. 5 End of Question 22"
+  },
+  {
+   "id": "econ202523",
+   "year": 2025,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "(a) Outline why ONE specific group may experience higher than average unemployment in Australia. 2 Use the information to answer parts (b)−(d). The following information refers to a hypothetical economy which has a Non-Accelerating Inflation Rate of Unemployment (NAIRU) of 5%. Year Participation rate Unemployment rate Year 1 66% 4.5% Year 2 62% 5.9% (b) Outline ONE factor that may have changed the participation rate in this economy. 2 (c) Using the information provided on the previous page, outline a possible cause of the increase in unemployment present in the economy in Year 2. 2 (d) Explain how TWO policy options could be implemented to reduce the NAIRU of this economy. 4 End of Question 23"
+  },
+  {
+   "id": "econ202524",
+   "year": 2025,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Monetary policy",
+   "text": "(a) Outline the purpose of monetary policy in Australia. 2 (b) Explain how the Reserve Bank of Australia (RBA) maintains the cash rate target. 3 (c) Explain the impacts of a decrease in the cash rate on an economy. 5 End of Question 24 Do  NOT  write  in  this  area. Section _____ extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. Do  NOT  write  in  this  area. Section _____ extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. Do  NOT  write  in  this  area. Section _____ extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. © 2025 NSW Education Standards Authority 2025 HIGHER SCHOOL CERTIFICATE EXAMINATION Economics Section III 20 marks"
+  },
+  {
+   "id": "econ202525",
+   "year": 2025,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia",
+   "text": "Explain the reasons for trends since 2016 in the size and composition of Australia’s Balance of Payments. In your answer, refer to the information provided. The COVID-19 recession and associated international border closures resulted in a sharp decline in education and tourism service exports, but exports of these services have grown strongly in recent years following the re-opening of the border. The composition of Australia’s capital flows has also changed significantly in the past decade or so. Unlike in the past, Australia’s economy since 2017 has generated savings in excess of domestic investment . . . Current account balance Net goods and services Net primary income $XVWUDOLD·V\u0003FXUUHQW\u0003DFFRXQW\u0003EDODQFH 0 10 20 30 40 50 Sep 2016 Sep 2017 Sep 2018 Sep 2019 Sep 2020 Sep 2021 Sep 2022 Sep 2023 Sep 2024 $ billion Australian Bureau of Statistics, Balance of Payments and International Investment Position, 2024 © Reserve Bank of Australia, 2022 OR"
+  },
+  {
+   "id": "econ202526",
+   "year": 2025,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inequality",
+   "text": "Explain how the dimensions and trends of income inequality affect the Australian economy. In your answer, refer to the information provided. Inequality is the uneven distribution of economic resources between individuals or different groups within a society. We care about inequality because income and wealth can be significant contributors to an individual’s wellbeing and because inequality can be detrimental to the ongoing advancement of our economy and society. Australian Government Productivity Commission, A snapshot of inequality in Australia Research paper, May 2024 Age Male Female 15–19 years $600 $600 20–24 years $900 $850 25–34 years $1250 $1126.6 35–44 years $1500 $1200 45–54 years $1500 $1200 55–59 years $1500 $1117.3 60–64 years $1323.2 $1080 65 and over $1290.2 $1105.7 Australian Bureau of Statistics, Characteristics of Employment Survey, Table 2, August 2024 Median full-time weekly earnings by age and gender, 2024 Please turn over Productivity Commission Section IV 20 marks"
+  },
+  {
+   "id": "econ202527",
+   "year": 2025,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Analyse the conflicts for government that may arise in pursuing Australia’s economic objectives. In your response, refer to THREE separate objectives. OR"
+  },
+  {
+   "id": "econ202528",
+   "year": 2025,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Global trade",
+   "text": "Analyse how different methods of protection affect firms and government in Australia. End of paper © 2025 NSW Education Standards Authority"
+  }
+ ]
+}

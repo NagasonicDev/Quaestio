@@ -1,0 +1,160 @@
+graph202302|HSC-M3-T1-D17|high|door symbol on architectural plan
+graph202303|HSC-M1-T1-D2|high|scale 1:100 actual length
+graph202304|HSC-M3-T1-D13|low|T-square traditional drawing method
+graph202305|HSC-M1-T1-D3|high|AS1100 line precedence
+graph202306|HSC-M3-T1-D17|high|front boundary setback purpose
+graph202307|HSC-M3-T1-D17|high|slab-on-grade footing detail
+graph202308|HSC-M3-T1-D18|high|Queenslander architectural style
+graph202309|HSC-M3-T1-D21|high|development application council requirements
+graph202310|HSC-M3-T1-D17|high|purpose of elevations
+graph202311|HSC-M3-T1-D13|medium|disadvantage of CAD
+graph202312|HSC-M3-T1-D17|medium|house area from floor plan
+graph202313|HSC-M3-T1-D3|high|oblique cabinet projection
+graph202314|HSC-M3-T1-D17|high|shadow diagram requirement
+graph202315|HSC-M2-T1-D11|medium|mass production and automation impact
+metal202301|HSC-M3-T2-D21|medium|identify saw tool
+metal202302|HSC-M3-T2-D21|medium|vernier caliper for sheet thickness
+metal202303|HSC-M1-T2-D31|medium|zinc galvanising corrosion protection
+metal202304|HSC-M3-T2-D3|high|odd leg caliper marking out
+metal202305|HSC-M3-T2-D21|medium|micrometer reading
+metal202306|HSC-M1-T2-D25|high|chromium in stainless steel
+metal202307|HSC-M1-T2-D25|high|pure metals too soft
+metal202308|HSC-M3-T2-D4|high|die cuts external thread
+metal202309|HSC-M3-T2-D4|high|cross slide depth of cut
+metal202310|HSC-M3-T2-D4|medium|tube drawing with mandrel
+metal202311|HSC-M3-T2-D3|high|centre punch before drilling
+metal202312|HSC-M1-T2-D36|medium|fastener use outline
+metal202313|null|medium|sheet count calculation not covered
+metal202314|HSC-M1-T2-D38|medium|pickling corroded metal surface
+metal202315|HSC-M3-T2-D4|high|MIG versus TIG efficiency
+metal202316|HSC-M2-T1-D11|medium|mass production and automation impact
+multi202301|HSC-M4-T5-D2|high|formatting headings and titles
+multi202302|HSC-M2-T2-D37|high|looping animation repeats
+multi202303|HSC-M4-T5-D20|high|object layering definition
+multi202304|HSC-M2-T2-D65|high|on-demand streaming music
+multi202305|HSC-M4-T5-D20|high|anti-aliasing smooths edges
+multi202306|HSC-M2-T2-D16|high|purpose of video compression
+multi202307|HSC-M2-T2-D39|high|3D modelling representation
+multi202308|HSC-M4-T5-D2|high|definition of a font
+multi202309|HSC-M4-T5-D19|high|multimedia authoring tool
+multi202310|HSC-M2-T2-D76|high|internet image copyright
+multi202311|HSC-M2-T2-D44|high|fully immersive virtual reality
+multi202312|HSC-M4-T5-D5|high|high resolution increases file size
+multi202313|null|high|business card pricing not covered
+multi202314|HSC-M2-T2-D27|medium|adding sound effects post-production
+multi202315|HSC-M2-T2-D80|high|legal and ethical pre-existing components
+multi202316|HSC-M2-T1-D11|medium|mass production and automation impact
+timber202301|HSC-M1-T2-D169|medium|identify plane or spokeshave
+timber202302|HSC-M1-T2-D169|medium|coping saw cuts curves
+timber202303|HSC-M1-T2-D169|medium|claw hammer extracts nails
+timber202304|HSC-M1-T2-D127|high|mitre joint hides end grain
+timber202305|HSC-M1-T2-D142|high|faceplate turning large bowl
+timber202306|HSC-M1-T2-D67|high|screw pitch between threads
+timber202307|HSC-M1-T2-D169|medium|bench hook protects bench
+timber202308|HSC-M1-T2-D94|high|urea formaldehyde plywood adhesive
+timber202309|HSC-M1-T2-D43|high|burl growth on trunk
+timber202310|HSC-M1-T2-D164|high|water-based finish disadvantage
+timber202311|HSC-M1-T2-D66|medium|category of cabinet fittings
+timber202312|HSC-M1-T2-D65|high|manufactured boards environmental benefit
+timber202313|null|high|finish cost calculation not covered
+timber202314|HSC-M1-T2-D62|high|cutting veneers for plywood
+timber202315|HSC-M1-T2-D43|high|natural air drying seasoning
+timber202316|HSC-M2-T1-D11|medium|mass production and automation impact
+auto202401|HSC-M4-T1-D27|high|radiator dissipates heat
+auto202402|HSC-M4-T1-D111|medium|impact driver best practice
+auto202403|null|medium|professional workplace conduct not covered
+auto202404|HSC-M4-T1-D66|medium|negative camber suspension design
+auto202405|HSC-M4-T1-D35|high|venturi in carburettor
+auto202406|HSC-M4-T1-D47|high|torque converter automatic transmission
+auto202407|HSC-M4-T1-D50|medium|drive shaft joint type
+auto202408|HSC-M4-T1-D7|medium|tetraethyl lead octane rating
+auto202409|HSC-M4-T1-D106|medium|panel repair high spots
+auto202410|HSC-M4-T1-D21|high|tapered pistons thermal expansion
+auto202411|HSC-M2-T1-D26|medium|chemical hazard risk assessment
+auto202412|HSC-M4-T1-D114|high|child restraint regulation
+auto202413|HSC-M4-T1-D89|medium|wiring diagram interpretation
+auto202414|null|medium|exhaust component image unclear
+auto202415|HSC-M4-T1-D16|high|noise fault diagnosis
+auto202416|HSC-M2-T1-D3|high|marketing and advertising comparison
+elec202401|HSC-M4-T2-D1|high|solar panel output direct current
+elec202402|HSC-M4-T2-D55|high|resistors in series circuit
+elec202403|HSC-M4-T2-D45|medium|flux removes oxide when soldering
+elec202404|HSC-M4-T2-D2|high|rectifier circuit purpose
+elec202405|HSC-M4-T2-D59|high|variable resistor circuit symbol
+elec202406|HSC-M4-T2-D66|high|oscilloscope displays waveform
+elec202407|HSC-M4-T2-D56|high|Ohm law current calculation
+elec202408|HSC-M4-T2-D7|high|logic circuit truth values
+elec202409|HSC-M4-T2-D15|high|Zener diode reference voltage
+elec202410|HSC-M4-T2-D16|high|transistor switching and amplification
+elec202411|null|medium|component image unclear
+elec202412|HSC-M4-T2-D61|high|circuit design software use
+elec202413|HSC-M4-T2-D31|high|thyristor versus thermistor use
+elec202414|HSC-M4-T2-D64|medium|ammeter voltmeter internal resistance
+elec202415|HSC-M4-T2-D20|high|PIC processes input signals
+elec202416|HSC-M2-T1-D3|high|marketing and advertising comparison
+graph202401|HSC-M1-T1-D3|high|hatching shows sectioning
+graph202402|HSC-M3-T1-D17|high|detail drawing shows footings
+graph202403|HSC-M3-T1-D24|high|VR enhances CAD fly-through
+graph202404|HSC-M1-T1-D3|high|weld symbol fillet
+graph202405|HSC-M3-T1-D26|medium|STL file for rapid prototyping
+graph202406|HSC-M1-T1-D1|high|first angle projection identification
+graph202407|HSC-M3-T1-D3|medium|identify pictorial drawing type
+graph202408|HSC-M3-T1-D8|high|assembly drawing definition
+graph202409|HSC-M3-T1-D18|high|Art Deco streamlined style
+graph202410|HSC-M3-T1-D2|high|axonometric view of cube
+graph202411|HSC-M3-T1-D17|medium|land slope shown on site plan
+graph202412|HSC-M1-T1-D3|high|dimension curve and circle AS1100
+graph202413|HSC-M1-T1-D3|medium|thread representation on bolt drawing
+graph202414|HSC-M3-T1-D7|medium|auxiliary view orthographic projection
+graph202415|HSC-M3-T1-D3|high|perspective types comparison
+graph202416|HSC-M2-T1-D3|high|marketing and advertising comparison
+metal202401|HSC-M1-T2-D25|high|copper is not an alloy
+metal202402|HSC-M3-T2-D4|medium|shaper ram reciprocating motion
+metal202403|HSC-M3-T2-D3|high|vee block supports cylindrical work
+metal202404|HSC-M3-T2-D11|high|annealing increases ductility
+metal202405|HSC-M3-T2-D21|medium|cross-cut chisel for keyways
+metal202406|HSC-M3-T2-D4|medium|joining non-metal to steel
+metal202407|HSC-M3-T2-D4|medium|wired edge strongest support
+metal202408|HSC-M3-T2-D1|high|PPE for angle grinder
+metal202409|HSC-M3-T2-D4|high|lead screw for thread cutting
+metal202410|HSC-M3-T2-D4|high|MIG continuous wire electrode
+metal202411|HSC-M3-T2-D3|high|centre square finds centre
+metal202412|HSC-M3-T2-D4|high|hollowing copper bowl
+metal202413|HSC-M3-T2-D27|high|CNC reduces manufacturing costs
+metal202414|HSC-M1-T2-D25|high|advantages of alloyed metals
+metal202415|HSC-M3-T2-D4|high|faceplate setup irregular workpiece
+metal202416|HSC-M2-T1-D3|high|marketing and advertising comparison
+multi202401|HSC-M4-T5-D2|high|fully justified text alignment
+multi202402|HSC-M4-T5-D12|high|PNG transparent backgrounds
+multi202403|HSC-M2-T2-D59|high|drop-down list limits answers
+multi202404|HSC-M2-T2-D43|high|motion capture definition
+multi202405|HSC-M2-T2-D65|medium|lossless compression keeps quality
+multi202406|HSC-M2-T2-D16|medium|full HD video size
+multi202407|HSC-M4-T5-D20|high|hue adjustment affects colour
+multi202408|HSC-M2-T2-D65|high|progressive loading partial display
+multi202409|HSC-M2-T2-D16|high|analogue video on magnetic tape
+multi202410|HSC-M2-T2-D40|high|wire frame in previsualisation
+multi202411|HSC-M2-T2-D10|medium|audio file type identification
+multi202412|HSC-M4-T5-D2|high|serif font advantages
+multi202413|HSC-M4-T5-D4|high|vector versus bitmap images
+multi202414|HSC-M2-T2-D21|high|camera shots in production
+multi202415|HSC-M2-T2-D27|high|special effects process
+multi202416|HSC-M2-T1-D3|high|marketing and advertising comparison
+timber202401|HSC-M1-T2-D106|high|timber filler smooths imperfections
+timber202402|HSC-M1-T2-D124|high|biscuit joint widening classification
+timber202403|HSC-M1-T2-D41|medium|DAR dressed all round term
+timber202404|HSC-M1-T2-D169|medium|rip saw cuts along grain
+timber202405|HSC-M1-T2-D88|medium|glass added for aesthetics
+timber202406|HSC-M1-T2-D56|medium|exotic timber sustainable sourcing
+timber202407|HSC-M1-T2-D161|high|squareness and flatness dry assembly
+timber202408|HSC-M1-T2-D73|medium|snap-off screws for handles
+timber202409|HSC-M1-T2-D101|high|importance of materials list
+timber202410|HSC-M1-T2-D115|medium|component order for framed doors
+timber202411|HSC-M1-T2-D92|high|epoxy resin as feature
+timber202412|HSC-M1-T2-D51|high|economical usage waste minimisation
+timber202413|HSC-M1-T2-D169|medium|mitre saw versus compound mitre saw
+timber202414|HSC-M1-T2-D169|medium|router selection features
+timber202415|HSC-M1-T2-D54|medium|WHS risks with recycled timber
+timber202416|HSC-M2-T1-D3|high|marketing and advertising comparison
+auto202501|HSC-M4-T1-D111|medium|identify spanners and torque wrench
+auto202502|HSC-M4-T1-D2|high|electric vehicle zero emissions

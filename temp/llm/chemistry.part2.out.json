@@ -1,0 +1,282 @@
+{
+ "chem202417": {
+  "code": "HSC-M3-T3-D4",
+  "confidence": "medium",
+  "why": "acid identified from titration curve pKa values"
+ },
+ "chem202418": {
+  "code": "HSC-M2-T3-D3",
+  "confidence": "high",
+  "why": "reaction quotient Q approaches Keq over time"
+ },
+ "chem202419": {
+  "code": null,
+  "confidence": "low",
+  "why": "stem missing, structures only"
+ },
+ "chem202420": {
+  "code": "HSC-M3-T3-D5",
+  "confidence": "medium",
+  "why": "titration data with standard addition calculation"
+ },
+ "chem202421": {
+  "code": "HSC-M3-T1-D2",
+  "confidence": "medium",
+  "why": "acid plus metal products, acid chemical properties"
+ },
+ "chem202422": {
+  "code": "HSC-M5-T1-D9",
+  "confidence": "high",
+  "why": "draws addition polymer section from monomer"
+ },
+ "chem202423": {
+  "code": "HSC-M2-T3-D4",
+  "confidence": "high",
+  "why": "temperature colour change related to Keq"
+ },
+ "chem202424": {
+  "code": "HSC-M4-T3-D6",
+  "confidence": "medium",
+  "why": "boiling point trends explained by hydrogen bonding"
+ },
+ "chem202425": {
+  "code": "HSC-M5-T2-D8",
+  "confidence": "medium",
+  "why": "colorimetric phosphate calculation in waste water"
+ },
+ "chem202426": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "collision theory rates approaching equilibrium"
+ },
+ "chem202427": {
+  "code": "HSC-M2-T4-D5",
+  "confidence": "high",
+  "why": "selective precipitation tests for barium and lead"
+ },
+ "chem202428": {
+  "code": "HSC-M3-T2-D10",
+  "confidence": "high",
+  "why": "partial ionisation shows weak acids"
+ },
+ "chem202429": {
+  "code": "HSC-M3-T2-D8",
+  "confidence": "high",
+  "why": "pH of mixed acid and base solution"
+ },
+ "chem202430": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "high",
+  "why": "equilibrium calculation after adding CO"
+ },
+ "chem202431": {
+  "code": null,
+  "confidence": "low",
+  "why": "atom economy not represented in dots"
+ },
+ "chem202432": {
+  "code": "HSC-M2-T4-D7",
+  "confidence": "high",
+  "why": "cadmium ion concentration from Ksp"
+ },
+ "chem202433": {
+  "code": "HSC-M5-T1-D13",
+  "confidence": "medium",
+  "why": "13C NMR monitors reduction progress"
+ },
+ "chem202434": {
+  "code": "HSC-M3-T3-D4",
+  "confidence": "high",
+  "why": "conductivity graph shape during titration"
+ },
+ "chem202435": {
+  "code": "HSC-M4-T3-D7",
+  "confidence": "medium",
+  "why": "titration and reactivity identify carboxylic acids"
+ },
+ "chem202436": {
+  "code": "PRE-M4-T3-D7",
+  "confidence": "medium",
+  "why": "calorimetry gives enthalpy of reaction"
+ },
+ "chem202501": {
+  "code": "HSC-M3-T2-D10",
+  "confidence": "high",
+  "why": "distinguishes strong from concentrated acid"
+ },
+ "chem202502": {
+  "code": "HSC-M4-T1-D12",
+  "confidence": "high",
+  "why": "alkane substitution condition and product name"
+ },
+ "chem202503": {
+  "code": "HSC-M4-T1-D10",
+  "confidence": "high",
+  "why": "structural formula for named dibromopentane"
+ },
+ "chem202504": {
+  "code": "HSC-M2-T4-D5",
+  "confidence": "medium",
+  "why": "added ion identifies lead and sodium solutions"
+ },
+ "chem202505": {
+  "code": null,
+  "confidence": "low",
+  "why": "options missing, question incomplete"
+ },
+ "chem202506": {
+  "code": "HSC-M3-T2-D5",
+  "confidence": "high",
+  "why": "pH of strong acid from concentration"
+ },
+ "chem202507": {
+  "code": null,
+  "confidence": "low",
+  "why": "question stem missing, complex colours only"
+ },
+ "chem202508": {
+  "code": "HSC-M4-T1-D11",
+  "confidence": "high",
+  "why": "addition reaction identified from molar mass change"
+ },
+ "chem202509": {
+  "code": "HSC-M1-T4-D5",
+  "confidence": "medium",
+  "why": "Torres Strait plant use linked to chemical properties"
+ },
+ "chem202510": {
+  "code": "HSC-M4-T3-D6",
+  "confidence": "medium",
+  "why": "all intermolecular forces in butanoic acid"
+ },
+ "chem202511": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "high",
+  "why": "classifies substances as Bronsted-Lowry acid or base"
+ },
+ "chem202512": {
+  "code": "PRE-M4-T1-D4",
+  "confidence": "medium",
+  "why": "net ionic equation for precipitation reaction"
+ },
+ "chem202513": {
+  "code": null,
+  "confidence": "low",
+  "why": "entropy and enthalpy signs not in dots"
+ },
+ "chem202514": {
+  "code": "HSC-M2-T3-D4",
+  "confidence": "high",
+  "why": "compares Keq between two temperatures"
+ },
+ "chem202515": {
+  "code": "HSC-M4-T4-D9",
+  "confidence": "high",
+  "why": "multi-step pathway from alcohol to ester"
+ },
+ "chem202516": {
+  "code": "HSC-M4-T4-D7",
+  "confidence": "medium",
+  "why": "polyester molar mass from condensation polymerisation"
+ },
+ "chem202517": {
+  "code": "HSC-M5-T1-D15",
+  "confidence": "medium",
+  "why": "carbon and proton environments compared"
+ },
+ "chem202518": {
+  "code": "HSC-M2-T4-D8",
+  "confidence": "medium",
+  "why": "chromate indicator endpoint and salt solubility"
+ },
+ "chem202519": {
+  "code": "HSC-M3-T2-D16",
+  "confidence": "high",
+  "why": "buffer pH after dilution"
+ },
+ "chem202520": {
+  "code": "HSC-M2-T4-D9",
+  "confidence": "medium",
+  "why": "Ksp from AAS solubility data"
+ },
+ "chem202521": {
+  "code": "HSC-M4-T1-D12",
+  "confidence": "high",
+  "why": "alkane substitution condition and product name"
+ },
+ "chem202522": {
+  "code": "HSC-M5-T2-D8",
+  "confidence": "medium",
+  "why": "water quality needs quantitative and qualitative data"
+ },
+ "chem202523": {
+  "code": "HSC-M5-T2-D8",
+  "confidence": "medium",
+  "why": "improves gravimetric sulfate determination"
+ },
+ "chem202524": {
+  "code": "HSC-M4-T1-D11",
+  "confidence": "medium",
+  "why": "alkyne addition with HCl and product mass"
+ },
+ "chem202525": {
+  "code": "HSC-M4-T4-D8",
+  "confidence": "high",
+  "why": "percentage yield of ester from reactants"
+ },
+ "chem202526": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "medium",
+  "why": "pKa trend compares haloethanoic acid strengths"
+ },
+ "chem202527": {
+  "code": "HSC-M5-T1-D6",
+  "confidence": "medium",
+  "why": "petroleum uses and ethene to ethanol chemistry"
+ },
+ "chem202528": {
+  "code": "HSC-M4-T4-D7",
+  "confidence": "medium",
+  "why": "condensation polymer monomer and chain forces"
+ },
+ "chem202529": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "medium",
+  "why": "inert gas effect on gas equilibrium"
+ },
+ "chem202530": {
+  "code": "HSC-M2-T2-D7",
+  "confidence": "medium",
+  "why": "excess reactant and catalyst justify industrial yield"
+ },
+ "chem202531": {
+  "code": "HSC-M3-T2-D15",
+  "confidence": "medium",
+  "why": "Ka times Kb equals Kw used for pH"
+ },
+ "chem202532": {
+  "code": "HSC-M2-T4-D8",
+  "confidence": "high",
+  "why": "predicts precipitates from Ksp calculations"
+ },
+ "chem202533": {
+  "code": "HSC-M3-T3-D6",
+  "confidence": "high",
+  "why": "back titration determines chalk carbonate content"
+ },
+ "chem202534": {
+  "code": "HSC-M3-T2-D13",
+  "confidence": "medium",
+  "why": "Ka determined from titration curve"
+ },
+ "chem202535": {
+  "code": "HSC-M2-T2-D1",
+  "confidence": "high",
+  "why": "cooling shifts cobalt complex equilibrium"
+ },
+ "chem202536": {
+  "code": "HSC-M5-T1-D15",
+  "confidence": "high",
+  "why": "predicts IR, NMR and mass spectra features"
+ }
+}

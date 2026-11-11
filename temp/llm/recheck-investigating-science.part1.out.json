@@ -1,0 +1,802 @@
+{
+  "hsc202001": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "high",
+    "why": "Spencer microwave investigation named dot"
+  },
+  "hsc202002": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "Mozart effect claim"
+  },
+  "hsc202003": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "medium",
+    "why": "smallpox vaccine development case study"
+  },
+  "hsc202004": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "trends in graph data"
+  },
+  "hsc202005": {
+    "code": "HSC-M4-T2-D18",
+    "confidence": "high",
+    "why": "Indigenous cultural IP benefit-sharing"
+  },
+  "hsc202006": {
+    "code": "HSC-M1-T1-D39",
+    "confidence": "high",
+    "why": "double-blind allocation awareness"
+  },
+  "hsc202007": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "medium",
+    "why": "donor screening as risk control"
+  },
+  "hsc202008": {
+    "code": "HSC-M1-T1-D29",
+    "confidence": "high",
+    "why": "informed consent and ethics"
+  },
+  "hsc202009": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "identify IV and controlled variable"
+  },
+  "hsc202010": {
+    "code": "HSC-M1-T1-D33",
+    "confidence": "high",
+    "why": "draw conclusion from results"
+  },
+  "hsc202011": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "quantitative rate calculation"
+  },
+  "hsc202012": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "systematic error in readings"
+  },
+  "hsc202013": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "analogue vs digital accuracy comparison"
+  },
+  "hsc202014": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "medium",
+    "why": "device errors used to estimate value"
+  },
+  "hsc202015": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "rate times population calculation"
+  },
+  "hsc202016": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "controlled variable in trials"
+  },
+  "hsc202017": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "percentage effectiveness calculation"
+  },
+  "hsc202018": {
+    "code": "HSC-M1-T1-D33",
+    "confidence": "high",
+    "why": "conclusion and reason from data"
+  },
+  "hsc202019": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "Priestley experiments and data"
+  },
+  "hsc202020": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "medium",
+    "why": "line of best fit relationship"
+  },
+  "hsc202021": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "medium",
+    "why": "fraud uncovered; publish-perish part"
+  },
+  "hsc202022": {
+    "code": "HSC-M4-T2-D10",
+    "confidence": "medium",
+    "why": "space vs welfare spending presentation"
+  },
+  "hsc202023": {
+    "code": "HSC-M1-T1-D29",
+    "confidence": "medium",
+    "why": "ethics committee; reliability secondary"
+  },
+  "hsc202024": {
+    "code": "HSC-M2-T2-D8",
+    "confidence": "medium",
+    "why": "radioactivity to radiotherapy dominant"
+  },
+  "hsc202025": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "medium",
+    "why": "design investigation testing astrology claim"
+  },
+  "hsc202026": {
+    "code": "HSC-M2-T2-D9",
+    "confidence": "medium",
+    "why": "DNA structure to biotech dominant"
+  },
+  "hsc202027": {
+    "code": "HSC-M1-T1-D17",
+    "confidence": "high",
+    "why": "Doppler effect trumpet experiment"
+  },
+  "hsc202028": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "water treatment world health"
+  },
+  "hsc202029": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "high",
+    "why": "asbestos industry conflict of interest"
+  },
+  "hsc202030": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "high",
+    "why": "fossil fuel funding climate reporting"
+  },
+  "hsc202101": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "X-ray diffraction DNA"
+  },
+  "hsc202102": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "identify independent variable"
+  },
+  "hsc202103": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "medium",
+    "why": "report section conventions"
+  },
+  "hsc202104": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "medium",
+    "why": "peer review limitation expertise"
+  },
+  "hsc202105": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "random error explanation"
+  },
+  "hsc202106": {
+    "code": "HSC-M1-T1-D17",
+    "confidence": "medium",
+    "why": "Doppler data collection method"
+  },
+  "hsc202107": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "significant figures reporting"
+  },
+  "hsc202108": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "high",
+    "why": "iridology pseudoscience"
+  },
+  "hsc202109": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "medium",
+    "why": "read percentage from graph"
+  },
+  "hsc202110": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "medium",
+    "why": "compare age-group data patterns"
+  },
+  "hsc202111": {
+    "code": "HSC-M1-T1-D16",
+    "confidence": "high",
+    "why": "Eratosthenes circumference calculation"
+  },
+  "hsc202112": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "high",
+    "why": "confounding substance X uncontrolled"
+  },
+  "hsc202113": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "decay trend from graph"
+  },
+  "hsc202114": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "half-life calculation"
+  },
+  "hsc202115": {
+    "code": "HSC-M3-T2-D1",
+    "confidence": "high",
+    "why": "coincidence interpreted as correlation"
+  },
+  "hsc202116": {
+    "code": "HSC-M1-T2-D6",
+    "confidence": "medium",
+    "why": "data sufficiency and validity"
+  },
+  "hsc202117": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "1991 HRT study"
+  },
+  "hsc202118": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "medium",
+    "why": "industry funding affects perceived merit"
+  },
+  "hsc202119": {
+    "code": "HSC-M4-T2-D1",
+    "confidence": "high",
+    "why": "need for regulation"
+  },
+  "hsc202120": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "four groups control design"
+  },
+  "hsc202121": {
+    "code": "HSC-M1-T2-D6",
+    "confidence": "high",
+    "why": "validity reliability secondary source"
+  },
+  "hsc202122": {
+    "code": "HSC-M1-T1-D13",
+    "confidence": "high",
+    "why": "Spencer deviation from linear model"
+  },
+  "hsc202123": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "nuclear accidents public image"
+  },
+  "hsc202124": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "medium",
+    "why": "units table speed calculations"
+  },
+  "hsc202125": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "medium",
+    "why": "compare smallpox vaccine development"
+  },
+  "hsc202126": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "medium",
+    "why": "theory and law terms in media"
+  },
+  "hsc202127": {
+    "code": "HSC-M1-T1-D39",
+    "confidence": "high",
+    "why": "double-blind placebo trial design"
+  },
+  "hsc202128": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "Einstein endorsement halo effect"
+  },
+  "hsc202129": {
+    "code": "HSC-M3-T1-D3",
+    "confidence": "high",
+    "why": "survey sample misrepresentation"
+  },
+  "hsc202130": {
+    "code": "HSC-M1-T2-D6",
+    "confidence": "high",
+    "why": "reliability accuracy validity analysis"
+  },
+  "hsc202131": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "Priestley hypothesis and variables"
+  },
+  "hsc202132": {
+    "code": "HSC-M4-T2-D17",
+    "confidence": "medium",
+    "why": "economic social political research funding"
+  },
+  "hsc202201": {
+    "code": "HSC-M1-T1-D15",
+    "confidence": "high",
+    "why": "Marshall and Warren peptic ulcers"
+  },
+  "hsc202202": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "flight improves public image"
+  },
+  "hsc202203": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "Priestley oxygen"
+  },
+  "hsc202204": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "high",
+    "why": "average speed calculation"
+  },
+  "hsc202205": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "high",
+    "why": "variables not controlled design"
+  },
+  "hsc202206": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "Franklin X-ray diffraction DNA"
+  },
+  "hsc202207": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "halo effect purchase"
+  },
+  "hsc202208": {
+    "code": "HSC-M1-T1-D29",
+    "confidence": "high",
+    "why": "ethical practice participant welfare"
+  },
+  "hsc202209": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "identify dependent variable"
+  },
+  "hsc202210": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "medium",
+    "why": "claim validity baseline not considered"
+  },
+  "hsc202211": {
+    "code": "HSC-M1-T1-D39",
+    "confidence": "high",
+    "why": "placebo acts as control"
+  },
+  "hsc202212": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "significant figures volume"
+  },
+  "hsc202213": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "data trend supports hypothesis"
+  },
+  "hsc202214": {
+    "code": "HSC-M1-T1-D39",
+    "confidence": "high",
+    "why": "double-blind allocation"
+  },
+  "hsc202215": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "variable kept constant"
+  },
+  "hsc202216": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "Newton laws TMD earthquake"
+  },
+  "hsc202217": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "high",
+    "why": "report sections and purpose"
+  },
+  "hsc202218": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "analogue vs digital balance accuracy"
+  },
+  "hsc202219": {
+    "code": "HSC-M4-T2-D11",
+    "confidence": "high",
+    "why": "research aids human progress"
+  },
+  "hsc202220": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "investigation testing sugar cube claim"
+  },
+  "hsc202221": {
+    "code": "HSC-M1-T1-D16",
+    "confidence": "high",
+    "why": "Eratosthenes method justified"
+  },
+  "hsc202222": {
+    "code": "HSC-M4-T2-D18",
+    "confidence": "high",
+    "why": "Indigenous benefit-sharing partnership"
+  },
+  "hsc202223": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "medium",
+    "why": "van Helmont method named dot"
+  },
+  "hsc202224": {
+    "code": "HSC-M1-T1-D40",
+    "confidence": "high",
+    "why": "economic influence on statistical data"
+  },
+  "hsc202225": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "high",
+    "why": "temperature-volume gas investigation"
+  },
+  "hsc202226": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "LHC Higgs boson"
+  },
+  "hsc202227": {
+    "code": "HSC-M4-T2-D19",
+    "confidence": "high",
+    "why": "perspectives influence research direction"
+  },
+  "hsc202228": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "high",
+    "why": "value of peer review"
+  },
+  "hsc202229": {
+    "code": "HSC-M4-T2-D17",
+    "confidence": "high",
+    "why": "government corporate research funding"
+  },
+  "hsc202301": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "high",
+    "why": "van Helmont tree mass"
+  },
+  "hsc202302": {
+    "code": "HSC-M1-T1-D16",
+    "confidence": "high",
+    "why": "Eratosthenes Alexandria-Syene"
+  },
+  "hsc202303": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "high",
+    "why": "NaOH safety data sheet"
+  },
+  "hsc202304": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "high",
+    "why": "control group treatment"
+  },
+  "hsc202305": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "medium",
+    "why": "planning order includes risk assessment"
+  },
+  "hsc202306": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "Priestley oxygen and carbon dioxide"
+  },
+  "hsc202307": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "tare balance measurement"
+  },
+  "hsc202308": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "medium",
+    "why": "volume uncertainty recording"
+  },
+  "hsc202309": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "DNA double helix structure"
+  },
+  "hsc202310": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "choose graph scale representation"
+  },
+  "hsc202311": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "telescope refraction wavelengths"
+  },
+  "hsc202312": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "high",
+    "why": "iridology pseudoscience control"
+  },
+  "hsc202313": {
+    "code": "HSC-M1-T3-D2",
+    "confidence": "high",
+    "why": "significant figures k value"
+  },
+  "hsc202314": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "wastewater treatment world health"
+  },
+  "hsc202315": {
+    "code": "HSC-M4-T2-D17",
+    "confidence": "high",
+    "why": "government corporate university funding"
+  },
+  "hsc202316": {
+    "code": "HSC-M2-T2-D10",
+    "confidence": "high",
+    "why": "Newton inertia earthquake rollers"
+  },
+  "hsc202317": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "medium",
+    "why": "unaddressed errors in study"
+  },
+  "hsc202318": {
+    "code": "HSC-M1-T1-D1",
+    "confidence": "medium",
+    "why": "hypothesis from observational data"
+  },
+  "hsc202319": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "surgical procedure world health"
+  },
+  "hsc202320": {
+    "code": "HSC-M2-T2-D11",
+    "confidence": "high",
+    "why": "bioharvesting Indigenous plants"
+  },
+  "hsc202321": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "medium",
+    "why": "thermometer systematic error accuracy"
+  },
+  "hsc202322": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "medium",
+    "why": "law and theory terms media caption"
+  },
+  "hsc202323": {
+    "code": "HSC-M4-T2-D9",
+    "confidence": "medium",
+    "why": "regulate and evaluate effectiveness"
+  },
+  "hsc202324": {
+    "code": "HSC-M3-T2-D11",
+    "confidence": "medium",
+    "why": "publish-or-perish drives fake journals"
+  },
+  "hsc202325": {
+    "code": "HSC-M1-T1-D21",
+    "confidence": "high",
+    "why": "Marshall relevance peer-reviewed literature"
+  },
+  "hsc202326": {
+    "code": "HSC-M2-T1-D2",
+    "confidence": "high",
+    "why": "technologies limitations in investigation"
+  },
+  "hsc202327": {
+    "code": "HSC-M1-T1-D25",
+    "confidence": "medium",
+    "why": "evaluate student investigation design"
+  },
+  "hsc202328": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "medium",
+    "why": "phosphorus CO2 leaf mass relationship"
+  },
+  "hsc202329": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "trial validity design"
+  },
+  "hsc202330": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "flight public image case study"
+  },
+  "hsc202331": {
+    "code": "HSC-M4-T2-D11",
+    "confidence": "high",
+    "why": "research aids economic development"
+  },
+  "hsc202332": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "claim tested procedure"
+  },
+  "hsc202333": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "technology to theory to technology"
+  },
+  "hsc202401": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "flight history public image"
+  },
+  "hsc202402": {
+    "code": "HSC-M1-T2-D3",
+    "confidence": "medium",
+    "why": "modification improve data quality"
+  },
+  "hsc202403": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "analogue digital BP monitor accuracy"
+  },
+  "hsc202404": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "sports person halo effect"
+  },
+  "hsc202405": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "high",
+    "why": "abstract location report convention"
+  },
+  "hsc202406": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "water purification device"
+  },
+  "hsc202407": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "medium",
+    "why": "laser WHS safety sign"
+  },
+  "hsc202408": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "high",
+    "why": "peer review benefits"
+  },
+  "hsc202409": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "1991 HRT socioeconomic status"
+  },
+  "hsc202410": {
+    "code": "HSC-M1-T1-D38",
+    "confidence": "high",
+    "why": "reliability consistent results"
+  },
+  "hsc202411": {
+    "code": "HSC-M1-T1-D1",
+    "confidence": "high",
+    "why": "candle in closed container"
+  },
+  "hsc202412": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "Higgs prediction LHC"
+  },
+  "hsc202413": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "medium",
+    "why": "peer review before publication"
+  },
+  "hsc202414": {
+    "code": "HSC-M4-T2-D11",
+    "confidence": "high",
+    "why": "economic return on research"
+  },
+  "hsc202415": {
+    "code": "HSC-M1-T1-D17",
+    "confidence": "high",
+    "why": "Doppler recorded frequencies"
+  },
+  "hsc202416": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "high",
+    "why": "Spencer microwave circumstances"
+  },
+  "hsc202417": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "vaccination world health"
+  },
+  "hsc202418": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "medium",
+    "why": "company misrepresents data conflict"
+  },
+  "hsc202419": {
+    "code": "HSC-M2-T2-D11",
+    "confidence": "high",
+    "why": "Aboriginal plant knowledge valued"
+  },
+  "hsc202420": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "surgical device wellbeing"
+  },
+  "hsc202421": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "high",
+    "why": "numerology pseudoscience"
+  },
+  "hsc202422": {
+    "code": "HSC-M1-T1-D25",
+    "confidence": "medium",
+    "why": "evaluate lizard investigation design"
+  },
+  "hsc202423": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "high",
+    "why": "pressure-volume gas method"
+  },
+  "hsc202424": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "smallpox eradication vaccine"
+  },
+  "hsc202425": {
+    "code": "HSC-M4-T2-D10",
+    "confidence": "high",
+    "why": "space funding vs social issues"
+  },
+  "hsc202426": {
+    "code": "HSC-M1-T1-D9",
+    "confidence": "medium",
+    "why": "van Helmont plant growth conclusion"
+  },
+  "hsc202427": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "speed-distance relationship data"
+  },
+  "hsc202428": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "medium",
+    "why": "bread study conflict of interest"
+  },
+  "hsc202429": {
+    "code": "HSC-M4-T2-D17",
+    "confidence": "high",
+    "why": "government university research budgets"
+  },
+  "hsc202430": {
+    "code": "HSC-M1-T1-D39",
+    "confidence": "high",
+    "why": "placebo double-blind control justification"
+  },
+  "hsc202501": {
+    "code": "HSC-M1-T3-D4",
+    "confidence": "high",
+    "why": "abstract report convention"
+  },
+  "hsc202502": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "emotive advertising superfoods"
+  },
+  "hsc202503": {
+    "code": "HSC-M1-T1-D29",
+    "confidence": "high",
+    "why": "consent ethics therapy dogs"
+  },
+  "hsc202504": {
+    "code": "HSC-M1-T1-D16",
+    "confidence": "high",
+    "why": "Eratosthenes purpose circumference"
+  },
+  "hsc202505": {
+    "code": "HSC-M1-T1-D17",
+    "confidence": "high",
+    "why": "Doppler star frequency"
+  },
+  "hsc202506": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "doctor promoting phone halo"
+  }
+}

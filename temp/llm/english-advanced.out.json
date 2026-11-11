@@ -1,0 +1,377 @@
+{
+  "ea202001": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "medium",
+    "why": "Affirms or challenges claim about later text's originality"
+  },
+  "ea202401": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "Comparison of earlier text reshapes reading of later"
+  },
+  "ea202507": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "medium",
+    "why": "Strategy as dramatic and filmic technique in pair"
+  },
+  "ea202508": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "medium",
+    "why": "Conformity read across divergent historical contexts"
+  },
+  "ea202509": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "medium",
+    "why": "Alienation across colonial and postcolonial contexts"
+  },
+  "ea202510": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "medium",
+    "why": "Humility as theme and aesthetic element in pair"
+  },
+  "ea202511": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "medium",
+    "why": "Creativity as theme and aesthetic element in pair"
+  },
+  "ea202512": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "medium",
+    "why": "Reinvention driven by differing values and perspectives"
+  },
+  "ea202513": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "medium",
+    "why": "Appropriation of The Tempest revalues both texts"
+  },
+  "ea202002": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Excerpt's concerns and aesthetic qualities, Austen novel"
+  },
+  "ea202003": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Excerpt's concerns and aesthetic qualities, Dickens novel"
+  },
+  "ea202004": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Excerpt's concerns and aesthetic qualities, Ishiguro novel"
+  },
+  "ea202005": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Excerpt's concerns and aesthetic qualities, Eliot poetry"
+  },
+  "ea202006": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Excerpt's concerns and aesthetic qualities, Malouf poetry"
+  },
+  "ea202009": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Excerpt's concerns and aesthetic qualities, de Waal nonfiction"
+  },
+  "ea202010": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Excerpt's concerns and aesthetic qualities, Nabokov nonfiction"
+  },
+  "ea202007": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Play excerpt, dramatic form shaping aesthetic response"
+  },
+  "ea202008": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Radio drama medium shaping aesthetic response"
+  },
+  "ea202011": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Film screenshots, medium and form shaping response"
+  },
+  "ea202012": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Documentary medium and form via screenshots"
+  },
+  "ea202013": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Play excerpt, dramatic form shaping aesthetic response"
+  },
+  "ea202014": {
+    "code": "HSC-M4-T2-D1",
+    "confidence": "medium",
+    "why": "Imaginative composition extending given literary stimulus"
+  },
+  "ea202403": {
+    "code": "HSC-M4-T2-D3",
+    "confidence": "high",
+    "why": "Discursive or persuasive piece carrying stimulus ideas"
+  },
+  "ea202526": {
+    "code": "HSC-M4-T2-D1",
+    "confidence": "high",
+    "why": "Imaginative narrative built around supplied image"
+  },
+  "ea202527": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "Metalanguage reflection on own imagery and language"
+  },
+  "ea202101": {
+    "code": "HSC-M1-T1-D1",
+    "confidence": "medium",
+    "why": "Language positions reader to share personal experience"
+  },
+  "ea202102": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "medium",
+    "why": "Imagery's aesthetic power to convey experience"
+  },
+  "ea202103": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Character relationship as represented human experience"
+  },
+  "ea202104": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "medium",
+    "why": "Literary devices expressing personal experience"
+  },
+  "ea202105": {
+    "code": "HSC-M1-T1-D5",
+    "confidence": "medium",
+    "why": "Evaluative judgement of voice and characterisation"
+  },
+  "ea202201": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Togetherness as shared collective experience"
+  },
+  "ea202202": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Narrator's awe and wonder as lived experience"
+  },
+  "ea202203": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Paradoxes of human behaviour in extract"
+  },
+  "ea202204": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Value of memory as human experience"
+  },
+  "ea202205": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Human and natural world interactions compared"
+  },
+  "ea202301": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Character's preferred place as personal experience"
+  },
+  "ea202302": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Emotional impact of new places"
+  },
+  "ea202303": {
+    "code": "HSC-M1-T1-D1",
+    "confidence": "medium",
+    "why": "Widening reader understanding of consumerist world"
+  },
+  "ea202304": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "Challenges self-narrativisation, questioning culture"
+  },
+  "ea202305": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Being in the moment as lived experience"
+  },
+  "ea202501": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "medium",
+    "why": "Creativity celebrated as aesthetic process"
+  },
+  "ea202502": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Family relationships shaping identity"
+  },
+  "ea202503": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "medium",
+    "why": "Insights about the experience of change"
+  },
+  "ea202504": {
+    "code": "HSC-M1-T1-D1",
+    "confidence": "medium",
+    "why": "Widening reader understanding of past and present"
+  },
+  "ea202505": {
+    "code": "HSC-M1-T1-D5",
+    "confidence": "medium",
+    "why": "Evaluative judgement of human-landscape representation"
+  },
+  "ea202106": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Sustained interpretation of responses to challenges"
+  },
+  "ea202206": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Doerr's prose fiction"
+  },
+  "ea202207": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Lohrey's prose fiction"
+  },
+  "ea202208": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Orwell's prose fiction"
+  },
+  "ea202209": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Parrett's prose fiction"
+  },
+  "ea202210": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Dobson's poetry"
+  },
+  "ea202211": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Slessor's poetry"
+  },
+  "ea202212": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Harrison's drama"
+  },
+  "ea202213": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Miller's drama"
+  },
+  "ea202214": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Shakespeare's drama"
+  },
+  "ea202215": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Winton's nonfiction"
+  },
+  "ea202216": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Yousafzai and Lamb"
+  },
+  "ea202217": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Daldry's film"
+  },
+  "ea202218": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in O'Mahoney's media"
+  },
+  "ea202219": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Interpretation of emotion in Walker's media"
+  },
+  "ea202306": {
+    "code": "HSC-M1-T2-D2",
+    "confidence": "medium",
+    "why": "Essays affirms or challenges collective experience claim"
+  },
+  "ea202506": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "medium",
+    "why": "Sustained interpretation of lives and endurance"
+  },
+  "ea202514": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Closing paragraphs resolving narrative tensions, structure"
+  },
+  "ea202515": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Closing paragraphs resolving narrative tensions, structure"
+  },
+  "ea202516": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Closing paragraphs resolving narrative tensions, structure"
+  },
+  "ea202517": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Closing stanza resolving poetic tensions, structure"
+  },
+  "ea202518": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Closing stanza resolving poetic tensions, structure"
+  },
+  "ea202521": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Closing paragraphs resolving narrative tensions, nonfiction"
+  },
+  "ea202522": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Closing paragraph resolving narrative tensions, nonfiction"
+  },
+  "ea202519": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Closing scene resolution read as dramatic form"
+  },
+  "ea202520": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Closing scene resolution read as dramatic form"
+  },
+  "ea202523": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Closing scene resolution read as filmic form"
+  },
+  "ea202524": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Closing scene resolution read as media form"
+  },
+  "ea202525": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Closing scene resolution read as dramatic form"
+  },
+  "ea202402": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Artistry and integrity weighed as aesthetic value"
+  }
+}

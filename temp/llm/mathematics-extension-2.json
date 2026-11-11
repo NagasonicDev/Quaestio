@@ -1,0 +1,1603 @@
+{
+ "course_id": "mathematics-extension-2",
+ "course_name": "Mathematics Extension 2",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Use the formal language of proof, including the terms ‘statement’, ‘proposition’, ‘implication’, ‘converse’, ‘negation’, ‘contradiction’, ‘counterexample’, ‘equivalence’ and ‘contrapositive’",
+   "text": "Use the formal language of proof, including the terms ‘statement’, ‘proposition’, ‘implication’, ‘converse’, ‘negation’, ‘contradiction’, ‘counterexample’, ‘equivalence’ and ‘contrapositive’"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Define a statement or proposition as a sentence that is either true or false, but not both",
+   "text": "Define a statement or proposition as a sentence that is either true or false, but not both"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Use the notation to represent the statement ‘’ and the notation to represent the statement ‘’",
+   "text": "Use the notation to represent the statement ‘’ and the notation to represent the statement ‘’"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Define and use the negation of as ‘not ’, denoted or",
+   "text": "Define and use the negation of as ‘not ’, denoted or"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Define an implication as an ‘if–then’ statement, where ‘if then ’ is denoted or , read as ‘ implies ’",
+   "text": "Define an implication as an ‘if–then’ statement, where ‘if then ’ is denoted or , read as ‘ implies ’"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Use the quantifiers ‘for all’ , and ‘there exists’ in formulating statements",
+   "text": "Use the quantifiers ‘for all’ , and ‘there exists’ in formulating statements"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Negate statements including the negation of a negation , the negation of an implication , the negation , that is , and the negation , that is , noting that , that is",
+   "text": "Negate statements including the negation of a negation , the negation of an implication , the negation , that is , and the negation , that is , noting that , that is"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Define and use the converse of ‘if then ’ as ‘if then ’, denoted",
+   "text": "Define and use the converse of ‘if then ’ as ‘if then ’, denoted"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Recognise that the converse of a true implication may or may not be true",
+   "text": "Recognise that the converse of a true implication may or may not be true"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Define equivalence of and , as both and , denoted or , read as ‘ if and only if ’, commonly abbreviated ‘ iff ’",
+   "text": "Define equivalence of and , as both and , denoted or , read as ‘ if and only if ’, commonly abbreviated ‘ iff ’"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Define the contrapositive of ‘if then ’ as ‘if not then not ’, denoted",
+   "text": "Define the contrapositive of ‘if then ’ as ‘if not then not ’, denoted"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / The nature of proof / The language and notation of proof / Recognise that an implication is equivalent to its contrapositive, that is , and use this to prove results",
+   "text": "Recognise that an implication is equivalent to its contrapositive, that is , and use this to prove results"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / The nature of proof / Illustrations of proofs / Use proof by contradiction to prove the truth of mathematical statements",
+   "text": "Use proof by contradiction to prove the truth of mathematical statements"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / The nature of proof / Illustrations of proofs / Use examples and counterexamples to test the truth of mathematical statements",
+   "text": "Use examples and counterexamples to test the truth of mathematical statements"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / The nature of proof / Illustrations of proofs / Prove results involving integers",
+   "text": "Prove results involving integers"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove results involving inequalities using the definition of for real and , that is if and only if",
+   "text": "Prove results involving inequalities using the definition of for real and , that is if and only if"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove results involving inequalities using the property that squares of real numbers are non-negative, in particular",
+   "text": "Prove results involving inequalities using the property that squares of real numbers are non-negative, in particular"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove and use results for numbers: if then ; if then and vice versa; if then and vice versa; if and then ; if and then ; if and then ; if and then",
+   "text": "Prove and use results for numbers: if then ; if then and vice versa; if then and vice versa; if and then ; if and then ; if and then ; if and then"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove and use the triangle inequality and interpret the inequality geometrically",
+   "text": "Prove and use the triangle inequality and interpret the inequality geometrically"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Establish and use the relationship between the arithmetic mean and geometric mean for two non-negative numbers, that is",
+   "text": "Establish and use the relationship between the arithmetic mean and geometric mean for two non-negative numbers, that is"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove results involving inequalities using previously obtained or known inequalities",
+   "text": "Prove results involving inequalities using previously obtained or known inequalities"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove inequalities involving geometry",
+   "text": "Prove inequalities involving geometry"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove results using the squeeze theorem: if for all that are near , but not necessarily at , and , then",
+   "text": "Prove results using the squeeze theorem: if for all that are near , but not necessarily at , and , then"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / The nature of proof / Proof of inequalities / Prove inequalities using graphical or calculus techniques or a combination of both",
+   "text": "Prove inequalities using graphical or calculus techniques or a combination of both"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / The nature of proof / Further proof by mathematical induction / Prove results involving trigonometric, logarithmic, exponential, polynomial or other identities, including the binomial theorem, using mathematical induction",
+   "text": "Prove results involving trigonometric, logarithmic, exponential, polynomial or other identities, including the binomial theorem, using mathematical induction"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / The nature of proof / Further proof by mathematical induction / Prove inequality results using mathematical induction",
+   "text": "Prove inequality results using mathematical induction"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / The nature of proof / Further proof by mathematical induction / Prove results in calculus using mathematical induction",
+   "text": "Prove results in calculus using mathematical induction"
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / The nature of proof / Further proof by mathematical induction / Explain that a recursive formula, or recurrence relation, is a formula that defines each term of a sequence using a preceding term",
+   "text": "Explain that a recursive formula, or recurrence relation, is a formula that defines each term of a sequence using a preceding term"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / The nature of proof / Further proof by mathematical induction / Prove results involving first-order recursive formulas using mathematical induction",
+   "text": "Prove results involving first-order recursive formulas using mathematical induction"
+  },
+  {
+   "code": "HSC-M1-T4-D6",
+   "path": "Year 12 / The nature of proof / Further proof by mathematical induction / Prove geometric results using mathematical induction",
+   "text": "Prove geometric results using mathematical induction"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Define the direction vector of a straight line and identify that a straight line through two points and has as a possible direction vector in both two dimensions and three dimensions",
+   "text": "Define the direction vector of a straight line and identify that a straight line through two points and has as a possible direction vector in both two dimensions and three dimensions"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Establish the relationship between the gradient, , of a straight line in two dimensions and its direction vector",
+   "text": "Establish the relationship between the gradient, , of a straight line in two dimensions and its direction vector"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Examine and use as the vector equation of a straight line in two dimensions and three dimensions to solve problems, where is the position vector of a point on the line, is the position vector of a particular point on the line, is a direction vector of the line and is a scalar parameter",
+   "text": "Examine and use as the vector equation of a straight line in two dimensions and three dimensions to solve problems, where is the position vector of a point on the line, is the position vector of a particular point on the line, is a direction vector of the line and is a scalar parameter"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Identify as one possible vector equation for the straight line through points and , where and are the position vectors of and respectively, noting its equivalence with the form , and establish the correspondence between the value of and the position of the point specified by it along the line",
+   "text": "Identify as one possible vector equation for the straight line through points and , where and are the position vectors of and respectively, noting its equivalence with the form , and establish the correspondence between the value of and the position of the point specified by it along the line"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Express a line in two dimensions given in gradient–intercept form () as a vector equation, and vice versa",
+   "text": "Express a line in two dimensions given in gradient–intercept form () as a vector equation, and vice versa"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Determine when two lines in vector form are parallel in two dimensions and three dimensions",
+   "text": "Determine when two lines in vector form are parallel in two dimensions and three dimensions"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Determine whether a given point lies on a line in vector form",
+   "text": "Determine whether a given point lies on a line in vector form"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Determine using vector methods whether three points are collinear in two dimensions and three dimensions",
+   "text": "Determine using vector methods whether three points are collinear in two dimensions and three dimensions"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Determine the point of intersection of two non-parallel lines expressed as vector equations in two dimensions",
+   "text": "Determine the point of intersection of two non-parallel lines expressed as vector equations in two dimensions"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Determine whether two distinct lines and in three dimensions intersect, and if so, find the unique value of either or corresponding to the point of intersection and determine its coordinates",
+   "text": "Determine whether two distinct lines and in three dimensions intersect, and if so, find the unique value of either or corresponding to the point of intersection and determine its coordinates"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Define skew lines in three dimensions and apply vector methods to determine whether two lines in three dimensions are skew",
+   "text": "Define skew lines in three dimensions and apply vector methods to determine whether two lines in three dimensions are skew"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Recognise that a parametrically defined curve in two dimensions or three dimensions can be expressed as a vector equation: or , where is a parameter",
+   "text": "Recognise that a parametrically defined curve in two dimensions or three dimensions can be expressed as a vector equation: or , where is a parameter"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Examine and identify curves given as vector equations in two dimensions and three dimensions using graphing applications",
+   "text": "Examine and identify curves given as vector equations in two dimensions and three dimensions using graphing applications"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Identify the vector equation of a curve given its graph",
+   "text": "Identify the vector equation of a curve given its graph"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Recognise and as vector equations of a circle in two dimensions with radius centred at the origin",
+   "text": "Recognise and as vector equations of a circle in two dimensions with radius centred at the origin"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Recognise and as vector equations of a circle in two dimensions with radius and centre with position vector",
+   "text": "Recognise and as vector equations of a circle in two dimensions with radius and centre with position vector"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Recognise as the vector equation of a sphere in three dimensions with radius and centre with position vector",
+   "text": "Recognise as the vector equation of a sphere in three dimensions with radius and centre with position vector"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Use the circle equations and sphere equations to solve problems",
+   "text": "Use the circle equations and sphere equations to solve problems"
+  },
+  {
+   "code": "HSC-M2-T1-D19",
+   "path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Determine the Cartesian equation of a curve in two dimensions given its vector equation and graph the curve, where the curve is within the scope of this syllabus",
+   "text": "Determine the Cartesian equation of a curve in two dimensions given its vector equation and graph the curve, where the curve is within the scope of this syllabus"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication ()",
+   "text": "Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication ()"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Further work with vectors / Vectors and geometry / Establish and use the results and",
+   "text": "Establish and use the results and"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Further work with vectors / Vectors and geometry / Prove and use the Cauchy–Schwarz inequality for vectors:",
+   "text": "Prove and use the Cauchy–Schwarz inequality for vectors:"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Further work with vectors / Vectors and geometry / Define the medians, altitudes, perpendicular bisectors and angle bisectors of a triangle and recognise these definitions in vector proofs",
+   "text": "Define the medians, altitudes, perpendicular bisectors and angle bisectors of a triangle and recognise these definitions in vector proofs"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors",
+   "text": "Solve problems and prove geometric results in two dimensions and three dimensions using vectors"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define the number by",
+   "text": "Define the number by"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Use the number to solve quadratic equations of the form where is a positive real number",
+   "text": "Use the number to solve quadratic equations of the form where is a positive real number"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define the complex numbers () as the set of numbers of the form , where and are real numbers",
+   "text": "Define the complex numbers () as the set of numbers of the form , where and are real numbers"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Use complex numbers to express the roots of quadratic equations of the form , where , and are real numbers and the discriminant",
+   "text": "Use complex numbers to express the roots of quadratic equations of the form , where , and are real numbers and the discriminant"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Refer to as ‘the real part of the complex number ’, denoted by",
+   "text": "Refer to as ‘the real part of the complex number ’, denoted by"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Refer to as ‘the imaginary part of the complex number ’, denoted by",
+   "text": "Refer to as ‘the imaginary part of the complex number ’, denoted by"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Classify numbers as belonging to the set of natural numbers ), integers (), rational numbers (), real numbers () or complex numbers (), each of which is an extension of the previous",
+   "text": "Classify numbers as belonging to the set of natural numbers ), integers (), rational numbers (), real numbers () or complex numbers (), each of which is an extension of the previous"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Identify and use the condition for two complex numbers and to be equal, that is if and only if and",
+   "text": "Identify and use the condition for two complex numbers and to be equal, that is if and only if and"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define and perform complex number addition, subtraction and multiplication, with and without digital tools",
+   "text": "Define and perform complex number addition, subtraction and multiplication, with and without digital tools"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define the complex conjugate of a complex number as and use it to solve problems",
+   "text": "Define the complex conjugate of a complex number as and use it to solve problems"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define and calculate the modulus of a complex number as",
+   "text": "Define and calculate the modulus of a complex number as"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Establish relationships and and , , and use them to solve problems",
+   "text": "Establish relationships and and , , and use them to solve problems"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Divide one complex number by another non-zero complex number, with and without digital tools, and give the result in the form",
+   "text": "Divide one complex number by another non-zero complex number, with and without digital tools, and give the result in the form"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Find the two square roots of a complex number",
+   "text": "Find the two square roots of a complex number"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Plot the complex number as a point on the complex plane with and without graphing applications",
+   "text": "Plot the complex number as a point on the complex plane with and without graphing applications"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Define and calculate the argument of a non-zero complex number as , where satisfies and , noting that the argument has multiple values that differ by multiples of",
+   "text": "Define and calculate the argument of a non-zero complex number as , where satisfies and , noting that the argument has multiple values that differ by multiples of"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Define and use the principal argument of a non-zero complex number as the unique value of the argument in the interval",
+   "text": "Define and use the principal argument of a non-zero complex number as the unique value of the argument in the interval"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Define and use complex numbers in polar or modulus–argument form that expresses a complex number in terms of its modulus and argument, , where is its modulus and is an argument of , and represent complex numbers in this form on the complex plane",
+   "text": "Define and use complex numbers in polar or modulus–argument form that expresses a complex number in terms of its modulus and argument, , where is its modulus and is an argument of , and represent complex numbers in this form on the complex plane"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Use multiplication, division and powers of complex numbers in polar form and interpret these geometrically",
+   "text": "Use multiplication, division and powers of complex numbers in polar form and interpret these geometrically"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Convert between complex numbers in Cartesian form and polar form and use complex numbers in Cartesian form and polar form to solve problems",
+   "text": "Convert between complex numbers in Cartesian form and polar form and use complex numbers in Cartesian form and polar form to solve problems"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the modulus of complex numbers: , and , where is an integer",
+   "text": "Prove and use identities involving the modulus of complex numbers: , and , where is an integer"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the argument of complex numbers: , and where is an integer",
+   "text": "Prove and use identities involving the argument of complex numbers: , and where is an integer"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the complex conjugate of complex numbers:,",
+   "text": "Prove and use identities involving the complex conjugate of complex numbers:,"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use the triangle inequality for complex numbers and",
+   "text": "Prove and use the triangle inequality for complex numbers and"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Solve quadratic equations of the form , where , and are complex numbers",
+   "text": "Solve quadratic equations of the form , where , and are complex numbers"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Recognise that solutions to quadratic equations with real coefficients are complex conjugates of each other and use this to solve problems",
+   "text": "Recognise that solutions to quadratic equations with real coefficients are complex conjugates of each other and use this to solve problems"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Prove the complex conjugate root theorem: if the complex number is a root of the polynomial equation with real coefficients, then the complex conjugate is also a root of",
+   "text": "Prove the complex conjugate root theorem: if the complex number is a root of the polynomial equation with real coefficients, then the complex conjugate is also a root of"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Solve problems involving complex conjugate roots of polynomial equations with real coefficients",
+   "text": "Solve problems involving complex conjugate roots of polynomial equations with real coefficients"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Using proof by mathematical induction prove de Moivre’s theorem for positive integer powers:",
+   "text": "Using proof by mathematical induction prove de Moivre’s theorem for positive integer powers:"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Prove that for negative integers",
+   "text": "Prove that for negative integers"
+  },
+  {
+   "code": "HSC-M3-T4-D3",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Use de Moivre’s theorem to find any integer power of a given complex number",
+   "text": "Use de Moivre’s theorem to find any integer power of a given complex number"
+  },
+  {
+   "code": "HSC-M3-T4-D4",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Use de Moivre’s theorem to derive trigonometric identities",
+   "text": "Use de Moivre’s theorem to derive trigonometric identities"
+  },
+  {
+   "code": "HSC-M3-T4-D5",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of in polar form and their location on the unit circle",
+   "text": "Determine the th roots of in polar form and their location on the unit circle"
+  },
+  {
+   "code": "HSC-M3-T4-D6",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Illustrate the geometrical relationship connecting the th roots of",
+   "text": "Illustrate the geometrical relationship connecting the th roots of"
+  },
+  {
+   "code": "HSC-M3-T4-D7",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of complex numbers and their location on the complex plane",
+   "text": "Determine the th roots of complex numbers and their location on the complex plane"
+  },
+  {
+   "code": "HSC-M3-T4-D8",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Recognise that a complex number can be represented as a vector, where the magnitude and direction of the vector are determined by the modulus and argument of the complex number respectively",
+   "text": "Recognise that a complex number can be represented as a vector, where the magnitude and direction of the vector are determined by the modulus and argument of the complex number respectively"
+  },
+  {
+   "code": "HSC-M3-T4-D9",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Examine and use addition and subtraction of complex numbers as vectors on the complex plane",
+   "text": "Examine and use addition and subtraction of complex numbers as vectors on the complex plane"
+  },
+  {
+   "code": "HSC-M3-T4-D10",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Examine and use the geometric interpretation of multiplying complex numbers, including rotation and dilation on the complex plane, with and without graphing applications",
+   "text": "Examine and use the geometric interpretation of multiplying complex numbers, including rotation and dilation on the complex plane, with and without graphing applications"
+  },
+  {
+   "code": "HSC-M3-T4-D11",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Prove geometric results using complex numbers as vectors",
+   "text": "Prove geometric results using complex numbers as vectors"
+  },
+  {
+   "code": "HSC-M3-T4-D12",
+   "path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Solve problems and prove results using the th roots of complex numbers",
+   "text": "Solve problems and prove results using the th roots of complex numbers"
+  },
+  {
+   "code": "HSC-M3-T5-D1",
+   "path": "Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph vertical and horizontal lines of the form or where and are real constants",
+   "text": "Graph vertical and horizontal lines of the form or where and are real constants"
+  },
+  {
+   "code": "HSC-M3-T5-D2",
+   "path": "Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph the line corresponding to the equation , where and are complex numbers, and give a geometrical description of the line",
+   "text": "Graph the line corresponding to the equation , where and are complex numbers, and give a geometrical description of the line"
+  },
+  {
+   "code": "HSC-M3-T5-D3",
+   "path": "Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph the circles corresponding to the equations and , where is a complex number and is a positive real number",
+   "text": "Graph the circles corresponding to the equations and , where is a complex number and is a positive real number"
+  },
+  {
+   "code": "HSC-M3-T5-D4",
+   "path": "Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph rays corresponding to the equations and , where is a complex number",
+   "text": "Graph rays corresponding to the equations and , where is a complex number"
+  },
+  {
+   "code": "HSC-M3-T5-D5",
+   "path": "Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph regions associated with lines, rays and circles defined using complex numbers, giving a geometrical description of any such curves or regions, and using circle geometry theorems where necessary",
+   "text": "Graph regions associated with lines, rays and circles defined using complex numbers, giving a geometrical description of any such curves or regions, and using circle geometry theorems where necessary"
+  },
+  {
+   "code": "HSC-M4-D1",
+   "path": "Year 12 / Further integration / Derive the identities for trigonometric products as sums and differences for , , and",
+   "text": "Derive the identities for trigonometric products as sums and differences for , , and"
+  },
+  {
+   "code": "HSC-M4-D2",
+   "path": "Year 12 / Further integration / Use the identities for trigonometric products as sums and differences to solve problems and prove results",
+   "text": "Use the identities for trigonometric products as sums and differences to solve problems and prove results"
+  },
+  {
+   "code": "HSC-M4-D3",
+   "path": "Year 12 / Further integration / Solve trigonometric equations by applying the formulas for trigonometric products as sums and differences for , and over restricted domains",
+   "text": "Solve trigonometric equations by applying the formulas for trigonometric products as sums and differences for , and over restricted domains"
+  },
+  {
+   "code": "HSC-M4-D4",
+   "path": "Year 12 / Further integration / Use identities relating the trigonometric products as sums and differences to solve problems involving integrals of the form , or",
+   "text": "Use identities relating the trigonometric products as sums and differences to solve problems involving integrals of the form , or"
+  },
+  {
+   "code": "HSC-M4-D5",
+   "path": "Year 12 / Further integration / Derive the expressions , and where (the -formulas) and use them to solve trigonometric equations over restricted domains",
+   "text": "Derive the expressions , and where (the -formulas) and use them to solve trigonometric equations over restricted domains"
+  },
+  {
+   "code": "HSC-M4-D6",
+   "path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given",
+   "text": "Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given"
+  },
+  {
+   "code": "HSC-M4-D7",
+   "path": "Year 12 / Further integration / Decompose rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors into partial fractions",
+   "text": "Decompose rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors into partial fractions"
+  },
+  {
+   "code": "HSC-M4-D8",
+   "path": "Year 12 / Further integration / Integrate rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors, using partial fraction decomposition",
+   "text": "Integrate rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors, using partial fraction decomposition"
+  },
+  {
+   "code": "HSC-M4-D9",
+   "path": "Year 12 / Further integration / Integrate rational functions by completing the square on a quadratic denominator",
+   "text": "Integrate rational functions by completing the square on a quadratic denominator"
+  },
+  {
+   "code": "HSC-M4-D10",
+   "path": "Year 12 / Further integration / Integrate rational functions where the degree of the numerator is not less than the degree of the denominator",
+   "text": "Integrate rational functions where the degree of the numerator is not less than the degree of the denominator"
+  },
+  {
+   "code": "HSC-M4-D11",
+   "path": "Year 12 / Further integration / Integrate functions by changing an integrand into an appropriate form using algebraic manipulation",
+   "text": "Integrate functions by changing an integrand into an appropriate form using algebraic manipulation"
+  },
+  {
+   "code": "HSC-M4-D12",
+   "path": "Year 12 / Further integration / Derive the method for integration by parts",
+   "text": "Derive the method for integration by parts"
+  },
+  {
+   "code": "HSC-M4-D13",
+   "path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by parts, including problems where more than one application is required",
+   "text": "Find indefinite integrals and evaluate definite integrals using the method of integration by parts, including problems where more than one application is required"
+  },
+  {
+   "code": "HSC-M4-D14",
+   "path": "Year 12 / Further integration / Derive and use recurrence relations involving integration by parts",
+   "text": "Derive and use recurrence relations involving integration by parts"
+  },
+  {
+   "code": "HSC-M4-D15",
+   "path": "Year 12 / Further integration / Solve theoretical problems involving multiple techniques of integration",
+   "text": "Solve theoretical problems involving multiple techniques of integration"
+  },
+  {
+   "code": "HSC-M4-D16",
+   "path": "Year 12 / Further integration / Solve practical problems involving multiple techniques of integration",
+   "text": "Solve practical problems involving multiple techniques of integration"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Derive expressions for acceleration: , where is a function of , as well as and , where is a function of",
+   "text": "Derive expressions for acceleration: , where is a function of , as well as and , where is a function of"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Solve problems involving velocity and acceleration expressed in terms of displacement, and acceleration expressed in terms of velocity",
+   "text": "Solve problems involving velocity and acceleration expressed in terms of displacement, and acceleration expressed in terms of velocity"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Examine Newton’s three laws of motion, including force, acceleration, action and reaction under a constant and non-constant force",
+   "text": "Examine Newton’s three laws of motion, including force, acceleration, action and reaction under a constant and non-constant force"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Find acceleration, , using the formula , where is the force acting on a mass,",
+   "text": "Find acceleration, , using the formula , where is the force acting on a mass,"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Recognise that forces are vector quantities, analyse concurrent forces on a body by resolving them into perpendicular components and use vector projections to determine how much of a given force acts in a given direction in both 2D and 3D contexts",
+   "text": "Recognise that forces are vector quantities, analyse concurrent forces on a body by resolving them into perpendicular components and use vector projections to determine how much of a given force acts in a given direction in both 2D and 3D contexts"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Define simple harmonic motion as motion in which acceleration is proportional to, and in the opposite direction to, displacement, that is , where is the displacement of a particle from the centre of motion at and is the acceleration",
+   "text": "Define simple harmonic motion as motion in which acceleration is proportional to, and in the opposite direction to, displacement, that is , where is the displacement of a particle from the centre of motion at and is the acceleration"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Recognise that the force acting on a body of mass, , executing simple harmonic motion according to the equation , is a restoring force which acts towards the centre of motion causing the body to oscillate around the centre of motion",
+   "text": "Recognise that the force acting on a body of mass, , executing simple harmonic motion according to the equation , is a restoring force which acts towards the centre of motion causing the body to oscillate around the centre of motion"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Verify that is a solution to the differential equation for simple harmonic motion, equivalently expressed as , or",
+   "text": "Verify that is a solution to the differential equation for simple harmonic motion, equivalently expressed as , or"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Describe simple harmonic motion using displacement, velocity, acceleration, force, amplitude and period",
+   "text": "Describe simple harmonic motion using displacement, velocity, acceleration, force, amplitude and period"
+  },
+  {
+   "code": "HSC-M5-T2-D5",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Prove that motion is simple harmonic by obtaining an equation of the form , when given an equation for acceleration, velocity or displacement",
+   "text": "Prove that motion is simple harmonic by obtaining an equation of the form , when given an equation for acceleration, velocity or displacement"
+  },
+  {
+   "code": "HSC-M5-T2-D6",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Graph , and as functions of with and without graphing applications for a particle moving in simple harmonic motion where is of the form or",
+   "text": "Graph , and as functions of with and without graphing applications for a particle moving in simple harmonic motion where is of the form or"
+  },
+  {
+   "code": "HSC-M5-T2-D7",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Determine equations for simple harmonic motion when given graphs of acceleration, velocity or displacement in terms of time",
+   "text": "Determine equations for simple harmonic motion when given graphs of acceleration, velocity or displacement in terms of time"
+  },
+  {
+   "code": "HSC-M5-T2-D8",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Derive for a particle moving in simple harmonic motion according to , where is the amplitude",
+   "text": "Derive for a particle moving in simple harmonic motion according to , where is the amplitude"
+  },
+  {
+   "code": "HSC-M5-T2-D9",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Determine equations for the displacement, , and velocity, , in terms of time for an object executing simple harmonic motion according to a given equation and satisfying given initial conditions",
+   "text": "Determine equations for the displacement, , and velocity, , in terms of time for an object executing simple harmonic motion according to a given equation and satisfying given initial conditions"
+  },
+  {
+   "code": "HSC-M5-T2-D10",
+   "path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Model and solve problems involving simple harmonic motion using relevant formulas and graphs",
+   "text": "Model and solve problems involving simple harmonic motion using relevant formulas and graphs"
+  },
+  {
+   "code": "HSC-M5-T3-D1",
+   "path": "Year 12 / Applications of calculus to mechanics / Modelling motion without resistance / Derive the equations of motion for a particle travelling, without resistance, in a straight line with constant and variable acceleration and use the equations of motion to solve problems",
+   "text": "Derive the equations of motion for a particle travelling, without resistance, in a straight line with constant and variable acceleration and use the equations of motion to solve problems"
+  },
+  {
+   "code": "HSC-M5-T3-D2",
+   "path": "Year 12 / Applications of calculus to mechanics / Modelling motion without resistance / Analyse and solve problems relating to motion on a smooth inclined plane by resolving forces into components",
+   "text": "Analyse and solve problems relating to motion on a smooth inclined plane by resolving forces into components"
+  },
+  {
+   "code": "HSC-M5-T3-D3",
+   "path": "Year 12 / Applications of calculus to mechanics / Modelling motion without resistance / Solve motion problems involving a single smooth pulley and a smooth inclined plane where a body hangs vertically or lies on a smooth horizontal or inclined plane",
+   "text": "Solve motion problems involving a single smooth pulley and a smooth inclined plane where a body hangs vertically or lies on a smooth horizontal or inclined plane"
+  },
+  {
+   "code": "HSC-M5-T4-D1",
+   "path": "Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive, from Newton’s laws of motion, , the equation for acceleration of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed",
+   "text": "Derive, from Newton’s laws of motion, , the equation for acceleration of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed"
+  },
+  {
+   "code": "HSC-M5-T4-D2",
+   "path": "Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive an expression for velocity as a function of time of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed",
+   "text": "Derive an expression for velocity as a function of time of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed"
+  },
+  {
+   "code": "HSC-M5-T4-D3",
+   "path": "Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive an expression for velocity as a function of displacement of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed",
+   "text": "Derive an expression for velocity as a function of displacement of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed"
+  },
+  {
+   "code": "HSC-M5-T4-D4",
+   "path": "Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive an expression for displacement as a function of time of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed",
+   "text": "Derive an expression for displacement as a function of time of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed"
+  },
+  {
+   "code": "HSC-M5-T4-D5",
+   "path": "Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Solve problems, excluding those with pulley systems, involving a particle moving in a straight line subject to a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed",
+   "text": "Solve problems, excluding those with pulley systems, involving a particle moving in a straight line subject to a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed"
+  },
+  {
+   "code": "HSC-M5-T5-D1",
+   "path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Derive, from Newton’s laws of motion, , the equation for acceleration of a particle moving vertically (upwards or downwards) in a resistive medium and under the influence of constant gravity, where the particle experiences a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed",
+   "text": "Derive, from Newton’s laws of motion, , the equation for acceleration of a particle moving vertically (upwards or downwards) in a resistive medium and under the influence of constant gravity, where the particle experiences a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed"
+  },
+  {
+   "code": "HSC-M5-T5-D2",
+   "path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Derive expressions for velocity both as a function of time and of displacement for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed",
+   "text": "Derive expressions for velocity both as a function of time and of displacement for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed"
+  },
+  {
+   "code": "HSC-M5-T5-D3",
+   "path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Derive an expression for displacement as a function of time for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed",
+   "text": "Derive an expression for displacement as a function of time for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed"
+  },
+  {
+   "code": "HSC-M5-T5-D4",
+   "path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Define the terminal velocity of a particle falling through a medium as the constant velocity the particle reaches when the resistance of the medium prevents further acceleration",
+   "text": "Define the terminal velocity of a particle falling through a medium as the constant velocity the particle reaches when the resistance of the medium prevents further acceleration"
+  },
+  {
+   "code": "HSC-M5-T5-D5",
+   "path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Determine the terminal velocity of a falling particle from its equation of motion for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, and whose magnitude is proportional to the first or second power of the speed",
+   "text": "Determine the terminal velocity of a falling particle from its equation of motion for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, and whose magnitude is proportional to the first or second power of the speed"
+  },
+  {
+   "code": "HSC-M5-T5-D6",
+   "path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Solve vertical resisted motion problems using the expressions derived for acceleration, velocity and displacement, including finding the maximum height reached by a particle projected vertically upwards and the time taken to reach this maximum height, and finding the time taken for a particle to return to the level from which it was projected and its terminal velocity",
+   "text": "Solve vertical resisted motion problems using the expressions derived for acceleration, velocity and displacement, including finding the maximum height reached by a particle projected vertically upwards and the time taken to reach this maximum height, and finding the time taken for a particle to return to the level from which it was projected and its terminal velocity"
+  },
+  {
+   "code": "HSC-M5-T6-D1",
+   "path": "Year 12 / Applications of calculus to mechanics / Projectiles and resisted motion / Distinguish between the shape of the trajectory of a projectile moving under the influence of gravity and with negligible resistance and the shape of the trajectory of a projectile moving under the influence of gravity subject to resistance whose magnitude is proportional to the speed",
+   "text": "Distinguish between the shape of the trajectory of a projectile moving under the influence of gravity and with negligible resistance and the shape of the trajectory of a projectile moving under the influence of gravity subject to resistance whose magnitude is proportional to the speed"
+  },
+  {
+   "code": "HSC-M5-T6-D2",
+   "path": "Year 12 / Applications of calculus to mechanics / Projectiles and resisted motion / Establish and use the equations for acceleration for a projectile moving under the influence of gravity, projected at an angle to the horizontal, and subject to a resistance whose magnitude is proportional to the speed, to solve problems",
+   "text": "Establish and use the equations for acceleration for a projectile moving under the influence of gravity, projected at an angle to the horizontal, and subject to a resistance whose magnitude is proportional to the speed, to solve problems"
+  }
+ ],
+ "questions": [
+  {
+   "id": "me2202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication ()",
+   "text": "What is the length of the vector $-\\mathbf{i}+18\\mathbf{j}-6\\mathbf{k}$?\n$5$\n$19$\n$25$\n$361$"
+  },
+  {
+   "id": "me2202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Recognise that solutions to quadratic equations with real coefficients are complex conjugates of each other and use this to solve problems",
+   "text": "Given that $z=3+i$ is a root of $z^2+pz+q=0$, where $p$ and $q$ are real, what are the values of $p$ and $q$?\n$p=-6,\\ q=\\sqrt{10}$\n$p=-6,\\ q=10$\n$p=6,\\ q=\\sqrt{10}$\n$p=6,\\ q=10$"
+  },
+  {
+   "id": "me2202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Examine and use as the vector equation of a straight line in two dimensions and three dimensions to solve problems, where is the position vector of a point on the line, is the position vector of a particular point on the line, is a direction vector of the line and is a scalar parameter",
+   "text": "What is the Cartesian equation of the line $\\mathbf{r}=\\begin{pmatrix}1\\\\3\\end{pmatrix}+\\lambda\\begin{pmatrix}-2\\\\4\\end{pmatrix}$?\n$2y+x=7$\n$y-2x=-5$\n$y+2x=5$\n$2y-x=-1$"
+  },
+  {
+   "id": "me2202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Use multiplication, division and powers of complex numbers in polar form and interpret these geometrically",
+   "text": "The diagram shows the complex number $z$ on the Argand diagram.\nWhich of the following diagrams best shows the position of $\\frac{z^2}{|z|}$?\nPoint on the dashed circle in the first quadrant, at a larger angle than $z$\nPoint outside the dashed circle in the first quadrant\nPoint inside the dashed circle in the first quadrant\nPoint on the dashed circle in the third quadrant"
+  },
+  {
+   "id": "me2202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Determine equations for the displacement, , and velocity, , in terms of time for an object executing simple harmonic motion according to a given equation and satisfying given initial conditions",
+   "text": "A particle undergoing simple harmonic motion has a maximum acceleration of $6\\ \\mathrm{m/s^2}$ and a maximum velocity of $4\\ \\mathrm{m/s}$. What is the period of the motion?\n$\\pi$\n$\\frac{2\\pi}{3}$\n$3\\pi$\n$\\frac{4\\pi}{3}$"
+  },
+  {
+   "id": "me2202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further integration / Integrate rational functions by completing the square on a quadratic denominator",
+   "text": "Which expression is equal to $\\int\\frac{1}{x^2+4x+10}\\,dx$?\n$\\frac{1}{\\sqrt{6}}\\tan^{-1}\\left(\\frac{x+2}{\\sqrt{6}}\\right)+c$\n$\\tan^{-1}\\left(\\frac{x+2}{\\sqrt{6}}\\right)+c$\n$\\frac{1}{2\\sqrt{6}}\\ln\\left|\\frac{x+2-\\sqrt{6}}{x+2+\\sqrt{6}}\\right|+c$\n$\\ln\\left|\\frac{x+2-\\sqrt{6}}{x+2+\\sqrt{6}}\\right|+c$"
+  },
+  {
+   "id": "me2202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / Illustrations of proofs / Use examples and counterexamples to test the truth of mathematical statements",
+   "text": "Consider the proposition: 'If $2^n-1$ is not prime, then $n$ is not prime'. Given that each of the following statements is true, which statement disproves the proposition?\n$2^5-1$ is prime\n$2^6-1$ is divisible by $9$\n$2^7-1$ is prime\n$2^{11}-1$ is divisible by $23$"
+  },
+  {
+   "id": "me2202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Negate statements including the negation of a negation , the negation of an implication , the negation , that is , and the negation , that is , noting that , that is",
+   "text": "Consider the statement: 'If $n$ is even, then if $n$ is a multiple of $3$, then $n$ is a multiple of $6$'. Which of the following is the negation of this statement?\n$n$ is odd and $n$ is not a multiple of $3$ or $6$.\n$n$ is even and $n$ is a multiple of $3$ but not a multiple of $6$.\nIf $n$ is even, then $n$ is not a multiple of $3$ and $n$ is not a multiple of $6$.\nIf $n$ is odd, then if $n$ is not a multiple of $3$ then $n$ is not a multiple of $6$."
+  },
+  {
+   "id": "me2202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the modulus of complex numbers: , and , where is an integer",
+   "text": "What is the maximum value of $|e^{i\\theta}-2|+|e^{i\\theta}+2|$ for $0\\leq\\theta\\leq2\\pi$?\n$\\sqrt{5}$\n$4$\n$2\\sqrt{5}$\n$10$"
+  },
+  {
+   "id": "me2202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given",
+   "text": "Which of the following is equal to $\\int_0^{2a}f(x)\\,dx$?\n$\\int_0^a f(x)-f(2a-x)\\,dx$\n$\\int_0^a f(x)+f(2a-x)\\,dx$\n$2\\int_0^a f(x-a)\\,dx$\n$\\int_0^a \\frac{1}{2}f(2x)\\,dx$"
+  },
+  {
+   "id": "me2202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define and calculate the modulus of a complex number as | Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by parts, including problems where more than one application is required | Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Solve problems involving velocity and acceleration expressed in terms of displacement, and acceleration expressed in terms of velocity | Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication () | Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Solve quadratic equations of the form , where , and are complex numbers",
+   "text": "Consider the complex numbers $w=-1+4i$ and $z=2-i$.\nEvaluate $|w|$.\nEvaluate $w\\bar{z}$.\nUse integration by parts to evaluate $\\int_1^e x\\ln x\\,dx$.\nA particle starts at the origin with velocity $1$ and acceleration given by $a=v^2+v$, where $v$ is the velocity of the particle. Find an expression for $x$, the displacement of the particle, in terms of $v$.\nConsider the two vectors $\\mathbf{u}=-2\\mathbf{i}-\\mathbf{j}+3\\mathbf{k}$ and $\\mathbf{v}=p\\mathbf{i}+\\mathbf{j}+2\\mathbf{k}$. For what values of $p$ are $\\mathbf{u}-\\mathbf{v}$ and $\\mathbf{u}+\\mathbf{v}$ perpendicular?\nSolve $z^2+3z+(3-i)=0$, giving your answer(s) in the form $a+bi$, where $a$ and $b$ are real."
+  },
+  {
+   "id": "me2202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Find acceleration, , using the formula , where is the force acting on a mass, | Year 12 / Applications of calculus to mechanics / Projectiles and resisted motion / Establish and use the equations for acceleration for a projectile moving under the influence of gravity, projected at an angle to the horizontal, and subject to a resistance whose magnitude is proportional to the speed, to solve problems",
+   "text": "A 50-kilogram box is initially at rest. The box is pulled along the ground with a force of 200 newtons at an angle of $30^\\circ$ to the horizontal. The box experiences a resistive force of $0.3R$ newtons, where $R$ is the normal force, as shown in the diagram.\nTake the acceleration $g$ due to gravity to be $10\\ \\mathrm{m/s^2}$.\nBy resolving the forces vertically, show that $R=400$.\nShow that the net force horizontally is approximately 53.2 newtons.\nFind the velocity of the box after the first three seconds.\nA particle is projected from the origin with initial velocity $u\\ \\mathrm{m/s}$ at an angle $\\theta$ to the horizontal. The particle lands at $x=R$ on the $x$-axis. The acceleration vector is given by $\\mathbf{a}=\\begin{pmatrix}0\\\\-g\\end{pmatrix}$, where $g$ is the acceleration due to gravity. (Do NOT prove this.)\nShow that the position vector $\\tilde{r}(t)$ of the particle is given by $\\tilde{r}(t)=\\begin{pmatrix}ut\\cos\\theta\\\\ ut\\sin\\theta-\\frac{1}{2}gt^2\\end{pmatrix}$.\nShow that the Cartesian equation of the path of flight is given by $y=\\frac{-gx^2}{2u^2}\\left(\\tan^2\\theta-\\frac{2u^2}{gx}\\tan\\theta+1\\right)$.\nGiven $u^2>gR$, prove that there are 2 distinct values of $\\theta$ for which the particle will land at $x=R$."
+  },
+  {
+   "id": "me2202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Determine equations for the displacement, , and velocity, , in terms of time for an object executing simple harmonic motion according to a given equation and satisfying given initial conditions | Year 12 / Further work with vectors / Vector equations of lines and curves / Determine whether two distinct lines and in three dimensions intersect, and if so, find the unique value of either or corresponding to the point of intersection and determine its coordinates | Year 12 / The nature of proof / Proof of inequalities / Establish and use the relationship between the arithmetic mean and geometric mean for two non-negative numbers, that is | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Use de Moivre’s theorem to derive trigonometric identities",
+   "text": "A particle is undergoing simple harmonic motion with period $\\frac{\\pi}{3}$. The central point of motion of the particle is at $x=\\sqrt{3}$. When $t=0$ the particle has its maximum displacement of $2\\sqrt{3}$ from the central point of motion. Find an equation for the displacement, $x$, of the particle in terms of $t$.\nConsider the two lines in three dimensions given by $\\tilde{r}=\\begin{pmatrix}3\\\\-1\\\\7\\end{pmatrix}+\\lambda_1\\begin{pmatrix}1\\\\2\\\\1\\end{pmatrix}$ and $\\tilde{r}=\\begin{pmatrix}3\\\\-6\\\\2\\end{pmatrix}+\\lambda_2\\begin{pmatrix}-2\\\\1\\\\3\\end{pmatrix}$. By equating components, find the point of intersection of the two lines.\nBy considering the right-angled triangle below, or otherwise, prove that $\\frac{a+b}{2}\\geq\\sqrt{ab}$, where $a>b\\geq0$.\nBy considering the right-angled triangle shown, or otherwise, prove that $\\frac{a+b}{2}\\geq\\sqrt{ab}$, where $a>b\\geq0$.\nProve that $p^2+4q^2\\geq4pq$.\nShow that for any integer $n$, $e^{in\\theta}+e^{-in\\theta}=2\\cos(n\\theta)$.\nShow that for any integer $n$, $e^{in\\theta}+e^{-in\\theta}=2\\cos(n\\theta)$.\nBy expanding $\\left(e^{i\\theta}+e^{-i\\theta}\\right)^4$, show that $\\cos^4\\theta=\\frac{1}{8}\\left(\\cos(4\\theta)+4\\cos(2\\theta)+3\\right)$.\nHence, or otherwise, find $\\int_0^{\\frac{\\pi}{2}}\\cos^4\\theta\\,d\\theta$."
+  },
+  {
+   "id": "me2202014",
+   "year": 2020,
+   "number": "14",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Examine and use the geometric interpretation of multiplying complex numbers, including rotation and dilation on the complex plane, with and without graphing applications | Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive an expression for velocity as a function of time of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed | Year 12 / The nature of proof / Further proof by mathematical induction / Prove inequality results using mathematical induction | Year 12 / The nature of proof / Illustrations of proofs / Use proof by contradiction to prove the truth of mathematical statements",
+   "text": "Let $z_1$ be a complex number and let $z_2=e^{\\frac{i\\pi}{3}}z_1$. The diagram shows points $A$ and $B$ which represent $z_1$ and $z_2$, respectively, in the Argand plane.\nExplain why triangle $OAB$ is an equilateral triangle.\nProve that $z_1^2+z_2^2=z_1z_2$.\nA particle starts from rest and falls through a resisting medium so that its acceleration, in $\\mathrm{m/s^2}$, is modelled by $a=10\\left(1-(kv)^2\\right)$, where $v$ is the velocity of the particle in $\\mathrm{m/s}$ and $k=0.01$. Find the velocity of the particle after 5 seconds.\nProve by mathematical induction that, for $n\\geq2$, $\\frac{1}{2^2}+\\frac{1}{3^2}+\\cdots+\\frac{1}{n^2}<\\frac{n-1}{n}$.\nProve that for any integer $n>1$, $\\log_n(n+1)$ is irrational."
+  },
+  {
+   "id": "me2202015",
+   "year": 2020,
+   "number": "15",
+   "marks": 13,
+   "type": "short_answer",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Recognise that an implication is equivalent to its contrapositive, that is , and use this to prove results | Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors",
+   "text": "In the set of integers, let $P$ be the proposition: 'If $k+1$ is divisible by 3, then $k^3+1$ is divisible by 3'.\nProve that the proposition $P$ is true.\nWrite down the contrapositive of the proposition $P$.\nWrite down the converse of the proposition $P$ and state, with reasons, whether this converse is true or false.\nThe point $C$ divides the interval $AB$ so that $\\frac{CB}{AC}=\\frac{m}{n}$. The position vectors of $A$ and $B$ are $\\tilde{a}$ and $\\tilde{b}$ respectively, as shown in the diagram.\nLet $OPQR$ be a parallelogram with $\\overrightarrow{OP}=\\tilde{p}$ and $\\overrightarrow{OR}=\\tilde{r}$. The point $S$ is the midpoint of $QR$ and $T$ is the intersection of $PR$ and $OS$, as shown in the diagram.\nShow that $\\overrightarrow{AC}=\\frac{n}{m+n}(\\tilde{b}-\\tilde{a})$.\nProve that $\\overrightarrow{OC}=\\frac{m}{m+n}\\tilde{a}+\\frac{n}{m+n}\\tilde{b}$.\nShow that $\\overrightarrow{OT}=\\frac{2}{3}\\tilde{r}+\\frac{1}{3}\\tilde{p}$.\nUsing parts (ii) and (iii), or otherwise, prove that $T$ is the point that divides the interval $PR$ in the ratio $2:1$."
+  },
+  {
+   "id": "me2202016",
+   "year": 2020,
+   "number": "16",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Modelling motion without resistance / Solve motion problems involving a single smooth pulley and a smooth inclined plane where a body hangs vertically or lies on a smooth horizontal or inclined plane | Year 12 / Further integration / Derive and use recurrence relations involving integration by parts | Year 12 / The nature of proof / Proof of inequalities / Prove results involving inequalities using previously obtained or known inequalities",
+   "text": "Two masses, $2m\\ \\mathrm{kg}$ and $4m\\ \\mathrm{kg}$, are attached by a light string. The string is placed over a smooth pulley as shown. The two masses are at rest before being released and $v$ is the velocity of the larger mass at time $t$ seconds after they are released.\nThe force due to air resistance on each mass has magnitude $kv$, where $k$ is a positive constant.\nShow that $\\frac{dv}{dt}=\\frac{gm-kv}{3m}$.\nGiven that $v<\\frac{gm}{k}$, show that when $t=\\frac{3m}{k}\\ln2$, the velocity of the larger mass is $\\frac{gm}{2k}$.\nLet $I_n=\\int_0^{\\frac{\\pi}{2}}\\sin^{2n+1}(2\\theta)\\,d\\theta$, $n=0,1,\\ldots$\nLet $J_n=\\int_0^1x^n(1-x)^n\\,dx$, $n=0,1,2,\\ldots$\nProve that $I_n=\\frac{2n}{2n+1}I_{n-1}$, $n\\geq1$.\nDeduce that $I_n=\\frac{2^{2n}(n!)^2}{(2n+1)!}$.\nUsing the result of part (ii), or otherwise, show that $J_n=\\frac{(n!)^2}{(2n+1)!}$.\nProve that $\\left(2^n n!\\right)^2\\leq(2n+1)!$."
+  },
+  {
+   "id": "me2202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors",
+   "text": "Four cubes are placed in a line as shown on the diagram.\nWhich of the following vectors is equal to $\\overrightarrow{AB}+\\overrightarrow{CQ}$?\n$\\overrightarrow{AQ}$\n$\\overrightarrow{CP}$\n$\\overrightarrow{PB}$\n$\\overrightarrow{RA}$"
+  },
+  {
+   "id": "me2202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by parts, including problems where more than one application is required",
+   "text": "Which expression is equal to $\\int x^{5}e^{7x}\\,dx$?\n$\\frac{1}{7}x^{5}e^{7x}-\\frac{5}{7}\\int x^{4}e^{7x}\\,dx$\n$\\frac{1}{7}x^{5}e^{7x}-\\frac{5}{7}\\int x^{5}e^{7x}\\,dx$\n$\\frac{5}{7}x^{4}e^{7x}-\\frac{5}{7}\\int x^{4}e^{7x}\\,dx$\n$\\frac{5}{7}x^{4}e^{7x}-\\frac{5}{7}\\int x^{5}e^{7x}\\,dx$"
+  },
+  {
+   "id": "me2202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Identify as one possible vector equation for the straight line through points and , where and are the position vectors of and respectively, noting its equivalence with the form , and establish the correspondence between the value of and the position of the point specified by it along the line",
+   "text": "Which of the following is a vector equation of the line joining the points $A(4,2,5)$ and $B(-2,2,1)$?"
+  },
+  {
+   "id": "me2202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Define the contrapositive of ‘if then ’ as ‘if not then not ’, denoted",
+   "text": "Consider the statement:\n‘For all integers $n$, if $n$ is a multiple of 6, then $n$ is a multiple of 2’.\nWhich of the following is the contrapositive of the statement?\nThere exists an integer $n$ such that $n$ is a multiple of 6 and not a multiple of 2.\nThere exists an integer $n$ such that $n$ is a multiple of 2 and not a multiple of 6.\nFor all integers $n$, if $n$ is not a multiple of 2, then $n$ is not a multiple of 6.\nFor all integers $n$, if $n$ is not a multiple of 6, then $n$ is not a multiple of 2."
+  },
+  {
+   "id": "me2202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / Proof of inequalities / Prove and use results for numbers: if then ; if then and vice versa; if then and vice versa; if and then ; if and then ; if and then ; if and then",
+   "text": "Which of the following statements is FALSE?\n$\\forall\\, a,b\\in\\mathbb{R},\\quad a<b\\ \\Rightarrow\\ a^{3}<b^{3}$\n$\\forall\\, a,b\\in\\mathbb{R},\\quad a<b\\ \\Rightarrow\\ e^{-a}>e^{-b}$\n$\\forall\\, a,b\\in(0,+\\infty),\\quad a<b\\ \\Rightarrow\\ \\ln a<\\ln b$\n$\\forall\\, a,b\\in\\mathbb{R},\\ \\text{with }a,b\\ne 0,\\quad a<b\\ \\Rightarrow\\ \\frac{1}{a}>\\frac{1}{b}$"
+  },
+  {
+   "id": "me2202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Solve problems involving complex conjugate roots of polynomial equations with real coefficients",
+   "text": "Which polynomial could have $2+i$ as a zero, given that $k$ is a real number?\n$x^{3}-4x^{2}+kx$\n$x^{3}-4x^{2}+kx+5$\n$x^{3}-5x^{2}+kx$\n$x^{3}-5x^{2}+kx+5$"
+  },
+  {
+   "id": "me2202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Examine and identify curves given as vector equations in two dimensions and three dimensions using graphing applications",
+   "text": "Which diagram best shows the curve described by the position vector $\\underline{r}(t)=-5\\cos(t)\\,\\underline{i}+5\\sin(t)\\,\\underline{j}+t\\,\\underline{k}$ for $0\\le t\\le4\\pi$?\nCurve of two open loops staying near the $z=0$ plane, one loop above and one below the origin, with no steady rise in $z$ to $4\\pi$.\nTwo open loops near the $z=0$ plane shifted toward positive $y$ and positive $x$, starting near the origin, with no helix rising to $z\\approx13$.\nTwo-turn helix rising to $z\\approx13$ but winding clockwise when viewed from above, from $-x$ toward $-y$, opposite to the required path.\nTwo-turn helix starting at $(-5,0,0)$, rising steadily to $z=4\\pi\\approx13$, winding anticlockwise from $-x$ toward $+y$ through $(0,5)$, $(5,0)$, $(0,-5)$ and back to $(-5,0)$."
+  },
+  {
+   "id": "me2202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Derive expressions for acceleration: , where is a function of , as well as and , where is a function of",
+   "text": "A particle is travelling from $A$ on the curve joining $A$ to $B$. At a particular time, the particle is at point $P$ and has velocity $\\underline{v}$, as shown in the diagram. The speed of the particle is increasing. Which of the following diagrams shows an acceleration, $\\underline{a}$, which would allow the particle to follow the curve to $B$?\nAcceleration $a$ at $P$ pointing vertically upward.\nAcceleration $a$ at $P$ pointing horizontally to the left.\nAcceleration $a$ at $P$ pointing vertically downward.\nAcceleration $a$ at $P$ pointing horizontally to the right, i.e. toward the inside of the curve with a component along $v$ so speed increases."
+  },
+  {
+   "id": "me2202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / Illustrations of proofs / Use examples and counterexamples to test the truth of mathematical statements",
+   "text": "Four cards have either RED or BLACK on one side and either WIN or TRY AGAIN on the other side. Sam places the four cards on the table as shown below: Card 1 shows WIN, Card 2 shows BLACK, Card 3 shows TRY AGAIN, Card 4 shows RED. A statement is made: ‘If a card is RED, then it has WIN written on the other side’. Sam wants to check if the statement is true by turning over the minimum number of cards. Which cards should Sam turn over?\n1 and 4\n3 and 4\n1, 2 and 4\n1, 3 and 4"
+  },
+  {
+   "id": "me2202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Recognise that a complex number can be represented as a vector, where the magnitude and direction of the vector are determined by the modulus and argument of the complex number respectively",
+   "text": "Consider the two non-zero complex numbers $z$ and $w$ as vectors. Which of the following expressions is the projection of $z$ onto $w$?\n$\\frac{\\mathrm{Re}(zw)}{|w|}w$\n$\\left|\\frac{z}{w}\\right|w$\n$\\mathrm{Re}\\left(\\frac{z}{w}\\right)w$\n$\\frac{\\mathrm{Re}(z)}{|w|}w$"
+  },
+  {
+   "id": "me2202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Use multiplication, division and powers of complex numbers in polar form and interpret these geometrically | Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication () | Year 12 / Further integration / Decompose rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors into partial fractions",
+   "text": "The complex numbers $z=2e^{i\\pi/2}$ and $w=6e^{i\\pi/6}$ are given. Find the value of $zw$, giving the answer in the form $re^{i\\theta}$.\nFind $\\sum_{n=1}^{5}(i)^{n}$.\nFind the angle between the vectors $\\underline{a}=\\begin{pmatrix}2\\\\0\\\\4\\end{pmatrix}$ and $\\underline{b}=\\begin{pmatrix}-3\\\\1\\\\2\\end{pmatrix}$, giving the angle in degrees correct to 1 decimal place.\nFind the two square roots of $-i$, giving the answers in the form $x+iy$, where $x$ and $y$ are real numbers.\nHence, or otherwise, solve $z^{2}+2z+1+i=0$ giving your solutions in the form $a+ib$ where $a$ and $b$ are real numbers.\nThe complex numbers $z=5+i$ and $w=2-4i$ are given. Find $\\frac{\\bar z}{w}$, giving your answer in Cartesian form.\nExpress $\\frac{3x^{2}-5}{(x-2)(x^{2}+x+1)}$ as a sum of partial fractions over $\\mathbb{R}$."
+  },
+  {
+   "id": "me2202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further integration / Integrate rational functions by completing the square on a quadratic denominator | Year 12 / Further work with vectors / Vector equations of lines and curves / Determine whether two distinct lines and in three dimensions intersect, and if so, find the unique value of either or corresponding to the point of intersection and determine its coordinates | Year 12 / The nature of proof / Further proof by mathematical induction / Prove inequality results using mathematical induction",
+   "text": "Find $\\int\\frac{2x+3}{x^{2}+2x+2}\\,dx$.\nConsider Statement A. Statement A: ‘If $n^{2}$ is even, then $n$ is even.’\nWhat is the converse of Statement A?\nShow that the converse of Statement A is true.\nTwo lines are given by $\\underline{r}_{1}=\\begin{pmatrix}-2\\\\1\\\\3\\end{pmatrix}+\\lambda\\begin{pmatrix}1\\\\0\\\\2\\end{pmatrix}$ and $\\underline{r}_{2}=\\begin{pmatrix}4\\\\-2\\\\q\\end{pmatrix}+\\mu\\begin{pmatrix}p\\\\3\\\\-1\\end{pmatrix}$, where $p$ and $q$ are real numbers. These lines intersect and are perpendicular. Find the values of $p$ and $q$.\nProve by mathematical induction that $\\sqrt{n!}>2^{n}$, for integers $n\\ge9$.\nThe diagram shows the pyramid $ABCDS$ where $ABCD$ is a square. The diagonals of the square bisect each other at $H$.\nShow that $\\overrightarrow{HA}+\\overrightarrow{HB}+\\overrightarrow{HC}+\\overrightarrow{HD}=\\underline{0}$.\nLet $G$ be the point such that $\\overrightarrow{GA}+\\overrightarrow{GB}+\\overrightarrow{GC}+\\overrightarrow{GD}+\\overrightarrow{GS}=\\underline{0}$. Using part (i), or otherwise, show that $4\\\\overrightarrow{GH}+\\\\overrightarrow{GS}=\\underline{0}$.\nFind the value of $\\\\lambda$ such that $\\\\overrightarrow{HG}=\\\\lambda\\\\overrightarrow{HS}$."
+  },
+  {
+   "id": "me2202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of complex numbers and their location on the complex plane | Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given | Year 12 / Further integration / Derive and use recurrence relations involving integration by parts",
+   "text": "The location of the complex number $a+ib$ is shown on the diagram on page 1 of the Question 13 Writing Booklet. On the diagram provided in the writing booklet, indicate the locations of all of the fourth roots of the complex number $a+ib$.\nUse an appropriate substitution to evaluate $\\int_{\\sqrt{10}}^{\\sqrt{13}}x^{3}\\sqrt{x^{2}-9}\\,dx$.\nThe integral $I_{n}$ is defined by $I_{n}=\\\\int_{1}^{e}(\\\\ln x)^{n}\\\\,dx$ for integers $n\\\\ge0$. Show that $I_{n}=e-nI_{n-1}$ for $n\\\\ge1$.\nThe diagram shows two regions. Region $A$ is bounded by $y=1$ and $x^{2}+y^{2}=1$ between $x=0$ and $x=1$. Region $B$ is bounded by $y=1$ and $y=\\\\ln x$ between $x=1$ and $x=e$.\nThe volume of the solid created when the region between the curve $y=f(x)$ and the $x$-axis, between $x=a$ and $x=b$, is rotated about the $x$-axis is given by $V=\\\\pi\\\\int_{a}^{b}[f(x)]^{2}dx$. The volume for region $A$ is $V_{A}$ and for region $B$ is $V_{B}$. Using part (i), or otherwise, show that the ratio $V_{A}:V_{B}$ is $1:3$.\nAn object is moving in simple harmonic motion along the $x$-axis. The acceleration of the object is given by $\\\\ddot{x}=-4(x-3)$ where $x$ is its displacement from the origin, measured in metres, after $t$ seconds. Initially, the object is 5.5 metres to the right of the origin and moving towards the origin. The object has a speed of $8\\\\,\\\\mathrm{m\\\\,s^{-1}}$ as it passes through the origin.\nBetween which two values of $x$ is the particle oscillating?\nFind the first value of $t$ for which $x=0$, giving the answer correct to 2 decimal places."
+  },
+  {
+   "id": "me2202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given | Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Recognise that forces are vector quantities, analyse concurrent forces on a body by resolving them into perpendicular components and use vector projections to determine how much of a given force acts in a given direction in both 2D and 3D contexts | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Use de Moivre’s theorem to derive trigonometric identities",
+   "text": "Evaluate $\\\\int_{0}^{\\\\pi/2}\\\\frac{1}{3+5\\\\cos x}\\\\,dx$.\nAn object of mass $5\\\\ \\\\mathrm{kg}$ is on a slope that is inclined at an angle of $60^{\\\\circ}$ to the horizontal. The acceleration due to gravity is $g\\\\ \\\\mathrm{m\\\\,s^{-2}}$ and the velocity of the object down the slope is $v\\\\ \\\\mathrm{m\\\\,s^{-1}}$. As well as the force due to gravity, the object is acted on by two forces, one of magnitude $2v$ newtons and one of magnitude $2v^{2}$ newtons, both acting up the slope.\nShow that the resultant force down the slope is $\\\\frac{5\\\\sqrt3}{2}g-2v-2v^{2}$ newtons.\nThere is one value of $v$ such that the object will slide down the slope at a constant speed. Find this value of $v$ in $\\\\mathrm{m\\\\,s^{-1}}$, correct to 1 decimal place, given that $g=10$.\nUsing de Moivre’s theorem and the binomial expansion of $(\\\\cos\\\\theta+i\\\\sin\\\\theta)^{5}$, or otherwise, show that $\\\\cos5\\\\theta=16\\\\cos^{5}\\\\theta-20\\\\cos^{3}\\\\theta+5\\\\cos\\\\theta$.\nBy using part (i), or otherwise, show that $\\\\mathrm{Re}\\\\left(e^{i\\\\pi/10}\\\\right)=\\\\sqrt{\\\\frac{5+\\\\sqrt5}{8}}$."
+  },
+  {
+   "id": "me2202115",
+   "year": 2021,
+   "number": "15",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / The nature of proof / Proof of inequalities / Establish and use the relationship between the arithmetic mean and geometric mean for two non-negative numbers, that is | Year 12 / The nature of proof / Illustrations of proofs / Prove results involving integers | Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Solve vertical resisted motion problems using the expressions derived for acceleration, velocity and displacement, including finding the maximum height reached by a particle projected vertically upwards and the time taken to reach this maximum height, and finding the time taken for a particle to return to the level from which it was projected and its terminal velocity",
+   "text": "For all non-negative real numbers $x$ and $y$, $\\\\sqrt{xy}\\\\le\\\\frac{x+y}{2}$. (Do NOT prove this.)\nUsing this fact, show that for all non-negative real numbers $a$, $b$ and $c$, $\\\\sqrt{abc}\\\\le\\\\frac{a^{2}+b^{2}+2c}{4}$.\nUsing part (i), or otherwise, show that for all non-negative real numbers $a$, $b$ and $c$, $\\\\sqrt{abc}\\\\le\\\\frac{a^{2}+b^{2}+c^{2}+a+b+c}{6}$.\nFor integers $n\\\\ge1$, the triangular numbers $t_{n}$ are defined by $t_{n}=\\\\frac{n(n+1)}{2}$, giving $t_{1}=1$, $t_{2}=3$, $t_{3}=6$, $t_{4}=10$ and so on. For integers $n\\\\ge1$, the hexagonal numbers $h_{n}$ are defined by $h_{n}=2n^{2}-n$, giving $h_{1}=1$, $h_{2}=6$, $h_{3}=15$, $h_{4}=28$ and so on.\nShow that the triangular numbers $t_{1}$, $t_{3}$, $t_{5}$, and so on, are also hexagonal numbers.\nShow that the triangular numbers $t_{2}$, $t_{4}$, $t_{6}$, and so on, are not hexagonal numbers.\nAn object of mass $1\\\\ \\\\mathrm{kg}$ is projected vertically upwards with an initial velocity of $u\\\\ \\\\mathrm{m/s}$. It experiences air resistance of magnitude $kv^{2}$ newtons where $v$ is the velocity of the object, in $\\\\mathrm{m/s}$, and $k$ is a positive constant. The height of the object above its starting point is $x$ metres. The time since projection is $t$ seconds and acceleration due to gravity is $g\\\\ \\\\mathrm{m/s^{2}}$.\nShow that the time for the object to reach its maximum height is $\\\\frac{1}{\\\\sqrt{gk}}\\\\arctan\\\\left(u\\\\sqrt{\\\\frac{k}{g}}\\\\right)$ seconds.\nFind an expression for the maximum height reached by the object, in terms of $k$, $g$ and $u$.\nProve that $2^{n}+3^{n}\\\\ne5^{n}$ for all integers $n\\\\ge2$."
+  },
+  {
+   "id": "me2202116",
+   "year": 2021,
+   "number": "16",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Prove and use the Cauchy–Schwarz inequality for vectors: | Year 12 / Applications of calculus to mechanics / Modelling motion without resistance / Derive the equations of motion for a particle travelling, without resistance, in a straight line with constant and variable acceleration and use the equations of motion to solve problems | Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph regions associated with lines, rays and circles defined using complex numbers, giving a geometrical description of any such curves or regions, and using circle geometry theorems where necessary",
+   "text": "The point $P(x,y,z)$ lies on the sphere of radius 1 centred at the origin $O$. Using the position vector of $P$, $\\\\overrightarrow{OP}=x\\\\underline{i}+y\\\\underline{j}+z\\\\underline{k}$, and the triangle inequality, or otherwise, show that $|x|+|y|+|z|\\\\ge1$.\nGiven the vectors $\\\\underline{a}=\\\\begin{pmatrix}a_{1}\\\\a_{2}\\\\a_{3}\\\\end{pmatrix}$ and $\\\\underline{b}=\\\\begin{pmatrix}b_{1}\\\\b_{2}\\\\b_{3}\\\\end{pmatrix}$, show that $|a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}|\\\\le\\\\sqrt{a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}\\\\sqrt{b_{1}^{2}+b_{2}^{2}+b_{3}^{2}}$.\nAs in part (i), the point $P(x,y,z)$ lies on the sphere of radius 1 centred at the origin $O$. Using part (ii), or otherwise, show that $|x|+|y|+|z|\\\\le\\\\sqrt3$.\nA particle which is projected from the origin with initial speed $u\\\\ \\\\mathrm{m\\\\,s^{-1}}$ at an angle of $\\\\theta$ to the positive $x$-axis lands on the $x$-axis, as shown in the diagram. The particle is subject to an acceleration due to gravity of $g\\\\ \\\\mathrm{m\\\\,s^{-2}}$.\nThe position vector of the particle, $\\\\underline{r}(t)$, where $t$ is the time in seconds after the particle is projected, is given by $\\\\underline{r}(t)=\\\\begin{pmatrix}ut\\\\cos\\\\theta\\\\\\\\-\\\\frac{gt^{2}}{2}+ut\\\\sin\\\\theta\\\\end{pmatrix}$. (Do NOT prove this.) For some value(s) of $\\\\theta$ there will be two times during the time of flight when the particle’s position vector is perpendicular to its velocity vector. Find the value(s) of $\\\\theta$ for which this occurs, justifying that both times occur during the time of flight.\nSketch the region of the complex plane defined by $\\\\mathrm{Re}(z)\\\\ge\\\\mathrm{Arg}(z)$ where $\\\\mathrm{Arg}(z)$ is the principal argument of $z$."
+  },
+  {
+   "id": "me2202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph regions associated with lines, rays and circles defined using complex numbers, giving a geometrical description of any such curves or regions, and using circle geometry theorems where necessary",
+   "text": "Let $R$ be the region in the complex plane defined by $1 < \\mathrm{Re}(z) \\leq 3$ and $\\frac{\\pi}{6} \\leq \\mathrm{Arg}(z) < \\frac{\\pi}{3}$. Which diagram best represents the region $R$?\nShaded region with Re=1 dashed vertical, Re=3 solid vertical, Arg=pi/6 solid, Arg=pi/3 dashed\nShaded region with Re=1 solid vertical, Re=3 dashed vertical, Arg=pi/6 solid, Arg=pi/3 dashed\nShaded region with Re=1 dashed vertical, Re=3 solid vertical, Arg=pi/6 dashed, Arg=pi/3 solid\nShaded region with Re=1 solid vertical, Re=3 dashed vertical, Arg=pi/6 dashed, Arg=pi/3 solid"
+  },
+  {
+   "id": "me2202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Use the formal language of proof, including the terms ‘statement’, ‘proposition’, ‘implication’, ‘converse’, ‘negation’, ‘contradiction’, ‘counterexample’, ‘equivalence’ and ‘contrapositive’",
+   "text": "The following proof aims to establish that $-4 = 0$. Let $a = -4$. Line 1: $a^2 = 16$ and $4a + 4 = -12$. Line 2: $a^2 + 4a + 4 = 4$. Line 3: $(a+2)^2 = 2^2$. Line 4: $a + 2 = 2$, so $a = 0$. At which line is the implication incorrect?\nLine 1\nLine 2\nLine 3\nLine 4"
+  },
+  {
+   "id": "me2202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Define the contrapositive of ‘if then ’ as ‘if not then not ’, denoted",
+   "text": "Let $A, B, P$ be three points in three-dimensional space with $A \\\\neq B$. Statement: If $P$ is on the line $AB$, then there exists a real number $\\\\lambda$ such that $\\\\overrightarrow{AP} = \\\\lambda \\\\overrightarrow{AB}$. Which is the contrapositive?\nIf for all real numbers λ, AP→=λAB→, then P is on the line AB.\nIf for all real numbers λ, AP→≠λAB→, then P is not on the line AB.\nIf there exists λ with AP→=λAB→, then P is on the line AB.\nIf there exists λ with AP→≠λAB→, then P is not on the line AB."
+  },
+  {
+   "id": "me2202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further integration / Integrate rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors, using partial fraction decomposition",
+   "text": "Of the following expressions, which one need NOT contain a term involving a logarithm in its anti-derivative?"
+  },
+  {
+   "id": "me2202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given",
+   "text": "If $\\int_a^x f(t)\\,dt = g(x)$, which of the following is a primitive of $f(x)g(x)$?"
+  },
+  {
+   "id": "me2202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define the complex conjugate of a complex number as and use it to solve problems",
+   "text": "It is known that a particular complex number $z$ is NOT a real number. Which of the following could be true for this number $z$?\n$\\bar{z} = iz$\n$\\bar{z} = |z^2|$\n$\\mathrm{Re}(iz) = \\mathrm{Im}(z)$\n$\\mathrm{Arg}(z^3) = \\mathrm{Arg}(z)$"
+  },
+  {
+   "id": "me2202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / Illustrations of proofs / Use examples and counterexamples to test the truth of mathematical statements",
+   "text": "Consider $P$: For all integers $n \\\\geq 1$, if $n$ is a prime number then $\\\\frac{n(n+1)}{2}$ is a prime number. Which of the following is true about this statement and its converse?\nThe statement P and its converse are both true.\nThe statement P and its converse are both false.\nThe statement P is true and its converse is false.\nThe statement P is false and its converse is true."
+  },
+  {
+   "id": "me2202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Projectiles and resisted motion / Establish and use the equations for acceleration for a projectile moving under the influence of gravity, projected at an angle to the horizontal, and subject to a resistance whose magnitude is proportional to the speed, to solve problems",
+   "text": "Projectile mass $m$, frictional force magnitude proportional to square of speed $v$ with constant $k>0$, position $(x,y)^T$, $g$: which equation models the motion?"
+  },
+  {
+   "id": "me2202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors",
+   "text": "Let $A$ and $B$ be distinct points in three-dimensional space, $M$ the midpoint of $AB$. $S_1$: $\\\\overrightarrow{AP} \\\\cdot \\\\overrightarrow{BP} = 0$. $S_2$: $|\\\\overrightarrow{AN}| = |\\\\overrightarrow{MN}|$. Intersection is circle $S$. Radius?"
+  },
+  {
+   "id": "me2202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Define the terminal velocity of a particle falling through a medium as the constant velocity the particle reaches when the resistance of the medium prevents further acceleration",
+   "text": "A particle moves vertically in a resistive medium under gravity. Resistive force proportional to velocity, initial speed NOT zero. Which is always true?\nIf initially moving downwards, its speed will increase.\nIf initially moving downwards, its speed will decrease.\nIf initially moving upwards, its speed will eventually approach a terminal speed.\nIf initially moving upwards, its speed will not eventually approach a terminal speed."
+  },
+  {
+   "id": "me2202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by parts, including problems where more than one application is required",
+   "text": "(a) Express $\\frac{3-i}{2+i}$ in the form $x+iy$, where $x$ and $y$ are real numbers.\n(b) Evaluate $\\int \\sin^3 2x \\cos 2x \\, dx$.\n(c)\n(i) Write the complex number $-\\sqrt{3}+i$ in exponential form.\n(ii) Hence, find the exact value of $(-\\sqrt{3}+i)^{10}$ in the form $x+iy$.\n(d) Triangle in 3D with $A(1,-1,2)$, $B(0,2,-1)$, $C(2,1,1)$. Find $\\\\angle ABC$ to nearest degree.\n(e) Let $\\\\ell_1: \\\\begin{pmatrix}x\\\\y\\\\end{pmatrix}=\\\\begin{pmatrix}-1\\\\7\\\\end{pmatrix}+\\\\lambda\\\\begin{pmatrix}3\\\\2\\\\end{pmatrix}$, $\\\\lambda\\\\in\\\\mathbb{R}$. $\\\\ell_2$ through $A(-6,5)$ parallel to $\\\\ell_1$. Find $\\\\ell_2$: $y=mx+c$.\n(f) Using $t=\\\\tan\\\\frac{x}{2}$, find $\\\\int \\\\frac{dx}{1+\\\\cos x-\\\\sin x}$."
+  },
+  {
+   "id": "me2202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive an expression for velocity as a function of displacement of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed",
+   "text": "(a) For $a,b\\\\geq 0$ prove $\\\\frac{a+b}{2} \\\\geq \\\\sqrt{ab}$.\n(b) Particle acceleration $a=12-6t$, starts from rest at origin. Position when velocity is maximum?\n(c) Particle mass 1 kg on $x$-axis, starts at origin speed $u$ to the right, resistive force magnitude $v+3v^2$ N, $v$ speed after $t$ s, never at rest.\n(i) Show $\\\\frac{dv}{dx}=-(1+3v)$.\n(ii) Hence, or otherwise, find $x$ as a function of $v$.\n(d) Using partial fractions, evaluate $\\\\int_2^n \\\\frac{4+x}{(1-x)(4+x^2)}dx$ as $\\\\frac{1}{2}\\\\ln\\\\left(\\\\frac{f(n)}{8(n-1)^2}\\\\right)$.\n(e) Given $z=e^{i\\\\theta}$, show $w=\\\\frac{z^2-1}{z^2+1}$ is purely imaginary."
+  },
+  {
+   "id": "me2202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of complex numbers and their location on the complex plane",
+   "text": "(a) Prove for $n\\\\geq 3$ integers, if $2^n-1$ is prime then $n$ cannot be even.\n(b) $a_1=\\\\sqrt{2}$, $a_2=\\\\sqrt{2+\\\\sqrt{2}}$, $a_3=\\\\sqrt{2+\\\\sqrt{2+\\\\sqrt{2}}}$ etc., $a_{n+1}^2=2+a_n$. Prove by induction $a_n=2\\\\cos\\\\frac{\\\\pi}{2^{n+1}}$ for $n\\\\geq 1$.\n(c) $z^5+1=0$, $z$ complex.\n(i) Solve $z^5+1=0$ by 5th roots of $-1$.\n(ii) Show if $z^5+1=0$, $z\\\\neq -1$ then $u=z+1/z$ solves $u^2-u-1=0$.\n(iii) Hence find $\\\\cos\\\\frac{3\\\\pi}{5}$ exactly."
+  },
+  {
+   "id": "me2202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further integration / Derive and use recurrence relations involving integration by parts",
+   "text": "The diagram shows the tetrahedron with vertices A, B, C and S. SK→=(1/4)SB→+(1/3)SC→, L is SK∩BC.\n(a)\n(i) Non-parallel $\\\\vec{u},\\\\vec{v}$ with $\\\\lambda\\\\vec{u}+\\\\mu\\\\vec{v}=\\\\vec{0}$. Show $\\\\lambda=\\\\mu=0$.\n(ii) $\\\\lambda_1\\\\vec{u}+\\\\mu_1\\\\vec{v}=\\\\lambda_2\\\\vec{u}+\\\\mu_2\\\\vec{v}$. Show $\\\\lambda_1=\\\\lambda_2$, $\\\\mu_1=\\\\mu_2$.\n(iii) Determine $L$ by showing $\\\\overrightarrow{BL}=\\\\frac{4}{7}\\\\overrightarrow{BC}$.\n(iv) $\\\\overrightarrow{AP}=-6\\\\overrightarrow{AB}-8\\\\overrightarrow{AC}$. Does $P$ lie on $AL$? Justify.\n(b) $J_n=\\\\int_0^1 x^n e^{-x}dx$, $n\\\\geq 0$ integer.\n(i) Show $J_0=1-\\\\frac{1}{e}$.\n(ii) Show $J_n \\\\leq \\\\frac{1}{n+1}$.\n(iii) Show $J_n=nJ_{n-1}-\\\\frac{1}{e}$, $n\\\\geq 1$.\n(iv) Using (i),(iii), show $J_n=n!-\\\\frac{n!}{e}\\\\sum_{r=0}^n\\\\frac{1}{r!}$ for $n\\\\geq 0$.\n(v) Using (ii),(iv) prove $e=\\\\lim_{n\\\\to\\\\infty}\\\\sum_{r=0}^n\\\\frac{1}{r!}$."
+  },
+  {
+   "id": "me2202215",
+   "year": 2022,
+   "number": "15",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Recognise that forces are vector quantities, analyse concurrent forces on a body by resolving them into perpendicular components and use vector projections to determine how much of a given force acts in a given direction in both 2D and 3D contexts",
+   "text": "(a) Machine lifted by two ropes, horizontal components balanced, constant vertical velocity. Room height $h$. $P$ on machine, $C$ on ceiling $d$ left of $P$, vertical distance $\\\\ell$, angle $\\\\theta$ with horizontal. $F$ on floor $2d$ right of $P$, angle $\\\\phi$. $T_1,T_2,M,g$.\n(i) Show $\\\\tan\\\\theta = \\\\tan\\\\phi + \\\\frac{Mg}{T_2\\\\cos\\\\phi}$ by resolving at $P$.\n(ii) Show $P$ cannot be lifted to $2h/3$ above floor.\n(b) Piston SHM between 0.17 m and 0.05 m. Mass 0.8 kg, 40 cycles/s. Resultant force for maximum acceleration to nearest newton.\n(c) Using $x=\\\\tan^2\\\\theta$, evaluate $\\\\int_0^1 \\\\sin^{-1}\\\\sqrt{\\\\frac{x}{1+x}}\\\\,dx$.\n(d) $|z-4/z|=2$. Show $|z| \\\\leq \\\\sqrt{5}+1$ using triangle inequality."
+  },
+  {
+   "id": "me2202216",
+   "year": 2022,
+   "number": "16",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Derive an expression for displacement as a function of time for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed",
+   "text": "(a) Square vertices $5+5i$, $5-5i$, $-5-5i$, $-5+5i$. $z_A=5+i$, $z_B$, $z_C$ on square form equilateral triangle as diagrammed. Find $z_B$.\n(b) Projectile mass $M$, launched vertically up, $v_0<100$, resistance $0.1Mv$, $g=10$, lands 7 s after launch. Find $v_0$ to 1 d.p.\n(c) Given $x_1\\\\cdots x_n/A^n \\\\leq 1$ for positive $x_i$ with mean $A$ (Do NOT prove). Prism $a,b,c$, area $S$.\n(i) Show $abc \\\\leq (S/6)^{3/2}$.\n(ii) Using (i), show cube has maximum volume for fixed $S$.\n(d) Find all $z_1,z_2,z_3$ with $|z_1|=|z_2|=|z_3|$, $z_1+z_2+z_3=1$, $z_1z_2z_3=1$."
+  },
+  {
+   "id": "me2202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define and perform complex number addition, subtraction and multiplication, with and without digital tools",
+   "text": "Which of the following is equal to $(a+ib)^3$?"
+  },
+  {
+   "id": "me2202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Define and use the converse of ‘if then ’ as ‘if then ’, denoted",
+   "text": "Consider the statement: ‘If an animal is a herbivore, then it does not eat meat.’ Which of the following is the converse of this statement?\nIf an animal is a herbivore, then it eats meat.\nIf an animal is not a herbivore, then it eats meat.\nIf an animal eats meat, then it is not a herbivore.\nIf an animal does not eat meat, then it is a herbivore."
+  },
+  {
+   "id": "me2202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the complex conjugate of complex numbers:,",
+   "text": "A complex number $z$ lies on the unit circle in the complex plane, as shown in the diagram. Which of the following complex numbers is equal to $\\bar{z}$?"
+  },
+  {
+   "id": "me2202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Use the quantifiers ‘for all’ , and ‘there exists’ in formulating statements",
+   "text": "Consider the statement about real numbers: ‘Whichever positive number $r$ you pick, it is possible to find a number $x$ greater than 1 such that $\\frac{\\ln x}{x^3}<r$.’ When this statement is written in the formal language of proof, which of the following is obtained?\n$\\forall x>1\\ \\exists r>0\\ \\frac{\\ln x}{x^3}<r$\n$\\exists x>1\\ \\forall r>0\\ \\frac{\\ln x}{x^3}<r$\n$\\forall r>0\\ \\exists x>1\\ \\frac{\\ln x}{x^3}<r$\n$\\exists r>0\\ \\forall x>1\\ \\frac{\\ln x}{x^3}<r$"
+  },
+  {
+   "id": "me2202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Determine whether two distinct lines and in three dimensions intersect, and if so, find the unique value of either or corresponding to the point of intersection and determine its coordinates",
+   "text": "Which of the following is a true statement about the lines $\\ell_1$ and $\\ell_2$?\n$\\ell_1$ and $\\ell_2$ are the same line.\n$\\ell_1$ and $\\ell_2$ are not parallel and they intersect.\n$\\ell_1$ and $\\ell_2$ are parallel and they do not intersect.\n$\\ell_1$ and $\\ell_2$ are not parallel and they do not intersect."
+  },
+  {
+   "id": "me2202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Describe simple harmonic motion using displacement, velocity, acceleration, force, amplitude and period",
+   "text": "Which of the following functions does NOT describe simple harmonic motion?"
+  },
+  {
+   "id": "me2202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the argument of complex numbers: , and where is an integer",
+   "text": "Which of the following statements about complex numbers is true?\nFor all real numbers $x,y,\\theta$ with $x\\ne0$, $\\tan\\theta=\\frac{y}{x}\\Rightarrow x+iy=re^{i\\theta}$, for some real number $r$.\nFor all non-zero complex numbers $z_1$ and $z_2$, $\\mathrm{Arg}(z_1)=\\theta_1$ and $\\mathrm{Arg}(z_2)=\\theta_2\\Rightarrow\\mathrm{Arg}(z_1z_2)=\\theta_1+\\theta_2$, where Arg denotes the principal argument.\nFor all real numbers $r_1,r_2,\\theta_1,\\theta_2$ with $r_1,r_2>0$, $r_1e^{i\\theta_1}=r_2e^{i\\theta_2}\\Rightarrow r_1=r_2$ and $\\theta_1=\\theta_2$.\nFor all real numbers $x,y,r,\\theta$ with $r>0$ and $x\\ne0$, $x+iy=re^{i\\theta}\\Rightarrow\\theta=\\arctan\\left(\\frac{y}{x}\\right)$."
+  },
+  {
+   "id": "me2202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph regions associated with lines, rays and circles defined using complex numbers, giving a geometrical description of any such curves or regions, and using circle geometry theorems where necessary",
+   "text": "A shaded region on a complex plane is shown. Which relation best describes the region shaded on the complex plane?\n$|z-i|>2|z-1|$\n$|z-i|<2|z-1|$\n$|z-1|>2|z-i|$\n$|z-1|<2|z-i|$"
+  },
+  {
+   "id": "me2202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication ()",
+   "text": "A particle travels along a curve from $O$ to $E$ in the $xy$-plane, as shown in the diagram. The position vector of the particle is $\\mathbf{r}$, its velocity is $\\mathbf{v}$, and its acceleration is $\\mathbf{a}$. While travelling from $O$ to $E$, the particle is always slowing down. Which of the following is consistent with the motion of the particle?\n$\\mathbf{r}\\cdot\\mathbf{v}\\le0$ and $\\mathbf{a}\\cdot\\mathbf{v}\\ge0$\n$\\mathbf{r}\\cdot\\mathbf{v}\\le0$ and $\\mathbf{a}\\cdot\\mathbf{v}\\le0$\n$\\mathbf{r}\\cdot\\mathbf{v}\\ge0$ and $\\mathbf{a}\\cdot\\mathbf{v}\\ge0$\n$\\mathbf{r}\\cdot\\mathbf{v}\\ge0$ and $\\mathbf{a}\\cdot\\mathbf{v}\\le0$"
+  },
+  {
+   "id": "me2202310",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Prove and use the Cauchy–Schwarz inequality for vectors:",
+   "text": "Consider any three-dimensional vectors $\\mathbf{a}=\\overrightarrow{OA}$, $\\mathbf{b}=\\overrightarrow{OB}$ and $\\mathbf{c}=\\overrightarrow{OC}$ that satisfy $\\mathbf{a}\\cdot\\mathbf{b}=1$, $\\mathbf{b}\\cdot\\mathbf{c}=2$ and $\\mathbf{c}\\cdot\\mathbf{a}=3$. Which of the following statements about the vectors is true?\nTwo of $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$ could be unit vectors.\nThe points $A$, $B$ and $C$ could lie on a sphere centred at $O$.\nFor any three-dimensional vector $\\mathbf{a}$, vectors $\\mathbf{b}$ and $\\mathbf{c}$ can be found so that $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$ satisfy these three conditions.\n$\\forall\\,\\mathbf{a},\\mathbf{b}$ and $\\mathbf{c}$ satisfying the conditions, $\\exists\\,r,s$ and $t$ such that $r,s$ and $t$ are positive real numbers and $r\\mathbf{a}+s\\mathbf{b}+t\\mathbf{c}=\\mathbf{0}$."
+  },
+  {
+   "id": "me2202311",
+   "year": 2023,
+   "number": "11",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Use complex numbers to express the roots of quadratic equations of the form , where , and are real numbers and the discriminant | Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication () | Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Describe simple harmonic motion using displacement, velocity, acceleration, force, amplitude and period",
+   "text": "(a) Solve the quadratic equation $z^2-3z+4=0$, where $z$ is a complex number. Give your answers in Cartesian form.\n(b) Find the angle between the vectors $\\mathbf{a}=\\mathbf{i}+2\\mathbf{j}-3\\mathbf{k}$ and $\\mathbf{b}=-\\mathbf{i}+4\\mathbf{j}+2\\mathbf{k}$, giving your answer to the nearest degree.\n(c) Find a vector equation of the line through the points $A(-3,1,5)$ and $B(0,2,3)$.\n(d) The quadrilaterals $ABCD$ and $ABEF$ are parallelograms. By considering $\\overrightarrow{AB}$, show that $CDFE$ is also a parallelogram.\n(e) A particle moves in simple harmonic motion described by the equation $\\ddot{x}=-9(x-4)$. Find the period and the central point of motion.\n(f) Find $\\displaystyle\\int_0^4\\frac{5x-3}{(x+1)(x-3)}\\,dx$."
+  },
+  {
+   "id": "me2202312",
+   "year": 2023,
+   "number": "12",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / The nature of proof / Illustrations of proofs / Use proof by contradiction to prove the truth of mathematical statements | Year 12 / The nature of proof / Proof of inequalities / Establish and use the relationship between the arithmetic mean and geometric mean for two non-negative numbers, that is | Year 12 / Applications of calculus to mechanics / Modelling motion without resistance / Analyse and solve problems relating to motion on a smooth inclined plane by resolving forces into components | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of complex numbers and their location on the complex plane",
+   "text": "(a) Prove that $\\sqrt{23}$ is irrational.\n(b) Prove that for all real numbers $x$ and $y$, where $x^2+y^2\\ne0$, $\\dfrac{(x+y)^2}{x^2+y^2}\\le2$.\n(c) An object with mass $m$ kg slides down a smooth inclined plane with velocity $\\mathbf{v}(t)$, where $t$ is the time in seconds after it started sliding. The plane makes an angle $\\theta$ with the horizontal, as shown. The normal reaction force is $\\mathbf{R}$; the acceleration due to gravity is $\\mathbf{g}$ with magnitude $g$. No other forces act. $\\mathbf{i}$ and $\\mathbf{j}$ are unit vectors parallel and perpendicular, respectively, to the plane, as shown.\n(i) Show that the resultant force on the object is $\\mathbf{F}=-(mg\\sin\\theta)\\mathbf{i}$.\n(ii) Given that the object is initially at rest, find its velocity $\\mathbf{v}(t)$ in terms of $g$, $\\theta$, $t$ and $\\mathbf{i}$.\n(d) Find the cube roots of $2-2i$. Give your answer in exponential form.\n(e) The complex number $2+i$ is a zero of the polynomial $P(z)=z^4-3z^3+cz^2+dz-30$ where $c$ and $d$ are real numbers. (i) Explain why $2-i$ is also a zero of the polynomial $P(z)$. (ii) Find the remaining zeros of the polynomial $P(z)$."
+  },
+  {
+   "id": "me2202313",
+   "year": 2023,
+   "number": "13",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further integration / Integrate rational functions by completing the square on a quadratic denominator | Year 12 / The nature of proof / Further proof by mathematical induction / Prove inequality results using mathematical induction | Year 12 / Applications of calculus to mechanics / Projectiles and resisted motion / Establish and use the equations for acceleration for a projectile moving under the influence of gravity, projected at an angle to the horizontal, and subject to a resistance whose magnitude is proportional to the speed, to solve problems",
+   "text": "(a) Find $\\displaystyle\\int\\frac{1-x}{5-4x-x^2}\\,dx$.\n(b)(i) Show that $k^2-2k-3\\ge0$ for $k\\ge3$. (ii) Hence, or otherwise, use mathematical induction to prove that $2^n\\ge n^2-2$, for all integers $n\\ge3$.\n(c) A particle of mass 1 kg is projected from the origin with speed $40\\ \\mathrm{m\\,s^{-1}}$ at $30°$ to the horizontal. (i) Show the initial velocity is $\\mathbf{v}(0)=\\begin{pmatrix}20\\sqrt3\\\\20\\end{pmatrix}$. The forces are gravity and air resistance, the latter proportional to the velocity vector with constant of proportionality 4; take $g=10\\ \\mathrm{m\\,s^{-2}}$. Let $\\mathbf{r}(t)$ be the position vector and $\\mathbf{v}(t)$ the velocity vector. (ii) Show that $\\mathbf{v}(t)=\\begin{pmatrix}20\\sqrt3\\ e^{-4t}\\\\ \\frac{45}{2}e^{-4t}-\\frac52\\end{pmatrix}$. (iii) Show that $\\mathbf{r}(t)=\\begin{pmatrix}5\\sqrt3(1-e^{-4t})\\\\ \\frac{45}{8}(1-e^{-4t})-\\frac52 t\\end{pmatrix}$. (iv) The graphs $y=1-e^{-4x}$ and $y=\\frac{4x}{9}$ are given below. Using the diagram, find the horizontal range, to one decimal place."
+  },
+  {
+   "id": "me2202314",
+   "year": 2023,
+   "number": "14",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Convert between complex numbers in Cartesian form and polar form and use complex numbers in Cartesian form and polar form to solve problems | Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Determine equations for the displacement, , and velocity, , in terms of time for an object executing simple harmonic motion according to a given equation and satisfying given initial conditions | Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Derive expressions for velocity both as a function of time and of displacement for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed",
+   "text": "(a) Let $z=e^{i\\pi/6}$ and $w=e^{3i\\pi/4}$. (i) By writing $z$ and $w$ in Cartesian form, or otherwise, show that\n(ii) $z$, $w$ and $z+w$ are represented by $\\overrightarrow{OA}$, $\\overrightarrow{OB}$ and $\\overrightarrow{OC}$, where $O$ is the origin. Show that\n(iii) Deduce that\n(b) The point $P$ is 4 metres to the right of the origin $O$ on a straight line. A particle is released from rest at $P$ and moves along the line in simple harmonic motion about $O$, with period $8\\pi$ seconds. After $2\\pi$ seconds, another particle is released from rest at $P$ and also moves along the line in simple harmonic motion about $O$, with period $8\\pi$ seconds. Find when and where the two particles first collide.\n(c) A projectile of mass $M$ kg is launched vertically upwards from the origin with initial speed $v_0\\ \\mathrm{m\\,s^{-1}}$; gravity is $g\\ \\mathrm{m\\,s^{-2}}$. A resistive force of magnitude $kMv^2$ N acts, where $k>0$ and $v$ is the speed at time $t$. (i) The maximum height is $H$ metres. Show that\n(ii) When the projectile lands, its speed is $v_1\\ \\mathrm{m\\,s^{-1}}$, less than the terminal speed. Show that"
+  },
+  {
+   "id": "me2202315",
+   "year": 2023,
+   "number": "15",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further integration / Derive and use recurrence relations involving integration by parts | Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors | Year 12 / Further work with vectors / Vector equations of lines and curves / Recognise that a parametrically defined curve in two dimensions or three dimensions can be expressed as a vector equation: or , where is a parameter",
+   "text": "(a)(i) Let \nwhere $n\\ge0$ is an integer. Show that\n(ii) Let \nwhere $n$ is a positive integer. By the substitution $x=\\sin^2\\theta$, or otherwise, show that\n(iii) Hence, or otherwise, show that\n(b) On the triangular pyramid $ABCD$, $L$ is the midpoint of $AB$, $M$ of $AC$, $N$ of $AD$, $P$ of $CD$, $Q$ of $BD$ and $R$ of $BC$.\nLet $\\mathbf{b}=\\overrightarrow{AB}$, $\\mathbf{c}=\\overrightarrow{AC}$ and $\\mathbf{d}=\\overrightarrow{AD}$. (i) Show that\n(ii) It can be shown that $\\overrightarrow{MQ}=\\frac12(\\mathbf{b}-\\mathbf{c}+\\mathbf{d})$ and $\\overrightarrow{NR}=\\frac12(\\mathbf{b}+\\mathbf{c}-\\mathbf{d})$. (Do NOT prove these.) Prove that\n(c) A curve $\\ell$ spirals 3 times around the sphere centred at the origin with radius 3, as shown. A particle is initially at $(0,0,-3)$ and moves along $\\ell$ on the sphere, ending at $(0,0,3)$.\nBy using the diagram below, which shows $f(x)=\\cos(\\pi x)$ and $g(x)=\\sqrt{9-x^2}$, and considering $y=f(x)g(x)$, give a possible set of parametric equations for $\\ell$."
+  },
+  {
+   "id": "me2202316",
+   "year": 2023,
+   "number": "16",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Prove geometric results using complex numbers as vectors | Year 12 / The nature of proof / Proof of inequalities / Prove inequalities using graphical or calculus techniques or a combination of both | Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph regions associated with lines, rays and circles defined using complex numbers, giving a geometrical description of any such curves or regions, and using circle geometry theorems where necessary",
+   "text": "(a) Let $w$ be the complex number $w=e^{2i\\pi/3}$. (i) Show that $1+w+w^2=0$. The vertices of a triangle can be labelled $A$, $B$ and $C$ in anticlockwise or clockwise direction, as shown.\nThree complex numbers $a$, $b$ and $c$ are represented in the complex plane by points $A$, $B$ and $C$ respectively. (ii) Show that if triangle $ABC$ is anticlockwise and equilateral, then $a+bw+cw^2=0$. (iii) It can be shown that if triangle $ABC$ is clockwise and equilateral, then $a+bw^2+cw=0$. (Do NOT prove this.) Show that if $ABC$ is an equilateral triangle, then $a^2+b^2+c^2=ab+bc+ca$.\n(b)(i) Prove that $x>\\ln x$, for $x>0$. (ii) Using part (i), or otherwise, prove that for all positive integers $n$, $e^{n^2+n}>(n!)^2$.\n(c) The complex numbers $w$ and $z$ both have modulus 1, and $\\frac\\pi2<\\mathrm{Arg}\\left(\\frac{z}{w}\\right)<\\pi$, where Arg denotes the principal argument. For real numbers $x$ and $y$, consider the complex number $\\frac{xz+yw}{z}$. On an $xy$-plane, clearly sketch the region that contains all points $(x,y)$ for which $\\frac\\pi2<\\mathrm{Arg}\\left(\\frac{xz+yw}{z}\\right)<\\pi$."
+  },
+  {
+   "id": "me2202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication ()",
+   "text": "Which of the following vectors is perpendicular to $3\\mathbf{i}+2\\mathbf{j}-5\\mathbf{k}$?\n$-\\mathbf{i}-\\mathbf{j}+\\mathbf{k}$\n$\\mathbf{i}+\\mathbf{j}-\\mathbf{k}$\n$-2\\mathbf{i}+3\\mathbf{j}+\\mathbf{k}$\n$3\\mathbf{i}-2\\mathbf{j}+\\mathbf{k}$"
+  },
+  {
+   "id": "me2202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Use the formal language of proof, including the terms ‘statement’, ‘proposition’, ‘implication’, ‘converse’, ‘negation’, ‘contradiction’, ‘counterexample’, ‘equivalence’ and ‘contrapositive’",
+   "text": "Consider the following statement written in the formal language of proof\nWhich of the following best represents this statement?\nThere exists a $\\theta$ in the second quadrant such that for all $\\phi$ in the third quadrant $\\sin\\theta=-\\cos\\phi$.\nThere exists a $\\phi$ in the third quadrant such that for all $\\theta$ in the second quadrant $\\sin\\theta=-\\cos\\phi$.\nFor all $\\theta$ in the second quadrant there exists a $\\phi$ in the third quadrant such that $\\sin\\theta=-\\cos\\phi$.\nFor all $\\phi$ in the third quadrant there exists a $\\theta$ in the second quadrant such that $\\sin\\theta=-\\cos\\phi$."
+  },
+  {
+   "id": "me2202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Use the formal language of proof, including the terms ‘statement’, ‘proposition’, ‘implication’, ‘converse’, ‘negation’, ‘contradiction’, ‘counterexample’, ‘equivalence’ and ‘contrapositive’",
+   "text": "Consider the statement: 'If a polygon is a square, then it is a rectangle.'\nWhich of the following is the converse of the statement above?\nIf a polygon is a rectangle, then it is a square.\nIf a polygon is a rectangle, then it is not a square.\nIf a polygon is not a rectangle, then it is not a square.\nIf a polygon is not a square, then it is not a rectangle."
+  },
+  {
+   "id": "me2202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Solving equations with complex numbers / Solve problems involving complex conjugate roots of polynomial equations with real coefficients",
+   "text": "A monic polynomial, $f(x)$, of degree 3 with real coefficients has 3 and $2+i$ as two of its roots.\nWhich of the following could be $f(x)$?\n$f(x)=x^{3}-7x^{2}-17x+15$\n$f(x)=x^{3}-7x^{2}+17x-15$\n$f(x)=x^{3}+7x^{2}-17x+15$\n$f(x)=x^{3}+7x^{2}+17x-15$"
+  },
+  {
+   "id": "me2202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Model and solve problems involving simple harmonic motion using relevant formulas and graphs",
+   "text": "A particle is moving in simple harmonic motion with period 10 seconds and an amplitude of 8 m. The particle starts at the central point of motion and is initially moving to the left with a speed of $V\\,\\mathrm{m\\,s^{-1}}$, where $V>0$.\nWhat will be the position and velocity of the particle after 7.5 seconds?\nAt the central point of motion with a velocity of $V\\,\\mathrm{m\\,s^{-1}}$\nAt the central point of motion with a velocity of $-V\\,\\mathrm{m\\,s^{-1}}$\n8 m to the left of the central point of motion with a velocity of $0\\,\\mathrm{m\\,s^{-1}}$\n8 m to the right of the central point of motion with a velocity of $0\\,\\mathrm{m\\,s^{-1}}$"
+  },
+  {
+   "id": "me2202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Modelling motion without resistance / Derive the equations of motion for a particle travelling, without resistance, in a straight line with constant and variable acceleration and use the equations of motion to solve problems",
+   "text": "A light string passes over a smooth pulley. Attached to the ends of the string are masses of 9 kg and 5 kg, as shown.\nThe acceleration due to gravity is $g\\,\\mathrm{m\\,s^{-2}}$.\nWhat is the acceleration of the 9 kg mass?\n$\\dfrac{2}{7}g$\n$\\dfrac{1}{7}g$\n$\\dfrac{7}{2}g$\n$4g$"
+  },
+  {
+   "id": "me2202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the modulus of complex numbers: , and , where is an integer",
+   "text": "It is given that $|z-1+i|=2$.\nWhat is the maximum possible value of $|z|$?\n$\\sqrt{2}$\n$\\sqrt{10}$\n$2+\\sqrt{2}$\n$2-\\sqrt{2}$"
+  },
+  {
+   "id": "me2202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define the complex conjugate of a complex number as and use it to solve problems",
+   "text": "Which of the following is equal to $e^{\\bar{z}}$, where $z=x+iy$ with $x$ and $y$ real numbers?\n$\\overline{e^{z}}$\n$e^{-z}$\n$e^{2x}e^{z}$\n$e^{-2x}e^{z}$"
+  },
+  {
+   "id": "me2202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of complex numbers and their location on the complex plane",
+   "text": "Consider the solutions of the equation $z^{4}=-9$.\nWhat is the product of all of the solutions that have a positive principal argument?\n$3$\n$-3$\n$3i$\n$-3i$"
+  },
+  {
+   "id": "me2202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication ()",
+   "text": "Three unit vectors $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$, in 3 dimensions, are to be chosen so that $\\mathbf{a}\\perp\\mathbf{b}$, $\\mathbf{b}\\perp\\mathbf{c}$ and the angle $\\theta$ between $\\mathbf{a}$ and $\\mathbf{a}+\\mathbf{b}+\\mathbf{c}$ is as small as possible.\nWhat is the value of $\\cos\\theta$?\n$0$\n$\\dfrac{1}{\\sqrt{3}}$\n$\\dfrac{1}{\\sqrt{2}}$\n$\\dfrac{2}{\\sqrt{5}}$"
+  },
+  {
+   "id": "me2202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by parts, including problems where more than one application is required | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Examine and use addition and subtraction of complex numbers as vectors on the complex plane | Year 12 / Further work with vectors / Vectors and geometry / Examine and use properties of the scalar (dot) product, including commutativity (), distributivity ) and scalar multiplication () | Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Convert between complex numbers in Cartesian form and polar form and use complex numbers in Cartesian form and polar form to solve problems | Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Plot the complex number as a point on the complex plane with and without graphing applications",
+   "text": "Find $\\int xe^{x}\\,dx$.\nLet $z=2+3i$ and $w=1-5i$\nFind $z+\\bar{w}$.\nFind $z^{2}$.\nFind the angle between the two vectors $\\mathbf{u}=\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$ and $\\mathbf{v}=\\begin{pmatrix} 4 \\\\ -4 \\\\ 7 \\end{pmatrix}$, giving your answer in radians, correct to 1 decimal place.\nEvaluate $\\int_{0}^{\\frac{\\pi}{2}}\\frac{1}{\\sin\\theta+1}\\,d\\theta$.\nWrite $\\sqrt{3}+i$ in modulus-argument form, then use it to find $(\\sqrt{3}+i)^{7}$ in Cartesian form.\nWrite the number $\\sqrt{3}+i$ in modulus-argument form.\nHence, or otherwise, write $(\\sqrt{3}+i)^{7}$ in exact Cartesian form.\nSketch the region defined by $|z|<3$ and $0\\le\\arg(z-i)\\le\\frac{\\pi}{2}$."
+  },
+  {
+   "id": "me2202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors | Year 12 / Further work with vectors / Vector equations of lines and curves / Examine and use as the vector equation of a straight line in two dimensions and three dimensions to solve problems, where is the position vector of a point on the line, is the position vector of a particular point on the line, is a direction vector of the line and is a scalar parameter | Year 12 / Further integration / Integrate rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors, using partial fraction decomposition | Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define and calculate the modulus of a complex number as | Year 12 / The nature of proof / The language and notation of proof / Use the formal language of proof, including the terms ‘statement’, ‘proposition’, ‘implication’, ‘converse’, ‘negation’, ‘contradiction’, ‘counterexample’, ‘equivalence’ and ‘contrapositive’",
+   "text": "The vector $\\mathbf{a}$ is $\\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix}$ and the vector $\\mathbf{b}$ is $\\begin{pmatrix} 2 \\\\ 0 \\\\ -4 \\end{pmatrix}$.\nFind $\\dfrac{\\mathbf{a}\\cdot\\mathbf{b}}{\\mathbf{b}\\cdot\\mathbf{b}}\\,\\mathbf{b}$.\nShow that $\\mathbf{a}-\\dfrac{\\mathbf{a}\\cdot\\mathbf{b}}{\\mathbf{b}\\cdot\\mathbf{b}}\\,\\mathbf{b}$ is perpendicular to $\\mathbf{b}$.\nUse partial fractions to find $\\int\\dfrac{3x^{2}+2x+1}{(x-1)(x^{2}+1)}\\,dx$.\nConsider the equation $|z|=z+8+12i$, where $z=a+bi$ is a complex number and $a,b$ are real numbers.\nExplain why $b=-12$.\nHence, or otherwise, find $z$.\nExplain why there is no integer $n$ such that $(n+1)^{41}-79n^{40}=2$.\nThe line $\\ell$ passes through the points $A(3,5,-4)$ and $B(7,0,2)$.\nFind a vector equation of the line $\\ell$.\nDetermine, giving reasons, whether the point $C(10,5,-2)$ lies on the line $\\ell$."
+  },
+  {
+   "id": "me2202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 16,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Examine and use as the vector equation of a straight line in two dimensions and three dimensions to solve problems, where is the position vector of a point on the line, is the position vector of a particular point on the line, is a direction vector of the line and is a scalar parameter | Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors | Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Model and solve problems involving simple harmonic motion using relevant formulas and graphs | Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive an expression for velocity as a function of displacement of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed | Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Solve problems, excluding those with pulley systems, involving a particle moving in a straight line subject to a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed | Year 12 / The nature of proof / Proof of inequalities / Establish and use the relationship between the arithmetic mean and geometric mean for two non-negative numbers, that is",
+   "text": "The point $A$ has position vector $8\\mathbf{i}-6\\mathbf{j}+5\\mathbf{k}$. The line $\\ell$ has vector equation $x\\mathbf{i}+y\\mathbf{j}+z\\mathbf{k}=t(\\mathbf{i}+\\mathbf{j}+2\\mathbf{k})$.\nThe point $B$ lies on $\\ell$ and has position vector $p\\mathbf{i}+p\\mathbf{j}+2p\\mathbf{k}$.\nShow that $|AB|^{2}=6p^{2}-24p+125$.\nHence, or otherwise, determine the shortest distance between the point $A$ and the line $\\ell$.\nA particle is moving in simple harmonic motion, described by $\\ddot{x}=-4(x+1)$.\nWhen the particle passes through the origin, the speed of the particle is $4\\,\\mathrm{m\\,s^{-1}}$.\nWhat distance does the particle travel during a full period of its motion?\nA particle of unit mass moves horizontally in a straight line. It experiences a resistive force proportional to $v^{2}$, where $v\\,\\mathrm{m\\,s^{-1}}$ is the speed of the particle, so that the acceleration is given by $-kv^{2}$.\nInitially the particle is at the origin and has a velocity of $40\\,\\mathrm{m\\,s^{-1}}$ to the right. After the particle has moved 15 m to the right, its velocity is $10\\,\\mathrm{m\\,s^{-1}}$ (to the right).\nShow that $v=40e^{-kx}$.\nShow that $k=\\dfrac{\\ln 4}{15}$.\nAt what time will the particle's velocity be $30\\,\\mathrm{m\\,s^{-1}}$ to the right?\nIt is known that for all positive real numbers $x,y$: $x+y\\ge 2\\sqrt{xy}$. (Do NOT prove this.)\nShow that if $a,b,c$ are positive real numbers with $\\frac{1}{a}+\\frac{1}{b}+\\frac{1}{c}=1$ then $a\\sqrt{bc}+b\\sqrt{ac}+c\\sqrt{ab}\\le abc$."
+  },
+  {
+   "id": "me2202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / The nature of proof / Illustrations of proofs / Prove results involving integers | Year 12 / The nature of proof / Further proof by mathematical induction / Prove inequality results using mathematical induction | Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the modulus of complex numbers: , and , where is an integer | Year 12 / The nature of proof / The language and notation of proof / Use the formal language of proof, including the terms ‘statement’, ‘proposition’, ‘implication’, ‘converse’, ‘negation’, ‘contradiction’, ‘counterexample’, ‘equivalence’ and ‘contrapositive’ | Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors",
+   "text": "Prove that if $a$ is any odd integer, then $a^{2}-1$ is divisible by 8.\nUse mathematical induction to prove that $^{2n}C_{n}<2^{2n-2}$, for all integers $n\\ge 5$.\nFor the complex numbers $z$ and $w$, it is known that $\\arg\\left(\\frac{z}{w}\\right)=-\\frac{\\pi}{2}$.\nFind $\\left|\\frac{z-w}{z+w}\\right|$.\nThe following argument attempts to prove that $0=1$.\nWe evaluate $\\int\\frac{1}{x}\\,dx$ using the method of integration by parts.\nSo we have $\\int\\frac{1}{x}\\,dx=1+\\int\\frac{1}{x}\\,dx$.\nWe may now subtract $\\int\\frac{1}{x}\\,dx$ from both sides to show that $0=1$.\nExplain what is wrong with this argument.\nThe diagram shows triangle $OQA$.\nThe point $P$ lies on $OA$ so that $OP:OA=3:5$.\nThe point $B$ lies on $OQ$ so that $OB:OQ=1:3$.\nThe point $R$ is the intersection of $AB$ and $PQ$.\nThe point $T$ is chosen on $AQ$ so that $O$, $R$ and $T$ are collinear.\nLet $\\mathbf{a}=\\overrightarrow{OA}$, $\\mathbf{b}=\\overrightarrow{OB}$ and $\\overrightarrow{PR}=k\\overrightarrow{PQ}$ where $k$ is a real number.\nShow that $\\overrightarrow{OR}=\\frac{3}{5}(1-k)\\mathbf{a}+3k\\mathbf{b}$.\nWriting $\\overrightarrow{AR}=h\\overrightarrow{AB}$, where $h$ is a real number, it can be shown that $\\overrightarrow{OR}=(1-h)\\mathbf{a}+h\\mathbf{b}$. (Do NOT prove this.)\nShow that $k=\\frac{1}{6}$.\nFind $\\overrightarrow{OT}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$."
+  },
+  {
+   "id": "me2202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors | Year 12 / Further integration / Derive and use recurrence relations involving integration by parts | Year 12 / Applications of calculus to mechanics / Rectilinear resisted motion / Derive an expression for velocity as a function of displacement of a particle moving in a straight line and in the absence of external forces, except for a resistance oppositely directed to the motion and with a magnitude proportional to a power of the speed | Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given",
+   "text": "Consider the three vectors $\\mathbf{a}=\\overrightarrow{OA}$, $\\mathbf{b}=\\overrightarrow{OB}$ and $\\mathbf{c}=\\overrightarrow{OC}$, where $O$ is the origin and the points $A$, $B$ and $C$ are all different from each other and the origin.\nThe point $M$ is the point such that $\\frac{1}{2}(\\mathbf{a}+\\mathbf{b})=\\overrightarrow{OM}$.\nShow that $M$ lies on the line passing through $A$ and $B$.\nThe point $G$ is the point such that $\\frac{1}{3}(\\mathbf{a}+\\mathbf{b}+\\mathbf{c})=\\overrightarrow{OG}$.\nShow that $G$ lies on the line passing through $M$ and $C$, and lies between $M$ and $C$.\nThe complex numbers $x$, $w$ and $z$ are all different and all have modulus 1.\nUsing part (ii), or otherwise, show that $\\frac{1}{3}(x+w+z)$ is never a cube root of $xwz$.\nLet $I_{n}=\\int_{0}^{a}x^{n+\\frac{1}{2}}(a-x)^{\\frac{1}{2}}\\,dx$, where $n\\ge 0$.\nShow that $(2n+4)I_{n}=a(2n+1)I_{n-1}$, for $n>0$.\nA bar magnet is held vertically. An object that is repelled by the magnet is to be dropped from directly above the magnet and will maintain a vertical trajectory. Let $x$ be the distance of the object above the magnet.\nThe object is subject to acceleration due to gravity, $g$, and an acceleration due to the magnet $\\frac{27g}{x^{3}}$, so that the total acceleration of the object is given by $a=\\frac{27g}{x^{3}}-g$.\nThe object is released from rest at $x=6$.\nShow that $v^{2}=g\\left(\\frac{51}{4}-2x-\\frac{27}{x^{2}}\\right)$.\nFind where the object next comes to rest, giving your answer correct to 1 decimal place.\nUsing a suitable substitution, find $\\int\\frac{2x^{2}}{\\sqrt{2x-x^{2}}}\\,dx$."
+  },
+  {
+   "id": "me2202416",
+   "year": 2024,
+   "number": "16",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / The nature of proof / Proof of inequalities / Prove results involving inequalities using previously obtained or known inequalities | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of complex numbers and their location on the complex plane | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Use de Moivre’s theorem to derive trigonometric identities | Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Derive expressions for velocity both as a function of time and of displacement for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed | Year 12 / Applications of calculus to mechanics / Vertical resisted motion / Derive an expression for displacement as a function of time for vertical resisted motion under the influence of constant gravity, with a resistance, , oppositely directed to the motion, whose magnitude is proportional to the first or second power of the speed",
+   "text": "Consider the function $y=\\cos(kx)$, where $k>0$. The value of $k$ has been chosen so that a circle can be drawn, centred at the origin, which has exactly two points of intersection with the graph of the function and so that the circle is never above the graph of the function. The point $P(a,b)$ is the point of intersection in the first quadrant, so $a>0$ and $b>0$, as shown in the diagram.\nThe vector joining the origin to the point $P(a,b)$ is perpendicular to the tangent to the graph of the function at that point. (Do NOT prove this.)\nShow that $k>1$.\nThe number $w=e^{\\frac{2\\pi i}{3}}$ is a complex cube root of unity. The number $\\gamma$ is a cube root of $w$.\nShow that $\\gamma+\\bar{\\gamma}$ is a real root of $z^{3}-3z+1=0$.\nBy using part (i) to find the exact value of $\\cos\\frac{2\\pi}{9}\\cos\\frac{4\\pi}{9}\\cos\\frac{8\\pi}{9}$, deduce the value(s) of $\\cos\\frac{2^{n}\\pi}{9}\\cos\\frac{2^{n+1}\\pi}{9}\\cos\\frac{2^{n+2}\\pi}{9}$ for all integers $n\\ge 1$. Justify your answer.\nTwo particles, $A$ and $B$, each have mass 1 kg and are in a medium that exerts a resistance to motion equal to $kv$, where $k>0$ and $v$ is the velocity of any particle. Both particles maintain vertical trajectories.\nThe acceleration due to gravity is $g\\,\\mathrm{m\\,s^{-2}}$, where $g>0$.\nThe two particles are simultaneously projected towards each other with the same speed, $v_{0}\\,\\mathrm{m\\,s^{-1}}$, where $0<v_{0}<\\frac{g}{k}$.\nThe particle $A$ is initially $d$ metres directly above particle $B$, where $d<\\frac{2v_{0}}{k}$.\nFind the time taken for the particles to meet."
+  },
+  {
+   "id": "me2202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Identify as one possible vector equation for the straight line through points and , where and are the position vectors of and respectively, noting its equivalence with the form , and establish the correspondence between the value of and the position of the point specified by it along the line",
+   "text": "Points $A$ and $B$ are $(-3, 1)$ and $(1, 4)$ respectively. Which of the following is a vector equation of the line $AB$ with parameter $\\lambda$?"
+  },
+  {
+   "id": "me2202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Negate statements including the negation of a negation , the negation of an implication , the negation , that is , and the negation , that is , noting that , that is",
+   "text": "Consider the statement:\nWhich of the following is the negation of the statement?\n$\\forall\\, x \\in \\mathbb{Z},\\ x^2$ is odd\n$\\forall\\, x \\in \\mathbb{Z},\\ x^2$ is even\n$x^2$ is even $\\Rightarrow x \\in \\mathbb{Z}$\n$\\exists\\, x \\in \\mathbb{Z},\\ \\text{such that } x^2$ is even"
+  },
+  {
+   "id": "me2202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Find the two square roots of a complex number",
+   "text": "What are the square roots of $3 - 4i$?\n$1 - 2i$ and $-1 + 2i$\n$1 + 2i$ and $-1 - 2i$\n$2 - i$ and $-2 + i$\n$-2 - i$ and $2 + i$"
+  },
+  {
+   "id": "me2202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Derive for a particle moving in simple harmonic motion according to , where is the amplitude",
+   "text": "A particle in simple harmonic motion has speed $v\\,\\mathrm{m\\,s^{-1}}$, given by $v^2 = -x^2 + 2x + 8$ where $x$ is the displacement from the origin in metres. What is the amplitude of the motion?\n$1\\,\\mathrm{m}$\n$3\\,\\mathrm{m}$\n$6\\,\\mathrm{m}$\n$9\\,\\mathrm{m}$"
+  },
+  {
+   "id": "me2202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The nature of proof / The language and notation of proof / Define the contrapositive of ‘if then ’ as ‘if not then not ’, denoted",
+   "text": "Consider the statement:\nWhich of the following is the contrapositive of the statement?\nIf $x > 0$, then $x^2 - 2x < 0$.\nIf $x \\leq 0$, then $x^2 - 2x \\geq 0$.\nIf $x^2 - 2x < 0$, then $x < 0$.\nIf $x^2 - 2x \\leq 0$, then $x > 0$."
+  },
+  {
+   "id": "me2202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the modulus of complex numbers: , and , where is an integer",
+   "text": "The complex numbers $z$ and $w$ lie on the unit circle. The modulus of $z + w$ is $\\frac{3}{2}$. What is the modulus of $z - w$?\n$\\frac{1}{8}$\n$\\frac{3}{2}$\n$\\frac{7}{4}$"
+  },
+  {
+   "id": "me2202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Define and use the principal argument of a non-zero complex number as the unique value of the argument in the interval",
+   "text": "The complex number $z$ lies on the unit circle.\nWhat is the range of $\\mathrm{Arg}(z - 2i)$?\n$\\frac{\\pi}{6} \\leq \\mathrm{Arg}(z-2i) \\leq \\frac{5\\pi}{6}$\n$\\frac{\\pi}{3} \\leq \\mathrm{Arg}(z-2i) \\leq \\frac{2\\pi}{3}$\n$-\\frac{5\\pi}{6} \\leq \\mathrm{Arg}(z-2i) \\leq -\\frac{\\pi}{6}$\n$-\\frac{2\\pi}{3} \\leq \\mathrm{Arg}(z-2i) \\leq -\\frac{\\pi}{3}$"
+  },
+  {
+   "id": "me2202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Graph , and as functions of with and without graphing applications for a particle moving in simple harmonic motion where is of the form or",
+   "text": "The graph shows the velocity of a particle as a function of its displacement.\nWhich of the following graphs best shows the acceleration of the particle as a function of its displacement?\nOption A: curve oscillating with three humps, crossing the $x$-axis five times and rising steeply at the right\nOption B: curve with a small dip at the origin, one positive hump, one deep negative trough, then rising steeply at the right\nOption C: curve touching the $x$-axis at the origin, with a shallow positive hump, a small dip, then rising at the right\nOption D: shallow $U$-shaped curve crossing the $x$-axis twice, rising on both sides"
+  },
+  {
+   "id": "me2202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Prove geometric results using complex numbers as vectors",
+   "text": "The points $U, V, W$ and $Z$ represent the complex numbers $u, v, w$ and $z$ respectively. It is given that $v + z = u + w$ and $u + kiz = w + kiv$ where $k \\in \\mathbb{R}$, $k > 1$. Which quadrilateral best describes $UVW Z$?\nParallelogram\nRectangle\nRhombus\nSquare"
+  },
+  {
+   "id": "me2202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further work with vectors / Vector equations of lines and curves / Identify the vector equation of a curve given its graph",
+   "text": "Which of the following gives the same curve as $\\begin{pmatrix}\\cos(t) \\\\ -t \\\\ \\sin(t)\\end{pmatrix}$ for $t \\in \\mathbb{R}$?"
+  },
+  {
+   "id": "me2202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Plot the complex number as a point on the complex plane with and without graphing applications | Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use identities involving the complex conjugate of complex numbers:, | Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Use multiplication, division and powers of complex numbers in polar form and interpret these geometrically | Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Define and perform complex number addition, subtraction and multiplication, with and without digital tools | Year 12 / Introduction to complex numbers / Arithmetic of complex numbers / Divide one complex number by another non-zero complex number, with and without digital tools, and give the result in the form | Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Recognise that forces are vector quantities, analyse concurrent forces on a body by resolving them into perpendicular components and use vector projections to determine how much of a given force acts in a given direction in both 2D and 3D contexts | Year 12 / The nature of proof / Illustrations of proofs / Use proof by contradiction to prove the truth of mathematical statements | Year 12 / Further integration / Integrate rational functions by completing the square on a quadratic denominator",
+   "text": "The location of the complex number $z$ is shown on the diagram on page 1 of the Question 11 Writing Booklet. On the diagram provided in the writing booklet, indicate the locations of $\\overline{z}$ and $i\\overline{z}$. (Use the attached diagram.)\nThe complex numbers $w$ and $z$ are given by $w = 2e^{i\\pi/6}$ and $z = 3e^{i\\pi/6}$. Find the modulus and argument of $wz$.\n(c) The complex number $z$ is given by $x + iy$.\n(i) Find $z^2$ in Cartesian form.\n(ii) Find $\\frac{1}{z}$ in Cartesian form.\n(d)\n(i) Force $\\mathbf{F}_1$ has magnitude 12 newtons in the direction of vector $2\\mathbf{i} - 2\\mathbf{j} + \\mathbf{k}$. Show that $\\mathbf{F}_1 = 8\\mathbf{i} - 8\\mathbf{j} + 4\\mathbf{k}$.\n(ii) Force $\\mathbf{F}_1$ from part (i) and a second force, $\\mathbf{F}_2 = -6\\mathbf{i} + 12\\mathbf{j} + 4\\mathbf{k}$, both act upon a particle. Show that the resultant force acting on the particle is given by: $\\mathbf{F}_3 = 2\\mathbf{i} + 4\\mathbf{j} + 8\\mathbf{k}$.\n(iii) Calculate $\\mathbf{F}_3 \\cdot \\mathbf{d}$, where $\\mathbf{F}_3$ is the resultant force from part (ii) and $\\mathbf{d} = \\mathbf{i} + \\mathbf{j} + 2\\mathbf{k}$.\nProve by contradiction that $\\sqrt{3} + \\sqrt{5} > \\sqrt{11}$.\nFind $\\int \\frac{5}{\\sqrt{7 - x^2 - 6x}}\\,dx$."
+  },
+  {
+   "id": "me2202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by parts, including problems where more than one application is required | Year 12 / The nature of proof / Further proof by mathematical induction / Prove results in calculus using mathematical induction | Year 12 / Introduction to complex numbers / Describing lines, curves and regions / Graph regions associated with lines, rays and circles defined using complex numbers, giving a geometrical description of any such curves or regions, and using circle geometry theorems where necessary | Year 12 / Further integration / Integrate rational functions whose denominators can be expressed as a product of distinct linear factors, distinct irreducible quadratic factors and perfect square factors, using partial fraction decomposition | Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Derive expressions for acceleration: , where is a function of , as well as and , where is a function of",
+   "text": "Using integration by parts, evaluate $\\int_{0}^{\\pi/2} x\\sin x\\,dx$.\nGiven the function $y = xe^{2x}$, use mathematical induction to prove that $\\frac{d^ny}{dx^n} = (2^nx + n2^{n-1})e^{2x}$ for all positive integers $n$, where $\\frac{d^ny}{dx^n}$ is the $n$th derivative of $y$ and $\\frac{d}{dx}\\left(\\frac{d^ny}{dx^n}\\right) = \\frac{d^{n+1}y}{dx^{n+1}}$.\nSketch the region of the complex plane defined by $|z + 5 - i| > |z - 3 + 3i|$.\nFind $\\int \\frac{x^2 - 2x + 9}{(4-x)(x^2+1)}\\,dx$.\nA particle of mass $m$ kg moves along a horizontal line with an initial velocity of $V_0\\,\\mathrm{m\\,s^{-1}}$. The motion of the particle is resisted by a constant force of $mk$ newtons and a variable force of $mv^2$ newtons, where $k$ is a positive constant and $v\\,\\mathrm{m\\,s^{-1}}$ is the velocity of the particle at $t$ seconds. Show that the distance travelled when the particle is brought to rest is $\\frac{1}{2}\\ln\\left(\\frac{k+V_0^2}{k}\\right)$ metres."
+  },
+  {
+   "id": "me2202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further integration / Find indefinite integrals and evaluate definite integrals using the method of integration by substitution, where the substitution may or may not be given | Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors | Year 12 / The nature of proof / Proof of inequalities / Establish and use the relationship between the arithmetic mean and geometric mean for two non-negative numbers, that is",
+   "text": "It is given that $A = \\int_{2}^{4} \\frac{e^x}{x-1}\\,dx$. Show that $\\int_{m-4}^{m-2} \\frac{e^{-x}}{x-m+1}\\,dx = kA$, where $k$ and $m$ are constants.\nLet $\\mathbf{c} = x\\mathbf{i} + y\\mathbf{j} + z\\mathbf{k}$ be a unit vector that is perpendicular to both $\\mathbf{a} = 2\\mathbf{i} + 4\\mathbf{j} - 3\\mathbf{k}$ and $\\mathbf{b} = -4\\mathbf{i} - 5\\mathbf{j} + 3\\mathbf{k}$. Find all possible vectors $\\mathbf{c}$.\n(c)\n(i) For positive real numbers $a$ and $b$, prove that $\\frac{a+b}{2} \\geq \\sqrt{ab}$.\n(ii) Hence, or otherwise, show that $\\frac{2n+1}{2n+2} < \\frac{\\sqrt{2n+1}}{\\sqrt{2n+3}}$ for any integer $n \\geq 0$.\nEvaluate $\\int_{0}^{\\pi/2} \\frac{u}{1+\\sin u+\\cos u}\\,du$, by first using the substitution $u = \\frac{\\pi}{2} - x$."
+  },
+  {
+   "id": "me2202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further integration / Derive and use recurrence relations involving integration by parts | Year 12 / Applications of calculus to mechanics / Forces and further motion in a straight line / Solve problems involving velocity and acceleration expressed in terms of displacement, and acceleration expressed in terms of velocity | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Solve problems and prove results using the th roots of complex numbers | Year 12 / The nature of proof / Proof of inequalities / Prove results involving inequalities using previously obtained or known inequalities",
+   "text": "(a) Let $I_n = \\int_{\\pi/4}^{\\pi/2} \\cot^{2n}\\theta\\,d\\theta$ for integers $n \\geq 0$.\n(i) Show that $I_n = \\frac{1}{2n-1} - I_{n-1}$ for $n > 0$, given that $\\frac{d}{d\\theta}\\cot\\theta = -\\mathrm{cosec}^2\\theta$.\n(ii) Hence, or otherwise, calculate $I_2$.\n(b) The acceleration of a particle is given by $\\ddot{x} = 32x(x^2+3)$, where $x$ is the displacement of the particle from a fixed-point $O$ after $t$ seconds, in metres. Initially the particle is at $O$ and has a velocity of $12\\,\\mathrm{m\\,s^{-1}}$ in the negative direction.\n(i) Show that the velocity of the particle is given by $v = -4(x^2+3)$.\n(ii) Find the time taken for the particle to travel 3 metres from the origin.\n(c) Let $w$ be a complex number such that $1 + w + w^2 + \\cdots + w^6 = 0$.\n(i) Show that $w$ is a 7th root of unity.\nThe complex number $\\alpha = w + w^2 + w^4$ is a root of the equation $x^2 + bx + c = 0$, where $b$ and $c$ are real and $\\alpha$ is not real. (ii) Find the other root of $x^2 + bx + c = 0$ in terms of positive powers of $w$.\n(iii) Find the numerical value of $c$.\nPositive real numbers $a, b, c$ and $d$ are chosen such that $\\frac{1}{a}, \\frac{1}{b}, \\frac{1}{c}$ and $\\frac{1}{d}$ are consecutive terms in an arithmetic sequence with common difference $k$, where $k \\in \\mathbb{R}$, $k > 0$. Show that $b + c < a + d$."
+  },
+  {
+   "id": "me2202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors | Year 12 / Applications of calculus to mechanics / Simple harmonic motion / Derive for a particle moving in simple harmonic motion according to , where is the amplitude | Year 12 / Introduction to complex numbers / Powers and roots of complex numbers / Determine the th roots of in polar form and their location on the unit circle",
+   "text": "The adjacent sides of a parallelogram are represented by the vectors $\\mathbf{a} = 4\\mathbf{i} + 3\\mathbf{j} - \\mathbf{k}$ and $\\mathbf{b} = 2\\mathbf{i} - \\mathbf{j} + 3\\mathbf{k}$. Show that the area of the parallelogram is $6\\sqrt{10}$ square units.\nA particle moves in simple harmonic motion about the origin with amplitude $A$, and it completes two cycles per second. When it is $\\frac{1}{4}$ metres from the origin, its speed is half its maximum speed. Find the maximum positive acceleration of the particle during its motion.\n(c)\n(i) Show that $\\frac{1 + \\cos\\theta + i\\sin\\theta}{1 - \\cos\\theta - i\\sin\\theta} = i\\cot\\frac{\\theta}{2}$.\n(ii) Use De Moivre's theorem to show that the sixth roots of $-1$ are given by $\\cos\\left(\\frac{(2k+1)\\pi}{6}\\right) + i\\sin\\left(\\frac{(2k+1)\\pi}{6}\\right)$ for $k = 0, 1, 2, 3, 4, 5$.\n(iii) Hence, or otherwise, show the solutions to $\\left(\\frac{z-1}{z+1}\\right)^6 = -1$ are $z = i\\cot\\frac{\\pi}{12}$, $i\\cot\\frac{3\\pi}{12}$, $i\\cot\\frac{5\\pi}{12}$, $i\\cot\\frac{7\\pi}{12}$, $i\\cot\\frac{9\\pi}{12}$, and $i\\cot\\frac{11\\pi}{12}$."
+  },
+  {
+   "id": "me2202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to complex numbers / Geometric representation of complex numbers / Prove and use the triangle inequality for complex numbers and | Year 12 / Applications of calculus to mechanics / Projectiles and resisted motion / Distinguish between the shape of the trajectory of a projectile moving under the influence of gravity and with negligible resistance and the shape of the trajectory of a projectile moving under the influence of gravity subject to resistance whose magnitude is proportional to the speed | Year 12 / Further work with vectors / Vectors and geometry / Solve problems and prove geometric results in two dimensions and three dimensions using vectors",
+   "text": "Consider the equation $z^n\\cos[n\\theta] + z^{n-1}\\cos[(n-1)\\theta] + z^{n-2}\\cos[(n-2)\\theta] + \\cdots + z\\cos[\\theta] = 1$ where $z \\in \\mathbb{C}$, $\\theta \\in \\mathbb{R}$, and $n$ is a positive integer. Using a proof by contradiction and the triangle inequality, or otherwise, prove that all the solutions to the equation lie outside the circle $|z| = \\frac{1}{2}$ on the complex plane.\nA particle of mass 1 kg is projected from the origin with a speed of $50\\,\\mathrm{m\\,s^{-1}}$, at an angle of $\\theta$ below the horizontal into a resistive medium. (Use the attached diagram.) The position of the particle $t$ seconds after projection is $(x, y)$, and the velocity of the particle at that time is $\\mathbf{v} = \\begin{pmatrix}\\dot{x} \\\\ \\dot{y}\\end{pmatrix}$. The resistive force, $\\mathbf{R}$, is proportional to the velocity of the particle, so that $\\mathbf{R} = -k\\mathbf{v}$, where $k$ is a positive constant. Taking the acceleration due to gravity to be $10\\,\\mathrm{m\\,s^{-2}}$, and the upwards vertical direction to be positive, the acceleration of the particle at time $t$ is given by: $\\mathbf{a} = \\begin{pmatrix} -k\\dot{x} \\\\ -k\\dot{y} - 10 \\end{pmatrix}$. (Do NOT prove this.) Derive the Cartesian equation of the motion of the particle, given $\\sin\\theta = \\frac{3}{5}$.\n(c) Consider the point $B$ with three-dimensional position vector $\\mathbf{b}$ and the line $\\ell: \\mathbf{a} + \\lambda\\mathbf{d}$, where $\\mathbf{a}$ and $\\mathbf{d}$ are three-dimensional vectors, $|\\mathbf{d}| = 1$ and $\\lambda$ is a parameter. Let $f(\\lambda)$ be the distance between a point on the line $\\ell$ and the point $B$.\n(i) Find $\\lambda_0$, the value of $\\lambda$ that minimises $f$, in terms of $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{d}$.\n(ii) Let $P$ be the point with position vector $\\mathbf{a} + \\lambda_0\\mathbf{d}$. Show that $PB$ is perpendicular to the direction of the line $\\ell$.\n(iii) Hence, or otherwise, find the shortest distance between the line $\\ell$ and the sphere of radius 1 unit, centred at the origin $O$, in terms of $\\mathbf{d}$ and $\\mathbf{a}$. You may assume that if $B$ is the point on the sphere closest to $\\ell$, then $OBP$ is a straight line."
+  }
+ ]
+}

@@ -1,0 +1,472 @@
+{
+ "auto202503": {
+  "code": "HSC-M4-T1-D31",
+  "confidence": "high",
+  "why": "thermostat controls coolant flow"
+ },
+ "auto202504": {
+  "code": "HSC-M4-T1-D10",
+  "confidence": "medium",
+  "why": "diesel engine advantage torque efficiency"
+ },
+ "auto202505": {
+  "code": "HSC-M4-T1-D78",
+  "confidence": "high",
+  "why": "distributor directs spark sequence"
+ },
+ "auto202506": {
+  "code": "HSC-M4-T1-D35",
+  "confidence": "high",
+  "why": "carburettor mixes air and fuel"
+ },
+ "auto202507": {
+  "code": "HSC-M4-T1-D52",
+  "confidence": "high",
+  "why": "differential allows varying wheel speeds"
+ },
+ "auto202508": {
+  "code": "HSC-M4-T1-D45",
+  "confidence": "medium",
+  "why": "transmission operation purpose"
+ },
+ "auto202509": {
+  "code": "HSC-M4-T1-D63",
+  "confidence": "high",
+  "why": "ABS maintains steering control"
+ },
+ "auto202510": {
+  "code": "HSC-M4-T1-D69",
+  "confidence": "high",
+  "why": "torsion spring suspension"
+ },
+ "auto202511": {
+  "code": "HSC-M4-T1-D107",
+  "confidence": "medium",
+  "why": "paint quantity and cost calculation"
+ },
+ "auto202512": {
+  "code": "HSC-M4-T1-D132",
+  "confidence": "medium",
+  "why": "government statutory regulation affecting industry"
+ },
+ "auto202513": {
+  "code": "HSC-M4-T1-D81",
+  "confidence": "medium",
+  "why": "electrical system improves occupant safety"
+ },
+ "auto202514": {
+  "code": "HSC-M4-T1-D17",
+  "confidence": "medium",
+  "why": "engine components affect performance"
+ },
+ "auto202515": {
+  "code": "HSC-M4-T1-D116",
+  "confidence": "high",
+  "why": "vehicle design functionality and sustainability"
+ },
+ "auto202516": {
+  "code": "HSC-M2-T1-D19",
+  "confidence": "medium",
+  "why": "legislation sustainability and historical developments"
+ },
+ "elec202501": {
+  "code": "HSC-M4-T2-D16",
+  "confidence": "high",
+  "why": "FET amplifies audio"
+ },
+ "elec202502": {
+  "code": "HSC-M4-T2-D3",
+  "confidence": "medium",
+  "why": "earthing safe path for electricity"
+ },
+ "elec202503": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "high",
+  "why": "Zener diode reverse current"
+ },
+ "elec202504": {
+  "code": "HSC-M4-T2-D49",
+  "confidence": "high",
+  "why": "zero volts fault finding"
+ },
+ "elec202505": {
+  "code": "HSC-M4-T2-D56",
+  "confidence": "high",
+  "why": "resistance from voltage and current"
+ },
+ "elec202506": {
+  "code": "HSC-M4-T2-D33",
+  "confidence": "high",
+  "why": "solenoid controls fluid flow"
+ },
+ "elec202507": {
+  "code": "HSC-M4-T2-D45",
+  "confidence": "medium",
+  "why": "removing solder bridge"
+ },
+ "elec202508": {
+  "code": "HSC-M4-T2-D15",
+  "confidence": "medium",
+  "why": "voltage regulator fault cause"
+ },
+ "elec202509": {
+  "code": "HSC-M4-T2-D49",
+  "confidence": "high",
+  "why": "microcontroller power fault finding"
+ },
+ "elec202510": {
+  "code": "HSC-M4-T2-D49",
+  "confidence": "high",
+  "why": "LED orientation fault finding"
+ },
+ "elec202511": {
+  "code": "HSC-M4-T2-D4",
+  "confidence": "high",
+  "why": "diodes rectify AC current"
+ },
+ "elec202512": {
+  "code": "HSC-M4-T2-D7",
+  "confidence": "high",
+  "why": "NOR versus NAND gate"
+ },
+ "elec202513": {
+  "code": "HSC-M4-T2-D59",
+  "confidence": "high",
+  "why": "sketch missing circuit symbols"
+ },
+ "elec202514": {
+  "code": "HSC-M4-T2-D56",
+  "confidence": "high",
+  "why": "power current calculation circuit breaker"
+ },
+ "elec202515": {
+  "code": "HSC-M4-T2-D23",
+  "confidence": "high",
+  "why": "insulation for high voltage"
+ },
+ "elec202516": {
+  "code": "HSC-M2-T1-D19",
+  "confidence": "medium",
+  "why": "legislation sustainability and historical developments"
+ },
+ "graph202501": {
+  "code": "HSC-M1-T1-D1",
+  "confidence": "high",
+  "why": "third angle projection representation"
+ },
+ "graph202502": {
+  "code": "HSC-M3-T1-D8",
+  "confidence": "high",
+  "why": "purpose of assembly drawing"
+ },
+ "graph202503": {
+  "code": "HSC-M3-T1-D13",
+  "confidence": "medium",
+  "why": "CAD layers visibility organisation"
+ },
+ "graph202504": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "high",
+  "why": "advantage of isometric sketches"
+ },
+ "graph202505": {
+  "code": "HSC-M3-T1-D13",
+  "confidence": "low",
+  "why": "vector software scalable graphics"
+ },
+ "graph202506": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "high",
+  "why": "purpose of shadow diagram"
+ },
+ "graph202507": {
+  "code": "HSC-M3-T1-D3",
+  "confidence": "high",
+  "why": "oblique receding edge scales"
+ },
+ "graph202508": {
+  "code": null,
+  "confidence": "medium",
+  "why": "paper size system not covered"
+ },
+ "graph202509": {
+  "code": "HSC-M3-T1-D17",
+  "confidence": "medium",
+  "why": "area from architectural floor plan"
+ },
+ "graph202510": {
+  "code": "HSC-M3-T1-D13",
+  "confidence": "medium",
+  "why": "CAD boolean intersection"
+ },
+ "graph202511": {
+  "code": "HSC-M3-T1-D21",
+  "confidence": "high",
+  "why": "site plan feature for council"
+ },
+ "graph202512": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "medium",
+  "why": "fillet curve in isometric"
+ },
+ "graph202513": {
+  "code": "HSC-M3-T1-D6",
+  "confidence": "medium",
+  "why": "audience of orthogonal versus pictorial"
+ },
+ "graph202514": {
+  "code": "HSC-M3-T1-D1",
+  "confidence": "high",
+  "why": "isometric view from third angle views"
+ },
+ "graph202515": {
+  "code": "HSC-M1-T1-D3",
+  "confidence": "high",
+  "why": "full sectional view A-A"
+ },
+ "graph202516": {
+  "code": "HSC-M2-T1-D19",
+  "confidence": "medium",
+  "why": "legislation sustainability and historical developments"
+ },
+ "metal202501": {
+  "code": "HSC-M3-T2-D21",
+  "confidence": "medium",
+  "why": "identify hammer type"
+ },
+ "metal202502": {
+  "code": "HSC-M1-T2-D25",
+  "confidence": "high",
+  "why": "brass is copper and zinc"
+ },
+ "metal202503": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "knurling on lathe turning"
+ },
+ "metal202504": {
+  "code": "HSC-M1-T2-D31",
+  "confidence": "medium",
+  "why": "zinc galvanising corrosion protection"
+ },
+ "metal202505": {
+  "code": "HSC-M3-T2-D1",
+  "confidence": "high",
+  "why": "power tool safe initial inspection"
+ },
+ "metal202506": {
+  "code": "HSC-M3-T2-D15",
+  "confidence": "high",
+  "why": "buffing definition"
+ },
+ "metal202507": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "forging with red heat hammering"
+ },
+ "metal202508": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "argon shielding gas MIG"
+ },
+ "metal202509": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "nibbler cuts 5mm mild steel"
+ },
+ "metal202510": {
+  "code": "HSC-M3-T2-D11",
+  "confidence": "high",
+  "why": "quenching and tempering"
+ },
+ "metal202511": {
+  "code": "HSC-M3-T2-D3",
+  "confidence": "high",
+  "why": "spring dividers marking out"
+ },
+ "metal202512": {
+  "code": "HSC-M1-T2-D36",
+  "confidence": "high",
+  "why": "rivets versus screws fasteners"
+ },
+ "metal202513": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "medium",
+  "why": "cutting fluids when machining"
+ },
+ "metal202514": {
+  "code": "HSC-M3-T2-D4",
+  "confidence": "high",
+  "why": "internal thread on lathe"
+ },
+ "metal202515": {
+  "code": "HSC-M1-T2-D34",
+  "confidence": "high",
+  "why": "hollow tube versus solid section"
+ },
+ "metal202516": {
+  "code": "HSC-M2-T1-D19",
+  "confidence": "medium",
+  "why": "legislation sustainability and historical developments"
+ },
+ "multi202501": {
+  "code": "HSC-M4-T5-D2",
+  "confidence": "high",
+  "why": "purpose of paragraph formatting"
+ },
+ "multi202502": {
+  "code": "HSC-M4-T5-D13",
+  "confidence": "high",
+  "why": "screenshot tools screen capture"
+ },
+ "multi202503": {
+  "code": "HSC-M2-T2-D65",
+  "confidence": "high",
+  "why": "compression affects streamed sound quality"
+ },
+ "multi202504": {
+  "code": "HSC-M4-T5-D20",
+  "confidence": "high",
+  "why": "contrast filter effect"
+ },
+ "multi202505": {
+  "code": "HSC-M2-T2-D27",
+  "confidence": "high",
+  "why": "slow motion special effect"
+ },
+ "multi202506": {
+  "code": "HSC-M2-T2-D38",
+  "confidence": "medium",
+  "why": "rigging in 3D animation"
+ },
+ "multi202507": {
+  "code": "HSC-M2-T2-D16",
+  "confidence": "medium",
+  "why": "processor for smooth video playback"
+ },
+ "multi202508": {
+  "code": "HSC-M2-T2-D60",
+  "confidence": "high",
+  "why": "PDF editing limitation"
+ },
+ "multi202509": {
+  "code": "HSC-M2-T2-D31",
+  "confidence": "medium",
+  "why": "animation definition as multimedia element"
+ },
+ "multi202510": {
+  "code": "HSC-M2-T2-D53",
+  "confidence": "high",
+  "why": "age verification adult content"
+ },
+ "multi202511": {
+  "code": "HSC-M4-T5-D12",
+  "confidence": "high",
+  "why": "PNG instead of JPEG"
+ },
+ "multi202512": {
+  "code": "HSC-M4-T5-D20",
+  "confidence": "high",
+  "why": "manipulate banner image"
+ },
+ "multi202513": {
+  "code": "HSC-M2-T2-D16",
+  "confidence": "high",
+  "why": "analogue versus digital video"
+ },
+ "multi202514": {
+  "code": "HSC-M2-T2-D43",
+  "confidence": "high",
+  "why": "motion capture advantages"
+ },
+ "multi202515": {
+  "code": "HSC-M2-T2-D77",
+  "confidence": "high",
+  "why": "ethical use image manipulation"
+ },
+ "multi202516": {
+  "code": "HSC-M2-T1-D19",
+  "confidence": "medium",
+  "why": "legislation sustainability and historical developments"
+ },
+ "timber202501": {
+  "code": "HSC-M1-T2-D137",
+  "confidence": "high",
+  "why": "stopped housing conceals joint"
+ },
+ "timber202502": {
+  "code": "HSC-M1-T2-D139",
+  "confidence": "high",
+  "why": "scrap wood prevents drilling splintering"
+ },
+ "timber202503": {
+  "code": "HSC-M1-T2-D142",
+  "confidence": "high",
+  "why": "tailstock supports woodturning workpiece"
+ },
+ "timber202504": {
+  "code": "HSC-M1-T2-D100",
+  "confidence": "high",
+  "why": "pictorial versus working drawing"
+ },
+ "timber202505": {
+  "code": "HSC-M1-T2-D148",
+  "confidence": "high",
+  "why": "laminated timber stronger"
+ },
+ "timber202506": {
+  "code": "HSC-M1-T2-D113",
+  "confidence": "high",
+  "why": "rails stabilise frame components"
+ },
+ "timber202507": {
+  "code": "HSC-M1-T2-D59",
+  "confidence": "high",
+  "why": "plywood delaminates with moisture"
+ },
+ "timber202508": {
+  "code": "HSC-M1-T2-D76",
+  "confidence": "high",
+  "why": "mechanical drawer runners"
+ },
+ "timber202509": {
+  "code": "HSC-M1-T2-D131",
+  "confidence": "high",
+  "why": "tenon one third thickness"
+ },
+ "timber202510": {
+  "code": "HSC-M1-T2-D164",
+  "confidence": "high",
+  "why": "order of finishing operations"
+ },
+ "timber202511": {
+  "code": "HSC-M1-T2-D114",
+  "confidence": "high",
+  "why": "drawer measurements from carcase"
+ },
+ "timber202512": {
+  "code": "HSC-M1-T2-D134",
+  "confidence": "high",
+  "why": "carcase joint characteristics"
+ },
+ "timber202513": {
+  "code": "HSC-M1-T2-D169",
+  "confidence": "medium",
+  "why": "band saw versus table saw"
+ },
+ "timber202514": {
+  "code": "HSC-M1-T2-D149",
+  "confidence": "high",
+  "why": "bending curved feature legs"
+ },
+ "timber202515": {
+  "code": "HSC-M1-T2-D173",
+  "confidence": "medium",
+  "why": "high-risk machinery maintenance procedures"
+ },
+ "timber202516": {
+  "code": "HSC-M2-T1-D19",
+  "confidence": "medium",
+  "why": "legislation sustainability and historical developments"
+ }
+}

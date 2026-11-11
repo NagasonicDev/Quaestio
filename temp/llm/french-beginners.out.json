@@ -1,0 +1,552 @@
+{
+ "fb202001": {
+  "code": null,
+  "confidence": "high",
+  "why": "weather forecast/places theme, no module dot"
+ },
+ "fb202002": {
+  "code": null,
+  "confidence": "low",
+  "why": "instructions context unclear, no theme evidence"
+ },
+ "fb202003": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "school context; why-question needs meaning"
+ },
+ "fb202004": {
+  "code": null,
+  "confidence": "low",
+  "why": "announcement audience/offer, theme unclear"
+ },
+ "fb202005": {
+  "code": "HSC-M4-D5",
+  "confidence": "medium",
+  "why": "leisure plans; listening for specific details"
+ },
+ "fb202006": {
+  "code": null,
+  "confidence": "low",
+  "why": "announcement purpose/process, theme unclear"
+ },
+ "fb202007": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "job requirements; comprehending work-ad meaning"
+ },
+ "fb202008": {
+  "code": null,
+  "confidence": "low",
+  "why": "decisions made, no theme identified"
+ },
+ "fb202009": {
+  "code": "HSC-M4-D7",
+  "confidence": "medium",
+  "why": "schoolies with friend; inferring likelihood"
+ },
+ "fb202010": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "school transport; benefits comprehension"
+ },
+ "fb202011": {
+  "code": null,
+  "confidence": "high",
+  "why": "forest/wildlife places theme, no module"
+ },
+ "fb202012": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "school canteens; explaining figurative meaning"
+ },
+ "fb202013": {
+  "code": null,
+  "confidence": "high",
+  "why": "family/Christmas culture, no module dot"
+ },
+ "fb202014": {
+  "code": null,
+  "confidence": "high",
+  "why": "phone repair consumer text, no module"
+ },
+ "fb202015": {
+  "code": "HSC-M4-D1",
+  "confidence": "high",
+  "why": "email invitation to concert with friend"
+ },
+ "fb202016": {
+  "code": "HSC-M3-D2",
+  "confidence": "high",
+  "why": "persuasive letter re friend's part-time job"
+ },
+ "fb202017": {
+  "code": null,
+  "confidence": "high",
+  "why": "family holiday refusal, family theme"
+ },
+ "fb202018": {
+  "code": "HSC-M6-D16",
+  "confidence": "medium",
+  "why": "not university next year; future plans extended text"
+ },
+ "fb202101": {
+  "code": null,
+  "confidence": "low",
+  "why": "horoscope prediction, no module theme"
+ },
+ "fb202102": {
+  "code": null,
+  "confidence": "low",
+  "why": "identify speaker only, no theme"
+ },
+ "fb202103": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "compare two professionals; job details"
+ },
+ "fb202104": {
+  "code": null,
+  "confidence": "low",
+  "why": "helping Leo, theme unclear"
+ },
+ "fb202105": {
+  "code": null,
+  "confidence": "medium",
+  "why": "social media feature, technology theme"
+ },
+ "fb202106": {
+  "code": null,
+  "confidence": "low",
+  "why": "product advertisement, theme unclear"
+ },
+ "fb202107": {
+  "code": "HSC-M4-D7",
+  "confidence": "low",
+  "why": "collection hobby; inferring significance"
+ },
+ "fb202108": {
+  "code": null,
+  "confidence": "high",
+  "why": "unique flight, travel theme"
+ },
+ "fb202109": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "work from home; inferring likelihood"
+ },
+ "fb202110": {
+  "code": null,
+  "confidence": "high",
+  "why": "messaging mother, family theme"
+ },
+ "fb202111": {
+  "code": null,
+  "confidence": "high",
+  "why": "3D prosthetics, health/tech theme"
+ },
+ "fb202112": {
+  "code": null,
+  "confidence": "high",
+  "why": "senior share housing, home/community theme"
+ },
+ "fb202113": {
+  "code": "HSC-M3-D3",
+  "confidence": "medium",
+  "why": "principal email purpose; school context"
+ },
+ "fb202114": {
+  "code": null,
+  "confidence": "medium",
+  "why": "new French words, language/culture theme"
+ },
+ "fb202115": {
+  "code": "HSC-M3-D2",
+  "confidence": "high",
+  "why": "note to teacher re dropping subject"
+ },
+ "fb202116": {
+  "code": "HSC-M4-D1",
+  "confidence": "medium",
+  "why": "message to best friend re car"
+ },
+ "fb202117": {
+  "code": "HSC-M4-D1",
+  "confidence": "medium",
+  "why": "informal letter about weekend with friends"
+ },
+ "fb202118": {
+  "code": "HSC-M4-D1",
+  "confidence": "medium",
+  "why": "letter re new leisure activity spending"
+ },
+ "fb202201": {
+  "code": null,
+  "confidence": "low",
+  "why": "why leaving message, theme unclear"
+ },
+ "fb202202": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "school presentation notice; table details"
+ },
+ "fb202203": {
+  "code": null,
+  "confidence": "low",
+  "why": "compare two venues/brands, theme unclear"
+ },
+ "fb202204": {
+  "code": "HSC-M4-D7",
+  "confidence": "high",
+  "why": "party tonight; inferring likelihood"
+ },
+ "fb202205": {
+  "code": null,
+  "confidence": "low",
+  "why": "attitude change, theme unclear"
+ },
+ "fb202206": {
+  "code": null,
+  "confidence": "medium",
+  "why": "sneaker resale, retail/consumer theme"
+ },
+ "fb202207": {
+  "code": null,
+  "confidence": "low",
+  "why": "e-sport message to parents, theme ambiguous"
+ },
+ "fb202208": {
+  "code": "HSC-M6-D2",
+  "confidence": "high",
+  "why": "experiences shape future aspirations; listening"
+ },
+ "fb202209": {
+  "code": null,
+  "confidence": "high",
+  "why": "destination interest, travel theme"
+ },
+ "fb202210": {
+  "code": null,
+  "confidence": "low",
+  "why": "Paul's motivation for project, theme unclear"
+ },
+ "fb202211": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "swimming truck for rural schools; school theme"
+ },
+ "fb202212": {
+  "code": null,
+  "confidence": "medium",
+  "why": "singer profile, culture/media theme"
+ },
+ "fb202213": {
+  "code": "HSC-M6-D4",
+  "confidence": "high",
+  "why": "speech to school leavers about future paths"
+ },
+ "fb202214": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "100-year-old schoolgirl; education theme"
+ },
+ "fb202215": {
+  "code": null,
+  "confidence": "high",
+  "why": "balcony holidays, travel theme"
+ },
+ "fb202216": {
+  "code": "HSC-M3-D2",
+  "confidence": "high",
+  "why": "message outlining excursion details"
+ },
+ "fb202217": {
+  "code": null,
+  "confidence": "high",
+  "why": "brother's birthday speech, family theme"
+ },
+ "fb202218": {
+  "code": null,
+  "confidence": "high",
+  "why": "New Year's Eve celebration, holidays theme"
+ },
+ "fb202219": {
+  "code": "HSC-M3-D5",
+  "confidence": "high",
+  "why": "email recounting last week at school"
+ },
+ "fb202301": {
+  "code": null,
+  "confidence": "high",
+  "why": "buying ingredients, food/shopping theme"
+ },
+ "fb202302": {
+  "code": null,
+  "confidence": "low",
+  "why": "advertisement audience, theme unclear"
+ },
+ "fb202303": {
+  "code": null,
+  "confidence": "low",
+  "why": "complaint and friend suggestion, theme unclear"
+ },
+ "fb202304": {
+  "code": null,
+  "confidence": "medium",
+  "why": "marathon news report, sport theme"
+ },
+ "fb202305": {
+  "code": null,
+  "confidence": "low",
+  "why": "requests to Christophe, theme unclear"
+ },
+ "fb202306": {
+  "code": null,
+  "confidence": "low",
+  "why": "identify location of conversation, no theme"
+ },
+ "fb202307": {
+  "code": null,
+  "confidence": "low",
+  "why": "predict next utterance, no theme"
+ },
+ "fb202308": {
+  "code": null,
+  "confidence": "low",
+  "why": "Rosie's attitude change, theme unclear"
+ },
+ "fb202309": {
+  "code": null,
+  "confidence": "high",
+  "why": "landmark changes, places/community theme"
+ },
+ "fb202310": {
+  "code": null,
+  "confidence": "low",
+  "why": "parents' opinions on Daniel's plans, mixed theme"
+ },
+ "fb202311": {
+  "code": null,
+  "confidence": "high",
+  "why": "Paris honey/Notre Dame, places theme"
+ },
+ "fb202312": {
+  "code": null,
+  "confidence": "high",
+  "why": "athlete profile, sport/culture theme"
+ },
+ "fb202313": {
+  "code": null,
+  "confidence": "medium",
+  "why": "exchange diary, host family/holiday theme"
+ },
+ "fb202314": {
+  "code": null,
+  "confidence": "high",
+  "why": "share-flat advertisement, housing theme"
+ },
+ "fb202315": {
+  "code": null,
+  "confidence": "high",
+  "why": "baguette culture debate, culture theme"
+ },
+ "fb202316": {
+  "code": null,
+  "confidence": "high",
+  "why": "postcard to family while travelling"
+ },
+ "fb202317": {
+  "code": "HSC-M3-D2",
+  "confidence": "high",
+  "why": "diary re holiday job interview success"
+ },
+ "fb202318": {
+  "code": "HSC-M3-D5",
+  "confidence": "high",
+  "why": "email about studying a school subject"
+ },
+ "fb202319": {
+  "code": "HSC-M4-D1",
+  "confidence": "high",
+  "why": "email pros/cons of leisure activity"
+ },
+ "fb202401": {
+  "code": null,
+  "confidence": "medium",
+  "why": "restaurant reservation slip, hospitality theme"
+ },
+ "fb202402": {
+  "code": null,
+  "confidence": "high",
+  "why": "weather forecast Paris, places theme"
+ },
+ "fb202403": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "pastry chef career path; work theme"
+ },
+ "fb202404": {
+  "code": null,
+  "confidence": "high",
+  "why": "police arrest, crime/news theme"
+ },
+ "fb202405": {
+  "code": null,
+  "confidence": "medium",
+  "why": "community proposal debate, community theme"
+ },
+ "fb202406": {
+  "code": null,
+  "confidence": "high",
+  "why": "tourist location experiences, travel theme"
+ },
+ "fb202407": {
+  "code": "HSC-M3-D9",
+  "confidence": "high",
+  "why": "principal justifying school change"
+ },
+ "fb202408": {
+  "code": null,
+  "confidence": "high",
+  "why": "fast-food adapting to France, culture theme"
+ },
+ "fb202409": {
+  "code": "HSC-M6-D2",
+  "confidence": "high",
+  "why": "speakers' plans next year; listening"
+ },
+ "fb202410": {
+  "code": null,
+  "confidence": "high",
+  "why": "space cat history, no module"
+ },
+ "fb202411": {
+  "code": null,
+  "confidence": "high",
+  "why": "e-scooter ban, transport/community theme"
+ },
+ "fb202412": {
+  "code": null,
+  "confidence": "medium",
+  "why": "student cost of living, food theme"
+ },
+ "fb202413": {
+  "code": "HSC-M3-D9",
+  "confidence": "medium",
+  "why": "right to disconnect, work theme"
+ },
+ "fb202414": {
+  "code": null,
+  "confidence": "high",
+  "why": "bedbugs epidemic, community/health theme"
+ },
+ "fb202415": {
+  "code": "HSC-M4-D1",
+  "confidence": "high",
+  "why": "invitation to friend's birthday party"
+ },
+ "fb202416": {
+  "code": null,
+  "confidence": "high",
+  "why": "new pet changes family life, family theme"
+ },
+ "fb202417": {
+  "code": "HSC-M3-D5",
+  "confidence": "high",
+  "why": "school assembly speech about school memory"
+ },
+ "fb202418": {
+  "code": null,
+  "confidence": "high",
+  "why": "speech at family gathering, family theme"
+ },
+ "fb202501": {
+  "code": null,
+  "confidence": "low",
+  "why": "purpose of call, theme unclear"
+ },
+ "fb202502": {
+  "code": null,
+  "confidence": "medium",
+  "why": "coffee purchase table, shopping theme"
+ },
+ "fb202503": {
+  "code": null,
+  "confidence": "low",
+  "why": "match picture to description, no theme"
+ },
+ "fb202504": {
+  "code": null,
+  "confidence": "high",
+  "why": "giving directions, places theme"
+ },
+ "fb202505": {
+  "code": "HSC-M3-D9",
+  "confidence": "high",
+  "why": "Pierre's subject choices; school theme"
+ },
+ "fb202506": {
+  "code": "HSC-M3-D9",
+  "confidence": "high",
+  "why": "ideal candidate for job; work theme"
+ },
+ "fb202507": {
+  "code": null,
+  "confidence": "low",
+  "why": "personalities differ, theme unclear"
+ },
+ "fb202508": {
+  "code": null,
+  "confidence": "low",
+  "why": "Gaston/Molly details, theme unclear"
+ },
+ "fb202509": {
+  "code": null,
+  "confidence": "medium",
+  "why": "teacher and travel agent, travel theme"
+ },
+ "fb202510": {
+  "code": null,
+  "confidence": "high",
+  "why": "flying taxis, transport/innovation theme"
+ },
+ "fb202511": {
+  "code": null,
+  "confidence": "medium",
+  "why": "hospital volunteering, community theme"
+ },
+ "fb202512": {
+  "code": null,
+  "confidence": "high",
+  "why": "intergenerational childcare, family/community theme"
+ },
+ "fb202513": {
+  "code": null,
+  "confidence": "high",
+  "why": "winter desserts, food/culture theme"
+ },
+ "fb202514": {
+  "code": null,
+  "confidence": "high",
+  "why": "house swapping holidays, travel theme"
+ },
+ "fb202515": {
+  "code": null,
+  "confidence": "medium",
+  "why": "cousin evening plan, family/social theme"
+ },
+ "fb202516": {
+  "code": "HSC-M4-D1",
+  "confidence": "high",
+  "why": "email to friend reflecting on shared day"
+ },
+ "fb202517": {
+  "code": "HSC-M6-D16",
+  "confidence": "high",
+  "why": "email about university plans next year"
+ },
+ "fb202518": {
+  "code": "HSC-M3-D5",
+  "confidence": "high",
+  "why": "school multicultural day plans email"
+ }
+}

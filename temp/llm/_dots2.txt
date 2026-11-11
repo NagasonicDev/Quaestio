@@ -1,0 +1,359 @@
+PART2 dots=358 qs=31
+PRE-M1-T1-D1 :: Algebraic techniques ~ Use index laws to simplify expressions and solve problems involving positive, negative, zero or fractional indices
+PRE-M1-T1-D2 :: Algebraic techniques ~ Expand, factorise and simplify algebraic expressions
+PRE-M1-T1-D3 :: Algebraic techniques ~ Simplify expressions involving algebraic fractions
+PRE-M1-T1-D4 :: Algebraic techniques ~ Expand and simplify expressions involving surds
+PRE-M1-T1-D5 :: Algebraic techniques ~ Identify a conjugate of , and rationalise the denominators of expressions of the form and , where , , and are positive rational numbers
+PRE-M1-T1-D6 :: Algebraic techniques ~ Solve quadratic equations by factorisation, completing the square and using the quadratic formula where , and are real numbers and
+PRE-M1-T1-D7 :: Algebraic techniques ~ Define the discriminant as and use it to solve problems involving the number of real roots of a quadratic equation and determine the conditions for roots to be equal, distinct, real or rational
+PRE-M1-T2-D1 :: Introduction to functions and relations ~ Describe a relation between two sets as an association between the elements of one set and the elements of the other set
+PRE-M1-T2-D2 :: Introduction to functions and relations ~ Define a real function of a real variable as a relation where each element of a given set is associated with exactly one element of the second set
+PRE-M1-T2-D3 :: Introduction to functions and relations ~ Recognise that a relation is a rule which can be represented by an algebraic formula, a table of values, a set of ordered pairs or a graph
+PRE-M1-T2-D4 :: Introduction to functions and relations ~ Use the notation to identify the unique value of associated with when working with functions, and refer to it as the value of at
+PRE-M1-T2-D5 :: Introduction to functions and relations ~ Refer to in a function as the independent variable of the function, and refer to as the dependent variable
+PRE-M1-T2-D6 :: Introduction to functions and relations ~ Substitute numeric and algebraic expressions into the formulas of functions
+PRE-M1-T2-D7 :: Introduction to functions and relations ~ Apply the vertical line test on the graph of a relation to determine whether it represents a function
+PRE-M1-T2-D8 :: Introduction to functions and relations ~ Define the domain of a function as the set of real numbers on which is defined
+PRE-M1-T2-D9 :: Introduction to functions and relations ~ Define the range of a function as the set of values of obtained as varies over the domain of
+PRE-M1-T2-D10 :: Introduction to functions and relations ~ Refer to a value in the domain of a function at which the function is 0 as a zero of the function
+PRE-M1-T2-D11 :: Introduction to functions and relations ~ Recognise that the -intercepts of the graph of are its zeroes, the solutions of , and that the -intercept is
+PRE-M1-T3-D1 :: Linear functions ~ Determine the equations of straight lines in gradient–intercept form with gradient and -intercept
+PRE-M1-T3-D2 :: Linear functions ~ Determine the equations of straight lines in general form , where , and are constants
+PRE-M1-T3-D3 :: Linear functions ~ Determine the equation of a straight line passing through a point with gradient using the point–gradient formula
+PRE-M1-T3-D4 :: Linear functions ~ Determine the equation of a straight line passing through two points and by calculating its gradient using the formula
+PRE-M1-T3-D5 :: Linear functions ~ Determine the -intercept and -intercept of a straight line given its equation
+PRE-M1-T3-D6 :: Linear functions ~ Choose and apply appropriate techniques to graph a straight line given its equation
+PRE-M1-T3-D7 :: Linear functions ~ Find the equation of a line that is parallel or perpendicular to a given line
+PRE-M1-T3-D8 :: Linear functions ~ Solve linear inequalities and graph the solution on a number line
+PRE-M1-T4-D1 :: Quadratic and cubic functions ~ Identify the -intercepts of a parabola whose quadratic function is expressed in factored form
+PRE-M1-T4-D2 :: Quadratic and cubic functions ~ Use the discriminant to determine the number of -intercepts on a parabola and justify its position in relation to the -axis
+PRE-M1-T4-D3 :: Quadratic and cubic functions ~ Show by completing the square on the general quadratic that the axis of symmetry is where , and are constants
+PRE-M1-T4-D4 :: Quadratic and cubic functions ~ Identify the axis of symmetry and vertex of a parabola by completing the square on its quadratic function
+PRE-M1-T4-D5 :: Quadratic and cubic functions ~ Choose and apply appropriate techniques to graph a parabola of the form by identifying its -intercepts if they exist, its -intercept, its axis of symmetry using and its vertex
+PRE-M1-T4-D6 :: Quadratic and cubic functions ~ Find the equation of a parabola given sufficient graphical features
+PRE-M1-T4-D7 :: Quadratic and cubic functions ~ Use the fact that two quadratic functions are equal for all values of if and only if the corresponding coefficients are equal to solve related problems
+PRE-M1-T4-D8 :: Quadratic and cubic functions ~ Recognise that solving for some constant corresponds to finding the -coordinate(s) of the intersection of the graphs and
+PRE-M1-T4-D9 :: Quadratic and cubic functions ~ Solve problems by finding the solution to simultaneous equations involving a linear and a quadratic function, or two quadratic functions, both algebraically and graphically
+PRE-M1-T4-D10 :: Quadratic and cubic functions ~ Solve quadratic inequalities
+PRE-M1-T4-D11 :: Quadratic and cubic functions ~ Recognise and graph cubic functions of the form and , where , , and are constants and
+PRE-M1-T5-D1 :: Reciprocal functions ~ Graph functions of the form , where is a constant and , and identify their hyperbolic shape and their asymptotes
+PRE-M1-T5-D2 :: Reciprocal functions ~ Describe the behaviour of as and
+PRE-M1-T6-D1 :: Constructing and using functions ~ Construct and use linear functions to model and solve problems in real-world situations, identifying the independent and dependent variables and any restrictions on these variables, and justify conclusions in the context of the problem
+PRE-M1-T6-D2 :: Constructing and using functions ~ Use linear inequalities to model and solve problems in real-world situations, and justify conclusions in the context of the problem
+PRE-M1-T6-D3 :: Constructing and using functions ~ Solve practical problems involving a pair of simultaneous linear equations both algebraically and graphically, with and without graphing applications, and justify conclusions in the context of the problem
+PRE-M1-T6-D4 :: Constructing and using functions ~ Construct and use simultaneous equations to model and solve a problem where cost and revenue are represented by linear equations, identify and analyse the break-even point, and justify conclusions in the context of the problem
+PRE-M1-T6-D5 :: Constructing and using functions ~ Model and solve practical problems involving quadratic functions and justify conclusions in the context of the problem
+PRE-M1-T7-D1 :: Direct and inverse variation ~ Develop models of the form , where is a non-zero constant, from descriptions of situations in which one quantity varies directly with another
+PRE-M1-T7-D2 :: Direct and inverse variation ~ Develop the model , where is a non-zero constant, from descriptions of situations in which one quantity varies inversely with another
+PRE-M1-T7-D3 :: Direct and inverse variation ~ Evaluate in the equations and , given one pair of values for the variables, and use the resulting formula to find other values of the variables
+PRE-M1-T7-D4 :: Direct and inverse variation ~ Analyse and solve problems involving direct and inverse variation
+PRE-M1-T8-D1 :: Circles and semicircles ~ Derive the equation of a circle of radius with centre at the origin by considering Pythagoras’ theorem
+PRE-M1-T8-D2 :: Circles and semicircles ~ Graph circles of the form from their equations
+PRE-M1-T8-D3 :: Circles and semicircles ~ Determine the equation of a circle of the form given its graph
+PRE-M1-T8-D4 :: Circles and semicircles ~ Identify and graph the semicircles , , and
+PRE-M1-T9-D1 :: Properties of functions, relations and graphs ~ Extend the definitions of domain and range to relations
+PRE-M1-T9-D2 :: Properties of functions, relations and graphs ~ Recognise domains and ranges of functions and relations given in interval notation, as inequalities and as worded descriptions
+PRE-M1-T9-D3 :: Properties of functions, relations and graphs ~ Determine and describe the domain and range of functions and relations, using interval notation, inequalities or worded descriptions
+PRE-M1-T9-D4 :: Properties of functions, relations and graphs ~ Define a function to be even if its graph is unchanged under reflection in the -axis, and odd if its graph is unchanged under rotation of about the origin
+PRE-M1-T9-D5 :: Properties of functions, relations and graphs ~ Develop and use the tests that a function is odd if and a function is even if
+PRE-M1-T9-D6 :: Properties of functions, relations and graphs ~ Solve problems involving even and odd functions
+PRE-M1-T9-D7 :: Properties of functions, relations and graphs ~ Use the composite function , where the output of becomes the input of
+PRE-M1-T9-D8 :: Properties of functions, relations and graphs ~ Determine the equations of composite functions
+PRE-M1-T10-D1 :: Piecewise-defined functions ~ Interpret piecewise-defined functions, where the function is defined differently in different parts of the domain
+PRE-M1-T10-D2 :: Piecewise-defined functions ~ Graph piecewise-defined functions involving functions covered in the scope of the Mathematics Advanced course, test if they are even or odd, and determine the domain and range
+PRE-M1-T10-D3 :: Piecewise-defined functions ~ Define informally that a function is continuous at a point if the curve can be drawn through the point without lifting the pen off the paper
+PRE-M1-T10-D4 :: Piecewise-defined functions ~ Identify points where piecewise-defined functions and other functions are not continuous
+PRE-M1-T10-D5 :: Piecewise-defined functions ~ Define a discontinuity of a function informally as a point where the function is not continuous
+PRE-M1-T11-D1 :: Absolute value functions ~ Define the absolute value of a number , also known as the magnitude of , to be the distance from the origin to on the number line
+PRE-M1-T11-D2 :: Absolute value functions ~ Establish and use the piecewise definition
+PRE-M1-T11-D3 :: Absolute value functions ~ Show using numerical substitutions that and use the result
+PRE-M1-T11-D4 :: Absolute value functions ~ Graph the function , describe its symmetry, and identify its domain and range
+PRE-M1-T11-D5 :: Absolute value functions ~ Graph with and without graphing applications, and identify its symmetry, domain and range
+PRE-M1-T11-D6 :: Absolute value functions ~ Solve absolute value equations of the form algebraically and graphically
+PRE-M2-T1-D1 :: Trigonometry with acute angles ~ Use Pythagoras’ theorem to find the exact sine, cosine and tangent ratios for angles of , and
+PRE-M2-T1-D2 :: Trigonometry with acute angles ~ Apply trigonometry to solve problems involving right-angled triangles in two dimensions, true and compass bearings, and angles of elevation and depression
+PRE-M2-T2-D1 :: Trigonometry with angles of any magnitude ~ Represent angles of any magnitude using rays from the origin in the Cartesian plane and describe how one ray represents infinitely many angles
+PRE-M2-T2-D2 :: Trigonometry with angles of any magnitude ~ Develop the definitions , and , where is a point on the circle of radius , centred at the origin, and is the angle between the positive -axis and the radius drawn to this point
+PRE-M2-T2-D3 :: Trigonometry with angles of any magnitude ~ Use the definitions , and to evaluate , and where is a multiple of , and identify the values of for which these ratios are undefined
+PRE-M2-T2-D4 :: Trigonometry with angles of any magnitude ~ Extend and apply the definitions , and for angles of any magnitude
+PRE-M2-T2-D5 :: Trigonometry with angles of any magnitude ~ Identify the related angle of an angle of any magnitude, excluding multiples of , as the acute angle between the ray and the -axis and obtain the values of the trigonometric functions of an angle of any magnitude from the trigonometric functions of the related angle
+PRE-M2-T2-D6 :: Trigonometry with angles of any magnitude ~ Develop and use the trigonometric ratios for angles that can be written in the form , and , where
+PRE-M2-T2-D7 :: Trigonometry with angles of any magnitude ~ Establish and use the results , and
+PRE-M2-T2-D8 :: Trigonometry with angles of any magnitude ~ Examine the proof of the sine rule , cosine rule and the area of a triangle formula for a given triangle
+PRE-M2-T2-D9 :: Trigonometry with angles of any magnitude ~ Use graphing applications or geometric construction to examine the ambiguous case of the sine rule, in which there are two possible solutions for an angle, and the condition for it to arise
+PRE-M2-T2-D10 :: Trigonometry with angles of any magnitude ~ Apply the sine rule, cosine rule and formula for the area of a triangle to solve problems where angles are measured in degrees, or degrees and minutes
+PRE-M2-T3-D1 :: Radians ~ Recognise that both ratios and are equal to where is the angle at the centre of a circle subtended by the arc
+PRE-M2-T3-D2 :: Radians ~ Define the angle size of in radian measure as the ratio
+PRE-M2-T3-D3 :: Radians ~ Explain why radians and
+PRE-M2-T3-D4 :: Radians ~ Convert between degrees and radians and find the exact sine, cosine and tangent ratios for integer multiples of and
+PRE-M2-T3-D5 :: Radians ~ Graph , and over domains given in degrees or radians, showing intercepts with the -axis and -axis and any asymptotes, determine their domains and ranges, and period and amplitude where appropriate, and whether each is even or odd or neither
+PRE-M2-T3-D6 :: Radians ~ Establish and use the formula for the length of arc subtending an angle in radians at the centre of a circle of radius
+PRE-M2-T3-D7 :: Radians ~ Prove and use the formula for the area of a sector with angle in radians at the centre of a circle of radius
+PRE-M2-T3-D8 :: Radians ~ Solve problems involving arc lengths and areas of major and minor sectors and segments
+PRE-M3-D1 :: Trigonometric identities and equations ~ Define the trigonometric functions , and for acute angles using ratios of sides in a right-angled triangle
+PRE-M3-D2 :: Trigonometric identities and equations ~ Find the exact secant, cosecant and cotangent ratios for angles of , and
+PRE-M3-D3 :: Trigonometric identities and equations ~ Justify the values of , and at and by examining the ratios of sides in a right-angled triangle as tends to and
+PRE-M3-D4 :: Trigonometric identities and equations ~ Develop the definitions , and using a circle of radius centred at the origin
+PRE-M3-D5 :: Trigonometric identities and equations ~ Establish the reciprocal ratios , , and , identifying the angles to be excluded in each identity
+PRE-M3-D6 :: Trigonometric identities and equations ~ Determine the exact value of the secant, cosecant and cotangent ratios for angles that are integer multiples of and , if they exist
+PRE-M3-D7 :: Trigonometric identities and equations ~ Establish the identities and , identifying the angles to be excluded in each identity
+PRE-M3-D8 :: Trigonometric identities and equations ~ Prove the complementary angle identities , , , , and identifying the angles to be excluded in each identity
+PRE-M3-D9 :: Trigonometric identities and equations ~ Evaluate trigonometric expressions using angles of any magnitude and complementary angle identities
+PRE-M3-D10 :: Trigonometric identities and equations ~ Solve equations involving trigonometric ratios of angles, specified in degrees or radians, on a restricted domain
+PRE-M3-D11 :: Trigonometric identities and equations ~ Prove the Pythagorean identity , and the identities and
+PRE-M3-D12 :: Trigonometric identities and equations ~ Apply trigonometric identities to solve problems, simplify expressions and prove further trigonometric identities using substitution and/or reduction to and
+PRE-M3-D13 :: Trigonometric identities and equations ~ Solve problems involving trigonometric equations, including those that reduce to quadratic equations, on a restricted domain
+PRE-M4-T1-D1 :: Estimating change ~ Define the average rate of change of with respect to for a function over the domain as , that is , and recognise as the gradient of the secant through and on the graph of
+PRE-M4-T1-D2 :: Estimating change ~ Recognise speed as a rate of change of distance with respect to time
+PRE-M4-T1-D3 :: Estimating change ~ Use the definition for average rate of change to determine the average speed of an object from a given distance–time graph
+PRE-M4-T1-D4 :: Estimating change ~ Describe the difference between the average speed of an object and its instantaneous speed
+PRE-M4-T1-D5 :: Estimating change ~ Determine that the instantaneous speed of an object at time can be approximated by the average speed between its position at time and its position some time later, and explain how this approximation can be improved
+PRE-M4-T1-D6 :: Estimating change ~ Relate the instantaneous speed of an object to the gradient of the tangent at that point on its distance–time graph
+PRE-M4-T1-D7 :: Estimating change ~ Estimate the instantaneous speed of an object from its distance–time graph
+PRE-M4-T1-D8 :: Estimating change ~ Recognise when modelling with a linear function that its gradient is the rate of change and determine the rate of change for linear functions in practical situations
+PRE-M4-T1-D9 :: Estimating change ~ Recognise when modelling with a non-linear function that the rate of change is not constant and is represented by the gradient of the tangent to the curve at each point on the curve
+PRE-M4-T1-D10 :: Estimating change ~ Estimate the instantaneous rate of change of a non-linear function at a given point from a given graph of a practical situation
+PRE-M4-T2-D1 :: The derivative ~ Examine the gradient of a curve at a point on the curve using graphing applications
+PRE-M4-T2-D2 :: The derivative ~ Approximate the gradient of a curve at a point by considering the gradient of the secant through and as the magnitude of approaches zero, using graphing applications or a spreadsheet
+PRE-M4-T2-D3 :: The derivative ~ Infer that is the gradient of and verify the result using graphing applications
+PRE-M4-T2-D4 :: The derivative ~ Define , for any function and any value , to be the gradient of the tangent to the curve at the point if the tangent exists and is not vertical
+PRE-M4-T2-D5 :: The derivative ~ Refer to as the derivative of or the gradient, or derived, function of
+PRE-M4-T2-D6 :: The derivative ~ Define differentiation as the process of finding the derivative of a function
+PRE-M4-T2-D7 :: The derivative ~ Find derivatives of constant and linear functions
+PRE-M4-T2-D8 :: The derivative ~ Define the derivative of the function from first principles, as the limiting value of the gradient of the secant as approaches zero, when this limiting value exists, and use the notation
+PRE-M4-T2-D9 :: The derivative ~ Use first principles to find the derivative of quadratic functions
+PRE-M4-T3-D1 :: Calculations with the derivative ~ Use the notation and for the derivative of when is a function of
+PRE-M4-T3-D2 :: Calculations with the derivative ~ Use the notation and for the derivative of a function
+PRE-M4-T3-D3 :: Calculations with the derivative ~ Use the formula for all real values of
+PRE-M4-T3-D4 :: Calculations with the derivative ~ Apply the fact that the derivative of a sum is the sum of the derivatives: , and the derivative of a multiple of a function is the multiple of its derivative:
+PRE-M4-T3-D5 :: Calculations with the derivative ~ Use the rules for differentiation to find equations of tangents and normals to a curve at points on the curve
+PRE-M4-T3-D6 :: Calculations with the derivative ~ Find points on a curve where the tangent or normal has a given gradient
+PRE-M4-T3-D7 :: Calculations with the derivative ~ Examine and use the relationship between the angle of inclination of a line or tangent to a curve, with the positive -axis, and the gradient, , of that line or tangent, and establish that
+PRE-M4-T3-D8 :: Calculations with the derivative ~ Apply the product rule: if , where and are both differentiable functions of , then or if for differentiable functions and then
+PRE-M4-T3-D9 :: Calculations with the derivative ~ Apply the quotient rule: if , where and are both differentiable functions of then or if then
+PRE-M4-T3-D10 :: Calculations with the derivative ~ Apply the chain rule: if is a differentiable function of , and is a differentiable function of , then or if for differentiable functions and then
+PRE-M4-T3-D11 :: Calculations with the derivative ~ Identify and apply the product, quotient or chain rule, or a combination of the rules, as appropriate to differentiate a given function
+PRE-M4-T4-D1 :: Graphical applications of the derivative ~ Interpret as increasing at when and decreasing at when
+PRE-M4-T4-D2 :: Graphical applications of the derivative ~ Describe the behaviour of a function at a point as stationary when the tangent at the point is parallel to the -axis, and recognise that is stationary at when
+PRE-M4-T4-D3 :: Graphical applications of the derivative ~ Graph for a given graph of a function
+PRE-M4-T4-D4 :: Graphical applications of the derivative ~ Numerically estimate the value of the derivative at a point on the graph of a power of , with and without the use of digital tools
+PRE-M4-T4-D5 :: Graphical applications of the derivative ~ Identify stationary points on the graph of a cubic function, and the values of for which the function is increasing and/or decreasing, by first calculating the derivative, and justify conclusions
+PRE-M4-T5-D1 :: The derivative as a rate of change ~ Interpret as the instantaneous rate of change of the function at
+PRE-M4-T5-D2 :: The derivative as a rate of change ~ Define and distinguish between displacement and distance and between velocity and speed
+PRE-M4-T5-D3 :: The derivative as a rate of change ~ Use graphs of functions and their derivatives, without the use of algebraic techniques, to describe and interpret physical phenomena
+PRE-M4-T5-D4 :: The derivative as a rate of change ~ Use the notation or to represent the velocity of a particle with displacement from a point as a function of time
+PRE-M4-T5-D5 :: The derivative as a rate of change ~ Solve problems by determining the velocity of a particle moving in a straight line, given its displacement from a point as a function of time
+PRE-M5-T1-D1 :: Exponential functions ~ Graph the exponential functions and for constants and where , and , and identify its asymptote, -intercept, domain and range
+PRE-M5-T1-D2 :: Exponential functions ~ Describe the behaviour of and as and
+PRE-M5-T1-D3 :: Exponential functions ~ Examine the gradient of the tangent to the curve at its -intercept for varying values of , and verify using graphing applications that there is a unique number ..., such that the gradient of the tangent to at is 1, and call this number Euler’s number
+PRE-M5-T1-D4 :: Exponential functions ~ Examine the gradient function of with graphing applications and identify that the gradient function is , for some constant depending only on
+PRE-M5-T1-D5 :: Exponential functions ~ Conclude that Euler’s number, , is a unique number such that , that is, is its own derivative
+PRE-M5-T2-D1 :: Logarithmic functions ~ Define the logarithm of a number , where , to any positive base as the index to which is raised to give
+PRE-M5-T2-D2 :: Logarithmic functions ~ Use the notation for the logarithm of to the base
+PRE-M5-T2-D3 :: Logarithmic functions ~ Define the natural logarithm
+PRE-M5-T2-D4 :: Logarithmic functions ~ Use digital tools to determine rational and irrational values of exponential and logarithmic expressions
+PRE-M5-T2-D5 :: Logarithmic functions ~ Explain that is equivalent to for and , and use the equivalence to solve equations of the form , for
+PRE-M5-T2-D6 :: Logarithmic functions ~ Recognise and use the logarithmic properties: for all real , where
+PRE-M5-T2-D7 :: Logarithmic functions ~ Derive the laws of logarithms from the laws of indices , and
+PRE-M5-T2-D8 :: Logarithmic functions ~ Justify the logarithmic results , and
+PRE-M5-T2-D9 :: Logarithmic functions ~ Apply the logarithmic laws and results to simplify expressions, solve equations and prove results, using digital tools where necessary
+PRE-M5-T2-D10 :: Logarithmic functions ~ Prove the change of base rule and use it to solve problems
+PRE-M5-T2-D11 :: Logarithmic functions ~ Graph the logarithmic function for and
+PRE-M5-T2-D12 :: Logarithmic functions ~ Use graphing applications to identify the graphs of and as reflections of each other in the line , in cases where and
+PRE-M6-D1 :: Graph transformations ~ Establish using graphing applications that replacing by in the equation of a graph corresponds to the reflection of the graph in the -axis, and that replacing by corresponds to a reflection in the -axis
+PRE-M6-D2 :: Graph transformations ~ Establish using graphing applications that replacing by in the equation of a graph corresponds to a horizontal translation of a graph by , that replacing by corresponds to a vertical translation by , and recognise that the sign of and determines the direction of the translation
+PRE-M6-D3 :: Graph transformations ~ Describe a horizontal dilation as a stretch from the -axis and a vertical dilation as a stretch from the -axis
+PRE-M6-D4 :: Graph transformations ~ Establish using graphing applications that replacing by in the equation of a graph corresponds to a horizontal dilation of a graph by a factor of , that replacing by corresponds to a vertical dilation by a factor of , and determine the effects on the graph when the magnitude of the dilation factor lies between 0 and 1
+PRE-M6-D5 :: Graph transformations ~ Establish, using graphing applications, replacing by and replacing by in the equation of a graph corresponds to a dilation by a factor of , that is, an enlargement of the graph when and a reduction of the graph when
+PRE-M6-D6 :: Graph transformations ~ Apply reflections, translations and dilations to functions within the scope of the Mathematics Advanced course, excluding trigonometric functions, determine the function rule and the graph of the transformed function, the domain and range of the transformed graph, any intercepts, asymptotes and discontinuities where appropriate, and describe which transformations have been applied
+PRE-M6-D7 :: Graph transformations ~ Use the principles of translations to identify the centre, radius, domain and range of graphs of circles in the form , where , and are constants
+PRE-M6-D8 :: Graph transformations ~ Find the centre and radius of circles of the form , where , and are constants, by completing the squares
+PRE-M6-D9 :: Graph transformations ~ Graph circles given their equations and find the equation of a circle from its graph
+PRE-M6-D10 :: Graph transformations ~ Recognise that the order in which individual transformations are applied to functions is important
+PRE-M7-T1-D1 :: Sets and set notation ~ Define a set as a collection of objects, called the elements of the set, and represent a set using notation such as and
+PRE-M7-T1-D2 :: Sets and set notation ~ Use the notation or to represent the number of elements in a finite set
+PRE-M7-T1-D3 :: Sets and set notation ~ Define the empty set as the set with no elements, denoted in set notation as
+PRE-M7-T1-D4 :: Sets and set notation ~ Use the notation , or to represent the complement of a set with respect to some universal set
+PRE-M7-T1-D5 :: Sets and set notation ~ Define to be a subset of if all the elements of are elements of
+PRE-M7-T1-D6 :: Sets and set notation ~ Define the intersection of sets and to be the set of elements that are in and in
+PRE-M7-T1-D7 :: Sets and set notation ~ Define the union of sets and to be the set of elements that are in or in
+PRE-M7-T1-D8 :: Sets and set notation ~ Define sets and to be disjoint if , that is, they have no elements in common
+PRE-M7-T1-D9 :: Sets and set notation ~ Use Venn diagrams in practical situations to represent and interpret sets that may intersect in various ways within a universal set
+PRE-M7-T1-D10 :: Sets and set notation ~ Establish and use the rule
+PRE-M7-T2-D1 :: Probability ~ Define an experiment or a trial to be any procedure that can be infinitely repeated and has a well-defined set of possible outcomes known as the sample space, denoted
+PRE-M7-T2-D2 :: Probability ~ Identify an event as a subset of the sample space
+PRE-M7-T2-D3 :: Probability ~ Define the probability of each outcome to be when all the outcomes are equally likely and the probability of the event to be
+PRE-M7-T2-D4 :: Probability ~ Interpret the notation to be the event ‘ does not occur’, interpret to be the event ‘ and both occur’, and interpret to be the event ‘ or occurs’
+PRE-M7-T2-D5 :: Probability ~ Use Venn diagrams to represent the relationship between events within the same sample space, including mutually exclusive events, that is, events that as subsets of the sample space are disjoint
+PRE-M7-T2-D6 :: Probability ~ Establish and use the rules and
+PRE-M7-T2-D7 :: Probability ~ Use arrays and tree diagrams to determine the outcomes and probabilities for multistage events
+PRE-M7-T3-D1 :: Conditional probability ~ Define conditional probability as the probability that an event occurs given that another event has already occurred, and use the notation
+PRE-M7-T3-D2 :: Conditional probability ~ Examine conditional probability by restricting the sample space and event spaces in a Venn diagram, using a two-way table, a tree diagram and other arrays
+PRE-M7-T3-D3 :: Conditional probability ~ Establish that when all outcomes are equally likely by restricting the sample space and event space, and hence , provided
+PRE-M7-T3-D4 :: Conditional probability ~ Use the formulas for to solve practical problems involving conditional probability
+PRE-M7-T3-D5 :: Conditional probability ~ Define two events to be independent if the occurrence of one event does not affect the probability that the other event occurs
+PRE-M7-T3-D6 :: Conditional probability ~ Explain that two events and are independent means and , and show algebraically that if one of these formulas is true, then the other is also true
+PRE-M7-T3-D7 :: Conditional probability ~ Use the formula , and the test for independence to prove that if two events are independent, then , and to prove conversely that if , then and are independent
+PRE-M7-T3-D8 :: Conditional probability ~ Solve practical problems involving independent events
+PRE-M7-T4-D1 :: Data ~ Define a random variable as a variable whose value is the outcome of a random experiment
+PRE-M7-T4-D2 :: Data ~ Compare discrete random variables with continuous random variables, describe their differences, and give practical examples of each
+PRE-M7-T4-D3 :: Data ~ Organise finite datasets using a table or a spreadsheet, listing the values, frequency, relative frequency, cumulative frequency, and cumulative relative frequency
+PRE-M7-T4-D4 :: Data ~ Graph the frequency, relative frequency, and cumulative frequency histograms and polygons of datasets, using spreadsheets or graphing applications, and identify the mode and median from the graphs, and from tables
+PRE-M7-T4-D5 :: Data ~ Use the relative frequency to estimate the probability of results in experiments
+HSC-M1-T1-D1 :: Transformations of trigonometric functions ~ Use graphing applications to explore reflections, translations and dilations of, and confirm that the principles of transformations hold for, the trigonometric functions , and
+HSC-M1-T1-D2 :: Transformations of trigonometric functions ~ Apply the principles of transformations to graph transformations of the trigonometric functions , and , describe which transformations have been applied to and determine the domain, range, horizontal translation, vertical translation, dilation factor, period and amplitude when applicable
+HSC-M1-T1-D3 :: Transformations of trigonometric functions ~ Solve equations and graphical problems involving transformations of the trigonometric functions , or , using graphing applications or otherwise, within a specified domain
+HSC-M1-T2-D1 :: Modelling with functions ~ Model and solve problems involving periodic phenomena using transformations of the trigonometric functions , or , without the use of calculus
+HSC-M1-T2-D2 :: Modelling with functions ~ Model and solve practical problems involving functions and their transformations, within the scope of the Mathematics Advanced course, using graphical and algebraic techniques
+HSC-M1-T2-D3 :: Modelling with functions ~ Recognise that logarithmic scales are useful to represent a variable that ranges over a large set of values and explain when a logarithmic scale is suitable
+HSC-M1-T2-D4 :: Modelling with functions ~ Use logarithmic scales to model and solve problems involving decibels (dB) in acoustics, seismic scales for earthquakes, magnitudes of stars and the pH scale in chemistry
+HSC-M2-T1-D1 :: Sequences and series ~ Define a sequence as an ordered list of objects
+HSC-M2-T1-D2 :: Sequences and series ~ Use the notation , where is a positive integer, to represent the th term of a sequence
+HSC-M2-T1-D3 :: Sequences and series ~ Distinguish between a finite sequence that terminates at its th term, for some whole number , and an infinite sequence that never terminates
+HSC-M2-T1-D4 :: Sequences and series ~ Define the th partial sum of a sequence to be the sum of the first terms of the sequence: , for all whole numbers
+HSC-M2-T1-D5 :: Sequences and series ~ Define a series formally as the sum of the terms of an infinite sequence and use the notation for the series corresponding to the sequence
+HSC-M2-T1-D6 :: Sequences and series ~ Use summation notation to represent the sum of terms to of a sequence where ,
+HSC-M2-T2-D1 :: Arithmetic sequences and series ~ Define a sequence to be an arithmetic sequence, or arithmetic progression (AP), if every difference of successive terms is the same where , that is for some constant called the common difference
+HSC-M2-T2-D2 :: Arithmetic sequences and series ~ Develop the formula for the th term of an AP, where is the first term and , and use it to solve problems
+HSC-M2-T2-D3 :: Arithmetic sequences and series ~ Recognise that is a linear function of in an AP
+HSC-M2-T2-D4 :: Arithmetic sequences and series ~ Develop the formula for the th partial sum of an AP, and use the formula to solve problems
+HSC-M2-T2-D5 :: Arithmetic sequences and series ~ Apply the formulas for arithmetic sequences and their partial sums to model and solve growth and decay problems involving a quantity that is a linear function of time
+HSC-M2-T3-D1 :: Geometric sequences and series ~ Define a sequence to be a geometric sequence, or geometric progression (GP), if every ratio of successive terms is the same where , that is for some non-zero real number called the common ratio
+HSC-M2-T3-D2 :: Geometric sequences and series ~ Develop the formula for the th term of a GP, where is the first term and , and use it to solve problems
+HSC-M2-T3-D3 :: Geometric sequences and series ~ Recognise that is an exponential function of in a GP
+HSC-M2-T3-D4 :: Geometric sequences and series ~ Prove by expansion for whole numbers
+HSC-M2-T3-D5 :: Geometric sequences and series ~ Develop the formula for the sum of the first terms of a GP where , and use this formula to solve problems
+HSC-M2-T3-D6 :: Geometric sequences and series ~ Examine the behaviour of and as for a GP when
+HSC-M2-T3-D7 :: Geometric sequences and series ~ Develop the formula for the limiting sum of a geometric series with , and use this formula to solve problems
+HSC-M2-T3-D8 :: Geometric sequences and series ~ Apply the formulas for geometric sequences and series to model and solve growth and decay problems where a quantity is an exponential function of time
+HSC-M3-T1-D1 :: Differentiation with exponential functions ~ Apply the rules of differentiation to find the derivative of , where and are constants
+HSC-M3-T1-D2 :: Differentiation with exponential functions ~ Use the chain rule to prove , where and are constants and
+HSC-M3-T1-D3 :: Differentiation with exponential functions ~ Prove and use the formula , where is a constant and
+HSC-M3-T1-D4 :: Differentiation with exponential functions ~ Use the chain rule to differentiate functions of the form
+HSC-M3-T2-D1 :: Differentiation with logarithmic functions ~ Use chain rule on the identity to prove the formula for the derivative of the natural logarithm function where
+HSC-M3-T2-D2 :: Differentiation with logarithmic functions ~ Prove and use the formula , where is a constant and
+HSC-M3-T2-D3 :: Differentiation with logarithmic functions ~ Use the chain rule to differentiate functions of the form
+HSC-M3-T3-D1 :: Differentiation with trigonometric functions ~ Determine the formulas and informally by using the graphs of and and verify with graphing applications
+HSC-M3-T3-D2 :: Differentiation with trigonometric functions ~ Use the rules of differentiation to show that
+HSC-M3-T3-D3 :: Differentiation with trigonometric functions ~ Use the rules of differentiation to find the derivatives of , and
+HSC-M3-T3-D4 :: Differentiation with trigonometric functions ~ Use the chain rule to differentiate functions of the form , and
+HSC-M3-T4-D1 :: Using derivatives ~ Apply the product, quotient and chain rules to differentiate functions of the form, or , where and are any of the functions within the scope of the Mathematics Advanced course
+HSC-M3-T4-D2 :: Using derivatives ~ Solve problems involving equations of tangents and normals to curves involving any of the functions within the scope of the Mathematics Advanced course
+HSC-M4-T1-D1 :: Primitive functions ~ Define a primitive of a function as a function whose derivative and recognise the process of finding the primitive as the reverse of differentiation
+HSC-M4-T1-D2 :: Primitive functions ~ Recognise that a function whose derivative is everywhere zero is a constant function
+HSC-M4-T1-D3 :: Primitive functions ~ Prove by differentiation that a primitive of is , for all real
+HSC-M4-T1-D4 :: Primitive functions ~ Prove by differentiation that if and are primitives of and , and is a constant, then is a primitive of , and is a primitive of
+HSC-M4-T1-D5 :: Primitive functions ~ Recognise that primitives of a function are not unique, and that any two primitives of differ by a constant, so that if is a primitive of , the general primitive of is , for some constant
+HSC-M4-T1-D6 :: Primitive functions ~ Determine the primitive of a given function , where is a sum of functions of the form for all real
+HSC-M4-T1-D7 :: Primitive functions ~ Determine the primitive function for functions of the form , for all real , where and are constants
+HSC-M4-T1-D8 :: Primitive functions ~ Use algebraic manipulation to express given functions in forms suitable for determining primitive functions
+HSC-M4-T1-D9 :: Primitive functions ~ Determine , given and an initial condition where and are constants
+HSC-M4-T2-D1 :: The definite integral ~ Examine for a function , which indicates the rate of change of a quantity, the meaning of , where the interval is divided into subintervals of length , and describe as an estimate of the total change in that quantity over the interval
+HSC-M4-T2-D2 :: The definite integral ~ Consider the definite integral as , noting that this implies that the result of a definite integral will be negative when throughout the interval
+HSC-M4-T2-D3 :: The definite integral ~ Define informally that a function is continuous on the interval if it can be drawn between the two endpoints of the interval without taking the pen off the paper
+HSC-M4-T2-D4 :: The definite integral ~ Graph the region between the continuous function and the -axis, where on the interval
+HSC-M4-T2-D5 :: The definite integral ~ Use a graphing application to compare different methods of approximating the area, , of the region between the continuous function and the -axis, where on the interval , by summing the areas of trapezia or rectangles each of width and approximate height for any lying in its base, and observe the effect on the precision of the approximation of as the number of subintervals of increases, that is as
+HSC-M4-T2-D6 :: The definite integral ~ Evaluate the definite integral by calculating areas using geometrical formulas, where the shape of allows such calculations, in cases where throughout , throughout or where changes sign in the interval
+HSC-M4-T3-D1 :: The Fundamental Theorem of Calculus ~ Consider the function defined by and use a graphing application to recognise that is a primitive of
+HSC-M4-T3-D2 :: The Fundamental Theorem of Calculus ~ Recognise the Fundamental Theorem of Calculus as for a continuous function on the interval where is any primitive of
+HSC-M4-T4-D1 :: Indefinite integrals ~ Use the notation for the general primitive of called the indefinite integral of , so that , for some constant , where is any primitive of
+HSC-M4-T4-D2 :: Indefinite integrals ~ Recognise integration as the process of finding the indefinite integral of a function
+HSC-M4-T4-D3 :: Indefinite integrals ~ Use the formula for real
+HSC-M4-T4-D4 :: Indefinite integrals ~ Use the identities and for primitives
+HSC-M4-T4-D5 :: Indefinite integrals ~ Prove by differentiation, and apply , where is a function of , or , for real
+HSC-M4-T5-D1 :: Integration with exponential functions ~ Establish and use the formula
+HSC-M4-T5-D2 :: Integration with exponential functions ~ Establish and use the formula , where and are constants and
+HSC-M4-T5-D3 :: Integration with exponential functions ~ Establish and use the formula , where is a constant and
+HSC-M4-T5-D4 :: Integration with exponential functions ~ Establish and use , where is a function of , or
+HSC-M4-T5-D5 :: Integration with exponential functions ~ Find primitives of functions involving exponential functions
+HSC-M4-T6-D1 :: Integration with logarithmic functions ~ Derive and use the formula where
+HSC-M4-T6-D2 :: Integration with logarithmic functions ~ Establish and use the formula , where and are constants and
+HSC-M4-T6-D3 :: Integration with logarithmic functions ~ Establish and use , where is a function of , or , on a domain where
+HSC-M4-T7-D1 :: Integration with trigonometric functions ~ Establish and use the formulas , and
+HSC-M4-T7-D2 :: Integration with trigonometric functions ~ Establish and use indefinite integrals of the form , where and are constants and , and , and
+HSC-M4-T7-D3 :: Integration with trigonometric functions ~ Determine indefinite integrals of the form , and
+HSC-M4-T8-D1 :: Areas and the definite integral ~ Apply , where is a primitive of , to calculate definite integrals and solve related theoretical problems involving functions within the scope of the Mathematics Advanced course
+HSC-M4-T8-D2 :: Areas and the definite integral ~ Describe, in the case where for all values of in the interval , the area bounded by the graph of the continuous function , the -axis and the lines and , as
+HSC-M4-T8-D3 :: Areas and the definite integral ~ Recognise, in the case where for all values of in the interval , the area bounded by the graph of the continuous function , the -axis and the lines and , as or
+HSC-M4-T8-D4 :: Areas and the definite integral ~ Conclude, for a continuous function on the interval , that (area of regions between curve and -axis lying above the -axis) (area of regions between curve and the -axis lying below the -axis)
+HSC-M4-T8-D5 :: Areas and the definite integral ~ Use definite integrals to solve problems involving the areas of regions bounded by the graph of the continuous function , the -axis and the lines and , in cases where throughout , throughout or where changes sign in the interval , with or without the graph provided
+HSC-M4-T8-D6 :: Areas and the definite integral ~ Use definite integrals to solve problems involving the areas of regions bounded by the graph of the continuous function , the -axis and the lines and , in cases where throughout , throughout or where changes sign in the interval with or without the graph provided
+HSC-M4-T8-D7 :: Areas and the definite integral ~ Use the fact that the graphs of and are reflections of each other in the line to solve problems involving areas between the -axis or -axis and a curve involving either an exponential or logarithmic function
+HSC-M4-T8-D8 :: Areas and the definite integral ~ Recognise and use the result, where is continuous on the interval , for all such that
+HSC-M4-T8-D9 :: Areas and the definite integral ~ Define and use the result , where is continuous on the interval
+HSC-M4-T8-D10 :: Areas and the definite integral ~ Recognise and use symmetry, particularly odd and even functions, to simplify and solve integration problems
+HSC-M4-T8-D11 :: Areas and the definite integral ~ Use the Trapezoidal rule to approximate integrals
+HSC-M4-T8-D12 :: Areas and the definite integral ~ Use an online computational application to evaluate definite and indefinite integrals involving functions within and beyond the scope of the Mathematics Advanced course
+HSC-M4-T8-D13 :: Areas and the definite integral ~ Model and solve practical problems involving integrals and areas of regions bounded by a curve and the -axis, or by a curve and the -axis, involving functions within the scope of the Mathematics Advanced course
+HSC-M5-T1-D1 :: Turning points, inflections and graphing ~ Define a function to be differentiable at if exists, that is if there is a non-vertical tangent to the curve at the point and recognise that if is differentiable at then it is continuous at
+HSC-M5-T1-D2 :: Turning points, inflections and graphing ~ Identify any values of where a function is continuous, but not differentiable, given either the equation of the function or its graph
+HSC-M5-T1-D3 :: Turning points, inflections and graphing ~ Use repeated differentiation to find second derivatives of a function , denoting them by or or
+HSC-M5-T1-D4 :: Turning points, inflections and graphing ~ Analyse the stationary points of a function by testing values for , then classify the stationary points as local minima or local maxima where gradients change around the point, or horizontal points of inflection where gradients have the same sign on both sides of the point
+HSC-M5-T1-D5 :: Turning points, inflections and graphing ~ Interpret the second derivative as the gradient function of the first derivative , and deduce that if the curve is concave up and if the curve is concave down
+HSC-M5-T1-D6 :: Turning points, inflections and graphing ~ Define a point of inflection on a curve as a point where the concavity changes
+HSC-M5-T1-D7 :: Turning points, inflections and graphing ~ Analyse the value of either side of the roots of , and use the resulting concavities to identify which zeroes of are points of inflection
+HSC-M5-T1-D8 :: Turning points, inflections and graphing ~ Use the second derivative to classify a stationary point as a local maximum, local minimum or a horizontal point of inflection
+HSC-M5-T1-D9 :: Turning points, inflections and graphing ~ Graph a function by determining local maxima and minima and points of inflection, horizontal and non-horizontal, considering any even or odd symmetry, the domain, any vertical asymptotes or other discontinuities, and where applicable, the behaviour of a function as
+HSC-M5-T1-D10 :: Turning points, inflections and graphing ~ Graph and for a function , given only a graph of
+HSC-M5-T2-D1 :: Optimisation ~ Define a global maximum of a function to be a point on the graph where , for all in the domain, and define a global minimum similarly
+HSC-M5-T2-D2 :: Optimisation ~ Examine whether any discontinuities or endpoints of the domain on which is being considered are points of maxima or minima
+HSC-M5-T2-D3 :: Optimisation ~ Model optimisation problems in a variety of contexts by defining variables, noting domain restrictions if necessary, and establishing functions to represent the relationship between variables
+HSC-M5-T2-D4 :: Optimisation ~ Solve optimisation problems by using calculus to find local and global maxima and minima of differentiable functions, checking discontinuities of and endpoints of the domain if applicable
+HSC-M5-T2-D5 :: Optimisation ~ Formulate conclusions to optimisation problems by evaluating solutions given the constraints of the domain
+HSC-M5-T3-D1 :: Rates of change ~ Use differentiation to find and interpret the first and second derivatives, and , in practical problems where a quantity is a function of time
+HSC-M5-T3-D2 :: Rates of change ~ Use integration to solve practical problems on the rate of change of a quantity where or is given as a function of time , together with sufficient initial conditions
+HSC-M5-T3-D3 :: Rates of change ~ Describe and examine the graphs of practical situations where the rate of change of a quantity is proportional to the quantity
+HSC-M5-T3-D4 :: Rates of change ~ Explain that if the rate of change of a positive quantity over time is proportional to the size of , then this may be represented by where is the constant of proportionality, and if the quantity is increasing at a rate proportional to the value of at time , while if the quantity is decreasing at a rate proportional to the value of at time
+HSC-M5-T3-D5 :: Rates of change ~ Verify by substitution that the function satisfies the relationship with being the initial value of
+HSC-M5-T3-D6 :: Rates of change ~ Recognise that the equation where , and its solution represent exponential growth when and exponential decay when
+HSC-M5-T3-D7 :: Rates of change ~ Graph the function , where and and and , with and without graphing applications, and identify any asymptotes
+HSC-M5-T3-D8 :: Rates of change ~ Model and solve growth and decay problems in various contexts using , and the graph of for , and justify conclusions in the context of the problem
+HSC-M5-T3-D9 :: Rates of change ~ Determine the velocity and acceleration of a particle moving in a straight line given its displacement from a point as a function of time, and use the notation or to represent acceleration
+HSC-M5-T3-D10 :: Rates of change ~ Solve problems relating to the motion of a particle moving in a straight line, using both differentiation and integration to connect the concepts of displacement, velocity and acceleration
+HSC-M6-T1-D1 :: Discrete random variables ~ Use the relative frequencies of discrete random variable datasets to estimate the probabilities that the random variable takes each of its values, and explain why these estimated probabilities add to 1
+HSC-M6-T1-D2 :: Discrete random variables ~ Denote the probability that the discrete random variable takes the value by , or by if the discrete random variable is understood
+HSC-M6-T1-D3 :: Discrete random variables ~ Define a discrete probability distribution to be the set of values taken by a discrete random variable , together with the probabilities that is the outcome of the experiment
+HSC-M6-T1-D4 :: Discrete random variables ~ Define a discrete random variable to be uniformly distributed if it has finitely many values, all with the same probability, and use it to model random phenomena with equally likely outcomes
+HSC-M6-T1-D5 :: Discrete random variables ~ Recognise the mean, or expected value, or , of a discrete random variable as a measure of centre for its distribution
+HSC-M6-T1-D6 :: Discrete random variables ~ Generate and use the formulas and for the random variable , where is the variance and is the standard deviation of the distribution
+HSC-M6-T1-D7 :: Discrete random variables ~ Recognise that the variance is an expected value because
+HSC-M6-T1-D8 :: Discrete random variables ~ Generate a probability distribution for a given discrete random variable and represent the probability distribution in graphical and tabular form
+HSC-M6-T1-D9 :: Discrete random variables ~ Solve problems involving probabilities, expectation and variance of discrete random variables
+HSC-M6-T2-D1 :: Continuous random variables ~ Estimate the probability that a continuous random variable falls in some interval using relative frequencies and histograms obtained from data
+HSC-M6-T2-D2 :: Continuous random variables ~ Recognise that the probability of a particular value for a continuous random variable is 0 and hence that since when is a continuous random variable
+HSC-M6-T2-D3 :: Continuous random variables ~ Define the cumulative distribution function (CDF), , as the probability of a random variable, , having values less than or equal to , so and
+HSC-M6-T2-D4 :: Continuous random variables ~ Recognise that the cumulative distribution function, , is non-decreasing for all in its domain, and graph cumulative distribution functions, given a formula for , with and without graphing applications
+HSC-M6-T2-D5 :: Continuous random variables ~ Define a probability density function (PDF), , for a random variable with cumulative distribution function as and recognise that
+HSC-M6-T2-D6 :: Continuous random variables ~ Recognise the properties of a probability density function: for all in the domain of and if the domain of is , or if the domain of is all real
+HSC-M6-T2-D7 :: Continuous random variables ~ Apply the properties of a probability density function to solve problems and justify conclusions
+HSC-M6-T2-D8 :: Continuous random variables ~ Find the mode from a given probability density function
+HSC-M6-T2-D9 :: Continuous random variables ~ Obtain the cumulative distribution function using the formula where is a given probability density function defined on the interval
+HSC-M6-T2-D10 :: Continuous random variables ~ Determine and use the probability density function for a continuous uniform distribution for a random variable taking values in the interval
+HSC-M6-T2-D11 :: Continuous random variables ~ Use a cumulative distribution function to calculate the median and quartiles for a continuous random variable
+HSC-M6-T2-D12 :: Continuous random variables ~ Find the probability density function from a given cumulative distribution function
+HSC-M6-T2-D13 :: Continuous random variables ~ Generate the expression for the expected value of a continuous random variable, , where the probability density function is defined on the interval
+HSC-M6-T2-D14 :: Continuous random variables ~ Generate the expression for the variance of a continuous random variable, , where the probability density function is defined on the interval
+HSC-M6-T2-D15 :: Continuous random variables ~ Evaluate the expected value and the variance of a continuous random variable, where the probability density function is defined on the interval , that involve integration of functions within the scope of the Mathematics Advanced course
+HSC-M6-T2-D16 :: Continuous random variables ~ Evaluate the expected value and the variance of a continuous random variable, where the probability density function is defined on the interval , that involve integration of functions beyond the scope of the Mathematics Advanced course using an online computational application
+HSC-M6-T3-D1 :: The normal distribution ~ Identify the normal distribution as a continuous probability distribution that is used to model many naturally occurring phenomena
+HSC-M6-T3-D2 :: The normal distribution ~ Identify the graph of the probability density function of a normal distribution, the normal curve, as an ‘ideal’ bell-shaped curve, symmetrical about its mean which is equal to its mode and median, and as having most values concentrated about the mean
+HSC-M6-T3-D3 :: The normal distribution ~ Identify contexts that can be approximately modelled by a normal random variable
+HSC-M6-T3-D4 :: The normal distribution ~ Use the notation to represent a normally distributed random variable that has mean and standard deviation
+HSC-M6-T3-D5 :: The normal distribution ~ Represent probabilities associated with the normal distribution by areas of shaded regions under the normal curve, which may extend to
+HSC-M6-T3-D6 :: The normal distribution ~ Apply the empirical rule to make judgements and solve problems involving probabilities of normally distributed data: that for normal distributions, approximately 68% of data lie within one standard deviation of the mean, approximately 95% within two standard deviations of the mean and approximately 99.7% within three standard deviations of the mean
+HSC-M6-T3-D7 :: The normal distribution ~ Use graphing applications to explore the normal distribution, graph the probability density function , verify the empirical rule and graph the cumulative distribution function
+HSC-M6-T3-D8 :: The normal distribution ~ Recognise features of the normal curve, and identify the global maximum and points of inflection
+HSC-M6-T3-D9 :: The normal distribution ~ Distinguish between a standard normal distribution with mean 0 and standard deviation 1, and the non-standard normal distribution with mean and standard deviation
+HSC-M6-T3-D10 :: The normal distribution ~ Define the -score, or standardised score, by the formula , where is the mean and is the standard deviation, and is an observed value of a random variable
+HSC-M6-T3-D11 :: The normal distribution ~ Interpret the -score as the number of standard deviations a score lies above or below the mean
+HSC-M6-T3-D12 :: The normal distribution ~ Use -scores to compare scores from different sets of data and justify conclusions
+HSC-M6-T3-D13 :: The normal distribution ~ Use -scores to identify probabilities of events less or more extreme than a given outcome and solve problems using tables for the standard normal distribution
+HSC-M6-T3-D14 :: The normal distribution ~ Solve problems involving finding the mean or standard deviation of a normal random variable given the probability of an event less or more extreme than a given outcome
+HSC-M6-T3-D15 :: The normal distribution ~ Use -scores to make judgements related to probabilities of certain events or given sets of data assuming an underlying normal distribution
+HSC-M7-T1-D1 :: Reducing balance loans ~ Recognise a reducing balance loan algebraically as a compound interest loan with periodic repayments
+HSC-M7-T1-D2 :: Reducing balance loans ~ Examine the effect of varying the interest rate and repayment amount on the time taken to repay a loan, with or without digital tools or by using a given graph
+HSC-M7-T1-D3 :: Reducing balance loans ~ Solve problems that involve reducing balance loans by calculating the total amount paid, equal periodic repayments, the amount still owing and the time taken to repay the loan
+HSC-M7-T2-D1 :: Annuities ~ Identify an annuity as either an investment account with regular, equal contributions and interest compounding at the end of each period, or as a single sum investment from which regular equal withdrawals are made
+HSC-M7-T2-D2 :: Annuities ~ Define and model the future value of an annuity as the sum of all the payments, together with the interest they have earned
+HSC-M7-T2-D3 :: Annuities ~ Examine the effect of varying the amount initially invested, the value of the periodic payment, the interest rate and the duration of the annuity on the total value of the investment, using digital tools
+HSC-M7-T2-D4 :: Annuities ~ Solve problems involving annuities in which payments are made at the end of each time period and the future value of an annuity is calculated at the end of one of these periods using the formula for the sum of the first terms of a geometric sequence

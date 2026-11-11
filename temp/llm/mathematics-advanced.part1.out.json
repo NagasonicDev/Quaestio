@@ -1,0 +1,802 @@
+{
+  "ma202001": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202002": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202003": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202004": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202005": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202006": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202007": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202008": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202009": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202010": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma2020q11": {
+    "code": "PRE-M1-T6-D3",
+    "confidence": "medium",
+    "why": "Linear models intersect; graphical simultaneous equations"
+  },
+  "ma2020q12": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Sum of arithmetic series"
+  },
+  "ma2020q13": {
+    "code": "HSC-M4-T7-D1",
+    "confidence": "high",
+    "why": "Definite integral of sec squared"
+  },
+  "ma2020q14": {
+    "code": "PRE-M7-T3-D4",
+    "confidence": "medium",
+    "why": "Conditional probability with Venn diagram"
+  },
+  "ma2020q15": {
+    "code": "PRE-M2-T2-D10",
+    "confidence": "high",
+    "why": "Bearings with cosine rule"
+  },
+  "ma2020q16": {
+    "code": "HSC-M5-T1-D9",
+    "confidence": "high",
+    "why": "Sketch cubic using stationary points, inflection"
+  },
+  "ma2020q17": {
+    "code": "HSC-M4-T6-D3",
+    "confidence": "high",
+    "why": "Integral f'/f gives logarithm"
+  },
+  "ma2020q18": {
+    "code": "HSC-M3-T4-D1",
+    "confidence": "high",
+    "why": "Product rule then reverse differentiation"
+  },
+  "ma2020q19": {
+    "code": "PRE-M3-D12",
+    "confidence": "high",
+    "why": "Prove trigonometric identity"
+  },
+  "ma2020q20": {
+    "code": "HSC-M4-T8-D11",
+    "confidence": "high",
+    "why": "Trapezoidal rule from velocity table"
+  },
+  "ma2020q21": {
+    "code": "HSC-M5-T3-D8",
+    "confidence": "medium",
+    "why": "Exponential decay model and cooling rate"
+  },
+  "ma2020q22": {
+    "code": "PRE-M2-T2-D10",
+    "confidence": "high",
+    "why": "Triangle area formula in regular polygon"
+  },
+  "ma2020q23": {
+    "code": "HSC-M6-T2-D7",
+    "confidence": "high",
+    "why": "Find k and probability from PDF"
+  },
+  "ma2020q24": {
+    "code": "PRE-M6-D8",
+    "confidence": "medium",
+    "why": "Complete square, reflect circle"
+  },
+  "ma2020q25": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "high",
+    "why": "Minimise perimeter using calculus"
+  },
+  "ma2020q26": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity recurrence and future value"
+  },
+  "ma2020q27": {
+    "code": null,
+    "confidence": "high",
+    "why": "Regression prediction; no matching dot"
+  },
+  "ma2020q28": {
+    "code": "HSC-M6-T3-D13",
+    "confidence": "high",
+    "why": "Normal distribution z-score probabilities"
+  },
+  "ma2020q29": {
+    "code": "HSC-M3-T4-D2",
+    "confidence": "high",
+    "why": "Tangent to logarithmic curve"
+  },
+  "ma2020q30": {
+    "code": "HSC-M4-T8-D5",
+    "confidence": "medium",
+    "why": "Area between parabolas by integration"
+  },
+  "ma2020q31": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "medium",
+    "why": "Trig model, increasing intervals, rate"
+  },
+  "ma202101": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202102": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202103": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202104": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202105": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202106": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202107": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202108": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202109": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202110": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma2021q11": {
+    "code": null,
+    "confidence": "high",
+    "why": "Linear equation; no matching dot"
+  },
+  "ma2021q12": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "Right-triangle trigonometry and area"
+  },
+  "ma2021q13": {
+    "code": "HSC-M3-T4-D2",
+    "confidence": "medium",
+    "why": "Tangent gradient using product rule"
+  },
+  "ma2021q14": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Arithmetic series sum to find d"
+  },
+  "ma2021q15": {
+    "code": "HSC-M4-T8-D1",
+    "confidence": "high",
+    "why": "Evaluate definite integral"
+  },
+  "ma2021q16": {
+    "code": "PRE-M4-T4-D5",
+    "confidence": "high",
+    "why": "Increasing interval of cubic"
+  },
+  "ma2021q17": {
+    "code": null,
+    "confidence": "high",
+    "why": "Regression/correlation; no matching dot"
+  },
+  "ma2021q18": {
+    "code": "PRE-M2-T2-D10",
+    "confidence": "high",
+    "why": "Sine rule with obtuse angle"
+  },
+  "ma2021q19": {
+    "code": "PRE-M6-D6",
+    "confidence": "high",
+    "why": "Sketch translated reciprocal function"
+  },
+  "ma2021q20": {
+    "code": "HSC-M1-T1-D3",
+    "confidence": "high",
+    "why": "Solve trig equation by graph"
+  },
+  "ma2021q21": {
+    "code": "PRE-M6-D6",
+    "confidence": "high",
+    "why": "Sketch transformed function f(2x)"
+  },
+  "ma2021q22": {
+    "code": "HSC-M6-T3-D13",
+    "confidence": "high",
+    "why": "Normal distribution z-scores"
+  },
+  "ma2021q23": {
+    "code": "HSC-M5-T3-D8",
+    "confidence": "medium",
+    "why": "Exponential decay and instantaneous rate"
+  },
+  "ma2021q24": {
+    "code": "HSC-M4-T8-D5",
+    "confidence": "high",
+    "why": "Area bounded by curve and line"
+  },
+  "ma2021q25": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity future value factors"
+  },
+  "ma2021q26": {
+    "code": "HSC-M5-T3-D10",
+    "confidence": "medium",
+    "why": "Particle motion maximum and velocity"
+  },
+  "ma2021q27": {
+    "code": "HSC-M5-T3-D2",
+    "confidence": "high",
+    "why": "Integrate rate to find energy"
+  },
+  "ma2021q28": {
+    "code": "HSC-M4-T8-D7",
+    "confidence": "medium",
+    "why": "Area under exponential, transform graph"
+  },
+  "ma2021q29": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity deposits and withdrawals"
+  },
+  "ma2021q30": {
+    "code": "HSC-M6-T2-D11",
+    "confidence": "medium",
+    "why": "CDF to find 99th percentile"
+  },
+  "ma2021q31": {
+    "code": "PRE-M4-T3-D5",
+    "confidence": "medium",
+    "why": "Tangents through external point"
+  },
+  "ma2021q32": {
+    "code": "HSC-M6-T3-D14",
+    "confidence": "high",
+    "why": "Find normal mean/sd from probabilities"
+  },
+  "ma2021q33": {
+    "code": "HSC-M6-T2-D7",
+    "confidence": "medium",
+    "why": "PDF total area, mode, probability"
+  },
+  "ma2021q34": {
+    "code": "HSC-M6-T1-D5",
+    "confidence": "high",
+    "why": "Expected value of discrete distribution"
+  },
+  "ma202201": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202202": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202203": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202204": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202205": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202206": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202207": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202208": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202209": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202210": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma2022q11": {
+    "code": "PRE-M7-T4-D3",
+    "confidence": "medium",
+    "why": "Cumulative frequency table and chart"
+  },
+  "ma2022q12": {
+    "code": "PRE-M1-T7-D2",
+    "confidence": "high",
+    "why": "Inverse variation model and graph"
+  },
+  "ma2022q13": {
+    "code": "HSC-M4-T8-D11",
+    "confidence": "high",
+    "why": "Trapezoidal rule approximation"
+  },
+  "ma2022q14": {
+    "code": "HSC-M1-T1-D2",
+    "confidence": "high",
+    "why": "Amplitude and period from graph"
+  },
+  "ma2022q15": {
+    "code": null,
+    "confidence": "high",
+    "why": "Question text missing"
+  },
+  "ma2022q16": {
+    "code": null,
+    "confidence": "high",
+    "why": "Question text incomplete"
+  },
+  "ma2022q17": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Arithmetic series sum application"
+  },
+  "ma2022q18": {
+    "code": "HSC-M3-T4-D1",
+    "confidence": "high",
+    "why": "Chain rule then reverse differentiation"
+  },
+  "ma2022q19": {
+    "code": "PRE-M6-D6",
+    "confidence": "high",
+    "why": "Translation and dilation of parabola"
+  },
+  "ma2022q20": {
+    "code": "HSC-M5-T3-D8",
+    "confidence": "high",
+    "why": "Exponential growth model and rate"
+  },
+  "ma2022q21": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity future value comparison"
+  },
+  "ma2022q22": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "high",
+    "why": "Global extrema on closed interval"
+  },
+  "ma2022q23": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "Trigonometric tide model and inequality"
+  },
+  "ma2022q24": {
+    "code": null,
+    "confidence": "high",
+    "why": "Correlation/scatterplot; no matching dot"
+  },
+  "ma2022q25": {
+    "code": "HSC-M3-T3-D4",
+    "confidence": "medium",
+    "why": "Differentiate trig and solve conditions"
+  },
+  "ma2022q26": {
+    "code": "HSC-M6-T3-D13",
+    "confidence": "high",
+    "why": "Normal distribution percentage between values"
+  },
+  "ma2022q27": {
+    "code": "HSC-M5-T1-D9",
+    "confidence": "high",
+    "why": "Stationary points and curve sketch"
+  },
+  "ma2022q28": {
+    "code": "HSC-M4-T8-D5",
+    "confidence": "medium",
+    "why": "Sector area and area by integration"
+  },
+  "ma2022q29": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "medium",
+    "why": "Geometric limiting sum"
+  },
+  "ma2022q30": {
+    "code": "HSC-M6-T2-D11",
+    "confidence": "medium",
+    "why": "CDF to find quantile"
+  },
+  "ma2022q31": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "high",
+    "why": "Minimise triangle area by calculus"
+  },
+  "ma2022q32": {
+    "code": "HSC-M7-T1-D3",
+    "confidence": "high",
+    "why": "Reducing balance loan repayments"
+  },
+  "ma202301": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202302": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202303": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202304": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202305": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202306": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202307": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202308": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202309": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202310": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma2023q11": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "Arithmetic sequence nth term"
+  },
+  "ma2023q12": {
+    "code": "HSC-M6-T1-D6",
+    "confidence": "high",
+    "why": "Expected value and standard deviation"
+  },
+  "ma2023q13": {
+    "code": "HSC-M4-T1-D9",
+    "confidence": "high",
+    "why": "Primitive from derivative with initial condition"
+  },
+  "ma2023q14": {
+    "code": "HSC-M3-T4-D2",
+    "confidence": "high",
+    "why": "Tangent to cubic curve"
+  },
+  "ma2023q15": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity future value problems"
+  },
+  "ma2023q16": {
+    "code": "PRE-M2-T3-D6",
+    "confidence": "high",
+    "why": "Arc length and perimeter"
+  },
+  "ma2023q17": {
+    "code": "HSC-M4-T4-D5",
+    "confidence": "high",
+    "why": "Integrate f'(x)f(x)^n form"
+  },
+  "ma2023q18": {
+    "code": null,
+    "confidence": "high",
+    "why": "Regression line; no matching dot"
+  },
+  "ma2023q19": {
+    "code": "PRE-M1-T4-D10",
+    "confidence": "medium",
+    "why": "Absolute value and quadratic inequality"
+  },
+  "ma2023q20": {
+    "code": "PRE-M3-D10",
+    "confidence": "high",
+    "why": "Solve trig equation in degrees"
+  },
+  "ma2023q21": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "Geometric sequence terms"
+  },
+  "ma2023q22": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "medium",
+    "why": "Three-dimensional right-triangle trigonometry"
+  },
+  "ma2023q23": {
+    "code": "HSC-M6-T3-D13",
+    "confidence": "high",
+    "why": "Normal distribution expected count"
+  },
+  "ma2023q24": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "high",
+    "why": "Minimise path area by calculus"
+  },
+  "ma2023q25": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity withdrawals and recurrence"
+  },
+  "ma2023q26": {
+    "code": "HSC-M5-T3-D2",
+    "confidence": "high",
+    "why": "Integrate rate of change for position"
+  },
+  "ma2023q27": {
+    "code": "PRE-M1-T11-D5",
+    "confidence": "medium",
+    "why": "Absolute value function from graph"
+  },
+  "ma2023q28": {
+    "code": "PRE-M4-T3-D6",
+    "confidence": "high",
+    "why": "Point where tangent has given gradient"
+  },
+  "ma2023q29": {
+    "code": "HSC-M6-T2-D9",
+    "confidence": "medium",
+    "why": "PDF mode, CDF and median comparison"
+  },
+  "ma2023q30": {
+    "code": "HSC-M5-T1-D9",
+    "confidence": "high",
+    "why": "Stationary points and sketch product"
+  },
+  "ma2023q31": {
+    "code": "PRE-M7-T3-D7",
+    "confidence": "high",
+    "why": "Conditional probability and independence test"
+  },
+  "ma2023q32": {
+    "code": "HSC-M4-T8-D5",
+    "confidence": "medium",
+    "why": "Area between exponential curves"
+  },
+  "ma202401": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202402": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202403": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202404": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202405": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202406": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202407": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202408": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202409": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma202410": {
+    "code": null,
+    "confidence": "high",
+    "why": "MCQ placeholder, no question content"
+  },
+  "ma2024q11": {
+    "code": "HSC-M5-T1-D10",
+    "confidence": "medium",
+    "why": "Signs of first and second derivatives"
+  },
+  "ma2024q12": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "Sum of arithmetic series"
+  },
+  "ma2024q13": {
+    "code": "HSC-M5-T3-D8",
+    "confidence": "medium",
+    "why": "Exponential population growth models"
+  },
+  "ma2024q14": {
+    "code": "HSC-M4-T8-D5",
+    "confidence": "high",
+    "why": "Area enclosed by two parabolas"
+  },
+  "ma2024q15": {
+    "code": "HSC-M5-T3-D2",
+    "confidence": "high",
+    "why": "Integrate rate to find volume"
+  },
+  "ma2024q16": {
+    "code": null,
+    "confidence": "high",
+    "why": "Box-plot comparison; no matching dot"
+  },
+  "ma2024q17": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "medium",
+    "why": "Exponential model, solve and differentiate"
+  },
+  "ma2024q18": {
+    "code": "PRE-M7-T3-D8",
+    "confidence": "high",
+    "why": "Independent events and complement"
+  },
+  "ma2024q19": {
+    "code": "HSC-M5-T1-D9",
+    "confidence": "high",
+    "why": "Stationary points, inflection, curve sketch"
+  },
+  "ma2024q20": {
+    "code": "PRE-M2-T1-D2",
+    "confidence": "high",
+    "why": "Bearings and angles of elevation"
+  },
+  "ma2024q21": {
+    "code": null,
+    "confidence": "high",
+    "why": "Scatterplot observations; no matching dot"
+  },
+  "ma2024q22": {
+    "code": "HSC-M4-T8-D11",
+    "confidence": "medium",
+    "why": "Trapezoidal rule estimate area"
+  },
+  "ma2024q23": {
+    "code": "HSC-M6-T3-D13",
+    "confidence": "high",
+    "why": "Normal distribution z-scores and tables"
+  },
+  "ma2024q24": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "high",
+    "why": "Annuity future value"
+  },
+  "ma2024q25": {
+    "code": "HSC-M6-T2-D9",
+    "confidence": "medium",
+    "why": "PDF, CDF and median"
+  },
+  "ma2024q26": {
+    "code": "HSC-M7-T2-D4",
+    "confidence": "medium",
+    "why": "Present value annuity withdrawals"
+  },
+  "ma2024q27": {
+    "code": "HSC-M3-T4-D1",
+    "confidence": "high",
+    "why": "Product rule then integrate"
+  },
+  "ma2024q28": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "Trigonometric model of Ferris wheel"
+  },
+  "ma2024q29": {
+    "code": "HSC-M3-T4-D2",
+    "confidence": "medium",
+    "why": "Tangent, normal and minimum conditions"
+  },
+  "ma2024q30": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "high",
+    "why": "Limiting sum range"
+  },
+  "ma2024q31": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "medium",
+    "why": "Sector formulas and optimisation"
+  }
+}

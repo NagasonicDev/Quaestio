@@ -1199,6 +1199,7 @@ async function hydrateStimulus(stimulusId: string): Promise<StimulusWithContent>
     stimulus_id: s.stimulus_id,
     course_id: s.course_id,
     title: s.title ?? null,
+    attach_all: Number(s.attach_all) === 1,
     created_at: s.created_at,
     updated_at: s.updated_at,
     blocks: blocks.map(stimulusBlockOut),
@@ -3367,8 +3368,15 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
     const newStimulusId = newId("stim");
     const statements: Array<[string, any[]]> = [
       [
-        "INSERT INTO stimulus (stimulus_id, course_id, title, created_at, updated_at) VALUES (?, ?, ?, ?, ?)",
-        [newStimulusId, courseId, typeof stimulus.title === "string" ? stimulus.title : null, now, now],
+        "INSERT INTO stimulus (stimulus_id, course_id, title, attach_all, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?)",
+        [
+          newStimulusId,
+          courseId,
+          typeof stimulus.title === "string" ? stimulus.title : null,
+          stimulus.attach_all ? 1 : 0,
+          now,
+          now,
+        ],
       ],
     ];
     await insertStimulusBlocks(newStimulusId, stimulus.blocks, statements);
@@ -4078,6 +4086,7 @@ export async function deleteTest(testId: string): Promise<void> {
 export interface StimulusCreatePayload {
   course_id: string;
   title?: string | null;
+  attach_all?: boolean;
   body?: BlockPayload[];
 }
 
@@ -4088,9 +4097,9 @@ export async function createStimulus(payload: StimulusCreatePayload): Promise<St
   const stimulusId = newId("stim");
   const now = nowUtc();
   await run(
-    `INSERT INTO stimulus (stimulus_id, course_id, title, created_at, updated_at)
-     VALUES (?, ?, ?, ?, ?)`,
-    [stimulusId, payload.course_id, payload.title ?? null, now, now]
+    `INSERT INTO stimulus (stimulus_id, course_id, title, attach_all, created_at, updated_at)
+     VALUES (?, ?, ?, ?, ?, ?)`,
+    [stimulusId, payload.course_id, payload.title ?? null, payload.attach_all ? 1 : 0, now, now]
   );
 
   const statements: Array<[string, any[]]> = [];
@@ -4113,6 +4122,10 @@ export async function updateStimulus(
   if (payload.title !== undefined) {
     sets.push("title = ?");
     params.push(payload.title ?? null);
+  }
+  if (payload.attach_all !== undefined) {
+    sets.push("attach_all = ?");
+    params.push(payload.attach_all ? 1 : 0);
   }
   if (sets.length) {
     sets.push("updated_at = ?");
@@ -4152,6 +4165,7 @@ export async function getStimulus(stimulusId: string): Promise<StimulusWithConte
     stimulus_id: s.stimulus_id,
     course_id: s.course_id,
     title: s.title ?? null,
+    attach_all: Number(s.attach_all) === 1,
     created_at: s.created_at,
     updated_at: s.updated_at,
     blocks: blocks.map(stimulusBlockOut),
@@ -4160,7 +4174,7 @@ export async function getStimulus(stimulusId: string): Promise<StimulusWithConte
 
 export async function listStimuliForCourse(courseId: string): Promise<Stimulus[]> {
   const rows = await all<SqlRow>(
-    `SELECT stimulus_id, course_id, title, created_at, updated_at
+    `SELECT stimulus_id, course_id, title, attach_all, created_at, updated_at
      FROM stimulus WHERE course_id = ? ORDER BY created_at DESC, stimulus_id`,
     [courseId]
   );
@@ -4168,22 +4182,28 @@ export async function listStimuliForCourse(courseId: string): Promise<Stimulus[]
     stimulus_id: r.stimulus_id,
     course_id: r.course_id,
     title: r.title ?? null,
+    attach_all: Number(r.attach_all) === 1,
     created_at: r.created_at,
     updated_at: r.updated_at,
   }));
 }
 
 export async function getStimuliForQuestion(questionId: string): Promise<Stimulus[]> {
+  // A stimulus flagged attach_all is implicitly linked to every question in
+  // its course, so new questions pick it up without a question_stimulus row.
   const rows = await all<SqlRow>(
-    `SELECT s.stimulus_id, s.course_id, s.title, s.created_at, s.updated_at
-     FROM stimulus s JOIN question_stimulus qs ON qs.stimulus_id = s.stimulus_id
-     WHERE qs.question_id = ? ORDER BY s.created_at DESC, s.stimulus_id`,
-    [questionId]
+    `SELECT s.stimulus_id, s.course_id, s.title, s.attach_all, s.created_at, s.updated_at
+     FROM stimulus s
+     WHERE s.stimulus_id IN (SELECT stimulus_id FROM question_stimulus WHERE question_id = ?)
+        OR (s.attach_all = 1 AND s.course_id = (SELECT course_id FROM question WHERE question_id = ?))
+     ORDER BY s.created_at DESC, s.stimulus_id`,
+    [questionId, questionId]
   );
   return rows.map((r) => ({
     stimulus_id: r.stimulus_id,
     course_id: r.course_id,
     title: r.title ?? null,
+    attach_all: Number(r.attach_all) === 1,
     created_at: r.created_at,
     updated_at: r.updated_at,
   }));

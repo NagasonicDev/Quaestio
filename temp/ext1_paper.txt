@@ -1,0 +1,967 @@
+=== PAGE 1 ===
+NSW Education Standards Authority
+2025
+HIGHER SCHOOL CERTIFICATE EXAMINATION
+ 
+Centre Number
+Student Number
+2470
+Mathematics Extension 1
+General 
+Instructions
+• Reading time – 10 minutes
+• Working time – 2 hours
+• Write using black pen
+• Calculators approved by NESA may be used
+• A reference sheet is provided at the back of this paper
+• For questions in Section II, show relevant mathematical reasoning 
+and/ or calculations
+• Write your Centre Number and Student Number at the top of 
+this page
+Section I – 10 marks (pages 2–6)
+• Attempt Questions 1–10
+• Allow about 15 minutes for this section
+Section II – 60 marks (pages 7–13)
+• Attempt Questions 11–14
+• Allow about 1 hour and 45 minutes for this section
+Total marks:
+70
+ 
+
+=== PAGE 2 ===
+– 2 –
+Section I
+10 marks
+Attempt Questions 1–10
+Allow about 15 minutes for this section
+Use the multiple-choice answer sheet for Questions 1–10.
+ 
+1 
+What is the solution to  | 2 x + 3 | < 5?
+A. 
+− 4 < x < 1
+B. 
+x < − 4  or  x > 1
+C. 
+−1 < x < 4
+D. 
+x < −1  or  x > 4
+2 ̰̰
+ u ·  v 
+The projection of  u onto  v is given by  
+  v. 
+|
+|2
+  v 
+What is the projection of   u =  i + 2 j  onto   v = 2 i − 3 j ?
+4
+A. 
+−  ( i + 2 j ) 
+5
+4
+B. 
+− 
+ ( 2 i − 3 j ) 
+13
+4
+C. 
+− 
+ ( i + 2 j ) 
+5
+4
+D. 
+− 
+ ( 2 i − 3 j ) 
+13̰̰̰̰
+ ̰̰̰̰̰̰̰̰̰̰̰̰̰̰
+
+=== PAGE 3 ===
+– 3 –
+3 
+5
+ 2
+1
+Consider the integral  
+  
+  dx.
+5
+− 
+25 − x 2
+2
+The substitution  x = 5 sin q  is applied.
+Which of the following is obtained?
+p
+1
+ 6
+A. 
+  
+ cosec q dq
+5
+p
+− 6
+p
+1
+ 6
+B. 
+  
+ sec q dq
+5
+p
+− 6
+p
+1
+ 6
+C. 
+  
+ cosec2 q dq
+25
+p
+− 6
+p
+1
+ 6
+D. 
+  
+ sec2 q dq
+25
+p
+− 6
+ 
+ 
+4 
+A Bernoulli random variable X has probability distribution
+x + 1
+P ( x ) = 
+  for  x = 0, 1.
+3
+What are the mean and variance of X ?
+1
+2
+A. 
+E ^Xh =  , 
+Var ^Xh = 
+3
+9
+1
+2
+B. 
+E ^Xh =  , 
+Var ^Xh = 
+3
+3
+2
+2
+C. 
+E ^Xh =  , 
+Var ^Xh = 
+3
+9
+2
+2
+D. 
+E ^Xh =  , 
+Var ^Xh = 
+3
+3
+ 
+
+=== PAGE 4 ===
+– 4 –
+5 
+How many distinct solutions are there to the equation  cos 5x + sin x = 0  for  0 ≤ x ≤ 2 p ?
+A. 
+5
+B. 
+6
+C. 
+9
+D. 
+10
+6 
+Given that a is a non-zero constant, which of the following integrals is equal to zero?
+a 
+A. 
+ x cos–1( x ) dx
+−a
+a 
+B. 
+ x 2 cos–1( x ) dx
+−a
+a 
+C. 
+ x tan–1( x ) dx
+−a
+a 
+D. 
+ x 2 tan–1( x ) dx
+−a
+
+=== PAGE 5 ===
+– 5 –
+7 
+A slope field is shown.
+y
+x
+ 
+Which of the following could be the differential equation represented by the slope field?
+dy
+A. 
+ = x 2 
+dx
+dy
+B. 
+ = x 2 + C,  C ≠ 0
+dx
+dy
+C. 
+ = x 3 
+dx
+dy
+D. 
+ = x 3 + C,  C ≠ 0
+dx
+8 
+Points A and B have non-zero, non-parallel position vectors  a and  b respectively.
+Point C has position vector  c = 3 a − 2 b.
+The points A, B and C lie on the same line.
+Which of the following must be true?
+A. 
+Point A always lies between Points B and C.
+B. 
+Point B always lies between Points A and C.
+C. 
+Point C always lies between Points A and B.
+D. 
+The order of the points cannot be determined.̰̰
+ ̰̰̰
+ 
+ 
+
+=== PAGE 6 ===
+– 6 –
+9 
+The vectors  a,  b and  c have magnitudes 3, 5 and 7 respectively.̰̰̰
+q
+ c
+ a
+NOT TO SCALE
+ b̰̰̰
+ 
+Given that   a +  b +  c =  0,  what is the size of angle q between  a and  b ?
+p
+A. 
+6
+p
+B. 
+3
+2p
+C. 
+3
+5p
+D. 
+6̰̰̰̰̰̰
+10 
+For the function ƒ( x ), it is known that  ƒ( 3 ) = 1,  ƒ′( 3 ) = 2  and  ƒ″( 3 ) = 4.
+Let  g ( x ) = ƒ −1( x ).
+What is the value of g″ ( 1 )?
+1
+A. 
+4
+1
+B. 
+− 4
+1
+C. 
+− 2
+D. 
+−1
+ 
+ 
+
+=== PAGE 7 ===
+– 7 –
+Section II
+60 marks
+Attempt Questions 11–14
+Allow about 1 hour and 45 minutes for this section
+Answer each question in the appropriate writing booklet. Extra writing booklets are available.
+For questions in Section II, your responses should include relevant mathematical reasoning 
+and/or calculations.
+ 
+Question 11 (15 marks) Use the Question 11 Writing Booklet
+1
+(a) 
+Find the inverse function, ƒ −1( x ), of the function  ƒ( x ) = 1 − 
+ .
+x − 2
+2
+(b) 
+Solve  sin 2q − sin q = 0  for  0 ≤ q ≤ p.
+3
+(c) 
+Find  sin 3 x cos x dx.
+2
+1
+(d) 
+Sketch the graph of  y =
+−
+  cos 1 ( 2 x ).
+3
+2
+1
+2
+(e) 
+For what value of m is the vector    parallel to the vector    ?
+m
+6
+1
+(f) 
+The roots of  2 x 3 + 6x 2 + x − 1 = 0  are a, b and g.
+1
+1
+1
+ 
+What is the value of  
+ + 
+ + 
+ ?
+ab
+ag
+bg
+2
+p
+ 3
+(g) 
+Evaluate  
+ cos 2 (3x) dx.
+p
+6
+3
+
+=== PAGE 8 ===
+– 8 –
+Question 12 (14 marks) Use the Question 12 Writing Booklet
+(a) 
+The radius, r cm, and angle, q radians, of a sector vary in such a way that its area 
+remains a constant 10 cm2.
+3
+r
+Area = 10 cm2
+q
+ 
+The angle q is increasing at a constant rate of 2 radians per second.
+Find the rate at which the radius is changing when the radius is 4 cm.
+ 
+1
+(b) 
+Consider the region bounded by the hyperbola  y =  ,  the y-axis and the lines  
+x
+y = 1 and  y = a  for  a > 1.
+ 
+Find the volume of the solid of revolution formed when the region is rotated 
+about the y-axis.
+2
+(c) 
+Prove by mathematical induction that
+1 × (1!) + 2 × (2!) + · · · + n × (n!) = (n + 1)! − 1
+ 
+for integers  n ≥ 1.
+3
+dy
+(d) 
+Find the solution of  
+ = (2 − y) (2 + y),  given that  y = 1 when  x = 0.
+dx
+3
+p
+(e) 
+(i) 
+Express  3 sin x − cos x  in the form 2 sin ( x − a ),  where  0 < a <  .
+2
+1
+ 
+(ii) 
+Hence, or otherwise, solve  3 sin x = cos x + 1,  where  0 ≤ x ≤ 2p .
+2
+
+=== PAGE 9 ===
+– 9 –
+Question 13 (16 marks) Use the Question 13 Writing Booklet
+dy
+5
+(a) 
+It is given that  
+ =   and  y = −4  when  x = 0.
+dx
+y
+ 
+Find y as a function of x.
+3
+(b) 
+Eight guests are to be seated at a round table. If two of these guests refuse to sit
+next to each other, how many seating arrangements are possible?
+ ̰̰
+2
+t 2
+(c) 
+At time t, a particle has position vector   r ( t ) = t i +   j,  velocity vector  v ( t ) and 
+9
+acceleration vector  a ( t ).
+p
+ 
+Find the time when the angle between  v ( t ) and  a ( t ) is  .
+4̰̰̰̰̰
+4
+(d) 
+A bag contains counters, some of which are green.
+ 
+One hundred trials of an experiment are run. In each trial, one counter is selected 
+from the bag at random and its colour noted. The counter is returned to the bag 
+after each trial.
+ 
+Let X be the random variable representing the number of times that a green 
+counter is selected.
+ 
+Given that  E ^Xh = 20  and  P ( X ≥ k ) = 0.0668,  find the value of k. You may use 
+the standard normal approximation and the information on page 13.
+4
+Question 13 continues on page 10
+
+=== PAGE 10 ===
+– 10 –
+Question 13 (continued)
+(e) 
+(i) 
+The Pascal’s triangle relation can be expressed as
+n
+n − 1
+n − 1
+ 
+   =  
+  +  
+  . 
+(Do NOT prove this.)
+r
+r − 1
+r
+m
+m + 1
+m
+ 
+ 
+Show that     =  
+  −  
+  .
+R
+R + 1
+R + 1
+ 
+1
+(ii) 
+Hence, or otherwise, prove that  
+2000
+2001
+2002
+2050
+2051
+ 
+  +  
+  +  
+  + · · · +  
+  =  
+  .
+2000
+2000
+2000
+2000
+2001
+2
+End of Question 13
+
+=== PAGE 11 ===
+– 11 –
+Question 14 (15 marks) Use the Question 14 Writing Booklet
+(a) 
+Prove that the product of any seven distinct factors of 60 must be a multiple 
+of 60.
+2
+(b) 
+Points A and B lie vertically above the origin. Point A is higher than point B such 
+OA
+that  
+ = k,  where  k > 1.
+OB
+ 
+A particle is projected horizontally from point A with velocity U m s–1. After 
+T seconds, another particle is projected horizontally from point B with velocity 
+V m s–1. The two particles land on the ground in the same place.
+4
+y
+A
+B
+O
+x
+U m s–1
+V m s–1
+ 
+V
+Show that the ratio 
+ depends only on k.
+U
+(c) 
+The hands of an analogue clock are OA and OB, 
+p t
+p t
+p t
+p t
+ 
+where A is  sin  
+  ,  cos  
+   ,  B is  2 sin  
+  ,  2 cos  
+   ,  
+360
+360
+30
+30
+ 
+O is the origin, and  t ≥ 0  is the number of minutes past midnight.
+ 
+Find the values of t when the hands are perpendicular for the first and second 
+time after midnight. Give your answers to 3 decimal places.
+3
+Question 14 continues on page 12
+
+=== PAGE 12 ===
+– 12 –
+Question 14 (continued)
+(d) 
+The function ƒ( x ) is defined by ƒ( x ) = cos−1 (sin x)  in the domain ( 0, p ).
+ 
+Find ƒ′( x ) for those values of x where it is defined.
+3
+(e) 
+It is given that tan a, tan b and tan g are the three real roots of the polynomial 
+equation  x 3 + bx 2 + cx − 1 + b + c = 0,  where b and c are real numbers and  
+c ≠ 1.
+ 
+Find the smallest positive value of  a + b + g.
+3
+End of paper
+
+=== PAGE 13 ===
+– 13 –
+Use the information below to answer Question 13 (d).
+Table of values P  Z # z  for the normal distribution N ( 0, 1) 
+(
+)
+0
+z
+z
+0.00
+0.01
+0.02
+0.03
+0.04
+0.05
+0.06
+0.07
+0.08
+0.09
+0.0
+0.5000
+0.5398
+0.5793
+0.6179
+0.6554
+0.6915
+0.7257
+0.7580
+0.7881
+0.8159
+0.8413
+0.8643
+0.8849
+0.9032
+0.9192
+0.9332
+0.9452
+0.9554
+0.9641
+0.9713
+0.9772
+0.9821
+0.9861
+0.9893
+0.9918
+0.9938
+0.9953
+0.9965
+0.9974
+0.9981
+0.9987
+0.9990
+0.9993
+0.5040
+0.5438
+0.5832
+0.6217
+0.6591
+0.6950
+0.7291
+0.7611
+0.7910
+0.8186
+0.8438
+0.8665
+0.8869
+0.9049
+0.9207
+0.9345
+0.9463
+0.9564
+0.9649
+0.9719
+0.9778
+0.9826
+0.9864
+0.9896
+0.9920
+0.9940
+0.9955
+0.9966
+0.9975
+0.9982
+0.9987
+0.9991
+0.9993
+0.5080
+0.5120
+0.5160
+0.5199
+0.5239
+0.5279
+0.5319
+0.5359
+0.1
+0.5478
+0.5517
+0.5557
+0.5596
+0.5636
+0.5675
+0.5714
+0.5753
+0.2
+0.5871
+0.5910
+0.5948
+0.5987
+0.6026
+0.6064
+0.6103
+0.6141
+0.3
+0.6255
+0.6293
+0.6331
+0.6368
+0.6406
+0.6443
+0.6480
+0.6517
+0.4
+0.6628
+0.6664
+0.6700
+0.6736
+0.6772
+0.6808
+0.6844
+0.6879
+0.5
+0.6985
+0.7019
+0.7054
+0.7088
+0.7123
+0.7157
+0.7190
+0.7224
+0.6
+0.7324
+0.7357
+0.7389
+0.7422
+0.7454
+0.7486
+0.7517
+0.7549
+0.7
+0.7642
+0.7673
+0.7704
+0.7734
+0.7764
+0.7794
+0.7823
+0.7852
+0.8
+0.7939
+0.7967
+0.7995
+0.8023
+0.8051
+0.8078
+0.8106
+0.8133
+0.9
+0.8212
+0.8238
+0.8264
+0.8289
+0.8315
+0.8340
+0.8365
+0.8389
+1.0
+0.8461
+0.8485
+0.8508
+0.8531
+0.8554
+0.8577
+0.8599
+0.8621
+1.1
+0.8686
+0.8708
+0.8729
+0.8749
+0.8770
+0.8790
+0.8810
+0.8830
+1.2
+0.8888
+0.8907
+0.8925
+0.8944
+0.8962
+0.8980
+0.8997
+0.9015
+1.3
+0.9066
+0.9082
+0.9099
+0.9115
+0.9131
+0.9147
+0.9162
+0.9177
+1.4
+0.9222
+0.9236
+0.9251
+0.9265
+0.9279
+0.9292
+0.9306
+0.9319
+1.5
+0.9357
+0.9370
+0.9382
+0.9394
+0.9406
+0.9418
+0.9429
+0.9441
+1.6
+0.9474
+0.9484
+0.9495
+0.9505
+0.9515
+0.9525
+0.9535
+0.9545
+1.7
+0.9573
+0.9582
+0.9591
+0.9599
+0.9608
+0.9616
+0.9625
+0.9633
+1.8
+0.9656
+0.9664
+0.9671
+0.9678
+0.9686
+0.9693
+0.9699
+0.9706
+1.9
+0.9726
+0.9732
+0.9738
+0.9744
+0.9750
+0.9756
+0.9761
+0.9767
+2.0
+0.9783
+0.9788
+0.9793
+0.9798
+0.9803
+0.9808
+0.9812
+0.9817
+2.1
+0.9830
+0.9834
+0.9838
+0.9842
+0.9846
+0.9850
+0.9854
+0.9857
+2.2
+0.9868
+0.9871
+0.9875
+0.9878
+0.9881
+0.9884
+0.9887
+0.9890
+2.3
+0.9898
+0.9901
+0.9904
+0.9906
+0.9909
+0.9911
+0.9913
+0.9916
+2.4
+0.9922
+0.9925
+0.9927
+0.9929
+0.9931
+0.9932
+0.9934
+0.9936
+2.5
+0.9941
+0.9943
+0.9945
+0.9946
+0.9948
+0.9949
+0.9951
+0.9952
+2.6
+0.9956
+0.9957
+0.9959
+0.9960
+0.9961
+0.9962
+0.9963
+0.9964
+2.7
+0.9967
+0.9968
+0.9969
+0.9970
+0.9971
+0.9972
+0.9973
+0.9974
+2.8
+0.9976
+0.9977
+0.9977
+0.9978
+0.9979
+0.9979
+0.9980
+0.9981
+2.9
+0.9982
+0.9983
+0.9984
+0.9984
+0.9985
+0.9985
+0.9986
+0.9986
+3.0
+0.9987
+0.9988
+0.9988
+0.9989
+0.9989
+0.9989
+0.9990
+0.9990
+3.1
+0.9991
+0.9991
+0.9992
+0.9992
+0.9992
+0.9992
+0.9993
+0.9993
+3.2
+0.9994
+0.9994
+0.9994
+0.9994
+0.9994
+0.9995
+0.9995
+0.9995
+
+=== PAGE 14 ===
+BLANK PAGE
+– 14 –
+
+=== PAGE 15 ===
+BLANK PAGE
+– 15 –
+
+=== PAGE 16 ===
+BLANK PAGE
+ © 2025 NSW Education Standards Authority
+– 16 –
+
+=== PAGE 17 ===
+– 1 –
+2471
+REFERENCE SHEET
+NSW Education Standards Authority
+2025
+HIGHER SCHOOL CERTIFICATE EXAMINATION
+Mathematics Advanced
+Mathematics Extension 1
+Mathematics Extension 2
+
+=== PAGE 18 ===
+– 2 –
+
+=== PAGE 19 ===
+– 3 –
+
+=== PAGE 20 ===
+– 4 –
+ © 2025 NSW Education Standards Authority

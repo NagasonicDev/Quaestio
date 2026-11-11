@@ -1,0 +1,1847 @@
+{
+ "course_id": "design-and-technology",
+ "course_name": "Design and Technology",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Designing and Producing / Design theory and process / design theory and practice",
+   "text": "design theory and practice"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Designing and Producing / Design theory and process / range of design professions",
+   "text": "range of design professions"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Designing and Producing / Design theory and process / nature and variety of work of a range of design professions",
+   "text": "nature and variety of work of a range of design professions"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Designing and Producing / Design theory and process / interaction and overlap of design professions",
+   "text": "interaction and overlap of design professions"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Designing and Producing / Design theory and process / Australian and international designers and their work",
+   "text": "Australian and international designers and their work"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Designing and Producing / Design theory and process / investigate at least one designer and the nature of their work",
+   "text": "investigate at least one designer and the nature of their work"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Designing and Producing / Design theory and process / identify a range of career opportunities in design and production",
+   "text": "identify a range of career opportunities in design and production"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Designing and Producing / Design theory and process / design processes",
+   "text": "design processes"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Designing and Producing / Design theory and process / design processes used in domestic, community, industrial and commercial settings from initial contact with clients to final presentation",
+   "text": "design processes used in domestic, community, industrial and commercial settings from initial contact with clients to final presentation"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Designing and Producing / Design theory and process / describe and analyse the processes undertaken when designing",
+   "text": "describe and analyse the processes undertaken when designing"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Designing and Producing / Design theory and process / apply a design process when developing design projects",
+   "text": "apply a design process when developing design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Designing and Producing / Design theory and process / factors affecting designing and producing including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "factors affecting designing and producing including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Designing and Producing / Design theory and process / identify factors affecting design",
+   "text": "identify factors affecting design"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Designing and Producing / Design theory and process / analyse design products",
+   "text": "analyse design products"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Designing and Producing / Design theory and process / compare and contrast the factors to be considered in the design and production of design projects",
+   "text": "compare and contrast the factors to be considered in the design and production of design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Designing and Producing / Design theory and process / appraise the aesthetic and functional qualities of a variety of design products, systems and/or environments",
+   "text": "appraise the aesthetic and functional qualities of a variety of design products, systems and/or environments"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Designing and Producing / Design theory and process / design and production processes in domestic, community, industrial and commercial settings",
+   "text": "design and production processes in domestic, community, industrial and commercial settings"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Designing and Producing / Design theory and process / technologies in industrial and commercial settings",
+   "text": "technologies in industrial and commercial settings"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Designing and Producing / Design theory and process / compare and contrast technologies and processes used in design projects to activities of design and production in industrial and commercial settings",
+   "text": "compare and contrast technologies and processes used in design projects to activities of design and production in industrial and commercial settings"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Designing and Producing / Design theory and process / environmental and social issues including: personal values; cultural beliefs; sustainability; safety and health; community needs; individual needs; equity",
+   "text": "environmental and social issues including: personal values; cultural beliefs; sustainability; safety and health; community needs; individual needs; equity"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Designing and Producing / Design theory and process / assess the impact of the activities undertaken in the development of design projects on the individual, society and the environment",
+   "text": "assess the impact of the activities undertaken in the development of design projects on the individual, society and the environment"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Designing and Producing / Design theory and process / evaluate examples of design and production and relate these to environmental and social issues",
+   "text": "evaluate examples of design and production and relate these to environmental and social issues"
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Designing and Producing / Design theory and process / creative approaches including: cognitive organisers; strategies for problem solving and solution creating; ideas generation",
+   "text": "creative approaches including: cognitive organisers; strategies for problem solving and solution creating; ideas generation"
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Designing and Producing / Design theory and process / select and apply a variety of cognitive organisers",
+   "text": "select and apply a variety of cognitive organisers"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Designing and Producing / Design theory and process / apply problem solving techniques to identified problems",
+   "text": "apply problem solving techniques to identified problems"
+  },
+  {
+   "code": "PRE-M1-T1-D26",
+   "path": "Year 11 / Designing and Producing / Design theory and process / identify the factors that contribute to successful work and collaboration",
+   "text": "identify the factors that contribute to successful work and collaboration"
+  },
+  {
+   "code": "PRE-M1-T1-D27",
+   "path": "Year 11 / Designing and Producing / Design theory and process / collaborative approaches",
+   "text": "collaborative approaches"
+  },
+  {
+   "code": "PRE-M1-T1-D28",
+   "path": "Year 11 / Designing and Producing / Design theory and process / design teams: roles and tasks of members",
+   "text": "design teams: roles and tasks of members"
+  },
+  {
+   "code": "PRE-M1-T1-D29",
+   "path": "Year 11 / Designing and Producing / Design theory and process / communication between and within design teams",
+   "text": "communication between and within design teams"
+  },
+  {
+   "code": "PRE-M1-T1-D30",
+   "path": "Year 11 / Designing and Producing / Design theory and process / team responsibilities",
+   "text": "team responsibilities"
+  },
+  {
+   "code": "PRE-M1-T1-D31",
+   "path": "Year 11 / Designing and Producing / Design theory and process / collaborate and participate in design teams",
+   "text": "collaborate and participate in design teams"
+  },
+  {
+   "code": "PRE-M1-T1-D32",
+   "path": "Year 11 / Designing and Producing / Design theory and process / work cooperatively",
+   "text": "work cooperatively"
+  },
+  {
+   "code": "PRE-M1-T1-D33",
+   "path": "Year 11 / Designing and Producing / Design theory and process / project analysis",
+   "text": "project analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D34",
+   "path": "Year 11 / Designing and Producing / Design theory and process / design briefs",
+   "text": "design briefs"
+  },
+  {
+   "code": "PRE-M1-T1-D35",
+   "path": "Year 11 / Designing and Producing / Design theory and process / appropriateness of design solutions",
+   "text": "appropriateness of design solutions"
+  },
+  {
+   "code": "PRE-M1-T1-D36",
+   "path": "Year 11 / Designing and Producing / Design theory and process / criteria for evaluation and factors to consider",
+   "text": "criteria for evaluation and factors to consider"
+  },
+  {
+   "code": "PRE-M1-T1-D37",
+   "path": "Year 11 / Designing and Producing / Design theory and process / formulate and analyse design briefs",
+   "text": "formulate and analyse design briefs"
+  },
+  {
+   "code": "PRE-M1-T1-D38",
+   "path": "Year 11 / Designing and Producing / Design theory and process / identify the parameters of design",
+   "text": "identify the parameters of design"
+  },
+  {
+   "code": "PRE-M1-T1-D39",
+   "path": "Year 11 / Designing and Producing / Design theory and process / identify criteria for success of design projects",
+   "text": "identify criteria for success of design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D40",
+   "path": "Year 11 / Designing and Producing / Design theory and process / produce functionally and aesthetically appropriate design projects",
+   "text": "produce functionally and aesthetically appropriate design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D41",
+   "path": "Year 11 / Designing and Producing / Design theory and process / marketing and market research",
+   "text": "marketing and market research"
+  },
+  {
+   "code": "PRE-M1-T1-D42",
+   "path": "Year 11 / Designing and Producing / Design theory and process / purpose of market research",
+   "text": "purpose of market research"
+  },
+  {
+   "code": "PRE-M1-T1-D43",
+   "path": "Year 11 / Designing and Producing / Design theory and process / sources of data and information gathering techniques",
+   "text": "sources of data and information gathering techniques"
+  },
+  {
+   "code": "PRE-M1-T1-D44",
+   "path": "Year 11 / Designing and Producing / Design theory and process / marketing environment",
+   "text": "marketing environment"
+  },
+  {
+   "code": "PRE-M1-T1-D45",
+   "path": "Year 11 / Designing and Producing / Design theory and process / conduct market research to identify needs and opportunities",
+   "text": "conduct market research to identify needs and opportunities"
+  },
+  {
+   "code": "PRE-M1-T1-D46",
+   "path": "Year 11 / Designing and Producing / Design theory and process / using materials, tools, techniques and other resources",
+   "text": "using materials, tools, techniques and other resources"
+  },
+  {
+   "code": "PRE-M1-T1-D47",
+   "path": "Year 11 / Designing and Producing / Design theory and process / characteristics and properties",
+   "text": "characteristics and properties"
+  },
+  {
+   "code": "PRE-M1-T1-D48",
+   "path": "Year 11 / Designing and Producing / Design theory and process / functions and uses",
+   "text": "functions and uses"
+  },
+  {
+   "code": "PRE-M1-T1-D49",
+   "path": "Year 11 / Designing and Producing / Design theory and process / experimentation",
+   "text": "experimentation"
+  },
+  {
+   "code": "PRE-M1-T1-D50",
+   "path": "Year 11 / Designing and Producing / Design theory and process / criteria for selection",
+   "text": "criteria for selection"
+  },
+  {
+   "code": "PRE-M1-T1-D51",
+   "path": "Year 11 / Designing and Producing / Design theory and process / consequences of use",
+   "text": "consequences of use"
+  },
+  {
+   "code": "PRE-M1-T1-D52",
+   "path": "Year 11 / Designing and Producing / Design theory and process / select appropriate materials, tools, techniques and other resources",
+   "text": "select appropriate materials, tools, techniques and other resources"
+  },
+  {
+   "code": "PRE-M1-T1-D53",
+   "path": "Year 11 / Designing and Producing / Design theory and process / justify and explain the selection and use of resources in design projects",
+   "text": "justify and explain the selection and use of resources in design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D54",
+   "path": "Year 11 / Designing and Producing / Design theory and process / the realisation of ideas through the manipulation of materials, tools and techniques and other resources",
+   "text": "the realisation of ideas through the manipulation of materials, tools and techniques and other resources"
+  },
+  {
+   "code": "PRE-M1-T1-D55",
+   "path": "Year 11 / Designing and Producing / Design theory and process / develop and demonstrate proficiency in using an appropriate range of materials, tools, techniques and other resources",
+   "text": "develop and demonstrate proficiency in using an appropriate range of materials, tools, techniques and other resources"
+  },
+  {
+   "code": "PRE-M1-T1-D56",
+   "path": "Year 11 / Designing and Producing / Design theory and process / safety",
+   "text": "safety"
+  },
+  {
+   "code": "PRE-M1-T1-D57",
+   "path": "Year 11 / Designing and Producing / Design theory and process / safety in the use of materials, tools and techniques",
+   "text": "safety in the use of materials, tools and techniques"
+  },
+  {
+   "code": "PRE-M1-T1-D58",
+   "path": "Year 11 / Designing and Producing / Design theory and process / legislative requirements including work health and safety",
+   "text": "legislative requirements including work health and safety"
+  },
+  {
+   "code": "PRE-M1-T1-D59",
+   "path": "Year 11 / Designing and Producing / Design theory and process / implement safe work practices when designing and producing",
+   "text": "implement safe work practices when designing and producing"
+  },
+  {
+   "code": "PRE-M1-T1-D60",
+   "path": "Year 11 / Designing and Producing / Design theory and process / evaluation",
+   "text": "evaluation"
+  },
+  {
+   "code": "PRE-M1-T1-D61",
+   "path": "Year 11 / Designing and Producing / Design theory and process / developing and refining ideas",
+   "text": "developing and refining ideas"
+  },
+  {
+   "code": "PRE-M1-T1-D62",
+   "path": "Year 11 / Designing and Producing / Design theory and process / criteria for evaluation",
+   "text": "criteria for evaluation"
+  },
+  {
+   "code": "PRE-M1-T1-D63",
+   "path": "Year 11 / Designing and Producing / Design theory and process / methods of evaluation",
+   "text": "methods of evaluation"
+  },
+  {
+   "code": "PRE-M1-T1-D64",
+   "path": "Year 11 / Designing and Producing / Design theory and process / establish the parameters for design and identify criteria for the evaluation of design projects",
+   "text": "establish the parameters for design and identify criteria for the evaluation of design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D65",
+   "path": "Year 11 / Designing and Producing / Design theory and process / examine processes undertaken in design projects",
+   "text": "examine processes undertaken in design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D66",
+   "path": "Year 11 / Designing and Producing / Design theory and process / conduct continual evaluation throughout design and production",
+   "text": "conduct continual evaluation throughout design and production"
+  },
+  {
+   "code": "PRE-M1-T1-D67",
+   "path": "Year 11 / Designing and Producing / Design theory and process / assess the impact of designing and design projects on society and the environment",
+   "text": "assess the impact of designing and design projects on society and the environment"
+  },
+  {
+   "code": "PRE-M1-T1-D68",
+   "path": "Year 11 / Designing and Producing / Design theory and process / test and evaluate the appropriateness of design solutions",
+   "text": "test and evaluate the appropriateness of design solutions"
+  },
+  {
+   "code": "PRE-M1-T1-D69",
+   "path": "Year 11 / Designing and Producing / Design theory and process / project management",
+   "text": "project management"
+  },
+  {
+   "code": "PRE-M1-T1-D70",
+   "path": "Year 11 / Designing and Producing / Design theory and process / management techniques and tools, including those used by designers in industrial and commercial settings",
+   "text": "management techniques and tools, including those used by designers in industrial and commercial settings"
+  },
+  {
+   "code": "PRE-M1-T1-D71",
+   "path": "Year 11 / Designing and Producing / Design theory and process / identify a variety of management techniques and tools",
+   "text": "identify a variety of management techniques and tools"
+  },
+  {
+   "code": "PRE-M1-T1-D72",
+   "path": "Year 11 / Designing and Producing / Design theory and process / factors affecting management including: identifying available resources; clarifying values; setting goals; setting standards; evaluating the costs and benefits of each alternative; making and implementing decisions; task descriptions and sequencing; documentation of plans",
+   "text": "factors affecting management including: identifying available resources; clarifying values; setting goals; setting standards; evaluating the costs and benefits of each alternative; making and implementing decisions; task descriptions and sequencing; documentation of plans"
+  },
+  {
+   "code": "PRE-M1-T1-D73",
+   "path": "Year 11 / Designing and Producing / Design theory and process / plan, implement and evaluate a sequence of operations for the completion of design projects",
+   "text": "plan, implement and evaluate a sequence of operations for the completion of design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D74",
+   "path": "Year 11 / Designing and Producing / Design theory and process / communication",
+   "text": "communication"
+  },
+  {
+   "code": "PRE-M1-T1-D75",
+   "path": "Year 11 / Designing and Producing / Design theory and process / forms of communication including verbal, written, graphical, visual, audio",
+   "text": "forms of communication including verbal, written, graphical, visual, audio"
+  },
+  {
+   "code": "PRE-M1-T1-D76",
+   "path": "Year 11 / Designing and Producing / Design theory and process / elements of the communication process which include sender, receiver, medium, message",
+   "text": "elements of the communication process which include sender, receiver, medium, message"
+  },
+  {
+   "code": "PRE-M1-T1-D77",
+   "path": "Year 11 / Designing and Producing / Design theory and process / criteria for evaluating communication including clarity of message, appropriateness of method chosen, ease of interpretation",
+   "text": "criteria for evaluating communication including clarity of message, appropriateness of method chosen, ease of interpretation"
+  },
+  {
+   "code": "PRE-M1-T1-D78",
+   "path": "Year 11 / Designing and Producing / Design theory and process / communicating information through a variety of media",
+   "text": "communicating information through a variety of media"
+  },
+  {
+   "code": "PRE-M1-T1-D79",
+   "path": "Year 11 / Designing and Producing / Design theory and process / visualising solutions",
+   "text": "visualising solutions"
+  },
+  {
+   "code": "PRE-M1-T1-D80",
+   "path": "Year 11 / Designing and Producing / Design theory and process / the purpose of prototypes and/or models",
+   "text": "the purpose of prototypes and/or models"
+  },
+  {
+   "code": "PRE-M1-T1-D81",
+   "path": "Year 11 / Designing and Producing / Design theory and process / presentation techniques suited to the needs of design clients and design projects",
+   "text": "presentation techniques suited to the needs of design clients and design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D82",
+   "path": "Year 11 / Designing and Producing / Design theory and process / use appropriate design and technology terminology",
+   "text": "use appropriate design and technology terminology"
+  },
+  {
+   "code": "PRE-M1-T1-D83",
+   "path": "Year 11 / Designing and Producing / Design theory and process / experiment with a range of techniques and forms to visualise and communicate ideas and solutions",
+   "text": "experiment with a range of techniques and forms to visualise and communicate ideas and solutions"
+  },
+  {
+   "code": "PRE-M1-T1-D84",
+   "path": "Year 11 / Designing and Producing / Design theory and process / communicate design ideas and solutions effectively using a range of technologies",
+   "text": "communicate design ideas and solutions effectively using a range of technologies"
+  },
+  {
+   "code": "PRE-M1-T1-D85",
+   "path": "Year 11 / Designing and Producing / Design theory and process / use appropriate standards and conventions to visualise and communicate ideas and solutions",
+   "text": "use appropriate standards and conventions to visualise and communicate ideas and solutions"
+  },
+  {
+   "code": "PRE-M1-T1-D86",
+   "path": "Year 11 / Designing and Producing / Design theory and process / justify the selection and use of communication techniques",
+   "text": "justify the selection and use of communication techniques"
+  },
+  {
+   "code": "PRE-M1-T1-D87",
+   "path": "Year 11 / Designing and Producing / Design theory and process / research methods",
+   "text": "research methods"
+  },
+  {
+   "code": "PRE-M1-T1-D88",
+   "path": "Year 11 / Designing and Producing / Design theory and process / qualitative and quantitative research",
+   "text": "qualitative and quantitative research"
+  },
+  {
+   "code": "PRE-M1-T1-D89",
+   "path": "Year 11 / Designing and Producing / Design theory and process / questionnaires",
+   "text": "questionnaires"
+  },
+  {
+   "code": "PRE-M1-T1-D90",
+   "path": "Year 11 / Designing and Producing / Design theory and process / surveys",
+   "text": "surveys"
+  },
+  {
+   "code": "PRE-M1-T1-D91",
+   "path": "Year 11 / Designing and Producing / Design theory and process / interviews",
+   "text": "interviews"
+  },
+  {
+   "code": "PRE-M1-T1-D92",
+   "path": "Year 11 / Designing and Producing / Design theory and process / observation",
+   "text": "observation"
+  },
+  {
+   "code": "PRE-M1-T1-D93",
+   "path": "Year 11 / Designing and Producing / Design theory and process / tests and experiments",
+   "text": "tests and experiments"
+  },
+  {
+   "code": "PRE-M1-T1-D94",
+   "path": "Year 11 / Designing and Producing / Design theory and process / statistical analysis",
+   "text": "statistical analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D95",
+   "path": "Year 11 / Designing and Producing / Design theory and process / information research including print and electronic sources",
+   "text": "information research including print and electronic sources"
+  },
+  {
+   "code": "PRE-M1-T1-D96",
+   "path": "Year 11 / Designing and Producing / Design theory and process / select and use a variety of research methods to inform the generation, modification, and development of design ideas",
+   "text": "select and use a variety of research methods to inform the generation, modification, and development of design ideas"
+  },
+  {
+   "code": "PRE-M1-T1-D97",
+   "path": "Year 11 / Designing and Producing / Design theory and process / interpreting and presenting data",
+   "text": "interpreting and presenting data"
+  },
+  {
+   "code": "PRE-M1-T1-D98",
+   "path": "Year 11 / Designing and Producing / Design theory and process / ethics in research",
+   "text": "ethics in research"
+  },
+  {
+   "code": "PRE-M1-T1-D99",
+   "path": "Year 11 / Designing and Producing / Design theory and process / analyse, interpret and apply research data to the development of design projects",
+   "text": "analyse, interpret and apply research data to the development of design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D100",
+   "path": "Year 11 / Designing and Producing / Design theory and process / manufacturing and production",
+   "text": "manufacturing and production"
+  },
+  {
+   "code": "PRE-M1-T1-D101",
+   "path": "Year 11 / Designing and Producing / Design theory and process / selection of processes appropriate to a need",
+   "text": "selection of processes appropriate to a need"
+  },
+  {
+   "code": "PRE-M1-T1-D102",
+   "path": "Year 11 / Designing and Producing / Design theory and process / development of appropriate skills and techniques",
+   "text": "development of appropriate skills and techniques"
+  },
+  {
+   "code": "PRE-M1-T1-D103",
+   "path": "Year 11 / Designing and Producing / Design theory and process / account for practices undertaken in industrial and commercial settings",
+   "text": "account for practices undertaken in industrial and commercial settings"
+  },
+  {
+   "code": "PRE-M1-T1-D104",
+   "path": "Year 11 / Designing and Producing / Design theory and process / demonstrate quality production skills in the development of design projects",
+   "text": "demonstrate quality production skills in the development of design projects"
+  },
+  {
+   "code": "PRE-M1-T1-D105",
+   "path": "Year 11 / Designing and Producing / Design theory and process / computer-based technologies and their application including: modelling",
+   "text": "computer-based technologies and their application including: modelling"
+  },
+  {
+   "code": "PRE-M1-T1-D106",
+   "path": "Year 11 / Designing and Producing / Design theory and process / research",
+   "text": "research"
+  },
+  {
+   "code": "PRE-M1-T1-D107",
+   "path": "Year 11 / Designing and Producing / Design theory and process / simulation and graphics",
+   "text": "simulation and graphics"
+  },
+  {
+   "code": "PRE-M1-T1-D108",
+   "path": "Year 11 / Designing and Producing / Design theory and process / presentation.",
+   "text": "presentation."
+  },
+  {
+   "code": "PRE-M1-T1-D109",
+   "path": "Year 11 / Designing and Producing / Design theory and process / discriminate in the choice and use of computer-based technologies to develop, communicate and present design ideas and processes.",
+   "text": "discriminate in the choice and use of computer-based technologies to develop, communicate and present design ideas and processes."
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / apply factors affecting design to the development of the major design project",
+   "text": "apply factors affecting design to the development of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / debate the issues and factors influencing design and design practice",
+   "text": "debate the issues and factors influencing design and design practice"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / examples of success and failure in design",
+   "text": "examples of success and failure in design"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / critically analyse examples of success and failure in design solutions",
+   "text": "critically analyse examples of success and failure in design solutions"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / the work of designers",
+   "text": "the work of designers"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / design practice",
+   "text": "design practice"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / processes used by designers",
+   "text": "processes used by designers"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / emulate, where appropriate, the practices and processes used by designers to assist in the development of the major design project",
+   "text": "emulate, where appropriate, the practices and processes used by designers to assist in the development of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / trends in designing and producing, including those which are influenced by social, global, political, economic and environmental issues",
+   "text": "trends in designing and producing, including those which are influenced by social, global, political, economic and environmental issues"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / discuss the issues arising from trends in design and technological activity",
+   "text": "discuss the issues arising from trends in design and technological activity"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / identify and acknowledge historical and cultural influences on design and technological development",
+   "text": "identify and acknowledge historical and cultural influences on design and technological development"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "ethical and environmental issues"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental considerations for designers and society",
+   "text": "ethical and environmental considerations for designers and society"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / sustainable technologies",
+   "text": "sustainable technologies"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / protection of intellectual property",
+   "text": "protection of intellectual property"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / rights and responsibilities of the designer",
+   "text": "rights and responsibilities of the designer"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on Australian society",
+   "text": "impact on Australian society"
+  },
+  {
+   "code": "HSC-M1-T2-D20",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / critically analyse ethical issues in relation to innovation",
+   "text": "critically analyse ethical issues in relation to innovation"
+  },
+  {
+   "code": "HSC-M1-T2-D21",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / discuss ethical and environmental considerations for designers and society in general",
+   "text": "discuss ethical and environmental considerations for designers and society in general"
+  },
+  {
+   "code": "HSC-M1-T2-D22",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / identify the factors which contribute to the efficiency and sustainability of technologies",
+   "text": "identify the factors which contribute to the efficiency and sustainability of technologies"
+  },
+  {
+   "code": "HSC-M1-T2-D23",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors that impact on success of innovation including:",
+   "text": "factors that impact on success of innovation including:"
+  },
+  {
+   "code": "HSC-M1-T2-D24",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / timing, available and emerging technologies, historical and cultural, political, economic and legal factors, marketing strategies",
+   "text": "timing, available and emerging technologies, historical and cultural, political, economic and legal factors, marketing strategies"
+  },
+  {
+   "code": "HSC-M1-T2-D25",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / differentiate between factors which have contributed to the success or failure of innovations",
+   "text": "differentiate between factors which have contributed to the success or failure of innovations"
+  },
+  {
+   "code": "HSC-M1-T2-D26",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / the role of a variety of agencies that may impact upon the success of innovation",
+   "text": "the role of a variety of agencies that may impact upon the success of innovation"
+  },
+  {
+   "code": "HSC-M1-T2-D27",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / describe the role of a variety of agencies that influence the development, implementation and acceptance of innovation",
+   "text": "describe the role of a variety of agencies that influence the development, implementation and acceptance of innovation"
+  },
+  {
+   "code": "HSC-M1-T2-D28",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / entrepreneurial activity",
+   "text": "entrepreneurial activity"
+  },
+  {
+   "code": "HSC-M1-T2-D29",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / nature of entrepreneurial activity",
+   "text": "nature of entrepreneurial activity"
+  },
+  {
+   "code": "HSC-M1-T2-D30",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / role in design and technological activity",
+   "text": "role in design and technological activity"
+  },
+  {
+   "code": "HSC-M1-T2-D31",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / agencies which influence entrepreneurial activity",
+   "text": "agencies which influence entrepreneurial activity"
+  },
+  {
+   "code": "HSC-M1-T2-D32",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / management and entrepreneurial activity",
+   "text": "management and entrepreneurial activity"
+  },
+  {
+   "code": "HSC-M1-T2-D33",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / legal and ethical issues",
+   "text": "legal and ethical issues"
+  },
+  {
+   "code": "HSC-M1-T2-D34",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / discuss the influence of entrepreneurial activity on successful design and innovation",
+   "text": "discuss the influence of entrepreneurial activity on successful design and innovation"
+  },
+  {
+   "code": "HSC-M1-T2-D35",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / discuss the legal and ethical issues related to entrepreneurial activities",
+   "text": "discuss the legal and ethical issues related to entrepreneurial activities"
+  },
+  {
+   "code": "HSC-M1-T2-D36",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / creativity and innovative design practice",
+   "text": "creativity and innovative design practice"
+  },
+  {
+   "code": "HSC-M1-T2-D37",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / processes undertaken to develop innovations",
+   "text": "processes undertaken to develop innovations"
+  },
+  {
+   "code": "HSC-M1-T2-D38",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / success of innovation",
+   "text": "success of innovation"
+  },
+  {
+   "code": "HSC-M1-T2-D39",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / adaptation and development of ideas",
+   "text": "adaptation and development of ideas"
+  },
+  {
+   "code": "HSC-M1-T2-D40",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / responding to motivational stimuli",
+   "text": "responding to motivational stimuli"
+  },
+  {
+   "code": "HSC-M1-T2-D41",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / creative thinking",
+   "text": "creative thinking"
+  },
+  {
+   "code": "HSC-M1-T2-D42",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / demonstrate creativity in the development of the major design project",
+   "text": "demonstrate creativity in the development of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D43",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / critically analyse successful innovation",
+   "text": "critically analyse successful innovation"
+  },
+  {
+   "code": "HSC-M1-T2-D44",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / discuss concepts of quality, innovation and creativity",
+   "text": "discuss concepts of quality, innovation and creativity"
+  },
+  {
+   "code": "HSC-M1-T2-D45",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / needs analysis",
+   "text": "needs analysis"
+  },
+  {
+   "code": "HSC-M1-T2-D46",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / researching and developing ideas",
+   "text": "researching and developing ideas"
+  },
+  {
+   "code": "HSC-M1-T2-D47",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / identifying opportunities",
+   "text": "identifying opportunities"
+  },
+  {
+   "code": "HSC-M1-T2-D48",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / formulating an individual design proposal",
+   "text": "formulating an individual design proposal"
+  },
+  {
+   "code": "HSC-M1-T2-D49",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / develop a major design project proposal that clearly outlines: identification and exploration of the need; areas of investigation; criteria to evaluate success",
+   "text": "develop a major design project proposal that clearly outlines: identification and exploration of the need; areas of investigation; criteria to evaluate success"
+  },
+  {
+   "code": "HSC-M1-T2-D50",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / research and methods of experimentation to generate ideas",
+   "text": "research and methods of experimentation to generate ideas"
+  },
+  {
+   "code": "HSC-M1-T2-D51",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / respond to the findings of experimentation and research",
+   "text": "respond to the findings of experimentation and research"
+  },
+  {
+   "code": "HSC-M1-T2-D52",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / experiment with materials, tools and technologies when designing",
+   "text": "experiment with materials, tools and technologies when designing"
+  },
+  {
+   "code": "HSC-M1-T2-D53",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors to be considered when selecting resources including: safety; ethical issues; environmental issues",
+   "text": "factors to be considered when selecting resources including: safety; ethical issues; environmental issues"
+  },
+  {
+   "code": "HSC-M1-T2-D54",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / explain the principles underlying safe working practices and environments",
+   "text": "explain the principles underlying safe working practices and environments"
+  },
+  {
+   "code": "HSC-M1-T2-D55",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / identify, select, use and justify the use of resources based on the results and analysis of research",
+   "text": "identify, select, use and justify the use of resources based on the results and analysis of research"
+  },
+  {
+   "code": "HSC-M1-T2-D56",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / project evaluation",
+   "text": "project evaluation"
+  },
+  {
+   "code": "HSC-M1-T2-D57",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ongoing evaluation",
+   "text": "ongoing evaluation"
+  },
+  {
+   "code": "HSC-M1-T2-D58",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / analysing criteria for evaluation",
+   "text": "analysing criteria for evaluation"
+  },
+  {
+   "code": "HSC-M1-T2-D59",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / implementation of design solutions",
+   "text": "implementation of design solutions"
+  },
+  {
+   "code": "HSC-M1-T2-D60",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / identify functional and aesthetic criteria of the major design project",
+   "text": "identify functional and aesthetic criteria of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D61",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / test possible solutions of the major design project",
+   "text": "test possible solutions of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D62",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / conduct continual evaluation throughout the design and production of the major design project",
+   "text": "conduct continual evaluation throughout the design and production of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D63",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / the impact of the major design project",
+   "text": "the impact of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D64",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / on the individual",
+   "text": "on the individual"
+  },
+  {
+   "code": "HSC-M1-T2-D65",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / on society",
+   "text": "on society"
+  },
+  {
+   "code": "HSC-M1-T2-D66",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / on the environment (local and global)",
+   "text": "on the environment (local and global)"
+  },
+  {
+   "code": "HSC-M1-T2-D67",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / in relation to potential social or environmental costs or benefits",
+   "text": "in relation to potential social or environmental costs or benefits"
+  },
+  {
+   "code": "HSC-M1-T2-D68",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / evaluate the impact of the major design project on the individual, society and the environment",
+   "text": "evaluate the impact of the major design project on the individual, society and the environment"
+  },
+  {
+   "code": "HSC-M1-T2-D69",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / evaluate the major design project in terms of the identified criteria for success",
+   "text": "evaluate the major design project in terms of the identified criteria for success"
+  },
+  {
+   "code": "HSC-M1-T2-D70",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / project management",
+   "text": "project management"
+  },
+  {
+   "code": "HSC-M1-T2-D71",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / including methods of managing action, time and finance appropriate to the nature of individual design projects",
+   "text": "including methods of managing action, time and finance appropriate to the nature of individual design projects"
+  },
+  {
+   "code": "HSC-M1-T2-D72",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / documentation procedures for developing management plans",
+   "text": "documentation procedures for developing management plans"
+  },
+  {
+   "code": "HSC-M1-T2-D73",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / formulate management plans, including: action; time",
+   "text": "formulate management plans, including: action; time"
+  },
+  {
+   "code": "HSC-M1-T2-D74",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / apply and evaluate management plans",
+   "text": "apply and evaluate management plans"
+  },
+  {
+   "code": "HSC-M1-T2-D75",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / manage a quality major design project that successfully meets the identified need",
+   "text": "manage a quality major design project that successfully meets the identified need"
+  },
+  {
+   "code": "HSC-M1-T2-D76",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / research methods",
+   "text": "research methods"
+  },
+  {
+   "code": "HSC-M1-T2-D77",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / data collection, analysis, interpretation and application of conclusions",
+   "text": "data collection, analysis, interpretation and application of conclusions"
+  },
+  {
+   "code": "HSC-M1-T2-D78",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / conduct research to examine the success of an innovation and produce an investigative report",
+   "text": "conduct research to examine the success of an innovation and produce an investigative report"
+  },
+  {
+   "code": "HSC-M1-T2-D79",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / select and apply appropriate research methods for the major design project and case study",
+   "text": "select and apply appropriate research methods for the major design project and case study"
+  },
+  {
+   "code": "HSC-M1-T2-D80",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / justify decisions made based on analysis of research",
+   "text": "justify decisions made based on analysis of research"
+  },
+  {
+   "code": "HSC-M1-T2-D81",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / communication",
+   "text": "communication"
+  },
+  {
+   "code": "HSC-M1-T2-D82",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / presenting information",
+   "text": "presenting information"
+  },
+  {
+   "code": "HSC-M1-T2-D83",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / visualising solutions",
+   "text": "visualising solutions"
+  },
+  {
+   "code": "HSC-M1-T2-D84",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / communication and presentation methods appropriate to the target market",
+   "text": "communication and presentation methods appropriate to the target market"
+  },
+  {
+   "code": "HSC-M1-T2-D85",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / select and use appropriate communication techniques for the development of the major design project",
+   "text": "select and use appropriate communication techniques for the development of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D86",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / practices in industrial and commercial settings as they relate to the major design project including;",
+   "text": "practices in industrial and commercial settings as they relate to the major design project including;"
+  },
+  {
+   "code": "HSC-M1-T2-D87",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / safe work practices using selected resources",
+   "text": "safe work practices using selected resources"
+  },
+  {
+   "code": "HSC-M1-T2-D88",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / production techniques",
+   "text": "production techniques"
+  },
+  {
+   "code": "HSC-M1-T2-D89",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / selection of processes appropriate to an identified need or opportunity",
+   "text": "selection of processes appropriate to an identified need or opportunity"
+  },
+  {
+   "code": "HSC-M1-T2-D90",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / collaborative designing and design teams",
+   "text": "collaborative designing and design teams"
+  },
+  {
+   "code": "HSC-M1-T2-D91",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / identify design and production processes used in domestic, community, industrial and commercial settings",
+   "text": "identify design and production processes used in domestic, community, industrial and commercial settings"
+  },
+  {
+   "code": "HSC-M1-T2-D92",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / implement safe work practices using selected materials and techniques in design and production of the major design project",
+   "text": "implement safe work practices using selected materials and techniques in design and production of the major design project"
+  },
+  {
+   "code": "HSC-M1-T2-D93",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / emerging technologies",
+   "text": "emerging technologies"
+  },
+  {
+   "code": "HSC-M1-T2-D94",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting their development",
+   "text": "factors affecting their development"
+  },
+  {
+   "code": "HSC-M1-T2-D95",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / criteria for evaluation",
+   "text": "criteria for evaluation"
+  },
+  {
+   "code": "HSC-M1-T2-D96",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on society and the environment",
+   "text": "impact on society and the environment"
+  },
+  {
+   "code": "HSC-M1-T2-D97",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on innovation.",
+   "text": "impact on innovation."
+  },
+  {
+   "code": "HSC-M1-T2-D98",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / appraise the ecological, economic, social, ethical, and legal implications of new and emerging technologies",
+   "text": "appraise the ecological, economic, social, ethical, and legal implications of new and emerging technologies"
+  },
+  {
+   "code": "HSC-M1-T2-D99",
+   "path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / analyse the impact of emerging technologies on innovation.",
+   "text": "analyse the impact of emerging technologies on innovation."
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Major Design Project / Project development and realisation / suggested components and weightings for the internal assessment of the Preliminary course",
+   "text": "suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Major Design Project / Project development and realisation / mandatory components and weightings for the internal assessment of the HSC course",
+   "text": "mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Major Design Project / Project development and realisation / the HSC examination specifications, which describe the format of the external HSC examination.",
+   "text": "the HSC examination specifications, which describe the format of the external HSC examination."
+  }
+ ],
+ "questions": [
+  {
+   "id": "dt202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "Which of the following best describes ergonomics?\nThe study of human body measurement\nThe design of products to satisfy a niche market\nDesign factors to consider in developing energy-efficient products\nThe study of how people work efficiently within their physical environment"
+  },
+  {
+   "id": "dt202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / research methods",
+   "text": "What are designers aiming to determine first, when they carry out research prior to designing a new product?\nThe level of consumer need and demand\nSuitable pricing and marketing strategies\nThe range of existing products and pending patents\nThe level of consumer acceptance of using innovative technologies"
+  },
+  {
+   "id": "dt202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "An urban planner has been commissioned to design a new housing estate. Which factors would the planner initially need to consider when establishing the design brief?\nThe developer’s needs and constraints\nThe required infrastructure and community facilities\nThe size of the development and possible styles of housing\nThe location of the nearest major city and access to public transport"
+  },
+  {
+   "id": "dt202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / sustainable technologies",
+   "text": "Which of the following best describes the primary aim of using sustainable practices?\nTo reduce global warming\nTo address climate change\nTo ensure that natural resources are available in the future\nTo only use materials that are either recyclable or biodegradable"
+  },
+  {
+   "id": "dt202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A designer has developed an energy-efficient battery-powered home appliance. Which of the following is most likely to contribute to the success of the appliance?\nAttractive design features\nConvenience of portable appliances\nGrowing social trend to use innovative products\nIncreased demands on time in managing household chores"
+  },
+  {
+   "id": "dt202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / trends in designing and producing, including those which are influenced by social, global, political, economic and environmental issues",
+   "text": "Which of the following has had the greatest impact on the working practices of designers?\nChanges in consumer needs\nEase of travel and flexible working conditions\nAccess to technologies with greater capabilities\nCost-effective communication systems and workplace opportunities"
+  },
+  {
+   "id": "dt202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "How could a designer best ensure minimal impact on the environment when developing a new product?\nUndertake a life-cycle analysis\nAdopt a focus on the use of green technology\nImplement a system for recycling production waste\nLimit the material waste during the production process"
+  },
+  {
+   "id": "dt202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / communication",
+   "text": "Which of the following has contributed to an increase in the use of social media for researching information?\nAffordability and convenience\nThe ability to capture, store and use instant real-time data\nA greater number of people have access to this form of technology\nThe growing ownership of mobile phones with innovative app features"
+  },
+  {
+   "id": "dt202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / design practice",
+   "text": "Which strategy should a small company use when deciding whether to adopt a new technology?\nContinue to invest in the latest technology while deciding\nSpend more time and money on staff training and development\nDetermine the percentage return of the investment in the new technology\nCompare the cost and efficiency of the new technology with current practices"
+  },
+  {
+   "id": "dt202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "Struggling businesses are often forced to diversify to remain viable. This has resulted in businesses needing to design and develop\ninfrastructure to improve production output.\nsystems to manage activities in order to meet consumer demands.\na detailed life-cycle analysis of all operations to address consumer interests.\ninnovative management practices that improve output to reduce environmental impact."
+  },
+  {
+   "id": "dt202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / protection of intellectual property",
+   "text": "Take-away hot drinks can be provided in a variety of cups, four of which are shown: A. polystyrene cup (polystyrene foam); B. rippled paper cup (rippled paper with a plastic lid); C. glass cup (glass with rubber lid and band); D. stainless steel cup (double-wall stainless steel with a clear plastic lid). The question has parts (a), (b) and (c).\nWith reference to ONE of these cups, outline how the designer could protect their intellectual property.\nDescribe a positive design feature and a negative design feature of ONE of the cups shown.\nExplain how environmental factors may have influenced social acceptance of using cups such as those labelled C and D."
+  },
+  {
+   "id": "dt202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / trends in designing and producing, including those which are influenced by social, global, political, economic and environmental issues",
+   "text": "To what extent have technological advancements in production techniques influenced changes in design? Support your answer with examples."
+  },
+  {
+   "id": "dt202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / rights and responsibilities of the designer",
+   "text": "Analyse the rights and responsibilities of a designer when developing a new product."
+  },
+  {
+   "id": "dt202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A design professional reviews a product that you have created and makes the comment that ‘your product is really beautiful’. To which of the following factors of design does this comment best relate?\nAesthetics\nErgonomics\nFunction\nQuality"
+  },
+  {
+   "id": "dt202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / processes used by designers",
+   "text": "Which of the following best describes an effective process for developing design solutions?\nA method of analysing a product’s development\nA series of steps to manage time, actions and finance\nA method of manufacturing products, systems or environments\nA series of steps to transform an idea into a working and viable product"
+  },
+  {
+   "id": "dt202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A life cycle analysis is NOT used to evaluate a product’s\nchances of success.\nmarketing strategies.\nability to meet a design brief.\npotential for future innovation."
+  },
+  {
+   "id": "dt202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / protection of intellectual property",
+   "text": "What is the purpose of protecting intellectual property?\nTo increase profit margins for designers\nTo ensure safeguards for consumer rights\nTo help distribute consumer products more widely\nTo allow designers greater control over their ideas"
+  },
+  {
+   "id": "dt202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / trends in designing and producing, including those which are influenced by social, global, political, economic and environmental issues",
+   "text": "What role does the designer have when considering the economic impact of new designs on the community?\nTo respond to social change and use new technologies that reduce cost\nTo use environmentally friendly materials throughout the production process\nTo consider the positive and negative issues of design decisions to increase profit margins\nTo develop new products with a limited life span in order to reduce costs of manufacturing"
+  },
+  {
+   "id": "dt202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "Which of the following contributes to the development of an efficient and sustainable product?\nTiming the release of a product to market\nEnsuring that the loss of natural resources is considered\nProducing quality products that reflect and align with society’s needs\nEffective time management, planning and evaluation throughout product development"
+  },
+  {
+   "id": "dt202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "There has been a growing trend towards a cashless and paperless society due to technological advances which support, for example, the use of transport cards, digital subscriptions and contactless payments. Which of the following is a direct benefit of this trend to the consumer?\nIncreased sales\nGreater privacy\nGreater convenience\nA greener environment"
+  },
+  {
+   "id": "dt202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "What ethical action should be taken by designers when developing a product that uses synthetic materials rather than natural resources?\nDevelop a returns policy for consumers\nInform consumers of the materials used\nPromote the lack of environmental damage that has occurred from using synthetic materials\nAssure consumers that the chemical composition and appearance of natural and synthetic materials are the same"
+  },
+  {
+   "id": "dt202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on society and the environment",
+   "text": "Four products were created in response to the brief: ‘Design a new product that has the most positive outcome for future generations.’ These four products (W, X, Y and Z) were evaluated by a panel of expert designers. The following graph shows how the expert designers rated each product based on four criteria. Based on the results shown, which product best responds to the design brief?\nW\nX\nY\nZ"
+  },
+  {
+   "id": "dt202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on society and the environment",
+   "text": "What is most likely to occur if emerging technologies and sustainable practices fail to align?\nGrowth in environmental concern will be limited.\nGlobal economies will stagnate as innovation ceases to occur.\nPolitical intervention will limit the research and development of design ideas.\nAn imbalance between innovative human endeavours and maintaining the natural environment will result."
+  },
+  {
+   "id": "dt202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / explain the principles underlying safe working practices and environments",
+   "text": "Employers are committed to keeping staff safe in the workplace through the use of personal protective equipment (PPE). Consider ONE article of PPE that is commonly used in the workplace and answer parts (a) and (b) with reference to this article.\nDraw an annotated sketch of an article of personal protective equipment (PPE) that is commonly used in the workplace.\nA designer has been given the brief to make this article of PPE more acceptable to the user. Describe how the designer can respond to the brief."
+  },
+  {
+   "id": "dt202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "Describe a positive effect and a negative effect of ONE change to work practices."
+  },
+  {
+   "id": "dt202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "Explain why the designer of a new product should consider the needs of society."
+  },
+  {
+   "id": "dt202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / legal and ethical issues",
+   "text": "The images below illustrate two innovative transport systems which have been developed with the aid of emerging technologies: an image of a delivery drone and an image of a driverless truck. Analyse the legal issues and the economic issues that may arise due to the increased use of these innovative systems."
+  },
+  {
+   "id": "dt202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A swimwear designer has been approached to develop the Australian swimsuit for the Paris Olympic Games in 2024. What factor should be considered first?\nAesthetics\nDurability\nFunction\nQuality"
+  },
+  {
+   "id": "dt202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / protection of intellectual property",
+   "text": "What is the most appropriate way a designer could protect the intellectual property of a product such as a smart phone?\nCopyright\nLicense\nPatent\nTrademark"
+  },
+  {
+   "id": "dt202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors that impact on success of innovation including:",
+   "text": "Four products are categorised according to market demand and manufacturing costs in a table (W high demand/low cost, X high demand/high cost, Y low demand/low cost, Z low demand/high cost). Which product should generate the most income through sales?\nW\nX\nY\nZ"
+  },
+  {
+   "id": "dt202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / research methods",
+   "text": "Why do designers conduct market research prior to designing a new product?\nTo develop a possible marketing campaign\nTo determine the level of consumer demand\nTo access alternative manufacturing techniques\nTo understand the impact of a life cycle analysis"
+  },
+  {
+   "id": "dt202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "Many Australian homes are currently being designed to bring the indoors to the outdoors. Which of the following has influenced this practice?\nCultural diversity\nChanging social trends\nTechnological changes\nChanging nature of work"
+  },
+  {
+   "id": "dt202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / research methods",
+   "text": "Which of the following should a designer first consider when conducting an analysis of a targeted audience?\nMarket trends\nBrand awareness\nPurchasing power\nCost-to-value ratio"
+  },
+  {
+   "id": "dt202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / experiment with materials, tools and technologies when designing",
+   "text": "Why would a designer make prototypes after creating CAD models for a client?\nTo save time and staff costs\nTo ensure funding by investors is secured\nTo demonstrate the final design to the client\nTo simulate possible issues that may arise in production"
+  },
+  {
+   "id": "dt202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "What is the purpose of a designer undertaking a ‘cradle to grave’ analysis of a pending innovation?\nTo determine the likelihood of financial success\nTo indicate the possibility of future growth in market share\nTo determine the level of consumer demand for a new product\nTo understand the impact of the design on society and the environment"
+  },
+  {
+   "id": "dt202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on society and the environment",
+   "text": "A designer is planning to release a line of ergonomic wheelchairs for children. What is the best way to evaluate the useability of this wheelchair?\nInvest in innovative material development\nTest the product in a range of environments\nConsider surveys from the specific target market\nCompare the design with competitive manufacturers"
+  },
+  {
+   "id": "dt202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "The steady increase in the development of innovative and functional consumer goods that quickly become obsolete is mostly the result of\ndemand for newer products with better capabilities.\nexpansion of online marketing capabilities to increase sales.\nuse of rapid prototyping methods that produce more products.\nadvancements in manufacturing methods and the ease of mass production."
+  },
+  {
+   "id": "dt202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / experiment with materials, tools and technologies when designing",
+   "text": "Outline how testing and experimenting can improve a design project."
+  },
+  {
+   "id": "dt202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / communication and presentation methods appropriate to the target market",
+   "text": "Describe how technology can assist designers in overcoming communication barriers."
+  },
+  {
+   "id": "dt202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "Two drink bottles are shown in the examination paper (a drawing of two drink bottles).\nDiscuss the long-term environmental impacts of either drink bottle."
+  },
+  {
+   "id": "dt202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "Mass production is the process of creating goods on a large scale and with limited human input. Explain how the trend towards mass production may affect workplace practices."
+  },
+  {
+   "id": "dt202215",
+   "year": 2022,
+   "number": "15",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on society and the environment",
+   "text": "The images represent FOUR alternative energy systems (diagrams of four energy systems).\nAnalyse the effects of TWO alternative energy systems on society and the environment."
+  },
+  {
+   "id": "dt202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "What is the primary purpose of ongoing evaluation?\nTo set goals\nTo explore ideas\nTo establish consumer needs\nTo solve design issues as they arise"
+  },
+  {
+   "id": "dt202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A manufacturer chooses to produce cutting boards made from bamboo because it can be regrown and is inexpensive. Which of the following would be the manufacturer’s determining factor when selecting this material?\nAesthetics\nAvailability\nSustainability\nLife cycle analysis"
+  },
+  {
+   "id": "dt202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "What is the most important factor for a designer to consider when developing an innovation with ergonomic features?\nEnsuring the product is user friendly\nIntegrating the latest emerging technology\nFinding a reliable manufacturer to efficiently develop the product\nProviding end users with resources to develop an understanding of the technology"
+  },
+  {
+   "id": "dt202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / needs analysis",
+   "text": "What are designers responding to when they develop products to assist people in society?\nEmerging trends\nIdentified needs\nInnovative processes\nThe natural resources available"
+  },
+  {
+   "id": "dt202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / explain the principles underlying safe working practices and environments",
+   "text": "What is the primary purpose of a work health and safety (WHS) risk assessment?\nTo identify dangerous equipment\nTo evaluate workshop organisation and practices\nTo access the impact of materials on the environment\nTo identify and assess potential injury or illness in the workplace"
+  },
+  {
+   "id": "dt202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A product is obsolescent when\nit is ageing.\nit is classified as an antique.\nit cannot be repaired because parts are not available.\na variety of materials is considered during design and development."
+  },
+  {
+   "id": "dt202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors that impact on success of innovation including:",
+   "text": "Which of the following is most important for an innovative idea to be successful?\nA comprehensive marketing plan\nWorkload management and state of the art equipment\nThorough planning, research, timing and consumer demand\nUsing local and current technologies for immediate release in the marketplace"
+  },
+  {
+   "id": "dt202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / protection of intellectual property",
+   "text": "What is the purpose of securing protection of intellectual property?\nTo guarantee ownership of the domain name\nTo prevent others from creating a similar product\nTo prevent breach or violation of trademarks, patents and copyright\nTo provide a legal framework to protect a designer’s creative ideas and designs"
+  },
+  {
+   "id": "dt202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "Which of the following describes a product life cycle analysis?\nAn overview of the environmental impact at the development phase\nAn assessment of the manufacturer’s costs to transport and distribute the product\nThe examination of the extraction, manufacturing and final disposal of the product\nThe determination of how materials for the product will be extracted and processed"
+  },
+  {
+   "id": "dt202310",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "Which of the following best demonstrates a designer taking an ethical approach when creating a new product?\nDeveloping a product that avoids excessive use of resources\nUsing innovative technologies to ensure greater uptake in the marketplace\nTargeting the aspirations of clients to develop a product that is easier to use\nAdapting procedures to protect the rights and responsibilities of the designer"
+  },
+  {
+   "id": "dt202311",
+   "year": 2023,
+   "number": "11",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors that impact on success of innovation including:",
+   "text": "Outline ONE factor that could affect the success or failure of a design."
+  },
+  {
+   "id": "dt202312",
+   "year": 2023,
+   "number": "12",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "How has ONE social trend led to a higher demand for innovative solutions?"
+  },
+  {
+   "id": "dt202313",
+   "year": 2023,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / communication and presentation methods appropriate to the target market",
+   "text": "Explain the advantages of ONE communication technique that could be used when presenting information to a client."
+  },
+  {
+   "id": "dt202314",
+   "year": 2023,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on society and the environment",
+   "text": "Technology has improved the lifestyle for many. However, it has come at a cost to society and the environment. Discuss this statement in relation to ONE technology."
+  },
+  {
+   "id": "dt202315",
+   "year": 2023,
+   "number": "15",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "Complex challenges require designers to be creative in addressing the ongoing needs of society. Analyse the ethical and social implications for designers in creating solutions to world issues. In your response, refer to TWO of the following examples: Health; Food production; Living conditions."
+  },
+  {
+   "id": "dt202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / including methods of managing action, time and finance appropriate to the nature of individual design projects",
+   "text": "What is the primary reason a designer might run out of time to complete a project?\nPoor planning\nMeeting warranty claims\nInappropriate target market\nLate final payment from client"
+  },
+  {
+   "id": "dt202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / sustainable technologies",
+   "text": "What is the main goal of sustainable design?\nTo preserve the ozone layer\nTo reduce pollution and waste\nTo ensure the long-term availability of natural resources\nTo promote the responsible use of affordable materials by manufacturers"
+  },
+  {
+   "id": "dt202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / research methods",
+   "text": "A designer has been asked to present a range of ideas for new greeting cards. What should the designer initially research in response to the brief?\nExisting images and symbols\nStrategies for product supply and distribution\nTimelines and actions for product development\nThe value of instore gift cards to redeem for products"
+  },
+  {
+   "id": "dt202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "What are the prime considerations for designers when producing safe and ethical products for consumers?\nSocial trends and convenience\nFinancial market share and existing products\nPatent protection and niche market compatibility\nEnd user wellbeing and environmental friendliness"
+  },
+  {
+   "id": "dt202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / collaborative designing and design teams",
+   "text": "Which of the following options best describes the features of a collaborative design team?\nLeader directed, common skills among the group, responsive to feedback\nLeader directed, various fields of professional expertise, responsive to feedback\nShared understanding of the project, common skills among the team, cooperative decision-making process\nShared understanding of the project, various fields of professional expertise, cooperative decision-making process"
+  },
+  {
+   "id": "dt202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "Which of the following is the most effective method to improve the design of new housing estates?\nLimit the designers’ creative freedom\nInfluence building regulations and land use policies\nMandate the use of specific brands of construction material\nRequire designers to prioritise ornate and decorative interior styles"
+  },
+  {
+   "id": "dt202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / protection of intellectual property",
+   "text": "A corporation has commissioned a designer to develop a new solar-powered, mobile interactive game. What is an ethical way to protect the intellectual property of the new design?\nThe designer applies for a patent.\nThe corporation applies for a patent.\nThe designer applies for copyright protection.\nThe corporation applies for copyright protection."
+  },
+  {
+   "id": "dt202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "What is the most important reason for undertaking a life cycle analysis of an innovative design?\nTo establish the rights of the designer\nTo research the possibility of future growth in market share\nTo understand the impact of the project on society and the environment\nTo determine the level of consumer demand for the newly developed product"
+  },
+  {
+   "id": "dt202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / communication and presentation methods appropriate to the target market",
+   "text": "When communicating to an audience, what is the best method of effectively transferring information?\nUsing language and technical jargon to impress the audience\nKeeping the message simple to appeal to a broad range of people\nProviding as much data as possible to cover all potential interests\nTailoring the message to address the needs and preferences of the audience"
+  },
+  {
+   "id": "dt202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A designer has been asked to analyse the ergonomic implications of a given task. What knowledge would the designer need to have to complete the analysis?\nThe cost-effectiveness of innovating work practices\nThe most common workplace injuries and their causes\nThe physical demands and human requirements for the job\nThe psychological wellbeing of employees in the workplace"
+  },
+  {
+   "id": "dt202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "An e-scooter is a battery-powered device that can be used for transportation or leisure activities. Outline ONE factor of design that would be important in the development of an e-scooter."
+  },
+  {
+   "id": "dt202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "Describe ONE disadvantage of designing a product with a limited life span."
+  },
+  {
+   "id": "dt202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "Discuss ONE social trend that can affect the design of a new product."
+  },
+  {
+   "id": "dt202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors that impact on success of innovation including:",
+   "text": "Explain ONE risk that a designer may face when creating an innovative product, system or environment. Provide an example to support your answer."
+  },
+  {
+   "id": "dt202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / the work of designers",
+   "text": "Examples of new discoveries:"
+  },
+  {
+   "id": "dt202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "What is the most important design factor to consider when designing a flower arrangement for a wedding?\nAesthetics\nDurability\nErgonomics\nObsolescence"
+  },
+  {
+   "id": "dt202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors to be considered when selecting resources including: safety; ethical issues; environmental issues",
+   "text": "Which of the following should a designer prioritise when designing a product for children?\nUsing the most affordable materials available\nSelecting materials with high aesthetic appeal\nEnsuring that materials are safe, durable and non-toxic\nCreating a complex user interface for extended engagement and durability"
+  },
+  {
+   "id": "dt202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / including methods of managing action, time and finance appropriate to the nature of individual design projects",
+   "text": "Which of the following could a designer use to track the progress of a project over time?\nGantt chart\nVenn diagram\nSWOT analysis\nLife cycle analysis"
+  },
+  {
+   "id": "dt202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / experiment with materials, tools and technologies when designing",
+   "text": "Why is it necessary to experiment and test for durability?\nTo check the market demand for the product\nTo reduce the environmental impact of the product\nTo determine if the product can be sold at a lower price\nTo understand how the product functions under different conditions"
+  },
+  {
+   "id": "dt202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / data collection, analysis, interpretation and application of conclusions",
+   "text": "Which of the following is the main purpose of analysing data collected when designing a project?\nTo organise information into tables and charts\nTo ensure the data looks visually appealing to investors\nTo draw meaningful conclusions that guide decision-making\nTo collect as much data as possible about manufacturing trends"
+  },
+  {
+   "id": "dt202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / collaborative designing and design teams",
+   "text": "Collaboration with other designers can improve the outcomes of a design project by\nreducing the need for communication and feedback.\nensuring the design project is managed by an expert.\nincreasing the manufacturing cost of the design project.\nutilising design experience for different aspects of the project."
+  },
+  {
+   "id": "dt202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / sustainable technologies",
+   "text": "How has packaging design changed as a result of consumer awareness of sustainability?\nIncreased use of materials that break down over time\nIncreased focus on visual appeal through the use of multilayered packaging\nIncreased use of non-renewable materials to meet the need of mass production\nIncreased use of plastic packaging due to the demand for cheaper options sourced globally"
+  },
+  {
+   "id": "dt202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / historical and cultural influences on designing and producing, including: changing social trends; cultural diversity; the changing nature of work; technological change",
+   "text": "Which of the following social trends has had the largest impact on the production of new fitness monitoring devices?\nIncrease in cultural diversity\nGrowing importance of preventive healthcare\nIncrease in mobile app development standards\nGrowing concerns for data privacy and data security"
+  },
+  {
+   "id": "dt202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / factors affecting designing and producing, including: appropriateness of the design solution; needs; function; aesthetics; finance; ergonomics; work health and safety; quality; short-term and long-term environmental consequences; obsolescence; life cycle analysis",
+   "text": "A company has collected data on four similar products, as shown in the graph. Which product would be the best choice for consumers to purchase?\nW\nX\nY\nZ"
+  },
+  {
+   "id": "dt202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / impact on society and the environment",
+   "text": "How has the demand for renewable energy created by emerging technologies had a positive impact on the environment?\nBy increasing reliance on fossil fuels\nBy decreasing greenhouse gas emissions\nBy increasing demand for finite resources\nBy decreasing demand for renewable resources"
+  },
+  {
+   "id": "dt202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / experiment with materials, tools and technologies when designing",
+   "text": "Outline the role of prototyping in the development of a design project."
+  },
+  {
+   "id": "dt202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / legal and ethical issues",
+   "text": "Describe ONE ethical issue that must be considered when managing personal data."
+  },
+  {
+   "id": "dt202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / ethical and environmental issues",
+   "text": "Two different types of battery power options for a household are shown: LITHIUM-ION 18V and ALKALINE.\nDiscuss the long-term environmental impact of the battery power options."
+  },
+  {
+   "id": "dt202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / discuss concepts of quality, innovation and creativity",
+   "text": "Explain how innovation in design has influenced user experience."
+  },
+  {
+   "id": "dt202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Innovation and Emerging Technologies / Emerging technologies / analyse the impact of emerging technologies on innovation.",
+   "text": "Recent advancements in artificial intelligence (AI) have transformed the design industry, influencing how designers create, collaborate and produce their work. AI tools now assist in generating design concepts, automating repetitive tasks and providing insights based on data analysis. Analyse the impact of AI on designers."
+  }
+ ]
+}

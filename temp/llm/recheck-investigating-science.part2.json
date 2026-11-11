@@ -1,0 +1,1205 @@
+{
+ "course_id": "investigating-science",
+ "course_name": "Investigating Science",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is the current label and is known to be unreliable. Use null if the text is missing, placeholder, or no dot covers the core concept. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / carry out a practical investigation to record both quantitative and qualitative data from observations, for example: burning a candle floating in a closed container"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / the behaviour of slaters in a dry/wet or light/dark environment"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / the Bernoulli effect"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / strata in rock cuttings"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss and evaluate the characteristics of observations made compared to inferences drawn in respect of the practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / research how observation has instigated experimentation to investigate cause and effect in historical examples, including but not limited to:"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / Archimedes observing the displacement of water"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / Alexander Fleming’s observations of the effect of mould on bacteria"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / Galileo’s observations of the movement of Jupiter’s moons"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / assess ways in which Aboriginal and Torres Strait Islander Peoples use observation to develop an understanding of Country and Place in order to create innovative ways of managing the natural environment, including but not limited to: firestick farming; knowledge about plants for medicinal purposes"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / carry out a practical activity to qualitatively and quantitatively describe, for example: microscopic images of a variety of cells; geological strata in rock faces and road cuttings; an object falling due to gravity; characteristics of acids and bases"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / analyse the quantitative data from the following information sources, including but not limited to: digital images and hand-drawn diagrams of cells; geological succession obtained from rock strata"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / graphs of results obtained from observations of an object falling due to gravity"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / data showing the pH of acids and bases"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / evaluate the differences between qualitative and quantitative observations and data and where these are used"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / use data gathered to plan a practical investigation to: pose further questions that will be investigated"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss the role of variables"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / determine the independent and dependent variables"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / formulate a hypothesis that links the independent and dependent variables"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describe at least three variables that should be controlled in order to increase the validity of the investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / develop a method to collect primary data for a practical investigation by: describing how to change the independent variable"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / determining the characteristics of the measurements that will form the dependent variable"
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describing how the data will be collected"
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describing how the controlled variables will be made consistent"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describing how risks can be minimised"
+  },
+  {
+   "code": "PRE-M1-T1-D26",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / evaluate how observation is limited by the observational tools available, including but not limited to: observing the Universe; digital versus analogue technologies"
+  },
+  {
+   "code": "PRE-M1-T1-D27",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / carry out the planned practical investigation, above, to collect primary data"
+  },
+  {
+   "code": "PRE-M1-T1-D28",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / apply conventions for collecting and recording observations to qualitatively and quantitatively analyse the primary data, including but not limited to: tabulation; graphing; visual representations; digital representations"
+  },
+  {
+   "code": "PRE-M1-T1-D29",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / compare the usefulness of observations recorded in the initial practical activity with the primary data gathered in this planned practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D30",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / draw conclusions from the analysis of the primary data collected in the practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D31",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / evaluate the process of drawing conclusions from the primary data collected"
+  },
+  {
+   "code": "PRE-M1-T1-D32",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / assess the findings of the scientific investigation in relation to the findings of other related investigations"
+  },
+  {
+   "code": "PRE-M1-T1-D33",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / assess the need to make further observations by gathering data about other phenomena arising from the practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D34",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describe patterns that have been observed over time throughout the Universe and in nature using, for example: animal migration; movement of comets; formation and shape of snow crystals; elements exhibiting certain properties"
+  },
+  {
+   "code": "PRE-M1-T1-D35",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / interpret data in order to propose a hypothesis based on an irregular pattern observed over time in the Universe and in nature using, for example: the Aurora Australis; fractals in nature; the behaviour of unstable isotopes"
+  },
+  {
+   "code": "PRE-M1-T1-D36",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / examine the human tendency to observe patterns and misinterpret information, for example: pareidolia; optical illusions"
+  },
+  {
+   "code": "PRE-M1-T1-D37",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss how the tendency to recognise patterns, even when they may not exist, can lead to misinterpretation of data"
+  },
+  {
+   "code": "PRE-M1-T1-D38",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss the role and significance of outliers in data"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / employ and evaluate safe work practices and manage risks"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / evaluate and improve the quality of data"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select and use suitable forms of digital, visual, written and/or oral forms of communication"
+  },
+  {
+   "code": "PRE-M1-T2-D13",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts"
+  },
+  {
+   "code": "PRE-M1-T2-D14",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion"
+  },
+  {
+   "code": "PRE-M1-T2-D15",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / gather secondary-sourced data describing historical instances of long-standing assumptions that have been updated by scientific investigation, including but not limited to:"
+  },
+  {
+   "code": "PRE-M1-T2-D16",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / spontaneous generation and the investigations that led to the proposal of the germ theory"
+  },
+  {
+   "code": "PRE-M1-T2-D17",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / radioactivity: including the work of Henri Becquerel and Marie Curie"
+  },
+  {
+   "code": "PRE-M1-T2-D18",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / phlogiston theory"
+  },
+  {
+   "code": "PRE-M1-T2-D19",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / human influences on atmospheric pollution"
+  },
+  {
+   "code": "PRE-M1-T2-D20",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / propose an inquiry question, construct a hypothesis and conduct an investigation that tests a common assumption, for example:"
+  },
+  {
+   "code": "PRE-M1-T2-D21",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / washing with antibacterial soap kills more germs than washing with normal soap"
+  },
+  {
+   "code": "PRE-M1-T2-D22",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / the Sun rises in the East and sets in the West"
+  },
+  {
+   "code": "PRE-M1-T2-D23",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / what goes up must come down"
+  },
+  {
+   "code": "PRE-M1-T2-D24",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / use appropriate representations to analyse the data"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / investigate the practices of Aboriginal and Torres Strait Islander Peoples that relate to observations and inferences, including but not limited to: leaching of toxins in bush tucker"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / locating sources of freshwater within bodies of salt water"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / conduct a collaborative practical investigation and collect a range of qualitative and quantitative primary data from one of the following: growth of plants; reactions of calcium carbonate; the ‘life’ of different batteries under different circumstances; water quality of a pond or local stream"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / make inferences and conclusions derived from the primary data collected in this collaborative practical investigation"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / assess the input that collaborative teams and alternative perspectives have had on the development of hypotheses and research questions that have contributed to the development of, for example: particle accelerators; periodic table; study of bioastronomy; geological uniformitarianism"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / assess the scientific community's current understanding of scientific mysteries and outline why this understanding remains incomplete, including but not limited to: origins of life on the Earth"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / the idea that feynmanium is the last chemical on the periodic table that could exist"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / the expanding Universe and Hubble constant"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / evaluate biases that may have affected the scientific thinking of European settlers about Aboriginal and Torres Strait Islander Peoples’ ecological understanding and knowledge of Country and Place in relation to agricultural practices and the biological and natural resources of Australia"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / collect qualitative and quantitative secondary-sourced data to validate the inferences and conclusions drawn from the practical investigation carried out above, based on one or more of the following: the effect of soil salinity on plant growth; chemical reactions in cave formation; energy storage; methods of water monitoring"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / discuss how secondary-sourced data adds to the inferences and conclusions drawn from primary data"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / evaluate the usefulness of considering secondary-sourced research before undertaking an investigation to collect primary data, in order to: make inferences"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / develop inquiry questions"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / construct suitable hypotheses"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / plan suitable investigations"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / avoid unnecessary investigation"
+  },
+  {
+   "code": "PRE-M2-T2-D10",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / make generalisations to describe any trends found in the data"
+  },
+  {
+   "code": "PRE-M2-T2-D11",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / draw conclusion based on generalisations"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Scientific Models / Developing models / explain why new evidence can challenge the use of existing scientific models and may result in those models being contested and refined or replaced, including but not limited to the development of: epidemic models; models of the Universe; atomic models; climate models"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Scientific Models / Developing models / compare the limitations of simple and complex scientific models"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / assess error, uncertainty and limitations in data"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / examine the types of models that may be used in science, including: diagrams; physical replicas; mathematical representations; analogies; computer simulations"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / examine the use of scientific models, including but not limited to: epidemic models; models of the Universe; atomic models; climate models"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / outline how models have been used to illustrate, simplify and represent scientific concepts and processes"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / explain how scientific models are used to make predictions that are difficult to analyse in the real world due to time frames, size and cost"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / assess the effectiveness of models at facilitating the understanding of scientific processes, structures and mathematical relationships through the use of:"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / evaluate how scientific models draw on a growing body of data from a wide range of disciplines and technologies to refine predictions and test new hypotheses"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / investigate a scientific concept or process that can be represented using a model, by:"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / planning a model with reference to the scientific literature"
+  },
+  {
+   "code": "PRE-M3-T2-D12",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / constructing a model using appropriate resources to represent the selected scientific concept"
+  },
+  {
+   "code": "PRE-M3-T2-D13",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / demonstrating how the model could be used to make a prediction"
+  },
+  {
+   "code": "PRE-M3-T2-D14",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / presenting and evaluating the model through peer feedback"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Theories and Laws / Scientific theories / gather secondary-sourced data to investigate the supporting evidence and development of theories, including but not limited to: germ theory; oxygen theory of combustion"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Theories and Laws / Scientific theories / gather secondary-sourced data to investigate how aspects of a theory can be disproved through the collection of evidence, including:"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Geocentric Theory (of the solar system)"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Theory of Inheritance of Acquired Characteristics"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Dalton’s atomic theory"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Steady State Theory of the Universe (in cosmology)"
+  },
+  {
+   "code": "PRE-M4-T1-D7",
+   "path": "Year 11 / Theories and Laws / Scientific theories / investigate how the law of conservation of energy is applied in different science disciplines through primary and secondary-sourced research, including but not limited to:"
+  },
+  {
+   "code": "PRE-M4-T1-D8",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Chemistry"
+  },
+  {
+   "code": "PRE-M4-T1-D9",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Physics"
+  },
+  {
+   "code": "PRE-M4-T1-D10",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Human Biology"
+  },
+  {
+   "code": "PRE-M4-T1-D11",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Earth and Environmental Science"
+  },
+  {
+   "code": "PRE-M4-T1-D12",
+   "path": "Year 11 / Theories and Laws / Scientific theories / demonstrate, using evidence and examples, how diverse phenomena have been unified into specific theories, for example: atomic theory; theory of evolution"
+  },
+  {
+   "code": "PRE-M4-T1-D13",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Big Bang theory"
+  },
+  {
+   "code": "PRE-M4-T1-D14",
+   "path": "Year 11 / Theories and Laws / Scientific theories / plate tectonic theory"
+  },
+  {
+   "code": "PRE-M4-T1-D15",
+   "path": "Year 11 / Theories and Laws / Scientific theories / gather secondary-sourced data to investigate how scientific investigations of nuclear reactions and decay changed the way in which the law of conservation of mass and law of conservation of energy are interpreted"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Theories and Laws / Scientific laws / collect primary data to investigate the law of conservation of mass"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Theories and Laws / Scientific laws / collect secondary-sourced data to investigate the theory of plate tectonics"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Theories and Laws / Scientific laws / compare the characteristics of theories and laws"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Theories and Laws / Scientific laws / gather secondary-sourced data to investigate and assess the evidence that supports scientific laws, including but not limited to:"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Newton’s Second Law of Motion"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Avogadro’s Law"
+  },
+  {
+   "code": "PRE-M4-T2-D7",
+   "path": "Year 11 / Theories and Laws / Scientific laws / law of superposition"
+  },
+  {
+   "code": "PRE-M4-T2-D8",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Mendel’s Law of Dominance"
+  },
+  {
+   "code": "PRE-M4-T2-D9",
+   "path": "Year 11 / Theories and Laws / Scientific laws / design and collect primary data to show that results can be predicted by laws, including but not limited to:"
+  },
+  {
+   "code": "PRE-M4-T2-D10",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Ohm’s Law"
+  },
+  {
+   "code": "PRE-M4-T2-D11",
+   "path": "Year 11 / Theories and Laws / Scientific laws / law of conservation of energy"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / employ and evaluate safe work practices and manage risks"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / research the factors that led scientists to investigate the following, including but not limited to: peptic ulcers (Marshall and Warren); plant growth (Von Helmont); microwaves (Spencer)"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / propose a reason for the scientists undertaking their investigations above by examining the type of data or information that they sought, for example: finding relationships or patterns in identified phenomena; testing the conclusion of a previous investigation"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / utilising scientific knowledge and understanding to make more accurate predictions and develop new technologies"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / determine the hypotheses that were tested in each of the scientific investigations above"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / describe where deviations from the traditional and linear models of scientific methodology were necessary in order to test each hypothesis in the investigations above"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / using examples, evaluate the objectives and data collected in an investigation by a recognised scientist or team of scientists, including but not limited to:"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Marshall and Warren and peptic ulcers"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Eratosthenes and Earth’s circumference"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Doppler and the Doppler effect"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Priestley’s experiments with oxygen"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the methodology of the scientific investigations above by:"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the method chosen based on the subject of the investigation and the context, for example: experimental testing, fieldwork, locating and using information sources, conducting surveys and using modelling and simulations"
+  },
+  {
+   "code": "HSC-M1-T1-D21",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluating the relevance of the investigation by considering the peer-reviewed literature in the area of study"
+  },
+  {
+   "code": "HSC-M1-T1-D22",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the suitability of the type of data that is to be collected"
+  },
+  {
+   "code": "HSC-M1-T1-D23",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / develop a method most appropriate to test a hypothesis following observation"
+  },
+  {
+   "code": "HSC-M1-T1-D24",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justify the type of methodology used to test the hypothesis"
+  },
+  {
+   "code": "HSC-M1-T1-D25",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the design of the student investigation by:"
+  },
+  {
+   "code": "HSC-M1-T1-D26",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / explaining the choice of independent, dependent and controlled variables with reference to the research question"
+  },
+  {
+   "code": "HSC-M1-T1-D27",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / explaining the sample selection and sample sizes used for gathering data"
+  },
+  {
+   "code": "HSC-M1-T1-D28",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the suitability of materials used based on their relevance to the research question, availability, cost, risk and familiarity of use"
+  },
+  {
+   "code": "HSC-M1-T1-D29",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / assessing the ethics of conducting the investigation by considering confidentiality, humane treatment and animal welfare"
+  },
+  {
+   "code": "HSC-M1-T1-D30",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / predicting an achievable time frame to conduct the investigation"
+  },
+  {
+   "code": "HSC-M1-T1-D31",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying working individually or collaboratively"
+  },
+  {
+   "code": "HSC-M1-T1-D32",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / conduct the planned investigation and collect, record and analyse primary data"
+  },
+  {
+   "code": "HSC-M1-T1-D33",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / draw a conclusion or conclusions, and suggest further investigation or research by: analysing the results and interpreting the data"
+  },
+  {
+   "code": "HSC-M1-T1-D34",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / explaining the relevance of the findings of the investigation in relation to the inquiry question and hypothesis"
+  },
+  {
+   "code": "HSC-M1-T1-D35",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the methodology and any changes made to improve the data collected"
+  },
+  {
+   "code": "HSC-M1-T1-D36",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / describing potential beneficial and harmful consequences when the findings are applied to a real-world scenario"
+  },
+  {
+   "code": "HSC-M1-T1-D37",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the validity of the investigation by determining whether the tests measured what they were intended to measure"
+  },
+  {
+   "code": "HSC-M1-T1-D38",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the reliability of the investigation by determining: consistency of the results obtained; measures taken to reduce error"
+  },
+  {
+   "code": "HSC-M1-T1-D39",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / using examples, justify the use of placebos, double-blind trials and control groups in order to draw valid conclusions"
+  },
+  {
+   "code": "HSC-M1-T1-D40",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the impact of societal and economic influences on the collection and interpretation of data, including but not limited to: predicting variations in climate; suggesting remedies for health conditions; manipulating statistical data"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / evaluate and improve the quality of data"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / assess error, uncertainty and limitations in data"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / select and use suitable forms of digital, visual, written and/or oral forms of communication"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / review a published and peer-reviewed scientific report to determine the conventions of writing a report on a practical investigation"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / use a sample of a published and peer-reviewed secondary source to identify: the purpose of the report; measures taken to reduce error; the language style used; the presentation and structure of the report"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / compare and contrast the structures and functions of a scientific investigation and its written report"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / prepare a report on the student investigation that was carried out"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Technologies / Science and technology / design a practical investigation that uses available technologies to measure both the independent and dependent variables that produce quantitative data to measure the effect of changes of, including but not limited to: temperature on reaction rate; temperature on volume of gas; speed on distance travelled; pressure on volume of gas"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Technologies / Science and technology / conduct the practical investigation to obtain relevant data and evaluate the limitations of the technologies used"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Technologies / Science and technology / investigate the range of measuring devices used in the practical investigation and assess the likelihood of random and systematic errors and the devices' degree of accuracy"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Technologies / Science and technology / using specific examples, compare the accuracy of analogue and digital technologies in making observations"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Technologies / Science and technology / assess the safety of technologies selected for the practical investigation by using chemical safety data and Work Health and Safety guidelines as appropriate"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Technologies / Science and technology / investigate case studies of past events to consider how they have affected the public image of science, including but not limited to: meltdowns of nuclear reactors; development of the smallpox vaccine; development of flight; positive and negative aspects of damming rivers"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Technologies / Evaluating technological applications / using examples, assess the impact that developments in technologies have had on the accumulation of evidence for scientific theories, laws and models, including but not limited to:"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Technologies / Evaluating technological applications / computerised simulations and models of the Earth’s geological history"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Technologies / Evaluating technological applications / X-ray diffraction and the discovery of the structure of deoxyribonucleic acid (DNA)"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Technologies / Evaluating technological applications / technology to detect radioactivity and the development of atomic theory"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Technologies / Evaluating technological applications / the Hadron collider and discovery of the Higgs boson"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Technologies / Evaluating technological applications / using examples, assess the impact that developments in scientific theories, laws and models have had on the development of new technologies, including but not limited to:"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Technologies / Evaluating technological applications / the laws of refraction and reflection on the development of microscopes and telescopes"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Technologies / Evaluating technological applications / radioactivity and radioactive decay on the development of radiotherapy and nuclear bombs"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Technologies / Evaluating technological applications / the discovery of the structure of DNA and the development of biotechnologies to genetically modify organisms"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Technologies / Evaluating technological applications / Newton’s laws and the technology required to build buildings capable of withstanding earthquakes"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Technologies / Evaluating technological applications / investigate scientists’ increasing awareness of the value of Aboriginal and Torres Strait Islander Peoples’ knowledge and understanding of the medicinal and material uses of plants and, in partnership with communities, investigate the potential for ethical development of new drug treatments and synthetic chemicals through the bioharvesting of plants from Country and Place"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / plan and conduct an investigation based on testing a claim, and consider: validity of the experimental design; reliability of the data obtained"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / accuracy of the procedure, including random and systematic error"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / using examples, evaluate the impact that sample selection and sample sizes can have on the results of an investigation"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / compare emotive advertising with evidence-based claims, including but not limited to: health claims on food packaging; claims about the efficacy of a product"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / evaluate how evidence of a correlation can be misinterpreted as causation, including but not limited to: the Hawthorne effect"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / 1991 study that linked hormone replacement therapy to coronary heart disease"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / the Mozart Effect on child development"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / examine a contemporary scientific debate and how it is portrayed in the mainstream media, including but not limited to: accuracy of information; validity of data; reliability of information sources"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / evaluate the use and interpretation of the terms ‘theory’, ‘hypothesis’, ‘belief’ and ‘law’ in relation to media reporting of scientific developments"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / compare the difference in reporting between a peer-reviewed journal article and a scientific article published in popular media"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse how conflicts of interest can result in scientific evidence being suppressed, misinterpreted or misrepresented and discuss measures to counteract such conflicts, including but not limited to: tobacco industry and lung cancer; fossil fuel industry and climate change; commercial industries researching products for market; asbestos mining and lung cancer"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / describe the halo effect and, using examples, explain how the influence of positive perceptions can result in the rejection of valid alternative perspectives, including but not limited to: celebrities endorsing products or viewpoints; popular brand companies making misleading advertising claims"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / using examples, analyse a pseudo-scientific claim and how scientific language and processes can be manipulated to sway public opinion, including but not limited to: astrology; numerology; iridology"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / conduct an investigation using secondary sources to research a scientist who has falsified their scientific experimental results, and discuss the process used to uncover the fraudulent research"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the scientific debate surrounding ‘publication’ and discuss the implications of scientists’ need to ‘publish or perish’"
+  },
+  {
+   "code": "HSC-M3-T2-D12",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / evaluate the increasing volume of scientific papers being published and assess the feasibility of science to effectively manage, review, replicate and validate investigations, for example:"
+  },
+  {
+   "code": "HSC-M3-T2-D13",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / Pons and Fleischmann's cold fusion announcement in 1989"
+  },
+  {
+   "code": "HSC-M3-T2-D14",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / Alex Smolyanitsky’s falsified scientific paper using the pseudonyms Maggie Simpson and Edna Krabapple, accepted for publication in 2014"
+  },
+  {
+   "code": "HSC-M3-T2-D15",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / Tom Spears’ nonsense journal submission accepted for publication in 2013"
+  },
+  {
+   "code": "HSC-M3-T2-D16",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science"
+  },
+  {
+   "code": "HSC-M3-T2-D17",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / discuss the impact of fake science journals on the public perception of science"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / investigate the need for the regulation of scientific research in, for example: genetic modification of sex cells and embryos; development of biotechnological weaponry; testing of pharmaceuticals; products and processes of the nuclear industry; protection of Indigenous cultural and intellectual property"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / investigate and assess ethical issues surrounding current scientific research in, for example:"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / use of radiation"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / pharmaceutical research"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / gene manipulation in biotechnology"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / mining practices"
+  },
+  {
+   "code": "HSC-M4-T2-D7",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / bioprospecting"
+  },
+  {
+   "code": "HSC-M4-T2-D8",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / investigate a range of international scientific codes of conduct in regard to scientific research and practice in the areas of, for example: cloning; stem cell research; surrogacy; genetically modified foods; transplantation of organs"
+  },
+  {
+   "code": "HSC-M4-T2-D9",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate the effectiveness of international regulation in scientific research and practice"
+  },
+  {
+   "code": "HSC-M4-T2-D10",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate the costs involved in space exploration compared to investments in social issues, for example poverty and human global food supply"
+  },
+  {
+   "code": "HSC-M4-T2-D11",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate how scientific research aids economic development and human progress in relation to, for example: nuclear power generation"
+  },
+  {
+   "code": "HSC-M4-T2-D12",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / use of antimicrobial drugs"
+  },
+  {
+   "code": "HSC-M4-T2-D13",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / genetically modified foods"
+  },
+  {
+   "code": "HSC-M4-T2-D14",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / use of petroleum products"
+  },
+  {
+   "code": "HSC-M4-T2-D15",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / robotics and the use of drones"
+  },
+  {
+   "code": "HSC-M4-T2-D16",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate the impacts of scientific research, devices and applications on world health and human wellbeing, including but not limited to: medical surgical devices; surgical procedures; water purification and wastewater treatment; vaccination programs for the eradication of disease"
+  },
+  {
+   "code": "HSC-M4-T2-D17",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / using examples, analyse the impacts that governments and large corporations have on scientific research, including but not limited to: corporations and market opportunities; university research project budgets; governmental budgets and limited time priorities"
+  },
+  {
+   "code": "HSC-M4-T2-D18",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / benefit-sharing in research using Indigenous intellectual and cultural property"
+  },
+  {
+   "code": "HSC-M4-T2-D19",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate how personal, cultural and socioeconomic perspectives can influence the direction of scientific research, for example: perceptions about diet in a multicultural society; investigating traditional medical treatments; mining practices"
+  }
+ ],
+ "questions": [
+  {
+   "id": "hsc202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A claim was made that some white crystals had been artificially dyed blue, to increase\ntheir value.\nWhat method would be best to determine if the crystals had been dyed?\nFieldwork\nModelling\nConducting surveys\nExperimental testing"
+  },
+  {
+   "id": "hsc202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of the following is LEAST useful in addressing bias in scientific research\noutcomes?\nImplementing a rigorous peer review process\nCollaborating with scientists from different disciplines\nShowcasing personal and cultural perspectives of scientists\nInvolving scientists from diverse backgrounds in research projects \n– 3 –"
+  },
+  {
+   "id": "hsc202509",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A scientist wants to investigate the effectiveness of a new drug designed to lower\ncholesterol in obese patients.\nWhich of the following groups would be the most appropriate sample to use when testing\nthis claim?\n200 obese patients with high cholesterol\n20 obese patients of various health conditions\n20 000 patients with varying weight and high cholesterol\n2000 obese patients with otherwise good health but with high cholesterol"
+  },
+  {
+   "id": "hsc202510",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The effect of speed on stopping distance is being investigated.\nA digital stopwatch should be used rather than an analogue wall clock because it gives\nmore\nreliable primary data.\naccurate primary data.\nreliable secondary data.\naccurate secondary data."
+  },
+  {
+   "id": "hsc202511",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The development of a vaccine for smallpox involved a number of steps.\nV – People lined up to get infected with cowpox.\nW – Child J was deliberately infected with smallpox.\nX – It was observed that some milkmaids did not contract smallpox.\nY – Child J did not develop smallpox.\nZ – Child J was deliberately infected with cowpox.\nWhich of the following lists the steps in the order in which they occurred?\nZ, W, X, V, Y\nX, Z, W, Y, V\nZ, V, X, W, Y\nX, W, Y, Z, V \n– 5 – \n\n \nUse the following information to answer Questions 13−14. \nAn experiment is conducted to determine the relationship between temperature and volume of\ngas, using the following steps: \n• \nblow up a balloon \n• \nmeasure the circumference of the balloon by wrapping a piece of elastic around the\nwidest part of the balloon and measuring the length of the elastic with a metre ruler \n• \nplace the balloon in an ice bath for 5 minutes \n• \nmeasure the circumference \n• \nplace the balloon in a hot water bath for 5 minutes \n• \nmeasure the circumference \n• \nmeasure the temperature of the room, the ice bath and the hot water bath with a\nmercury thermometer."
+  },
+  {
+   "id": "hsc202512",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Before using the mercury thermometer in the experiment, the chemical safety data sheet\nwas consulted.\nDanger !\nMercury is highly corrosive to the skin, eyes and digestive tract, and may induce\nkidney toxicity if eaten. Brain injury may occur if inhaled, ingested or exposed.\nWhich of the following safety measures best addresses these risks?\nPerform the experiment outside\nWear gloves and safety goggles\nWear plastic shoe protectors over enclosed leather shoes\nReplace the mercury thermometer with a digital thermometer"
+  },
+  {
+   "id": "hsc202513",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which row of the table correctly identifies a random error and a systematic error which\ncould affect this investigation?\nRandom error \nSystematic error \nThe metre ruler does not start at zero. The thermometer is read at different\nContent not extracted.\nContent not extracted.\nangles. \nThe elastic may be stretched. \nThere is a 3 mm bubble at the top of \nthe thermometer. \nThe thermometer is read at different \nangles. \nThe elastic may be stretched. \nThere is a 3 mm bubble at the top of \nthe thermometer. \nThe metre ruler does not start at zero. \n– 6 –"
+  },
+  {
+   "id": "hsc202514",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Table tennis balls are filled with air. A dented table tennis ball is shown.\nWhich row of the table correctly identifies an action for removing the dent, and the\nreason for this action?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nAction \nReason for this action \nPlace in hot water \nIncreased temperature will decrease the volume of\nthe gas in the ball. \nPlace in cold water \nDecreased temperature will decrease the volume of\nthe gas in the ball. \nPlace in high pressure\nchamber \nIncreased pressure will increase the volume of the gas\nin the ball. \nPlace in low pressure\nchamber \nDecreased pressure will increase the volume of\nthe gas in the ball."
+  },
+  {
+   "id": "hsc202515",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Priestly conducted experiments using mice and plants in jars. Some of his observations\nare shown in this table.\nObservation\nConclusion\nW\nA mouse will live longer in a sealed\njar if a plant is present.\nA plant gives out a substance that is\nused up when an animal breathes.\nX\nA mouse sealed in a container with\nair will eventually die.\nAn animal needs a certain chemical\nin air or it will die.\nY\nPlants convert carbon dioxide to\noxygen.\nPhotosynthesis produces oxygen.\nZ\nA mouse dies during the\nexperiment.\nThe experiment was reliable but not\nethical.\nWhich rows of the table correctly relate the observations and conclusions made by\nPriestley?\nX, Y and Z\nW, X and Y\nW and X only\nX and Y only \n– 7 –"
+  },
+  {
+   "id": "hsc202516",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student wants to conduct an experiment to test the effect of pH on the rate of reaction\nbetween chalk and acid.\nThe following beakers are available.\npH 1\npH 3\npH 5\nsolution\nsolution\nsolution\nChalk pieces\nChalk powder\nBeaker 1\nBeaker 2\nBeaker 3\npH 1\npH 3\npH 5\nsolution\nsolution\nsolution\nBeaker 4\nBeaker 5\nBeaker 6\nWhich of the following sets of beakers is suitable for the student to conduct this\nexperiment?\nBeakers 1 and 3\nBeakers 2 and 5\nBeakers 3 and 4\nBeakers 4 and 6 \n– 8 –"
+  },
+  {
+   "id": "hsc202517",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A trial was conducted to test the impact of sugar on activity levels in children. Sugar\nor a placebo was given to a sample of 50 children at the start of the experiment and the\nchildren were observed for several hours.\nThe results of the experiment were graphed.\nTime (minutes)\nActivity level\nKEY\nTest group\nControl group\nWhich of the following is the correct inference to draw from this data?\nSugar increases activity.\nSugar decreases activity.\nSugar has no impact on activity.\nSugar causes an activity high followed by an activity low."
+  },
+  {
+   "id": "hsc202518",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student measured the effect of pressure on the volume of a gas using a pressure probe\nattached to a data logger. Written on the pressure probe was ‘± 2 kPa’.\nThe student recorded the first reading as 4.35 kPa. A teacher immediately concluded this\nwas incorrect.\nWhich of the following is a possible reason for the teacher’s conclusion?\nThe student was recording an average value from all repeated trials.\nThe decimal places indicate too high a level of accuracy for the probe.\nThe probe should only be used to measure pressures between 0 kPa and 2 kPa.\nThere are 3 significant figures in the student’s reading, but the probe is only\ncapable of 2. \n– 9 –"
+  },
+  {
+   "id": "hsc202519",
+   "year": 2025,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The astrology section of a newspaper published the following horoscope in\nDecember 2024.\n3\nCapricorn:\nExcitement builds for you this month! Venus being in\nretrograde will not dampen your celebrations as you\nbuild towards a golden surprise. As Uranus rises, the\nnew year will bring opportunities.\nExplain why astrology is an example of pseudoscience. Include reference to this\nhoroscope in your answer."
+  },
+  {
+   "id": "hsc202520",
+   "year": 2025,
+   "number": "22",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Using an example, describe how nuclear meltdowns can negatively affect the public\nimage of science.\n3\n0589310365"
+  },
+  {
+   "id": "hsc202521",
+   "year": 2025,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Marshall and Warren investigated the cause of peptic ulcers.\nHow did the methodology used in their investigation differ from the traditional model\nof scientific methodology?\n3\n1024310360"
+  },
+  {
+   "id": "hsc202522",
+   "year": 2025,
+   "number": "24",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nThe table shows the number of scientific articles published each year for\n10 years in a particular branch of science, as well as the number of subject\nexperts employed globally in this branch of science.\n4\nYear\n2013 2014 2015 2016 2017 2018 2019 2020 2021 2022\nNumber\nof articles\npublished\n550\n590\n630\n680\n730\n820\n940\n1010 1140 1260\nNumber\nof subject\nexperts\n50\n55\n54\n56\n55\n53\n53\n51\n53\n54\nUsing the data provided, assess the feasibility of the scientific community peer\nreviewing these articles over the time period shown.\n(b)\nExplain TWO differences between scientific articles published in peer-reviewed\njournals and in popular media.\n4\n5486310366"
+  },
+  {
+   "id": "hsc202523",
+   "year": 2025,
+   "number": "25",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Explain why the Mozart Effect is an example of misinterpreting correlation as\ncausation.\n3\n7986310363"
+  },
+  {
+   "id": "hsc202524",
+   "year": 2025,
+   "number": "26",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A scientist hypothesised that not having the recommended amount of sleep ca\nincrease the time it takes for a person’s heart rate to return to normal after exercise.\nWrite a valid method to test this hypothesis.\nn\n5\n0736310369"
+  },
+  {
+   "id": "hsc202525",
+   "year": 2025,
+   "number": "27",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A group of students measured the air temperature at a weather station using a digital\nthermometer and an analogue thermometer at different times. Their results and the actual\ntemperatures at the weather station are shown in the table.\nTime\nDigital reading (°C)\nAnalogue reading (°C)\nTemperature\n(am)\nat weather\n1\n2\n3\nAverage\n1\n2\n3\nAverage\nstation\n(°C)\n9:00\n20.2\n19.8\n20.0\n20.0\n22\n22\n22\n22\n20.1\n9:30\n21.1\n21.3\n20.9\n21.1\n23\n23\n23\n23\n21.0\n10:00\n21.8\n22.5\n22.0\n22.1\n24\n22\n23\n23\n21.4\n10:30\n23.3\n22.9\n23.4\n23.2\n25\n63\n25\n23.3\n11:00\n23.9\n24.1\n24.3\n24.1\n26\n26\n26\n26\n23.9\n11:30\n24.8\n25.3\n24.6\n27\n27\n27\n27\n24.8\n(a)\nComplete the missing values in the table.\n2\n(b)\nCompare the accuracy of the digital thermometer and the analogue thermometer.\nSupport your answer with data from the table.\n2\n(c)\nThe students measured the temperature using both types of thermometers three\ntimes.\nExplain why repeating the experiment does not ensure reliability.\n2\n6277310365"
+  },
+  {
+   "id": "hsc202526",
+   "year": 2025,
+   "number": "28",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A sugary drink company, Brand X, is funding its own scientific research into the link\nbetween sugary drinks and health issues.\nExplain why the results of studies funded by Brand X should be interpreted with\ncaution. Support your answer with an example from another industry.\n1032310369\n4"
+  },
+  {
+   "id": "hsc202527",
+   "year": 2025,
+   "number": "29",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Spinifex grasses are native plants which are used by Aboriginal Peoples for many\npurposes including making glue. A university plans to investigate the use of spinifex\nto enhance latex, which could be used in developing stronger surgical gloves.\nExplain the ethical considerations in developing spinifex-enhanced latex.\n4\n0136310363"
+  },
+  {
+   "id": "hsc202528",
+   "year": 2025,
+   "number": "30",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A dam was built in 2012 outside Town Y.\nData collected about Town Y are shown in the following graph.\n4\nPercentage\n50\n40\n30\n20\n10\n0\n2010 2011 2012 2013 2014 2015 2016\nYear\nKEY\nRisk of Town Y\nflooding\nLocal species that\nare endangered\nResidents supplied\nby town water\nExplain how building the dam in 2012 could have led to the trends shown in the graph.\n7037310360"
+  },
+  {
+   "id": "hsc202529",
+   "year": 2025,
+   "number": "31",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A company that manufactures Fertiliser Z makes the following claim.\n‘Plants provided with Fertiliser Z increased their mass by 20% in just three weeks.’\nThe following experiment was conducted to test the claim.\n• A group of 40 different plants was purchased.\n• All of these plants were weighed and had an average mass of 100 g.\n• The plants were all given Fertiliser Z and watered regularly.\n• After three weeks, the plants were weighed again.\n• The experiment found the final average mass of plants to be 110 g.\n(a)\nAssess whether the experimental results support the company’s claim.\n2\n(b)\nEvaluate the validity of this experimental design.\n4\n2207310364\nDo  NOT  write  in  this  area.\n1619310360"
+  },
+  {
+   "id": "hsc202530",
+   "year": 2025,
+   "number": "32",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Scientific advances in research, devices and applications have had a significant impact\non world health. The graph shows the death rates for the world’s population over the\ntime period 1900 to 2000.\n1900\n1920\n1940\n1960\n1980\nYear\nEstimated number of annual\ndeaths per 1000 people\nDeath rates for the world’s population\n2000\n0\n5\n10\n15\n20\nExplain how TWO specific advances have affected world health. In your answer, refer\nto the overall trend in the graph.\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n7"
+  },
+  {
+   "id": "hsc202531",
+   "year": 2025,
+   "number": "33",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Describe how TWO codes of conduct have addressed ethical issues arising from\nscientific research.\n4\n0585310361"
+  },
+  {
+   "id": "hsc202532",
+   "year": 2025,
+   "number": "34",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student investigated the effect of temperature on the time taken for a chemical\nreaction to occur. The following data were obtained.\nTemperature\n(°C)\nTime taken for chemical\nreaction to occur\n(s)\n28\n22.3\n35\n11.4\n40\n8.8\n45\n6.5\n50\n5.3\n(a)\nIdentify the independent variable and ONE controlled variable for this\nexperiment.\n2\nIndependent variable:\nControlled variable: ..\n6577310368"
+  },
+  {
+   "id": "hsc202533",
+   "year": 2025,
+   "number": "35",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Two students were asked to investigate the relationship between the volume of a\nliquid and the mass of the liquid. Their results are shown.\n4\n12\n10\n8\n6\n4\n2\n00\n2\n4\n6\nVolume (mL)\nMass (g)\n8\n10\n12\n12\n10\n8\n6\n4\n2\n00\n2\n4\n6\nVolume (mL)\nMass (g)\n8\n10\n12\nBoth students made errors while conducting their investigations.\nExplain possible errors in the students’ investigations that could have led to the results\nin each of the graphs.\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������\n\b����������������������������������������������������������������������������������������������������������������������������������������"
+  },
+  {
+   "id": "hsc202534",
+   "year": 2025,
+   "number": "36",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Three students were discussing the relationship between science and technology.\nThey made the following statements:\nStudent A: Science can’t progress until technology develops. The model of the\natom was developed because of technology.\nStudent B: Technologies are only developed when scientists advance theories,\nlaws and models.\nStudent C: It’s not that simple. The relationship between science and technology\nis a continuous cycle.\nAnalyse the relationship between science and technology with reference to these\nstatements.\n8\n0008310361\nSection II extra writing space\n8952310367\nSection _____ extra writing space\nSection II extra writing space\n2306310364\nSection II extra writing space\n2770310369"
+  }
+ ]
+}

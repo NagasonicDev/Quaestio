@@ -1,0 +1,192 @@
+{
+ "sor2_2024_q29": {
+  "code": "HSC-M3-T1-D47",
+  "confidence": "high",
+  "why": "impact of Christian significant person"
+ },
+ "sor2_2024_q30": {
+  "code": "HSC-M3-T1-D70",
+  "confidence": "high",
+  "why": "impact of Hindu significant person"
+ },
+ "sor2_2024_q31": {
+  "code": "HSC-M3-T1-D95",
+  "confidence": "high",
+  "why": "impact of Islamic significant person"
+ },
+ "sor2_2024_q32": {
+  "code": "HSC-M3-T1-D118",
+  "confidence": "high",
+  "why": "impact of Jewish significant person"
+ },
+ "sor2_2024_q33": {
+  "code": "HSC-M3-T1-D136",
+  "confidence": "medium",
+  "why": "tradition fostering inner peace"
+ },
+ "sor2_2025_q1": {
+  "code": "HSC-M1-T3-D22",
+  "confidence": "high",
+  "why": "denominational switching"
+ },
+ "sor2_2025_q2": {
+  "code": "HSC-M1-T3-D21",
+  "confidence": "high",
+  "why": "post-war immigration"
+ },
+ "sor2_2025_q3": {
+  "code": "HSC-M1-T3-D12",
+  "confidence": "high",
+  "why": "continuing effect of dispossession"
+ },
+ "sor2_2025_q4": {
+  "code": "HSC-M1-T3-D26",
+  "confidence": "high",
+  "why": "National Council of Churches aim"
+ },
+ "sor2_2025_q5": {
+  "code": "HSC-M1-T3-D7",
+  "confidence": "medium",
+  "why": "reconciliation definition"
+ },
+ "sor2_2025_q6": {
+  "code": "HSC-M1-T3-D24",
+  "confidence": "high",
+  "why": "secular activity"
+ },
+ "sor2_2025_q7": {
+  "code": "HSC-M1-T3-D10",
+  "confidence": "high",
+  "why": "importance of ceremonial life"
+ },
+ "sor2_2025_q8": {
+  "code": "HSC-M1-T3-D23",
+  "confidence": "high",
+  "why": "New Age religion adherent"
+ },
+ "sor2_2025_q9": {
+  "code": "HSC-M1-T3-D16",
+  "confidence": "high",
+  "why": "Wik decision outcome"
+ },
+ "sor2_2025_q10": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "high",
+  "why": "2021 census statements"
+ },
+ "sor2_2025_q11": {
+  "code": "HSC-M1-T3-D28",
+  "confidence": "high",
+  "why": "importance of religious dialogue"
+ },
+ "sor2_2025_q12": {
+  "code": "HSC-M4-T1-D3",
+  "confidence": "high",
+  "why": "global distribution of traditions"
+ },
+ "sor2_2025_q13": {
+  "code": "HSC-M4-T1-D25",
+  "confidence": "high",
+  "why": "atheism and meaning in life"
+ },
+ "sor2_2025_q14": {
+  "code": "HSC-M4-T1-D11",
+  "confidence": "medium",
+  "why": "search for personal fulfilment"
+ },
+ "sor2_2025_q15": {
+  "code": "HSC-M4-T1-D5",
+  "confidence": "high",
+  "why": "social cohesion"
+ },
+ "sor2_2025_q16": {
+  "code": "HSC-M4-T1-D4",
+  "confidence": "high",
+  "why": "animism characteristic"
+ },
+ "sor2_2025_q17": {
+  "code": "HSC-M4-T1-D1",
+  "confidence": "medium",
+  "why": "expression of the religious dimension"
+ },
+ "sor2_2025_q18": {
+  "code": "HSC-M4-T1-D21",
+  "confidence": "medium",
+  "why": "agnostic identification"
+ },
+ "sor2_2025_q19": {
+  "code": "HSC-M4-T1-D20",
+  "confidence": "high",
+  "why": "new expressions and ecological responsibility"
+ },
+ "sor2_2025_q20": {
+  "code": "HSC-M4-T1-D24",
+  "confidence": "high",
+  "why": "Scientific Humanism"
+ },
+ "sor2_2025_q21": {
+  "code": "HSC-M4-T1-D18",
+  "confidence": "medium",
+  "why": "concept of the transcendent"
+ },
+ "sor2_2025_q22": {
+  "code": "HSC-M4-T1-D5",
+  "confidence": "high",
+  "why": "religious dimension and social transformation"
+ },
+ "sor2_2025_q23": {
+  "code": "HSC-M3-T1-D26",
+  "confidence": "medium",
+  "why": "Buddhist practice expresses belief"
+ },
+ "sor2_2025_q24": {
+  "code": "HSC-M3-T1-D50",
+  "confidence": "medium",
+  "why": "Christian practice expresses belief"
+ },
+ "sor2_2025_q25": {
+  "code": "HSC-M3-T1-D73",
+  "confidence": "medium",
+  "why": "Hindu practice expresses belief"
+ },
+ "sor2_2025_q26": {
+  "code": "HSC-M3-T1-D98",
+  "confidence": "medium",
+  "why": "Islamic practice expresses belief"
+ },
+ "sor2_2025_q27": {
+  "code": "HSC-M3-T1-D121",
+  "confidence": "medium",
+  "why": "Jewish practice expresses belief"
+ },
+ "sor2_2025_q28": {
+  "code": "HSC-M3-T1-D24",
+  "confidence": "high",
+  "why": "Buddhist ethics in applied area"
+ },
+ "sor2_2025_q29": {
+  "code": "HSC-M3-T1-D48",
+  "confidence": "high",
+  "why": "Christian ethics in applied area"
+ },
+ "sor2_2025_q30": {
+  "code": "HSC-M3-T1-D71",
+  "confidence": "high",
+  "why": "Hindu ethics in applied area"
+ },
+ "sor2_2025_q31": {
+  "code": "HSC-M3-T1-D96",
+  "confidence": "high",
+  "why": "Islamic ethics in applied area"
+ },
+ "sor2_2025_q32": {
+  "code": "HSC-M3-T1-D119",
+  "confidence": "high",
+  "why": "Jewish ethics in applied area"
+ },
+ "sor2_2025_q33": {
+  "code": "HSC-M3-T1-D136",
+  "confidence": "high",
+  "why": "traditions supporting inner peace"
+ }
+}

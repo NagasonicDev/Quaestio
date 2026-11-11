@@ -1,0 +1,1639 @@
+{
+ "course_id": "italian-beginners",
+ "course_name": "Italian Beginners",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M3-D1",
+   "path": "Year 11 / Education and work / the structure and format of particular texts",
+   "text": "the structure and format of particular texts"
+  },
+  {
+   "code": "PRE-M3-D2",
+   "path": "Year 11 / Education and work / present and organise information in ways appropriate to audience, purpose and context",
+   "text": "present and organise information in ways appropriate to audience, purpose and context"
+  },
+  {
+   "code": "PRE-M3-D3",
+   "path": "Year 11 / Education and work / the purpose and context of a text and their influence on the choice of structure, format and vocabulary",
+   "text": "the purpose and context of a text and their influence on the choice of structure, format and vocabulary"
+  },
+  {
+   "code": "PRE-M3-D4",
+   "path": "Year 11 / Education and work / plan, draft and edit text",
+   "text": "plan, draft and edit text"
+  },
+  {
+   "code": "PRE-M3-D5",
+   "path": "Year 11 / Education and work / the logical sequencing of ideas in extended text",
+   "text": "the logical sequencing of ideas in extended text"
+  },
+  {
+   "code": "PRE-M3-D6",
+   "path": "Year 11 / Education and work / sequence ideas and information in texts",
+   "text": "sequence ideas and information in texts"
+  },
+  {
+   "code": "PRE-M3-D7",
+   "path": "Year 11 / Education and work / the application of known linguistic structures in new contexts",
+   "text": "the application of known linguistic structures in new contexts"
+  },
+  {
+   "code": "PRE-M3-D8",
+   "path": "Year 11 / Education and work / apply a range of vocabulary and linguistic structures across a range of contexts",
+   "text": "apply a range of vocabulary and linguistic structures across a range of contexts"
+  },
+  {
+   "code": "PRE-M3-D9",
+   "path": "Year 11 / Education and work / language choices and their effect on intended meaning",
+   "text": "language choices and their effect on intended meaning"
+  },
+  {
+   "code": "PRE-M3-D10",
+   "path": "Year 11 / Education and work / evaluate the accuracy and appropriateness of structures when constructing and editing text",
+   "text": "evaluate the accuracy and appropriateness of structures when constructing and editing text"
+  },
+  {
+   "code": "PRE-M3-D11",
+   "path": "Year 11 / Education and work / resources available to enhance and expand independent learning",
+   "text": "resources available to enhance and expand independent learning"
+  },
+  {
+   "code": "PRE-M3-D12",
+   "path": "Year 11 / Education and work / extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online",
+   "text": "extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online"
+  },
+  {
+   "code": "PRE-M3-D13",
+   "path": "Year 11 / Education and work / register in language use.",
+   "text": "register in language use."
+  },
+  {
+   "code": "PRE-M3-D14",
+   "path": "Year 11 / Education and work / use culturally appropriate language when creating and presenting texts.",
+   "text": "use culturally appropriate language when creating and presenting texts."
+  },
+  {
+   "code": "PRE-M4-D1",
+   "path": "Year 11 / Friends, recreation and pastimes / ways in which texts are constructed for specific purposes",
+   "text": "ways in which texts are constructed for specific purposes"
+  },
+  {
+   "code": "PRE-M4-D2",
+   "path": "Year 11 / Friends, recreation and pastimes / identify why, how or to whom a text is delivered or presented",
+   "text": "identify why, how or to whom a text is delivered or presented"
+  },
+  {
+   "code": "PRE-M4-D3",
+   "path": "Year 11 / Friends, recreation and pastimes / ways in which texts are formatted for particular purposes and effects",
+   "text": "ways in which texts are formatted for particular purposes and effects"
+  },
+  {
+   "code": "PRE-M4-D4",
+   "path": "Year 11 / Friends, recreation and pastimes / explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts",
+   "text": "explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts"
+  },
+  {
+   "code": "PRE-M4-D5",
+   "path": "Year 11 / Friends, recreation and pastimes / ways of identifying relevant details in texts when listening or reading for specific information",
+   "text": "ways of identifying relevant details in texts when listening or reading for specific information"
+  },
+  {
+   "code": "PRE-M4-D6",
+   "path": "Year 11 / Friends, recreation and pastimes / make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text",
+   "text": "make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text"
+  },
+  {
+   "code": "PRE-M4-D7",
+   "path": "Year 11 / Friends, recreation and pastimes / ways of inferring meaning from text",
+   "text": "ways of inferring meaning from text"
+  },
+  {
+   "code": "PRE-M4-D8",
+   "path": "Year 11 / Friends, recreation and pastimes / use contextual and other clues to infer meaning from text",
+   "text": "use contextual and other clues to infer meaning from text"
+  },
+  {
+   "code": "PRE-M4-D9",
+   "path": "Year 11 / Friends, recreation and pastimes / resources available to access, enhance or promote independent learning",
+   "text": "resources available to access, enhance or promote independent learning"
+  },
+  {
+   "code": "PRE-M4-D10",
+   "path": "Year 11 / Friends, recreation and pastimes / access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts",
+   "text": "access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts"
+  },
+  {
+   "code": "PRE-M4-D11",
+   "path": "Year 11 / Friends, recreation and pastimes / the effect of syntax on meaning",
+   "text": "the effect of syntax on meaning"
+  },
+  {
+   "code": "PRE-M4-D12",
+   "path": "Year 11 / Friends, recreation and pastimes / analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect",
+   "text": "analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect"
+  },
+  {
+   "code": "PRE-M4-D13",
+   "path": "Year 11 / Friends, recreation and pastimes / cultural attitudes that add meaning to texts",
+   "text": "cultural attitudes that add meaning to texts"
+  },
+  {
+   "code": "PRE-M4-D14",
+   "path": "Year 11 / Friends, recreation and pastimes / identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films",
+   "text": "identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films"
+  },
+  {
+   "code": "PRE-M4-D15",
+   "path": "Year 11 / Friends, recreation and pastimes / language used to express cultural values, and to represent people and cultures in texts",
+   "text": "language used to express cultural values, and to represent people and cultures in texts"
+  },
+  {
+   "code": "PRE-M4-D16",
+   "path": "Year 11 / Friends, recreation and pastimes / explain cultural references in texts, eg Ogni pomeriggio faccio un pisolino dopo pranzo. Gli artigiani lavorano nelle loro botteghe.",
+   "text": "explain cultural references in texts, eg Ogni pomeriggio faccio un pisolino dopo pranzo. Gli artigiani lavorano nelle loro botteghe."
+  },
+  {
+   "code": "PRE-M4-D17",
+   "path": "Year 11 / Friends, recreation and pastimes / register and common expressions in language use.",
+   "text": "register and common expressions in language use."
+  },
+  {
+   "code": "PRE-M4-D18",
+   "path": "Year 11 / Friends, recreation and pastimes / explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms In bocca al lupo, quattro chiacchiere.",
+   "text": "explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms In bocca al lupo, quattro chiacchiere."
+  },
+  {
+   "code": "PRE-M4-D19",
+   "path": "Year 11 / Friends, recreation and pastimes / suggested components and weightings for the internal assessment of the Preliminary course",
+   "text": "suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "PRE-M4-D20",
+   "path": "Year 11 / Friends, recreation and pastimes / mandatory components and weightings for the internal assessment of the HSC course",
+   "text": "mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "PRE-M4-D21",
+   "path": "Year 11 / Friends, recreation and pastimes / the HSC examination specifications, which describe the format of the external HSC examination.",
+   "text": "the HSC examination specifications, which describe the format of the external HSC examination."
+  },
+  {
+   "code": "PRE-M6-D1",
+   "path": "Year 11 / Future plans and aspirations / the importance of listening for key words to assist understanding",
+   "text": "the importance of listening for key words to assist understanding"
+  },
+  {
+   "code": "PRE-M6-D2",
+   "path": "Year 11 / Future plans and aspirations / listen for meaning",
+   "text": "listen for meaning"
+  },
+  {
+   "code": "PRE-M6-D3",
+   "path": "Year 11 / Future plans and aspirations / the importance of reading for key words to assist understanding",
+   "text": "the importance of reading for key words to assist understanding"
+  },
+  {
+   "code": "PRE-M6-D4",
+   "path": "Year 11 / Future plans and aspirations / read for meaning",
+   "text": "read for meaning"
+  },
+  {
+   "code": "PRE-M6-D5",
+   "path": "Year 11 / Future plans and aspirations / links in communication",
+   "text": "links in communication"
+  },
+  {
+   "code": "PRE-M6-D6",
+   "path": "Year 11 / Future plans and aspirations / use strategies to initiate, maintain and conclude an interaction, eg Buongiorno! scusi, mi può dire, allora, dunque, cioè, a più presto, ci vediamo, grazie",
+   "text": "use strategies to initiate, maintain and conclude an interaction, eg Buongiorno! scusi, mi può dire, allora, dunque, cioè, a più presto, ci vediamo, grazie"
+  },
+  {
+   "code": "PRE-M6-D7",
+   "path": "Year 11 / Future plans and aspirations / the purpose and context of communication",
+   "text": "the purpose and context of communication"
+  },
+  {
+   "code": "PRE-M6-D8",
+   "path": "Year 11 / Future plans and aspirations / select and incorporate particular vocabulary and structures to achieve specific communication goals",
+   "text": "select and incorporate particular vocabulary and structures to achieve specific communication goals"
+  },
+  {
+   "code": "PRE-M6-D9",
+   "path": "Year 11 / Future plans and aspirations / register in language use",
+   "text": "register in language use"
+  },
+  {
+   "code": "PRE-M6-D10",
+   "path": "Year 11 / Future plans and aspirations / interact with reference to context, purpose and audience, eg Dimmi. Mi dica.",
+   "text": "interact with reference to context, purpose and audience, eg Dimmi. Mi dica."
+  },
+  {
+   "code": "PRE-M6-D11",
+   "path": "Year 11 / Future plans and aspirations / responding to factual and open-ended questions",
+   "text": "responding to factual and open-ended questions"
+  },
+  {
+   "code": "PRE-M6-D12",
+   "path": "Year 11 / Future plans and aspirations / maintain an interaction by responding to and asking questions and sharing information",
+   "text": "maintain an interaction by responding to and asking questions and sharing information"
+  },
+  {
+   "code": "PRE-M6-D13",
+   "path": "Year 11 / Future plans and aspirations / ways to support effective interaction",
+   "text": "ways to support effective interaction"
+  },
+  {
+   "code": "PRE-M6-D14",
+   "path": "Year 11 / Future plans and aspirations / use appropriate language features to enhance communication, eg tone, intonation",
+   "text": "use appropriate language features to enhance communication, eg tone, intonation"
+  },
+  {
+   "code": "PRE-M6-D15",
+   "path": "Year 11 / Future plans and aspirations / the logical sequencing of ideas",
+   "text": "the logical sequencing of ideas"
+  },
+  {
+   "code": "PRE-M6-D16",
+   "path": "Year 11 / Future plans and aspirations / structure information and ideas coherently",
+   "text": "structure information and ideas coherently"
+  },
+  {
+   "code": "PRE-M6-D17",
+   "path": "Year 11 / Future plans and aspirations / formal and informal language, and when and where it is used",
+   "text": "formal and informal language, and when and where it is used"
+  },
+  {
+   "code": "PRE-M6-D18",
+   "path": "Year 11 / Future plans and aspirations / apply appropriate social conventions in formal and informal contexts, eg terms of address",
+   "text": "apply appropriate social conventions in formal and informal contexts, eg terms of address"
+  },
+  {
+   "code": "PRE-M6-D19",
+   "path": "Year 11 / Future plans and aspirations / sociolinguistic conventions relating to everyday activities.",
+   "text": "sociolinguistic conventions relating to everyday activities."
+  },
+  {
+   "code": "PRE-M6-D20",
+   "path": "Year 11 / Future plans and aspirations / use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Buon appetito! Grazie altrettanto.",
+   "text": "use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Buon appetito! Grazie altrettanto."
+  },
+  {
+   "code": "HSC-M3-D1",
+   "path": "Year 12 / Education and work / the structure and format of particular texts",
+   "text": "the structure and format of particular texts"
+  },
+  {
+   "code": "HSC-M3-D2",
+   "path": "Year 12 / Education and work / present and organise information in ways appropriate to audience, purpose and context",
+   "text": "present and organise information in ways appropriate to audience, purpose and context"
+  },
+  {
+   "code": "HSC-M3-D3",
+   "path": "Year 12 / Education and work / the purpose and context of a text and their influence on the choice of structure, format and vocabulary",
+   "text": "the purpose and context of a text and their influence on the choice of structure, format and vocabulary"
+  },
+  {
+   "code": "HSC-M3-D4",
+   "path": "Year 12 / Education and work / plan, draft and edit text",
+   "text": "plan, draft and edit text"
+  },
+  {
+   "code": "HSC-M3-D5",
+   "path": "Year 12 / Education and work / the logical sequencing of ideas in extended text",
+   "text": "the logical sequencing of ideas in extended text"
+  },
+  {
+   "code": "HSC-M3-D6",
+   "path": "Year 12 / Education and work / sequence ideas and information in texts",
+   "text": "sequence ideas and information in texts"
+  },
+  {
+   "code": "HSC-M3-D7",
+   "path": "Year 12 / Education and work / the application of known linguistic structures in new contexts",
+   "text": "the application of known linguistic structures in new contexts"
+  },
+  {
+   "code": "HSC-M3-D8",
+   "path": "Year 12 / Education and work / apply a range of vocabulary and linguistic structures across a range of contexts",
+   "text": "apply a range of vocabulary and linguistic structures across a range of contexts"
+  },
+  {
+   "code": "HSC-M3-D9",
+   "path": "Year 12 / Education and work / language choices and their effect on intended meaning",
+   "text": "language choices and their effect on intended meaning"
+  },
+  {
+   "code": "HSC-M3-D10",
+   "path": "Year 12 / Education and work / evaluate the accuracy and appropriateness of structures when constructing and editing text",
+   "text": "evaluate the accuracy and appropriateness of structures when constructing and editing text"
+  },
+  {
+   "code": "HSC-M3-D11",
+   "path": "Year 12 / Education and work / resources available to enhance and expand independent learning",
+   "text": "resources available to enhance and expand independent learning"
+  },
+  {
+   "code": "HSC-M3-D12",
+   "path": "Year 12 / Education and work / extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online",
+   "text": "extend and refine their use of language, eg by using dictionaries, word lists and grammar references, accessing authentic texts in print and online"
+  },
+  {
+   "code": "HSC-M3-D13",
+   "path": "Year 12 / Education and work / register in language use.",
+   "text": "register in language use."
+  },
+  {
+   "code": "HSC-M3-D14",
+   "path": "Year 12 / Education and work / use culturally appropriate language when creating and presenting texts.",
+   "text": "use culturally appropriate language when creating and presenting texts."
+  },
+  {
+   "code": "HSC-M4-D1",
+   "path": "Year 12 / Friends, recreation and pastimes / ways in which texts are constructed for specific purposes",
+   "text": "ways in which texts are constructed for specific purposes"
+  },
+  {
+   "code": "HSC-M4-D2",
+   "path": "Year 12 / Friends, recreation and pastimes / identify why, how or to whom a text is delivered or presented",
+   "text": "identify why, how or to whom a text is delivered or presented"
+  },
+  {
+   "code": "HSC-M4-D3",
+   "path": "Year 12 / Friends, recreation and pastimes / ways in which texts are formatted for particular purposes and effects",
+   "text": "ways in which texts are formatted for particular purposes and effects"
+  },
+  {
+   "code": "HSC-M4-D4",
+   "path": "Year 12 / Friends, recreation and pastimes / explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts",
+   "text": "explore the way text content is presented and how ideas and information are sequenced, eg headings, paragraphing, introductory sentences, topic shifts"
+  },
+  {
+   "code": "HSC-M4-D5",
+   "path": "Year 12 / Friends, recreation and pastimes / ways of identifying relevant details in texts when listening or reading for specific information",
+   "text": "ways of identifying relevant details in texts when listening or reading for specific information"
+  },
+  {
+   "code": "HSC-M4-D6",
+   "path": "Year 12 / Friends, recreation and pastimes / make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text",
+   "text": "make judgements about the relevance of detail in understanding text, eg extracting ideas and issues referred to in text"
+  },
+  {
+   "code": "HSC-M4-D7",
+   "path": "Year 12 / Friends, recreation and pastimes / ways of inferring meaning from text",
+   "text": "ways of inferring meaning from text"
+  },
+  {
+   "code": "HSC-M4-D8",
+   "path": "Year 12 / Friends, recreation and pastimes / use contextual and other clues to infer meaning from text",
+   "text": "use contextual and other clues to infer meaning from text"
+  },
+  {
+   "code": "HSC-M4-D9",
+   "path": "Year 12 / Friends, recreation and pastimes / resources available to access, enhance or promote independent learning",
+   "text": "resources available to access, enhance or promote independent learning"
+  },
+  {
+   "code": "HSC-M4-D10",
+   "path": "Year 12 / Friends, recreation and pastimes / access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts",
+   "text": "access available resources to assist comprehension of a text, eg dictionaries, word lists, glossaries, charts"
+  },
+  {
+   "code": "HSC-M4-D11",
+   "path": "Year 12 / Friends, recreation and pastimes / the effect of syntax on meaning",
+   "text": "the effect of syntax on meaning"
+  },
+  {
+   "code": "HSC-M4-D12",
+   "path": "Year 12 / Friends, recreation and pastimes / analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect",
+   "text": "analyse ways in which words, phrases and sentences are constructed, eg how words are modified for grammatical effect"
+  },
+  {
+   "code": "HSC-M4-D13",
+   "path": "Year 12 / Friends, recreation and pastimes / cultural attitudes that add meaning to texts",
+   "text": "cultural attitudes that add meaning to texts"
+  },
+  {
+   "code": "HSC-M4-D14",
+   "path": "Year 12 / Friends, recreation and pastimes / identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films",
+   "text": "identify and discuss cultural influences in specific texts, eg newspapers, magazines, advertisements and films"
+  },
+  {
+   "code": "HSC-M4-D15",
+   "path": "Year 12 / Friends, recreation and pastimes / language used to express cultural values, and to represent people and cultures in texts",
+   "text": "language used to express cultural values, and to represent people and cultures in texts"
+  },
+  {
+   "code": "HSC-M4-D16",
+   "path": "Year 12 / Friends, recreation and pastimes / explain cultural references in texts, eg Ogni pomeriggio faccio un pisolino dopo pranzo. Gli artigiani lavorano nelle loro botteghe.",
+   "text": "explain cultural references in texts, eg Ogni pomeriggio faccio un pisolino dopo pranzo. Gli artigiani lavorano nelle loro botteghe."
+  },
+  {
+   "code": "HSC-M4-D17",
+   "path": "Year 12 / Friends, recreation and pastimes / register and common expressions in language use.",
+   "text": "register and common expressions in language use."
+  },
+  {
+   "code": "HSC-M4-D18",
+   "path": "Year 12 / Friends, recreation and pastimes / explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms In bocca al lupo, quattro chiacchiere.",
+   "text": "explain the use of words and expressions with particular cultural significance in texts, eg idiomatic expressions, colloquialisms In bocca al lupo, quattro chiacchiere."
+  },
+  {
+   "code": "HSC-M4-D19",
+   "path": "Year 12 / Friends, recreation and pastimes / suggested components and weightings for the internal assessment of the Preliminary course",
+   "text": "suggested components and weightings for the internal assessment of the Preliminary course"
+  },
+  {
+   "code": "HSC-M4-D20",
+   "path": "Year 12 / Friends, recreation and pastimes / mandatory components and weightings for the internal assessment of the HSC course",
+   "text": "mandatory components and weightings for the internal assessment of the HSC course"
+  },
+  {
+   "code": "HSC-M4-D21",
+   "path": "Year 12 / Friends, recreation and pastimes / the HSC examination specifications, which describe the format of the external HSC examination.",
+   "text": "the HSC examination specifications, which describe the format of the external HSC examination."
+  },
+  {
+   "code": "HSC-M6-D1",
+   "path": "Year 12 / Future plans and aspirations / the importance of listening for key words to assist understanding",
+   "text": "the importance of listening for key words to assist understanding"
+  },
+  {
+   "code": "HSC-M6-D2",
+   "path": "Year 12 / Future plans and aspirations / listen for meaning",
+   "text": "listen for meaning"
+  },
+  {
+   "code": "HSC-M6-D3",
+   "path": "Year 12 / Future plans and aspirations / the importance of reading for key words to assist understanding",
+   "text": "the importance of reading for key words to assist understanding"
+  },
+  {
+   "code": "HSC-M6-D4",
+   "path": "Year 12 / Future plans and aspirations / read for meaning",
+   "text": "read for meaning"
+  },
+  {
+   "code": "HSC-M6-D5",
+   "path": "Year 12 / Future plans and aspirations / links in communication",
+   "text": "links in communication"
+  },
+  {
+   "code": "HSC-M6-D6",
+   "path": "Year 12 / Future plans and aspirations / use strategies to initiate, maintain and conclude an interaction, eg Buongiorno! scusi, mi può dire, allora, dunque, cioè, a più presto, ci vediamo, grazie",
+   "text": "use strategies to initiate, maintain and conclude an interaction, eg Buongiorno! scusi, mi può dire, allora, dunque, cioè, a più presto, ci vediamo, grazie"
+  },
+  {
+   "code": "HSC-M6-D7",
+   "path": "Year 12 / Future plans and aspirations / the purpose and context of communication",
+   "text": "the purpose and context of communication"
+  },
+  {
+   "code": "HSC-M6-D8",
+   "path": "Year 12 / Future plans and aspirations / select and incorporate particular vocabulary and structures to achieve specific communication goals",
+   "text": "select and incorporate particular vocabulary and structures to achieve specific communication goals"
+  },
+  {
+   "code": "HSC-M6-D9",
+   "path": "Year 12 / Future plans and aspirations / register in language use",
+   "text": "register in language use"
+  },
+  {
+   "code": "HSC-M6-D10",
+   "path": "Year 12 / Future plans and aspirations / interact with reference to context, purpose and audience, eg Dimmi. Mi dica.",
+   "text": "interact with reference to context, purpose and audience, eg Dimmi. Mi dica."
+  },
+  {
+   "code": "HSC-M6-D11",
+   "path": "Year 12 / Future plans and aspirations / responding to factual and open-ended questions",
+   "text": "responding to factual and open-ended questions"
+  },
+  {
+   "code": "HSC-M6-D12",
+   "path": "Year 12 / Future plans and aspirations / maintain an interaction by responding to and asking questions and sharing information",
+   "text": "maintain an interaction by responding to and asking questions and sharing information"
+  },
+  {
+   "code": "HSC-M6-D13",
+   "path": "Year 12 / Future plans and aspirations / ways to support effective interaction",
+   "text": "ways to support effective interaction"
+  },
+  {
+   "code": "HSC-M6-D14",
+   "path": "Year 12 / Future plans and aspirations / use appropriate language features to enhance communication, eg tone, intonation",
+   "text": "use appropriate language features to enhance communication, eg tone, intonation"
+  },
+  {
+   "code": "HSC-M6-D15",
+   "path": "Year 12 / Future plans and aspirations / the logical sequencing of ideas",
+   "text": "the logical sequencing of ideas"
+  },
+  {
+   "code": "HSC-M6-D16",
+   "path": "Year 12 / Future plans and aspirations / structure information and ideas coherently",
+   "text": "structure information and ideas coherently"
+  },
+  {
+   "code": "HSC-M6-D17",
+   "path": "Year 12 / Future plans and aspirations / formal and informal language, and when and where it is used",
+   "text": "formal and informal language, and when and where it is used"
+  },
+  {
+   "code": "HSC-M6-D18",
+   "path": "Year 12 / Future plans and aspirations / apply appropriate social conventions in formal and informal contexts, eg terms of address",
+   "text": "apply appropriate social conventions in formal and informal contexts, eg terms of address"
+  },
+  {
+   "code": "HSC-M6-D19",
+   "path": "Year 12 / Future plans and aspirations / sociolinguistic conventions relating to everyday activities.",
+   "text": "sociolinguistic conventions relating to everyday activities."
+  },
+  {
+   "code": "HSC-M6-D20",
+   "path": "Year 12 / Future plans and aspirations / use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Buon appetito! Grazie altrettanto.",
+   "text": "use language and/or behaviour appropriate to social context, eg at mealtimes, accepting/declining invitations Buon appetito! Grazie altrettanto."
+  }
+ ],
+ "questions": [
+  {
+   "id": "it2020auto01",
+   "year": 2020,
+   "number": "1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Why does Olivia call her dad?\nTranscript:\nFEMALE:\nCiao Papà, senti stasera non torno a casa dopo scuola.\nMALE:\nOlivia, torni per cena o no?\nFEMALE:\nNo, vado in pizzeria con gli amici."
+  },
+  {
+   "id": "it2020auto02",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Select the outfit that Giorgio is going to wear to the concert.\nPi\nct\nur\ne 4 outfits\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nFEMALE:\nAllora Giorgio che ti metti per andare al concerto domani?\nMALE:\nMi metto una camicia e dei pantaloni.\nFEMALE:\nMa farà caldo!\nMALE:\nAllora indosso una maglietta e dei pantaloncini.\nFemale:\nE non dimenticare di portare un cappello!\nMALE:\nCerto!"
+  },
+  {
+   "id": "it2020auto03",
+   "year": 2020,
+   "number": "3",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What are the friends discussing?\nTranscript:\nMALE:\nCiao Luisa, oggi pomeriggio andiamo in biblioteca a studiare per l’esame di\nmatematica?\nFEMALE:\nSei matto? Domani abbiamo il test di geografia!\nMALE:\nMa la matematica è più difficile…\nFEMALE:\nLo so, ma scusa oggi pomeriggio dobbiamo studiare la geografia."
+  },
+  {
+   "id": "it2020auto04",
+   "year": 2020,
+   "number": "4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How is Paolo’s mother feeling? Explain your answer with reference\nto the text.\nTranscript:\nFEMALE:\nPaolo la tua camera da letto è sempre sporca e disordinata! Sono davvero frustrata\ncon te!\nMALE:\nUffà! Mi ripeti sempre le stesse cose . . .\nFEMALE:\nSì, ti devo sempre ricordare di pulire la stanza perché non mi ascolti mai!\nMALE:\nChe noia, Mamma.\nFEMALE:\nE perché devo anche sempre ricordarti di portare il cane al parco?"
+  },
+  {
+   "id": "it2020auto05",
+   "year": 2020,
+   "number": "5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Tick the boxes corresponding to the event, month and activity\ndiscussed in the text.\nEvent\nA concert\nStrawberry fair\nA cooking course\nMonth\nJanuary\nJune\nJuly\nActivity\nPie making\nDancing\nFruit picking\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nFEMALE:\nVenite alla nostra magnifica fiera delle fragole il primo fine settimana di giugno!\nCi saranno tante bellissime attività, per esempio potete preparare e cucinare le\ndeliziose crostate di frutta fresca. Ci saranno anche musica, giostre e potete anche\ncomprare il nostro famoso gelato alla fragola. Vi aspettiamo!"
+  },
+  {
+   "id": "it2020auto06",
+   "year": 2020,
+   "number": "6",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Why is Serena upset?\n(These notes\nwill NOT be\nmarked.)\n2291\nTranscript:\nMALE:\nMi piacciono i tuoi capelli oggi Serena.\nFEMALE:\nGrazie Papà, ma sono arrabbiatissima!\nMALE:\nPerché?\nFEMALE:\nIo e Claudio siamo andati insieme dalla stessa parrucchiera.\nMALE:\nOk, e allora?\nFEMALE:\nCi credi che ho pagato $30 più di Claudio per lo stesso taglio di capelli? Non è\ngiusto!\nMALE:\nAssurdo! La stessa parrucchiera e due prezzi diversi?!"
+  },
+  {
+   "id": "it2020auto07",
+   "year": 2020,
+   "number": "7",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What are the main benefits of participating in the end of year show?\nTranscript:\nMALE:\nCari studenti, stiamo cercando attori, cantanti e ballerini per il prossimo spettacolo\ndi fine anno. Volete imparare a recitare, ballare e cantare davanti a un pubblico?\nAvete una fantastica opportunità. Lo spettacolo sarà un’occasione per diventare più\nforti e resilienti. Partecipare in questa performance significa imparare tutto ciò che\ncrea un grande spettacolo con le luci, la musica, i costumi, il trucco e tutto il resto.\nSpero di vedervi tutti a teatro martedì!"
+  },
+  {
+   "id": "it2020auto08",
+   "year": 2020,
+   "number": "8",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Compare the experiences the two speakers had in Italy. Support your\nanswer with reference to the text.\nItalian Beginners\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nMALE:\nUffa Sabrina, sono triste . . . Mi manca molto l’Italia.\nFEMALE:\nDavvero? A me no . . . La mia famiglia di scambio non era simpatica.\nMALE:\nInvece la mia famiglia era fantastica!\nFEMALE:\nChe fortuna, Roberto! A me, poi, non piaceva per niente andare in piazza dopo\nscuola. Avrei preferito visitare i musei o fare qualche altra attività culturale.\nMALE:\nNo. Non sono d’accordo. Era bellissimo uscire con gli amici in piazza.\nFEMALE:\nL’unica cosa che mi è piaciuta tantissimo è stato passare un bianco Natale, con\ntanta neve.\nMALE:\nA me no, faceva troppo freddo. Però hai ragione la neve è bellissima. E poi i\nmercati di Natale erano davvero favolosi."
+  },
+  {
+   "id": "it2020auto09",
+   "year": 2020,
+   "number": "9",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How likely is it that Francesco will take part in this project? Support\nyour answer with reference to the text.\nTranscript:\nFEMALE:\nPronto?\nMALE:\nSì, pronto sono Francesco sono uno studente interessato al Vostro progetto\n‘Salviamo gli animali’.\nFEMALE:\nAh bene e dove studi?\nMALE:\nStudio alla scuola superiore di arte e fotografia, ma adesso sono in vacanza per sei\nsettimane.\nFEMALE:\nPerfetto, allora potresti aiutare perché il nostro progetto dura quattro settimane.\nAbbiamo bisogno di tanti volontari per aiutare a salvare gli animali vittime degli\nincendi e degli incidenti stradali.\nMALE:\nBeh io non ho mai avuto un animale, ma li adoro e voglio veramente aiutare.\nFEMALE:\nFantastico! Stiamo anche organizzando una raccolta di fondi. Vendiamo foto e\nsculture per avere i soldi per curare gli animali.\nMale:\nChe bello, io ho tantissime foto che posso donare!"
+  },
+  {
+   "id": "it2020auto10",
+   "year": 2020,
+   "number": "10",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Explain how Giulio responds to his mother’s suggestions.\n2292\nItalian Beginners\nSection II — Reading\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response.\nTranscript:\nFEMALE:\nGiulio, stai ancora studiando? È tardi.\nMALE:\nCerto! Ma lo sai che l’anno prossimo voglio andare all’università a studiare\neconomia.\nFEMALE:\nEconomia?! Tu ami scrivere. Potresti diventare un giornalista.\nMALE:\nÈ vero, però una laurea in economia è molto più utile perché posso trovare un buon\nlavoro. Il giornalismo non ti fa diventare ricco.\nFEMALE:\nPensaci bene, i soldi non sono tutto. E poi, secondo me potresti prenderti un anno\ndi pausa e viaggiare. Potresti andare all’estero e imparare un’altra lingua.\nMALE:\nNon posso lasciare la mia ragazza per un anno!\nFEMALE:\nAscoltami, Giulio, fare un’esperienza all’estero, magari scrivendo per un giornale\no una rivista, ti darà tanta soddisfazione. E imparare un’altra lingua ti offrirà tante\nopportunità.\nMALE:\nMamma, non ho voglia di studiare una lingua! Però forse hai ragione, sarebbe bello\nprendermi una pausa e scrivere.\nFEMALE:\nBene . . .\nMALE:\nMa ho paura che se smetto di studiare per un anno sarà difficile ricominciare a\nstudiare.\nFEMALE:\nTi capisco.\nMALE:\nE poi sono anche preoccupato che se vado all’estero la mia ragazza si dimenticherà\ndi me!\nFEMALE:\nBeh, se la tua ragazza ti vuole bene davvero, ti aspetterà!"
+  },
+  {
+   "id": "it2020auto11",
+   "year": 2020,
+   "number": "11",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the question that follows.\nUNA PISTA DA SOGNO\nLe nostre automobili vi portano da 0 a 200 km/h\nin poco tempo!\nUn giro emozionante sulla nostra pista vi fa\nsentire come un pilota di Formula Uno!\nVisita il nostro sito\nweb www.adrenalinainpista.it\nWho is the audience for this advertisement?\n(4 marks)\nRead the text and then answer the questions that follow.\nCiao amici,\nOggi ho passato la giornata con Elio. È stato speciale passare del\ntempo con lui. È arrivato la mattina presto e siamo andati subito\nal suo parco preferito. Lì ha giocato con il suo migliore amico\ndall’asilo e si è divertito tanto. Dopo l’ho aiutato a imparare\nad andare in bicicletta. Era felicissimo e non vedeva l’ora di\nraccontarlo alla mamma. Voleva dare da mangiare alle anatre,\nma ho dimenticato di portare il pane. Più tardi, voleva un gelato\ngigante e gliel’ho comprato. I suoi occhi brillavano! Quando\nsono venuti i genitori a prenderlo Elio dormiva profondamente.\nChe bella giornata!\nMorgana\n(a)\nMorgana is Elio’s\nA.\nmother.\nB.\nbest friend.\nC.\ngrandmother.\nD.\ngranddaughter.\n(b)\nWhat made the day enjoyable for Elio?\n2293"
+  },
+  {
+   "id": "it2020auto12",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 13 (continued)\n(a)\nWhy did the customer choose this restaurant?\n(b)\nIs the customer likely to return to the restaurant? Support your answer with\nreference to the text.\n(c)\nHow suitable is the restaurant’s reply to the review?\n2294"
+  },
+  {
+   "id": "it2020auto13",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 14 (continued)\n(a)\nAccording to the advertisement, what are the benefits for the successful\ncandidate?\n(b)\nIs Marina an appropriate candidate? Support your answer with reference to the\ntext.\n2295"
+  },
+  {
+   "id": "it2020auto14",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 15 (continued)\n(a)\nWhy is the title suitable for the article?\n(b)\nWhat is unique about Da Vinci High School’s approach to student\ndiscipline?\n(c)\nHow does the author feel about this project? Support your answer with reference\nto the text.\n2296\nItalian Beginners\nSection III — Writing in Italian\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in Italian"
+  },
+  {
+   "id": "it2020auto15",
+   "year": 2020,
+   "number": "16",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "You had invited a friend to the formal, but they are not able to attend. Write a message to another\nfriend asking if he/she will accompany you. Write approximately 50 words in ITALIAN."
+  },
+  {
+   "id": "it2020auto16",
+   "year": 2020,
+   "number": "17",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "You have just met someone who has made a strong impression on you. Write a diary entry.\nWrite approximately 75 words in ITALIAN.\n2297\nItalian Beginners\nPart B – 10 marks\nAttempt either Question 18 or Question 19\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in ITALIAN.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in Italian"
+  },
+  {
+   "id": "it2020auto17",
+   "year": 2020,
+   "number": "18",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "La tua famiglia sta traslocando all’estero. Tu hai deciso di non andare con loro. Scrivi\nun’email agli amici e spiega le ragioni per voler rimanere.\nYour family is relocating overseas. You have decided not to go with them. Write an email to\nyour friends explaining your reasons for wanting to stay.\nOR"
+  },
+  {
+   "id": "it2020auto18",
+   "year": 2020,
+   "number": "19",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Hai vinto una borsa di studio per studiare all’estero. I tuoi genitori sono contrari all’idea di\nvivere all’estero. Scrivi un’email ai tuoi genitori e spiega le ragioni per voler andare.\nYou have won a scholarship to study overseas. Your parents are against the idea of you living\noverseas. Write an email to your parents explaining your reasons for wanting to go."
+  },
+  {
+   "id": "it2021auto01",
+   "year": 2021,
+   "number": "1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What is the purpose of the announcement?\n2\nTranscript:\nFEMALE:\nBuongiorno ragazzi. Ecco un annuncio della mensa scolastica:\nNon è possibile comprare le patatine oggi. Sfortunatamente sono finite. Ma potete\nprovare una bella insalata fresca per pranzo."
+  },
+  {
+   "id": "it2021auto02",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Which postcard is chosen? Select the right answer.\nA.\nThe beach\nB.\nThe shops\nC.\nThe tower\nD.\nThe dolphins\n1\nTranscript:\nMALE:\nAndiamo al negozio di souvenir a comprare una cartolina della torre per mamma?\nFEMALE:\nLa torre? Prendiamo una con l’immagine della spiaggia o con i delfini nel mare.\nMALE:\nMa no! Mamma adora i monumenti.\nFEMALE:\nHai ragione. Va bene."
+  },
+  {
+   "id": "it2021auto03",
+   "year": 2021,
+   "number": "3",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Why is Mario calling Benedetta?\n2\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nFEMALE:\nCiao, Sono Benedetta. Lasciate un messaggio.\nMALE:\nSono Mario. Scusami ma non posso venire a prenderti alla fine dell’allenamento.\nHanno chiuso tutte le strade a causa della neve. Prendi il treno per tornare."
+  },
+  {
+   "id": "it2021auto04",
+   "year": 2021,
+   "number": "4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Why does Grazia disagree with Matteo?\n3\nTranscript:\nMALE:\nGrazia, che dici papà ci prende un altro gatto?\nFEMALE:\nVuoi un altro gatto?! Matteo, ma tu non dai da mangiare al gatto che hai adesso e\nnon gli cambi nemmeno l’acqua! Un gatto basta.\nMALE:\nMa dai, sarò più responsabile!\nFEMALE:\nPoi casa nostra è troppo piccola per due animali.\nMALE:\nPeccato . . ."
+  },
+  {
+   "id": "it2021auto05",
+   "year": 2021,
+   "number": "5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Complete the table with the relevant information about the movie.\n3\nDay of week\nGenre\nAudience\nTranscript:\nFEMALE:\nCari telespettatori, mercoledì prossimo sarà trasmesso alle 21 il bellissimo film\n‘Non ci resta che ridere’. Se volete un film per tutta la famiglia, non perdetelo.\nGrandi e piccoli rideranno insieme mentre guardano questa divertentissima\ncommedia."
+  },
+  {
+   "id": "it2021auto06",
+   "year": 2021,
+   "number": "6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhat are Loretta and her father discussing?\n1\n(b)\nIs the father’s advice to Loretta useful? Support your answer\nwith reference to the text.\n3\n(These notes\nwill NOT be\nmarked.)\n2021\nItalian Beginners\n2421\nTranscript:\nMALE:\nAllora, Loretta, sei pronta a trasferirti?\nFEMALE:\nSì, anche se sono un po’ preoccupata all’idea di cambiare città.\nMALE:\nVedrai che farai subito amicizie nuove.\nFEMALE:\nSperiamo, Papà. Lo sai che sono timida.\nMALE:\nDevi trovare dei nuovi hobby per conoscere gente. Forse potresti fare un corso di\nteatro? Recitare ti aiuterà anche a diventare più estroversa.\nFEMALE:\nChe bella idea, Papà!\nMALE:\nCerto Loretta. Magari iscriviti anche in palestra, adori lo sport. Lo sai che io ho\nconosciuto tua madre in palestra.\nFEMALE:\nForse trovo anch’io l’amore! Un altro bel consiglio. Grazie."
+  },
+  {
+   "id": "it2021auto07",
+   "year": 2021,
+   "number": "7",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Describe the type of holiday the speaker is encouraging people to\ntake.\n3\nTranscript:\nMALE:\nBuongiorno Signore e Signori,\nSono il Ministro del Turismo e oggi voglio incoraggiarvi a considerare una vacanza\na casa. Invece di sognare vacanze in altri continenti o posti esotici, perché non fare\nil turista nella vostra città per conoscerla meglio e scoprire le bellezze che ci sono\ndietro l’angolo? Rimanendo a casa potete rilassarvi veramente ed essere tranquilli\nsenza tutte le preoccupazioni di un viaggio stressante e stancante. Per chi vuole\nrisparmiare, una vacanza trascorsa a casa senza comprare biglietti aerei e prenotare\ncamere d’albergo è più economica e comoda."
+  },
+  {
+   "id": "it2021auto08",
+   "year": 2021,
+   "number": "8",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How likely is it that the customer will buy the product?\n3\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nMALE:\nBuongiorno, vorrei comprare una bicicletta.\nFEMALE:\nBene, che tipo?\nMALE:\nHo bisogno di una bici leggera adatta alle salite e alle lunghe distanze. Il mio\nbudget è di circa 200 euro.\nFEMALE:\nOk. Ha mai pensato a una e-bike?\nMALE:\nUna che?\nFEMALE:\nUna bicicletta elettrica. La bicicletta si carica con l’elettricità e con questa bici può\npedalare per molti km.\nMALE:\nÈ perfetta per me. È proprio quello che voglio, però non sono bravo con le cose\ntecnologiche. Quanto costa?\nFEMALE:\nLa bici costa 300 euro.\nMALE:\nCi devo pensare."
+  },
+  {
+   "id": "it2021auto09",
+   "year": 2021,
+   "number": "9",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Are Tommaso’s career aspirations appropriate? Support your answer\nwith reference to the text.\n4\nTranscript:\nFEMALE:\nAllora Tommaso. Hai pensato a quale lavoro vorresti fare?\nMALE:\nSono così confuso, signora Bianchi. Vorrei poter aiutare gli altri e salvare la vita\nalle persone ma, non so se voglio fare il vigile del fuoco oppure l’infermiere.\nFEMALE:\nChe bello! Ma lo sai che entrambi i lavori richiedono di essere flessibili?\nMALE:\nSí, lo so che a volte bisogna lavorare la notte, ma a me non dispiace anche perché\nsi guadagna di più.\nFEMALE:\nE i weekend . . .\nMALE:\nÈ vero . . . Ogni domenica vado da nonna a pranzo. Adoro la sua lasagna e mi\ndispiacerebbe non andare a casa sua.\nFEMALE:\nE cosa ti piace di più della professione del vigile del fuoco?\nMALE:\nMi piace il lavoro fisico e dinamico. Ma ho paura delle altezze . . . Che terrore! Non\nposso nemmeno prendere l’aereoplano.\nFEMALE:\nE perché invece vuoi essere un infermiere? Hai studiato biologia?\nMALE:\nVeramente no. Però amo l’idea di lavorare in un ospedale anche se odio la vista del\nsangue. Che schifo il sangue!\nFEMALE:\nForse è meglio cercare ancora per trovare qualcosa di più adatto alla tua personalità."
+  },
+  {
+   "id": "it2021auto10",
+   "year": 2021,
+   "number": "10",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Compare Giacomo’s and Flavia’s points of view about what has\nhappened.\n5\n2021\nItalian Beginners\n2422\nSection II — Reading\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response.\nTranscript:\nFEMALE:\nGiacomo, hai fatto un graffito sul muro della scuola?\nMALE:\nFlavia! SShhh! Non urlare! Silenzio!\nFEMALE:\nMa sei scemo?! Finirai nei guai! Il preside si arrabbierà tantissimo.\nMALE:\nMa l’ho fatto per amore! Amore per la mia squadra del cuore! La finale di calcio\nè questo mercoledì. Lo sai che sono un grandissimo tifoso. Non m’importa se il\npreside si arrabbia, ne valeva la pena.\nFEMALE:\nÈ un atto di vandalismo, i graffiti sono illegali a scuola!\nMALE:\nNon è vandalismo perché non è un graffito, è un messaggio!\nFEMALE:\nE non potevi scrivere questo messaggio d’amore da un’altra parte? Che ne so su un\nposter o su uno striscione allo stadio invece di sporcare il muro?\nMALE:\nVeramente non c’avevo pensato. Sono stato impulsivo.\nFEMALE:\nSecondo me se vuoi sostenere la tua squadra basta andare allo stadio. Non c’è\nbisogno di scrivere sui muri per mostrare la tua passione.\nMALE:\nBeh . . .\nFEMALE:\nE poi sporcare il muro della nostra scuola non è giusto.\nMALE:\nNon ti preoccupare, ho usato della pittura che si pulisce facilmente, non è\npermanente.\nFEMALE:\nE allora andiamo a pulire il muro subito. Non voglio che finisci nell’ufficio del\npreside!\nMALE:\nForse hai ragione, non dovevo farlo, ma Forza Giallo Rossi! . . ."
+  },
+  {
+   "id": "it2021auto11",
+   "year": 2021,
+   "number": "11",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the questions that follow.\nCercasi\nMusicista per un gruppo rock\nSuoni benissimo la chitarra elettrica e classica?\nAllora sei perfetto/a per la nostra band!\nHai la patente e hai la macchina?\nÈ fondamentale avere più di 18 anni.\nChiamaci al 338555030.\n(a)\nWhat is the purpose of the advertisement?\n1\n(b)\nDescribe the ideal candidate for this position.\n3"
+  },
+  {
+   "id": "it2021auto12",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 12 (continued)\n(a)\nSelect the picture that best represents Claudia’s new home.\n1\nMu\nlt\nip\nle choice homes\n(b)\nWhy is Claudia moving?\n2\n2021\nItalian Beginners\n2423"
+  },
+  {
+   "id": "it2021auto13",
+   "year": 2021,
+   "number": "13",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the questions that follow.\nCaro diario,\nOggi pomeriggio mentre passeggiavo ho fatto una bella scoperta. Ho trovato un\nmagnifico bar molto particolare chiamato ‘Caffè Barbabele’.\nQuando sono entrata ho visto subito centinaia di meravigliose fotografie dei\nmonumenti più famosi del mondo. Guardarle era come fare un viaggio senza\nprendere l’aereo. Il barista e tutti i camerieri vengono da tante nazioni differenti.\nPurtroppo non ci sono sconti per studenti, quindi era un po’ costoso per me, anche\nse era tutto delizioso. II menù è interessante, con una varietà internazionale di\ndolci, spuntini e bibite ispirate a diverse tradizioni. Ogni tavolo ha il nome di\nuna capitale del mondo. Mi sono seduta a un tavolino che si chiamava Berlino.\nSfortunatamente è molto lontano da casa e dall’università. Comunque sono\ncontenta di essere entrata in questo bar.\nBuona notte, caro diario.\nTeresa\n(a)\nWhat makes the café unique?\n4\n(b)\nIs Teresa likely to return to the café? Support your answer with reference to the\ntext.\n2\n2021\nItalian Beginners\n2424"
+  },
+  {
+   "id": "it2021auto14",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 14 (continued)\n(a)\nWhich of the suggested books is Giorgio#264 LESS likely to choose? Justify\nyour answer with reference to the text.\n4\n(b)\nWhat kind of person is Corrado.impavido23? Support your answer with\nreference to the text.\n3\n2021\nItalian Beginners\n2425"
+  },
+  {
+   "id": "it2021auto15",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 15 (continued)\n(a)\nWhat kind of volunteer does Luciano Buoni need for his program?\n3\n(b)\nDescribe how this initiative started. Support your answer with reference to th\ntext.\ne\n5\n(c)\nDoes the name of the website reflect the purpose of the initiative? Support your\nanswer with reference to the text.\n2\n2021\nItalian Beginners\n2426\nSection III — Writing in Italian\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in Italian"
+  },
+  {
+   "id": "it2021auto16",
+   "year": 2021,
+   "number": "16",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Write a note to a family member telling them what tasks and chores they must complete at\nhome this afternoon. Write approximately 50 words in ITALIAN."
+  },
+  {
+   "id": "it2021auto17",
+   "year": 2021,
+   "number": "17",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "You have been in trouble at school today. Write a letter to your parents about what happened.\nWrite approximately 75 words in ITALIAN.\n2021\nItalian Beginners\n2427\nPart B – 10 marks\nAttempt either Question 18 or Question 19\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in ITALIAN.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in Italian"
+  },
+  {
+   "id": "it2021auto18",
+   "year": 2021,
+   "number": "18",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Ti è stato chiesto di parlare ad un gruppo di studenti dell’anno sette il primo giorno di scuola\nsuperiore. Scrivi il testo del tuo discorso.\nYou have been asked to speak to a group of Year 7 students on their first day at secondary\nschool. Write the script of your speech.\nOR"
+  },
+  {
+   "id": "it2021auto19",
+   "year": 2021,
+   "number": "19",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Ti è stato chiesto di parlare ad un’associazione giovanile di quartiere delle attività ricreative\nofferte quest’estate. Scrivi il testo del suo discorso.\nYou have been asked to speak at your neighbourhood youth group about the recreational\nactivities available this summer. Write the script of your speech."
+  },
+  {
+   "id": "it2022auto01",
+   "year": 2022,
+   "number": "1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What are the speakers discussing?\n2\nTranscript:\nFEMALE:\nMatteo, che stress!\nMALE:\nChe cosa c’è Sabrina?\nFEMALE:\nIl mio telefonino è rotto, non funziona.\nMALE:\nE qual è il problema?\nFEMALE:\nDevo chiamare mia madre subito o si arrabbia.\nMALE:\nTranquilla, usa il mio telefonino.\nFEMALE:\nGrazie mille, Matteo."
+  },
+  {
+   "id": "it2022auto02",
+   "year": 2022,
+   "number": "2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Explain how Lorena feels.\n2\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nMALE:\nLorena, perché non hai la divisa scolastica? Come ti sei vestita? Sembri Pinocchio!\nFEMALE:\nProfessore, sono Pinocchio! Mi sono vestita per la settimana del libro!\nMALE:\nMa no, la settimana del libro è il mese prossimo!\nFEMALE:\nOh, no che imbarazzo! Oh mamma mia! Che brutta figura!"
+  },
+  {
+   "id": "it2022auto03",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What should Tiziana take with her tomorrow on her outing? Based on\nthe weather forecast, choose the correct picture.\n1\nmu\nlt\nip\nle\nchoic\ne diagrams\nTranscript:\nMALE:\nLe previsioni del tempo per Napoli. Domani mattina ci sarà cielo sereno, un sole\nforte e circa 30 gradi. Attenzione però perché nel pomeriggio il tempo cambierà e\nci sarà tanta pioggia e un possibile temporale."
+  },
+  {
+   "id": "it2022auto04",
+   "year": 2022,
+   "number": "4",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What are the siblings planning to do?\n2\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nFEMALE:\nFranco, sai che sabato è l’anniversario di matrimonio di mamma e papà?\nMALE:\nOddio manca pochissimo! Dobbiamo comprare un regalo.\nFEMALE:\nL’anniversario è un’occasione speciale. Bisogna comprare proprio un bel regalo.\nMALE:\nSì, d’accordo! Sei libera giovedì sera? Possiamo fare un giro in centro ai negozi.\nFEMALE:\nPerfetto! Perché non ci incontriamo davanti alla stazione centrale alle sei?\nMALE:\nSì, va benissimo. A giovedì!"
+  },
+  {
+   "id": "it2022auto05",
+   "year": 2022,
+   "number": "5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Complete the table with the appropriate information.\n3\nHow to make\nQuantity\nIngredients\n6\ndrops\nLavender oil\n400 mL\nMethod\nMix all ingredients together in a large pot and cook slowly for\n2\nTranscript:\nFEMALE:\nPer il podcast di oggi, vi proponiamo una ricetta facile per fare un profumo\nfatto in casa. Un profumo buonissimo alle rose e lavanda. Allora, servono questi\ningredienti: 6 tazze di petali di rosa, 10 gocce di olio di lavanda, 400 ml di acqua.\nMescolate tutti gli ingredienti e fate cuocere lentamente per due ore. Ecco a voi un\nbuonissimo profumo da regalare a Natale!"
+  },
+  {
+   "id": "it2022auto06",
+   "year": 2022,
+   "number": "6",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How does Vincenzo feel about what his mother tells him? Justify\nyour answer with reference to the text.\n3\nTranscript:\nFEMALE:\nVincenzo, andiamo!\nMALE:\nDove mamma? Cosa succede?\nFEMALE:\nCome non ti ricordi? Oggi ti insegno io a guidare invece di papà.\nMALE:\nUffa! Oh no. Che peccato! Non mi piace quando mi insegni tu a guidare!\nFEMALE:\nE perché?\nMALE:\nPerché ti arrabbi sempre quando faccio un piccolo errore e poi mi stresso!\nFEMALE:\nE tuo padre invece?\nMALE:\nPapà è un istruttore molto più calmo e non mi sgrida mai."
+  },
+  {
+   "id": "it2022auto07",
+   "year": 2022,
+   "number": "7",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "What good news does Monica receive?\n3\n(These notes\nwill NOT be\nmarked.)\n2391\nTranscript:\nMALE:\nPronto Monica come stai?\nFEMALE:\nInsomma, così così…\nMALE:\nPerché?\nFEMALE:\nNon posso andare in discoteca perché ho solo diciassette anni e io adoro ballare.\nMALE:\nNon c’è problema! Anche tu puoi andare a ballare!\nFEMALE:\nMa come Ottavio? Le discoteche sono vietate a chi ha meno di 18 anni.\nMALE:\nHanno aperto una discoteca qui vicino anche per i minori di 18 anni.\nFEMALE:\nBello! Ma i miei genitori non mi fanno uscire di sera!\nMALE:\nQuesto posto è aperto di giorno, dalla mattina fino al pomeriggio.\nFEMALE:\nFantastico! Allora mamma e papà mi daranno il permesso di andare. Non vedo\nl’ora!\nMALE:\nVengo con te!"
+  },
+  {
+   "id": "it2022auto08",
+   "year": 2022,
+   "number": "8",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Compare the speakers’ opinions on the coach.\n4\nTranscript:\nMALE:\nClaudia, ti piace il nuovo istruttore di nuoto?\nFEMALE:\nSì, è simpaticissimo. Scherza sempre.\nMALE:\nInsomma a me non piace. È proprio antipatico, non sorride mai!\nFEMALE:\nCosa dici?\nMALE:\nSì, è troppo severo.\nFEMALE:\nNon è vero, è così gentile.\nMALE:\nNon è gentile anzi, dà un sacco di ordini e ci fa fare il doppio allenamento.\nFEMALE:\nValentino non capisci proprio niente, lui ci fa fare tanti esercizi in piscina perché è\nun bravo allenatore che vuole ottenere buoni risultati.\nMALE:\nBeh, hai ragione è un insegnante capace.\nFEMALE:\nSiamo tutti nuotatori più forti grazie a lui.\nMALE:\nVero!"
+  },
+  {
+   "id": "it2022auto09",
+   "year": 2022,
+   "number": "9",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "(a)\nWhere is this conversation taking place?\n1\n(b)\nDescribe how Luisa’s mood changes throughout the\nconversation. Justify your answer with reference to the text.\n4\nItalian Beginners\n(These notes\nwill NOT be\nmarked.)\nTranscript:\nMALE:\nBuongiorno Luisa, grazie per essere venuta qui nel mio ufficio.\nFEMALE:\nBuongiorno, Signor Preside.\nMALE:\nVolevo parlarti.\nFEMALE:\nOh no, cosa è successo? Cosa ho fatto?\nMALE:\nNo, no…\nFEMALE:\nAllora sono nei guai! Che cosa ho fatto questa volta?\nMALE:\nVeramente…\nFEMALE:\nHo una punizione? Ho risposto male a un professore?\nMALE:\nMa no, Luisa, niente di tutto questo. Sei stata scelta come capitano della scuola per\nl’anno prossimo.\nFEMALE:\nCapitano? Oh che bello! Ma è una notizia fantastica.\nMALE:\nE infatti volevo dirtelo subito.\nFEMALE:\nGrazie!\nMALE:\nL’unica cosa però è che non puoi avere il piercing al naso\nFEMALE:\nMa come, il mio piercing? Ma non ci penso proprio!\nMALE:\nE devi anche cambiare il colore dei capelli, non possono essere blu.\nFEMALE:\nMi piacciono i miei capelli blu. Adoro il mio look! Non è giusto!"
+  },
+  {
+   "id": "it2022auto10",
+   "year": 2022,
+   "number": "10",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "How likely is it that Jessica will take her father’s advice? Justify your\nanswer with reference to the text.\n5\n2392\nItalian Beginners\nSection II — Reading\nRead the texts and then answer the questions in ENGLISH in the spaces provided. These\nspaces provide guidance for the expected length of response.\nTranscript:\nMALE:\nJessica, la mamma mi ha detto che cerchi un lavoretto alla pizzeria qui vicino casa.\nFEMALE:\nSì, papà tutti i miei amici lavorano là.\nMALE:\nMa tu studi veterinaria all’università quindi perché non cerchi in un negozio di\nanimali?\nFEMALE:\nNon lo so.\nMALE:\nO allo zoo così puoi fare esperienza nel settore dei tuoi studi.\nFEMALE:\nForse hai ragione papà, ma io vorrei anche divertirmi al lavoro.\nMALE:\nDevi essere seria quando lavori, non vai al lavoro per divertirti.\nFEMALE:\nUffa, che stress. Sì, ma se lavoro insieme ai miei amici, sarà più bello.\nMALE:\nOk, ma se trovi un lavoro nel campo degli animali questo ti potrebbe dare un\nvantaggio quando finisci l’università.\nFEMALE:\nMa io sto prendendo ottimi voti nel mio corso, sicuramente troverò lavoro\nfacilmente quando finisco.\nMALE:\nMah… non lo so.\nFEMALE:\nInoltre, voglio un lavoretto vicino casa. Non voglio viaggiare per ore per arrivare\nsul posto.\nMALE:\nLa pizzeria paga poco…\nFEMALE:\nVeramente la paga in pizzeria non è male e alla fine io sono un’adulta e decido io."
+  },
+  {
+   "id": "it2022auto11",
+   "year": 2022,
+   "number": "11",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the question that follows.\nVieni al Luna Park sabato.\nOfferta speciale: riceverai uno sconto del 30%!\nDevi prenotare prima del 5 Ottobre.\nEssenziale presentare la tessera scolastica all’entrata.\nWhat do students have to do to access this offer?\n2"
+  },
+  {
+   "id": "it2022auto12",
+   "year": 2022,
+   "number": "12",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the question that follows.\nCari mamma e papà,\nLa vita qui a Roccaraso è bellissima. Ogni giorno andiamo a\nsciare e poi a prendere una cioccolata calda al bar. La vista del\nlago con le montagne piene di neve è meravigliosa, soprattutto\nquando fa bel tempo. Peccato che non posso farmi una bella\nnuotata!\nSaluti a tutti,\nAlice\nWhat season is it in Roccaraso? Justify your answer with reference to the text.\n3"
+  },
+  {
+   "id": "it2022auto13",
+   "year": 2022,
+   "number": "13",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the questions that follow.\nCiao Giorgio,\nSono tanti anni che non ci sentiamo, ma stamattina ho pensato a\nte perché hanno detto alla radio che ci sarà un concerto gratis di\nVecchiotty qui a Modena!\nTi ricordi quando ascoltavamo le sue canzoni quando eravamo\nbambini?\nIl concerto si svolgerà il ventisei luglio alle 19 al parco del centro. Devi\nfarmi sapere immediatamente se puoi venire così prendo un biglietto\nanche per te.\nA prestissimo,\nChiara\nP.S. Come sta tua nonna?\n(a)\nWhy has Chiara written this email?\n3\n(b)\nChoose the correct response.\nChiara and Giorgio are\nA.\nwork colleagues.\nB.\nchildhood friends.\nC.\ngirlfriend and boyfriend.\nD.\ngrandmother and grandchild.\n1"
+  },
+  {
+   "id": "it2022auto14",
+   "year": 2022,
+   "number": "14",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the questions that follow.\nGentile Sindaco Terra,\nSono una giovane cittadina e scrivo perché ho un’idea per come convertire la\nvecchia fabbrica delle scarpe che ha chiuso tanti anni fa. È molto triste vedere\nquesto grande spazio inutilizzato.\nHo pensato che può essere usato come centro ecologico, cioè un luogo dove si\npossono portare oggetti e vestiti da riciclare e rivendere. Questo centro potrebbe\ncreare nuove opportunità lavorative e aiuterebbe la nostra città a ridurre la\nspazzatura. Inoltre, i cittadini potranno comprare vestiti e oggetti usati che\ncostano poco e quindi aiuterebbe le persone più svantaggiate economicamente.\nVorrei presentare questa proposta all’assemblea di quartiere.\nCordiali saluti,\nAurora Germani\n(a)\nWhat suggestion does Aurora have about the shoe factory?\n2\n(b)\nWhat are the benefits of Aurora’s idea?\n3\n(c)\nWhat does Aurora propose to do next?\n1\n2393"
+  },
+  {
+   "id": "it2022auto15",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 15 (continued)\n(a)\nHow likely are Graziella’s parents to be pleased with this report? Explain your\nanswer with reference to the text.\n5\n(b)\nWhat school year is Graziella in? Justify your answer with reference to the text.\n2\n2394"
+  },
+  {
+   "id": "it2022auto16",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Question 16 (continued)\n(a)\nExplain the tradition of the ‘plus-one ice-cream’.\n3\n(b)\nWhy is Bar Annori famous?\n5\n2395\nItalian Beginners\nSection III — Writing in Italian\nPart A – 10 marks\nAnswer the questions in the spaces provided. These spaces provide guidance for the expected\nlength of response.\nYour answers will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of vocabulary and language structures in Italian"
+  },
+  {
+   "id": "it2022auto17",
+   "year": 2022,
+   "number": "17",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Your neighbour often does things that bother you. Write him/her a message of complaint.\nWrite approximately 50 words in ITALIAN."
+  },
+  {
+   "id": "it2022auto18",
+   "year": 2022,
+   "number": "18",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Write a thank you card to your parents for the support they gave you during your last year of\nschool. Write approximately 75 words in ITALIAN.\n2396\nItalian Beginners\nPart B – 10 marks\nAttempt either Question 19 or Question 20\nAnswer the question in the space provided. This space provides guidance for the expected\nlength of response.\nWrite approximately 125 words in ITALIAN.\nYour answer will be assessed on how well you:\n● communicate relevant ideas and information\n● write text appropriate to audience, purpose and context\n● structure and sequence ideas and information\n● demonstrate control of a range of vocabulary and language structures in Italian"
+  },
+  {
+   "id": "it2022auto19",
+   "year": 2022,
+   "number": "19",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "La festa per il tuo diciottesimo compleanno è andata esattamente come previsto. Scrivi una\npagina di diario dove descrivi quello che è successo.\nYour 18th birthday party went exactly as planned. Write a diary entry describing what\nhappened.\nOR"
+  },
+  {
+   "id": "it2022auto20",
+   "year": 2022,
+   "number": "20",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Sei appena tornato/a da un interessante viaggio estivo. Scrivi una pagina di diario dove\ndescrivi quello che è successo.\nYou have just come back from an interesting summer trip. Write a diary entry describing what\nhappened."
+  },
+  {
+   "id": "it202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "What is Annalisa's problem?\nMALE: Studenti, l'esame di matematica comincia adesso.\nFEMALE: Ma professore, non posso!\nMALE: Perché no, Annalisa?\nFEMALE: Non ho una penna . . .\nMALE: Non hai una penna?! Ve l'ho detto tante volte, oggi c'è l'esame di matematica!\nFEMALE: Mi dispiace prof."
+  },
+  {
+   "id": "it202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Tick the boxes corresponding to the TWO items Luca has to buy.\nFEMALE: Pronto, Luca?\nMALE: Sì, mamma. Dimmi.\nFEMALE: Vai al supermercato a prendere il pane, per favore? Ho lasciato dei soldi in cucina.\nMALE: Ok, compro il pane. Posso prendere anche il gelato?\nFEMALE: Luca, no! Devi prendere anche un po' di frutta e i soldi non bastano.\nMALE: Ok Mamma . . . che frutta vuoi? Mele, fragole, e arance. . .\nFEMALE: Prendi solo delle mele, niente altro. Abbiamo già fragole ed arance a casa."
+  },
+  {
+   "id": "it202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "If the conversation were to take place in ENGLISH, what is Marco most likely to say next?\nMALE: Ciao Samanta, che belle scarpe da ginnastica!\nFEMALE: Ciao Marco, stupende, vero?\nMALE: Dove le hai comprate? Le voglio anch'io.\nFEMALE: Non lo so, me le ha regalate mio fratello.\nMALE: Un regalo, perché?\nFEMALE: Eeehhh, perché sono finalmente maggiorenne. Ieri ho festeggiato il mio diciottesimo.\nHappy birthday!\nGood luck shopping!\nHave fun at the party!\nSee you at your brother's place!"
+  },
+  {
+   "id": "it202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Describe the type of person who is likely to be interested in what is being advertised.\nFEMALE: Ragazzi, come festeggerete la fine della vostra vita scolastica? Finita la maturità dove andrete? Alla solita Costa d'Oro come tutti gli altri studenti? Se rispondete “No”, perché non considerate una vacanza alternativa ed emozionante? La nostra agenzia turistica organizza vacanze in campeggio nel nord del Queensland in una foresta tropicale – perfetta per i giovani avventurosi che amano il campeggio e che vogliono esplorare la foresta. Guardate il nostro sito web."
+  },
+  {
+   "id": "it202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "Explain why Lorena is finding it difficult to make a decision.\nMALE: Oh dio, Matteo ha appena chiamato dicendo che non può lavorare domenica a pranzo!\nFEMALE: Oh no!\nMALE: Un altro cameriere che non può lavorare questa domenica! Lorena, vuoi un turno in più?\nFEMALE: Vorrei aiutarti ma ho una lezione di yoga domenica pomeriggio.\nMALE: Per favore, adesso non ho abbastanza personale per servire ai tavoli e abbiamo tante prenotazioni.\nFEMALE: Lo so, ma ho lavorato ogni domenica per due mesi! Non vedo l'ora di avere un giorno libero!\nMALE: Sai che vieni pagata il doppio la domenica?\nFEMALE: Lo so e mi piacerebbe avere più soldi. . .\nMALE: E allora?\nFEMALE: Non lo so, ma voglio davvero fare yoga questo weekend!"
+  },
+  {
+   "id": "it202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Listen.\nFEMALE: Ciao Paolo!\nMALE: Ehi, Sara! hai visto la partita di calcio ieri sera?\nFEMALE: No, com'era?\nMALE: È stata fantastica! Sono andato allo stadio a vederla.\nFEMALE: Che bello!\nMALE: La mia squadra ha vinto! Dal vivo era ancora più bello!\nFEMALE: A me non piace il calcio, preferisco gli sport con i motori.\nMALE: Ah sì? Quali?\nFEMALE: Adoro le motociclette e le automobili. Sono la mia passione. Guardo tutte le gare!\nMALE: Non lo sapevo! Ma tu guidi?\nFEMALE: Certo! Voglio diventare pilota di Formula Uno professionista.\nMALE: Pilota?!\nFEMALE: Sì, sì. Mi alleno ogni settimana.\nMALE: Incredibile!\nFEMALE: È difficile, ma adoro questi sport!\n(a) Why was Paolo so happy about last night?\n(b) What does Paolo learn about Sara?"
+  },
+  {
+   "id": "it202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Explain the holiday preferences of both speakers.\nMALE: Melissa, allora prenotiamo la vacanza? Pensavo a dieci giorni al mare.\nFEMALE: Mmm . . . dieci giorni al mare . . . ma l'acqua è sempre fredda. Preferisco la campagna.\nMALE: Dai, Melissa, l'acqua non è fredda in estate e lo sai quanto mi piace fare surf.\nFEMALE: Il surf? Ma Adamo sei pazzo?\nMALE: Ma che dici? Il surf è un'ottima maniera per stare in forma ed è divertente. Magari vediamo tanti pesci, le tartarughe, i delfini . . .\nFEMALE: I delfini sì, ma se troviamo gli squali? Ho paura degli squali.\nMALE: Basta, Melissa! Ma che squali? Siamo in Italia!\nFEMALE: Adamo, la verità è che non ho mai fatto surf e non so neanche nuotare!\nMALE: Va bene, allora la vacanza al mare la facciamo l'anno prossimo, quest'anno andiamo in albergo in campagna. L'importante è stare insieme.\nFEMALE: Hai ragione, Adamo, mi piace passare il tempo con te. Forse se l'hotel ha una piscina mi puoi insegnare a nuotare."
+  },
+  {
+   "id": "it202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "What were the consequences of Giacomo's initial decision? Support your answer with reference to the text.\nFEMALE: Giacomo, com'è andata la serata con Elisa?\nMALE: Un disastro!\nFEMALE: Oh no, perché?\nMALE: Ieri sera ho deciso di non mettermi gli occhiali.\nFEMALE: Ma tu non ci vedi senza occhiali!\nMALE: Lo so, ma volevo essere più bello per Elisa!\nFEMALE: Che è successo?\nMALE: Prima di tutto ho preso l'autobus sbagliato perché senza occhiali non ho visto il numero.\nFEMALE: Oh no! Hai chiamato Elisa?\nMALE: Non potevo perché quando sono uscito da casa ho preso per errore il telefono di mia madre.\nFEMALE: E poi?\nMALE: Sono entrato nel ristorante sbagliato perché non ho letto bene il nome.\nFEMALE: Che confusione!\nMALE: Mi sono seduto e ho aspettato Elisa, ma Elisa non è mai arrivata perché era in un altro ristorante.\nFEMALE: Povera Elisa!\nMALE: Mentre aspettavo ho ordinato un bicchiere di vino, ma era costosissimo!\nFEMALE: E Perché hai ordinato un vino costoso?\nMALE: Non riuscivo a leggere i prezzi sul menù!\nFEMALE: E Elisa?\nMALE: Elisa è arrabbiatissima. Mi ha detto che sono uno stupido e che a lei i ragazzi con gli occhiali piacciono tanto!"
+  },
+  {
+   "id": "it202309",
+   "year": 2023,
+   "number": "9a",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Listen.\nMALE: Allora, che regaliamo a Olivia per il suo compleanno?\nFEMALE: Forse una bella maglietta o uno zaino nuovo? Ha bisogno di uno zaino per scuola. Che dici?\nMALE: Uno zaino? Ma che noia! Io pensavo a qualcosa di più interessante!\nFEMALE: Per esempio?\nMALE: Non so, due biglietti per il teatro o per un bel concerto! Può andare con un'amica o con suo fratello.\nFEMALE: Un concerto? Ma Olivia ha solo 16 anni.\nMALE: 16 anni è l'età perfetta per andare a un concerto. Olivia adora la musica e il suo sogno è di andare a un concerto. Potremmo andare tutti e fare una bella serata in famiglia. Sono anni che non vado a un concerto.\nFEMALE: È vero, non è mai stata a un concerto e la musica rock è la sua passione.\nMALE: Il suo gruppo preferito suona il mese prossimo.\nFEMALE: Le piacerebbe tanto vederli, ma i biglietti sono costosissimi.\nMALE: Lo so, ma Olivia è così brava, si merita un bel regalo. Ha preso bei voti a scuola e aiuta sempre i suoi fratelli...\nFEMALE: Perfetto!\n(a) The speakers are most likely to be Olivia's\nfriends.\nparents.\nsiblings.\nteachers."
+  },
+  {
+   "id": "it202310",
+   "year": 2023,
+   "number": "9b",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "MALE: Allora, che regaliamo a Olivia per il suo compleanno?\nFEMALE: Forse una bella maglietta o uno zaino nuovo? Ha bisogno di uno zaino per scuola. Che dici?\nMALE: Uno zaino? Ma che noia! Io pensavo a qualcosa di più interessante!\nFEMALE: Per esempio?\nMALE: Non so, due biglietti per il teatro o per un bel concerto! Può andare con un'amica o con suo fratello.\nFEMALE: Un concerto? Ma Olivia ha solo 16 anni.\nMALE: 16 anni è l'età perfetta per andare a un concerto. Olivia adora la musica e il suo sogno è di andare a un concerto. Potremmo andare tutti e fare una bella serata in famiglia. Sono anni che non vado a un concerto.\nFEMALE: È vero, non è mai stata a un concerto e la musica rock è la sua passione.\nMALE: Il suo gruppo preferito suona il mese prossimo.\nFEMALE: Le piacerebbe tanto vederli, ma i biglietti sono costosissimi.\nMALE: Lo so, ma Olivia è così brava, si merita un bel regalo. Ha preso bei voti a scuola e aiuta sempre i suoi fratelli...\nFEMALE: Perfetto!\n(b) What influences the speakers' choice of gift? Support your answer with reference to the text."
+  },
+  {
+   "id": "it202311",
+   "year": 2023,
+   "number": "10",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and answer.\nCiao, Isabella. Voglio vendere le ciliegie e i meloni che coltiva Papà. Lui ha tanta frutta in campagna. Domenica mattina c'è un mercato in piazza dove posso mettere una bancarella.\nHo bisogno del tuo aiuto! Mi puoi incontrare oggi pomeriggio al bar per aiutarmi a decidere i prezzi da mettere sui prodotti che voglio vendere?\nGrazie, amica mia!\nGiulio\n(a) How is Giulio planning to spend his Sunday?\n(b) What is Giulio asking Isabella to do?"
+  },
+  {
+   "id": "it202312",
+   "year": 2023,
+   "number": "11",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Read the text and answer.\nCiao Silvestro\nIndovina dove sono?! Sono a Gerace con la mia famiglia per un mese e mezzo. Siamo venuti per visitare i nonni e per passare insieme il Natale. Inoltre siamo qui perché vogliamo sciare sulle montagne italiane. Fa freddo, ma la neve è bellissima e come sai io adoro sciare! Insomma stiamo benissimo e i nonni sono felicissimi di vederci, ma non tutto è perfetto…\nI miei genitori vogliono festeggiare il capodanno a casa tutti insieme, cioè mangiare lenticchie e giocare a tombola tutta la sera! Che noia! Io invece, ho altri progetti: vorrei andare a una festa in discoteca con degli amici, ma i miei genitori non sono d'accordo e non mi permettono di andare. Che faccio?\nComunque, ho una bellissima idea. Ho deciso di tornare a Gerace l'anno prossimo a dicembre e cercare lavoro come istruttore di sci. Che figata! Sarebbe un sogno! Vieni con me? Ci divertiremo un mondo.\nCome stai? Come festeggerai il nuovo anno? Tutto bene a casa? Salutami tanto tua sorella.\nScrivimi presto e fammi sapere cosa pensi della mia idea.\nUn abbraccio e tanti auguri di buon anno nuovo!\nLuigi\n(a) Why is Luigi in Gerace?\n(b) Describe Luigi's problem.\n(c) Why is Luigi intending to go back to Gerace?"
+  },
+  {
+   "id": "it202313",
+   "year": 2023,
+   "number": "12",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Future plans and aspirations",
+   "text": "Read the text and answer.\nCari Follower,\nMetto questo post per raccontarvi le mie ultime notizie. Mi devo preparare per il mio appuntamento con Jamie stasera. Sono così emozionata di vederlo! Non vedo l'ora di mettermi le mie bellissime scarpe nuove e di ballare con lui. Ma prima vi devo raccontare cosa mi è successo oggi.\nChe giornata! Ho appena finito di lavorare. Oggi sono stata la babysitter del bambino dei miei vicini di casa per la prima volta. È stato divertente perché il bambino era bravo e abbiamo giocato tanto insieme senza problemi. I genitori erano così felici che mi hanno chiesto se posso lavorare ogni pomeriggio dalle 4 alle 6 e mi pagheranno molto bene. Mi piacerebbe tanto accettare, ma il problema è lo studio! Sarà possibile studiare e prendere un buon voto agli esami di maturità se lavoro così tanto? Per me la scuola è sempre stata importante e sono sempre andata bene.\nPerò voglio diventare maestra d'asilo e questa sarebbe una buona esperienza lavorativa. Inoltre, dopo la maturità voglio prendermi un anno sabbatico e viaggiare in Europa e costa molto!\nBeh, fatemi sapere che pensate!\nA presto!\n#Raffaella\n(a) Why is Raffaella excited about tonight?\n(b) Describe Raffaella's dilemma about the job offer she received. Support your answer with reference to the text."
+  },
+  {
+   "id": "it202314",
+   "year": 2023,
+   "number": "13",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Read the text and answer.\nCercasi casa vacanza\nCerchiamo un piccolo appartamento per tutto il mese di maggio. Io, mio marito e Polly (il nostro gatto) vogliamo affittare un appartamento nel centro di Firenze. Non abbiamo la macchina, allora deve essere vicino ai negozi e al trasporto pubblico. Il quartiere deve avere tanti ristoranti perché non ci piace cucinare. Vogliamo andare a ballare ogni sera fino a tardi, quindi sarebbe perfetto avere finestre e tende che si chiudono bene per dormire fino a tardi e non essere disturbati dal rumore e dalla luce.\nGrazie mille, Noemi\nAffittasi casa vacanza\nAffittiamo una bellissima casa nella campagna di Fiesole, a 10 chilometri da Firenze facilmente raggiungibile in autobus. Questa casa meravigliosa è disponibile per due settimane a maggio. È una casa grandissima e accogliente. La vostra privacy è garantita perché è lontana dal caos della città. Ci sono 4 camere da letto, 2 bagni e una cucina enorme e ben attrezzata dove potete preparare di tutto, anche le verdure che crescono fuori in giardino. Sarete circondati dalla natura con tanti uccelli che cantano la mattina presto. Un'ottima casa per chi vuole godersi l'alba. Gli animali domestici sono benvenuti.\nHow likely is it that Noemi will rent the advertised house? Support your answer with reference to the text."
+  },
+  {
+   "id": "it202315",
+   "year": 2023,
+   "number": "14",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and answer.\nCari studenti vincitori, ancora CONGRATULAZIONI! Come sapete, l'ambasciatore ha invitato la nostra classe di francese per festeggiare il nostro successo. Domani sarà una giornata meravigliosa! Finalmente andiamo all'ambasciata francese per ricevere il premio. Per arrivare in orario è necessario prendere il treno che parte alle 8:45. Ci dobbiamo quindi incontrare almeno 15 minuti prima davanti alla biglietteria della stazione Vinci dove comprerete il biglietto con i vostri soldi. È anche essenziale vestirsi elegantemente perché è un'occasione formale. Non voglio vedervi in scarpe da ginnastica o pantaloncini!\nDurante questa giornata indimenticabile, il nostro film, che ha vinto il concorso cinematografico annuale dell'ambasciata, sarà proiettato davanti all'ambasciatore e al suo personale. Dopo il film, un pranzo speciale sarà servito a mezzogiorno e riceverete un certificato e un regalo. Che onore!\nCi sarà anche l'opportunità di fare un tour del bellissimo palazzo antico e avrete il privilegio di scattare foto con il vostro cellulare se volete. Inoltre, potrete comprare prodotti tipici francesi come magliette sportive e profumi. Ricordate però che è vietato portare zaini nell'ambasciata. L'ultima cosa da non dimenticare è di portare le vostre lettere scritte per ringraziare l'ambasciatore.\n(a) When and where are the students meeting tomorrow morning?\n(b) Complete the table to show what students need to do for the event and provide reasons.\n(c) According to the teacher, why will this be a special day?"
+  },
+  {
+   "id": "it202316",
+   "year": 2023,
+   "number": "15",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Write a message for the school noticeboard inviting other students to join your club. Write approximately 50 words in ITALIAN."
+  },
+  {
+   "id": "it202317",
+   "year": 2023,
+   "number": "16",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Your best friend has decided to have a party to celebrate the end of Year 12. Write an email to him/her suggesting ideas for the party. Write approximately 75 words in ITALIAN."
+  },
+  {
+   "id": "it202318",
+   "year": 2023,
+   "number": "17",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "Recentemente hai cambiato scuola. Scrivi una pagina di diario dove descrivi le esperienze alla tua nuova scuola.\nYou have recently changed schools. Write a diary entry describing your experiences at your new school."
+  },
+  {
+   "id": "it202319",
+   "year": 2023,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Recentemente hai traslocato a un'altra città con la tua famiglia. Scrivi una pagina di diario dove descrivi le esperienze da quando hai traslocato.\nYou recently moved to a new city with your family. Write a diary entry describing your experiences since moving to the new city."
+  },
+  {
+   "id": "it202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "What is the purpose of this announcement?\nFEMALE: Cari studenti. Oggi la scuola finisce all'una e ci sono solo attività sportive."
+  },
+  {
+   "id": "it202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Why is Paolo leaving this message?\nMALE: Ciao Anna. Sono Paolo. Vuoi venire a cena a casa mia domani sera? I miei genitori ti vogliono conoscere."
+  },
+  {
+   "id": "it202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "What are the reasons Giulio wants to come back home?\nMALE: Ciao Gemma, sono Giulio.\nFEMALE: Ciao Giulio, come stai? Ti piace la tua vacanza in Italia?\nMALE: Sì, tutto bene, mi piace viaggiare in Italia, però voglio tornare a casa prima!\nFEMALE: Davvero? E perché?\nMALE: Voglio tornare a casa perché la mia mamma non sta bene e io sono preoccupato per lei, però so che andrà tutto bene.\nFEMALE: Ah mi dispiace.\nMALE: E poi… L'Italia è carissima. Tutto costa molto.\nFEMALE: Giulio, ho capito, allora ci vediamo quando torni."
+  },
+  {
+   "id": "it202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Future plans and aspirations",
+   "text": "Explain how Ilaria feels about her new job.\nFEMALE: Ciao Papà, ho una bella notizia. Mi hanno offerto il lavoro all'agenzia di viaggi.\nMALE: Ah brava Ilaria! Sei contenta?\nFEMALE: Sì Papà sono felicissima. Finalmente incontrerò persone nuove e sarà una bella esperienza.\nMALE: Tu Ilaria? Incontrare nuova gente? Parlare con persone nuove? Nuovi amici? Veramente?\nFEMALE: Sì… è vero Papà. Sono timida, non parlo molto. Non sarà facile all'inizio… Sono un po' preoccupata però allo stesso tempo non vedo l'ora di iniziare una nuova avventura.\nMALE: Mmmm… ok… e l'ufficio? È lontano da casa?\nFEMALE: No, Papà l'ufficio è vicinissimo… solo dieci minuti a piedi. Non devo prendere l'autobus. È fantastico!"
+  },
+  {
+   "id": "it202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "Listen.\nMALE: Buon pomeriggio, ragazzi e ragazze dell'anno 12!\nCONGRATULAZIONI!!\nPer festeggiare la fine degli esami di maturità, il preside invita voi e le vostre famiglie ad un picnic. Il picnic sarà sabato 11 dicembre dalle 12 alle 3. Venite al parco di fronte alla scuola! Ci saranno giochi e tanta musica. Dovete solo mandare un'email alla scuola per confermare la vostra presenza.\nWho is invited to this event?\nFill in the table with the relevant information (Purpose of event; Date and time; Location; Action required)."
+  },
+  {
+   "id": "it202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Explain why Matteo disagrees with his mother's suggestions.\nFEMALE: Matteo, hai comprato un regalo per tua cugina Alessia per il suo compleanno?\nMALE: No, Mamma, non ho ancora deciso cosa comprare ad Alessia per il suo compleanno.\nFEMALE: Matteo, perché non regali ad Alessia un libro? Un bel romanzo o un libro di avventura? Leggere è il suo passatempo, no?\nMALE: Mamma, ma oggi nessuno più legge libri. Ad Alessia non piace leggere. Lei passa il tempo sul cellulare – gioca ai videogiochi. Non penso che un libro sia un regalo veramente adatto per una ragazza giovane. Un libro è un regalo inutile.\nFEMALE: Allora, Matteo, compra ad Alessia un biglietto per il cinema!\nMALE: Il cinema? Ma che dici, Mamma? Nessuno più va al cinema! Noi ragazzi guardiamo i film online.\nFEMALE: Allora, un cellulare nuovo?\nMALE: Un cellulare? Un telefonino? Ma… Sei pazza? Costa troppo!"
+  },
+  {
+   "id": "it202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Future plans and aspirations",
+   "text": "How does the speaker try to persuade the audience? Support your answer with reference to the text.\nFEMALE: Buongiorno, studenti!\nVorreste fare un'esperienza all'estero dopo la scuola? Vi piacerebbe abitare in un nuovo paese per qualche mese? Oggi voglio parlarvi dell'anno sabbatico. Tutti voi dovete farlo!\nNon ve ne pentirete!\nL'anno scorso io ho deciso di abitare in Cina e i vantaggi sono stati numerosi. Per me trascorrere un anno sabbatico è stata la migliore decisione della mia vita perché in Cina ho migliorato il mio cinese e adesso parlo benissimo questa lingua. Lì ho anche imparato le arti marziali che adesso adoro.\nStudenti! Prendete un anno sabbatico alla fine della scuola! Ve lo consiglio molto. Dopo questo viaggio io mi sento più sicura di me perché adesso posso comunicare con la gente di tutte le età.\nStudenti, prendete un anno sabbatico, ve lo raccomando! Se amate cucinare, potreste fare dei corsi di cucina tradizionale del posto. Io l'ho fatto, ho imparato a cucinare cibo cinese e ne sono contentissima!\nOgni anno ci sono delle opportunità per andare in paesi diversi. Non perdete questa occasione! Ne vale veramente la pena."
+  },
+  {
+   "id": "it202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "How likely is it that Isabella will be offered this job? Support your answer with reference to the text.\nMALE: Ciao Isabella. Grazie per essere venuta a questo colloquio. Cerco una ragazza che possa occuparsi dei nostri animali domestici durante le vacanze di Natale per tre settimane. Allora, ti faccio qualche domanda. Studi o lavori?\nFEMALE: Studio a tempo pieno, per diventare un veterinario. Sono specializzata in animali domestici come gatti, cani, conigli, uccelli.\nMALE: Perfetto. Noi abbiamo due cani e tre gatti. Hai esperienza in questo campo?\nFEMALE: Sì, certo. Ho molta esperienza con gli animali. Sono cresciuta con tanti animali. I miei genitori hanno sempre avuto cani e gatti in casa.\nMALE: Benissimo e… hai fatto questo tipo di lavoro per altre famiglie? E quando hai iniziato?\nFEMALE: Allora, da bambina, portavo al parco il cane del vicino di casa ogni pomeriggio dopo scuola, e adesso, da quando frequento l'università, lo faccio durante le vacanze. Inoltre, ogni fine settimana, se le persone del mio quartiere ne hanno bisogno, io sono disponibile a tenere i loro animali domestici nel mio giardino a un costo basso. Ho anche un sito web per promuovere questo mio lavoretto che infatti è una passione per me.\nMALE: Benissimo allora, hai addirittura un sito web? Quindi sei proprio appassionata degli animali!\nFEMALE: Sì sì li adoro!\nMALE: Sei libera a dicembre durante le vacanze di Natale?\nFEMALE: Sì sono liberissima!\nMALE: Grazie, Isabella, ti farò sapere al più presto."
+  },
+  {
+   "id": "it202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Compare Laura's and Alberto's points of view on the topic being discussed.\nMALE: Ehi Laura, vorrei comprare una macchina.\nFEMALE: Una macchina? Perché?\nMALE: Posso usare la macchina per andare all'università. Pensa che libertà! Non sarò dipendente dai mezzi pubblici.\nFEMALE: Mmmmm… Una macchina? La macchina, la devi parcheggiare e qui in centro, vicino all'università un parcheggio costa tantissimo.\nMALE: Ma Laura, io ho sempre voluto una macchina.\nFEMALE: Alberto, il parcheggio costa molto e c'è sempre traffico. Comprare una macchina non è proprio una buona idea!\nMALE: Ma Laura, con una macchina io sarò autonomo.\nFEMALE: Alberto, non comprare una macchina! Perché invece non compri una bicicletta?\nMALE: Una bicicletta?\nFEMALE: Sì, compra una bicicletta. La zona dove tu abiti è ben collegata e tu ci metti solo 20 minuti ad arrivare all'università da casa tua. Il parcheggio delle biciclette è gratis.\nMALE: Sì è vero, ma a me la bicicletta non mi piace proprio.\nFEMALE: Pensa che se vai all'università in bicicletta ogni giorno potresti mantenerti in forma.\nMALE: Laura, io vado in palestra ogni giorno, non ho bisogno di fare altro sport per mantenermi in forma."
+  },
+  {
+   "id": "it202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Read the text and answer.\nLa recensione “Limonello”\nPiù limone meno zucchero\nHo provato il Limonello, una bevanda frizzante, analcolica e dissetante. È ideale per le persone sportive come me. È perfetta dopo qualsiasi allenamento.\n(a) What is being reviewed?\n(b) Outline why the reviewer enjoyed this product."
+  },
+  {
+   "id": "it202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Read the text and answer.\nTrattoria Italiana\nAperto tutti i giorni\nSiete in vacanza a Tokyo e non volete mangiare cibo giapponese? Avete voglia di un piatto di pasta? Si consiglia la prenotazione perché il locale è piccolino. Se seguite una dieta particolare, vi preghiamo di comunicarcelo in anticipo.\n(a) Who is the target audience of this advertisement?\n(b) What advice is given to people who want to attend this venue?"
+  },
+  {
+   "id": "it202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and answer.\nCiao Loredana,\nSono a Bari! Sono arrivata ieri con la mia famiglia e la città mi piace un sacco.\nSono qui per visitare l'università perché dopo la scuola ci tornerò a studiare.\nSono contentissima, ma so che litigherò con i miei genitori quando l'anno prossimo dovrò scegliere l'alloggio.\nI miei genitori vogliono che io abiti con la mia famiglia italiana, cioè con zia Rosanna, nella casetta in periferia di Bari, con i suoi due bambini piccoli e… 5 gatti! Mamma mia! Sai quanto odio i gatti e sai anche che non ho pazienza con i bambini piccoli. Li trovo fastidiosi. Quindi come puoi ben immaginare, sono molto contraria a questa idea!\nVoglio affittare una stanza vicino all'università, al centro di Bari, con delle studentesse della mia età, con gli stessi miei interessi.\nMamma e Papà non saranno mai d'accordo.\nCome faccio a convincerli?\nLunedì prossimo finalmente andrò a Lecce in treno per incontrare Piero – lui mi manca tantissimo. Non vedo l'ora di mangiare “il pasticciotto”, il tipico dolce di Lecce. Che buono!!!\nMarinella\n(a) Why is Marinella in Bari?\n(b) Explain why Marinella is unhappy with her parents' suggestion.\n(c) Why is Marinella looking forward to going to Lecce?"
+  },
+  {
+   "id": "it202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Read the text and answer.\nCiao Gabriele,\nTi scrivo perché ho bisogno di un consiglio. Voglio trovare un hobby che mi piaccia veramente.\nHo cercato di fare un po' di giardinaggio, ma a quanto pare non ho il pollice verde. Non mi ricordo mai quando devo annaffiare i fiori, anche se la natura mi piace moltissimo.\nHo provato a dipingere, ma la pittura sembra un'attività solitaria e richiede un talento che non ho. Vorrei fare qualcosa in compagnia, magari con un gruppo di amici o con la mia famiglia.\nInoltre, per le vacanze di Natale, vado in campeggio con Lucia per tre giorni? Vuoi venire?\nFabiana\nCiao Fabiana,\nVorrei venire con voi, però a Natale sono in Italia!\nDa quest'anno, il fine settimana ho cominciato ad uscire con la mia famiglia, specialmente con i nonni che sono appassionati della natura e degli animali. Camminiamo nel bosco, in montagna o nel parco. Osserviamo gli uccelli selvatici negli ambienti naturali. Il tempo che trascorriamo insieme, all'aria aperta è prezioso. Fa bene alla salute e rinforza i nostri rapporti.\nEcco, osservare gli uccelli è il passatempo che ti consiglierei!\nGabriele\n(a) Why is Fabiana writing to Gabriele?\n(b) How likely is it that Fabiana will follow Gabriele's advice? Support your answer with reference to the text."
+  },
+  {
+   "id": "it202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and answer.\n10 dicembre 2024\nCarissimi genitori,\nSono il Signor Rossi, Preside di questo liceo.\nHo deciso che l'uso dei telefonini è proibito a scuola, da gennaio 2025.\nInoltre ho deciso che la pausa pranzo sarà più lunga.\nI motivi che mi hanno portato a prendere queste decisioni sono tanti.\nÈ stato notato che a causa dell'uso del cellulare a scuola i voti degli studenti sono peggiorati.\nL'attenzione durante le lezioni è diminuita per non parlare dell'assenza dell'attività fisica durante la ricreazione e pranzo, visto che gli studenti preferiscono usare il loro cellulare invece di sfruttare l'opportunità di fare sport offerta dagli insegnanti di educazione fisica.\nIl bullismo è stato un problema grandissimo a scuola nel 2024, quindi proibire l'uso dei cellulari durante la giornata scolastica, ci aiuterà a combattere l'aumento dei casi.\nIn più quest'anno ho notato che gli studenti preferiscono il cellulare a una conversazione faccia a faccia con i loro coetanei.\nDa gennaio la pausa pranzo durerà un'ora per incoraggiare le attività sportive e rinforzare i rapporti sociali tra i ragazzi, senza i cellulari.\nI telefonini devono essere lasciati nello zaino prima di andare in classe.\nTanti studenti hanno perso il loro cellulare quest'anno o addirittura gli è stato rubato. Quindi se gli studenti non lo usano, questo non succederà.\nIl Preside\n(a) When will the changes be made?\n(b) Explain why the principal has made these decisions."
+  },
+  {
+   "id": "it202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Read the text and answer.\nE all'improvviso tutto si colora di viola\nDa un giorno all'altro, in primavera gli alberi di jacaranda in Australia sbocciano nel loro favoloso colore viola. Le città non si riconoscono più, cambiano completamente aspetto. Questi alberi stupendi fioriscono da ottobre fino a metà novembre. Alcuni posti dove potete ammirarli sono Sydney, Brisbane e Grafton. La vista delle jacaranda offre uno spettacolo mozzafiato!\nEcco cosa fare durante questo periodo primaverile magico nelle città australiane.\nSydney offre una vivace vita notturna con numerosi bar, discoteche, ristoranti e locali diversi. È una città ideale per i giovani che hanno voglia di divertirsi fino a notte fonda e ammirare i fuochi d'artificio nella baia. Molte jacaranda sono piantate nella baia offrendo un bellissimo panorama di colore viola!\nSe siete in vacanza con i vostri figli potete visitare South Bank Parklands a Brisbane. Questo parco lungo il fiume è un luogo ideale perché offre una pista ciclabile e delle giostre per i piccoli e una zona bbq per i grandi. Rilassatevi all'ombra di una jacaranda, mentre i vostri bambini giocano all'aperto.\nTra le bellezze australiane c'è anche la cittadina di Grafton con i suoi maestosi alberi viola. Ogni primavera il Comune di Grafton organizza un evento dedicato ai pensionati. Si tratta di un tour in autobus per visitare un museo delle macchine d'epoca. Anche qui il paesaggio si colora di queste sfumature lilla.\n(a) Why is this an appropriate title for the article?\n(b) Fill in the table by listing the group of people who would choose to visit each place and give a reason for their choice."
+  },
+  {
+   "id": "it202416",
+   "year": 2024,
+   "number": "16",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Tomorrow you will be meeting your Italian exchange student for the first time. Write a message to them, arranging the meeting and telling them how you can be recognised. Write approximately 50 words in ITALIAN."
+  },
+  {
+   "id": "it202417",
+   "year": 2024,
+   "number": "17",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "You are on a holiday and yesterday you ate something delicious at a restaurant. Write a postcard to your Italian aunt, telling her about your experience. Write approximately 75 words in ITALIAN."
+  },
+  {
+   "id": "it202418",
+   "year": 2024,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Il tuo club vuole attirare nuovi soci. Scrivi un articolo per il giornale locale per promuovere il club e descrivere i benefici di essere socio.\nYour community club is looking to attract new members. Write an article for the local newspaper to promote your club and describe the benefits of being a member."
+  },
+  {
+   "id": "it202419",
+   "year": 2024,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Education and work",
+   "text": "La tua scuola australiana vuole attrarre studenti di scambio dall'Italia. Scrivi un articolo per un sito di scambio di studi in cui promuovi la tua scuola e quello che potrebbe offrire.\nYour school in Australia wants to attract exchange students from Italy. Write an article for a school exchange website promoting your school and what it can offer."
+  },
+  {
+   "id": "it202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Which picture matches the description of Coco?\nTranscript:\nMALE: Ciao Angela, perché sei qui al parco?\nFEMALE: Marco, ho perso Coco.\nMALE: Oh no! Il tuo cane?\nFEMALE: No, Coco è il mio gatto! È piccolo e bianco.\nMALE: Ah ok… Tutto bianco?\nFEMALE: No, Coco ha le orecchie nere.\nSee the examination paper for pictures A–D.\nPicture A\nPicture B\nPicture C\nPicture D"
+  },
+  {
+   "id": "it202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "Why does Luca NOT want to go to the library?\nTranscript:\nMALE: Ciao Isabella, mi dispiace oggi non vengo in biblioteca perché fa caldo e splende il sole. Dai, vieni con me in spiaggia! Possiamo studiare domani."
+  },
+  {
+   "id": "it202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Why is the mother happy?\nTranscript:\nMALE: Ah Mamma sei finalmente tornata dal lavoro!\nFEMALE: Sì Paolo, sono stanchissima. Mmmmm… che buon odore!\nMALE: Sì, ti ho preparato la cena.\nFEMALE: Paolo, grazie!\nMALE: Ed è il tuo piatto preferito.\nFEMALE: Ma, che bella sorpresa!"
+  },
+  {
+   "id": "it202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Listen to the conversation.\nTranscript:\nFEMALE: Scusi, devo comprare della frutta e verdura fresca, dov'è un fruttivendolo qui in zona?\nMALE: Veramente non c'è. Ma il supermercato è qui vicino.\nFEMALE: Perfetto! Perché ho bisogno anche dello zucchero per fare una torta.\nMALE: Il supermercato è in Via Manzoni accanto al cinema.\nFEMALE: Ah bene!\nMALE: Il supermercato è all'angolo di fronte al parco.\nWhat items does the female speaker need?\nWhere is the supermarket located?\nOptions: A W B X C Y D Z\nW\nX\nY\nZ"
+  },
+  {
+   "id": "it202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "What kind of person is Nicolò? Support your answer with reference to the text.\nTranscript:\nFEMALE: Mamma mia, Nicolò! Che disastro!\nMALE: Susanna, non vedi che sto facendo le statue?\nFEMALE: Le statue? Che statue? Di terracotta? Ma sei bravissimo, sei un vero artista.\nMALE: Grazie.\nFEMALE: Farai carriera e diventerai ricco.\nMALE: Venderò le mie statue, ma darò i soldi in beneficenza, farò una donazione.\nFEMALE: Donerai tutti i soldi? Sei un angelo, che bel gesto."
+  },
+  {
+   "id": "it202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "Advertisement for a course.\nTranscript:\nFEMALE: Salve ragazzi e ragazze dell'anno dodici. Avete appena finito la maturità e siete stanchissimi fisicamente e mentalmente dopo tutti questi anni di studi?\nVenite a nutrire il vostro corpo e la vostra mente a “Anima Nuova”. Questo centro benessere offre corsi di meditazione quindi imparerete la filosofia e i principi della meditazione per poter gestire lo stress. Inoltre, “Anima Nuova” dà lezioni di cucina vegetariana dove imparerete a cucinare piatti vegetariani nutrienti.\nWho is the target audience of this advertisement?\nWhat will attendees learn at this course?"
+  },
+  {
+   "id": "it202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Fill in the table with the relevant information.\nTranscript:\nMALE: Attenzione viaggiatori!\nBenvenuti all'aeroporto di Roma. Ecco gli annunci di oggi domenica 23 marzo.\nIl volo ARM 827 per Napoli è in ritardo. La causa di questo ritardo è l'arrivo della squadra nazionale di pallavolo. Purtroppo, i tifosi hanno creato un grande problema. Infatti, tante persone che amano questa squadra hanno bloccato l'entrata dell'aeroporto."
+  },
+  {
+   "id": "it202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "How likely is it that Salvatore will go to the concert tonight? Support your answer with reference to the text.\nTranscript:\nFEMALE: Allora, Salvatore, vai al concerto allo stadio stasera?\nMALE: Veramente non mi sento bene, ho il raffreddore.\nFEMALE: Ma ci devi andare! Ci sarà Rosanna al concerto, Salvatore! Tu sei innamorato perso di lei…\nMALE: Sì, lo so, adoro Rosanna. Però lo stadio è lontano da casa mia.\nFEMALE: Ma dai, prendi un taxi.\nMALE: Un taxi? Sei pazza? Il taxi costa tantissimo soprattutto il weekend.\nFEMALE: Vabbè, peccato.\nMALE: Poi è un concerto di musica rock, e lo sai che io amo solo la musica jazz.\nFEMALE: Oh, tu e la tua musica jazz, che fissazione!"
+  },
+  {
+   "id": "it202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "How useful is Claudio's advice to Sandra? Support your answer with reference to the text.\nTranscript:\nMALE: Ma quanti vestiti bellissimi in questo negozio, Sandra. Provati il vestito rosa, quello lungo.\nFEMALE: Oh è stupendo! Ma guarda quanto costa! Quattrocento dollari!\nMALE: Mamma mia! È ridicolo perché lo indosserai solo un paio di ore alla festa di fine anno scolastico e mai più!\nFEMALE: Lo so, Claudio, ma come faccio? È la festa di fine anno e io voglio essere bella.\nMALE: Ma scusa Sandra, tu e la tua amica Lisa portate la stessa taglia e vi piacciono anche gli stessi vestiti.\nFEMALE: Sì, è vero! Io e Lisa siamo tutte e due alte e magre e ci piace il color rosa, proprio come questo vestito rosa e lungo.\nMALE: E andate a scuole diverse, vero?\nFEMALE: Esatto! Non frequentiamo la stessa scuola.\nMALE: Ma allora ho trovato una soluzione! Tu indosserai il vestito alla tua festa di fine anno venerdì sera, poi lo lavi e Lisa lo indosserà alla sua festa la settimana dopo.\nFEMALE: Che idea geniale, Claudio!\nMALE: Così vi costerà solo la metà. Figo no? Vai a provarlo. Faccio una foto per Lisa."
+  },
+  {
+   "id": "it202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "Compare the speakers' points of view.\nTranscript:\nMALE: Manuela, ma l'anno prossimo vai in Germania con la scuola?\nFEMALE: No Papà, non vado più in gita in Germania perché ho deciso di non studiare più il tedesco.\nMALE: Ma non è la tua materia preferita?\nFEMALE: Non voglio più studiare il tedesco perché il mio nuovo professore è antipatico e severo.\nMALE: Studi questa lingua da tanti anni e sei bravissima, Manuela.\nFEMALE: Veramente ho preso un brutto voto quest'anno.\nMALE: Beh, forse dovresti studiare di più, sei diventata pigra a scuola. Non ti concentri abbastanza. Fai i compiti, studia per gli esami e vedi che i tuoi voti miglioreranno. Impegnati!\nFEMALE: No, ho deciso. Basta! Niente più tedesco.\nMALE: È un peccato non andare in gita in Germania, era il tuo sogno visitare Berlino.\nFEMALE: Hai ragione Papà, ma posso andarci da sola quando finisco la scuola."
+  },
+  {
+   "id": "it202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Education and work",
+   "text": "Read the text and then answer the question that follows.\nCiao Anastasia,\nVieni a lavorare oggi al negozio? Spero di sì perché mi piace tanto lavorare con te. Ci divertiamo un sacco insieme.\nSì Valeria, che bello! Lavori anche tu? Certo che vengo perché oggi è sabato e ci pagano doppio.\nWhy are the girls looking forward to going to work today?"
+  },
+  {
+   "id": "it202512",
+   "year": 2025,
+   "number": "12a",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Read the text and then answer the question that follows.\nRicetta\n1. Friggete il salmone per tre minuti.\n2. Tagliate le patate a pezzi piccoli.\n3. Aggiungete pinoli, mandorle e uova.\n4. Mettete tutti gli ingredienti in una teglia e cuocete in forno per 40 minuti.\n5. Tagliate a fette e servite freddo.\nQuesto è un ottimo piatto tradizionale dell'Italia meridionale perfetto per le serate in famiglia, soprattutto nei mesi più caldi.\n(a) What is the most likely name of this recipe?\nAlmond cake\nSavoury slice\nSeafood salad\nVegetable soup"
+  },
+  {
+   "id": "it202513",
+   "year": 2025,
+   "number": "12b",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / People, places and communities",
+   "text": "Same recipe text. When is the ideal time to enjoy this dish?"
+  },
+  {
+   "id": "it202514",
+   "year": 2025,
+   "number": "13a",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Read the text and then answer the question.\nChi è Renzo? Renzo è un ragazzo italiano di 18 anni che, appena ha finito la maturità, ha deciso di realizzare il suo desiderio di viaggiare intorno al mondo. Infatti Renzo è già riuscito a visitare 53 Paesi diversi e spera di visitarne tanti altri.\nMa il modo di viaggiare di Renzo è un po' particolare. Questo ragazzo infatti è un ambientalista e non vuole contribuire all'inquinamento, quindi viaggia solo a piedi, in treno e in bici. Cosa porta con sé? Solamente uno zaino e un sacco a pelo. Il suo modo di scoprire il mondo è originale anche per questo. Infatti Renzo dorme solo a terra nel suo sacco a pelo e mai in un letto. Renzo non passa mai più di 3 giorni in una sola città muovendosi di continuo.\nIl ragazzo ha conosciuto tanti posti e persone interessanti, ma adesso non vede l'ora di rincontrare tutti i suoi amici in Italia. Inoltre, Renzo ha l'intenzione di iscriversi all'università e studiare geografia dell'ambiente.\n(a) What is unusual about the way Renzo travels? Support your answer with reference to the text."
+  },
+  {
+   "id": "it202515",
+   "year": 2025,
+   "number": "13b",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Chi è Renzo? Renzo è un ragazzo italiano di 18 anni che, appena ha finito la maturità, ha deciso di realizzare il suo desiderio di viaggiare intorno al mondo. Infatti Renzo è già riuscito a visitare 53 Paesi diversi e spera di visitarne tanti altri.\nMa il modo di viaggiare di Renzo è un po' particolare. Questo ragazzo infatti è un ambientalista e non vuole contribuire all'inquinamento, quindi viaggia solo a piedi, in treno e in bici. Cosa porta con sé? Solamente uno zaino e un sacco a pelo. Il suo modo di scoprire il mondo è originale anche per questo. Infatti Renzo dorme solo a terra nel suo sacco a pelo e mai in un letto. Renzo non passa mai più di 3 giorni in una sola città muovendosi di continuo.\nIl ragazzo ha conosciuto tanti posti e persone interessanti, ma adesso non vede l'ora di rincontrare tutti i suoi amici in Italia. Inoltre, Renzo ha l'intenzione di iscriversi all'università e studiare geografia dell'ambiente.\n(b) How likely is it that Renzo will continue travelling? Support your answer with reference to the text."
+  },
+  {
+   "id": "it202516",
+   "year": 2025,
+   "number": "13c",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Chi è Renzo? Renzo è un ragazzo italiano di 18 anni che, appena ha finito la maturità, ha deciso di realizzare il suo desiderio di viaggiare intorno al mondo. Infatti Renzo è già riuscito a visitare 53 Paesi diversi e spera di visitarne tanti altri.\nMa il modo di viaggiare di Renzo è un po' particolare. Questo ragazzo infatti è un ambientalista e non vuole contribuire all'inquinamento, quindi viaggia solo a piedi, in treno e in bici. Cosa porta con sé? Solamente uno zaino e un sacco a pelo. Il suo modo di scoprire il mondo è originale anche per questo. Infatti Renzo dorme solo a terra nel suo sacco a pelo e mai in un letto. Renzo non passa mai più di 3 giorni in una sola città muovendosi di continuo.\nIl ragazzo ha conosciuto tanti posti e persone interessanti, ma adesso non vede l'ora di rincontrare tutti i suoi amici in Italia. Inoltre, Renzo ha l'intenzione di iscriversi all'università e studiare geografia dell'ambiente.\n(c) Choose the most appropriate title for this article.\nA sedentary life\nA dream come true\n53 cities in 3 months\nA mature age travel student"
+  },
+  {
+   "id": "it202517",
+   "year": 2025,
+   "number": "14a",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Read the text and answer.\nOrnella_siri: Buongiorno a tutti! Sono una mamma di due gemelli di dieci anni e la mia domanda oggi è avere animali domestici in casa o no? I miei bambini vogliono un gatto o un coniglio. Io lavoro a tempo pieno e abito in centro in un appartamento con poco spazio, senza balconi. Mio marito viaggia spesso e non aiuta a casa.\nGiuliano#N: Penso che avere un animale a casa sia un'idea fantastica. Prendi un Husky! Sono stupendi cani grandi! Basta portarli fuori casa tre o quattro volte al giorno. Hanno bisogno di compagnia e amano correre in giardino. Ideali per i tuoi bambini.\nMarcella70: Gli animali sono straordinari, io li amo tutti ma perché non prendi un serpente invece del tipico animale domestico, cane o gatto? I rettili sono gli animali per te! Quando abitavo nella giungla in America Centrale ho imparato ad amare queste creature così affascinanti. Oppure un'iguana come quelle che ho incontrato nel deserto africano… O meglio ancora un camaleonte delle isole asiatiche, ero lì dieci anni fa su un'isola deserta quando nuotavo con gli squali. Questi sì che sono animali perfetti per i tuoi ragazzi perché insegnano la responsabilità.\nRoberto_fifa: Ma non ci pensare proprio! Che schifo! Gli animali portano solo germi e malattie. Io non apro neanche le finestre perché ho paura delle farfalle. Odio talmente gli animali e gli insetti che non esco mai di casa. Gli animali sono una perdita di tempo, i bambini a quell'età devono solo studiare, non giocare con animali sporchi.\n(a) Why is Giuliano's advice NOT relevant to Ornella? Support your answer with reference to the text."
+  },
+  {
+   "id": "it202518",
+   "year": 2025,
+   "number": "14b",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Ornella_siri: Buongiorno a tutti! Sono una mamma di due gemelli di dieci anni e la mia domanda oggi è avere animali domestici in casa o no? I miei bambini vogliono un gatto o un coniglio. Io lavoro a tempo pieno e abito in centro in un appartamento con poco spazio, senza balconi. Mio marito viaggia spesso e non aiuta a casa.\nGiuliano#N: Penso che avere un animale a casa sia un'idea fantastica. Prendi un Husky! Sono stupendi cani grandi! Basta portarli fuori casa tre o quattro volte al giorno. Hanno bisogno di compagnia e amano correre in giardino. Ideali per i tuoi bambini.\nMarcella70: Gli animali sono straordinari, io li amo tutti ma perché non prendi un serpente invece del tipico animale domestico, cane o gatto? I rettili sono gli animali per te! Quando abitavo nella giungla in America Centrale ho imparato ad amare queste creature così affascinanti. Oppure un'iguana come quelle che ho incontrato nel deserto africano… O meglio ancora un camaleonte delle isole asiatiche, ero lì dieci anni fa su un'isola deserta quando nuotavo con gli squali. Questi sì che sono animali perfetti per i tuoi ragazzi perché insegnano la responsabilità.\nRoberto_fifa: Ma non ci pensare proprio! Che schifo! Gli animali portano solo germi e malattie. Io non apro neanche le finestre perché ho paura delle farfalle. Odio talmente gli animali e gli insetti che non esco mai di casa. Gli animali sono una perdita di tempo, i bambini a quell'età devono solo studiare, non giocare con animali sporchi.\n(b) Compare Marcella's and Roberto's attitudes."
+  },
+  {
+   "id": "it202519",
+   "year": 2025,
+   "number": "15a",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Read the text and answer.\nBenvenuti al programma.\nOggi abbiamo ospite Margherita Campanella una donna coraggiosa che ha deciso di cambiare non solo carriera ma anche continente. A 55 anni Margherita ha scelto di lasciare l'Australia per trasferirsi a Valpolicella in provincia di Verona in Italia. A fare che? Lo scopriremo insieme.\nGIORGIO: Salve Margherita, allora dicci come ti è venuta questa idea? E che cosa farai a Valpolicella?\nMARGHERITA: Caro Giorgio, allora… non sono mai stata in Italia però ho delle lontanissime origini italiane e quindi ho sempre desiderato andarci.\nPoi, l'anno scorso ho perso il mio lavoro, la società per la quale lavoravo è fallita quindi invece di trovare un altro lavoro, io e mio marito Hector abbiamo pensato di realizzare il nostro sogno di vivere in Europa. Non si è mai troppo vecchi per fare pazzie!\nAbbiamo venduto la nostra casa e la nostra macchina e adesso stiamo cercando una fattoria da trasformare in agriturismo.\nGIORGIO: Agriturismo, che cos'è?\nMARGHERITA: Un grande casolare dove possiamo coltivare le nostre verdure, avere le nostre galline e uova fresche e usare questi prodotti naturali per creare ricette che useremo nel nostro ristorante. Tornare alle origini in tutti i sensi.\nGIORGIO: Ma sapete già parlare italiano?\nMARGHERITA: No, abbiamo intenzione di frequentare un corso di lingua italiana.\nGIORGIO: Ah! Che bello!\nMARGHERITA: Sarà un ritrovo per gli abitanti del luogo e una meta turistica per i viaggiatori. Una grande famiglia!\nNon rinneghiamo e non dimentichiamo le nostre origini australiane. La nostra specialità sarà la Pavlova australiana fatta con le uova delle nostre galline italiane, le fragole e i mirtilli del nostro bosco ma seguendo la ricetta australiana. Insomma un pezzo di casa lontano da casa.\nGIORGIO: Tornerete in Australia?\nMARGHERITA: Mai dire mai, forse un giorno quando avremo nipotini.\nGIORGIO: Buona fortuna e magari ci vediamo qui in studio fra 5 anni.\n(a) Why did Margherita decide to move to Italy?"
+  },
+  {
+   "id": "it202520",
+   "year": 2025,
+   "number": "15b",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Benvenuti al programma.\nOggi abbiamo ospite Margherita Campanella una donna coraggiosa che ha deciso di cambiare non solo carriera ma anche continente. A 55 anni Margherita ha scelto di lasciare l'Australia per trasferirsi a Valpolicella in provincia di Verona in Italia. A fare che? Lo scopriremo insieme.\nGIORGIO: Salve Margherita, allora dicci come ti è venuta questa idea? E che cosa farai a Valpolicella?\nMARGHERITA: Caro Giorgio, allora… non sono mai stata in Italia però ho delle lontanissime origini italiane e quindi ho sempre desiderato andarci.\nPoi, l'anno scorso ho perso il mio lavoro, la società per la quale lavoravo è fallita quindi invece di trovare un altro lavoro, io e mio marito Hector abbiamo pensato di realizzare il nostro sogno di vivere in Europa. Non si è mai troppo vecchi per fare pazzie!\nAbbiamo venduto la nostra casa e la nostra macchina e adesso stiamo cercando una fattoria da trasformare in agriturismo.\nGIORGIO: Agriturismo, che cos'è?\nMARGHERITA: Un grande casolare dove possiamo coltivare le nostre verdure, avere le nostre galline e uova fresche e usare questi prodotti naturali per creare ricette che useremo nel nostro ristorante. Tornare alle origini in tutti i sensi.\nGIORGIO: Ma sapete già parlare italiano?\nMARGHERITA: No, abbiamo intenzione di frequentare un corso di lingua italiana.\nGIORGIO: Ah! Che bello!\nMARGHERITA: Sarà un ritrovo per gli abitanti del luogo e una meta turistica per i viaggiatori. Una grande famiglia!\nNon rinneghiamo e non dimentichiamo le nostre origini australiane. La nostra specialità sarà la Pavlova australiana fatta con le uova delle nostre galline italiane, le fragole e i mirtilli del nostro bosco ma seguendo la ricetta australiana. Insomma un pezzo di casa lontano da casa.\nGIORGIO: Tornerete in Australia?\nMARGHERITA: Mai dire mai, forse un giorno quando avremo nipotini.\nGIORGIO: Buona fortuna e magari ci vediamo qui in studio fra 5 anni.\n(b) What does Margherita plan to do once she is in Italy? Support your answer with reference to the text."
+  },
+  {
+   "id": "it202521",
+   "year": 2025,
+   "number": "15c",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Benvenuti al programma.\nOggi abbiamo ospite Margherita Campanella una donna coraggiosa che ha deciso di cambiare non solo carriera ma anche continente. A 55 anni Margherita ha scelto di lasciare l'Australia per trasferirsi a Valpolicella in provincia di Verona in Italia. A fare che? Lo scopriremo insieme.\nGIORGIO: Salve Margherita, allora dicci come ti è venuta questa idea? E che cosa farai a Valpolicella?\nMARGHERITA: Caro Giorgio, allora… non sono mai stata in Italia però ho delle lontanissime origini italiane e quindi ho sempre desiderato andarci.\nPoi, l'anno scorso ho perso il mio lavoro, la società per la quale lavoravo è fallita quindi invece di trovare un altro lavoro, io e mio marito Hector abbiamo pensato di realizzare il nostro sogno di vivere in Europa. Non si è mai troppo vecchi per fare pazzie!\nAbbiamo venduto la nostra casa e la nostra macchina e adesso stiamo cercando una fattoria da trasformare in agriturismo.\nGIORGIO: Agriturismo, che cos'è?\nMARGHERITA: Un grande casolare dove possiamo coltivare le nostre verdure, avere le nostre galline e uova fresche e usare questi prodotti naturali per creare ricette che useremo nel nostro ristorante. Tornare alle origini in tutti i sensi.\nGIORGIO: Ma sapete già parlare italiano?\nMARGHERITA: No, abbiamo intenzione di frequentare un corso di lingua italiana.\nGIORGIO: Ah! Che bello!\nMARGHERITA: Sarà un ritrovo per gli abitanti del luogo e una meta turistica per i viaggiatori. Una grande famiglia!\nNon rinneghiamo e non dimentichiamo le nostre origini australiane. La nostra specialità sarà la Pavlova australiana fatta con le uova delle nostre galline italiane, le fragole e i mirtilli del nostro bosco ma seguendo la ricetta australiana. Insomma un pezzo di casa lontano da casa.\nGIORGIO: Tornerete in Australia?\nMARGHERITA: Mai dire mai, forse un giorno quando avremo nipotini.\nGIORGIO: Buona fortuna e magari ci vediamo qui in studio fra 5 anni.\n(c) Explain the statement 'un pezzo di casa lontano da casa'."
+  },
+  {
+   "id": "it202522",
+   "year": 2025,
+   "number": "16",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Friends, recreation and pastimes",
+   "text": "You are hosting a dress-up party. Write a note to invite your friend to the party. Write approximately 50 words in ITALIAN."
+  },
+  {
+   "id": "it202523",
+   "year": 2025,
+   "number": "17",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "You did something wrong at a family event. Write a message to your parent(s) apologising for your behaviour. Write approximately 75 words in ITALIAN."
+  },
+  {
+   "id": "it202524",
+   "year": 2025,
+   "number": "18",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Family life, home and neighbourhood",
+   "text": "Tuo/a cugino/a italiano/a sta progettando di venire in Australia e stare con te. Scrivi un'email per prepararlo/a, descrivi la tua casa, il tuo quartiere e cosa farete insieme.\nYour Italian cousin is planning to come to Australia to stay with you. Write an email to your cousin describing your home, neighbourhood and what you will do together."
+  },
+  {
+   "id": "it202525",
+   "year": 2025,
+   "number": "19",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Holidays, travel and tourism",
+   "text": "Tuo/a cugino/a che abita in Italia ha bisogno di alcune informazioni per un compito scolastico sulle festività. Scrivi un'email a tuo/a cugino/a dove descrivi come trascorri di solito la tua festività australiana preferita.\nYour cousin who lives in Italy needs your help with information for a school project on festivities. Write an email to your cousin describing how you usually celebrate your favourite Australian festivity."
+  }
+ ]
+}

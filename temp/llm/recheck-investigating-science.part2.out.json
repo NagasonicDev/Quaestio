@@ -1,0 +1,142 @@
+{
+  "hsc202507": {
+    "code": "HSC-M1-T1-D20",
+    "confidence": "high",
+    "why": "experimental testing best method"
+  },
+  "hsc202508": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "medium",
+    "why": "bias countermeasures"
+  },
+  "hsc202509": {
+    "code": "HSC-M3-T1-D3",
+    "confidence": "high",
+    "why": "sample selection obese patients"
+  },
+  "hsc202510": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "digital vs analogue accuracy"
+  },
+  "hsc202511": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "medium",
+    "why": "smallpox vaccine development steps"
+  },
+  "hsc202512": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "high",
+    "why": "mercury SDS safety"
+  },
+  "hsc202513": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "random systematic error devices"
+  },
+  "hsc202514": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "low",
+    "why": "pressure-volume gas behaviour context"
+  },
+  "hsc202515": {
+    "code": "HSC-M1-T1-D18",
+    "confidence": "high",
+    "why": "Priestley observations conclusions"
+  },
+  "hsc202516": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "high",
+    "why": "control surface area vary pH"
+  },
+  "hsc202517": {
+    "code": "HSC-M1-T1-D33",
+    "confidence": "medium",
+    "why": "inference from trial graph"
+  },
+  "hsc202518": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "probe precision and accuracy"
+  },
+  "hsc202519": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "high",
+    "why": "astrology pseudoscience"
+  },
+  "hsc202520": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "nuclear meltdown public image"
+  },
+  "hsc202521": {
+    "code": "HSC-M1-T1-D13",
+    "confidence": "high",
+    "why": "Marshall deviation from linear model"
+  },
+  "hsc202522": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "medium",
+    "why": "feasibility of reviewing paper volume"
+  },
+  "hsc202523": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "Mozart effect correlation causation"
+  },
+  "hsc202524": {
+    "code": "HSC-M1-T1-D23",
+    "confidence": "high",
+    "why": "write valid method for hypothesis"
+  },
+  "hsc202525": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "digital vs analogue thermometer accuracy"
+  },
+  "hsc202526": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "high",
+    "why": "industry funding conflict of interest"
+  },
+  "hsc202527": {
+    "code": "HSC-M4-T2-D18",
+    "confidence": "high",
+    "why": "spinifex Indigenous IP ethics"
+  },
+  "hsc202528": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "medium",
+    "why": "damming river impacts case study"
+  },
+  "hsc202529": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "fertiliser claim validity"
+  },
+  "hsc202530": {
+    "code": "HSC-M4-T2-D16",
+    "confidence": "high",
+    "why": "advances world health death rates"
+  },
+  "hsc202531": {
+    "code": "HSC-M4-T2-D8",
+    "confidence": "high",
+    "why": "codes of conduct ethics"
+  },
+  "hsc202532": {
+    "code": "HSC-M1-T1-D4",
+    "confidence": "medium",
+    "why": "identify IV and controlled variable"
+  },
+  "hsc202533": {
+    "code": "HSC-M1-T2-D5",
+    "confidence": "high",
+    "why": "errors in volume-mass graphs"
+  },
+  "hsc202534": {
+    "code": "HSC-M2-T2-D6",
+    "confidence": "medium",
+    "why": "science-technology relationship"
+  }
+}

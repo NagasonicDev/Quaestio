@@ -1,0 +1,1910 @@
+{
+ "course_id": "mathematics-extension-1",
+ "course_name": "Mathematics Extension 1",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Further work with functions / Graphical relationships / Examine the relationship between the graph of and the graph of using graphing applications, and graph given in algebraic or graphical form, identifying any vertical and horizontal asymptotes of and",
+   "text": "Examine the relationship between the graph of and the graph of using graphing applications, and graph given in algebraic or graphical form, identifying any vertical and horizontal asymptotes of and"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Further work with functions / Graphical relationships / Graph , and in both radians and degrees, identifying key properties including asymptotes, period, domain, range and symmetry, and compare each graph with the graph of its reciprocal",
+   "text": "Graph , and in both radians and degrees, identifying key properties including asymptotes, period, domain, range and symmetry, and compare each graph with the graph of its reciprocal"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Further work with functions / Graphical relationships / Examine the relationship between the graph of and the graphs of and using graphing applications, and graph and given in algebraic or graphical form",
+   "text": "Examine the relationship between the graph of and the graphs of and using graphing applications, and graph and given in algebraic or graphical form"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Further work with functions / Graphical relationships / Examine the relationship between the graphs of and and the graphs of and using graphing applications, and graph and given and in algebraic or graphical form",
+   "text": "Examine the relationship between the graphs of and and the graphs of and using graphing applications, and graph and given and in algebraic or graphical form"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Further work with functions / Graphical relationships / Determine the domains and ranges of the sum and difference of functions where possible, and, if appropriate, verify them using a graphing application",
+   "text": "Determine the domains and ranges of the sum and difference of functions where possible, and, if appropriate, verify them using a graphing application"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Further work with functions / Graphical relationships / Apply knowledge of graphical relationships to solve problems involving graphs of functions, justifying conclusions in the context of the problem where appropriate",
+   "text": "Apply knowledge of graphical relationships to solve problems involving graphs of functions, justifying conclusions in the context of the problem where appropriate"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Further work with functions / Inverse functions / Describe a function as one-to-one if every element in the range of the function corresponds to exactly one element of the domain",
+   "text": "Describe a function as one-to-one if every element in the range of the function corresponds to exactly one element of the domain"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Further work with functions / Inverse functions / Establish that the reflection of a point in the line reverses the coordinates of the point",
+   "text": "Establish that the reflection of a point in the line reverses the coordinates of the point"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Further work with functions / Inverse functions / Define an inverse function informally as a function that reverses or undoes the effect of the function",
+   "text": "Define an inverse function informally as a function that reverses or undoes the effect of the function"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Further work with functions / Inverse functions / Recognise that inverse functions exist for one-to-one functions",
+   "text": "Recognise that inverse functions exist for one-to-one functions"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Further work with functions / Inverse functions / Determine the equation for the inverse function of a given one-to-one function by interchanging the variables and in",
+   "text": "Determine the equation for the inverse function of a given one-to-one function by interchanging the variables and in"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Further work with functions / Inverse functions / Compare the graphs of a function and its inverse function using graphing applications, and recognise that the two graphs are reflections of each other in the line",
+   "text": "Compare the graphs of a function and its inverse function using graphing applications, and recognise that the two graphs are reflections of each other in the line"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Further work with functions / Inverse functions / Establish that the domain of is the range of , and the range of is the domain of , and use this relationship to solve problems",
+   "text": "Establish that the domain of is the range of , and the range of is the domain of , and use this relationship to solve problems"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Further work with functions / Inverse functions / Graph the inverse function of a given one-to-one function",
+   "text": "Graph the inverse function of a given one-to-one function"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Further work with functions / Inverse functions / Explain that the reflection in the line exchanges horizontal and vertical lines and recognise that the horizontal line test can therefore be applied to the graph of to determine whether its reflection in the line is a function",
+   "text": "Explain that the reflection in the line exchanges horizontal and vertical lines and recognise that the horizontal line test can therefore be applied to the graph of to determine whether its reflection in the line is a function"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Further work with functions / Inverse functions / Apply restrictions to the domain of a function, if it is not one-to-one, to obtain an inverse function",
+   "text": "Apply restrictions to the domain of a function, if it is not one-to-one, to obtain an inverse function"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Further work with functions / Inverse functions / Define formally to be the inverse function of if the relationships and hold, and use this definition to solve problems",
+   "text": "Define formally to be the inverse function of if the relationships and hold, and use this definition to solve problems"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Further work with functions / Inverse functions / Solve problems based on the relationship between a function and its inverse function using algebraic and graphical techniques, including determining the points of intersection of a function and its inverse, where they exist",
+   "text": "Solve problems based on the relationship between a function and its inverse function using algebraic and graphical techniques, including determining the points of intersection of a function and its inverse, where they exist"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Further work with functions / Parametric form of a function or relation / Recognise that a curve may be represented by two parametric equations that give and as functions of a parameter and that the curve may also have a Cartesian equation in and",
+   "text": "Recognise that a curve may be represented by two parametric equations that give and as functions of a parameter and that the curve may also have a Cartesian equation in and"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Further work with functions / Parametric form of a function or relation / Express linear and quadratic functions and circles in parametric form",
+   "text": "Express linear and quadratic functions and circles in parametric form"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Further work with functions / Parametric form of a function or relation / Convert linear and quadratic functions and circles from parametric form to Cartesian form",
+   "text": "Convert linear and quadratic functions and circles from parametric form to Cartesian form"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Further work with functions / Parametric form of a function or relation / Graph linear and quadratic functions and circles expressed in parametric form",
+   "text": "Graph linear and quadratic functions and circles expressed in parametric form"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Further work with functions / Inequalities / Solve cubic inequalities where the cubic is expressed as a product of linear factors",
+   "text": "Solve cubic inequalities where the cubic is expressed as a product of linear factors"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Further work with functions / Inequalities / Solve inequalities involving rational expressions with variables in the denominator",
+   "text": "Solve inequalities involving rational expressions with variables in the denominator"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Further work with functions / Inequalities / Solve absolute value inequalities of the form , , , , where , and are constants, using algebraic and graphical methods or the characterisation of as the distance of from the origin",
+   "text": "Solve absolute value inequalities of the form , , , , where , and are constants, using algebraic and graphical methods or the characterisation of as the distance of from the origin"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define a polynomial function of degree , where is a non-negative integer, to be a function that can be expressed in the form , for real and",
+   "text": "Define a polynomial function of degree , where is a non-negative integer, to be a function that can be expressed in the form , for real and"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define the leading term of to be the term of highest degree and define the leading coefficient of to be the coefficient of the leading term",
+   "text": "Define the leading term of to be the term of highest degree and define the leading coefficient of to be the coefficient of the leading term"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define the constant term of to be",
+   "text": "Define the constant term of to be"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define a polynomial to be monic if its leading coefficient is 1",
+   "text": "Define a polynomial to be monic if its leading coefficient is 1"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define the zero polynomial to be to be the polynomial with all the coefficients equal to zero and recognise that the zero polynomial has no leading term, no leading coefficient, no degree and constant term 0",
+   "text": "Define the zero polynomial to be to be the polynomial with all the coefficients equal to zero and recognise that the zero polynomial has no leading term, no leading coefficient, no degree and constant term 0"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Determine the degree of when two non-zero polynomials and , of degrees and respectively, are added",
+   "text": "Determine the degree of when two non-zero polynomials and , of degrees and respectively, are added"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Explain how the leading coefficient and the degree determine whether or as and as",
+   "text": "Explain how the leading coefficient and the degree determine whether or as and as"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define the zeroes of to be the numbers such that , and define the roots of the polynomial equation to be its solutions, and recognise that every real number is a zero of the zero polynomial",
+   "text": "Define the zeroes of to be the numbers such that , and define the roots of the polynomial equation to be its solutions, and recognise that every real number is a zero of the zero polynomial"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define as a repeated zero or multiple zero of a non-zero polynomial when is a factor of , and as a single zero of when is not a factor of , for",
+   "text": "Define as a repeated zero or multiple zero of a non-zero polynomial when is a factor of , and as a single zero of when is not a factor of , for"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Define as a zero of of multiplicity if , where is a positive integer and",
+   "text": "Define as a zero of of multiplicity if , where is a positive integer and"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / State the multiplicity of each root of a polynomial equation given in factored form",
+   "text": "State the multiplicity of each root of a polynomial equation given in factored form"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Polynomials / Language and graphs of polynomials / Find the zeroes of a polynomial that is expressed as a product of linear factors, determine their multiplicity and graph the polynomial",
+   "text": "Find the zeroes of a polynomial that is expressed as a product of linear factors, determine their multiplicity and graph the polynomial"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Polynomials / Remainder and factor theorems / Examine the process of division of polynomials by comparing with the process of division with remainders for whole numbers, and use the terms dividend, divisor, quotient and remainder",
+   "text": "Examine the process of division of polynomials by comparing with the process of division with remainders for whole numbers, and use the terms dividend, divisor, quotient and remainder"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Polynomials / Remainder and factor theorems / Express in the form the result of dividing by a divisor , that is not the zero polynomial, with quotient and remainder , and explain why either or",
+   "text": "Express in the form the result of dividing by a divisor , that is not the zero polynomial, with quotient and remainder , and explain why either or"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Polynomials / Remainder and factor theorems / Express the result of the division also in the form",
+   "text": "Express the result of the division also in the form"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Polynomials / Remainder and factor theorems / Explain why division by yields , where is a constant, and why is a factor if and only if",
+   "text": "Explain why division by yields , where is a constant, and why is a factor if and only if"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Polynomials / Remainder and factor theorems / Prove and apply the remainder theorem for polynomials: when is divided by , the remainder is , and solve related polynomial problems",
+   "text": "Prove and apply the remainder theorem for polynomials: when is divided by , the remainder is , and solve related polynomial problems"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Polynomials / Remainder and factor theorems / Prove and apply the factor theorem for polynomials: if and only if is a factor of , and solve related polynomial problems",
+   "text": "Prove and apply the factor theorem for polynomials: if and only if is a factor of , and solve related polynomial problems"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Polynomials / Remainder and factor theorems / Use the factor theorem to find all factors of of the form , where is an integer, and use division to find the remaining factor of the polynomial",
+   "text": "Use the factor theorem to find all factors of of the form , where is an integer, and use division to find the remaining factor of the polynomial"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Polynomials / Sums and products of zeroes of polynomials / Prove that if a quadratic has zeroes and then , the sum of the zeroes, and , the product of the zeroes",
+   "text": "Prove that if a quadratic has zeroes and then , the sum of the zeroes, and , the product of the zeroes"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Polynomials / Sums and products of zeroes of polynomials / Prove that if a cubic has three zeroes , , , then , and",
+   "text": "Prove that if a cubic has three zeroes , , , then , and"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Polynomials / Sums and products of zeroes of polynomials / Prove that if a quartic has four zeroes , , , then , , and",
+   "text": "Prove that if a quartic has four zeroes , , , then , , and"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Polynomials / Sums and products of zeroes of polynomials / Use the formulas for the sums and products of zeroes to solve problems involving zeroes and coefficients of quadratic, cubic and quartic polynomials",
+   "text": "Use the formulas for the sums and products of zeroes to solve problems involving zeroes and coefficients of quadratic, cubic and quartic polynomials"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Further trigonometry / Trigonometry in three dimensions / Interpret information about a 3-dimensional context given in diagrammatical form",
+   "text": "Interpret information about a 3-dimensional context given in diagrammatical form"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Further trigonometry / Trigonometry in three dimensions / Interpret information about a 3-dimensional context given in written form",
+   "text": "Interpret information about a 3-dimensional context given in written form"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Further trigonometry / Trigonometry in three dimensions / Apply trigonometry to solve problems in three dimensions where a diagram is given",
+   "text": "Apply trigonometry to solve problems in three dimensions where a diagram is given"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Further trigonometry / Further trigonometric identities / Derive the sum and difference expansions for the trigonometric functions , and",
+   "text": "Derive the sum and difference expansions for the trigonometric functions , and"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Further trigonometry / Further trigonometric identities / Use sum and difference expansion formulas to solve problems and prove results",
+   "text": "Use sum and difference expansion formulas to solve problems and prove results"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Further trigonometry / Further trigonometric identities / Derive the double angle formulas , and",
+   "text": "Derive the double angle formulas , and"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Further trigonometry / Further trigonometric identities / Use the double angle formulas to solve problems and prove results",
+   "text": "Use the double angle formulas to solve problems and prove results"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Further trigonometry / Further trigonometric equations / Solve trigonometric equations involving factorisation and/or substitution of trigonometric identities over restricted domains",
+   "text": "Solve trigonometric equations involving factorisation and/or substitution of trigonometric identities over restricted domains"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Further trigonometry / Further trigonometric equations / Examine the representations of as or with and without graphing applications, where and",
+   "text": "Examine the representations of as or with and without graphing applications, where and"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Further trigonometry / Further trigonometric equations / Apply the representations of as or to graph functions, solve equations of the form over restricted domains, and model and solve related problems",
+   "text": "Apply the representations of as or to graph functions, solve equations of the form over restricted domains, and model and solve related problems"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Further trigonometry / Further trigonometric equations / Interpret solutions of trigonometric equations graphically with and without graphing applications",
+   "text": "Interpret solutions of trigonometric equations graphically with and without graphing applications"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Further trigonometry / Further trigonometric equations / Model and solve practical problems using trigonometric equations and analyse their solutions in a variety of contexts",
+   "text": "Model and solve practical problems using trigonometric equations and analyse their solutions in a variety of contexts"
+  },
+  {
+   "code": "PRE-M4-D1",
+   "path": "Year 11 / Permutations and combinations / Use the notation (read as factorial), where for positive integers",
+   "text": "Use the notation (read as factorial), where for positive integers"
+  },
+  {
+   "code": "PRE-M4-D2",
+   "path": "Year 11 / Permutations and combinations / Use and the convention in calculations and to simplify algebraic expressions involving factorials",
+   "text": "Use and the convention in calculations and to simplify algebraic expressions involving factorials"
+  },
+  {
+   "code": "PRE-M4-D3",
+   "path": "Year 11 / Permutations and combinations / Establish and use the multiplication principle: if a selection can be made in two stages, where there are choices for the first stage and choices for the second stage then there are choices for the selection",
+   "text": "Establish and use the multiplication principle: if a selection can be made in two stages, where there are choices for the first stage and choices for the second stage then there are choices for the selection"
+  },
+  {
+   "code": "PRE-M4-D4",
+   "path": "Year 11 / Permutations and combinations / Apply the multiplication principle to explain why the number of ways of ordering distinct objects in a straight line is",
+   "text": "Apply the multiplication principle to explain why the number of ways of ordering distinct objects in a straight line is"
+  },
+  {
+   "code": "PRE-M4-D5",
+   "path": "Year 11 / Permutations and combinations / Define a permutation as an ordered selection of some or all objects from a set of distinct objects",
+   "text": "Define a permutation as an ordered selection of some or all objects from a set of distinct objects"
+  },
+  {
+   "code": "PRE-M4-D6",
+   "path": "Year 11 / Permutations and combinations / Use the notation to represent an ordered selection of objects from distinct objects and observe that and",
+   "text": "Use the notation to represent an ordered selection of objects from distinct objects and observe that and"
+  },
+  {
+   "code": "PRE-M4-D7",
+   "path": "Year 11 / Permutations and combinations / Use the multiplication principle to establish that the number of ordered selections of objects from distinct objects is and show that",
+   "text": "Use the multiplication principle to establish that the number of ordered selections of objects from distinct objects is and show that"
+  },
+  {
+   "code": "PRE-M4-D8",
+   "path": "Year 11 / Permutations and combinations / Solve problems involving permutations, including situations where the objects are not all distinct",
+   "text": "Solve problems involving permutations, including situations where the objects are not all distinct"
+  },
+  {
+   "code": "PRE-M4-D9",
+   "path": "Year 11 / Permutations and combinations / Solve problems involving permutations with restrictions on the placement of one or more objects",
+   "text": "Solve problems involving permutations with restrictions on the placement of one or more objects"
+  },
+  {
+   "code": "PRE-M4-D10",
+   "path": "Year 11 / Permutations and combinations / Explain why the number of ways to arrange distinct objects in a circle is",
+   "text": "Explain why the number of ways to arrange distinct objects in a circle is"
+  },
+  {
+   "code": "PRE-M4-D11",
+   "path": "Year 11 / Permutations and combinations / Solve problems involving circular arrangements of distinct objects with or without restrictions on the placement of one or more objects",
+   "text": "Solve problems involving circular arrangements of distinct objects with or without restrictions on the placement of one or more objects"
+  },
+  {
+   "code": "PRE-M4-D12",
+   "path": "Year 11 / Permutations and combinations / Define a combination and use the notation or to represent the number of ways of selecting a subset of objects from distinct objects, where order is not important",
+   "text": "Define a combination and use the notation or to represent the number of ways of selecting a subset of objects from distinct objects, where order is not important"
+  },
+  {
+   "code": "PRE-M4-D13",
+   "path": "Year 11 / Permutations and combinations / Establish and use the formula",
+   "text": "Establish and use the formula"
+  },
+  {
+   "code": "PRE-M4-D14",
+   "path": "Year 11 / Permutations and combinations / Show that and",
+   "text": "Show that and"
+  },
+  {
+   "code": "PRE-M4-D15",
+   "path": "Year 11 / Permutations and combinations / Show that, for by selecting objects from distinct objects for inclusions and objects from distinct objects for exclusion",
+   "text": "Show that, for by selecting objects from distinct objects for inclusions and objects from distinct objects for exclusion"
+  },
+  {
+   "code": "PRE-M4-D16",
+   "path": "Year 11 / Permutations and combinations / Prove for algebraically and using combinatorial arguments",
+   "text": "Prove for algebraically and using combinatorial arguments"
+  },
+  {
+   "code": "PRE-M4-D17",
+   "path": "Year 11 / Permutations and combinations / Solve problems involving combinations with or without restrictions on the selection of one or more objects",
+   "text": "Solve problems involving combinations with or without restrictions on the selection of one or more objects"
+  },
+  {
+   "code": "PRE-M4-D18",
+   "path": "Year 11 / Permutations and combinations / Solve problems involving both permutations and combinations, including problems which require consideration of cases",
+   "text": "Solve problems involving both permutations and combinations, including problems which require consideration of cases"
+  },
+  {
+   "code": "PRE-M4-D19",
+   "path": "Year 11 / Permutations and combinations / Solve probability problems involving permutations and combinations",
+   "text": "Solve probability problems involving permutations and combinations"
+  },
+  {
+   "code": "PRE-M5-D1",
+   "path": "Year 11 / The binomial theorem / Recognise that a binomial is an expression with two terms, and that a binomial expansion is an expansion of a power of a binomial",
+   "text": "Recognise that a binomial is an expression with two terms, and that a binomial expansion is an expansion of a power of a binomial"
+  },
+  {
+   "code": "PRE-M5-D2",
+   "path": "Year 11 / The binomial theorem / Examine the symmetry formed by the coefficients of decreasing powers of in the expansion of for and arrange the coefficients into Pascal’s triangle",
+   "text": "Examine the symmetry formed by the coefficients of decreasing powers of in the expansion of for and arrange the coefficients into Pascal’s triangle"
+  },
+  {
+   "code": "PRE-M5-D3",
+   "path": "Year 11 / The binomial theorem / Recognise the equivalence between the coefficient of in the expansion of and, when is a positive integer",
+   "text": "Recognise the equivalence between the coefficient of in the expansion of and, when is a positive integer"
+  },
+  {
+   "code": "PRE-M5-D4",
+   "path": "Year 11 / The binomial theorem / Use patterns and symmetry in Pascal’s triangle to confirm the identities for and for",
+   "text": "Use patterns and symmetry in Pascal’s triangle to confirm the identities for and for"
+  },
+  {
+   "code": "PRE-M5-D5",
+   "path": "Year 11 / The binomial theorem / Derive the binomial theorem: , when is a positive integer",
+   "text": "Derive the binomial theorem: , when is a positive integer"
+  },
+  {
+   "code": "PRE-M5-D6",
+   "path": "Year 11 / The binomial theorem / Apply the binomial theorem to expand and simplify expressions of the form",
+   "text": "Apply the binomial theorem to expand and simplify expressions of the form"
+  },
+  {
+   "code": "PRE-M5-D7",
+   "path": "Year 11 / The binomial theorem / Use the binomial theorem to determine the coefficient of a term with a specific power or the constant term in a binomial expansion",
+   "text": "Use the binomial theorem to determine the coefficient of a term with a specific power or the constant term in a binomial expansion"
+  },
+  {
+   "code": "PRE-M5-D8",
+   "path": "Year 11 / The binomial theorem / Use the identities,, for and for to simplify expressions involving the binomial coefficients",
+   "text": "Use the identities,, for and for to simplify expressions involving the binomial coefficients"
+  },
+  {
+   "code": "PRE-M5-D9",
+   "path": "Year 11 / The binomial theorem / Prove identities involving binomial coefficients in binomial expansions by substituting values, comparing coefficients or applying a combinatorial argument to a specified context",
+   "text": "Prove identities involving binomial coefficients in binomial expansions by substituting values, comparing coefficients or applying a combinatorial argument to a specified context"
+  },
+  {
+   "code": "PRE-M5-D10",
+   "path": "Year 11 / The binomial theorem / Apply given or proven identities involving binomial coefficients to prove further identities, without the use of calculus",
+   "text": "Apply given or proven identities involving binomial coefficients to prove further identities, without the use of calculus"
+  },
+  {
+   "code": "HSC-M1-D1",
+   "path": "Year 12 / Proof by mathematical induction / Examine the nature of inductive proof, including the statement to be proved, the base case and the inductive step",
+   "text": "Examine the nature of inductive proof, including the statement to be proved, the base case and the inductive step"
+  },
+  {
+   "code": "HSC-M1-D2",
+   "path": "Year 12 / Proof by mathematical induction / Prove results for sums using mathematical induction",
+   "text": "Prove results for sums using mathematical induction"
+  },
+  {
+   "code": "HSC-M1-D3",
+   "path": "Year 12 / Proof by mathematical induction / Prove divisibility results using mathematical induction",
+   "text": "Prove divisibility results using mathematical induction"
+  },
+  {
+   "code": "HSC-M1-D4",
+   "path": "Year 12 / Proof by mathematical induction / Identify errors in false ‘proofs by induction’, such as cases where only one of the two required steps of a proof by induction is true",
+   "text": "Identify errors in false ‘proofs by induction’, such as cases where only one of the two required steps of a proof by induction is true"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Introduction to vectors / Vector representation and notation / Define a vector as a quantity having both magnitude and direction",
+   "text": "Define a vector as a quantity having both magnitude and direction"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Introduction to vectors / Vector representation and notation / Associate vectors with directed line segments and recognise that a vector may have many directed line segments associated with it",
+   "text": "Associate vectors with directed line segments and recognise that a vector may have many directed line segments associated with it"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Introduction to vectors / Vector representation and notation / Identify and use notation for vectors in both two dimensions and three dimensions, including , and , where is the vector with magnitude and direction those of the directed line segment from to",
+   "text": "Identify and use notation for vectors in both two dimensions and three dimensions, including , and , where is the vector with magnitude and direction those of the directed line segment from to"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Introduction to vectors / Vector representation and notation / Use notations , and to represent the magnitude of a vector",
+   "text": "Use notations , and to represent the magnitude of a vector"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Introduction to vectors / Vector representation and notation / Describe a position vector as a vector with its tail at the origin",
+   "text": "Describe a position vector as a vector with its tail at the origin"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Introduction to vectors / Vector representation and notation / Represent vectors graphically with and without graphing applications",
+   "text": "Represent vectors graphically with and without graphing applications"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Introduction to vectors / Vector representation and notation / Recognise and use the fact that two vectors are equal if they have the same magnitude and direction to solve problems",
+   "text": "Recognise and use the fact that two vectors are equal if they have the same magnitude and direction to solve problems"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Use Cartesian coordinates to represent points in 2-dimensional (2D) and 3-dimensional (3D) space with and without graphing applications",
+   "text": "Use Cartesian coordinates to represent points in 2-dimensional (2D) and 3-dimensional (3D) space with and without graphing applications"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Use the midpoint and distance formulas in two dimensions and three dimensions",
+   "text": "Use the midpoint and distance formulas in two dimensions and three dimensions"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Identify that, in three dimensions, all points on the -plane have a -coordinate of 0, and deduce similar properties for points on the and -planes and thus the equations of the three coordinate planes",
+   "text": "Identify that, in three dimensions, all points on the -plane have a -coordinate of 0, and deduce similar properties for points on the and -planes and thus the equations of the three coordinate planes"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Define the zero vector , written as , as the vector with zero magnitude and no direction",
+   "text": "Define the zero vector , written as , as the vector with zero magnitude and no direction"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Define unit vectors as vectors of magnitude 1",
+   "text": "Define unit vectors as vectors of magnitude 1"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Recognise and use and as the notation for the unit vector in the direction of",
+   "text": "Recognise and use and as the notation for the unit vector in the direction of"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Define the standard perpendicular unit vectors and in two dimensions and , and in three dimensions",
+   "text": "Define the standard perpendicular unit vectors and in two dimensions and , and in three dimensions"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Express 2D vectors in component form, ; as an ordered pair, ; and in column vector notation",
+   "text": "Express 2D vectors in component form, ; as an ordered pair, ; and in column vector notation"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Recognise as the vector associated with the directed line segment from the point to in two dimensions",
+   "text": "Recognise as the vector associated with the directed line segment from the point to in two dimensions"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Express 3D vectors in component form, ; as an ordered triple, ; and in column vector notation",
+   "text": "Express 3D vectors in component form, ; as an ordered triple, ; and in column vector notation"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Introduction to vectors / Introduction to 2D and 3D vectors / Recognise as the vector associated with the directed line segment from to in three dimensions",
+   "text": "Recognise as the vector associated with the directed line segment from to in three dimensions"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Define a scalar as a real number that is used to multiply a vector",
+   "text": "Define a scalar as a real number that is used to multiply a vector"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Represent geometrically a scalar multiple of a vector in two dimensions and three dimensions with and without graphing applications",
+   "text": "Represent geometrically a scalar multiple of a vector in two dimensions and three dimensions with and without graphing applications"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Perform multiplication of a vector by a scalar algebraically in component form",
+   "text": "Perform multiplication of a vector by a scalar algebraically in component form"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Establish and identify , for a non-zero scalar , as a condition for two non-zero vectors and to be parallel to each other and determine with justification if two vectors are parallel to one another",
+   "text": "Establish and identify , for a non-zero scalar , as a condition for two non-zero vectors and to be parallel to each other and determine with justification if two vectors are parallel to one another"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Identify and as vectors perpendicular to and with equal magnitude",
+   "text": "Identify and as vectors perpendicular to and with equal magnitude"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law",
+   "text": "Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Establish and calculate the magnitude of a vector using for 2D vectors and for 3D vectors",
+   "text": "Establish and calculate the magnitude of a vector using for 2D vectors and for 3D vectors"
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Introduction to vectors / Operating with vectors / Use the magnitude of a vector to find the unit vector in two dimensions and three dimensions",
+   "text": "Use the magnitude of a vector to find the unit vector in two dimensions and three dimensions"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Define as the scalar (dot) product of vectors and and use the scalar product to solve problems",
+   "text": "Define as the scalar (dot) product of vectors and and use the scalar product to solve problems"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Define as the scalar product of vectors and and use the scalar product to solve problems",
+   "text": "Define as the scalar product of vectors and and use the scalar product to solve problems"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Use as a geometric expression of the scalar product of non-zero vectors and in two dimensions and three dimensions, where is the angle between the vectors and .",
+   "text": "Use as a geometric expression of the scalar product of non-zero vectors and in two dimensions and three dimensions, where is the angle between the vectors and ."
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Verify the equivalence of with the algebraic definition of the scalar product, for two dimensions and for three dimensions",
+   "text": "Verify the equivalence of with the algebraic definition of the scalar product, for two dimensions and for three dimensions"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Derive and use the property to establish the scalar product definition of the magnitude of a vector () in two dimensions and three dimensions",
+   "text": "Derive and use the property to establish the scalar product definition of the magnitude of a vector () in two dimensions and three dimensions"
+  },
+  {
+   "code": "HSC-M2-T4-D6",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Calculate the angle between two non-zero vectors and , in both two dimensions and three dimensions, using the scalar product by deriving and applying the relationship",
+   "text": "Calculate the angle between two non-zero vectors and , in both two dimensions and three dimensions, using the scalar product by deriving and applying the relationship"
+  },
+  {
+   "code": "HSC-M2-T4-D7",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Establish as a condition for two non-zero vectors and to be perpendicular to each other and use it to determine if two vectors are perpendicular",
+   "text": "Establish as a condition for two non-zero vectors and to be perpendicular to each other and use it to determine if two vectors are perpendicular"
+  },
+  {
+   "code": "HSC-M2-T4-D8",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Establish as another way to determine if two non-zero vectors and are parallel",
+   "text": "Establish as another way to determine if two non-zero vectors and are parallel"
+  },
+  {
+   "code": "HSC-M2-T4-D9",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Define the projection of a vector onto a vector , denoted by , to be the vector component of in the direction of vector",
+   "text": "Define the projection of a vector onto a vector , denoted by , to be the vector component of in the direction of vector"
+  },
+  {
+   "code": "HSC-M2-T4-D10",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Examine the proof of the formula and use the formula to solve problems",
+   "text": "Examine the proof of the formula and use the formula to solve problems"
+  },
+  {
+   "code": "HSC-M2-T4-D11",
+   "path": "Year 12 / Introduction to vectors / Further operations with vectors / Determine that the component of a vector perpendicular to another vector is",
+   "text": "Determine that the component of a vector perpendicular to another vector is"
+  },
+  {
+   "code": "HSC-M2-T5-D1",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Describe the position of an object at a point in 2D space using a vector",
+   "text": "Describe the position of an object at a point in 2D space using a vector"
+  },
+  {
+   "code": "HSC-M2-T5-D2",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Describe the changing positions of an object by expressing its vector as a function of time using , or where and are functions of time",
+   "text": "Describe the changing positions of an object by expressing its vector as a function of time using , or where and are functions of time"
+  },
+  {
+   "code": "HSC-M2-T5-D3",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Recognise that and form a pair of parametric equations for the path of the object",
+   "text": "Recognise that and form a pair of parametric equations for the path of the object"
+  },
+  {
+   "code": "HSC-M2-T5-D4",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Find the Cartesian equation of the path of an object, where the path is a straight line, parabola or circle",
+   "text": "Find the Cartesian equation of the path of an object, where the path is a straight line, parabola or circle"
+  },
+  {
+   "code": "HSC-M2-T5-D5",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Express the change in an object’s position between two points as a displacement vector and recognise the magnitude of the displacement vector as the distance between the two points",
+   "text": "Express the change in an object’s position between two points as a displacement vector and recognise the magnitude of the displacement vector as the distance between the two points"
+  },
+  {
+   "code": "HSC-M2-T5-D6",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Solve motion problems involving constant velocity using vectors",
+   "text": "Solve motion problems involving constant velocity using vectors"
+  },
+  {
+   "code": "HSC-M2-T5-D7",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Solve relative velocity problems involving constant crosswind/cross-current using vector diagrams, and describe the direction of a vector where required",
+   "text": "Solve relative velocity problems involving constant crosswind/cross-current using vector diagrams, and describe the direction of a vector where required"
+  },
+  {
+   "code": "HSC-M2-T5-D8",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Find the velocity vector and acceleration vector of an object using differential calculus",
+   "text": "Find the velocity vector and acceleration vector of an object using differential calculus"
+  },
+  {
+   "code": "HSC-M2-T5-D9",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Find the position vector and the velocity vector of an object using integral calculus given its acceleration vector",
+   "text": "Find the position vector and the velocity vector of an object using integral calculus given its acceleration vector"
+  },
+  {
+   "code": "HSC-M2-T5-D10",
+   "path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Solve motion problems involving non-constant velocity using vectors",
+   "text": "Solve motion problems involving non-constant velocity using vectors"
+  },
+  {
+   "code": "HSC-M2-T6-D1",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Recognise that the gravitational force on a mass may be regarded as a constant acting in a downwards direction when the motion of the object is restricted to a small region near the Earth’s surface",
+   "text": "Recognise that the gravitational force on a mass may be regarded as a constant acting in a downwards direction when the motion of the object is restricted to a small region near the Earth’s surface"
+  },
+  {
+   "code": "HSC-M2-T6-D2",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Model and analyse a projectile’s path where the projectile is a point and air resistance is negligible, subject to only acceleration due to gravity, assuming that the projectile is moving close to the Earth’s surface",
+   "text": "Model and analyse a projectile’s path where the projectile is a point and air resistance is negligible, subject to only acceleration due to gravity, assuming that the projectile is moving close to the Earth’s surface"
+  },
+  {
+   "code": "HSC-M2-T6-D3",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Represent the motion of a projectile using vectors",
+   "text": "Represent the motion of a projectile using vectors"
+  },
+  {
+   "code": "HSC-M2-T6-D4",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Recognise that the horizontal and vertical components of the motion of a projectile can be represented by horizontal and vertical vectors",
+   "text": "Recognise that the horizontal and vertical components of the motion of a projectile can be represented by horizontal and vertical vectors"
+  },
+  {
+   "code": "HSC-M2-T6-D5",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Derive and use the equations of motion of a projectile in vector form by splitting 2D motion into horizontal and vertical components to solve problems on projectiles",
+   "text": "Derive and use the equations of motion of a projectile in vector form by splitting 2D motion into horizontal and vertical components to solve problems on projectiles"
+  },
+  {
+   "code": "HSC-M2-T6-D6",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Find the Cartesian equation of the path of a projectile using parametric equations for the horizontal and vertical components of the displacement vector",
+   "text": "Find the Cartesian equation of the path of a projectile using parametric equations for the horizontal and vertical components of the displacement vector"
+  },
+  {
+   "code": "HSC-M2-T6-D7",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Determine features of the flight of a projectile, including time of flight, maximum height, range, instantaneous velocity and impact velocity",
+   "text": "Determine features of the flight of a projectile, including time of flight, maximum height, range, instantaneous velocity and impact velocity"
+  },
+  {
+   "code": "HSC-M2-T6-D8",
+   "path": "Year 12 / Introduction to vectors / Projectile motion / Solve problems relating to the path of a projectile in which the initial velocity and/or angle of projection may be unknown, in a variety of contexts",
+   "text": "Solve problems relating to the path of a projectile in which the initial velocity and/or angle of projection may be unknown, in a variety of contexts"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Inverse trigonometric functions / Definitions of inverse trigonometric functions / Graph , and , for using graphing applications and recognise that these three functions fail the horizontal line test",
+   "text": "Graph , and , for using graphing applications and recognise that these three functions fail the horizontal line test"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Inverse trigonometric functions / Definitions of inverse trigonometric functions / Examine possible domain restrictions of , and to obtain the corresponding inverse functions using graphing applications",
+   "text": "Examine possible domain restrictions of , and to obtain the corresponding inverse functions using graphing applications"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Inverse trigonometric functions / Definitions of inverse trigonometric functions / Define or to be the inverse function of restricted to , and determine the domain and range of",
+   "text": "Define or to be the inverse function of restricted to , and determine the domain and range of"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Inverse trigonometric functions / Definitions of inverse trigonometric functions / Evaluate and simplify expressions, and prove results using the definitions of , and",
+   "text": "Evaluate and simplify expressions, and prove results using the definitions of , and"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Graph for , then use a reflection in to graph with and without graphing applications",
+   "text": "Graph for , then use a reflection in to graph with and without graphing applications"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Classify , and as odd, even, or neither odd nor even",
+   "text": "Classify , and as odd, even, or neither odd nor even"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Examine the properties , , and using graphing applications and prove them algebraically",
+   "text": "Examine the properties , , and using graphing applications and prove them algebraically"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Use the properties , , and to solve problems, simplify expressions and prove results",
+   "text": "Use the properties , , and to solve problems, simplify expressions and prove results"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Graph the composite functions , and by considering their domains and ranges",
+   "text": "Graph the composite functions , and by considering their domains and ranges"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Examine the graphs of the composite functions , and , establish the values of for which the formulas , and are true, and apply the formulas to solve problems, simplify expressions and prove results",
+   "text": "Examine the graphs of the composite functions , and , establish the values of for which the formulas , and are true, and apply the formulas to solve problems, simplify expressions and prove results"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Use graphing applications to explore reflections, translations and dilations of the functions , and , and confirm that the principles of transformations hold for the inverse trigonometric functions",
+   "text": "Use graphing applications to explore reflections, translations and dilations of the functions , and , and confirm that the principles of transformations hold for the inverse trigonometric functions"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Apply the principles of transformations to inverse trigonometric functions to determine the function rule and graph the function, finding the domain and range of the transformed graph and determining any intercepts and asymptotes where appropriate",
+   "text": "Apply the principles of transformations to inverse trigonometric functions to determine the function rule and graph the function, finding the domain and range of the transformed graph and determining any intercepts and asymptotes where appropriate"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Further calculus skills / Further derivatives of functions / Find the derivative of a function defined parametrically using the chain rule",
+   "text": "Find the derivative of a function defined parametrically using the chain rule"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Further calculus skills / Further derivatives of functions / Solve problems involving derivatives of functions defined parametrically",
+   "text": "Solve problems involving derivatives of functions defined parametrically"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Further calculus skills / Further derivatives of functions / Verify using the chain rule that the derivative of the inverse function is the reciprocal of the derivative of the function, evaluated at the value of the inverse function, that is",
+   "text": "Verify using the chain rule that the derivative of the inverse function is the reciprocal of the derivative of the function, evaluated at the value of the inverse function, that is"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Further calculus skills / Further derivatives of functions / Solve problems involving derivatives of inverse functions",
+   "text": "Solve problems involving derivatives of inverse functions"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Further calculus skills / Further derivatives of functions / Examine the proofs of the derivatives of , and",
+   "text": "Examine the proofs of the derivatives of , and"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Further calculus skills / Further derivatives of functions / Use the chain rule to show that , and and apply the results to solve problems involving derivatives of , and",
+   "text": "Use the chain rule to show that , and and apply the results to solve problems involving derivatives of , and"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Further calculus skills / Further derivatives of functions / Apply the product, quotient and chain rules to find derivatives of functions of the form and where and are any of the functions covered in the scope of the Mathematics Advanced 11–12 Syllabus (2024) or inverse trigonometric functions and solve related problems",
+   "text": "Apply the product, quotient and chain rules to find derivatives of functions of the form and where and are any of the functions covered in the scope of the Mathematics Advanced 11–12 Syllabus (2024) or inverse trigonometric functions and solve related problems"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Further calculus skills / Techniques of integration / Find indefinite and definite integrals involving expressions of the form or",
+   "text": "Find indefinite and definite integrals involving expressions of the form or"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Further calculus skills / Techniques of integration / Use integration by substitution to evaluate definite and indefinite integrals given the substitution, where the substitution is expressed as a function of the variable of integration or where the variable of integration is the subject of the substitution",
+   "text": "Use integration by substitution to evaluate definite and indefinite integrals given the substitution, where the substitution is expressed as a function of the variable of integration or where the variable of integration is the subject of the substitution"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Further calculus skills / Techniques of integration / Prove and use the identities and to find integrals involving and",
+   "text": "Prove and use the identities and to find integrals involving and"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Further applications of calculus / Multiplicity of zeroes of polynomial functions / Use the product rule to prove that if has a zero, , of multiplicity , then is a zero of of multiplicity , and use the result to determine the multiplicity of a discovered zero of and solve related polynomial problems",
+   "text": "Use the product rule to prove that if has a zero, , of multiplicity , then is a zero of of multiplicity , and use the result to determine the multiplicity of a discovered zero of and solve related polynomial problems"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Further applications of calculus / Multiplicity of zeroes of polynomial functions / Prove that if is a zero of multiplicity , meeting the -axis at , then if , the curve crosses the -axis at at an acute or obtuse angle; if is even, the curve is tangent to the -axis at and does not cross it; if is odd, the curve has a horizontal inflection at",
+   "text": "Prove that if is a zero of multiplicity , meeting the -axis at , then if , the curve crosses the -axis at at an acute or obtuse angle; if is even, the curve is tangent to the -axis at and does not cross it; if is odd, the curve has a horizontal inflection at"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Further applications of calculus / Multiplicity of zeroes of polynomial functions / Graph a polynomial function in factored form, identifying its turning points and points of inflection if possible, and explore its behaviour as and , verifying the shape of the graph using graphing applications",
+   "text": "Graph a polynomial function in factored form, identifying its turning points and points of inflection if possible, and explore its behaviour as and , verifying the shape of the graph using graphing applications"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Further applications of calculus / Further rates of change / Develop models in contexts where a rate of change of a function can be expressed as a rate of change of a composition of two functions, so that the chain rule can be applied",
+   "text": "Develop models in contexts where a rate of change of a function can be expressed as a rate of change of a composition of two functions, so that the chain rule can be applied"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Further applications of calculus / Further rates of change / Solve problems involving related rates of change using the chain rule, given the required formulas for problems relating to area, surface area or volume",
+   "text": "Solve problems involving related rates of change using the chain rule, given the required formulas for problems relating to area, surface area or volume"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Further applications of calculus / Further rates of change / Describe and examine the graphs of practical situations where the rate of change of a quantity is proportional to the amount by which the quantity exceeds some fixed value",
+   "text": "Describe and examine the graphs of practical situations where the rate of change of a quantity is proportional to the amount by which the quantity exceeds some fixed value"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Further applications of calculus / Further rates of change / Explain that if the rate of change of a quantity over time is proportional to the difference at any instant, then this may be represented by the equation , where is a constant",
+   "text": "Explain that if the rate of change of a quantity over time is proportional to the difference at any instant, then this may be represented by the equation , where is a constant"
+  },
+  {
+   "code": "HSC-M5-T2-D5",
+   "path": "Year 12 / Further applications of calculus / Further rates of change / Verify by substitution that the function , where is a constant, satisfies the relationship , and that in the case where",
+   "text": "Verify by substitution that the function , where is a constant, satisfies the relationship , and that in the case where"
+  },
+  {
+   "code": "HSC-M5-T2-D6",
+   "path": "Year 12 / Further applications of calculus / Further rates of change / Graph the function , where and and and , with and without graphing applications, and identify any asymptotes",
+   "text": "Graph the function , where and and and , with and without graphing applications, and identify any asymptotes"
+  },
+  {
+   "code": "HSC-M5-T2-D7",
+   "path": "Year 12 / Further applications of calculus / Further rates of change / Use , and the graph of for , where or and or , to model and solve problems where a limiting value of exists, including Newton’s Law of Cooling and ecosystems with a natural carrying capacity, and justify conclusions in the context of the problem",
+   "text": "Use , and the graph of for , where or and or , to model and solve problems where a limiting value of exists, including Newton’s Law of Cooling and ecosystems with a natural carrying capacity, and justify conclusions in the context of the problem"
+  },
+  {
+   "code": "HSC-M5-T3-D1",
+   "path": "Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate areas of regions between curves determined by functions in both real-life and abstract contexts",
+   "text": "Calculate areas of regions between curves determined by functions in both real-life and abstract contexts"
+  },
+  {
+   "code": "HSC-M5-T3-D2",
+   "path": "Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Examine a solid of revolution whose boundary is formed by rotating an arc of a function about the -axis or -axis with and without graphing applications",
+   "text": "Examine a solid of revolution whose boundary is formed by rotating an arc of a function about the -axis or -axis with and without graphing applications"
+  },
+  {
+   "code": "HSC-M5-T3-D3",
+   "path": "Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate the volume of a solid of revolution formed by rotating a region in the plane about the -axis or -axis in both real-life and abstract contexts",
+   "text": "Calculate the volume of a solid of revolution formed by rotating a region in the plane about the -axis or -axis in both real-life and abstract contexts"
+  },
+  {
+   "code": "HSC-M5-T3-D4",
+   "path": "Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate the volume of a solid of revolution formed by rotating the region between two curves about either the -axis or -axis in both real-life and abstract contexts",
+   "text": "Calculate the volume of a solid of revolution formed by rotating the region between two curves about either the -axis or -axis in both real-life and abstract contexts"
+  },
+  {
+   "code": "HSC-M5-T4-D1",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Define a differential equation as an equation involving an unknown function and one or more of its derivatives",
+   "text": "Define a differential equation as an equation involving an unknown function and one or more of its derivatives"
+  },
+  {
+   "code": "HSC-M5-T4-D2",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Define and identify the order of a differential equation as the order of the highest derivative contained within the equation",
+   "text": "Define and identify the order of a differential equation as the order of the highest derivative contained within the equation"
+  },
+  {
+   "code": "HSC-M5-T4-D3",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Recognise that a solution to a first order differential equations is a function, and that there may be infinitely many functions that are solutions to a given first order differential equation",
+   "text": "Recognise that a solution to a first order differential equations is a function, and that there may be infinitely many functions that are solutions to a given first order differential equation"
+  },
+  {
+   "code": "HSC-M5-T4-D4",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Recognise the solutions to differential equations in the context of slope fields, and that slope fields are useful in determining the behaviour of solutions when the differential equation cannot be easily solved",
+   "text": "Recognise the solutions to differential equations in the context of slope fields, and that slope fields are useful in determining the behaviour of solutions when the differential equation cannot be easily solved"
+  },
+  {
+   "code": "HSC-M5-T4-D5",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Recognise that a unique solution of a differential equation can be determined when sufficient initial conditions are given, and refer to a problem involving a differential equation and initial conditions as an initial value problem (IVP)",
+   "text": "Recognise that a unique solution of a differential equation can be determined when sufficient initial conditions are given, and refer to a problem involving a differential equation and initial conditions as an initial value problem (IVP)"
+  },
+  {
+   "code": "HSC-M5-T4-D6",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Graph solutions to first order differential equations given a slope field and identify the unique solution curve that satisfies a set of initial conditions",
+   "text": "Graph solutions to first order differential equations given a slope field and identify the unique solution curve that satisfies a set of initial conditions"
+  },
+  {
+   "code": "HSC-M5-T4-D7",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Explore problems given a slope field representing a practical context and justify conclusions",
+   "text": "Explore problems given a slope field representing a practical context and justify conclusions"
+  },
+  {
+   "code": "HSC-M5-T4-D8",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Form a slope field for a first order differential equation using graphing applications",
+   "text": "Form a slope field for a first order differential equation using graphing applications"
+  },
+  {
+   "code": "HSC-M5-T4-D9",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Recognise the features of a slope field corresponding to a first order differential equation and vice versa",
+   "text": "Recognise the features of a slope field corresponding to a first order differential equation and vice versa"
+  },
+  {
+   "code": "HSC-M5-T4-D10",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form",
+   "text": "Solve first order differential equations of the form"
+  },
+  {
+   "code": "HSC-M5-T4-D11",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form , where possible expressing the solution as a function with as the subject",
+   "text": "Solve first order differential equations of the form , where possible expressing the solution as a function with as the subject"
+  },
+  {
+   "code": "HSC-M5-T4-D12",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Recognise and solve the first order differential equations for exponential growth and decay: and",
+   "text": "Recognise and solve the first order differential equations for exponential growth and decay: and"
+  },
+  {
+   "code": "HSC-M5-T4-D13",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form using separation of variables, where possible expressing the solution as a function with as the subject",
+   "text": "Solve first order differential equations of the form using separation of variables, where possible expressing the solution as a function with as the subject"
+  },
+  {
+   "code": "HSC-M5-T4-D14",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Graph solutions of first order differential equations using graphing applications and examine the behaviour of solutions for different values of the constant of integration and initial conditions",
+   "text": "Graph solutions of first order differential equations using graphing applications and examine the behaviour of solutions for different values of the constant of integration and initial conditions"
+  },
+  {
+   "code": "HSC-M5-T4-D15",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Solve differential equations of the form for some constants and , given the appropriate decomposition into partial fractions, to obtain the logistic function",
+   "text": "Solve differential equations of the form for some constants and , given the appropriate decomposition into partial fractions, to obtain the logistic function"
+  },
+  {
+   "code": "HSC-M5-T4-D16",
+   "path": "Year 12 / Further applications of calculus / Differential equations / Model and solve differential equations in practical scenarios including in chemistry, biology and economics",
+   "text": "Model and solve differential equations in practical scenarios including in chemistry, biology and economics"
+  },
+  {
+   "code": "HSC-M6-T1-D1",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Bernoulli distributions / Define a Bernoulli random variable as a model for two-outcome situations, referred to as success and failure",
+   "text": "Define a Bernoulli random variable as a model for two-outcome situations, referred to as success and failure"
+  },
+  {
+   "code": "HSC-M6-T1-D2",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Bernoulli distributions / Model a Bernoulli trial using a random variable, , where the probability of success, , is and the probability of failure, , is",
+   "text": "Model a Bernoulli trial using a random variable, , where the probability of success, , is and the probability of failure, , is"
+  },
+  {
+   "code": "HSC-M6-T1-D3",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Bernoulli distributions / Define a Bernoulli distribution as the discrete probability distribution of a Bernoulli random variable",
+   "text": "Define a Bernoulli distribution as the discrete probability distribution of a Bernoulli random variable"
+  },
+  {
+   "code": "HSC-M6-T1-D4",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Bernoulli distributions / Establish and use the formulae to find the mean, and to find the variance of the Bernoulli distribution with parameter",
+   "text": "Establish and use the formulae to find the mean, and to find the variance of the Bernoulli distribution with parameter"
+  },
+  {
+   "code": "HSC-M6-T1-D5",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Bernoulli distributions / Identify contexts suitable to be modelled by Bernoulli random variables",
+   "text": "Identify contexts suitable to be modelled by Bernoulli random variables"
+  },
+  {
+   "code": "HSC-M6-T1-D6",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Bernoulli distributions / Solve practical problems involving Bernoulli random variables",
+   "text": "Solve practical problems involving Bernoulli random variables"
+  },
+  {
+   "code": "HSC-M6-T2-D1",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Define a binomial random variable, , as the number of ‘successes’ in independent and identically distributed Bernoulli trials, with the same probability of success in each trial, where is a fixed finite number",
+   "text": "Define a binomial random variable, , as the number of ‘successes’ in independent and identically distributed Bernoulli trials, with the same probability of success in each trial, where is a fixed finite number"
+  },
+  {
+   "code": "HSC-M6-T2-D2",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Identify contexts suitable to be modelled using binomial distributions",
+   "text": "Identify contexts suitable to be modelled using binomial distributions"
+  },
+  {
+   "code": "HSC-M6-T2-D3",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Define a binomial experiment as a fixed number of Bernoulli trials",
+   "text": "Define a binomial experiment as a fixed number of Bernoulli trials"
+  },
+  {
+   "code": "HSC-M6-T2-D4",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Use the notation to represent a binomial random variable, , where is the number of trials and probability of success is",
+   "text": "Use the notation to represent a binomial random variable, , where is the number of trials and probability of success is"
+  },
+  {
+   "code": "HSC-M6-T2-D5",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Recognise the significance of as the number of ways in which an outcome with successes can occur in trials",
+   "text": "Recognise the significance of as the number of ways in which an outcome with successes can occur in trials"
+  },
+  {
+   "code": "HSC-M6-T2-D6",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Use the formula to find the probability of successes in a binomial experiment involving trials",
+   "text": "Use the formula to find the probability of successes in a binomial experiment involving trials"
+  },
+  {
+   "code": "HSC-M6-T2-D7",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Calculate the expected frequencies of the various possible outcomes from a binomial experiment, where the expected frequency of an outcome happening times in trials is",
+   "text": "Calculate the expected frequencies of the various possible outcomes from a binomial experiment, where the expected frequency of an outcome happening times in trials is"
+  },
+  {
+   "code": "HSC-M6-T2-D8",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Use the formulae to find the mean, and to find the variance when",
+   "text": "Use the formulae to find the mean, and to find the variance when"
+  },
+  {
+   "code": "HSC-M6-T2-D9",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Solve practical problems involving binomial distributions and binomial probabilities with and without online computational applications, excluding the normal approximation to the binomial distribution",
+   "text": "Solve practical problems involving binomial distributions and binomial probabilities with and without online computational applications, excluding the normal approximation to the binomial distribution"
+  },
+  {
+   "code": "HSC-M6-T3-D1",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Define a statistical population as the entire group of people or objects about which information is sought",
+   "text": "Define a statistical population as the entire group of people or objects about which information is sought"
+  },
+  {
+   "code": "HSC-M6-T3-D2",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Define a sample as a selection of people or objects drawn from a population",
+   "text": "Define a sample as a selection of people or objects drawn from a population"
+  },
+  {
+   "code": "HSC-M6-T3-D3",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Recognise that a statistic taken from a sample will be a good approximation if the sample is random and the sample size is large enough, typically",
+   "text": "Recognise that a statistic taken from a sample will be a good approximation if the sample is random and the sample size is large enough, typically"
+  },
+  {
+   "code": "HSC-M6-T3-D4",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Recognise that, in general, the distribution of a population and a statistic, such as its mean, are unknown",
+   "text": "Recognise that, in general, the distribution of a population and a statistic, such as its mean, are unknown"
+  },
+  {
+   "code": "HSC-M6-T3-D5",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Recognise that it is likely that the distribution of a random sample will resemble the distribution of the population when the sample size, , is large enough, typically",
+   "text": "Recognise that it is likely that the distribution of a random sample will resemble the distribution of the population when the sample size, , is large enough, typically"
+  },
+  {
+   "code": "HSC-M6-T3-D6",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Define the sample mean for a sample taken from a population as",
+   "text": "Define the sample mean for a sample taken from a population as"
+  },
+  {
+   "code": "HSC-M6-T3-D7",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Recognise that the sample means obtained from repeated sampling may be different, even if all the samples are of the same size",
+   "text": "Recognise that the sample means obtained from repeated sampling may be different, even if all the samples are of the same size"
+  },
+  {
+   "code": "HSC-M6-T3-D8",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Define, for a given sample size , the sampling distribution of the mean to be the distribution of the sample means of all samples of size",
+   "text": "Define, for a given sample size , the sampling distribution of the mean to be the distribution of the sample means of all samples of size"
+  },
+  {
+   "code": "HSC-M6-T3-D9",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Recognise that sample mean, , is a random variable that estimates the population mean, , when the size of the sample is large enough and consider its usefulness in making predictions in a variety of contexts including politics, finance, agriculture and biology",
+   "text": "Recognise that sample mean, , is a random variable that estimates the population mean, , when the size of the sample is large enough and consider its usefulness in making predictions in a variety of contexts including politics, finance, agriculture and biology"
+  },
+  {
+   "code": "HSC-M6-T3-D10",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / State the central limit theorem as: for a population with mean and variance , provided the sample size is large enough (), the sampling distribution is approximately normal with mean and variance ; that is, is approximately",
+   "text": "State the central limit theorem as: for a population with mean and variance , provided the sample size is large enough (), the sampling distribution is approximately normal with mean and variance ; that is, is approximately"
+  },
+  {
+   "code": "HSC-M6-T3-D11",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Recognise the significance of the central limit theorem for populations that are not necessarily normally distributed; that, irrespective of the population distribution, for a sufficiently large sample size, the sampling distribution of the mean is approximately normal",
+   "text": "Recognise the significance of the central limit theorem for populations that are not necessarily normally distributed; that, irrespective of the population distribution, for a sufficiently large sample size, the sampling distribution of the mean is approximately normal"
+  },
+  {
+   "code": "HSC-M6-T3-D12",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Use the formulas and as the mean and the variance of the sampling distribution of the mean for samples of size drawn from a population with mean and variance",
+   "text": "Use the formulas and as the mean and the variance of the sampling distribution of the mean for samples of size drawn from a population with mean and variance"
+  },
+  {
+   "code": "HSC-M6-T3-D13",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Examine the effect of the sample size on the variance of sample means with digital tools",
+   "text": "Examine the effect of the sample size on the variance of sample means with digital tools"
+  },
+  {
+   "code": "HSC-M6-T3-D14",
+   "path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Apply the central limit theorem to estimate the probability that the sample mean lies within given bounds",
+   "text": "Apply the central limit theorem to estimate the probability that the sample mean lies within given bounds"
+  }
+ ],
+ "questions": [
+  {
+   "id": "me1202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Polynomials / Sums and products of zeroes of polynomials / Use the formulas for the sums and products of zeroes to solve problems involving zeroes and coefficients of quadratic, cubic and quartic polynomials",
+   "text": "Which diagram best represents the solution set of $x^{2} - 2x - 3 \\geq 0$?\nNumber line with closed dots at $-1$ and $3$, with shading and arrows extending to the left of $-1$ and to the right of $3$.\nNumber line with closed dots at $-3$ and $1$, with shading and arrows extending to the left of $-3$ and to the right of $1$.\nNumber line with closed dots at $-1$ and $3$, with shading only between $-1$ and $3$.\nNumber line with closed dots at $-3$ and $1$, with shading only between $-3$ and $1$."
+  },
+  {
+   "id": "me1202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Inverse trigonometric functions / Definitions of inverse trigonometric functions / Define or to be the inverse function of restricted to , and determine the domain and range of",
+   "text": "Given $f(x) = 1 + \\sqrt{x}$, what are the domain and range of $f^{-1}(x)$?\n$x \\geq 0,\\ y \\geq 0$\n$x \\geq 0,\\ y \\geq 1$\n$x \\geq 1,\\ y \\geq 0$\n$x \\geq 1,\\ y \\geq 1$"
+  },
+  {
+   "id": "me1202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further calculus skills / Techniques of integration / Find indefinite and definite integrals involving expressions of the form or",
+   "text": "Which of the following is an anti-derivative of $\\frac{1}{4x^{2}+1}$?\n$2\\tan^{-1}\\left(\\frac{x}{2}\\right) + c$\n$\\frac{1}{2}\\tan^{-1}\\left(\\frac{x}{2}\\right) + c$\n$2\\tan^{-1}(2x) + c$\n$\\frac{1}{2}\\tan^{-1}(2x) + c$"
+  },
+  {
+   "id": "me1202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Operating with vectors / Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law",
+   "text": "Maria starts at the origin and walks along all of the vector $2\\mathbf{i} + 3\\mathbf{j}$, then walks along all of the vector $3\\mathbf{i} - 2\\mathbf{j}$ and finally along all of the vector $4\\mathbf{i} - 3\\mathbf{j}$. How far from the origin is she?\n$\\sqrt{77}$\n$\\sqrt{85}$\n$2\\sqrt{13} + \\sqrt{5}$\n$\\sqrt{5} + \\sqrt{7} + \\sqrt{13}$"
+  },
+  {
+   "id": "me1202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Multiplicity of zeroes of polynomial functions / Graph a polynomial function in factored form, identifying its turning points and points of inflection if possible, and explore its behaviour as and , verifying the shape of the graph using graphing applications",
+   "text": "A monic polynomial $p(x)$ of degree 4 has one repeated zero of multiplicity 2 and is divisible by $x^{2}+x+1$. Which of the following could be the graph of $p(x)$?\nQuartic opening downward at both ends, lying entirely below the x-axis except for a single touch of the x-axis on the right (tangent, no sign change).\nQuartic opening downward at both ends, crossing the x-axis twice near the y-axis, rising above the x-axis between those crossings, then falling below it and touching the x-axis again from below on the right.\nQuartic opening upward at both ends, touching the x-axis at exactly one point (tangent, no sign change) and otherwise above the x-axis.\nQuartic opening upward at both ends, crossing the x-axis at one point and touching it at a second point."
+  },
+  {
+   "id": "me1202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Operating with vectors / Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law",
+   "text": "The vectors $\\mathbf{a}$ and $\\mathbf{b}$ are shown in the diagram. Which diagram below shows the vector $\\mathbf{v} = \\mathbf{a} - \\mathbf{b}$?\nTriangle with $\\mathbf{a}$ along the top edge pointing up-right, $\\mathbf{b}$ along the bottom edge pointing down-right, and $\\mathbf{v}$ along the right edge pointing down.\nTriangle with $\\mathbf{a}$ then $\\mathbf{b}$ in series along the top, and $\\mathbf{v}$ along the long bottom edge pointing right.\nTriangle with $\\mathbf{v}$ along the top edge pointing left, $\\mathbf{b}$ pointing down-right and $\\mathbf{a}$ pointing up-right along the bottom.\nTriangle with $\\mathbf{v}$ along the left edge pointing up, $\\mathbf{a}$ along the bottom edge pointing up-right, and $\\mathbf{b}$ along the top edge pointing down-right."
+  },
+  {
+   "id": "me1202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Recognise the features of a slope field corresponding to a first order differential equation and vice versa",
+   "text": "Which of the following best represents the direction field for the differential equation $\\frac{dy}{dx} = -\\frac{x}{4y}$?\nDirection field with near-horizontal arrows for y away from 0, tilting down for x > 0 above the x-axis and up for x > 0 below it, with the opposite tilts for x < 0.\nDirection field with arrows turning steeply down to near-vertical just above the x-axis for x > 0 and steeply up just below it, and the reverse sign pattern for x < 0.\nDirection field with arrows turning steeply near the y-axis, vertical near x = 0.\nDirection field with all arrows pointing up and to the right uniformly."
+  },
+  {
+   "id": "me1202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Permutations and combinations / Solve problems involving both permutations and combinations, including problems which require consideration of cases",
+   "text": "Out of 10 contestants, six are to be selected for the final round of a competition. Four of those six will be placed 1st, 2nd, 3rd and 4th. In how many ways can this process be carried out?\n$\\frac{10!}{6!\\,4!}$\n$\\frac{10!}{6!}$\n$\\frac{10!}{4!\\,2!}$\n$\\frac{10!}{4!\\,4!}$"
+  },
+  {
+   "id": "me1202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Examine the proof of the formula and use the formula to solve problems",
+   "text": "The projection of the vector $\\begin{pmatrix} 6 \\\\ 7 \\end{pmatrix}$ onto the line $y = 2x$ is $\\begin{pmatrix} 4 \\\\ 8 \\end{pmatrix}$. The point $(6, 7)$ is reflected in the line $y = 2x$ to a point $A$. What is the position vector of the point $A$?\n$\\begin{pmatrix} 6 \\\\ 12 \\end{pmatrix}$\n$\\begin{pmatrix} 2 \\\\ 9 \\end{pmatrix}$\n$\\begin{pmatrix} -6 \\\\ 7 \\end{pmatrix}$\n$\\begin{pmatrix} -2 \\\\ 1 \\end{pmatrix}$"
+  },
+  {
+   "id": "me1202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Further rates of change / Solve problems involving related rates of change using the chain rule, given the required formulas for problems relating to area, surface area or volume",
+   "text": "The quantities $P$, $Q$ and $R$ are connected by the related rates, $\\frac{dR}{dt} = -k^{2}$, $\\frac{dP}{dt} = -l^{2} \\times \\frac{dR}{dt}$, $\\frac{dP}{dt} = m^{2} \\times \\frac{dQ}{dt}$, where $k$, $l$ and $m$ are non-zero constants. Which of the following statements is true?\n$P$ is increasing and $Q$ is increasing\n$P$ is increasing and $Q$ is decreasing\n$P$ is decreasing and $Q$ is increasing\n$P$ is decreasing and $Q$ is decreasing"
+  },
+  {
+   "id": "me1202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 11 / Further trigonometry / Further trigonometric equations / Apply the representations of as or to graph functions, solve equations of the form over restricted domains, and model and solve related problems | Year 12 / Introduction to vectors / Further operations with vectors / Establish as a condition for two non-zero vectors and to be perpendicular to each other and use it to determine if two vectors are perpendicular | Year 11 / Further work with functions / Graphical relationships / Examine the relationship between the graph of and the graphs of and using graphing applications, and graph and given in algebraic or graphical form | Year 11 / Polynomials / Remainder and factor theorems / Prove and apply the factor theorem for polynomials: if and only if is a factor of , and solve related polynomial problems | Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form , where possible expressing the solution as a function with as the subject",
+   "text": "Let $P(x) = x^{3} + 3x^{2} - 13x + 6$.\nShow that $P(2) = 0$.\nHence, factor the polynomial $P(x)$ as $A(x)B(x)$, where $B(x)$ is a quadratic polynomial.\nFor what value(s) of $a$ are the vectors $\\begin{pmatrix} a \\\\ -1 \\end{pmatrix}$ and $\\begin{pmatrix} 2a-3 \\\\ 2 \\end{pmatrix}$ perpendicular?\nThe diagram shows the graph of $y = f(x)$.\nSketch the graph of $y = \\frac{1}{f(x)}$.\nBy expressing $\\sqrt{3}\\sin x + 3\\cos x$ in the form $A\\sin(x+\\alpha)$, solve $\\sqrt{3}\\sin x + 3\\cos x = \\sqrt{3}$, for $0 \\leq x \\leq 2\\pi$.\nSolve $\\frac{dy}{dx} = e^{2y}$, finding $x$ as a function of $y$."
+  },
+  {
+   "id": "me1202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Proof by mathematical induction / Prove results for sums using mathematical induction | Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Use the formulae to find the mean, and to find the variance when | Year 11 / Permutations and combinations / Solve problems involving combinations with or without restrictions on the selection of one or more objects | Year 12 / Further calculus skills / Techniques of integration / Find indefinite and definite integrals involving expressions of the form or | Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form using separation of variables, where possible expressing the solution as a function with as the subject",
+   "text": "Use the principle of mathematical induction to show that for all integers $n \\geq 1$, $1 \\times 2 + 2 \\times 5 + 3 \\times 8 + \\cdots + n(3n-1) = n^{2}(n+1)$.\nWhen a particular biased coin is tossed, the probability of obtaining a head is $\\frac{3}{5}$. This coin is tossed 100 times. Let $X$ be the random variable representing the number of heads obtained. This random variable will have a binomial distribution.\nFind the expected value, $E(X)$.\nBy finding the variance, $\\mathrm{Var}(X)$, show that the standard deviation of $X$ is approximately 5.\nBy using a normal approximation, find the approximate probability that $X$ is between 55 and 65.\nTo complete a course, a student must choose and pass exactly three topics. There are eight topics from which to choose. Last year 400 students completed the course. Explain, using the pigeonhole principle, why at least eight students passed exactly the same three topics.\nFind $\\int_{0}^{\\pi/2} \\cos 5x \\sin 3x\\, dx$.\nFind the curve which satisfies the differential equation $\\frac{dy}{dx} = -\\frac{x}{y}$ and passes through the point $(1, 0)$."
+  },
+  {
+   "id": "me1202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further calculus skills / Techniques of integration / Use integration by substitution to evaluate definite and indefinite integrals given the substitution, where the substitution is expressed as a function of the variable of integration or where the variable of integration is the subject of the substitution | Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate the volume of a solid of revolution formed by rotating the region between two curves about either the -axis or -axis in both real-life and abstract contexts | Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Graph the composite functions , and by considering their domains and ranges | Year 12 / Further calculus skills / Further derivatives of functions / Apply the product, quotient and chain rules to find derivatives of functions of the form and where and are any of the functions covered in the scope of the Mathematics Advanced 11–12 Syllabus (2024) or inverse trigonometric functions and solve related problems",
+   "text": "Find $\\frac{d}{d\\theta}(\\sin^{3}\\theta)$.\nUse the substitution $x = \\tan\\theta$ to evaluate $\\int_{0}^{1} \\frac{x^{2}}{(1+x^{2})^{5/2}}\\,dx$.\nThe region $R$ is bounded by the $y$-axis, the graph of $y = \\cos(2x)$ and the graph of $y = \\sin x$, as shown in the diagram.\nFind the volume of the solid of revolution formed when the region $R$ is rotated about the $x$-axis.\nSuppose $f(x) = \\tan(\\cos^{-1}(x))$ and $g(x) = \\frac{\\sqrt{1-x^{2}}}{x}$. The graph of $y = g(x)$ is given.\nShow that $f'(x) = g'(x)$.\nUsing part (i), or otherwise, show that $f(x) = g(x)$."
+  },
+  {
+   "id": "me1202014",
+   "year": 2020,
+   "number": "14",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 11 / The binomial theorem / Prove identities involving binomial coefficients in binomial expansions by substituting values, comparing coefficients or applying a combinatorial argument to a specified context | Year 11 / Permutations and combinations / Prove for algebraically and using combinatorial arguments | Year 11 / Further trigonometry / Further trigonometric identities / Use the double angle formulas to solve problems and prove results",
+   "text": "Use the identity $(1+x)^{2n} = (1+x)^{n}(1+x)^{n}$ to show that $\\binom{2n}{n} = \\binom{n}{0}^{2} + \\binom{n}{1}^{2} + \\cdots + \\binom{n}{n}^{2}$, where $n$ is a positive integer.\nA club has $2n$ members, with $n$ women and $n$ men. A group consisting of an even number $(0, 2, 4, \\ldots, 2n)$ of members is chosen, with the number of men equal to the number of women. Show, giving reasons, that the number of ways to do this is $\\binom{2n}{n}$.\nFrom the group chosen in part (ii), one of the men and one of the women are selected as leaders. Show, giving reasons, that the number of ways to choose the even number of people and then the leaders is $1^{2}\\binom{n}{1}^{2} + 2^{2}\\binom{n}{2}^{2} + \\cdots + n^{2}\\binom{n}{n}^{2}$.\nThe process is now reversed so that the leaders, one man and one woman, are chosen first. The rest of the group is then selected, still made up of an equal number of women and men. By considering this reversed process and using part (ii), find a simple expression for the sum in part (iii).\nShow that $\\sin^{3}\\theta - \\frac{3}{4}\\sin\\theta + \\frac{\\sin(3\\theta)}{4} = 0$.\nBy letting $x = 4\\sin\\theta$ in the cubic equation $x^{3} - 12x + 8 = 0$, show that $\\sin(3\\theta) = \\frac{1}{2}$.\nProve that $\\sin^{2}\\frac{\\pi}{18} + \\sin^{2}\\frac{5\\pi}{18} + \\sin^{2}\\frac{25\\pi}{18} = \\frac{3}{2}$."
+  },
+  {
+   "id": "me1202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Operating with vectors / Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law",
+   "text": "Given that $\\overrightarrow{OP}=\\begin{pmatrix}-3\\\\1\\end{pmatrix}$ and $\\overrightarrow{OQ}=\\begin{pmatrix}2\\\\5\\end{pmatrix}$, what is $\\overrightarrow{PQ}$?"
+  },
+  {
+   "id": "me1202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further calculus skills / Techniques of integration / Prove and use the identities and to find integrals involving and",
+   "text": "Which of the following integrals is equivalent to $\\int \\sin^{2}3x\\,dx$?\n$\\int\\frac{1+\\cos6x}{2}dx$\n$\\int\\frac{1-\\cos6x}{2}dx$\n$\\int\\frac{1+\\sin6x}{2}dx$\n$\\int\\frac{1-\\sin6x}{2}dx$"
+  },
+  {
+   "id": "me1202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Polynomials / Remainder and factor theorems / Prove and apply the remainder theorem for polynomials: when is divided by , the remainder is , and solve related polynomial problems",
+   "text": "What is the remainder when $P(x)=-x^{3}-2x^{2}-3x+8$ is divided by $x+2$?\n$-14$\n$-2$\n$2$\n$14$"
+  },
+  {
+   "id": "me1202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form using separation of variables, where possible expressing the solution as a function with as the subject",
+   "text": "Consider the differential equation $\\dfrac{dy}{dx}=\\dfrac{x}{y}$. Which of the following equations best represents this relationship between $x$ and $y$?\n$y^{2}=x^{2}+c$\n$y^{2}=\\dfrac{x^{2}}{2}+c$\n$y=x\\ln|y|+c$\n$y=\\dfrac{x^{2}}{2}\\ln|y|+c$"
+  },
+  {
+   "id": "me1202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Use as a geometric expression of the scalar product of non-zero vectors and in two dimensions and three dimensions, where is the angle between the vectors and .",
+   "text": "For the two vectors $\\overrightarrow{OA}$ and $\\overrightarrow{OB}$ it is known that $\\overrightarrow{OA}\\cdot\\overrightarrow{OB}<0$. Which of the following statements MUST be true?\nEither, $\\overrightarrow{OA}$ is negative and $\\overrightarrow{OB}$ is positive, or, $\\overrightarrow{OA}$ is positive and $\\overrightarrow{OB}$ is negative.\nThe angle between $\\overrightarrow{OA}$ and $\\overrightarrow{OB}$ is obtuse.\nThe product $|\\overrightarrow{OA}||\\overrightarrow{OB}|$ is negative.\nThe points $O$, $A$ and $B$ are collinear."
+  },
+  {
+   "id": "me1202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Solve practical problems involving binomial distributions and binomial probabilities with and without online computational applications, excluding the normal approximation to the binomial distribution",
+   "text": "The random variable $X$ represents the number of successes in 10 independent Bernoulli trials. The probability of success is $p=0.9$ in each trial. Let $r=P(X\\geq1)$. Which of the following describes the value of $r$?\n$r>0.9$\n$r=0.9$\n$0.1<r<0.9$\n$r\\leq0.1$"
+  },
+  {
+   "id": "me1202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Graphical relationships / Apply knowledge of graphical relationships to solve problems involving graphs of functions, justifying conclusions in the context of the problem where appropriate",
+   "text": "Which curve best represents the graph of the function $f(x)=-a\\sin x+b\\cos x$ given that the constants $a$ and $b$ are both positive?\nOption A: sine-like wave with a maximum on the left of the $y$-axis, crossing zero just left of the origin, a minimum just right of the origin, and $f(0)<0$.\nOption B: wave with a minimum on the left of the $y$-axis, a maximum just right of the origin, and $f(0)>0$.\nOption C: wave with a maximum on the far left, a minimum left of the $y$-axis, crossing to a maximum right of the origin, and $f(0)<0$.\nOption D: wave with a maximum near the $y$-axis with $f(0)>0$, falling to a minimum to the right of the origin, with minima at both ends."
+  },
+  {
+   "id": "me1202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Parametric form of a function or relation / Recognise that a curve may be represented by two parametric equations that give and as functions of a parameter and that the curve may also have a Cartesian equation in and",
+   "text": "The diagram shows a semicircle with centre $(3,2)$ and endpoints $(2,2)$ and $(4,2)$ on the $x$-axis, opening downward. Which pair of parametric equations represents the semicircle shown?\n$x=3+\\sin t,\\ y=2+\\cos t$ for $-\\dfrac{\\pi}{2}\\leq t\\leq\\dfrac{\\pi}{2}$\n$x=3+\\cos t,\\ y=2+\\sin t$ for $-\\dfrac{\\pi}{2}\\leq t\\leq\\dfrac{\\pi}{2}$\n$x=3-\\sin t,\\ y=2-\\cos t$ for $-\\dfrac{\\pi}{2}\\leq t\\leq\\dfrac{\\pi}{2}$\n$x=3-\\cos t,\\ y=2-\\sin t$ for $-\\dfrac{\\pi}{2}\\leq t\\leq\\dfrac{\\pi}{2}$"
+  },
+  {
+   "id": "me1202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Examine the graphs of the composite functions , and , establish the values of for which the formulas , and are true, and apply the formulas to solve problems, simplify expressions and prove results",
+   "text": "Which graph represents the function $y=\\sin^{-1}(\\sin x)$?\nOption A: triangle wave through the origin with maxima at $y=\\pi/2$ and minima at $y=-\\pi/2$, repeating every $2\\pi$, with vertices at $x=\\pi/2+k\\pi$.\nOption B: disconnected parallel line segments of slope $1$ confined to $-\\pi/2\\leq y\\leq\\pi/2$, with solid dots at the upper ends and open circles at the lower ends, repeating every $2\\pi$.\nOption C: a single diagonal segment from $(-\\pi/2,-\\pi/2)$ to $(\\pi/2,\\pi/2)$ within $-\\pi\\leq x\\leq2\\pi$.\nOption D: a single straight line $y=x$ with arrows at both ends."
+  },
+  {
+   "id": "me1202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Permutations and combinations / Solve problems involving combinations with or without restrictions on the selection of one or more objects",
+   "text": "The members of a club voted for a new president. There were 15 candidates for the position of president and 3543 members voted. Each member voted for one candidate only. One candidate received more votes than anyone else and so became the new president. What is the smallest number of votes the new president could have received?\n$236$\n$237$\n$238$\n$239$"
+  },
+  {
+   "id": "me1202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to vectors / Operating with vectors / Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law | Year 11 / The binomial theorem / Apply the binomial theorem to expand and simplify expressions of the form | Year 12 / Further calculus skills / Techniques of integration / Use integration by substitution to evaluate definite and indefinite integrals given the substitution, where the substitution is expressed as a function of the variable of integration or where the variable of integration is the subject of the substitution | Year 11 / Permutations and combinations / Solve problems involving combinations with or without restrictions on the selection of one or more objects | Year 12 / Further applications of calculus / Further rates of change / Solve problems involving related rates of change using the chain rule, given the required formulas for problems relating to area, surface area or volume | Year 12 / Further calculus skills / Techniques of integration / Prove and use the identities and to find integrals involving and | Year 11 / Further trigonometry / Further trigonometric equations / Solve trigonometric equations involving factorisation and/or substitution of trigonometric identities over restricted domains | Year 11 / Polynomials / Sums and products of zeroes of polynomials / Use the formulas for the sums and products of zeroes to solve problems involving zeroes and coefficients of quadratic, cubic and quartic polynomials",
+   "text": "Find $(\\mathbf{i}+6\\mathbf{j})+(2\\mathbf{i}-7\\mathbf{j})$.\nExpand and simplify $(2a-b)^{4}$.\nUse the substitution $u=x+1$ to find $\\int x\\sqrt{x+1}\\,dx$.\nA committee containing 5 men and 3 women is to be formed from a group of 10 men and 8 women. In how many different ways can the committee be formed?\nA spherical bubble is moving up through a liquid. As it rises, the bubble gets bigger and its radius increases at the rate of $0.2\\,\\mathrm{mm/s}$. At what rate is the volume of the bubble increasing when its radius reaches $0.6\\,\\mathrm{mm}$? Express your answer in $\\mathrm{mm^{3}/s}$ rounded to one decimal place.\nEvaluate $\\displaystyle\\int_{0}^{\\sqrt{3}}\\frac{1}{\\sqrt{4-x^{2}}}\\,dx$.\nBy factorising, or otherwise, solve $2\\sin^{3}x+2\\sin^{2}x-\\sin x-1=0$ for $0\\leq x\\leq2\\pi$.\nThe roots of $x^{4}-3x+6=0$ are $\\alpha,\\beta,\\gamma$ and $\\delta$. What is the value of $\\dfrac{1}{\\alpha}+\\dfrac{1}{\\beta}+\\dfrac{1}{\\gamma}+\\dfrac{1}{\\delta}$?"
+  },
+  {
+   "id": "me1202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Graph solutions to first order differential equations given a slope field and identify the unique solution curve that satisfies a set of initial conditions | Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form using separation of variables, where possible expressing the solution as a function with as the subject | Year 12 / Further applications of calculus / Differential equations / Recognise and solve the first order differential equations for exponential growth and decay: and | Year 12 / Proof by mathematical induction / Prove results for sums using mathematical induction | Year 11 / Further work with functions / Inverse functions / Determine the equation for the inverse function of a given one-to-one function by interchanging the variables and in",
+   "text": "The direction field for a differential equation is given on page 1 of the Question 12 Writing Booklet. The graph of a particular solution to the differential equation passes through the point $P$. On the diagram provided in the writing booklet, sketch the graph of this particular solution.\nA bottle of water, with temperature $5^{\\circ}\\mathrm{C}$, is placed on a table in a room. The temperature of the room remains constant at $25^{\\circ}\\mathrm{C}$. After $t$ minutes, the temperature of the water, in degrees Celsius, is $T$. The temperature of the water can be modelled using the differential equation $\\dfrac{dT}{dt}=k(T-25)$ (Do NOT prove this.) where $k$ is the growth constant.\nAfter 8 minutes, the temperature of the water is $10^{\\circ}\\mathrm{C}$. By solving the differential equation, find the value of $t$ when the temperature of the water reaches $20^{\\circ}\\mathrm{C}$. Give your answer to the nearest minute.\nSketch the graph of $T$ as a function of $t$.\nUse mathematical induction to prove that $\\dfrac{1}{1\\times2\\times3}+\\dfrac{1}{2\\times3\\times4}+\\cdots+\\dfrac{1}{n(n+1)(n+2)}=\\dfrac14-\\dfrac{1}{2(n+1)(n+2)}$ for all integers $n\\geq1$.\nA function is defined by $f(x)=4-\\left(1-\\dfrac{x}{2}\\right)^{2}$ for $x$ in the domain $(-\\infty,2]$.\nSketch the graph of $y=f(x)$ showing the $x$- and $y$-intercepts.\nFind the equation of the inverse function, $f^{-1}(x)$, and state its domain.\nSketch the graph of $y=f^{-1}(x)$."
+  },
+  {
+   "id": "me1202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate the volume of a solid of revolution formed by rotating a region in the plane about the -axis or -axis in both real-life and abstract contexts | Year 12 / Introduction to vectors / Projectile motion / Derive and use the equations of motion of a projectile in vector form by splitting 2D motion into horizontal and vertical components to solve problems on projectiles | Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate areas of regions between curves determined by functions in both real-life and abstract contexts | Year 12 / Further calculus skills / Techniques of integration / Prove and use the identities and to find integrals involving and | Year 11 / Further trigonometry / Further trigonometric identities / Use sum and difference expansion formulas to solve problems and prove results | Year 11 / Further trigonometry / Further trigonometric equations / Solve trigonometric equations involving factorisation and/or substitution of trigonometric identities over restricted domains",
+   "text": "A 2-metre-high sculpture is to be made out of concrete. The sculpture is formed by rotating the region between $y=x^{2}$, $y=x^{2}+1$ and $y=2$ around the $y$-axis. The figure shows a roughly conical bowl 2 m high with a hemispherical-like hollow at the top. Find the volume of concrete needed to make the sculpture.\nWhen an object is projected from a point $h$ metres above the origin with initial speed $V\\,\\mathrm{m/s}$ at an angle of $\\theta^{\\circ}$ to the horizontal, its displacement vector, $t$ seconds after projection, is $\\mathbf{r}(t)=(Vt\\cos\\theta)\\mathbf{i}+(-5t^{2}+Vt\\sin\\theta+h)\\mathbf{j}$. (Do NOT prove this.) A person, standing in an empty room which is 3 m high, throws a ball at the far wall of the room. The ball leaves their hand 1 m above the floor and 10 m from the far wall. The initial velocity of the ball is $12\\,\\mathrm{m/s}$ at an angle of $30^{\\circ}$ to the horizontal. Show that the ball will NOT hit the ceiling of the room but that it will hit the far wall without hitting the floor.\nThe region enclosed by $y=2-|x|$ and $y=1-\\dfrac{8}{4+x^{2}}$ is shaded in the diagram. The diagram shows the lines meeting at $(-2,0)$ and $(2,0)$ with peak $(0,2)$ above and a dip to $(0,-1)$ below. Find the exact value of the area of the shaded region.\n(d)(i) The numbers $A,B$ and $C$ are related by the equations $A=B-d$ and $C=B+d$, where $d$ is a constant. Show that $\\dfrac{\\sin A+\\sin C}{\\cos A+\\cos C}=\\tan B$.\n(d)(ii) Hence, or otherwise, solve $\\dfrac{\\sin\\frac{5\\theta}{7}+\\sin\\frac{6\\theta}{7}}{\\cos\\frac{5\\theta}{7}+\\cos\\frac{6\\theta}{7}}=\\sqrt{3}$, for $0\\leq\\theta\\leq2\\pi$."
+  },
+  {
+   "id": "me1202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to vectors / Motion in vector form in two dimensions / Solve relative velocity problems involving constant crosswind/cross-current using vector diagrams, and describe the direction of a vector where required | Year 12 / Further applications of calculus / Differential equations / Solve differential equations of the form for some constants and , given the appropriate decomposition into partial fractions, to obtain the logistic function | Year 12 / Introduction to vectors / Further operations with vectors / Define as the scalar (dot) product of vectors and and use the scalar product to solve problems | Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Apply the central limit theorem to estimate the probability that the sample mean lies within given bounds | Year 12 / Further calculus skills / Further derivatives of functions / Verify using the chain rule that the derivative of the inverse function is the reciprocal of the derivative of the function, evaluated at the value of the inverse function, that is",
+   "text": "A plane needs to travel to a destination that is on a bearing of $063^{\\circ}$. The engine is set to fly at a constant $175\\,\\mathrm{km/h}$. However, there is a wind from the south with a constant speed of $42\\,\\mathrm{km/h}$. On what constant bearing, to the nearest degree, should the direction of the plane be set in order to reach the destination?\nIn a certain country, the population of deer was estimated in 1980 to be 150 000. The population growth is given by the logistic equation $\\dfrac{dP}{dt}=0.1P\\left(\\dfrac{C-P}{C}\\right)$ where $t$ is the number of years after 1980 and $C$ is the carrying capacity. In the year 2000, the population of deer was estimated to be 600 000. Use the fact that $\\dfrac{C}{P(C-P)}=\\dfrac{1}{P}+\\dfrac{1}{C-P}$ to show that the carrying capacity is approximately 1 130 000.\n(c)(i) For vector $\\mathbf{v}$, show that $\\mathbf{v}\\cdot\\mathbf{v}=|\\mathbf{v}|^{2}$.\n(c)(ii) In the trapezium $ABCD$, $BC$ is parallel to $AD$ and $|\\overrightarrow{AC}|=|\\overrightarrow{BD}|$. The diagram shows $B$-$C$ parallel to $A$-$D$ with marked equal diagonals. Let $\\mathbf{a}=\\overrightarrow{AB}$, $\\mathbf{b}=\\overrightarrow{BC}$ and $\\overrightarrow{AD}=k\\overrightarrow{BC}$, where $k>0$. Using part (i), or otherwise, show $2\\mathbf{a}\\cdot\\mathbf{b}+(1-k)|\\mathbf{b}|^{2}=0$.\nAt a certain factory, the proportion of faulty items produced by a machine is $p=\\dfrac{3}{500}$, which is considered to be acceptable. To confirm that the machine is working to this standard, a sample of size $n$ is taken and the sample proportion $\\hat{p}$ is calculated. It is assumed that $\\hat{p}$ is approximately normally distributed with $\\mu=p$ and $\\sigma^{2}=\\dfrac{p(1-p)}{n}$. Production by this machine will be shut down if $\\hat{p}\\geq\\dfrac{4}{500}$. The sample size is to be chosen so that the chance of shutting down the machine unnecessarily is less than 2.5%. Find the approximate sample size required, giving your answer to the nearest thousand.\nThe polynomial $g(x)=x^{3}+4x-2$ passes through the point $(1,3)$. Find the gradient of the tangent to $f(x)=xg^{-1}(x)$ at the point where $x=3$."
+  },
+  {
+   "id": "me1202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further trigonometry / Further trigonometric identities / Use sum and difference expansion formulas to solve problems and prove results",
+   "text": "It is given that $\\cos \\frac{5\\pi}{12} = \\frac{\\sqrt6+\\sqrt2}{4}$. Which of the following is the value of $\\cos \\frac{7\\pi}{12}$?\n$\\frac{\\sqrt6+\\sqrt2}{4}$\n$\\frac{\\sqrt6-\\sqrt2}{4}$\n$\\frac{\\sqrt2-\\sqrt6}{4}$\n$\\frac{-\\sqrt6-\\sqrt2}{4}$"
+  },
+  {
+   "id": "me1202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Graphical relationships / Apply knowledge of graphical relationships to solve problems involving graphs of functions, justifying conclusions in the context of the problem where appropriate",
+   "text": "The graph of $f(x) = \\frac{3}{x-1}+2$ is shown. The graph of $f(x)$ was transformed to get the graph of $g(x)$ as shown. What transformation was applied? Graphs described: original hyperbola with vertical asymptote $x=1$, horizontal $y=2$; $g$ is reflection in the $y$-axis (asymptotes $x=-1$).\n$g(x)=f(|x|)$\n$g(x)=-f(x)$\n$g(x)=f(-x)$\n$g(x)=\\frac{1}{f(x)}$"
+  },
+  {
+   "id": "me1202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Polynomials / Remainder and factor theorems / Express in the form the result of dividing by a divisor , that is not the zero polynomial, with quotient and remainder , and explain why either or",
+   "text": "Let $P(x)$ be a polynomial of degree 5. When $P(x)$ is divided by the polynomial $Q(x)$, the remainder is $2x+5$. Which of the following is true about the degree of $Q$?\nThe degree must be 1\nThe degree could be 1\nThe degree must be 2\nThe degree could be 2"
+  },
+  {
+   "id": "me1202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Graphical relationships / Determine the domains and ranges of the sum and difference of functions where possible, and, if appropriate, verify them using a graphing application",
+   "text": "The diagram shows the graph of the sum of the functions $f(x)$ and $g(x)$. Which of the following best represents the graphs of both $f(x)$ and $g(x)$? Diagram described per paper: sum graph shown; four multiple-choice graph pairs.\nOption A (correct pair): graphs whose sum matches the displayed sum graph\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "me1202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Parametric form of a function or relation / Graph linear and quadratic functions and circles expressed in parametric form",
+   "text": "A curve is defined in parametric form by $x=2+t$ and $y=3-2t^2$ for $-1 \\leq t \\leq 0$. Which diagram best represents this curve? Four diagram options.\nOption A: arc from (1,1) to (2,3) concave down opening left\nOption B: arc from (1,1) to (2,3) concave down opening right (correct)\nOption C: straight line segment\nOption D: parabola opening left"
+  },
+  {
+   "id": "me1202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Define the projection of a vector onto a vector , denoted by , to be the vector component of in the direction of vector",
+   "text": "The following diagram shows the vector $\\vec{u}$ and the vectors $\\mathbf{i}+\\mathbf{j}$, $-\\mathbf{i}+\\mathbf{j}$, $-\\mathbf{i}-\\mathbf{j}$ and $\\mathbf{i}-\\mathbf{j}$. Which statement regarding this diagram could be true?\nThe projection of $\\vec{u}$ onto $\\mathbf{i}+\\mathbf{j}$ is the vector $1.1\\mathbf{i}+1.8\\mathbf{j}$.\nThe projection of $\\vec{u}$ onto $-\\mathbf{i}+\\mathbf{j}$ is the vector $-0.4\\mathbf{i}+0.4\\mathbf{j}$.\nThe projection of $\\vec{u}$ onto $-\\mathbf{i}-\\mathbf{j}$ is the vector $3.2\\mathbf{i}+3.2\\mathbf{j}$.\nThe projection of $\\vec{u}$ onto $\\mathbf{i}-\\mathbf{j}$ is the vector $0.5\\mathbf{i}-0.5\\mathbf{j}$."
+  },
+  {
+   "id": "me1202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Permutations and combinations / Solve problems involving combinations with or without restrictions on the selection of one or more objects",
+   "text": "The diagram shows triangle $ABC$ with points chosen on each of the sides. On side $AB$, 3 points are chosen. On side $AC$, 4 points are chosen. On side $BC$, 5 points are chosen. How many triangles can be formed using the chosen points as vertices?\n$60$\n$145$\n$205$\n$220$"
+  },
+  {
+   "id": "me1202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Calculate the angle between two non-zero vectors and , in both two dimensions and three dimensions, using the scalar product by deriving and applying the relationship",
+   "text": "The angle between two unit vectors $\\vec{a}$ and $\\vec{b}$ is $\\theta$ and $|\\vec{a}+\\vec{b}| < 1$. Which of the following best describes the possible range of values of $\\theta$?\n$0 \\leq \\theta < \\frac{\\pi}{3}$\n$0 \\leq \\theta < \\frac{2\\pi}{3}$\n$\\frac{\\pi}{3} < \\theta \\leq \\pi$\n$\\frac{2\\pi}{3} < \\theta \\leq \\pi$"
+  },
+  {
+   "id": "me1202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further calculus skills / Further derivatives of functions / Solve problems involving derivatives of inverse functions",
+   "text": "A given function $f(x)$ has an inverse $f^{-1}(x)$. The derivatives of $f(x)$ and $f^{-1}(x)$ exist for all real $x$. The graphs $y=f(x)$ and $y=f^{-1}(x)$ have at least one point of intersection. Which statement is true for all points of intersection of these graphs?\nAll points of intersection lie on the line $y=x$.\nNone of the points of intersection lie on the line $y=x$.\nAt no point of intersection are the tangents to the graphs parallel.\nAt no point of intersection are the tangents to the graphs perpendicular."
+  },
+  {
+   "id": "me1202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Recognise the solutions to differential equations in the context of slope fields, and that slope fields are useful in determining the behaviour of solutions when the differential equation cannot be easily solved",
+   "text": "Which of the following could be the graph of a solution to the differential equation $\\frac{dy}{dx} = \\sin y + 1$? Four diagram options.\nOption A: exponential decay to horizontal asymptote\nOption B: graph increasing everywhere with no horizontal asymptote, slope always positive\nOption C: decreasing graph\nOption D: graph with periodic slope zero"
+  },
+  {
+   "id": "me1202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to vectors / Operating with vectors / Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law",
+   "text": "(a) For the vectors $\\vec{u}=\\mathbf{i}-\\mathbf{j}$ and $\\vec{v}=2\\mathbf{i}+\\mathbf{j}$, evaluate each of the following. (i) $\\vec{u}+3\\vec{v}$ 1 mark (ii) $\\vec{u}\\cdot\\vec{v}$ 1 mark\n(b) Find the exact value of $\\int_0^1 \\frac{x}{x^2+4}\\,dx$ using the substitution $u=x^2+4$. 3 marks\n(c) Find the coefficients of $x^2$ and $x^3$ in the expansion of $(1-x)^{8/3}$. 2 marks\n(d) The vectors $\\vec{u}=\\begin{pmatrix}a\\\\2\\end{pmatrix}$ and $\\vec{v}=\\begin{pmatrix}a-7\\\\4a-1\\end{pmatrix}$ are perpendicular. What are the possible values of $a$? 2 marks\n(e) Express $\\sqrt3\\sin x-\\sqrt3\\cos x$ in the form $R\\sin(x+\\alpha)$. 3 marks\n(f) Solve $\\frac{x}{2-x}\\geq 5$. 3 marks"
+  },
+  {
+   "id": "me1202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Form a slope field for a first order differential equation using graphing applications",
+   "text": "(a) A direction field is to be drawn for the differential equation $\\frac{dy}{dx}=\\frac{x-2y}{x^2+y^2}$. On the diagram on page 1 of the Question 12 Writing Booklet, clearly draw the correct slopes of the direction field at the points P, Q and R. 2 marks\n(b) A sports association manages 13 junior teams. Any team that has more than 3 players above the age limit will be penalised. A total of 41 players are found to be above the age limit. Will any team be penalised? Justify your answer. 2 marks\n(c) Find the equation of the tangent to $y=x\\arctan x$ at $(1,\\pi/4)$. Answer $y=mx+c$. 3 marks\n(d)(i) Using separation of variables, solve $\\frac{dT}{dt}=k(T-T_1)$ to show that $T=12+80e^{\\frac{t}{5}\\ln\\frac45}$ when coffee cools from 92C to 76C in 5 min in a 12C room. 3 marks\n(d)(ii) The optimal drinking temperature is 57C. Find $t$ to the nearest minute. 1 mark\n(e) A game consists of randomly selecting 4 balls from a bag with replacement. The bag contains 3 red and 7 green balls. Red scores 10, green scores -5. What is the expected score? 2 marks\n(f) Use mathematical induction to prove that $15^n+6^{2n+1}$ is divisible by 7 for all integers $n\\geq0$. 3 marks"
+  },
+  {
+   "id": "me1202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Establish as a condition for two non-zero vectors and to be perpendicular to each other and use it to determine if two vectors are perpendicular",
+   "text": "(a) Points A,B,C on circle centre O. vec a=OA, b=OB, c=OC. h=a+b+c, OH=h (diagram). Show BH and CA are perpendicular. 3 marks\n(b) Rotate about x-axis region under y=(k+1) sin(kx), k>0, x in [0, pi/2k]. Find k with volume pi^2. 3 marks\n(c) f(x)=sin x, g(x)=arcsin x on [-1,1]. Is g the inverse of f? Justify. 2 marks\n(d) The monic cubic $P$ has roots $\\alpha,\\beta,\\gamma$ with $\\alpha^2+\\beta^2+\\gamma^2=85$ and $P'(\\alpha)+P'(\\beta)+P'(\\gamma)=87$. Find $\\alpha\\beta+\\beta\\gamma+\\gamma\\alpha$. 3 marks\n(e) You may use the information on page 18 to answer this question. A chocolate factory claims 80% of bars weigh 150g or more. 16 bars selected, 8 weigh less than 150g. (i) Using normal approximation to binomial, calculate $P$ = probability of at least 8 bars weighing less than 150g in sample of 16. 2 marks; (ii) Explain why the method might not be valid. 1 mark"
+  },
+  {
+   "id": "me1202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form using separation of variables, where possible expressing the solution as a function with as the subject",
+   "text": "(a) Find the particular solution to the differential equation $(x-2)\\frac{dy}{dx}=xy$ that passes through the point $(0,1)$. 4 marks\n(c) Projectile $\\vec r_P=(2ut\\cos\\theta,2ut\\sin\\theta-\\frac12gt^2)$, target $\\vec r_T=(d+ut,0)$. Show $d$ is less than 37% of max range. 4 marks\n(c) A video game designer wants to include an obstacle. The initial distance between player and target is $d$, initial projectile speed is $2u$, launched at angle $\\theta$ to horizontal, gravity $g$. Taking player position as origin, projectile $\\vec{r}_P=(2ut\\cos\\theta,\\,2ut\\sin\\theta-\\frac12gt^2)$, target $\\vec{r}_T=(d+ut,0)$. (Do NOT prove these.) Show that, for the player to have a chance of hitting the target, $d$ must be less than 37% of the maximum possible range of the projectile (to 2 significant figures). 4 marks\n(d) You may use the information on page 18. An airline with 350 seats has 5% no-show probability. No more than 1% of flights should have more passengers showing up than available seats. Given management's decision and using a suitable approximation, find the maximum number of tickets that can be sold. 4 marks"
+  },
+  {
+   "id": "me1202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Further rates of change / Use , and the graph of for , where or and or , to model and solve problems where a limiting value of exists, including Newton’s Law of Cooling and ecosystems with a natural carrying capacity, and justify conclusions in the context of the problem",
+   "text": "The temperature $T(t)^{\\circ}\\mathrm{C}$ of an object at time $t$ seconds is modelled using Newton's Law of Cooling,\nWhat is the initial temperature of the object?\n-3\n4\n15\n19"
+  },
+  {
+   "id": "me1202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Solve practical problems involving binomial distributions and binomial probabilities with and without online computational applications, excluding the normal approximation to the binomial distribution",
+   "text": "A standard six-sided die is rolled 12 times.\nLet $\\hat{p}$ be the proportion of the rolls with an outcome of 2.\nWhich of the following expressions is the probability that at least 9 of the rolls have an outcome of 2?\n$P\\left(\\hat{p} \\geq \\frac{3}{4}\\right)$\n$P\\left(\\hat{p} \\geq \\frac{1}{6}\\right)$\n$P\\left(\\hat{p} \\leq \\frac{3}{4}\\right)$\n$P\\left(\\hat{p} \\leq \\frac{1}{6}\\right)$"
+  },
+  {
+   "id": "me1202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Graph solutions to first order differential equations given a slope field and identify the unique solution curve that satisfies a set of initial conditions",
+   "text": "The diagram shows the direction field of a differential equation. A particular solution to the differential equation passes through $(-2,1)$.\nWhere does the solution that passes through $(-2,1)$ cross the $y$-axis?\n$y = 1.12$\n$y = 1.34$\n$y = 1.56$\n$y = 1.78$"
+  },
+  {
+   "id": "me1202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate areas of regions between curves determined by functions in both real-life and abstract contexts",
+   "text": "The diagram shows the graphs of the functions $f(x)$ and $g(x)$. $y = f(x)$ is a line above the $x$-axis; $y = g(x)$ is a curve below $f$ and crossing the $x$-axis at $b$. Dashed vertical lines at $x=a$ and $x=c$.\nIt is known that\nWhat is the area between the curves $y = f(x)$ and $y = g(x)$ between $x = a$ and $x = c$?\n5\n7\n9\n11"
+  },
+  {
+   "id": "me1202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Examine the graphs of the composite functions , and , establish the values of for which the formulas , and are true, and apply the formulas to solve problems, simplify expressions and prove results",
+   "text": "Which of the following is the value of $\\sin^{-1}(\\sin a)$ given that $\\pi < a < \\frac{3\\pi}{2}$?\n$a - \\pi$\n$\\pi - a$\n$a$\n$-a$"
+  },
+  {
+   "id": "me1202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Define the projection of a vector onto a vector , denoted by , to be the vector component of in the direction of vector",
+   "text": "Given the two non-zero vectors $\\mathbf{a}$ and $\\mathbf{b}$, let $\\mathbf{c}$ be the projection of $\\mathbf{a}$ onto $\\mathbf{b}$.\nWhat is the projection of $10\\mathbf{a}$ onto $2\\mathbf{b}$?\n$2\\mathbf{c}$\n$5\\mathbf{c}$\n$10\\mathbf{c}$\n$20\\mathbf{c}$"
+  },
+  {
+   "id": "me1202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Use the properties , , and to solve problems, simplify expressions and prove results",
+   "text": "Which statement is always true for real numbers $a$ and $b$ where $-1 \\leq a < b \\leq 1$?\n$\\sec a < \\sec b$\n$\\sin^{-1} a < \\sin^{-1} b$\n$\\arccos a < \\arccos b$\n$\\cos^{-1} a + \\sin^{-1} a < \\cos^{-1} b + \\sin^{-1} b$"
+  },
+  {
+   "id": "me1202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Graphical relationships / Apply knowledge of graphical relationships to solve problems involving graphs of functions, justifying conclusions in the context of the problem where appropriate",
+   "text": "The diagram shows the graph of a function. The graph is a zigzag: from top-left down to $(-3,0)$, up to $(-2,1)$, down to $(-1,0)$, up to $(0,1)$, down to $(1,0)$, up to $(2,1)$, down to $(3,0)$, then up to the right.\nWhich of the following is the equation of the function?\n$y = |1 - ||x| - 2||$\n$y = |2 - ||x| - 1||$\n$y = |1 - |x - 2||$\n$y = |2 - |x - 1||$"
+  },
+  {
+   "id": "me1202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Graphical relationships / Apply knowledge of graphical relationships to solve problems involving graphs of functions, justifying conclusions in the context of the problem where appropriate",
+   "text": "The graph of a cubic function, $y = f(x)$, is given below. The cubic passes through $(0,1)$, dips below the $x$-axis left of the origin, then rises to a local maximum and falls, crossing the $x$-axis on the right.\nWhich of the following functions has an inverse relation whose graph has more than 3 points with an $x$-coordinate of 1?\n$y = \\sqrt{f(x)}$\n$y = \\frac{1}{f(x)}$\n$y = f(|x|)$\n$y = |f(x)|$"
+  },
+  {
+   "id": "me1202310",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Permutations and combinations / Solve problems involving circular arrangements of distinct objects with or without restrictions on the placement of one or more objects",
+   "text": "A group with 5 students and 3 teachers is to be arranged in a circle.\nIn how many ways can this be done if no more than 2 students can sit together?\n$4! \\times 3!$\n$5! \\times 3!$\n$2! \\times 5! \\times 3!$\n$2! \\times 2! \\times 2! \\times 3!$"
+  },
+  {
+   "id": "me1202311",
+   "year": 2023,
+   "number": "11",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 11 / Further work with functions / Parametric form of a function or relation / Convert linear and quadratic functions and circles from parametric form to Cartesian form",
+   "text": "The parametric equations of a line are given below.\nFind the Cartesian equation of this line in the form $y = mx + c$.\nIn how many different ways can all the letters of the word CONDOBOLIN be arranged in a line?\nConsider the polynomial\nwhere $a$ and $b$ are real numbers. It is given that $x + 1$ is a factor of $P(x)$ and that, when $P(x)$ is divided by $x - 2$, the remainder is $-18$. Find $a$ and $b$.\nFind $\\int \\frac{dx}{4 - 9x^2}$.\nSolve $\\cos\\theta + \\sin\\theta = 1$ for $0 \\leq \\theta \\leq 2\\pi$.\nA recent census found that 30% of Australians were born overseas. A sample of 900 randomly selected Australians was surveyed. Let $\\hat{p}$ be the sample proportion of surveyed people who were born overseas. A normal distribution is to be used to approximate $P(\\hat{p} \\leq 0.31)$.\nShow that the variance of the random variable $\\hat{p}$ is $\\frac{7}{30000}$.\nUse the standard normal distribution and the information on page 16 to approximate $P(\\hat{p} \\leq 0.31)$, giving your answer correct to two decimal places."
+  },
+  {
+   "id": "me1202312",
+   "year": 2023,
+   "number": "12",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further calculus skills / Techniques of integration / Use integration by substitution to evaluate definite and indefinite integrals given the substitution, where the substitution is expressed as a function of the variable of integration or where the variable of integration is the subject of the substitution",
+   "text": "Evaluate $\\int_3^4 (x+2)\\sqrt{x-3}\\,dx$ using the substitution $u = x - 3$.\nUse mathematical induction to prove that $(1 \\times 2) + (2 \\times 2^2) + (3 \\times 2^3) + \\cdots + (n \\times 2^n) = 2 + (n-1)2^{n+1}$ for all integers $n \\geq 1$.\nA gym has 9 pieces of equipment: 5 treadmills and 4 rowing machines. On average, each treadmill is used 65% of the time and each rowing machine is used 40% of the time.\nFind an expression for the probability that, at a particular time, exactly 3 of the 5 treadmills are in use.\nFind an expression for the probability that, at a particular time, exactly 3 of the 5 treadmills are in use and no rowing machines are in use.\nIt is known that $\\binom{n}{r} = \\binom{n-1}{r-1} + \\binom{n-1}{r}$ for all integers such that $1 \\leq r \\leq n-1$. (Do NOT prove this.) Find ONE possible set of values for $p$ and $q$ such that $\\binom{2022}{80} + \\binom{2022}{81} + \\binom{2023}{1943} = \\binom{p}{q}$.\nThe region, $R$, bounded by the hyperbola $y = \\frac{60}{x+5}$, the line $x = 10$ and the coordinate axes, is shown in the diagram: the region under the curve from the $y$-axis out to $x = 10$, shaded on the grid with $x$ marked 0, 5, 10 and $y$ marked 5, 10.\nFind the volume of the solid of revolution formed when the region $R$ is rotated about the $y$-axis. Leave your answer in exact form."
+  },
+  {
+   "id": "me1202313",
+   "year": 2023,
+   "number": "13",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Further rates of change / Solve problems involving related rates of change using the chain rule, given the required formulas for problems relating to area, surface area or volume",
+   "text": "A hemispherical water tank has radius $R$ cm. The tank has a hole at the bottom which allows water to drain out. Initially the tank is empty. Water is poured into the tank at a constant rate of $2kR$ cm$^3$s$^{-1}$, where $k$ is a positive constant. After $t$ seconds, the height of the water in the tank is $h$ cm, as shown in the diagram, and the volume of water in the tank is $V$ cm$^3$.\nIt is known that $V = \\pi\\left(Rh^2 - h^3/3\\right)$. (Do NOT prove this.) While water flows into the tank and also drains out of the bottom, the rate of change of the volume of water in the tank is given by $dV/dt = k(2R - h)$.\nShow that $\\frac{dh}{dt} = \\frac{k}{\\pi h}$.\nShow that the tank is full of water after $T = \\frac{\\pi R^2}{2k}$ seconds.\nThe instant the tank is full, water stops flowing into the tank, but it continues to drain out of the hole at the bottom as before. Show that the tank takes 3 times as long to empty as it did to fill.\nParticle $A$ is projected from the origin with initial speed $v$ m s$^{-1}$ at an angle $\\theta$ with the horizontal plane. At the same time, particle $B$ is projected horizontally with initial speed $u$ m s$^{-1}$ from a point that is $H$ metres above the origin, as shown in the diagram.\nThe position vector of particle $A$, $t$ seconds after it is projected, is given by $\\mathbf{r}_A(t) = \\begin{pmatrix} vt\\cos\\theta \\\\ vt\\sin\\theta - \\frac{1}{2}gt^2 \\end{pmatrix}$. (Do NOT prove this.) The position vector of particle $B$, $t$ seconds after it is projected, is given by $\\mathbf{r}_B(t) = \\begin{pmatrix} ut \\\\ H - \\frac{1}{2}gt^2 \\end{pmatrix}$. (Do NOT prove this.) The angle $\\theta$ is chosen so that $\\tan\\theta = 2$. The two particles collide.\nBy first showing that $\\cos\\theta = \\frac{1}{\\sqrt{5}}$, verify that $v = \\sqrt{5}u$.\nShow that the particles collide at time $T = \\frac{H}{2u}$.\nWhen the particles collide, their velocity vectors are perpendicular. Show that $H = \\frac{2u^2}{g}$.\nPrior to the collision, the trajectory of particle $A$ was a parabola. (Do NOT prove this.) Find the height of the vertex of that parabola above the horizontal plane. Give your answer in terms of $H$."
+  },
+  {
+   "id": "me1202314",
+   "year": 2023,
+   "number": "14",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further calculus skills / Further derivatives of functions / Solve problems involving derivatives of inverse functions",
+   "text": "Let $f(x) = 2x + \\ln x$, for $x > 0$.\nExplain why the inverse of $f(x)$ is a function.\nLet $g(x) = f^{-1}(x)$. By considering the value of $f(1)$, or otherwise, evaluate $g'(2)$.\nConsider the hyperbola $y = \\frac{1}{x}$ and the circle $(x - c)^2 + y^2 = c^2$, where $c$ is a constant.\nThe graphs of $y = x^4 - 2cx^3 + 1$ for $c = 0.8$ and $c = 1$ are shown in the diagram.\nShow that the $x$-coordinates of any points of intersection of the hyperbola and circle are zeros of the polynomial $P(x) = x^4 - 2cx^3 + 1$.\nBy considering the given graphs, or otherwise, find the exact value of $c > 0$ such that the hyperbola $y = 1/x$ and the circle $(x - c)^2 + y^2 = c^2$ intersect at only one point.\nGiven a non-zero vector $\\begin{pmatrix} p \\\\ q \\end{pmatrix}$, it is known that the vector $\\begin{pmatrix} q \\\\ -p \\end{pmatrix}$ is perpendicular to $\\begin{pmatrix} p \\\\ q \\end{pmatrix}$ and has the same magnitude. (Do NOT prove this.) Points $A$ and $B$ have position vectors $\\overrightarrow{OA} = \\begin{pmatrix} a_1 \\\\ a_2 \\end{pmatrix}$ and $\\overrightarrow{OB} = \\begin{pmatrix} b_1 \\\\ b_2 \\end{pmatrix}$ respectively.\nThe point $P$ lies on the circle centred at $I(r, 0)$ with radius $r > 0$, such that $\\overrightarrow{IP}$ makes an angle of $t$ to the horizontal. The point $Q$ lies on the circle centred at $J(-R, 0)$ with radius $R > 0$, such that $\\overrightarrow{JQ}$ makes an angle of $2t$ to the horizontal. Note that $\\overrightarrow{OP} = \\overrightarrow{OI} + \\overrightarrow{IP}$ and $\\overrightarrow{OQ} = \\overrightarrow{OJ} + \\overrightarrow{JQ}$.\nUsing the given information, or otherwise, show that the area of triangle $OAB$ is $\\frac{1}{2}|a_1b_2 - a_2b_1|$.\nUsing part (i), or otherwise, find the values of $t$, where $-\\pi \\leq t \\leq \\pi$, that maximise the area of triangle $OPQ$."
+  },
+  {
+   "id": "me1202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Polynomials / Sums and products of zeroes of polynomials / Use the formulas for the sums and products of zeroes to solve problems involving zeroes and coefficients of quadratic, cubic and quartic polynomials",
+   "text": "The polynomial $x^{3}+2x^{2}-5x-6$ has zeros $-1$, $-3$ and $\\alpha$.\nWhat is the value of $\\alpha$?\n$\\alpha = -2$\n$\\alpha = 2$\n$\\alpha = 3$\n$\\alpha = 6$"
+  },
+  {
+   "id": "me1202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Areas between curves and volumes of solids of revolution / Calculate areas of regions between curves determined by functions in both real-life and abstract contexts",
+   "text": "Consider the functions $y=f(x)$ and $y=g(x)$, and the regions shaded in the diagram below.\n$\\int_{-4}^{4}\\left(f(x)-g(x)\\right)dx$\n$\\left|\\int_{-4}^{4}\\left(f(x)-g(x)\\right)dx\\right|$\n$\\int_{-4}^{-3}\\left(f(x)-g(x)\\right)dx+\\int_{-3}^{-1}\\left(f(x)-g(x)\\right)dx+\\int_{-1}^{1}\\left(f(x)-g(x)\\right)dx+\\int_{1}^{4}\\left(f(x)-g(x)\\right)dx$\n$-\\int_{-4}^{-3}\\left(f(x)-g(x)\\right)dx+\\int_{-3}^{-1}\\left(f(x)-g(x)\\right)dx-\\int_{-1}^{1}\\left(f(x)-g(x)\\right)dx+\\int_{1}^{4}\\left(f(x)-g(x)\\right)dx$"
+  },
+  {
+   "id": "me1202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Permutations and combinations / Solve problems involving both permutations and combinations, including problems which require consideration of cases",
+   "text": "Students from 4 different schools come together to form a choir.\nWhat is the minimum size of the choir to know that there must be at least 20 students in the choir from one of the schools?\n$76$\n$77$\n$80$\n$81$"
+  },
+  {
+   "id": "me1202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Inverse trigonometric functions / Definitions of inverse trigonometric functions / Define or to be the inverse function of restricted to , and determine the domain and range of",
+   "text": "What are the domain and range of the function $y=2\\cos^{-1}(2x)+2\\sin^{-1}(2x)$?\nDomain: $[-0.5,0.5]$ and Range: $\\{\\pi\\}$\nDomain: $[-0.5,0.5]$ and Range: $[-\\pi,3\\pi]$\nDomain: $[-2,2]$ and Range: $\\{\\pi\\}$\nDomain: $[-2,2]$ and Range: $[-\\pi,3\\pi]$"
+  },
+  {
+   "id": "me1202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Inverse trigonometric functions / Graphs of inverse trigonometric functions / Apply the principles of transformations to inverse trigonometric functions to determine the function rule and graph the function, finding the domain and range of the transformed graph and determining any intercepts and asymptotes where appropriate",
+   "text": "Consider the function $g(x)=2\\sin^{-1}(3x)$.\nWhich transformations have been applied to $f(x)=\\sin^{-1}(x)$ to obtain $g(x)$?\nVertical dilation by a factor of $\\frac{1}{2}$ and a horizontal dilation by a factor of $\\frac{1}{3}$\nVertical dilation by a factor of $\\frac{1}{2}$ and a horizontal dilation by a factor of $3$\nVertical dilation by a factor of $2$ and a horizontal dilation by a factor of $\\frac{1}{3}$\nVertical dilation by a factor of $2$ and a horizontal dilation by a factor of $3$"
+  },
+  {
+   "id": "me1202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further trigonometry / Further trigonometric equations / Solve trigonometric equations involving factorisation and/or substitution of trigonometric identities over restricted domains",
+   "text": "How many real value(s) of $x$ satisfy the equation\nwhere $x\\in[0,2\\pi]$ and $b$ is not zero?\n$1$\n$2$\n$4$\n$8$"
+  },
+  {
+   "id": "me1202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Use the formula to find the probability of successes in a binomial experiment involving trials",
+   "text": "A driver's knowledge test contains 30 multiple-choice questions, each with 4 options. An applicant must get at least 29 correct to pass.\nIf an applicant correctly answers the first 25 questions and randomly guesses the last 5 questions, what is the probability that the applicant will pass the test?\n$\\frac{1}{256}$\n$\\frac{15}{1024}$\n$\\frac{1}{64}$\n$\\frac{21}{256}$"
+  },
+  {
+   "id": "me1202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The binomial distribution and sampling distribution of the mean / Sampling distribution of the mean and the central limit theorem / Use the formulas and as the mean and the variance of the sampling distribution of the mean for samples of size drawn from a population with mean and variance",
+   "text": "A local council is proposing to ban dog-walking on the beach. It is known that the proportion of households that have a dog is $\\frac{7}{12}$.\nThe local council wishes to poll $n$ households about this proposal.\nLet $\\hat{p}$ be the random variable representing the proportion of households polled that have a dog.\nWhat is the smallest sample size, $n$, for which the standard deviation of $\\hat{p}$ is less than 0.06?\n$67$\n$68$\n$94$\n$95$"
+  },
+  {
+   "id": "me1202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Permutations and combinations / Solve probability problems involving permutations and combinations",
+   "text": "A bag contains $n$ metal coins, $n\\geq 3$, that are made from either silver or bronze.\nThere are $k$ silver coins in the bag and the rest are bronze.\nTwo coins are to be drawn at random from the bag, with the first coin drawn not being replaced before the second coin is drawn.\nWhich of the following expressions will give the probability that the two coins drawn are made of the same metal?\n$\\frac{k(k-1)+(n-k)(n-k-1)}{n(n-1)}$\n$\\binom{n}{2}\\binom{n}{k}\\left(1-\\frac{k}{n}\\right)^{n-2}$\n$\\frac{\\binom{k}{2}+\\binom{n-k}{2}}{n(n-1)}$\n$\\frac{k^{2}+(n-k)^{2}}{n^{2}}$"
+  },
+  {
+   "id": "me1202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further trigonometry / Further trigonometric equations / Apply the representations of as or to graph functions, solve equations of the form over restricted domains, and model and solve related problems",
+   "text": "For real numbers $a$ and $b$, where $a\\neq 0$ and $b\\neq 0$, we can find numbers $\\alpha$, $\\beta$, $\\gamma$, $\\delta$ and $R$ such that $a\\cos x+b\\sin x$ can be written in the following 4 forms:\nwhere $R>0$ and $0<\\alpha,\\beta,\\gamma,\\delta<2\\pi$.\nWhat is the value of $\\alpha+\\beta+\\gamma+\\delta$?\n$0$\n$\\pi$\n$2\\pi$\n$4\\pi$"
+  },
+  {
+   "id": "me1202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to vectors / Operating with vectors / Perform addition and subtraction of vectors algebraically in component form, and verify, with and without graphing applications, that geometrically these are obtained using the triangle law or the parallelogram law",
+   "text": "Consider the vectors $\\mathbf{a}=3\\mathbf{i}+2\\mathbf{j}$ and $\\mathbf{b}=-\\mathbf{i}+4\\mathbf{j}$.\nFind $2\\mathbf{a}-\\mathbf{b}$.\nFind $\\mathbf{a}\\cdot\\mathbf{b}$.\nSolve $x^{2}-8x-9\\leq 0$.\nUsing the substitution $u=x-1$, find $\\int x\\sqrt{x-1}\\,dx$.\nSolve the differential equation $\\frac{dy}{dx}=xy$, given $y>0$. Express your answer in the form $y=e^{f(x)}$.\nDifferentiate the function $f(x)=\\arcsin\\left(x^{5}\\right)$.\nThe volume of a sphere of radius $r$ cm is given by $V=\\frac{4}{3}\\pi r^{3}$, and the volume of the sphere is increasing at a rate of $10\\ \\mathrm{cm^{3}}\\,\\mathrm{s^{-1}}$.\nShow that the rate of increase of the radius is given by $\\frac{dr}{dt}=\\frac{5}{2\\pi r^{2}}\\ \\mathrm{cm}\\,\\mathrm{s^{-1}}$.\nThe region $R$ is bounded by the curves $y=\\sin x$, $y=x$ and the line $x=\\frac{\\pi}{2}$ as shown in the diagram.\nFind the area of the region $R$."
+  },
+  {
+   "id": "me1202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The binomial distribution and sampling distribution of the mean / Binomial distributions / Solve practical problems involving binomial distributions and binomial probabilities with and without online computational applications, excluding the normal approximation to the binomial distribution",
+   "text": "The vectors $\\begin{pmatrix}a^{2}\\\\2\\end{pmatrix}$ and $\\begin{pmatrix}a+5\\\\a-4\\end{pmatrix}$ are perpendicular.\nFind the possible values of $a$.\nThe region $R$ is bounded by the function $y=x^{3}$, the $x$-axis and the lines $x=1$ and $x=2$.\nWhat is the volume of the solid of revolution obtained when the region $R$ is rotated about the $x$-axis?\nA charity employs a worker to collect donations. There is a 0.31 chance that when the charity worker talks to someone a donation is made to the charity.\nEach day the charity worker must talk to exactly 100 people.\nUse the standard normal distribution and the information on page 13 to approximate the probability that, on a particular day, at least 35% of the people talked to made a donation.\n(The table of values $P(Z\\leq z)$ for the standard normal distribution $N(0,1)$ is on page 13 of the paper.)\nUse mathematical induction to prove that $2^{3n}+13$ is divisible by 7 for all integers $n\\geq 1$.\nThe diagram shows the graph of $y=\\frac{1}{|x-5|}$.\nFor what values of $x$ is $\\frac{x}{6}\\geq\\frac{1}{|x-5|}$?"
+  },
+  {
+   "id": "me1202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Graph solutions to first order differential equations given a slope field and identify the unique solution curve that satisfies a set of initial conditions",
+   "text": "In an experiment, the population of insects, $P(t)$, was modelled by the logistic differential equation\nwhere $t$ is the time in days after the beginning of the experiment.\nThe diagram shows a direction field for this differential equation, with the point $S$ representing the initial population.\nExplain why the graph of the solution that passes through the point $S$ cannot also pass through the point $T$.\nOn the diagram provided on page 1 of the Question 13 Writing Booklet, clearly sketch the graph of the solution that passes through the point $S$.\nFind the predicted value of the population, $P(t)$, at which the rate of growth of the population is largest.\nShow that $\\cos^{4}x+\\sin^{4}x=\\frac{1+\\cos^{2}2x}{2}$.\nShow that $\\cos^{4}x+\\sin^{4}x=\\frac{1+\\cos^{2}2x}{2}$.\nHence, or otherwise, evaluate $\\int_{0}^{\\pi/4}(\\cos^{4}x+\\sin^{4}x)dx$.\nThe vector $\\mathbf{a}$ is $\\begin{pmatrix}1\\\\3\\end{pmatrix}$ and the vector $\\mathbf{b}$ is $\\begin{pmatrix}2\\\\-1\\end{pmatrix}$.\nThe projection of a vector $\\mathbf{x}$ onto the vector $\\mathbf{a}$ is $k\\mathbf{a}$, where $k$ is a real number.\nThe projection of the vector $\\mathbf{x}$ onto the vector $\\mathbf{b}$ is $p\\mathbf{b}$, where $p$ is a real number.\nFind the vector $\\mathbf{x}$ in terms of $k$ and $p$.\nUsing the substitution $u=e^{x}+2e^{-x}$, and considering $u^{2}$, find"
+  },
+  {
+   "id": "me1202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Solve first order differential equations of the form using separation of variables, where possible expressing the solution as a function with as the subject",
+   "text": "Find the domain and range of the function that is the solution to the differential equation\nand whose graph passes through the origin.\nFor what values of the constant $k$ would the function $f(x)=\\frac{kx}{1+x^{2}}+\\arctan x$ have an inverse?\nExplain why the equation $\\tan^{-1}(3x)+\\tan^{-1}(10x)=\\theta$, where $-\\pi<\\theta<\\pi$, has exactly one solution.\nExplain why the equation $\\tan^{-1}(3x)+\\tan^{-1}(10x)=\\theta$, where $-\\pi<\\theta<\\pi$, has exactly one solution.\nSolve $\\tan^{-1}(3x)+\\tan^{-1}(10x)=\\frac{3\\pi}{4}$.\nA particle is projected from the origin, with initial speed $V$ at an angle of $\\theta$ to the horizontal. The position vector of the particle, $\\mathbf{r}(t)$, where $t$ is the time after projection and $g$ is the acceleration due to gravity, is given by\nLet $D(t)$ be the distance of the particle from the origin at time $t$, so $D(t)=|\\mathbf{r}(t)|$.\nShow that for $\\theta<\\sin^{-1}\\left(\\sqrt{\\frac{8}{9}}\\right)$ the distance, $D(t)$, is increasing for all $t>0$."
+  },
+  {
+   "id": "me1202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further work with functions / Inequalities / Solve absolute value inequalities of the form , , , , where , and are constants, using algebraic and graphical methods or the characterisation of as the distance of from the origin",
+   "text": "What is the solution to $|2x+3|<5$?\n$-4 < x < 1$\n$x < -4 \\text{ or } x > 1$\n$-1 < x < 4$\n$x < -1 \\text{ or } x > 4$"
+  },
+  {
+   "id": "me1202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Define the projection of a vector onto a vector , denoted by , to be the vector component of in the direction of vector",
+   "text": "The projection of $\\mathbf{u}$ onto $\\mathbf{v}$ is given by $\\left(\\dfrac{\\mathbf{u}\\cdot\\mathbf{v}}{|\\mathbf{v}|^{2}}\\right)\\mathbf{v}$. What is the projection of $\\mathbf{u} = \\mathbf{i} + 2\\mathbf{j}$ onto $\\mathbf{v} = 2\\mathbf{i} - 3\\mathbf{j}$?\n$-\\dfrac{4}{5}(\\mathbf{i} + 2\\mathbf{j})$\n$-\\dfrac{4}{13}(2\\mathbf{i} - 3\\mathbf{j})$\n$-\\dfrac{4}{\\sqrt{5}}(\\mathbf{i} + 2\\mathbf{j})$\n$-\\dfrac{4}{\\sqrt{13}}(2\\mathbf{i} - 3\\mathbf{j})$"
+  },
+  {
+   "id": "me1202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further calculus skills / Techniques of integration / Use integration by substitution to evaluate definite and indefinite integrals given the substitution, where the substitution is expressed as a function of the variable of integration or where the variable of integration is the subject of the substitution",
+   "text": "Consider the integral $\\int_{-5/2}^{5/2} \\left(\\dfrac{1}{25 - x^{2}}\\right)dx$. The substitution $x = 5\\sin\\theta$ is applied. Which of the following is obtained?\n$\\dfrac{1}{5}\\int_{-\\pi/6}^{\\pi/6} \\text{cosec}\\,\\theta\\,d\\theta$\n$\\dfrac{1}{5}\\int_{-\\pi/6}^{\\pi/6} \\sec\\theta\\,d\\theta$\n$\\dfrac{1}{25}\\int_{-\\pi/6}^{\\pi/6} \\text{cosec}^{2}\\theta\\,d\\theta$\n$\\dfrac{1}{25}\\int_{-\\pi/6}^{\\pi/6} \\sec^{2}\\theta\\,d\\theta$"
+  },
+  {
+   "id": "me1202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The binomial distribution and sampling distribution of the mean / Bernoulli distributions / Establish and use the formulae to find the mean, and to find the variance of the Bernoulli distribution with parameter",
+   "text": "A Bernoulli random variable $X$ has probability distribution $P(x)=\\dfrac{x+1}{3}$ for $x=0,1$. What are the mean and variance of $X$?\n$E(X)=\\dfrac{1}{3},\\ \\text{Var}(X)=\\dfrac{2}{9}$\n$E(X)=\\dfrac{1}{3},\\ \\text{Var}(X)=\\dfrac{2}{3}$\n$E(X)=\\dfrac{2}{3},\\ \\text{Var}(X)=\\dfrac{2}{9}$\n$E(X)=\\dfrac{2}{3},\\ \\text{Var}(X)=\\dfrac{2}{3}$"
+  },
+  {
+   "id": "me1202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Further trigonometry / Further trigonometric equations / Solve trigonometric equations involving factorisation and/or substitution of trigonometric identities over restricted domains",
+   "text": "How many distinct solutions are there to the equation $\\cos 5x + \\sin x = 0$ for $0 \\le x \\le 2\\pi$?\n$5$\n$6$\n$9$\n$10$"
+  },
+  {
+   "id": "me1202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further calculus skills / Techniques of integration / Find indefinite and definite integrals involving expressions of the form or",
+   "text": "Given that $a$ is a non-zero constant, which of the following integrals is equal to zero?\n$\\int_{-a}^{a} x\\cos^{-1}(x)\\,dx$\n$\\int_{-a}^{a} x^{2}\\cos^{-1}(x)\\,dx$\n$\\int_{-a}^{a} x\\tan^{-1}(x)\\,dx$\n$\\int_{-a}^{a} x^{2}\\tan^{-1}(x)\\,dx$"
+  },
+  {
+   "id": "me1202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Recognise the features of a slope field corresponding to a first order differential equation and vice versa",
+   "text": "A slope field is shown.\n$\\dfrac{dy}{dx}=x^{2}$\n$\\dfrac{dy}{dx}=x^{2}+C,\\ C\\ne 0$\n$\\dfrac{dy}{dx}=x^{3}$\n$\\dfrac{dy}{dx}=x^{3}+C,\\ C\\ne 0$"
+  },
+  {
+   "id": "me1202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Define as the scalar (dot) product of vectors and and use the scalar product to solve problems",
+   "text": "Points $A$ and $B$ have non-zero, non-parallel position vectors $\\mathbf{a}$ and $\\mathbf{b}$ respectively. Point $C$ has position vector $\\mathbf{c}=3\\mathbf{a}-2\\mathbf{b}$. The points $A$, $B$ and $C$ lie on the same line. Which of the following must be true?\nPoint $A$ always lies between Points $B$ and $C$.\nPoint $B$ always lies between Points $A$ and $C$.\nPoint $C$ always lies between Points $A$ and $B$.\nThe order of the points cannot be determined."
+  },
+  {
+   "id": "me1202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Introduction to vectors / Further operations with vectors / Calculate the angle between two non-zero vectors and , in both two dimensions and three dimensions, using the scalar product by deriving and applying the relationship",
+   "text": "The vectors $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$ have magnitudes $3$, $5$ and $7$ respectively. Given that $\\mathbf{a}+\\mathbf{b}+\\mathbf{c}=\\mathbf{0}$, what is the size of angle $\\theta$ between $\\mathbf{a}$ and $\\mathbf{b}$?\n$\\dfrac{\\pi}{6}$\n$\\dfrac{\\pi}{3}$\n$\\dfrac{2\\pi}{3}$\n$\\dfrac{5\\pi}{6}$"
+  },
+  {
+   "id": "me1202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Further calculus skills / Further derivatives of functions / Solve problems involving derivatives of inverse functions",
+   "text": "For the function $f(x)$, it is known that $f(3)=1$, $f'(3)=2$ and $f''(3)=4$. Let $g(x)=f^{-1}(x)$. What is the value of $g''(1)$?\n$\\dfrac{1}{4}$\n$-\\dfrac{1}{4}$\n$-\\dfrac{1}{2}$\n$-1$"
+  },
+  {
+   "id": "me1202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 11 / Further work with functions / Inverse functions / Determine the equation for the inverse function of a given one-to-one function by interchanging the variables and in",
+   "text": "Show relevant mathematical reasoning and/or calculations.\nFind the inverse function, $f^{-1}(x)$, of the function $f(x)=1-\\dfrac{1}{x-2}$.\nSolve $\\sin 2\\theta-\\sin\\theta=0$ for $0 \\le \\theta \\le \\pi$.\nFind $\\int \\sin 3x\\cos x\\,dx$.\nSketch the graph of $y=\\dfrac{1}{3}\\cos^{-1}(2x)$.\nFor what value of $m$ is the vector $\\begin{pmatrix}1\\\\m\\end{pmatrix}$ parallel to the vector $\\begin{pmatrix}2\\\\6\\end{pmatrix}$?\nThe roots of $2x^{3}+6x^{2}+x-1=0$ are $\\alpha$, $\\beta$ and $\\gamma$. What is the value of $\\dfrac{1}{\\alpha\\beta}+\\dfrac{1}{\\alpha\\gamma}+\\dfrac{1}{\\beta\\gamma}$?\nEvaluate $\\int_{\\pi/6}^{\\pi/3} \\cos^{2}(3x)\\,dx$."
+  },
+  {
+   "id": "me1202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Further rates of change / Solve problems involving related rates of change using the chain rule, given the required formulas for problems relating to area, surface area or volume",
+   "text": "Show relevant mathematical reasoning and/or calculations.\nThe radius, $r$ cm, and angle, $\\theta$ radians, of a sector vary in such a way that its area remains a constant $10\\ \\text{cm}^{2}$.\nThe angle $\\theta$ is increasing at a constant rate of $2$ radians per second. Find the rate at which the radius is changing when the radius is $4$ cm.\nConsider the region bounded by the hyperbola $y=\\dfrac{1}{x}$, the $y$-axis and the lines $y=1$ and $y=a$ for $a>1$. Find the volume of the solid of revolution formed when the region is rotated about the $y$-axis.\nProve by mathematical induction that $1\\times(1!)+2\\times(2!)+\\cdots+n\\times(n!)=(n+1)!-1$ for integers $n \\ge 1$.\nFind the solution of $\\dfrac{dy}{dx}=\\sqrt{(2-y)(2+y)}$, given that $y=1$ when $x=0$.\nConsider the expression in parts (i) and (ii).\nExpress $\\sqrt{3}\\sin x-\\cos x$ in the form $2\\sin(x-\\alpha)$, where $0<\\alpha<\\dfrac{\\pi}{2}$.\nHence, or otherwise, solve $\\sqrt{3}\\sin x=\\cos x+1$, where $0 \\le x \\le 2\\pi$."
+  },
+  {
+   "id": "me1202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 16,
+   "type": "extended_response",
+   "current_path": "Year 12 / Further applications of calculus / Differential equations / Define a differential equation as an equation involving an unknown function and one or more of its derivatives",
+   "text": "Show relevant mathematical reasoning and/or calculations.\nIt is given that $\\dfrac{dy}{dx}=\\dfrac{5}{y}$ and $y=-4$ when $x=0$. Find $y$ as a function of $x$.\nEight guests are to be seated at a round table. If two of these guests refuse to sit next to each other, how many seating arrangements are possible?\nAt time $t$, a particle has position vector $\\mathbf{r}(t)=t\\mathbf{i}+\\dfrac{t^{2}}{9}\\mathbf{j}$, velocity vector $\\mathbf{v}(t)$ and acceleration vector $\\mathbf{a}(t)$. Find the time when the angle between $\\mathbf{v}(t)$ and $\\mathbf{a}(t)$ is $\\dfrac{\\pi}{4}$.\nA bag contains counters, some of which are green. One hundred trials of an experiment are run. In each trial, one counter is selected from the bag at random and its colour noted. The counter is returned to the bag after each trial. Let $X$ be the random variable representing the number of times that a green counter is selected. Given that $E(X)=20$ and $P(X \\ge k)=0.0668$, find the value of $k$. You may use the standard normal approximation and the information on page 13.\nConsider the binomial identities in parts (i) and (ii).\nThe Pascal\\u2019s triangle relation can be expressed as $\\binom{n}{r}=\\binom{n-1}{r-1}+\\binom{n-1}{r}$. (Do NOT prove this.) Show that $\\binom{m}{R}=\\binom{m+1}{R+1}-\\binom{m}{R+1}$.\nHence, or otherwise, prove that $\\binom{2000}{2000}+\\binom{2001}{2000}+\\binom{2002}{2000}+\\cdots+\\binom{2050}{2000}=\\binom{2051}{2001}$."
+  },
+  {
+   "id": "me1202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Introduction to vectors / Projectile motion / Derive and use the equations of motion of a projectile in vector form by splitting 2D motion into horizontal and vertical components to solve problems on projectiles",
+   "text": "Show relevant mathematical reasoning and/or calculations.\nProve that the product of any seven distinct factors of $60$ must be a multiple of $60$.\nPoints $A$ and $B$ lie vertically above the origin. Point $A$ is higher than point $B$ such that $\\dfrac{OA}{OB}=k$, where $k>1$. A particle is projected horizontally from point $A$ with velocity $U\\ \\text{m s}^{-1}$. After $T$ seconds, another particle is projected horizontally from point $B$ with velocity $V\\ \\text{m s}^{-1}$. The two particles land on the ground in the same place.\nShow that the ratio $\\dfrac{V}{U}$ depends only on $k$.\nThe hands of an analogue clock are $OA$ and $OB$, where $A$ is $\\left(\\sin\\left(\\dfrac{\\pi t}{360}\\right),\\cos\\left(\\dfrac{\\pi t}{360}\\right)\\right)$, $B$ is $\\left(2\\sin\\left(\\dfrac{\\pi t}{30}\\right),2\\cos\\left(\\dfrac{\\pi t}{30}\\right)\\right)$, $O$ is the origin, and $t \\ge 0$ is the number of minutes past midnight. Find the values of $t$ when the hands are perpendicular for the first and second time after midnight. Give your answers to 3 decimal places.\nThe function $f(x)$ is defined by $f(x)=\\cos^{-1}(\\sin x)$ in the domain $(0,\\pi)$. Find $f'(x)$ for those values of $x$ where it is defined.\nIt is given that $\\tan\\alpha$, $\\tan\\beta$ and $\\tan\\gamma$ are the three real roots of the polynomial equation $x^{3}+bx^{2}+cx-1+b+c=0$, where $b$ and $c$ are real numbers and $c \\ne 1$. Find the smallest positive value of $\\alpha+\\beta+\\gamma$."
+  }
+ ]
+}

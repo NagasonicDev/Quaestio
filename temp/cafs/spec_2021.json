@@ -1,0 +1,252 @@
+{
+  "course_id": "course_community_and_family_studies",
+  "course_name": "Community and Family Studies",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 6,
+      "node_codes": [
+        "HSC-M1-T1-D44",
+        "HSC-M1-T1-D41"
+      ],
+      "node_names": [
+        "Year 12 / Research Methodology / Research process / conducting research",
+        "Year 12 / Research Methodology / Research process / planning for research"
+      ],
+      "node_ids": [
+        "community-and-family-studies-n296",
+        "community-and-family-studies-n293"
+      ],
+      "tags": [
+        "case_study"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Harry is conducting an independent research project on student participation in organised sport during the Higher School Certificate year. Harry will need to conduct research using a range of research methods. Explain the steps involved in conducting this research, supporting each step with relevant examples."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer: Access sources of data (secondary data and literature review, then primary data such as questionnaires and interviews); collect and record data; document actions and issues; interpret findings and form conclusions."
+          }
+        }
+      ],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "6 marks: demonstrates extensive knowledge and understanding of each step involved when conducting research about participation in organised sport during the HSC year; provides a clear link between the components of the research process; provides relevant examples for all steps conducted.",
+              "5 marks: demonstrates thorough knowledge and understanding of each step involved when conducting research; provides a link between the components of the research process; provides relevant example(s) for all steps conducted.",
+              "4 marks: demonstrates sound knowledge and understanding of the steps involved when conducting research; attempts to link components of the research process; provides relevant example(s) for the step(s).",
+              "2-3 marks: provides some information about the step(s) involved when conducting research.",
+              "1 mark: provides some relevant information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "HSC",
+        "year": 2021,
+        "institution": "HSC",
+        "original_question_no": "26"
+      }
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 6,
+      "node_codes": [
+        "HSC-M3-T1-D52",
+        "HSC-M3-T1-D20"
+      ],
+      "node_names": [
+        "Year 12 / Parenting and Caring / Parenting / authoritarian",
+        "Year 12 / Parenting and Caring / Parenting / outline the roles of parents and carers and evaluate the significance of each role in various parenting and caring situations"
+      ],
+      "node_ids": [
+        "community-and-family-studies-n430",
+        "community-and-family-studies-n398"
+      ],
+      "tags": [
+        "case_study"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Joseph and Sarah have chosen an authoritarian parenting style for their 3-year-old son and 16-year-old daughter."
+          }
+        }
+      ],
+      "hint": [],
+      "parts": [
+        {
+          "part_label": "a",
+          "marks": 2,
+          "body": [
+            {
+              "block_type": "text",
+              "content": {
+                "text": "What are the characteristics of an authoritarian parenting style?"
+              }
+            }
+          ],
+          "hint": [],
+          "answer": [
+            {
+              "block_type": "text",
+              "content": {
+                "text": "Sample answer: Authoritarian parenting styles are rigid, inflexible and do not allow dependants to contribute to decision making; they enforce strict rules and consequences."
+              }
+            }
+          ],
+          "solution": [],
+          "marking_criteria": [
+            {
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "2 marks: provides characteristics of an authoritarian style of parenting.",
+                  "1 mark: provides relevant information."
+                ]
+              }
+            }
+          ],
+          "assets": [],
+          "parts": []
+        },
+        {
+          "part_label": "b",
+          "marks": 4,
+          "body": [
+            {
+              "block_type": "text",
+              "content": {
+                "text": "What are the effects an authoritarian parenting style could have on this family?"
+              }
+            }
+          ],
+          "hint": [],
+          "answer": [
+            {
+              "block_type": "text",
+              "content": {
+                "text": "Sample answer: Authoritarian parenting is inflexible with preconceived goals; it promotes clear boundaries and communication but may limit the child's independence and create fear, especially for the 3-year-old and 16-year-old."
+              }
+            }
+          ],
+          "solution": [],
+          "marking_criteria": [
+            {
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "4 marks: demonstrates thorough knowledge and understanding of the effects an authoritarian parenting style could have on this family; provides clear points for and/or against; provides relevant examples.",
+                  "3 marks: demonstrates sound knowledge and understanding of the effects; provides point(s) for and/or against; provides relevant example(s).",
+                  "2 marks: provides some information about the effects of an authoritarian parenting style.",
+                  "1 mark: provides relevant information."
+                ]
+              }
+            }
+          ],
+          "assets": [],
+          "parts": []
+        }
+      ],
+      "answer": [],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "2 marks: part (a) identifies characteristics of an authoritarian parenting style.",
+              "4 marks: part (b) explains effects of an authoritarian parenting style on this family."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "HSC",
+        "year": 2021,
+        "institution": "HSC",
+        "original_question_no": "27"
+      }
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 5,
+      "marks": 8,
+      "node_codes": [
+        "HSC-M3-T1-D9",
+        "HSC-M3-T1-D65"
+      ],
+      "node_names": [
+        "Year 12 / Parenting and Caring / Parenting / carers",
+        "Year 12 / Parenting and Caring / Parenting / Support for parents and carers"
+      ],
+      "node_ids": [
+        "community-and-family-studies-n387",
+        "community-and-family-studies-n443"
+      ],
+      "tags": [
+        "case_study"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sally cares for both her teenage son and her elderly mother who has a physical disability. Compare the strategies Sally would use in her roles as a parent and a carer, using relevant examples."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer: Similarities include satisfying specific needs (food, shelter, economic support) and building positive relationships; differences include home modifications and wheelchair access for the mother and educational support for the son."
+          }
+        }
+      ],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "8 marks: demonstrates extensive knowledge and understanding about parenting and caring roles; provides extensive information on how the strategies used are similar and/or different for the roles; provides relevant examples.",
+              "6-7 marks: demonstrates thorough knowledge and understanding about parenting and caring roles; provides thorough information on how the strategies used are similar and/or different; provides relevant examples.",
+              "4-5 marks: demonstrates sound knowledge about parenting and caring roles; provides information about strategies that can be used for both parent and carer; attempts to show similarity and/or difference; provides example(s).",
+              "2-3 marks: provides some information about parenting and/or caring and/or strategies.",
+              "1 mark: provides a relevant point about parenting or caring or a strategy."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "HSC",
+        "year": 2021,
+        "institution": "HSC",
+        "original_question_no": "29"
+      }
+    }
+  ]
+}

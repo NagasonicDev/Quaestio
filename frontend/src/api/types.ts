@@ -387,6 +387,7 @@ export interface Stimulus {
   stimulus_id: string;
   course_id: string;
   title: string | null;
+  attach_all: boolean;
   created_at: string;
   updated_at: string;
 }

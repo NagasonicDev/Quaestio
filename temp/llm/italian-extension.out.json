@@ -1,0 +1,20 @@
+{
+  "2020-hsc-italian-extension01": {"code": null, "confidence": "low", "why": "Novel extract, not the prescribed film"},
+  "2020-hsc-italian-extension03": {"code": null, "confidence": "low", "why": "Thematic essay; no theme dot in tree"},
+  "2020-hsc-italian-extension04": {"code": null, "confidence": "low", "why": "Relationships essay; no theme dot"},
+  "2021-hsc-italian-extension01": {"code": null, "confidence": "low", "why": "Novel extract, not the prescribed film"},
+  "2021-hsc-italian-extension03": {"code": null, "confidence": "low", "why": "Relationships essay; no theme dot"},
+  "2021-hsc-italian-extension04": {"code": null, "confidence": "low", "why": "Journeys essay; no theme dot"},
+  "2022-hsc-italian-extension01": {"code": null, "confidence": "low", "why": "Novel extract, not the prescribed film"},
+  "2022-hsc-italian-extension03": {"code": null, "confidence": "low", "why": "Thematic essay; no theme dot in tree"},
+  "2022-hsc-italian-extension04": {"code": null, "confidence": "low", "why": "Education essay; no theme dot"},
+  "2023-hsc-italian-extension01": {"code": null, "confidence": "low", "why": "Novel extract, not the prescribed film"},
+  "2023-hsc-italian-extension03": {"code": null, "confidence": "low", "why": "Relationships essay; no theme dot"},
+  "2023-hsc-italian-extension04": {"code": null, "confidence": "low", "why": "Education essay; no theme dot"},
+  "2024-hsc-italian-extension01": {"code": null, "confidence": "low", "why": "Novel extract, not the prescribed film"},
+  "2024-hsc-italian-extension03": {"code": null, "confidence": "low", "why": "Relationships essay; no theme dot"},
+  "2024-hsc-italian-extension04": {"code": null, "confidence": "low", "why": "Thematic essay; no theme dot in tree"},
+  "2025-hsc-italian-extension01": {"code": "HSC-M1-T4-T1-D41", "confidence": "high", "why": "Film extract analysis, director techniques"},
+  "2025-hsc-italian-extension03": {"code": null, "confidence": "low", "why": "Thematic essay; no theme dot in tree"},
+  "2025-hsc-italian-extension04": {"code": null, "confidence": "low", "why": "Education essay; no theme dot"}
+}

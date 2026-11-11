@@ -1,0 +1,9 @@
+{
+  "ms22020q17": {"code": "HSC-S2-M5-T1-D9", "confidence": "high", "why": "estimate population by sample ratio (capture-recapture)"},
+  "ms22020q23": {"code": "HSC-S2-M5-T1-D5", "confidence": "medium", "why": "practical ratio and volume problem"},
+  "ms22020q24": {"code": "HSC-S2-M1-T1-D8", "confidence": "high", "why": "develop simultaneous equations to model tanks"},
+  "ms22021q15": {"code": "HSC-S2-M5-T1-D2", "confidence": "high", "why": "express a ratio in simplest form"},
+  "ms22021q28": {"code": "HSC-S2-M8-T2-D8", "confidence": "high", "why": "least-squares regression equation from data"},
+  "ms22021q33": {"code": "HSC-S2-M8-T2-D5", "confidence": "medium", "why": "use regression lines to predict and compare"},
+  "ms12023q01": {"code": null, "confidence": "low", "why": "rounding decimals; no matching dot"}
+}

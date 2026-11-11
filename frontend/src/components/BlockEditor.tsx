@@ -1,10 +1,11 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
-import { ArrowDown, ArrowUp, Plus, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, FileText, Plus, Trash2 } from "lucide-react";
 import { InlineMath, BlockMath } from "react-katex";
 if (typeof window !== "undefined") void import("katex/dist/katex.min.css");
 import type { BlockType } from "../api/types.ts";
 import { api, assetUrl } from "../api/client.ts";
 import { ensureAssetUrl } from "../lib/assets.ts";
+import { pdfToImageBlocks } from "../lib/pdf.ts";
 import { Meta, Panel, PanelHead } from "./system.tsx";
 import { Button } from "./ui/button.tsx";
 import { notify } from "../lib/notifications.ts";
@@ -86,6 +87,8 @@ interface BlockEditorProps {
 
 export function BlockEditor({ label, blocks, onChange, note }: BlockEditorProps) {
   const [addType, setAddType] = useState<BlockType>("text");
+  const [pdfUploading, setPdfUploading] = useState(false);
+  const pdfInput = useRef<HTMLInputElement>(null);
 
   function update(tempId: string, content: Record<string, any>) {
     onChange(blocks.map((b) => (b.tempId === tempId ? { ...b, content } : b)));
@@ -106,6 +109,22 @@ export function BlockEditor({ label, blocks, onChange, note }: BlockEditorProps)
   }
   function insert(index: number) {
     onChange([...blocks.slice(0, index), emptyBlock(addType), ...blocks.slice(index)]);
+  }
+
+  async function addPdf(file: File | null) {
+    if (!file) return;
+    setPdfUploading(true);
+    try {
+      const pages = await pdfToImageBlocks(file);
+      onChange([
+        ...blocks,
+        ...pages.map((page) => ({ tempId: newTempId(), block_type: page.block_type, content: page.content })),
+      ]);
+    } catch (err) {
+      notify("Could not attach PDF", "error", err instanceof Error ? err.message : "PDF upload failed.");
+    } finally {
+      setPdfUploading(false);
+    }
   }
 
   function insertionControl(index: number, label: string) {
@@ -167,7 +186,20 @@ export function BlockEditor({ label, blocks, onChange, note }: BlockEditorProps)
             {insertionControl(i + 1, `after ${block.block_type.replace(/_/g, " ")}`)}
           </div>
         ))}
-        <div className="mt-2 flex items-center justify-end gap-1.5 border-t border-border pt-3">
+        <div className="mt-2 flex flex-wrap items-center justify-end gap-1.5 border-t border-border pt-3">
+          <Button type="button" size="sm" variant="outline" disabled={pdfUploading} onClick={() => pdfInput.current?.click()}>
+            <FileText /> {pdfUploading ? "Adding PDF…" : "Attach PDF"}
+          </Button>
+          <input
+            ref={pdfInput}
+            type="file"
+            accept="application/pdf,.pdf"
+            className="hidden"
+            onChange={(e) => {
+              void addPdf(e.target.files?.[0] ?? null);
+              e.currentTarget.value = "";
+            }}
+          />
           <Select value={addType} onValueChange={(v) => setAddType(v as BlockType)}>
             <SelectTrigger className="h-8 w-40"><SelectValue /></SelectTrigger>
             <SelectContent>

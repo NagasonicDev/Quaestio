@@ -1,0 +1,1198 @@
+{
+ "course_id": "health-and-movement-science",
+ "course_name": "Health and Movement Science",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / Compare meanings of health, using various sources, including the World Health Organization’s (WHO) definition, and explain why people give different meanings to health",
+   "text": "Compare meanings of health, using various sources, including the World Health Organization’s (WHO) definition, and explain why people give different meanings to health"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / Explain the dynamic nature of health by exploring the interactions between the dimensions of health, the concept of good health, the health continuum, how health changes over time, and how an individual’s circumstances affect their health",
+   "text": "Explain the dynamic nature of health by exploring the interactions between the dimensions of health, the concept of good health, the health continuum, how health changes over time, and how an individual’s circumstances affect their health"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / Discuss the use of epidemiology, mortality, infant mortality, morbidity, incidence and prevalence to explain the health status of Australians using tables and graphs from Australia’s Health and other health reports",
+   "text": "Discuss the use of epidemiology, mortality, infant mortality, morbidity, incidence and prevalence to explain the health status of Australians using tables and graphs from Australia’s Health and other health reports"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / Investigate the role of social justice principles, participation, equity, access and rights, in promoting an individual and community’s health status",
+   "text": "Investigate the role of social justice principles, participation, equity, access and rights, in promoting an individual and community’s health status"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / Discuss the range of determinants (broad features of society, environmental factors, socioeconomic characteristics, health behaviours and biomedical factors), that influence the health and wellbeing of Australians",
+   "text": "Discuss the range of determinants (broad features of society, environmental factors, socioeconomic characteristics, health behaviours and biomedical factors), that influence the health and wellbeing of Australians"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / how do the determinants interact to affect the health of population groups?",
+   "text": "how do the determinants interact to affect the health of population groups?"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / what are the sociological causes of risky health behaviours?",
+   "text": "what are the sociological causes of risky health behaviours?"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Health for individuals and communities / Health and health status / where do inequities exist and what can we do about them?",
+   "text": "where do inequities exist and what can we do about them?"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / Explore across generations aspects of young people’s lives that make them similar and different to the young people of previous generations",
+   "text": "Explore across generations aspects of young people’s lives that make them similar and different to the young people of previous generations"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / Investigate the meanings of health for young people",
+   "text": "Investigate the meanings of health for young people"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / creating a research question",
+   "text": "creating a research question"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / developing a method(s) to collect data",
+   "text": "developing a method(s) to collect data"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / considering how the determinants of health impact on a young person’s meaning of health",
+   "text": "considering how the determinants of health impact on a young person’s meaning of health"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / analysing the different ways young people define what is important to their own health",
+   "text": "analysing the different ways young people define what is important to their own health"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / discussing ethical considerations",
+   "text": "discussing ethical considerations"
+  },
+  {
+   "code": "PRE-M1-T3-D8",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / discussing validity, reliability and credibility of data collection",
+   "text": "discussing validity, reliability and credibility of data collection"
+  },
+  {
+   "code": "PRE-M1-T3-D9",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / presenting findings and drawing conclusions",
+   "text": "presenting findings and drawing conclusions"
+  },
+  {
+   "code": "PRE-M1-T3-D10",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / identifying further research questions that could be explored",
+   "text": "identifying further research questions that could be explored"
+  },
+  {
+   "code": "PRE-M1-T3-D11",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / Examine how young people advocate for their own and others’ health using various sources considering past, current and future advocacy and the role of individuals within their communities",
+   "text": "Examine how young people advocate for their own and others’ health using various sources considering past, current and future advocacy and the role of individuals within their communities"
+  },
+  {
+   "code": "PRE-M1-T3-D12",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / Discuss how organisations and communities advocate for the health of young people",
+   "text": "Discuss how organisations and communities advocate for the health of young people"
+  },
+  {
+   "code": "PRE-M1-T3-D13",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / the role government and non-government organisations and communities have in promoting the health of young people, including Aboriginal and/or Torres Strait Islander young people",
+   "text": "the role government and non-government organisations and communities have in promoting the health of young people, including Aboriginal and/or Torres Strait Islander young people"
+  },
+  {
+   "code": "PRE-M1-T3-D14",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / the impact of organisations and communities on the health of young people",
+   "text": "the impact of organisations and communities on the health of young people"
+  },
+  {
+   "code": "PRE-M1-T3-D15",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / Explain the nature of health promotion in Australia",
+   "text": "Explain the nature of health promotion in Australia"
+  },
+  {
+   "code": "PRE-M1-T3-D16",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / how have various approaches to health influenced health promotion?",
+   "text": "how have various approaches to health influenced health promotion?"
+  },
+  {
+   "code": "PRE-M1-T3-D17",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / what global health policies have impacted health promotion in Australia?",
+   "text": "what global health policies have impacted health promotion in Australia?"
+  },
+  {
+   "code": "PRE-M1-T3-D18",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / how has the Ottawa Charter been used to improve Australia’s health?",
+   "text": "how has the Ottawa Charter been used to improve Australia’s health?"
+  },
+  {
+   "code": "PRE-M1-T3-D19",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / how does health promotion in partnerships with communities strengthen the health of individuals and communities across a range of cultural groups including Aboriginal and Torres Strait Islander Peoples?",
+   "text": "how does health promotion in partnerships with communities strengthen the health of individuals and communities across a range of cultural groups including Aboriginal and Torres Strait Islander Peoples?"
+  },
+  {
+   "code": "PRE-M1-T3-D20",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / Examine how the United Nations Sustainable Development Goals (SDGs) are being used to improve health",
+   "text": "Examine how the United Nations Sustainable Development Goals (SDGs) are being used to improve health"
+  },
+  {
+   "code": "PRE-M1-T3-D21",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / what are the SDGs?",
+   "text": "what are the SDGs?"
+  },
+  {
+   "code": "PRE-M1-T3-D22",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / how has the World Health Organization applied a health lens to the SDGs?",
+   "text": "how has the World Health Organization applied a health lens to the SDGs?"
+  },
+  {
+   "code": "PRE-M1-T3-D23",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / how are the SDGs being used in Australia?",
+   "text": "how are the SDGs being used in Australia?"
+  },
+  {
+   "code": "PRE-M1-T3-D24",
+   "path": "Year 11 / Health for individuals and communities / Health of young people / how could the SDGs be used to promote the health of young people in a local community?",
+   "text": "how could the SDGs be used to promote the health of young people in a local community?"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / Examine the health status of young people, including Aboriginal and Torres Strait Islander young people, using Australia’s Health and other health reports, graphs and tables",
+   "text": "Examine the health status of young people, including Aboriginal and Torres Strait Islander young people, using Australia’s Health and other health reports, graphs and tables"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what are the trends in key health issues?",
+   "text": "what are the trends in key health issues?"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what are the causes and protective factors of key health issues?",
+   "text": "what are the causes and protective factors of key health issues?"
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / how do the determinants of health affect health-related behaviours?",
+   "text": "how do the determinants of health affect health-related behaviours?"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / Research ONE health-related issue for young people",
+   "text": "Research ONE health-related issue for young people"
+  },
+  {
+   "code": "PRE-M1-T4-D6",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what is the nature of the issue?",
+   "text": "what is the nature of the issue?"
+  },
+  {
+   "code": "PRE-M1-T4-D7",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what does the data tell us?",
+   "text": "what does the data tell us?"
+  },
+  {
+   "code": "PRE-M1-T4-D8",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / why is this an issue?",
+   "text": "why is this an issue?"
+  },
+  {
+   "code": "PRE-M1-T4-D9",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what are the protective factors to prevent the issue?",
+   "text": "what are the protective factors to prevent the issue?"
+  },
+  {
+   "code": "PRE-M1-T4-D10",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what strategies are currently in place to improve the health of young people?",
+   "text": "what strategies are currently in place to improve the health of young people?"
+  },
+  {
+   "code": "PRE-M1-T4-D11",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what new strategies would be most effective to improve young people’s health?",
+   "text": "what new strategies would be most effective to improve young people’s health?"
+  },
+  {
+   "code": "PRE-M1-T4-D12",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / what further research questions could be explored to build understanding and advocacy?",
+   "text": "what further research questions could be explored to build understanding and advocacy?"
+  },
+  {
+   "code": "PRE-M1-T4-D13",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / Analyse how the skills for strengthening the individual can protect and enhance the health and wellbeing of themselves and others using the health issue researched",
+   "text": "Analyse how the skills for strengthening the individual can protect and enhance the health and wellbeing of themselves and others using the health issue researched"
+  },
+  {
+   "code": "PRE-M1-T4-D14",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / self-efficacy",
+   "text": "self-efficacy"
+  },
+  {
+   "code": "PRE-M1-T4-D15",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / health literacy",
+   "text": "health literacy"
+  },
+  {
+   "code": "PRE-M1-T4-D16",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / help-seeking behaviours",
+   "text": "help-seeking behaviours"
+  },
+  {
+   "code": "PRE-M1-T4-D17",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / problem-solving",
+   "text": "problem-solving"
+  },
+  {
+   "code": "PRE-M1-T4-D18",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / resilience",
+   "text": "resilience"
+  },
+  {
+   "code": "PRE-M1-T4-D19",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / coping strategies",
+   "text": "coping strategies"
+  },
+  {
+   "code": "PRE-M1-T4-D20",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / sense of purpose",
+   "text": "sense of purpose"
+  },
+  {
+   "code": "PRE-M1-T4-D21",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / ethical behaviour",
+   "text": "ethical behaviour"
+  },
+  {
+   "code": "PRE-M1-T4-D22",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / connectedness",
+   "text": "connectedness"
+  },
+  {
+   "code": "PRE-M1-T4-D23",
+   "path": "Year 11 / Health for individuals and communities / Health of Aboriginal and Torres Strait Islander Peoples / Reflect on their own personal health and health behaviours and indicate courses of action for improved health and wellbeing",
+   "text": "Reflect on their own personal health and health behaviours and indicate courses of action for improved health and wellbeing"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / The body and mind in motion / The body in motion / Explain the interrelationship between the skeletal and muscular systems and movement",
+   "text": "Explain the interrelationship between the skeletal and muscular systems and movement"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / The body and mind in motion / The body in motion / structure and function",
+   "text": "structure and function"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / The body and mind in motion / The body in motion / major bones and synovial joints",
+   "text": "major bones and synovial joints"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / The body and mind in motion / The body in motion / joint actions",
+   "text": "joint actions"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / The body and mind in motion / The body in motion / major muscles",
+   "text": "major muscles"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / The body and mind in motion / The body in motion / characteristics and functions of muscle fibres",
+   "text": "characteristics and functions of muscle fibres"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / The body and mind in motion / The body in motion / types of muscle contractions",
+   "text": "types of muscle contractions"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / The body and mind in motion / The body in motion / muscle relationship",
+   "text": "muscle relationship"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / The body and mind in motion / The body in motion / Outline the interrelationship between biomechanical principles and the muscles, bones and joints of the body for safe movement",
+   "text": "Outline the interrelationship between biomechanical principles and the muscles, bones and joints of the body for safe movement"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / The body and mind in motion / The body in motion / how biomechanical principles are applied to human movement, including motion, balance and stability, fluid mechanics and force",
+   "text": "how biomechanical principles are applied to human movement, including motion, balance and stability, fluid mechanics and force"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / The body and mind in motion / The body in motion / how biomechanical principles can be used to enhance safe movements",
+   "text": "how biomechanical principles can be used to enhance safe movements"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / The body and mind in motion / The body in motion / how biomechanical principles can be used to increase movement efficiency",
+   "text": "how biomechanical principles can be used to increase movement efficiency"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / The body and mind in motion / The body in motion / Explain the interrelationship between the respiratory and circulatory systems and movement",
+   "text": "Explain the interrelationship between the respiratory and circulatory systems and movement"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / The body and mind in motion / The body in motion / pulmonary and systemic blood circulation and gaseous exchange",
+   "text": "pulmonary and systemic blood circulation and gaseous exchange"
+  },
+  {
+   "code": "PRE-M2-T1-D15",
+   "path": "Year 11 / The body and mind in motion / The body in motion / factors that impact on the efficiency of the cardiovascular system",
+   "text": "factors that impact on the efficiency of the cardiovascular system"
+  },
+  {
+   "code": "PRE-M2-T1-D16",
+   "path": "Year 11 / The body and mind in motion / The body in motion / Explain the interrelationship between the digestive and endocrine systems and movement, including structure and function and factors that impact on the efficiency of the systems",
+   "text": "Explain the interrelationship between the digestive and endocrine systems and movement, including structure and function and factors that impact on the efficiency of the systems"
+  },
+  {
+   "code": "PRE-M2-T1-D17",
+   "path": "Year 11 / The body and mind in motion / The body in motion / Explain the interrelationship between the nervous system and movement, including structure and function",
+   "text": "Explain the interrelationship between the nervous system and movement, including structure and function"
+  },
+  {
+   "code": "PRE-M2-T1-D18",
+   "path": "Year 11 / The body and mind in motion / The body in motion / Demonstrate and analyse how the systems of the body work together in a variety of movements",
+   "text": "Demonstrate and analyse how the systems of the body work together in a variety of movements"
+  },
+  {
+   "code": "PRE-M2-T1-D19",
+   "path": "Year 11 / The body and mind in motion / The body in motion / Discuss the role first aid plays in response to movement",
+   "text": "Discuss the role first aid plays in response to movement"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Analyse the ATP-PCr, Glycolytic (Lactic Acid) and Aerobic energy systems of the body including fuel source and efficiency of ATP production, duration, intensity and rate of recovery, causes of fatigue and interplay of the energy systems",
+   "text": "Analyse the ATP-PCr, Glycolytic (Lactic Acid) and Aerobic energy systems of the body including fuel source and efficiency of ATP production, duration, intensity and rate of recovery, causes of fatigue and interplay of the energy systems"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Explain the role nutrition plays in enabling the energy systems to function efficiently, including macronutrient and micronutrient requirements of active people",
+   "text": "Explain the role nutrition plays in enabling the energy systems to function efficiently, including macronutrient and micronutrient requirements of active people"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Compare the difference between aerobic and anaerobic training for individuals and group sports, including differentiated training programs and contemporary methods of training",
+   "text": "Compare the difference between aerobic and anaerobic training for individuals and group sports, including differentiated training programs and contemporary methods of training"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Design an aerobic or anaerobic training program based on the FITT principle",
+   "text": "Design an aerobic or anaerobic training program based on the FITT principle"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Explain the immediate physiological responses to training, heart rate, ventilation rate, stroke volume, cardiac output and lactate levels",
+   "text": "Explain the immediate physiological responses to training, heart rate, ventilation rate, stroke volume, cardiac output and lactate levels"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Investigate the physiological responses in relation to aerobic training",
+   "text": "Investigate the physiological responses in relation to aerobic training"
+  },
+  {
+   "code": "PRE-M2-T3-D7",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / creating a research question",
+   "text": "creating a research question"
+  },
+  {
+   "code": "PRE-M2-T3-D8",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / selecting a method to collect data",
+   "text": "selecting a method to collect data"
+  },
+  {
+   "code": "PRE-M2-T3-D9",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / discussing the ethical considerations of the methods chosen",
+   "text": "discussing the ethical considerations of the methods chosen"
+  },
+  {
+   "code": "PRE-M2-T3-D10",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / discussing the validity, reliability and credibility of data collection",
+   "text": "discussing the validity, reliability and credibility of data collection"
+  },
+  {
+   "code": "PRE-M2-T3-D11",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / presenting findings and drawing conclusions",
+   "text": "presenting findings and drawing conclusions"
+  },
+  {
+   "code": "PRE-M2-T3-D12",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / identifying further research questions that could be explored",
+   "text": "identifying further research questions that could be explored"
+  },
+  {
+   "code": "PRE-M2-T3-D13",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Debate the purpose and outcomes of testing physical fitness for different groups in the population",
+   "text": "Debate the purpose and outcomes of testing physical fitness for different groups in the population"
+  },
+  {
+   "code": "PRE-M2-T3-D14",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Apply an understanding of how movement skills are acquired, developed and improved for recreational and elite athletes",
+   "text": "Apply an understanding of how movement skills are acquired, developed and improved for recreational and elite athletes"
+  },
+  {
+   "code": "PRE-M2-T3-D15",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / characteristics of learners",
+   "text": "characteristics of learners"
+  },
+  {
+   "code": "PRE-M2-T3-D16",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / stages of learning/skill acquisition",
+   "text": "stages of learning/skill acquisition"
+  },
+  {
+   "code": "PRE-M2-T3-D17",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / characteristics of motor skills, including gross and fine, continuous, discrete and serial, open and closed, self-paced and externally paced",
+   "text": "characteristics of motor skills, including gross and fine, continuous, discrete and serial, open and closed, self-paced and externally paced"
+  },
+  {
+   "code": "PRE-M2-T3-D18",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / practice methods for the different stages of learning, including massed, distributed, whole, part, blocked and random",
+   "text": "practice methods for the different stages of learning, including massed, distributed, whole, part, blocked and random"
+  },
+  {
+   "code": "PRE-M2-T3-D19",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / performance elements, including decision-making, strategic and tactical development",
+   "text": "performance elements, including decision-making, strategic and tactical development"
+  },
+  {
+   "code": "PRE-M2-T3-D20",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / types of feedback for different stages of learning, including task-intrinsic, augmented, concurrent, delayed, knowledge of results, knowledge of performance",
+   "text": "types of feedback for different stages of learning, including task-intrinsic, augmented, concurrent, delayed, knowledge of results, knowledge of performance"
+  },
+  {
+   "code": "PRE-M2-T3-D21",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Research how movement skills are acquired, developed and improved in a sport of choice",
+   "text": "Research how movement skills are acquired, developed and improved in a sport of choice"
+  },
+  {
+   "code": "PRE-M2-T3-D22",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / what does the research tell us about acquiring, developing and improving the movement skill?",
+   "text": "what does the research tell us about acquiring, developing and improving the movement skill?"
+  },
+  {
+   "code": "PRE-M2-T3-D23",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / how is this applied in practice?",
+   "text": "how is this applied in practice?"
+  },
+  {
+   "code": "PRE-M2-T3-D24",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / what further research questions can be proposed to further understand skill development?",
+   "text": "what further research questions can be proposed to further understand skill development?"
+  },
+  {
+   "code": "PRE-M2-T3-D25",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Analyse the relationship between psychology, movement and performance for individuals and groups",
+   "text": "Analyse the relationship between psychology, movement and performance for individuals and groups"
+  },
+  {
+   "code": "PRE-M2-T3-D26",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / how does personal identity affect an individual’s participation and performance in sport?",
+   "text": "how does personal identity affect an individual’s participation and performance in sport?"
+  },
+  {
+   "code": "PRE-M2-T3-D27",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / how does motivation support participation, including positive and negative, intrinsic and extrinsic motivation?",
+   "text": "how does motivation support participation, including positive and negative, intrinsic and extrinsic motivation?"
+  },
+  {
+   "code": "PRE-M2-T3-D28",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / why is self-regulation essential for sports performance and exercise behaviour change?",
+   "text": "why is self-regulation essential for sports performance and exercise behaviour change?"
+  },
+  {
+   "code": "PRE-M2-T3-D29",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / Investigate how communities of exercise motivate individuals and groups to participate in and improve performance",
+   "text": "Investigate how communities of exercise motivate individuals and groups to participate in and improve performance"
+  },
+  {
+   "code": "PRE-M2-T3-D30",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / what are contemporary forms of exercise?",
+   "text": "what are contemporary forms of exercise?"
+  },
+  {
+   "code": "PRE-M2-T3-D31",
+   "path": "Year 11 / The body and mind in motion / Movement skills and performance / how do contemporary forms of exercise encourage group dynamics, group cohesion, social interaction and a sense of belonging?",
+   "text": "how do contemporary forms of exercise encourage group dynamics, group cohesion, social interaction and a sense of belonging?"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Collaborative investigation / Investigation and collaboration / link the group research question to a concept taught in Health for Individuals and Communities or The Body and Mind in Motion in Year 11",
+   "text": "link the group research question to a concept taught in Health for Individuals and Communities or The Body and Mind in Motion in Year 11"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Collaborative investigation / Investigation and collaboration / address knowledge, understanding and skill outcomes in the investigation, including HM-11-05",
+   "text": "address knowledge, understanding and skill outcomes in the investigation, including HM-11-05"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / Describe the key features of Sustainable Development Goals (SDGs)",
+   "text": "Describe the key features of Sustainable Development Goals (SDGs)"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / SDG 3: Good Health and Wellbeing",
+   "text": "SDG 3: Good Health and Wellbeing"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / SDG 4: Quality Education",
+   "text": "SDG 4: Quality Education"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / SDG 10: Reduced Inequalities",
+   "text": "SDG 10: Reduced Inequalities"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / SDG 11: Sustainable Cities and Communities",
+   "text": "SDG 11: Sustainable Cities and Communities"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / Evaluate the application of SDGs 3, 4, 10 and 11 to inform strategies to improve the health status of a community",
+   "text": "Evaluate the application of SDGs 3, 4, 10 and 11 to inform strategies to improve the health status of a community"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / how have these goals been applied in other communities?",
+   "text": "how have these goals been applied in other communities?"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / what lessons can be drawn from other communities and applied to their own community context?",
+   "text": "what lessons can be drawn from other communities and applied to their own community context?"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / what are the major health issues for a community?",
+   "text": "what are the major health issues for a community?"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / what strategies are needed to advocate and improve a community’s health status?",
+   "text": "what strategies are needed to advocate and improve a community’s health status?"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Health in an Australian and global context / Health promotion and advocacy / how do you know these strategies may be effective?",
+   "text": "how do you know these strategies may be effective?"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Analyse the current health status of Australians from Australia’s Health and other health reports, tables and graphs",
+   "text": "Analyse the current health status of Australians from Australia’s Health and other health reports, tables and graphs"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what does the data tell us?",
+   "text": "what does the data tell us?"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what are the major causes of morbidity and mortality, and the life expectancy for males, females and the general population?",
+   "text": "what are the major causes of morbidity and mortality, and the life expectancy for males, females and the general population?"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what are the sociological causes of risky health behaviours?",
+   "text": "what are the sociological causes of risky health behaviours?"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / where do inequities exist and what can we do about them?",
+   "text": "where do inequities exist and what can we do about them?"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Analyse groups experiencing inequities in health, including Aboriginal and Torres Strait Islander Peoples and one other group (socioeconomically disadvantaged people, rural and remote, culturally and linguistically diverse populations, people with disability or older people)",
+   "text": "Analyse groups experiencing inequities in health, including Aboriginal and Torres Strait Islander Peoples and one other group (socioeconomically disadvantaged people, rural and remote, culturally and linguistically diverse populations, people with disability or older people)"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / how do the determinants interact to affect the health of population groups?",
+   "text": "how do the determinants interact to affect the health of population groups?"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what are some of the causes that underpin the inequities in health?",
+   "text": "what are some of the causes that underpin the inequities in health?"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what actions can be implemented to improve the health status of these groups?",
+   "text": "what actions can be implemented to improve the health status of these groups?"
+  },
+  {
+   "code": "HSC-M1-T3-D10",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Compare the health status of Australia with that of other OECD countries",
+   "text": "Compare the health status of Australia with that of other OECD countries"
+  },
+  {
+   "code": "HSC-M1-T3-D11",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / where does Australia rank in relation to other OECD countries?",
+   "text": "where does Australia rank in relation to other OECD countries?"
+  },
+  {
+   "code": "HSC-M1-T3-D12",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / why might this be the case?",
+   "text": "why might this be the case?"
+  },
+  {
+   "code": "HSC-M1-T3-D13",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / why do some countries rank higher or lower than Australia?",
+   "text": "why do some countries rank higher or lower than Australia?"
+  },
+  {
+   "code": "HSC-M1-T3-D14",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what can we learn from other countries that may be applied to the Australian context?",
+   "text": "what can we learn from other countries that may be applied to the Australian context?"
+  },
+  {
+   "code": "HSC-M1-T3-D15",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Examine cardiovascular disease, cancer and ONE other condition in Australia using Australia’s Health and other health reports",
+   "text": "Examine cardiovascular disease, cancer and ONE other condition in Australia using Australia’s Health and other health reports"
+  },
+  {
+   "code": "HSC-M1-T3-D16",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what does the data tell us about the mortality and morbidity, prevalence and incidence rates of these conditions?",
+   "text": "what does the data tell us about the mortality and morbidity, prevalence and incidence rates of these conditions?"
+  },
+  {
+   "code": "HSC-M1-T3-D17",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what are the risk and protective factors for these conditions?",
+   "text": "what are the risk and protective factors for these conditions?"
+  },
+  {
+   "code": "HSC-M1-T3-D18",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / where and for whom are these conditions changing?",
+   "text": "where and for whom are these conditions changing?"
+  },
+  {
+   "code": "HSC-M1-T3-D19",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Investigate the impact of an ageing population on Australia’s health",
+   "text": "Investigate the impact of an ageing population on Australia’s health"
+  },
+  {
+   "code": "HSC-M1-T3-D20",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what is healthy ageing?",
+   "text": "what is healthy ageing?"
+  },
+  {
+   "code": "HSC-M1-T3-D21",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what are the opportunities and challenges for an ageing population?",
+   "text": "what are the opportunities and challenges for an ageing population?"
+  },
+  {
+   "code": "HSC-M1-T3-D22",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what are current and future strategies to support healthy ageing?",
+   "text": "what are current and future strategies to support healthy ageing?"
+  },
+  {
+   "code": "HSC-M1-T3-D23",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what do government and non-government agencies need to consider to address the future needs of a growing and ageing population?",
+   "text": "what do government and non-government agencies need to consider to address the future needs of a growing and ageing population?"
+  },
+  {
+   "code": "HSC-M1-T3-D24",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Assess the effectiveness of the healthcare system in Australia",
+   "text": "Assess the effectiveness of the healthcare system in Australia"
+  },
+  {
+   "code": "HSC-M1-T3-D25",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / the role of the healthcare system",
+   "text": "the role of the healthcare system"
+  },
+  {
+   "code": "HSC-M1-T3-D26",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / equity of access to the healthcare system",
+   "text": "equity of access to the healthcare system"
+  },
+  {
+   "code": "HSC-M1-T3-D27",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / future opportunities for the healthcare system",
+   "text": "future opportunities for the healthcare system"
+  },
+  {
+   "code": "HSC-M1-T3-D28",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Explain how government and non-government organisations share responsibility for the health system",
+   "text": "Explain how government and non-government organisations share responsibility for the health system"
+  },
+  {
+   "code": "HSC-M1-T3-D29",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / federal, state and territory and local government",
+   "text": "federal, state and territory and local government"
+  },
+  {
+   "code": "HSC-M1-T3-D30",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / non-government sector – private and not-for-profit",
+   "text": "non-government sector – private and not-for-profit"
+  },
+  {
+   "code": "HSC-M1-T3-D31",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Outline how government and non-government organisations collaborate to provide person-centred healthcare",
+   "text": "Outline how government and non-government organisations collaborate to provide person-centred healthcare"
+  },
+  {
+   "code": "HSC-M1-T3-D32",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Discuss health expenditure and its impact on current and future populations",
+   "text": "Discuss health expenditure and its impact on current and future populations"
+  },
+  {
+   "code": "HSC-M1-T3-D33",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / healthcare versus prevention",
+   "text": "healthcare versus prevention"
+  },
+  {
+   "code": "HSC-M1-T3-D34",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / sustainability, access and equity",
+   "text": "sustainability, access and equity"
+  },
+  {
+   "code": "HSC-M1-T3-D35",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Medicare, private health insurance and related Commonwealth-funded programs",
+   "text": "Medicare, private health insurance and related Commonwealth-funded programs"
+  },
+  {
+   "code": "HSC-M1-T3-D36",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Explain complementary healthcare approaches",
+   "text": "Explain complementary healthcare approaches"
+  },
+  {
+   "code": "HSC-M1-T3-D37",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / products and services available",
+   "text": "products and services available"
+  },
+  {
+   "code": "HSC-M1-T3-D38",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / as a preventative measure",
+   "text": "as a preventative measure"
+  },
+  {
+   "code": "HSC-M1-T3-D39",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / treating the health issue",
+   "text": "treating the health issue"
+  },
+  {
+   "code": "HSC-M1-T3-D40",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / as a supplement to other medical treatments",
+   "text": "as a supplement to other medical treatments"
+  },
+  {
+   "code": "HSC-M1-T3-D41",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Explain the importance of being a critical health consumer",
+   "text": "Explain the importance of being a critical health consumer"
+  },
+  {
+   "code": "HSC-M1-T3-D42",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / how do you know whom to believe?",
+   "text": "how do you know whom to believe?"
+  },
+  {
+   "code": "HSC-M1-T3-D43",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what do you need to know to make informed decisions?",
+   "text": "what do you need to know to make informed decisions?"
+  },
+  {
+   "code": "HSC-M1-T3-D44",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / how do you assess the accuracy and credibility of health information, products and services?",
+   "text": "how do you assess the accuracy and credibility of health information, products and services?"
+  },
+  {
+   "code": "HSC-M1-T3-D45",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Investigate the current and emerging changes and challenges to the healthcare system",
+   "text": "Investigate the current and emerging changes and challenges to the healthcare system"
+  },
+  {
+   "code": "HSC-M1-T3-D46",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Discuss the relationship between technology and health",
+   "text": "Discuss the relationship between technology and health"
+  },
+  {
+   "code": "HSC-M1-T3-D47",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Investigate new technologies and treatments in the healthcare system",
+   "text": "Investigate new technologies and treatments in the healthcare system"
+  },
+  {
+   "code": "HSC-M1-T3-D48",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Evaluate the impact of digital health on the healthcare system",
+   "text": "Evaluate the impact of digital health on the healthcare system"
+  },
+  {
+   "code": "HSC-M1-T3-D49",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what is digital heath?",
+   "text": "what is digital heath?"
+  },
+  {
+   "code": "HSC-M1-T3-D50",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what services exist?",
+   "text": "what services exist?"
+  },
+  {
+   "code": "HSC-M1-T3-D51",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / to what extent has digital health been successful in connecting health information?",
+   "text": "to what extent has digital health been successful in connecting health information?"
+  },
+  {
+   "code": "HSC-M1-T3-D52",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what challenges and opportunities does digital health provide for individuals and organisations?",
+   "text": "what challenges and opportunities does digital health provide for individuals and organisations?"
+  },
+  {
+   "code": "HSC-M1-T3-D53",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / Examine how big data is shaping the health of Australians",
+   "text": "Examine how big data is shaping the health of Australians"
+  },
+  {
+   "code": "HSC-M1-T3-D54",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / how is it being used?",
+   "text": "how is it being used?"
+  },
+  {
+   "code": "HSC-M1-T3-D55",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / how is it reducing healthcare spending?",
+   "text": "how is it reducing healthcare spending?"
+  },
+  {
+   "code": "HSC-M1-T3-D56",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / how is it being used to cure and manage diseases?",
+   "text": "how is it being used to cure and manage diseases?"
+  },
+  {
+   "code": "HSC-M1-T3-D57",
+   "path": "Year 12 / Health in an Australian and global context / Health in Australia and other countries / what measures need to be taken to ensure privacy and confidentiality of personal information?",
+   "text": "what measures need to be taken to ensure privacy and confidentiality of personal information?"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Training for improved performance / Training principles and methods / Explain the importance of using a pre-exercise questionnaire and undertaking relevant health screening by exercise and fitness professionals",
+   "text": "Explain the importance of using a pre-exercise questionnaire and undertaking relevant health screening by exercise and fitness professionals"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Training for improved performance / Training principles and methods / Discuss the use of performance/fitness testing for recreational participants and elite athletes to improve their health, participation and performance",
+   "text": "Discuss the use of performance/fitness testing for recreational participants and elite athletes to improve their health, participation and performance"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Training for improved performance / Training principles and methods / Explain how exercise assessment can assist in developing training programs",
+   "text": "Explain how exercise assessment can assist in developing training programs"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Training for improved performance / Training for performance / Assess the types of training and training methods and their relevance for a variety of sports",
+   "text": "Assess the types of training and training methods and their relevance for a variety of sports"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Training for improved performance / Training for performance / anaerobic training, including anaerobic interval, High Intensity Interval Training (HIIT), Sprint Interval Training (SIT), plyometric, and resistance training",
+   "text": "anaerobic training, including anaerobic interval, High Intensity Interval Training (HIIT), Sprint Interval Training (SIT), plyometric, and resistance training"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Training for improved performance / Training for performance / aerobic training, including continuous, fartlek, aerobic interval, and circuit training",
+   "text": "aerobic training, including continuous, fartlek, aerobic interval, and circuit training"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Training for improved performance / Training for performance / flexibility training, including static, dynamic, ballistic, and Proprioceptive Neuromuscular Facilitation (PNF)",
+   "text": "flexibility training, including static, dynamic, ballistic, and Proprioceptive Neuromuscular Facilitation (PNF)"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Training for improved performance / Training for performance / strength training, including free/fixed weights, body weight exercises and elastics",
+   "text": "strength training, including free/fixed weights, body weight exercises and elastics"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Training for improved performance / Training for performance / skill and tactical development, including drills, modified games and games for specific outcomes",
+   "text": "skill and tactical development, including drills, modified games and games for specific outcomes"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Training for improved performance / Training for performance / Evaluate the application of the principles of training to both aerobic and strength training",
+   "text": "Evaluate the application of the principles of training to both aerobic and strength training"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Training for improved performance / Training for performance / progressive overload",
+   "text": "progressive overload"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Training for improved performance / Training for performance / training thresholds",
+   "text": "training thresholds"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Training for improved performance / Training for performance / reversibility",
+   "text": "reversibility"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Training for improved performance / Training for performance / specificity",
+   "text": "specificity"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Training for improved performance / Training for performance / variety",
+   "text": "variety"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Training for improved performance / Training for performance / warm-up and cool-down",
+   "text": "warm-up and cool-down"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Training for improved performance / Training for performance / Examine the relationship between the principles of training, physiological adaptations and improved performance",
+   "text": "Examine the relationship between the principles of training, physiological adaptations and improved performance"
+  },
+  {
+   "code": "HSC-M2-T2-D15",
+   "path": "Year 12 / Training for improved performance / Training for performance / heart rate",
+   "text": "heart rate"
+  },
+  {
+   "code": "HSC-M2-T2-D16",
+   "path": "Year 12 / Training for improved performance / Training for performance / stroke volume and cardiac output",
+   "text": "stroke volume and cardiac output"
+  },
+  {
+   "code": "HSC-M2-T2-D17",
+   "path": "Year 12 / Training for improved performance / Training for performance / oxygen uptake and lung capacity",
+   "text": "oxygen uptake and lung capacity"
+  },
+  {
+   "code": "HSC-M2-T2-D18",
+   "path": "Year 12 / Training for improved performance / Training for performance / haemoglobin level",
+   "text": "haemoglobin level"
+  },
+  {
+   "code": "HSC-M2-T2-D19",
+   "path": "Year 12 / Training for improved performance / Training for performance / muscle hypertrophy",
+   "text": "muscle hypertrophy"
+  },
+  {
+   "code": "HSC-M2-T2-D20",
+   "path": "Year 12 / Training for improved performance / Training for performance / fast/slow twitch muscle fibres",
+   "text": "fast/slow twitch muscle fibres"
+  },
+  {
+   "code": "HSC-M2-T2-D21",
+   "path": "Year 12 / Training for improved performance / Training for performance / Compare aspects that need to be considered when designing a training session for individual and group sports",
+   "text": "Compare aspects that need to be considered when designing a training session for individual and group sports"
+  },
+  {
+   "code": "HSC-M2-T2-D22",
+   "path": "Year 12 / Training for improved performance / Training for performance / health and safety considerations",
+   "text": "health and safety considerations"
+  },
+  {
+   "code": "HSC-M2-T2-D23",
+   "path": "Year 12 / Training for improved performance / Training for performance / overview/aim of the session (goal specific)",
+   "text": "overview/aim of the session (goal specific)"
+  },
+  {
+   "code": "HSC-M2-T2-D24",
+   "path": "Year 12 / Training for improved performance / Training for performance / warm-up and cool-down",
+   "text": "warm-up and cool-down"
+  },
+  {
+   "code": "HSC-M2-T2-D25",
+   "path": "Year 12 / Training for improved performance / Training for performance / skill instruction and practice",
+   "text": "skill instruction and practice"
+  },
+  {
+   "code": "HSC-M2-T2-D26",
+   "path": "Year 12 / Training for improved performance / Training for performance / conditioning",
+   "text": "conditioning"
+  },
+  {
+   "code": "HSC-M2-T2-D27",
+   "path": "Year 12 / Training for improved performance / Training for performance / strategies and tactics",
+   "text": "strategies and tactics"
+  },
+  {
+   "code": "HSC-M2-T2-D28",
+   "path": "Year 12 / Training for improved performance / Training for performance / athlete reflection and/or coach evaluation",
+   "text": "athlete reflection and/or coach evaluation"
+  },
+  {
+   "code": "HSC-M2-T2-D29",
+   "path": "Year 12 / Training for improved performance / Training for performance / Compare a yearly training program for an individual and a group sport",
+   "text": "Compare a yearly training program for an individual and a group sport"
+  },
+  {
+   "code": "HSC-M2-T2-D30",
+   "path": "Year 12 / Training for improved performance / Training for performance / phases of competition: pre-season, in-season and off-season",
+   "text": "phases of competition: pre-season, in-season and off-season"
+  },
+  {
+   "code": "HSC-M2-T2-D31",
+   "path": "Year 12 / Training for improved performance / Training for performance / sub-phases",
+   "text": "sub-phases"
+  },
+  {
+   "code": "HSC-M2-T2-D32",
+   "path": "Year 12 / Training for improved performance / Training for performance / peaking and tapering",
+   "text": "peaking and tapering"
+  },
+  {
+   "code": "HSC-M2-T2-D33",
+   "path": "Year 12 / Training for improved performance / Training for performance / sport-specific attributes: fitness components, skill requirements",
+   "text": "sport-specific attributes: fitness components, skill requirements"
+  },
+  {
+   "code": "HSC-M2-T2-D34",
+   "path": "Year 12 / Training for improved performance / Training for performance / Investigate how individual and group sports apply psychological strategies, optimising arousal and management of stress and anxiety, to improve participation and performance",
+   "text": "Investigate how individual and group sports apply psychological strategies, optimising arousal and management of stress and anxiety, to improve participation and performance"
+  },
+  {
+   "code": "HSC-M2-T2-D35",
+   "path": "Year 12 / Training for improved performance / Training for performance / Discuss the factors that influence how strategies and tactics are applied to individual and group sports",
+   "text": "Discuss the factors that influence how strategies and tactics are applied to individual and group sports"
+  },
+  {
+   "code": "HSC-M2-T2-D36",
+   "path": "Year 12 / Training for improved performance / Training for performance / Explain how biomechanics can be used to develop efficient movements for sustained movement and improved performance",
+   "text": "Explain how biomechanics can be used to develop efficient movements for sustained movement and improved performance"
+  },
+  {
+   "code": "HSC-M2-T2-D37",
+   "path": "Year 12 / Training for improved performance / Training for performance / Justify recovery strategies used for sustained movement and performance",
+   "text": "Justify recovery strategies used for sustained movement and performance"
+  },
+  {
+   "code": "HSC-M2-T2-D38",
+   "path": "Year 12 / Training for improved performance / Training for performance / physiological, including cool-down, hydrotherapy",
+   "text": "physiological, including cool-down, hydrotherapy"
+  },
+  {
+   "code": "HSC-M2-T2-D39",
+   "path": "Year 12 / Training for improved performance / Training for performance / psychological, including relaxation",
+   "text": "psychological, including relaxation"
+  },
+  {
+   "code": "HSC-M2-T2-D40",
+   "path": "Year 12 / Training for improved performance / Training for performance / Examine the role technology can play to improve performance",
+   "text": "Examine the role technology can play to improve performance"
+  },
+  {
+   "code": "HSC-M2-T2-D41",
+   "path": "Year 12 / Training for improved performance / Training for performance / training innovations",
+   "text": "training innovations"
+  },
+  {
+   "code": "HSC-M2-T2-D42",
+   "path": "Year 12 / Training for improved performance / Training for performance / equipment advances",
+   "text": "equipment advances"
+  },
+  {
+   "code": "HSC-M2-T2-D43",
+   "path": "Year 12 / Training for improved performance / Training for performance / recording and monitoring training and performance",
+   "text": "recording and monitoring training and performance"
+  },
+  {
+   "code": "HSC-M2-T2-D44",
+   "path": "Year 12 / Training for improved performance / Training for performance / Explain the management and prevention of sporting injuries",
+   "text": "Explain the management and prevention of sporting injuries"
+  },
+  {
+   "code": "HSC-M2-T2-D45",
+   "path": "Year 12 / Training for improved performance / Training for performance / classification of sports injuries, including direct and indirect, soft and hard tissue or overuse",
+   "text": "classification of sports injuries, including direct and indirect, soft and hard tissue or overuse"
+  },
+  {
+   "code": "HSC-M2-T2-D46",
+   "path": "Year 12 / Training for improved performance / Training for performance / assessment of injuries, including the Talk, Observe, Touch, Active movement, Passive movement, Skill (TOTAPS) test",
+   "text": "assessment of injuries, including the Talk, Observe, Touch, Active movement, Passive movement, Skill (TOTAPS) test"
+  },
+  {
+   "code": "HSC-M2-T2-D47",
+   "path": "Year 12 / Training for improved performance / Training for performance / management of injuries",
+   "text": "management of injuries"
+  },
+  {
+   "code": "HSC-M2-T2-D48",
+   "path": "Year 12 / Training for improved performance / Training for performance / rehabilitation procedures, including progressive mobilisation, graduated exercise, training, use of heat and cold",
+   "text": "rehabilitation procedures, including progressive mobilisation, graduated exercise, training, use of heat and cold"
+  },
+  {
+   "code": "HSC-M2-T2-D49",
+   "path": "Year 12 / Training for improved performance / Training for performance / return-to-play policy and procedures, including application to different sports, responsibility",
+   "text": "return-to-play policy and procedures, including application to different sports, responsibility"
+  },
+  {
+   "code": "HSC-M2-T2-D50",
+   "path": "Year 12 / Training for improved performance / Training for performance / Discuss the impact of drug use on injury management and improving performance",
+   "text": "Discuss the impact of drug use on injury management and improving performance"
+  },
+  {
+   "code": "HSC-M2-T2-D51",
+   "path": "Year 12 / Training for improved performance / Training for performance / health implications",
+   "text": "health implications"
+  },
+  {
+   "code": "HSC-M2-T2-D52",
+   "path": "Year 12 / Training for improved performance / Training for performance / ethical considerations",
+   "text": "ethical considerations"
+  },
+  {
+   "code": "HSC-M2-T2-D53",
+   "path": "Year 12 / Training for improved performance / Training for performance / drug testing",
+   "text": "drug testing"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Training for improved performance / Monitoring and evaluating performance / Using research, analyse the dietary requirements, pre, during and post performance needed and fluid intake requirements of athletes from different sports",
+   "text": "Using research, analyse the dietary requirements, pre, during and post performance needed and fluid intake requirements of athletes from different sports"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Training for improved performance / Monitoring and evaluating performance / Explain how sleep, nutrition and hydration can be used to reduce fatigue and positively influence movement and injury prevention",
+   "text": "Explain how sleep, nutrition and hydration can be used to reduce fatigue and positively influence movement and injury prevention"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Training for improved performance / Monitoring and evaluating performance / guidelines",
+   "text": "guidelines"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Training for improved performance / Monitoring and evaluating performance / planning",
+   "text": "planning"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Training for improved performance / Monitoring and evaluating performance / routines",
+   "text": "routines"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Training for improved performance / Monitoring and evaluating performance / monitoring",
+   "text": "monitoring"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Training for improved performance / Monitoring and evaluating performance / Discuss the use of supplements, micronutrients, protein, caffeine and creatine products for improved performance",
+   "text": "Discuss the use of supplements, micronutrients, protein, caffeine and creatine products for improved performance"
+  }
+ ],
+ "questions": []
+}

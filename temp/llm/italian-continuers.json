@@ -1,0 +1,976 @@
+{
+ "course_id": "italian-continuers",
+ "course_name": "Italian Continuers",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / The individual / Personal identity / Who am I?",
+   "text": "Who am I?"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / The individual / Personal identity / the adolescent",
+   "text": "the adolescent"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / The individual / Relationships / family",
+   "text": "family"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / The individual / Relationships / friends",
+   "text": "friends"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / The individual / Relationships / the elderly",
+   "text": "the elderly"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / The individual / Health and leisure / free time",
+   "text": "free time"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / The individual / Health and leisure / sport",
+   "text": "sport"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / The individual / Health and leisure / holidays/travel",
+   "text": "holidays/travel"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / The individual / Education and future aspirations / school life",
+   "text": "school life"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / The individual / Education and future aspirations / growing up (driving,",
+   "text": "growing up (driving,"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Italian-speaking communities / Lifestyle in Italy and abroad / Italian passions",
+   "text": "Italian passions"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Italian-speaking communities / The arts and entertainment / cinema",
+   "text": "cinema"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Italian-speaking communities / The arts and entertainment / opera and contemporary",
+   "text": "opera and contemporary"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Italian-speaking communities / Youth and social issues / the environment",
+   "text": "the environment"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Italian-speaking communities / Youth and social issues / unemployment",
+   "text": "unemployment"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Italian-speaking communities / Youth and social issues / drugs",
+   "text": "drugs"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Italian-speaking communities / Youth and social issues / multiculturalism",
+   "text": "multiculturalism"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / The changing world / The world of work / careers and",
+   "text": "careers and"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / The changing world / Communication / the importance of",
+   "text": "the importance of"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / The changing world / Italian influence / Italian business in",
+   "text": "Italian business in"
+  },
+  {
+   "code": "PRE-M3-T4-D1",
+   "path": "Year 11 / The changing world / Tourism and hospitality / travelling in Italy",
+   "text": "travelling in Italy"
+  },
+  {
+   "code": "PRE-M3-T4-D2",
+   "path": "Year 11 / The changing world / Tourism and hospitality / tourism in Australia",
+   "text": "tourism in Australia"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / The individual / Personal identity / Who am I?",
+   "text": "Who am I?"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / The individual / Personal identity / the adolescent",
+   "text": "the adolescent"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / The individual / Relationships / family",
+   "text": "family"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / The individual / Relationships / friends",
+   "text": "friends"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / The individual / Relationships / the elderly",
+   "text": "the elderly"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / The individual / Health and leisure / free time",
+   "text": "free time"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / The individual / Health and leisure / sport",
+   "text": "sport"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / The individual / Health and leisure / holidays/travel",
+   "text": "holidays/travel"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / The individual / Education and future aspirations / school life",
+   "text": "school life"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / The individual / Education and future aspirations / growing up (driving,",
+   "text": "growing up (driving,"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad / Italian passions",
+   "text": "Italian passions"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Italian-speaking communities / The arts and entertainment / cinema",
+   "text": "cinema"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Italian-speaking communities / The arts and entertainment / opera and contemporary",
+   "text": "opera and contemporary"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Italian-speaking communities / Youth and social issues / the environment",
+   "text": "the environment"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Italian-speaking communities / Youth and social issues / unemployment",
+   "text": "unemployment"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Italian-speaking communities / Youth and social issues / drugs",
+   "text": "drugs"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Italian-speaking communities / Youth and social issues / multiculturalism",
+   "text": "multiculturalism"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / The changing world / The world of work / careers and",
+   "text": "careers and"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / The changing world / Communication / the importance of",
+   "text": "the importance of"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / The changing world / Italian influence / Italian business in",
+   "text": "Italian business in"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / The changing world / Tourism and hospitality / travelling in Italy",
+   "text": "travelling in Italy"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / The changing world / Tourism and hospitality / tourism in Australia",
+   "text": "tourism in Australia"
+  }
+ ],
+ "questions": [
+  {
+   "id": "ic2020_q1",
+   "year": 2020,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "According to Michela, in what way has Marco changed?"
+  },
+  {
+   "id": "ic2020_q2",
+   "year": 2020,
+   "number": "q2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Explain what Vittoria requires Alessandro to do."
+  },
+  {
+   "id": "ic2020_q3",
+   "year": 2020,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / The arts and entertainment",
+   "text": "Provide the details of the museum’s events for Tuesday, in ENGLISH.\nNational Museum of Cinema – events for Tuesday\n10 am: screening of famous movies from the 1950s\n12 pm: (event)\n3 pm: (event)\n6 pm: (event)"
+  },
+  {
+   "id": "ic2020_q4",
+   "year": 2020,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Describe Vincenzo’s personality as revealed in this interview. Support your answer with reference to the text."
+  },
+  {
+   "id": "ic2020_q5",
+   "year": 2020,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Youth and social issues",
+   "text": "To what extent is Federica’s argument convincing to Luca? Support your answer with reference to the text."
+  },
+  {
+   "id": "ic2020_q6",
+   "year": 2020,
+   "number": "q6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Italian-speaking communities / Youth and social issues",
+   "text": "Which of the following is most likely to be Gianni’s opinion?\nThe voting age should be lowered.\nYoung people do not want to have a voice.\nVoters should be informed before they vote.\n18-year-olds are not mature enough to vote."
+  },
+  {
+   "id": "ic2020_q7",
+   "year": 2020,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "How does the speaker attempt to achieve his purpose?"
+  },
+  {
+   "id": "ic2020_q8",
+   "year": 2020,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Explain the motivation behind Mirella’s decisions."
+  },
+  {
+   "id": "ic2020_q9",
+   "year": 2020,
+   "number": "q9",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "FORUM INSEGNANTI\nProf Prati:\nMolti studenti pensano che ascoltare le loro canzoni preferite in classe li fa studiare meglio. Secondo voi, è vero, la musica aiuta a imparare a scuola? È giusto che ascoltino musica quando lavorano indipendentemente? Dovrei vietare i telefoni con le cuffie in classe? Sono curioso di sentire il vostro parere.\nProf Fedele:\nÈ sempre più difficile motivare gli studenti. Sappiamo tutti che la musica può avere un effetto rilassante e noi dovremmo sfruttare il suo potere calmante. Diversi studi hanno dimostrato che ascoltare musica ad un volume moderato durante le lezioni può aiutare a migliorare la memoria e le capacità di apprendimento degli studenti. La musica elimina distrazioni. Insomma ci sono solo vantaggi della musica in classe. Che problema c’è?!\nProf Alberti:\nAscoltare la musica mentre si cerca di imparare qualcosa di nuovo è impossibile. La musica, in particolare le canzoni, possono essere in conflitto con il materiale che stai cercando di imparare. Questo crea una specie di “collo di bottiglia”. Chiaramente, non si riesce a concentrarsi né sulla musica, né sul materiale che stai studiando.\nProf Moro:\nSono d’accordo con il Prof Fedele però è importante scegliere la musica giusta per ogni materia. La musica classica aiuta gli studenti a concentrarsi per più tempo e a memorizzare più informazioni. Per quanto riguarda materie come inglese o arte, si dovrebbe ascoltare musica rock o pop che può aumentare la creatività. Però, si dovrebbe considerare l’importanza delle abilità interpersonali. Permettendo agli studenti di ascoltare musica con le cuffie diminuisce l’interazione sociale. Mentre la musica può aiutare gli studenti ad imparare, alla fine elimina l’occasione per interagire con altri studenti in classe.\nWhy has Prof Prati started this forum discussion?\nWhat does Prof Fedele believe are the benefits?\nTo what extent does Prof Moro agree with Prof Fedele? Support your answer with reference to the text."
+  },
+  {
+   "id": "ic2020_q9c",
+   "year": 2020,
+   "number": "9(c)",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "FORUM INSEGNANTI\nProf Prati:\nMolti studenti pensano che ascoltare le loro canzoni preferite in classe li fa studiare meglio. Secondo voi, è vero, la musica aiuta a imparare a scuola? È giusto che ascoltino musica quando lavorano indipendentemente? Dovrei vietare i telefoni con le cuffie in classe? Sono curioso di sentire il vostro parere.\nProf Fedele:\nÈ sempre più difficile motivare gli studenti. Sappiamo tutti che la musica può avere un effetto rilassante e noi dovremmo sfruttare il suo potere calmante. Diversi studi hanno dimostrato che ascoltare musica ad un volume moderato durante le lezioni può aiutare a migliorare la memoria e le capacità di apprendimento degli studenti. La musica elimina distrazioni. Insomma ci sono solo vantaggi della musica in classe. Che problema c’è?!\nProf Alberti:\nAscoltare la musica mentre si cerca di imparare qualcosa di nuovo è impossibile. La musica, in particolare le canzoni, possono essere in conflitto con il materiale che stai cercando di imparare. Questo crea una specie di “collo di bottiglia”. Chiaramente, non si riesce a concentrarsi né sulla musica, né sul materiale che stai studiando.\nProf Moro:\nSono d’accordo con il Prof Fedele però è importante scegliere la musica giusta per ogni materia. La musica classica aiuta gli studenti a concentrarsi per più tempo e a memorizzare più informazioni. Per quanto riguarda materie come inglese o arte, si dovrebbe ascoltare musica rock o pop che può aumentare la creatività. Però, si dovrebbe considerare l’importanza delle abilità interpersonali. Permettendo agli studenti di ascoltare musica con le cuffie diminuisce l’interazione sociale. Mentre la musica può aiutare gli studenti ad imparare, alla fine elimina l’occasione per interagire con altri studenti in classe.\n(c) According to Prof Alberti, what is the effect of un collo di bottiglia?\nFocus is hindered\nClarity is enhanced\nLearning is promoted\nCreativity is diminished"
+  },
+  {
+   "id": "ic2020_q10",
+   "year": 2020,
+   "number": "q10",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "Stanno uccidendo Venezia\n#veniceblogger\nAgosto, 2019\nSappiamo tutti quanto è bella Venezia. Il problema è che, con 20 milioni di turisti all’anno, ci sono troppi visitatori nei mesi estivi. Venezia ormai è diventata un parco giochi. È tra le città italiane più danneggiate dal turismo. Traffico, inquinamento, rumore, rifiuti, i lati negativi dell’overtourism sono diversi.\nNoi veneziani siamo molto preoccupati per come è cambiata la nostra città. Il passaggio delle navi da crociera in laguna causa il trasferimento di un enorme quantità di acqua e il pesante inquinamento dovuto alle emissioni nocive. Poi ci preoccupiamo per la diffusione incontrollabile di Bed and Breakfast e per il continuo calo del numero di residenti. Al posto dei piccoli negozi di artigiani storici, ogni giorno vediamo nuovi negozi di souvenir “10 euro”, che vendono tutto tranne i prodotti veneziani locali, tutto mirato al turista.\nPer quanto riguarda i turisti, la situazione negli ultimi anni è molto peggiorata. L’unico rumore che si sente nella notte sono le ruote delle valigie che sembrano carri armati che arrivano nel silenzio assoluto della città. Il tipo di turismo a Venezia è cambiato. Una volta c’era gente che veniva a studiare, a visitare i musei, a informarsi sulla storia di Venezia e a vedere i nostri artigiani. Adesso c’è solo la necessità di poter dire “io ho visto Venezia”. Troppi turisti non rispettano le regole del posto. Il vizio più diffuso tra i turisti è di tuffarsi nell’acqua del Canal Grande. Poi ci sono quelli che trattano il Ponte di Rialto come se fossero in un campeggio estivo bloccando il traffico pedonale.\nNon possiamo uccidere Venezia! Dobbiamo concentrarci sul sostegno degli artigiani locali che sono una risorsa per la città. I visitatori di Venezia, ogni volta che acquistano qualcosa da un autentico artigiano locale, aiutano la città. Quindi, non smettete di venire a Venezia, per favore! Ma siate turisti responsabili: cercate di comprendere il precario equilibrio della nostra città e di rimanere per almeno più di quattro giorni! Solo così, avrete la possibilità di scoprire i suoi piccoli angoli e tesori nascosti. Senza dubbio, rimarrete incantati.\nWhat situation has motivated the author to write this blog?\nNoi veneziani siamo molto preoccupati per come è cambiata la nostra città. (paragraph 2)\nWhat leads the author to say this?\nWhat is the author’s attitude towards the behaviour of tourists? Support your answer with reference to the text.\nEvaluate the author’s attempt to address the issues identified in the blog. In your answer, refer to language and content."
+  },
+  {
+   "id": "ic2020_q11",
+   "year": 2020,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Answer the following question by writing approximately 200 words in ITALIAN.\nYou have just received this email from your friend Roberto. Write the text of an email in response to him.\nCiao, come va?\nti sto scrivendo perché non so cosa fare. Ho notato che ultimamente Chiara pensa solo a seguire le tendenze che vede sui social e che di conseguenza sta sprecando un sacco di soldi. L’importanza che diamo agli influencer è meritata? Il famoso blogger Carlo, per esempio, nella foto che fa il giro dei social, porta un paio di occhiali firmati e poi non se ne trovano più nei negozi. Ma ti sembra giusto?! In fin dei conti, l’abito non fa il monaco, cioè non si deve giudicare dalle apparenze. Io, per esempio, per la festa di fine anno indosserò un vestito che portava mio nonno da giovane. Bello, eh?! Chiara invece compra sempre degli abiti di marca anche se ne ha già centinaia. Stiamo tutti risparmiando i soldi per il nostro viaggio. Come farà Chiara se lei continua così? Mi dispiacerebbe tanto se non avesse abbastanza soldi. Dovremmo parlarle?\nRoberto"
+  },
+  {
+   "id": "ic2020_q12",
+   "year": 2020,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Answer the following question by writing approximately 75 words in ITALIAN.\nWrite a message to your best friend expressing what your friendship means to you."
+  },
+  {
+   "id": "ic2020_q13a",
+   "year": 2020,
+   "number": "13(a)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Answer ONE of the following questions (part a). Write approximately 200 words in ITALIAN.\nYou have completed two weeks of work experience. Write an article for the school newsletter evaluating this experience."
+  },
+  {
+   "id": "ic2020_q13b",
+   "year": 2020,
+   "number": "13(b)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Answer ONE of the following questions (part b). Write approximately 200 words in ITALIAN.\nYou have participated in a school excursion. Write an article for the school newsletter evaluating the excursion."
+  },
+  {
+   "id": "ic2021_q1",
+   "year": 2021,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "What has the girl been looking forward to?"
+  },
+  {
+   "id": "ic2021_q2",
+   "year": 2021,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Why does Roberto ring Sonia?"
+  },
+  {
+   "id": "ic2021_q3",
+   "year": 2021,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Explain why Angelo is annoyed with Claudia."
+  },
+  {
+   "id": "ic2021_q4",
+   "year": 2021,
+   "number": "q4",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "How does Catia try to convince Leo?"
+  },
+  {
+   "id": "ic2021_q5",
+   "year": 2021,
+   "number": "q5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Youth and social issues",
+   "text": "Summarise the main points made in the text."
+  },
+  {
+   "id": "ic2021_q6",
+   "year": 2021,
+   "number": "q6",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure listening question (see 2021 HSC paper)."
+  },
+  {
+   "id": "ic2021_q7",
+   "year": 2021,
+   "number": "q7",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Communication interview question (see 2021 HSC paper).\nPart (a) (see 2021 HSC paper).\nPart (b) (see 2021 HSC paper)."
+  },
+  {
+   "id": "ic2021_q8",
+   "year": 2021,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Youth and social issues",
+   "text": "Youth and social issues conversation question (see 2021 HSC paper)."
+  },
+  {
+   "id": "ic2021_q9",
+   "year": 2021,
+   "number": "q9",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Scoprire 'La Grassa'\nSecondo Nathan Jones, molti australiani che non hanno mai vissuto in Italia, hanno una falsa idea della vera cucina italiana. Si tratta di piatti, basati sulla cucina italiana, che però sono stati creati per i gusti australiani. “Ma attenzione a non andare in Italia a cercare la pizza con l’ananas,” avverte Nathan.\n“Sono australiano fino in fondo,” dice Nathan. “Ma ho sempre avuto una passione per l’Italia. Alle medie la mia prof ci ha portati al ristorante dove ho assaggiato per la prima volta del cibo italiano. Da qui è iniziata una vera storia d’amore.” Dopodiché, a casa si è impegnato a preparare piatti italiani per la sua famiglia, ma a modo suo.\nA 19 anni, Nathan si è trasferito al capoluogo dell’Emilia-Romagna, Bologna. Questa città, chiamata ‘La Grassa’, è la capitale gastronomica dell’Italia. Infatti, l’intera regione è un paradiso per i buongustai che vengono a godersi le sue specialità culinarie.\nA Bologna ha aperto gli occhi alle differenze tra quello che lui considerava cibo italiano e quello che stava scoprendo. Ha scoperto che il piatto classico, spaghetti alla bolognese, che preparava a casa, non esiste! In Australia questo piatto famoso è più un minestrone di carne e pomodoro servito con la pasta stracotta. Come tanti altri stranieri ha voluto scoprire le ricette italiane e esplorare i sapori della cucina tradizionale.\nDa qui è iniziata la sua vera e propria passione, cioè, far scoprire ai turisti la vasta gamma di piatti autentici italiani. Ora, Nathan organizza gite a ristoranti e aziende di produzione alimentare che hanno le vere caratteristiche della Grassa e che sono fuori dal giro turistico.\nWhy does Nathan think many Australians have a false idea of true Italian cuisine?\nWhat is meant by 'da qui è iniziata una vera storia d’amore'?\nWhat is special about Emilia-Romagna?\nExplain the significance of Nathan’s move to Bologna."
+  },
+  {
+   "id": "ic2021_q10",
+   "year": 2021,
+   "number": "q10",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / The arts and entertainment",
+   "text": "Che lingua si parla oggi in Italia?\nFrancesco:\nNel 2021 si celebra il 700esimo anniversario della morte di Dante Alighieri, lo Shakespeare italiano. Dobbiamo esserne fieri! E allora, com’è possibile che sempre più parole e frasi inglesi si infilino nei media e in molte conversazioni? Usare l’italiano è nostro dovere. Non siamo più un paese frammentato da dialetti, bensì una nazione con una lingua che ci unisce. Vi imploro di firmare questa petizione per mandare un messaggio forte ai media e al governo. Devono capire che devono essere più responsabili e smettere di usare parole inglesi. Fermiamo questo abuso sulla nostra lingua e salviamoci da questa ‘selva oscura’.\nSara:\nMa Francesco che esagerazione! L’uso delle parole prese in prestito non è affatto dannoso alla purezza della nostra lingua ma un passaggio naturale. Indubbiamente dobbiamo adeguarci ai tempi dato che l’inglese è la lingua internazionale. Secondo le ricerche, chi parla più di una lingua invecchia meglio ed ha una mente più lucida. Perché volete svantaggiarci? Non dobbiamo diventare “uno stato bambinaia”!\nCosima:\nSiamo una nazione ricca di dialetti. Infatti dal dialetto di Dante è nata la lingua italiana. Perciò, non solo l’italiano, ma anche i dialetti rappresentano la nostra storia culturale che ci unisce. Prendiamo per esempio i capolavori letterari di autori moderni, paragonabili alle grandi opere di Dante, che sono stati trasformati in serie TV e film, usando entrambi l’italiano e un dialetto. Ma perché mi chiederete? Credo che entrambi la lingua italiana e i dialetti rappresentino le nostre radici, la nostra identità nazionale. I dialetti sì, ma l’inglese, no!\nLuca:\nL’italiano cambia, si modifica e si modernizza. È una naturale evoluzione della lingua. La nostra società è multietnica e globalizzata. È normale che si sia aperta anche linguisticamente. Rifiutare l’uso delle parole inglesi non riguarda la ‘purezza della lingua’ ma una scelta consapevole. Dunque, non dobbiamo usare parole inglesi solo perché sono di moda, per pigrizia o per uno snobismo ignorante. Come mai termini inglesi sostituiscono termini italiani? Anche nelle leggi italiane vengono utilizzati anglicismi come ‘Jobs Act’. È una vergogna nazionale! Se Dante Alighieri, padre della nostra lingua, potesse sentirci usare questi anglicismi, che non tutti capiscono, cosa ne direbbe? Le nostre parole sono perle: le dobbiamo tutelare. Io firmerò!\nWhat has motivated Francesco to write this petition?\nHow does Sara seek to convey her point of view? Support your answer with reference to language and content.\nTo what extent do Francesco and Cosima agree?\nHow does Luca support the idea that 'le dobbiamo tutelare'?"
+  },
+  {
+   "id": "ic2021_q11",
+   "year": 2021,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Answer the following question by writing approximately 200 words in ITALIAN.\nImagine you are Sam. The following is an exchange of emails. Read both emails carefully and then write the text of Email 2 which you write to Adri.\nEmail 1\n18 dicembre 2020\nCiao Sam,\nSono mesi che non ci sentiamo. Solo ieri parlavamo del tuo scambio scolastico qui in Italia l’anno scorso. Ci manchi tanto!\nHo bei ricordi di quando c’incontravamo in piazza per fare la passeggiata. Diverso dall’Australia, vero?\nNovità! A gennaio mi trasferisco a Milano ad iniziare, finalmente, il corso che ho sempre sognato. Non sarà facile perché dovrò anche lavorare per pagare le spese. E tu, continui a fare sempre tanto sport?\nQui nevica e ci sono i mercatini di Natale. Peccato che tu non ci sia!\nA presto,\nAdri\nEmail 2\n23 dicembre 2020\nCiao Adri,\nWrite this email in a writing booklet.\nEmail 3\n5 gennaio 2021\nCiao Sam,\nBuon anno! Sono felice per tua sorella e non vedo l’ora di conoscerla quando arriva qui.\nNon mi parlare proprio di indipendenza! Ora scappo perché ho molto da fare. Certo, ti chiamo dopo e ti faccio vedere il mio appartamento.\nAdri"
+  },
+  {
+   "id": "ic2021_q12",
+   "year": 2021,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Answer the following question by writing approximately 75 words in ITALIAN.\nWrite an email to a friend explaining that you are unable to attend an upcoming event and proposing an alternative."
+  },
+  {
+   "id": "ic2021_q13a",
+   "year": 2021,
+   "number": "q13a",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Write approximately 200 words in ITALIAN.\n13(a) You have just returned from an exchange program in Italy. Write a letter to your Italian host family thanking them and describing what you learned."
+  },
+  {
+   "id": "ic2021_q13b",
+   "year": 2021,
+   "number": "q13b",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Write approximately 200 words in ITALIAN.\n13(b) You participated in an Italian cultural festival in your town. Write a letter to a friend describing the event."
+  },
+  {
+   "id": "ic2022_q1",
+   "year": 2022,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure voicemail question (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q2",
+   "year": 2022,
+   "number": "q2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Communication conversation question (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q3",
+   "year": 2022,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Relationships conversation question (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q4",
+   "year": 2022,
+   "number": "q4",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Education and future aspirations conversation question (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q5",
+   "year": 2022,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "Tourism and hospitality conversation question (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q6",
+   "year": 2022,
+   "number": "q6",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Relationships conversation question (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q7",
+   "year": 2022,
+   "number": "q7",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / The arts and entertainment",
+   "text": "The arts and entertainment radio interview question (see 2022 HSC paper).\nArts and entertainment radio interview part (a) (see 2022 HSC paper).\nArts and entertainment radio interview part (b) (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q8",
+   "year": 2022,
+   "number": "q8",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "La tecnologia, gli adolescenti e l'apprendimento\nOggigiorno con un solo clic oppure un semplice commando vocale abbiamo alla portata di mano un mondo di informazioni. Gli esperti affermano che per gli studenti di oggi la tecnologia non dovrebbe più essere una novità e neanche un'opzione nell'apprendimento – è una necessità fondamentale. Per sopravvivere in un mondo tecnologico ogni studente deve essere fornito con i mezzi necessari. Purtroppo, non tutti gli studenti hanno accesso a casa né all'internet né ad un dispositivo adeguato per continuare il loro apprendimento. Quindi, di recente le scuole hanno deciso di intervenire. Adesso danno un computer e accesso all'internet a chiunque ne abbia bisogno.\nMentre molti studenti sono bravi ad usare il telefonino per i Social e per gli acquisti online non possono, oppure, non sono interessati a trasferire queste loro abilità a quello che imparano a scuola. Questi studenti pensano che la tecnologia sia solo per il loro divertimento ed uso personale. Quindi, ci vuole un'adeguata implementazione della tecnologia nell'aula per aiutare gli studenti a trasferire queste abilità al loro apprendimento, portandoli ad avere maggiore successo.\nGli insegnanti sono consapevoli che la tecnologia deve essere incorporata nell'aula per garantire che gli studenti siano attrezzati con la capacità di affrontare un mondo tecnologico. Aggiornano continuamente la loro conoscenza delle nuove tecnologie e della più recente pedagogia per rispondere alle esigenze di ogni studente.\nGli insegnanti cercano di sviluppare le competenze essenziali di connessione e collaborazione tramite l'uso della tecnologia, creando studenti che sono adattabili, flessibili e resilienti. Inoltre, sanno che quando usata bene, la tecnologia apre orizzonti infiniti dove l'apprendimento può realizzarsi ovunque e in qualsiasi momento.\n... le scuole hanno deciso di intervenire ... Explain the need for this decision.\nExplain the challenge presented by students' attitude towards technology.\nIs the author optimistic about the use of technology in education? Support your answer with reference to the text."
+  },
+  {
+   "id": "ic2022_q9",
+   "year": 2022,
+   "number": "q9",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Tourism and hospitality",
+   "text": "Quest'articolo è stato pubblicato in una rivista del 2001\nQual è il futuro dei prodotti italiani?\ndi Gianmarco Rossi\nÈ ben noto che ogni nazione ha prodotti con il marchio Prodotto di . . . che caratterizza un settore commerciale di quel paese conosciuto per la sua qualità unica. Prodotto dell'Australia, per esempio, spesso si riferisce a prodotti primari e Prodotto della Germania è sempre stato sinonimo di robustezza ed affidabilità dell'ingegneria.\nLa differenza con i prodotti italiani è che sono ben conosciuti ed apprezzati nel mondo per il loro stile e raffinatezza e non solo in un settore, ma in tutti i settori maggiori: Abbigliamento, Automobilistico, Arredamento e Alimentare (cioè Le Quattro 'A'). Sono questi i settori che toccano tutti gli aspetti della vita e che affermano l'immagine della qualità italiana in tutto il mondo.\nPurtroppo, i prodotti italiani sono sotto attacco. Innanzitutto, sono diventati vittime di quelli che cercano di copiarli, approfittando economicamente, senza vergogna, del loro prestigio. Questi prodotti «italiani» sono imitazioni che non sono degni di questo marchio.\nAncora più scioccante è che alcune imprese approfittano del fatto che certi prodotti possono essere etichettati «italiani» anche quando sono realizzati quasi interamente all'estero! Queste imprese scelgono di spostare una gran parte della loro produzione fuori dall'Italia, dove la manodopera è più economica. Nel frattempo, in Italia, la disoccupazione nella manifattura è in aumento. Tutto ciò ha provocato un boicottaggio di certi cosiddetti prodotti «italiani».\nAllora, cos'è il vero significato del termine «prodotto italiano»? E che beneficio ne deriva il consumatore? Alta qualità? Stile unico? Probabilmente né l'uno né l'altro. Per aumentare le margini di profitto queste imprese si comportano senza scrupoli. Le conseguenze delle azioni di queste imprese sono assai dannose all'economia italiana e al prestigio dei marchi italiani.\nInoltre, non dimentichiamo le piccole e medie imprese che da generazioni producono articoli di alta qualità completamente in Italia. Sfortunatamente, queste imprese non riescono più ad essere in concorrenza.\nConsumatori finora hanno acquistato, con fiducia, prodotti di vera qualità artigianale italiana. Come potranno continuare a farlo?\nEditrice (2022): Per fortuna, la situazione vergognosa del 2001 sta migliorando grazie alle nuove leggi degli ultimi anni.\nItalian influence article part (a) (see 2022 HSC paper).\nItalian influence article part (b) (see 2022 HSC paper).\nItalian influence article part (c) (see 2022 HSC paper).\nItalian influence article part (d) (see 2022 HSC paper).\nItalian influence article part (e) (see 2022 HSC paper)."
+  },
+  {
+   "id": "ic2022_q10",
+   "year": 2022,
+   "number": "q10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Answer the following question by writing approximately 200 words in ITALIAN.\nImagine you are Max and have just received this email. Write your reply to Em.\nCiao Max\nalla fine, ho convinto mamma e papà di lasciarmi andare al festival, perché vado insieme ai miei due migliori amici che loro ormai conoscono bene. Manca poco prima di partire. Non vedo l'ora! Saranno 3 giorni fantastici, campeggiati in un posto isolato, lontano dalla città, ascoltando musica stupenda! Ho rassicurato i miei che tutto andrà bene. Dato che tu hai partecipato ad un festival come questo all'inizio dell'anno, c'è qualcosa di particolare che dovrei portare?\nSenti, so che è passato un sacco di tempo da quando hai preso un anno sabbatico. Ti ricordi qual è stata per te la parte migliore di questa esperienza? Stavo pensando anch'io di fare lo stesso.\nScommetto che ti senti molto bene adesso che hai finito l'università! Mi stupisce che tu non abbia accettato quella fantastica offerta di lavoro.\nSalutami lo zio e la zia. Spero di poter rivederci al più presto adesso che ho finito la maturità.\nUn abbraccio\nEm"
+  },
+  {
+   "id": "ic2022_q11",
+   "year": 2022,
+   "number": "q11",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Answer the following question by writing approximately 75 words in ITALIAN.\nOn a weekend away something quite unusual occurred. This made it a weekend to remember. Write a diary entry in which you describe what occurred."
+  },
+  {
+   "id": "ic2022_q12a",
+   "year": 2022,
+   "number": "q12a",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n12(a) You have been asked to speak at your school graduation. Write the text of a speech in which you reflect on what school has meant to you."
+  },
+  {
+   "id": "ic2022_q12b",
+   "year": 2022,
+   "number": "q12b",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n12(b) You have just arrived in Italy on an exchange program. You have been asked to speak to a group of students, reflecting on the lifestyle you are expecting while in Italy. Write the text of the speech."
+  },
+  {
+   "id": "ic2023_q1",
+   "year": 2023,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Lifestyle in Italy and abroad face-to-face conversation question (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q2",
+   "year": 2023,
+   "number": "q2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Personal identity face-to-face conversation question (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q3",
+   "year": 2023,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / The arts and entertainment",
+   "text": "The arts and entertainment radio advertisement question (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q4",
+   "year": 2023,
+   "number": "q4",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Communication face-to-face conversation question (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q5",
+   "year": 2023,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Education and future aspirations radio advertisement question (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q6",
+   "year": 2023,
+   "number": "q6",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure face-to-face conversation question (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q7",
+   "year": 2023,
+   "number": "q7",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Relationships face-to-face conversation question (see 2023 HSC paper).\nRelationships face-to-face conversation part (a) (see 2023 HSC paper).\nRelationships face-to-face conversation part (b) (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q8",
+   "year": 2023,
+   "number": "q8",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Egregio editore,\nDa quando ero piccola non vedevo l'ora di passare due settimane ogni estate con i miei carissimi nonni in un paesino stupendo nel cuore delle Alpi. Con loro mi piaceva vivere un ritmo di vita che non era cambiato da generazioni. Il nonno amava coltivare le verdure del suo orto e la nonna prendeva cura dei suoi preziosi animali, tipo maiali e galline. Per questo breve periodo riuscivo a condividere uno stile di vita sano con loro. Se solo potessi rivivere questa esperienza.\nPurtroppo, con il passare degli anni, ho trovato tanti cambiamenti che hanno sconvolto i nonni e gli altri paesani. Sono dispiaciuta per loro; fuori stagione non ci sono più né una panetteria né una latteria aperte nel paesino, e devono andare a comprare pane, latte e formaggio in un altro paese. Inoltre, la loro scrofa, mamma di quattro porcellini, è morta. La ragione? In tutta la zona non c'è un veterinario che possa curare animali da fattoria. Il nonno si lamenta del fatto che curano solo animali domestici come cani e gatti. Inoltre, molti servizi permanenti stanno scomparendo.\nE perché? Arriva gente dalla città che compra le case in questi paesini remoti, le rinnovano e poi le affittano a turisti che vengono a sciare d'inverno o per “respirare l'aria fresca di montagna” d'estate. Il risultato? Uno stile di vita tranquillo è stato sostituito da un'invasione di traffico e di confusione. Sono spariti i vecchi mestieri come la sartoria e la calzoleria. Al loro posto ci sono alberghi e pensioni, ristoranti e negozi che vendono solo cianfrusaglie per i turisti. I pochi abitanti che rimangono sono diventati invisibili.\nSecondo me, gli obiettivi principali dovrebbero essere la tutela dell'identità culturale, dell'ambiente e del territorio caratteristico delle zone di montagna, ma soprattutto dobbiamo considerare i residenti permanenti che chiamano questi paesini casa.\nPaola Rossi\nSecondo me, gli obiettivi principali dovrebbero essere la tutela ... Part (a) (see 2023 HSC paper).\nPart (b) (see 2023 HSC paper).\nPart (c) (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q9",
+   "year": 2023,
+   "number": "q9",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / The arts and entertainment",
+   "text": "Il potere della musica\n«L'Italia ha sempre avuto una meritata reputazione di eccellenza nel mondo della musica. Gli italiani vivono la vita pienamente con un senso di vivacità. Cioè, mentre la maggior parte delle altre nazioni si concentra sulla prosperità economica, l'Italia, tramite la musica, si concentra sulla prosperità dell'anima.» La Gazzetta della musica\nHo visto recentemente come la musica ci ha aiutato a gestire dei momenti difficili; la gente è uscita in balcone in solidarietà per sollevare lo spirito tramite la musica e il canto. Ecco il potere della musica! Siete d'accordo?\nANGELA\nPer me, l'opera lirica è al centro dell'anima. Penso che l'opera lirica sia una metafora dell'Italia stessa. Riflette l'essenza della passione e rappresenta la maggior parte delle caratteristiche principali della cultura italiana. È il genere di musica che gli italiani hanno inventato e portato ai massimi livelli. Oggigiorno, grazie agli artisti emergenti, giovani e anziani si trovano insieme ai concerti ad apprezzare questo genere di musica.\nGIANLUCA\nÈ certo che la musica rende felici le persone. Tramite un programma scolastico, ho lavorato con un coro di persone che soffrono di demenza. Ho visto come la musica può essere medicina miracolosa. Il ritmo e la melodia aiutano la memoria. Ho conosciuto Rosetta, una dolcissima signora di solo 52 anni che aveva perso la gioia di vivere perché faceva fatica ricordare. Pian piano, partecipando nel coro ha ritrovato il suo spirito. Mi ha stupito come quest'attività abbia alleviato il suo basso umore e ansia. Forse la cosa più bella per me è come il canto riesce ad aiutare i pazienti a riallacciare i rapporti.\nMARIANNA\nLeggendo questo blog, mi riconferma l'importanza della musica. Non posso starne senza, però, per me non è né terapia come per Rosetta, né una vera connessione con gli altri. Non essendo un tipo socievole, la musica mi dà compagnia. Ho sempre gli auricolari incollati alle orecchie e perciò i miei dicono che ho un problema perché non posso apprezzare la loro compagnia e i benefici del silenzio. Però, per me il silenzio significa tempo per riflettere sulla vita scolastica, che non è sempre rose e fiori.\nEMILIO\nThe arts and entertainment article part (a) (see 2023 HSC paper).\nPart (b) (see 2023 HSC paper).\nPart (c) (see 2023 HSC paper).\nPart (d) (see 2023 HSC paper).\nPart (e) (see 2023 HSC paper)."
+  },
+  {
+   "id": "ic2023_q10",
+   "year": 2023,
+   "number": "q10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Answer the following question by writing approximately 200 words in ITALIAN.\nYou have received this email with an attachment from Oscar. Write your reply.\nCiao amici,\nVi state rilassando dopo gli esami di maturità? Io sto lavorando come un pazzo per guadagnare soldi per l'anno prossimo.\nFinalmente ho trovato il programma ideale per il nostro anno sabbatico. Ha tutto quello che cerchiamo.\nDato che abbiamo studiato l'italiano possiamo andare in Italia. Però, come sapete, è sempre stato il mio sogno di parlare molte lingue e allora penso di andare in un altro paese, dove, ancora non so. Sarebbe bello se io avessi compagnia. Allora, chi verrà con me?\nA presto,\nOscar\nPS\nHo allegato il programma.\nClub Lingua\nVolete vivere all'estero? Volete imparare una nuova lingua? Volete fare parte della vita quotidiana di un nuovo paese? Allora iscrivetevi al nostro programma.\nDestinazioni: Brasile, Francia, Germania, Giappone, Italia, Spagna\nVitto e alloggio con una famiglia: in città in cambio della cura dei figli OPPURE in campagna in cambio dei lavori in fattoria\nIncluso: lezioni di lingua, escursioni e gite guidate, assicurazione\nCosto: € 1900"
+  },
+  {
+   "id": "ic2023_q11",
+   "year": 2023,
+   "number": "q11",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Answer the following question by writing approximately 75 words in ITALIAN.\nWrite an email to your friend about a challenge you recently faced and how you dealt with it."
+  },
+  {
+   "id": "ic2023_q12a",
+   "year": 2023,
+   "number": "q12a",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Italian-speaking communities / Youth and social issues",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n12(a) Youth and social issues article."
+  },
+  {
+   "id": "ic2023_q12b",
+   "year": 2023,
+   "number": "q12b",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Italian-speaking communities / Youth and social issues",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n12(b) Youth and social issues article."
+  },
+  {
+   "id": "ic2024_q1",
+   "year": 2024,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Personal identity face-to-face conversation question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q2",
+   "year": 2024,
+   "number": "q2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Education and future aspirations phone message question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q3",
+   "year": 2024,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Personal identity face-to-face conversation question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q4",
+   "year": 2024,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Lifestyle in Italy and abroad radio announcement question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q5",
+   "year": 2024,
+   "number": "q5",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Relationships phone conversation question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q6",
+   "year": 2024,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Relationships video call question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q7",
+   "year": 2024,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / The arts and entertainment",
+   "text": "The arts and entertainment face-to-face conversation question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q8",
+   "year": 2024,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure face-to-face conversation question (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q9",
+   "year": 2024,
+   "number": "q9",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Oggi mia mamma Irene festeggia novant'anni. Questa è la sua storia, scritta da lei.\nA 17 anni vivevo a casa e aiutavo con le faccende. Mi piaceva uscire con le mie amiche, ma sognavo di girare il mondo, vivere delle avventure e un giorno sposarmi. A vent'anni la mia vita è cambiata quando mio fratello e sua moglie sono venuti a vivere con noi. Mia cognata non aiutava mai, dovevo fare tutto io. Non avevo più tempo per me stessa. Non ne potevo più.\nAllora ho trovato un lavoro in Francia come ragazza alla pari. Stavo molto bene con la famiglia con cui abitavo. Questa bellissima esperienza ha allargato i miei orizzonti e per la prima volta ho assaggiato la libertà. Purtroppo, dopo sei mesi, sono dovuta tornare in Italia perché mia mamma stava male.\nRientrata a casa è ricominciata la solita vita da serva, avevo perso la mia indipendenza. Mio zio in Australia, sapeva che volevo un'altra vita, quindi mi ha messo in contatto con il suo amico Marco. Ci siamo scritti per un anno, dopodiché Marco mi ha chiesto di raggiungerlo per sposarlo. Avevo bisogno di libertà e l'Australia era un'avventura! Così mio zio ha organizzato per me di andare lì ad abitare con una famiglia italiana.\nArrivata a Fremantle, ad aspettarmi, insieme a mio zio c'era un vecchio, magrissimo e malvestito. Mi sono resa conto che quello era Marco e mi sono chiesta, “Ho fatto uno sbaglio?” Io e Marco siamo stati fidanzati per tre mesi, e nonostante fosse una brava persona, non avevamo niente in comune.\nUn giorno la famiglia con cui abitavo mi ha presentato un giovane, Luigi della mia stessa età, e ci siamo innamorati. Alla fine, ho avuto il coraggio di lasciare Marco. Poco dopo io e Luigi ci siamo sposati e siamo ancora felici oggi.\n(a) (see 2024 HSC paper).\n(b) (see 2024 HSC paper).\n(c) (see 2024 HSC paper).\n(d) (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q10",
+   "year": 2024,
+   "number": "q10",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Lettera all'editore,\nCome molti, anch'io penso che l'intelligenza artificiale (anche detta IA) stia influenzando l'istruzione in un modo inaspettato. Allora mi chiedo: l'uso dell'intelligenza artificiale è etico in un contesto accademico? Come dobbiamo adattarci a questo nuovo mondo?\nUna ricerca recente ha trovato che tanti studenti utilizzano l'IA per completare i compiti usando il risultato, molto credibile, come se fosse il loro lavoro originale. Quando vari studenti pongono la stessa domanda, l'IA produce risposte diverse ogni volta, per cui è difficile rilevare che non sia il lavoro di un allievo.\nÈ per questo che alcuni colleghi pensano che non sia etico e che renda troppo facile copiare. Altri insistono che l'intelligenza artificiale sia solo un altro passo della tecnologia che può aiutare ad essere più efficienti nell'ottenere informazioni. Così permette di dedicarsi ad incarichi più utili e intellettuali.\nMa quali competenze stanno sacrificando gli studenti a causa dell'innovazione? Quali sono le conseguenze non intenzionali? È triste che gli studenti stiano perdendo l'abilità di trovare informazioni, capirle, interpretarle, farle proprie e poi presentare un compito di cui possono essere orgogliosi, perché è il loro prodotto. Ci hanno messo dentro il loro sudore e la loro anima.\nStiamo vedendo i segni delle sfide che ci aspettano. Emerge una divisione tra gli studenti già esperti di IA e gli insegnanti che stanno cercando disperatamente di tenersi aggiornati. Di conseguenza, gli insegnanti si trovano sempre più impreparati per affrontare queste innovazioni.\nTuttavia, l'intelligenza artificiale può anche trasformare positivamente l'apprendimento e l'insegnamento, se utilizzata in modo creativo e corretto. Ma la vera sfida è come sfruttare questa capacità in modo giusto. Imparare ad usare l'intelligenza artificiale, in modo efficace e responsabile nell'istruzione, non sarà semplice. Però, credo che dovremmo investire le nostre energie per trovare il modo migliore per utilizzarla a beneficio dei nostri studenti e insegnanti.\nBianca Martini\n(a) (see 2024 HSC paper).\n(b) (see 2024 HSC paper).\n(c) (see 2024 HSC paper).\n(d) (see 2024 HSC paper)."
+  },
+  {
+   "id": "ic2024_q11",
+   "year": 2024,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Answer the following question by writing approximately 200 words in ITALIAN.\nYour school captain has sent this email to all Year 12 students. Write your reply.\nCiao ragazzi,\nVogliamo festeggiare l'ultimo giorno di scuola alla grande? Abbiamo bisogno di idee per preparare la proposta da consegnare alla preside. Ricordate che lei deve approvare tutto, quindi niente di troppo eccessivo! Vuole essere sicura che facciamo le cose giuste.\nSe vi ricordate l'anno scorso gli studenti hanno esagerato, alcuni di loro si sono fatti male e inoltre ci sono stati dei danni alla scuola.\nQuindi, è importante che quest'anno le attività rispettino le norme di sicurezza. Non vogliamo rischiare che la preside possa cancellare la nostra ultima giornata di divertimento a scuola. Deve essere gratuito o a basso costo. Che tipo di cibo e di musica? Vogliamo avere un tema (gli anni 80 mi piacciono tanto)? Cosa ne dite?\nPotete mandarmi le vostre idee entro la fine di questo mese? Sono molto emozionato e spero che anche voi lo siate.\nSono in attesa di idee fantastiche.\nVi saluto,\nNico"
+  },
+  {
+   "id": "ic2024_q12",
+   "year": 2024,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Answer the following question by writing approximately 75 words in ITALIAN.\nYou want to help other students with their homework in your favourite subject. Write a notice for the school website to offer your services."
+  },
+  {
+   "id": "ic2024_q13a",
+   "year": 2024,
+   "number": "q13a",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n13(a) You have recently started a part-time job that has been challenging. Write a diary entry reflecting on your first week in the job."
+  },
+  {
+   "id": "ic2024_q13b",
+   "year": 2024,
+   "number": "q13b",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n13(b) Someone you know well has inspired your future goals. Write a diary entry in which you reflect on this person's influence on you."
+  },
+  {
+   "id": "ic2025_q1",
+   "year": 2025,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure face-to-face conversation question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q2",
+   "year": 2025,
+   "number": "q2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure phone message question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q3",
+   "year": 2025,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Education and future aspirations announcement question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q4",
+   "year": 2025,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "The world of work face-to-face conversation question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q5",
+   "year": 2025,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure face-to-face conversation question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q6",
+   "year": 2025,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure face-to-face conversation question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q7",
+   "year": 2025,
+   "number": "q7",
+   "marks": 1,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Health and leisure",
+   "text": "Health and leisure phone conversation question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q8",
+   "year": 2025,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Relationships face-to-face conversation question (see 2025 HSC paper)."
+  },
+  {
+   "id": "ic2025_q9",
+   "year": 2025,
+   "number": "q9",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Quale destinazione preferisci?\nLe spiagge rappresentano un elemento centrale sia nella cultura italiana che in quella australiana, ma sono diverse per le loro tradizioni, paesaggi e usi. In Italia le spiagge sono un ambiente controllato e strutturato, mentre in Australia sono viste come un'estensione del paesaggio selvaggio e stile di vita.\nLe spiagge australiane sono famose per essere vaste e naturali, un simbodo di libertà e avventura. Onde ideali e spettacolari, che variano da piccole e tranquille a potenti pareti d'acqua, attirano surfisti e amanti della spiaggia da tutto il mondo. La gente si diverte nuotando, facendo surf e giocando sulla spiaggia. Le spiagge australiane sono anche sfortunatamente note per gli squali pericolosi.\nIn Italia le spiagge si affollano in estate e offrono ombrelloni, lettini e servizi come bar e ristoranti. Per accedere a questi piccoli piaceri bisogna pagare. Questi luoghi sono lo sfondo per un'esperienza elegante e confortevole, molto amata dagli italiani. Una giornata in spiaggia è vista come un momento sociale e rilassante, trascorrendo del tempo con amici e familiari. Il cibo è fondamentale: pranzi lunghi e comodi sono una parte integrante di una giornata al mare.\nIn Australia invece lo stile di vita è più rilassato, e si va al mare tutto l'anno. L'accesso è gratuito, e le persone portano il proprio asciugamano per passare del tempo in spiaggia. Ci sono barbecue, parchi giochi con scivoli e altalene per i bambini e docce. Inoltre, in molte spiagge si possono praticare sport estremi, una fonte di adrenalina per i più dinamici. C'è anche la possibilità di fare trekking nei boschi vicini alle spiagge e nuotare nelle numerose cascate naturali.\nSi può dire che la cultura delle spiagge in entrambi i paesi riflette il loro stile di vita unico.\nWhat is the purpose of this article?\nWhy are Australian beaches famous? Support your answer with reference to the text.\nHow are the lifestyles of the TWO cultures compared in the article?"
+  },
+  {
+   "id": "ic2025_q10",
+   "year": 2025,
+   "number": "q10",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / Italian-speaking communities / The arts and entertainment",
+   "text": "Mauro Ciao a tutti! Sono Mauro. Mentre guardavo un talent show in TV mi sono chiesto: questi programmi sono davvero un trampolino di lancio per gli artisti o sono solo una perdita di tempo? Sto pensando di partecipare, ma ho paura. Cosa ne dite?\nLuca I talent show offrono una visibilità senza pari cioè, milioni di spettatori garantiscono che un artista sia visto immediatamente senza anni di sacrifici andando in giro in vari locali e città. Questa rapida notorietà ti rende molto competitivo rispetto agli altri artisti. Inoltre, i talent show spesso offrono un professionista che ti segue e che ti dà l'opportunità di sviluppare le proprie capacità artistiche.\nGiulia Ma sei matto, Luca?? I talent show sono una trappola per i concorrenti perché li trasforma in “pupazzi” nelle mani dei produttori. Questi programmi creano un'immagine distorta e pericolosa del successo musicale. Per questi artisti la fama istantanea raramente diventa una lunga carriera. Inoltre, la pressione di essere costantemente sotto le luci e il giudizio del pubblico compromette l'autenticità artistica e non permette di seguire le proprie vere passioni. Ne vale la pena? C'è sempre un'enfasi sul dramma personale che spesso nasconde il vero talento musicale, quindi l'arte si riduce a spettacolo. “Senza anni di sacrifici!?” Costruire una carriera solida richiede tempo, dedizione e anni di studio e pratica.\nSofia Ciao Mauro, sono d'accordo con Giulia e fino ad un certo punto anche con Luca. I talent show offrono una piattaforma eccezionale per farsi conoscere. Infatti, io lo so perché ho partecipato a “Napoli ha talento” da cantante e posso dire che rappresentano un'occasione unica. Nonostante il successo che potresti ottenere nel programma, la vera fama a lungo termine richiede impegno costante anche dopo la fine del programma, come sto facendo io. Devi continuare a praticare, andare in giro in concerto, costruire relazioni con i tuoi fan e sviluppare contatti nell'industria. Per rispondere alla tua domanda Mauro, i talent show sono solo l'inizio, non la meta finale.\nWhat prompted Mauro to start the forum?\nSummarise Luca's point of view.\nWhat is Giulia's opinion on the topic? Support your answer with reference to language and content.\nWhy does Sofia say 'sono d'accordo con Giulia e fino ad un certo punto anche con Luca'? Support your answer with reference to the text."
+  },
+  {
+   "id": "ic2025_q11",
+   "year": 2025,
+   "number": "q11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Communication",
+   "text": "Answer the following question by writing approximately 200 words in ITALIAN.\nYou and your friends have received this email from Giordana. Write your reply.\nCiao ragazzi,\nSpero che non abbiate ancora trovato lavoro, perché ho avuto un'idea fantastica che mi entusiasma davvero e potremmo guadagnare un sacco di soldi!\nSo che da un po' stiamo pensando al modo migliore per fare soldi mentre siamo all'università. Cosa ne pensate di aprire un'attività di lezioni private per studenti del liceo?\nTra noi cinque possiamo dare ripetizioni nelle materie principali. Tutto quel tempo passato a studiare finalmente darà i suoi frutti! Abbiamo bisogno di alcune idee su COME e DOVE potremmo avviarla. Cos'altro pensate che ci servirà?\nSe tutto va come speriamo, possiamo finalmente fare quel viaggio all'estero di cui abbiamo parlato. Dobbiamo iniziare a pensare a un itinerario. Io, per esempio, vorrei tanto andare in Scozia a vedere il castello di Edimburgo. E voi?\nNon lasciamo tutto all'ultimo minuto.\nFatemi sapere il prima possibile.\nBaci,\nGiordana"
+  },
+  {
+   "id": "ic2025_q12",
+   "year": 2025,
+   "number": "q12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Answer the following question by writing approximately 75 words in ITALIAN.\nYou have won two tickets to an event you have been wanting to attend. Write a note to a family member inviting them to go with you."
+  },
+  {
+   "id": "ic2025_q13a",
+   "year": 2025,
+   "number": "q13a",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Education and future aspirations",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n13(a) Your best friend has decided to leave school. Write an email persuading your best friend to rethink their decision."
+  },
+  {
+   "id": "ic2025_q13b",
+   "year": 2025,
+   "number": "q13b",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Italian-speaking communities / Lifestyle in Italy and abroad",
+   "text": "Answer ONE of the following questions. Write approximately 200 words in ITALIAN.\n13(b) You and your best friend are going to the same university. You have decided to move out of home. Write an email persuading your best friend to move in with you."
+  }
+ ]
+}

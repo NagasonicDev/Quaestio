@@ -1,0 +1,42 @@
+﻿{
+    "econ202521":  {
+                       "code":  "HSC-M3-T4-D2",
+                       "confidence":  "medium",
+                       "why":  "development versus environmental sustainability"
+                   },
+    "econ202522":  {
+                       "code":  "HSC-M3-T3-D5",
+                       "confidence":  "high",
+                       "why":  "depreciation effects on businesses"
+                   },
+    "econ202523":  {
+                       "code":  "HSC-M1-T2-D6",
+                       "confidence":  "medium",
+                       "why":  "unemployment causes and NAIRU policies"
+                   },
+    "econ202524":  {
+                       "code":  "HSC-M2-T3-D5",
+                       "confidence":  "high",
+                       "why":  "cash rate cut impacts"
+                   },
+    "econ202525":  {
+                       "code":  "PRE-M6-T4-D1",
+                       "confidence":  "low",
+                       "why":  "balance of payments trends and composition"
+                   },
+    "econ202526":  {
+                       "code":  "HSC-M1-T4-D9",
+                       "confidence":  "medium",
+                       "why":  "inequality trends and economic effects"
+                   },
+    "econ202527":  {
+                       "code":  "HSC-M2-T1-D2",
+                       "confidence":  "high",
+                       "why":  "conflicts among economic objectives"
+                   },
+    "econ202528":  {
+                       "code":  "HSC-M3-T1-D7",
+                       "confidence":  "high",
+                       "why":  "protection methods effects on firms and government"
+                   }
+}

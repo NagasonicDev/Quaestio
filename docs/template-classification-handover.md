@@ -5,7 +5,13 @@
 > Looking at the templates, I noticed that most of the question organisation stops at the module level. EVERY QUESTION should have AT LEAST ONE subpart that is valid to be in the parent. For example, in biology 2017, 160 questions are assigned to module 4 of yr 12, but only 10 have been assigned to a child of that module. I want you to review EVERY SINGLE TEMPLATE and make sure that EVERY QUESTION is assigned a classification ALL THE WAY DOWN TO THE SYLLABUS DOT POINT LEVEL. Use parallel subagents to complete this.
 
 Scope: the 54 shipped `.qb` bundles at `frontend/public/templates/hsc/<id>/<id>.qb`.
-Success criterion: every top-level question has at least one resolved tree node whose code matches `-D\d+$` and is a descendant of the question's existing classification.
+
+Definitions used by `temp/audit_resolved.py`:
+
+- **deep** — at least one `-D<n>` node resolves against the bundle tree.
+- **fixable** — the question is shallow, but its current topic/module has dot-point children.
+- **gap** — the question is correctly classified to a topic/module that has **no** dot-point children in the tree.
+- **unresolved** — none of `node_ids`, `node_codes` or `node_names` resolve to a tree node.
 
 ## Status
 
@@ -13,131 +19,104 @@ Success criterion: every top-level question has at least one resolved tree node 
 |---|---|
 | Shipped bundles | 54 |
 | Top-level questions | 8,777 |
-| Deep (has `-D<n>` classification) | 8,107 |
-| Gap (classified only to a topic/module with no dot-point children) | 670 |
-| Unclassified (no `node_ids`/`node_codes`/`node_names`) | 0 |
-| Bundles modified | 41 |
+| Deep | 7,705 |
+| Fixable (shallow, dot available) | 881 |
+| Gap (no dot exists in tree) | 184 |
+| Unresolved | 7 |
+| Bundles modified in the working tree | 50 |
 | `npm run test:templates` | 8/8 pass |
 
-Baseline was 7,244 deep / 1,409 shallow / 124 unclassified. 863 questions were fixed.
+After the placeholder revert (step 1 below), the baseline was **3,491 deep / 4,219 fixable / 680 gap / 387 unresolved**. The content classification pass raised deep to 7,705.
 
-`mathematics-standard` (418/418) and `modern-history-2017` (125/125) are now fully deep.
+The remaining 881 are mostly deliberate nulls: placeholder question bodies, missing listening/reading stimuli, or a theme/module for which the tree has no dot. They are not a build or resolver bug. The 184 gaps need real syllabus data; the 7 unresolved are old physics option headings with no current dot.
 
 ## What changed
 
-All changes are inside `course.json` in the `.qb` zips. Zip entry order, `date_time`, `compress_type`, `external_attr`, `create_system`, README bytes and asset bytes were preserved. JSON written with compact separators and `ensure_ascii=False`.
+### 1. Reverted the false-precision commit (`8a9ee37`)
 
-### 1. `temp/deep_fix.py` — 460 questions
-For questions whose existing classification already had a `-D` descendant: took the deepest non-D resolved node, appended the first `-D` descendant (sorted by code) to `node_codes`/`node_ids`/`node_names`.
+`temp/deep_fix.py`, `temp/physics_name_fix.py`, `temp/eng_fix.py` and `temp/patch_new_dots.py` had added the **first** `-D` descendant of each question's existing node without reading the question. That made 4,436 questions look deep but produced absurd concentrations: biology-2017 had 158 questions under “causes of infectious diseases”; Mathematics Advanced had 191/191 under one differentiation dot; many courses were 100% on one dot.
 
-Files: ancient-history-2017 12, geography 82, modern-history 137, physics 7, studies-of-religion-1 66, studies-of-religion-2 138, visual-arts 18.
+`temp/revert_classification.py` restored the `questions` array from parent commit `0a21011` for all 41 affected bundles (7,184 questions, including nested `parts`). It kept the current course trees, including the dot points added by the earlier enrichment work. Question-id order was verified identical before writing. Zip entry order, `date_time`, `compress_type`, `external_attr`, `create_system`, README and assets were preserved; JSON used compact separators and `ensure_ascii=False`.
 
-### 2. `temp/physics_name_fix.py` — 261 questions
-Physics 2015–2019 questions carried legacy old-syllabus codes (`M5-T3-1`), empty `node_ids`, and legacy `node_names` paths (`"Advanced Mechanics / Motion in gravitational fields / ..."`). Mapped by matching those paths to the current tree: exact dot-point name → exact topic name → first `-D` under topic/module. Legacy codes left in place (unresolvable, ignored on import).
+### 2. Content-based classification with one subagent per course
 
-### 3. `temp/phys_m8.py` — 2 questions
-`qhsc2018_31` (Geophysics) and `qhsc2018_32` (Medical Physics) had legacy code `M8` with no current-tree equivalent. Mapped to `HSC-M5-T1-D1`.
+`temp/make_tasks.py` selected every shallow question that had at least 20 characters of text, plus the full dot-point list, and split courses into chunks when a task exceeded 340 KB or 160 questions. `temp/make_recheck_tasks.py` produced full rechecks for courses whose already-deep labels had collapsed onto one dot.
 
-### 4. `temp/eng_fix.py` — 124 questions
-Engineering-studies 2015–2019 questions had no classification at all but did carry `tags`. Mapped the first module tag (or topic-strand tag) to a module/topic node, then took the first `-D` descendant.
+Each subagent was told to choose the single dot whose **full path and core concept** match the question; same module/theme first; `null` if no dot genuinely fits; never invent a code; wrong is worse than null; self-review high/medium once. `temp/apply_llm.py` then applied only `high`/`medium` labels, setting `classification_confidence`, and left `low`/`null` shallow. For rechecks, `--demote` also moved a low/null existing dot back to its parent topic, removing false precision without inventing a new dot.
 
-### 5. Enrichment fix + 16 questions (`courseTemplates.ts`, `temp/patch_new_dots.py`)
-`enrichWithSyllabusDotPoints` now has two fallbacks beyond `ranked[0]`:
+### 3. Residual resolver fixes
 
-- **Module-level groups** (`group.topic` normalises to `group.module`): the group's points go to every childless leaf topic under that module, not just one.
-- **Parallel paths**: when the best-ranked topic name is an exact match and another leaf ties on score under a parent with the same module name (Mathematics Standard 1 vs 2), all tied topics receive the points.
+`temp/fix_unresolved.py` mapped 25 physics legacy-code questions to current dots by their old syllabus paths, and all 24 engineering-studies questions that had no classification at all. Seven physics questions remain unresolved because they are whole-option headings (Geophysics, Medical Physics, Age of Silicon) or semiconductor content with no current dot.
 
-`frontend/tests/courseTemplates.test.mjs` covers both cases (test 8).
+## Main results and caveats
 
-The two shipped bundles were then patched directly with `temp/patch_new_dots.py` instead of rebuilt: it copies only the dot points gained by the topics that shallow questions actually point at, then appends the first new `-D` to those questions. Math gained dot points under `HSC-S2-M1-T1`, `M5-T1`, `M5-T2`, `M8-T2`; modern-history-2017 under `HSC-M2-T1` and `HSC-M18-T1`.
+| Course | Result / caveat |
+|---|---|
+| biology, biology-2017 | 183/201 and 198/201 deep; 2017 bank has five pre-existing deep questions outside the task set |
+| chemistry, chemistry-2017 | 179/216 and 204/216; remaining nulls are truncated/absent-topic stems |
+| physics | 810/849 deep; 7 unresolved legacy option headings; 6 shallow prelim parents left shallow |
+| mathematics-advanced | 121/191 deep; 70 nulls are 60 literal “Full MCQ stem…” placeholders plus no-dot regression/box-plot items |
+| mathematics-standard | 417/418 deep; mathematics-standard and modern-history-2017 also gained tree dots via the earlier enrichment fix |
+| modern-history | 134/143 deep; seven nulls are India 1942–1984 essays (no India module) and one UN-founding question |
+| modern-history-2017 | 120/125 deep; five Personality essays are null because the tree has no Personality dots |
+| studies-of-religion-1/2 | 107/126 and 192/198 deep; tree has merged depth-study groups, no separate Principal Beliefs dots |
+| languages (beginners/continuers) | theme-first matching; many nulls where family/holidays/travel/listening themes have no dots or no transcript |
+| French/Italian Extension | only prescribed-text dots exist; film/song text-type matches applied, thematic essays null |
+| industrial-technology | 541/574 deep; tree has no Year 12 focus-area modules for Metal & Engineering, Timber & Furniture, or Multimedia, so core dots were used |
+| legal-studies-2009 | 186 machine-generated stubs with no stem/options; all demoted to module `HSC-M1` (0 deep) |
+| legal-studies | 206/231 deep; 24 option questions null where global-environment/Indigenous-peoples modules have no dots |
+| visual-arts | 54/54 deep and spread across the HSC-M2-T3 dots instead of two dots |
+| music-1, music-1-2010, music-2, music-2-2010 | rechecked; 16/24, 41/44, 24/24 and 11/20 deep; remaining nulls are open multi-concept or missing-prompt items |
+| english-advanced/standard/studies/eald/extension | rechecked; broad skill dots, but some trees are sparse (English Studies still 26/48 on one broad narrative dot) |
+| geography, economics, earth-environmental-science, hospitality, agriculture, business-studies, ancient-history(-2017), drama, dance, engineering-studies | applied; distributions are now spread across many dots |
 
-Rebuilding these two from `imports/` was tested and **reverted**: `build-template-bundles` re-resolves the old `.qbx` codes with `courseTemplates.ts` and mapped 20 mathematics-standard questions that were already deep onto the wrong parent nodes (3 became gaps at `HSC-S2-M6`/`M7`). The shipped bundles' question mappings are better than their `.qbx` sources; do not rebuild them without preserving question refs.
+## Remaining gaps (184)
 
-## Remaining gaps (670)
-
-These questions are correctly classified, but their topics/modules have **no dot-point children in the template tree**. No `-D` descendant exists, so descending is impossible without adding syllabus data.
-
-| File | Gap | Topics |
+| Course | Gap | Missing tree content |
 |---|---|---|
-| ancient-history-2017 | 54 | HSC options: Hatshepsut (M13), Xerxes (M16), Pericles (M18), Alexander (M19), Agrippina (M22), Amenhotep III–Ramesses II (M25), Ancient Levant (M26) |
-| ancient-history | 12 | HSC-M12 "Historical personalities" |
-| chinese-extension | 12 | HSC-M1: Social inequality, Pursuit of personal goals, Relationships |
-| english-advanced | 15 | HSC-M3: Prose fiction, Poetry, Drama (electives) |
-| english-eald | 18 | HSC-M1-T1 Representations of human experiences; HSC-M2-T2 Culture and communication; HSC-M4-T2 Composing and editing |
-| english-standard | 29 | HSC-M3: Drama/film/media/nonfiction, Prose fiction, Poetry (electives) |
-| english-studies | 6 | HSC-M3 "Elective focus areas" |
-| french-beginners | 69 | HSC-M2 People/places/communities, HSC-M1 Family life, HSC-M5 Holidays |
-| french-extension | 1 | HSC-M1-T4-T4 "Santé" |
-| industrial-technology | 192 | HSC-M4-T4 Metal and Engineering Technologies; HSC-M4-T6 Timber Products and Furniture Technologies |
-| italian-beginners | 91 | HSC-M2, HSC-M5, HSC-M1 |
-| italian-extension | 9 | HSC-M1: Relationships, Education, Journeys |
-| modern-history | 6 | HSC-M3 "National studies" |
-| studies-of-religion-1 | 60 | HSC-M2: Buddhism, Christianity, Hinduism, Islam, Judaism |
-| studies-of-religion-2 | 60 | same five traditions |
-| visual-arts | 36 | HSC-M2: Case studies, The frames |
+| italian-beginners | 61 | Family/home, holidays/travel, community/everyday themes |
+| french-beginners | 56 | Family life, people/places/communities, holidays |
+| studies-of-religion-1 | 15 | Separate tradition/belief dots |
+| ancient-history | 12 | HSC-M12 Historical personalities |
+| chinese-extension | 12 | Social inequality, personal goals, relationships |
+| italian-extension | 9 | Relationships, Education, Journeys |
+| industrial-technology | 7 | Focus-area module dots |
+| modern-history | 6 | National studies grouping/options |
+| english-eald | 5 | Representations, culture/communication, composing/editing |
+| studies-of-religion-2 | 1 | Separate tradition/belief dots |
 
-## Root cause
+These are pure data gaps in `frontend/src/lib/syllabusDotPoints.ts`, not a code bug. Do not fabricate dot points. The repo convention (`scripts/question_import/reclassify_2021_geography.py`) is to abort with “Shallow node … requires manual deepest-dot mapping; aborting to avoid inventing a node.”
 
-`frontend/src/lib/courseTemplates.ts` (`enrichWithSyllabusDotPoints`) originally ranked leaf topics by name similarity and appended each group's dot points to **only the single best-ranked topic** (`ranked[0]`). There was no fallback, so any topic that did not win a group got zero dot-point children. This caused the mathematics-standard parallel-path and modern-history-2017 module-level failures.
-
-That is now fixed (see change 5). The remaining gaps are pure data gaps in `frontend/src/lib/syllabusDotPoints.ts`:
-- **french-/italian-/chinese-beginners**: only objective-level groups (Interacting, Understanding Texts, Producing Texts), no per-topic content.
-- **studies-of-religion-1/2**: one merged 127-point "Religious tradition depth studies" group rather than five tradition-specific groups.
-- **english-advanced/standard**: only "Understanding"/"Responding" under "Critical study of literature", no elective groups.
-- **industrial-technology**: no groups for "Metal and Engineering Technologies" or "Timber Products and Furniture Technologies" (they appear only as points under "Course Requirements").
-- **modern-history**: national-study options exist as groups ("Australia 1918–1949", etc.) but "National studies" as a grouping does not.
-- **visual-arts**: one 44-point "Art criticism and art history" group, no "Case studies"/"The frames" groups.
-
-Exceptions where the data **did** have content but enrichment failed are closed:
-- **mathematics-standard**: four S2 topics now have dot points; all 418 questions deep.
-- **modern-history-2017**: both module-level groups now reach their topics; all 125 questions deep.
-
-`imports/` does contain `.qbx` sources for nearly every course, including the courses above. It is not a safe rebuild source for the existing bundles, however: the shipped question mappings were repaired after the last build, and rebuilding re-resolves stale `.qbx` codes onto different nodes (demonstrated on mathematics-standard).
-
-## Scripts (in `temp/`)
+## Scripts (all in `temp/`)
 
 | Script | Purpose |
 |---|---|
-| `audit_resolved.py` | Resolver-based audit. Prints per-file `top/deep/fixable/gap/unres` and TOTALS. |
-| `deep_fix.py` | 460-fix script (idempotent; skips already-deep and no-descendant). |
-| `physics_name_fix.py` | Legacy physics path → current tree mapper (dry-run unless `--apply`). |
-| `phys_m8.py` | Maps the two M8 physics questions. |
-| `eng_fix.py` | Tag-based engineering mapper (dry-run unless `--apply`). |
-| `patch_new_dots.py` | Copies only the dot points gained by shallow-question target topics into the two patched bundles, then appends the first `-D` (dry-run unless `--write`). |
-| `gap_cover.py` | Reports shallow questions that a module-level group could cover if the merged group is applied. |
-| `gap_paths.py` | Prints gap topics with full tree paths. |
-| `gap_detail.py` | Prints gap/unresolved codes per file. |
-| `dump_tree.py` | `python temp/dump_tree.py <course-id>` — tree with child/-D counts. |
-| `dump_syllabus.mjs` | Prints module: topics per course. |
-| `dump_points.mjs` | Prints syllabus groups with point counts. |
+| `audit_resolved.py` | Current resolver audit; prints per-course `top/deep/fixable/gap/unres` and TOTALS. |
+| `make_tasks.py` | Builds `<course>.task.json` / `.partN.json` inputs for classification. |
+| `make_recheck_tasks.py` | Builds full-recheck tasks for already-deep collapsed courses. |
+| `apply_llm.py` | Applies high/medium labels, validates codes, preserves zip metadata; `--demote` for rechecks; dry-run unless `--write`. |
+| `fix_unresolved.py` | Physics legacy-path and engineering no-classification mappings. |
+| `revert_classification.py` | One-shot undo of `8a9ee37`; already used. |
+| `dump_tree.py` | `python temp/dump_tree.py <course-id>` — tree with child/dot counts. |
+| `dump_points.mjs` | Syllabus groups and point counts. |
 
-All use `python -X utf8` (Windows cp1252 console) or `node`.
-
-## How to continue
-
-The enrichment fix is done, so the remaining 670 gaps are missing syllabus content, not a code bug. To close them:
-
-1. **Add missing syllabus data** to `syllabusDotPoints.ts` for the courses listed above (from NESA syllabus documents), then rebuild. This is the only way to make english electives, beginners languages, studies-of-religion traditions, industrial-technology focus areas, visual-arts, ancient-history options and english-studies deep.
-2. `temp/gap_cover.py` finds 156 gaps (SOR 1/2 120, visual-arts 36) whose module already has a module-level group. Attaching the merged group would make them deep, but would put all five traditions' points under each SOR tradition and the whole "Art criticism and art history" list under both "Case studies" and "The frames". That is data fabrication at the topic level, so it was not applied.
-
-Do **not** fabricate dot points. The repo convention (`scripts/question_import/reclassify_2018_legal-studies.py`) is: if no dot-point descendant exists, abort with `"Shallow node ... requires manual deepest-dot mapping; aborting to avoid inventing a node."`
-
-## Risks / notes
-
-- Most appended dot points are the **first** `-D` under the deepest resolved node (usually `-D1`). This is a structural placeholder, not a semantic per-question reclassification.
-- The two patched bundles now contain nodes the `.ts` template would also generate, but only for the topics shallow questions use. A later full rebuild would add the module-level points under every topic (1,593 extra nodes for modern-history-2017) while losing the repaired question mappings. Prefer authoring the real data before rebuilding.
-- Physics legacy codes remain on the questions but do not resolve against the current tree, so import ignores them; only `node_codes`/`node_names` additions take effect.
-- Engineering classifications are tag-derived and coarse (first dot point under the tagged module/topic).
-- Adding nodes to `.qb` `course.json` would diverge from the `.ts` template and would be lost on the next `build-template-bundles`. The remaining gaps should be fixed in the source template data, not by patching the zip.
-- `npm run test:templates` only validates `courseTemplates.ts`, not shipped `.qb` files. It is a sanity check, not proof of correctness.
-- Subagents were unavailable (free-tier quota exhausted), so the work was done with deterministic scripts instead of parallel subagents.
+**Do not rerun** `deep_fix.py`, `physics_name_fix.py`, `eng_fix.py` or `patch_new_dots.py`. They are the scripts that created the first-`-D` placeholders. `make_progress.py` is broken (it globs `.out.json` as courses and resets statuses); use `audit_resolved.py` or the files in `temp/llm/` instead.
 
 ## Verification commands
 
 ```powershell
 cd D:\quaestio
-python -X utf8 temp/audit_resolved.py    # expect deep 8107, gap 670, unres 0
+python -X utf8 temp/audit_resolved.py    # expect deep 7705, fixable 881, gap 184, unres 7
 cd frontend
 npm run test:templates                    # expect 8/8 pass
-npm run lint                              # expect exit 0 (warnings only)
+npx tsc -b                                # expect exit 0
+npm run lint                              # expect exit 0, pre-existing warnings only
 ```
+
+## Risks / notes
+
+- The labels are LLM judgement calls, mostly medium confidence, not a human-expert syllabus review. Low/null entries were deliberately left shallow.
+- The `.qb` bundles were patched directly. They now diverge from what `build-template-bundles` would generate from `syllabusDotPoints.ts`; a rebuild would lose these question labels and re-resolve stale `.qbx` codes onto different nodes. Do not rebuild without preserving question refs.
+- `npm run test:templates` only validates `courseTemplates.ts`, not the shipped `.qb` contents. It is a sanity check, not proof of classification correctness.
+- Physics still carries legacy codes on the 7 unresolved questions; the engineering 24 fixed questions originally had no code fields at all.
+- The working tree is uncommitted. HEAD is still `8a9ee37`; 50 `.qb` files are modified, and this handover doc plus `temp/` are untracked. No commit or push was made.

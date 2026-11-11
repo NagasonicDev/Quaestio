@@ -1,0 +1,957 @@
+{
+ "course_id": "french-continuers",
+ "course_name": "French Continuers",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / The individual / Personal identity / personal identity, eg:– significant moments"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / The individual / Relationships / relationships,eg:– family and friends"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / The individual / School life and aspirations / school life and aspirations,eg:– school experiences– post school options"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / The individual / Leisure and interests / leisure and interests,eg:– hobbies– sport"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / The individual / Leisure and interests / prominent people and events †"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / The individual / Leisure and interests / the needs and interests of the student"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / French-speaking communities / Daily life and lifestyles / daily life/lifestyles,eg:– routines– city and rural life †"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / French-speaking communities / Arts and entertainment / arts and entertainmenteg:– cinema– music"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / The changing world / Travel and tourism / travel and tourism,eg"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / The changing world / Travel and tourism / traveller abroad experiences"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / The changing world / Travel and tourism / technology †"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / The changing world / Travel and tourism / the linguistic and cultural complexity of the texts selected for study"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / The changing world / The world of work / the world of work,eg"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / The changing world / The world of work / careers and occupations"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / The changing world / The world of work / men and women in the workplace †"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / The changing world / The world of work / the environment †"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / The changing world / The world of work / the language of response"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / The changing world / The world of work / the nature of the language itself"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / The changing world / Current issues / unemployment †"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / The changing world / Current issues / current issues,eg"
+  },
+  {
+   "code": "PRE-M3-T4-D1",
+   "path": "Year 11 / The changing world / The young person's world / the young person’s world,eg"
+  },
+  {
+   "code": "PRE-M3-T4-D2",
+   "path": "Year 11 / The changing world / The young person's world / youth cultures"
+  },
+  {
+   "code": "PRE-M3-T4-D3",
+   "path": "Year 11 / The changing world / The young person's world / the particular objective(s) being covered"
+  },
+  {
+   "code": "PRE-M3-T4-D4",
+   "path": "Year 11 / The changing world / The young person's world / the tasks set for completion"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / The individual / Personal identity / personal identity, eg:– significant moments"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / The individual / Relationships / relationships,eg:– family and friends"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / The individual / School life and aspirations / school life and aspirations,eg:– school experiences– post school options"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / The individual / Leisure and interests / leisure and interests,eg:– hobbies– sport"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / The individual / Leisure and interests / prominent people and events †"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / The individual / Leisure and interests / the needs and interests of the student"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / French-speaking communities / Daily life and lifestyles / daily life/lifestyles,eg:– routines– city and rural life †"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / French-speaking communities / Arts and entertainment / arts and entertainmenteg:– cinema– music"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / The changing world / Travel and tourism / travel and tourism,eg"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / The changing world / Travel and tourism / traveller abroad experiences"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / The changing world / Travel and tourism / technology †"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / The changing world / Travel and tourism / the linguistic and cultural complexity of the texts selected for study"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / The changing world / The world of work / the world of work,eg"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / The changing world / The world of work / careers and occupations"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / The changing world / The world of work / men and women in the workplace †"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / The changing world / The world of work / the environment †"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / The changing world / The world of work / the language of response"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / The changing world / The world of work / the nature of the language itself"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / The changing world / Current issues / unemployment †"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / The changing world / Current issues / current issues,eg"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / The changing world / The young person's world / the young person’s world,eg"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / The changing world / The young person's world / youth cultures"
+  },
+  {
+   "code": "HSC-M3-T4-D3",
+   "path": "Year 12 / The changing world / The young person's world / the particular objective(s) being covered"
+  },
+  {
+   "code": "HSC-M3-T4-D4",
+   "path": "Year 12 / The changing world / The young person's world / the tasks set for completion"
+  }
+ ],
+ "questions": [
+  {
+   "id": "fc2020_q1",
+   "year": 2020,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "What does Marc need to do?"
+  },
+  {
+   "id": "fc2020_q2",
+   "year": 2020,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "What is the purpose of Anne’s phone call?"
+  },
+  {
+   "id": "fc2020_q3",
+   "year": 2020,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Why is Emma suitable for this position?"
+  },
+  {
+   "id": "fc2020_q4",
+   "year": 2020,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "Summarise the speaker’s main points."
+  },
+  {
+   "id": "fc2020_q5",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The changing world / Travel and tourism",
+   "text": "What is the main message of this news item?\nPostcards continue to be popular.\nSocial media has made postcards obsolete.\nImages from drones have replaced postcards.\nPostcards were not popular until they included an image."
+  },
+  {
+   "id": "fc2020_q6",
+   "year": 2020,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Leisure and interests",
+   "text": "How likely is it that Marie will take up boxing? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2020_q7",
+   "year": 2020,
+   "number": "q7",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "How does the speaker try to persuade the audience to purchase Prinsil? In your answer, refer to content and language used."
+  },
+  {
+   "id": "fc2020_q8",
+   "year": 2020,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "Is Ludo a good choice of speaker for this youth forum? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2020_q9",
+   "year": 2020,
+   "number": "9",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Le journal des proviseurs de lycées\nmars 2020\nInitiative du Lycée Courvoisier\nComment gérer les problèmes de comportement qui sont de plus en plus fréquents dans les établissements scolaires ? Nous avons demandé à Monsieur Durand, proviseur du Lycée Courvoisier, de partager une expérience positive dont d’autres proviseurs pourraient tirer parti.\nDe nombreuses études ont mis en évidence le fait que les adolescents ont de grandes difficultés à s’endormir tôt parce que l’hormone du sommeil est sécrétée plus tard dans leur corps. Du coup, quand ils se réveillent tôt le matin, ils sont toujours dans leur phase de sommeil profond. Pendant les cours, ils sont inattentifs et se comportent mal. En conséquence, nous avons décidé de changer les horaires à Courvoisier.\nNos élèves ont maintenant cours entre dix et treize heures, puis entre quinze et dix-huit heures. Ils ont donc du temps pour eux le midi et le mercredi après-midi, qui maintenant est libre. Les élèves adorent ce nouveau rythme qui leur permet de faire des stages en entreprise en alternance le mercredi. Par conséquent, certains peuvent même obtenir un emploi maintenant dès la fin de l’école.\nCertes, avec nos horaires décalés il n’y a plus de bus scolaires, donc certains élèves font des voyages longs et compliqués mais n’y gagnent-ils pas en indépendance ? Malheureusement, quelques professeurs ayant des enfants jeunes ont démissionné car les journées finissent trop tard pour leurs obligations familiales. Cependant, nos résultats au baccalauréat se sont largement améliorés et les problèmes de comportement ont presque disparu.\nIl reste quelques parents mécontents, ceux qui n’aiment pas savoir leur adolescent au lit lorsqu’ils partent travailler. Ceci dit, le nombre d’inscriptions à notre lycée est en nette augmentation, à tel point qu’il y a même une liste d’attente pour les années à venir.\nMathieu Durand\nWhy was Mr Durand asked to write this article?\nExplain the changes made at Lycée Courvoisier.\nTo what extent has this initiative been positive for the school community?"
+  },
+  {
+   "id": "fc2020_q10",
+   "year": 2020,
+   "number": "10",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "De l’air pur pour tous\nUne enquête scientifique, menée dans la ville de Pailly, a révélé que deux tiers des salles d’écoles et des bureaux d’entreprises avaient une ventilation inadéquate. Aussitôt que les enfants arrivent en classe, les niveaux d’air pollué provoquent de fortes baisses des capacités cognitives des apprenants. Ces nouvelles ont alarmé les habitants de cette ville. Les enquêteurs ont donc préconisé l’utilisation de purificateurs d’air à long terme dans les écoles. Dans les bureaux d’entreprises, l’enquête a prouvé que la pollution de l’air affecte jusqu’à 10% de la productivité des salariés. C’est donc dans l’intérêt des chefs d’entreprises d’investir dans l’air pur pour la santé des travailleurs. Un défi qui n’a pas encore été relevé...\nDans cette ville écolo, les purificateurs d’air déjà installés dans les rues sous forme d’arbres artificiels, se sont avérés efficaces. Cependant, certains citoyens les trouvent d’une laideur extrême ! Frustrés, ils soutiennent que ces dépenses sont inutiles ! Ils insistent qu’il faut plutôt éliminer les polluants provenant des chantiers et des usines, tels la poussière et les gaz toxiques et, ceci, de façon urgente.\nDevant le conseil municipal, le maire de Pailly riposte : « l’élimination totale des polluants n’est pas pour demain, mais en attendant, les citoyens veulent respirer de l’air pur partout. Donc, ces arbres artificiels sont utiles ! Il ne faut pas négliger les bienfaits immédiats possibles des purificateurs dans les écoles. Nous avons le devoir et la responsabilité d’y améliorer l’environnement. Le projet que je veux vous proposer est pour le bien-être de nos générations futures. Tout le monde a droit à l’air pur ! »\nIl a ainsi convaincu le conseil municipal de Pailly de suivre sa recommandation : de mener une expérimentation gratuite avec des purificateurs d’air dans les salles de classe pendant un an. Si le résultat montre que la pollution de l’air est diminuée, la mairie paiera chaque mois pour assurer un air pur.\nMaintenant, c’est aux entreprises de Pailly de suivre l’exemple de la mairie et de relever le défi !\nWhat are the main findings of the research regarding Pailly schools?\nWhy are some citizens against the arbres artificiels?\nWhat arguments did the mayor use to convince council to follow his recommendation?\n... c’est aux entreprises de Pailly de suivre l’exemple de la mairie et de relever le défi !\nExplain this concluding statement made by the author."
+  },
+  {
+   "id": "fc2020_q11",
+   "year": 2020,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "Answer the following question by writing approximately 200 words in FRENCH.\nYou have received this email from your friend. Write an email in reply.\nSalut Dominique,\nMa petite sœur Claudine m’énerve !\nTout a commencé il y a quelques semaines quand elle a demandé plus d’argent de poche. Elle a dit aux parents qu’elle avait envie de choisir ses propres vêtements. À quatorze ans ? Ils ont toujours acheté ses habits et elle a toujours été contente de leurs choix !\nS’ils ne lui donnent pas plus d’argent, elle se dit prête à trouver un petit boulot. C’est ridicule ! Elle doit plutôt se concentrer sur son piano.\nHier, au téléphone, maman a entendu le pire : « Madame, votre enfant s’est fait prendre en train de voler dans notre boutique de mode. » Ma mère en a été dévastée. À quoi donc pensait Claudine ?\nDepuis, elle s’enferme dans sa chambre... Ah, je voudrais une sœur comme la tienne.\nTa copine Amandine"
+  },
+  {
+   "id": "fc2020_q12",
+   "year": 2020,
+   "number": "12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Travel and tourism",
+   "text": "Answer the following question by writing approximately 75 words in FRENCH.\nYour friend has invited you to spend the summer holidays by the beach. Write a message in response to this invitation."
+  },
+  {
+   "id": "fc2020_q13a",
+   "year": 2020,
+   "number": "13(a)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Answer ONE of the following questions (part a). Write approximately 200 words in FRENCH.\nYou have been given an opportunity to live overseas for six months. Write a diary entry reflecting on what this could mean for you."
+  },
+  {
+   "id": "fc2020_q13b",
+   "year": 2020,
+   "number": "13(b)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Answer ONE of the following questions (part b). Write approximately 200 words in FRENCH.\nYou have just attended a family gathering that did not turn out as expected. Write a diary entry reflecting on this experience."
+  },
+  {
+   "id": "fc2021_q1",
+   "year": 2021,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Why is Alban visiting his mother tomorrow?"
+  },
+  {
+   "id": "fc2021_q2",
+   "year": 2021,
+   "number": "q2",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Fill in the form with the missing details in ENGLISH.\nCustomer rewards card\nName: Mrs Blondel\nProblem:\nEmail address:\n@"
+  },
+  {
+   "id": "fc2021_q3",
+   "year": 2021,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Travel and tourism",
+   "text": "Explain Margot’s feelings about the trip."
+  },
+  {
+   "id": "fc2021_q4",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "What is the purpose of the advertisement?\nTo notify people of a treasure hunt\nTo promote a new nonfiction book\nTo inform listeners of a successful TV show\nTo encourage listeners to sell their old jewels"
+  },
+  {
+   "id": "fc2021_q5",
+   "year": 2021,
+   "number": "q5",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Describe how ZR21 works."
+  },
+  {
+   "id": "fc2021_q6",
+   "year": 2021,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Explain how the speakers’ points of view differ."
+  },
+  {
+   "id": "fc2021_q7",
+   "year": 2021,
+   "number": "q7",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Explain the actions taken by the couple."
+  },
+  {
+   "id": "fc2021_q8",
+   "year": 2021,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "How does this advertisement try to convince listeners to attend the Journées Nationales de la Découverte? Support your answer with reference to content and language."
+  },
+  {
+   "id": "fc2021_q9",
+   "year": 2021,
+   "number": "9",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "Ado — Forum Conseils\nÉnora (17 ans, lycéenne) : Je suis en terminale et je n’ai pas le droit de sortir les weekends à cause de mes mauvaises notes du trimestre dernier. J’ai déjà regardé toutes les séries de télé et je ne sais pas comment occuper mes journées ! J’en ai marre ! J’ai besoin de vos idées.\nRené (20 ans, étudiant) : Tu exagères ! Chez soi, on a tout à portée de la main ces jours-ci. Tu aimes lire ? Vas sur le site de la bibliothèque nationale et consulte leurs ouvrages gratuits en ligne. Tu aimes dessiner ? Apprends avec des tutoriels sur Internet !\nLina (17 ans, lycéenne) : Énora, j’ai vécu ça moi aussi, c’est pénible. Mon tuyau pour toi, c’est de faire quelque chose qui va plaire à tes parents, comme des tâches ménagères, pour qu’ils lèvent la punition.\nJocelyne (29 ans, psychologue) : À mon avis, ce temps libre à rêvasser est une bonne chose. Selon les recherches neurolinguistiques, l’ennui est indispensable au développement du cerveau et à la formation de nouvelles idées. Alors, prends le temps de méditer et d’observer ce qui t’entoure.\nBenjamin (23 ans, étudiant) : Prends ton mal en patience Énora. Je suis sûr que dessiner et lire en ligne ne vont pas t’aider à améliorer tes notes. Ne perds pas ton temps à faire le ménage ni à rêvasser. Puisque tu es en terminale, il faut utiliser ton temps à bon escient. Révise tes cours, écris tes notes de synthèse et bachote, ma belle ! Ça en vaut la peine et tes parents seront ravis !\nWhat has prompted Énora to post her message?\nHow does René respond to Énora’s post?\nWhat do Lina’s comments reveal about her? Support your answer with reference to the text.\nCompare the relevance of Jocelyne’s and Benjamin’s comments to Énora’s situation."
+  },
+  {
+   "id": "fc2021_q10",
+   "year": 2021,
+   "number": "10",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Un chien en appartement ?\nLes statistiques nationales de 2020 montrent que plus de la moitié des Français possèdent un animal de compagnie, une nette croissance par rapport aux années précédentes. Cette augmentation s’expliquerait par l’isolement de certaines personnes lors de la pandémie quand celles-ci ont ressenti le besoin d’avoir un animal domestique pour atténuer leur solitude. “Les demandes de chiens ont explosé même si beaucoup de mes clients vivent dans un appartement sans jardin en centre-ville” affirme un éleveur canin en région parisienne.\nLes habitants d’immeubles que j’ai interviewés pour cet article, m’ont rapporté que les chiens aboyaient fortement quand leurs maîtres s’absentaient. Les voisins râlent à cause de ce bruit insupportable qui, soi-disant, empêche les jeunes enfants de faire la sieste. Ceci dit, le calme convoité ne dépend-il pas aussi du volume de la musique et des disputes ménagères ?\nCertains résidents clament leur dégoût envers les animaux qui salissent les entrées des immeubles avec leurs pattes boueuses. Par ailleurs, ils hurlent leur répugnance envers les déjections canines sur les pelouses ! “Résultat, les immeubles doivent être nettoyés plus souvent, donc les frais de nettoyage augmentent” disent les copropriétaires.\nNéanmoins, chers lecteurs, les avantages sont irréfutables ! Une promenade quotidienne entretient la forme physique des chiens et de leurs maîtres. Quant à la santé mentale, rien de tel que de caresser un animal ! Le bonheur que les chiens peuvent procurer est très touchant dans les cas où ils aident les humains à se reconstruire émotionnellement. De nombreuses personnes s’en sont rendu compte lors des confinements récents quand les contacts humains étaient restreints. Ces trésors à quatre pattes nous offrent une affection sans réserve. Le fait de s’occuper d’un animal au quotidien peut devenir une raison d’être pour certains, pour d’autres un gagne-pain. D’autre part, les commerces animaliers foisonnent autour de l’entretien de nos chères bêtes poilues. Les fabricants de produits alimentaires, vestimentaires, sans parler des sociétés de toilettage et de dressage, prolifèrent parce que les maîtres dépensent un argent fou pour leurs animaux. Ces commerces ont déclaré des bénéfices nets à l’encontre d’autres secteurs.\nAlors franchement, les inconvénients ne sont-ils pas insignifiants par rapport aux avantages réels ?\nHow does the author explain the statistics?\nSummarise the complaints made by the people interviewed.\n“... les avantages sont irréfutables !” (paragraph 4)\nExplain what the author means by this statement.\nHow does the author use language to convey her/his point of view?"
+  },
+  {
+   "id": "fc2021_q11",
+   "year": 2021,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "Answer the following question by writing approximately 200 words in FRENCH.\nYou have received this email from your friend. Write an email in reply.\n20 novembre\nSalut,\nChouette, les épreuves du bac sont finies ! J’ai de grandes nouvelles à t’annoncer ! En décembre, nous déménageons à la campagne à deux heures de route d’ici mais ne t’inquiète pas, il y a un train direct qui dessert cet endroit.\nMes parents travailleront en ligne car ils en ont marre du rythme frénétique et stressant de la ville. Ils veulent profiter de la nature et du grand air plus souvent. L’université la plus proche est à soixante minutes porte à porte en car ! Mais, en fait, c’est la plus cotée pour mes études d’agroécologie. Ceci dit, ce changement m’angoisse : les copains, le cinéma, les cafés du coin, tout ça va me manquer.\nJe t’invite chez moi après les fêtes de Noël. Peux-tu rester une semaine s’il te plaît ?\nRéponds-moi vite car tu me manques déjà,\nAlizée"
+  },
+  {
+   "id": "fc2021_q12",
+   "year": 2021,
+   "number": "12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "Answer the following question by writing approximately 75 words in FRENCH.\nYou attended an event where you met your favourite celebrity. Write an email to your friend describing this experience."
+  },
+  {
+   "id": "fc2021_q13a",
+   "year": 2021,
+   "number": "13(a)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Answer ONE of the following questions (part a). Write approximately 200 words in FRENCH.\nYou have been nominated by your school to write an article for the local newspaper.\nWrite an article in which you try to persuade the local community to support your school’s fundraising activities."
+  },
+  {
+   "id": "fc2021_q13b",
+   "year": 2021,
+   "number": "13(b)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "Answer ONE of the following questions (part b). Write approximately 200 words in FRENCH.\nYou have been invited to write an article for the local community newsletter.\nWrite an article in which you evaluate a French Cultural Day you recently attended in your area."
+  },
+  {
+   "id": "fc2022_q1",
+   "year": 2022,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "What is the speaker looking forward to?"
+  },
+  {
+   "id": "fc2022_q2",
+   "year": 2022,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Leisure and interests",
+   "text": "What is the purpose of this announcement?"
+  },
+  {
+   "id": "fc2022_q3",
+   "year": 2022,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "Complete the Visitor Feedback form in ENGLISH.\nExhibition: French Impressionists\nDate of visit: 01 October 2022\nComments:\nPositive(s):\nNegative(s):"
+  },
+  {
+   "id": "fc2022_q4",
+   "year": 2022,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Summarise the speaker’s main points."
+  },
+  {
+   "id": "fc2022_q5",
+   "year": 2022,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "Compare how the speakers feel about their experiences in France."
+  },
+  {
+   "id": "fc2022_q6",
+   "year": 2022,
+   "number": "q6",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "According to Laure, to what extent is Éric ready for university? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2022_q7a",
+   "year": 2022,
+   "number": "7(a)",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "This conversation is taking place because of\nthe siren of an ambulance.\nthe arrival of a fire engine.\na fire burning in a local café.\nthe sound of a loud explosion."
+  },
+  {
+   "id": "fc2022_q7b",
+   "year": 2022,
+   "number": "7(b)",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "What does the conversation reveal about the relationship between the male speaker and Laurent? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2022_q8",
+   "year": 2022,
+   "number": "8",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Un métier de notre époque\nAu troisième millénaire, on est loin des fêtes d’antan qui se déroulaient à la maison. Chaque année les mêmes célébrations se répétaient de manière prévisible mais de nos jours, les moeurs ont changé. À ce sujet, nous avons consulté Alizée Dumas, planificatrice à succès en événementiel.\n“De nos jours, les parents sont stressés par un style de vie frénétique et ont peu de temps à consacrer aux préparations des fêtes”, nous a-t-elle confié dans son mèl. “Vite débordés, ils trouvent idéal de s’en remettre à des planificateurs comme moi, ainsi, ils n’ont rien à faire à l’avance. Il est essentiel de savoir cerner les besoins des clients et d’y répondre. Souvent, ils recherchent des événements hors normes ce qui exige une organisation impeccable.”\nJ’ai trouvé ses événements époustouflants. Elle crée des fêtes d’anniversaire originales ou bien des réunions d’amis à thème, toujours avec une touche d’excentricité. Il n’y a pas de limites à sa créativité, tant que les clients y mettent le prix. Récemment, pour des ados mordus d’Égypte ancienne, elle a organisé une enquête sur une momie de trois mille ans dans un musée d’histoire. Un succès ! Hier, elle a créé une fête inhabituelle qui s’est déroulée dans un magasin de bricolage. Les enfants ont fabriqué des coffrets à bijoux ou à outils. Même en masques et tabliers, ils se sont vraiment amusés et ont aimé faire quelque chose eux-mêmes ! À leur grande surprise, l’atelier s’est terminé par des friandises sur un tapis roulant.\nAvis aux amateurs ! Alizée a expliqué que pour réussir, il faut être inventif : chaque fête doit être différente ! Il faut aussi être au courant des dernières tendances de la société.\n“... on est loin des fêtes d’antan ...”\nExplain what the author means by this.\nAccording to Alizée, why do present-day parents use services such as hers?\nWhy is the author impressed with Alizée’s events?\nAccording to the article, what skills have contributed to Alizée’s success? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2022_q9",
+   "year": 2022,
+   "number": "9",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Travel and tourism",
+   "text": "02/03/22\nSalut Yann,\nComment va ? Ça fait six mois que je sors avec Marianne et je veux fêter l’occasion. Je veux organiser un week-end dans un endroit isolé avec hôtel cinq étoiles… Marianne est super active et elle est particulièrement folle de varappe, ça serait bien si on pouvait en faire tous les deux pendant le week-end. On a peu de temps donc je voudrais tout organiser pour qu’on en profite au maximum. Tu connais une belle destination ?\nLéo\n09/03/22\nSalut Léo,\nOui, je connais un endroit magique un peu reculé où il n’y a que soixante-dix habitants et très peu de touristes. C’est un peu normal, on ne peut y aller qu’en bateau et au gré des marées. Si la mer est mauvaise, le bateau attend qu’elle se calme. L’île se trouve au large de la Bretagne. La traversée dure environ une heure trente et vous verrez sans doute de grands dauphins blancs. Il n’est pas rare que des bancs entiers escortent les bateaux. C’est un spectacle merveilleux !\nQuand je passais des vacances chez mes grands-parents, nous faisions immanquablement un pèlerinage sur cette perle de la mer d’Iroise. Papi m’a transmis sa passion pour les phoques gris. Savais-tu que c’est l’un des deux seuls endroits en France où ils se reproduisent ? J’ai des souvenirs inoubliables de longs moments passés à les observer. Et puis, l’île est très petite et plate, ce qui convenait parfaitement à ma grand-mère adorée qui avait des difficultés à marcher. Après nos promenades, elle voulait toujours qu’on mange dans un bistro du port parce que les fruits de mer étaient d’une fraîcheur incomparable. Il n’y avait pas de restaurants chics mais les produits de la mer étaient vraiment savoureux. Ah, si je pouvais revivre ces moments sur ce petit bijou de l’océan Atlantique…\nPour dormir il y a plein de chambres d’hôtes, pas forcément grand luxe mais confortables. Question activités, le kayak en bord de mer est très prisé et l’eau à 17 degrés est vraiment rafraîchissante. Ça devrait plaire à Marianne, non ?\nYann\n10/3/22\nMerci de ta suggestion, je vais y réfléchir. Marianne est plutôt du style chaleur tropicale.\nSalut !\nLéo\nWhat prompted Léo to write to Yann?\nWhat attracted Yann’s grandparents to the island?\nHow does Yann convey how he feels about the island? In your answer, refer to language and content.\nHow likely is Léo to take up Yann’s suggestion? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2022_q10",
+   "year": 2022,
+   "number": "10",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Answer the following question by writing approximately 200 words in FRENCH.\nThe following is an exchange of emails between you and your former classmate Paul. Emails 1 and 3 are from Paul. Complete the exchange by writing the text of Email 2.\nEmail 1\nSalut,\nMadame Leblanc, notre ancienne prof de langue, cherche des anciens élèves pour donner des cours de conversation après l’école, quatre fois par semaine. Le but c'est d'aider ses élèves à devenir bilingues en français ou en allemand. Donc, elle cherche des étudiants qui poursuivent l’apprentissage de ces langues à la fac.\nJe n’étais pas un lycéen modèle, comme tu le sais, mais, pour mon diplôme d’ingénierie, j’étudie le français et l’allemand. Crois-tu que j’aie les compétences et les qualités requises pour travailler avec des ados ?\nJe ne suis disponible que deux jours par semaine. Aimerais-tu partager ce rôle avec moi ? Tu étudies le commerce et parles couramment l’allemand et le français. Ce serait un atout. Puis-je en parler à Madame Leblanc ? Réponds-moi vite.\nPaul\nEmail 2\nWrite the text of your email to Paul in your writing booklet.\nEmail 3\nSalut,\nMerci de ta réponse. Félicitations d’avoir reçu cette offre en or ! Je comprends ta décision. Je vais passer tes suggestions à Madame Leblanc. Elle les appréciera.\nBonne chance pour ta nouvelle aventure !\nPaul"
+  },
+  {
+   "id": "fc2022_q11",
+   "year": 2022,
+   "number": "11",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Answer the following question by writing approximately 75 words in FRENCH.\nYour best friend has just received an award. Write a message inviting him/her out to celebrate."
+  },
+  {
+   "id": "fc2022_q12a",
+   "year": 2022,
+   "number": "12(a)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "Answer ONE of the following questions (part a). Write approximately 200 words in FRENCH.\nYou have just completed a week of volunteer service in your community and you have been invited to give a speech about it at your local youth club.\nWrite the script of your speech in which you evaluate your experience."
+  },
+  {
+   "id": "fc2022_q12b",
+   "year": 2022,
+   "number": "12(b)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Answer ONE of the following questions (part b). Write approximately 200 words in FRENCH.\nYou are on a school wellbeing committee and you wish to introduce a project. You will present your plan to students and staff on the committee.\nWrite the script of your speech to persuade the committee to accept your initiative."
+  },
+  {
+   "id": "fc2023_q1",
+   "year": 2023,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Why is Benoît annoyed?"
+  },
+  {
+   "id": "fc2023_q2",
+   "year": 2023,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "Why does the father insist on speaking to his daughter?"
+  },
+  {
+   "id": "fc2023_q3",
+   "year": 2023,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Explain the speaker’s gratitude towards Benjamin."
+  },
+  {
+   "id": "fc2023_q4",
+   "year": 2023,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "How likely is it that the Canapés Dorés company will be hired?"
+  },
+  {
+   "id": "fc2023_q5",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Leisure and interests",
+   "text": "Which activity is Capucine most likely to choose for her birthday?\nParkour\nGeocaching\nEscape room\nVideo games"
+  },
+  {
+   "id": "fc2023_q6",
+   "year": 2023,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Travel and tourism",
+   "text": "Summarise the main features of Tropique."
+  },
+  {
+   "id": "fc2023_q7",
+   "year": 2023,
+   "number": "q7",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "To what extent is Maëlla’s attitude justified? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2023_q8",
+   "year": 2023,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Explain the changes in Océane and Jean-Luc’s profession."
+  },
+  {
+   "id": "fc2023_q9",
+   "year": 2023,
+   "number": "9",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Au secours des parents\nJe me fais du souci pour mon fils de 15 ans qui passe son temps devant le miroir. Il prend rarement ses repas en famille qui, d’ailleurs, finissent souvent en dispute à cause de lui. Résultat : on est tous tendus ! Le plus souvent, il grignote entre les repas et, au lieu de s’asseoir avec nous, il préfère s’isoler dans sa chambre avec ses écouteurs. Comment l’aider sans le froisser ?\nAnnie\nJe compatis, le comportement alimentaire des ados est inconstant. Ils ont du mal à gérer leurs sentiments et à trouver un juste milieu : ils priorisent leurs nouveaux intérêts et la compagnie des ados, tout en réclamant leur indépendance ! À 15 ans, il est temps qu’il mûrisse. Dites-lui qu’il doit changer. Parlez-lui franchement !\nAlban\nParler, oui. Mais il faut aller plus loin. Votre fils est trop gâté ! Quand j’étais en échange en Australie, on déjeunait avec des sandwichs qu’on gardait dans une boîte ! Cela me faisait apprécier les bons repas familiaux en France. Interdisez-lui ses écouteurs ou privez-le de sorties. Ce n’est pas vivable — quel égoïste !\nFlorian\nMoi, je parie que votre fils est amoureux. Les jeunes ont tendance à perdre la tête quand ils sont dans une bulle romantique. C’est normal, mais il faut que les disputes finissent parce que son comportement affecte le reste de la famille. Alors, oui, parlez-lui de votre inquiétude mais ne l’intimidez pas avec des punitions. Dites-lui plutôt d’inviter son ami(e) chez vous et commandez leurs plats favoris ou dites-lui de venir ensemble chez vous pour regarder un bon film de leur choix. Avec du tact, le reste suivra.\nLaëtitia\nMerci à tous ! La dernière explication s’avère perspicace et utile !\nAnnie\nWhy is this forum appropriate for Annie’s post?\nCompare Alban’s and Florian’s opinions.\nLa dernière explication s’avère perspicace et utile !\nExplain why Annie writes this. Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2023_q10",
+   "year": 2023,
+   "number": "10",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Denise Lambert, chef d’une entreprise de textile écolo près de Calais, est l’invitée de l’émission “Sauver la terre !”.\nJOURNALISTE : Bonsoir Denise. On vous a décerné le Prix d’Innovation 2023 pour l’Environnement. Qu’est-ce qui vous a inspirée à travailler plus écologiquement ?\nDENISE : L’industrie de la mode consomme presque 93 billions de mètres cubes d’eau par an, elle jette 550,000 tonnes de fibres plastiques dans les océans et compte pour plus de 10% des émissions mondiales de carbone. J’ai réagi contre cette situation !\nJOURNALISTE : Que faites-vous au sein de votre entreprise pour réduire votre empreinte carbone ?\nDENISE : Au coton, qui est importé en France, donc pas très écologique, nous préférons le lin qui est cultivé localement. Saviez-vous que la France est le premier producteur de lin au monde ? En utilisant le lin français, nous avons éliminé des milliers de kilomètres nécessités par les fabrications traditionnelles du coton. Ainsi, nous avons pu réduire les émissions de carbone. Tout comme les grosses fabriques de chaussures de sport, nous investissons aussi dans les alternatives aux produits synthétiques, telles que la recherche prometteuse sur les algues marines pour les remplacer.\nJOURNALISTE : Avez-vous un conseil pour les jeunes et leur avenir ?\nDENISE : Oui, de ne pas devenir victimes de la mode dont l’industrie a une réputation environnementale déplorable, et de se méfier de la commercialisation qui règne sur la société. Surtout, il faut toujours croire en ce qu’on fait et savoir persévérer tout en respectant la planète. C’est ma philosophie.\nJOURNALISTE : C’est le secret de votre succès ?\nDENISE : Bien sûr, mon entreprise en est un exemple concret. Au début, c’était la galère ! Je fabriquais moi-même trente pantalons par mois mais j’ai tenu le coup ! Maintenant j’ai une équipe qui en fait trente par jour, de style “jeans”. Vous savez, il y a une demande croissante pour des produits bio, écologiques et de bonne qualité. Sincèrement, les gens veulent vivre éthiquement de nos jours !\nJOURNALISTE : Merci Denise Lambert. Je veux rappeler à nos auditeurs de continuer à sensibiliser les jeunes au respect de la planète et à l’adoption d’habitudes de vie plus durables pour un avenir meilleur.\nWhy was Denise Lambert interviewed?\nJ’ai réagi contre cette situation !\nTo what is Denise Lambert referring when she makes this statement?\nHow is Denise Lambert’s philosophy reflected in her business?\nHow does Denise Lambert feel about the subject discussed? Support your answer with reference to language and content."
+  },
+  {
+   "id": "fc2023_q11",
+   "year": 2023,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "Answer the following question by writing approximately 200 words in FRENCH.\nYou are Camille. You have received the following email from your uncle. Write the text of your email response to him.\nSalut Camille,\nComment vas-tu ? Tu prends toujours une année sabbatique avant l’université ? J’ai trouvé le dépliant ci-joint et ça m’a fait penser à toi. Ça te permettra de voyager comme tu veux mais en même temps ça pourrait être utile pour tes futures études d’architecture. Tata et moi, on payera ton billet d’avion si tu en as besoin. Dis-nous ce que tu en penses !\nBisous\nTonton\nL’association Travaux Brousse NC recherche des bénévoles francophones âgés de 18 à 25 ans pour participer à la construction d’une salle de sports dans un village néo-calédonien. Aucune qualification requise. Le weekend, vous serez libre de découvrir la brousse. Vous n’aurez qu’à payer le billet d’avion, les sorties et vos dépenses personnelles.\nConditions de travail :\n• janvier – avril 2024\n• travail administratif et de construction\n• 35 heures par semaine\n• hébergement gratuit en famille d’accueil.\nVeuillez nous contacter à benevolat@travauxbroussenc.com."
+  },
+  {
+   "id": "fc2023_q12",
+   "year": 2023,
+   "number": "12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Answer the following question by writing approximately 75 words in FRENCH.\nDue to unforeseen circumstances, you will miss your end-of-year school formal. Write a note to your best friend to explain why."
+  },
+  {
+   "id": "fc2023_q13a",
+   "year": 2023,
+   "number": "13(a)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Answer ONE of the following questions (part a). Write approximately 200 words in FRENCH.\nA good friend has suggested that you share an apartment with him/her when you leave school. Write a diary entry in which you evaluate the idea of living together."
+  },
+  {
+   "id": "fc2023_q13b",
+   "year": 2023,
+   "number": "13(b)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "Answer ONE of the following questions (part b). Write approximately 200 words in FRENCH.\nYou have just returned home from a live event which turned out better than expected. Write a diary entry in which you reflect on the experience."
+  },
+  {
+   "id": "fc2024_q1",
+   "year": 2024,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Complete the telephone message.\nTelephone message from Pâtisserie Lebon\nTo: Mr Martin\nCake order: Chocolate cake\nEvent: ...\nTotal cost: €..."
+  },
+  {
+   "id": "fc2024_q2",
+   "year": 2024,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Leisure and interests",
+   "text": "Explain Arthur’s decision."
+  },
+  {
+   "id": "fc2024_q3",
+   "year": 2024,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "Summarise the TWO main points of the announcement."
+  },
+  {
+   "id": "fc2024_q4",
+   "year": 2024,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "Describe the intended audience of this advertisement."
+  },
+  {
+   "id": "fc2024_q5",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "What is Sabine most likely to say next?\nRichard, tu as raison.\nRichard, tu es un peu paranoïaque.\nRichard, tu devrais améliorer ton anglais.\nRichard, tu devrais acheter les chaussures."
+  },
+  {
+   "id": "fc2024_q6",
+   "year": 2024,
+   "number": "q6",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "How likely is Monique to quit her job? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2024_q7",
+   "year": 2024,
+   "number": "q7",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Compare Emma’s and Paul’s opinions about the topic discussed."
+  },
+  {
+   "id": "fc2024_q8",
+   "year": 2024,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "How do Amélie’s feelings change during the course of this conversation? Support your answer with reference to language and content."
+  },
+  {
+   "id": "fc2024_q9",
+   "year": 2024,
+   "number": "9",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Notice aux élèves\nJe tiens à rappeler aux élèves du Lycée Aurore qu’ils sont tenus d’observer les règles de bienséance nécessaires pour vivre harmonieusement dans notre communauté. Quelle déception quand je reçois des plaintes de membres du public, de vos professeurs, et même de parents potentiels, en ce qui concerne votre comportement. La réputation de l’école est primordiale.\nJe viens de lire une nouvelle lettre d’un membre du public concernant votre attitude dans les bus. Soi-disant, vous ne vous levez pas lorsque d’autres passagers montent dans le bus. Il est essentiel que vous cédiez votre place assise aux personnes âgées, ou en situation de difficulté physique. Votre conscience devrait vous encourager à aider ces personnes à s’asseoir aisément, afin qu’elles ne se blessent pas pendant le trajet. Imaginez vos grands-parents ou votre oncle qui a du mal à marcher. Vous aimeriez bien qu’on leur vienne en aide, non ?\nChaque jour, les professeurs me font part de leurs frustrations concernant votre manque de bonnes manières en classe. Le bavardage est incessant, paraît-il. Je suis ravie que vous participiez aux discussions de classe, mais… chacun son tour ! Il faut respecter le temps de parole du professeur et celui des autres élèves. Nous avons un geste spécifique pour cela : nous levons la main. Adoptez-le !\nLors de leur visite vendredi dernier, les parents des futurs élèves potentiels ont évoqué la saleté de certains endroits du lycée. Notre lycée n’est ni une poubelle géante, ni une tanière pour rats qui viennent profiter de vos ordures. Mettez vos déchets dans les poubelles adéquates. Si vous voyez d’autres élèves salir notre école, insistez pour qu’ils adoptent les bons gestes. En étant écocitoyen, vous aiderez la planète.\nChers élèves, je m’attends à ce que vous remédiez à cette situation. J’espère que les prochains commentaires seront des compliments à votre égard, je vous en ferai part.\nMadame Toubon\nProviseure\nWhat has prompted the principal to write this notice? In your answer, refer to the first paragraph.\nList the instructions given.\nHow does the principal use language to convince the students? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2024_q10",
+   "year": 2024,
+   "number": "10",
+   "marks": 14,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Journal de Sainte-Louison\nSainte-Louison, un paradis oublié ?\nAh, l’île Sainte-Louison… Les plages de sable blanc, les poissons multicolores qui sillonnent les eaux turquoise, les perroquets exotiques à l’abondance, un endroit idyllique, même s’il se trouve à 15 000 kilomètres de la France métropolitaine !\nJ’avais hâte de montrer à mes enfants le pays de mon enfance. Ils avaient la tête pleine d’images paradisiaques, mais, en arrivant, la réalité nous a choqués. Des montagnes de plastiques recouvraient les endroits immaculés où je jouais quand j’étais jeune. De plus, en se baignant dans l’océan, mon fils a attrapé la typhoïde et a dû être transporté d’urgence à l’hôpital. J’ai donc décidé d’effectuer des recherches sur les problèmes environnementaux de notre île.\nJ’ai appris que les systèmes d’évacuation d’eaux usées étaient défaillants. Les tuyaux ont des fuites et nos matières fécales se déversent dans les lagons et dans l’océan. Il faut absolument que les fonctionnaires œuvrent urgemment pour réparer le système sanitaire de l’île. Il est aussi essentiel que nous réduisions la quantité de plastique que nous utilisons. Je félicite les hôtels qui utilisent déjà des bouteilles de produits de toilette rechargeables. Mesdames et messieurs les fonctionnaires, ne pourriez-vous pas rendre cette pratique obligatoire pour tous nos hôtels ?\nJe me suis aussi penché sur la phytodépollution qui marche bien dans certaines îles du pacifique. Ce processus utilise des plantes indigènes pour assainir les eaux sales. La nature nettoie la nature ! Malheureusement, il faut trouver les plantes locales adéquates, donc, il va falloir du temps pour que ce processus soit efficace. Dans l’immédiat, les habitants de l’île doivent contribuer en rapportant leurs bouteilles plastiques dans les points de recyclage. Le plastique qui traîne sur nos plages se retrouve dans l’océan et tue nos espèces marines. La famille Tehau a fondé une exploitation agricole dans laquelle ils cultivent des produits bio. Une vraie réussite. Il nous faudrait beaucoup plus d’exploitations familiales, cela rajeunirait notre sol.\nTravaillons ensemble pour que notre paradis oublié soit enfin retrouvé.\nÉcrit par Éric Lafleur\nHow is Sainte-Louison described in the first paragraph?\nWhat sequence of events led the author to become interested in the issue?\nHow appropriate is phytodépollution to Sainte-Louison’s current needs?\nTravaillons ensemble pour que notre paradis oublié soit enfin retrouvé.\nExplain the author’s concluding statement."
+  },
+  {
+   "id": "fc2024_q11",
+   "year": 2024,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Answer the following question by writing approximately 200 words in FRENCH.\nYou are Dominique. You have received this email from your friend Sandrine. Write the text of your email response to her.\nDe : sandrine150@fmail.fr\nÀ : dominique@fmail.fr\nObjet : Aide-moi !\nSalut Dominique,\nTu nous as manqué chez Julie samedi, tu étais où ?\nTu te souviens de mon grand frère, Jean ? Alors, il vient d’annoncer qu’il va se marier… dans cinq mois ! Et c’est moi qui dois faire toutes les préparations ! Tu veux m’aider ?\nLes deux meilleurs amis de Jean se disputent depuis trois semaines. J’ai peur qu’ils provoquent une scène, ils doivent vraiment se réconcilier avant le grand jour. Et ma grand-mère a des problèmes de transport. La cérémonie aura lieu dans un village à 20 kilomètres de chez elle. Elle ne conduit pas, et elle a une peur bleue des bus !\nJe voulais mettre ma jolie robe noire, mais ma mère dit que c’est une faute de goût. Je ne me plains pas, car elle m’a donné de l’argent pour en acheter une nouvelle ! Ça te dirait de venir faire les magasins avec moi ce weekend ?\nRéponds-moi vite !\nSandrine"
+  },
+  {
+   "id": "fc2024_q12",
+   "year": 2024,
+   "number": "12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "Answer the following question by writing approximately 75 words in FRENCH.\nYou and your family are going on holiday for a week, and your cousin will look after your house. Write a message to him/her to describe what he/she will need to do."
+  },
+  {
+   "id": "fc2024_q13a",
+   "year": 2024,
+   "number": "13(a)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / Travel and tourism",
+   "text": "Answer ONE of the following questions (part a). Write approximately 200 words in FRENCH.\nYou have just returned from an organised trip that was different from what was advertised. Write an email to the organising company to persuade them to give you a refund."
+  },
+  {
+   "id": "fc2024_q13b",
+   "year": 2024,
+   "number": "13(b)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Leisure and interests",
+   "text": "Answer ONE of the following questions (part b). Write approximately 200 words in FRENCH.\nYour teacher convinced you to try a new activity that you unexpectedly enjoyed. Write an email to your teacher in which you reflect on the experience."
+  },
+  {
+   "id": "fc2025_q1",
+   "year": 2025,
+   "number": "q1",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Why is Julie likely to study Physics?"
+  },
+  {
+   "id": "fc2025_q2",
+   "year": 2025,
+   "number": "q2",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "Why has the speaker left this message?"
+  },
+  {
+   "id": "fc2025_q3",
+   "year": 2025,
+   "number": "q3",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Travel and tourism",
+   "text": "Explain Sabine’s choice of holiday destination."
+  },
+  {
+   "id": "fc2025_q4",
+   "year": 2025,
+   "number": "q4",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Arts and entertainment",
+   "text": "Summarise the appeal of this K-pop exhibition."
+  },
+  {
+   "id": "fc2025_q5",
+   "year": 2025,
+   "number": "q5",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / The individual / Relationships",
+   "text": "To what extent is Pierre a good friend to Nathalie? Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2025_q6",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / The individual / Leisure and interests",
+   "text": "What is the purpose of this announcement?\nTo invite listeners to compete in the Olympic Games\nTo advertise travel packages to attend the Olympic Games\nTo promote the Opening Ceremony of the Olympic Games\nTo encourage people to book beach vacations during the Olympic Games"
+  },
+  {
+   "id": "fc2025_q7",
+   "year": 2025,
+   "number": "q7",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Evaluate Robert’s plan. Support your answer with reference to the text."
+  },
+  {
+   "id": "fc2025_q8",
+   "year": 2025,
+   "number": "q8",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Explain Simone’s feelings after the job interview."
+  },
+  {
+   "id": "fc2025_q9",
+   "year": 2025,
+   "number": "9",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / French-speaking communities / Daily life and lifestyles",
+   "text": "Éléonore Tarre, influenceuse célèbre, est notre invitée ce soir sur l’émission Culture et Vie.\nINTERVIEWEUR : Éléonore, merci d’être avec nous aujourd’hui. Pouvez-vous vous présenter ?\nÉLÉONORE : J’ai 25 ans et je suis une influenceuse française sur les réseaux sociaux.\nINTERVIEWEUR : Vous venez de vous lancer dans le cinéma français aussi.\nÉLÉONORE : C’est vrai, j’ai un rôle dans un film qui sortira en salle cet été.\nINTERVIEWEUR : Votre compte, La Vie Parisienne, est très populaire. Pourquoi l’avez-vous créé ?\nÉLÉONORE : Paris, c’est la ville la plus belle du monde ! Ce n’est pas facile pour beaucoup de gens de la visiter. Donc j’ai voulu leur offrir une immersion depuis chez eux en leur partageant le mode de vie parisien, comme des produits de luxe et la cuisine française contemporaine.\nINTERVIEWEUR : Votre compte est devenu viral ! Que s’est-il passé ensuite ?\nÉLÉONORE : D’un coup, tout a changé ! Tout le monde me reconnaissait ! Un chasseur de tête m’a même proposé le rôle dans le film que je viens de mentionner. Alors, ma carrière a grimpé en flèche !\nINTERVIEWEUR : C’est-à-dire ?\nÉLÉONORE : Plusieurs marques françaises de luxe m’envoient leurs produits pour se faire de la pub sur mon compte. Je ne devrai plus jamais acheter des produits de maquillage ! C’est un rêve !\nINTERVIEWEUR : Merci à vous, Éléonore.\nWho is Éléonore Tarre?\nWhat prompted her to create La Vie Parisienne?\nExplain why Éléonore says ‘D’un coup, tout a changé’."
+  },
+  {
+   "id": "fc2025_q10",
+   "year": 2025,
+   "number": "10",
+   "marks": 15,
+   "type": "short_answer",
+   "current_path": "Year 12 / The changing world / Current issues",
+   "text": "Bonjour chers élèves,\nJe m’appelle Jean-Luc et, comme votre délégué de classe, je suis ici aujourd’hui pour vous parler de notre initiative de collecte que nos élèves ont créée cette année. Notre but est d’avoir encore plus d’élèves à participer à des collectes de fonds futures pour qu’elles soient réussites pour les sans-abris de notre communauté.\nJe vous explique notre projet. Tout a commencé avec enthousiasme, mais nous avons rencontré des défis — un échec affreux. L’objectif n’a pas été atteint.\nAu début, notre proviseur avait suggéré au comité organisateur d’utiliser les légumes de notre jardin scolaire pour préparer de la soupe pour les sans-abris. Avec l’équipe, nous pensions cela une idée excellente, et même si les autres élèves voulaient y participer au début, ils ne voulaient pas passer trop de temps à cuisiner que de la soupe… et de la soupe… et de la soupe ! Le comité a donc décidé de nous réunir et d’organiser un sleep-out pour les élèves de l’école et une collecte de vêtements pour renforcer les besoins réels des gens défavorisés.\nL’enthousiasme a été contagieux ! Les élèves ont rassemblé assez de vêtements pour remplir le gymnase ! Et, à propos du gymnase, y rester une nuit entière sans télé ou sans jeux serait abominable ! Je félicite, donc, les élèves qui ont organisé une vaste gamme de jeux pour ce sleep-out. Nous avons même contacté des entreprises du quartier pour ajouter à cette collecte de fonds. Tout cela géré avec beaucoup de temps et de patience.\nNéanmoins, certaines donations étaient inutilisables car les vêtements étaient en mauvais état et ont été jetés malheureusement à la poubelle. Ce n’est pas facile à dire que ce geste a brisé nos âmes et nos cœurs… et il faut ajouter que la vie que nos entreprises mènent, ce n’est pas facile. La vie est chère et donc, résultats négatifs de leur part : peu de dons financiers !\nDe même, cela ne veut pas dire que nous n’avons pas eu de succès. Autant que l’objectif n’a pas été atteint, je suis fier de constater que l’engagement et enthousiasme dont les élèves ont fait preuve a réchauffé mon cœur. Je suis ravi de partager avec vous ce sentiment d’optimisme et de détermination pour l’avenir et j’ai vraiment hâte que nos prochains délégués de classe continuent ces collectes de fonds avec plus de succès l’année prochaine. Nous pouvons constater que même si l’argent manque, nous avons appris une chose essentielle — la solidarité ne se mesure pas en argent, mais en actions !\nContinuons à agir ensemble pour le bien-être de notre communauté !\nÉcrit par Éric Lafleur\nWhat is the purpose of this speech?\nExplain how the principal’s recommendation was received.\nSummarise what the committee organised.\nWhat feelings does the speaker express? Support your answer with reference to language."
+  },
+  {
+   "id": "fc2025_q11",
+   "year": 2025,
+   "number": "11",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The young person's world",
+   "text": "Answer the following question by writing approximately 200 words in FRENCH.\nYou have read these posts on an online youth forum. Write the text of the message that you will post on the youth forum, addressing the issues raised.\nLe forum des jeunes\nJe suis super frustrée ! Mes parents refusent que je me fasse percer les oreilles. Tous mes amis les ont, mais moi, je n’ai pas le droit. C’est injuste ! Ils disent que je suis trop jeune, mais j’ai 17 ans ! Pourquoi ne puis-je pas décider de mon apparence ? Ce sont MES oreilles, après tout. J’ai l’impression qu’ils contrôlent tout et qu’ils ne respectent pas mon opinion. Les ados ne devraient-ils pas s’exprimer comme ils veulent ?\nComment les convaincre ?\nCamille\nMoi, c’est le contraire ! Mes parents me laissent faire ce que je veux. J’ai des boucles d’oreilles et un piercing au nez. Le problème, c’est l’école ! On me force à les enlever.\nPourquoi faut-il tous se ressembler ? Je ne trouve pas de justification. Le port de l’uniforme nous transforme en copies conformes. De quelle manière exprimer sa propre individualité ? Quel est votre avis ?\nMax"
+  },
+  {
+   "id": "fc2025_q12",
+   "year": 2025,
+   "number": "12",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / Personal identity",
+   "text": "Answer the following question by writing approximately 75 words in FRENCH.\nYour grandparent bought you a ticket to a concert which will take place this weekend. Write your grandparent a note of thanks."
+  },
+  {
+   "id": "fc2025_q13a",
+   "year": 2025,
+   "number": "13(a)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The individual / School life and aspirations",
+   "text": "Answer ONE of the following questions (part a). Write approximately 200 words in FRENCH.\nYou have just completed a week of work experience. Write an email to your school careers advisor in which you evaluate the experience."
+  },
+  {
+   "id": "fc2025_q13b",
+   "year": 2025,
+   "number": "13(b)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world / The world of work",
+   "text": "Answer ONE of the following questions (part b). Write approximately 200 words in FRENCH.\nYou wish to attend an information session at your preferred university, but you have been scheduled to attend work on that day. Write an email to persuade your boss to change your work schedule."
+  }
+ ]
+}

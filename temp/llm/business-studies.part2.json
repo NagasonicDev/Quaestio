@@ -1,0 +1,1231 @@
+{
+ "course_id": "business-studies",
+ "course_name": "Business Studies",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Nature of business / The role and nature of business / discuss the global expansion of one Australian business"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Nature of business / The role and nature of business / discuss the expansion into Australia of one global business"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how changes in external influences have contributed to the growth of the tertiary, quaternary and quinary industries in Australia"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify problems that arise for stakeholders when companies go into liquidation"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Nature of business / The role and nature of business / distinguish between the different types of businesses"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify actual businesses at different stages in the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Nature of business / The role and nature of business / outline possible business strategies appropriate for different stages in the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Nature of business / The role and nature of business / the nature of a business"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Nature of business / The role and nature of business / producing goods and services"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Nature of business / The role and nature of business / profit, employment, incomes, choice, innovation, entrepreneurship and risk, wealth and quality of life"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Nature of business / The role and nature of business / classification of business"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Nature of business / The role and nature of business / size – small to medium enterprises (SMEs), large"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Nature of business / The role and nature of business / local, national, global"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Nature of business / The role and nature of business / industry – primary, secondary, tertiary, quaternary, quinary"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Nature of business / The role and nature of business / legal structure – sole trader, partnership, private company, public company, government enterprise"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Nature of business / The role and nature of business / factors influencing choice of legal structure"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Nature of business / The role and nature of business / size, ownership, finance"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Nature of business / The role and nature of business / external influences – economic, financial, geographic, social, legal, political, institutional, technological, competitive situation, markets"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Nature of business / The role and nature of business / internal influences – products, location, resources, management and business culture"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Nature of business / The role and nature of business / stakeholders"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Nature of business / The role and nature of business / stages of the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Nature of business / The role and nature of business / establishment"
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Nature of business / The role and nature of business / growth"
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Nature of business / The role and nature of business / maturity"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Nature of business / The role and nature of business / post-maturity"
+  },
+  {
+   "code": "PRE-M1-T1-D26",
+   "path": "Year 11 / Nature of business / The role and nature of business / responding to challenges at each stage of the business life cycle"
+  },
+  {
+   "code": "PRE-M1-T1-D27",
+   "path": "Year 11 / Nature of business / The role and nature of business / factors that can contribute to business decline"
+  },
+  {
+   "code": "PRE-M1-T1-D28",
+   "path": "Year 11 / Nature of business / The role and nature of business / voluntary and involuntary cessation – liquidation"
+  },
+  {
+   "code": "PRE-M1-T1-D29",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify the qualities of managers who have exhibited high personal and ethical standards"
+  },
+  {
+   "code": "PRE-M1-T1-D30",
+   "path": "Year 11 / Nature of business / The role and nature of business / analyse different ways of coordinating key business functions for an SME"
+  },
+  {
+   "code": "PRE-M1-T1-D31",
+   "path": "Year 11 / Nature of business / The role and nature of business / examine effective cash flow management"
+  },
+  {
+   "code": "PRE-M1-T1-D32",
+   "path": "Year 11 / Nature of business / The role and nature of business / assess the role of the income statement and the balance sheet when describing the financial performance of a business"
+  },
+  {
+   "code": "PRE-M1-T1-D33",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how SMEs manage change effectively"
+  },
+  {
+   "code": "PRE-M1-T1-D34",
+   "path": "Year 11 / Nature of business / The role and nature of business / discuss the influence of government on SMEs"
+  },
+  {
+   "code": "PRE-M1-T1-D35",
+   "path": "Year 11 / Nature of business / The role and nature of business / assess the effect of two changes in the business environment on SMEs"
+  },
+  {
+   "code": "PRE-M1-T1-D36",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how the business plan is determined in at least one SME"
+  },
+  {
+   "code": "PRE-M1-T1-D37",
+   "path": "Year 11 / Nature of business / The role and nature of business / explain how SMEs can enter the global market for long-term growth"
+  },
+  {
+   "code": "PRE-M1-T1-D38",
+   "path": "Year 11 / Nature of business / The role and nature of business / identify ways that SMEs gain a competitive advantage"
+  },
+  {
+   "code": "PRE-M1-T1-D39",
+   "path": "Year 11 / Nature of business / The role and nature of business / based on a hypothetical or actual business"
+  },
+  {
+   "code": "PRE-M1-T1-D40",
+   "path": "Year 11 / Nature of business / The role and nature of business / presented in a business plan/report format"
+  },
+  {
+   "code": "PRE-M1-T1-D41",
+   "path": "Year 11 / Nature of business / The role and nature of business / sources of planning ideas"
+  },
+  {
+   "code": "PRE-M1-T1-D42",
+   "path": "Year 11 / Nature of business / The role and nature of business / situational analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D43",
+   "path": "Year 11 / Nature of business / The role and nature of business / vision, goals and/or objectives"
+  },
+  {
+   "code": "PRE-M1-T1-D44",
+   "path": "Year 11 / Nature of business / The role and nature of business / vision"
+  },
+  {
+   "code": "PRE-M1-T1-D45",
+   "path": "Year 11 / Nature of business / The role and nature of business / business goals"
+  },
+  {
+   "code": "PRE-M1-T1-D46",
+   "path": "Year 11 / Nature of business / The role and nature of business / long-term growth"
+  },
+  {
+   "code": "PRE-M1-T1-D47",
+   "path": "Year 11 / Nature of business / The role and nature of business / organising resources"
+  },
+  {
+   "code": "PRE-M1-T1-D48",
+   "path": "Year 11 / Nature of business / The role and nature of business / operations"
+  },
+  {
+   "code": "PRE-M1-T1-D49",
+   "path": "Year 11 / Nature of business / The role and nature of business / marketing"
+  },
+  {
+   "code": "PRE-M1-T1-D50",
+   "path": "Year 11 / Nature of business / The role and nature of business / finance"
+  },
+  {
+   "code": "PRE-M1-T1-D51",
+   "path": "Year 11 / Nature of business / The role and nature of business / human resources"
+  },
+  {
+   "code": "PRE-M1-T1-D52",
+   "path": "Year 11 / Nature of business / The role and nature of business / forecasting"
+  },
+  {
+   "code": "PRE-M1-T1-D53",
+   "path": "Year 11 / Nature of business / The role and nature of business / total revenue, total cost"
+  },
+  {
+   "code": "PRE-M1-T1-D54",
+   "path": "Year 11 / Nature of business / The role and nature of business / break-even analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D55",
+   "path": "Year 11 / Nature of business / The role and nature of business / cash flow projections"
+  },
+  {
+   "code": "PRE-M1-T1-D56",
+   "path": "Year 11 / Nature of business / The role and nature of business / monitoring and evaluations"
+  },
+  {
+   "code": "PRE-M1-T1-D57",
+   "path": "Year 11 / Nature of business / The role and nature of business / sales"
+  },
+  {
+   "code": "PRE-M1-T1-D58",
+   "path": "Year 11 / Nature of business / The role and nature of business / budgets"
+  },
+  {
+   "code": "PRE-M1-T1-D59",
+   "path": "Year 11 / Nature of business / The role and nature of business / profit"
+  },
+  {
+   "code": "PRE-M1-T1-D60",
+   "path": "Year 11 / Nature of business / The role and nature of business / taking corrective action"
+  },
+  {
+   "code": "PRE-M1-T1-D61",
+   "path": "Year 11 / Nature of business / The role and nature of business / importance of a business plan"
+  },
+  {
+   "code": "PRE-M1-T1-D62",
+   "path": "Year 11 / Nature of business / The role and nature of business / management – staffing and teams"
+  },
+  {
+   "code": "PRE-M1-T1-D63",
+   "path": "Year 11 / Nature of business / The role and nature of business / trend analysis"
+  },
+  {
+   "code": "PRE-M1-T1-D64",
+   "path": "Year 11 / Nature of business / The role and nature of business / identifying and sustaining competitive advantage"
+  },
+  {
+   "code": "PRE-M1-T1-D65",
+   "path": "Year 11 / Nature of business / The role and nature of business / avoiding over-extension of finance and other resources"
+  },
+  {
+   "code": "PRE-M1-T1-D66",
+   "path": "Year 11 / Nature of business / The role and nature of business / using technology"
+  },
+  {
+   "code": "PRE-M1-T1-D67",
+   "path": "Year 11 / Nature of business / The role and nature of business / economic conditions"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / discuss strategies that could reconcile the conflicting interests of stakeholders"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / compare and contrast approaches to management"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / explain the benefits of quality management practices"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / features of effective management"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / skills of management"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / interpersonal, communication, strategic thinking, vision, problem-solving, decisionmaking, flexibility, adaptability to change, reconciling the conflicting interests of stakeholders"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / achieving business goals"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / profits, market share, growth, share price, social, environmental"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / achieving a mix of the above goals"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / staff involvement – innovation, motivation, mentoring, training"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / classical approach"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / management as planning, organising and controlling"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / hierarchical organisational structure"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / autocratic leadership style"
+  },
+  {
+   "code": "PRE-M2-T1-D15",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / behavioural approach"
+  },
+  {
+   "code": "PRE-M2-T1-D16",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / management as leading, motivating, communicating"
+  },
+  {
+   "code": "PRE-M2-T1-D17",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / teams"
+  },
+  {
+   "code": "PRE-M2-T1-D18",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / participative/democratic leadership style"
+  },
+  {
+   "code": "PRE-M2-T1-D19",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / contingency approach"
+  },
+  {
+   "code": "PRE-M2-T1-D20",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / adapting to changing circumstances"
+  },
+  {
+   "code": "PRE-M2-T1-D21",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / coordinating key business functions and resources"
+  },
+  {
+   "code": "PRE-M2-T1-D22",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / operations"
+  },
+  {
+   "code": "PRE-M2-T1-D23",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / goods and/or services"
+  },
+  {
+   "code": "PRE-M2-T1-D24",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / the production process"
+  },
+  {
+   "code": "PRE-M2-T1-D25",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / quality management"
+  },
+  {
+   "code": "PRE-M2-T1-D26",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / marketing"
+  },
+  {
+   "code": "PRE-M2-T1-D27",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / identification of the target market"
+  },
+  {
+   "code": "PRE-M2-T1-D28",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / marketing mix"
+  },
+  {
+   "code": "PRE-M2-T1-D29",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / finance"
+  },
+  {
+   "code": "PRE-M2-T1-D30",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / cash flow statement"
+  },
+  {
+   "code": "PRE-M2-T1-D31",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / income statement"
+  },
+  {
+   "code": "PRE-M2-T1-D32",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / balance sheet"
+  },
+  {
+   "code": "PRE-M2-T1-D33",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / human resources"
+  },
+  {
+   "code": "PRE-M2-T1-D34",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / recruitment"
+  },
+  {
+   "code": "PRE-M2-T1-D35",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / training"
+  },
+  {
+   "code": "PRE-M2-T1-D36",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / employment contracts"
+  },
+  {
+   "code": "PRE-M2-T1-D37",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / separation – voluntary/involuntary"
+  },
+  {
+   "code": "PRE-M2-T1-D38",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / ethical business behaviour"
+  },
+  {
+   "code": "PRE-M2-T1-D39",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / responding to internal and external influences"
+  },
+  {
+   "code": "PRE-M2-T1-D40",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / managing change effectively"
+  },
+  {
+   "code": "PRE-M2-T1-D41",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / identifying the need for change"
+  },
+  {
+   "code": "PRE-M2-T1-D42",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / business information systems"
+  },
+  {
+   "code": "PRE-M2-T1-D43",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / setting achievable goals"
+  },
+  {
+   "code": "PRE-M2-T1-D44",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / resistance to change"
+  },
+  {
+   "code": "PRE-M2-T1-D45",
+   "path": "Year 11 / Business management / The nature and responsibilities of management / management consultants"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / definition"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / role"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / economic contribution"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / success and/or failure"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / personal qualities – qualifications, skills, motivation, entrepreneurship, cultural background, gender"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / sources of information"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / the business idea – competition"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / establishment options – new, existing, franchise"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / market – goods and/or services, price, location"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / finance – source, cost"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / legal – business name, zoning, health and other regulations"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / human resources"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / skills"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / costs – wage and non-wage"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Business planning / Establishing and planning a small to medium enterprise / taxation – federal and state taxes, local rates and charges"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Operations / Strategies for effective operations management / discuss the balance between cost and quality in operations strategy"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Operations / Strategies for effective operations management / examine the impact of globalisation on operations strategy"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Operations / Strategies for effective operations management / identify the breadth of government policies that affect operations management"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Operations / Strategies for effective operations management / explain why corporate social responsibility is a key concern in operations management"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Operations / Strategies for effective operations management / describe the features of operations management for businesses in a tertiary industry"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Operations / Strategies for effective operations management / assess the relationship between operations and the other key business functions in two actual businesses"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Operations / Strategies for effective operations management / explain how operations strategy can help a business sustain its competitive advantage"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Operations / Strategies for effective operations management / recommend possible operations strategies for one hypothetical business"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Operations / Strategies for effective operations management / strategic role of operations management – cost leadership, good/service differentiation"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Operations / Strategies for effective operations management / goods and/or services in different industries"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Operations / Strategies for effective operations management / interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Operations / Strategies for effective operations management / globalisation, technology, quality expectations, cost-based competition, government policies, legal regulation, environmental sustainability"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Operations / Strategies for effective operations management / corporate social responsibility"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Operations / Strategies for effective operations management / the difference between legal compliance and ethical responsibility"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Operations / Strategies for effective operations management / environmental sustainability and social responsibility"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Operations / Strategies for effective operations management / inputs"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Operations / Strategies for effective operations management / transformed resources (materials, information, customers)"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Operations / Strategies for effective operations management / transforming resources (human resources, facilities)"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Operations / Strategies for effective operations management / transformation processes"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Operations / Strategies for effective operations management / the influence of volume, variety, variation in demand and visibility (customer contact)"
+  },
+  {
+   "code": "HSC-M1-T1-D21",
+   "path": "Year 12 / Operations / Strategies for effective operations management / sequencing and scheduling – Gantt charts, critical path analysis"
+  },
+  {
+   "code": "HSC-M1-T1-D22",
+   "path": "Year 12 / Operations / Strategies for effective operations management / technology, task design and process layout"
+  },
+  {
+   "code": "HSC-M1-T1-D23",
+   "path": "Year 12 / Operations / Strategies for effective operations management / monitoring, control and improvement"
+  },
+  {
+   "code": "HSC-M1-T1-D24",
+   "path": "Year 12 / Operations / Strategies for effective operations management / outputs"
+  },
+  {
+   "code": "HSC-M1-T1-D25",
+   "path": "Year 12 / Operations / Strategies for effective operations management / customer service"
+  },
+  {
+   "code": "HSC-M1-T1-D26",
+   "path": "Year 12 / Operations / Strategies for effective operations management / warranties"
+  },
+  {
+   "code": "HSC-M1-T1-D27",
+   "path": "Year 12 / Operations / Strategies for effective operations management / performance objectives – quality, speed, dependability, flexibility, customisation, cost"
+  },
+  {
+   "code": "HSC-M1-T1-D28",
+   "path": "Year 12 / Operations / Strategies for effective operations management / new product or service design and development"
+  },
+  {
+   "code": "HSC-M1-T1-D29",
+   "path": "Year 12 / Operations / Strategies for effective operations management / supply chain management – logistics, e-commerce, global sourcing"
+  },
+  {
+   "code": "HSC-M1-T1-D30",
+   "path": "Year 12 / Operations / Strategies for effective operations management / outsourcing – advantages and disadvantages"
+  },
+  {
+   "code": "HSC-M1-T1-D31",
+   "path": "Year 12 / Operations / Strategies for effective operations management / technology – leading edge, established"
+  },
+  {
+   "code": "HSC-M1-T1-D32",
+   "path": "Year 12 / Operations / Strategies for effective operations management / inventory management – advantages and disadvantages of holding stock, LIFO (lastinfirst-out), FIFO (first-in-first-out), JIT (just-in-time)"
+  },
+  {
+   "code": "HSC-M1-T1-D33",
+   "path": "Year 12 / Operations / Strategies for effective operations management / quality management"
+  },
+  {
+   "code": "HSC-M1-T1-D34",
+   "path": "Year 12 / Operations / Strategies for effective operations management / control"
+  },
+  {
+   "code": "HSC-M1-T1-D35",
+   "path": "Year 12 / Operations / Strategies for effective operations management / assurance"
+  },
+  {
+   "code": "HSC-M1-T1-D36",
+   "path": "Year 12 / Operations / Strategies for effective operations management / improvement"
+  },
+  {
+   "code": "HSC-M1-T1-D37",
+   "path": "Year 12 / Operations / Strategies for effective operations management / overcoming resistance to change – financial costs, purchasing new equipment, redundancy payments, retraining, reorganising plant layout, inertia"
+  },
+  {
+   "code": "HSC-M1-T1-D38",
+   "path": "Year 12 / Operations / Strategies for effective operations management / global factors – global sourcing, economies of scale, scanning and learning, research and development"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / explain why goods and/or services are central to both marketing and operations"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / examine why ethical behaviour and government regulation are important in marketing"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / assess why a mix of promotional strategies is important in the marketing of goods and services"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / evaluate the marketing strategies for a good or service"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / analyse a marketing plan for a business"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / explain how globalisation has affected marketing management"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / strategic role of marketing goods and services"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / production, selling, marketing approaches"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / types of markets – resource, industrial, intermediate, consumer, mass, niche"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / factors influencing customer choice – psychological, sociocultural, economic, government"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / consumer laws"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / deceptive and misleading advertising"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / price discrimination"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / implied conditions"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / warranties"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / ethical – truth, accuracy and good taste in advertising, products that may damage health, engaging in fair competition, sugging"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / situational analysis – SWOT, product life cycle"
+  },
+  {
+   "code": "HSC-M2-T1-D19",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / market research"
+  },
+  {
+   "code": "HSC-M2-T1-D20",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / establishing market objectives"
+  },
+  {
+   "code": "HSC-M2-T1-D21",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / identifying target markets"
+  },
+  {
+   "code": "HSC-M2-T1-D22",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / developing marketing strategies"
+  },
+  {
+   "code": "HSC-M2-T1-D23",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / implementation, monitoring and controlling – developing a financial forecast; comparing actual and planned results, revising the marketing strategy"
+  },
+  {
+   "code": "HSC-M2-T1-D24",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / market segmentation, product/service differentiation and positioning"
+  },
+  {
+   "code": "HSC-M2-T1-D25",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / products – goods and/or services"
+  },
+  {
+   "code": "HSC-M2-T1-D26",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / branding"
+  },
+  {
+   "code": "HSC-M2-T1-D27",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / packaging"
+  },
+  {
+   "code": "HSC-M2-T1-D28",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / price including pricing methods – cost, market, competition-based"
+  },
+  {
+   "code": "HSC-M2-T1-D29",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / pricing strategies – skimming, penetration, loss leaders, price points"
+  },
+  {
+   "code": "HSC-M2-T1-D30",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / price and quality interaction"
+  },
+  {
+   "code": "HSC-M2-T1-D31",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / promotion"
+  },
+  {
+   "code": "HSC-M2-T1-D32",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / elements of the promotion mix – advertising, personal selling and relationship marketing, sales promotions, publicity and public relations"
+  },
+  {
+   "code": "HSC-M2-T1-D33",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / the communication process – opinion leaders, word of mouth"
+  },
+  {
+   "code": "HSC-M2-T1-D34",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / place/distribution"
+  },
+  {
+   "code": "HSC-M2-T1-D35",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / distribution channels"
+  },
+  {
+   "code": "HSC-M2-T1-D36",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / channel choice – intensive, selective, exclusive"
+  },
+  {
+   "code": "HSC-M2-T1-D37",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / physical distribution issues – transport, warehousing, inventory"
+  },
+  {
+   "code": "HSC-M2-T1-D38",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / people, processes and physical evidence"
+  },
+  {
+   "code": "HSC-M2-T1-D39",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / e-marketing"
+  },
+  {
+   "code": "HSC-M2-T1-D40",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / global marketing"
+  },
+  {
+   "code": "HSC-M2-T1-D41",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / global branding"
+  },
+  {
+   "code": "HSC-M2-T1-D42",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / standardisation"
+  },
+  {
+   "code": "HSC-M2-T1-D43",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / customisation"
+  },
+  {
+   "code": "HSC-M2-T1-D44",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / global pricing"
+  },
+  {
+   "code": "HSC-M2-T1-D45",
+   "path": "Year 12 / Marketing / Development and implementation of successful marketing strategies / competitive positioning"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / explain potential conflicts between short-term and long-term financial objectives"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / analyse the influence of government and the global market on financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / identify the limitations of financial reporting"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / compare the risks involved in domestic and global financial transactions"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / calculate key financial ratios"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / assess business performance using comparative ratio analysis"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / recommend strategies to improve financial performance"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / examine ethical financial reporting practices"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / strategic role of financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / objectives of financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / profitability, growth, efficiency, liquidity, solvency"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / short-term and long-term"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / internal sources of finance – retained profits"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / external sources of finance"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / debt – short-term borrowing (overdraft, commercial bills, factoring), long-term borrowing (mortgage, debentures, unsecured notes, leasing)"
+  },
+  {
+   "code": "HSC-M3-T1-D17",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / equity – ordinary shares (new issues, rights issues, placements, share purchase plans), private equity"
+  },
+  {
+   "code": "HSC-M3-T1-D18",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / financial institutions – banks, investment banks, finance companies, superannuation funds, life insurance companies, unit trusts and the Australian Securities Exchange"
+  },
+  {
+   "code": "HSC-M3-T1-D19",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / influence of government – Australian Securities and Investments Commission, company taxation"
+  },
+  {
+   "code": "HSC-M3-T1-D20",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / global market influences – economic outlook, availability of funds, interest rates"
+  },
+  {
+   "code": "HSC-M3-T1-D21",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / planning and implementing – financial needs, budgets, record systems, financial risks, financial controls"
+  },
+  {
+   "code": "HSC-M3-T1-D22",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / debt and equity financing – advantages and disadvantages of each"
+  },
+  {
+   "code": "HSC-M3-T1-D23",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / matching the terms and source of finance to business purpose"
+  },
+  {
+   "code": "HSC-M3-T1-D24",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / monitoring and controlling – cash flow statement, income statement, balance sheet"
+  },
+  {
+   "code": "HSC-M3-T1-D25",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / financial ratios"
+  },
+  {
+   "code": "HSC-M3-T1-D26",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / liquidity – current ratio (current assets ÷ current liabilities)"
+  },
+  {
+   "code": "HSC-M3-T1-D27",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / gearing – debt to equity ratio (total liabilities ÷ total equity)"
+  },
+  {
+   "code": "HSC-M3-T1-D28",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / profitability – gross profit ratio (gross profit ÷ sales); net profit ratio (net profit ÷ sales); return on equity ratio (net profit ÷ total equity)"
+  },
+  {
+   "code": "HSC-M3-T1-D29",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / efficiency – expense ratio (total expenses ÷ sales), accounts receivable turnover ratio (sales ÷ accounts receivable)"
+  },
+  {
+   "code": "HSC-M3-T1-D30",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / comparative ratio analysis – over different time periods, against standards, with similar businesses"
+  },
+  {
+   "code": "HSC-M3-T1-D31",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / limitations of financial reports – normalised earnings, capitalising expenses, valuing assets, timing issues, debt repayments, notes to the financial statements"
+  },
+  {
+   "code": "HSC-M3-T1-D32",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / ethical issues related to financial reports"
+  },
+  {
+   "code": "HSC-M3-T1-D33",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / cash flow management"
+  },
+  {
+   "code": "HSC-M3-T1-D34",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / cash flow statements"
+  },
+  {
+   "code": "HSC-M3-T1-D35",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / distribution of payments, discounts for early payment, factoring"
+  },
+  {
+   "code": "HSC-M3-T1-D36",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / working capital management"
+  },
+  {
+   "code": "HSC-M3-T1-D37",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / control of current assets – cash, receivables, inventories"
+  },
+  {
+   "code": "HSC-M3-T1-D38",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / control of current liabilities – payables, loans, overdrafts"
+  },
+  {
+   "code": "HSC-M3-T1-D39",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / strategies – leasing, sale and lease back"
+  },
+  {
+   "code": "HSC-M3-T1-D40",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / profitability management"
+  },
+  {
+   "code": "HSC-M3-T1-D41",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / cost controls – fixed and variable, cost centres, expense minimisation"
+  },
+  {
+   "code": "HSC-M3-T1-D42",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / revenue controls – marketing objectives"
+  },
+  {
+   "code": "HSC-M3-T1-D43",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / global financial management"
+  },
+  {
+   "code": "HSC-M3-T1-D44",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / exchange rates"
+  },
+  {
+   "code": "HSC-M3-T1-D45",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / interest rates"
+  },
+  {
+   "code": "HSC-M3-T1-D46",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / methods of international payment – payment in advance, letter of credit, clean payment, bill of exchange"
+  },
+  {
+   "code": "HSC-M3-T1-D47",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / hedging"
+  },
+  {
+   "code": "HSC-M3-T1-D48",
+   "path": "Year 12 / Finance / Financial information in the planning and management of business / derivatives"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Human resources / Human resource management and business performance / discuss the influence of government on the process of determining employment contracts"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Human resources / Human resource management and business performance / explain how businesses exhibit corporate social responsibility in the management of human resources"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Human resources / Human resource management and business performance / analyse the causes of two workplace disputes and the strategies used to resolve them"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Human resources / Human resource management and business performance / examine the advantages of a diverse, culturally competent workforce for a global business"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Human resources / Human resource management and business performance / explain the interdependence between human resources and other key business functions"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Human resources / Human resource management and business performance / compare the process of negotiating enterprise/collective agreements with the negotiation of individual contracts"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Human resources / Human resource management and business performance / discuss the advantages and disadvantages of outsourcing in the global market"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Human resources / Human resource management and business performance / evaluate the effectiveness of human resource management for one business and recommend appropriate alternative strategies"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Human resources / Human resource management and business performance / strategic role of human resources"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Human resources / Human resource management and business performance / interdependence with other key business functions"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / Human resources / Human resource management and business performance / outsourcing"
+  },
+  {
+   "code": "HSC-M4-T1-D12",
+   "path": "Year 12 / Human resources / Human resource management and business performance / human resource functions"
+  },
+  {
+   "code": "HSC-M4-T1-D13",
+   "path": "Year 12 / Human resources / Human resource management and business performance / using contractors – domestic, global"
+  },
+  {
+   "code": "HSC-M4-T1-D14",
+   "path": "Year 12 / Human resources / Human resource management and business performance / stakeholders – employers, employees, employer associations, unions, government organisations, society"
+  },
+  {
+   "code": "HSC-M4-T1-D15",
+   "path": "Year 12 / Human resources / Human resource management and business performance / legal – the current legal framework"
+  },
+  {
+   "code": "HSC-M4-T1-D16",
+   "path": "Year 12 / Human resources / Human resource management and business performance / the employment contract – common law (rights and obligations of employers and employees), minimum employment standards, minimum wage rates, awards, enterprise agreements, other employment contracts"
+  },
+  {
+   "code": "HSC-M4-T1-D17",
+   "path": "Year 12 / Human resources / Human resource management and business performance / work health and safety and workers compensation"
+  },
+  {
+   "code": "HSC-M4-T1-D18",
+   "path": "Year 12 / Human resources / Human resource management and business performance / antidiscrimination and equal employment opportunity"
+  },
+  {
+   "code": "HSC-M4-T1-D19",
+   "path": "Year 12 / Human resources / Human resource management and business performance / economic"
+  },
+  {
+   "code": "HSC-M4-T1-D20",
+   "path": "Year 12 / Human resources / Human resource management and business performance / technological"
+  },
+  {
+   "code": "HSC-M4-T1-D21",
+   "path": "Year 12 / Human resources / Human resource management and business performance / social – changing work patterns, living standards"
+  },
+  {
+   "code": "HSC-M4-T1-D22",
+   "path": "Year 12 / Human resources / Human resource management and business performance / ethics and corporate social responsibility"
+  },
+  {
+   "code": "HSC-M4-T1-D23",
+   "path": "Year 12 / Human resources / Human resource management and business performance / acquisition"
+  },
+  {
+   "code": "HSC-M4-T1-D24",
+   "path": "Year 12 / Human resources / Human resource management and business performance / development"
+  },
+  {
+   "code": "HSC-M4-T1-D25",
+   "path": "Year 12 / Human resources / Human resource management and business performance / maintenance"
+  },
+  {
+   "code": "HSC-M4-T1-D26",
+   "path": "Year 12 / Human resources / Human resource management and business performance / separation"
+  },
+  {
+   "code": "HSC-M4-T1-D27",
+   "path": "Year 12 / Human resources / Human resource management and business performance / leadership style"
+  },
+  {
+   "code": "HSC-M4-T1-D28",
+   "path": "Year 12 / Human resources / Human resource management and business performance / job design – general or specific tasks"
+  },
+  {
+   "code": "HSC-M4-T1-D29",
+   "path": "Year 12 / Human resources / Human resource management and business performance / recruitment – internal or external, general or specific skills"
+  },
+  {
+   "code": "HSC-M4-T1-D30",
+   "path": "Year 12 / Human resources / Human resource management and business performance / training and development – current or future skills"
+  },
+  {
+   "code": "HSC-M4-T1-D31",
+   "path": "Year 12 / Human resources / Human resource management and business performance / performance management – developmental or administrative"
+  },
+  {
+   "code": "HSC-M4-T1-D32",
+   "path": "Year 12 / Human resources / Human resource management and business performance / rewards – monetary and non-monetary, individual or group, performance pay"
+  },
+  {
+   "code": "HSC-M4-T1-D33",
+   "path": "Year 12 / Human resources / Human resource management and business performance / global – costs, skills, supply"
+  },
+  {
+   "code": "HSC-M4-T1-D34",
+   "path": "Year 12 / Human resources / Human resource management and business performance / workplace disputes"
+  },
+  {
+   "code": "HSC-M4-T1-D35",
+   "path": "Year 12 / Human resources / Human resource management and business performance / resolution – negotiation, mediation, grievance procedures, involvement of courts and tribunals"
+  },
+  {
+   "code": "HSC-M4-T1-D36",
+   "path": "Year 12 / Human resources / Human resource management and business performance / indicators"
+  },
+  {
+   "code": "HSC-M4-T1-D37",
+   "path": "Year 12 / Human resources / Human resource management and business performance / corporate culture"
+  },
+  {
+   "code": "HSC-M4-T1-D38",
+   "path": "Year 12 / Human resources / Human resource management and business performance / benchmarking key variables"
+  },
+  {
+   "code": "HSC-M4-T1-D39",
+   "path": "Year 12 / Human resources / Human resource management and business performance / changes in staff turnover"
+  },
+  {
+   "code": "HSC-M4-T1-D40",
+   "path": "Year 12 / Human resources / Human resource management and business performance / absenteeism"
+  },
+  {
+   "code": "HSC-M4-T1-D41",
+   "path": "Year 12 / Human resources / Human resource management and business performance / accidents"
+  },
+  {
+   "code": "HSC-M4-T1-D42",
+   "path": "Year 12 / Human resources / Human resource management and business performance / levels of disputation"
+  },
+  {
+   "code": "HSC-M4-T1-D43",
+   "path": "Year 12 / Human resources / Human resource management and business performance / worker satisfaction"
+  }
+ ],
+ "questions": [
+  {
+   "id": "bs2025_q26",
+   "year": 2025,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Marketing",
+   "text": "Explain how target markets affect e-marketing, people, processes and physical evidence."
+  },
+  {
+   "id": "bs2025_q27",
+   "year": 2025,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Finance",
+   "text": "Explain how financial strategies can achieve liquidity and profitability objectives."
+  }
+ ]
+}

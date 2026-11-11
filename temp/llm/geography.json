@@ -1,0 +1,3112 @@
+{
+ "course_id": "geography",
+ "course_name": "Geography",
+ "instructions": "Classify each question to exactly one dot-point code from `dots` based on what the question assesses. current_path is unreliable. Use null when the text is missing or does not support a dot point. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Geographical inquiry skills / Acquiring geographical information / Develop geographical questions to inform a plan for inquiry",
+   "text": "Develop geographical questions to inform a plan for inquiry"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Geographical inquiry skills / Acquiring geographical information / Acquire quantitative and/or qualitative data and information using ethical practices by:",
+   "text": "Acquire quantitative and/or qualitative data and information using ethical practices by:"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Geographical inquiry skills / Acquiring geographical information / collecting and recording primary geographical data using a range of tools",
+   "text": "collecting and recording primary geographical data using a range of tools"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Geographical inquiry skills / Acquiring geographical information / gathering and organising geographical information from secondary sources",
+   "text": "gathering and organising geographical information from secondary sources"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Geographical inquiry skills / Processing geographical information / Represent data and information in appropriate forms, and where appropriate, by: using digital and spatial technologies; conforming to cartographic conventions",
+   "text": "Represent data and information in appropriate forms, and where appropriate, by: using digital and spatial technologies; conforming to cartographic conventions"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Geographical inquiry skills / Processing geographical information / Interpret, synthesise and analyse data and information, using quantitative and qualitative methods, to: make reasoned generalisations and inferences",
+   "text": "Interpret, synthesise and analyse data and information, using quantitative and qualitative methods, to: make reasoned generalisations and inferences"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Geographical inquiry skills / Processing geographical information / propose explanations for patterns, trends, relationships and anomalies, using geographical models and theories where relevant",
+   "text": "propose explanations for patterns, trends, relationships and anomalies, using geographical models and theories where relevant"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Geographical inquiry skills / Processing geographical information / draw conclusions and predict future trends",
+   "text": "draw conclusions and predict future trends"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Geographical inquiry skills / Processing geographical information / Use geographic information systems (GIS) to analyse data where appropriate",
+   "text": "Use geographic information systems (GIS) to analyse data where appropriate"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Geographical inquiry skills / Processing geographical information / Evaluate data and information in various forms for reliability, bias, validity and usefulness, including limitations",
+   "text": "Evaluate data and information in various forms for reliability, bias, validity and usefulness, including limitations"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Geographical inquiry skills / Applying geographical understanding / Evaluate options in response to a geographical challenge by:",
+   "text": "Evaluate options in response to a geographical challenge by:"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Geographical inquiry skills / Applying geographical understanding / developing evaluation criteria based on environmental, social and economic considerations",
+   "text": "developing evaluation criteria based on environmental, social and economic considerations"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Geographical inquiry skills / Applying geographical understanding / making an on-balance judgement about the most appropriate option(s)",
+   "text": "making an on-balance judgement about the most appropriate option(s)"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Geographical inquiry skills / Applying geographical understanding / Propose actions and predict outcomes",
+   "text": "Propose actions and predict outcomes"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Geographical inquiry skills / Applying geographical understanding / Develop a plan to implement a proposal",
+   "text": "Develop a plan to implement a proposal"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Geographical inquiry skills / Applying geographical understanding / Assess how causes, impacts, opportunities, challenges and/or responses relevant to one geographic context may be applicable to another",
+   "text": "Assess how causes, impacts, opportunities, challenges and/or responses relevant to one geographic context may be applicable to another"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Geographical inquiry skills / Communicating geographical understanding / Communicate geographical understanding, findings, conclusions and/or ideas by using:",
+   "text": "Communicate geographical understanding, findings, conclusions and/or ideas by using:"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Geographical inquiry skills / Communicating geographical understanding / a variety of presentation methods appropriate to purpose and audience",
+   "text": "a variety of presentation methods appropriate to purpose and audience"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Geographical inquiry skills / Communicating geographical understanding / digital and spatial technologies where appropriate",
+   "text": "digital and spatial technologies where appropriate"
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Geographical inquiry skills / Communicating geographical understanding / ethical practices as relevant",
+   "text": "ethical practices as relevant"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Geographical inquiry skills / Communicating geographical understanding / Plan effective communication of ideas and/or actions for stakeholders for the management of places and environments",
+   "text": "Plan effective communication of ideas and/or actions for stakeholders for the management of places and environments"
+  },
+  {
+   "code": "PRE-M1-T4-D6",
+   "path": "Year 11 / Geographical inquiry skills / Communicating geographical understanding / Reflect on the process and effectiveness of geographical inquiry",
+   "text": "Reflect on the process and effectiveness of geographical inquiry"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Geographical tools / Maps / Determine area and grid references, and degrees and minutes of latitude and longitude",
+   "text": "Determine area and grid references, and degrees and minutes of latitude and longitude"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Geographical tools / Maps / Interpret contour lines",
+   "text": "Interpret contour lines"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Geographical tools / Maps / Calculate the local relief of an area",
+   "text": "Calculate the local relief of an area"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Geographical tools / Maps / Calculate the gradient of a slope as a ratio",
+   "text": "Calculate the gradient of a slope as a ratio"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Geographical tools / Maps / Construct and annotate a cross-section from a topographic map",
+   "text": "Construct and annotate a cross-section from a topographic map"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Geographical tools / Maps / Calculate and interpret the vertical exaggeration of a cross-section",
+   "text": "Calculate and interpret the vertical exaggeration of a cross-section"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Geographical tools / Maps / Calculate distance, time and speed of travel between 2 points",
+   "text": "Calculate distance, time and speed of travel between 2 points"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Geographical tools / Maps / Use scale to calculate distance and area",
+   "text": "Use scale to calculate distance and area"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Geographical tools / Maps / Determine the density of a specific feature on a map",
+   "text": "Determine the density of a specific feature on a map"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Geographical tools / Maps / Construct and interpret choropleth maps",
+   "text": "Construct and interpret choropleth maps"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Geographical tools / Maps / Recognise the key features of changing pressure patterns on weather maps",
+   "text": "Recognise the key features of changing pressure patterns on weather maps"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Geographical tools / Maps / Identify and describe spatial patterns and associations, relationships, networks, linkages and evidence of change, within and between regions or areas, using a range of maps",
+   "text": "Identify and describe spatial patterns and associations, relationships, networks, linkages and evidence of change, within and between regions or areas, using a range of maps"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Geographical tools / Fieldwork / Formulate geographical questions for investigation",
+   "text": "Formulate geographical questions for investigation"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Geographical tools / Fieldwork / Identify, collect and record geographical data and information",
+   "text": "Identify, collect and record geographical data and information"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Geographical tools / Fieldwork / Construct a log of events and activities that records the development of a fieldwork activity",
+   "text": "Construct a log of events and activities that records the development of a fieldwork activity"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Geographical tools / Fieldwork / Synthesise and interpret fieldwork data",
+   "text": "Synthesise and interpret fieldwork data"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Geographical tools / Fieldwork / Evaluate a fieldwork activity",
+   "text": "Evaluate a fieldwork activity"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Calculate the rate of increase or decrease between 2 points",
+   "text": "Calculate the rate of increase or decrease between 2 points"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Estimate the value of proportional circles of different size",
+   "text": "Estimate the value of proportional circles of different size"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Construct and interpret proportional divided circles",
+   "text": "Construct and interpret proportional divided circles"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Calculate the value of particular segments of pie/sector graphs of different size",
+   "text": "Calculate the value of particular segments of pie/sector graphs of different size"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Interpret frequency distributions and diagrams",
+   "text": "Interpret frequency distributions and diagrams"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Interpret and analyse population profiles",
+   "text": "Interpret and analyse population profiles"
+  },
+  {
+   "code": "PRE-M2-T3-D7",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Use scatter graphs and ternary graphs to identify correlations within data",
+   "text": "Use scatter graphs and ternary graphs to identify correlations within data"
+  },
+  {
+   "code": "PRE-M2-T3-D8",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Calculate absolute and proportional change",
+   "text": "Calculate absolute and proportional change"
+  },
+  {
+   "code": "PRE-M2-T3-D9",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Construct, interpret and analyse tables and graphs",
+   "text": "Construct, interpret and analyse tables and graphs"
+  },
+  {
+   "code": "PRE-M2-T3-D10",
+   "path": "Year 11 / Geographical tools / Graphs and statistics / Interpret and analyse statistics to identify patterns, trends and relationships",
+   "text": "Interpret and analyse statistics to identify patterns, trends and relationships"
+  },
+  {
+   "code": "PRE-M2-T4-D1",
+   "path": "Year 11 / Geographical tools / Spatial technologies / Use GPS to collect location data",
+   "text": "Use GPS to collect location data"
+  },
+  {
+   "code": "PRE-M2-T4-D2",
+   "path": "Year 11 / Geographical tools / Spatial technologies / Represent spatial information in a variety of forms",
+   "text": "Represent spatial information in a variety of forms"
+  },
+  {
+   "code": "PRE-M2-T4-D3",
+   "path": "Year 11 / Geographical tools / Spatial technologies / Use data to create maps and map layers",
+   "text": "Use data to create maps and map layers"
+  },
+  {
+   "code": "PRE-M2-T4-D4",
+   "path": "Year 11 / Geographical tools / Spatial technologies / Use spatial technologies to calculate, analyse and compare patterns, distributions and densities",
+   "text": "Use spatial technologies to calculate, analyse and compare patterns, distributions and densities"
+  },
+  {
+   "code": "PRE-M2-T4-D5",
+   "path": "Year 11 / Geographical tools / Spatial technologies / Use spatial information to determine connections, impacts and change over time",
+   "text": "Use spatial information to determine connections, impacts and change over time"
+  },
+  {
+   "code": "PRE-M2-T5-D1",
+   "path": "Year 11 / Geographical tools / Visual representations / Estimate the scale of aerial photographs and satellite images",
+   "text": "Estimate the scale of aerial photographs and satellite images"
+  },
+  {
+   "code": "PRE-M2-T5-D2",
+   "path": "Year 11 / Geographical tools / Visual representations / Estimate the time of day a photograph was taken",
+   "text": "Estimate the time of day a photograph was taken"
+  },
+  {
+   "code": "PRE-M2-T5-D3",
+   "path": "Year 11 / Geographical tools / Visual representations / Calculate areas of land use as a ratio",
+   "text": "Calculate areas of land use as a ratio"
+  },
+  {
+   "code": "PRE-M2-T5-D4",
+   "path": "Year 11 / Geographical tools / Visual representations / Construct a précis map from an aerial photograph or satellite image",
+   "text": "Construct a précis map from an aerial photograph or satellite image"
+  },
+  {
+   "code": "PRE-M2-T5-D5",
+   "path": "Year 11 / Geographical tools / Visual representations / Use aerial photographs and satellite images to describe the rate and extent of change",
+   "text": "Use aerial photographs and satellite images to describe the rate and extent of change"
+  },
+  {
+   "code": "PRE-M2-T5-D6",
+   "path": "Year 11 / Geographical tools / Visual representations / Orient a photograph to a map",
+   "text": "Orient a photograph to a map"
+  },
+  {
+   "code": "PRE-M2-T5-D7",
+   "path": "Year 11 / Geographical tools / Visual representations / Construct a transect between 2 points on a map or photograph and describe the changes along it",
+   "text": "Construct a transect between 2 points on a map or photograph and describe the changes along it"
+  },
+  {
+   "code": "PRE-M2-T5-D8",
+   "path": "Year 11 / Geographical tools / Visual representations / Identify and describe spatial patterns and associations, interactions and change using a range of visual representations",
+   "text": "Identify and describe spatial patterns and associations, interactions and change using a range of visual representations"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Earth’s natural systems / Overview of the uniqueness and diversity of the Earth / Nature as a source of wonder",
+   "text": "Nature as a source of wonder"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Earth’s natural systems / Overview of the uniqueness and diversity of the Earth / People’s connection to the natural world and why it can vary",
+   "text": "People’s connection to the natural world and why it can vary"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Earth’s natural systems / Overview of the uniqueness and diversity of the Earth / The universal value of Earth’s environments",
+   "text": "The universal value of Earth’s environments"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Earth’s natural systems / Processes, cycles and circulations connecting natural systems / Characteristics of Earth’s natural systems and factors affecting their functioning",
+   "text": "Characteristics of Earth’s natural systems and factors affecting their functioning"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Earth’s natural systems / Processes, cycles and circulations connecting natural systems / The processes, cycles and circulations connecting natural systems",
+   "text": "The processes, cycles and circulations connecting natural systems"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Earth’s natural systems / Processes, cycles and circulations connecting natural systems / atmospheric systems",
+   "text": "atmospheric systems"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Earth’s natural systems / Processes, cycles and circulations connecting natural systems / hydrological systems",
+   "text": "hydrological systems"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Earth’s natural systems / Processes, cycles and circulations connecting natural systems / geomorphic systems",
+   "text": "geomorphic systems"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Earth’s natural systems / Processes, cycles and circulations connecting natural systems / ecological systems",
+   "text": "ecological systems"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Earth’s natural systems / Natural systems and land cover change / The nature and extent of Earth’s land cover, including water",
+   "text": "The nature and extent of Earth’s land cover, including water"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Earth’s natural systems / Natural systems and land cover change / Natural processes, cycles and circulations that change Earth’s land and water cover",
+   "text": "Natural processes, cycles and circulations that change Earth’s land and water cover"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Earth’s natural systems / Natural systems and land cover change / climatic and glacial cycles",
+   "text": "climatic and glacial cycles"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Earth’s natural systems / Natural systems and land cover change / the invasion and ecological succession of vegetation communities",
+   "text": "the invasion and ecological succession of vegetation communities"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Earth’s natural systems / Natural systems and land cover change / The natural processes, cycles and circulations that have shaped the land and/or water cover of ONE place",
+   "text": "The natural processes, cycles and circulations that have shaped the land and/or water cover of ONE place"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / People, patterns and processes / Overview of the diversity and extent of human activity / The diversity and extent of human activity on the Earth’s surface on a global scale, including spatial patterns of settlement, infrastructure, and agricultural and industrial production",
+   "text": "The diversity and extent of human activity on the Earth’s surface on a global scale, including spatial patterns of settlement, infrastructure, and agricultural and industrial production"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / People, patterns and processes / Overview of the diversity and extent of human activity / Spatial patterns related to culture",
+   "text": "Spatial patterns related to culture"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / People, patterns and processes / Overview of the diversity and extent of human activity / The increasingly integrated nature of the world",
+   "text": "The increasingly integrated nature of the world"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / People, patterns and processes / Overview of the diversity and extent of human activity / economic activities and cultures",
+   "text": "economic activities and cultures"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / People, patterns and processes / Overview of the diversity and extent of human activity / the effect of technological change on interconnections between places in relation to distance and time",
+   "text": "the effect of technological change on interconnections between places in relation to distance and time"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / People, patterns and processes / Overview of the diversity and extent of human activity / the role of transnational corporations (TNCs), world cities, migration and tourism in international integration",
+   "text": "the role of transnational corporations (TNCs), world cities, migration and tourism in international integration"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / The characteristics, growth and distribution of the world’s population, including trends, rates of change and density",
+   "text": "The characteristics, growth and distribution of the world’s population, including trends, rates of change and density"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / Influences that shape global population change",
+   "text": "Influences that shape global population change"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / demographic transition",
+   "text": "demographic transition"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / population movements",
+   "text": "population movements"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / Challenges arising from population change – environmental, economic and social",
+   "text": "Challenges arising from population change – environmental, economic and social"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / Population characteristics and trends in TWO countries",
+   "text": "Population characteristics and trends in TWO countries"
+  },
+  {
+   "code": "PRE-M4-T2-D7",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / reasons for similarities and/or differences",
+   "text": "reasons for similarities and/or differences"
+  },
+  {
+   "code": "PRE-M4-T2-D8",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / challenges and responses in each country",
+   "text": "challenges and responses in each country"
+  },
+  {
+   "code": "PRE-M4-T2-D9",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / varying perspectives on population management",
+   "text": "varying perspectives on population management"
+  },
+  {
+   "code": "PRE-M4-T2-D10",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / Links between population characteristics and natural resources",
+   "text": "Links between population characteristics and natural resources"
+  },
+  {
+   "code": "PRE-M4-T2-D11",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / the global distribution and consumption of natural resources",
+   "text": "the global distribution and consumption of natural resources"
+  },
+  {
+   "code": "PRE-M4-T2-D12",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / population size, distribution and concentration, and levels of resource consumption in various places",
+   "text": "population size, distribution and concentration, and levels of resource consumption in various places"
+  },
+  {
+   "code": "PRE-M4-T2-D13",
+   "path": "Year 11 / People, patterns and processes / Population and resource consumption / challenges of resource consumption, including depletion of resources, impacts on Indigenous Peoples, environmental degradation, and inequalities in human wellbeing",
+   "text": "challenges of resource consumption, including depletion of resources, impacts on Indigenous Peoples, environmental degradation, and inequalities in human wellbeing"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / People, patterns and processes / People, patterns and processes study / Study 1: Human resilience in diverse environments",
+   "text": "Study 1: Human resilience in diverse environments"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / People, patterns and processes / People, patterns and processes study / Study 2: Local places and global economic change",
+   "text": "Study 2: Local places and global economic change"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / People, patterns and processes / People, patterns and processes study / Study 3: Place and cultural change",
+   "text": "Study 3: Place and cultural change"
+  },
+  {
+   "code": "PRE-M4-T3-D4",
+   "path": "Year 11 / People, patterns and processes / People, patterns and processes study / Study 4: Political power and contested spaces",
+   "text": "Study 4: Political power and contested spaces"
+  },
+  {
+   "code": "PRE-M4-T3-D5",
+   "path": "Year 11 / People, patterns and processes / People, patterns and processes study / Study 5: Technological advances and the transformation of places.",
+   "text": "Study 5: Technological advances and the transformation of places."
+  },
+  {
+   "code": "PRE-M4-T4-D1",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / Environments that challenge some forms of human occupation and survival",
+   "text": "Environments that challenge some forms of human occupation and survival"
+  },
+  {
+   "code": "PRE-M4-T4-D2",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / Characteristics of environments that contribute to human occupation and endeavour",
+   "text": "Characteristics of environments that contribute to human occupation and endeavour"
+  },
+  {
+   "code": "PRE-M4-T4-D3",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / The contribution of human ingenuity and resilience to the character of places",
+   "text": "The contribution of human ingenuity and resilience to the character of places"
+  },
+  {
+   "code": "PRE-M4-T4-D4",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / ONE environment at a local or national scale that challenges human occupation and survival",
+   "text": "ONE environment at a local or national scale that challenges human occupation and survival"
+  },
+  {
+   "code": "PRE-M4-T4-D5",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / spatial patterns and characteristics of the environment",
+   "text": "spatial patterns and characteristics of the environment"
+  },
+  {
+   "code": "PRE-M4-T4-D6",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / evidence of human ingenuity and resilience",
+   "text": "evidence of human ingenuity and resilience"
+  },
+  {
+   "code": "PRE-M4-T4-D7",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / impacts of, and responses to, change",
+   "text": "impacts of, and responses to, change"
+  },
+  {
+   "code": "PRE-M4-T4-D8",
+   "path": "Year 11 / People, patterns and processes / Study 1: Human resilience in diverse environments / opportunities to enhance environmental sustainability and/or human wellbeing",
+   "text": "opportunities to enhance environmental sustainability and/or human wellbeing"
+  },
+  {
+   "code": "PRE-M4-T5-D1",
+   "path": "Year 11 / People, patterns and processes / Study 2: Local places and global economic change / Places relatively unaffected by global economic change",
+   "text": "Places relatively unaffected by global economic change"
+  },
+  {
+   "code": "PRE-M4-T5-D2",
+   "path": "Year 11 / People, patterns and processes / Study 2: Local places and global economic change / Changes to places resulting from global economic integration and global flows of people, goods and ideas",
+   "text": "Changes to places resulting from global economic integration and global flows of people, goods and ideas"
+  },
+  {
+   "code": "PRE-M4-T5-D3",
+   "path": "Year 11 / People, patterns and processes / Study 2: Local places and global economic change / Impacts of change on the human and physical characteristics of places, including impacts on Indigenous Peoples and lands",
+   "text": "Impacts of change on the human and physical characteristics of places, including impacts on Indigenous Peoples and lands"
+  },
+  {
+   "code": "PRE-M4-T5-D4",
+   "path": "Year 11 / People, patterns and processes / Study 2: Local places and global economic change / ONE place outside Australia shaped by international economic integration",
+   "text": "ONE place outside Australia shaped by international economic integration"
+  },
+  {
+   "code": "PRE-M4-T5-D5",
+   "path": "Year 11 / People, patterns and processes / Study 2: Local places and global economic change / nature of change resulting from global linkages",
+   "text": "nature of change resulting from global linkages"
+  },
+  {
+   "code": "PRE-M4-T5-D6",
+   "path": "Year 11 / People, patterns and processes / Study 2: Local places and global economic change / responses to economic integration",
+   "text": "responses to economic integration"
+  },
+  {
+   "code": "PRE-M4-T5-D7",
+   "path": "Year 11 / People, patterns and processes / Study 2: Local places and global economic change / opportunities to enhance environmental sustainability and/or human wellbeing",
+   "text": "opportunities to enhance environmental sustainability and/or human wellbeing"
+  },
+  {
+   "code": "PRE-M4-T6-D1",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / Culture of place",
+   "text": "Culture of place"
+  },
+  {
+   "code": "PRE-M4-T6-D2",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / Influences on the culture of place",
+   "text": "Influences on the culture of place"
+  },
+  {
+   "code": "PRE-M4-T6-D3",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / the continuity of cultures in different places",
+   "text": "the continuity of cultures in different places"
+  },
+  {
+   "code": "PRE-M4-T6-D4",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / the processes of diffusion, adoption and adaptation of culture",
+   "text": "the processes of diffusion, adoption and adaptation of culture"
+  },
+  {
+   "code": "PRE-M4-T6-D5",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / the mediums facilitating cultural change",
+   "text": "the mediums facilitating cultural change"
+  },
+  {
+   "code": "PRE-M4-T6-D6",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / Evidence of cultural change in various places around the world",
+   "text": "Evidence of cultural change in various places around the world"
+  },
+  {
+   "code": "PRE-M4-T6-D7",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / Impacts of, and responses to, change",
+   "text": "Impacts of, and responses to, change"
+  },
+  {
+   "code": "PRE-M4-T6-D8",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / ONE place at a local or national scale",
+   "text": "ONE place at a local or national scale"
+  },
+  {
+   "code": "PRE-M4-T6-D9",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / the spatial and cultural characteristics of the place",
+   "text": "the spatial and cultural characteristics of the place"
+  },
+  {
+   "code": "PRE-M4-T6-D10",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / influences on the cultural identity of the place",
+   "text": "influences on the cultural identity of the place"
+  },
+  {
+   "code": "PRE-M4-T6-D11",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / perceptions of, and responses to, cultural continuity and/or change",
+   "text": "perceptions of, and responses to, cultural continuity and/or change"
+  },
+  {
+   "code": "PRE-M4-T6-D12",
+   "path": "Year 11 / People, patterns and processes / Study 3: Place and cultural change / opportunities to enhance environmental sustainability and/or human wellbeing",
+   "text": "opportunities to enhance environmental sustainability and/or human wellbeing"
+  },
+  {
+   "code": "PRE-M4-T7-D1",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / The geopolitical characteristics of places from a global perspective, including nation-states and territories, political systems and ideologies, and power blocs",
+   "text": "The geopolitical characteristics of places from a global perspective, including nation-states and territories, political systems and ideologies, and power blocs"
+  },
+  {
+   "code": "PRE-M4-T7-D2",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / Influences on political tension and conflict",
+   "text": "Influences on political tension and conflict"
+  },
+  {
+   "code": "PRE-M4-T7-D3",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / Impacts of, and responses to, political tension and conflict",
+   "text": "Impacts of, and responses to, political tension and conflict"
+  },
+  {
+   "code": "PRE-M4-T7-D4",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / ONE contested space at a local or regional scale",
+   "text": "ONE contested space at a local or regional scale"
+  },
+  {
+   "code": "PRE-M4-T7-D5",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / spatial patterns and characteristics of the space",
+   "text": "spatial patterns and characteristics of the space"
+  },
+  {
+   "code": "PRE-M4-T7-D6",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / the influence of economic, environmental, social, cultural and/or technological factors",
+   "text": "the influence of economic, environmental, social, cultural and/or technological factors"
+  },
+  {
+   "code": "PRE-M4-T7-D7",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / impacts of political tension and/or conflict on people, places and the environment",
+   "text": "impacts of political tension and/or conflict on people, places and the environment"
+  },
+  {
+   "code": "PRE-M4-T7-D8",
+   "path": "Year 11 / People, patterns and processes / Study 4: Political power and contested spaces / opportunities to enhance environmental sustainability and/or human wellbeing",
+   "text": "opportunities to enhance environmental sustainability and/or human wellbeing"
+  },
+  {
+   "code": "PRE-M4-T8-D1",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / Technological advances that have contributed to the rise of global networks",
+   "text": "Technological advances that have contributed to the rise of global networks"
+  },
+  {
+   "code": "PRE-M4-T8-D2",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / The spatial pattern of networks",
+   "text": "The spatial pattern of networks"
+  },
+  {
+   "code": "PRE-M4-T8-D3",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / The role of networks in transforming places, and the implications for people and/or environments",
+   "text": "The role of networks in transforming places, and the implications for people and/or environments"
+  },
+  {
+   "code": "PRE-M4-T8-D4",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / ONE study of a network at any scale",
+   "text": "ONE study of a network at any scale"
+  },
+  {
+   "code": "PRE-M4-T8-D5",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / spatial patterns and/or characteristics of the network",
+   "text": "spatial patterns and/or characteristics of the network"
+  },
+  {
+   "code": "PRE-M4-T8-D6",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / the development and/or operation of the network and technological advances",
+   "text": "the development and/or operation of the network and technological advances"
+  },
+  {
+   "code": "PRE-M4-T8-D7",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / impacts of, and responses to, change",
+   "text": "impacts of, and responses to, change"
+  },
+  {
+   "code": "PRE-M4-T8-D8",
+   "path": "Year 11 / People, patterns and processes / Study 5: Technological advances and the transformation of places / opportunities to enhance environmental sustainability and/or human wellbeing",
+   "text": "opportunities to enhance environmental sustainability and/or human wellbeing"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Human–environment interactions / Overview of change to Earth’s natural systems over time / Natural change compared to human-induced change",
+   "text": "Natural change compared to human-induced change"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Human–environment interactions / Overview of change to Earth’s natural systems over time / Evidence of climate change in the contemporary world",
+   "text": "Evidence of climate change in the contemporary world"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Human–environment interactions / Overview of change to Earth’s natural systems over time / Evidence for the causes of climate change over time",
+   "text": "Evidence for the causes of climate change over time"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Human–environment interactions / Overview of change to Earth’s natural systems over time / Land cover change at a global scale, including deforestation, desertification, melting glaciers and retreating ice sheets",
+   "text": "Land cover change at a global scale, including deforestation, desertification, melting glaciers and retreating ice sheets"
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Human–environment interactions / Land use and land cover change / The extent and rate of change in ONE form of land cover",
+   "text": "The extent and rate of change in ONE form of land cover"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Human–environment interactions / Land use and land cover change / how changes in land use can interrupt natural systems and contribute to the land cover change",
+   "text": "how changes in land use can interrupt natural systems and contribute to the land cover change"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Human–environment interactions / Land use and land cover change / the impacts of the land cover change at a range of scales, including climate change",
+   "text": "the impacts of the land cover change at a range of scales, including climate change"
+  },
+  {
+   "code": "PRE-M5-T3-D1",
+   "path": "Year 11 / Human–environment interactions / Human–environment interactions study / Study 1: A geographic region (this may fall within a state or country or encompass a small group of neighbouring countries)",
+   "text": "Study 1: A geographic region (this may fall within a state or country or encompass a small group of neighbouring countries)"
+  },
+  {
+   "code": "PRE-M5-T3-D2",
+   "path": "Year 11 / Human–environment interactions / Human–environment interactions study / Study 2: A contemporary hazard (ONE natural hazard OR ecological hazard)",
+   "text": "Study 2: A contemporary hazard (ONE natural hazard OR ecological hazard)"
+  },
+  {
+   "code": "PRE-M5-T3-D3",
+   "path": "Year 11 / Human–environment interactions / Human–environment interactions study / Study 3: Climate change.",
+   "text": "Study 3: Climate change."
+  },
+  {
+   "code": "PRE-M5-T4-D1",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / The spatial dimensions and nature of a chosen geographic region, which may be of local or regional scale",
+   "text": "The spatial dimensions and nature of a chosen geographic region, which may be of local or regional scale"
+  },
+  {
+   "code": "PRE-M5-T4-D2",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / Unique characteristics of the natural environment, including physical processes and natural cycles influencing the nature of the region",
+   "text": "Unique characteristics of the natural environment, including physical processes and natural cycles influencing the nature of the region"
+  },
+  {
+   "code": "PRE-M5-T4-D3",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / Human–environment interactions and evidence of change",
+   "text": "Human–environment interactions and evidence of change"
+  },
+  {
+   "code": "PRE-M5-T4-D4",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / change due to international integration",
+   "text": "change due to international integration"
+  },
+  {
+   "code": "PRE-M5-T4-D5",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / change in relation to climate",
+   "text": "change in relation to climate"
+  },
+  {
+   "code": "PRE-M5-T4-D6",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / Challenges, opportunities and responses",
+   "text": "Challenges, opportunities and responses"
+  },
+  {
+   "code": "PRE-M5-T4-D7",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / changes to natural processes, systems and/or environments",
+   "text": "changes to natural processes, systems and/or environments"
+  },
+  {
+   "code": "PRE-M5-T4-D8",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / impacts of change on people and communities",
+   "text": "impacts of change on people and communities"
+  },
+  {
+   "code": "PRE-M5-T4-D9",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / management to minimise negative impacts",
+   "text": "management to minimise negative impacts"
+  },
+  {
+   "code": "PRE-M5-T4-D10",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / varying perspectives",
+   "text": "varying perspectives"
+  },
+  {
+   "code": "PRE-M5-T4-D11",
+   "path": "Year 11 / Human–environment interactions / Study 1: A geographic region / The effectiveness of people and organisations in managing ONE challenge at a selected place, within the region",
+   "text": "The effectiveness of people and organisations in managing ONE challenge at a selected place, within the region"
+  },
+  {
+   "code": "PRE-M5-T5-D1",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / The spatial distribution and nature of the contemporary hazard",
+   "text": "The spatial distribution and nature of the contemporary hazard"
+  },
+  {
+   "code": "PRE-M5-T5-D2",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / Characteristics of the natural environment, including the physical processes and cycles influencing the nature and occurrence of the hazard",
+   "text": "Characteristics of the natural environment, including the physical processes and cycles influencing the nature and occurrence of the hazard"
+  },
+  {
+   "code": "PRE-M5-T5-D3",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / Human–environment interactions and evidence of change",
+   "text": "Human–environment interactions and evidence of change"
+  },
+  {
+   "code": "PRE-M5-T5-D4",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / the contribution of human activities to hazard events",
+   "text": "the contribution of human activities to hazard events"
+  },
+  {
+   "code": "PRE-M5-T5-D5",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / change in relation to climate",
+   "text": "change in relation to climate"
+  },
+  {
+   "code": "PRE-M5-T5-D6",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / Challenges, opportunities and responses",
+   "text": "Challenges, opportunities and responses"
+  },
+  {
+   "code": "PRE-M5-T5-D7",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / changes to natural processes, systems and/or environments",
+   "text": "changes to natural processes, systems and/or environments"
+  },
+  {
+   "code": "PRE-M5-T5-D8",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / impacts on people and communities",
+   "text": "impacts on people and communities"
+  },
+  {
+   "code": "PRE-M5-T5-D9",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / management at a range of scales",
+   "text": "management at a range of scales"
+  },
+  {
+   "code": "PRE-M5-T5-D10",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / varying perspectives",
+   "text": "varying perspectives"
+  },
+  {
+   "code": "PRE-M5-T5-D11",
+   "path": "Year 11 / Human–environment interactions / Study 2: A contemporary hazard / The effectiveness of people and organisations in managing ONE contemporary hazard event at a selected place",
+   "text": "The effectiveness of people and organisations in managing ONE contemporary hazard event at a selected place"
+  },
+  {
+   "code": "PRE-M5-T6-D1",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / Spatial and temporal characteristics of climate change at a global scale",
+   "text": "Spatial and temporal characteristics of climate change at a global scale"
+  },
+  {
+   "code": "PRE-M5-T6-D2",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / Environmental and human impacts of climate change at a range of scales",
+   "text": "Environmental and human impacts of climate change at a range of scales"
+  },
+  {
+   "code": "PRE-M5-T6-D3",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / impacts on natural processes, systems and/or environments",
+   "text": "impacts on natural processes, systems and/or environments"
+  },
+  {
+   "code": "PRE-M5-T6-D4",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / impacts on people and communities",
+   "text": "impacts on people and communities"
+  },
+  {
+   "code": "PRE-M5-T6-D5",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / Challenges, opportunities and responses",
+   "text": "Challenges, opportunities and responses"
+  },
+  {
+   "code": "PRE-M5-T6-D6",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / varying perspectives",
+   "text": "varying perspectives"
+  },
+  {
+   "code": "PRE-M5-T6-D7",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / mitigation in relation to the rate and magnitude of change",
+   "text": "mitigation in relation to the rate and magnitude of change"
+  },
+  {
+   "code": "PRE-M5-T6-D8",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / minimising risk through adaptation, resilience and innovation",
+   "text": "minimising risk through adaptation, resilience and innovation"
+  },
+  {
+   "code": "PRE-M5-T6-D9",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / local, national and global action",
+   "text": "local, national and global action"
+  },
+  {
+   "code": "PRE-M5-T6-D10",
+   "path": "Year 11 / Human–environment interactions / Study 3: Climate change / The effectiveness of people and organisations in managing ONE climate change challenge at a selected place",
+   "text": "The effectiveness of people and organisations in managing ONE climate change challenge at a selected place"
+  },
+  {
+   "code": "PRE-M6-D1",
+   "path": "Year 11 / Geographical investigation / The nature of geographical inquiry and how it can contribute to the understanding and effective management of places and environments",
+   "text": "The nature of geographical inquiry and how it can contribute to the understanding and effective management of places and environments"
+  },
+  {
+   "code": "PRE-M6-D2",
+   "path": "Year 11 / Geographical investigation / The nature of engagement with geographical opportunities and challenges in the public sphere, including the role and influence of research institutions, government, advocacy groups, the media and the individual",
+   "text": "The nature of engagement with geographical opportunities and challenges in the public sphere, including the role and influence of research institutions, government, advocacy groups, the media and the individual"
+  },
+  {
+   "code": "PRE-M6-D3",
+   "path": "Year 11 / Geographical investigation / Identify an area for geographical inquiry",
+   "text": "Identify an area for geographical inquiry"
+  },
+  {
+   "code": "PRE-M6-D4",
+   "path": "Year 11 / Geographical investigation / Develop geographical questions and formulate a plan",
+   "text": "Develop geographical questions and formulate a plan"
+  },
+  {
+   "code": "PRE-M6-D5",
+   "path": "Year 11 / Geographical investigation / what is the focus of the research?",
+   "text": "what is the focus of the research?"
+  },
+  {
+   "code": "PRE-M6-D6",
+   "path": "Year 11 / Geographical investigation / what is the geographic extent of the investigation?",
+   "text": "what is the geographic extent of the investigation?"
+  },
+  {
+   "code": "PRE-M6-D7",
+   "path": "Year 11 / Geographical investigation / how should the investigation be sequenced?",
+   "text": "how should the investigation be sequenced?"
+  },
+  {
+   "code": "PRE-M6-D8",
+   "path": "Year 11 / Geographical investigation / what time should be allocated to the various steps?",
+   "text": "what time should be allocated to the various steps?"
+  },
+  {
+   "code": "PRE-M6-D9",
+   "path": "Year 11 / Geographical investigation / Identify and observe relevant ethical practices when conducting the investigation",
+   "text": "Identify and observe relevant ethical practices when conducting the investigation"
+  },
+  {
+   "code": "PRE-M6-D10",
+   "path": "Year 11 / Geographical investigation / Collect, record and process relevant primary data",
+   "text": "Collect, record and process relevant primary data"
+  },
+  {
+   "code": "PRE-M6-D11",
+   "path": "Year 11 / Geographical investigation / Organise and process relevant secondary information",
+   "text": "Organise and process relevant secondary information"
+  },
+  {
+   "code": "PRE-M6-D12",
+   "path": "Year 11 / Geographical investigation / Present and communicate findings",
+   "text": "Present and communicate findings"
+  },
+  {
+   "code": "PRE-M6-D13",
+   "path": "Year 11 / Geographical investigation / using evidence derived from the geographical inquiry process",
+   "text": "using evidence derived from the geographical inquiry process"
+  },
+  {
+   "code": "PRE-M6-D14",
+   "path": "Year 11 / Geographical investigation / selecting appropriate forms",
+   "text": "selecting appropriate forms"
+  },
+  {
+   "code": "PRE-M6-D15",
+   "path": "Year 11 / Geographical investigation / using geographical terms and concepts",
+   "text": "using geographical terms and concepts"
+  },
+  {
+   "code": "PRE-M6-D16",
+   "path": "Year 11 / Geographical investigation / applying a recognised form of referencing",
+   "text": "applying a recognised form of referencing"
+  },
+  {
+   "code": "PRE-M6-D17",
+   "path": "Year 11 / Geographical investigation / Propose recommendations for individual and/or collective action as appropriate",
+   "text": "Propose recommendations for individual and/or collective action as appropriate"
+  },
+  {
+   "code": "PRE-M6-D18",
+   "path": "Year 11 / Geographical investigation / Critically review the plan, process and findings of the investigation",
+   "text": "Critically review the plan, process and findings of the investigation"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Geographical inquiry skills / Acquiring geographical information / Develop geographical questions to inform a plan for inquiry",
+   "text": "Develop geographical questions to inform a plan for inquiry"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Geographical inquiry skills / Acquiring geographical information / Acquire quantitative and/or qualitative data and information using ethical practices by:",
+   "text": "Acquire quantitative and/or qualitative data and information using ethical practices by:"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Geographical inquiry skills / Acquiring geographical information / collecting and recording primary geographical data using a range of tools",
+   "text": "collecting and recording primary geographical data using a range of tools"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Geographical inquiry skills / Acquiring geographical information / gathering and organising geographical information from secondary sources",
+   "text": "gathering and organising geographical information from secondary sources"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Geographical inquiry skills / Processing geographical information / Represent data and information in appropriate forms, and where appropriate, by: using digital and spatial technologies; conforming to cartographic conventions",
+   "text": "Represent data and information in appropriate forms, and where appropriate, by: using digital and spatial technologies; conforming to cartographic conventions"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Geographical inquiry skills / Processing geographical information / Interpret, synthesise and analyse data and information, using quantitative and qualitative methods to: make reasoned generalisations and inferences",
+   "text": "Interpret, synthesise and analyse data and information, using quantitative and qualitative methods to: make reasoned generalisations and inferences"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Geographical inquiry skills / Processing geographical information / propose explanations for patterns, trends, relationships and anomalies, using geographical models and theories where relevant",
+   "text": "propose explanations for patterns, trends, relationships and anomalies, using geographical models and theories where relevant"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Geographical inquiry skills / Processing geographical information / draw conclusions and predict future trends",
+   "text": "draw conclusions and predict future trends"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Geographical inquiry skills / Processing geographical information / Use GIS to analyse data where appropriate",
+   "text": "Use GIS to analyse data where appropriate"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Geographical inquiry skills / Processing geographical information / Evaluate data and information in various forms for reliability, bias, validity and usefulness, including limitations",
+   "text": "Evaluate data and information in various forms for reliability, bias, validity and usefulness, including limitations"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Geographical inquiry skills / Applying geographical understanding / Evaluate options in response to a geographical challenge by:",
+   "text": "Evaluate options in response to a geographical challenge by:"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Geographical inquiry skills / Applying geographical understanding / developing evaluation criteria based on environmental, social and economic considerations",
+   "text": "developing evaluation criteria based on environmental, social and economic considerations"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Geographical inquiry skills / Applying geographical understanding / making an on-balance judgement about the most appropriate option(s)",
+   "text": "making an on-balance judgement about the most appropriate option(s)"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Geographical inquiry skills / Applying geographical understanding / Propose actions and predict outcomes",
+   "text": "Propose actions and predict outcomes"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Geographical inquiry skills / Applying geographical understanding / Develop a plan to implement a proposal",
+   "text": "Develop a plan to implement a proposal"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Geographical inquiry skills / Applying geographical understanding / Assess how causes, impacts and/or responses relevant to one geographic context may be applicable to another",
+   "text": "Assess how causes, impacts and/or responses relevant to one geographic context may be applicable to another"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Geographical inquiry skills / Communicating geographical understanding / Communicate geographical understanding, findings, conclusions and/or ideas by using:",
+   "text": "Communicate geographical understanding, findings, conclusions and/or ideas by using:"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Geographical inquiry skills / Communicating geographical understanding / a variety of presentation methods appropriate to purpose and audience",
+   "text": "a variety of presentation methods appropriate to purpose and audience"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Geographical inquiry skills / Communicating geographical understanding / digital and spatial technologies where appropriate",
+   "text": "digital and spatial technologies where appropriate"
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / Geographical inquiry skills / Communicating geographical understanding / ethical practices as relevant",
+   "text": "ethical practices as relevant"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / Geographical inquiry skills / Communicating geographical understanding / Plan the effective communication of ideas and/or actions for stakeholders for the management of places and environments",
+   "text": "Plan the effective communication of ideas and/or actions for stakeholders for the management of places and environments"
+  },
+  {
+   "code": "HSC-M1-T4-D6",
+   "path": "Year 12 / Geographical inquiry skills / Communicating geographical understanding / Reflect on the process and effectiveness of geographical inquiry",
+   "text": "Reflect on the process and effectiveness of geographical inquiry"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Geographical tools / Maps / Determine area and grid references, and degrees and minutes of latitude and longitude",
+   "text": "Determine area and grid references, and degrees and minutes of latitude and longitude"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Geographical tools / Maps / Interpret contour lines",
+   "text": "Interpret contour lines"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Geographical tools / Maps / Calculate the local relief of an area",
+   "text": "Calculate the local relief of an area"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Geographical tools / Maps / Calculate the gradient of a slope as a ratio",
+   "text": "Calculate the gradient of a slope as a ratio"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Geographical tools / Maps / Construct and annotate a cross-section from a topographic map",
+   "text": "Construct and annotate a cross-section from a topographic map"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Geographical tools / Maps / Calculate and interpret the vertical exaggeration of a cross-section",
+   "text": "Calculate and interpret the vertical exaggeration of a cross-section"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Geographical tools / Maps / Calculate distance, time and speed of travel between 2 points",
+   "text": "Calculate distance, time and speed of travel between 2 points"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Geographical tools / Maps / Use scale to calculate distance and area",
+   "text": "Use scale to calculate distance and area"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Geographical tools / Maps / Determine the density of a specific feature on a map",
+   "text": "Determine the density of a specific feature on a map"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Geographical tools / Maps / Construct and interpret choropleth maps",
+   "text": "Construct and interpret choropleth maps"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Geographical tools / Maps / Recognise the key features of changing pressure patterns on weather maps",
+   "text": "Recognise the key features of changing pressure patterns on weather maps"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Geographical tools / Maps / Identify and describe spatial patterns and associations, relationships, networks, linkages and evidence of change, within and between regions or areas, using a range of maps",
+   "text": "Identify and describe spatial patterns and associations, relationships, networks, linkages and evidence of change, within and between regions or areas, using a range of maps"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Geographical tools / Fieldwork / Formulate geographical questions for investigation",
+   "text": "Formulate geographical questions for investigation"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Geographical tools / Fieldwork / Identify, collect and record geographical data and information",
+   "text": "Identify, collect and record geographical data and information"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Geographical tools / Fieldwork / Construct a log of events and activities that records the development of a fieldwork activity",
+   "text": "Construct a log of events and activities that records the development of a fieldwork activity"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Geographical tools / Fieldwork / Synthesise and interpret fieldwork data",
+   "text": "Synthesise and interpret fieldwork data"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Geographical tools / Fieldwork / Evaluate a fieldwork activity",
+   "text": "Evaluate a fieldwork activity"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Calculate the rate of increase or decrease between 2 points",
+   "text": "Calculate the rate of increase or decrease between 2 points"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Estimate the value of proportional circles of different sizes",
+   "text": "Estimate the value of proportional circles of different sizes"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Construct and interpret proportional divided circles",
+   "text": "Construct and interpret proportional divided circles"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Calculate the value of particular segments of pie/sector graphs of different sizes",
+   "text": "Calculate the value of particular segments of pie/sector graphs of different sizes"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Interpret frequency distributions and diagrams",
+   "text": "Interpret frequency distributions and diagrams"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Interpret and analyse population profiles",
+   "text": "Interpret and analyse population profiles"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Use scatter graphs and ternary graphs to identify correlations within data",
+   "text": "Use scatter graphs and ternary graphs to identify correlations within data"
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Calculate absolute and proportional changes",
+   "text": "Calculate absolute and proportional changes"
+  },
+  {
+   "code": "HSC-M2-T3-D9",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Construct, interpret and analyse tables and graphs",
+   "text": "Construct, interpret and analyse tables and graphs"
+  },
+  {
+   "code": "HSC-M2-T3-D10",
+   "path": "Year 12 / Geographical tools / Graphs and statistics / Interpret and analyse statistics to identify patterns, trends and relationships",
+   "text": "Interpret and analyse statistics to identify patterns, trends and relationships"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Geographical tools / Spatial technologies / Use GPS to collect location data",
+   "text": "Use GPS to collect location data"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Geographical tools / Spatial technologies / Represent spatial information in a variety of forms",
+   "text": "Represent spatial information in a variety of forms"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Geographical tools / Spatial technologies / Use data to create maps and map layers",
+   "text": "Use data to create maps and map layers"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Geographical tools / Spatial technologies / Use spatial technologies to calculate, analyse and compare patterns, distributions and densities",
+   "text": "Use spatial technologies to calculate, analyse and compare patterns, distributions and densities"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Geographical tools / Spatial technologies / Use spatial information to determine connections, impacts and changes over time",
+   "text": "Use spatial information to determine connections, impacts and changes over time"
+  },
+  {
+   "code": "HSC-M2-T5-D1",
+   "path": "Year 12 / Geographical tools / Visual representations / Estimate the scale of aerial photographs and satellite images",
+   "text": "Estimate the scale of aerial photographs and satellite images"
+  },
+  {
+   "code": "HSC-M2-T5-D2",
+   "path": "Year 12 / Geographical tools / Visual representations / Estimate the time of day a photograph was taken",
+   "text": "Estimate the time of day a photograph was taken"
+  },
+  {
+   "code": "HSC-M2-T5-D3",
+   "path": "Year 12 / Geographical tools / Visual representations / Calculate areas of land use as a ratio",
+   "text": "Calculate areas of land use as a ratio"
+  },
+  {
+   "code": "HSC-M2-T5-D4",
+   "path": "Year 12 / Geographical tools / Visual representations / Construct a précis map from an aerial photograph or satellite image",
+   "text": "Construct a précis map from an aerial photograph or satellite image"
+  },
+  {
+   "code": "HSC-M2-T5-D5",
+   "path": "Year 12 / Geographical tools / Visual representations / Use aerial photographs and satellite images to describe the rate and extent of change",
+   "text": "Use aerial photographs and satellite images to describe the rate and extent of change"
+  },
+  {
+   "code": "HSC-M2-T5-D6",
+   "path": "Year 12 / Geographical tools / Visual representations / Orient a photograph to a map",
+   "text": "Orient a photograph to a map"
+  },
+  {
+   "code": "HSC-M2-T5-D7",
+   "path": "Year 12 / Geographical tools / Visual representations / Construct a transect between 2 points on a map or photograph and describe the changes along it",
+   "text": "Construct a transect between 2 points on a map or photograph and describe the changes along it"
+  },
+  {
+   "code": "HSC-M2-T5-D8",
+   "path": "Year 12 / Geographical tools / Visual representations / Identify and describe spatial patterns and associations, interactions and change using a range of visual representations",
+   "text": "Identify and describe spatial patterns and associations, interactions and change using a range of visual representations"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Global sustainability / Sustainability in the contemporary world / Sustainability and sustainable development, including pillars of sustainability – social, economic, environmental and cultural",
+   "text": "Sustainability and sustainable development, including pillars of sustainability – social, economic, environmental and cultural"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Global sustainability / Sustainability in the contemporary world / Principles of ecologically sustainable development – precautionary principle, intergenerational equity, conservation of biological diversity and ecological integrity",
+   "text": "Principles of ecologically sustainable development – precautionary principle, intergenerational equity, conservation of biological diversity and ecological integrity"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Global sustainability / Sustainability in the contemporary world / Opportunities and challenges in planning for and achieving global sustainability",
+   "text": "Opportunities and challenges in planning for and achieving global sustainability"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Global sustainability / Sustainability in the contemporary world / the role of global forums, agreements and cooperation",
+   "text": "the role of global forums, agreements and cooperation"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Global sustainability / Sustainability in the contemporary world / levels of action at a range of scales, from the United Nations Sustainable Development Goals to practices in local communities, including actions by governments, intergovernmental organisations (IGOs), non-government organisations (NGOs), corporations, community organisations and individuals",
+   "text": "levels of action at a range of scales, from the United Nations Sustainable Development Goals to practices in local communities, including actions by governments, intergovernmental organisations (IGOs), non-government organisations (NGOs), corporations, community organisations and individuals"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Global sustainability / Sustainability in the contemporary world / Indigenous Peoples’ practices and benefit sharing",
+   "text": "Indigenous Peoples’ practices and benefit sharing"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Global sustainability / Sustainability in the contemporary world / political, economic, technological, social, cultural and environmental influences",
+   "text": "political, economic, technological, social, cultural and environmental influences"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Global sustainability / Evaluating sustainability / The reasons for evaluating and monitoring global sustainability",
+   "text": "The reasons for evaluating and monitoring global sustainability"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Global sustainability / Evaluating sustainability / A range of criteria for evaluating the sustainability of economic activities",
+   "text": "A range of criteria for evaluating the sustainability of economic activities"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / agriculture",
+   "text": "agriculture"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / energy production",
+   "text": "energy production"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / fishing",
+   "text": "fishing"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / forestry",
+   "text": "forestry"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / manufacturing",
+   "text": "manufacturing"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / mining",
+   "text": "mining"
+  },
+  {
+   "code": "HSC-M3-T3-D7",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / tourism.",
+   "text": "tourism."
+  },
+  {
+   "code": "HSC-M3-T3-D8",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / evaluate the sustainability of the activity, using one or more criteria",
+   "text": "evaluate the sustainability of the activity, using one or more criteria"
+  },
+  {
+   "code": "HSC-M3-T3-D9",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / examine a range of strategies for sustainability",
+   "text": "examine a range of strategies for sustainability"
+  },
+  {
+   "code": "HSC-M3-T3-D10",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / critically analyse ONE strategy.",
+   "text": "critically analyse ONE strategy."
+  },
+  {
+   "code": "HSC-M3-T3-D11",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / The nature and spatial patterns of the global economic activity",
+   "text": "The nature and spatial patterns of the global economic activity"
+  },
+  {
+   "code": "HSC-M3-T3-D12",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / Influences on the global economic activity",
+   "text": "Influences on the global economic activity"
+  },
+  {
+   "code": "HSC-M3-T3-D13",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / biophysical",
+   "text": "biophysical"
+  },
+  {
+   "code": "HSC-M3-T3-D14",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / economic",
+   "text": "economic"
+  },
+  {
+   "code": "HSC-M3-T3-D15",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / technological",
+   "text": "technological"
+  },
+  {
+   "code": "HSC-M3-T3-D16",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / political/organisational",
+   "text": "political/organisational"
+  },
+  {
+   "code": "HSC-M3-T3-D17",
+   "path": "Year 12 / Global sustainability / Investigation of a global economic activity / Current trends and future directions",
+   "text": "Current trends and future directions"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / The size, pattern and spatial distribution of settlements",
+   "text": "The size, pattern and spatial distribution of settlements"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / different types of settlements – remote settlement, village, suburb, regional centre, city, megacity and urban mega-region",
+   "text": "different types of settlements – remote settlement, village, suburb, regional centre, city, megacity and urban mega-region"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / settlement patterns",
+   "text": "settlement patterns"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / influences on size and spatial distribution – location, climate, topography, natural resources, population and economic development",
+   "text": "influences on size and spatial distribution – location, climate, topography, natural resources, population and economic development"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / National and global urban hierarchies of settlements, based on population and urban function, and spheres of influence",
+   "text": "National and global urban hierarchies of settlements, based on population and urban function, and spheres of influence"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / The nature of urbanisation and urban growth at a global scale",
+   "text": "The nature of urbanisation and urban growth at a global scale"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / challenges facing rural and urban places",
+   "text": "challenges facing rural and urban places"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / the interdependence of rural and urban places",
+   "text": "the interdependence of rural and urban places"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / Settlements in the world today that have maintained a small ecological footprint and a high level of wellbeing",
+   "text": "Settlements in the world today that have maintained a small ecological footprint and a high level of wellbeing"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Rural and urban places / Rural and urban settlement / Strategies for the sustainable management of rural and urban places, including at least one successful initiative or project",
+   "text": "Strategies for the sustainable management of rural and urban places, including at least one successful initiative or project"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Rural and urban places / Investigation of a rural and an urban place / The location and character of the place",
+   "text": "The location and character of the place"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Rural and urban places / Investigation of a rural and an urban place / Geographical processes, both physical and human, that have shaped the identity of the place",
+   "text": "Geographical processes, both physical and human, that have shaped the identity of the place"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Rural and urban places / Investigation of a rural and an urban place / Links to other places",
+   "text": "Links to other places"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Rural and urban places / Investigation of a rural and an urban place / The nature of changes affecting the place, including social, economic and environmental",
+   "text": "The nature of changes affecting the place, including social, economic and environmental"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Rural and urban places / Investigation of a rural and an urban place / Responses and strategies, including for sustainability",
+   "text": "Responses and strategies, including for sustainability"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / The character and spatial dimensions of the large city",
+   "text": "The character and spatial dimensions of the large city"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / Geographical processes shaping the large city and change over time relating to demographic trends; social and economic patterns; political and economic roles; and regional and global linkages",
+   "text": "Geographical processes shaping the large city and change over time relating to demographic trends; social and economic patterns; political and economic roles; and regional and global linkages"
+  },
+  {
+   "code": "HSC-M4-T3-D3",
+   "path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / Challenges of living in the large city",
+   "text": "Challenges of living in the large city"
+  },
+  {
+   "code": "HSC-M4-T3-D4",
+   "path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / Responses to these challenges and opportunities for enhancing sustainability, including strategies to improve people’s quality of life and reduce spatial inequality",
+   "text": "Responses to these challenges and opportunities for enhancing sustainability, including strategies to improve people’s quality of life and reduce spatial inequality"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The nature and complexity of ecosystem functioning and global biodiversity",
+   "text": "The nature and complexity of ecosystem functioning and global biodiversity"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / energy flows and nutrient cycles",
+   "text": "energy flows and nutrient cycles"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / dynamic equilibrium and feedback loops",
+   "text": "dynamic equilibrium and feedback loops"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / relationships between natural systems",
+   "text": "relationships between natural systems"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The value of ecosystems and biodiversity",
+   "text": "The value of ecosystems and biodiversity"
+  },
+  {
+   "code": "HSC-M5-T1-D6",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The relationship between ecological and human stresses, and the vulnerability and resilience of ecosystems, including ecological integrity and biocapacity",
+   "text": "The relationship between ecological and human stresses, and the vulnerability and resilience of ecosystems, including ecological integrity and biocapacity"
+  },
+  {
+   "code": "HSC-M5-T1-D7",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The global state of ecosystems and biodiversity",
+   "text": "The global state of ecosystems and biodiversity"
+  },
+  {
+   "code": "HSC-M5-T1-D8",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / current and future trends, and reasons for the trends",
+   "text": "current and future trends, and reasons for the trends"
+  },
+  {
+   "code": "HSC-M5-T1-D9",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / shifting baselines and tipping points",
+   "text": "shifting baselines and tipping points"
+  },
+  {
+   "code": "HSC-M5-T1-D10",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / Strategies for the sustainable management of ecosystems at a range of scales, including at least one successful conservation program",
+   "text": "Strategies for the sustainable management of ecosystems at a range of scales, including at least one successful conservation program"
+  },
+  {
+   "code": "HSC-M5-T1-D11",
+   "path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The role played by Indigenous Peoples in contemporary management practices",
+   "text": "The role played by Indigenous Peoples in contemporary management practices"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Ecosystems and global biodiversity / Investigation of ecosystems / The characteristics of the ecosystem, including its spatial pattern and the nature of its biodiversity",
+   "text": "The characteristics of the ecosystem, including its spatial pattern and the nature of its biodiversity"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Ecosystems and global biodiversity / Investigation of ecosystems / The dynamics of ecosystem functioning, including vulnerability, resilience and ecological disturbance",
+   "text": "The dynamics of ecosystem functioning, including vulnerability, resilience and ecological disturbance"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Ecosystems and global biodiversity / Investigation of ecosystems / Human-induced modifications to the ecosystem",
+   "text": "Human-induced modifications to the ecosystem"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Ecosystems and global biodiversity / Investigation of ecosystems / Responses and strategies, including for maintaining ecosystem functioning and actions for sustainability",
+   "text": "Responses and strategies, including for maintaining ecosystem functioning and actions for sustainability"
+  },
+  {
+   "code": "HSC-M5-T2-D5",
+   "path": "Year 12 / Ecosystems and global biodiversity / Investigation of ecosystems / Differences in ecosystem management, compared with at least one other location, due to economic, political and sociocultural factors",
+   "text": "Differences in ecosystem management, compared with at least one other location, due to economic, political and sociocultural factors"
+  },
+  {
+   "code": "HSC-M5-T2-D6",
+   "path": "Year 12 / Ecosystems and global biodiversity / Investigation of ecosystems / The role of contemporary research and innovation in the sustainable management of the ecosystem",
+   "text": "The role of contemporary research and innovation in the sustainable management of the ecosystem"
+  }
+ ],
+ "questions": [
+  {
+   "id": "geo202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "Which of the following is an example of the spatial dimension of an economic enterprise?\nLatitude position\nChange over time\nA geographic process\nAn impact of human stress"
+  },
+  {
+   "id": "geo202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "An organisation moves its office from a city centre to a regional centre. Of which urban dynamic is this an example?\nCounterurbanisation\nDecentralisation\nExurbanisation\nUrbanisation"
+  },
+  {
+   "id": "geo202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "The cartoon in Source A shows people discussing\nsuburbanisation.\nimpacts on urban villages.\nurban consolidation in the city.\nthe growth of forests into suburban areas."
+  },
+  {
+   "id": "geo202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "What is the approximate average rainfall in summer, in millimetres, for the weather station?\n25\n95\n270\n630"
+  },
+  {
+   "id": "geo202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "The most appropriate management strategy to protect the bilby in Karijini National Park would be to reduce\ndiversity.\nmining operations.\nrubbish left by campers.\nexotic species such as cats and foxes."
+  },
+  {
+   "id": "geo202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical inquiry skills",
+   "text": "A park ranger is concerned about future erosion on a walking track in a national park. Which of the following is a primary fieldwork technique best suited to investigating this geographical issue?\nSurvey of park visitors about track use\nGathering internet information on erosion\nTaking photographs over time of track edges\nObtaining historic records of visitor numbers"
+  },
+  {
+   "id": "geo202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "What is ONE advantage of using a choropleth map rather than a table of statistics when analysing field data?\nData can be shown more precisely.\nIt better shows data change over time.\nLists in categories are easier to interpret.\nSpatial relationships are easier to identify."
+  },
+  {
+   "id": "geo202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Based on the diagram, which of the following is a primary consumer?\nBerries\nDragonfly\nFox\nGrasshopper"
+  },
+  {
+   "id": "geo202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "If a driver takes 11 hours to drive from Perth to Carnarvon, what is their average speed?\n86 km/h\n78 km/h\n72 km/h\n66 km/h"
+  },
+  {
+   "id": "geo202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "What is the latitude and longitude of the earthquake with the largest magnitude off the north-west coast of Western Australia?\n17°S, 119°W\n17°S, 121°E\n26°S, 116°E\n26°S, 124°W"
+  },
+  {
+   "id": "geo202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "A cartographer is considering changing the scale of Source E. If a larger scale is used for Source E, it might benefit park management by showing\nmore settlement areas.\nmore detail of the gorges.\na wider area of the national park.\nregional towns, such as Carnarvon."
+  },
+  {
+   "id": "geo202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "What is the approximate bearing from the spot elevation in AR 3726 to the towers in AR 3332?\n30°\n45°\n315°\n330°"
+  },
+  {
+   "id": "geo202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "What is the average direction of flow of the watercourse in Wittenoom Gorge in AR 3427?\nNE\nNNE\nSW\nSSW"
+  },
+  {
+   "id": "geo202014",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "A walking trail is proposed between the spot height in AR 3224 and the spot height in AR 3323. What is the approximate average gradient between these points?\n1 : 2\n1 : 190\n1 : 240\n1 : 490"
+  },
+  {
+   "id": "geo202015",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Which area reference includes a spot elevation that is visible from the spot elevation in AR 3229?\nAR 3024\nAR 3426\nAR 3731\nAR 3733"
+  },
+  {
+   "id": "geo202016",
+   "year": 2020,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "At which grid reference on Source E was the photograph in Source F taken?\nGR 294232\nGR 299232\nGR 309232\nGR 314232"
+  },
+  {
+   "id": "geo202017",
+   "year": 2020,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "What percentage of people are employed in tertiary industry in Country R?\n25\n32\n42\n68"
+  },
+  {
+   "id": "geo202018",
+   "year": 2020,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "Which country is most likely to contain a world city?\nE\nI\nP\nY"
+  },
+  {
+   "id": "geo202019",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Suppose that the number of Australians born in India and the United Kingdom increased by 10% from 2011 to 2019. Approximately how many Australians born overseas would be from India and the United Kingdom in 2019?\n1.4 million\n1.6 million\n1.8 million\n2.0 million"
+  },
+  {
+   "id": "geo202020",
+   "year": 2020,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "This photograph was taken at midday in July. What direction was the photographer facing?\nEast\nNorth\nSouth\nWest"
+  },
+  {
+   "id": "geo202021",
+   "year": 2020,
+   "number": "21",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Refer to the following graph to answer parts (a) and (b).\nGraph of rainforest insect colonies 1930 to 2010\nUsing the key provided, graph the following data for the rainforest bee colonies on the graph above. Year 1930 500, 1960 700, 1980 80, 2010 4.\nProvide possible reasons for the trend in the number of bee and butterfly colonies after 1960."
+  },
+  {
+   "id": "geo202022",
+   "year": 2020,
+   "number": "22",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Refer to Sources E, F and G on pages 2 and 3 of the Stimulus Booklet to answer parts (b) and (c).\nOutline the spatial patterns and dimensions of ONE ecosystem at risk.\nIdentify TWO biophysical processes operating in Karijini National Park and justify your answer.\nDiscuss potential human impacts on the ecosystems in Karijini National Park."
+  },
+  {
+   "id": "geo202023",
+   "year": 2020,
+   "number": "23",
+   "marks": 13,
+   "type": "extended_response",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "Refer to Source J on page 4 of the Stimulus Booklet to answer part (c).\nExplain why spatial exclusion occurs in urban places.\nExplain the changing nature and location of residential land in ONE large city from the developed world.\nExplain the roles of world cities as centres of economic and cultural authority."
+  },
+  {
+   "id": "geo202024",
+   "year": 2020,
+   "number": "24",
+   "marks": 14,
+   "type": "extended_response",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "Answer part (a) with reference to an economic enterprise you have studied. Answer parts (b)-(d) with reference to an economic activity you have studied.\nOutline TWO impacts of environmental change on the economic enterprise.\nOutline TWO future directions of the economic activity.\nDescribe the spatial patterns of the economic activity.\nHow do economic, political and organisational factors affect the nature of the economic activity?"
+  },
+  {
+   "id": "geo202025",
+   "year": 2020,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Assess the vulnerability and resilience of ecosystems at risk."
+  },
+  {
+   "id": "geo202026",
+   "year": 2020,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "Evaluate responses to the challenges of living in mega cities."
+  },
+  {
+   "id": "geo202027",
+   "year": 2020,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "Explain the linkages and flows within an economic enterprise operating at a local scale."
+  },
+  {
+   "id": "geo202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / Challenges of living in the large city",
+   "text": "Refer to Source A on page 1 of the Stimulus Booklet to answer Question 1. What challenge of living in a mega city in the developing world does this photograph best illustrate?\nHousing\nEmployment\nTraffic congestion\nWater and power supplies"
+  },
+  {
+   "id": "geo202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Identify and describe spatial patterns and associations, interactions and change using a range of visual representations",
+   "text": "Refer to Source B on page 1 of the Stimulus Booklet to answer Question 2. What type of photograph is Source B?\nGround\nSatellite\nOblique aerial\nVertical aerial"
+  },
+  {
+   "id": "geo202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Global sustainability / Sustainability in the contemporary world / Sustainability and sustainable development, including pillars of sustainability – social, economic, environmental and cultural",
+   "text": "Which term is defined by ‘the ability to meet present needs without compromising future needs’?\nContinuity\nInterdependence\nSuccession\nSustainability"
+  },
+  {
+   "id": "geo202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Rural and urban places / Rural and urban settlement / The nature of urbanisation and urban growth at a global scale",
+   "text": "Refer to Source C on page 1 of the Stimulus Booklet to answer Question 4. Which region is expected to have the greatest number of new mega cities by 2030?\nAfrica\nEurope\nAsia-Pacific\nThe Middle East"
+  },
+  {
+   "id": "geo202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Calculate absolute and proportional changes",
+   "text": "Refer to Source D on page 1 of the Stimulus Booklet to answer Question 5. Which urban centre is expected to show the least relative change in population between 2009 and 2025?\nDelhi\nTokyo\nMumbai\nMexico City"
+  },
+  {
+   "id": "geo202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The nature and complexity of ecosystem functioning and global biodiversity",
+   "text": "A simple Antarctic food chain is shown. Krill, Phytoplankton, Blue whale. Which row of the table shows the likely results of the removal of large amounts of krill from the Antarctic ecosystem?\nPhytoplankton decrease / Blue whale decrease\nPhytoplankton decrease / Blue whale increase\nPhytoplankton increase / Blue whale decrease\nPhytoplankton increase / Blue whale increase"
+  },
+  {
+   "id": "geo202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Calculate the value of particular segments of pie/sector graphs of different sizes",
+   "text": "The graph shows the allocated budget and actual spending of an economic enterprise. Approximately how much did the economic enterprise allocate for spending on customer support?\n$20 000\n$25 000\n$35 000\n$42 000"
+  },
+  {
+   "id": "geo202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical inquiry skills / Processing geographical information / Evaluate data and information in various forms for reliability, bias, validity and usefulness, including limitations",
+   "text": "An environmental agency is researching the impact of agriculture on a creek. Water quality is measured over a one week period at one end of the creek. Which line of the table best describes the type of data obtained and the reliability of the research?\nPrimary / Low\nPrimary / High\nSecondary / Low\nSecondary / High"
+  },
+  {
+   "id": "geo202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "Refer to Source E on page 2 of the Stimulus Booklet to answer Questions 9–11. What is the general aspect of the slope in AR 2659?\nNE\nSE\nSW\nNW"
+  },
+  {
+   "id": "geo202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Use scale to calculate distance and area",
+   "text": "Refer to Source E on page 2 of the Stimulus Booklet to answer Questions 9–11. What is the approximate area of land parcel D 93870 centred on GR 257591?\n0.4 km2\n0.7 km2\n1.2 km2\n1.5 km2"
+  },
+  {
+   "id": "geo202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Calculate the gradient of a slope as a ratio",
+   "text": "Refer to Source E on page 2 of the Stimulus Booklet to answer Questions 9–11. What is the average gradient of the slope between the spot height in AR 2558 and the spot height in AR 2659?\n1 : 0.022\n1 : 22\n1 : 45\n1 : 18 000"
+  },
+  {
+   "id": "geo202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Orient a photograph to a map",
+   "text": "Refer to Source E on page 2 and Source F on page 3 of the Stimulus Booklet to answer Question 12. Which direction was the photographer facing when the photograph in Source F was taken?\nE\nSE\nSW\nW"
+  },
+  {
+   "id": "geo202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Use scale to calculate distance and area",
+   "text": "Refer to Source E on page 2 and Source G on page 3 of the Stimulus Booklet to answer Question 13. What is the scale of Source G?\n1 : 1 300\n1 : 3 300\n1 : 67 000\n1 : 77 000"
+  },
+  {
+   "id": "geo202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Recognise the key features of changing pressure patterns on weather maps",
+   "text": "Refer to the following diagram (© Bureau of Meteorology) to answer Questions 14–15. What was the cause of the rain south of Seaford?\nTropical cyclone\nOrographic effect\nHigh pressure ridge\nLow pressure trough"
+  },
+  {
+   "id": "geo202115",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Recognise the key features of changing pressure patterns on weather maps",
+   "text": "Refer to the following diagram (© Bureau of Meteorology) to answer Questions 14–15. What is the wind direction at Seaford?\nENE\nESE\nWNW\nWSW"
+  },
+  {
+   "id": "geo202116",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The nature and complexity of ecosystem functioning and global biodiversity",
+   "text": "Refer to Source H on page 4 of the Stimulus Booklet to answer Questions 16–17. Which combination of geographical concepts is being demonstrated in Source H?\nEcosystems and biodiversity\nEnvironments and infrastructure\nGeographical issues and spatial exclusion\nEcological dimension and spatial dimension"
+  },
+  {
+   "id": "geo202117",
+   "year": 2021,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Calculate the value of particular segments of pie/sector graphs of different sizes",
+   "text": "Refer to Source H on page 4 of the Stimulus Booklet to answer Questions 16–17. Approximately how many pieces of small plastics per $\\mathrm{km}^2$ were found at Location 7?\n1200\n1600\n2400\n2800"
+  },
+  {
+   "id": "geo202118",
+   "year": 2021,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Calculate distance, time and speed of travel between 2 points",
+   "text": "Refer to Source I on page 4 of the Stimulus Booklet to answer Questions 18–20. The shortest distance along the coast from McMurdo station (US) to Casey station (Australia) is approximately\n3000 km\n5000 km\n6000 km\n7000 km"
+  },
+  {
+   "id": "geo202119",
+   "year": 2021,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "Refer to Source I on page 4 of the Stimulus Booklet to answer Questions 18–20. What is the direction from Casey station (Australia) to Dumont d’Urville station (France)?\nN\nNE\nE\nSE"
+  },
+  {
+   "id": "geo202120",
+   "year": 2021,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Determine area and grid references, and degrees and minutes of latitude and longitude",
+   "text": "Refer to Source I on page 4 of the Stimulus Booklet to answer Questions 18–20. What is the approximate location of Vinson Massif?\n76°S, 86°W\n76°S, 97°W\n86°S, 86°W\n86°S, 97°W"
+  },
+  {
+   "id": "geo202121",
+   "year": 2021,
+   "number": "21",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Geographical tools / Maps / Calculate the local relief of an area | Year 12 / Geographical tools / Maps / Calculate and interpret the vertical exaggeration of a cross-section",
+   "text": "The diagram shows a cross-section of the Antarctic ice sheet.\nCalculate in kilometres the local relief on the ice sheet between point A and point B.\nCalculate the vertical exaggeration of the cross-section."
+  },
+  {
+   "id": "geo202122",
+   "year": 2021,
+   "number": "22",
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "Year 12 / Geographical inquiry skills / Processing geographical information / Use GIS to analyse data where appropriate | Year 12 / Geographical tools / Spatial technologies / Use data to create maps and map layers | Year 12 / Ecosystems and global biodiversity / Investigation of ecosystems / Responses and strategies, including for maintaining ecosystem functioning and actions for sustainability | Year 12 / Rural and urban places / Investigation of a rural and an urban place / The nature of changes affecting the place, including social, economic and environmental | Year 12 / Rural and urban places / Investigation of a rural and an urban place / Geographical processes, both physical and human, that have shaped the identity of the place",
+   "text": "Refer to Sources E, F and G on pages 2 and 3 of the Stimulus Booklet to answer parts (a)–(d). A housing development is proposed for the site indicated in Source F.\nSources E and G are obtained using a Geographic Information System (GIS). With reference to these sources, outline TWO benefits of using a GIS to study the proposed housing development.\nJustify TWO management strategies that could be used to minimise damage from the housing development process in Seaford to the ecosystems in the surrounding area.\nDescribe how the completed housing development in Seaford may affect economic enterprises in the surrounding area.\nDescribe how the completed housing development may affect Seaford area’s culture of place."
+  },
+  {
+   "id": "geo202123",
+   "year": 2021,
+   "number": "23",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / Strategies for the sustainable management of ecosystems at a range of scales, including at least one successful conservation program | Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The role played by Indigenous Peoples in contemporary management practices | Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The nature and complexity of ecosystem functioning and global biodiversity",
+   "text": "This response has two parts: (a) describes traditional ecosystem management strategies, and (b) explains how climate variation leads to ecosystem diversity.\nDescribe TWO traditional management strategies that can be used to manage ecosystems.\nExplain how variations in climate lead to a diversity of ecosystems. Use examples of ecosystems in your response."
+  },
+  {
+   "id": "geo202124",
+   "year": 2021,
+   "number": "24",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Rural and urban places / Rural and urban settlement / National and global urban hierarchies of settlements, based on population and urban function, and spheres of influence | Year 12 / Rural and urban places / Investigation of a large city outside Australia / The character and spatial dimensions of the large city",
+   "text": "This response has two parts: (a) outlines the spatial distribution of world cities, and (b) compares the character of mega cities in the developing world with world cities.\nOutline the spatial distribution of world cities.\nCompare the character of mega cities in the developing world with the character of world cities."
+  },
+  {
+   "id": "geo202125",
+   "year": 2021,
+   "number": "25",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Global sustainability / Investigation of a global economic activity / The nature and spatial patterns of the global economic activity | Year 12 / Global sustainability / Investigation of a global economic activity / Influences on the global economic activity | Year 12 / Global sustainability / Investigation of a global economic activity / biophysical",
+   "text": "Answer part (a) with reference to an economic enterprise you have studied. Answer part (b) with reference to an economic activity you have studied.\nExplain how ONE locational factor affects ONE external linkage of this economic enterprise.\nExplain how ecological factors influence the nature and spatial patterns of this economic activity."
+  },
+  {
+   "id": "geo202126",
+   "year": 2021,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The relationship between ecological and human stresses, and the vulnerability and resilience of ecosystems, including ecological integrity and biocapacity",
+   "text": "Analyse both the positive and negative effects of human activities on ecosystems."
+  },
+  {
+   "id": "geo202127",
+   "year": 2021,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / Geographical processes shaping the large city and change over time relating to demographic trends; social and economic patterns; political and economic roles; and regional and global linkages",
+   "text": "‘Suburbanisation and consolidation have the greatest influence on shaping the development of large cities.’ Discuss this statement with reference to urban dynamics operating in ONE large city from the developed world."
+  },
+  {
+   "id": "geo202128",
+   "year": 2021,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Global sustainability / Investigation of a global economic activity / Influences on the global economic activity",
+   "text": "Evaluate the effects of global changes on ONE economic enterprise operating at a local scale."
+  },
+  {
+   "id": "geo202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Identify and describe spatial patterns and associations, interactions and change using a range of visual representations",
+   "text": "Refer to Sources A and B on page 1 of the Stimulus Booklet to answer Question 1.\nWhich aspect of Geography do Sources A and B best show?\nClimate\nEcosystems at risk\nNatural environments\nThe built environment"
+  },
+  {
+   "id": "geo202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Construct, interpret and analyse tables and graphs",
+   "text": "Refer to Sources C and D on page 1 of the Stimulus Booklet to answer Question 2.\nWhich row of the table identifies the types of graphs in Sources C and D?\nSource C: Population pyramid; Source D: Ternary graph\nSource C: Population pyramid; Source D: Divided column graph\nSource C: Population diagram; Source D: Ternary graph\nSource C: Population diagram; Source D: Divided column graph"
+  },
+  {
+   "id": "geo202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a rural and an urban place / Geographical processes, both physical and human, that have shaped the identity of the place",
+   "text": "The term geographical processes can be defined as\nhuman forces that form and transform our world.\nphysical processes that form and transform our world.\na combination of physical and human forces that form and transform our world.\na combination of physical and human forces that form and transform biophysical environments."
+  },
+  {
+   "id": "geo202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Construct and interpret choropleth maps",
+   "text": "Refer to Source E on page 1 of the Stimulus Booklet to answer Question 4.\nHow many cities in Africa have a population of 10 million or more?\n3\n6\n50\n70"
+  },
+  {
+   "id": "geo202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Interpret contour lines",
+   "text": "Refer to Source F on page 2 of the Stimulus Booklet to answer Questions 5–8.\nWhat is the contour interval of the map?\n1 m\n5 m\n10 m\n25 m"
+  },
+  {
+   "id": "geo202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Determine area and grid references, and degrees and minutes of latitude and longitude",
+   "text": "What is the grid reference of point P and its direction to point Q?\nGrid reference 425296; direction to point Q: South\nGrid reference 296425; direction to point Q: South\nGrid reference 425296; direction to point Q: North\nGrid reference 296425; direction to point Q: North"
+  },
+  {
+   "id": "geo202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "What is the aspect of the slope at point Q?\nEast\nNorth\nSouth\nWest"
+  },
+  {
+   "id": "geo202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Construct and annotate a cross-section from a topographic map",
+   "text": "Which cross-section best matches the transect between points P and Q?\nCross-section A: from P the line starts at about 12 m, falls gently to about 8 m, rises to a small peak of about 12 m, drops steeply to 0 m, runs flat at 0 m (water body) and then rises steeply to about 28 m at Q.\nCross-section B: from P the line starts at about 12 m, falls gently to about 8 m with no intermediate peak, drops to 0 m, runs flat at 0 m (water body) and then rises steeply to about 28 m at Q.\nCross-section C: from P the line starts at about 12 m, falls gradually to 0 m with no intermediate peak, runs flat at 0 m (water body), rises steeply to about 24 m and then falls slightly at Q.\nCross-section D: from P the line starts at about 12 m, falls to about 8 m, rises to a peak of about 13 m, drops to 0 m, runs flat at 0 m (water body), rises to about 24 m and then falls slightly at Q."
+  },
+  {
+   "id": "geo202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Identify and describe spatial patterns and associations, relationships, networks, linkages and evidence of change, within and between regions or areas, using a range of maps",
+   "text": "Refer to Source G on page 3 of the Stimulus Booklet to answer Questions 9–10.\nWhat type of map is Source G?\nCadastral\nPhysical\nPrécis\nTopographic"
+  },
+  {
+   "id": "geo202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Use scale to calculate distance and area",
+   "text": "What is the distance from the city centre to the furthest point in Royal National City Park?\n6.4 km\n6.7 km\n64 km\n67 km"
+  },
+  {
+   "id": "geo202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / The character and spatial dimensions of the large city",
+   "text": "Refer to Source H on page 3 of the Stimulus Booklet to answer Question 11.\nWhich geographic ‘dimension’ does Source H best show?\nEcological\nEconomic\nPolitical\nSpatial"
+  },
+  {
+   "id": "geo202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Use scale to calculate distance and area",
+   "text": "Refer to Sources F, G, I and K on pages 2 and 3 of the Stimulus Booklet to answer Question 12.\nWhich source has the largest scale?\nSource F\nSource G\nSource I\nSource K"
+  },
+  {
+   "id": "geo202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Construct, interpret and analyse tables and graphs",
+   "text": "Refer to Source L on page 4 of the Stimulus Booklet to answer Questions 13–14.\nApproximately how much installed solar capacity does Thailand have?\n2500 MW\n3500 MW\n4000 MW\n5000 MW"
+  },
+  {
+   "id": "geo202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Interpret and analyse statistics to identify patterns, trends and relationships",
+   "text": "Why is China the largest square in the cartogram?\nLargest population\nLargest installed solar capacity\nLargest potential watts per capita available\nMost politically powerful nation in the region"
+  },
+  {
+   "id": "geo202215",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Global sustainability / Investigation of a global economic activity / energy production",
+   "text": "Refer to Sources M and N on page 4 of the Stimulus Booklet to answer Question 15.\nThe operators of the Darling Downs solar power plant believe it is a good location compared to other locations in Queensland because it is further south and inland.\nWhy would this be beneficial for the enterprise?\nLess evaporation\nFewer cloudy days\nMore daylight hours\nWarmer temperatures"
+  },
+  {
+   "id": "geo202216",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Interpret and analyse statistics to identify patterns, trends and relationships",
+   "text": "Refer to Source O on page 4 of the Stimulus Booklet to answer Questions 16–17.\nWhat is the mean annual rainfall for the Darling Downs?\n50 mm\n194 mm\n575 mm\n642 mm"
+  },
+  {
+   "id": "geo202217",
+   "year": 2022,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Construct, interpret and analyse tables and graphs",
+   "text": "What is the lowest maximum temperature on record for April?\n0°C\n11°C\n17°C\n23°C"
+  },
+  {
+   "id": "geo202218",
+   "year": 2022,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Interpret and analyse population profiles",
+   "text": "Refer to Source C on page 1 of the Stimulus Booklet to answer Question 18.\nThe world population in 2021 was 7.875 billion.\nWhat is the percentage of people in 2021 who were older than someone born in 1936?\n0.3%\n0.9%\n7%\n13%"
+  },
+  {
+   "id": "geo202219",
+   "year": 2022,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Calculate absolute and proportional changes",
+   "text": "Refer to Source D on page 1 of the Stimulus Booklet to answer Question 19.\nFor data shown for South American cities, what was the relative increase in the population from 1950 to 2000?\n30%\n40%\n300%\n400%"
+  },
+  {
+   "id": "geo202220",
+   "year": 2022,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Estimate the time of day a photograph was taken",
+   "text": "Refer to Source F on page 2 and Source I on page 3 of the Stimulus Booklet to answer Question 20.\nThe landscape seen in Source I can be found in Source F.\nAt what time of day was the photograph in Source I taken?\n7:30 am\n10:30 am\n12:30 pm\n3:30 pm"
+  },
+  {
+   "id": "geo202221",
+   "year": 2022,
+   "number": "21",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Construct a transect between 2 points on a map or photograph and describe the changes along it",
+   "text": "Refer to Source F to answer parts (a)-(c).\nUse the key provided to complete the transect between points P and Q.\nTransect strip: a horizontal strip between point P on the left and point Q on the right, with point R marked by an arrow in the first section. Key: Open space (stippled), Public building (grey), Water body (diagonal hatching), Coniferous forest (cross-hatching).\nName the human feature at point R on the transect.\nWhat percentage of the transect between points P and Q is taken up by open space?"
+  },
+  {
+   "id": "geo202222",
+   "year": 2022,
+   "number": "22",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Rural and urban places / Rural and urban settlement / The nature of urbanisation and urban growth at a global scale",
+   "text": "Refer to Sources A and B.\nName ONE urban dynamic present in Source A and justify your choice.\nCompare ONE urban dynamic present in Source B with ONE urban dynamic operating in a country town or suburb.\nWhy are some small towns in decline?"
+  },
+  {
+   "id": "geo202223",
+   "year": 2022,
+   "number": "23",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The relationship between ecological and human stresses, and the vulnerability and resilience of ecosystems, including ecological integrity and biocapacity",
+   "text": "Refer to page 2 and page 3 of the Stimulus Booklet to answer part (a).\nRoyal National City Park rangers planning to evaluate ecosystem management strategies. Justify ONE criteria they could base evaluation on.\nAnswer part (b) with reference to an ecosystem you have studied.\nEcosystem:"
+  },
+  {
+   "id": "geo202224",
+   "year": 2022,
+   "number": "24",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Global sustainability / Investigation of a global economic activity / economic",
+   "text": "Answer part (a) referencing an economic enterprise; part (b) an economic activity.\nAnswer part (a) with reference to an economic enterprise you have studied.\nEconomic enterprise:\nAnswer part (b) with reference to an economic activity you have studied.\nEconomic activity:"
+  },
+  {
+   "id": "geo202225",
+   "year": 2022,
+   "number": "25",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Global sustainability / Sustainability in the contemporary world / the role of global forums, agreements and cooperation",
+   "text": "Refer to the following to answer part (a).\nIn what ways can international environmental efforts, such as COP26, affect ONE global economic activity you have studied?\nHow does ONE economic activity use global networks?"
+  },
+  {
+   "id": "geo202226",
+   "year": 2022,
+   "number": "26",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / The character and spatial dimensions of the large city",
+   "text": "Refer to Source H. Stockholm claims to have created world’s first national urban park. How does this claim demonstrate character of world cities?"
+  },
+  {
+   "id": "geo202227",
+   "year": 2022,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Global sustainability / Investigation of a global economic activity / Influences on the global economic activity",
+   "text": "Assess how a local economic enterprise affects and is affected by its environment."
+  },
+  {
+   "id": "geo202228",
+   "year": 2022,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The value of ecosystems and biodiversity",
+   "text": "‘Utility value is the most important reason for managing and protecting ecosystems.’\nDiscuss this statement."
+  },
+  {
+   "id": "geo202229",
+   "year": 2022,
+   "number": "29",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / Challenges of living in the large city",
+   "text": "Account for the challenges of living in mega cities of the developing world."
+  },
+  {
+   "id": "geo202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source A on page 1 of the Stimulus Booklet to answer Question 1.\nWhat type of graph is shown?\nScatterplot\nChoropleth\nDivided column\nFrequency distribution"
+  },
+  {
+   "id": "geo202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Which of the following is a sociocultural factor affecting economic activity?\nQuotas\nTransportation\nMobility of capital\nChanging lifestyles"
+  },
+  {
+   "id": "geo202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source B on page 1 of the Stimulus Booklet to answer Questions 3–4.\nHow much waste would the global olive oil industry produce in a five-year period?\n6 million m$^3$\n30 million m$^3$\n150 million m$^3$\n160 million m$^3$"
+  },
+  {
+   "id": "geo202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source B on page 1 of the Stimulus Booklet to answer Questions 3–4.\nWhich of the following sets of UN Sustainable Development Goals (SDGs) best relates to the olive oil industry, as presented in Source B?\nSDG 1 No poverty; SDG 4 Quality education; SDG 7 Affordable and clean energy\nSDG 3 Good health and well-being; SDG 8 Decent work and economic growth; SDG 12 Responsible consumption and production\nSDG 5 Gender equality; SDG 9 Industry, innovation and infrastructure; SDG 15 Life on land\nSDG 6 Clean water and sanitation; SDG 13 Climate action; SDG 16 Peace, justice and strong institutions"
+  },
+  {
+   "id": "geo202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "A local Aboriginal business leads cultural tours through an ecosystem.\nWhich TWO principles of ecosystem management and protection are demonstrated by this activity?\nHeritage values, utility values\nHeritage values, maintenance of genetic diversity\nNeed to allow natural change to proceed, utility values\nNeed to allow natural change to proceed, maintenance of genetic diversity"
+  },
+  {
+   "id": "geo202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source C on page 1 of the Stimulus Booklet to answer Question 6.\nWhich of the following shows one complete path that carbon can flow through the olive oil enterprise?\nAir → olives → solids → CO$_2$ storage\nAir → olives → waste water → CO$_2$ storage\nAir → trees → olives → solids → solid waste → CO$_2$ storage\nAir → trees → waste water → solids → solid waste → CO$_2$ storage"
+  },
+  {
+   "id": "geo202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D on page 2 of the Stimulus Booklet to answer Question 7.\nSome New York landmarks clearly express aspects of its culture of place.\nWhich row of the table best expresses the aspects of street life and heritage architecture?\nStreet life: New York Stock Exchange; Heritage architecture: Empire State Building\nStreet life: New York Stock Exchange; Heritage architecture: One World Trade Center\nStreet life: Times Square; Heritage architecture: Empire State Building\nStreet life: Times Square; Heritage architecture: One World Trade Center"
+  },
+  {
+   "id": "geo202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D and Source E on page 2 of the Stimulus Booklet to answer Question 8.\nThe photographer of Source E was facing a bearing of approximately\n45°.\n90°.\n225°.\n270°."
+  },
+  {
+   "id": "geo202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "What is a major reason for contemporary counterurbanisation in developed countries?\nThe demise of small towns\nA reduction in urban pollution\nAn increase in urban green space\nThe opportunity of working from home"
+  },
+  {
+   "id": "geo202310",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source G on page 3 of the Stimulus Booklet to answer Questions 10–14.\nWhat is the density of schools in AR 1514?\n6 per km$^2$\n11 per km$^2$\n12 per km$^2$\n13 per km$^2$"
+  },
+  {
+   "id": "geo202311",
+   "year": 2023,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source G on page 3 of the Stimulus Booklet to answer Questions 10–14.\nWhat is the elevation of ‘The Pond’ in the south corner of Central Park?\n5 m\n8 m\n11 m\n22 m"
+  },
+  {
+   "id": "geo202312",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source G on page 3 of the Stimulus Booklet to answer Questions 10–14.\nApproximately how many minutes would it take to walk around the edge of Jacqueline Kennedy Onassis Reservoir at 5 km/h?\n35\n55\n75\n95"
+  },
+  {
+   "id": "geo202313",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source G on page 3 of the Stimulus Booklet to answer Questions 10–14.\nWhat is the gradient from the Lookout down to Point Z in the north of Central Park?\n1 : 2.7\n1 : 3.4\n1 : 6.7\n1 : 7.4"
+  },
+  {
+   "id": "geo202314",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source G on page 3 of the Stimulus Booklet to answer Questions 10–14.\nWhat is the approximate ratio of river to land in the topographic map extract? (Assume that land includes the water bodies in Central Park.)\n1 : 4.5\n1 : 7.0\n1 : 10.5\n1 : 14.0"
+  },
+  {
+   "id": "geo202315",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source H on page 4 of the Stimulus Booklet to answer Question 15.\nNet loss = loss – gain\nWhat was the net loss of forests in millions of hectares between 2010 and 2020?\n41\n48\n53\n60"
+  },
+  {
+   "id": "geo202316",
+   "year": 2023,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source A on page 1 of the Stimulus Booklet to answer Question 16.\nWhat is the predicted growth in olive oil revenue for Europe between 2015 and 2025?\n$1.3 billion\n$1.8 billion\n$2.6 billion\n$5.2 billion"
+  },
+  {
+   "id": "geo202317",
+   "year": 2023,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source G on page 3 of the Stimulus Booklet to answer Question 17.\nWhat is the latitude and longitude of the police department next to the Jacqueline Kennedy Onassis Reservoir?\n40°46'59\"N, 73°57'09\"W\n40°46'59\"N, 73°57'51\"W\n40°48'49\"N, 73°57'09\"W\n40°48'49\"N, 73°57'51\"W"
+  },
+  {
+   "id": "geo202318",
+   "year": 2023,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source F on page 2 and Source G on page 3 of the Stimulus Booklet to answer Questions 18–19.\nA helicopter flies SSW from point Y on Source F.\nWhat feature does it fly over?\nCarnegie Hall\nCentral Park Zoo\nThe Metropolitan Museum of Art\nAmerican Museum of Natural History"
+  },
+  {
+   "id": "geo202319",
+   "year": 2023,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source F on page 2 and Source G on page 3 of the Stimulus Booklet to answer Questions 18–19.\nWhat is the approximate scale of Source F?\n1 : 3300\n1 : 16 000\n1 : 25 000\n1 : 30 000"
+  },
+  {
+   "id": "geo202320",
+   "year": 2023,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source I on page 4 of the Stimulus Booklet to answer Question 20.\nWhat is a likely reason for the percentage of wild grasslands and shrubs increasing at different times in the last 10 000 years?\nAgriculture\nDeforestation\nClimate change\nEcological invasion"
+  },
+  {
+   "id": "geo202321",
+   "year": 2023,
+   "number": "21",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to the following graph to answer parts (a)–(b).\nThe graph is a ternary graph titled ‘Global share of production’. Its three axes are Spain (%), Italy (%) and All other (%), each scaled from 0 to 100. The key shows lemons as a triangle and vinegar as a circle.\n(a) Complete the table for vinegar production.\n(b) Using the symbol × and the data in part (a), plot the point for olive oil production on the graph."
+  },
+  {
+   "id": "geo202322",
+   "year": 2023,
+   "number": "22",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "Answer all parts of the question.\nName ONE global economic activity.\nGlobal economic activity:\nExplain ONE change in this global economic activity.\nName ONE local economic enterprise.\nLocal economic enterprise:\nOutline the nature of this local economic enterprise.\n‘Consumers and companies alike are becoming more interested in making sustainability-focused choices.’\nMcKinsey and Company, Prioritizing sustainability in the consumer sector, 5 August 2021\nDiscuss this statement in relation to the local economic enterprise named in part (b)."
+  },
+  {
+   "id": "geo202323",
+   "year": 2023,
+   "number": "23",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Answer all parts of the question.\nExplain how biophysical interactions result in ONE ecosystem’s unique characteristics.\nDiscuss the effects that ONE management strategy has on ecosystem resilience."
+  },
+  {
+   "id": "geo202324",
+   "year": 2023,
+   "number": "24",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "Answer all parts of the question.\nWhy are most new mega cities located in the developing world?\nLiving in a mega city in the developing world creates a number of challenges.\nCompare how TWO of these mega cities experience the same challenge.\n‘Urban dynamics favour the wealthy.’\nWith reference to the quote, explain how urban dynamics have resulted in spatial patterns of advantage and disadvantage in ONE large city from the developed world."
+  },
+  {
+   "id": "geo202325",
+   "year": 2023,
+   "number": "25",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "The graph shows a global trend in technology advances. Explain how the trend can have a positive effect on ONE of: Ecosystems at risk; Urban places; People and economic activity."
+  },
+  {
+   "id": "geo202326",
+   "year": 2023,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Discuss the impacts of global economic activity.\nIn your answer, refer to a global economic activity you have studied. You may also refer to the global olive oil industry shown on page 1 of the Stimulus Booklet."
+  },
+  {
+   "id": "geo202327",
+   "year": 2023,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "Analyse the character of world cities.\nIn your answer, refer to world cities you have studied. You may also refer to the information on New York City shown on page 2 of the Stimulus Booklet."
+  },
+  {
+   "id": "geo202328",
+   "year": 2023,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "To what extent have humans had negative impacts on ecosystems?\nIn your answer, refer to ecosystems you have studied. You may also refer to the information on forests and land cover shown on page 4 of the Stimulus Booklet."
+  },
+  {
+   "id": "geo202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source A on page 1 of the Stimulus Booklet to answer Question 1.\nWhat type of photograph is Source A?\nSatellite\nGround level\nOblique aerial\nVertical aerial"
+  },
+  {
+   "id": "geo202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "An economic enterprise operating at a local scale is reviewing its ecological dimensions.\nWhich of the following should be included in this review?\nCosts\nWorkforce\nWaste management\nCompetitive advantage"
+  },
+  {
+   "id": "geo202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Which of the following factors LEAST influences world city status in 2024?\nDensity of factories\nCultural trend setting\nMajor sporting events\nBusiness headquarters"
+  },
+  {
+   "id": "geo202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source B on page 1 of the Stimulus Booklet to answer Questions 4–5.\nHow many outer regional hubs are in Victoria?\n2\n4\n6\n17"
+  },
+  {
+   "id": "geo202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source B on page 1 of the Stimulus Booklet to answer Questions 4–5.\nWhich pair of urban dynamics of change are most associated with the growth of regional university hubs?\nUrban renewal and urban village\nExurbanisation and spatial exclusion\nSuburbanisation and urban consolidation\nCounterurbanisation and decentralisation"
+  },
+  {
+   "id": "geo202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source C on page 1 of the Stimulus Booklet to answer Question 6.\nWhat was the percentage increase in the GDP contribution of RUN from 2015 to 2018?\n29%\n41%\n71%\n82%"
+  },
+  {
+   "id": "geo202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D on page 2 of the Stimulus Booklet to answer Questions 7–9.\nApproximately how long would it take to fly from Tokyo to Aogashima Island in a helicopter travelling at an average speed of 220 km/h?\n45 minutes\n1 hour and 20 minutes\n1 hour and 45 minutes\n2 hours and 20 minutes"
+  },
+  {
+   "id": "geo202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D on page 2 of the Stimulus Booklet to answer Questions 7–9.\nWhat is the aspect of the slope at the end of the walking track at GR 493899?\nNE\nNW\nSE\nSW"
+  },
+  {
+   "id": "geo202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D on page 2 of the Stimulus Booklet to answer Questions 7–9.\nWhich of the following is visible from the trig station in AR 4990?\nPoint E\nPoint F\nPoint G\nPoint H"
+  },
+  {
+   "id": "geo202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Sources D, E, F and G on pages 2–3 of the Stimulus Booklet to answer Question 10.\nWhich of the following economic enterprises is most likely to be found on Aogashima Island?\nUniversity\nCotton farm\nGuest house\nWholesale firm"
+  },
+  {
+   "id": "geo202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "A diagram of two ecosystems is shown.\nEcosystem 1 is one large continuous area. Ecosystem 2 is five small, separate patches. The key shows that the shaded area represents the area of each ecosystem.\nWhy is Ecosystem 2 more at risk?\nMore capacity for nutrient loss\nMore linkages within populations\nLess vulnerable to invasive species\nLess organism mobility for obtaining resources"
+  },
+  {
+   "id": "geo202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D on page 2 and Source F on page 3 of the Stimulus Booklet to answer Question 12.\nWhat is the probable cause of the gap in the road at GR 496899?\nFlood\nTsunami\nLandslide\nLava flow"
+  },
+  {
+   "id": "geo202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source H on page 3 of the Stimulus Booklet to answer Question 13.\nWhat is the approximate elevation at 32°26'30\" North, 139°49' East?\n–500 m\n–150 m\n200 m\n550 m"
+  },
+  {
+   "id": "geo202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source I on page 3 of the Stimulus Booklet to answer Questions 14–15.\nWhat weather event most likely occurred between Friday 24.11.23 and Saturday 25.11.23?\nCold front\nWarm front\nSnow storm\nTropical cyclone"
+  },
+  {
+   "id": "geo202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source I on page 3 of the Stimulus Booklet to answer Questions 14–15.\nWhat is the trend of wind speed and direction in the period 22–25 November?\nDecreasing; S / SE shifting to N / NW\nDecreasing; W / NW shifting to E / SE\nIncreasing; S / SE shifting to N / NW\nIncreasing; W / NW shifting to E / SE"
+  },
+  {
+   "id": "geo202416",
+   "year": 2024,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "A food chain for a typical unmodified ecosystem is shown.\nProducer → primary consumer → secondary consumer → tertiary consumer\nWhy is the total weight of secondary consumers far less than that of producers in an ecosystem?\nEnergy is lost in consumption.\nProducers remain in one location.\nSecondary consumers need to move fast.\nThere is less competition for secondary consumers."
+  },
+  {
+   "id": "geo202417",
+   "year": 2024,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source J on page 4 of the Stimulus Booklet to answer Question 17.\nHow is this proportional wedge graph likely to change for the year 2050?\nA decrease in average wedge length will be shown.\nThe number of African cities ranked 11–20 will increase.\nThe number of North American cities on the graph will decrease.\nA new colour to represent cities in the Oceania region will be needed."
+  },
+  {
+   "id": "geo202418",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D (excluding the inset) on page 2 and Source E, Source F and Source H on page 3 of the Stimulus Booklet to answer Question 18.\nWhat is the correct order of the sources from smallest to largest scale?\nD, E, F, H\nF, E, D, H\nH, D, E, F\nH, F, E, D"
+  },
+  {
+   "id": "geo202419",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D on page 2 of the Stimulus Booklet to answer Question 19.\nWhat is the ratio of bare ground to vegetation along the transect between point A and point D?\n1 : 2.2\n1 : 4.3\n1 : 5.3\n1 : 9.4"
+  },
+  {
+   "id": "geo202420",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "Refer to Source D on page 2 and Source E on page 3 of the Stimulus Booklet to answer Question 20.\nWhat is the grid reference in Source D of point Y in Source E?\nGR 497900\nGR 504894\nGR 511909\nGR 512901"
+  },
+  {
+   "id": "geo202421",
+   "year": 2024,
+   "number": "21",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Geographical tools",
+   "text": "The diagram shows a cross-section of Aogashima Island.\nThe cross-section has height above sea level in metres (0 to 300) on the vertical axis and points A, B, C and D along the horizontal axis. The profile is drawn from A to B and from C to D, with the section between B and C left incomplete.\nUsing Source D on page 2 of the Stimulus Booklet complete the cross-section.\nCalculate the vertical exaggeration of the cross-section."
+  },
+  {
+   "id": "geo202422",
+   "year": 2024,
+   "number": "22",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Refer to pages 2–3 of the Stimulus Booklet to answer parts (a)–(c).\nIdentify and locate an example of a human feature on Aogashima Island in Source D.\nHuman feature:\nGrid reference:\nPropose a geographical inquiry question that a geography student could investigate on a field trip to Aogashima Island.\nUsing Source D and Source G, give TWO reasons why it is important to protect ecosystems on Aogashima Island.\nStages of a biogeographical process on a volcanic island are shown.\nStage 1 shows an erupting volcano with bare lava. Stage 2 shows the volcano after the lava has cooled, with a bare surface and no vegetation. Stage 3 shows small ferns and grasses establishing, with birds present. Stage 4 shows dense vegetation and several bird species.\nExplain the biogeographical process shown."
+  },
+  {
+   "id": "geo202423",
+   "year": 2024,
+   "number": "23",
+   "marks": 13,
+   "type": "short_answer",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "Answer all parts of the question.\nDescribe internal linkages between people in ONE economic enterprise operating at a local scale.\nEconomic enterprise:\nAnswer parts (b)–(c) with reference to an economic activity you have studied.\nEconomic activity:\nHow has ONE market preference changed the nature of the economic activity?\nDiscuss the social impacts of the economic activity."
+  },
+  {
+   "id": "geo202424",
+   "year": 2024,
+   "number": "24",
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "Answer all parts of the question.\nDescribe ONE way that the operation of global networks can influence the role of world cities.\nHow has ONE urban dynamic of change influenced the location of residential land in a large city of the developed world?\nAn extract from a 2016 Australian Parliamentary report is shown.\n“Regional capitals serve as hubs for larger regional areas. They provide their own communities and those in smaller surrounding communities access to education, jobs . . . opportunities for cultural participation along with a host of other amenities that are essential to support strong and vibrant communities . . .”\nUsing Source C on page 1 of the Stimulus Booklet and the extract, account for the changing role of regional centres."
+  },
+  {
+   "id": "geo202425",
+   "year": 2024,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Global sustainability",
+   "text": "Examine how locational, environmental and global changes can affect ONE local economic enterprise you have studied."
+  },
+  {
+   "id": "geo202426",
+   "year": 2024,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Ecosystems and global biodiversity",
+   "text": "Compare different strategies used to manage ecosystems in terms of their ecological sustainability."
+  },
+  {
+   "id": "geo202427",
+   "year": 2024,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Rural and urban places",
+   "text": "Explain how the character of mega cities in the developing world influences responses to the challenges of living in them."
+  },
+  {
+   "id": "geo202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The value of ecosystems and biodiversity",
+   "text": "Which term refers to ecosystems generating useful materials and absorbing waste for humans?\nBiocapacity\nContinentality\nGeomorphic process\nEcological disturbance"
+  },
+  {
+   "id": "geo202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Identify and describe spatial patterns and associations, interactions and change using a range of visual representations",
+   "text": "Which row of the table correctly describes the density of housing and urban vegetation evident in Source A?\nLow / Bare\nMedium / Bare\nLow / Moderate\nMedium / Moderate"
+  },
+  {
+   "id": "geo202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Construct, interpret and analyse tables and graphs",
+   "text": "Which of the following best describes each winter month in the climate graph?\nBetween 0 C and 3 C / Between 15 and 35 mm\nBetween 0 C and 3 C / Between 55 and 75 mm\nBetween 5 C and 8 C / Between 15 and 35 mm\nBetween 5 C and 8 C / Between 55 and 75 mm"
+  },
+  {
+   "id": "geo202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Global sustainability / Sustainability in the contemporary world / levels of action at a range of scales, from the United Nations Sustainable Development Goals to practices in local communities, including actions by governments, intergovernmental organisations (IGOs), non-government organisations (NGOs), corporations, community organisations and individuals",
+   "text": "To which of the following targets linked to the United Nations Sustainable Development Goals is this city contributing?\nDecrease the proportion of youth not in employment or education\nEnd poaching and trafficking of protected species of flora and fauna\nReduce environmental impacts by improving air quality and waste management\nEnsure the conservation of marine ecosystems, including their biodiversity and recreational uses"
+  },
+  {
+   "id": "geo202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / relationships between natural systems",
+   "text": "A forest food web is shown. Lily of the valley, Norway spruce, White pine, Juniper; Hinterwald cattle, Pheasant; Hedgehog, Fox, Boar, Wolf. The pheasant population in an area of the forest declines significantly. What is a likely flow-on effect?\nBoars feed less on hedgehogs.\nFoxes feed more on Hinterwald cattle.\nLess white pine is able to grow into full size trees.\nThere are more foxes and boars for wolves to hunt."
+  },
+  {
+   "id": "geo202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Identify and describe spatial patterns and associations, interactions and change using a range of visual representations",
+   "text": "What types of image are shown in Source D and Source E?\nOblique aerial photograph / Ground level photograph\nOblique aerial photograph / Oblique aerial photograph\nVertical aerial photograph / Oblique aerial photograph\nVertical aerial photograph / Ground level photograph"
+  },
+  {
+   "id": "geo202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Calculate and interpret the vertical exaggeration of a cross-section",
+   "text": "A geographer creates a cross-section from a topographic map. Why would vertical exaggeration be used?\nTo make the map look more accurate\nTo show the exact shape of landforms\nTo adjust the horizontal scale of the map\nTo make elevation changes more obvious"
+  },
+  {
+   "id": "geo202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "In which direction would the stream at point R (AR 2630) flow?\nNE\nNW\nSE\nSW"
+  },
+  {
+   "id": "geo202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Use scale to calculate distance and area",
+   "text": "A tram departs the tram stop at GR 275343 heading south. Approximately how far does it travel to get to the end of the line?\n2.6 km\n2.9 km\n3.3 km\n3.6 km"
+  },
+  {
+   "id": "geo202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Calculate the local relief of an area",
+   "text": "What is the local relief between point S (AR 2631) and point T (AR 2732)?\n50 m\n150 m\n210 m\n360 m"
+  },
+  {
+   "id": "geo202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Calculate the gradient of a slope as a ratio | Year 12 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "What is the aspect and gradient between point P and point Q (AR 2531)?\nWest / 1:4\nWest / 1:8\nEast / 1:4\nEast / 1:8"
+  },
+  {
+   "id": "geo202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Determine aspect, altitude, river flow, features within quadrants, directions, bearings and sight lines between 2 points",
+   "text": "What is the approximate bearing from the body of water in the south-west quadrant of Source D to the closest tram stop?\n50 degrees\n130 degrees\n240 degrees\n320 degrees"
+  },
+  {
+   "id": "geo202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Maps / Recognise the key features of changing pressure patterns on weather maps",
+   "text": "A weather map is shown with pressure systems. Which row of the table correctly describes the weather conditions shown?\nClockwise / SSW\nAnti-clockwise / SSW\nClockwise / NNE\nAnti-clockwise / NNE"
+  },
+  {
+   "id": "geo202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Graphs and statistics / Calculate absolute and proportional changes",
+   "text": "What is the difference in public transport use between the most populated city and the least populated city shown?\n6%\n13%\n55%\n59%"
+  },
+  {
+   "id": "geo202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Estimate the time of day a photograph was taken",
+   "text": "The hikers are walking in an easterly direction. At what time of day was the photograph taken?\n7 am\n10 am\n2 pm\n5 pm"
+  },
+  {
+   "id": "geo202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Geographical tools / Visual representations / Construct a précis map from an aerial photograph or satellite image",
+   "text": "Refer to Source F on page 3 of the Stimulus Booklet to answer parts (a) and (b).\nComplete the precis map using Source F.\nDescribe how a precis map of the Freiburg area could be useful for geographers."
+  },
+  {
+   "id": "geo202517",
+   "year": 2025,
+   "number": "17",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Geographical tools / Fieldwork / Evaluate a fieldwork activity | Year 12 / Geographical tools / Fieldwork / Identify, collect and record geographical data and information",
+   "text": "Refer to the information below and Source F on page 3 of the Stimulus Booklet to answer parts (a) and (b). Students are investigating the interaction between residential areas and the Black Forest with a focus on the boundary between them. Two proposed sites are Site 1 (AR 2631) and Site 2 (AR 2632).\nOutline ONE issue with using Site 1 as a fieldwork location.\nJustify ONE fieldwork method for collecting geographical data at Site 2."
+  },
+  {
+   "id": "geo202518",
+   "year": 2025,
+   "number": "18",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The value of ecosystems and biodiversity | Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / current and future trends, and reasons for the trends",
+   "text": "Answer parts (a) and (b).\nOutline ONE value of the Black Forest ecosystem that can be seen in Source E on page 2 or Source F on page 3 of the Stimulus Booklet.\nExplain ONE trend in global biodiversity."
+  },
+  {
+   "id": "geo202519",
+   "year": 2025,
+   "number": "19",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a rural and an urban place / Geographical processes, both physical and human, that have shaped the identity of the place | Year 12 / Rural and urban places / Investigation of a rural and an urban place / Links to other places",
+   "text": "Answer parts (a) and (b).\nAccount for the identity of ONE place within a larger urban settlement. Place: ________________________\nAnalyse how ONE place in a rural setting is linked to other places. Place: ________________________"
+  },
+  {
+   "id": "geo202520",
+   "year": 2025,
+   "number": "20",
+   "marks": 13,
+   "type": "short_answer",
+   "current_path": "Year 12 / Global sustainability / Sustainability in the contemporary world / the role of global forums, agreements and cooperation | Year 12 / Global sustainability / Investigation of a global economic activity / Influences on the global economic activity | Year 12 / Global sustainability / Investigation of a global economic activity / examine a range of strategies for sustainability",
+   "text": "Answer parts (a)-(c) with reference to a global economic activity you have studied. Activity: ________________________\nDescribe the role of global forums in achieving global sustainability.\nDiscuss the effect of ONE influence on the global economic activity identified.\nCompare TWO strategies for achieving sustainability in the global economic activity identified."
+  },
+  {
+   "id": "geo202521",
+   "year": 2025,
+   "number": "21",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Global sustainability / Sustainability in the contemporary world / Sustainability and sustainable development, including pillars of sustainability – social, economic, environmental and cultural | Year 12 / Rural and urban places / Rural and urban settlement / Strategies for the sustainable management of rural and urban places, including at least one successful initiative or project",
+   "text": "The diagram shows the four pillars of sustainability (Economic, Environmental, Cultural, Social). With reference to TWO pillars of sustainability, evaluate the success of ONE initiative or project used in the management of rural and/or urban places."
+  },
+  {
+   "id": "geo202522",
+   "year": 2025,
+   "number": "22",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Rural and urban places / Investigation of a large city outside Australia / The character and spatial dimensions of the large city | Year 12 / Rural and urban places / Investigation of a large city outside Australia / Challenges of living in the large city | Year 12 / Rural and urban places / Investigation of a large city outside Australia / Responses to these challenges and opportunities for enhancing sustainability, including strategies to improve people’s quality of life and reduce spatial inequality",
+   "text": "Answer parts (a)-(c) with reference to ONE large city of 5 million people or more, outside Australia, that you have studied.\nOutline the character of this city.\nDescribe TWO challenges of living in this city.\nEvaluate the effectiveness of TWO strategies to improve people's quality of life in this city."
+  },
+  {
+   "id": "geo202523",
+   "year": 2025,
+   "number": "23",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Ecosystems and global biodiversity / Ecosystems and biodiversity / The nature and complexity of ecosystem functioning and global biodiversity",
+   "text": "Explain the nature and complexity of ecosystem functioning."
+  }
+ ]
+}

@@ -1,0 +1,765 @@
+{
+ "course_id": "agriculture",
+ "course_name": "Agriculture",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe how Aboriginal and Torres Strait Islander Peoples have practised sustainable agricultural production for millennia"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Identify key food and fibre commodities grown in Australia for domestic and export markets"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe Australia’s agricultural sectors: food, fibre, forestry, and fisheries"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain the economic, social, ethical and environmental issues influencing sustainable agricultural production in Australia"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain the influence of climate, soil type and topography on the location of agricultural enterprises within local regions and across NSW"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Compare key production data for an agricultural enterprise over the past 5 years, including total output and export value"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain the purpose of sample size, randomisation, replication, variables and experimental controls in agricultural research"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe inputs, processes and outputs as key elements of agricultural production systems"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain traditional ecological management techniques used by Aboriginal and Torres Strait Islander Peoples to maintain biodiversity and resource sustainability"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain how interconnected subsystems of soils, microbes, plants, animals and markets are required for food and fibre production and consumption"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Compare the features of intensive and extensive agricultural production methods"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Use data to compare land use capability"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Identify sources of water for use in agricultural production, including underground water, riparian water, municipal water supplies, and captured and stored rain run-off"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain water licensing requirements for irrigation in NSW"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe how Aboriginal and Torres Strait Islander Peoples' Cultural and ecological management of water has influenced water conservation and sustainable water management practices"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Analyse strategies for the sustainable management of land around waterways to protect riparian zones and prevent water pollution"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Calculate the difference between total rainfall and effective rainfall"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Outline the influence of a farm’s natural capital including air, water, soil, native plants and animals"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Outline the physical properties of soil, including parent material, horizons, colour, texture, structure, organic matter, water-holding capacity, porosity and bulk density"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Describe the chemical properties of soil, including pH, ion exchange capacity, electrical conductivity and soil carbon content"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Explain how farming practices contribute to productive soil, including the retention and addition of organic matter"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Explain the role of humus in improving soil structure, fertility and moisture retention"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Conduct a practical investigation to determine soil types using a soil texture triangle and clay ribbon test"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Conduct a practical investigation to determine soil structure, including ped shape and size, slaking and dispersion"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Evaluate the role of natural capital in the provision of biodiversity, shelter, wildlife corridors, and habitats for pollinators and pests"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Outline the influences on Australian climate and weather"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Identify greenhouse gas (GHG) sources and GHG sinks associated with agricultural practices"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Describe how Aboriginal and Torres Strait Islander Peoples observe and interpret climate and seasonal patterns through environmental indicators, animal behaviour, plant cycles and celestial movements"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Explain how climate influences plant and animal growth and production, including the effects of light, temperature, and available moisture, oxygen and carbon dioxide"
+  },
+  {
+   "code": "PRE-M1-T2-D13",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Use data to analyse the difference between seasonal variability and climate change"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe the structures and functions of xylem and phloem in plants"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe how osmotic pressure and transpiration control the movement of water and dissolved minerals through the xylem and phloem"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe how Aboriginal and Torres Strait Islander Peoples use and manage plant parts for medicinal and food consumption"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Plant production / Plant growth and production / Conduct a practical investigation to determine how the structures of leaves, stems and roots support their functions in gas exchange, and water and nutrient transport"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Plant production / Plant growth and production / Identify the abiotic factors that affect the growth of plants, including light, atmospheric gases, soil type, the available moisture and nutrients, temperature and wind"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe the purposes of genetic selection in plants, including disease resistance, drought resilience, increased yield and enhanced quality"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Plant production / Plant growth and production / Compare the phases of growth in a monocotyledon and a dicotyledon used in commercial agricultural production"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain the use of a technology designed to monitor plant growth"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Plant production / Plant growth and production / Use the summary equation to describe the process of photosynthesis"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Plant production / Plant growth and production / Use the summary equation to describe the process of cellular respiration"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Plant production / Plant growth and production / Evaluate the impact of genetics on plant production in an agricultural enterprise"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain how Aboriginal and Torres Strait Islander Peoples influence plant genetics through fire management, and seed selection and dispersal"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Plant production / Plant growth and production / Conduct a practical investigation to demonstrate how different treatments affect plant growth"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / Plant production / Plant growth and production / Identify a pest and a disease found in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D15",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe the symbiotic relationships between plant roots and soil microbes, including bacteria and fungi"
+  },
+  {
+   "code": "PRE-M2-T1-D16",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain the role of soil microbes and invertebrates in breaking down soil organic matter"
+  },
+  {
+   "code": "PRE-M2-T1-D17",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain the role of biosecurity in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D18",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain on-farm practices used to manage biosecurity risks in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D19",
+   "path": "Year 11 / Plant production / Plant growth and production / Conduct a practical investigation to examine legume root nodules caused by Rhizobium bacteria"
+  },
+  {
+   "code": "PRE-M2-T1-D20",
+   "path": "Year 11 / Plant production / Plant growth and production / Identify locally significant weeds in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D21",
+   "path": "Year 11 / Plant production / Plant growth and production / Analyse the impact of weed management on plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D22",
+   "path": "Year 11 / Plant production / Plant growth and production / Analyse management and treatment strategies to control a harmful organism in commercial plant production using the disease triangle"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the structure and function of parts in a ruminant digestive system"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the structure and function of parts in a monogastric digestive system"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the function of parts in the reproductive system of a mammalian production animal"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the function of parts in the reproductive system of an avian production animal"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the roles of testosterone, oestrogen and progesterone in animal reproduction"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Animal production / Animal growth and production / Analyse the effect of photoperiod changes on animal reproduction"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the phases of growth and development of a commercial production animal from conception to maturity"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe how Aboriginal and Torres Strait Islander Peoples use and manage animals, including as totems and through Cultural burns"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe patterns of inheritance, including dominant, recessive, codominance and incomplete dominance, in the traits of commercial production animals"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain genotype and phenotype"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain how the proportions of bone, muscle and fat change at various stages of development in a production animal"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the interaction of genotype, environment and nutrition on the growth and development of production animals"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the use of a technology designed to monitor growth in production animals"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Animal production / Animal growth and production / Evaluate the impact of genetics on animal production in an agricultural enterprise"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Animal production / Animal growth and production / Identify a pest and a disease found in animal production"
+  },
+  {
+   "code": "PRE-M3-T1-D16",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the symbiotic relationship between ruminant animals and rumen microbes"
+  },
+  {
+   "code": "PRE-M3-T1-D17",
+   "path": "Year 11 / Animal production / Animal growth and production / Use the disease triangle to analyse management and treatment strategies for controlling a harmful organism in commercial animal production"
+  },
+  {
+   "code": "PRE-M3-T1-D18",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the impact of toxic weeds on animal production"
+  },
+  {
+   "code": "PRE-M3-T1-D19",
+   "path": "Year 11 / Animal production / Animal growth and production / Analyse on-farm practices used to manage biosecurity risks in animal production"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Animal production / Animal management / Explain legislation and regulations for ethical animal care and management practices, including providing water, feed, shelter, adequate space, socialisation and a safe environment"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Animal production / Animal management / Describe the physical and behavioural characteristics of production animals that can assist with safe management, including herding instinct, and maternal and territorial behaviours"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Animal production / Animal management / Explain how a technology has improved animal welfare outcomes"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Identify the micronutrients essential for plant growth"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Identify available and unavailable forms of essential macronutrients for plants in the soil and atmosphere"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe the effect of soil pH on the availability of aluminium (Al), nitrogen (N), calcium (Ca), potassium (K), and phosphorous (P)"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain how Aboriginal and Torres Strait Islander Peoples manage soil nutrient status through firestick farming and cool burning"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain the processes of self-pollination, cross-pollination and artificial pollination, and their impacts on agricultural production"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe quality characteristics of a plant product for human use"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain the process of flower fertilisation and impact on seed production and fruit set"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Compare the features of native and introduced pastures used in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Assess strategies for sustainable pasture management to support animal production"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Evaluate influences on crop establishment, including seed selection, seed spacing, planting depth, soil moisture content, soil temperature, time of year, seasonal conditions, presence of pests and previous crop waste material"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Conduct a practical investigation to measure feed on offer"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe techniques to manipulate reproduction efficiency in animals"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe quality characteristics of an animal product for human use"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain how the nutritional needs of a production animal change over its life cycle"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain a method of genetic selection to improve productivity"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain how estimated breeding values (EBVs) inform management decisions about desirable traits in animals used for commercial food or fibre production"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Justify a selection decision for desirable traits using EBV data of 2 or more animals"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Evaluate management strategies to support animal welfare during periods of drought, including early culling, management of drinking water supply and confinement feeding"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe constraints on plant and animal production, including genotype, climate, water availability, pests and diseases"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe objective measurement techniques used to evaluate the existing quality criteria of a food product and a fibre product"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe the physical changes of an agricultural plant and animal in response to a pest or disease"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain agricultural management practices that influence soil health"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Analyse an integrated pest and disease management (IPDM) plan for a pest or disease in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Evaluate the use of a seasonal outlook technology"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Evaluate the impact of management decisions on the quality and yield of an agricultural product"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe the carbon cycle in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain the role of carbon sequestration and emissions reduction in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe the nitrogen cycle in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe waste management strategies in plant and animal production"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Analyse the influences of environmental factors that determine the available growing season, including frost-free days, maximum and minimum daily temperatures, seasonal photoperiod, and annual and monthly rainfall distribution"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Evaluate ways to mitigate the constraints of climatic conditions, including protected cropping and intensive animal production"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Assess the use of a technology designed to monitor water use in irrigated agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain economic sustainability in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Calculate the gross margin budget for an unprocessed food product"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Calculate the gross margin budget for an unprocessed fibre product"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain supplementary sources of income, including agritourism, water trading and land leasing for energy projects"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain precision agriculture techniques"
+  },
+  {
+   "code": "HSC-M1-T2-D20",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Analyse the impact of a farm’s natural capital on cost savings, income generation, risk management and access to government incentives"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Identify the contribution of agricultural production to Australia’s export earnings"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Identify major agricultural export competitors for beef, grain and horticultural produce"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain Australia’s counter-seasonal agricultural production timelines"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the purposes of Australia’s traceability system, including to establish ownership, and for disease mitigation and food safety"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Use captured traceability data to analyse feedback provided to Australian producers"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Analyse the advantages and disadvantages of constraints on the development and use of genetically modified organisms (GMOs) in Australian agricultural production"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Analyse how consumer preferences influence the development of market specifications for agricultural products"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Identify risks to Australian agriculture, including biosecurity, energy and fertiliser supply and climate change"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Describe the influence of supply and demand on commercial agricultural enterprises"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the market specification for a plant product and an animal product for an export market"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the impact of product perishability, seasonal climatic conditions and production timeframes on supply and demand"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Describe methods to reduce the methane (CH4), carbon dioxide (CO2) and nitrous oxide (N2O) emissions of Australian agricultural enterprises"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Describe the role of research on emissions mitigation for Australian agricultural enterprises"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the impact of policies on agricultural enterprises and production"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the impact of trade tariffs on agricultural production"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Compare domestic and export market options for a food product and a fibre product"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain Australian traceability requirements for cold chain management"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Evaluate the impact of severe weather events on Australian agricultural exports"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Describe the role of government agencies and research organisations in research and innovation for food and fibre producers"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Explain how biofuels reduce use of fossil fuels on farm"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Explain the role of carbon trading and biodiversity trading for Australian farmers"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Analyse the role of agricultural technology (Agtech) innovation and adoption in Australian agriculture"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Evaluate the role of technology in risk mitigation in agricultural production"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Evaluate the impact of research on the efficiency of agricultural production"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Plan, conduct and report on a practical investigation to demonstrate the effect of a crop establishment factor on plant growth"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Identify potential hazards and develop a risk mitigation plan"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Assess ethical issues in a practical investigation"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Justify the use of sample size, randomisation, replication, variables and experimental controls in a practical investigation"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Calculate the mean and standard deviation of firsthand data"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Use mean and standard deviation values to determine the validity and reliability of data"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Identify patterns and trends in the data"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Select and use a range of media to communicate findings"
+  }
+ ],
+ "questions": [
+  {
+   "id": "2025hsc11",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is NOT an example of a government influence on agricultural production?\nWHS code of practice\nRegulation of water usage\nLegislation on the use of pesticides\nDecisions on management practices"
+  },
+  {
+   "id": "2025hsc12",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Plant cuttings are often dipped into a powder containing a plant hormone to encourage them to grow roots. What is the plant hormone used in this powder?\nAuxin\nCytokinin\nEthylene\nGibberellin"
+  },
+  {
+   "id": "2025hsc13",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "In which situation are farmers likely to use inorganic fertiliser in preference to organic fertiliser?\nNutrient runoff into nearby waterways needs to be reduced.\nSoil structure is poor and needs to be improved while balancing soil nutrients.\nMicrobial activity in the soil has declined and needs to be corrected with fertilisers.\nThere is a particular soil deficiency, and an immediate application of a nutrient with direct uptake by the plant is required."
+  },
+  {
+   "id": "2025hsc14",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What does net assimilation rate (NAR) measure changes in?\nPhotosynthesis\nNutrient uptake\nDry matter yield\nCellular respiration"
+  },
+  {
+   "id": "2025hsc15",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "When vegetable production is in a glasshouse, the concentration of carbon dioxide (CO )\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2025hsc16",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagrams depict the vegetative and reproductive responses of plants to different planting densities. Vegetative yield / unit area Dry matter (g) Plant density Low Normal High Low Normal High Reproductive yield / unit area Grain (g) Low Normal High Plant density Low Normal High With reference to the diagrams provided, which row of the table is correct?\nOption A\nOption B\nOption C\nPlant density Vegetative yield dry matter (g) / unit area Reproductive yield grain (g) / unit area High Decreases, due to high plant stress No effect, individual plants produce less grain High No effect, individual plants are smaller Decreases, due to high plant stress Low High, as there is no competition from other plants Lowest overall, as there are few plants to produce grain Low Lowest overall, as there are few plants at maximum size Highest, as the few plants have no competition"
+  },
+  {
+   "id": "2025hsc17",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The graph depicts the changes in market share of different egg production methods over time. The table gives the ranking of the egg production systems. Egg production system – changes in % market shares 80 70 60 50 40 30\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2025hsc18",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram depicts the fate of energy in animal digestion. Faeces X W Urine, methane Y Heat increment Z Maintenance Production Which row in the table correctly indicates the flow of energy in animal digestion?\nOption A\nOption B\nOption C\nW X Y Gross Metabolisable Net Digestible Digestible Gross Metabolisable Net Digestible Net Gross Metabolisable Gross Digestible Metabolisable Net Z"
+  },
+  {
+   "id": "2025hsc19",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram illustrates the nitrogen cycle. Decomposition Atmospheric nitrogen Nitrogen fixing bacteria Nitrifying bacteria Nitrifying bacteria Denitrification X Y Z Atmosphere Soil Which row of the table contains the nitrogen compounds that correspond with the letters X, Y and Z in the diagram?\nOption A\nOption B\nOption C\nX Y − Nitrite NO2 − Nitrate NO3 + Ammonium NH4 + Ammonium NH4 − Nitrite NO2 − Nitrate NO3 − Nitrite NO2 + Ammonium NH4 − Nitrate NO3 + Ammonium NH4 − Nitrate NO3 − Nitrite NO2 Z"
+  },
+  {
+   "id": "2025hsc20",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A farmer cannot easily change the quantity of cherries they supply to market. Cherries can be very expensive at certain times and much cheaper at other times. Consumers tend not to buy cherries when they are expensive. Which graph best represents the supply and demand curves for cherries? Supply Supply Supply Supply Price Quantity Price Quantity Price Quantity Price Quantity Demand Demand Demand Demand\nOption A\nOption B\nOption C\nBLANK PAGE © 2025 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2025 HIGHER SCHOOL CERTIFICATE EXAMINATION Agriculture Section I Part B Answer Booklet 60 marks Attempt Questions 21–27 Allow about 1 hour and 45 minutes for this part Instructions • Write your Centre Number and Student Number at the top of this page • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response • Show all relevant working in questions involving calculations • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering Please turn over Centre Number Student Number 4393310351 2001 15010 Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2381310356 BLANK PAGE Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 1159310358"
+  },
+  {
+   "id": "2025hsc21",
+   "year": 2025,
+   "number": "21",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a) and (b) with reference to a soil degradation problem you have studied. Soil degradation problem: (a) Identify TWO farming practices that have led to this problem. 2 (b) Explain how a recommended procedure assists in managing this problem. 4 4873310354"
+  },
+  {
+   "id": "2025hsc22",
+   "year": 2025,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer part (a) with reference to an agricultural product you have studied. (a) Agricultural product: ... (i) Identify TWO market specifications for this product. 2 (ii) Describe information a producer could receive that gives feedback on market specifications for this product. 3 Question 22 continues on page 17 7471310351 Question 22 (continued) (b) Discuss ONE management strategy a farmer may implement to meet ONE market specification. 5 End of Question 22 9964310350"
+  },
+  {
+   "id": "2025hsc23",
+   "year": 2025,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(c) with reference to an agricultural product you have studied. Agricultural product: (a) What is a benefit of advertising this product? 2 (b) What is value adding? In your answer, provide an example for this product. 3 Question 23 continues on page 19 5638310354 Question 23 (continued) (c) Assess the effectiveness of a current advertising or promotional campaign for this product. 5 End of Question 23 9657310359"
+  },
+  {
+   "id": "2025hsc24",
+   "year": 2025,
+   "number": "24",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe how plant breeding has improved crop production. Use specific examples in your answer. 3 (b) Describe the genetic basis of both hybridisation and genetic engineering in plants. 4 6157310351"
+  },
+  {
+   "id": "2025hsc25",
+   "year": 2025,
+   "number": "25",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain the impact of TWO technologies on agricultural production and/or marketing. 6 1086310357"
+  },
+  {
+   "id": "2025hsc26",
+   "year": 2025,
+   "number": "26",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Outline ONE feature of monogastric physiology. 2 (b) Explain the relationship between rumen microbes and ruminant digestion. 4 Question 26 continues on page 23 6784310357 Question 26 (continued) (c) Explain how the major elements of a ration meet the nutritional needs of a specific animal during a particular stage of production. Include examples in your answer. 6 Animal: Stage of production: End of Question 26 7927310357"
+  },
+  {
+   "id": "2025hsc27",
+   "year": 2025,
+   "number": "27",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "A student wants to investigate the effect of applying different rates of a new commercial fertiliser on the growth of lettuce. (a) Design a pot trial which follows the principles of experimental design, that the student could use for this investigation. Diagrams may be included in your answer. 6 Space for optional diagram: Question 27 continues on page 25 9403310358 Question 27 (continued) (b) Explain why a test of significance should be performed on the data gathered from this experiment. 3 End of Question 27 Section _____ extra writing space If you use this space, clearly indicate which question you are answering. Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 8246310352 Section _____ extra writing space If you use this space, clearly indicate which question you are answering. Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 9248310355 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. © 2025 NSW Education Standards Authority 8455310354 2025 HIGHER SCHOOL CERTIFICATE EXAMINATION 2002 Agriculture Section II 20 marks Attempt ONE question from Questions 28–30 Allow about 45 minutes for this section Answer the question in the Section II Writing Booklet. Extra writing booklets are available. Your answers will be assessed on how well you: ● demonstrate knowledge and understanding relevant to the question ● communicate ideas and information using relevant examples ● present a logical and cohesive response Please turn over"
+  },
+  {
+   "id": "2025hsc28",
+   "year": 2025,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Agri-food, Fibre and Fuel Technologies (20 marks) (a) In your study of this elective, a research study of the development and/or implementation of an agricultural biotechnology was analysed. (i) Describe the results of the research study, with reference to its stated aim. 4 (ii) Explain the conclusions or recommendations of the research study, with reference to the results. 4 (b) Discuss the conflict between the need to increase global food production and the ethical concerns associated with using genetically-modified crops. 12 OR"
+  },
+  {
+   "id": "2025hsc29",
+   "year": 2025,
+   "number": "29",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Climate Challenge (20 marks) (a) In your study of this elective, a research study of climate variability or management strategies related to climate variability was analysed. (i) Describe the results of the research study, with reference to its stated aim. 4 (ii) Explain the conclusions or recommendations of the research study, with reference to the results. 4 (b) Explain how nitrogen fertiliser and ruminant production can contribute to greenhouse gas production. 12 OR"
+  },
+  {
+   "id": "2025hsc30",
+   "year": 2025,
+   "number": "30",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Farming for the 21st Century (20 marks) (a) In your study of this elective, a research study of the development and/or implementation of a recent agricultural technology was analysed. (i) Describe the results of the research study, with reference to its stated aim. 4 (ii) Explain the conclusions or recommendations of the research study, with reference to the results. 4 (b) Discuss ONE recent technological development in agriculture in terms of its impact on managerial and economic factors. 12 End of paper © 2025 NSW Education Standards Authority"
+  }
+ ]
+}

@@ -1,0 +1,802 @@
+{
+  "qhsc2001_01": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Weight from W=mg at Earth surface"
+  },
+  "qhsc2001_06": {
+    "code": "HSC-M4-T3-D2",
+    "confidence": "high",
+    "why": "Photon energy from wavelength"
+  },
+  "qhsc2001_07": {
+    "code": "PRE-M2-T2-D4",
+    "confidence": "medium",
+    "why": "Uniform acceleration from projectile max height"
+  },
+  "qhsc2001_11": {
+    "code": "HSC-M3-T4-D3",
+    "confidence": "high",
+    "why": "Transformer secondary voltage from turns ratio"
+  },
+  "qhsc2001_16": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Muon lifetime time dilation calculation"
+  },
+  "qhsc2001_25": {
+    "code": "HSC-M4-T3-D14",
+    "confidence": "medium",
+    "why": "Photoelectric Ek-f data and reliability"
+  },
+  "qhsc2002_03": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Weight from W=mg on Mercury"
+  },
+  "qhsc2002_05": {
+    "code": "HSC-M2-T3-D9",
+    "confidence": "high",
+    "why": "Orbital period comparison, same star"
+  },
+  "qhsc2002_06": {
+    "code": "PRE-M4-T2-D12",
+    "confidence": "medium",
+    "why": "Step-up transformer cuts transmission line heating"
+  },
+  "qhsc2002_07": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "Force on conductor versus current, find B"
+  },
+  "qhsc2002_10": {
+    "code": "HSC-M3-T4-D13",
+    "confidence": "high",
+    "why": "AC generator emf versus position curve"
+  },
+  "qhsc2002_15": {
+    "code": "HSC-M4-T3-D14",
+    "confidence": "medium",
+    "why": "Ek versus f gradient gives Planck constant"
+  },
+  "qhsc2002_19": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "medium",
+    "why": "Light speed postulate and length contraction"
+  },
+  "qhsc2002_21": {
+    "code": "PRE-M2-T2-D4",
+    "confidence": "medium",
+    "why": "Constant acceleration over cannon length"
+  },
+  "qhsc2002_25": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Electron trajectory in crossed fields"
+  },
+  "qhsc2002_27": {
+    "code": null,
+    "confidence": "high",
+    "why": "Superconductor applications not in dots"
+  },
+  "qhsc2003_01": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Weight ratio gives g on Moon"
+  },
+  "qhsc2003_03": {
+    "code": "HSC-M2-T3-D6",
+    "confidence": "high",
+    "why": "Orbital speed from gravitational force"
+  },
+  "qhsc2003_04": {
+    "code": "HSC-M2-T3-D9",
+    "confidence": "high",
+    "why": "Orbital periods around same star"
+  },
+  "qhsc2003_05": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Time dilation at 0.8c"
+  },
+  "qhsc2003_08": {
+    "code": "HSC-M3-T4-D3",
+    "confidence": "high",
+    "why": "Transformer turns ratio"
+  },
+  "qhsc2003_09": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "F=BIl sin theta on wire"
+  },
+  "qhsc2003_11": {
+    "code": null,
+    "confidence": "high",
+    "why": "Bragg X-ray crystal work not in dots"
+  },
+  "qhsc2003_15": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Undeflected ion in crossed E and B fields"
+  },
+  "qhsc2003_18": {
+    "code": null,
+    "confidence": "high",
+    "why": "Aether and Michelson-Morley not in dots"
+  },
+  "qhsc2003_19": {
+    "code": "PRE-M4-T3-D3",
+    "confidence": "medium",
+    "why": "Force between parallel wires via magnetic field"
+  },
+  "qhsc2003_20": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Induction in solenoid, Lenz effect"
+  },
+  "qhsc2004_02": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "high",
+    "why": "g=GM/r2 for planets of different mass"
+  },
+  "qhsc2004_03": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "high",
+    "why": "Inverse-square gravitational force at r/2"
+  },
+  "qhsc2004_05": {
+    "code": "HSC-M4-T4-D2",
+    "confidence": "high",
+    "why": "Second postulate: light speed is c"
+  },
+  "qhsc2004_08": {
+    "code": "HSC-M3-T4-D3",
+    "confidence": "high",
+    "why": "Transformer turns for 3V to 12V"
+  },
+  "qhsc2004_09": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "Maximum torque on motor coil"
+  },
+  "qhsc2004_11": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "medium",
+    "why": "Eddy-current braking and energy conservation"
+  },
+  "qhsc2004_14": {
+    "code": "HSC-M4-T3-D15",
+    "confidence": "high",
+    "why": "Maximum wavelength from work function"
+  },
+  "qhsc2004_15": {
+    "code": "HSC-M4-T3-D9",
+    "confidence": "high",
+    "why": "Planck quantisation of black-body energy"
+  },
+  "qhsc2004_16": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "Projectile range at 30 degrees"
+  },
+  "qhsc2004_17": {
+    "code": "HSC-M2-T3-D10",
+    "confidence": "medium",
+    "why": "Moon orbit mass, speed and period"
+  },
+  "qhsc2004_23": {
+    "code": null,
+    "confidence": "high",
+    "why": "Thermionic and superconductor content not in dots"
+  },
+  "qhsc2004_25": {
+    "code": "HSC-M4-T3-D17",
+    "confidence": "high",
+    "why": "Photoelectric effect in solar cell"
+  },
+  "qhsc2004_26": {
+    "code": "PRE-M4-T3-D3",
+    "confidence": "low",
+    "why": "Parallel-wire force from magnetic field"
+  },
+  "qhsc2004_27": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "medium",
+    "why": "Hang-time projectile time of flight"
+  },
+  "qhsc2005_04": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "medium",
+    "why": "Reduced speed gives new elliptical orbit"
+  },
+  "qhsc2005_05": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "high",
+    "why": "Launch angle versus range and time"
+  },
+  "qhsc2005_06": {
+    "code": "HSC-M3-T3-D4",
+    "confidence": "medium",
+    "why": "Factors affecting induced emf"
+  },
+  "qhsc2005_07": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "medium",
+    "why": "Direction of induced current, Lenz law"
+  },
+  "qhsc2005_14": {
+    "code": "HSC-M4-T3-D2",
+    "confidence": "high",
+    "why": "Photon energy from radio frequency"
+  },
+  "qhsc2005_16": {
+    "code": "HSC-M2-T3-D9",
+    "confidence": "high",
+    "why": "Kepler law for Galilean moons"
+  },
+  "qhsc2005_19": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "medium",
+    "why": "Gravity governs spacecraft return trajectory"
+  },
+  "qhsc2005_23": {
+    "code": "HSC-M4-T3-D9",
+    "confidence": "high",
+    "why": "Black-body radiation changed scientific thinking"
+  },
+  "qhsc2005_26": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "medium",
+    "why": "Charged particle suspended in uniform field"
+  },
+  "qhsc2005_27": {
+    "code": "HSC-M3-T1-D9",
+    "confidence": "high",
+    "why": "Proton circular motion, derive momentum"
+  },
+  "qhsc2006_01": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "medium",
+    "why": "G universal versus g local"
+  },
+  "qhsc2006_05": {
+    "code": "HSC-M2-T3-D9",
+    "confidence": "high",
+    "why": "Orbital period ratio for two satellites"
+  },
+  "qhsc2006_07": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "Force on conductor in magnetic field"
+  },
+  "qhsc2006_11": {
+    "code": null,
+    "confidence": "high",
+    "why": "Bragg X-ray diffraction not in dots"
+  },
+  "qhsc2006_12": {
+    "code": "HSC-M3-T1-D6",
+    "confidence": "high",
+    "why": "Magnetic force depends on perpendicular velocity"
+  },
+  "qhsc2006_14": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "E=V/d doubled arrangement"
+  },
+  "qhsc2006_16": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "Projectile velocity, height and range"
+  },
+  "qhsc2006_18": {
+    "code": "HSC-M2-T2-D12",
+    "confidence": "medium",
+    "why": "Work done in radial gravitational field"
+  },
+  "qhsc2007_02": {
+    "code": "HSC-M4-T4-D5",
+    "confidence": "high",
+    "why": "Length contraction seen by external observer"
+  },
+  "qhsc2007_03": {
+    "code": "HSC-M2-T2-D12",
+    "confidence": "medium",
+    "why": "GPE at two heights, what is inferable"
+  },
+  "qhsc2007_04": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "g=GM/r2 with quarter radius"
+  },
+  "qhsc2007_08": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "emf from flux-time graph"
+  },
+  "qhsc2007_11": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Uniform field between parallel plates"
+  },
+  "qhsc2007_12": {
+    "code": null,
+    "confidence": "high",
+    "why": "Bragg X-ray interference not in dots"
+  },
+  "qhsc2007_15": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "medium",
+    "why": "Rest energy needs mass-energy equivalence"
+  },
+  "qhsc2007_18": {
+    "code": "HSC-M4-T4-D5",
+    "confidence": "medium",
+    "why": "Relativity of time and relativistic mass"
+  },
+  "qhsc2007_21": {
+    "code": "HSC-M3-T2-D8",
+    "confidence": "high",
+    "why": "Motor torque and number of coil turns"
+  },
+  "qhsc2008_01": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Weight on Mars from g"
+  },
+  "qhsc2008_03": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "Horizontally released projectile range"
+  },
+  "qhsc2008_05": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Time dilation of clock pulses"
+  },
+  "qhsc2008_08": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Motional emf in rotating metal strip"
+  },
+  "qhsc2008_13": {
+    "code": "HSC-M4-T3-D2",
+    "confidence": "high",
+    "why": "Photon energy at 580 nm"
+  },
+  "qhsc2008_17": {
+    "code": "HSC-M2-T2-D13",
+    "confidence": "high",
+    "why": "GPE graph and launch energy changes"
+  },
+  "qhsc2008_19": {
+    "code": "HSC-M2-T3-D10",
+    "confidence": "high",
+    "why": "Orbit speed and period ratio"
+  },
+  "qhsc2008_23": {
+    "code": "HSC-M5-T1-D4",
+    "confidence": "medium",
+    "why": "Crossed fields used for Thomson e/m"
+  },
+  "qhsc2008_26": {
+    "code": "HSC-M3-T4-D1",
+    "confidence": "medium",
+    "why": "Induction coil transformer structure"
+  },
+  "qhsc2009_01": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "medium",
+    "why": "Planet gravity changes probe speed and direction"
+  },
+  "qhsc2009_02": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "Centripetal acceleration v2/r"
+  },
+  "qhsc2009_03": {
+    "code": "HSC-M2-T2-D18",
+    "confidence": "high",
+    "why": "Orbit change affects GPE and work"
+  },
+  "qhsc2009_05": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Sun-Moon gravitational force"
+  },
+  "qhsc2009_09": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Charge separation in moving conductor"
+  },
+  "qhsc2009_11": {
+    "code": "HSC-M3-T2-D9",
+    "confidence": "medium",
+    "why": "Commutator gives reversing force, steady torque"
+  },
+  "qhsc2009_14": {
+    "code": "HSC-M4-T3-D12",
+    "confidence": "high",
+    "why": "Work function difference sodium and platinum"
+  },
+  "qhsc2009_15": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Uniform E field between plates"
+  },
+  "qhsc2009_16": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "medium",
+    "why": "Asteroid mass from orbital period"
+  },
+  "qhsc2009_18": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Length contraction and trip time"
+  },
+  "qhsc2009_22": {
+    "code": null,
+    "confidence": "high",
+    "why": "Transistor history not in dots"
+  },
+  "qhsc2009_24": {
+    "code": null,
+    "confidence": "high",
+    "why": "Rubber band data has no syllabus dot"
+  },
+  "qhsc2009_26": {
+    "code": "PRE-M4-T2-D12",
+    "confidence": "medium",
+    "why": "Transmission energy losses in circuits"
+  },
+  "qhsc2009_27": {
+    "code": "HSC-M4-T3-D12",
+    "confidence": "medium",
+    "why": "Photoelectric emission and light intensity"
+  },
+  "qhsc2009_28": {
+    "code": null,
+    "confidence": "high",
+    "why": "Geophysics option not in dots"
+  },
+  "qhsc2009_29": {
+    "code": null,
+    "confidence": "high",
+    "why": "Medical physics option not in dots"
+  },
+  "qhsc2009_32": {
+    "code": null,
+    "confidence": "high",
+    "why": "Age of silicon option not in dots"
+  },
+  "qhsc2010_01": {
+    "code": "HSC-M2-T3-D9",
+    "confidence": "high",
+    "why": "ISS versus geostationary orbit"
+  },
+  "qhsc2010_03": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Particle lifetime time dilation"
+  },
+  "qhsc2010_04": {
+    "code": "HSC-M2-T1-D4",
+    "confidence": "medium",
+    "why": "Kinetic energy during projectile flight"
+  },
+  "qhsc2010_05": {
+    "code": "HSC-M2-T2-D11",
+    "confidence": "high",
+    "why": "Centripetal force in horizontal circle"
+  },
+  "qhsc2010_06": {
+    "code": null,
+    "confidence": "high",
+    "why": "Michelson-Morley not in dots"
+  },
+  "qhsc2010_07": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Weight on Earth and Mercury"
+  },
+  "qhsc2010_09": {
+    "code": "PRE-M4-T2-D12",
+    "confidence": "high",
+    "why": "High voltage minimises resistive line loss"
+  },
+  "qhsc2010_11": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "medium",
+    "why": "Lenz law in coupled rings"
+  },
+  "qhsc2010_13": {
+    "code": "HSC-M4-T3-D9",
+    "confidence": "high",
+    "why": "Planck quantised black-body energy"
+  },
+  "qhsc2010_15": {
+    "code": "HSC-M3-T1-D9",
+    "confidence": "high",
+    "why": "Radius change when B is doubled"
+  },
+  "qhsc2010_17": {
+    "code": "HSC-M5-T1-D4",
+    "confidence": "high",
+    "why": "Thomson e/m with perpendicular fields"
+  },
+  "qhsc2010_18": {
+    "code": null,
+    "confidence": "high",
+    "why": "Bragg X-ray crystal structure not in dots"
+  },
+  "qhsc2010_23": {
+    "code": "PRE-M2-T3-D6",
+    "confidence": "medium",
+    "why": "Forces on accelerating train and hanging mass"
+  },
+  "qhsc2010_24": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Kepler law for JWST solar orbit"
+  },
+  "qhsc2010_26": {
+    "code": "HSC-M3-T3-D4",
+    "confidence": "high",
+    "why": "Induced emf depends on flux change rate"
+  },
+  "qhsc2010_28": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "Magnetic force measured on balance"
+  },
+  "qhsc2010_29": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "CRO deflection plate trajectory"
+  },
+  "qhsc2010_32": {
+    "code": null,
+    "confidence": "high",
+    "why": "Mars problems text missing"
+  },
+  "qhsc2010_33": {
+    "code": null,
+    "confidence": "high",
+    "why": "Geophysics option not in dots"
+  },
+  "qhsc2011_02": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "g from weight and mass"
+  },
+  "qhsc2011_07": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Electron force between plates"
+  },
+  "qhsc2011_11": {
+    "code": null,
+    "confidence": "high",
+    "why": "Investigation diagram missing"
+  },
+  "qhsc2011_14": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "medium",
+    "why": "emf from ring swinging through field"
+  },
+  "qhsc2011_15": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "Time to fall from table"
+  },
+  "qhsc2011_17": {
+    "code": "HSC-M4-T3-D16",
+    "confidence": "medium",
+    "why": "Ek versus wavelength photoelectric graph"
+  },
+  "qhsc2011_20": {
+    "code": "HSC-M2-T2-D12",
+    "confidence": "medium",
+    "why": "GPE halved implies force quarter"
+  },
+  "qhsc2011_23": {
+    "code": "HSC-M2-T3-D10",
+    "confidence": "medium",
+    "why": "Orbit weight, speed and altitude effects"
+  },
+  "qhsc2011_24": {
+    "code": "HSC-M4-T4-D3",
+    "confidence": "high",
+    "why": "Simultaneity thought experiment"
+  },
+  "qhsc2011_27": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "medium",
+    "why": "Force on coil side in field"
+  },
+  "qhsc2012_02": {
+    "code": "HSC-M4-T1-D1",
+    "confidence": "low",
+    "why": "Metre defined using constant c"
+  },
+  "qhsc2012_04": {
+    "code": "HSC-M2-T2-D12",
+    "confidence": "medium",
+    "why": "GPE change with altitude"
+  },
+  "qhsc2012_05": {
+    "code": null,
+    "confidence": "high",
+    "why": "p-type doping not in dots"
+  },
+  "qhsc2012_07": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "low",
+    "why": "Radial field makes torque proportional to current"
+  },
+  "qhsc2012_08": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "Current from F=BIl"
+  },
+  "qhsc2012_10": {
+    "code": "HSC-M3-T4-D3",
+    "confidence": "high",
+    "why": "Transformer turns for 20V to 2V"
+  },
+  "qhsc2012_11": {
+    "code": "PRE-M2-T3-D8",
+    "confidence": "medium",
+    "why": "Rocket thrust demonstrates Newton third law"
+  },
+  "qhsc2012_13": {
+    "code": "HSC-M2-T3-D9",
+    "confidence": "high",
+    "why": "Orbital period at half Moon radius"
+  },
+  "qhsc2012_14": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "emf from flux-time graph"
+  },
+  "qhsc2012_17": {
+    "code": "PRE-M4-T3-D3",
+    "confidence": "low",
+    "why": "Current from parallel-wire magnetic force"
+  },
+  "qhsc2012_18": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "high",
+    "why": "Gravitational force ratio at two points"
+  },
+  "qhsc2012_20": {
+    "code": null,
+    "confidence": "high",
+    "why": "Semiconductor band-gap sensor not in dots"
+  },
+  "qhsc2012_22": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "high",
+    "why": "Solenoid induction and balance force"
+  },
+  "qhsc2012_24": {
+    "code": null,
+    "confidence": "high",
+    "why": "Semiconductor energy bands not in dots"
+  },
+  "qhsc2012_26": {
+    "code": "PRE-M4-T2-D12",
+    "confidence": "high",
+    "why": "Transmission design evaluated by energy loss"
+  },
+  "qhsc2012_30": {
+    "code": "HSC-M3-T1-D9",
+    "confidence": "medium",
+    "why": "Charged particle paths in magnetic field"
+  },
+  "qhsc2012_31": {
+    "code": null,
+    "confidence": "high",
+    "why": "Geophysics option not in dots"
+  },
+  "qhsc2012_32": {
+    "code": null,
+    "confidence": "high",
+    "why": "Medical physics option not in dots"
+  },
+  "qhsc2012_34": {
+    "code": null,
+    "confidence": "high",
+    "why": "Quanta to quarks option, no single dot"
+  },
+  "qhsc2012_35": {
+    "code": null,
+    "confidence": "high",
+    "why": "Age of silicon option not in dots"
+  },
+  "qhsc2013_15": {
+    "code": "HSC-M3-T2-D7",
+    "confidence": "high",
+    "why": "Angles in motor torque and force equations"
+  },
+  "qhsc2013_23": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "Kepler law for satellite of Pollux"
+  },
+  "qhsc2013_26": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "medium",
+    "why": "Crossed fields, undeflected electron"
+  },
+  "qhsc2013_36": {
+    "code": null,
+    "confidence": "high",
+    "why": "Age of silicon option not in dots"
+  },
+  "qhsc2014_06": {
+    "code": "HSC-M2-T2-D16",
+    "confidence": "medium",
+    "why": "Satellite and dust: PE differs, speed same"
+  },
+  "qhsc2014_07": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "high",
+    "why": "Lenz law current direction in coil"
+  },
+  "qhsc2014_10": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "Same relative motion gives same emf"
+  },
+  "qhsc2014_11": {
+    "code": "HSC-M4-T3-D9",
+    "confidence": "medium",
+    "why": "Fewer high-energy photons in Wien tail"
+  },
+  "qhsc2014_15": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "Inverse-square force at doubled distance"
+  },
+  "qhsc2014_17": {
+    "code": "HSC-M3-T1-D2",
+    "confidence": "high",
+    "why": "Alpha and proton acceleration in E field"
+  },
+  "qhsc2014_19": {
+    "code": "HSC-M4-T4-D6",
+    "confidence": "high",
+    "why": "Length contraction used to find speed"
+  },
+  "qhsc2014_21": {
+    "code": null,
+    "confidence": "high",
+    "why": "Superconductor limitations not in dots"
+  },
+  "qhsc2014_35": {
+    "code": null,
+    "confidence": "high",
+    "why": "Quanta to quarks option, no single dot"
+  },
+  "qhsc2015_13": {
+    "code": null,
+    "confidence": "high",
+    "why": "Semiconductor band gap not in dots"
+  },
+  "qhsc2015_18": {
+    "code": "HSC-M3-T4-D3",
+    "confidence": "medium",
+    "why": "Secondary turns affect induced emf"
+  },
+  "qhsc2015_24": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "CRO electron deflection trajectory"
+  },
+  "qhsc2015_26": {
+    "code": "HSC-M2-T3-D4",
+    "confidence": "medium",
+    "why": "Uniform versus radial field near Earth"
+  }
+}

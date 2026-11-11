@@ -1,0 +1,2553 @@
+{
+ "course_id": "economics",
+ "course_name": "Economics",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Introduction to economics / Economic thinking / What is an economy and what is economics?"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Introduction to economics / Economic thinking / The economic problem, including wants, resources and scarcity, and economic decision-making as the choice between alternatives"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Economic agents responsible for economic decision-making, including consumers, producers and government"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Opportunity cost and other trade-offs in economic decision-making"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Cost–benefit principle in economic decision-making, including marginal costs and benefits, and short-term versus long-term factors"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Incentives and disincentives in economic decision-making, including intended and unintended consequences"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Role of data in economic decision-making, including informing public policy, monitoring economic performance and forecasting"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Role of models in economic decision-making, including the key assumptions of economic models"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Challenge of behavioural economics to conventional assumptions of rational behaviour and self-interest in economic decision-making, including cognitive biases and ethical considerations"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Relationship between microeconomics and macroeconomics"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Introduction to economics / Economic thinking / Contribution of economics to understanding and solving real-world problems"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Factors of production, including natural resources (land), labour, capital and entrepreneurship"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Factor incomes, specifically rent, wages, interest and profit"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Key questions for any economy, including ‘What to produce?’, ‘How to produce?’, ‘How much to produce?’, ‘How to distribute production?’"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / How the key questions for any economy are addressed in different economic systems, including pre-industrial, planned, free market and mixed market economies"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Introduction to economics / Operation of an economy / Importance of money to the operation of an economy, including its forms and functions"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Production possibilities model and opportunity cost, including production possibilities frontiers (PPF) and production possibilities schedules"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Interpret PPFs and production possibilities schedules, including shifts of the frontier"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Assumptions of the production possibilities model"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Identify opportunity costs from PPFs and production possibilities schedules"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Economic efficiency and reasons for an economy operating on, inside or outside its PPF, including underemployment of resources and technological advances"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Introduction to economics / Economic model: production possibilities / Opportunity costs of producing consumer and capital goods"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Roles of the household, business, financial, government and international sectors in the circular flow of income model"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Income flows into the economy (injections) and out of the economy (leakages) from different sectors via investment (), government spending (), exports (), savings (), taxation () and imports ()"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Interpret circular flow of income diagrams"
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Identify equilibrium and disequilibrium positions in an economy using the formula"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Introduction to economics / Economic model: circular flow of income / Effects of change to injections and leakages on the circular flow of income model and the overall economy"
+  },
+  {
+   "code": "PRE-M1-T5-D1",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Gross domestic product (GDP), including contributions of the private and public sectors"
+  },
+  {
+   "code": "PRE-M1-T5-D2",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Reasons economies pursue higher GDP"
+  },
+  {
+   "code": "PRE-M1-T5-D3",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Contributions of Aboriginal and Torres Strait Islander businesses to GDP"
+  },
+  {
+   "code": "PRE-M1-T5-D4",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Stages of the business cycle, including expansion/upturn, contraction/downturn, peak, trough"
+  },
+  {
+   "code": "PRE-M1-T5-D5",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Relationship between stages of the business cycle and economic conditions, including unemployment and inflation"
+  },
+  {
+   "code": "PRE-M1-T5-D6",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Reasons for fluctuations in the business cycle"
+  },
+  {
+   "code": "PRE-M1-T5-D7",
+   "path": "Year 11 / Introduction to economics / Economic model: business cycle / Effects of business cycle fluctuations on households, businesses and government"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Markets / Role of markets / Role of the price mechanism in a market economy, including the signalling, incentive and rationing functions of relative prices"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Markets / Role of markets / Contribution of self-interest and institutions to the functioning of markets, including the rule of law and enforcement of property rights and contracts"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Markets / Role of markets / Relationship between factor markets and product markets"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Markets / Demand / Effective individual demand and market demand"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Markets / Demand / Law of demand and the corresponding negatively sloping demand curve"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Markets / Demand / Movements along the demand curve, specifically expansions and contractions of demand for a good or service due to a change in price"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Markets / Demand / Movements (shifts) of the demand curve, including increases and decreases in demand for a good or service due to changes in non-price factors involving income, population, tastes, prices of substitutes and complements, and expected future prices"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Markets / Demand / Construct and interpret demand schedules and graphs"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Markets / Supply / Effective individual and market supply"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Markets / Supply / Law of supply and corresponding positively sloping supply curve"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Markets / Supply / Movements along the supply curve, specifically expansions and contractions of supply for a good or service due to a change in price"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Markets / Supply / Movements (shifts) of the supply curve, including increases and decreases of supply for a good or service due to changes in non-price factors involving the cost of factors of production, expected future prices, number of suppliers, and technology"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Markets / Supply / Construct and interpret supply schedules and graphs"
+  },
+  {
+   "code": "PRE-M2-T4-D1",
+   "path": "Year 11 / Markets / Market equilibrium / Effects of changes in demand and supply on equilibrium market price and equilibrium quantity"
+  },
+  {
+   "code": "PRE-M2-T4-D2",
+   "path": "Year 11 / Markets / Market equilibrium / Construct and interpret demand and supply graphs that demonstrate changes to market equilibrium"
+  },
+  {
+   "code": "PRE-M2-T4-D3",
+   "path": "Year 11 / Markets / Market equilibrium / Contribution of market equilibrium and market outcomes to efficiency"
+  },
+  {
+   "code": "PRE-M2-T5-D1",
+   "path": "Year 11 / Markets / Price elasticity of demand / Degrees of price elasticity of demand, including perfectly elastic, relatively elastic, unitary elastic, relatively inelastic and perfectly inelastic"
+  },
+  {
+   "code": "PRE-M2-T5-D2",
+   "path": "Year 11 / Markets / Price elasticity of demand / Interpret demand graphs for price elasticity of demand"
+  },
+  {
+   "code": "PRE-M2-T5-D3",
+   "path": "Year 11 / Markets / Price elasticity of demand / Calculate price elasticity of demand using the percentage method formula"
+  },
+  {
+   "code": "PRE-M2-T5-D4",
+   "path": "Year 11 / Markets / Price elasticity of demand / Factors affecting price elasticity of demand, including degree of necessity, closeness and number of available substitutes, proportion of income spent on an item, time horizon and addictiveness of the item"
+  },
+  {
+   "code": "PRE-M2-T5-D5",
+   "path": "Year 11 / Markets / Price elasticity of demand / Significance of price elasticity of demand for businesses in terms of pricing, product differentiation and output"
+  },
+  {
+   "code": "PRE-M2-T6-D1",
+   "path": "Year 11 / Markets / Price elasticity of supply / Degrees of price elasticity of supply, including perfectly elastic, relatively elastic, unitary elastic, relatively inelastic and perfectly inelastic"
+  },
+  {
+   "code": "PRE-M2-T6-D2",
+   "path": "Year 11 / Markets / Price elasticity of supply / Interpret supply graphs for price elasticity of supply"
+  },
+  {
+   "code": "PRE-M2-T6-D3",
+   "path": "Year 11 / Markets / Price elasticity of supply / Factors affecting price elasticity of supply, including time horizon, excess capacity, durability of goods and factor mobility"
+  },
+  {
+   "code": "PRE-M2-T6-D4",
+   "path": "Year 11 / Markets / Price elasticity of supply / Significance of price elasticity of supply for businesses"
+  },
+  {
+   "code": "PRE-M2-T7-D1",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Role of competition in markets and degrees of competition"
+  },
+  {
+   "code": "PRE-M2-T7-D2",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Characteristics of perfect competition, monopolistic competition, oligopolies and monopolies, including number of businesses, types of goods and services, barriers to entry and pricing power"
+  },
+  {
+   "code": "PRE-M2-T7-D3",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Economic implications of increases in the level of market concentration on the price, quantity and quality of goods and services, and the innovation and profit of businesses"
+  },
+  {
+   "code": "PRE-M2-T7-D4",
+   "path": "Year 11 / Markets / Market structures and competition for sellers / Effects of technological innovation and the digital economy on market power, including first-mover advantage and network effects associated with digital platforms"
+  },
+  {
+   "code": "PRE-M2-T8-D1",
+   "path": "Year 11 / Markets / Nature and types of market failure / Limitations of the price mechanism in achieving economic and social objectives"
+  },
+  {
+   "code": "PRE-M2-T8-D2",
+   "path": "Year 11 / Markets / Nature and types of market failure / Challenges faced by Aboriginal and Torres Strait Islander businesses in accessing capital and markets"
+  },
+  {
+   "code": "PRE-M2-T8-D3",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of positive externalities and negative externalities from consumption and production in relation to market failure, including marginal private costs and benefits, marginal social costs and benefits, property rights, common-pool resources, merit goods and demerit goods"
+  },
+  {
+   "code": "PRE-M2-T8-D4",
+   "path": "Year 11 / Markets / Nature and types of market failure / Interpret demand and supply graphs that demonstrate negative externalities from production and positive externalities from consumption"
+  },
+  {
+   "code": "PRE-M2-T8-D5",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of public goods in relation to market failure, including non-excludability, non-rivalry, and the free rider problem"
+  },
+  {
+   "code": "PRE-M2-T8-D6",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of market power abuse in relation to market failure, including predatory pricing and collusion"
+  },
+  {
+   "code": "PRE-M2-T8-D7",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of asymmetric information in relation to market failure, including lack of disclosure and adverse selection"
+  },
+  {
+   "code": "PRE-M2-T8-D8",
+   "path": "Year 11 / Markets / Nature and types of market failure / Features of income and wealth inequality in relation to market failure, including social exclusion"
+  },
+  {
+   "code": "PRE-M2-T9-D1",
+   "path": "Year 11 / Markets / Government intervention in market failures / Rationale for government intervention to address market failure"
+  },
+  {
+   "code": "PRE-M2-T9-D2",
+   "path": "Year 11 / Markets / Government intervention in market failures / Forms and features of government policy interventions to correct market failure, including taxes, subsidies, direct provision of goods, regulations, price controls (binding ceiling and floor prices), quantity controls (quotas) and nudges"
+  },
+  {
+   "code": "PRE-M2-T9-D3",
+   "path": "Year 11 / Markets / Government intervention in market failures / Interpret demand and supply graphs that demonstrate the effects of taxes and price controls"
+  },
+  {
+   "code": "PRE-M2-T9-D4",
+   "path": "Year 11 / Markets / Government intervention in market failures / Limitations of government intervention into market failure"
+  },
+  {
+   "code": "PRE-M2-T9-D5",
+   "path": "Year 11 / Markets / Government intervention in market failures / Government failure, including unintended consequences of policy interventions and rent-seeking behaviour"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Role of households in the economy"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Consumers as utility-maximising agents, including choices at the margin and the law of diminishing marginal utility"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Consumers as socially and ethically motivated agents, including the influence of collective values, culture and social norms"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Relationship between consumption, savings and income, including the marginal propensity to consume (), marginal propensity to save (), and"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Determine the marginal propensity to consume"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Savings as deferred consumption, dissaving and the paradox of thrift"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Role of consumer sovereignty and factors that challenge its functioning, including marketing and behavioural sludges"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Effect of changes in income on types of consumption, including expenditure on normal goods, inferior goods and Veblen goods"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Household and business sector / Households: the consumption of goods and services / Contribution of consumption and income to wellbeing"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Household and business sector / Households: the provision of labour / Factors affecting supply of labour from households, including wage and non-wage benefits, working conditions, population, workforce participation, education, training and skills, occupational and geographic mobility of labour"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Household and business sector / Households: the provision of labour / Disincentives to participation in the workforce, including workplace inflexibility and culture, inadequate leave entitlements, and affordability and availability of care"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Role of businesses in the economy"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Producers as profit-maximising agents, including the differences between economic profit and accounting profit"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Classification of businesses, including public enterprises, private enterprises and industries"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Relationship between production and productivity, and the importance of productivity to profitability and living standards"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Factors affecting the productivity of businesses, including technological innovation, capital deepening, worker skills, internal and external economies and diseconomies of scale"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Household and business sector / Businesses: production of goods and services / Interpret long-run average cost (LRAC) curves that model economies and diseconomies of scale, including the technical optimum"
+  },
+  {
+   "code": "PRE-M3-T4-D1",
+   "path": "Year 11 / Household and business sector / Businesses: the provision of income / Income earned by labour, including wage benefits, non-wage benefits and the role of the minimum wage"
+  },
+  {
+   "code": "PRE-M3-T4-D2",
+   "path": "Year 11 / Household and business sector / Businesses: the provision of income / Arguments for and against the equitable distribution of income from work"
+  },
+  {
+   "code": "PRE-M3-T4-D3",
+   "path": "Year 11 / Household and business sector / Businesses: the provision of income / Factors affecting demand for labour by businesses, including total output, relative cost of labour and capital, artificial intelligence (AI) and automation, profitability of businesses and government policy"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Financial sector / Role of financial sector / Role of financial sector in the economy, including facilitating savings and investment"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Financial sector / Role of financial sector / Types of financial intermediaries, including banks, insurers, fund managers and the central bank"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Financial sector / Role of financial sector / Role of superannuation in the Australian economy as a source of savings and investment"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Financial sector / Types of financial markets: equity markets / Characteristics of equity markets"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Financial sector / Types of financial markets: equity markets / Primary and secondary share markets, including their functions and effects on the economy"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Characteristics of debt markets"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Primary and secondary bond markets, including their functions and effects on the economy"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Role of interest rates in the economy, including the price of money, the cost of credit, the return on savings, and as an indicator of risk"
+  },
+  {
+   "code": "PRE-M4-T3-D4",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Factors affecting the demand for funds, including consumer and business confidence, investment opportunities and government policies"
+  },
+  {
+   "code": "PRE-M4-T3-D5",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Factors affecting the supply of funds, including domestic savings, alternative investment opportunities, foreign investment and government policies"
+  },
+  {
+   "code": "PRE-M4-T3-D6",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Interpret a loanable funds graph to demonstrate the effect of changes in demand for funds and supply of funds on the rate of interest"
+  },
+  {
+   "code": "PRE-M4-T3-D7",
+   "path": "Year 11 / Financial sector / Types of financial markets: debt markets / Effects of interest rate changes on housing affordability"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Government sector / Role of government / Role of government in the economy, including redistribution, reallocation, stabilisation and correction of market failure"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Government sector / Role of government / Role of Aboriginal and Torres Strait Islander advisory bodies in shaping government policy for economic outcomes"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Government sector / Role of government / Governments as social welfare-maximising agents, including improving quality of life"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Government sector / Role of government / Features of the Australian federal Budget and tax-transfer system"
+  },
+  {
+   "code": "PRE-M5-T1-D5",
+   "path": "Year 11 / Government sector / Role of government / Regulation as a government tool to manage the economy and minimise, mitigate or eliminate harm"
+  },
+  {
+   "code": "PRE-M5-T1-D6",
+   "path": "Year 11 / Government sector / Role of government / Government use of nudges and incentives to alter the economic behaviour of households and businesses"
+  },
+  {
+   "code": "PRE-M5-T1-D7",
+   "path": "Year 11 / Government sector / Role of government / Arguments for and against the privatisation and nationalisation of businesses"
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Government sector / Taxation / Purposes of taxation for the economy and society"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Government sector / Taxation / Major sources of Australian Government revenue"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Government sector / Taxation / Features of the tax base, including income, wealth and consumption"
+  },
+  {
+   "code": "PRE-M5-T2-D4",
+   "path": "Year 11 / Government sector / Taxation / Types of taxation, including personal income, profit, sales taxes and excise duty"
+  },
+  {
+   "code": "PRE-M5-T2-D5",
+   "path": "Year 11 / Government sector / Taxation / Characteristics and types of direct and indirect taxes, including the economic and legal incidence of tax"
+  },
+  {
+   "code": "PRE-M5-T2-D6",
+   "path": "Year 11 / Government sector / Taxation / Features of a good tax, including simplicity, fairness and efficiency"
+  },
+  {
+   "code": "PRE-M5-T2-D7",
+   "path": "Year 11 / Government sector / Taxation / Rationale for reform of the Australian taxation system"
+  },
+  {
+   "code": "PRE-M5-T3-D1",
+   "path": "Year 11 / Government sector / Government spending / Purpose of recurrent and non-recurrent government spending, including transfer payments, essential services and infrastructure"
+  },
+  {
+   "code": "PRE-M5-T3-D2",
+   "path": "Year 11 / Government sector / Government spending / Major areas of Australian Government expenditure"
+  },
+  {
+   "code": "PRE-M5-T3-D3",
+   "path": "Year 11 / Government sector / Government spending / Rationale for reform of Australian Government spending"
+  },
+  {
+   "code": "PRE-M6-T1-D1",
+   "path": "Year 11 / International sector / International trade / Role and basis of international trade in the economy, including voluntary exchange for mutual benefit and the efficient allocation of resources"
+  },
+  {
+   "code": "PRE-M6-T1-D2",
+   "path": "Year 11 / International sector / International trade / Value, direction and composition of Australia’s international trade"
+  },
+  {
+   "code": "PRE-M6-T1-D3",
+   "path": "Year 11 / International sector / International trade / Features of Aboriginal and Torres Strait Islander trade, including major exports and historical international trade routes"
+  },
+  {
+   "code": "PRE-M6-T1-D4",
+   "path": "Year 11 / International sector / International trade / Identify trade outcomes, including balanced, surplus and deficit"
+  },
+  {
+   "code": "PRE-M6-T2-D1",
+   "path": "Year 11 / International sector / International investment / Features of international investment flows, including foreign debt and foreign equity"
+  },
+  {
+   "code": "PRE-M6-T2-D2",
+   "path": "Year 11 / International sector / International investment / Value, direction and composition of Australia’s international investment"
+  },
+  {
+   "code": "PRE-M6-T3-D1",
+   "path": "Year 11 / International sector / Exchange rates / Role of exchange rates in facilitating international trade and investment flows"
+  },
+  {
+   "code": "PRE-M6-T3-D2",
+   "path": "Year 11 / International sector / Exchange rates / Measurement of the relative value of the Australian dollar using bilateral exchange rates"
+  },
+  {
+   "code": "PRE-M6-T4-D1",
+   "path": "Year 11 / International sector / Balance of payments / Purpose of the balance of payments as a record of international economic transactions"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Distinction between nominal GDP and real GDP"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Calculate real GDP using the formula"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Relationship between GDP and economic growth"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Limitations of GDP as a measurement, specifically the exclusion of population, hours worked, the informal economy, the non-market sector, distribution of income, environmental degradation and depletion of the resource base"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Types of economic decline, including negative economic growth, technical recession, per capita recession and depression"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Factors influencing the components of aggregate demand , including consumption (), investment (), government spending () and net exports ()"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Effect of changes in the terms of trade on net exports and aggregate demand"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Effects of changes in aggregate expenditure () on national income () through the multiplier effect"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Calculate and interpret the simple expenditure multiplier () using the formula and its effect on national income using the formula"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Factors influencing the components of aggregate supply, including productivity, quality and quantity of inputs"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Identify an equilibrium position for an economy from leakages and injections using the formula"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Relationship between actual output and potential output"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Construct and interpret aggregate demand and aggregate supply (AD-AS) graphs to demonstrate changes in GDP"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Effects of economic growth and economic decline on households, businesses and the government"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Reasons for trends in economic growth in Australia"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Economic issues in the Australian economy / Economic growth / Interpret and analyse economic growth data through tables, time series line graphs, column charts and bar charts"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Composition of the labour force, including employed and unemployed persons, part-time and full-time workers"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Factors affecting labour force participation in Australia, including cyclical and structural influences"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Calculate and interpret the rate of labour force participation using the formula"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Economic implications of demographic shifts and changes to Australia’s dependency ratio, including possible effects on economic growth, government revenue and expenditure, immigration and retirement age"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Types of unemployment, including cyclical, structural and frictional"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Causes of unemployment and underemployment, including insufficient aggregate demand, structural changes, technological changes, labour market frictions"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Calculate and interpret the rate of unemployment using the formula"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Limitations of measuring the rate of unemployment, including hidden unemployed, underemployed and informal workers"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Relationship between the labour force, labour force participation rate, unemployment rate and labour force underutilisation rate"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Economic and social effects of unemployment and underemployment"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Reasons for trends in employment and unemployment in Australia"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment / Interpret and analyse unemployment and employment data through tables, time series line graphs, column charts and bar charts"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Distinctions between inflation, deflation, disinflation and stagflation"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Measurement of inflation from the consumer price index (CPI) using the formula"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Distinction between the headline inflation rate and underlying inflation rate"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Types and causes of inflation, including demand-pull, cost-push, inflationary expectations, imported inflation"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Interpret aggregate demand and supply graphs that demonstrate demand–pull inflation and cost–push inflation"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Relationship between inflation, unemployment and potential output"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Negative effects of high inflation and deflation on households, businesses, the government and the economy"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Reasons for trends in inflation and the cost of living in Australia"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Inflation / Interpret and analyse inflation data through tables, time series line graphs, column charts and bar charts"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Relationship between income and wealth"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Types of economic inequality, including income, wealth and opportunity"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Interpret income and wealth inequality using the Lorenz curve, Gini coefficient, Palma ratio"
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Cycle of poverty, intergenerational income mobility and the extent of relative poverty in Australia, based on the proportion of population below the Organisation for Economic Co-operation and Development (OECD) poverty line"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Causes of economic inequality, including educational disparities, asset price inflation, wealth transfers, structural changes to the economy and government policies"
+  },
+  {
+   "code": "HSC-M1-T4-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Factors contributing to inequities in health and housing outcomes in Australia"
+  },
+  {
+   "code": "HSC-M1-T4-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Features of the gender pay gap, including wage disparity, occupational segregation, promotion gaps, the motherhood penalty and fatherhood premium"
+  },
+  {
+   "code": "HSC-M1-T4-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Reasons for economic inequality disproportionately affecting Aboriginal and Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M1-T4-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Effects of economic inequality in Australia"
+  },
+  {
+   "code": "HSC-M1-T4-D10",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Reasons for trends in inequality in Australia"
+  },
+  {
+   "code": "HSC-M1-T4-D11",
+   "path": "Year 12 / Economic issues in the Australian economy / Inequality / Interpret and analyse inequality data through tables and scatterplot charts, including the relationship between inequality and socio-economic outcomes"
+  },
+  {
+   "code": "HSC-M1-T5-D1",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Role of the natural environment in the economy, including the provision of natural resources, ecosystem services and amenities"
+  },
+  {
+   "code": "HSC-M1-T5-D2",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Types of environmental issues arising from inefficient resource use, including the depletion of non-renewable resources, overexploitation of renewable resources, overproduction of waste and climate change"
+  },
+  {
+   "code": "HSC-M1-T5-D3",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Measurement of environmental sustainability, including greenhouse gas emissions and ecological footprint"
+  },
+  {
+   "code": "HSC-M1-T5-D4",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Intergenerational equity and its relationship to environmental degradation"
+  },
+  {
+   "code": "HSC-M1-T5-D5",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Environmental impacts of market failure, including negative externalities related to overproduction caused by undefined property rights and positive externalities related to underproduction of environmental goods"
+  },
+  {
+   "code": "HSC-M1-T5-D6",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Interpret demand and supply graphs relating to the natural environment that demonstrate negative externalities from production and positive externalities from consumption"
+  },
+  {
+   "code": "HSC-M1-T5-D7",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Economic costs of climate change to the Australian economy"
+  },
+  {
+   "code": "HSC-M1-T5-D8",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Reasons for trends in greenhouse gas emissions in Australia"
+  },
+  {
+   "code": "HSC-M1-T5-D9",
+   "path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability / Interpret and analyse environmental sustainability data through tables, time series line graphs, column charts, bar charts and scatterplot charts, including the relationship between the natural environment and production"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Economic objectives / Economic objectives of the Australian Government, including higher quality of life, economic growth, full employment, price stability, equitable distribution of income and wealth, and environmental sustainability"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Economic objectives / Constraints on the government’s ability to simultaneously achieve economic objectives"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Fiscal policy as a macroeconomic, demand-side, counter-cyclical tool for economic management"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Budget outcomes, including balanced, surplus and deficit"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Fiscal stance, including neutral, contractionary and expansionary"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Identify budget outcomes and fiscal stance"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Discretionary (structural) and non-discretionary (cyclical) components of the budget"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Limitations of financing a budget deficit through debt financing, monetary financing and asset sales, including servicing costs, the crowding-out effect, inflation and loss of future revenue"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Construct and interpret a loanable funds graph to demonstrate the crowding-out effect"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Uses of a budget surplus, including contributing to sovereign investment funds and retiring Australian Government debt"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of the budget on the stabilisation of the business cycle, including automatic stabilisers and discretionary adjustments to government expenditure and taxation, especially during significant economic downturns"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of the budget on the redistribution of income and wealth, including progressive, regressive and proportional taxation, bracket creep and welfare spending"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of the budget on the reallocation of resources between industries in the economy"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effects of budget outcomes and fiscal stances on Australian Government debt and fiscal sustainability, including Australian Government debt as a proportion of GDP"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Effectiveness of fiscal policy in achieving Australia’s economic objectives, including reference to relevant data"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Economic management of the Australian economy / Fiscal policy / Limitations to the effectiveness of fiscal policy, including policy lags, political considerations, global influences, the relative size of Australian Government debt and credit ratings"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Monetary policy as a macroeconomic, demand-side, counter-cyclical tool for economic management"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Economic objectives of the Reserve Bank of Australia (RBA), including price stability and full employment, and the role of monetary policy in achieving these objectives"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Features of the inflation target, including flexibility and its role in anchoring inflation expectations"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Role of the RBA’s Monetary Policy Board and factors influencing its decisions on setting the target cash rate"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Effects of monetary policy on the economy, including the saving and investment channel, cash-flow channel, asset price and wealth channel and exchange rate channel"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Rationale for using unconventional monetary policy"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Effectiveness of monetary policy in achieving the RBA’s economic objectives of price stability and full employment, including reference to relevant data"
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Monetary policy / Limitations to the effectiveness of monetary policy, including policy lags, the zero lower bound and inability to target specific areas of the economy"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Role and nature of microeconomic policies, including raising productivity and improving outcomes on social issues to enhance quality of life"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Microeconomic reform to improve productivity in Australia in the areas of competition policy, regulation and deregulation, infrastructure development and taxation"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Microeconomic policies to reduce inequality and improve wellbeing in the areas of health and housing in Australia"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Effects of microeconomic policies on households, businesses, the government and the economy"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Effectiveness of microeconomic policies in achieving Australia’s economic objectives"
+  },
+  {
+   "code": "HSC-M2-T4-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Microeconomic policy / Limitations to the effectiveness of microeconomic policies, including policy lags, political considerations and regulatory capture"
+  },
+  {
+   "code": "HSC-M2-T5-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Features of main wage-setting mechanisms in Australia, including individual arrangements, enterprise bargaining agreements and industry awards"
+  },
+  {
+   "code": "HSC-M2-T5-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Advantages and disadvantages of centralised and decentralised wage determination"
+  },
+  {
+   "code": "HSC-M2-T5-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Costs and benefits of non-standard work arrangements for individuals, businesses and the economy"
+  },
+  {
+   "code": "HSC-M2-T5-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Purpose of the industrial safety net, including the minimum wage"
+  },
+  {
+   "code": "HSC-M2-T5-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Effects of changes in union representation on bargaining power and wages in Australia"
+  },
+  {
+   "code": "HSC-M2-T5-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Role of education and training funding and migration policy to improve the size and skills of the Australian workforce"
+  },
+  {
+   "code": "HSC-M2-T5-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Effectiveness of labour market policies in achieving Australia’s economic objectives"
+  },
+  {
+   "code": "HSC-M2-T5-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Labour market policy / Limitations to the effectiveness of labour market policies, including policy lags and political considerations"
+  },
+  {
+   "code": "HSC-M2-T6-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Role of Aboriginal and Torres Strait Islander Peoples' land and water management Practices in economic environmental policy, including caring for Country"
+  },
+  {
+   "code": "HSC-M2-T6-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Environmental command-and-control instruments, including bans, restrictions, efficiency standards and technical specifications for products"
+  },
+  {
+   "code": "HSC-M2-T6-D3",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Environmental market-based instruments, including price-based instruments (taxes and subsidies) and quantity-based instruments (permit schemes)"
+  },
+  {
+   "code": "HSC-M2-T6-D4",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Identify the optimal size of a tax on producers from a negative externalities graph"
+  },
+  {
+   "code": "HSC-M2-T6-D5",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Advantages and disadvantages of market-based instruments relative to command-and-control instruments"
+  },
+  {
+   "code": "HSC-M2-T6-D6",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Role of Australia’s international agreements and national targets for greenhouse gas emissions, including the extent of their influence on domestic government policy"
+  },
+  {
+   "code": "HSC-M2-T6-D7",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Effectiveness of Australia’s policies in achieving greenhouse gas emission targets"
+  },
+  {
+   "code": "HSC-M2-T6-D8",
+   "path": "Year 12 / Economic management of the Australian economy / Environmental policy / Limitations to the effectiveness of environmental policies, including policy lags, political considerations, global free riders and carbon leakage"
+  },
+  {
+   "code": "HSC-M2-T7-D1",
+   "path": "Year 12 / Economic management of the Australian economy / Policy mix / Need for a coordinated mix of macroeconomic and microeconomic policies to achieve Australia’s short-term and longer-term economic objectives and to respond effectively to economic shocks"
+  },
+  {
+   "code": "HSC-M2-T7-D2",
+   "path": "Year 12 / Economic management of the Australian economy / Policy mix / Propose and evaluate policy options to achieve the economic objectives of higher quality of life, economic growth, full employment, price stability, equitable distribution of income and environmental sustainability in hypothetical and contemporary Australian contexts"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Australia and the global economy / Global trade / Principles of absolute advantage and comparative advantage"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify comparative advantage for output from tables and production possibility frontiers (PPF)"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Australia and the global economy / Global trade / Benefits of free trade, including greater access to resources, specialisation, development of economies of scale, increased competition, lower prices, wider choice, higher living standards"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Australia and the global economy / Global trade / Costs and benefits of global supply chains"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Australia and the global economy / Global trade / Arguments for trade protection, including supporting domestic employment in specific industries, shielding infant industries, enabling self-sufficiency in strategic industries and preventing dumping"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Australia and the global economy / Global trade / Methods of protection, including tariffs, quotas, subsidies and local content requirements"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Australia and the global economy / Global trade / Effects of trade protection on domestic and global economies"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify the effects of tariffs on import-competing domestic markets, including size of the tariff, government revenue, total consumer spending, domestic producer revenue, quantity of imports and foreign producer revenue"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify the effects of quotas on import-competing domestic markets, including size of the quotas, total consumer spending, domestic producer revenue and foreign producer revenue"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Australia and the global economy / Global trade / Identify the effects of production subsidies on import-competing domestic markets, including the size of the subsidies, total consumer spending, domestic producer revenue, cost to government and foreign producer revenue"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Australia and the global economy / Global trade / Interpret demand and supply graphs that demonstrate the effects of tariffs, quotas and subsidies on import-competing domestic markets"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Australia and the global economy / Global trade / Interpret demand and supply graphs that demonstrate the effects of export subsidies on the world market, where world price equals equilibrium price"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Australia and the global economy / Global trade / Arguments for and against the use of bilateral and multilateral trade agreements, including regional trading blocs"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Australia and the global economy / Global trade / Role and effectiveness of the World Trade Organization (WTO) in facilitating multilateral free trade agreements and resolving trade disputes between member states"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Australia and the global economy / Global trade / Reasons for major trends in global trade and protectionism"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Australia and the global economy / Global trade / Extent to which Australian Government policies promote free trade"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Australia and the global economy / Global investment / Types of international investment flows, including foreign direct investment (FDI) and portfolio investment"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Australia and the global economy / Global investment / Costs and benefits of FDI and transnational corporations to the global economy"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Australia and the global economy / Global investment / Costs and benefits of international portfolio investment to the global economy, including liquidity, access to capital, volatility and financial crisis contagion"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Australia and the global economy / Global investment / Role and effectiveness of the International Monetary Fund (IMF) in maintaining international financial stability"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Features of Australia’s floating exchange rate system, including currency appreciation and depreciation"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Construct and interpret demand and supply graphs to demonstrate how the value of a currency is determined under a floating exchange rate system"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Reserve Bank of Australia’s (RBA) intervention in foreign exchange markets to affect the value of the Australian dollar during periods of significant market disorder"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Domestic and global factors affecting demand and supply of the Australian dollar"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Effects of exchange rate movements on households, businesses, the government and the Australian economy"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Australia and the global economy / Exchange rates / Reasons for major trends in the value of the Australian dollar"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / Australia and the global economy / International economic development / Features of economic development, including economic structure, education, health and sustainability"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / Australia and the global economy / International economic development / Relationship between economic growth and economic development, and the importance of inclusive and sustainable growth to long-term wellbeing"
+  },
+  {
+   "code": "HSC-M3-T4-D3",
+   "path": "Year 12 / Australia and the global economy / International economic development / Measures of economic development, including the Human Development Index (HDI) and GDP adjusted for a common currency, differences in population and purchasing power parity (PPP)"
+  },
+  {
+   "code": "HSC-M3-T4-D4",
+   "path": "Year 12 / Australia and the global economy / International economic development / Characteristics of different types of economies, including least developed countries, developing countries, emerging economies and advanced economies"
+  },
+  {
+   "code": "HSC-M3-T4-D5",
+   "path": "Year 12 / Australia and the global economy / International economic development / Factors contributing to differences in economic development between countries, including strength of institutions, geography and natural resource endowment, quality of human capital and infrastructure"
+  },
+  {
+   "code": "HSC-M3-T4-D6",
+   "path": "Year 12 / Australia and the global economy / International economic development / Global equity issues from the uneven distribution of economic costs associated with climate change"
+  },
+  {
+   "code": "HSC-M3-T4-D7",
+   "path": "Year 12 / Australia and the global economy / International economic development / Effects of international economic development on the level and geographical distribution of absolute poverty in the global economy"
+  },
+  {
+   "code": "HSC-M3-T4-D8",
+   "path": "Year 12 / Australia and the global economy / International economic development / Role and effectiveness of the World Bank Group (WBG) in achieving economic development in developing countries"
+  },
+  {
+   "code": "HSC-M3-T5-D1",
+   "path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia / Factors contributing to the vulnerability of the Australian economy to fluctuations in regional and international business cycles"
+  },
+  {
+   "code": "HSC-M3-T5-D2",
+   "path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia / Factors contributing to the resilience of the Australian economy against external shocks"
+  },
+  {
+   "code": "HSC-M3-T5-D3",
+   "path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia / Effects of changes in the global economy on the performance and structure of Australia’s economy"
+  }
+ ],
+ "questions": [
+  {
+   "id": "econ202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Monetary policy",
+   "text": "Which of the following identifies two economic objectives of monetary policy?\nPrice stability and full employment\nEconomic growth and external stability\nPrice stability and distribution of income\nEconomic growth and environmental sustainability"
+  },
+  {
+   "id": "econ202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which international organisation is responsible for maintaining financial stability in global financial markets?\nWorld Bank\nWorld Trade Organisation\nInternational Monetary Fund\nAsia–Pacific Economic Cooperation"
+  },
+  {
+   "id": "econ202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is most likely to be a feature of a decentralised wage determination system?\nIncreased income equality\nWage increases are linked to inflation\nGovernment policy determines wage outcomes\nEmployment contracts can vary from one workplace to another"
+  },
+  {
+   "id": "econ202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A developing economy is most likely to be characterised by\nlow productivity and low population growth.\nlow employment and low infant mortality rate.\ninadequate access to education and underprovision of public goods.\ninadequate access to health care and GDP dominated by the provision of services."
+  },
+  {
+   "id": "econ202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A country imposes a quota on wheat imports. Assume that it does not allow any imports of wheat beyond the quota. Which of the following is most likely to occur if this country decides to reduce this quota on wheat imports?\nIncreased wheat prices within the country\nIncreased export revenue for foreign wheat exporters\nDecreased income for wheat producers within the country\nDecreased government revenue from the change in the volume of imports"
+  },
+  {
+   "id": "econ202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table represents data for a hypothetical economy. Year Import price index Export price index 1 125 100 2 160 80 Which of the following shows the value of the terms of trade index in Year 2 and the terms of trade trend from Year 1 to Year 2?\nOption A\nOption B\nOption C\nTerms of trade index Terms of trade trend 50 Increased 50 Decreased 200 Increased 200 Decreased"
+  },
+  {
+   "id": "econ202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia",
+   "text": "A foreign business purchases the rights to sell an Australian-designed product overseas. How will this transaction be recorded in Australia’s Balance of Payments?\nDebit in the capital account\nCredit in the capital account\nDebit in the financial account\nCredit in the financial account"
+  },
+  {
+   "id": "econ202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is likely to cause a decrease in the labour force participation rate?\nA decrease in the rate of unemployment\nA decrease in the number of discouraged workers\nAn increase in the level of hidden unemployment\nAn increase in the value of transfer payments made to the unemployed"
+  },
+  {
+   "id": "econ202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The following diagram shows two aggregate demand curves for a hypothetical economy. graph All other things being equal, the shift from AD1 to AD2 is most likely to have been caused by an increase in\nthe income tax-free threshold.\nbusiness investment in training programs.\nthe cash rate of the hypothetical economy.\nemployment in the economy of a major trading partner."
+  },
+  {
+   "id": "econ202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment",
+   "text": "The table shows hypothetical data for the Australian economy over a two-year period. Year 1 Year 2 Consumer price index (CPI) 100 103 Employed persons (’000) 1800 2000 Unemployed persons (’000) 200 125 Population (’000) 2008 2095 Which row of the table below best accounts for the changes in CPI and unemployment rate from Year 1 to Year 2?\nOption A\nOption B\nOption C\nReason for change in CPI Reason for change in unemployment rate Reduction in the cash rate Removal of government initiatives for education and training Appreciation of the Australian dollar Increase in domestic investment Increase in import tariffs Global economic downturn Increase in consumer confidence An appreciation in the currency of a major trading partner"
+  },
+  {
+   "id": "econ202011",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Monetary policy",
+   "text": "A central bank’s monetary policy stance results in a depreciation of the economy’s exchange rate. All other things being equal, which of the following best identifies the stance and a possible effect on the economy of the depreciation in the exchange rate?\nOption A\nOption B\nOption C\nMonetary policy stance Effect on economy Expansionary Increase in the level of foreign direct investment by domestic businesses Expansionary Increase in the cost of international borrowing Contractionary Increase in the number of service-based exports Contractionary Increase in the balance on the net primary income account"
+  },
+  {
+   "id": "econ202012",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "The table shows data for a hypothetical economy. Year Real GDP growth rate Unemployment rate 1 2.10% 5.20% 2 2.90% 5.20% Assume the economy is operating at the non-accelerating inflation rate of unemployment (NAIRU). Which of the following describes the most likely relationship between the changes in the economy’s real GDP growth rate and level of unemployment?\nLower aggregate supply leading to a reduction in dynamic efficiencies\nLower aggregate supply accompanied by a decrease in technical efficiencies\nHigher aggregate demand accompanied by a decrease in underemployment\nHigher aggregate demand leading to a reduction in structural unemployment"
+  },
+  {
+   "id": "econ202013",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A domestic economy has experienced a decline in its net foreign liabilities as a percentage of Gross Domestic Product (GDP). Which of the following is most likely to have increased, contributing to this decline?\nDebt servicing costs\nExchange rate volatility\nForeign investment into the domestic economy\nReturns on international investments by domestic businesses"
+  },
+  {
+   "id": "econ202014",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "Under a floating exchange rate, the capital and financial account for an economy in Year 1 is $10.6 bn surplus. In Year 2 the current account balance is in a $3.5 bn surplus. Which of the following represents the outcome of the capital and financial account in Year 2 and the change in size of this account from Year 1 to Year 2?\nOption A\nOption B\nOption C\nOutcome of capital and financial account in Year 2 Change in size ($bn) Deficit 7.1 Deficit 14.1 Surplus 7.1 Surplus 14.1"
+  },
+  {
+   "id": "econ202015",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "An economy has a headline inflation rate of 2.3% while its underlying inflation rate is 2.6%. Which factor could best account for this?\nIncreased minimum wage\nShort-term oversupply of petrol\nReduced supply of fruit due to drought\nIncreased demand for the domestic currency"
+  },
+  {
+   "id": "econ202016",
+   "year": 2020,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows data for a hypothetical economy. Year Nominal GDP ($bn) Consumer price index (CPI) 1 400 100 2 420 105 All other things being equal, which statement is most likely to be true for this economy?\nReal GDP remains unchanged due to a decrease in global economic activity.\nNominal GDP has increased due to an appreciation of the economy’s exchange rate.\nNominal GDP has increased due to a decrease in the tariff applied to imported products.\nReal GDP remains unchanged due to increases in the cost of production for businesses."
+  },
+  {
+   "id": "econ202017",
+   "year": 2020,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "An initial increase in government spending of $10 million leads to a final increase in national income of $25 million. What is the value of marginal propensity to consume (MPC)?\n0.25\n0.4\n0.6\n0.75"
+  },
+  {
+   "id": "econ202018",
+   "year": 2020,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "At equilibrium, when there is no international trade, an economy consumes 30 000 kg of cotton. The government opens the economy to trade and introduces a tariff of $5 per kg on cotton, resulting in imports of 10 000 kg and a total consumption of 35 000 kg of cotton. The world price for cotton is $20 per kg. What is the change in the domestic production of cotton and in government revenue?\nOption A\nOption B\nOption C\nChange in domestic production Change in government revenue Decreased by 5 000 kg Increased by $50 000 Decreased by 5 000 kg Increased by $200 000 Decreased by 10 000 kg Increased by $50 000 Decreased by 10 000 kg Increased by $200 000"
+  },
+  {
+   "id": "econ202019",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "The table shows exchange rate movements for the Australian economy and United States economy. Year Australian dollar (AUD) US dollar (USD) 1 1 0.9 2 0.9 1 All other things being equal, which of the following best accounts for the fluctuation of the exchange rate between Year 1 and Year 2?\nThere has been a depreciation of the AUD caused by an upturn in the international business cycle.\nThere has been a depreciation of the AUD caused by a downturn in domestic economic activity.\nThere has been a depreciation of the USD caused by an increase in Australia’s cash rate relative to the US cash rate.\nThere has been a depreciation of the USD caused by a decrease in the deficit of the net income component of the US balance of payments."
+  },
+  {
+   "id": "econ202020",
+   "year": 2020,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The diagram shows the demand and supply curves of labour for a hypothetical economy. The government of this economy has introduced a minimum wage (Wl ) set above the equilibrium wage rate (We ). Wage ($) Labour DL SL Wl We The introduction of this minimum wage has an impact on the Lorenz curve of this economy. The most likely impact on the Lorenz curve will be a shift\ninwards as all employees receive a higher wage.\ninwards as there is an increase in the level of employment.\noutwards as all employees receive a higher wage.\noutwards as there is an increase in the level of unemployment. BLANK PAGE BLANK PAGE BLANK PAGE © 2020 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2020 HIGHER SCHOOL CERTIFICATE EXAMINATION Economics Section II Answer Booklet Centre Number Student Number 6741310293 1061 15110 40 marks Attempt Questions 21–24 Allow about 1 hour and 15 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 0730310295"
+  },
+  {
+   "id": "econ202021",
+   "year": 2020,
+   "number": "21",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "(a) The table shows economic information for a hypothetical economy. Year Gini coefficient Human development index 1 0.87 0.35 2 0.74 0.36 With reference to the given data, outline ONE possible reason for the change in the distribution of income from Year 1 to Year 2 for this economy. 2 (b) A developing economy has entered into a multilateral free trade agreement with advanced economies. Outline ONE disadvantage to the developing economy of entering into this trade agreement. 2 (c) Describe ONE way in which the World Bank helps promote economic development in developing economies. 3 (d) Economic growth does not always lead to an improvement in economic development. Explain TWO factors that could cause this. 4 End of Question 21"
+  },
+  {
+   "id": "econ202022",
+   "year": 2020,
+   "number": "22",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Labour market policy",
+   "text": "(a) Distinguish between structural unemployment and cyclical unemployment. 2 (b) Describe how ONE government policy has been used to address a skills shortage in the Australian labour market. 3 (c) Explain how a decrease in aggregate demand can lead to underemployment of labour in an economy. 4 End of Question 22"
+  },
+  {
+   "id": "econ202023",
+   "year": 2020,
+   "number": "23",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Global trade",
+   "text": "(a) Outline ONE reason for the protection of domestic industries. 2 (b) A government wants to protect the sugar industry by introducing a subsidy. The diagram below shows the market before the introduction of the subsidy. On the diagram, draw the curve to show the effect of a subsidy with imports equal to zero. 1 graph (c) Discuss Australia’s involvement in ONE bilateral trade agreement. 6 Bilateral trade agreement: End of Question 23"
+  },
+  {
+   "id": "econ202024",
+   "year": 2020,
+   "number": "24",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Microeconomic policy",
+   "text": "(a) Describe the relationship between microeconomic reform and aggregate supply. 3 (b) With reference to a specific product market, explain how ONE microeconomic reform has led to increased efficiencies. 4 Product market: (c) Explain how microeconomic reform in the labour market can lead to a lowering of cost inflation in Australia. 4 End of Question 24 Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. © 2020 NSW Education Standards Authority 2020 HIGHER SCHOOL CERTIFICATE EXAMINATION 1062 Economics Section III 20 marks"
+  },
+  {
+   "id": "econ202025",
+   "year": 2020,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "Assess the impact of exchange rate fluctuations on the external stability of the Australian economy. In your response, refer to the information provided. The fall in the value of the Australian dollar, taking it down to levels that counteract Australia’s relatively high cost levels, is very positive for sectors that compete internationally, including manufacturing, tourism, higher education, agriculture and mining. UN Climate Change Summit 2019 Source: https://www.un.org/en/climatechange/2019-climate-action-summit With courtesy of Dr. Shane Oliver Diagram Australian Bureau of Statistics © Commonwealth of Australia OR"
+  },
+  {
+   "id": "econ202026",
+   "year": 2020,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "Assess the effectiveness of government economic policies and international agreements in the management of the environment in Australia. In your response, refer to the information provided. With global emissions reaching record levels and showing no sign of peaking, the UN . . . called upon all leaders to come to . . . the Climate Action Summit with concrete, realistic plans to enhance their nationally determined contributions by 2020, in line with reducing greenhouse gas emissions by 45 per cent over the next decade . . . [At the Summit] . . . there was also widespread concern that the world is presently way off course to meet the global target, as emissions continue to increase, and global temperatures rise. UN Climate Action Summit, 2019 https://www.un.org/en/climatechange/2019-climate-action-summit Bar graph showing the p rimary en ergy con sumpt ion from 2017 c our tes y o f A MP Cap ita l. Please turn over Section IV 20 marks"
+  },
+  {
+   "id": "econ202027",
+   "year": 2020,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment",
+   "text": "Assess the effectiveness of macroeconomic policies in achieving economic growth and full employment in the Australian economy. OR"
+  },
+  {
+   "id": "econ202028",
+   "year": 2020,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "To what extent do limitations of economic policies affect the achievement of economic growth and a more equal distribution of income in the Australian economy? End of paper © 2020 NSW Education Standards Authority"
+  },
+  {
+   "id": "econ202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "What is a role of the World Trade Organisation?\nTo resolve trade disputes\nTo provide low interest loans\nTo set tariff rates and subsidy levels\nTo organise countries into trading blocs"
+  },
+  {
+   "id": "econ202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A hypothetical economy has a small population, a wide export base and a high per capita income. How would this economy be classified?\nEmerging\nAdvanced\nDeveloping\nEconomic forum"
+  },
+  {
+   "id": "econ202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment",
+   "text": "Which of the following is NOT contained in the National Employment Standards?\nAnnual leave\nPublic holidays\nNational minimum wage\nRequests for flexible working arrangements"
+  },
+  {
+   "id": "econ202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A government budgets for a deficit but then there is an unexpected decrease in the level of economic activity. Which row of the table shows the most likely change in tax revenue and the deficit that results?\nOption A\nOption B\nOption C\nTax revenue Deficit Fall Increase Fall Decrease Rise Increase Rise Decrease"
+  },
+  {
+   "id": "econ202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Fiscal policy",
+   "text": "Which of the following reflects deliberate changes in fiscal policy?\nCyclical component\nStructural component\nHeadline cash balance\nUnderlying cash balance"
+  },
+  {
+   "id": "econ202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The Gini coefficient of a hypothetical economy has changed from 0.2 to 0.3. An increase in which of the following is most likely to have caused this?\nThe tax-free threshold\nA tax on consumption\nBusiness spending on training\nGovernment spending on welfare"
+  },
+  {
+   "id": "econ202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is a correct statement about an automatic stabiliser?\nAn increase in marginal income tax rates slows economic growth.\nAn increase in infrastructure spending increases economic growth.\nA reduction in unemployment benefit rates slows economic growth.\nTaxpayers moving into higher tax brackets slows economic growth."
+  },
+  {
+   "id": "econ202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following would lead to an increase in free trade?\nDecrease in export incentives and increase in tariffs\nIncrease in export incentives and decrease in subsidies\nIncrease in size of existing quotas and decrease in tariffs\nDecrease in size of existing quotas and decrease in subsidies"
+  },
+  {
+   "id": "econ202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A hypothetical economy has moved from a Current Account Deficit to a Current Account Surplus. Which of the following is most likely to explain this?\nA decrease in net saving and depreciation of the currency\nA decrease in the price of imports and depreciation of the currency\nAn increase in export prices and an increase in debt servicing costs\nAn increase in business investment and a decrease in portfolio investment"
+  },
+  {
+   "id": "econ202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The graph shows the business cycle for an economy. G r aph of business cycle Which row of the table shows the combination of changes that would most likely move GDP from X to Y ?\nOption A\nOption B\nOption C\nTaxation Cash rate Rise Fall Fall Fall Fall Rise Rise Rise"
+  },
+  {
+   "id": "econ202111",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "The table shows data for a hypothetical economy. Year Consumer Price Index (CPI) 1 130 2 140 3 148 What is the inflation rate for Year 3?\n5.4%\n5.7%\n6.2%\n8.0%"
+  },
+  {
+   "id": "econ202112",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "In a hypothetical economy, there is an increase in the marginal propensity to save (MPS). Which row of the table shows the likely effects on both the national income and the simple multiplier?\nOption A\nOption B\nOption C\nNational income Simple multiplier Increased Increased Increased Decreased Decreased Increased Decreased Decreased"
+  },
+  {
+   "id": "econ202113",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following statements is most correct in relation to public goods?\nEach additional user of a public good affects the amount available to others.\nPrivate companies supply public goods because they make a profit from them.\nAnyone can benefit from using public goods without paying directly for them.\nLow income earners are disadvantaged because they cannot afford public goods."
+  },
+  {
+   "id": "econ202114",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Migrant workers in Australia often send money back to their families overseas. How is this recorded in Australia’s Current Account?\nPrimary Income debit\nPrimary Income credit\nSecondary Income debit\nSecondary Income credit"
+  },
+  {
+   "id": "econ202115",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment",
+   "text": "Which of the following is most likely to cause an increase in both the participation rate and the unemployment rate?\nAn increase in the minimum wage\nAn increase in government spending\nAn increase in hidden unemployment\nAn increase in the age of school leavers"
+  },
+  {
+   "id": "econ202116",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A new tollway eliminates 24 sets of traffic lights. Which of the following is NOT an externality as a result of the new tollway?\nMore noise pollution\nMore traffic on local streets\nIncreased value of nearby land\nDecreased travel times for users"
+  },
+  {
+   "id": "econ202117",
+   "year": 2021,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment",
+   "text": "The table shows data for a hypothetical economy. Labour force (million) Part-time employed (million) Unemployed (million) Working-age population (million) Year 1 13.6 2.7 2.5 25 Year 2 14.3 2.9 2.3 26 Which of the following best describes the changes to the unemployment rate and the participation rate from Year 1 to Year 2?\nOption A\nOption B\nOption C\nUnemployment rate Participation rate Decreased Increased Increased Decreased Decreased Decreased Increased Increased"
+  },
+  {
+   "id": "econ202118",
+   "year": 2021,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia",
+   "text": "The table shows Balance of Payments data for a hypothetical economy. Balance of Payments category $ billion Imports of goods and services $110 Exports of goods and services $125 Net Primary Income Net Secondary Income Capital Account Financial Account Z What is the value of the Balance of Goods and Services (BOGS) and the value of Z ?\nOption A\nOption B\nOption C\nBOGS Z $80 $15 $15 $80"
+  },
+  {
+   "id": "econ202119",
+   "year": 2021,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "A hypothetical economy is operating under a managed exchange rate. The exchange rate is to be maintained between $0.60–$0.70 USD. There has been an increase in demand for the domestic currency leading to its value moving outside the central bank’s range. How should the central bank intervene to move the exchange rate towards its range?\nIncrease cash rate to appreciate the currency\nDecrease cash rate to depreciate the currency\nSell foreign currency to appreciate the currency\nBuy domestic currency to depreciate the currency"
+  },
+  {
+   "id": "econ202120",
+   "year": 2021,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "The table shows data for a hypothetical economy. Nominal Gross Domestic Product (GDP) ($bn) Consumer Price Index (CPI) Year 1 200 100 Year 2 250 115 Year 3 300 125 What is the real economic growth rate for this economy in Year 3?\n8.7%\n9.6%\n10.4%\n20% © 2021 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2021 HIGHER SCHOOL CERTIFICATE EXAMINATION Economics Section II Answer Booklet 40 marks Attempt Questions 21–24 Allow about 1 hour and 15 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Centre Number Student Number 6741310293 2061 15110 Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 0730310295"
+  },
+  {
+   "id": "econ202121",
+   "year": 2021,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "(a) Outline ONE influence of the G20 on the global economy. 2 (b) Distinguish between trading blocs and monetary unions. 2 (c) Evaluate strategies used to promote economic development in an economy other than Australia. 6 Economy: End of Question 21"
+  },
+  {
+   "id": "econ202122",
+   "year": 2021,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "(a) The diagram shows the private costs and private benefits of producing plastic bottles. 1 Diagram show ing c osts and benefi ts On the diagram, draw the curve that would include the total cost to society of producing these bottles. (b) Explain how ONE market-based policy can affect environmental sustainability in Australia. Support your answer with an example. 4 (c) Explain the limitations of economic policies in relation to Australia’s ability to achieve environmental sustainability. 5 End of Question 22"
+  },
+  {
+   "id": "econ202123",
+   "year": 2021,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Microeconomic policy",
+   "text": "(a) Outline the impact of an increase in the minimum wage on cost inflation. 2 (b) Explain the effects of low inflation on the Australian economy. 4 (c) How can microeconomic policies reduce the non-accelerating inflation rate o unemployment (NAIRU)? Support your answer with an Australian example. f 4 End of Question 23"
+  },
+  {
+   "id": "econ202124",
+   "year": 2021,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Global trade",
+   "text": "(a) Outline how an increase in protectionist policies in the global economy could affect the demand for the Australian dollar. 2 (b) Explain how the Australian dollar can both appreciate against the US dollar and depreciate against the trade weighted index at the same time. 3 (c) Analyse the effects of an appreciation of the Australian dollar on the Australian economy. 5 End of Question 24 Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. © 2021 NSW Education Standards Authority 2021 HIGHER SCHOOL CERTIFICATE EXAMINATION 2062 Economics Section III 20 marks"
+  },
+  {
+   "id": "econ202125",
+   "year": 2021,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Fiscal policy",
+   "text": "Evaluate the effectiveness of Australia’s fiscal policy in managing unemployment, income distribution and external stability. In your answer, refer to the information provided. Austr alian Gove rment Bu dget Balance Chart Reserve Bank of Australia 2021 The Government’s economic response was designed to support Australian households and businesses through an exceptionally difficult period. It has helped keep businesses in business and Australians in jobs through the JobKeeper Payment and Boosting Cash Flow for Employers, and supported Australians in need with the Coronavirus Supplement and Early Release of Superannuation. The Government’s response is now transitioning to ensure the Australian economy recovers strongly by targeting additional temporary support measures to boost household incomes, bring forward business and infrastructure investment activity, and drive the unemployment rate back down. Australian Federal Budget 2020–21 © The Commonwealth of Australia"
+  },
+  {
+   "id": "econ202126",
+   "year": 2021,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Monetary policy",
+   "text": "Evaluate the effectiveness of Australia’s monetary policy in managing economic growth, income distribution and external stability. In your answer, refer to the information provided. G r a p h Reserve Bank of Australia 2020 Reproduced by permission of the Reserve Bank of Australia The Reserve Bank Board reduced the cash rate twice in March 2020, to 0.25 per cent, and to 0.1 per cent on 3 November 2020. This is boosting the cash flow of businesses and the household sector as a whole. It is also helping Australia’s trade-exposed industries through the exchange rate. At the same time, low interest rates do have negative consequences for some people, especially those relying on interest income. The Reserve Bank Board has discussed these consequences, but the evidence is that lower interest rates do benefit the community as a whole. Reserve Bank of Australia 2020 Reproduced by permission of the Reserve Bank of Australia Please turn over Section IV 20 marks"
+  },
+  {
+   "id": "econ202127",
+   "year": 2021,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Global trade",
+   "text": "Assess the effects, over the last ten years, of free trade agreements and protectionist policies on the global economy. OR"
+  },
+  {
+   "id": "econ202128",
+   "year": 2021,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Assess the effects, over the last ten years, of changes in the global economy on Australia’s trade and financial flows. End of paper © 2021 NSW Education Standards Authority"
+  },
+  {
+   "id": "econ202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is responsible for the promotion of global financial stability?\nWorld Bank\nUnited Nations\nInternational Monetary Fund\nOrganisation for Economic Cooperation and Development"
+  },
+  {
+   "id": "econ202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A jobless person has now stopped looking for work due to the lack of suitable job vacancies. Which row of the table shows how this person would now be counted in official labour force data? Unemployed In the labour force\nNo No\nNo Yes\nYes No\nYes Yes"
+  },
+  {
+   "id": "econ202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following will NOT contribute to the process of globalisation?\nIncrease in international migration\nIncrease in international financial flows\nTrade policies which are less protectionist\nDecrease in significance of transnational corporations"
+  },
+  {
+   "id": "econ202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment",
+   "text": "Full employment is said to occur when the unemployment rate is\nequal to zero.\nlow and unemployment is only cyclical.\nlow and unemployment is only structural.\nlow and consistent with a non-accelerating rate of inflation."
+  },
+  {
+   "id": "econ202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "Which of the following is most likely to result from a depreciation in a nation’s currency? . Its imports become cheaper and its inflation decreases. . Its imports become more expensive and its inflation increases. . Its exports become cheaper and its inflation decreases. . Its exports become more expensive and its inflation increases. A B C D 6 Farmers purchase and trade permits for water use along a river. This is an example of environmental management through the use of\nIts imports become cheaper and its inflation decreases.\nIts imports become more expensive and its inflation increases.\nIts exports become cheaper and its inflation decreases.\nIts exports become more expensive and its inflation increases."
+  },
+  {
+   "id": "econ202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "Farmers purchase and trade permits for water use along a river. This is an example of environmental management through the use of\ntargets.\nregulations.\nmarket-based policies.\ninternational agreements."
+  },
+  {
+   "id": "econ202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "An Australian company buys shares in a European bank to the value of $1 million. Where would this be recorded on the Capital and Financial Account?\nDirect investment\nPortfolio investment\nFinancial derivatives\nOther investment"
+  },
+  {
+   "id": "econ202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The diagram shows a shift in aggregate demand for an economy. Average p rice le vel - R eal GDP gr aph All other things being equal, which of the following factors is NOT likely to have caused this shift?\nAn increase in exports\nAn increase in imports\nA decrease in business investment\nA decrease in government expenditure"
+  },
+  {
+   "id": "econ202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Why might a government look to end a short-term wage subsidy?\nTo expand the economy\nTo reduce the government budget deficit\nTo reduce the government budget surplus\nTo discourage employers from hiring new employees"
+  },
+  {
+   "id": "econ202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A government denies a proposed merger between two airlines. What is this an example of?\nRegulation being used to enhance competition in a factor market\nRegulation being used to enhance competition in a product market\nDeregulation being used to enhance competition in a factor market\nDeregulation being used to enhance competition in a product market"
+  },
+  {
+   "id": "econ202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "The table shows selected information for the balance of payments for a country with a floating exchange rate. Component Amount ($ billion) Net goods 80.5 Net services 10.2 Primary income −63.8 Secondary income −4.3 Capital account −13.2 Financial account −17.5 Net error and omissions 8.1 What is the balance on the Current Account?\n$22.6 billion\n−$22.6 billion\n$30.7 billion\n−$30.7 billion"
+  },
+  {
+   "id": "econ202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "What would be the likely impact of a change in a goods and services tax (GST) from 10% to 15%?\nDecreased Gini coefficient and greater income equality\nDecreased Gini coefficient and greater income inequality\nIncreased Gini coefficient and greater income equality\nIncreased Gini coefficient and greater income inequality"
+  },
+  {
+   "id": "econ202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is most likely to increase the labour force participation rate?\nA decrease in the tax-free threshold\nAn increase in the childcare subsidy\nAn increase in the highest marginal tax rate\nAn increase in the minimum school leaving age"
+  },
+  {
+   "id": "econ202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which row of the table shows the combination of shifts in the aggregate demand (AD) and aggregate supply (AS) curves that is most likely to lower gross domestic product (GDP)? Shift in aggregate Shift in aggregate demand curve supply curve\nRight Right\nRight Left\nLeft Right\nLeft Left"
+  },
+  {
+   "id": "econ202215",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "Which of the following would m nemployment (NAIRU) to fall? ost likely cause the non-accelerating inflation rate of u\nIncreased interest rates\nIncreased company tax rate\nIncreased government spending on welfare payments\nIncreased government spending on vocational training"
+  },
+  {
+   "id": "econ202216",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "In Year 1, four countries each had real GDP of $20 billion. The figures for Year 2 for each country are shown in the table. Nominal GDP ($ billion) CPI Country A 18 90 Country B 22 110 Country C 23 118 Country D 27 130 Which country experienced negative economic growth in real terms in Year 2?\nCountry A\nCountry B\nCountry C\nCountry D"
+  },
+  {
+   "id": "econ202217",
+   "year": 2022,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows data for a three-sector economy. Year Income (Y) ($ million) Consumption (C) ($ million) 1 2000 1600 2 2400 1920 What will be the level of income in Year 3 if investment falls by $30 million?\n$1970 million\n$2250 million\n$2370 million\n$2400 million"
+  },
+  {
+   "id": "econ202218",
+   "year": 2022,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows selected information for a hypothetical economy. Year Export price index Import price index 1 100 100 2 115 105 3 110 85 Which row of the table below shows the change in terms of trade (ToT) from Year 2 to Year 3 and a corresponding possible reason for this change? ToT Reason\nImproves Reduction in foreign labour costs\nImproves Increase in global demand for exports\nDeteriorates Decrease in global demand for exports\nDeteriorates Increase in the supply of foreign raw materials Refer to the following diagram to answer Questions 19−20. The diagram shows the market for a good in a particular economy. Pr ice an d Q uan tit y G raph Quantity (millions) This economy initially had a tariff of $6 placed upon the world price of $8 for this good. The government has now reduced the tariff from $6 to $4."
+  },
+  {
+   "id": "econ202219",
+   "year": 2022,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "All else remaining unchanged, what is the impact of this change in tariff on government revenue?\nIncrease of $80 million\nDecrease of $80 million\nIncrease of $240 million\nDecrease of $240 million"
+  },
+  {
+   "id": "econ202220",
+   "year": 2022,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "All else remaining unchanged, by how much does the revenue of foreign producers of this good change as a result of this lower tariff?\n$40 million\n$80 million\n$160 million\n$240 million © 2022 NSW Education Standards Authority Do NOT write in this area. 2022  HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Economics Student Number Section II Answer Booklet 40 marks Attempt Questions 21–24 Allow about 1 hour and 15 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. 6741310293 2061 15110"
+  },
+  {
+   "id": "econ202221",
+   "year": 2022,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Fiscal policy",
+   "text": "(a) Define the term fiscal policy. 2 (b) Explain a possible consequence of ONE method of financing a budget deficit. 3 Name of method: (c) Explain the economic factors that have contributed to the Australian Government’s current fiscal policy stance. 5 End of Question 21"
+  },
+  {
+   "id": "econ202222",
+   "year": 2022,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "(a) Using examples, distinguish between a public good and a private good. 2 (b) Explain how the use of solar panels by households can create a positi externality. ve 3 (c) Explain how a government’s objective of environmental sustainability may conflict with its other economic objectives. 5 End of Question 22"
+  },
+  {
+   "id": "econ202223",
+   "year": 2022,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "(a) Outline how the value of a currency is determined under a rate system. floating exchange 2 (b) Explain the impact of an increase in a country’s cash rate on its exchange rate. 3 (c) Explain likely changes to the structure of industry in Australia as a result of current trends in the global economy. 5 End of Question 23"
+  },
+  {
+   "id": "econ202224",
+   "year": 2022,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "(a) Consider an economy other than Australia. Name of economy: (i) Explain ONE positive impact that trade has had on this economy. 3 (ii) Explain ONE negative impact that trade has had on this economy. 3 (b) A country has decided to increase its quota of imported beef. 4 Discuss the likely impact of this increase on this country’s economy. End of Question 24 Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. © 2022 NSW Education Standards Authority 2022 HIGHER SCHOOL CERTIFICATE EXAMINATION Economics Section III 20 marks"
+  },
+  {
+   "id": "econ202225",
+   "year": 2022,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "Analyse the impact of changes in the components of the balance of payments on the value of the Australian dollar. In your answer, refer to the information provided. The current account surplus reached another record high in the March quarter 2021, driven by a record $5.2 billion increase in the balance on goods and services surplus. Exports of goods and services rose $7.8 billion (7 per cent), while imports of goods and services rose $2.6 billion (3 per cent). The net primary income deficit rose by $3.1 billion to $6.0 billion in the March quarter 2021. Australian Bureau of Statistics, 2021 Australian dollar/US dollar exchange rate 2012–2022 1.1 1.0 0.9 0.8 0.7 0.6 2012 2014 2016 2018 2020 2022 Australian Bureau of Statistics, 2022 Current account as a % of GDP"
+  },
+  {
+   "id": "econ202226",
+   "year": 2022,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Labour market policy",
+   "text": "Analyse the impact of labour market policies on economic growth and the distribution of income and wealth in Australia. In your answer, refer to the information provided. Productivity 2016–17 2017–18 2018–19 2019–20 2020–21 GDP per hour worked 0.8 0.2 1.5 1.2 Gross value added per hour worked market sector 1.4 0.3 0.0 1.8 1.2 Real unit labour costs 0.1 Australian Bureau of Statistics, 2021 Please turn over Wages and GDP growth rates, 2012–2022 ©Australian Bureau of Statistics ©Australian Bureau of Statistics While aggregate wages growth has picked up recently, it has only returned to the low rates prevailing before the pandemic . . . This partly reflects elements of Australia’s wage-setting processes, which create inertia [lack of change] in aggregate wage outcomes. These processes include enterprise agreements that tend to only get renegotiated once every two to three years, the annual review of award wages by the Fair Work Commission and public sector wages policies. Speech delivered by Phillip Lowe, Governor, RBA, December 2021 © Australian Bureau of Statistics Section IV 20 marks"
+  },
+  {
+   "id": "econ202227",
+   "year": 2022,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "Compare how inflation affects individuals, firms and government in Australia. OR"
+  },
+  {
+   "id": "econ202228",
+   "year": 2022,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "Analyse reasons for the differences that exist between nations in terms of economic growth and development. End of paper © 2022 NSW Education Standards Authority"
+  },
+  {
+   "id": "econ202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "What is the role of the Organisation for Economic Co-operation and Development (OECD)?\nTo provide interest-free loans to developing economies\nTo promote sustainable growth and employment for member countries\nTo boost global financial liquidity during financial crises and global downturns\nTo provide a forum for leaders and finance ministers of the seven largest economies"
+  },
+  {
+   "id": "econ202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is the largest export industry in terms of value for Australia?\nManufacturing\nMining\nRural\nServices"
+  },
+  {
+   "id": "econ202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "An economy’s labour force participation rate falls from 65% to 60%. What is a possible reason for this change?\nAn increase in this economy’s GDP\nAn increase in funding for childcare places\nThe official school leaving age has been increased from 16 to 18 years\nThe official retirement age of workers has been increased from 65 to 68 years"
+  },
+  {
+   "id": "econ202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The diagram shows the aggregate demand and supply curves for an economy. Price level P1 P2 AD2 AD1 AS Y1 Y2 National income (real GDP) What may have caused the shift from AD to AD ? 1 2\nA decrease in taxation\nAn increase in imports\nA decrease in consumption\nAn increase in capacity constraints"
+  },
+  {
+   "id": "econ202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "To protect its domestic farmers, Country A has increased tariffs on imports of agricultural products from Country B. Which row of the table shows the effect of the higher tariff on each country? Consumer prices for agricultural products in Country A Producer’s income in Country B\nHigher Increased\nHigher Decreased\nLower Increased\nLower Decreased"
+  },
+  {
+   "id": "econ202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "What is a likely effect on Australia of signing a multilateral free trade agreement?\nAn increase in trade with non-member countries\nAn increase in tariff revenue for the government\nAn increase in long-run real gross domestic product\nLower levels of short-term structural unemployment"
+  },
+  {
+   "id": "econ202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is an example of a public good?\nClean air\nPublic housing\nInternet access\nGovernment buses"
+  },
+  {
+   "id": "econ202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following represents a contractionary change in fiscal stance from Year 1 to Year 2? Budget outcome Year 1 Budget outcome Year 2\n$15 million surplus $5 million surplus\n$10 million deficit $10 million deficit\n$15 million deficit $20 million deficit\n$10 million surplus $20 million surplus"
+  },
+  {
+   "id": "econ202309",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows data for Country A. Country A Human development index Year 1 0.46 Year 2 0.57 Year 3 0.62 It is likely that Country A has experienced\nincreased levels of protection.\ndecreased access to technology.\ngreater access to transport and communication.\ndecreased levels of international financial flows."
+  },
+  {
+   "id": "econ202310",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A country has decided to decrease its import quota on a particular good. What is the most likely reason for this decision?\nTo reduce dumping on domestic markets\nTo reduce its current account surplus in the long term\nTo increase the standard of living and income of its citizens\nTo encourage specialisation in the industry in which it has a comparative advantage"
+  },
+  {
+   "id": "econ202311",
+   "year": 2023,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The following diagram shows a foreign exchange market for Australian dollars. Price of $A in $US D S2 S1 Quantity of $A Which of the following is most likely to have caused the shift in supply of $A from S 1 to S ? 2\nAn increase in commodity prices\nA decrease in interest rates in Australia\nA decrease in Australia’s demand for imports\nA decrease in investment opportunities in Australia"
+  },
+  {
+   "id": "econ202312",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "If the Reserve Bank of Australia adjusts the interest rate corridor to decrease the cash rate target, which of the following is most likely to occur? Asset prices Investment\nDecrease Decrease\nDecrease Increase\nIncrease Decrease\nIncrease Increase"
+  },
+  {
+   "id": "econ202313",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows hypothetical data for Country X. Loans owed by Country X to foreigners $1200 billion Loans owed by foreigners to Country X $300 billion Foreign assets owned by Country X $200 billion Country X assets owned by foreigners $500 billion What is the value of Net Foreign Liabilities for Country X?\n$600 billion\n$800 billion\n$900 billion\n$1200 billion"
+  },
+  {
+   "id": "econ202314",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A government imposes a tax to reduce a negative externality of production. How does this seek to correct the market failure?\nIncreases the marginal private cost\nDecreases the marginal private cost\nIncreases the marginal private benefit\nDecreases the marginal private benefit"
+  },
+  {
+   "id": "econ202315",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A country has experienced a significant deterioration in its terms of trade (ToT). What combination of events could have caused this? Export price index Import price index\n10% decrease 20% increase\n20% decrease 20% decrease\n10% increase 20% decrease\n20% increase 20% increase"
+  },
+  {
+   "id": "econ202316",
+   "year": 2023,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "The diagram shows the fixed exchange rate for a hypothetical economy. Exchange rate in $US 1.00 0.75 0.50 Fixed exchange rate D S Quantity What action will the central bank of this economy need to undertake to maintain this rate?\nIncrease interest rates\nBuy foreign currency\nBuy domestic currency\nRestrict currency outflows"
+  },
+  {
+   "id": "econ202317",
+   "year": 2023,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "The table shows CPI data for an economy. Expenditure group Weighting factor in CPI (%) CPI by expenditure group (base year = 100) Education 15 115 Food 35 110 Health 20 125 Housing 16 130 Which expenditure group made the greatest contribution to inflation?\nEducation\nFood\nHealth\nHousing"
+  },
+  {
+   "id": "econ202318",
+   "year": 2023,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows national income data for a hypothetical economy. Year National income ($ million) Consumption ($ million) Savings ($ million) 1 1000 750 250 2 1100 830 270 3 ? If the government increased its level of expenditure by $50 million in Year 3, what would be the new level of national income?\n$1150 million\n$1200 million\n$1350 million\n$1600 million"
+  },
+  {
+   "id": "econ202319",
+   "year": 2023,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The graph shows the demand and supply for T-shirts in Country X at the world price of $5. Market for T-shirts in Country X D S 25 50 75 100 125 150 175 Price ($) 25 20 15 10 5 World price Quantity (’000) Country X would like to reduce the number of imported T-shirts by 50 000. What subsidy would Country X need to pay its domestic producers per T-shirt to achieve this reduction in the number of imports?\n$5\n$10\n$15\n$20"
+  },
+  {
+   "id": "econ202320",
+   "year": 2023,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows trade weightings for five of Australia’s trading partners. Currency Trade weight (%) Chinese renminbi 31 Japanese yen 13 European euro 9 US dollar 8 South Korean won 7 Which pair of movements would cause a decrease in the Trade Weighted Index? 10% appreciation of the $A against the 10% depreciation of the $A against the\nChinese renminbi European euro\nJapanese yen South Korean won\nEuropean euro US dollar\nUS dollar Japanese yen BLANK PAGE BLANK PAGE © 2023 NSW Education Standards Authority Do NOT write in this area. 2023 HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Economics Student Number Section II Answer Booklet 40 marks Attempt Questions 21–24 Allow about 1 hour and 15 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. 6741310293 2061 15110"
+  },
+  {
+   "id": "econ202321",
+   "year": 2023,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Global trade",
+   "text": "(a) Outline TWO roles of the World Trade Organization (WTO). 2 (b) Explain why countries trade. 3 (c) Explain the possible effects of a reduction in global trade protection on the global distribution of income. 5 End of Question 21"
+  },
+  {
+   "id": "econ202322",
+   "year": 2023,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "(a) The data shows the balance of payments for an economy under a floating exchange rate. 1 Components Dollars billion Export goods 20 Import goods 10 Net services 30 Net primary income 30 Net secondary income ? Capital account 10 Financial account Calculate the value of net secondary income (dollars billion) for the balance of payments data shown. (b) Explain the relationship between the current account and the capital and financial account in this economy. 3 (c) Assess the possible effects of a depreciation of the currency on the current account in this economy. 6 End of Question 22"
+  },
+  {
+   "id": "econ202323",
+   "year": 2023,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inequality",
+   "text": "(a) The diagram shows a Lorenz curve for a hypothetical economy. 1 Line of equality Cumulative % of national income Cumulative % of households ranked by income The Gini coefficient for this economy has decreased. Sketch the new Lorenz curve on the diagram above. (b) Outline ONE way a government could decrease income inequality. 2 (c) How can family structure contribute to income inequality? 2 (d) Analyse the economic and social costs of an increase in income inequality. 5 End of Question 23"
+  },
+  {
+   "id": "econ202324",
+   "year": 2023,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Microeconomic policy",
+   "text": "(a) Outline ONE benefit of training and employment programs for the Australian economy. 2 (b) Explain how the use of individualised methods of determining employment contracts may benefit employers and employees. 3 (c) Assess the effectiveness of using microeconomic policies to reduce unemployment in Australia. 5 End of Question 24 Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. © 2023 NSW Education Standards Authority 2023 HIGHER SCHOOL CERTIFICATE EXAMINATION Economics Section III 20 marks"
+  },
+  {
+   "id": "econ202325",
+   "year": 2023,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "Analyse how changes to the value, composition and direction of Australia’s trade have affected its economic performance. In your answer, refer to the information provided. In June 2019, Australia recorded its first current account surplus in 44 years driven by Australia’s exports, fuelled by record-high commodity prices. As a result, exports have contributed strongly to Australia’s economic growth and external stability. Reserve Bank of Australia, January 2023 2017 2013 2009 2005 2001 2021 0 10 20 30 % China EU* US Japan India *The graph has been revised to exclude the UK KEY Exports by destination Annual share of total values"
+  },
+  {
+   "id": "econ202326",
+   "year": 2023,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "Analyse the possible effects on the Australian economy of pursuing the goal of environmental sustainability. In your answer, refer to the information provided. The sustainable use of energy and energy security is becoming an increasing issue for countries seeking social cohesion and economic prosperity. In Australia, as demand for energy increases there will be a greater emphasis in optimising energy efficiency. Services Australia, Environmental Sustainability Policy, November 2022 Australian coal exports scenario Annual exports Tonnes (million) 400 300 200 100 0 Current policies Net-zero 2050 2020 2005 2014 2023 2032 2041 2050 Reserve Bank of Australia, August 2022 Please turn over © Reserve Bank of Australia, August 2022 © Commonwealth of Australia/Services Australia Section IV 20 marks"
+  },
+  {
+   "id": "econ202327",
+   "year": 2023,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "Evaluate the impact of globalisation in achieving economic growth and development on an economy other than Australia. OR"
+  },
+  {
+   "id": "econ202328",
+   "year": 2023,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "Evaluate the effectiveness of Australia’s macroeconomic policies in achieving economic growth and price stability. End of paper © 2023 NSW Education Standards Authority"
+  },
+  {
+   "id": "econ202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following has improving quality of life in developing countries as its main role?\nWorld Bank\nWorld Trade Organization (WTO)\nInternational Monetary Fund (IMF)\nOrganisation for Economic Co-operation and Development (OECD)"
+  },
+  {
+   "id": "econ202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is a benefit of a centralised wage determination system?\nPromotion of structural change\nCreation of greater wage flexibility\nProvision of a safety net for workers\nCreation of greater income inequality"
+  },
+  {
+   "id": "econ202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which TWO economic objectives conflict with one another in the short term?\nPrice stability and full employment\nEconomic growth and unemployment\nIncome equality and external stability\nInflation and environmental sustainability"
+  },
+  {
+   "id": "econ202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is a disadvantage of free trade for a domestic economy?\nGreater competition\nHigher domestic prices\nHigher rates of dumping\nIncreasing economies of scale"
+  },
+  {
+   "id": "econ202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "A foreign investor buys a 5% share in an Australian company. How is this recorded in Australia’s capital and financial account?\nDirect investment debit\nDirect investment credit\nPortfolio investment debit\nPortfolio investment credit"
+  },
+  {
+   "id": "econ202406",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The following information is for a hypothetical economy. Population 16 000 000 Working age population 11 000 000 Employed people 7 000 000 Unemployed people 2 000 000 What is the labour force participation rate for this economy?\n44%\n56%\n78%\n82%"
+  },
+  {
+   "id": "econ202407",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows data for national income and savings for a hypothetical economy. Year Income ($M) Savings ($M) 1 375 160 2 475 200 What is the value of marginal propensity to consume (MPC)?\n0.34\n0.40\n0.60\n0.80"
+  },
+  {
+   "id": "econ202408",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following has the shortest implementation time lag?\nFiscal policy\nMonetary policy\nEnvironmental policy\nMicroeconomic policy"
+  },
+  {
+   "id": "econ202409",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The improved efficiency of job search agencies is most likely to reduce which of the following?\nThe participation rate\nFull-time employment\nCyclical unemployment\nFrictional unemployment"
+  },
+  {
+   "id": "econ202410",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following actions by the Reserve Bank of Australia would appreciate the value of the Australian dollar? Cash rate FOREX market transaction\nIncrease Sell Australian dollars\nIncrease Buy Australian dollars\nDecrease Sell Australian dollars\nDecrease Buy Australian dollars"
+  },
+  {
+   "id": "econ202411",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The diagram shows the aggregate demand and supply curves for an economy. Price level AD AS1 AS2 AS1 AS2 AD Real GDP What would most likely cause the shift from AS to AS ? 1 2\nReduction in tertiary education fees\nIncrease in the goods and services tax to 15%\nReduction in migrants arriving in the economy\nIncrease in government spending on aged pensions"
+  },
+  {
+   "id": "econ202412",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "The table shows selected information for the balance of payments for an economy with a floating exchange rate. Category Dollars billion Exports of goods ? Imports of goods 36 Net services 12 Net primary income Net secondary income Capital account 24 Financial account 66 What is the value of the exports of goods?\nOption A\nOption B\n$54 billion\n$60 billion"
+  },
+  {
+   "id": "econ202413",
+   "year": 2024,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Employment and unemployment",
+   "text": "The government of an economy is planning to increase the local content rules of television streaming services. Which row in the table shows the effect of the increase in local content rules on imports and short-term employment opportunities for this economy? Imports Short-term employment opportunities\nIncrease Greater\nIncrease Lower\nDecrease Greater\nDecrease Lower"
+  },
+  {
+   "id": "econ202414",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The income Gini coefficient for a hypothetical economy increases from 0.35 in Year 1 to 0.46 in Year 2. What combination of changes in government policies is most likely to have caused the increase in the income Gini coefficient? Childcare subsidies Tax free threshold\nDecrease Decrease\nDecrease Increase\nIncrease Decrease\nIncrease Increase"
+  },
+  {
+   "id": "econ202415",
+   "year": 2024,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following cyclical and structural factors are the most likely to affect the net primary income account? Cyclical factors Structural factors\nExchange rate Terms of trade\nInterest rates Low national savings\nGovernment budget outcomes Domestic business cycle\nNarrow export base International competitiveness"
+  },
+  {
+   "id": "econ202416",
+   "year": 2024,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "In a hypothetical economy, the headline inflation rate is rising faster than the underlying inflation rate. Which of the following is most likely to have caused this situation?\nA rise in the global production of oil\nAn increase in capital city house prices\nThe opening of a new international shipping route\nA cyclone in domestic tropical fruit-producing locations"
+  },
+  {
+   "id": "econ202417",
+   "year": 2024,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "The cost of imported intermediate goods is rising in Australia. All other things being equal, what is the most likely impact on Australia’s exchange rate and domestic prices? Exchange rate Domestic prices\nAppreciate Higher\nAppreciate Lower\nDepreciate Higher\nDepreciate Lower"
+  },
+  {
+   "id": "econ202418",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows data for a hypothetical economy. Year 1 ($bn) Year 2 ($bn) Gross domestic product (GDP) 1200 1250 Net foreign debt 700 600 Net foreign equity 200 250 Current account balance Which of the following statements is correct about this economy?\nNet foreign liabilities as a percentage of GDP has decreased, leading to a deterioration in external stability.\nNet foreign liabilities as a percentage of GDP has increased, leading to an improvement in external stability.\nCurrent Account Balance as a percentage of GDP has decreased, leading to an improvement in external stability.\nCurrent Account Balance as a percentage of GDP has increased, leading to a deterioration in external stability."
+  },
+  {
+   "id": "econ202419",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows information for a hypothetical economy. Year Trade Weighted Index Terms of trade 1 65 110 2 60 100 Which of the following best explains the reason for changes in the Trade Weighted Index and terms of trade from Year 1 to Year 2 in this economy?\nA decrease in global inflation\nAn increase in domestic interest rates\nAn increase in domestic unemployment\nA decrease in global demand for this economy’s exports"
+  },
+  {
+   "id": "econ202420",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The following shows nominal GDP and price data (CPI) for an economy. Nominal GDP ($M) Consumer price index (CPI) Year 1 600 110 Year 2 675 120 Which of the following statements is true for this economy?\nReal economic growth in Year 2 is 3.1% and inflation is 10%.\nReal economic growth in Year 2 is 3.1% and inflation is 9.1%.\nReal economic growth in Year 2 is 12.5% and inflation is 10%.\nReal economic growth in Year  2 is 12.5% and inflation is 9.1%. © 2024 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2024 HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Student Number 6741310293 2061 15110 Economics Section II Answer Booklet 40 marks Attempt Questions 21–24 Allow about 1 hour and 15 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area."
+  },
+  {
+   "id": "econ202421",
+   "year": 2024,
+   "number": "21",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Global trade",
+   "text": "(a) The diagram shows the domestic demand and supply for a particular good within an economy. The world price is $10. Price $40 $50 $60 $30 $20 $10 50 100 150 200 250 300 350 Quantity D S D S (i) What is the quantity of imports at the world price of $10? 1 (ii) Calculate the government tariff revenue if a tariff of $20 is added to the world price. 1 (b) Describe an implication of Australia’s participation in ONE multilateral trade agreement. 3 Name of multilateral trade agreement: (c) Explain the impact of protectionist policies of other countries on components of Australia’s current account. 5 End of Question 21"
+  },
+  {
+   "id": "econ202422",
+   "year": 2024,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Labour market policy",
+   "text": "(a) Outline ONE cause of inflation in Australia. 2 (b) Explain how domestic inflation can affect Australia’s international competitiveness. 3 (c) Analyse the impact of labour market policies on inflation in the Australian economy. 5 End of Question 22"
+  },
+  {
+   "id": "econ202423",
+   "year": 2024,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "(a) Outline an environmental issue that is affecting the Australian economy. 2 (b) A local government plans to install an electric-vehicle charging station near a shopping centre. Explain ONE private and ONE social benefit of this plan. 3 (c) Assess the effectiveness of ONE market-based policy in managing environmental issues in the Australian economy. 5 End of Question 23"
+  },
+  {
+   "id": "econ202424",
+   "year": 2024,
+   "number": "24",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia",
+   "text": "(a) Distinguish between international and regional business cycles. 2 (b) Explain ONE reason for the difference between advanced and emerging economies. 3 (c) For an economy other than Australia, analyse the effects of globalisation on economic development. 5 Name of economy: End of Question 24 Section II extra writing space If you use this space, clearly indicate which question you are answering. Section II extra writing space If you use this space, clearly indicate which question you are answering. © 2024 NSW Education Standards Authority 2024 HIGHER SCHOOL CERTIFICATE EXAMINATION 2062 Economics Section III 20 marks"
+  },
+  {
+   "id": "econ202425",
+   "year": 2024,
+   "number": "25",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Microeconomic policy",
+   "text": "Discuss the macroeconomic and microeconomic policies available to achieve sustainable economic growth in Australia. In your answer, refer to the information provided."
+  },
+  {
+   "id": "econ202426",
+   "year": 2024,
+   "number": "26",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Microeconomic policy",
+   "text": "Discuss the macroeconomic and microeconomic policies available to achieve full employment in Australia. In your answer, refer to the information provided."
+  },
+  {
+   "id": "econ202427",
+   "year": 2024,
+   "number": "27",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Explain factors contributing to international economic integration. OR"
+  },
+  {
+   "id": "econ202428",
+   "year": 2024,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Explain the impacts of an appreciation of the Australian dollar on individuals, firms and government in Australia. End of paper © 2024 NSW Education Standards Authority"
+  },
+  {
+   "id": "econ202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Country A and Country B agree to share a common currency. What is this an example of?\nMonetary Union\nFree Trade Area\nBilateral trade agreement\nMultilateral trade agreement"
+  },
+  {
+   "id": "econ202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is most likely to accelerate globalisation?\nReduced labour mobility\nHigher costs of communication\nA decrease in the global price of energy\nAn increase in tariffs by advanced economies"
+  },
+  {
+   "id": "econ202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows the health and education aspects of different types of economies. Developing Emerging Advanced Health Poor access Uneven access Y Education X Uneven access Higher mean years of schooling Which row of the following table correctly identifies the indicators X and Y?\nOption A\nOption B\nOption C\nX Y Low literacy rates Low life expectancy High literacy rates High life expectancy High literacy rates Low life expectancy Low literacy rates High life expectancy"
+  },
+  {
+   "id": "econ202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which component of the government budget outcome is likely to decrease during an economic downturn?\nInterest rates\nIndirect tax revenue\nUnemployment benefits\nPublic sector borrowing"
+  },
+  {
+   "id": "econ202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Why is public transport considered a private good?\nIt is non-excludable and is paid for from taxation.\nIt is excludable by price and is rival in consumption.\nIt is rival in consumption and is non-excludable by price.\nIt is excludable by price and is provided by the government."
+  },
+  {
+   "id": "econ202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which of the following is the main rationale for the use of macroeconomic policy?\nImproving productivity and efficiency\nIncreasing economic growth and aggregate supply\nManaging stabilisation and shifts in aggregate demand\nAchieving environmental sustainability and lower costs"
+  },
+  {
+   "id": "econ202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "An initial increase of government spending of $10 million leads to a final increase in national income of $50 million. What is the value of the marginal propensity to consume (MPC)?\n0.2\n0.4\n0.5\n0.8"
+  },
+  {
+   "id": "econ202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia",
+   "text": "What is a key characteristic of a regional business cycle?\nEconomic fluctuations that occur in rural areas\nEconomic stability between countries across the globe\nConsistent growth rates in all states within an economy\nIntegration of economic activity across neighbouring countries"
+  },
+  {
+   "id": "econ202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows selected data for a hypothetical economy. 50 Component of national income Dollars (billion) Government expenditure 80 Exports 60 Savings 10 Taxation 70 Investment 20 Imports Based on the information in the table, which of the following is correct?\nThere is a trade deficit.\nThere is a government surplus.\nInjections are greater than leakages.\nLeakages are greater than injections."
+  },
+  {
+   "id": "econ202510",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Impacts of the global economy on Australia",
+   "text": "How is unconditional foreign aid provided by the Australian government recorded in the Balance of Payments?\nA credit in the current account\nA debit in the current account\nA credit in the capital account\nA debit in the capital account"
+  },
+  {
+   "id": "econ202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "Which component of the federal budget is directly affected by automatic stabilisers?\nCyclical\nExternal\nStructural\nDiscretionary"
+  },
+  {
+   "id": "econ202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Environmental sustainability",
+   "text": "Which of the following policy options could use market forces to reduce negative environmental outcomes?\nImplementing an emissions trading scheme\nIntroducing a new tax on electric and hybrid cars\nCeasing the operation of coal-fired power stations\nImposing fines for harmful emissions from households"
+  },
+  {
+   "id": "econ202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Australia and the global economy / Exchange rates",
+   "text": "The table shows selected information for the Balance of Payments for an economy with a floating exchange rate. Category Dollars (billion) Export of goods 150 Import of goods 130 Export of services 60 Import of services 50 Net primary income −50 Net secondary income 10 Capital account 70 Financial account ? What is the value of the financial account?\n−$80 billion\n−$60 billion\n$10 billion\n$280 billion"
+  },
+  {
+   "id": "econ202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Inflation",
+   "text": "The table shows selected data for a hypothetical economy. Year Headline inflation (%) Underlying inflation (%) 1 4.5 3.8 2 5 3.4 Which row in the table shows the most likely reasons for changes in inflation rates from Year 1 to Year 2?\nOption A\nOption B\nOption C\nReason for change in headline inflation Reason for change in underlying inflation Drought in food-producing areas Decrease in freight costs Increase in import tariffs Rise in minimum wage Microeconomic reform Conflict in oil-producing countries Temporary discount in fuel excise tax Increase in textile imports"
+  },
+  {
+   "id": "econ202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic issues in the Australian economy / Economic growth",
+   "text": "The following table shows selected data for a hypothetical economy. Year Nominal GDP ($ billion) CPI 1 18 90 2 22 110 What is the rate of real economic growth from Year 1 to Year 2 in this economy?\n0%\n4%\n20%\n22%"
+  },
+  {
+   "id": "econ202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows hypothetical data for country X. Category Amount ($) Assets owned by country X overseas 1.2 million Assets in country X owned by foreigners 3.0 million Debts owed by country X to foreign lenders 1.8 million Debts owed by foreigners to country X 500 000 What is the net foreign liability for this economy?\n$6.5 million\n$4.8 million\n$3.1 million\n$500 000"
+  },
+  {
+   "id": "econ202517",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The graph shows the effect of a quota on imported machinery in the domestic market, with the initial equilibrium at X. Price P1 D S (domestic) S (including quota) P2 X P3 World Quantity P4 The government chooses to reduce, but not eliminate, the quota. From the prices shown on the graph, which is the most likely new price of machinery?\nP1\nP2\nP3\nP4"
+  },
+  {
+   "id": "econ202518",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The graph shows a recently imposed tariff on imported beef. 40 30 10 20 100 200 300 400 500 600 700 Price ($) Units of beef S D World Assume that the world price for beef is $20 and the tariff is $10 per unit of beef. By what amount does the revenue of foreign producers of beef decrease as a result of the tariff?\n$2000\n$4000\n$8000\n$16 000"
+  },
+  {
+   "id": "econ202519",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The table shows hypothetical data for an economy. Terms of trade Import price index Year 1 110 100 Year 2 90 110 Which row of the table shows the export price index of this economy in Year 1 and Year 2?\nOption A\nOption B\nOption C\nExport price index in Year 1 Export price index in Year 2 90 110 99 110 110 90 110 99"
+  },
+  {
+   "id": "econ202520",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Economic management of the Australian economy / Policy mix",
+   "text": "The graph shows market failure as a negative externality of production. Price Social cost P3 P2 Private cost P1 D P0 Quantity Q1 Q2 Q3 What is the per unit tax required to correct the market failure shown on the graph?\nP0  − P1\nP2  − P1\nP2  − P3\nP1  − P3 BLANK PAGE BLANK PAGE BLANK PAGE © 2025 NSW Education Standards Authority Do NOT write in this area. 2025 HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Economics Student Number Section II Answer Booklet 40 marks Attempt Questions 21–24 Allow about 1 hour and 15 minutes for this section Instructions • Write your Centre Number and Student Number at the top of this page • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. 6741310293 2061 15110"
+  }
+ ]
+}

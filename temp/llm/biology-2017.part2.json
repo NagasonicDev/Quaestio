@@ -1,0 +1,1209 @@
+{
+ "course_id": "biology-2017",
+ "course_name": "Biology (2017)",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Working scientifically / Questioning and Predicting / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSBL001, ACSBL061, ACSBL096)"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Working scientifically / Questioning and Predicting / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Working scientifically / Planning Investigations / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation (ACSBL031, ACSBL097)"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Working scientifically / Planning Investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSBL002)"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Working scientifically / Planning Investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Working scientifically / Conducting Investigations / employ and evaluate safe work practices and manage risks (ACSBL031)"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Working scientifically / Conducting Investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Working scientifically / Conducting Investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Working scientifically / Processing Data and Information / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSBL004, ACSBL007, ACSBL064, ACSBL101)"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Working scientifically / Processing Data and Information / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Working scientifically / Processing Data and Information / evaluate and improve the quality of data"
+  },
+  {
+   "code": "PRE-M1-T5-D1",
+   "path": "Year 11 / Working scientifically / Analysing Data and Information / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "PRE-M1-T5-D2",
+   "path": "Year 11 / Working scientifically / Analysing Data and Information / assess error, uncertainty and limitations in data (ACSBL004, ACSBL005, ACSBL033, ACSBL099)"
+  },
+  {
+   "code": "PRE-M1-T5-D3",
+   "path": "Year 11 / Working scientifically / Analysing Data and Information / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSBL005)"
+  },
+  {
+   "code": "PRE-M1-T6-D1",
+   "path": "Year 11 / Working scientifically / Problem Solving / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSBL006, ACSBL010)"
+  },
+  {
+   "code": "PRE-M1-T6-D2",
+   "path": "Year 11 / Working scientifically / Problem Solving / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "PRE-M1-T7-D1",
+   "path": "Year 11 / Working scientifically / Communicating / select and use suitable forms of digital, visual, written and/or oral forms of communication"
+  },
+  {
+   "code": "PRE-M1-T7-D2",
+   "path": "Year 11 / Working scientifically / Communicating / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSBL008, ACSBL036, ACSBL067, ACSBL102)"
+  },
+  {
+   "code": "PRE-M1-T7-D3",
+   "path": "Year 11 / Working scientifically / Communicating / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSBL034, ACSBL036)"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Structure / investigate different cellular structures, including but not limited to:"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Structure / examining a variety of prokaryotic and eukaryotic cells (ACSBL032, ACSBL048)"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Structure / describe a range of technologies that are used to determine a cell’s structure and function"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Structure / investigate a variety of prokaryotic and eukaryotic cell structures, including but not limited to:"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Structure / drawing scaled diagrams of a variety of cells (ACSBL035)"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Structure / comparing and contrasting different cell organelles and arrangements"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Structure / modelling the structure and function of the fluid mosaic model of the cell membrane (ACSBL045)"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / investigate the way in which materials can move into and out of cells, including but not limited to:"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / conducting a practical investigation modelling diffusion and osmosis (ACSBL046)"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / examining the roles of active transport, endocytosis and exocytosis (ACSBL046)"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / relating the exchange of materials across membranes to the surface-area-to-volume ratio, concentration gradients and characteristics of the materials being exchanged (ACSBL047)"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / investigate cell requirements, including but not limited to:"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / suitable forms of energy, including light energy and chemical energy in complex molecules (ACSBL044)"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / matter, including gases, simple nutrients and ions"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / removal of wastes (ACSBL044)"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / investigate the biochemical processes of photosynthesis, cell respiration and the removal of cellular products and wastes in eukaryotic cells (ACSBL049, ACSBL050, ACSBL052, ACSBL053)"
+  },
+  {
+   "code": "PRE-M2-T2-D10",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / conduct a practical investigation to model the action of enzymes in cells (ACSBL050)"
+  },
+  {
+   "code": "PRE-M2-T2-D11",
+   "path": "Year 11 / Cells as the Basis of Life / Cell Function / investigate the effects of the environment on enzyme activity through the collection of primary or secondary data (ACSBL050, ACSBL051)"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Organisation of Living Things / Organisation of Cells / compare the differences between unicellular, colonial and multicellular organisms by:"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Organisation of Living Things / Organisation of Cells / investigating structures at the level of the cell and organelle"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Organisation of Living Things / Organisation of Cells / relating structure of cells and cell specialisation to function"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Organisation of Living Things / Organisation of Cells / investigate the structure and function of tissues, organs and systems and relate those functions to cell differentiation and specialisation (ACSBL055)"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Organisation of Living Things / Organisation of Cells / justify the hierarchical structural organisation of organelles, cells, tissues, organs, systems and organisms (ACSBL054)"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / investigate the structure of autotrophs through the examination of a variety of materials, for example: (ACSBL035)"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / dissected plant materials (ACSBL032)"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / microscopic structures"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / using a range of imaging technologies to determine plant structure"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / investigate the function of structures in a plant, including but not limited to:"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / tracing the development and movement of the products of photosynthesis (ACSBL059, ACSBL060)"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / investigate the gas exchange structures in animals and plants (ACSBL032, ACSBL056) through the collection of primary and secondary data and information, for example:"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / microscopic structures: alveoli in mammals and leaf structure in plants"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / macroscopic structures: respiratory systems in a range of animals"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / interpret a range of secondary-sourced information to evaluate processes, claims and conclusions that have led scientists to develop hypotheses, theories and models about the structure and function of plants, including but not limited to: (ACSBL034)"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / photosynthesis"
+  },
+  {
+   "code": "PRE-M3-T2-D12",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / transpiration-cohesion-tension theory"
+  },
+  {
+   "code": "PRE-M3-T2-D13",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / trace the digestion of foods in a mammalian digestive system, including: physical digestion; chemical digestion; absorption of nutrients, minerals and water; elimination of solid waste"
+  },
+  {
+   "code": "PRE-M3-T2-D14",
+   "path": "Year 11 / Organisation of Living Things / Nutrient and Gas Requirements / compare the nutrient and gas requirements of autotrophs and heterotrophs"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Organisation of Living Things / Transport / investigate transport systems in animals and plants by comparing structures and components using physical and digital models, including but not limited to: (ACSBL032, ACSBL058, ACSBL059, ACSBL060)"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Organisation of Living Things / Transport / macroscopic structures in plants and animals"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Organisation of Living Things / Transport / microscopic samples of blood, the cardiovascular system and plant vascular systems"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Organisation of Living Things / Transport / investigate the exchange of gases between the internal and external environments of plants and animals"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Organisation of Living Things / Transport / compare the structures and function of transport systems in animals and plants, including but not limited to: (ACSBL033)"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Organisation of Living Things / Transport / vascular systems in plants and animals"
+  },
+  {
+   "code": "PRE-M3-T3-D7",
+   "path": "Year 11 / Organisation of Living Things / Transport / open and closed transport systems in animals"
+  },
+  {
+   "code": "PRE-M3-T3-D8",
+   "path": "Year 11 / Organisation of Living Things / Transport / compare the changes in the composition of the transport medium as it moves around an organism"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Biological Diversity / Effects of the Environment on Organisms / predict the effects of selection pressures on organisms in ecosystems, including: (ACSBL026, ACSBL090)"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Biological Diversity / Effects of the Environment on Organisms / biotic factors"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Biological Diversity / Effects of the Environment on Organisms / abiotic factors"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Biological Diversity / Effects of the Environment on Organisms / investigate changes in a population of organisms due to selection pressures over time, for example: (ACSBL002, ACSBL094)"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Biological Diversity / Effects of the Environment on Organisms / cane toads in Australia"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Biological Diversity / Effects of the Environment on Organisms / prickly pear distribution in Australia"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Biological Diversity / Adaptations / conduct practical investigations, individually or in teams, or use secondary sources to examine the adaptations of organisms that increase their ability to survive in their environment, including: structural adaptations; physiological adaptations; behavioural adaptations"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Biological Diversity / Adaptations / investigate, through secondary sources, the observations and collection of data that were obtained by Charles Darwin to support the Theory of Evolution by Natural Selection, for example: finches of the Galapagos Islands"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Biological Diversity / Adaptations / Australian flora and fauna"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Biological Diversity / Theory of Evolution by Natural Selection / explain biological diversity in terms of the Theory of Evolution by Natural Selection by examining the changes in and diversification of life since it first appeared on the Earth (ACSBL088)"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Biological Diversity / Theory of Evolution by Natural Selection / analyse how an accumulation of microevolutionary changes can drive evolutionary changes and speciation over time, for example: (ACSBL034, ACSBL093)"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Biological Diversity / Theory of Evolution by Natural Selection / evolution of the horse"
+  },
+  {
+   "code": "PRE-M4-T3-D4",
+   "path": "Year 11 / Biological Diversity / Theory of Evolution by Natural Selection / evolution of the platypus"
+  },
+  {
+   "code": "PRE-M4-T3-D5",
+   "path": "Year 11 / Biological Diversity / Theory of Evolution by Natural Selection / explain, using examples, how Darwin and Wallace’s Theory of Evolution by Natural Selection accounts for: convergent evolution; divergent evolution"
+  },
+  {
+   "code": "PRE-M4-T3-D6",
+   "path": "Year 11 / Biological Diversity / Theory of Evolution by Natural Selection / explain how punctuated equilibrium is different from the gradual process of natural selection"
+  },
+  {
+   "code": "PRE-M4-T4-D1",
+   "path": "Year 11 / Biological Diversity / Evolution – the Evidence / investigate, using secondary sources, evidence in support of Darwin and Wallace’s Theory of Evolution by Natural Selection, including but not limited to:"
+  },
+  {
+   "code": "PRE-M4-T4-D2",
+   "path": "Year 11 / Biological Diversity / Evolution – the Evidence / biochemical evidence, comparative anatomy, comparative embryology and biogeography (ACSBL089)"
+  },
+  {
+   "code": "PRE-M4-T4-D3",
+   "path": "Year 11 / Biological Diversity / Evolution – the Evidence / techniques used to date fossils and the evidence produced"
+  },
+  {
+   "code": "PRE-M4-T4-D4",
+   "path": "Year 11 / Biological Diversity / Evolution – the Evidence / explain modern-day examples that demonstrate evolutionary change, for example: the cane toad; antibiotic-resistant strains of bacteria"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / Ecosystem Dynamics / Population Dynamics / investigate and determine relationships between biotic and abiotic factors in an ecosystem, including: (ACSBL019)"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / Ecosystem Dynamics / Population Dynamics / the impact of abiotic factors (ACSBL021, ACSBL022, ACSBL025)"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / Ecosystem Dynamics / Population Dynamics / the impact of biotic factors, including predation, competition and symbiotic relationships (ACSBL024)"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / Ecosystem Dynamics / Population Dynamics / the ecological niches occupied by species (ACSBL023)"
+  },
+  {
+   "code": "PRE-M5-T1-D5",
+   "path": "Year 11 / Ecosystem Dynamics / Population Dynamics / predicting consequences for populations in ecosystems due to predation, competition, symbiosis and disease (ACSBL019, ACSBL020)"
+  },
+  {
+   "code": "PRE-M5-T1-D6",
+   "path": "Year 11 / Ecosystem Dynamics / Population Dynamics / measuring populations of organisms using sampling techniques (ACSBL003, ACSBL015)"
+  },
+  {
+   "code": "PRE-M5-T1-D7",
+   "path": "Year 11 / Ecosystem Dynamics / Population Dynamics / explain a recent extinction event (ACSBL024)"
+  },
+  {
+   "code": "PRE-M5-T2-D1",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / analyse palaeontological and geological evidence that can be used to provide evidence for past changes in ecosystems, including but not limited to:"
+  },
+  {
+   "code": "PRE-M5-T2-D2",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / Aboriginal rock paintings"
+  },
+  {
+   "code": "PRE-M5-T2-D3",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / rock structure and formation"
+  },
+  {
+   "code": "PRE-M5-T2-D4",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / ice core drilling"
+  },
+  {
+   "code": "PRE-M5-T2-D5",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / investigate and analyse past and present technologies that have been used to determine evidence for past changes, for example: (ACSBL005)"
+  },
+  {
+   "code": "PRE-M5-T2-D6",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / radiometric dating"
+  },
+  {
+   "code": "PRE-M5-T2-D7",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / gas analysis"
+  },
+  {
+   "code": "PRE-M5-T2-D8",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / analyse evidence that present-day organisms have evolved from organisms in the past by examining and interpreting a range of secondary sources to evaluate processes, claims and conclusions relating to the evolution of organisms in Australia, for example: (ACSBL005, ACSBL027)"
+  },
+  {
+   "code": "PRE-M5-T2-D9",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / small mammals"
+  },
+  {
+   "code": "PRE-M5-T2-D10",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / sclerophyll plants"
+  },
+  {
+   "code": "PRE-M5-T2-D11",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / investigate the reasons for changes in past ecosystems, by:"
+  },
+  {
+   "code": "PRE-M5-T2-D12",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / interpreting a range of secondary sources to develop an understanding of the changes in biotic and abiotic factors over short and long periods of time (ACSBL025, ACSBL026)"
+  },
+  {
+   "code": "PRE-M5-T2-D13",
+   "path": "Year 11 / Ecosystem Dynamics / Past Ecosystems / evaluating hypotheses that account for identified trends (ACSBL001)"
+  },
+  {
+   "code": "PRE-M5-T3-D1",
+   "path": "Year 11 / Ecosystem Dynamics / Future Ecosystems / investigate changes in past ecosystems that may inform our approach to the management of future ecosystems, including:"
+  },
+  {
+   "code": "PRE-M5-T3-D2",
+   "path": "Year 11 / Ecosystem Dynamics / Future Ecosystems / the role of human-induced selection pressures on the extinction of species (ACSBL005, ACSBL028, ACSBL095)"
+  },
+  {
+   "code": "PRE-M5-T3-D3",
+   "path": "Year 11 / Ecosystem Dynamics / Future Ecosystems / models that humans can use to predict future impacts on biodiversity (ACSBL029, ACSBL071)"
+  },
+  {
+   "code": "PRE-M5-T3-D4",
+   "path": "Year 11 / Ecosystem Dynamics / Future Ecosystems / the role of changing climate on ecosystems"
+  },
+  {
+   "code": "PRE-M5-T3-D5",
+   "path": "Year 11 / Ecosystem Dynamics / Future Ecosystems / investigate practices used to restore damaged ecosystems, Country or Place, for example: mining sites; land degradation from agricultural practices"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Working scientifically / Questioning and Predicting / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data (ACSBL001, ACSBL061, ACSBL096)"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Working scientifically / Questioning and Predicting / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Working scientifically / Planning Investigations / assess risks, consider ethical issues, and select appropriate materials and technologies when designing and planning an investigation (ACSBL031, ACSBL097)"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Working scientifically / Planning Investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data (ACSBL002)"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Working scientifically / Planning Investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Working scientifically / Conducting Investigations / employ and evaluate safe work practices and manage risks (ACSBL031)"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Working scientifically / Conducting Investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Working scientifically / Conducting Investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Working scientifically / Processing Data and Information / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media (ACSBL004, ACSBL007, ACSBL064, ACSBL101)"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Working scientifically / Processing Data and Information / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Working scientifically / Processing Data and Information / evaluate and improve the quality of data"
+  },
+  {
+   "code": "HSC-M1-T5-D1",
+   "path": "Year 12 / Working scientifically / Analysing Data and Information / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "HSC-M1-T5-D2",
+   "path": "Year 12 / Working scientifically / Analysing Data and Information / assess error, uncertainty and limitations in data (ACSBL004, ACSBL005, ACSBL033, ACSBL099)"
+  },
+  {
+   "code": "HSC-M1-T5-D3",
+   "path": "Year 12 / Working scientifically / Analysing Data and Information / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations (ACSBL005)"
+  },
+  {
+   "code": "HSC-M1-T6-D1",
+   "path": "Year 12 / Working scientifically / Problem Solving / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources (ACSBL006, ACSBL010)"
+  },
+  {
+   "code": "HSC-M1-T6-D2",
+   "path": "Year 12 / Working scientifically / Problem Solving / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "HSC-M1-T7-D1",
+   "path": "Year 12 / Working scientifically / Communicating / select and use suitable forms of digital, visual, written and/or oral communication"
+  },
+  {
+   "code": "HSC-M1-T7-D2",
+   "path": "Year 12 / Working scientifically / Communicating / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts (ACSBL008, ACSBL036, ACSBL067, ACSBL102)"
+  },
+  {
+   "code": "HSC-M1-T7-D3",
+   "path": "Year 12 / Working scientifically / Communicating / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion (ACSBL034, ACSBL036)"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Heredity / Reproduction / explain the mechanisms of reproduction that ensure the continuity of a species, by analysing sexual and asexual methods of reproduction in a variety of organisms, including but not limited to: animals: advantages of external and internal fertilisation; plants: asexual and sexual reproduction; fungi: budding, spores; bacteria: binary fission (ACSBL075); protists: binary fission, budding"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Heredity / Reproduction / analyse the features of fertilisation, implantation and hormonal control of pregnancy and birth in mammals (ACSBL075)"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Heredity / Reproduction / evaluate the impact of scientific knowledge on the manipulation of plant and animal reproduction in agriculture (ACSBL074)"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Heredity / Cell Replication / model the processes involved in cell replication, including but not limited to: mitosis and meiosis (ACSBL075)"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Heredity / Cell Replication / DNA replication using the Watson and Crick DNA model, including nucleotide composition, pairing and bonding (ACSBL076, ACSBL077)"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Heredity / Cell Replication / assess the effect of the cell replication processes on the continuity of species (ACSBL084)"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Heredity / DNA and Polypeptide Synthesis / construct appropriate representations to model and compare the forms in which DNA exists in eukaryotes and prokaryotes (ACSBL076)"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Heredity / DNA and Polypeptide Synthesis / model the process of polypeptide synthesis, including: (ACSBL079)"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Heredity / DNA and Polypeptide Synthesis / transcription and translation"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Heredity / DNA and Polypeptide Synthesis / assessing the importance of mRNA and tRNA in transcription and translation (ACSBL079)"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Heredity / DNA and Polypeptide Synthesis / analysing the function and importance of polypeptide synthesis (ACSBL080)"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Heredity / DNA and Polypeptide Synthesis / assessing how genes and environment affect phenotypic expression (ACSBL081)"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Heredity / DNA and Polypeptide Synthesis / investigate the structure and function of proteins in living things"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Heredity / Genetic Variation / conduct practical investigations to predict variations in the genotype of offspring by modelling meiosis, including the crossing over of homologous chromosomes, fertilisation and mutations (ACSBL084)"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Heredity / Genetic Variation / model the formation of new combinations of genotypes produced during meiosis, including but not limited to:"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Heredity / Genetic Variation / interpreting examples of autosomal, sex-linkage, co-dominance, incomplete dominance and multiple alleles (ACSBL085)"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Heredity / Genetic Variation / constructing and interpreting information and data from pedigrees and Punnett squares"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Heredity / Genetic Variation / collect, record and present data to represent frequencies of characteristics in a population, in order to identify trends, patterns, relationships and limitations in data, for example: examining frequency data; analysing single nucleotide polymorphism (SNP)"
+  },
+  {
+   "code": "HSC-M2-T5-D1",
+   "path": "Year 12 / Heredity / Inheritance Patterns in a Population / investigate the use of technologies to determine inheritance patterns in a population using, for example: (ACSBL064, ACSBL085)"
+  },
+  {
+   "code": "HSC-M2-T5-D2",
+   "path": "Year 12 / Heredity / Inheritance Patterns in a Population / DNA sequencing and profiling (ACSBL086)"
+  },
+  {
+   "code": "HSC-M2-T5-D3",
+   "path": "Year 12 / Heredity / Inheritance Patterns in a Population / investigate the use of data analysis from a large-scale collaborative project to identify trends, patterns and relationships, for example: (ACSBL064, ACSBL073)"
+  },
+  {
+   "code": "HSC-M2-T5-D4",
+   "path": "Year 12 / Heredity / Inheritance Patterns in a Population / the use of population genetics data in conservation management"
+  },
+  {
+   "code": "HSC-M2-T5-D5",
+   "path": "Year 12 / Heredity / Inheritance Patterns in a Population / population genetics studies used to determine the inheritance of a disease or disorder"
+  },
+  {
+   "code": "HSC-M2-T5-D6",
+   "path": "Year 12 / Heredity / Inheritance Patterns in a Population / population genetics relating to human evolution"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Genetic Change / Mutation / explain how a range of mutagens operate, including but not limited to: electromagnetic radiation sources; chemicals; naturally occurring mutagens"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Genetic Change / Mutation / compare the causes, processes and effects of different types of mutation, including but not limited to: point mutation; chromosomal mutation"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Genetic Change / Mutation / distinguish between somatic mutations and germ-line mutations and their effect on an organism (ACSBL082, ACSBL083)"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Genetic Change / Mutation / assess the significance of ‘coding’ and ‘non-coding’ DNA segments in the process of mutation (ACSBL078)"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Genetic Change / Mutation / investigate the causes of genetic variation relating to the processes of fertilisation, meiosis and mutation (ACSBL078)"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Genetic Change / Mutation / evaluate the effect of mutation, gene flow and genetic drift on the gene pool of populations (ACSBL091, ACSBL092)"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Genetic Change / Biotechnology / investigate the uses and applications of biotechnology (past, present and future), including: (ACSBL087)"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Genetic Change / Biotechnology / analysing the social implications and ethical uses of biotechnology, including plant and animal examples"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Genetic Change / Biotechnology / researching future directions of the use of biotechnology"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Genetic Change / Biotechnology / evaluating the potential benefits for society of research using genetic technologies"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Genetic Change / Biotechnology / evaluating the changes to the Earth’s biodiversity due to genetic techniques"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / investigate the uses and advantages of current genetic technologies that induce genetic change"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / compare the processes and outcomes of reproductive technologies, including but not limited to: artificial insemination; artificial pollination"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / investigate and assess the effectiveness of cloning, including but not limited to: whole organism cloning; gene cloning"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / describe techniques and applications used in recombinant DNA technology, for example:"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / the development of transgenic organisms in agricultural and medical applications (ACSBL087)"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / evaluate the benefits of using genetic technologies in agricultural, medical and industrial applications (ACSBL086)"
+  },
+  {
+   "code": "HSC-M3-T3-D7",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / evaluate the effect on biodiversity of using biotechnology in agriculture"
+  },
+  {
+   "code": "HSC-M3-T3-D8",
+   "path": "Year 12 / Genetic Change / Genetic Technologies / interpret a range of secondary sources to assess the influence of social, economic and cultural contexts on a range of biotechnologies"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / describe a variety of infectious diseases caused by pathogens, including microorganisms, macroorganisms and non-cellular pathogens, and collect primary and secondary-sourced data and information relating to disease transmission, including: (ACSBL097, ACSBL098, ACSBL116, ACSBL117)"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / classifying different pathogens that cause disease in plants and animals (ACSBL117)"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / investigating the transmission of a disease during an epidemic"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / design and conduct a practical investigation relating to the microbial testing of water or food samples"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / investigate modes of transmission of infectious diseases, including direct contact, indirect contact and vector transmission"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / investigate the work of Robert Koch and Louis Pasteur, to explain the causes and transmission of infectious diseases, including:"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / Koch’s postulates"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / Pasteur’s experiments on microbial contamination"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / assess the causes and effects of diseases on agricultural production, including but not limited to: plant diseases; animal diseases"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Infectious Disease / Causes of Infectious Disease / compare the adaptations of different pathogens that facilitate their entry into and transmission between hosts (ACSBL118)"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Infectious Disease / Responses to Pathogens / investigate the response of a named Australian plant to a named pathogen through practical and/or secondary-sourced investigation, for example: fungal pathogens; viral pathogens"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Infectious Disease / Responses to Pathogens / analyse responses to the presence of pathogens by assessing the physical and chemical changes that occur in the host animals cells and tissues (ACSBL119, ACSBL120, ACSBL121, ACSBL122)"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Infectious Disease / Immunity / investigate and model the innate and adaptive immune systems in the human body (ACSBL119)"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Infectious Disease / Immunity / explain how the immune system responds after primary exposure to a pathogen, including innate and acquired immunity"
+  },
+  {
+   "code": "HSC-M4-T4-D1",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / investigate and analyse the wide range of interrelated factors involved in limiting local, regional and global spread of a named infectious disease"
+  },
+  {
+   "code": "HSC-M4-T4-D2",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / investigate procedures that can be employed to prevent the spread of disease, including but not limited to: (ACSBL124)"
+  },
+  {
+   "code": "HSC-M4-T4-D3",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / hygiene practices"
+  },
+  {
+   "code": "HSC-M4-T4-D4",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / quarantine"
+  },
+  {
+   "code": "HSC-M4-T4-D5",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / vaccination, including passive and active immunity (ACSBL100, ACSBL123)"
+  },
+  {
+   "code": "HSC-M4-T4-D6",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / public health campaigns"
+  },
+  {
+   "code": "HSC-M4-T4-D7",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / use of pesticides"
+  },
+  {
+   "code": "HSC-M4-T4-D8",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / genetic engineering"
+  },
+  {
+   "code": "HSC-M4-T4-D9",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / investigate and assess the effectiveness of pharmaceuticals as treatment strategies for the control of infectious disease, for example: antivirals; antibiotics"
+  },
+  {
+   "code": "HSC-M4-T4-D10",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / investigate and evaluate environmental management and quarantine methods used to control an epidemic or pandemic"
+  },
+  {
+   "code": "HSC-M4-T4-D11",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / interpret data relating to the incidence and prevalence of infectious disease in populations, for example:"
+  },
+  {
+   "code": "HSC-M4-T4-D12",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / mobility of individuals and the portion that are immune or immunised (ACSBL124, ACSBL125)"
+  },
+  {
+   "code": "HSC-M4-T4-D13",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / Malaria or Dengue Fever in South East Asia"
+  },
+  {
+   "code": "HSC-M4-T4-D14",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / evaluate historical, culturally diverse and current strategies to predict and control the spread of disease (ACSBL125)"
+  },
+  {
+   "code": "HSC-M4-T4-D15",
+   "path": "Year 12 / Infectious Disease / Prevention, Treatment and Control / investigate the contemporary application of Aboriginal protocols in the development of particular medicines and biological materials in Australia and how recognition and protection of Indigenous cultural and intellectual property is important, for example: bush medicine; smoke bush in Western Australia"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Homeostasis / construct and interpret negative feedback loops that show homeostasis by using a range of sources, including but not limited to: (ACSBL101, ACSBL110, ACSBL111)"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Homeostasis / temperature (ACSBL098)"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Homeostasis / glucose"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Homeostasis / investigate the various mechanisms used by organisms to maintain their internal environment within tolerance limits, including:"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Homeostasis / trends and patterns in behavioural, structural and physiological adaptations in endotherms that assist in maintaining homeostasis (ACSBL099, ACSBL114)"
+  },
+  {
+   "code": "HSC-M5-T1-D6",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Homeostasis / internal coordination systems that allow homeostasis to be maintained, including hormones and neural pathways (ACSBL112, ACSBL113, ACSBL114)"
+  },
+  {
+   "code": "HSC-M5-T1-D7",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Homeostasis / mechanisms in plants that allow water balance to be maintained (ACSBL115)"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Causes and Effects / investigate the causes and effects of non-infectious diseases in humans, including but not limited to: genetic diseases; diseases caused by environmental exposure; nutritional diseases; cancer"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Causes and Effects / collect and represent data to show the incidence, prevalence and mortality rates of non-infectious diseases, for example:"
+  },
+  {
+   "code": "HSC-M5-T3-D1",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Epidemiology / analyse patterns of non-infectious diseases in populations, including their incidence and prevalence, including but not limited to: nutritional diseases; diseases caused by environmental exposure"
+  },
+  {
+   "code": "HSC-M5-T3-D2",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Epidemiology / investigate the treatment/management, and possible future directions for further research, of a non-infectious disease using an example from one of the non-infectious diseases categories listed above"
+  },
+  {
+   "code": "HSC-M5-T3-D3",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Epidemiology / evaluate the method used in an example of an epidemiological study"
+  },
+  {
+   "code": "HSC-M5-T3-D4",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Epidemiology / evaluate, using examples, the benefits of engaging in an epidemiological study"
+  },
+  {
+   "code": "HSC-M5-T4-D1",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Prevention / use secondary sources to evaluate the effectiveness of current disease-prevention methods and develop strategies for the prevention of a non-infectious disease, including but not limited to: educational programs and campaigns; genetic engineering"
+  },
+  {
+   "code": "HSC-M5-T5-D1",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Technologies and Disorders / explain a range of causes of disorders by investigating the structures and functions of the relevant organs, for example: hearing loss; visual disorders; loss of kidney function"
+  },
+  {
+   "code": "HSC-M5-T5-D2",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Technologies and Disorders / investigate technologies that are used to assist with the effects of a disorder, including but not limited to: (ACSBL100)"
+  },
+  {
+   "code": "HSC-M5-T5-D3",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Technologies and Disorders / hearing loss: cochlear implants, bone conduction implants, hearing aids"
+  },
+  {
+   "code": "HSC-M5-T5-D4",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Technologies and Disorders / visual disorders: spectacles, laser surgery"
+  },
+  {
+   "code": "HSC-M5-T5-D5",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Technologies and Disorders / loss of kidney function: dialysis"
+  },
+  {
+   "code": "HSC-M5-T5-D6",
+   "path": "Year 12 / Non-infectious Disease and Disorders / Technologies and Disorders / evaluate the effectiveness of a technology that is used to manage and assist with the effects of a disorder (ACSBL100)"
+  }
+ ],
+ "questions": [
+  {
+   "id": "biology-2017-bio202429",
+   "year": 2024,
+   "number": "29",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Non-infectious Disease and Disorders",
+   "text": "An epidemiological study was conducted to help model how many people will be\naffected by Type 2 diabetes globally in the future. Continuous data were collected\nfrom 1990 to 2020. From that data, the following data points were chosen to\ndemonstrate the trend.\nYear\nPercentage of population affected\nby Type 2 diabetes (%)\n1990\n3.1\n2000\n3.7\n2010\n4.3\n2020\n5.6\n(a)\nPlot the data on the grid provided and include the line of best fit.\n2\nPercentage of population\naffected by Type 2 diabetes\n(%)\n10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\n1990\n2000\n2010\n2020\n2030\n2040\nYear\n9827310370\n(b)\nA prediction of the global population numbers suggests there will be about\n9 billion (9 000 000 000) people on the planet by 2040.\nPredict the number of people that will be affected by diabetes in 2040. Show\nworking on your graph on the previous page and your calculations.\n3\n0660310376"
+  },
+  {
+   "id": "biology-2017-bio202430",
+   "year": 2024,
+   "number": "30",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease",
+   "text": "The diagram shows a simplified version of the process of polypeptide synthesis.\nProcess A\nin nucleus\nProcess B\nat the\nribosomes\nDNA\nNOT TO\nSCALE\nAmino\nacid\ntRNA\nmRNA\n(a)\nCompare Process A with DNA replication.\n3\nThis file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license\n– http://commons.wikimedia.org/wiki/File: MRNA-ineraction.png\n7551310372\n(b)\nExplain the importance of mRNA and tRNA in polypeptide synthesis.\n5\n3638310374"
+  },
+  {
+   "id": "biology-2017-bio202431",
+   "year": 2024,
+   "number": "31",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease",
+   "text": "A study monitored the changes in the body temperature of a kookaburra (an Australian\nbird) and a human over a 24-hour period. The results of the study are shown in the graph.\n33\nBody temperature\n(°C)\nInactive period\nKEY\nKookaburra\nHuman\n5:00\npm\n12:00\npm\n12:00\nam\nTime\n7:00\nam\n12:00\npm\n34\n35\n36\n37\n38\n39\n40\n(a)\nAt what time was the kookaburra’s body temperature the lowest?\n1\n(b)\nSome endothermic organisms can display torpor (a significant decrease in\nphysiological activity).\nWith reference to the graph, explain whether the human or the kookaburra was\ndisplaying torpor and if so, state the time this occurred.\n3\n(c)\nOutline an adaptation that may lead to an increase in the kookaburra’s body\ntemperature during the inactive period.\n2\nCourtesy of Professor Fritz Geiser\nhttps://www.researchgate.net/figure/\nBody-temperature-of-a-Laughing-\nKookaburra-Dacelo-novaeguineae-\ndemonstrating_fig3_12267938\n6696310371"
+  },
+  {
+   "id": "biology-2017-bio202432",
+   "year": 2024,
+   "number": "32",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease",
+   "text": "Helicobacter pylori is a bacterium that invades the gut lining and can cause damage\nto the stomach as shown in the diagram.\n7\nGut lining\nMucus\nInflammatory\ncells\nHelicobacter pylori\nWith reference to innate and adaptive immunity, explain how the body responds after\nexposure to Helicobacter pylori.\n© Guts UK Charity. Reproduced with permission.\nhttps://gutscharity.org.uk/wp-content/smush-webp/2018/08/Helicobacter_Pylori_1.png.webp\n5148310372"
+  },
+  {
+   "id": "biology-2017-bio202433",
+   "year": 2024,
+   "number": "33",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease",
+   "text": "Female Jack Jumper ants (Myrmecia pilosula) have a single pair of chromosomes.\nDuring meiosis, crossing over occurs. The diagram shows the crossing over and the\nposition of three genes on the chromosomes.\nE\nD\nD\nd\nd\nd\nH\nE\nE\nD\nD\nH\nH\nE\nHomologous\nchromosomes\nChromatids\ncrossing over\nH\ne\nh\ne\nh\nh\nh\nd\ne\ne\n(a)\nOutline the significance of crossing over for the Jack Jumper ants.\n2\n3013310371\n(b)\nDraw the chromosomes of the four possible gametes after crossing over for the\nJack Jumper ants occurs. Include the alleles for each gene.\n2\n6604310370"
+  },
+  {
+   "id": "biology-2017-bio202434",
+   "year": 2024,
+   "number": "34",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease",
+   "text": "Discuss the ethical implications and impacts on society of the use of TWO\nbiotechnologies.\n7\n9668310373"
+  },
+  {
+   "id": "biology-2017-bio202435",
+   "year": 2024,
+   "number": "35",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease",
+   "text": "The graph shows the results of a survey conducted to determine if children changed\ntheir method of communication after cochlear implantation.\n5\nWith reference to the data, describe how cochlear implants work, and how they affect\ncommunication in children.\nDue to copyright restrictions, this\nmaterial cannot be displayed until\npermission has been obtained.\n4258310373\nSection II extra writing space\n2402310372\nSection II extra writing space\n0968310377\nSection II extra writing space"
+  },
+  {
+   "id": "biology-2017-qhsc202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Cells as the Basis of Life / Cell Function",
+   "text": "Amoeba reproduce by the process shown.\nParent amoeba - Nucleus divides - Cytoplasm divides - Two daughter cells\nWhich of the following is a characteristic of the daughter cells?\nGenetically different to parent amoeba\nGenetically identical to parent amoeba\nMore organelles due to the cell division\nFewer chromosomes than the parent amoeba"
+  },
+  {
+   "id": "biology-2017-qhsc202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Heredity / Genetic Variation",
+   "text": "What type of mutagen is UV light?\nBiochemical\nBiological\nChemical\nElectromagnetic"
+  },
+  {
+   "id": "biology-2017-qhsc202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": "Which row in the table correctly identifies the role of phagocytes and lymphocytes?\nOption A (diagram)\nOption B (diagram)\nOption C (diagram)\nOption D (diagram)"
+  },
+  {
+   "id": "biology-2017-qhsc202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Heredity / Genetic Variation",
+   "text": "A storm randomly kills 80% of the frog population on an island. The allele frequencies in the frog population after the storm are notably different to those of the population before the storm.\nWhat is the process that has led to the change in allele frequencies?\nGene flow\nGenetic drift\nNatural selection\nSurvival of the fittest"
+  },
+  {
+   "id": "biology-2017-qhsc202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": "An infectious disease is spread through direct contact between hosts.\nUnder which conditions will this disease spread most rapidly?\nLow population density with infected individuals rarely dying from the disease\nHigh population density with infected individuals rarely dying from the disease\nLow population density with infected individuals quickly dying from the disease\nHigh population density with infected individuals quickly dying from the disease"
+  },
+  {
+   "id": "biology-2017-qhsc202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": "Rabies is a viral disease spread by infected animals. If bitten by an infected animal, a person can be treated by receiving an injection of antibodies.\nWhat type of immunity will this person have following the injection?\nInnate active\nNatural passive\nAcquired active\nAcquired passive"
+  },
+  {
+   "id": "biology-2017-qhsc202507",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Ecosystem Dynamics",
+   "text": "An animal's body and air temperatures were measured every 4 hours... Based on this data, which row indicates what type of animal it is and why?\nOption A (diagram)\nOption B (diagram)\nOption C (diagram)\nOption D (diagram)"
+  },
+  {
+   "id": "biology-2017-qhsc202508",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Heredity / Inheritance Patterns in a Population",
+   "text": "When a red camellia flower is crossed with a white camellia flower, all the offspring are covered in both red and white petals.\nWhat is the reason for this occurrence?\nOne gene is controlling multiple characteristics.\nEnvironmental factors affect the phenotype of camellia flowers.\nAlleles for both red and white colour in camellia flowers are recessive.\nPetal colour in camellia flowers is controlled by a co-dominance pattern of inheritance."
+  },
+  {
+   "id": "biology-2017-qhsc202509",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Ecosystem Dynamics",
+   "text": "Dialysis is used to assist people with loss of kidney function.\nWhich row correctly describes blood composition before and after dialysis?\nOption A (diagram)\nOption B (diagram)\nOption C (diagram)\nOption D (diagram)"
+  },
+  {
+   "id": "biology-2017-qhsc202511",
+   "year": 2025,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": "In 2018, the Victorian government reported vaccinating more than 95% of children below age five.\nWhat is the benefit of achieving a 95% vaccination rate for an infectious disease?\nOnly 5% of individuals will catch the disease.\nOnly 5% of individuals will be protected by the vaccine.\nThis will protect the remaining 5% who are not vaccinated.\nThe vaccinated individuals can transfer immunity to the remaining 5."
+  },
+  {
+   "id": "biology-2017-qhsc202512",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Heredity / Genetic Variation",
+   "text": "The following represents a karyotype for an individual with Down syndrome.\nWhat conclusions can be drawn about the individual from this karyotype?\nA male with a deletion mutation\nA female with a deletion mutation\nA male with a chromosomal mutation\nA female with a chromosomal mutation"
+  },
+  {
+   "id": "biology-2017-qhsc202513",
+   "year": 2025,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Non-infectious Disease and Disorders / Epidemiology",
+   "text": "The prevalence of a non-infectious disease has remained constant for over 10 years. A new treatment prolongs life but does not cure.\nWhich row shows the effect of the treatment on both incidence and prevalence?\nOption A (diagram)\nOption B (diagram)\nOption C (diagram)\nOption D (diagram)"
+  },
+  {
+   "id": "biology-2017-qhsc202514",
+   "year": 2025,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": "A pathogen that produces an immune response is shown.\nWhich antibody will be produced as a response to the pathogen? (options are diagrams A-D)\nOption A (diagram)\nOption B (diagram)\nOption C (diagram)\nOption D (diagram)"
+  },
+  {
+   "id": "biology-2017-qhsc202515",
+   "year": 2025,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Genetic Change / Biotechnology",
+   "text": "Cochlear implants assist with hearing. The following are five steps... Which is the correct order for this process?\n1, 4, 3, 2, 5\n1, 3, 2, 4, 5\n3, 1, 5, 2, 4\n3, 1, 2, 5, 4"
+  },
+  {
+   "id": "biology-2017-qhsc202516",
+   "year": 2025,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Genetic Change / Biotechnology",
+   "text": "The diagram shows a process used to make multiple clones in sheep.\nThe identical offspring are clones of\neach other.\nonly sheep B.\nthe surrogates.\nboth sheep A and B."
+  },
+  {
+   "id": "biology-2017-qhsc202517",
+   "year": 2025,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Cells as the Basis of Life / Cell Function",
+   "text": "Some phases of cell division in an organism are shown (Q,R,S,T).\nWhat is the correct sequence of the process?\nQ, S, R, T\nQ, R, S, T\nS, T, R, Q\nS, R, T, Q"
+  },
+  {
+   "id": "biology-2017-qhsc202518",
+   "year": 2025,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Heredity / Inheritance Patterns in a Population",
+   "text": "The fruit fly Drosophila melanogaster... bar-eye gene on X chromosome dominant. Offspring from bar-eyed male x normal female. Males XY and females XX. Which row shows correct percentage with bar-eye?\nOption A (diagram)\nOption B (diagram)\nOption C (diagram)\nOption D (diagram)"
+  },
+  {
+   "id": "biology-2017-qhsc202519",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 11 / Cells as the Basis of Life / Cell Function",
+   "text": "The grasshopper average genome size 120 million base pairs. 42% contain cytosine and guanine.\nWhat is the number of DNA nucleotides with thymine in each cell?\n25.2 million\n34.8 million\n69.6 million\n120 million"
+  },
+  {
+   "id": "biology-2017-qhsc202520",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Heredity / DNA and Polypeptide Synthesis",
+   "text": "Researchers studying T-cell acute lymphoblastic leukaemia (T-ALL)... regulating proteins can activate oncogene LMO2. Best explanation?\nT-ALL is caused by an inactive Oncogene LMO2.\nThe regulating proteins are the direct cause of T-ALL.\nThe regulating proteins have no effect as they are made on non-coding DNA.\nThe regulating proteins can activate the Oncogene LMO2, causing the condition."
+  },
+  {
+   "id": "biology-2017-qhsc202521",
+   "year": 2025,
+   "number": "21",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": ". The diagram shows components of the innate immune system in humans: nasal hair, tear glands, mucus lining, skin, stomach acid, urinary tract.\nState the role of TWO components that protect against infection.\nAnswer as Component / How it protects against infection."
+  },
+  {
+   "id": "biology-2017-qhsc202522",
+   "year": 2025,
+   "number": "22",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": ". (4 marks)\n(a) Outline a process used by fungi for reproduction.\n(b) Outline an adaptation in a pathogen that facilitates transmission between hosts."
+  },
+  {
+   "id": "biology-2017-qhsc202523",
+   "year": 2025,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Genetic Change / Biotechnology",
+   "text": ". (3 marks) Compare the processes of artificial insemination and artificial pollination."
+  },
+  {
+   "id": "biology-2017-qhsc202524",
+   "year": 2025,
+   "number": "24",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 11 / Ecosystem Dynamics",
+   "text": ". (4 marks) Flow chart of body temperature control in humans.\n(a) Complete the flow chart to give an example of mechanism A and an example of mechanism B.\n(b) Outline how mechanism B maintains homeostasis."
+  },
+  {
+   "id": "biology-2017-qhsc202525",
+   "year": 2025,
+   "number": "25",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Working scientifically / Analysing Data and Information",
+   "text": ". (3 marks) The graph shows changes in UV level in a single day. Cancer Council: sun protection needed whenever UV level is 3 or above. Sunscreen product suggests use between 10 am and 4 pm. Using the graph, evaluate the product information regarding Cancer Council suggestion."
+  },
+  {
+   "id": "biology-2017-qhsc202526",
+   "year": 2025,
+   "number": "26",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Genetic Change / Biotechnology",
+   "text": ". (4 marks) The diagram shows steps in LASIK surgery. Compare the LASIK technology shown with ONE other technology that can be used to treat a named visual disorder.\nVisual disorder:"
+  },
+  {
+   "id": "biology-2017-qhsc202528",
+   "year": 2025,
+   "number": "28",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Non-infectious Disease and Disorders / Causes and Effects",
+   "text": ". (9 marks) Alpha-gal syndrome: tick-borne allergy to red meat. Diagram shows tick transfers alpha-gal, body makes antibodies, meat triggers immune response.\n(a) Flow chart of antibody production: Alpha-gal -> Macrophage -> X -> Y -> Z -> Memory cells / Antibodies. Describe role of X, Y, Z.\n(b) An allergic reaction to alpha-gal is similar to a secondary immune response. Graph Concentration vs Time with tick bite and meat eaten. Describe features.\n(c) Explain role of memory cells in immune response."
+  },
+  {
+   "id": "biology-2017-qhsc202529",
+   "year": 2025,
+   "number": "29",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Infectious Disease / Causes of Infectious Disease",
+   "text": ". (6 marks) Varroa mite is external parasite of European honey bees; detected Port of Newcastle June 2022.\n(a) Why is Varroa mite infection considered to be an infectious disease?\n(b) Explain TWO procedures that could have been employed to prevent spread of Varroa mite."
+  },
+  {
+   "id": "biology-2017-qhsc202531",
+   "year": 2025,
+   "number": "31",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Heredity / Inheritance Patterns in a Population",
+   "text": ". (6 marks) CAMT pedigree, unaffected template strand GTC ATA CAG CTG, codon chart. CAMT mutation produces Glutamine-Tyrosine-Isoleucine-Aspartic acid.\n(a) What type of inheritance is shown in the pedigree? Justify your answer.\nType of inheritance:\n(b) Template strand GTC ATA CAG CTG (unaffected). Mutation gives Glutamine-Tyr-Ile-Asp instead of Glutamine-Tyr-Val-Asp. Use codon chart to explain mutation."
+  },
+  {
+   "id": "biology-2017-qhsc202533",
+   "year": 2025,
+   "number": "33",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 11 / Cells as the Basis of Life / Cell Function",
+   "text": ". (9 marks) Diagram: cell division processes in two related individuals; labels X,R,B,A,V,T,U,Q,W, germ-line/somatic cells; sperm/egg.\n(a) Compare cell division processes carried out by cells R and S in Individual 1.\n(b) Explain relationship between Individuals 1 and 2.\n(c) Mutations A and B. Analyse how they affect genetic information in cells U, V, W, X."
+  }
+ ]
+}

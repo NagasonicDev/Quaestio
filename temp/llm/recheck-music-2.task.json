@@ -1,0 +1,793 @@
+{
+ "course_id": "music-2",
+ "course_name": "Music 2",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is the current label and is known to be unreliable. Use null if the text is missing, placeholder, or no dot covers the core concept. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Music context and Music language / Context / Style, including the characteristic manner in which music is composed, performed or understood"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Music context and Music language / Context / Genre, including categorisations of music based on formal and cultural criteria"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Music context and Music language / Context / Musical conventions, including established practices, norms and rules that govern the composition, performance and interpretation of music within specific genres, cultures or historical periods"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Metre, including regular, simple and compound, irregular metres, mixed metres and poly-metres"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Tempo, including gradations, metronome markings and expressive indications"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Music context and Music language / Theoretical language / All note values and rhythm grouping appropriate to styles"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Scales, modes and tonality, including pentatonic, modal, diatonic major and diatonic minor scales, polytonality, bitonality, whole tone, tone row, experimental scale forms, microtonal scales, interval sets and pitch sets"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Chord qualities, including triads, diminished and augmented chords, dominant sevenths, secondary sevenths and inversion in major and minor keys, extended chords, altered chords, diatonic harmony and chromatic harmony"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Music context and Music language / Theoretical language / Chord progressions and cadences"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Music context and Music language / Compositional language / Rhythmic devices, including syncopation, triplets, hemiola, ostinato, polyrhythm, swing, cross-rhythm, augmentation and diminution"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Music context and Music language / Compositional language / Melodic devices, including sequence, imitation, inversion, leitmotif, melisma, chromaticism, inversion, retrograde, suspension and ornamentation"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Music context and Music language / Compositional language / Harmonic devices, including modulation, dissonance and resolution, circle of fifths, pedal point, ground bass, alberti bass, broken chords, suspension and chromatic harmony"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Music context and Music language / Compositional language / Structural devices, including motif, cell, theme, structures specific to styles and hybrid forms"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Music context and Music language / Compositional language / Textural devices, including melody, accompaniment, harmonic accompaniment, bassline, canon, call and response, doubling, antiphony, layering, countermelody, heterophony, voicing, register and range of voices and instruments"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Music context and Music language / Compositional language / Performing media, including choices of instrumental and vocal sounds, instrument-specific techniques, transposition, acoustic, electronic and digital manipulation of timbres"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Music context and Music language / Compositional language / Expressive devices, including dynamics, articulation, vibrato, mute, accent, portamento, rubato, tremolo, glissando and harmonics"
+  },
+  {
+   "code": "PRE-M1-T3-D8",
+   "path": "Year 11 / Music context and Music language / Compositional language / Digital techniques, including looping, sampling, delay, echo, pitch shifting, digital reverb and electroacoustic"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Music context and Music language / Notational language / Treble, bass, alto, tenor and percussion clefs"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Music context and Music language / Notational language / Graphic notation"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Music context and Music language / Notational language / Open scores"
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Music context and Music language / Notational language / Nonlinear scoring"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Music context and Music language / Notational language / Spatial scoring"
+  },
+  {
+   "code": "PRE-M1-T4-D6",
+   "path": "Year 11 / Music context and Music language / Notational language / Contemporary music notation"
+  },
+  {
+   "code": "PRE-M1-T4-D7",
+   "path": "Year 11 / Music context and Music language / Notational language / Digital music documentation"
+  },
+  {
+   "code": "PRE-M1-T4-D8",
+   "path": "Year 11 / Music context and Music language / Notational language / Systems associated with music from specific cultural or performance traditions which may include oral, kinaesthetic gesture-based systems"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / Perform compositions and arrangements of solo and ensemble repertoire from the Baroque, Classical and Romantic periods with technical and expressive control"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / Apply stylistic conventions to the interpretation of Baroque, Classical and Romantic repertoire"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Music of Western art traditions 1 / Performing / Apply period-appropriate interpretation of phrasing, ornamentation and performance directions to vocal and instrumental practices"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / Identify and transcribe melodic, harmonic and rhythmic patterns in music from different stylistic periods"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / Describe melodic, harmonic, rhythmic patterns, structural and textural devices in scores and recordings of Baroque, Classical and Romantic music"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / Analyse the development of musical ideas using Compositional and Notational language to shape musical intent"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Music of Western art traditions 1 / Listening, analysing and responding / Interpret familiar and unfamiliar scores and recorded performances using Music language"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Music of Western art traditions 1 / Creating and composing / Arrange short musical excerpts for small ensembles using diatonic harmony in major and minor keys, including triads, inversions, dominant sevenths and secondary sevenths"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Music of Western art traditions 1 / Creating and composing / Apply melodic and harmonic content to the creation of musical ideas, including diatonic and chromatic harmony"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Music of Western art traditions 1 / Creating and composing / Create melodies and accompaniment for voices and instruments using harmonic content, cadences and textural conventions from distinct stylistic periods"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Music of Western art traditions 1 / Creating and composing / Create accompanied pieces for specific combinations of voices and instruments"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Music of Western art traditions 1 / Creating and composing / Apply structural and textural conventions to arrangements of musical ideas"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / Music of Western art traditions 1 / Creating and composing / Create scores applying Compositional and Notational language to convey dynamics, articulation and expression"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Music for drama, movement and entertainment / Performing / Apply technical, interpretative and expressive skills to vocal and instrumental performances"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Music for drama, movement and entertainment / Performing / Communicate character, mood and narrative through musical choices"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Music for drama, movement and entertainment / Performing / Apply improvisation and expressive techniques in solo and ensemble performances to enhance storytelling"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Music for drama, movement and entertainment / Performing / Use technology to enhance musical effect"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Music for drama, movement and entertainment / Listening, analysing and responding / Identify aurally and transcribe melodic, harmonic and rhythmic patterns in music from a range of styles and genres using appropriate notation"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Music for drama, movement and entertainment / Listening, analysing and responding / Describe melodic, harmonic and rhythmic patterns and Compositional language in music from a range of styles and genres"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Music for drama, movement and entertainment / Listening, analysing and responding / Analyse scores and recorded performances for features of musical style"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Music for drama, movement and entertainment / Listening, analysing and responding / Examine how composers use timbre, expressive techniques and structural and textural devices to convey meaning"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Music for drama, movement and entertainment / Listening, analysing and responding / Analyse rhythmic and melodic devices that communicate a relationship between words and music"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Music for drama, movement and entertainment / Listening, analysing and responding / Evaluate the relationship between music and storytelling"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Music for drama, movement and entertainment / Creating and composing / Create short melodic and harmonic fragments that support storytelling"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Music for drama, movement and entertainment / Creating and composing / Create musical ideas using musical motifs and themes to communicate character and mood"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Music for drama, movement and entertainment / Creating and composing / Use technology for musical effect"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Music for drama, movement and entertainment / Creating and composing / Justify compositional choices to refine musical work"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Music for drama, movement and entertainment / Creating and composing / Apply Music language to appropriately convey dynamics, articulation and expression in compositions"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Performing / Apply music-making practice in rehearsals and performances of solo and ensemble repertoire, including improvised elements, performer decision-making and interpretation of open scores"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Performing / Use improvisational skills, including interpretative breadth, technical precision and stylistic nuance"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Performing / Apply extended techniques and technology to manipulate vocal and instrumental timbre"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Performing / Apply live performance technologies, expressive practices and improvisation to the performance of solo and ensemble vocal and instrumental music"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Listening, analysing and responding / Identify aurally the tonal, metric and rhythmic content from excerpts of music of a range of styles and genres, and transcribe using appropriate notation"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Listening, analysing and responding / Describe vocal and instrumental timbral manipulation as part of performance practice"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Listening, analysing and responding / Analyse complex musical scores, synthesising understanding of tonal, metric and rhythmic content, the expansion of timbral range, and the emergence of new Compositional language and musical genres and forms"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Listening, analysing and responding / Analyse the expanded use of timbral manipulation and the relationship to the development and use of improvisation and technology in the performance and recording of music"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Listening, analysing and responding / Compare scores, audio recordings and performance of music with consideration for how context informs composers’ and performers’ use of Compositional language and stylistic techniques"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Creating and composing / Use musical ideas and Compositional language from the works of composers to generate new musical material"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Creating and composing / Apply improvisation techniques to the creation of new musical ideas and the manipulation, development and refinement of existing materials"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Creating and composing / Create musical material that blends traditional and contemporary musical material"
+  },
+  {
+   "code": "PRE-M4-T3-D4",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Creating and composing / Combine pre-recorded material with live performance and improvisation to create and develop musical material"
+  },
+  {
+   "code": "PRE-M4-T3-D5",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Creating and composing / Integrate live performance technology into own composed work for soloists and small ensembles"
+  },
+  {
+   "code": "PRE-M4-T3-D6",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Creating and composing / Create documentation and scores of music, applying Music language and notation conventions, to accurately convey dynamics, articulation and expression"
+  },
+  {
+   "code": "PRE-M4-T3-D7",
+   "path": "Year 11 / Music of the 20th and 21st centuries / Creating and composing / Document the creative process used to compose and refine new musical ideas"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Music context and Music language / Context / Style, including the characteristic manner in which music is composed, performed or understood"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Music context and Music language / Context / Genre, including categorisations of music based on formal and cultural criteria"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Music context and Music language / Context / Musical conventions, including established practices, norms and rules that govern the composition, performance and interpretation of music within specific genres, cultures or historical periods"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Metre, including regular, simple and compound, irregular metres, mixed metres and poly-metres"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Tempo, including gradations, metronome markings and expressive indications"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Music context and Music language / Theoretical language / All note values and rhythm grouping appropriate to styles"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Scales, modes and tonality, including pentatonic, modal, diatonic major and diatonic minor scales, polytonality, bitonality, whole tone, tone row, experimental scale forms, microtonal scales, interval sets and pitch sets"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Chord qualities, including triads, diminished and augmented chords, dominant sevenths, secondary sevenths and inversion in major and minor keys, extended chords, altered chords, diatonic harmony and chromatic harmony"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Music context and Music language / Theoretical language / Chord progressions and cadences"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Music context and Music language / Compositional language / Rhythmic devices, including syncopation, triplets, hemiola, ostinato, polyrhythm, swing, cross-rhythm, augmentation and diminution"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Music context and Music language / Compositional language / Melodic devices, including sequence, imitation, inversion, leitmotif, melisma, chromaticism, inversion, retrograde, suspension and ornamentation"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Music context and Music language / Compositional language / Harmonic devices, including modulation, dissonance and resolution, circle of fifths, pedal point, ground bass, alberti bass, broken chords, suspension and chromatic harmony"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Music context and Music language / Compositional language / Structural devices, including motif, cell, theme, structures specific to styles and hybrid forms"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Music context and Music language / Compositional language / Textural devices, including melody, accompaniment, harmonic accompaniment, bassline, canon, call and response, doubling, antiphony, layering, countermelody, heterophony, voicing, register and range of voices and instruments"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Music context and Music language / Compositional language / Performing media, including choices of instrumental and vocal sounds, instrument-specific techniques, transposition, acoustic, electronic and digital manipulation of timbres"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Music context and Music language / Compositional language / Expressive devices, including dynamics, articulation, vibrato, mute, accent, portamento, rubato, tremolo, glissando and harmonics"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Music context and Music language / Compositional language / Digital techniques, including looping, sampling, delay, echo, pitch shifting, digital reverb and electroacoustic"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Music context and Music language / Notational language / Treble, bass, alto, tenor and percussion clefs"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Music context and Music language / Notational language / Graphic notation"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Music context and Music language / Notational language / Open scores"
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / Music context and Music language / Notational language / Nonlinear scoring"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / Music context and Music language / Notational language / Spatial scoring"
+  },
+  {
+   "code": "HSC-M1-T4-D6",
+   "path": "Year 12 / Music context and Music language / Notational language / Contemporary music notation"
+  },
+  {
+   "code": "HSC-M1-T4-D7",
+   "path": "Year 12 / Music context and Music language / Notational language / Digital music documentation"
+  },
+  {
+   "code": "HSC-M1-T4-D8",
+   "path": "Year 12 / Music context and Music language / Notational language / Systems associated with music from specific cultural or performance traditions which may include oral, kinaesthetic gesture-based systems"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Apply stylistic awareness, technical control, and idiomatic and expressive techniques"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Interpret non-traditional notation and recorded music of improvisations and performances by soloists and ensemble members"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Demonstrate expressive control in the performance of works, including improvisation, extended techniques, technical demands, pitch and rhythmic complexities and the interpretation of new forms of notation"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Use technology to enhance musical effect"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Performing / Evaluate performances to develop technique and stylistic understanding"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Identify aurally and transcribe Music language from music in a range of cultures and styles using appropriate notation"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Interpret the use of notation conventions in scores from a variety of musical styles"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Compare the ways tonal systems, metric content, structural and textural conventions, and the use and manipulation of timbre, shape musical intent and meaning in musical works"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Evaluate the ways performance practices communicate intent, including the use of extended techniques, meeting technical demands, and pitch and rhythmic complexities"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Evaluate ways the creation, performance, recording and notation of music have been influenced by technology and context"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Use traditional, digital and acoustic instrument capabilities, idioms and extended techniques to create new musical ideas"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Arrange the sounds of traditional, digital or acoustic performing media to explore timbre, structure and texture in compositions"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Apply tonal and metric complexity to the generation and development of musical ideas"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Refine compositions to achieve expressive intent and communicate meaning with stylistic cohesion"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Apply technology to the documentation of sound-based creations"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Music of the last 25 years (Australian focus) / Creating and composing / Apply appropriate Notational language and score conventions to document music and communicate musical ideas, shape meaning and convey expressive intent"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Music of Western art traditions 2 / Performing / Apply conventional and extended vocal and instrumental techniques and technology to expand and manipulate timbral range"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Music of Western art traditions 2 / Performing / Improvise using existing musical ideas with stylistic nuance and interpretative depth"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Music of Western art traditions 2 / Performing / Perform with stylistic responsiveness to melodic, harmonic, tonal, metric, rhythmic, structural and expressive musical gestures"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Music of Western art traditions 2 / Performing / Explore diverse forms of notation, the use of technology and the impact of composer intent on performer interpretation"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Compare how Compositional and Notational languages are used to shape meaning in music"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Compare the expanded treatment and manipulation of vocal, instrumental and electronic timbres, and the use of technology in works from varying styles"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Evaluate the ways Music context and technology have influenced the creation, performance, recording and notation of music"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Music of Western art traditions 2 / Creating and composing / Use Compositional language to manipulate and arrange existing musical and sound-based material for small, mixed ensembles"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Music of Western art traditions 2 / Creating and composing / Create and develop new musical material for soloists and small, mixed ensembles using tonal, metric and rhythmic language appropriate to stylistic requirements"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Music of Western art traditions 2 / Creating and composing / Develop complex musical material, blending traditional and contemporary practices and techniques to achieve expressive intent"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Music of Western art traditions 2 / Creating and composing / Apply digital technology to support the documentation of sound-based creations"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Music of Western art traditions 2 / Creating and composing / Create scores applying Compositional and Notational language conventions appropriate to stylistic requirements"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Elective project / Performing / Apply stylistic conventions and expressive techniques to the rehearsal and performance of solo and ensemble repertoire"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Elective project / Performing / Apply contextual and stylistic conventions to the leadership of solo and ensemble music-making"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Elective project / Performing / Apply the findings of musical investigations to inform interpretative decision-making"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Elective project / Listening, analysing and responding (musicology) / Analyse how Music context and Music language are used to shape meaning in music created by composers and performers"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Elective project / Listening, analysing and responding (musicology) / Compare the musical content of scores, recorded performances and domain specific commentary as part of their musicological investigation in their chosen area of study"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Elective project / Listening, analysing and responding (musicology) / Select musical evidence to support ideas and conclusions in their chosen area of study"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Elective project / Creating and composing / music of Aboriginal and/or Torres Strait Islander Peoples (traditional, art, contemporary or popular)"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Elective project / Creating and composing / music of global cultures and traditions"
+  },
+  {
+   "code": "HSC-M4-T3-D3",
+   "path": "Year 12 / Elective project / Creating and composing / jazz"
+  },
+  {
+   "code": "HSC-M4-T3-D4",
+   "path": "Year 12 / Elective project / Creating and composing / early music (pre 1600)"
+  },
+  {
+   "code": "HSC-M4-T3-D5",
+   "path": "Year 12 / Elective project / Creating and composing / music of the Baroque period"
+  },
+  {
+   "code": "HSC-M4-T3-D6",
+   "path": "Year 12 / Elective project / Creating and composing / music of the Classical period"
+  },
+  {
+   "code": "HSC-M4-T3-D7",
+   "path": "Year 12 / Elective project / Creating and composing / music of the Romantic period"
+  },
+  {
+   "code": "HSC-M4-T3-D8",
+   "path": "Year 12 / Elective project / Creating and composing / music of the 20th century"
+  },
+  {
+   "code": "HSC-M4-T3-D9",
+   "path": "Year 12 / Elective project / Creating and composing / music of the 21st century."
+  },
+  {
+   "code": "HSC-M4-T3-D10",
+   "path": "Year 12 / Elective project / Creating and composing / Create original pieces for solo and ensemble music, applying stylistic conventions and expressive techniques to shape meaning"
+  },
+  {
+   "code": "HSC-M4-T3-D11",
+   "path": "Year 12 / Elective project / Creating and composing / Develop musical ideas for specific combinations of voices, instruments and technologies using Music language for expressive intent"
+  },
+  {
+   "code": "HSC-M4-T3-D12",
+   "path": "Year 12 / Elective project / Creating and composing / Apply the findings of musical investigations to inform composition decision-making and the documentation of sound-based inventions"
+  }
+ ],
+ "questions": [
+  {
+   "id": "m2_2020_q1",
+   "year": 2020,
+   "number": 1,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "This question is based on TWO excerpts from Concerto for Piccolo Flute and Orchestra, Movement 2: Wheels Within Wheels by Paul Stanhope (Score Attachment A bars 1-48; Score Attachment B bars 171-221).\nOutline TWO ways the composer uses duration in this excerpt.\nDescribe how tone colour is used in this excerpt. In your answer, make specific reference to the score.\nExplain how unity and contrast are achieved in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2020_q2",
+   "year": 2020,
+   "number": 2,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on TWO excerpts from War Requiem, Op. 66: Dies Irae by Benjamin Britten (part (a) no score; part (b) score printed in paper).\nNotate the pitch and rhythm of the vocal part on the staves provided.\nOutline the use of pitch in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2020_q3",
+   "year": 2020,
+   "number": 3,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on an excerpt from 'Act 1: Scene 1, Introduction' from Romeo and Juliet, Op. 64 by Sergei Prokofiev (Score Attachment C, bars 9-28 for (a); bars 9-64 for (b)).\nDescribe the use of musical material in this excerpt. In your answer, make specific reference to the score.\nWith reference to texture, explain how tension is achieved in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2020_q4",
+   "year": 2020,
+   "number": 4,
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Compare the ways tonal systems, metric content, structural and textural conventions, and the use and manipulation of timbre, shape musical intent and meaning in musical works",
+   "text": "How do composers use the concepts of music to create musical interest?\nIn your answer, refer to 'Overture' from Gogol Suite by Alfred Schnittke (Score Attachment D, bars 1-29) and ONE other significant work you have studied. In your answer, make specific reference to the scores of both works. The other significant work MUST be chosen from the mandatory topic, Music of the last 25 years (Australian focus).\nTitle of work you have studied: ________\nComposer: ________"
+  },
+  {
+   "id": "m2_2021_q1",
+   "year": 2021,
+   "number": 1,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on an excerpt from 'Canon 2 a 2 violini in unisono' from Musical Offering, BWV 1079: 4b by J. S. Bach (score provided).\nOutline the roles of each of the instruments featured in this excerpt.\nDescribe how expressive techniques are used in this excerpt. In your answer, make specific reference to the score.\nExplain how pitch is used in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2021_q2",
+   "year": 2021,
+   "number": 2,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on TWO excerpts from Coppelia by Leo Delibes (Score Attachment A, bars 130-145 for part (b)).\nNotate the pitch and rhythm of the Violin I melody on the staves provided.\nDescribe the treatment of musical ideas in this excerpt. In your answer, make reference to the score."
+  },
+  {
+   "id": "m2_2021_q3",
+   "year": 2021,
+   "number": 3,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on an excerpt from 'Prelude to Act 1' from La traviata by Giuseppe Verdi (Score Attachment B, bars 1-16 and 17-36).\nExplain how tension is created in bars 1-16. In your answer, make specific reference to the score.\nHow is texture explored in bars 17-36? In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2021_q4",
+   "year": 2021,
+   "number": 4,
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Compare the ways tonal systems, metric content, structural and textural conventions, and the use and manipulation of timbre, shape musical intent and meaning in musical works",
+   "text": "Analyse how composers allow performers the freedom to interpret musical scores. In your answer, refer to Glenro (Postcard.) for piano and tape by Connor D'Netto and TWO other significant works you have studied. One work MUST be from the mandatory topic, Music of the last 25 years (Australian focus). The other work MUST be from your additional topic. In your answer, make specific reference to the score of each work. Title/composer spaces provided."
+  },
+  {
+   "id": "m2_2022_q1",
+   "year": 2022,
+   "number": 1,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on two excerpts from Serenade for Tenor, Horn and Strings, Op. 31 by Benjamin Britten (Movement I Prologue score below; Movement III Nocturne bars 1-25 Score Attachment A).\nOutline how the composer uses dynamics and expressive techniques in the 'Prologue'. In your answer, make specific reference to the score.\nDescribe the composer's use of pitch in the 'Prologue'. In your answer, make specific reference to the score.\nExplain how the composer uses duration in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2022_q2",
+   "year": 2022,
+   "number": 2,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on two excerpts from Lieutenant Kije Suite, Op. 60 by Sergei Prokofiev (part (a) melodic dictation; part (b) bars 1-33 Score Attachment B).\nNotate the pitch and rhythm of the Cello melody on the staves provided.\nExplain how tone colour is used in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2022_q3",
+   "year": 2022,
+   "number": 3,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on an excerpt from Miserere mei, Deus by Gregorio Allegri (Score Attachment C, bars 1-14 and 15-28).\nDescribe how texture and duration are used in this excerpt, with specific reference to the score.\nExplain how the composer creates musical interest in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2022_q4",
+   "year": 2022,
+   "number": 4,
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Compare the ways tonal systems, metric content, structural and textural conventions, and the use and manipulation of timbre, shape musical intent and meaning in musical works",
+   "text": "Analyse how different composers use the concepts of music to reflect different cultural contexts in their works. In your answer, refer to TWO works you have studied from the mandatory topic, Music of the last 25 years (Australian focus); one from art music and one from popular/music theatre/film/jazz. Make specific reference to each work. (25 minutes)."
+  },
+  {
+   "id": "m2_2023_q1",
+   "year": 2023,
+   "number": 1,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on two excerpts from String Quartet No. 14, K. 387, Movement I by W. A. Mozart (Score Attachment A, bars 1-55 and 56-89).\nComplete the table by identifying the chords and their positions on the first beats of bars 1 and 16.\nWith reference to the score, explain how contrast is achieved through texture from bar 1 to bar 55.\nWith reference to the score, describe the role of instruments from bar 56 to bar 89."
+  },
+  {
+   "id": "m2_2023_q2",
+   "year": 2023,
+   "number": 2,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on two excerpts from Symphony No. 8 'Unfinished' in B minor by Franz Schubert (Score Attachment B bars 1-38; melodic dictation part (b)).\nExplain how tension is created in this excerpt. In your answer, make specific reference to the score.\nNotate the pitch and rhythm of the violin melody on the staves provided."
+  },
+  {
+   "id": "m2_2023_q3",
+   "year": 2023,
+   "number": 3,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "This question is based on two excerpts from Dance of the Paper Umbrellas by Elena Kats-Chernin (Score Attachment C (i) bars 1-40; C (ii) bars 89-133).\nExplain how the leggiero style is realised, with specific reference to the score.\nAnalyse how variety has been achieved in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2023_q4",
+   "year": 2023,
+   "number": 4,
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "With reference to pitch and duration, to what extent does contemporary Australian music feature the development of musical ideas? In your answer, refer to TWO works you have studied from the mandatory topic, Music of the last 25 years (Australian focus). Do not refer to works in this paper. In your answer, make specific reference to each work. (20 minutes)."
+  },
+  {
+   "id": "m2_2024_q1",
+   "year": 2024,
+   "number": 1,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "This question is based on an excerpt from Prelude and Dragonfly Dance by Ross Edwards (Score Attachment A, bars 1-31).\nDescribe the meaning of the following circled musical signs in the score.\nDescribe the use of dynamics in this excerpt. In your answer, make specific reference to the score.\nWith reference to tone colour, how is interest achieved in this excerpt? In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2024_q2",
+   "year": 2024,
+   "number": 2,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on excerpts from Symphony No. 3 in F Major, Op. 90 by Johannes Brahms (Movement I bars 1-23; Movement II Andante).\nDiscuss the roles of performing media in this excerpt. In your answer, make specific reference to the score.\nNotate the pitch and rhythm of the Clarinet melody on the staves provided."
+  },
+  {
+   "id": "m2_2024_q3",
+   "year": 2024,
+   "number": 3,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "This question is based on excerpts from Pulses for Piano Trio by Paul Stanhope (Score Attachment C, bars 1-68 and 69-99).\nAnalyse how compositional devices are manipulated in the excerpt. In your answer, make specific reference to the score.\nExamine how tension is created in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2024_q4",
+   "year": 2024,
+   "number": 4,
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "Compare how pitch and texture are used in And the Lord said, Fiat Lux by Alice Chance and at least ONE work you have studied from the mandatory topic, Music of the last 25 years (Australian focus). Do not refer to works in this paper from Questions 1, 2 and 3. Make specific reference to the score of each work (25 minutes)."
+  },
+  {
+   "id": "m2_2025_q1",
+   "year": 2025,
+   "number": 1,
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on TWO excerpts from Concerto in F Major by Carl Maria von Weber (Score Attachments A(i) bars 1-62 and A(ii) bars 140-196).\nIdentify the solo instrument and the first note played at bar 41.\nThe excerpt has features from the late Classical and early 19th Century periods. Explain how this excerpt is representative of the Classical period. In your answer, make specific reference to the score.\nExplain the relationship between the solo instrument and the orchestra. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2025_q2",
+   "year": 2025,
+   "number": 2,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of Western art traditions 2 / Listening, analysing and responding / Identify and describe melodic, harmonic, tonal, metric and rhythmic patterns, and structural, textural, timbral and expressive devices in music from different musical styles",
+   "text": "This question is based on TWO excerpts from Violin Sonata in A Major, Op. V no. 6 by Arcangelo Corelli (Grave movement dictation; Allegro score excerpt texture).\nNotate the pitch and rhythm of the violin on the staves provided.\nExplain how texture is used in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2025_q3",
+   "year": 2025,
+   "number": 3,
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "This question is based on TWO excerpts from Tokyo by Night by Nigel Westlake (Score Attachment B, bars 1-12 and bars 13-40).\nDescribe the use of expressive techniques in this excerpt. In your answer, make specific reference to the score.\nAnalyse how duration creates unity and variety in this excerpt. In your answer, make specific reference to the score."
+  },
+  {
+   "id": "m2_2025_q4",
+   "year": 2025,
+   "number": 4,
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Music of the last 25 years (Australian focus) / Listening, analysing and responding / Describe and compare musical features and Compositional language in scores and recordings of music from a range of cultures and styles",
+   "text": "Compare how tone colour is used in Memoir of a Snail by Elena Kats-Chernin and at least TWO works you have studied from the mandatory topic, Music of the last 25 years (Australian focus). In your answer, make specific reference to each studied work. Do NOT refer to works in this paper from Questions 1, 2 and 3. (25 minutes)."
+  }
+ ]
+}

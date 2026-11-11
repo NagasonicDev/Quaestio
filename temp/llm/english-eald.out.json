@@ -1,0 +1,20 @@
+{
+  "eald202001": {"code": null, "confidence": "low", "why": "Module B identity/culture; no dot in that module"},
+  "eald202201": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Interpret poem's ideas with textual evidence, Module A"},
+  "eald202202": {"code": "HSC-M1-T2-D1", "confidence": "low", "why": "Interpret life experience in extract; nearest Module A analysis dot"},
+  "eald202203": {"code": "HSC-M1-T2-D1", "confidence": "low", "why": "Interpret metaphor's meaning; language-feature dots sit in wrong module"},
+  "eald202204": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Analyse representation of connection via evidence"},
+  "eald202205": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202206": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202207": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202208": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202209": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202210": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202211": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202212": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202213": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202214": {"code": "HSC-M1-T2-D1", "confidence": "medium", "why": "Sustained prescribed-text interpretation on human experience"},
+  "eald202215": {"code": "HSC-M1-T2-D12", "confidence": "high", "why": "Compose text selecting features to shape meaning and influence"},
+  "eald202301": {"code": null, "confidence": "low", "why": "Module B cultural identity challenge; no matching module dot"},
+  "eald202501": {"code": null, "confidence": "low", "why": "Module B identity essay; no matching module dot"}
+}

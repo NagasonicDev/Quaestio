@@ -1,0 +1,102 @@
+{
+  "m2_2010_201501": {
+    "code": "HSC-M5-T2-D2",
+    "confidence": "medium",
+    "why": "Melodic material treatment (pitch/melody) is main analytical part"
+  },
+  "m2_2010_201502": {
+    "code": "HSC-M5-T2-D8",
+    "confidence": "medium",
+    "why": "Explicitly explores how contrast is achieved"
+  },
+  "m2_2010_201503": {
+    "code": "HSC-M5-T2-D1",
+    "confidence": "medium",
+    "why": "Analyses treatment of rhythm in the movement"
+  },
+  "m2_2010_201504": {
+    "code": "HSC-M5-T2-D7",
+    "confidence": "low",
+    "why": "Broad comparison of concepts and style across works"
+  },
+  "m2_2010_201601": {
+    "code": "HSC-M5-T2-D5",
+    "confidence": "medium",
+    "why": "Culminating part explores texture of the motet"
+  },
+  "m2_2010_201602": {
+    "code": "HSC-M5-T2-D1",
+    "confidence": "medium",
+    "why": "Explicitly asks how duration creates interest"
+  },
+  "m2_2010_201603": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "medium",
+    "why": "Explore how tone colour is used in excerpt"
+  },
+  "m2_2010_201604": {
+    "code": "HSC-M5-T2-D7",
+    "confidence": "low",
+    "why": "Compare how composers develop ideas; style judgement"
+  },
+  "m2_2010_201701": {
+    "code": "HSC-M5-T2-D2",
+    "confidence": "medium",
+    "why": "Explicitly explores harmony and theme treatment"
+  },
+  "m2_2010_201702": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "low",
+    "why": "Asks how 'bell-like' tone quality is achieved"
+  },
+  "m2_2010_201703": {
+    "code": "HSC-M5-T2-D2",
+    "confidence": "low",
+    "why": "Notate pitch/rhythm of violin melody; tension"
+  },
+  "m2_2010_201704": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "low",
+    "why": "Extends tone colour exploration to compared works"
+  },
+  "m2_2010_201801": {
+    "code": "HSC-M5-T2-D4",
+    "confidence": "low",
+    "why": "Describe how instruments are used; instrumentation"
+  },
+  "m2_2010_201802": {
+    "code": "HSC-M5-T2-D6",
+    "confidence": "medium",
+    "why": "Outline structure and how variety is achieved"
+  },
+  "m2_2010_201803": {
+    "code": "HSC-M5-T2-D5",
+    "confidence": "low",
+    "why": "Balance between parts is a texture concern"
+  },
+  "m2_2010_201804": {
+    "code": "HSC-M5-T2-D7",
+    "confidence": "high",
+    "why": "Explicitly how composers create a particular style"
+  },
+  "m2_2010_201901": {
+    "code": "HSC-M5-T2-D1",
+    "confidence": "low",
+    "why": "Final scored part asks how duration is used"
+  },
+  "m2_2010_201902": {
+    "code": "HSC-M5-T2-D5",
+    "confidence": "medium",
+    "why": "Relationship between double bass and piano parts"
+  },
+  "m2_2010_201903": {
+    "code": "HSC-M5-T2-D8",
+    "confidence": "medium",
+    "why": "Explicitly explains how contrast is achieved"
+  },
+  "m2_2010_201904": {
+    "code": null,
+    "confidence": "medium",
+    "why": "Quoted statement missing; core concept unknowable"
+  }
+}

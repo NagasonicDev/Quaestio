@@ -1,0 +1,3357 @@
+{
+ "course_id": "engineering-studies",
+ "course_name": "Engineering Studies",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Engineering Fundamentals / Engineering mechanics / mass and force"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Engineering Fundamentals / Engineering mechanics / scalar and vector quantities"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Engineering Fundamentals / Engineering mechanics / simple machines"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Engineering Fundamentals / Engineering mechanics / levers, inclined plane, screws, wheel and axle, pulley systems and gears"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Engineering Fundamentals / Engineering mechanics / use mathematical and graphical methods to solve problems in engineering"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Engineering Fundamentals / Engineering mechanics / examine the function of simple machines"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / Engineering materials"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / classification of materials"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / properties of materials"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / physical and mechanical properties"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / classify a variety of materials"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / identify the properties of materials and explain the reason for their selection"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / structure of materials"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / atomic structure"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / bonding"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / crystalline and non-crystalline structure"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / describe the structure and bonding of materials"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / metals"
+  },
+  {
+   "code": "PRE-M1-T2-D13",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / ferrous metals including mild steels"
+  },
+  {
+   "code": "PRE-M1-T2-D14",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / non-ferrous metals including copper, brass, bronze and aluminium"
+  },
+  {
+   "code": "PRE-M1-T2-D15",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / distinguish between and explain reasons for the use of ferrous and non-ferrous metals as components in engineering"
+  },
+  {
+   "code": "PRE-M1-T2-D16",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / basic forming processes suitable for materials"
+  },
+  {
+   "code": "PRE-M1-T2-D17",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / casting"
+  },
+  {
+   "code": "PRE-M1-T2-D18",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / rolling"
+  },
+  {
+   "code": "PRE-M1-T2-D19",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / extruding"
+  },
+  {
+   "code": "PRE-M1-T2-D20",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / cutting"
+  },
+  {
+   "code": "PRE-M1-T2-D21",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / joining"
+  },
+  {
+   "code": "PRE-M1-T2-D22",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / fabricating"
+  },
+  {
+   "code": "PRE-M1-T2-D23",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / describe the suitability of basic forming processes used on materials"
+  },
+  {
+   "code": "PRE-M1-T2-D24",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / polymers"
+  },
+  {
+   "code": "PRE-M1-T2-D25",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / thermo softening"
+  },
+  {
+   "code": "PRE-M1-T2-D26",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / thermosetting"
+  },
+  {
+   "code": "PRE-M1-T2-D27",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / distinguish between thermo softening polymers and thermosetting polymers"
+  },
+  {
+   "code": "PRE-M1-T2-D28",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / ceramics"
+  },
+  {
+   "code": "PRE-M1-T2-D29",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / common types used"
+  },
+  {
+   "code": "PRE-M1-T2-D30",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / forming and shaping"
+  },
+  {
+   "code": "PRE-M1-T2-D31",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / identify the types of engineering ceramics"
+  },
+  {
+   "code": "PRE-M1-T2-D32",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / identify forming and shaping methods"
+  },
+  {
+   "code": "PRE-M1-T2-D33",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / composites"
+  },
+  {
+   "code": "PRE-M1-T2-D34",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / timber"
+  },
+  {
+   "code": "PRE-M1-T2-D35",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / concrete"
+  },
+  {
+   "code": "PRE-M1-T2-D36",
+   "path": "Year 11 / Engineering Fundamentals / Materials and structures / outline the properties and uses of composites in engineering"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / Communication"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / freehand sketching in three-dimensional and third angle orthogonal projection"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / identify third angle orthogonal projection"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / draw freehand, orthogonal and three dimensional pictorial drawings of objects"
+  },
+  {
+   "code": "PRE-M1-T3-D5",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / research methods"
+  },
+  {
+   "code": "PRE-M1-T3-D6",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / conduct research using computer technologies and other resources"
+  },
+  {
+   "code": "PRE-M1-T3-D7",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / collaborative work practices"
+  },
+  {
+   "code": "PRE-M1-T3-D8",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / appreciate the value of team work"
+  },
+  {
+   "code": "PRE-M1-T3-D9",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / Engineering Reports and their significance in engineering practice"
+  },
+  {
+   "code": "PRE-M1-T3-D10",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / outline the use and basic structure of an Engineering Report"
+  },
+  {
+   "code": "PRE-M1-T3-D11",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / Areas of engineering practice"
+  },
+  {
+   "code": "PRE-M1-T3-D12",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / nature and range of the work of engineers"
+  },
+  {
+   "code": "PRE-M1-T3-D13",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / identify areas of engineering"
+  },
+  {
+   "code": "PRE-M1-T3-D14",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / Historical and societal influences"
+  },
+  {
+   "code": "PRE-M1-T3-D15",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / historical developments of engineering"
+  },
+  {
+   "code": "PRE-M1-T3-D16",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / effect of engineering innovation on people’s lives"
+  },
+  {
+   "code": "PRE-M1-T3-D17",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / outline historical uses and appropriateness of materials in the design and production of engineering projects"
+  },
+  {
+   "code": "PRE-M1-T3-D18",
+   "path": "Year 11 / Engineering Fundamentals / Engineering communication / demonstrate an understanding of the historical developments of engineering"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Engineered Products / Product design / Engineering application module 2: Engineered products"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Engineered Products / Product design / 30 hours indicative time"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Engineered Products / Product design / Select one or more products as an introduction to engineering applications. Some products include: kettles, washing machines, toasters, portable power tools, irons, vacuum cleaners, wheelbarrows, sprinklers, garden implements, garden mulchers, lawnmowers and motor vehicles."
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Engineered Products / Product design / forces"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Engineered Products / Product design / nature and types of forces"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Engineered Products / Product design / addition of vectors"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Engineered Products / Product design / space and free body diagrams"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Engineered Products / Product design / resultants and equilibrants"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Engineered Products / Product design / principle of transmissibility of forces"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Engineered Products / Product design / three force rule for equilibrium"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Engineered Products / Product design / moments of a force"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Engineered Products / Product design / force/couple systems"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Engineered Products / Product design / apply mathematical and/or graphical methods to solve problems related to forces in engineered products"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / Engineered Products / Product design / equilibrium of concurrent coplanar forces"
+  },
+  {
+   "code": "PRE-M2-T1-D15",
+   "path": "Year 11 / Engineered Products / Product design / investigate and interpret the concept of equilibrium in the mechanics of engineered products"
+  },
+  {
+   "code": "PRE-M2-T1-D16",
+   "path": "Year 11 / Engineered Products / Product design / Engineering electricity/electronics"
+  },
+  {
+   "code": "PRE-M2-T1-D17",
+   "path": "Year 11 / Engineered Products / Product design / basic principles"
+  },
+  {
+   "code": "PRE-M2-T1-D18",
+   "path": "Year 11 / Engineered Products / Product design / potential difference"
+  },
+  {
+   "code": "PRE-M2-T1-D19",
+   "path": "Year 11 / Engineered Products / Product design / current"
+  },
+  {
+   "code": "PRE-M2-T1-D20",
+   "path": "Year 11 / Engineered Products / Product design / simple circuits and components"
+  },
+  {
+   "code": "PRE-M2-T1-D21",
+   "path": "Year 11 / Engineered Products / Product design / magnetic induction"
+  },
+  {
+   "code": "PRE-M2-T1-D22",
+   "path": "Year 11 / Engineered Products / Product design / electrical safety"
+  },
+  {
+   "code": "PRE-M2-T1-D23",
+   "path": "Year 11 / Engineered Products / Product design / related Australian electrical safety standards"
+  },
+  {
+   "code": "PRE-M2-T1-D24",
+   "path": "Year 11 / Engineered Products / Product design / fundamentals of AC and DC currents"
+  },
+  {
+   "code": "PRE-M2-T1-D25",
+   "path": "Year 11 / Engineered Products / Product design / electric motors and generators"
+  },
+  {
+   "code": "PRE-M2-T1-D26",
+   "path": "Year 11 / Engineered Products / Product design / explain the basic electrical principles occurring in the operation of electrical components and circuits"
+  },
+  {
+   "code": "PRE-M2-T1-D27",
+   "path": "Year 11 / Engineered Products / Product design / appreciate the importance of safety when using electricity"
+  },
+  {
+   "code": "PRE-M2-T1-D28",
+   "path": "Year 11 / Engineered Products / Product design / explain the working of an induction motor"
+  },
+  {
+   "code": "PRE-M2-T1-D29",
+   "path": "Year 11 / Engineered Products / Product design / outline field force in currents"
+  },
+  {
+   "code": "PRE-M2-T1-D30",
+   "path": "Year 11 / Engineered Products / Product design / distinguish between AC and DC current transmission"
+  },
+  {
+   "code": "PRE-M2-T1-D31",
+   "path": "Year 11 / Engineered Products / Product design / explain the workings of electric motors and/or generators"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / modification of materials"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / work hardening"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / heat treatment"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / alloying materials"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / conduct simple tests aimed at improving materials’ properties through work hardening and heat treatment"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / identify common alloy materials"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / engineering applications of materials"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / analyse the properties, uses and appropriateness of materials for engineered products"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / recyclability of materials"
+  },
+  {
+   "code": "PRE-M2-T2-D10",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / implications for recycling"
+  },
+  {
+   "code": "PRE-M2-T2-D11",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / costs and benefits of recycling materials"
+  },
+  {
+   "code": "PRE-M2-T2-D12",
+   "path": "Year 11 / Engineered Products / Materials and manufacturing / explain the benefits of recycling materials"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Engineered Products / Product analysis / orthogonal and pictorial drawings"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Engineered Products / Product analysis / Australian Standard (AS 1100)"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Engineered Products / Product analysis / dimensioning"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Engineered Products / Product analysis / materials lists"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Engineered Products / Product analysis / produce dimensioned orthogonal assembly drawings applying appropriate Australian Standard (AS 1100)"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / Engineered Products / Product analysis / computer graphics such as computer aided drawing (CAD)"
+  },
+  {
+   "code": "PRE-M2-T3-D7",
+   "path": "Year 11 / Engineered Products / Product analysis / use appropriate application software to produce a range of pictorial drawings"
+  },
+  {
+   "code": "PRE-M2-T3-D8",
+   "path": "Year 11 / Engineered Products / Product analysis / work with others and identify the benefits of working as a team"
+  },
+  {
+   "code": "PRE-M2-T3-D9",
+   "path": "Year 11 / Engineered Products / Product analysis / developing an Engineering Report"
+  },
+  {
+   "code": "PRE-M2-T3-D10",
+   "path": "Year 11 / Engineered Products / Product analysis / complete an analysis of materials used in a selected engineering product"
+  },
+  {
+   "code": "PRE-M2-T3-D11",
+   "path": "Year 11 / Engineered Products / Product analysis / incorporate the use of computer software in developing the Engineering Report"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Braking Systems / System components / Engineering application module 3: Braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Braking Systems / System components / Select one or more products related to braking systems as an introduction to engineering applications. Some examples include: the band brake, drum brake, disc brake, anti-lock braking systems (ABS) and regenerative braking systems, as well as the automotive handbrake."
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Braking Systems / System components / Skills of the professional engineer"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Braking Systems / System components / engineers as: problem-solvers; designers; communicators; project managers"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Braking Systems / System components / identify the skills required for a professional engineer"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Braking Systems / System components / Historical and societal influences"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Braking Systems / System components / historical development of various engineered products"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Braking Systems / System components / the effects of engineered products on peoples’ lives and living standards"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Braking Systems / System components / the environmental implications of the engineered product"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Braking Systems / System components / recount the historical development of the engineered products"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Braking Systems / System components / describe the effects of various engineered products on people’s lives"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Braking Systems / System components / identify the social and environmental implications of engineered products"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Braking Systems / System components / historical developments of braking systems including band, drum, disc, ABS, regenerative brake systems and the automotive hand brake"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Braking Systems / System components / engineering innovations in braking systems and their effect on people’s lives"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Braking Systems / System components / environmental implications from the use of materials in braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D16",
+   "path": "Year 11 / Braking Systems / System components / identify historical developments in braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D17",
+   "path": "Year 11 / Braking Systems / System components / explain the principles of braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D18",
+   "path": "Year 11 / Braking Systems / System components / examine the changing applications of materials used in components of braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D19",
+   "path": "Year 11 / Braking Systems / System components / discuss the social implications of technological change in braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D20",
+   "path": "Year 11 / Braking Systems / System components / Engineering materials"
+  },
+  {
+   "code": "PRE-M3-T1-D21",
+   "path": "Year 11 / Braking Systems / System components / materials for braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D22",
+   "path": "Year 11 / Braking Systems / System components / steels"
+  },
+  {
+   "code": "PRE-M3-T1-D23",
+   "path": "Year 11 / Braking Systems / System components / cast irons"
+  },
+  {
+   "code": "PRE-M3-T1-D24",
+   "path": "Year 11 / Braking Systems / System components / composites"
+  },
+  {
+   "code": "PRE-M3-T1-D25",
+   "path": "Year 11 / Braking Systems / System components / manufacturing/forming processes of composites"
+  },
+  {
+   "code": "PRE-M3-T1-D26",
+   "path": "Year 11 / Braking Systems / System components / investigate the macrostructure and microstructure as well as the properties of appropriate materials used in braking systems"
+  },
+  {
+   "code": "PRE-M3-T1-D27",
+   "path": "Year 11 / Braking Systems / System components / describe the manufacturing processes and application of composites to friction materials"
+  },
+  {
+   "code": "PRE-M3-T1-D28",
+   "path": "Year 11 / Braking Systems / System components / testing of materials"
+  },
+  {
+   "code": "PRE-M3-T1-D29",
+   "path": "Year 11 / Braking Systems / System components / tensile and compression test"
+  },
+  {
+   "code": "PRE-M3-T1-D30",
+   "path": "Year 11 / Braking Systems / System components / hardness test"
+  },
+  {
+   "code": "PRE-M3-T1-D31",
+   "path": "Year 11 / Braking Systems / System components / describe and/or conduct relevant mechanical tests on materials"
+  },
+  {
+   "code": "PRE-M3-T1-D32",
+   "path": "Year 11 / Braking Systems / System components / Communication"
+  },
+  {
+   "code": "PRE-M3-T1-D33",
+   "path": "Year 11 / Braking Systems / System components / graphical mechanics; graphical solutions to simple mechanical problems"
+  },
+  {
+   "code": "PRE-M3-T1-D34",
+   "path": "Year 11 / Braking Systems / System components / pictorial, orthogonal and exploded drawings"
+  },
+  {
+   "code": "PRE-M3-T1-D35",
+   "path": "Year 11 / Braking Systems / System components / Australian Standard (AS 1100), including dimensioning"
+  },
+  {
+   "code": "PRE-M3-T1-D36",
+   "path": "Year 11 / Braking Systems / System components / use of graphics to solve engineering problems"
+  },
+  {
+   "code": "PRE-M3-T1-D37",
+   "path": "Year 11 / Braking Systems / System components / produce pictorial and assembled orthogonal drawings using exploded views of braking systems and their components, applying appropriate Australian Standard (AS 1100)"
+  },
+  {
+   "code": "PRE-M3-T1-D38",
+   "path": "Year 11 / Braking Systems / System components / computer graphics, computer aided drawing (CAD)"
+  },
+  {
+   "code": "PRE-M3-T1-D39",
+   "path": "Year 11 / Braking Systems / System components / use appropriate application software to produce dimensioned orthogonal drawings"
+  },
+  {
+   "code": "PRE-M3-T1-D40",
+   "path": "Year 11 / Braking Systems / System components / collaborative work practices"
+  },
+  {
+   "code": "PRE-M3-T1-D41",
+   "path": "Year 11 / Braking Systems / System components / work with others and identify the benefits of working as a team"
+  },
+  {
+   "code": "PRE-M3-T1-D42",
+   "path": "Year 11 / Braking Systems / System components / Engineering Report writing"
+  },
+  {
+   "code": "PRE-M3-T1-D43",
+   "path": "Year 11 / Braking Systems / System components / complete an Engineering Report based on the analysis of one type of brake or a component of a braking system"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / Engineering mechanics and hydraulics"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / static friction (with simple calculations)"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / loads and extension"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / load/extension diagram"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / tension and compression"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / stress and strain"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / stress/strain diagram"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / work, power, energy (without calculations), principle of the conservation of energy"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / use mathematical methods to solve simple static friction problems"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / distinguish between extension, stress and strain"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / fluid mechanics"
+  },
+  {
+   "code": "PRE-M3-T2-D12",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / Pascal’s principle"
+  },
+  {
+   "code": "PRE-M3-T2-D13",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / hydrostatic pressure"
+  },
+  {
+   "code": "PRE-M3-T2-D14",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / applications to braking systems"
+  },
+  {
+   "code": "PRE-M3-T2-D15",
+   "path": "Year 11 / Braking Systems / Mechanical and hydraulic principles / investigate and apply the basic principles of fluid mechanics to simple braking systems"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / Engineering focus module 4: Biomedical engineering"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / 30 hours indicative time"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / This module will provide an introduction to the study of engineering focus modules."
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / One or more examples of biomedical engineering must be used to develop an understanding of the scope and nature of this profession. Some examples include: artificial joints, surgical equipment, artificial limbs, the bionic ear and artificial hearts."
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / Scope of the profession"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / nature and range of the work of biomedical engineers"
+  },
+  {
+   "code": "PRE-M4-T1-D7",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / current projects and innovations"
+  },
+  {
+   "code": "PRE-M4-T1-D8",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / health and safety matters"
+  },
+  {
+   "code": "PRE-M4-T1-D9",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / training for the profession"
+  },
+  {
+   "code": "PRE-M4-T1-D10",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / career prospects"
+  },
+  {
+   "code": "PRE-M4-T1-D11",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / relations with the community"
+  },
+  {
+   "code": "PRE-M4-T1-D12",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / technologies unique to the profession"
+  },
+  {
+   "code": "PRE-M4-T1-D13",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / ethics and engineering"
+  },
+  {
+   "code": "PRE-M4-T1-D14",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / engineers as managers"
+  },
+  {
+   "code": "PRE-M4-T1-D15",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / conduct research on the nature and range of the work of biomedical engineers"
+  },
+  {
+   "code": "PRE-M4-T1-D16",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / identify the health and safety issues relevant to biomedical engineering"
+  },
+  {
+   "code": "PRE-M4-T1-D17",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / appraise the training requirements and career prospects of biomedical engineers"
+  },
+  {
+   "code": "PRE-M4-T1-D18",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / debate social and ethical issues relating to biomedical engineering"
+  },
+  {
+   "code": "PRE-M4-T1-D19",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / historical background to biomedical engineering"
+  },
+  {
+   "code": "PRE-M4-T1-D20",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / historical developments of products"
+  },
+  {
+   "code": "PRE-M4-T1-D21",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / the effect of biomedical engineering on people’s lives"
+  },
+  {
+   "code": "PRE-M4-T1-D22",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / discuss and relate the historic development of materials as used in biomedical engineered products"
+  },
+  {
+   "code": "PRE-M4-T1-D23",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / discuss the impact of biomedical engineering on people’s lives"
+  },
+  {
+   "code": "PRE-M4-T1-D24",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / orders of levers"
+  },
+  {
+   "code": "PRE-M4-T1-D25",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / mechanical advantage, velocity ratio and efficiency"
+  },
+  {
+   "code": "PRE-M4-T1-D26",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / apply mathematical and/or graphical methods to solve problems of biomedical engineering practice"
+  },
+  {
+   "code": "PRE-M4-T1-D27",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / Electricity/electronics"
+  },
+  {
+   "code": "PRE-M4-T1-D28",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / Ohm’s Law"
+  },
+  {
+   "code": "PRE-M4-T1-D29",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / series and parallel circuits"
+  },
+  {
+   "code": "PRE-M4-T1-D30",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / power source"
+  },
+  {
+   "code": "PRE-M4-T1-D31",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / microcircuits/integrated circuits"
+  },
+  {
+   "code": "PRE-M4-T1-D32",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / digital technology"
+  },
+  {
+   "code": "PRE-M4-T1-D33",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / apply Ohm’s Law and explain the basic operation of electronic circuits"
+  },
+  {
+   "code": "PRE-M4-T1-D34",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / discuss the development of electronic components"
+  },
+  {
+   "code": "PRE-M4-T1-D35",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / explain the advantages of microcircuits/integrated circuits and their application"
+  },
+  {
+   "code": "PRE-M4-T1-D36",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / explain elementary digital logic"
+  },
+  {
+   "code": "PRE-M4-T1-D37",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / sectioning of orthogonal drawings"
+  },
+  {
+   "code": "PRE-M4-T1-D38",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / Australian Standard (AS 1100)"
+  },
+  {
+   "code": "PRE-M4-T1-D39",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / dimensioning"
+  },
+  {
+   "code": "PRE-M4-T1-D40",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / computer graphics, CAD"
+  },
+  {
+   "code": "PRE-M4-T1-D41",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / produce dimensioned, sectioned orthogonal drawings applying appropriate Australian Standard (AS 1100)"
+  },
+  {
+   "code": "PRE-M4-T1-D42",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / justify the use of graphics as a communication tool"
+  },
+  {
+   "code": "PRE-M4-T1-D43",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / graphical design"
+  },
+  {
+   "code": "PRE-M4-T1-D44",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / use appropriate application software to produce graphical designs."
+  },
+  {
+   "code": "PRE-M4-T1-D45",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / construct quality graphical solutions"
+  },
+  {
+   "code": "PRE-M4-T1-D46",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / complete an Engineering Report on the biomedical engineering profession with reference to the following aspects: nature and range of work done; health and safety issues; ethics related to the profession and; community"
+  },
+  {
+   "code": "PRE-M4-T1-D47",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / use of appropriate computer"
+  },
+  {
+   "code": "PRE-M4-T1-D48",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / software and presentation"
+  },
+  {
+   "code": "PRE-M4-T1-D49",
+   "path": "Year 11 / Biomedical Engineering / Biomedical systems / technique"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / forming methods"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / forging"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / casting"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / cutting"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / joining"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / structure and properties of appropriate materials"
+  },
+  {
+   "code": "PRE-M4-T2-D7",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / alloy steels such as stainless steel, titanium"
+  },
+  {
+   "code": "PRE-M4-T2-D8",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / polymers"
+  },
+  {
+   "code": "PRE-M4-T2-D9",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / ceramics"
+  },
+  {
+   "code": "PRE-M4-T2-D10",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / describe forming processes for materials used in biomedical engineering"
+  },
+  {
+   "code": "PRE-M4-T2-D11",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / discuss emerging technologies used in biomedical engineering materials"
+  },
+  {
+   "code": "PRE-M4-T2-D12",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / compare the macrostructure and properties of materials used in biomedical engineering"
+  },
+  {
+   "code": "PRE-M4-T2-D13",
+   "path": "Year 11 / Biomedical Engineering / Materials and applications / explain the properties and uses of appropriate biomedical engineering materials"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / Historical and societal influences"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / historical developments of civil structures"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / engineering innovation in civil structures and their effect on people’s lives"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / construction and processing materials used in civil structures over time"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / environmental implications from the use of materials in civil structures"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / outline the history of technological change as applied to civil structures"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / investigate the construction processes and materials used in civil structures from a historical point of view"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / critically examine the impact of civil structures upon society and the environment"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / Engineering mechanics"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / truss analysis"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / actions (loads)"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / reactions"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / pin jointed trusses only"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / method of joints"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / method of sections"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / apply mathematical and/or graphical methods to solve problems related to the design of"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / pin jointed trusses"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / bending stress induced by point loads only"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / concept of shear force and bending moment"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / shear force and bending moment diagrams"
+  },
+  {
+   "code": "HSC-M1-T1-D21",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / concept of neutral axis and outer fibre stress"
+  },
+  {
+   "code": "HSC-M1-T1-D22",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / bending stress calculation (second moment of area given)"
+  },
+  {
+   "code": "HSC-M1-T1-D23",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / evaluate the importance of the stress/strain diagram in understanding the properties of materials"
+  },
+  {
+   "code": "HSC-M1-T1-D24",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / calculate and graph the bending stress and shear force of simply supported beams involving vertical point loads only"
+  },
+  {
+   "code": "HSC-M1-T1-D25",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / uniformly distributed loads"
+  },
+  {
+   "code": "HSC-M1-T1-D26",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / describe the effect of uniformly distributed loads on a simple beam, without calculations"
+  },
+  {
+   "code": "HSC-M1-T1-D27",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / stress and strain"
+  },
+  {
+   "code": "HSC-M1-T1-D28",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / shear, compressive and tensile stress"
+  },
+  {
+   "code": "HSC-M1-T1-D29",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / engineering and true stress"
+  },
+  {
+   "code": "HSC-M1-T1-D30",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / yield stress, proof stress, toughness, Young’s modulus, Hooke’s law, engineering applications"
+  },
+  {
+   "code": "HSC-M1-T1-D31",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / factor of safety"
+  },
+  {
+   "code": "HSC-M1-T1-D32",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / stress/strain diagram"
+  },
+  {
+   "code": "HSC-M1-T1-D33",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / apply mathematical and/or graphical methods to solve problems related to stress and strain"
+  },
+  {
+   "code": "HSC-M1-T1-D34",
+   "path": "Year 12 / Civil Structures / Structural forms and forces / apply mathematical methods to solve problems related to materials used in civil structures"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Civil Structures / Materials and design / Engineering materials"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Civil Structures / Materials and design / testing of materials"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Civil Structures / Materials and design / specialised testing of engineering materials and systems"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Civil Structures / Materials and design / X-ray"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Civil Structures / Materials and design / testing of concrete"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Civil Structures / Materials and design / describe basic and specialised testing conducted on materials used in civil structures"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Civil Structures / Materials and design / examine the properties, uses and appropriateness of materials used in civil structures"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Civil Structures / Materials and design / crack theory"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Civil Structures / Materials and design / crack formation and growth"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Civil Structures / Materials and design / failure due to cracking"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Civil Structures / Materials and design / repair and/or elimination of failure due to cracking"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Civil Structures / Materials and design / examine how failure due to cracking can be repaired or eliminated"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Civil Structures / Materials and design / ceramics"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Civil Structures / Materials and design / structure/property relationships and their application to civil structures"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / Civil Structures / Materials and design / glass"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / Civil Structures / Materials and design / cement"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / Civil Structures / Materials and design / bricks"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / Civil Structures / Materials and design / make appropriate choices of materials and processes for use in civil structures"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / Civil Structures / Materials and design / investigate the relationship of structure to properties of materials and their use in civil structures"
+  },
+  {
+   "code": "HSC-M1-T2-D20",
+   "path": "Year 12 / Civil Structures / Materials and design / composites"
+  },
+  {
+   "code": "HSC-M1-T2-D21",
+   "path": "Year 12 / Civil Structures / Materials and design / timber"
+  },
+  {
+   "code": "HSC-M1-T2-D22",
+   "path": "Year 12 / Civil Structures / Materials and design / concrete (reinforced, pre- and post- tensioned )"
+  },
+  {
+   "code": "HSC-M1-T2-D23",
+   "path": "Year 12 / Civil Structures / Materials and design / asphalt paved surface"
+  },
+  {
+   "code": "HSC-M1-T2-D24",
+   "path": "Year 12 / Civil Structures / Materials and design / laminates"
+  },
+  {
+   "code": "HSC-M1-T2-D25",
+   "path": "Year 12 / Civil Structures / Materials and design / geotextiles"
+  },
+  {
+   "code": "HSC-M1-T2-D26",
+   "path": "Year 12 / Civil Structures / Materials and design / explain the special properties produced by composite materials"
+  },
+  {
+   "code": "HSC-M1-T2-D27",
+   "path": "Year 12 / Civil Structures / Materials and design / compare simple reinforced, pre-tensioned and post-tensioned structures"
+  },
+  {
+   "code": "HSC-M1-T2-D28",
+   "path": "Year 12 / Civil Structures / Materials and design / corrosion"
+  },
+  {
+   "code": "HSC-M1-T2-D29",
+   "path": "Year 12 / Civil Structures / Materials and design / corrosive environments"
+  },
+  {
+   "code": "HSC-M1-T2-D30",
+   "path": "Year 12 / Civil Structures / Materials and design / dry corrosion, wet corrosion, stress corrosion, galvanic corrosion"
+  },
+  {
+   "code": "HSC-M1-T2-D31",
+   "path": "Year 12 / Civil Structures / Materials and design / evaluate the significance of corrosion problems in civil structures"
+  },
+  {
+   "code": "HSC-M1-T2-D32",
+   "path": "Year 12 / Civil Structures / Materials and design / describe methods used to protect civil structures against corrosion"
+  },
+  {
+   "code": "HSC-M1-T2-D33",
+   "path": "Year 12 / Civil Structures / Materials and design / recyclability of materials"
+  },
+  {
+   "code": "HSC-M1-T2-D34",
+   "path": "Year 12 / Civil Structures / Materials and design / describe methods used for recycling materials when civil structures are replaced"
+  },
+  {
+   "code": "HSC-M1-T2-D35",
+   "path": "Year 12 / Civil Structures / Materials and design / Communication"
+  },
+  {
+   "code": "HSC-M1-T2-D36",
+   "path": "Year 12 / Civil Structures / Materials and design / Australian Standard (AS 1100)"
+  },
+  {
+   "code": "HSC-M1-T2-D37",
+   "path": "Year 12 / Civil Structures / Materials and design / orthogonal assembly dimensioned drawings"
+  },
+  {
+   "code": "HSC-M1-T2-D38",
+   "path": "Year 12 / Civil Structures / Materials and design / produce orthogonal assembly dimensioned drawings applying appropriate Australian Standard (AS 1100)"
+  },
+  {
+   "code": "HSC-M1-T2-D39",
+   "path": "Year 12 / Civil Structures / Materials and design / freehand pictorial drawings"
+  },
+  {
+   "code": "HSC-M1-T2-D40",
+   "path": "Year 12 / Civil Structures / Materials and design / produce freehand pictorial drawings"
+  },
+  {
+   "code": "HSC-M1-T2-D41",
+   "path": "Year 12 / Civil Structures / Materials and design / graphical mechanics"
+  },
+  {
+   "code": "HSC-M1-T2-D42",
+   "path": "Year 12 / Civil Structures / Materials and design / graphical solutions to engineering problems"
+  },
+  {
+   "code": "HSC-M1-T2-D43",
+   "path": "Year 12 / Civil Structures / Materials and design / apply graphical methods to the solutions of relevant problems"
+  },
+  {
+   "code": "HSC-M1-T2-D44",
+   "path": "Year 12 / Civil Structures / Materials and design / computer graphics"
+  },
+  {
+   "code": "HSC-M1-T2-D45",
+   "path": "Year 12 / Civil Structures / Materials and design / Computer Aided Drawing (CAD)"
+  },
+  {
+   "code": "HSC-M1-T2-D46",
+   "path": "Year 12 / Civil Structures / Materials and design / applications for solving problems"
+  },
+  {
+   "code": "HSC-M1-T2-D47",
+   "path": "Year 12 / Civil Structures / Materials and design / describe and/or use software to solve problems"
+  },
+  {
+   "code": "HSC-M1-T2-D48",
+   "path": "Year 12 / Civil Structures / Materials and design / collaborative work practices"
+  },
+  {
+   "code": "HSC-M1-T2-D49",
+   "path": "Year 12 / Civil Structures / Materials and design / work with others and identify the benefits of working as a team"
+  },
+  {
+   "code": "HSC-M1-T2-D50",
+   "path": "Year 12 / Civil Structures / Materials and design / Engineering Report writing"
+  },
+  {
+   "code": "HSC-M1-T2-D51",
+   "path": "Year 12 / Civil Structures / Materials and design / complete an Engineering Report based on the analysis and synthesis of an aspect of civil structures using appropriate computer software"
+  },
+  {
+   "code": "HSC-M1-T2-D52",
+   "path": "Year 12 / Civil Structures / Materials and design / Note: An Engineering Report must be completed in either the Civil structures or the"
+  },
+  {
+   "code": "HSC-M1-T2-D53",
+   "path": "Year 12 / Civil Structures / Materials and design / Personal and public transport module."
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / Engineering application module: Personal and public transport"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / 30 hours indicative time"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / Select one or more forms of transport in this module. Some examples include: bicycles, motor cars, boats, motor cycles, buses, trucks, trains and trams."
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / Historical and societal influence"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / historical developments in transport systems"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / effects of engineering innovation in transport on society"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / construction and processing materials used over time"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / environmental effects of transport systems"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / environmental implications from the use of materials in transport"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / investigate the history of technological change related to transport and its impact on society"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / identify design features in the engineering of transport systems"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / describe the environmental impact of energy requirements for transport systems"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / analyse the impact of developments in transport systems on the environment"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / simple machines"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / apply mathematical and/or graphical methods to solve engineering problems related to transport including mechanical advantage, velocity ratio and efficiency"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / static friction"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / concept of friction and its application in engineering"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / coefficient of friction"
+  },
+  {
+   "code": "HSC-M2-T1-D19",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / normal force"
+  },
+  {
+   "code": "HSC-M2-T1-D20",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / friction force"
+  },
+  {
+   "code": "HSC-M2-T1-D21",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / angle of static friction"
+  },
+  {
+   "code": "HSC-M2-T1-D22",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / angle of repose"
+  },
+  {
+   "code": "HSC-M2-T1-D23",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / analyse problems involving static friction"
+  },
+  {
+   "code": "HSC-M2-T1-D24",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / basic calculations for work, energy and power"
+  },
+  {
+   "code": "HSC-M2-T1-D25",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / potential energy"
+  },
+  {
+   "code": "HSC-M2-T1-D26",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / kinetic energy"
+  },
+  {
+   "code": "HSC-M2-T1-D27",
+   "path": "Year 12 / Personal and Public Transport / Transport systems / differentiate between the concepts of energy and power and apply appropriate basic calculations"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / hardness"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / impact"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / investigate the application of testing of materials"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / heat treatment of ferrous metals"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / annealing"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / normalising"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / hardening and tempering"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / changes in macrostructure and microstructure"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / changes in properties"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / outline how changes in properties occur as a result of heat treatment processes"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / identify appropriate heat treatment processes"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / justify appropriate choices for ferrous materials and processes used in transportation parts and systems"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / experiment with metals to reinforce the concepts of heat treatment"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / manufacturing processes for ferrous metals"
+  },
+  {
+   "code": "HSC-M2-T2-D15",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / forging"
+  },
+  {
+   "code": "HSC-M2-T2-D16",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / rolling"
+  },
+  {
+   "code": "HSC-M2-T2-D17",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / casting"
+  },
+  {
+   "code": "HSC-M2-T2-D18",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / extrusion"
+  },
+  {
+   "code": "HSC-M2-T2-D19",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / powder forming"
+  },
+  {
+   "code": "HSC-M2-T2-D20",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / welding"
+  },
+  {
+   "code": "HSC-M2-T2-D21",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / changes in macrostructure and microstructure of ferrous metals"
+  },
+  {
+   "code": "HSC-M2-T2-D22",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / changes in properties of ferrous metals"
+  },
+  {
+   "code": "HSC-M2-T2-D23",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / explain the method and applications of various ferrous metal forming processes"
+  },
+  {
+   "code": "HSC-M2-T2-D24",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / manufacturing processes for non-ferrous metals"
+  },
+  {
+   "code": "HSC-M2-T2-D25",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / alloying"
+  },
+  {
+   "code": "HSC-M2-T2-D26",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / solid solution hardening"
+  },
+  {
+   "code": "HSC-M2-T2-D27",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / changes in macrostructure and microstructure of non-ferrous metals"
+  },
+  {
+   "code": "HSC-M2-T2-D28",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / changes in properties of non-ferrous metals"
+  },
+  {
+   "code": "HSC-M2-T2-D29",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / justify the use of non-ferrous metals in transportation parts and systems based on relevant structure/property relationships"
+  },
+  {
+   "code": "HSC-M2-T2-D30",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / ceramics and glasses"
+  },
+  {
+   "code": "HSC-M2-T2-D31",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / as an insulation material"
+  },
+  {
+   "code": "HSC-M2-T2-D32",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / laminating and heat treatment of glass"
+  },
+  {
+   "code": "HSC-M2-T2-D33",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / structure/property relationship and their application"
+  },
+  {
+   "code": "HSC-M2-T2-D34",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / justify appropriate choices of ceramics and glasses used in transportation parts and systems"
+  },
+  {
+   "code": "HSC-M2-T2-D35",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / thermo softening polymers"
+  },
+  {
+   "code": "HSC-M2-T2-D36",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / engineering textiles"
+  },
+  {
+   "code": "HSC-M2-T2-D37",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / manufacturing processes"
+  },
+  {
+   "code": "HSC-M2-T2-D38",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / injection moulding"
+  },
+  {
+   "code": "HSC-M2-T2-D39",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / blow moulding"
+  },
+  {
+   "code": "HSC-M2-T2-D40",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / structure/property relationships and application"
+  },
+  {
+   "code": "HSC-M2-T2-D41",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / justify appropriate choices of polymers used in transportation parts and systems"
+  },
+  {
+   "code": "HSC-M2-T2-D42",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / explain the properties, uses, testing and appropriateness of materials used in transportation"
+  },
+  {
+   "code": "HSC-M2-T2-D43",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / Engineering electricity/electronics"
+  },
+  {
+   "code": "HSC-M2-T2-D44",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / power generation/distribution"
+  },
+  {
+   "code": "HSC-M2-T2-D45",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / electrical energy and power"
+  },
+  {
+   "code": "HSC-M2-T2-D46",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / simple circuits"
+  },
+  {
+   "code": "HSC-M2-T2-D47",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / identify the electrical systems used in the transport industry"
+  },
+  {
+   "code": "HSC-M2-T2-D48",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / describe current transmission and simple circuit diagrams"
+  },
+  {
+   "code": "HSC-M2-T2-D49",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / electric motors used in transport systems"
+  },
+  {
+   "code": "HSC-M2-T2-D50",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / principles"
+  },
+  {
+   "code": "HSC-M2-T2-D51",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / applications"
+  },
+  {
+   "code": "HSC-M2-T2-D52",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / investigate the principles and application of electric motors used in the transport industry, including motor speed control"
+  },
+  {
+   "code": "HSC-M2-T2-D53",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / control technology"
+  },
+  {
+   "code": "HSC-M2-T2-D54",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / analyse the basic principles of control technology as applied to the transport industry"
+  },
+  {
+   "code": "HSC-M2-T2-D55",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / electrical safety"
+  },
+  {
+   "code": "HSC-M2-T2-D56",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / appreciate the safe use of electricity and electrical equipment"
+  },
+  {
+   "code": "HSC-M2-T2-D57",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / freehand sketching, design and orthogonal drawings"
+  },
+  {
+   "code": "HSC-M2-T2-D58",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / sectional views"
+  },
+  {
+   "code": "HSC-M2-T2-D59",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / produce dimensioned, sectioned orthogonal drawings applying appropriate Australian Standard"
+  },
+  {
+   "code": "HSC-M2-T2-D60",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / (AS 1100)"
+  },
+  {
+   "code": "HSC-M2-T2-D61",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / computer graphics, computer aided drawing for orthographic projection"
+  },
+  {
+   "code": "HSC-M2-T2-D62",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / use appropriate software to produce orthogonal drawings"
+  },
+  {
+   "code": "HSC-M2-T2-D63",
+   "path": "Year 12 / Personal and Public Transport / Design and performance / complete an Engineering Report based on the analysis and synthesis of an aspect of personal and public transport using appropriate computer software"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / Engineering focus module: Aeronautical engineering"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / One or more examples of aeronautical engineering must be used to develop an understanding of the scope and nature of this profession."
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / Some examples include: design and construction of recreational aircraft, general aviation aircraft, military aircraft, space craft, agricultural aircraft, helicopters and home-built aircraft."
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / Scope of the profession"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / nature and scope of the aeronautical engineering profession"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / current projects and innovations"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / health and safety issues"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / training for the profession"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / career prospects"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / unique technologies in the profession"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / legal and ethical implications"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / engineers as managers"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / relations with the community"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / define the responsibilities of the aeronautical engineer"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / describe the nature and range of the work of aeronautical engineers"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / examine projects and innovations from within the aeronautical profession"
+  },
+  {
+   "code": "HSC-M3-T1-D17",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / analyse the training and career prospects within aeronautical engineering"
+  },
+  {
+   "code": "HSC-M3-T1-D18",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / historical developments in aeronautical engineering"
+  },
+  {
+   "code": "HSC-M3-T1-D19",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / the effects of aeronautical innovation on people’s lives and living standards"
+  },
+  {
+   "code": "HSC-M3-T1-D20",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / environmental implications of flight"
+  },
+  {
+   "code": "HSC-M3-T1-D21",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / research the history of flight in Australia and understand the way it has impacted on people’s lives"
+  },
+  {
+   "code": "HSC-M3-T1-D22",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / examine safety issues related to flight and flying"
+  },
+  {
+   "code": "HSC-M3-T1-D23",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / Engineering mechanics and hydraulics"
+  },
+  {
+   "code": "HSC-M3-T1-D24",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / fundamental flight mechanics"
+  },
+  {
+   "code": "HSC-M3-T1-D25",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / relationship between lift, thrust,"
+  },
+  {
+   "code": "HSC-M3-T1-D26",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / weight and drag"
+  },
+  {
+   "code": "HSC-M3-T1-D27",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / lift to drag ratio"
+  },
+  {
+   "code": "HSC-M3-T1-D28",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / effect of angle of attack"
+  },
+  {
+   "code": "HSC-M3-T1-D29",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / apply mathematical and graphical methods to solve flight-related problems"
+  },
+  {
+   "code": "HSC-M3-T1-D30",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / Bernoulli’s principle and its application to"
+  },
+  {
+   "code": "HSC-M3-T1-D31",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / venturi effect"
+  },
+  {
+   "code": "HSC-M3-T1-D32",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / lift"
+  },
+  {
+   "code": "HSC-M3-T1-D33",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / outline Bernoulli’s principle as applied to instrumentation and lift"
+  },
+  {
+   "code": "HSC-M3-T1-D34",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / bending stress"
+  },
+  {
+   "code": "HSC-M3-T1-D35",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / airframes"
+  },
+  {
+   "code": "HSC-M3-T1-D36",
+   "path": "Year 12 / Aeronautical Engineering / Aerodynamics / investigate the nature and effect of bending stresses, applying appropriate mathematical methods"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / propulsion systems including"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / internal combustion engines"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / jet including turbofan, ram and scram"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / turboprop"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / rockets"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / describe the operational principles and use of the stated propulsion systems used in the aircraft industry"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / fluid mechanics"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / Pascal’s principle"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / hydrostatic and dynamic pressure"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / applications to aircraft components and instruments"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / apply mathematical methods to solve hydraulics-related problems"
+  },
+  {
+   "code": "HSC-M3-T2-D12",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / describe the basic operation of an altimeter and pitot tube"
+  },
+  {
+   "code": "HSC-M3-T2-D13",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / specialised testing of aircraft materials"
+  },
+  {
+   "code": "HSC-M3-T2-D14",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / dye penetrant"
+  },
+  {
+   "code": "HSC-M3-T2-D15",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / X-ray, gamma ray"
+  },
+  {
+   "code": "HSC-M3-T2-D16",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / magnetic particle"
+  },
+  {
+   "code": "HSC-M3-T2-D17",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / ultrasonic"
+  },
+  {
+   "code": "HSC-M3-T2-D18",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / describe non-destructive tests used on aircraft materials and components"
+  },
+  {
+   "code": "HSC-M3-T2-D19",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / aluminium and aluminium alloys used in aircraft including aluminium silicon, aluminium silicon magnesium, aluminium copper"
+  },
+  {
+   "code": "HSC-M3-T2-D20",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / structure/property relationship and alloy applications"
+  },
+  {
+   "code": "HSC-M3-T2-D21",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / analyse structure, property relationship, uses and appropriateness of materials and processes used in aeronautical engineering applications"
+  },
+  {
+   "code": "HSC-M3-T2-D22",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / heat treatment of applicable alloys"
+  },
+  {
+   "code": "HSC-M3-T2-D23",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / investigate the effects of heat treatment on the structure and properties of aluminium alloys"
+  },
+  {
+   "code": "HSC-M3-T2-D24",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / thermosetting polymers"
+  },
+  {
+   "code": "HSC-M3-T2-D25",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / structure/property relationships and their application"
+  },
+  {
+   "code": "HSC-M3-T2-D26",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / compression moulding"
+  },
+  {
+   "code": "HSC-M3-T2-D27",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / hand lay-up"
+  },
+  {
+   "code": "HSC-M3-T2-D28",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / vacuum lay-up"
+  },
+  {
+   "code": "HSC-M3-T2-D29",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / modifying materials for aircraft applications"
+  },
+  {
+   "code": "HSC-M3-T2-D30",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / justify appropriate choices of polymers for their application and use in aircraft"
+  },
+  {
+   "code": "HSC-M3-T2-D31",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / types including reinforced glass fibre, Kevlar, carbon fibre and Fibre Metal Laminate (FML) as used in aircraft construction"
+  },
+  {
+   "code": "HSC-M3-T2-D32",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / structure/property relationships and their application in aircraft"
+  },
+  {
+   "code": "HSC-M3-T2-D33",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / describe the uses and application of composites used in aircraft construction"
+  },
+  {
+   "code": "HSC-M3-T2-D34",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / common corrosion mechanisms in aircraft structures"
+  },
+  {
+   "code": "HSC-M3-T2-D35",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / pit and crevice corrosion"
+  },
+  {
+   "code": "HSC-M3-T2-D36",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / stress corrosion/cracking"
+  },
+  {
+   "code": "HSC-M3-T2-D37",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / corrosion prevention in aircraft"
+  },
+  {
+   "code": "HSC-M3-T2-D38",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / understand the mechanism of corrosion common to aircraft components and identify corrosion prevention techniques"
+  },
+  {
+   "code": "HSC-M3-T2-D39",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / freehand and technical drawing"
+  },
+  {
+   "code": "HSC-M3-T2-D40",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / pictorial and scaled orthogonal drawings"
+  },
+  {
+   "code": "HSC-M3-T2-D41",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / produce dimensioned orthogonal component and scaled drawings applying appropriate Australian Standard (AS 1100)"
+  },
+  {
+   "code": "HSC-M3-T2-D42",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / developments"
+  },
+  {
+   "code": "HSC-M3-T2-D43",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / transition pieces"
+  },
+  {
+   "code": "HSC-M3-T2-D44",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / construct the development of non-circular transition pieces"
+  },
+  {
+   "code": "HSC-M3-T2-D45",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / graphical solution to basic aerodynamic problems"
+  },
+  {
+   "code": "HSC-M3-T2-D46",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / construct quality graphical solutions"
+  },
+  {
+   "code": "HSC-M3-T2-D47",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / computer graphics, computer aided drawing (CAD)"
+  },
+  {
+   "code": "HSC-M3-T2-D48",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / 3D applications"
+  },
+  {
+   "code": "HSC-M3-T2-D49",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / use appropriate software to produce pictorial drawings"
+  },
+  {
+   "code": "HSC-M3-T2-D50",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / complete an Engineering Report on the aeronautical engineering profession with reference to the following aspects:"
+  },
+  {
+   "code": "HSC-M3-T2-D51",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / nature and range of the work of aeronautical engineers"
+  },
+  {
+   "code": "HSC-M3-T2-D52",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / technologies unique to the profession"
+  },
+  {
+   "code": "HSC-M3-T2-D53",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / ethics related to the profession and community career prospects"
+  },
+  {
+   "code": "HSC-M3-T2-D54",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / training for the professions"
+  },
+  {
+   "code": "HSC-M3-T2-D55",
+   "path": "Year 12 / Aeronautical Engineering / Aircraft systems and materials / use of appropriate computer software and presentation technique"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / Note: An Engineering Report must be completed in either the Aeronautical engineering focus module or the Telecommunications engineering focus module."
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / Engineering focus module: Telecommunications engineering"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / One or more examples of telecommunications engineering must be used to develop an understanding of the scope and nature of this profession."
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / Some examples include: telephone systems (fixed and mobile), radio systems, television systems and satellite communication systems."
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / nature and scope of telecommunications engineering"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / current applications and innovations"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / define the responsibilities of the telecommunications engineer"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / describe the nature and range of the work of telecommunications engineers"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / examine projects and innovations in the telecommunications profession"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / analyse the training and career prospects within telecommunications engineering"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / historical development within the telecommunications industry"
+  },
+  {
+   "code": "HSC-M4-T1-D12",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / the effect of telecommunications engineering innovation on people’s lives"
+  },
+  {
+   "code": "HSC-M4-T1-D13",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / materials and techniques used over time and development of cathode ray television including B/W and colour"
+  },
+  {
+   "code": "HSC-M4-T1-D14",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / research the history of technological change in the field of telecommunications"
+  },
+  {
+   "code": "HSC-M4-T1-D15",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / describe the nature of engineering systems in the telecommunications field and the importance of this to society"
+  },
+  {
+   "code": "HSC-M4-T1-D16",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / specialised testing"
+  },
+  {
+   "code": "HSC-M4-T1-D17",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / voltage, current, insulation"
+  },
+  {
+   "code": "HSC-M4-T1-D18",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / signal strength and testing"
+  },
+  {
+   "code": "HSC-M4-T1-D19",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / analyse structure, properties, uses and appropriateness of materials in telecommunications engineering applications"
+  },
+  {
+   "code": "HSC-M4-T1-D20",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / copper and its alloys used in telecommunications including copper beryllium, copper zinc, electrolytic tough pitched copper"
+  },
+  {
+   "code": "HSC-M4-T1-D21",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / select and justify materials and processes used in telecommunications engineering"
+  },
+  {
+   "code": "HSC-M4-T1-D22",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / semiconductors such as transistors, zener diodes, light emitting diodes and laser diodes"
+  },
+  {
+   "code": "HSC-M4-T1-D23",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / uses in telecommunications"
+  },
+  {
+   "code": "HSC-M4-T1-D24",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / identify the types and functions of common semiconductors used in the telecommunications industry"
+  },
+  {
+   "code": "HSC-M4-T1-D25",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / polymers"
+  },
+  {
+   "code": "HSC-M4-T1-D26",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / insulation materials"
+  },
+  {
+   "code": "HSC-M4-T1-D27",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / fibre optics"
+  },
+  {
+   "code": "HSC-M4-T1-D28",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / types and applications"
+  },
+  {
+   "code": "HSC-M4-T1-D29",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / materials"
+  },
+  {
+   "code": "HSC-M4-T1-D30",
+   "path": "Year 12 / Telecommunications Engineering / Communication systems / describe the uses and applications of polymers and fibre optics in telecommunications"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / telecommunications including: analogue and digital systems; modulation, demodulation; radio transmission (AM, FM, digital)"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / digital television transmission and display media such as plasma, LED, LCD, 3D"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / telephony: fixed and mobile"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / transmission media"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / cable"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / wireless"
+  },
+  {
+   "code": "HSC-M4-T2-D7",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / infrared"
+  },
+  {
+   "code": "HSC-M4-T2-D8",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / microwave"
+  },
+  {
+   "code": "HSC-M4-T2-D9",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / fibre-optic"
+  },
+  {
+   "code": "HSC-M4-T2-D10",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / describe the basic concepts and application of modulation/ demodulation in telecommunications"
+  },
+  {
+   "code": "HSC-M4-T2-D11",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / describe the types and methods of radio and digital television transmission and reception systems in telecommunications"
+  },
+  {
+   "code": "HSC-M4-T2-D12",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / contrast the differences in fixed and mobile telephony systems in telecommunications"
+  },
+  {
+   "code": "HSC-M4-T2-D13",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / distinguish the communication bands in the electromagnetic spectrum"
+  },
+  {
+   "code": "HSC-M4-T2-D14",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / contrast the differences in transmission media"
+  },
+  {
+   "code": "HSC-M4-T2-D15",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / satellite communication systems, geostationary, low orbit satellite and GPS"
+  },
+  {
+   "code": "HSC-M4-T2-D16",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / describe the basic principles of satellite communication systems"
+  },
+  {
+   "code": "HSC-M4-T2-D17",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / digital technology (AND, NAND, NOR, OR GATES)"
+  },
+  {
+   "code": "HSC-M4-T2-D18",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / explain elementary digital logic"
+  },
+  {
+   "code": "HSC-M4-T2-D19",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / freehand and technical pictorial drawing, graphical design drawings"
+  },
+  {
+   "code": "HSC-M4-T2-D20",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / produce pictorial drawings"
+  },
+  {
+   "code": "HSC-M4-T2-D21",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / computer graphics; computer aided drawing (CAD)"
+  },
+  {
+   "code": "HSC-M4-T2-D22",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / graphical design"
+  },
+  {
+   "code": "HSC-M4-T2-D23",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / in the solution of problems"
+  },
+  {
+   "code": "HSC-M4-T2-D24",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / justify computer graphics as a communication tool and problem solving device for telecommunications engineering"
+  },
+  {
+   "code": "HSC-M4-T2-D25",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / complete an Engineering Report on the telecommunications engineering profession with reference to the following aspects:"
+  },
+  {
+   "code": "HSC-M4-T2-D26",
+   "path": "Year 12 / Telecommunications Engineering / Signal transmission / nature and range of the work of telecommunications engineers"
+  }
+ ],
+ "questions": [
+  {
+   "id": "66UIOG",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following has both magnitude and direction?\nMass\nScalar\nSpeed\nVector"
+  },
+  {
+   "id": "AK40PB",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following methods would be suitable to manufacture PET polymer (polyethylene terephthalate) bottles?\nCasting\nPressing\nStamping\nBlow moulding"
+  },
+  {
+   "id": "L1NA2Z",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A motor vehicle is travelling along a horizontal road. How does an increase in velocity affect its potential energy and kinetic energy?\n: (A); Potential energy: Increases; Kinetic energy: Increases\n: (B); Potential energy: Maintains; Kinetic energy: Increases\n: (C); Potential energy: Increases; Kinetic energy: Decreases\n: (D); Potential energy: Maintains; Kinetic energy: Decreases"
+  },
+  {
+   "id": "6N7COZ",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A pictorial view of a block is shown.\nWhich option shows the front view of the block, looking in the direction of the arrow?"
+  },
+  {
+   "id": "WS2BQ9",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The teeth on a steel sprocket need to be hard.\nWhich heat treatment process is most suitable for hardening the teeth?\nFlame heating then air cooling\nFlame heating then oven cooling\nInduction heating then quenching\nInduction heating then slow cooling"
+  },
+  {
+   "id": "6N466N",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which process combines data and a carrier wave to form a television signal?\nCompressing\nEncryption\nModulation\nMultiplexing"
+  },
+  {
+   "id": "9OZ81T",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the lever systems would require the least force at $X$ to balance the $100\\,\\mathrm{kg}$ mass?"
+  },
+  {
+   "id": "ZR5BUT",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which statement best describes the difference between cast iron and steel?\nSteel contains more free graphite.\nCast iron has higher tensile strength.\nSteel has higher compressive strength.\nCast iron has a higher percentage of carbon."
+  },
+  {
+   "id": "U7F1GV",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which form of the AC to DC rectification process is shown by the graphs?\nFull wave\nHalf wave\nSmooth full wave\nSmooth half wave"
+  },
+  {
+   "id": "VSBU43",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The heat sink shown is used to conduct heat away from components.\nWhich row of the table identifies a suitable material and manufacturing process for the heat sink?\nMaterial: Steel; Manufacturing process: Rolling\nMaterial: Nylon; Manufacturing process: Injection moulding\nMaterial: Aluminium alloy; Manufacturing process: Die casting\nMaterial: Ceramic; Manufacturing process: Compression moulding"
+  },
+  {
+   "id": "D4UE66",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Consider this logic circuit for turning a lamp on or off.\nWhich set of conditions will turn the lamp on?\nSwitch 1: Off; Switch 2: Off; Switch 3: Off\nSwitch 1: On; Switch 2: On; Switch 3: On\nSwitch 1: Off; Switch 2: Off; Switch 3: On\nSwitch 1: Off; Switch 2: On; Switch 3: On"
+  },
+  {
+   "id": "UXFS3Z",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Each resistor in the diagrams below has a value of $10\\,\\Omega$.\nWhich combination of resistors provides a total resistance of $15\\,\\Omega$ between $X$ and $Y$?"
+  },
+  {
+   "id": "NX50OD",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "In which direction does a reaction force act at a roller support?\nParallel to the supporting surface\nVertical to the supporting surface\nHorizontal to the supporting surface\nPerpendicular to the supporting surface"
+  },
+  {
+   "id": "1YPV4Z",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The image shows one end of an electrical spark plug used in an internal combustion engine. The component labelled $M$ is the terminal that carries the high-tension current to the centre electrode.\nWhich combination of properties would the component labelled $M$ need to have?\nElectrical resistivity and machinability\nElectrical conductivity and machinability\nElectrical resistivity and temperature stability\nElectrical conductivity and temperature stability"
+  },
+  {
+   "id": "FMQ9LK",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which graph best represents the relative proportions of materials used in the construction of new, large passenger aircraft?"
+  },
+  {
+   "id": "UDC6W4",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A pole is supported by four cables that are attached to its top and to the sloping ground.\nWhich cable is shown as true length?\nCable 1\nCable 2\nCable 3\nCable 4"
+  },
+  {
+   "id": "NL9A58",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following could cause fatigue cracking in a metal?\nA static tensile load\nA substantial shock load\nA high compression load\nA cyclically applied load"
+  },
+  {
+   "id": "98PMFW",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "What are TWO advantages of using the powder forming (sintering) process to manufacture a self-lubricating bearing?\nLow material waste and high density\nHigh porosity and low material waste\nLow density and high tensile strength\nHigh quality surface finish and high tensile strength"
+  },
+  {
+   "id": "PJE5O7",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The diagram shows one end of a universal 'I' beam with access holes drilled and a supporting bracket fixed to each side.\nWhich view shows the correct full section $X-X$ of the beam viewed in the direction of the arrows?"
+  },
+  {
+   "id": "05VC4H",
+   "year": 2015,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The drawing represents a loaded steel beam simply supported at each end.\nWhich diagram best represents the distribution of shear forces along the beam?"
+  },
+  {
+   "id": "V7FI5F",
+   "year": 2015,
+   "number": "1",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "The following parts refer to a motor vehicle: its early Australian-built body and safety features, its hydraulic braking system, and a hydraulic cylinder system used to operate it.\nThe sketch shows an early Australian-built car.\nExplain how TWO features of this early Australian-built car have been modified in modern cars to improve their safety.\nOnly features visible in the sketch earn marks — the rounded body with separate mudguards and running boards, the pillar-mounted windscreen, the exposed bumper bar, the spoked wheels, the open cabin without restraints.\nFor each feature name what a modern car uses instead and then say what that change does in a collision. ‘Better’ or a safer-sounding word on its own is not an explanation of how safety is improved.\nThe diagram represents part of a car's hydraulic braking system.\nOutline the operation of this hydraulic system and its advantages over mechanical systems.\nTrace the force path in order — pedal, linkage, master cylinder piston, pressurised fluid, line, caliper piston, pads, disc. The marks are for the sequence and the cause of each step, not for a list of the parts you can see.\nThen state the advantages against a mechanical system specifically: fewer parts to maintain, force multiplication from the ratio of piston areas, and a sealed fluid link that transmits the force directly. Do not restate the operation as though it were an advantage."
+  },
+  {
+   "id": "HH851L",
+   "year": 2015,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "The following parts refer to a simple radio receiver: its circuit, the influence of semiconductors on telecommunications product design, and the documentation drawing of a radio aerial support bracket.\nA circuit diagram of a simple radio receiver is shown.\nName the components labelled $A$ and $B$ and outline each component's function in this circuit.\nStart from where each component sits in the circuit. The component in series with the tuned circuit can conduct on one half of the cycle only — that behaviour is what tells you its name and its job.\nThe component in shunt (parallel) with the loudspeaker provides a low-impedance path that diverts part of the signal away from the loudspeaker. Ask what would still be reaching the loudspeaker if that component were not there.\nEach mark pair is a name plus a function, so give them in that order and do not describe the function before naming the component.\nHow have semi-conductors influenced the design of modern telecommunications products?\nThe question asks about the design of the product, so answer with what the designer can now do or make better — not with how a semiconductor behaves electrically.\nThink about how telecommunications products have changed over the last few decades: their size, their mass, how long the battery lasts, how fast they respond, how much function is packed in, and how well they survive being dropped or knocked.\nTwo distinct design consequences are needed for the full marks; two versions of the same idea is only one.\nA radio aerial support bracket bolted to a steel plate is shown. Complete a fully sectioned front view of the bracket assembly. Apply AS1100.\nConstruct the view from the given top view first — project every visible edge — and only then decide what cutting plane A-A actually cuts.\nIn a full section, everything between the viewer and the cutting plane is removed, so hidden detail behind the plane is not drawn and only the cut faces are hatched.\nHatch at $45^{\\circ}$ with even spacing of about $1.5$–$2\\,\\mathrm{mm}$ and change the angle or spacing for each adjacent part; add centre lines on the post and bolt axes and apply the correct line weights."
+  },
+  {
+   "id": "TWSD7Q",
+   "year": 2015,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "The following parts refer to a telephone charger: the material of its electrical pins, the manufacture of its polymer cover, and the digitisation of the voice signal it belongs to.\nContrast the key features of fixed and mobile telephone systems.\nBuild the answer as matched pairs — one feature of the fixed system with the opposite feature of the mobile system beside it — rather than as two separate descriptions that never meet.\nThe strongest contrast is the transmission medium itself; interference, dropout, bandwidth, security and the locations that can be served all follow from it, so start there and derive the rest.\nA smart-phone transmits digital information. One step in this process is to convert analogue voice data to digitised data.\nOutline how an analogue signal is digitised using *sampling* and *quantising*.\nThe analogue wave is continuous in two independent ways — in time and in amplitude — and digitising removes each continuity by a different mechanism.\nDecide which of the two terms deals with the intervals between readings and which deals with the number of discrete levels a reading may take, and say what each one produces on the lower graph."
+  },
+  {
+   "id": "5IPBYP",
+   "year": 2015,
+   "number": "1",
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "",
+   "text": "The following parts refer to a steel railway power column: its corrosion protection and microstructure, and the pin-jointed cantilever truss that supports the overhead cables."
+  },
+  {
+   "id": "NFJZU5",
+   "year": 2015,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "The following parts refer to light aircraft: the choice of propulsion system, the control adjustments that vary lift, a wind tunnel test of an aerofoil, and non-destructive testing of aircraft components.\nThe two images show light aircraft powered by different propulsion systems.\nIdentify a suitable propulsion system for each aircraft and justify your choice.\nIdentify the engine type for each aircraft from the drawings: look for jet intakes and a jet exhaust on one, and a nose-mounted propeller on the other.\nThen justify: what does each class of aircraft actually need from its engine? Consider speed and range for one of them, and runway length, purchase cost and maintenance sophistication for the other.\nA justification that only says 'jets are fast' is incomplete - tie the engine type to a specific operating requirement of that class of aircraft.\nOutline TWO control adjustments that can be made to vary the lift force acting on an aircraft during flight.\nLift depends on three things: the angle the wing is set at, how fast the wing is moving through the air, and how much wing area there is. Each of the three can be adjusted.\nOne of them is limited: beyond a maximum angle of attack of about $15^{\\circ}$ the flow separates from the wing and lift is lost, so angle of attack cannot simply be increased indefinitely.\nAim to name TWO distinct adjustments, and for each one say which of the three quantities it changes.\nAn aerofoil was tested in a wind tunnel.\nThis test produced a resultant force of $350\\,\\mathrm{N}$ at an angle of $10^{\\circ}$ to the lift axis.\nCalculate the lift to drag ratio.\nThe 350 N is the resultant of the lift and the drag, inclined at $10^{\\circ}$ to the lift axis - it is not the lift itself.\nResolve the resultant: the component along the lift axis is the lift, and the component perpendicular to it is the drag.\nForm the ratio as lift divided by drag, then quote it with the smaller quantity written first. Watch the degree mode on your calculator.\nOutline the ultrasonic testing process and its advantages for use in testing aircraft components.\nTwo things are required: how the test actually works, and what makes it worth using on aircraft components.\nFor the process, think in terms of a sound wave being sent into the component and something coming back. A flaw in the material changes both what returns and how quickly it returns.\nFor the advantages, consider what a maintenance technician does NOT have to do to an aircraft under this test, compared with a test that requires the part to be removed or cut open."
+  },
+  {
+   "id": "9YZ6AO",
+   "year": 2015,
+   "number": "1",
+   "marks": 13,
+   "type": "short_answer",
+   "current_path": "",
+   "text": "The following parts refer to a winch mechanism: the forces acting on a crate on a ramp, the force needed to operate the winch, and the load-extension behaviour of the steel winch cable."
+  },
+  {
+   "id": "AOJD5Q",
+   "year": 2015,
+   "number": "1",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "An engineering team consists of a civil engineer, an electrical engineer and an environmental engineer. They have been contracted by a local council to manage the design and construction of a five metre long pedestrian bridge across a narrow creek in a public park.\nOutline how each of these engineers would contribute to the successful completion of this project."
+  },
+  {
+   "id": "X3I46R",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "What is the name of the crystal structure represented in the sketch?\nBody close packed\nFace centred cubic\nBody centred cubic\nCubic close packed"
+  },
+  {
+   "id": "LL15QE",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A simply supported beam is loaded with a force $F$ as shown.\nWhich diagram correctly shows the reactions at the supports of the beam?"
+  },
+  {
+   "id": "LZMPU0",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Four points $A$, $B$, $C$ and $D$ are plotted in orthogonal projection.\nHow many of the lines joining these points are shown at their true length in the views drawn?\n1\n2\n3\n4"
+  },
+  {
+   "id": "6LZ40M",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "In which of the following pairs are both electronic components semi-conductors?\nDiode and resistor\nDiode and transistor\nCapacitor and resistor\nCapacitor and transistor"
+  },
+  {
+   "id": "HKBRB3",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "In which of the following pairs do the forces oppose each other during level flight?\nLift and drag\nThrust and lift\nDrag and thrust\nWeight and drag"
+  },
+  {
+   "id": "4PMAMH",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A mild steel test piece is placed under an increasing tensile load. When will this test piece start to permanently deform?\nAt failure\nAt the elastic limit\nAt the plastic limit\nAt the ultimate tensile strength"
+  },
+  {
+   "id": "JZM1B1",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which aeronautical engineering innovation was investigated in Australia by experimenting with box kites?\nAerofoils\nAir brakes\nWing flaps\nWing warping"
+  },
+  {
+   "id": "2BVSQ2",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A block begins to slide when a ramp is inclined to $24^{\\circ}$.\nWhat is the coefficient of friction between the block and the ramp?\n$0.24$\n$0.41$\n$0.45$\n$0.91$"
+  },
+  {
+   "id": "BQO6Y7",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which type of satellite is commonly used to broadcast TV signals?\nLow Earth-orbit satellite that orbits over the poles\nHigh Earth-orbit satellite that orbits over the poles\nGeostationary satellite that orbits above the equator\nGeosynchronous satellite that orbits above the Tropic of Capricorn"
+  },
+  {
+   "id": "AHF6UE",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following stress–strain curves best represents a test result showing true stress and true strain of a thermosoftening polymer?"
+  },
+  {
+   "id": "62JZEN",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which aircraft engine incorporates bypass air to create thrust?\nScramjet\nTurbojet\nTurbofan\nTurboprop"
+  },
+  {
+   "id": "R26YY1",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Orthogonal views of an object are shown.\nWhich of the pictorial drawings best represents the object?"
+  },
+  {
+   "id": "FTQ25U",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A $240\\,\\mathrm{V}$, $75\\,\\mathrm{W}$ light globe is replaced with a $240\\,\\mathrm{V}$, $12\\,\\mathrm{W}$ LED globe of equivalent brightness. What is the theoretical power saving?\n$12\\,\\mathrm{W}$\n$63\\,\\mathrm{W}$\n$87\\,\\mathrm{W}$\n$240\\,\\mathrm{W}$"
+  },
+  {
+   "id": "O8WFYH",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "As the applied load is increased during a compression test, what changes occur to the cross-sectional area and gauge length of a copper specimen?\nCross-sectional area: Increases; Gauge length: Decreases\nCross-sectional area: Decreases; Gauge length: Increases\nCross-sectional area: Increases; Gauge length: Increases\nCross-sectional area: Decreases; Gauge length: Decreases"
+  },
+  {
+   "id": "W5DAI7",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Consider the logic circuit shown.\nWhich table shows the correct output values at Q for the given input values A and B?\nA: 0, 1; B: 1, 0; Q: 1, 0\nA: 0, 1; B: 1, 0; Q: 0, 0\nA: 0, 1; B: 1, 0; Q: 0, 1\nA: 0, 1; B: 1, 0; Q: 1, 1"
+  },
+  {
+   "id": "KT1P23",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which row of the table correctly identifies the project responsibilities of a civil engineer when planning a new highway?\nStormwater drainage: $\\times$; Pavement alignment: $\\times$; Project management: $\\checkmark$; Traffic management: $\\checkmark$\nStormwater drainage: $\\checkmark$; Pavement alignment: $\\checkmark$; Project management: $\\times$; Traffic management: $\\checkmark$\nStormwater drainage: $\\checkmark$; Pavement alignment: $\\times$; Project management: $\\times$; Traffic management: $\\times$\nStormwater drainage: $\\checkmark$; Pavement alignment: $\\checkmark$; Project management: $\\checkmark$; Traffic management: $\\times$"
+  },
+  {
+   "id": "1ZAF6Q",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "What process is applied to dried clay for it to obtain the required compressive strength for use as a common brick?\nAnnealing\nExtrusion\nGlazing\nVitrification"
+  },
+  {
+   "id": "K6XAM1",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The diagram shows three pulleys $X$, $Y$ and $Z$.\nIf pulley $X$ rotates at $150\\,\\mathrm{rpm}$ clockwise, what will be the speed and direction of rotation of pulley $Z$?\n$150\\,\\mathrm{rpm}$ clockwise\n$300\\,\\mathrm{rpm}$ clockwise\n$75\\,\\mathrm{rpm}$ anticlockwise\n$150\\,\\mathrm{rpm}$ anticlockwise"
+  },
+  {
+   "id": "OVPWT0",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A locating block is sectioned by an offset cutting plane labelled X–X.\nWhich front view is sectioned to AS 1100 standards?"
+  },
+  {
+   "id": "P6Z50X",
+   "year": 2016,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A shear force diagram for a loaded beam is shown.\nWhat is the position of the maximum bending moment?\n$A$\n$B$\n$C$\n$D$"
+  },
+  {
+   "id": "OXL456",
+   "year": 2016,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "relates to a modular reinforced concrete public seating system (bus shelter) and to the PVC based polymer used for student travel cards.\nManufacturers of student travel cards use a PVC based polymer.\nJustify why a PVC based polymer is a suitable material for this application.\nA justification means property, then why that property suits this job — a travel card is carried in pockets and bags, dropped, sat on, and handled by thousands of students.\nThink about how a PVC card is actually made: a flat, printed, cheap, mass-produced sheet, and what that implies about the material and the process."
+  },
+  {
+   "id": "BMSNV5",
+   "year": 2016,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "covers the historical development of communication devices, methods of generating electricity, and a sectioned front view drawn to AS 1100 standards.\nThree examples of communication devices are shown.\nHow has each of these devices contributed to the advancement of telecommunications?\nTake the devices in the order they are shown and, for each, name the specific capability it added — a new way of sending a signal, a new medium, or a new set of functions carried by a single device.\nKeep the three contributions different in kind. If two of them are really the same idea written differently, only one mark is earned for the pair.\nDescribe TWO methods of generating electricity.\nDescribe each method as a chain: energy source → conversion device → electrical output, and choose two routes that start from different sources, such as a fuel-driven rotating generator and a light-driven or moving-mass-driven one.\nCharacteristics earn the marks, not just names: the heat source used, what turns the generator, what the output is used for, and one advantage or limitation of each route.\nAn electrical connector is screwed onto a threaded rod. A flat plate is then secured to the connector by a bolt screwed into a threaded hole.\nComplete the scaled sectioned front view with the parts assembled.\nBefore drawing anything, list the parts the cutting plane actually passes through; only those parts are hatched, and adjacent cut parts are hatched at different angles to one another.\nApply the AS 1100 conventions: internal threads in simplified form (thick line at the minor diameter, thin line at the major), fasteners left whole and unhatched where the plane passes along their axis, and the 8 mm engagement of the M14 × 2 rod shown as given.\nConstruct the view at 2:1 from the given dimensions, in the third-angle arrangement indicated by the projection symbol, and do not add any dimensions."
+  },
+  {
+   "id": "31OKCQ",
+   "year": 2016,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "This diagram shows the cross-section of a highway pavement drawn using AS 1100 drawing standards.\nThis diagram shows the cross-section of a highway pavement drawn using AS 1100 drawing standards.\nExplain the benefits of using AS 1100 drawing standards in the preparation of engineering drawings such as the one above.\nAS 1100 is a standard for how drawings are made and communicated, so think about the consequences of two people interpreting the same drawing differently.\nStandards also decide conventions: Australia projects in first angle while much of the world uses third angle, so a standard removes that ambiguity too.\nThe question says explain, so attach the benefit to each reason rather than listing reasons on their own.\nA heavy vehicle is travelling on a level section of the highway at a constant velocity of $90\\,\\mathrm{km/h}$ while experiencing a resistance to motion of $18\\,\\mathrm{kN}$.\nCalculate the power required to maintain this velocity.\nAt constant velocity the acceleration is zero, so the tractive force from the engine exactly balances the resistance, and the power is just force times speed.\nConvert the speed to metres per second before multiplying, then check the unit you get out of $F \\times v$.\nSanity check the magnitude: $18\\,\\mathrm{kN}$ at $25\\,\\mathrm{m/s}$ gives a power of order $10^{5}\\,\\mathrm{W}$."
+  },
+  {
+   "id": "07AMKO",
+   "year": 2016,
+   "number": "1",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "An image of a truck is shown.\nAn image of a truck is shown.\nCompare the selection of laminated glass with toughened glass as a windscreen for this vehicle.\nThis is a comparison of two windscreens for the same job, so treat them in the same order: shared properties first, then the difference in fracture behaviour, then cost, weight and fabrication.\nAsk what must not happen when the screen is struck: the driver must not be thrown out and must not be cut by fragments.\nNote that does not shatter into dangerous fragments and keeps its shape and stays see-through when cracked are different properties, and each glass type has only one of them.\nGive reasons for selecting an aluminium alloy for the side panel of the truck.\nAnswer in terms of the loads the panel must carry (its own mass, cargo and any impact) against its cost, and remember that a truck side panel is a large, thin, shaped, exposed surface.\nAlso consider the environment: the panel is exposed to weather and road splash, and it has to be produced in large flat or curved shapes and attached to the chassis.\nThe marks want a strength-type property plus a second, unrelated reason — two versions of the same idea is only one mark.\nTruck tyres are made using vulcanised synthetic rubber combined with high tensile steel wire.\nExplain why this combination of materials has been chosen.\nDo not just list properties. The question asks why the two materials are used together, so the answer must be about what each one does that the other cannot.\nConsider the loads on a tyre: vertical load, impact from kerbs and potholes, and the forces that try to squash or spread the sidewall.\nRemember what a rubber casing with no reinforcement would do at speed, and what would be lost if the steel were used alone.\nA mild steel nut and bolt is used to hold a bumper bar onto the chassis of the truck. The bolt needs to withstand a maximum shear load of $2\\,\\mathrm{kN}$.\nIf the maximum shear stress of the material is $56\\,\\mathrm{MPa}$ and the factor of safety is $2$, calculate the minimum bolt diameter.\nThe factor of safety is applied to the strength, not to the load: halve the maximum shear stress to obtain the stress this bolt may safely carry.\nDecide how many shear planes the bolt has at this joint. A single bolt passing through the bumper bar and the chassis is in single shear, with one shear plane across the shank, so use the full circular cross-section rather than half of it.\nSolve for $d^{2}$ before taking the square root, and finish with the diameter in millimetres."
+  },
+  {
+   "id": "7V3PT8",
+   "year": 2016,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "concerns a small drone: how it achieves flight, the manufacture of its nylon and carbon fibre composite propellers, aircraft flight control systems, and the aerodynamic drag of an aerofoil compared with a taut cable.\nAircraft flight control systems use either cables or 'fly-by-wire' systems.\nContrast these flight control systems.\nA contrast needs both sides: a feature of one system, the matching or opposing feature of the other, and at least one thing the two have in common.\nTrace the path of a single pilot input through each system, from the stick to the control surface, and note every stage that can fail, add mass or add friction.\nThink about what each system gives the pilot back: one is immediate, mechanical and tactile; the other is processed, computed and possibly augmented.\nA taut cable and aerofoil of similar thickness are tested in a wind tunnel. The results show that the aerofoil produces significantly less drag than the cable.\nExplain how the aerofoil produces less drag than the taut cable. Use the diagram to assist your response.\nCompare the two bodies the same way: what shape is each one, and what happens to the air immediately behind it?\nDrag is set by two things — how much low pressure the body leaves in its wake, and how much friction its surface creates — and both are decided by the shape of the rear of the body and the roughness of its surface.\nAnnotate the empty flow region of the diagram with streamlines and with the separation and vortex region for each body; that annotated diagram is part of what is being marked."
+  },
+  {
+   "id": "LN2FHP",
+   "year": 2016,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "A simplified diagram of a pin jointed truss of a hammerhead crane is shown. It is lifting a load of $54\\,\\mathrm{kN}$.\nWhat are redundant truss members?\nDefine redundancy relative to the load case, not to the member itself: ask what force the member carries for the loading shown, and whether the truss would behave identically with that member removed.\nThe full mark needs both the zero-force statement and the qualification that a different loading can make the same member load-carrying.\nThe structural steel I-beams used to make the crane were hot-rolled then normalised.\nExplain why normalising was chosen as the heat treatment process. Support your answer with a labelled sketch of the resulting microstructure.\nNormalising reheats the steel into the austenite range and then cools it in still air, so the cooling rate sits between furnace cooling and quenching. Think about what that does to grain size, and therefore to strength and toughness.\nA crane beam has to be strong without becoming brittle or expensive, so the justification is about gaining adequate strength economically and relieving residual stress. The sketch has to show the grain size the process produces, and it must be labelled."
+  },
+  {
+   "id": "YF58J7",
+   "year": 2016,
+   "number": "1",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "The table compares the $\\mathrm{CO_2}$ emissions of three transport systems – car, train and aircraft.\nThe table shows that these transport systems produce different amounts of $\\mathrm{CO_2}$ emissions per passenger.\nWhy are these different transport systems still required?\nThe answer is about choice, not about emissions. No single mode can do everything, so the different systems are each the best option for particular journeys.\nOne mark is for naming a valid reason and one is for explaining how that reason justifies keeping more than one system. A bare list of reasons earns one mark only.\nFor each transport system shown in the $\\mathrm{CO_2}$ emissions table, explain how an engineering innovation in that transport system has affected the environment.\nThree transport systems and seven marks means a different, well explained innovation for each. Using the same innovation in all three will not earn three separate explanations.\nFor each system, complete the chain: the innovation, the mechanism by which it works, the change in fuel or energy use, and the resulting effect on the environment. Marks are given for the explanation, not for the name.\nFor the aircraft, look at where the thrust actually comes from: a large proportion of the air passing through the engine is never burnt, which is why engine efficiency improved so dramatically."
+  },
+  {
+   "id": "YJ1SE6",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following describes the primary responsibility of an engineer?\nTo read the latest engineering research\nTo explain engineering decisions to local media\nTo manage successful delivery of engineering projects\nTo ensure workplace compliance with work health and safety (WHS) requirements"
+  },
+  {
+   "id": "CZ68E5",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following is the circuit symbol for a diode?"
+  },
+  {
+   "id": "9ZW171",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A mass $M$ sits on a plane inclined at $\\theta$ to the horizontal.\nWhat expression is used to calculate the normal reaction $N$?\n$Mg$\n$Mg\\cos\\theta$\n$Mg\\sin\\theta$\n$Mg\\tan\\theta$"
+  },
+  {
+   "id": "N5K2SI",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Specifications for a $\\varnothing 10$ steel bar require it to have a tolerance of $\\pm 0.05\\,\\mathrm{mm}$.\nWhat is the permitted range of diameters for this bar?\n$9.90\\text{–}10.00\\,\\mathrm{mm}$\n$9.95\\text{–}10.00\\,\\mathrm{mm}$\n$9.95\\text{–}10.05\\,\\mathrm{mm}$\n$10.00\\text{–}10.05\\,\\mathrm{mm}$"
+  },
+  {
+   "id": "S32BTT",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The image shows the microstructure of brass.\n[Figure unavailable: the published paper states \"This material cannot be displayed, due to copyright issues.\" A photomicrograph of the polished and etched brass surface must be attached manually before this question can be answered.]\nThe grain structure of the brass shown is best described as\nDeformed\nDendritic\nEquiaxed\nStressed"
+  },
+  {
+   "id": "DQF9BM",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The diagram shows an aerofoil.\nWhich condition needs to be achieved for lift to occur?\nPressure $1 <$ Pressure $2$\nPressure $1 =$ Pressure $2$\nPressure $1 >$ Pressure $2$\nPressure $1 +$ Pressure $2 = 0$"
+  },
+  {
+   "id": "IRA92L",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Wireless networks operate in two distinct frequency bands: $2.4\\,\\mathrm{GHz}$ and $5\\,\\mathrm{GHz}$. Which of the following statements is correct?\n$5\\,\\mathrm{GHz}$ waves experience lower attenuation and have a lower bandwidth\n$5\\,\\mathrm{GHz}$ waves experience higher attenuation and have a higher bandwidth\n$2.4\\,\\mathrm{GHz}$ waves experience lower attenuation and have a higher bandwidth\n$2.4\\,\\mathrm{GHz}$ waves experience higher attenuation and have a lower bandwidth"
+  },
+  {
+   "id": "LDL6F6",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which row of the table correctly identifies how the properties of a cold worked metal are changed after annealing?\nOption: A; Hardness: Reduction; Ductility: Decrease; Internal residual stress: Increase\nOption: B; Hardness: Reduction; Ductility: Increase; Internal residual stress: Decrease\nOption: C; Hardness: Increase; Ductility: Decrease; Internal residual stress: Increase\nOption: D; Hardness: Increase; Ductility: Increase; Internal residual stress: Decrease"
+  },
+  {
+   "id": "FC1UQE",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which free-body diagram shows a beam subjected to a uniformly distributed load?"
+  },
+  {
+   "id": "S41B45",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following statements describes Hooke's Law?\nPressure acting on an object varies proportionally with depth.\nPressure acting on an object in a confined fluid is uniform in all directions.\nForce induced in an object by stretching it is initially proportional to its extension.\nForce acting on an object is equal to the stress divided by the cross-sectional area."
+  },
+  {
+   "id": "2SGLN3",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The properties of some aluminium-magnesium-silicon alloys can be altered using the following procedure.\nWhat type of hardening process is this?\nCase hardening\nFlame hardening\nInduction hardening\nPrecipitation hardening"
+  },
+  {
+   "id": "65XPDJ",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which drawing shows the correct AS 1100 standard representation of a $\\varnothing 10$ non-structural bolt head?"
+  },
+  {
+   "id": "6EL45O",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "An image of an Allen truss bridge is shown.\n[Figure unavailable: the published paper states \"This material cannot be displayed, due to copyright issues.\" A photograph of the Allen truss bridge must be attached manually before this question can be used.]\nWhich option correctly identifies the type of force carried by the timber members and by the steel members of this truss bridge?\nTimber members in shear and steel members in torsion\nTimber members in torsion and steel members in shear\nTimber members in tension and steel members in compression\nTimber members in compression and steel members in tension"
+  },
+  {
+   "id": "U77M3D",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A highly stressed steel plate develops a fatigue crack while in service.\nWhich of the following is the most effective temporary method to slow or stop the crack's growth?\nWeld the crack as it is\nDrill a hole ahead of the tip of the crack\nDrill a hole through the start of the crack\nWeld a small steel plate over the tip of the crack"
+  },
+  {
+   "id": "5011IV",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "What can be used to minimise significant losses in electrical power transmission cables?\nVery high current\nVery high voltage\nVery high resistance\nVery high capacitance"
+  },
+  {
+   "id": "QMFI93",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Television programs that show high levels of activity often have lower picture quality. This is because television signals are transmitted using\ndigital modulation at low compression levels.\ndigital modulation at high compression levels.\nanalogue modulation at low compression levels.\nanalogue modulation at high compression levels."
+  },
+  {
+   "id": "70B0WT",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "In which of the following does an impervious oxide surface layer provide corrosion resistance for the base metal?\nZinc coating of steel in underground applications\nCarbon fibre panels in automotive body applications\nPowder coating of steel structures in marine applications\nNickel-based alloys in high temperature aeronautical applications"
+  },
+  {
+   "id": "S4F313",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The following graph shows the results of a tensile test on a metal sample.\nWhat is the approximate $0.2\\%$ proof stress for this metal sample?\n$70\\,\\mathrm{MPa}$\n$80\\,\\mathrm{MPa}$\n$140\\,\\mathrm{MPa}$\n$260\\,\\mathrm{MPa}$"
+  },
+  {
+   "id": "V7VJT8",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "An engineering component is required to have the following features:\nWhich of the following shows the correct dimensioning?\n$\\varnothing 6$ ⌴ $\\varnothing 10 \\times 8$⌵ $\\varnothing 30\\,\\mathrm{SF}$\n$\\varnothing 6$ ⌴ $\\varnothing 8 \\times 10$⌴ $\\varnothing 30$\n$\\varnothing 6\\;\\varnothing 10 \\times 8$⌵ $\\varnothing 30\\,\\mathrm{SF}$\n$\\varnothing 8\\;\\varnothing 6 \\times 10$⌵ $\\varnothing 30\\,\\mathrm{SF}$"
+  },
+  {
+   "id": "E81KV1",
+   "year": 2017,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A compound lever system is shown.\nWhat is the velocity ratio of this lever system?\n$1:1$\n$2:1$\n$4:1$\n$6:1$"
+  },
+  {
+   "id": "QE82QP",
+   "year": 2017,
+   "number": "1",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "Carbon fibre was originally developed to produce aircraft bodies and high performance vehicles. Carbon fibre is now used in a wide range of applications, including the manufacture of the type of bicycle frame shown.\nOutline the advantages of carbon fibre bicycle frames over steel bicycle frames.\nCompare the two materials property by property — density, stiffness, strength, corrosion behaviour and how the shape is formed — and keep only those differences that are an advantage for a bicycle frame.\nA bicycle frame has to be light, has to be stiff so it holds its shape, and has to survive the rider's repeated pedalling loads in all weathers. Any claim you make should improve one of those.\nExplain how a carbon fibre bicycle frame is manufactured.\nA bicycle frame is a single moulded shell, not an assembly of parts. Think about the tool the frame is built inside and how the fibres are arranged on or in it.\nFollow the process in order: the fibres are placed, the shape is formed and consolidated, the resin is cured, and the cured frame is released from the tool.\nA bike with a rider rolls down a hill without braking from a standing start at point A.\nThe combined weight of the bike and the rider is $100\\,\\mathrm{kg}$. Calculate the speed of the rider at point B. (Assume no wind resistance and $100\\%$ efficiency.)\nWith no wind resistance and $100\\%$ efficiency, the gravitational potential energy lost is exactly converted into kinetic energy, and the mass cancels out of the equation.\nRearrange $mgh = \\tfrac{1}{2}mv^{2}$ for $v$, and substitute the vertical height rather than the length of the slope. Then round to a sensible number of significant figures.\nWhen a bike goes over a bump, there is a vertical force of $3\\,\\mathrm{kN}$ exerted axially on the main pillar.\nThe cross-section of the pillar is shown. Calculate the compressive stress acting in the pillar.\nCompressive stress is the axial force divided by the area of material that actually carries it. The pillar is hollow, so that area is a ring, not a full circle.\nThe cross-section gives an outside and an inside diameter, so subtract the inner area from the outer area: $A = \\frac{\\pi}{4}\\left(d_{o}^{2} - d_{i}^{2}\\right)$. The dimensions are in millimetres, so working in $\\mathrm{N}$ and $\\mathrm{mm}$ gives the answer directly in $\\mathrm{N/mm^{2}}$, which is the same as $\\mathrm{MPa}$."
+  },
+  {
+   "id": "P4KQ62",
+   "year": 2017,
+   "number": "1",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "Sleds are used to slide loads over soft surfaces such as grass, sand and snow. They can be made using polypropylene."
+  },
+  {
+   "id": "83T0MK",
+   "year": 2017,
+   "number": "1",
+   "marks": 13,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "A pin-jointed truss designed to support a roadside sign is shown."
+  },
+  {
+   "id": "5EG95B",
+   "year": 2017,
+   "number": "1",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "An engineering team has been contracted to design a multi-function lifting device for a coastal container wharf.\nThe table shows some of the engineering design elements for this lifting device.\nWhy is the routine testing of engineering components important during service?\nThink of a component that is genuinely working - a diesel truck engine or an aircraft jet engine - and list the conditions it is exposed to in service that were never present when it left the factory.\nThe answer needs the consequence as well as the cause. Say what the component will do if a developing fault is allowed to continue, and what the operator gains by finding it early.\nExplain how the lifting device can be tested and evaluated to determine if the criteria for the listed engineering elements are met.\nWork down the four rows of the table rather than writing a general paragraph, and for each row ask two separate questions: how is the criterion physically measured, and how is the result judged against the number in the table?\nThe marks are lost when the test is named but not explained, or when the evaluation is missing. For each row say what method gives the number and what result would count as passing.\nTwo of the four criteria are about the operating environment rather than about strength, so a load test alone can never demonstrate them - one needs a wind facility or a simulation, and one needs a corrosion trial or condition monitoring."
+  },
+  {
+   "id": "95JDKN",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "An engineer has been asked to investigate and report on the failure of a component. Which row of the table correctly identifies what the engineer would need to do before finalising the report?\nInvestigate the component's material: No; Redesign the component: Yes; Conduct a simulation of the operational use of the component: Yes; Prepare an initial draft of the report: Yes\nInvestigate the component's material: Yes; Redesign the component: No; Conduct a simulation of the operational use of the component: Yes; Prepare an initial draft of the report: Yes\nInvestigate the component's material: Yes; Redesign the component: Yes; Conduct a simulation of the operational use of the component: No; Prepare an initial draft of the report: Yes\nInvestigate the component's material: Yes; Redesign the component: Yes; Conduct a simulation of the operational use of the component: Yes; Prepare an initial draft of the report: No"
+  },
+  {
+   "id": "M32X4N",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The diagram shows a scaffold with diagonal braces.\nThe diagonal braces of the scaffold are subjected to\nTorsion and shear\nTorsion and tension\nCompression and shear\nCompression and tension"
+  },
+  {
+   "id": "M6EED8",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A pulley system is shown.\nWhat is the mechanical advantage of this ideal pulley system?\n$2$\n$3$\n$4$\n$5$"
+  },
+  {
+   "id": "H73ZUR",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A line specified in AS 1100 is shown.\nWhich type of line is shown?\nCentre-line\nCutting plane\nHidden feature\nFictitious outline"
+  },
+  {
+   "id": "OUV4X0",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Two types of bridge are shown.\nWhich option correctly identifies Bridge 1 and Bridge 2?\nSuspension bridge and masonry arch\nSuspension bridge and masonry beam\nReinforced concrete arch and masonry arch\nReinforced concrete arch and masonry beam"
+  },
+  {
+   "id": "Q65WVU",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which device is used to measure the airspeed of an aircraft in flight?\nAltimeter\nPitot tube\nWind gauge\nPotentiometer"
+  },
+  {
+   "id": "OB62I1",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "An arrangement of resistors is shown.\nWhat is the total resistance of this arrangement of resistors?\n$33\\,\\Omega$\n$50\\,\\Omega$\n$150\\,\\Omega$\n$300\\,\\Omega$"
+  },
+  {
+   "id": "J86PO5",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "In which of the following do all of the processes require plastic deformation to achieve a final shape?\nBrazing, casting, rolling\nBrazing, soldering, welding\nExtruding, casting, forging\nExtruding, pressing, rolling"
+  },
+  {
+   "id": "81D35E",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The diagram shows a drop hammer being used to drive a pile into the ground.\nThe hammer falls from rest through a height $h$ and strikes the pile at speed $v$. Which expression gives $h$?"
+  },
+  {
+   "id": "A00AKF",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "In a ductile material, which two stresses are used to calculate the factor of safety (FOS)?\nWorking and yield\nWorking and compressive\nBending and yield\nBending and compressive"
+  },
+  {
+   "id": "H7IP1Z",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "What is the most appropriate propulsion system for a long-haul commuter aircraft?\nRamjet\nScramjet\nTurbofan\nTurboprop"
+  },
+  {
+   "id": "PS9KW6",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A transition piece is shown (scale $2:1$).\nWhich option shows the development of the transition piece (scale $2:1$)?"
+  },
+  {
+   "id": "25D8MP",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which statement best describes modulation?\nThe addition of information to a carrier wave.\nThe attenuation of information in a carrier wave.\nThe removal of quantised information from a carrier wave.\nThe filtering of unnecessary information from a carrier wave."
+  },
+  {
+   "id": "LSYKT7",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which row of the table correctly describes the property changes that occur after tempering quench-hardened steel?\nToughness: Increased; Hardness: Minimal loss\nToughness: Minimal loss; Hardness: Increased\nToughness: Increased; Hardness: Increased\nToughness: Minimal loss; Hardness: Minimal loss"
+  },
+  {
+   "id": "6M9J2M",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following electronic circuits functions as a NAND logic gate?"
+  },
+  {
+   "id": "EMM2YV",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Four output graphs from an oscilloscope are shown.\nWhich of the graphs show direct current (DC)?\nGraph 4 only\nGraphs 3 and 4 only\nGraphs 2, 3 and 4 only\nGraphs 1, 2 and 3 only"
+  },
+  {
+   "id": "N8T346",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Aircraft skins can be constructed using either fibre metal laminate (FML) or sheet aircraft-grade aluminium alloy. FML is preferred in this application because it has\nhigher density and lower Young's modulus.\nhigher density and improved fatigue resistance.\nhigher strength-to-weight ratio and lower Young's modulus.\nhigher strength-to-weight ratio and improved fatigue resistance."
+  },
+  {
+   "id": "7PN70R",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The force $F$ is moved from joint $W$ to joint $X$, as shown.\nWhich option correctly shows what happens to the internal force in member $XY$ and the reaction force at $W$ when the force $F$ is moved from joint $W$ to joint $X$?\nInternal force in member XY: Decreases; Reaction force at W: Decreases\nInternal force in member XY: Increases; Reaction force at W: Increases\nInternal force in member XY: Increases; Reaction force at W: Decreases\nInternal force in member XY: Decreases; Reaction force at W: Increases"
+  },
+  {
+   "id": "EDP4A0",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which heat-treated metal is used for contact springs in electrical switches?\nOFHC copper\nPhosphor bronze\nCopper beryllium\nTough pitched copper"
+  },
+  {
+   "id": "J27NJ4",
+   "year": 2018,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A box with weight $W$ and subject to a friction force $F$ is being pulled up an inclined plane by a force $P$.\nWhich two forces can be combined into a single resultant contact reaction?\n$P$ and $W$\n$P$ and $N$\n$F$ and $W$\n$F$ and $N$"
+  },
+  {
+   "id": "KWIN6N",
+   "year": 2018,
+   "number": "1",
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "",
+   "text": "The diagram shows a self-driving electric vehicle.\nInnovations in global positioning systems (GPS) and sensor technologies are used in the operation of this vehicle.\nDescribe how both of these innovations are used in the control of the vehicle.\nFor each innovation, name the input it uses and what the vehicle does with the information it produces.\nGPS answers 'where am I and where am I going?', while the sensors answer 'what is in the way?' Treat them as a pair of inputs to one control system, not two unrelated inventions.\nThe question asks how they are used in control, so finish by saying what the control system actually operates on the vehicle.\nOutline the benefits of using electric motors to power self-driving vehicles.\nThink about the whole energy chain: where the electricity comes from, and what the drivetrain has to do in an automated vehicle.\nA benefit of electric motors here is partly a systems or environmental benefit, not just a performance one, so include the effect on emissions.\nThree marks means three distinct, developed points rather than one point explained at length.\nThe self-driving vehicle has a mass of $1.5$ tonnes and is travelling at $60\\,\\mathrm{km/h}$. Calculate its kinetic energy.\nKinetic energy is $KE = \\tfrac{1}{2}mv^{2}$, and both values must be in SI units. The mass is given in tonnes and the speed in kilometres per hour.\nConvert $60\\,\\mathrm{km/h}$ to $\\mathrm{m/s}$ by dividing by $3.6$, not by $3.6 \\times 1000$.\nA $1500\\,\\mathrm{kg}$ mass travelling at $16.7\\,\\mathrm{m/s}$ stores energy of order $2 \\times 10^{5}\\,\\mathrm{J}$, so the final answer will be of order a couple of hundred kilojoules.\nDigital logic controls the vehicle's brakes.\nBrakes will be applied when all of the following conditions are met:\nExplain how the logic gates, labelled 1, 2 and 3 in the circuit below, control the vehicle's brakes.\nRead the shape of each gate off the circuit first, then say in words what its output is when its inputs change.\nNotice that only one of the three stated conditions is an 'either/or'. That gate must be an OR, not an AND.\nThe brakes respond to the combination of the two gate outputs, so the final gate decides whether the two groups of conditions must be met together."
+  },
+  {
+   "id": "YRTE4M",
+   "year": 2018,
+   "number": "1",
+   "marks": 12,
+   "type": "short_answer",
+   "current_path": "",
+   "text": "A people-mover vehicle is assembled using a variety of parts.\nComplete the table.\nWork across the table one row at a time and first decide which of the three columns the blank sits in: a material, a property or a process. The two entries already given in each row are the clues for the missing one.\nFor the blanks in the process column, sort the rows by material class: a thermoplastic sheet is cut from a mould, a metal section is rolled or machined, and a wire is pulled through a die.\nFor the row that is missing a material, look hard at the process column: the named process only works with a resin that has been reinforced with a strong fibre, not with a metal.\nThe chassis for the vehicle could be made from a solid steel bar or hollow steel tube. Both the bar and the tube have the same mass and cost per metre.\nJustify why a hollow tube would be used in preference to a solid bar to build the vehicle chassis.\nThe mass and the cost per metre are given as identical, so neither can decide the choice. The comparison has to be made on a property of the shape rather than of the material.\nCompare the two sections on how far the material sits from the axis about which the chassis bends: bending resistance for a given mass depends on the distribution of that mass, not on the total amount of it.\nThere is also a non-structural reason for choosing the hollow section - think about what can be run along the inside of it and how that changes the design of the vehicle."
+  },
+  {
+   "id": "C7QXNR",
+   "year": 2018,
+   "number": "1",
+   "marks": 11,
+   "type": "short_answer",
+   "current_path": "",
+   "text": "A fidget spinner is shown. It is a toy that contains a ball bearing in its centre and is designed to spin on its axis with little effort.\nThe central components of a fidget spinner are press fitted together using a press punch.\nThe press punch diameter is $21\\,\\mathrm{mm}$. The force applied by the press punch to the bearing is $17.3\\,\\mathrm{N}$. Calculate the compressive stress in the press punch.\nThe punch is loaded in compression, so the stress is the applied force spread evenly over the circular face of the punch: $\\sigma = F/a$.\nConvert the diameter to metres before you compute the area ($21\\,\\mathrm{mm} = 21\\times10^{-3}\\,\\mathrm{m}$). If the area is left in square millimetres the answer comes out in the wrong unit by a factor of $10^{6}$.\nThe body of the fidget spinner is made from polypropylene. The bearing is made from steel. When the force $P$ applied by the press punch is $16\\,\\mathrm{N}$, the bearing slides into position. Calculate the normal force $N$ acting on the bearing walls if the coefficient of friction between polypropylene and steel is $0.20$.\nThe bearing is just beginning to slide, so the friction between the polypropylene wall and the steel bearing has reached its limiting value: $F = \\mu N$.\nIn that relationship the force along the surface of contact is the press force driving the bearing in, and the unknown is the force pressing the walls outward. Rearranging the relationship makes the normal force the subject.\nThe top view of a fidget spinner is shown.\nWhat force $Q$ is required to overcome the $20\\,\\mathrm{N}$ resistance force shown?\nTreat the bearing as the pivot. The $20\\,\\mathrm{N}$ resistance acts through the bearing, so it has no moment about the bearing axis, and only $Q$ produces a turning moment.\nThe view is drawn to scale, so measure the perpendicular distance from the centre of the bearing to the line of action of $Q$ on the figure, and measure the moment arm of the $20\\,\\mathrm{N}$ force the same way. Keep both in the same units before substituting.\nSanity check: $Q$ is applied further out from the axis than the resisting force, so it should come out smaller than $20\\,\\mathrm{N}$.\nThe components of the bearing assembly used in the fidget spinner are shown.\nThe retainer can be made from either glass fibre-reinforced nylon or stainless steel.\nCompare the in-service properties of these materials for use in the retainer.\nA comparison needs at least one property for each material, and for each property the effect it has while the retainer is in service. A list of properties with no consequence attached scores the lower band only.\nThink about the environment the retainer works in: grease and solvents, high rotational speed, heat, and shock or vibration loading.\nWatch the extremes of temperature and moisture: one of these materials changes character well before the other does, and that is the argument that decides the choice."
+  },
+  {
+   "id": "JP49Z2",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which Australian aeronautical innovation is commonly used to record in-flight data?\nAltimeter\nPitot tube\nBlack box\nTransponder"
+  },
+  {
+   "id": "S4URFF",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which of the following identifies TWO properties of polymers that make them better suited than ceramics for the insulation of telecommunication cables?\nEase of formability and higher density\nEase of formability and higher flexibility\nHigher resistance to abrasion and higher density\nHigher resistance to abrasion and higher flexibility"
+  },
+  {
+   "id": "0P3R0W",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which AND gate shows the correct output for its given inputs?"
+  },
+  {
+   "id": "0B5YPQ",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A general purpose bolt drawn to AS 1100 drawing standards is shown.\nWhat is the diameter of the bolt?\n$8.75\\,\\mathrm{mm}$\n$10.00\\,\\mathrm{mm}$\n$14.00\\,\\mathrm{mm}$\n$18.00\\,\\mathrm{mm}$"
+  },
+  {
+   "id": "T4H4DB",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Using computer-aided drawing (CAD) software a new outline was produced $18.32\\,\\mathrm{mm}$ away from the original outline of an item as shown.\nWhich CAD command can produce this result most efficiently?\nTrim\nOffset\nMirror\nExpand"
+  },
+  {
+   "id": "MDB6TE",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The schematic diagram shows a bridge rectifier.\nWhat is the function of this bridge rectifier?\nTo increase voltage\nTo decrease voltage\nTo convert DC to AC\nTo convert AC to DC"
+  },
+  {
+   "id": "18V2MR",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A box sits on a horizontal surface. The box begins to slip when this surface is tilted to $28^{\\circ}$. What is the coefficient of friction between the box and the surface?\n$0.280$\n$0.469$\n$0.532$\n$0.883$"
+  },
+  {
+   "id": "O55ROO",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which row of the table correctly identifies the routine maintenance responsibilities of an aeronautical engineer working for a small commercial airline?\nDesign of modifications: ✕; Construction of prototypes: ✕; Certification of repairs: ✓; Supervision of maintenance: ✓\nDesign of modifications: ✓; Construction of prototypes: ✕; Certification of repairs: ✕; Supervision of maintenance: ✓\nDesign of modifications: ✓; Construction of prototypes: ✓; Certification of repairs: ✕; Supervision of maintenance: ✕\nDesign of modifications: ✕; Construction of prototypes: ✓; Certification of repairs: ✓; Supervision of maintenance: ✕"
+  },
+  {
+   "id": "0RNKBH",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A sketch of a post-tensioned concrete beam is shown.\nWhich of the following shows the most likely loading condition the beam is designed to resist when viewed from the front?"
+  },
+  {
+   "id": "3AJIBV",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The diagram shows the airflow in a venturi.\nWhat does this diagram illustrate?\nCoriolis effect\nPascal’s principle\nDynamic pressure\nBernoulli’s principle"
+  },
+  {
+   "id": "OI2AZF",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The table shows materials that have been used to build civil structures over time. Which row of the table shows the use of the materials in the correct historical order?\nEarliest: Stone; : Cast iron; : Alloy steel\nEarliest: Wrought iron; : Stone; : Alloy steel\nEarliest: Timber; : Stainless steel; : Mild steel\nEarliest: Cast iron; : Stainless steel; : Mild steel"
+  },
+  {
+   "id": "68R8AR",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which row of the table indicates the effects of retrofitting winglets to a plane?\nLift: Decreases; Drag: Decreases; Vortices: Decrease\nLift: Increases; Drag: Decreases; Vortices: Decrease\nLift: Decreases; Drag: Increases; Vortices: Increase\nLift: Increases; Drag: Increases; Vortices: Increase"
+  },
+  {
+   "id": "8NGQNP",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The diagram shows a seesaw being used by two children, one of mass $25\\,\\mathrm{kg}$ and the other of mass $20\\,\\mathrm{kg}$. It has a corroded pivot mechanism that reduces its efficiency by $25\\%$.\nWhat is the mechanical advantage of the seesaw?\n$0.25$\n$0.75$\n$0.80$\n$1.00$"
+  },
+  {
+   "id": "232Q2J",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which row of the table correctly identifies key features of analogue and digital signals used in the transmission of television in Australia?\nAnalogue television signals: FM signals used to transmit audio; Digital television signals: MP2 or MP4 compression used to transmit video\nAnalogue television signals: AM signals used to transmit audio; Digital television signals: MP2 or MP4 compression used to transmit video\nAnalogue television signals: FM signals used to transmit luminescence; Digital television signals: VOIP used to transmit video\nAnalogue television signals: AM signals used to transmit luminescence; Digital television signals: VOIP used to transmit video"
+  },
+  {
+   "id": "7L7FXU",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Titanium is used to manufacture aircraft undercarriages that support landing wheels. Why is titanium used in preference to alloy steel for this purpose?\nIt has lower density and lower strength.\nIt has lower density and higher strength.\nIt has higher density and lower strength.\nIt has higher density and higher strength."
+  },
+  {
+   "id": "CMMVK4",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "The image shows part of a large anchor recovered from waters off Western Australia. The anchor’s approximate date of manufacture was $1790$.\nThis anchor is most likely made from\ncast iron.\ncast steel.\nwrought iron.\nlaminated silicon steel."
+  },
+  {
+   "id": "KHW45G",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "Which row of the table correctly identifies the rolling process used to manufacture each of the components listed at room temperature?\nLead alloy battery plates: Cold rolling; Steel body panels: Cold rolling\nLead alloy battery plates: Cold rolling; Steel body panels: Hot rolling\nLead alloy battery plates: Hot rolling; Steel body panels: Cold rolling\nLead alloy battery plates: Hot rolling; Steel body panels: Hot rolling"
+  },
+  {
+   "id": "8GT7G6",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A scooter shock absorber is compressed from $120\\,\\mathrm{mm}$ to $90\\,\\mathrm{mm}$ when an average compressive force of $400\\,\\mathrm{N}$ is applied.\nWhat is the energy stored in this shock absorber?\n$12\\,\\mathrm{J}$\n$36\\,\\mathrm{J}$\n$48\\,\\mathrm{J}$\n$120\\,\\mathrm{J}$"
+  },
+  {
+   "id": "AYJM8S",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "A webbed flange is shown.\nWhich image correctly represents section A–A?"
+  },
+  {
+   "id": "E3ZJP3",
+   "year": 2019,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "",
+   "text": "An annealed copper tensile test specimen has an original cross-sectional area (CSA) of $100\\,\\mathrm{mm}^{2}$. During testing, an engineering stress of $150\\,\\mathrm{MPa}$ is induced within the specimen before necking occurs. At this strain the CSA reduces uniformly by $10\\%$ to $90\\,\\mathrm{mm}^{2}$. This is illustrated in the diagrams below.\nWhat is the value of the true stress induced at this strain?\n$135.0\\,\\mathrm{MPa}$\n$136.4\\,\\mathrm{MPa}$\n$150.0\\,\\mathrm{MPa}$\n$166.7\\,\\mathrm{MPa}$"
+  },
+  {
+   "id": "XKC75T",
+   "year": 2019,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "A bus shelter is shown.\nThe design of this bus shelter includes the use of toughened glass panels. Outline advantages of using toughened glass for this bus shelter.\nThink about what happens when a pane of glass in a bus shelter is struck or overloaded. The strongest answer describes how the panel fails, not just how strong it is.\nAlso consider how the panel survives cleaning, handling and installation, and how the behaviour of the fragments affects the people waiting underneath it.\nGive several distinct advantages, each as a property linked to the service condition, so that each earns its own mark.\nA laminated timber beam is used as part of the roof construction for this bus shelter. Apart from cost and aesthetics, justify why laminated timber would be selected for this structure.\nThe question says 'apart from cost and aesthetics', so every justification must be about performance, durability or form.\nThink about what a laminated section can be made to do that a solid timber beam of the same span cannot: consider the shapes and the sizes that natural timber does not come in.\nThen consider the adhesive layers between the laminations and what service environments they tolerate.\nDescribe a testing procedure that could be used to determine the structural strength of the laminated timber beam. Support your answer with a labelled sketch.\nThe quantity being sought is the structural strength of the beam in bending, which points to a flexural (bending) test rather than a tensile, compressive or impact test.\nPlan the test as a sequence: mark out a span on the beam, set it up on supports, decide where the load is applied, increase the load, and record both the load and the resulting deflection.\nYour sketch must carry the information a marker needs: the two supports, the span, the single or double point of load application with the load arrow, and the deflection measurement.\nA pictorial sketch of a laminated timber beam used in a bus shelter is shown. This beam has a second moment area of $117\\times10^{-6}\\,\\mathrm{m}^{4}$. The maximum applied bending moment is $17\\,\\mathrm{kN\\,m}$.\nCalculate the maximum bending stress present in the beam.\nUse the bending stress relation $\\sigma = My/I$. The second moment of area is given, so no section property has to be calculated from the 90 mm width.\nThe maximum stress is at the outermost fibre, so $y$ is the distance from the neutral axis to the outer surface: use half the 250 mm depth, not the whole depth.\nConvert the bending moment from $\\mathrm{kN\\,m}$ to $\\mathrm{N\\,m}$ before substituting, or the answer will be out by a factor of 1000. Give the answer in MPa."
+  },
+  {
+   "id": "2X93LG",
+   "year": 2019,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "A telecommunications engineer has designed a tower that is to support two mobile repeater transmitters. It is to be located in an urban community.\nOutline responsibilities the engineer has when placing the tower within a local community.\nStay specific to this tower in this community. Each point should name a community impact — health, signal quality, appearance, access, disruption during construction — rather than a general engineering duty.\nThree marks need three different stakeholders or effects; two points about the same concern earn one mark between them.\nExplain why the engineer has positioned the repeater transmitters as indicated on the diagram.\nStart from what the unit does — receive a weak signal and re-transmit it — because the position of the two units only makes sense in terms of the paths into and out of each one.\nThe marks are for the consequence of separating those paths (less interference, stronger signal, greater range), not for a description of the physical structure of the tower or its supports.\nThe diagram shows some dimensions and forces associated with the telecommunications tower.\nBy considering any necessary reaction, calculate the magnitude of the forces in members M and N. State the nature of each force. Ignore the weight of the tower.\nStart with the supports: where a support reaction has no horizontal component, the member in line with that direction is a redundant (zero-force) member and can be ignored at that joint.\nFind the remaining reaction from moments about a joint where the unknown reaction does not appear, then cut the truss through three members and take moments about the joint where the other two cross, so that only one unknown is left in the equation.\nDecide tension or compression from the sense of the moment the assumed force produces, not from the size of the number."
+  },
+  {
+   "id": "EY8TLG",
+   "year": 2019,
+   "number": "1",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "",
+   "text": "Modern racing yachts are now designed using aeronautical engineering principles.\nModern racing yachts are now designed using aeronautical engineering principles.\nThe diagram shows the hull of a racing yacht.\nHow can engineers use an understanding of the effects of drag to improve the design of racing yacht hulls?\nDrag opposes forward motion, so reducing it lets the same power drive the boat faster. Start from that link, because the question asks how an understanding of drag improves the design.\nA hull drags in two ways: skin friction over its wetted surface, and pressure drag from the low pressure in the separated wake. Ask which of the two each design change reduces.\nThe appendages under a racing hull are not decoration — use the diagram to identify where the water is deflected and how that reduces the wake.\nSome materials have properties that allow them to be used in the manufacture of both modern racing yachts and aircraft. These materials include Kevlar® aramid fibre, carbon fibre epoxy composites and aluminium alloys. Complete the table by providing a property which makes each of these materials suitable for the manufacture of both yachts and aircraft.\nOne property is required for each material, and it must be a property that suits that material in BOTH a racing yacht and an aircraft.\nUse the property a student would be asked to justify a composite or an alloy with — specific strength or specific stiffness — rather than a vague claim that it is strong or light.\nKeep the same standard of justification in all three rows; a good answer in one row does not carry the others.\nAn intricate component used on racing yachts is shown below being modelled using computer-aided drawing (CAD) software.\nExplain why engineers use CAD software to design and model intricate components.\nThe question asks why, so link each CAD capability to a consequence for the designer: accuracy, speed of change, sharing, and analysis.\nCompare modelling in CAD with producing the same part by hand or as a physical prototype — the argument is about what becomes possible or cheaper, not about what the software is.\nRemember that a model can be analysed and tested on screen before any material is cut, and that one parametric file can be used by a whole team and reused for every derived drawing.\nThe photograph shows a board with a hydrofoil attached underneath. The hydrofoil is used to lift the board out of the water as the rider is towed behind a boat at high speed. Explain why the hydrofoil can lift the board out of the water when it is travelling at high speed.\nThe foil is an aerofoil, so use the pressure difference between its two surfaces to explain the direction of the force.\nRemember the second contribution as well: the foil deflects water downwards, and the reaction to that deflection also acts upwards on the board.\nExplain why the force is only large enough to lift the board at high speed — think about how much water the foil has to move each second as the board speeds up, and how the pressure difference depends on the flow speed."
+  }
+ ]
+}

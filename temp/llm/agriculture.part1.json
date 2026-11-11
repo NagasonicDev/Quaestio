@@ -1,0 +1,2025 @@
+{
+ "course_id": "agriculture",
+ "course_name": "Agriculture",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe how Aboriginal and Torres Strait Islander Peoples have practised sustainable agricultural production for millennia"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Identify key food and fibre commodities grown in Australia for domestic and export markets"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe Australia’s agricultural sectors: food, fibre, forestry, and fisheries"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain the economic, social, ethical and environmental issues influencing sustainable agricultural production in Australia"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain the influence of climate, soil type and topography on the location of agricultural enterprises within local regions and across NSW"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Compare key production data for an agricultural enterprise over the past 5 years, including total output and export value"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain the purpose of sample size, randomisation, replication, variables and experimental controls in agricultural research"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe inputs, processes and outputs as key elements of agricultural production systems"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain traditional ecological management techniques used by Aboriginal and Torres Strait Islander Peoples to maintain biodiversity and resource sustainability"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain how interconnected subsystems of soils, microbes, plants, animals and markets are required for food and fibre production and consumption"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Compare the features of intensive and extensive agricultural production methods"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Use data to compare land use capability"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Identify sources of water for use in agricultural production, including underground water, riparian water, municipal water supplies, and captured and stored rain run-off"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Explain water licensing requirements for irrigation in NSW"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Describe how Aboriginal and Torres Strait Islander Peoples' Cultural and ecological management of water has influenced water conservation and sustainable water management practices"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Analyse strategies for the sustainable management of land around waterways to protect riparian zones and prevent water pollution"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Agriculture in Australia / Agricultural systems / Calculate the difference between total rainfall and effective rainfall"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Outline the influence of a farm’s natural capital including air, water, soil, native plants and animals"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Outline the physical properties of soil, including parent material, horizons, colour, texture, structure, organic matter, water-holding capacity, porosity and bulk density"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Describe the chemical properties of soil, including pH, ion exchange capacity, electrical conductivity and soil carbon content"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Explain how farming practices contribute to productive soil, including the retention and addition of organic matter"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Explain the role of humus in improving soil structure, fertility and moisture retention"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Conduct a practical investigation to determine soil types using a soil texture triangle and clay ribbon test"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Conduct a practical investigation to determine soil structure, including ped shape and size, slaking and dispersion"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Evaluate the role of natural capital in the provision of biodiversity, shelter, wildlife corridors, and habitats for pollinators and pests"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Outline the influences on Australian climate and weather"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Identify greenhouse gas (GHG) sources and GHG sinks associated with agricultural practices"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Describe how Aboriginal and Torres Strait Islander Peoples observe and interpret climate and seasonal patterns through environmental indicators, animal behaviour, plant cycles and celestial movements"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Explain how climate influences plant and animal growth and production, including the effects of light, temperature, and available moisture, oxygen and carbon dioxide"
+  },
+  {
+   "code": "PRE-M1-T2-D13",
+   "path": "Year 11 / Agriculture in Australia / Australian agriculture and society / Use data to analyse the difference between seasonal variability and climate change"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe the structures and functions of xylem and phloem in plants"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe how osmotic pressure and transpiration control the movement of water and dissolved minerals through the xylem and phloem"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe how Aboriginal and Torres Strait Islander Peoples use and manage plant parts for medicinal and food consumption"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Plant production / Plant growth and production / Conduct a practical investigation to determine how the structures of leaves, stems and roots support their functions in gas exchange, and water and nutrient transport"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Plant production / Plant growth and production / Identify the abiotic factors that affect the growth of plants, including light, atmospheric gases, soil type, the available moisture and nutrients, temperature and wind"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe the purposes of genetic selection in plants, including disease resistance, drought resilience, increased yield and enhanced quality"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Plant production / Plant growth and production / Compare the phases of growth in a monocotyledon and a dicotyledon used in commercial agricultural production"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain the use of a technology designed to monitor plant growth"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Plant production / Plant growth and production / Use the summary equation to describe the process of photosynthesis"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Plant production / Plant growth and production / Use the summary equation to describe the process of cellular respiration"
+  },
+  {
+   "code": "PRE-M2-T1-D11",
+   "path": "Year 11 / Plant production / Plant growth and production / Evaluate the impact of genetics on plant production in an agricultural enterprise"
+  },
+  {
+   "code": "PRE-M2-T1-D12",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain how Aboriginal and Torres Strait Islander Peoples influence plant genetics through fire management, and seed selection and dispersal"
+  },
+  {
+   "code": "PRE-M2-T1-D13",
+   "path": "Year 11 / Plant production / Plant growth and production / Conduct a practical investigation to demonstrate how different treatments affect plant growth"
+  },
+  {
+   "code": "PRE-M2-T1-D14",
+   "path": "Year 11 / Plant production / Plant growth and production / Identify a pest and a disease found in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D15",
+   "path": "Year 11 / Plant production / Plant growth and production / Describe the symbiotic relationships between plant roots and soil microbes, including bacteria and fungi"
+  },
+  {
+   "code": "PRE-M2-T1-D16",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain the role of soil microbes and invertebrates in breaking down soil organic matter"
+  },
+  {
+   "code": "PRE-M2-T1-D17",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain the role of biosecurity in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D18",
+   "path": "Year 11 / Plant production / Plant growth and production / Explain on-farm practices used to manage biosecurity risks in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D19",
+   "path": "Year 11 / Plant production / Plant growth and production / Conduct a practical investigation to examine legume root nodules caused by Rhizobium bacteria"
+  },
+  {
+   "code": "PRE-M2-T1-D20",
+   "path": "Year 11 / Plant production / Plant growth and production / Identify locally significant weeds in plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D21",
+   "path": "Year 11 / Plant production / Plant growth and production / Analyse the impact of weed management on plant production"
+  },
+  {
+   "code": "PRE-M2-T1-D22",
+   "path": "Year 11 / Plant production / Plant growth and production / Analyse management and treatment strategies to control a harmful organism in commercial plant production using the disease triangle"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the structure and function of parts in a ruminant digestive system"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the structure and function of parts in a monogastric digestive system"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the function of parts in the reproductive system of a mammalian production animal"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the function of parts in the reproductive system of an avian production animal"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the roles of testosterone, oestrogen and progesterone in animal reproduction"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Animal production / Animal growth and production / Analyse the effect of photoperiod changes on animal reproduction"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe the phases of growth and development of a commercial production animal from conception to maturity"
+  },
+  {
+   "code": "PRE-M3-T1-D8",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe how Aboriginal and Torres Strait Islander Peoples use and manage animals, including as totems and through Cultural burns"
+  },
+  {
+   "code": "PRE-M3-T1-D9",
+   "path": "Year 11 / Animal production / Animal growth and production / Describe patterns of inheritance, including dominant, recessive, codominance and incomplete dominance, in the traits of commercial production animals"
+  },
+  {
+   "code": "PRE-M3-T1-D10",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain genotype and phenotype"
+  },
+  {
+   "code": "PRE-M3-T1-D11",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain how the proportions of bone, muscle and fat change at various stages of development in a production animal"
+  },
+  {
+   "code": "PRE-M3-T1-D12",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the interaction of genotype, environment and nutrition on the growth and development of production animals"
+  },
+  {
+   "code": "PRE-M3-T1-D13",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the use of a technology designed to monitor growth in production animals"
+  },
+  {
+   "code": "PRE-M3-T1-D14",
+   "path": "Year 11 / Animal production / Animal growth and production / Evaluate the impact of genetics on animal production in an agricultural enterprise"
+  },
+  {
+   "code": "PRE-M3-T1-D15",
+   "path": "Year 11 / Animal production / Animal growth and production / Identify a pest and a disease found in animal production"
+  },
+  {
+   "code": "PRE-M3-T1-D16",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the symbiotic relationship between ruminant animals and rumen microbes"
+  },
+  {
+   "code": "PRE-M3-T1-D17",
+   "path": "Year 11 / Animal production / Animal growth and production / Use the disease triangle to analyse management and treatment strategies for controlling a harmful organism in commercial animal production"
+  },
+  {
+   "code": "PRE-M3-T1-D18",
+   "path": "Year 11 / Animal production / Animal growth and production / Explain the impact of toxic weeds on animal production"
+  },
+  {
+   "code": "PRE-M3-T1-D19",
+   "path": "Year 11 / Animal production / Animal growth and production / Analyse on-farm practices used to manage biosecurity risks in animal production"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Animal production / Animal management / Explain legislation and regulations for ethical animal care and management practices, including providing water, feed, shelter, adequate space, socialisation and a safe environment"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Animal production / Animal management / Describe the physical and behavioural characteristics of production animals that can assist with safe management, including herding instinct, and maternal and territorial behaviours"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Animal production / Animal management / Explain how a technology has improved animal welfare outcomes"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Identify the micronutrients essential for plant growth"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Identify available and unavailable forms of essential macronutrients for plants in the soil and atmosphere"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe the effect of soil pH on the availability of aluminium (Al), nitrogen (N), calcium (Ca), potassium (K), and phosphorous (P)"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain how Aboriginal and Torres Strait Islander Peoples manage soil nutrient status through firestick farming and cool burning"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain the processes of self-pollination, cross-pollination and artificial pollination, and their impacts on agricultural production"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe quality characteristics of a plant product for human use"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain the process of flower fertilisation and impact on seed production and fruit set"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Compare the features of native and introduced pastures used in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Assess strategies for sustainable pasture management to support animal production"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Evaluate influences on crop establishment, including seed selection, seed spacing, planting depth, soil moisture content, soil temperature, time of year, seasonal conditions, presence of pests and previous crop waste material"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Conduct a practical investigation to measure feed on offer"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe techniques to manipulate reproduction efficiency in animals"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Describe quality characteristics of an animal product for human use"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain how the nutritional needs of a production animal change over its life cycle"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain a method of genetic selection to improve productivity"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Explain how estimated breeding values (EBVs) inform management decisions about desirable traits in animals used for commercial food or fibre production"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Justify a selection decision for desirable traits using EBV data of 2 or more animals"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Commercial food and fibre production / Production systems / Evaluate management strategies to support animal welfare during periods of drought, including early culling, management of drinking water supply and confinement feeding"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe constraints on plant and animal production, including genotype, climate, water availability, pests and diseases"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe objective measurement techniques used to evaluate the existing quality criteria of a food product and a fibre product"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe the physical changes of an agricultural plant and animal in response to a pest or disease"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain agricultural management practices that influence soil health"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Analyse an integrated pest and disease management (IPDM) plan for a pest or disease in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Evaluate the use of a seasonal outlook technology"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Evaluate the impact of management decisions on the quality and yield of an agricultural product"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe the carbon cycle in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain the role of carbon sequestration and emissions reduction in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe the nitrogen cycle in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Describe waste management strategies in plant and animal production"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Analyse the influences of environmental factors that determine the available growing season, including frost-free days, maximum and minimum daily temperatures, seasonal photoperiod, and annual and monthly rainfall distribution"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Evaluate ways to mitigate the constraints of climatic conditions, including protected cropping and intensive animal production"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Assess the use of a technology designed to monitor water use in irrigated agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain economic sustainability in agricultural production"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Calculate the gross margin budget for an unprocessed food product"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Calculate the gross margin budget for an unprocessed fibre product"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain supplementary sources of income, including agritourism, water trading and land leasing for energy projects"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Explain precision agriculture techniques"
+  },
+  {
+   "code": "HSC-M1-T2-D20",
+   "path": "Year 12 / Commercial food and fibre production / Ethical and sustainable production / Analyse the impact of a farm’s natural capital on cost savings, income generation, risk management and access to government incentives"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Identify the contribution of agricultural production to Australia’s export earnings"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Identify major agricultural export competitors for beef, grain and horticultural produce"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain Australia’s counter-seasonal agricultural production timelines"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the purposes of Australia’s traceability system, including to establish ownership, and for disease mitigation and food safety"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Use captured traceability data to analyse feedback provided to Australian producers"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Analyse the advantages and disadvantages of constraints on the development and use of genetically modified organisms (GMOs) in Australian agricultural production"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Analyse how consumer preferences influence the development of market specifications for agricultural products"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Identify risks to Australian agriculture, including biosecurity, energy and fertiliser supply and climate change"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Describe the influence of supply and demand on commercial agricultural enterprises"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the market specification for a plant product and an animal product for an export market"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the impact of product perishability, seasonal climatic conditions and production timeframes on supply and demand"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Describe methods to reduce the methane (CH4), carbon dioxide (CO2) and nitrous oxide (N2O) emissions of Australian agricultural enterprises"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Describe the role of research on emissions mitigation for Australian agricultural enterprises"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the impact of policies on agricultural enterprises and production"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain the impact of trade tariffs on agricultural production"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Compare domestic and export market options for a food product and a fibre product"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Explain Australian traceability requirements for cold chain management"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Industry opportunities / Evaluate the impact of severe weather events on Australian agricultural exports"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Describe the role of government agencies and research organisations in research and innovation for food and fibre producers"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Explain how biofuels reduce use of fossil fuels on farm"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Explain the role of carbon trading and biodiversity trading for Australian farmers"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Analyse the role of agricultural technology (Agtech) innovation and adoption in Australian agriculture"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Evaluate the role of technology in risk mitigation in agricultural production"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Opportunities and challenges for Australian agriculture / Challenges and responses / Evaluate the impact of research on the efficiency of agricultural production"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Plan, conduct and report on a practical investigation to demonstrate the effect of a crop establishment factor on plant growth"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Identify potential hazards and develop a risk mitigation plan"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Assess ethical issues in a practical investigation"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Justify the use of sample size, randomisation, replication, variables and experimental controls in a practical investigation"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Calculate the mean and standard deviation of firsthand data"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Use mean and standard deviation values to determine the validity and reliability of data"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Identify patterns and trends in the data"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Agricultural research / Data analysis and communication / Select and use a range of media to communicate findings"
+  }
+ ],
+ "questions": [
+  {
+   "id": "2020hsc01",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows a carbon cycle and the mass of carbon, in gigatonnes, in each component. carbon cyc le Based on the diagram, which of the following shows carbon sinks in decreasing order of mass?\nSoil, surface ocean, vegetation, sediment\nVegetation, surface ocean, soil, deep ocean\nSediment, soil, deep ocean, fossil fuel and cement\nDeep ocean, fossil fuel and cement, vegetation, soil"
+  },
+  {
+   "id": "2020hsc02",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following features of soil cannot be changed by management practices?\nWater-holding capacity\nNutrient status\nStructure\nTexture"
+  },
+  {
+   "id": "2020hsc03",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A soil has a measured pH of 5.1. Which treatment would be the most effective in making this soil more productive?\nDeep rip the soil to at least 40 cm.\nSpread lime onto the soil and incorporate it into the soil.\nAdd organic matter to the soil by incorporating a green manure crop.\nAdd gypsum to the soil and allow the gypsum to incorporate naturally over time."
+  },
+  {
+   "id": "2020hsc04",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "When undertaking an animal husbandry practice on a farm, there are many factors to consider in order to reduce any negative impact on the welfare of the animal. Which of the following is NOT one of these factors?\nSkill of the operator\nTiming of the animal practice\nCost of carrying out the practice\nUse of the appropriate equipment"
+  },
+  {
+   "id": "2020hsc05",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Why does the use of artificial insemination lead to increased genetic gain in a livestock enterprise?\nThe males used are usually superior to other males.\nIt is a more reliable method of producing a pregnancy.\nMore young can be produced than through conventional breeding.\nOnly a few males will contribute genetically to the next generation."
+  },
+  {
+   "id": "2020hsc06",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The following is a description of a marketing strategy. A group of dairy farmers in a district supply their milk to a processing factory. The group of farmers hold shares in the processing factory and make all decisions on marketing. What is the name of this marketing strategy?\nCooperative\nContract selling\nDirect marketing\nVertical integration"
+  },
+  {
+   "id": "2020hsc07",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following determines net assimilation rate?\nRespiration minus water uptake\nPhotosynthesis minus respiration\nNutrient uptake minus photosynthesis\nWater uptake minus evapotranspiration"
+  },
+  {
+   "id": "2020hsc08",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The graph shows the relationship between planting density for a grain crop, the income from sales of the crop in $/ha and the associated costs of its production in $/ha. Amount ($/ha) Q R S T Planting density Key Income from sales Cost of production Which of the following is the best planting density to maximise the profit from this crop?\nQ\nR\nS\nT"
+  },
+  {
+   "id": "2020hsc09",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Nutrition can influence the reproductive performance of an animal. Which of the following is NOT affected by nutrition?\nSeason in which the animal mates\nProduction of ova and spermatozoa\nMaintenance and growth of the foetus\nAge at which the animal reaches puberty"
+  },
+  {
+   "id": "2020hsc10",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Why would a producer include native species in their pasture mix?\nTo comply with government legislation\nTo provide refuge and feed for native animals\nTo provide the animals with a greater variation in their diet\nTo remain productive at times of adverse conditions for introduced species"
+  },
+  {
+   "id": "2020hsc11",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Soil microorganisms have various roles in the soil. In which of the following are three of these roles listed?\nBuild humus, lock up nutrients, improve soil texture\nBreak down humus, create soil structure, promote plant growth\nBuild organic matter, leach nutrients, glue soil minerals together\nReturn nutrients to mineral form, break down organic matter, fix nitrogen"
+  },
+  {
+   "id": "2020hsc12",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following best describes integrated pest management (IPM)?\nIt uses intensive monitoring of pest populations to identify the best time and method of chemical control.\nIt is a way of controlling pests using certified organic methods and products to completely avoid using harmful synthetic pesticides.\nIt uses a combination of practices and control methods with the aim of preventing problems from occurring and reducing the need for pesticide-intensive activities.\nIt is a strategy used to prevent the build-up of pesticide resistance in pest populations, by rotating through chemical groups with different modes of action."
+  },
+  {
+   "id": "2020hsc13",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Why would a farmer undertake line breeding for ten consecutive years in their livestock production system?\nTo breed a herd with increased heterosis\nTo improve hybrid vigour in progeny for sale\nTo produce sires which target different markets\nTo develop genetically consistent breeding females"
+  },
+  {
+   "id": "2020hsc14",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows labelled organs in ruminant and monogastric digestive systems. di ge st iv e system of a cow Monogastric digestive system K L M Which row of the table shows organs within the two digestive systems which have a similar function and organs which have a different function?\nOption A\nOption B\nOption C\nSimilar function Different function G and K I and M G and K H and L F and K I and M F and K H and L"
+  },
+  {
+   "id": "2020hsc15",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "For ruminant animals, there are many steps involved in the digestion of gross energy in food until it is converted into production energy for harvesting as an animal product. Which of the following identifies ONLY the losses of energy during this process?\nFaeces, digestible energy, methane, urine\nFaeces, body heat, methane, net energy\nFaeces, body heat, maintenance energy, urine\nBody heat, metabolisable energy, methane, urine Refer to the following diagram to answer Questions 16 and 17. A student performed a trial to determine the effect of the wavelength (colour) of light on plant yield. The diagram depicts the trial set up on a laboratory bench in the student’s classroom. diag ram of a laboratory b ench • All pots are the same, filled with the same soil and containing a lettuce plant at the five-leaf stage. • Pots sit in identical trays and are lit by a coloured LED bulb of the same light intensity, in one of the three colours shown, suspended at the same height. • The trial was conducted for two weeks and during that period water was added to each tray. Each tray received the same amount of water at the same time."
+  },
+  {
+   "id": "2020hsc16",
+   "year": 2020,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What element of experimental design has the student correctly applied?\nControl\nRandomisation\nReplication\nStandardisation"
+  },
+  {
+   "id": "2020hsc17",
+   "year": 2020,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What would be the most valid measurement for the student to take at the conclusion of the trial?\nLeaf colour\nPlant height\nLeaf number\nPlant dry weight"
+  },
+  {
+   "id": "2020hsc18",
+   "year": 2020,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A farmer has a 100-ha enterprise consisting only of oats. A list of diary entries for the enterprise is shown. Costs • Sowing $8 100 • Chemical application $4 500 • Harvesting $5 000 • Local land services rates $2 500 Income • Oats (grain) $30 800 • Oaten stubble $12 000 • Share dividends $8 800 What is the gross margin ($/ha) for the enterprise?\n$227.00\n$252.00\n$315.00\n$340.00"
+  },
+  {
+   "id": "2020hsc19",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "An animal producer has a direct market contract with a major retail chain. When selling a group of animals, the producer can maximise returns if all the animals in the group are heavy and consistent in weight. A feed company conducted a trial to determine the effect of several feed supplements on the growth of the animal species. The results are summarised in the table below. Supplement Mean weight (kg) Standard deviation W 40 3.5 X 44 4.4 Y 46 3.7 Z 47 5.0 Based on these results, which would be the best supplement for the producer to use to maximise returns?\nW\nX\nY\nZ"
+  },
+  {
+   "id": "2020hsc20",
+   "year": 2020,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The graph shows the supply and demand information for a fresh horticultural product. graph Which of the following is the most likely cause of the change depicted in the graph?\nA contaminant was found in the product.\nA natural disaster destroyed much of the national crop.\nProduct from an overseas producer flooded the local market.\nRecent research studies indicated significant health benefits from consumption of the product. BLANK PAGE BLANK PAGE © 2020 NSW Education Standards Authority Do NOT write in this area. 2020  HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Agriculture Section I Part B Answer Booklet Student Number 60 marks Attempt Questions 21–27 Allow about 1 hour and 45 minutes for this part Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. 6741310293 1001 15010"
+  },
+  {
+   "id": "2020hsc21",
+   "year": 2020,
+   "number": "21",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(c) with reference to a soil degradation problem you have studied. Name of problem: (a) Outline the named problem. 2 (b) Explain how a land use practice has led to this problem. 3 D (c) Explain how a sustainable management practice can alleviate this problem. 4 0730310295 o NOT write in this area."
+  },
+  {
+   "id": "2020hsc22",
+   "year": 2020,
+   "number": "22",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe a marketing chain for an agricultural product that you have studied. 3 (b) Describe TWO ways in which government can influence the production of agricultural products in Australia. In your answer, include specific examples. 4 8668310293"
+  },
+  {
+   "id": "2020hsc23",
+   "year": 2020,
+   "number": "23",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(b) with reference to a named plant pest or disease and a plant it affects. Name of pest or disease: Plant affected: (a) Describe the effect that the pest or disease has on the plant. 3 (b) Explain how a producer can manage both the plant and the environment to reduce or eliminate the impact of the pest or disease. 5 5654310295"
+  },
+  {
+   "id": "2020hsc24",
+   "year": 2020,
+   "number": "24",
+   "marks": 13,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(c) with reference to a product you have studied. Name of product: (a) Describe a way of value adding to the product at some stage in the marketing chain. 3 (b) Explain how farm management decisions can be influenced by the assessment of the quality of the product. Use specific examples linked to stated quality criteria. 4 Question 24 continues on page 18 8839310293 Question 24 (continued) (c) Assess an advertising or promotional campaign for the product. 6 End of Question 24 2984310298"
+  },
+  {
+   "id": "2020hsc25",
+   "year": 2020,
+   "number": "25",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Outline a process which occurs in the rumen. 2 (b) Feed rations for an animal vary depending on the stage of the animal’s production cycle. Explain the variation in feed rations for a specific animal. Support your answer with reference to specific examples of dietary requirements throughout the production cycle. 6 1918310294"
+  },
+  {
+   "id": "2020hsc26",
+   "year": 2020,
+   "number": "26",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) The diagram shows the contribution by selected industry sectors to Australia’s Gross Domestic Product (GDP), 1900–2017. 2 graph Based on the diagram, outline the changes in the Agriculture sector’s contribution to the GDP, relative to other sectors. (b) Contrast the business structure of the family farm to that of the corporate enterprise. 3 7407310293 Approved under CC by 4.0 AU Licence - Acknowledgement: Dept of Foreign Affairs and Trade website - www.dfat.gov.au 4957310290"
+  },
+  {
+   "id": "2020hsc27",
+   "year": 2020,
+   "number": "27",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Fill in the four cells to complete the table on plant and animal hormones. 4 Hormone name One effect of the hormone Auxin Plant hormone Triggers stomatal closure Stimulates release of an ova from ovary Animal hormone (ovulation) Oestrogen (b) Discuss embryo transfer in terms of both hormonal treatment and economic factors. 6 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 4792310297 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 5461310291 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. © 2020 NSW Education Standards Authority 9410310299 2020 HIGHER SCHOOL CERTIFICATE EXAMINATION Agriculture Section II 20 marks Attempt ONE question from Questions 28–30 Allow about 45 minutes for this section Answer the question in the Section II Writing Booklet. Extra writing booklets are available. Your answers will be assessed on how well you: ● demonstrate knowledge and understanding relevant to the question ● communicate ideas and information using relevant examples ● present a logical and cohesive response"
+  },
+  {
+   "id": "2020hsc28",
+   "year": 2020,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Agri-food, Fibre and Fuel Technologies (20 marks) Answer part (a) of the question on pages 2–4 of the Writing Booklet. (a) (i) Define the term genetic engineering, including an example. 2 (ii) Explain the use of gene markers in agricultural production. 6 Answer part (b) of the question on pages 5–8 of the Writing Booklet. (b) Analyse the conflict between ethical concerns and increasing agricultural production in relation to ONE biotechnology innovation. 12 OR Please turn over 1002"
+  },
+  {
+   "id": "2020hsc29",
+   "year": 2020,
+   "number": "29",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Climate Challenge (20 marks) Answer part (a) of the question on pages 2–4 of the Writing Booklet. (a) (i) What is the Southern Oscillation Index? 2 (ii) The diagram shows the monthly Southern Oscillation Index (SOI) 2009–2016. 6 Southern Oscillation Index (SOI) 2009 –4 –3 –2 –1 0 10 20 30 2010 2011 2012 2013 2014 2015 2016 SOI Year Five-month weighted mean SOI KEY With reference to the diagram, describe the trend of El Niño events and the implications of these events for Australian agriculture. Answer part (b) of the question on pages 5–8 of the Writing Booklet. (b) Analyse issues related to water storage and water trading in Australian agriculture. 12 OR"
+  },
+  {
+   "id": "2020hsc30",
+   "year": 2020,
+   "number": "30",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Farming for the 21st Century (20 marks) Answer part (a) of the question on pages 2–4 of the Writing Booklet. (a) (i) Outline a funding source available for the research and development of new agricultural technologies. 2 (ii) Discuss patents in relation to research and development of agricultural technologies. 6 Answer part (b) of the question on pages 5–8 of the Writing Booklet. (b) Evaluate the impact of ONE technological development in the agricultural industry in terms of both economic and social factors. 12 End of paper BLANK PAGE © 2020 NSW Education Standards Authority"
+  },
+  {
+   "id": "2021hsc01",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Part of a label on an insecticide container is shown. Crop Insect State Application rate (L/ha) Cotton Helicoverpa NSW, QLD\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2021hsc02",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "QLD 2.5 Leafhoppers All states 2.5 What is the correct application rate for this insecticide to target aphids on field peas in New South Wales?\n2 L/ha\n2.5 L/ha\n2.8 L/ha\n3 L/ha"
+  },
+  {
+   "id": "2021hsc03",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "1.5 4.8 4.4 What is the mean dry matter yield per plant for the recommended density?\n1.53 g\n4.6 g\n4.8 g\n13.8 g"
+  },
+  {
+   "id": "2021hsc04",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A producer sells their product at a farm gate stall. Which of the following strategies is the producer using?\nContract selling\nDirect marketing\nVertical integration\nCooperative marketing"
+  },
+  {
+   "id": "2021hsc05",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A student assesses the size, shape and arrangement of soil peds in a sample. What characteristic of the soil is being assessed?\nTexture\nPorosity\nStructure\nBulk density"
+  },
+  {
+   "id": "2021hsc06",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The development phases of a plant are shown. D e v e lopment phases Q, R, S and T Which is the vegetative phase of growth in this representation?\nQ\nR\nS\nT"
+  },
+  {
+   "id": "2021hsc07",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following equations represents photosynthesis? chlorophyll\nOxygen + water glucose + carbon dioxide sunlight chlorophyll\nOxygen + glucose carbon dioxide + water sunlight chlorophyll\nCarbon dioxide + water glucose + oxygen sunlight chlorophyll\nCarbon dioxide + glucose oxygen + water sunlight"
+  },
+  {
+   "id": "2021hsc08",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Some types of plants establish a relationship with particular micro-organisms to form root nodules that provide the plant with a nutrient. Which row of the table correctly connects the type of plant, micro-organism and the associated nutrient in this process?\nOption A\nOption B\nOption C\nType of plant Micro-organism Associated nutrient Cereal Rhyzome P Legume Rhyzome P Cereal Rhyzobium N Legume Rhyzobium N"
+  },
+  {
+   "id": "2021hsc09",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which soil characteristic is NOT influenced by the level of organic matter in the soil?\npH\nTexture\nStructure\nIon exchange capacity"
+  },
+  {
+   "id": "2021hsc10",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The graph shows a typical growth curve for an animal. Graph showing typical curv e What is the best type of diet to feed an animal at age X in its growth?\nOption A\nOption B\nOption C\nHigh protein Low energy High protein High energy Low protein Low energy Low protein High energy"
+  },
+  {
+   "id": "2021hsc11",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "There are several techniques available for farmers to manipulate reproduction in farm animals. Which of the following would have the least impact on an animal’s welfare?\nFlushing\nEmbryo transfer\nArtificial insemination\nOestrus synchronisation Use the following information to answer Questions 12–14. A student conducted a trial to determine the effect of planting density on the yield of radishes. Nine identical pots were set up using the same potting mix. Radish seedlings from one tray were planted into the pots using three different densities: low, recommended and high. The pots were placed in the school glasshouse as shown, under automated misters. Diagram showing pots in glassho use After six weeks the radishes were harvested and the dry matter yield of each treatment was measured and recorded."
+  },
+  {
+   "id": "2021hsc12",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which element is the control in this experimental design?\nThe use of three identical pots per treatment\nThe arrangement of pots, as depicted in the diagram\nThe inclusion of the recommended density as one of the treatments\nThe placement of identical pots in a glasshouse with equal water application"
+  },
+  {
+   "id": "2021hsc13",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following would be the best format to graphically represent the results of this trial? Multiple choice graphs\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2021hsc14",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The table shows the dry matter yield (dm) following the six-week trial. Pot number Low density (g dm/pot) Recommended density (g dm/pot) High density (g dm/pot)\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2021hsc15",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which external influence on agricultural production is enforceable by law?\nLegislation\nCode of practice\nCode of conduct\nIndustry standard"
+  },
+  {
+   "id": "2021hsc16",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The breeding system for a plant improvement program is shown. Variety A × Variety B Plants showing superior traits are chosen then inbred This process is repeated for 6 more generations What is the name of this breeding system?\nLine breeding\nCrossbreeding\nHybrid breeding\nSelective breeding"
+  },
+  {
+   "id": "2021hsc17",
+   "year": 2021,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which combination of conditions is ideal to promote microbial fermentation in the rumen of an animal?\nSlightly basic and aerobic\nSlightly acidic and aerobic\nSlightly basic and anaerobic\nSlightly acidic and anaerobic"
+  },
+  {
+   "id": "2021hsc18",
+   "year": 2021,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A farmer grew a crop of cabbages at four different densities to determine the best density for the crop. The results of the trial are shown. Plant density (plants/m2) Input costs ($/m2) Value of harvested plants ($/plant)\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2021hsc19",
+   "year": 2021,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Variations in hormone levels for an animal are shown. G raph sh owing hormon e levels What is occurring at point X?\nBirth\nFertilisation\nLactation\nOvulation"
+  },
+  {
+   "id": "2021hsc20",
+   "year": 2021,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows a nitrogen cycle, with four of the components labelled W, X, Y and Z. D iagram showing ni t r oge n cycle Which row of the table correctly names components W, X, Y and Z ?\nOption A\nOption B\nOption C\nW X Y Z Denitrification Nitrite Nitrate Nitrification Denitrification Nitrate Nitrite Nitrification Nitrification Nitrite Nitrate Denitrification Nitrification Nitrate Nitrite Denitrification BLANK PAGE © 2021 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2021 HIGHER SCHOOL CERTIFICATE EXAMINATION Agriculture Section I Part B Answer Booklet 60 marks Attempt Questions 21–27 Allow about 1 hour and 45 minutes for this part Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Centre Number Student Number 6741310293 2001 15010 Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 0730310295"
+  },
+  {
+   "id": "2021hsc21",
+   "year": 2021,
+   "number": "21",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Outline how ONE management practice has contributed to a soil degradation problem. 2 (b) Explain how ONE procedure alleviates a soil degradation problem and ensures the long-term sustainability of the soil. 4 8668310293"
+  },
+  {
+   "id": "2021hsc22",
+   "year": 2021,
+   "number": "22",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe the roles of both grasses and non-grasses in a pasture mix. 4 (b) Discuss the use of native plant species in grazing systems. 4 5654310295"
+  },
+  {
+   "id": "2021hsc23",
+   "year": 2021,
+   "number": "23",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Complete this table in relation to livestock breeding systems. 4 Line breeding Crossbreeding Features of the breeding system Animals of different lines or breeds are bred together. Each line or breed has desirable characteristics. Outcome of the breeding system and its industry use Offspring are uniform in appearance and are similar to the parents as well. This is widely used in the stud breeding industry. Question 23 continues on page 17 8839310293 Question 23 (continued) (b) Describe the role of objective measurement in a livestock breeding system in relation to one specific industry. 4 End of Question 23 2984310298"
+  },
+  {
+   "id": "2021hsc24",
+   "year": 2021,
+   "number": "24",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(b) with reference to a product you have studied. Name of product: (a) Outline steps in the processing of this product from its raw state into a different form. 3 (b) Explain the concept of value adding, using a specific example for this product. 5 1918310294"
+  },
+  {
+   "id": "2021hsc25",
+   "year": 2021,
+   "number": "25",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Why are market specifications important in the marketing of a product? 3 (b) Explain strategies a producer can use to meet ONE specific market specification for a product. Name of product: 6 7407310293"
+  },
+  {
+   "id": "2021hsc26",
+   "year": 2021,
+   "number": "26",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(c) with reference to ONE animal pest/disease that you have studied in relation to an integrated pest management (IPM) program. Name of the animal pest/disease: (a) Outline the signs or symptoms of this animal pest/disease. 2 (b) Explain why this animal pest/disease is significant to the industry. 3 Question 26 continues on page 21 4957310290 Question 26 (continued) (c) Evaluate an integrated pest management (IPM) program for the identified animal pest/disease. 6 End of Question 26 4792310297"
+  },
+  {
+   "id": "2021hsc27",
+   "year": 2021,
+   "number": "27",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Outline how a farmer’s decisions are affected by both the irregular nature of their income and the necessity for high expenditure on inputs. 4 (b) Discuss the use of gross margins in on-farm financial planning. 6 5461310291 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 9410310299 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. © 2021 NSW Education Standards Authority 2021 HIGHER SCHOOL CERTIFICATE EXAMINATION 2002X Agriculture Section II 20 marks Attempt ONE question from Questions 28–30 Allow about 45 minutes for this section Answer the question in the Section II Writing Booklet. Extra writing booklets are available. Your answers will be assessed on how well you: ● demonstrate knowledge and understanding relevant to the question ● communicate ideas and information using relevant examples ● present a logical and cohesive response"
+  },
+  {
+   "id": "2021hsc28",
+   "year": 2021,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Agri-food, Fibre and Fuel Technologies (20 marks) Answer part (a) of the question on pages 2–4 of the Writing Booklet. (a) In this elective you analysed a research study of the development and/or implementation of one agricultural biotechnology. (i) Outline the purpose of the research study that you analysed. 3 (ii) Describe the conclusions and recommendations of this research study. 5 Answer part (b) of the question on pages 5–8 of the Writing Booklet. (b) Discuss biofuel production in relation to world food demands and the efficient use of carbon. 12 OR Please turn over"
+  },
+  {
+   "id": "2021hsc29",
+   "year": 2021,
+   "number": "29",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Climate Challenge (20 marks) Answer part (a) of the question on pages 2–4 of the Writing Booklet. (a) In this elective you analysed a research study of climate variability or management strategies related to climate variability. (i) Outline the purpose of the research study that you analysed. 3 (ii) Describe the conclusions and recommendations of this research study. 5 Answer part (b) of the question on pages 5–8 of the Writing Booklet. (b) Explain how ruminant livestock produce greenhouse gases and how these emissions could be reduced. 12 OR"
+  },
+  {
+   "id": "2021hsc30",
+   "year": 2021,
+   "number": "30",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Farming for the 21st Century (20 marks) Answer part (a) of the question on pages 2–4 of the Writing Booklet. (a) In this elective you analysed a research study of the development and/or implementation of one recent agricultural technology. (i) Outline the purpose of the research study that you analysed. 3 (ii) Describe the conclusions and recommendations of this research study. 5 Answer part (b) of the question on pages 5–8 of the Writing Booklet. (b) Discuss developments in both robotics and biotechnology. Support your answer with current agricultural examples. 12 End of paper © 2021 NSW Education Standards Authority"
+  },
+  {
+   "id": "2022hsc01",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows a seedling germinating in a paddock. Seedling germinating diagram What type of plant is this?\nLegume\nBroad leaf\nDicotyledon\nMonocotyledon"
+  },
+  {
+   "id": "2022hsc02",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Inorganic fertiliser Improves fertility while reducing the incidence of acidification\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2022hsc03",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following shows the correct order of the marketing chain?\nProducer wholesaler retailer consumer\nProducer retailer wholesaler consumer\nConsumer retailer wholesaler producer\nConsumer wholesaler retailer producer"
+  },
+  {
+   "id": "2022hsc04",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Crop rotation Allows soil nutrients to replenish between crops Which of the following shows the rows in the table where the student correctly matched a soil management technique with a corresponding advantage in improving soil fertility?\nRows 1 and 3\nRows 1 and 4\nRows 2 and 3\nRows 2 and 4"
+  },
+  {
+   "id": "2022hsc05",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What type of marketing strategy involves a single owner controlling numerous parts of the marketing chain?\nContract selling\nDirect marketing\nVertical integration\nCooperative marketing"
+  },
+  {
+   "id": "2022hsc06",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is a primary goal of an integrated pest management (IPM) program?\nTo save the farmer input costs\nTo minimise chemical resistance\nTo ensure the success of biological control\nTo reduce loss of efficacy of a genetic control"
+  },
+  {
+   "id": "2022hsc07",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is used in the calculation of a gross margin (GM)?\nGM = profit – fixed costs\nGM = profit – variable costs\nGM = income – fixed costs\nGM = income – variable costs"
+  },
+  {
+   "id": "2022hsc08",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A student is conducting a test on soil and is using universal indicator and barium sulphate. For what soil characteristic is the student most likely to be testing?\npH\nTexture\nPorosity\nOrganic matter"
+  },
+  {
+   "id": "2022hsc09",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "In which of the following do all items demonstrate value adding?\nSausages, whole chicken, grass-fed beef\nRump steak, chicken stir fry, pig carcase\nMarinated steak, lamb carcase, chicken mince\nCrumbed steak, chicken kebabs, vacuum-sealed beef"
+  },
+  {
+   "id": "2022hsc10",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is most likely to improve soil structure and break disease cycles in a cropping system?\nPasture ley\nRiparian zone\nGrassed waterway\nNutrient budgeting"
+  },
+  {
+   "id": "2022hsc11",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is an example of a government influencing agricultural production?\nA farmer marketing through a cooperative\nA farmer being prosecuted for the ill-treatment of animals\nA farmer being levied for research related to their product\nA farmer contributing to the funding of advertising by an industry group Refer to the following to answer Questions 12–13. Students were asked to design and conduct a trial to determine the effect of shade on plant growth. They set up a trial in a treatment area, growing pots of radishes under the following three shade conditions: • sheer black cloth cover • sheer white cloth cover • no cloth cover."
+  },
+  {
+   "id": "2022hsc12",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What could the students have done to provide replication?\nGrow some pots in full sun\nPlace at least three pots under each shade condition\nArrange the treatment pots ‘by chance’ in the treatment area\nGrow all the pots in the treatment area under the same conditions of water and temperature"
+  },
+  {
+   "id": "2022hsc13",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The students graphed the mean weight of radish roots in grams of dry matter (g dm), with respect to shade condition. Radish root mean weight grap h How can the graph be improved?\nChange the scale on each axis\nPlot the results as a column graph\nSwap the horizontal and vertical axes\nInclude the correct units of measurement"
+  },
+  {
+   "id": "2022hsc14",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "25 40 Using the data provided, what is the daily ME (MJ/day) requirement of a 400 kg dairy cow in the 6th month of pregnancy, producing milk with 3.4% fat and 3.4% protein?\n58 MJ/day\n63 MJ/day\n108 MJ/day\n183 MJ/day BLANK PAGE BLANK PAGE BLANK PAGE © 2022 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2022 HIGHER SCHOOL CERTIFICATE EXAMINATION Centre Number Student Number 6741310293 2001 60 marks Attempt Questions 21–27 Allow about 1 hour and 45 minutes for this part Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Agriculture Section I Part B Answer Booklet 15010 Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 0730310295"
+  },
+  {
+   "id": "2022hsc15",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A student created a table to show four soil management techniques and an advantage for each in improving soil fertility. Row Technique Advantage\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2022hsc16",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What type of hormone could be injected into a plant to allow for larger fruit?\nAuxin\nCytokinin\nEthylene\nGibberellin"
+  },
+  {
+   "id": "2022hsc17",
+   "year": 2022,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "When analysing experimental results, standard deviation is a measure of the\nsignificance of the results.\nprobability of the results being correct.\nspread of the results in relation to the mean.\ndifference between the highest and lowest results."
+  },
+  {
+   "id": "2022hsc18",
+   "year": 2022,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The following is a partially completed diagram showing the fate of energy in animal digestion. Fate of ener gy in animal d i g e stion diag ram Which row of the table correctly identifies the labelled components of the diagram?\nOption A\nOption B\nOption C\nW X Y Urine Heat Digestible Metabolisable Digestible Urine Metabolisable Heat Digestible Metabolisable Urine Heat Urine Digestible Heat Metabolisable Z"
+  },
+  {
+   "id": "2022hsc19",
+   "year": 2022,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A student was required to draw a monogastric digestive system and label the primary sites of digestion using the following key. Q Nutrient absorption X Mechanical digestion Y Chemical digestion Z Microbial digestion Which diagram has been correctly drawn and labelled?\nM o n ogastric digestive system option A diagram\nM o n ogastric digestive system option B diagram\nM o n ogastric digestive system option C diagram\nM o n ogastric digestive system option D diagram"
+  },
+  {
+   "id": "2022hsc20",
+   "year": 2022,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The data on milk production and metabolisable energy (ME) requirements of dairy cattle is shown. G ra ph o f a t y p ical l actation curve of a dair y cow Daily ME maintenance requirements (MJ/day) Live weight ME (kg) (MJ/day) 300 38 400 50 500 64 Daily ME requirement in pregnancy for a 400 kg dairy cow (MJ/day) Month of pregnancy ME (MJ/day)\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2022hsc21",
+   "year": 2022,
+   "number": "21",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe the role of ONE invertebrate in decomposition within the soil. 3 (b) The following diagram depicts part of a nutrient cycle. 4 Nutrient c ycle diagram Identify the process occurring at X and explain how this process contributes to the cycling of the nutrient. 8668310293"
+  },
+  {
+   "id": "2022hsc22",
+   "year": 2022,
+   "number": "22",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe ONE program which involves government and community groups working together to protect environmental resources. 3 (b) The diagram shows the elements of a plant or animal disease. 4 Plant or animal disease ele ments triangle Describe the interactions between these elements in relation to a plant or animal disease. 5654310295"
+  },
+  {
+   "id": "2022hsc23",
+   "year": 2022,
+   "number": "23",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Outline how the physical and behavioural characteristics of a particular animal species can influence how they are managed. 3 (b) Discuss ONE ethical issue that has an impact on an animal production system. 4 8839310293"
+  },
+  {
+   "id": "2022hsc24",
+   "year": 2022,
+   "number": "24",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe the changes in the proportion of muscle, fat and bone during the growth and development of an animal. 4 (b) Describe how environmental factors may affect the fertility of farm animals. 4 2984310298"
+  },
+  {
+   "id": "2022hsc25",
+   "year": 2022,
+   "number": "25",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe how both interest rates and the dynamic nature of markets influence the financial pressures on farmers. 4 (b) Discuss strategies available to farmers to market their farm products. 6 1918310294"
+  },
+  {
+   "id": "2022hsc26",
+   "year": 2022,
+   "number": "26",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain how TWO plant breeding techniques have helped to develop new varieties which have improved aspects of plant production. 6 7407310293"
+  },
+  {
+   "id": "2022hsc27",
+   "year": 2022,
+   "number": "27",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(c) with reference to a product you have studied. Name of product: (a) Outline strategies for the advertising and/or promotion of this product. 3 (b) The supply of and demand for products is affected by various factors. (i) Describe how ONE factor affects the supply of this product. 2 (ii) Describe how ONE factor affects the demand for this product. 2 Question 27 continues on page 21 4957310290 Question 27 (continued) (c) Evaluate management strategies that are used to meet market specifications for this product. End of Question 27 8 4792310297 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 5461310291 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 9410310299 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. © 2022 NSW Education Standards Authority 2022 HIGHER SCHOOL CERTIFICATE EXAMINATION Agriculture 2002 Section II 20 marks Attempt ONE question from Questions 28–30 Allow about 45 minutes for this section Answer the question in the Section II Writing Booklet. Extra writing booklets are available. Your answers will be assessed on how well you: ● demonstrate knowledge and understanding relevant to the question ● communicate ideas and information using relevant examples ● present a logical and cohesive response Please turn over"
+  },
+  {
+   "id": "2022hsc28",
+   "year": 2022,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Agri-food, Fibre and Fuel Technologies (20 marks) (a) (i) Why is there a need for research in the development of agricultural technologies? 4 (ii) With reference to a research study you have analysed, describe aspects of the study’s methodology. 4 (b) Explain how ethical concerns can influence the use of biotechnologies in agricultural production. 12 OR"
+  },
+  {
+   "id": "2022hsc29",
+   "year": 2022,
+   "number": "29",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Climate Challenge (20 marks) (a) (i) Why is there a need for research into climate variability OR into management strategies for climate variability? 4 (ii) With reference to a research study you have analysed, describe aspects of the study’s methodology. 4 (b) Explain how farmers use management techniques to minimise risk and maximise opportunities from climate variability. 12 OR"
+  },
+  {
+   "id": "2022hsc30",
+   "year": 2022,
+   "number": "30",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Farming for the 21st Century (20 marks) (a) (i) Why is there a need for research in the development of agricultural technologies? 4 (ii) With reference to a research study you have analysed, describe aspects of the study’s methodology. 4 (b) Explain how new technological developments may assist agricultural industries. 12 End of paper © 2022 NSW Education Standards Authority"
+  },
+  {
+   "id": "2023hsc01",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following statements is true of traditional Aboriginal land use practices?\nThey all involved burning of vegetation.\nNatural waterways were not manipulated.\nA more diverse range of native plant species evolved as a result.\nThey were more sustainable than early European settlers’ practices."
+  },
+  {
+   "id": "2023hsc02",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The space in soil between mineral particles, which may contain either air or water, is called\ntexture.\nporosity.\nstructure.\nbulk density."
+  },
+  {
+   "id": "2023hsc03",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of these statements describes contract selling?\nA strategy where a farmer sells their product straight to the consumer\nAn organisation that is set up by government for purchasing, marketing and selling a commodity\nAn agreement between a farmer and a buyer to purchase an agreed amount of product of a given quality\nA group of producers who collectively own and control the purchasing, distribution and marketing of their products"
+  },
+  {
+   "id": "2023hsc04",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of these lists contains ONLY measures of product quality?\nThe shape of a banana Fat percentage of milk Protein content of wheat\nWeight of a merino fleece Fat depth of a beef carcase Litres of milk produced by a dairy cow\nThe shape of a banana Length of a wool fibre Litres of milk produced by a dairy cow\nColour of a capsicum Fat depth of a beef carcase Yield per hectare of canola"
+  },
+  {
+   "id": "2023hsc05",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows a plant. Which of the following best describes this plant?\nA grass that is high in energy\nA legume that is low in protein\nA grass that aids soil nitrogen fixation\nA legume that aids soil nitrogen fixation"
+  },
+  {
+   "id": "2023hsc06",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "How should effluent from intensive livestock production be managed sustainably on a farm?\nIt should be collected and stored permanently in a dam.\nIt should be cleared from paddocks, pens and walkways.\nIt should be treated and spread on paddocks as a fertiliser.\nIt should be dried and burnt to reduce the risk of disease spread."
+  },
+  {
+   "id": "2023hsc07",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is the best way to use chemicals to manage pests in a crop?\nSpray the crop at two-weekly intervals\nMonitor the crop and spray as soon as pests are detected\nSpray the crop after every rainfall event to ensure good chemical coverage\nMonitor the crop and spray if crop losses are expected to exceed chemical costs"
+  },
+  {
+   "id": "2023hsc08",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following pairs of environmental constraints is best managed by changing plant variety?\nWind and O /CO ratio\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2023hsc09",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is NOT true about rumen microbes?\nThey produce methane and carbon dioxide as by-products.\nThey are digested in the omasum to release energy for the animal.\nThey use energy released from digested carbohydrates for their own metabolic needs.\nThey ferment carbohydrates to release volatile fatty acids (VFAs) for absorption through the rumen wall."
+  },
+  {
+   "id": "2023hsc10",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which factor should be considered to reduce negative impacts on an animal when husbandry practices are carried out on a farm?\nThe cost of the husbandry practice\nThe consumer preferences for an animal product\nThe skill of the operator carrying out the practice\nThe premium received for undertaking the husbandry practice"
+  },
+  {
+   "id": "2023hsc11",
+   "year": 2023,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A flood has occurred in an area where a vegetable crop is grown. What would be the immediate effect on the market?\nIncreased supply\nDecreased supply\nIncreased demand\nDecreased demand"
+  },
+  {
+   "id": "2023hsc12",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows Broadacre Farm profits 2021–2022. 95 45 Top 25% Average $/ha Bottom 25% 0 25 50 100 75 50 70 38 32 50 35\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2023hsc13",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following contains ONLY organic fertilisers that can be used to improve soil fertility?\nAnimal manure, lucerne mulch, seaweed, worm castings\nAnimal manure, limestone, superphosphate, worm castings\nAmmonium sulfate, lucerne mulch, seaweed, superphosphate\nAmmonium sulfate, animal manure, rock phosphate, seaweed"
+  },
+  {
+   "id": "2023hsc14",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Why are new crop varieties developed for use in Australia?\nTo improve the quality, yield and environmental adaptation\nTo allow farmers to increase their profits by significantly reducing the costs of seed\nTo ensure seed companies can control production by preventing farmers using saved seeds\nTo enable seed companies to remain competitive by continually introducing new crop varieties onto the market"
+  },
+  {
+   "id": "2023hsc15",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The table shows two definitions of animal breeding terms. X The proportion of variation in a population trait that can be attributed to inherited genetic factors The relative worth of an animal to a breeding program with the aim to improve a desired quality Y Which row of the table below correctly identifies X and Y ? X Y\nGenotype Line breeding\nHeritability Line breeding\nGenotype Objective measurement\nHeritability Objective measurement"
+  },
+  {
+   "id": "2023hsc16",
+   "year": 2023,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Why does resistance to agricultural pesticides develop in pest populations?\nSome types of pesticides are not as efficient in killing pests, allowing more pests to survive and reproduce.\nProducers who use the same pesticides all the time enable the pests to survive and reproduce at a greater rate.\nVariations in genes in a pest population allows some pests to survive pesticides and pass these genes onto subsequent generations.\nIncorrect application methods allow some pests to avoid contact with the pesticides, therefore breeding the next resistant generation."
+  },
+  {
+   "id": "2023hsc17",
+   "year": 2023,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The rate of both photosynthesis and respiration in plants increases as the temperature rises. Which set of day and night temperatures would provide the highest net assimilation rate (NAR) for a crop? Day temperature Night temperature\nWarm Cool\nWarm Warm\nCool Warm\nCool Cool Refer to the following to answer Questions 18–19. A trial was conducted to test the effect of fertiliser types on the yield of grains in a crop. Each treatment had 100 samples. The following data was recorded. Fertiliser type Mean tons/ha grain 1.6 4.4 3.2 Standard deviation X 1.5 Y 0.6 Z 0.4"
+  },
+  {
+   "id": "2023hsc18",
+   "year": 2023,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which graph accurately represents this data?\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2023hsc19",
+   "year": 2023,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What could be concluded from this data?\nThe variability of Z is too low to trust the results.\nThe variability of X is too high to trust the results.\nZ is the best fertiliser as standard deviation is lowest.\nX is the best fertiliser as standard deviation is highest."
+  },
+  {
+   "id": "2023hsc20",
+   "year": 2023,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The following graph and tables give information on the feed requirements and growth stages for cattle. 100 Age Liveweight (kg) 200 300 400 500 X Liveweight (kg) Metabolisable energy MJ/kg dry matter per day 100 36 250 44 350 56 450 59 Feed component Metabolisable energy MJ/kg dry matter basis Molasses 6.5 Cottonseed meal 11.9 Barley 10.1 Sorghum 10.8 Which row of the table identifies the ration that would provide the daily energy required for the animal marked as X on the graph? Molasses Cottonseed meal Barley Sorghum\n0.5 kg 1.0 kg 1.0 kg 1.0 kg\n1.0 kg 1.0 kg 3.0 kg 1.0 kg\n1.0 kg 1.0 kg 2.0 kg 0.5 kg\n1.5 kg 0.5 kg 1.0 kg 1.0 kg BLANK PAGE BLANK PAGE © 2023 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2023 HIGHER SCHOOL CERTIFICATE EXAMINATION Agriculture Section I Part B Answer Booklet 60 marks Attempt Questions 21–27 Allow about 1 hour and 45 minutes for this part Instructions • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. Please turn over Centre Number Student Number 4393310351 2001 15010 Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2381310356"
+  },
+  {
+   "id": "2023hsc21",
+   "year": 2023,
+   "number": "21",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Use the diagram to answer parts (a) and (b). Sunlight Photosynthesis Animal respiration Plant respiration Decaying organisms Dead organisms and waste products (a) (i) Identify the nutrient being cycled in the diagram. 1 (ii) Outline the role of soil nutrient cycles in agriculture. 2 Question 21 continues on page 15 1159310358 Question 21 (continued) (b) Describe the importance of invertebrates in both decomposition and nutrient cycling. 3 End of Question 21 Please turn over 4873310354"
+  },
+  {
+   "id": "2023hsc22",
+   "year": 2023,
+   "number": "22",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Outline TWO influences of government on production and marketing of agricultural products. 3 (b) Justify marketing options that could be used for a named farm product. 5 7471310351"
+  },
+  {
+   "id": "2023hsc23",
+   "year": 2023,
+   "number": "23",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)–(c) with reference to a product you have studied. Name of product: (a) Why is a named market specification important for this product? 2 (b) Explain how scheduling the timing of ONE named operation in a production cycle contributes to meeting a named market specification for this product. 4 Question 23 continues on page 18 9964310350 Question 23 (continued) (c) Justify ONE management strategy, other than timing of operations, that can be used to meet a named market specification. 6 End of Question 23 5638310354"
+  },
+  {
+   "id": "2023hsc24",
+   "year": 2023,
+   "number": "24",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer Question 24 with reference to a product you have studied. Name of product: Assess the effectiveness of an advertising or promotional campaign for this product. 6 9657310359"
+  },
+  {
+   "id": "2023hsc25",
+   "year": 2023,
+   "number": "25",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Describe the purpose of standardisation and randomisation in the design of an experiment. 4 (b) A student has been asked to design an experiment to investigate the effect of plant density on plant growth and/or yield. 4 Describe how the student could include standardisation and randomisation in the experimental design. Question 25 continues on page 21 6157310351 Question 25 (continued) (c) Explain why farmers control weeds to manage sources of plant competition. 4 End of Question 25 Please turn over 1086310357"
+  },
+  {
+   "id": "2023hsc26",
+   "year": 2023,
+   "number": "26",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) The graph depicts the relative changes in muscle and fat of two different breeds of the same animal species. 4 Muscle Breed A Breed B Breed A Breed B Fat KEY Weight Time Slaughter point 1 Slaughter point 2 For a particular market for this animal, consumers require a lean, highly muscled carcase. Justify a farmer’s choice of breed and slaughter point to meet these consumer requirements. Question 26 continues on page 23 6784310357 Question 26 (continued) (b) Discuss the use of hormone growth promotants (HGPs) in the manipulation of an animal’s growth and development. 4 End of Question 26 7927310357"
+  },
+  {
+   "id": "2023hsc27",
+   "year": 2023,
+   "number": "27",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Explain TWO management techniques that manipulate reproduction in farm animals and are directly dependent on the interaction of hormones in an animal’s oestrus cycle. 8 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 9403310358 8246310352 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 9248310355 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. © 2023 NSW Education Standards Authority BLANK PAGE 8455310354 2023 HIGHER SCHOOL CERTIFICATE EXAMINATION 2002 Agriculture Section II 20 marks Attempt ONE question from Questions 28–30 Allow about 45 minutes for this section Answer the question in the Section II Writing Booklet. Extra writing booklets are available. Your answers will be assessed on how well you: ● demonstrate knowledge and understanding relevant to the question ● communicate ideas and information using relevant examples ● present a logical and cohesive response Please turn over"
+  },
+  {
+   "id": "2023hsc28",
+   "year": 2023,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Agri-food, Fibre and Fuel Technologies (20 marks) (a) (i) Outline reasons for the labelling of foods containing genetically modified organisms (GMOs). 3 (ii) Describe the regulations that are associated with the development and use of GMOs in Australian agriculture. 5 (b) Discuss TWO uses of biotechnology in agriculture. Support your answer with relevant examples. 12 OR"
+  },
+  {
+   "id": "2023hsc29",
+   "year": 2023,
+   "number": "29",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Climate Challenge (20 marks) (a) (i) Outline the sources of the THREE greenhouse gases from agricultural systems. 3 (ii) Describe methods which can be used in agricultural systems to reduce the concentration of greenhouse gas in the atmosphere. 5 (b) Discuss TWO management options a farmer could use to manage climate variability in their production enterprise. Support your answer with relevant examples. 12 OR"
+  },
+  {
+   "id": "2023hsc30",
+   "year": 2023,
+   "number": "30",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Farming for the 21st Century (20 marks) (a) (i) Outline issues relating to the funding of research and development of agricultural technologies. 3 (ii) Describe methods that can be used to market a new technological development to farmers. 5 (b) Discuss TWO uses of new agricultural technology. Support your answer with relevant examples. 12 End of paper © 2023 NSW Education Standards Authority"
+  },
+  {
+   "id": "2024hsc01",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A farmer is selling watermelons from a stall at the farm gate. A sign is placed 100 metres down the road from the stall. Watermelons 100 m ahead What is the purpose of this simple form of advertising?\nTo make people aware of the stall\nTo advertise the quality of the watermelons\nTo promote the health benefits of watermelons\nTo encourage people to buy watermelons because they are cheap"
+  },
+  {
+   "id": "2024hsc02",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A pesticide label is shown. CAUTION Keep out of reach of children KILLZBUG Active constituent: perfluorooctane Group B Insecticide 5 Litres School Farm Chemicals What is the name of the key ingredient?\nGroup B\nKillzbug\nInsecticide\nPerfluorooctane"
+  },
+  {
+   "id": "2024hsc03",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows the developmental stages of a plant. W X Y Z Which row of the table identifies the correct terms for the stages labelled W, X, Y and Z in the diagram?\nOption A\nOption B\nOption C\nW X Y Z emergence vegetative reproductive germination emergence germination reproductive vegetative germination vegetative emergence reproductive germination emergence vegetative reproductive"
+  },
+  {
+   "id": "2024hsc04",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The result of a plant breeding program was an increase in the level of a vitamin in the harvestable product. Which of the following features was improved?\nYield\nQuality\nDrought tolerance\nDisease resistance"
+  },
+  {
+   "id": "2024hsc05",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following accurately identifies a feature of family farms and corporate enterprises?\nOption A\nOption B\nOption C\nFamily farms Corporate enterprises Always small scale Always large scale Well cared for and maintained Maintained but not cared for Only family workers employed Only farm hands employed Managed by owner Controlled by a business manager"
+  },
+  {
+   "id": "2024hsc06",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "What is the purpose of animal welfare legislation in animal production systems?\nTo prevent all pain and suffering\nTo monitor the activities of farmers\nTo promote animal wellbeing and prevent cruelty\nTo ensure the animals have adequate food and water"
+  },
+  {
+   "id": "2024hsc07",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows the effect of a weed on the growth of a sown pasture. Which of the following is NOT a reason for this effect?\nThe pasture plants closest to the weed were shaded.\nThe weed has taken up valuable nutrients from the soil.\nThe weed released chemicals into the soil inhibiting pasture growth.\nThe pasture is a grass and cannot use the nitrogen released by the weed."
+  },
+  {
+   "id": "2024hsc08",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Soil fertility can be managed by growing plants for grazing in between years of cereal crop production. What is this technique known as?\nCrop rotation\nGreen manuring\nPasture ley phase\nConservation tillage"
+  },
+  {
+   "id": "2024hsc09",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following ONLY lists invertebrates involved in decomposition?\nMaggots, fungi, beetle larvae, termites\nBacteria, earthworms, termites, protozoa\nGrasshoppers, millipedes, bacteria, spiders\nEarthworms, maggots, beetle larvae, millipedes"
+  },
+  {
+   "id": "2024hsc10",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "An unexpected ban has been placed on an export product. What type of financial pressure is this?\nFluctuating interest rates\nDynamic nature of markets\nHigh expenditure on inputs\nSeasonally irregular income"
+  },
+  {
+   "id": "2024hsc11",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is NOT correct in regard to a diverse pasture mix?\nManagement of the pasture is easier.\nIt extends the growing season of the pasture.\nIt provides better resilience against pasture pests and diseases.\nThe nutritional needs of the grazing animals are more easily met."
+  },
+  {
+   "id": "2024hsc12",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows the interaction between host, pest and environment in relation to disease. Host Pest Environment A farmer routinely uses the same single chemical on their animals to control a pest. Which row of the table shows the interaction involved and the influence on pest resistance?\nOption A\nOption B\nOption C\nInteraction involved Likelihood of pest population developing resistance Pest and environment Increases Host and pest Decreases Host and pest Increases Pest and environment Decreases"
+  },
+  {
+   "id": "2024hsc13",
+   "year": 2024,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which pair of factors are both environmental influences on male fertility in livestock?\nHot weather, day length\nNutrition, male social status\nSex drive, scrotal circumference\nAge, number of females to service"
+  },
+  {
+   "id": "2024hsc14",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shows a sector of a farmer’s property and 3 sites for farming activities. Clay soil Clay loam soil Alluvial soil Site Z Site X Site Y Watercourse The table shows descriptions for some land capability classes in Australia. Class 1 and 2 Highly productive land suited to cropping Class 3 Moderately productive land suited to improved pasture and to cropping with pasture rotation Class 4 and 5 Marginal lands not suitable for cultivation and very low productivity for grazing Which row of the table indicates the sites best suited to each class of land use?\nOption A\nOption B\nOption C\nClass 1 and 2 Class 3 Class 4 and 5 Site X Site Y Site Z Site Z Site X Site Y Site Y Site Z Site X Site Z Site Y Site X"
+  },
+  {
+   "id": "2024hsc15",
+   "year": 2024,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which row of the table shows the soil with the highest ion exchange capacity?\nOption A\nOption B\nOption C\nSand (%) Silt (%) Clay (%) Organic matter/ soil carbon (%) 48 30"
+  },
+  {
+   "id": "2024hsc16",
+   "year": 2024,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A student recorded the weights of three different breeds of chickens two weeks after hatching. The table below shows the data collected. Breed\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2024hsc17",
+   "year": 2024,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram represents part of the digestive system of a ruminant animal. To small intestine Flow of food KEY Oesophagus Y X W Which row of the table correctly identifies the function of the labelled part?\nOption A\nOption B\nOption C\nW X Microbial digestion Water absorption Chemical digestion Mechanical digestion Chemical digestion Microbial digestion Mechanical digestion Microbial digestion Microbial digestion Chemical digestion Chemical digestion Water absorption Y"
+  },
+  {
+   "id": "2024hsc18",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The following annual financial data relates to a dryland grain farm. Farm area: 1000 ha Total income: $840 000 Fixed costs: $80/ha Variable costs: $180/ha Total farm capital value (assets): $17 600 000 Which of the following is the correct gross margin and return to capital for this farm?\nOption A\nOption B\nOption C\nGross margin ($ / ha) Return to capital (%) 580 4.8 580 3.3 660 3.3 660 4.8"
+  },
+  {
+   "id": "2024hsc19",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following matches the plant hormone to its effect on plants?\nOption A\nOption B\nOption C\nGibberellin Auxin Cytokinin Ethylene Stimulates cell division Boosts root and shoot growth Speeds germination Ripens fruit Speeds germination Ripens fruit Stimulates cell division Boosts root and shoot growth Speeds germination Boosts root and shoot growth Stimulates cell division Ripens fruit Boosts root and shoot growth Stimulates cell division Ripens fruit Speeds germination"
+  },
+  {
+   "id": "2024hsc20",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is the correct mean weight gain and sample standard deviation for this data?\nOption A\nOption B\nOption C\nMean weight gain Sample standard deviation 19.4 4.0 19.0 1.7 19.0 4.0 19.4 1.7 BLANK PAGE © 2024 NSW Education Standards Authority Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 2024 HIGHER SCHOOL CERTIFICATE EXAMINATION Agriculture Section I Part B Answer Booklet 60 marks Attempt Questions 21–27 Allow about 1 hour and 45 minutes for this part Instructions Centre Number Student Number 4393310351 2001 • Write your Centre Number and Student Number at the top of this page. • Answer the questions in the spaces provided. These spaces provide guidance for the expected length of response. • Show all relevant working in questions involving calculations. • Extra writing space is provided at the back of this booklet. If you use this space, clearly indicate which question you are answering. 15010 Please turn over Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. BLANK PAGE 2381310356 Office Use Only – Do NOT write anything, or make any marks below this line. Do NOT write in this area. 1159310358"
+  },
+  {
+   "id": "2024hsc21",
+   "year": 2024,
+   "number": "21",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Identify TWO farming practices that have led to a decline in water quality. • • 2 (b) Explain how grassed waterways can improve water quality. 4 Please turn over 4873310354"
+  },
+  {
+   "id": "2024hsc22",
+   "year": 2024,
+   "number": "22",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)−(c) with reference to a named product you have studied. Name of product: (a) Outline a possible marketing chain for this product. You may use a diagram to support your answer. 3 (b) Construct a flow chart of the main steps involved in processing the raw product into a different form. 3 Question 22 continues on page 17 7471310351 Question 22 (continued) (c) Describe how TWO factors affect demand for the product. 4 End of Question 22 Please turn over 9964310350"
+  },
+  {
+   "id": "2024hsc23",
+   "year": 2024,
+   "number": "23",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Answer parts (a)−(c) with reference to a named product you have studied. Name of product: (a) What happens to the product if it does not meet market specifications? 2 (b) Outline ONE government influence on the production or marketing of the product. 2 Question 23 continues on page 19 5638310354 Question 23 (continued) (c) Discuss TWO ways in which the product can be value added. 6 End of Question 23 9657310359"
+  },
+  {
+   "id": "2024hsc24",
+   "year": 2024,
+   "number": "24",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Describe the advantages of vertical integration and contract selling as ways to market farm products. 6 6157310351"
+  },
+  {
+   "id": "2024hsc25",
+   "year": 2024,
+   "number": "25",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) A student performed a first-hand investigation to determine the effect of light on plant growth. Explain the purpose of replication. In your answer, provide a specific example that could be used for this investigation. 4 (b) Explain ONE technique, other than modifying light, that can be used by farmers to manage an environmental constraint in plant production. 4 1086310357"
+  },
+  {
+   "id": "2024hsc26",
+   "year": 2024,
+   "number": "26",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "(a) Discuss the use of line breeding in animal production. 4 (b) Describe the role of objective measurement and heritability on the breeding programs of farms. In your answer, refer to a specific industry program. 4 Question 26 continues on page 23 6784310357 Question 26 (continued) (c) Explain ONE purpose of oestrus synchronisation in an animal breeding program. 4 End of Question 26 Please turn over 7927310357"
+  },
+  {
+   "id": "2024hsc27",
+   "year": 2024,
+   "number": "27",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "Evaluate an integrated pest management (IPM) program for a named plant or animal host and named target organism. 8 Plant or animal host: Target organism: 9403310358 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 8246310352 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. 9248310355 Section I Part B extra writing space If you use this space, clearly indicate which question you are answering. © 2024 NSW Education Standards Authority BLANK PAGE 8455310354 2024 HIGHER SCHOOL CERTIFICATE EXAMINATION 2002 Agriculture Section II 20 marks Attempt ONE question from Questions 28–30 Allow about 45 minutes for this section Answer the question in the Section II Writing Booklet. Extra writing booklets are available. Your answers will be assessed on how well you: ● demonstrate knowledge and understanding relevant to the question ● communicate ideas and information using relevant examples ● present a logical and cohesive response Please turn over"
+  },
+  {
+   "id": "2024hsc28",
+   "year": 2024,
+   "number": "28",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Agri-food, Fibre and Fuel Technologies (20 marks) (a) In this elective you analysed a research study of the development and/or implementation of an agricultural biotechnology. (i) Explain why this research was conducted. 4 (ii) How was the data in the study collected and presented? 4 (b) Evaluate biofuel production with respect to world food demands and environmental sustainability. 12 OR"
+  },
+  {
+   "id": "2024hsc29",
+   "year": 2024,
+   "number": "29",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Climate Challenge (20 marks) (a) In this elective you analysed a research study of climate variability or management strategies related to climate variability. (i) Explain why this research was conducted. 4 (ii) How was the data in the study collected and presented? 4 (b) Analyse water storage and water trading issues in relation to river flows in Australian agricultural systems. 12 OR"
+  },
+  {
+   "id": "2024hsc30",
+   "year": 2024,
+   "number": "30",
+   "marks": 20,
+   "type": "extended_response",
+   "current_path": "Year 12",
+   "text": "— Farming for the 21st Century (20 marks) (a) In this elective you analysed a research study of the development and/or implementation of a recent agricultural technology. (i) Explain why this research was conducted. 4 (ii) How was the data in the study collected and presented? 4 (b) Evaluate one recent technological development in agriculture in terms of its environmental and social impacts. 12 End of paper © 2024 NSW Education Standards Authority"
+  },
+  {
+   "id": "2025hsc01",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which tissue is the last to develop as an animal grows?\nBone\nBrain\nFat\nMuscle"
+  },
+  {
+   "id": "2025hsc02",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Multiple-choice question (source text unavailable).\nIt makes photosynthesis more efficient, increasing plant yield.\nIt reduces the availability of oxygen, which causes pests to suffocate.\nIt causes the stomates to open, which reduces the plants’ demand for water.\nIt acts as a fertiliser, which reduces the amount of nitrogen fertiliser used by the plants."
+  },
+  {
+   "id": "2025hsc03",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Considering the data provided, what is likely to be the cause of the trends depicted in the graph?\nRetailers are concerned that caged hens have a higher health risk.\nConsumers appear to prefer a system that allows birds freedom of movement.\nProducers are converting to the barn laid system as it is the most environmentally sustainable. D Producers are converting from caged systems because the other systems are superior in terms of hen survival.\nOption D"
+  },
+  {
+   "id": "2025hsc04",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which management decision is associated with reducing plant competition in crop production?\nHerbicide use\nInsecticide use\nTime of harvest\nVariety selection"
+  },
+  {
+   "id": "2025hsc05",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of these lists contains ONLY measures of product quality?\nFleece weight, fleece length\nWool diameter, weed seeds in wool\nAverage age of rams, number of lambs marked\nLamb weight gain, number of lambs born per ewe"
+  },
+  {
+   "id": "2025hsc06",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "A farmer tested their soil pH and found that the soil was strongly acidic. They then incorporated a large quantity of lime. Twelve months later, the soil was re-tested and its pH was 5.1. Is the soil pH now suitable for most plants?\nNo, the soil is too saline.\nNo, the soil is now too basic.\nNo, the soil is still too acidic.\nYes, this pH is suitable for most plants."
+  },
+  {
+   "id": "2025hsc07",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which of the following is true of a farming cooperative?\nFarmers own all aspects of production, processing and marketing.\nFarmers provide their product to consumers without any third-party agent.\nFarmers form a group or association to voluntarily pool their products for sale.\nFarmers agree to supply a set quantity and quality of product for an agreed price."
+  },
+  {
+   "id": "2025hsc08",
+   "year": 2025,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "Which hormone is responsible for behavioural traits when an animal is on heat?\nOxytocin\nOestrogen\nProgesterone\nLuteinising hormone"
+  },
+  {
+   "id": "2025hsc09",
+   "year": 2025,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "The diagram shown is a soil texture classification triangle.\nOption A\nOption B\nOption C\nOption D"
+  },
+  {
+   "id": "2025hsc10",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12",
+   "text": "0 2009 2014 2019 2024 Cage Barn Free range Percentage (%) Comparative ranking of egg production systems Issue Production system 3 best – 1 worst Cage Barn Free range Freedom to move and exhibit natural behaviours\nOption A\nOption B\nOption C\nOption D"
+  }
+ ]
+}

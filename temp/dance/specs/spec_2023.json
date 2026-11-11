@@ -1,0 +1,168 @@
+{
+  "course_id": "course_dance",
+  "course_name": "Dance",
+  "id_prefix": "dance_2023",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10",
+        "HSC-M3-T2-D11"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 1 (10 marks)\nExplain how Mats Ek uses spatial elements to communicate the theme of rebellion in Juliet and Romeo.\nIn your response, provide specific examples from the work."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Spatial elements can include but are not limited to: shape, dimension, level, direction, pathways, spatial relationships, performance space, active space.",
+              "Rebellion can be seen through but not limited to: Juliet's rebellion against her parents; Romeo's rebellion against his parents; nurse's protection of Juliet; rebellion against law and order; father's betrayal of Juliet; defiance or conflict between characters; reference to significant parts of the narrative."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how Mats Ek uses spatial elements to communicate the theme of rebellion in Juliet and Romeo; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how Mats Ek uses spatial elements to communicate the theme of rebellion in Juliet and Romeo; uses appropriate examples and language to support the response; presents a logical response.",
+              "5-6 marks: Provides a general explanation of how Mats Ek uses spatial elements to communicate the theme of rebellion in Juliet and Romeo; uses general examples and language; presents some elements of a structured response.",
+              "3-4 marks: Provides a limited understanding of spatial elements and/or theme of rebellion and/or Juliet and Romeo; uses basic examples and language; presents a limited response.",
+              "1-2 marks: Provides some relevant information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2023 HSC Dance",
+        "year": 2023,
+        "original_question_no": "1",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10",
+        "HSC-M3-T2-D11"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 2 (10 marks)\nExplain how Frances Rings portrays Kati Thanda-Lake Eyre as a place of both threat and natural beauty in the work Terrain.\nIn your response, provide specific examples from the work."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Threat and natural beauty can refer to but are not limited to: individual episodes and themes; physical, emotional, environmental, kinship and political aspects; context of Kati Thanda-Lake Eyre - connection to land, land rights, impact of human activity, protecting the land, fauna and landform; context of creating Terrain; use of space/time/dynamics; use of props/costumes/backdrops; aural elements; choice of dancers; relationships between dancers; movement."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how Frances Rings portrays Kati Thanda-Lake Eyre as a place of both threat and natural beauty in Terrain; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how Frances Rings portrays Kati Thanda-Lake Eyre as a place of both threat and natural beauty in Terrain; uses appropriate examples and language to support the response; presents a logical response.",
+              "5-6 marks: Provides a general explanation of how Frances Rings portrays Kati Thanda-Lake Eyre as a place of both threat and natural beauty in Terrain; uses general examples and language; presents some elements of a structured response.",
+              "3-4 marks: Provides a limited understanding of Kati Thanda-Lake Eyre and/or Terrain; uses basic examples and language; presents a limited response.",
+              "1-2 marks: Provides some relevant information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2023 HSC Dance",
+        "year": 2023,
+        "original_question_no": "2",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    }
+  ]
+}

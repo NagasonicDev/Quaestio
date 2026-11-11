@@ -1,0 +1,717 @@
+{
+ "mh_2020_q01": {
+  "code": "HSC-M2-T2-D2",
+  "confidence": "high",
+  "why": "Japan's interwar expansionism: non-German dictatorship features"
+ },
+ "mh_2020_q02": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "medium",
+  "why": "League weakness as consequence of 1919 settlement"
+ },
+ "mh_2020_q03": {
+  "code": "HSC-M2-T4-D3",
+  "confidence": "high",
+  "why": "Nazi repression impact on Jewish people"
+ },
+ "mh_2020_q04": {
+  "code": "HSC-M2-T4-D1",
+  "confidence": "high",
+  "why": "Nazi consolidation of power 1933-34"
+ },
+ "mh_2020_q05": {
+  "code": "HSC-M4-T3-D2",
+  "confidence": "medium",
+  "why": "political responses to Depression; part (a) dominant"
+ },
+ "mh_2020_q06": {
+  "code": "HSC-M5-T2-D2",
+  "confidence": "medium",
+  "why": "Maoism/CCP ideology and CCP rise"
+ },
+ "mh_2020_q07": {
+  "code": null,
+  "confidence": "low",
+  "why": "India option absent from dot list"
+ },
+ "mh_2020_q08": {
+  "code": "HSC-M7-T2-D3",
+  "confidence": "medium",
+  "why": "army and religious groups in 1965 coup"
+ },
+ "mh_2020_q09": {
+  "code": "HSC-M9-T2-D2",
+  "confidence": "medium",
+  "why": "zaibatsu challenge to traditional power in 1920s"
+ },
+ "mh_2020_q10": {
+  "code": "HSC-M10-T1-D2",
+  "confidence": "medium",
+  "why": "Bolshevik consolidation: Civil War and NEP"
+ },
+ "mh_2020_q11": {
+  "code": "HSC-M11-T2-D2",
+  "confidence": "medium",
+  "why": "government attempts to halt the Depression"
+ },
+ "mh_2020_q12": {
+  "code": "HSC-M8-T2-D3",
+  "confidence": "medium",
+  "why": "White Revolution successes and failures"
+ },
+ "mh_2020_q13": {
+  "code": "HSC-M17-T1-D2",
+  "confidence": "medium",
+  "why": "US policy towards Vietnam before 1964"
+ },
+ "mh_2020_q14": {
+  "code": "HSC-M14-T2-D5",
+  "confidence": "medium",
+  "why": "Allied strategies against Japan 1942-45"
+ },
+ "mh_2020_q15": {
+  "code": "HSC-M13-T1-D1",
+  "confidence": "medium",
+  "why": "German foreign policy aims to September 1939"
+ },
+ "mh_2020_q16": {
+  "code": "HSC-M15-T2-D3",
+  "confidence": "medium",
+  "why": "Cold War crises changing superpower relations"
+ },
+ "mh_2020_q17": {
+  "code": "HSC-M18-T4-D3",
+  "confidence": "medium",
+  "why": "regionalism and sectarianism in Gulf conflict"
+ },
+ "mh_2020_q18": {
+  "code": "HSC-M16-T2-D3",
+  "confidence": "medium",
+  "why": "Yom Kippur War and peacemaking attempts"
+ },
+ "mh_2020_q19": {
+  "code": "HSC-M23-T2-D4",
+  "confidence": "high",
+  "why": "Tatmadaw protecting state; highest-mark part (c)"
+ },
+ "mh_2020_q20": {
+  "code": "HSC-M24-T3-D6",
+  "confidence": "high",
+  "why": "Tiananmen impact on China and world standing"
+ },
+ "mh_2020_q21": {
+  "code": "HSC-M21-T2-D2",
+  "confidence": "medium",
+  "why": "protest methods of civil rights movement"
+ },
+ "mh_2020_q22": {
+  "code": "HSC-M25-T2-D1",
+  "confidence": "medium",
+  "why": "US foreign policy in post-Cold War world"
+ },
+ "mh_2020_q23": {
+  "code": "HSC-M20-T3-D2",
+  "confidence": "medium",
+  "why": "benefits vs risks; nuclear technology contributions"
+ },
+ "mh_2020_q24": {
+  "code": "HSC-M22-T4-D2",
+  "confidence": "high",
+  "why": "international factors contributing to end of apartheid"
+ },
+ "mh_2021_q01": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "geographical consequences of WWI peace treaties"
+ },
+ "mh_2021_q02": {
+  "code": null,
+  "confidence": "low",
+  "why": "UN founding not covered by core dots"
+ },
+ "mh_2021_q03": {
+  "code": "HSC-M2-T4-D2",
+  "confidence": "medium",
+  "why": "Hitler cult of personality as Nazi ideology"
+ },
+ "mh_2021_q04": {
+  "code": "HSC-M2-T4-D2",
+  "confidence": "high",
+  "why": "individuals implementing Nazi ideology"
+ },
+ "mh_2021_q05": {
+  "code": "HSC-M4-T2-D2",
+  "confidence": "medium",
+  "why": "rural-urban tension, industrialisation and urbanisation"
+ },
+ "mh_2021_q06": {
+  "code": "HSC-M5-T2-D2",
+  "confidence": "medium",
+  "why": "nationalism within CCP ideology"
+ },
+ "mh_2021_q07": {
+  "code": null,
+  "confidence": "low",
+  "why": "India option absent from dot list"
+ },
+ "mh_2021_q08": {
+  "code": "HSC-M7-T3-D1",
+  "confidence": "medium",
+  "why": "New Order ideology shaping Indonesian society"
+ },
+ "mh_2021_q09": {
+  "code": "HSC-M9-T2-D1",
+  "confidence": "medium",
+  "why": "successes and failures of Japanese democracy"
+ },
+ "mh_2021_q10": {
+  "code": "HSC-M10-T2-D1",
+  "confidence": "medium",
+  "why": "Bolshevik figures in Stalin-Trotsky struggle"
+ },
+ "mh_2021_q11": {
+  "code": "HSC-M11-T3-D3",
+  "confidence": "medium",
+  "why": "conservatism and social tensions in the USA"
+ },
+ "mh_2021_q12": {
+  "code": "HSC-M8-T2-D2",
+  "confidence": "medium",
+  "why": "military influence on Iranian democracy to 1979"
+ },
+ "mh_2021_q13": {
+  "code": "HSC-M17-T1-D3",
+  "confidence": "medium",
+  "why": "Vietnam's nationalist goals achieved by 1964"
+ },
+ "mh_2021_q14": {
+  "code": "HSC-M14-T2-D1",
+  "confidence": "medium",
+  "why": "Japanese imperial aims and strategies; Yamamoto quote"
+ },
+ "mh_2021_q15": {
+  "code": "HSC-M13-T1-D1",
+  "confidence": "medium",
+  "why": "Hitler's foreign policy goals and war outbreak"
+ },
+ "mh_2021_q16": {
+  "code": "HSC-M15-T2-D3",
+  "confidence": "medium",
+  "why": "Cuban Missile Crisis significance as Cold War crisis"
+ },
+ "mh_2021_q17": {
+  "code": "HSC-M18-T2-D1",
+  "confidence": "medium",
+  "why": "international reaction to Iraqi invasion of Kuwait"
+ },
+ "mh_2021_q18": {
+  "code": "HSC-M16-T4-D5",
+  "confidence": "medium",
+  "why": "Rabin's peace vision and assassination impact"
+ },
+ "mh_2021_q19": {
+  "code": "HSC-M23-T4-D1",
+  "confidence": "high",
+  "why": "Than Shwe and Khin Nyunt 1990-2010"
+ },
+ "mh_2021_q20": {
+  "code": "HSC-M24-T1-D2",
+  "confidence": "medium",
+  "why": "competing Marxism; CCP-Mao ideological tensions"
+ },
+ "mh_2021_q21": {
+  "code": "HSC-M21-T3-D3",
+  "confidence": "high",
+  "why": "US presidents' attitudes and civil rights success"
+ },
+ "mh_2021_q22": {
+  "code": "HSC-M25-T2-D2",
+  "confidence": "high",
+  "why": "UN peace and security in post-Cold War world"
+ },
+ "mh_2021_q23": {
+  "code": "HSC-M20-T4-D1",
+  "confidence": "high",
+  "why": "anti-nuclear movements and disarmament"
+ },
+ "mh_2021_q24": {
+  "code": "HSC-M22-T2-D4",
+  "confidence": "medium",
+  "why": "Mandela leadership and imprisonment"
+ },
+ "mh_2022_q01": {
+  "code": "HSC-M2-T1-D1",
+  "confidence": "high",
+  "why": "Treaty of Versailles and rise of dictators"
+ },
+ "mh_2022_q02": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "low",
+  "why": "account for source perspective; content unknown"
+ },
+ "mh_2022_q03": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "high",
+  "why": "source value on reasons for Nazi rise"
+ },
+ "mh_2022_q04": {
+  "code": "HSC-M2-T3-D2",
+  "confidence": "high",
+  "why": "Nazi party role in collapse of Weimar"
+ },
+ "mh_2022_q05": {
+  "code": "HSC-M4-T2-D1",
+  "confidence": "medium",
+  "why": "WWI impact on 1920s Australian society"
+ },
+ "mh_2022_q06": {
+  "code": "HSC-M5-T2-D3",
+  "confidence": "medium",
+  "why": "Long March and rise of CCP"
+ },
+ "mh_2022_q07": {
+  "code": null,
+  "confidence": "low",
+  "why": "India option absent from dot list"
+ },
+ "mh_2022_q08": {
+  "code": "HSC-M7-T3-D1",
+  "confidence": "medium",
+  "why": "Suharto responding to regime challenges 1965-98"
+ },
+ "mh_2022_q09": {
+  "code": "HSC-M9-T3-D2",
+  "confidence": "medium",
+  "why": "tradition vs modernisation in Japanese politics"
+ },
+ "mh_2022_q10": {
+  "code": "HSC-M10-T3-D4",
+  "confidence": "medium",
+  "why": "Stalin's policies transforming social and cultural life"
+ },
+ "mh_2022_q11": {
+  "code": "HSC-M11-T2-D1",
+  "confidence": "medium",
+  "why": "Depression impact on lives of workers"
+ },
+ "mh_2022_q12": {
+  "code": "HSC-M8-T3-D1",
+  "confidence": "medium",
+  "why": "opposition to the Shah before 1979"
+ },
+ "mh_2022_q13": {
+  "code": "HSC-M17-T2-D9",
+  "confidence": "medium",
+  "why": "reasons for US withdrawal from Vietnam"
+ },
+ "mh_2022_q14": {
+  "code": "HSC-M14-T4-D2",
+  "confidence": "medium",
+  "why": "reasons for Japanese defeat"
+ },
+ "mh_2022_q15": {
+  "code": "HSC-M13-T2-D5",
+  "confidence": "medium",
+  "why": "turning points: Stalingrad, Moscow, Kursk"
+ },
+ "mh_2022_q16": {
+  "code": "HSC-M15-T1-D1",
+  "confidence": "medium",
+  "why": "ideology vs economic/political concerns in Cold War"
+ },
+ "mh_2022_q17": {
+  "code": "HSC-M18-T4-D4",
+  "confidence": "medium",
+  "why": "US troop withdrawal from Iraq 2011"
+ },
+ "mh_2022_q18": {
+  "code": "HSC-M16-T2-D1",
+  "confidence": "medium",
+  "why": "Six-Day War significance versus 1973 war"
+ },
+ "mh_2022_q19": {
+  "code": "HSC-M23-T4-D2",
+  "confidence": "medium",
+  "why": "ethnic tensions and military response 1990-2010"
+ },
+ "mh_2022_q20": {
+  "code": "HSC-M24-T3-D2",
+  "confidence": "high",
+  "why": "Deng's economic reform impact on Chinese society"
+ },
+ "mh_2022_q21": {
+  "code": "HSC-M21-T3-D4",
+  "confidence": "medium",
+  "why": "social attitudes and extent of civil rights change"
+ },
+ "mh_2022_q22": {
+  "code": "HSC-M25-T3-D1",
+  "confidence": "medium",
+  "why": "new centres of global power challenging US"
+ },
+ "mh_2022_q23": {
+  "code": "HSC-M20-T4-D2",
+  "confidence": "high",
+  "why": "proliferation issues and nuclear disarmament"
+ },
+ "mh_2022_q24": {
+  "code": "HSC-M22-T4-D2",
+  "confidence": "high",
+  "why": "state control methods and international response"
+ },
+ "mh_2023_q01": {
+  "code": "HSC-M2-T4-D2",
+  "confidence": "medium",
+  "why": "Nazi ideology's impact on religion"
+ },
+ "mh_2023_q02": {
+  "code": "HSC-M2-T2-D2",
+  "confidence": "high",
+  "why": "nature of the Italian dictatorship"
+ },
+ "mh_2023_q03": {
+  "code": "HSC-M2-T4-D4",
+  "confidence": "high",
+  "why": "Nazi propaganda control 1933-39"
+ },
+ "mh_2023_q04": {
+  "code": "HSC-M2-T2-D2",
+  "confidence": "medium",
+  "why": "German and Japanese territorial ambitions compared"
+ },
+ "mh_2023_q05": {
+  "code": "HSC-M4-T4-D2",
+  "confidence": "medium",
+  "why": "US relationship shaping foreign policy and reconstruction"
+ },
+ "mh_2023_q06": {
+  "code": "HSC-M5-T2-D2",
+  "confidence": "medium",
+  "why": "consolidation of Maoism and CCP rise"
+ },
+ "mh_2023_q07": {
+  "code": null,
+  "confidence": "low",
+  "why": "India option absent from dot list"
+ },
+ "mh_2023_q08": {
+  "code": "HSC-M7-T3-D3",
+  "confidence": "medium",
+  "why": "religious and regional issues ending Suharto era"
+ },
+ "mh_2023_q09": {
+  "code": "HSC-M9-T3-D4",
+  "confidence": "medium",
+  "why": "collapse of party politics and rise of militarism"
+ },
+ "mh_2023_q10": {
+  "code": "HSC-M10-T3-D3",
+  "confidence": "medium",
+  "why": "Soviet economic transformation 1928-41"
+ },
+ "mh_2023_q11": {
+  "code": "HSC-M11-T2-D3",
+  "confidence": "medium",
+  "why": "New Deal success against Depression impacts"
+ },
+ "mh_2023_q12": {
+  "code": "HSC-M8-T3-D1",
+  "confidence": "medium",
+  "why": "rise of opposition to Shah in Iran"
+ },
+ "mh_2023_q13": {
+  "code": "HSC-M17-T2-D5",
+  "confidence": "medium",
+  "why": "Tet Offensive impact on US policy"
+ },
+ "mh_2023_q14": {
+  "code": "HSC-M14-T2-D2",
+  "confidence": "medium",
+  "why": "Pearl Harbor and Japan's strategic aims"
+ },
+ "mh_2023_q15": {
+  "code": "HSC-M13-T3-D1",
+  "confidence": "medium",
+  "why": "war impact on civilians in Germany and occupied Europe"
+ },
+ "mh_2023_q16": {
+  "code": "HSC-M15-T2-D1",
+  "confidence": "medium",
+  "why": "containment shaping the Cold War 1947-91"
+ },
+ "mh_2023_q17": {
+  "code": "HSC-M18-T4-D3",
+  "confidence": "medium",
+  "why": "regionalism and sectarianism in Iraq democratisation"
+ },
+ "mh_2023_q18": {
+  "code": "HSC-M16-T2-D2",
+  "confidence": "medium",
+  "why": "PLO aims and methods 1967-74"
+ },
+ "mh_2023_q19": {
+  "code": "HSC-M23-T5-D2",
+  "confidence": "high",
+  "why": "international community response to Burma events"
+ },
+ "mh_2023_q20": {
+  "code": "HSC-M24-T3-D4",
+  "confidence": "high",
+  "why": "reasons for 1989 Tiananmen Square protests"
+ },
+ "mh_2023_q21": {
+  "code": "HSC-M21-T2-D6",
+  "confidence": "high",
+  "why": "Malcolm X and black power influence"
+ },
+ "mh_2023_q22": {
+  "code": "HSC-M25-T2-D1",
+  "confidence": "high",
+  "why": "US foreign policy challenges 1991-2011"
+ },
+ "mh_2023_q23": {
+  "code": "HSC-M20-T2-D4",
+  "confidence": "high",
+  "why": "British and French nuclear testing impacts"
+ },
+ "mh_2023_q24": {
+  "code": "HSC-M22-T2-D5",
+  "confidence": "high",
+  "why": "Black Consciousness Movement contribution"
+ },
+ "mh_2024_q01": {
+  "code": "HSC-M2-T4-D3",
+  "confidence": "high",
+  "why": "role of women in Nazi society"
+ },
+ "mh_2024_q02": {
+  "code": "HSC-M2-T4-D4",
+  "confidence": "high",
+  "why": "Nazi methods spreading ideology: propaganda"
+ },
+ "mh_2024_q03": {
+  "code": "HSC-M2-T4-D3",
+  "confidence": "medium",
+  "why": "dictatorship's impact on German society 1933-39"
+ },
+ "mh_2024_q04": {
+  "code": "HSC-M4-T2-D3",
+  "confidence": "medium",
+  "why": "Aboriginal and Torres Strait Islander exclusion in 1920s"
+ },
+ "mh_2024_q05": {
+  "code": "HSC-M5-T3-D2",
+  "confidence": "medium",
+  "why": "strategies resisting Japanese invasions from 1931"
+ },
+ "mh_2024_q06": {
+  "code": null,
+  "confidence": "low",
+  "why": "India option absent from dot list"
+ },
+ "mh_2024_q07": {
+  "code": "HSC-M7-T2-D3",
+  "confidence": "medium",
+  "why": "Suharto's army role in 1965 coup"
+ },
+ "mh_2024_q08": {
+  "code": "HSC-M9-T3-D1",
+  "confidence": "medium",
+  "why": "Great Depression impact on Japan"
+ },
+ "mh_2024_q09": {
+  "code": "HSC-M10-T2-D1",
+  "confidence": "medium",
+  "why": "power struggle after Lenin's death"
+ },
+ "mh_2024_q10": {
+  "code": "HSC-M11-T3-D3",
+  "confidence": "medium",
+  "why": "social tensions in US society 1919-41"
+ },
+ "mh_2024_q11": {
+  "code": "HSC-M8-T2-D3",
+  "confidence": "medium",
+  "why": "White Revolution impact 1953-79"
+ },
+ "mh_2024_q12": {
+  "code": "HSC-M17-T1-D1",
+  "confidence": "medium",
+  "why": "Geneva Conference and conflict from 1954"
+ },
+ "mh_2024_q13": {
+  "code": "HSC-M14-T1-D1",
+  "confidence": "medium",
+  "why": "Japanese foreign policy tensions from 1937"
+ },
+ "mh_2024_q14": {
+  "code": "HSC-M13-T1-D1",
+  "confidence": "medium",
+  "why": "escalation of European conflict from 1935"
+ },
+ "mh_2024_q15": {
+  "code": "HSC-M15-T1-D1",
+  "confidence": "medium",
+  "why": "superpower conflict emerging from 1945"
+ },
+ "mh_2024_q16": {
+  "code": "HSC-M18-T1-D1",
+  "confidence": "medium",
+  "why": "Saddam's regime as source of Gulf tension"
+ },
+ "mh_2024_q17": {
+  "code": "HSC-M16-T1-D1",
+  "confidence": "medium",
+  "why": "1948 war and emergence of Arab-Israeli conflict"
+ },
+ "mh_2024_q18": {
+  "code": "HSC-M23-T5-D1",
+  "confidence": "medium",
+  "why": "success of pro-democracy movement 1945-2010"
+ },
+ "mh_2024_q19": {
+  "code": "HSC-M24-T3-D2",
+  "confidence": "high",
+  "why": "success of Deng Xiaoping's reforms"
+ },
+ "mh_2024_q20": {
+  "code": "HSC-M21-T2-D2",
+  "confidence": "medium",
+  "why": "success of civil rights methods 1945-68"
+ },
+ "mh_2024_q21": {
+  "code": "HSC-M25-T2-D2",
+  "confidence": "high",
+  "why": "UN peacekeeping in post-Cold War world"
+ },
+ "mh_2024_q22": {
+  "code": "HSC-M20-T4-D3",
+  "confidence": "high",
+  "why": "disarmament treaties success 1960-2011"
+ },
+ "mh_2024_q23": {
+  "code": "HSC-M22-T4-D1",
+  "confidence": "medium",
+  "why": "changing nature of resistance 1960-94"
+ },
+ "mh_2025_q01": {
+  "code": "HSC-M2-T4-D5",
+  "confidence": "high",
+  "why": "opposition to the Nazi regime"
+ },
+ "mh_2025_q02": {
+  "code": "HSC-M1-T1-D2",
+  "confidence": "low",
+  "why": "source perspective; content unknown"
+ },
+ "mh_2025_q03": {
+  "code": "HSC-M2-T2-D2",
+  "confidence": "high",
+  "why": "source on Japan's Asia-Pacific ambitions"
+ },
+ "mh_2025_q04": {
+  "code": "HSC-M2-T4-D4",
+  "confidence": "medium",
+  "why": "Nazi regime effect on cultural expression"
+ },
+ "mh_2025_q05": {
+  "code": "HSC-M4-T2-D1",
+  "confidence": "medium",
+  "why": "changing role of women by 1949"
+ },
+ "mh_2025_q06": {
+  "code": "HSC-M5-T1-D3",
+  "confidence": "medium",
+  "why": "Chiang's leadership as obstacle to stability"
+ },
+ "mh_2025_q07": {
+  "code": null,
+  "confidence": "low",
+  "why": "India option absent from dot list"
+ },
+ "mh_2025_q08": {
+  "code": "HSC-M7-T3-D4",
+  "confidence": "medium",
+  "why": "post-Suharto economic challenges"
+ },
+ "mh_2025_q09": {
+  "code": "HSC-M9-T3-D3",
+  "confidence": "medium",
+  "why": "militarism and failure of Japanese democracy"
+ },
+ "mh_2025_q10": {
+  "code": "HSC-M10-T3-D3",
+  "confidence": "medium",
+  "why": "Bolshevik ideology through economic policies"
+ },
+ "mh_2025_q11": {
+  "code": "HSC-M11-T3-D1",
+  "confidence": "medium",
+  "why": "industrialisation shaping US society"
+ },
+ "mh_2025_q12": {
+  "code": "HSC-M8-T1-D2",
+  "confidence": "medium",
+  "why": "Cold War shaping Iranian political developments"
+ },
+ "mh_2025_q13": {
+  "code": "HSC-M17-T2-D7",
+  "confidence": "medium",
+  "why": "war spreading to Cambodia and Laos"
+ },
+ "mh_2025_q14": {
+  "code": "HSC-M14-T2-D3",
+  "confidence": "medium",
+  "why": "Japanese advances 1941-42"
+ },
+ "mh_2025_q15": {
+  "code": "HSC-M13-T2-D2",
+  "confidence": "medium",
+  "why": "fall of Poland, Low Countries and France"
+ },
+ "mh_2025_q16": {
+  "code": "HSC-M15-T2-D4",
+  "confidence": "medium",
+  "why": "arms race and space race rivalry"
+ },
+ "mh_2025_q17": {
+  "code": "HSC-M18-T2-D3",
+  "confidence": "medium",
+  "why": "1991 Iraqi uprisings after Saddam's defeat"
+ },
+ "mh_2025_q18": {
+  "code": "HSC-M16-T4-D3",
+  "confidence": "medium",
+  "why": "First Intifada and peace process"
+ },
+ "mh_2025_q19": {
+  "code": "HSC-M23-T3-D1",
+  "confidence": "medium",
+  "why": "1988 uprising leading to 1990 election"
+ },
+ "mh_2025_q20": {
+  "code": "HSC-M24-T3-D6",
+  "confidence": "high",
+  "why": "Tiananmen impact on China and standing"
+ },
+ "mh_2025_q21": {
+  "code": "HSC-M21-T3-D4",
+  "confidence": "medium",
+  "why": "significance of legislative change"
+ },
+ "mh_2025_q22": {
+  "code": "HSC-M25-T2-D2",
+  "confidence": "high",
+  "why": "UN role 1991-2011"
+ },
+ "mh_2025_q23": {
+  "code": "HSC-M20-T3-D2",
+  "confidence": "medium",
+  "why": "nuclear energy benefits versus risks"
+ },
+ "mh_2025_q24": {
+  "code": "HSC-M22-T4-D3",
+  "confidence": "high",
+  "why": "economic and social factors collapsing apartheid"
+ }
+}

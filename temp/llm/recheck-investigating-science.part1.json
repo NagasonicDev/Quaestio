@@ -1,0 +1,2393 @@
+{
+ "course_id": "investigating-science",
+ "course_name": "Investigating Science",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is the current label and is known to be unreliable. Use null if the text is missing, placeholder, or no dot covers the core concept. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / carry out a practical investigation to record both quantitative and qualitative data from observations, for example: burning a candle floating in a closed container"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / the behaviour of slaters in a dry/wet or light/dark environment"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / the Bernoulli effect"
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / strata in rock cuttings"
+  },
+  {
+   "code": "PRE-M1-T1-D5",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss and evaluate the characteristics of observations made compared to inferences drawn in respect of the practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D6",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / research how observation has instigated experimentation to investigate cause and effect in historical examples, including but not limited to:"
+  },
+  {
+   "code": "PRE-M1-T1-D7",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / Archimedes observing the displacement of water"
+  },
+  {
+   "code": "PRE-M1-T1-D8",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / Alexander Fleming’s observations of the effect of mould on bacteria"
+  },
+  {
+   "code": "PRE-M1-T1-D9",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / Galileo’s observations of the movement of Jupiter’s moons"
+  },
+  {
+   "code": "PRE-M1-T1-D10",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / assess ways in which Aboriginal and Torres Strait Islander Peoples use observation to develop an understanding of Country and Place in order to create innovative ways of managing the natural environment, including but not limited to: firestick farming; knowledge about plants for medicinal purposes"
+  },
+  {
+   "code": "PRE-M1-T1-D11",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / carry out a practical activity to qualitatively and quantitatively describe, for example: microscopic images of a variety of cells; geological strata in rock faces and road cuttings; an object falling due to gravity; characteristics of acids and bases"
+  },
+  {
+   "code": "PRE-M1-T1-D12",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / analyse the quantitative data from the following information sources, including but not limited to: digital images and hand-drawn diagrams of cells; geological succession obtained from rock strata"
+  },
+  {
+   "code": "PRE-M1-T1-D13",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / graphs of results obtained from observations of an object falling due to gravity"
+  },
+  {
+   "code": "PRE-M1-T1-D14",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / data showing the pH of acids and bases"
+  },
+  {
+   "code": "PRE-M1-T1-D15",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / evaluate the differences between qualitative and quantitative observations and data and where these are used"
+  },
+  {
+   "code": "PRE-M1-T1-D16",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / use data gathered to plan a practical investigation to: pose further questions that will be investigated"
+  },
+  {
+   "code": "PRE-M1-T1-D17",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss the role of variables"
+  },
+  {
+   "code": "PRE-M1-T1-D18",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / determine the independent and dependent variables"
+  },
+  {
+   "code": "PRE-M1-T1-D19",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / formulate a hypothesis that links the independent and dependent variables"
+  },
+  {
+   "code": "PRE-M1-T1-D20",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describe at least three variables that should be controlled in order to increase the validity of the investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D21",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / develop a method to collect primary data for a practical investigation by: describing how to change the independent variable"
+  },
+  {
+   "code": "PRE-M1-T1-D22",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / determining the characteristics of the measurements that will form the dependent variable"
+  },
+  {
+   "code": "PRE-M1-T1-D23",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describing how the data will be collected"
+  },
+  {
+   "code": "PRE-M1-T1-D24",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describing how the controlled variables will be made consistent"
+  },
+  {
+   "code": "PRE-M1-T1-D25",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describing how risks can be minimised"
+  },
+  {
+   "code": "PRE-M1-T1-D26",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / evaluate how observation is limited by the observational tools available, including but not limited to: observing the Universe; digital versus analogue technologies"
+  },
+  {
+   "code": "PRE-M1-T1-D27",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / carry out the planned practical investigation, above, to collect primary data"
+  },
+  {
+   "code": "PRE-M1-T1-D28",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / apply conventions for collecting and recording observations to qualitatively and quantitatively analyse the primary data, including but not limited to: tabulation; graphing; visual representations; digital representations"
+  },
+  {
+   "code": "PRE-M1-T1-D29",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / compare the usefulness of observations recorded in the initial practical activity with the primary data gathered in this planned practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D30",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / draw conclusions from the analysis of the primary data collected in the practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D31",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / evaluate the process of drawing conclusions from the primary data collected"
+  },
+  {
+   "code": "PRE-M1-T1-D32",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / assess the findings of the scientific investigation in relation to the findings of other related investigations"
+  },
+  {
+   "code": "PRE-M1-T1-D33",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / assess the need to make further observations by gathering data about other phenomena arising from the practical investigation"
+  },
+  {
+   "code": "PRE-M1-T1-D34",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / describe patterns that have been observed over time throughout the Universe and in nature using, for example: animal migration; movement of comets; formation and shape of snow crystals; elements exhibiting certain properties"
+  },
+  {
+   "code": "PRE-M1-T1-D35",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / interpret data in order to propose a hypothesis based on an irregular pattern observed over time in the Universe and in nature using, for example: the Aurora Australis; fractals in nature; the behaviour of unstable isotopes"
+  },
+  {
+   "code": "PRE-M1-T1-D36",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / examine the human tendency to observe patterns and misinterpret information, for example: pareidolia; optical illusions"
+  },
+  {
+   "code": "PRE-M1-T1-D37",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss how the tendency to recognise patterns, even when they may not exist, can lead to misinterpretation of data"
+  },
+  {
+   "code": "PRE-M1-T1-D38",
+   "path": "Year 11 / Cause and Effect – Observing / Observation / discuss the role and significance of outliers in data"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / employ and evaluate safe work practices and manage risks"
+  },
+  {
+   "code": "PRE-M1-T2-D7",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "PRE-M1-T2-D8",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "PRE-M1-T2-D9",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media"
+  },
+  {
+   "code": "PRE-M1-T2-D10",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "PRE-M1-T2-D11",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / evaluate and improve the quality of data"
+  },
+  {
+   "code": "PRE-M1-T2-D12",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select and use suitable forms of digital, visual, written and/or oral forms of communication"
+  },
+  {
+   "code": "PRE-M1-T2-D13",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts"
+  },
+  {
+   "code": "PRE-M1-T2-D14",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion"
+  },
+  {
+   "code": "PRE-M1-T2-D15",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / gather secondary-sourced data describing historical instances of long-standing assumptions that have been updated by scientific investigation, including but not limited to:"
+  },
+  {
+   "code": "PRE-M1-T2-D16",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / spontaneous generation and the investigations that led to the proposal of the germ theory"
+  },
+  {
+   "code": "PRE-M1-T2-D17",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / radioactivity: including the work of Henri Becquerel and Marie Curie"
+  },
+  {
+   "code": "PRE-M1-T2-D18",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / phlogiston theory"
+  },
+  {
+   "code": "PRE-M1-T2-D19",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / human influences on atmospheric pollution"
+  },
+  {
+   "code": "PRE-M1-T2-D20",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / propose an inquiry question, construct a hypothesis and conduct an investigation that tests a common assumption, for example:"
+  },
+  {
+   "code": "PRE-M1-T2-D21",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / washing with antibacterial soap kills more germs than washing with normal soap"
+  },
+  {
+   "code": "PRE-M1-T2-D22",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / the Sun rises in the East and sets in the West"
+  },
+  {
+   "code": "PRE-M1-T2-D23",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / what goes up must come down"
+  },
+  {
+   "code": "PRE-M1-T2-D24",
+   "path": "Year 11 / Cause and Effect – Observing / Planning investigations / use appropriate representations to analyse the data"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / investigate the practices of Aboriginal and Torres Strait Islander Peoples that relate to observations and inferences, including but not limited to: leaching of toxins in bush tucker"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / locating sources of freshwater within bodies of salt water"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / conduct a collaborative practical investigation and collect a range of qualitative and quantitative primary data from one of the following: growth of plants; reactions of calcium carbonate; the ‘life’ of different batteries under different circumstances; water quality of a pond or local stream"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / make inferences and conclusions derived from the primary data collected in this collaborative practical investigation"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / assess the input that collaborative teams and alternative perspectives have had on the development of hypotheses and research questions that have contributed to the development of, for example: particle accelerators; periodic table; study of bioastronomy; geological uniformitarianism"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / assess the scientific community's current understanding of scientific mysteries and outline why this understanding remains incomplete, including but not limited to: origins of life on the Earth"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / the idea that feynmanium is the last chemical on the periodic table that could exist"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / the expanding Universe and Hubble constant"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Inferences / evaluate biases that may have affected the scientific thinking of European settlers about Aboriginal and Torres Strait Islander Peoples’ ecological understanding and knowledge of Country and Place in relation to agricultural practices and the biological and natural resources of Australia"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / collect qualitative and quantitative secondary-sourced data to validate the inferences and conclusions drawn from the practical investigation carried out above, based on one or more of the following: the effect of soil salinity on plant growth; chemical reactions in cave formation; energy storage; methods of water monitoring"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / discuss how secondary-sourced data adds to the inferences and conclusions drawn from primary data"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / evaluate the usefulness of considering secondary-sourced research before undertaking an investigation to collect primary data, in order to: make inferences"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / develop inquiry questions"
+  },
+  {
+   "code": "PRE-M2-T2-D7",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / construct suitable hypotheses"
+  },
+  {
+   "code": "PRE-M2-T2-D8",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / plan suitable investigations"
+  },
+  {
+   "code": "PRE-M2-T2-D9",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / avoid unnecessary investigation"
+  },
+  {
+   "code": "PRE-M2-T2-D10",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / make generalisations to describe any trends found in the data"
+  },
+  {
+   "code": "PRE-M2-T2-D11",
+   "path": "Year 11 / Cause and Effect – Inferences and Generalisations / Generalising from evidence / draw conclusion based on generalisations"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Scientific Models / Developing models / explain why new evidence can challenge the use of existing scientific models and may result in those models being contested and refined or replaced, including but not limited to the development of: epidemic models; models of the Universe; atomic models; climate models"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Scientific Models / Developing models / compare the limitations of simple and complex scientific models"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / assess error, uncertainty and limitations in data"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / examine the types of models that may be used in science, including: diagrams; physical replicas; mathematical representations; analogies; computer simulations"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / examine the use of scientific models, including but not limited to: epidemic models; models of the Universe; atomic models; climate models"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / outline how models have been used to illustrate, simplify and represent scientific concepts and processes"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / explain how scientific models are used to make predictions that are difficult to analyse in the real world due to time frames, size and cost"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / assess the effectiveness of models at facilitating the understanding of scientific processes, structures and mathematical relationships through the use of:"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / evaluate how scientific models draw on a growing body of data from a wide range of disciplines and technologies to refine predictions and test new hypotheses"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / investigate a scientific concept or process that can be represented using a model, by:"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / planning a model with reference to the scientific literature"
+  },
+  {
+   "code": "PRE-M3-T2-D12",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / constructing a model using appropriate resources to represent the selected scientific concept"
+  },
+  {
+   "code": "PRE-M3-T2-D13",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / demonstrating how the model could be used to make a prediction"
+  },
+  {
+   "code": "PRE-M3-T2-D14",
+   "path": "Year 11 / Scientific Models / Using and evaluating models / presenting and evaluating the model through peer feedback"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Theories and Laws / Scientific theories / gather secondary-sourced data to investigate the supporting evidence and development of theories, including but not limited to: germ theory; oxygen theory of combustion"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Theories and Laws / Scientific theories / gather secondary-sourced data to investigate how aspects of a theory can be disproved through the collection of evidence, including:"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Geocentric Theory (of the solar system)"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Theory of Inheritance of Acquired Characteristics"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Dalton’s atomic theory"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Steady State Theory of the Universe (in cosmology)"
+  },
+  {
+   "code": "PRE-M4-T1-D7",
+   "path": "Year 11 / Theories and Laws / Scientific theories / investigate how the law of conservation of energy is applied in different science disciplines through primary and secondary-sourced research, including but not limited to:"
+  },
+  {
+   "code": "PRE-M4-T1-D8",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Chemistry"
+  },
+  {
+   "code": "PRE-M4-T1-D9",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Physics"
+  },
+  {
+   "code": "PRE-M4-T1-D10",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Human Biology"
+  },
+  {
+   "code": "PRE-M4-T1-D11",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Earth and Environmental Science"
+  },
+  {
+   "code": "PRE-M4-T1-D12",
+   "path": "Year 11 / Theories and Laws / Scientific theories / demonstrate, using evidence and examples, how diverse phenomena have been unified into specific theories, for example: atomic theory; theory of evolution"
+  },
+  {
+   "code": "PRE-M4-T1-D13",
+   "path": "Year 11 / Theories and Laws / Scientific theories / Big Bang theory"
+  },
+  {
+   "code": "PRE-M4-T1-D14",
+   "path": "Year 11 / Theories and Laws / Scientific theories / plate tectonic theory"
+  },
+  {
+   "code": "PRE-M4-T1-D15",
+   "path": "Year 11 / Theories and Laws / Scientific theories / gather secondary-sourced data to investigate how scientific investigations of nuclear reactions and decay changed the way in which the law of conservation of mass and law of conservation of energy are interpreted"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Theories and Laws / Scientific laws / collect primary data to investigate the law of conservation of mass"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Theories and Laws / Scientific laws / collect secondary-sourced data to investigate the theory of plate tectonics"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Theories and Laws / Scientific laws / compare the characteristics of theories and laws"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Theories and Laws / Scientific laws / gather secondary-sourced data to investigate and assess the evidence that supports scientific laws, including but not limited to:"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Newton’s Second Law of Motion"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Avogadro’s Law"
+  },
+  {
+   "code": "PRE-M4-T2-D7",
+   "path": "Year 11 / Theories and Laws / Scientific laws / law of superposition"
+  },
+  {
+   "code": "PRE-M4-T2-D8",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Mendel’s Law of Dominance"
+  },
+  {
+   "code": "PRE-M4-T2-D9",
+   "path": "Year 11 / Theories and Laws / Scientific laws / design and collect primary data to show that results can be predicted by laws, including but not limited to:"
+  },
+  {
+   "code": "PRE-M4-T2-D10",
+   "path": "Year 11 / Theories and Laws / Scientific laws / Ohm’s Law"
+  },
+  {
+   "code": "PRE-M4-T2-D11",
+   "path": "Year 11 / Theories and Laws / Scientific laws / law of conservation of energy"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / develop and evaluate inquiry questions and hypotheses to identify a concept that can be investigated scientifically, involving primary and secondary data"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / assess risks, consider ethical issues and select appropriate materials and technologies when designing and planning an investigation"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justify and evaluate the use of variables and experimental controls to ensure that a valid procedure is developed that allows for the reliable collection of data"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate and modify an investigation in response to new evidence"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / employ and evaluate safe work practices and manage risks"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / use appropriate technologies to ensure and evaluate accuracy"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / select and extract information from a wide range of reliable secondary sources and acknowledge them using an accepted referencing style"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / research the factors that led scientists to investigate the following, including but not limited to: peptic ulcers (Marshall and Warren); plant growth (Von Helmont); microwaves (Spencer)"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / propose a reason for the scientists undertaking their investigations above by examining the type of data or information that they sought, for example: finding relationships or patterns in identified phenomena; testing the conclusion of a previous investigation"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / utilising scientific knowledge and understanding to make more accurate predictions and develop new technologies"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / determine the hypotheses that were tested in each of the scientific investigations above"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / describe where deviations from the traditional and linear models of scientific methodology were necessary in order to test each hypothesis in the investigations above"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / using examples, evaluate the objectives and data collected in an investigation by a recognised scientist or team of scientists, including but not limited to:"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Marshall and Warren and peptic ulcers"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Eratosthenes and Earth’s circumference"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Doppler and the Doppler effect"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / Priestley’s experiments with oxygen"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the methodology of the scientific investigations above by:"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the method chosen based on the subject of the investigation and the context, for example: experimental testing, fieldwork, locating and using information sources, conducting surveys and using modelling and simulations"
+  },
+  {
+   "code": "HSC-M1-T1-D21",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluating the relevance of the investigation by considering the peer-reviewed literature in the area of study"
+  },
+  {
+   "code": "HSC-M1-T1-D22",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the suitability of the type of data that is to be collected"
+  },
+  {
+   "code": "HSC-M1-T1-D23",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / develop a method most appropriate to test a hypothesis following observation"
+  },
+  {
+   "code": "HSC-M1-T1-D24",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justify the type of methodology used to test the hypothesis"
+  },
+  {
+   "code": "HSC-M1-T1-D25",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the design of the student investigation by:"
+  },
+  {
+   "code": "HSC-M1-T1-D26",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / explaining the choice of independent, dependent and controlled variables with reference to the research question"
+  },
+  {
+   "code": "HSC-M1-T1-D27",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / explaining the sample selection and sample sizes used for gathering data"
+  },
+  {
+   "code": "HSC-M1-T1-D28",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the suitability of materials used based on their relevance to the research question, availability, cost, risk and familiarity of use"
+  },
+  {
+   "code": "HSC-M1-T1-D29",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / assessing the ethics of conducting the investigation by considering confidentiality, humane treatment and animal welfare"
+  },
+  {
+   "code": "HSC-M1-T1-D30",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / predicting an achievable time frame to conduct the investigation"
+  },
+  {
+   "code": "HSC-M1-T1-D31",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying working individually or collaboratively"
+  },
+  {
+   "code": "HSC-M1-T1-D32",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / conduct the planned investigation and collect, record and analyse primary data"
+  },
+  {
+   "code": "HSC-M1-T1-D33",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / draw a conclusion or conclusions, and suggest further investigation or research by: analysing the results and interpreting the data"
+  },
+  {
+   "code": "HSC-M1-T1-D34",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / explaining the relevance of the findings of the investigation in relation to the inquiry question and hypothesis"
+  },
+  {
+   "code": "HSC-M1-T1-D35",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / justifying the methodology and any changes made to improve the data collected"
+  },
+  {
+   "code": "HSC-M1-T1-D36",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / describing potential beneficial and harmful consequences when the findings are applied to a real-world scenario"
+  },
+  {
+   "code": "HSC-M1-T1-D37",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the validity of the investigation by determining whether the tests measured what they were intended to measure"
+  },
+  {
+   "code": "HSC-M1-T1-D38",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the reliability of the investigation by determining: consistency of the results obtained; measures taken to reduce error"
+  },
+  {
+   "code": "HSC-M1-T1-D39",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / using examples, justify the use of placebos, double-blind trials and control groups in order to draw valid conclusions"
+  },
+  {
+   "code": "HSC-M1-T1-D40",
+   "path": "Year 12 / Scientific Investigations / Planning and conducting investigations / evaluate the impact of societal and economic influences on the collection and interpretation of data, including but not limited to: predicting variations in climate; suggesting remedies for health conditions; manipulating statistical data"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / select qualitative and quantitative data and information and represent them using a range of formats, digital technologies and appropriate media"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / apply quantitative processes where appropriate"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / evaluate and improve the quality of data"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / derive trends, patterns and relationships in data and information"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / assess error, uncertainty and limitations in data"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / assess the relevance, accuracy, validity and reliability of primary and secondary data and suggest improvements to investigations"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / use modelling (including mathematical examples) to explain phenomena, make predictions and solve problems using evidence from primary and secondary sources"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Scientific Investigations / Processing and analysing data / use scientific evidence and critical thinking skills to solve problems"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / select and use suitable forms of digital, visual, written and/or oral forms of communication"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / select and apply appropriate scientific notations, nomenclature and scientific language to communicate in a variety of contexts"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / construct evidence-based arguments and engage in peer feedback to evaluate an argument or conclusion"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / review a published and peer-reviewed scientific report to determine the conventions of writing a report on a practical investigation"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / use a sample of a published and peer-reviewed secondary source to identify: the purpose of the report; measures taken to reduce error; the language style used; the presentation and structure of the report"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / compare and contrast the structures and functions of a scientific investigation and its written report"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Scientific Investigations / Communicating findings / prepare a report on the student investigation that was carried out"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Technologies / Science and technology / design a practical investigation that uses available technologies to measure both the independent and dependent variables that produce quantitative data to measure the effect of changes of, including but not limited to: temperature on reaction rate; temperature on volume of gas; speed on distance travelled; pressure on volume of gas"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Technologies / Science and technology / conduct the practical investigation to obtain relevant data and evaluate the limitations of the technologies used"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Technologies / Science and technology / investigate the range of measuring devices used in the practical investigation and assess the likelihood of random and systematic errors and the devices' degree of accuracy"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Technologies / Science and technology / using specific examples, compare the accuracy of analogue and digital technologies in making observations"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Technologies / Science and technology / assess the safety of technologies selected for the practical investigation by using chemical safety data and Work Health and Safety guidelines as appropriate"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Technologies / Science and technology / investigate case studies of past events to consider how they have affected the public image of science, including but not limited to: meltdowns of nuclear reactors; development of the smallpox vaccine; development of flight; positive and negative aspects of damming rivers"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Technologies / Evaluating technological applications / using examples, assess the impact that developments in technologies have had on the accumulation of evidence for scientific theories, laws and models, including but not limited to:"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Technologies / Evaluating technological applications / computerised simulations and models of the Earth’s geological history"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Technologies / Evaluating technological applications / X-ray diffraction and the discovery of the structure of deoxyribonucleic acid (DNA)"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Technologies / Evaluating technological applications / technology to detect radioactivity and the development of atomic theory"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Technologies / Evaluating technological applications / the Hadron collider and discovery of the Higgs boson"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Technologies / Evaluating technological applications / using examples, assess the impact that developments in scientific theories, laws and models have had on the development of new technologies, including but not limited to:"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Technologies / Evaluating technological applications / the laws of refraction and reflection on the development of microscopes and telescopes"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Technologies / Evaluating technological applications / radioactivity and radioactive decay on the development of radiotherapy and nuclear bombs"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Technologies / Evaluating technological applications / the discovery of the structure of DNA and the development of biotechnologies to genetically modify organisms"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Technologies / Evaluating technological applications / Newton’s laws and the technology required to build buildings capable of withstanding earthquakes"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Technologies / Evaluating technological applications / investigate scientists’ increasing awareness of the value of Aboriginal and Torres Strait Islander Peoples’ knowledge and understanding of the medicinal and material uses of plants and, in partnership with communities, investigate the potential for ethical development of new drug treatments and synthetic chemicals through the bioharvesting of plants from Country and Place"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / plan and conduct an investigation based on testing a claim, and consider: validity of the experimental design; reliability of the data obtained"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / accuracy of the procedure, including random and systematic error"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / using examples, evaluate the impact that sample selection and sample sizes can have on the results of an investigation"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Fact or Fallacy? / Evaluating claims / compare emotive advertising with evidence-based claims, including but not limited to: health claims on food packaging; claims about the efficacy of a product"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / evaluate how evidence of a correlation can be misinterpreted as causation, including but not limited to: the Hawthorne effect"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / 1991 study that linked hormone replacement therapy to coronary heart disease"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / the Mozart Effect on child development"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / examine a contemporary scientific debate and how it is portrayed in the mainstream media, including but not limited to: accuracy of information; validity of data; reliability of information sources"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / evaluate the use and interpretation of the terms ‘theory’, ‘hypothesis’, ‘belief’ and ‘law’ in relation to media reporting of scientific developments"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / compare the difference in reporting between a peer-reviewed journal article and a scientific article published in popular media"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse how conflicts of interest can result in scientific evidence being suppressed, misinterpreted or misrepresented and discuss measures to counteract such conflicts, including but not limited to: tobacco industry and lung cancer; fossil fuel industry and climate change; commercial industries researching products for market; asbestos mining and lung cancer"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / describe the halo effect and, using examples, explain how the influence of positive perceptions can result in the rejection of valid alternative perspectives, including but not limited to: celebrities endorsing products or viewpoints; popular brand companies making misleading advertising claims"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / using examples, analyse a pseudo-scientific claim and how scientific language and processes can be manipulated to sway public opinion, including but not limited to: astrology; numerology; iridology"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / conduct an investigation using secondary sources to research a scientist who has falsified their scientific experimental results, and discuss the process used to uncover the fraudulent research"
+  },
+  {
+   "code": "HSC-M3-T2-D11",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the scientific debate surrounding ‘publication’ and discuss the implications of scientists’ need to ‘publish or perish’"
+  },
+  {
+   "code": "HSC-M3-T2-D12",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / evaluate the increasing volume of scientific papers being published and assess the feasibility of science to effectively manage, review, replicate and validate investigations, for example:"
+  },
+  {
+   "code": "HSC-M3-T2-D13",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / Pons and Fleischmann's cold fusion announcement in 1989"
+  },
+  {
+   "code": "HSC-M3-T2-D14",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / Alex Smolyanitsky’s falsified scientific paper using the pseudonyms Maggie Simpson and Edna Krabapple, accepted for publication in 2014"
+  },
+  {
+   "code": "HSC-M3-T2-D15",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / Tom Spears’ nonsense journal submission accepted for publication in 2013"
+  },
+  {
+   "code": "HSC-M3-T2-D16",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science"
+  },
+  {
+   "code": "HSC-M3-T2-D17",
+   "path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / discuss the impact of fake science journals on the public perception of science"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / investigate the need for the regulation of scientific research in, for example: genetic modification of sex cells and embryos; development of biotechnological weaponry; testing of pharmaceuticals; products and processes of the nuclear industry; protection of Indigenous cultural and intellectual property"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / investigate and assess ethical issues surrounding current scientific research in, for example:"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / use of radiation"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / pharmaceutical research"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / gene manipulation in biotechnology"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / mining practices"
+  },
+  {
+   "code": "HSC-M4-T2-D7",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / bioprospecting"
+  },
+  {
+   "code": "HSC-M4-T2-D8",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / investigate a range of international scientific codes of conduct in regard to scientific research and practice in the areas of, for example: cloning; stem cell research; surrogacy; genetically modified foods; transplantation of organs"
+  },
+  {
+   "code": "HSC-M4-T2-D9",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate the effectiveness of international regulation in scientific research and practice"
+  },
+  {
+   "code": "HSC-M4-T2-D10",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate the costs involved in space exploration compared to investments in social issues, for example poverty and human global food supply"
+  },
+  {
+   "code": "HSC-M4-T2-D11",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate how scientific research aids economic development and human progress in relation to, for example: nuclear power generation"
+  },
+  {
+   "code": "HSC-M4-T2-D12",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / use of antimicrobial drugs"
+  },
+  {
+   "code": "HSC-M4-T2-D13",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / genetically modified foods"
+  },
+  {
+   "code": "HSC-M4-T2-D14",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / use of petroleum products"
+  },
+  {
+   "code": "HSC-M4-T2-D15",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / robotics and the use of drones"
+  },
+  {
+   "code": "HSC-M4-T2-D16",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate the impacts of scientific research, devices and applications on world health and human wellbeing, including but not limited to: medical surgical devices; surgical procedures; water purification and wastewater treatment; vaccination programs for the eradication of disease"
+  },
+  {
+   "code": "HSC-M4-T2-D17",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / using examples, analyse the impacts that governments and large corporations have on scientific research, including but not limited to: corporations and market opportunities; university research project budgets; governmental budgets and limited time priorities"
+  },
+  {
+   "code": "HSC-M4-T2-D18",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / benefit-sharing in research using Indigenous intellectual and cultural property"
+  },
+  {
+   "code": "HSC-M4-T2-D19",
+   "path": "Year 12 / Science and Society / Social, economic and political influences / evaluate how personal, cultural and socioeconomic perspectives can influence the direction of scientific research, for example: perceptions about diet in a multicultural society; investigating traditional medical treatments; mining practices"
+  }
+ ],
+ "questions": [
+  {
+   "id": "hsc202001",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which scientist’s investigations were used for the development of the microwave oven?\nFleischmann\nSmolyanitsky\nSpencer\nvan Helmont"
+  },
+  {
+   "id": "hsc202002",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Some parents claim that playing classical music will enhance their child’s intelligence.\nWhat is the name given to this claim?\nThe halo effect\nThe Mozart effect\nThe Doppler effect\nThe Hawthorne effect"
+  },
+  {
+   "id": "hsc202003",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What observation led to Edward Jenner’s development of a vaccine for smallpox?\nThe smallpox virus had an incubation period of 1–2 weeks.\nPeople with smallpox developed a rash and blisters containing pus.\nPeople given the smallpox vaccine did not develop the symptoms of smallpo\nMilkmaids exposed to cowpox did not generally show symptoms of smallpo\nx.\nx.\n\n– 3 –"
+  },
+  {
+   "id": "hsc202004",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The graph shows the total distance travelled by airline passengers globally, and the\nnumber of airline accidents resulting in fatalities.\ng\nr\na\np\nh\nWhich row in the table summarises the general trends in the data shown in the graph?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nTotal distance travelled\nNumber of fatal accidents\nIncreases\nDecreases\nIncreases\nIncreases\nDecreases\nIncreases\nDecreases\nDecreases"
+  },
+  {
+   "id": "hsc202005",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Aboriginal Peoples have known of the medicinal properties of tea-tree oil for thousands\nof years, but this has not been acknowledged as their cultural and intellectual property.\nA company wants to develop a new drug formulation using tea-tree oil. Which of the\nfollowing is the most ethical response to the information given?\nScientists conduct a review to ensure that tea-tree oil has not been used in a similar \nformulation.\nScientists analyse the active ingredients in tea-tree oil and apply to an ethics \ncommittee to allow testing of the new formulation.\nAboriginal Peoples are consulted and offered a governance role in the company, \nwith an economic agreement for the use of the knowledge.\nAboriginal Peoples are consulted to help determine the best formulation to use, \nthen the company’s scientists apply for patents to protect the formulation.\n \n\n– 4 –"
+  },
+  {
+   "id": "hsc202006",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A researcher conducted a double-blind trial to determine the effectiveness of a new\ncancer drug. Patients involved in the trial were assigned randomly to receive either a\nplacebo or the new drug.\nWhich row of the table shows who should be aware of the drug allocation in the double-\nblind trial?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nPatients\nResearcher\nYes\nYes\nYes\nNo\nNo\nYes\nNo\nNo"
+  },
+  {
+   "id": "hsc202007",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Clostridium difficile is a pathogenic bacteria often found in the human gut. It causes\na common, life threatening illness. One treatment is for a doctor to conduct a faecal\ntransplant, where the gut microbes from the patient are removed and a faecal sample from\na healthy human is inserted, re-populating the patient’s gut with beneficial microbes.\nWhat measure must be taken to ensure the success of this type of transplant?\nThe faeces to be transplanted must be sterilised.\nThe faeces to be transplanted must not contain pathogens.\nThe donor must be chosen from immediate family members of the patient.\nThe patient must be on a cranberry gut cleansing diet prior to the transplant."
+  },
+  {
+   "id": "hsc202008",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A new drug was tested on six healthy humans. They all immediately became very sick.\nWhat step should have been taken to ensure this was an ethical investigation?\nChoose the subjects randomly\nPay subjects for their participation\nInform subjects of possible side effects\nChoose subjects with highly effective immune systems\n \n\n– 5 –"
+  },
+  {
+   "id": "hsc202009",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "An experiment was conducted where several small plots with the same soil type were\nprepared. Some were planted with a single crop species (monospecies) and some were\nplanted with a variety of crop species (multispecies).\nThey were all exposed to the same weather conditions. Soil biomass was measured\nbefore and after the growing period of the crops.\nWhich row in the table identifies variables in this experiment?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nThe independent variable\nA controlled variable\nBiomass\nMonospecies or multispecies crop\nBiomass\nSoil type\nMonospecies or multispecies crop\nWeather conditions\nMonospecies or multispecies crop\nBiomass"
+  },
+  {
+   "id": "hsc202010",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What conclusion can be drawn from the results shown in the graph and table?\nAn increase in the amount of iron led to an increase in carbon dioxide levels.\nThe iron led to an increase in the phytoplankton population and a decrease in the \ncarbon dioxide levels.\nThe iron caused a decrease in carbon dioxide levels which led to an increase in \nphytoplankton photosynthesis and population growth.\nThe phytoplankton population would continue to increase and the carbon dioxide \nlevels would continue to decrease over the next two days.\n\n– 7 –"
+  },
+  {
+   "id": "hsc202011",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student found the following information that could be used to predict the intensity of\nindustrial fires.\nIntensity of fire (kW/m) = Heat yield (J/g) × Fuel load (kg/m2) × Rate of spread (m/s)\nEstimated fire intensity\n(kW/m)\nImpact on building\n< 500\nSmoke detected\n1000\nPallets charred\n5000\nFlames detected\n> 7000\nRoof of factory on fire\nThe student researched a fire in a large warehouse that contained new hardwood timber\npallets with an approximate heat yield of 17 000 J/g and an estimated fuel load of\n11 kg/ m2. Flames had been reported inside the factory but the roof was not on fire.\nUsing the above data, approximately how far would the fire travel each second?\n0.0053 m\n0.027 m\n37 m\n190 m\n \n\n– 8 –\nUse the information provided to answer Questions 13 −15.\nAn analogue thermometer and a digital temperature probe were both placed in water that was \nat exactly 0°C and then in water that was at exactly 100°C. The readings for each device were \nrecorded and the procedure was repeated.\nDevice\nReading in 0°C water\n(°C)\nReading in 100°C water\n(°C)\nTrial 1\nTrial 2\nTrial 1\nTrial 2\nAnalogue thermometer\n− 0.5\n− 0.5\n99.5\n99.5\nDigital temperature probe\n5.37\n5.37\n105.59\n105.59"
+  },
+  {
+   "id": "hsc202012",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What is the best explanation for the differences in readings on the devices compared to\nthe exact temperature of the water?\nHuman errors\nParallax errors\nRandom errors\nSystematic errors"
+  },
+  {
+   "id": "hsc202013",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Based on the information provided, which statement about the devices is correct?\nThe analogue thermometer is as reliable as the digital temperature probe.\nThe analogue thermometer is as accurate as the digital temperature probe.\nThe analogue thermometer is less reliable than the digital temperature probe.\nThe analogue thermometer is more accurate than the digital temperature probe."
+  },
+  {
+   "id": "hsc202014",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "These devices were then used to measure the temperature of a gas sample. The reading\non the digital temperature probe was 55.48°C .\nWhich row of the table shows the values closest to the actual temperature of the gas\nsample and the temperature reading on the analogue thermometer?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nActual temperature of \ngas sample (°C)\nReading on the analogue \nthermometer (°C)"
+  },
+  {
+   "id": "hsc202015",
+   "year": 2020,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The graph shows the rate of cataract surgery in four countries over a period of time.\ngra\np\nh\nPopulations of each country in 2009 are shown.\nCountry\nPopulation (× 106)\nMexico\n115.5\nIndia\n1214\nChina\n1335\nArgentina\n40.80\nWhich country had the LOWEST total number of cataract operations in 2009?\nArgentina\nChina\nIndia\nMexico\n\n– 10 –\nUse the information provided to answer Questions 17 and 18.\nStudents conducted an experiment to investigate the relationship between the speed of an \nobject and the distance that it travels.\n1. They rolled a marble down a ramp.\n2. The marble then rolled across a bench and off the end of the bench.\n3. A data logger measured the speed of the marble as it reached the end of the bench.\n4. The students measured the horizontal distance from the end of the bench to where the \nmarble landed on the floor.\nexperiment"
+  },
+  {
+   "id": "hsc202016",
+   "year": 2020,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What must be kept the same in each trial of the experiment?\nThe height of the bench\nThe mass of the marble used\nThe release point on the ramp\nThe angle of inclination of the ramp"
+  },
+  {
+   "id": "hsc202017",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The table shows the number of deaths from three diseases before and after the\nimplementation of vaccination programs. The comparisons are made over similar periods\nof time.\nDisease\nDeaths before\nvaccination program\nDeaths after\nvaccination program\nMeasles\n542 000\n122 000\nPolio\n350 000\n1 315\nTetanus\n200 000\n48 000\nBased on the information provided, which row of the table correctly compares the\npercentage effectiveness of the vaccination programs?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nMost effective\nLeast effective\nMeasles\nTetanus\nPolio\nMeasles\nTetanus\nPolio\nPolio\nTetanus\n\n– 12 –"
+  },
+  {
+   "id": "hsc202018",
+   "year": 2020,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A recent study examined the combined effect of high-dose vitamin C and conventional\ncancer treatment on human brain tumour cells.\nResults from this study are shown.\ngraphs\nUsing the information above, which row of the table is correct?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nConclusion\nReason for drawing the conclusion\nThe effect of vitamin C \nvaries between Type 1 and \nType 2 brain tumour cells\nConventional treatment has the same effect on \nType 1 and Type 2 brain tumour cells\nVitamin C decreased the \ntumours in patients\nThere was a decrease in the fraction of tumour \ncells surviving after combined treatments were \napplied\nCombined treatments are \nthe most effective in treating \nbrain tumour patients\nCombined treatments decreased the number \nof brain tumour cells more than the other \ntreatments\nVitamin C is effective \nwithout conventional \ntumour treatment\nBrain tumour cells decreased in number by the \napplication of vitamin C more significantly than \nwhen treated with conventional treatments alone\n © 2020 NSW Education Standards Authority\n\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 13 –\nDo NOT write in this area.\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\n \nInvestigating Science"
+  },
+  {
+   "id": "hsc202019",
+   "year": 2020,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Outline TWO experiments Priestley conducted. In your answer, refer to the data he\ncollected in each experiment.\n3\n5486310366"
+  },
+  {
+   "id": "hsc202020",
+   "year": 2020,
+   "number": "22",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student conducted an investigation into the relationship between the pressure and\nvolume of a sample of a gas, which was kept at a constant temperature of 25°C. It\nwas kept in a calibrated container with a volume that could be adjusted. The pressure\nof the gas inside the container was recorded as the volume of the gas in the container\nwas altered.\nAfter analysing the raw data, the student hypothesised that an inverse relationship\nexisted between the volume and the pressure of the gas sample. The student produced\nthe table from the data collected.\n1\n0.42\n0.71\n0.83\n1.01\n1.30\n(L–1)\nvolume\nPressure (kPa)\n30\n51\n62\n74\n80\n(a)\nGraph the data on the grid and draw a straight line of best fit.\n2\ng\nrid\n7986310363"
+  },
+  {
+   "id": "hsc202021",
+   "year": 2020,
+   "number": "23",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nDescribe, using an example, how fraudulent scientific research can be uncovered.\n3\n(b)\nExplain TWO implications of the need for scientists to ‘publish or perish’.\n3\n6277310365"
+  },
+  {
+   "id": "hsc202022",
+   "year": 2020,
+   "number": "24",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The graph shows approximate US government spending over time on space research\nand welfare from 1960 to 2015.\ngrap\nh\n0\n(a)\nWhat conclusion can be drawn from the data in the graph concerning the relative\nspending on space research and welfare in 1970?\n(b)\nExplain how data presented in this format can affect the public perception of\nspending on space research.\n1\n4\n1032310369"
+  },
+  {
+   "id": "hsc202023",
+   "year": 2020,
+   "number": "25",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A researcher hypothesised that a particular condition was caused by a specific\nbacterium. The researcher did not suffer from the condition. She isolated the\nsuspected bacteria from a sufferer, injected it into herself and developed symptoms\nof the condition. After taking the appropriate antibiotics, she no longer displayed the\nsymptoms and concluded that the condition was caused by this bacterium.\n(a)\nExplain why the experiment is unreliable.\n2\n(b)\nIf this investigation was proposed to an ethics committee, justify TWO\nrecommendations they are likely to make.\n4\n0136310363"
+  },
+  {
+   "id": "hsc202024",
+   "year": 2020,
+   "number": "26",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a) Describe how a technology has had a significant impact on the development of\natomic theory.\n3\n(b) How has our understanding of radioactivity affected the development of\nradiotherapy?\n4\n7037310360"
+  },
+  {
+   "id": "hsc202025",
+   "year": 2020,
+   "number": "27",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Astronomers define retrograde motion as the appearance of planets moving backwards\nalong their orbit, due to an optical illusion from Earth. This happens at various times\nthroughout the year.\nAstrologists believe that when Mercury is in ‘retrograde’, chaos and frustration\nincrease, particularly when travelling.\n(a) How might astrologists’ use of the term retrograde influence the public’s\nopinion of astrology?\n2\n(b) Design an investigation that could be used to test the claim that Mercury’s\nperiod of retrograde motion correlates with disruptions to travel.\n4\n2207310364"
+  },
+  {
+   "id": "hsc202026",
+   "year": 2020,
+   "number": "28",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nHow did the use of X-ray diffraction lead to an understanding of the structure\nof deoxyribonucleic acid (DNA)?\n2\n(b)\nExplain how knowledge of the structure of DNA has led to the development of\nTWO technologies.\n4\n1619310360"
+  },
+  {
+   "id": "hsc202027",
+   "year": 2020,
+   "number": "29",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "In 1845 a hypothesis was tested by setting up two groups of people playing trumpets.\nFifteen of the trumpeters were on a moving train travelling at constant speed while\nanother fifteen were stationary on the ground next to the railway line. All thirty\ntrumpeters continuously played the same note as the train passed the stationary group.\nA stationary observer on the ground listened carefully as the train moved past.\n(a)\nWrite a suitable hypothesis for this experiment.\n1\n(b)\nSketch an appropriate graph that shows how the pitch, measured in Hertz (Hz),\nof the note produced by the two groups of trumpeters would be heard by the\nstationary observer over time. Include relevant labels and units on the axes.\n3\nKey\n0585310361"
+  },
+  {
+   "id": "hsc202028",
+   "year": 2020,
+   "number": "30",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Dirty water causes the death of a human every 10 seconds, worldwide.\nEvaluate the effects of scientific research into water quality on global health and\nhuman wellbeing. In your answer, refer to different methods of water treatment.\n7\n4074310368"
+  },
+  {
+   "id": "hsc202029",
+   "year": 2020,
+   "number": "31",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "An international health advisory agency, related to the United Nations, states that\nasbestos causes mesothelioma and other cancers. It also states that building products\nrelease asbestos fibres during production, building, maintenance and demolition.\nSixty-six countries, including Australia, have stopped mining asbestos. Russia and\nKazakhstan are the two largest miners and exporters of asbestos. Asian countries\nimport 75% of all asbestos.\nAn industry-funded asbestos information agency states that asbestos is a safe product,\nand should fibres be inhaled, they will dissolve within two weeks.\n(a)\nProvide possible reasons for the differences in the statements made by these two\nagencies.\n3\n(b)\nDiscuss the decision made by countries to continue to mine asbestos.\n4\n9566310369"
+  },
+  {
+   "id": "hsc202030",
+   "year": 2020,
+   "number": "32",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student is researching climate change and wrote summaries of three pieces of\ninformation.\nStudent summary 1: An article from a daily newspaper in 2019\nAn astrophysicist stated that when water vapour levels rise, so does global air\ntemperature, as shown in the graph. This relationship has been verified by other\nscientists.\n0\n1988 1990 1992 1994 1996 1998 2000\nYear\nVariation from average\n2002 2004 2006 2008 2010 2012 2014\nKEY\nWater vapour\nGlobal air temperature\nThe astrophysicist suggested that water vapour is the main contributor to climate\nchange, while carbon dioxide is only a minor contributor to the greenhouse effect.\nAnother scientist said this is misleading since increasing air temperatures cause\nincreased evaporation. Therefore increasing carbon dioxide levels can still lead to\nincreased water vapour.\nLater the article mentions that the astrophysicist’s work is paid for by oil companies.\n0008310361"
+  },
+  {
+   "id": "hsc202101",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which technology was used in the discovery of the structure of deoxyribonucleic acid\n(DNA)?\nSeismograph\nGeiger counter\nHadron collider\nX-ray diffraction"
+  },
+  {
+   "id": "hsc202102",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A microwave oven with five power settings was investigated. It was used to heat a\nvolume of 200 mL of water for 30 seconds on each power setting. The results are shown\nin the graph.\nGraph showing results\nIdentify the independent variable in this investigation.\nVolume of water\nTemperature change\nMicrowave power setting\nLength of time the water was heated\n\n– 3 –"
+  },
+  {
+   "id": "hsc202103",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which section of a scientific paper is most likely to contain information about possible\nimplications and future directions for research?\nDiscussion\nMethod\nReferences\nResults"
+  },
+  {
+   "id": "hsc202104",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What factor could reduce the effectiveness of the peer review process of a research paper\nabout a particular dinosaur’s diet?\nThe inability to study samples of the dinosaur’s diet\nToo few newspaper articles about the dinosaur’s diet\nA lack of experts on the subject of the dinosaur’s diet\nA poor reference list in the paper about the dinosaur’s diet"
+  },
+  {
+   "id": "hsc202105",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "100.0\n100.0\nWhat would be the most likely explanation for the variation between the students’\nresults?\nSystematic errors in the thermometers used\nParallax errors in reading the thermometers\nRandom errors in reading the thermometers\nChanges in the temperature of the boiling water\n\n– 7 –"
+  },
+  {
+   "id": "hsc202106",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What methodology was used to collect the data analysed by Doppler?\nGraphical analysis\nConducting surveys\nScientific observation\nComputer simulations\n\n– 4 –"
+  },
+  {
+   "id": "hsc202107",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "In a chemical reaction, 25 mL of gas was produced in 9.13 seconds.\nA student used a calculator correctly to determine the volume of gas produced each\nsecond. The calculator showed 2.73822563 as the answer.\nBased on this information, how should this answer be reported?\n3 mL s–1\n2.7 mL s–1\n2.73 mL s–1\n2.73822563 mL s–1"
+  },
+  {
+   "id": "hsc202108",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Why is iridology a pseudoscience?\nIt makes accurate predictions based on the characteristics of the iris.\nIt is not based on quantitative observations of the characteristics of the iris.\nIt makes a hypothesis linking the characteristics of the iris and health outcomes.\nIt is not based on reproducible cause and effect relationships between the \ncharacteristics of the iris and health outcomes.\n\n– 5 –\nUse the information provided to answer Questions 9 and 10.\nThe graph shows the results of a survey conducted within a country to determine how much \nshould be spent on scientific research. The results are divided according to age groups. \nCurrently, the country is spending 1% of its budget on scientific research.\nGr\naph\n sh\nowing result s"
+  },
+  {
+   "id": "hsc202109",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Of the total population surveyed, what percentage of people support budget spending on\nscientific research increasing to 2%?\n7%\n19%\n23%\n30%"
+  },
+  {
+   "id": "hsc202110",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which age group has the largest percentage of people who support spending MORE than\n1% on research?\n18–34\n35–50\n51–65\n65+\n\n– 6 –"
+  },
+  {
+   "id": "hsc202111",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The diagram shows some of the information used by Eratosthenes. The distance from\nAlexandria to Syene, in a straight line around Earth’s surface, is 5000 stadia (an ancient\nmeasure of distance).\nDiagram sh\nowing\ninfo\nrmation used\nby Erato\nsthe\nnes\nThe following two ratios are equal to each other.\n7.2°\nDistance between Alexandria and Syene\nRatio 1:\nRatio 2:\n360°\nCircumference of Earth\nUsing the information provided, what is the circumference of Earth?\n700 stadia\n36 000 stadia\n40 000 stadia\n250 000 stadia\n \n \n\n– 8 –"
+  },
+  {
+   "id": "hsc202112",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A researcher hypothesised that a new type of fertiliser would increase the growth of pea\nplants. The following experiment was designed to test this hypothesis.\n• 200 pea plant seedlings were planted of which 100 received fertiliser dissolved in water\nand the other 100 received water alone.\n• An additional substance, X, was added to allow the fertiliser to dissolve completely in\nthe water.\n• The plants were grown under the same conditions.\n• The plant height and number of leaves were recorded.\nThe researcher concluded that the fertiliser increased the height of the pea plants but not\nthe number of leaves.\nWhy is this experiment invalid?\nOnly one type of plant was used.\nThere are two dependent variables.\nThe effect of substance X on plant growth was not tested.\nThe number of plants was too small to reach a valid conclusion.\n \n \n\n– 9 –\nUse the information provided to answer Questions 14 and 15.\nA researcher measured the radioactivity (in counts per minute) of a sample over a period of \nseven days. The results are shown in the graph.\nG\nr\nap\nh"
+  },
+  {
+   "id": "hsc202113",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of the following can be deduced from these results?\nThe radioactivity will reach zero by day ten.\nThere were 20 counts per minute at day four.\nThe rate of decay is not constant over seven days.\nAfter 14 days the count will be half that at seven days."
+  },
+  {
+   "id": "hsc202114",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The half-life of a radioactive sample is the time taken for half the atoms in the sample to\ndecay.\nWhat is the half-life of the sample measured in this research?\n1.25 days\n2 days\n3.5 days\n40 days\n \n\n– 10 –"
+  },
+  {
+   "id": "hsc202115",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "In 1997, more than 60 000 homing pigeons were released from France. Only about 5000\nbirds made it 800 km home to England. About 55 000 were never recovered.\nAt the same time as the pigeons were flying between the two countries, a supersonic\nplane flew overhead. A supersonic plane creates a very loud sound that can travel about\n100 km.\nWhich scientific term best describes the disappearance of the birds coinciding with the\nflight of the plane overhead?\nCausation\nConclusion\nCorrelation\nObservation\n \n \n\n– 11 –"
+  },
+  {
+   "id": "hsc202116",
+   "year": 2021,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Waterborne diseases are transmitted by contaminated water.\nA study investigated the effectiveness of a chemical in reducing waterborne diseases.\nThe number of people contracting waterborne diseases and the percentage of people with\naccess to treated water were measured.\nGr\nap\nh\nsh\now\nin\ng\nre\nsu\nl\nts\nWhat additional piece of information is required before the effectiveness of the chemical\non reducing waterborne diseases can be determined?\nIf the chemical had any side effects\nThe total number of people in the study\nThe type of chemical used to treat the water\nIdentification of the pathogens that cause the diseases\n\n– 12 –"
+  },
+  {
+   "id": "hsc202117",
+   "year": 2021,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Eight studies investigating the link between women using hormone replacement therapy\n(HRT) and their risk of coronary heart disease were compared. Some of the studies were\nadjusted for socioeconomic status and some were not.\nThe diagram summarises the results of the studies.\nRisk of coronary heart disease when using HRT\nRisk of coronary heart disease diagra\nm\nWhat can be concluded from this data?\nHRT gives women a lower risk of coronary heart disease.\nThe range of the results is too wide to draw a valid conclusion.\nSocioeconomic status, rather than HRT, affects women’s risk of coronary heart \ndisease.\nWhen adjusted for socioeconomic status, the rate of coronary heart disease is \nincreasing over time. \n\n– 13 –"
+  },
+  {
+   "id": "hsc202118",
+   "year": 2021,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A survey was conducted to see if the type of contributor to a scientific study changed\npeople’s perception of the merit of the study.\nEach person surveyed was asked to judge the merit of the research that had been\nconducted by scientists contributing from either industry (IND), university (UNI) or\ngovernment (GOV), or some combination of these.\nThe data collected is summarised in the graph.\nGraph of\ndata\nWhich statement is consistent with this data?\nThe contribution of industry scientists always reduces the perceived merit of the \nresearch.\nThe contribution of university scientists always increases the perceived merit of the \nresearch.\nThe contribution of government scientists always increases the perceived merit of \nthe research.\nThe contribution of more types of scientists always reduces the perceived merit of \nthe research.\n\nBLANK PAGE\n– 15 –\n\nBLANK PAGE\n– 16 –\n © 2021 NSW Education Standards Authority\n\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 17 –\nDo NOT write in this area.\n2021 HIGHER SCHOOL CERTIFICATE EXAMINATION\n \nCentre Number\nStudent Number\n5638310365\nInvestigating Science"
+  },
+  {
+   "id": "hsc202119",
+   "year": 2021,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Outline the need for regulation in EITHER scientific research or practice. Include an\nexample to support your answer.\n3\n1024310360"
+  },
+  {
+   "id": "hsc202120",
+   "year": 2021,
+   "number": "22",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nOutline a structural feature of DNA and how this feature allows organisms to be\ngenetically modified.\n2\n(b)\nA team of researchers wanted to investigate the effect of feeding genetically\nmodified (GM) mice a high-fat diet. They hypothesised that the GM mice would\ngain less weight than normal mice (N). To test this hypothesis, the researchers\nset up the following four groups.\n4\nGroup 1\nN mice fed a normal diet\nGroup 2\nN mice fed a high-fat diet\nGroup 3\nGM mice fed a normal diet\nGroup 4\nGM mice fed a high-fat diet\nExplain why the four groups were required to test the hypothesis.\n5486310366"
+  },
+  {
+   "id": "hsc202121",
+   "year": 2021,
+   "number": "23",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "How can both the validity and reliability of information in a secondary source be\ndetermined?\n2"
+  },
+  {
+   "id": "hsc202122",
+   "year": 2021,
+   "number": "24",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Discuss whether Spencer’s investigation into microwaves deviated from the line\nmodel of scientific investigation.\nar\n4\n7986310363"
+  },
+  {
+   "id": "hsc202123",
+   "year": 2021,
+   "number": "25",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Each year since 1973, 5000 members of the general public have been surveyed and\nasked if they support the use of nuclear energy. The information collected is presented\nin the graph shown. The graph also shows when three significant nuclear accidents\noccurred, that released radioactive material into the environment.\n3\nG\nra\nph\nA hypothesis was made stating that public support declines as a result of nuclear\naccidents.\nExplain whether the information in the graph is consistent with this hypothesis.\n0736310369"
+  },
+  {
+   "id": "hsc202124",
+   "year": 2021,
+   "number": "26",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A group of students gathered data about an object that was travelling at a constant\nspeed for two different time periods (A and B). The graph shows the data gathered by\nthe group.\nG\nr\na\np\nh\nwi\nth\ndata\n(a)\nWrite an appropriate unit for each axis on the graph.\n2\n(b)\nThe students produced the graph from data they had tabulated.\nDraw a table containing the data that the students used to construct the graph.\nDo not include units in the table.\n2\n(c)\nExplain why there is a difference in the distance travelled by the object in the\ntwo time periods. Use calculations to support your answer.\n3\n6277310365"
+  },
+  {
+   "id": "hsc202125",
+   "year": 2021,
+   "number": "27",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Before a vaccination program against a disease can start, the safety and efficacy of\npossible vaccines has to be demonstrated scientifically.\nA company recruited nearly 44 000 volunteers for a vaccine trial. Half of the\nvolunteers received the vaccine and the other half received a placebo.\n(a)\nOutline TWO pieces of information volunteers should have been provided with\nprior to the trial to ensure they were treated ethically.\n2\n(b)\nCompare the process used by this company to establish the efficacy of its\nvaccine with the process used in the development of the smallpox vaccine.\n4\n1032310369"
+  },
+  {
+   "id": "hsc202126",
+   "year": 2021,
+   "number": "28",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nWhat is the difference between a theory and a law, when these words are used\nscientifically? Support your answer with an example of each.\n4\n(b)\nThe following is a quote from a media report.\nWhen considering the impact of humans on climate change,\none expert believes it’s useful to compare it to another famous\nhypothesis, such as atomic theory or the theory of gravity.\nEvaluate whether the media’s use of the words hypothesis and theory are\nscientifically appropriate.\n3\n0136310363"
+  },
+  {
+   "id": "hsc202127",
+   "year": 2021,
+   "number": "29",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The label on a container of Green Tea Extract included a claim.\n5\nContainer of Green Tea Extract capsules\nDescribe a double-blind, placebo-controlled trial that could be used to scientifically\ntest the claim on the container.\n7037310360"
+  },
+  {
+   "id": "hsc202128",
+   "year": 2021,
+   "number": "30",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "During World War II, Albert Einstein, a celebrated scientist, signed a letter\nencouraging the American president to support ongoing research into nuclear fission,\nwhich could lead to the development of nuclear bombs.\nDiscuss whether Einstein’s endorsement could be considered to be an example of the\nhalo effect.\n4\n2207310364"
+  },
+  {
+   "id": "hsc202129",
+   "year": 2021,
+   "number": "31",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Two towns, A and B, are located on a river. It is proposed that a dam be built between\nthe two towns.\n(a)\nExplain ONE benefit of damming the river.\n2\n(b)\nEach of the towns has about 20 000 residents. The council surveyed residents\nof both towns and stated that 95% of the residents surveyed supported the\nconstruction of the dam.\nThe data collected from the survey is shown.\n4\nNumber of residents surveyed\nFor\nAgainst\nTotal\nTown A\n2612\n159\n2771\nTown B\n11\n275\n286\nTotal\n2623\n434\n3057\nWith reference to data from the table, explain how the council’s statement has\nmisrepresented the views of the residents.\n1619310360"
+  },
+  {
+   "id": "hsc202130",
+   "year": 2021,
+   "number": "32",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Two groups of students investigated the relationship between temperature and reaction\nrate. After reading the scientific literature, they found that the reaction rate between an\nacid and a metal doubles for each 10°C increase in temperature.\nThe two groups reacted 10 g of metal with 200 mL of the same concentration of acid\nin each trial. In each trial, neither the temperature nor the concentration changed\nsignificantly while the metal was reacting.\nThe reaction rate, at different temperatures, was determined by measuring the volume\nof hydrogen gas produced in 10 seconds, and converted to a rate measured in mL/min.\nAll the results from the two groups are shown. Each individual trial is represented by\nan × on the graphs.\n9\nGr\nou\np\nA\nGr\nou\np\nB\nAnalyse the reliability, accuracy (including error) and validity of the experimental\nresults obtained by each of the two groups.\n0585310361"
+  },
+  {
+   "id": "hsc202131",
+   "year": 2021,
+   "number": "33",
+   "marks": 13,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student wanted to conduct an investigation into some of the factors that allow an\nanimal to survive. She summarised information relating to an experiment that Joseph\nPriestley had conducted.\nPriestley placed a live mouse inside a sealed jar and timed how long the\nmouse took to die.\nPriestley then placed a live mouse inside a sealed jar that also had a plant\ninside it. The mouse survived for a longer period of time.\n(a)\nPropose a hypothesis and a conclusion for the experiment Priestley was\nconducting.\nHypothesis:\nConclusion:\n2\n(b)\nIdentify TWO variables that should be kept constant in Priestley’s experiment.\nJustify your answer.\n4\n4074310368"
+  },
+  {
+   "id": "hsc202132",
+   "year": 2021,
+   "number": "34",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Economic, social and political factors influence the choice of scientific research to be\ncarried out.\nEvaluate the effect of TWO of these factors, using examples to support your answer.\n5\n0008310361\n8952310367\nSection II extra writing space\n2306310364\nSection II extra writing space\n2770310369\nSection II extra writing space"
+  },
+  {
+   "id": "hsc202201",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which scientist(s) collected data to investigate peptic ulcers?\nDoppler\nSmolyanitsky\nMarshall and Warren\nPons and Fleischmann"
+  },
+  {
+   "id": "hsc202202",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which event is most likely to have improved the public image of science?\nA decrease in biodiversity after the damming of a river\nThe reduction in transport times due to the development of flight\nHigh levels of radiation in the environment due to a nuclear meltdown\nUnexpected negative side effects after administration of a smallpox vaccine"
+  },
+  {
+   "id": "hsc202203",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What gas did Priestley collect data on?\nHydrogen\nOxygen\nRadon\nXenon\n\n– 3 –\nUse the information provided to answer Questions 4−5.\nA student designed an investigation to test their hypothesis that plants lose more water on a \nwindy day than on a non-windy day.\n1. The student had two pot plants of the same size and the same type of plant.\n2. Both pots were weighed, then one pot was placed outside in the wind, while the other \nwas left inside.\n3. After six hours, the outside pot plant was brought inside and both pot plants were \nweighed."
+  },
+  {
+   "id": "hsc202204",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "12.0\nWhat is the best approximation for the average speed of the toy car?\n0.413 m s–1\n0.533 m s–1\n1.65 m s–1\n2.13 m s–1\n\n– 10 –\nUse the information provided to answer Questions 19–20.\nA tuned mass damper (TMD) is a piece of technology that can be used to reduce the damage \nto buildings during an earthquake. A TMD is a large mass that is suspended from the top of a \nbuilding.\nA student wanted to investigate the effect of a TMD by constructing the model shown in the \ndiagram.\nDiagram of tuned mass dampe r\nThe model had the following features:\n1. A shaking table that moves horizontally at a constant frequency to model the \nforces a building would experience during an earthquake.\n2. A sensor placed at the top of the model to record horizontal acceleration.\nWith no mass suspended from the top of the model, the student recorded the results shown in \nthe graph.\nGraph of rec\norde\nd\n \na\nc\nce\nle\nra\nt\ni\non\n f\nrequency\n\n– 11 –"
+  },
+  {
+   "id": "hsc202205",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of the following statements about this investigation is correct?\nIt does not have a control.\nIt has no dependent variable.\nIt is well designed because it tests reliability.\nIt is poorly designed because not all variables are controlled."
+  },
+  {
+   "id": "hsc202206",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What was the scientific advancement made possible by the interpretation of the\nphotograph taken by Rosalind Franklin in 1952 using X-ray diffraction?\nEvidence of the structure of the DNA molecule\nUnderstanding the pathway of X-rays through DNA\nThe pattern of radiation given off by a DNA molecule\nUnderstanding the reflection and refraction of X-rays through DNA\n\n– 4 –"
+  },
+  {
+   "id": "hsc202207",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A parent purchases a music book for their child who is learning to play an instrument.\nThey choose a more expensive book that has the picture of a popular recording artist on\nthe cover rather than a similar book with a plain cover.\nWhat does the perception behind this purchase illustrate?\nThe halo effect\nThe Mozart effect\nThe butterfly effect\nThe accordion effect"
+  },
+  {
+   "id": "hsc202208",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of the following would be an example of ethical scientific practice?\nSelectively removing outliers from results prior to peer review\nStopping an expensive medical trial due to negative side effects\nDeclaring a conflict of interest between the conclusion of a scientific trial and the \npublishing of results\nEnsuring consent of participants is obtained between the conclusion of a scientific \ntrial and the publishing of results\n\n– 5 –\nUse the following information to answer Questions 9–10.\nA company claims that its dietary supplement reduces cholesterol by 10% after one week of \nuse. The company measured the cholesterol level of eight people who had been taking the \nsupplement for one week and compared the measurements to the cholesterol level of eight \npeople who had not taken the supplement. \nThe company presented the data in the table to support their claim.\nAVERAGE BLOOD CHOLESTEROL LEVEL (mmol L–1)\nGroup with supplement\nGroup without supplement\n5.2\n5.8"
+  },
+  {
+   "id": "hsc202209",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What is the dependent variable in this experiment?\nDiet\nThe supplement\nBlood cholesterol level\nThe number of people in each group"
+  },
+  {
+   "id": "hsc202210",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Why could the claim made by the company be considered misleading?\nThere is no control group in the experiment.\nThe reduction in cholesterol levels according to the averages provided is \n0.6 mmol L–1.\nThe people taking the supplement may have been unknowingly influenced by the \nHawthorne effect.\nThe initial blood cholesterol levels of the participants in each group were not taken \ninto consideration.\n\n– 6 –"
+  },
+  {
+   "id": "hsc202211",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The purpose of a placebo in a scientific investigation is to\nact as a control.\nincrease the number of participants.\nensure no bias is demonstrated by researchers.\ncompare the effectiveness to previous medication used."
+  },
+  {
+   "id": "hsc202212",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The volume of a box is given by the formula:\nVolume = Length × Width × Height.\nDrawin\ng of a\nbox\nA student measured the dimensions of a box and recorded them.\nDimension\nLength (m)\nLength\n2.86\nWidth\n0.91\nHeight\n2.00\nWhich of the following should the student use to report the volume of the box?\n5 m3\n5.2 m3\n5.21 m3\n5.2052 m3\n\n– 7 –"
+  },
+  {
+   "id": "hsc202213",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The graph shows the number of deaths due to an infectious disease. The 10-year average\nnumber of deaths was calculated for the period 1952–1961 and is shown as a dotted line\nacross the entire graph.\nGra\nph\nof\ndea\nt\nh to\ntals\ndue\nto\nan infectious di\nseas\ne\nYear\nA student hypothesised that a vaccine was introduced against the infectious disease some\ntime between 1962 and 1968.\nHow does data from the graph support this hypothesis?\nThere were zero deaths from the disease after 1968.\nThere were fewer cases of the disease in 1968 than in 1970.\nThe number of people contracting the disease decreased between 1962 and 1968.\nThe number of people dying from the disease was consistently below the 10-year \naverage after 1968."
+  },
+  {
+   "id": "hsc202214",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A researcher wants to determine the efficacy of a new medication intended to treat a\ncondition by conducting a double-blind trial on a group of people who suffer from the\ncondition. The group of people involved in the trial are randomly assigned to be in\nGroup A or Group B.\nHow should this trial be conducted?\nThe researcher allocates a placebo to Group A and the medication to Group B.\nThe researcher allocates a placebo AND the medication to Group A and allocates a \nplacebo AND the medication to Group B.\nPlacebos are allocated to Group A and the medication is allocated to Group B, \nwithout the researcher knowing what allocations have been made.\nPlacebos AND the medication are allocated to Group A and placebos AND \nthe medication are allocated to Group B, without the researcher knowing what \nallocations have been made.\n \n\n– 8 –"
+  },
+  {
+   "id": "hsc202215",
+   "year": 2022,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student wants to conduct an experiment to determine the relationship between the\nspeed of a car and the distance that it travels.\nWhich variable should be kept constant during the experiment?\nThe model of the car used\nThe distance travelled by the car\nThe speed at which the car travels\nThe period of time that the car travels\n\t\n\n– 9 –"
+  },
+  {
+   "id": "hsc202216",
+   "year": 2022,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which is the best explanation for the effectiveness of a TMD, according to Newton’s laws?\nIncreasing the mass of the TMD decreases the inertia of the building.\nThe TMD will reduce the magnitude of the equal but opposite forces on the \nbuilding.\nAs the acceleration of the building increases, the horizontal force on the TMD \ndecreases.\nThe acceleration of the building is inversely proportional to the combined mass of \nthe TMD and building.\n\nBLANK PAGE\n © 2022 NSW Education Standards Authority\n– 12 –\n\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 13 –\nDo NOT write in this area.\n2022\nHIGHER SCHOOL CERTIFICATE EXAMINATION\n \nInvestigating Science"
+  },
+  {
+   "id": "hsc202217",
+   "year": 2022,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Complete the table to identify TWO different sections of a student’s investigative\nreport AND the purpose of each section.\nSection of\ninvestigative report\nPurpose of this section\n3\n5486310366"
+  },
+  {
+   "id": "hsc202218",
+   "year": 2022,
+   "number": "22",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A group of students wanted to compare the accuracy of two types of balance.\nA sample of iron with a known mass of 1.15 kg was weighed three times on each\nbalance. The results are shown in the table.\nMASS OF IRON (kg)\nAnalogue balance\nDigital balance\n1.12\n1.30\n1.12\n1.27\n1.16\n1.29\n(a)\nUsing data from the table, assess the accuracy of the analogue balance and the\ndigital balance.\n3\n(b)\nA student suspected the difference between the known value and the experimental\nresults could be due to random error.\nJustify the steps a student could take to minimise random error in this\ninvestigation.\n3\n7986310363"
+  },
+  {
+   "id": "hsc202219",
+   "year": 2022,
+   "number": "23",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Evaluate how scientific research has affected human progress. Refer to ONE relevant\nexample to support your answer.\n4\n0736310369"
+  },
+  {
+   "id": "hsc202220",
+   "year": 2022,
+   "number": "24",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student carried out an investigation to test the claim that the average mass of a sugar\ncube is 4.0 g. The student used a balance to measure the mass of multiple sugar cubes.\nThe results are shown in the table.\nNumber of\nRecorded mass\nsugar cubes\n(g)\n5\n10\n30\n15\n50\n20\n70\n25\n104\n30\n110\n35\n40\n130\n136\n10\n(a)\nGraph these results on the grid provided AND include an appropriate line of best\nfit for the data.\n4\n6277310365"
+  },
+  {
+   "id": "hsc202221",
+   "year": 2022,
+   "number": "25",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Justify the method used by Eratosthenes to calculate the circumference of Earth.\n5\n0136310363"
+  },
+  {
+   "id": "hsc202222",
+   "year": 2022,
+   "number": "26",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Some Indigenous communities have formed benefit-sharing partnerships with\nscientists, governments and large corporations.\nAnalyse the impacts of ONE benefit-sharing partnership involving an Indigenous\ncommunity. Use a specific example of a benefit-sharing partnership in your response.\n4\n7037310360"
+  },
+  {
+   "id": "hsc202223",
+   "year": 2022,
+   "number": "27",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Explain the method that van Helmont used to investigate how plants grow. In your\nanswer, refer to variables that van Helmont controlled.\n4\n2207310364"
+  },
+  {
+   "id": "hsc202224",
+   "year": 2022,
+   "number": "28",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Analyse how economic influences have impacted the collection and manipulation of\nstatistical data. Include a relevant example in your response.\n7\n1619310360"
+  },
+  {
+   "id": "hsc202225",
+   "year": 2022,
+   "number": "29",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student carried out an experiment to investigate the relationship between the\ntemperature and the volume of a gas sample.\n(a)\nDescribe a series of steps for this experiment that would allow a student to\nsafely and reliably collect first-hand data.\n5\n(b)\nSketch the expected results for this experiment AND add appropriate labels\n(including units) on the axes.\n0\n0\n2\n0585310361"
+  },
+  {
+   "id": "hsc202226",
+   "year": 2022,
+   "number": "30",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Explain how ONE technological development contributed to the discovery of the\nHiggs boson. Refer to the Large Hadron Collider (LHC) in your response.\n4\n6577310368"
+  },
+  {
+   "id": "hsc202227",
+   "year": 2022,
+   "number": "31",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The direction of scientific research has changed in areas such as:\n• perceptions about diet in a multicultural society\n• investigating traditional medical treatments\n• mining practices.\nEvaluate how different perspectives can influence the direction of scientific research.\nIn your answer, refer to an example above OR to a specific example of scientific\nresearch you have studied.\n4\n4074310368"
+  },
+  {
+   "id": "hsc202228",
+   "year": 2022,
+   "number": "32",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Discuss the value of peer review in relation to the advancement of science.\n6\n9566310369"
+  },
+  {
+   "id": "hsc202229",
+   "year": 2022,
+   "number": "33",
+   "marks": 17,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The graph shows how the funding sources for scientific research for a particular\ncountry have changed over time.\nGrap\nh of funding amount\n(a)\nDescribe the trends in the graph.\n3\n0008310361"
+  },
+  {
+   "id": "hsc202301",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of these scientists conducted experiments involving the mass of a tree?\nSpencer\nDoppler\nvan Helmont\nPons and Fleischmann"
+  },
+  {
+   "id": "hsc202302",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which measurement did Eratosthenes use to calculate Earth’s circumference?\nThe diameter of Earth\nThe depth of the well at Syene\nThe angle of tilt of Earth’s axis\nThe distance between Alexandria and Syene"
+  },
+  {
+   "id": "hsc202303",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A Year 10 student needed to select the highest concentration of sodium hydroxide\n(NaOH) solution allowable for an investigation.\nThe table shows information for different samples of sodium hydroxide taken from the\nschool’s chemical safety data sheet.\nWhich sample should the student use?\nChemical\nsymbol\nConcentration\n(M)\nUsers\n(School Year)\nNaOH(aq)\n< 0.12\n7–12\nNaOH(aq)\n0.12–0.50\n7–12\nNaOH(aq)\n0.51–1.3\n11–12\nNaOH(s)\n11–12\n\n– 3 –"
+  },
+  {
+   "id": "hsc202304",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student conducted a valid experiment to determine the effect that differing\nconcentrations of a fertiliser would have on the growth rate of 10 plant seedlings.\nThe student:\n• made up 10 different concentrations of the fertiliser by dissolving the fertiliser in tap\nwater\n• gave the same seedling 10 mL of the same concentration of fertiliser solution each day\n• labelled an eleventh seedling as the control.\nWhat should be provided to the control seedling when the other seedlings receive the\nfertiliser solution?\nNo water\n10 mL of tap water\n10 mL of distilled water\n10 mL of each fertiliser solution"
+  },
+  {
+   "id": "hsc202305",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The steps needed to plan and conduct a first-hand scientific investigation are shown.\n1. Analyse the results\n2. Formulate hypothesis\n3. Conduct the experiment\n4. Conduct a risk assessment\nIn which order should the steps be performed?\n2, 4, 3, 1\n4, 2, 3, 1\n2, 4, 1, 3\n4, 2, 1, 3\n \n\n– 4 –"
+  },
+  {
+   "id": "hsc202306",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Priestley set up two experiments using a mouse, candle and plant in a sealed jar, as shown\nin the diagrams.\nX\nExperiment 1\nExperiment 2\nY\nX\nY\nWhat substances are represented by the labels X and Y ?\nX\nY\nOxygen\nMercuric oxide\nMercuric oxide\nCarbon dioxide\nCarbon dioxide\nOxygen\nOxygen\nCarbon dioxide"
+  },
+  {
+   "id": "hsc202307",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student wanted to test if the actual mass of a chocolate bar was consistent with the\nmanufacturer’s claim.\n• 15 wrapped chocolate bars were used.\n• One of the chocolate bars had its wrapping removed.\n• The wrapping was weighed using an electronic balance and had a mass of 1.5 g.\nWhat action should the student take prior to weighing each remaining chocolate bar with\nits wrapping intact?\nAdjust the balance reading by adding 1.5 g\nTare (zero) the balance without the wrapping\nCalibrate the balance to remove any random error\nTare (zero) the balance with only the wrapping on it\n \n\n– 5 –"
+  },
+  {
+   "id": "hsc202308",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What should a student record as the measured volume of the liquid?\n8.4 ± 0.05 mL\n8.4 ± 0.1 mL\n9.6 ± 0.05 mL\n9.6 ± 0.1 mL\n\n– 7 –"
+  },
+  {
+   "id": "hsc202309",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The input of several scientists, working in different fields, led to the discovery of the\nstructure of deoxyribonucleic acid (DNA).\nWhat important structural feature of DNA was revealed by their work?\nIt contains four bases.\nIt contains a simple sugar.\nIt is a double-stranded helix.\nIt is a single-stranded protein."
+  },
+  {
+   "id": "hsc202310",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "In the USA, the 2022 budget for welfare was $1.6 × 1012 and the budget for space\nresearch was $2.4 × 1010.\nWhich graph best represents the relative amount of money budgeted for welfare and\nspace research by the US government in 2022?\nContent not extracted.\nContent not extracted.\nContent not extracted.\nKEY\nWelfare\nSpace research"
+  },
+  {
+   "id": "hsc202311",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "When a beam of sunlight passes through a glass lens in a telescope, each colour refracts\nat a different angle to produce a continuous spectrum.\nThe colours refract at different angles inside the lens because different coloured light\ntravels at the same speed.\ntravels at constant speeds.\nhas different wavelengths.\nhas a constant wavelength."
+  },
+  {
+   "id": "hsc202312",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Iridologists claim to be able to diagnose health conditions.\nWhich statement supports iridology being considered a pseudo-science?\nIridology is widely practised by naturopaths in many countries.\nAvailable data from iridologists support its use as a diagnostic tool.\nA recent review of 77 papers submitted by iridologists showed most investigations \nwere conducted without a control group.\nPatients diagnosed with inflamed gallbladder disease using iridology were later \nconfirmed by subsequent surgery to have the disease. \n \n\n– 8 –"
+  },
+  {
+   "id": "hsc202313",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "For any sample of gas that is kept at an unchanging temperature, the product of the\npressure (P) and the volume (V ) of the gas is always the same constant number k,\nmeasured in joules (J), as shown.\nPV = k\nTo determine the value of k, a student measured the pressure and volume of a sample of\ngas while ensuring its temperature did not change.\nPressure = 100.8 kPa\nVolume = 1.7 L\nWhat value for k should the student record?\n1.7 × 102 J\n1.71 × 102 J\n1.714 × 102 J\n1.7136 × 102 J"
+  },
+  {
+   "id": "hsc202314",
+   "year": 2023,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The flow chart shows stages in wastewater treatment.\nWastewater\nStage 1\nStage 2\nStage 4\nStage 3\nScreen traps\nGrit tanks\nSedimentation\nMicrofiltration\nUltra filtration\nReverse osmosis\nChlorine added\nand/or\nUV radiation\nMicrobes added\nActivated sludge\nTreated\nwastewater\nWhich stage has the most significant impact on world health and human wellbeing?\nStage 1\nStage 2\nStage 3\nStage 4\n\n– 9 –"
+  },
+  {
+   "id": "hsc202315",
+   "year": 2023,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The table shows the contributions that governments and large corporations made to a\nuniversity budget over time.\nYear\nGovernment\ncontributions\n($ million)\nLarge corporation\ncontributions\n($ million)\n2012\n1179\n321\n2014\n1305\n356\n2016\n1665\n458\n2018\n1701\n766\n2020\n2302\n802\nWhich statement is consistent with the data?\nThe proportion of funding from the government has changed over time.\nThe proportion of funding from large corporations has been constant over time.\nThe proportion of funding from the government has steadily increased over time.\nThe proportion of funding from large corporations has steadily increased over time."
+  },
+  {
+   "id": "hsc202316",
+   "year": 2023,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "One way to reduce the damage to buildings during earthquakes is to place the building\non large rollers.\nBuilding\nGround\nMotion of ground during earthquake\nWhich statement provides the best reason for the reduction in damage caused by\nearthquakes when this method is used?\nThe inertia of the rollers reduces the acceleration of the ground.\nThe inertia of the building reduces the acceleration of the building.\nThe acceleration of the building is reduced by the inertia of the ground.\nThe acceleration of the ground is reduced by the inertia of the building.\n\n– 11 –"
+  },
+  {
+   "id": "hsc202317",
+   "year": 2023,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A study was carried out to investigate the links between diet and cultural identity. Three\nstudy groups of different ethnicities were used.\n• All three ethnicities involved in the study traditionally perceive that a higher body\nmass index (BMI) indicates a higher socioeconomic status.\n• All participants in the study responded by completing a common questionnaire.\nEthnicity X\nEthnicity Y\nEthnicity Z\nNumber of participants\n100\n100\n100\nAge range of participants\n45–49\n45–49\n45–49\nAverage BMI (kg/m2)\n23.1\n28.6\n23.9\nSocioeconomic status\nHigh\nLow\nMedium\nPossible sources of error in a study such as this include:\n1. Age is not controlled\n2. Sample size differences\n3. Sample selection differences\n4. Participants complete the same questionnaire\n5. Representation of genders\n6. Underlying health conditions that could impact BMI\n7. Participants withholding relevant information from the researcher.\nWhich combination of errors has NOT been addressed in this study?\n1, 2, 5, 6\n2, 4, 5, 6\n3, 4, 6, 7\n3, 5, 6, 7\n \n \n\nBLANK PAGE\n © 2023 NSW Education Standards Authority\n– 12 –\n\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 13 –\nDo NOT write in this area.\n2023\nHIGHER SCHOOL CERTIFICATE EXAMINATION\n \n \nInvestigating Science"
+  },
+  {
+   "id": "hsc202318",
+   "year": 2023,
+   "number": "21",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student gathered and recorded the data in the table over a period of one week.\nDay\nTemperature\n(°C)\nNumber of\nbutterflies sighted\nWind speed\n(m s–1)\n1\n28\n37\n5.\n2\n32\n46\n0\n3\n27\n34\n7.\n4\n20\n14\n2\n5\n19\n12\n0\n6\n22\n15\n8.\n7\n29\n37\n0\n3\n5\n1\n3\n(a)\nState a hypothesis that the student could have been testing, based on the data\ngathered.\n1\n(b)\nIdentify a factor that should have been controlled in this investigation.\n1\n2043310373"
+  },
+  {
+   "id": "hsc202319",
+   "year": 2023,
+   "number": "22",
+   "marks": 2,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Outline an effect that ONE specific surgical procedure has had on world health.\n2"
+  },
+  {
+   "id": "hsc202320",
+   "year": 2023,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Why is bioharvesting of plants from Country and Place becoming increasingly valued?\n3\n2237310378"
+  },
+  {
+   "id": "hsc202321",
+   "year": 2023,
+   "number": "24",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Water is known to boil at 100°C when the atmospheric pressure is 100 kPa. A student\nmeasures the temperature of boiling water at 100 kPa on five consecutive days using\nthe same thermometer and the same digital temperature probe.\nDay\nTemperature reading\non thermometer\n(°C)\nTemperature reading on\ndigital temperature probe\n(°C)\n1\n103.5\n100.003\n2\n103.5\n99.996\n3\n103.5\n100.012\n4\n103.5\n100.002\n5\n103.5\n99.991\n(a)\nExplain the results obtained by the thermometer.\n2\n(b)\nJustify the validity and accuracy of using the digital temperature probe.\n2\n1575310372"
+  },
+  {
+   "id": "hsc202322",
+   "year": 2023,
+   "number": "25",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nComplete the table by providing an example of a scientific law and a scientific\ntheory.\n2\nExample\nScientific law\nScientific theory\n(b)\nThe recently-launched James Webb Space Telescope makes use of reflective\ntechnology. A media report used the diagram and caption shown to explain the\nworkings of this telescope.\n3\nThe Theory of Reflection as used by\nthe James Webb Space Telescope\nEvaluate the accuracy of the information presented in the diagram AND the\ncaption used in the media report.\n0125310372"
+  },
+  {
+   "id": "hsc202323",
+   "year": 2023,
+   "number": "26",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nJustify the need for scientific research to be regulated. Refer to a specific\nexample in your answer.\n3\n(b)\nEvaluate the effectiveness of a specific scientific regulation, or code of conduct,\nin overcoming an ethical issue in scientific research or practice.\n4\n4973310377"
+  },
+  {
+   "id": "hsc202324",
+   "year": 2023,
+   "number": "27",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Explain why so many scientific papers are published in fake science journals.\n3"
+  },
+  {
+   "id": "hsc202325",
+   "year": 2023,
+   "number": "28",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Evaluate the relevance of the investigation by Marshall and Warren, based on the\npeer-reviewed literature available at the time.\n4\n0279310372"
+  },
+  {
+   "id": "hsc202326",
+   "year": 2023,
+   "number": "29",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Students set up the apparatus shown to test the effect of temperature on a volume of\ngas.\nGlass tubing\nSeal\nAir\nColoured water\nGlass jar\nThe apparatus was placed on a hot plate. The water was heated but not boiled. The\nstudents used a calibrated ruler to make measurements and their mobile phone\ncameras to take images before, during and after the experiment.\n(a)\nComplete the table to identify TWO technologies used in this experiment and a\nlimitation of each.\n3\nTechnology used\nLimitation\n6089310377"
+  },
+  {
+   "id": "hsc202327",
+   "year": 2023,
+   "number": "30",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student conducted a depth study to investigate the effect of placing lollies into a\nbottle of diet cola. The student presented their investigative report as shown.\n7\nDepth Study Report\nWhat I already know\nAn explosive reaction occurs between diet\ncola and lollies. When a lolly is dropped\ninto diet cola, bubbles form and cause the\ndiet cola to spurt out at high speed.\nMy prediction is\nThere will be a bigger spurt with more\nlollies.\nMy test is safe because\nSpills were cleaned up straight away,\nsafety goggles were worn, and no one\ndrank the diet cola.\nMy test is fair because\nThe same brand of diet cola was used\nand all lollies were the same size and the\nsame ruler was used.\nWas my experiment good?\nThe experiment tested what I thought it\nshould. It was hard to accurately measure\nhow high the spurt was.\nTo improve the investigation, I can\nRecord the results using a camera and\nzoom in to see the ruler.\nWhat I learnt\nMy hypothesis is right, as a larger spurt\nwas seen with more lollies.\nWhat I did\nDiet cola\nSpurt height\n0 lollies – nothing, 1 lolly – a bit,\n2 lollies – a lot, 3 lollies – heaps\nWhy did this happen?\nThere was a larger surface area with more\nlollies. This means more bubbles could\nbuild up on the lollies, making more\npressure and speed. This formed the larger\nspurt.\n4072310377"
+  },
+  {
+   "id": "hsc202328",
+   "year": 2023,
+   "number": "31",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Photosynthesis requires carbon dioxide (CO ) from the atmosphere for plant growth.\n2\nAtmospheric CO concentration is currently increasing. Phosphorus is also needed for\n2\nplants to photosynthesise effectively.\nA controlled study was conducted to test the following hypothesis:\nIf phosphorus levels in soil increase, trees can then use the higher CO concentration\n2\navailable to increase their leaf mass.\nPhosphorus level\nin soil (ppm)\nLeaf mass of 200 seedlings\ngrown at current CO2\nconcentration (g)\nLeaf mass of 200 seedlings\ngrown at higher CO2\nconcentration (g)\n70\n24\n24\n100\n36\n46\n180\n42\n68\n300\n48\n86\n400\n51\n94\n(a)\nConstruct an appropriate graph of the data provided in the table.\n4\n9827310370"
+  },
+  {
+   "id": "hsc202329",
+   "year": 2023,
+   "number": "32",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A cosmetic company published the results from a clinical trial of a new moisturiser\ncontaining sunscreen. Forty people of varying ages and skin types participated in the\ntrial. The participants were placed in four separate groups of 10.\nThe results from the clinical trial are shown in the table.\nGroup\nDuration on skin\n(hours per day)\nFrequency of use\nAverage amount of\nskin damage (%)\n1\n2\nSaturday and Sunday only\n80\n2\n6\nSaturday and Sunday only\n70\n3\n2\nEvery day\n40\n4\n6\nEvery day\n5\n(a)\nOutline how one factor in the design of this trial decreases its validity.\n2\n7551310372"
+  },
+  {
+   "id": "hsc202330",
+   "year": 2023,
+   "number": "33",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "In a case study undertaken by a student on the development of flight, two conflicting\nviews were found.\n1. In 1903, most people did not believe reports that the Wright Brothers had\nflown in a machine that was heavier than air. This was mainly due to articles\nby prominent scientists, such as Professor Simon Newcomb, who stated that\ntrying to fly was nonsense and impossible.\n2. Eddie Rickenbacker, a famous fighter pilot in World War I (1914–1918),\nsaid that ‘Aviation is proof that given the will, we have the capacity to\nachieve the impossible’.\n5\n© Eddie Rickenbacker\nUsing research from your own case study and the information provided, discuss the\neffect that the development of flight has had on the public image of science.\n6696310371"
+  },
+  {
+   "id": "hsc202331",
+   "year": 2023,
+   "number": "34",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Evaluate how ONE example of scientific research has aided economic development.\n5\n5148310372"
+  },
+  {
+   "id": "hsc202332",
+   "year": 2023,
+   "number": "35",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nIn this course, you were required to conduct an investigation to test a claim.\n4\nState the claim tested.\nClaim tested:\nOutline the procedure used to test this claim, in a series of logical steps.\n3013310371"
+  },
+  {
+   "id": "hsc202333",
+   "year": 2023,
+   "number": "36",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Analyse how a development in technology led to an advancement in a scientific\nmodel, theory or law that, in turn, resulted in the development of a new technology.\n7\n9668310373"
+  },
+  {
+   "id": "hsc202401",
+   "year": 2024,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which option shows developments in the history of flight in chronological order?\nKites, hot air balloons, Wright brothers’ aeroplane, space flight\nHot air balloons, Wright brothers’ aeroplane, space flight, kites\nHot air balloons, space flight, Wright brothers’ aeroplane, kites\nKites, Wright brothers’ aeroplane, hot air balloons, space flight"
+  },
+  {
+   "id": "hsc202402",
+   "year": 2024,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A study was conducted to determine how deep into the soil an oil spill can penetrate.\n• A 50 g soil sample was placed in a 100 mL beaker.\n• 50 mL of oil was poured on top of the soil sample.\n• The depth the oil penetrated into the soil was measured after 10 minutes.\nWhich modification would NOT improve the data collected?\nUsing a 50 mL beaker\nTesting different types of oil\nTesting different types of soil\nUsing soil samples with varying levels of moisture\n \n\n– 3 –"
+  },
+  {
+   "id": "hsc202403",
+   "year": 2024,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "145/89\nMedical centre monitors\nBlood pressure readings\n(digital)\n134/85\n135/84\n134/85\n149/92\n151/91\n150/90\n130/82\n130/81\n130/83\nBlood pressure readings\n(analogue)\n150/90\n151/90\n150/90\n167/97\n168/98\n167/96\n145/88\n146/87\n146/88\nWhich row in the table identifies the more accurate blood pressure monitor normally\nused in the medical centre and the type of error present in the other monitor?\nMore accurate monitor\nType of error in less\naccurate monitor\nAnalogue\nSystematic\nDigital\nSystematic\nAnalogue\nRandom\nDigital\nRandom\n\n– 9 –"
+  },
+  {
+   "id": "hsc202404",
+   "year": 2024,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A skin care company is looking to employ a popular sports person to promote its new\nacne cream in television advertisements. This company has recently received negative\nreviews about some of its other products.\nWhich row in the table identifies the type of effect the company is utilising for the\npromotion and the reason for this strategy?\nEffect\nReason for strategy\nHalo\nConsumers ignore negative reviews due to a positive \nassociation with the company.\nHalo\nConsumers ignore negative reviews due to a positive \nassociation with the sports person.\nHawthorne\nConsumers ignore negative reviews due to a positive \nassociation with the company.\nHawthorne\nConsumers ignore negative reviews due to a positive \nassociation with the sports person.\n\n– 4 –"
+  },
+  {
+   "id": "hsc202405",
+   "year": 2024,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Where is the most appropriate place for the abstract to be located in a scientific report?\nBetween the method and the results\nAfter the title and before the method\nBetween the results and the conclusion\nAfter the conclusion and before the references"
+  },
+  {
+   "id": "hsc202406",
+   "year": 2024,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Scientific research has led to the development of small tubes with the appearance of\nstraws that can be used to purify water.\nDirty water enters\nSafe drinking water\nWhat is the most likely method these devices use to create safe drinking water?\nChlorination\nDesalination\nFiltration\nFlocculation\n\n– 6 –"
+  },
+  {
+   "id": "hsc202407",
+   "year": 2024,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "This sign was placed outside a room for the duration of an experiment.\nLaser Operating Inside\nAVOID EYE EXPOSURE TO DIRECT\nOR SCATTERED LASER LIGHT\nWhat is the purpose of this sign?\nTo prevent the participants looking at the laser while it is operating\nTo provide a warning to the participants conducting the experiment\nTo prevent people from outside the room opening the door during the experiment\nTo provide a warning of a hazard located inside the room to people outside the\nroom"
+  },
+  {
+   "id": "hsc202408",
+   "year": 2024,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of the following is NOT a benefit of the scientific peer review process?\nImproved quality of research papers\nImproved reporting of science in the media\nImproved base of evidence for future research\nImproved networking opportunities among research groups\n\n– 7 –"
+  },
+  {
+   "id": "hsc202409",
+   "year": 2024,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "This course covered a scientific study published in 1991 claiming a link between\nhormone replacement therapy and coronary heart disease.\nWhich factor related to the participants did this study NOT take into account?\nAge\nGender\nSocioeconomic status\nExisting health conditions"
+  },
+  {
+   "id": "hsc202410",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What determines the reliability of an investigation?\nControlling all variables\nHaving a relevant control\nRepeating the experiment\nObtaining consistent results"
+  },
+  {
+   "id": "hsc202411",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A researcher set up an experiment involving a lighted candle inside a sealed jar. The\nconcentration of oxygen gas was measured throughout the experiment.\nWhich graph best represents the expected results?\nTime\n O2 concentration\nTime\n O2 concentration\nTime\n O2 concentration\nTime\n O2 concentration\n\n– 8 –"
+  },
+  {
+   "id": "hsc202412",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "What impact did the prediction of the Higgs boson have on developments in technology?\nIt resulted in the Large Hadron Collider.\nIt led to the discovery of the origin of mass.\nIt revealed the existence of subatomic particles.\nIt established the presence of a new form of matter."
+  },
+  {
+   "id": "hsc202413",
+   "year": 2024,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Highly-regarded science journals accept less than 10% of the papers presented for\npublication.\nWhat is the final step required before a newly presented paper is to be published?\nPeer review\nReplication of the results\nValidation of the investigation\nManagement of all the processes involved in an investigation"
+  },
+  {
+   "id": "hsc202414",
+   "year": 2024,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Consider the information in the table.\nResearch area\nTotal jobs\nbefore\nresearch\n(× 103)\nTotal jobs\nafter\nresearch\n(× 103)\nGovernment\ninvestment in\nresearch\n(× $106)\nEconomic\noutput due to\ngovernment\ninvestment\n(× $109)\nRobotics\n0.6\n27.2\n188.5\n19.8\nNuclear power\n1.5\n8.5\n584.0\n4.5\nAntimicrobial\ndrugs\n2.3\n6.1\n121.4\n4.1\nGenetically\nmodified foods\n6.8\n23.6\n442.1\n12.5\nWhich area of research has provided the greatest economic return on government\ninvestment per job created?\nRobotics\nNuclear power\nAntimicrobial drugs\nGenetically modified foods\n\n– 13 –"
+  },
+  {
+   "id": "hsc202415",
+   "year": 2024,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Two students conducted an investigation into the Doppler effect. In each experiment,\nStudent X used their phone to produce a sound of 400 Hz while Student Y used their\nphone to record the sound produced.\nStudent X\nStudent Y\n400 Hz\nStudent Y walks toward Student X\nExperiment 1\nStudent X\nStudent Y\n400 Hz\nStudent X walks toward Student Y\nExperiment 2\nStudent X\nStudent Y\nBoth students walk toward each other\nExperiment 3\n400 Hz\nWhat would be the recorded frequency in each experiment?\nRecorded frequency (Hz)\nExperiment 1\nExperiment 2\nExperiment 3\n400\n400\n> 400\n> 400\n> 400\n> 400\n> 400\n> 400\n400\n400\n400\n400\n\nBLANK PAGE\n– 14 –\n\nBLANK PAGE\n– 15 –\n\nBLANK PAGE\n © 2024 NSW Education Standards Authority\n– 16 –\n\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 17 –\nDo NOT write in this area.\n2024 HIGHER SCHOOL CERTIFICATE EXAMINATION\n \nCentre Number\nStudent Number\n2690310371\n2101\n15215\nInvestigating Science"
+  },
+  {
+   "id": "hsc202416",
+   "year": 2024,
+   "number": "21",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Percy Spencer was involved in the development of an item of everyday technology\nused in many homes in Australia.\nIdentify the technology AND outline the circumstances that led to its development.\n3"
+  },
+  {
+   "id": "hsc202417",
+   "year": 2024,
+   "number": "22",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Explain the effect that early childhood vaccination programs have on world health.\n3\n2237310378"
+  },
+  {
+   "id": "hsc202418",
+   "year": 2024,
+   "number": "23",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A company that makes a particular car, Brand A, was criticised for the low quality\nof its vehicles due to their increased risk of engine malfunction. To counter these\ncriticisms, the company published an article early in 2024 that contained the graphs\nshown.\n4\nPercentage of cars on roads\nBrand A\nBrand B\nBrand C\nBrand D\n48\n50\n52\n54\n56\n58\n60\n62\n64\nNumber of roadside assistance calls\ndue to engine malfunction of Brand A\n80\n70\n60\n50\n40\n30\n20\n10\n0\n2019\n2020\n2021\n2022\n2023\nKEY\nActual values\nProjected values\n1575310372"
+  },
+  {
+   "id": "hsc202419",
+   "year": 2024,
+   "number": "24",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Scientists are increasingly aware of the knowledge and understanding that Aboriginal\nand Torres Strait Islander Peoples have about the uses of native plants.\nExplain why this knowledge is valued by the scientific community. In your response,\nrefer to a specific plant and its use.\n3"
+  },
+  {
+   "id": "hsc202420",
+   "year": 2024,
+   "number": "25",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Evaluate the impact of ONE specific surgical device on human wellbeing.\n4\n4973310377"
+  },
+  {
+   "id": "hsc202421",
+   "year": 2024,
+   "number": "26",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nDefine the term numerology.\n1\n(b)\nExplain why numerology is considered to be a pseudo-science.\n3\n0279310372"
+  },
+  {
+   "id": "hsc202422",
+   "year": 2024,
+   "number": "27",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student observed lizards catching flies in a forest and formulated the following\ninquiry question:\n‘What impact does tongue length have on a lizard’s ability to catch food?’\nThe following investigation was conducted:\n• Five lizards with varying tongue length were removed from their natural habitat.\n• Each lizard was placed in a controlled environment for 30 minutes, one at a\ntime.\n• Each lizard was placed on the same branch and in the same position.\n• 50 flies were then introduced into the controlled environment each time.\n• The number of flies caught by each lizard was counted.\nThe data was collected and arranged in the graph shown.\nThe effect of tongue length on the ability to catch flies\nExtra short\n44\n47\n45\n46\nShort\nMedium\nTongue length\nNumber of flies caught\nLong\nExtra long\n6089310377"
+  },
+  {
+   "id": "hsc202423",
+   "year": 2024,
+   "number": "28",
+   "marks": 11,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "(a)\nDescribe a sequence of steps that a student could use to validly and reliably\ndetermine the relationship between the pressure and volume of a sample of gas.\n7\n4072310377"
+  },
+  {
+   "id": "hsc202424",
+   "year": 2024,
+   "number": "29",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Smallpox is the only human disease that has been totally eradicated.\nExplain the importance of the events that led to the development of a vaccine for ‘the\nannihilation of the smallpox’ (Edward Jenner, 1801).\n4\n9827310370"
+  },
+  {
+   "id": "hsc202425",
+   "year": 2024,
+   "number": "30",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Two students made the following statements about the continuation of funding for\nspace exploration.\nStudent A: ‘Space exploration holds the solutions to many of our current\nproblems – it must continue to be funded.’\nStudent B: ‘We have not yet managed to overcome poverty or world hunger –\nlet’s spend our money on fixing the problems we already have.’\nDiscuss the continuation of funding for space exploration. In your response, refer to\neach student’s statement and your own knowledge.\n4\n0660310376"
+  },
+  {
+   "id": "hsc202426",
+   "year": 2024,
+   "number": "31",
+   "marks": 9,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A group of students carried out an investigation to test van Helmont’s conclusion\nabout plant growth. One of the students wrote some details about their investigation.\nThe mass of our 6 seedlings was 2 grams, 3 grams and 3.5 grams in the\nfirst group and 2.5 grams, 2 grams and 3 grams in the second group. We\nplanted them in soil in separate pots and gave the first group 5 millilitres\nof water every day and the second group 10 millilitres of water every day,\nfor 4 weeks.\nWe removed, washed and weighed the plants. They now had masses of\n3.5 grams, 4 grams and 4.5 grams in the first group and in the second\ngroup 5 grams, 4.5 grams and 5.5 grams.\nWe then calculated the changes in mass.\n(a)\nState a relevant hypothesis for the students’ investigation based on the\ninformation provided.\n1\n(b)\nThe data from this investigation was collected using a balance that weighed\naccurately to the nearest 0.5 grams.\nConstruct a table in the space provided. Arrange ALL the data in a clear and\nlogical manner.\n3\n7551310372"
+  },
+  {
+   "id": "hsc202427",
+   "year": 2024,
+   "number": "32",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "A student investigated the relationship between distance and speed by rolling a ball\noff a level benchtop at different speeds and measuring the distance the ball travelled\nbefore landing on the floor. A speed sensor was used to accurately measure the speed\nof the ball as it left the benchtop.\nBench\nDistance from the bench\nSpeed\nsensor\n#\nThe results of the investigation are shown.\nSpeed (m s–1)\nDistance (m)\n1.10\n0.50\n0.85\n0.38\n0.54\n0.24\n0.77\n0.15\n0.31\n0.14\n0.46\n0.21\n6696310371"
+  },
+  {
+   "id": "hsc202428",
+   "year": 2024,
+   "number": "33",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Bread is consumed daily by billions of people. Evidence regarding the effects of the\ntype of bread on glycaemic control (control of blood sugar levels) is unclear.\nA scientific study was published in a peer reviewed journal, as outlined.\n• A randomised trial lasting two weeks was conducted with two groups of 10\nindividuals.\n• Each group consumed either wholegrain bread or white bread.\n• At the end of two weeks, no significant difference in glycaemic control was\nfound between the two groups.\n• Some individuals in both groups were found to have better glycaemic control\nthan other participants.\n• The authors acknowledged that eating wholegrains is known to be beneficial\nfor health and that this study would have to be repeated for a longer duration.\n• It was suggested that glycaemic control might be based solely on gut bacteria\nand not the type of bread consumed.\n• The authors of this paper declared a conflict of interest as they were paid as\nscientific consultants for a company that markets personalised gut bacteria\nproducts and nutrition.\n(a)\nDescribe an issue related to the methodology of this study.\n2\n3013310371"
+  },
+  {
+   "id": "hsc202429",
+   "year": 2024,
+   "number": "34",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Analyse the impact that governments can have on university research project budgets.\nIn your answer, refer to a specific example.\n5\n9668310373"
+  },
+  {
+   "id": "hsc202430",
+   "year": 2024,
+   "number": "35",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Some scientific research supports the use of copper bracelets to ease the pain of stiff\nand sore joints caused by arthritis.\nJustify the use of placebos, double-blind trials and control groups in an investigation\nto test the effectiveness of wearing copper bracelets to ease pain caused by arthritis.\n7\n4258310373\nSection II extra writing space\n2402310372\nSection II extra writing space\n0968310377\nSection II extra writing space"
+  },
+  {
+   "id": "hsc202501",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which part of a peer-reviewed scientific journal article contains a summary of the\ninvestigation?\nAbstract\nDiscussion\nIntroduction\nResults"
+  },
+  {
+   "id": "hsc202502",
+   "year": 2025,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of these claims about a food product may be considered emotive advertising?\nA source of superfoods\nContains five whole grains\nA source of magnesium and iron\nContains 10 grams of fibre per serve"
+  },
+  {
+   "id": "hsc202503",
+   "year": 2025,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "An experiment to determine whether therapy dogs improve recovery time for patients in\nhospitals is planned.\nWhich of the following steps should be taken for this experiment to be conducted\nethically?\nSelect patients with a pet dog\nCalculate the cost of feeding the dogs\nObtain consent from all patients before beginning the experiment\nRepeat the experiment until the results are consistent with previous findings"
+  },
+  {
+   "id": "hsc202504",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "The primary purpose of Eratosthenes’ investigation was to determine\nwhether the Earth was flat.\nthe circumference of the Earth.\nthe distance from Alexandria to Syene.\nwhether a vertical stick would cast a shadow. \n– 2 –"
+  },
+  {
+   "id": "hsc202505",
+   "year": 2025,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which scientist tried to explain the colours from stars by using the star’s observed\nfrequency of light?\nDoppler\nGalileo\nHiggs\nNewton"
+  },
+  {
+   "id": "hsc202506",
+   "year": 2025,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Fact or Fallacy? / Evidence and misinformation / analyse the benefits of peer review in relation to the advancement of science",
+   "text": "Which of these actions is an example of the halo effect?\nA doctor promoting a new phone\nA popular singer dressing as an angel in a concert\nA class sitting straighter when the principal walks past\nA patient talking about the side effects of their treatment"
+  }
+ ]
+}

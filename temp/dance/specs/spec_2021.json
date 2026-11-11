@@ -1,0 +1,271 @@
+{
+  "course_id": "course_dance",
+  "course_name": "Dance",
+  "id_prefix": "dance_2021",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 1 (10 marks)\nHow have Pina Bausch's choreographic practices contributed to her being recognised as a seminal artist?\nIn your response, provide specific examples from her works.\nOR\nHow have Ohad Naharin's choreographic practices contributed to him being recognised as a seminal artist?\nIn your response, provide specific examples from his works."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Pina Bausch: used improvisation and collaboration with dancers, establishing mutual trust by encouraging individualism in the choreography.",
+              "Played with conventional and non-conventional eg switching gender roles; transformed dance from the balletic world to the raw contemporary world incorporating body percussion and vocals eg Fritz.",
+              "Tanztheater combining dance and theatre; brought dance, theatre and German expressionism together, influenced by Kurt Jooss and Rudolph von Laban.",
+              "Experimenting with new techniques, breaking new ground; reworking original works eg Rite of Spring, Le Sacre du Printemps; other choreographers continue to take inspiration from her works.",
+              "Explores the power of relationships.",
+              "Ohad Naharin: always has a clear social and political conscience, but dances are not meant to be political; more interested in texture and multi-layered movement than storytelling.",
+              "Developed a new movement vocabulary relying on concepts and abstract interpretation; Gaga language emphasised exploration of sensation and availability for free movement.",
+              "Gaga presents as a movement language rather than technique; sensed where the body is in space without mirrors - interested in the 'how' not the 'what'.",
+              "Provided a framework for discovering and strengthening the body; choreographed with access for all to dance eg disabled; created Batsheva Dance Company.",
+              "Increasing use of technology eg computer coding and the internet; globalisation with wider audiences; collaborative process."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of how the artist's choreographic practices contributed to her/him being recognised as a seminal artist; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of how the artist's choreographic practices contributed to her/him being recognised as a seminal artist; uses appropriate examples and language to support the response with inconsistencies; presents a logical response.",
+              "5-6 marks: Provides a general explanation of how the artist's choreographic practices contributed to her/him being recognised as a seminal artist; uses adequate AND/OR general examples and language with inconsistencies; attempts to present a structured response.",
+              "3-4 marks: Provides limited knowledge of the artist's choreographic practices and/or being recognised as a seminal artist; uses basic examples and language; presents a limited response.",
+              "1-2 marks: Provides information about aspects of the artist and/or their work; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2021 HSC Dance",
+        "year": 2021,
+        "original_question_no": "1",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 10,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T1-D8",
+        "HSC-M3-T1-D6",
+        "HSC-M3-T2-D10"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Prescribed dance works / Twyla Tharp",
+        "Year 12 / Appreciation / Prescribed dance works / Akram Khan",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 2 (10 marks)\nTwyla Tharp reinvented dance to reflect a changing world.\nExplain this statement in relation to the works of Twyla Tharp from the 1960s-1980s.\nIn your response, provide specific examples from her works.\nOR\nAkram Khan reinvented dance to reflect a changing world.\nExplain this statement in relation to the works of Akram Khan from the 1990s-present.\nIn your response, provide specific examples from his works."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Twyla Tharp: major events of the 1960s-1980s eg JFK assassination, civil rights movements, Vietnam War, women's rights, protest movements, Apollo 11, the Cold War.",
+              "America becoming a superpower - postwar affluence; changing nature of music eg protest music, Beatles, Woodstock; technological development/revolution; pop art and popular culture.",
+              "Postmodernists challenged the boundaries of the modern era - time of experimental dance with no rules or boundaries; emergence of the Broadway musical as an artform.",
+              "Eclectic dance style drawing on a broad variety of styles in ballet, jazz, pedestrian, postmodern and break dance (In The Upper Room 1986, The Catherine Wheel 1981); pedestrian style connected with ballet, dance and film (Hair 1979, Ragtime 1981).",
+              "Choreographed for dance on television; worked on Broadway; created public credibility for use of popular music (Deuce Coupe 1973); collaboration with important ballet dancers eg Baryshnikov.",
+              "Akram Khan: emergence of issues surrounding race, multiculturalism, sexuality and economics; technology and the internet - globalisation, environmental awareness; aftermath of the Cold War.",
+              "Conflict in the Middle East, emergence of terrorism; development of contemporary dance companies merging ballet, cultural and modern contemporary influences.",
+              "Dance becoming minimalistic and pedestrian - incorporating text, speech and gesture; emotional effects of migration; connections to his culture and non-western cultures.",
+              "Use of traditional stories, movements and characters explored in modern ways; created a diverse movement vocabulary fusing Indian Kathak and contemporary.",
+              "Collaboration with other artists eg Anthony Gormley, Anish Kapoor, Sylvie Guillem; broadened audience awareness and acceptance; broke ground in non-traditional theatre spaces."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "9-10 marks: Provides a detailed explanation of the statement demonstrating knowledge and understanding of the chosen artist's works and the era; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "7-8 marks: Provides a sound explanation of the statement demonstrating knowledge and understanding of the chosen artist's works and era; uses appropriate examples and language to support the response with inconsistencies; presents a logical response.",
+              "5-6 marks: Provides a general explanation of the chosen artist's works and the era; uses adequate AND/OR general examples and language with inconsistencies; attempts to present a structured response.",
+              "3-4 marks: Provides limited knowledge of the chosen artist's works and/or era; uses basic examples and language; presents a limited response.",
+              "1-2 marks: Provides information about aspects of the chosen artist or works or era; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2021 HSC Dance",
+        "year": 2021,
+        "original_question_no": "2",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 5,
+      "marks": 20,
+      "node_ids": [],
+      "node_codes": [
+        "HSC-M3-T2-D10",
+        "HSC-M3-T2-D11"
+      ],
+      "node_names": [
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background, training, influences, style and body of work of the practitioner",
+        "Year 12 / Appreciation / Context and analysis / Analyse the contextual background of the dance work"
+      ],
+      "tags": [
+        "analysis",
+        "appreciation",
+        "dance",
+        "essay",
+        "extended_response"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Question 3 (20 marks)\nExplain how Mats Ek uses dance and theatrical elements to explore the emotions of everyday situations.\nIn your response, provide specific examples from Appartement."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Answers could include:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "Dance elements: pedestrian movement layered with dynamics to create emotion; fusion of ballet, diverse contemporary and acting genres; signature movements including flexed feet and hands, demi and grand plies, lunges, contractions to show torso movements.",
+              "Unique use of space, time and dynamics; movement chosen for expression/meaning not purely aesthetics - often angular, shaky, disturbing; strongly controlled by dancers showing core use.",
+              "Theatrical elements: costumes, props, set/staging, lighting, music (live band), voice.",
+              "Emotions/everyday situations: staging symbolised by furniture - toilet, armchair, stove, door and pedestrian crossing (lighting); uses tragedy and humour in interpretation of human situations.",
+              "Importance of characters and relationships in creating movement expressing subtle emotions; human nature of being 'close yet separate' through intimacy, arguments, love, anger, feelings, actions.",
+              "Mats Ek's work said to be 'emotion made motion', both thrilling and unsettling; internationally acclaimed for shifting between dance and theatre.",
+              "Influences and background: father acclaimed actor, mother dancer/choreographer with Culberg ballet, drama education and German expressionism."
+            ]
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer from marking guidelines."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "17-20 marks: Provides a detailed explanation of how Mats Ek uses dance and theatrical elements to explore the emotions of everyday situations in Appartement; uses appropriate examples and language to clearly support the response; presents a logical and cohesive response.",
+              "13-16 marks: Provides a sound explanation of how Mats Ek uses dance and theatrical elements to explore the emotions of everyday situations in Appartement; uses appropriate examples and language to support the response with inconsistencies; presents a logical response.",
+              "9-12 marks: Provides a general explanation of how Mats Ek uses dance and theatrical elements to explore the emotions of everyday situations in Appartement; uses adequate AND/OR general examples and language with inconsistencies; attempts to present a structured response.",
+              "5-8 marks: Demonstrates limited knowledge of Mats Ek's use of dance and theatrical elements and/or emotions of everyday situations in Appartement; uses basic examples and language; presents a limited response.",
+              "1-4 marks: Provides information about aspects of Mats Ek and/or Appartement; presents a minimal response."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "2021 HSC Dance",
+        "year": 2021,
+        "original_question_no": "3",
+        "institution": "HSC"
+      },
+      "assets": [],
+      "parts": [],
+      "mcq_options": []
+    }
+  ]
+}

@@ -1,0 +1,632 @@
+{
+ "sor1_2020_q1": {
+  "code": "HSC-M1-T3-D23",
+  "confidence": "high",
+  "why": "New Age commonalities with major traditions"
+ },
+ "sor1_2020_q2": {
+  "code": "HSC-M1-T3-D5",
+  "confidence": "high",
+  "why": "ecumenical dialogue between Protestant denominations"
+ },
+ "sor1_2020_q3": {
+  "code": "HSC-M1-T3-D24",
+  "confidence": "high",
+  "why": "civil celebrants as evidence of secularism"
+ },
+ "sor1_2020_q4": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "census affiliation data by state"
+ },
+ "sor1_2020_q5": {
+  "code": "HSC-M1-T3-D11",
+  "confidence": "high",
+  "why": "obligations to land and people, Anangu"
+ },
+ "sor1_2020_q6": {
+  "code": "HSC-M1-T3-D3",
+  "confidence": "medium",
+  "why": "Land Rights movement issue"
+ },
+ "sor1_2020_q7": {
+  "code": "HSC-M1-T3-D22",
+  "confidence": "high",
+  "why": "Pentecostal denominational switching data"
+ },
+ "sor1_2020_q8": {
+  "code": "HSC-M1-T3-D14",
+  "confidence": "high",
+  "why": "Native Title Amendment Act 1998"
+ },
+ "sor1_2020_q9": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "changing Christian adherence patterns"
+ },
+ "sor1_2020_q10": {
+  "code": "HSC-M1-T3-D7",
+  "confidence": "medium",
+  "why": "constitutional reform and reconciliation"
+ },
+ "sor1_2020_q11": {
+  "code": "HSC-M1-T3-D21",
+  "confidence": "high",
+  "why": "mass migration shaping religious landscape"
+ },
+ "sor1_2020_q12": {
+  "code": "HSC-M1-T1-D16",
+  "confidence": "medium",
+  "why": "ethics area part of Buddhism response"
+ },
+ "sor1_2020_q13": {
+  "code": "HSC-M1-T1-D47",
+  "confidence": "medium",
+  "why": "person impact part of Christianity response"
+ },
+ "sor1_2020_q14": {
+  "code": "HSC-M1-T1-D65",
+  "confidence": "medium",
+  "why": "ethics area part of Hinduism response"
+ },
+ "sor1_2020_q15": {
+  "code": "HSC-M1-T1-D89",
+  "confidence": "medium",
+  "why": "ethics area part of Islam response"
+ },
+ "sor1_2020_q16": {
+  "code": "HSC-M1-T1-D121",
+  "confidence": "medium",
+  "why": "practice expressing Jewish beliefs"
+ },
+ "sor1_2020_q17": {
+  "code": "HSC-M1-T1-D23",
+  "confidence": "high",
+  "why": "impact of Buddhist significant person"
+ },
+ "sor1_2020_q18": {
+  "code": "HSC-M1-T1-D41",
+  "confidence": "medium",
+  "why": "Christian ethical behaviour guidance"
+ },
+ "sor1_2020_q19": {
+  "code": null,
+  "confidence": "low",
+  "why": "whole-tradition essence essay; no single dot"
+ },
+ "sor1_2020_q20": {
+  "code": "HSC-M1-T1-D95",
+  "confidence": "high",
+  "why": "impact of Muslim significant person"
+ },
+ "sor1_2020_q21": {
+  "code": null,
+  "confidence": "low",
+  "why": "covenant belief; no Year 12 Judaism belief dot"
+ },
+ "sor1_2021_q1": {
+  "code": "HSC-M1-T3-D14",
+  "confidence": "high",
+  "why": "Native Title Act 1993 recognition"
+ },
+ "sor1_2021_q2": {
+  "code": "HSC-M1-T3-D11",
+  "confidence": "medium",
+  "why": "land as sacred link to identity"
+ },
+ "sor1_2021_q3": {
+  "code": null,
+  "confidence": "low",
+  "why": "stem missing; cannot determine"
+ },
+ "sor1_2021_q4": {
+  "code": null,
+  "confidence": "low",
+  "why": "source missing; cannot determine"
+ },
+ "sor1_2021_q5": {
+  "code": "HSC-M1-T3-D20",
+  "confidence": "medium",
+  "why": "recognising Christian denominations"
+ },
+ "sor1_2021_q6": {
+  "code": "HSC-M1-T3-D27",
+  "confidence": "high",
+  "why": "NSW Ecumenical Council objective"
+ },
+ "sor1_2021_q7": {
+  "code": "HSC-M1-T3-D26",
+  "confidence": "medium",
+  "why": "Uniting Church membership of NCC"
+ },
+ "sor1_2021_q8": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "census 2016 adherence facts"
+ },
+ "sor1_2021_q9": {
+  "code": "HSC-M1-T3-D5",
+  "confidence": "medium",
+  "why": "example of ecumenism"
+ },
+ "sor1_2021_q10": {
+  "code": "HSC-M1-T3-D14",
+  "confidence": "medium",
+  "why": "Native Title Amendment Act 1998 powers"
+ },
+ "sor1_2021_q11": {
+  "code": "HSC-M1-T3-D29",
+  "confidence": "high",
+  "why": "religious traditions engaging reconciliation"
+ },
+ "sor1_2021_q12": {
+  "code": "HSC-M1-T1-D16",
+  "confidence": "medium",
+  "why": "ethics part of Buddhism 15-mark"
+ },
+ "sor1_2021_q13": {
+  "code": "HSC-M1-T1-D51",
+  "confidence": "medium",
+  "why": "practice significance, final part"
+ },
+ "sor1_2021_q14": {
+  "code": "HSC-M1-T1-D74",
+  "confidence": "medium",
+  "why": "practice guidance for Hindu community"
+ },
+ "sor1_2021_q15": {
+  "code": "HSC-M1-T1-D95",
+  "confidence": "medium",
+  "why": "person guidance, final part"
+ },
+ "sor1_2021_q16": {
+  "code": "HSC-M1-T1-D114",
+  "confidence": "medium",
+  "why": "ethics guidance, final part"
+ },
+ "sor1_2021_q17": {
+  "code": "HSC-M1-T1-D15",
+  "confidence": "low",
+  "why": "whole-tradition guidance essay"
+ },
+ "sor1_2021_q18": {
+  "code": "HSC-M1-T1-D41",
+  "confidence": "low",
+  "why": "Christian guidance essay, broad"
+ },
+ "sor1_2021_q19": {
+  "code": "HSC-M1-T1-D65",
+  "confidence": "low",
+  "why": "Hindu guidance essay, broad"
+ },
+ "sor1_2021_q20": {
+  "code": "HSC-M1-T1-D89",
+  "confidence": "medium",
+  "why": "Islam guiding right action"
+ },
+ "sor1_2021_q21": {
+  "code": "HSC-M1-T1-D114",
+  "confidence": "medium",
+  "why": "Judaism guiding right living"
+ },
+ "sor1_2022_q1": {
+  "code": "HSC-M1-T3-D9",
+  "confidence": "high",
+  "why": "kinship as system of relationships"
+ },
+ "sor1_2022_q2": {
+  "code": "HSC-M1-T3-D12",
+  "confidence": "high",
+  "why": "loss of identity from dispossession"
+ },
+ "sor1_2022_q3": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "high",
+  "why": "census No Religion percentage"
+ },
+ "sor1_2022_q4": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "largest Christian denomination by census"
+ },
+ "sor1_2022_q5": {
+  "code": "HSC-M1-T3-D12",
+  "confidence": "high",
+  "why": "Sorry Day and Stolen Generations"
+ },
+ "sor1_2022_q6": {
+  "code": null,
+  "confidence": "low",
+  "why": "stimulus missing; cannot determine"
+ },
+ "sor1_2022_q7": {
+  "code": "HSC-M1-T3-D5",
+  "confidence": "medium",
+  "why": "role of ecumenical movement"
+ },
+ "sor1_2022_q8": {
+  "code": null,
+  "confidence": "low",
+  "why": "statements missing; cannot determine"
+ },
+ "sor1_2022_q9": {
+  "code": "HSC-M1-T3-D24",
+  "confidence": "high",
+  "why": "cause of increasing secularism"
+ },
+ "sor1_2022_q10": {
+  "code": "HSC-M1-T3-D16",
+  "confidence": "high",
+  "why": "Wik decision outcome"
+ },
+ "sor1_2022_q11": {
+  "code": "HSC-M1-T3-D28",
+  "confidence": "high",
+  "why": "importance of interfaith dialogue"
+ },
+ "sor1_2022_q12": {
+  "code": "HSC-M1-T1-D22",
+  "confidence": "medium",
+  "why": "Buddhist person contribution, final part"
+ },
+ "sor1_2022_q13": {
+  "code": "HSC-M1-T1-D46",
+  "confidence": "medium",
+  "why": "Christian person contribution, final part"
+ },
+ "sor1_2022_q14": {
+  "code": "HSC-M1-T1-D69",
+  "confidence": "medium",
+  "why": "Hindu person contribution, final part"
+ },
+ "sor1_2022_q15": {
+  "code": "HSC-M1-T1-D94",
+  "confidence": "medium",
+  "why": "Muslim person contribution, final part"
+ },
+ "sor1_2022_q16": {
+  "code": "HSC-M1-T1-D117",
+  "confidence": "medium",
+  "why": "Jewish person contribution, final part"
+ },
+ "sor1_2022_q17": {
+  "code": "HSC-M1-T3-D33",
+  "confidence": "low",
+  "why": "diversity and unity within Buddhism"
+ },
+ "sor1_2022_q18": {
+  "code": "HSC-M1-T3-D33",
+  "confidence": "low",
+  "why": "diversity and unity within Christianity"
+ },
+ "sor1_2022_q19": {
+  "code": "HSC-M1-T3-D33",
+  "confidence": "low",
+  "why": "diversity and unity within Hinduism"
+ },
+ "sor1_2022_q20": {
+  "code": "HSC-M1-T3-D33",
+  "confidence": "low",
+  "why": "diversity and unity within Islam"
+ },
+ "sor1_2022_q21": {
+  "code": "HSC-M1-T3-D33",
+  "confidence": "low",
+  "why": "diversity and unity within Judaism"
+ },
+ "sor1_2023_q1": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "fastest growing tradition, 2021 census"
+ },
+ "sor1_2023_q2": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "high",
+  "why": "No Religion growth in census"
+ },
+ "sor1_2023_q3": {
+  "code": "HSC-M1-T3-D24",
+  "confidence": "high",
+  "why": "definition of secularism"
+ },
+ "sor1_2023_q4": {
+  "code": "HSC-M1-T3-D22",
+  "confidence": "high",
+  "why": "denominational switching example"
+ },
+ "sor1_2023_q5": {
+  "code": "HSC-M1-T3-D10",
+  "confidence": "high",
+  "why": "ceremonial life expressing Dreaming"
+ },
+ "sor1_2023_q6": {
+  "code": "HSC-M1-T3-D28",
+  "confidence": "medium",
+  "why": "purpose of interfaith dialogue"
+ },
+ "sor1_2023_q7": {
+  "code": "HSC-M1-T3-D5",
+  "confidence": "medium",
+  "why": "objective of ecumenism"
+ },
+ "sor1_2023_q8": {
+  "code": "HSC-M1-T3-D9",
+  "confidence": "high",
+  "why": "kinship definition statements"
+ },
+ "sor1_2023_q9": {
+  "code": "HSC-M1-T3-D29",
+  "confidence": "medium",
+  "why": "religious leaders supporting reconciliation"
+ },
+ "sor1_2023_q10": {
+  "code": "HSC-M1-T3-D12",
+  "confidence": "high",
+  "why": "Stolen Generations and spirituality"
+ },
+ "sor1_2023_q11": {
+  "code": "HSC-M1-T3-D17",
+  "confidence": "high",
+  "why": "Dreaming and Land Rights movement"
+ },
+ "sor1_2023_q12": {
+  "code": "HSC-M1-T1-D22",
+  "confidence": "medium",
+  "why": "Buddhist person contribution today"
+ },
+ "sor1_2023_q13": {
+  "code": "HSC-M1-T1-D46",
+  "confidence": "medium",
+  "why": "Christian person contribution today"
+ },
+ "sor1_2023_q14": {
+  "code": "HSC-M1-T1-D69",
+  "confidence": "medium",
+  "why": "Hindu person contribution today"
+ },
+ "sor1_2023_q15": {
+  "code": "HSC-M1-T1-D94",
+  "confidence": "medium",
+  "why": "Muslim person contribution today"
+ },
+ "sor1_2023_q16": {
+  "code": "HSC-M1-T1-D117",
+  "confidence": "medium",
+  "why": "Jewish person contribution today"
+ },
+ "sor1_2023_q17": {
+  "code": null,
+  "confidence": "low",
+  "why": "explicitly multi-strand; no single dot"
+ },
+ "sor1_2023_q18": {
+  "code": null,
+  "confidence": "low",
+  "why": "explicitly multi-strand; no single dot"
+ },
+ "sor1_2023_q19": {
+  "code": null,
+  "confidence": "low",
+  "why": "explicitly multi-strand; no single dot"
+ },
+ "sor1_2023_q20": {
+  "code": null,
+  "confidence": "low",
+  "why": "explicitly multi-strand; no single dot"
+ },
+ "sor1_2023_q21": {
+  "code": null,
+  "confidence": "low",
+  "why": "explicitly multi-strand; no single dot"
+ },
+ "sor1_2024_q1": {
+  "code": "HSC-M1-T3-D8",
+  "confidence": "medium",
+  "why": "aspects determined by the Dreaming"
+ },
+ "sor1_2024_q2": {
+  "code": "HSC-M1-T3-D17",
+  "confidence": "high",
+  "why": "Dreaming importance for Land Rights"
+ },
+ "sor1_2024_q3": {
+  "code": "HSC-M1-T3-D12",
+  "confidence": "high",
+  "why": "ongoing effect of dispossession"
+ },
+ "sor1_2024_q4": {
+  "code": "HSC-M1-T3-D24",
+  "confidence": "high",
+  "why": "secularism eroding religious influence"
+ },
+ "sor1_2024_q5": {
+  "code": "HSC-M1-T3-D22",
+  "confidence": "high",
+  "why": "reason for denominational switching"
+ },
+ "sor1_2024_q6": {
+  "code": "HSC-M1-T3-D23",
+  "confidence": "high",
+  "why": "New Age religion components"
+ },
+ "sor1_2024_q7": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "2021 census adherence accuracy"
+ },
+ "sor1_2024_q8": {
+  "code": "HSC-M1-T3-D28",
+  "confidence": "high",
+  "why": "importance of interfaith dialogue"
+ },
+ "sor1_2024_q9": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "census percentage identifying Islam"
+ },
+ "sor1_2024_q10": {
+  "code": "HSC-M1-T3-D14",
+  "confidence": "medium",
+  "why": "Wik and Native Title Act statements"
+ },
+ "sor1_2024_q11": {
+  "code": "HSC-M1-T3-D25",
+  "confidence": "high",
+  "why": "impact of Christian ecumenical movement"
+ },
+ "sor1_2024_q12": {
+  "code": "HSC-M1-T1-D26",
+  "confidence": "high",
+  "why": "practice expressing Buddhist beliefs"
+ },
+ "sor1_2024_q13": {
+  "code": "HSC-M1-T1-D50",
+  "confidence": "high",
+  "why": "practice expressing Christian beliefs"
+ },
+ "sor1_2024_q14": {
+  "code": "HSC-M1-T1-D73",
+  "confidence": "high",
+  "why": "practice expressing Hindu beliefs"
+ },
+ "sor1_2024_q15": {
+  "code": "HSC-M1-T1-D98",
+  "confidence": "high",
+  "why": "practice expressing Islamic beliefs"
+ },
+ "sor1_2024_q16": {
+  "code": "HSC-M1-T1-D121",
+  "confidence": "high",
+  "why": "practice expressing Jewish beliefs"
+ },
+ "sor1_2024_q17": {
+  "code": "HSC-M1-T1-D23",
+  "confidence": "high",
+  "why": "impact of significant Buddhist person"
+ },
+ "sor1_2024_q18": {
+  "code": "HSC-M1-T1-D47",
+  "confidence": "high",
+  "why": "impact of significant Christian person"
+ },
+ "sor1_2024_q19": {
+  "code": "HSC-M1-T1-D70",
+  "confidence": "high",
+  "why": "impact of significant Hindu person"
+ },
+ "sor1_2024_q20": {
+  "code": "HSC-M1-T1-D95",
+  "confidence": "high",
+  "why": "impact of significant Muslim person"
+ },
+ "sor1_2024_q21": {
+  "code": "HSC-M1-T1-D118",
+  "confidence": "high",
+  "why": "impact of significant Jewish person"
+ },
+ "sor1_2025_q1": {
+  "code": "HSC-M1-T3-D22",
+  "confidence": "high",
+  "why": "Catholic to Pentecostal switching"
+ },
+ "sor1_2025_q2": {
+  "code": "HSC-M1-T3-D21",
+  "confidence": "high",
+  "why": "post-war immigration, many faiths"
+ },
+ "sor1_2025_q3": {
+  "code": "HSC-M1-T3-D12",
+  "confidence": "high",
+  "why": "continuing effect of dispossession"
+ },
+ "sor1_2025_q4": {
+  "code": "HSC-M1-T3-D26",
+  "confidence": "high",
+  "why": "NCC aim of ecumenical gatherings"
+ },
+ "sor1_2025_q5": {
+  "code": "HSC-M1-T3-D7",
+  "confidence": "medium",
+  "why": "definition of reconciliation"
+ },
+ "sor1_2025_q6": {
+  "code": "HSC-M1-T3-D24",
+  "confidence": "high",
+  "why": "secular activity example"
+ },
+ "sor1_2025_q7": {
+  "code": "HSC-M1-T3-D10",
+  "confidence": "high",
+  "why": "importance of ceremonial life"
+ },
+ "sor1_2025_q8": {
+  "code": "HSC-M1-T3-D23",
+  "confidence": "high",
+  "why": "New Age adherent survey response"
+ },
+ "sor1_2025_q9": {
+  "code": "HSC-M1-T3-D16",
+  "confidence": "high",
+  "why": "outcome of Wik decision"
+ },
+ "sor1_2025_q10": {
+  "code": "HSC-M1-T3-D18",
+  "confidence": "medium",
+  "why": "2021 census adherence statements"
+ },
+ "sor1_2025_q11": {
+  "code": "HSC-M1-T3-D28",
+  "confidence": "high",
+  "why": "importance of religious dialogue"
+ },
+ "sor1_2025_q12": {
+  "code": "HSC-M1-T1-D23",
+  "confidence": "medium",
+  "why": "person direction, final part"
+ },
+ "sor1_2025_q13": {
+  "code": "HSC-M1-T1-D47",
+  "confidence": "medium",
+  "why": "person direction, final part"
+ },
+ "sor1_2025_q14": {
+  "code": "HSC-M1-T1-D70",
+  "confidence": "medium",
+  "why": "person direction, final part"
+ },
+ "sor1_2025_q15": {
+  "code": "HSC-M1-T1-D95",
+  "confidence": "medium",
+  "why": "person direction, final part"
+ },
+ "sor1_2025_q16": {
+  "code": "HSC-M1-T1-D118",
+  "confidence": "medium",
+  "why": "person direction, final part"
+ },
+ "sor1_2025_q17": {
+  "code": "HSC-M1-T1-D16",
+  "confidence": "high",
+  "why": "Buddhist ethics in chosen area"
+ },
+ "sor1_2025_q18": {
+  "code": "HSC-M1-T1-D41",
+  "confidence": "high",
+  "why": "Christian ethics in chosen area"
+ },
+ "sor1_2025_q19": {
+  "code": "HSC-M1-T1-D65",
+  "confidence": "high",
+  "why": "Hindu ethics in chosen area"
+ },
+ "sor1_2025_q20": {
+  "code": "HSC-M1-T1-D89",
+  "confidence": "high",
+  "why": "Islamic ethics in chosen area"
+ },
+ "sor1_2025_q21": {
+  "code": "HSC-M1-T1-D114",
+  "confidence": "high",
+  "why": "Jewish ethics in chosen area"
+ }
+}

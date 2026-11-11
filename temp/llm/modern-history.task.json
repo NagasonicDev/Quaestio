@@ -1,0 +1,3336 @@
+{
+ "course_id": "modern-history",
+ "course_name": "Modern History",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Analysis and use of sources / Explain the meaning and value of sources for a historical inquiry."
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Analysis and use of sources / Analyse sources to identify and account for the different perspectives of individuals and groups in the past."
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Analysis and use of sources / Analyse and synthesise evidence from different types of sources to develop reasoned claims."
+  },
+  {
+   "code": "PRE-M1-T1-D4",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Analysis and use of sources / Identify and analyse problems relating to sources in the investigation of the past."
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Historical interpretation / Analyse the extent and nature of continuity and change over time."
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Historical interpretation / Identify and analyse the varying causes and effects of events and developments to construct historical arguments."
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Historical interpretation / Form judgements about historical significance, recognising that significance may be attributed for different purposes."
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Historical interpretation / Analyse and evaluate contested interpretations and representations of the past."
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Historical investigation and research / Frame questions to guide historical inquiry and develop a coherent research plan."
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Historical investigation and research / Use evidence from a range of sources to inform investigation and research."
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Historical investigation and research / Acknowledge sources appropriately."
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Explanation and communication / Develop texts, particularly historical accounts and arguments, supported by relevant evidence from sources."
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Historical concepts and skills 11–12 / Explanation and communication / Communicate historical understanding, using historical knowledge, terms and concepts, in forms appropriate to purpose and audience."
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / The investigation of historic sites and sources / Investigation / The nature, range and importance of archives to historians of modern history, including the digitisation of archival records"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / The investigation of historic sites and sources / Investigation / The reconstruction of historic sites and site chronology using evidence"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / The investigation of historic sites and sources / Investigation / The contribution of archaeological and scientific techniques to the investigation of the past"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / The investigation of historic sites and sources / Investigation / The contribution of historic sites and sources (including oral history) to an understanding of events, developments and life in the past"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / The contestability of the past / Investigation / How historians test hypotheses about the past through the corroboration of sources"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / The contestability of the past / Investigation / Problems associated with the evaluation of sources, including issues of authenticity and reliability in particular historical inquiries"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / The contestability of the past / Investigation / The importance of understanding historical context in the interpretation of sources"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / The contestability of the past / Investigation / The role of sources and evidence in the evaluation of different theories about the past"
+  },
+  {
+   "code": "PRE-M5-T1-D1",
+   "path": "Year 11 / The construction of modern histories / Investigation / Different types of histories"
+  },
+  {
+   "code": "PRE-M5-T1-D2",
+   "path": "Year 11 / The construction of modern histories / Investigation / The role of evidence, interpretation and perspective in the construction of historical accounts"
+  },
+  {
+   "code": "PRE-M5-T1-D3",
+   "path": "Year 11 / The construction of modern histories / Investigation / Problems associated with the construction of modern histories"
+  },
+  {
+   "code": "PRE-M5-T1-D4",
+   "path": "Year 11 / The construction of modern histories / Investigation / The role of selectivity, emphasis and omission in the construction of historical accounts"
+  },
+  {
+   "code": "PRE-M6-T1-D1",
+   "path": "Year 11 / The representation and commemoration of the past / Investigation / The nature and role of public and official histories"
+  },
+  {
+   "code": "PRE-M6-T1-D2",
+   "path": "Year 11 / The representation and commemoration of the past / Investigation / Different ways history is represented and remembered"
+  },
+  {
+   "code": "PRE-M6-T1-D3",
+   "path": "Year 11 / The representation and commemoration of the past / Investigation / The need for critical analysis of representations of the past and historical methods that can be used for this purpose"
+  },
+  {
+   "code": "PRE-M6-T1-D4",
+   "path": "Year 11 / The representation and commemoration of the past / Investigation / The various ways the past is commemorated, including the role of political influence"
+  },
+  {
+   "code": "PRE-M8-T1-D1",
+   "path": "Year 11 / List A: Australia and the rise of communism / The historical context / The rise of communism in Australia from the First World War, including the creation of the Communist Party, and the idea of an impending communist takeover"
+  },
+  {
+   "code": "PRE-M8-T1-D2",
+   "path": "Year 11 / List A: Australia and the rise of communism / The historical context / Threats to democracy after WWI, including the impact of the Russian Revolution"
+  },
+  {
+   "code": "PRE-M8-T2-D1",
+   "path": "Year 11 / List A: Australia and the rise of communism / The nature of the communist presence in Australia and Asia / Attempts by the Communist Party to assert political influence, including in local organisations and political parties"
+  },
+  {
+   "code": "PRE-M8-T2-D2",
+   "path": "Year 11 / List A: Australia and the rise of communism / The nature of the communist presence in Australia and Asia / Attempts by groups and politicians to resist communist influence in Australia"
+  },
+  {
+   "code": "PRE-M8-T2-D3",
+   "path": "Year 11 / List A: Australia and the rise of communism / The nature of the communist presence in Australia and Asia / The role of espionage and counterespionage, and the role of the Australian Security Intelligence Organisation (ASIO) and the Petrov Affair"
+  },
+  {
+   "code": "PRE-M8-T2-D4",
+   "path": "Year 11 / List A: Australia and the rise of communism / The nature of the communist presence in Australia and Asia / Australia’s response to international communism"
+  },
+  {
+   "code": "PRE-M8-T2-D5",
+   "path": "Year 11 / List A: Australia and the rise of communism / The nature of the communist presence in Australia and Asia / The domino theory and reasons for Australia’s involvement in the Vietnam War"
+  },
+  {
+   "code": "PRE-M8-T3-D1",
+   "path": "Year 11 / List A: Australia and the rise of communism / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to Australia and the rise of communism"
+  },
+  {
+   "code": "PRE-M9-T1-D1",
+   "path": "Year 11 / List A: Making change: The Day of Mourning to the National Apology to the Stolen Generations / The historical context / The challenges faced by Aboriginal and Torres Strait Islander Peoples in achieving self-determination"
+  },
+  {
+   "code": "PRE-M9-T1-D2",
+   "path": "Year 11 / List A: Making change: The Day of Mourning to the National Apology to the Stolen Generations / The historical context / The Day of Mourning protest and its impact"
+  },
+  {
+   "code": "PRE-M9-T2-D1",
+   "path": "Year 11 / List A: Making change: The Day of Mourning to the National Apology to the Stolen Generations / The nature and impact of the modern Aboriginal political movement / The motivations, role and contribution of at least ONE individual who achieved positive change for Aboriginal and/or Torres Strait Islander Peoples"
+  },
+  {
+   "code": "PRE-M9-T2-D2",
+   "path": "Year 11 / List A: Making change: The Day of Mourning to the National Apology to the Stolen Generations / The nature and impact of the modern Aboriginal political movement / The motivations, role and contribution of key groups that achieved positive change for Aboriginal and/or Torres Strait Islander Peoples"
+  },
+  {
+   "code": "PRE-M9-T2-D3",
+   "path": "Year 11 / List A: Making change: The Day of Mourning to the National Apology to the Stolen Generations / The nature and impact of the modern Aboriginal political movement / The relationship between the modern Aboriginal political movement and a range of Australian and international groups"
+  },
+  {
+   "code": "PRE-M9-T2-D4",
+   "path": "Year 11 / List A: Making change: The Day of Mourning to the National Apology to the Stolen Generations / The nature and impact of the modern Aboriginal political movement / The 2008 National Apology to the Stolen Generations and its significance"
+  },
+  {
+   "code": "PRE-M9-T3-D1",
+   "path": "Year 11 / List A: Making change: The Day of Mourning to the National Apology to the Stolen Generations / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to making change: the Day of Mourning to the National Apology to the Stolen Generations"
+  },
+  {
+   "code": "PRE-M10-T1-D1",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The historical context / Factors contributing to the development of Irish nationalism"
+  },
+  {
+   "code": "PRE-M10-T1-D2",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The historical context / Causes and consequences of the 1916 Easter Rising"
+  },
+  {
+   "code": "PRE-M10-T2-D1",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / Consequences of the War of Independence, including the 1921 Anglo–Irish Treaty and the partition of Ireland"
+  },
+  {
+   "code": "PRE-M10-T2-D2",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / The rise of the civil rights movement in Northern Ireland, including the role of the Northern Irish Civil Rights Association"
+  },
+  {
+   "code": "PRE-M10-T2-D3",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / Causes and consequences of sectarian violence"
+  },
+  {
+   "code": "PRE-M10-T2-D4",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / The Maze Prison protests and attempts at political representation"
+  },
+  {
+   "code": "PRE-M10-T2-D5",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / Popular movements towards peace"
+  },
+  {
+   "code": "PRE-M10-T2-D6",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / Consequences of the 1985 Anglo–Irish agreement"
+  },
+  {
+   "code": "PRE-M10-T2-D7",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / The significance of the 1994 paramilitary ceasefires"
+  },
+  {
+   "code": "PRE-M10-T2-D8",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / The nature of Anglo–Irish relations / The 1998 Good Friday Agreement"
+  },
+  {
+   "code": "PRE-M10-T3-D1",
+   "path": "Year 11 / List A: The changing nature of Anglo–Irish relations / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to Anglo–Irish relations"
+  },
+  {
+   "code": "PRE-M11-T1-D1",
+   "path": "Year 11 / List A: The decline and fall of the Romanov dynasty / The historical context / The nature of autocracy in the Russian Empire at the beginning of the 20th century"
+  },
+  {
+   "code": "PRE-M11-T1-D2",
+   "path": "Year 11 / List A: The decline and fall of the Romanov dynasty / The historical context / Political, economic and social issues in the Russian Empire by 1905"
+  },
+  {
+   "code": "PRE-M11-T2-D1",
+   "path": "Year 11 / List A: The decline and fall of the Romanov dynasty / The nature of the decline and fall of the Romanov dynasty / The development and nature of opposition to the Romanovs"
+  },
+  {
+   "code": "PRE-M11-T2-D2",
+   "path": "Year 11 / List A: The decline and fall of the Romanov dynasty / The nature of the decline and fall of the Romanov dynasty / The causes and consequences of the 1905 Revolution"
+  },
+  {
+   "code": "PRE-M11-T2-D3",
+   "path": "Year 11 / List A: The decline and fall of the Romanov dynasty / The nature of the decline and fall of the Romanov dynasty / The role of the First World War in the collapse of the Romanov dynasty"
+  },
+  {
+   "code": "PRE-M11-T2-D4",
+   "path": "Year 11 / List A: The decline and fall of the Romanov dynasty / The nature of the decline and fall of the Romanov dynasty / The February/March 1917 Revolution, including the transfer of power from the Romanov regime to the Provisional Government"
+  },
+  {
+   "code": "PRE-M11-T3-D1",
+   "path": "Year 11 / List A: The decline and fall of the Romanov dynasty / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the Romanovs"
+  },
+  {
+   "code": "PRE-M12-T1-D1",
+   "path": "Year 11 / List A: The transatlantic slave trade / The historical context / An overview of Western imperial and economic expansion in both Africa and the Americas"
+  },
+  {
+   "code": "PRE-M12-T2-D1",
+   "path": "Year 11 / List A: The transatlantic slave trade / The nature of the transatlantic slave trade / The motivations for the trade of enslaved people"
+  },
+  {
+   "code": "PRE-M12-T2-D2",
+   "path": "Year 11 / List A: The transatlantic slave trade / The nature of the transatlantic slave trade / The different experiences and treatment of enslaved people in the ‘New World’"
+  },
+  {
+   "code": "PRE-M12-T2-D3",
+   "path": "Year 11 / List A: The transatlantic slave trade / The nature of the transatlantic slave trade / The role of the plantation owners and governments in the slave trade"
+  },
+  {
+   "code": "PRE-M12-T2-D4",
+   "path": "Year 11 / List A: The transatlantic slave trade / The nature of the transatlantic slave trade / The nature of slave resistance"
+  },
+  {
+   "code": "PRE-M12-T2-D5",
+   "path": "Year 11 / List A: The transatlantic slave trade / The nature of the transatlantic slave trade / The political, economic and social impact of the trading of enslaved people on ONE African polity and ONE Western imperial power"
+  },
+  {
+   "code": "PRE-M12-T2-D6",
+   "path": "Year 11 / List A: The transatlantic slave trade / The nature of the transatlantic slave trade / Anti-slavery campaigns that led to the abolition of the slave trade, including the role of key individuals and groups"
+  },
+  {
+   "code": "PRE-M12-T2-D7",
+   "path": "Year 11 / List A: The transatlantic slave trade / The nature of the transatlantic slave trade / The legacy of the slave trade in Africa and/or Europe and/or the Americas"
+  },
+  {
+   "code": "PRE-M12-T3-D1",
+   "path": "Year 11 / List A: The transatlantic slave trade / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the transatlantic slave trade"
+  },
+  {
+   "code": "PRE-M13-T1-D1",
+   "path": "Year 11 / List A: The American Civil War / The historical context / The Constitution and the issues of States’ Rights"
+  },
+  {
+   "code": "PRE-M13-T1-D2",
+   "path": "Year 11 / List A: The American Civil War / The historical context / Economic and social differences between the North and the South"
+  },
+  {
+   "code": "PRE-M13-T1-D3",
+   "path": "Year 11 / List A: The American Civil War / The historical context / The westward expansion of the United States in the 19th century"
+  },
+  {
+   "code": "PRE-M13-T1-D4",
+   "path": "Year 11 / List A: The American Civil War / The historical context / Slavery and the development of the abolition movement"
+  },
+  {
+   "code": "PRE-M13-T2-D1",
+   "path": "Year 11 / List A: The American Civil War / The nature of the American Civil War / Short-term reasons for the outbreak of war in 1861"
+  },
+  {
+   "code": "PRE-M13-T2-D2",
+   "path": "Year 11 / List A: The American Civil War / The nature of the American Civil War / Key battles of the American Civil War"
+  },
+  {
+   "code": "PRE-M13-T2-D3",
+   "path": "Year 11 / List A: The American Civil War / The nature of the American Civil War / The nature of warfare, including changing technology"
+  },
+  {
+   "code": "PRE-M13-T2-D4",
+   "path": "Year 11 / List A: The American Civil War / The nature of the American Civil War / The role and experiences of different groups during the American Civil War"
+  },
+  {
+   "code": "PRE-M13-T2-D5",
+   "path": "Year 11 / List A: The American Civil War / The nature of the American Civil War / Reasons for the Union victory and the consequences of the American Civil War"
+  },
+  {
+   "code": "PRE-M13-T3-D1",
+   "path": "Year 11 / List A: The American Civil War / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the American Civil War"
+  },
+  {
+   "code": "PRE-M14-T1-D1",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The historical context / Early awareness and the first environmental protection societies"
+  },
+  {
+   "code": "PRE-M14-T1-D2",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The historical context / Overview of other movements for change in this period"
+  },
+  {
+   "code": "PRE-M14-T2-D1",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The nature of the American environmental movement / The significance of Rachel Carson’s work, including Silent spring (1962)"
+  },
+  {
+   "code": "PRE-M14-T2-D2",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The nature of the American environmental movement / The Wilderness Act 1964 and the creation of the National Wilderness Preservation System"
+  },
+  {
+   "code": "PRE-M14-T2-D3",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The nature of the American environmental movement / The 1969 Apollo 11 moon landing, its impact on environmental awareness and the impact of Earth Day in 1970"
+  },
+  {
+   "code": "PRE-M14-T2-D4",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The nature of the American environmental movement / Responses to the 1972 Limits to growth report and the significance of the 1972 United Nations Conference on the Human Environment"
+  },
+  {
+   "code": "PRE-M14-T2-D5",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The nature of the American environmental movement / The formation of the Environmental Protection Agency and an evaluation of its performance"
+  },
+  {
+   "code": "PRE-M14-T2-D6",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The nature of the American environmental movement / An environmental movement in ONE nation or area of the world other than the United States"
+  },
+  {
+   "code": "PRE-M14-T2-D7",
+   "path": "Year 11 / List A: The rise of the American environmental movement / The nature of the American environmental movement / Opposition to environmental movements and/or campaigns"
+  },
+  {
+   "code": "PRE-M14-T3-D1",
+   "path": "Year 11 / List A: The rise of the American environmental movement / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the American environmental movement"
+  },
+  {
+   "code": "PRE-M15-T1-D1",
+   "path": "Year 11 / List A: Women’s movements / The historical context / An overview of the social and political roles of women in the West in the 19th century"
+  },
+  {
+   "code": "PRE-M15-T1-D2",
+   "path": "Year 11 / List A: Women’s movements / The historical context / The contribution of suffragettes to the legal and political entitlements of women"
+  },
+  {
+   "code": "PRE-M15-T1-D3",
+   "path": "Year 11 / List A: Women’s movements / The historical context / The significance of the First and Second World Wars for women and their social and political status"
+  },
+  {
+   "code": "PRE-M15-T2-D1",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / The ambitions and impact of women’s movements in the 1960s and 1970s"
+  },
+  {
+   "code": "PRE-M15-T2-D2",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / The contribution of ONE individual or group to women’s movements"
+  },
+  {
+   "code": "PRE-M15-T2-D3",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / Postwar social, economic and technological developments that affected women’s lives"
+  },
+  {
+   "code": "PRE-M15-T2-D4",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / The impact of women’s movements in challenging ‘gender roles’"
+  },
+  {
+   "code": "PRE-M15-T2-D5",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / The achievements and legacies of women’s movements, including the role of women in leadership"
+  },
+  {
+   "code": "PRE-M15-T2-D6",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / A women’s movement in ONE non-Western nation or area of the world"
+  },
+  {
+   "code": "PRE-M15-T2-D7",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / Opposition to women’s movements"
+  },
+  {
+   "code": "PRE-M15-T2-D8",
+   "path": "Year 11 / List A: Women’s movements / The nature of women’s movements / The nature of women’s demands in the 21st century"
+  },
+  {
+   "code": "PRE-M15-T3-D1",
+   "path": "Year 11 / List A: Women’s movements / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to women’s movements"
+  },
+  {
+   "code": "PRE-M16-T1-D1",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The historical context / The aims and membership of the Society of Righteous and Harmonious Fists/I-ho Ch’uan"
+  },
+  {
+   "code": "PRE-M16-T1-D2",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The historical context / The causes of the Boxer Rebellion, including the role of foreign imperialism and the spread of Christianity"
+  },
+  {
+   "code": "PRE-M16-T1-D3",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The historical context / The role and motivation of Empress Dowager Cixi in encouraging the Boxers"
+  },
+  {
+   "code": "PRE-M16-T2-D1",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The nature and course of the Boxer Rebellion in China / The geographical extent of the rebellion"
+  },
+  {
+   "code": "PRE-M16-T2-D2",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The nature and course of the Boxer Rebellion in China / The Siege of the International Legations in 1900"
+  },
+  {
+   "code": "PRE-M16-T2-D3",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The nature and course of the Boxer Rebellion in China / Reasons for the defeat of the rebellion, including international responses"
+  },
+  {
+   "code": "PRE-M16-T2-D4",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The nature and course of the Boxer Rebellion in China / Consequences of the rebellion and its impact on the Chinese people"
+  },
+  {
+   "code": "PRE-M16-T2-D5",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / The nature and course of the Boxer Rebellion in China / The implications of the rebellion for China and the Qing dynasty, including the Boxer Protocol"
+  },
+  {
+   "code": "PRE-M16-T3-D1",
+   "path": "Year 11 / List B: The Boxer Rebellion in China / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the Boxer Rebellion"
+  },
+  {
+   "code": "PRE-M17-T1-D1",
+   "path": "Year 11 / List B: The British in India and Burma / The historical context / The structure of societies in South Asia prior to contact with the British"
+  },
+  {
+   "code": "PRE-M17-T1-D2",
+   "path": "Year 11 / List B: The British in India and Burma / The historical context / The reasons for the British presence in India and Burma"
+  },
+  {
+   "code": "PRE-M17-T2-D1",
+   "path": "Year 11 / List B: The British in India and Burma / Conflict and resistance to British rule / The causes and course of the 1857 Indian Rebellion/Mutiny"
+  },
+  {
+   "code": "PRE-M17-T2-D2",
+   "path": "Year 11 / List B: The British in India and Burma / Conflict and resistance to British rule / The impact of the Indian Rebellion/Mutiny on the people of India and Anglo–Indian relations"
+  },
+  {
+   "code": "PRE-M17-T2-D3",
+   "path": "Year 11 / List B: The British in India and Burma / Conflict and resistance to British rule / The features of British rule in India, including the role of the British Raj and local collaborators"
+  },
+  {
+   "code": "PRE-M17-T2-D4",
+   "path": "Year 11 / List B: The British in India and Burma / Conflict and resistance to British rule / An overview of the Anglo–Burmese Wars and the fall of the royal family in Burma"
+  },
+  {
+   "code": "PRE-M17-T2-D5",
+   "path": "Year 11 / List B: The British in India and Burma / Conflict and resistance to British rule / The features of British rule in Burma and the creation of Burma as a province of British India"
+  },
+  {
+   "code": "PRE-M17-T2-D6",
+   "path": "Year 11 / List B: The British in India and Burma / Conflict and resistance to British rule / Resistance to British rule in Burma"
+  },
+  {
+   "code": "PRE-M17-T2-D7",
+   "path": "Year 11 / List B: The British in India and Burma / Conflict and resistance to British rule / The impact of British rule on the cultures and economies of India and Burma"
+  },
+  {
+   "code": "PRE-M17-T3-D1",
+   "path": "Year 11 / List B: The British in India and Burma / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the British in India and Burma"
+  },
+  {
+   "code": "PRE-M18-T1-D1",
+   "path": "Year 11 / List B: The Meiji Restoration / The historical context / The decline of the Tokugawa Shogunate"
+  },
+  {
+   "code": "PRE-M18-T1-D2",
+   "path": "Year 11 / List B: The Meiji Restoration / The historical context / The end of isolationism with the arrival of the ‘Black Ships’ and Commodore Perry"
+  },
+  {
+   "code": "PRE-M18-T2-D1",
+   "path": "Year 11 / List B: The Meiji Restoration / The nature of the Meiji Restoration / The reasons for Japanese modernisation under Meiji rule"
+  },
+  {
+   "code": "PRE-M18-T2-D2",
+   "path": "Year 11 / List B: The Meiji Restoration / The nature of the Meiji Restoration / The role of individuals and groups in the Meiji Restoration"
+  },
+  {
+   "code": "PRE-M18-T2-D3",
+   "path": "Year 11 / List B: The Meiji Restoration / The nature of the Meiji Restoration / The role of Western imperialism in the Meiji period"
+  },
+  {
+   "code": "PRE-M18-T2-D4",
+   "path": "Year 11 / List B: The Meiji Restoration / The nature of the Meiji Restoration / The political, economic and social consequences of modernisation for Japan, the Emperor, the region and the West"
+  },
+  {
+   "code": "PRE-M18-T2-D5",
+   "path": "Year 11 / List B: The Meiji Restoration / The nature of the Meiji Restoration / The growth of Japanese militarism and imperialism, including the Sino–Japanese War 1894–1895, the Russo–Japanese War 1904–1905 and the annexation of Korea in 1910"
+  },
+  {
+   "code": "PRE-M18-T3-D1",
+   "path": "Year 11 / List B: The Meiji Restoration / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the Meiji Restoration"
+  },
+  {
+   "code": "PRE-M19-T1-D1",
+   "path": "Year 11 / List B: Tibet in the modern world / The historical context / The impact of the Great Game on Tibet"
+  },
+  {
+   "code": "PRE-M19-T1-D2",
+   "path": "Year 11 / List B: Tibet in the modern world / The historical context / The fall of the Qing dynasty and Tibetan claims to independence 1912–1951"
+  },
+  {
+   "code": "PRE-M19-T2-D1",
+   "path": "Year 11 / List B: Tibet in the modern world / The nature of Tibet’s relations with China / China’s hegemony in the immediate region"
+  },
+  {
+   "code": "PRE-M19-T2-D2",
+   "path": "Year 11 / List B: Tibet in the modern world / The nature of Tibet’s relations with China / The conflict between the Tibetan resistance and China: the 1959 Tibetan uprising"
+  },
+  {
+   "code": "PRE-M19-T2-D3",
+   "path": "Year 11 / List B: Tibet in the modern world / The nature of Tibet’s relations with China / The impact of the Cultural Revolution on Tibet"
+  },
+  {
+   "code": "PRE-M19-T2-D4",
+   "path": "Year 11 / List B: Tibet in the modern world / The nature of Tibet’s relations with China / International responses to the political situation in Tibet"
+  },
+  {
+   "code": "PRE-M19-T2-D5",
+   "path": "Year 11 / List B: Tibet in the modern world / The nature of Tibet’s relations with China / Moves towards Tibetan independence: political, social and cultural factors"
+  },
+  {
+   "code": "PRE-M19-T2-D6",
+   "path": "Year 11 / List B: Tibet in the modern world / The nature of Tibet’s relations with China / The roles of prominent individuals and groups in promoting Tibetan independence, including the Dalai Lama, Free Tibet campaign and celebrity support"
+  },
+  {
+   "code": "PRE-M19-T3-D1",
+   "path": "Year 11 / List B: Tibet in the modern world / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to Tibet in the modern world"
+  },
+  {
+   "code": "PRE-M20-T1-D1",
+   "path": "Year 11 / List B: Contact in the Pacific / The historical context / Polynesian technology, expansion and settlement in the Pacific"
+  },
+  {
+   "code": "PRE-M20-T1-D2",
+   "path": "Year 11 / List B: Contact in the Pacific / The historical context / European technology, expansion and settlement in the Pacific"
+  },
+  {
+   "code": "PRE-M20-T2-D1",
+   "path": "Year 11 / List B: Contact in the Pacific / The nature and impact of the contact in the Pacific / The economic and social impact of Dutch control of Batavia"
+  },
+  {
+   "code": "PRE-M20-T2-D2",
+   "path": "Year 11 / List B: Contact in the Pacific / The nature and impact of the contact in the Pacific / Anglo–French rivalries and reasons for voyages of ‘scientific discovery’ to the South Pacific, including Captain James Cook, Louis-Antoine de Bougainville and Lapérouse"
+  },
+  {
+   "code": "PRE-M20-T2-D3",
+   "path": "Year 11 / List B: Contact in the Pacific / The nature and impact of the contact in the Pacific / The mutiny on the HMS Bounty and the settlement on Pitcairn Island"
+  },
+  {
+   "code": "PRE-M20-T2-D4",
+   "path": "Year 11 / List B: Contact in the Pacific / The nature and impact of the contact in the Pacific / The impact of European imperialism on populations in the Pacific"
+  },
+  {
+   "code": "PRE-M20-T2-D5",
+   "path": "Year 11 / List B: Contact in the Pacific / The nature and impact of the contact in the Pacific / The resilience and continuity of Polynesian cultures"
+  },
+  {
+   "code": "PRE-M20-T3-D1",
+   "path": "Year 11 / List B: Contact in the Pacific / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to contact in the Pacific"
+  },
+  {
+   "code": "PRE-M21-T1-D1",
+   "path": "Year 11 / List B: The making of modern South Africa / The historical context / An overview of African kingdoms in South Africa, including the role of Shaka Zulu in establishing the Zulu Empire during the Mfecane"
+  },
+  {
+   "code": "PRE-M21-T1-D2",
+   "path": "Year 11 / List B: The making of modern South Africa / The historical context / Reasons for European settlement in South Africa"
+  },
+  {
+   "code": "PRE-M21-T2-D1",
+   "path": "Year 11 / List B: The making of modern South Africa / The nature of modern South Africa 1867–1920 / The exploitation of African labour under Boer and British colonial governments"
+  },
+  {
+   "code": "PRE-M21-T2-D2",
+   "path": "Year 11 / List B: The making of modern South Africa / The nature of modern South Africa 1867–1920 / African resistance to imperialism, including the 1879 Anglo–Zulu War"
+  },
+  {
+   "code": "PRE-M21-T2-D3",
+   "path": "Year 11 / List B: The making of modern South Africa / The nature of modern South Africa 1867–1920 / The interaction of Boer nationalism and British imperialism, and their impact on race relations in South Africa"
+  },
+  {
+   "code": "PRE-M21-T2-D4",
+   "path": "Year 11 / List B: The making of modern South Africa / The nature of modern South Africa 1867–1920 / The role of significant individuals in South Africa in this period"
+  },
+  {
+   "code": "PRE-M21-T2-D5",
+   "path": "Year 11 / List B: The making of modern South Africa / The nature of modern South Africa 1867–1920 / Causes and consequences of the South African War (Second Boer War) 1899–1902"
+  },
+  {
+   "code": "PRE-M21-T2-D6",
+   "path": "Year 11 / List B: The making of modern South Africa / The nature of modern South Africa 1867–1920 / The creation of the Union of South Africa, including the introduction of segregationist policy"
+  },
+  {
+   "code": "PRE-M21-T3-D1",
+   "path": "Year 11 / List B: The making of modern South Africa / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the making of modern South Africa"
+  },
+  {
+   "code": "PRE-M22-T1-D1",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The historical context / The nature and impact of Ottoman rule in the region"
+  },
+  {
+   "code": "PRE-M22-T1-D2",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The historical context / Arab nationalism and Zionism: origins, forms and aspirations"
+  },
+  {
+   "code": "PRE-M22-T2-D1",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / The impact of the First World War"
+  },
+  {
+   "code": "PRE-M22-T2-D2",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / Conflicting responses to the Balfour Declaration"
+  },
+  {
+   "code": "PRE-M22-T2-D3",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / The nature of the British Mandate and the causes of the Arab Revolt 1936–1939"
+  },
+  {
+   "code": "PRE-M22-T2-D4",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / The response of the British government to growing tensions"
+  },
+  {
+   "code": "PRE-M22-T2-D5",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / The impact of the Second World War and the Holocaust"
+  },
+  {
+   "code": "PRE-M22-T2-D6",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / The reasons for the 1947 United Nations Partition Plan of Palestine"
+  },
+  {
+   "code": "PRE-M22-T2-D7",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / The terms of the partition plan and the reasons for its failure"
+  },
+  {
+   "code": "PRE-M22-T2-D8",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / The nature of tensions in the region / Reasons for the 1948 Arab–Israeli War"
+  },
+  {
+   "code": "PRE-M22-T3-D1",
+   "path": "Year 11 / List B: The origins of the Arab–Israeli conflict / A relevant historical debate or issue / Differing interpretations or representations of a debate or issue related to the origins of the Arab–Israeli conflict"
+  },
+  {
+   "code": "PRE-M24-T1-D1",
+   "path": "Year 11 / The Age of Enlightenment / The historical context / Forces contributing to the Age of Enlightenment"
+  },
+  {
+   "code": "PRE-M24-T1-D2",
+   "path": "Year 11 / The Age of Enlightenment / The historical context / The nature and impact of the Early Enlightenment 1685–1730, including the Scientific Revolution"
+  },
+  {
+   "code": "PRE-M24-T2-D1",
+   "path": "Year 11 / The Age of Enlightenment / The nature of the Age of Enlightenment / Key Enlightenment ideas, including humanism, rationalism and secularism"
+  },
+  {
+   "code": "PRE-M24-T2-D2",
+   "path": "Year 11 / The Age of Enlightenment / The nature of the Age of Enlightenment / The development of differing approaches to the key Enlightenment ideas in a range of social and political contexts"
+  },
+  {
+   "code": "PRE-M24-T2-D3",
+   "path": "Year 11 / The Age of Enlightenment / The nature of the Age of Enlightenment / The nature and impact of the Enlightenment 1730–1815, including revolutions and proto-feminism"
+  },
+  {
+   "code": "PRE-M24-T2-D4",
+   "path": "Year 11 / The Age of Enlightenment / The nature of the Age of Enlightenment / The emergence of new movements and secret societies, including the Freemasons and the Illuminati"
+  },
+  {
+   "code": "PRE-M24-T3-D1",
+   "path": "Year 11 / The Age of Enlightenment / The significance of the Age of Enlightenment / The influence of the Enlightenment on other intellectual movements, including liberalism, classicism and modernism"
+  },
+  {
+   "code": "PRE-M24-T3-D2",
+   "path": "Year 11 / The Age of Enlightenment / The significance of the Age of Enlightenment / The broader significance of the Enlightenment beyond Europe"
+  },
+  {
+   "code": "PRE-M24-T3-D3",
+   "path": "Year 11 / The Age of Enlightenment / The significance of the Age of Enlightenment / Criticisms of the Enlightenment"
+  },
+  {
+   "code": "PRE-M25-T1-D1",
+   "path": "Year 11 / The French Revolution / The historical context / The nature of the ancien régime"
+  },
+  {
+   "code": "PRE-M25-T1-D2",
+   "path": "Year 11 / The French Revolution / The historical context / The influence of the Age of Enlightenment"
+  },
+  {
+   "code": "PRE-M25-T2-D1",
+   "path": "Year 11 / The French Revolution / The nature of the French Revolution / The immediate causes of the French Revolution"
+  },
+  {
+   "code": "PRE-M25-T2-D2",
+   "path": "Year 11 / The French Revolution / The nature of the French Revolution / The end of the ancien régime, changes to social structure in France, and the revolutionary wars"
+  },
+  {
+   "code": "PRE-M25-T2-D3",
+   "path": "Year 11 / The French Revolution / The nature of the French Revolution / The counter-revolution and the Reign of Terror"
+  },
+  {
+   "code": "PRE-M25-T2-D4",
+   "path": "Year 11 / The French Revolution / The nature of the French Revolution / The Thermidorian Reaction and its consequences"
+  },
+  {
+   "code": "PRE-M25-T2-D5",
+   "path": "Year 11 / The French Revolution / The nature of the French Revolution / The role of individuals and groups in the French Revolution"
+  },
+  {
+   "code": "PRE-M25-T3-D1",
+   "path": "Year 11 / The French Revolution / The significance of the French Revolution / The impact of the revolution in France, including the rise of Napoleon"
+  },
+  {
+   "code": "PRE-M25-T3-D2",
+   "path": "Year 11 / The French Revolution / The significance of the French Revolution / The broader influence of the French Revolution on other revolutionary movements"
+  },
+  {
+   "code": "PRE-M26-T1-D1",
+   "path": "Year 11 / The Age of Imperialism / The historical context / The changing motives and characteristics of European imperialism from the 18th century to the early 20th century"
+  },
+  {
+   "code": "PRE-M26-T1-D2",
+   "path": "Year 11 / The Age of Imperialism / The historical context / An overview of the extent of Western imperial expansion by 1914 in Africa, Asia and the Pacific"
+  },
+  {
+   "code": "PRE-M26-T2-D1",
+   "path": "Year 11 / The Age of Imperialism / The impact of imperialism / Key ideas of the imperial age, including nationalism, the glorification of ‘Empire’, Social Darwinism, the Christian mission, economic gain"
+  },
+  {
+   "code": "PRE-M26-T2-D2",
+   "path": "Year 11 / The Age of Imperialism / The impact of imperialism / At least ONE case study of European imperialism outside Europe"
+  },
+  {
+   "code": "PRE-M26-T2-D3",
+   "path": "Year 11 / The Age of Imperialism / The impact of imperialism / The establishment of, justification for, and maintenance of the imperial presence"
+  },
+  {
+   "code": "PRE-M26-T2-D4",
+   "path": "Year 11 / The Age of Imperialism / The impact of imperialism / The effects of European colonialism on existing social, cultural and economic systems"
+  },
+  {
+   "code": "PRE-M26-T2-D5",
+   "path": "Year 11 / The Age of Imperialism / The impact of imperialism / Key developments in colonial rule"
+  },
+  {
+   "code": "PRE-M26-T2-D6",
+   "path": "Year 11 / The Age of Imperialism / The impact of imperialism / The varied responses of colonised peoples to imperial presence, including resistance movements"
+  },
+  {
+   "code": "PRE-M26-T3-D1",
+   "path": "Year 11 / The Age of Imperialism / The significance of imperialism / The long-term effects of imperialism on both the colonisers and colonised"
+  },
+  {
+   "code": "PRE-M26-T3-D2",
+   "path": "Year 11 / The Age of Imperialism / The significance of imperialism / The effects of imperialism on global factors shaping the modern world"
+  },
+  {
+   "code": "PRE-M27-T1-D1",
+   "path": "Year 11 / The Industrial Age / The historical context / Factors contributing to the Industrial Revolution in the second half of the 18th century"
+  },
+  {
+   "code": "PRE-M27-T2-D1",
+   "path": "Year 11 / The Industrial Age / The nature and course of the Industrial Age / The impact of new processes, technologies and ideas on economic life"
+  },
+  {
+   "code": "PRE-M27-T2-D2",
+   "path": "Year 11 / The Industrial Age / The nature and course of the Industrial Age / The experiences of factory owners, workers, women and children in the Industrial Revolution"
+  },
+  {
+   "code": "PRE-M27-T2-D3",
+   "path": "Year 11 / The Industrial Age / The nature and course of the Industrial Age / The emergence of key ideas and ideologies that supported or challenged the Industrial Revolution"
+  },
+  {
+   "code": "PRE-M27-T2-D4",
+   "path": "Year 11 / The Industrial Age / The nature and course of the Industrial Age / Political responses to the Industrial Revolution, including the 1833 Factory Act"
+  },
+  {
+   "code": "PRE-M27-T2-D5",
+   "path": "Year 11 / The Industrial Age / The nature and course of the Industrial Age / Problems of public health in urban regions and the growth of industrial areas"
+  },
+  {
+   "code": "PRE-M27-T3-D1",
+   "path": "Year 11 / The Industrial Age / The significance of the Industrial Age / Long-term social and economic impacts of the Industrial Age"
+  },
+  {
+   "code": "PRE-M27-T3-D2",
+   "path": "Year 11 / The Industrial Age / The significance of the Industrial Age / The impact of the Industrial Age on political reform, including the Reform Act 1832 and Reform Act 1867"
+  },
+  {
+   "code": "PRE-M28-T1-D1",
+   "path": "Year 11 / The First World War / The historical context / Long-term causes of the war"
+  },
+  {
+   "code": "PRE-M28-T2-D1",
+   "path": "Year 11 / The First World War / The nature and course of WWI / The short-term causes and the nature of the outbreak of war in 1914"
+  },
+  {
+   "code": "PRE-M28-T2-D2",
+   "path": "Year 11 / The First World War / The nature and course of WWI / The changing nature of warfare on at least TWO military fronts, including scientific and industrial developments in weaponry, medicine and communications"
+  },
+  {
+   "code": "PRE-M28-T2-D3",
+   "path": "Year 11 / The First World War / The nature and course of WWI / The varying experiences of soldiers in key battles"
+  },
+  {
+   "code": "PRE-M28-T2-D4",
+   "path": "Year 11 / The First World War / The nature and course of WWI / The nature and impact of ‘total war’ on different social groups, including the changing role of women"
+  },
+  {
+   "code": "PRE-M28-T2-D5",
+   "path": "Year 11 / The First World War / The nature and course of WWI / The reasons for the Allied victory"
+  },
+  {
+   "code": "PRE-M28-T3-D1",
+   "path": "Year 11 / The First World War / The significance of WWI / The short-term effects of WWI"
+  },
+  {
+   "code": "PRE-M28-T3-D2",
+   "path": "Year 11 / The First World War / The significance of WWI / The legacy of WWI"
+  },
+  {
+   "code": "PRE-M29-T1-D1",
+   "path": "Year 11 / The Age of Decolonisation / The historical context / The nature of imperialism in the early 20th century"
+  },
+  {
+   "code": "PRE-M29-T1-D2",
+   "path": "Year 11 / The Age of Decolonisation / The historical context / An overview of the emergence of movements for decolonisation and self-determination"
+  },
+  {
+   "code": "PRE-M29-T1-D3",
+   "path": "Year 11 / The Age of Decolonisation / The historical context / The impact of the First and Second World Wars on European empires"
+  },
+  {
+   "code": "PRE-M29-T2-D1",
+   "path": "Year 11 / The Age of Decolonisation / The nature of decolonisation / The variety of ways different groups fought for independence and nationhood"
+  },
+  {
+   "code": "PRE-M29-T2-D2",
+   "path": "Year 11 / The Age of Decolonisation / The nature of decolonisation / The impact of the Cold War on decolonisation"
+  },
+  {
+   "code": "PRE-M29-T2-D3",
+   "path": "Year 11 / The Age of Decolonisation / The nature of decolonisation / The role of the United Nations in supporting decolonisation and self-determination"
+  },
+  {
+   "code": "PRE-M29-T2-D4",
+   "path": "Year 11 / The Age of Decolonisation / The nature of decolonisation / A case study on the causes, nature and outcomes of decolonisation in at least ONE of the following countries: Algeria, Angola, India, Indonesia, Kenya, Rwanda, Suriname, Vietnam"
+  },
+  {
+   "code": "PRE-M29-T2-D5",
+   "path": "Year 11 / The Age of Decolonisation / The nature of decolonisation / The role of individuals and groups in independence movements in the selected case study(ies)"
+  },
+  {
+   "code": "PRE-M29-T2-D6",
+   "path": "Year 11 / The Age of Decolonisation / The nature of decolonisation / Problems of decolonisation"
+  },
+  {
+   "code": "PRE-M29-T3-D1",
+   "path": "Year 11 / The Age of Decolonisation / The significance of decolonisation / The impact of decolonisation on the chosen case study"
+  },
+  {
+   "code": "PRE-M29-T3-D2",
+   "path": "Year 11 / The Age of Decolonisation / The significance of decolonisation / The impact of decolonisation on the global balance of power"
+  },
+  {
+   "code": "PRE-M30-T1-D1",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / Formulate historical questions and hypotheses relevant to the investigation."
+  },
+  {
+   "code": "PRE-M30-T1-D2",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / Identify and analyse sources to develop a view about a historical issue."
+  },
+  {
+   "code": "PRE-M30-T1-D3",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / Develop and/or examine historical interpretations."
+  },
+  {
+   "code": "PRE-M30-T1-D4",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / Synthesise evidence and information from a range of sources to develop and support a reasoned historical account or argument."
+  },
+  {
+   "code": "PRE-M30-T1-D5",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / Use historical terms and concepts appropriately."
+  },
+  {
+   "code": "PRE-M30-T1-D6",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / Present and communicate the findings of a historical investigation using appropriate and well-structured forms."
+  },
+  {
+   "code": "PRE-M30-T1-D7",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / aspects of a modern society as revealed through sources"
+  },
+  {
+   "code": "PRE-M30-T1-D8",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / the causes and impact of a historical event"
+  },
+  {
+   "code": "PRE-M30-T1-D9",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / the role of a significant historical individual"
+  },
+  {
+   "code": "PRE-M30-T1-D10",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / the significance of a historical development"
+  },
+  {
+   "code": "PRE-M30-T1-D11",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / tracing the development of an aspect of the past over time through a thematic approach"
+  },
+  {
+   "code": "PRE-M30-T1-D12",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / the analysis of a historical debate, controversy or representation of the past"
+  },
+  {
+   "code": "PRE-M30-T1-D13",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / the contribution of a historical site to our understanding of the past"
+  },
+  {
+   "code": "PRE-M30-T1-D14",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / the nature of social and cultural change in a decade of the 20th century"
+  },
+  {
+   "code": "PRE-M30-T1-D15",
+   "path": "Year 11 / Historical investigation / The process of historical investigation / an interpretation or representation of an individual, group or event."
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Analysis and use of sources / Explain the meaning and value of sources for a historical inquiry."
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Analysis and use of sources / Analyse sources to identify and account for the different perspectives of individuals and groups in the past."
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Analysis and use of sources / Analyse and synthesise evidence from different types of sources to develop reasoned claims."
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Analysis and use of sources / Identify and analyse problems relating to sources in the investigation of the past."
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Historical interpretation / Analyse the extent and nature of continuity and change over time."
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Historical interpretation / Identify and analyse the varying causes and effects of events and developments to construct historical arguments."
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Historical interpretation / Form judgements about historical significance, recognising that significance may be attributed for different purposes."
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Historical interpretation / Analyse and evaluate contested interpretations and representations of the past."
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Historical investigation and research / Frame questions to guide historical inquiry and develop a coherent research plan."
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Historical investigation and research / Use evidence from a range of sources to inform investigation and research."
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Historical investigation and research / Acknowledge sources appropriately."
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Explanation and communication / Develop texts, particularly historical accounts and arguments, supported by relevant evidence from sources."
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Historical concepts and skills 11–12 / Explanation and communication / Communicate historical understanding, using historical knowledge, terms and concepts, in forms appropriate to purpose and audience."
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Context / The Paris Peace Conference and its consequences"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Interwar dictatorships / Conditions that enabled dictators to rise to power in the interwar period"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Interwar dictatorships / Key features of TWO dictatorships other than Germany that emerged in the interwar period"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / The collapse of German democracy / Political, economic and social challenges to the Weimar Republic 1919–1933"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / The collapse of German democracy / Reasons for the collapse of the Weimar Republic"
+  },
+  {
+   "code": "HSC-M2-T4-D1",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Source analysis: interpreting the evidence for the Nazi regime in power 1933–1939 / The initial consolidation of Nazi power 1933–1934"
+  },
+  {
+   "code": "HSC-M2-T4-D2",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Source analysis: interpreting the evidence for the Nazi regime in power 1933–1939 / The nature and role of Nazi ideology"
+  },
+  {
+   "code": "HSC-M2-T4-D3",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Source analysis: interpreting the evidence for the Nazi regime in power 1933–1939 / The impact of Nazi ideology and policies on Jewish people and other minorities, women, youth and workers"
+  },
+  {
+   "code": "HSC-M2-T4-D4",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Source analysis: interpreting the evidence for the Nazi regime in power 1933–1939 / Methods of control: laws, censorship, propaganda, repression and terror"
+  },
+  {
+   "code": "HSC-M2-T4-D5",
+   "path": "Year 12 / Core study: Democracy and dictatorship 1919–1939 / Source analysis: interpreting the evidence for the Nazi regime in power 1933–1939 / Opposition to the Nazi regime"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Australia 1918–1949 / Context / Australia’s role at the Paris Peace Conference"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Australia 1918–1949 / The changing face of Australia after the First World War / The social impact of WWI in Australia, including soldier settlement and the changing role of women"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Australia 1918–1949 / The changing face of Australia after the First World War / Innovation and its impact on industrialisation, urbanisation and rural development"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Australia 1918–1949 / The changing face of Australia after the First World War / The experiences of Aboriginal and/or Torres Strait Islander Peoples post-WWI"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Australia 1918–1949 / Australia and the Great Depression / The impact of the Great Depression on different groups in Australian society"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Australia 1918–1949 / Australia and the Great Depression / The effectiveness of political responses to the crisis of the Great Depression"
+  },
+  {
+   "code": "HSC-M4-T3-D3",
+   "path": "Year 12 / Australia 1918–1949 / Australia and the Great Depression / Australian nationalism in the 1930s, including the impact of industrialism, sport and military identity"
+  },
+  {
+   "code": "HSC-M4-T3-D4",
+   "path": "Year 12 / Australia 1918–1949 / Australia and the Great Depression / Aboriginal activism in the 1930s, including the creation of The Day of Mourning in 1938"
+  },
+  {
+   "code": "HSC-M4-T4-D1",
+   "path": "Year 12 / Australia 1918–1949 / Australia and the world 1918–1949 / The changing nature of Australia’s foreign policy from 1918 to 1949"
+  },
+  {
+   "code": "HSC-M4-T4-D2",
+   "path": "Year 12 / Australia 1918–1949 / Australia and the world 1918–1949 / Australia’s changing relationship with the United States"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / China 1927–1949 / Context / Political, economic and social issues facing the Chinese Republic in 1927"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / China 1927–1949 / Context / The impact of the Northern Expedition"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / China 1927–1949 / Context / Achievements of and challenges to the Kuomintang (KMT)/Guomindang (GMD) Nationalist Government"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / China 1927–1949 / The rise of the Chinese Communist Party (CCP) / The role of Mao Zedong in the rise of the CCP"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / China 1927–1949 / The rise of the Chinese Communist Party (CCP) / The nature and development of CCP ideology"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / China 1927–1949 / The rise of the Chinese Communist Party (CCP) / The Long March and its political and social consequences"
+  },
+  {
+   "code": "HSC-M5-T3-D1",
+   "path": "Year 12 / China 1927–1949 / Resistance to Japan / The military, economic and social impact of Japanese invasions from 1931"
+  },
+  {
+   "code": "HSC-M5-T3-D2",
+   "path": "Year 12 / China 1927–1949 / Resistance to Japan / Differing aims and strategies of the KMT/GMD and CCP towards the Japanese invasion of China"
+  },
+  {
+   "code": "HSC-M5-T3-D3",
+   "path": "Year 12 / China 1927–1949 / Resistance to Japan / The nature and impact of the leadership of Mao Zedong and Jiang Jieshi/Chiang Kai-shek during the Second Sino–Japanese War 1937–1945"
+  },
+  {
+   "code": "HSC-M5-T3-D4",
+   "path": "Year 12 / China 1927–1949 / Resistance to Japan / The political and social significance of the Yan’an/Yenan period"
+  },
+  {
+   "code": "HSC-M5-T4-D1",
+   "path": "Year 12 / China 1927–1949 / The victory of the CCP / The Civil War and the strategies and tactics of the CCP"
+  },
+  {
+   "code": "HSC-M5-T4-D2",
+   "path": "Year 12 / China 1927–1949 / The victory of the CCP / Reasons for communist victory"
+  },
+  {
+   "code": "HSC-M6-T1-D1",
+   "path": "Year 12 / Cuba 1940–1991 / Context / Political, economic and social conditions in Cuba under Fulgencio Batista"
+  },
+  {
+   "code": "HSC-M6-T1-D2",
+   "path": "Year 12 / Cuba 1940–1991 / Context / Cuba’s relationship with the United States pre-1959"
+  },
+  {
+   "code": "HSC-M6-T2-D1",
+   "path": "Year 12 / Cuba 1940–1991 / The Cuban Revolution 1953–1959 / The nature, development and role of the ideology of Fidel Castro and Che Guevara"
+  },
+  {
+   "code": "HSC-M6-T2-D2",
+   "path": "Year 12 / Cuba 1940–1991 / The Cuban Revolution 1953–1959 / The creation and role of the 26th of July Movement"
+  },
+  {
+   "code": "HSC-M6-T2-D3",
+   "path": "Year 12 / Cuba 1940–1991 / The Cuban Revolution 1953–1959 / The nature of guerrilla warfare and the activities of revolutionaries in rural and urban areas"
+  },
+  {
+   "code": "HSC-M6-T2-D4",
+   "path": "Year 12 / Cuba 1940–1991 / The Cuban Revolution 1953–1959 / Factors contributing to the success of the revolution"
+  },
+  {
+   "code": "HSC-M6-T3-D1",
+   "path": "Year 12 / Cuba 1940–1991 / Cuba under Fidel Castro 1959–1991 / The consolidation of the revolution 1959–1961"
+  },
+  {
+   "code": "HSC-M6-T3-D2",
+   "path": "Year 12 / Cuba 1940–1991 / Cuba under Fidel Castro 1959–1991 / Political changes and their impact on society, including opposition and repression"
+  },
+  {
+   "code": "HSC-M6-T3-D3",
+   "path": "Year 12 / Cuba 1940–1991 / Cuba under Fidel Castro 1959–1991 / Economic changes and their impact on society, including nationalisation, industrialisation and land reforms"
+  },
+  {
+   "code": "HSC-M6-T3-D4",
+   "path": "Year 12 / Cuba 1940–1991 / Cuba under Fidel Castro 1959–1991 / Social and cultural policies and their impact on society"
+  },
+  {
+   "code": "HSC-M6-T4-D1",
+   "path": "Year 12 / Cuba 1940–1991 / Cuban foreign policy 1959–1991 / The aims, nature and strategies of Cuban foreign policy"
+  },
+  {
+   "code": "HSC-M6-T4-D2",
+   "path": "Year 12 / Cuba 1940–1991 / Cuban foreign policy 1959–1991 / The impact of the Cold War on Cuban foreign policy"
+  },
+  {
+   "code": "HSC-M7-T1-D1",
+   "path": "Year 12 / Indonesia 1945–2004 / Context / The impact of Japanese occupation and the rise of the nationalist movement"
+  },
+  {
+   "code": "HSC-M7-T1-D2",
+   "path": "Year 12 / Indonesia 1945–2004 / Context / The nature and impact of Sukarno’s presidency, including Guided Democracy, challenges to independence and Sukarno’s shaping of Pancasila"
+  },
+  {
+   "code": "HSC-M7-T2-D1",
+   "path": "Year 12 / Indonesia 1945–2004 / The 1965 coup / The growth of the Partai Komunis Indonesia (PKI) (Indonesian Communist Party)"
+  },
+  {
+   "code": "HSC-M7-T2-D2",
+   "path": "Year 12 / Indonesia 1945–2004 / The 1965 coup / Reasons for, and outcome of, the 1965 coup"
+  },
+  {
+   "code": "HSC-M7-T2-D3",
+   "path": "Year 12 / Indonesia 1945–2004 / The 1965 coup / The role and influence of the army and religious groups"
+  },
+  {
+   "code": "HSC-M7-T3-D1",
+   "path": "Year 12 / Indonesia 1945–2004 / Suharto and the New Order / The ideology and nature of the New Order and its political, economic and foreign policy impact"
+  },
+  {
+   "code": "HSC-M7-T3-D2",
+   "path": "Year 12 / Indonesia 1945–2004 / Suharto and the New Order / The challenges and impact of religious and regional issues, including separatism"
+  },
+  {
+   "code": "HSC-M7-T3-D3",
+   "path": "Year 12 / Indonesia 1945–2004 / Suharto and the New Order / Reasons for, and consequences of, the end of the Suharto/New Order era"
+  },
+  {
+   "code": "HSC-M7-T3-D4",
+   "path": "Year 12 / Indonesia 1945–2004 / Suharto and the New Order / Political, economic and social challenges in the post-Suharto era"
+  },
+  {
+   "code": "HSC-M7-T4-D1",
+   "path": "Year 12 / Indonesia 1945–2004 / Indonesian foreign policy 1945–2004 / The aims, nature and strategies of Indonesian foreign policy"
+  },
+  {
+   "code": "HSC-M7-T4-D2",
+   "path": "Year 12 / Indonesia 1945–2004 / Indonesian foreign policy 1945–2004 / The nature and impact of Indonesia’s relations with Australia"
+  },
+  {
+   "code": "HSC-M8-T1-D1",
+   "path": "Year 12 / Iran 1945–1989 / Context / The legacy of the Second World War in Iran"
+  },
+  {
+   "code": "HSC-M8-T1-D2",
+   "path": "Year 12 / Iran 1945–1989 / Context / The impact of the emerging Cold War context on Iran"
+  },
+  {
+   "code": "HSC-M8-T2-D1",
+   "path": "Year 12 / Iran 1945–1989 / Iran under the Shah 1953–1979 / Mohammad Mossadegh, the nationalisation of Iranian oil and the 1953 coup"
+  },
+  {
+   "code": "HSC-M8-T2-D2",
+   "path": "Year 12 / Iran 1945–1989 / Iran under the Shah 1953–1979 / The nature of Mohammad Reza Shah Pahlavi’s power and authority"
+  },
+  {
+   "code": "HSC-M8-T2-D3",
+   "path": "Year 12 / Iran 1945–1989 / Iran under the Shah 1953–1979 / Successes and failures of the White Revolution"
+  },
+  {
+   "code": "HSC-M8-T2-D4",
+   "path": "Year 12 / Iran 1945–1989 / Iran under the Shah 1953–1979 / The significance of oil during the Shah’s reign, including in Iranian relations with the West"
+  },
+  {
+   "code": "HSC-M8-T3-D1",
+   "path": "Year 12 / Iran 1945–1989 / The Revolution of 1978–1979 / Reasons for and forms of opposition to the Shah"
+  },
+  {
+   "code": "HSC-M8-T3-D2",
+   "path": "Year 12 / Iran 1945–1989 / The Revolution of 1978–1979 / The role of Ayatollah Khomeini in the Revolution"
+  },
+  {
+   "code": "HSC-M8-T4-D1",
+   "path": "Year 12 / Iran 1945–1989 / Iran under Khomeini 1979–1989 / Ayatollah Khomeini’s consolidation of power and the creation of the Islamic Republic"
+  },
+  {
+   "code": "HSC-M8-T4-D2",
+   "path": "Year 12 / Iran 1945–1989 / Iran under Khomeini 1979–1989 / Changing relations with the West, including the Hostage Crisis"
+  },
+  {
+   "code": "HSC-M8-T4-D3",
+   "path": "Year 12 / Iran 1945–1989 / Iran under Khomeini 1979–1989 / The causes and course of the war with Iraq"
+  },
+  {
+   "code": "HSC-M8-T4-D4",
+   "path": "Year 12 / Iran 1945–1989 / Iran under Khomeini 1979–1989 / Changes in society under Khomeini"
+  },
+  {
+   "code": "HSC-M9-T1-D1",
+   "path": "Year 12 / Japan 1904–1937 / Context / The impact of Japanese expansion 1904–1918"
+  },
+  {
+   "code": "HSC-M9-T1-D2",
+   "path": "Year 12 / Japan 1904–1937 / Context / Japan’s status as a great power: the Twenty-one Demands, its role in the First World War, and the Washington Naval Conference 1921–1922"
+  },
+  {
+   "code": "HSC-M9-T2-D1",
+   "path": "Year 12 / Japan 1904–1937 / Challenges to traditional power and authority 1918–1930 / The reasons for and impact of the introduction of democracy to Japan"
+  },
+  {
+   "code": "HSC-M9-T2-D2",
+   "path": "Year 12 / Japan 1904–1937 / Challenges to traditional power and authority 1918–1930 / The political influence of the zaibatsu"
+  },
+  {
+   "code": "HSC-M9-T2-D3",
+   "path": "Year 12 / Japan 1904–1937 / Challenges to traditional power and authority 1918–1930 / The impact of the Seiyūkai and Minseitō political parties on the Japanese political system"
+  },
+  {
+   "code": "HSC-M9-T2-D4",
+   "path": "Year 12 / Japan 1904–1937 / Challenges to traditional power and authority 1918–1930 / Challenges of the genrō, bureaucracy and army to party politics"
+  },
+  {
+   "code": "HSC-M9-T3-D1",
+   "path": "Year 12 / Japan 1904–1937 / The rise of militarism in the 1930s / Political, economic and social consequences of the Great Depression"
+  },
+  {
+   "code": "HSC-M9-T3-D2",
+   "path": "Year 12 / Japan 1904–1937 / The rise of militarism in the 1930s / The development and impact of modernisation, urbanisation and rising social tensions"
+  },
+  {
+   "code": "HSC-M9-T3-D3",
+   "path": "Year 12 / Japan 1904–1937 / The rise of militarism in the 1930s / The role and significance of the army and political divisions in it"
+  },
+  {
+   "code": "HSC-M9-T3-D4",
+   "path": "Year 12 / Japan 1904–1937 / The rise of militarism in the 1930s / Hostility towards the zaibatsu and the collapse of party politics"
+  },
+  {
+   "code": "HSC-M9-T3-D5",
+   "path": "Year 12 / Japan 1904–1937 / The rise of militarism in the 1930s / Differing domestic responses to militarism"
+  },
+  {
+   "code": "HSC-M9-T3-D6",
+   "path": "Year 12 / Japan 1904–1937 / The rise of militarism in the 1930s / The role of Emperor Hirohito"
+  },
+  {
+   "code": "HSC-M9-T4-D1",
+   "path": "Year 12 / Japan 1904–1937 / Japanese foreign policy 1918–1937 / The aims, nature and strategies of Japanese foreign policy"
+  },
+  {
+   "code": "HSC-M9-T4-D2",
+   "path": "Year 12 / Japan 1904–1937 / Japanese foreign policy 1918–1937 / Factors shaping Japanese foreign policy, including ideology"
+  },
+  {
+   "code": "HSC-M10-T1-D1",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / Context / An overview of Bolshevik ideology, and the October coup in 1917"
+  },
+  {
+   "code": "HSC-M10-T1-D2",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / Context / The Civil War, and the introduction of the New Economic Policy"
+  },
+  {
+   "code": "HSC-M10-T2-D1",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / Stalin’s rise to power 1924–1929 / The power struggle between Stalin, Trotsky, Kamenev and Zinoviev"
+  },
+  {
+   "code": "HSC-M10-T2-D2",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / Stalin’s rise to power 1924–1929 / Reasons for the emergence of Stalin as leader of the Soviet Union by the late 1920s"
+  },
+  {
+   "code": "HSC-M10-T3-D1",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / The Soviet state under Stalin to 1941 / The nature and development of the Stalinist regime, including the role of ideology and the concept of totalitarianism"
+  },
+  {
+   "code": "HSC-M10-T3-D2",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / The Soviet state under Stalin to 1941 / Political transformation, including the methods used to control the population"
+  },
+  {
+   "code": "HSC-M10-T3-D3",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / The Soviet state under Stalin to 1941 / Economic transformation, including collectivisation and the Five-Year Plans"
+  },
+  {
+   "code": "HSC-M10-T3-D4",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / The Soviet state under Stalin to 1941 / Social and cultural transformation, including religion and cultural expression"
+  },
+  {
+   "code": "HSC-M10-T4-D1",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / Soviet foreign policy 1928–1941 / The aims, nature and strategies of Soviet foreign policy"
+  },
+  {
+   "code": "HSC-M10-T4-D2",
+   "path": "Year 12 / Russia and the Soviet Union 1917–1941 / Soviet foreign policy 1928–1941 / Factors shaping Soviet foreign policy, including ideology"
+  },
+  {
+   "code": "HSC-M11-T1-D1",
+   "path": "Year 12 / United States 1919–1941 / Context / Republican economic policies in the 1920s and early 1930s"
+  },
+  {
+   "code": "HSC-M11-T1-D2",
+   "path": "Year 12 / United States 1919–1941 / Context / Long-term causes of the Great Depression"
+  },
+  {
+   "code": "HSC-M11-T2-D1",
+   "path": "Year 12 / United States 1919–1941 / The Great Depression / The impact of the Great Depression on farmers, workers, women and African Americans"
+  },
+  {
+   "code": "HSC-M11-T2-D2",
+   "path": "Year 12 / United States 1919–1941 / The Great Depression / Attempts to halt the Great Depression: the presidencies of Herbert Hoover and Franklin Delano Roosevelt (FDR)"
+  },
+  {
+   "code": "HSC-M11-T2-D3",
+   "path": "Year 12 / United States 1919–1941 / The Great Depression / Successes and failures of the New Deal"
+  },
+  {
+   "code": "HSC-M11-T3-D1",
+   "path": "Year 12 / United States 1919–1941 / Society in the United States 1919–1941 / The impact of growing urbanisation and industrialisation"
+  },
+  {
+   "code": "HSC-M11-T3-D2",
+   "path": "Year 12 / United States 1919–1941 / Society in the United States 1919–1941 / The growth and influence of American consumerism, including entertainment"
+  },
+  {
+   "code": "HSC-M11-T3-D3",
+   "path": "Year 12 / United States 1919–1941 / Society in the United States 1919–1941 / Social tensions, including immigration restrictions, the urban–rural divide, religious fundamentalism, Prohibition, crime, racial conflict, anti-communism and anti-unionism"
+  },
+  {
+   "code": "HSC-M11-T4-D1",
+   "path": "Year 12 / United States 1919–1941 / US foreign policy 1919–1941 / The aims, nature and strategies of US foreign policy"
+  },
+  {
+   "code": "HSC-M11-T4-D2",
+   "path": "Year 12 / United States 1919–1941 / US foreign policy 1919–1941 / Factors shaping US foreign policy, including domestic pressures"
+  },
+  {
+   "code": "HSC-M13-T1-D1",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / Context / German foreign policy to September 1939, including the Nazi–Soviet Non-Aggression Pact"
+  },
+  {
+   "code": "HSC-M13-T1-D2",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / Context / The failure of the League of Nations, including disarmament and collective security"
+  },
+  {
+   "code": "HSC-M13-T1-D3",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / Context / Britain, France and the policy of appeasement"
+  },
+  {
+   "code": "HSC-M13-T2-D1",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The outbreak and course of the European war / Aims and strategies of the Allied and Axis powers"
+  },
+  {
+   "code": "HSC-M13-T2-D2",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The outbreak and course of the European war / German advances: the fall of Poland, the Low Countries and France, the invasion of the Soviet Union"
+  },
+  {
+   "code": "HSC-M13-T2-D3",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The outbreak and course of the European war / The air war: the Battle of Britain and the Blitz, the bombing of Germany"
+  },
+  {
+   "code": "HSC-M13-T2-D4",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The outbreak and course of the European war / The North African campaign 1940–1943"
+  },
+  {
+   "code": "HSC-M13-T2-D5",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The outbreak and course of the European war / Turning points of the war: the Battle of Moscow, the Battle of Stalingrad, the Battle of Kursk"
+  },
+  {
+   "code": "HSC-M13-T3-D1",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / Civilians at war / The impact of the war on civilians in Britain, Germany and the Soviet Union"
+  },
+  {
+   "code": "HSC-M13-T3-D2",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / Civilians at war / The impact of Nazi policy on Jewish people in Germany and occupied territories"
+  },
+  {
+   "code": "HSC-M13-T4-D1",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The end of the conflict / Operation Overlord, D-Day and the liberation of France"
+  },
+  {
+   "code": "HSC-M13-T4-D2",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The end of the conflict / Russian counter-offensives: Operation Bagration"
+  },
+  {
+   "code": "HSC-M13-T4-D3",
+   "path": "Year 12 / Conflict in Europe 1935–1945 / The end of the conflict / Reasons for Allied victory"
+  },
+  {
+   "code": "HSC-M14-T1-D1",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / Context / Japanese foreign policy 1937–1941"
+  },
+  {
+   "code": "HSC-M14-T1-D2",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / Context / US and British policies in the Pacific 1937–1941"
+  },
+  {
+   "code": "HSC-M14-T2-D1",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / The outbreak and course of the Pacific War / Aims and strategies of the Japanese"
+  },
+  {
+   "code": "HSC-M14-T2-D2",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / The outbreak and course of the Pacific War / Reasons for the bombing of Pearl Harbor and the US response"
+  },
+  {
+   "code": "HSC-M14-T2-D3",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / The outbreak and course of the Pacific War / Japanese advances 1941–1942"
+  },
+  {
+   "code": "HSC-M14-T2-D4",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / The outbreak and course of the Pacific War / Turning points of the war: the Battle of the Coral Sea, the Battle of Midway, the Battle of Guadalcanal"
+  },
+  {
+   "code": "HSC-M14-T2-D5",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / The outbreak and course of the Pacific War / Strategies used by Allied forces against Japan 1942–1945"
+  },
+  {
+   "code": "HSC-M14-T3-D1",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / Civilians at war / The impact of the war on civilians in China and Southeast Asia"
+  },
+  {
+   "code": "HSC-M14-T3-D2",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / Civilians at war / Collaboration, resistance and the use of slave labour"
+  },
+  {
+   "code": "HSC-M14-T3-D3",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / Civilians at war / The impact of the war on the home fronts in Japan and Australia"
+  },
+  {
+   "code": "HSC-M14-T4-D1",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / End of the conflict / Reasons for the use of the atomic bomb"
+  },
+  {
+   "code": "HSC-M14-T4-D2",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / End of the conflict / Reasons for the Japanese defeat"
+  },
+  {
+   "code": "HSC-M14-T4-D3",
+   "path": "Year 12 / Conflict in the Pacific 1937–1951 / End of the conflict / Allied occupation of Japan to 1951, including the status of the Emperor"
+  },
+  {
+   "code": "HSC-M15-T1-D1",
+   "path": "Year 12 / The Cold War 1945–1991 / Context / The emerging rivalry between the superpowers, including the nature and role of ideology"
+  },
+  {
+   "code": "HSC-M15-T2-D1",
+   "path": "Year 12 / The Cold War 1945–1991 / The development of the Cold War to 1968 / US policies and strategies, including the policy of containment, domino theory and the creation of the North Atlantic Treaty Organisation (NATO)"
+  },
+  {
+   "code": "HSC-M15-T2-D2",
+   "path": "Year 12 / The Cold War 1945–1991 / The development of the Cold War to 1968 / Soviet policies and strategies, including intervention in Eastern Europe, the creation of the Warsaw Pact, and the emergence of peaceful coexistence"
+  },
+  {
+   "code": "HSC-M15-T2-D3",
+   "path": "Year 12 / The Cold War 1945–1991 / The development of the Cold War to 1968 / The causes and impact of TWO Cold War crises"
+  },
+  {
+   "code": "HSC-M15-T2-D4",
+   "path": "Year 12 / The Cold War 1945–1991 / The development of the Cold War to 1968 / The arms race and space race"
+  },
+  {
+   "code": "HSC-M15-T3-D1",
+   "path": "Year 12 / The Cold War 1945–1991 / Cold War relations during the period of détente 1969–1979 / The reasons for and impact of détente"
+  },
+  {
+   "code": "HSC-M15-T3-D2",
+   "path": "Year 12 / The Cold War 1945–1991 / Cold War relations during the period of détente 1969–1979 / The significance of geopolitical developments: the Vietnam War, the Sino–Soviet split"
+  },
+  {
+   "code": "HSC-M15-T4-D1",
+   "path": "Year 12 / The Cold War 1945–1991 / Renewal and the end of the Cold War 1980–1991 / The impact of the Soviet invasion of Afghanistan"
+  },
+  {
+   "code": "HSC-M15-T4-D2",
+   "path": "Year 12 / The Cold War 1945–1991 / Renewal and the end of the Cold War 1980–1991 / US policies and strategies under Ronald Reagan"
+  },
+  {
+   "code": "HSC-M15-T4-D3",
+   "path": "Year 12 / The Cold War 1945–1991 / Renewal and the end of the Cold War 1980–1991 / Soviet policies and strategies under Mikhail Gorbachev"
+  },
+  {
+   "code": "HSC-M15-T4-D4",
+   "path": "Year 12 / The Cold War 1945–1991 / Renewal and the end of the Cold War 1980–1991 / Reasons for the end of the Cold War"
+  },
+  {
+   "code": "HSC-M16-T1-D1",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Context / The impact of the 1948 Arab–Israeli War, including expulsions and refugees"
+  },
+  {
+   "code": "HSC-M16-T1-D2",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Context / Political developments in the 1950s, including the Suez Crisis"
+  },
+  {
+   "code": "HSC-M16-T2-D1",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / War and peace / The causes, course and consequences of the Six-Day War"
+  },
+  {
+   "code": "HSC-M16-T2-D2",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / War and peace / The formation, aims and strategies of the Palestinian Liberation Organisation (PLO) 1967–1974"
+  },
+  {
+   "code": "HSC-M16-T2-D3",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / War and peace / The causes, course and consequences of the Yom Kippur War"
+  },
+  {
+   "code": "HSC-M16-T3-D1",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / The Occupied Territories and Israel’s relationship with Lebanon / The policies of the Israeli Labor and Likud parties towards the Occupied Territories"
+  },
+  {
+   "code": "HSC-M16-T3-D2",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / The Occupied Territories and Israel’s relationship with Lebanon / The reasons for and impact of the Israeli invasions of Lebanon in 1978 and 1982"
+  },
+  {
+   "code": "HSC-M16-T4-D1",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Successes and setbacks of the peace process 1987–2000 / The role of Yasser Arafat"
+  },
+  {
+   "code": "HSC-M16-T4-D2",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Successes and setbacks of the peace process 1987–2000 / The formation and significance of Hamas"
+  },
+  {
+   "code": "HSC-M16-T4-D3",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Successes and setbacks of the peace process 1987–2000 / The First Intifada 1987–1993"
+  },
+  {
+   "code": "HSC-M16-T4-D4",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Successes and setbacks of the peace process 1987–2000 / The Oslo Accords of 1993 and 1995"
+  },
+  {
+   "code": "HSC-M16-T4-D5",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Successes and setbacks of the peace process 1987–2000 / The impact of the assassination of Yitzhak Rabin"
+  },
+  {
+   "code": "HSC-M16-T4-D6",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Successes and setbacks of the peace process 1987–2000 / The significance of the election of Benjamin Netanyahu"
+  },
+  {
+   "code": "HSC-M16-T4-D7",
+   "path": "Year 12 / The Arab–Israeli conflict 1948–2000 / Successes and setbacks of the peace process 1987–2000 / Consequences of the failure of the 2000 Camp David Summit"
+  },
+  {
+   "code": "HSC-M17-T1-D1",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Context / The significance of the Geneva Conference for Vietnam, Cambodia and Laos"
+  },
+  {
+   "code": "HSC-M17-T1-D2",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Context / The nature of US policy towards Vietnam before 1964"
+  },
+  {
+   "code": "HSC-M17-T1-D3",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Context / Political, economic, social and military developments in North and South Vietnam 1954–1964"
+  },
+  {
+   "code": "HSC-M17-T2-D1",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The role of nationalism and communism in the conflict"
+  },
+  {
+   "code": "HSC-M17-T2-D2",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The development of US policy towards Vietnam from 1964"
+  },
+  {
+   "code": "HSC-M17-T2-D3",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The relationship of North Vietnam with China and the USSR"
+  },
+  {
+   "code": "HSC-M17-T2-D4",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The nature and effectiveness of the strategies and tactics employed by the North Vietnamese Army, the National Liberation Front, the Army of the Republic of Vietnam and the US Armed Forces"
+  },
+  {
+   "code": "HSC-M17-T2-D5",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The impact of the 1968 Tet Offensive"
+  },
+  {
+   "code": "HSC-M17-T2-D6",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The impact of the war on civilians and the environment in Vietnam"
+  },
+  {
+   "code": "HSC-M17-T2-D7",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The spread of the war and its impact on civilians in Cambodia and Laos"
+  },
+  {
+   "code": "HSC-M17-T2-D8",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The development and significance of anti-war movements in the United States"
+  },
+  {
+   "code": "HSC-M17-T2-D9",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / Conflict in Vietnam 1964–1973 / The reasons for and nature of US withdrawal from Vietnam"
+  },
+  {
+   "code": "HSC-M17-T3-D1",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / The end of the war 1973–1976 / The reasons for the Communist victory in Vietnam"
+  },
+  {
+   "code": "HSC-M17-T3-D2",
+   "path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976 / The end of the war 1973–1976 / The impact of the Communist victory on South Vietnam and its people"
+  },
+  {
+   "code": "HSC-M18-T1-D1",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / Context / The regime of Saddam Hussein"
+  },
+  {
+   "code": "HSC-M18-T1-D2",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / Context / Reasons for the Iraqi invasion of Kuwait in August 1990"
+  },
+  {
+   "code": "HSC-M18-T2-D1",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / The First Gulf War and its consequences / The reaction of neighbouring Gulf states, the United States and the United Nations to the invasion"
+  },
+  {
+   "code": "HSC-M18-T2-D2",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / The First Gulf War and its consequences / Operation Desert Shield, Operation Desert Storm, and the liberation of Kuwait: the nature of warfare, strategies and tactics"
+  },
+  {
+   "code": "HSC-M18-T2-D3",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / The First Gulf War and its consequences / The 1991 uprisings in Iraq and developments in Iraqi Kurdistan"
+  },
+  {
+   "code": "HSC-M18-T2-D4",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / The First Gulf War and its consequences / The aims and outcomes of sanctions against Iraq"
+  },
+  {
+   "code": "HSC-M18-T3-D1",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / The road to war / The 9/11 attacks, the Bush administration, the doctrine of ‘pre-emptive’ military action, weapons of mass destruction and the role of oil"
+  },
+  {
+   "code": "HSC-M18-T3-D2",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / The road to war / Opposition to, and support for, the war, including in Australia"
+  },
+  {
+   "code": "HSC-M18-T4-D1",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / From war to ‘insurgency’ / Operation Iraqi Freedom: combat operations and the establishment of the Coalition Provisional Authority (CPA)"
+  },
+  {
+   "code": "HSC-M18-T4-D2",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / From war to ‘insurgency’ / The impact of Operation Iraqi Freedom on civilians"
+  },
+  {
+   "code": "HSC-M18-T4-D3",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / From war to ‘insurgency’ / The impact of regionalism, sectarianism and tribalism on nation-building"
+  },
+  {
+   "code": "HSC-M18-T4-D4",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / From war to ‘insurgency’ / Operation New Dawn and US troop withdrawal"
+  },
+  {
+   "code": "HSC-M18-T4-D5",
+   "path": "Year 12 / Conflict in the Gulf 1980–2017 / From war to ‘insurgency’ / The rise and fall of the Islamic State of Iraq and Syria (ISIS) in Iraq"
+  },
+  {
+   "code": "HSC-M20-T1-D1",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Context / The Manhattan Project and the Trinity Test"
+  },
+  {
+   "code": "HSC-M20-T1-D2",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Context / Truman, Stalin and the beginning of the nuclear arms race"
+  },
+  {
+   "code": "HSC-M20-T2-D1",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as military technology / The impact and legacy of the bombing of Hiroshima and Nagasaki"
+  },
+  {
+   "code": "HSC-M20-T2-D2",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as military technology / The doctrine of Mutually Assured Destruction (MAD) and its role in nuclear deterrence"
+  },
+  {
+   "code": "HSC-M20-T2-D3",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as military technology / The impact of nuclear proliferation on citizens in the United States and the Soviet Union"
+  },
+  {
+   "code": "HSC-M20-T2-D4",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as military technology / The nature and impact of weapons testing conducted by nuclear powers from 1945 to 2018, including British tests in Australia and French tests in the Pacific"
+  },
+  {
+   "code": "HSC-M20-T3-D1",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as progressive technology / The role of international organisations in the use of nuclear technologies, including the International Atomic Energy Agency (IAEA)"
+  },
+  {
+   "code": "HSC-M20-T3-D2",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as progressive technology / The contributions of nuclear technology to energy and medicine"
+  },
+  {
+   "code": "HSC-M20-T3-D3",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as progressive technology / The challenges of uranium mining and export to global non-proliferation"
+  },
+  {
+   "code": "HSC-M20-T3-D4",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Nuclear technology as progressive technology / The impact of nuclear disasters, including Chernobyl and Fukushima"
+  },
+  {
+   "code": "HSC-M20-T4-D1",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Towards nuclear disarmament / The impact of anti-nuclear movements 1945–2021"
+  },
+  {
+   "code": "HSC-M20-T4-D2",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Towards nuclear disarmament / Issues of proliferation 1945–2021: India, Iran, Israel, North Korea and Pakistan"
+  },
+  {
+   "code": "HSC-M20-T4-D3",
+   "path": "Year 12 / The Nuclear Age 1945–2021 / Towards nuclear disarmament / The significance and impact of UN resolutions and treaties on nuclear disarmament"
+  },
+  {
+   "code": "HSC-M21-T1-D1",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Context / The nature and impact of racial segregation and forms of discrimination in the United States"
+  },
+  {
+   "code": "HSC-M21-T1-D2",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Context / The formation and ideologies of groups supporting civil rights"
+  },
+  {
+   "code": "HSC-M21-T2-D1",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: activism and opposition / The role and influence of the National Association for the Advancement of Colored People (NAACP), including Brown v Board of Education of Topeka (1954), the Montgomery Bus Boycott 1955–1956, and the 1957 desegregation of Little Rock Central High School"
+  },
+  {
+   "code": "HSC-M21-T2-D2",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: activism and opposition / The nature and impact of civil rights groups and actions from 1958 to 1963, including ‘sit-ins’, the Freedom Rides and the March on Washington"
+  },
+  {
+   "code": "HSC-M21-T2-D3",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: activism and opposition / Opposition to civil rights, including the Ku Klux Klan and the White Citizens’ Councils (WCC)"
+  },
+  {
+   "code": "HSC-M21-T2-D4",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: activism and opposition / The reasons for the Voting Rights Act 1965"
+  },
+  {
+   "code": "HSC-M21-T2-D5",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: activism and opposition / The significance of nationwide riots in 1967 and the assassination of Martin Luther King in 1968"
+  },
+  {
+   "code": "HSC-M21-T2-D6",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: activism and opposition / The influence of Malcolm X and the activities of the black power movement to 1972"
+  },
+  {
+   "code": "HSC-M21-T3-D1",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: leadership and achievements / The leadership and achievements of women activists in the period, including Ella Baker"
+  },
+  {
+   "code": "HSC-M21-T3-D2",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: leadership and achievements / The role and significance of Martin Luther King"
+  },
+  {
+   "code": "HSC-M21-T3-D3",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: leadership and achievements / The role of Federal governments in supporting or resisting change: Eisenhower, Kennedy and Johnson"
+  },
+  {
+   "code": "HSC-M21-T3-D4",
+   "path": "Year 12 / Civil rights in the United States 1945–1972 / Civil rights: leadership and achievements / The extent of political and social change in the period"
+  },
+  {
+   "code": "HSC-M22-T1-D1",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / Context / Apartheid: ideology, policy and practice"
+  },
+  {
+   "code": "HSC-M22-T1-D2",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / Context / Political, economic, social and demographic impacts of apartheid in South Africa by 1960"
+  },
+  {
+   "code": "HSC-M22-T2-D1",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / National resistance to apartheid / The nature, growth and impact of the African National Congress (ANC) and the Pan Africanist Congress (PAC)"
+  },
+  {
+   "code": "HSC-M22-T2-D2",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / National resistance to apartheid / The Congress of the People and the 1955 Freedom Charter, and the Treason Trial 1956–1961"
+  },
+  {
+   "code": "HSC-M22-T2-D3",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / National resistance to apartheid / The Sharpeville Massacre and growth of armed resistance"
+  },
+  {
+   "code": "HSC-M22-T2-D4",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / National resistance to apartheid / The Rivonia Trial and Nelson Mandela’s imprisonment on Robben Island"
+  },
+  {
+   "code": "HSC-M22-T2-D5",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / National resistance to apartheid / The significance of Stephen Biko and the Black Consciousness Movement, including the Soweto Uprising"
+  },
+  {
+   "code": "HSC-M22-T3-D1",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / Repression and control by South African governments / The nature and impact of tactics of repression and oppression"
+  },
+  {
+   "code": "HSC-M22-T3-D2",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / Repression and control by South African governments / The role of South African security forces and state terror"
+  },
+  {
+   "code": "HSC-M22-T3-D3",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / Repression and control by South African governments / The role and significance of Bantustans and independent black states"
+  },
+  {
+   "code": "HSC-M22-T3-D4",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / Repression and control by South African governments / Relations with neighbouring African countries, including Angola, Mozambique and Zimbabwe"
+  },
+  {
+   "code": "HSC-M22-T4-D1",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / The end of apartheid / The changing nature of resistance"
+  },
+  {
+   "code": "HSC-M22-T4-D2",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / The end of apartheid / The nature and impact of international responses in contributing to the end of apartheid"
+  },
+  {
+   "code": "HSC-M22-T4-D3",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / The end of apartheid / Reasons for the collapse of apartheid"
+  },
+  {
+   "code": "HSC-M22-T4-D4",
+   "path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994 / The end of apartheid / Problems facing the National Party and the ANC in the transition to democracy"
+  },
+  {
+   "code": "HSC-M23-T1-D1",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Context / The significance of Aung San in the creation of an independent Burma"
+  },
+  {
+   "code": "HSC-M23-T1-D2",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Context / Challenges facing the new democratic government from 1948 to 1958"
+  },
+  {
+   "code": "HSC-M23-T2-D1",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Socialist military government in Burma / Military opposition to new democratic government and the coup of 1962"
+  },
+  {
+   "code": "HSC-M23-T2-D2",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Socialist military government in Burma / The role of nationalism in the reign of Ne Win"
+  },
+  {
+   "code": "HSC-M23-T2-D3",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Socialist military government in Burma / The aims of the ‘Burmese Way to Socialism’"
+  },
+  {
+   "code": "HSC-M23-T2-D4",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Socialist military government in Burma / The role of the Tatmadaw in the military state"
+  },
+  {
+   "code": "HSC-M23-T3-D1",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / The impact of the 8888 Uprising / The reasons for and impact of the 8888 Uprising"
+  },
+  {
+   "code": "HSC-M23-T3-D2",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / The impact of the 8888 Uprising / The formation and role of the State Law and Order Restoration Council (SLORC)"
+  },
+  {
+   "code": "HSC-M23-T3-D3",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / The impact of the 8888 Uprising / The significance of the 1990 general election, including the rise of the National League for Democracy (NLD) and the house arrest of Aung San Suu Kyi"
+  },
+  {
+   "code": "HSC-M23-T4-D1",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / The response of the military government 1990–2011 / The continuing role of army leadership in Burma/Myanmar, including the role of General Than Shwe and General Khin Nyunt"
+  },
+  {
+   "code": "HSC-M23-T4-D2",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / The response of the military government 1990–2011 / Ethnic tensions and separatist uprisings"
+  },
+  {
+   "code": "HSC-M23-T4-D3",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / The response of the military government 1990–2011 / The role of religion in the Burmese state"
+  },
+  {
+   "code": "HSC-M23-T5-D1",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Steps towards democracy in Burma/Myanmar 2011–2021 / Successes and failures of the National League for Democracy"
+  },
+  {
+   "code": "HSC-M23-T5-D2",
+   "path": "Year 12 / The struggle for democracy in Burma 1948–2021 / Steps towards democracy in Burma/Myanmar 2011–2021 / The changing response of the international community to events in Burma/Myanmar 1990–2021"
+  },
+  {
+   "code": "HSC-M24-T1-D1",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Context / The impact of the Great Leap Forward"
+  },
+  {
+   "code": "HSC-M24-T1-D2",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Context / Tensions between the Chinese Communist Party (CCP) and Mao Zedong"
+  },
+  {
+   "code": "HSC-M24-T2-D1",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / The Cultural Revolution / The aims and methods of Mao Zedong"
+  },
+  {
+   "code": "HSC-M24-T2-D2",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / The Cultural Revolution / The role of the Gang of Four and the Red Guards"
+  },
+  {
+   "code": "HSC-M24-T2-D3",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / The Cultural Revolution / The impact of the Cultural Revolution on society, culture, education and the economy"
+  },
+  {
+   "code": "HSC-M24-T2-D4",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / The Cultural Revolution / The impact of the Cultural Revolution on politics and the CCP"
+  },
+  {
+   "code": "HSC-M24-T2-D5",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / The Cultural Revolution / Responses to the death of Zhou Enlai"
+  },
+  {
+   "code": "HSC-M24-T2-D6",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / The Cultural Revolution / The death of Mao Zedong and the end of the Cultural Revolution"
+  },
+  {
+   "code": "HSC-M24-T2-D7",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / The Cultural Revolution / The demise of the Gang of Four"
+  },
+  {
+   "code": "HSC-M24-T3-D1",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Deng Xiaoping and the modernisation of China / The changing political standing of Deng Xiaoping"
+  },
+  {
+   "code": "HSC-M24-T3-D2",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Deng Xiaoping and the modernisation of China / The nature and impact of the modernisation of the economy, including the Four Modernisations and the Special Economic Zones (SEZs)"
+  },
+  {
+   "code": "HSC-M24-T3-D3",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Deng Xiaoping and the modernisation of China / The demand for political, economic and social reform in the 1980s and the response of the CCP"
+  },
+  {
+   "code": "HSC-M24-T3-D4",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Deng Xiaoping and the modernisation of China / Reasons for the 1989 Tiananmen Square protests"
+  },
+  {
+   "code": "HSC-M24-T3-D5",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Deng Xiaoping and the modernisation of China / Political and military responses to the protests, including the 1989 June Fourth Incident"
+  },
+  {
+   "code": "HSC-M24-T3-D6",
+   "path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989 / Deng Xiaoping and the modernisation of China / The impact of the events at Tiananmen Square in 1989 on China and its standing in the world"
+  },
+  {
+   "code": "HSC-M25-T1-D1",
+   "path": "Year 12 / The changing world order 1989–2016 / Context / The Tiananmen Square protests"
+  },
+  {
+   "code": "HSC-M25-T1-D2",
+   "path": "Year 12 / The changing world order 1989–2016 / Context / The fall of the Berlin Wall"
+  },
+  {
+   "code": "HSC-M25-T1-D3",
+   "path": "Year 12 / The changing world order 1989–2016 / Context / The reasons for the collapse of the Soviet Union and the role of Mikhail Gorbachev"
+  },
+  {
+   "code": "HSC-M25-T2-D1",
+   "path": "Year 12 / The changing world order 1989–2016 / Establishing the new world order 1989–2001 / The aims and nature of American foreign policy"
+  },
+  {
+   "code": "HSC-M25-T2-D2",
+   "path": "Year 12 / The changing world order 1989–2016 / Establishing the new world order 1989–2001 / The role of United Nations peacekeeping in Yugoslavia 1991–1995 OR Rwanda 1993–1996 OR Somalia 1993"
+  },
+  {
+   "code": "HSC-M25-T3-D1",
+   "path": "Year 12 / The changing world order 1989–2016 / Challenges to the new world order 2001–2008 / The rise of China"
+  },
+  {
+   "code": "HSC-M25-T3-D2",
+   "path": "Year 12 / The changing world order 1989–2016 / Challenges to the new world order 2001–2008 / The nature of the Russian Federation under Vladimir Putin"
+  },
+  {
+   "code": "HSC-M25-T3-D3",
+   "path": "Year 12 / The changing world order 1989–2016 / Challenges to the new world order 2001–2008 / The impact and influence of non-state actors, including corporations, media organisations and terrorist groups"
+  },
+  {
+   "code": "HSC-M25-T4-D1",
+   "path": "Year 12 / The changing world order 1989–2016 / A ‘post-American’ world 2008–2016 / The impact of the 2008 global financial crisis"
+  },
+  {
+   "code": "HSC-M25-T4-D2",
+   "path": "Year 12 / The changing world order 1989–2016 / A ‘post-American’ world 2008–2016 / Russian foreign policy, including the annexation of Crimea"
+  },
+  {
+   "code": "HSC-M25-T4-D3",
+   "path": "Year 12 / The changing world order 1989–2016 / A ‘post-American’ world 2008–2016 / Chinese foreign policy, including the Belt and Road Initiative"
+  },
+  {
+   "code": "HSC-M25-T4-D4",
+   "path": "Year 12 / The changing world order 1989–2016 / A ‘post-American’ world 2008–2016 / The rise of populism"
+  }
+ ],
+ "questions": [
+  {
+   "id": "mh_2020_q01",
+   "year": 2020,
+   "number": "1 (3 marks)",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Identify THREE factors that shaped Japan’s ambitions in the Asia-Pacific during the inter period. war"
+  },
+  {
+   "id": "mh_2020_q02",
+   "year": 2020,
+   "number": "2 (5 marks)",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "How does Source A provide insight into why the League of Nations lacked authority?"
+  },
+  {
+   "id": "mh_2020_q03",
+   "year": 2020,
+   "number": "3 (7 marks)",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Explain the value and limitations of Source B in understanding the impact of Nazi repression on Jewish people."
+  },
+  {
+   "id": "mh_2020_q04",
+   "year": 2020,
+   "number": "4 (10 marks)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Why were the Nazis able to consolidate power in the period 1933–34? In your response, integrate evidence from Sources C and D."
+  },
+  {
+   "id": "mh_2020_q05",
+   "year": 2020,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia 1918–1949",
+   "text": "— Option A: Australia 1918−1949 (25 marks)\n(a) Assess the impact of political responses to the Great Depression on Australian society. 25 OR (b) Evaluate the roles of industrialisation and immigration in postwar reconstruction. 25"
+  },
+  {
+   "id": "mh_2020_q06",
+   "year": 2020,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / China 1927–1949",
+   "text": "— Option B: China 1927−1949 (25 marks)\n(a) Evaluate the significance of Maoism to the rise of the Communist Party. 25 OR (b) Evaluate the political and social significance of the Yan’an (Yenan) period. 25"
+  },
+  {
+   "id": "mh_2020_q07",
+   "year": 2020,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / National studies",
+   "text": "— Option C: India 1942−1984 (25 marks)\n(a) Evaluate the contributions of industrial development and agricultural reform to the modernisation of India to 1964. 25 OR (b) Assess the impacts of Indira Ghandi’s economic and domestic policies on India. 25"
+  },
+  {
+   "id": "mh_2020_q08",
+   "year": 2020,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Indonesia 1945–2004",
+   "text": "— Option D: Indonesia 1945−2005 (25 marks)\n(a) Evaluate the significance of the roles of both the army and religious groups in the 1965 coup. 25 OR (b) Assess the effectiveness of Suharto’s responses to the political, social and economic challenges in Indonesia. 25"
+  },
+  {
+   "id": "mh_2020_q09",
+   "year": 2020,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Japan 1904–1937",
+   "text": "— Option E: Japan 1904−1937 (25 marks)\n(a) Evaluate the significance of the zaibatsu in challenging traditional power and authority in the 1920s. 25 OR (b) Assess the role of Emperor Hirohito in the growth of militarism in the 1930s. 25"
+  },
+  {
+   "id": "mh_2020_q10",
+   "year": 2020,
+   "number": "10",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Russia and the Soviet Union 1917–1941",
+   "text": "— Option F: Russia and the Soviet Union 1917−1941 (25 marks)\n(a) Assess the political, social and economic impacts of the Bolshevik consolidation of power on the Soviet Union. 25 OR (b) To what extent did the use of terror contribute to the political transformation of the Soviet State under Stalin? 25"
+  },
+  {
+   "id": "mh_2020_q11",
+   "year": 2020,
+   "number": "11",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / United States 1919–1941",
+   "text": "— Option G: USA 1919−1941 (25 marks)\n(a) Assess the effectiveness of government attempts to halt the Depression. 25 OR (b) How successful was US foreign policy in this period? 25"
+  },
+  {
+   "id": "mh_2020_q12",
+   "year": 2020,
+   "number": "12",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Iran 1945–1989",
+   "text": "— Option H: Iran 1945−1989 (25 marks)\n(a) Assess the impact of the Shah’s White Revolution and social reforms. 25 OR (b) Assess the impact of the 1979 Revolution and the leadership of Khomeini on relations with the US and Iraq. 25"
+  },
+  {
+   "id": "mh_2020_q13",
+   "year": 2020,
+   "number": "13",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976",
+   "text": "— Option A: Conflict in Indochina 1954−1979 (25 marks)\n(a) To what extent did communism influence US policy toward Indochina to 1964? 25 OR (b) Assess the reasons for the Communist victories in Cambodia and Laos. 25"
+  },
+  {
+   "id": "mh_2020_q14",
+   "year": 2020,
+   "number": "14",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Pacific 1937–1951",
+   "text": "— Option B: Conflict in the Pacific 1937−1951 (25 marks)\n(a) Evaluate how effective Allied strategies were in combating Japanese aggression in the period 1942–1945. 25 OR (b) To what extent was the Allied occupation of Japan successful in achieving its aims? 25"
+  },
+  {
+   "id": "mh_2020_q15",
+   "year": 2020,
+   "number": "15",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Europe 1935–1945",
+   "text": "— Option C: Conflict in Europe 1935−1945 (25 marks)\n(a) To what extent did Germany achieve its foreign policy aims by September 1939? 25 OR (b) Evaluate the significance of the Battle of Stalingrad and the Russian campaign to the course of the European War. 25"
+  },
+  {
+   "id": "mh_2020_q16",
+   "year": 2020,
+   "number": "16",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Cold War 1945–1991",
+   "text": "— Option D: The Cold War 1945−1991 (25 marks)\n(a) Assess how Cold War crises changed relationships between the superpowers to 1968. 25 OR (b) To what extent did détente contribute to the end of the Cold War? 25"
+  },
+  {
+   "id": "mh_2020_q17",
+   "year": 2020,
+   "number": "17",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Gulf 1980–2017",
+   "text": "— Option E: Conflict in the Gulf 1980−2011 (25 marks)\n(a) Evaluate the significance of regionalism in the development of conflict in the Gulf to 2003. 25 OR (b) To what extent were attempts at peacemaking and nation-building successful in the period 2003–2011? 25"
+  },
+  {
+   "id": "mh_2020_q18",
+   "year": 2020,
+   "number": "18",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Arab–Israeli conflict 1948–2000",
+   "text": "— Option F: The Arab−Israeli Conflict 1948−1996 (25 marks)\n(a) To what extent were attempts at peacemaking affected by the Yom Kippur War of 1973? 25 OR (b) Evaluate the role of nationalism in the continuation of the Arab–Israeli conflict to 1996. 25"
+  },
+  {
+   "id": "mh_2020_q19",
+   "year": 2020,
+   "number": "19",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The struggle for democracy in Burma 1948–2021",
+   "text": "— Option A: Pro-democracy Movement in Burma 1945−2010\n(25 marks) Answer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Why was Aung San Suu Kyi placed under house arrest? 4 (b) With reference to Source E, explain the impact of the 1988 uprising. 9 Source E On 8 August 1988, the Burmese military cracked down on anti-government demonstrations, killing hundreds of protesters and turning Aung San Suu Kyi into a political icon. BBC, Remembering the 1988 Burma Uprising Courtesy of BBC News - bbc.co.uk/news Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) Evaluate the significance of the Tatmadaw in protecting the State from internal and external threats. 12"
+  },
+  {
+   "id": "mh_2020_q20",
+   "year": 2020,
+   "number": "20",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989",
+   "text": "— Option B: The Cultural Revolution to Tiananmen Square\n1966−1989 (25 marks) Answer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Why did tensions arise between the Chinese Communist Party and Mao Zedong? 4 (b) With reference to Source F, explain the nature of Deng Xiaoping’s reforms. 9 Source F . . . Deng knew China lacked technology, intellectual property, an educated political class and the institutions to fulfill its mission and that the most effective way to achieve this, of course, was to open up to the outside world . . . Extract from a book review by KERRY BROWN in BeijingReview.com Courtesy of Professor Kerry Brown Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) Evaluate the impact of the events of Tiananmen Square on China and its standing in the world. 12"
+  },
+  {
+   "id": "mh_2020_q21",
+   "year": 2020,
+   "number": "21",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Civil rights in the United States 1945–1972",
+   "text": "— Option C: Civil Rights in the USA 1945−1968 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) What was the impact of Martin Luther King’s assassination on the civil rights movement? 4 (b) With reference to Source G, explain the key challenges faced by the civil rights movement. 9 Source G In response to the 1954 Brown v Board of Education decision . . . white segregationists throughout the South created the White Citizens’ Councils (WCC). These local groups typically drew a more middle and upper class membership than the Ku Klux Klan and, in addition to using violence and intimidation to counter civil rights goals, they sought to economically and socially oppress blacks. Martin Luther King, Jr, Research and Education Institute © 1956 to Dr. Martin Luther King Jr Renewed © 1984 by Coretta Scott King Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) Evaluate the methods of protest employed by the civil rights movement. 12"
+  },
+  {
+   "id": "mh_2020_q22",
+   "year": 2020,
+   "number": "22",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world order 1989–2016",
+   "text": "— Option D: The Changing World Order 1945−2011 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) What were the key challenges faced by the United Nations during the Cold War period? 4 (b) With reference to Source H, explain the influence of the European Union as a centre of global power between 1989 and 2011. Source H Europe’s ambitious postwar project is considered by some to have been a triumph, ensuring peace and steadying economies across the continent – yet it is decried* by others as a bureaucratic nightmare. *decried criticised DENISE DUNNE Maynooth University, Ireland With kind permission of Immediate Media 9 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) Evaluate the influence of US foreign policy in the post-Cold War world. 12 https://www.historyextra.com/"
+  },
+  {
+   "id": "mh_2020_q23",
+   "year": 2020,
+   "number": "23",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Nuclear Age 1945–2021",
+   "text": "— Option E: The Nuclear Age 1945−2011 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) What impact did the Potsdam Conference have on the birth of the Nuclear Age? 4 (b) With reference to Source I, explain the legacy of the bombing of Hiroshima and Nagasaki in 1945. Source I ‘Most people from 1945 onwards would have expected nuclear weapons to be used in warfare reasonably soon after that, yet almost 60 years of Cold War passed without the use of nuclear weapons. If it hadn’t been for the lessons both the East and the West learned from Hiroshima, I don’t think that would have happened.’ ODD ARNE WESTAD Professor of US-Asia Relations, Harvard University Extract from Have the ashes of Hiroshima taught the world anything? by INGRID PIPER Courtesy of Professor Odd Arne Westad 9 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) Evaluate the view that the benefits of the Nuclear Age outweighed the risks. 12"
+  },
+  {
+   "id": "mh_2020_q24",
+   "year": 2020,
+   "number": "24",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994",
+   "text": "— Option F: Apartheid in South Africa 1960−1994 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) What effect did the Rivonia Trial have on national resistance to apartheid? 4 (b) With reference to Source J, explain the impact of the South African government’s increasing use of state terror. 9 Source J . . . the government took increasingly brutal steps to force capitulation*. In addition to the secretive activities of the police and military units the government also continued to pursue official and public repression . . . The government instituted military call up . . . maintained a relentless policy of removing Africans from white areas . . . Despite these efforts, protests and resistance intensified during this period. *capitulation submission nswer part (c) of the question on pages 21−24 of the Writing Booklet. c) Evaluate the extent to which international factors contributed to the end of apartheid. CLARK and WORGER South Africa: The Rise and Fall of Apartheid ©1994, From South Africa: The Rise and Fall of Apartheid by Clark, Nancy L. and Worger, William H. Reproduced by permission of Taylor and Francis Group, LLC, a division of Informa plc. A ( 12 End of paper"
+  },
+  {
+   "id": "mh_2021_q01",
+   "year": 2021,
+   "number": "1 (4 marks)",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Outline the geographical consequences of the peace treaties that ended World War I."
+  },
+  {
+   "id": "mh_2021_q02",
+   "year": 2021,
+   "number": "2 (5 marks)",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Assess the value of Source A for understanding the reasons for establishing the United Nations."
+  },
+  {
+   "id": "mh_2021_q03",
+   "year": 2021,
+   "number": "3 (6 marks)",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Account for the different perspectives of Hitler’s cult of personality shown in Sources B and C."
+  },
+  {
+   "id": "mh_2021_q04",
+   "year": 2021,
+   "number": "4 (10 marks)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Explain the role of prominent individuals in implementing ideology in the Nazi state. In your response, integrate evidence from Sources D and E."
+  },
+  {
+   "id": "mh_2021_q05",
+   "year": 2021,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia 1918–1949",
+   "text": "— Option A: Australia 1918−1949 (25 marks)\n(a) Assess the impact of tensions between rural and urban Australia on changes to society in the 1920s. 25 OR (b) Evaluate the view that nationalism was the most significant factor shaping Australia’s foreign policy in the period 1918–1949. 25"
+  },
+  {
+   "id": "mh_2021_q06",
+   "year": 2021,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / China 1927–1949",
+   "text": "— Option B: China 1927−1949 (25 marks)\n(a) Evaluate the role of nationalism in the development of Chinese Communist Party (CCP) ideology. 25 OR (b) To what extent did the Chinese Communist Party (CCP) achieve political stability by 1949? 25"
+  },
+  {
+   "id": "mh_2021_q07",
+   "year": 2021,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / National studies",
+   "text": "— Option C: India 1942−1984 (25 marks)\n(a) Evaluate the view that nationalism was the most significant factor in the creation of the republic of India. 25 OR (b) To what extent did India maintain a neutral stance in its foreign policy between 1947–1984? 25"
+  },
+  {
+   "id": "mh_2021_q08",
+   "year": 2021,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Indonesia 1945–2004",
+   "text": "— Option D: Indonesia 1945−2005 (25 marks)\n(a) Assess the impact of the ideology of the New Order on changes to Indonesian society from 1965. 25 OR (b) Evaluate the impact of ethnic and religious diversity on the emergence of separatist movements in Indonesia. 25"
+  },
+  {
+   "id": "mh_2021_q09",
+   "year": 2021,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Japan 1904–1937",
+   "text": "— Option E: Japan 1904−1937 (25 marks)\n(a) Evaluate the view that successes outweighed the failures of Japanese democracy during the 1920s. 25 OR (b) To what extent was the Great Depression the main cause for the rise of militarism in Japan to 1937? 25"
+  },
+  {
+   "id": "mh_2021_q10",
+   "year": 2021,
+   "number": "10",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Russia and the Soviet Union 1917–1941",
+   "text": "— Option F: Russia and the Soviet Union 1917−1941 (25 marks)\n(a) Assess the importance of leading Bolshevik figures on the outcome of the power struggle between Trotsky and Stalin. 25 OR (b) To what extent did the Soviet state maintain Bolshevik ideology in practice? 25"
+  },
+  {
+   "id": "mh_2021_q11",
+   "year": 2021,
+   "number": "11",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / United States 1919–1941",
+   "text": "— Option G: USA 1919−1941 (25 marks)\n(a) To what extent was conservatism a factor in the development of social tensions in the USA during this period? 25 OR (b) Evaluate the impact of the outbreak of World War II on US society to 1941. 25"
+  },
+  {
+   "id": "mh_2021_q12",
+   "year": 2021,
+   "number": "12",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Iran 1945–1989",
+   "text": "— Option H: Iran 1945−1989 (25 marks)\n(a) Assess the influence of the military in the successes and failures of democracy in Iran to 1979. 25 OR (b) To what extent did Iran’s oil industry affect political and economic developments to 1989? 25"
+  },
+  {
+   "id": "mh_2021_q13",
+   "year": 2021,
+   "number": "13",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976",
+   "text": "— Option A: Conflict in Indochina 1954−1979 (25 marks)\n(a) We shall fight to the end until Vietnam is fully independent and reunified. HO CHI MINH, December 1946 To what extent had Vietnam achieved the nationalistic goals Ho Chi Minh describes by 1964? 25 OR (b) The failures of the US military were more significant than the Communist successes to the outcome of the conflict. To what extent is this statement accurate? 25 © Ho Chi Minh"
+  },
+  {
+   "id": "mh_2021_q14",
+   "year": 2021,
+   "number": "14",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Pacific 1937–1951",
+   "text": "— Option B: Conflict in the Pacific 1937−1951 (25 marks)\n(a) For a while we’ll have everything our own way, stretching out in every direction like an octopus spreading its tentacles. But it’ll last for a year and a half at most. Japanese Admiral ISOROKU YAMAMOTO, September 1941 To what extent does Yamamoto’s view accurately describe the nature and impact of Japanese imperialism during the Pacific War? 25 OR (b) The War Crimes Tribunals were more about Allied interests than achieving justice. To what extent is this statement accurate? 25"
+  },
+  {
+   "id": "mh_2021_q15",
+   "year": 2021,
+   "number": "15",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Europe 1935–1945",
+   "text": "— Option C: Conflict in Europe 1935−1945 (25 marks)\n(a) Germany should concentrate all of its strength on marking out a way of life for our people through the allocation of adequate living space for the next one hundred years. ADOLF HITLER, Mein Kampf, 1923 To what extent did the foreign policy goals Hitler describes lead to the outbreak of the European War? 25 OR (b) The social and economic effects of the war in Germany determined the outcome of the conflict. To what extent is this statement accurate? 25 25"
+  },
+  {
+   "id": "mh_2021_q16",
+   "year": 2021,
+   "number": "16",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Cold War 1945–1991",
+   "text": "— Option D: The Cold War 1945−1991 (25 marks)\n(a) Now that the Cold War has disappeared into history, we can say authoritatively that the world came closest to blowing itself up during thirteen days in October 1962. ARTHUR SCHLESINGER, Presidential Special Assistant to John F Kennedy To what extent does Schlesinger’s view accurately describe the significance of the Cuban Missile Crisis on the Cold War? 25 OR (b) Disarmament agreements led to the end of the Cold War. To what extent is this statement accurate? 25"
+  },
+  {
+   "id": "mh_2021_q17",
+   "year": 2021,
+   "number": "17",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Gulf 1980–2017",
+   "text": "— Option E: Conflict in the Gulf 1980−2011 (25 marks)\n(a) The primary purpose of that multi-national naval task force will be to enforce the blockade on Iraq and Kuwait and … to protect the exports from other oil producing Gulf countries. BOB HAWKE, Prime Minister of Australia, 1990 To what extent was the protection of economic interests the primary reason for international involvement in the conflict in the Gulf? 25 OR (b) Self-defence was the main cause of the first Iraq War. To what extent is this statement accurate? 25 Foreword to THIRTEEN DAYS by Arthur Schlesinger Jr. ©1999, Arthur Schlesinger Jr., used by permission of The Wylie Agency (UK) Limited."
+  },
+  {
+   "id": "mh_2021_q18",
+   "year": 2021,
+   "number": "18",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Arab–Israeli conflict 1948–2000",
+   "text": "— Option F: The Arab−Israeli Conflict 1948−1996 (25 marks)\n(a) We can continue to fight . . . But we can also try to put a stop to the never ending cycle of blood. We can also give peace a chance. YITZHAK RABIN, speech to the Knesset, 1995 25 To what extent had Yitzhak Rabin’s vision of peace been achieved by 1996? OR (b) The USA was more responsible than the USSR for the development of the Arab– Israeli conflict. To what extent is this statement accurate? 25 Approved by Embassy of Israel, Canberra"
+  },
+  {
+   "id": "mh_2021_q19",
+   "year": 2021,
+   "number": "19",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The struggle for democracy in Burma 1948–2021",
+   "text": "— Option A: Pro-democracy Movement in Burma 1945−2010\n(25 marks) Answer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Describe the main ethnic and political characteristics of Burma post WWII. 5 (b) Account for the challenges facing the new government in establishing democracy in the period 1948–58. 8 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) Evaluate the effect that General Than Shwe and General Khin Nyunt had on the pro-democracy movement in the period 1990–2010. 12"
+  },
+  {
+   "id": "mh_2021_q20",
+   "year": 2021,
+   "number": "20",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989",
+   "text": "— Option B: The Cultural Revolution to Tiananmen Square\n1966−1989 (25 marks) Answer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Describe the legacy of the Great Leap forward on the social conditions in China. 5 (b) Explain the impact of the Cultural Revolution on the leadership of the Chinese Communist Party. 8 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) To what extent did competing versions of Marxism affect Chinese politics from 1966 to 1989? 12"
+  },
+  {
+   "id": "mh_2021_q21",
+   "year": 2021,
+   "number": "21",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Civil rights in the United States 1945–1972",
+   "text": "— Option C: Civil Rights in the USA 1945−1968 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Describe how World War II affected African Americans in the United States. 5 (b) Explain the impact of the US civil rights movement on the international community. 8 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) To what extent did the attitudes of US presidents contribute to the successes of the civil rights movement? 12"
+  },
+  {
+   "id": "mh_2021_q22",
+   "year": 2021,
+   "number": "22",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world order 1989–2016",
+   "text": "— Option D: The Changing World Order 1945−2011 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Describe the reasons for the fall of the Berlin Wall in 1989. 5 (b) Explain how ‘hard’ and ‘soft’ power shaped US foreign policy in the post-Cold War period. 8 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) How successful was the United Nations in maintaining peace and security from 1991–2011? 12"
+  },
+  {
+   "id": "mh_2021_q23",
+   "year": 2021,
+   "number": "23",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Nuclear Age 1945–2021",
+   "text": "— Option E: The Nuclear Age 1945−2011 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Describe the role of the Manhattan project in the development of the atomic bomb. 5 (b) Explain the impact of nuclear testing on the international community. 8 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) How significant were anti-nuclear movements to the process of nuclear disarmament? 12"
+  },
+  {
+   "id": "mh_2021_q24",
+   "year": 2021,
+   "number": "24",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994",
+   "text": "— Option F: Apartheid in South Africa 1960−1994 (25 marks)\nAnswer parts (a) and (b) of the question on pages 18−20 of the Writing Booklet. (a) Describe the economic impact of apartheid on black South Africans. 5 (b) Account for the growth and impact of the African National Congress (ANC) and Pan Africanist Congress (PAC) from 1960. 8 Answer part (c) of the question on pages 21−24 of the Writing Booklet. (c) How significant was Nelson Mandela’s leadership in bringing about the end of apartheid? 12 End of paper"
+  },
+  {
+   "id": "mh_2022_q01",
+   "year": 2022,
+   "number": "1 (3 marks)",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Explain the relationship between the Treaty of Versailles and the rise of dictators after World War I. Use Source A to support your answer."
+  },
+  {
+   "id": "mh_2022_q02",
+   "year": 2022,
+   "number": "2 (4 marks)",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Account for the perspective of Source B."
+  },
+  {
+   "id": "mh_2022_q03",
+   "year": 2022,
+   "number": "3 (6 marks)",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "What are the values and limitations of Source C for a historian investigating the reasons for the rise of the Nazi party?"
+  },
+  {
+   "id": "mh_2022_q04",
+   "year": 2022,
+   "number": "4 (12 marks)",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "How significant was the Nazi party to the collapse of the Weimar Republic? Integrate evidence from Source D and ONE other source from the Source Booklet in your answer."
+  },
+  {
+   "id": "mh_2022_q05",
+   "year": 2022,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia 1918–1949",
+   "text": "— Option A: Australia 1918−1949 (25 marks)\n(a) How significant was World War I in shaping Australian society in the 1920s? 25 OR (b) Evaluate the role that communism had in shaping Australia’s domestic politics and foreign policy to 1949. 25"
+  },
+  {
+   "id": "mh_2022_q06",
+   "year": 2022,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / China 1927–1949",
+   "text": "— Option B: China 1927−1949 (25 marks)\n(a) How significant was the Long March in the rise of the Chinese Communist Party? 25 OR (b) Evaluate the view that the communists triumphed because of the failures of the Nationalists. 25"
+  },
+  {
+   "id": "mh_2022_q07",
+   "year": 2022,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / National studies",
+   "text": "— Option C: India 1942−1984 (25 marks)\n(a) How successful was Nehru at creating unity in India by 1964? 25 OR (b) Evaluate Indira Gandhi’s leadership of India. 25"
+  },
+  {
+   "id": "mh_2022_q08",
+   "year": 2022,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Indonesia 1945–2004",
+   "text": "— Option D: Indonesia 1945−2005 (25 marks)\n(a) How successful was Suharto in responding to the challenges faced by his regime from 1965−1998? 25 OR (b) Evaluate the importance of the army to political developments in Indonesia. 25"
+  },
+  {
+   "id": "mh_2022_q09",
+   "year": 2022,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Japan 1904–1937",
+   "text": "— Option E: Japan 1904−1937 (25 marks)\n(a) How significant were tensions between tradition and modernisation in the development of Japanese politics to 1937? 25 OR (b) Evaluate the impact of militarism on Japan’s domestic politics and foreign policy during the 1930s. 25"
+  },
+  {
+   "id": "mh_2022_q10",
+   "year": 2022,
+   "number": "10",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Russia and the Soviet Union 1917–1941",
+   "text": "— Option F: Russia and the Soviet Union 1917−1941 (25 marks)\n(a) How did Stalin’s policies transform social and cultural life in Russia? 25 OR (b) Evaluate the view that Stalin had complete control over the USSR by 1941. 25 25"
+  },
+  {
+   "id": "mh_2022_q11",
+   "year": 2022,
+   "number": "11",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / United States 1919–1941",
+   "text": "— Option G: USA 1919−1941 (25 marks)\n(a) Evaluate the view that the most significant impact of the Great Depression was on the lives of workers. 25 OR (b) How significant was American capitalism in bringing about changes to US society to 1941? 25"
+  },
+  {
+   "id": "mh_2022_q12",
+   "year": 2022,
+   "number": "12",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Iran 1945–1989",
+   "text": "— Option H: Iran 1945−1989 (25 marks)\n(a) Evaluate the view that ideology was the most significant factor in bringing about the 1979 Revolution. 25 OR (b) How significant was the leadership of Khomeini to the changing nature of Iranian society and foreign relations from 1979 to 1989? 25"
+  },
+  {
+   "id": "mh_2022_q13",
+   "year": 2022,
+   "number": "13",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976",
+   "text": "— Option A: Conflict in Indochina 1954−1979 (25 marks)\n(a) Why did the USA withdraw from Vietnam? 25 OR (b) Which was more significant in shaping the conflict in Indochina: nationalism or communism? 25"
+  },
+  {
+   "id": "mh_2022_q14",
+   "year": 2022,
+   "number": "14",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Pacific 1937–1951",
+   "text": "— Option B: Conflict in the Pacific 1937−1951 (25 marks)\n(a) Why were the Japanese defeated in World War II? 25 OR (b) Assess the impact of the Pacific war on the homefronts in Australia and Japan. 25"
+  },
+  {
+   "id": "mh_2022_q15",
+   "year": 2022,
+   "number": "15",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Europe 1935–1945",
+   "text": "— Option C: Conflict in Europe 1935−1945 (25 marks)\n(a) What was the most significant turning point in the conflict in Europe? 25 OR (b) Why did the Allies win the European war? 25"
+  },
+  {
+   "id": "mh_2022_q16",
+   "year": 2022,
+   "number": "16",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Cold War 1945–1991",
+   "text": "— Option D: The Cold War 1945−1991 (25 marks)\n(a) Which was more significant in shaping the policies of the Cold War: ideology or economic and political concerns? 25 OR (b) Assess the impact of economic and political developments on the emergence of détente. 25"
+  },
+  {
+   "id": "mh_2022_q17",
+   "year": 2022,
+   "number": "17",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Gulf 1980–2017",
+   "text": "— Option E: Conflict in the Gulf 1980−2011 (25 marks)\n(a) Why did the US troops withdraw from Iraq in 2011? 25 OR (b) Which had a greater impact on the development of the conflict in the Gulf from 1991 to 2003: regional rivalries or international involvement? 25"
+  },
+  {
+   "id": "mh_2022_q18",
+   "year": 2022,
+   "number": "18",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Arab–Israeli conflict 1948–2000",
+   "text": "— Option F: The Arab−Israeli Conflict 1948−1996 (25 marks)\n(a) Which was more significant in shaping the Arab−Israeli conflict: the 1967 (Six Day) War or the 1973 (Yom Kippur) War? 25 OR (b) Why did Israel invade Lebanon in 1978 and 1982? 25"
+  },
+  {
+   "id": "mh_2022_q19",
+   "year": 2022,
+   "number": "19",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The struggle for democracy in Burma 1948–2021",
+   "text": "— Option A: Pro-democracy Movement in Burma 1945−2010\n(25 marks) (a) Describe how the State Law and Order Restoration Council was formed. 5 (b) Explain the reasons for the ‘Burmese way to Socialism’. Use Source E to support your response. Source E A FENICHEL and KHAN (1981), The Burmese Way to Socialism, World Development 9 (9110) 8 (c) To what extent did ethnic tensions and separatist uprisings influence the response of the military government from 1990−2010? 12 Due to copyright issues, this material cannot be displayed. Please refer to The Burmese way to 'socialism' Allen Fenichel, Azfar Khan, vol 9, issue 9−10, page 12"
+  },
+  {
+   "id": "mh_2022_q20",
+   "year": 2022,
+   "number": "20",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989",
+   "text": "— Option B: The Cultural Revolution to Tiananmen Square\n1966−1989 (25 marks) (a) Describe the legacy of the 1949 revolution. 5 (b) Explain the role of the Red Guards in the Cultural Revolution. Use Source F to support your response. Source F The August 1966 Plenum* sounded the trumpets for the Great Proletarian Cultural Revolution. Beijing authorised students from ‘Red’ families to form Red Guard organisations. They were to spearhead the purge of ‘capitalist roaders’ at all levels and of old culture in every form . . . *Plenum an assembly of all the members of a group or committee C DEITRCH, People’s China: A Brief History, 1998 Reproduced with permission of Oxford University Press through PLSclear 8 (c) To what extent did Deng Xiaoping’s economic reforms change Chinese society? 12"
+  },
+  {
+   "id": "mh_2022_q21",
+   "year": 2022,
+   "number": "21",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Civil rights in the United States 1945–1972",
+   "text": "— Option C: Civil Rights in the USA 1945−1968 (25 marks)\n(a) Describe the nature of racial segregation faced by African Americans in the USA. 5 (b) Explain the role of Rosa Parks in the development of the Civil Rights movement. Use Source G to support your response. Source G Mrs Rosa Parks was presented to the mass meeting because we wanted her to become symbolic of our protest movement. The appearance of . . . [Rosa Parks] created enthusiasm, thereby giving the momentum to the movement. We then heard the resolutions calling for the continuation of the boycott unanimously and enthusiastically adopted by the 7000 individuals both inside and outside the church. REV RALPH ABERNATHY, ‘Recollection of the First Montgomery Improvement Association (MIA) Meeting’, in Daybreak of Freedom: The Montgomery Bus Boycott, 1997 Reproduced by permission of the University of North Carolina Press 8 (c) To what extent did changes in social attitudes lead to the successes of the Civil Rights movement? 12"
+  },
+  {
+   "id": "mh_2022_q22",
+   "year": 2022,
+   "number": "22",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world order 1989–2016",
+   "text": "— Option D: The Changing World Order 1945−2011 (25 marks)\n(a) Describe the reasons for the term the ‘American Century’. 5 (b) Explain the role of Gorbachev in the collapse of the Soviet Union. Use Source H to support your response. Source H Under Gorbachev, political, economic, social and foreign policy changes became the order of the day. Each fed off the other, so that reform gained a momentum of its own, and, in the end, control over policy was wrested* from the centre. Ultimately, the limited transformation which was intended to salvage the socialist system brought its collapse . . . *wrested snatched S MOREWOOD (2006), ‘Gorbachev and the Collapse of Communism’, History Today (20) Steven Morewood (2006), Gorbachev and the Collapse of Communism, History Today, London UK, 2006, Vol 20. Reproduced by permission. 8 (c) To what extent did new centres of global power challenge US influence internationally between 1989−2011? 12"
+  },
+  {
+   "id": "mh_2022_q23",
+   "year": 2022,
+   "number": "23",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Nuclear Age 1945–2021",
+   "text": "— Option E: The Nuclear Age 1945−2011 (25 marks)\n(a) Describe the political impact of the nuclear incident at Chernobyl. 5 (b) Explain the risks associated with the use of nuclear energy. Use Source I to support your response. Source I The objectives of this Convention are: (i) to achieve and maintain a high level of safety worldwide in spent fuel and radioactive waste management . . . (ii) to ensure that during all stages of spent fuel and waste management there are effective defences against potential hazards . . . (iii) to prevent accidents with radiological consequences and to mitigate* their consequences . . . *mitigate reduce United Nations International Atomic Energy Agency (1997) Joint convention on the Safety of Spent Fuel and on the Safety of Radioactive Waste Management, 1997 Reproduced by permission 8 (c) To what extent did issues of proliferation influence the movement towards nuclear disarmament? 12"
+  },
+  {
+   "id": "mh_2022_q24",
+   "year": 2022,
+   "number": "24",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994",
+   "text": "— Option F: Apartheid in South Africa 1960−1994 (25 marks)\n(a) Describe the policy of apartheid in practice. 5 (b) Explain the problems faced by South Africa in the transition to democracy. Use Source J to support your response. Source J Leaders of the anti-apartheid struggle sought to create a government that reflected the country’s diversity, transforming a state long committed to white supremacy into what many began to describe as a ‘rainbow nation’. Yet the long history of racism and violence that reached a pinnacle during the 40 years of apartheid left many deep legacies and problems . . . B BROWN and T LONGMAN (2018), Confronting Apartheid, Boston University Press Reproduced by permission 8 (c) To what extent did the methods of control used by the South African government influence the international response to apartheid? 12 End of paper"
+  },
+  {
+   "id": "mh_2023_q01",
+   "year": 2023,
+   "number": "1 (3 marks)",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "How does Source A reflect the impact of Nazi ideology on religion?"
+  },
+  {
+   "id": "mh_2023_q02",
+   "year": 2023,
+   "number": "2 (5 marks)",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Describe the value of Source B for a historian investigating the nature of the dictatorship that emerged in Italy."
+  },
+  {
+   "id": "mh_2023_q03",
+   "year": 2023,
+   "number": "3 (7 marks)",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Explain how the Nazi regime used propaganda to control the German population between 1933 and 1939."
+  },
+  {
+   "id": "mh_2023_q04",
+   "year": 2023,
+   "number": "4 (10 marks)",
+   "marks": 10,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Compare the territorial ambitions of Germany in Europe with those of Japan in the Asia−Pacific. In your answer, integrate evidence from Sources C and D from the Source Booklet."
+  },
+  {
+   "id": "mh_2023_q05",
+   "year": 2023,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia 1918–1949",
+   "text": "— Option A: Australia 1918−1949 (25 marks)\n(a) How significant was the changing relationship with the USA in shaping Australia’s foreign policy and postwar reconstruction? 25 OR (b) Account for the election victory of Robert Menzies and the Coalition in 1949. 25"
+  },
+  {
+   "id": "mh_2023_q06",
+   "year": 2023,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / China 1927–1949",
+   "text": "— Option B: China 1927−1949 (25 marks)\n(a) How significant was the consolidation of Maoism to the rise of the Chinese Communist Party? 25 OR (b) Account for the differing aims and impacts of the leaderships of Chiang Kai Shek and Mao Zedong. 25"
+  },
+  {
+   "id": "mh_2023_q07",
+   "year": 2023,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / National studies",
+   "text": "— Option C: India 1942−1984 (25 marks)\n(a) How significant were economic factors and political instability in undermining Indian democracy during the government of Indira Ghandi? 25 OR (b) Assess the roles played by both Pakistan and communist China in shaping Indian foreign policy. 25"
+  },
+  {
+   "id": "mh_2023_q08",
+   "year": 2023,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Indonesia 1945–2004",
+   "text": "— Option D: Indonesia 1945−2005 (25 marks)\n(a) How significant were religious and regional issues in ending the Suharto era? 25 OR (b) How successful was Indonesia in achieving its foreign policy aims in the period 1945−2005? 25"
+  },
+  {
+   "id": "mh_2023_q09",
+   "year": 2023,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Japan 1904–1937",
+   "text": "— Option E: Japan 1904−1937 (25 marks)\n(a) How significant was the collapse of party politics to the rise of militarism in the 1930s? 25 OR (b) Assess the impact of ideology on Japanese foreign policy to 1937. 25"
+  },
+  {
+   "id": "mh_2023_q10",
+   "year": 2023,
+   "number": "10",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Russia and the Soviet Union 1917–1941",
+   "text": "— Option F: Russia and the Soviet Union 1917−1941 (25 marks)\n(a) How successful was the economic transformation of the Soviet Union in the period 1928−1941? 25 OR (b) Assess the role of competing visions in shaping Soviet foreign policy to 1941. 25"
+  },
+  {
+   "id": "mh_2023_q11",
+   "year": 2023,
+   "number": "11",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / United States 1919–1941",
+   "text": "— Option G: USA 1919−1941 (25 marks)\n(a) Account for the success of the New Deal in addressing the social and economic impacts of the Great Depression. 25 OR (b) How significant was isolationism in shaping the aims and strategies of US foreign policy to 1941? 25"
+  },
+  {
+   "id": "mh_2023_q12",
+   "year": 2023,
+   "number": "12",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Iran 1945–1989",
+   "text": "— Option H: Iran 1945−1989 (25 marks)\n(a) Account for the rise of opposition to the Shah in the period 1945−1979. 25 OR (b) How significant was the 1979 hostage crisis in shaping relations between Iran and the West? 25"
+  },
+  {
+   "id": "mh_2023_q13",
+   "year": 2023,
+   "number": "13",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976",
+   "text": "— Option A: Conflict in Indochina 1954−1979 (25 marks)\n(a) Assess the impact of the 1968 Tet Offensive on US policy towards Vietnam. 25 OR (b) How successful was Pol Pot in achieving his domestic and foreign policy objectives? 25"
+  },
+  {
+   "id": "mh_2023_q14",
+   "year": 2023,
+   "number": "14",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Pacific 1937–1951",
+   "text": "— Option B: Conflict in the Pacific 1937−1951 (25 marks)\n(a) How successful was the bombing of Pearl Harbor in achieving Japan’s strategic aims? 25 OR (b) Assess the impact of the Battle of the Coral Sea on the course of the Pacific War. 25"
+  },
+  {
+   "id": "mh_2023_q15",
+   "year": 2023,
+   "number": "15",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Europe 1935–1945",
+   "text": "— Option C: Conflict in Europe 1935−1945 (25 marks)\n(a) Assess the impact of the war on civilians in Germany and the Nazi-occupied territories. 25 OR (b) How significant were the economic and strategic impacts of the air war on Britain and Germany? 25"
+  },
+  {
+   "id": "mh_2023_q16",
+   "year": 2023,
+   "number": "16",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Cold War 1945–1991",
+   "text": "— Option D: The Cold War 1945−1991 (25 marks)\n(a) Assess the impact of the policy of containment in shaping the Cold War in the period 1947−1991. 25 OR (b) How significant were crises in relation to Berlin responsible for changing relations between the US and the USSR? 25"
+  },
+  {
+   "id": "mh_2023_q17",
+   "year": 2023,
+   "number": "17",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Gulf 1980–2017",
+   "text": "— Option E: Conflict in the Gulf 1980−2011 (25 marks)\n(a) Assess the impact of regionalism and sectarianism in Iraq’s attempt to transition to democracy in the period 2003−2011. 25 OR (b) How significant were George W Bush’s actions in the origins and development of the Iraq War? 25"
+  },
+  {
+   "id": "mh_2023_q18",
+   "year": 2023,
+   "number": "18",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Arab–Israeli conflict 1948–2000",
+   "text": "— Option F: The Arab−Israeli Conflict 1948−1996 (25 marks)\n(a) Assess the impact of the Palestinian Liberation Organisation’s aims and methods on Israeli and Palestinian communities throughout the Arab−Israeli conflict. 25 OR (b) Account for the obstacles to the peace process in the Arab−Israeli conflict in the period 1987−1996. 25"
+  },
+  {
+   "id": "mh_2023_q19",
+   "year": 2023,
+   "number": "19",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The struggle for democracy in Burma 1948–2021",
+   "text": "— Option A: Pro-democracy Movement in Burma 1945−2010\n(25 marks) (a) Describe how Burma was liberated from Japanese occupation. 5 (b) Explain the rise of the military in Burma. 8 (c) To what extent was Aung San Suu Kyi central in shaping the international response to events in Burma? Use Source E to support your response. 12 Source E Although most international recognition came to her without her contribution – she was locked in the house arrest while the West deified* her – without her skills that would not have materialized. She knew . . . how to win their hearts and minds. This helped her build her position as the intermediary between the Western world and Burma. M LUBINA A Lioness Turned into a Fox Polish Political Science Yearbook, Vol 49 (2), 2020 * deified to consider someone or something to be so important that they are almost like a god https://doi.org/10.15804/ppsy2020203"
+  },
+  {
+   "id": "mh_2023_q20",
+   "year": 2023,
+   "number": "20",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989",
+   "text": "— Option B: The Cultural Revolution to Tiananmen Square\n1966−1989 (25 marks) (a) Describe the role of Hua Guofeng in the removal of the Gang of Four. 5 (b) Explain the reasons for the flight of Lin Biao. 8 (c) To what extent were demands for democracy responsible for the Tiananmen Square protests? Use Source F to support your response. 12 Source F The students were ostensibly mourning the death . . . of Mr Hu, whom they regarded as a protector of intellectuals. But the mourning seemed over- shadowed by displays of protest. “We want democracy,” explained a radio electronics student from Beijing University as he walked his bicycle with the other marchers. “Hu Yaobang’s death is not the reason for the demonstration. It is the excuse.” NICHOLAS KRISTOF Chinese Students March for Democracy The New York Times, 18 April 1989 From The New York Times. © The New York Times, April 18, 1989, Chinese Students March for Democracy by Nicholas D Kristof. The New York Times Company. All rights reserved. Used under license."
+  },
+  {
+   "id": "mh_2023_q21",
+   "year": 2023,
+   "number": "21",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Civil rights in the United States 1945–1972",
+   "text": "— Option C: Civil Rights in the USA 1945−1968 (25 marks)\n(a) Describe the formation and role of ONE civil rights group. 5 (b) Explain the role of the Mississippi Freedom Summer (1964) in shaping the Civil Rights Movement. 8 (c) To what extent did the leadership of Malcolm X progress the Civil Rights Movement? Use Source G to support your response. 12 Source G The leader most closely linked to Malcolm in life and death was, of course, King . . . King was rarely identified as a representative of ghetto blacks. In the decades following his assassination, he became associated with images of largely rural and small-town South. Malcolm, conversely, was a product of the modern ghetto . . . by the 1960s the overwhelming majority of African Americans lived in large cities, the conditions that defined their existence were more closely linked to what Malcolm spoke about than what King represented. Consequently, he was able to establish a strong audience among urban blacks, who perceived passive resistance as an insufficient tool for dismantling institutional racism. M MARABLE Malcolm X: A Life of Reinvention, 2011 Reprinted by permission of Penguin Books Limited"
+  },
+  {
+   "id": "mh_2023_q22",
+   "year": 2023,
+   "number": "22",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world order 1989–2016",
+   "text": "— Option D: The Changing World Order 1945−2011 (25 marks)\n(a) Describe the influence of ONE non-state actor on post-Cold War global history. 5 (b) Explain the role of the Russian Federation in shaping post-Soviet societies to 2011. 8 (c) To what extent did US foreign policy successfully deal with the challenges it faced from 1991 to 2011? Use Source H to support your response. 12 Source H The peak period of American hegemony* lasted less than 20 years, from the fall of the Berlin Wall in 1989 to the financial crisis of 2007−2009. The country was dominant in many domains of power – military, economic, political and cultural . . . America overestimated the effectiveness of military power to bring about deep political change, even as it underestimated the impact of its free-market economic model on global finance. The decade ended with its troops bogged down in two counterinsurgency wars, and a financial crisis that accentuated the inequalities American-led globalisation had brought about. FRANCIS FUKUYAMA ‘Francis Fukuyama on the end of American hegemony’ The Economist, 2021 * hegemony leadership or dominance Courtesy of The Economist"
+  },
+  {
+   "id": "mh_2023_q23",
+   "year": 2023,
+   "number": "23",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Nuclear Age 1945–2021",
+   "text": "— Option E: The Nuclear Age 1945−2011 (25 marks)\n(a) Describe the contributions the nuclear age has made to both medicine and energy. 5 (b) Explain the reasons for Truman’s decision to use atomic weapons. 8 (c) Assess the social and political impacts of the nuclear weapons testing conducted by both Britain and France. Use Source I to support your response. 12 Source I It wasn’t long after that a black smoke come through. A strange black smoke, it was shiny and oily. A few hours later we all got crook, every one of us. We were all vomiting; we had diarrhoea, skin rashes and sore eyes. I had really sore eyes. They were so sore I couldn’t open them for two or three weeks. Some of the older people, they died. They were too weak to survive all the sickness. YAMI LESTER, a Yankunytjatjara elder from South Australia T RUFF and D HAWKINS ‘315 nuclear bombs and ongoing suffering: the shameful history of nuclear testing in Australia and the Pacific’ The Conversation, 2020 © The Conversation Media Group Ltd"
+  },
+  {
+   "id": "mh_2023_q24",
+   "year": 2023,
+   "number": "24",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994",
+   "text": "— Option F: Apartheid in South Africa 1960−1994 (25 marks)\n(a) Describe the role of Nelson Mandela as the leader of Umkhonto we Sizwe. 5 (b) Explain the changing nature of relations between South Africa and its neighbours. 8 (c) To what extent did the Black Consciousness Movement contribute to the end of Apartheid? Use Source J to support your response. 12 Source J End of paper Due to copyright restrictions, this material cannot be displayed until permission has been obtained. Due to copyright issues, the material cannot be displayed. Please refer to I Write What I Like by Steve Biko, Heinemann 1978, ISBN: 0435905988, p29. ‘The first step… Black Consiousness’."
+  },
+  {
+   "id": "mh_2024_q01",
+   "year": 2024,
+   "number": "1 (4 marks)",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "What was the role of women in Nazi society? In your answer, refer to relevant historical knowledge and Source A."
+  },
+  {
+   "id": "mh_2024_q02",
+   "year": 2024,
+   "number": "2 (6 marks)",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Contrast the value of Sources A and B for a historian studying the methods used by Nazis to spread their ideology."
+  },
+  {
+   "id": "mh_2024_q03",
+   "year": 2024,
+   "number": "3 (15 marks)",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "To what extent does Source C accurately reflect the impact of Hitler’s dictatorship on German society between 1933 and 1939?"
+  },
+  {
+   "id": "mh_2024_q04",
+   "year": 2024,
+   "number": "4",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia 1918–1949",
+   "text": "— Option A: Australia 1918−1949 (25 marks)\n(a) Evaluate the extent of exclusion experienced by Aboriginal and Torres Strait Islander Peoples in Australia during the 1920s. 25 OR (b) Evaluate why Australia’s foreign policy changed between 1918 and 1949. 25"
+  },
+  {
+   "id": "mh_2024_q05",
+   "year": 2024,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / China 1927–1949",
+   "text": "— Option B: China 1927−1949 (25 marks)\n(a) Evaluate the strategies used by China to resist the Japanese invasions from 1931. 25 OR (b) Evaluate why the Chinese Communist Party was victorious by 1949. 25"
+  },
+  {
+   "id": "mh_2024_q06",
+   "year": 2024,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / National studies",
+   "text": "— Option C: India 1942−1984 (25 marks)\n(a) Evaluate the impact of the Emergency (1975−1977) on India. 25 OR (b) Evaluate the success of India’s foreign policy in achieving its aims between 1947 and 1984. 25"
+  },
+  {
+   "id": "mh_2024_q07",
+   "year": 2024,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Indonesia 1945–2004",
+   "text": "— Option D: Indonesia 1945−2005 (25 marks)\n(a) Evaluate Suharto’s role in the 1965 coup. 25 OR (b) Evaluate why Indonesia’s relations with Australia changed between 1945 and 2005. 25"
+  },
+  {
+   "id": "mh_2024_q08",
+   "year": 2024,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Japan 1904–1937",
+   "text": "— Option E: Japan 1904−1937 (25 marks)\n(a) Evaluate the impact of the Great Depression on Japan in the 1930s. 25 OR (b) Evaluate the success of Japan’s foreign policy in achieving its aims to 1937. 25"
+  },
+  {
+   "id": "mh_2024_q09",
+   "year": 2024,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Russia and the Soviet Union 1917–1941",
+   "text": "— Option F: Russia and the Soviet Union 1917−1941 (25 marks)\n(a) Evaluate why a power struggle emerged following Lenin’s death. 25 OR (b) Evaluate the success of Soviet foreign policy in achieving its aims between 1928 and 1941. 25"
+  },
+  {
+   "id": "mh_2024_q10",
+   "year": 2024,
+   "number": "10",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / United States 1919–1941",
+   "text": "— Option G: USA 1919−1941 (25 marks)\n(a) Evaluate the impact of social tensions on US society between 1919 and 1941. 25 OR (b) Evaluate the impact of domestic pressure in shaping America’s foreign policy between 1919 and 1941. 25"
+  },
+  {
+   "id": "mh_2024_q11",
+   "year": 2024,
+   "number": "11",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Iran 1945–1989",
+   "text": "— Option H: Iran 1945−1989 (25 marks)\n(a) Evaluate the impact of the White Revolution and social reforms on Iran between 1953 and 1979. 25 OR (b) Evaluate why Western/US–Iranian relations changed between 1953 and 1989. 25"
+  },
+  {
+   "id": "mh_2024_q12",
+   "year": 2024,
+   "number": "12",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976",
+   "text": "— Option A: Conflict in Indochina 1954−1979 (25 marks)\n(a) Why was there conflict in Vietnam from 1954? 25 OR (b) Why did anti-war movements emerge in response to the war in Vietnam? 25"
+  },
+  {
+   "id": "mh_2024_q13",
+   "year": 2024,
+   "number": "13",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Pacific 1937–1951",
+   "text": "— Option B: Conflict in the Pacific 1937−1951 (25 marks)\n(a) Why were there tensions in the Pacific from 1937? 25 OR (b) Why did the United States use the A-Bomb? 25"
+  },
+  {
+   "id": "mh_2024_q14",
+   "year": 2024,
+   "number": "14",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Europe 1935–1945",
+   "text": "— Option C: Conflict in Europe 1935−1945 (25 marks)\n(a) Why did the conflict in Europe escalate from 1935? 25 OR (b) Why did Germany’s campaign in Russia fail? 25"
+  },
+  {
+   "id": "mh_2024_q15",
+   "year": 2024,
+   "number": "15",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Cold War 1945–1991",
+   "text": "— Option D: The Cold War 1945−1991 (25 marks)\n(a) Why did conflict emerge between the superpowers from 1945? 25 OR (b) Why was there a shift towards Détente during the Cold War? 25"
+  },
+  {
+   "id": "mh_2024_q16",
+   "year": 2024,
+   "number": "16",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Gulf 1980–2017",
+   "text": "— Option E: Conflict in the Gulf 1980−2011 (25 marks)\n(a) Why did tension emerge in the Gulf from 1980? 25 OR (b) Why did the United States decide to withdraw from the Gulf in 2011? 25"
+  },
+  {
+   "id": "mh_2024_q17",
+   "year": 2024,
+   "number": "17",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Arab–Israeli conflict 1948–2000",
+   "text": "— Option F: The Arab−Israeli Conflict 1948−1996 (25 marks)\n(a) Why did the Arab–Israeli conflict emerge from 1948? 25 OR (b) Why did Israel launch invasions in Lebanon in both 1978 and 1982? 25"
+  },
+  {
+   "id": "mh_2024_q18",
+   "year": 2024,
+   "number": "18",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The struggle for democracy in Burma 1948–2021",
+   "text": "— Option A: Pro-democracy Movement in Burma 1945−2010\n(25 marks) (a) Describe the nature of ethnic tensions in Burma between 1945 and 1988. 5 (b) Discuss the impact of the civil war on Burma between 1945 and 1988. Make reference to Source D in your response. 8 Source D: Military presence in civilian areas on the streets outside Rangoon in 1949. (c) How successful was the pro-democracy movement in Burma between 1945 and 2010? 12 Due to copyright restrictions, this material cannot be displayed until permission has been obtained."
+  },
+  {
+   "id": "mh_2024_q19",
+   "year": 2024,
+   "number": "19",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989",
+   "text": "— Option B: The Cultural Revolution to Tiananmen Square\n1966−1989 (25 marks) (a) Describe the reasons for Deng Xiaoping’s removal from politics during the Cultural Revolution. 5 (b) Discuss the impact of the Cultural Revolution on Chinese society between 1966 and 1976. Make reference to Source E in your response. 8 Source E: Red Guards reading Mao’s Little Red Book during the Cultural Revolution. (c) How successful were Deng Xiaoping’s reforms in China? 12 Hulton Archive/Getty Images"
+  },
+  {
+   "id": "mh_2024_q20",
+   "year": 2024,
+   "number": "20",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Civil rights in the United States 1945–1972",
+   "text": "— Option C: Civil Rights in the USA 1945−1968 (25 marks)\n(a) Describe the Ku Klux Klan’s opposition to the civil rights movement. 5 (b) Discuss the efforts of Martin Luther King Jr to achieve change for African Americans between 1955 and 1968. Make reference to Source F in your response. 8 Source F: Martin Luther King Jr and other leaders with linked arms at the March on Washington for Jobs and Freedoms, 28 August 1963. (c) How successful were methods employed by civil rights movements between 1945 and 1968 in achieving civil rights? 12 Jobs, jobs, jobs. Athena LeTrelle, CC BY-ND"
+  },
+  {
+   "id": "mh_2024_q21",
+   "year": 2024,
+   "number": "21",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world order 1989–2016",
+   "text": "— Option D: The Changing World Order 1945−2011 (25 marks)\n(a) Describe the social and cultural impacts of the dissolution of the USSR in Russia and Eastern Europe. (b) Discuss the emergence, growth and influence of the European Union between 1989 and 2011. Make reference to Source G in your response. Source G: Foreign and Finance Ministers of the 12 Member States of the European Communities Treaty of European Union in Maastricht Netherlands, 7 February 1992. (c) How successful was the United Nations in maintaining peace and security in the post-Cold War world between 1991 and 2011? 5 8 12 © European Communities, 1992 / Christian Lambiotte"
+  },
+  {
+   "id": "mh_2024_q22",
+   "year": 2024,
+   "number": "22",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Nuclear Age 1945–2021",
+   "text": "— Option E: The Nuclear Age 1945−2011 (25 marks)\n(a) Describe the development of the Manhattan Project. 5 (b) Discuss the nature of nuclear testing in the US and the Soviet Union between 1945 and 1989. Make reference to Source H in your response. 8 Galerie Bildorwelt – Hulton Archive via Getty Images Source H: First atmospheric nuclear test on the Nevada site, located less than an hour’s drive from Las Vegas, 27 January 1951. (c) How successful was nuclear disarmament between 1960 and 2011? 12"
+  },
+  {
+   "id": "mh_2024_q23",
+   "year": 2024,
+   "number": "23",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994",
+   "text": "— Option F: Apartheid in South Africa 1960−1994 (25 marks)\n(a) Describe the impact of apartheid on urban communities in South Africa. 5 (b) Discuss international responses to South African policies between 1960 and 1994. Make reference to Source I in your response. 8 Source I: March in London to protest British arms sales to South Africa, 17 March 1963. (c) How successful was resistance to apartheid within South Africa between 1960 and 1994? 12 End of paper AAM march and rally in central London 17 March 1963. Copyright © Henry Grant Collection/Museum of London"
+  },
+  {
+   "id": "mh_2025_q01",
+   "year": 2025,
+   "number": "1 (3 marks)",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Describe ONE form of opposition to the Nazi regime between 1933 and 1939."
+  },
+  {
+   "id": "mh_2025_q02",
+   "year": 2025,
+   "number": "2 (4 marks)",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Account for the perspective of the writer in Source A."
+  },
+  {
+   "id": "mh_2025_q03",
+   "year": 2025,
+   "number": "3 (6 marks)",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Assess the value and limitations of Source B for a historian studying Japan’s ambitions in the Asia−Pacific."
+  },
+  {
+   "id": "mh_2025_q04",
+   "year": 2025,
+   "number": "4 (12 marks)",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Core study: Democracy and dictatorship 1919–1939",
+   "text": "Evaluate the effect of the Nazi regime on cultural expression in Germany. Integrate evidence from Sources C and D to support your answer.\n– 5 – 2070310036"
+  },
+  {
+   "id": "mh_2025_q05",
+   "year": 2025,
+   "number": "5",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Australia 1918–1949",
+   "text": "— Option A: Australia 1918−1949 (25 marks)\n(a) The role of women in Australian society had fundamentally changed by 1949. Evaluate the accuracy of this statement. 25 OR (b) To what extent did John Curtin’s social welfare provisions change Australian society? 25"
+  },
+  {
+   "id": "mh_2025_q06",
+   "year": 2025,
+   "number": "6",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / China 1927–1949",
+   "text": "— Option B: China 1927−1949 (25 marks)\n(a) The most significant obstacle to political stability and national unification was the leadership of Chiang Kai-Shek. Evaluate the accuracy of this statement. 25 OR (b) To what extent was the Long March the main factor in the rise of Maoism? 25 2141X – 9 –"
+  },
+  {
+   "id": "mh_2025_q07",
+   "year": 2025,
+   "number": "7",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / National studies",
+   "text": "— Option C: India 1942−1984 (25 marks)\n(a) Nehru’s vision for India was achieved in the period between 1947 and 1964. Evaluate the accuracy of this statement. 25 OR (b) To what extent did Indira Gandhi’s leadership contribute to social tensions in the Indian state up to 1984? 25"
+  },
+  {
+   "id": "mh_2025_q08",
+   "year": 2025,
+   "number": "8",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Indonesia 1945–2004",
+   "text": "— Option D: Indonesia 1945−2005 (25 marks)\n(a) The most significant challenges facing Indonesia in the post-Suharto era were economic. Evaluate the accuracy of this statement. 25 OR (b) To what extent did the New Order effectively shape democracy in Indonesia? 25"
+  },
+  {
+   "id": "mh_2025_q09",
+   "year": 2025,
+   "number": "9",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Japan 1904–1937",
+   "text": "— Option E: Japan 1904−1937 (25 marks)\n(a) The rise of militarism was the main reason why democracy in Japan had failed by the early 1930s. Evaluate the accuracy of this statement. 25 OR (b) To what extent was traditional power challenged by the zaibatsu during the 1920s? 25 – 10 –"
+  },
+  {
+   "id": "mh_2025_q10",
+   "year": 2025,
+   "number": "10",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Russia and the Soviet Union 1917–1941",
+   "text": "— Option F: Russia and the Soviet Union 1917−1941 (25 marks)\n(a) Bolshevik ideology was successfully implemented through the economic policies of the Soviet Union between 1917 and 1941. Evaluate the accuracy of this statement. 25 OR (b) How significant was the growth of the Communist Party to Stalin’s political transformation of the Soviet State? 25"
+  },
+  {
+   "id": "mh_2025_q11",
+   "year": 2025,
+   "number": "11",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / United States 1919–1941",
+   "text": "— Option G: USA 1919−1941 (25 marks)\n(a) The most significant force affecting US society between 1919 and 1941 was growing industrialisation. Evaluate the accuracy of this statement. 25 OR (b) How successful was the Hoover Presidency in addressing the impact of t Depression on society? he 25"
+  },
+  {
+   "id": "mh_2025_q12",
+   "year": 2025,
+   "number": "12",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Iran 1945–1989",
+   "text": "— Option H: Iran 1945−1989 (25 marks)\n(a) Political developments in Iran between 1953 and 1989 were primarily shaped by the tensions of the Cold War. Evaluate the accuracy of this statement. 25 OR (b) Assess the impact of the reforms of the Islamic Republic on Iranian society and culture up to 1989. 25 – 11 –"
+  },
+  {
+   "id": "mh_2025_q13",
+   "year": 2025,
+   "number": "13",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Vietnam, Cambodia and Laos 1954–1976",
+   "text": "— Option A: Conflict in Indochina 1954−1979 (25 marks)\n(a) To what extent did the strategies and tactics employed by the USA contribute to the spread of the Second Indochina War to Cambodia and Laos? 25 OR (b) Assess the impact of the Second Indochina War on civilians in both North and South Vietnam. 25"
+  },
+  {
+   "id": "mh_2025_q14",
+   "year": 2025,
+   "number": "14",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Pacific 1937–1951",
+   "text": "— Option B: Conflict in the Pacific 1937−1951 (25 marks)\n(a) To what extent did the Japanese advance between 1941 and 1942 affect the course of the war in the Pacific? 25 OR (b) Assess the effects of Japanese occupation on the life of civilians in South-East Asia. 25"
+  },
+  {
+   "id": "mh_2025_q15",
+   "year": 2025,
+   "number": "15",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in Europe 1935–1945",
+   "text": "— Option C: Conflict in Europe 1935−1945 (25 marks)\n(a) Assess the impact of the fall of Poland, the Low Countries and France on the course of the European War. 25 OR (b) To what extent was ‘D’ Day and the liberation of France a turning point in the conflict in Europe? – 12 – 25"
+  },
+  {
+   "id": "mh_2025_q16",
+   "year": 2025,
+   "number": "16",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Cold War 1945–1991",
+   "text": "— Option D: The Cold War 1945−1991 (25 marks)\n(a) To what extent did both the arms race and the space race contribute to superpower rivalry up to 1968? 25 OR (b) To what extent did policies under Gorbachev contribute to the end of the Cold War? 25"
+  },
+  {
+   "id": "mh_2025_q17",
+   "year": 2025,
+   "number": "17",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Conflict in the Gulf 1980–2017",
+   "text": "— Option E: Conflict in the Gulf 1980−2011 (25 marks)\n(a) To what extent were the 1991 uprisings in Iraq a significant consequence of the defeat of Saddam Hussein? 25 OR (b) Assess the impact of the Iraq War on both civilians and cultural sites up to 2011. 25"
+  },
+  {
+   "id": "mh_2025_q18",
+   "year": 2025,
+   "number": "18",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Arab–Israeli conflict 1948–2000",
+   "text": "— Option F: The Arab−Israeli Conflict 1948−1996 (25 marks)\n(a) To what extent did the superpowers influence the development of the conflict in the Middle East between 1948 and 1973? 25 OR (b) To what extent did the period of the Intifada affect the peace process between 1987 and 1994? 25 – 13 –"
+  },
+  {
+   "id": "mh_2025_q19",
+   "year": 2025,
+   "number": "19",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The struggle for democracy in Burma 1948–2021",
+   "text": "— Option A: Pro-democracy Movement in Burma 1945−2010\n(25 marks) (a) Describe the challenges for the new democratic government between 1948 and 1958. 5 (b) Explain the role of religion in the pro-democracy movement between 1990 and 2010. 8 (c) To what extent was the election of Aung San Suu Kyi in 1990 a result of the uprising of 1988? In your answer, make reference to Source E. 12 Source E We, the people of Burma, have had to live without human dignity for 26 years under oppressive rule . . . Only ‘people power’ can bring down the repressive rulers. Student leader MIN KO NAING in a statement broadcast by the BBC during the 1988 uprising – 14 – Courtesy of Aung Zaw / The Irrawady"
+  },
+  {
+   "id": "mh_2025_q20",
+   "year": 2025,
+   "number": "20",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / From the Cultural Revolution to Tiananmen Square 1966–1989",
+   "text": "— Option B: The Cultural Revolution to Tiananmen Square\n1966−1989 (25 marks) (a) Describe the role of the Gang of Four in the Cultural Revolution. 5 (b) Explain the immediate consequences of the death of Mao Zedong on the leadership of the Chinese Communist Party (CCP). 8 (c) Assess the impact of the events of Tiananmen Square in 1989 on China and its standing in the world. In your answer, make reference to Source F. 12 Source F And we meet here reflecting on the very future of China, which in recent years had built up so much goodwill in the international community of nations, which had already come to play such a welcome and constructive role in our region, and which promised to do so much more. Australian Prime Minister ROBERT HAWKE Memorial ceremony for those killed in China, Canberra, 9 June 1989 – 15 – Licensed from the Commonwealth of Australia under a Creative Commons Attribution 4.0 International License"
+  },
+  {
+   "id": "mh_2025_q21",
+   "year": 2025,
+   "number": "21",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / Civil rights in the United States 1945–1972",
+   "text": "— Option C: Civil Rights in the USA 1945−1968 (25 marks)\n(a) Describe the role of ONE civil rights group in the desegregation of Little Rock High School. 5 (b) Explain how both direct action and political agitation were used in the struggle for civil rights between 1945 and 1968. 8 (c) Evaluate the significance of legislative change to the Civil Rights Movement. In your answer, make reference to Source G. 12 Source G – 16 – Due to copyright restrictions, this material cannot be displayed. Please refer to the link below for the relevant extract/quote: https://www.blackhistorymonth.org.uk/article/section/civil-rights-movement/malcolm-x-oxford-university-union-debate- in1964/?#:~:text=They%20came%20up%20with%20a,ve%20done%20nothing%20about%20it Malcolm X. Oxford University Union Debate in 1964 – Black History Month 2026 The quote appears in Question 1, Paragraph 4, line 3-5, beginning with ‘They came up … and ends with … in cold blood’"
+  },
+  {
+   "id": "mh_2025_q22",
+   "year": 2025,
+   "number": "22",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The changing world order 1989–2016",
+   "text": "— Option D: The Changing World Order 1945−2011 (25 marks)\n(a) Describe the resurgence of modern nationalisms between 1989 and 2011. 5 (b) Account for opposition to US foreign policy in the Middle East between 1991 and 2011. 8 (c) Evaluate the role and influence of the United Nations in the post-Cold War world between 1991 and 2011. In your answer, make reference to Source H. 12 Source H All the world now faces a test, and the United Nations a difficult and defining moment . . . Will the United Nations serve the purpose of its founding, or will it be irrelevant? US President GEORGE W BUSH address to the United Nations General Assembly, 12 September 2002 – 17 – Courtesy of BBC Studios Learning – London"
+  },
+  {
+   "id": "mh_2025_q23",
+   "year": 2025,
+   "number": "23",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Nuclear Age 1945–2021",
+   "text": "— Option E: The Nuclear Age 1945−2011 (25 marks)\n(a) Describe the response of Greenpeace to French nuclear tests in the Pacific. 5 (b) Explain how issues of proliferation posed challenges to nuclear disarmament. 8 (c) To what extent did the benefits of nuclear energy outweigh the risks between 1945 and 2011? In your answer, make reference to Source I. 12 Source I – 18 – The first responders [to the Chernobyl incident], including firefighters and nuclear workers who tried to put out the multiple fires and prevent the explosion of other reactors at the nuclear power plant, were exposed to large doses of gamma radiation. NICOLETTA LANESE The Real Chernobyl: Q&A With a Radiation Exposure Expert University of California, San Francisco, 2019 Used with permission by the University of California, San Francisco"
+  },
+  {
+   "id": "mh_2025_q24",
+   "year": 2025,
+   "number": "24",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Year 12 / The Anti-Apartheid Movement in South Africa 1948–1994",
+   "text": "— Option F: Apartheid in South Africa 1960−1994 (25 marks)\n(a) Describe the role of South African security forces in carrying out government repression. 5 (b) Explain the importance of the imprisonment of Nelson Mandela in the national resistance to apartheid. 8 (c) To what extent were both economic and social factors important to the collapse of apartheid in South Africa? In your answer, make reference to Source J. 12 Source J The season of violence is over. The time for reconstruction and reconciliation has arrived. South African President F W DE KLERK speech at the opening of Parliament, 2 February 1990 End of paper – 19 – © FW de KLERK Foundation"
+  }
+ ]
+}

@@ -1,0 +1,5350 @@
+{
+  "export_schema_version": 1,
+  "course_id": "course_engineering_studies",
+  "course_name": "Engineering Studies",
+  "questions": [
+    {
+      "question_id": "YJ1SE6",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 1,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": "Stored key C kept. Option D is arguable: WHS compliance is a genuine legal duty of every person at a workplace, but the Work Health and Safety Act shares that duty between employers, officers and workers, so it is not the engineer's primary professional responsibility by itself. Worth checking against the published key if one is ever located.",
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_4578c8e971f3"
+      ],
+      "tags": [
+        "Engineering Profession",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_587db4f6ec1a",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Which of the following describes the primary responsibility of an engineer?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-YJ1SE6-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "To read the latest engineering research"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-YJ1SE6-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "To explain engineering decisions to local media"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-YJ1SE6-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "To manage successful delivery of engineering projects"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-YJ1SE6-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "To ensure workplace compliance with work health and safety (WHS) requirements"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_7ad5bcb03c0e",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Separate what an engineer does as part of the professional job from what other people, or the law, place on everybody who works in a workplace."
+          }
+        },
+        {
+          "block_id": "blk_a78e08775eec",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Rule out any option that describes only an occasional part of the job, and any option that describes a duty which is shared across a whole workplace rather than belonging to the profession alone."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_94d6be32b7db",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "C"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_9a385098165d",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "An engineer's primary professional responsibility is to be accountable for the successful delivery of engineering projects, which is what the key selects."
+          }
+        },
+        {
+          "block_id": "blk_bfc5967d490d",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Keeping abreast of research and speaking to the media are occasional parts of the job rather than its primary function, and workplace compliance with work health and safety requirements is a duty of care shared by employers, officers and workers under the Work Health and Safety Act, so it is not the engineer's primary responsibility alone."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_d9988579b922",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "CZ68E5",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_4380c45b404b"
+      ],
+      "tags": [
+        "Electricity and Electronics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_1130df115b0d",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Which of the following is the circuit symbol for a diode?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-CZ68E5-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_e4997b1f6781",
+                "alt_text": "Option A: a rectangle inserted in a single horizontal conductor line.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-CZ68E5-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_7fb7246c0cc5",
+                "alt_text": "Option B: a hollow rectangular box beside a thick vertical bar marked with a plus sign.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-CZ68E5-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_0be9b442f689",
+                "alt_text": "Option C: a thick filled vertical bar beside a thin vertical line, with a plus sign above.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-CZ68E5-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_3e38c442e6a4",
+                "alt_text": "Option D: an open triangle pointing to a thick vertical bar.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": true
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_b612c6a7c17e",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The symbol has to show that the device conducts in one direction only, from the anode to the cathode."
+          }
+        },
+        {
+          "block_id": "blk_2c3c8e7a1d6d",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "That one-way behaviour is drawn as a triangle pointing at a heavy line that marks the cathode, so discard anything drawn as a box, a pair of plates or a cell."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_41c8744f52a3",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "D"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_909cf9c497f3",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A junction diode is drawn as a triangle pointing at a heavy vertical bar: the conductor on the triangle side is the anode and the bar is the cathode, so conventional current flows from the triangle towards the bar. That is the symbol in the last drawing, which the key selects."
+          }
+        },
+        {
+          "block_id": "blk_266f1a4252de",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "A rectangle in a single line is a resistor or a fuse, a hollow box beside a heavy bar marked with a plus sign is a polarised capacitor, and a solid bar beside a thin line marked with a plus sign is a cell, so none of those is a diode."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_6885f11783a7",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_e4997b1f6781",
+          "file_path": "asset_e4997b1f6781",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Option A: a rectangle inserted in a single horizontal conductor line.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_7fb7246c0cc5",
+          "file_path": "asset_7fb7246c0cc5",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Option B: a hollow rectangular box beside a thick vertical bar marked with a plus sign.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_0be9b442f689",
+          "file_path": "asset_0be9b442f689",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Option C: a thick filled vertical bar beside a thin vertical line, with a plus sign above.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_3e38c442e6a4",
+          "file_path": "asset_3e38c442e6a4",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Option D: an open triangle pointing to a thick vertical bar.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "9ZW171",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_0faaaeb37bca"
+      ],
+      "tags": [
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_c713a89aa697",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A mass $M$ sits on a plane inclined at $\\theta$ to the horizontal."
+          }
+        },
+        {
+          "block_id": "blk_b63304a945ab",
+          "slot": "body",
+          "position": 1,
+          "block_type": "diagram",
+          "content": {
+            "asset_path": "asset_94d27261027a",
+            "alt_text": "Block labelled M resting on an inclined plane, with the normal reaction N acting perpendicular to the plane and the angle theta marked at the base.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_b0b40ae89c0c",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "What expression is used to calculate the normal reaction $N$?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-9ZW171-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$Mg$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-9ZW171-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$Mg\\cos\\theta$"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-9ZW171-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$Mg\\sin\\theta$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-9ZW171-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$Mg\\tan\\theta$"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_cf5df1456eab",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Resolve the weight into components parallel and perpendicular to the plane, then write $\\Sigma F = 0$ perpendicular to the surface."
+          }
+        },
+        {
+          "block_id": "blk_c6dfe503fa51",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "With nothing else acting on the block, the only forces are the weight and the normal reaction, so the reaction must equal the component of the weight pressing into the plane."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_d30b43d4edc4",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "B"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_922814779b9b",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Perpendicular to the plane the only forces acting are the normal reaction $N$ and the component of the weight pressing into the surface, so they must balance."
+          }
+        },
+        {
+          "block_id": "blk_1095b22ad298",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "equation",
+          "content": {
+            "latex": "N = Mg\\cos\\theta",
+            "display": true
+          }
+        },
+        {
+          "block_id": "blk_2213a5c260f5",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "The component $Mg\\sin\\theta$ acts along the plane, where it is balanced by friction or an applied force, and $Mg$ is the full weight rather than a component of it. Only $Mg\\cos\\theta$ is perpendicular to the plane, which is what the key selects."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_67c4630f310a",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_94d27261027a",
+          "file_path": "asset_94d27261027a",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Block labelled M resting on an inclined plane, with the normal reaction N acting perpendicular to the plane and the angle theta marked at the base.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "N5K2SI",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "low",
+      "node_ids": [
+        "node_d989064c9e02"
+      ],
+      "tags": [
+        "Engineering Materials",
+        "HSC",
+        "NSW Stage 6",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_07a2d30b9c1e",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Specifications for a $\\varnothing 10$ steel bar require it to have a tolerance of $\\pm 0.05\\,\\mathrm{mm}$."
+          }
+        },
+        {
+          "block_id": "blk_c93061efba10",
+          "slot": "body",
+          "position": 1,
+          "block_type": "diagram",
+          "content": {
+            "asset_path": "asset_33fecfc76618",
+            "alt_text": "Cylindrical steel bar with a dashed centreline, dimensioned diameter 10 plus or minus 0.05.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_cb6008c18840",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "What is the permitted range of diameters for this bar?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-N5K2SI-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$9.90\\text{–}10.00\\,\\mathrm{mm}$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-N5K2SI-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$9.95\\text{–}10.00\\,\\mathrm{mm}$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-N5K2SI-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$9.95\\text{–}10.05\\,\\mathrm{mm}$"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-N5K2SI-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$10.00\\text{–}10.05\\,\\mathrm{mm}$"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_fa12c6f7da9f",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A tolerance is applied in both directions, so turn the nominal diameter into a maximum size and a minimum size before comparing with the ranges offered."
+          }
+        },
+        {
+          "block_id": "blk_d18eca77b74c",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Check every option against both limits, not just one of them; a range that only moves one limit describes a different tolerance."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_3b8918a91c0b",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "C"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_b620e46c7ae8",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The nominal diameter is $10\\,\\mathrm{mm}$ and the tolerance is $\\pm 0.05\\,\\mathrm{mm}$, so the largest permitted diameter and the smallest permitted diameter are:"
+          }
+        },
+        {
+          "block_id": "blk_a649ea95c399",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "equation",
+          "content": {
+            "latex": "d_{\\max} = 10 + 0.05 = 10.05\\,\\mathrm{mm}",
+            "display": true
+          }
+        },
+        {
+          "block_id": "blk_2667519563b2",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "equation",
+          "content": {
+            "latex": "d_{\\min} = 10 - 0.05 = 9.95\\,\\mathrm{mm}",
+            "display": true
+          }
+        },
+        {
+          "block_id": "blk_d50b5139c0a2",
+          "slot": "solution",
+          "position": 3,
+          "block_type": "text",
+          "content": {
+            "text": "The permitted range is therefore $9.95$ to $10.05\\,\\mathrm{mm}$, which is the third option selected by the key. The other options each shift only one limit, which would describe a one-sided tolerance rather than a bilateral one."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_79d9fda3b718",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_33fecfc76618",
+          "file_path": "asset_33fecfc76618",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Cylindrical steel bar with a dashed centreline, dimensioned diameter 10 plus or minus 0.05.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "S32BTT",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": "Photomicrograph missing from the source paper, which prints 'This material cannot be displayed, due to copyright issues' in place of the figure, so the key was inferred from the option set and the normal condition of brass rather than read from the image. The action_required tag is already present and must stay; the second text block in the body is still a placeholder that should be replaced by the image.\nRe-verified, no content change. answer C, solution and the single 1-mark criterion are consistent and correct: rolled/extruded brass is used recrystallised, so its grains are equiaxed, while dendritic is the as-cast morphology and deformed/stressed describe a mechanical condition rather than a grain shape. Key C is also the official NESA answer for 2017 HSC Engineering Studies Q5 per both the import note and the previous pass (I could not reach the 2017 marking-guideline PDF — every hsc2017exams path on boardofstudies.nsw.edu.au returns 404 — so the guideline claim is carried forward, not independently re-confirmed). UNFIXABLE: the second body block is still the placeholder '[Figure unavailable: the published paper states \"This material cannot be displayed, due to copyright issues.\" ...]'. Replacing it needs the photomicrograph and a body rewrite, and 'body' is not in this path's todo. action_required retained.",
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_8fdacab1b961"
+      ],
+      "tags": [
+        "Engineering Materials",
+        "HSC",
+        "NSW Stage 6",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_a28bc73be9d2",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The image shows the microstructure of brass."
+          }
+        },
+        {
+          "block_id": "blk_b161f99d39a8",
+          "slot": "body",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "[Figure unavailable: the published paper states \"This material cannot be displayed, due to copyright issues.\" A photomicrograph of the polished and etched brass surface must be attached manually before this question can be answered.]"
+          }
+        },
+        {
+          "block_id": "blk_b0ed3cf5f3e7",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "The grain structure of the brass shown is best described as"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-S32BTT-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Deformed"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-S32BTT-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Dendritic"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-S32BTT-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Equiaxed"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-S32BTT-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Stressed"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_d323e1aacce9",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Look at the shape of the individual grains: are they elongated and irregular, or roughly equal in every direction?"
+          }
+        },
+        {
+          "block_id": "blk_a53cbfcc6602",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Two of the options describe a mechanical condition left by working the metal rather than a grain shape at all; the remaining options describe two genuine grain morphologies, one produced by casting and one by recrystallisation."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_b6b878841296",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "C"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_3fc87eea9601",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Brass is normally supplied as rolled sheet, strip or extruded bar and is used in a recrystallised condition, so a polished and etched surface shows grains of roughly equal dimension in all directions, which is what equiaxed means. That is the option the key selects."
+          }
+        },
+        {
+          "block_id": "blk_c7170ed4b291",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "A dendritic structure is the branched pattern produced by solidification during casting, and deformed or stressed describe a mechanical condition left by cold working rather than a grain shape, so neither can describe the grain morphology shown."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_f40569de851e",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: identifies the grain structure as equiaxed (option C)"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "DQF9BM",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "medium",
+      "node_ids": [
+        "node_eccb7e8c5a63"
+      ],
+      "tags": [
+        "Aeronautical Engineering",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_9152eff301c3",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The diagram shows an aerofoil."
+          }
+        },
+        {
+          "block_id": "blk_0e160db2f10c",
+          "slot": "body",
+          "position": 1,
+          "block_type": "diagram",
+          "content": {
+            "asset_path": "asset_4ea73967a89c",
+            "alt_text": "Aerofoil section with lift arrow upward, airflow arrows approaching from the right, Pressure 1 labelled above the upper surface and Pressure 2 below the lower surface.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_87408589aa8b",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Which condition needs to be achieved for lift to occur?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-DQF9BM-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Pressure $1 <$ Pressure $2$"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-DQF9BM-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Pressure $1 =$ Pressure $2$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-DQF9BM-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Pressure $1 >$ Pressure $2$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-DQF9BM-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Pressure $1 +$ Pressure $2 = 0$"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_8fc29c561c5d",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Lift is the pressure difference integrated over the whole surface, so compare the pressure on the upper surface with the pressure on the lower surface."
+          }
+        },
+        {
+          "block_id": "blk_61338bfc7be1",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "For the lift arrow to point upward, the pressure on the lower surface must exceed the pressure on the upper surface; state the comparison in the order the two pressures are labelled in the figure."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_e4798322c99b",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_820396418675",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Lift is produced by the pressure on the lower surface of the aerofoil being greater than the pressure on the upper surface. In the figure Pressure 1 is on the upper surface and Pressure 2 is on the lower surface, so upward lift requires Pressure 2 to be greater than Pressure 1, that is, Pressure 1 less than Pressure 2. That is the option the key selects."
+          }
+        },
+        {
+          "block_id": "blk_0bed6a9399b6",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Equal pressures give zero net lift, and the sum of the two pressures is physically meaningless, so the remaining options cannot be correct."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_691d48a34e74",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_4ea73967a89c",
+          "file_path": "asset_4ea73967a89c",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Aerofoil section with lift arrow upward, airflow arrows approaching from the right, Pressure 1 labelled above the upper surface and Pressure 2 below the lower surface.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "IRA92L",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_c420770f1426"
+      ],
+      "tags": [
+        "HSC",
+        "NSW Stage 6",
+        "Telecommunications Engineering"
+      ],
+      "body": [
+        {
+          "block_id": "blk_1a04e5f1b555",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Wireless networks operate in two distinct frequency bands: $2.4\\,\\mathrm{GHz}$ and $5\\,\\mathrm{GHz}$. Which of the following statements is correct?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-IRA92L-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$5\\,\\mathrm{GHz}$ waves experience lower attenuation and have a lower bandwidth"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-IRA92L-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$5\\,\\mathrm{GHz}$ waves experience higher attenuation and have a higher bandwidth"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-IRA92L-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$2.4\\,\\mathrm{GHz}$ waves experience lower attenuation and have a higher bandwidth"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-IRA92L-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$2.4\\,\\mathrm{GHz}$ waves experience higher attenuation and have a lower bandwidth"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_d37ddcc9830b",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Two separate effects are at work here: how well the signal propagates, and how much information the band can carry."
+          }
+        },
+        {
+          "block_id": "blk_d29b3b1b7de5",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Compare the free space path loss at the two frequencies first, since loss increases with frequency, then look for the option that pairs the higher loss with the wider available bandwidth."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_1a5c24275929",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "B"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_cd7a1441e2ac",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Free space path loss increases with frequency, so a $5\\,\\mathrm{GHz}$ signal suffers more attenuation than a $2.4\\,\\mathrm{GHz}$ signal: shorter range and poorer penetration through walls and floors."
+          }
+        },
+        {
+          "block_id": "blk_c7699c271df3",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The $5\\,\\mathrm{GHz}$ band is also much wider than the $2.4\\,\\mathrm{GHz}$ band, so many more channels fit into the same spectrum, which is why it carries more data. Higher attenuation together with higher bandwidth is the second option, which is what the key selects. The first option reverses both effects, and the other two attach the two effects to the wrong band."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_d8f2b6de0442",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "LDL6F6",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "medium",
+      "node_ids": [
+        "node_ce35be510da4"
+      ],
+      "tags": [
+        "Engineering Materials",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_d06f6e64bdf9",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Which row of the table correctly identifies how the properties of a cold worked metal are changed after annealing?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-LDL6F6-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Option: A; Hardness: Reduction; Ductility: Decrease; Internal residual stress: Increase"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-LDL6F6-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Option: B; Hardness: Reduction; Ductility: Increase; Internal residual stress: Decrease"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-LDL6F6-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Option: C; Hardness: Increase; Ductility: Decrease; Internal residual stress: Increase"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-LDL6F6-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Option: D; Hardness: Increase; Ductility: Increase; Internal residual stress: Decrease"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_6e022a6ad18a",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Annealing is a recovery and recrystallisation process, so consider what happens to each property as the stored strain energy is released."
+          }
+        },
+        {
+          "block_id": "blk_6b2fc922b19f",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Cold working raises hardness and leaves tensile residual stress while reducing ductility, so annealing has to undo the first two and restore the third."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_b3a54531401f",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "B"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_da4dc0d5541e",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Cold working multiplies the dislocation density, so the metal becomes harder and less ductile and carries tensile residual stress. Annealing recovers and recrystallises the deformed grains, which reduces the hardness, increases the ductility and relieves the residual stress."
+          }
+        },
+        {
+          "block_id": "blk_a2481041423b",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Only the row showing a reduction in hardness, an increase in ductility and a decrease in internal residual stress is correct, and that is the row the key selects. Rows A and C move one of the properties the wrong way, and row D has the effects of annealing and cold working reversed."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_a5a05fa938a1",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "FC1UQE",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_4380c45b404b"
+      ],
+      "tags": [
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_f688c88652ba",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Which free-body diagram shows a beam subjected to a uniformly distributed load?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-FC1UQE-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_37a35a5147fa",
+                "alt_text": "Free-body diagram A: simply supported beam with an even row of equal semicircular load symbols spread across the top chord and reactions R_L and R_R.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-FC1UQE-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_c4208be289cd",
+                "alt_text": "Free-body diagram B: simply supported beam with only two separate downward point loads.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-FC1UQE-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_641944457d5b",
+                "alt_text": "Free-body diagram C: simply supported beam with a stepped series of load arrows of decreasing height over part of the span.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-FC1UQE-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_eec57a973fd8",
+                "alt_text": "Free-body diagram D: simply supported beam with a downward point load left of centre and an upward point load right of centre.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_ec65036699aa",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A uniformly distributed load is drawn as a continuous row of equal, equally spaced load symbols covering the whole span."
+          }
+        },
+        {
+          "block_id": "blk_2a327d59f335",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Concentrated loads, stepped loads and upward loads are different load cases, so examine the arrows on each diagram rather than the outline of the beam, which is the same in all four."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_e2ac8b2a1ccd",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_65719673009a",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A uniformly distributed load is represented by a continuous series of equal, equally spaced load symbols extending over the entire span, which is what the first diagram shows and what the key selects."
+          }
+        },
+        {
+          "block_id": "blk_19d6c8803189",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The second diagram shows two separate point loads, the third shows a load whose intensity steps down along part of the span, and the fourth mixes a downward point load with an upward one. None of those is a uniformly distributed load."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_6ee528941705",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_37a35a5147fa",
+          "file_path": "asset_37a35a5147fa",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Free-body diagram A: simply supported beam with an even row of equal semicircular load symbols spread across the top chord and reactions R_L and R_R.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_c4208be289cd",
+          "file_path": "asset_c4208be289cd",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Free-body diagram B: simply supported beam with only two separate downward point loads.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_641944457d5b",
+          "file_path": "asset_641944457d5b",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Free-body diagram C: simply supported beam with a stepped series of load arrows of decreasing height over part of the span.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_eec57a973fd8",
+          "file_path": "asset_eec57a973fd8",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Free-body diagram D: simply supported beam with a downward point load left of centre and an upward point load right of centre.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "S41B45",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 1,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_2cf08b590372"
+      ],
+      "tags": [
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_2ba434d9807f",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Which of the following statements describes Hooke's Law?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-S41B45-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Pressure acting on an object varies proportionally with depth."
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-S41B45-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Pressure acting on an object in a confined fluid is uniform in all directions."
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-S41B45-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Force induced in an object by stretching it is initially proportional to its extension."
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-S41B45-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Force acting on an object is equal to the stress divided by the cross-sectional area."
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_d43a242e4bb5",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Hooke's law is a statement about proportionality inside the elastic region, so look for the option that says one quantity varies directly with another."
+          }
+        },
+        {
+          "block_id": "blk_14554f1bae3e",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The other options describe pressure in a fluid and the definition of stress, both of which are true statements but neither of which is Hooke's law."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_5131656f22d3",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "C"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_4ae8f4b00385",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Within the elastic limit stress is proportional to strain, $\\sigma = E\\varepsilon$, and for a uniform bar this means the force needed to stretch it is directly proportional to the extension. That is the option the key selects."
+          }
+        },
+        {
+          "block_id": "blk_420840da37e3",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Pressure increasing with depth is the hydrostatic pressure rule, pressure being uniform in a confined fluid is Pascal's principle, and force being stress multiplied by area reverses the definition of stress, so those three are not Hooke's law."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_1f1cb0645508",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "2SGLN3",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_a412abb75a32"
+      ],
+      "tags": [
+        "Aeronautical Engineering",
+        "Engineering Materials",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_19b0f93d093c",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The properties of some aluminium-magnesium-silicon alloys can be altered using the following procedure."
+          }
+        },
+        {
+          "block_id": "blk_89ddcf1eebb8",
+          "slot": "body",
+          "position": 1,
+          "block_type": "diagram",
+          "content": {
+            "asset_path": "asset_6b6b2204e419",
+            "alt_text": "Flow diagram: Solution treating, then an arrow to Quenching, then an arrow to Reheating.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_d5b026030337",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "What type of hardening process is this?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-2SGLN3-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Case hardening"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-2SGLN3-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Flame hardening"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-2SGLN3-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Induction hardening"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-2SGLN3-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Precipitation hardening"
+              }
+            }
+          ],
+          "is_correct": true
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_1c3b985aaf2d",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The flow chart sets out three steps: heat to dissolve the alloying elements, quench to trap them in solution, then reheat to allow them to come out of solution."
+          }
+        },
+        {
+          "block_id": "blk_4c120187cbb9",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The hardening therefore comes from fine particles forming inside the matrix, so name the process after those particles rather than after the heating method."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_623ed3d602b0",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "D"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_d2121eced40b",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Solution treating dissolves the alloying elements to form a solid solution, quenching traps them in a supersaturated solid solution, and reheating for ageing allows fine particles to precipitate throughout the matrix. Those particles block dislocation movement, which raises the strength and hardness of the alloy."
+          }
+        },
+        {
+          "block_id": "blk_88d68f75d902",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "That is precipitation hardening, the option selected by the key. Case, flame and induction hardening all heat the surface of a component directly and none of them uses a solution treat, quench and age sequence."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_5f2e68efe4bb",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_6b6b2204e419",
+          "file_path": "asset_6b6b2204e419",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Flow diagram: Solution treating, then an arrow to Quenching, then an arrow to Reheating.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "65XPDJ",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 4,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": "Stored key D is wrong. 8 mm is 0.8d, the nut thickness rule, not a bolt head dimension. AS 1100.101 proportions give a head 1.6d = 16 mm across the flats and 0.7d = 7 mm high, so the key is C. Minor source defect retained: the exact tabulated head height for an M10 bolt is 6.4 mm (0.64d, ISO 4014/4017), so neither printed height is exact and 7 mm is the AS 1100 course value; the two option images are otherwise geometrically identical, so the numbers are the only discriminator.\nSecond pass 2026-10-01: KEY REVERSED C -> A. The official source is decisive: NESA/BOSTES 2017 HSC Engineering Studies Marking Guidelines, Section I Multiple-choice Answer Key, Q12 = A (1 C, 2 D, 3 B, 4 C, 5 C, 6 A, 7 B, 8 B, 9 A, 10 C, 11 D, 12 A, 13 D, 14 B, 15 B, 16 B, 17 D, 18 C, 19 A, 20 D); Q11 = D and Q13 = D in the same key match items already in this bank, so the column alignment of the key table is sound. The four option images were measured pixel by pixel: q12a/b/c/d_bolt_head.png are the same drawing (head outline 312 px wide x 120 px high, shank 171 px) and differ only in the numbers, A = 18 x 7, B = 18 x 8, C = 16 x 7, D = 16 x 8. The previous pass changed this key from D to C on the reasoning that AS 1100 dimensions a head 1.6d = 16 mm across the flats and 0.7d = 7 mm high; that reasoning conflicts with the published key. Resolution: 16 mm (1.6d) is the width ACROSS FLATS, while the conventional single elevation of a hexagon head is drawn across its corners, where the M10 dimension is 1.8d = 18 mm (across corners 17.7-18.2 mm on ISO 4014 / DIN 931); the head thickness is 0.7d = 7 mm. Answer, solution and marking criteria rewritten accordingly. action_required added so a teacher can confirm the across-corners framing against the AS 1100 tables used in class; the exact ISO 4014 head height for M10 is 6.4 mm, so 7 mm is the 0.7d course value the paper intends and the printed figures are coarse by design.",
+      "review_status": "approved",
+      "classification_confidence": "low",
+      "node_ids": [
+        "node_a7d7dc071ce2"
+      ],
+      "tags": [
+        "HSC",
+        "NSW Stage 6",
+        "Technical Communication",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_112a7f225e42",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Which drawing shows the correct AS 1100 standard representation of a $\\varnothing 10$ non-structural bolt head?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-65XPDJ-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_3445af9bb9df",
+                "alt_text": "Bolt head option A: dimensioned 18 across the head and 7 high.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-65XPDJ-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_c6ecbc511b54",
+                "alt_text": "Bolt head option B: dimensioned 18 across the head and 8 high.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-65XPDJ-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_18d053c06ffa",
+                "alt_text": "Bolt head option C: dimensioned 16 across the head and 7 high.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-65XPDJ-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_9b7583ce4102",
+                "alt_text": "Bolt head option D: dimensioned 16 across the head and 8 high.",
+                "caption": null
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_7eb665ccd0cd",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A standard hexagon head is dimensioned across the flats, not across the corners, so one of the two widths offered is dimensioning the wrong thing."
+          }
+        },
+        {
+          "block_id": "blk_dedab7236bd3",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Use the tabulated proportions for a non-structural hexagon head: the width is $1.6d$ and the head thickness is $0.7d$, with $d = 10\\,\\mathrm{mm}$. The $0.8d$ figure belongs to the nut that threads onto the bolt, not to the head."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_3bfbe80ee199",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_4b631870338f",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "All four drawings show the same elevation of a hexagon head bolt on a plain shank and the shapes are drawn to the same proportions, so only the two dimension values decide which one is correct."
+          }
+        },
+        {
+          "block_id": "blk_0618455da30c",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "equation",
+          "content": {
+            "latex": "d = 10\\,\\mathrm{mm}, \\qquad h_{\\text{head}} = 1.8d = 18\\,\\mathrm{mm}, \\qquad t_{\\text{head}} = 0.7d = 7\\,\\mathrm{mm}",
+            "display": true
+          }
+        },
+        {
+          "block_id": "blk_b2cb2e4e5a16",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "When a single elevation of a hexagon head is drawn, the conventional representation shows the head across its corners, and the corner width for a $\\varnothing 10$ non-structural bolt is $1.8d = 18\\,\\mathrm{mm}$; the head thickness is $0.7d = 7\\,\\mathrm{mm}$. Option A, dimensioned $18\\,\\mathrm{mm}$ across the head and $7\\,\\mathrm{mm}$ high, is therefore the correct drawing."
+          }
+        },
+        {
+          "block_id": "blk_57419a2691fe",
+          "slot": "solution",
+          "position": 3,
+          "block_type": "text",
+          "content": {
+            "text": "Option C uses $16\\,\\mathrm{mm}$, which is $1.6d$, the width across flats - the spanner size - rather than the across-corners width called up by this conventional elevation. Options B and D use $8\\,\\mathrm{mm}$, which is $0.8d$, the thickness of the hexagon nut that threads onto the bolt, not of the bolt head."
+          }
+        },
+        {
+          "block_id": "blk_8d5385c874ae",
+          "slot": "solution",
+          "position": 4,
+          "block_type": "text",
+          "content": {
+            "text": "A check on the drawing itself supports A: at $18\\,\\mathrm{mm}$ across the head the $\\varnothing 10$ shank measures about $0.55$ of the head width and the head is about $0.39$ of that width high, which is how option A is actually proportioned. Option A is the only combination whose two numbers agree with the proportions of the drawing."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_46c6ca3ba276",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects option A - the head dimensioned $18\\,\\mathrm{mm}$ across ($1.8d$, the across-corners width used for a single elevation of a hexagon head) and $7\\,\\mathrm{mm}$ high ($0.7d$); $16\\,\\mathrm{mm}$ is the across-flats width and $8\\,\\mathrm{mm}$ is the nut thickness"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_3445af9bb9df",
+          "file_path": "asset_3445af9bb9df",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Bolt head option A: dimensioned 18 across the head and 7 high.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_c6ecbc511b54",
+          "file_path": "asset_c6ecbc511b54",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Bolt head option B: dimensioned 18 across the head and 8 high.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_18d053c06ffa",
+          "file_path": "asset_18d053c06ffa",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Bolt head option C: dimensioned 16 across the head and 7 high.",
+          "caption": null
+        },
+        {
+          "asset_id": "asset_9b7583ce4102",
+          "file_path": "asset_9b7583ce4102",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Bolt head option D: dimensioned 16 across the head and 8 high.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "6EL45O",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": "Photograph of the Allen truss bridge is missing from the source paper, which prints 'This material cannot be displayed, due to copyright issues' in place of the figure, so the key is derived from the standard construction of an Allen (Pratt type) truss. The action_required tag is already present and must stay; the second text block in the body is still a placeholder that should be replaced by the photograph.\nSecond pass 2026-10-01: answer (D), solution and marking criteria all re-verified and left unchanged. Key D is confirmed by the official source - NESA/BOSTES 2017 HSC Engineering Studies Marking Guidelines, Section I Multiple-choice Answer Key, Q13 = D - and by the exam paper itself (2017 Q13, p6: A timber in shear/steel in torsion, B timber in torsion/steel in shear, C timber in tension/steel in compression, D timber in compression/steel in tension). Timber in compression with steel tie rods in tension is also the defining construction of an Allen truss, so the key is safe even without the photograph. UNFIXED DEFECT: the body still carries the placeholder text block \"[Figure unavailable: the published paper states 'This material cannot be displayed, due to copyright issues.' ...]\" instead of the photograph - the official paper prints exactly that copyright notice in place of the figure, so the image does not exist in the source and has to be sourced manually. 'body' is not in this path's todo, so rule 1 forbids writing it; action_required left in place.",
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_0fac5b83d8fb"
+      ],
+      "tags": [
+        "Civil Structures",
+        "Engineering Materials",
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_13fa57f3ca14",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "An image of an Allen truss bridge is shown."
+          }
+        },
+        {
+          "block_id": "blk_065e8b3c6147",
+          "slot": "body",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "[Figure unavailable: the published paper states \"This material cannot be displayed, due to copyright issues.\" A photograph of the Allen truss bridge must be attached manually before this question can be used.]"
+          }
+        },
+        {
+          "block_id": "blk_ec411bebea28",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Which option correctly identifies the type of force carried by the timber members and by the steel members of this truss bridge?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-6EL45O-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Timber members in shear and steel members in torsion"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-6EL45O-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Timber members in torsion and steel members in shear"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-6EL45O-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Timber members in tension and steel members in compression"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-6EL45O-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Timber members in compression and steel members in tension"
+              }
+            }
+          ],
+          "is_correct": true
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_4032de851a4c",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "In a truss the chords and the internal members are the load paths, so decide for each one whether it is being stretched or shortened in this type of bridge."
+          }
+        },
+        {
+          "block_id": "blk_5e1e45b653ce",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Then use the material properties: timber is efficient in compression and poor in tension, whereas steel is efficient in tension and is used as a slender tie."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_5f681973c8ed",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "D"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_e84fda4de8bd",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "In an Allen truss bridge the timber members are the compression members. The timber deck beams, the inclined struts and the upper timber chord are all shortened under gravity loading, while the verticals act in tension."
+          }
+        },
+        {
+          "block_id": "blk_3fc2e602cbfd",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The steel members are the tie rods, which carry the tension that the timber cannot accept, since timber has a low tensile strength and would need a very large section to carry tension efficiently. Timber in compression with steel in tension is the option the key selects."
+          }
+        },
+        {
+          "block_id": "blk_b066fd3a24c1",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Shear and torsion are not the governing actions in this truss, which rules out the first two options, and the third option has the two materials the wrong way round."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_8a0e1fbbdfbd",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: identifies timber members as carrying compression and steel members as carrying tension (option D)"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "U77M3D",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "medium",
+      "node_ids": [
+        "node_146365c56444"
+      ],
+      "tags": [
+        "Civil Structures",
+        "Engineering Materials",
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_9234a9367483",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A highly stressed steel plate develops a fatigue crack while in service."
+          }
+        },
+        {
+          "block_id": "blk_bb7ab830779b",
+          "slot": "body",
+          "position": 1,
+          "block_type": "diagram",
+          "content": {
+            "asset_path": "asset_635d4a290310",
+            "alt_text": "Isometric view of a thick steel plate with a fatigue crack growing in from one edge; the crack tip is labelled.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_8e047a01002b",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Which of the following is the most effective temporary method to slow or stop the crack's growth?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-U77M3D-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Weld the crack as it is"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-U77M3D-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Drill a hole ahead of the tip of the crack"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-U77M3D-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Drill a hole through the start of the crack"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-U77M3D-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Weld a small steel plate over the tip of the crack"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_dac548545bd0",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Any temporary repair has to reduce the stress concentration at the crack tip, and it must not introduce a new stress raiser of its own."
+          }
+        },
+        {
+          "block_id": "blk_4c407180ab26",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Compare where each repair acts relative to the crack tip, ahead of it, at the start of it, or over it, because only one of those positions lowers the stress intensity at the tip."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_974d5c246a01",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "B"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_0b22b0fc5911",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A fatigue crack grows because its sharp tip concentrates stress. Drilling a small hole ahead of the tip removes material from the most highly stressed region, so when the crack advances it grows into a region of much lower stress intensity, and the growth is slowed or stopped. That is the option the key selects."
+          }
+        },
+        {
+          "block_id": "blk_862a4f6a53e3",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Welding the crack leaves the original defect in place and adds new residual stress, drilling a hole at the start of the crack changes nothing at the tip, and plating over the tip adds weight without reducing the stress concentration, so the other three are ineffective."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_f93350145a4a",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_635d4a290310",
+          "file_path": "asset_635d4a290310",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Isometric view of a thick steel plate with a fatigue crack growing in from one edge; the crack tip is labelled.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "5011IV",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 1,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_ab537af3a3e9"
+      ],
+      "tags": [
+        "Electricity and Electronics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_97ea7a7402d0",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "What can be used to minimise significant losses in electrical power transmission cables?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-5011IV-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Very high current"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-5011IV-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Very high voltage"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-5011IV-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Very high resistance"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-5011IV-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Very high capacitance"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_a5d94c514532",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Line loss is $P = I^2R$, so consider what happens to the current and to the resistance of the line as the transmission voltage changes for a fixed transmitted power."
+          }
+        },
+        {
+          "block_id": "blk_67f04cc101fe",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "For a fixed power the current falls as the voltage rises, and a long thin conductor of low resistivity keeps the resistance of the line small as well."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_6979a7bd7046",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "B"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_5e085decc9ef",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Power lost in a transmission line is $P_{\\text{loss}} = I^2R$. The power to be transmitted is $P = VI$, so $I = P/V$ and therefore:"
+          }
+        },
+        {
+          "block_id": "blk_d5c656f150ac",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "equation",
+          "content": {
+            "latex": "P_{\\text{loss}} = \\frac{P^2 R}{V^2}",
+            "display": true
+          }
+        },
+        {
+          "block_id": "blk_4ddd352dc94f",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "The loss is inversely proportional to the square of the voltage, so doubling the transmission voltage quarters the loss. Power is therefore transmitted at hundreds of kilovolts, which is the option the key selects."
+          }
+        },
+        {
+          "block_id": "blk_dfaf0185bdf3",
+          "slot": "solution",
+          "position": 3,
+          "block_type": "text",
+          "content": {
+            "text": "A very high current increases the loss, and high resistance or high capacitance in the cable both increase the loss rather than reduce it, so those options are wrong."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_fa655f39b249",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "QMFI93",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 2,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_d49c8bf60b06"
+      ],
+      "tags": [
+        "HSC",
+        "NSW Stage 6",
+        "Telecommunications Engineering"
+      ],
+      "body": [
+        {
+          "block_id": "blk_a8a94c2c39c1",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Television programs that show high levels of activity often have lower picture quality. This is because television signals are transmitted using"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-QMFI93-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "digital modulation at low compression levels."
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-QMFI93-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "digital modulation at high compression levels."
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-QMFI93-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "analogue modulation at low compression levels."
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-QMFI93-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "analogue modulation at high compression levels."
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_ac00f6223384",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Two things vary in a broadcast television signal: whether it is analogue or digital, and how much of the picture data is removed before transmission."
+          }
+        },
+        {
+          "block_id": "blk_54f517032d9d",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Decide first how modern television is broadcast, then relate the amount of compression to how much fine detail survives in a scene that changes rapidly from frame to frame."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_bbc62f4f645c",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "B"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_e4a5ecd9de39",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Television is broadcast as a compressed digital signal using MPEG style compression. When the compression level is high, redundant picture data is discarded so that more frames fit into the available spectrum."
+          }
+        },
+        {
+          "block_id": "blk_c11938c47432",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "A scene with high activity, such as a crowd or a fast pan, changes completely between frames, so it has the least redundancy and loses the most detail under aggressive compression. The result is the blocking and smearing seen in high activity scenes. Low compression would preserve the detail and analogue modulation is not used for broadcast digital television, so the option the key selects is digital modulation at high compression levels."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_ed82d590847a",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "70B0WT",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 4,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_d989064c9e02"
+      ],
+      "tags": [
+        "Aeronautical Engineering",
+        "Engineering Materials",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_dcc08a2b0085",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "In which of the following does an impervious oxide surface layer provide corrosion resistance for the base metal?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-70B0WT-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Zinc coating of steel in underground applications"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-70B0WT-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Carbon fibre panels in automotive body applications"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-70B0WT-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Powder coating of steel structures in marine applications"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-70B0WT-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Nickel-based alloys in high temperature aeronautical applications"
+              }
+            }
+          ],
+          "is_correct": true
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_7a872c17ac11",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Two mechanisms protect a metal. Barrier protection seals the surface with a continuous, adherent film; sacrificial protection deliberately uses a more active metal that corrodes in place of the base metal."
+          }
+        },
+        {
+          "block_id": "blk_8f46e350b668",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "For each option ask: is the protecting film an oxide grown out of the base metal itself, or is it a separate coating or a different material altogether? The classic sacrificial system is a zinc coating on steel, so that option cannot be the answer to this question."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_e86d6a02ce7f",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "D"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_9fcd371e16df",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "An impervious oxide layer is a barrier mechanism: a dense, adherent, electrically insulating film forms on the surface of the base metal, blocks oxygen and moisture from reaching the metal underneath, and is self-healing if it is locally damaged."
+          }
+        },
+        {
+          "block_id": "blk_b5d2a19f5d7b",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "A - zinc coating of steel: zinc is anodic to steel, so the zinc corrodes preferentially. This is sacrificial (galvanic) protection, and it eventually fails when the zinc is consumed. Not an oxide layer.",
+              "B - carbon fibre panels: the panel is a composite of carbon fibres in a polymer matrix. Its durability comes from the fibre and the resin, not from a surface film on a base metal. Not applicable.",
+              "C - powder coating of steel: this is an electrostatically applied polymer paint film that sits on top of the steel. It is a barrier coating, but it is an applied coating, not an oxide formed from the base metal, and a damaged coating exposes bare steel. Not what the question asks.",
+              "D - nickel-based alloys at high temperature: nickel alloys form a stable, adherent chromium-oxide (and alumina) film at elevated temperature. The film is impervious, self-healing and slow-growing, so it protects the underlying alloy indefinitely. This is the barrier protection described."
+            ]
+          }
+        },
+        {
+          "block_id": "blk_8711d205fb5a",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "The key discriminator is that the protective film must be an oxide OF the base metal. Only the nickel-based alloy does this."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_1f7035ec1afe",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "S4F313",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 4,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": "Verified against the source figure by digitising the curve: the x axis is calibrated at 0.002, 0.004, 0.006, 0.008 and 0.010 strain and the y axis at 50 to 250 MPa in 25 MPa steps. The curve is linear to 75 MPa at about 0.0019 strain (E = 39 GPa) and the 0.2% offset line meets it at 137 MPa. The y axis stops at 250 MPa and the curve is cut off at the top edge of the scan, so the 260 MPa option is the UTS extrapolated beyond the plotted range - the alt text records the plateau as 260 MPa although the axis only reaches 250 MPa.",
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_4380c45b404b"
+      ],
+      "tags": [
+        "Engineering Materials",
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_90475dad7981",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The following graph shows the results of a tensile test on a metal sample."
+          }
+        },
+        {
+          "block_id": "blk_d94fbc7f4d46",
+          "slot": "body",
+          "position": 1,
+          "block_type": "graph",
+          "content": {
+            "asset_path": "asset_a00865bd8c5d",
+            "alt_text": "Stress-strain curve with the vertical axis marked in MPa up to 250 and the horizontal axis marked Strain up to about 1%; the curve rises steeply and linearly to about 75 MPa then curves over towards 260 MPa.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_3fcb73064733",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "What is the approximate $0.2\\%$ proof stress for this metal sample?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-S4F313-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$70\\,\\mathrm{MPa}$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-S4F313-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$80\\,\\mathrm{MPa}$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-S4F313-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$140\\,\\mathrm{MPa}$"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-S4F313-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$260\\,\\mathrm{MPa}$"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_a641ff963b1d",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The $0.2\\%$ proof stress is not read directly off the curve - it is constructed. Mark $0.002$ strain on the horizontal axis and draw a line from that point PARALLEL to the initial straight (elastic) portion of the curve. The stress where that line crosses the curve is the proof stress."
+          }
+        },
+        {
+          "block_id": "blk_e5d2e4dbf82b",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Two other readings of this curve are traps: the stress where the curve stops rising linearly is the proportional limit, and the highest point the curve reaches is the ultimate tensile strength."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_87f38769083f",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "C"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_440c6aa17f01",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The curve is linear from the origin to about $75\\,\\mathrm{MPa}$ at roughly $0.2\\%$ strain, so the gradient of the elastic portion is about $39\\,\\mathrm{GPa}$ and that linear region is the only part of the curve that may be used to set the slope of the offset line."
+          }
+        },
+        {
+          "block_id": "blk_8f9cabf6668f",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The offset line therefore rises steeply from $(\\varepsilon = 0.002,\\ \\sigma = 0)$. It crosses the curve at approximately $\\varepsilon = 0.0055$, where the curve has climbed to about $137\\,\\mathrm{MPa}$."
+          }
+        },
+        {
+          "block_id": "blk_dc50d4ac93b8",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Measured from the supplied graph the $0.2\\%$ proof stress is $137\\,\\mathrm{MPa}$, which rounds to $140\\,\\mathrm{MPa}$ - option C."
+          }
+        },
+        {
+          "block_id": "blk_4a60bbafea4e",
+          "slot": "solution",
+          "position": 3,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "A ($70\\,\\mathrm{MPa}$) and B ($80\\,\\mathrm{MPa}$) both sit in the straight, elastic portion of the curve at about the proportional limit of $75\\,\\mathrm{MPa}$. Because the offset line starts at $0.2\\%$ strain it is already far to the right of that region, so the proof stress must be well above $80\\,\\mathrm{MPa}$.",
+              "D ($260\\,\\mathrm{MPa}$) is the ultimate tensile strength - the stress at which the curve levels off. The curve in the supplied scan is truncated at the top of the $250\\,\\mathrm{MPa}$ axis, so this value is only reached beyond the plotted range. The proof stress is always below the ultimate strength."
+            ]
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_c4c5d0383872",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_a00865bd8c5d",
+          "file_path": "asset_a00865bd8c5d",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Stress-strain curve with the vertical axis marked in MPa up to 250 and the horizontal axis marked Strain up to about 1%; the curve rises steeply and linearly to about 75 MPa then curves over towards 260 MPa.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "V7VJT8",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 4,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "low",
+      "node_ids": [
+        "node_20ed5f45e9e8"
+      ],
+      "tags": [
+        "HSC",
+        "NSW Stage 6",
+        "Technical Communication",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_6bbd17ad994d",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "An engineering component is required to have the following features:"
+          }
+        },
+        {
+          "block_id": "blk_e6b86436037b",
+          "slot": "body",
+          "position": 1,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "$30\\,\\mathrm{mm}$ spotface",
+              "$10\\,\\mathrm{mm}$ counterbore, $8\\,\\mathrm{mm}$ deep",
+              "$6\\,\\mathrm{mm}$ through"
+            ]
+          }
+        },
+        {
+          "block_id": "blk_51be96c28f3f",
+          "slot": "body",
+          "position": 2,
+          "block_type": "diagram",
+          "content": {
+            "asset_path": "asset_682a7fc1ddc2",
+            "alt_text": "Half section through a flanged component showing a spotface, a counterbore and a through hole on a common centreline.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_d007b167237a",
+          "slot": "body",
+          "position": 3,
+          "block_type": "text",
+          "content": {
+            "text": "Which of the following shows the correct dimensioning?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-V7VJT8-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$\\varnothing 6$ ⌴ $\\varnothing 10 \\times 8$⌵ $\\varnothing 30\\,\\mathrm{SF}$"
+              }
+            }
+          ],
+          "is_correct": true
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-V7VJT8-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$\\varnothing 6$ ⌴ $\\varnothing 8 \\times 10$⌴ $\\varnothing 30$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-V7VJT8-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$\\varnothing 6\\;\\varnothing 10 \\times 8$⌵ $\\varnothing 30\\,\\mathrm{SF}$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-V7VJT8-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$\\varnothing 8\\;\\varnothing 6 \\times 10$⌵ $\\varnothing 30\\,\\mathrm{SF}$"
+              }
+            }
+          ],
+          "is_correct": false
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_1cf1a48e5f07",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Work from the smallest feature outwards. A bare diameter on its own is a through hole; a diameter preceded by the depth symbol is a blind feature of stated depth; a diameter preceded by the counterbore symbol is a flat-bottomed enlargement."
+          }
+        },
+        {
+          "block_id": "blk_9f7453b754c3",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The largest of the three diameters is the shallow flat machined on the top surface, and AS 1100 allows that one to be abbreviated with a suffix rather than a separate note."
+          }
+        },
+        {
+          "block_id": "blk_7b51c7f4b01a",
+          "slot": "hint",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Check each option for three things: are the numbers in the right order, are BOTH the depth symbol and the counterbore symbol present, and does the largest diameter carry the spotface abbreviation."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_b7a6b69f99f7",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_b22cf8f14141",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The three features required are a $\\varnothing 6\\,\\mathrm{mm}$ through hole, a $\\varnothing 10\\,\\mathrm{mm}$ counterbore $8\\,\\mathrm{mm}$ deep, and a $\\varnothing 30\\,\\mathrm{mm}$ spotface on the top surface. They must all be called up in one sequence on the section view, smallest to largest."
+          }
+        },
+        {
+          "block_id": "blk_cad31284a7f1",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Option A reads $\\varnothing 6$, then the depth symbol with $\\varnothing 10 \\times 8$, then the counterbore symbol with $\\varnothing 30\\,\\mathrm{SF}$. Every number matches the specification, both the depth symbol and the counterbore symbol are used, and the spotface is abbreviated with SF rather than written out as a separate note."
+          }
+        },
+        {
+          "block_id": "blk_a08bb1a2f71a",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "B - the counterbore diameter and depth are transposed ($\\varnothing 8 \\times 10$ instead of $\\varnothing 10 \\times 8$), and the counterbore symbol is replaced by a second depth symbol, so the $30\\,\\mathrm{mm}$ feature is called up with the wrong symbol and no SF suffix.",
+              "C - the depth symbol before $\\varnothing 10$ is missing, so the callout gives a diameter with no depth and the counterbore depth is not specified at all.",
+              "D - the sequence is wrong and the numbers are exchanged: it gives $\\varnothing 8$ as the through hole and calls up $\\varnothing 6 \\times 10$, which is a $6\\,\\mathrm{mm}$ counterbore $10\\,\\mathrm{mm}$ deep on an $8\\,\\mathrm{mm}$ hole - none of which matches the required features."
+            ]
+          }
+        },
+        {
+          "block_id": "blk_146cdd4b43c0",
+          "slot": "solution",
+          "position": 3,
+          "block_type": "text",
+          "content": {
+            "text": "Only A states the correct diameters, the correct depth and uses the correct symbols, so the answer is A."
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_4276afd3ea88",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_682a7fc1ddc2",
+          "file_path": "asset_682a7fc1ddc2",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Half section through a flanged component showing a spotface, a counterbore and a through hole on a common centreline.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "E81KV1",
+      "course_id": "course_engineering_studies",
+      "type_key": "multiple_choice",
+      "difficulty": 4,
+      "marks": 1,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "low",
+      "node_ids": [
+        "node_ba5d3fa141d2"
+      ],
+      "tags": [
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_4bacada10852",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A compound lever system is shown."
+          }
+        },
+        {
+          "block_id": "blk_3a9449fbd7d3",
+          "slot": "body",
+          "position": 1,
+          "block_type": "diagram",
+          "content": {
+            "asset_path": "asset_a8e80943487e",
+            "alt_text": "Compound lever with a lower bar 300 long carrying load F_L 100 from the left pin, joined by a vertical link to an upper bar carrying a central pivot and effort F_E 200 beyond it; spans marked 100, 200, 100, 200 and a 100 offset.",
+            "caption": null
+          }
+        },
+        {
+          "block_id": "blk_9f6c3d8c301b",
+          "slot": "body",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "What is the velocity ratio of this lever system?"
+          }
+        }
+      ],
+      "mcq_options": [
+        {
+          "position": 0,
+          "content": [
+            {
+              "block_id": "option-E81KV1-0-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$1:1$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 1,
+          "content": [
+            {
+              "block_id": "option-E81KV1-1-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$2:1$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 2,
+          "content": [
+            {
+              "block_id": "option-E81KV1-2-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$4:1$"
+              }
+            }
+          ],
+          "is_correct": false
+        },
+        {
+          "position": 3,
+          "content": [
+            {
+              "block_id": "option-E81KV1-3-0",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$6:1$"
+              }
+            }
+          ],
+          "is_correct": true
+        }
+      ],
+      "hint": [
+        {
+          "block_id": "blk_62c3ffa5ab41",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "The velocity ratio of a compound (multiple) lever system is the PRODUCT of the velocity ratios of the individual levers - multiply the two arm ratios together, do not add them."
+          }
+        },
+        {
+          "block_id": "blk_e92f874f67ed",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Measure every arm from the pivot of the bar it belongs to. The link force is the effort for the lower bar and the load for the upper bar, and the lower bar's pivot and the upper bar's pivot are at different places."
+          }
+        }
+      ],
+      "answer": [
+        {
+          "block_id": "blk_ab36c798b958",
+          "slot": "answer",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "D"
+          }
+        }
+      ],
+      "solution": [
+        {
+          "block_id": "blk_79d31c663ff8",
+          "slot": "solution",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Lower bar: the pivot is the left-hand pin, the load $F_L$ acts $100\\,\\mathrm{mm}$ from it and the link is attached at the far end, $100 + 200 = 300\\,\\mathrm{mm}$ from the pivot. Moments about the pivot give $F_{\\text{link}} = F_L \\times \\dfrac{300}{100} = 3F_L$."
+          }
+        },
+        {
+          "block_id": "blk_d1f573f67201",
+          "slot": "solution",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Upper bar: the link attaches $100\\,\\mathrm{mm}$ to one side of the central pivot and the effort $F_E$ acts $200\\,\\mathrm{mm}$ beyond the pivot on the other side. Moments about the pivot give $F_E = F_{\\text{link}} \\times \\dfrac{100}{200} = 0.5\\,F_{\\text{link}}$."
+          }
+        },
+        {
+          "block_id": "blk_8501fb045de1",
+          "slot": "solution",
+          "position": 2,
+          "block_type": "equation",
+          "content": {
+            "latex": "\\mathrm{VR} = \\frac{\\text{effort arm}}{\\text{load arm}} = \\frac{300}{100} \\times \\frac{200}{100} = 3 \\times 2 = 6 \\;\\Rightarrow\\; 6:1",
+            "display": true
+          }
+        },
+        {
+          "block_id": "blk_add359665dbc",
+          "slot": "solution",
+          "position": 3,
+          "block_type": "text",
+          "content": {
+            "text": "This equals option D."
+          }
+        },
+        {
+          "block_id": "blk_aaea5c718679",
+          "slot": "solution",
+          "position": 4,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "A ($1:1$) - ignores the second lever entirely and would only be right if the two bars were a single straight lever of equal arms.",
+              "B ($2:1$) - this is the velocity ratio of the upper bar alone, forgetting that the lower bar gives a ratio of 3.",
+              "C ($4:1$) - the product $2 \\times 2$ results from measuring the lower bar's link as only $200\\,\\mathrm{mm}$ from its pivot; the lower bar is $300\\,\\mathrm{mm}$ long and the load is $100\\,\\mathrm{mm}$ from the pin."
+            ]
+          }
+        }
+      ],
+      "marking_criteria": [
+        {
+          "block_id": "blk_8c0216429e24",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "1 mark: selects the correct option"
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_a8e80943487e",
+          "file_path": "asset_a8e80943487e",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Compound lever with a lower bar 300 long carrying load F_L 100 from the left pin, joined by a vertical link to an upper bar carrying a central pivot and effort F_E 200 beyond it; spans marked 100, 200, 100, 200 and a 100 offset.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "QE82QP",
+      "course_id": "course_engineering_studies",
+      "type_key": "extended_response",
+      "difficulty": 5,
+      "marks": 11,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "low",
+      "node_ids": [
+        "node_0b8909b0da7b",
+        "node_4380c45b404b"
+      ],
+      "tags": [
+        "Engineering Design",
+        "Engineering Materials",
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6",
+        "Personal and Public Transport",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_b0a69089b17d",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Carbon fibre was originally developed to produce aircraft bodies and high performance vehicles. Carbon fibre is now used in a wide range of applications, including the manufacture of the type of bicycle frame shown."
+          }
+        },
+        {
+          "block_id": "blk_e216474f047e",
+          "slot": "body",
+          "position": 1,
+          "block_type": "image",
+          "content": {
+            "asset_path": "asset_1dae5c4d8c0f",
+            "alt_text": "Photograph of a lightweight carbon fibre road bicycle frame and wheels.",
+            "caption": null
+          }
+        }
+      ],
+      "mcq_options": [],
+      "hint": [
+        {
+          "block_id": "blk_ecb70c2ae9c2",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Parts (a) and (b) are materials questions. For (a) compare carbon fibre with steel property by property and keep only genuine improvements; for (b) follow the production route in the order the material is placed, shaped, cured and released."
+          }
+        },
+        {
+          "block_id": "blk_632ec2b846b3",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "Parts (c) and (d) are mechanics. In (c) the lost potential energy becomes kinetic energy; in (d) the load is carried only by the ring of material between the outer and inner diameters, so use an annular area rather than the full circle."
+          }
+        },
+        {
+          "block_id": "blk_4fe0a4f3382c",
+          "slot": "hint",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Check both calculations for units: metres per second for the speed and megapascals for the stress."
+          }
+        }
+      ],
+      "answer": [],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_id": "blk_b04e298a769d",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "3 marks: part (a) — Outline the advantages of carbon fibre bicycle frames over steel bicycle frames.",
+              "3 marks: part (b) — Explain how a carbon fibre bicycle frame is manufactured.",
+              "2 marks: part (c) — The combined weight of the bike and the rider is $100\\,\\mathrm{kg}$.",
+              "3 marks: part (d) — The cross-section of the pillar is shown."
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_1dae5c4d8c0f",
+          "file_path": "asset_1dae5c4d8c0f",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Photograph of a lightweight carbon fibre road bicycle frame and wheels.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [
+        {
+          "question_id": "DXWD98",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 3,
+          "parent_question_id": "QE82QP",
+          "part_label": "a",
+          "notes": null,
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Materials"
+          ],
+          "body": [
+            {
+              "block_id": "blk_c5992bc5311d",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Outline the advantages of carbon fibre bicycle frames over steel bicycle frames."
+              }
+            },
+            {
+              "block_id": "blk_e47e7a854d36",
+              "slot": "body",
+              "position": 1,
+              "block_type": "answer_area",
+              "content": {
+                "lines": 6
+              }
+            }
+          ],
+          "mcq_options": [],
+          "hint": [
+            {
+              "block_id": "blk_f34fea9476d6",
+              "slot": "hint",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Compare the two materials property by property — density, stiffness, strength, corrosion behaviour and how the shape is formed — and keep only those differences that are an advantage for a bicycle frame."
+              }
+            },
+            {
+              "block_id": "blk_498a5a880ec2",
+              "slot": "hint",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "A bicycle frame has to be light, has to be stiff so it holds its shape, and has to survive the rider's repeated pedalling loads in all weathers. Any claim you make should improve one of those."
+              }
+            }
+          ],
+          "answer": [
+            {
+              "block_id": "blk_a0ee22ab660e",
+              "slot": "answer",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "Excellent strength-to-weight ratio, higher than steel.",
+                  "Can be moulded to more intricate shapes than steel.",
+                  "Available in a wide range of colours.",
+                  "Corrosion resistant and rigid."
+                ]
+              }
+            }
+          ],
+          "solution": [
+            {
+              "block_id": "blk_937c31a4cee6",
+              "slot": "solution",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "The advantage that matters most is specific stiffness and strength. Carbon fibre reinforced polymer has a modulus and tensile strength several times those of plain steel at roughly a quarter of the density, so a frame of equal stiffness and strength is much lighter. This is the same reason the material was developed for aircraft structures."
+              }
+            },
+            {
+              "block_id": "blk_4bd28927ea2f",
+              "slot": "solution",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "Carbon fibre also does not corrode. A steel frame needs primers, paint and often galvanising to protect it, and its performance still degrades once that coating is breached; a carbon frame keeps its stiffness in rain, mud and salt water, and needs no corrosion protection."
+              }
+            },
+            {
+              "block_id": "blk_9dbdb96592fa",
+              "slot": "solution",
+              "position": 2,
+              "block_type": "text",
+              "content": {
+                "text": "Because the material is built up as fibres in a resin rather than as a solid section, a monocoque frame with complex curved tubes, varying wall thickness and integrated bosses can be moulded as a single piece. A steel frame must be made from separate straight tubes brazed or welded together, so the carbon frame has fewer joints, fewer stress-raising welds and fewer parts to assemble. Moulding also allows the cosmetic colour or clear finish to be built in rather than applied."
+              }
+            }
+          ],
+          "marking_criteria": [
+            {
+              "block_id": "blk_f5f273e5ef8b",
+              "slot": "marking_criteria",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "3 marks: outlines the advantages of using carbon fibre over steel",
+                  "2 marks: outlines an advantage of using carbon fibre",
+                  "1 mark: states a benefit of using carbon fibre"
+                ]
+              }
+            }
+          ],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        },
+        {
+          "question_id": "9GSB80",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 3,
+          "parent_question_id": "QE82QP",
+          "part_label": "b",
+          "notes": null,
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Materials"
+          ],
+          "body": [
+            {
+              "block_id": "blk_897dedffda15",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Explain how a carbon fibre bicycle frame is manufactured."
+              }
+            },
+            {
+              "block_id": "blk_a493aa02604c",
+              "slot": "body",
+              "position": 1,
+              "block_type": "answer_area",
+              "content": {
+                "lines": 6
+              }
+            }
+          ],
+          "mcq_options": [],
+          "hint": [
+            {
+              "block_id": "blk_1b00f4724372",
+              "slot": "hint",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "A bicycle frame is a single moulded shell, not an assembly of parts. Think about the tool the frame is built inside and how the fibres are arranged on or in it."
+              }
+            },
+            {
+              "block_id": "blk_7b3c91465629",
+              "slot": "hint",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "Follow the process in order: the fibres are placed, the shape is formed and consolidated, the resin is cured, and the cured frame is released from the tool."
+              }
+            }
+          ],
+          "answer": [
+            {
+              "block_id": "blk_1d6176c22b9a",
+              "slot": "answer",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Pre-impregnated carbon fibres (or dry fibre with resin) are laid up over a mould — a smooth steel mould or a inflatable bladder — by hand laying, roll wrapping or filament winding. The lay-up is bagged and placed in a pressure/heat chamber (autoclave); the resin is cured by a catalyst that may be heat or UV activated, and the part is then removed from the mould."
+              }
+            }
+          ],
+          "solution": [
+            {
+              "block_id": "blk_44f9c63e40b9",
+              "slot": "solution",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "The material used is pre-impregnated (pre-preg) carbon fibre — fibre already impregnated with a partially cured resin — or dry fibre laid up with a resin and hardener. The fibres are built up on a smooth steel tool, which is either a solid mould or an inflatable bladder held inside a former. Common lay-up methods are hand laying up over the former, roll wrapping fibre around a mandrel, and filament winding under computer control."
+              }
+            },
+            {
+              "block_id": "blk_4896d423d27d",
+              "slot": "solution",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "As the plies are added the fibre orientation is varied to place stiffness where the load paths are, building the required wall thickness. The lay-up is then sealed in a vacuum bag and the whole assembly is placed in an autoclave, or heated under pressure in a press, so that compaction and cure occur together. Heat, and in some systems UV light, activates the catalyst in the resin: the resin flows and wets the fibres, then polymerises and cross-links, turning the loose lay-up into a stiff single-piece shell. After cooling the frame is released from the tool, trimmed and inspected for voids and delamination before finishing."
+              }
+            }
+          ],
+          "marking_criteria": [
+            {
+              "block_id": "blk_e27d1be79266",
+              "slot": "marking_criteria",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "3 marks: explains how a carbon fibre bicycle frame is manufactured",
+                  "2 marks: outlines some aspects of a suitable manufacturing process",
+                  "1 mark: identifies a feature of the manufacturing process"
+                ]
+              }
+            }
+          ],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        },
+        {
+          "question_id": "2YNOK0",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 2,
+          "parent_question_id": "QE82QP",
+          "part_label": "c",
+          "notes": null,
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Mechanics"
+          ],
+          "body": [
+            {
+              "block_id": "blk_cf4f24b39d74",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "A bike with a rider rolls down a hill without braking from a standing start at point A."
+              }
+            },
+            {
+              "block_id": "blk_d8ab4555d0db",
+              "slot": "body",
+              "position": 1,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_16629d6d3579",
+                "alt_text": "Long inclined plane from A at the top of a 20 m vertical height down to B at the bottom, with a cyclist at A.",
+                "caption": null
+              }
+            },
+            {
+              "block_id": "blk_7eabd3cb44eb",
+              "slot": "body",
+              "position": 2,
+              "block_type": "text",
+              "content": {
+                "text": "The combined weight of the bike and the rider is $100\\,\\mathrm{kg}$. Calculate the speed of the rider at point B. (Assume no wind resistance and $100\\%$ efficiency.)"
+              }
+            },
+            {
+              "block_id": "blk_00591bd30a3f",
+              "slot": "body",
+              "position": 3,
+              "block_type": "answer_area",
+              "content": {
+                "lines": 4
+              }
+            }
+          ],
+          "mcq_options": [],
+          "hint": [
+            {
+              "block_id": "blk_9b4d2ed544d2",
+              "slot": "hint",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "With no wind resistance and $100\\%$ efficiency, the gravitational potential energy lost is exactly converted into kinetic energy, and the mass cancels out of the equation."
+              }
+            },
+            {
+              "block_id": "blk_b07936c664b9",
+              "slot": "hint",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "Rearrange $mgh = \\tfrac{1}{2}mv^{2}$ for $v$, and substitute the vertical height rather than the length of the slope. Then round to a sensible number of significant figures."
+              }
+            }
+          ],
+          "answer": [
+            {
+              "block_id": "blk_7f7983989290",
+              "slot": "answer",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$20\\,\\mathrm{m/s}$"
+              }
+            }
+          ],
+          "solution": [
+            {
+              "block_id": "blk_6bbb3444cee8",
+              "slot": "solution",
+              "position": 0,
+              "block_type": "equation",
+              "content": {
+                "latex": "mgh = \\tfrac{1}{2}mv^{2} \\;\\Rightarrow\\; v = \\sqrt{2gh} = \\sqrt{2 \\times 10 \\times 20} = 20\\,\\mathrm{m/s}",
+                "display": true
+              }
+            }
+          ],
+          "marking_criteria": [
+            {
+              "block_id": "blk_386a0ea6daf1",
+              "slot": "marking_criteria",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "2 marks: calculates the speed of the rider with correct units stated",
+                  "1 mark: applies an appropriate method"
+                ]
+              }
+            }
+          ],
+          "assets": [
+            {
+              "asset_id": "asset_16629d6d3579",
+              "file_path": "asset_16629d6d3579",
+              "mime_type": "image/png",
+              "width": null,
+              "height": null,
+              "alt_text": "Long inclined plane from A at the top of a 20 m vertical height down to B at the bottom, with a cyclist at A.",
+              "caption": null
+            }
+          ],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        },
+        {
+          "question_id": "J96WO4",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 3,
+          "parent_question_id": "QE82QP",
+          "part_label": "d",
+          "notes": null,
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Materials",
+            "Engineering Mechanics"
+          ],
+          "body": [
+            {
+              "block_id": "blk_9a93177ae7f6",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "When a bike goes over a bump, there is a vertical force of $3\\,\\mathrm{kN}$ exerted axially on the main pillar."
+              }
+            },
+            {
+              "block_id": "blk_bac4a195b241",
+              "slot": "body",
+              "position": 1,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_23ea443484a6",
+                "alt_text": "Hollow circular pillar with a 3 kN force arrow pushing down on the top face and a reaction arrow pushing up on the base.",
+                "caption": null
+              }
+            },
+            {
+              "block_id": "blk_e2c59b631d8b",
+              "slot": "body",
+              "position": 2,
+              "block_type": "diagram",
+              "content": {
+                "asset_path": "asset_cf2425ad3d3e",
+                "alt_text": "Cross-section of the hollow pillar: hatched annulus dimensioned diameter 32 outside and diameter 28 inside, with the note All dimensions in millimetres.",
+                "caption": null
+              }
+            },
+            {
+              "block_id": "blk_e329cce9eba7",
+              "slot": "body",
+              "position": 3,
+              "block_type": "text",
+              "content": {
+                "text": "The cross-section of the pillar is shown. Calculate the compressive stress acting in the pillar."
+              }
+            },
+            {
+              "block_id": "blk_ccd30314b062",
+              "slot": "body",
+              "position": 4,
+              "block_type": "answer_area",
+              "content": {
+                "lines": 6
+              }
+            }
+          ],
+          "mcq_options": [],
+          "hint": [
+            {
+              "block_id": "blk_76a3374706a0",
+              "slot": "hint",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Compressive stress is the axial force divided by the area of material that actually carries it. The pillar is hollow, so that area is a ring, not a full circle."
+              }
+            },
+            {
+              "block_id": "blk_3c8864c40958",
+              "slot": "hint",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "The cross-section gives an outside and an inside diameter, so subtract the inner area from the outer area: $A = \\frac{\\pi}{4}\\left(d_{o}^{2} - d_{i}^{2}\\right)$. The dimensions are in millimetres, so working in $\\mathrm{N}$ and $\\mathrm{mm}$ gives the answer directly in $\\mathrm{N/mm^{2}}$, which is the same as $\\mathrm{MPa}$."
+              }
+            }
+          ],
+          "answer": [
+            {
+              "block_id": "blk_695ff4440f59",
+              "slot": "answer",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "$15.9\\,\\mathrm{MPa}$ (compressive)"
+              }
+            },
+            {
+              "block_id": "blk_8ed29e4cb7a8",
+              "slot": "answer",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "All dimensions in millimetres."
+              }
+            }
+          ],
+          "solution": [
+            {
+              "block_id": "blk_4775628eb883",
+              "slot": "solution",
+              "position": 0,
+              "block_type": "equation",
+              "content": {
+                "latex": "A = \\frac{\\pi}{4}\\left(32^{2} - 28^{2}\\right) = \\frac{\\pi}{4}(1024-784) = 188.5\\,\\mathrm{mm^{2}}",
+                "display": true
+              }
+            },
+            {
+              "block_id": "blk_5e3bebd3cd07",
+              "slot": "solution",
+              "position": 1,
+              "block_type": "equation",
+              "content": {
+                "latex": "\\sigma = \\frac{F}{A} = \\frac{3000}{188.5} = 15.9\\,\\mathrm{MPa}",
+                "display": true
+              }
+            }
+          ],
+          "marking_criteria": [
+            {
+              "block_id": "blk_cfe22256ffbe",
+              "slot": "marking_criteria",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "3 marks: calculates the correct compressive stress",
+                  "2 marks: calculates compressive stress using an appropriate method with minor errors",
+                  "1 mark: applies an appropriate method"
+                ]
+              }
+            }
+          ],
+          "assets": [
+            {
+              "asset_id": "asset_23ea443484a6",
+              "file_path": "asset_23ea443484a6",
+              "mime_type": "image/png",
+              "width": null,
+              "height": null,
+              "alt_text": "Hollow circular pillar with a 3 kN force arrow pushing down on the top face and a reaction arrow pushing up on the base.",
+              "caption": null
+            },
+            {
+              "asset_id": "asset_cf2425ad3d3e",
+              "file_path": "asset_cf2425ad3d3e",
+              "mime_type": "image/png",
+              "width": null,
+              "height": null,
+              "alt_text": "Cross-section of the hollow pillar: hatched annulus dimensioned diameter 32 outside and diameter 28 inside, with the note All dimensions in millimetres.",
+              "caption": null
+            }
+          ],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        }
+      ],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "P4KQ62",
+      "course_id": "course_engineering_studies",
+      "type_key": "extended_response",
+      "difficulty": 5,
+      "marks": 11,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_4380c45b404b"
+      ],
+      "tags": [
+        "Engineering Design",
+        "Engineering Materials",
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6"
+      ],
+      "body": [
+        {
+          "block_id": "blk_07feede4aeb2",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Sleds are used to slide loads over soft surfaces such as grass, sand and snow. They can be made using polypropylene."
+          }
+        },
+        {
+          "block_id": "blk_1c9cd0d6aa3c",
+          "slot": "body",
+          "position": 1,
+          "block_type": "image",
+          "content": {
+            "asset_path": "asset_94ff67c578b1",
+            "alt_text": "Photograph of a moulded plastic recreational sled with rope handles on a snow-covered surface.",
+            "caption": null
+          }
+        }
+      ],
+      "mcq_options": [],
+      "hint": [
+        {
+          "block_id": "blk_290900c193ab",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Part (a) is about the material and how it is formed, part (b) is a free body diagram followed by a limiting equilibrium calculation. The drawing in (b)(i) is worth 2 marks in its own right, so do it properly."
+          }
+        },
+        {
+          "block_id": "blk_8f194ab377f0",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "For (b)(ii) the sled is on the point of moving, so friction is at its limiting value. The rope is not horizontal, so it both pulls the sled along and lifts it, which changes the normal reaction and therefore the friction."
+          }
+        },
+        {
+          "block_id": "blk_06d5e0ba08ca",
+          "slot": "hint",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Check the arithmetic against the condition for movement: the sled only moves if the horizontal pull divided by the vertical pull is greater than the coefficient of friction, so if the calculated angle does not satisfy that, the assumption was wrong."
+          }
+        }
+      ],
+      "answer": [],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_id": "blk_500042bc4d66",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "3 marks: part (a(i)) — Explain why polypropylene is a suitable material for making the sled.",
+              "3 marks: part (a(ii)) — Describe a manufacturing process that could be used to produce the sled from polypropylene.",
+              "2 marks: part (b(i)) — Draw a free-body diagram of the sled, showing and labelling all forces acting on it.",
+              "3 marks: part (b(ii)) — Calculate the force $P$ required in the rope to just start the sled moving."
+            ]
+          }
+        }
+      ],
+      "assets": [
+        {
+          "asset_id": "asset_94ff67c578b1",
+          "file_path": "asset_94ff67c578b1",
+          "mime_type": "image/png",
+          "width": null,
+          "height": null,
+          "alt_text": "Photograph of a moulded plastic recreational sled with rope handles on a snow-covered surface.",
+          "caption": null
+        }
+      ],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [
+        {
+          "question_id": "B7RD7U",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 6,
+          "parent_question_id": "P4KQ62",
+          "part_label": "a",
+          "notes": "Sub-parts are missing from this question tree. The 2017 HSC paper has (i) 'Explain how the properties of polypropylene make it a suitable material for this application' (3 marks) and (ii) 'Describe a suitable manufacturing method to make a sled from polypropylene' (3 marks); the answer and solution here cover both.",
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineered Products",
+            "Engineering Materials"
+          ],
+          "body": [],
+          "mcq_options": [],
+          "hint": [],
+          "answer": [],
+          "solution": [],
+          "marking_criteria": [],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        },
+        {
+          "question_id": "XGBM16",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 5,
+          "parent_question_id": "P4KQ62",
+          "part_label": "b",
+          "notes": "Sub-parts are missing from this question tree. The 2017 HSC paper has (i) 'Draw a free-body diagram that indicates the forces acting on the sled. Label the diagram' (2 marks) and (ii) 'Calculate the tension in the rope immediately before the point at which the sled and child begin to move' (3 marks); the answer and solution here cover both, and the tension of 32 N matches the published marking guideline.",
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Mechanics"
+          ],
+          "body": [],
+          "mcq_options": [],
+          "hint": [],
+          "answer": [],
+          "solution": [],
+          "marking_criteria": [],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        }
+      ],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "83T0MK",
+      "course_id": "course_engineering_studies",
+      "type_key": "extended_response",
+      "difficulty": 6,
+      "marks": 13,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "high",
+      "node_ids": [
+        "node_4380c45b404b"
+      ],
+      "tags": [
+        "Civil Structures",
+        "Engineering Materials",
+        "Engineering Mechanics",
+        "HSC",
+        "NSW Stage 6",
+        "Technical Communication"
+      ],
+      "body": [
+        {
+          "block_id": "blk_5092e4035c31",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "A pin-jointed truss designed to support a roadside sign is shown."
+          }
+        }
+      ],
+      "mcq_options": [],
+      "hint": [
+        {
+          "block_id": "blk_8735c961e7c5",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Two quite different engineering ideas are tested here. In part (a) the whole truss is a single rigid body in equilibrium, so start with a free-body diagram - and notice that the supports are on a vertical face, which means one reaction is horizontal and one is vertical rather than both being vertical."
+          }
+        },
+        {
+          "block_id": "blk_3750965c97ee",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "For the internal force, the sum of vertical forces will not work, because the member you want is horizontal and has no vertical component. Mark a section plane that cuts three members, then take moments about the joint where the other two cut members meet - that joint's reaction then drops out and only your unknown is left in the equation."
+          }
+        },
+        {
+          "block_id": "blk_0126cf01d0e9",
+          "slot": "hint",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "For part (b), treat the two workshop operations separately. Ask what each one does to the cross-section of the section, and what it does to the microstructure of steel that has already been heat treated."
+          }
+        }
+      ],
+      "answer": [],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_id": "blk_9d8a977854f0",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "4 marks: part (a(i)) — Calculate the reactions at the roller support $B$ and at the pin support $A$, including the direction of the reaction…",
+              "2 marks: part (a(ii)) — Determine the magnitude and nature (tension or compression) of the force in member $C$.",
+              "2 marks: part (a(iii)) — The sign column is set in a concrete footing.",
+              "3 marks: part (b(i)) — Explain why the manufacturer's sign warns against welding to the chassis rail or drilling its flanges.",
+              "2 marks: part (b(ii)) — Sketch and label the macrostructure across a fillet weld joining a reinforcing plate to the chassis rail."
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [
+        {
+          "question_id": "O8F6JW",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 8,
+          "parent_question_id": "83T0MK",
+          "part_label": "a",
+          "notes": "Sub-parts (a)(i), (a)(ii) and (a)(iii) are absent from the parts array in the source data (they exist in the original 2017 HSC paper), so this part's answer and solution cover all three and the 8 marks are accounted for here.",
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Civil Structures",
+            "Engineering Materials",
+            "Engineering Mechanics",
+            "HSC"
+          ],
+          "body": [],
+          "mcq_options": [],
+          "hint": [],
+          "answer": [],
+          "solution": [],
+          "marking_criteria": [],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        },
+        {
+          "question_id": "ULCXJD",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 5,
+          "parent_question_id": "83T0MK",
+          "part_label": "b",
+          "notes": "Sub-parts (b)(i) and (b)(ii) are absent from the parts array in the source data (they exist in the original 2017 HSC paper), so this part's answer and solution cover both.",
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Materials",
+            "HSC",
+            "Technical Communication"
+          ],
+          "body": [],
+          "mcq_options": [],
+          "hint": [],
+          "answer": [],
+          "solution": [],
+          "marking_criteria": [],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        }
+      ],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    },
+    {
+      "question_id": "5EG95B",
+      "course_id": "course_engineering_studies",
+      "type_key": "extended_response",
+      "difficulty": 6,
+      "marks": 8,
+      "parent_question_id": null,
+      "part_label": null,
+      "notes": null,
+      "review_status": "approved",
+      "classification_confidence": "low",
+      "node_ids": [
+        "node_2b4d3aaa311c",
+        "node_2589f706e246"
+      ],
+      "tags": [
+        "Engineering Design",
+        "Engineering Report",
+        "HSC",
+        "NSW Stage 6",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_id": "blk_da2bb5cbee3b",
+          "slot": "body",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "An engineering team has been contracted to design a multi-function lifting device for a coastal container wharf."
+          }
+        },
+        {
+          "block_id": "blk_954305512fb5",
+          "slot": "body",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "The table shows some of the engineering design elements for this lifting device."
+          }
+        },
+        {
+          "block_id": "blk_a126b76a849d",
+          "slot": "body",
+          "position": 2,
+          "block_type": "table",
+          "content": {
+            "columns": [
+              "Engineering element",
+              "Criterion"
+            ],
+            "rows": [
+              [
+                "Mechanical efficiency",
+                "Minimum efficiency required $= 75\\%$"
+              ],
+              [
+                "Working environment",
+                "Withstand lateral wind speeds of $150\\,\\mathrm{kph}$"
+              ],
+              [
+                "Materials",
+                "Corrosive resistant metals"
+              ],
+              [
+                "Load",
+                "Lift and transport containers up to $30\\,\\mathrm{t}$"
+              ]
+            ]
+          }
+        }
+      ],
+      "mcq_options": [],
+      "hint": [
+        {
+          "block_id": "blk_a27bd6df06bd",
+          "slot": "hint",
+          "position": 0,
+          "block_type": "text",
+          "content": {
+            "text": "Part (a) is about failure, not about testing as such. Name a component that works under severe service conditions, list what happens to it in service, and then explain what a developing fault would lead to."
+          }
+        },
+        {
+          "block_id": "blk_d60986b833a9",
+          "slot": "hint",
+          "position": 1,
+          "block_type": "text",
+          "content": {
+            "text": "For part (b), do not write one general paragraph about testing. Take the four rows of the table one at a time and, for each, give a specific test or evaluation and say how the result would be judged against the criterion."
+          }
+        },
+        {
+          "block_id": "blk_a0016a0bac6c",
+          "slot": "hint",
+          "position": 2,
+          "block_type": "text",
+          "content": {
+            "text": "Decide for each criterion whether a physical test, a calculation or a simulation is the sensible way to demonstrate it - the $30\\,\\mathrm{t}$ load and the $75\\,\\%$ efficiency are measured quite differently from the wind environment and the corrosive exposure."
+          }
+        }
+      ],
+      "answer": [],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_id": "blk_2dd20d159c5a",
+          "slot": "marking_criteria",
+          "position": 0,
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "2 marks: part (a) — Why is the routine testing of engineering components important during service?",
+              "6 marks: part (b) — Explain how the lifting device can be tested and evaluated to determine if the criteria for the listed engineering…"
+            ]
+          }
+        }
+      ],
+      "assets": [],
+      "source": {
+        "name": "2017 HSC Engineering Studies",
+        "year": 2017,
+        "institution": "HSC",
+        "original_question_no": "1"
+      },
+      "parts": [
+        {
+          "question_id": "7NW5M2",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 2,
+          "parent_question_id": "5EG95B",
+          "part_label": "a",
+          "notes": null,
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Design",
+            "Engineering Report",
+            "HSC"
+          ],
+          "body": [
+            {
+              "block_id": "blk_ac26b8908e80",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Why is the routine testing of engineering components important during service?"
+              }
+            },
+            {
+              "block_id": "blk_e322d9d6b983",
+              "slot": "body",
+              "position": 1,
+              "block_type": "answer_area",
+              "content": {
+                "lines": 4
+              }
+            }
+          ],
+          "mcq_options": [],
+          "hint": [
+            {
+              "block_id": "blk_eeb5c76db33a",
+              "slot": "hint",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Think of a component that is genuinely working - a diesel truck engine or an aircraft jet engine - and list the conditions it is exposed to in service that were never present when it left the factory."
+              }
+            },
+            {
+              "block_id": "blk_3e5c4857efd7",
+              "slot": "hint",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "The answer needs the consequence as well as the cause. Say what the component will do if a developing fault is allowed to continue, and what the operator gains by finding it early."
+              }
+            }
+          ],
+          "answer": [
+            {
+              "block_id": "blk_969d522ff816",
+              "slot": "answer",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Engineering components such as diesel truck and aircraft jet engines operate under damaging conditions — high duty cycles, heavy loads, and corrosive or dusty environments. Routine testing is important to ensure there are no faults or dangerous conditions that could lead to failure in service."
+              }
+            }
+          ],
+          "solution": [
+            {
+              "block_id": "blk_7c4928446112",
+              "slot": "solution",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Build the response in three steps so that the explanation, not the list, is what earns the marks. First set out the demands on the component: engines such as diesel truck and aircraft jet engines run for very high duty cycles, so they see hundreds of thousands of load cycles, very high temperatures and pressures, vibration, and they breathe in dust, salt and moisture. Second state the mechanisms that follow from those demands: wear of bearings and running clearances, fatigue cracks initiated at surface defects, corrosion and pitting, and the growth of any existing manufacturing defect."
+              }
+            },
+            {
+              "block_id": "blk_cd973a2e1b00",
+              "slot": "solution",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "Third, close the loop. A fatigue crack grows a little on every cycle and a corroded section loses load capacity, so both are invisible from the outside and neither announces itself before the component fails. Routine testing - borescope inspection, oil and particle analysis, vibration monitoring, and non-destructive inspection such as dye penetrant or ultrasonic testing - measures the change while it is still small, so the fault can be repaired or the component replaced during a planned maintenance interval instead of failing on the road or in flight. That is the importance of routine testing: it converts an unpredictable failure into a planned intervention."
+              }
+            }
+          ],
+          "marking_criteria": [
+            {
+              "block_id": "blk_279d3f90dc7e",
+              "slot": "marking_criteria",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "2 marks: explains why routine testing is important",
+                  "1 mark: identifies a relevant reason"
+                ]
+              }
+            }
+          ],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        },
+        {
+          "question_id": "O7HZBQ",
+          "course_id": "course_engineering_studies",
+          "type_key": "extended_response",
+          "difficulty": null,
+          "marks": 6,
+          "parent_question_id": "5EG95B",
+          "part_label": "b",
+          "notes": null,
+          "review_status": "approved",
+          "classification_confidence": null,
+          "node_ids": [],
+          "tags": [
+            "Engineering Design",
+            "Engineering Report",
+            "HSC"
+          ],
+          "body": [
+            {
+              "block_id": "blk_71339ef136c3",
+              "slot": "body",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Explain how the lifting device can be tested and evaluated to determine if the criteria for the listed engineering elements are met."
+              }
+            },
+            {
+              "block_id": "blk_830804d970be",
+              "slot": "body",
+              "position": 1,
+              "block_type": "answer_area",
+              "content": {
+                "lines": 12
+              }
+            }
+          ],
+          "mcq_options": [],
+          "hint": [
+            {
+              "block_id": "blk_9b391bf0a7d9",
+              "slot": "hint",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "Work down the four rows of the table rather than writing a general paragraph, and for each row ask two separate questions: how is the criterion physically measured, and how is the result judged against the number in the table?"
+              }
+            },
+            {
+              "block_id": "blk_84a8a47519ae",
+              "slot": "hint",
+              "position": 1,
+              "block_type": "text",
+              "content": {
+                "text": "The marks are lost when the test is named but not explained, or when the evaluation is missing. For each row say what method gives the number and what result would count as passing."
+              }
+            },
+            {
+              "block_id": "blk_f29b32b0050e",
+              "slot": "hint",
+              "position": 2,
+              "block_type": "text",
+              "content": {
+                "text": "Two of the four criteria are about the operating environment rather than about strength, so a load test alone can never demonstrate them - one needs a wind facility or a simulation, and one needs a corrosion trial or condition monitoring."
+              }
+            }
+          ],
+          "answer": [
+            {
+              "block_id": "blk_316dd855a5a0",
+              "slot": "answer",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "Mechanical efficiency: measure power consumed against power delivered under test loads, then calculate theoretical outcomes and compare actual performance against the benchmark.",
+                  "Working environment: wind tunnel testing of a prototype at 150 kph lateral wind, or computer simulation / finite element analysis of the model.",
+                  "Materials: test specimens in a similar coastal industrial area, use the past operational performance of materials in similar coastal industrial areas, or non-destructive testing of the structure to monitor remaining thickness.",
+                  "Load: proof test with a loaded container and measure deflection against specification, apply the factor of safety used in service, or finite element analysis."
+                ]
+              }
+            }
+          ],
+          "solution": [
+            {
+              "block_id": "blk_66d3f72dfa63",
+              "slot": "solution",
+              "position": 0,
+              "block_type": "text",
+              "content": {
+                "text": "The structure that scores the marks is one heading per row of the table, and within each heading a test, a measurement and an evaluation. The reasoning for each of the four criteria is set out below."
+              }
+            },
+            {
+              "block_id": "blk_3a3340e7b4bf",
+              "slot": "solution",
+              "position": 1,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "Mechanical efficiency, minimum 75 per cent: run the lifting device against a known test load and measure the power drawn by the hydraulic actuator against the mechanical power delivered to the load, or measure the load lifted at a known input pressure. Evaluate by comparing the measured or calculated efficiency with the 75 per cent minimum; less than the minimum fails.",
+                  "Working environment, 150 kph lateral wind: test a prototype in a wind tunnel with a simulated 150 kph cross wind, or run a computer simulation and finite element analysis of the structure at that wind speed. Evaluate by measuring deflection, sway and any instability and comparing them with the allowable values, because the criterion is about withstanding the wind, not merely surviving it.",
+                  "Materials, corrosive resistant metals: expose representative test specimens to a salt-spray or marine atmosphere similar to the coastal container wharf, or rely on documented operational performance of the candidate alloys in comparable coastal industrial service, or use non-destructive inspection to monitor remaining wall thickness. Evaluate by mass loss, pitting depth or the rate of loss of section against the design life.",
+                  "Load, containers to 30 t: proof test the device with a loaded container, applying the factor of safety used in service so the test load exceeds the 30 t duty, and measure the deflection of the boom and any permanent set. Evaluate by comparing the measured deflection with the specified limit; alternatively use finite element analysis at the proof load to predict deflection and member stresses."
+                ]
+              }
+            },
+            {
+              "block_id": "blk_3c6a3b6f6ae7",
+              "slot": "solution",
+              "position": 2,
+              "block_type": "text",
+              "content": {
+                "text": "A response that names all four tests but explains and evaluates only two sits in the middle band; one that works through all four criteria with a cause-and-effect explanation for each is what the top band requires."
+              }
+            }
+          ],
+          "marking_criteria": [
+            {
+              "block_id": "blk_86953ced5fdd",
+              "slot": "marking_criteria",
+              "position": 0,
+              "block_type": "list",
+              "content": {
+                "ordered": false,
+                "items": [
+                  "6 marks: explains how the lifting device can be tested and evaluated to determine if all the criteria are met",
+                  "4–5 marks: explains how the lifting device can be tested and/or evaluated to determine if most of the criteria are met",
+                  "2–3 marks: explains or outlines how the lifting device can be tested and/or evaluated to determine if some of the criteria are met",
+                  "1 mark: provides some relevant information"
+                ]
+              }
+            }
+          ],
+          "assets": [],
+          "source": null,
+          "parts": [],
+          "created_at": "2026-09-27 12:00:38.000000",
+          "updated_at": "2026-09-27 12:00:38.000000"
+        }
+      ],
+      "created_at": "2026-09-27 12:00:38.000000",
+      "updated_at": "2026-09-27 12:00:38.000000"
+    }
+  ]
+}

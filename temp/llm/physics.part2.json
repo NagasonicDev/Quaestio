@@ -1,0 +1,2587 @@
+{
+ "course_id": "physics",
+ "course_name": "Physics",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "PRE-M1-T1-D1",
+   "path": "Year 11 / Working scientifically / Questioning and predicting / Use observations and scientific knowledge and understanding to propose questions and hypotheses for scientific investigations involving primary and secondary data"
+  },
+  {
+   "code": "PRE-M1-T1-D2",
+   "path": "Year 11 / Working scientifically / Questioning and predicting / Evaluate questions and hypotheses based on scientific knowledge"
+  },
+  {
+   "code": "PRE-M1-T1-D3",
+   "path": "Year 11 / Working scientifically / Questioning and predicting / Modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "PRE-M1-T2-D1",
+   "path": "Year 11 / Working scientifically / Planning scientific investigations / Justify the use of independent, dependent and controlled variables, and experimental controls in a valid scientific investigation"
+  },
+  {
+   "code": "PRE-M1-T2-D2",
+   "path": "Year 11 / Working scientifically / Planning scientific investigations / Explain how reliable primary data is obtained"
+  },
+  {
+   "code": "PRE-M1-T2-D3",
+   "path": "Year 11 / Working scientifically / Planning scientific investigations / Assess the reliability of secondary data and information when planning"
+  },
+  {
+   "code": "PRE-M1-T2-D4",
+   "path": "Year 11 / Working scientifically / Planning scientific investigations / Assess potential hazards and their associated risks to develop a risk assessment"
+  },
+  {
+   "code": "PRE-M1-T2-D5",
+   "path": "Year 11 / Working scientifically / Planning scientific investigations / Select appropriate materials and technologies to design a scientific investigation"
+  },
+  {
+   "code": "PRE-M1-T2-D6",
+   "path": "Year 11 / Working scientifically / Planning scientific investigations / Discuss ethical issues in the development and use of scientific knowledge"
+  },
+  {
+   "code": "PRE-M1-T3-D1",
+   "path": "Year 11 / Working scientifically / Conducting scientific investigations / Apply safe work practices and manage risks while conducting a scientific investigation"
+  },
+  {
+   "code": "PRE-M1-T3-D2",
+   "path": "Year 11 / Working scientifically / Conducting scientific investigations / Construct and manipulate identified materials and technologies to perform scientific investigations"
+  },
+  {
+   "code": "PRE-M1-T3-D3",
+   "path": "Year 11 / Working scientifically / Conducting scientific investigations / Use equipment appropriately and systematically to collect and record data, information, evidence and findings"
+  },
+  {
+   "code": "PRE-M1-T3-D4",
+   "path": "Year 11 / Working scientifically / Conducting scientific investigations / Gather data and information from a range of secondary sources"
+  },
+  {
+   "code": "PRE-M1-T4-D1",
+   "path": "Year 11 / Working scientifically / Processing data and information / Select qualitative and quantitative information from texts, diagrams, flow charts, tables, databases, graphs and multimedia resources"
+  },
+  {
+   "code": "PRE-M1-T4-D2",
+   "path": "Year 11 / Working scientifically / Processing data and information / Apply quantitative processes to data, including unit conversions"
+  },
+  {
+   "code": "PRE-M1-T4-D3",
+   "path": "Year 11 / Working scientifically / Processing data and information / Select and use a range of representations to organise data and information, including graphs, keys, models, diagrams, tables and spreadsheets"
+  },
+  {
+   "code": "PRE-M1-T4-D4",
+   "path": "Year 11 / Working scientifically / Processing data and information / Extract data and information from a wide range of sources and acknowledge these sources using an accepted referencing style"
+  },
+  {
+   "code": "PRE-M1-T4-D5",
+   "path": "Year 11 / Working scientifically / Processing data and information / Describe the Cultural Knowledges and observations of Aboriginal and Torres Strait Islander Peoples and examine how these contribute to the development of scientific knowledge"
+  },
+  {
+   "code": "PRE-M1-T5-D1",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Describe qualitative and quantitative relationships between variables"
+  },
+  {
+   "code": "PRE-M1-T5-D2",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Explain patterns and trends, including inconsistencies in data and information"
+  },
+  {
+   "code": "PRE-M1-T5-D3",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Assess error, uncertainty and limitations in data and include calculations of percentage error, range, mean and standard deviation"
+  },
+  {
+   "code": "PRE-M1-T5-D4",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Assess the validity, reliability, accuracy and precision of data and information"
+  },
+  {
+   "code": "PRE-M1-T5-D5",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Interpret data and information to identify outliers, make predictions, explain results and draw conclusions"
+  },
+  {
+   "code": "PRE-M1-T5-D6",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Evaluate data and information to suggest improvements or further investigations"
+  },
+  {
+   "code": "PRE-M1-T5-D7",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Use appropriate significant figures to express quantitative solutions"
+  },
+  {
+   "code": "PRE-M1-T5-D8",
+   "path": "Year 11 / Working scientifically / Analysing data and information / Use appropriate scale prefixes for powers of 10: femto (f) = 10-15, pico (p) = 10-12, nano (n) = 10-9, micro (μ) = 10-6, milli (m) = 10-3, kilo (k) = 103, mega (M) = 106, giga (G) = 109, tera (T) = 1012 and peta (P) = 1015"
+  },
+  {
+   "code": "PRE-M1-T6-D1",
+   "path": "Year 11 / Working scientifically / Problem-solving / Apply scientific principles to address real-world applications and problems"
+  },
+  {
+   "code": "PRE-M1-T6-D2",
+   "path": "Year 11 / Working scientifically / Problem-solving / Use modelling and cause-and-effect relationships, including mathematical examples, to make predictions, explain phenomena, and solve problems"
+  },
+  {
+   "code": "PRE-M1-T6-D3",
+   "path": "Year 11 / Working scientifically / Problem-solving / Evaluate and modify a scientific investigation in response to new evidence"
+  },
+  {
+   "code": "PRE-M1-T6-D4",
+   "path": "Year 11 / Working scientifically / Problem-solving / Explain why current scientific knowledge is both contestable and testable by further inquiry"
+  },
+  {
+   "code": "PRE-M1-T7-D1",
+   "path": "Year 11 / Working scientifically / Communicating / Construct evidence-based arguments and recognise the role of peer review in the evaluation of scientific practices, solutions or conclusions"
+  },
+  {
+   "code": "PRE-M1-T7-D2",
+   "path": "Year 11 / Working scientifically / Communicating / Select and use appropriate digital, visual, written and oral media to convey scientific arguments"
+  },
+  {
+   "code": "PRE-M1-T7-D3",
+   "path": "Year 11 / Working scientifically / Communicating / Apply appropriate scientific notations, language and nomenclature"
+  },
+  {
+   "code": "PRE-M1-T7-D4",
+   "path": "Year 11 / Working scientifically / Communicating / Use evidence and correct scientific language and terminology to address a specific audience and purpose in a variety of contexts"
+  },
+  {
+   "code": "PRE-M2-T1-D1",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Classify distance, displacement, time, speed, velocity and acceleration as either scalar or vector quantities"
+  },
+  {
+   "code": "PRE-M2-T1-D2",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Use vector diagrams to represent the displacement, velocity and acceleration of an object"
+  },
+  {
+   "code": "PRE-M2-T1-D3",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Add and subtract vectors in 2 dimensions"
+  },
+  {
+   "code": "PRE-M2-T1-D4",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Resolve vectors into components"
+  },
+  {
+   "code": "PRE-M2-T1-D5",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Solve total distance and displacement problems"
+  },
+  {
+   "code": "PRE-M2-T1-D6",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Explain how instantaneous speed, average speed, instantaneous velocity and average velocity are measured and calculated"
+  },
+  {
+   "code": "PRE-M2-T1-D7",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Solve problems using"
+  },
+  {
+   "code": "PRE-M2-T1-D8",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Solve problems involving the calculation of velocity in 2 dimensions"
+  },
+  {
+   "code": "PRE-M2-T1-D9",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Solve problems to determine speed, velocity, distance, displacement and time"
+  },
+  {
+   "code": "PRE-M2-T1-D10",
+   "path": "Year 11 / Fundamentals of mechanics / Quantities of motion / Solve problems in one and 2 dimensions using"
+  },
+  {
+   "code": "PRE-M2-T2-D1",
+   "path": "Year 11 / Fundamentals of mechanics / Motion relationships / Use data to construct displacement–time graphs, velocity–time graphs and acceleration–time graphs"
+  },
+  {
+   "code": "PRE-M2-T2-D2",
+   "path": "Year 11 / Fundamentals of mechanics / Motion relationships / Use data to analyse motion graphs to describe the displacement, velocity and acceleration of an object"
+  },
+  {
+   "code": "PRE-M2-T2-D3",
+   "path": "Year 11 / Fundamentals of mechanics / Motion relationships / Analyse motion graphs to determine the relationships between displacement, initial velocity, final velocity, acceleration and time"
+  },
+  {
+   "code": "PRE-M2-T2-D4",
+   "path": "Year 11 / Fundamentals of mechanics / Motion relationships / Solve problems involving uniformly accelerated motion in one dimension using , and"
+  },
+  {
+   "code": "PRE-M2-T2-D5",
+   "path": "Year 11 / Fundamentals of mechanics / Motion relationships / Conduct a laboratory experiment to compare 2 methods of graphically determining a value for acceleration due to gravity and assess the accuracy and reliability of the experimental results"
+  },
+  {
+   "code": "PRE-M2-T2-D6",
+   "path": "Year 11 / Fundamentals of mechanics / Motion relationships / Analyse problems of relative velocity involving motion in two dimensions using"
+  },
+  {
+   "code": "PRE-M2-T3-D1",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Resolve vectors into perpendicular components using and where is the angle with the -axis"
+  },
+  {
+   "code": "PRE-M2-T3-D2",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Use free-body diagrams and vector analysis to determine the net force acting on an object"
+  },
+  {
+   "code": "PRE-M2-T3-D3",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Apply Newton’s first law of motion to stationary objects and objects moving with a constant velocity"
+  },
+  {
+   "code": "PRE-M2-T3-D4",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Analyse the forces acting on an object moving with constant velocity"
+  },
+  {
+   "code": "PRE-M2-T3-D5",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Conduct a scientific investigation to illustrate the relationship between force, mass and acceleration"
+  },
+  {
+   "code": "PRE-M2-T3-D6",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Analyse the forces acting on an accelerating object"
+  },
+  {
+   "code": "PRE-M2-T3-D7",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Solve problems involving Newton’s second law of motion using"
+  },
+  {
+   "code": "PRE-M2-T3-D8",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Use examples to describe the effects of Newton’s third law of motion"
+  },
+  {
+   "code": "PRE-M2-T3-D9",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Analyse the forces acting on connected bodies in physical contact and linked by ropes using vector diagrams and Newton’s laws of motion"
+  },
+  {
+   "code": "PRE-M2-T3-D10",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Compare static and kinetic friction"
+  },
+  {
+   "code": "PRE-M2-T3-D11",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Solve problems using"
+  },
+  {
+   "code": "PRE-M2-T3-D12",
+   "path": "Year 11 / Fundamentals of mechanics / Forces and motion / Solve a variety of problems in static and dynamic real-world situations by applying Newton’s laws of motion"
+  },
+  {
+   "code": "PRE-M2-T4-D1",
+   "path": "Year 11 / Fundamentals of mechanics / Motion on inclined planes / Determine the normal force on objects on inclined planes"
+  },
+  {
+   "code": "PRE-M2-T4-D2",
+   "path": "Year 11 / Fundamentals of mechanics / Motion on inclined planes / Construct free-body diagrams to show the gravitational, normal, frictional and net force acting on an object on an inclined plane"
+  },
+  {
+   "code": "PRE-M2-T4-D3",
+   "path": "Year 11 / Fundamentals of mechanics / Motion on inclined planes / Resolve the weight force into perpendicular and parallel components on inclined planes using and"
+  },
+  {
+   "code": "PRE-M2-T4-D4",
+   "path": "Year 11 / Fundamentals of mechanics / Motion on inclined planes / Derive to describe the acceleration on an object on an inclined plane with friction using Newton’s second law parallel to the plane"
+  },
+  {
+   "code": "PRE-M2-T4-D5",
+   "path": "Year 11 / Fundamentals of mechanics / Motion on inclined planes / Solve problems involving objects with constant velocity and objects accelerating on inclined planes"
+  },
+  {
+   "code": "PRE-M2-T4-D6",
+   "path": "Year 11 / Fundamentals of mechanics / Motion on inclined planes / Explain why Aboriginal and/or Torres Strait Islander Peoples used inclined planes to move heavy objects"
+  },
+  {
+   "code": "PRE-M2-T4-D7",
+   "path": "Year 11 / Fundamentals of mechanics / Motion on inclined planes / Conduct a laboratory experiment to analyse the relationship between the angle of an inclined plane and the acceleration of an object"
+  },
+  {
+   "code": "PRE-M2-T5-D1",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Compare conservative forces and non-conservative forces"
+  },
+  {
+   "code": "PRE-M2-T5-D2",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / State the conditions under which total mechanical energy is conserved"
+  },
+  {
+   "code": "PRE-M2-T5-D3",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Relate the work done on an object to the change in its kinetic energy during accelerated rectilinear motion using"
+  },
+  {
+   "code": "PRE-M2-T5-D4",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Solve problems involving changes in gravitational potential energy in a uniform gravitational field using"
+  },
+  {
+   "code": "PRE-M2-T5-D5",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Solve problems involving kinetic energy using"
+  },
+  {
+   "code": "PRE-M2-T5-D6",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Apply the law of conservation of mechanical energy and use and to solve problems"
+  },
+  {
+   "code": "PRE-M2-T5-D7",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Analyse energy transformations and calculate the work done when an object moves within a uniform gravitational field, including changes in gravitational potential energy due to height and identifying the forces responsible for doing work"
+  },
+  {
+   "code": "PRE-M2-T5-D8",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / State the conditions under which momentum is conserved"
+  },
+  {
+   "code": "PRE-M2-T5-D9",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Explain why momentum is conserved during collisions"
+  },
+  {
+   "code": "PRE-M2-T5-D10",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Classify collisions as elastic or inelastic by calculating and comparing the total kinetic energy before and after the collision"
+  },
+  {
+   "code": "PRE-M2-T5-D11",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Solve problems involving momentum using and"
+  },
+  {
+   "code": "PRE-M2-T5-D12",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Solve problems involving the conservation of momentum using and, where appropriate, conservation of kinetic energy"
+  },
+  {
+   "code": "PRE-M2-T5-D13",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Solve problems involving the conservation of momentum in elastic collisions using"
+  },
+  {
+   "code": "PRE-M2-T5-D14",
+   "path": "Year 11 / Fundamentals of mechanics / Momentum and energy / Conduct a practical investigation to analyse the conservation of momentum in collisions"
+  },
+  {
+   "code": "PRE-M3-T1-D1",
+   "path": "Year 11 / Waves / Wave properties / Conduct a practical investigation to model the oscillation of particles in transverse waves and longitudinal waves and relate to the direction of energy transfer"
+  },
+  {
+   "code": "PRE-M3-T1-D2",
+   "path": "Year 11 / Waves / Wave properties / Describe the wavelength, frequency, period, crest, trough and amplitude of transverse waves"
+  },
+  {
+   "code": "PRE-M3-T1-D3",
+   "path": "Year 11 / Waves / Wave properties / Describe the wavelength, frequency, period, compression, rarefaction and amplitude of longitudinal waves"
+  },
+  {
+   "code": "PRE-M3-T1-D4",
+   "path": "Year 11 / Waves / Wave properties / Solve problems using and"
+  },
+  {
+   "code": "PRE-M3-T1-D5",
+   "path": "Year 11 / Waves / Wave properties / Analyse displacement–time graphs for longitudinal and transverse waves"
+  },
+  {
+   "code": "PRE-M3-T1-D6",
+   "path": "Year 11 / Waves / Wave properties / Analyse displacement–distance graphs for longitudinal and transverse waves"
+  },
+  {
+   "code": "PRE-M3-T1-D7",
+   "path": "Year 11 / Waves / Wave properties / Describe how Aboriginal Peoples use the wave velocity and wavelength of water waves to approximate water depth"
+  },
+  {
+   "code": "PRE-M3-T2-D1",
+   "path": "Year 11 / Waves / Light and sound / Identify that mechanical waves require a medium for propagation"
+  },
+  {
+   "code": "PRE-M3-T2-D2",
+   "path": "Year 11 / Waves / Light and sound / Explain how sound waves transfer energy through a medium"
+  },
+  {
+   "code": "PRE-M3-T2-D3",
+   "path": "Year 11 / Waves / Light and sound / Conduct a practical investigation, to relate wavelength to frequency, frequency to pitch, and amplitude to loudness"
+  },
+  {
+   "code": "PRE-M3-T2-D4",
+   "path": "Year 11 / Waves / Light and sound / Conduct a practical investigation to demonstrate how frequency and amplitude relate to the energy of a sound wave"
+  },
+  {
+   "code": "PRE-M3-T2-D5",
+   "path": "Year 11 / Waves / Light and sound / Identify light as an electromagnetic wave that does not require a medium for propagation and travels at , the speed of light, in a vacuum"
+  },
+  {
+   "code": "PRE-M3-T2-D6",
+   "path": "Year 11 / Waves / Light and sound / Describe the production and transfer of energy of electromagnetic wave"
+  },
+  {
+   "code": "PRE-M3-T2-D7",
+   "path": "Year 11 / Waves / Light and sound / Interpret diagrams of the electromagnetic spectrum to quantitatively demonstrate the relationship between frequency, wavelength and energy and"
+  },
+  {
+   "code": "PRE-M3-T2-D8",
+   "path": "Year 11 / Waves / Light and sound / Describe practical applications for regions of the electromagnetic spectrum, linking properties to uses"
+  },
+  {
+   "code": "PRE-M3-T2-D9",
+   "path": "Year 11 / Waves / Light and sound / Solve problems involving the inverse square law using and to compare the intensity of light at points and"
+  },
+  {
+   "code": "PRE-M3-T2-D10",
+   "path": "Year 11 / Waves / Light and sound / Explain the relationship between distance and radiation intensity from a point source"
+  },
+  {
+   "code": "PRE-M3-T2-D11",
+   "path": "Year 11 / Waves / Light and sound / Conduct a laboratory experiment to analyse the relationship between light intensity and distance from a light source"
+  },
+  {
+   "code": "PRE-M3-T3-D1",
+   "path": "Year 11 / Waves / Wave behaviours / Describe examples of the law of reflection"
+  },
+  {
+   "code": "PRE-M3-T3-D2",
+   "path": "Year 11 / Waves / Wave behaviours / Use linear wavefront diagrams and ray diagrams to analyse the motion of a wave"
+  },
+  {
+   "code": "PRE-M3-T3-D3",
+   "path": "Year 11 / Waves / Wave behaviours / Conduct a scientific investigation to demonstrate refraction between 2 media"
+  },
+  {
+   "code": "PRE-M3-T3-D4",
+   "path": "Year 11 / Waves / Wave behaviours / Relate the velocity of light to the refractive index of a medium"
+  },
+  {
+   "code": "PRE-M3-T3-D5",
+   "path": "Year 11 / Waves / Wave behaviours / Solve refractive index problems using , where is the refractive index of the medium and is the speed of light in the medium"
+  },
+  {
+   "code": "PRE-M3-T3-D6",
+   "path": "Year 11 / Waves / Wave behaviours / Solve problems by applying the law of refraction of light using"
+  },
+  {
+   "code": "PRE-M3-T3-D7",
+   "path": "Year 11 / Waves / Wave behaviours / Solve total internal reflection and critical angle problems using"
+  },
+  {
+   "code": "PRE-M3-T3-D8",
+   "path": "Year 11 / Waves / Wave behaviours / Relate the change in velocity of a light wave crossing an interface to differences between refractive indices"
+  },
+  {
+   "code": "PRE-M3-T3-D9",
+   "path": "Year 11 / Waves / Wave behaviours / Construct ray diagrams to show reflection from plane mirrors and refraction at a boundary"
+  },
+  {
+   "code": "PRE-M3-T3-D10",
+   "path": "Year 11 / Waves / Wave behaviours / Conduct a laboratory experiment to determine the refractive index of a material and assess the accuracy of the measurement"
+  },
+  {
+   "code": "PRE-M3-T3-D11",
+   "path": "Year 11 / Waves / Wave behaviours / Conduct a scientific investigation to discuss how spectacles assist people with vision impairment"
+  },
+  {
+   "code": "PRE-M3-T3-D12",
+   "path": "Year 11 / Waves / Wave behaviours / Conduct a practical investigation to model how waves diffract through openings and around obstacles of different sizes"
+  },
+  {
+   "code": "PRE-M3-T3-D13",
+   "path": "Year 11 / Waves / Wave behaviours / Model the principle of superposition"
+  },
+  {
+   "code": "PRE-M3-T3-D14",
+   "path": "Year 11 / Waves / Wave behaviours / Use the principle of superposition to explain the constructive interference and destructive interference of waves"
+  },
+  {
+   "code": "PRE-M3-T3-D15",
+   "path": "Year 11 / Waves / Wave behaviours / Explain how the superposition of waves produces interference patterns with observable maxima and minima"
+  },
+  {
+   "code": "PRE-M3-T3-D16",
+   "path": "Year 11 / Waves / Wave behaviours / Demonstrate the formation of a standing wave"
+  },
+  {
+   "code": "PRE-M3-T3-D17",
+   "path": "Year 11 / Waves / Wave behaviours / Explain the production of nodes and antinodes in a standing wave"
+  },
+  {
+   "code": "PRE-M3-T3-D18",
+   "path": "Year 11 / Waves / Wave behaviours / Analyse the frequency and wavelength of standing waves in strings fixed at both ends using"
+  },
+  {
+   "code": "PRE-M3-T3-D19",
+   "path": "Year 11 / Waves / Wave behaviours / Explain the frequency shift phenomenon for sound waves and light waves (blueshift and redshift), as a source moves towards and away from an observer"
+  },
+  {
+   "code": "PRE-M3-T3-D20",
+   "path": "Year 11 / Waves / Wave behaviours / Solve frequency shift phenomenon problems for sound using"
+  },
+  {
+   "code": "PRE-M4-T1-D1",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Explain the role of the movement of electrons in charging particles and objects"
+  },
+  {
+   "code": "PRE-M4-T1-D2",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Explain how friction, induction and conduction can cause objects to become electrically charged"
+  },
+  {
+   "code": "PRE-M4-T1-D3",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Outline characteristics of an electric field surrounding a point charge"
+  },
+  {
+   "code": "PRE-M4-T1-D4",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Explain the role of static electricity in producing a lightning strike"
+  },
+  {
+   "code": "PRE-M4-T1-D5",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Use the equation to demonstrate that the electric field strength around a point charge follows the inverse square law"
+  },
+  {
+   "code": "PRE-M4-T1-D6",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Use field line diagrams to describe the electric field around point charges and between charged particles"
+  },
+  {
+   "code": "PRE-M4-T1-D7",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Solve problems involving charges in electric fields using"
+  },
+  {
+   "code": "PRE-M4-T1-D8",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Analyse the factors that affect the force between 2 charged particles using the electrostatic force law and"
+  },
+  {
+   "code": "PRE-M4-T1-D9",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Use field line diagrams to describe the electric field between 2 charged parallel plates"
+  },
+  {
+   "code": "PRE-M4-T1-D10",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Analyse the factors that affect the strength of the electric field between 2 charged parallel plates using"
+  },
+  {
+   "code": "PRE-M4-T1-D11",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Solve problems relating to the charged particles in electric fields using , , and"
+  },
+  {
+   "code": "PRE-M4-T1-D12",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Explain how the electric potential energy of a charged particle changes due to its position in an electric field"
+  },
+  {
+   "code": "PRE-M4-T1-D13",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Solve problems involving changes in electric potential energy in a uniform electric field using and"
+  },
+  {
+   "code": "PRE-M4-T1-D14",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Account for the energy transformations that occur when a charge moves in a uniform electric field"
+  },
+  {
+   "code": "PRE-M4-T1-D15",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Solve problems involving the work done when moving a charge in an electric field using the relationships between , and"
+  },
+  {
+   "code": "PRE-M4-T1-D16",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Analyse the relationships between voltage, potential energy difference and work when changing the position of a charge in a uniform electric field using"
+  },
+  {
+   "code": "PRE-M4-T1-D17",
+   "path": "Year 11 / Electricity and magnetism / Electrostatics / Solve problems relating to changes in position of charges in electric fields using"
+  },
+  {
+   "code": "PRE-M4-T2-D1",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Calculate electric current using"
+  },
+  {
+   "code": "PRE-M4-T2-D2",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Relate the flow of charge to the direction of conventional current"
+  },
+  {
+   "code": "PRE-M4-T2-D3",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Explain why electrons flow through a metallic conductor when connected to an external voltage"
+  },
+  {
+   "code": "PRE-M4-T2-D4",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Compare direct current (DC) and alternating current (AC)"
+  },
+  {
+   "code": "PRE-M4-T2-D5",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Relate voltage to electron flow in a circuit of constant resistance"
+  },
+  {
+   "code": "PRE-M4-T2-D6",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Explain why the resistance of a conductor can be affected by its material, length, cross-sectional area and temperature"
+  },
+  {
+   "code": "PRE-M4-T2-D7",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Analyse the relationships between voltage, current and resistance using for electric circuits having constant and variable resistance"
+  },
+  {
+   "code": "PRE-M4-T2-D8",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Conduct a laboratory experiment to examine the relationships between voltage and current for ohmic conductors and non-ohmic conductors"
+  },
+  {
+   "code": "PRE-M4-T2-D9",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Relate power to energy transformations"
+  },
+  {
+   "code": "PRE-M4-T2-D10",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Solve problems using"
+  },
+  {
+   "code": "PRE-M4-T2-D11",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Describe the relationship between power and voltage using"
+  },
+  {
+   "code": "PRE-M4-T2-D12",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Solve problems relating to energy loss in circuits using and the law of conservation of energy"
+  },
+  {
+   "code": "PRE-M4-T2-D13",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Compare the connection of components in series circuits with that in parallel circuits"
+  },
+  {
+   "code": "PRE-M4-T2-D14",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Construct and analyse diagrams of series circuits and parallel circuits"
+  },
+  {
+   "code": "PRE-M4-T2-D15",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Explain why ammeters are connected in series, and voltmeters are connected in parallel to components, in electric circuits"
+  },
+  {
+   "code": "PRE-M4-T2-D16",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Account for the magnitude of current at any point in a series circuit"
+  },
+  {
+   "code": "PRE-M4-T2-D17",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Account for the total voltage of a series circuit being the sum of the voltages of its components using conservation of energy and"
+  },
+  {
+   "code": "PRE-M4-T2-D18",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Account for the total resistance of a series circuit being the sum of the resistances of its components using"
+  },
+  {
+   "code": "PRE-M4-T2-D19",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Use the relationship between the total resistance and resistance in each branch of a parallel circuit, to calculate resistances"
+  },
+  {
+   "code": "PRE-M4-T2-D20",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Explain the relationship between the total current of a parallel circuit and the current passing through each component using"
+  },
+  {
+   "code": "PRE-M4-T2-D21",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Solve problems involving voltage, current and resistance, in series, parallel and combination circuits"
+  },
+  {
+   "code": "PRE-M4-T2-D22",
+   "path": "Year 11 / Electricity and magnetism / Electric circuits / Conduct a laboratory experiment to measure the voltage differences across components and current at different points in a combination circuit of fixed resistance, and account for variation from the calculated values"
+  },
+  {
+   "code": "PRE-M4-T3-D1",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Identify that magnetic field lines are continuous and used to represent the strength and direction of magnetic fields"
+  },
+  {
+   "code": "PRE-M4-T3-D2",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Use field line diagrams to analyse the magnetic field around a bar magnet, current-carrying wire and current-carrying loop"
+  },
+  {
+   "code": "PRE-M4-T3-D3",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Calculate the strength of the magnetic field produced by a current-carrying wire using"
+  },
+  {
+   "code": "PRE-M4-T3-D4",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Describe the structure of a simple solenoid"
+  },
+  {
+   "code": "PRE-M4-T3-D5",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Account for the shape and direction of the magnetic field produced by a direct current passing through a solenoid"
+  },
+  {
+   "code": "PRE-M4-T3-D6",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Calculate the strength of the uniform magnetic field inside a solenoid using"
+  },
+  {
+   "code": "PRE-M4-T3-D7",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Conduct a secondary-source investigation to assess the choice of materials used in the core of electromagnets"
+  },
+  {
+   "code": "PRE-M4-T3-D8",
+   "path": "Year 11 / Electricity and magnetism / Magnetism / Conduct a practical investigation to examine the factors affecting the strength of an electromagnet"
+  },
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Working scientifically / Questioning and predicting / Use observations and scientific knowledge and understanding to propose questions and hypotheses for scientific investigations involving primary and secondary data"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Working scientifically / Questioning and predicting / Evaluate questions and hypotheses based on scientific knowledge"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Working scientifically / Questioning and predicting / Modify questions and hypotheses to reflect new evidence"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Working scientifically / Planning scientific investigations / Justify the use of independent, dependent and controlled variables, and experimental controls in a valid scientific investigation"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Working scientifically / Planning scientific investigations / Explain how reliable primary data is obtained"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Working scientifically / Planning scientific investigations / Assess the reliability of secondary data and information when planning"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Working scientifically / Planning scientific investigations / Assess potential hazards and their associated risks to develop a risk assessment"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Working scientifically / Planning scientific investigations / Select appropriate materials and technologies to design a scientific investigation"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Working scientifically / Planning scientific investigations / Discuss ethical issues in the development and use of scientific knowledge"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Working scientifically / Conducting scientific investigations / Apply safe work practices and manage risks while conducting a scientific investigation"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Working scientifically / Conducting scientific investigations / Construct and manipulate identified materials and technologies to perform scientific investigations"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Working scientifically / Conducting scientific investigations / Use equipment appropriately and systematically to collect and record data, information, evidence and findings"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Working scientifically / Conducting scientific investigations / Gather data and information from a range of secondary sources"
+  },
+  {
+   "code": "HSC-M1-T4-D1",
+   "path": "Year 12 / Working scientifically / Processing data and information / Select qualitative and quantitative information from texts, diagrams, flow charts, tables, databases, graphs and multimedia resources"
+  },
+  {
+   "code": "HSC-M1-T4-D2",
+   "path": "Year 12 / Working scientifically / Processing data and information / Apply quantitative processes to data, including unit conversions"
+  },
+  {
+   "code": "HSC-M1-T4-D3",
+   "path": "Year 12 / Working scientifically / Processing data and information / Select and use a range of representations to organise data and information, including graphs, keys, models, diagrams, tables and spreadsheets"
+  },
+  {
+   "code": "HSC-M1-T4-D4",
+   "path": "Year 12 / Working scientifically / Processing data and information / Extract data and information from a wide range of sources and acknowledge these sources using an accepted referencing style"
+  },
+  {
+   "code": "HSC-M1-T4-D5",
+   "path": "Year 12 / Working scientifically / Processing data and information / Describe the Cultural Knowledges and observations of Aboriginal and Torres Strait Islander Peoples and examine how these contribute to the development of scientific knowledge"
+  },
+  {
+   "code": "HSC-M1-T5-D1",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Describe qualitative and quantitative relationships between variables"
+  },
+  {
+   "code": "HSC-M1-T5-D2",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Explain patterns and trends, including inconsistencies in data and information"
+  },
+  {
+   "code": "HSC-M1-T5-D3",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Assess error, uncertainty and limitations in data and include calculations of percentage error, range, mean and standard deviation"
+  },
+  {
+   "code": "HSC-M1-T5-D4",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Assess the validity, reliability, accuracy and precision of data and information"
+  },
+  {
+   "code": "HSC-M1-T5-D5",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Interpret data and information to identify outliers, make predictions, explain results and draw conclusions"
+  },
+  {
+   "code": "HSC-M1-T5-D6",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Evaluate data and information to suggest improvements or further investigations"
+  },
+  {
+   "code": "HSC-M1-T5-D7",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Use appropriate significant figures to express quantitative solutions"
+  },
+  {
+   "code": "HSC-M1-T5-D8",
+   "path": "Year 12 / Working scientifically / Analysing data and information / Use appropriate scale prefixes for powers of 10: femto (f) = 10-15, pico (p) = 10-12, nano (n) = 10-9, micro (μ) = 10-6, milli (m) = 10-3, kilo (k) = 103, mega (M) = 106, giga (G) = 109, tera (T) = 1012 and peta (P) = 1015"
+  },
+  {
+   "code": "HSC-M1-T6-D1",
+   "path": "Year 12 / Working scientifically / Problem-solving / Apply scientific principles to address real-world applications and problems"
+  },
+  {
+   "code": "HSC-M1-T6-D2",
+   "path": "Year 12 / Working scientifically / Problem-solving / Use modelling and cause-and-effect relationships, including mathematical examples, to make predictions, explain phenomena, and solve problems"
+  },
+  {
+   "code": "HSC-M1-T6-D3",
+   "path": "Year 12 / Working scientifically / Problem-solving / Evaluate and modify a scientific investigation in response to new evidence"
+  },
+  {
+   "code": "HSC-M1-T6-D4",
+   "path": "Year 12 / Working scientifically / Problem-solving / Explain why current scientific knowledge is both contestable and testable by further inquiry"
+  },
+  {
+   "code": "HSC-M1-T7-D1",
+   "path": "Year 12 / Working scientifically / Communicating / Construct evidence-based arguments and recognise the role of peer review in the evaluation of scientific practices, solutions or conclusions"
+  },
+  {
+   "code": "HSC-M1-T7-D2",
+   "path": "Year 12 / Working scientifically / Communicating / Select and use appropriate digital, visual, written and oral media to convey scientific arguments"
+  },
+  {
+   "code": "HSC-M1-T7-D3",
+   "path": "Year 12 / Working scientifically / Communicating / Apply appropriate scientific notations, language and nomenclature"
+  },
+  {
+   "code": "HSC-M1-T7-D4",
+   "path": "Year 12 / Working scientifically / Communicating / Use evidence and correct scientific language and terminology to address a specific audience and purpose in a variety of contexts"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Advanced mechanics / Projectile motion / Explain why projectiles in a uniform gravitational field experience constant vertical acceleration and zero horizontal acceleration when gravity is the only force acting"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Advanced mechanics / Projectile motion / Resolve the instantaneous velocity of a projectile into horizontal and vertical components"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Advanced mechanics / Projectile motion / Calculate the time of flight, maximum height, range and final velocity of a projectile using , and"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Advanced mechanics / Projectile motion / Solve problems involving projectiles to analyse the relationships between launch angle, initial velocity, launch height, maximum height, time of flight, final velocity and horizontal range"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Advanced mechanics / Projectile motion / Analyse the motion of projectiles used by Aboriginal and/or Torres Strait Islander Peoples"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Advanced mechanics / Projectile motion / Conduct a practical investigation to analyse the motion of a projectile"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Account for forces that cause an object to move in uniform circular motion"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Explain why a constant net force acting perpendicular to a body’s velocity causes uniform circular motion"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Use vector diagrams to show the relationships between instantaneous velocity, change in velocity, force and centripetal acceleration for an object moving in uniform circular motion"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse the relationship between period and frequency for an object moving in uniform circular motion"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Explain why the speed of an object in circular motion is"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Describe the motion of an object that was in uniform circular motion after the forces providing the centripetal acceleration are removed"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse the relationships between speed, period, radius, centripetal force and acceleration in uniform circular motion using , and"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse the forces acting on a vehicle moving at constant speed around a horizontal uniform circular bend"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse the forces acting on a mass suspended by a string moving in horizontal uniform circular motion"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Conduct a laboratory experiment of an object in uniform circular motion to analyse the relationships between mass, radius, instantaneous velocity and centripetal force"
+  },
+  {
+   "code": "HSC-M2-T2-D11",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Solve quantitative problems involving uniform circular motion"
+  },
+  {
+   "code": "HSC-M2-T2-D12",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse the factors that affect the gravitational potential energy of an object above a planet’s surface using"
+  },
+  {
+   "code": "HSC-M2-T2-D13",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse graphs of the changes in gravitational potential energy, kinetic energy and work done for an object launched vertically to escape a planet’s gravitational field"
+  },
+  {
+   "code": "HSC-M2-T2-D14",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Derive the formula for escape velocity using the law of conservation of mechanical energy"
+  },
+  {
+   "code": "HSC-M2-T2-D15",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Solve problems involving gravitational potential energy and escape velocity"
+  },
+  {
+   "code": "HSC-M2-T2-D16",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse the relationships between gravitational potential energy, kinetic energy and total energy for a satellite in orbit using"
+  },
+  {
+   "code": "HSC-M2-T2-D17",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Solve problems involving the energy of satellites in orbit"
+  },
+  {
+   "code": "HSC-M2-T2-D18",
+   "path": "Year 12 / Advanced mechanics / Circular motion / Analyse how moving to a different circular orbit affects a satellite’s gravitational potential energy, kinetic energy and total mechanical energy"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Analyse the factors that affect the force of gravity with reference to Newton’s law of universal gravitation and and"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Analyse the factors that affect a planet’s gravitational field strength with reference to"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Solve problems involving Newton’s law of universal gravitation and gravitational field strength at any point in a gravitational field"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Explain why a planet’s radial gravitational field approximates a uniform field close to its surface"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Account for the use of circular motion as an approximation for the orbital motion of satellites and planets"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Derive the orbital velocity of a satellite by applying the law of universal gravitation"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Apply the law of ellipses and the law of equal areas to explain the motion of orbiting bodies"
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Derive the law of periods using Newton’s law of universal gravitation"
+  },
+  {
+   "code": "HSC-M2-T3-D9",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Compare the motion of 2 satellites orbiting the same central mass using the law of orbital periods and"
+  },
+  {
+   "code": "HSC-M2-T3-D10",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Analyse the relationships between acceleration, radius, mass, orbital velocity and period of an orbiting body using , , and"
+  },
+  {
+   "code": "HSC-M2-T3-D11",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Conduct a secondary-source investigation to describe the uses of low Earth orbit satellites and geostationary satellites and relate these to their orbital features"
+  },
+  {
+   "code": "HSC-M2-T3-D12",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Discuss the convention of assigning zero gravitational potential energy to masses at an infinite distance from a planet"
+  },
+  {
+   "code": "HSC-M2-T3-D13",
+   "path": "Year 12 / Advanced mechanics / Motion in gravitational fields / Explain why the convention of assigning zero gravitational potential energy to masses at an infinite distance from a planet results in negative gravitational potential energy for a mass in a radial field around the planet"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Apply conventions to determine the direction of electrostatic forces on charges in an electric field"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using , , , and equations for uniformly accelerated motion"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Analyse the energy changes of a charged particle in a uniform electric field using , and"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Solve problems involving the trajectories of charged particles projected into uniform electric fields"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Identify factors affecting the magnitude of the magnetic field produced by a moving charge"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Account for the force experienced by a charged particle moving in a magnetic field"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Predict the direction of the force acting on a charged particle moving in a magnetic field"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Analyse the force on a charged particle in a uniform magnetic field by applying"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Derive the relationship by equating the centripetal force and the magnetic force"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Solve problems involving the uniform circular motion of charged particles in uniform magnetic fields"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Account for the similarities and differences between the paths of masses in uniform gravitational fields, satellites in orbit, charged particles in electric fields, and moving charged particles in magnetic fields"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Electromagnetism / Charged particles in electric and magnetic fields / Outline the functions and effects of electric fields and magnetic fields in mass spectrometers and electron guns"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Use magnetic field interactions to explain why a current-carrying conductor experiences a force in a magnetic field"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Determine the direction of a force acting on a current-carrying conductor in a uniform magnetic field"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Analyse how the magnitude of a force acting on a current-carrying conductor varies by changing the conductor length, current, magnetic field strength, and angle between the current-carrying conductor and magnetic field"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Conduct a laboratory experiment to demonstrate the motor effect"
+  },
+  {
+   "code": "HSC-M3-T2-D5",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Solve problems involving the motor effect using and"
+  },
+  {
+   "code": "HSC-M3-T2-D6",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Analyse factors that affect the magnitude of torque using , where is the angle between the radius and the direction of the applied force"
+  },
+  {
+   "code": "HSC-M3-T2-D7",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Analyse the factors that affect the magnitude of torque on a current-carrying loop using"
+  },
+  {
+   "code": "HSC-M3-T2-D8",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Solve problems involving torque on a conducting loop in a magnetic field"
+  },
+  {
+   "code": "HSC-M3-T2-D9",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Analyse the structure and function of the components of simple direct current (DC) motors and simple alternating current (AC) motors, including rotor coils, field magnets, brushes, and split-ring commutators and slip rings"
+  },
+  {
+   "code": "HSC-M3-T2-D10",
+   "path": "Year 12 / Electromagnetism / The motor effect and electric motors / Analyse factors that can increase torque in a brushed electric motor"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Describe magnetic flux as the measure of the total magnetic field passing through a given area"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Analyse the relationships between magnetic flux, magnetic field strength, and the angle between the magnetic field and the plane of a loop, using , where is the angle between the magnetic field and the area vector (normal) of the loop"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Analyse the relationship between generated electromotive force (emf) and the change in magnetic flux per unit time, using the law of electromagnetic induction and"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Analyse how the size of generated emf is affected by factors, including the number of turns in a coil of wire, and the change in magnetic flux over time"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Explain how and the direction of an induced current are consistent with the law of conservation of energy"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Solve problems involving emf by applying the law of conservation of energy and using"
+  },
+  {
+   "code": "HSC-M3-T3-D7",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Account for the production of eddy currents in conductive materials"
+  },
+  {
+   "code": "HSC-M3-T3-D8",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Explain the effects of electromagnetic induction in straight conductors, metal plates and solenoids experiencing a change in magnetic flux"
+  },
+  {
+   "code": "HSC-M3-T3-D9",
+   "path": "Year 12 / Electromagnetism / Electromagnetic induction / Conduct a scientific investigation to examine the factors affecting electromagnetic induction in a solenoid"
+  },
+  {
+   "code": "HSC-M3-T4-D1",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Relate the structure of simple step-up transformers and step-down transformers to their functions"
+  },
+  {
+   "code": "HSC-M3-T4-D2",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain why a primary coil requires an AC input to induce an AC output in the secondary coil of a transformer"
+  },
+  {
+   "code": "HSC-M3-T4-D3",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Analyse the relationships between the primary and secondary voltages and number of turns in the primary and secondary coils of step-up and step-down transformers using"
+  },
+  {
+   "code": "HSC-M3-T4-D4",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Solve problems involving ideal transformers using , the law of conservation of energy, and"
+  },
+  {
+   "code": "HSC-M3-T4-D5",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain the differences in power output between ideal and real transformers in terms of incomplete flux linkage, eddy currents and resistive heating"
+  },
+  {
+   "code": "HSC-M3-T4-D6",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain how the components of an AC induction motor are designed to support its function and operation"
+  },
+  {
+   "code": "HSC-M3-T4-D7",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain how electromagnetic induction causes a torque on the armature of a brushless DC motor"
+  },
+  {
+   "code": "HSC-M3-T4-D8",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain how a force opposing motion is generated during electromagnetic braking"
+  },
+  {
+   "code": "HSC-M3-T4-D9",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Outline the differences between a motor and a generator in terms of energy transformation"
+  },
+  {
+   "code": "HSC-M3-T4-D10",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain the production of back emf in simple DC motors"
+  },
+  {
+   "code": "HSC-M3-T4-D11",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain the effects of back emf on the current flowing through and speed of a simple DC motor"
+  },
+  {
+   "code": "HSC-M3-T4-D12",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Outline the structure and function of components in a simple AC generator and a simple DC generator, including rotor coils, stator magnets, brushes, and slip rings and split-ring commutators"
+  },
+  {
+   "code": "HSC-M3-T4-D13",
+   "path": "Year 12 / Electromagnetism / Applications of electromagnetic induction / Explain the variations in current produced by AC generators and DC generators"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / Nature of light / Electromagnetic waves / Identify that all forms of electromagnetic radiation have constant speed, , in a vacuum"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / Nature of light / Electromagnetic waves / Explain how electromagnetic waves are produced and propagated"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / Nature of light / Electromagnetic waves / Discuss how the historical prediction of the speed of light was made by relating the electric permittivity and magnetic permeability of free space, using"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / Nature of light / Electromagnetic waves / Conduct a secondary source investigation to explain how a spark-gap oscillator and a loop antenna verified the predicted speed of electromagnetic waves (Hertz experiment)"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / Nature of light / Electromagnetic waves / Conduct a laboratory experiment to measure the speed of electromagnetic waves and assess the accuracy of the measured value"
+  },
+  {
+   "code": "HSC-M4-T2-D1",
+   "path": "Year 12 / Nature of light / The wave model of light / Account for the diffraction and interference effects produced when monochromatic light is shone through a double slit"
+  },
+  {
+   "code": "HSC-M4-T2-D2",
+   "path": "Year 12 / Nature of light / The wave model of light / Explain why small slit gaps are used in diffraction of light experiments"
+  },
+  {
+   "code": "HSC-M4-T2-D3",
+   "path": "Year 12 / Nature of light / The wave model of light / Interpret the theoretical pattern and intensity graph produced by visible light passing through a double slit"
+  },
+  {
+   "code": "HSC-M4-T2-D4",
+   "path": "Year 12 / Nature of light / The wave model of light / Explain observations of the double-slit experiment in terms of constructive interference and destructive interference"
+  },
+  {
+   "code": "HSC-M4-T2-D5",
+   "path": "Year 12 / Nature of light / The wave model of light / Analyse the factors involved in the production of an interference pattern from a double slit and a diffraction grating using"
+  },
+  {
+   "code": "HSC-M4-T2-D6",
+   "path": "Year 12 / Nature of light / The wave model of light / Conduct a laboratory experiment to produce and analyse interference patterns"
+  },
+  {
+   "code": "HSC-M4-T2-D7",
+   "path": "Year 12 / Nature of light / The wave model of light / Solve problems involving interference patterns from a double slit and a diffraction grating"
+  },
+  {
+   "code": "HSC-M4-T2-D8",
+   "path": "Year 12 / Nature of light / The wave model of light / Compare linearly polarised and unpolarised light in terms of the plane of the electric field"
+  },
+  {
+   "code": "HSC-M4-T2-D9",
+   "path": "Year 12 / Nature of light / The wave model of light / Explain how light becomes polarised when passing through a filter"
+  },
+  {
+   "code": "HSC-M4-T2-D10",
+   "path": "Year 12 / Nature of light / The wave model of light / Solve problems involving polarised light using"
+  },
+  {
+   "code": "HSC-M4-T2-D11",
+   "path": "Year 12 / Nature of light / The wave model of light / Evaluate the evidence supporting the wave model of light, including diffraction, interference and polarisation"
+  },
+  {
+   "code": "HSC-M4-T3-D1",
+   "path": "Year 12 / Nature of light / The quantum model of light / Explain the particle model of light in terms of photons with discrete energy and frequency"
+  },
+  {
+   "code": "HSC-M4-T3-D2",
+   "path": "Year 12 / Nature of light / The quantum model of light / Analyse the relationships between photon energy, frequency, speed of light and wavelength, using and"
+  },
+  {
+   "code": "HSC-M4-T3-D3",
+   "path": "Year 12 / Nature of light / The quantum model of light / Describe the relationship between the temperature of an object and the distribution of kinetic energies among particles within the object"
+  },
+  {
+   "code": "HSC-M4-T3-D4",
+   "path": "Year 12 / Nature of light / The quantum model of light / Explain why black bodies emit electromagnetic radiation as a function of their temperature"
+  },
+  {
+   "code": "HSC-M4-T3-D5",
+   "path": "Year 12 / Nature of light / The quantum model of light / Use models to explain why theoretical black bodies are perfect absorbers and emitters of energy"
+  },
+  {
+   "code": "HSC-M4-T3-D6",
+   "path": "Year 12 / Nature of light / The quantum model of light / Analyse the black-body curves of objects of different temperatures"
+  },
+  {
+   "code": "HSC-M4-T3-D7",
+   "path": "Year 12 / Nature of light / The quantum model of light / Solve problems involving black bodies using"
+  },
+  {
+   "code": "HSC-M4-T3-D8",
+   "path": "Year 12 / Nature of light / The quantum model of light / Compare black-body radiation curves with classical curve predictions to highlight the importance of a theory being supported by experimental observations"
+  },
+  {
+   "code": "HSC-M4-T3-D9",
+   "path": "Year 12 / Nature of light / The quantum model of light / Explain how the proposal of quantised energy given by resolves the difference between classical predictions and experimental evidence for black-body radiators"
+  },
+  {
+   "code": "HSC-M4-T3-D10",
+   "path": "Year 12 / Nature of light / The quantum model of light / Solve problems using"
+  },
+  {
+   "code": "HSC-M4-T3-D11",
+   "path": "Year 12 / Nature of light / The quantum model of light / Use quantum theory to analyse the relationships between frequency of light, intensity of light, energy of photons and number of photons"
+  },
+  {
+   "code": "HSC-M4-T3-D12",
+   "path": "Year 12 / Nature of light / The quantum model of light / Account for the photoelectric effect in metals"
+  },
+  {
+   "code": "HSC-M4-T3-D13",
+   "path": "Year 12 / Nature of light / The quantum model of light / Relate the law of conservation of energy to the maximum kinetic energy of photoelectrons and"
+  },
+  {
+   "code": "HSC-M4-T3-D14",
+   "path": "Year 12 / Nature of light / The quantum model of light / Analyse data from photoelectric effect and thermionic emission experiments to explain relationships using and"
+  },
+  {
+   "code": "HSC-M4-T3-D15",
+   "path": "Year 12 / Nature of light / The quantum model of light / Solve problems involving the photoelectric effect and thermionic emission using and"
+  },
+  {
+   "code": "HSC-M4-T3-D16",
+   "path": "Year 12 / Nature of light / The quantum model of light / Analyse graphs of photoelectric experiments involving different metals"
+  },
+  {
+   "code": "HSC-M4-T3-D17",
+   "path": "Year 12 / Nature of light / The quantum model of light / Conduct a secondary-source investigation to explain how the photelectric effect is used in photovoltaics (solar cells) and one other real-world application"
+  },
+  {
+   "code": "HSC-M4-T3-D18",
+   "path": "Year 12 / Nature of light / The quantum model of light / Explain how observations of the photoelectric effect and data can validate predictions about the quantum nature of light"
+  },
+  {
+   "code": "HSC-M4-T4-D1",
+   "path": "Year 12 / Nature of light / Light and special relativity / Compare inertial and non-inertial frames of reference"
+  },
+  {
+   "code": "HSC-M4-T4-D2",
+   "path": "Year 12 / Nature of light / Light and special relativity / Outline Einstein’s first and second postulates of special relativity"
+  },
+  {
+   "code": "HSC-M4-T4-D3",
+   "path": "Year 12 / Nature of light / Light and special relativity / Apply Einstein’s first and second postulates of special relativity to a simultaneity thought experiment involving 2 events occurring at opposite ends of a vehicle moving at relativistic speed when viewed from different frames of reference"
+  },
+  {
+   "code": "HSC-M4-T4-D4",
+   "path": "Year 12 / Nature of light / Light and special relativity / Apply Einstein’s first and second postulates of special relativity to a time dilation thought experiment involving light pulses reflecting inside a vehicle moving at relativistic speed when viewed from different frames of reference"
+  },
+  {
+   "code": "HSC-M4-T4-D5",
+   "path": "Year 12 / Nature of light / Light and special relativity / Account for the relativistic effects of time dilation, length contraction and relativistic momentum from an external frame of reference"
+  },
+  {
+   "code": "HSC-M4-T4-D6",
+   "path": "Year 12 / Nature of light / Light and special relativity / Solve quantitative problems involving , and"
+  },
+  {
+   "code": "HSC-M4-T4-D7",
+   "path": "Year 12 / Nature of light / Light and special relativity / Explain why an object with mass cannot travel at the speed of light"
+  },
+  {
+   "code": "HSC-M4-T4-D8",
+   "path": "Year 12 / Nature of light / Light and special relativity / Analyse the evidence supporting the theory of relativity, including the muon lifetime and atomic clocks moving at different velocities"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Account for the origin of cathode rays in a cathode-ray tube"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Describe the observations made inside a low-pressure tube when a cathode ray interacts with a Maltese cross, a paddle wheel, electric fields, and magnetic fields"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Analyse how observations of cathode rays provide evidence that cathode rays consist of particles with mass and charge"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how the charge-to-mass ratio of the electron was first determined"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Derive the charge-to-mass ratio for an electron in a cathode-ray tube with perpendicular electric and magnetic fields"
+  },
+  {
+   "code": "HSC-M5-T1-D6",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Evaluate the evidence supporting the plum pudding model of the atom"
+  },
+  {
+   "code": "HSC-M5-T1-D7",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how the observations of the gold foil experiment led to the proposal of a nuclear model of the atom"
+  },
+  {
+   "code": "HSC-M5-T1-D8",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how limitations of the nuclear model led to the development of the stationary energy level model of the atom"
+  },
+  {
+   "code": "HSC-M5-T1-D9",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how the stationary energy level model of the atom uses a mixture of classical physics and quantum physics to address the limitations of the nuclear model of the atom"
+  },
+  {
+   "code": "HSC-M5-T1-D10",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain why the difference between the predicted mass and measured mass of a nucleus was a limitation of early models of the atom, and led to the prediction of neutrons"
+  },
+  {
+   "code": "HSC-M5-T1-D11",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Analyse how the law of the conservation of energy and the law of the conservation of momentum were applied in experiments to determine the existence and properties of the neutron"
+  },
+  {
+   "code": "HSC-M5-T1-D12",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain why unique line emission spectra and absorption spectra are produced by an element"
+  },
+  {
+   "code": "HSC-M5-T1-D13",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Identify the limitations of the stationary energy level model of the atom"
+  },
+  {
+   "code": "HSC-M5-T1-D14",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Interpret energy level diagrams showing the transition of electrons between energy levels involving both absorption and emission of energy"
+  },
+  {
+   "code": "HSC-M5-T1-D15",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how the law of conservation of energy applies to electrons transitioning between energy levels"
+  },
+  {
+   "code": "HSC-M5-T1-D16",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Solve problems involving the transition of electrons using , and"
+  },
+  {
+   "code": "HSC-M5-T1-D17",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how standing waves can be used to represent electrons in stationary energy levels using qualitative data"
+  },
+  {
+   "code": "HSC-M5-T1-D18",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Use to relate wave and particle properties of matter"
+  },
+  {
+   "code": "HSC-M5-T1-D19",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain why the production of electron diffraction patterns provides evidence for electrons behaving as waves"
+  },
+  {
+   "code": "HSC-M5-T1-D20",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how the proposal of electrons as waves in atoms addresses a limitation of the stationary energy level model"
+  },
+  {
+   "code": "HSC-M5-T1-D21",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Describe baryons in terms of quark combinations and the role of the strong force"
+  },
+  {
+   "code": "HSC-M5-T1-D22",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Describe atomic structure in terms of quarks and leptons"
+  },
+  {
+   "code": "HSC-M5-T1-D23",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Explain how particle accelerators and collision experiments are used to discover and study quarks, leptons and force-carrying bosons"
+  },
+  {
+   "code": "HSC-M5-T1-D24",
+   "path": "Year 12 / Matter, energy and the cosmos / Modelling the atom / Analyse how experimental evidence can lead to refinements in scientific models"
+  },
+  {
+   "code": "HSC-M5-T2-D1",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Relate the isotopic mass number of an element to its subatomic components"
+  },
+  {
+   "code": "HSC-M5-T2-D2",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Describe the range and effect of the strong nuclear force on nucleons"
+  },
+  {
+   "code": "HSC-M5-T2-D3",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Explain how the balance between the strong nuclear force and the electrostatic repulsion force impacts the stability of the nucleus"
+  },
+  {
+   "code": "HSC-M5-T2-D4",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Describe the process of alpha decay, beta decay and gamma decay"
+  },
+  {
+   "code": "HSC-M5-T2-D5",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Compare the composition, charge, mass, ionising ability, and penetration of alpha radiation, beta radiation and gamma radiation"
+  },
+  {
+   "code": "HSC-M5-T2-D6",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Use nuclear decay equations to describe reactions, including radioactive decay and transmutation"
+  },
+  {
+   "code": "HSC-M5-T2-D7",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Apply conservation of mass, energy and charge to nuclear reactions, transmutation and radioactive decay"
+  },
+  {
+   "code": "HSC-M5-T2-D8",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Describe the role of the weak force in beta-minus decay and beta-plus transformation"
+  },
+  {
+   "code": "HSC-M5-T2-D9",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Describe the concept of half-life as it relates to a radioisotope"
+  },
+  {
+   "code": "HSC-M5-T2-D10",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Interpret graphs of radioactive decay to determine the changing amounts of radioisotopes over time"
+  },
+  {
+   "code": "HSC-M5-T2-D11",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Relate the decay constant to the half-life of radioisotopes"
+  },
+  {
+   "code": "HSC-M5-T2-D12",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Solve problems involving radioactive decay using"
+  },
+  {
+   "code": "HSC-M5-T2-D13",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Conduct a practical investigation to model the process of the radioactive decay of an isotope and analyse its half-life"
+  },
+  {
+   "code": "HSC-M5-T2-D14",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Outline the contribution of selected scientists to radio-medicine"
+  },
+  {
+   "code": "HSC-M5-T2-D15",
+   "path": "Year 12 / Matter, energy and the cosmos / Radioactivity / Explain how the properties of radioisotopes determine their suitability for use in medical scans and industry"
+  },
+  {
+   "code": "HSC-M5-T3-D1",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Identify that the special theory of relativity demonstrates the mass–energy equivalence relationship"
+  },
+  {
+   "code": "HSC-M5-T3-D2",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Account for the law of conservation of mass and the law of conservation of energy being replaced by the law of conservation of mass–energy"
+  },
+  {
+   "code": "HSC-M5-T3-D3",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain the relationship between mass defect and the energy released in a nuclear reaction using"
+  },
+  {
+   "code": "HSC-M5-T3-D4",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain the process of nuclear fission"
+  },
+  {
+   "code": "HSC-M5-T3-D5",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Compare the processes of controlled chain reactions and uncontrolled chain reactions"
+  },
+  {
+   "code": "HSC-M5-T3-D6",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain the structure and function of the components of a fission reactor, including fuel, control rods, moderator and coolant"
+  },
+  {
+   "code": "HSC-M5-T3-D7",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain the process of nuclear fusion"
+  },
+  {
+   "code": "HSC-M5-T3-D8",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Outline the contribution of selected scientists to the discovery of nuclear fission"
+  },
+  {
+   "code": "HSC-M5-T3-D9",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Use nuclear equations to describe fusion of small nuclei and fission of large nuclei"
+  },
+  {
+   "code": "HSC-M5-T3-D10",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain why fusion requires high temperatures and pressures"
+  },
+  {
+   "code": "HSC-M5-T3-D11",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Compare the energy release of nuclear reactions with the energy release of fossil fuels and conventional explosives"
+  },
+  {
+   "code": "HSC-M5-T3-D12",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain nuclear binding energy"
+  },
+  {
+   "code": "HSC-M5-T3-D13",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Solve problems involving mass defect and nuclear binding energy using and"
+  },
+  {
+   "code": "HSC-M5-T3-D14",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Distinguish between the proton-neutron ratio and binding energy in the context of nuclear stability"
+  },
+  {
+   "code": "HSC-M5-T3-D15",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Analyse graphical representations of nuclear binding energy per nucleon as atomic number increases, and apply this to the iron limit"
+  },
+  {
+   "code": "HSC-M5-T3-D16",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Account for net release of energy in fission reactions and fusion reactions"
+  },
+  {
+   "code": "HSC-M5-T3-D17",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Describe the properties of a positron"
+  },
+  {
+   "code": "HSC-M5-T3-D18",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Discuss the process of positron–electron annihilation"
+  },
+  {
+   "code": "HSC-M5-T3-D19",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain how the law of conservation of mass–energy applies to particle–antiparticle annihilation"
+  },
+  {
+   "code": "HSC-M5-T3-D20",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Explain how positron emission tomography (PET) uses positron–electron annihilation to produce a medical scan"
+  },
+  {
+   "code": "HSC-M5-T3-D21",
+   "path": "Year 12 / Matter, energy and the cosmos / Nuclear energy / Solve problems using mass defect and for nuclear decay, nuclear fission, nuclear fusion, and positron–electron annihilation"
+  },
+  {
+   "code": "HSC-M5-T4-D1",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Analyse how the spectra of astronomical objects can be used to draw conclusions about their translational velocity, chemical composition and surface temperature"
+  },
+  {
+   "code": "HSC-M5-T4-D2",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Describe Payne Gaposchkin's spectral analysis technique for determining the chemical composition of stars"
+  },
+  {
+   "code": "HSC-M5-T4-D3",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Explain how measured spectra of galaxies provides evidence that the universe is expanding"
+  },
+  {
+   "code": "HSC-M5-T4-D4",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Analyse H-R diagrams to classify stars and determine their surface temperature, colour, luminosity and size"
+  },
+  {
+   "code": "HSC-M5-T4-D5",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Explain the role of gravity and nuclear fusion in the formation of a main sequence star"
+  },
+  {
+   "code": "HSC-M5-T4-D6",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Explain how the mass of a main sequence star determines its position on an H-R diagram and the amount of time that it remains on the main sequence"
+  },
+  {
+   "code": "HSC-M5-T4-D7",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Analyse the nucleosynthesis reactions that occur in main sequence stars by interpreting representations of the proton–proton chain and the carbon–nitrogen–oxygen (CNO) cycle"
+  },
+  {
+   "code": "HSC-M5-T4-D8",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Relate Aboriginal Peoples’ Knowledge of different star colours to the type of nucleosynthesis reactions occurring in main sequence stars"
+  },
+  {
+   "code": "HSC-M5-T4-D9",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Describe, using a H-R diagram, the evolutionary path of a star of one solar mass and a star of greater than 3 solar masses, once they have completed hydrogen fusion"
+  },
+  {
+   "code": "HSC-M5-T4-D10",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Explain how changing forces of gravity and the outwards pressure created by nuclear fusion allows for the synthesis of successively heavier elements"
+  },
+  {
+   "code": "HSC-M5-T4-D11",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Explain, in terms of binding energy, why iron is the heaviest element that can be synthesised in a red supergiant"
+  },
+  {
+   "code": "HSC-M5-T4-D12",
+   "path": "Year 12 / Matter, energy and the cosmos / Astrophysics / Explain how elements up to, and including iron, are synthesised by stars, and how atoms larger than iron are synthesised"
+  }
+ ],
+ "questions": [
+  {
+   "id": "qhsc2015_30",
+   "year": 2015,
+   "number": "30",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Dynamics / Forces and motion / Solve a variety of problems in static and dynamic real-world situations by applying Newton's laws of motion | Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect the force of gravity with reference to Newton's law of universal gravitation and F = GMm/r² and F_w = mg",
+   "text": "The following is a timeline for the Cassini space probe mission to Saturn.\nExplain how Newton's Laws of Motion and Universal Gravitation were applied to the Cassini mission."
+  },
+  {
+   "id": "qhsc2016_05",
+   "year": 2016,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electricity and Magnetism / Electrostatics / Analyse the factors that affect the strength of the electric field between 2 charged parallel plates using E = V/d",
+   "text": "The diagram shows two parallel charged plates $5 \\times 10^{-3}\\,\\mathrm{m}$ apart. What is the magnitude of the electric field between the plates in $\\mathrm{V\\,m^{-1}}$?\n$3.3 \\times 10^{-4}$\n0.33\n3\n3000"
+  },
+  {
+   "id": "qhsc2016_06",
+   "year": 2016,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / Light and special relativity / Outline Einstein's first and second postulates of special relativity",
+   "text": "In a thought experiment, a jet is travelling at $0.5c$ relative to the ground, towards a train that is travelling at $0.1c$ relative to the ground, as shown. What is the speed of the light emitted from the train's headlight, as measured by a pilot in the jet?\n$0.1c$\n$0.4c$\n$0.6c$\n$1.0c$"
+  },
+  {
+   "id": "qhsc2016_08",
+   "year": 2016,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Electromagnetic induction / Analyse the relationship between generated electromotive force (emf) and the change in magnetic flux per unit time, using the law of electromagnetic induction and |ε| = N|ΔΦ/Δt|",
+   "text": "Which movement of the magnet(s) will produce the greatest deflection of the galvanometer?"
+  },
+  {
+   "id": "qhsc2016_10",
+   "year": 2016,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / Light and special relativity / Apply Einstein's first and second postulates of special relativity to a simultaneity thought experiment involving 2 events occurring at opposite ends of a vehicle moving at relativistic speed when viewed from different frames of reference",
+   "text": "In a thought experiment, a train is moving at a constant speed of $0.8c$. A lamp is located at the midpoint of a carriage. There are doors W and Z at each end of the carriage which open automatically when light from the lamp reaches them. The passenger standing at the midpoint of the carriage switches on the lamp. Which statement best explains what the passenger observes about the doors?\nZ opens before W because the lamp is moving towards Z.\nW opens before Z because W is moving towards the lamp.\nW and Z open simultaneously because the lamp is placed at an equal distance from both.\nW and Z open simultaneously because the distance from the lamp to each door has contracted by the same amount."
+  },
+  {
+   "id": "qhsc2016_11",
+   "year": 2016,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The quantum model of light / Solve problems using E = hf",
+   "text": "What is the wavelength, in metres, of a photon with an energy of $3.5\\,\\mathrm{eV}$?\n$1.2 \\times 10^{-6}$\n$3.5 \\times 10^{-7}$\n$1.18 \\times 10^{-15}$\n$5.67 \\times 10^{-26}$"
+  },
+  {
+   "id": "qhsc2016_14",
+   "year": 2016,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Compare the motion of 2 satellites orbiting the same central mass using the law of orbital periods and r³/T² = GM/4π²",
+   "text": "A satellite orbits Earth with period $T$. An identical satellite orbits the planet Xerus which has a mass four times that of Earth. Both satellites have the same orbital radius $r$. What is the period of the satellite orbiting Xerus?\n$T$\n$\\frac{T}{4}$\n$\\frac{T}{2}$\n$2T$"
+  },
+  {
+   "id": "qhsc2016_15",
+   "year": 2016,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The quantum model of light / Conduct a secondary-source investigation to explain how the photoelectric effect is used in photovoltaics (solar cells) and one other real-world application",
+   "text": "Which of the following statements correctly describes the effect of light in a solar cell?\nThe light produces electron-hole pairs.\nThe light causes pure silicon to become n-type silicon.\nThe light increases the potential difference across the p-n boundary.\nThe light transfers energy to electrons in the conduction band of the p-type semiconductor."
+  },
+  {
+   "id": "qhsc2016_25",
+   "year": 2016,
+   "number": "25",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect the force of gravity with reference to Newton's law of universal gravitation and F = GMm/r² and F_w = mg",
+   "text": "Two teams carried out independent experiments with the purpose of investigating Newton's Law of Universal Gravitation. Each team used the same procedure to accurately measure the gravitational force acting between two spherical masses over a range of distances.\nThe following graphs show the data collected by each team.\nCompare qualitatively the relationship between force and distance in the graphs.\nAssess the appropriateness of Team A's data and Team B's data in achieving the purpose of the experiments."
+  },
+  {
+   "id": "qhsc2016_30",
+   "year": 2016,
+   "number": "30",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse the factors that affect the gravitational potential energy of an object above a planet's surface using U = −GMm/r | Electromagnetism / Electromagnetic induction / Explain how |ε| = N|ΔΦ/Δt| and the direction of an induced current are consistent with the law of conservation of energy",
+   "text": "The following makeshift device was made to provide lighting for a stranded astronaut on Mars. The mass of Mars is $6.39 \\times 10^{23}\\,\\mathrm{kg}$.\nThe 2 kg mass falls, turning the DC generator, which supplies energy to the light bulb. The mass falls from a point that is 3 376 204 m from the centre of Mars.\nAnswer parts (a) and (b).\nCalculate the maximum possible energy released by the light bulb as the mass falls through a distance of one metre.\nExplain the difference in the behaviour of the falling mass when the switch is open."
+  },
+  {
+   "id": "qhsc2017_04",
+   "year": 2017,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Dynamics / Forces and motion / Solve problems involving Newton's second law of motion using F_net = ma",
+   "text": "An astronaut with a mass of $75\\,\\mathrm{kg}$ lands on Planet X where her weight is $630\\,\\mathrm{N}$. What is the acceleration due to gravity (in $\\mathrm{m\\,s^{-2}}$) on Planet X?\n0.12\n8.4\n9.8\n735"
+  },
+  {
+   "id": "qhsc2017_07",
+   "year": 2017,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / Light and special relativity / Outline Einstein's first and second postulates of special relativity",
+   "text": "Which of the following is a correct statement about the Michelson–Morley experiment?\nIt proved the existence of the luminiferous aether.\nIt compared the speeds of light rays travelling along parallel paths.\nIt was invalid because the equipment was not sufficiently sensitive.\nIt was unable to detect the motion of Earth through the luminiferous aether."
+  },
+  {
+   "id": "qhsc2017_08",
+   "year": 2017,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using E = V/d, F = qE, W = qV = ΔKE, and equations for uniformly accelerated motion",
+   "text": "An electron is fired in a vacuum towards a screen. With no electric field being applied, the electron hits the screen at $P$. A uniform electric field is turned on and another electron is fired towards the screen from the same location, at the same velocity, striking the screen at point $Q$.\nWith the electric field still turned on, a proton is fired towards the screen from the same starting point as the electrons and with the same velocity.\nAt what point does the proton strike the screen?\nA\nB\nC\nD"
+  },
+  {
+   "id": "qhsc2017_11",
+   "year": 2017,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electricity and Magnetism / Electrostatics / Analyse the factors that affect the strength of the electric field between 2 charged parallel plates using E = V/d",
+   "text": "An AC source is connected to a transformer having a primary winding of 900 turns. Connected to the secondary winding of 450 turns is a pair of parallel plates $0.01\\,\\mathrm{m}$ apart.\nThe AC input is shown in the graph.\nWhat is the maximum field strength (in $\\mathrm{V\\,m^{-1}}$) produced between the plates?\n$1.7\\,\\mathrm{V\\,m^{-1}}$\n$6.8\\,\\mathrm{V\\,m^{-1}}$\n$1.7\\times 10^{4}\\,\\mathrm{V\\,m^{-1}}$\n$6.8\\times 10^{4}\\,\\mathrm{V\\,m^{-1}}$"
+  },
+  {
+   "id": "qhsc2017_12",
+   "year": 2017,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse the relationships between gravitational potential energy, kinetic energy and total energy for a satellite in orbit using U + K = −GMm/2r",
+   "text": "A satellite orbits Earth with an elliptical orbit that passes through positions $X$ and $Y$.\nWhich row of the table correctly identifies the position at which the satellite has greater kinetic energy and the position at which it has greater potential energy?\nGreater kinetic energy at $X$; greater potential energy at $X$.\nGreater kinetic energy at $X$; greater potential energy at $Y$.\nGreater kinetic energy at $Y$; greater potential energy at $X$.\nGreater kinetic energy at $Y$; greater potential energy at $Y$."
+  },
+  {
+   "id": "qhsc2017_17",
+   "year": 2017,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / The motor effect and electric motors / Solve problems involving the motor effect using F = lI×B = lIBsinθ",
+   "text": "A magnet rests on an electronic balance. A rigid copper rod runs horizontally through the magnet, at right angles to the magnetic field. The rod is anchored so that it cannot move.\nWhich expression can be used to calculate the balance reading when the switch is closed?\n$0.200\\,\\mathrm{kg} + BIl$\n$0.200\\,\\mathrm{kg} + \\dfrac{BIl}{9.8}$\n$0.200\\,\\mathrm{kg} - BIl$\n$0.200\\,\\mathrm{kg} - \\dfrac{BIl}{9.8}$"
+  },
+  {
+   "id": "qhsc2017_18",
+   "year": 2017,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Derive the relationship r = mv/qB by equating the centripetal force and the magnetic force",
+   "text": "A particle of mass $m$ and charge $q$ travelling at velocity $v$ enters a magnetic field of magnitude $B$ and follows the path shown.\nA second particle enters a magnetic field of magnitude $2B$ with a velocity of $\\tfrac{1}{2}v$ and follows an identical path.\nWhat is the mass and charge of the second particle?\nMass $m$, charge $q$.\nMass $\\tfrac{1}{2}m$, charge $2q$.\nMass $4m$, charge $q$.\nMass $m$, charge $\\tfrac{1}{2}q$."
+  },
+  {
+   "id": "qhsc2017_20",
+   "year": 2017,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / Light and special relativity / Solve quantitative problems involving t = t₀/√(1−v²/c²), l_v = l₀√(1−v²/c²) and p_v = m₀v/√(1−v²/c²)",
+   "text": "The length of a spaceship is measured by an observer to be $3.57\\,\\mathrm{m}$ as the spaceship passes with a velocity of $0.7c$. At what velocity would the spaceship be moving relative to the observer if its measured length was $2.5\\,\\mathrm{m}$?\n$0.490c$\n$0.707c$\n$0.714c$\n$0.866c$"
+  },
+  {
+   "id": "qhsc2017_21",
+   "year": 2017,
+   "number": "21",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / The quantum model of light / Analyse the relationships between photon energy, frequency, speed of light and wavelength, using E = hf and c = fλ",
+   "text": "A laser emits light of wavelength $550\\,\\mathrm{nm}$.\nCalculate the frequency of this light.\nThe electrons in a specific metal must absorb a minimum of $5\\times 10^{-19}\\,\\mathrm{J}$ in order to be ejected from its surface. Explain why electrons will not be ejected from this metal when photons of wavelength $550\\,\\mathrm{nm}$ strike its surface. Support your answer with relevant calculations."
+  },
+  {
+   "id": "qhsc2017_22",
+   "year": 2017,
+   "number": "22",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Electromagnetism / The motor effect and electric motors / Analyse factors that affect the magnitude of torque using τ = rFsinθ, where θ is the angle between the radius and the direction of the applied force",
+   "text": "Answer this part of the question.\nA torque is applied to a nut, using a wrench, as shown.\nSuggest TWO ways that the applied torque could be increased.\nA coil consisting of 15 turns is placed in a uniform $0.2\\,\\mathrm{T}$ magnetic field between two magnets. A current of $7.0$ amperes flows in the direction shown.\nCalculate the magnitude and direction of the torque produced by the side $BC$ of the 15-turn coil."
+  },
+  {
+   "id": "qhsc2017_27",
+   "year": 2017,
+   "number": "27",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Electromagnetism / Electromagnetic induction / Analyse the relationships between magnetic flux, magnetic field strength, and the angle between the magnetic field and the plane of a loop, using Φ = BAcosθ, where θ is the angle between the magnetic field and the area vector (normal) of the loop",
+   "text": "The diagram shows an electric circuit in a magnetic field directed into the page. The graph shows how the flux through the conductive loop changes over a period of 12 seconds.\nCalculate the maximum magnetic field strength within the stationary loop during the 12-second interval.\nCalculate the maximum voltage generated in the circuit by the changing flux. In your answer, indicate the polarity of the terminals $P$ and $Q$ when this occurs."
+  },
+  {
+   "id": "qhsc2017_29",
+   "year": 2017,
+   "number": "29",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Dynamics / Momentum and energy / Apply the law of conservation of mechanical energy and use W = ΔKE = ½mv² and W = ΔU to solve problems",
+   "text": "A spring is used to construct a device to launch a projectile. The force ($F$) required to compress the spring is measured as a function of the displacement ($x$) by which the spring is compressed.\nThe potential energy stored in the compressed spring can be calculated from $E_p = \\tfrac{1}{2}kx^2$, where $k$ is the gradient of the force–displacement graph shown.\nA projectile of mass $0.04\\,\\mathrm{kg}$ is launched using this device with the spring compressed by $0.08\\,\\mathrm{m}$. Calculate the launch velocity.\nCalculate the range of a projectile launched by this device from ground level at an angle of $60^\\circ$ to the horizontal with a velocity of $10\\,\\mathrm{m\\,s^{-1}}$."
+  },
+  {
+   "id": "qhsc2017_32",
+   "year": 2017,
+   "number": "32",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Waves and Thermodynamics / Wave behaviours / Solve total internal reflection and critical angle problems using sinθ_c = n₂/n₁",
+   "text": "Medical Physics\nIn an endoscope, how do the arrangements of fibres in coherent and incoherent bundles differ?\nExplain how light is used to create an endoscopic image.\nDescribe how ultrasound can be used to measure ONE property of bone.\n$B$ scans typically use ultrasound waves of frequency $20\\,\\mathrm{MHz}$ whereas sector scans typically use ultrasound waves of frequency $3.5\\,\\mathrm{MHz}$. Account for the use of different frequencies in terms of the purposes of these scans.\nExplain how the application of a radio frequency wave changes the behaviour of nuclei with net spin in a strong, external magnetic field.\nDescribe ONE way in which X-ray radiation for medical imaging is produced.\nWhy is a CAT scan image superior to a plain X-ray image?\nFunctional imaging techniques allow assessment of the way the body is working, rather than providing detailed information about its structure. Relate the processes used to produce functional medical images to their benefits. Include examples in your answer."
+  },
+  {
+   "id": "qhsc2017_35",
+   "year": 2017,
+   "number": "35",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "Electricity and Magnetism",
+   "text": "The Age of Silicon\nThe diagram shows a logic gate with two inputs. Construct a truth table for this logic gate.\nThe logic circuit shown can be used to store data. The $Q$ output is in the ‘0’ state. The $R$ and $S$ inputs are in the ‘1’ state.\nShow that the state of $Q$ remains the same unless the $S$ input state is changed to the ‘0’ state.\nThe diagram shows a circuit incorporating a light dependent resistor (LDR).\nUse a sketch to show how the output of this circuit could be modified to operate a 12-volt fan.\nThis graph shows how the resistance of the LDR changes with illuminance.\nFor an input logic level to be high, the voltage must be greater than 2 V.\nWhat is the minimum illuminance required to turn on the LED? Support your answer with calculations.\nContrast open-loop gain amplifiers and closed-loop gain amplifiers in terms of their function and circuit construction.\nThe diagram shows an operational amplifier connected to two input signals $V_1$ and $V_2$.\nDetermine the formula relating inputs $V_1$ and $V_2$ to $V_{\\mathrm{out}}$.\nThe input to $V_1$ is shown by the graph.\nDraw a voltage–time graph showing the voltage at $V_{\\mathrm{out}}$.\nThe block diagram shows the essential components of a digital signal processing system.\nWith reference to the diagram provided, explain why both analogue and digital circuits are used in audio systems."
+  },
+  {
+   "id": "qhsc2018_05",
+   "year": 2018,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / The motor effect and electric motors / Solve problems involving the motor effect using F = lI×B = lIBsinθ",
+   "text": "The diagram shows a current-carrying conductor in a magnetic field.\nWhat is the magnitude of the force on the conductor?\n$0\\,\\mathrm{N}$\n$0.05\\,\\mathrm{N}$\n$0.09\\,\\mathrm{N}$\n$0.10\\,\\mathrm{N}$"
+  },
+  {
+   "id": "qhsc2018_07",
+   "year": 2018,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect a planet's gravitational field strength with reference to g = GM/r²",
+   "text": "A planet $X$ has twice the mass and twice the radius of Earth.\nWhat is the magnitude of the gravitational acceleration close to the surface of planet $X$?\n$\\frac{1}{2}g$\n$1\\,g$\n$2\\,g$\n$4\\,g$"
+  },
+  {
+   "id": "qhsc2018_08",
+   "year": 2018,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light",
+   "text": "Crystal lattice structures for two types of doped semiconductors and band gap diagrams for two types of materials are shown.\n$n$-type semiconductor, crystal lattice structure U, band gap diagram X.\n$n$-type semiconductor, crystal lattice structure T, band gap diagram Y.\n$p$-type semiconductor, crystal lattice structure T, band gap diagram Y.\n$p$-type semiconductor, crystal lattice structure U, band gap diagram X."
+  },
+  {
+   "id": "qhsc2018_10",
+   "year": 2018,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / The motor effect and electric motors / Analyse the factors that affect the magnitude of torque on a current-carrying loop using τ = nIA×B = nIABsinθ | Electromagnetism / The motor effect and electric motors / Analyse factors that affect the magnitude of torque using τ = rFsinθ, where θ is the angle between the radius and the direction of the applied force",
+   "text": "The diagram shows some parts of a simple DC motor.\nWhich row of the table correctly describes the direction of force acting on side WX and the direction of torque this produces on the coil?\nDirection of force acting on WX: Remains constant. Direction of torque produced on the coil by the force acting on WX: Remains constant.\nDirection of force acting on WX: Remains constant. Direction of torque produced on the coil by the force acting on WX: Reverses every 180 degrees.\nDirection of force acting on WX: Reverses every 180 degrees. Direction of torque produced on the coil by the force acting on WX: Remains constant.\nDirection of force acting on WX: Reverses every 180 degrees. Direction of torque produced on the coil by the force acting on WX: Reverses every 180 degrees."
+  },
+  {
+   "id": "qhsc2018_13",
+   "year": 2018,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Derive the relationship r = mv/qB by equating the centripetal force and the magnetic force",
+   "text": "An electron moves in a circular path with radius $r$ in a magnetic field as shown.\nIf the speed of the electron is increased, which row of the table correctly shows the effects of this change?\nForce on electron: Increases. Radius of path: Decreases.\nForce on electron: Increases. Radius of path: Increases.\nForce on electron: Decreases. Radius of path: Decreases.\nForce on electron: Decreases. Radius of path: Increases."
+  },
+  {
+   "id": "qhsc2018_20",
+   "year": 2018,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Electromagnetic induction / Explain how |ε| = N|ΔΦ/Δt| and the direction of an induced current are consistent with the law of conservation of energy",
+   "text": "Two identical galvanometers X and Y were connected as shown and placed on a desk.\nThe meter X was then picked up and rotated suddenly anticlockwise to the position shown by the dotted outline, while the meter Y remained stationary on the desk.\nWhen this action is carried out, the pointers on both meters move relative to the scales on the meters.\nWhich row of the table correctly identifies the movement of the pointer on Y and the reason for its behaviour?\nMovement of pointer: Towards right. Reason: The movement of X produces a current that flows into the opposite terminal of Y.\nMovement of pointer: Towards right. Reason: According to Lenz's law the effect produced must oppose the cause of the flux.\nMovement of pointer: Towards left. Reason: Y behaves as a motor with the current flowing through it from right to left.\nMovement of pointer: Towards left. Reason: For every force, there is an equal and opposite force."
+  },
+  {
+   "id": "qhsc2018_21",
+   "year": 2018,
+   "number": "21",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Dynamics / Forces and motion / Use examples to describe the effects of Newton's third law of motion | Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect the force of gravity with reference to Newton's law of universal gravitation and F = GMm/r² and F_w = mg",
+   "text": "Compare the force of gravity exerted on the moon by Earth with the force of gravity exerted on Earth by the moon.\nCompare the force of gravity exerted on the moon by Earth with the force of gravity exerted on Earth by the moon.\nThe acceleration due to gravity on the moon is $1.6\\,\\mathrm{m\\,s^{-2}}$ and on Earth it is $9.8\\,\\mathrm{m\\,s^{-2}}$. Quantitatively compare the mass and weight of a $70\\,\\mathrm{kg}$ person on the moon and on Earth."
+  },
+  {
+   "id": "qhsc2018_29",
+   "year": 2018,
+   "number": "29",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / The quantum model of light / Conduct a secondary-source investigation to explain how the photoelectric effect is used in photovoltaics (solar cells) and one other real-world application | The Nature of Light",
+   "text": "The diagram shows two different cells.\nHow does light contribute to the flow of current in each of these two cells?\nExplain how ONE advance in scientific understanding and ONE advance in technology have led to the use of semiconductors."
+  },
+  {
+   "id": "qhsc2018_31",
+   "year": 2018,
+   "number": "31",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "From the Universe to the Atom",
+   "text": "Geophysics\nSeismic methods are used to investigate physical properties of Earth.\nIdentify TWO other methods used by geophysicists.\nHow does a geophysical method, other than a seismic method, provide information about physical properties of Earth?\nIn November 2017, a new polar-orbiting weather satellite NOAA-20 was placed in orbit. Its orbital period is $100$ minutes and it orbits Earth at an altitude of $870\\,\\mathrm{km}$. The average radius of Earth is $6370\\,\\mathrm{km}$.\nExplain ONE feature of NOAA-20's orbit that will make it better for monitoring climate than a geostationary satellite.\nCalculate the mass of Earth using the information provided about NOAA-20's orbit. The answer is different to that shown on the data sheet provided.\nExplain how both Richer and Newton independently used data obtained from experiments using pendulums to determine the shape of Earth.\nHow are seismic data used to provide a model of Earth's core? Support your answer with a diagram.\nExplain the role of palaeomagnetic data in providing evidence that supports the theory of plate tectonics."
+  },
+  {
+   "id": "qhsc2018_32",
+   "year": 2018,
+   "number": "32",
+   "marks": 25,
+   "type": "extended_response",
+   "current_path": "From the Universe to the Atom",
+   "text": "Medical Physics\nMagnetic resonance imaging (MRI)\nIdentify TWO specific uses of magnetic resonance imaging (MRI).\nThe diagram shows a person in the magnetic field within an MRI machine.\nDescribe the effects of the application of the strong magnetic field, $B$, on hydrogen nuclei in the person's body.\nUltrasound\nThe diagram represents fat and kidney tissues inside a human body. The acoustic impedances of these tissues are not the same.\nUltrasound waves A and B have the same frequency.\nCompare the behaviour of ultrasound waves A and B at the fat-kidney boundary.\nThe density of kidney tissue is $1050\\,\\mathrm{kg\\,m^{-3}}$ and the velocity of ultrasound waves in kidney tissue is $1560\\,\\mathrm{m\\,s^{-1}}$. At the fat-kidney boundary, the intensity of the reflected ultrasound is $1.0\\,\\%$ of that of the incident ultrasound.\nCalculate the acoustic impedance of fat tissue.\nIodine-124 is a radioactive element. The equation for its decay is shown. The symbol $e^{+}$ is sometimes shown as $\\beta^{+}$.\nThe following is a decay table for iodine-124.\nJustify the use of iodine-124 as a medical diagnostic tool. Support your answer quantitatively.\nExplain how the Doppler effect is used for medical imaging.\nThe following image of the bones in a person's neck was produced using computed axial tomography (CAT).\nCompare both the production and benefits of this CAT image with a conventional X-ray image of the same part of the person's body."
+  },
+  {
+   "id": "qhsc2019_04",
+   "year": 2019,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Waves and Thermodynamics / Light and sound / Interpret diagrams of the electromagnetic spectrum to quantitatively demonstrate the relationship between frequency, wavelength and energy E = hf and c = fλ",
+   "text": "Four stars, P, Q, R and S, are labelled on the Hertzsprung–Russell diagram.\nWhich statement is correct?\nS has a greater luminosity than Q.\nR is a blue star whereas S is a red star.\nS has a higher surface temperature than R.\nP is at a more advanced stage of its evolution than R."
+  },
+  {
+   "id": "qhsc2019_06",
+   "year": 2019,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The quantum model of light / Solve problems involving black bodies using λ_max = b/T",
+   "text": "Which graph correctly shows the relationship between the surface temperature of a black body ($T$) and the wavelength ($\\lambda$) at which the maximum intensity of light is emitted?"
+  },
+  {
+   "id": "qhsc2019_07",
+   "year": 2019,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Electromagnetic induction / Explain how |ε| = N|ΔΦ/Δt| and the direction of an induced current are consistent with the law of conservation of energy",
+   "text": "A bar magnet is moved away from a stationary coil.\nWhich diagram correctly shows the direction of the induced current in the coil and the resulting magnetic polarity of the coil?"
+  },
+  {
+   "id": "qhsc2019_09",
+   "year": 2019,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse the relationships between gravitational potential energy, kinetic energy and total energy for a satellite in orbit using U + K = −GMm/2r",
+   "text": "Two satellites have the same mass. One (LEO) is in low-Earth orbit and the other (GEO) is in a geostationary orbit. The total energy of a satellite is half its gravitational potential energy.\nWhich row of the table correctly identifies the satellite with the greater orbital period and the satellite with the greater total energy?"
+  },
+  {
+   "id": "qhsc2019_10",
+   "year": 2019,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The wave model of light / Solve problems involving polarised light using I = I_maxcos²θ",
+   "text": "A beam of light passes through two polarisers. The second polariser has a transmission axis at an angle of $30^{\\circ}$ to that of the first polariser. The intensity of the light beam before and after the second polariser is $I_0$ and $I_B$ respectively.\nWhich row of the table correctly identifies the value of $\\frac{I_B}{I_0}$ and the model of light demonstrated by this investigation?"
+  },
+  {
+   "id": "qhsc2019_11",
+   "year": 2019,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Derive the law of periods r³/T² = GM/4π² using Newton's law of universal gravitation",
+   "text": "A dwarf planet orbits the sun with a period of $40\\,000$ years. The average distance from the sun to Earth is one astronomical unit. What is the average distance between this dwarf planet and the sun in astronomical units?\n34\n200\n1170\n$8\\times10^{6}$"
+  },
+  {
+   "id": "qhsc2019_14",
+   "year": 2019,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Derive the orbital velocity of a satellite v_orb = √(GM/r) by applying the law of universal gravitation",
+   "text": "A satellite in circular orbit at a distance $r$ from the centre of Earth has an orbital velocity $v$. If the distance was increased to $2r$, what would be the satellite's orbital velocity?\n$\\frac{v}{\\sqrt{2}}$\n$0.7v$\n$1.4v$\n$2v$"
+  },
+  {
+   "id": "qhsc2019_16",
+   "year": 2019,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using E = V/d, F = qE, W = qV = ΔKE, and equations for uniformly accelerated motion",
+   "text": "The diagram shows the trajectory of a particle with charge $q$ and mass $m$ when fired horizontally into a vacuum chamber, where it falls under the influence of gravity.\nThe horizontal distance, $d$, travelled by the particle is recorded. The experiment is repeated with a uniform vertical electric field applied such that the particle travels the same horizontal distance, $d$, but strikes the upper surface of the chamber.\nWhat is the magnitude of the electric field?\n$\\frac{mg}{q}$\n$\\frac{mg}{2q}$\n$\\frac{q}{2mg}$\n$\\frac{2mg}{q}$"
+  },
+  {
+   "id": "qhsc2019_18",
+   "year": 2019,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Electromagnetic induction / Solve problems involving emf by applying the law of conservation of energy and using |ε| = N|ΔΦ/Δt|",
+   "text": "A circular loop of wire is connected to a battery and a lamp. The apparatus is moved from P to Q along the path shown at a constant velocity through a region containing a uniform magnetic field.\nWhich graph shows the brightness of the lamp as the apparatus moves between P and Q?"
+  },
+  {
+   "id": "qhsc2019_21",
+   "year": 2019,
+   "number": "21",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "From the Universe to the Atom / Modelling the atom / Use λ = h/mv to relate wave and particle properties of matter",
+   "text": "Outline de Broglie's contribution to quantum mechanics. Support your answer with a relevant equation."
+  },
+  {
+   "id": "qhsc2019_22",
+   "year": 2019,
+   "number": "22",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Waves and Thermodynamics / Light and sound / Interpret diagrams of the electromagnetic spectrum to quantitatively demonstrate the relationship between frequency, wavelength and energy E = hf and c = fλ",
+   "text": "Spectra can be used to determine the chemical composition and surface temperature of stars.\nDescribe how spectra provide information about OTHER features of stars."
+  },
+  {
+   "id": "qhsc2019_26",
+   "year": 2019,
+   "number": "26",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Electromagnetism / The motor effect and electric motors / Analyse factors that affect the magnitude of torque using τ = rFsinθ, where θ is the angle between the radius and the direction of the applied force",
+   "text": "A student carried out an experiment to investigate the relationship between the torque produced by a force and the angle at which the force is applied. A $400\\,\\mathrm{N}$ force was applied to the same position on the handle of a spanner at different angles, as shown.\nA high-precision device measured the torque applied to the bolt. The data from the experiment is graphed below.\nThe student concluded that the torque ($\\tau$) was proportional to the angle ($\\theta$) and proposed the model\nwhere $k = 1.7\\,\\mathrm{N\\,m/degree}$.\nJustify the validity of the student's model using information from the graph.\nWhat happens to the accuracy of this model's predictions as the angle increases beyond $25^{\\circ}$? Justify your answer with reference to a different model."
+  },
+  {
+   "id": "qhsc2019_29",
+   "year": 2019,
+   "number": "29",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Analyse the energy changes of a charged particle in a uniform electric field using W, ΔU and ΔKE",
+   "text": "A particle having mass $m$ and charge $q$ is accelerated from rest through a potential difference $V$. Assume that the only force acting on the particle is due to the electric field associated with this potential difference.\nShow that the final velocity of the particle is given by"
+  },
+  {
+   "id": "qhsc2019_30",
+   "year": 2019,
+   "number": "30",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Dynamics / Momentum and energy / Apply the law of conservation of mechanical energy and use W = ΔKE = ½mv² and W = ΔU to solve problems | Advanced Mechanics / Projectile motion / Calculate the time of flight, maximum height, range and final velocity of a projectile using s = ut + ½at², v = u + at and v² = u² + 2as",
+   "text": "A ball, initially at rest in position P, travels along a frictionless track to point Q and then falls to strike the floor below.\nAt the instant the ball leaves the track at Q it has a velocity of $1.5\\,\\mathrm{m\\,s^{-1}}$ at an angle of $50^{\\circ}$ to the horizontal.\nCalculate the difference in height between P and Q.\nThe ball takes $0.5\\,\\mathrm{s}$ to reach the floor after leaving the track at Q.\nCalculate the height of Q above the floor."
+  },
+  {
+   "id": "qhsc2019_36",
+   "year": 2019,
+   "number": "36",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Explain the relationship between mass defect and the energy released in a nuclear reaction using E = mc²",
+   "text": "A radon-198 atom, initially at rest, undergoes alpha decay. The masses of the atoms involved are shown in atomic mass units (u).\nThe kinetic energy of the polonium atom produced is $2.55 \\times 10^{-14}\\,\\mathrm{J}$.\nBy considering mass defect, calculate the kinetic energy of the alpha particle, and explain why it is significantly greater than that of the polonium atom."
+  },
+  {
+   "id": "qhsc2020_03",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / Electromagnetic waves / Discuss how the historical prediction of the speed of light was made by relating the electric permittivity and magnetic permeability of free space, using c = 1/√(ε₀μ₀)",
+   "text": "What was the basis for Maxwell's prediction of the velocity of electromagnetic waves?\nExperiments using magnetic fields to accelerate particles\nExperiments using light and mirrors to establish the finite speed of light\nEquations showing how oscillating electric and magnetic fields propagate\nEquations showing how electromagnetic waves are affected by gravitational fields"
+  },
+  {
+   "id": "qhsc2020_04",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Radioactivity / Relate the decay constant λ to the half-life of radioisotopes",
+   "text": "The graph shows the mass of a radioactive isotope as a function of time.\n$0.0030\\,\\mathrm{years^{-1}}$\n$0.0069\\,\\mathrm{years^{-1}}$\n$2.0\\,\\mathrm{years^{-1}}$\n$100\\,\\mathrm{years^{-1}}$"
+  },
+  {
+   "id": "qhsc2020_06",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Waves and Thermodynamics / Light and sound / Interpret diagrams of the electromagnetic spectrum to quantitatively demonstrate the relationship between frequency, wavelength and energy E = hf and c = fλ",
+   "text": "The Hertzsprung–Russell diagram shows characteristics of stars in a globular cluster 100 light years in diameter and 27 000 light years from Earth.\nage.\ncolour.\nluminosity.\nmass."
+  },
+  {
+   "id": "qhsc2020_18",
+   "year": 2020,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Derive the law of periods r³/T² = GM/4π² using Newton's law of universal gravitation",
+   "text": "An observer sees Io complete one orbit of Jupiter as Earth moves from $P_1$ to $P_2$, and records the observed orbital period as $t_P$. Similarly, the time for one orbit of Io around Jupiter was measured as Earth moved between the pairs of points at Q, R and S, with the corresponding measured periods of Io being $t_Q$, $t_R$ and $t_S$.\nWhich measurement of the orbital period would be the longest?\n$t_P$\n$t_Q$\n$t_R$\n$t_S$"
+  },
+  {
+   "id": "qhsc2020_19",
+   "year": 2020,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Electromagnetic induction / Analyse the relationship between generated electromotive force (emf) and the change in magnetic flux per unit time, using the law of electromagnetic induction and |ε| = N|ΔΦ/Δt|",
+   "text": "A conductor $PQ$ is in a uniform magnetic field. The conductor rotates around the end $P$ at a constant angular velocity.\nWhich graph shows the induced emf between P and Q as the conductor completes one revolution from the position shown?"
+  },
+  {
+   "id": "qhsc2020_23",
+   "year": 2020,
+   "number": "23",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Electricity and Magnetism / Electric circuits / Describe the relationship between power and voltage using P = VI | Electromagnetism / The motor effect and electric motors / Analyse the factors that affect the magnitude of torque on a current-carrying loop using τ = nIA×B = nIABsinθ",
+   "text": "The graph shows data for a motor connected to a 240 V power supply.\nThe equation for the torque, $t$, produced by the motor is:\nwhere $t$ = torque (Nm), $V$ = voltage (V), $I$ = current (A), $h$ = efficiency = 0.3, and $\\omega$ = angular velocity (rad s$^{-1}$).\nA circuit breaker cuts the current to the motor if the current exceeds 5 A.\nDetermine what will happen when the motor produces a torque of 2.95 Nm. Show relevant calculations."
+  },
+  {
+   "id": "qhsc2020_24",
+   "year": 2020,
+   "number": "24",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Advanced Mechanics / Projectile motion / Calculate the time of flight, maximum height, range and final velocity of a projectile using s = ut + ½at², v = u + at and v² = u² + 2as",
+   "text": "The graph shows the vertical displacement of a projectile throughout its trajectory. The range of the projectile is 130 m.\nCalculate the initial velocity of the projectile."
+  },
+  {
+   "id": "qhsc2020_27",
+   "year": 2020,
+   "number": "27",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / The wave model of light / Analyse the factors involved in the production of an interference pattern from a double slit and a diffraction grating using dsinθ = mλ = dy/L",
+   "text": "The following apparatus is used to investigate light interference using a double slit.\nThe distance, $y$, from the slits to the screen can be varied. The adjustment screws (S) vary the distance, $d$, between the slits. The wavelength of the laser light can be varied across the visible spectrum. The diffraction pattern shown is for a specific wavelength of light.\nExplain TWO methods of keeping the distance between the maxima at A and B constant when the wavelength of the laser light is reduced."
+  },
+  {
+   "id": "qhsc2020_31",
+   "year": 2020,
+   "number": "31",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Dynamics / Momentum and energy / Apply the law of conservation of mechanical energy and use W = ΔKE = ½mv² and W = ΔU to solve problems | Advanced Mechanics / Circular motion / Analyse the relationships between speed, period, radius, centripetal force and acceleration in uniform circular motion using v = 2πr/T, a_c = v²/r and F_c = mv²/r",
+   "text": "The orbit of a comet is shown.\nAccount for the changes in velocity of the comet as it completes one orbit from position P.\nTwo stars, A and B, of equal mass $m$, separated by a distance $x$, interact gravitationally such that the speed of A is constant.\nDerive an expression for the speed of B."
+  },
+  {
+   "id": "qhsc2020_34",
+   "year": 2020,
+   "number": "34",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Electricity and Magnetism / Electrostatics / Solve problems involving changes in electric potential energy in a uniform electric field using W = qV = qEd and W = ΔKE | Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using E = V/d, F = qE, W = qV = ΔKE, and equations for uniformly accelerated motion",
+   "text": "A charged particle, $q_1$, is fired midway between oppositely charged plates X and Y, as shown in Figure 1. The voltage between the plates is $V$ volts.\nThe particle strikes plate Y at point P, a horizontal distance $s$ from the edge of the plate. Ignore the effect of gravity.\nPlate Y is then moved to the position shown in Figure 2, with the voltage between the plates remaining the same.\nAn identical particle, $q_2$, is fired into the electric field at the same velocity, entering the field at the same distance from plate X as $q_1$.\nCompare the work done on $q_1$ and $q_2$.\nCompare the horizontal distances travelled by $q_1$ and $q_2$ in the electric field."
+  },
+  {
+   "id": "qhsc2021_07",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Applications of electromagnetic induction / Analyse the relationships between the primary and secondary voltages and number of turns in the primary and secondary coils of step-up and step-down transformers using V_p/V_s = N_p/N_s | Electromagnetism / Applications of electromagnetic induction / Solve problems involving ideal transformers using P = VI, the law of conservation of energy, and V_pI_p = V_sI_s",
+   "text": "In a certain ideal transformer, the current in the secondary coil is four times as large as the current in the primary coil.\nWhich row of the table correctly identifies the type of transformer and the ratio of turns?"
+  },
+  {
+   "id": "qhsc2021_11",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The quantum model of light / Solve problems involving black bodies using λ_max = b/T",
+   "text": "What is the peak wavelength of electromagnetic radiation emitted by a person with a body temperature of $37^{\\circ}\\mathrm{C}$ ($310\\,\\mathrm{K}$)?\n$9.3 \\times 10^{-6}\\,\\mathrm{m}$\n$7.8 \\times 10^{-5}\\,\\mathrm{m}$\n$9.3 \\times 10^{-3}\\,\\mathrm{m}$\n$7.8 \\times 10^{-2}\\,\\mathrm{m}$"
+  },
+  {
+   "id": "qhsc2021_14",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect the force of gravity with reference to Newton's law of universal gravitation and F = GMm/r² and F_w = mg | Dynamics / Forces and motion / Use examples to describe the effects of Newton's third law of motion",
+   "text": "Which of the following statements correctly describes the gravitational interaction between the Earth and the Moon?\nThe Earth accelerates towards the Moon.\nThe net force acting on the Earth is zero.\nThe Moon and Earth experience equal and opposite accelerations.\nThe force acting on the Moon is smaller than the force acting on the Earth."
+  },
+  {
+   "id": "qhsc2021_16",
+   "year": 2021,
+   "number": "16",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Explain the relationship between mass defect and the energy released in a nuclear reaction using E = mc² | From the Universe to the Atom / Nuclear energy / Identify that the special theory of relativity demonstrates the mass–energy equivalence relationship E = mc²",
+   "text": "The Sun has an energy output of $3.85 \\times 10^{28}\\,\\mathrm{W}$. By how much does the Sun's mass decrease each minute?\n$4.28 \\times 10^{11}\\,\\mathrm{kg}$\n$2.57 \\times 10^{13}\\,\\mathrm{kg}$\n$1.28 \\times 10^{20}\\,\\mathrm{kg}$\n$7.70 \\times 10^{21}\\,\\mathrm{kg}$"
+  },
+  {
+   "id": "qhsc2021_24",
+   "year": 2021,
+   "number": "24",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Electromagnetism / Electromagnetic induction / Analyse the relationship between generated electromotive force (emf) and the change in magnetic flux per unit time, using the law of electromagnetic induction and |ε| = N|ΔΦ/Δt| | Electromagnetism / Electromagnetic induction / Solve problems involving emf by applying the law of conservation of energy and using |ε| = N|ΔΦ/Δt|",
+   "text": "A stationary coil of 35 turns and cross-sectional area of $0.02\\,\\mathrm{m^2}$ is placed between two electromagnets, and connected to a voltmeter as shown. The electromagnets produce a uniform magnetic field of $0.15\\,\\mathrm{T}$ through the coil.\nThe magnitude of the magnetic field is then reduced to zero at a constant rate over a period of $0.4\\,\\mathrm{s}$. Calculate the magnitude of the emf induced in the coil."
+  },
+  {
+   "id": "qhsc2021_25",
+   "year": 2021,
+   "number": "25",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse how moving to a different circular orbit affects a satellite's gravitational potential energy, kinetic energy and total mechanical energy | Advanced Mechanics / Motion in gravitational fields / Derive the law of periods r³/T² = GM/4π² using Newton's law of universal gravitation | Advanced Mechanics / Motion in gravitational fields / Compare the motion of 2 satellites orbiting the same central mass using the law of orbital periods and r³/T² = GM/4π²",
+   "text": "A satellite is launched from the surface of Mars into an orbit that keeps it directly above a position on the surface of Mars.\nMass of Mars $= 6.39 \\times 10^{23}\\,\\mathrm{kg}$. Length of Martian day $= 24$ hours $40$ minutes.\nIdentify TWO energy changes as the satellite moves from the surface of Mars into orbit.\nCalculate the orbital radius of the satellite."
+  },
+  {
+   "id": "qhsc2021_26",
+   "year": 2021,
+   "number": "26",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / The quantum model of light / Analyse the relationships between photon energy, frequency, speed of light and wavelength, using E = hf and c = fλ | The Nature of Light / The quantum model of light / Solve problems using E = hf",
+   "text": "A student performs an experiment to measure Planck's constant, $h$, using a device that emits specific frequencies of light when specific voltages are applied.\nThe voltage, $V$, needed to produce each frequency, $f$, is given by\nwhere $q_e$ is the charge on an electron. Data from the experiment is shown.\nGraph this data on the axes provided. Include a line of best fit.\nThe student proposes using data point 1 to calculate a value for Planck's constant.\nJustify a better method to calculate Planck's constant from the experimental data provided."
+  },
+  {
+   "id": "qhsc2021_35",
+   "year": 2021,
+   "number": "35",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Solve problems involving mass defect and nuclear binding energy using Δm = m_i − m_f and E = mc² | From the Universe to the Atom / Nuclear energy / Solve problems using mass defect and E = mc² for nuclear decay, nuclear fission, nuclear fusion, and positron–electron annihilation | From the Universe to the Atom / Radioactivity / Relate the decay constant λ to the half-life of radioisotopes | From the Universe to the Atom / Radioactivity / Solve problems involving radioactive decay using λ = ln(2)/T_½",
+   "text": "A spacecraft is powered by a radioisotope generator. Pu-238 in the generator undergoes alpha decay, releasing energy. The decay is shown with the mass of each species in atomic mass units, u.\nShow that the energy released by one decay is $9.0 \\times 10^{-13}\\,\\mathrm{J}$.\nAt launch, the generator contains $9.0 \\times 10^{24}$ atoms of Pu-238. The half-life of Pu-238 is 87.7 years.\nCalculate the total energy produced by the generator during the first ten years after launch."
+  },
+  {
+   "id": "qhsc2022_01",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Applications of electromagnetic induction / Analyse the relationships between the primary and secondary voltages and number of turns in the primary and secondary coils of step-up and step-down transformers using V_p/V_s = N_p/N_s",
+   "text": "An ideal transformer has 20 turns on the primary coil and an input voltage of $100\\,\\mathrm{V}$. How many turns are there on the secondary coil if the output voltage is $400\\,\\mathrm{V}$?\n4\n5\n80\n400"
+  },
+  {
+   "id": "qhsc2022_06",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse the factors that affect the gravitational potential energy of an object above a planet's surface using U = −GMm/r",
+   "text": "The elliptical orbit of a planet around a star is shown. Which type of energy is greater at position P than at Q?\nKinetic\nNuclear\nPotential\nTotal"
+  },
+  {
+   "id": "qhsc2022_07",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The quantum model of light / Solve problems using E = hf",
+   "text": "A photon has an energy of $9.0 \\times 10^{-24}\\,\\mathrm{J}$. What is the frequency of this radiation?\n$1.00 \\times 10^{-40}\\,\\mathrm{Hz}$\n$7.36 \\times 10^{-11}\\,\\mathrm{Hz}$\n$1.36 \\times 10^{10}\\,\\mathrm{Hz}$\n$5.97 \\times 10^{11}\\,\\mathrm{Hz}$"
+  },
+  {
+   "id": "qhsc2022_09",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The quantum model of light / Solve problems involving black bodies using λ_max = b/T",
+   "text": "The radiation emitted by a black body has a peak wavelength of $5.8 \\times 10^{-7}\\,\\mathrm{m}$. What is its temperature?\n$3000\\,\\mathrm{K}$\n$4500\\,\\mathrm{K}$\n$5000\\,\\mathrm{K}$\n$5500\\,\\mathrm{K}$"
+  },
+  {
+   "id": "qhsc2022_10",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Analyse the relationships between acceleration, radius, mass, orbital velocity and period of an orbiting body using a_c = v²/r, v = 2πr/T, v_orb = √(GM/r) and r³/T² = GM/4π²",
+   "text": "The orbital velocity, $v$, of a satellite around a planet is given by $v = \\sqrt{GM/r}$. Which graph is consistent with this relationship?"
+  },
+  {
+   "id": "qhsc2022_13",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Compare the motion of 2 satellites orbiting the same central mass using the law of orbital periods and r³/T² = GM/4π²",
+   "text": "Two satellites share an orbit around a planet. One satellite has twice the mass of the other. Which quantity would be different for the two satellites?\nSpeed\nMomentum\nOrbital period\nCentripetal acceleration"
+  },
+  {
+   "id": "qhsc2022_17",
+   "year": 2022,
+   "number": "17",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The wave model of light / Solve problems involving polarised light using I = I_maxcos²θ",
+   "text": "Unpolarised light of intensity $I_0$ is incident upon a vertically polarised filter. The filtered light then passes through a pair of glasses. The glasses have polarising filters, with one side polarised vertically and the other horizontally. The filter undergoes one complete $360^{\\circ}$ rotation around point P, as shown. Which of the following correctly compares $I_y$ to the intensity at other positions?\n$I_y$ never equals $I_x$\n$I_z$ never equals $I_y$\n$I_y$ sometimes equals $I_z$\n$I_y$ sometimes equals $I_0$"
+  },
+  {
+   "id": "qhsc2022_18",
+   "year": 2022,
+   "number": "18",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electricity and Magnetism / Electrostatics / Solve problems relating to the charged particles in electric fields using F = qE, E = V/d, F_net = ma and W = ΔKE",
+   "text": "A charged oil droplet was observed between metal plates, as shown. While the switch was open, the oil droplet moved downwards at a constant speed. After the switch was closed, the oil droplet moved upwards at the same constant speed. Assume that the only three forces that may act on the oil droplet are the force of gravity, the force due to the electric field and the frictional force between the air and the oil droplet. The magnitudes of these forces are $F_G$ (due to gravity), $F_E$ (due to the electric field) and $F_F$ (due to the frictional force). Which row of the table shows all the forces affecting the motion of the oil droplet in the direction indicated, and the relationship between these forces?\nDownwards motion: $F_G > F_F$\nUpwards motion: $F_E > F_F$\nDownwards motion: $F_G > F_F$\nUpwards motion: $F_E = F_G + F_F$\nDownwards motion: $F_G = F_F$\nUpwards motion: $F_G = F_E$\nDownwards motion: $F_G = F_F$\nUpwards motion: $F_E = F_G + F_F$"
+  },
+  {
+   "id": "qhsc2022_26",
+   "year": 2022,
+   "number": "26",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / The quantum model of light / Solve problems involving the photoelectric effect and thermionic emission using K_max = hf − φ and K_max = qV₀ | Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using E = V/d, F = qE, W = qV = ΔKE, and equations for uniformly accelerated motion",
+   "text": "Light of frequency $7.5 \\times 10^{14}\\,\\mathrm{Hz}$ is incident on a calcium metal sheet which has a work function of $2.9\\,\\mathrm{eV}$. Photoelectrons are emitted. The metal is in a uniform electric field of $5.2\\,\\mathrm{N\\,C^{-1}}$, perpendicular to the surface of the metal, as shown.\nShow that the maximum kinetic energy of an emitted photoelectron is $3.2 \\times 10^{-20}\\,\\mathrm{J}$.\nCalculate the maximum distance, $d$, an emitted photoelectron can travel from the surface of the metal."
+  },
+  {
+   "id": "qhsc2022_28",
+   "year": 2022,
+   "number": "28",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Solve problems involving mass defect and nuclear binding energy using Δm = m_i − m_f and E = mc²",
+   "text": "Two steps in the CNO cycle of nuclear fusion are shown.\nStep X\nStep Y\nStep X releases $1.20\\,\\mathrm{MeV}$. The masses in Step Y are shown in the table.\nPropose a reason why Step Y releases more energy than Step X. Support your answer with calculations."
+  },
+  {
+   "id": "qhsc2022_30",
+   "year": 2022,
+   "number": "30",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / Light and special relativity / Apply Einstein's first and second postulates of special relativity to a time dilation thought experiment involving light pulses reflecting inside a vehicle moving at relativistic speed when viewed from different frames of reference | The Nature of Light / Light and special relativity / Solve quantitative problems involving t = t₀/√(1−v²/c²), l_v = l₀√(1−v²/c²) and p_v = m₀v/√(1−v²/c²)",
+   "text": "In a thought experiment, light travels from X to a mirror Y and back to X on a moving train carriage. The path of the light relative to an observer on the train is shown.\nRelative to an observer outside the train, the path of the light is shown below, at three consecutive times as the train carriage moves along the track.\nDescribe qualitatively how the constancy of the speed of light and the thought experiment above led Einstein to predict time dilation.\nThe train is travelling with a velocity $v = 0.96c$. To the observer inside the train, the return journey for the light between X and Y takes 15 nanoseconds. How long would this return journey take according to the observer outside the train?"
+  },
+  {
+   "id": "qhsc2022_34",
+   "year": 2022,
+   "number": "34",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Derive the relationship r = mv/qB by equating the centripetal force and the magnetic force | Electromagnetism / Charged particles in electric and magnetic fields / Analyse the force on a charged particle in a uniform magnetic field by applying F = qv×B = qvBsinθ",
+   "text": "Three charged particles, X, Y and Z, travelling along straight, parallel trajectories at the same speed, enter a region in which there is a uniform magnetic field which causes them to follow the paths shown. Assume that the particles do not exert any significant force on each other.\nExplain the different paths that the particles follow through the magnetic field."
+  },
+  {
+   "id": "qhsc2023_01",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Analyse the factors that affect a planet's gravitational field strength with reference to g = GM/r²",
+   "text": "The gravitational field strength acting on a spacecraft decreases as its altitude increases. This is due to a change in the\nmass of Earth.\nmass of the spacecraft.\ndensity of the atmosphere.\ndistance of the spacecraft from Earth's centre."
+  },
+  {
+   "id": "qhsc2023_07",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Modelling the atom / Use λ = h/mv to relate wave and particle properties of matter",
+   "text": "A proton and a neutron travel at the same speed. Which statement correctly explains the difference between their de Broglie wavelengths?\nThe proton has a longer wavelength because its mass is greater.\nThe proton has a shorter wavelength because its mass is smaller.\nThe neutron has a shorter wavelength because its mass is greater.\nThe neutron has a longer wavelength because its mass is smaller."
+  },
+  {
+   "id": "qhsc2023_10",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / The motor effect and electric motors / Analyse the factors that affect the magnitude of torque on a current-carrying loop using τ = nIA×B = nIABsinθ",
+   "text": "Figure I shows a current flowing through a loop of wire that is in a uniform magnetic field.\nThe loop is then rotated to the position shown in Figure II. The magnitude of the force on the side XY and the magnitude of the torque on the loop in Figure II are compared to those in Figure I. Which row of the table correctly describes the comparison?\nForce in I is greater than in II; torque in I equals torque in II.\nForce in I is greater than in II; torque in I is greater than in II.\nForce in I equals force in II; torque in I equals torque in II.\nForce in I equals force in II; torque in I is greater than torque in II."
+  },
+  {
+   "id": "qhsc2023_12",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using E = V/d, F = qE, W = qV = ΔKE, and equations for uniformly accelerated motion",
+   "text": "Figure I shows a positively charged particle accelerating freely from X to Y, between oppositely charged plates. The change in the particle's kinetic energy is W. The distance between the plates is then doubled as shown in Figure II. The same charge accelerates from rest over the same distance from X to Y.\nWhat is the change in kinetic energy of the positively charged particle shown in Figure II?\n$W$\n$\\dfrac{W}{2}$\n$W$\n$2W$"
+  },
+  {
+   "id": "qhsc2023_13",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Solve problems involving mass defect and nuclear binding energy using Δm = m_i − m_f and E = mc²",
+   "text": "Nucleus X has a greater binding energy than nucleus Y. What can be deduced about X and Y?\nX is more stable than Y.\nY is more stable than X.\nX has a greater mass defect than Y.\nY has a greater mass defect than X."
+  },
+  {
+   "id": "qhsc2023_22",
+   "year": 2023,
+   "number": "22",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "The Nature of Light / Light and special relativity / Solve quantitative problems involving t = t₀/√(1−v²/c²), l_v = l₀√(1−v²/c²) and p_v = m₀v/√(1−v²/c²)",
+   "text": "A spacecraft passes Earth at a speed of $0.9c$. The spacecraft emits a light pulse every $3.1 \\times 10^{-9}\\,\\mathrm{s}$, as measured by the crew on the spacecraft. What is the time between the pulses, as measured by an observer on Earth?"
+  },
+  {
+   "id": "qhsc2023_23",
+   "year": 2023,
+   "number": "23",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Solve problems involving Newton's law of universal gravitation and gravitational field strength at any point in a gravitational field | The Nature of Light / The quantum model of light / Solve problems using E = hf | The Nature of Light / The quantum model of light / Solve problems involving black bodies using λ_max = b/T",
+   "text": "The James Webb Space Telescope (JWST) has a mass of $6.1 \\times 10^{3}\\,\\mathrm{kg}$ and orbits the Sun at a distance of approximately $1.52 \\times 10^{11}\\,\\mathrm{m}$.\nThe Sun has a mass of $1.99 \\times 10^{30}\\,\\mathrm{kg}$.\nCalculate the magnitude of gravitational force the Sun exerts on the JWST.\nThe telescope is sensitive to wavelengths from $6.0 \\times 10^{-7}\\,\\mathrm{m}$ to $2.8 \\times 10^{-5}\\,\\mathrm{m}$. What is the minimum photon energy that it can detect?\nThe JWST observed an exoplanet emitting a peak wavelength of $1.14 \\times 10^{-5}\\,\\mathrm{m}$. Calculate the temperature of the exoplanet."
+  },
+  {
+   "id": "qhsc2023_26",
+   "year": 2023,
+   "number": "26",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Solve problems involving mass defect and nuclear binding energy using Δm = m_i − m_f and E = mc²",
+   "text": "Consider the following nuclear reaction.\nThe masses of the isotopes in this process are shown in the table.\nCalculate the energy released in this reaction."
+  },
+  {
+   "id": "qhsc2023_28",
+   "year": 2023,
+   "number": "28",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Electromagnetism / Applications of electromagnetic induction / Analyse the relationships between the primary and secondary voltages and number of turns in the primary and secondary coils of step-up and step-down transformers using V_p/V_s = N_p/N_s | Electromagnetism / Applications of electromagnetic induction / Solve problems involving ideal transformers using P = VI, the law of conservation of energy, and V_pI_p = V_sI_s",
+   "text": "An ideal transformer is connected to a 240 V AC supply. It has 300 turns on the primary coil and 50 turns on the secondary coil. It is connected in the circuit with two identical light globes, X and Y, as shown.\nCalculate the voltage across light globe X when the switch is open.\nExplain why, after the switch has been closed, the current in the primary coil is different from when the switch is open."
+  },
+  {
+   "id": "qphys2024_06",
+   "year": 2024,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The quantum model of light / Relate the law of conservation of energy to the maximum kinetic energy of photoelectrons and K_max = hf − φ",
+   "text": "The photoelectric effect is mathematically modelled by the following relationship:\nIn this model, the symbol $\\phi$ represents the amount of energy\nsupplied by a photon to an electron.\nretained by an electron after being hit.\nrequired to release an electron from a material.\nleft over after a collision of a photon with an electron."
+  },
+  {
+   "id": "qphys2024_11",
+   "year": 2024,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Analyse the relationships between acceleration, radius, mass, orbital velocity and period of an orbiting body using a_c = v²/r, v = 2πr/T, v_orb = √(GM/r) and r³/T² = GM/4π²",
+   "text": "A satellite is in a circular orbit. What is the relationship between its orbital velocity, $v$, and its orbital radius, $r$?\n$v$ is directly proportional to the square of $r$.\n$v$ is inversely proportional to the square of $r$.\n$v$ is directly proportional to the square root of $r$.\n$v$ is inversely proportional to the square root of $r$."
+  },
+  {
+   "id": "qphys2024_12",
+   "year": 2024,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / Light and special relativity / Solve quantitative problems involving t = t₀/√(1−v²/c²), l_v = l₀√(1−v²/c²) and p_v = m₀v/√(1−v²/c²)",
+   "text": "A rod has a length, $L_0$, when measured in its own frame of reference. The rod travels past a stationary observer at speed, $v$, as shown in the diagram. Which option represents the relationship between the speed of the rod, $v$, and the length of the rod as measured by the stationary observer?\nW\nX\nY\nZ"
+  },
+  {
+   "id": "qphys2024_13",
+   "year": 2024,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse how moving to a different circular orbit affects a satellite's gravitational potential energy, kinetic energy and total mechanical energy",
+   "text": "The diagram shows two identical satellites, A and B, orbiting a planet. Which row in the table correctly compares the potential energy, $U$, and kinetic energy, $K$, of the satellites?"
+  },
+  {
+   "id": "qphys2024_14",
+   "year": 2024,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Modelling the atom / Use λ = h/mv to relate wave and particle properties of matter",
+   "text": "The velocity of a proton ($^{1}_{1}\\mathrm{H}$) is twice the velocity of an alpha particle ($^{4}_{2}\\mathrm{He}$). The proton has a de Broglie wavelength of $\\lambda$. What is the de Broglie wavelength of the alpha particle?\n$8\\lambda$\n$\\frac{\\lambda}{2}$\n$2\\lambda$\n$8\\lambda$"
+  },
+  {
+   "id": "qphys2024_15",
+   "year": 2024,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Electromagnetism / Electromagnetic induction / Analyse the relationship between generated electromotive force (emf) and the change in magnetic flux per unit time, using the law of electromagnetic induction and |ε| = N|ΔΦ/Δt|",
+   "text": "A uniform magnetic field is directed into the page. A conductor $PQ$ rotates about the end $P$ at a constant rate. Which graph shows the emf induced between the ends of the conductor, P and Q, as it rotates one revolution from the position shown?\nA\nB\nC\nD"
+  },
+  {
+   "id": "qphys2024_21",
+   "year": 2024,
+   "number": "21",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Electromagnetism / The motor effect and electric motors / Analyse factors that affect the magnitude of torque using τ = rFsinθ, where θ is the angle between the radius and the direction of the applied force",
+   "text": "To tighten a nut, a force of $75\\,\\mathrm{N}$ is applied to a spanner at an angle, as shown.\nCalculate the magnitude of the torque produced by the applied force.\nExplain TWO ways in which torque can be increased in a simple DC motor."
+  },
+  {
+   "id": "qphys2024_24",
+   "year": 2024,
+   "number": "24",
+   "marks": 8,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / The quantum model of light / Solve problems involving black bodies using λ_max = b/T | From the Universe to the Atom / Modelling the atom / Solve problems involving the transition of electrons using E = hf, c = fλ and 1/λ = R(1/n_f² − 1/n_i²)",
+   "text": "An absorption spectrum resulting from the passage of visible light from a star's surface through its hydrogen atmosphere is shown. Absorption lines are labelled W to Z in the diagram.\nDetermine the surface temperature of the star.\nAbsorption line W originates from an electron transition between the second and sixth energy levels. Use $1/\\lambda = R\\left(\\frac{1}{n_f^2} - \\frac{1}{n_i^2}\\right)$ to calculate the frequency of light absorbed to produce absorption line W.\nExplain the physical processes that produce an absorption spectrum."
+  },
+  {
+   "id": "qphys2024_25",
+   "year": 2024,
+   "number": "25",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Derive the law of periods r³/T² = GM/4π² using Newton's law of universal gravitation",
+   "text": "The mathematical model below shows the relationship between the orbital radius of a satellite and its period.\nBy considering gravitational force, show how this model can be derived.\nA planet with five moons is discovered. The following graph is produced from observations of the orbital radius of the moons and their orbital periods, measured in Earth days. Use the graph to calculate the mass of the planet."
+  },
+  {
+   "id": "qphys2024_28",
+   "year": 2024,
+   "number": "28",
+   "marks": 7,
+   "type": "extended_response",
+   "current_path": "Electromagnetism / Charged particles in electric and magnetic fields / Analyse the motion of a charged particle in a uniform electric field using E = V/d, F = qE, W = qV = ΔKE, and equations for uniformly accelerated motion",
+   "text": "An electron gun fires a beam of electrons at $2.0 \\times 10^{6}\\,\\mathrm{m\\,s^{-1}}$ through a pair of parallel charged plates towards a screen that is $30\\,\\mathrm{mm}$ from the end of the plates as shown. There is a uniform electric field between the plates of $1.5 \\times 10^{4}\\,\\mathrm{N\\,C^{-1}}$. The plates are $5.0\\,\\mathrm{mm}$ wide and $20\\,\\mathrm{mm}$ apart. The electron beam enters mid-way between the plates. X marks the spot on the screen where an undeflected beam would strike. Ignore gravitational effects on the electron beam.\nShow that the acceleration of an electron between the parallel plates is $2.6 \\times 10^{15}\\,\\mathrm{m\\,s^{-2}}$.\nShow that the vertical displacement of the electron beam at the end of the parallel plates is approximately $8.1\\,\\mathrm{mm}$.\nHow far from point X will the electron beam strike the screen?"
+  },
+  {
+   "id": "qphys2024_29",
+   "year": 2024,
+   "number": "29",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "Dynamics / Forces and motion / Analyse the forces acting on connected bodies in physical contact and linked by ropes using vector diagrams and Newton's laws of motion | Dynamics / Forces and motion / Use examples to describe the effects of Newton's third law of motion",
+   "text": "Two horizontal metal rods, A and B, of different materials are resting on a frictionless table. Initially they are at rest in position 1. Both rods are then connected to a battery using wires. After the switch is turned on, currents of different magnitude flow in each rod. The rods move to position 2 after time, $t$. In position 2, B has a larger displacement than A from position 1. The masses of the wires are negligible.\nPosition 1 is reproduced below. Draw wires to show how the battery must be connected to the ends of the two rods in order for the magnitude of the current in each rod to be different, and for position 2 to be reached. No components, other than the wires, are required.\nWhen the switch is turned on, the current in rod A is greater than the current in rod B. Consider this statement. Position 2 results from the larger current in rod A, causing a larger force to act on rod B. Evaluate this statement with reference to relevant physics principles."
+  },
+  {
+   "id": "qphys2024_31",
+   "year": 2024,
+   "number": "31",
+   "marks": 4,
+   "type": "extended_response",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse graphs of the changes in gravitational potential energy, kinetic energy and work done for an object launched vertically to escape a planet's gravitational field",
+   "text": "In a thought experiment, a projectile is launched vertically from Earth's surface. Its initial velocity is less than the escape velocity. The behaviour of the projectile can be analysed by using two different models, Model A and Model B as shown. The effects of Earth's atmosphere and Earth's rotational and orbital motions can be ignored.\nCompare the maximum height reached by the projectile, using each model. In your answer, describe the energy changes of the projectile."
+  },
+  {
+   "id": "qhsc2025_01",
+   "year": 2025,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / Electromagnetic waves / Discuss how the historical prediction of the speed of light was made by relating the electric permittivity and magnetic permeability of free space, using c = 1/√(ε₀μ₀)",
+   "text": "Which of the following did Maxwell contribute to the understanding of the nature of light?\nExplanation of atomic emission spectra\nPrediction of the speed of electromagnetic waves\nExperimental support for the particle model of light\nExperimental confirmation of light beyond the visible spectrum"
+  },
+  {
+   "id": "qhsc2025_04",
+   "year": 2025,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Modelling the atom / Use λ = h/mv to relate wave and particle properties of matter",
+   "text": "Which row in the table identifies the particle with the shortest de Broglie wavelength?"
+  },
+  {
+   "id": "qhsc2025_07",
+   "year": 2025,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Advanced Mechanics / Circular motion / Analyse how moving to a different circular orbit affects a satellite's gravitational potential energy, kinetic energy and total mechanical energy",
+   "text": "A satellite in a circular orbit around Earth at an altitude of $500\\,\\mathrm{km}$ is moved to a new circular orbit at a higher altitude of $35\\,800\\,\\mathrm{km}$. Which statement correctly compares properties of the satellite in the higher orbit with its properties in the lower orbit?\nIts period is greater, and its acceleration is the same.\nIts kinetic energy is less, and its acceleration is less.\nIts orbital velocity is less, and its potential energy is positive.\nIts escape velocity is greater, and the centripetal force is less."
+  },
+  {
+   "id": "qhsc2025_10",
+   "year": 2025,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Radioactivity / Relate the decay constant λ to the half-life of radioisotopes",
+   "text": "The diagram shows four lines, W, X, Y and Z, depicting radioactivity varying with time.\nWhich of the four lines is consistent with a decay graph with the smallest decay constant ($\\lambda$)?\nW\nX\nY\nZ"
+  },
+  {
+   "id": "qhsc2025_12",
+   "year": 2025,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "The Nature of Light / The wave model of light / Solve problems involving polarised light using I = I_maxcos²θ",
+   "text": "Which graph correctly represents Malus' Law?\nA\nB\nC\nD"
+  },
+  {
+   "id": "qhsc2025_19",
+   "year": 2025,
+   "number": "19",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Identify that the special theory of relativity demonstrates the mass–energy equivalence relationship E = mc²",
+   "text": "A system consists of a sealed glass jar containing some oxygen and a small strip of magnesium. The magnesium reacts with the oxygen to produce magnesium oxide as a product. Energy is released from the system in this reaction. The mass of the system will\nincrease because oxygen is added to the magnesium.\ndecrease because energy is removed from the system.\nincrease because energy is added to the system by the reaction.\ndecrease because magnesium and oxygen are lost in the reaction."
+  },
+  {
+   "id": "qhsc2025_20",
+   "year": 2025,
+   "number": "20",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "From the Universe to the Atom / Nuclear energy / Identify that the special theory of relativity demonstrates the mass–energy equivalence relationship E = mc²",
+   "text": "Consider the possibility of an electron and a positron colliding in a particle accelerator to produce a proton and an antiproton, as shown in the equation below.\nWhich statement makes the correct conclusion about the possibility of such a reaction, and provides a plausible reason for this conclusion?\nThe reaction is impossible because electrons and positrons will combine to produce a single neutral particle.\nThe reaction is possible because the masses of the proton and antiproton are the result of their relativistic velocities.\nThe reaction is possible because the masses of the proton and antiproton come mainly from energy supplied by the accelerator.\nThe reaction is impossible because protons are much more massive than electrons and hence the reaction violates the law of conservation of mass."
+  },
+  {
+   "id": "qhsc2025_24",
+   "year": 2025,
+   "number": "24",
+   "marks": 3,
+   "type": "extended_response",
+   "current_path": "Advanced Mechanics / Motion in gravitational fields / Solve problems involving Newton's law of universal gravitation and gravitational field strength at any point in a gravitational field",
+   "text": "Two satellites, A and B, are in stable circular orbits around the Earth. The radius of satellite A's orbit is three times that of satellite B's orbit. Both satellites have the same kinetic energy.\nShow that the mass of A is three times the mass of B."
+  },
+  {
+   "id": "qhsc2025_25",
+   "year": 2025,
+   "number": "25",
+   "marks": 6,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / The quantum model of light / Analyse data from photoelectric effect and thermionic emission experiments to explain relationships using K_max = hf − φ and K_max = qV₀ | The Nature of Light / The quantum model of light / Relate the law of conservation of energy to the maximum kinetic energy of photoelectrons and K_max = hf − φ",
+   "text": "A student conducts an experiment to determine the work function of potassium. The following diagram depicts the experimental setup used, where light of varying frequency is incident on a potassium electrode inside an evacuated tube.\nFor each frequency of light tested, the voltage in the circuit is varied, and the minimum voltage (called the stopping voltage) required to bring the current in the circuit to zero is recorded.\nConstruct an appropriate graph using the data provided, and from this, determine the threshold frequency of potassium.\nUsing the particle model of light, explain the features shown in the experimental results."
+  },
+  {
+   "id": "qhsc2025_34",
+   "year": 2025,
+   "number": "34",
+   "marks": 5,
+   "type": "extended_response",
+   "current_path": "The Nature of Light / Electromagnetic waves / Identify that all forms of electromagnetic radiation have constant speed, c, in a vacuum",
+   "text": "The diagram shows a model of the orbits of Earth, Jupiter and Io, including their orbital direction and periods of orbit. In this model, it is assumed that the orbits of Earth, Jupiter and Io are circular.\nA method to determine the speed of light using this model is described below. When Earth was at position P, the orbital period of Io was measured, and the time that Io was at position R was recorded.\nSix months later, Io had orbited Jupiter $10^{3}$ times, and Earth had reached position Q. The orbital period of Io was used to predict when it would be at position R. Assume that Jupiter has not moved significantly in its orbit around the Sun.\nThe time for Io to reach position R was measured to be $1.000 \\times 10^{3}\\,\\mathrm{s}$ later than predicted, due to the time it takes light to cross the diameter of Earth's orbit from P to Q.\nUse the measurements provided in the model to calculate the speed of light.\nConsider a modification to this model in which the Earth's orbit is elliptical.\nExplain how this modification will affect the determination of the speed of light."
+  }
+ ]
+}

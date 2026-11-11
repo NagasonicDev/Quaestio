@@ -1,0 +1,3017 @@
+{
+ "course_id": "hospitality",
+ "course_name": "Hospitality",
+ "instructions": "Choose exactly one dot-point code from `dots` for each question based on what it assesses. current_path is unreliable. Use null if the text is missing, placeholder, or insufficient. Never invent a code.",
+ "dots": [
+  {
+   "code": "HSC-M1-T1-D1",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / importance of hygienic work practices"
+  },
+  {
+   "code": "HSC-M1-T1-D2",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / consequences of poor hygienic work practices for the customer, worker, colleagues and workplace"
+  },
+  {
+   "code": "HSC-M1-T1-D3",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / hygienic work practices and their purposes related to: personal health and hygiene; clean skin and non-excessive makeup; no body odour"
+  },
+  {
+   "code": "HSC-M1-T1-D4",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / clean hair and tied back or contained in net"
+  },
+  {
+   "code": "HSC-M1-T1-D5",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / clean shaven or trimmed beard"
+  },
+  {
+   "code": "HSC-M1-T1-D6",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / nails clean and appropriate length"
+  },
+  {
+   "code": "HSC-M1-T1-D7",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / clean uniform and enclosed shoes"
+  },
+  {
+   "code": "HSC-M1-T1-D8",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / body piercings removed or covered"
+  },
+  {
+   "code": "HSC-M1-T1-D9",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / appropriate wound dressings"
+  },
+  {
+   "code": "HSC-M1-T1-D10",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / food preparation and storage"
+  },
+  {
+   "code": "HSC-M1-T1-D11",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / ‘ready to eat’ food items"
+  },
+  {
+   "code": "HSC-M1-T1-D12",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / service of food and beverages"
+  },
+  {
+   "code": "HSC-M1-T1-D13",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / handling money"
+  },
+  {
+   "code": "HSC-M1-T1-D14",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / linen"
+  },
+  {
+   "code": "HSC-M1-T1-D15",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / cleaning and sanitising"
+  },
+  {
+   "code": "HSC-M1-T1-D16",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / waste disposal"
+  },
+  {
+   "code": "HSC-M1-T1-D17",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / pest control"
+  },
+  {
+   "code": "HSC-M1-T1-D18",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / hand washing, including when it needs to occur (frequency), the facilities needed and procedure"
+  },
+  {
+   "code": "HSC-M1-T1-D19",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / hygienic work practices for various job roles and responsibilities within the hospitality industry"
+  },
+  {
+   "code": "HSC-M1-T1-D20",
+   "path": "Year 12 / Mandatory HSC focus areas / Hygiene / support programs for a hospitality workplace that contribute to food safety: approved suppliers; calibration of equipment; kitchen premises and equipment:; cleaning and sanitising schedules; pest control; maintenance; personal presentation, health and hygiene of workers; staff training; waste management:; general waste; food waste; food identified for disposal; recyclables; damaged service-ware; workplace records and documents"
+  },
+  {
+   "code": "HSC-M1-T2-D1",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / reasons for a food safety program in the hospitality workplace"
+  },
+  {
+   "code": "HSC-M1-T2-D2",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / essential elements of a food safety program:"
+  },
+  {
+   "code": "HSC-M1-T2-D3",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / identify potential food safety hazards"
+  },
+  {
+   "code": "HSC-M1-T2-D4",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / determine where each hazard can be controlled and the means of control"
+  },
+  {
+   "code": "HSC-M1-T2-D5",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / monitor the means of control"
+  },
+  {
+   "code": "HSC-M1-T2-D6",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / provide for corrective action when the hazard identified is not under control"
+  },
+  {
+   "code": "HSC-M1-T2-D7",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / regularly review the program"
+  },
+  {
+   "code": "HSC-M1-T2-D8",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / keep appropriate records"
+  },
+  {
+   "code": "HSC-M1-T2-D9",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / main components of a food safety program common to the hospitality industry and workplaces:"
+  },
+  {
+   "code": "HSC-M1-T2-D10",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / Hazard Analysis and Critical Control Points (HACCP) plan"
+  },
+  {
+   "code": "HSC-M1-T2-D11",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / support programs"
+  },
+  {
+   "code": "HSC-M1-T2-D12",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / documentation associated with food safety programs: workplace policy, procedures and flowcharts; monitoring food safety; product specifications"
+  },
+  {
+   "code": "HSC-M1-T2-D13",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / meaning of health, safety and security"
+  },
+  {
+   "code": "HSC-M1-T2-D14",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / acknowledge that WHS is everyone’s responsibility in the workplace and the implications of this responsibility"
+  },
+  {
+   "code": "HSC-M1-T2-D15",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / concept of ‘participation’ and ‘consultation’ in relation to WHS"
+  },
+  {
+   "code": "HSC-M1-T2-D16",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / internal sources of workplace WHS information: colleagues; health and safety representative (HSR)"
+  },
+  {
+   "code": "HSC-M1-T2-D17",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / WHS induction process"
+  },
+  {
+   "code": "HSC-M1-T2-D18",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / WHS committee and WHS officers"
+  },
+  {
+   "code": "HSC-M1-T2-D19",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / external sources of workplace WHS information: legislation and government regulations; professional associations"
+  },
+  {
+   "code": "HSC-M1-T2-D20",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / Safe Work Australia, SafeWork NSW, local councils"
+  },
+  {
+   "code": "HSC-M1-T2-D21",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / unions"
+  },
+  {
+   "code": "HSC-M1-T2-D22",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / primary role/function of key bodies/authorities involved in WHS:"
+  },
+  {
+   "code": "HSC-M1-T2-D23",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / SafeWork NSW"
+  },
+  {
+   "code": "HSC-M1-T2-D24",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / Safe Work Australia"
+  },
+  {
+   "code": "HSC-M1-T2-D25",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / local councils"
+  },
+  {
+   "code": "HSC-M1-T2-D26",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / importance of acting within scope of responsibility/level of authority in relation to WHS in the workplace: taking initiative; problem-solving; decision-making"
+  },
+  {
+   "code": "HSC-M1-T2-D27",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / WHS induction training"
+  },
+  {
+   "code": "HSC-M1-T2-D28",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / adherence to: standard operating procedures (SOP); work documentation; work instructions; workplace policy; ergonomics and posture:; correct placement of equipment; sitting and standing positions; task rotation"
+  },
+  {
+   "code": "HSC-M1-T2-D29",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / use of adjustable furniture and equipment"
+  },
+  {
+   "code": "HSC-M1-T2-D30",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / hazardous substances and dangerous goods: correct handling, application, labelling, transport, storage and disposal; management of spills; safety data sheet (SDS); manual handling techniques:"
+  },
+  {
+   "code": "HSC-M1-T2-D31",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / when working individually, in pairs and with a team: bending and twisting; moving, lifting, carrying and placing items down; working with tools and equipment; loading and unloading; using mechanical aids/lifting equipment; undertaking repetitious tasks; recommended weight limits; housekeeping:; clean-up procedures; movement and storage of materials and equipment; storage and disposal of waste; consideration of WHS and the environment; selection, use and maintenance of PPE; tools and equipment:; selection appropriate to task/work activity; pre-operational checks and correct use; regular maintenance and correct storage; electrical tagging (safety tags and lockout); working with:; electricity; liquid petroleum gas (LPG); inert gases; importance of safe work procedures and practices"
+  },
+  {
+   "code": "HSC-M1-T2-D32",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / propose safe work procedures and practices for a hospitality workplace and job role within the hospitality industry"
+  },
+  {
+   "code": "HSC-M1-T2-D33",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / potential breaches in security in a hospitality workplace"
+  },
+  {
+   "code": "HSC-M1-T2-D34",
+   "path": "Year 12 / Mandatory HSC focus areas / Safety / workplace security policy and procedures in relation to: cash; documents; equipment; keys/access pass; people:; staff; customers; others; records; stock/supplies; workplace/building:; secure areas; general access areas; strategies to deal with breaches in security; reporting breaches in security to appropriate personnel"
+  },
+  {
+   "code": "HSC-M1-T3-D1",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / types of customers: internal; external; new; repeat or regular"
+  },
+  {
+   "code": "HSC-M1-T3-D2",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / customers with special needs and implications for customer service"
+  },
+  {
+   "code": "HSC-M1-T3-D3",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / a range of customers with different service requirements"
+  },
+  {
+   "code": "HSC-M1-T3-D4",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / difference between customer needs, preferences and expectations"
+  },
+  {
+   "code": "HSC-M1-T3-D5",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / establishing customer needs, preferences and expectations through: active listening; open, closed and reflective questions; observation and recognition of non-verbal cues; communicating effectively with customers and/or colleagues:; verbal, written and non-verbal communication; face-to-face, over the telephone and electronically; importance of being accurate, clear, concise and courteous; dealing sensitively with social and cultural differences"
+  },
+  {
+   "code": "HSC-M1-T3-D6",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / industry approaches to service delivery: standards of customer service for industry personnel; how work is organised and undertaken"
+  },
+  {
+   "code": "HSC-M1-T3-D7",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / timing and designated response times for service to workplace and industry standards"
+  },
+  {
+   "code": "HSC-M1-T3-D8",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / the relationship between customer service, quality assurance, work practices and business success"
+  },
+  {
+   "code": "HSC-M1-T3-D9",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / concept of a ‘customer focused’ workplace"
+  },
+  {
+   "code": "HSC-M1-T3-D10",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / concept of ‘fair and equitable treatment’ of customers and colleagues"
+  },
+  {
+   "code": "HSC-M1-T3-D11",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / characteristics and benefits of quality customer service"
+  },
+  {
+   "code": "HSC-M1-T3-D12",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / role of communication in provision of quality customer service"
+  },
+  {
+   "code": "HSC-M1-T3-D13",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / establishing quality customer service:"
+  },
+  {
+   "code": "HSC-M1-T3-D14",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / detailed knowledge of a range of products and services offered at a hospitality workplace"
+  },
+  {
+   "code": "HSC-M1-T3-D15",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / matching customer needs, preferences and expectations to appropriate product(s) and/or service(s): meet customer need, preference and/or expectation"
+  },
+  {
+   "code": "HSC-M1-T3-D16",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / seek assistance from others as necessary in order to meet the customer need, preference and/or expectation"
+  },
+  {
+   "code": "HSC-M1-T3-D17",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / refer to appropriate person where unable to meet the customer need, preference and/or expectation"
+  },
+  {
+   "code": "HSC-M1-T3-D18",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / the relationship between customer service and business success"
+  },
+  {
+   "code": "HSC-M1-T3-D19",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / professional service standards"
+  },
+  {
+   "code": "HSC-M1-T3-D20",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / seeking opportunities to deliver additional level of service beyond customer’s immediate request or expectation"
+  },
+  {
+   "code": "HSC-M1-T3-D21",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / developing collegial working relationships with others involved in the provision of customer service"
+  },
+  {
+   "code": "HSC-M1-T3-D22",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / using/adopting a teamwork approach"
+  },
+  {
+   "code": "HSC-M1-T3-D23",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / dealing with problems and/or delays in the delivery of products and/or services"
+  },
+  {
+   "code": "HSC-M1-T3-D24",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / seeking feedback on customer service practices: the value of feedback from staff and customers; its use in improving and enhancing service delivery"
+  },
+  {
+   "code": "HSC-M1-T3-D25",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / workplace policy and procedures for establishing contact with customers: techniques for approaching a customer; developing rapport; workplace policy and procedures for dealing with:; customers from diverse backgrounds; customers with special needs; difficult and abusive customers"
+  },
+  {
+   "code": "HSC-M1-T3-D26",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / workplace policy and procedures for directing customers to relevant personnel and/or more experienced staff"
+  },
+  {
+   "code": "HSC-M1-T3-D27",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / a range of customer inquiries common to the hospitality workplace"
+  },
+  {
+   "code": "HSC-M1-T3-D28",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / establishing the details of the inquiry by questioning, summarising and clarifying"
+  },
+  {
+   "code": "HSC-M1-T3-D29",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / paper-based and electronic methods for recording customer inquiries"
+  },
+  {
+   "code": "HSC-M1-T3-D30",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / sources of information that can be used when handling customer inquiries"
+  },
+  {
+   "code": "HSC-M1-T3-D31",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / effective response(s) to a range of customer inquiries common to hospitality within appropriate timeframes"
+  },
+  {
+   "code": "HSC-M1-T3-D32",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / reasons for customer dissatisfaction, problems and complaints"
+  },
+  {
+   "code": "HSC-M1-T3-D33",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / examples of customer dissatisfaction, problems and complaints common to hospitality"
+  },
+  {
+   "code": "HSC-M1-T3-D34",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / complaints-handling policy and procedures"
+  },
+  {
+   "code": "HSC-M1-T3-D35",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / skills required for handling complaints, including: problem-solving; conflict resolution; negotiating; decision-making"
+  },
+  {
+   "code": "HSC-M1-T3-D36",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / using conflict-resolution techniques when handling customer dissatisfaction, problems and complaints"
+  },
+  {
+   "code": "HSC-M1-T3-D37",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / effective responses to a range of instances of customer dissatisfaction, problems and complaints"
+  },
+  {
+   "code": "HSC-M1-T3-D38",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / the importance of:"
+  },
+  {
+   "code": "HSC-M1-T3-D39",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / hospitality staff offering a range of viable solutions in accordance with workplace policy and procedures"
+  },
+  {
+   "code": "HSC-M1-T3-D40",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / hospitality staff and the customer agreeing on what is to be done in regard to the problem or complaint"
+  },
+  {
+   "code": "HSC-M1-T3-D41",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / implementing solution(s) within acceptable timeframes"
+  },
+  {
+   "code": "HSC-M1-T3-D42",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / acting within level of authority/scope of responsibility when handling customer dissatisfaction, problems and complaints"
+  },
+  {
+   "code": "HSC-M1-T3-D43",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / identify when it is appropriate to seek assistance and/or refer customer to other appropriate personnel for issues that cannot be resolved effectively"
+  },
+  {
+   "code": "HSC-M1-T3-D44",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / the importance of recording and/or reporting instances of customer dissatisfaction, problems and complaints"
+  },
+  {
+   "code": "HSC-M1-T3-D45",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / workplace practices for recording and reporting customer complaints and feedback: formal and informal; verbal and written"
+  },
+  {
+   "code": "HSC-M1-T3-D46",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / recognition of the value of customer complaints and feedback"
+  },
+  {
+   "code": "HSC-M1-T3-D47",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / importance of developing collegial work relationships"
+  },
+  {
+   "code": "HSC-M1-T3-D48",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / communication in the workplace with colleagues and customers: communication process/cycle; workplace examples of types of communication:; verbal; non-verbal; written"
+  },
+  {
+   "code": "HSC-M1-T3-D49",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / a range of effective verbal, non-verbal and written communication"
+  },
+  {
+   "code": "HSC-M1-T3-D50",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / effective questioning and listening techniques"
+  },
+  {
+   "code": "HSC-M1-T3-D51",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / barriers to effective communication and strategies to overcome them"
+  },
+  {
+   "code": "HSC-M1-T3-D52",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / workplace protocols in relation to working with others"
+  },
+  {
+   "code": "HSC-M1-T3-D53",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / importance of teamwork when working in the hospitality workplace: meaning of ‘team’ and ‘teamwork’; characteristics of effective teamwork; benefits of teamwork to the hospitality workplace"
+  },
+  {
+   "code": "HSC-M1-T3-D54",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / examples of teams or work groups in a hospitality workplace and their area(s) of responsibility"
+  },
+  {
+   "code": "HSC-M1-T3-D55",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / supporting others to achieve team/work group goals and tasks"
+  },
+  {
+   "code": "HSC-M1-T3-D56",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / delivering quality work outcomes through teamwork and work groups"
+  },
+  {
+   "code": "HSC-M1-T3-D57",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / concepts of cultural diversity, cultural awareness and inclusiveness"
+  },
+  {
+   "code": "HSC-M1-T3-D58",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / workplace diversity: benefits; need for tolerance in the workplace; importance of respect and sensitivity"
+  },
+  {
+   "code": "HSC-M1-T3-D59",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / proactive strategies for promoting workplace diversity and accommodating individual differences"
+  },
+  {
+   "code": "HSC-M1-T3-D60",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / culturally appropriate work practices"
+  },
+  {
+   "code": "HSC-M1-T3-D61",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / effective cross-cultural communication skills"
+  },
+  {
+   "code": "HSC-M1-T3-D62",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / customer interaction: greeting and seating; during service; thanking and farewelling"
+  },
+  {
+   "code": "HSC-M1-T3-D63",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / establishing customer needs, preferences and expectations through probe questioning and active listening"
+  },
+  {
+   "code": "HSC-M1-T3-D64",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / dealing with diverse demands and requests of multiple customers during food and beverage service"
+  },
+  {
+   "code": "HSC-M1-T3-D65",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / cleaning schedules: frequency:; daily; weekly; monthly; other; timing:; during service period; end of service period; end of shift; tasks to be completed"
+  },
+  {
+   "code": "HSC-M1-T3-D66",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / difference between cleaning and sanitising and the importance and purpose of each"
+  },
+  {
+   "code": "HSC-M1-T3-D67",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / for a range of cleaning and sanitising agents and chemicals (products) for hospitality workplace and equipment:"
+  },
+  {
+   "code": "HSC-M1-T3-D68",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / interpretation of instructions on the product label, safety data sheet (SDS) and associated workplace documents"
+  },
+  {
+   "code": "HSC-M1-T3-D69",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / selection and correct use of personal protective equipment"
+  },
+  {
+   "code": "HSC-M1-T3-D70",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / aprons"
+  },
+  {
+   "code": "HSC-M1-T3-D71",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / face masks"
+  },
+  {
+   "code": "HSC-M1-T3-D72",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / gloves"
+  },
+  {
+   "code": "HSC-M1-T3-D73",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / goggles"
+  },
+  {
+   "code": "HSC-M1-T3-D74",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / safe preparation and use: directions and precautions; recommended dosage and dilution; calculating quantity required; first aid; storage; disposal"
+  },
+  {
+   "code": "HSC-M1-T3-D75",
+   "path": "Year 12 / Mandatory HSC focus areas / Working with colleagues and customers / safe work practices for the use and storage of hazardous substances"
+  },
+  {
+   "code": "HSC-M2-T1-D1",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / definition of HACCP"
+  },
+  {
+   "code": "HSC-M2-T1-D2",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / key principles of HACCP: hazard analysis"
+  },
+  {
+   "code": "HSC-M2-T1-D3",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / determine critical control points (CCPs)"
+  },
+  {
+   "code": "HSC-M2-T1-D4",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / establish critical limits of CCPs"
+  },
+  {
+   "code": "HSC-M2-T1-D5",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / monitoring"
+  },
+  {
+   "code": "HSC-M2-T1-D6",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / taking corrective actions"
+  },
+  {
+   "code": "HSC-M2-T1-D7",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / verification"
+  },
+  {
+   "code": "HSC-M2-T1-D8",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / documentation/keeping records"
+  },
+  {
+   "code": "HSC-M2-T1-D9",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / high-risk and potentially hazardous foods"
+  },
+  {
+   "code": "HSC-M2-T1-D10",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / food hazards that may affect the health and safety of customers, colleagues and the worker: actual and potential; types:; biological; chemical; physical; causes of contamination"
+  },
+  {
+   "code": "HSC-M2-T1-D11",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / critical control points where there is a high risk to food spoilage and contamination (food safety): purchasing and taking delivery of food stock; food storage and stock control; food and beverage preparation; cooking or processing of food; cooling and reheating of food; holding or displaying food; packaging food; transporting food; service of food and beverages; disposal of food; implementing HACCP through operational policy and procedures"
+  },
+  {
+   "code": "HSC-M2-T1-D12",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / application of HACCP practices for food safety to a workplace in the hospitality industry and integrate into daily work activities"
+  },
+  {
+   "code": "HSC-M2-T1-D13",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / environmental conditions for preparation, storage and service of food: to protect against contamination; to maximise freshness, quality and appearance; for a range of food types:; fresh, frozen, preserved and cooked; dry, cold and frozen storage"
+  },
+  {
+   "code": "HSC-M2-T1-D14",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / optimum storage times for a range of food types"
+  },
+  {
+   "code": "HSC-M2-T1-D15",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / stock rotation as it relates to food safety"
+  },
+  {
+   "code": "HSC-M2-T1-D16",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / time and temperature controls: to ensure microbiological safety; temperature danger zone"
+  },
+  {
+   "code": "HSC-M2-T1-D17",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / 'two-hour' and 'four-hour' rule"
+  },
+  {
+   "code": "HSC-M2-T1-D18",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / appropriate temperatures at various stages: storage; production; heating and cooling; display; service; temperature probe:; calibration"
+  },
+  {
+   "code": "HSC-M2-T1-D19",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / use"
+  },
+  {
+   "code": "HSC-M2-T1-D20",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / cleaning"
+  },
+  {
+   "code": "HSC-M2-T1-D21",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / identifying faults"
+  },
+  {
+   "code": "HSC-M2-T1-D22",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / monitoring"
+  },
+  {
+   "code": "HSC-M2-T1-D23",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / storage and display of single-use items to protect from damage and contamination"
+  },
+  {
+   "code": "HSC-M2-T1-D24",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / meaning of casual dining, cover, service period and style of service"
+  },
+  {
+   "code": "HSC-M2-T1-D25",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / food and beverage outlets offering casual dining, including: cafes; cafeterias; catering operations; clubs; coffee shops; hotels or pubs; restaurants; styles of service and their characteristics, including:; bar; bistro; cafeteria; counter; family; plate; smorgasbord/buffet; table"
+  },
+  {
+   "code": "HSC-M2-T1-D26",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / service requirements for service periods including breakfast, lunch, dinner and morning and afternoon teas"
+  },
+  {
+   "code": "HSC-M2-T1-D27",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / key features of a range of menu types, including:"
+  },
+  {
+   "code": "HSC-M2-T1-D28",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / à la carte"
+  },
+  {
+   "code": "HSC-M2-T1-D29",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / blackboard"
+  },
+  {
+   "code": "HSC-M2-T1-D30",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / cyclic"
+  },
+  {
+   "code": "HSC-M2-T1-D31",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / function"
+  },
+  {
+   "code": "HSC-M2-T1-D32",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / set"
+  },
+  {
+   "code": "HSC-M2-T1-D33",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / table d’hôte"
+  },
+  {
+   "code": "HSC-M2-T1-D34",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / commercial food and beverage menus typical to a range of food and beverage outlets"
+  },
+  {
+   "code": "HSC-M2-T1-D35",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / role and responsibilities of a range of food and beverage personnel"
+  },
+  {
+   "code": "HSC-M2-T1-D36",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / range of non-alcoholic beverages typically found in commercial beverage menus"
+  },
+  {
+   "code": "HSC-M2-T1-D37",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / major types/styles of non-alcoholic beverages and their characteristics: carbonated; coffees (non-espresso); fruit-based; milk-based; mocktails; teas; waters; standard recipes for a range of non-alcoholic beverages"
+  },
+  {
+   "code": "HSC-M2-T1-D38",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / for a range of non-alcoholic beverages, industry standards for: strength; taste; temperature; appearance"
+  },
+  {
+   "code": "HSC-M2-T1-D39",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / industry-standard equipment used to prepare different types/styles of non-alcoholic beverages"
+  },
+  {
+   "code": "HSC-M2-T1-D40",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / for a range of equipment: name and general features; purpose and limitations; selection for task (functions); assembly (if appropriate); safe and hygienic use/operation:; pre-operational and safety checks; according to manufacturer’s instructions; cleaning and sanitising; maintenance; storage; when working with post-mix dispensing systems:; dangers associated with inert gases"
+  },
+  {
+   "code": "HSC-M2-T1-D41",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / appropriate measures to ensure safety of the hospitality worker and customer"
+  },
+  {
+   "code": "HSC-M2-T1-D42",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / establishing customer needs, preferences and expectations through probe questioning and active listening"
+  },
+  {
+   "code": "HSC-M2-T1-D43",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / matching needs, preferences and expectations with the most suitable non-alcoholic beverage and espresso coffee"
+  },
+  {
+   "code": "HSC-M2-T1-D44",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / workplace procedures for non-alcoholic beverage and espresso coffee service: taking order (manual and electronic); calling of order; delivery to table; presentation to customer"
+  },
+  {
+   "code": "HSC-M2-T1-D45",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / standard turnaround times for non-alcoholic beverage and espresso coffee service"
+  },
+  {
+   "code": "HSC-M2-T1-D46",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / dealing with numerous service and operational tasks simultaneously during preparation of non-alcoholic beverages and espresso coffee"
+  },
+  {
+   "code": "HSC-M2-T1-D47",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / safe and hygienic work practices for preparation and service of non-alcoholic beverages and espresso coffee"
+  },
+  {
+   "code": "HSC-M2-T1-D48",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / time and task management: efficiently sequence beverage order and preparation"
+  },
+  {
+   "code": "HSC-M2-T1-D49",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / prepare and serve within commercially realistic timeframes"
+  },
+  {
+   "code": "HSC-M2-T1-D50",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / environmentally friendly work practices: efficient use of resources, water and energy; management of waste:; sorting of recyclables; disposal of waste; mise en place for non-alcoholic beverages:; workstation; preparation of beverage; service of beverage; ingredients for a range of non-alcoholic beverages:; associated culinary terms; characteristics; handling and storage; range of preparation methods for non-alcoholic beverages:; blending; brewing; juicing; mixing; plunging; shaking; measuring ingredients and calculating quantities; deficiencies in beverage quality:; evaluation:; causes; indicators; adjustments"
+  },
+  {
+   "code": "HSC-M2-T1-D51",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / traditional and workplace-specific standards for presentation of quality non-alcoholic beverages and espresso coffee"
+  },
+  {
+   "code": "HSC-M2-T1-D52",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / service-ware for non-alcoholic beverages and espresso coffee: glassware; crockery; takeaway cups and lids; garnishes and accompaniments for non-alcoholic beverages; sugar, sweeteners and accompaniments for espresso coffee"
+  },
+  {
+   "code": "HSC-M2-T1-D53",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / techniques for coffee art and use in the service of espresso coffee"
+  },
+  {
+   "code": "HSC-M2-T1-D54",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / importance of consistency in quality, volume and appearance"
+  },
+  {
+   "code": "HSC-M2-T1-D55",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / current issues and trends affecting the hospitality industry and implications for a hospitality workplace, own work practices and delivery of service"
+  },
+  {
+   "code": "HSC-M2-T1-D56",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / opportunities to source and use a range of current and emerging information on the hospitality industry:"
+  },
+  {
+   "code": "HSC-M2-T1-D57",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / utilise online information systems and other information and communication technologies"
+  },
+  {
+   "code": "HSC-M2-T1-D58",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / integrate into daily work activities and operational duties"
+  },
+  {
+   "code": "HSC-M2-T1-D59",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve non-alcoholic beverages / share researched information with colleagues"
+  },
+  {
+   "code": "HSC-M2-T2-D1",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / culinary terms associated with espresso coffee: barista; espresso:; coffee-making equipment and method; type of roast; a drink; extraction; group head; tamping"
+  },
+  {
+   "code": "HSC-M2-T2-D2",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / different types of coffee beans, blends and roasts and their characteristics"
+  },
+  {
+   "code": "HSC-M2-T2-D3",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / major styles of espresso coffee typically found in commercial beverage menus and their characteristics: caffè latte; cappuccino; espresso (short black); flat white; long black; macchiato:; short; long; mocha; piccolo latte; ristretto; different types of milk and their characteristics; milk in different coffee styles:; steamed milk; textured milk; cold milk; characteristics of textured milk, including:; silken; reflective; smooth; pliable"
+  },
+  {
+   "code": "HSC-M2-T2-D4",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / standard recipes for a range of espresso coffee styles"
+  },
+  {
+   "code": "HSC-M2-T2-D5",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / criteria used to evaluate the quality of coffee: aroma; body; flavour:; acidity; bitterness; sweetness; quality of the crema; volume of the espresso; to produce quality coffee, importance of correct:; grind; dose; tamp"
+  },
+  {
+   "code": "HSC-M2-T2-D6",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / for a range of espresso coffee styles, industry standards for: strength; taste; temperature; appearance"
+  },
+  {
+   "code": "HSC-M2-T2-D7",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / industry-standard equipment used to prepare different styles of espresso coffee: name and general features; selection for task (functions); safe and hygienic use; cleaning and storage; range of different commercial espresso machines and grinders:; features, parts and functions; assembly (if appropriate); safe and hygienic use/operation:; pre-operational and safety checks; according to manufacturer’s instructions; preparation for service; cleaning and maintenance:; during service; post service; problems with equipment:; indicators of unsafe and/or faulty equipment; solution(s) to common problems"
+  },
+  {
+   "code": "HSC-M2-T2-D8",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / respond within scope of responsibility: rectify (minor adjustments)"
+  },
+  {
+   "code": "HSC-M2-T2-D9",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / refer to manager/supervisor, trained service technician, licensed electrician and/or plumber"
+  },
+  {
+   "code": "HSC-M2-T2-D10",
+   "path": "Year 12 / Food and Beverage stream / Prepare and serve espresso coffee / mise en place for espresso coffee: work station; preparation of coffee beverage; service of coffee beverage; test extractions; ingredients:; including:; coffee beans; ground coffee; milks; flavourings and toppings; storage:; environmental conditions to ensure food safety; methods to optimise shelf life; methods and techniques for:; grinding coffee beans; dosing:; manual; electronic; mechanical; tamping; extraction of espresso:; flushing the group head; appropriate pour rate for espresso coffee beverages; texturising milk:; milk selection and temperature; purging the steam wand; swirling; sound; sensory analysis of quality:; olfactory; tactile; tasting; visual; monitoring quality of espresso during the service period; deficiencies in espresso extraction:; evaluation; causes; indicators; adjustment(s)"
+  },
+  {
+   "code": "HSC-M2-T3-D1",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / the importance of safe work practices when handling food"
+  },
+  {
+   "code": "HSC-M2-T3-D2",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / an understanding that food safety needs to be considered from ‘paddock to plate’"
+  },
+  {
+   "code": "HSC-M2-T3-D3",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / safe work practices and their purposes when handling food during: storage; preparation; display; service; disposal, including documentation of disposed food items"
+  },
+  {
+   "code": "HSC-M2-T3-D4",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / vulnerable customer groups with a high risk of harm from food contamination"
+  },
+  {
+   "code": "HSC-M2-T3-D5",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / signs of damaged, deteriorated, spoiled or out-of-date food"
+  },
+  {
+   "code": "HSC-M2-T3-D6",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / meaning of contaminant, contamination, cross-contamination and potentially hazardous food"
+  },
+  {
+   "code": "HSC-M2-T3-D7",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / causes of contamination: common types of contaminants:; physical; chemical; microbiological; common food allergens; conditions conducive to food spoilage and contamination; food allergies:; common symptoms of food allergies; emergency response to allergic reactions, including anaphylaxis"
+  },
+  {
+   "code": "HSC-M2-T3-D8",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / important consideration in the selection of foods to be handled and consumed"
+  },
+  {
+   "code": "HSC-M2-T3-D9",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / meaning of food-borne illness (‘food poisoning’)"
+  },
+  {
+   "code": "HSC-M2-T3-D10",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / causes of food-borne illness (‘food poisoning’):"
+  },
+  {
+   "code": "HSC-M2-T3-D11",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / bacterial, bacterial toxins and viral contamination of food through: cross-contamination; incorrect storage and food handling; naturally poisonous foods; bacterial, toxins and viral contaminants of food:; bacterial:; camphylobacter; escherichia coli (E. coli); listeria; salmonella; toxins:; bacillus cereus; clostridium botulinum; clostridium perfringens; staphylococcus aureus; viral:; hepatitis A; rotavirus"
+  },
+  {
+   "code": "HSC-M2-T3-D12",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / and the associated food-borne illness(es), its symptoms and examples of high-risk foods"
+  },
+  {
+   "code": "HSC-M2-T3-D13",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / hygienic work practices to minimise and/or prevent contamination and illness: food handler; workplace procedures"
+  },
+  {
+   "code": "HSC-M2-T3-D14",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / industry and workplace standards and workplace policy and procedures for: preparing for food and beverage service; providing food and beverage service to customers; closing down after food and beverage service:; end of service; end of shift"
+  },
+  {
+   "code": "HSC-M2-T3-D15",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / check reservations"
+  },
+  {
+   "code": "HSC-M2-T3-D16",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / furniture and fittings: checks for cleanliness, stability and condition; placement for optimum service efficiency"
+  },
+  {
+   "code": "HSC-M2-T3-D17",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / for a range of food and beverage outlets, service styles and service periods:"
+  },
+  {
+   "code": "HSC-M2-T3-D18",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / set up of dining area, tables and waiter/service station(s)"
+  },
+  {
+   "code": "HSC-M2-T3-D19",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / selection, check and preparation of equipment: crockery; cutlery; glassware; linen; service utensils; service-ware; table items; tableware"
+  },
+  {
+   "code": "HSC-M2-T3-D20",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / ensure an environment that will provide comfort and ambience for the customer: background noise; decor; lighting; music; privacy; room temperature; essential components of a pre-service briefing"
+  },
+  {
+   "code": "HSC-M2-T3-D21",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / safe and hygienic work practices for service of food and beverages"
+  },
+  {
+   "code": "HSC-M2-T3-D22",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / food and beverage service: sequence; timing; procedures; teamwork; work flow:; typical to food and beverage service; between kitchen and front-of-house areas"
+  },
+  {
+   "code": "HSC-M2-T3-D23",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / information provided at various stages of food and beverage service: menu choices, options, specials and availability; key features of food and beverage menu items:; describing and recommending menu items; details of ingredients and preparation techniques; recommendations for complementary selections; location of customer facilities; local/surrounding area"
+  },
+  {
+   "code": "HSC-M2-T3-D24",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / importance of accuracy and legibility when taking customer food and beverage orders"
+  },
+  {
+   "code": "HSC-M2-T3-D25",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / consequences for the customer and business if food and beverage orders are not correct or are mismanaged"
+  },
+  {
+   "code": "HSC-M2-T3-D26",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / taking and processing food and beverage orders: equipment and technology; systems:; manual; electronic; workplace procedures:; general; special requests:; allergies and intolerances; religious or cultural beliefs; special occasions; individual preferences; industry and workplace acceptable abbreviations for:; menu items; special requests; variations"
+  },
+  {
+   "code": "HSC-M2-T3-D27",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / selection/adjustment of glassware, service-ware and cutlery appropriate to customer menu choices"
+  },
+  {
+   "code": "HSC-M2-T3-D28",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / tailoring food and beverage service to a range of customers and their requirements"
+  },
+  {
+   "code": "HSC-M2-T3-D29",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / techniques for serving and clearing: beverage service"
+  },
+  {
+   "code": "HSC-M2-T3-D30",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / collection of food and beverage from kitchen and/or bar"
+  },
+  {
+   "code": "HSC-M2-T3-D31",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / carrying and placing plates containing meals"
+  },
+  {
+   "code": "HSC-M2-T3-D32",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / clearing and carrying multiple used plates and service-ware"
+  },
+  {
+   "code": "HSC-M2-T3-D33",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / clearing tables"
+  },
+  {
+   "code": "HSC-M2-T3-D34",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / dealing with: numerous service tasks simultaneously; delays and deficiencies in service:; reasons for; problem-solving; follow-up; rectify to customer satisfaction; environmentally friendly work practices:; efficient use of resources, water and energy; management of food and beverage waste:; sorting of recyclables; disposal of waste; customer accounts:; calculations; timing and presentation; processing:; equipment:; point-of-sale (POS); electronic funds transfer at point-of-sale (EFTPOS); cash transactions and giving change; credit cards"
+  },
+  {
+   "code": "HSC-M2-T3-D35",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / difference between end of service and end of shift"
+  },
+  {
+   "code": "HSC-M2-T3-D36",
+   "path": "Year 12 / Food and Beverage stream / Serve food and beverages / workplace tasks and procedures for: end of service; preparation for next service period; end of shift; service review:; debriefing session; customer feedback; handover to colleagues for next shift"
+  },
+  {
+   "code": "HSC-M3-T1-D1",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / food hazards that may affect the health and safety of customers, colleagues and the worker: related to:; handling food and beverages; food contact surfaces; including:; personal hygiene; personal health issues; environmental hygiene; work practices; and associated hygiene risk(s)"
+  },
+  {
+   "code": "HSC-M3-T1-D2",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / appropriate control measures to eliminate or minimise the hazards and their associated risk(s)"
+  },
+  {
+   "code": "HSC-M3-T1-D3",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / purpose and importance of reporting hygiene and food safety-related issues"
+  },
+  {
+   "code": "HSC-M3-T1-D4",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / describe what, how, when and to whom to report: what to report:; food hazards and associated hygiene risks; poor hygiene work practices; unsafe work practices when working with food; personal health issues; incidents of food contamination; types of reports:; formal and informal; written; verbal; reporting to appropriate persons"
+  },
+  {
+   "code": "HSC-M3-T1-D5",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / opportunities for workers to provide input into WHS consultation and participation processes: formal and informal discussion; meeting; survey; training"
+  },
+  {
+   "code": "HSC-M3-T1-D6",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / WHS audit"
+  },
+  {
+   "code": "HSC-M3-T1-D7",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / WHS inspection"
+  },
+  {
+   "code": "HSC-M3-T1-D8",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / requirements (including election/formation) of a health and safety committee or health and safety representative (HSR) and their role and responsibilities in the workplace"
+  },
+  {
+   "code": "HSC-M3-T1-D9",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / role and responsibilities of relevant personnel in WHS consultation and participation:"
+  },
+  {
+   "code": "HSC-M3-T1-D10",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / PCBU"
+  },
+  {
+   "code": "HSC-M3-T1-D11",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / manager/supervisor/team leader"
+  },
+  {
+   "code": "HSC-M3-T1-D12",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / self"
+  },
+  {
+   "code": "HSC-M3-T1-D13",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / other workers"
+  },
+  {
+   "code": "HSC-M3-T1-D14",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / union"
+  },
+  {
+   "code": "HSC-M3-T1-D15",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / importance of identifying, reporting and responding to:"
+  },
+  {
+   "code": "HSC-M3-T1-D16",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / WHS issues and concerns"
+  },
+  {
+   "code": "HSC-M3-T1-D17",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / workplace hazards"
+  },
+  {
+   "code": "HSC-M3-T1-D18",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / unsafe work practices"
+  },
+  {
+   "code": "HSC-M3-T1-D19",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / breaches of health, safety and security"
+  },
+  {
+   "code": "HSC-M3-T1-D20",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / and examples of each for the hospitality industry and workplace"
+  },
+  {
+   "code": "HSC-M3-T1-D21",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / bullying and harassment in the workplace: indirect; direct; types:; verbal; physical; psychological; sexual; principles of anti-discrimination; intent of anti-discrimination legislation"
+  },
+  {
+   "code": "HSC-M3-T1-D22",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / rights and responsibilities of employers and employees in relation to anti-discrimination"
+  },
+  {
+   "code": "HSC-M3-T1-D23",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / workplace policy and procedures relating to anti-discrimination"
+  },
+  {
+   "code": "HSC-M3-T1-D24",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / strategies to eliminate bias and harassment in the workplace"
+  },
+  {
+   "code": "HSC-M3-T1-D25",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / consequences, including legal ramifications, of discriminatory workplace behaviour"
+  },
+  {
+   "code": "HSC-M3-T1-D26",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / recourse available to individuals in the event of inappropriate workplace behaviour"
+  },
+  {
+   "code": "HSC-M3-T1-D27",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / examples of equipment classified as utensils, mechanical and fixed"
+  },
+  {
+   "code": "HSC-M3-T1-D28",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / equipment found in commercial kitchen work environments: used to prepare different food types; used for different cookery methods; for a range of equipment:; name and general features; purpose and limitations; selection for task (functions); assembly (if appropriate); safe and hygienic use/operation:; hazard(s) and risk(s) control; pre-operational and safety checks; according to manufacturer’s instructions; cleaning and sanitising; maintenance; storage; equipment commonly used in the hospitality industry, including:; blender; cryovac machine; deep-fryer; food processor; grater; mandolin slicer; measures; microwave; mouli; oven; peeler, corer or slicer; planetary mixer; salamander; scales; slicing machine; stove top; thermometer; water bath; whisk; problems with equipment:; indicators of unsafe and/or faulty equipment; solution(s) to common problems"
+  },
+  {
+   "code": "HSC-M3-T1-D29",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / respond within scope of responsibility: rectify (minor adjustments); refer to supervisor/manager; recording and reporting"
+  },
+  {
+   "code": "HSC-M3-T1-D30",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / types: dairy products; dry goods; fruit; meat; poultry; seafood; vegetables; general food items:; batters; coatings; condiments and flavourings; garnishes; oils; sauces; for each food type:; examples; characteristics; indicators of freshness and quality"
+  },
+  {
+   "code": "HSC-M3-T1-D31",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / use in different recipes"
+  },
+  {
+   "code": "HSC-M3-T1-D32",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / preparation requirements"
+  },
+  {
+   "code": "HSC-M3-T1-D33",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / use in different dishes"
+  },
+  {
+   "code": "HSC-M3-T1-D34",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / effects of different cookery methods"
+  },
+  {
+   "code": "HSC-M3-T1-D35",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / handling and storage"
+  },
+  {
+   "code": "HSC-M3-T1-D36",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / stock selection from stores: date codes; stock rotation:"
+  },
+  {
+   "code": "HSC-M3-T1-D37",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / FIFO (first in, first out)"
+  },
+  {
+   "code": "HSC-M3-T1-D38",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / rotation labels"
+  },
+  {
+   "code": "HSC-M3-T1-D39",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / safe and hygienic practices for food preparation in commercial kitchen work environments"
+  },
+  {
+   "code": "HSC-M3-T1-D40",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / mise en place: meaning; role in:; preparing food; cooking food; presenting food; for dishes:; incorporating a range of food types; produced by a range of cookery methods; work instructions:; standard recipes:; dishes incorporating a range of food types; dishes produced by a range of cookery methods; task sheets; food preparation lists; time and task management:; effect of poor work flow on:; colleagues; customers; business; features of effective work flow:; planning and organisation; logical sequencing of food preparation and cookery tasks; time efficiency; dealing with pressure and time constraints; clear communication; cooperation and teamwork; preparation, cooking and service within commercially realistic timeframes; preparation of a range of ingredients:; for a range of standard recipes; with consideration to portion control; weighing and measuring dry and wet ingredients; calculating and determining quantities and portions required"
+  },
+  {
+   "code": "HSC-M3-T1-D41",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / washing, peeling and trimming of a range of foods"
+  },
+  {
+   "code": "HSC-M3-T1-D42",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / precision cuts: brunoise; chiffonnade; concasse; jardinière; julienne; macedoine; mirepoix; paysanne"
+  },
+  {
+   "code": "HSC-M3-T1-D43",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / portioning and standard cuts of meat, poultry and seafood"
+  },
+  {
+   "code": "HSC-M3-T1-D44",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / storage of food items to prevent spoilage"
+  },
+  {
+   "code": "HSC-M3-T1-D45",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / waste-minimisation techniques for use during food preparation, cooking, presentation and service"
+  },
+  {
+   "code": "HSC-M3-T1-D46",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / environmentally friendly work practices during food preparation: efficient use of resources, water and energy; management of kitchen waste:; storage of re-useable by-products; sorting of recyclables; disposal of waste"
+  },
+  {
+   "code": "HSC-M3-T1-D47",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / importance of food presentation to the customer’s dining experience"
+  },
+  {
+   "code": "HSC-M3-T1-D48",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / considerations when plating food: appropriate crockery, service-ware and utensils; temperature of crockery and food; portion size; placement of food; presentation according to recipe; avoiding/removing grease marks, spills and drips"
+  },
+  {
+   "code": "HSC-M3-T1-D49",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / use of appropriate sauces and garnishes or decorations"
+  },
+  {
+   "code": "HSC-M3-T1-D50",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / industry and workplace standards for food presentation"
+  },
+  {
+   "code": "HSC-M3-T1-D51",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Food preparation / current trends in the preparation, presentation and service of food"
+  },
+  {
+   "code": "HSC-M3-T2-D1",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Methods of cookery / transference of heat through convection, conduction and radiation"
+  },
+  {
+   "code": "HSC-M3-T2-D2",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Methods of cookery / category of cookery: dry heat method; moist heat method; range of cookery methods:; baking; blanching; boiling; braising; deep-frying; grilling; poaching; roasting; shallow-frying:; pan-frying; sauté; stir-frying; sous vide; steaming; stewing; microwaving; for each cookery method:; definition; associated culinary terms; suitable foods and recipes; utensils and equipment required; potential safety and/or hygiene issues; principles and practices; characteristics of food/dishes prepared using this method; effect(s) on the nutritional value of food; cooking time and temperature"
+  },
+  {
+   "code": "HSC-M3-T2-D3",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Methods of cookery / safe and hygienic work practices for cooking in commercial kitchen work environments"
+  },
+  {
+   "code": "HSC-M3-T2-D4",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Methods of cookery / problem(s) in the cooking process: causes; indicators; corrective action(s); environmentally friendly work practices in the cooking process:; efficient use of resources, water and energy; management of kitchen waste"
+  },
+  {
+   "code": "HSC-M3-T3-D1",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / meaning of incident, accident and emergency"
+  },
+  {
+   "code": "HSC-M3-T3-D2",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / a range of incidents, accidents and emergencies common to the hospitality industry"
+  },
+  {
+   "code": "HSC-M3-T3-D3",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / distinguish between a manageable first aid situation and an emergency situation"
+  },
+  {
+   "code": "HSC-M3-T3-D4",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / range of potential injuries common to the hospitality workplace, their cause(s) and basic first aid for these injuries"
+  },
+  {
+   "code": "HSC-M3-T3-D5",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / strategies to reduce workplace accidents, injury and impairment"
+  },
+  {
+   "code": "HSC-M3-T3-D6",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / implications of the cost of workplace injury: human; social; economic; organisational; responding to incidents, accidents and emergencies:; emergency situations; seeking assistance; emergency contact numbers; emergency signals, alarms and exits:; location"
+  },
+  {
+   "code": "HSC-M3-T3-D7",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / use"
+  },
+  {
+   "code": "HSC-M3-T3-D8",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / procedures to follow: notification; workplace policy and procedures:; evacuation; security; reporting"
+  },
+  {
+   "code": "HSC-M3-T3-D9",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / basic process of fighting a fire and use of firefighting equipment: fire blanket; fire extinguishers; fire hose and reel; role of personnel in an emergency; first aid:; basic principles; personnel responsible"
+  },
+  {
+   "code": "HSC-M3-T3-D10",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / application of workplace policy and protocols and regulatory requirements when recording and reporting in relation to incidents, accidents and emergencies"
+  },
+  {
+   "code": "HSC-M3-T3-D11",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / key features of a range of menu types and their application, including:"
+  },
+  {
+   "code": "HSC-M3-T3-D12",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / à la carte"
+  },
+  {
+   "code": "HSC-M3-T3-D13",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / cyclic"
+  },
+  {
+   "code": "HSC-M3-T3-D14",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / function"
+  },
+  {
+   "code": "HSC-M3-T3-D15",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / set"
+  },
+  {
+   "code": "HSC-M3-T3-D16",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / table d’hôte"
+  },
+  {
+   "code": "HSC-M3-T3-D17",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / dealing with customer special requests and special dietary requirements"
+  },
+  {
+   "code": "HSC-M3-T3-D18",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / potential variations in commercial kitchen work environments: commercial kitchens within hospitality or catering organisations; permanent or temporary kitchens; food preparation areas; hygiene and cross-contamination issues for commercial kitchens"
+  },
+  {
+   "code": "HSC-M3-T3-D19",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / importance of cleaning services to food safety and hygiene and the overall quality of service provided"
+  },
+  {
+   "code": "HSC-M3-T3-D20",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / industry and workplace standards for the presentation of kitchen premises"
+  },
+  {
+   "code": "HSC-M3-T3-D21",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / importance and purpose of cleaning regimes"
+  },
+  {
+   "code": "HSC-M3-T3-D22",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / cleaning of kitchen premises and equipment as a component of food safety"
+  },
+  {
+   "code": "HSC-M3-T3-D23",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / time and task management: planning and organising"
+  },
+  {
+   "code": "HSC-M3-T3-D24",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / efficiently sequencing stages of cleaning kitchen premises and equipment"
+  },
+  {
+   "code": "HSC-M3-T3-D25",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / cleaning within commercially realistic timeframes"
+  },
+  {
+   "code": "HSC-M3-T3-D26",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / cleaning schedules: frequency:; daily; weekly; monthly; other; timing:; during service period; end of service period; end of shift; tasks to be completed"
+  },
+  {
+   "code": "HSC-M3-T3-D27",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / areas of a commercial kitchen work environment to be included in the cleaning regime and schedule: utensils; equipment, including:; pots, pans and frypans; knives; containers; baking tray; handheld mixer; scales; blender; slicing machine; temperature probe and thermometer; cryovac machine; service-ware; linen; premises:; surfaces:; floor; walls; windows; shelves; food preparation areas:; benches; sink; work area/surfaces; fittings and appliances:; stovetop; oven; microwave; dishwasher; extraction fan; storage areas:; food storage areas (cupboards, freezer, fridge/cool room, storeroom); garbage/waste area"
+  },
+  {
+   "code": "HSC-M3-T3-D28",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / standards of presentation for the premises"
+  },
+  {
+   "code": "HSC-M3-T3-D29",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / safe and hygienic work practices when cleaning kitchen premises and equipment"
+  },
+  {
+   "code": "HSC-M3-T3-D30",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / difference between cleaning, sanitising and disinfecting and the importance and purpose of each"
+  },
+  {
+   "code": "HSC-M3-T3-D31",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / for a range of cleaning and sanitising agents and chemicals (products) for kitchen premises and equipment:"
+  },
+  {
+   "code": "HSC-M3-T3-D32",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / interpretation of instructions on the product label, safety data sheet (SDS) and associated workplace documents"
+  },
+  {
+   "code": "HSC-M3-T3-D33",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / safe preparation and use: directions and precautions; recommended dosage and dilution; calculating quantity required; first aid; storage; disposal"
+  },
+  {
+   "code": "HSC-M3-T3-D34",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / safe work practices for the use and storage of hazardous substances"
+  },
+  {
+   "code": "HSC-M3-T3-D35",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / dealing with chemical-related accidents: first aid:; chemicals absorbed through the skin; chemical burns; chemicals ingested; inhaled chemical fumes; chemical splashes in the eye; workplace policy and procedures"
+  },
+  {
+   "code": "HSC-M3-T3-D36",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / for a range of cleaning equipment required to clean kitchen premises and equipment: name and general features; purpose and limitations; selection for task (functions); assembly (if appropriate); safe use/operation according to manufacturer's instructions; maintenance"
+  },
+  {
+   "code": "HSC-M3-T3-D37",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / disassembling kitchen equipment for cleaning and reassembling once complete"
+  },
+  {
+   "code": "HSC-M3-T3-D38",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / cleaning, sanitising and disinfecting methods/techniques for cleaning commercial kitchen work environments: utensils; equipment; service-ware; linen; premises"
+  },
+  {
+   "code": "HSC-M3-T3-D39",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / workplace policy and procedures and industry and workplace standards for cleaning commercial kitchen premises and equipment"
+  },
+  {
+   "code": "HSC-M3-T3-D40",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / pest control procedures for flies, cockroaches, rats and mice"
+  },
+  {
+   "code": "HSC-M3-T3-D41",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / recording and reporting: infestations; losses from damaged utensils, equipment and service-ware"
+  },
+  {
+   "code": "HSC-M3-T3-D42",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / environmental impacts of cleaning commercial kitchen premises and equipment"
+  },
+  {
+   "code": "HSC-M3-T3-D43",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / workplace strategies to reduce negative environmental impact"
+  },
+  {
+   "code": "HSC-M3-T3-D44",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / environmentally responsible products and practices in relation to cleaning"
+  },
+  {
+   "code": "HSC-M3-T3-D45",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / efficient use of resources, water and energy"
+  },
+  {
+   "code": "HSC-M3-T3-D46",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / workplace systems to manage kitchen waste: storage of re-usable by-products; sorting of recyclables; glass; plastics; paper and cardboard; tin or aluminium containers; disposal of waste:; food waste; general waste; damaged service-ware; hazardous substances; cleaning agents; chemical substances; fats and oils; pest waste"
+  },
+  {
+   "code": "HSC-M3-T3-D47",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / current issues and trends affecting the hospitality industry and implications for a hospitality workplace, own work practices and delivery of service"
+  },
+  {
+   "code": "HSC-M3-T3-D48",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / opportunities to source and use a range of current and emerging information on the hospitality industry:"
+  },
+  {
+   "code": "HSC-M3-T3-D49",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / utilise online information systems and other information and communication technologies"
+  },
+  {
+   "code": "HSC-M3-T3-D50",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / integrate into daily work activities and operational duties"
+  },
+  {
+   "code": "HSC-M3-T3-D51",
+   "path": "Year 12 / Kitchen Operations and Cookery stream / Clean kitchen premises and equipment / share researched information with colleagues"
+  },
+  {
+   "code": "HSC-M4-T1-D1",
+   "path": "Year 12 / HSC elective units / Elective units of competency / difference between an act, regulation, code of practice and standard (Australian, industry and workplace)"
+  },
+  {
+   "code": "HSC-M4-T1-D2",
+   "path": "Year 12 / HSC elective units / Elective units of competency / intent and purpose of national and state/territory food safety laws, standards and codes relevant to food safety and hygienic work practices for workplaces and workers within the hospitality industry:"
+  },
+  {
+   "code": "HSC-M4-T1-D3",
+   "path": "Year 12 / HSC elective units / Elective units of competency / Food Act 2003 (NSW) (as amended)"
+  },
+  {
+   "code": "HSC-M4-T1-D4",
+   "path": "Year 12 / HSC elective units / Elective units of competency / Food Regulation 2015 (NSW) (as amended)"
+  },
+  {
+   "code": "HSC-M4-T1-D5",
+   "path": "Year 12 / HSC elective units / Elective units of competency / Australia New Zealand Food Standards (ANZFS) Code (‘the Code’)"
+  },
+  {
+   "code": "HSC-M4-T1-D6",
+   "path": "Year 12 / HSC elective units / Elective units of competency / overview of food safety program for the hospitality workplace including reasons for, essential components and basic content"
+  },
+  {
+   "code": "HSC-M4-T1-D7",
+   "path": "Year 12 / HSC elective units / Elective units of competency / workplace policy and procedures related to hygiene, food safety and cleaning and the consequences of failure to observe"
+  },
+  {
+   "code": "HSC-M4-T1-D8",
+   "path": "Year 12 / HSC elective units / Elective units of competency / responsibilities of the food safety supervisor and food handler according to food safety laws, standards and codes"
+  },
+  {
+   "code": "HSC-M4-T1-D9",
+   "path": "Year 12 / HSC elective units / Elective units of competency / requirements for businesses involved in the preparation and service of food:"
+  },
+  {
+   "code": "HSC-M4-T1-D10",
+   "path": "Year 12 / HSC elective units / Elective units of competency / provide notification of the operation of a food business"
+  },
+  {
+   "code": "HSC-M4-T1-D11",
+   "path": "Year 12 / HSC elective units / Elective units of competency / nominate a food safety supervisor"
+  },
+  {
+   "code": "HSC-M4-T1-D12",
+   "path": "Year 12 / HSC elective units / Elective units of competency / implement a food safety program"
+  },
+  {
+   "code": "HSC-M4-T1-D13",
+   "path": "Year 12 / HSC elective units / Elective units of competency / allow inspections of food and premises"
+  },
+  {
+   "code": "HSC-M4-T1-D14",
+   "path": "Year 12 / HSC elective units / Elective units of competency / role of the NSW Food Authority and local government regulator in food safety"
+  },
+  {
+   "code": "HSC-M4-T1-D15",
+   "path": "Year 12 / HSC elective units / Elective units of competency / local government food safety regulations and inspection regimes"
+  },
+  {
+   "code": "HSC-M4-T1-D16",
+   "path": "Year 12 / HSC elective units / Elective units of competency / legislative and regulatory requirements: impact on workers at operational level"
+  },
+  {
+   "code": "HSC-M4-T1-D17",
+   "path": "Year 12 / HSC elective units / Elective units of competency / responsibilities of the owner, manager/supervisor/team leader, food safety supervisor, food handler, kitchen staff and other staff"
+  },
+  {
+   "code": "HSC-M4-T1-D18",
+   "path": "Year 12 / HSC elective units / Elective units of competency / and ramifications of failure to observe"
+  },
+  {
+   "code": "HSC-M4-T1-D19",
+   "path": "Year 12 / HSC elective units / Elective units of competency / application of workplace policy and procedures and regulatory requirements for food safety:"
+  },
+  {
+   "code": "HSC-M4-T1-D20",
+   "path": "Year 12 / HSC elective units / Elective units of competency / to a workplace and job role in the hospitality industry"
+  },
+  {
+   "code": "HSC-M4-T1-D21",
+   "path": "Year 12 / HSC elective units / Elective units of competency / integrated into daily work activities"
+  },
+  {
+   "code": "HSC-M4-T1-D22",
+   "path": "Year 12 / HSC elective units / Elective units of competency / difference between an act, regulation, code of practice and standard (Australian, industry and workplace)"
+  },
+  {
+   "code": "HSC-M4-T1-D23",
+   "path": "Year 12 / HSC elective units / Elective units of competency / purpose and intent of WHS legislation and codes of practice and their application to the hospitality industry and a hospitality workplace and job role:"
+  },
+  {
+   "code": "HSC-M4-T1-D24",
+   "path": "Year 12 / HSC elective units / Elective units of competency / WHS legislation:"
+  },
+  {
+   "code": "HSC-M4-T1-D25",
+   "path": "Year 12 / HSC elective units / Elective units of competency / Work Health and Safety Act 2011 (NSW) (as amended)"
+  },
+  {
+   "code": "HSC-M4-T1-D26",
+   "path": "Year 12 / HSC elective units / Elective units of competency / Work Health and Safety Regulation 2025 (NSW) (as amended)"
+  },
+  {
+   "code": "HSC-M4-T1-D27",
+   "path": "Year 12 / HSC elective units / Elective units of competency / codes of practice related to: first aid in the workplace; hazardous chemicals; hazardous manual tasks; noise and preventing hearing loss"
+  },
+  {
+   "code": "HSC-M4-T1-D28",
+   "path": "Year 12 / HSC elective units / Elective units of competency / WHS consultation, cooperation and coordination"
+  },
+  {
+   "code": "HSC-M4-T1-D29",
+   "path": "Year 12 / HSC elective units / Elective units of competency / WHS risks"
+  },
+  {
+   "code": "HSC-M4-T1-D30",
+   "path": "Year 12 / HSC elective units / Elective units of competency / work environment and facilities"
+  },
+  {
+   "code": "HSC-M4-T1-D31",
+   "path": "Year 12 / HSC elective units / Elective units of competency / workplace electrical risks"
+  },
+  {
+   "code": "HSC-M4-T1-D32",
+   "path": "Year 12 / HSC elective units / Elective units of competency / WHS rights, duties and responsibilities of the person conducting a business or undertaking (PCBU), officer and worker (as defined in the legislation)"
+  },
+  {
+   "code": "HSC-M4-T1-D33",
+   "path": "Year 12 / HSC elective units / Elective units of competency / functions and powers of WHS inspectors"
+  },
+  {
+   "code": "HSC-M4-T1-D34",
+   "path": "Year 12 / HSC elective units / Elective units of competency / consequences of failure to observe (non-compliance) WHS workplace policy and procedures and legislative requirements"
+  },
+  {
+   "code": "HSC-M4-T1-D35",
+   "path": "Year 12 / HSC elective units / Elective units of competency / safety signs, symbols and barricades used in the hospitality industry and their use in the workplace: legislative requirements; meaning of colour and shape; placement and positioning"
+  },
+  {
+   "code": "HSC-M4-T1-D36",
+   "path": "Year 12 / HSC elective units / Elective units of competency / hospitality industry and workplace requirements for monitoring and reporting in relation to workplace safety"
+  },
+  {
+   "code": "HSC-M4-T1-D37",
+   "path": "Year 12 / HSC elective units / Elective units of competency / describe how, when and to whom to report: types of reports:; formal and informal; written; verbal; reporting to appropriate person(s); purpose and importance of monitoring and reporting"
+  },
+  {
+   "code": "HSC-M4-T1-D38",
+   "path": "Year 12 / HSC elective units / Elective units of competency / application of workplace policy and protocols and regulatory requirements when recording and reporting in relation to WHS"
+  },
+  {
+   "code": "HSC-M4-T1-D39",
+   "path": "Year 12 / HSC elective units / Elective units of competency / parts of a knife"
+  },
+  {
+   "code": "HSC-M4-T1-D40",
+   "path": "Year 12 / HSC elective units / Elective units of competency / knife-handling techniques"
+  },
+  {
+   "code": "HSC-M4-T1-D41",
+   "path": "Year 12 / HSC elective units / Elective units of competency / types of knives, their characteristics and use in preparation of a range of food types, including: chef; filleting; palette; utility; vegetable"
+  },
+  {
+   "code": "HSC-M4-T1-D42",
+   "path": "Year 12 / HSC elective units / Elective units of competency / techniques to sharpen knives using a steel and a stone"
+  },
+  {
+   "code": "HSC-M4-T1-D43",
+   "path": "Year 12 / HSC elective units / Elective units of competency / suitable cutting surfaces: yielding; unyielding"
+  },
+  {
+   "code": "HSC-M4-T1-D44",
+   "path": "Year 12 / HSC elective units / Elective units of competency / safe work practices when handling, using, cleaning and storing knives"
+  },
+  {
+   "code": "HSC-M5-T1-D1",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / based on workplace food safety program"
+  },
+  {
+   "code": "HSC-M5-T1-D2",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / workplace policy and procedures related to food safety: purchasing, delivery and storage of food; preparation of food and beverages; cooking, cooling and heating food; displaying or holding food; service of food and beverages"
+  },
+  {
+   "code": "HSC-M5-T1-D3",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / consequences of failure to observe workplace food safety policy and procedures"
+  },
+  {
+   "code": "HSC-M5-T1-D4",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / monitoring, reporting and recording related to food safety"
+  },
+  {
+   "code": "HSC-M5-T1-D5",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / difference between a hazard and a risk"
+  },
+  {
+   "code": "HSC-M5-T1-D6",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / risk management and its application in the hospitality workplace: hazard identification:"
+  },
+  {
+   "code": "HSC-M5-T1-D7",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / potential hazards to self, colleagues, customers and others typical to the industry"
+  },
+  {
+   "code": "HSC-M5-T1-D8",
+   "path": "Year 12 / Work placement / Mandatory work placement requirement / range of hazards: biological; human factors (self and others); manual handling; materials; tools and equipment; work environment; work processes and practices; working with electricity and gas; risk assessment; risk control using a hierarchy, including:; eliminate the risk; minimise the risk:; substitution; modification; isolation; engineering control; other controls:; administration; safe work practices; personal protective equipment (PPE); monitor and review"
+  }
+ ],
+ "questions": [
+  {
+   "id": "hosp2020fb_q1",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following is a naturally poisonous food?\nBlue cheese\nRhubarb leaves\nSnow pea sprouts\nButton mushrooms"
+  },
+  {
+   "id": "hosp2020fb_q2",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which preparation method is used to make a fruit smoothie?\nBlending\nJuicing\nMixing\nShaking"
+  },
+  {
+   "id": "hosp2020fb_q3",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following indicates a quality crema?\nDark brown foam floating on whole espresso\nPale and dull foam floating on whole espresso\nDrops of dark brown foam floating on whole espresso\nGolden and glossy foam floating on whole espresso"
+  },
+  {
+   "id": "hosp2020fb_q4",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "While supervising an all you can eat buffet you see a customer drop the serving spoon\nfrom the tray of beef stroganoff on the floor and then put it back in the food.\nWhat should be your immediate action?\nInform the manager at the end of the service period\nRemove the spoon and tray of stroganoff from the buffet\nReplace the dirty spoon with a clean spoon in the tray of stroganoff\nIgnore what you saw because the customer picked the spoon straight up\n– 2 –"
+  },
+  {
+   "id": "hosp2020fb_q5",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What is a key feature of a table d’hôte menu?\nGuests serve themselves\nEach dish is separately priced\nLimited choice for each course\nDishes rotate on a weekly cycle"
+  },
+  {
+   "id": "hosp2020fb_q6",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which allied and related industry is responsible for the provision of facilities and services\nfor large corporate gatherings such as conventions, trade shows and exhibitions?\nRecreation\nEntertainment\nTourism and travel\nMeetings, incentives, conferences and events (MICE)"
+  },
+  {
+   "id": "hosp2020fb_q7",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Chris provides a linen service to a café.\nWhat type of customer is Chris?\nExternal\nInternal\nRepeat\nNew\n– 3 –"
+  },
+  {
+   "id": "hosp2020fb_q8",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Two styles of coffee are shown.\ntwo coffe\ne cups\nWhich row of the table identifies the two styles of coffee?\n(option)\n(option)\n(option)\nCoffee 1\nCoffee 2\nMacchiato\nLong black\nLong black\nFlat white\nLong black\nCappuccino\nRistretto\nCappuccino"
+  },
+  {
+   "id": "hosp2020fb_q9",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A number of customers fall ill after consuming food from the same local hotel.\nWhat body would be responsible for the immediate response to this issue?\nLocal council\nSafe Work Australia\nNSW Food Authority\nFood Standards Australia and New Zealand"
+  },
+  {
+   "id": "hosp2020fb_q10",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "How should a waitperson initially respond to a customer who has a complaint?\nOffer a free replacement meal\nListen to the customer and clarify the issue\nFocus on the other customers who are enjoying their meals\nAsk the customer if they would like to write a formal complaint\n– 4 –"
+  },
+  {
+   "id": "hosp2020fb_q11",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What is the most likely cause of a coffee extraction running too fast?\nCoffee grind is too fine\nGroup handle is too full\nCoffee grind is too coarse\nWater temperature is not hot enough"
+  },
+  {
+   "id": "hosp2020fb_q12",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A customer requests that a menu item be dairy free.\nWhat condition are they most likely suffering from?\nAnaphylaxis\nHypertension\nCoeliac disease\nLactose intolerance"
+  },
+  {
+   "id": "hosp2020fb_q13",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What work group does the Health and Safety Representative (HSR) advocate for in a\nhospitality establishment?\nContractors\nCustomers\nEmployees\nManagement"
+  },
+  {
+   "id": "hosp2020fb_q14",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "How is rapport developed with customers in the hospitality workplace?\nWelcoming smile and warm greeting\nExpressionless face and passive greeting\nWelcoming smile and dismissive greeting\nOpen body language and presumptuous greeting"
+  },
+  {
+   "id": "hosp2020fb_q15",
+   "year": 2020,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Why are inert gases a risk when working with post-mix drink systems?\nThey can react with other gases\nThey are flammable and odourless\nThey are odourless and can cause asphyxia\nThey are flammable and can cause asphyxia\n– 5 –\nBLANK PAGE\n– 6 –\nBLANK PAGE\n– 7 –\nBLANK PAGE\n– 8 –\n© 2020 NSW Education Standards Authority\n1291\n26581\n8329310040\nFOOD\n2020  HIGHER SCHOOL CERTIFICATE EXAMINATION\nCentre Number\nHospitality\nFood and Beverage"
+  },
+  {
+   "id": "hosp2020fb_q16",
+   "year": 2020,
+   "number": "16",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nIdentify the types of fire extinguishers suitable to use on a fat or oil fire.\n2\n(b)\nOutline the purpose of the code of practice related to manual handling.\n2\n(c)\nOutline strategies that establishments could use to ensure the security of\npersonal customer information.\n3\n3146310042\n(a)\nIdentify the types of fire extinguishers suitable to use on a fat or oil fire.\n2\n(b)\nOutline the purpose of the code of practice related to manual handling.\n2\n(c)\nOutline strategies that establishments could use to ensure the security of\npersonal customer information.\n3\n3146310042"
+  },
+  {
+   "id": "hosp2020fb_q17",
+   "year": 2020,
+   "number": "17",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a) Explain why washing vegetables is an effective method in preventing food\ncontamination.\n3\n(b) Discuss the impact of online food order and delivery services on the hospitality\nindustry.\n5\n1292\n26589\n5499310056\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nFood and Beverage\n(a) Explain why washing vegetables is an effective method in preventing food\ncontamination.\n3\n(b) Discuss the impact of online food order and delivery services on the hospitality\nindustry.\n5\n1292\n26589\n5499310056\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nFood and Beverage"
+  },
+  {
+   "id": "hosp2020fb_q18",
+   "year": 2020,
+   "number": "18",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nWhy is it important to reset the scale display to zero before weighing ingredients?\n2\n(b) Complete the table by filling in the associated information about each type of\nnon-alcoholic beverage.\n3\nDrink type\nCharacteristics\nIndicators of\nquality\nServing style\nFrappé\nCold. Bright\nattractive colour.\nFresh garnish.\nEven texture and\nfull fruit flavour.\nMilkshake\nMixture of\nmilk, syrups and\nflavours, may\ncontain ice-cream.\nMilkshake glass\nand straw or\nmason jar. Can\nbe decoratively\ngarnished.\nMocha\nMug or glass\ngarnished with\nchocolate powder.\n(a)\nWhy is it important to reset the scale display to zero before weighing ingredients?\n2\n(b) Complete the table by filling in the associated information about each type of\nnon-alcoholic beverage.\n3\nDrink type\nCharacteristics\nIndicators of\nquality\nServing style\nFrappé\nCold. Bright\nattractive colour.\nFresh garnish.\nEven texture and\nfull fruit flavour.\nMilkshake\nMixture of\nmilk, syrups and\nflavours, may\ncontain ice-cream.\nMilkshake glass\nand straw or\nmason jar. Can\nbe decoratively\ngarnished.\nMocha\nMug or glass\ngarnished with\nchocolate powder."
+  },
+  {
+   "id": "hosp2020fb_q19",
+   "year": 2020,
+   "number": "19",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nOutline the making and serving of a pot of Chamomile tea.\n3\n(b)\nWhat impact does poor workflow in the kitchen have on front-of-house service?\n3\n8287310054\n(a)\nOutline the making and serving of a pot of Chamomile tea.\n3\n(b)\nWhat impact does poor workflow in the kitchen have on front-of-house service?\n3\n8287310054"
+  },
+  {
+   "id": "hosp2020fb_q20",
+   "year": 2020,
+   "number": "20",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Propose how hospitality establishments can ensure that staff are proactive in\nsupporting cultural diversity when they interact with customers. Support your answer\nwith industry examples.\n4"
+  },
+  {
+   "id": "hosp2020fb_q21",
+   "year": 2020,
+   "number": "21",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Explain the purpose and selection of electrical equipment used to make non-alcoholic\nbeverages. Support your answer with industry examples.\n5\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nFood and Beverage"
+  },
+  {
+   "id": "hosp2020fb_q22",
+   "year": 2020,
+   "number": "22",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "The following ingredients, ordered yesterday, have just been delivered to the café.\nDelivery Note\nAmount\nDescription\nSpecification\n6 punnets\nStrawberries\nMedium\n25\nBananas\nCavendish – ripe\n15 litres\nMilk\nFull cream, fresh\n5 litres\nAlmond milk\nLong life\n10 litres\nIce-cream\nVanilla\n5 bunches\nMint\nFresh\n(a)\nDescribe the handling and storage requirements to maintain the quality of each\nproduct delivered.\n5\n(b)\nExplain the link between an establishment’s approach to service delivery an\nthe success of the business. Use industry examples to support your answer.\nd\n10\n1293\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response\n(a)\nDescribe the handling and storage requirements to maintain the quality of each\nproduct delivered.\n5\n(b)\nExplain the link between an establishment’s approach to service delivery an\nthe success of the business. Use industry examples to support your answer.\nd\n10\n1293\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response"
+  },
+  {
+   "id": "hosp2020fb_q23",
+   "year": 2020,
+   "number": "23",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Poor working conditions and underpayment are both widespread issues within the hospitality\nindustry.\nExplain how an employee can access current information and assistance if they are\nexperiencing these issues within their employment."
+  },
+  {
+   "id": "hosp2020ko_q1",
+   "year": 2020,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which of the following is a naturally poisonous food?\nBlue cheese\nRhubarb leaves\nSnow pea sprouts\nButton mushrooms"
+  },
+  {
+   "id": "hosp2020ko_q2",
+   "year": 2020,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which knife would be most suitable to peel and cut kiwi fruit?\nChef’s\nFilleting\nParing\nTurning"
+  },
+  {
+   "id": "hosp2020ko_q3",
+   "year": 2020,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What type of garnish is traditionally used on a Caesar salad?\nCroutons\nSalt flakes\nParsley sprig\nLemon wedge"
+  },
+  {
+   "id": "hosp2020ko_q4",
+   "year": 2020,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "While supervising an all you can eat buffet you see a customer drop the serving spoon\nfrom the tray of beef stroganoff on the floor and then put it back in the food.\nWhat should be your immediate action?\nInform the manager at the end of the service period\nRemove the spoon and tray of stroganoff from the buffet\nReplace the dirty spoon with a clean spoon in the tray of stroganoff\nIgnore what you saw because the customer picked the spoon straight up\n– 2 –"
+  },
+  {
+   "id": "hosp2020ko_q5",
+   "year": 2020,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What is a key feature of a table d’hôte menu?\nGuests serve themselves\nEach dish is separately priced\nLimited choice for each course\nDishes rotate on a weekly cycle"
+  },
+  {
+   "id": "hosp2020ko_q6",
+   "year": 2020,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which allied and related industry is responsible for the provision of facilities and services\nfor large corporate gatherings such as conventions, trade shows and exhibitions?\nRecreation\nEntertainment\nTourism and travel\nMeetings, incentives, conferences and events (MICE)"
+  },
+  {
+   "id": "hosp2020ko_q7",
+   "year": 2020,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What type of fat is the most suitable to use for deep frying?\nButter\nOlive oil\nPeanut oil\nCanola oil"
+  },
+  {
+   "id": "hosp2020ko_q8",
+   "year": 2020,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which menu item would contain tomato concasse?\nBruschetta\nCrepe suzette\nBeef Wellington\nLobster mornay"
+  },
+  {
+   "id": "hosp2020ko_q9",
+   "year": 2020,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "A number of customers fall ill after consuming food from the same local hotel.\nWhat body would be responsible for the immediate response to this issue?\nLocal council\nSafe Work Australia\nNSW Food Authority\nFood Standards Australia and New Zealand\n– 3 –"
+  },
+  {
+   "id": "hosp2020ko_q10",
+   "year": 2020,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which of the following menu items is the LEAST suitable to prepare and cook at the\nbeginning of a shift and reheat later for dinner service?\nRatatouille\nFish and chips\nBraised lamb shanks\nTeriyaki chicken stir-fry"
+  },
+  {
+   "id": "hosp2020ko_q11",
+   "year": 2020,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "A bleach solution is used to mop the floor of the kitchen at the end of each shift.\nWhich procedure should be used to dispose of the solution?\nPour onto the herb garden\nPour into the stormwater drain outside the kitchen\nPour down the sink designated for hand washing\nPour down the cleaner’s sink that feeds into the sewage system"
+  },
+  {
+   "id": "hosp2020ko_q12",
+   "year": 2020,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which method of cookery is associated with the culinary term basting?\nBraising\nRoasting\nPoaching\nDeep frying"
+  },
+  {
+   "id": "hosp2020ko_q13",
+   "year": 2020,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What work group does the Health and Safety Representative (HSR) advocate for in a\nhospitality establishment?\nContractors\nCustomers\nEmployees\nManagement\n– 4 –"
+  },
+  {
+   "id": "hosp2020ko_q14",
+   "year": 2020,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which dish would most likely use blind baking as part of its preparation?\nApple pie\nCrème caramel\nSalmon en papillote\nNew York cheesecake"
+  },
+  {
+   "id": "hosp2020ko_q16",
+   "year": 2020,
+   "number": "16",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nIdentify the types of fire extinguishers suitable to use on a fat or oil fire.\n2\n(b)\nOutline the purpose of the code of practice related to manual handling.\n2\n(c)\nOutline strategies that establishments could use to ensure the security of\npersonal customer information.\n3\n3146310042\n(a)\nIdentify the types of fire extinguishers suitable to use on a fat or oil fire.\n2\n(b)\nOutline the purpose of the code of practice related to manual handling.\n2\n(c)\nOutline strategies that establishments could use to ensure the security of\npersonal customer information.\n3\n3146310042"
+  },
+  {
+   "id": "hosp2020ko_q17",
+   "year": 2020,
+   "number": "17",
+   "marks": 8,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a) Explain why washing vegetables is an effective method in preventing food\ncontamination.\n3\n(b) Discuss the impact of online food order and delivery services on the hospitality\nindustry.\n5\n1302\n26587\n5499310056\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nKitchen Operations and Cookery\n(a) Explain why washing vegetables is an effective method in preventing food\ncontamination.\n3\n(b) Discuss the impact of online food order and delivery services on the hospitality\nindustry.\n5\n1302\n26587\n5499310056\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nKitchen Operations and Cookery"
+  },
+  {
+   "id": "hosp2020ko_q18",
+   "year": 2020,
+   "number": "18",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nWhy is it important to reset the scale display to zero before weighing ingredients?\n2\n(b) Complete the table by filling in the associated information about each type of\nfood.\n3\nFood type\nExamples\nIndicators of\nfreshness\nUse in different\ndishes\nMeat\nBeef\n1.\n2.\nDry goods\nRice\nFlour\nFree of weevils\nFree of weevils\nSauces and baked\ncakes and pastries\nVegetables\nSpinach\n1.\n2.\n(a)\nWhy is it important to reset the scale display to zero before weighing ingredients?\n2\n(b) Complete the table by filling in the associated information about each type of\nfood.\n3\nFood type\nExamples\nIndicators of\nfreshness\nUse in different\ndishes\nMeat\nBeef\n1.\n2.\nDry goods\nRice\nFlour\nFree of weevils\nFree of weevils\nSauces and baked\ncakes and pastries\nVegetables\nSpinach\n1.\n2."
+  },
+  {
+   "id": "hosp2020ko_q19",
+   "year": 2020,
+   "number": "19",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nA bistro pre-makes multiple trays of lasagne and freezes them to use as a lunch\nspecial. Describe the correct procedure to thaw, reheat and hold a whole tray of\nlasagne.\n3\n(b)\nWhat impact does poor workflow in the restaurant have on back-of-house\nservice?\n3\n8287310054\n(a)\nA bistro pre-makes multiple trays of lasagne and freezes them to use as a lunch\nspecial. Describe the correct procedure to thaw, reheat and hold a whole tray of\nlasagne.\n3\n(b)\nWhat impact does poor workflow in the restaurant have on back-of-house\nservice?\n3\n8287310054"
+  },
+  {
+   "id": "hosp2020ko_q20",
+   "year": 2020,
+   "number": "20",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Propose responsible practices that should be implemented to reduce the negative\nenvironmental impact when cleaning a commercial kitchen. Support your answer with\nindustry examples.\n4"
+  },
+  {
+   "id": "hosp2020ko_q21",
+   "year": 2020,
+   "number": "21",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Explain the purpose and process of different blanching methods. Support your answer\nwith industry examples.\n5\n2020 HIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nKitchen Operations and Cookery"
+  },
+  {
+   "id": "hosp2020ko_q22",
+   "year": 2020,
+   "number": "22",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "The following ingredients, ordered yesterday, have just been delivered to the\ncommercial kitchen.\nDelivery note\nAmount\nDescription\nSpecification\n5 kg\nPrawns\nKing\n4 doz\nEggs\nHen\n10 kg\nBeef fillet\nWhole\n10\nLettuce\nIceberg\n10 kg\nPasta\nPenne\n15 kg\nChicken wings\nFresh\n(a)\nDescribe the criteria used to check for the freshness and quality of each item\nwhen the delivery arrives at the commercial kitchen.\n5\n(b)\nExplain the key principles of Hazard Analysis and Critical Control Points\n(HACCP) using ONE high-risk food from this order.\n10\n1303\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response\n(a)\nDescribe the criteria used to check for the freshness and quality of each item\nwhen the delivery arrives at the commercial kitchen.\n5\n(b)\nExplain the key principles of Hazard Analysis and Critical Control Points\n(HACCP) using ONE high-risk food from this order.\n10\n1303\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response"
+  },
+  {
+   "id": "hosp2020ko_q23",
+   "year": 2020,
+   "number": "23",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Poor working conditions and underpayment are both widespread issues within the hospitality\nindustry.\nExplain how an employee can access current information and assistance if they are\nexperiencing these issues within their employment."
+  },
+  {
+   "id": "hosp2021fb_q1",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A café would choose to use paper straws rather than plastic straws when serving non-\nalcoholic beverages because they are\nbiodegradable.\ncheaper.\ndurable.\nreusable."
+  },
+  {
+   "id": "hosp2021fb_q2",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which environmentally friendly work practice is best to use when disposing of fruit and\nvegetable waste created when preparing non-alcoholic beverages?\nPlace in a compost bin\nPlace in a recycling bin\nPlace in a general waste bin\nPlace in a waste disposal unit"
+  },
+  {
+   "id": "hosp2021fb_q3",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What does PCBU stand for?\nPeople conducting a business understanding\nPerson conducting a business understanding\nPerson conducting a business or undertaking\nPeople contracted to a business or undertaking\n– 3 –"
+  },
+  {
+   "id": "hosp2021fb_q4",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Two types of equipment used to prepare non-alcoholic beverages are shown.\nEquipment 1\nand 2\nWhich row of the table identifies the two pieces of equipment?\n(option)\n(option)\n(option)\nEquipment 1\nEquipment 2\nZester\nBeverage strainer\nZester\nTea strainer\nPeeler\nBeverage strainer\nChannel knife\nParisienne scoop"
+  },
+  {
+   "id": "hosp2021fb_q5",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Why is frequent handwashing part of hygienic work practices in a hospitality\nestablishment?\nIt ensures safe storage of commodities.\nIt builds the reputation of the establishment.\nIt eliminates the transfer of bacteria to other sources.\nIt reduces the risk of transfer of bacteria to other sources."
+  },
+  {
+   "id": "hosp2021fb_q6",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "When should an employee be trained in the use of workplace Safety Data Sheets?\nDuring induction\nWhen storing chemicals\nAt the start of every shift\nWhen a chemical spill occurs\n– 4 –"
+  },
+  {
+   "id": "hosp2021fb_q7",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What are the characteristics of textured milk?\nPliable, silken and bubbly\nPliable, bubbly and bright\nPliable, reflective and thin\nPliable, reflective and silken"
+  },
+  {
+   "id": "hosp2021fb_q8",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "You are the supervisor of a hospitality establishment. A waiter under your supervision\nhas complained about an abusive customer.\nWhich of the following is best practice for your response?\nInsist that the waiter returns to the customer and apologises\nApproach the customer and speak to them about their behaviour\nInsist that the waiter returns to the customer and asks them to leave\nApproach the customer calmly and speak to them to clarify the situation"
+  },
+  {
+   "id": "hosp2021fb_q9",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What is the recommended steeping time for black tea?\n1–2 minutes\n3–5 minutes\n6–8 minutes\n9–10 minutes"
+  },
+  {
+   "id": "hosp2021fb_q10",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A customer has asked what a piccolo latte is.\nHow should the service staff answer the customer’s question?\nAn espresso shot with a dollop of ice-cream\nA creamy milky coffee without a layer of foam\nAn espresso stained with a dash of foamed milk\nAn espresso shot with a similar quantity of steamed milk\n– 5 –"
+  },
+  {
+   "id": "hosp2021fb_q11",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which menu type is represented in the image?\nM e n\nu\nSet\nCyclic\nA la carte\nTable d’hôte"
+  },
+  {
+   "id": "hosp2021fb_q12",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What role does the sommelier have within the food and beverage team?\nCalculates and prepares customer accounts\nDelivers food and beverage orders to guests in hotel rooms\nExplains wine and food pairings to suit customer preferences\nGreets and seats the customers and describes specials of the day\n– 6 –"
+  },
+  {
+   "id": "hosp2021fb_q13",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which commodity is most likely to be contaminated by Campylobacter?\nFish\nCream\nPotatoes\nCanned tomatoes"
+  },
+  {
+   "id": "hosp2021fb_q14",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following is a customer most likely to request due to their religious beliefs?\nMeals low in salt\nMeals free of all seafood products\nMeals free from shellfish and pork\nMeals that do not contain wheat based products"
+  },
+  {
+   "id": "hosp2021fb_q15",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which list contains documents which are all examples of occupational licensing in the\nhospitality industry?\nFood Safety Certificate, NSW Drivers Licence, First Aid Certificate\nFirst Aid Certificate, Food Safety Certificate, Responsible Service of Alcohol\nCompetency\nNSW Drivers Licence, Responsible Service of Alcohol Competency, Responsible\nConduct of Gaming Competency\nResponsible Service of Alcohol Competency, Food Safety Certificate, Responsible\nConduct of Gaming Competency\nBLANK PAGE\n– 7 –\nBLANK PAGE\n© 2021 NSW Education Standards Authority\n– 8 –\n– 9 –\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nFood and Beverage\nCentre Number\nStudent Number\n5499310056\n1421\n26581"
+  },
+  {
+   "id": "hosp2021fb_q16",
+   "year": 2021,
+   "number": "16",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nA hospitality worker is constantly late for their shifts, arrives poorly groomed\nand is unprepared to begin work.\nOutline how the supervisor should manage this worker.\n2\n(b)\nState the possible implications to the establishment when workers do not adhere\nto work standards.\n2\nFOOD\n(a)\nA hospitality worker is constantly late for their shifts, arrives poorly groomed\nand is unprepared to begin work.\nOutline how the supervisor should manage this worker.\n2\n(b)\nState the possible implications to the establishment when workers do not adhere\nto work standards.\n2\nFOOD"
+  },
+  {
+   "id": "hosp2021fb_q17",
+   "year": 2021,
+   "number": "17",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nDescribe strategies that could be used to ensure effective communication with\nworkers who have English as an additional language or dialect (EAL/D).\n3\n(b)\nHow does a housekeeping worker demonstrate a commitment to high standards\nin their everyday work? Support your answer using specific industry examples.\n4\n8287310054\n(a)\nDescribe strategies that could be used to ensure effective communication with\nworkers who have English as an additional language or dialect (EAL/D).\n3\n(b)\nHow does a housekeeping worker demonstrate a commitment to high standards\nin their everyday work? Support your answer using specific industry examples.\n4\n8287310054"
+  },
+  {
+   "id": "hosp2021fb_q18",
+   "year": 2021,
+   "number": "18",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Describe the primary functions of TWO key bodies involved in Work, Health and\nSafety. Support your answer using specific industry examples.\n4\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nFood and Beverage\n8543310116\n1422\n26589"
+  },
+  {
+   "id": "hosp2021fb_q19",
+   "year": 2021,
+   "number": "19",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Describe how front-of-house workers can keep up to date with workplace-specific\nstandards for the presentation of quality non-alcoholic beverages.\n3"
+  },
+  {
+   "id": "hosp2021fb_q20",
+   "year": 2021,
+   "number": "20",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nLabel the THREE parts of the coffee machine indicated in the diagram.\n2\nCoffee machine\n(b)\nHow should a worker tamp coffee grounds to get optimum extraction of an\nespresso shot?\n2\n(c)\nDescribe safety techniques when using steam to texture milk.\n2\n5123310117\n(d)\nDescribe the THREE methods of dosing a filter basket with the correct amount\nof coffee grounds.\n4\n(a)\nLabel the THREE parts of the coffee machine indicated in the diagram.\n2\nCoffee machine\n(b)\nHow should a worker tamp coffee grounds to get optimum extraction of an\nespresso shot?\n2\n(c)\nDescribe safety techniques when using steam to texture milk.\n2\n5123310117\n(d)\nDescribe the THREE methods of dosing a filter basket with the correct amount\nof coffee grounds.\n4"
+  },
+  {
+   "id": "hosp2021fb_q21",
+   "year": 2021,
+   "number": "21",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nWhat is the purpose of a pre-service briefing?\n2\n(b)\nService period set-up is essential for efficient restaurant service.\nComplete the following check list for service period set-up.\n5\nReservations\nNote customer special requests\nWait Station\nLinen ready to re-set tables\nReplacement condiments ready to use\nTables\nPlaced for efficiency and stability\nEnvironment\nMusic and lighting at appropriate level\nAir-conditioning at comfortable temperature\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nFood and Beverage\n1423\n(a)\nWhat is the purpose of a pre-service briefing?\n2\n(b)\nService period set-up is essential for efficient restaurant service.\nComplete the following check list for service period set-up.\n5\nReservations\nNote customer special requests\nWait Station\nLinen ready to re-set tables\nReplacement condiments ready to use\nTables\nPlaced for efficiency and stability\nEnvironment\nMusic and lighting at appropriate level\nAir-conditioning at comfortable temperature\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nFood and Beverage\n1423"
+  },
+  {
+   "id": "hosp2021fb_q22",
+   "year": 2021,
+   "number": "22",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nOutline the benefits of repeat business for both a hospitality establishment and\na customer.\n3\n(b)\nA customer with their baby, a four-year-old child and an elderly grandmother\nenters a café for lunch.\nExplain how quality service can be provided to these customers to ensure a\npositive café dining experience. Use specific examples in your answer.\n4\n(c)\nHow does effective communication allow customers’ needs, preferences and\nexpectations to be accurately established at the beginning of a café dining\nexperience?\nUse industry examples to support your answer.\n8\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response\n(a)\nOutline the benefits of repeat business for both a hospitality establishment and\na customer.\n3\n(b)\nA customer with their baby, a four-year-old child and an elderly grandmother\nenters a café for lunch.\nExplain how quality service can be provided to these customers to ensure a\npositive café dining experience. Use specific examples in your answer.\n4\n(c)\nHow does effective communication allow customers’ needs, preferences and\nexpectations to be accurately established at the beginning of a café dining\nexperience?\nUse industry examples to support your answer.\n8\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response"
+  },
+  {
+   "id": "hosp2021fb_q23",
+   "year": 2021,
+   "number": "23",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "‘The nature of the hospitality industry is always changing, resulting in protocols being updated.\nThe hospitality industry has a responsibility to maintain a high level of quality service and keep\nits customers safe.’\nYou are employed in a five-star hotel.\nExplain how this hotel should have adjusted hygienic work practices for a range of services to\ncomply with updated industry protocols.\nUse industry examples to support your answer."
+  },
+  {
+   "id": "hosp2021ko_q1",
+   "year": 2021,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "A food truck would choose to use disposable bamboo cutlery rather than plastic cutlery\nfor food service because they are\nbiodegradable.\ncheaper.\ndurable.\nreusable."
+  },
+  {
+   "id": "hosp2021ko_q2",
+   "year": 2021,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which environmentally friendly work practice is best to use when disposing of fruit and\nvegetable waste during food preparation?\nPlace in a compost bin\nPlace in a recycling bin\nPlace in a general waste bin\nPlace in a waste disposal unit"
+  },
+  {
+   "id": "hosp2021ko_q3",
+   "year": 2021,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What does PCBU stand for?\nPeople conducting a business understanding\nPerson conducting a business understanding\nPerson conducting a business or undertaking\nPeople contracted to a business or undertaking\n– 3 –"
+  },
+  {
+   "id": "hosp2021ko_q4",
+   "year": 2021,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Two types of utensils used for food preparation are shown below.\nUtensil 1\nand 2\nWhich row of the table identifies both utensils?\n(option)\n(option)\n(option)\nUtensil 1\nUtensil 2\nZester\nMandolin\nZester\nGrater\nPeeler\nGrater\nCorer\nMandolin"
+  },
+  {
+   "id": "hosp2021ko_q5",
+   "year": 2021,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Why is frequent handwashing part of hygienic work practices in a hospitality\nestablishment?\nIt ensures safe storage of commodities\nIt builds the reputation of the establishment\nIt eliminates the transfer of bacteria to other sources\nIt reduces the risk of transfer of bacteria to other sources\n– 4 –"
+  },
+  {
+   "id": "hosp2021ko_q6",
+   "year": 2021,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "When should an employee be trained in the use of workplace Safety Data Sheets?\nDuring induction\nWhen storing chemicals\nAt the start of every shift\nWhen a chemical spill occurs"
+  },
+  {
+   "id": "hosp2021ko_q7",
+   "year": 2021,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What are the desired characteristics of braised lamb shanks?\nCrunchy in texture, vivid in colour and glossy\nTender, remains moist and has crust on the outside\nRetains colour, soft in texture, connective tissue broken down\nRetains nutrients, tender and juicy and has crust on the outside"
+  },
+  {
+   "id": "hosp2021ko_q8",
+   "year": 2021,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What is a bain marie specifically used for?\nGratinate and brown food\nSteam large quantities of food\nRoast or bake a variety of foods\nHold food and keep it hot or cold"
+  },
+  {
+   "id": "hosp2021ko_q9",
+   "year": 2021,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What is the minimum internal temperature required when cooking chicken?\n60°C\n65°C\n70°C\n74°C\n– 5 –"
+  },
+  {
+   "id": "hosp2021ko_q10",
+   "year": 2021,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "The head chef wants to explain to an apprentice how to do the jardinière precision cut.\nHow should the head chef explain this to the apprentice?\nWash, top and tail, cut into 8 mm lengths, square off, cut into 8 mm slices then\n8 mm strips then into 8 mm dice\nWash, top and tail, cut into 20 mm lengths, square off, cut into 4 mm slices then\ninto 4 mm strips\nWash, top and tail, cut into 40 mm lengths, square off, cut into 3 mm slices then\ninto 3 mm strips\nWash, top and tail, cut into 3 mm lengths, square off, cut into 3 mm slices then into\n3 mm strips, then into 3 mm dice"
+  },
+  {
+   "id": "hosp2021ko_q11",
+   "year": 2021,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which menu type is represented in the image?\nM e n\nu\nSet\nCyclic\nA la carte\nTable d’hôte\n– 6 –"
+  },
+  {
+   "id": "hosp2021ko_q12",
+   "year": 2021,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "What type of pastry is used to make profiteroles?\nChoux\nFilo\nPuff\nShortcrust"
+  },
+  {
+   "id": "hosp2021ko_q13",
+   "year": 2021,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which commodity is most likely to be contaminated by Campylobacter?\nFish\nCream\nPotatoes\nCanned tomatoes"
+  },
+  {
+   "id": "hosp2021ko_q14",
+   "year": 2021,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which of the following is a customer most likely to request due to their religious beliefs?\nMeals low in salt\nMeals free of all seafood products\nMeals free from shellfish and pork\nMeals that do not contain wheat based products"
+  },
+  {
+   "id": "hosp2021ko_q15",
+   "year": 2021,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which list contains documents which are all examples of occupational licensing in the\nhospitality industry?\nFood Safety Certificate, NSW Drivers Licence, First Aid Certificate\nFirst Aid Certificate, Food Safety Certificate, Responsible Service of Alcohol\nCompetency\nNSW Drivers Licence, Responsible Service of Alcohol Competency, Responsible\nConduct of Gaming Competency\nResponsible Service of Alcohol Competency, Food Safety Certificate, Responsible\nConduct of Gaming Competency\nBLANK PAGE\n– 7 –\nBLANK PAGE\n© 2021 NSW Education Standards Authority\n– 8 –\n– 9 –\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nKitchen Operations and Cookery\nCentre Number\nStudent Number\n5499310056\n1421\n26581"
+  },
+  {
+   "id": "hosp2021ko_q16",
+   "year": 2021,
+   "number": "16",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nA hospitality worker is constantly late for their shifts, arrives poorly groomed\nand is unprepared to begin work.\nOutline how the supervisor should manage this worker.\n2\n(b)\nState the possible implications to the establishment when workers do not adhere\nto work standards.\n2\n(a)\nA hospitality worker is constantly late for their shifts, arrives poorly groomed\nand is unprepared to begin work.\nOutline how the supervisor should manage this worker.\n2\n(b)\nState the possible implications to the establishment when workers do not adhere\nto work standards.\n2"
+  },
+  {
+   "id": "hosp2021ko_q17",
+   "year": 2021,
+   "number": "17",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nDescribe strategies that could be used to ensure effective communication with\nworkers who have English as an additional language or dialect (EAL/D).\n3\n(b)\nHow does a housekeeping worker demonstrate a commitment to high standards\nin their everyday work? Support your answer using specific industry examples.\n4\n8287310054\n(a)\nDescribe strategies that could be used to ensure effective communication with\nworkers who have English as an additional language or dialect (EAL/D).\n3\n(b)\nHow does a housekeeping worker demonstrate a commitment to high standards\nin their everyday work? Support your answer using specific industry examples.\n4\n8287310054"
+  },
+  {
+   "id": "hosp2021ko_q18",
+   "year": 2021,
+   "number": "18",
+   "marks": 4,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Describe the primary functions of TWO key bodies involved in Work, Health and\nSafety. Support your answer using specific industry examples.\n4\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nKitchen Operations and Cookery\n8543310116\n1432\n26587"
+  },
+  {
+   "id": "hosp2021ko_q19",
+   "year": 2021,
+   "number": "19",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Describe how back-of-house workers can keep up to date with changing food\npresentation trends.\n3"
+  },
+  {
+   "id": "hosp2021ko_q20",
+   "year": 2021,
+   "number": "20",
+   "marks": 10,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nLabel the THREE parts of a Chef’s knife indicated in the diagram.\n2\nChef's knife\n(b)\nHow should a worker grip a Chef’s knife correctly?\n2\n(c)\nDescribe the safest technique to cut kumera (sweet potato) using a Chef’s knife.\n2\n5123310117\n(d)\nContrast ONE dry heat method of cookery to ONE moist heat method of\ncookery.\n4\n(a)\nLabel the THREE parts of a Chef’s knife indicated in the diagram.\n2\nChef's knife\n(b)\nHow should a worker grip a Chef’s knife correctly?\n2\n(c)\nDescribe the safest technique to cut kumera (sweet potato) using a Chef’s knife.\n2\n5123310117\n(d)\nContrast ONE dry heat method of cookery to ONE moist heat method of\ncookery.\n4"
+  },
+  {
+   "id": "hosp2021ko_q21",
+   "year": 2021,
+   "number": "21",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nWhat is the purpose of a food safety program?\n2\n(b)\nHazard analysis critical control point (HACCP) is a universally accepted food\nsafety program.\nComplete the HACCP plan in the table for a cold meat and cheese sandwich.\n5\nProcess\nHazard\nControl\nMonitor\nReceiving\nand storage of\ningredients\nObserve FIFO/\nLILO procedures,\nrefrigerate cold\nmeat and cheese,\nstore bread in cool,\ndry conditions\nPreparation of\nCross-\nEnsure that\nenvironment/\ncontamination\npersonal\npersonal\nfrom equipment\nand kitchen\nhygiene\n– hands, hair and\nclothes\nhygiene is being\nundertaken\nMaking\nCross-\nsandwich\ncontamination\nfrom equipment\n– hands, hair and\nclothes\nPlating and\nBacteria entering\nMonitor time\nservice\nfood while\nbetween making\nplating food and\nsandwich and\nserving\nsafe storage/\nplating and\nserving\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nKitchen Operations and Cookery\n1433\n(a)\nWhat is the purpose of a food safety program?\n2\n(b)\nHazard analysis critical control point (HACCP) is a universally accepted food\nsafety program.\nComplete the HACCP plan in the table for a cold meat and cheese sandwich.\n5\nProcess\nHazard\nControl\nMonitor\nReceiving\nand storage of\ningredients\nObserve FIFO/\nLILO procedures,\nrefrigerate cold\nmeat and cheese,\nstore bread in cool,\ndry conditions\nPreparation of\nCross-\nEnsure that\nenvironment/\ncontamination\npersonal\npersonal\nfrom equipment\nand kitchen\nhygiene\n– hands, hair and\nclothes\nhygiene is being\nundertaken\nMaking\nCross-\nsandwich\ncontamination\nfrom equipment\n– hands, hair and\nclothes\nPlating and\nBacteria entering\nMonitor time\nservice\nfood while\nbetween making\nplating food and\nsandwich and\nserving\nsafe storage/\nplating and\nserving\n2021\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nHospitality\nKitchen Operations and Cookery\n1433"
+  },
+  {
+   "id": "hosp2021ko_q22",
+   "year": 2021,
+   "number": "22",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "The head chef has instructed you to plan menu items for the specials board for\ntomorrow’s service period. You are expected to use up all of the excess commodities\nin the coolroom.\nGeneral staples are also available for you to use in your menu items.\nThe excess commodities are listed in the table:\nCommodity\nSpecifications\nAmount\nCream\nPure, fresh\n1 litre\nChicken\nNo.12 whole, fresh\n4\nRaspberries\nFresh\n4 punnets\nSpinach\nEnglish\n2 bunches\nShallots\nFresh, bunch\n2 bunches\nBeetroot\nFresh, medium\n6\n(a) Why is it important to use up these excess commodities from the coolroom?\n5\n(b) Explain how all the excess commodities could be utilised by planning an entrée,\nmain and dessert for the specials board.\n10\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response\n(a) Why is it important to use up these excess commodities from the coolroom?\n5\n(b) Explain how all the excess commodities could be utilised by planning an entrée,\nmain and dessert for the specials board.\n10\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response"
+  },
+  {
+   "id": "hosp2021ko_q23",
+   "year": 2021,
+   "number": "23",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "‘The nature of the hospitality industry is always changing, resulting in protocols being updated.\nThe hospitality industry has a responsibility to maintain a high level of quality service and keep\nits customers safe.’\nYou are employed in a five-star hotel.\nExplain how this hotel should have adjusted hygienic work practices for a range of services to\ncomply with updated industry protocols.\nUse industry examples to support your answer."
+  },
+  {
+   "id": "hosp2022fb_q1",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following is a legal requirement for hand washing facilities in a commercial\nhospitality business?\nA hand-washing sink must have non-hand operational taps.\nAntibacterial gels can be substituted for a hand-washing sink.\nThere must be a hand-washing sink in a separate area to the kitchen.\nThere must be a clearly designated hand-washing sink in the kitchen."
+  },
+  {
+   "id": "hosp2022fb_q2",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Coffee styles use steamed or textured milk.\nIn which of the following do both coffee styles use steamed milk?\nMocha and latte\nCappuccino and latte\nFlat white and mocha\nFlat white and cappuccino"
+  },
+  {
+   "id": "hosp2022fb_q3",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following is an example of a personalised customer interaction in the\nhospitality industry?\nPlacing the bill on the table\nGreeting and seating on arrival\nTaking a reservation through an app\nComputer generated confirmation of reservation"
+  },
+  {
+   "id": "hosp2022fb_q4",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A chemical splashes into a worker’s eye while they are cleaning.\nWhich of the following is the first step in assisting in the reduction of injury?\nCover the eye with a clean dressing\nWait for the first aid officer to arrive\nPlace the worker in the recovery position\nRinse the eye thoroughly with running water\n– 3 –"
+  },
+  {
+   "id": "hosp2022fb_q5",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following is a set of non-verbal communication methods that a waiter could\nuse when liaising with customers?\nQuestioning, eye contact, smiling\nEmojis, text messages, pictures of menu items\nPictures of menu items, hand gestures, eye contact\nHand gestures, pictures of menu items, questioning"
+  },
+  {
+   "id": "hosp2022fb_q6",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "The Arabica coffee bean has which set of characteristics?\nAcidic, aromatic and sweet\nAcidic, sweet and full bodied\nChocolatey, full bodied and sweet\nFull bodied, chocolatey and aromatic"
+  },
+  {
+   "id": "hosp2022fb_q7",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following is commonly added to chilled water to make it more refreshing\nfor service?\nCelery stick\nSprig of mint\nMaraschino cherry\nSugar rimmed glass"
+  },
+  {
+   "id": "hosp2022fb_q8",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following defines a ristretto style coffee?\n7 g coffee extracted to 15 mL espresso\n7 g coffee extracted to 25 mL espresso\n14 g coffee extracted to 20 mL espresso\n14 g coffee extracted to 25 mL espresso"
+  },
+  {
+   "id": "hosp2022fb_q9",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following would be most supportive in dealing with multiple and diverse\ncustomer demands during service?\nExtra staff\nBilingual staff\nWell-trained staff\nMulticultural staff\n– 4 –"
+  },
+  {
+   "id": "hosp2022fb_q10",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following is a set of safe operational practices that must be used with an\nespresso machine to texture milk?\nPurge steam wand, use cold jug, turn steam wand on slowly\nClean steam wand, use cold jug, turn steam wand on quickly\nPurge steam wand, use warm jug, turn steam wand on slowly\nClean steam wand, use warm jug, turn steam wand on quickly"
+  },
+  {
+   "id": "hosp2022fb_q11",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "At the start of their shift a worker inspects the blender to ensure all components are\nworking and there is no evidence of damage.\nThis is an example of\nreviewing safety precautions.\nfollowing manufacturer instructions.\nfollowing a Safety Data Sheet (SDS).\napplying pre-operational safety checks."
+  },
+  {
+   "id": "hosp2022fb_q12",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Customers often provide wait staff with complex orders and requests.\nWhich of the following are the most common reasons a customer may request changes\nto a menu item?\nSocial expectations, language barriers, personal preferences\nSocial expectations, language barriers, allergies and intolerances\nPersonal preferences, allergies and intolerances, cultural reasons\nCultural reasons, personal preferences, aesthetic of the food product"
+  },
+  {
+   "id": "hosp2022fb_q13",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following represents an interrelationship between sectors within the\nhospitality industry?\nA hotel promoting the local tourist attractions and tour operators\nSecurity in a Sports club managing difficult guests from the gaming room\nFront office organising with maintenance to repair a lamp in a guest’s room\nAn RSL club and a nearby hotel offering a show and accommodation package\n– 5 –"
+  },
+  {
+   "id": "hosp2022fb_q14",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "When using the Hazard Analysis Critical Control Point model, which of the following is\na control measure?\nIdentifying foreign bodies in products\nPurchasing from an approved supplier\nRejecting out-of-specification deliveries\nSelecting ingredients from stores randomly"
+  },
+  {
+   "id": "hosp2022fb_q15",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What combination of senses would provide the best analysis of espresso coffee quality?\nSight and smell\nSmell and taste\nTaste and touch\nTouch and sight\nBLANK PAGE\n– 6 –\nBLANK PAGE\n– 7 –\nBLANK PAGE\n© 2022 NSW Education Standards Authority\n– 8 –\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 9 –\nDo NOT write in this area.\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\nCentre Number\nStudent Number\n2690310371\n1061\nHospitality\nFood and Beverage\nSections II, III and IV\nAnswer Booklet\n26589\nInstructions\n• Write your Centre Number and Student Number at the top of this\npage.\n• Use this answer booklet for Sections II, III and IV.\n• Follow the instructions inside this booklet as to where you should\nwrite your answers.\nPlease turn over\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 10 –\nDo NOT write in this area.\nBLANK PAGE\n6580310373\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 11 –\nDo NOT write in this area.\n2043310373"
+  },
+  {
+   "id": "hosp2022fb_q16",
+   "year": 2022,
+   "number": "16",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Outline potential food hazards associated with specific food contact surfaces.\n3\n2237310378"
+  },
+  {
+   "id": "hosp2022fb_q17",
+   "year": 2022,
+   "number": "17",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Explain the purpose and importance of workers reporting issues related to food safety\nin a busy café. Support your answer with industry examples.\n5\n1575310372"
+  },
+  {
+   "id": "hosp2022fb_q18",
+   "year": 2022,
+   "number": "18",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nHow could the development of restaurant employees’ skills and productivity\nlead to improved quality in a hospitality business?\n2\n(b)\nOutline how evaluating work performance can lead to improved work practices\nin a restaurant.\n2\n(c)\nDescribe TWO strategies that a restaurant owner could implement to ensure\nquality customer outcomes.\n3\n0125310372\n(a)\nHow could the development of restaurant employees’ skills and productivity\nlead to improved quality in a hospitality business?\n2\n(b)\nOutline how evaluating work performance can lead to improved work practices\nin a restaurant.\n2\n(c)\nDescribe TWO strategies that a restaurant owner could implement to ensure\nquality customer outcomes.\n3\n0125310372"
+  },
+  {
+   "id": "hosp2022fb_q19",
+   "year": 2022,
+   "number": "19",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nOutline the cleaning required for an espresso machine during service.\n2\n(b)\nDescribe the post service cleaning and maintenance requirements for both an\nespresso machine and a grinder.\n4\n4973310377\n(a)\nOutline the cleaning required for an espresso machine during service.\n2\n(b)\nDescribe the post service cleaning and maintenance requirements for both an\nespresso machine and a grinder.\n4\n4973310377"
+  },
+  {
+   "id": "hosp2022fb_q20",
+   "year": 2022,
+   "number": "20",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nDistinguish between manual and electronic order-taking systems.\n2\n(b)\nExplain the possible consequences for the customer and business if food and\nbeverage orders are incorrect or mismanaged.\n4\n0279310372\n(a)\nDistinguish between manual and electronic order-taking systems.\n2\n(b)\nExplain the possible consequences for the customer and business if food and\nbeverage orders are incorrect or mismanaged.\n4\n0279310372"
+  },
+  {
+   "id": "hosp2022fb_q21",
+   "year": 2022,
+   "number": "21",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nA menu is shown.\nMenu\nOutline this menu type and an appropriate dining setting for its use.\n2\n6089310377\n(b)\nExplain the strategies a hospitality business could implement in dealing with\ncustomer special requests.\n6\n2178310372\nSection III — Answer Question 22 on pages 18–24\n2\nQuestion Number\n2\n(a)\nComplete the costs on the standard recipe card provided below.\nRecipe name\nPina Colada Mocktail\nNumber of portions\n1\nServing size per portion\n300 mL\nIngredients\nQuantity\nUnit\nUnit price ($)\nTotal price ($)\nPineapple juice\n150 mL\n100 mL\n0.50\nCoconut milk\n50 mL\n100 mL\n0.25\nLimes\n1 (70 g)\n1 (70 g)\n0.65\nBrown sugar\n100 g\n100 g\n0.30\nPineapple slices\n1 (100 g)\n1 kg\n2.00\nCinnamon sticks\n1 (5 g)\n10 g\n1.20\nTotal food cost ($)\nTotal food cost for function ($)\n4072310377\n9362310374\n9827310370\n0660310376\n7551310372\n3638310374\n6696310371\nSection IV — Answer Question 23 on pages 25–31\n2 3\nQuestion Number\n5148310372\n3013310371\n6604310370\n9668310373\n4258310373\n2402310372\n0968310377\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n1062\nHospitality\nFood and Beverage\nAnswer the question on pages 18–24 of the Sections II, III and IV Answer Booklet. Extra\n(a)\nA menu is shown.\nMenu\nOutline this menu type and an appropriate dining setting for its use.\n2\n6089310377\n(b)\nExplain the strategies a hospitality business could implement in dealing with\ncustomer special requests.\n6\n2178310372\nSection III — Answer Question 22 on pages 18–24\n2\nQuestion Number\n2\n(a)\nComplete the costs on the standard recipe card provided below.\nRecipe name\nPina Colada Mocktail\nNumber of portions\n1\nServing size per portion\n300 mL\nIngredients\nQuantity\nUnit\nUnit price ($)\nTotal price ($)\nPineapple juice\n150 mL\n100 mL\n0.50\nCoconut milk\n50 mL\n100 mL\n0.25\nLimes\n1 (70 g)\n1 (70 g)\n0.65\nBrown sugar\n100 g\n100 g\n0.30\nPineapple slices\n1 (100 g)\n1 kg\n2.00\nCinnamon sticks\n1 (5 g)\n10 g\n1.20\nTotal food cost ($)\nTotal food cost for function ($)\n4072310377\n9362310374\n9827310370\n0660310376\n7551310372\n3638310374\n6696310371\nSection IV — Answer Question 23 on pages 25–31\n2 3\nQuestion Number\n5148310372\n3013310371\n6604310370\n9668310373\n4258310373\n2402310372\n0968310377\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n1062\nHospitality\nFood and Beverage\nAnswer the question on pages 18–24 of the Sections II, III and IV Answer Booklet. Extra"
+  },
+  {
+   "id": "hosp2022fb_q22",
+   "year": 2022,
+   "number": "22",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Please turn over\n\n– 34 –"
+  },
+  {
+   "id": "hosp2022fb_q23",
+   "year": 2022,
+   "number": "23",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Analyse the roles and responsibilities of the following personnel in regard to work health and\nsafety (WHS) consultation and participation in a hospitality workplace.\n• Unions\n• Workers\n• Supervisors\n• Persons conducting a business undertaking (PCBU)\nUse specific industry examples in your response."
+  },
+  {
+   "id": "hosp2022ko_q1",
+   "year": 2022,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which of the following is a legal requirement for hand washing facilities in a commercial\nhospitality business?\nA hand-washing sink must have non-hand operational taps.\nAntibacterial gels can be substituted for a hand-washing sink.\nThere must be a hand-washing sink in a separate area to the kitchen.\nThere must be a clearly designated hand-washing sink in the kitchen."
+  },
+  {
+   "id": "hosp2022ko_q2",
+   "year": 2022,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which of the following best describes the process of roasting food?\nIn an oven, with fat used as a basting agent\nIn an oven, with moisture which turns to steam\nOn a stove top, in a vessel with a tight-fitting lid\nOn a surface, with radiant heat from above or below"
+  },
+  {
+   "id": "hosp2022ko_q3",
+   "year": 2022,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Vulnerable customers who are at high risk of being harmed by food-borne illness include\ncoeliacs, diabetics and the hearing impaired.\nthe elderly, diabetics and the hearing impaired.\ncoeliacs, pregnant women and the chronically ill.\nthe elderly, pregnant women and the chronically ill."
+  },
+  {
+   "id": "hosp2022ko_q4",
+   "year": 2022,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "A chemical splashes into a worker’s eye while they are cleaning.\nWhich of the following is the first step in assisting in the reduction of injury?\nCover the eye with a clean dressing\nWait for the first aid officer to arrive\nPlace the worker in the recovery position\nRinse the eye thoroughly with running water\n– 3 –"
+  },
+  {
+   "id": "hosp2022ko_q5",
+   "year": 2022,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which of the following is a set of non-verbal communication methods that a waiter could\nuse when liaising with customers?\nQuestioning, eye contact, smiling\nEmojis, text messages, pictures of menu items\nPictures of menu items, hand gestures, eye contact\nHand gestures, pictures of menu items, questioning"
+  },
+  {
+   "id": "hosp2022ko_q6",
+   "year": 2022,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which set of unyielding cutting surfaces could damage knives?\nMetal, wood and stone\nCeramic, stone and metal\nMetal, wood and ceramic\nCeramic, stone and wood"
+  },
+  {
+   "id": "hosp2022ko_q7",
+   "year": 2022,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which technique assists in retaining the shape of a whole chicken when roasting?\nBarding\nLarding\nSkinning\nTrussing"
+  },
+  {
+   "id": "hosp2022ko_q8",
+   "year": 2022,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which set of dimensions is correct for a jardinière precision cut?\n8 mm × 8 mm × 8 mm\n3 mm × 3 mm × 3 mm\n20 mm × 4 mm × 4 mm\n40 mm × 3 mm × 3 mm"
+  },
+  {
+   "id": "hosp2022ko_q9",
+   "year": 2022,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "An established hospitality business has installed solar panels and water efficient taps.\nThis is an example of\nmeeting local council regulations.\nestablishing a modern inner-city eatery.\napplying environmentally sustainable practices.\ncomplying with environmental legislation requirements.\n– 4 –"
+  },
+  {
+   "id": "hosp2022ko_q10",
+   "year": 2022,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "A worker burns their hand on the handle of a saucepan.\nWhich mode of heat transfer caused the burn?\nConduction\nConvection\nEvaporation\nRadiation"
+  },
+  {
+   "id": "hosp2022ko_q11",
+   "year": 2022,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "At the start of their shift a worker inspects the blender to ensure all components are\nworking and there is no evidence of damage.\nThis is an example of\nreviewing safety precautions.\nfollowing manufacturer instructions.\nfollowing a Safety Data Sheet (SDS).\napplying pre-operational safety checks."
+  },
+  {
+   "id": "hosp2022ko_q12",
+   "year": 2022,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "A blanc roux is the base for which set of sauces?\nCream, mornay and velouté\nMornay, cream and bechamel\nTartare, velouté and mayonnaise\nMayonnaise, bechamel and cream"
+  },
+  {
+   "id": "hosp2022ko_q13",
+   "year": 2022,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Which of the following represents an interrelationship between sectors within the\nhospitality industry?\nA hotel promoting the local tourist attractions and tour operators\nSecurity in a Sports club managing difficult guests from the gaming room\nFront office organising with maintenance to repair a lamp in a guest’s room\nAn RSL club and a nearby hotel offering a show and accommodation package\n– 5 –"
+  },
+  {
+   "id": "hosp2022ko_q14",
+   "year": 2022,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "When using the Hazard Analysis Critical Control Point model, which of the following is\na control measure?\nIdentifying foreign bodies in products\nPurchasing from an approved supplier\nRejecting out-of-specification deliveries\nSelecting ingredients from stores randomly"
+  },
+  {
+   "id": "hosp2022ko_q15",
+   "year": 2022,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "A worker uses beurre manié to thicken a sauce.\nCustomers most affected by consuming the sauce would be those who are\ncoeliac.\ndiabetic.\nallergic to egg.\nyeast intolerant.\nBLANK PAGE\n– 6 –\nBLANK PAGE\n– 7 –\nBLANK PAGE\n© 2022 NSW Education Standards Authority\n– 8 –\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 9 –\nDo NOT write in this area.\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\nCentre Number\nStudent Number\n2690310371\n1071\nHospitality\nKitchen Operations and Cookery\nSections II, III and IV\nAnswer Booklet\n26587\nInstructions\n• Write your Centre Number and Student Number at the top of this\npage.\n• Use this answer booklet for Sections II, III and IV.\n• Follow the instructions inside this booklet as to where you should\nwrite your answers.\nPlease turn over\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 10 –\nDo NOT write in this area.\nBLANK PAGE\n6580310373\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 11 –\nDo NOT write in this area.\n2043310373"
+  },
+  {
+   "id": "hosp2022ko_q16",
+   "year": 2022,
+   "number": "16",
+   "marks": 3,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Outline potential food hazards associated with specific food contact surfaces.\n3\n2237310378"
+  },
+  {
+   "id": "hosp2022ko_q17",
+   "year": 2022,
+   "number": "17",
+   "marks": 5,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Explain the purpose and importance of workers reporting issues related to food safety\nin a busy café. Support your answer with industry examples.\n5\n1575310372"
+  },
+  {
+   "id": "hosp2022ko_q18",
+   "year": 2022,
+   "number": "18",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nHow could the development of restaurant employees’ skills and productivity\nlead to improved quality in a hospitality business?\n2\n(b)\nOutline how evaluating work performance can lead to improved work practices\nin a restaurant.\n2\n(c)\nDescribe TWO strategies that a restaurant owner could implement to ensure\nquality customer outcomes.\n3\n0125310372\n(a)\nHow could the development of restaurant employees’ skills and productivity\nlead to improved quality in a hospitality business?\n2\n(b)\nOutline how evaluating work performance can lead to improved work practices\nin a restaurant.\n2\n(c)\nDescribe TWO strategies that a restaurant owner could implement to ensure\nquality customer outcomes.\n3\n0125310372"
+  },
+  {
+   "id": "hosp2022ko_q19",
+   "year": 2022,
+   "number": "19",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nWhy should a hospitality business include floors and walls in a cleaning\nschedule?\n2\n(b)\nDistinguish between cleaning, sanitising and disinfecting in a commercial\nkitchen.\n4\n4973310377\n(a)\nWhy should a hospitality business include floors and walls in a cleaning\nschedule?\n2\n(b)\nDistinguish between cleaning, sanitising and disinfecting in a commercial\nkitchen.\n4\n4973310377"
+  },
+  {
+   "id": "hosp2022ko_q20",
+   "year": 2022,
+   "number": "20",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nWhy is it important for a hospitality worker to be aware of the Food Act 2003\n(NSW) (as amended)?\n2\n(b)\nExplain the compliance requirements of businesses involved in the safe\npreparation and service of food.\n4\n0279310372\n(a)\nWhy is it important for a hospitality worker to be aware of the Food Act 2003\n(NSW) (as amended)?\n2\n(b)\nExplain the compliance requirements of businesses involved in the safe\npreparation and service of food.\n4\n0279310372"
+  },
+  {
+   "id": "hosp2022ko_q21",
+   "year": 2022,
+   "number": "21",
+   "marks": 9,
+   "type": "short_answer",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "(a)\nA menu is shown.\nMenu\nOutline this menu type and an appropriate dining setting for its use.\n2\n6089310377\n(b)\nExplain the strategies a hospitality business could implement in dealing with\ncustomer special requests and dietary requirements.\n6\n2178310372\nSection III — Answer Question 22 on pages 18–24\n2 2\nQuestion Number\n(a)\nComplete the costs on the standard recipe card provided below.\nRecipe name\nCrepe Suzette with Orange Segments\nNumber of portions\n1\nServing size per portion\n3 crepes\nIngredients\nQuantity\nUnit\nUnit price ($)\nTotal price ($)\nPlain flour\n100 g\n100 g\n0.90\nSalt\n5 g\n10 g\n0.05\nEggs\n2 (120 g)\n1 (60 g)\n0.45\nButter\n10 g\n100 g\n1.25\nSugar\n55 g\n100 g\n0.15\nOranges\n2 (200 g)\n100 g\n0.40\nTotal food cost ($)\nTotal food cost for function ($)\n4072310377\n9362310374\n9827310370\n0660310376\n7551310372\n3638310374\n6696310371\nSection IV — Answer Question 23 on pages 25–31\n2 3\nQuestion Number\n5148310372\n3013310371\n6604310370\n9668310373\n4258310373\n2402310372\n0968310377\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n1072\nHospitality\nKitchen Operations and Cookery\nAnswer the question on pages 18–24 of the Sections II, III and IV Answer Booklet. Extra\n(a)\nA menu is shown.\nMenu\nOutline this menu type and an appropriate dining setting for its use.\n2\n6089310377\n(b)\nExplain the strategies a hospitality business could implement in dealing with\ncustomer special requests and dietary requirements.\n6\n2178310372\nSection III — Answer Question 22 on pages 18–24\n2 2\nQuestion Number\n(a)\nComplete the costs on the standard recipe card provided below.\nRecipe name\nCrepe Suzette with Orange Segments\nNumber of portions\n1\nServing size per portion\n3 crepes\nIngredients\nQuantity\nUnit\nUnit price ($)\nTotal price ($)\nPlain flour\n100 g\n100 g\n0.90\nSalt\n5 g\n10 g\n0.05\nEggs\n2 (120 g)\n1 (60 g)\n0.45\nButter\n10 g\n100 g\n1.25\nSugar\n55 g\n100 g\n0.15\nOranges\n2 (200 g)\n100 g\n0.40\nTotal food cost ($)\nTotal food cost for function ($)\n4072310377\n9362310374\n9827310370\n0660310376\n7551310372\n3638310374\n6696310371\nSection IV — Answer Question 23 on pages 25–31\n2 3\nQuestion Number\n5148310372\n3013310371\n6604310370\n9668310373\n4258310373\n2402310372\n0968310377\n2022 HIGHER SCHOOL CERTIFICATE EXAMINATION\n1072\nHospitality\nKitchen Operations and Cookery\nAnswer the question on pages 18–24 of the Sections II, III and IV Answer Booklet. Extra"
+  },
+  {
+   "id": "hosp2022ko_q22",
+   "year": 2022,
+   "number": "22",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Please turn over\n\n– 34 –"
+  },
+  {
+   "id": "hosp2022ko_q23",
+   "year": 2022,
+   "number": "23",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Kitchen Operations and Cookery stream",
+   "text": "Analyse the roles and responsibilities of the following personnel in regard to work health and\nsafety (WHS) consultation and participation in a hospitality workplace.\n• Unions\n• Workers\n• Supervisors\n• Persons conducting a business undertaking (PCBU)\nUse specific industry examples in your response."
+  },
+  {
+   "id": "hosp2023fb_q1",
+   "year": 2023,
+   "number": "1",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which type of milk is the most suitable for a customer who is lactose intolerant?\nSkim\nWhole\nAlmond\nButtermilk"
+  },
+  {
+   "id": "hosp2023fb_q2",
+   "year": 2023,
+   "number": "2",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following indicates a caution sign?\nRed circle, black symbol\nBlue circle, white symbol\nYellow triangle, black symbol\nGreen rectangle, white symbol"
+  },
+  {
+   "id": "hosp2023fb_q3",
+   "year": 2023,
+   "number": "3",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following pairs of complementary selections is industry standard for\nserving with herbal tea?\nHoney and milk\nHoney and lemon\nFlavoured syrup and milk\nFlavoured syrup and lemon\n– 3 –"
+  },
+  {
+   "id": "hosp2023fb_q4",
+   "year": 2023,
+   "number": "4",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which aspects of the hospitality industry are addressed by legislation?\nPricing, overbooking, confidentiality\nConfidentiality, overbooking, hygiene\nPricing, privacy, work health and safety\nPrivacy, work health and safety, hygiene"
+  },
+  {
+   "id": "hosp2023fb_q5",
+   "year": 2023,
+   "number": "5",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "The diagram shows two pieces of glassware.\nWhich of the following correctly identifies these pieces of glassware?\nHighball and martini\nHighball and hurricane\nChampagne and martini\nChampagne and hurricane\n– 4 –"
+  },
+  {
+   "id": "hosp2023fb_q6",
+   "year": 2023,
+   "number": "6",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Food manufacture and production can be affected by natural disasters.\nWhat aspects of a restaurant’s menu would most likely be affected by this?\nPricing, customer service, food quality\nPresentation, customer service, staffing\nPricing, food availability and supply, food quality\nPresentation, food availability and supply, staffing"
+  },
+  {
+   "id": "hosp2023fb_q7",
+   "year": 2023,
+   "number": "7",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "The term covers in a hospitality establishment refers to the number of\nseats in the restaurant.\ndrinks served in the restaurant.\ndishes served in a service period.\nguests served in a service period."
+  },
+  {
+   "id": "hosp2023fb_q8",
+   "year": 2023,
+   "number": "8",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A customer has complained that their espresso coffee is too bitter.\nWhat is the most likely cause?\nCoffee is over-extracted\nCoffee is under-extracted\nCoffee serviceware is too big\nCoffee serviceware is too small"
+  },
+  {
+   "id": "hosp2023fb_q9",
+   "year": 2023,
+   "number": "9",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A complaint has been made to the NSW Food Authority that an establishment is\ncommitting an offence under the Food Act 2003 (NSW) (as amended).\nWho can investigate the complaint on behalf of the NSW Food Authority?\nComplainant\nFood safety supervisor\nEnvironmental health officer\nHealth and safety representative\n– 5 –"
+  },
+  {
+   "id": "hosp2023fb_q10",
+   "year": 2023,
+   "number": "10",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A sample espresso should be made and tested to check the quality of the extraction.\nWhat should the correct extraction ratio be for this test?\n30 mL in 25–30 seconds\n40 mL in 25–30 seconds\n30 mL in 35–40 seconds\n40 mL in 35–40 seconds"
+  },
+  {
+   "id": "hosp2023fb_q11",
+   "year": 2023,
+   "number": "11",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following best describes the term steeping when making tea?\nBoiling tea leaves to extract flavour\nPouring hot tea through a fine strainer\nPouring cold tea through a fine strainer\nSoaking tea leaves in hot water to extract flavour"
+  },
+  {
+   "id": "hosp2023fb_q12",
+   "year": 2023,
+   "number": "12",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "How much espresso coffee should be extracted for a long macchiato?\n30 mL\n40 mL\n60 mL\n80 mL"
+  },
+  {
+   "id": "hosp2023fb_q13",
+   "year": 2023,
+   "number": "13",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Which of the following demonstrates the efficient use of resources in a hospitality\nestablishment?\nImplementing a recycling program, using LED lights, installing water-saving taps\nFree-pouring cleaning chemicals, installing water-saving taps, composting food\nwaste\nSorting of waste and recyclables, free-pouring cleaning chemicals, exchanging skip\nbins daily\nExchanging skip bins daily, replacing single-flush toilet with dual-flush toilets,\nusing LED lights\n– 6 –"
+  },
+  {
+   "id": "hosp2023fb_q14",
+   "year": 2023,
+   "number": "14",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "What is needed to make plunger coffee?\nHot water and fine-ground coffee\nHot water and medium-ground coffee\nBoiling water and fine-ground coffee\nBoiling water and medium-ground coffee"
+  },
+  {
+   "id": "hosp2023fb_q15",
+   "year": 2023,
+   "number": "15",
+   "marks": 1,
+   "type": "multiple_choice",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "A customer was diagnosed with food poisoning after eating a cheeseburger made using\nmedium-rare minced meat.\nWhich bacteria is most likely to have been the cause of the food poisoning?\nE. coli\nListeria\nSalmonella\nClostridium botulinum\nBLANK PAGE\n– 7 –\nBLANK PAGE\n© 2023 NSW Education Standards Authority\n– 8 –\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 9 –\nDo NOT write in this area.\n2023\nHIGHER SCHOOL CERTIFICATE EXAMINATION\nCentre Number\nStudent Number\n2690310371\n1071\nHospitality\nFood and Beverage\nSections II, III and IV\nAnswer Booklet\n26589\nInstructions\n• Write your Centre Number and Student Number at the top of this\npage.\n• Use this answer booklet for Sections II, III and IV.\n• Follow the instructions inside this booklet as to where you should\nwrite your answers.\nPlease turn over\nOffice Use Only – Do NOT write anything, or make any marks below this line.\n– 10 –\nDo NOT write in this area.\n6580310373"
+  },
+  {
+   "id": "hosp2023fb_q16",
+   "year": 2023,
+   "number": "16",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Outline TWO potential security breaches in a hospitality workplace.\n2\n2043310373"
+  },
+  {
+   "id": "hosp2023fb_q17",
+   "year": 2023,
+   "number": "17",
+   "marks": 7,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nOutline the importance of Work Health and Safety (WHS) induction training.\n3\n(b)\nExplain the importance of maintaining emergency signals, alarms and exits in a\nhospitality establishment.\n4\n2237310378\n(a)\nOutline the importance of Work Health and Safety (WHS) induction training.\n3\n(b)\nExplain the importance of maintaining emergency signals, alarms and exits in a\nhospitality establishment.\n4\n2237310378"
+  },
+  {
+   "id": "hosp2023fb_q18",
+   "year": 2023,
+   "number": "18",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Explain the possible outcomes if a member of staff does not follow workplace policies\nand procedures in a hospitality establishment. Support your answer with industry\nexamples.\n6\n1575310372"
+  },
+  {
+   "id": "hosp2023fb_q19",
+   "year": 2023,
+   "number": "19",
+   "marks": 2,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Outline TWO key features of a table d’hôte menu.\n2"
+  },
+  {
+   "id": "hosp2023fb_q20",
+   "year": 2023,
+   "number": "20",
+   "marks": 6,
+   "type": "short_answer",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nOutline how food and beverages should be cleared when providing table service\nto a customer.\n2\n(b)\nDescribe the duties that a front of house employee is required to perform at the\nend of a breakfast service period AND at the end of day.\n4\n0125310372\n(a)\nOutline how food and beverages should be cleared when providing table service\nto a customer.\n2\n(b)\nDescribe the duties that a front of house employee is required to perform at the\nend of a breakfast service period AND at the end of day.\n4\n0125310372"
+  },
+  {
+   "id": "hosp2023fb_q21",
+   "year": 2023,
+   "number": "21",
+   "marks": 12,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nOutline the importance of time management for a food and beverage attendant.\n2\n(b)\nRecommend strategies a hospitality worker can use to handle numerous service\ntasks simultaneously during a service period. Support your answer with industry\nexamples.\n4\n4973310377\n(c)\nExplain the implications for both the customer and the business if there is poor\nwork flow in a hospitality establishment. Support your answer with industry\nexamples.\n6\n0279310372\nSection III — Answer Question 22 on pages 16–22\n2 2\nQuestion Number\n6089310377\n2178310372\n4072310377\n9362310374\n9827310370\n0660310376\n7551310372\nSection IV — Answer Question 23 on pages 23–29\n2 3\nQuestion Number\n3638310374\n6696310371\n5148310372\n3013310371\n6604310370\n9668310373\n4258310373\n2402310372\n0968310377\n2023\nHIGHER SCHOOL CERTIFICATE EXAMINATION\n1072\nHospitality\nFood and Beverage\nAnswer the question on pages 16–22 of the Sections II, III and IV Answer Booklet. Extra\n(a)\nOutline the importance of time management for a food and beverage attendant.\n2\n(b)\nRecommend strategies a hospitality worker can use to handle numerous service\ntasks simultaneously during a service period. Support your answer with industry\nexamples.\n4\n4973310377\n(c)\nExplain the implications for both the customer and the business if there is poor\nwork flow in a hospitality establishment. Support your answer with industry\nexamples.\n6\n0279310372\nSection III — Answer Question 22 on pages 16–22\n2 2\nQuestion Number\n6089310377\n2178310372\n4072310377\n9362310374\n9827310370\n0660310376\n7551310372\nSection IV — Answer Question 23 on pages 23–29\n2 3\nQuestion Number\n3638310374\n6696310371\n5148310372\n3013310371\n6604310370\n9668310373\n4258310373\n2402310372\n0968310377\n2023\nHIGHER SCHOOL CERTIFICATE EXAMINATION\n1072\nHospitality\nFood and Beverage\nAnswer the question on pages 16–22 of the Sections II, III and IV Answer Booklet. Extra"
+  },
+  {
+   "id": "hosp2023fb_q22",
+   "year": 2023,
+   "number": "22",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "(a)\nThe image shows two pieces of equipment.\n3\nPourer\nJigger\nOutline the purpose of BOTH a pourer and a jigger in producing a mocktail.\n(b)\nDescribe the benefits of mise en place in a mocktail workstation.\n4\n(c)\nA manager has noted deficiencies in the quality of some non-alcoholic beverages\nduring service.\n8\nExplain the common deficiencies and the adjustments required when preparing\nand serving non-alcoholic beverages.\nAnswer the question on pages 23–29 of the Sections II, III and IV Answer Booklet. Extra\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response\n(a)\nThe image shows two pieces of equipment.\n3\nPourer\nJigger\nOutline the purpose of BOTH a pourer and a jigger in producing a mocktail.\n(b)\nDescribe the benefits of mise en place in a mocktail workstation.\n4\n(c)\nA manager has noted deficiencies in the quality of some non-alcoholic beverages\nduring service.\n8\nExplain the common deficiencies and the adjustments required when preparing\nand serving non-alcoholic beverages.\nAnswer the question on pages 23–29 of the Sections II, III and IV Answer Booklet. Extra\nYour answer will be assessed on how well you:\n● demonstrate knowledge and understanding relevant to the question\n● communicate ideas and information using relevant workplace examples and industry\nterminology\n● present a logical and cohesive response"
+  },
+  {
+   "id": "hosp2023fb_q23",
+   "year": 2023,
+   "number": "23",
+   "marks": 15,
+   "type": "extended_response",
+   "current_path": "Year 12 / Food and Beverage stream",
+   "text": "Explain how current issues and trends may affect a hospitality establishment."
+  }
+ ]
+}

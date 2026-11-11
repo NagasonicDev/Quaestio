@@ -123,6 +123,7 @@ CREATE TABLE IF NOT EXISTS stimulus (
   stimulus_id TEXT PRIMARY KEY,
   course_id TEXT NOT NULL REFERENCES course(course_id) ON DELETE CASCADE,
   title TEXT,
+  attach_all INTEGER NOT NULL DEFAULT 0,
   created_at TEXT NOT NULL,
   updated_at TEXT NOT NULL
 );
@@ -290,7 +291,7 @@ export const BUILTIN_QUESTION_TYPES: Array<[string, string]> = [
  * version the persisted blobs, and to the per-course `schema_version` that
  * describes the question format a course expects.
  */
-export const SCHEMA_VERSION = 9;
+export const SCHEMA_VERSION = 10;
 
 export interface Migration {
   id: number;
@@ -450,5 +451,10 @@ export const MIGRATIONS: Migration[] = [
       CREATE INDEX IF NOT EXISTS idx_asset_question ON asset(question_id);
       CREATE INDEX IF NOT EXISTS idx_mcq_option_question ON mcq_option(question_id);
     `,
+  },
+  {
+    id: 10,
+    name: "stimulus-attach-all",
+    sql: `ALTER TABLE stimulus ADD COLUMN attach_all INTEGER NOT NULL DEFAULT 0;`,
   },
 ];

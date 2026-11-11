@@ -1,0 +1,143 @@
+{
+  "course_id": "course_community_and_family_studies",
+  "course_name": "Community and Family Studies",
+  "questions": [
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 5,
+      "node_codes": [
+        "HSC-M3-T1-D9"
+      ],
+      "node_names": [
+        "Year 12 / Parenting and Caring / Parenting / carers"
+      ],
+      "node_ids": [
+        "community-and-family-studies-n387"
+      ],
+      "tags": [
+        "case_study",
+        "action_required"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "The graph shows data from the 2024 NSW Carers Survey giving the age and gender of primary carers in NSW in 2024. Account for the age and gender of primary carers. Support your answer with reference to the graph provided. (The original graph cannot be reproduced in this bundle.)"
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer: The graph shows a significant number of female carers aged 50-70 years, likely due to traditional caring roles and part-time/retired status; male carers increase over 60 with retirement; very few non-binary/gender diverse individuals identify as carers."
+          }
+        }
+      ],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "5 marks: thoroughly accounts for the age and gender of carers, with detailed reference to the graph provided.",
+              "4 marks: soundly accounts for the age and gender of carers, with reference to the graph provided.",
+              "3 marks: attempts to account for the age and/or gender of carers.",
+              "2 marks: provides some information on age and/or gender and/or carers.",
+              "1 mark: provides some relevant information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "HSC",
+        "year": 2025,
+        "institution": "HSC",
+        "original_question_no": "22"
+      }
+    },
+    {
+      "type_key": "extended_response",
+      "difficulty": 4,
+      "marks": 5,
+      "node_codes": [
+        "HSC-M1-T1-D54",
+        "HSC-M1-T1-D46"
+      ],
+      "node_names": [
+        "Year 12 / Research Methodology / Research process / recording actions and proposing solutions to any research issues",
+        "Year 12 / Research Methodology / Research process / collecting and recording data"
+      ],
+      "node_ids": [
+        "community-and-family-studies-n306",
+        "community-and-family-studies-n298"
+      ],
+      "tags": [
+        "case_study"
+      ],
+      "body": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "A diary entry from a student's Independent Research Project is shown:"
+          }
+        },
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "A questionnaire was created for the IRP hypothesis 'Artificial intelligence can better prepare school students for future careers'.",
+              "It was organised to hand out a paper questionnaire to our Year 12 cohort during a year meeting.",
+              "We ran out of copies.",
+              "The verbal instructions were unclear, and students were talking.",
+              "The disorganisation meant that some students didn't finish the questionnaire or were really rushed. Also, the hospitality class was on an excursion."
+            ]
+          }
+        },
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Justify steps that would address the research issue presented in the diary."
+          }
+        }
+      ],
+      "hint": [],
+      "answer": [
+        {
+          "block_type": "text",
+          "content": {
+            "text": "Sample answer: The research method was unreliable because the whole target sample could not answer under the same conditions; steps include setting a new time for the whole group, delivering clear instructions, stating confidentiality, and allowing enough time to respond."
+          }
+        }
+      ],
+      "solution": [],
+      "marking_criteria": [
+        {
+          "block_type": "list",
+          "content": {
+            "ordered": false,
+            "items": [
+              "5 marks: justifies steps to address the research issue presented in the diary.",
+              "4 marks: justifies some steps to address the research issue.",
+              "3 marks: provides some steps to address the research issue.",
+              "2 marks: demonstrates a basic understanding of the issue and/or solutions.",
+              "1 mark: provides some relevant information."
+            ]
+          }
+        }
+      ],
+      "classification_confidence": "high",
+      "source": {
+        "name": "HSC",
+        "year": 2025,
+        "institution": "HSC",
+        "original_question_no": "24"
+      }
+    }
+  ]
+}

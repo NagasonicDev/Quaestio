@@ -1,0 +1,1007 @@
+{
+  "bio202001": {
+    "code": "PRE-M4-T2-D1",
+    "confidence": "medium",
+    "why": "behavioural adaptation category for thermoregulation"
+  },
+  "bio202002": {
+    "code": "HSC-M4-T2-D3",
+    "confidence": "medium",
+    "why": "sexual reproduction in plants, gamete fusion"
+  },
+  "bio202003": {
+    "code": null,
+    "confidence": "low",
+    "why": "mammalian fertilisation/implantation sequence not in dots"
+  },
+  "bio202004": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "mosquito vector, Plasmodium pathogen"
+  },
+  "bio202005": {
+    "code": "PRE-M2-T4-D4",
+    "confidence": "high",
+    "why": "DNA form circular vs linear, prokaryote/eukaryote"
+  },
+  "bio202006": {
+    "code": "HSC-M4-T3-D4",
+    "confidence": "high",
+    "why": "quarantine to prevent plant disease epidemic"
+  },
+  "bio202007": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "independent, dependent variable and experimental control"
+  },
+  "bio202008": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "medium",
+    "why": "non-infectious disease inherited, genetic origin"
+  },
+  "bio202009": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "evaluate campaign to prevent non-infectious disease"
+  },
+  "bio202010": {
+    "code": null,
+    "confidence": "low",
+    "why": "artificial insemination scenario, not allele-frequency discussion"
+  },
+  "bio202011": {
+    "code": null,
+    "confidence": "low",
+    "why": "eye structure/function not in syllabus dots"
+  },
+  "bio202012": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "cloning used in agriculture preserves traits"
+  },
+  "bio202013": {
+    "code": "HSC-M5-T1-D1",
+    "confidence": "medium",
+    "why": "gene cloning genetic engineering technique"
+  },
+  "bio202014": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "incomplete dominance heterozygous intermediate phenotype"
+  },
+  "bio202015": {
+    "code": "HSC-M3-T2-D14",
+    "confidence": "medium",
+    "why": "antiviral pharmaceuticals effectiveness and toxicity"
+  },
+  "bio202016": {
+    "code": "PRE-M2-T4-D1",
+    "confidence": "high",
+    "why": "DNA base composition and complementary pairing"
+  },
+  "bio202017": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "medium",
+    "why": "SNPs in non-coding DNA do not affect protein"
+  },
+  "bio202018": {
+    "code": null,
+    "confidence": "low",
+    "why": "forensic SNP genealogy, no matching dot"
+  },
+  "bio202019": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "medium",
+    "why": "meiosis phase model, chromosome number"
+  },
+  "bio202020": {
+    "code": "HSC-M2-T1-D9",
+    "confidence": "high",
+    "why": "twin data genes versus environment on phenotype"
+  },
+  "bio202021": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "high",
+    "why": "procedures limiting transmission of cholera"
+  },
+  "bio202022": {
+    "code": "HSC-M3-T2-D14",
+    "confidence": "medium",
+    "why": "antibiotic pharmaceutical benefit and limitation"
+  },
+  "bio202023": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "high",
+    "why": "identify base substitution point mutation"
+  },
+  "bio202024": {
+    "code": "PRE-M3-T3-D9",
+    "confidence": "medium",
+    "why": "dialysis compensates for kidney filtration function"
+  },
+  "bio202025": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "internal versus external fertilisation data"
+  },
+  "bio202026": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "pedigree shows recessive, sex-linked or autosomal"
+  },
+  "bio202027": {
+    "code": "HSC-M3-T3-D12",
+    "confidence": "medium",
+    "why": "study validity via confounder control"
+  },
+  "bio202028": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "meiosis model error and genetic variation"
+  },
+  "bio202029": {
+    "code": "HSC-M4-T2-D10",
+    "confidence": "high",
+    "why": "gene pool processes driving evolution"
+  },
+  "bio202030": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "biotechnology impact on disease management"
+  },
+  "bio202031": {
+    "code": "PRE-M3-T4-D4",
+    "confidence": "high",
+    "why": "insulin and glucagon regulate blood glucose"
+  },
+  "bio202032": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "virus structure, reproduction and adaptive features"
+  },
+  "bio202101": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "nutritional deficiency non-infectious disease"
+  },
+  "bio202102": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "medium",
+    "why": "identify sexual versus asexual reproduction modes"
+  },
+  "bio202103": {
+    "code": "HSC-M5-T3-D2",
+    "confidence": "high",
+    "why": "artificial pollination plant reproductive technology"
+  },
+  "bio202104": {
+    "code": null,
+    "confidence": "low",
+    "why": "no dot covers treatment of non-infectious disease"
+  },
+  "bio202105": {
+    "code": "PRE-M3-T4-D4",
+    "confidence": "high",
+    "why": "insulin and glucagon after glucose meal"
+  },
+  "bio202106": {
+    "code": "HSC-M2-T3-D5",
+    "confidence": "high",
+    "why": "chromosomal deletion affects many genes"
+  },
+  "bio202107": {
+    "code": "PRE-M2-T4-D2",
+    "confidence": "high",
+    "why": "complementary base pairing during DNA replication"
+  },
+  "bio202108": {
+    "code": "HSC-M1-T5-D5",
+    "confidence": "medium",
+    "why": "conclusion drawn from penicillin trial data"
+  },
+  "bio202109": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "medium",
+    "why": "ribosome function in translation, polypeptides"
+  },
+  "bio202110": {
+    "code": "HSC-M2-T2-D4",
+    "confidence": "high",
+    "why": "multiple recessive alleles, genotype frequencies"
+  },
+  "bio202111": {
+    "code": "HSC-M4-T2-D7",
+    "confidence": "high",
+    "why": "gene flow of transgene to wild relatives"
+  },
+  "bio202112": {
+    "code": null,
+    "confidence": "low",
+    "why": "pregnancy hormone graph not in dots"
+  },
+  "bio202113": {
+    "code": "PRE-M3-T2-D7",
+    "confidence": "medium",
+    "why": "stomata regulate transpiration and water balance"
+  },
+  "bio202114": {
+    "code": "HSC-M3-T2-D1",
+    "confidence": "high",
+    "why": "prion classified as non-cellular pathogen"
+  },
+  "bio202115": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "UV radiation mutagenic effect on DNA"
+  },
+  "bio202116": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "medium",
+    "why": "UV antimicrobial effect on bacteria in water"
+  },
+  "bio202117": {
+    "code": "PRE-M2-T4-D6",
+    "confidence": "medium",
+    "why": "mitosis phase events, sister chromatids"
+  },
+  "bio202118": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "pedigree showing sex-linked recessive inheritance"
+  },
+  "bio202119": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "high",
+    "why": "alleles differ in effect on phenotype"
+  },
+  "bio202120": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "genotypes differ in allele effect on phenotype"
+  },
+  "bio202121": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "medium",
+    "why": "bacterial features and disease control strategies"
+  },
+  "bio202122": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "Punnett square predicts offspring phenotypic ratio"
+  },
+  "bio202123": {
+    "code": "PRE-M3-T4-D6",
+    "confidence": "medium",
+    "why": "LH hormone data indicates ovulation"
+  },
+  "bio202124": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "somatic versus germline mutation inheritance"
+  },
+  "bio202125": {
+    "code": null,
+    "confidence": "low",
+    "why": "hearing/audiogram not in syllabus dots"
+  },
+  "bio202126": {
+    "code": "HSC-M4-T2-D2",
+    "confidence": "high",
+    "why": "reduced gene pool, inbreeding, survival"
+  },
+  "bio202127": {
+    "code": "HSC-M5-T2-D1",
+    "confidence": "medium",
+    "why": "DNA profile diagnoses genetic disease"
+  },
+  "bio202128": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "medium",
+    "why": "mRNA vaccine produces active immunity"
+  },
+  "bio202129": {
+    "code": "PRE-M4-T2-D3",
+    "confidence": "high",
+    "why": "koala behavioural adaptations to maintain temperature"
+  },
+  "bio202130": {
+    "code": "HSC-M3-T2-D13",
+    "confidence": "high",
+    "why": "vaccination data supports adaptive immunity"
+  },
+  "bio202131": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "high",
+    "why": "placebo-controlled trial features evaluated"
+  },
+  "bio202132": {
+    "code": "PRE-M3-T4-D2",
+    "confidence": "high",
+    "why": "negative feedback loop, testosterone and inhibin"
+  },
+  "bio202133": {
+    "code": "HSC-M5-T3-D7",
+    "confidence": "high",
+    "why": "transgenic salmon release, biodiversity impacts"
+  },
+  "bio202201": {
+    "code": "PRE-M3-T4-D2",
+    "confidence": "medium",
+    "why": "negative feedback response to raised temperature"
+  },
+  "bio202202": {
+    "code": "PRE-M4-T2-D1",
+    "confidence": "high",
+    "why": "physiological adaptation, water from body fat"
+  },
+  "bio202203": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "antibody produced in humoral immune response"
+  },
+  "bio202204": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "inflammatory response to injury"
+  },
+  "bio202205": {
+    "code": "HSC-M1-T4-D3",
+    "confidence": "high",
+    "why": "graph type for categorical disease data"
+  },
+  "bio202206": {
+    "code": null,
+    "confidence": "low",
+    "why": "female reproductive anatomy not in dots"
+  },
+  "bio202207": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "whole organism cloning biotechnology method"
+  },
+  "bio202208": {
+    "code": "PRE-M2-T4-D5",
+    "confidence": "high",
+    "why": "somatic versus gametic chromosome number"
+  },
+  "bio202209": {
+    "code": "HSC-M3-T2-D13",
+    "confidence": "high",
+    "why": "vaccine effectiveness data by age"
+  },
+  "bio202210": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "identify independent variable in Pasteur experiment"
+  },
+  "bio202211": {
+    "code": "HSC-M1-T5-D5",
+    "confidence": "medium",
+    "why": "conclusion from Pasteur broth results"
+  },
+  "bio202212": {
+    "code": "PRE-M2-T4-D1",
+    "confidence": "high",
+    "why": "DNA nucleotide components, sugar and base"
+  },
+  "bio202213": {
+    "code": "HSC-M2-T3-D3",
+    "confidence": "high",
+    "why": "mutagen causes change in one base pair"
+  },
+  "bio202214": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "pedigree inheritance pattern identification"
+  },
+  "bio202215": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "Punnett square reveals parental genotypes"
+  },
+  "bio202216": {
+    "code": null,
+    "confidence": "low",
+    "why": "non-coding mutation affecting expression not in dots"
+  },
+  "bio202217": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "meiosis model error, homologous pairing"
+  },
+  "bio202218": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "germline versus somatic mutation in family"
+  },
+  "bio202219": {
+    "code": null,
+    "confidence": "low",
+    "why": "eye optics not in syllabus dots"
+  },
+  "bio202220": {
+    "code": "PRE-M3-T3-D9",
+    "confidence": "high",
+    "why": "dialysis urea concentrations and flow"
+  },
+  "bio202221": {
+    "code": "HSC-M3-T2-D1",
+    "confidence": "high",
+    "why": "classify pathogens, transmission between hosts"
+  },
+  "bio202222": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "incomplete dominance, violet intermediate phenotype"
+  },
+  "bio202223": {
+    "code": "HSC-M5-T3-D2",
+    "confidence": "high",
+    "why": "artificial pollination process and outcome"
+  },
+  "bio202224": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "medium",
+    "why": "chromosomal abnormality cause, non-disjunction"
+  },
+  "bio202225": {
+    "code": "HSC-M4-T2-D3",
+    "confidence": "high",
+    "why": "genetic variation from asexual versus sexual"
+  },
+  "bio202226": {
+    "code": "HSC-M3-T2-D4",
+    "confidence": "high",
+    "why": "procedure testing antimicrobial effect on bacteria"
+  },
+  "bio202227": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "campaign decreases cervical cancer incidence"
+  },
+  "bio202228": {
+    "code": "PRE-M2-T4-D2",
+    "confidence": "high",
+    "why": "describe DNA replication process and models"
+  },
+  "bio202229": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "Bt cotton biotechnology used in agriculture"
+  },
+  "bio202230": {
+    "code": "PRE-M4-T3-D3",
+    "confidence": "medium",
+    "why": "abiotic factors determine vector and disease distribution"
+  },
+  "bio202231": {
+    "code": "HSC-M3-T3-D3",
+    "confidence": "medium",
+    "why": "cohort study method evaluated"
+  },
+  "bio202232": {
+    "code": "HSC-M4-T2-D10",
+    "confidence": "high",
+    "why": "mutation, selection, drift, gene flow allele frequency"
+  },
+  "bio202301": {
+    "code": null,
+    "confidence": "low",
+    "why": "cochlear implant anatomy not in dots"
+  },
+  "bio202302": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "advantage of internal fertilisation"
+  },
+  "bio202303": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "Punnett square heterozygous offspring"
+  },
+  "bio202304": {
+    "code": "HSC-M5-T3-D2",
+    "confidence": "high",
+    "why": "artificial pollination steps and purpose"
+  },
+  "bio202305": {
+    "code": "HSC-M1-T4-D3",
+    "confidence": "medium",
+    "why": "select graph representing binary fission data"
+  },
+  "bio202306": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "medium",
+    "why": "prevent transmission of liver fluke to humans"
+  },
+  "bio202307": {
+    "code": "HSC-M2-T1-D1",
+    "confidence": "high",
+    "why": "tRNA anticodon and amino acid structure"
+  },
+  "bio202308": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "distinguish innate and adaptive immune response"
+  },
+  "bio202309": {
+    "code": "PRE-M2-T4-D5",
+    "confidence": "medium",
+    "why": "gamete and somatic chromosome number, n and 2n"
+  },
+  "bio202310": {
+    "code": "HSC-M5-T1-D1",
+    "confidence": "medium",
+    "why": "gene inserted into bacterium, genetic engineering"
+  },
+  "bio202311": {
+    "code": "HSC-M2-T1-D6",
+    "confidence": "high",
+    "why": "protein primary structure, amino acid"
+  },
+  "bio202312": {
+    "code": "PRE-M3-T4-D2",
+    "confidence": "high",
+    "why": "negative feedback restores blood calcium"
+  },
+  "bio202313": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "high",
+    "why": "plant active response to pathogen infection"
+  },
+  "bio202314": {
+    "code": "HSC-M3-T1-D1",
+    "confidence": "high",
+    "why": "classify genetic, nutritional, environmental diseases"
+  },
+  "bio202315": {
+    "code": "HSC-M3-T2-D14",
+    "confidence": "medium",
+    "why": "pharmaceutical treatment of viral infection"
+  },
+  "bio202316": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "high",
+    "why": "calculate incidence rate"
+  },
+  "bio202317": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "multiple allele blood group inheritance"
+  },
+  "bio202318": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "biotechnologies increasing agricultural yields"
+  },
+  "bio202319": {
+    "code": "HSC-M5-T1-D1",
+    "confidence": "medium",
+    "why": "gene cloning process steps"
+  },
+  "bio202320": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "medium",
+    "why": "karyotype interpretation, extra chromosomes"
+  },
+  "bio202321": {
+    "code": "HSC-M2-T1-D5",
+    "confidence": "high",
+    "why": "nucleotide components and mRNA base pairing"
+  },
+  "bio202322": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "phagocytes and antibody production"
+  },
+  "bio202323": {
+    "code": null,
+    "confidence": "low",
+    "why": "pregnancy hormones not in dots"
+  },
+  "bio202324": {
+    "code": null,
+    "confidence": "low",
+    "why": "eye disorder technology not in dots"
+  },
+  "bio202325": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "medium",
+    "why": "Huntington pedigree genotype justification"
+  },
+  "bio202326": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "independent and controlled variables identified"
+  },
+  "bio202327": {
+    "code": "HSC-M3-T3-D12",
+    "confidence": "medium",
+    "why": "evaluate study design, bias and confounding"
+  },
+  "bio202328": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "high",
+    "why": "adaptations distinguishing viral and bacterial pathogens"
+  },
+  "bio202329": {
+    "code": "PRE-M4-T2-D1",
+    "confidence": "medium",
+    "why": "physiological and plant water-balance adaptations"
+  },
+  "bio202330": {
+    "code": "HSC-M3-T2-D13",
+    "confidence": "high",
+    "why": "assess vaccination schedule data"
+  },
+  "bio202331": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "named genetic technology medical application"
+  },
+  "bio202332": {
+    "code": "HSC-M4-T3-D8",
+    "confidence": "high",
+    "why": "conservation program genetic rescue, gene pool"
+  },
+  "bio202333": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "medium",
+    "why": "fungal spores versus human sexual reproduction"
+  },
+  "bio202334": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "cattle biotechnologies and biodiversity"
+  },
+  "bio202335": {
+    "code": "HSC-M2-T3-D2",
+    "confidence": "high",
+    "why": "chemical mutagen effect on protein"
+  },
+  "bio202401": {
+    "code": "HSC-M3-T2-D1",
+    "confidence": "high",
+    "why": "prions are non-cellular pathogens"
+  },
+  "bio202402": {
+    "code": "HSC-M5-T3-D1",
+    "confidence": "high",
+    "why": "Aboriginal use of spinifex resin biotechnology"
+  },
+  "bio202403": {
+    "code": "HSC-M2-T3-D5",
+    "confidence": "high",
+    "why": "chromosomal duplication identified from gene order"
+  },
+  "bio202404": {
+    "code": "PRE-M2-T4-D1",
+    "confidence": "high",
+    "why": "DNA components, deoxyribose and thymine"
+  },
+  "bio202405": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "high",
+    "why": "budding versus binary fission reproduction"
+  },
+  "bio202406": {
+    "code": "PRE-M2-T4-D5",
+    "confidence": "high",
+    "why": "gamete chromosome number from karyotype"
+  },
+  "bio202407": {
+    "code": "PRE-M3-T2-D7",
+    "confidence": "medium",
+    "why": "stomata close to reduce transpiration"
+  },
+  "bio202408": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "trypanosome pathogen, tsetse fly vector, indirect"
+  },
+  "bio202409": {
+    "code": "HSC-M2-T2-D1",
+    "confidence": "medium",
+    "why": "new allele requires mutation within a gene locus"
+  },
+  "bio202410": {
+    "code": "HSC-M1-T2-D1",
+    "confidence": "high",
+    "why": "validity, variables and reliability of experiment"
+  },
+  "bio202411": {
+    "code": "HSC-M3-T3-D6",
+    "confidence": "high",
+    "why": "analyse obesity prevalence data by age"
+  },
+  "bio202412": {
+    "code": null,
+    "confidence": "low",
+    "why": "Koch's postulates not covered by any dot"
+  },
+  "bio202413": {
+    "code": "HSC-M4-T2-D12",
+    "confidence": "high",
+    "why": "plant chemical and physical pathogen responses"
+  },
+  "bio202414": {
+    "code": "PRE-M2-T4-D6",
+    "confidence": "high",
+    "why": "DNA quantity through cell cycle phases"
+  },
+  "bio202415": {
+    "code": "HSC-M3-T2-D16",
+    "confidence": "high",
+    "why": "control measures limiting influenza spread"
+  },
+  "bio202416": {
+    "code": null,
+    "confidence": "low",
+    "why": "myopia correction not in dots"
+  },
+  "bio202417": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "high",
+    "why": "prevalence increases with survival time"
+  },
+  "bio202418": {
+    "code": "HSC-M4-T2-D7",
+    "confidence": "high",
+    "why": "genetic drift changes allele frequencies randomly"
+  },
+  "bio202419": {
+    "code": "HSC-M5-T2-D5",
+    "confidence": "medium",
+    "why": "recombinant DNA produces human protein in bacteria"
+  },
+  "bio202420": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "high",
+    "why": "pedigrees matched to inheritance types"
+  },
+  "bio202421": {
+    "code": "HSC-M4-T2-D3",
+    "confidence": "high",
+    "why": "compare sexual and asexual reproduction features"
+  },
+  "bio202422": {
+    "code": "HSC-M1-T2-D4",
+    "confidence": "high",
+    "why": "justify safety precaution, risk assessment"
+  },
+  "bio202423": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "electromagnetic radiation causes germline mutation"
+  },
+  "bio202424": {
+    "code": "HSC-M3-T1-D4",
+    "confidence": "high",
+    "why": "campaign reduces environmental disease incidence"
+  },
+  "bio202425": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "animal cloning biotechnology, soma not inherited"
+  },
+  "bio202426": {
+    "code": "HSC-M4-T2-D14",
+    "confidence": "high",
+    "why": "plant disease effect on agricultural production"
+  },
+  "bio202427": {
+    "code": "HSC-M3-T3-D8",
+    "confidence": "medium",
+    "why": "Pasteur's work reduced milk-borne outbreaks"
+  },
+  "bio202428": {
+    "code": "HSC-M2-T2-D5",
+    "confidence": "high",
+    "why": "Punnett square for cystic fibrosis probability"
+  },
+  "bio202429": {
+    "code": "HSC-M3-T3-D6",
+    "confidence": "high",
+    "why": "analyse diabetes prevalence data and predict"
+  },
+  "bio202430": {
+    "code": "HSC-M2-T1-D3",
+    "confidence": "high",
+    "why": "mRNA and tRNA roles in polypeptide synthesis"
+  },
+  "bio202431": {
+    "code": "PRE-M4-T2-D4",
+    "confidence": "high",
+    "why": "endotherm body temperature data, torpor"
+  },
+  "bio202432": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "innate and adaptive response to H. pylori"
+  },
+  "bio202433": {
+    "code": "HSC-M2-T2-D2",
+    "confidence": "high",
+    "why": "crossing over creates genetic variation in gametes"
+  },
+  "bio202434": {
+    "code": "HSC-M5-T2-D8",
+    "confidence": "medium",
+    "why": "ethical and societal implications of biotechnologies"
+  },
+  "bio202435": {
+    "code": null,
+    "confidence": "low",
+    "why": "cochlear implant data not in dots"
+  },
+  "qhsc202501": {
+    "code": "HSC-M4-T2-D5",
+    "confidence": "high",
+    "why": "binary fission produces genetically identical cells"
+  },
+  "qhsc202502": {
+    "code": "HSC-M2-T3-D1",
+    "confidence": "high",
+    "why": "UV light is an electromagnetic mutagen"
+  },
+  "qhsc202503": {
+    "code": "HSC-M3-T2-D5",
+    "confidence": "high",
+    "why": "phagocytes innate, lymphocytes adaptive roles"
+  },
+  "qhsc202504": {
+    "code": "HSC-M4-T2-D7",
+    "confidence": "high",
+    "why": "random population loss causes genetic drift"
+  },
+  "qhsc202505": {
+    "code": "HSC-M3-T2-D3",
+    "confidence": "high",
+    "why": "direct contact transmission, population density"
+  },
+  "qhsc202506": {
+    "code": "HSC-M3-T2-D12",
+    "confidence": "high",
+    "why": "injected antibodies give acquired passive immunity"
+  },
+  "qhsc202507": {
+    "code": "PRE-M4-T2-D4",
+    "confidence": "high",
+    "why": "body versus air temperature, endotherm ectotherm"
+  },
+  "qhsc202508": {
+    "code": "HSC-M2-T2-D3",
+    "confidence": "high",
+    "why": "codominance both red and white petals"
+  },
+  "qhsc202509": {
+    "code": "PRE-M3-T3-D9",
+    "confidence": "high",
+    "why": "dialysis blood composition before and after"
+  },
+  "qhsc202510": {
+    "code": "HSC-M3-T2-D13",
+    "confidence": "high",
+    "why": "measles deaths fall after vaccine program"
+  },
+  "qhsc202511": {
+    "code": "HSC-M3-T2-D13",
+    "confidence": "high",
+    "why": "herd immunity from high vaccination rate"
+  },
+  "qhsc202512": {
+    "code": "HSC-M2-T3-D7",
+    "confidence": "high",
+    "why": "karyotype shows trisomy, chromosomal mutation"
+  },
+  "qhsc202513": {
+    "code": "HSC-M3-T3-D5",
+    "confidence": "high",
+    "why": "treatment prolongs life, prevalence rises"
+  },
+  "qhsc202514": {
+    "code": "HSC-M3-T2-D10",
+    "confidence": "high",
+    "why": "specific antibody response to pathogen antigen"
+  },
+  "qhsc202515": {
+    "code": null,
+    "confidence": "low",
+    "why": "cochlear implant steps not in dots"
+  },
+  "qhsc202516": {
+    "code": "HSC-M5-T1-D2",
+    "confidence": "medium",
+    "why": "whole organism cloning, identical offspring"
+  },
+  "qhsc202517": {
+    "code": "PRE-M2-T4-D6",
+    "confidence": "medium",
+    "why": "sequence of mitotic cell division phases"
+  },
+  "qhsc202518": {
+    "code": "HSC-M2-T2-D6",
+    "confidence": "high",
+    "why": "sex-linked cross phenotype ratios"
+  },
+  "qhsc202519": {
+    "code": "PRE-M2-T4-D1",
+    "confidence": "high",
+    "why": "base composition calculation, complementary pairing"
+  },
+  "qhsc202520": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "high",
+    "why": "somatic variant activates oncogene, tumour formation"
+  },
+  "qhsc202521": {
+    "code": "HSC-M3-T2-D6",
+    "confidence": "high",
+    "why": "innate barriers and secretions protect against infection"
+  },
+  "qhsc202522": {
+    "code": "HSC-M3-T2-D2",
+    "confidence": "medium",
+    "why": "fungal reproduction and pathogen transmission adaptation"
+  },
+  "qhsc202523": {
+    "code": "HSC-M5-T3-D2",
+    "confidence": "high",
+    "why": "compare artificial insemination and artificial pollination"
+  },
+  "qhsc202524": {
+    "code": "PRE-M3-T4-D2",
+    "confidence": "high",
+    "why": "complete negative feedback temperature control flow chart"
+  },
+  "qhsc202525": {
+    "code": "HSC-M1-T5-D5",
+    "confidence": "medium",
+    "why": "evaluate product claim using UV data"
+  },
+  "qhsc202526": {
+    "code": null,
+    "confidence": "low",
+    "why": "LASIK/visual technology not in dots"
+  },
+  "qhsc202527": {
+    "code": "HSC-M4-T2-D4",
+    "confidence": "high",
+    "why": "compare external and internal fertilisation egg numbers"
+  },
+  "qhsc202528": {
+    "code": "HSC-M3-T2-D11",
+    "confidence": "high",
+    "why": "adaptive immune response, primary versus secondary exposure"
+  },
+  "qhsc202529": {
+    "code": "HSC-M4-T3-D3",
+    "confidence": "high",
+    "why": "procedures limiting spread of Varroa mite"
+  },
+  "qhsc202530": {
+    "code": "HSC-M5-T2-D11",
+    "confidence": "high",
+    "why": "genetic technology societal benefits, mosquito-borne disease"
+  },
+  "qhsc202531": {
+    "code": "HSC-M2-T2-D7",
+    "confidence": "medium",
+    "why": "pedigree inheritance type and codon mutation"
+  },
+  "qhsc202532": {
+    "code": "HSC-M3-T3-D2",
+    "confidence": "medium",
+    "why": "design epidemiological study, justify study features"
+  },
+  "qhsc202533": {
+    "code": "HSC-M2-T3-D8",
+    "confidence": "medium",
+    "why": "mitosis, meiosis and somatic versus germline mutations"
+  },
+  "qhsc202534": {
+    "code": "HSC-M4-T2-D7",
+    "confidence": "high",
+    "why": "genetic drift in small populations, gene flow effects"
+  }
+}
