@@ -30,3 +30,28 @@ export function effectiveNodeFilterIds(nodes: CourseNode[], selectedIds: Iterabl
   nodes.forEach(visit);
   return Array.from(effective);
 }
+
+/**
+ * Inverse of `effectiveNodeFilterIds` for restoring saved filters: expanded ids
+ * include every descendant, which would show whole branches ticked. Keep only
+ * the topmost picks that still expand to the same set.
+ */
+export function collapseSelectedNodeIds(nodes: CourseNode[], ids: Iterable<string>): string[] {
+  const selected = new Set(ids);
+  const out: string[] = [];
+
+  function allSelected(node: CourseNode): boolean {
+    return selected.has(node.node_id) && node.children.every(allSelected);
+  }
+
+  function visit(node: CourseNode) {
+    if (selected.has(node.node_id)) {
+      out.push(node.node_id);
+      if (allSelected(node)) return;
+    }
+    node.children.forEach(visit);
+  }
+
+  nodes.forEach(visit);
+  return out;
+}

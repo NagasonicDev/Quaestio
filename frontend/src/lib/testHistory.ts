@@ -1,5 +1,37 @@
+import type { SavedTestSettings } from "../api/types.ts";
+
 export interface GeneratedTestIdRow {
   question_ids_json?: unknown;
+}
+
+/**
+ * The generator form saved with a test (`generated_test.filter_json`), for
+ * "copy settings from a past test". Returns null when the row predates this or
+ * cannot be read, so the UI can hide the option instead of loading nonsense.
+ */
+export function savedTestSettings(raw: string | null | undefined): SavedTestSettings | null {
+  if (typeof raw !== "string" || !raw) return null;
+  let parsed: any;
+  try {
+    parsed = JSON.parse(raw);
+  } catch {
+    return null;
+  }
+  if (!parsed || typeof parsed !== "object" || !Array.isArray(parsed.sections)) return null;
+  const sections = parsed.sections.filter(
+    (section: unknown): section is Record<string, unknown> => !!section && typeof section === "object"
+  );
+  if (!sections.length) return null;
+  return {
+    title: typeof parsed.title === "string" ? parsed.title : undefined,
+    format: parsed.format === "pdf" ? "pdf" : "docx",
+    ordering: typeof parsed.ordering === "string" ? parsed.ordering : undefined,
+    excludeRecentTests: Number.isFinite(parsed.excludeRecentTests) ? Number(parsed.excludeRecentTests) : 0,
+    keepQuestionIds: Array.isArray(parsed.keepQuestionIds)
+      ? parsed.keepQuestionIds.filter((id: unknown): id is string => typeof id === "string")
+      : [],
+    sections: sections as SavedTestSettings["sections"],
+  };
 }
 
 /**

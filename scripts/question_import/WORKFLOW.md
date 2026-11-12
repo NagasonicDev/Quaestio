@@ -33,13 +33,18 @@ skill, and `scripts/`.
    parent-level answers and solutions onto the parts they match — including
    splitting part-labelled answer text — and clears duplicate parent copies.
    Review its assignments and use the repaired copy for every later step.
-7. **Audit**: `python scripts/audit_qbx.py output-fixed.qbx --schema
+7. **Remove duplicates**: `python scripts/dedupe_bodies.py output-fixed.qbx
+   --write`. It deletes consecutive duplicate body blocks and identical MCQ
+   options. A question whose every option is identical is reported, not
+   silently collapsed - that means a table was flattened into each option and
+   the source needs fixing.
+8. **Audit**: `python scripts/audit_qbx.py output-fixed.qbx --schema
    import-schema.json`. The audit is the authority. Do not deliver a bundle it
    reports problems for.
-8. **Cross-check the marking scheme** if one was prepared:
+9. **Cross-check the marking scheme** if one was prepared:
    `python scripts/check_scheme_bundle.py --exam output-fixed.qbx --mg mg.qbx`.
-9. **Deliver** the finished `.qbx` plus a short list of unresolved source
-   issues. The person uploads it; never import it yourself.
+10. **Deliver** the finished `.qbx` plus a short list of unresolved source
+    issues. The person uploads it; never import it yourself.
 
 ```sh
 python scripts/index_nodes.py --schema import-schema.json --search "photoelectric"
@@ -48,6 +53,7 @@ python scripts/extract_figures.py exam.pdf --out work/figures
 python scripts/crop.py exam.pdf --page 1 --name q1_figure --rect 50,100,500,400
 python scripts/build_qbx.py spec.json -o output.qbx --assets work/assets
 python scripts/repair_multipart_solutions.py output.qbx
+python scripts/dedupe_bodies.py output-fixed.qbx --write
 python scripts/audit_qbx.py output-fixed.qbx --schema import-schema.json
 ```
 

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useQueries, useQuery, useQueryClient } from "@tanstack/react-query";
-import { ArrowDown, ArrowUp, BookOpen, Download, Eye, FileText, Loader2, Plus, Printer, RefreshCw, Trash2 } from "lucide-react";
+import { ArrowDown, ArrowUp, BookOpen, Copy, Download, Eye, FileText, Loader2, Plus, Printer, RefreshCw, Trash2 } from "lucide-react";
 import { api, type GeneratedTestMeta } from "../api/client.ts";
 import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
 import { useCourseConfig } from "../hooks/useCourseConfig.ts";
@@ -12,7 +12,7 @@ import { useConfirm } from "../components/ui/modal.tsx";
 import { downloadTestFile, ensureTestFileUrl } from "../lib/tests.ts";
 import { Input } from "../components/ui/input.tsx";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select.tsx";
-import { effectiveNodeFilterIds } from "../lib/nodeFilters.ts";
+import { effectiveNodeFilterIds, collapseSelectedNodeIds } from "../lib/nodeFilters.ts";
 import { beginTestGeneration, updateTestGeneration, useTestGenerationTask } from "../lib/testGenerationTask.ts";
 import type { QuestionCountsResponse } from "../api/types.ts";
 import { notify, startOperationNotification } from "../lib/notifications.ts";
@@ -448,6 +448,31 @@ export function TestGenerator() {
     }
   }
 
+  function handleCopySettings(test: GeneratedTestMeta) {
+    const saved = test.settings;
+    if (!saved?.sections.length) return;
+    setTitle(saved.title ?? "");
+    setFormat(saved.format ?? "docx");
+    setOrdering(saved.ordering ?? "random");
+    setExcludeRecentTests(saved.excludeRecentTests ?? 0);
+    setKeepQuestionIds((saved.keepQuestionIds ?? []).join(", "));
+    const drafts: SectionDraft[] = saved.sections.map((sec, index) => ({
+      id: index + 1,
+      name: sec.name ?? "",
+      // Saved ids are already expanded to the whole branch; collapse them so the
+      // filter tree shows the picks instead of every descendant.
+      nodeIds: new Set(collapseSelectedNodeIds(config?.nodes ?? [], sec.node_ids ?? [])),
+      typeKeys: sec.type_keys ?? [],
+      difficulties: (sec.difficulties ?? []).map(Number).filter(Number.isFinite),
+      selectedTag: sec.tag ?? "",
+      institutionYears: Object.fromEntries((sec.source_filters ?? []).map((filter) => [filter.institution, filter.years])),
+      marks: typeof sec.marks === "number" ? clampMarks(sec.marks) : DEFAULT_MARKS,
+    }));
+    setSections(drafts);
+    nextId.current = drafts.length + 1;
+    notify("Settings copied", "success", `Loaded the setup from “${test.title}”.`);
+  }
+
   async function handleDeleteTest(testId: string) {
     const ok = await confirm({
       title: "Delete this generated test?",
@@ -748,6 +773,15 @@ export function TestGenerator() {
                         ) : (
                           <RefreshCw />
                         )}
+                      </Button>
+                      <Button
+                        size="icon"
+                        variant="ghost"
+                        title={t.settings ? "Copy settings" : "This test's settings weren't saved"}
+                        disabled={!t.settings}
+                        onClick={() => handleCopySettings(t)}
+                      >
+                        <Copy />
                       </Button>
                       <Button
                         size="icon"

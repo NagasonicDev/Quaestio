@@ -15,6 +15,7 @@ import { useActiveCourse } from "../hooks/useActiveCourse.tsx";
 import { useCourseConfig } from "../hooks/useCourseConfig.ts";
 import { useQuestionFilterCounts } from "../hooks/useQuestionFilterCounts.ts";
 import { effectiveNodeFilterIds } from "../lib/nodeFilters.ts";
+import { readSessionFilters, writeSessionFilters } from "../lib/filterState.ts";
 import { notify } from "../lib/notifications.ts";
 
 type ScoredBy = "objective" | "self" | "skipped";
@@ -27,11 +28,14 @@ export function Quiz() {
     queryKey: ["practice-response-capture"],
     queryFn: () => api.getResponseCapture(),
   });
-  const [selectedNodes, setSelectedNodes] = useState<Set<string>>(new Set());
-  const [typeKeys, setTypeKeys] = useState<string[]>([]);
-  const [difficulties, setDifficulties] = useState<number[]>([]);
-  const [selectedTag, setSelectedTag] = useState("");
-  const [institutionYears, setInstitutionYears] = useState<Record<string, number[]>>({});
+  // Filters are remembered per course, so leaving the page and coming back
+  // restores the same setup.
+  const [initialFilters] = useState(() => readSessionFilters(courseId, "quiz"));
+  const [selectedNodes, setSelectedNodes] = useState<Set<string>>(() => new Set(initialFilters.selectedNodes));
+  const [typeKeys, setTypeKeys] = useState<string[]>(initialFilters.typeKeys);
+  const [difficulties, setDifficulties] = useState<number[]>(initialFilters.difficulties);
+  const [selectedTag, setSelectedTag] = useState(initialFilters.selectedTag);
+  const [institutionYears, setInstitutionYears] = useState<Record<string, number[]>>(initialFilters.institutionYears);
   const [requestedCount, setRequestedCount] = useState(8);
   const [phase, setPhase] = useState<Phase>("setup");
   const [deck, setDeck] = useState<Question[]>([]);
@@ -47,6 +51,16 @@ export function Quiz() {
   const [stimuli, setStimuli] = useState<StimulusWithContent[]>([]);
   const [openStimulus, setOpenStimulus] = useState<StimulusWithContent | null>(null);
   const startingRef = useRef(false);
+
+  useEffect(() => {
+    writeSessionFilters(courseId, "quiz", {
+      selectedNodes: [...selectedNodes],
+      typeKeys,
+      difficulties,
+      selectedTag,
+      institutionYears,
+    });
+  }, [courseId, selectedNodes, typeKeys, difficulties, selectedTag, institutionYears]);
 
   const { data: counts } = useQuery({
     queryKey: ["question-counts", courseId],
@@ -356,6 +370,13 @@ export function Quiz() {
               </div>
             </div>
           </div>}
+          {!revealed && <div className="flex flex-wrap items-center justify-between gap-2">
+            <span className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground"><Clock3 className="size-3.5" />Elapsed {formatDuration(elapsedSeconds)}</span>
+            <div className="flex gap-2">
+              <Button variant="ghost" onClick={advance}><SkipForward />Skip</Button>
+              <Button onClick={submitAnswer} disabled={current.type_key === "multiple_choice" && !selectedChoice}>{current.type_key === "multiple_choice" ? <Check /> : null}{current.type_key === "multiple_choice" ? "Submit answer" : "Reveal marking guide"}</Button>
+            </div>
+          </div>}
           <div>
             <QuestionAnswerInput
               questionId={current.question_id}
@@ -375,14 +396,10 @@ export function Quiz() {
             <Button size="sm" onClick={saveMark} disabled={marksDraft === ""}>Save score</Button>
             <span className="pb-2 text-xs text-muted-foreground">Compare your work with the guide above, then enter your score. This mark is self-marked, so it is kept separate from app-marked multiple choice.</span>
           </div>}
-          <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border pt-4">
-            <span className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground"><Clock3 className="size-3.5" />{revealed ? "Time taken" : "Elapsed"} {formatDuration(elapsedSeconds)}</span>
-            <div className="flex gap-2">
-              {!revealed && <Button variant="ghost" onClick={advance}><SkipForward />Skip</Button>}
-              {!revealed && <Button onClick={submitAnswer} disabled={current.type_key === "multiple_choice" && !selectedChoice}>{current.type_key === "multiple_choice" ? <Check /> : null}{current.type_key === "multiple_choice" ? "Submit answer" : "Reveal marking guide"}</Button>}
-              {revealed && <Button onClick={advance} disabled={current.type_key !== "multiple_choice" && !results.some((item) => item.question.question_id === current.question_id)}>{index + 1 >= deck.length ? "Finish quiz" : "Next question"} →</Button>}
-            </div>
-          </div>
+          {revealed && <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border pt-4">
+            <span className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground"><Clock3 className="size-3.5" />Time taken {formatDuration(elapsedSeconds)}</span>
+            <Button onClick={advance} disabled={current.type_key !== "multiple_choice" && !results.some((item) => item.question.question_id === current.question_id)}>{index + 1 >= deck.length ? "Finish quiz" : "Next question"} →</Button>
+          </div>}
         </div>}
       />}
 

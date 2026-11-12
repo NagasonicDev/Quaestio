@@ -315,6 +315,51 @@ export function PracticeFlow({
         )}
       </article>
 
+      {stage === "prompt" && (
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border px-5 py-4 sm:px-6">
+          <p className="text-xs text-muted-foreground">
+            {isMcq
+              ? "Pick an answer, then confirm your attempt."
+              : "Try the question first — the marking guide and answer stay hidden until you do."}
+          </p>
+          <Button
+            disabled={!canAttempt || busy}
+            onClick={() => run(async () => {
+              await callbacks.onConfirmAttempt(draft());
+            })}
+          >
+            <Check />
+            {isMcq ? "Check my answer" : "I've attempted this"}
+          </Button>
+        </div>
+      )}
+
+      {stage === "attempted" && (
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border px-5 py-4 sm:px-6">
+          <p className="text-sm">
+            Attempt recorded.
+            {isMcq && graded
+              ? objectiveCorrect
+                ? " The app marked that as correct."
+                : " The app marked that as incorrect."
+              : " No correctness has been recorded — nothing here has marked it for you."}
+          </p>
+          <Button
+            disabled={busy}
+            onClick={() =>
+              run(async () => {
+                // The marking guide is offered on its own, before the answer.
+                setRevealed({ guide: true, answer: false, solution: false });
+                await callbacks.onReveal(draft());
+              })
+            }
+          >
+            <Eye />
+            Show the marking guide
+          </Button>
+        </div>
+      )}
+
       <div className="px-5 sm:px-6"><QuestionAnswerInput
         questionId={questionId}
         notebookAttemptId={notebookAttemptId}
@@ -374,11 +419,7 @@ export function PracticeFlow({
 
       {stage === "prompt" && (
         <div className="border-t border-border px-5 py-5 sm:px-6">
-          {!isMcq && (
-            <p className="text-sm text-muted-foreground">Choose how you want to answer above. Notebook pages are saved with this question attempt.</p>
-          )}
-
-          <div className="mt-4 flex flex-wrap items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <Button
               variant="outline"
               size="sm"
@@ -410,51 +451,6 @@ export function PracticeFlow({
               ))}
             </div>
           )}
-
-          <div className="mt-5 flex flex-wrap items-center justify-between gap-2">
-            <p className="text-xs text-muted-foreground">
-              {isMcq
-                ? "Pick an answer, then confirm your attempt."
-                : "Try the question first — the marking guide and answer stay hidden until you do."}
-            </p>
-            <Button
-              disabled={!canAttempt || busy}
-              onClick={() => run(async () => {
-                await callbacks.onConfirmAttempt(draft());
-              })}
-            >
-              <Check />
-              {isMcq ? "Check my answer" : "I've attempted this"}
-            </Button>
-          </div>
-        </div>
-      )}
-
-      {stage === "attempted" && (
-        <div className="border-t border-border px-5 py-5 sm:px-6">
-          <div className="flex flex-wrap items-center justify-between gap-2">
-            <p className="text-sm">
-              Attempt recorded.
-              {isMcq && graded
-                ? objectiveCorrect
-                  ? " The app marked that as correct."
-                  : " The app marked that as incorrect."
-                : " No correctness has been recorded — nothing here has marked it for you."}
-            </p>
-            <Button
-              disabled={busy}
-              onClick={() =>
-                run(async () => {
-                  // The marking guide is offered on its own, before the answer.
-                  setRevealed({ guide: true, answer: false, solution: false });
-                  await callbacks.onReveal(draft());
-                })
-              }
-            >
-              <Eye />
-              Show the marking guide
-            </Button>
-          </div>
         </div>
       )}
 

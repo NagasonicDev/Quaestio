@@ -55,8 +55,9 @@ GENERATED = {"SKILL.md", "WORKFLOW.md", "nodes.txt"}
 # out of the bundle -- a glob used to sweep it in.
 TOOLCHAIN_FILES = [
     "audit_qbx.py", "build_qbx.py", "check_scheme_bundle.py", "crop.py",
-    "extract_figures.py", "index_nodes.py", "prep_paper.py", "qbx_lib.py",
-    "quality_rules.py", "repair_multipart_solutions.py", "text_clean.py",
+    "dedupe_bodies.py", "extract_figures.py", "index_nodes.py", "prep_paper.py",
+    "qbx_lib.py", "quality_rules.py", "repair_multipart_solutions.py",
+    "text_clean.py",
 ]
 
 

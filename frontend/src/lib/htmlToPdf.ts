@@ -38,14 +38,17 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
     const cssPageH = pageH / pageW * windowWidth;
     const paddingPx = (42 * 96) / 25.4;
     const contentHeight = cssPageH - paddingPx;
-    // Cap every image to a single printable page so a tall figure never aborts
-    // pagination (mirrors the limit already applied in splitTallSolution).
-    doc.body.querySelectorAll("img").forEach((img) => {
+    // Scale figures to the same 4.5in cap the DOCX writer uses, then within one
+    // printable page. This leaves room for question text and answer lines beside
+    // a figure instead of a full-page image pushing the part over the limit.
+    const maxImageHeight = Math.min(contentHeight * 0.8, 4.5 * 96);
+    const clampImage = (img: HTMLImageElement) => {
       img.style.maxWidth = "100%";
-      img.style.maxHeight = `${contentHeight * 0.8}px`;
+      img.style.maxHeight = `${maxImageHeight}px`;
       img.style.width = "auto";
       img.style.objectFit = "contain";
-    });
+    };
+    doc.body.querySelectorAll("img").forEach(clampImage);
     const sourceNodes = Array.from(doc.body.children);
     doc.body.replaceChildren();
     let currentPage: HTMLDivElement | null = null;
@@ -114,14 +117,9 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
           part.appendChild(unit);
         }
         if (contentUsed(ensurePage()) > contentHeight) {
-          const image = Array.from(unit.querySelectorAll("img"))[0];
-          if (image) {
-            image.style.maxWidth = "100%";
-            image.style.maxHeight = `${contentHeight * 0.8}px`;
-            image.style.width = "auto";
-            image.style.objectFit = "contain";
-            continue;
-          }
+          const images = Array.from(unit.querySelectorAll("img"));
+          images.forEach(clampImage);
+          if (images.length) continue;
           throw new Error("A diagram or part of a question is taller than one printable page. Reduce its size before downloading again.");
         }
       }
@@ -252,12 +250,9 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
             }
             continue;
           }
-          const image = unit.flatMap((node) => Array.from(node.querySelectorAll("img")))[0];
-          if (image) {
-            image.style.maxWidth = "100%";
-            image.style.maxHeight = `${contentHeight * 0.8}px`;
-            image.style.width = "auto";
-            image.style.objectFit = "contain";
+          const images = unit.flatMap((node) => Array.from(node.querySelectorAll("img")));
+          if (images.length) {
+            images.forEach(clampImage);
             continue;
           }
           // The remaining case is one exceptionally tall text item without
@@ -289,6 +284,34 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
         }
       }
     };
+    // Word flows any block across pages; html2canvas does not. When a group that
+    // is not a question (a stimulus, the cover) is taller than a page, move its
+    // children onto further pages instead of aborting the download.
+    const splitTallBlock = (block: Element) => {
+      const makeFragment = () => {
+        const fragment = doc.createElement("div");
+        fragment.className = `${block.className} block-fragment`;
+        ensurePage().appendChild(fragment);
+        pageHasContent = true;
+        return fragment;
+      };
+      if (currentPage && pageHasContent) newPage();
+      let fragment = makeFragment();
+      for (const unit of Array.from(block.children)) {
+        fragment.appendChild(unit);
+        if (contentUsed(ensurePage()) > contentHeight && fragment.children.length > 1) {
+          fragment.removeChild(unit);
+          newPage();
+          fragment = makeFragment();
+          fragment.appendChild(unit);
+        }
+        if (contentUsed(ensurePage()) > contentHeight) {
+          unit.querySelectorAll("img").forEach(clampImage);
+          if (contentUsed(ensurePage()) <= contentHeight) continue;
+          throw new Error("Some content is taller than one printable page. Shorten it before downloading again.");
+        }
+      }
+    };
     const addNode = (node: Element) => {
       const page = ensurePage();
       page.appendChild(node);
@@ -306,7 +329,10 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
           else splitTallSolution(node);
           return;
         }
-        throw new Error("Some content is taller than one printable page. Shorten it before downloading again.");
+        activePage.removeChild(node);
+        pageHasContent = false;
+        splitTallBlock(node);
+        return;
       }
       pageHasContent = true;
     };
@@ -329,7 +355,17 @@ export async function htmlBlobToPdfBlob(blob: Blob): Promise<Blob> {
           pageHasContent = false;
           splitTallSolution(solution, prefix);
         } else {
-          throw new Error("A section heading and its first question cannot fit on one page. Shorten the content before downloading again.");
+          // A section heading plus a tall first question: keep the heading and
+          // start the question on the next page instead of aborting.
+          const question = nodes.find((node) => node.classList.contains("question"));
+          if (!question) {
+            throw new Error("A section heading and its first question cannot fit on one page. Shorten the content before downloading again.");
+          }
+          nodes.forEach((node) => active.removeChild(node));
+          const lead = nodes.filter((node) => node !== question);
+          lead.forEach((node) => ensurePage().appendChild(node));
+          pageHasContent = lead.length > 0;
+          splitTallQuestion(question);
         }
       }
       pageHasContent = true;

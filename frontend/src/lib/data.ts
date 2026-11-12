@@ -10,6 +10,7 @@ import {
 } from "./assets.ts";
 import { buildTestOutputs, deleteTestOutputs, ensureTestFileUrl, storeTestFiles, storeTestSolutionFile } from "./tests.ts";
 import { buildExamDocument, parseExamDocument } from "./examDocument.ts";
+import { dedupeQuestion } from "./questionDedupe.ts";
 import { getTestFile } from "./db/indexeddb.ts";
 import type { DocSection } from "./docx.ts";
 import { createRenderer } from "./paperRenderer.ts";
@@ -72,7 +73,7 @@ import type { PoolItem } from "./sessionPlan.ts";
 import { EMPTY_ACTIVITY, describeMarkingMix, pickNextAction, rollupTopicActivity } from "./studyProgress.ts";
 import type { NodeActivity } from "./studyProgress.ts";
 import { selectQuestionIndexes } from "./questionSelection.ts";
-import { recentlyUsedQuestionIds, parseQuestionIdList } from "./testHistory.ts";
+import { recentlyUsedQuestionIds, parseQuestionIdList, savedTestSettings } from "./testHistory.ts";
 import type { DrawingNotebook, DrawingPage } from "./drawingNotebook.ts";
 import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingPage } from "./drawingNotebook.ts";
 
@@ -3153,7 +3154,7 @@ export async function importJson(courseId: string, data: any): Promise<ImportRes
     [jobId, courseId, data?.source_filename ?? null, now]
   );
 
-  const questions: any[] = data?.questions ?? [];
+  const questions: any[] = (data?.questions ?? []).map(dedupeQuestion);
   const existingQuestionIds = await all<{ question_id: string }>("SELECT question_id FROM question");
   const usedQuestionIds = new Set(existingQuestionIds.map((row) => String(row.question_id)));
   const questionMap = new Map<string, string>();
@@ -3791,7 +3792,7 @@ export async function generateTest(
   for (let i = 0; i < work.length; i++) {
     const sec = work[i];
     const { questions, marks } = selected[i];
-    const picked = orderSectionQuestions(questions, payload.ordering ?? payload.shuffle);
+    const picked = orderSectionQuestions(questions, payload.ordering ?? payload.shuffle).map(dedupeQuestion);
     allQuestions.push(...picked);
     sectionQuestionsByWork.push({ label: sec.label, questions: picked });
     sectionResults.push({
@@ -3940,6 +3941,7 @@ export async function listTests(courseId: string, limit: number = 20): Promise<G
       test_download_url: testUrl,
       preview_url: previewUrl,
       solutions_available: Boolean(await getTestFile(r.test_id, "solutions")),
+      settings: savedTestSettings(String(r.filter_json)) ?? undefined,
     });
   }
   return out;

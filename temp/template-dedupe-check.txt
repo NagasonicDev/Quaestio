@@ -1,0 +1,158 @@
+### D:\quaestio\frontend\public\templates\hsc\agriculture\agriculture.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\ancient-history\ancient-history.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\ancient-history-2017\ancient-history-2017.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\biology\biology.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\biology-2017\biology-2017.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\business-studies\business-studies.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\chemistry\chemistry.qb [exit 1]
+Q9: removed 1 duplicate option(s)
+Q15: removed 1 duplicate option(s)
+Removed 0 duplicate body block(s) and 2 duplicate option(s) from 2 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\chemistry-2017\chemistry-2017.qb [exit 1]
+Q9: removed 1 duplicate option(s)
+Q15: removed 1 duplicate option(s)
+Removed 0 duplicate body block(s) and 2 duplicate option(s) from 2 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\chinese-beginners\chinese-beginners.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\chinese-continuers\chinese-continuers.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\chinese-extension\chinese-extension.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\community-and-family-studies\community-and-family-studies.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\dance\dance.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\design-and-technology\design-and-technology.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\drama\drama.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\earth-environmental-science\earth-environmental-science.qb [exit 1]
+Q17: removed 2 duplicate option(s)
+Removed 0 duplicate body block(s) and 2 duplicate option(s) from 1 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\economics\economics.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\economics-2011\economics-2011.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\engineering-studies\engineering-studies.qb [exit 1]
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Q1: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 12 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\english-advanced\english-advanced.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\english-eald\english-eald.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\english-extension\english-extension.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\english-standard\english-standard.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\english-studies\english-studies.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\enterprise-computing\enterprise-computing.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\food-technology\food-technology.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\french-beginners\french-beginners.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\french-continuers\french-continuers.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\french-extension\french-extension.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\geography\geography.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\health-and-movement-science\health-and-movement-science.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\hospitality\hospitality.qb [exit 1]
+Q8: removed 2 duplicate option(s)
+Q4: removed 2 duplicate option(s)
+Q4: removed 2 duplicate option(s)
+Q12: removed 2 duplicate option(s)
+Q14: removed 2 duplicate option(s)
+Q3: removed 2 duplicate option(s)
+Q12: removed 2 duplicate option(s)
+Q13: removed 2 duplicate option(s)
+Q14: removed 2 duplicate option(s)
+Q4: removed 2 duplicate option(s)
+Q10: removed 2 duplicate option(s)
+Q14: removed 2 duplicate option(s)
+Q7: removed 2 duplicate option(s)
+Q14: removed 2 duplicate option(s)
+Removed 0 duplicate body block(s) and 28 duplicate option(s) from 8 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\industrial-technology\industrial-technology.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\investigating-science\investigating-science.qb [exit 1]
+Q4: removed 2 duplicate option(s)
+Q6: removed 2 duplicate option(s)
+Q9: removed 2 duplicate option(s)
+Q15: removed 2 duplicate option(s)
+Q19: removed 2 duplicate option(s)
+Q20: removed 2 duplicate option(s)
+Q12: removed 2 duplicate option(s)
+Q12: removed 2 duplicate option(s)
+Q14: removed 1 duplicate option(s)
+Q15: removed 2 duplicate option(s)
+Removed 0 duplicate body block(s) and 19 duplicate option(s) from 8 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\italian-beginners\italian-beginners.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\italian-continuers\italian-continuers.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\italian-extension\italian-extension.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\legal-studies\legal-studies.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\legal-studies-2009\legal-studies-2009.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\mathematics-advanced\mathematics-advanced.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\mathematics-extension-1\mathematics-extension-1.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\mathematics-extension-2\mathematics-extension-2.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\mathematics-standard\mathematics-standard.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\modern-history\modern-history.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\modern-history-2017\modern-history-2017.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\music-1\music-1.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\music-1-2010\music-1-2010.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\music-2\music-2.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\music-2-2010\music-2-2010.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\physics\physics.qb [exit 1]
+Q12: removed 1 duplicate option(s)
+Q14: removed 1 duplicate option(s)
+Q17: removed 1 duplicate option(s)
+Q17: options NOT deduped (would leave 1 choice(s)) - fix the source table or options
+Removed 0 duplicate body block(s) and 3 duplicate option(s) from 3 question(s); 1 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\physics-2017\physics-2017.qb [exit 1]
+Q12: removed 1 duplicate option(s)
+Q14: removed 1 duplicate option(s)
+Q17: removed 1 duplicate option(s)
+Removed 0 duplicate body block(s) and 3 duplicate option(s) from 3 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\studies-of-religion-1\studies-of-religion-1.qb [exit 1]
+Q20: removed 1 duplicate body block(s)
+Removed 1 duplicate body block(s) and 0 duplicate option(s) from 1 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\studies-of-religion-2\studies-of-religion-2.qb [exit 1]
+Q31: removed 1 duplicate body block(s)
+Removed 1 duplicate body block(s) and 0 duplicate option(s) from 1 question(s); 0 unrepaired.
+### D:\quaestio\frontend\public\templates\hsc\visual-arts\visual-arts.qb [exit 0]
+Removed 0 duplicate body block(s) and 0 duplicate option(s) from 0 question(s); 0 unrepaired.

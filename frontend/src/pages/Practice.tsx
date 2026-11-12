@@ -19,6 +19,7 @@ import { SessionExhausted } from "../components/SessionExhausted.tsx";
 import { DueQueueCard, useDueQueue } from "../components/DueQueueCard.tsx";
 import { describeInterval } from "../lib/reviewSchedule.ts";
 import { notify } from "../lib/notifications.ts";
+import { readSessionFilters, writeSessionFilters } from "../lib/filterState.ts";
 
 function isSessionMode(value: string | null): value is SessionMode {
   return value === "focused" || value === "mixed" || value === "due_review";
@@ -42,20 +43,38 @@ export function Practice() {
   const [mode, setMode] = useState<SessionMode>(
     isSessionMode(searchParams.get("mode")) ? (searchParams.get("mode") as SessionMode) : "focused"
   );
-  const [selectedNodes, setSelectedNodes] = useState<Set<string>>(() => {
-    const node = searchParams.get("node_id");
-    return node ? new Set([node]) : new Set();
-  });
-  const [typeKeys, setTypeKeys] = useState<string[]>([]);
-  const [difficulties, setDifficulties] = useState<number[]>([]);
-  const [selectedTag, setSelectedTag] = useState("");
-  const [institutionYears, setInstitutionYears] = useState<Record<string, number[]>>({});
+  // Filters are remembered per course, so leaving the page and coming back
+  // restores the same session. A node deep link wins over the saved topic.
+  const [initialFilters] = useState(() => readSessionFilters(courseId, "practice"));
+  const linkedNodeId = searchParams.get("node_id");
+  const [selectedNodes, setSelectedNodes] = useState<Set<string>>(() =>
+    linkedNodeId ? new Set([linkedNodeId]) : new Set(initialFilters.selectedNodes)
+  );
+  const [typeKeys, setTypeKeys] = useState<string[]>(initialFilters.typeKeys);
+  const [difficulties, setDifficulties] = useState<number[]>(initialFilters.difficulties);
+  const [selectedTag, setSelectedTag] = useState(initialFilters.selectedTag);
+  const [institutionYears, setInstitutionYears] = useState<Record<string, number[]>>(initialFilters.institutionYears);
   const { data: sourceOptions } = useQuery({
     queryKey: ["question-source-options", courseId],
     queryFn: () => api.questionSourceOptions(courseId as string),
     enabled: !!courseId,
   });
-  const [avoidRecentDays, setAvoidRecentDays] = useState<number | null>(7);
+  const [avoidRecentDays, setAvoidRecentDays] = useState<number | null>(
+    typeof initialFilters.avoidRecentDays === "number" || initialFilters.avoidRecentDays === null
+      ? initialFilters.avoidRecentDays
+      : 7
+  );
+
+  useEffect(() => {
+    writeSessionFilters(courseId, "practice", {
+      selectedNodes: [...selectedNodes],
+      typeKeys,
+      difficulties,
+      selectedTag,
+      institutionYears,
+      avoidRecentDays,
+    });
+  }, [courseId, selectedNodes, typeKeys, difficulties, selectedTag, institutionYears, avoidRecentDays]);
 
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [attemptInstanceId, setAttemptInstanceId] = useState<string | null>(null);
@@ -133,7 +152,6 @@ export function Practice() {
   }, [queryClient, sessionId, courseId]);
 
   // Deep links select the full hierarchy path so nested filters are visible.
-  const linkedNodeId = searchParams.get("node_id");
   useEffect(() => {
     if (linkedNodeId && config?.nodes) {
       const path = nodePath(config.nodes, linkedNodeId);

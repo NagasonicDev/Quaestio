@@ -200,6 +200,16 @@ export interface TestSectionResult {
   marks_requested: number | null;
 }
 
+/** The generator form as it was submitted, so a past test's setup can be reused. */
+export interface SavedTestSettings {
+  title?: string;
+  format?: "docx" | "pdf";
+  ordering?: string;
+  excludeRecentTests?: number;
+  keepQuestionIds?: string[];
+  sections: TestSectionInput[];
+}
+
 export interface GeneratedTestMeta {
   test_id: string;
   title: string;
@@ -212,6 +222,8 @@ export interface GeneratedTestMeta {
   solutions_available?: boolean;
   preview_url: string;
   section_results?: TestSectionResult[];
+  /** Absent for tests generated before settings were kept readable. */
+  settings?: SavedTestSettings;
 }
 
 export interface ImportResultItem {

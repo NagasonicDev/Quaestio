@@ -1,7 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { selectQuestionIndexes } from "../src/lib/questionSelection.ts";
-import { recentlyUsedQuestionIds } from "../src/lib/testHistory.ts";
+import { recentlyUsedQuestionIds, savedTestSettings } from "../src/lib/testHistory.ts";
+import { collapseSelectedNodeIds } from "../src/lib/nodeFilters.ts";
 
 test("recentlyUsedQuestionIds reads ids from the most recent tests", () => {
   const rows = [
@@ -25,6 +26,44 @@ test("recentlyUsedQuestionIds honours the lookback window", () => {
 test("recentlyUsedQuestionIds tolerates malformed and missing rows", () => {
   const used = recentlyUsedQuestionIds([{}, { question_ids_json: null }], 5);
   assert.equal(used.size, 0);
+});
+
+test("savedTestSettings reads the generator form stored with a test", () => {
+  const settings = savedTestSettings(JSON.stringify({
+    title: "Trial paper",
+    format: "pdf",
+    ordering: "difficulty",
+    excludeRecentTests: 2,
+    keepQuestionIds: ["q1", 7],
+    sections: [{ name: "Section I", node_ids: ["n1"], marks: 20, type_keys: ["multiple_choice"] }],
+    generated_sections: [],
+  }));
+  assert.equal(settings.title, "Trial paper");
+  assert.equal(settings.format, "pdf");
+  assert.equal(settings.ordering, "difficulty");
+  assert.equal(settings.excludeRecentTests, 2);
+  assert.deepEqual(settings.keepQuestionIds, ["q1"]);
+  assert.equal(settings.sections.length, 1);
+  assert.equal(settings.sections[0].marks, 20);
+});
+
+test("savedTestSettings rejects rows with no readable sections", () => {
+  assert.equal(savedTestSettings(null), null);
+  assert.equal(savedTestSettings("not json"), null);
+  assert.equal(savedTestSettings(JSON.stringify({ title: "x" })), null);
+  assert.equal(savedTestSettings(JSON.stringify({ sections: [] })), null);
+});
+
+test("collapseSelectedNodeIds restores the topmost picks that expand to the same set", () => {
+  const node = (node_id, children = []) => ({ node_id, children });
+  const nodes = [node("a", [node("a1", [node("a1x")]), node("a2")]), node("b")];
+
+  // A whole selected branch collapses to the branch itself.
+  assert.deepEqual(collapseSelectedNodeIds(nodes, ["a", "a1", "a1x", "a2"]), ["a"]);
+  // A partial branch keeps the branch and the selected child branch.
+  assert.deepEqual(collapseSelectedNodeIds(nodes, ["a", "a1", "a1x"]), ["a", "a1"]);
+  // A leaf pick is kept as-is.
+  assert.deepEqual(collapseSelectedNodeIds(nodes, ["a2"]), ["a2"]);
 });
 
 test("a kept question is never dropped and still counts toward the target", () => {

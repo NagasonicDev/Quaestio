@@ -12,6 +12,7 @@ import { useConfirm } from "../components/ui/modal.tsx";
 import { clearAllData, flush } from "../lib/db/sqlite.ts";
 import { clearQuestions } from "../lib/data.ts";
 import { describeStoragePersistence, requestPersistentStorage } from "../lib/storage.ts";
+import { renameInstitutionInSessionFilters } from "../lib/filterState.ts";
 import { api } from "../api/client.ts";
 import { Input } from "../components/ui/input.tsx";
 import { StudySettings } from "../components/StudySettings.tsx";
@@ -230,6 +231,7 @@ function InstitutionManager({ courseId }: { courseId: string | null }) {
     setSavingName(currentName);
     try {
       await api.renameInstitution(courseId, currentName, nextName);
+      renameInstitutionInSessionFilters(courseId, currentName, nextName);
       try {
         const saved = JSON.parse(localStorage.getItem("qb-browser-state") ?? "{}") as Record<string, any>;
         const years = saved[courseId]?.institutionYears;

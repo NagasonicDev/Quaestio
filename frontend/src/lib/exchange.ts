@@ -11,6 +11,7 @@ import { contentHash } from "./storage.ts";
 import type { DrawingNotebook, DrawingPage } from "../api/types.ts";
 import { MAX_DRAWING_NOTEBOOK_PAGES, validateDrawingNotebooks, validateDrawingPage } from "./drawingNotebook.ts";
 import type { CourseFullConfig, CourseNode, Question } from "../api/types.ts";
+import { dedupeQuestion } from "./questionDedupe.ts";
 
 // ---------- helpers ----------
 
@@ -821,6 +822,9 @@ export async function parseCourseBundle(file: File): Promise<ParsedBundle> {
     for (const part of Array.isArray(question?.parts) ? question.parts : []) checkQuestionBounds(part, depth + 1);
   };
   for (const question of courseJson.questions ?? []) checkQuestionBounds(question, 0);
+  // Repeated imports can leave the same body block or MCQ option twice. Clean
+  // the parsed tree before validation so the database never receives a copy.
+  courseJson.questions = (courseJson.questions ?? []).map(dedupeQuestion);
   for (const question of courseJson.questions ?? []) {
     const problems = data.validateQuestionForImport(question);
     if (problems.length) throw new Error(`This .qb bundle is invalid: ${problems[0]}`);

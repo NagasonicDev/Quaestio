@@ -72,6 +72,7 @@ python scripts/extract_figures.py exam.pdf --out work/figures
 python scripts/crop.py exam.pdf --page 1 --name q1_figure --rect 50,100,500,400
 python scripts/build_qbx.py spec.json -o output.qbx --assets work/assets
 python scripts/repair_multipart_solutions.py output.qbx
+python scripts/dedupe_bodies.py output-fixed.qbx --write
 python scripts/audit_qbx.py output-fixed.qbx --schema import-schema.json
 python scripts/check_scheme_bundle.py --exam output-fixed.qbx --mg mg.qbx
 ```
